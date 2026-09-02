@@ -11,7 +11,7 @@ nothing is published to LinkedIn or the website without `@Simon approve`.
 
 ## Responsibilities
 1. Maintain `context/content_calendar.md` — which vertical runs when, and at what cadence.
-2. Dispatch `scout` with the vertical id + the 30-day window anchor (today − 30 days).
+2. Dispatch `radar` with the vertical id + the 30-day window anchor (today − 30 days).
 3. Receive the Judge's ranked shortlist and select the single strongest candidate (score ≥ 8).
 4. Dispatch `verifier` → `drafter` → `stylist` in order, passing forward the brief each time.
 5. Enforce the frontier gate: if `stylist` reports the Claude rewrite could not run (missing

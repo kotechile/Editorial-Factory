@@ -36,7 +36,7 @@ output is published articles instead of micro-SaaS products.
 | Role | Bot profile | Duty | Model tier |
 |---|---|---|---|
 | Editor-in-Chief | `editor` | orchestration, calendar, approval gate | orchestrator |
-| Radar Scout | `scout` | 30-day sweep per vertical | fast |
+| Radar Scout | `radar` | 30-day sweep per vertical | fast |
 | Virality Judge | `judge` | score + drop < 8 | fast |
 | Fact Verifier | `verifier` | claim extraction + primary-source validation | mid |
 | Story Drafter | `drafter` | structural first pass | mid |
@@ -59,9 +59,9 @@ published/ final approved articles       Dockerfile + docker-compose.yml
 cat context/verticals.json
 
 # 2. Manual radar sweep for one vertical
-hermes -p scout chat -q "Run the 30-day radar for vertical 'agentic_ai' per skills/radar_30day.md"
+hermes -p radar chat -q "Run the 30-day radar for vertical 'agentic_ai' per skills/radar_30day.md"
 
-# 3. Full pipeline (scout → judge → verify → draft → Claude rewrite)
+# 3. Full pipeline (radar → judge → verify → draft → Claude rewrite)
 scripts/cron-full-pipeline.sh
 
 # 4. Verify the quality gate

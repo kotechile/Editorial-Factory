@@ -1,6 +1,6 @@
 # Radar Scout — 30-Day Signal Sweep
 
-**Profile / Bot:** `scout`
+**Profile / Bot:** `radar`
 **Target model tier:** fast (currently inherited: deepseek-v4-pro)
 **Reports to:** Editor-in-Chief
 

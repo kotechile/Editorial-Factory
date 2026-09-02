@@ -26,7 +26,7 @@ Create each profile and mirror its persona contract into the bot's SOUL/instruct
 | Profile | Persona source | Model tier |
 |---|---|---|
 | `editor` | `.agents/editor_in_chief.md` | orchestrator (deepseek-v4-pro) |
-| `scout` | `.agents/radar_scout.md` | fast |
+| `radar` | `.agents/radar_scout.md` | fast |
 | `judge` | `.agents/virality_judge.md` | fast |
 | `verifier` | `.agents/fact_verifier.md` | mid |
 | `drafter` | `.agents/story_drafter.md` | mid |

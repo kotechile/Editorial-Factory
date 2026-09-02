@@ -5,7 +5,7 @@
 
 ## Next steps (see `docs/VPS_WIRING.md`)
 1. Add `ANTHROPIC_API_KEY` (or an OpenRouter route) to the gateway env.
-2. Create the 7 bot profiles (`editor`, `scout`, `judge`, `verifier`, `drafter`, `stylist`,
+2. Create the 7 bot profiles (`editor`, `radar`, `judge`, `verifier`, `drafter`, `stylist`,
    `publisher`) and mirror each `.agents/*.md` into its SOUL.
 3. Register the cron jobs for the calendar cadence above.
 4. Create the Coolify app for `site/` and set Supabase/Anthropic env vars.

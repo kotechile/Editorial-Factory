@@ -8,5 +8,5 @@ VERTICAL="${1:-agentic_ai}"
 
 hermes cron run "Radar Sweep: ${VERTICAL}"
 
-# Alternatively, run the scout bot directly in one-shot mode:
-# hermes -p scout chat -q "Run the 30-day radar for vertical '${VERTICAL}' per skills/radar_30day.md"
+# Alternatively, run the radar bot directly in one-shot mode:
+# hermes -p radar chat -q "Run the 30-day radar for vertical '${VERTICAL}' per skills/radar_30day.md"
