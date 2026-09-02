@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Editorial Factory</title>
+  <style>
+    :root { color-scheme: light; }
+    body { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; font: 17px/1.65 -apple-system, Segoe UI, Roboto, sans-serif; color: #1a1a1a; }
+    h1 { line-height: 1.15; }
+    a { color: #0a66c2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style: none; padding: 0; }
+    li { margin: .9rem 0; padding-bottom: .9rem; border-bottom: 1px solid #eee; }
+    .muted { color: #666; font-size: 14px; }
+    .empty { color: #888; }
+  </style>
+</head>
+<body>
+  <h1>Editorial Factory</h1>
+  <p class="muted">Autonomous, verified, human-voice articles — published via the Editorial Factory pipeline.</p>
+  <ul id="articles"><li class="empty">No articles published yet.</li></ul>
+  <script>
+    fetch('/api/articles.json')
+      .then((r) => r.json())
+      .then((articles) => {
+        const ul = document.getElementById('articles');
+        if (!articles.length) return;
+        ul.innerHTML = '';
+        articles.forEach((a) => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="/published/${a.file}">${a.title}</a><br><span class="muted">${a.slug}</span>`;
+          ul.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>

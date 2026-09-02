@@ -1,0 +1,64 @@
+{
+  "verticals": [
+    {
+      "id": "agentic_ai",
+      "label": "Agentic Automation & Architecture",
+      "sources": ["arxiv", "github_trending", "x_ai", "hacker_news", "reddit_ml"],
+      "primary_angles": [
+        "autonomous orchestration",
+        "MCP servers",
+        "agent evaluation bottlenecks",
+        "multi-agent failure modes"
+      ],
+      "target_persona": "eng_leader"
+    },
+    {
+      "id": "enterprise_tech_leadership",
+      "label": "Technology & Architecture Decisions",
+      "sources": ["hacker_news", "substack_tech_leads", "cloud_cost_reports", "x_ai"],
+      "primary_angles": [
+        "cloud repatriation",
+        "monolith vs microservices",
+        "AI ROI",
+        "build vs buy"
+      ],
+      "target_persona": "eng_leader"
+    },
+    {
+      "id": "gpu_hardware",
+      "label": "GPUs & AI Hardware",
+      "sources": ["arxiv", "github_trending", "hacker_news", "x_ai", "vendor_changelogs"],
+      "primary_angles": [
+        "inference economics",
+        "supply constraints",
+        "open-source vs closed silicon",
+        "memory bandwidth ceilings"
+      ],
+      "target_persona": "infra_engineer"
+    },
+    {
+      "id": "supply_chain",
+      "label": "Supply Chain & Logistics Tech",
+      "sources": ["freightwaves", "industry_dive", "tariff_updates", "x_ai"],
+      "primary_angles": [
+        "nearshoring",
+        "warehouse automation",
+        "freight data visibility",
+        "tariff exposure"
+      ],
+      "target_persona": "ops_leader"
+    },
+    {
+      "id": "home_systems_reno",
+      "label": "Modern Home Infrastructure & Building Science",
+      "sources": ["greenbuildingadvisor", "hvac_trade_forums", "permitting_shifts", "reddit_home"],
+      "primary_angles": [
+        "heat pump ROI",
+        "envelope efficiency",
+        "smart electrical panels",
+        "electrification incentives"
+      ],
+      "target_persona": "homeowner_pro"
+    }
+  ]
+}

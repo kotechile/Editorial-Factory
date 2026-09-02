@@ -1,0 +1,28 @@
+{
+  "personas": {
+    "eng_leader": {
+      "label": "Engineering / technology leader",
+      "reader_level": "senior practitioner who ships",
+      "tone": "direct, technical but not jargon-y, skeptical of hype",
+      "wants": "concrete numbers, decision frameworks, what to do Monday morning"
+    },
+    "infra_engineer": {
+      "label": "Infrastructure / ML engineer",
+      "reader_level": "deep technical",
+      "tone": "precise, benchmark-literate, no hand-holding",
+      "wants": "real numbers, caveats, reproduction details"
+    },
+    "ops_leader": {
+      "label": "Operations / supply-chain leader",
+      "reader_level": "business-operational, numerate",
+      "tone": "pragmatic, ROI-first, plain English",
+      "wants": "cost/risk framing, vendor-neutral, actionable"
+    },
+    "homeowner_pro": {
+      "label": "Serious homeowner / builder",
+      "reader_level": "educated DIY-to-pro",
+      "tone": "plain, honest, dollar-figure concrete",
+      "wants": "payback math, gotchas, code/incentive reality"
+    }
+  }
+}

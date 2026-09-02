@@ -1,0 +1,17 @@
+# deps / build
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
+
+# env / secrets — never commit real values
+.env
+.env.local
+
+# local runtime artifacts
+.publish_cache/
+test-results/
+playwright-report/
+
+# OS
+.DS_Store
