@@ -7,6 +7,8 @@ It is the editorial twin of [`kotechile/factory`](https://github.com/kotechile/f
 agentic workforce pattern (bot fleet + skills + shared context + cron + approval gate), but the
 output is published articles instead of micro-SaaS products.
 
+> 📖 **Read [docs/USER_GUIDE.md](docs/USER_GUIDE.md)** — how it works and how to use it.
+
 ## The pipeline (3 loops)
 
 ```
