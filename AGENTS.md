@@ -46,6 +46,6 @@ gates, and every non-deterministic step is gated on retrievable evidence.
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
 The **Claude Stylist & Critic** role is pinned to a frontier Anthropic model served through
-**kie.ai** (`https://api.kie.ai/claude`, model `Claude-Opus-4-8`), which requires
+**kie.ai** (`https://api.kie.ai/claude`, model `claude-sonnet-5`), which requires
 `ANTHROPIC_API_KEY=Bearer <kie.ai key>` plus a `model.base_url` override on the stylist profile.
 Without it, the pipeline halts at the frontier gate rather than substituting a non-frontier model.

@@ -12,11 +12,13 @@ The Claude Stylist & Critic step routes Anthropic models through **kie.ai**, not
 - **Endpoint:** `https://api.kie.ai/claude` (Anthropic Messages API)
 - **Key:** `ANTHROPIC_API_KEY=Bearer <kie.ai key>` — the literal `Bearer ` prefix is **required** by kie.ai (already set in `/root/.hermes/.env` and `~/.hermes/.env`).
 - **Key source:** Supabase project "StoryTeller", table `api_keys`, row `provider='kie.ai'`, column `key_value`.
-- **Model IDs (from Supabase `llm_models`):** `Claude-Opus-4-8` (frontier flagship), `claude-sonnet-5` (fast alternative). Do NOT use dated Anthropic IDs (`claude-sonnet-4-20250514`) — kie.ai rejects them.
+- **Model IDs (from Supabase `llm_models`):** request with the **alias** `claude-sonnet-5` — kie.ai resolves it to the real dated model `claude-opus-4-5-20251101` (visible in the response). `Claude-Opus-4-8` is also available. Do NOT send dated Anthropic IDs as the request model — kie.ai returns "page does not exist".
+- **Auth header:** `Authorization: Bearer <kie.ai key>` (kie.ai's official convention). `x-api-key: Bearer <kie.ai key>` is also accepted. Hermes's anthropic provider sends `x-api-key`, so keep the `Bearer ` prefix in `ANTHROPIC_API_KEY`.
+- **kie.ai-specific fields:** `thinkingFlag: true` and `stream: false` (kie.ai extensions — safe to omit, harmless when present).
 - **Routing:** set the stylist profile's model config to:
   ```yaml
   model:
-    default: Claude-Opus-4-8
+    default: claude-sonnet-5
     provider: anthropic
     base_url: https://api.kie.ai/claude
   ```
@@ -29,7 +31,7 @@ curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization: Bearer <key>"
 # a real completion
 curl -s https://api.kie.ai/claude/v1/messages -H "x-api-key: Bearer <key>" \
   -H "anthropic-version: 2023-06-01" -H "content-type: application/json" \
-  -d '{"model":"Claude-Opus-4-8","max_tokens":64,"messages":[{"role":"user","content":"ping"}]}'
+  -d '{"model":"claude-sonnet-5","max_tokens":64,"messages":[{"role":"user","content":"ping"}]}'
 ```
 
 > Note: kie.ai's Claude upstream intermittently returns 502/503 `Internal error` (their documented stability caveat) — retry if you hit it. The credit endpoint returning 200 confirms the key itself is valid.
@@ -45,7 +47,7 @@ Create each profile and mirror its persona contract into the bot's SOUL/instruct
 | `judge` | `.agents/virality_judge.md` | fast |
 | `verifier` | `.agents/fact_verifier.md` | mid |
 | `drafter` | `.agents/story_drafter.md` | mid |
-| `stylist` | `.agents/claude_stylist.md` | **Claude via kie.ai** (`Claude-Opus-4-8`) |
+| `stylist` | `.agents/claude_stylist.md` | **Claude via kie.ai** (`claude-sonnet-5`) |
 | `publisher` | `.agents/publisher.md` | light |
 
 Each bot's working directory must be this repo (so `skills/`, `context/`, and `scripts/` resolve).
