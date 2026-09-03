@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Editorial quality gate. Fails (non-zero) on any violation.
-# Checks: config JSON validity, banned AI-tells in drafts/published, missing citations.
+# Checks: config JSON validity, banned AI-tells, draft section schema, missing citations.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -26,7 +26,24 @@ for phrase in "${BANNED[@]}"; do
   fi
 done
 
-# 3. Every published article must carry a Sources section.
+# 3. Every draft must carry the full section schema (markers + Sources + LinkedIn variant).
+SCHEMA_MARKERS=(
+  '<!-- lead -->' '<!-- tension -->' '<!-- tactical-insight -->'
+  '<!-- nuanced-takeaway -->' '<!-- tldr -->' '<!-- linkedin -->'
+)
+for f in "$ROOT"/context/drafts/*.md; do
+  [ -e "$f" ] || continue
+  for m in "${SCHEMA_MARKERS[@]}"; do
+    if ! grep -qF "$m" "$f"; then
+      echo "FAIL: missing '$m' — $f"; FAIL=1
+    fi
+  done
+  if ! grep -qE '^## Sources' "$f"; then
+    echo "FAIL: missing '## Sources' — $f"; FAIL=1
+  fi
+done
+
+# 4. Every published article must carry a Sources section.
 for f in "$ROOT"/published/*.md; do
   [ -e "$f" ] || continue
   if ! grep -qE '^## Sources' "$f"; then

@@ -11,6 +11,10 @@ evidence set. No new facts.
 | **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed. |
 | **Tactical insight** | The actionable, specific takeaway for the target reader (persona from `context/personas.json`). |
 | **Nuanced takeaway** | The honest limitation or counter-argument. Ends on substance, not a cheerlead. |
+| **TL;DR** | 3 scannable bullets capturing the lead, the insight, and the catch. **Long-form only.** |
+
+The **TOC is render-time only** — the site derives it from the section headings. Never write a
+"Table of Contents" into the article body.
 
 ## 3. Rules
 - Inline citations: every factual sentence carries `[n]` mapping to a source list at the end.
@@ -18,17 +22,41 @@ evidence set. No new facts.
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier —
   never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical.
+- Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh`
+  checks them.
 
-## 4. Output
+## 4. Output schema
 `context/drafts/YYYY-MM-DD_<slug>_draft.md`:
 ```markdown
-# <Headline>
-**Vertical:** <id>  **Persona:** <id>  **Date:** YYYY-MM-DD
-<lead / tension / tactical insight / nuanced takeaway>
+---
+title: <headline>
+vertical: <id>
+persona: <id>
+date: YYYY-MM-DD
+slug: <slug>
+---
+
+<!-- lead -->
+<concrete incident/stat — 1–3 sentences, hook first, no heading>
+
+<!-- tension -->
+<the systemic shift / why now>
+
+<!-- tactical-insight -->
+<the doable move>
+
+<!-- nuanced-takeaway -->
+<the honest limitation / counter-argument>
+
+<!-- tldr -->
+- <bullet 1>
+- <bullet 2>
+- <bullet 3>
+
 ## Sources
 [1] ...  [2] ...
----
-## LinkedIn variant
+
+<!-- linkedin -->
 <~1,300 chars>
 ```
 

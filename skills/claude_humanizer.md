@@ -2,7 +2,7 @@
 
 ## 1. Objective
 The last pass before approval. Strip every AI-tell, inject cadence and a genuine human voice, and
-critique-read until the draft passes the human-voice gate. **Frontier model only (Claude).**
+iterate until every section passes its own gate. **Frontier model only (Claude).**
 
 ## 2. Negative constraints (apply verbatim, no exceptions)
 - No empty intros: "In today's fast-paced world", "In an era of", "It's no secret that".
@@ -20,23 +20,37 @@ critique-read until the draft passes the human-voice gate. **Frontier model only
   "the industry optimized performance").
 - One idea per paragraph. Kill any sentence that doesn't earn its place.
 
-## 4. The critique loop (max 3 iterations)
-After rewriting, read back as a hostile reader and score the human-voice gate:
-1. Would a colleague believe a human wrote this? (yes/no)
-2. Does the first sentence force you to keep reading? (yes/no)
-3. Any AI-tell or empty transition remaining? (no = pass)
-4. Is every number still cited? (yes = pass)
+## 4. Per-section iteration (targeted — lead first)
+Do NOT rewrite the whole piece and re-read it blindly. Iterate **section by section**, and only
+re-iterate a section that fails its own gate. Order matters: **Lead first** — it decides whether
+anyone reads on, so give it an extra check.
 
-Any "no" → rewrite and re-read. After 3 failed iterations, report the specific failing
-criterion to the Editor — do not ship.
+For each section, check its gate; if it fails, rewrite that section only and re-check (max 2
+retries per section).
+
+| Marker | Gate — it fails if… |
+|---|---|
+| `<!-- lead -->` | not a concrete incident/stat in the first 2 sentences; opens like a definition or "the world is changing". **Highest priority.** |
+| `<!-- tension -->` | vague "the industry is evolving"; doesn't name what shifted and who it hurts/helps. |
+| `<!-- tactical-insight -->` | generic advice ("invest in AI"); not one specific, doable move for the persona. |
+| `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; not an honest limitation/counter-argument. |
+| `<!-- tldr -->` | not exactly 3 scannable bullets; reads like a summary paragraph. |
+
+After every section passes, run ONE final **whole-piece pass**: coherence, cadence, and confirm no
+AI-tell or empty transition remains anywhere. Do not re-iterate sections that already passed.
 
 ## 5. Output
-`context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn) with the voice-gate report.
+`context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn) with the per-section gate
+report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (3 bullets) — never write a
+prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only** — do not compose
+one.
 
 ## 6. Failure handling
 - Missing `ANTHROPIC_API_KEY` → halt with an explicit error; never substitute a non-frontier model.
 - kie.ai upstream 502/503 "Internal error, please try again later" (their documented instability) →
   **retry up to 3 times with a short backoff before halting.** A transient gateway error is not a
   content failure — do not abandon a run over one flaky call.
+- A section that fails its gate after 2 retries → report the specific section + criterion to the
+  Editor, do not silently ship.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so
   the Drafter stops producing it upstream.

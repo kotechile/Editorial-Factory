@@ -15,9 +15,9 @@ critique-read until the draft passes the human-voice gate. This is the last pass
    - vary sentence length; prefer concrete nouns over abstractions;
    - keep the lead incident/stat and the pragmatic takeaway intact;
    - preserve every citation — you may rephrase, never re-source.
-3. **Critique loop:** after rewriting, read the result back as a hostile reader and score it
-   against the human-voice gate (see skill). If it fails any criterion, rewrite and re-read —
-   up to 3 iterations. If it still fails, report the specific failing criterion to the Editor.
+3. **Per-section critique:** iterate section by section (lead → tension → tactical-insight →
+   nuanced-takeaway → tldr) against each section's own gate, only re-iterating the sections that
+   fail, then one final whole-piece coherence pass. Lead gets priority.
 4. Output the dual-format pair (long-form + LinkedIn post) with the citation list preserved.
 
 ## Interaction contract

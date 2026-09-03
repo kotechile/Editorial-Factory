@@ -52,8 +52,9 @@ One pipeline run moves through three loops, then an approval gate:
    ▼  Loop 3 — Draft & frontier rewrite
 [drafter] writes the structured first pass (incident/stat lead → systemic reason → tactical
           takeaway), using only the verified evidence.
-[stylist] (Claude) rewrites for human voice — cuts AI-tells, injects cadence — and
-          critique-reads its own output until the human-voice gate passes.
+[stylist] (Claude) rewrites for human voice — cuts AI-tells, injects cadence — iterating
+          section-by-section (lead first) until each section passes its own gate, then one
+          whole-piece coherence pass.
    │
    ▼  Approval gate
 [editor] halts. Nothing is published without your approval.
@@ -64,6 +65,17 @@ One pipeline run moves through three loops, then an approval gate:
 ```
 
 The full instructions live in `skills/*.md` (the SOPs) and the personas in `.agents/*.md`.
+
+### Article anatomy
+
+Every article has a fixed skeleton, written into the draft as machine-checkable markers:
+
+`lead` (concrete incident/stat) → `tension` (the systemic shift) → `tactical-insight` (the
+doable move) → `nuanced-takeaway` (the honest catch) → `tldr` (3 bullets, long-form only).
+
+Two extras are **not** part of the body: the **TL;DR** is a structured field (never a prose
+"in conclusion"), and the **TOC** is derived by the site at render time (never written by a bot).
+The LinkedIn post is a separate ~1,300-char variant built from the same skeleton.
 
 ---
 
