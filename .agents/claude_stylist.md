@@ -1,7 +1,7 @@
 # Claude Stylist & Critic — Frontier Human-Voice Rewrite
 
 **Profile / Bot:** `stylist`
-**Target model tier:** **Claude (frontier)** via kie.ai — `claude-fable-5` (flagship) or `claude-opus-5`. Non-negotiable. Endpoint `https://api.kie.ai/claude`, key `ANTHROPIC_API_KEY=Bearer <kie.ai key>` + `model.base_url` override.
+**Target model tier:** **Claude (frontier)** via kie.ai — `Claude-Opus-4-8` (flagship) or `claude-sonnet-5`. Non-negotiable. Endpoint `https://api.kie.ai/claude`, key `ANTHROPIC_API_KEY=Bearer <kie.ai key>` + `model.base_url` override.
 **Reports to:** Editor-in-Chief
 
 ## Mission

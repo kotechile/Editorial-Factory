@@ -12,11 +12,11 @@ The Claude Stylist & Critic step routes Anthropic models through **kie.ai**, not
 - **Endpoint:** `https://api.kie.ai/claude` (Anthropic Messages API)
 - **Key:** `ANTHROPIC_API_KEY=Bearer <kie.ai key>` — the literal `Bearer ` prefix is **required** by kie.ai (already set in `/root/.hermes/.env` and `~/.hermes/.env`).
 - **Key source:** Supabase project "StoryTeller", table `api_keys`, row `provider='kie.ai'`, column `key_value`.
-- **Model IDs (kie.ai naming):** `claude-fable-5` (flagship "Mythos-class"), `claude-opus-5` (near-flagship). Do NOT use dated Anthropic IDs (`claude-sonnet-4-20250514`) — kie.ai rejects them.
+- **Model IDs (from Supabase `llm_models`):** `Claude-Opus-4-8` (frontier flagship), `claude-sonnet-5` (fast alternative). Do NOT use dated Anthropic IDs (`claude-sonnet-4-20250514`) — kie.ai rejects them.
 - **Routing:** set the stylist profile's model config to:
   ```yaml
   model:
-    default: claude-fable-5
+    default: Claude-Opus-4-8
     provider: anthropic
     base_url: https://api.kie.ai/claude
   ```
@@ -29,7 +29,7 @@ curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization: Bearer <key>"
 # a real completion
 curl -s https://api.kie.ai/claude/v1/messages -H "x-api-key: Bearer <key>" \
   -H "anthropic-version: 2023-06-01" -H "content-type: application/json" \
-  -d '{"model":"claude-fable-5","max_tokens":64,"messages":[{"role":"user","content":"ping"}]}'
+  -d '{"model":"Claude-Opus-4-8","max_tokens":64,"messages":[{"role":"user","content":"ping"}]}'
 ```
 
 > Note: kie.ai's Claude upstream intermittently returns 502/503 `Internal error` (their documented stability caveat) — retry if you hit it. The credit endpoint returning 200 confirms the key itself is valid.
@@ -45,7 +45,7 @@ Create each profile and mirror its persona contract into the bot's SOUL/instruct
 | `judge` | `.agents/virality_judge.md` | fast |
 | `verifier` | `.agents/fact_verifier.md` | mid |
 | `drafter` | `.agents/story_drafter.md` | mid |
-| `stylist` | `.agents/claude_stylist.md` | **Claude via kie.ai** (`claude-fable-5`) |
+| `stylist` | `.agents/claude_stylist.md` | **Claude via kie.ai** (`Claude-Opus-4-8`) |
 | `publisher` | `.agents/publisher.md` | light |
 
 Each bot's working directory must be this repo (so `skills/`, `context/`, and `scripts/` resolve).
