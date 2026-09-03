@@ -81,6 +81,18 @@ GHOST_API_URL=
 
 See `docs/VPS_WIRING.md` for the VPS-side bot fleet, cron jobs, and Coolify deploy steps.
 
+## Adding a vertical (config-as-data)
+
+Verticals live entirely in `context/verticals.json` — each entry carries `id`, `label`, `cadence`
+(cron expression), `sources`, `primary_angles`, and `target_persona`. To add one:
+
+1. Append an entry to `context/verticals.json`.
+2. Run `python3 scripts/sync_crons.py` on the VPS — it creates the missing `Full Pipeline: <id>`
+   cron job from the `cadence` field (idempotent; existing jobs are left untouched).
+3. Optionally add a matching `target_persona` to `context/personas.json`.
+
+No code changes required.
+
 ## License
 
 MIT
