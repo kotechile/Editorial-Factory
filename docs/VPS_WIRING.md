@@ -5,19 +5,34 @@ and writes. The following wiring happens on the VPS (`72.61.72.70`, Ubuntu 24.04
 Hermes gateway and bot fleet already run the software factory. The software factory is left
 running untouched.
 
-## 1. Frontier key (blocking prerequisite)
+## 1. Frontier key — Claude via kie.ai (already wired)
 
-The Claude Stylist & Critic step requires a frontier model. Add **one** of the following to the
-gateway env (`~/.hermes/.env` on the VPS), then `hermes doctor` to confirm:
+The Claude Stylist & Critic step routes Anthropic models through **kie.ai**, not `api.anthropic.com`.
 
+- **Endpoint:** `https://api.kie.ai/claude` (Anthropic Messages API)
+- **Key:** `ANTHROPIC_API_KEY=Bearer <kie.ai key>` — the literal `Bearer ` prefix is **required** by kie.ai (already set in `/root/.hermes/.env` and `~/.hermes/.env`).
+- **Key source:** Supabase project "StoryTeller", table `api_keys`, row `provider='kie.ai'`, column `key_value`.
+- **Model IDs (kie.ai naming):** `claude-fable-5` (flagship "Mythos-class"), `claude-opus-5` (near-flagship). Do NOT use dated Anthropic IDs (`claude-sonnet-4-20250514`) — kie.ai rejects them.
+- **Routing:** set the stylist profile's model config to:
+  ```yaml
+  model:
+    default: claude-fable-5
+    provider: anthropic
+    base_url: https://api.kie.ai/claude
+  ```
+  (`model.base_url` is what redirects Hermes's Anthropic provider off `api.anthropic.com`.)
+
+Verify before the first end-to-end run:
 ```bash
-ANTHROPIC_API_KEY=sk-ant-...        # preferred
-# or an OpenRouter route:
-OPENROUTER_API_KEY=...
+# credits (key valid?)
+curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization: Bearer <key>"
+# a real completion
+curl -s https://api.kie.ai/claude/v1/messages -H "x-api-key: Bearer <key>" \
+  -H "anthropic-version: 2023-06-01" -H "content-type: application/json" \
+  -d '{"model":"claude-fable-5","max_tokens":64,"messages":[{"role":"user","content":"ping"}]}'
 ```
 
-Until this key exists, the pipeline halts at the frontier gate (by design — no non-frontier
-substitution). Verify the Claude model is selectable before the first end-to-end run.
+> Note: kie.ai's Claude upstream intermittently returns 502/503 `Internal error` (their documented stability caveat) — retry if you hit it. The credit endpoint returning 200 confirms the key itself is valid.
 
 ## 2. Bot fleet (7 profiles)
 
@@ -30,7 +45,7 @@ Create each profile and mirror its persona contract into the bot's SOUL/instruct
 | `judge` | `.agents/virality_judge.md` | fast |
 | `verifier` | `.agents/fact_verifier.md` | mid |
 | `drafter` | `.agents/story_drafter.md` | mid |
-| `stylist` | `.agents/claude_stylist.md` | **Claude frontier** |
+| `stylist` | `.agents/claude_stylist.md` | **Claude via kie.ai** (`claude-fable-5`) |
 | `publisher` | `.agents/publisher.md` | light |
 
 Each bot's working directory must be this repo (so `skills/`, `context/`, and `scripts/` resolve).
