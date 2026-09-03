@@ -52,17 +52,26 @@ Create each profile and mirror its persona contract into the bot's SOUL/instruct
 
 Each bot's working directory must be this repo (so `skills/`, `context/`, and `scripts/` resolve).
 
-## 3. Cron jobs
+## 3. Cron jobs (already registered)
 
-Register via `hermes cron` (mirroring the factory's "[bot:simon] Weekly Market Recon" pattern):
+Five "Full Pipeline" jobs, one per vertical, each delivered to the `editor` bot's chat:
 
-| Job | Schedule | Prompt (self-contained) |
-|---|---|---|
-| `Radar Sweep: <vertical>` | per `context/content_calendar.md` | "Run the 30-day radar for vertical '<id>' per skills/radar_30day.md, write to context/recon_proposals/" |
-| `Full Editorial Pipeline: <vertical>` | after radar (offset) | "Run full pipeline for '<id>': virality_judge -> fact_check -> story_draft -> claude_humanizer per the matching skills; halt at the approval gate for @Simon approve." |
+| Job | Schedule (UTC) |
+|---|---|
+| `Full Pipeline: agentic_ai` | `0 6 * * 1,4` (Mon + Thu) |
+| `Full Pipeline: enterprise_tech_leadership` | `0 6 * * 2` |
+| `Full Pipeline: gpu_hardware` | `0 6 * * 3` |
+| `Full Pipeline: supply_chain` | `0 6 * * 4` |
+| `Full Pipeline: home_systems_reno` | `0 6 * * 5` |
 
-One `Radar Sweep` + one `Full Editorial Pipeline` pair per active vertical (start with
-`agentic_ai`, add the rest once the first vertical passes end-to-end).
+Each job is self-contained and runs the complete pipeline (`radar_30day → virality_judge →
+fact_check → story_draft → claude_humanizer`) with `--workdir /root/editorial-factory` (loads
+`AGENTS.md` + `skills/`) and `--deliver bot-chat:editor`. The `editor` bot orchestrates: it runs
+Loops 1–2 on deepseek, then dispatches `stylist` (`hermes -p stylist chat -q "…"`) for the Claude
+rewrite (Loop 3). Every pipeline halts at the `@Simon approve` gate before publishing.
+
+> To split the radar sweep into its own cheaper job later, add a `Radar Sweep: <vertical>` cron
+> delivering to `bot-chat:radar` and have the pipeline consume `context/recon_proposals/*`.
 
 ## 4. Coolify deploy (the site)
 

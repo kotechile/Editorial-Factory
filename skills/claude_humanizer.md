@@ -35,5 +35,8 @@ criterion to the Editor — do not ship.
 
 ## 6. Failure handling
 - Missing `ANTHROPIC_API_KEY` → halt with an explicit error; never substitute a non-frontier model.
+- kie.ai upstream 502/503 "Internal error, please try again later" (their documented instability) →
+  **retry up to 3 times with a short backoff before halting.** A transient gateway error is not a
+  content failure — do not abandon a run over one flaky call.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so
   the Drafter stops producing it upstream.
