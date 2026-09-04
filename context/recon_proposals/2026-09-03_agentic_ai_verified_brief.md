@@ -1,0 +1,13 @@
+# Verified Brief: agentic_ai — 2026-09-03
+
+| # | Claim | Status | Source URL | Verbatim |
+|---|-------|--------|-----------|----------|
+| 1 | OWASP GenAI LLM Top 10 2026 published August 4, 2026 (replacing the 2025 edition) | VERIFIED | https://owasp.org/www-project-top-10-for-large-language-model-applications | "Get the OWASP GenAI LLM Top 10 2026 … — published August 4, 2026." |
+| 2 | 2026 edition is the first grounded in real incident data: 7,714 incidents pulled, 6,639 categorized; weighted 75% community vote / 25% incident data | VERIFIED | https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM00_Preface.md | "We pulled together a corpus of 7,714 real incidents from public vulnerability databases and an AI-harm database, and we built classifiers that read them and placed the 6,639 that carried enough detail to sort." / "The community vote carries three-quarters of the weight. The incident data covers the remaining quarter." |
+| 3 | Excessive Agency climbed to No. 3 — "the most consequential move on the list" | VERIFIED | https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM00_Preface.md | "Excessive Agency climbed to third, the most consequential move on the list, because the vote and the record agree that agentic deployments are where the damage is landing." |
+| 4 | Excessive Agency's root cause = excessive functionality, excessive permissions, excessive autonomy | VERIFIED | https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM03_ExcessiveAgency.md | "Excessive Agency is the vulnerability that enables damaging actions to be performed in response to unexpected, ambiguous or manipulated outputs from an LLM …" / "The root cause of Excessive Agency is typically one or more of: excessive functionality, excessive permissions, excessive autonomy." |
+| 5 | Prompt Injection held No. 1 via a "defense effect" — the raw incident record alone would drop it from the top 10 | VERIFIED | https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/final/LLM00_Preface.md | "Practitioners rank it the number one risk. Rank the categories by the raw incident record instead, and it falls out of the top 10 entirely. That gap is a defense effect." |
+
+**Corroboration (secondary, not source-of-record):** full 2025→2026 rank-migration table — Excessive Agency #6→#3, Improper Output Handling #5→#10, Unbounded Consumption #10→#6, System Prompt Leakage renamed Hidden Context Exposure (hackerdna.com/blog/owasp-llm-top-10; Zenity blog by project co-lead).
+
+**Removed claims:** 0 — all five claims verified against primary sources.
