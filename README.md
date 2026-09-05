@@ -76,7 +76,8 @@ scripts/verify.sh
 ANTHROPIC_API_KEY=        # REQUIRED for the Claude frontier rewrite step
 SUPABASE_URL=             # drafts/signals/published store
 SUPABASE_SERVICE_ROLE_KEY=
-LINKEDIN_ACCESS_TOKEN=    # publisher (optional, v1 = manual review)
+LINKEDIN_AUTO_POST=       # true to auto-post via API; false (default) for copy-paste review
+LINKEDIN_ACCESS_TOKEN=    # publisher (used when LINKEDIN_AUTO_POST=true)
 GHOST_ADMIN_API_KEY=      # publisher (optional)
 GHOST_API_URL=
 ```

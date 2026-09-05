@@ -51,6 +51,14 @@ for f in "$ROOT"/published/*.md; do
   fi
 done
 
+# 5. Helper and publishing scripts must compile cleanly.
+for py in "$ROOT/scripts"/*.py; do
+  [ -e "$py" ] || continue
+  if ! python3 -m py_compile "$py" >/dev/null 2>&1; then
+    echo "FAIL: python syntax error — $py"; FAIL=1
+  fi
+done
+
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"
   exit 1

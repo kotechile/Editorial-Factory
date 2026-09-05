@@ -133,10 +133,36 @@ Then either:
 ### 4.4 Publishing to LinkedIn / a website
 
 Approved articles land in `published/` automatically and are renderable by the bundled static
-reader (`site/`, deployable via Coolify). To push to **LinkedIn** or **Ghost**, add the
-publisher keys (`LINKEDIN_ACCESS_TOKEN`, `GHOST_API_KEY` + `GHOST_API_URL`) to the `publisher`
-bot's `.env`. Until then, the Publisher stops at persistence and hands you a ready-to-paste
-LinkedIn post.
+reader (`site/`, deployable via Coolify).
+
+#### Embedding External Illustrated Articles & Software Factory Tools
+When the article is generated, styled with illustrations in PressFlow/Ghost/external CMS, and you want the LinkedIn post to drive traffic to that live page or cross-promote a software factory tool:
+
+```bash
+# 1. Supply URLs via CLI arguments:
+python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md \
+  --article-url "https://pressflow.example.com/posts/my-article-with-illustrations" \
+  --promo-url "https://factory.example.com/tools/agent-security-scanner"
+
+# 2. Or run interactively (will prompt for URLs):
+python3 scripts/publish.py --interactive context/drafts/YYYY-MM-DD_<slug>_final.md
+
+# 3. Or specify in the draft frontmatter:
+# article_url: "https://pressflow.example.com/..."
+# promo_url: "https://factory.example.com/tools/..."
+```
+
+The publisher automatically embeds the links into the LinkedIn post with clean call-to-actions:
+```text
+📖 Read the full illustrated breakdown: https://pressflow.example.com/...
+🛠️ Try the live tool: https://factory.example.com/...
+```
+
+#### LinkedIn Switch (`LINKEDIN_AUTO_POST`)
+- **`LINKEDIN_AUTO_POST=false` (default / review mode):** Outputs the complete formatted post with all embedded links ready to copy-paste into LinkedIn.
+- **`LINKEDIN_AUTO_POST=true` (automated mode):** When `LINKEDIN_ACCESS_TOKEN` is set, dispatches the post with link attachments directly via the LinkedIn API.
+
+
 
 ---
 

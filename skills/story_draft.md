@@ -34,6 +34,10 @@ vertical: <id>
 persona: <id>
 date: YYYY-MM-DD
 slug: <slug>
+# Optional external links:
+# article_url: https://pressflow.io/articles/... (or external illustrated post)
+# promo_url: https://factory.example.com/tools/... (e.g. software factory tool)
+# promo_label: "🛠️ Try the tool:"
 ---
 
 <!-- lead -->

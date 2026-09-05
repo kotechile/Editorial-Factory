@@ -81,8 +81,10 @@ rewrite (Loop 3). Every pipeline halts at the `@Simon approve` gate before publi
 2. Env vars: `PORT=3000` (no secrets needed for the static reader — the site serves `published/`).
 3. Domain: e.g. `editorial.<your-domain>` (products ship at subpaths in the factory; this is a
    separate app and can get its own subdomain).
-4. Optionally add a production Ghost CMS app and point the Publisher at it
+4. Optionally add a production Ghost CMS / PressFlow app and point the Publisher at it
    (`GHOST_API_URL`, `GHOST_ADMIN_API_KEY`) when auto-publish is approved.
+5. To configure LinkedIn, toggle `LINKEDIN_AUTO_POST=true` or `false` (default) with `LINKEDIN_ACCESS_TOKEN`.
+   Publishing is executed via `python3 scripts/publish.py <draft_path>`.
 
 ## 5. Supabase (persistence)
 
