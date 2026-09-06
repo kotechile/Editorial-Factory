@@ -1,8 +1,11 @@
-# SKILL: Claude Frontier Humanizer (Loop 3 — Final Rewrite)
+# SKILL: Frontier Humanizer (Loop 3 — Final Rewrite)
 
 ## 1. Objective
 The last pass before approval. Strip every AI-tell, inject cadence and a genuine human voice, and
-iterate until every section passes its own gate. **Frontier model only (Claude).**
+iterate until every section passes its own gate. **Frontier model only.** The frontier is whatever
+the `stylist` profile is configured to (see §6). Current live config: `gemini-3.1-pro-preview`
+(`provider: gemini`). Restore Claude/kie.ai only when a valid key exists — never downgrade to a
+non-frontier model.
 
 ## 2. Negative constraints (apply verbatim, no exceptions)
 - No empty intros: "In today's fast-paced world", "In an era of", "It's no secret that".
@@ -46,13 +49,22 @@ prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only**
 one.
 
 ## 6. Failure handling
-- Missing `ANTHROPIC_API_KEY` → halt with an explicit error; never substitute a non-frontier model.
-- kie.ai upstream "Internal error, please try again later" (their documented instability — may surface as HTTP 502/503 **or 403**) → **retry up to 3 times with a short backoff before halting.** A transient gateway error is not a content failure — do not abandon a run over one flaky call.
-- **`no_available_account`** (HTTP 200 with a JSON error body) is the same upstream hard-down class — halt Loop 3, do not substitute. A dated Anthropic model ID returns "page does not exist" — always request the alias (`claude-sonnet-5` / `Claude-Opus-4-8`), never a dated ID.
-- **Non-streaming only:** kie.ai serves the Anthropic Messages protocol non-streaming. The stylist profile must set `model.streaming: false` — a streaming request returns an empty HTTP 200 (EmptyStreamError), which is config, not an outage. Routing is `provider: anthropic` + `model.base_url: https://api.kie.ai/claude`; `api.kie.ai` is whitelisted in Hermes's `_anthropic_base_url_override_ok` (runtime_provider.py).
-- **Pre-flight before the rewrite:** hit `GET https://api.kie.ai/claude/v1/messages`-adjacent credit endpoint (`https://api.kie.ai/api/v1/chat/credit`, header `Authorization: Bearer *** key>`) AND a 1-token messages ping. Credit 200 + ping OK = gateway healthy; credit 200 + persistent "Internal error" = **gateway hard-down** — halt Loop 3 with an explicit upstream-status note, do not substitute a non-frontier model. A runnable pre-flight lives at `scripts/kie_healthcheck.sh` (exit 0 healthy / 1 hard-down / 2 key missing / 3 auth rejected).
-- **Do NOT gate the pipeline at start on the gateway.** The radar sweep → judge → verify → draft all run on deepseek and are independent of kie.ai; their value is time-bound by the 30-day freshness window, so they must run on schedule even during an outage. A verified draft is never wasted — it holds at Loop 3 and finalizes the moment the gateway recovers. The pre-flight (`scripts/kie_healthcheck.sh`) gates only the rewrite, immediately before Loop 3 — never the sweep.
-- **Auth convention (verified):** `Authorization: Bearer <kie.ai key>` and `x-api-key: Bearer <kie.ai key>` both authenticate. `x-api-key: <kie.ai key>` **without** the `Bearer ` prefix returns HTTP 200 with a `401 Unauthorized` body (a misleading status) — strip nothing, keep the `Bearer ` prefix.
+- **Use the frontier the `stylist` profile is configured to** — do not hard-code a provider. Read the
+  profile's `model.default`/`provider` (current live: `gemini-3.1-pro-preview` / `gemini`, `base_url: ''`).
+  The rewrite must run on that frontier. Never substitute a non-frontier model.
+- **Pre-flight before the rewrite:** verify the configured frontier is reachable (e.g. a 1-token
+  `generateContent` ping to the profile's provider). If the frontier is unavailable **and** it is the
+  only viable frontier, hold the verified draft at Loop 3 with an explicit upstream-status note — a
+  verified draft is never wasted; it finalizes when the frontier recovers. Do not silently fake a rewrite.
+- **Do NOT gate the pipeline at start on the frontier.** rada sweep → judge → verify → draft all run on
+  deepseek and are independent of the frontier; their value is time-bound by the 30-day freshness window,
+  so they must run on schedule even during an outage. The pre-flight gates only the rewrite, immediately
+  before Loop 3 — never the sweep.
+- **kie.ai / Claude note (historical):** when the frontier was Claude via kie.ai, routing was
+  `provider: anthropic` + `base_url: https://api.kie.ai/claude` (non-streaming only, `model.streaming: false`,
+  alias model IDs like `claude-sonnet-5`). That key is currently **auth-rejected (HTTP 401)** — do not use it.
+  The working frontier is Gemini until a valid Anthropic/kie.ai key is restored. `api.kie.ai` is whitelisted
+  in `_anthropic_base_url_override_ok` (runtime_provider.py) if it is re-enabled.
 - A section that fails its gate after 2 retries → report the specific section + criterion to the
   Editor, do not silently ship.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so

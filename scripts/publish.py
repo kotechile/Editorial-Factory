@@ -232,39 +232,210 @@ def post_to_linkedin(post_text: str, access_token: str, article_url: str = "") -
         return {"urn": post_urn, "url": post_url}
 
 
+_COLUMNS_CACHE = None
+
+
+def _articles_live_columns(supabase_url: str, service_key: str):
+    """Return the set of column names currently present on public.articles.
+
+    Probes each candidate column via PostgREST `?select=<col>&limit=1` (HTTP 200 =
+    exists, 400 = missing), which works even when the OpenAPI root returns 404.
+    Cached per process. Returns None on total failure so callers fall back to
+    metadata-only persistence safely.
+    """
+    global _COLUMNS_CACHE
+    if _COLUMNS_CACHE is not None:
+        return _COLUMNS_CACHE
+    candidates = ["slug", "vertical", "headline", "body_md", "content", "title",
+                  "source_url", "sources", "tags", "status", "live_urls", "metadata"]
+    base = supabase_url.rstrip("/") + "/rest/v1/articles"
+    found = set()
+    try:
+        for col in candidates:
+            req = urllib.request.Request(
+                f"{base}?select={urllib.parse.quote(col)}&limit=1",
+                headers={"apikey": service_key, "Authorization": f"Bearer {service_key}",
+                         "Accept": "application/json"},
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    found.add(col)
+            except urllib.error.HTTPError as e:
+                if e.code != 400:
+                    # unexpected (auth/network) — bail to fallback
+                    raise
+    except Exception as e:
+        print(f"  [Supabase] Column introspection failed ({e}); using metadata-only.")
+        return None
+    _COLUMNS_CACHE = found
+    return found
+
+
+def _sync_linkedin_post(supabase_url: str, service_key: str, article_id: str,
+                        linkedin_post: "str | None", metadata: dict):
+    """Upsert a row into 'linkedin_posts' (PressFlow's LinkedIn queue) for an article.
+
+    Formats the editorial-factory's hand-crafted LinkedIn copy into the PressFlow
+    queue so its publish/posts endpoints can see and dispatch it. Idempotent: one
+    post per article (looked up by article_id).
+    """
+    if not linkedin_post:
+        return
+    base = f"{supabase_url.rstrip('/')}/rest/v1/linkedin_posts"
+    hdr = {"apikey": service_key, "Authorization": f"Bearer {service_key}",
+           "Content-Type": "application/json", "Accept": "application/json",
+           "Prefer": "return=representation"}
+    try:
+        req = urllib.request.Request(f"{base}?article_id=eq.{article_id}&select=id&limit=1",
+            headers={"apikey": service_key, "Authorization": f"Bearer {service_key}",
+                     "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            existing = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"  [Supabase] linkedin_posts lookup skipped: {e}")
+        existing = []
+
+    payload = {
+        "article_id": article_id,
+        "platform": "linkedin",
+        "content": linkedin_post,
+        "format_variant": metadata.get("format_variant", "bullet_takeaways"),
+        "status": "draft",
+    }
+    try:
+        if existing:
+            req = urllib.request.Request(f"{base}?id=eq.{existing[0]['id']}",
+                data=json.dumps({**payload, "updated_at": datetime.datetime.now(datetime.timezone.utc).isoformat()}).encode("utf-8"),
+                headers=hdr, method="PATCH")
+            label = f"updated linkedin_post"
+        else:
+            req = urllib.request.Request(base, data=json.dumps(payload).encode("utf-8"),
+                                         headers=hdr, method="POST")
+            label = "inserted linkedin_post"
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            print(f"  [Supabase] {label} for article {article_id[:8]}… (HTTP {resp.status})")
+    except urllib.error.HTTPError as e:
+        print(f"  [Supabase] Warning: linkedin_post upsert failed (HTTP {e.code}): {e.read().decode('utf-8', errors='replace')[:200]}")
+    except Exception as e:
+        print(f"  [Supabase] Warning: linkedin_post upsert error: {e}")
+
+
 def sync_to_supabase(data: dict, live_urls: dict):
+    """Persist an article to the shared factory-core Supabase 'public.articles' table.
+
+    Writes to the rich columns (slug, vertical, headline, body_md, sources, status,
+    live_urls, ...) when they exist on the table, and always keeps the editorial
+    fields in the 'metadata' jsonb so the row is fully described regardless of schema.
+    Idempotent on metadata->>'slug' — re-running does not create duplicates.
+    """
     supabase_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
     service_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
     if not supabase_url or not service_key:
         print("  [Supabase] SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set. Skipping DB sync.")
         return False
 
-    url = f"{supabase_url}/rest/v1/articles"
-    payload = {
-        "slug": data["slug"],
-        "vertical": data["vertical"],
-        "headline": data["title"],
-        "body_md": data["body_md"],
-        "linkedin_post": data["linkedin_post"],
-        "sources": data["sources"],
+    # First source URL (grounded citation) -> source_url column.
+    source_url = ""
+    for s in sorted(data.get("sources") or [], key=lambda x: x.get("index", 0)):
+        m = re.search(r"https?://\S+", str(s.get("citation", "")))
+        if m:
+            source_url = m.group(0)
+            break
+
+    metadata = {
+        "slug": data.get("slug"),
+        "vertical": data.get("vertical"),
+        "headline": data.get("title"),
+        "sources": data.get("sources") or [],
+        "linkedin_post": data.get("linkedin_post"),
         "status": "published",
-        "live_urls": live_urls,
+        "targets": ["published/"],
+        "live_urls": live_urls or {},
+        "article_url": (data.get("article_url") or live_urls.get("article_url", "")) or None,
+        "promo_url": (data.get("promo_url") or live_urls.get("promo_url", "")) or None,
+    }
+    full = {
+        "slug": data.get("slug"),
+        "vertical": data.get("vertical"),
+        "headline": data.get("title"),
+        "body_md": data.get("body_md") or "",
+        "content": data.get("body_md") or "",
+        "title": data.get("title"),
+        "source_url": source_url or None,
+        "sources": data.get("sources") or [],
+        "tags": [data.get("vertical")] if data.get("vertical") else [],
+        "status": "published",
+        "live_urls": live_urls or {},
+        "metadata": metadata,
     }
 
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "apikey": service_key,
-            "Authorization": f"Bearer {service_key}",
-            "Content-Type": "application/json",
-            "Prefer": "resolution=merge-duplicates",
-        },
-        method="POST",
-    )
+    base = f"{supabase_url}/rest/v1/articles"
+    headers = {
+        "apikey": service_key,
+        "Authorization": f"Bearer {service_key}",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Prefer": "return=representation",
+    }
+
+    # Keep only columns the live table actually has; put the rest in metadata.
+    live_cols = _articles_live_columns(supabase_url, service_key)
+    if live_cols is not None:
+        payload = {k: v for k, v in full.items() if k in live_cols}
+        if "metadata" in live_cols:
+            payload.setdefault("metadata", metadata)
+    else:
+        payload = {"title": full["title"], "content": full["content"],
+                   "source_url": full["source_url"], "tags": full["tags"],
+                   "metadata": metadata}
+
+    slug = data.get("slug") or ""
+    slug_q = urllib.parse.quote(slug)
+    # Idempotency: look up an existing row by metadata->>'slug'.
     try:
-        with urllib.request.urlopen(req) as resp:
-            print(f"  [Supabase] Successfully upserted article '{data['slug']}' (HTTP {resp.status})")
+        req = urllib.request.Request(
+            f"{base}?metadata->>slug=eq.{slug_q}&select=id&limit=1",
+            headers={"apikey": service_key, "Authorization": f"Bearer {service_key}",
+                     "Accept": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            existing = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"  [Supabase] Could not query existing article: {e}")
+        existing = []
+
+    try:
+        if existing:
+            rid = existing[0]["id"]
+            update = dict(payload)
+            update["updated_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            if "metadata" not in update:
+                update["metadata"] = metadata
+            req = urllib.request.Request(
+                f"{base}?id=eq.{rid}",
+                data=json.dumps(update).encode("utf-8"),
+                headers={**headers, "Prefer": "return=representation"},
+                method="PATCH",
+            )
+            label = f"updated {rid}"
+        else:
+            req = urllib.request.Request(base, data=json.dumps(payload).encode("utf-8"),
+                                         headers=headers, method="POST")
+            label = "inserted"
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            body = resp.read().decode("utf-8")
+            article_id = None
+            try:
+                rows = json.loads(body)
+                if isinstance(rows, list) and rows:
+                    article_id = rows[0].get("id")
+            except Exception:
+                article_id = None
+            print(f"  [Supabase] {label} article '{slug}' (HTTP {resp.status}, id={article_id or 'n/a'})")
+            # Gap #2: persist the hand-crafted LinkedIn post so PressFlow's queue sees it.
+            if article_id:
+                _sync_linkedin_post(supabase_url, service_key, article_id,
+                                    data.get("linkedin_post"), metadata)
             return True
     except urllib.error.HTTPError as e:
         err_body = e.read().decode("utf-8", errors="replace")
