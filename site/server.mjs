@@ -1,5 +1,5 @@
 import { createServer } from 'node:http';
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
 import { join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -180,21 +180,36 @@ async function updateCalendarMarkdown(verticals) {
 }
 
 async function getLocalVerticals() {
-  const content = await readFile(VERTICALS_FILE, 'utf8');
-  const data = JSON.parse(content);
-  return data.verticals || [];
+  if (existsSync(VERTICALS_FILE)) {
+    try {
+      const content = await readFile(VERTICALS_FILE, 'utf8');
+      const data = JSON.parse(content);
+      return data.verticals || [];
+    } catch (e) {
+      console.error('Error reading verticals file:', e.message);
+    }
+  }
+  return [];
 }
 
 async function saveLocalVerticals(verticals) {
+  const contextDir = join(ROOT, 'context');
+  if (!existsSync(contextDir)) {
+    await mkdir(contextDir, { recursive: true });
+  }
   await writeFile(VERTICALS_FILE, JSON.stringify({ verticals }, null, 2), 'utf8');
   await updateCalendarMarkdown(verticals);
 }
 
 async function getLocalPersonas() {
   if (existsSync(PERSONAS_FILE)) {
-    const content = await readFile(PERSONAS_FILE, 'utf8');
-    const data = JSON.parse(content);
-    return data.personas || {};
+    try {
+      const content = await readFile(PERSONAS_FILE, 'utf8');
+      const data = JSON.parse(content);
+      return data.personas || {};
+    } catch (e) {
+      console.error('Error reading personas file:', e.message);
+    }
   }
   return {};
 }
