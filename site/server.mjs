@@ -1,5 +1,5 @@
 import { createServer } from 'node:http';
-import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, unlink } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
 import { join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -212,6 +212,14 @@ async function getLocalPersonas() {
     }
   }
   return {};
+}
+
+async function saveLocalPersonas(personas) {
+  const contextDir = join(ROOT, 'context');
+  if (!existsSync(contextDir)) {
+    await mkdir(contextDir, { recursive: true });
+  }
+  await writeFile(PERSONAS_FILE, JSON.stringify({ personas }, null, 2), 'utf8');
 }
 
 // Request Body Parser
@@ -448,6 +456,154 @@ const server = createServer(async (req, res) => {
         articles.push({ slug: f.replace(/\.md$/, ''), file: f, title, wordCount, readTime });
       }
       return sendJson(res, 200, articles);
+    }
+
+    // ----------------------------------------------------
+    // API: Delete Article / Draft
+    // ----------------------------------------------------
+    if ((url.pathname.startsWith('/api/drafts/') || url.pathname === '/api/drafts') && req.method === 'DELETE') {
+      const file = url.searchParams.get('file') || url.pathname.replace(/^\/api\/drafts\/?/, '');
+      if (!file) return sendJson(res, 400, { error: 'Missing file parameter' });
+
+      const safeName = file.replace(/[^a-zA-Z0-9_\-\.]/g, '');
+      const draftsDir = join(ROOT, 'context', 'drafts');
+      const pubDir = join(ROOT, 'published');
+      let targetPath = join(draftsDir, safeName);
+      if (!existsSync(targetPath)) targetPath = join(pubDir, safeName);
+
+      if (!existsSync(targetPath)) {
+        return sendJson(res, 404, { error: `File '${safeName}' not found.` });
+      }
+
+      await unlink(targetPath);
+
+      const sbConfig = getSupabaseConfig();
+      if (sbConfig.isConfigured) {
+        try {
+          const slug = safeName.replace(/\.md$/, '');
+          await supabaseFetch(`articles?slug=eq.${encodeURIComponent(slug)}`, { method: 'DELETE' });
+        } catch (e) {
+          console.warn('[Supabase] Warning deleting article record:', e.message);
+        }
+      }
+
+      return sendJson(res, 200, { status: 'ok', deleted: safeName });
+    }
+
+    // ----------------------------------------------------
+    // API: Personas CRUD & Settings
+    // ----------------------------------------------------
+    if (url.pathname === '/api/personas') {
+      const sbConfig = getSupabaseConfig();
+      if (req.method === 'GET') {
+        const personas = await getLocalPersonas();
+        return sendJson(res, 200, { status: 'ok', personas });
+      }
+
+      if (req.method === 'POST') {
+        const body = await parseJsonBody(req);
+        const { id, label, reader_level, tone, wants } = body;
+        if (!id || !label) {
+          return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
+        }
+
+        const slug = id.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_');
+        const personas = await getLocalPersonas();
+
+        if (personas[slug]) {
+          return sendJson(res, 409, { error: `Persona with ID '${slug}' already exists.` });
+        }
+
+        const newPersona = {
+          label: label.trim(),
+          reader_level: (reader_level || '').trim(),
+          tone: (tone || '').trim(),
+          wants: (wants || '').trim(),
+        };
+
+        personas[slug] = newPersona;
+        await saveLocalPersonas(personas);
+
+        if (sbConfig.isConfigured) {
+          try {
+            await supabaseFetch('editorial_personas', {
+              method: 'POST',
+              body: JSON.stringify({
+                id: slug,
+                ...newPersona,
+                updated_at: new Date().toISOString(),
+              }),
+            });
+          } catch (e) {
+            console.warn('[Supabase] Warning syncing created persona:', e.message);
+          }
+        }
+
+        return sendJson(res, 201, { status: 'ok', id: slug, persona: newPersona });
+      }
+    }
+
+    if (url.pathname.startsWith('/api/personas/')) {
+      const subpath = decodeURIComponent(url.pathname.replace(/^\/api\/personas\//, ''));
+      const sbConfig = getSupabaseConfig();
+
+      if (req.method === 'PUT') {
+        const body = await parseJsonBody(req);
+        const personas = await getLocalPersonas();
+
+        if (!personas[subpath]) {
+          return sendJson(res, 404, { error: `Persona '${subpath}' not found.` });
+        }
+
+        const existing = personas[subpath];
+        const updated = {
+          label: body.label !== undefined ? body.label.trim() : existing.label,
+          reader_level: body.reader_level !== undefined ? body.reader_level.trim() : existing.reader_level,
+          tone: body.tone !== undefined ? body.tone.trim() : existing.tone,
+          wants: body.wants !== undefined ? body.wants.trim() : existing.wants,
+        };
+
+        personas[subpath] = updated;
+        await saveLocalPersonas(personas);
+
+        if (sbConfig.isConfigured) {
+          try {
+            await supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({
+                ...updated,
+                updated_at: new Date().toISOString(),
+              }),
+            });
+          } catch (e) {
+            console.warn('[Supabase] Warning syncing updated persona:', e.message);
+          }
+        }
+
+        return sendJson(res, 200, { status: 'ok', id: subpath, persona: updated });
+      }
+
+      if (req.method === 'DELETE') {
+        const personas = await getLocalPersonas();
+        if (!personas[subpath]) {
+          return sendJson(res, 404, { error: `Persona '${subpath}' not found.` });
+        }
+
+        delete personas[subpath];
+        await saveLocalPersonas(personas);
+
+        if (sbConfig.isConfigured) {
+          try {
+            await supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
+              method: 'DELETE',
+            });
+          } catch (e) {
+            console.warn('[Supabase] Warning syncing deleted persona:', e.message);
+          }
+        }
+
+        return sendJson(res, 200, { status: 'ok', deleted: subpath });
+      }
     }
 
     // ----------------------------------------------------
