@@ -16,6 +16,14 @@ non-frontier model.
 - No adjective-stacking before nouns ("cutting-edge, revolutionary, game-changing").
 - Preserve the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
 - Preserve every citation `[n]` and the source list.
+- Preserve each section's distinct, brief-sourced action items — do not merge or drop a section's
+  numbered moves (the persona's doable steps are the point; note the draft's per-section content).
+- Only VERIFIED-brief figures may appear; no secondary-derived sums (e.g. a "net" figure computed
+  from two press-release numbers). If a figure is not a verbatim line in the verified brief, it
+  stays out or is flagged `[NEEDS-SOURCE]` — never pulled from a secondary write-up.
+- After the rewrite, compare the final body length to the draft/floor (~800 words). If the frontier
+  compacted it materially below the draft, restore depth from the verified brief (restate the moves
+  / tension), never pad new claims.
 
 ## 3. Voice rules
 - Vary sentence length; short declaratives next to longer causal sentences.

@@ -168,22 +168,46 @@ The publisher automatically embeds the links into the LinkedIn post with clean c
 
 ## 5. Adding a vertical (config-as-data)
 
-Verticals are **pure config** — no code changes.
+Verticals can be managed interactively via the **PressFlow Web UI (Settings)**, via the **CLI tool**, or synced directly with **Supabase**.
 
-1. Append an entry to `context/verticals.json`:
-   ```json
-   {
-     "id": "cybersecurity",
-     "label": "Security & Threat Intelligence",
-     "cadence": "0 6 * * 1",
-     "sources": ["cisa_alerts", "hn_security", "x_sec"],
-     "primary_angles": ["breach economics", "AI-driven attacks", "zero-trust ROI"],
-     "target_persona": "eng_leader"
-   }
-   ```
-2. On the VPS: `cd /root/editorial-factory && python3 scripts/sync_crons.py`
+### Option A: Interactively via PressFlow Web UI (Recommended)
+1. Open the PressFlow web dashboard (`http://<vps-or-domain>:3000` or `http://localhost:3000`).
+2. Click **⚙️ Verticals & Radar Settings** &rarr; **+ Add Vertical** (or click ✏️ to edit).
+3. Select your cadence preset, target reader persona, sources, and angles.
+4. Click **Save Vertical** — it instantly updates `context/verticals.json`, regenerates `context/content_calendar.md`, and syncs to Supabase (if configured).
+5. Click **⚡ Sync Crons** to register new pipeline jobs in Hermes.
 
-That creates the `Full Pipeline: cybersecurity` cron job. Existing jobs are left untouched.
+### Option B: Via Command-Line Tool (`scripts/manage_verticals.py`)
+```bash
+# List all configured verticals
+python3 scripts/manage_verticals.py list
+
+# Add a new vertical
+python3 scripts/manage_verticals.py add \
+  --id cybersecurity \
+  --label "Security & Threat Intelligence" \
+  --cadence "0 6 * * 1" \
+  --persona eng_leader \
+  --sources "cisa_alerts,hn_security,x_sec" \
+  --angles "breach economics,AI-driven attacks,zero-trust ROI"
+
+# Edit an existing vertical
+python3 scripts/manage_verticals.py edit --id cybersecurity --cadence "0 6 * * 1,4"
+
+# Delete a vertical
+python3 scripts/manage_verticals.py delete --id cybersecurity
+
+# Sync Hermes cron schedules
+python3 scripts/sync_crons.py
+```
+
+### Option C: Supabase Cloud Database Sync
+When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
+- Table `editorial_verticals` acts as the cloud store.
+- Sync commands:
+  - `python3 scripts/sync_verticals.py push` (Local JSON &rarr; Supabase)
+  - `python3 scripts/sync_verticals.py pull` (Supabase &rarr; Local JSON)
+  - `python3 scripts/sync_verticals.py init-schema` (Prints SQL DDL)
 
 ---
 

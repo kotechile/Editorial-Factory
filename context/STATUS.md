@@ -1,7 +1,7 @@
 # Editorial Factory — Status
 
-**State:** scaffolded; frontier key wired (Claude via kie.ai). Fleet + cron not yet created.
-**Frontier key:** `ANTHROPIC_API_KEY=Bearer <kie.ai key>` set in both `~/.hermes/.env` (laptop) and `/root/.hermes/.env` (VPS). Routes Claude via `https://api.kie.ai/claude` (model `claude-sonnet-5`).
+**State:** pipeline live (radar → judge → verify → draft → humanize → approve gate). Frontier now Gemini.
+**Frontier:** stylist profile `provider: gemini`, `model: gemini-3.1-pro-preview` (GOOGLE_API_KEY). Claude-via-kie.ai route retired (401). See skills/claude_humanizer.md §6.
 
 ## Next steps (see `docs/VPS_WIRING.md`)
 1. Create the 7 bot profiles (`editor`, `radar`, `judge`, `verifier`, `drafter`, `stylist`,

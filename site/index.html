@@ -2,37 +2,1544 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Editorial Factory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PressFlow — Autonomous Editorial Intelligence & Verticals Manager</title>
+  <meta name="description" content="Manage editorial factory verticals, scout cadences, research sources, and published intelligence briefs interactively.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: light; }
-    body { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; font: 17px/1.65 -apple-system, Segoe UI, Roboto, sans-serif; color: #1a1a1a; }
-    h1 { line-height: 1.15; }
-    a { color: #0a66c2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { list-style: none; padding: 0; }
-    li { margin: .9rem 0; padding-bottom: .9rem; border-bottom: 1px solid #eee; }
-    .muted { color: #666; font-size: 14px; }
-    .empty { color: #888; }
+    :root {
+      --bg: #090d16;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(30, 41, 59, 0.7);
+      --bg-card-hover: rgba(51, 65, 85, 0.8);
+      --border: rgba(148, 163, 184, 0.15);
+      --border-focus: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #38bdf8;
+      --accent-rgb: 56, 189, 248;
+      --accent-hover: #0ea5e9;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --success: #10b981;
+      --success-bg: rgba(16, 185, 129, 0.15);
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.15);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.15);
+      --tag-bg: rgba(56, 189, 248, 0.1);
+      --tag-border: rgba(56, 189, 248, 0.25);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--accent-glow);
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.08) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+    }
+
+    /* Top Navigation Header */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+
+    .brand-text h1 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(120deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-text p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    /* Status Pill */
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--warning);
+      box-shadow: 0 0 8px var(--warning);
+      animation: pulse 2s infinite;
+    }
+
+    .status-dot.active {
+      background: var(--success);
+      box-shadow: 0 0 8px var(--success);
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.9); }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-md);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%);
+      box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--bg-surface);
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(148, 163, 184, 0.3);
+      color: #fff;
+    }
+
+    .btn-danger {
+      background: var(--danger-bg);
+      color: var(--danger);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    .btn-danger:hover {
+      background: var(--danger);
+      color: #fff;
+    }
+
+    .btn-sm {
+      padding: 0.35rem 0.75rem;
+      font-size: 0.78rem;
+    }
+
+    /* Nav Tabs */
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      padding: 0.75rem 1.25rem;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tab-btn:hover {
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .badge-count {
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      background: var(--border);
+      color: var(--text);
+    }
+
+    .tab-btn.active .badge-count {
+      background: var(--accent-glow);
+      color: var(--accent);
+    }
+
+    /* Tab Panes */
+    .tab-pane {
+      display: none;
+      animation: fadeIn 0.25s ease-in-out;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Search & Filter Bar */
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 260px;
+      max-width: 450px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.65rem 1rem 0.65rem 2.4rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: var(--text);
+      font-size: 0.88rem;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      pointer-events: none;
+      font-size: 0.9rem;
+    }
+
+    /* Verticals Cards Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .card-top {
+      margin-bottom: 1.25rem;
+    }
+
+    .card-header-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .vertical-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    .vertical-id-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.15rem 0.5rem;
+      background: rgba(148, 163, 184, 0.1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      display: inline-block;
+      margin-top: 0.25rem;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 0.35rem;
+    }
+
+    .icon-btn {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+      background: rgba(148, 163, 184, 0.08);
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .icon-btn:hover {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      border-color: var(--tag-border);
+    }
+
+    .icon-btn.danger:hover {
+      background: var(--danger-bg);
+      color: var(--danger);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    /* Cadence Pill */
+    .cadence-box {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.55rem 0.85rem;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.1rem;
+    }
+
+    .cadence-icon {
+      color: var(--accent);
+      font-size: 1rem;
+    }
+
+    .cadence-details {
+      flex: 1;
+    }
+
+    .cadence-text {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .cadence-cron {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-dim);
+    }
+
+    .persona-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.15);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      margin-bottom: 1rem;
+    }
+
+    /* Tags / Chips */
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .tag {
+      font-size: 0.74rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-sm);
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: #bae6fd;
+      font-family: var(--font-mono);
+    }
+
+    .angle-tag {
+      background: rgba(148, 163, 184, 0.07);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      color: #cbd5e1;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+    }
+
+    /* Articles List */
+    .articles-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .article-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article-row:hover {
+      border-color: var(--accent);
+      transform: translateX(4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .article-info h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .article-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Personas List */
+    .personas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .persona-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+
+    .persona-card h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+
+    .persona-id {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .persona-prop {
+      margin-bottom: 0.75rem;
+    }
+
+    .persona-prop-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-dim);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .persona-prop-val {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Modals */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1.5rem;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal {
+      background: #0f172a;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 620px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-header h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .close-btn:hover { color: #fff; }
+
+    /* Form Fields */
+    .form-group {
+      margin-bottom: 1.35rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 0.45rem;
+      color: var(--text);
+    }
+
+    .form-help {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 0.35rem;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 0.65rem 0.9rem;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .preset-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .preset-chip {
+      font-size: 0.72rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.1);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .preset-chip:hover {
+      background: var(--tag-bg);
+      color: var(--accent);
+      border-color: var(--tag-border);
+    }
+
+    /* Interactive Tag Input */
+    .tag-input-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding: 0.5rem;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      min-height: 44px;
+      align-items: center;
+    }
+
+    .tag-input-box:focus-within {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .chip-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      border-radius: var(--radius-sm);
+      color: #bae6fd;
+    }
+
+    .chip-item button {
+      background: none;
+      border: none;
+      color: #93c5fd;
+      cursor: pointer;
+      font-size: 0.85rem;
+      line-height: 1;
+      padding: 0;
+    }
+
+    .chip-item button:hover { color: #fff; }
+
+    .tag-text-input {
+      flex: 1;
+      min-width: 120px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      padding: 0.25rem 0.5rem;
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      padding: 0.85rem 1.35rem;
+      border-radius: var(--radius-md);
+      background: #1e293b;
+      border: 1px solid var(--border);
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 500;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .toast.success { border-color: var(--success); }
+    .toast.error { border-color: var(--danger); }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--text-muted);
+    }
+
+    .empty-state-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0.6;
+    }
+
+    .empty-state h3 {
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Editorial Factory</h1>
-  <p class="muted">Autonomous, verified, human-voice articles — published via the Editorial Factory pipeline.</p>
-  <ul id="articles"><li class="empty">No articles published yet.</li></ul>
-  <script>
-    fetch('/api/articles.json')
-      .then((r) => r.json())
-      .then((articles) => {
-        const ul = document.getElementById('articles');
-        if (!articles.length) return;
-        ul.innerHTML = '';
-        articles.forEach((a) => {
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="/published/${a.file}">${a.title}</a><br><span class="muted">${a.slug}</span>`;
-          ul.appendChild(li);
-        });
+
+<div class="container">
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-logo">PF</div>
+      <div class="brand-text">
+        <h1>PressFlow Editorial Engine</h1>
+        <p>Autonomous 30-Day Intelligence, Virality Radar & Multi-Vertical Fleet</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <div class="status-pill" id="storageStatusPill">
+        <div class="status-dot" id="storageDot"></div>
+        <span id="storageLabel">Checking storage...</span>
+      </div>
+
+      <button class="btn btn-secondary btn-sm" id="syncCronBtn" title="Sync crons with Hermes bot fleet">
+        ⚡ Sync Crons
+      </button>
+
+      <button class="btn btn-primary btn-sm" id="openAddModalBtn">
+        + Add Vertical
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-verticals" id="tabVerticalsBtn">
+      ⚙️ Verticals & Radar Settings <span class="badge-count" id="verticalsCount">0</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-articles" id="tabArticlesBtn">
+      📖 Published Articles <span class="badge-count" id="articlesCount">0</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-personas" id="tabPersonasBtn">
+      👥 Target Personas <span class="badge-count" id="personasCount">0</span>
+    </button>
+    <button class="tab-btn" data-tab="tab-sync" id="tabSyncBtn">
+      📡 Supabase & Fleet Controls
+    </button>
+  </div>
+
+  <!-- TAB 1: Verticals & Settings -->
+  <div class="tab-pane active" id="tab-verticals">
+    <div class="action-bar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchVerticals" placeholder="Filter verticals by title, angle, source or persona...">
+      </div>
+
+      <div>
+        <button class="btn btn-primary" id="addVerticalTopBtn">+ New Vertical</button>
+      </div>
+    </div>
+
+    <div class="grid" id="verticalsGrid">
+      <div class="empty-state">
+        <div class="empty-state-icon">📡</div>
+        <h3>Loading editorial verticals...</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: Published Articles Reader -->
+  <div class="tab-pane" id="tab-articles">
+    <div class="articles-list" id="articlesList">
+      <div class="empty-state">
+        <div class="empty-state-icon">📰</div>
+        <h3>Loading published articles...</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: Personas -->
+  <div class="tab-pane" id="tab-personas">
+    <div class="personas-grid" id="personasGrid">
+      <div class="empty-state">
+        <div class="empty-state-icon">👥</div>
+        <h3>Loading target personas...</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: Supabase & Fleet Controls -->
+  <div class="tab-pane" id="tab-sync">
+    <div class="card" style="max-width: 760px; margin: 0 auto;">
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color:#fff;">Storage & Fleet Integration</h2>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+        Synchronize configuration between PressFlow, Supabase (Cloud persistence), and the local Hermes multi-agent fleet on the VPS.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <div style="padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.3rem;">1. Hermes Cron Schedule Sync</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+            Pushes all active verticals and their cron cadences directly to <code>hermes cron</code> jobs.
+          </div>
+          <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">Run scripts/sync_crons.py</button>
+        </div>
+
+        <div style="padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.3rem;">2. Supabase Push (Local JSON &rarr; Supabase)</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+            Uploads all verticals and personas from <code>context/verticals.json</code> into the Supabase <code>editorial_verticals</code> table.
+          </div>
+          <button class="btn btn-secondary btn-sm" id="btnPushSupabase">Push to Supabase</button>
+        </div>
+
+        <div style="padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.3rem;">3. Supabase Pull (Supabase &rarr; Local JSON)</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+            Fetches all remote verticals from Supabase and overwrites local <code>context/verticals.json</code> and calendar.
+          </div>
+          <button class="btn btn-secondary btn-sm" id="btnPullSupabase">Pull from Supabase</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add / Edit Vertical Modal -->
+<div class="modal-backdrop" id="verticalModalBackdrop">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">Add Editorial Vertical</h2>
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+    </div>
+
+    <form id="verticalForm">
+      <input type="hidden" id="formIsEdit" value="false">
+
+      <div class="form-group">
+        <label class="form-label" for="verticalId">Vertical ID (slug)</label>
+        <input type="text" class="form-input" id="verticalId" placeholder="e.g. agentic_ai or quantum_hardware" required>
+        <div class="form-help">Unique identifier used by radar bots and cron commands.</div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="verticalLabel">Display Label</label>
+        <input type="text" class="form-input" id="verticalLabel" placeholder="e.g. Agentic Automation & Architecture" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="verticalPersona">Target Reader Persona</label>
+        <select class="form-select" id="verticalPersona" required>
+          <!-- dynamically populated -->
+        </select>
+        <div class="form-help" id="personaPreviewText"></div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="verticalCadence">Cadence (Cron Expression)</label>
+        <input type="text" class="form-input" id="verticalCadence" value="0 6 * * 1" placeholder="e.g. 0 6 * * 1,4" required>
+        <div class="form-help" id="cadenceHumanPreview">Schedule: Monday 06:00 AM EST</div>
+        <div class="preset-chips">
+          <span class="preset-chip" onclick="setCadencePreset('0 6 * * *', 'Daily 06:00 AM EST')">Daily 06:00</span>
+          <span class="preset-chip" onclick="setCadencePreset('0 6 * * 1,4', 'Mon + Thu 06:00 AM EST')">Mon + Thu 06:00</span>
+          <span class="preset-chip" onclick="setCadencePreset('0 6 * * 2', 'Tue 06:00 AM EST')">Tue 06:00</span>
+          <span class="preset-chip" onclick="setCadencePreset('0 6 * * 3', 'Wed 06:00 AM EST')">Wed 06:00</span>
+          <span class="preset-chip" onclick="setCadencePreset('0 6 * * 4', 'Thu 06:00 AM EST')">Thu 06:00</span>
+          <span class="preset-chip" onclick="setCadencePreset('0 6 * * 5', 'Fri 06:00 AM EST')">Fri 06:00</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Research & Radar Sources</label>
+        <div class="tag-input-box" id="sourcesBox">
+          <input type="text" class="tag-text-input" id="sourceInput" placeholder="Type source and press Enter...">
+        </div>
+        <div class="preset-chips">
+          <span class="preset-chip" onclick="addSourcePreset('arxiv')">+ arxiv</span>
+          <span class="preset-chip" onclick="addSourcePreset('hacker_news')">+ hacker_news</span>
+          <span class="preset-chip" onclick="addSourcePreset('github_trending')">+ github_trending</span>
+          <span class="preset-chip" onclick="addSourcePreset('x_ai')">+ x_ai</span>
+          <span class="preset-chip" onclick="addSourcePreset('reddit_ml')">+ reddit_ml</span>
+          <span class="preset-chip" onclick="addSourcePreset('industry_dive')">+ industry_dive</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Primary Editorial Angles</label>
+        <div class="tag-input-box" id="anglesBox">
+          <input type="text" class="tag-text-input" id="angleInput" placeholder="Type editorial angle and press Enter...">
+        </div>
+        <div class="form-help">Core analytical themes that the scout and judge prioritize.</div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="cancelModalBtn">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="saveVerticalBtn">Save Vertical</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal-backdrop" id="deleteModalBackdrop">
+  <div class="modal" style="max-width: 440px;">
+    <h2 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.75rem;">Delete Vertical?</h2>
+    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;" id="deleteConfirmText">
+      Are you sure you want to delete this vertical? This will remove it from radar schedules and calendar sync.
+    </p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-secondary" id="cancelDeleteBtn">Cancel</button>
+      <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast" id="toast">
+  <span id="toastMessage">Notification</span>
+</div>
+
+<script>
+  // State
+  let allVerticals = [];
+  let allPersonas = {};
+  let storageMode = 'local';
+  let currentSources = [];
+  let currentAngles = [];
+  let deleteTargetId = null;
+
+  // DOM Elements
+  const tabVerticalsBtn = document.getElementById('tabVerticalsBtn');
+  const tabArticlesBtn = document.getElementById('tabArticlesBtn');
+  const tabPersonasBtn = document.getElementById('tabPersonasBtn');
+  const tabSyncBtn = document.getElementById('tabSyncBtn');
+
+  const searchInput = document.getElementById('searchVerticals');
+  const verticalsGrid = document.getElementById('verticalsGrid');
+  const articlesList = document.getElementById('articlesList');
+  const personasGrid = document.getElementById('personasGrid');
+
+  const verticalModalBackdrop = document.getElementById('verticalModalBackdrop');
+  const deleteModalBackdrop = document.getElementById('deleteModalBackdrop');
+  const verticalForm = document.getElementById('verticalForm');
+
+  const sourcesBox = document.getElementById('sourcesBox');
+  const sourceInput = document.getElementById('sourceInput');
+  const anglesBox = document.getElementById('anglesBox');
+  const angleInput = document.getElementById('angleInput');
+
+  // Human Readable Cadence Helper
+  function getHumanCadence(cadenceStr) {
+    const parts = (cadenceStr || '').trim().split(/\s+/);
+    if (parts.length >= 5) {
+      const [minute, hour, dom, month, dow] = parts;
+      const hInt = parseInt(hour, 10);
+      const h12 = isNaN(hInt) ? 6 : (hInt === 0 ? 12 : (hInt > 12 ? hInt - 12 : hInt));
+      const amPm = !isNaN(hInt) && hInt >= 12 ? 'PM' : 'AM';
+      const mStr = String(parseInt(minute, 10) || 0).padStart(2, '0');
+      const timeStr = `${h12}:${mStr} ${amPm} EST`;
+
+      const dayMap = { '0': 'Sun', '1': 'Mon', '2': 'Tue', '3': 'Wed', '4': 'Thu', '5': 'Fri', '6': 'Sat', '7': 'Sun' };
+      if (dow === '*') return `Daily ${timeStr}`;
+      const days = dow.split(',').map((d) => dayMap[d] || d);
+      return `${days.join(' + ')} ${timeStr}`;
+    }
+    return cadenceStr;
+  }
+
+  // Show Toast
+  function showToast(msg, type = 'success') {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toastMessage');
+    toastMessage.textContent = msg;
+    toast.className = `toast ${type} show`;
+    setTimeout(() => {
+      toast.className = 'toast';
+    }, 3500);
+  }
+
+  // Tab Switching
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach((p) => p.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.getAttribute('data-tab');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+
+  // Fetch Verticals & Personas
+  async function loadVerticals() {
+    try {
+      const res = await fetch('/api/verticals');
+      const data = await res.json();
+      allVerticals = data.verticals || [];
+      allPersonas = data.personas || {};
+      storageMode = data.storage_mode || 'local';
+
+      // Update Header Pill
+      const storageDot = document.getElementById('storageDot');
+      const storageLabel = document.getElementById('storageLabel');
+      if (storageMode === 'supabase') {
+        storageDot.className = 'status-dot active';
+        storageLabel.textContent = 'Supabase Synced';
+      } else {
+        storageDot.className = 'status-dot';
+        storageLabel.textContent = 'Local File Mode';
+      }
+
+      document.getElementById('verticalsCount').textContent = allVerticals.length;
+      document.getElementById('personasCount').textContent = Object.keys(allPersonas).length;
+
+      populatePersonaDropdown();
+      renderVerticals(allVerticals);
+      renderPersonas(allPersonas);
+    } catch (err) {
+      showToast('Error loading verticals: ' + err.message, 'error');
+    }
+  }
+
+  // Fetch Published Articles
+  async function loadArticles() {
+    try {
+      const res = await fetch('/api/articles.json');
+      const articles = await res.json();
+      document.getElementById('articlesCount').textContent = articles.length;
+
+      if (!articles.length) {
+        articlesList.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-state-icon">📭</div>
+            <h3>No Published Articles Yet</h3>
+            <p>Run the editorial radar pipeline or approve pending drafts to publish articles.</p>
+          </div>
+        `;
+        return;
+      }
+
+      articlesList.innerHTML = articles.map((a) => `
+        <a href="/published/${a.file}" class="article-row" target="_blank">
+          <div class="article-info">
+            <h3>${a.title}</h3>
+            <div class="article-meta">
+              <span>📄 ${a.slug}</span>
+              <span>⏱️ ~${a.readTime} min read (${a.wordCount} words)</span>
+            </div>
+          </div>
+          <span style="color: var(--accent); font-size: 1.1rem;">&rarr;</span>
+        </a>
+      `).join('');
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  // Populate Persona Dropdown
+  function populatePersonaDropdown() {
+    const select = document.getElementById('verticalPersona');
+    select.innerHTML = '';
+    for (const [id, p] of Object.entries(allPersonas)) {
+      const opt = document.createElement('option');
+      opt.value = id;
+      opt.textContent = `${p.label} (${id})`;
+      select.appendChild(opt);
+    }
+
+    select.addEventListener('change', () => {
+      const p = allPersonas[select.value];
+      document.getElementById('personaPreviewText').textContent = p ? `Tone: ${p.tone}` : '';
+    });
+  }
+
+  // Render Verticals Grid
+  function renderVerticals(list) {
+    if (!list.length) {
+      verticalsGrid.innerHTML = `
+        <div class="empty-state" style="grid-column: 1 / -1;">
+          <div class="empty-state-icon">📡</div>
+          <h3>No Verticals Found</h3>
+          <p>Click '+ Add Vertical' to configure your first content intelligence stream.</p>
+        </div>
+      `;
+      return;
+    }
+
+    verticalsGrid.innerHTML = list.map((v) => {
+      const p = allPersonas[v.target_persona] || { label: v.target_persona };
+      const readableCadence = getHumanCadence(v.cadence);
+      const sourcesHtml = (v.sources || []).map((s) => `<span class="tag">${s}</span>`).join('');
+      const anglesHtml = (v.primary_angles || []).map((a) => `<span class="tag angle-tag">${a}</span>`).join('');
+
+      return `
+        <div class="card" data-id="${v.id}">
+          <div class="card-top">
+            <div class="card-header-row">
+              <div>
+                <div class="vertical-title">${v.label}</div>
+                <div class="vertical-id-badge">${v.id}</div>
+              </div>
+              <div class="card-actions">
+                <button class="icon-btn" title="Edit Vertical" onclick="openEditModal('${v.id}')">✏️</button>
+                <button class="icon-btn danger" title="Delete Vertical" onclick="openDeleteModal('${v.id}', '${v.label}')">🗑️</button>
+              </div>
+            </div>
+
+            <div class="persona-badge">
+              <span>👤</span> ${p.label}
+            </div>
+
+            <div class="cadence-box">
+              <div class="cadence-icon">⏱️</div>
+              <div class="cadence-details">
+                <div class="cadence-text">${readableCadence}</div>
+                <div class="cadence-cron">cron: ${v.cadence}</div>
+              </div>
+            </div>
+
+            <span class="section-label">Research Sources (${(v.sources || []).length})</span>
+            <div class="tag-container">${sourcesHtml || '<span style="font-size:0.75rem; color:var(--text-dim)">None configured</span>'}</div>
+
+            <span class="section-label">Primary Angles (${(v.primary_angles || []).length})</span>
+            <div class="tag-container">${anglesHtml || '<span style="font-size:0.75rem; color:var(--text-dim)">None configured</span>'}</div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.74rem; color: var(--text-dim);">Hermes Target: bot-chat:editor</span>
+            <button class="btn btn-secondary btn-sm" onclick="copyScoutPrompt('${v.id}', '${v.label}')">📋 Copy Prompt</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Render Personas
+  function renderPersonas(personas) {
+    personasGrid.innerHTML = Object.entries(personas).map(([id, p]) => `
+      <div class="persona-card">
+        <h3>${p.label}</h3>
+        <span class="persona-id">id: ${id}</span>
+
+        <div class="persona-prop">
+          <span class="persona-prop-label">Reader Level</span>
+          <span class="persona-prop-val">${p.reader_level}</span>
+        </div>
+
+        <div class="persona-prop">
+          <span class="persona-prop-label">Voice & Tone</span>
+          <span class="persona-prop-val">${p.tone}</span>
+        </div>
+
+        <div class="persona-prop">
+          <span class="persona-prop-label">What They Want</span>
+          <span class="persona-prop-val">${p.wants}</span>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Filter Verticals
+  searchInput.addEventListener('input', (e) => {
+    const q = e.target.value.toLowerCase().trim();
+    if (!q) {
+      renderVerticals(allVerticals);
+      return;
+    }
+    const filtered = allVerticals.filter((v) => {
+      const matchTitle = (v.label || '').toLowerCase().includes(q);
+      const matchId = (v.id || '').toLowerCase().includes(q);
+      const matchPersona = (v.target_persona || '').toLowerCase().includes(q);
+      const matchSource = (v.sources || []).some((s) => s.toLowerCase().includes(q));
+      const matchAngle = (v.primary_angles || []).some((a) => a.toLowerCase().includes(q));
+      return matchTitle || matchId || matchPersona || matchSource || matchAngle;
+    });
+    renderVerticals(filtered);
+  });
+
+  // Tag Box Helpers
+  function renderSourceChips() {
+    sourcesBox.querySelectorAll('.chip-item').forEach((el) => el.remove());
+    currentSources.forEach((s, idx) => {
+      const chip = document.createElement('span');
+      chip.className = 'chip-item';
+      chip.innerHTML = `${s} <button type="button" onclick="removeSourceChip(${idx})">&times;</button>`;
+      sourcesBox.insertBefore(chip, sourceInput);
+    });
+  }
+
+  function renderAngleChips() {
+    anglesBox.querySelectorAll('.chip-item').forEach((el) => el.remove());
+    currentAngles.forEach((a, idx) => {
+      const chip = document.createElement('span');
+      chip.className = 'chip-item';
+      chip.innerHTML = `${a} <button type="button" onclick="removeAngleChip(${idx})">&times;</button>`;
+      anglesBox.insertBefore(chip, angleInput);
+    });
+  }
+
+  window.removeSourceChip = function(idx) {
+    currentSources.splice(idx, 1);
+    renderSourceChips();
+  };
+
+  window.removeAngleChip = function(idx) {
+    currentAngles.splice(idx, 1);
+    renderAngleChips();
+  };
+
+  sourceInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ',') {
+      e.preventDefault();
+      const val = sourceInput.value.trim().replace(/^,+|,+$/g, '');
+      if (val && !currentSources.includes(val)) {
+        currentSources.push(val);
+        renderSourceChips();
+      }
+      sourceInput.value = '';
+    }
+  });
+
+  angleInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ',') {
+      e.preventDefault();
+      const val = angleInput.value.trim().replace(/^,+|,+$/g, '');
+      if (val && !currentAngles.includes(val)) {
+        currentAngles.push(val);
+        renderAngleChips();
+      }
+      angleInput.value = '';
+    }
+  });
+
+  window.addSourcePreset = function(src) {
+    if (!currentSources.includes(src)) {
+      currentSources.push(src);
+      renderSourceChips();
+    }
+  };
+
+  window.setCadencePreset = function(cron, text) {
+    document.getElementById('verticalCadence').value = cron;
+    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${text}`;
+  };
+
+  document.getElementById('verticalCadence').addEventListener('input', (e) => {
+    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(e.target.value)}`;
+  });
+
+  // Modal Open / Close
+  function openAddModal() {
+    document.getElementById('modalTitle').textContent = 'Add Editorial Vertical';
+    document.getElementById('formIsEdit').value = 'false';
+    document.getElementById('verticalId').value = '';
+    document.getElementById('verticalId').disabled = false;
+    document.getElementById('verticalLabel').value = '';
+    document.getElementById('verticalCadence').value = '0 6 * * 1';
+    document.getElementById('cadenceHumanPreview').textContent = 'Schedule: Monday 06:00 AM EST';
+    currentSources = ['arxiv', 'hacker_news', 'x_ai'];
+    currentAngles = [];
+    renderSourceChips();
+    renderAngleChips();
+    verticalModalBackdrop.classList.add('active');
+  }
+
+  window.openEditModal = function(id) {
+    const v = allVerticals.find((item) => item.id === id);
+    if (!v) return;
+
+    document.getElementById('modalTitle').textContent = `Edit Vertical: ${v.label}`;
+    document.getElementById('formIsEdit').value = 'true';
+    document.getElementById('verticalId').value = v.id;
+    document.getElementById('verticalId').disabled = true;
+    document.getElementById('verticalLabel').value = v.label;
+    document.getElementById('verticalCadence').value = v.cadence;
+    document.getElementById('verticalPersona').value = v.target_persona;
+    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(v.cadence)}`;
+    currentSources = [...(v.sources || [])];
+    currentAngles = [...(v.primary_angles || [])];
+    renderSourceChips();
+    renderAngleChips();
+    verticalModalBackdrop.classList.add('active');
+  };
+
+  function closeModal() {
+    verticalModalBackdrop.classList.remove('active');
+  }
+
+  document.getElementById('openAddModalBtn').addEventListener('click', openAddModal);
+  document.getElementById('addVerticalTopBtn').addEventListener('click', openAddModal);
+  document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+  document.getElementById('cancelModalBtn').addEventListener('click', closeModal);
+
+  // Auto-slugify ID when adding
+  document.getElementById('verticalLabel').addEventListener('input', (e) => {
+    if (document.getElementById('formIsEdit').value === 'false') {
+      const slug = e.target.value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+      document.getElementById('verticalId').value = slug;
+    }
+  });
+
+  // Save Vertical Form Submit
+  verticalForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const isEdit = document.getElementById('formIsEdit').value === 'true';
+    const id = document.getElementById('verticalId').value.trim();
+    const label = document.getElementById('verticalLabel').value.trim();
+    const cadence = document.getElementById('verticalCadence').value.trim();
+    const persona = document.getElementById('verticalPersona').value;
+
+    const payload = {
+      id,
+      label,
+      cadence,
+      target_persona: persona,
+      sources: currentSources,
+      primary_angles: currentAngles,
+    };
+
+    try {
+      const url = isEdit ? `/api/verticals/${encodeURIComponent(id)}` : '/api/verticals';
+      const method = isEdit ? 'PUT' : 'POST';
+
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-  </script>
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to save vertical');
+      }
+
+      showToast(`Vertical '${label}' saved successfully!`, 'success');
+      closeModal();
+      await loadVerticals();
+    } catch (err) {
+      showToast(err.message, 'error');
+    }
+  });
+
+  // Delete Modal
+  window.openDeleteModal = function(id, label) {
+    deleteTargetId = id;
+    document.getElementById('deleteConfirmText').textContent = `Are you sure you want to delete '${label}' (${id})? This will remove it from radar schedules and calendar sync.`;
+    deleteModalBackdrop.classList.add('active');
+  };
+
+  document.getElementById('cancelDeleteBtn').addEventListener('click', () => {
+    deleteModalBackdrop.classList.remove('active');
+  });
+
+  document.getElementById('confirmDeleteBtn').addEventListener('click', async () => {
+    if (!deleteTargetId) return;
+    try {
+      const res = await fetch(`/api/verticals/${encodeURIComponent(deleteTargetId)}`, {
+        method: 'DELETE',
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to delete');
+
+      showToast(`Vertical '${deleteTargetId}' removed.`, 'success');
+      deleteModalBackdrop.classList.remove('active');
+      await loadVerticals();
+    } catch (err) {
+      showToast(err.message, 'error');
+    }
+  });
+
+  // Copy Scout Prompt
+  window.copyScoutPrompt = function(id, label) {
+    const prompt = `Run the full editorial pipeline for vertical '${id}' (${label}) per the skills in skills/ (radar_30day -> virality_judge -> fact_check -> story_draft -> claude_humanizer).`;
+    navigator.clipboard.writeText(prompt).then(() => {
+      showToast(`Prompt copied for '${id}'!`, 'success');
+    });
+  };
+
+  // Sync Crons Trigger
+  async function triggerCronSync() {
+    try {
+      showToast('Syncing crons with Hermes fleet...', 'success');
+      const res = await fetch('/api/verticals/sync-crons', { method: 'POST' });
+      const data = await res.json();
+      if (res.ok) {
+        showToast('Hermes Crons synced successfully!', 'success');
+      } else {
+        showToast('Cron sync notice: ' + (data.error || data.stderr || 'Check Hermes CLI on host'), 'error');
+      }
+    } catch (err) {
+      showToast('Error syncing crons: ' + err.message, 'error');
+    }
+  }
+
+  document.getElementById('syncCronBtn').addEventListener('click', triggerCronSync);
+  document.getElementById('btnSyncCronsExplicit').addEventListener('click', triggerCronSync);
+
+  // Push / Pull Supabase
+  document.getElementById('btnPushSupabase').addEventListener('click', async () => {
+    try {
+      showToast('Pushing local configuration to Supabase...', 'success');
+      const res = await fetch('/api/verticals/push-supabase', { method: 'POST' });
+      const data = await res.json();
+      if (res.ok) {
+        showToast('Pushed configuration to Supabase successfully!', 'success');
+        await loadVerticals();
+      } else {
+        showToast('Supabase push error: ' + (data.error || data.stderr), 'error');
+      }
+    } catch (err) {
+      showToast('Error: ' + err.message, 'error');
+    }
+  });
+
+  document.getElementById('btnPullSupabase').addEventListener('click', async () => {
+    try {
+      showToast('Pulling configuration from Supabase...', 'success');
+      const res = await fetch('/api/verticals/pull-supabase', { method: 'POST' });
+      const data = await res.json();
+      if (res.ok) {
+        showToast('Pulled configuration from Supabase successfully!', 'success');
+        await loadVerticals();
+      } else {
+        showToast('Supabase pull error: ' + (data.error || data.stderr), 'error');
+      }
+    } catch (err) {
+      showToast('Error: ' + err.message, 'error');
+    }
+  });
+
+  // Initial Load
+  loadVerticals();
+  loadArticles();
+</script>
+
 </body>
 </html>

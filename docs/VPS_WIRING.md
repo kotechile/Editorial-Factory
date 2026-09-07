@@ -112,6 +112,26 @@ create table signals (
   intensity int,
   swept_at timestamptz default now()
 );
+-- Settings & Verticals persistence for PressFlow
+create table editorial_verticals (
+  id text primary key,
+  label text not null,
+  cadence text not null,
+  target_persona text not null,
+  sources jsonb default '[]'::jsonb,
+  primary_angles jsonb default '[]'::jsonb,
+  is_active boolean default true,
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+create table editorial_personas (
+  id text primary key,
+  label text not null,
+  reader_level text,
+  tone text,
+  wants text,
+  updated_at timestamptz default now()
+);
 ```
 
 ## 6. First end-to-end dry run

@@ -4,7 +4,13 @@
       "id": "agentic_ai",
       "label": "Agentic Automation & Architecture",
       "cadence": "0 6 * * 1,4",
-      "sources": ["arxiv", "github_trending", "x_ai", "hacker_news", "reddit_ml"],
+      "sources": [
+        "arxiv",
+        "github_trending",
+        "x_ai",
+        "hacker_news",
+        "reddit_ml"
+      ],
       "primary_angles": [
         "autonomous orchestration",
         "MCP servers",
@@ -17,7 +23,12 @@
       "id": "enterprise_tech_leadership",
       "label": "Technology & Architecture Decisions",
       "cadence": "0 6 * * 2",
-      "sources": ["hacker_news", "substack_tech_leads", "cloud_cost_reports", "x_ai"],
+      "sources": [
+        "hacker_news",
+        "substack_tech_leads",
+        "cloud_cost_reports",
+        "x_ai"
+      ],
       "primary_angles": [
         "cloud repatriation",
         "monolith vs microservices",
@@ -30,7 +41,13 @@
       "id": "gpu_hardware",
       "label": "GPUs & AI Hardware",
       "cadence": "0 6 * * 3",
-      "sources": ["arxiv", "github_trending", "hacker_news", "x_ai", "vendor_changelogs"],
+      "sources": [
+        "arxiv",
+        "github_trending",
+        "hacker_news",
+        "x_ai",
+        "vendor_changelogs"
+      ],
       "primary_angles": [
         "inference economics",
         "supply constraints",
@@ -43,7 +60,12 @@
       "id": "supply_chain",
       "label": "Supply Chain & Logistics Tech",
       "cadence": "0 6 * * 4",
-      "sources": ["freightwaves", "industry_dive", "tariff_updates", "x_ai"],
+      "sources": [
+        "freightwaves",
+        "industry_dive",
+        "tariff_updates",
+        "x_ai"
+      ],
       "primary_angles": [
         "nearshoring",
         "warehouse automation",
@@ -56,7 +78,12 @@
       "id": "home_systems_reno",
       "label": "Modern Home Infrastructure & Building Science",
       "cadence": "0 6 * * 5",
-      "sources": ["greenbuildingadvisor", "hvac_trade_forums", "permitting_shifts", "reddit_home"],
+      "sources": [
+        "greenbuildingadvisor",
+        "hvac_trade_forums",
+        "permitting_shifts",
+        "reddit_home"
+      ],
       "primary_angles": [
         "heat pump ROI",
         "envelope efficiency",

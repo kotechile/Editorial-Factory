@@ -1,15 +1,48 @@
 import { createServer } from 'node:http';
-import { readFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { existsSync, readFileSync } from 'node:fs';
 import { join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 
+const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const PORT = process.env.PORT || 3000;
+
+const VERTICALS_FILE = join(ROOT, 'context', 'verticals.json');
+const PERSONAS_FILE = join(ROOT, 'context', 'personas.json');
+const CALENDAR_FILE = join(ROOT, 'context', 'content_calendar.md');
+const ENV_FILE = join(ROOT, '.env');
+
+// Load repo-level .env if present and not in process.env
+function loadEnv() {
+  if (existsSync(ENV_FILE)) {
+    try {
+      const content = readFileSync(ENV_FILE, 'utf8');
+      for (const line of content.split('\n')) {
+        const trimmed = line.trim();
+        if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+          const idx = trimmed.indexOf('=');
+          const k = trimmed.slice(0, idx).trim();
+          const v = trimmed.slice(idx + 1).trim().replace(/^['"]|['"]$/g, '');
+          if (!process.env[k]) {
+            process.env[k] = v;
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('Could not parse .env:', e.message);
+    }
+  }
+}
+loadEnv();
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
+  '.mjs': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.md': 'text/plain; charset=utf-8',
   '.svg': 'image/svg+xml',
@@ -17,7 +50,48 @@ const MIME = {
   '.ico': 'image/x-icon',
 };
 
-// Minimal markdown -> HTML (headings, paragraphs, links, bold, code). Good enough for a reader.
+function getSupabaseConfig() {
+  const url = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_KEY || '';
+  return { url, key, isConfigured: Boolean(url && key) };
+}
+
+async function supabaseFetch(path, options = {}) {
+  const { url, key, isConfigured } = getSupabaseConfig();
+  if (!isConfigured) throw new Error('Supabase not configured');
+
+  const headers = {
+    'apikey': key,
+    'Authorization': `Bearer ${key}`,
+    'Content-Type': 'application/json',
+    'Prefer': 'return=representation,resolution=merge-duplicates',
+    ...(options.headers || {}),
+  };
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 3500);
+
+  try {
+    const res = await fetch(`${url}/rest/v1/${path}`, {
+      ...options,
+      headers,
+      signal: controller.signal,
+    });
+    clearTimeout(timeoutId);
+
+    if (!res.ok) {
+      const txt = await res.text();
+      throw new Error(`Supabase error ${res.status}: ${txt}`);
+    }
+    const text = await res.text();
+    return text ? JSON.parse(text) : null;
+  } catch (err) {
+    clearTimeout(timeoutId);
+    throw err;
+  }
+}
+
+// Minimal markdown -> HTML helper for reader
 function mdToHtml(md) {
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const lines = md.split(/\r?\n/);
@@ -43,47 +117,375 @@ function layout(title, body) {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${title}</title>
 <style>
-:root{color-scheme:light}
-body{max-width:720px;margin:0 auto;padding:2rem 1.5rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a}
-h1,h2,h3{line-height:1.2}a{color:#0a66c2}code{background:#f2f2f2;padding:.1em .3em;border-radius:4px}
-pre{background:#f2f2f2;padding:1rem;border-radius:6px;overflow:auto}
-.back{margin-bottom:1.5rem;font-size:14px}li{margin:.2em 0}
-</style></head><body><p class="back"><a href="/">&larr; All articles</a></p>${body}</body></html>`;
+:root{color-scheme:light dark;--bg:#0f172a;--card:#1e293b;--text:#f8fafc;--muted:#94a3b8;--border:#334155;--accent:#38bdf8}
+@media(prefers-color-scheme:light){:root{--bg:#f8fafc;--card:#ffffff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--accent:#0284c7}}
+body{max-width:760px;margin:0 auto;padding:2.5rem 1.5rem;font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+h1,h2,h3{line-height:1.25;color:var(--text)}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+code{background:var(--border);padding:.15em .4em;border-radius:4px;font-size:0.9em}
+pre{background:var(--card);border:1px solid var(--border);padding:1.2rem;border-radius:8px;overflow:auto}
+.back{margin-bottom:2rem;font-size:14px;font-weight:600}
+li{margin:.35em 0}
+</style></head><body><p class="back"><a href="/">&larr; Return to PressFlow Dashboard</a></p>${body}</body></html>`;
+}
+
+function formatHumanCadence(cadenceStr) {
+  const parts = (cadenceStr || '').trim().split(/\s+/);
+  if (parts.length >= 5) {
+    const [minute, hour, dom, month, dow] = parts;
+    const hInt = parseInt(hour, 10);
+    const h12 = isNaN(hInt) ? 6 : (hInt === 0 ? 12 : (hInt > 12 ? hInt - 12 : hInt));
+    const amPm = !isNaN(hInt) && hInt >= 12 ? 'PM' : 'AM';
+    const mStr = String(parseInt(minute, 10) || 0).padStart(2, '0');
+    const timeStr = `${h12}:${mStr} ${amPm} EST`;
+
+    const dayMap = { '0': 'Sun', '1': 'Mon', '2': 'Tue', '3': 'Wed', '4': 'Thu', '5': 'Fri', '6': 'Sat', '7': 'Sun' };
+    if (dow === '*') return `Daily ${timeStr}`;
+    const days = dow.split(',').map((d) => dayMap[d] || d);
+    return `${days.join(' + ')} ${timeStr}`;
+  }
+  return cadenceStr;
+}
+
+async function updateCalendarMarkdown(verticals) {
+  try {
+    let existingLog = '## Run log\n| Date | Vertical | Result | Notes |\n|---|---|---|---|\n';
+    if (existsSync(CALENDAR_FILE)) {
+      const content = await readFile(CALENDAR_FILE, 'utf8');
+      if (content.includes('## Run log')) {
+        existingLog = content.slice(content.indexOf('## Run log'));
+      }
+    }
+
+    const lines = [
+      '# Content Calendar',
+      '',
+      'Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these schedules.',
+      '',
+      '| Vertical | Cadence | Schedule (EST) | Status |',
+      '|---|---|---|---|',
+    ];
+
+    for (const v of verticals) {
+      lines.push(`| ${v.id} | ${v.cadence || '0 6 * * 1'} | ${formatHumanCadence(v.cadence)} | active |`);
+    }
+
+    lines.push('');
+    lines.push(existingLog.trim());
+    lines.push('');
+
+    await writeFile(CALENDAR_FILE, lines.join('\n'), 'utf8');
+  } catch (err) {
+    console.error('Error updating content calendar markdown:', err);
+  }
+}
+
+async function getLocalVerticals() {
+  const content = await readFile(VERTICALS_FILE, 'utf8');
+  const data = JSON.parse(content);
+  return data.verticals || [];
+}
+
+async function saveLocalVerticals(verticals) {
+  await writeFile(VERTICALS_FILE, JSON.stringify({ verticals }, null, 2), 'utf8');
+  await updateCalendarMarkdown(verticals);
+}
+
+async function getLocalPersonas() {
+  if (existsSync(PERSONAS_FILE)) {
+    const content = await readFile(PERSONAS_FILE, 'utf8');
+    const data = JSON.parse(content);
+    return data.personas || {};
+  }
+  return {};
+}
+
+// Request Body Parser
+function parseJsonBody(req) {
+  return new Promise((resolve, reject) => {
+    let body = '';
+    req.on('data', (chunk) => { body += chunk; });
+    req.on('end', () => {
+      try {
+        resolve(body ? JSON.parse(body) : {});
+      } catch (err) {
+        reject(err);
+      }
+    });
+    req.on('error', reject);
+  });
+}
+
+function sendJson(res, statusCode, data) {
+  res.writeHead(statusCode, {
+    'Content-Type': MIME['.json'],
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  });
+  res.end(JSON.stringify(data));
 }
 
 const server = createServer(async (req, res) => {
-  const url = new URL(req.url, 'http://localhost');
+  const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
+
+  // Handle CORS preflight
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204, {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    });
+    return res.end();
+  }
+
   try {
+    // ----------------------------------------------------
+    // API: Published Articles
+    // ----------------------------------------------------
     if (url.pathname === '/api/articles.json') {
-      const files = (await readdir(join(ROOT, 'published'))).filter((f) => f.endsWith('.md')).sort().reverse();
+      const pubDir = join(ROOT, 'published');
+      const files = existsSync(pubDir)
+        ? (await readdir(pubDir)).filter((f) => f.endsWith('.md')).sort().reverse()
+        : [];
       const articles = [];
       for (const f of files) {
-        const text = await readFile(join(ROOT, 'published', f), 'utf8');
+        const text = await readFile(join(pubDir, f), 'utf8');
         const title = (text.match(/^#\s+(.+)$/m) || [])[1] || f;
-        articles.push({ slug: f.replace(/\.md$/, ''), file: f, title });
+        const wordCount = text.split(/\s+/).filter(Boolean).length;
+        const readTime = Math.max(1, Math.round(wordCount / 220));
+        articles.push({ slug: f.replace(/\.md$/, ''), file: f, title, wordCount, readTime });
       }
-      res.writeHead(200, { 'Content-Type': MIME['.json'] });
-      return res.end(JSON.stringify(articles));
+      return sendJson(res, 200, articles);
     }
+
+    // ----------------------------------------------------
+    // API: Verticals CRUD & Settings
+    // ----------------------------------------------------
+    if (url.pathname === '/api/verticals') {
+      const sbConfig = getSupabaseConfig();
+
+      if (req.method === 'GET') {
+        const personas = await getLocalPersonas();
+        let verticals = await getLocalVerticals();
+        let storageMode = sbConfig.isConfigured ? 'supabase' : 'local';
+
+        if (sbConfig.isConfigured) {
+          try {
+            const remoteVerts = await supabaseFetch('editorial_verticals?select=*&order=id.asc');
+            if (Array.isArray(remoteVerts) && remoteVerts.length > 0) {
+              verticals = remoteVerts.map((r) => ({
+                id: r.id,
+                label: r.label || r.id,
+                cadence: r.cadence || '0 6 * * 1',
+                sources: r.sources || [],
+                primary_angles: r.primary_angles || [],
+                target_persona: r.target_persona || 'eng_leader',
+              }));
+              // update local mirror
+              await saveLocalVerticals(verticals);
+            }
+          } catch (e) {
+            console.warn('[Supabase] Could not fetch remote verticals, using local cache:', e.message);
+            storageMode = 'local_cache (supabase offline)';
+          }
+        }
+
+        return sendJson(res, 200, {
+          status: 'ok',
+          storage_mode: storageMode,
+          supabase_configured: sbConfig.isConfigured,
+          verticals,
+          personas,
+        });
+      }
+
+      if (req.method === 'POST') {
+        const body = await parseJsonBody(req);
+        const { id, label, cadence, target_persona, sources, primary_angles } = body;
+
+        if (!id || !label) {
+          return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
+        }
+
+        const slug = id.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_');
+        const verticals = await getLocalVerticals();
+
+        if (verticals.some((v) => v.id === slug)) {
+          return sendJson(res, 409, { error: `Vertical with ID '${slug}' already exists.` });
+        }
+
+        const newVertical = {
+          id: slug,
+          label: label.trim(),
+          cadence: (cadence || '0 6 * * 1').trim(),
+          target_persona: (target_persona || 'eng_leader').trim(),
+          sources: Array.isArray(sources) ? sources : [],
+          primary_angles: Array.isArray(primary_angles) ? primary_angles : [],
+        };
+
+        verticals.push(newVertical);
+        await saveLocalVerticals(verticals);
+
+        if (sbConfig.isConfigured) {
+          try {
+            await supabaseFetch('editorial_verticals', {
+              method: 'POST',
+              body: JSON.stringify({
+                ...newVertical,
+                is_active: true,
+                updated_at: new Date().toISOString(),
+              }),
+            });
+          } catch (e) {
+            console.warn('[Supabase] Warning syncing created vertical:', e.message);
+          }
+        }
+
+        return sendJson(res, 201, { status: 'ok', vertical: newVertical });
+      }
+    }
+
+    // PUT /api/verticals/:id  &  DELETE /api/verticals/:id
+    if (url.pathname.startsWith('/api/verticals/')) {
+      const subpath = url.pathname.replace(/^\/api\/verticals\//, '');
+      const sbConfig = getSupabaseConfig();
+
+      // Action routes
+      if (subpath === 'sync-crons' && req.method === 'POST') {
+        try {
+          const { stdout, stderr } = await execFileAsync('python3', [join(ROOT, 'scripts', 'sync_crons.py')], { cwd: ROOT });
+          return sendJson(res, 200, { status: 'ok', stdout, stderr });
+        } catch (err) {
+          return sendJson(res, 500, { error: err.message, stdout: err.stdout, stderr: err.stderr });
+        }
+      }
+
+      if (subpath === 'push-supabase' && req.method === 'POST') {
+        try {
+          const { stdout, stderr } = await execFileAsync('python3', [join(ROOT, 'scripts', 'sync_verticals.py'), 'push'], { cwd: ROOT });
+          return sendJson(res, 200, { status: 'ok', stdout, stderr });
+        } catch (err) {
+          return sendJson(res, 500, { error: err.message, stdout: err.stdout, stderr: err.stderr });
+        }
+      }
+
+      if (subpath === 'pull-supabase' && req.method === 'POST') {
+        try {
+          const { stdout, stderr } = await execFileAsync('python3', [join(ROOT, 'scripts', 'sync_verticals.py'), 'pull'], { cwd: ROOT });
+          return sendJson(res, 200, { status: 'ok', stdout, stderr });
+        } catch (err) {
+          return sendJson(res, 500, { error: err.message, stdout: err.stdout, stderr: err.stderr });
+        }
+      }
+
+      const targetId = decodeURIComponent(subpath);
+
+      if (req.method === 'PUT') {
+        const body = await parseJsonBody(req);
+        const verticals = await getLocalVerticals();
+        const index = verticals.findIndex((v) => v.id === targetId);
+
+        if (index === -1) {
+          return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
+        }
+
+        const existing = verticals[index];
+        const updated = {
+          ...existing,
+          label: body.label !== undefined ? body.label.trim() : existing.label,
+          cadence: body.cadence !== undefined ? body.cadence.trim() : existing.cadence,
+          target_persona: body.target_persona !== undefined ? body.target_persona.trim() : existing.target_persona,
+          sources: Array.isArray(body.sources) ? body.sources : existing.sources,
+          primary_angles: Array.isArray(body.primary_angles) ? body.primary_angles : existing.primary_angles,
+        };
+
+        verticals[index] = updated;
+        await saveLocalVerticals(verticals);
+
+        if (sbConfig.isConfigured) {
+          try {
+            await supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({
+                label: updated.label,
+                cadence: updated.cadence,
+                target_persona: updated.target_persona,
+                sources: updated.sources,
+                primary_angles: updated.primary_angles,
+                updated_at: new Date().toISOString(),
+              }),
+            });
+          } catch (e) {
+            console.warn('[Supabase] Warning syncing updated vertical:', e.message);
+          }
+        }
+
+        return sendJson(res, 200, { status: 'ok', vertical: updated });
+      }
+
+      if (req.method === 'DELETE') {
+        const verticals = await getLocalVerticals();
+        const initialLen = verticals.length;
+        const filtered = verticals.filter((v) => v.id !== targetId);
+
+        if (filtered.length === initialLen) {
+          return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
+        }
+
+        await saveLocalVerticals(filtered);
+
+        if (sbConfig.isConfigured) {
+          try {
+            await supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+              method: 'DELETE',
+            });
+          } catch (e) {
+            console.warn('[Supabase] Warning syncing deleted vertical:', e.message);
+          }
+        }
+
+        return sendJson(res, 200, { status: 'ok', deleted: targetId });
+      }
+    }
+
+    // ----------------------------------------------------
+    // Article Reader Page
+    // ----------------------------------------------------
     if (url.pathname.startsWith('/published/')) {
       const file = url.pathname.replace(/^\/published\//, '');
       const text = await readFile(join(ROOT, 'published', file), 'utf8');
       res.writeHead(200, { 'Content-Type': MIME['.html'] });
-      return res.end(layout(text.split('\n')[0].replace(/^#\s+/, ''), mdToHtml(text)));
+      const firstLine = text.split('\n')[0].replace(/^#\s+/, '');
+      return res.end(layout(firstLine, mdToHtml(text)));
     }
+
+    // ----------------------------------------------------
+    // Static Files & Main App
+    // ----------------------------------------------------
     if (url.pathname === '/' || url.pathname === '/index.html') {
       const html = await readFile(join(ROOT, 'site', 'index.html'), 'utf8');
       res.writeHead(200, { 'Content-Type': MIME['.html'] });
       return res.end(html);
     }
-    const staticPath = join(ROOT, 'site', url.pathname === '/' ? 'index.html' : url.pathname);
-    const data = await readFile(staticPath);
-    res.writeHead(200, { 'Content-Type': MIME[extname(staticPath)] || 'application/octet-stream' });
-    return res.end(data);
-  } catch {
-    res.writeHead(404, { 'Content-Type': 'text/plain' });
-    return res.end('404');
+
+    const staticPath = join(ROOT, 'site', url.pathname.replace(/^\//, ''));
+    if (existsSync(staticPath)) {
+      const data = await readFile(staticPath);
+      res.writeHead(200, { 'Content-Type': MIME[extname(staticPath)] || 'application/octet-stream' });
+      return res.end(data);
+    }
+
+    sendJson(res, 404, { error: 'Not found' });
+  } catch (err) {
+    console.error('Server error:', err);
+    sendJson(res, 500, { error: 'Internal server error', details: err.message });
   }
 });
 
-server.listen(PORT, () => console.log(`editorial-factory site on http://localhost:${PORT}`));
+server.listen(PORT, () => {
+  const sb = getSupabaseConfig();
+  console.log(`\n======================================================`);
+  console.log(`PressFlow Editorial Dashboard on http://localhost:${PORT}`);
+  console.log(`Storage Mode: ${sb.isConfigured ? '🟢 Supabase (' + sb.url + ')' : '🟡 Local JSON (context/verticals.json)'}`);
+  console.log(`======================================================\n`);
+});
