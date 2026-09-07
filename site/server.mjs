@@ -255,6 +255,183 @@ const server = createServer(async (req, res) => {
 
   try {
     // ----------------------------------------------------
+    // API: Drafts & Library Management (PressFlow Workspace)
+    // ----------------------------------------------------
+    if (url.pathname === '/api/drafts') {
+      const draftsDir = join(ROOT, 'context', 'drafts');
+      const pubDir = join(ROOT, 'published');
+      const allFiles = [];
+
+      if (existsSync(draftsDir)) {
+        const dFiles = (await readdir(draftsDir)).filter((f) => f.endsWith('.md'));
+        for (const f of dFiles) {
+          allFiles.push({ file: f, path: join(draftsDir, f), type: 'draft' });
+        }
+      }
+
+      if (existsSync(pubDir)) {
+        const pFiles = (await readdir(pubDir)).filter((f) => f.endsWith('.md'));
+        for (const f of pFiles) {
+          allFiles.push({ file: f, path: join(pubDir, f), type: 'published' });
+        }
+      }
+
+      const items = [];
+      for (const item of allFiles) {
+        try {
+          const text = await readFile(item.path, 'utf8');
+          const titleMatch = text.match(/title:\s*["']?([^"\n\r]+)["']?/i) || text.match(/^#\s+(.+)$/m);
+          const title = titleMatch ? titleMatch[1].trim() : item.file;
+          const verticalMatch = text.match(/vertical:\s*([a-z0-9_]+)/i);
+          const vertical = verticalMatch ? verticalMatch[1] : 'general';
+          const dateMatch = text.match(/date:\s*([0-9-]+)/i) || item.file.match(/^([0-9]{4}-[0-9]{2}-[0-9]{2})/);
+          const date = dateMatch ? dateMatch[1] : '';
+          const wordCount = text.split(/\s+/).filter(Boolean).length;
+          const readTime = Math.max(1, Math.round(wordCount / 220));
+
+          items.push({
+            file: item.file,
+            title,
+            slug: item.file.replace(/\.md$/, ''),
+            type: item.type,
+            vertical,
+            date,
+            wordCount,
+            readTime,
+          });
+        } catch (e) {
+          console.warn('Error parsing draft:', item.file, e.message);
+        }
+      }
+
+      items.sort((a, b) => b.file.localeCompare(a.file));
+      return sendJson(res, 200, items);
+    }
+
+    if (url.pathname === '/api/drafts/detail') {
+      const file = url.searchParams.get('file');
+      if (!file) return sendJson(res, 400, { error: 'Missing file query param' });
+
+      const draftsDir = join(ROOT, 'context', 'drafts');
+      const pubDir = join(ROOT, 'published');
+      let targetPath = join(draftsDir, file);
+      if (!existsSync(targetPath)) targetPath = join(pubDir, file);
+
+      if (!existsSync(targetPath)) {
+        return sendJson(res, 404, { error: 'Draft not found' });
+      }
+
+      const text = await readFile(targetPath, 'utf8');
+      const titleMatch = text.match(/title:\s*["']?([^"\n\r]+)["']?/i) || text.match(/^#\s+(.+)$/m);
+      const title = titleMatch ? titleMatch[1].trim() : file;
+      const verticalMatch = text.match(/vertical:\s*([a-z0-9_]+)/i);
+      const vertical = verticalMatch ? verticalMatch[1] : 'agentic_ai';
+      const wordCount = text.split(/\s+/).filter(Boolean).length;
+      const readTime = Math.max(1, Math.round(wordCount / 220));
+
+      return sendJson(res, 200, {
+        file,
+        title,
+        vertical,
+        wordCount,
+        readTime,
+        markdown: text,
+      });
+    }
+
+    if (url.pathname === '/api/drafts/save' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { file, markdown } = body;
+      if (!file || !markdown) return sendJson(res, 400, { error: 'Missing file or markdown content' });
+
+      const safeName = file.replace(/[^a-zA-Z0-9_\-\.]/g, '');
+      const draftsDir = join(ROOT, 'context', 'drafts');
+      if (!existsSync(draftsDir)) await mkdir(draftsDir, { recursive: true });
+
+      const targetPath = join(draftsDir, safeName.endsWith('.md') ? safeName : `${safeName}.md`);
+      await writeFile(targetPath, markdown, 'utf8');
+
+      return sendJson(res, 200, { status: 'ok', file: safeName });
+    }
+
+    if (url.pathname === '/api/generate-suite' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { markdown, articleUrl, promoUrl } = body;
+      if (!markdown) return sendJson(res, 400, { error: 'Missing markdown content' });
+
+      // Extract LinkedIn section if marker exists
+      let linkedin = '';
+      if (markdown.includes('<!-- linkedin -->')) {
+        linkedin = markdown.split('<!-- linkedin -->')[1].trim();
+      } else {
+        const leadMatch = markdown.match(/<!-- lead -->([\s\S]*?)(?:<!--|$)/);
+        const tacticalMatch = markdown.match(/<!-- tactical-insight -->([\s\S]*?)(?:<!--|$)/);
+        const lead = leadMatch ? leadMatch[1].trim() : '';
+        const tactical = tacticalMatch ? tacticalMatch[1].trim() : '';
+        linkedin = `${lead}\n\nKey takeaways:\n${tactical}`;
+      }
+
+      // Append URLs if provided and not already present
+      if (articleUrl && !linkedin.includes(articleUrl)) {
+        linkedin += `\n\n📖 Read the full illustrated breakdown: ${articleUrl}`;
+      }
+      if (promoUrl && !linkedin.includes(promoUrl)) {
+        linkedin += `\n🛠️ Try the live tool: ${promoUrl}`;
+      }
+
+      // Generate TL;DR
+      let tldr = '';
+      if (markdown.includes('<!-- tldr -->')) {
+        tldr = markdown.split('<!-- tldr -->')[1].split('##')[0].trim();
+      }
+
+      // Twitter / X thread (split into 3-4 punchy tweets)
+      const paras = markdown
+        .replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/^#+.*$/gm, '')
+        .split(/\n\s*\n/)
+        .map((p) => p.trim())
+        .filter((p) => p.length > 50);
+
+      const tweets = paras.slice(0, 4).map((p, idx) => `${idx + 1}/ ${p.slice(0, 270)}...`);
+
+      return sendJson(res, 200, {
+        status: 'ok',
+        linkedin_post: linkedin,
+        tldr,
+        twitter_thread: tweets,
+      });
+    }
+
+    if (url.pathname === '/api/linkedin-sync' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { slug, headline, post_copy, vertical, article_url } = body;
+      const sbConfig = getSupabaseConfig();
+
+      if (!sbConfig.isConfigured) {
+        return sendJson(res, 200, { status: 'mocked', message: 'Supabase not configured; simulated queue save.' });
+      }
+
+      try {
+        const row = {
+          post_copy: post_copy || '',
+          target_vertical: vertical || 'general',
+          article_url: article_url || '',
+          slug: slug || 'article',
+          status: 'queued',
+          created_at: new Date().toISOString(),
+        };
+        await supabaseFetch('linkedin_posts', {
+          method: 'POST',
+          body: JSON.stringify(row),
+        });
+        return sendJson(res, 200, { status: 'ok', message: 'Queued to Supabase linkedin_posts' });
+      } catch (err) {
+        return sendJson(res, 500, { error: err.message });
+      }
+    }
+
+    // ----------------------------------------------------
     // API: Published Articles
     // ----------------------------------------------------
     if (url.pathname === '/api/articles.json') {
