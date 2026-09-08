@@ -73,7 +73,56 @@ one.
   alias model IDs like `claude-sonnet-5`). That key is currently **auth-rejected (HTTP 401)** — do not use it.
   The working frontier is Gemini until a valid Anthropic/kie.ai key is restored. `api.kie.ai` is whitelisted
   in `_anthropic_base_url_override_ok` (runtime_provider.py) if it is re-enabled.
+- **Output-token budget (thinking models):** the frontier is a *thinking* model, and its internal
+  reasoning tokens (`thoughtsTokenCount`, typically ~6,400 for a full rewrite) are counted **against**
+  `maxOutputTokens`. A too-small budget makes the model think hard and then truncate the article
+  (`finishReason: MAX_TOKENS`, partial output, missing `## Sources`/gate report). Keep
+  `maxOutputTokens` **≥ 20,000** — verify with `finishReason: STOP` and `sources_check=ok`.
 - A section that fails its gate after 2 retries → report the specific section + criterion to the
   Editor, do not silently ship.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so
   the Drafter stops producing it upstream.
+
+## 7. Accessibility gate (topic-agnostic — applies to EVERY topic)
+
+The gate in §4 checks for AI-tells. It does NOT check whether a general reader can follow the
+piece. A rewrite can pass every §4 gate and still read like a law-firm memo. Run BOTH gates.
+The ACCESS gate is deliberately topic-agnostic: the rules below are the same whether the piece
+is about tariffs, an energy program, a security standard, or a database. Enforce with
+`scripts/check_accessibility.py` on the finished body.
+
+Gates — the piece FAILS the ACCESS gate if:
+1. **Any acronym is used without being expanded at its first use in the body.** Every
+   abbreviation the reader won't already know gets a plain expansion once, either as
+   "International Emergency Economic Powers Act (IEEPA)" or "IEEPA (...the law that lets the
+   president act in a national emergency)". Never reuse an acronym bare after introducing it.
+   Checker target: **zero undefined acronyms**.
+2. **A specialist term from any domain is left untranslated for a general reader.** For each
+   domain term (legal, finance, customs, energy, security, database, ML, government program),
+   either (a) find the plain phrase the source used, or (b) add a short gloss. Examples:
+   "filed a protective action" → "filed an objection"; "importer of record" → "the company
+   named on the import"; "finally-liquidated entry" → "an import already fully processed";
+   "unliquidated" → "not yet processed"; "non-recurring add-back" → "a one-time booking";
+   "Section 232 duties" → "separate tariffs on steel and aluminum that were never struck down".
+   The domain does not matter — apply the same plain-word-or-gloss test to any field.
+3. **The reader needs the core mechanism explained and it is not.** If the story hinges on a
+   process the target reader wasn't born knowing (refund flow, a rebate rule, a permission
+   model, an agency outranking), add ONE half-sentence that states what it is before relying
+   on it. "The biggest figure was spoken on a call, never written down" needs a breath that
+   says why that is odd.
+4. **The body reads at a difficult level for a general audience.** Checker: target
+   **Flesch Reading Ease ≥ 60** on the body (frontmatter, `## Sources`, and the
+   `<!-- linkedin -->` variant are excluded). Hard floor: ≥ 50. Aim for ~15 words per
+   sentence; strictly split anything over 20 words into two. Shorten nominal compounds
+   and re-spell legalisms; vary sentence length; prefer verbs over noun phrases. Long
+   proper nouns (Walmart, Caterpillar) and the numbers are fine — the barrier is long
+   sentences, not long names.
+
+Do not sacrifice accuracy or a citation: this is a swap of vocabulary, never a change of fact.
+
+Post-rewrite: run `python3 scripts/check_accessibility.py <final.md>`. Report the verdict in the
+gate report. The humanizer scripts now auto-retry: if the rewrite fails the ACCESS gate, the script
+feeds the exact FAIL/WARNING reasons back to the frontier model and re-prompts (up to 5 attempts,
+`humanizer_tools.MAX_ATTEMPTS`). It exits 0 only on a passing verdict; if it still FAILs after the
+retry loop, it exits 1 (held at Loop 3) with the specific criterion (undefined acronym / Flesch /
+untranslated term) rather than shipping a dense piece.

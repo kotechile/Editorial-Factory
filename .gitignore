@@ -19,3 +19,6 @@ playwright-report/
 
 # OS
 .DS_Store
+
+# local rollback snapshot of superseded editorial files
+context/_archive_not_latest/

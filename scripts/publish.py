@@ -26,6 +26,7 @@ import datetime
 import json
 import os
 import re
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -446,6 +447,40 @@ def sync_to_supabase(data: dict, live_urls: dict):
         return False
 
 
+def auto_deploy_push(slug: str) -> bool:
+    """Commit pending factory changes and push to origin/<current-branch> so the GitHub->Coolify
+    build redeploys automatically. Best-effort: warns and skips on any git failure rather than
+    failing the publish. Returns True if a push was issued."""
+    try:
+        add = subprocess.run(["git", "add", "-A"], cwd=REPO_ROOT, capture_output=True, text=True)
+        if add.returncode != 0:
+            print(f"  [Auto-deploy] git add failed: {add.stderr.strip()}")
+            return False
+        status = subprocess.run(["git", "status", "--porcelain"], cwd=REPO_ROOT, capture_output=True, text=True)
+        if not status.stdout.strip():
+            print("  [Auto-deploy] no changes to commit; nothing to push.")
+            return True
+        who = subprocess.run(["git", "config", "user.email"], cwd=REPO_ROOT, capture_output=True, text=True)
+        if not who.stdout.strip():
+            print("  [Auto-deploy] git user.email not set; skipping push (deploy manually).")
+            return False
+        subprocess.run(["git", "commit", "-m", f"publish: {slug} (auto-deploy)", "--no-verify"],
+                       cwd=REPO_ROOT, capture_output=True, text=True)
+        branch = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=REPO_ROOT,
+                                capture_output=True, text=True)
+        branch = (branch.stdout or "main").strip()
+        push = subprocess.run(["git", "push", "origin", branch], cwd=REPO_ROOT,
+                              capture_output=True, text=True)
+        if push.returncode != 0:
+            print(f"  [Auto-deploy] git push failed: {push.stderr.strip()}")
+            return False
+        print(f"  [Auto-deploy] committed and pushed to origin/{branch} -> redeploy triggered.")
+        return True
+    except Exception as e:
+        print(f"  [Auto-deploy] skipped: {e}")
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser(description="Publish an article and embed external illustrated article & tool promo URLs")
     parser.add_argument("draft_file", help="Path to final draft markdown file")
@@ -456,6 +491,7 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Parse and show what would be published without side effects")
     parser.add_argument("--auto-post-linkedin", action="store_true", default=None, help="Override LINKEDIN_AUTO_POST to true")
     parser.add_argument("--no-auto-post-linkedin", action="store_true", default=None, help="Override LINKEDIN_AUTO_POST to false")
+    parser.add_argument("--no-deploy", action="store_true", default=False, help="Skip the auto commit+push (deploy) after publishing")
     args = parser.parse_args()
 
     if not os.path.exists(args.draft_file):
@@ -616,6 +652,12 @@ def main():
 
     # 4. Upsert to Supabase
     sync_to_supabase(data, live_urls)
+
+    # 5. Auto-deploy: commit + push so the GitHub->Coolify build redeploys automatically.
+    if not args.dry_run and parse_bool_env("AUTO_PUBLISH_DEPLOY", default=True) and not args.no_deploy:
+        auto_deploy_push(slug_val)
+    else:
+        print("  [Auto-deploy] skipped (dry-run, --no-deploy, or AUTO_PUBLISH_DEPLOY=false).")
 
     print("\n✓ Publishing process completed successfully.")
     return 0

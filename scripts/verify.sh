@@ -51,7 +51,20 @@ for f in "$ROOT"/published/*.md; do
   fi
 done
 
-# 5. Helper and publishing scripts must compile cleanly.
+# 5. Accessibility report (advisory by default). Dense prose is corrected at Loop 3 per
+#    skills/claude_humanizer.md §7. Set STRICT_ACCESS=1 to make it a hard gate.
+ACCESS_STRICT="${STRICT_ACCESS:-0}"
+for f in "$ROOT"/context/drafts/*.md "$ROOT"/published/*.md; do
+  [ -e "$f" ] || continue
+  acc=$(python3 "$ROOT/scripts/check_accessibility.py" "$f" 2>&1 || true)
+  verdict=$(printf '%s\n' "$acc" | tail -1)
+  echo "  access: $verdict  $(basename "$f")"
+  if [ "$ACCESS_STRICT" = "1" ] && printf '%s' "$acc" | grep -q "VERDICT: FAIL"; then
+    echo "FAIL (strict access): $f"; FAIL=1
+  fi
+done
+
+# 6. Helper and publishing scripts must compile cleanly.
 for py in "$ROOT/scripts"/*.py; do
   [ -e "$py" ] || continue
   if ! python3 -m py_compile "$py" >/dev/null 2>&1; then

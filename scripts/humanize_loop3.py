@@ -5,6 +5,7 @@ Writes context/drafts/YYYY-MM-DD_<slug>_final.md per skills/claude_humanizer.md 
 long-form + LinkedIn, all section markers, ## Sources verbatim, + a Gate report.
 """
 import json, os, re, sys, urllib.request, urllib.parse, pathlib
+import humanizer_tools as ht  # retry loop + accessibility feedback
 
 ROOT = pathlib.Path("/root/editorial-factory")
 DRAFTS = ROOT / "context/drafts"
@@ -44,6 +45,13 @@ VOICE RULES:
 - One idea per paragraph; kill any sentence that does not earn its place.
 - Tighten cadence and rhythm; remove any mechanical parallelism.
 
+ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):
+- Every acronym is expanded at its FIRST use in the body (either "Full Name (ACR)" or "ACR (...plain meaning)"). Zero undefined acronyms at the end. Never reuse an acronym bare after introducing it.
+- Translate every specialist term for a general reader: use the source's plain phrase or add a short gloss. Examples: "filed a protective action" -> "filed an objection"; "importer of record" -> "the company named on the import"; "finally-liquidated entry" -> "an import already fully processed"; "unliquidated" -> "not yet processed"; "non-recurring add-back" -> "a one-time booking"; "Section 232 duties" -> "separate tariffs on steel and aluminum the courts never struck down". The domain makes no difference — apply the plain-word-or-gloss test to any field (energy, security, database, legal, finance).
+- If the story hinges on a process a general reader may not know (a refund flow, a rebate rule, a permission model, an agency's authority), add ONE half-sentence explaining what it is before relying on it.
+- Target Flesch Reading Ease >= 60 on the body (hard floor >= 50). Aim for ~15 words per sentence; strictly split any sentence over 20 words into two. Prefer short sentences and plain verbs; shorten noun phrases and legalisms; vary rhythm. Long proper nouns (Walmart, Caterpillar) and the numbers are fine — the barrier is long sentences, not long names.
+- Do not change or drop any fact, figure, [n] citation, or source line.
+
 OUTPUT FORMAT (strict):
 1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM), then the <!-- linkedin --> variant.
 2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason>" or "FAIL — <reason>".
@@ -53,7 +61,7 @@ Now rewrite the following draft:"""
 def call_gemini(prompt):
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": 6000, "temperature": 0.7},
+        "generationConfig": {"maxOutputTokens": 20000, "temperature": 0.7},
     }
     req = urllib.request.Request(URL, data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json"})
@@ -66,6 +74,11 @@ def extract_sources(draft):
     m = re.search(r"## Sources\s*\n(.*?)(?=\n<!-- linkedin -->|\Z)", draft, re.S)
     return m.group(1).strip() if m else ""
 
+def clean(raw):
+    return re.sub(r"\s*```$", "", re.sub(r"^```[a-zA-Z]*\s*", "", raw.strip())).strip()
+
+MARKERS = ["<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
+           "<!-- nuanced-takeaway -->", "<!-- tldr -->", "<!-- linkedin -->"]
 for path in sorted(DRAFTS.glob("2026-09-*.md")):
     if "_final" in path.name:
         continue
@@ -75,17 +88,35 @@ for path in sorted(DRAFTS.glob("2026-09-*.md")):
     if out.exists():
         print(f"skip (exists): {out_name}")
         continue
-    prompt = RULES + "\n\n" + draft
-    try:
-        result = call_gemini(prompt)
-        # Extract only the article+gate portion (Gemini sometimes wraps in fences)
-    except Exception as e:
-        print(f"ERROR {path.name}: {e}")
-        continue
-    result = re.sub(r"^```[a-zA-Z]*\s*", "", result.strip())
-    result = re.sub(r"\s*```$", "", result).strip()
-    # sanity: citations preserved from the draft
-    srcs_draft = extract_sources(draft)
-    srcs_ok = all(s in result for s in [l.strip() for l in srcs_draft.splitlines() if l.strip()][:3])
-    out.write_text(result + "\n")
-    print(f"WROTE {out_name}  (sources_check={'ok' if srcs_ok else 'MISSING'}) gate_included={'## Gate report' in result}")
+    src_lines = [l.strip() for l in extract_sources(draft).splitlines() if l.strip()]
+    base_prompt = RULES + "\n\n" + draft
+    result, diag, srcs_ok, markers_ok = None, None, False, False
+    attempts = 0
+    for attempt in range(1, ht.MAX_ATTEMPTS + 1):
+        attempts = attempt
+        if attempt == 1:
+            prompt = base_prompt
+        else:
+            extra = []
+            if not srcs_ok:
+                extra.append("The ## Sources list is missing or altered — include it VERBATIM (do not edit, merge, or drop any source line or URL).")
+            if not markers_ok:
+                extra.append("Include every section marker: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.")
+            prompt = ht.retry_prompt(base_prompt, result, diag, extra=extra)
+        try:
+            raw = call_gemini(prompt)
+        except Exception as e:
+            print(f"ERROR {path.name} attempt {attempt}: {e}")
+            break
+        result = clean(raw)
+        out.write_text(result + "\n")
+        srcs_ok = all(s in result for s in src_lines)
+        markers_ok = all(m in result for m in MARKERS)
+        diag = ht.measure(out)
+        print(f"  attempt {attempt}: VERDICT {diag['verdict']}  flesch={diag['flesch']}  words={diag['words']}  "
+              f"sources={'ok' if srcs_ok else 'MISSING'}  markers={'ok' if markers_ok else 'FAIL'}")
+        if diag["verdict"] == "PASS" and srcs_ok and markers_ok:
+            break
+    note = diag["verdict"] if diag else "UNKNOWN"
+    print(f"WROTE {out_name}  final_verdict={note}  attempts={attempts}  "
+          f"sources={'ok' if srcs_ok else 'MISSING'} gate_included={'## Gate report' in (result or '')}")
