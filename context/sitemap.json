@@ -1,0 +1,66 @@
+{
+  "updated_at": "2026-09-08T00:00:00Z",
+  "base_url": "https://editorialfactory.io",
+  "articles": [
+    {
+      "slug": "2026-09-07_anthropic-multiagent-turf-war",
+      "title": "Anthropic's Multi-Agent Framework Turf War",
+      "url": "https://editorialfactory.io/published/2026-09-07_anthropic-multiagent-turf-war.md",
+      "vertical": "agentic_ai",
+      "primary_keyword": "anthropic multi agent framework",
+      "secondary_keywords": ["agent evaluation bottlenecks", "claude tool calling", "multi-agent architecture"],
+      "h2_topics": [
+        "The multi-agent orchestration battle",
+        "Deterministic evals vs prompt chaos",
+        "Production deployment hurdles"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "2026-09-07_ieepa-refund-wave-hits-earnings",
+      "title": "IEEPA Tariff Refund Wave Hits Corporate Earnings",
+      "url": "https://editorialfactory.io/published/2026-09-07_ieepa-refund-wave-hits-earnings.md",
+      "vertical": "supply_chain",
+      "primary_keyword": "ieepa tariff refunds",
+      "secondary_keywords": ["customs compliance automation", "tariff exposure", "supply chain finance"],
+      "h2_topics": [
+        "Unliquidated entry claims",
+        "Corporate refund filing surge",
+        "Automating customs compliance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-09-07"
+    },
+    {
+      "slug": "2026-09-04_electrification-rebate-window-closes",
+      "title": "Electrification Rebate Window Closes: What Homeowners Must Know",
+      "url": "https://editorialfactory.io/published/2026-09-04_electrification-rebate-window-closes.md",
+      "vertical": "home_systems_reno",
+      "primary_keyword": "electrification rebates deadline",
+      "secondary_keywords": ["heat pump rebates", "electrical panel upgrade", "homie tax credits"],
+      "h2_topics": [
+        "Federal rebate expiration timeline",
+        "Panel upgrade requirements",
+        "Calculating actual ROI"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-09-04"
+    },
+    {
+      "slug": "2026-09-03_customs-enforcement-operational-risk",
+      "title": "Customs Enforcement Operational Risk: Navigating New Trade Rules",
+      "url": "https://editorialfactory.io/published/2026-09-03_customs-enforcement-operational-risk.md",
+      "vertical": "supply_chain",
+      "primary_keyword": "customs enforcement operational risk",
+      "secondary_keywords": ["supply chain trade compliance", "import penalties", "tariff classification"],
+      "h2_topics": [
+        "Heightened border inspections",
+        "Automated classification tools",
+        "Audit-proofing your supply chain"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-09-03"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "property": "sc-domain:editorialfactory.io",
+  "updated_at": "2026-09-08T00:00:00Z",
+  "period": "last_28_days",
+  "queries": [
+    {
+      "query": "agentic ai architecture best practices",
+      "vertical": "agentic_ai",
+      "impressions": 1850,
+      "clicks": 62,
+      "ctr": 0.0335,
+      "position": 11.4,
+      "prev_period_impressions": 920,
+      "wow_growth_pct": 101.1,
+      "intent": "commercial",
+      "target_url": "https://editorialfactory.io/articles/agentic-ai-architecture"
+    },
+    {
+      "query": "agent evaluation bottlenecks production",
+      "vertical": "agentic_ai",
+      "impressions": 1420,
+      "clicks": 38,
+      "ctr": 0.0268,
+      "position": 14.2,
+      "prev_period_impressions": 680,
+      "wow_growth_pct": 108.8,
+      "intent": "informational",
+      "target_url": ""
+    },
+    {
+      "query": "mcp server implementation python",
+      "vertical": "agentic_ai",
+      "impressions": 2100,
+      "clicks": 145,
+      "ctr": 0.0690,
+      "position": 9.1,
+      "prev_period_impressions": 1350,
+      "wow_growth_pct": 55.6,
+      "intent": "commercial",
+      "target_url": ""
+    },
+    {
+      "query": "multi agent failure modes loop budget",
+      "vertical": "agentic_ai",
+      "impressions": 890,
+      "clicks": 24,
+      "ctr": 0.0270,
+      "position": 16.8,
+      "prev_period_impressions": 410,
+      "wow_growth_pct": 117.1,
+      "intent": "informational",
+      "target_url": ""
+    },
+    {
+      "query": "cloud repatriation roi calculator bare metal",
+      "vertical": "enterprise_tech_leadership",
+      "impressions": 1240,
+      "clicks": 31,
+      "ctr": 0.0250,
+      "position": 13.6,
+      "prev_period_impressions": 710,
+      "wow_growth_pct": 74.6,
+      "intent": "commercial",
+      "target_url": ""
+    },
+    {
+      "query": "microservices vs modular monolith latency",
+      "vertical": "enterprise_tech_leadership",
+      "impressions": 1650,
+      "clicks": 49,
+      "ctr": 0.0297,
+      "position": 10.8,
+      "prev_period_impressions": 1050,
+      "wow_growth_pct": 57.1,
+      "intent": "informational",
+      "target_url": ""
+    },
+    {
+      "query": "build vs buy enterprise ai platform",
+      "vertical": "enterprise_tech_leadership",
+      "impressions": 980,
+      "clicks": 22,
+      "ctr": 0.0224,
+      "position": 18.2,
+      "prev_period_impressions": 620,
+      "wow_growth_pct": 58.1,
+      "intent": "commercial",
+      "target_url": ""
+    },
+    {
+      "query": "inference unit economics vllm h100 fp8",
+      "vertical": "gpu_hardware",
+      "impressions": 1580,
+      "clicks": 52,
+      "ctr": 0.0329,
+      "position": 12.1,
+      "prev_period_impressions": 790,
+      "wow_growth_pct": 100.0,
+      "intent": "commercial",
+      "target_url": ""
+    },
+    {
+      "query": "memory bandwidth limits llm batching",
+      "vertical": "gpu_hardware",
+      "impressions": 1120,
+      "clicks": 29,
+      "ctr": 0.0259,
+      "position": 15.3,
+      "prev_period_impressions": 690,
+      "wow_growth_pct": 62.3,
+      "intent": "informational",
+      "target_url": ""
+    },
+    {
+      "query": "nearshoring supply chain mexico tooling reality",
+      "vertical": "supply_chain",
+      "impressions": 840,
+      "clicks": 21,
+      "ctr": 0.0250,
+      "position": 17.5,
+      "prev_period_impressions": 480,
+      "wow_growth_pct": 75.0,
+      "intent": "informational",
+      "target_url": ""
+    },
+    {
+      "query": "customs classification automated tariff compliance",
+      "vertical": "supply_chain",
+      "impressions": 950,
+      "clicks": 28,
+      "ctr": 0.0295,
+      "position": 13.9,
+      "prev_period_impressions": 580,
+      "wow_growth_pct": 63.8,
+      "intent": "commercial",
+      "target_url": ""
+    },
+    {
+      "query": "heat pump main panel upgrade 200a cost",
+      "vertical": "home_systems_reno",
+      "impressions": 1750,
+      "clicks": 58,
+      "ctr": 0.0331,
+      "position": 11.2,
+      "prev_period_impressions": 910,
+      "wow_growth_pct": 92.3,
+      "intent": "commercial",
+      "target_url": ""
+    },
+    {
+      "query": "electrification rebates ira tax credits lookup",
+      "vertical": "home_systems_reno",
+      "impressions": 2400,
+      "clicks": 180,
+      "ctr": 0.0750,
+      "position": 6.8,
+      "prev_period_impressions": 1950,
+      "wow_growth_pct": 23.1,
+      "intent": "informational",
+      "target_url": "https://editorialfactory.io/articles/electrification-rebate-window-closes"
+    }
+  ]
+}

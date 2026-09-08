@@ -1,10 +1,10 @@
 # editorial-factory — Agent Operating Constitution
 
 This repository is the shared brain of the **Autonomous Content Intelligence & Editorial
-Engine**: a Hermes-native multi-agent assembly line that discovers acute 30-day signals across
-chosen verticals, scores them for virality, verifies every claim against primary sources, and
-produces trustworthy, human-voice articles — with the final rewrite always executed by a
-frontier model (Claude).
+Engine**: a dual-engine Hermes-native multi-agent assembly line that turns acute 30-day industry signals
+AND search demand data (Google Search Console + DataForSEO) into **trustworthy, human-voice articles** —
+grounded in proprietary founder taste (`founder-voice.md`) and real field data (`customer-truth.md`),
+with the final rewrite always executed by a frontier model (Claude / Gemini).
 
 It deliberately mirrors the architecture of `kotechile/factory` (the software factory): the
 "agentic workforce" is a Hermes bot fleet, the "loops" are skills + cron jobs + hard quality
@@ -14,13 +14,16 @@ gates, and every non-deterministic step is gated on retrievable evidence.
 - It does **not** generate software, PRDs, or micro-SaaS. Articles only.
 - It does **not** publish fabricated statistics. Every number, quote, and benchmark traces to a
   retrievable primary source or is removed.
+- It does **not** generate generic commoditized SEO fluff. Every piece is injected with contrarian
+  founder moat and audited against keyword cannibalization.
 
 ## Directory map
 - `.agents/`     — persona & role contracts (canonical; mirrored into each Bot's SOUL.md)
 - `skills/`      — Standard Operating Procedures (SOPs). Canonical source of truth.
-- `context/`     — shared long-term memory (verticals, voice personas, calendar, published log)
-- `scripts/`     — cron triggers + verification gates
-- `site/`        — minimal static reader for published articles (Coolify-deployable)
+- `context/`     — shared memory (verticals, personas, calendar, published log, sitemap, GSC metrics)
+- `context/growth_os/` — founder-voice.md, customer-truth.md, performance_learnings.md
+- `scripts/`     — cron triggers, GSC/DataForSEO analyzers, growth_os engine, verify gates
+- `site/`        — PressFlow editorial reader & SEO command center (Coolify-deployable)
 - `published/`   — final approved articles (markdown) rendered by the site
 
 ## Non-negotiable editorial rules

@@ -797,6 +797,126 @@ const server = createServer(async (req, res) => {
     }
 
     // ----------------------------------------------------
+    // API: SEO Content Machine & Growth OS
+    // ----------------------------------------------------
+    if (url.pathname === '/api/seo/gsc-opportunities') {
+      const vertical = url.searchParams.get('vertical') || 'all';
+      try {
+        const { stdout } = await execFileAsync('python3', [
+          join(ROOT, 'scripts', 'gsc_analyzer.py'),
+          '--vertical', vertical,
+          '--json'
+        ], { cwd: ROOT });
+        const parsed = JSON.parse(stdout);
+        return sendJson(res, 200, parsed);
+      } catch (err) {
+        return sendJson(res, 500, { error: err.message, stderr: err.stderr });
+      }
+    }
+
+    if (url.pathname === '/api/seo/dataforseo-enrich' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { keyword } = body;
+      if (!keyword) return sendJson(res, 400, { error: 'Missing keyword in body' });
+
+      try {
+        const { stdout } = await execFileAsync('python3', [
+          join(ROOT, 'scripts', 'dataforseo_client.py'),
+          '--keyword', keyword,
+          '--json'
+        ], { cwd: ROOT });
+        const parsed = JSON.parse(stdout);
+        return sendJson(res, 200, parsed);
+      } catch (err) {
+        return sendJson(res, 500, { error: err.message, stderr: err.stderr });
+      }
+    }
+
+    if (url.pathname === '/api/seo/growth-os') {
+      const fvPath = join(ROOT, 'context', 'growth_os', 'founder-voice.md');
+      const ctPath = join(ROOT, 'context', 'growth_os', 'customer-truth.md');
+      const plPath = join(ROOT, 'context', 'growth_os', 'performance_learnings.md');
+
+      if (req.method === 'GET') {
+        const founderVoice = existsSync(fvPath) ? await readFile(fvPath, 'utf8') : '';
+        const customerTruth = existsSync(ctPath) ? await readFile(ctPath, 'utf8') : '';
+        const performanceLearnings = existsSync(plPath) ? await readFile(plPath, 'utf8') : '';
+
+        return sendJson(res, 200, {
+          status: 'ok',
+          founder_voice: founderVoice,
+          customer_truth: customerTruth,
+          performance_learnings: performanceLearnings,
+        });
+      }
+
+      if (req.method === 'POST') {
+        const body = await parseJsonBody(req);
+        const { founder_voice, customer_truth } = body;
+
+        const gDir = join(ROOT, 'context', 'growth_os');
+        if (!existsSync(gDir)) await mkdir(gDir, { recursive: true });
+
+        if (founder_voice !== undefined) {
+          await writeFile(fvPath, founder_voice, 'utf8');
+        }
+        if (customer_truth !== undefined) {
+          await writeFile(ctPath, customer_truth, 'utf8');
+        }
+
+        return sendJson(res, 200, { status: 'ok', message: 'Growth OS knowledge updated successfully' });
+      }
+    }
+
+    if (url.pathname === '/api/seo/sitemap') {
+      const smPath = join(ROOT, 'context', 'sitemap.json');
+      if (existsSync(smPath)) {
+        const data = JSON.parse(await readFile(smPath, 'utf8'));
+        return sendJson(res, 200, data);
+      }
+      return sendJson(res, 200, { articles: [], base_url: 'https://editorialfactory.io' });
+    }
+
+    if (url.pathname === '/api/seo/run-pipeline' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { query, vertical, force, run_humanizer } = body;
+
+      const args = [join(ROOT, 'scripts', 'seo_machine.py')];
+      if (query) args.push('--query', query);
+      if (vertical) args.push('--vertical', vertical);
+      if (force) args.push('--force');
+      if (run_humanizer === false) args.push('--no-humanize');
+
+      try {
+        const { stdout, stderr } = await execFileAsync('python3', args, { cwd: ROOT });
+        return sendJson(res, 200, { status: 'ok', stdout, stderr });
+      } catch (err) {
+        return sendJson(res, 500, { error: err.message, stdout: err.stdout, stderr: err.stderr });
+      }
+    }
+
+    if (url.pathname === '/api/seo/performance-report') {
+      const perfPath = join(ROOT, 'context', 'gsc_performance.json');
+      if (existsSync(perfPath)) {
+        const data = JSON.parse(await readFile(perfPath, 'utf8'));
+        return sendJson(res, 200, data);
+      }
+      return sendJson(res, 200, { articles_tracked: [] });
+    }
+
+    if (url.pathname === '/api/seo/sync-supabase' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const args = [join(ROOT, 'scripts', 'sync_articles.py')];
+      if (body && body.all) args.push('--all');
+      else if (body && body.drafts) args.push('--drafts');
+
+      try {
+        const { stdout, stderr } = await execFileAsync('python3', args, { cwd: ROOT });
+        return sendJson(res, 200, { status: 'ok', stdout, stderr });
+      } catch (err) {
+        return sendJson(res, 500, { error: err.message, stdout: err.stdout, stderr: err.stderr });
+      }
+    }
     // Article Reader Page
     // ----------------------------------------------------
     if (url.pathname.startsWith('/published/')) {

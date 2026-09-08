@@ -1,0 +1,41 @@
+{
+  "last_synced_at": "2026-09-08T00:00:00Z",
+  "articles_tracked": [
+    {
+      "slug": "2026-09-07_anthropic-multiagent-turf-war",
+      "target_query": "anthropic multi agent framework",
+      "initial_position": 28.4,
+      "current_position": 11.2,
+      "impressions_7d": 1850,
+      "clicks_7d": 62,
+      "ctr": 0.0335,
+      "conversion_lead_score": 8.4,
+      "winning_hook_pattern": "Incident-first concrete benchmark with tool calling failure numbers",
+      "status": "ranking_rising"
+    },
+    {
+      "slug": "2026-09-07_ieepa-refund-wave-hits-earnings",
+      "target_query": "ieepa tariff refunds",
+      "initial_position": 35.1,
+      "current_position": 9.8,
+      "impressions_7d": 950,
+      "clicks_7d": 48,
+      "ctr": 0.0505,
+      "conversion_lead_score": 7.9,
+      "winning_hook_pattern": "Dollar figure lead on unliquidated entries with executive takeaway",
+      "status": "ranking_rising"
+    },
+    {
+      "slug": "2026-09-04_electrification-rebate-window-closes",
+      "target_query": "electrification rebates deadline",
+      "initial_position": 19.5,
+      "current_position": 6.8,
+      "impressions_7d": 2400,
+      "clicks_7d": 180,
+      "ctr": 0.0750,
+      "conversion_lead_score": 9.1,
+      "winning_hook_pattern": "Urgency timeline + hidden electrical panel cost caveat",
+      "status": "top_10"
+    }
+  ]
+}

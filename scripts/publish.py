@@ -96,6 +96,60 @@ def parse_draft(file_path: str):
         for s in re.finditer(r"\[(\d+)\]\s*([^\[\n]+)", sources_text):
             sources.append({"index": int(s.group(1)), "citation": s.group(2).strip()})
 
+    # Extract SEO fields from frontmatter
+    primary_keyword = frontmatter.get("primary_keyword", "")
+    secondary_raw = frontmatter.get("secondary_keywords", "")
+    secondary_keywords = []
+    if secondary_raw:
+        if secondary_raw.startswith("[") and secondary_raw.endswith("]"):
+            try:
+                secondary_keywords = json.loads(secondary_raw)
+            except Exception:
+                secondary_keywords = [k.strip().strip('"').strip("'") for k in secondary_raw[1:-1].split(",") if k.strip()]
+        else:
+            secondary_keywords = [k.strip().strip('"').strip("'") for k in secondary_raw.split(",") if k.strip()]
+
+    search_volume = None
+    if frontmatter.get("search_volume"):
+        try:
+            search_volume = int(frontmatter.get("search_volume"))
+        except Exception:
+            search_volume = frontmatter.get("search_volume")
+
+    search_intent = frontmatter.get("search_intent", "")
+    kd = None
+    if frontmatter.get("keyword_difficulty") or frontmatter.get("kd"):
+        try:
+            kd = float(frontmatter.get("keyword_difficulty") or frontmatter.get("kd"))
+        except Exception:
+            kd = frontmatter.get("keyword_difficulty") or frontmatter.get("kd")
+
+    cpc = None
+    if frontmatter.get("cpc"):
+        try:
+            cpc = float(frontmatter.get("cpc"))
+        except Exception:
+            cpc = frontmatter.get("cpc")
+
+    gsc_impressions = None
+    if frontmatter.get("gsc_impressions"):
+        try:
+            gsc_impressions = int(frontmatter.get("gsc_impressions"))
+        except Exception:
+            gsc_impressions = frontmatter.get("gsc_impressions")
+
+    meta_title = frontmatter.get("meta_title", "")
+    meta_desc = frontmatter.get("meta_description", "")
+
+    # Extract JSON-LD schema if present
+    schema_json = None
+    schema_match = re.search(r"<!--\s*schema\s*-->\s*```(?:json)?\s*(\{.+?\})\s*```", body_content, re.DOTALL | re.IGNORECASE)
+    if schema_match:
+        try:
+            schema_json = json.loads(schema_match.group(1))
+        except Exception:
+            pass
+
     return {
         "title": title,
         "slug": slug,
@@ -105,6 +159,16 @@ def parse_draft(file_path: str):
         "article_url": article_url,
         "promo_url": promo_url,
         "promo_label": promo_label,
+        "primary_keyword": primary_keyword,
+        "secondary_keywords": secondary_keywords,
+        "search_volume": search_volume,
+        "search_intent": search_intent,
+        "keyword_difficulty": kd,
+        "cpc": cpc,
+        "gsc_impressions": gsc_impressions,
+        "meta_title": meta_title,
+        "meta_description": meta_desc,
+        "schema": schema_json,
         "body_md": body_article,
         "linkedin_post": linkedin_post,
         "sources": sources,
@@ -343,6 +407,21 @@ def sync_to_supabase(data: dict, live_urls: dict):
             source_url = m.group(0)
             break
 
+    seo_metadata = {
+        "primary_keyword": data.get("primary_keyword"),
+        "secondary_keywords": data.get("secondary_keywords") or [],
+        "search_volume": data.get("search_volume"),
+        "search_intent": data.get("search_intent"),
+        "keyword_difficulty": data.get("keyword_difficulty"),
+        "cpc": data.get("cpc"),
+        "gsc_impressions": data.get("gsc_impressions"),
+        "meta_title": data.get("meta_title"),
+        "meta_description": data.get("meta_description"),
+        "schema": data.get("schema"),
+    }
+    # Clean None values for clean JSON
+    clean_seo = {k: v for k, v in seo_metadata.items() if v is not None and v != ""}
+
     metadata = {
         "slug": data.get("slug"),
         "vertical": data.get("vertical"),
@@ -355,6 +434,9 @@ def sync_to_supabase(data: dict, live_urls: dict):
         "article_url": (data.get("article_url") or live_urls.get("article_url", "")) or None,
         "promo_url": (data.get("promo_url") or live_urls.get("promo_url", "")) or None,
     }
+    if clean_seo:
+        metadata["seo"] = clean_seo
+
     full = {
         "slug": data.get("slug"),
         "vertical": data.get("vertical"),
@@ -367,6 +449,13 @@ def sync_to_supabase(data: dict, live_urls: dict):
         "tags": [data.get("vertical")] if data.get("vertical") else [],
         "status": "published",
         "live_urls": live_urls or {},
+        "primary_keyword": data.get("primary_keyword") or None,
+        "secondary_keywords": data.get("secondary_keywords") or [],
+        "search_volume": data.get("search_volume"),
+        "search_intent": data.get("search_intent") or None,
+        "meta_title": data.get("meta_title") or None,
+        "meta_description": data.get("meta_description") or None,
+        "seo_metadata": clean_seo if clean_seo else None,
         "metadata": metadata,
     }
 

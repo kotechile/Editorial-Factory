@@ -12,6 +12,7 @@ __pycache__/
 .env.local
 
 # local runtime artifacts
+*.log
 .publish_cache/
 test-results/
 playwright-report/

@@ -162,6 +162,57 @@ The publisher automatically embeds the links into the LinkedIn post with clean c
 - **`LINKEDIN_AUTO_POST=false` (default / review mode):** Outputs the complete formatted post with all embedded links ready to copy-paste into LinkedIn.
 - **`LINKEDIN_AUTO_POST=true` (automated mode):** When `LINKEDIN_ACCESS_TOKEN` is set, dispatches the post with link attachments directly via the LinkedIn API.
 
+### 4.5 Demand-Led SEO Content Machine (Growth OS)
+
+In addition to the 30-day acute news scout, the engine includes a demand-driven **SEO Content Machine**:
+
+```
+[Google Search Console] ──> High-impression / emerging query detected (Pos 8-25, Impr > 500, WoW > 50%)
+           │
+           ▼
+     [DataForSEO]        ──> Enrich with search volume, SERP intent, keyword clusters, top 10 URLs
+           │
+           ▼
+ [Growth OS Knowledge]   ──> Cross-reference founder-voice.md & customer-truth.md (Moat & Taste)
+           │
+           ▼
+[Cannibalization Shield] ──> Audit sitemap.json + generate contextual internal link map
+           │
+           ▼
+     [LLM / Agent]       ──> Drafts post + meta title/description + JSON-LD schema (@Article/@FAQPage)
+           │
+           ▼
+ [Frontier Humanizer]    ──> Loop 3 human-voice rewrite preserving SEO schema & internal links
+           │
+           ▼
+    [Approval Gate]      ──> Human checks voice, adds contrarian founder take, hits publish
+```
+
+#### How to run the SEO Content Machine:
+
+```bash
+# 1. Scan Google Search Console opportunities (or view in PressFlow Web UI -> ⚡ SEO Content Machine)
+python3 scripts/gsc_analyzer.py --min-impressions 500 --min-pos 8 --max-pos 25 --export-md
+
+# 2. Enrich target keyword with DataForSEO intelligence
+python3 scripts/dataforseo_client.py --keyword "mcp server implementation python"
+
+# 3. Check cannibalization & internal linking
+python3 scripts/growth_os.py --check-cannibalization --keyword "mcp server implementation python"
+python3 scripts/growth_os.py --internal-links --keyword "mcp server implementation python"
+
+# 4. Generate structured SEO draft with schema & frontier rewrite
+python3 scripts/seo_machine.py --query "mcp server implementation python" --vertical "agentic_ai"
+
+# 5. Monitor rank trajectory and feedback learnings
+python3 scripts/gsc_feedback.py --export
+```
+
+#### Growth OS Knowledge Layer
+- `context/growth_os/founder-voice.md`: Injects unshakeable stances and quotes to ensure articles are taste-differentiated.
+- `context/growth_os/customer-truth.md`: Injects real customer friction, dollar figures, and operational anecdotes.
+- `context/sitemap.json`: Prevents competing with your own published URLs and creates bidirectional internal link maps.
+
 
 
 ---

@@ -7,9 +7,18 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 FAIL=0
 
 # 1. Config JSON must parse.
-for f in "$ROOT/context/verticals.json" "$ROOT/context/personas.json"; do
-  if ! python3 -m json.tool "$f" >/dev/null 2>&1; then
-    echo "FAIL: invalid JSON — $f"; FAIL=1
+for f in "$ROOT/context/verticals.json" "$ROOT/context/personas.json" "$ROOT/context/sitemap.json" "$ROOT/context/gsc_performance.json" "$ROOT/context/growth_os/gsc_sample_data.json"; do
+  if [ -e "$f" ]; then
+    if ! python3 -m json.tool "$f" >/dev/null 2>&1; then
+      echo "FAIL: invalid JSON — $f"; FAIL=1
+    fi
+  fi
+done
+
+# 1.5 Growth OS knowledge files must exist
+for f in "$ROOT/context/growth_os/founder-voice.md" "$ROOT/context/growth_os/customer-truth.md"; do
+  if [ ! -f "$f" ]; then
+    echo "FAIL: missing Growth OS file — $f"; FAIL=1
   fi
 done
 
