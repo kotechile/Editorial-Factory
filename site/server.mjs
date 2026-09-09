@@ -304,7 +304,8 @@ const server = createServer(async (req, res) => {
       const allFiles = [];
 
       if (existsSync(draftsDir)) {
-        const dFiles = (await readdir(draftsDir)).filter((f) => f.endsWith('.md'));
+        // Hide the raw *_draft.md intermediates so each story shows once (the *_final.md).
+        const dFiles = (await readdir(draftsDir)).filter((f) => f.endsWith('.md') && !f.endsWith('_draft.md'));
         for (const f of dFiles) {
           allFiles.push({ file: f, path: join(draftsDir, f), type: 'draft' });
         }
