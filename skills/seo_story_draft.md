@@ -24,20 +24,20 @@ slug: "YYYY-MM-DD_<slug>"
 ---
 ```
 
-### B. Machine-Readable SEO Blocks
-- `<!-- schema -->`: JSON-LD schema block featuring `@type: "Article"` and `@type: "FAQPage"`.
-- `<!-- internal-links -->`: 2–3 contextual links to existing published articles with exact anchor text.
-
-### C. Article Body Sections
+### B. Article Body Sections (Clean Markdown & Engaging H2 Headers)
 - `<!-- lead -->`: Concrete hook featuring an incident, production metric, or specific cost figure.
-- `<!-- tension -->`: Systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
-- `<!-- tactical-insight -->`: 3 actionable, sequential takeaways addressing secondary keyword clusters.
-- `<!-- nuanced-takeaway -->`: The honest catch, limitation, or counter-argument.
-- `<!-- tldr -->`: 3 bullet takeaways.
+- `<!-- tension -->`: Descriptive `## ` H2 header + systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
+- `<!-- tactical-insight -->`: Descriptive `## ` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
+- `<!-- nuanced-takeaway -->`: Descriptive `## ` H2 header + the honest catch, limitation, or counter-argument.
+- `<!-- tldr -->`: `## Key Takeaways` header + 3 bullet takeaways.
 
-### D. Citations & Social Variants
+### C. Citations & Social Variants
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.
 - `<!-- linkedin -->`: ~1,300-char LinkedIn post summarizing the contrarian angle.
+
+### D. Machine-Readable SEO Blocks (at document end)
+- `<!-- schema -->`: JSON-LD schema block featuring `@type: "Article"` and `@type: "FAQPage"`.
+- `<!-- internal-links -->`: 2–3 contextual links to existing published articles with exact anchor text.
 
 ## 3. Growth OS Moat Rules
 1. **Taste Over Fluff**: Never define basic terms in a generic introductory paragraph (e.g., *"Artificial intelligence is changing software"*).

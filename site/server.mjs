@@ -248,6 +248,39 @@ function sendJson(res, statusCode, data) {
   res.end(JSON.stringify(data));
 }
 
+// Frontmatter parser for markdown articles
+function parseFrontmatter(markdown) {
+  if (!markdown) return {};
+  const fmMatch = markdown.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/);
+  if (!fmMatch) return {};
+  const data = {};
+  const lines = fmMatch[1].split(/\r?\n/);
+  for (const line of lines) {
+    const m = line.match(/^([a-zA-Z0-9_-]+)\s*:\s*(.*)$/);
+    if (!m) continue;
+    const key = m[1].trim();
+    let rawVal = m[2].trim();
+    if (rawVal.startsWith('[') && rawVal.endsWith(']')) {
+      try {
+        data[key] = JSON.parse(rawVal);
+      } catch (e) {
+        data[key] = rawVal.slice(1, -1).split(',').map((s) => s.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
+      }
+    } else if ((rawVal.startsWith('"') && rawVal.endsWith('"')) || (rawVal.startsWith("'") && rawVal.endsWith("'"))) {
+      data[key] = rawVal.slice(1, -1);
+    } else if (!isNaN(Number(rawVal)) && rawVal !== '') {
+      data[key] = Number(rawVal);
+    } else if (rawVal.toLowerCase() === 'true') {
+      data[key] = true;
+    } else if (rawVal.toLowerCase() === 'false') {
+      data[key] = false;
+    } else {
+      data[key] = rawVal;
+    }
+  }
+  return data;
+}
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
 
@@ -265,7 +298,7 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     // API: Drafts & Library Management (PressFlow Workspace)
     // ----------------------------------------------------
-    if (url.pathname === '/api/drafts') {
+    if (url.pathname === '/api/drafts' && req.method === 'GET') {
       const draftsDir = join(ROOT, 'context', 'drafts');
       const pubDir = join(ROOT, 'published');
       const allFiles = [];
@@ -288,24 +321,30 @@ const server = createServer(async (req, res) => {
       for (const item of allFiles) {
         try {
           const text = await readFile(item.path, 'utf8');
-          const titleMatch = text.match(/title:\s*["']?([^"\n\r]+)["']?/i) || text.match(/^#\s+(.+)$/m);
-          const title = titleMatch ? titleMatch[1].trim() : item.file;
-          const verticalMatch = text.match(/vertical:\s*([a-z0-9_]+)/i);
-          const vertical = verticalMatch ? verticalMatch[1] : 'general';
-          const dateMatch = text.match(/date:\s*([0-9-]+)/i) || item.file.match(/^([0-9]{4}-[0-9]{2}-[0-9]{2})/);
-          const date = dateMatch ? dateMatch[1] : '';
+          const fm = parseFrontmatter(text);
+          const title = fm.title || (text.match(/^#\s+(.+)$/m) || [])[1] || item.file;
+          const vertical = fm.vertical || 'general';
+          const date = fm.date || (item.file.match(/^([0-9]{4}-[0-9]{2}-[0-9]{2})/) || [])[1] || '';
           const wordCount = text.split(/\s+/).filter(Boolean).length;
           const readTime = Math.max(1, Math.round(wordCount / 220));
 
           items.push({
             file: item.file,
             title,
-            slug: item.file.replace(/\.md$/, ''),
+            slug: fm.slug || item.file.replace(/\.md$/, ''),
             type: item.type,
             vertical,
+            persona: fm.persona || fm.target_persona || 'eng_leader',
             date,
             wordCount,
             readTime,
+            primary_keyword: fm.primary_keyword || '',
+            secondary_keywords: Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [],
+            search_volume: fm.search_volume || null,
+            search_intent: fm.search_intent || '',
+            keyword_difficulty: fm.keyword_difficulty || null,
+            meta_title: fm.meta_title || '',
+            meta_description: fm.meta_description || '',
           });
         } catch (e) {
           console.warn('Error parsing draft:', item.file, e.message);
@@ -316,7 +355,7 @@ const server = createServer(async (req, res) => {
       return sendJson(res, 200, items);
     }
 
-    if (url.pathname === '/api/drafts/detail') {
+    if (url.pathname === '/api/drafts/detail' && req.method === 'GET') {
       const file = url.searchParams.get('file');
       if (!file) return sendJson(res, 400, { error: 'Missing file query param' });
 
@@ -330,19 +369,28 @@ const server = createServer(async (req, res) => {
       }
 
       const text = await readFile(targetPath, 'utf8');
-      const titleMatch = text.match(/title:\s*["']?([^"\n\r]+)["']?/i) || text.match(/^#\s+(.+)$/m);
-      const title = titleMatch ? titleMatch[1].trim() : file;
-      const verticalMatch = text.match(/vertical:\s*([a-z0-9_]+)/i);
-      const vertical = verticalMatch ? verticalMatch[1] : 'agentic_ai';
+      const fm = parseFrontmatter(text);
+      const title = fm.title || (text.match(/^#\s+(.+)$/m) || [])[1] || file;
+      const vertical = fm.vertical || 'agentic_ai';
       const wordCount = text.split(/\s+/).filter(Boolean).length;
       const readTime = Math.max(1, Math.round(wordCount / 220));
 
       return sendJson(res, 200, {
         file,
         title,
+        slug: fm.slug || file.replace(/\.md$/, ''),
         vertical,
+        persona: fm.persona || fm.target_persona || 'eng_leader',
+        date: fm.date || '',
         wordCount,
         readTime,
+        primary_keyword: fm.primary_keyword || '',
+        secondary_keywords: Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [],
+        search_volume: fm.search_volume || null,
+        search_intent: fm.search_intent || '',
+        keyword_difficulty: fm.keyword_difficulty || null,
+        meta_title: fm.meta_title || '',
+        meta_description: fm.meta_description || '',
         markdown: text,
       });
     }
@@ -442,7 +490,7 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     // API: Published Articles
     // ----------------------------------------------------
-    if (url.pathname === '/api/articles.json') {
+    if (url.pathname === '/api/articles.json' && req.method === 'GET') {
       const pubDir = join(ROOT, 'published');
       const files = existsSync(pubDir)
         ? (await readdir(pubDir)).filter((f) => f.endsWith('.md')).sort().reverse()
@@ -477,10 +525,23 @@ const server = createServer(async (req, res) => {
 
       await unlink(targetPath);
 
+      // Clean up companion _draft or _final if it exists in context/drafts
+      if (safeName.endsWith('_final.md')) {
+        const companionPath = join(draftsDir, safeName.replace('_final.md', '_draft.md'));
+        if (existsSync(companionPath)) {
+          try { await unlink(companionPath); } catch (e) {}
+        }
+      } else if (safeName.endsWith('_draft.md')) {
+        const companionPath = join(draftsDir, safeName.replace('_draft.md', '_final.md'));
+        if (existsSync(companionPath)) {
+          try { await unlink(companionPath); } catch (e) {}
+        }
+      }
+
       const sbConfig = getSupabaseConfig();
       if (sbConfig.isConfigured) {
         try {
-          const slug = safeName.replace(/\.md$/, '');
+          const slug = safeName.replace(/\.md$/, '').replace(/_final$/, '').replace(/_draft$/, '');
           await supabaseFetch(`articles?slug=eq.${encodeURIComponent(slug)}`, { method: 'DELETE' });
         } catch (e) {
           console.warn('[Supabase] Warning deleting article record:', e.message);
@@ -628,6 +689,7 @@ const server = createServer(async (req, res) => {
                 sources: r.sources || [],
                 primary_angles: r.primary_angles || [],
                 target_persona: r.target_persona || 'eng_leader',
+                enable_dataforseo: r.enable_dataforseo !== undefined ? r.enable_dataforseo : true,
               }));
               // update local mirror
               await saveLocalVerticals(verticals);
@@ -649,7 +711,7 @@ const server = createServer(async (req, res) => {
 
       if (req.method === 'POST') {
         const body = await parseJsonBody(req);
-        const { id, label, cadence, target_persona, sources, primary_angles } = body;
+        const { id, label, cadence, target_persona, sources, primary_angles, enable_dataforseo } = body;
 
         if (!id || !label) {
           return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
@@ -669,6 +731,7 @@ const server = createServer(async (req, res) => {
           target_persona: (target_persona || 'eng_leader').trim(),
           sources: Array.isArray(sources) ? sources : [],
           primary_angles: Array.isArray(primary_angles) ? primary_angles : [],
+          enable_dataforseo: enable_dataforseo !== undefined ? Boolean(enable_dataforseo) : true,
         };
 
         verticals.push(newVertical);
@@ -745,6 +808,7 @@ const server = createServer(async (req, res) => {
           target_persona: body.target_persona !== undefined ? body.target_persona.trim() : existing.target_persona,
           sources: Array.isArray(body.sources) ? body.sources : existing.sources,
           primary_angles: Array.isArray(body.primary_angles) ? body.primary_angles : existing.primary_angles,
+          enable_dataforseo: body.enable_dataforseo !== undefined ? Boolean(body.enable_dataforseo) : (existing.enable_dataforseo !== undefined ? existing.enable_dataforseo : true),
         };
 
         verticals[index] = updated;
@@ -760,6 +824,7 @@ const server = createServer(async (req, res) => {
                 target_persona: updated.target_persona,
                 sources: updated.sources,
                 primary_angles: updated.primary_angles,
+                enable_dataforseo: updated.enable_dataforseo,
                 updated_at: new Date().toISOString(),
               }),
             });
@@ -767,6 +832,7 @@ const server = createServer(async (req, res) => {
             console.warn('[Supabase] Warning syncing updated vertical:', e.message);
           }
         }
+
 
         return sendJson(res, 200, { status: 'ok', vertical: updated });
       }
@@ -799,7 +865,7 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     // API: SEO Content Machine & Growth OS
     // ----------------------------------------------------
-    if (url.pathname === '/api/seo/gsc-opportunities') {
+    if (url.pathname === '/api/seo/gsc-opportunities' && req.method === 'GET') {
       const vertical = url.searchParams.get('vertical') || 'all';
       try {
         const { stdout } = await execFileAsync('python3', [
@@ -868,7 +934,7 @@ const server = createServer(async (req, res) => {
       }
     }
 
-    if (url.pathname === '/api/seo/sitemap') {
+    if (url.pathname === '/api/seo/sitemap' && req.method === 'GET') {
       const smPath = join(ROOT, 'context', 'sitemap.json');
       if (existsSync(smPath)) {
         const data = JSON.parse(await readFile(smPath, 'utf8'));
@@ -895,7 +961,7 @@ const server = createServer(async (req, res) => {
       }
     }
 
-    if (url.pathname === '/api/seo/performance-report') {
+    if (url.pathname === '/api/seo/performance-report' && req.method === 'GET') {
       const perfPath = join(ROOT, 'context', 'gsc_performance.json');
       if (existsSync(perfPath)) {
         const data = JSON.parse(await readFile(perfPath, 'utf8'));

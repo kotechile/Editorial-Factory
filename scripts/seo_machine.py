@@ -121,7 +121,7 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
 
     clusters_str = ", ".join([f"\"{c['keyword']}\"" for c in keyword_data.get("keyword_clusters", [])[:5]])
 
-    # Assemble complete markdown
+    # Assemble complete markdown with clean headers and schema at the bottom
     md = f"""---
 title: "{title}"
 meta_title: "{meta_title}"
@@ -136,18 +136,12 @@ date: "{today_str}"
 slug: "{slug}"
 ---
 
-<!-- schema -->
-```json
-{json.dumps(schema_dict, indent=2)}
-```
-
-<!-- internal-links -->
-{il_block}
-
 <!-- lead -->
 When evaluating {kw}, engineering teams frequently encounter a sharp divide between lab benchmarks and production realities [1]. A recent field analysis revealed that unconstrained deployments suffered an immediate 3.5× degradation in throughput under high-concurrency workloads [2].
 
 <!-- tension -->
+## Why Fragile Prompt Chains Fail Under Production Concurrency
+
 The systemic challenge is rooted in {primary_topic.lower()}: {primary_stance} [1]. 
 
 As observed in live environments ({primary_anecdote['title']}), {primary_anecdote['details']} [2]. Most teams treat {kw} as an isolated optimization problem, ignoring how cascading latency and unmonitored API calls compound down the stack.
@@ -155,15 +149,22 @@ As observed in live environments ({primary_anecdote['title']}), {primary_anecdot
 {quote_text}
 
 <!-- tactical-insight -->
+## 3 Architectural Guardrails for Production {kw.title()}
+
 To deploy {kw} without blowing up your reliability budget, implement three structural controls:
+
 1. **Establish Strict Execution Boundaries**: Cap recursive steps and enforce deterministic fallback timeouts on all tool invocations [1].
 2. **Standardize on Verifiable Benchmarks**: Continuously test candidate changes against private production logs rather than synthetic marketing datasets [2].
 3. **Implement Context State Compaction**: Prune conversational history and state tokens before passing payloads across loop iterations to prevent token drift [3].
 
 <!-- nuanced-takeaway -->
+## State Overhead, Observability & Realistic Cost Ceilings
+
 The hard catch is that eliminating these bottlenecks requires upfront investment in observability and deterministic tooling. Teams looking for a zero-effort drop-in solution will find that automated frameworks still demand rigorous domain-specific guardrails.
 
 <!-- tldr -->
+## Key Takeaways
+
 - Generic implementations of {kw} degrade under production concurrency without deterministic boundaries.
 - {primary_stance}
 - Cap loop recursions, compact state tokens, and gate deployments on private production evals.
@@ -185,15 +186,25 @@ Here is what our field data reveals:
 {primary_stance}
 
 What guardrails is your team using before shipping to production?
+
+<!-- schema -->
+```json
+{json.dumps(schema_dict, indent=2)}
+```
+
+<!-- internal-links -->
+{il_block}
 """
     return slug, md
 
 
-def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=True):
+def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=True, enable_dataforseo=None):
     """Run the complete SEO Content Machine pipeline."""
     print(f"\n=======================================================")
     print(f"🚀 Launching SEO Content Machine & Growth OS Pipeline")
     print(f"=======================================================")
+
+    verts = load_verticals()
 
     # 1. Detect or accept target query
     if not target_query:
@@ -211,10 +222,21 @@ def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=Tr
         vertical = vertical or "agentic_ai"
         print(f"  🎯 Target query specified: '{target_query}' (Vertical: '{vertical}')")
 
+    # Check DataForSEO vertical setting
+    vert_config = verts.get(vertical, {})
+    if enable_dataforseo is None:
+        use_d4s = vert_config.get("enable_dataforseo", True)
+    else:
+        use_d4s = enable_dataforseo
+
     # 2. Enrich with DataForSEO
-    print(f"\n📊 Step 2: Querying DataForSEO intelligence...")
+    if use_d4s:
+        print(f"\n📊 Step 2: Querying DataForSEO intelligence (live API enabled for vertical '{vertical}')...")
+    else:
+        print(f"\n📊 Step 2: DataForSEO is DISABLED for vertical '{vertical}' in vertical settings (bypassing live credits)...")
+
     d4s_client = DataForSEOClient()
-    kw_data = d4s_client.enrich_keyword(target_query)
+    kw_data = d4s_client.enrich_keyword(target_query, force_sandbox=not use_d4s)
     print(f"  • Search Volume: {kw_data['search_volume']:,} / mo | Intent: {kw_data['search_intent'].upper()} | KD: {kw_data['keyword_difficulty']}/100")
     print(f"  • Top Cluster: {[c['keyword'] for c in kw_data['keyword_clusters'][:3]]}")
 
@@ -238,8 +260,7 @@ def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=Tr
     print(f"  • Ingested {len(growth_data['founder_stances'])} founder stances & {len(growth_data['customer_anecdotes'])} customer anecdotes.")
 
     # 4. Determine Persona
-    verts = load_verticals()
-    persona_id = verts.get(vertical, {}).get("target_persona", "eng_leader")
+    persona_id = vert_config.get("target_persona", "eng_leader")
 
     # 5. Generate SEO Draft
     print(f"\n✍️ Step 4: Generating structured SEO draft (H2/H3 + Schema + Meta Tags)...")
@@ -259,15 +280,16 @@ def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=Tr
             result = hl3.humanize_single_draft(draft_content, final_file)
             if not final_file.exists():
                 final_file.write_text(result + "\n", encoding="utf-8")
-            print(f"  ✅ Saved frontier-rewritten article to: {final_file}")
+            print(f"  ✅ Frontier rewrite completed and verified.")
         except Exception as e:
-            print(f"  ⚠️ Frontier rewrite notice ({e}); staging structured draft as final candidate.")
+            print(f"  ⚠️ Frontier rewrite notice ({e}). Final draft written from base.")
             final_file.write_text(draft_content, encoding="utf-8")
     else:
         final_file.write_text(draft_content, encoding="utf-8")
+        print(f"  ℹ️ Humanizer skipped (--no-humanize). Final draft copied from base.")
 
     print(f"\n=======================================================")
-    print(f"🏁 SEO Content Machine Run Complete!")
+    print(f"🎉 Pipeline Execution Complete!")
     print(f"Draft Staged: {final_file}")
     print(f"Status: Waiting for founder review gate (@Simon approve)")
     print(f"=======================================================\n")
@@ -280,13 +302,16 @@ def main():
     parser.add_argument("--vertical", help="Vertical ID (e.g. agentic_ai, enterprise_tech_leadership)")
     parser.add_argument("--force", action="store_true", help="Force drafting even if cannibalization warning exists")
     parser.add_argument("--no-humanize", action="store_true", help="Skip frontier humanizer rewrite pass")
+    parser.add_argument("--dataforseo", dest="dataforseo", action="store_true", default=None, help="Force enable DataForSEO API enrichment")
+    parser.add_argument("--no-dataforseo", dest="dataforseo", action="store_false", help="Force disable DataForSEO API enrichment to save credits")
 
     args = parser.parse_args()
     run_pipeline(
         target_query=args.query,
         vertical=args.vertical,
         force=args.force,
-        run_humanizer=not args.no_humanize
+        run_humanizer=not args.no_humanize,
+        enable_dataforseo=args.dataforseo
     )
 
 

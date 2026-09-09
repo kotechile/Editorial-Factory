@@ -88,6 +88,11 @@ def parse_draft(file_path: str):
     else:
         body_article = body_content.strip()
 
+    # Cleanly strip machine-readable schema, internal-links, and gate reports from body_article
+    body_article = re.sub(r"<!--\s*schema\s*-->\s*```(?:json)?\s*\{.+?\}\s*```", "", body_article, flags=re.DOTALL | re.IGNORECASE).strip()
+    body_article = re.sub(r"<!--\s*internal-links\s*-->\s*(?:- .+\n?)+", "", body_article, flags=re.IGNORECASE).strip()
+    body_article = re.sub(r"##\s*Gate report[\s\S]*$", "", body_article, flags=re.IGNORECASE).strip()
+
     # Extract Sources
     sources = []
     sources_match = re.search(r"## Sources\s*(.+)", body_article, re.DOTALL | re.IGNORECASE)

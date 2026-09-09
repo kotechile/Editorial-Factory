@@ -4,11 +4,11 @@ Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these sc
 
 | Vertical | Cadence | Schedule (EST) | Status |
 |---|---|---|---|
-| agentic_ai | 0 6 * * 1,4 | Mon + Thu 06:00 AM EST | active |
-| enterprise_tech_leadership | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| gpu_hardware | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| supply_chain | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| home_systems_reno | 0 6 * * 5 | Fri 06:00 AM EST | active |
+| agentic_ai | 0 6 * * 1,4 | Mon + Thu 6:00 AM EST | active |
+| enterprise_tech_leadership | 0 6 * * 2 | Tue 6:00 AM EST | active |
+| gpu_hardware | 0 6 * * 3 | Wed 6:00 AM EST | active |
+| supply_chain | 0 6 * * 4 | Thu 6:00 AM EST | active |
+| home_systems_reno | 0 6 * * 5 | Fri 6:00 AM EST | active |
 
 ## Run log
 | Date | Vertical | Result | Notes |

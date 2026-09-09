@@ -147,6 +147,7 @@ def push_to_supabase():
             "target_persona": v.get("target_persona", "eng_leader"),
             "sources": v.get("sources", []),
             "primary_angles": v.get("primary_angles", []),
+            "enable_dataforseo": v.get("enable_dataforseo", True),
             "is_active": True,
         })
 
@@ -205,6 +206,7 @@ def pull_from_supabase():
             "sources": row.get("sources") or [],
             "primary_angles": row.get("primary_angles") or [],
             "target_persona": row.get("target_persona", "eng_leader"),
+            "enable_dataforseo": row.get("enable_dataforseo") if row.get("enable_dataforseo") is not None else True,
         })
 
     with open(VERTICALS_PATH, "w", encoding="utf-8") as f:
@@ -240,10 +242,12 @@ create table if not exists editorial_verticals (
   target_persona text not null,
   sources jsonb default '[]'::jsonb,
   primary_angles jsonb default '[]'::jsonb,
+  enable_dataforseo boolean default true,
   is_active boolean default true,
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );
+
 
 create table if not exists editorial_personas (
   id text primary key,

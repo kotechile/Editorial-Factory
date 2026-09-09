@@ -17,7 +17,8 @@
         "agent evaluation bottlenecks",
         "multi-agent failure modes"
       ],
-      "target_persona": "eng_leader"
+      "target_persona": "eng_leader",
+      "enable_dataforseo": true
     },
     {
       "id": "enterprise_tech_leadership",
@@ -35,7 +36,8 @@
         "AI ROI",
         "build vs buy"
       ],
-      "target_persona": "eng_leader"
+      "target_persona": "eng_leader",
+      "enable_dataforseo": true
     },
     {
       "id": "gpu_hardware",
@@ -54,7 +56,8 @@
         "open-source vs closed silicon",
         "memory bandwidth ceilings"
       ],
-      "target_persona": "infra_engineer"
+      "target_persona": "infra_engineer",
+      "enable_dataforseo": true
     },
     {
       "id": "supply_chain",
@@ -72,7 +75,8 @@
         "freight data visibility",
         "tariff exposure"
       ],
-      "target_persona": "ops_leader"
+      "target_persona": "ops_leader",
+      "enable_dataforseo": false
     },
     {
       "id": "home_systems_reno",
@@ -90,7 +94,8 @@
         "smart electrical panels",
         "electrification incentives"
       ],
-      "target_persona": "homeowner_pro"
+      "target_persona": "homeowner_pro",
+      "enable_dataforseo": false
     }
   ]
 }

@@ -36,8 +36,9 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
 - PRESERVE every citation [n] inline and the ## Sources list VERBATIM (do not change, merge, or drop any source line or its URL).
 - PRESERVE the frontmatter (title, meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) unchanged.
-- PRESERVE the <!-- schema --> block (JSON-LD) and <!-- internal-links --> block VERBATIM if present.
+- PRESERVE the <!-- schema --> block (JSON-LD) and <!-- internal-links --> block VERBATIM if present, placed at the end of the document.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
+- FORMAT: Provide clean, engaging markdown with crisp H2 (`## `) headers for the sections (Tension, Tactical Insight, Nuanced Takeaway, Key Takeaways, Sources). The article body MUST start immediately with the lead copy, never with raw JSON metadata.
 - Keep the TL;DR as the structured <!-- tldr --> field, exactly 3 scannable bullet items starting with "-". Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC (render-time only).
 
 VOICE RULES:

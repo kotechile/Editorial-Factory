@@ -44,11 +44,13 @@ def list_verticals():
     print(f"\nEditorial Factory Verticals ({len(verticals)} configured):")
     print("=" * 70)
     for i, v in enumerate(verticals, 1):
+        d4s_status = "ON (live API credits)" if v.get("enable_dataforseo", True) else "OFF (credit bypass)"
         print(f"{i}. [{v.get('id')}] {v.get('label')}")
-        print(f"   Cadence: {v.get('cadence')}")
-        print(f"   Persona: {v.get('target_persona')}")
-        print(f"   Sources: {', '.join(v.get('sources', []))}")
-        print(f"   Angles:  {', '.join(v.get('primary_angles', []))}")
+        print(f"   Cadence:    {v.get('cadence')}")
+        print(f"   Persona:    {v.get('target_persona')}")
+        print(f"   DataForSEO: {d4s_status}")
+        print(f"   Sources:    {', '.join(v.get('sources', []))}")
+        print(f"   Angles:     {', '.join(v.get('primary_angles', []))}")
         print("-" * 70)
 
 
@@ -69,6 +71,7 @@ def add_vertical(args):
         "sources": sources,
         "primary_angles": angles,
         "target_persona": args.persona or "eng_leader",
+        "enable_dataforseo": True if args.dataforseo is None else args.dataforseo,
     }
     verticals.append(new_v)
     save_verticals(verticals)
@@ -104,6 +107,8 @@ def edit_vertical(args):
         target["sources"] = [s.strip() for s in args.sources.split(",") if s.strip()]
     if args.angles is not None:
         target["primary_angles"] = [a.strip() for a in args.angles.split(",") if a.strip()]
+    if args.dataforseo is not None:
+        target["enable_dataforseo"] = args.dataforseo
 
     save_verticals(verticals)
     print(f"Updated vertical '{vid}' successfully.")
@@ -150,6 +155,8 @@ def main():
     p_add.add_argument("--persona", default="eng_leader", help="Target persona ID (e.g. eng_leader)")
     p_add.add_argument("--sources", default="", help="Comma-separated sources")
     p_add.add_argument("--angles", default="", help="Comma-separated primary angles")
+    p_add.add_argument("--dataforseo", dest="dataforseo", action="store_true", default=None, help="Enable DataForSEO enrichment")
+    p_add.add_argument("--no-dataforseo", dest="dataforseo", action="store_false", help="Disable DataForSEO enrichment to save credits")
 
     # edit
     p_edit = subparsers.add_parser("edit", help="Edit an existing vertical")
@@ -159,6 +166,9 @@ def main():
     p_edit.add_argument("--persona", help="New target persona ID")
     p_edit.add_argument("--sources", help="New comma-separated sources")
     p_edit.add_argument("--angles", help="New comma-separated primary angles")
+    p_edit.add_argument("--dataforseo", dest="dataforseo", action="store_true", default=None, help="Enable DataForSEO enrichment")
+    p_edit.add_argument("--no-dataforseo", dest="dataforseo", action="store_false", help="Disable DataForSEO enrichment to save credits")
+
 
     # delete
     p_del = subparsers.add_parser("delete", help="Delete a vertical")

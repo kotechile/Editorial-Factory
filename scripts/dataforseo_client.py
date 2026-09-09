@@ -148,11 +148,11 @@ class DataForSEOClient:
         except Exception as e:
             return {"status": "error", "message": str(e)}
 
-    def enrich_keyword(self, keyword, location_code=2840, language_code="en"):
+    def enrich_keyword(self, keyword, location_code=2840, language_code="en", force_sandbox=False):
         """Enrich a keyword with search volume, intent, difficulty, clusters, and SERP landscape."""
         cleaned_kw = keyword.strip().lower()
 
-        if self.is_live:
+        if self.is_live and not force_sandbox:
             try:
                 # 1. Keyword search volume & difficulty
                 sv_payload = [{"keywords": [cleaned_kw], "location_code": location_code, "language_code": language_code}]
