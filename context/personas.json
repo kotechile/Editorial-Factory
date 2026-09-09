@@ -31,10 +31,16 @@
       "wants": "shadow AI migration funnels, zero-trust actor boundaries, CFO TCO models, auditability"
     },
     "ops_leader": {
-      "label": "Operations / supply-chain leader",
-      "reader_level": "business-operational, numerate",
-      "tone": "pragmatic, ROI-first, plain English",
-      "wants": "cost/risk framing, vendor-neutral, actionable"
+      "label": "VP of Supply Chain & Operations Leader",
+      "reader_level": "senior supply chain executive, highly numerate",
+      "tone": "pragmatic, balance-sheet aware, ROI-first, grounded in physical physics",
+      "wants": "ERP decoupling patterns, working capital / MEIO math, physical-to-digital friction fixes, autonomous execution guardrails"
+    },
+    "supply_chain_architect": {
+      "label": "Supply Chain & Logistics Systems Architect",
+      "reader_level": "deep technical & operations systems architect",
+      "tone": "architectural, event-driven, warehouse/telematics literate",
+      "wants": "ERP/WMS integration layers, RTTV telematics pipelines, AMR integration standards, digital twin simulation architectures"
     },
     "homeowner_pro": {
       "label": "Serious homeowner / builder",

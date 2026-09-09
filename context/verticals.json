@@ -132,19 +132,33 @@
     },
     {
       "id": "supply_chain",
-      "label": "Supply Chain & Logistics Tech",
+      "label": "Supply Chain Orchestration & Physical Logistics",
       "cadence": "0 6 * * 4",
       "sources": [
         "freightwaves",
-        "industry_dive",
+        "supply_chain_dive",
+        "journal_of_commerce",
         "tariff_updates",
-        "x_ai"
+        "customs_rulings",
+        "x_ai",
+        "freightos_baltic",
+        "gartner_supply_chain"
       ],
       "primary_angles": [
-        "nearshoring",
-        "warehouse automation",
-        "freight data visibility",
-        "tariff exposure"
+        "enterprise ERP WMS TMS decoupling 3-layer stack",
+        "SMB lean composable logistics SaaS blueprint",
+        "control tower maturity 4-stage hierarchy",
+        "multi-echelon inventory optimization MEIO",
+        "deterministic vs probabilistic demand sensing",
+        "closed loop S&OP to S&OE operational execution",
+        "autonomous mobile robots AMR vs ASRS capex ROI",
+        "dynamic velocity slotting and micro-fulfillment",
+        "dynamic freight routing and LTL consolidation",
+        "real-time in-transit visibility RTTV telematics",
+        "nearshoring and multi-sourcing value stream topology",
+        "upstream Tier-1 to Tier-N supplier blast radius",
+        "supply chain digital twin sandbox stress-testing",
+        "agentic exception handling and demurrage dispute pipelines"
       ],
       "target_persona": "ops_leader",
       "enable_dataforseo": false

@@ -33,6 +33,16 @@ This document captures real customer friction, anonymized case studies, operatio
 
 ---
 
+### Vertical: `supply_chain` (Supply Chain Orchestration & Physical Logistics)
+- **Anecdote 1: The 20-Year SAP Customization Wall**: A $400M industrial distributor spent $12M over 18 months attempting to customize their monolithic SAP ERP to support multi-carrier regional parcel routing. The project stalled due to brittle ABAP dependencies. Inserting an event-driven 3-layer integration stack with an API-first TMS connected 6 regional carriers in 45 days at $420k total cost.
+- **Anecdote 2: Multi-Echelon Inventory Optimization (MEIO) Cash Release**: A consumer electronics brand holding $85M in finished goods across 4 regional hubs implemented MEIO. By calculating echelon stock decouples rather than localized single-node safety buffers, they liberated $18.4M in working capital within 90 days while improving on-time in-full (OTIF) fulfillment from 91.2% to 97.6%.
+- **Anecdote 3: The Fixed AS/RS Capex Trap**: A 3PL invested $22M into a rigid high-bay AS/RS facility engineered specifically for standard pallet heights. Two years later, their anchor retail client shifted to oversized polybags and custom carton dimensions, rendering 40% of the cranes obsolete. Transitioning to leased AMRs on a RaaS model enabled dynamic aisle re-slotting within 72 hours.
+- **Anecdote 4: The Tier-3 Photoresist Plant Fire**: An automotive Tier-1 supplier experienced a 6-week factory halt because a single Tier-3 chemical supplier in Kumamoto, Japan suffered a cleanroom fire. The OEM and Tier-1 had zero visibility into sub-tier single-source dependencies until component shipments stopped arriving.
+- **Anecdote 5: Autonomous Demurrage & Detention Agent**: An international apparel importer faced $320,000/month in marine terminal container demurrage due to slow document handling and missed drayage appointment slots. Deploying an autonomous exception agent that auto-monitored terminal telematics, rescheduled drayage appointments, and auto-filed detention disputes reduced total penalty fees by 72% ($230,000/month net savings).
+- **Anecdote 6: The Section 301 Reclassification Shock**: A mid-sized importer faced retroactive $1.2M duties because customs reclassified an electronic component under a different HTS code without warning. Integrating real-time customs tariff change webhooks into their S&OP pipeline prevented an additional $2.8M in unexpected duty liabilities.
+
+---
+
 ### Vertical: `enterprise_tech_leadership` (Technology & Architecture Decisions)
 - **Anecdote 1: The Cloud Egress Shock**: A high-volume data ingest startup was paying $68,000/month in AWS NAT Gateway and inter-AZ data transfer fees alone. Moving steady-state pipeline workloads to dedicated metal reduced their monthly infrastructure cost to $14,200.
 - **Anecdote 2: Microservice Sprawl**: A 25-engineer engineering org had 48 microservices across 3 Kubernetes clusters. Onboarding a new backend engineer took 3 weeks. Consolidating into 2 modular monoliths cut deployment cycle time from 4 days to 25 minutes.
@@ -42,12 +52,6 @@ This document captures real customer friction, anonymized case studies, operatio
 ### Vertical: `gpu_hardware` (GPUs & AI Hardware)
 - **Anecdote 1: The vLLM / TensorRT-LLM Tuning Win**: An AI SaaS company cut their monthly GPU cloud bill from $28,000 to $9,500 simply by switching from standard PyTorch inference to vLLM with PagedAttention and FP8 quantization on H100s, tripling throughput per GPU.
 - **Anecdote 2: Cold Starts on Serverless GPU**: Serverless GPU container spin-up latencies of 15–30 seconds were unacceptable for interactive user sessions. Pre-warmed pools with dynamic batching were essential.
-
----
-
-### Vertical: `supply_chain` (Supply Chain & Logistics Tech)
-- **Anecdote 1: The Section 301 Reclassification**: A mid-sized importer faced retroactive $1.2M duties because customs reclassified an electronic component under a different HTS code. They had no automated tariff change alert system in place.
-- **Anecdote 2: Warehouse Automation Bottleneck**: Buying autonomous mobile robots (AMRs) increased picking throughput by 40%, but packing and dock loading became the new bottleneck, resulting in zero net improvement in truck turnaround time.
 
 ---
 
