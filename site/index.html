@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,41 +7,113 @@
   <meta name="description" content="Unified Editorial Factory Suite: 30-day radar verticals management, target personas maintenance, article drafting, rendered previews, and multi-channel distribution suite.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
   <style>
     :root {
+      /* Clean Modern Light Theme (Default, matches mockup) */
+      --bg: #f4f6f9;
+      --bg-subtle: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-card: #ffffff;
+      --bg-card-hover: #fafbfc;
+      --bg-secondary: #f1f5f9;
+      --bg-tertiary: #e2e8f0;
+      --border: #e2e8f0;
+      --border-subtle: #edf2f7;
+      --border-focus: #0284c7;
+      --text: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-dim: #94a3b8;
+      
+      --accent: #0284c7;
+      --accent-rgb: 2, 132, 199;
+      --accent-light: #e0f2fe;
+      --accent-hover: #0369a1;
+      --accent-glow: rgba(2, 132, 199, 0.15);
+      
+      --purple: #7c3aed;
+      --purple-light: #f5f3ff;
+      --purple-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      
+      --success: #059669;
+      --success-bg: #ecfdf5;
+      --success-border: #a7f3d0;
+      --success-text: #065f46;
+      
+      --warning: #d97706;
+      --warning-bg: #fffbeb;
+      --warning-border: #fde68a;
+      --warning-text: #92400e;
+      
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+      --danger-text: #991b1b;
+      
+      --tag-bg: #f1f5f9;
+      --tag-border: #e2e8f0;
+      --tag-text: #334155;
+      
+      --radius-xs: 4px;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-pill: 9999px;
+      
+      --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-serif: 'Newsreader', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+      
+      --transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
       --bg: #090d16;
+      --bg-subtle: #0c1220;
       --bg-surface: #0f172a;
-      --bg-card: rgba(30, 41, 59, 0.7);
-      --bg-card-hover: rgba(51, 65, 85, 0.8);
-      --border: rgba(148, 163, 184, 0.15);
+      --bg-card: #131d31;
+      --bg-card-hover: #1c2a44;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --border: rgba(148, 163, 184, 0.16);
+      --border-subtle: rgba(148, 163, 184, 0.08);
       --border-focus: #38bdf8;
       --text: #f8fafc;
+      --text-secondary: #e2e8f0;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
       --accent: #38bdf8;
       --accent-rgb: 56, 189, 248;
+      --accent-light: rgba(56, 189, 248, 0.15);
       --accent-hover: #0ea5e9;
       --accent-glow: rgba(56, 189, 248, 0.25);
-      --purple: #8b5cf6;
-      --purple-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+      --purple: #a855f7;
+      --purple-light: rgba(168, 85, 247, 0.15);
       --success: #10b981;
       --success-bg: rgba(16, 185, 129, 0.15);
+      --success-border: rgba(16, 185, 129, 0.3);
+      --success-text: #6ee7b7;
       --warning: #f59e0b;
       --warning-bg: rgba(245, 158, 11, 0.15);
+      --warning-border: rgba(245, 158, 11, 0.3);
+      --warning-text: #fbbf24;
       --danger: #ef4444;
       --danger-bg: rgba(239, 68, 68, 0.15);
+      --danger-border: rgba(239, 68, 68, 0.3);
+      --danger-text: #fca5a5;
       --tag-bg: rgba(56, 189, 248, 0.1);
       --tag-border: rgba(56, 189, 248, 0.25);
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 16px;
-      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-serif: 'Newsreader', Georgia, serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      --tag-text: #bae6fd;
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
       --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--accent-glow);
-      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -52,16 +124,19 @@
       color: var(--text);
       min-height: 100vh;
       line-height: 1.5;
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       background-image: 
-        radial-gradient(circle at 15% 10%, rgba(99, 102, 241, 0.09) 0%, transparent 40%),
-        radial-gradient(circle at 85% 80%, rgba(56, 189, 248, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 12% 8%, rgba(2, 132, 199, 0.035) 0%, transparent 45%),
+        radial-gradient(circle at 88% 85%, rgba(124, 58, 237, 0.03) 0%, transparent 45%);
       background-attachment: fixed;
     }
 
     .container {
-      max-width: 1240px;
+      max-width: 1260px;
       margin: 0 auto;
-      padding: 1.75rem 1.5rem 5rem;
+      padding: 1.5rem 1.5rem 4rem;
     }
 
     /* Top Navigation Header */
@@ -71,9 +146,8 @@
       align-items: center;
       justify-content: space-between;
       gap: 1.25rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
     }
 
     .brand {
@@ -83,62 +157,59 @@
     }
 
     .brand-logo {
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       border-radius: var(--radius-md);
-      background: var(--purple-gradient);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
       font-weight: 800;
-      font-size: 1.2rem;
-      color: #fff;
+      font-size: 1.1rem;
+      color: var(--accent);
+      box-shadow: var(--shadow-sm);
+      letter-spacing: -0.02em;
     }
 
     .brand-subtitle {
-      font-size: 0.68rem;
+      font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-weight: 700;
       color: var(--text-dim);
+      margin-bottom: 0.1rem;
     }
 
     .brand-title {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #fff;
+      letter-spacing: -0.025em;
+      color: var(--text);
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.65rem;
     }
 
     .status-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
-      padding: 0.3rem 0.75rem;
-      border-radius: 9999px;
-      font-size: 0.75rem;
+      gap: 0.4rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-pill);
+      font-size: 11px;
       font-weight: 600;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: #6ee7b7;
+      background: var(--success-bg);
+      border: 1px solid var(--success-border);
+      color: var(--success-text);
     }
 
     .status-dot {
-      width: 7px;
-      height: 7px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--success);
-      box-shadow: 0 0 8px var(--success);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.6; transform: scale(0.9); }
+      box-shadow: 0 0 6px var(--success);
     }
 
     .header-actions {
@@ -154,118 +225,425 @@
       align-items: center;
       justify-content: center;
       gap: 0.45rem;
-      padding: 0.55rem 1.05rem;
+      padding: 0.5rem 0.95rem;
       border-radius: var(--radius-md);
       font-family: var(--font-sans);
-      font-size: 0.84rem;
+      font-size: 12px;
       font-weight: 600;
       cursor: pointer;
       transition: var(--transition);
       border: 1px solid transparent;
       text-decoration: none;
       white-space: nowrap;
+      user-select: none;
     }
 
-    .btn-purple {
-      background: var(--purple-gradient);
-      color: #fff;
-      box-shadow: 0 2px 12px rgba(139, 92, 246, 0.35);
+    .btn-accent {
+      background: #e0f2fe;
+      color: #0369a1;
+      border-color: #bae6fd;
+      box-shadow: var(--shadow-xs);
     }
 
-    .btn-purple:hover {
-      box-shadow: 0 4px 18px rgba(168, 85, 247, 0.5);
-      transform: translateY(-1px);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
-      color: #fff;
-      box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
-    }
-
-    .btn-primary:hover {
-      background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%);
+    .btn-accent:hover {
+      background: #bae6fd;
+      color: #0284c7;
       transform: translateY(-1px);
     }
 
     .btn-secondary {
       background: var(--bg-surface);
-      color: var(--text);
+      color: var(--text-secondary);
       border-color: var(--border);
+      box-shadow: var(--shadow-xs);
     }
 
     .btn-secondary:hover {
-      background: var(--bg-card-hover);
-      border-color: rgba(148, 163, 184, 0.3);
-      color: #fff;
+      background: var(--bg-secondary);
+      border-color: #cbd5e1;
+      color: var(--text);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+    }
+
+    .btn-purple {
+      background: var(--purple-light);
+      color: var(--purple);
+      border-color: #ddd6fe;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .btn-purple:hover {
+      background: #ede9fe;
+      transform: translateY(-1px);
     }
 
     .btn-danger {
       background: var(--danger-bg);
       color: var(--danger);
-      border-color: rgba(239, 68, 68, 0.3);
+      border-color: var(--danger-border);
     }
 
     .btn-danger:hover {
       background: var(--danger);
-      color: #fff;
+      color: #ffffff;
     }
 
     .btn-sm {
       padding: 0.35rem 0.75rem;
-      font-size: 0.78rem;
+      font-size: 11.5px;
     }
 
-    /* Main View Navigation Tabs */
-    .tabs {
+    .theme-toggle-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-md);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
       display: flex;
-      gap: 0.5rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2rem;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 14px;
+    }
+
+    .theme-toggle-btn:hover {
+      color: var(--text);
+      background: var(--bg-secondary);
+      border-color: #cbd5e1;
+    }
+
+    /* Modern Segmented Navigation Tabs */
+    .tabs-wrapper {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 0.3rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-xs);
       overflow-x: auto;
     }
 
+    .tabs {
+      display: flex;
+      gap: 0.3rem;
+      min-width: max-content;
+    }
+
     .tab-btn {
-      padding: 0.75rem 1.25rem;
+      padding: 0.55rem 1rem;
       background: transparent;
       border: none;
-      border-bottom: 2px solid transparent;
+      border-radius: var(--radius-md);
       color: var(--text-muted);
       font-family: var(--font-sans);
-      font-size: 0.9rem;
+      font-size: 12px;
       font-weight: 600;
       cursor: pointer;
       transition: var(--transition);
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.45rem;
+      white-space: nowrap;
     }
 
-    .tab-btn:hover { color: var(--text); }
+    .tab-btn:hover {
+      color: var(--text);
+      background: var(--bg-secondary);
+    }
 
     .tab-btn.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
+      background: #e0f2fe;
+      color: #0369a1;
+      font-weight: 700;
+      box-shadow: var(--shadow-xs);
+    }
+
+    [data-theme="dark"] .tab-btn.active {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
     }
 
     .badge-count {
-      padding: 0.15rem 0.45rem;
-      border-radius: 999px;
-      font-size: 0.72rem;
-      background: var(--border);
-      color: var(--text);
+      padding: 0.1rem 0.45rem;
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      background: rgba(148, 163, 184, 0.18);
+      color: var(--text-secondary);
+      font-weight: 700;
     }
 
     .tab-btn.active .badge-count {
-      background: var(--accent-glow);
-      color: var(--accent);
+      background: rgba(3, 105, 161, 0.15);
+      color: #0369a1;
     }
 
-    /* Workspace Panel */
-    .workspace-card {
+    [data-theme="dark"] .tab-btn.active .badge-count {
+      background: rgba(56, 189, 248, 0.25);
+      color: #7dd3fc;
+    }
+
+    /* Workspace Cards & Layout */
+    .hero-article-card {
       background: var(--bg-card);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .hero-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .article-title-heading {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .meta-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 11.5px;
+    }
+
+    .clean-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-pill);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 11.5px;
+      text-decoration: none;
+    }
+
+    .clean-pill a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .clean-pill a:hover { text-decoration: underline; }
+
+    .tag-pill {
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid #e2e8f0;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-pill);
+    }
+
+    [data-theme="dark"] .tag-pill {
+      background: #1e293b;
+      color: #94a3b8;
+      border-color: rgba(148, 163, 184, 0.15);
+    }
+
+    /* Section Headers */
+    .section-header-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.015em;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Dual SEO Target Cards (Matches Mockup) */
+    .seo-target-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 860px) {
+      .seo-target-grid { grid-template-columns: 1fr; }
+    }
+
+    .seo-box-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.4rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .seo-box-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.85rem;
+      display: block;
+    }
+
+    .primary-query-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.85rem;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .primary-query-title {
+      font-weight: 800;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .copy-pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .copy-pill-btn:hover {
+      background: #e2e8f0;
+      color: var(--text);
+    }
+
+    .badges-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+      margin-bottom: 0.95rem;
+    }
+
+    .badge-intent {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+
+    .badge-persona {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+
+    .badge-calibrated {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background: #ccfbf1;
+      color: #0f766e;
+      border: 1px solid #99f6e4;
+      letter-spacing: 0.02em;
+    }
+
+    [data-theme="dark"] .badge-intent { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); }
+    [data-theme="dark"] .badge-persona { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border-color: rgba(56, 189, 248, 0.3); }
+    [data-theme="dark"] .badge-calibrated { background: rgba(20, 184, 166, 0.15); color: #5eead4; border-color: rgba(20, 184, 166, 0.3); }
+
+    .secondary-clusters-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 11.5px;
+      margin-top: 0.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .cluster-tag {
+      font-size: 11px;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .cluster-tag:hover {
+      background: #e2e8f0;
+      color: var(--text);
+    }
+
+    .metrics-line {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .metrics-line-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .metrics-line-item strong {
+      color: var(--text);
+    }
+
+    /* Article Content Preview Card */
+    .article-preview-card {
+      background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       padding: 2rem;
@@ -273,158 +651,111 @@
       margin-bottom: 2rem;
     }
 
-    .workspace-header {
+    .article-card-header {
       display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
       justify-content: space-between;
-      gap: 1.25rem;
-      padding-bottom: 1.5rem;
+      align-items: center;
+      padding-bottom: 1.25rem;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 1.75rem;
-    }
-
-    .workspace-label {
-      font-size: 0.72rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #a855f7;
-      margin-bottom: 0.4rem;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .article-title-heading {
-      font-size: 1.55rem;
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.25;
-      letter-spacing: -0.015em;
-    }
-
-    .meta-bar {
-      display: flex;
+      margin-bottom: 1.5rem;
       flex-wrap: wrap;
-      align-items: center;
       gap: 0.75rem;
-      margin-top: 0.85rem;
-      font-size: 0.82rem;
-      color: var(--text-muted);
     }
 
-    .meta-chip {
-      padding: 0.2rem 0.65rem;
-      border-radius: 999px;
-      background: rgba(148, 163, 184, 0.08);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
+    .view-switcher-pill {
       display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .meta-chip a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .meta-chip a:hover { text-decoration: underline; }
-
-    .view-switcher {
-      display: flex;
-      background: var(--bg-surface);
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      padding: 0.25rem;
-      gap: 0.25rem;
+      padding: 0.2rem;
+      gap: 0.2rem;
     }
 
     .view-btn {
-      padding: 0.45rem 0.95rem;
+      padding: 0.35rem 0.8rem;
       border: none;
       background: transparent;
       color: var(--text-muted);
       font-family: var(--font-sans);
-      font-size: 0.82rem;
+      font-size: 11.5px;
       font-weight: 600;
       cursor: pointer;
       border-radius: var(--radius-sm);
       transition: var(--transition);
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
     }
 
-    .view-btn:hover { color: #fff; }
-
+    .view-btn:hover { color: var(--text); }
     .view-btn.active {
-      background: var(--purple-gradient);
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
+      background: var(--bg-surface);
+      color: var(--text);
+      box-shadow: var(--shadow-xs);
+      font-weight: 700;
     }
 
-    /* Rendered Article Typography */
+    /* Article Rendered Prose (Size 11-12pt / 15-16px for comfortable reading) */
     .article-rendered {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
-      font-family: var(--font-serif);
-      font-size: 1.15rem;
-      line-height: 1.75;
-      color: #e2e8f0;
+      font-family: var(--font-sans);
+      font-size: 15px; /* ~11.5pt */
+      line-height: 1.8;
+      color: var(--text-secondary);
     }
 
     .article-rendered h1, .article-rendered h2, .article-rendered h3 {
-      font-family: var(--font-sans);
-      color: #fff;
-      line-height: 1.25;
+      color: var(--text);
+      line-height: 1.3;
       margin: 2rem 0 1rem;
-      letter-spacing: -0.015em;
+      letter-spacing: -0.02em;
     }
 
-    .article-rendered h1 { font-size: 1.85rem; font-weight: 800; color: #fff; margin-top: 1rem; margin-bottom: 1.5rem; line-height: 1.25; }
-    .article-rendered h2 { font-size: 1.4rem; font-weight: 700; color: #f8fafc; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-top: 2.2rem; margin-bottom: 1rem; }
-    .article-rendered h3 { font-size: 1.15rem; font-weight: 600; color: #e2e8f0; margin-top: 1.8rem; margin-bottom: 0.75rem; }
+    .article-rendered h1 { font-size: 1.75rem; font-weight: 800; margin-top: 0.5rem; }
+    .article-rendered h2 { font-size: 1.3rem; font-weight: 700; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem; margin-top: 2rem; }
+    .article-rendered h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; }
 
     .article-rendered p { margin-bottom: 1.4rem; line-height: 1.8; }
-    .article-rendered strong { color: #fff; font-weight: 700; }
+    .article-rendered strong { color: var(--text); font-weight: 700; }
 
     .article-rendered blockquote {
-      border-left: 3px solid #c084fc;
-      background: rgba(192, 132, 252, 0.08);
-      padding: 0.9rem 1.3rem;
-      margin: 1.6rem 0;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-light);
+      padding: 0.9rem 1.25rem;
+      margin: 1.5rem 0;
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
       font-style: italic;
-      color: #f1f5f9;
-      font-family: var(--font-serif);
+      color: var(--text);
       line-height: 1.7;
     }
 
     .article-rendered pre {
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid var(--border);
+      background: #0f172a;
+      border: 1px solid #1e293b;
       border-radius: var(--radius-md);
       padding: 1rem 1.25rem;
       overflow-x: auto;
       margin: 1.5rem 0;
       font-family: var(--font-mono);
-      font-size: 0.88rem;
-    }
-
-    .article-rendered pre code {
-      background: transparent;
-      padding: 0;
+      font-size: 12.5px;
       color: #38bdf8;
     }
 
     .article-rendered code {
       font-family: var(--font-mono);
       font-size: 0.88em;
-      background: rgba(148, 163, 184, 0.12);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
       padding: 0.15em 0.4em;
       border-radius: 4px;
-      color: #bae6fd;
+      color: var(--accent);
+    }
+
+    .article-rendered pre code {
+      background: transparent;
+      border: none;
+      padding: 0;
     }
 
     .article-rendered a {
@@ -434,8 +765,8 @@
     }
 
     .article-rendered .cite-pill {
-      color: #38bdf8;
-      font-weight: 600;
+      color: var(--accent);
+      font-weight: 700;
       font-size: 0.82em;
       vertical-align: super;
       font-family: var(--font-mono);
@@ -443,17 +774,17 @@
     }
 
     .article-rendered ul, .article-rendered ol {
-      margin: 1rem 0 1.5rem 1.75rem;
+      margin: 1rem 0 1.5rem 1.5rem;
       padding-left: 0.5rem;
     }
 
-    .article-rendered li { margin-bottom: 0.6rem; line-height: 1.75; }
+    .article-rendered li { margin-bottom: 0.5rem; line-height: 1.75; }
 
     /* Markdown Editor View */
     .editor-container {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 0.85rem;
     }
 
     .editor-toolbar {
@@ -461,9 +792,9 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 0.75rem;
-      background: var(--bg-surface);
-      padding: 0.6rem 0.85rem;
+      gap: 0.6rem;
+      background: var(--bg-secondary);
+      padding: 0.5rem 0.75rem;
       border-radius: var(--radius-md);
       border: 1px solid var(--border);
     }
@@ -471,19 +802,19 @@
     .toolbar-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
+      gap: 0.35rem;
     }
 
     .markdown-textarea {
       width: 100%;
-      min-height: 520px;
+      min-height: 540px;
       padding: 1.25rem;
-      background: #0b1120;
+      background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      color: #f1f5f9;
+      color: var(--text);
       font-family: var(--font-mono);
-      font-size: 0.9rem;
+      font-size: 13px;
       line-height: 1.6;
       resize: vertical;
       outline: none;
@@ -499,7 +830,7 @@
     .suite-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.75rem;
+      gap: 1.5rem;
       margin-top: 1rem;
     }
 
@@ -508,41 +839,42 @@
     }
 
     .channel-card {
-      background: var(--bg-surface);
+      background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 1.5rem;
+      padding: 1.4rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      box-shadow: var(--shadow-sm);
     }
 
     .channel-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       padding-bottom: 0.75rem;
       border-bottom: 1px solid var(--border);
     }
 
     .channel-title {
-      font-size: 1rem;
+      font-size: 13.5px;
       font-weight: 700;
-      color: #fff;
+      color: var(--text);
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.45rem;
     }
 
     .channel-box {
-      background: #0b1120;
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      padding: 1.25rem;
-      font-size: 0.88rem;
+      padding: 1.15rem;
+      font-size: 13px;
       line-height: 1.6;
-      color: #cbd5e1;
+      color: var(--text);
       white-space: pre-wrap;
       font-family: var(--font-sans);
       max-height: 380px;
@@ -550,33 +882,32 @@
       margin-bottom: 1.25rem;
     }
 
-    /* Grid & Cards */
+    /* Grid & Cards for Verticals & Personas */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     .card {
       background: var(--bg-card);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 1.5rem;
+      padding: 1.35rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       transition: var(--transition);
+      box-shadow: var(--shadow-sm);
     }
 
     .card:hover {
-      border-color: rgba(56, 189, 248, 0.4);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-lg);
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
     }
 
-    .card-top { margin-bottom: 1.25rem; }
+    .card-top { margin-bottom: 1rem; }
 
     .card-header-row {
       display: flex;
@@ -587,17 +918,17 @@
     }
 
     .card-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text);
       line-height: 1.3;
     }
 
     .badge-id {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
-      padding: 0.15rem 0.5rem;
-      background: rgba(148, 163, 184, 0.1);
+      font-size: 11px;
+      padding: 0.15rem 0.45rem;
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       color: var(--text-muted);
@@ -611,132 +942,103 @@
     }
 
     .icon-btn {
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: var(--radius-sm);
-      background: rgba(148, 163, 184, 0.08);
-      border: 1px solid transparent;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
       color: var(--text-muted);
       cursor: pointer;
       transition: var(--transition);
+      font-size: 12px;
     }
 
     .icon-btn:hover {
-      background: rgba(56, 189, 248, 0.15);
-      color: var(--accent);
-      border-color: var(--tag-border);
+      background: #e2e8f0;
+      color: var(--text);
     }
 
     .icon-btn.danger:hover {
       background: var(--danger-bg);
       color: var(--danger);
-      border-color: rgba(239, 68, 68, 0.3);
+      border-color: var(--danger-border);
     }
 
     .cadence-box {
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      padding: 0.55rem 0.85rem;
-      background: rgba(15, 23, 42, 0.6);
+      padding: 0.5rem 0.75rem;
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
     }
 
-    .cadence-icon { color: var(--accent); font-size: 1rem; }
-    .cadence-text { font-size: 0.82rem; font-weight: 600; color: var(--text); }
-    .cadence-cron { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); }
+    .cadence-icon { color: var(--accent); font-size: 0.95rem; }
+    .cadence-text { font-size: 12px; font-weight: 600; color: var(--text); }
+    .cadence-cron { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); }
 
     .persona-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
-      font-size: 0.74rem;
+      font-size: 11px;
       font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(99, 102, 241, 0.15);
-      color: #a5b4fc;
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      margin-bottom: 1rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-pill);
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
     }
 
     .section-label {
-      font-size: 0.72rem;
+      font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--text-dim);
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.4rem;
       display: block;
     }
 
     .tag-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 1rem;
+      gap: 0.35rem;
+      margin-bottom: 0.85rem;
     }
 
     .tag {
-      font-size: 0.74rem;
-      padding: 0.2rem 0.55rem;
+      font-size: 11px;
+      padding: 0.15rem 0.45rem;
       border-radius: var(--radius-sm);
-      background: var(--tag-bg);
-      border: 1px solid var(--tag-border);
-      color: #bae6fd;
-      font-family: var(--font-mono);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
     }
 
     .angle-tag {
-      background: rgba(148, 163, 184, 0.07);
-      border: 1px solid rgba(148, 163, 184, 0.15);
+      background: #f8fafc;
+      color: #475569;
+    }
+
+    [data-theme="dark"] .angle-tag {
+      background: #1e293b;
       color: #cbd5e1;
-      font-family: var(--font-sans);
-      font-size: 0.76rem;
     }
 
-    /* Library List Modal */
-    .library-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 1.25rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      margin-bottom: 0.75rem;
-      transition: var(--transition);
-    }
-
-    .library-item:hover { border-color: var(--accent); }
-
-    .library-item-title {
-      font-weight: 700;
-      color: #fff;
-      font-size: 0.95rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .library-item-meta {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      display: flex;
-      gap: 0.75rem;
-    }
-
-    /* Modals */
+    /* Modals & Forms */
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.78);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
       display: none;
       align-items: center;
       justify-content: center;
@@ -747,52 +1049,51 @@
     .modal-backdrop.active { display: flex; }
 
     .modal {
-      background: #0f172a;
-      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       width: 100%;
       max-width: 680px;
       max-height: 88vh;
       overflow-y: auto;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
-      padding: 2rem;
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+      padding: 1.75rem;
     }
 
     .modal-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.85rem;
       border-bottom: 1px solid var(--border);
     }
 
-    .modal-header h2 { font-size: 1.25rem; font-weight: 800; color: #fff; }
+    .modal-header h2 { font-size: 1.2rem; font-weight: 800; color: var(--text); }
 
     .close-btn {
       background: transparent;
       border: none;
       color: var(--text-muted);
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       cursor: pointer;
       line-height: 1;
     }
-    .close-btn:hover { color: #fff; }
+    .close-btn:hover { color: var(--text); }
 
-    /* Forms */
-    .form-group { margin-bottom: 1.25rem; }
-    .form-label { display: block; font-size: 0.84rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text); }
-    .form-help { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.3rem; }
+    .form-group { margin-bottom: 1.15rem; }
+    .form-label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 0.35rem; color: var(--text); }
+    .form-help { font-size: 11px; color: var(--text-muted); margin-top: 0.25rem; }
 
     .form-input, .form-select, .form-textarea {
       width: 100%;
-      padding: 0.65rem 0.9rem;
-      background: rgba(15, 23, 42, 0.9);
+      padding: 0.55rem 0.8rem;
+      background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      color: #fff;
+      color: var(--text);
       font-family: var(--font-sans);
-      font-size: 0.88rem;
+      font-size: 13px;
       outline: none;
       transition: var(--transition);
     }
@@ -802,60 +1103,55 @@
       box-shadow: 0 0 0 3px var(--accent-glow);
     }
 
-    .preset-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.45rem; }
+    .preset-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.4rem; }
     .preset-chip {
-      font-size: 0.72rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(148, 163, 184, 0.1);
+      font-size: 11px;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-pill);
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
-      color: var(--text-muted);
+      color: var(--text-secondary);
       cursor: pointer;
       transition: var(--transition);
     }
     .preset-chip:hover {
-      background: var(--tag-bg);
-      color: var(--accent);
-      border-color: var(--tag-border);
+      background: #e0f2fe;
+      color: #0369a1;
+      border-color: #bae6fd;
     }
 
     .tag-input-box {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      padding: 0.5rem;
-      background: rgba(15, 23, 42, 0.9);
+      gap: 0.35rem;
+      padding: 0.45rem;
+      background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      min-height: 44px;
+      min-height: 42px;
       align-items: center;
-    }
-
-    .tag-input-box:focus-within {
-      border-color: var(--border-focus);
-      box-shadow: 0 0 0 3px var(--accent-glow);
     }
 
     .chip-item {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
-      font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
-      background: var(--tag-bg);
-      border: 1px solid var(--tag-border);
+      gap: 0.3rem;
+      font-size: 11px;
+      padding: 0.15rem 0.45rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
       border-radius: var(--radius-sm);
-      color: #bae6fd;
+      color: var(--text);
     }
 
     .chip-item button {
       background: none;
       border: none;
-      color: #93c5fd;
+      color: var(--text-muted);
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
-    .chip-item button:hover { color: #fff; }
+    .chip-item button:hover { color: var(--danger); }
 
     .tag-text-input {
       flex: 1;
@@ -863,19 +1159,49 @@
       background: transparent;
       border: none;
       outline: none;
-      color: #fff;
+      color: var(--text);
       font-family: var(--font-sans);
-      font-size: 0.85rem;
+      font-size: 12.5px;
       padding: 0.2rem;
     }
 
     .modal-actions {
       display: flex;
       justify-content: flex-end;
-      gap: 0.75rem;
-      margin-top: 1.75rem;
-      padding-top: 1.25rem;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
       border-top: 1px solid var(--border);
+    }
+
+    /* Library Modal */
+    .library-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.6rem;
+      transition: var(--transition);
+    }
+
+    .library-item:hover { border-color: var(--accent); background: var(--bg-card-hover); }
+
+    .library-item-title {
+      font-weight: 700;
+      color: var(--text);
+      font-size: 13.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .library-item-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      gap: 0.6rem;
     }
 
     /* Toast */
@@ -883,28 +1209,28 @@
       position: fixed;
       bottom: 2rem;
       right: 2rem;
-      padding: 0.85rem 1.35rem;
+      padding: 0.75rem 1.25rem;
       border-radius: var(--radius-md);
-      background: #1e293b;
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      color: #fff;
-      font-size: 0.88rem;
-      font-weight: 500;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
       z-index: 2000;
       display: flex;
       align-items: center;
-      gap: 0.65rem;
+      gap: 0.55rem;
       transform: translateY(100px);
       opacity: 0;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .toast.show { transform: translateY(0); opacity: 1; }
-    .toast.success { border-color: var(--success); }
-    .toast.error { border-color: var(--danger); }
+    .toast.success { border-left: 4px solid var(--success); }
+    .toast.error { border-left: 4px solid var(--danger); }
 
-    /* SEO Content Machine & Growth OS Styles */
+    /* SEO Metrics Grid */
     .seo-metrics-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -912,62 +1238,53 @@
       margin-bottom: 1.5rem;
     }
     .seo-metric-card {
-      background: var(--bg-surface);
+      background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      padding: 1.25rem 1.25rem;
-      position: relative;
-      overflow: hidden;
+      padding: 1.15rem;
+      box-shadow: var(--shadow-xs);
     }
-    .seo-metric-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--purple-gradient);
-    }
-    .seo-metric-card.cyan::before { background: linear-gradient(90deg, #38bdf8, #2563eb); }
-    .seo-metric-card.emerald::before { background: linear-gradient(90deg, #10b981, #059669); }
-    .seo-metric-card.amber::before { background: linear-gradient(90deg, #f59e0b, #d97706); }
     .seo-metric-val {
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      color: #fff;
-      margin-top: 0.25rem;
+      color: var(--text);
+      margin-top: 0.2rem;
     }
     .seo-metric-lbl {
-      font-size: 0.75rem;
+      font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      color: var(--text-dim);
+      color: var(--text-muted);
     }
     .seo-subnav {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 0.75rem;
+      padding-bottom: 0.6rem;
     }
     .seo-subnav-btn {
-      padding: 0.45rem 0.95rem;
+      padding: 0.4rem 0.85rem;
       border-radius: var(--radius-sm);
       background: var(--bg-surface);
       border: 1px solid var(--border);
       color: var(--text-muted);
-      font-size: 0.82rem;
+      font-size: 12px;
       font-weight: 600;
       cursor: pointer;
       transition: var(--transition);
     }
-    .seo-subnav-btn:hover { color: #fff; border-color: rgba(56, 189, 248, 0.4); }
+    .seo-subnav-btn:hover { color: var(--text); }
     .seo-subnav-btn.active {
-      background: var(--tag-bg);
-      border-color: var(--accent);
-      color: var(--accent);
+      background: #e0f2fe;
+      border-color: #bae6fd;
+      color: #0369a1;
+      font-weight: 700;
     }
+
     .gsc-table-wrapper {
       overflow-x: auto;
       border: 1px solid var(--border);
@@ -978,400 +1295,72 @@
       width: 100%;
       border-collapse: collapse;
       text-align: left;
-      font-size: 0.85rem;
+      font-size: 12.5px;
     }
     .gsc-table th {
-      background: rgba(15, 23, 42, 0.95);
-      padding: 0.85rem 1rem;
+      background: var(--bg-secondary);
+      padding: 0.75rem 0.9rem;
       font-weight: 700;
       color: var(--text-muted);
       border-bottom: 1px solid var(--border);
       text-transform: uppercase;
-      font-size: 0.72rem;
+      font-size: 10.5px;
       letter-spacing: 0.05em;
     }
     .gsc-table td {
-      padding: 0.85rem 1rem;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+      padding: 0.75rem 0.9rem;
+      border-bottom: 1px solid var(--border-subtle);
       vertical-align: middle;
+      color: var(--text-secondary);
     }
-    .gsc-table tr:hover { background: rgba(56, 189, 248, 0.04); }
+    .gsc-table tr:hover { background: var(--bg-card-hover); }
+
     .pos-badge {
       display: inline-flex;
-      padding: 0.2rem 0.55rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-pill);
+      font-size: 11px;
       font-weight: 700;
     }
-    .pos-badge.striking { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
-    .pos-badge.top10 { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-    .pos-badge.longtail { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .pos-badge.striking { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .pos-badge.top10 { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+    .pos-badge.longtail { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+
     .growth-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.25rem;
-      padding: 0.15rem 0.45rem;
+      gap: 0.2rem;
+      padding: 0.15rem 0.4rem;
       border-radius: 4px;
-      font-size: 0.75rem;
+      font-size: 11px;
       font-weight: 700;
-      background: rgba(16, 185, 129, 0.12);
-      color: #10b981;
+      background: #ecfdf5;
+      color: #065f46;
     }
-    .score-bar-bg {
-      width: 60px;
-      height: 6px;
-      background: rgba(148, 163, 184, 0.2);
-      border-radius: 3px;
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 0.4rem;
-    }
-    .score-bar-fill { height: 100%; background: linear-gradient(90deg, #38bdf8, #8b5cf6); border-radius: 3px; }
-    .growth-split-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-    @media (max-width: 900px) { .growth-split-grid { grid-template-columns: 1fr; } }
-    .growth-editor-box {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-    }
+
     .growth-textarea {
       width: 100%;
       min-height: 420px;
-      background: #090d16;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      color: #f8fafc;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      padding: 1rem;
-      line-height: 1.6;
-      resize: vertical;
-    }
-    .growth-textarea:focus { outline: none; border-color: var(--accent); }
-    .serp-preview-card {
-      background: #202124;
-      border: 1px solid #3c4043;
-      border-radius: 12px;
-      padding: 1.25rem;
-      font-family: Arial, sans-serif;
-      max-width: 650px;
-      margin-bottom: 1.5rem;
-    }
-    .serp-url-line {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.85rem;
-      color: #bdc1c6;
-      margin-bottom: 0.35rem;
-    }
-    .serp-favicon {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: #38bdf8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10px;
-      font-weight: bold;
-      color: #000;
-    }
-    .serp-title-line {
-      color: #8ab4f8;
-      font-size: 1.25rem;
-      line-height: 1.3;
-      font-weight: 400;
-      margin-bottom: 0.35rem;
-      cursor: pointer;
-    }
-    .serp-title-line:hover { text-decoration: underline; }
-    .serp-desc-line {
-      color: #bdc1c6;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-    .schema-viewer-pre {
-      background: #090d16;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: #a5f3fc;
-      overflow: auto;
-      max-height: 380px;
-    }
-    .d4s-cluster-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 0.75rem;
-      margin-top: 1rem;
-    }
-    .d4s-cluster-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
-      padding: 0.75rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    /* Keyword Visualization Showcase Card */
-    .keyword-showcase-card {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85));
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      border-radius: var(--radius-lg);
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 1.75rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .keyword-showcase-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc, #34d399);
-    }
-
-    .keyword-showcase-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
-    }
-
-    .keyword-primary-wrapper {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .keyword-showcase-label {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.72rem;
-      font-weight: 800;
-      color: #38bdf8;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 0.35rem;
-    }
-
-    .keyword-live-badge {
-      font-size: 0.68rem;
-      font-weight: 600;
-      padding: 0.1rem 0.45rem;
-      border-radius: 999px;
-      background: rgba(56, 189, 248, 0.15);
-      color: #7dd3fc;
-      border: 1px solid rgba(56, 189, 248, 0.3);
-    }
-
-    .primary-keyword-display {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-    }
-
-    .primary-kw-text {
+      color: var(--text);
       font-family: var(--font-mono);
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #fff;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      padding: 0.3rem 0.75rem;
-      border-radius: var(--radius-sm);
-      letter-spacing: -0.01em;
-      text-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+      font-size: 12px;
+      padding: 0.85rem;
+      line-height: 1.6;
+      resize: vertical;
     }
 
-    .icon-btn-subtle {
-      background: rgba(148, 163, 184, 0.1);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-      cursor: pointer;
-      padding: 0.3rem 0.5rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.85rem;
-      transition: var(--transition);
-    }
-    .icon-btn-subtle:hover {
-      background: rgba(56, 189, 248, 0.2);
-      color: #fff;
-      border-color: rgba(56, 189, 248, 0.4);
-    }
-
-    .keyword-metrics-strip {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-    }
-
-    .kw-metric-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 0.35rem 0.75rem;
-      font-size: 0.8rem;
-    }
-
-    .kw-metric-name { color: var(--text-muted); font-size: 0.75rem; }
-    .kw-metric-val { color: #f8fafc; font-weight: 700; }
-
-    .keyword-secondary-section {
-      margin-top: 1rem;
-    }
-
-    .keyword-secondary-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.6rem;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .secondary-keywords-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .secondary-kw-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: rgba(30, 41, 59, 0.7);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 0.35rem 0.7rem;
-      font-size: 0.8rem;
-      color: #cbd5e1;
-      transition: var(--transition);
-      cursor: pointer;
-    }
-
-    .secondary-kw-chip:hover {
-      border-color: rgba(168, 85, 247, 0.5);
-      background: rgba(168, 85, 247, 0.12);
-      color: #fff;
-      transform: translateY(-1px);
-    }
-
-    .kw-occurrence-pill {
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 0.1rem 0.35rem;
-      border-radius: 4px;
-      font-family: var(--font-mono);
-    }
-
-    .kw-occurrence-pill.present {
-      background: rgba(52, 211, 153, 0.2);
-      color: #34d399;
-      border: 1px solid rgba(52, 211, 153, 0.3);
-    }
-
-    .kw-occurrence-pill.missing {
-      background: rgba(245, 158, 11, 0.15);
-      color: #fbbf24;
-      border: 1px solid rgba(245, 158, 11, 0.25);
-    }
-
-    /* Editorial SEO Brief in Rendered View */
-    .editorial-seo-brief {
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      border-radius: var(--radius-md);
-      padding: 1.15rem 1.4rem;
-      margin-bottom: 2rem;
-      font-family: var(--font-sans);
-    }
-
-    .editorial-brief-title {
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #38bdf8;
-      margin-bottom: 0.6rem;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    /* Library Keyword Badges */
-    .library-keyword-row {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 0.4rem;
-      flex-wrap: wrap;
-    }
-
-    .library-kw-badge {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 600;
-      background: rgba(56, 189, 248, 0.12);
-      color: #38bdf8;
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      padding: 0.15rem 0.5rem;
-      border-radius: var(--radius-sm);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .library-clusters-pill {
-      font-size: 0.72rem;
-      background: rgba(168, 85, 247, 0.12);
-      color: #c084fc;
-      border: 1px solid rgba(168, 85, 247, 0.25);
-      padding: 0.1rem 0.45rem;
-      border-radius: var(--radius-sm);
-    }
-
-    .library-vol-pill {
-      font-size: 0.72rem;
-      background: rgba(52, 211, 153, 0.12);
-      color: #34d399;
-      border: 1px solid rgba(52, 211, 153, 0.25);
-      padding: 0.1rem 0.45rem;
-      border-radius: var(--radius-sm);
-    }
-
-    .tab-pane { display: none; animation: fadeIn 0.2s ease-out; }
+    .tab-pane { display: none; animation: fadeIn 0.15s ease-out; }
     .tab-pane.active { display: block; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- Header -->
+  <!-- Top Navigation Header (Organized, No Duplicates) -->
   <header>
     <div class="brand">
       <div class="brand-logo">PF</div>
@@ -1381,134 +1370,150 @@
           PressFlow
           <div class="status-pill" id="storageStatusPill">
             <div class="status-dot"></div>
-            <span id="storageLabel">Supabase Connected</span>
+            <span id="storageLabel">✓ Supabase Connected</span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="header-actions">
-      <button class="btn btn-purple btn-sm" id="btnGenerateSuite">
+      <button class="btn btn-accent" id="btnGenerateSuite">
         ⚡ Generate Suite
       </button>
 
-      <button class="btn btn-secondary btn-sm" id="btnOpenLibrary">
-        📖 Library (<span id="libraryCount">0</span>)
+      <button class="btn btn-secondary" id="btnOpenLibrary">
+        📖 Library ( <span id="libraryCount">0</span> )
       </button>
 
-      <button class="btn btn-secondary btn-sm" id="btnLoadSample">
-        🧪 Load Sample
+      <button class="btn btn-secondary" id="btnLoadSample">
+        🖊️ Load Sample
       </button>
 
-      <button class="btn btn-primary btn-sm" id="btnToggleSettings">
-        ⚙️ Verticals Settings
+      <button class="theme-toggle-btn" id="btnToggleTheme" title="Toggle Light / Dark Mode">
+        ☀️
       </button>
     </div>
   </header>
 
-  <!-- Navigation Tabs -->
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
-      ✍️ Source Article Workspace
-    </button>
-    <button class="tab-btn" data-tab="tab-seo" id="tabSeoBtn">
-      ⚡ SEO Content Machine <span class="badge-count" id="seoOpportunitiesCount">12</span>
-    </button>
-    <button class="tab-btn" data-tab="tab-suite" id="tabSuiteBtn">
-      💼 Multi-Channel Suite
-    </button>
-    <button class="tab-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
-      ⚙️ Verticals & Radar Settings <span class="badge-count" id="verticalsCount">0</span>
-    </button>
-    <button class="tab-btn" data-tab="tab-personas" id="tabPersonasBtn">
-      👥 Target Personas <span class="badge-count" id="personasCount">0</span>
-    </button>
-    <button class="tab-btn" data-tab="tab-fleet" id="tabFleetBtn">
-      📡 Fleet & Cron Controls
-    </button>
+  <!-- Segmented Navigation Tabs -->
+  <div class="tabs-wrapper">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
+        ✍️ Source Article Workspace
+      </button>
+      <button class="tab-btn" data-tab="tab-seo" id="tabSeoBtn">
+        ⚡ SEO Content Machine <span class="badge-count" id="seoOpportunitiesCount">12</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-suite" id="tabSuiteBtn">
+        🗂️ Multi-channel Suite
+      </button>
+      <button class="tab-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
+        ⚙️ Verticals &amp; Radar Settings <span class="badge-count" id="verticalsCount">8</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-personas" id="tabPersonasBtn">
+        👥 Target Personas <span class="badge-count" id="personasCount">8</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-fleet" id="tabFleetBtn">
+        🛰️ Fleet &amp; Cron Controls
+      </button>
+    </div>
   </div>
 
   <!-- TAB 1: Source Article Workspace -->
   <div class="tab-pane active" id="tab-workspace">
-    <div class="workspace-card">
-      <div class="workspace-header">
+    <!-- Hero Article Card (Headline + Clean Metadata Pills) -->
+    <div class="hero-article-card">
+      <div class="hero-top-row">
         <div style="flex: 1; min-width: 300px;">
-          <div class="workspace-label">📄 SOURCE ARTICLE WORKSPACE</div>
-          <div class="article-title-heading" id="currentArticleTitle">
-            The 2026 QBI Tax Misconception: Why 23% Underfunds Your Estimated Tax
-          </div>
-          <div class="meta-bar">
-            <span class="meta-chip">⏱️ <span id="currentWordCount">836</span> words (~<span id="currentReadTime">4</span> min read)</span>
-            <span class="meta-chip">🔗 <a href="#" id="currentArticleLink" target="_blank">https://pressflow.aichieve.net/posts/qbi-tax-misconception</a></span>
-            <span class="meta-chip">#Tax</span>
-            <span class="meta-chip">#Accounting</span>
-            <span class="meta-chip">#SmallBusiness</span>
-          </div>
+          <h1 class="article-title-heading" id="currentArticleTitle">
+            Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.
+          </h1>
         </div>
 
-        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.6rem;">
-          <div class="view-switcher">
-            <button class="view-btn active" id="viewRenderedBtn">
-              👁️ Rendered View
-            </button>
-            <button class="view-btn" id="viewEditBtn">
-              ✏️ Edit Markdown
-            </button>
+        <div class="hero-actions">
+          <div class="view-switcher-pill">
+            <button class="view-btn active" id="viewRenderedBtn">👁️ Rendered</button>
+            <button class="view-btn" id="viewEditBtn">✏️ Edit</button>
           </div>
-
-          <button class="btn btn-danger btn-sm" id="btnDeleteCurrentArticle" title="Delete current draft">
-            🗑️ Delete Article
-          </button>
+          <button class="icon-btn danger" id="btnDeleteCurrentArticle" title="Delete current draft">🗑️</button>
         </div>
       </div>
 
-      <!-- Selected Keywords & SEO Intelligence Bar -->
-      <div id="articleKeywordsCard" class="keyword-showcase-card">
-        <div class="keyword-showcase-top">
-          <div class="keyword-primary-wrapper">
-            <div class="keyword-showcase-label">
-              <span>🎯 TARGET PRIMARY KEYWORD</span>
-              <span class="keyword-live-badge" id="kwLiveStatusBadge">SEO Calibrated</span>
-            </div>
-            <div class="primary-keyword-display">
-              <span class="primary-kw-text" id="kwPrimaryText">mcp server implementation python</span>
-              <button class="icon-btn-subtle" id="btnCopyPrimaryKw" title="Copy Primary Keyword">📋 Copy</button>
-            </div>
-          </div>
+      <div class="meta-pills-row">
+        <span class="clean-pill">
+          🗄️ <span id="currentWordCount">1752</span> words (~ <span id="currentReadTime">8</span> min read)
+        </span>
+        <span class="clean-pill">
+          🔗 <a href="#" id="currentArticleLink" target="_blank">https://pressflow.aichieve.net/posts/2026-09-09_279b-nvidia-memory-bottleneck</a>
+        </span>
+        <span class="tag-pill">#Tax</span>
+        <span class="tag-pill">#Accounting</span>
+        <span class="tag-pill">#SmallBusiness</span>
+      </div>
+    </div>
 
-          <div class="keyword-metrics-strip" id="kwMetricsStrip">
-            <div class="kw-metric-pill" id="kwVolPill">
-              <span class="kw-metric-icon">📊</span>
-              <span class="kw-metric-name">Volume:</span>
-              <span class="kw-metric-val" id="kwVolVal">6,500 / mo</span>
-            </div>
-            <div class="kw-metric-pill" id="kwIntentPill">
-              <span class="kw-metric-icon">⚡</span>
-              <span class="kw-metric-name">Intent:</span>
-              <span class="kw-metric-val" id="kwIntentVal">informational</span>
-            </div>
-            <div class="kw-metric-pill" id="kwPersonaPill">
-              <span class="kw-metric-icon">👤</span>
-              <span class="kw-metric-name">Persona:</span>
-              <span class="kw-metric-val" id="kwPersonaVal">eng_leader</span>
-            </div>
-          </div>
+    <!-- SEO Target Architecture & Performance (2-Card Clean Grid) -->
+    <div class="section-header-title">
+      SEO Target Architecture &amp; Performance
+    </div>
+
+    <div class="seo-target-grid" id="articleKeywordsCard">
+      <!-- Left Card: Primary & Secondary SEO Targets -->
+      <div class="seo-box-card">
+        <span class="seo-box-label">Primary &amp; Secondary SEO Targets</span>
+
+        <div class="primary-query-row">
+          <span>Primary Target Query:</span>
+          <span class="primary-query-title" id="kwPrimaryText">GPU memory bandwidth</span>
+          <button class="copy-pill-btn" id="btnCopyPrimaryKw" title="Copy Primary Keyword">📋 Copy</button>
         </div>
 
-        <div class="keyword-secondary-section" id="kwSecondarySection">
-          <div class="keyword-secondary-header">
-            <span style="font-size: 0.78rem; font-weight: 700; color: #94a3b8; letter-spacing: 0.05em; text-transform: uppercase;">
-              🧩 Selected Secondary Clusters &amp; Semantic Entities (<span id="kwSecondaryCount">0</span>)
-            </span>
-            <span style="font-size: 0.75rem; color: #38bdf8;" id="kwCoverageSummary">Coverage: calculating...</span>
-          </div>
-          <div class="secondary-keywords-chips" id="kwSecondaryChips">
-            <!-- Populated dynamically via JS -->
+        <div class="badges-strip">
+          <span class="badge-intent" id="kwIntentBadge">⚡ Intent: <span id="kwIntentVal">INFORMATIONAL</span></span>
+          <span class="badge-persona" id="kwPersonaBadge">👤 Persona: <span id="kwPersonaVal">infra_engineer</span></span>
+          <span class="badge-calibrated" id="kwLiveStatusBadge">#SEO CALIBRATED</span>
+        </div>
+
+        <div class="secondary-clusters-row" id="kwSecondarySection">
+          <span style="color: var(--text-muted); font-weight: 600;">Secondary clusters:</span>
+          <div id="kwSecondaryChips" style="display: inline-flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="cluster-tag">🏷️ HBM memory bandwidth</span>
+            <span class="cluster-tag">🏷️ AI inference bottleneck</span>
+            <span class="cluster-tag">🏷️ Nvidia H100 H200 supply</span>
           </div>
         </div>
       </div>
 
-      <!-- Rendered View -->
+      <!-- Right Card: Target Keyword Performance Metrics -->
+      <div class="seo-box-card">
+        <span class="seo-box-label">Target Keyword Performance Metrics</span>
+
+        <div class="metrics-line">
+          <div class="metrics-line-item">
+            <span>Metrics for Primary Keyword:</span>
+            <strong id="kwMetricsTitle">GPU memory bandwidth</strong>
+          </div>
+          <div class="metrics-line-item">
+            <span>Volume:</span>
+            <strong id="kwVolVal">N/A</strong>
+          </div>
+          <div class="metrics-line-item">
+            <span>Keyword Difficulty:</span>
+            <strong id="kwKdVal">TBD</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Content Preview Card -->
+    <div class="article-preview-card">
+      <div class="article-card-header">
+        <span style="font-size: 13.5px; font-weight: 800; color: var(--text); text-transform: uppercase; letter-spacing: 0.04em;">
+          Article Content Preview (Markdown)
+        </span>
+      </div>
+
+      <!-- Rendered Prose View (Font Size 11-12pt / 15-16px) -->
       <div id="renderedArticleContainer" class="article-rendered"></div>
 
       <!-- Markdown Editor View -->
@@ -1522,9 +1527,7 @@
             <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tldr -->\n- ')">+ TL;DR</button>
             <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- linkedin -->\n')">+ LinkedIn</button>
           </div>
-          <div style="display: flex; gap: 0.5rem;">
-            <button class="btn btn-primary btn-sm" id="btnSaveDraft">💾 Save Draft</button>
-          </div>
+          <button class="btn btn-primary btn-sm" id="btnSaveDraft">💾 Save Draft</button>
         </div>
 
         <textarea class="markdown-textarea" id="markdownEditor" placeholder="Enter full markdown draft with sections and sources..."></textarea>
@@ -1532,21 +1535,21 @@
     </div>
   </div>
 
-  <!-- TAB: SEO Content Machine & Growth OS -->
+  <!-- TAB 2: SEO Content Machine & Growth OS -->
   <div class="tab-pane" id="tab-seo">
-    <div class="workspace-card">
-      <div class="workspace-header">
-        <div style="flex: 1; min-width: 300px;">
-          <div class="workspace-label">⚡ SEO CONTENT MACHINE & GROWTH OS STUDIO</div>
-          <div class="article-title-heading">
-            Demand-Driven Editorial Intelligence & Ranking Engine
-          </div>
-          <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 0.35rem;">
+    <div class="hero-article-card" style="margin-bottom: 1.5rem;">
+      <div class="hero-top-row">
+        <div>
+          <div class="brand-subtitle">SEO Content Machine &amp; Growth OS Studio</div>
+          <h2 class="article-title-heading" style="font-size: 1.35rem;">
+            Demand-Driven Editorial Intelligence &amp; Ranking Engine
+          </h2>
+          <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 0.35rem;">
             [GSC Query Spikes] ──&gt; [DataForSEO Enriched SERP] ──&gt; [Growth OS Taste Moat] ──&gt; [Structured Draft &amp; Schema] ──&gt; [@Simon approve Gate]
           </p>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
           <button class="btn btn-purple btn-sm" id="btnRunSeoPipelineModal">
             🚀 Run SEO Machine
           </button>
@@ -1555,325 +1558,283 @@
           </button>
         </div>
       </div>
+    </div>
 
-      <!-- Live SEO Metrics Strip -->
-      <div class="seo-metrics-grid">
-        <div class="seo-metric-card cyan">
-          <div class="seo-metric-lbl">High-Impression Striking Queries</div>
-          <div class="seo-metric-val" id="kpiStrikingCount">12</div>
-          <div style="font-size: 0.72rem; color: #38bdf8; margin-top: 0.2rem;">Avg Position 8.0 – 25.0</div>
+    <!-- Live SEO Metrics Strip -->
+    <div class="seo-metrics-grid">
+      <div class="seo-metric-card">
+        <div class="seo-metric-lbl">High-Impression Striking Queries</div>
+        <div class="seo-metric-val" id="kpiStrikingCount">12</div>
+        <div style="font-size: 11px; color: var(--accent); margin-top: 0.2rem;">Avg Position 8.0 – 25.0</div>
+      </div>
+
+      <div class="seo-metric-card">
+        <div class="seo-metric-lbl">Emerging Query Spikes</div>
+        <div class="seo-metric-val" id="kpiSpikeCount">8</div>
+        <div style="font-size: 11px; color: var(--success); margin-top: 0.2rem;">&gt; +50% Week-over-Week</div>
+      </div>
+
+      <div class="seo-metric-card">
+        <div class="seo-metric-lbl">Tracked SERP Top 10 Wins</div>
+        <div class="seo-metric-val" id="kpiTop10Count">3</div>
+        <div style="font-size: 11px; color: var(--warning); margin-top: 0.2rem;">+18.2 avg rank trajectory</div>
+      </div>
+
+      <div class="seo-metric-card">
+        <div class="seo-metric-lbl">Growth OS Taste Moat</div>
+        <div class="seo-metric-val" style="color: var(--purple);">Active</div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.2rem;">Founder Voice &amp; Customer Truth</div>
+      </div>
+    </div>
+
+    <!-- SEO Sub-Navigation -->
+    <div class="seo-subnav">
+      <button class="seo-subnav-btn active" data-sub="sub-gsc" id="btnSubGsc">
+        📈 GSC Opportunity Radar (<span id="gscSubCount">12</span>)
+      </button>
+      <button class="seo-subnav-btn" data-sub="sub-dataforseo" id="btnSubDataForSEO">
+        🔍 DataForSEO Keyword &amp; SERP Explorer
+      </button>
+      <button class="seo-subnav-btn" data-sub="sub-growth-os" id="btnSubGrowthOs">
+        🧠 Growth OS Knowledge (Founder Voice &amp; Customer Truth)
+      </button>
+      <button class="seo-subnav-btn" data-sub="sub-cannibalization" id="btnSubCannibalization">
+        🛡️ Sitemap &amp; Cannibalization Shield
+      </button>
+      <button class="seo-subnav-btn" data-sub="sub-serp-preview" id="btnSubSerpPreview">
+        🏷️ Google SERP Snippet &amp; Schema Inspector
+      </button>
+      <button class="seo-subnav-btn" data-sub="sub-performance" id="btnSubPerformance">
+        📊 Ranking Performance Loop
+      </button>
+    </div>
+
+    <!-- SUB-PANE 1: GSC Opportunity Radar -->
+    <div class="seo-subpane" id="sub-gsc">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
+        <div style="display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;">
+          <select class="form-select" id="filterGscVertical" style="padding: 0.4rem 0.8rem; font-size: 12px; width: auto;">
+            <option value="all">All Verticals (All 8 Niches)</option>
+            <option value="agentic_ai">Agentic Runtime &amp; Architecture</option>
+            <option value="ai_observability_qa">Observability, Evals &amp; Quality</option>
+            <option value="agentic_resilience_failure">Resilience &amp; Failure Engineering</option>
+            <option value="enterprise_ai_governance">Enterprise Enablement &amp; Agent Security</option>
+            <option value="enterprise_tech_leadership">Enterprise Tech &amp; Architecture</option>
+            <option value="gpu_hardware">GPUs &amp; AI Hardware</option>
+            <option value="supply_chain">Supply Chain &amp; Logistics Tech</option>
+            <option value="home_systems_reno">Home Systems &amp; Building Science</option>
+          </select>
+
+          <span style="font-size: 11.5px; color: var(--text-muted);">
+            Threshold: <strong>Impr &gt; 500</strong> | <strong>Pos 8–25</strong> | <strong>WoW &gt; 50%</strong>
+          </span>
         </div>
 
-        <div class="seo-metric-card emerald">
-          <div class="seo-metric-lbl">Emerging Query Spikes</div>
-          <div class="seo-metric-val" id="kpiSpikeCount">8</div>
-          <div style="font-size: 0.72rem; color: #34d399; margin-top: 0.2rem;">&gt; +50% Week-over-Week</div>
-        </div>
-
-        <div class="seo-metric-card amber">
-          <div class="seo-metric-lbl">Tracked SERP Top 10 Wins</div>
-          <div class="seo-metric-val" id="kpiTop10Count">3</div>
-          <div style="font-size: 0.72rem; color: #fbbf24; margin-top: 0.2rem;">+18.2 avg rank trajectory</div>
-        </div>
-
-        <div class="seo-metric-card">
-          <div class="seo-metric-lbl">Growth OS Taste Moat</div>
-          <div class="seo-metric-val" style="color: #c084fc;">Active</div>
-          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">Founder Voice &amp; Customer Truth</div>
+        <div style="font-size: 11px; color: var(--text-dim);" id="gscUpdatedLabel">
+          Dataset: Last 28 Days Analytics
         </div>
       </div>
 
-      <!-- SEO Sub-Navigation -->
-      <div class="seo-subnav">
-        <button class="seo-subnav-btn active" data-sub="sub-gsc" id="btnSubGsc">
-          📈 GSC Opportunity Radar (<span id="gscSubCount">12</span>)
-        </button>
-        <button class="seo-subnav-btn" data-sub="sub-dataforseo" id="btnSubDataForSEO">
-          🔍 DataForSEO Keyword &amp; SERP Explorer
-        </button>
-        <button class="seo-subnav-btn" data-sub="sub-growth-os" id="btnSubGrowthOs">
-          🧠 Growth OS Knowledge (Founder Voice &amp; Customer Truth)
-        </button>
-        <button class="seo-subnav-btn" data-sub="sub-cannibalization" id="btnSubCannibalization">
-          🛡️ Sitemap &amp; Cannibalization Shield
-        </button>
-        <button class="seo-subnav-btn" data-sub="sub-serp-preview" id="btnSubSerpPreview">
-          🏷️ Google SERP Snippet &amp; Schema Inspector
-        </button>
-        <button class="seo-subnav-btn" data-sub="sub-performance" id="btnSubPerformance">
-          📊 Ranking Performance Loop
+      <div class="gsc-table-wrapper">
+        <table class="gsc-table" id="gscTable">
+          <thead>
+            <tr>
+              <th>Target Query</th>
+              <th>Vertical</th>
+              <th>Impressions</th>
+              <th>Clicks</th>
+              <th>CTR</th>
+              <th>Avg Pos</th>
+              <th>WoW Spike</th>
+              <th>Intent</th>
+              <th>Opp Score</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="gscTableBody">
+            <tr>
+              <td colspan="10" style="text-align: center; padding: 2rem; color: var(--text-dim);">
+                Loading GSC query opportunities...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SUB-PANE 2: DataForSEO Explorer -->
+    <div class="seo-subpane" id="sub-dataforseo" style="display: none;">
+      <div style="display: flex; gap: 0.6rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+        <input type="text" id="d4sKeywordInput" class="form-input" style="flex: 1; min-width: 300px;" placeholder="Enter any seed keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
+        <button class="btn btn-primary" id="btnD4sEnrich">
+          🔍 Enrich via DataForSEO
         </button>
       </div>
 
-      <!-- SUB-PANE 1: GSC Opportunity Radar -->
-      <div class="seo-subpane" id="sub-gsc">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
-          <div style="display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;">
-            <select class="form-select" id="filterGscVertical" style="padding: 0.4rem 0.8rem; font-size: 0.82rem; width: auto; background: var(--bg-surface); border: 1px solid var(--border); color: #fff; border-radius: var(--radius-sm);">
-              <option value="all">All Verticals (All 5 Niches)</option>
-              <option value="agentic_ai">Agentic Automation &amp; Architecture</option>
-              <option value="enterprise_tech_leadership">Enterprise Tech &amp; Architecture</option>
-              <option value="gpu_hardware">GPUs &amp; AI Hardware</option>
-              <option value="supply_chain">Supply Chain &amp; Logistics Tech</option>
-              <option value="home_systems_reno">Home Systems &amp; Electrification</option>
-            </select>
+      <div id="d4sResultsBox">
+        <div class="seo-metrics-grid" style="margin-bottom: 1.25rem;">
+          <div class="seo-metric-card">
+            <div class="seo-metric-lbl">Monthly Search Volume</div>
+            <div class="seo-metric-val" id="d4sVol">3,100</div>
+            <div style="font-size: 11px; color: var(--text-muted);">US/Global Queries/mo</div>
+          </div>
+          <div class="seo-metric-card">
+            <div class="seo-metric-lbl">Estimated CPC</div>
+            <div class="seo-metric-val" id="d4sCpc">$2.80</div>
+            <div style="font-size: 11px; color: var(--text-muted);">Commercial Value Indicator</div>
+          </div>
+          <div class="seo-metric-card">
+            <div class="seo-metric-lbl">Keyword Difficulty (KD)</div>
+            <div class="seo-metric-val" id="d4sKd">33/100</div>
+            <div style="font-size: 11px; color: var(--success);">Moderate Opportunity</div>
+          </div>
+          <div class="seo-metric-card">
+            <div class="seo-metric-lbl">Search Intent</div>
+            <div class="seo-metric-val" style="color: var(--accent);" id="d4sIntent">INFORMATIONAL</div>
+            <div style="font-size: 11px; color: var(--text-muted);">Target Funnel: Top/Mid</div>
+          </div>
+        </div>
 
-            <span style="font-size: 0.8rem; color: var(--text-muted);">
-              Threshold: <strong>Impr &gt; 500</strong> | <strong>Pos 8–25</strong> | <strong>WoW &gt; 50%</strong>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem;">
+          <div class="seo-box-card">
+            <span class="seo-box-label">🧩 Semantic Keyword Clusters &amp; Subheadings</span>
+            <div id="d4sClustersList" style="display: flex; flex-direction: column; gap: 0.45rem;"></div>
+          </div>
+
+          <div class="seo-box-card">
+            <span class="seo-box-label">❓ People Also Ask (PAA) Schema Questions</span>
+            <div id="d4sPaaList" style="display: flex; flex-direction: column; gap: 0.45rem;"></div>
+          </div>
+        </div>
+
+        <div class="seo-box-card">
+          <span class="seo-box-label">🏆 Top Competitor SERP Landscape</span>
+          <div id="d4sSerpList" style="display: flex; flex-direction: column; gap: 0.65rem;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB-PANE 3: Growth OS Knowledge -->
+    <div class="seo-subpane" id="sub-growth-os" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+        <p style="font-size: 12.5px; color: var(--text-muted);">
+          Our moat against commoditized AI fluff. Ingested into every SEO article draft to ensure contrarian taste, quotes, and field failure data.
+        </p>
+        <button class="btn btn-primary btn-sm" id="btnSaveGrowthOs">
+          💾 Save Knowledge Files
+        </button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+        <div class="seo-box-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+            <span style="font-size: 12px; font-weight: 700; color: var(--purple);">
+              🎙️ FOUNDER-VOICE.MD (Taste &amp; Stances)
             </span>
+            <span class="clean-pill" style="font-size: 10.5px;">context/growth_os/founder-voice.md</span>
           </div>
-
-          <div style="font-size: 0.8rem; color: var(--text-dim);" id="gscUpdatedLabel">
-            Dataset: Last 28 Days Analytics
-          </div>
+          <textarea class="growth-textarea" id="txtFounderVoice" placeholder="Loading founder voice rules..."></textarea>
         </div>
 
+        <div class="seo-box-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+            <span style="font-size: 12px; font-weight: 700; color: var(--accent);">
+              🛠️ CUSTOMER-TRUTH.MD (Field Anecdotes &amp; Costs)
+            </span>
+            <span class="clean-pill" style="font-size: 10.5px;">context/growth_os/customer-truth.md</span>
+          </div>
+          <textarea class="growth-textarea" id="txtCustomerTruth" placeholder="Loading customer truth notes..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB-PANE 4: Sitemap & Cannibalization Shield -->
+    <div class="seo-subpane" id="sub-cannibalization" style="display: none;">
+      <div class="seo-box-card" style="margin-bottom: 1.25rem;">
+        <span class="seo-box-label">🛡️ Live Keyword Cannibalization Checker</span>
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+          <input type="text" id="txtCannibalizationTest" class="form-input" style="flex: 1; min-width: 280px;" placeholder="Test candidate keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
+          <button class="btn btn-secondary btn-sm" id="btnTestCannibalization">
+            Run Audit
+          </button>
+        </div>
+        <div id="cannibalizationResultBox" style="margin-top: 0.85rem; font-size: 12px; display: none;"></div>
+      </div>
+
+      <div class="seo-box-card">
+        <span class="seo-box-label">🗺️ Active Topic Cluster &amp; Internal Linking Index</span>
         <div class="gsc-table-wrapper">
-          <table class="gsc-table" id="gscTable">
+          <table class="gsc-table" id="sitemapTable">
             <thead>
               <tr>
-                <th>Target Query</th>
+                <th>Published Article</th>
                 <th>Vertical</th>
-                <th>Impressions</th>
-                <th>Clicks</th>
-                <th>CTR</th>
-                <th>Avg Pos</th>
-                <th>WoW Spike</th>
-                <th>Intent</th>
-                <th>Opp Score</th>
-                <th>Action</th>
+                <th>Primary Target Keyword</th>
+                <th>Secondary Clusters</th>
+                <th>Live Path</th>
+                <th>Status</th>
               </tr>
             </thead>
-            <tbody id="gscTableBody">
-              <tr>
-                <td colspan="10" style="text-align: center; padding: 2rem; color: var(--text-dim);">
-                  Loading GSC query opportunities...
-                </td>
-              </tr>
-            </tbody>
+            <tbody id="sitemapTableBody"></tbody>
           </table>
         </div>
       </div>
+    </div>
 
-      <!-- SUB-PANE 2: DataForSEO Explorer -->
-      <div class="seo-subpane" id="sub-dataforseo" style="display: none;">
-        <div style="display: flex; gap: 0.6rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-          <input type="text" id="d4sKeywordInput" class="form-input" style="flex: 1; min-width: 320px; background: var(--bg-surface); border: 1px solid var(--border); color: #fff; padding: 0.55rem 0.95rem; border-radius: var(--radius-sm);" placeholder="Enter any seed keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
-          <button class="btn btn-primary btn-sm" id="btnD4sEnrich">
-            🔍 Enrich via DataForSEO
-          </button>
-        </div>
-
-        <div id="d4sResultsBox">
-          <div class="seo-metrics-grid" style="margin-bottom: 1.5rem;">
-            <div class="seo-metric-card cyan">
-              <div class="seo-metric-lbl">Monthly Search Volume</div>
-              <div class="seo-metric-val" id="d4sVol">3,100</div>
-              <div style="font-size: 0.72rem; color: var(--text-muted);">US/Global Queries/mo</div>
+    <!-- SUB-PANE 5: SERP Preview & Schema Inspector -->
+    <div class="seo-subpane" id="sub-serp-preview" style="display: none;">
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.25rem;">
+        <div class="seo-box-card">
+          <span class="seo-box-label">🌐 Google Search Snippet Preview</span>
+          <div style="background: #ffffff; border: 1px solid #dfe1e5; border-radius: 8px; padding: 1.15rem; font-family: Arial, sans-serif; margin-bottom: 1.25rem;">
+            <div style="font-size: 12px; color: #202124; margin-bottom: 0.25rem;">
+              https://editorialfactory.io/articles/<span id="previewSerpUrl">mcp-server-implementation-python</span>
             </div>
-            <div class="seo-metric-card emerald">
-              <div class="seo-metric-lbl">Estimated CPC</div>
-              <div class="seo-metric-val" id="d4sCpc">$2.80</div>
-              <div style="font-size: 0.72rem; color: var(--text-muted);">Commercial Value Indicator</div>
+            <div style="color: #1a0dab; font-size: 18px; line-height: 1.3; font-weight: 400; margin-bottom: 0.35rem; cursor: pointer;" id="previewSerpTitle">
+              Mcp Server Implementation Python: Production Architecture &amp; Cost Reality
             </div>
-            <div class="seo-metric-card amber">
-              <div class="seo-metric-lbl">Keyword Difficulty (KD)</div>
-              <div class="seo-metric-val" id="d4sKd">33/100</div>
-              <div style="font-size: 0.72rem; color: #34d399;">Moderate Opportunity</div>
-            </div>
-            <div class="seo-metric-card">
-              <div class="seo-metric-lbl">Search Intent</div>
-              <div class="seo-metric-val" style="color: #38bdf8;" id="d4sIntent">INFORMATIONAL</div>
-              <div style="font-size: 0.72rem; color: var(--text-muted);">Target Funnel: Top/Mid</div>
+            <div style="color: #4d5156; font-size: 13px; line-height: 1.5;" id="previewSerpDesc">
+              A practitioner breakdown of mcp server implementation python. Discover real production benchmarks, architectural bottlenecks, and the true cost tradeoffs.
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-            <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-              <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
-                🧩 Semantic Keyword Clusters &amp; Subheadings
-              </h3>
-              <div id="d4sClustersList" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                <!-- Clusters populated via JS -->
-              </div>
-            </div>
-
-            <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-              <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
-                ❓ People Also Ask (PAA) Schema Questions
-              </h3>
-              <div id="d4sPaaList" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                <!-- PAA questions populated via JS -->
-              </div>
-            </div>
-          </div>
-
-          <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.75rem;">
-              🏆 Top Competitor SERP Landscape
-            </h3>
-            <div id="d4sSerpList" style="display: flex; flex-direction: column; gap: 0.75rem;">
-              <!-- SERPs populated via JS -->
-            </div>
+          <span class="seo-box-label">🔗 Suggested Internal Linking Anchors</span>
+          <div id="previewInternalLinksBox" style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;">
+            <ul style="padding-left: 1.2rem; font-size: 12px; color: var(--text-secondary);" id="internalLinksUl">
+              <li><code>[anthropic multi agent framework]</code> &rarr; <code>/published/2026-09-07_anthropic-multiagent-turf-war.md</code></li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- SUB-PANE 3: Growth OS Knowledge -->
-      <div class="seo-subpane" id="sub-growth-os" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
-          <p style="font-size: 0.85rem; color: var(--text-muted);">
-            Our moat against commoditized AI fluff. Ingested into every SEO article draft to ensure contrarian taste, quotes, and field failure data.
-          </p>
-          <button class="btn btn-primary btn-sm" id="btnSaveGrowthOs">
-            💾 Save Knowledge Files
-          </button>
-        </div>
-
-        <div class="growth-split-grid">
-          <div class="growth-editor-box">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
-              <span style="font-size: 0.82rem; font-weight: 700; color: #c084fc;">
-                🎙️ FOUNDER-VOICE.MD (Taste &amp; Stances)
-              </span>
-              <span class="meta-chip">context/growth_os/founder-voice.md</span>
-            </div>
-            <textarea class="growth-textarea" id="txtFounderVoice" placeholder="Loading founder voice rules..."></textarea>
+        <div class="seo-box-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
+            <span class="seo-box-label" style="margin-bottom: 0;">📄 JSON-LD Schema Markup (`@graph`)</span>
+            <button class="btn btn-secondary btn-sm" id="btnCopySchema">📋 Copy</button>
           </div>
-
-          <div class="growth-editor-box">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
-              <span style="font-size: 0.82rem; font-weight: 700; color: #38bdf8;">
-                🛠️ CUSTOMER-TRUTH.MD (Field Anecdotes &amp; Costs)
-              </span>
-              <span class="meta-chip">context/growth_os/customer-truth.md</span>
-            </div>
-            <textarea class="growth-textarea" id="txtCustomerTruth" placeholder="Loading customer truth notes..."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <!-- SUB-PANE 4: Sitemap & Cannibalization Shield -->
-      <div class="seo-subpane" id="sub-cannibalization" style="display: none;">
-        <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
-          <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.6rem;">
-            🛡️ Live Keyword Cannibalization Checker
-          </h3>
-          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-            <input type="text" id="txtCannibalizationTest" class="form-input" style="flex: 1; min-width: 300px; background: #090d16; border: 1px solid var(--border); color: #fff; padding: 0.5rem 0.85rem; border-radius: var(--radius-sm);" placeholder="Test candidate keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
-            <button class="btn btn-secondary btn-sm" id="btnTestCannibalization">
-              Run Audit
-            </button>
-          </div>
-          <div id="cannibalizationResultBox" style="margin-top: 0.85rem; font-size: 0.84rem; display: none;"></div>
-        </div>
-
-        <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-          <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.75rem;">
-            🗺️ Active Topic Cluster &amp; Internal Linking Index
-          </h3>
-          <div class="gsc-table-wrapper">
-            <table class="gsc-table" id="sitemapTable">
-              <thead>
-                <tr>
-                  <th>Published Article</th>
-                  <th>Vertical</th>
-                  <th>Primary Target Keyword</th>
-                  <th>Secondary Clusters</th>
-                  <th>Live Path</th>
-                  <th>Internal Links</th>
-                </tr>
-              </thead>
-              <tbody id="sitemapTableBody">
-                <!-- Populated via JS -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <!-- SUB-PANE 5: SERP Preview & Schema Inspector -->
-      <div class="seo-subpane" id="sub-serp-preview" style="display: none;">
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem;">
-          <div>
-            <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.75rem;">
-              🌐 Google Search Snippet Preview
-            </h3>
-            <div class="serp-preview-card">
-              <div class="serp-url-line">
-                <div class="serp-favicon">EF</div>
-                <div>
-                  <div style="font-size: 0.8rem; color: #dadce0;">editorialfactory.io &gt; articles &gt; <span id="previewSerpSlug">mcp-server-implementation-python</span></div>
-                  <div style="font-size: 0.75rem; color: #9aa0a6;">https://editorialfactory.io/articles/<span id="previewSerpUrl">mcp-server-implementation-python</span></div>
-                </div>
-              </div>
-              <div class="serp-title-line" id="previewSerpTitle">
-                Mcp Server Implementation Python: Production Architecture &amp; Cost Reality
-              </div>
-              <div class="serp-desc-line" id="previewSerpDesc">
-                A practitioner breakdown of mcp server implementation python. Discover real production benchmarks, architectural bottlenecks, and the true cost tradeoffs before deploying.
-              </div>
-            </div>
-
-            <h3 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.75rem; margin-top: 1.5rem;">
-              🔗 Suggested Internal Linking Anchors
-            </h3>
-            <div id="previewInternalLinksBox" style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-              <ul style="padding-left: 1.2rem; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem;" id="internalLinksUl">
-                <li><code>[anthropic multi agent framework]</code> &rarr; <code>/published/2026-09-07_anthropic-multiagent-turf-war.md</code></li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <h3 style="font-size: 0.95rem; color: #fff;">
-                📄 JSON-LD Schema Markup (`@graph`)
-              </h3>
-              <button class="btn btn-secondary btn-sm" id="btnCopySchema">
-                📋 Copy Schema
-              </button>
-            </div>
-            <pre class="schema-viewer-pre" id="schemaViewerPre">
+          <pre class="article-rendered pre" id="schemaViewerPre" style="max-height: 380px; font-size: 11.5px; overflow-y: auto;">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Mcp Server Implementation Python: Production Architecture & Cost Reality",
-      "description": "A practitioner breakdown of mcp server implementation python...",
-      "author": { "@type": "Person", "name": "Simon" }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What causes failure in mcp server implementation python?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Production data indicates mcp server implementation python requires deterministic boundaries..."
-          }
-        }
-      ]
+      "headline": "Mcp Server Implementation Python"
     }
   ]
 }
-            </pre>
-          </div>
+          </pre>
         </div>
       </div>
+    </div>
 
-      <!-- SUB-PANE 6: Performance Loop -->
-      <div class="seo-subpane" id="sub-performance" style="display: none;">
+    <!-- SUB-PANE 6: Performance Loop -->
+    <div class="seo-subpane" id="sub-performance" style="display: none;">
+      <div class="seo-box-card">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-          <h3 style="font-size: 0.95rem; color: #fff;">
-            📈 Post-Publish GSC Ranking &amp; Impression Trajectory
-          </h3>
-          <span class="meta-chip">Updated Weekly via <code>scripts/gsc_feedback.py</code></span>
+          <span class="seo-box-label" style="margin-bottom: 0;">📈 Post-Publish GSC Ranking &amp; Impression Trajectory</span>
+          <span class="clean-pill">Updated Weekly</span>
         </div>
 
-        <div class="gsc-table-wrapper" style="margin-bottom: 1.5rem;">
+        <div class="gsc-table-wrapper" style="margin-bottom: 1.25rem;">
           <table class="gsc-table" id="performanceTable">
             <thead>
               <tr>
@@ -1888,33 +1849,20 @@
                 <th>Status</th>
               </tr>
             </thead>
-            <tbody id="performanceTableBody">
-              <!-- Populated via JS -->
-            </tbody>
+            <tbody id="performanceTableBody"></tbody>
           </table>
-        </div>
-
-        <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-          <h4 style="font-size: 0.88rem; color: #38bdf8; margin-bottom: 0.5rem;">
-            💡 Growth OS Hook Feedback &amp; Algorithmic Insights
-          </h4>
-          <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6;">
-            1. Articles leading with concrete dollar figures ($4,200 loop bill, $68,000 AWS egress) gained an average of <strong>+18.2 positions</strong> within 14 days of publishing.<br>
-            2. JSON-LD <code>FAQPage</code> schema successfully captured rich snippet real-estate on 3 out of 3 tracked target queries.<br>
-            3. Reciprocal internal linking between child clusters accelerated page 1 discovery by 2.4&times;.
-          </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- TAB 2: Multi-Channel Suite -->
+  <!-- TAB 3: Multi-Channel Suite -->
   <div class="tab-pane" id="tab-suite">
-    <div class="workspace-card">
-      <div class="workspace-label">🚀 MULTI-CHANNEL DISTRIBUTION SUITE</div>
-      <h2 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem;">Automated Multi-Channel Previews</h2>
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-        Hand-crafted distribution formats extracted directly from the verified editorial brief.
+    <div class="hero-article-card">
+      <div class="brand-subtitle">Multi-Channel Distribution Suite</div>
+      <h2 class="article-title-heading" style="font-size: 1.35rem;">Automated Multi-Channel Previews</h2>
+      <p style="font-size: 12.5px; color: var(--text-muted);">
+        Distribution formats extracted directly from the verified editorial brief.
       </p>
 
       <div class="suite-container">
@@ -1923,7 +1871,7 @@
           <div>
             <div class="channel-header">
               <div class="channel-title">💼 LinkedIn Post Format</div>
-              <span class="meta-chip" id="linkedInCharCount">0 chars</span>
+              <span class="clean-pill" id="linkedInCharCount">0 chars</span>
             </div>
             <div class="channel-box" id="linkedInPreviewBox">
               Click 'Generate Suite' or load an article to preview LinkedIn copy...
@@ -1940,7 +1888,7 @@
           <div>
             <div class="channel-header">
               <div class="channel-title">📱 X / Twitter Thread Series</div>
-              <span class="meta-chip">3-4 Tweets</span>
+              <span class="clean-pill">3-4 Tweets</span>
             </div>
             <div class="channel-box" id="twitterPreviewBox">
               Click 'Generate Suite' or load an article to preview thread series...
@@ -1954,9 +1902,9 @@
     </div>
   </div>
 
-  <!-- TAB 3: Verticals & Settings -->
+  <!-- TAB 4: Verticals & Settings -->
   <div class="tab-pane" id="tab-verticals">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.75rem;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
       <div style="flex: 1; max-width: 440px;">
         <input type="text" class="form-input" id="searchVerticals" placeholder="🔍 Filter verticals by title, angle, source or persona...">
       </div>
@@ -1969,9 +1917,9 @@
     <div class="grid" id="verticalsGrid"></div>
   </div>
 
-  <!-- TAB 4: Target Personas Maintenance -->
+  <!-- TAB 5: Target Personas Maintenance -->
   <div class="tab-pane" id="tab-personas">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.75rem;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
       <div style="flex: 1; max-width: 440px;">
         <input type="text" class="form-input" id="searchPersonas" placeholder="🔍 Filter target personas by label, tone, or expectation...">
       </div>
@@ -1981,34 +1929,34 @@
     <div class="grid" id="personasGrid"></div>
   </div>
 
-  <!-- TAB 5: Fleet & Cron Controls -->
+  <!-- TAB 6: Fleet & Cron Controls -->
   <div class="tab-pane" id="tab-fleet">
     <div class="card" style="max-width: 760px; margin: 0 auto;">
-      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color:#fff;">Hermes Multi-Agent Fleet & Supabase Sync</h2>
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text);">Hermes Multi-Agent Fleet &amp; Supabase Sync</h2>
+      <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 1.25rem;">
         Synchronize schedules with the VPS Hermes bot fleet and mirror configuration with Supabase cloud database.
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 1rem;">
-        <div style="padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.3rem;">1. Hermes Cron Schedule Sync</div>
-          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+      <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+        <div style="padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">1. Hermes Cron Schedule Sync</div>
+          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.75rem;">
             Pushes all active verticals and their cron cadences directly to <code>hermes cron</code> jobs on the VPS.
           </div>
           <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">Run scripts/sync_crons.py</button>
         </div>
 
-        <div style="padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.3rem;">2. Supabase Push (Local JSON &rarr; Supabase)</div>
-          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+        <div style="padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">2. Supabase Push (Local JSON &rarr; Supabase)</div>
+          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.75rem;">
             Uploads all verticals and personas into the Supabase tables.
           </div>
           <button class="btn btn-secondary btn-sm" id="btnPushSupabase">Push to Supabase</button>
         </div>
 
-        <div style="padding: 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 600; font-size: 0.9rem; color: #fff; margin-bottom: 0.3rem;">3. Supabase Pull (Supabase &rarr; Local JSON)</div>
-          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+        <div style="padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">3. Supabase Pull (Supabase &rarr; Local JSON)</div>
+          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.75rem;">
             Fetches all remote verticals from Supabase and overwrites local <code>context/verticals.json</code>.
           </div>
           <button class="btn btn-secondary btn-sm" id="btnPullSupabase">Pull from Supabase</button>
@@ -2018,11 +1966,11 @@
   </div>
 </div>
 
-<!-- Library Modal (with delete support) -->
+<!-- Library Modal -->
 <div class="modal-backdrop" id="libraryModalBackdrop">
   <div class="modal">
     <div class="modal-header">
-      <h2>Editorial Drafts & Published Library</h2>
+      <h2>Editorial Drafts &amp; Published Library</h2>
       <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
     </div>
     <div id="libraryListContainer"></div>
@@ -2048,7 +1996,7 @@
 
       <div class="form-group">
         <label class="form-label" for="verticalLabel">Display Label</label>
-        <input type="text" class="form-input" id="verticalLabel" placeholder="e.g. Agentic Automation & Architecture" required>
+        <input type="text" class="form-input" id="verticalLabel" placeholder="e.g. Agentic Automation &amp; Architecture" required>
       </div>
 
       <div class="form-group">
@@ -2072,7 +2020,7 @@
       </div>
 
       <div class="form-group">
-        <label class="form-label">Research & Radar Sources</label>
+        <label class="form-label">Research &amp; Radar Sources</label>
         <div class="tag-input-box" id="sourcesBox">
           <input type="text" class="tag-text-input" id="sourceInput" placeholder="Type source and press Enter...">
         </div>
@@ -2081,8 +2029,8 @@
           <span class="preset-chip" onclick="addSourcePreset('hacker_news')">+ hacker_news</span>
           <span class="preset-chip" onclick="addSourcePreset('github_trending')">+ github_trending</span>
           <span class="preset-chip" onclick="addSourcePreset('x_ai')">+ x_ai</span>
-          <span class="preset-chip" onclick="addSourcePreset('reddit_ml')">+ reddit_ml</span>
-          <span class="preset-chip" onclick="addSourcePreset('industry_dive')">+ industry_dive</span>
+          <span class="preset-chip" onclick="addSourcePreset('freightwaves')">+ freightwaves</span>
+          <span class="preset-chip" onclick="addSourcePreset('supply_chain_dive')">+ supply_chain_dive</span>
         </div>
       </div>
 
@@ -2091,26 +2039,24 @@
         <div class="tag-input-box" id="anglesBox">
           <input type="text" class="tag-text-input" id="angleInput" placeholder="Type or paste editorial angle(s) and press Enter or comma...">
         </div>
-        <div class="preset-chips" style="margin-top: 0.5rem;">
-          <span class="preset-chip" onclick="addAnglePreset('architecture bottlenecks')">+ architecture bottlenecks</span>
-          <span class="preset-chip" onclick="addAnglePreset('production failure modes')">+ production failure modes</span>
-          <span class="preset-chip" onclick="addAnglePreset('cost tradeoffs vs ROI')">+ cost tradeoffs vs ROI</span>
-          <span class="preset-chip" onclick="addAnglePreset('benchmark traps vs field data')">+ benchmark traps vs field data</span>
-          <span class="preset-chip" onclick="addAnglePreset('build vs buy math')">+ build vs buy math</span>
-          <span class="preset-chip" onclick="addAnglePreset('security & compliance ceilings')">+ security & compliance ceilings</span>
+        <div class="preset-chips" style="margin-top: 0.4rem;">
+          <span class="preset-chip" onclick="addAnglePreset('memory tiering topology L1-L4')">+ memory tiering L1-L4</span>
+          <span class="preset-chip" onclick="addAnglePreset('compound reliability math 0.95^10')">+ compound reliability 0.95^10</span>
+          <span class="preset-chip" onclick="addAnglePreset('deterministic vs probabilistic QA')">+ deterministic vs probabilistic QA</span>
+          <span class="preset-chip" onclick="addAnglePreset('ERP WMS decoupling 3-layer stack')">+ ERP decoupling stack</span>
+          <span class="preset-chip" onclick="addAnglePreset('multi-echelon inventory optimization MEIO')">+ MEIO working capital</span>
         </div>
-        <div class="form-help">Core analytical themes prioritized by radar and virality judge. Paste multiple angles separated by commas.</div>
       </div>
 
-      <div class="form-group" style="background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem; margin-top: 1rem;">
-        <label class="form-label" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; margin-bottom: 0.3rem;" for="verticalDataForSeo">
-          <span style="font-weight: 700; color: #fff; display: flex; align-items: center; gap: 0.5rem;">
+      <div class="form-group" style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.85rem; margin-top: 0.75rem;">
+        <label class="form-label" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; margin-bottom: 0.2rem;" for="verticalDataForSeo">
+          <span style="font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 0.4rem;">
             <span>🔍</span> Enable DataForSEO API Enrichment
           </span>
-          <input type="checkbox" id="verticalDataForSeo" checked style="width: 18px; height: 18px; accent-color: #38bdf8; cursor: pointer;">
+          <input type="checkbox" id="verticalDataForSeo" checked style="width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer;">
         </label>
-        <div class="form-help" style="margin-top: 0.2rem; color: var(--text-muted);">
-          When turned on, the radar queries live DataForSEO API credits for search volume, intent & competitor SERPs. Turn OFF for non-SEO verticals to save credits.
+        <div class="form-help" style="margin-top: 0.15rem;">
+          Queries live DataForSEO credits for search volume, intent &amp; SERPs. Turn OFF for non-SEO verticals to conserve credits.
         </div>
       </div>
 
@@ -2135,28 +2081,28 @@
 
       <div class="form-group">
         <label class="form-label" for="personaId">Persona ID (slug)</label>
-        <input type="text" class="form-input" id="personaId" placeholder="e.g. cto_enterprise or quant_researcher" required>
+        <input type="text" class="form-input" id="personaId" placeholder="e.g. ai_architect or supply_chain_architect" required>
         <div class="form-help">Unique slug ID used in frontmatter and vertical configurations.</div>
       </div>
 
       <div class="form-group">
         <label class="form-label" for="personaLabel">Display Label</label>
-        <input type="text" class="form-input" id="personaLabel" placeholder="e.g. Chief Technology Officer / VP Eng" required>
+        <input type="text" class="form-input" id="personaLabel" placeholder="e.g. AI Systems &amp; Distributed Architect" required>
       </div>
 
       <div class="form-group">
         <label class="form-label" for="personaReaderLevel">Reader Technical Level</label>
-        <input type="text" class="form-input" id="personaReaderLevel" placeholder="e.g. senior practitioner who ships, deep technical" required>
+        <input type="text" class="form-input" id="personaReaderLevel" placeholder="e.g. senior systems &amp; protocol architect" required>
       </div>
 
       <div class="form-group">
-        <label class="form-label" for="personaTone">Voice & Tone</label>
-        <input type="text" class="form-input" id="personaTone" placeholder="e.g. direct, technical, skeptical of hype, ROI-first" required>
+        <label class="form-label" for="personaTone">Voice &amp; Tone</label>
+        <input type="text" class="form-input" id="personaTone" placeholder="e.g. rigorous, distributed-systems literate, architectural" required>
       </div>
 
       <div class="form-group">
-        <label class="form-label" for="personaWants">What They Want (Takeaways & Angles)</label>
-        <textarea class="form-textarea" id="personaWants" rows="3" placeholder="e.g. concrete numbers, decision frameworks, what to do Monday morning" required></textarea>
+        <label class="form-label" for="personaWants">What They Want (Takeaways &amp; Angles)</label>
+        <textarea class="form-textarea" id="personaWants" rows="3" placeholder="e.g. memory tiering topologies, MCP contracts, state recovery patterns" required></textarea>
       </div>
 
       <div class="modal-actions">
@@ -2169,10 +2115,10 @@
 
 <!-- Generic Delete Confirmation Modal -->
 <div class="modal-backdrop" id="deleteModalBackdrop">
-  <div class="modal" style="max-width: 440px;">
-    <h2 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.75rem;" id="deleteModalHeading">Delete Item?</h2>
-    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;" id="deleteConfirmText">
-      Are you sure you want to delete this item?
+  <div class="modal" style="max-width: 420px;">
+    <h2 style="font-size: 1.15rem; color: var(--text); margin-bottom: 0.6rem;" id="deleteModalHeading">Delete Item?</h2>
+    <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 1.25rem;" id="deleteConfirmText">
+      Are you sure you want to permanently delete this item?
     </p>
     <div class="modal-actions">
       <button type="button" class="btn btn-secondary" id="cancelDeleteBtn">Cancel</button>
@@ -2191,13 +2137,34 @@
   let allVerticals = [];
   let allPersonas = {};
   let allDrafts = [];
-  let currentFile = '2026-09-07_anthropic-multiagent-turf-war_final.md';
+  let currentFile = '2026-09-09_nvidia-279b-memory-bottleneck_final.md';
   let currentMarkdown = '';
   let currentSources = [];
   let currentAngles = [];
 
-  let deleteActionType = null; // 'vertical' | 'persona' | 'draft'
+  let deleteActionType = null;
   let deleteTargetId = null;
+
+  // Theme Management
+  function initTheme() {
+    const saved = localStorage.getItem('pressflow_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', saved);
+    updateThemeIcon(saved);
+  }
+
+  function updateThemeIcon(theme) {
+    const btn = document.getElementById('btnToggleTheme');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+
+  document.getElementById('btnToggleTheme').addEventListener('click', () => {
+    const curr = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = curr === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('pressflow_theme', next);
+    updateThemeIcon(next);
+  });
+  initTheme();
 
   // Helpers
   function getHumanCadence(cadenceStr) {
@@ -2265,93 +2232,44 @@
     const secondaryKws = Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [];
     const searchVolume = fm.search_volume;
     const searchIntent = fm.search_intent || 'informational';
-    const persona = fm.persona || fm.target_persona || 'eng_leader';
+    const persona = fm.persona || fm.target_persona || 'infra_engineer';
     const bodyText = markdown.replace(/^---[\s\S]*?---\s*\n?/, '');
 
     const primaryTextEl = document.getElementById('kwPrimaryText');
+    const metricsKwNameEl = document.getElementById('kwMetricsTitle');
     const volValEl = document.getElementById('kwVolVal');
+    const kdValEl = document.getElementById('kwKdVal');
     const intentValEl = document.getElementById('kwIntentVal');
     const personaValEl = document.getElementById('kwPersonaVal');
     const secondaryChipsEl = document.getElementById('kwSecondaryChips');
-    const secondaryCountEl = document.getElementById('kwSecondaryCount');
-    const coverageSummaryEl = document.getElementById('kwCoverageSummary');
     const liveBadgeEl = document.getElementById('kwLiveStatusBadge');
 
-    if (!primaryKw && (!secondaryKws || secondaryKws.length === 0)) {
-      if (primaryTextEl) {
-        primaryTextEl.textContent = 'General Editorial Signal (No SEO keywords set)';
-        primaryTextEl.style.opacity = '0.7';
-      }
-      if (volValEl) volValEl.textContent = '—';
-      if (intentValEl) intentValEl.textContent = '—';
-      if (personaValEl) personaValEl.textContent = persona || '—';
-      if (secondaryChipsEl) secondaryChipsEl.innerHTML = '<span style="font-size:0.8rem; color:var(--text-dim); font-style:italic;">No secondary keyword clusters configured in this draft.</span>';
-      if (secondaryCountEl) secondaryCountEl.textContent = '0';
-      if (coverageSummaryEl) coverageSummaryEl.textContent = '';
-      if (liveBadgeEl) {
-        liveBadgeEl.textContent = 'General Editorial';
-        liveBadgeEl.style.background = 'rgba(148, 163, 184, 0.15)';
-        liveBadgeEl.style.color = '#94a3b8';
-        liveBadgeEl.style.borderColor = 'rgba(148, 163, 184, 0.3)';
-      }
-      return;
-    }
+    const kwDisplay = primaryKw || 'GPU memory bandwidth';
+    if (primaryTextEl) primaryTextEl.textContent = kwDisplay;
+    if (metricsKwNameEl) metricsKwNameEl.textContent = kwDisplay;
 
-    if (primaryTextEl) {
-      primaryTextEl.textContent = primaryKw || 'Unassigned Target';
-      primaryTextEl.style.opacity = '1';
-    }
     if (volValEl) volValEl.textContent = searchVolume ? `${Number(searchVolume).toLocaleString()} / mo` : 'N/A';
-    if (intentValEl) intentValEl.textContent = searchIntent ? searchIntent.toUpperCase() : 'INFORMATIONAL';
+    if (kdValEl) kdValEl.textContent = fm.keyword_difficulty ? `${fm.keyword_difficulty}/100` : 'TBD';
+    if (intentValEl) intentValEl.textContent = (searchIntent || 'INFORMATIONAL').toUpperCase();
     if (personaValEl) personaValEl.textContent = persona;
 
-    if (liveBadgeEl) {
-      liveBadgeEl.textContent = 'SEO Calibrated';
-      liveBadgeEl.style.background = 'rgba(56, 189, 248, 0.15)';
-      liveBadgeEl.style.color = '#7dd3fc';
-      liveBadgeEl.style.borderColor = 'rgba(56, 189, 248, 0.3)';
-    }
-
-    // Check keyword occurrences in body
-    let coveredCount = 0;
     const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const chipsHtml = secondaryKws.map((sk) => {
-      const safeRegex = sk.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const matches = bodyText.match(new RegExp(safeRegex, 'gi')) || [];
-      const count = matches.length;
-      if (count > 0) coveredCount++;
-
-      const badge = count > 0
-        ? `<span class="kw-occurrence-pill present" title="Mentioned ${count} time(s) in article text">✓ ${count}×</span>`
-        : `<span class="kw-occurrence-pill missing" title="Not yet mentioned in draft">0×</span>`;
-
-      return `
-        <div class="secondary-kw-chip" onclick="highlightKeywordInEditor('${sk.replace(/'/g, "\\'")}')" title="Click to find or copy keyword">
-          <span>🏷️ ${esc(sk)}</span>
-          ${badge}
-        </div>
-      `;
-    }).join('');
-
+    const defaultClusters = secondaryKws.length ? secondaryKws : ['HBM memory bandwidth', 'AI inference bottleneck', 'Nvidia H100 H200 supply'];
+    
     if (secondaryChipsEl) {
-      secondaryChipsEl.innerHTML = chipsHtml || '<span style="font-size:0.8rem; color:var(--text-dim);">No secondary clusters</span>';
-    }
-    if (secondaryCountEl) secondaryCountEl.textContent = secondaryKws.length;
-
-    if (coverageSummaryEl) {
-      if (secondaryKws.length > 0) {
-        const pct = Math.round((coveredCount / secondaryKws.length) * 100);
-        coverageSummaryEl.innerHTML = `Coverage: <strong>${coveredCount}/${secondaryKws.length}</strong> (${pct}% targeted)`;
-        coverageSummaryEl.style.color = pct >= 60 ? '#34d399' : '#fbbf24';
-      } else {
-        coverageSummaryEl.textContent = '';
-      }
+      secondaryChipsEl.innerHTML = defaultClusters.map((sk) => {
+        const safeRegex = sk.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const matches = bodyText.match(new RegExp(safeRegex, 'gi')) || [];
+        const count = matches.length;
+        const countBadge = count > 0 ? `✓ ${count}×` : '0×';
+        return `<span class="cluster-tag" onclick="highlightKeywordInEditor('${sk.replace(/'/g, "\\'")}')">🏷️ ${esc(sk)} <span style="font-size:10px; opacity:0.75; font-weight:700;">(${countBadge})</span></span>`;
+      }).join('');
     }
   }
 
   window.highlightKeywordInEditor = function(kw) {
     navigator.clipboard.writeText(kw);
-    showToast(`Keyword '${kw}' copied! Locating in editor...`);
+    showToast(`Keyword '${kw}' copied!`);
     const editor = document.getElementById('markdownEditor');
     const idx = editor.value.toLowerCase().indexOf(kw.toLowerCase());
     if (idx !== -1) {
@@ -2364,42 +2282,11 @@
   function parseMarkdownToHtml(md) {
     if (!md) return '';
     const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    
-    // Extract frontmatter
-    const fm = parseFrontmatterJs(md);
-    let seoBriefHtml = '';
-    if (fm.primary_keyword || (fm.secondary_keywords && fm.secondary_keywords.length)) {
-      const secBadges = (fm.secondary_keywords || []).map((s) => `<span class="tag" style="background: rgba(168, 85, 247, 0.12); color: #c084fc; border-color: rgba(168, 85, 247, 0.25); font-size:0.75rem;">🏷️ ${esc(s)}</span>`).join(' ');
-      seoBriefHtml = `
-        <div class="editorial-seo-brief">
-          <div class="editorial-brief-title">
-            <span>🎯</span> Editorial SEO Target Architecture
-          </div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem;">
-            <div>
-              <span style="font-size: 0.8rem; color: var(--text-muted);">Primary Target Query:</span>
-              <strong style="color: #38bdf8; font-family: var(--font-mono); font-size: 0.95rem; margin-left: 0.4rem;">${esc(fm.primary_keyword || 'General')}</strong>
-            </div>
-            <div style="display: flex; gap: 0.4rem; font-size: 0.78rem; flex-wrap: wrap;">
-              ${fm.search_volume ? `<span class="tag" style="color: #34d399; background: rgba(52, 211, 153, 0.1); border-color: rgba(52, 211, 153, 0.2);">📊 ${Number(fm.search_volume).toLocaleString()} vol/mo</span>` : ''}
-              ${fm.search_intent ? `<span class="tag" style="color: #38bdf8; background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.2); text-transform: uppercase;">⚡ ${esc(fm.search_intent)}</span>` : ''}
-              ${fm.persona ? `<span class="tag" style="color: #c084fc; background: rgba(192, 132, 252, 0.1); border-color: rgba(192, 132, 252, 0.2);">👤 ${esc(fm.persona)}</span>` : ''}
-            </div>
-          </div>
-          ${secBadges ? `
-            <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center;">
-              <span style="font-size: 0.75rem; color: var(--text-dim); margin-right: 0.25rem;">Secondary Clusters:</span>
-              ${secBadges}
-            </div>
-          ` : ''}
-        </div>
-      `;
-    }
 
     // Strip YAML frontmatter
     let content = md.replace(/^---[\s\S]*?---\s*\n?/, '');
 
-    // Strip machine-readable schema & internal-links blocks from main article reading view
+    // Strip internal machine blocks from main article reading view
     content = content.replace(new RegExp('<' + '!--\\s*schema\\s*--' + '>[\\s\\S]*?```(?:json)?[\\s\\S]*?```', 'gi'), '');
     content = content.replace(new RegExp('<' + '!--\\s*internal-links\\s*--' + '>[\\s\\S]*?(?=(?:<' + '!--|##|$))', 'gi'), '');
 
@@ -2410,11 +2297,11 @@
       const liText = linkedinMatch[1].trim();
       if (liText) {
         linkedinHtml = `
-          <div style="margin-top: 2.5rem; background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: var(--radius-md); padding: 1.25rem;">
-            <div style="font-size: 0.85rem; font-weight: 700; color: #38bdf8; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+          <div style="margin-top: 2.5rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 12px; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
               <span>💼</span> LinkedIn Post Variant
             </div>
-            <div style="font-size: 0.95rem; line-height: 1.6; color: #cbd5e1; white-space: pre-wrap; font-family: var(--font-sans);">${esc(liText)}</div>
+            <div style="font-size: 13px; line-height: 1.6; color: var(--text); white-space: pre-wrap; font-family: var(--font-sans);">${esc(liText)}</div>
           </div>
         `;
       }
@@ -2428,11 +2315,11 @@
       const grText = gateMatch[1].trim();
       if (grText) {
         gateReportHtml = `
-          <div style="margin-top: 1.5rem; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: var(--radius-md); padding: 1rem 1.25rem;">
-            <div style="font-size: 0.82rem; font-weight: 700; color: #34d399; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+          <div style="margin-top: 1.5rem; background: var(--bg-secondary); border: 1px solid var(--success-border); border-radius: var(--radius-md); padding: 1rem 1.25rem;">
+            <div style="font-size: 12px; font-weight: 700; color: var(--success); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem;">
               <span>🛡️</span> Frontier Quality Gate Report
             </div>
-            <div style="font-size: 0.85rem; line-height: 1.6; color: #94a3b8; font-family: var(--font-mono); white-space: pre-wrap;">${esc(grText)}</div>
+            <div style="font-size: 12px; line-height: 1.6; color: var(--text-muted); font-family: var(--font-mono); white-space: pre-wrap;">${esc(grText)}</div>
           </div>
         `;
       }
@@ -2441,7 +2328,6 @@
 
     const lines = content.split(/\r?\n/);
     const out = [];
-    if (seoBriefHtml) out.push(seoBriefHtml);
 
     let para = [];
     let inList = false;
@@ -2485,7 +2371,6 @@
       const line = lines[i];
       const trimmed = line.trim();
 
-      // Code block handling
       if (trimmed.startsWith('```')) {
         flushPara();
         flushList();
@@ -2506,7 +2391,6 @@
         continue;
       }
 
-      // HTML comments (like <!-- lead -->) - skip
       if (/^<!--[\s\S]*?-->$/.test(trimmed)) {
         flushPara();
         flushList();
@@ -2514,7 +2398,6 @@
         continue;
       }
 
-      // Empty line
       if (!trimmed) {
         flushPara();
         flushList();
@@ -2522,7 +2405,6 @@
         continue;
       }
 
-      // Blockquotes (> Quote)
       if (trimmed.startsWith('>')) {
         flushPara();
         flushList();
@@ -2533,7 +2415,6 @@
         flushBlockquote();
       }
 
-      // Headings (# Heading)
       if (/^#{1,6}\s/.test(trimmed)) {
         flushPara();
         flushList();
@@ -2544,7 +2425,6 @@
         continue;
       }
 
-      // Unordered list items (- item or * item)
       if (/^[-*]\s+/.test(trimmed)) {
         flushPara();
         flushBlockquote();
@@ -2558,7 +2438,6 @@
         continue;
       }
 
-      // Ordered list items (1. item)
       if (/^\d+\.\s+/.test(trimmed)) {
         flushPara();
         flushBlockquote();
@@ -2572,7 +2451,6 @@
         continue;
       }
 
-      // Regular paragraph line
       flushList();
       flushBlockquote();
       para.push(inline(trimmed));
@@ -2601,20 +2479,16 @@
     const metaDesc = fm.meta_description || '';
     const slug = fm.slug || '';
 
-    const previewSlugEl = document.getElementById('previewSerpSlug');
     const previewUrlEl = document.getElementById('previewSerpUrl');
     const previewTitleEl = document.getElementById('previewSerpTitle');
     const previewDescEl = document.getElementById('previewSerpDesc');
 
-    if (slug) {
-      const cleanSlug = slug.replace(/^\d{4}-\d{2}-\d{2}_/, '');
-      if (previewSlugEl) previewSlugEl.textContent = cleanSlug;
-      if (previewUrlEl) previewUrlEl.textContent = cleanSlug;
+    if (slug && previewUrlEl) {
+      previewUrlEl.textContent = slug.replace(/^\d{4}-\d{2}-\d{2}_/, '');
     }
     if (previewTitleEl) previewTitleEl.textContent = metaTitle || title || 'Editorial Factory';
     if (previewDescEl) previewDescEl.textContent = metaDesc || 'Autonomous Content Intelligence & Editorial Engine.';
 
-    // Extract schema
     const schemaMatch = markdown.match(new RegExp('<' + '!--\\s*schema\\s*--' + '>[\\s\\S]*?```(?:json)?\\s*(\\{[\\s\\S]+?\\})\\s*```', 'i'));
     const schemaViewerPre = document.getElementById('schemaViewerPre');
     if (schemaViewerPre) {
@@ -2629,27 +2503,7 @@
         schemaViewerPre.textContent = '{\n  "//": "No custom JSON-LD schema defined for this draft."\n}';
       }
     }
-
-    // Extract internal links
-    const ilMatch = markdown.match(new RegExp('<' + '!--\\s*internal-links\\s*--' + '>([\\s\\S]*?)(?=(?:<' + '!--|##|$))', 'i'));
-    const internalLinksUl = document.getElementById('internalLinksUl');
-    if (internalLinksUl) {
-      if (ilMatch && ilMatch[1].trim()) {
-        const lines = ilMatch[1].trim().split('\n').filter(l => l.trim().startsWith('-'));
-        if (lines.length) {
-          internalLinksUl.innerHTML = lines.map(l => {
-            const clean = l.replace(/^[-*]\s*/, '').replace(/`([^`]+)`/g, '<code>$1</code>');
-            return `<li>${clean}</li>`;
-          }).join('');
-        } else {
-          internalLinksUl.innerHTML = '<li style="color:var(--text-muted);">No suggested internal links in this draft.</li>';
-        }
-      } else {
-        internalLinksUl.innerHTML = '<li style="color:var(--text-muted);">No suggested internal links in this draft.</li>';
-      }
-    }
   }
-
 
   // Tab switching
   document.querySelectorAll('.tab-btn').forEach((btn) => {
@@ -2658,12 +2512,9 @@
       document.querySelectorAll('.tab-pane').forEach((p) => p.classList.remove('active'));
       btn.classList.add('active');
       const target = btn.getAttribute('data-tab');
-      document.getElementById(target).classList.add('active');
+      const pane = document.getElementById(target);
+      if (pane) pane.classList.add('active');
     });
-  });
-
-  document.getElementById('btnToggleSettings').addEventListener('click', () => {
-    document.getElementById('tabVerticalsBtn').click();
   });
 
   // View Switcher (Rendered vs Edit)
@@ -2698,9 +2549,9 @@
 
   document.getElementById('btnCopyPrimaryKw').addEventListener('click', () => {
     const kw = document.getElementById('kwPrimaryText').textContent.trim();
-    if (kw && !kw.startsWith('General')) {
+    if (kw) {
       navigator.clipboard.writeText(kw);
-      showToast(`Primary keyword '${kw}' copied to clipboard!`);
+      showToast(`Copied '${kw}' to clipboard!`);
     }
   });
 
@@ -2729,23 +2580,16 @@
       const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       container.innerHTML = allDrafts.map((d) => `
         <div class="library-item">
-          <div style="flex:1;" onclick="selectDraft('${d.file}')">
+          <div style="flex:1; cursor:pointer;" onclick="selectDraft('${d.file}')">
             <div class="library-item-title">${esc(d.title)}</div>
             <div class="library-item-meta">
               <span>📁 ${d.type}</span>
               <span>🏷️ ${d.vertical}</span>
               <span>⏱️ ${d.wordCount} words (~${d.readTime} min)</span>
             </div>
-            ${d.primary_keyword ? `
-              <div class="library-keyword-row">
-                <span class="library-kw-badge">🎯 ${esc(d.primary_keyword)}</span>
-                ${d.search_volume ? `<span class="library-vol-pill">📊 ${Number(d.search_volume).toLocaleString()} vol</span>` : ''}
-                ${d.secondary_keywords && d.secondary_keywords.length ? `<span class="library-clusters-pill">+${d.secondary_keywords.length} clusters</span>` : ''}
-              </div>
-            ` : ''}
           </div>
           <div style="display:flex; gap:0.4rem; align-items:center;">
-            <button class="btn btn-primary btn-sm" onclick="selectDraft('${d.file}')">Load &rarr;</button>
+            <button class="btn btn-secondary btn-sm" onclick="selectDraft('${d.file}')">Load &rarr;</button>
             <button class="icon-btn danger" title="Delete Draft" onclick="openDeleteModal('draft', '${d.file}', '${d.title.replace(/'/g, "\\'")}')">🗑️</button>
           </div>
         </div>
@@ -2790,7 +2634,6 @@
     document.getElementById('libraryModalBackdrop').classList.remove('active');
   });
 
-  // Save Draft
   document.getElementById('btnSaveDraft').addEventListener('click', async () => {
     try {
       const markdown = markdownEditor.value;
@@ -2811,19 +2654,17 @@
     }
   });
 
-  // Delete Current Article
   document.getElementById('btnDeleteCurrentArticle').addEventListener('click', () => {
     if (!currentFile) return;
     const title = document.getElementById('currentArticleTitle').textContent;
     openDeleteModal('draft', currentFile, title);
   });
 
-  // Generate Suite
   async function generateSuite() {
     const md = markdownEditor.value || currentMarkdown;
     const articleUrl = document.getElementById('currentArticleLink').href;
 
-    showToast('Extracting multi-channel suite format...', 'success');
+    showToast('Extracting multi-channel suite format...');
     try {
       const res = await fetch('/api/generate-suite', {
         method: 'POST',
@@ -2918,8 +2759,8 @@
       const sourcesHtml = (v.sources || []).map((s) => `<span class="tag">${s}</span>`).join('');
       const anglesHtml = (v.primary_angles || []).map((a) => `<span class="tag angle-tag">${a}</span>`).join('');
       const dataForSeoBadge = (v.enable_dataforseo !== false)
-        ? '<span class="tag" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); font-weight: 600;">⚡ DataForSEO: ON</span>'
-        : '<span class="tag" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8; border-color: rgba(148, 163, 184, 0.2);">💤 DataForSEO: OFF</span>';
+        ? '<span class="tag" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd; font-weight: 600;">⚡ DataForSEO: ON</span>'
+        : '<span class="tag" style="color: var(--text-dim);">💤 DataForSEO: OFF</span>';
 
       return `
         <div class="card" data-id="${v.id}">
@@ -2936,7 +2777,7 @@
             </div>
 
             <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
-              <div class="persona-badge" style="margin-bottom: 0;">
+              <div class="persona-badge">
                 <span>👤</span> ${p.label}
               </div>
               ${dataForSeoBadge}
@@ -2951,17 +2792,16 @@
             </div>
 
             <span class="section-label">Research Sources (${(v.sources || []).length})</span>
-            <div class="tag-container">${sourcesHtml || '<span style="font-size:0.75rem; color:var(--text-dim)">None configured</span>'}</div>
+            <div class="tag-container">${sourcesHtml || '<span style="font-size:11px; color:var(--text-dim)">None configured</span>'}</div>
 
             <span class="section-label">Primary Angles (${(v.primary_angles || []).length})</span>
-            <div class="tag-container">${anglesHtml || '<span style="font-size:0.75rem; color:var(--text-dim)">None configured</span>'}</div>
+            <div class="tag-container">${anglesHtml || '<span style="font-size:11px; color:var(--text-dim)">None configured</span>'}</div>
           </div>
         </div>
       `;
     }).join('');
   }
 
-  // Personas CRUD & Render
   function renderPersonas(personas) {
     const grid = document.getElementById('personasGrid');
     const entries = Object.entries(personas);
@@ -2985,13 +2825,13 @@
 
           <div style="margin-top:0.75rem;">
             <span class="section-label">Reader Technical Level</span>
-            <p style="font-size:0.85rem; color:#f1f5f9; margin-bottom:0.75rem;">${p.reader_level || 'General practitioner'}</p>
+            <p style="font-size:12.5px; color:var(--text); margin-bottom:0.65rem;">${p.reader_level || 'General practitioner'}</p>
 
-            <span class="section-label">Voice & Tone</span>
-            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.75rem;">${p.tone || 'Pragmatic & direct'}</p>
+            <span class="section-label">Voice &amp; Tone</span>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:0.65rem;">${p.tone || 'Pragmatic & direct'}</p>
 
             <span class="section-label">What They Want</span>
-            <p style="font-size:0.85rem; color:var(--text-muted);">${p.wants || 'Clear takeaways and concrete facts'}</p>
+            <p style="font-size:12px; color:var(--text-secondary);">${p.wants || 'Clear takeaways and concrete facts'}</p>
           </div>
         </div>
       </div>
@@ -3047,15 +2887,13 @@
     const tone = document.getElementById('personaTone').value.trim();
     const wants = document.getElementById('personaWants').value.trim();
 
-    const payload = { id, label, reader_level, tone, wants };
-
     try {
       const url = isEdit ? `/api/personas/${encodeURIComponent(id)}` : '/api/personas';
       const method = isEdit ? 'PUT' : 'POST';
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ id, label, reader_level, tone, wants }),
       });
       if (!res.ok) throw new Error('Failed to save persona');
       showToast(`Persona '${label}' saved!`);
@@ -3099,9 +2937,7 @@
     if (!text) return;
     const tokens = text.split(/[\n,;]+/).map((t) => t.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_')).filter(Boolean);
     tokens.forEach((val) => {
-      if (val && !currentSources.includes(val)) {
-        currentSources.push(val);
-      }
+      if (val && !currentSources.includes(val)) currentSources.push(val);
     });
     renderSourceChips();
   }
@@ -3110,9 +2946,7 @@
     if (!text) return;
     const tokens = text.split(/[\n,;]+/).map((t) => t.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
     tokens.forEach((val) => {
-      if (val && !currentAngles.includes(val)) {
-        currentAngles.push(val);
-      }
+      if (val && !currentAngles.includes(val)) currentAngles.push(val);
     });
     renderAngleChips();
   }
@@ -3125,26 +2959,12 @@
     }
   });
 
-  sourceInput.addEventListener('paste', () => {
-    setTimeout(() => {
-      addSourcesFromText(sourceInput.value);
-      sourceInput.value = '';
-    }, 10);
-  });
-
   angleInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ',') {
       e.preventDefault();
       addAnglesFromText(angleInput.value);
       angleInput.value = '';
     }
-  });
-
-  angleInput.addEventListener('paste', () => {
-    setTimeout(() => {
-      addAnglesFromText(angleInput.value);
-      angleInput.value = '';
-    }, 10);
   });
 
   window.addSourcePreset = (src) => {
@@ -3160,7 +2980,6 @@
     document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${text}`;
   };
 
-  // Vertical Modal
   const verticalModalBackdrop = document.getElementById('verticalModalBackdrop');
   function openAddVerticalModal() {
     document.getElementById('modalTitle').textContent = 'Add Editorial Vertical';
@@ -3201,14 +3020,8 @@
 
   document.getElementById('verticalForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (angleInput.value.trim()) {
-      addAnglesFromText(angleInput.value);
-      angleInput.value = '';
-    }
-    if (sourceInput.value.trim()) {
-      addSourcesFromText(sourceInput.value);
-      sourceInput.value = '';
-    }
+    if (angleInput.value.trim()) { addAnglesFromText(angleInput.value); angleInput.value = ''; }
+    if (sourceInput.value.trim()) { addSourcesFromText(sourceInput.value); sourceInput.value = ''; }
 
     const isEdit = document.getElementById('formIsEdit').value === 'true';
     const id = document.getElementById('verticalId').value.trim();
@@ -3227,11 +3040,8 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      if (!res.ok) {
-        const errJson = await res.json().catch(() => ({}));
-        throw new Error(errJson.error || 'Failed to save');
-      }
-      showToast(`Vertical '${label}' (${currentAngles.length} angles) saved!`);
+      if (!res.ok) throw new Error('Failed to save vertical');
+      showToast(`Vertical '${label}' saved!`);
       verticalModalBackdrop.classList.remove('active');
       await loadVerticals();
     } catch (err) {
@@ -3239,7 +3049,7 @@
     }
   });
 
-  // Generic Delete Modal Handlers
+  // Delete Modal
   const deleteModalBackdrop = document.getElementById('deleteModalBackdrop');
   window.openDeleteModal = (type, id, label) => {
     deleteActionType = type;
@@ -3294,7 +3104,6 @@
     }
   });
 
-  // Sync Crons & Storage
   const triggerSync = async () => {
     showToast('Syncing crons with Hermes fleet...');
     try {
@@ -3345,13 +3154,8 @@
     renderPersonas(filtered);
   });
 
-  // ----------------------------------------------------
-  // SEO Content Machine & Growth OS Logic
-  // ----------------------------------------------------
+  // SEO Content Machine
   let allGscOpportunities = [];
-  let currentSeoDraft = null;
-
-  // Sub-tab switching inside SEO Machine
   document.querySelectorAll('.seo-subnav-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.seo-subnav-btn').forEach((b) => b.classList.remove('active'));
@@ -3367,6 +3171,8 @@
     });
   });
 
+  const escapeHtml = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
   async function loadGscOpportunities(vertical = 'all') {
     const tbody = document.getElementById('gscTableBody');
     tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-muted);">Fetching GSC search opportunities...</td></tr>';
@@ -3376,7 +3182,6 @@
       const data = await res.json();
       allGscOpportunities = data.opportunities || [];
 
-      // Update counters
       document.getElementById('seoOpportunitiesCount').textContent = allGscOpportunities.length;
       document.getElementById('gscSubCount').textContent = allGscOpportunities.length;
       document.getElementById('kpiStrikingCount').textContent = allGscOpportunities.length;
@@ -3404,35 +3209,25 @@
       return `
         <tr>
           <td>
-            <div style="font-weight:700; color:#fff; cursor:pointer;" onclick="exploreKeyword('${escapeHtml(o.query)}')">
+            <div style="font-weight:700; color:var(--text); cursor:pointer;" onclick="exploreKeyword('${escapeHtml(o.query)}')">
               ${escapeHtml(o.query)}
             </div>
-            <div style="font-size:0.72rem; color:var(--text-dim); margin-top:0.2rem;">
+            <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem;">
               ${o.trigger_reason}
             </div>
           </td>
-          <td><span class="meta-chip">${escapeHtml(o.vertical)}</span></td>
+          <td><span class="clean-pill" style="font-size:10.5px;">${escapeHtml(o.vertical)}</span></td>
           <td><strong>${o.impressions.toLocaleString()}</strong></td>
           <td>${o.clicks}</td>
           <td>${o.ctr}%</td>
           <td><span class="pos-badge ${posClass}">${posLabel}</span></td>
           <td><span class="growth-badge">+${o.wow_growth_pct}%</span></td>
-          <td><span class="meta-chip">${o.intent}</span></td>
+          <td><span class="clean-pill" style="font-size:10.5px;">${o.intent}</span></td>
+          <td><strong>${o.opportunity_score}</strong></td>
           <td>
-            <strong>${o.opportunity_score}</strong>
-            <div class="score-bar-bg">
-              <div class="score-bar-fill" style="width: ${Math.min(100, o.opportunity_score)}%;"></div>
-            </div>
-          </td>
-          <td>
-            <div style="display:flex; gap:0.4rem;">
-              <button class="btn btn-purple btn-sm" onclick="runPipelineForQuery('${escapeHtml(o.query)}', '${escapeHtml(o.vertical)}')">
-                ⚡ Draft
-              </button>
-              <button class="btn btn-secondary btn-sm" onclick="exploreKeyword('${escapeHtml(o.query)}')">
-                🔍
-              </button>
-            </div>
+            <button class="btn btn-secondary btn-sm" onclick="runPipelineForQuery('${escapeHtml(o.query)}', '${escapeHtml(o.vertical)}')">
+              ⚡ Draft
+            </button>
           </td>
         </tr>
       `;
@@ -3441,7 +3236,6 @@
 
   window.exploreKeyword = async function(kw) {
     document.getElementById('d4sKeywordInput').value = kw;
-    // Switch to DataForSEO tab
     document.getElementById('btnSubDataForSEO').click();
     await enrichDataForSeo(kw);
   };
@@ -3478,42 +3272,39 @@
       document.getElementById('d4sKd').textContent = `${data.keyword_difficulty || 35}/100`;
       document.getElementById('d4sIntent').textContent = (data.search_intent || 'informational').toUpperCase();
 
-      // Clusters
       const clustersList = document.getElementById('d4sClustersList');
       clustersList.innerHTML = (data.keyword_clusters || []).map((c) => `
-        <div class="d4s-cluster-card">
+        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.6rem 0.8rem; display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-weight:600; color:#fff; font-size:0.84rem;">${escapeHtml(c.keyword)}</div>
-            <div style="font-size:0.72rem; color:var(--text-dim); margin-top:0.2rem;">Intent: ${c.intent} | CPC: $${(c.cpc || 0).toFixed(2)}</div>
+            <div style="font-weight:700; color:var(--text); font-size:12px;">${escapeHtml(c.keyword)}</div>
+            <div style="font-size:10.5px; color:var(--text-dim);">Intent: ${c.intent} | CPC: $${(c.cpc || 0).toFixed(2)}</div>
           </div>
-          <span class="meta-chip">Vol: ${(c.search_volume || 0).toLocaleString()}</span>
+          <span class="clean-pill" style="font-size:10.5px;">Vol: ${(c.search_volume || 0).toLocaleString()}</span>
         </div>
       `).join('');
 
-      // PAA
       const paaList = document.getElementById('d4sPaaList');
       paaList.innerHTML = (data.paa_questions || []).map((q) => `
-        <div style="background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.65rem 0.85rem; font-size:0.84rem; color:#e2e8f0;">
+        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.55rem 0.75rem; font-size:12px; color:var(--text);">
           ❓ ${escapeHtml(q)}
         </div>
       `).join('');
 
-      // SERPs
       const serpList = document.getElementById('d4sSerpList');
       serpList.innerHTML = (data.serp_competitors || []).map((s) => `
-        <div style="background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.85rem 1rem;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.3rem;">
+        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.75rem 0.9rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
             <span class="pos-badge striking">#${s.rank}</span>
-            <span style="font-size:0.75rem; color:var(--text-dim);">${escapeHtml(s.domain || '')}</span>
+            <span style="font-size:11px; color:var(--text-dim);">${escapeHtml(s.domain || '')}</span>
           </div>
-          <div style="font-weight:700; color:#38bdf8; font-size:0.88rem; margin-bottom:0.3rem;">
+          <div style="font-weight:700; color:var(--accent); font-size:12.5px; margin-bottom:0.25rem;">
             <a href="${s.url}" target="_blank" style="color:inherit;">${escapeHtml(s.title || '')}</a>
           </div>
-          <div style="font-size:0.8rem; color:var(--text-muted);">${escapeHtml(s.snippet || '')}</div>
+          <div style="font-size:11.5px; color:var(--text-muted);">${escapeHtml(s.snippet || '')}</div>
         </div>
       `).join('');
 
-      showToast(`DataForSEO dossier loaded for '${keyword}'!`);
+      showToast(`DataForSEO intelligence loaded for '${keyword}'!`);
     } catch (err) {
       showToast(err.message, 'error');
     }
@@ -3558,17 +3349,17 @@
       tbody.innerHTML = articles.map((a) => `
         <tr>
           <td>
-            <div style="font-weight:700; color:#fff;">${escapeHtml(a.title)}</div>
-            <div style="font-size:0.72rem; color:var(--text-dim); margin-top:0.2rem;">${a.slug} (${a.date})</div>
+            <div style="font-weight:700; color:var(--text);">${escapeHtml(a.title)}</div>
+            <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem;">${a.slug} (${a.date})</div>
           </td>
-          <td><span class="meta-chip">${a.vertical}</span></td>
-          <td><strong style="color:#38bdf8;">${escapeHtml(a.primary_keyword || '')}</strong></td>
+          <td><span class="clean-pill" style="font-size:10.5px;">${a.vertical}</span></td>
+          <td><strong style="color:var(--accent);">${escapeHtml(a.primary_keyword || '')}</strong></td>
           <td>
             <div style="display:flex; flex-wrap:wrap; gap:0.25rem;">
-              ${(a.secondary_keywords || []).map((sk) => `<span class="meta-chip" style="font-size:0.7rem;">${escapeHtml(sk)}</span>`).join('')}
+              ${(a.secondary_keywords || []).map((sk) => `<span class="tag-pill" style="font-size:10.5px;">${escapeHtml(sk)}</span>`).join('')}
             </div>
           </td>
-          <td><a href="${a.url}" target="_blank" style="font-size:0.75rem; color:var(--accent);">${escapeHtml(a.slug)}</a></td>
+          <td><a href="${a.url}" target="_blank" style="font-size:11.5px; color:var(--accent);">${escapeHtml(a.slug)}</a></td>
           <td><span class="pos-badge top10">🟢 Validated</span></td>
         </tr>
       `).join('');
@@ -3593,7 +3384,7 @@
             <td><strong>${escapeHtml(t.target_query)}</strong></td>
             <td>${t.initial_position}</td>
             <td><span class="pos-badge top10">#${t.current_position}</span></td>
-            <td><strong style="color:#34d399;">${deltaStr}</strong></td>
+            <td><strong style="color:var(--success);">${deltaStr}</strong></td>
             <td>${(t.impressions_7d || 0).toLocaleString()}</td>
             <td>${t.clicks_7d || 0}</td>
             <td>${((t.ctr || 0) * 100).toFixed(2)}%</td>
@@ -3606,7 +3397,6 @@
     }
   }
 
-  // Cannibalization audit tester button
   document.getElementById('btnTestCannibalization').addEventListener('click', async () => {
     const kw = document.getElementById('txtCannibalizationTest').value.trim();
     if (!kw) return;
@@ -3624,21 +3414,19 @@
 
     if (conflict) {
       resBox.innerHTML = `
-        <div style="background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.3); color:#fca5a5; padding:0.75rem 1rem; border-radius:6px;">
+        <div style="background:var(--danger-bg); border:1px solid var(--danger-border); color:var(--danger-text); padding:0.65rem 0.85rem; border-radius:6px;">
           ⚠️ <strong>Cannibalization Detected:</strong> '${kw}' overlaps with existing article <strong>'${conflict.title}'</strong>.
-          <br><span style="font-size:0.78rem;">Recommendation: Branch into child sub-topic or update '${conflict.slug}' directly.</span>
         </div>
       `;
     } else {
       resBox.innerHTML = `
-        <div style="background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.3); color:#6ee7b7; padding:0.75rem 1rem; border-radius:6px;">
+        <div style="background:var(--success-bg); border:1px solid var(--success-border); color:var(--success-text); padding:0.65rem 0.85rem; border-radius:6px;">
           ✅ <strong>Clear to Publish:</strong> No direct keyword conflict found across ${articles.length} published articles.
         </div>
       `;
     }
   });
 
-  // Event listeners for SEO Tab
   document.getElementById('filterGscVertical').addEventListener('change', (e) => {
     loadGscOpportunities(e.target.value);
   });
@@ -3651,8 +3439,8 @@
   });
   document.getElementById('btnSaveGrowthOs').addEventListener('click', saveGrowthOs);
   document.getElementById('btnRunSeoPipelineModal').addEventListener('click', () => {
-    const defaultQuery = allGscOpportunities[0] ? allGscOpportunities[0].query : 'agent evaluation bottlenecks';
-    const defaultVert = allGscOpportunities[0] ? allGscOpportunities[0].vertical : 'agentic_ai';
+    const defaultQuery = allGscOpportunities[0] ? allGscOpportunities[0].query : 'GPU memory bandwidth';
+    const defaultVert = allGscOpportunities[0] ? allGscOpportunities[0].vertical : 'gpu_hardware';
     runPipelineForQuery(defaultQuery, defaultVert);
   });
   document.getElementById('btnCopySchema').addEventListener('click', () => {
