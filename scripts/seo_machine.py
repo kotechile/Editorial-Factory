@@ -141,6 +141,27 @@ def _naturalize_question(question: str, kw: str, kw_prose: str) -> str:
     return re.sub(re.escape(kw), kw_prose, question, flags=re.IGNORECASE)
 
 
+def _format_sources(serp_competitors):
+    """Build a ## Sources block from SERP competitor data.
+
+    Live DataForSEO runs return real organic results (title + url); sandbox runs
+    return placeholder entries that must be replaced before publish. Kept data-driven
+    so the template never hardcodes fabricated citations.
+    """
+    lines = []
+    for i, c in enumerate(serp_competitors[:3], start=1):
+        url = (c.get("url") or "").strip()
+        title = (c.get("title") or "").strip()
+        domain = (c.get("domain") or "").strip()
+        if not url:
+            continue
+        label = title or domain or f"Source {i}"
+        lines.append(f"[{i}] {label}. {url}")
+    if not lines:
+        lines = ["[1] (No verified source attached — fill from DataForSEO SERP before publish.)"]
+    return "\n".join(lines)
+
+
 def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, vertical_id, persona_id):
     """Generate structured markdown draft containing full SEO metadata, schema, and sections."""
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -149,15 +170,17 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
     kw_prose = naturalize_kw(kw)
     slug = f"{today_str}_{slugify(kw)}"
 
-    # Generate meta title and description
-    title = f"{kw_title}: Production Architecture & Cost Reality"
-    meta_title = f"{kw_title} (Architectural Guide & Traps)"
+    # Generate meta title and description (domain-neutral: the Growth OS moat is
+    # "reality vs pitch", which must read correctly for any vertical — finance, legal,
+    # energy, hardware — not just software/MCP).
+    title = f"{kw_title}: What the Field Data Actually Shows"
+    meta_title = f"{kw_title} (Reality Check)"
     if len(meta_title) > 60:
         meta_title = meta_title[:57] + "..."
 
     meta_desc = (
-        f"A practitioner breakdown of {kw_prose}. Discover real production benchmarks, "
-        f"architectural bottlenecks, and the true cost tradeoffs before deploying."
+        f"A practitioner breakdown of {kw_prose}. Discover what the real-world data shows, "
+        f"where the hidden costs sit, and what to verify before you commit."
     )
     if len(meta_desc) > 160:
         meta_desc = meta_desc[:157] + "..."
@@ -167,15 +190,17 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
     quotes = growth_data.get("founder_quotes", [])
     anecdotes = growth_data.get("customer_anecdotes", [])
 
-    primary_stance = stances[0]["stance"] if stances else "Ground every claim in measurable production metrics."
-    primary_topic = stances[0]["topic"] if stances else "Production Reality"
+    primary_stance = stances[0]["stance"] if stances else "Ground every claim in verifiable evidence rather than the marketing pitch."
+    primary_topic = stances[0]["topic"] if stances else "The Hype Gap"
 
     primary_anecdote = anecdotes[0] if anecdotes else {
-        "title": "Field Production Failure",
-        "details": "A high-throughput deployment encountered severe latency spikes and compounding compute costs during peak traffic."
+        "title": "Field Report",
+        "details": "A real-world rollout exposed a wide gap between the pitch and what actually held up under real conditions."
     }
 
-    quote_text = f'> "{quotes[0]["quote"]}" — {quotes[0]["author"]}' if quotes else f'> "Always optimize architecture for maintainability before scaling complexity." — Founder Note'
+    quote_text = f'> "{quotes[0]["quote"]}" — {quotes[0]["author"]}' if quotes else f'> "Measure before you scale, and trust your own data over anyone\u2019s demo." — Founder Note'
+
+    sources_block = _format_sources(keyword_data.get("serp_competitors", []))
 
     # Build JSON-LD Schema
     schema_dict = {
@@ -230,55 +255,53 @@ slug: "{slug}"
 ---
 
 <!-- lead -->
-When evaluating {kw_prose}, engineering teams frequently encounter a sharp divide between lab benchmarks and production realities [1]. A recent field analysis revealed that unconstrained deployments suffered an immediate 3.5× degradation in throughput under high-concurrency workloads [2].
+Most of what gets written about {kw_prose} oversimplifies it. The people who actually deal with it report a very different picture [1].
 
 <!-- tension -->
-## Why Fragile Prompt Chains Fail Under Production Concurrency
+## Why the Pitch Keeps Outrunning the Reality
 
-The systemic challenge is rooted in {primary_topic.lower()}: {primary_stance} [1]. 
+The systemic challenge is rooted in {primary_topic.lower()}: {primary_stance} [1].
 
-As observed in live environments ({primary_anecdote['title']}), {primary_anecdote['details']} [2]. Many teams treat {kw_prose} as a pure speed problem, ignoring how cascading latency and unmonitored API calls compound down the stack.
+The field data backs this up: {primary_anecdote['details']} [2]. Most people assume it is a solved problem and miss how the failure modes compound quietly until they surface at the worst moment.
 
 {quote_text}
 
 <!-- tactical-insight -->
-## 3 Architectural Guardrails for Production MCP Servers
+## 3 Guardrails That Actually Hold Up
 
-To deploy these servers without blowing up your reliability budget, implement three structural controls:
+Three structural controls separate the people who get this right from the ones who keep discovering the failure modes the hard way:
 
-1. **Establish Strict Execution Boundaries**: Cap recursive steps and enforce deterministic fallback timeouts on all tool invocations [1].
-2. **Standardize on Verifiable Benchmarks**: Continuously test candidate changes against private production logs rather than synthetic marketing datasets [2].
-3. **Implement Context State Compaction**: Prune conversational history and state tokens before passing payloads across loop iterations to prevent token drift [3].
+1. **Set hard limits before you need them.** Whatever the expensive failure mode is, bound it up front — cap the retries, the runaway spend, and the drift [1].
+2. **Validate against real field data, not demos.** Benchmarks and vendor claims mislead; test against your own production or case history [2].
+3. **Watch the hidden compounding cost.** The visible line item is rarely the real one — overhead and drift accumulate where nobody is measuring [3].
 
 <!-- nuanced-takeaway -->
-## State Overhead, Observability & Realistic Cost Ceilings
+## The Hidden Cost Nobody Budgets For
 
-The hard catch is that eliminating these bottlenecks requires upfront investment in observability and deterministic tooling. Teams looking for a zero-effort drop-in solution will find that automated frameworks still demand rigorous domain-specific guardrails.
+The hard catch is that closing this gap takes upfront investment in measurement and discipline, not just intent. Teams looking for a zero-effort shortcut will find that the real answers still demand domain-specific rigor.
 
 <!-- tldr -->
 ## Key Takeaways
 
-- Generic implementations degrade under production concurrency without deterministic boundaries.
+- The gap between the pitch and the real-world result is the real cost center.
 - {primary_stance}
-- Cap loop recursions, compact state tokens, and gate deployments on private production evals.
+- Bound the failure modes, validate against real data, and gate decisions on evidence.
 
 ## Sources
-[1] Systems Architecture Journal, Production Reliability & Concurrency Benchmarks, 2026. https://architecturejournal.io/benchmarks
-[2] Enterprise Engineering Field Reports, Empirical Failure Modes in High-Scale Deployments, 2026. https://cloudscale.dev/reports
-[3] Open Protocol Foundation, State Management & Execution Budgets Specification, 2026. https://modelcontextprotocol.io/spec
+{sources_block}
 
 <!-- linkedin -->
-Most discussions about {kw_prose} ignore what happens when traffic hits production scale.
+Most discussions about {kw_prose} ignore what actually happens in the real world.
 
-Here is what our field data reveals:
+Here is what the field data reveals:
 
-1. Unconstrained loops burn compute: without deterministic step caps, failure recovery costs compound exponentially.
-2. Synthetic benchmarks lie: evals must run against your own historical edge cases, not generic demos.
-3. State management is the real bottleneck: token accumulation degrades accuracy faster than model latency.
+1. Hard limits matter more than cleverness: unbound retries and runaway costs compound fast.
+2. Real data beats demos: validate against your own history, not vendor claims.
+3. The hidden cost is the real one: overhead and drift accumulate where nobody is measuring.
 
 {primary_stance}
 
-What guardrails is your team using before shipping to production?
+What is your team actually measuring before you commit?
 
 <!-- schema -->
 ```json
