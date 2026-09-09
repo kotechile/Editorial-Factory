@@ -587,18 +587,14 @@ const server = createServer(async (req, res) => {
         await saveLocalPersonas(personas);
 
         if (sbConfig.isConfigured) {
-          try {
-            await supabaseFetch('editorial_personas', {
-              method: 'POST',
-              body: JSON.stringify({
-                id: slug,
-                ...newPersona,
-                updated_at: new Date().toISOString(),
-              }),
-            });
-          } catch (e) {
-            console.warn('[Supabase] Warning syncing created persona:', e.message);
-          }
+          supabaseFetch('editorial_personas', {
+            method: 'POST',
+            body: JSON.stringify({
+              id: slug,
+              ...newPersona,
+              updated_at: new Date().toISOString(),
+            }),
+          }).catch((e) => console.warn('[Supabase] Warning syncing created persona:', e.message));
         }
 
         return sendJson(res, 201, { status: 'ok', id: slug, persona: newPersona });
@@ -629,17 +625,13 @@ const server = createServer(async (req, res) => {
         await saveLocalPersonas(personas);
 
         if (sbConfig.isConfigured) {
-          try {
-            await supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
-              method: 'PATCH',
-              body: JSON.stringify({
-                ...updated,
-                updated_at: new Date().toISOString(),
-              }),
-            });
-          } catch (e) {
-            console.warn('[Supabase] Warning syncing updated persona:', e.message);
-          }
+          supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
+            method: 'PATCH',
+            body: JSON.stringify({
+              ...updated,
+              updated_at: new Date().toISOString(),
+            }),
+          }).catch((e) => console.warn('[Supabase] Warning syncing updated persona:', e.message));
         }
 
         return sendJson(res, 200, { status: 'ok', id: subpath, persona: updated });
@@ -655,13 +647,9 @@ const server = createServer(async (req, res) => {
         await saveLocalPersonas(personas);
 
         if (sbConfig.isConfigured) {
-          try {
-            await supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
-              method: 'DELETE',
-            });
-          } catch (e) {
-            console.warn('[Supabase] Warning syncing deleted persona:', e.message);
-          }
+          supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
+            method: 'DELETE',
+          }).catch((e) => console.warn('[Supabase] Warning syncing deleted persona:', e.message));
         }
 
         return sendJson(res, 200, { status: 'ok', deleted: subpath });
@@ -676,30 +664,8 @@ const server = createServer(async (req, res) => {
 
       if (req.method === 'GET') {
         const personas = await getLocalPersonas();
-        let verticals = await getLocalVerticals();
-        let storageMode = sbConfig.isConfigured ? 'supabase' : 'local';
-
-        if (sbConfig.isConfigured) {
-          try {
-            const remoteVerts = await supabaseFetch('editorial_verticals?select=*&order=id.asc');
-            if (Array.isArray(remoteVerts) && remoteVerts.length > 0) {
-              verticals = remoteVerts.map((r) => ({
-                id: r.id,
-                label: r.label || r.id,
-                cadence: r.cadence || '0 6 * * 1',
-                sources: r.sources || [],
-                primary_angles: r.primary_angles || [],
-                target_persona: r.target_persona || 'eng_leader',
-                enable_dataforseo: r.enable_dataforseo !== undefined ? r.enable_dataforseo : true,
-              }));
-              // update local mirror
-              await saveLocalVerticals(verticals);
-            }
-          } catch (e) {
-            console.warn('[Supabase] Could not fetch remote verticals, using local cache:', e.message);
-            storageMode = 'local_cache (supabase offline)';
-          }
-        }
+        const verticals = await getLocalVerticals();
+        const storageMode = sbConfig.isConfigured ? 'supabase (mirrored)' : 'local';
 
         return sendJson(res, 200, {
           status: 'ok',
@@ -739,18 +705,14 @@ const server = createServer(async (req, res) => {
         await saveLocalVerticals(verticals);
 
         if (sbConfig.isConfigured) {
-          try {
-            await supabaseFetch('editorial_verticals', {
-              method: 'POST',
-              body: JSON.stringify({
-                ...newVertical,
-                is_active: true,
-                updated_at: new Date().toISOString(),
-              }),
-            });
-          } catch (e) {
-            console.warn('[Supabase] Warning syncing created vertical:', e.message);
-          }
+          supabaseFetch('editorial_verticals', {
+            method: 'POST',
+            body: JSON.stringify({
+              ...newVertical,
+              is_active: true,
+              updated_at: new Date().toISOString(),
+            }),
+          }).catch((e) => console.warn('[Supabase] Warning syncing created vertical:', e.message));
         }
 
         return sendJson(res, 201, { status: 'ok', vertical: newVertical });
@@ -816,24 +778,19 @@ const server = createServer(async (req, res) => {
         await saveLocalVerticals(verticals);
 
         if (sbConfig.isConfigured) {
-          try {
-            await supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
-              method: 'PATCH',
-              body: JSON.stringify({
-                label: updated.label,
-                cadence: updated.cadence,
-                target_persona: updated.target_persona,
-                sources: updated.sources,
-                primary_angles: updated.primary_angles,
-                enable_dataforseo: updated.enable_dataforseo,
-                updated_at: new Date().toISOString(),
-              }),
-            });
-          } catch (e) {
-            console.warn('[Supabase] Warning syncing updated vertical:', e.message);
-          }
+          supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+            method: 'PATCH',
+            body: JSON.stringify({
+              label: updated.label,
+              cadence: updated.cadence,
+              target_persona: updated.target_persona,
+              sources: updated.sources,
+              primary_angles: updated.primary_angles,
+              enable_dataforseo: updated.enable_dataforseo,
+              updated_at: new Date().toISOString(),
+            }),
+          }).catch((e) => console.warn('[Supabase] Warning syncing updated vertical:', e.message));
         }
-
 
         return sendJson(res, 200, { status: 'ok', vertical: updated });
       }
@@ -850,13 +807,9 @@ const server = createServer(async (req, res) => {
         await saveLocalVerticals(filtered);
 
         if (sbConfig.isConfigured) {
-          try {
-            await supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
-              method: 'DELETE',
-            });
-          } catch (e) {
-            console.warn('[Supabase] Warning syncing deleted vertical:', e.message);
-          }
+          supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+            method: 'DELETE',
+          }).catch((e) => console.warn('[Supabase] Warning syncing deleted vertical:', e.message));
         }
 
         return sendJson(res, 200, { status: 'ok', deleted: targetId });

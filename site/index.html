@@ -2089,9 +2089,17 @@
       <div class="form-group">
         <label class="form-label">Primary Editorial Angles</label>
         <div class="tag-input-box" id="anglesBox">
-          <input type="text" class="tag-text-input" id="angleInput" placeholder="Type editorial angle and press Enter...">
+          <input type="text" class="tag-text-input" id="angleInput" placeholder="Type or paste editorial angle(s) and press Enter or comma...">
         </div>
-        <div class="form-help">Core analytical themes prioritized by radar and virality judge.</div>
+        <div class="preset-chips" style="margin-top: 0.5rem;">
+          <span class="preset-chip" onclick="addAnglePreset('architecture bottlenecks')">+ architecture bottlenecks</span>
+          <span class="preset-chip" onclick="addAnglePreset('production failure modes')">+ production failure modes</span>
+          <span class="preset-chip" onclick="addAnglePreset('cost tradeoffs vs ROI')">+ cost tradeoffs vs ROI</span>
+          <span class="preset-chip" onclick="addAnglePreset('benchmark traps vs field data')">+ benchmark traps vs field data</span>
+          <span class="preset-chip" onclick="addAnglePreset('build vs buy math')">+ build vs buy math</span>
+          <span class="preset-chip" onclick="addAnglePreset('security & compliance ceilings')">+ security & compliance ceilings</span>
+        </div>
+        <div class="form-help">Core analytical themes prioritized by radar and virality judge. Paste multiple angles separated by commas.</div>
       </div>
 
       <div class="form-group" style="background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem; margin-top: 1rem;">
@@ -3087,32 +3095,64 @@
   window.removeSourceChip = (idx) => { currentSources.splice(idx, 1); renderSourceChips(); };
   window.removeAngleChip = (idx) => { currentAngles.splice(idx, 1); renderAngleChips(); };
 
+  function addSourcesFromText(text) {
+    if (!text) return;
+    const tokens = text.split(/[\n,;]+/).map((t) => t.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_')).filter(Boolean);
+    tokens.forEach((val) => {
+      if (val && !currentSources.includes(val)) {
+        currentSources.push(val);
+      }
+    });
+    renderSourceChips();
+  }
+
+  function addAnglesFromText(text) {
+    if (!text) return;
+    const tokens = text.split(/[\n,;]+/).map((t) => t.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
+    tokens.forEach((val) => {
+      if (val && !currentAngles.includes(val)) {
+        currentAngles.push(val);
+      }
+    });
+    renderAngleChips();
+  }
+
   sourceInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ',') {
       e.preventDefault();
-      const val = sourceInput.value.trim().replace(/^,+|,+$/g, '');
-      if (val && !currentSources.includes(val)) {
-        currentSources.push(val);
-        renderSourceChips();
-      }
+      addSourcesFromText(sourceInput.value);
       sourceInput.value = '';
     }
+  });
+
+  sourceInput.addEventListener('paste', () => {
+    setTimeout(() => {
+      addSourcesFromText(sourceInput.value);
+      sourceInput.value = '';
+    }, 10);
   });
 
   angleInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ',') {
       e.preventDefault();
-      const val = angleInput.value.trim().replace(/^,+|,+$/g, '');
-      if (val && !currentAngles.includes(val)) {
-        currentAngles.push(val);
-        renderAngleChips();
-      }
+      addAnglesFromText(angleInput.value);
       angleInput.value = '';
     }
   });
 
+  angleInput.addEventListener('paste', () => {
+    setTimeout(() => {
+      addAnglesFromText(angleInput.value);
+      angleInput.value = '';
+    }, 10);
+  });
+
   window.addSourcePreset = (src) => {
     if (!currentSources.includes(src)) { currentSources.push(src); renderSourceChips(); }
+  };
+
+  window.addAnglePreset = (angle) => {
+    if (!currentAngles.includes(angle)) { currentAngles.push(angle); renderAngleChips(); }
   };
 
   window.setCadencePreset = (cron, text) => {
@@ -3161,6 +3201,15 @@
 
   document.getElementById('verticalForm').addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (angleInput.value.trim()) {
+      addAnglesFromText(angleInput.value);
+      angleInput.value = '';
+    }
+    if (sourceInput.value.trim()) {
+      addSourcesFromText(sourceInput.value);
+      sourceInput.value = '';
+    }
+
     const isEdit = document.getElementById('formIsEdit').value === 'true';
     const id = document.getElementById('verticalId').value.trim();
     const label = document.getElementById('verticalLabel').value.trim();
@@ -3178,10 +3227,13 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error('Failed to save');
-      showToast(`Vertical '${label}' saved!`);
+      if (!res.ok) {
+        const errJson = await res.json().catch(() => ({}));
+        throw new Error(errJson.error || 'Failed to save');
+      }
+      showToast(`Vertical '${label}' (${currentAngles.length} angles) saved!`);
       verticalModalBackdrop.classList.remove('active');
-      loadVerticals();
+      await loadVerticals();
     } catch (err) {
       showToast(err.message, 'error');
     }

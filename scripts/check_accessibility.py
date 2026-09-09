@@ -84,8 +84,8 @@ def is_defined(acr, text):
     """True if the acronym is expanded anywhere, in either order:
     'Expanded Form (ACR)' or 'ACR (Expanded Form / phrase)'. Both are common
     conventions and both make the term followable by a general reader."""
-    order_a = re.compile(r"[A-Z][A-Za-z0-9 ]{2,90}\(\s*" + re.escape(acr) + r"\s*\)")
-    order_b = re.compile(r"\b" + re.escape(acr) + r"\b\s*\(\s*[A-Za-z][A-Za-z0-9' ]{4,90}\s*\)")
+    order_a = re.compile(r"[A-Za-z][A-Za-z0-9 \-]{2,90}\(\s*" + re.escape(acr) + r"\s*\)")
+    order_b = re.compile(r"\b" + re.escape(acr) + r"\b\s*\(\s*[A-Za-z][A-Za-z0-9' \-]{4,90}\s*\)")
     return bool(order_a.search(text) or order_b.search(text))
 
 

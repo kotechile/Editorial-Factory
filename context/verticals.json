@@ -15,7 +15,9 @@
         "autonomous orchestration",
         "MCP servers",
         "agent evaluation bottlenecks",
-        "multi-agent failure modes"
+        "multi-agent failure modes",
+        "production memory architectures",
+        "subagent cost optimization"
       ],
       "target_persona": "eng_leader",
       "enable_dataforseo": true
