@@ -115,11 +115,15 @@ Gates — the piece FAILS the ACCESS gate if:
    says why that is odd.
 4. **The body reads at a difficult level for a general audience.** Checker: target
    **Flesch Reading Ease ≥ 60** on the body (frontmatter, `## Sources`, and the
-   `<!-- linkedin -->` variant are excluded). Hard floor: ≥ 50. Aim for ~15 words per
-   sentence; strictly split anything over 20 words into two. Shorten nominal compounds
-   and re-spell legalisms; vary sentence length; prefer verbs over noun phrases. Long
-   proper nouns (Walmart, Caterpillar) and the numbers are fine — the barrier is long
-   sentences, not long names.
+   `<!-- linkedin -->` variant are excluded). Hard floor: ≥ 50. Readability comes from plain
+   **words**, not short sentences — swap long/technical terms for everyday ones
+   ("set up" not "implementation", "slows down" not "degrades throughput") and write connected
+   ~14-20-word sentences with variation; do NOT fragment into choppy one-liners. Long proper
+   nouns and the numbers are fine; the barrier is word choice.
+5. **Keyword stuffing / non-fluent prose.** A target search phrase appears **at most 2-3 times**
+   in the whole body — let the title/meta/headings carry it and rephrase everywhere else
+   (pronouns, synonyms, "these systems"). Never let it read like a keyword-matching exercise.
+   The checker flags `primary_keyword` appearing ≥4× in the body as a FAIL.
 
 Do not sacrifice accuracy or a citation: this is a swap of vocabulary, never a change of fact.
 

@@ -68,9 +68,17 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     if diag["flesch"] is not None and diag["flesch"] < diag["target"]:
         tip.append("Raise readability: split long sentences, prefer plain verbs over noun phrases, cut filler clauses.")
     if diag["flesch"] is not None and diag["flesch"] < diag["floor"]:
-        tip.append("The text is still too dense for a general reader. TARGET: sentences of ~15 words or fewer — "
-                   "strictly split any sentence over 20 words into two. One idea per sentence; drop conjunctive "
-                   "clauses ('which', 'while', 'as', 'and that'). Shorten the wording, not the facts.")
+        tip.append("The text is still too dense. READABILITY comes from plain WORDS, not short sentences: "
+                   "swap long/technical terms for everyday ones (\"set up\" not \"implementation\", \"build\" not "
+                   "\"architect\", \"slows down\" not \"degrades throughput\"), and write connected 14-20 word "
+                   "sentences with variation — do NOT fragment into choppy one-liners. This is a vocabulary fix.")
+    if diag.get("long_word") is not None and diag.get("long_word", 0) > 35:
+        tip.append("Too many long words — replace them with short, common equivalents to raise readability.")
+    if diag.get("primary_keyword") and diag.get("keyword_count", 0) >= 3:
+        tip.append(f"KEYWORD STUFFING: repeat '{diag['primary_keyword']}' AT MOST 2-3 times in the whole body. "
+                   "Let the title/meta/H2 carry it. Everywhere else rephrase naturally — use pronouns, "
+                   "'these systems', 'MCP servers', or the topic itself. Never write the keyword verbatim more "
+                   "than twice in prose.")
     if tip:
         notes.append("HOW: " + " ".join(tip))
     if extra:

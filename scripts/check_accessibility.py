@@ -144,14 +144,37 @@ def measure(path, target=TARGET, floor=FLOOR):
     if jarg:
         warns.append("jargon to gloss/replace: " + ", ".join(jarg))
 
+    # Keyword-stuffing guard (topic-agnostic: reads the article's own primary_keyword).
+    kw, kw_count = _keyword_density(path, text)
+    if kw:
+        if kw_count >= 4:
+            fails.append(f"keyword stuffing: '{kw}' appears {kw_count}x in body (max 3)")
+        elif kw_count >= 2:
+            warns.append(f"keyword density high: '{kw}' appears {kw_count}x in body")
+
     return {
         "file": pathlib.Path(path).name,
         "flesch": score, "target": target, "floor": floor,
         "words": w, "sents": s, "long_word": long_rate,
         "undefined_acronyms": undef, "jargon": jarg,
+        "primary_keyword": kw, "keyword_count": kw_count,
         "warnings": warns, "fails": fails,
         "verdict": "PASS" if not fails else "FAIL",
     }
+
+
+def _keyword_density(path, body_text):
+    """Return (primary_keyword, occurrences_in_body) from the article's own frontmatter, so the
+    gate can flag keyword stuffing on ANY topic without a hardcoded keyword list."""
+    raw = pathlib.Path(path).read_text()
+    m = re.search(r"primary_keyword:\s*[\"']?([^\"'\n]+)", raw)
+    if not m:
+        return None, 0
+    kw = m.group(1).strip()
+    low = body_text.lower()
+    # normalize: count phrase occurrences ignoring case
+    count = len(re.findall(re.escape(kw.lower()), low))
+    return kw, count
 
 
 def check(path, target=TARGET, floor=FLOOR):

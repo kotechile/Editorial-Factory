@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 from gsc_analyzer import analyze_opportunities, load_gsc_data
 from dataforseo_client import DataForSEOClient
 import growth_os as gos
+import check_accessibility as ca
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTEXT_DIR = ROOT / "context"
@@ -48,6 +49,21 @@ def load_verticals():
         with open(VERTICALS_FILE, "r", encoding="utf-8") as f:
             return {v["id"]: v for v in json.load(f).get("verticals", [])}
     return {}
+
+
+def _faq_answer(question: str, kw: str, primary_stance: str) -> str:
+    """Give each PAA (people-also-ask) question its own distinct, on-topic answer, instead of the
+    identical boilerplate that used to be repeated for every question (which SEO reads as low-quality)."""
+    ql = question.lower()
+    if any(x in ql for x in ("cause", "fail", "break", "why", "problem")):
+        return (f"Failure usually comes from missing hard limits: no cap on repeating steps, no timeout on "
+                f"tool calls, and no budget guard. That is exactly what a production {kw} setup needs.")
+    if any(x in ql for x in ("solve", "how", "fix", "avoid", "team", "leading")):
+        return ("Teams solve it by capping recursion, testing changes against their own production logs "
+                "instead of marketing demos, and trimming chat history before each step.")
+    if any(x in ql for x in ("benchmark", "number", "measure", "real", "production", "metric")):
+        return f"Real numbers only come from running against private production logs; synthetic data misleads. {primary_stance}"
+    return primary_stance
 
 
 def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, vertical_id, persona_id):
@@ -104,7 +120,7 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
                         "name": q,
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": f"Production data indicates {kw} requires deterministic boundaries, measurable evals, and strict budget gates."
+                            "text": _faq_answer(q, kw, primary_stance)
                         }
                     } for q in keyword_data.get("paa_questions", [])[:3]
                 ]
@@ -144,14 +160,14 @@ When evaluating {kw}, engineering teams frequently encounter a sharp divide betw
 
 The systemic challenge is rooted in {primary_topic.lower()}: {primary_stance} [1]. 
 
-As observed in live environments ({primary_anecdote['title']}), {primary_anecdote['details']} [2]. Most teams treat {kw} as an isolated optimization problem, ignoring how cascading latency and unmonitored API calls compound down the stack.
+As observed in live environments ({primary_anecdote['title']}), {primary_anecdote['details']} [2]. Many teams treat MCP server implementation as a pure speed problem, ignoring how cascading latency and unmonitored API calls compound down the stack.
 
 {quote_text}
 
 <!-- tactical-insight -->
-## 3 Architectural Guardrails for Production {kw.title()}
+## 3 Architectural Guardrails for Production MCP Servers
 
-To deploy {kw} without blowing up your reliability budget, implement three structural controls:
+To deploy these servers without blowing up your reliability budget, implement three structural controls:
 
 1. **Establish Strict Execution Boundaries**: Cap recursive steps and enforce deterministic fallback timeouts on all tool invocations [1].
 2. **Standardize on Verifiable Benchmarks**: Continuously test candidate changes against private production logs rather than synthetic marketing datasets [2].
@@ -165,7 +181,7 @@ The hard catch is that eliminating these bottlenecks requires upfront investment
 <!-- tldr -->
 ## Key Takeaways
 
-- Generic implementations of {kw} degrade under production concurrency without deterministic boundaries.
+- Generic implementations degrade under production concurrency without deterministic boundaries.
 - {primary_stance}
 - Cap loop recursions, compact state tokens, and gate deployments on private production evals.
 
@@ -175,7 +191,7 @@ The hard catch is that eliminating these bottlenecks requires upfront investment
 [3] Open Protocol Foundation, State Management & Execution Budgets Specification, 2026. https://modelcontextprotocol.io/spec
 
 <!-- linkedin -->
-Most discussions about {kw} ignore what happens when traffic hits production scale.
+Most discussions about MCP server work ignore what happens when traffic hits production scale.
 
 Here is what our field data reveals:
 
@@ -280,7 +296,11 @@ def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=Tr
             result = hl3.humanize_single_draft(draft_content, final_file)
             if not final_file.exists():
                 final_file.write_text(result + "\n", encoding="utf-8")
-            print(f"  ✅ Frontier rewrite completed and verified.")
+            acc = ca.measure(str(final_file))
+            if acc["verdict"] == "PASS":
+                print(f"  ✅ Frontier rewrite complete — accessibility PASS (Flesch {acc['flesch']}).")
+            else:
+                print(f"  ⚠️ Frontier rewrite complete but HELD — accessibility FAIL ({acc['fails']}). Not publishable as-is.")
         except Exception as e:
             print(f"  ⚠️ Frontier rewrite notice ({e}). Final draft written from base.")
             final_file.write_text(draft_content, encoding="utf-8")

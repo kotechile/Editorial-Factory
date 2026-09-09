@@ -7,57 +7,114 @@ slug: mckinsey-ai-roi-flat-build-vs-buy-flip
 ---
 
 <!-- lead -->
-Forty percent of billion-dollar companies now scale Artificial Intelligence (AI) agents. These programs run tasks on their own. That number is up from 27 percent last year [1]. Yet the share of companies seeing real profit did not move. It sits at 37 percent. This matches last year exactly [1]. Meanwhile, nearly one in three companies recently declined to buy software. They realized they could build it themselves [1].
+Forty percent of billion-dollar companies now use Artificial Intelligence (AI) agents widely across their teams. That is a steep climb from 27 percent just one year ago [1]. Yet the number of businesses making real money from these systems refused to budge. That figure sits at 37 percent, exactly where it stalled last year [1]. At the same time, nearly one in three companies recently refused to buy software because they can now build it themselves [1].
 
 <!-- tension -->
-The gap between adoption and returns is the real story. Companies rush to deploy tools. Profits lag behind. McKinsey polled 1,719 leaders across 97 nations this summer. The firm found 88 percent of organizations use the technology. Forty-four percent say they are scaling it enterprise-wide. That is up from 38 percent a year ago [1]. Yet only 37 percent see an impact on Earnings Before Interest and Taxes (EBIT). This metric tracks profit before debt and taxes. Just 6 percent qualify as high performers. These leaders credit the tools with at least 5 percent of this profit metric. Both figures are flat year over year [1].
+Usage races ahead of financial returns. McKinsey's 2026 State of AI survey polled 1,719 leaders across 97 countries. It found that 88 percent of groups use the technology in at least one business area [1]. Forty-four percent say they use it across the whole company, up from 38 percent last year [1]. But only 37 percent tie any operating profit—measured as Earnings Before Interest and Taxes (EBIT)—to these tools [1]. Just 6 percent count as "high performers" who credit the tools with at least a 5 percent profit boost. Both of those financial numbers stayed flat over the past year [1].
 
-The sharpest new signal involves the build-versus-buy choice. Thirty-two percent of organizations decided against buying a software product [1]. They skipped the purchase because smart coding tools let them build it internally. These systems write code on their own. This presents a quiet threat for software vendors. A third of the market now defaults to building software in-house. That marks a massive shift in technology budgets. It happened in a single survey cycle.
+The biggest threat to software sellers hides in the choice to build or buy. Thirty-two percent of groups decided not to buy a software product because smart coding tools let them build it themselves [1]. A third of the market now defaults to building. This shifts how engineering teams spend their budgets, and it happened in just one year.
 
-Cost is also starting to bite back. About 20 percent of respondents say operating costs limit their use [1]. These costs include the price paid per token. A token is a basic unit of processed data. Klynveld Peat Marwick Goerdeler (KPMG) adds to this operational picture. The global accounting firm found 65 percent of groups struggle to scale use cases. That is nearly double the prior quarter. Another 62 percent name skills gaps as a barrier to returns [2]. The bottleneck is no longer the model. It is the human work around the model.
+Rising costs also hurt the buyers. Roughly 20 percent of leaders say daily operating costs limit their use [1]. This includes token costs, the tiny fees charged every time a user asks a language model a question. Data from Klynveld Peat Marwick Goerdeler (KPMG) fills out the daily picture. Sixty-five percent of groups struggle to expand these automated tasks, nearly double the previous quarter [2]. Another 62 percent say a lack of staff skills blocks them from showing a Return on Investment (ROI) [2]. The roadblock is no longer the model itself. The friction lives in the human work around it.
 
 <!-- tactical-insight -->
-The 6 percent who win share a proven playbook. They do not just buy better models. McKinsey finds these high performers do three things differently [1]. First, they pursue growth alongside efficiency. They do not cut costs alone. Second, they redesign the entire workflow. They avoid dropping new technology into an old process. Finally, they back the deployment with strict operational rigor.
+The 6 percent of companies actually making money share a simple playbook. McKinsey's high performers chase growth alongside efficiency, rather than just cutting costs [1]. They redesign the daily work that holds the new tool, instead of forcing a new tool into an old routine.
 
-Engineering leaders must make two concrete moves. First, stop measuring success by adoption rates. Pick one specific use case with a clear cost baseline. Good options include customer service or claims processing. Set up financial tracking for it from day one. Many organizations are stuck at zero returns. They rolled out a smart assistant to ten thousand people with no financial metric. Second, treat the build-versus-buy decision as a default question. Do not wait for an annual review. Ask a simple question before renewing any vendor contract. Can an automated coding tool build a first version cheaply? Do not confuse a rough prototype with a finished product. The 32 percent who declined to buy software remain on the hook. They must handle integration, security, and maintenance. Vendors usually bundle those parts into a signed contract.
+Engineering leaders can turn this into two clear moves. First, stop measuring success by how many people use the tool. Pick a single task with a clear starting cost—like customer service routing or back-office checks—and track the dollars from day one. Companies stuck at zero financial impact usually gave a chatbot to ten thousand workers without defining a single goal.
+
+Second, treat the build-versus-buy choice as a daily question rather than a yearly review. Before you renew a vendor contract, ask if an internal team can build a basic version cheaply using an automated coding assistant. Just do not confuse a rough early version with a finished product. The 32 percent of companies refusing to buy software still have to pay for security, daily fixes, and long-term upkeep. A vendor usually handles those heavy burdens.
 
 <!-- nuanced-takeaway -->
-Read the 37 percent figure honestly. The word "some" does heavy lifting in the phrasing. McKinsey cites "at least some impact" on earnings [1]. Only 6 percent credit the technology with 5 percent or more of profit. Eighty percent of individuals report the tools improved their personal output [1]. Individual output is not the same as enterprise earnings. That gap is not just an execution problem. It is a measurement problem. Productivity rarely reaches a cost line on a financial statement. Time saved is easy to claim. It is hard to defend to an auditor.
+Read that 37 percent figure closely. The phrase claiming "at least some" profit impact carries a lot of weight in McKinsey's report [1]. Only 6 percent of leaders credit the technology with 5 percent or more of their EBIT [1]. While 80 percent of workers say automation improved their personal speed, faster workers do not automatically equal higher company earnings [1].
 
-The report title gives the game away. It promises a road to Return on Investment (ROI). This metric tracks actual financial gains. Roads are where you are going. They are not where you stand. The technology has not yet cleared the earnings bar for most companies. The data gives corporate boards a reason to ask tough questions. They will ask the exact same questions they asked last year. What changes is who has to answer them. Engineering leaders must now answer with a hard financial number.
+This gap points to a tracking problem just as much as a failure to do the work. Faster work that never lowers a cost line on a financial statement is easy to claim but impossible to defend to a board. McKinsey titled the report "On the road to ROI"—a nod to the ongoing search for real value. Roads describe a journey, not an end point. The technology still fails to clear the earnings bar for most companies. The data gives boards plenty of reasons to ask the exact same questions they asked last year. The only difference is who has to answer them. Engineering leaders now need to bring hard numbers to the table.
 
 <!-- tldr -->
-- Adoption hit a record. Forty percent of billion-dollar companies scale Artificial Intelligence agents. The profit impact remains flat at 37 percent [1].
-- The build-versus-buy line flipped. Thirty-two percent of companies declined to buy software. They can build it internally now [1].
-- The fix requires workflow redesign and a clear cost baseline. Claiming "some impact" is a weak financial defense [1][2].
+- Adoption hit a record: 40% of billion-dollar companies use AI agents widely (up from 27%), yet EBIT impact remains flat at 37% and only 6% are "high performers" [1].
+- The build-versus-buy line flipped: 32% of companies recently declined to buy software they can now build in-house using automated coding tools [1].
+- The fix requires workflow redesign and a clear starting cost, not better models — and claiming "some profit impact" masks a lack of real financial returns [1][2].
 
 ## Sources
 [1] McKinsey & Company, "The state of AI in 2026: On the road to ROI" (Aug 25, 2026) — https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
 [2] KPMG US, "The ROI Horizon: Navigating the Transition from AI Deployment to Enterprise Value" (Global AI Pulse, 2026) — https://kpmg.com/us/en/media/blogs/2026/q1-ai-pulse-1.html
 
 <!-- linkedin -->
-Artificial Intelligence adoption hit a record this year. Enterprise earnings from it did not move.
+AI adoption hit a record this year. Enterprise earnings from it did not move.
 
-McKinsey's new survey polled 1,719 leaders across 97 countries:
-• 40% of billion-dollar companies now scale these agents. Up from 27%.
+McKinsey's new State of AI survey (1,719 leaders, 97 countries):
+• 40% of billion-dollar companies now use AI agents widely — up from 27%.
 • Only 37% see any profit impact. Same as last year.
 • 6% are "high performers." Flat.
 
-The tell: 32% of companies already declined to buy software. They can now build it with automated coding tools.
+The quiet threat to vendors: 32% of companies already declined to buy software they can now build with AI coding tools.
 
 Conviction is outrunning the financials.
 
-The winners do not buy better models. They redesign the workflow and measure against a clean cost baseline.
+The winners don't buy better models. They redesign the daily work and measure against a clear starting cost.
 
-Build versus buy is now a default question. It is not an annual review.
+Build vs. buy is now a default question, not an annual review.
 
-Before you renew another vendor line, ask yourself one thing. Can an automated coding tool build the first version? And can you afford to own what comes after the prototype?
+Before you renew another vendor contract — can an internal team build the first version? And can you afford to own what comes after the rough prototype?
 
-The road to financial returns is still a road. It is not a destination.
+The road to ROI is still a road. Not a destination.
+
+<!-- schema -->
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "AI adoption hit an all-time high in 2026 — and the share of companies seeing real earnings from it didn't move",
+      "description": "McKinsey's 2026 State of AI shows record adoption but flat financial returns. Usage is outrunning earnings, and engineering leaders can close the gap.",
+      "datePublished": "2026-09-08T06:00:00Z",
+      "author": {
+        "@type": "Person",
+        "name": "Simon"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Editorial Factory"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Has AI adoption outrun financial returns in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. 40% of billion-dollar companies now use AI agents widely, up from 27%, but the share reporting any profit impact stayed flat at 37% and only 6% are high performers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do so few companies see a real return on AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most teams give many users access without defining a single measurable goal, so faster work never shows up as a lower cost line on the financial statement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can engineering leaders improve AI ROI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pick one task with a clear starting cost, track dollars from day one, and treat build-versus-buy as a daily question rather than a yearly review."
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+<!-- internal-links -->
+- **Anchor:** `[anthropic multi agent framework]` -> `https://editorialfactory.io/published/2026-09-07_anthropic-multiagent-turf-war.md` (*Anthropic's Multi-Agent Framework Turf War*)
 
 ## Gate report
-lead: PASS — Opens immediately with the 40 percent adoption statistic and defines agents in short, plain sentences.
-tension: PASS — Names the structural shift in build-versus-buy dynamics and identifies software vendors as the threatened party.
-tactical-insight: PASS — Gives the specific directive to isolate a single use case with a clear cost baseline rather than measuring raw adoption.
-nuanced-takeaway: PASS — Highlights the measurement problem and the gap between self-reported productivity and actual financial earnings.
-tldr: PASS — Provides exactly three scannable bullet points and avoids any summary paragraph.
+lead: PASS — Opens directly with the concrete 40% statistic on billion-dollar companies using agents in the first sentence.
+tension: PASS — Clearly names the shift in build-vs-buy dynamics, specifying the threat to software sellers and the daily operating constraints squeezing buyers.
+tactical-insight: PASS — Delivers specific, actionable directives for engineering leaders: pick a single task with a starting cost and make build-vs-buy a daily question.
+nuanced-takeaway: PASS — Calls out the measurement problem realistically, noting that individual speed doesn't equal enterprise earnings and limiting the weight of "some" profit impact.
+tldr: PASS — Exactly 3 scannable bullets, formatted correctly, with zero prose summary.
