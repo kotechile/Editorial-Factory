@@ -2,7 +2,7 @@
   "verticals": [
     {
       "id": "agentic_ai",
-      "label": "Agentic Automation & Architecture",
+      "label": "Agentic Runtime & Architecture",
       "cadence": "0 6 * * 1,4",
       "sources": [
         "arxiv",
@@ -12,14 +12,83 @@
         "reddit_ml"
       ],
       "primary_angles": [
-        "autonomous orchestration",
-        "MCP servers",
-        "agent evaluation bottlenecks",
-        "multi-agent failure modes",
-        "production memory architectures",
+        "memory tiering topology L1-L4",
+        "tool use and MCP protocol fabric",
+        "multi-agent coordination modes",
+        "distributed microservices architecture",
+        "deterministic RPC boundaries",
         "subagent cost optimization"
       ],
-      "target_persona": "eng_leader",
+      "target_persona": "ai_architect",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "ai_observability_qa",
+      "label": "Observability, Evals & Quality",
+      "cadence": "0 6 * * 2",
+      "sources": [
+        "arxiv",
+        "github_trending",
+        "hacker_news",
+        "x_ai",
+        "eval_benchmarks",
+        "vendor_changelogs"
+      ],
+      "primary_angles": [
+        "deterministic vs probabilistic QA",
+        "LLM-as-a-judge calibration",
+        "synthetic dataset stress testing",
+        "trace-level vertical flamegraphs",
+        "schema regression testing",
+        "redundant loop detection"
+      ],
+      "target_persona": "evals_infra_eng",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "agentic_resilience_failure",
+      "label": "Resilience & Failure Engineering",
+      "cadence": "0 6 * * 3",
+      "sources": [
+        "arxiv",
+        "github_trending",
+        "incident_reports",
+        "hacker_news",
+        "postmortems",
+        "x_ai"
+      ],
+      "primary_angles": [
+        "compound reliability math 0.95^10",
+        "agentic failure mode taxonomy",
+        "context poisoning mitigation",
+        "state recovery and checkpointing",
+        "transactional undo redo rollbacks",
+        "cascading error containment"
+      ],
+      "target_persona": "infra_engineer",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "enterprise_ai_governance",
+      "label": "Enterprise Enablement & Agent Security",
+      "cadence": "0 6 * * 5",
+      "sources": [
+        "ciso_reports",
+        "owasp_genai",
+        "gartner_cloud",
+        "x_ai",
+        "secops_advisories",
+        "hacker_news"
+      ],
+      "primary_angles": [
+        "shadow AI to managed agents",
+        "zero-trust agent security",
+        "network egress controls",
+        "prompt injection sanitization",
+        "CFO unit economics and TCO",
+        "human-in-the-loop validation labor"
+      ],
+      "target_persona": "enterprise_cai",
       "enable_dataforseo": true
     },
     {

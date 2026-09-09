@@ -6,11 +6,29 @@
       "tone": "direct, technical but not jargon-y, skeptical of hype",
       "wants": "concrete numbers, decision frameworks, what to do Monday morning"
     },
+    "ai_architect": {
+      "label": "AI Systems & Distributed Architect",
+      "reader_level": "senior systems & protocol architect",
+      "tone": "rigorous, distributed-systems literate, architectural",
+      "wants": "memory tiering topologies, MCP contracts, state recovery patterns, microservice RPC boundaries"
+    },
+    "evals_infra_eng": {
+      "label": "AI QA & Evals Infrastructure Engineer",
+      "reader_level": "senior ML/QA infra practitioner",
+      "tone": "empirical, benchmark-driven, skeptical of vibes",
+      "wants": "deterministic vs probabilistic gates, trace flamegraphs, judge calibration, schema regression tests"
+    },
     "infra_engineer": {
       "label": "Infrastructure / ML engineer",
       "reader_level": "deep technical",
       "tone": "precise, benchmark-literate, no hand-holding",
       "wants": "real numbers, caveats, reproduction details"
+    },
+    "enterprise_cai": {
+      "label": "CIO / CISO / Enterprise AI Governance Leader",
+      "reader_level": "executive-technical decision maker",
+      "tone": "strategic, risk-aware, unit-economics focused",
+      "wants": "shadow AI migration funnels, zero-trust actor boundaries, CFO TCO models, auditability"
     },
     "ops_leader": {
       "label": "Operations / supply-chain leader",
