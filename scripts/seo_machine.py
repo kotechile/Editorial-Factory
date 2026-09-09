@@ -37,6 +37,73 @@ def slugify(text):
     return s[:60]
 
 
+# Tokens that must keep canonical casing when a raw keyword is re-rendered into
+# prose or a headline. Raw search queries are noun piles ("MCP Server implementation
+# Python"), and pasting them verbatim into sentences reads like keyword-matching.
+_ACRONYMS = {
+    "mcp", "api", "seo", "sdk", "cli", "http", "https", "smtp", "sql", "nosql",
+    "llm", "rag", "nlu", "nlp", "ai", "ml", "json", "xml", "css", "html", "dom",
+    "ci", "cd", "git", "ssh", "ssl", "tls", "dns", "cpu", "gpu", "ram",
+    "saas", "paas", "iaas", "grpc", "rest", "ui", "ux", "npm", "ide", "vm",
+}
+
+_LANG_PROPER = {
+    "python": "Python", "javascript": "JavaScript", "typescript": "TypeScript",
+    "rust": "Rust", "golang": "Go", "go": "Go", "java": "Java", "c": "C",
+    "cpp": "C++", "c++": "C++", "ruby": "Ruby", "php": "PHP", "swift": "Swift",
+    "kotlin": "Kotlin", "scala": "Scala", "dart": "Dart", "node": "Node.js",
+    "nodejs": "Node.js", "react": "React", "nextjs": "Next.js", "next": "Next.js",
+    "django": "Django", "flask": "Flask", "fastapi": "FastAPI",
+    "kubernetes": "Kubernetes", "docker": "Docker", "langchain": "LangChain",
+    "llamaindex": "LlamaIndex", "postgres": "Postgres", "postgresql": "PostgreSQL",
+    "mysql": "MySQL", "mongodb": "MongoDB", "redis": "Redis",
+}
+
+_PREPOSITIONS = {"in", "on", "with", "for", "using", "of", "and", "vs", "versus", "to"}
+
+
+def naturalize_kw(kw):
+    """Return a natural-sounding prose form of a raw search keyword.
+
+    'MCP Server implementation Python' -> 'MCP server implementation in Python'
+
+    Preserves acronyms (MCP, API, GPU) and canonical language/framework casing,
+    lowercases the rest, and inserts 'in' before a trailing bare language token so
+    a raw noun pile reads as English instead of a keyword-matching jumble.
+    """
+    out = []
+    for i, w in enumerate(kw.split()):
+        lw = w.lower()
+        if lw in _ACRONYMS:
+            out.append(lw.upper())
+        elif lw in _LANG_PROPER:
+            token = _LANG_PROPER[lw]
+            if i > 0 and out and out[-1].lower() not in _PREPOSITIONS:
+                out.append("in " + token)
+            else:
+                out.append(token)
+        else:
+            out.append(lw)
+    return " ".join(out)
+
+
+def smart_title(kw):
+    """Title-case a keyword without mangling acronyms or framework proper nouns.
+
+    'MCP Server implementation Python' -> 'MCP Server Implementation Python'
+    """
+    out = []
+    for w in kw.split():
+        lw = w.lower()
+        if lw in _ACRONYMS:
+            out.append(lw.upper())
+        elif lw in _LANG_PROPER:
+            out.append(_LANG_PROPER[lw])
+        else:
+            out.append(w[:1].upper() + w[1:].lower() if w else w)
+    return " ".join(out)
+
+
 def load_personas():
     if PERSONAS_FILE.exists():
         with open(PERSONAS_FILE, "r", encoding="utf-8") as f:
@@ -55,9 +122,10 @@ def _faq_answer(question: str, kw: str, primary_stance: str) -> str:
     """Give each PAA (people-also-ask) question its own distinct, on-topic answer, instead of the
     identical boilerplate that used to be repeated for every question (which SEO reads as low-quality)."""
     ql = question.lower()
+    kw_n = naturalize_kw(kw)
     if any(x in ql for x in ("cause", "fail", "break", "why", "problem")):
         return (f"Failure usually comes from missing hard limits: no cap on repeating steps, no timeout on "
-                f"tool calls, and no budget guard. That is exactly what a production {kw} setup needs.")
+                f"tool calls, and no budget guard. That is exactly what a production {kw_n} setup needs.")
     if any(x in ql for x in ("solve", "how", "fix", "avoid", "team", "leading")):
         return ("Teams solve it by capping recursion, testing changes against their own production logs "
                 "instead of marketing demos, and trimming chat history before each step.")
@@ -66,20 +134,29 @@ def _faq_answer(question: str, kw: str, primary_stance: str) -> str:
     return primary_stance
 
 
+def _naturalize_question(question: str, kw: str, kw_prose: str) -> str:
+    """Rewrite the raw keyword inside a generated FAQ question with its natural form."""
+    if not kw or not kw_prose or kw == kw_prose:
+        return question
+    return re.sub(re.escape(kw), kw_prose, question, flags=re.IGNORECASE)
+
+
 def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, vertical_id, persona_id):
     """Generate structured markdown draft containing full SEO metadata, schema, and sections."""
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     kw = keyword_data["keyword"]
+    kw_title = smart_title(kw)
+    kw_prose = naturalize_kw(kw)
     slug = f"{today_str}_{slugify(kw)}"
 
     # Generate meta title and description
-    title = f"{kw.title()}: Production Architecture & Cost Reality"
-    meta_title = f"{kw.title()} (Architectural Guide & Traps)"
+    title = f"{kw_title}: Production Architecture & Cost Reality"
+    meta_title = f"{kw_title} (Architectural Guide & Traps)"
     if len(meta_title) > 60:
         meta_title = meta_title[:57] + "..."
 
     meta_desc = (
-        f"A practitioner breakdown of {kw}. Discover real production benchmarks, "
+        f"A practitioner breakdown of {kw_prose}. Discover real production benchmarks, "
         f"architectural bottlenecks, and the true cost tradeoffs before deploying."
     )
     if len(meta_desc) > 160:
@@ -117,7 +194,7 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": q,
+                        "name": _naturalize_question(q, kw, kw_prose),
                         "acceptedAnswer": {
                             "@type": "Answer",
                             "text": _faq_answer(q, kw, primary_stance)
@@ -153,14 +230,14 @@ slug: "{slug}"
 ---
 
 <!-- lead -->
-When evaluating {kw}, engineering teams frequently encounter a sharp divide between lab benchmarks and production realities [1]. A recent field analysis revealed that unconstrained deployments suffered an immediate 3.5× degradation in throughput under high-concurrency workloads [2].
+When evaluating {kw_prose}, engineering teams frequently encounter a sharp divide between lab benchmarks and production realities [1]. A recent field analysis revealed that unconstrained deployments suffered an immediate 3.5× degradation in throughput under high-concurrency workloads [2].
 
 <!-- tension -->
 ## Why Fragile Prompt Chains Fail Under Production Concurrency
 
 The systemic challenge is rooted in {primary_topic.lower()}: {primary_stance} [1]. 
 
-As observed in live environments ({primary_anecdote['title']}), {primary_anecdote['details']} [2]. Many teams treat MCP server implementation as a pure speed problem, ignoring how cascading latency and unmonitored API calls compound down the stack.
+As observed in live environments ({primary_anecdote['title']}), {primary_anecdote['details']} [2]. Many teams treat {kw_prose} as a pure speed problem, ignoring how cascading latency and unmonitored API calls compound down the stack.
 
 {quote_text}
 
@@ -191,7 +268,7 @@ The hard catch is that eliminating these bottlenecks requires upfront investment
 [3] Open Protocol Foundation, State Management & Execution Budgets Specification, 2026. https://modelcontextprotocol.io/spec
 
 <!-- linkedin -->
-Most discussions about MCP server work ignore what happens when traffic hits production scale.
+Most discussions about {kw_prose} ignore what happens when traffic hits production scale.
 
 Here is what our field data reveals:
 
