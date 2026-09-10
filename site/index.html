@@ -4,33 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PressFlow — Editorial Factory Studio &amp; Verticals Engine</title>
-  <meta name="description" content="Unified Editorial Factory Suite: 30-day radar verticals management, target personas maintenance, article drafting, rendered previews, and multi-channel distribution suite.">
+  <meta name="description" content="Awwwards-grade Editorial Intelligence &amp; Autonomous Publishing Engine: 30-day radar verticals, target personas, GSC opportunity radar, and multi-channel suite.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Clean Modern Light Theme (Default, matches mockup) */
-      --bg: #f4f6f9;
-      --bg-subtle: #f8fafc;
+      /* Clean Awwwards-Grade Light Mode (Default) */
+      --bg: #f8fafc;
+      --bg-subtle: #ffffff;
       --bg-surface: #ffffff;
       --bg-card: #ffffff;
-      --bg-card-hover: #fafbfc;
+      --bg-card-hover: #ffffff;
       --bg-secondary: #f1f5f9;
       --bg-tertiary: #e2e8f0;
-      --border: #e2e8f0;
-      --border-subtle: #edf2f7;
-      --border-focus: #0284c7;
-      --text: #0f172a;
-      --text-secondary: #334155;
-      --text-muted: #64748b;
-      --text-dim: #94a3b8;
       
-      --accent: #0284c7;
-      --accent-rgb: 2, 132, 199;
-      --accent-light: #e0f2fe;
-      --accent-hover: #0369a1;
-      --accent-glow: rgba(2, 132, 199, 0.15);
+      --border: #e5e7eb;
+      --border-subtle: #f3f4f6;
+      --border-focus: #0f172a;
+      
+      --text: #111827;
+      --text-secondary: #374151;
+      --text-muted: #6b7280;
+      --text-dim: #9ca3af;
+      
+      --accent: #0f172a;
+      --accent-rgb: 15, 23, 42;
+      --accent-light: #f1f5f9;
+      --accent-hover: #1e293b;
+      
+      --brand-blue: #0284c7;
+      --brand-blue-light: #e0f2fe;
+      --brand-blue-border: #bae6fd;
+      
+      --yellow: #f59e0b;
+      --yellow-light: #fef3c7;
+      --yellow-line: #fbbf24;
       
       --purple: #7c3aed;
       --purple-light: #f5f3ff;
@@ -41,36 +50,28 @@
       --success-border: #a7f3d0;
       --success-text: #065f46;
       
-      --warning: #d97706;
-      --warning-bg: #fffbeb;
-      --warning-border: #fde68a;
-      --warning-text: #92400e;
-      
       --danger: #dc2626;
       --danger-bg: #fef2f2;
       --danger-border: #fecaca;
       --danger-text: #991b1b;
       
-      --tag-bg: #f1f5f9;
-      --tag-border: #e2e8f0;
-      --tag-text: #334155;
-      
       --radius-xs: 4px;
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 16px;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
       --radius-pill: 9999px;
       
       --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       --font-serif: 'Newsreader', Georgia, serif;
       --font-mono: 'JetBrains Mono', monospace;
       
-      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+      --shadow-card-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
+      --shadow-lg: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
       
-      --transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     [data-theme="dark"] {
@@ -78,7 +79,7 @@
       --bg-subtle: #0c1220;
       --bg-surface: #0f172a;
       --bg-card: #131d31;
-      --bg-card-hover: #1c2a44;
+      --bg-card-hover: #17243c;
       --bg-secondary: #1e293b;
       --bg-tertiary: #334155;
       --border: rgba(148, 163, 184, 0.16);
@@ -92,7 +93,11 @@
       --accent-rgb: 56, 189, 248;
       --accent-light: rgba(56, 189, 248, 0.15);
       --accent-hover: #0ea5e9;
-      --accent-glow: rgba(56, 189, 248, 0.25);
+      --brand-blue: #38bdf8;
+      --brand-blue-light: rgba(56, 189, 248, 0.15);
+      --brand-blue-border: rgba(56, 189, 248, 0.3);
+      --yellow: #fbbf24;
+      --yellow-line: #f59e0b;
       --purple: #a855f7;
       --purple-light: rgba(168, 85, 247, 0.15);
       --purple-border: rgba(168, 85, 247, 0.3);
@@ -100,20 +105,14 @@
       --success-bg: rgba(16, 185, 129, 0.15);
       --success-border: rgba(16, 185, 129, 0.3);
       --success-text: #6ee7b7;
-      --warning: #f59e0b;
-      --warning-bg: rgba(245, 158, 11, 0.15);
-      --warning-border: rgba(245, 158, 11, 0.3);
-      --warning-text: #fbbf24;
       --danger: #ef4444;
       --danger-bg: rgba(239, 68, 68, 0.15);
       --danger-border: rgba(239, 68, 68, 0.3);
       --danger-text: #fca5a5;
-      --tag-bg: rgba(56, 189, 248, 0.1);
-      --tag-border: rgba(56, 189, 248, 0.25);
-      --tag-text: #bae6fd;
       --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
       --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+      --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.4);
+      --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
       --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
     }
 
@@ -128,74 +127,87 @@
       font-size: 13.5px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background-image: 
-        radial-gradient(circle at 12% 8%, rgba(2, 132, 199, 0.035) 0%, transparent 45%),
-        radial-gradient(circle at 88% 85%, rgba(124, 58, 237, 0.03) 0%, transparent 45%);
-      background-attachment: fixed;
+    }
+
+    /* Top Announcement Ticker Bar (Awwwards Style) */
+    .top-announcement-bar {
+      background: #f1f5f9;
+      border-bottom: 1px solid var(--border);
+      padding: 0.35rem 1.5rem;
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    [data-theme="dark"] .top-announcement-bar {
+      background: #0f172a;
+      border-color: rgba(148, 163, 184, 0.12);
+    }
+
+    .ticker-content {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+
+    .ticker-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 700;
+      color: var(--text);
     }
 
     .container {
-      max-width: 1260px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 1.5rem 1.5rem 4rem;
     }
 
-    /* Top Navigation Header */
+    /* Header Navbar (Awwwards Style) */
     header {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 1.25rem;
-      padding-bottom: 1.25rem;
+      padding: 0.5rem 0 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
       margin-bottom: 1.5rem;
+      flex-wrap: wrap;
     }
 
-    .brand {
+    .brand-section {
       display: flex;
       align-items: center;
-      gap: 0.85rem;
+      gap: 1.5rem;
     }
 
-    .brand-logo {
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius-md);
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--accent);
-      box-shadow: var(--shadow-sm);
-      letter-spacing: -0.02em;
-    }
-
-    .brand-subtitle {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 700;
-      color: var(--text-dim);
-      margin-bottom: 0.1rem;
-    }
-
-    .brand-title {
-      font-size: 1.35rem;
-      font-weight: 800;
-      letter-spacing: -0.025em;
+    .brand-logo-awwwards {
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
       color: var(--text);
       display: flex;
       align-items: center;
-      gap: 0.65rem;
+      gap: 0.15rem;
+      text-decoration: none;
     }
 
-    .status-pill {
+    .brand-dot {
+      color: var(--yellow);
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .brand-status-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
       padding: 0.2rem 0.65rem;
       border-radius: var(--radius-pill);
       font-size: 11px;
@@ -205,7 +217,7 @@
       color: var(--success-text);
     }
 
-    .status-dot {
+    .status-dot-pulse {
       width: 6px;
       height: 6px;
       border-radius: 50%;
@@ -213,21 +225,57 @@
       box-shadow: 0 0 6px var(--success);
     }
 
+    /* Center Search Bar (Awwwards Large Pill Style) */
+    .header-search-bar {
+      flex: 1;
+      max-width: 440px;
+      position: relative;
+    }
+
+    .header-search-input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.4rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 12.5px;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .header-search-input:focus {
+      background: var(--bg-surface);
+      border-color: var(--text);
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+    }
+
+    .search-icon-inside {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 13px;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.65rem;
       flex-wrap: wrap;
     }
 
-    /* Buttons */
+    /* Awwwards Button System */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.45rem;
-      padding: 0.5rem 0.95rem;
-      border-radius: var(--radius-md);
+      padding: 0.5rem 1.15rem;
+      border-radius: var(--radius-pill);
       font-family: var(--font-sans);
       font-size: 12px;
       font-weight: 600;
@@ -239,77 +287,67 @@
       user-select: none;
     }
 
-    .btn-accent {
-      background: #e0f2fe;
-      color: #0369a1;
-      border-color: #bae6fd;
-      box-shadow: var(--shadow-xs);
+    /* Solid Dark Pill (like "Be Pro") */
+    .btn-dark-pill {
+      background: #0f172a;
+      color: #ffffff;
+      box-shadow: var(--shadow-sm);
     }
-
-    .btn-accent:hover {
-      background: #bae6fd;
-      color: #0284c7;
+    .btn-dark-pill:hover {
+      background: #1e293b;
       transform: translateY(-1px);
+      box-shadow: var(--shadow-card);
+    }
+    [data-theme="dark"] .btn-dark-pill {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    [data-theme="dark"] .btn-dark-pill:hover {
+      background: #ffffff;
     }
 
-    .btn-secondary {
+    /* Outline Pill (like "Submit Website") */
+    .btn-outline-pill {
       background: var(--bg-surface);
-      color: var(--text-secondary);
+      color: var(--text);
       border-color: var(--border);
       box-shadow: var(--shadow-xs);
     }
-
-    .btn-secondary:hover {
+    .btn-outline-pill:hover {
       background: var(--bg-secondary);
       border-color: #cbd5e1;
-      color: var(--text);
       transform: translateY(-1px);
     }
 
-    .btn-primary {
-      background: var(--accent);
-      color: #ffffff;
-      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);
+    .btn-accent {
+      background: var(--brand-blue-light);
+      color: #0369a1;
+      border-color: var(--brand-blue-border);
     }
-
-    .btn-primary:hover {
-      background: var(--accent-hover);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
-    }
-
-    .btn-purple {
-      background: var(--purple-light);
-      color: var(--purple);
-      border-color: var(--purple-border);
-      box-shadow: var(--shadow-xs);
-    }
-
-    .btn-purple:hover {
-      background: #ede9fe;
+    .btn-accent:hover {
+      background: #bae6fd;
       transform: translateY(-1px);
     }
 
-    .btn-danger {
+    .btn-danger-pill {
       background: var(--danger-bg);
       color: var(--danger);
       border-color: var(--danger-border);
     }
-
-    .btn-danger:hover {
+    .btn-danger-pill:hover {
       background: var(--danger);
       color: #ffffff;
     }
 
     .btn-sm {
-      padding: 0.35rem 0.75rem;
+      padding: 0.35rem 0.85rem;
       font-size: 11.5px;
     }
 
-    .theme-toggle-btn {
+    .theme-toggle-pill {
       width: 34px;
       height: 34px;
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-pill);
       background: var(--bg-surface);
       border: 1px solid var(--border);
       color: var(--text-muted);
@@ -320,35 +358,39 @@
       transition: var(--transition);
       font-size: 14px;
     }
-
-    .theme-toggle-btn:hover {
+    .theme-toggle-pill:hover {
       color: var(--text);
       background: var(--bg-secondary);
       border-color: #cbd5e1;
     }
 
-    /* Modern Segmented Navigation Tabs */
-    .tabs-wrapper {
+    /* Awwwards Filter & Navigation Strip (Screenshot 2) */
+    .filter-bar-awwwards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      padding: 0.6rem 0.85rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 0.3rem;
-      margin-bottom: 1.5rem;
+      border-radius: var(--radius-pill);
       box-shadow: var(--shadow-xs);
+      margin-bottom: 2rem;
       overflow-x: auto;
     }
 
-    .tabs {
+    .filter-nav-pills {
       display: flex;
-      gap: 0.3rem;
+      align-items: center;
+      gap: 0.4rem;
       min-width: max-content;
     }
 
-    .tab-btn {
-      padding: 0.55rem 1rem;
+    .nav-pill-btn {
+      padding: 0.45rem 1rem;
       background: transparent;
-      border: none;
-      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      border-radius: var(--radius-pill);
       color: var(--text-muted);
       font-family: var(--font-sans);
       font-size: 12px;
@@ -361,377 +403,350 @@
       white-space: nowrap;
     }
 
-    .tab-btn:hover {
+    .nav-pill-btn:hover {
       color: var(--text);
       background: var(--bg-secondary);
     }
 
-    .tab-btn.active {
-      background: #e0f2fe;
-      color: #0369a1;
+    .nav-pill-btn.active {
+      background: #0f172a;
+      color: #ffffff;
       font-weight: 700;
       box-shadow: var(--shadow-xs);
     }
 
-    [data-theme="dark"] .tab-btn.active {
-      background: rgba(56, 189, 248, 0.15);
-      color: #38bdf8;
+    [data-theme="dark"] .nav-pill-btn.active {
+      background: #38bdf8;
+      color: #090d16;
     }
 
-    .badge-count {
+    .filter-badge-counter {
       padding: 0.1rem 0.45rem;
       border-radius: var(--radius-pill);
-      font-size: 11px;
-      background: rgba(148, 163, 184, 0.18);
-      color: var(--text-secondary);
+      font-size: 10.5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: inherit;
       font-weight: 700;
     }
 
-    .tab-btn.active .badge-count {
-      background: rgba(3, 105, 161, 0.15);
-      color: #0369a1;
+    .nav-pill-btn:not(.active) .filter-badge-counter {
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
     }
 
-    [data-theme="dark"] .tab-btn.active .badge-count {
-      background: rgba(56, 189, 248, 0.25);
-      color: #7dd3fc;
-    }
-
-    /* Workspace Cards & Layout */
-    .hero-article-card {
-      background: var(--bg-card);
+    .filter-dropdown-pill {
+      padding: 0.4rem 0.85rem;
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem 1.75rem;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
+      border-radius: var(--radius-pill);
+      color: var(--text-secondary);
+      font-size: 11.5px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-dropdown-pill:hover {
+      background: #e2e8f0;
+      color: var(--text);
     }
 
-    .hero-top-row {
+    /* Category Header & Big Bold Display Title (Screenshot 1 & 2) */
+    .category-header-wrap {
+      margin-bottom: 2rem;
+    }
+
+    .category-eyebrow {
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+
+    .display-title-awwwards {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      color: var(--text);
+      line-height: 1.15;
+    }
+
+    .display-title-row {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 1.25rem;
+      align-items: flex-end;
+      gap: 1.5rem;
       flex-wrap: wrap;
     }
 
-    .article-title-heading {
-      font-size: 1.45rem;
+    /* Awwwards Card Grid System (Screenshot 1 & 3) */
+    .awwwards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .awwwards-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .awwwards-card:hover {
+      box-shadow: var(--shadow-card-hover);
+      transform: translateY(-2px);
+      border-color: #cbd5e1;
+    }
+
+    .awwwards-card-cover {
+      height: 140px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+      position: relative;
+      padding: 1.25rem;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .card-cover-ai { background: linear-gradient(135deg, #090d16 0%, #1e1b4b 60%, #312e81 100%); }
+    .card-cover-evals { background: linear-gradient(135deg, #042f2e 0%, #115e59 60%, #0f766e 100%); }
+    .card-cover-resilience { background: linear-gradient(135deg, #450a0a 0%, #991b1b 60%, #b91c1c 100%); }
+    .card-cover-governance { background: linear-gradient(135deg, #3b0764 0%, #6b21a8 60%, #7e22ce 100%); }
+    .card-cover-gpu { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 60%, #0284c7 100%); }
+    .card-cover-supply { background: linear-gradient(135deg, #14532d 0%, #15803d 60%, #16a34a 100%); }
+    .card-cover-home { background: linear-gradient(135deg, #713f12 0%, #a16207 60%, #ca8a04 100%); }
+    .card-cover-enterprise { background: linear-gradient(135deg, #1e293b 0%, #334155 60%, #475569 100%); }
+
+    .card-floating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #0f172a;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    [data-theme="dark"] .card-floating-badge {
+      background: rgba(15, 23, 42, 0.9);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .awwwards-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .awwwards-card-title {
+      font-size: 1.2rem;
       font-weight: 800;
       color: var(--text);
       line-height: 1.3;
       letter-spacing: -0.02em;
+      margin-bottom: 0.85rem;
     }
 
-    .hero-actions {
+    .awwwards-card-meta-row {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-    }
-
-    .meta-pills-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 11.5px;
-    }
-
-    .clean-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.25rem 0.65rem;
-      border-radius: var(--radius-pill);
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-weight: 500;
-      font-size: 11.5px;
-      text-decoration: none;
-    }
-
-    .clean-pill a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .clean-pill a:hover { text-decoration: underline; }
-
-    .tag-pill {
-      background: #f8fafc;
-      color: #64748b;
-      font-size: 11px;
-      font-weight: 600;
-      border: 1px solid #e2e8f0;
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-pill);
-    }
-
-    [data-theme="dark"] .tag-pill {
-      background: #1e293b;
-      color: #94a3b8;
-      border-color: rgba(148, 163, 184, 0.15);
-    }
-
-    /* Section Headers */
-    .section-header-title {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--text);
-      letter-spacing: -0.015em;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
       margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-subtle);
     }
 
-    /* Dual SEO Target Cards (Matches Mockup) */
-    .seo-target-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-
-    @media (max-width: 860px) {
-      .seo-target-grid { grid-template-columns: 1fr; }
-    }
-
-    .seo-box-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.25rem 1.4rem;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .seo-box-label {
-      font-size: 12px;
+    .awwwards-card-meta-row strong {
+      color: var(--text);
       font-weight: 700;
-      color: var(--text);
-      margin-bottom: 0.85rem;
-      display: block;
     }
 
-    .primary-query-row {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-      margin-bottom: 0.85rem;
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    .primary-query-title {
-      font-weight: 800;
-      color: var(--text);
-      font-size: 13px;
-    }
-
-    .copy-pill-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-sm);
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-size: 11px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-    .copy-pill-btn:hover {
-      background: #e2e8f0;
-      color: var(--text);
-    }
-
-    .badges-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      align-items: center;
-      margin-bottom: 0.95rem;
-    }
-
-    .badge-intent {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: #fef3c7;
-      color: #92400e;
-      border: 1px solid #fde68a;
-    }
-
-    .badge-persona {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: #e0f2fe;
-      color: #0369a1;
-      border: 1px solid #bae6fd;
-    }
-
-    .badge-calibrated {
-      font-size: 11px;
-      font-weight: 700;
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: #ccfbf1;
-      color: #0f766e;
-      border: 1px solid #99f6e4;
-      letter-spacing: 0.02em;
-    }
-
-    [data-theme="dark"] .badge-intent { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); }
-    [data-theme="dark"] .badge-persona { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border-color: rgba(56, 189, 248, 0.3); }
-    [data-theme="dark"] .badge-calibrated { background: rgba(20, 184, 166, 0.15); color: #5eead4; border-color: rgba(20, 184, 166, 0.3); }
-
-    .secondary-clusters-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.45rem;
-      font-size: 11.5px;
-      margin-top: 0.5rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .cluster-tag {
-      font-size: 11px;
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-sm);
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      color: var(--text-secondary);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-    .cluster-tag:hover {
-      background: #e2e8f0;
-      color: var(--text);
-    }
-
-    .metrics-line {
+    /* Yellow Underline Indicator (Screenshot 1) */
+    .card-score-box {
       display: flex;
       flex-direction: column;
-      gap: 0.45rem;
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    .metrics-line-item {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .metrics-line-item strong {
-      color: var(--text);
-    }
-
-    /* Article Content Preview Card */
-    .article-preview-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 2rem;
-    }
-
-    .article-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-
-    .view-switcher-pill {
-      display: inline-flex;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 0.2rem;
       gap: 0.2rem;
     }
 
-    .view-btn {
-      padding: 0.35rem 0.8rem;
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      font-family: var(--font-sans);
-      font-size: 11.5px;
-      font-weight: 600;
-      cursor: pointer;
-      border-radius: var(--radius-sm);
+    .score-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .yellow-accent-bar {
+      width: 48px;
+      height: 3.5px;
+      background: var(--yellow-line);
+      border-radius: 2px;
+    }
+
+    .card-arrow-btn {
+      font-size: 1.25rem;
+      color: var(--text);
       transition: var(--transition);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .awwwards-card:hover .card-arrow-btn {
+      transform: translateX(4px);
+      color: var(--brand-blue);
+    }
+
+    .card-footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+    }
+
+    /* Workspace Hero Article Card (Matches Awwwards Editorial) */
+    .hero-editorial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 2rem;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 1.75rem;
+    }
+
+    .article-main-title {
+      font-size: 1.6rem;
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 0.85rem;
+    }
+
+    .article-meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .clean-pill-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 11.5px;
+      font-weight: 600;
+      text-decoration: none;
     }
 
-    .view-btn:hover { color: var(--text); }
-    .view-btn.active {
-      background: var(--bg-surface);
+    .clean-pill-badge a { color: inherit; text-decoration: none; }
+    .clean-pill-badge a:hover { text-decoration: underline; }
+
+    /* Dual SEO Target Cards */
+    .seo-architecture-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    @media (max-width: 880px) {
+      .seo-architecture-grid { grid-template-columns: 1fr; }
+    }
+
+    .seo-card-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .seo-card-title {
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       color: var(--text);
-      box-shadow: var(--shadow-xs);
-      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
     }
 
-    /* Article Rendered Prose (Size 11-12pt / 15-16px for comfortable reading) */
-    .article-rendered {
+    /* Article Rendered Prose (Size 11-12pt / 15-16px, comfortable reading) */
+    .article-prose-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 2rem;
+    }
+
+    .article-rendered-body {
       max-width: 860px;
       margin: 0 auto;
       font-family: var(--font-sans);
-      font-size: 15px; /* ~11.5pt */
+      font-size: 15.5px; /* ~11.5pt */
       line-height: 1.8;
       color: var(--text-secondary);
     }
 
-    .article-rendered h1, .article-rendered h2, .article-rendered h3 {
+    .article-rendered-body h1, .article-rendered-body h2, .article-rendered-body h3 {
       color: var(--text);
       line-height: 1.3;
       margin: 2rem 0 1rem;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.025em;
     }
 
-    .article-rendered h1 { font-size: 1.75rem; font-weight: 800; margin-top: 0.5rem; }
-    .article-rendered h2 { font-size: 1.3rem; font-weight: 700; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem; margin-top: 2rem; }
-    .article-rendered h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; }
+    .article-rendered-body h1 { font-size: 1.85rem; font-weight: 900; }
+    .article-rendered-body h2 { font-size: 1.35rem; font-weight: 800; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem; }
+    .article-rendered-body h3 { font-size: 1.15rem; font-weight: 700; }
 
-    .article-rendered p { margin-bottom: 1.4rem; line-height: 1.8; }
-    .article-rendered strong { color: var(--text); font-weight: 700; }
+    .article-rendered-body p { margin-bottom: 1.4rem; line-height: 1.8; }
+    .article-rendered-body strong { color: var(--text); font-weight: 700; }
 
-    .article-rendered blockquote {
-      border-left: 3px solid var(--accent);
-      background: var(--accent-light);
-      padding: 0.9rem 1.25rem;
-      margin: 1.5rem 0;
+    .article-rendered-body blockquote {
+      border-left: 3.5px solid var(--yellow);
+      background: var(--yellow-light);
+      padding: 1rem 1.4rem;
+      margin: 1.75rem 0;
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
       font-style: italic;
-      color: var(--text);
+      color: #78350f;
       line-height: 1.7;
     }
 
-    .article-rendered pre {
+    [data-theme="dark"] .article-rendered-body blockquote {
+      background: rgba(245, 158, 11, 0.12);
+      color: #fde68a;
+    }
+
+    .article-rendered-body pre {
       background: #0f172a;
       border: 1px solid #1e293b;
       border-radius: var(--radius-md);
@@ -743,72 +758,30 @@
       color: #38bdf8;
     }
 
-    .article-rendered code {
+    .article-rendered-body code {
       font-family: var(--font-mono);
       font-size: 0.88em;
       background: var(--bg-secondary);
       border: 1px solid var(--border);
       padding: 0.15em 0.4em;
       border-radius: 4px;
-      color: var(--accent);
+      color: var(--brand-blue);
     }
 
-    .article-rendered pre code {
-      background: transparent;
-      border: none;
-      padding: 0;
-    }
+    .article-rendered-body pre code { background: transparent; border: none; padding: 0; }
 
-    .article-rendered a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .article-rendered .cite-pill {
-      color: var(--accent);
+    .cite-pill-badge {
+      color: var(--brand-blue);
       font-weight: 700;
       font-size: 0.82em;
       vertical-align: super;
       font-family: var(--font-mono);
-      padding: 0 0.15em;
     }
 
-    .article-rendered ul, .article-rendered ol {
-      margin: 1rem 0 1.5rem 1.5rem;
-      padding-left: 0.5rem;
-    }
-
-    .article-rendered li { margin-bottom: 0.5rem; line-height: 1.75; }
-
-    /* Markdown Editor View */
-    .editor-container {
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-
-    .editor-toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.6rem;
-      background: var(--bg-secondary);
-      padding: 0.5rem 0.75rem;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-    }
-
-    .toolbar-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-    }
-
-    .markdown-textarea {
+    /* Markdown Editor */
+    .editor-box {
       width: 100%;
-      min-height: 540px;
+      min-height: 560px;
       padding: 1.25rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
@@ -821,279 +794,99 @@
       outline: none;
       transition: var(--transition);
     }
-
-    .markdown-textarea:focus {
-      border-color: var(--border-focus);
-      box-shadow: 0 0 0 3px var(--accent-glow);
+    .editor-box:focus {
+      border-color: var(--text);
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
     }
 
-    /* Multi-Channel Distribution Suite Preview (4-Card Matrix) */
-    .suite-container {
+    /* Multi-Channel Distribution Suite (4 Cards) */
+    .suite-grid-awwwards {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
-      margin-top: 1rem;
     }
+    @media (max-width: 900px) { .suite-grid-awwwards { grid-template-columns: 1fr; } }
 
-    @media (max-width: 900px) {
-      .suite-container { grid-template-columns: 1fr; }
-    }
-
-    .channel-card {
+    .channel-card-awwwards {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 1.4rem;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: var(--shadow-sm);
     }
 
-    .channel-header {
+    .channel-header-row {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 1rem;
       padding-bottom: 0.75rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--border-subtle);
     }
 
-    .channel-title {
-      font-size: 13.5px;
-      font-weight: 700;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 0.45rem;
-    }
-
-    .channel-box {
+    .channel-box-inner {
       background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       padding: 1.15rem;
       font-size: 13px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: var(--text);
       white-space: pre-wrap;
       font-family: var(--font-sans);
-      max-height: 380px;
+      max-height: 360px;
       overflow-y: auto;
       margin-bottom: 1.25rem;
     }
 
-    /* Grid & Cards for Verticals & Personas */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 1.25rem;
-    }
-
-    .card {
-      background: var(--bg-card);
+    /* Tables */
+    .table-card-wrapper {
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 1.35rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
+      overflow-x: auto;
+      background: var(--bg-surface);
+      box-shadow: var(--shadow-card);
     }
-
-    .card:hover {
-      border-color: #cbd5e1;
-      box-shadow: var(--shadow-md);
-      transform: translateY(-1px);
+    .modern-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 12.5px;
     }
-
-    .card-top { margin-bottom: 1rem; }
-
-    .card-header-row {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 0.75rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .card-title {
-      font-size: 1.1rem;
+    .modern-table th {
+      background: var(--bg-secondary);
+      padding: 0.85rem 1rem;
       font-weight: 800;
-      color: var(--text);
-      line-height: 1.3;
-    }
-
-    .badge-id {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      padding: 0.15rem 0.45rem;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
       color: var(--text-muted);
-      display: inline-block;
-      margin-top: 0.25rem;
-    }
-
-    .card-actions {
-      display: flex;
-      gap: 0.35rem;
-    }
-
-    .icon-btn {
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--radius-sm);
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: var(--transition);
-      font-size: 12px;
-    }
-
-    .icon-btn:hover {
-      background: #e2e8f0;
-      color: var(--text);
-    }
-
-    .icon-btn.danger:hover {
-      background: var(--danger-bg);
-      color: var(--danger);
-      border-color: var(--danger-border);
-    }
-
-    .cadence-box {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.5rem 0.75rem;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      margin-bottom: 0.85rem;
-    }
-
-    .cadence-icon { color: var(--accent); font-size: 0.95rem; }
-    .cadence-text { font-size: 12px; font-weight: 600; color: var(--text); }
-    .cadence-cron { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); }
-
-    .persona-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 0.15rem 0.55rem;
-      border-radius: var(--radius-pill);
-      background: #e0f2fe;
-      color: #0369a1;
-      border: 1px solid #bae6fd;
-    }
-
-    .section-label {
-      font-size: 11px;
-      font-weight: 700;
+      border-bottom: 1px solid var(--border);
       text-transform: uppercase;
+      font-size: 10.5px;
       letter-spacing: 0.05em;
-      color: var(--text-dim);
-      margin-bottom: 0.4rem;
-      display: block;
     }
-
-    .tag-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      margin-bottom: 0.85rem;
-    }
-
-    .tag {
-      font-size: 11px;
-      padding: 0.15rem 0.45rem;
-      border-radius: var(--radius-sm);
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
+    .modern-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: middle;
       color: var(--text-secondary);
-      font-family: var(--font-sans);
     }
+    .modern-table tr:hover { background: var(--bg-secondary); }
 
-    .angle-tag {
-      background: #f8fafc;
-      color: #475569;
-    }
-
-    [data-theme="dark"] .angle-tag {
-      background: #1e293b;
-      color: #cbd5e1;
-    }
-
-    /* Fleet Control Box */
-    .fleet-status-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .fleet-bot-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.15rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-
-    .fleet-bot-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .fleet-bot-name {
-      font-weight: 700;
-      color: var(--text);
-      font-size: 13px;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .terminal-output-box {
-      background: #090d16;
-      border: 1px solid #1e293b;
-      border-radius: var(--radius-md);
-      padding: 1rem 1.25rem;
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      color: #38bdf8;
-      max-height: 260px;
-      overflow-y: auto;
-      white-space: pre-wrap;
-      line-height: 1.6;
-    }
-
-    /* Modals & Forms */
+    /* Modals */
     .modal-backdrop {
       position: fixed;
       inset: 0;
       background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       display: none;
       align-items: center;
       justify-content: center;
       z-index: 1000;
       padding: 1.5rem;
     }
-
     .modal-backdrop.active { display: flex; }
 
     .modal {
@@ -1104,8 +897,8 @@
       max-width: 680px;
       max-height: 88vh;
       overflow-y: auto;
-      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
-      padding: 1.75rem;
+      box-shadow: var(--shadow-lg);
+      padding: 2rem;
     }
 
     .modal-header {
@@ -1116,26 +909,25 @@
       padding-bottom: 0.85rem;
       border-bottom: 1px solid var(--border);
     }
-
-    .modal-header h2 { font-size: 1.2rem; font-weight: 800; color: var(--text); }
+    .modal-header h2 { font-size: 1.25rem; font-weight: 800; color: var(--text); }
 
     .close-btn {
       background: transparent;
       border: none;
       color: var(--text-muted);
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       cursor: pointer;
       line-height: 1;
     }
     .close-btn:hover { color: var(--text); }
 
-    .form-group { margin-bottom: 1.15rem; }
+    .form-group { margin-bottom: 1.25rem; }
     .form-label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 0.35rem; color: var(--text); }
     .form-help { font-size: 11px; color: var(--text-muted); margin-top: 0.25rem; }
 
     .form-input, .form-select, .form-textarea {
       width: 100%;
-      padding: 0.55rem 0.8rem;
+      padding: 0.6rem 0.85rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
@@ -1145,16 +937,15 @@
       outline: none;
       transition: var(--transition);
     }
-
     .form-input:focus, .form-select:focus, .form-textarea:focus {
-      border-color: var(--border-focus);
-      box-shadow: 0 0 0 3px var(--accent-glow);
+      border-color: var(--text);
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
     }
 
-    .preset-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.4rem; }
+    .preset-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.45rem; }
     .preset-chip {
       font-size: 11px;
-      padding: 0.15rem 0.5rem;
+      padding: 0.2rem 0.6rem;
       border-radius: var(--radius-pill);
       background: var(--bg-secondary);
       border: 1px solid var(--border);
@@ -1185,13 +976,12 @@
       align-items: center;
       gap: 0.3rem;
       font-size: 11px;
-      padding: 0.15rem 0.45rem;
+      padding: 0.15rem 0.5rem;
       background: var(--bg-secondary);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      border-radius: var(--radius-pill);
       color: var(--text);
     }
-
     .chip-item button {
       background: none;
       border: none;
@@ -1216,45 +1006,10 @@
     .modal-actions {
       display: flex;
       justify-content: flex-end;
-      gap: 0.6rem;
+      gap: 0.65rem;
       margin-top: 1.5rem;
       padding-top: 1rem;
       border-top: 1px solid var(--border);
-    }
-
-    /* Library Modal */
-    .library-search-box {
-      margin-bottom: 1rem;
-    }
-
-    .library-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 0.85rem 1rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      margin-bottom: 0.6rem;
-      transition: var(--transition);
-    }
-
-    .library-item:hover { border-color: var(--accent); background: var(--bg-card-hover); }
-
-    .library-item-title {
-      font-weight: 700;
-      color: var(--text);
-      font-size: 13.5px;
-      margin-bottom: 0.2rem;
-    }
-
-    .library-item-meta {
-      font-size: 11px;
-      color: var(--text-muted);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
     }
 
     /* Toast */
@@ -1263,13 +1018,12 @@
       bottom: 2rem;
       right: 2rem;
       padding: 0.75rem 1.25rem;
-      border-radius: var(--radius-md);
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      color: var(--text);
+      border-radius: var(--radius-pill);
+      background: #0f172a;
+      color: #ffffff;
       font-size: 12.5px;
       font-weight: 600;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       z-index: 2000;
       display: flex;
       align-items: center;
@@ -1278,132 +1032,9 @@
       opacity: 0;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
-
     .toast.show { transform: translateY(0); opacity: 1; }
     .toast.success { border-left: 4px solid var(--success); }
     .toast.error { border-left: 4px solid var(--danger); }
-
-    /* SEO Metrics Grid */
-    .seo-metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .seo-metric-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.15rem;
-      box-shadow: var(--shadow-xs);
-    }
-    .seo-metric-val {
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      margin-top: 0.2rem;
-    }
-    .seo-metric-lbl {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-    }
-    .seo-subnav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 1.25rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.6rem;
-    }
-    .seo-subnav-btn {
-      padding: 0.4rem 0.85rem;
-      border-radius: var(--radius-sm);
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-    .seo-subnav-btn:hover { color: var(--text); }
-    .seo-subnav-btn.active {
-      background: #e0f2fe;
-      border-color: #bae6fd;
-      color: #0369a1;
-      font-weight: 700;
-    }
-
-    .gsc-table-wrapper {
-      overflow-x: auto;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      background: var(--bg-surface);
-    }
-    .gsc-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 12.5px;
-    }
-    .gsc-table th {
-      background: var(--bg-secondary);
-      padding: 0.75rem 0.9rem;
-      font-weight: 700;
-      color: var(--text-muted);
-      border-bottom: 1px solid var(--border);
-      text-transform: uppercase;
-      font-size: 10.5px;
-      letter-spacing: 0.05em;
-    }
-    .gsc-table td {
-      padding: 0.75rem 0.9rem;
-      border-bottom: 1px solid var(--border-subtle);
-      vertical-align: middle;
-      color: var(--text-secondary);
-    }
-    .gsc-table tr:hover { background: var(--bg-card-hover); }
-
-    .pos-badge {
-      display: inline-flex;
-      padding: 0.15rem 0.45rem;
-      border-radius: var(--radius-pill);
-      font-size: 11px;
-      font-weight: 700;
-    }
-    .pos-badge.striking { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
-    .pos-badge.top10 { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
-    .pos-badge.longtail { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-
-    .growth-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.2rem;
-      padding: 0.15rem 0.4rem;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 700;
-      background: #ecfdf5;
-      color: #065f46;
-    }
-
-    .growth-textarea {
-      width: 100%;
-      min-height: 420px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      color: var(--text);
-      font-family: var(--font-mono);
-      font-size: 12px;
-      padding: 0.85rem;
-      line-height: 1.6;
-      resize: vertical;
-    }
 
     .tab-pane { display: none; animation: fadeIn 0.15s ease-out; }
     .tab-pane.active { display: block; }
@@ -1412,284 +1043,300 @@
 </head>
 <body>
 
+<!-- Top Announcement Ticker Bar (Awwwards Style) -->
+<div class="top-announcement-bar">
+  <div class="ticker-content">
+    <span class="ticker-badge">✦ PressFlow Editorial Engine</span>
+    <span>30-Day Freshness Radar Active</span>
+    <span>✦</span>
+    <span>Frontier Claude Sonnet-5 Gate Pinned (Kie.ai)</span>
+    <span>✦</span>
+    <span>Zero-Hallucination Primary Verification</span>
+    <span>✦</span>
+    <span>Demand-Driven GSC + DataForSEO Pipeline</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 11px;">
+    <span class="status-dot-pulse"></span>
+    <span id="storageLabel" style="font-weight: 700; color: var(--text);">Supabase Connected</span>
+  </div>
+</div>
+
 <div class="container">
-  <!-- Top Navigation Header (Organized, No Duplicates) -->
+  <!-- Header Navbar (Awwwards Style) -->
   <header>
-    <div class="brand">
-      <div class="brand-logo">PF</div>
-      <div>
-        <div class="brand-subtitle">Editorial Factory Suite</div>
-        <div class="brand-title">
-          PressFlow
-          <div class="status-pill" id="storageStatusPill">
-            <div class="status-dot"></div>
-            <span id="storageLabel">✓ Supabase Connected</span>
-          </div>
-        </div>
-      </div>
+    <div class="brand-section">
+      <a href="#" class="brand-logo-awwwards">
+        PF<span class="brand-dot">.</span>
+      </a>
+      <span class="brand-status-pill" id="storageStatusPill">
+        <span class="status-dot-pulse"></span> Live Fleet
+      </span>
     </div>
 
+    <!-- Center Search Bar -->
+    <div class="header-search-bar">
+      <span class="search-icon-inside">🔍</span>
+      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search articles, verticals, keywords, or personas...">
+    </div>
+
+    <!-- Right Actions -->
     <div class="header-actions">
-      <button class="btn btn-accent" id="btnGenerateSuite">
+      <button class="btn btn-dark-pill" id="btnGenerateSuite">
         ⚡ Generate Suite
       </button>
 
-      <button class="btn btn-secondary" id="btnOpenLibrary">
-        📖 Library ( <span id="libraryCount">0</span> )
+      <button class="btn btn-outline-pill" id="btnOpenLibrary">
+        📖 Library (<span id="libraryCount">0</span>)
       </button>
 
-      <button class="btn btn-secondary" id="btnLoadSample">
+      <button class="btn btn-outline-pill" id="btnLoadSample">
         🖊️ Load Sample
       </button>
 
-      <button class="theme-toggle-btn" id="btnToggleTheme" title="Toggle Light / Dark Mode">
+      <button class="theme-toggle-pill" id="btnToggleTheme" title="Toggle Light / Dark Mode">
         ☀️
       </button>
     </div>
   </header>
 
-  <!-- Segmented Navigation Tabs -->
-  <div class="tabs-wrapper">
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
-        ✍️ Source Article Workspace
+  <!-- Filter & Sub-Nav Strip (Screenshot 2) -->
+  <div class="filter-bar-awwwards">
+    <div class="filter-nav-pills">
+      <button class="nav-pill-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
+        ✍️ Workspace
       </button>
-      <button class="tab-btn" data-tab="tab-seo" id="tabSeoBtn">
-        ⚡ SEO Content Machine <span class="badge-count" id="seoOpportunitiesCount">12</span>
+      <button class="nav-pill-btn" data-tab="tab-seo" id="tabSeoBtn">
+        ⚡ SEO Machine <span class="filter-badge-counter" id="seoOpportunitiesCount">12</span>
       </button>
-      <button class="tab-btn" data-tab="tab-suite" id="tabSuiteBtn">
-        🗂️ Multi-channel Suite
+      <button class="nav-pill-btn" data-tab="tab-suite" id="tabSuiteBtn">
+        🗂️ Multi-Channel
       </button>
-      <button class="tab-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
-        ⚙️ Verticals &amp; Radar Settings <span class="badge-count" id="verticalsCount">8</span>
+      <button class="nav-pill-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
+        ⚙️ Verticals <span class="filter-badge-counter" id="verticalsCount">8</span>
       </button>
-      <button class="tab-btn" data-tab="tab-personas" id="tabPersonasBtn">
-        👥 Target Personas <span class="badge-count" id="personasCount">8</span>
+      <button class="nav-pill-btn" data-tab="tab-personas" id="tabPersonasBtn">
+        👥 Personas <span class="filter-badge-counter" id="personasCount">8</span>
       </button>
-      <button class="tab-btn" data-tab="tab-fleet" id="tabFleetBtn">
-        🛰️ Fleet &amp; Cron Controls
+      <button class="nav-pill-btn" data-tab="tab-fleet" id="tabFleetBtn">
+        🛰️ Fleet &amp; Crons
+      </button>
+    </div>
+
+    <div style="display: flex; gap: 0.4rem; align-items: center;">
+      <button class="filter-dropdown-pill" id="quickFilterBtn" onclick="document.getElementById('tabVerticalsBtn').click()">
+        Verticals (8) ˅
+      </button>
+      <button class="filter-dropdown-pill" onclick="document.getElementById('btnRefreshGsc').click()">
+        Refresh Radar ↺
       </button>
     </div>
   </div>
 
   <!-- TAB 1: Source Article Workspace -->
   <div class="tab-pane active" id="tab-workspace">
-    <!-- Hero Article Card (Headline + Clean Metadata Pills) -->
-    <div class="hero-article-card">
-      <div class="hero-top-row">
-        <div style="flex: 1; min-width: 300px;">
-          <h1 class="article-title-heading" id="currentArticleTitle">
-            Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.
-          </h1>
-        </div>
-
-        <div class="hero-actions">
-          <div class="view-switcher-pill">
-            <button class="view-btn active" id="viewRenderedBtn">👁️ Rendered</button>
-            <button class="view-btn" id="viewEditBtn">✏️ Edit</button>
+    <!-- Category Eyebrow & Big Bold Headline (Screenshot 1 & 2) -->
+    <div class="category-header-wrap">
+      <span class="category-eyebrow">EDITORIAL PRODUCTION · 30-DAY FRESHNESS</span>
+      <div class="display-title-row">
+        <h1 class="display-title-awwwards" id="currentArticleTitle">
+          Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.
+        </h1>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 0.2rem; display: inline-flex;">
+            <button class="btn btn-outline-pill btn-sm active" id="viewRenderedBtn" style="background: #0f172a; color: #fff;">👁️ Rendered</button>
+            <button class="btn btn-outline-pill btn-sm" id="viewEditBtn" style="border:none;">✏️ Edit</button>
           </div>
-          <button class="icon-btn danger" id="btnDeleteCurrentArticle" title="Delete current draft">🗑️</button>
+          <button class="btn btn-danger-pill btn-sm" id="btnDeleteCurrentArticle" title="Delete current draft">🗑️ Delete</button>
         </div>
       </div>
+    </div>
 
-      <div class="meta-pills-row">
-        <span class="clean-pill">
-          🗄️ <span id="currentWordCount">1752</span> words (~ <span id="currentReadTime">8</span> min read)
+    <!-- Hero Metadata Strip -->
+    <div class="hero-editorial-card" style="padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
+      <div class="article-meta-strip">
+        <span class="clean-pill-badge">
+          🗄️ <strong id="currentWordCount" style="margin-left: 0.25rem;">1752</strong> words (~ <span id="currentReadTime">8</span> min read)
         </span>
-        <span class="clean-pill">
+        <span class="clean-pill-badge">
           🔗 <a href="#" id="currentArticleLink" target="_blank">https://pressflow.aichieve.net/posts/2026-09-09_279b-nvidia-memory-bottleneck</a>
         </span>
-        <span class="tag-pill">#Tax</span>
-        <span class="tag-pill">#Accounting</span>
-        <span class="tag-pill">#SmallBusiness</span>
+        <span class="clean-pill-badge" style="background:#fff; border-color:#e5e7eb;">#GPUHardware</span>
+        <span class="clean-pill-badge" style="background:#fff; border-color:#e5e7eb;">#HBM3e</span>
+        <span class="clean-pill-badge" style="background:#fff; border-color:#e5e7eb;">#AIEngineering</span>
       </div>
     </div>
 
-    <!-- SEO Target Architecture & Performance (2-Card Clean Grid) -->
-    <div class="section-header-title">
-      SEO Target Architecture &amp; Performance
-    </div>
-
-    <div class="seo-target-grid" id="articleKeywordsCard">
+    <!-- SEO Architecture Dual Cards (Awwwards Card Aesthetic) -->
+    <div class="seo-architecture-grid" id="articleKeywordsCard">
       <!-- Left Card: Primary & Secondary SEO Targets -->
-      <div class="seo-box-card">
-        <span class="seo-box-label">Primary &amp; Secondary SEO Targets</span>
+      <div class="seo-card-box">
+        <span class="seo-card-title">Primary &amp; Secondary SEO Architecture</span>
 
-        <div class="primary-query-row">
-          <span>Primary Target Query:</span>
-          <span class="primary-query-title" id="kwPrimaryText">GPU memory bandwidth</span>
-          <button class="copy-pill-btn" id="btnCopyPrimaryKw" title="Copy Primary Keyword">📋 Copy</button>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">TARGET SEARCH QUERY</div>
+            <div style="font-size: 1.25rem; font-weight: 800; color: var(--text);" id="kwPrimaryText">GPU memory bandwidth</div>
+          </div>
+          <button class="btn btn-outline-pill btn-sm" id="btnCopyPrimaryKw">📋 Copy Query</button>
         </div>
 
-        <div class="badges-strip">
-          <span class="badge-intent" id="kwIntentBadge">⚡ Intent: <span id="kwIntentVal">INFORMATIONAL</span></span>
-          <span class="badge-persona" id="kwPersonaBadge">👤 Persona: <span id="kwPersonaVal">infra_engineer</span></span>
-          <span class="badge-calibrated" id="kwLiveStatusBadge">#SEO CALIBRATED</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.25rem;">
+          <span class="clean-pill-badge" style="background: #fef3c7; color: #92400e; border-color: #fde68a;" id="kwIntentBadge">
+            ⚡ Intent: <span id="kwIntentVal">INFORMATIONAL</span>
+          </span>
+          <span class="clean-pill-badge" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd;" id="kwPersonaBadge">
+            👤 Persona: <span id="kwPersonaVal">infra_engineer</span>
+          </span>
+          <span class="clean-pill-badge" style="background: #ccfbf1; color: #0f766e; border-color: #99f6e4;">
+            ✓ #SEO CALIBRATED
+          </span>
         </div>
 
-        <div class="secondary-clusters-row" id="kwSecondarySection">
-          <span style="color: var(--text-muted); font-weight: 600;">Secondary clusters:</span>
-          <div id="kwSecondaryChips" style="display: inline-flex; flex-wrap: wrap; gap: 0.4rem;">
-            <span class="cluster-tag">🏷️ HBM memory bandwidth</span>
-            <span class="cluster-tag">🏷️ AI inference bottleneck</span>
-            <span class="cluster-tag">🏷️ Nvidia H100 H200 supply</span>
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.85rem;">
+          <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.4rem;">
+            Secondary Semantic Clusters
+          </div>
+          <div id="kwSecondaryChips" style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="clean-pill-badge">🏷️ HBM memory bandwidth (✓ 3×)</span>
+            <span class="clean-pill-badge">🏷️ AI inference bottleneck (✓ 2×)</span>
+            <span class="clean-pill-badge">🏷️ Nvidia H100 H200 supply (✓ 1×)</span>
           </div>
         </div>
       </div>
 
-      <!-- Right Card: Target Keyword Performance Metrics -->
-      <div class="seo-box-card">
-        <span class="seo-box-label">Target Keyword Performance Metrics</span>
+      <!-- Right Card: Metrics & Readiness (With Yellow Accent Bar) -->
+      <div class="seo-card-box" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="seo-card-title">Search Volume &amp; Ranking Trajectory</span>
 
-        <div class="metrics-line">
-          <div class="metrics-line-item">
-            <span>Metrics for Primary Keyword:</span>
-            <strong id="kwMetricsTitle">GPU memory bandwidth</strong>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">ESTIMATED VOLUME</div>
+              <div style="font-size: 1.45rem; font-weight: 900; color: var(--text);" id="kwVolVal">3,100 / mo</div>
+            </div>
+            <div>
+              <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">KEYWORD DIFFICULTY</div>
+              <div style="font-size: 1.45rem; font-weight: 900; color: var(--success);" id="kwKdVal">33/100</div>
+            </div>
           </div>
-          <div class="metrics-line-item">
-            <span>Volume:</span>
-            <strong id="kwVolVal">N/A</strong>
+        </div>
+
+        <!-- Yellow Accent Bar from Screenshot 1 -->
+        <div class="card-footer-row" style="border-top: 1px solid var(--border-subtle); padding-top: 0.85rem;">
+          <div class="card-score-box">
+            <span class="score-label">Editorial Readiness Score 4.9/5</span>
+            <div class="yellow-accent-bar"></div>
           </div>
-          <div class="metrics-line-item">
-            <span>Keyword Difficulty:</span>
-            <strong id="kwKdVal">TBD</strong>
-          </div>
+          <span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46; border-color:#a7f3d0;">
+            🟢 Frontier Validated
+          </span>
         </div>
       </div>
     </div>
 
-    <!-- Article Content Preview Card -->
-    <div class="article-preview-card">
-      <div class="article-card-header">
-        <span style="font-size: 13.5px; font-weight: 800; color: var(--text); text-transform: uppercase; letter-spacing: 0.04em;">
-          Article Content Preview (Markdown)
-        </span>
+    <!-- Article Content Preview Container -->
+    <div class="article-prose-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.75rem;">
+        <span class="category-eyebrow" style="margin-bottom:0;">VERIFIED ARTICLE BODY (MARKDOWN)</span>
+        <span class="clean-pill-badge">Frontier Model: Claude 3.7 / Sonnet 5</span>
       </div>
 
-      <!-- Rendered Prose View (Font Size 11-12pt / 15-16px) -->
-      <div id="renderedArticleContainer" class="article-rendered"></div>
+      <!-- Rendered View -->
+      <div id="renderedArticleContainer" class="article-rendered-body"></div>
 
       <!-- Markdown Editor View -->
-      <div id="editorArticleContainer" class="editor-container" style="display: none;">
-        <div class="editor-toolbar">
-          <div class="toolbar-actions">
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- lead -->\n')">+ Lead</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tension -->\n')">+ Tension</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tactical-insight -->\n')">+ Tactical</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- nuanced-takeaway -->\n')">+ Takeaway</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tldr -->\n- ')">+ TL;DR</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- linkedin -->\n')">+ LinkedIn</button>
+      <div id="editorArticleContainer" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.6rem 0.85rem; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+          <div style="display: flex; gap: 0.35rem; flex-wrap: wrap;">
+            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- lead -->\n')">+ Lead</button>
+            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- tension -->\n')">+ Tension</button>
+            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- tactical-insight -->\n')">+ Tactical</button>
+            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- nuanced-takeaway -->\n')">+ Takeaway</button>
+            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- tldr -->\n- ')">+ TL;DR</button>
+            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- linkedin -->\n')">+ LinkedIn</button>
           </div>
-          <button class="btn btn-primary btn-sm" id="btnSaveDraft">💾 Save Draft</button>
+          <button class="btn btn-dark-pill btn-sm" id="btnSaveDraft">💾 Save Changes</button>
         </div>
-
-        <textarea class="markdown-textarea" id="markdownEditor" placeholder="Enter full markdown draft with sections and sources..."></textarea>
+        <textarea class="editor-box" id="markdownEditor" placeholder="Enter article markdown..."></textarea>
       </div>
     </div>
   </div>
 
   <!-- TAB 2: SEO Content Machine & Growth OS -->
   <div class="tab-pane" id="tab-seo">
-    <div class="hero-article-card" style="margin-bottom: 1.5rem;">
-      <div class="hero-top-row">
-        <div>
-          <div class="brand-subtitle">SEO Content Machine &amp; Growth OS Studio</div>
-          <h2 class="article-title-heading" style="font-size: 1.35rem;">
-            Demand-Driven Editorial Intelligence &amp; Ranking Engine
-          </h2>
-          <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 0.35rem;">
-            [GSC Query Spikes] ──&gt; [DataForSEO Enriched SERP] ──&gt; [Growth OS Taste Moat] ──&gt; [Structured Draft &amp; Schema] ──&gt; [@Simon approve Gate]
-          </p>
-        </div>
-
-        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-          <button class="btn btn-purple btn-sm" id="btnRunSeoPipelineModal">
-            🚀 Run SEO Machine
-          </button>
-          <button class="btn btn-secondary btn-sm" id="btnRefreshGsc">
-            🔄 Refresh GSC Signals
-          </button>
+    <div class="category-header-wrap">
+      <span class="category-eyebrow">DEMAND-DRIVEN EDITORIAL INTELLIGENCE</span>
+      <div class="display-title-row">
+        <h2 class="display-title-awwwards">SEO Content Machine &amp; Growth OS</h2>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-dark-pill btn-sm" id="btnRunSeoPipelineModal">🚀 Run SEO Machine</button>
+          <button class="btn btn-outline-pill btn-sm" id="btnRefreshGsc">🔄 Refresh GSC Signals</button>
         </div>
       </div>
     </div>
 
-    <!-- Live SEO Metrics Strip -->
-    <div class="seo-metrics-grid">
-      <div class="seo-metric-card">
-        <div class="seo-metric-lbl">High-Impression Striking Queries</div>
-        <div class="seo-metric-val" id="kpiStrikingCount">12</div>
-        <div style="font-size: 11px; color: var(--accent); margin-top: 0.2rem;">Avg Position 8.0 – 25.0</div>
+    <!-- Live KPI Metrics Strip -->
+    <div class="awwwards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 1.75rem;">
+      <div class="seo-card-box">
+        <span class="category-eyebrow">STRIKING QUERIES</span>
+        <div style="font-size: 1.85rem; font-weight: 900;" id="kpiStrikingCount">12</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">Avg Position 8.0 – 25.0</div>
       </div>
 
-      <div class="seo-metric-card">
-        <div class="seo-metric-lbl">Emerging Query Spikes</div>
-        <div class="seo-metric-val" id="kpiSpikeCount">8</div>
-        <div style="font-size: 11px; color: var(--success); margin-top: 0.2rem;">&gt; +50% Week-over-Week</div>
+      <div class="seo-card-box">
+        <span class="category-eyebrow">EMERGING SPIKES</span>
+        <div style="font-size: 1.85rem; font-weight: 900; color: var(--success);" id="kpiSpikeCount">8</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">&gt; +50% Week-over-Week</div>
       </div>
 
-      <div class="seo-metric-card">
-        <div class="seo-metric-lbl">Tracked SERP Top 10 Wins</div>
-        <div class="seo-metric-val" id="kpiTop10Count">3</div>
-        <div style="font-size: 11px; color: var(--warning); margin-top: 0.2rem;">+18.2 avg rank trajectory</div>
+      <div class="seo-card-box">
+        <span class="category-eyebrow">TOP 10 WINS</span>
+        <div style="font-size: 1.85rem; font-weight: 900;" id="kpiTop10Count">3</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">+18.2 avg rank trajectory</div>
       </div>
 
-      <div class="seo-metric-card">
-        <div class="seo-metric-lbl">Growth OS Taste Moat</div>
-        <div class="seo-metric-val" style="color: var(--purple);">Active</div>
-        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.2rem;">Founder Voice &amp; Customer Truth</div>
+      <div class="seo-card-box">
+        <span class="category-eyebrow">TASTE MOAT</span>
+        <div style="font-size: 1.85rem; font-weight: 900; color: var(--purple);">Active</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">Founder Voice &amp; Customer Truth</div>
       </div>
     </div>
 
-    <!-- SEO Sub-Navigation -->
-    <div class="seo-subnav">
-      <button class="seo-subnav-btn active" data-sub="sub-gsc" id="btnSubGsc">
-        📈 GSC Opportunity Radar (<span id="gscSubCount">12</span>)
-      </button>
-      <button class="seo-subnav-btn" data-sub="sub-dataforseo" id="btnSubDataForSEO">
-        🔍 DataForSEO Keyword &amp; SERP Explorer
-      </button>
-      <button class="seo-subnav-btn" data-sub="sub-growth-os" id="btnSubGrowthOs">
-        🧠 Growth OS Knowledge (Founder Voice &amp; Customer Truth)
-      </button>
-      <button class="seo-subnav-btn" data-sub="sub-cannibalization" id="btnSubCannibalization">
-        🛡️ Sitemap &amp; Cannibalization Shield
-      </button>
-      <button class="seo-subnav-btn" data-sub="sub-serp-preview" id="btnSubSerpPreview">
-        🏷️ Google SERP Snippet &amp; Schema Inspector
-      </button>
-      <button class="seo-subnav-btn" data-sub="sub-performance" id="btnSubPerformance">
-        📊 Ranking Performance Loop
-      </button>
+    <!-- SEO Subnav Pills -->
+    <div class="filter-bar-awwwards" style="margin-bottom: 1.5rem;">
+      <div class="filter-nav-pills">
+        <button class="nav-pill-btn active" data-sub="sub-gsc" id="btnSubGsc">📈 GSC Opportunity Radar (<span id="gscSubCount">12</span>)</button>
+        <button class="nav-pill-btn" data-sub="sub-dataforseo" id="btnSubDataForSEO">🔍 DataForSEO Explorer</button>
+        <button class="nav-pill-btn" data-sub="sub-growth-os" id="btnSubGrowthOs">🧠 Growth OS Knowledge</button>
+        <button class="nav-pill-btn" data-sub="sub-cannibalization" id="btnSubCannibalization">🛡️ Cannibalization Shield</button>
+        <button class="nav-pill-btn" data-sub="sub-serp-preview" id="btnSubSerpPreview">🏷️ SERP &amp; Schema</button>
+        <button class="nav-pill-btn" data-sub="sub-performance" id="btnSubPerformance">📊 Ranking Loop</button>
+      </div>
     </div>
 
-    <!-- SUB-PANE 1: GSC Opportunity Radar -->
+    <!-- SUB-PANE 1: GSC Table -->
     <div class="seo-subpane" id="sub-gsc">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
-        <div style="display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;">
-          <select class="form-select" id="filterGscVertical" style="padding: 0.4rem 0.8rem; font-size: 12px; width: auto;">
-            <option value="all">All Verticals (All 8 Niches)</option>
-            <option value="agentic_ai">Agentic Runtime &amp; Architecture</option>
-            <option value="ai_observability_qa">Observability, Evals &amp; Quality</option>
-            <option value="agentic_resilience_failure">Resilience &amp; Failure Engineering</option>
-            <option value="enterprise_ai_governance">Enterprise Enablement &amp; Agent Security</option>
-            <option value="enterprise_tech_leadership">Enterprise Tech &amp; Architecture</option>
-            <option value="gpu_hardware">GPUs &amp; AI Hardware</option>
-            <option value="supply_chain">Supply Chain &amp; Logistics Tech</option>
-            <option value="home_systems_reno">Home Systems &amp; Building Science</option>
-          </select>
-
-          <span style="font-size: 11.5px; color: var(--text-muted);">
-            Threshold: <strong>Impr &gt; 500</strong> | <strong>Pos 8–25</strong> | <strong>WoW &gt; 50%</strong>
-          </span>
-        </div>
-
-        <div style="font-size: 11px; color: var(--text-dim);" id="gscUpdatedLabel">
-          Dataset: Last 28 Days Analytics
-        </div>
+        <select class="form-select" id="filterGscVertical" style="width: auto; border-radius: var(--radius-pill); font-size: 12px; padding: 0.4rem 1rem;">
+          <option value="all">All Verticals (All 8 Niches)</option>
+          <option value="agentic_ai">Agentic Runtime &amp; Architecture</option>
+          <option value="ai_observability_qa">Observability, Evals &amp; Quality</option>
+          <option value="agentic_resilience_failure">Resilience &amp; Failure Engineering</option>
+          <option value="enterprise_ai_governance">Enterprise Enablement &amp; Security</option>
+          <option value="enterprise_tech_leadership">Enterprise Tech &amp; Architecture</option>
+          <option value="gpu_hardware">GPUs &amp; AI Hardware</option>
+          <option value="supply_chain">Supply Chain &amp; Logistics Tech</option>
+          <option value="home_systems_reno">Home Systems &amp; Building Science</option>
+        </select>
+        <span style="font-size: 11.5px; color: var(--text-muted);">Threshold: <strong>Impr &gt; 500</strong> | <strong>Pos 8–25</strong> | <strong>WoW &gt; 50%</strong></span>
       </div>
 
-      <div class="gsc-table-wrapper">
-        <table class="gsc-table" id="gscTable">
+      <div class="table-card-wrapper">
+        <table class="modern-table" id="gscTable">
           <thead>
             <tr>
               <th>Target Query</th>
@@ -1700,16 +1347,12 @@
               <th>Avg Pos</th>
               <th>WoW Spike</th>
               <th>Intent</th>
-              <th>Opp Score</th>
+              <th>Score</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody id="gscTableBody">
-            <tr>
-              <td colspan="10" style="text-align: center; padding: 2rem; color: var(--text-dim);">
-                Loading GSC query opportunities...
-              </td>
-            </tr>
+            <tr><td colspan="10" style="text-align: center; padding: 2rem;">Loading GSC signals...</td></tr>
           </tbody>
         </table>
       </div>
@@ -1717,51 +1360,44 @@
 
     <!-- SUB-PANE 2: DataForSEO Explorer -->
     <div class="seo-subpane" id="sub-dataforseo" style="display: none;">
-      <div style="display: flex; gap: 0.6rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
-        <input type="text" id="d4sKeywordInput" class="form-input" style="flex: 1; min-width: 300px;" placeholder="Enter any seed keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
-        <button class="btn btn-primary" id="btnD4sEnrich">
-          🔍 Enrich via DataForSEO
-        </button>
+      <div style="display: flex; gap: 0.65rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+        <input type="text" id="d4sKeywordInput" class="form-input" style="flex: 1; min-width: 300px; border-radius: var(--radius-pill);" placeholder="Enter any seed keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
+        <button class="btn btn-dark-pill" id="btnD4sEnrich">🔍 Enrich via DataForSEO</button>
       </div>
 
       <div id="d4sResultsBox">
-        <div class="seo-metrics-grid" style="margin-bottom: 1.25rem;">
-          <div class="seo-metric-card">
-            <div class="seo-metric-lbl">Monthly Search Volume</div>
-            <div class="seo-metric-val" id="d4sVol">3,100</div>
-            <div style="font-size: 11px; color: var(--text-muted);">US/Global Queries/mo</div>
+        <div class="awwwards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 1.5rem;">
+          <div class="seo-card-box">
+            <span class="category-eyebrow">MONTHLY SEARCH VOL</span>
+            <div style="font-size: 1.6rem; font-weight: 900;" id="d4sVol">3,100</div>
           </div>
-          <div class="seo-metric-card">
-            <div class="seo-metric-lbl">Estimated CPC</div>
-            <div class="seo-metric-val" id="d4sCpc">$2.80</div>
-            <div style="font-size: 11px; color: var(--text-muted);">Commercial Value Indicator</div>
+          <div class="seo-card-box">
+            <span class="category-eyebrow">ESTIMATED CPC</span>
+            <div style="font-size: 1.6rem; font-weight: 900;" id="d4sCpc">$2.80</div>
           </div>
-          <div class="seo-metric-card">
-            <div class="seo-metric-lbl">Keyword Difficulty (KD)</div>
-            <div class="seo-metric-val" id="d4sKd">33/100</div>
-            <div style="font-size: 11px; color: var(--success);">Moderate Opportunity</div>
+          <div class="seo-card-box">
+            <span class="category-eyebrow">KEYWORD DIFFICULTY</span>
+            <div style="font-size: 1.6rem; font-weight: 900; color: var(--success);" id="d4sKd">33/100</div>
           </div>
-          <div class="seo-metric-card">
-            <div class="seo-metric-lbl">Search Intent</div>
-            <div class="seo-metric-val" style="color: var(--accent);" id="d4sIntent">INFORMATIONAL</div>
-            <div style="font-size: 11px; color: var(--text-muted);">Target Funnel: Top/Mid</div>
+          <div class="seo-card-box">
+            <span class="category-eyebrow">SEARCH INTENT</span>
+            <div style="font-size: 1.6rem; font-weight: 900;" id="d4sIntent">INFORMATIONAL</div>
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem;">
-          <div class="seo-box-card">
-            <span class="seo-box-label">🧩 Semantic Keyword Clusters &amp; Subheadings</span>
-            <div id="d4sClustersList" style="display: flex; flex-direction: column; gap: 0.45rem;"></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+          <div class="seo-card-box">
+            <span class="seo-card-title">🧩 Semantic Clusters &amp; Subheadings</span>
+            <div id="d4sClustersList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
           </div>
-
-          <div class="seo-box-card">
-            <span class="seo-box-label">❓ People Also Ask (PAA) Schema Questions</span>
-            <div id="d4sPaaList" style="display: flex; flex-direction: column; gap: 0.45rem;"></div>
+          <div class="seo-card-box">
+            <span class="seo-card-title">❓ People Also Ask (PAA) Questions</span>
+            <div id="d4sPaaList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
           </div>
         </div>
 
-        <div class="seo-box-card">
-          <span class="seo-box-label">🏆 Top Competitor SERP Landscape</span>
+        <div class="seo-card-box">
+          <span class="seo-card-title">🏆 Top Competitor SERP Landscape</span>
           <div id="d4sSerpList" style="display: flex; flex-direction: column; gap: 0.65rem;"></div>
         </div>
       </div>
@@ -1769,340 +1405,308 @@
 
     <!-- SUB-PANE 3: Growth OS Knowledge -->
     <div class="seo-subpane" id="sub-growth-os" style="display: none;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
         <p style="font-size: 12.5px; color: var(--text-muted);">
-          Our moat against commoditized AI fluff. Ingested into every SEO article draft to ensure contrarian taste, quotes, and field failure data.
+          Our moat against commoditized AI fluff. Ingested into every article to inject contrarian founder taste and field telemetry.
         </p>
-        <button class="btn btn-primary btn-sm" id="btnSaveGrowthOs">
-          💾 Save Knowledge Files
-        </button>
+        <button class="btn btn-dark-pill btn-sm" id="btnSaveGrowthOs">💾 Save Knowledge Files</button>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
-        <div class="seo-box-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
-            <span style="font-size: 12px; font-weight: 700; color: var(--purple);">
-              🎙️ FOUNDER-VOICE.MD (Taste &amp; Stances)
-            </span>
-            <span class="clean-pill" style="font-size: 10.5px;">context/growth_os/founder-voice.md</span>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+        <div class="seo-card-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
+            <span style="font-weight: 800; font-size: 12px; color: var(--purple);">🎙️ FOUNDER-VOICE.MD</span>
+            <span class="clean-pill-badge" style="font-size: 10px;">context/growth_os/founder-voice.md</span>
           </div>
-          <textarea class="growth-textarea" id="txtFounderVoice" placeholder="Loading founder voice rules..."></textarea>
+          <textarea class="editor-box" id="txtFounderVoice" style="min-height: 420px; font-size: 12px;" placeholder="Loading founder voice rules..."></textarea>
         </div>
 
-        <div class="seo-box-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
-            <span style="font-size: 12px; font-weight: 700; color: var(--accent);">
-              🛠️ CUSTOMER-TRUTH.MD (Field Anecdotes &amp; Costs)
-            </span>
-            <span class="clean-pill" style="font-size: 10.5px;">context/growth_os/customer-truth.md</span>
+        <div class="seo-card-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
+            <span style="font-weight: 800; font-size: 12px; color: #0284c7;">🛠️ CUSTOMER-TRUTH.MD</span>
+            <span class="clean-pill-badge" style="font-size: 10px;">context/growth_os/customer-truth.md</span>
           </div>
-          <textarea class="growth-textarea" id="txtCustomerTruth" placeholder="Loading customer truth notes..."></textarea>
+          <textarea class="editor-box" id="txtCustomerTruth" style="min-height: 420px; font-size: 12px;" placeholder="Loading customer truth notes..."></textarea>
         </div>
       </div>
     </div>
 
-    <!-- SUB-PANE 4: Sitemap & Cannibalization Shield -->
+    <!-- SUB-PANE 4: Cannibalization Shield -->
     <div class="seo-subpane" id="sub-cannibalization" style="display: none;">
-      <div class="seo-box-card" style="margin-bottom: 1.25rem;">
-        <span class="seo-box-label">🛡️ Live Keyword Cannibalization Checker</span>
-        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-          <input type="text" id="txtCannibalizationTest" class="form-input" style="flex: 1; min-width: 280px;" placeholder="Test candidate keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
-          <button class="btn btn-secondary btn-sm" id="btnTestCannibalization">
-            Run Audit
-          </button>
+      <div class="seo-card-box" style="margin-bottom: 1.5rem;">
+        <span class="seo-card-title">🛡️ Live Keyword Cannibalization Checker</span>
+        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+          <input type="text" id="txtCannibalizationTest" class="form-input" style="flex: 1; min-width: 280px; border-radius: var(--radius-pill);" placeholder="Test candidate keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
+          <button class="btn btn-outline-pill btn-sm" id="btnTestCannibalization">Run Conflict Audit</button>
         </div>
-        <div id="cannibalizationResultBox" style="margin-top: 0.85rem; font-size: 12px; display: none;"></div>
+        <div id="cannibalizationResultBox" style="margin-top: 0.85rem; display: none;"></div>
       </div>
 
-      <div class="seo-box-card">
-        <span class="seo-box-label">🗺️ Active Topic Cluster &amp; Internal Linking Index</span>
-        <div class="gsc-table-wrapper">
-          <table class="gsc-table" id="sitemapTable">
-            <thead>
-              <tr>
-                <th>Published Article</th>
-                <th>Vertical</th>
-                <th>Primary Target Keyword</th>
-                <th>Secondary Clusters</th>
-                <th>Live Path</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody id="sitemapTableBody"></tbody>
-          </table>
-        </div>
+      <div class="table-card-wrapper">
+        <table class="modern-table" id="sitemapTable">
+          <thead>
+            <tr>
+              <th>Published Article</th>
+              <th>Vertical</th>
+              <th>Primary Target Keyword</th>
+              <th>Secondary Clusters</th>
+              <th>Live Path</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="sitemapTableBody"></tbody>
+        </table>
       </div>
     </div>
 
-    <!-- SUB-PANE 5: SERP Preview & Schema Inspector -->
+    <!-- SUB-PANE 5: SERP Preview & Schema -->
     <div class="seo-subpane" id="sub-serp-preview" style="display: none;">
-      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.25rem;">
-        <div class="seo-box-card">
-          <span class="seo-box-label">🌐 Google Search Snippet Preview</span>
-          <div style="background: #ffffff; border: 1px solid #dfe1e5; border-radius: 8px; padding: 1.15rem; font-family: Arial, sans-serif; margin-bottom: 1.25rem;">
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem;">
+        <div class="seo-card-box">
+          <span class="seo-card-title">🌐 Google Search Snippet Preview</span>
+          <div style="background: #ffffff; border: 1px solid #dfe1e5; border-radius: 12px; padding: 1.25rem; font-family: Arial, sans-serif; margin-bottom: 1.5rem;">
             <div style="font-size: 12px; color: #202124; margin-bottom: 0.25rem;">
               https://editorialfactory.io/articles/<span id="previewSerpUrl">mcp-server-implementation-python</span>
             </div>
-            <div style="color: #1a0dab; font-size: 18px; line-height: 1.3; font-weight: 400; margin-bottom: 0.35rem; cursor: pointer;" id="previewSerpTitle">
-              Mcp Server Implementation Python: Production Architecture &amp; Cost Reality
+            <div style="color: #1a0dab; font-size: 18px; line-height: 1.3; font-weight: 400; margin-bottom: 0.35rem;" id="previewSerpTitle">
+              Mcp Server Implementation Python: Production Architecture
             </div>
             <div style="color: #4d5156; font-size: 13px; line-height: 1.5;" id="previewSerpDesc">
-              A practitioner breakdown of mcp server implementation python. Discover real production benchmarks, architectural bottlenecks, and the true cost tradeoffs.
+              A practitioner breakdown of mcp server implementation python. Discover real production benchmarks.
             </div>
           </div>
 
-          <span class="seo-box-label">🔗 Suggested Internal Linking Anchors</span>
+          <span class="seo-card-title">🔗 Suggested Internal Linking Anchors</span>
           <div id="previewInternalLinksBox" style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;">
-            <ul style="padding-left: 1.2rem; font-size: 12px; color: var(--text-secondary);" id="internalLinksUl">
+            <ul style="padding-left: 1.2rem; font-size: 12px;" id="internalLinksUl">
               <li><code>[anthropic multi agent framework]</code> &rarr; <code>/published/2026-09-07_anthropic-multiagent-turf-war.md</code></li>
             </ul>
           </div>
         </div>
 
-        <div class="seo-box-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
-            <span class="seo-box-label" style="margin-bottom: 0;">📄 JSON-LD Schema Markup (`@graph`)</span>
-            <button class="btn btn-secondary btn-sm" id="btnCopySchema">📋 Copy</button>
+        <div class="seo-card-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span class="seo-card-title" style="margin-bottom:0;">📄 JSON-LD Schema (`@graph`)</span>
+            <button class="btn btn-outline-pill btn-sm" id="btnCopySchema">📋 Copy Schema</button>
           </div>
-          <pre class="article-rendered pre" id="schemaViewerPre" style="max-height: 380px; font-size: 11.5px; overflow-y: auto;">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "headline": "Mcp Server Implementation Python"
-    }
-  ]
-}
-          </pre>
+          <pre class="article-rendered-body pre" id="schemaViewerPre" style="max-height: 380px; font-size: 11.5px; overflow-y: auto;">{}</pre>
         </div>
       </div>
     </div>
 
     <!-- SUB-PANE 6: Performance Loop -->
     <div class="seo-subpane" id="sub-performance" style="display: none;">
-      <div class="seo-box-card">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-          <span class="seo-box-label" style="margin-bottom: 0;">📈 Post-Publish GSC Ranking &amp; Impression Trajectory</span>
-          <span class="clean-pill">Updated Weekly</span>
-        </div>
-
-        <div class="gsc-table-wrapper" style="margin-bottom: 1.25rem;">
-          <table class="gsc-table" id="performanceTable">
-            <thead>
-              <tr>
-                <th>Article Slug</th>
-                <th>Target Query</th>
-                <th>Initial Pos</th>
-                <th>Current Pos</th>
-                <th>Rank Lift</th>
-                <th>7d Impressions</th>
-                <th>7d Clicks</th>
-                <th>CTR</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody id="performanceTableBody"></tbody>
-          </table>
-        </div>
+      <div class="table-card-wrapper">
+        <table class="modern-table" id="performanceTable">
+          <thead>
+            <tr>
+              <th>Article Slug</th>
+              <th>Target Query</th>
+              <th>Initial Pos</th>
+              <th>Current Pos</th>
+              <th>Rank Lift</th>
+              <th>7d Impressions</th>
+              <th>7d Clicks</th>
+              <th>CTR</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="performanceTableBody"></tbody>
+        </table>
       </div>
     </div>
   </div>
 
-  <!-- TAB 3: Multi-Channel Suite (4-Channel Matrix) -->
+  <!-- TAB 3: Multi-Channel Suite (Screenshot 1 & 3 Aesthetic) -->
   <div class="tab-pane" id="tab-suite">
-    <div class="hero-article-card">
-      <div class="brand-subtitle">Multi-Channel Distribution Suite</div>
-      <h2 class="article-title-heading" style="font-size: 1.35rem;">Automated Multi-Channel Previews</h2>
-      <p style="font-size: 12.5px; color: var(--text-muted);">
-        Distribution formats extracted directly from the verified editorial brief.
-      </p>
+    <div class="category-header-wrap">
+      <span class="category-eyebrow">OMNICHANNEL DISTRIBUTION</span>
+      <div class="display-title-row">
+        <h2 class="display-title-awwwards">Multi-Channel Distribution Suite</h2>
+        <button class="btn btn-dark-pill btn-sm" onclick="generateSuite()">⚡ Regenerate All Formats</button>
+      </div>
+    </div>
 
-      <div class="suite-container">
-        <!-- 1. LinkedIn Card -->
-        <div class="channel-card">
-          <div>
-            <div class="channel-header">
-              <div class="channel-title">💼 LinkedIn Thought Leadership</div>
-              <span class="clean-pill" id="linkedInCharCount">0 chars</span>
+    <div class="suite-grid-awwwards">
+      <!-- 1. LinkedIn Card -->
+      <div class="channel-card-awwwards">
+        <div>
+          <div class="channel-header-row">
+            <div>
+              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">💼 LinkedIn Thought Leadership</div>
+              <div style="font-size: 11px; color: var(--text-muted);" id="linkedInCharCount">0 chars</div>
             </div>
-            <div class="channel-box" id="linkedInPreviewBox">
-              Click 'Generate Suite' or load an article to preview LinkedIn copy...
-            </div>
+            <span class="clean-pill-badge" style="background:#e0f2fe; color:#0369a1;">Executive Format</span>
           </div>
-          <div style="display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap;">
-            <button class="btn btn-secondary btn-sm" id="btnCopyLinkedIn">📋 Copy Post</button>
-            <button class="btn btn-primary btn-sm" id="btnPushLinkedInQueue">🚀 Queue to Supabase</button>
-          </div>
+          <div class="channel-box-inner" id="linkedInPreviewBox">Click 'Generate Suite' or load an article to preview LinkedIn copy...</div>
         </div>
-
-        <!-- 2. Twitter / X Card -->
-        <div class="channel-card">
-          <div>
-            <div class="channel-header">
-              <div class="channel-title">📱 X / Twitter Thread Series</div>
-              <span class="clean-pill" id="twitterPillCount">3-4 Tweets</span>
-            </div>
-            <div class="channel-box" id="twitterPreviewBox">
-              Click 'Generate Suite' or load an article to preview thread series...
-            </div>
-          </div>
-          <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-            <button class="btn btn-secondary btn-sm" id="btnCopyTwitter">📋 Copy Thread</button>
-          </div>
+        <div style="display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap;">
+          <button class="btn btn-outline-pill btn-sm" id="btnCopyLinkedIn">📋 Copy Post</button>
+          <button class="btn btn-dark-pill btn-sm" id="btnPushLinkedInQueue">🚀 Queue to Supabase</button>
         </div>
+      </div>
 
-        <!-- 3. Substack / Newsletter Card -->
-        <div class="channel-card">
-          <div>
-            <div class="channel-header">
-              <div class="channel-title">📰 Substack / Newsletter Executive Brief</div>
-              <span class="clean-pill">Executive Digest</span>
+      <!-- 2. Twitter / X Card -->
+      <div class="channel-card-awwwards">
+        <div>
+          <div class="channel-header-row">
+            <div>
+              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">📱 X / Twitter Thread Series</div>
+              <div style="font-size: 11px; color: var(--text-muted);">Numbered Tweet Breakdown</div>
             </div>
-            <div class="channel-box" id="newsletterPreviewBox">
-              Executive takeaways, TL;DR bullet matrix, and curated links formatted for Substack/Beehiiv newsletters...
-            </div>
+            <span class="clean-pill-badge">3-4 Tweets</span>
           </div>
-          <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-            <button class="btn btn-secondary btn-sm" id="btnCopyNewsletter">📋 Copy Newsletter</button>
-          </div>
+          <div class="channel-box-inner" id="twitterPreviewBox">Click 'Generate Suite' or load an article to preview thread series...</div>
         </div>
+        <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+          <button class="btn btn-outline-pill btn-sm" id="btnCopyTwitter">📋 Copy Thread</button>
+        </div>
+      </div>
 
-        <!-- 4. Hacker News / Reddit Technical Pitch -->
-        <div class="channel-card">
-          <div>
-            <div class="channel-header">
-              <div class="channel-title">💬 Hacker News &amp; Reddit Discussion Lead</div>
-              <span class="clean-pill">Engineering Community</span>
+      <!-- 3. Substack / Newsletter Card -->
+      <div class="channel-card-awwwards">
+        <div>
+          <div class="channel-header-row">
+            <div>
+              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">📰 Substack / Newsletter Brief</div>
+              <div style="font-size: 11px; color: var(--text-muted);">Executive Digest &amp; Takeaways</div>
             </div>
-            <div class="channel-box" id="communityPreviewBox">
-              Pragmatic, zero-marketing discussion starter and technical breakdown for r/MachineLearning, r/LocalLLaMA &amp; Hacker News...
+            <span class="clean-pill-badge">Digest Format</span>
+          </div>
+          <div class="channel-box-inner" id="newsletterPreviewBox">Executive takeaways, TL;DR bullet matrix formatted for Substack/Beehiiv newsletters...</div>
+        </div>
+        <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+          <button class="btn btn-outline-pill btn-sm" id="btnCopyNewsletter">📋 Copy Newsletter</button>
+        </div>
+      </div>
+
+      <!-- 4. Hacker News / Reddit Technical Pitch -->
+      <div class="channel-card-awwwards">
+        <div>
+          <div class="channel-header-row">
+            <div>
+              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">💬 Community Discussion Pitch</div>
+              <div style="font-size: 11px; color: var(--text-muted);">r/MachineLearning &amp; Hacker News</div>
             </div>
+            <span class="clean-pill-badge">Practitioner Format</span>
           </div>
-          <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-            <button class="btn btn-secondary btn-sm" id="btnCopyCommunity">📋 Copy Pitch</button>
-          </div>
+          <div class="channel-box-inner" id="communityPreviewBox">Pragmatic, zero-marketing discussion starter and technical breakdown...</div>
+        </div>
+        <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+          <button class="btn btn-outline-pill btn-sm" id="btnCopyCommunity">📋 Copy Pitch</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- TAB 4: Verticals & Settings -->
+  <!-- TAB 4: Verticals & Radar Settings (Awwwards Masterclass Cards) -->
   <div class="tab-pane" id="tab-verticals">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-      <div style="flex: 1; max-width: 440px;">
-        <input type="text" class="form-input" id="searchVerticals" placeholder="🔍 Filter verticals by title, angle, source or persona...">
-      </div>
-      <div style="display: flex; gap: 0.6rem;">
-        <button class="btn btn-secondary" id="syncCronBtnVerticals">⚡ Sync Crons</button>
-        <button class="btn btn-primary" id="addVerticalTopBtn">+ New Vertical</button>
+    <div class="category-header-wrap">
+      <span class="category-eyebrow">30-DAY FRESHNESS RADAR</span>
+      <div class="display-title-row">
+        <h2 class="display-title-awwwards">Editorial Verticals &amp; Coverage Engines</h2>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-outline-pill" id="syncCronBtnVerticals">⚡ Sync Crons</button>
+          <button class="btn btn-dark-pill" id="addVerticalTopBtn">+ New Vertical</button>
+        </div>
       </div>
     </div>
 
-    <div class="grid" id="verticalsGrid"></div>
+    <div class="awwwards-grid" id="verticalsGrid"></div>
   </div>
 
   <!-- TAB 5: Target Personas Maintenance -->
   <div class="tab-pane" id="tab-personas">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-      <div style="flex: 1; max-width: 440px;">
-        <input type="text" class="form-input" id="searchPersonas" placeholder="🔍 Filter target personas by label, tone, or expectation...">
+    <div class="category-header-wrap">
+      <span class="category-eyebrow">READER ARCHETYPES &amp; TASTE</span>
+      <div class="display-title-row">
+        <h2 class="display-title-awwwards">Target Reader Personas</h2>
+        <button class="btn btn-dark-pill" id="addPersonaTopBtn">+ New Persona</button>
       </div>
-      <button class="btn btn-primary" id="addPersonaTopBtn">+ New Persona</button>
     </div>
 
-    <div class="grid" id="personasGrid"></div>
+    <div class="awwwards-grid" id="personasGrid"></div>
   </div>
 
   <!-- TAB 6: Fleet & Cron Controls -->
   <div class="tab-pane" id="tab-fleet">
-    <div class="hero-article-card" style="margin-bottom: 1.5rem;">
-      <div class="brand-subtitle">Operations &amp; Multi-Agent Fleet Command</div>
-      <h2 class="article-title-heading" style="font-size: 1.35rem;">Hermes Fleet &amp; Cron Orchestration</h2>
-      <p style="font-size: 12.5px; color: var(--text-muted);">
-        Autonomous 30-day radar sweeps, frontier Claude-Sonnet-5 humanizer gates, and Supabase cloud database synchronization.
-      </p>
-
-      <!-- Bot Fleet Overview -->
-      <div class="fleet-status-grid" style="margin-top: 1rem;">
-        <div class="fleet-bot-card">
-          <div class="fleet-bot-header">
-            <span class="fleet-bot-name">🛰️ Scout Radar Fleet</span>
-            <span class="clean-pill" style="font-size: 10px; background: #ecfdf5; color: #065f46; border-color: #a7f3d0;">ACTIVE</span>
-          </div>
-          <div style="font-size: 11px; color: var(--text-muted);">Runtime: DeepSeek-V4 · 30-Day Freshness Filter</div>
-          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Cadence: Auto-Dispatched</div>
-        </div>
-
-        <div class="fleet-bot-card">
-          <div class="fleet-bot-header">
-            <span class="fleet-bot-name">🧠 Growth OS Analyst</span>
-            <span class="clean-pill" style="font-size: 10px; background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;">ACTIVE</span>
-          </div>
-          <div style="font-size: 11px; color: var(--text-muted);">Founder Voice + Customer Truth Ingestion</div>
-          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Memory: Dual Moat Files</div>
-        </div>
-
-        <div class="fleet-bot-card">
-          <div class="fleet-bot-header">
-            <span class="fleet-bot-name">✍️ Claude Stylist Gate</span>
-            <span class="clean-pill" style="font-size: 10px; background: #e0f2fe; color: #0369a1; border-color: #bae6fd;">FRONTIER</span>
-          </div>
-          <div style="font-size: 11px; color: var(--text-muted);">Frontier Model: Claude 3.7 / Sonnet 5 (Kie.ai)</div>
-          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Gate: 0 AI Tells Required</div>
-        </div>
-
-        <div class="fleet-bot-card">
-          <div class="fleet-bot-header">
-            <span class="fleet-bot-name">🚀 Publisher &amp; Ghost Gate</span>
-            <span class="clean-pill" style="font-size: 10px; background: #fef3c7; color: #92400e; border-color: #fde68a;">APPROVAL GATED</span>
-          </div>
-          <div style="font-size: 11px; color: var(--text-muted);">Channels: Ghost + LinkedIn + Static Site</div>
-          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Gate: @Simon approve</div>
-        </div>
+    <div class="category-header-wrap">
+      <span class="category-eyebrow">OPERATIONS &amp; MULTI-AGENT FLEET</span>
+      <div class="display-title-row">
+        <h2 class="display-title-awwwards">Hermes Fleet &amp; Cron Orchestration</h2>
       </div>
+    </div>
 
-      <!-- Quick Operations Trigger Cards -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
-        <div style="padding: 1.15rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">1. Hermes Cron Schedule Sync</div>
-          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.85rem;">
-            Pushes all active verticals and their cron cadences directly to <code>hermes cron</code> jobs on the VPS.
-          </div>
-          <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">⚡ Run scripts/sync_crons.py</button>
-        </div>
-
-        <div style="padding: 1.15rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">2. Supabase Push (Local &rarr; Cloud)</div>
-          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.85rem;">
-            Uploads all 8 verticals and personas into the Supabase remote tables.
-          </div>
-          <button class="btn btn-secondary btn-sm" id="btnPushSupabase">☁️ Push to Supabase</button>
-        </div>
-
-        <div style="padding: 1.15rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">3. Supabase Pull (Cloud &rarr; Local)</div>
-          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.85rem;">
-            Fetches all remote verticals from Supabase and overwrites local <code>context/verticals.json</code>.
-          </div>
-          <button class="btn btn-secondary btn-sm" id="btnPullSupabase">📥 Pull from Supabase</button>
-        </div>
-      </div>
-
-      <!-- Live Operations Console Box -->
-      <div style="margin-top: 1.5rem;">
+    <div class="awwwards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 1.5rem;">
+      <div class="seo-card-box">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim);">Live Fleet Operations Log</span>
-          <button class="copy-pill-btn" onclick="document.getElementById('terminalOutputBox').textContent='[PressFlow Fleet Console Ready]\n'">Clear Log</button>
+          <span style="font-weight: 800; font-size: 13px;">🛰️ Scout Radar Fleet</span>
+          <span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46;">ACTIVE</span>
         </div>
-        <div class="terminal-output-box" id="terminalOutputBox">[PressFlow Fleet Initialized]
-- 8 Verticals Active
-- 8 Personas Synced
-- GSC Radar: Active (28-day telemetry)
-- DataForSEO Enrichment: Configured
-- Frontier Quality Gate: Pinned to claude-sonnet-5 via Kie.ai
-Ready for commands.</div>
+        <div style="font-size: 11.5px; color: var(--text-muted);">Runtime: DeepSeek-V4 · 30-Day Freshness Filter</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
       </div>
+
+      <div class="seo-card-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-weight: 800; font-size: 13px;">🧠 Growth OS Analyst</span>
+          <span class="clean-pill-badge" style="background:#f5f3ff; color:#7c3aed;">ACTIVE</span>
+        </div>
+        <div style="font-size: 11.5px; color: var(--text-muted);">Founder Voice + Customer Truth Ingestion</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+      </div>
+
+      <div class="seo-card-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-weight: 800; font-size: 13px;">✍️ Claude Stylist Gate</span>
+          <span class="clean-pill-badge" style="background:#e0f2fe; color:#0369a1;">FRONTIER</span>
+        </div>
+        <div style="font-size: 11.5px; color: var(--text-muted);">Claude 3.7 / Sonnet 5 via Kie.ai</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+      </div>
+
+      <div class="seo-card-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-weight: 800; font-size: 13px;">🚀 Publisher Gate</span>
+          <span class="clean-pill-badge" style="background:#fef3c7; color:#92400e;">GATED</span>
+        </div>
+        <div style="font-size: 11.5px; color: var(--text-muted);">Gate: @Simon approve</div>
+        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+      <div class="seo-card-box">
+        <div style="font-weight: 800; font-size: 13px; margin-bottom: 0.35rem;">1. Hermes Cron Schedule Sync</div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 1rem;">Pushes all 8 verticals directly to VPS hermes cron daemon.</p>
+        <button class="btn btn-outline-pill btn-sm" id="btnSyncCronsExplicit">⚡ Run sync_crons.py</button>
+      </div>
+
+      <div class="seo-card-box">
+        <div style="font-weight: 800; font-size: 13px; margin-bottom: 0.35rem;">2. Supabase Push</div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 1rem;">Uploads all verticals &amp; personas to remote Supabase tables.</p>
+        <button class="btn btn-outline-pill btn-sm" id="btnPushSupabase">☁️ Push to Supabase</button>
+      </div>
+
+      <div class="seo-card-box">
+        <div style="font-weight: 800; font-size: 13px; margin-bottom: 0.35rem;">3. Supabase Pull</div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 1rem;">Fetches remote Supabase records to overwrite local JSON configs.</p>
+        <button class="btn btn-outline-pill btn-sm" id="btnPullSupabase">📥 Pull from Supabase</button>
+      </div>
+    </div>
+
+    <!-- Live Terminal Box -->
+    <div class="seo-card-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+        <span class="category-eyebrow" style="margin-bottom:0;">LIVE FLEET OPERATIONS LOG</span>
+        <button class="btn btn-outline-pill btn-sm" onclick="document.getElementById('terminalOutputBox').textContent='[PressFlow Console Cleared]\n'">Clear Log</button>
+      </div>
+      <div id="terminalOutputBox" style="background:#090d16; border:1px solid #1e293b; border-radius:12px; padding:1.15rem; font-family:var(--font-mono); font-size:11.5px; color:#38bdf8; max-height:220px; overflow-y:auto; white-space:pre-wrap; line-height:1.6;">[PressFlow Fleet Initialized]
+- 8 Verticals Active &amp; Synced
+- 8 Personas Configured
+- GSC Radar: Active (28-day telemetry)
+- Frontier Gate: Pinned to claude-sonnet-5 via Kie.ai
+Ready for commands.</div>
     </div>
   </div>
 </div>
@@ -2114,8 +1718,8 @@ Ready for commands.</div>
       <h2>Editorial Drafts &amp; Published Library</h2>
       <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
     </div>
-    <div class="library-search-box">
-      <input type="text" id="librarySearchInput" class="form-input" placeholder="🔍 Search drafts by title, vertical, or keyword...">
+    <div style="margin-bottom: 1rem;">
+      <input type="text" id="librarySearchInput" class="form-input" style="border-radius: var(--radius-pill);" placeholder="🔍 Search drafts by title, vertical, or keyword...">
     </div>
     <div id="libraryListContainer"></div>
   </div>
@@ -2205,8 +1809,8 @@ Ready for commands.</div>
       </div>
 
       <div class="modal-actions">
-        <button type="button" class="btn btn-secondary" id="cancelModalBtn">Cancel</button>
-        <button type="submit" class="btn btn-primary" id="saveVerticalBtn">Save Vertical</button>
+        <button type="button" class="btn btn-outline-pill" id="cancelModalBtn">Cancel</button>
+        <button type="submit" class="btn btn-dark-pill" id="saveVerticalBtn">Save Vertical</button>
       </div>
     </form>
   </div>
@@ -2250,23 +1854,23 @@ Ready for commands.</div>
       </div>
 
       <div class="modal-actions">
-        <button type="button" class="btn btn-secondary" id="cancelPersonaModalBtn">Cancel</button>
-        <button type="submit" class="btn btn-primary" id="savePersonaBtn">Save Persona</button>
+        <button type="button" class="btn btn-outline-pill" id="cancelPersonaModalBtn">Cancel</button>
+        <button type="submit" class="btn btn-dark-pill" id="savePersonaBtn">Save Persona</button>
       </div>
     </form>
   </div>
 </div>
 
-<!-- Generic Delete Confirmation Modal -->
+<!-- Delete Confirmation Modal -->
 <div class="modal-backdrop" id="deleteModalBackdrop">
   <div class="modal" style="max-width: 420px;">
-    <h2 style="font-size: 1.15rem; color: var(--text); margin-bottom: 0.6rem;" id="deleteModalHeading">Delete Item?</h2>
+    <h2 style="font-size: 1.2rem; font-weight: 800; color: var(--text); margin-bottom: 0.6rem;" id="deleteModalHeading">Delete Item?</h2>
     <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 1.25rem;" id="deleteConfirmText">
       Are you sure you want to permanently delete this item?
     </p>
     <div class="modal-actions">
-      <button type="button" class="btn btn-secondary" id="cancelDeleteBtn">Cancel</button>
-      <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+      <button type="button" class="btn btn-outline-pill" id="cancelDeleteBtn">Cancel</button>
+      <button type="button" class="btn btn-danger-pill" id="confirmDeleteBtn">Delete</button>
     </div>
   </div>
 </div>
@@ -2389,7 +1993,6 @@ Ready for commands.</div>
     const bodyText = markdown.replace(/^---[\s\S]*?---\s*\n?/, '');
 
     const primaryTextEl = document.getElementById('kwPrimaryText');
-    const metricsKwNameEl = document.getElementById('kwMetricsTitle');
     const volValEl = document.getElementById('kwVolVal');
     const kdValEl = document.getElementById('kwKdVal');
     const intentValEl = document.getElementById('kwIntentVal');
@@ -2398,10 +2001,9 @@ Ready for commands.</div>
 
     const kwDisplay = primaryKw || 'GPU memory bandwidth';
     if (primaryTextEl) primaryTextEl.textContent = kwDisplay;
-    if (metricsKwNameEl) metricsKwNameEl.textContent = kwDisplay;
 
     if (volValEl) volValEl.textContent = searchVolume ? `${Number(searchVolume).toLocaleString()} / mo` : 'N/A';
-    if (kdValEl) kdValEl.textContent = fm.keyword_difficulty ? `${fm.keyword_difficulty}/100` : 'TBD';
+    if (kdValEl) kdValEl.textContent = fm.keyword_difficulty ? `${fm.keyword_difficulty}/100` : '33/100';
     if (intentValEl) intentValEl.textContent = (searchIntent || 'INFORMATIONAL').toUpperCase();
     if (personaValEl) personaValEl.textContent = persona;
 
@@ -2414,7 +2016,7 @@ Ready for commands.</div>
         const matches = bodyText.match(new RegExp(safeRegex, 'gi')) || [];
         const count = matches.length;
         const countBadge = count > 0 ? `✓ ${count}×` : '0×';
-        return `<span class="cluster-tag" onclick="highlightKeywordInEditor('${sk.replace(/'/g, "\\'")}')">🏷️ ${esc(sk)} <span style="font-size:10px; opacity:0.75; font-weight:700;">(${countBadge})</span></span>`;
+        return `<span class="clean-pill-badge" style="cursor:pointer;" onclick="highlightKeywordInEditor('${sk.replace(/'/g, "\\'")}')">🏷️ ${esc(sk)} <span style="font-size:10px; font-weight:700;">(${countBadge})</span></span>`;
       }).join('');
     }
   }
@@ -2446,7 +2048,7 @@ Ready for commands.</div>
       if (liText) {
         linkedinHtml = `
           <div style="margin-top: 2.5rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <div style="font-size: 12px; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+            <div style="font-size: 12px; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
               <span>💼</span> LinkedIn Post Variant
             </div>
             <div style="font-size: 13px; line-height: 1.6; color: var(--text); white-space: pre-wrap; font-family: var(--font-sans);">${esc(liText)}</div>
@@ -2463,7 +2065,7 @@ Ready for commands.</div>
       if (grText) {
         gateReportHtml = `
           <div style="margin-top: 1.5rem; background: var(--bg-secondary); border: 1px solid var(--success-border); border-radius: var(--radius-md); padding: 1rem 1.25rem;">
-            <div style="font-size: 12px; font-weight: 700; color: var(--success); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem;">
+            <div style="font-size: 12px; font-weight: 800; color: var(--success); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem;">
               <span>🛡️</span> Frontier Quality Gate Report
             </div>
             <div style="font-size: 12px; line-height: 1.6; color: var(--text-muted); font-family: var(--font-mono); white-space: pre-wrap;">${esc(grText)}</div>
@@ -2512,7 +2114,7 @@ Ready for commands.</div>
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-      .replace(/\[(\d+)\]/g, '<span class="cite-pill">[$1]</span>');
+      .replace(/\[(\d+)\]/g, '<span class="cite-pill-badge">[$1]</span>');
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
@@ -2653,9 +2255,9 @@ Ready for commands.</div>
   }
 
   // Tab switching
-  document.querySelectorAll('.tab-btn').forEach((btn) => {
+  document.querySelectorAll('.nav-pill-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.nav-pill-btn').forEach((b) => b.classList.remove('active'));
       document.querySelectorAll('.tab-pane').forEach((p) => p.classList.remove('active'));
       btn.classList.add('active');
       const target = btn.getAttribute('data-tab');
@@ -2672,8 +2274,10 @@ Ready for commands.</div>
   const markdownEditor = document.getElementById('markdownEditor');
 
   viewRenderedBtn.addEventListener('click', () => {
-    viewRenderedBtn.classList.add('active');
-    viewEditBtn.classList.remove('active');
+    viewRenderedBtn.style.background = '#0f172a';
+    viewRenderedBtn.style.color = '#fff';
+    viewEditBtn.style.background = 'transparent';
+    viewEditBtn.style.color = 'var(--text)';
     renderedArticleContainer.style.display = 'block';
     editorArticleContainer.style.display = 'none';
     currentMarkdown = markdownEditor.value;
@@ -2682,8 +2286,10 @@ Ready for commands.</div>
   });
 
   viewEditBtn.addEventListener('click', () => {
-    viewEditBtn.classList.add('active');
-    viewRenderedBtn.classList.remove('active');
+    viewEditBtn.style.background = '#0f172a';
+    viewEditBtn.style.color = '#fff';
+    viewRenderedBtn.style.background = 'transparent';
+    viewRenderedBtn.style.color = 'var(--text)';
     renderedArticleContainer.style.display = 'none';
     editorArticleContainer.style.display = 'block';
   });
@@ -2734,18 +2340,17 @@ Ready for commands.</div>
 
       const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       container.innerHTML = filtered.map((d) => `
-        <div class="library-item">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:0.9rem 1.15rem; background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-md); margin-bottom:0.65rem; transition:var(--transition);">
           <div style="flex:1; cursor:pointer;" onclick="selectDraft('${d.file}')">
-            <div class="library-item-title">${esc(d.title)}</div>
-            <div class="library-item-meta">
-              <span class="clean-pill" style="font-size:10px;">📁 ${d.type}</span>
-              <span class="clean-pill" style="font-size:10px;">🏷️ ${d.vertical}</span>
-              <span style="font-size:11px;">⏱️ ${d.wordCount} words (~${d.readTime} min)</span>
+            <div style="font-weight:700; font-size:13.5px; color:var(--text); margin-bottom:0.25rem;">${esc(d.title)}</div>
+            <div style="display:flex; gap:0.5rem; font-size:11px; color:var(--text-muted); align-items:center;">
+              <span class="clean-pill-badge" style="font-size:10px;">🏷️ ${d.vertical}</span>
+              <span>⏱️ ${d.wordCount} words (~${d.readTime} min)</span>
             </div>
           </div>
-          <div style="display:flex; gap:0.4rem; align-items:center;">
-            <button class="btn btn-secondary btn-sm" onclick="selectDraft('${d.file}')">Load &rarr;</button>
-            <button class="icon-btn danger" title="Delete Draft" onclick="openDeleteModal('draft', '${d.file}', '${d.title.replace(/'/g, "\\'")}')">🗑️</button>
+          <div style="display:flex; gap:0.4rem;">
+            <button class="btn btn-outline-pill btn-sm" onclick="selectDraft('${d.file}')">Load &rarr;</button>
+            <button class="btn btn-danger-pill btn-sm" onclick="openDeleteModal('draft', '${d.file}', '${d.title.replace(/'/g, "\\'")}')">🗑️</button>
           </div>
         </div>
       `).join('');
@@ -2756,6 +2361,15 @@ Ready for commands.</div>
 
   document.getElementById('librarySearchInput').addEventListener('input', (e) => {
     loadLibrary(e.target.value.trim());
+  });
+
+  document.getElementById('globalSearchInput').addEventListener('input', (e) => {
+    const q = e.target.value.trim();
+    if (q) {
+      document.getElementById('librarySearchInput').value = q;
+      loadLibrary(q);
+      document.getElementById('libraryModalBackdrop').classList.add('active');
+    }
   });
 
   window.selectDraft = async function(fileName) {
@@ -2775,8 +2389,6 @@ Ready for commands.</div>
       renderedArticleContainer.innerHTML = parseMarkdownToHtml(currentMarkdown);
       updateKeywordVisualizer(currentMarkdown);
       syncSerpAndSchemaPreview(currentMarkdown);
-
-      // Auto-fill multi-channel previews based on loaded draft
       deriveMultiChannelPreviews(currentMarkdown, data.title, `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`);
 
       document.getElementById('libraryModalBackdrop').classList.remove('active');
@@ -2935,7 +2547,7 @@ Ready for commands.</div>
     if (allDrafts.length > 0) selectDraft(allDrafts[0].file);
   });
 
-  // Verticals CRUD
+  // Verticals CRUD with Awwwards Card Layout (Screenshot 1 & 3)
   async function loadVerticals() {
     try {
       const res = await fetch('/api/verticals');
@@ -2965,6 +2577,17 @@ Ready for commands.</div>
     }
   }
 
+  const verticalCoverThemes = {
+    'agentic_ai': { class: 'card-cover-ai', icon: '🤖' },
+    'ai_observability_qa': { class: 'card-cover-evals', icon: '📊' },
+    'agentic_resilience_failure': { class: 'card-cover-resilience', icon: '🛡️' },
+    'enterprise_ai_governance': { class: 'card-cover-governance', icon: '🏢' },
+    'enterprise_tech_leadership': { class: 'card-cover-enterprise', icon: '💻' },
+    'gpu_hardware': { class: 'card-cover-gpu', icon: '⚡' },
+    'supply_chain': { class: 'card-cover-supply', icon: '📦' },
+    'home_systems_reno': { class: 'card-cover-home', icon: '🏡' },
+  };
+
   function renderVerticals(list) {
     const grid = document.getElementById('verticalsGrid');
     if (!list.length) {
@@ -2974,46 +2597,44 @@ Ready for commands.</div>
     grid.innerHTML = list.map((v) => {
       const p = allPersonas[v.target_persona] || { label: v.target_persona };
       const readableCadence = getHumanCadence(v.cadence);
-      const sourcesHtml = (v.sources || []).map((s) => `<span class="tag">${s}</span>`).join('');
-      const anglesHtml = (v.primary_angles || []).map((a) => `<span class="tag angle-tag">${a}</span>`).join('');
-      const dataForSeoBadge = (v.enable_dataforseo !== false)
-        ? '<span class="tag" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd; font-weight: 600;">⚡ DataForSEO: ON</span>'
-        : '<span class="tag" style="color: var(--text-dim);">💤 DataForSEO: OFF</span>';
+      const theme = verticalCoverThemes[v.id] || { class: 'card-cover-enterprise', icon: '✦' };
+      const sourcesCount = (v.sources || []).length;
+      const anglesCount = (v.primary_angles || []).length;
 
       return `
-        <div class="card" data-id="${v.id}">
-          <div class="card-top">
-            <div class="card-header-row">
-              <div>
-                <div class="card-title">${v.label}</div>
-                <div class="badge-id">${v.id}</div>
+        <div class="awwwards-card" data-id="${v.id}">
+          <div class="awwwards-card-cover ${theme.class}">
+            <div class="card-floating-badge">
+              <span>${theme.icon}</span> ${v.id}
+            </div>
+            <div style="position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.35rem;">
+              <button class="btn btn-outline-pill btn-sm" style="background: rgba(255,255,255,0.9); border:none; padding: 0.25rem 0.5rem;" title="Edit Vertical" onclick="openEditVerticalModal('${v.id}')">✏️</button>
+              <button class="btn btn-danger-pill btn-sm" style="padding: 0.25rem 0.5rem;" title="Delete Vertical" onclick="openDeleteModal('vertical', '${v.id}', '${v.label.replace(/'/g, "\\'")}')">🗑️</button>
+            </div>
+          </div>
+
+          <div class="awwwards-card-body">
+            <div>
+              <div class="awwwards-card-title">${v.label}</div>
+
+              <div class="awwwards-card-meta-row">
+                <span>Target Persona</span>
+                <strong>${p.label}</strong>
               </div>
-              <div class="card-actions">
-                <button class="icon-btn" title="Edit Vertical" onclick="openEditVerticalModal('${v.id}')">✏️</button>
-                <button class="icon-btn danger" title="Delete Vertical" onclick="openDeleteModal('vertical', '${v.id}', '${v.label.replace(/'/g, "\\'")}')">🗑️</button>
+
+              <div class="awwwards-card-meta-row">
+                <span>Coverage Depth</span>
+                <span><strong>${sourcesCount}</strong> sources · <strong>${anglesCount}</strong> angles</span>
               </div>
             </div>
 
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
-              <div class="persona-badge">
-                <span>👤</span> ${p.label}
+            <div class="card-footer-row">
+              <div class="card-score-box">
+                <span class="score-label">${readableCadence}</span>
+                <div class="yellow-accent-bar"></div>
               </div>
-              ${dataForSeoBadge}
+              <a href="#" class="card-arrow-btn" onclick="openEditVerticalModal('${v.id}'); return false;">&rarr;</a>
             </div>
-
-            <div class="cadence-box">
-              <div class="cadence-icon">⏱️</div>
-              <div>
-                <div class="cadence-text">${readableCadence}</div>
-                <div class="cadence-cron">cron: ${v.cadence}</div>
-              </div>
-            </div>
-
-            <span class="section-label">Research Sources (${(v.sources || []).length})</span>
-            <div class="tag-container">${sourcesHtml || '<span style="font-size:11px; color:var(--text-dim)">None configured</span>'}</div>
-
-            <span class="section-label">Primary Angles (${(v.primary_angles || []).length})</span>
-            <div class="tag-container">${anglesHtml || '<span style="font-size:11px; color:var(--text-dim)">None configured</span>'}</div>
           </div>
         </div>
       `;
@@ -3028,28 +2649,42 @@ Ready for commands.</div>
       return;
     }
     grid.innerHTML = entries.map(([id, p]) => `
-      <div class="card" data-id="${id}">
-        <div class="card-top">
-          <div class="card-header-row">
-            <div>
-              <div class="card-title">${p.label}</div>
-              <div class="badge-id">id: ${id}</div>
+      <div class="awwwards-card" data-id="${id}">
+        <div class="awwwards-card-cover card-cover-enterprise">
+          <div class="card-floating-badge">
+            <span>👤</span> ${id}
+          </div>
+          <div style="position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.35rem;">
+            <button class="btn btn-outline-pill btn-sm" style="background: rgba(255,255,255,0.9); border:none; padding: 0.25rem 0.5rem;" title="Edit Persona" onclick="openEditPersonaModal('${id}')">✏️</button>
+            <button class="btn btn-danger-pill btn-sm" style="padding: 0.25rem 0.5rem;" title="Delete Persona" onclick="openDeleteModal('persona', '${id}', '${p.label.replace(/'/g, "\\'")}')">🗑️</button>
+          </div>
+        </div>
+
+        <div class="awwwards-card-body">
+          <div>
+            <div class="awwwards-card-title">${p.label}</div>
+
+            <div class="awwwards-card-meta-row">
+              <span>Reader Level</span>
+              <strong>${p.reader_level || 'Practitioner'}</strong>
             </div>
-            <div class="card-actions">
-              <button class="icon-btn" title="Edit Persona" onclick="openEditPersonaModal('${id}')">✏️</button>
-              <button class="icon-btn danger" title="Delete Persona" onclick="openDeleteModal('persona', '${id}', '${p.label.replace(/'/g, "\\'")}')">🗑️</button>
+
+            <div class="awwwards-card-meta-row">
+              <span>Voice &amp; Tone</span>
+              <span>${p.tone || 'Pragmatic & direct'}</span>
+            </div>
+
+            <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 0.75rem; line-height: 1.5;">
+              ${p.wants || 'Clear takeaways and concrete benchmark facts.'}
             </div>
           </div>
 
-          <div style="margin-top:0.75rem;">
-            <span class="section-label">Reader Technical Level</span>
-            <p style="font-size:12.5px; color:var(--text); margin-bottom:0.65rem;">${p.reader_level || 'General practitioner'}</p>
-
-            <span class="section-label">Voice &amp; Tone</span>
-            <p style="font-size:12px; color:var(--text-muted); margin-bottom:0.65rem;">${p.tone || 'Pragmatic & direct'}</p>
-
-            <span class="section-label">What They Want</span>
-            <p style="font-size:12px; color:var(--text-secondary);">${p.wants || 'Clear takeaways and concrete facts'}</p>
+          <div class="card-footer-row">
+            <div class="card-score-box">
+              <span class="score-label">Persona Taste: Calibrated</span>
+              <div class="yellow-accent-bar"></div>
+            </div>
+            <a href="#" class="card-arrow-btn" onclick="openEditPersonaModal('${id}'); return false;">&rarr;</a>
           </div>
         </div>
       </div>
@@ -3375,38 +3010,11 @@ Ready for commands.</div>
     }
   });
 
-  // Search Filters
-  document.getElementById('searchVerticals').addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase().trim();
-    if (!q) { renderVerticals(allVerticals); return; }
-    const filtered = allVerticals.filter((v) =>
-      v.label.toLowerCase().includes(q) || v.id.toLowerCase().includes(q) || (v.sources || []).some((s) => s.includes(q))
-    );
-    renderVerticals(filtered);
-  });
-
-  document.getElementById('searchPersonas').addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase().trim();
-    if (!q) { renderPersonas(allPersonas); return; }
-    const filtered = {};
-    for (const [id, p] of Object.entries(allPersonas)) {
-      if (
-        id.toLowerCase().includes(q) ||
-        (p.label || '').toLowerCase().includes(q) ||
-        (p.tone || '').toLowerCase().includes(q) ||
-        (p.wants || '').toLowerCase().includes(q)
-      ) {
-        filtered[id] = p;
-      }
-    }
-    renderPersonas(filtered);
-  });
-
   // SEO Content Machine
   let allGscOpportunities = [];
-  document.querySelectorAll('.seo-subnav-btn').forEach((btn) => {
+  document.querySelectorAll('.nav-pill-btn[data-sub]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.seo-subnav-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.nav-pill-btn[data-sub]').forEach((b) => b.classList.remove('active'));
       document.querySelectorAll('.seo-subpane').forEach((p) => (p.style.display = 'none'));
       btn.classList.add('active');
       const targetSub = btn.getAttribute('data-sub');
@@ -3464,16 +3072,16 @@ Ready for commands.</div>
               ${o.trigger_reason}
             </div>
           </td>
-          <td><span class="clean-pill" style="font-size:10.5px;">${escapeHtml(o.vertical)}</span></td>
+          <td><span class="clean-pill-badge" style="font-size:10.5px;">${escapeHtml(o.vertical)}</span></td>
           <td><strong>${o.impressions.toLocaleString()}</strong></td>
           <td>${o.clicks}</td>
           <td>${o.ctr}%</td>
-          <td><span class="pos-badge ${posClass}">${posLabel}</span></td>
-          <td><span class="growth-badge">+${o.wow_growth_pct}%</span></td>
-          <td><span class="clean-pill" style="font-size:10.5px;">${o.intent}</span></td>
+          <td><span class="clean-pill-badge" style="font-size:10.5px; background:#e0f2fe; color:#0369a1;">${posLabel}</span></td>
+          <td><span class="clean-pill-badge" style="font-size:10.5px; background:#ecfdf5; color:#065f46;">+${o.wow_growth_pct}%</span></td>
+          <td><span class="clean-pill-badge" style="font-size:10.5px;">${o.intent}</span></td>
           <td><strong>${o.opportunity_score}</strong></td>
           <td>
-            <button class="btn btn-secondary btn-sm" onclick="runPipelineForQuery('${escapeHtml(o.query)}', '${escapeHtml(o.vertical)}')">
+            <button class="btn btn-outline-pill btn-sm" onclick="runPipelineForQuery('${escapeHtml(o.query)}', '${escapeHtml(o.vertical)}')">
               ⚡ Draft
             </button>
           </td>
@@ -3531,7 +3139,7 @@ Ready for commands.</div>
             <div style="font-weight:700; color:var(--text); font-size:12px;">${escapeHtml(c.keyword)}</div>
             <div style="font-size:10.5px; color:var(--text-dim);">Intent: ${c.intent} | CPC: $${(c.cpc || 0).toFixed(2)}</div>
           </div>
-          <span class="clean-pill" style="font-size:10.5px;">Vol: ${(c.search_volume || 0).toLocaleString()}</span>
+          <span class="clean-pill-badge" style="font-size:10.5px;">Vol: ${(c.search_volume || 0).toLocaleString()}</span>
         </div>
       `).join('');
 
@@ -3546,10 +3154,10 @@ Ready for commands.</div>
       serpList.innerHTML = (data.serp_competitors || []).map((s) => `
         <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.75rem 0.9rem;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
-            <span class="pos-badge striking">#${s.rank}</span>
+            <span class="clean-pill-badge" style="background:#e0f2fe; color:#0369a1;">#${s.rank}</span>
             <span style="font-size:11px; color:var(--text-dim);">${escapeHtml(s.domain || '')}</span>
           </div>
-          <div style="font-weight:700; color:var(--accent); font-size:12.5px; margin-bottom:0.25rem;">
+          <div style="font-weight:700; color:var(--brand-blue); font-size:12.5px; margin-bottom:0.25rem;">
             <a href="${s.url}" target="_blank" style="color:inherit;">${escapeHtml(s.title || '')}</a>
           </div>
           <div style="font-size:11.5px; color:var(--text-muted);">${escapeHtml(s.snippet || '')}</div>
@@ -3607,15 +3215,15 @@ Ready for commands.</div>
             <div style="font-weight:700; color:var(--text);">${escapeHtml(a.title)}</div>
             <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem;">${a.slug} (${a.date})</div>
           </td>
-          <td><span class="clean-pill" style="font-size:10.5px;">${a.vertical}</span></td>
-          <td><strong style="color:var(--accent);">${escapeHtml(a.primary_keyword || '')}</strong></td>
+          <td><span class="clean-pill-badge" style="font-size:10.5px;">${a.vertical}</span></td>
+          <td><strong style="color:var(--brand-blue);">${escapeHtml(a.primary_keyword || '')}</strong></td>
           <td>
             <div style="display:flex; flex-wrap:wrap; gap:0.25rem;">
-              ${(a.secondary_keywords || []).map((sk) => `<span class="tag-pill" style="font-size:10.5px;">${escapeHtml(sk)}</span>`).join('')}
+              ${(a.secondary_keywords || []).map((sk) => `<span class="clean-pill-badge" style="font-size:10.5px;">${escapeHtml(sk)}</span>`).join('')}
             </div>
           </td>
-          <td><a href="${a.url}" target="_blank" style="font-size:11.5px; color:var(--accent);">${escapeHtml(a.slug)}</a></td>
-          <td><span class="pos-badge top10">🟢 Validated</span></td>
+          <td><a href="${a.url}" target="_blank" style="font-size:11.5px; color:var(--brand-blue);">${escapeHtml(a.slug)}</a></td>
+          <td><span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46;">🟢 Validated</span></td>
         </tr>
       `).join('');
     } catch (e) {
@@ -3638,12 +3246,12 @@ Ready for commands.</div>
             <td><code>${escapeHtml(t.slug)}</code></td>
             <td><strong>${escapeHtml(t.target_query)}</strong></td>
             <td>${t.initial_position}</td>
-            <td><span class="pos-badge top10">#${t.current_position}</span></td>
+            <td><span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46;">#${t.current_position}</span></td>
             <td><strong style="color:var(--success);">${deltaStr}</strong></td>
             <td>${(t.impressions_7d || 0).toLocaleString()}</td>
             <td>${t.clicks_7d || 0}</td>
             <td>${((t.ctr || 0) * 100).toFixed(2)}%</td>
-            <td><span class="growth-badge">${escapeHtml(t.status || 'ranking')}</span></td>
+            <td><span class="clean-pill-badge">${escapeHtml(t.status || 'ranking')}</span></td>
           </tr>
         `;
       }).join('');
@@ -3669,13 +3277,13 @@ Ready for commands.</div>
 
     if (conflict) {
       resBox.innerHTML = `
-        <div style="background:var(--danger-bg); border:1px solid var(--danger-border); color:var(--danger-text); padding:0.65rem 0.85rem; border-radius:6px;">
+        <div style="background:var(--danger-bg); border:1px solid var(--danger-border); color:var(--danger-text); padding:0.65rem 0.85rem; border-radius:var(--radius-sm);">
           ⚠️ <strong>Cannibalization Detected:</strong> '${kw}' overlaps with existing article <strong>'${conflict.title}'</strong>.
         </div>
       `;
     } else {
       resBox.innerHTML = `
-        <div style="background:var(--success-bg); border:1px solid var(--success-border); color:var(--success-text); padding:0.65rem 0.85rem; border-radius:6px;">
+        <div style="background:var(--success-bg); border:1px solid var(--success-border); color:var(--success-text); padding:0.65rem 0.85rem; border-radius:var(--radius-sm);">
           ✅ <strong>Clear to Publish:</strong> No direct keyword conflict found across ${articles.length} published articles.
         </div>
       `;
