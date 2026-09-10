@@ -3,117 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PressFlow — Editorial Factory Studio &amp; Verticals Engine</title>
-  <meta name="description" content="Awwwards-grade Editorial Intelligence &amp; Autonomous Publishing Engine: 30-day radar verticals, target personas, GSC opportunity radar, and multi-channel suite.">
+  <title>PressFlow — Editorial Intelligence &amp; Publishing Engine</title>
+  <meta name="description" content="Editorial Intelligence &amp; Autonomous Publishing Engine: 30-day radar verticals, target personas, GSC opportunity radar, and multi-channel suite.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Clean Awwwards-Grade Light Mode (Default) */
-      --bg: #f8fafc;
-      --bg-subtle: #ffffff;
-      --bg-surface: #ffffff;
-      --bg-card: #ffffff;
-      --bg-card-hover: #ffffff;
-      --bg-secondary: #f1f5f9;
-      --bg-tertiary: #e2e8f0;
+      /* Soft, Modern Editorial Palette (Linear / Notion / Raycast Inspired) */
+      --bg: #F8F9FA;
+      --bg-surface: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #FAFAFA;
+      --bg-subtle: #F4F4F5;
+      --bg-muted: #F4F4F5;
+      --bg-hover: #F4F4F5;
       
-      --border: #e5e7eb;
-      --border-subtle: #f3f4f6;
-      --border-focus: #0f172a;
+      --border: #E4E4E7;
+      --border-subtle: #F4F4F5;
+      --border-strong: #D4D4D8;
+      --border-focus: #18181B;
       
-      --text: #111827;
-      --text-secondary: #374151;
-      --text-muted: #6b7280;
-      --text-dim: #9ca3af;
+      --text: #18181B;            /* Zinc-900: Primary headings & titles (no pure black) */
+      --text-secondary: #3F3F46;  /* Zinc-700: Body copy & descriptions */
+      --text-muted: #71717A;      /* Zinc-500: Metadata, labels & hints */
+      --text-dim: #A1A1AA;        /* Zinc-400: Micro-labels, placeholders & tracking */
       
-      --accent: #0f172a;
-      --accent-rgb: 15, 23, 42;
-      --accent-light: #f1f5f9;
-      --accent-hover: #1e293b;
+      --accent: #18181B;
+      --accent-soft: #F4F4F5;
+      --accent-hover: #27272A;
       
-      --brand-blue: #0284c7;
-      --brand-blue-light: #e0f2fe;
-      --brand-blue-border: #bae6fd;
+      --blue-soft: #EFF6FF;
+      --blue-text: #1D4ED8;
+      --blue-border: #DBEAFE;
       
-      --yellow: #f59e0b;
-      --yellow-light: #fef3c7;
-      --yellow-line: #fbbf24;
+      --emerald-soft: #ECFDF5;
+      --emerald-text: #047857;
+      --emerald-border: #A7F3D0;
       
-      --purple: #7c3aed;
-      --purple-light: #f5f3ff;
-      --purple-border: #ddd6fe;
+      --amber-soft: #FFFBEB;
+      --amber-text: #B45309;
+      --amber-border: #FDE68A;
       
-      --success: #059669;
-      --success-bg: #ecfdf5;
-      --success-border: #a7f3d0;
-      --success-text: #065f46;
+      --purple-soft: #FAF5FF;
+      --purple-text: #6B21A8;
+      --purple-border: #E9D5FF;
       
-      --danger: #dc2626;
-      --danger-bg: #fef2f2;
-      --danger-border: #fecaca;
-      --danger-text: #991b1b;
+      --danger-soft: #FEF2F2;
+      --danger-text: #B91C1C;
+      --danger-border: #FECACA;
       
       --radius-xs: 4px;
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 20px;
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
       --radius-pill: 9999px;
       
-      --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-serif: 'Newsreader', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       
       --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
       --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
-      --shadow-card-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
-      --shadow-lg: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+      --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.05);
+      --shadow-modal: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
       
-      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     [data-theme="dark"] {
-      --bg: #090d16;
-      --bg-subtle: #0c1220;
-      --bg-surface: #0f172a;
-      --bg-card: #131d31;
-      --bg-card-hover: #17243c;
-      --bg-secondary: #1e293b;
-      --bg-tertiary: #334155;
-      --border: rgba(148, 163, 184, 0.16);
-      --border-subtle: rgba(148, 163, 184, 0.08);
-      --border-focus: #38bdf8;
-      --text: #f8fafc;
-      --text-secondary: #e2e8f0;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
-      --accent: #38bdf8;
-      --accent-rgb: 56, 189, 248;
-      --accent-light: rgba(56, 189, 248, 0.15);
-      --accent-hover: #0ea5e9;
-      --brand-blue: #38bdf8;
-      --brand-blue-light: rgba(56, 189, 248, 0.15);
-      --brand-blue-border: rgba(56, 189, 248, 0.3);
-      --yellow: #fbbf24;
-      --yellow-line: #f59e0b;
-      --purple: #a855f7;
-      --purple-light: rgba(168, 85, 247, 0.15);
-      --purple-border: rgba(168, 85, 247, 0.3);
-      --success: #10b981;
-      --success-bg: rgba(16, 185, 129, 0.15);
-      --success-border: rgba(16, 185, 129, 0.3);
-      --success-text: #6ee7b7;
-      --danger: #ef4444;
-      --danger-bg: rgba(239, 68, 68, 0.15);
-      --danger-border: rgba(239, 68, 68, 0.3);
-      --danger-text: #fca5a5;
-      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.4);
-      --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
-      --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --bg: #09090B;
+      --bg-surface: #121215;
+      --bg-card: #141418;
+      --bg-card-hover: #1A1A20;
+      --bg-subtle: #1C1C22;
+      --bg-muted: #1F1F26;
+      --bg-hover: #22222B;
+      
+      --border: rgba(255, 255, 255, 0.08);
+      --border-subtle: rgba(255, 255, 255, 0.05);
+      --border-strong: rgba(255, 255, 255, 0.15);
+      --border-focus: #FAFAFA;
+      
+      --text: #FAFAFA;
+      --text-secondary: #D4D4D8;
+      --text-muted: #A1A1AA;
+      --text-dim: #71717A;
+      
+      --accent: #FAFAFA;
+      --accent-soft: #27272A;
+      --accent-hover: #E4E4E7;
+      
+      --blue-soft: rgba(59, 130, 246, 0.12);
+      --blue-text: #60A5FA;
+      --blue-border: rgba(59, 130, 246, 0.25);
+      
+      --emerald-soft: rgba(16, 185, 129, 0.12);
+      --emerald-text: #34D399;
+      --emerald-border: rgba(16, 185, 129, 0.25);
+      
+      --amber-soft: rgba(245, 158, 11, 0.12);
+      --amber-text: #FBBF24;
+      --amber-border: rgba(245, 158, 11, 0.25);
+      
+      --purple-soft: rgba(168, 85, 247, 0.12);
+      --purple-text: #C084FC;
+      --purple-border: rgba(168, 85, 247, 0.25);
+      
+      --danger-soft: rgba(239, 68, 68, 0.12);
+      --danger-text: #F87171;
+      --danger-border: rgba(239, 68, 68, 0.25);
+      
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+      --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
+      --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.5);
+      --shadow-modal: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -121,7 +126,7 @@
     body {
       font-family: var(--font-sans);
       background-color: var(--bg);
-      color: var(--text);
+      color: var(--text-secondary);
       min-height: 100vh;
       line-height: 1.5;
       font-size: 13.5px;
@@ -129,115 +134,88 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Top Announcement Ticker Bar (Awwwards Style) */
-    .top-announcement-bar {
-      background: #f1f5f9;
+    /* Top Application Bar (Linear Style) */
+    .app-header {
+      background: var(--bg-surface);
       border-bottom: 1px solid var(--border);
-      padding: 0.35rem 1.5rem;
-      font-size: 11px;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      overflow-x: auto;
-      white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
-    [data-theme="dark"] .top-announcement-bar {
-      background: #0f172a;
-      border-color: rgba(148, 163, 184, 0.12);
-    }
-
-    .ticker-content {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      font-weight: 600;
-    }
-
-    .ticker-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .container {
-      max-width: 1280px;
+    .header-inner {
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 1.5rem 1.5rem 4rem;
-    }
-
-    /* Header Navbar (Awwwards Style) */
-    header {
+      padding: 0.65rem 1.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1.25rem;
-      padding: 0.5rem 0 1.25rem;
-      border-bottom: 1px solid var(--border-subtle);
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
     }
 
-    .brand-section {
+    .brand-group {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 0.85rem;
     }
 
-    .brand-logo-awwwards {
-      font-size: 1.55rem;
-      font-weight: 900;
-      letter-spacing: -0.04em;
+    .brand-logo {
+      font-size: 0.95rem;
+      font-weight: 700;
       color: var(--text);
       display: flex;
       align-items: center;
-      gap: 0.15rem;
+      gap: 0.45rem;
       text-decoration: none;
+      letter-spacing: -0.02em;
     }
 
-    .brand-dot {
-      color: var(--yellow);
-      font-size: 1.8rem;
-      line-height: 1;
+    .brand-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: var(--radius-xs);
+      background: var(--text);
+      color: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
     }
 
-    .brand-status-pill {
+    .status-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.35rem;
-      padding: 0.2rem 0.65rem;
+      padding: 0.2rem 0.55rem;
       border-radius: var(--radius-pill);
       font-size: 11px;
-      font-weight: 600;
-      background: var(--success-bg);
-      border: 1px solid var(--success-border);
-      color: var(--success-text);
+      font-weight: 500;
+      background: var(--emerald-soft);
+      border: 1px solid var(--emerald-border);
+      color: var(--emerald-text);
     }
 
-    .status-dot-pulse {
-      width: 6px;
-      height: 6px;
+    .status-dot {
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
-      background: var(--success);
-      box-shadow: 0 0 6px var(--success);
+      background: var(--emerald-text);
     }
 
-    /* Center Search Bar (Awwwards Large Pill Style) */
-    .header-search-bar {
+    /* Center Search (Linear/Raycast Style) */
+    .header-search {
       flex: 1;
-      max-width: 440px;
+      max-width: 380px;
       position: relative;
     }
 
     .header-search-input {
       width: 100%;
-      padding: 0.55rem 1rem 0.55rem 2.4rem;
-      background: var(--bg-secondary);
+      padding: 0.45rem 0.75rem 0.45rem 2rem;
+      background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: var(--radius-pill);
+      border-radius: var(--radius-sm);
       color: var(--text);
       font-family: var(--font-sans);
       font-size: 12.5px;
@@ -247,38 +225,37 @@
 
     .header-search-input:focus {
       background: var(--bg-surface);
-      border-color: var(--text);
-      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 1px var(--border-focus);
     }
 
-    .search-icon-inside {
+    .header-search-icon {
       position: absolute;
-      left: 0.85rem;
+      left: 0.65rem;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 13px;
-      color: var(--text-muted);
+      font-size: 12px;
+      color: var(--text-dim);
       pointer-events: none;
     }
 
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 0.65rem;
-      flex-wrap: wrap;
+      gap: 0.5rem;
     }
 
-    /* Awwwards Button System */
+    /* Button Hierarchy (Linear/Raycast Clean) */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.45rem;
-      padding: 0.5rem 1.15rem;
-      border-radius: var(--radius-pill);
+      gap: 0.4rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-sm);
       font-family: var(--font-sans);
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 12.5px;
+      font-weight: 500;
       cursor: pointer;
       transition: var(--transition);
       border: 1px solid transparent;
@@ -287,114 +264,107 @@
       user-select: none;
     }
 
-    /* Solid Dark Pill (like "Be Pro") */
-    .btn-dark-pill {
-      background: #0f172a;
-      color: #ffffff;
-      box-shadow: var(--shadow-sm);
+    /* Primary Action (Zinc-900 solid) */
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg-surface);
+      border-color: var(--text);
     }
-    .btn-dark-pill:hover {
-      background: #1e293b;
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-card);
-    }
-    [data-theme="dark"] .btn-dark-pill {
-      background: #f8fafc;
-      color: #0f172a;
-    }
-    [data-theme="dark"] .btn-dark-pill:hover {
-      background: #ffffff;
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-0.5px);
     }
 
-    /* Outline Pill (like "Submit Website") */
-    .btn-outline-pill {
+    /* Secondary / Ghost (Zinc-200 outline) */
+    .btn-secondary {
       background: var(--bg-surface);
       color: var(--text);
       border-color: var(--border);
       box-shadow: var(--shadow-xs);
     }
-    .btn-outline-pill:hover {
-      background: var(--bg-secondary);
-      border-color: #cbd5e1;
-      transform: translateY(-1px);
+    .btn-secondary:hover {
+      background: var(--bg-subtle);
+      border-color: var(--border-strong);
     }
 
-    .btn-accent {
-      background: var(--brand-blue-light);
-      color: #0369a1;
-      border-color: var(--brand-blue-border);
+    /* Subtle Ghost */
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-muted);
     }
-    .btn-accent:hover {
-      background: #bae6fd;
-      transform: translateY(-1px);
+    .btn-ghost:hover {
+      background: var(--bg-subtle);
+      color: var(--text);
     }
 
-    .btn-danger-pill {
-      background: var(--danger-bg);
-      color: var(--danger);
+    .btn-danger-ghost {
+      background: transparent;
+      color: var(--text-muted);
+    }
+    .btn-danger-ghost:hover {
+      background: var(--danger-soft);
+      color: var(--danger-text);
       border-color: var(--danger-border);
-    }
-    .btn-danger-pill:hover {
-      background: var(--danger);
-      color: #ffffff;
     }
 
     .btn-sm {
-      padding: 0.35rem 0.85rem;
-      font-size: 11.5px;
+      padding: 0.3rem 0.65rem;
+      font-size: 12px;
+      border-radius: var(--radius-xs);
     }
 
-    .theme-toggle-pill {
-      width: 34px;
-      height: 34px;
-      border-radius: var(--radius-pill);
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
+    .icon-btn {
+      width: 30px;
+      height: 30px;
+      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: var(--radius-sm);
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
       cursor: pointer;
       transition: var(--transition);
-      font-size: 14px;
     }
-    .theme-toggle-pill:hover {
+    .icon-btn:hover {
+      background: var(--bg-subtle);
       color: var(--text);
-      background: var(--bg-secondary);
-      border-color: #cbd5e1;
     }
 
-    /* Awwwards Filter & Navigation Strip (Screenshot 2) */
-    .filter-bar-awwwards {
+    /* Horizontal Subnav Tabs (Notion / Linear Flat Tabs) */
+    .nav-tabs-bar {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+    }
+
+    .nav-tabs-inner {
+      max-width: 1320px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 0.65rem;
-      padding: 0.6rem 0.85rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-pill);
-      box-shadow: var(--shadow-xs);
-      margin-bottom: 2rem;
       overflow-x: auto;
+      gap: 1rem;
     }
 
-    .filter-nav-pills {
+    .nav-tabs-list {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      min-width: max-content;
+      gap: 0.25rem;
+      padding: 0.35rem 0;
     }
 
-    .nav-pill-btn {
-      padding: 0.45rem 1rem;
+    .nav-tab-btn {
+      padding: 0.45rem 0.85rem;
       background: transparent;
-      border: 1px solid transparent;
-      border-radius: var(--radius-pill);
+      border: none;
+      border-radius: var(--radius-sm);
       color: var(--text-muted);
       font-family: var(--font-sans);
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 13px;
+      font-weight: 500;
       cursor: pointer;
       transition: var(--transition);
       display: inline-flex;
@@ -403,376 +373,265 @@
       white-space: nowrap;
     }
 
-    .nav-pill-btn:hover {
+    .nav-tab-btn:hover {
       color: var(--text);
-      background: var(--bg-secondary);
+      background: var(--bg-subtle);
     }
 
-    .nav-pill-btn.active {
-      background: #0f172a;
-      color: #ffffff;
-      font-weight: 700;
-      box-shadow: var(--shadow-xs);
-    }
-
-    [data-theme="dark"] .nav-pill-btn.active {
-      background: #38bdf8;
-      color: #090d16;
-    }
-
-    .filter-badge-counter {
-      padding: 0.1rem 0.45rem;
-      border-radius: var(--radius-pill);
-      font-size: 10.5px;
-      background: rgba(255, 255, 255, 0.2);
-      color: inherit;
-      font-weight: 700;
-    }
-
-    .nav-pill-btn:not(.active) .filter-badge-counter {
-      background: var(--bg-secondary);
-      color: var(--text-secondary);
-    }
-
-    .filter-dropdown-pill {
-      padding: 0.4rem 0.85rem;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-pill);
-      color: var(--text-secondary);
-      font-size: 11.5px;
+    .nav-tab-btn.active {
+      color: var(--text);
+      background: var(--bg-subtle);
       font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-    .filter-dropdown-pill:hover {
-      background: #e2e8f0;
-      color: var(--text);
     }
 
-    /* Category Header & Big Bold Display Title (Screenshot 1 & 2) */
-    .category-header-wrap {
-      margin-bottom: 2rem;
+    .tab-counter {
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 500;
     }
 
-    .category-eyebrow {
-      font-size: 11.5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+    .nav-tab-btn.active .tab-counter {
       color: var(--text-muted);
+    }
+
+    /* Page Container */
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 1.75rem 1.5rem 4rem;
+    }
+
+    /* Section Subtitles & Tracking Tags */
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
       margin-bottom: 0.35rem;
       display: block;
     }
 
-    .display-title-awwwards {
-      font-size: 2rem;
-      font-weight: 900;
-      letter-spacing: -0.035em;
-      color: var(--text);
-      line-height: 1.15;
-    }
-
-    .display-title-row {
+    .page-header-row {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       gap: 1.5rem;
+      margin-bottom: 1.5rem;
       flex-wrap: wrap;
     }
 
-    /* Awwwards Card Grid System (Screenshot 1 & 3) */
-    .awwwards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .awwwards-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition);
-      box-shadow: var(--shadow-card);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .awwwards-card:hover {
-      box-shadow: var(--shadow-card-hover);
-      transform: translateY(-2px);
-      border-color: #cbd5e1;
-    }
-
-    .awwwards-card-cover {
-      height: 140px;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-      position: relative;
-      padding: 1.25rem;
-      display: flex;
-      align-items: flex-end;
-    }
-
-    .card-cover-ai { background: linear-gradient(135deg, #090d16 0%, #1e1b4b 60%, #312e81 100%); }
-    .card-cover-evals { background: linear-gradient(135deg, #042f2e 0%, #115e59 60%, #0f766e 100%); }
-    .card-cover-resilience { background: linear-gradient(135deg, #450a0a 0%, #991b1b 60%, #b91c1c 100%); }
-    .card-cover-governance { background: linear-gradient(135deg, #3b0764 0%, #6b21a8 60%, #7e22ce 100%); }
-    .card-cover-gpu { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 60%, #0284c7 100%); }
-    .card-cover-supply { background: linear-gradient(135deg, #14532d 0%, #15803d 60%, #16a34a 100%); }
-    .card-cover-home { background: linear-gradient(135deg, #713f12 0%, #a16207 60%, #ca8a04 100%); }
-    .card-cover-enterprise { background: linear-gradient(135deg, #1e293b 0%, #334155 60%, #475569 100%); }
-
-    .card-floating-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.35rem 0.75rem;
-      border-radius: var(--radius-pill);
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      font-size: 11.5px;
+    .page-title {
+      font-size: 1.5rem;
       font-weight: 700;
-      color: #0f172a;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    [data-theme="dark"] .card-floating-badge {
-      background: rgba(15, 23, 42, 0.9);
-      color: #f8fafc;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .awwwards-card-body {
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
-    }
-
-    .awwwards-card-title {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--text);
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.85rem;
-    }
-
-    .awwwards-card-meta-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-      padding-bottom: 0.85rem;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .awwwards-card-meta-row strong {
-      color: var(--text);
-      font-weight: 700;
-    }
-
-    /* Yellow Underline Indicator (Screenshot 1) */
-    .card-score-box {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-
-    .score-label {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .yellow-accent-bar {
-      width: 48px;
-      height: 3.5px;
-      background: var(--yellow-line);
-      border-radius: 2px;
-    }
-
-    .card-arrow-btn {
-      font-size: 1.25rem;
-      color: var(--text);
-      transition: var(--transition);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .awwwards-card:hover .card-arrow-btn {
-      transform: translateX(4px);
-      color: var(--brand-blue);
-    }
-
-    .card-footer-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 0.5rem;
-    }
-
-    /* Workspace Hero Article Card (Matches Awwwards Editorial) */
-    .hero-editorial-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 2rem;
-      box-shadow: var(--shadow-card);
-      margin-bottom: 1.75rem;
-    }
-
-    .article-main-title {
-      font-size: 1.6rem;
-      font-weight: 900;
       letter-spacing: -0.025em;
       color: var(--text);
       line-height: 1.25;
-      margin-bottom: 0.85rem;
     }
 
-    .article-meta-strip {
+    /* Sleek Segmented Control (Linear style) */
+    .segmented-control {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 2px;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .segment-btn {
+      padding: 0.25rem 0.65rem;
+      border: none;
+      background: transparent;
+      border-radius: var(--radius-xs);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .segment-btn:hover {
+      color: var(--text);
+    }
+
+    .segment-btn.active {
+      background: var(--bg-surface);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: var(--shadow-xs);
+    }
+
+    /* Clean Dot-Separated Metadata String */
+    .meta-inline-strip {
+      font-size: 12.5px;
+      color: var(--text-muted);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 0.5rem;
+      margin-bottom: 1.25rem;
     }
 
-    .clean-pill-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: var(--radius-pill);
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
+    .meta-dot {
+      color: var(--text-dim);
+      user-select: none;
+    }
+
+    .meta-tag {
       color: var(--text-secondary);
-      font-size: 11.5px;
-      font-weight: 600;
+      font-weight: 500;
+    }
+
+    .meta-link {
+      color: var(--text-muted);
       text-decoration: none;
     }
+    .meta-link:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
 
-    .clean-pill-badge a { color: inherit; text-decoration: none; }
-    .clean-pill-badge a:hover { text-decoration: underline; }
+    /* Clean Editorial Cards (Raycast / Notion Style) */
+    .editorial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 1.25rem;
+    }
 
-    /* Dual SEO Target Cards */
-    .seo-architecture-grid {
+    /* SEO Architecture Grid */
+    .seo-dual-grid {
       display: grid;
       grid-template-columns: 1.25fr 1fr;
-      gap: 1.5rem;
-      margin-bottom: 1.75rem;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
     }
 
     @media (max-width: 880px) {
-      .seo-architecture-grid { grid-template-columns: 1fr; }
+      .seo-dual-grid { grid-template-columns: 1fr; }
     }
 
-    .seo-card-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      box-shadow: var(--shadow-card);
+    .metric-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
     }
 
-    .seo-card-title {
-      font-size: 12.5px;
-      font-weight: 800;
+    .metric-label {
+      font-size: 11px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text);
-      margin-bottom: 1rem;
-      display: block;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
     }
 
-    /* Article Rendered Prose (Size 11-12pt / 15-16px, comfortable reading) */
+    .metric-value-lg {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    /* Quiet Neutral Tags */
+    .tag-quiet {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-xs);
+      font-size: 11.5px;
+      font-weight: 500;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+
+    .tag-emerald {
+      background: var(--emerald-soft);
+      border-color: var(--emerald-border);
+      color: var(--emerald-text);
+    }
+
+    .tag-blue {
+      background: var(--blue-soft);
+      border-color: var(--blue-border);
+      color: var(--blue-text);
+    }
+
+    /* Article Rendered Prose (Comfortable Reading Density) */
     .article-prose-container {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 2.5rem;
+      border-radius: var(--radius-md);
+      padding: 2.25rem 2.5rem;
       box-shadow: var(--shadow-card);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .article-rendered-body {
-      max-width: 860px;
+      max-width: 820px;
       margin: 0 auto;
       font-family: var(--font-sans);
-      font-size: 15.5px; /* ~11.5pt */
-      line-height: 1.8;
+      font-size: 15px;
+      line-height: 1.75;
       color: var(--text-secondary);
     }
 
     .article-rendered-body h1, .article-rendered-body h2, .article-rendered-body h3 {
       color: var(--text);
       line-height: 1.3;
-      margin: 2rem 0 1rem;
-      letter-spacing: -0.025em;
+      margin: 2rem 0 0.85rem;
+      letter-spacing: -0.02em;
     }
 
-    .article-rendered-body h1 { font-size: 1.85rem; font-weight: 900; }
-    .article-rendered-body h2 { font-size: 1.35rem; font-weight: 800; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem; }
-    .article-rendered-body h3 { font-size: 1.15rem; font-weight: 700; }
+    .article-rendered-body h1 { font-size: 1.75rem; font-weight: 800; }
+    .article-rendered-body h2 { font-size: 1.3rem; font-weight: 700; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem; }
+    .article-rendered-body h3 { font-size: 1.1rem; font-weight: 600; }
 
-    .article-rendered-body p { margin-bottom: 1.4rem; line-height: 1.8; }
-    .article-rendered-body strong { color: var(--text); font-weight: 700; }
+    .article-rendered-body p { margin-bottom: 1.25rem; line-height: 1.75; }
+    .article-rendered-body strong { color: var(--text); font-weight: 600; }
 
     .article-rendered-body blockquote {
-      border-left: 3.5px solid var(--yellow);
-      background: var(--yellow-light);
-      padding: 1rem 1.4rem;
-      margin: 1.75rem 0;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      font-style: italic;
-      color: #78350f;
-      line-height: 1.7;
-    }
-
-    [data-theme="dark"] .article-rendered-body blockquote {
-      background: rgba(245, 158, 11, 0.12);
-      color: #fde68a;
+      border-left: 3px solid var(--border-strong);
+      background: var(--bg);
+      padding: 0.85rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+      color: var(--text-secondary);
+      font-style: normal;
     }
 
     .article-rendered-body pre {
-      background: #0f172a;
-      border: 1px solid #1e293b;
-      border-radius: var(--radius-md);
+      background: #18181B;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
       padding: 1rem 1.25rem;
       overflow-x: auto;
-      margin: 1.5rem 0;
+      margin: 1.25rem 0;
       font-family: var(--font-mono);
       font-size: 12.5px;
-      color: #38bdf8;
+      color: #E4E4E7;
     }
 
     .article-rendered-body code {
       font-family: var(--font-mono);
-      font-size: 0.88em;
-      background: var(--bg-secondary);
+      font-size: 0.9em;
+      background: var(--bg-subtle);
       border: 1px solid var(--border);
-      padding: 0.15em 0.4em;
-      border-radius: 4px;
-      color: var(--brand-blue);
+      padding: 0.15em 0.35em;
+      border-radius: var(--radius-xs);
+      color: var(--text);
     }
 
-    .article-rendered-body pre code { background: transparent; border: none; padding: 0; }
+    .article-rendered-body pre code { background: transparent; border: none; padding: 0; color: inherit; }
 
     .cite-pill-badge {
-      color: var(--brand-blue);
-      font-weight: 700;
+      color: var(--blue-text);
+      font-weight: 600;
       font-size: 0.82em;
       vertical-align: super;
       font-family: var(--font-mono);
@@ -781,11 +640,11 @@
     /* Markdown Editor */
     .editor-box {
       width: 100%;
-      min-height: 560px;
-      padding: 1.25rem;
+      min-height: 520px;
+      padding: 1.15rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-sm);
       color: var(--text);
       font-family: var(--font-mono);
       font-size: 13px;
@@ -795,92 +654,161 @@
       transition: var(--transition);
     }
     .editor-box:focus {
-      border-color: var(--text);
-      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 1px var(--border-focus);
     }
 
-    /* Multi-Channel Distribution Suite (4 Cards) */
-    .suite-grid-awwwards {
+    /* Verticals & Personas Uniform White Cards (Notion / Linear Grid) */
+    .cards-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.25rem;
     }
-    @media (max-width: 900px) { .suite-grid-awwwards { grid-template-columns: 1fr; } }
 
-    .channel-card-awwwards {
+    .clean-white-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.4rem;
       box-shadow: var(--shadow-card);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
     }
 
-    .channel-header-row {
+    .clean-white-card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .card-title-text {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.015em;
+      line-height: 1.35;
+    }
+
+    .card-actions-hover {
+      display: flex;
+      gap: 0.25rem;
+      opacity: 0.7;
+      transition: var(--transition);
+    }
+    .clean-white-card:hover .card-actions-hover {
+      opacity: 1;
+    }
+
+    .key-value-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 12.5px;
+    }
+
+    .key-value-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1rem;
-      padding-bottom: 0.75rem;
+      padding-bottom: 0.45rem;
       border-bottom: 1px solid var(--border-subtle);
     }
 
+    .key-label {
+      color: var(--text-muted);
+    }
+
+    .key-value {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .card-bottom-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* Multi-Channel Distribution Suite */
+    .suite-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 900px) { .suite-grid { grid-template-columns: 1fr; } }
+
     .channel-box-inner {
-      background: var(--bg-secondary);
+      background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.15rem;
-      font-size: 13px;
-      line-height: 1.65;
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      font-size: 12.5px;
+      line-height: 1.6;
       color: var(--text);
       white-space: pre-wrap;
       font-family: var(--font-sans);
-      max-height: 360px;
+      max-height: 340px;
       overflow-y: auto;
-      margin-bottom: 1.25rem;
+      margin: 0.85rem 0 1rem;
     }
 
-    /* Tables */
-    .table-card-wrapper {
+    /* Clean Tables */
+    .table-wrapper {
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-md);
       overflow-x: auto;
       background: var(--bg-surface);
       box-shadow: var(--shadow-card);
     }
-    .modern-table {
+
+    .clean-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
       font-size: 12.5px;
     }
-    .modern-table th {
-      background: var(--bg-secondary);
-      padding: 0.85rem 1rem;
-      font-weight: 800;
+
+    .clean-table th {
+      background: var(--bg);
+      padding: 0.75rem 0.85rem;
+      font-weight: 600;
       color: var(--text-muted);
       border-bottom: 1px solid var(--border);
       text-transform: uppercase;
-      font-size: 10.5px;
+      font-size: 11px;
       letter-spacing: 0.05em;
     }
-    .modern-table td {
-      padding: 0.85rem 1rem;
+
+    .clean-table td {
+      padding: 0.75rem 0.85rem;
       border-bottom: 1px solid var(--border-subtle);
       vertical-align: middle;
       color: var(--text-secondary);
     }
-    .modern-table tr:hover { background: var(--bg-secondary); }
 
-    /* Modals */
+    .clean-table tr:hover { background: var(--bg-subtle); }
+
+    /* Modals & Drawers */
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
       display: none;
       align-items: center;
       justify-content: center;
@@ -894,11 +822,11 @@
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       width: 100%;
-      max-width: 680px;
+      max-width: 640px;
       max-height: 88vh;
       overflow-y: auto;
-      box-shadow: var(--shadow-lg);
-      padding: 2rem;
+      box-shadow: var(--shadow-modal);
+      padding: 1.75rem;
     }
 
     .modal-header {
@@ -906,31 +834,33 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 1.25rem;
-      padding-bottom: 0.85rem;
+      padding-bottom: 0.75rem;
       border-bottom: 1px solid var(--border);
     }
-    .modal-header h2 { font-size: 1.25rem; font-weight: 800; color: var(--text); }
+    .modal-header h2 { font-size: 1.15rem; font-weight: 700; color: var(--text); }
 
     .close-btn {
       background: transparent;
       border: none;
       color: var(--text-muted);
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       cursor: pointer;
       line-height: 1;
+      padding: 0.2rem;
+      border-radius: var(--radius-xs);
     }
-    .close-btn:hover { color: var(--text); }
+    .close-btn:hover { color: var(--text); background: var(--bg-subtle); }
 
-    .form-group { margin-bottom: 1.25rem; }
-    .form-label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 0.35rem; color: var(--text); }
+    .form-group { margin-bottom: 1.15rem; }
+    .form-label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 0.35rem; color: var(--text); }
     .form-help { font-size: 11px; color: var(--text-muted); margin-top: 0.25rem; }
 
     .form-input, .form-select, .form-textarea {
       width: 100%;
-      padding: 0.6rem 0.85rem;
+      padding: 0.5rem 0.75rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-sm);
       color: var(--text);
       font-family: var(--font-sans);
       font-size: 13px;
@@ -938,36 +868,36 @@
       transition: var(--transition);
     }
     .form-input:focus, .form-select:focus, .form-textarea:focus {
-      border-color: var(--text);
-      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 1px var(--border-focus);
     }
 
     .preset-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.45rem; }
     .preset-chip {
       font-size: 11px;
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: var(--bg-secondary);
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-xs);
+      background: var(--bg);
       border: 1px solid var(--border);
-      color: var(--text-secondary);
+      color: var(--text-muted);
       cursor: pointer;
       transition: var(--transition);
     }
     .preset-chip:hover {
-      background: #e0f2fe;
-      color: #0369a1;
-      border-color: #bae6fd;
+      background: var(--bg-subtle);
+      color: var(--text);
+      border-color: var(--border-strong);
     }
 
     .tag-input-box {
       display: flex;
       flex-wrap: wrap;
       gap: 0.35rem;
-      padding: 0.45rem;
+      padding: 0.4rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      min-height: 42px;
+      border-radius: var(--radius-sm);
+      min-height: 38px;
       align-items: center;
     }
 
@@ -976,10 +906,10 @@
       align-items: center;
       gap: 0.3rem;
       font-size: 11px;
-      padding: 0.15rem 0.5rem;
-      background: var(--bg-secondary);
+      padding: 0.15rem 0.45rem;
+      background: var(--bg-subtle);
       border: 1px solid var(--border);
-      border-radius: var(--radius-pill);
+      border-radius: var(--radius-xs);
       color: var(--text);
     }
     .chip-item button {
@@ -987,9 +917,9 @@
       border: none;
       color: var(--text-muted);
       cursor: pointer;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
-    .chip-item button:hover { color: var(--danger); }
+    .chip-item button:hover { color: var(--danger-text); }
 
     .tag-text-input {
       flex: 1;
@@ -1006,239 +936,253 @@
     .modal-actions {
       display: flex;
       justify-content: flex-end;
-      gap: 0.65rem;
-      margin-top: 1.5rem;
-      padding-top: 1rem;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+      padding-top: 0.85rem;
       border-top: 1px solid var(--border);
+    }
+
+    /* Library Interactive Row Item (Linear Style) */
+    .library-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 0.95rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .library-item-row:hover {
+      background: var(--bg);
+      border-color: var(--border-strong);
+    }
+
+    .library-item-row .row-delete-btn {
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+    .library-item-row:hover .row-delete-btn {
+      opacity: 1;
     }
 
     /* Toast */
     .toast {
       position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      padding: 0.75rem 1.25rem;
-      border-radius: var(--radius-pill);
-      background: #0f172a;
-      color: #ffffff;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius-sm);
+      background: var(--text);
+      color: var(--bg-surface);
       font-size: 12.5px;
-      font-weight: 600;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      font-weight: 500;
+      box-shadow: var(--shadow-modal);
       z-index: 2000;
       display: flex;
       align-items: center;
-      gap: 0.55rem;
-      transform: translateY(100px);
+      gap: 0.5rem;
+      transform: translateY(40px);
       opacity: 0;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .toast.show { transform: translateY(0); opacity: 1; }
-    .toast.success { border-left: 4px solid var(--success); }
-    .toast.error { border-left: 4px solid var(--danger); }
+    .toast.success { border-left: 3px solid #10B981; }
+    .toast.error { border-left: 3px solid #EF4444; }
 
-    .tab-pane { display: none; animation: fadeIn 0.15s ease-out; }
+    .tab-pane { display: none; }
     .tab-pane.active { display: block; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
 
-<!-- Top Announcement Ticker Bar (Awwwards Style) -->
-<div class="top-announcement-bar">
-  <div class="ticker-content">
-    <span class="ticker-badge">✦ PressFlow Editorial Engine</span>
-    <span>30-Day Freshness Radar Active</span>
-    <span>✦</span>
-    <span>Frontier Claude Sonnet-5 Gate Pinned (Kie.ai)</span>
-    <span>✦</span>
-    <span>Zero-Hallucination Primary Verification</span>
-    <span>✦</span>
-    <span>Demand-Driven GSC + DataForSEO Pipeline</span>
-  </div>
-  <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 11px;">
-    <span class="status-dot-pulse"></span>
-    <span id="storageLabel" style="font-weight: 700; color: var(--text);">Supabase Connected</span>
-  </div>
-</div>
-
-<div class="container">
-  <!-- Header Navbar (Awwwards Style) -->
-  <header>
-    <div class="brand-section">
-      <a href="#" class="brand-logo-awwwards">
-        PF<span class="brand-dot">.</span>
+<!-- Application Header (Linear / Notion Style) -->
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand-group">
+      <a href="#" class="brand-logo">
+        <span class="brand-icon">P</span>
+        <span>PressFlow</span>
       </a>
-      <span class="brand-status-pill" id="storageStatusPill">
-        <span class="status-dot-pulse"></span> Live Fleet
+      <span class="status-badge" id="storageStatusPill">
+        <span class="status-dot"></span>
+        <span id="storageLabel">Live Fleet</span>
       </span>
     </div>
 
-    <!-- Center Search Bar -->
-    <div class="header-search-bar">
-      <span class="search-icon-inside">🔍</span>
-      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search articles, verticals, keywords, or personas...">
+    <!-- Center Search Input -->
+    <div class="header-search">
+      <span class="header-search-icon">🔍</span>
+      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search articles, keywords, or verticals (⌘K)...">
     </div>
 
-    <!-- Right Actions -->
+    <!-- Right Header Actions -->
     <div class="header-actions">
-      <button class="btn btn-dark-pill" id="btnGenerateSuite">
+      <button class="btn btn-primary" id="btnGenerateSuite">
         ⚡ Generate Suite
       </button>
 
-      <button class="btn btn-outline-pill" id="btnOpenLibrary">
+      <button class="btn btn-secondary" id="btnOpenLibrary">
         📖 Library (<span id="libraryCount">0</span>)
       </button>
 
-      <button class="btn btn-outline-pill" id="btnLoadSample">
-        🖊️ Load Sample
+      <button class="btn btn-secondary" id="btnLoadSample">
+        Load Sample
       </button>
 
-      <button class="theme-toggle-pill" id="btnToggleTheme" title="Toggle Light / Dark Mode">
+      <button class="icon-btn" id="btnToggleTheme" title="Toggle Light / Dark Theme">
         ☀️
       </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Filter & Sub-Nav Strip (Screenshot 2) -->
-  <div class="filter-bar-awwwards">
-    <div class="filter-nav-pills">
-      <button class="nav-pill-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
+<!-- Flat Navigation Tabs Bar (Linear / Notion Style) -->
+<nav class="nav-tabs-bar">
+  <div class="nav-tabs-inner">
+    <div class="nav-tabs-list">
+      <button class="nav-tab-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
         ✍️ Workspace
       </button>
-      <button class="nav-pill-btn" data-tab="tab-seo" id="tabSeoBtn">
-        ⚡ SEO Machine <span class="filter-badge-counter" id="seoOpportunitiesCount">12</span>
+      <button class="nav-tab-btn" data-tab="tab-seo" id="tabSeoBtn">
+        ⚡ SEO Machine <span class="tab-counter" id="seoOpportunitiesCount">12</span>
       </button>
-      <button class="nav-pill-btn" data-tab="tab-suite" id="tabSuiteBtn">
+      <button class="nav-tab-btn" data-tab="tab-suite" id="tabSuiteBtn">
         🗂️ Multi-Channel
       </button>
-      <button class="nav-pill-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
-        ⚙️ Verticals <span class="filter-badge-counter" id="verticalsCount">8</span>
+      <button class="nav-tab-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
+        ⚙️ Verticals <span class="tab-counter" id="verticalsCount">8</span>
       </button>
-      <button class="nav-pill-btn" data-tab="tab-personas" id="tabPersonasBtn">
-        👥 Personas <span class="filter-badge-counter" id="personasCount">8</span>
+      <button class="nav-tab-btn" data-tab="tab-personas" id="tabPersonasBtn">
+        👥 Personas <span class="tab-counter" id="personasCount">8</span>
       </button>
-      <button class="nav-pill-btn" data-tab="tab-fleet" id="tabFleetBtn">
+      <button class="nav-tab-btn" data-tab="tab-fleet" id="tabFleetBtn">
         🛰️ Fleet &amp; Crons
       </button>
     </div>
 
-    <div style="display: flex; gap: 0.4rem; align-items: center;">
-      <button class="filter-dropdown-pill" id="quickFilterBtn" onclick="document.getElementById('tabVerticalsBtn').click()">
-        Verticals (8) ˅
+    <div style="display: flex; gap: 0.35rem; align-items: center;">
+      <button class="btn btn-ghost btn-sm" id="quickFilterBtn" onclick="document.getElementById('tabVerticalsBtn').click()">
+        Verticals (8) ▾
       </button>
-      <button class="filter-dropdown-pill" onclick="document.getElementById('btnRefreshGsc').click()">
+      <button class="btn btn-ghost btn-sm" onclick="document.getElementById('btnRefreshGsc').click()">
         Refresh Radar ↺
       </button>
     </div>
   </div>
+</nav>
+
+<div class="container">
 
   <!-- TAB 1: Source Article Workspace -->
   <div class="tab-pane active" id="tab-workspace">
-    <!-- Category Eyebrow & Big Bold Headline (Screenshot 1 & 2) -->
-    <div class="category-header-wrap">
-      <span class="category-eyebrow">EDITORIAL PRODUCTION · 30-DAY FRESHNESS</span>
-      <div class="display-title-row">
-        <h1 class="display-title-awwwards" id="currentArticleTitle">
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">EDITORIAL PRODUCTION · 30-DAY FRESHNESS</span>
+        <h1 class="page-title" id="currentArticleTitle">
           Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.
         </h1>
-        <div style="display: flex; gap: 0.5rem; align-items: center;">
-          <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 0.2rem; display: inline-flex;">
-            <button class="btn btn-outline-pill btn-sm active" id="viewRenderedBtn" style="background: #0f172a; color: #fff;">👁️ Rendered</button>
-            <button class="btn btn-outline-pill btn-sm" id="viewEditBtn" style="border:none;">✏️ Edit</button>
-          </div>
-          <button class="btn btn-danger-pill btn-sm" id="btnDeleteCurrentArticle" title="Delete current draft">🗑️ Delete</button>
+      </div>
+
+      <!-- Action Bar: Sleek Segmented Control & Ghost Delete -->
+      <div style="display: flex; gap: 0.65rem; align-items: center;">
+        <div class="segmented-control">
+          <button class="segment-btn active" id="viewRenderedBtn">Preview</button>
+          <button class="segment-btn" id="viewEditBtn">Edit Markdown</button>
         </div>
+        <button class="btn btn-danger-ghost btn-sm" id="btnDeleteCurrentArticle" title="Delete current draft">
+          🗑️ Delete
+        </button>
       </div>
     </div>
 
-    <!-- Hero Metadata Strip -->
-    <div class="hero-editorial-card" style="padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
-      <div class="article-meta-strip">
-        <span class="clean-pill-badge">
-          🗄️ <strong id="currentWordCount" style="margin-left: 0.25rem;">1752</strong> words (~ <span id="currentReadTime">8</span> min read)
-        </span>
-        <span class="clean-pill-badge">
-          🔗 <a href="#" id="currentArticleLink" target="_blank">https://pressflow.aichieve.net/posts/2026-09-09_279b-nvidia-memory-bottleneck</a>
-        </span>
-        <span class="clean-pill-badge" style="background:#fff; border-color:#e5e7eb;">#GPUHardware</span>
-        <span class="clean-pill-badge" style="background:#fff; border-color:#e5e7eb;">#HBM3e</span>
-        <span class="clean-pill-badge" style="background:#fff; border-color:#e5e7eb;">#AIEngineering</span>
-      </div>
+    <!-- Clean Dot-Separated Metadata String -->
+    <div class="meta-inline-strip">
+      <span><strong id="currentWordCount" style="color: var(--text);">1,752</strong> words</span>
+      <span class="meta-dot">·</span>
+      <span>~<span id="currentReadTime">8</span> min read</span>
+      <span class="meta-dot">·</span>
+      <span class="meta-tag">#GPUHardware</span>
+      <span class="meta-dot">·</span>
+      <span class="meta-tag">#HBM3e</span>
+      <span class="meta-dot">·</span>
+      <span class="meta-tag">#AIEngineering</span>
+      <span class="meta-dot">·</span>
+      <a href="#" id="currentArticleLink" class="meta-link" target="_blank">https://pressflow.aichieve.net/posts/2026-09-09_279b-nvidia-memory-bottleneck</a>
     </div>
 
-    <!-- SEO Architecture Dual Cards (Awwwards Card Aesthetic) -->
-    <div class="seo-architecture-grid" id="articleKeywordsCard">
-      <!-- Left Card: Primary & Secondary SEO Targets -->
-      <div class="seo-card-box">
-        <span class="seo-card-title">Primary &amp; Secondary SEO Architecture</span>
+    <!-- Dual SEO Target Architecture Cards (Quiet Linear Styling) -->
+    <div class="seo-dual-grid" id="articleKeywordsCard">
+      <!-- Left Card: Search Query & Clusters -->
+      <div class="editorial-card">
+        <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">Primary &amp; Secondary SEO Architecture</span>
 
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
           <div>
-            <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">TARGET SEARCH QUERY</div>
-            <div style="font-size: 1.25rem; font-weight: 800; color: var(--text);" id="kwPrimaryText">GPU memory bandwidth</div>
+            <div class="metric-label">TARGET SEARCH QUERY</div>
+            <div style="font-size: 1.15rem; font-weight: 700; color: var(--text);" id="kwPrimaryText">GPU memory bandwidth</div>
           </div>
-          <button class="btn btn-outline-pill btn-sm" id="btnCopyPrimaryKw">📋 Copy Query</button>
+          <button class="btn btn-secondary btn-sm" id="btnCopyPrimaryKw">📋 Copy Query</button>
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.25rem;">
-          <span class="clean-pill-badge" style="background: #fef3c7; color: #92400e; border-color: #fde68a;" id="kwIntentBadge">
-            ⚡ Intent: <span id="kwIntentVal">INFORMATIONAL</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem;">
+          <span class="tag-quiet" id="kwIntentBadge">
+            Intent: <strong id="kwIntentVal" style="margin-left: 2px;">INFORMATIONAL</strong>
           </span>
-          <span class="clean-pill-badge" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd;" id="kwPersonaBadge">
-            👤 Persona: <span id="kwPersonaVal">infra_engineer</span>
+          <span class="tag-quiet" id="kwPersonaBadge">
+            Persona: <strong id="kwPersonaVal" style="margin-left: 2px;">infra_engineer</strong>
           </span>
-          <span class="clean-pill-badge" style="background: #ccfbf1; color: #0f766e; border-color: #99f6e4;">
-            ✓ #SEO CALIBRATED
+          <span class="tag-quiet tag-emerald">
+            ✓ Calibrated
           </span>
         </div>
 
-        <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.85rem;">
-          <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.4rem;">
-            Secondary Semantic Clusters
-          </div>
-          <div id="kwSecondaryChips" style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-            <span class="clean-pill-badge">🏷️ HBM memory bandwidth (✓ 3×)</span>
-            <span class="clean-pill-badge">🏷️ AI inference bottleneck (✓ 2×)</span>
-            <span class="clean-pill-badge">🏷️ Nvidia H100 H200 supply (✓ 1×)</span>
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+          <span class="metric-label" style="margin-bottom: 0.35rem; display: block;">Secondary Semantic Clusters</span>
+          <div id="kwSecondaryChips" style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+            <span class="tag-quiet">HBM memory bandwidth (3×)</span>
+            <span class="tag-quiet">AI inference bottleneck (2×)</span>
+            <span class="tag-quiet">Nvidia H100 H200 supply (1×)</span>
           </div>
         </div>
       </div>
 
-      <!-- Right Card: Metrics & Readiness (With Yellow Accent Bar) -->
-      <div class="seo-card-box" style="display: flex; flex-direction: column; justify-content: space-between;">
+      <!-- Right Card: Metrics & Editorial Readiness (Stacked Micro-labels) -->
+      <div class="editorial-card" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <span class="seo-card-title">Search Volume &amp; Ranking Trajectory</span>
+          <span class="metric-label" style="margin-bottom: 0.85rem; display: block;">Search Demand &amp; Difficulty</span>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
-            <div>
-              <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">ESTIMATED VOLUME</div>
-              <div style="font-size: 1.45rem; font-weight: 900; color: var(--text);" id="kwVolVal">3,100 / mo</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div class="metric-stack">
+              <span class="metric-label">ESTIMATED VOLUME</span>
+              <span class="metric-value-lg" id="kwVolVal">3,100 / mo</span>
             </div>
-            <div>
-              <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">KEYWORD DIFFICULTY</div>
-              <div style="font-size: 1.45rem; font-weight: 900; color: var(--success);" id="kwKdVal">33/100</div>
+            <div class="metric-stack">
+              <span class="metric-label">KEYWORD DIFFICULTY</span>
+              <span class="metric-value-lg" style="color: var(--emerald-text);" id="kwKdVal">33/100</span>
             </div>
           </div>
         </div>
 
-        <!-- Yellow Accent Bar from Screenshot 1 -->
-        <div class="card-footer-row" style="border-top: 1px solid var(--border-subtle); padding-top: 0.85rem;">
-          <div class="card-score-box">
-            <span class="score-label">Editorial Readiness Score 4.9/5</span>
-            <div class="yellow-accent-bar"></div>
+        <div class="card-bottom-row">
+          <div style="font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 0.4rem;">
+            <span class="status-dot"></span>
+            <span>Editorial Readiness: <strong style="color: var(--text);">4.9/5</strong></span>
           </div>
-          <span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46; border-color:#a7f3d0;">
-            🟢 Frontier Validated
-          </span>
+          <span class="tag-quiet tag-emerald">🟢 Frontier Validated</span>
         </div>
       </div>
     </div>
 
     <!-- Article Content Preview Container -->
     <div class="article-prose-container">
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.75rem;">
-        <span class="category-eyebrow" style="margin-bottom:0;">VERIFIED ARTICLE BODY (MARKDOWN)</span>
-        <span class="clean-pill-badge">Frontier Model: Claude 3.7 / Sonnet 5</span>
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
+        <span class="section-eyebrow" style="margin-bottom:0;">VERIFIED ARTICLE BODY (MARKDOWN)</span>
+        <span class="tag-quiet">Model: Claude 3.7 / Sonnet 5</span>
       </div>
 
       <!-- Rendered View -->
@@ -1246,16 +1190,16 @@
 
       <!-- Markdown Editor View -->
       <div id="editorArticleContainer" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.6rem 0.85rem; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
-          <div style="display: flex; gap: 0.35rem; flex-wrap: wrap;">
-            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- lead -->\n')">+ Lead</button>
-            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- tension -->\n')">+ Tension</button>
-            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- tactical-insight -->\n')">+ Tactical</button>
-            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- nuanced-takeaway -->\n')">+ Takeaway</button>
-            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- tldr -->\n- ')">+ TL;DR</button>
-            <button class="btn btn-outline-pill btn-sm" onclick="insertMarker('<!-- linkedin -->\n')">+ LinkedIn</button>
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.4rem;">
+          <div style="display: flex; gap: 0.25rem; flex-wrap: wrap;">
+            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- lead -->\n')">+ Lead</button>
+            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tension -->\n')">+ Tension</button>
+            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tactical-insight -->\n')">+ Tactical</button>
+            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- nuanced-takeaway -->\n')">+ Takeaway</button>
+            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tldr -->\n- ')">+ TL;DR</button>
+            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- linkedin -->\n')">+ LinkedIn</button>
           </div>
-          <button class="btn btn-dark-pill btn-sm" id="btnSaveDraft">💾 Save Changes</button>
+          <button class="btn btn-primary btn-sm" id="btnSaveDraft">💾 Save Changes</button>
         </div>
         <textarea class="editor-box" id="markdownEditor" placeholder="Enter article markdown..."></textarea>
       </div>
@@ -1264,64 +1208,58 @@
 
   <!-- TAB 2: SEO Content Machine & Growth OS -->
   <div class="tab-pane" id="tab-seo">
-    <div class="category-header-wrap">
-      <span class="category-eyebrow">DEMAND-DRIVEN EDITORIAL INTELLIGENCE</span>
-      <div class="display-title-row">
-        <h2 class="display-title-awwwards">SEO Content Machine &amp; Growth OS</h2>
-        <div style="display: flex; gap: 0.5rem;">
-          <button class="btn btn-dark-pill btn-sm" id="btnRunSeoPipelineModal">🚀 Run SEO Machine</button>
-          <button class="btn btn-outline-pill btn-sm" id="btnRefreshGsc">🔄 Refresh GSC Signals</button>
-        </div>
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">DEMAND-DRIVEN EDITORIAL INTELLIGENCE</span>
+        <h2 class="page-title">SEO Content Machine &amp; Growth OS</h2>
+      </div>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-primary btn-sm" id="btnRunSeoPipelineModal">🚀 Run SEO Machine</button>
+        <button class="btn btn-secondary btn-sm" id="btnRefreshGsc">🔄 Refresh GSC Signals</button>
       </div>
     </div>
 
-    <!-- Live KPI Metrics Strip -->
-    <div class="awwwards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 1.75rem;">
-      <div class="seo-card-box">
-        <span class="category-eyebrow">STRIKING QUERIES</span>
-        <div style="font-size: 1.85rem; font-weight: 900;" id="kpiStrikingCount">12</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
-        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">Avg Position 8.0 – 25.0</div>
+    <!-- Live KPI Metrics Strip (Notion / Linear Clean) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+      <div class="editorial-card">
+        <span class="metric-label">STRIKING QUERIES</span>
+        <div class="metric-value-lg" id="kpiStrikingCount" style="margin-top: 0.25rem;">12</div>
+        <div style="font-size: 11.5px; color: var(--text-dim); margin-top: 0.25rem;">Avg Position 8.0 – 25.0</div>
       </div>
 
-      <div class="seo-card-box">
-        <span class="category-eyebrow">EMERGING SPIKES</span>
-        <div style="font-size: 1.85rem; font-weight: 900; color: var(--success);" id="kpiSpikeCount">8</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
-        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">&gt; +50% Week-over-Week</div>
+      <div class="editorial-card">
+        <span class="metric-label">EMERGING SPIKES</span>
+        <div class="metric-value-lg" style="color: var(--emerald-text); margin-top: 0.25rem;" id="kpiSpikeCount">8</div>
+        <div style="font-size: 11.5px; color: var(--text-dim); margin-top: 0.25rem;">&gt; +50% Week-over-Week</div>
       </div>
 
-      <div class="seo-card-box">
-        <span class="category-eyebrow">TOP 10 WINS</span>
-        <div style="font-size: 1.85rem; font-weight: 900;" id="kpiTop10Count">3</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
-        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">+18.2 avg rank trajectory</div>
+      <div class="editorial-card">
+        <span class="metric-label">TOP 10 WINS</span>
+        <div class="metric-value-lg" id="kpiTop10Count" style="margin-top: 0.25rem;">3</div>
+        <div style="font-size: 11.5px; color: var(--text-dim); margin-top: 0.25rem;">+18.2 avg rank trajectory</div>
       </div>
 
-      <div class="seo-card-box">
-        <span class="category-eyebrow">TASTE MOAT</span>
-        <div style="font-size: 1.85rem; font-weight: 900; color: var(--purple);">Active</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.4rem;"></div>
-        <div style="font-size: 11px; color: var(--text-muted); margin-top: 0.4rem;">Founder Voice &amp; Customer Truth</div>
+      <div class="editorial-card">
+        <span class="metric-label">TASTE MOAT</span>
+        <div class="metric-value-lg" style="color: var(--purple-text); margin-top: 0.25rem;">Active</div>
+        <div style="font-size: 11.5px; color: var(--text-dim); margin-top: 0.25rem;">Founder Voice &amp; Customer Truth</div>
       </div>
     </div>
 
-    <!-- SEO Subnav Pills -->
-    <div class="filter-bar-awwwards" style="margin-bottom: 1.5rem;">
-      <div class="filter-nav-pills">
-        <button class="nav-pill-btn active" data-sub="sub-gsc" id="btnSubGsc">📈 GSC Opportunity Radar (<span id="gscSubCount">12</span>)</button>
-        <button class="nav-pill-btn" data-sub="sub-dataforseo" id="btnSubDataForSEO">🔍 DataForSEO Explorer</button>
-        <button class="nav-pill-btn" data-sub="sub-growth-os" id="btnSubGrowthOs">🧠 Growth OS Knowledge</button>
-        <button class="nav-pill-btn" data-sub="sub-cannibalization" id="btnSubCannibalization">🛡️ Cannibalization Shield</button>
-        <button class="nav-pill-btn" data-sub="sub-serp-preview" id="btnSubSerpPreview">🏷️ SERP &amp; Schema</button>
-        <button class="nav-pill-btn" data-sub="sub-performance" id="btnSubPerformance">📊 Ranking Loop</button>
-      </div>
+    <!-- SEO Subnav Tabs -->
+    <div style="display: flex; gap: 0.35rem; margin-bottom: 1.25rem; overflow-x: auto; padding-bottom: 0.25rem;">
+      <button class="btn btn-secondary btn-sm active" data-sub="sub-gsc" id="btnSubGsc" style="background: var(--bg-subtle);">📈 GSC Radar (<span id="gscSubCount">12</span>)</button>
+      <button class="btn btn-ghost btn-sm" data-sub="sub-dataforseo" id="btnSubDataForSEO">🔍 DataForSEO Explorer</button>
+      <button class="btn btn-ghost btn-sm" data-sub="sub-growth-os" id="btnSubGrowthOs">🧠 Growth OS Knowledge</button>
+      <button class="btn btn-ghost btn-sm" data-sub="sub-cannibalization" id="btnSubCannibalization">🛡️ Cannibalization Shield</button>
+      <button class="btn btn-ghost btn-sm" data-sub="sub-serp-preview" id="btnSubSerpPreview">🏷️ SERP &amp; Schema</button>
+      <button class="btn btn-ghost btn-sm" data-sub="sub-performance" id="btnSubPerformance">📊 Ranking Loop</button>
     </div>
 
     <!-- SUB-PANE 1: GSC Table -->
     <div class="seo-subpane" id="sub-gsc">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
-        <select class="form-select" id="filterGscVertical" style="width: auto; border-radius: var(--radius-pill); font-size: 12px; padding: 0.4rem 1rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+        <select class="form-select" id="filterGscVertical" style="width: auto; font-size: 12px; padding: 0.35rem 0.75rem;">
           <option value="all">All Verticals (All 8 Niches)</option>
           <option value="agentic_ai">Agentic Runtime &amp; Architecture</option>
           <option value="ai_observability_qa">Observability, Evals &amp; Quality</option>
@@ -1332,11 +1270,11 @@
           <option value="supply_chain">Supply Chain &amp; Logistics Tech</option>
           <option value="home_systems_reno">Home Systems &amp; Building Science</option>
         </select>
-        <span style="font-size: 11.5px; color: var(--text-muted);">Threshold: <strong>Impr &gt; 500</strong> | <strong>Pos 8–25</strong> | <strong>WoW &gt; 50%</strong></span>
+        <span style="font-size: 11.5px; color: var(--text-dim);">Threshold: <strong>Impr &gt; 500</strong> | <strong>Pos 8–25</strong> | <strong>WoW &gt; 50%</strong></span>
       </div>
 
-      <div class="table-card-wrapper">
-        <table class="modern-table" id="gscTable">
+      <div class="table-wrapper">
+        <table class="clean-table" id="gscTable">
           <thead>
             <tr>
               <th>Target Query</th>
@@ -1360,90 +1298,90 @@
 
     <!-- SUB-PANE 2: DataForSEO Explorer -->
     <div class="seo-subpane" id="sub-dataforseo" style="display: none;">
-      <div style="display: flex; gap: 0.65rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <input type="text" id="d4sKeywordInput" class="form-input" style="flex: 1; min-width: 300px; border-radius: var(--radius-pill);" placeholder="Enter any seed keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
-        <button class="btn btn-dark-pill" id="btnD4sEnrich">🔍 Enrich via DataForSEO</button>
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+        <input type="text" id="d4sKeywordInput" class="form-input" style="flex: 1; min-width: 280px;" placeholder="Enter seed keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
+        <button class="btn btn-primary" id="btnD4sEnrich">🔍 Enrich via DataForSEO</button>
       </div>
 
       <div id="d4sResultsBox">
-        <div class="awwwards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 1.5rem;">
-          <div class="seo-card-box">
-            <span class="category-eyebrow">MONTHLY SEARCH VOL</span>
-            <div style="font-size: 1.6rem; font-weight: 900;" id="d4sVol">3,100</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+          <div class="editorial-card">
+            <span class="metric-label">MONTHLY VOLUME</span>
+            <div class="metric-value-lg" id="d4sVol">3,100</div>
           </div>
-          <div class="seo-card-box">
-            <span class="category-eyebrow">ESTIMATED CPC</span>
-            <div style="font-size: 1.6rem; font-weight: 900;" id="d4sCpc">$2.80</div>
+          <div class="editorial-card">
+            <span class="metric-label">ESTIMATED CPC</span>
+            <div class="metric-value-lg" id="d4sCpc">$2.80</div>
           </div>
-          <div class="seo-card-box">
-            <span class="category-eyebrow">KEYWORD DIFFICULTY</span>
-            <div style="font-size: 1.6rem; font-weight: 900; color: var(--success);" id="d4sKd">33/100</div>
+          <div class="editorial-card">
+            <span class="metric-label">KEYWORD DIFFICULTY</span>
+            <div class="metric-value-lg" style="color: var(--emerald-text);" id="d4sKd">33/100</div>
           </div>
-          <div class="seo-card-box">
-            <span class="category-eyebrow">SEARCH INTENT</span>
-            <div style="font-size: 1.6rem; font-weight: 900;" id="d4sIntent">INFORMATIONAL</div>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-          <div class="seo-card-box">
-            <span class="seo-card-title">🧩 Semantic Clusters &amp; Subheadings</span>
-            <div id="d4sClustersList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
-          </div>
-          <div class="seo-card-box">
-            <span class="seo-card-title">❓ People Also Ask (PAA) Questions</span>
-            <div id="d4sPaaList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+          <div class="editorial-card">
+            <span class="metric-label">SEARCH INTENT</span>
+            <div class="metric-value-lg" id="d4sIntent">INFORMATIONAL</div>
           </div>
         </div>
 
-        <div class="seo-card-box">
-          <span class="seo-card-title">🏆 Top Competitor SERP Landscape</span>
-          <div id="d4sSerpList" style="display: flex; flex-direction: column; gap: 0.65rem;"></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem;">
+          <div class="editorial-card">
+            <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">🧩 Semantic Clusters &amp; Subheadings</span>
+            <div id="d4sClustersList" style="display: flex; flex-direction: column; gap: 0.4rem;"></div>
+          </div>
+          <div class="editorial-card">
+            <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">❓ People Also Ask (PAA) Questions</span>
+            <div id="d4sPaaList" style="display: flex; flex-direction: column; gap: 0.4rem;"></div>
+          </div>
+        </div>
+
+        <div class="editorial-card">
+          <span class="metric-label" style="margin-bottom: 0.75rem; display: block;">🏆 Top Competitor SERP Landscape</span>
+          <div id="d4sSerpList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
         </div>
       </div>
     </div>
 
     <!-- SUB-PANE 3: Growth OS Knowledge -->
     <div class="seo-subpane" id="sub-growth-os" style="display: none;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
         <p style="font-size: 12.5px; color: var(--text-muted);">
           Our moat against commoditized AI fluff. Ingested into every article to inject contrarian founder taste and field telemetry.
         </p>
-        <button class="btn btn-dark-pill btn-sm" id="btnSaveGrowthOs">💾 Save Knowledge Files</button>
+        <button class="btn btn-primary btn-sm" id="btnSaveGrowthOs">💾 Save Knowledge Files</button>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-        <div class="seo-card-box">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
-            <span style="font-weight: 800; font-size: 12px; color: var(--purple);">🎙️ FOUNDER-VOICE.MD</span>
-            <span class="clean-pill-badge" style="font-size: 10px;">context/growth_os/founder-voice.md</span>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+        <div class="editorial-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; font-size: 12px; color: var(--purple-text);">🎙️ FOUNDER-VOICE.MD</span>
+            <span class="tag-quiet" style="font-size: 10px;">context/growth_os/founder-voice.md</span>
           </div>
-          <textarea class="editor-box" id="txtFounderVoice" style="min-height: 420px; font-size: 12px;" placeholder="Loading founder voice rules..."></textarea>
+          <textarea class="editor-box" id="txtFounderVoice" style="min-height: 400px; font-size: 12px;" placeholder="Loading founder voice rules..."></textarea>
         </div>
 
-        <div class="seo-card-box">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
-            <span style="font-weight: 800; font-size: 12px; color: #0284c7;">🛠️ CUSTOMER-TRUTH.MD</span>
-            <span class="clean-pill-badge" style="font-size: 10px;">context/growth_os/customer-truth.md</span>
+        <div class="editorial-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; font-size: 12px; color: var(--blue-text);">🛠️ CUSTOMER-TRUTH.MD</span>
+            <span class="tag-quiet" style="font-size: 10px;">context/growth_os/customer-truth.md</span>
           </div>
-          <textarea class="editor-box" id="txtCustomerTruth" style="min-height: 420px; font-size: 12px;" placeholder="Loading customer truth notes..."></textarea>
+          <textarea class="editor-box" id="txtCustomerTruth" style="min-height: 400px; font-size: 12px;" placeholder="Loading customer truth notes..."></textarea>
         </div>
       </div>
     </div>
 
     <!-- SUB-PANE 4: Cannibalization Shield -->
     <div class="seo-subpane" id="sub-cannibalization" style="display: none;">
-      <div class="seo-card-box" style="margin-bottom: 1.5rem;">
-        <span class="seo-card-title">🛡️ Live Keyword Cannibalization Checker</span>
-        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-          <input type="text" id="txtCannibalizationTest" class="form-input" style="flex: 1; min-width: 280px; border-radius: var(--radius-pill);" placeholder="Test candidate keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
-          <button class="btn btn-outline-pill btn-sm" id="btnTestCannibalization">Run Conflict Audit</button>
+      <div class="editorial-card" style="margin-bottom: 1.25rem;">
+        <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">🛡️ Live Keyword Cannibalization Checker</span>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <input type="text" id="txtCannibalizationTest" class="form-input" style="flex: 1; min-width: 260px;" placeholder="Test candidate keyword (e.g. agent evaluation bottlenecks)..." value="agent evaluation bottlenecks">
+          <button class="btn btn-secondary btn-sm" id="btnTestCannibalization">Run Conflict Audit</button>
         </div>
-        <div id="cannibalizationResultBox" style="margin-top: 0.85rem; display: none;"></div>
+        <div id="cannibalizationResultBox" style="margin-top: 0.75rem; display: none;"></div>
       </div>
 
-      <div class="table-card-wrapper">
-        <table class="modern-table" id="sitemapTable">
+      <div class="table-wrapper">
+        <table class="clean-table" id="sitemapTable">
           <thead>
             <tr>
               <th>Published Article</th>
@@ -1461,14 +1399,14 @@
 
     <!-- SUB-PANE 5: SERP Preview & Schema -->
     <div class="seo-subpane" id="sub-serp-preview" style="display: none;">
-      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem;">
-        <div class="seo-card-box">
-          <span class="seo-card-title">🌐 Google Search Snippet Preview</span>
-          <div style="background: #ffffff; border: 1px solid #dfe1e5; border-radius: 12px; padding: 1.25rem; font-family: Arial, sans-serif; margin-bottom: 1.5rem;">
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.25rem;">
+        <div class="editorial-card">
+          <span class="metric-label" style="margin-bottom: 0.75rem; display: block;">🌐 Google Search Snippet Preview</span>
+          <div style="background: #ffffff; border: 1px solid #dfe1e5; border-radius: 8px; padding: 1.15rem; font-family: Arial, sans-serif; margin-bottom: 1.25rem;">
             <div style="font-size: 12px; color: #202124; margin-bottom: 0.25rem;">
               https://editorialfactory.io/articles/<span id="previewSerpUrl">mcp-server-implementation-python</span>
             </div>
-            <div style="color: #1a0dab; font-size: 18px; line-height: 1.3; font-weight: 400; margin-bottom: 0.35rem;" id="previewSerpTitle">
+            <div style="color: #1a0dab; font-size: 17px; line-height: 1.3; font-weight: 400; margin-bottom: 0.35rem;" id="previewSerpTitle">
               Mcp Server Implementation Python: Production Architecture
             </div>
             <div style="color: #4d5156; font-size: 13px; line-height: 1.5;" id="previewSerpDesc">
@@ -1476,18 +1414,18 @@
             </div>
           </div>
 
-          <span class="seo-card-title">🔗 Suggested Internal Linking Anchors</span>
-          <div id="previewInternalLinksBox" style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;">
+          <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">🔗 Suggested Internal Linking Anchors</span>
+          <div id="previewInternalLinksBox" style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem;">
             <ul style="padding-left: 1.2rem; font-size: 12px;" id="internalLinksUl">
               <li><code>[anthropic multi agent framework]</code> &rarr; <code>/published/2026-09-07_anthropic-multiagent-turf-war.md</code></li>
             </ul>
           </div>
         </div>
 
-        <div class="seo-card-box">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-            <span class="seo-card-title" style="margin-bottom:0;">📄 JSON-LD Schema (`@graph`)</span>
-            <button class="btn btn-outline-pill btn-sm" id="btnCopySchema">📋 Copy Schema</button>
+        <div class="editorial-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
+            <span class="metric-label">📄 JSON-LD Schema (`@graph`)</span>
+            <button class="btn btn-secondary btn-sm" id="btnCopySchema">📋 Copy Schema</button>
           </div>
           <pre class="article-rendered-body pre" id="schemaViewerPre" style="max-height: 380px; font-size: 11.5px; overflow-y: auto;">{}</pre>
         </div>
@@ -1496,8 +1434,8 @@
 
     <!-- SUB-PANE 6: Performance Loop -->
     <div class="seo-subpane" id="sub-performance" style="display: none;">
-      <div class="table-card-wrapper">
-        <table class="modern-table" id="performanceTable">
+      <div class="table-wrapper">
+        <table class="clean-table" id="performanceTable">
           <thead>
             <tr>
               <th>Article Slug</th>
@@ -1517,191 +1455,179 @@
     </div>
   </div>
 
-  <!-- TAB 3: Multi-Channel Suite (Screenshot 1 & 3 Aesthetic) -->
+  <!-- TAB 3: Multi-Channel Suite (Linear Style Matrix) -->
   <div class="tab-pane" id="tab-suite">
-    <div class="category-header-wrap">
-      <span class="category-eyebrow">OMNICHANNEL DISTRIBUTION</span>
-      <div class="display-title-row">
-        <h2 class="display-title-awwwards">Multi-Channel Distribution Suite</h2>
-        <button class="btn btn-dark-pill btn-sm" onclick="generateSuite()">⚡ Regenerate All Formats</button>
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">OMNICHANNEL DISTRIBUTION</span>
+        <h2 class="page-title">Multi-Channel Distribution Suite</h2>
       </div>
+      <button class="btn btn-primary btn-sm" onclick="generateSuite()">⚡ Regenerate All Formats</button>
     </div>
 
-    <div class="suite-grid-awwwards">
+    <div class="suite-grid">
       <!-- 1. LinkedIn Card -->
-      <div class="channel-card-awwwards">
-        <div>
-          <div class="channel-header-row">
-            <div>
-              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">💼 LinkedIn Thought Leadership</div>
-              <div style="font-size: 11px; color: var(--text-muted);" id="linkedInCharCount">0 chars</div>
-            </div>
-            <span class="clean-pill-badge" style="background:#e0f2fe; color:#0369a1;">Executive Format</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border-subtle);">
+          <div>
+            <div style="font-weight: 600; font-size: 13.5px; color: var(--text);">💼 LinkedIn Thought Leadership</div>
+            <div style="font-size: 11px; color: var(--text-dim);" id="linkedInCharCount">0 chars</div>
           </div>
-          <div class="channel-box-inner" id="linkedInPreviewBox">Click 'Generate Suite' or load an article to preview LinkedIn copy...</div>
+          <span class="tag-quiet tag-blue">Executive Format</span>
         </div>
+        <div class="channel-box-inner" id="linkedInPreviewBox">Click 'Generate Suite' or load an article to preview LinkedIn copy...</div>
         <div style="display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap;">
-          <button class="btn btn-outline-pill btn-sm" id="btnCopyLinkedIn">📋 Copy Post</button>
-          <button class="btn btn-dark-pill btn-sm" id="btnPushLinkedInQueue">🚀 Queue to Supabase</button>
+          <button class="btn btn-secondary btn-sm" id="btnCopyLinkedIn">📋 Copy Post</button>
+          <button class="btn btn-primary btn-sm" id="btnPushLinkedInQueue">🚀 Queue to Supabase</button>
         </div>
       </div>
 
       <!-- 2. Twitter / X Card -->
-      <div class="channel-card-awwwards">
-        <div>
-          <div class="channel-header-row">
-            <div>
-              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">📱 X / Twitter Thread Series</div>
-              <div style="font-size: 11px; color: var(--text-muted);">Numbered Tweet Breakdown</div>
-            </div>
-            <span class="clean-pill-badge">3-4 Tweets</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border-subtle);">
+          <div>
+            <div style="font-weight: 600; font-size: 13.5px; color: var(--text);">📱 X / Twitter Thread Series</div>
+            <div style="font-size: 11px; color: var(--text-dim);">Numbered Tweet Breakdown</div>
           </div>
-          <div class="channel-box-inner" id="twitterPreviewBox">Click 'Generate Suite' or load an article to preview thread series...</div>
+          <span class="tag-quiet">3-4 Tweets</span>
         </div>
+        <div class="channel-box-inner" id="twitterPreviewBox">Click 'Generate Suite' or load an article to preview thread series...</div>
         <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-          <button class="btn btn-outline-pill btn-sm" id="btnCopyTwitter">📋 Copy Thread</button>
+          <button class="btn btn-secondary btn-sm" id="btnCopyTwitter">📋 Copy Thread</button>
         </div>
       </div>
 
       <!-- 3. Substack / Newsletter Card -->
-      <div class="channel-card-awwwards">
-        <div>
-          <div class="channel-header-row">
-            <div>
-              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">📰 Substack / Newsletter Brief</div>
-              <div style="font-size: 11px; color: var(--text-muted);">Executive Digest &amp; Takeaways</div>
-            </div>
-            <span class="clean-pill-badge">Digest Format</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border-subtle);">
+          <div>
+            <div style="font-weight: 600; font-size: 13.5px; color: var(--text);">📰 Substack / Newsletter Brief</div>
+            <div style="font-size: 11px; color: var(--text-dim);">Executive Digest &amp; Takeaways</div>
           </div>
-          <div class="channel-box-inner" id="newsletterPreviewBox">Executive takeaways, TL;DR bullet matrix formatted for Substack/Beehiiv newsletters...</div>
+          <span class="tag-quiet">Digest Format</span>
         </div>
+        <div class="channel-box-inner" id="newsletterPreviewBox">Executive takeaways, TL;DR bullet matrix formatted for newsletters...</div>
         <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-          <button class="btn btn-outline-pill btn-sm" id="btnCopyNewsletter">📋 Copy Newsletter</button>
+          <button class="btn btn-secondary btn-sm" id="btnCopyNewsletter">📋 Copy Newsletter</button>
         </div>
       </div>
 
       <!-- 4. Hacker News / Reddit Technical Pitch -->
-      <div class="channel-card-awwwards">
-        <div>
-          <div class="channel-header-row">
-            <div>
-              <div style="font-weight: 800; font-size: 13.5px; color: var(--text);">💬 Community Discussion Pitch</div>
-              <div style="font-size: 11px; color: var(--text-muted);">r/MachineLearning &amp; Hacker News</div>
-            </div>
-            <span class="clean-pill-badge">Practitioner Format</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border-subtle);">
+          <div>
+            <div style="font-weight: 600; font-size: 13.5px; color: var(--text);">💬 Community Discussion Pitch</div>
+            <div style="font-size: 11px; color: var(--text-dim);">r/MachineLearning &amp; Hacker News</div>
           </div>
-          <div class="channel-box-inner" id="communityPreviewBox">Pragmatic, zero-marketing discussion starter and technical breakdown...</div>
+          <span class="tag-quiet">Practitioner Format</span>
         </div>
+        <div class="channel-box-inner" id="communityPreviewBox">Pragmatic, zero-marketing discussion starter and technical breakdown...</div>
         <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-          <button class="btn btn-outline-pill btn-sm" id="btnCopyCommunity">📋 Copy Pitch</button>
+          <button class="btn btn-secondary btn-sm" id="btnCopyCommunity">📋 Copy Pitch</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- TAB 4: Verticals & Radar Settings (Awwwards Masterclass Cards) -->
+  <!-- TAB 4: Verticals & Coverage Engines (Uniform White Cards) -->
   <div class="tab-pane" id="tab-verticals">
-    <div class="category-header-wrap">
-      <span class="category-eyebrow">30-DAY FRESHNESS RADAR</span>
-      <div class="display-title-row">
-        <h2 class="display-title-awwwards">Editorial Verticals &amp; Coverage Engines</h2>
-        <div style="display: flex; gap: 0.5rem;">
-          <button class="btn btn-outline-pill" id="syncCronBtnVerticals">⚡ Sync Crons</button>
-          <button class="btn btn-dark-pill" id="addVerticalTopBtn">+ New Vertical</button>
-        </div>
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">30-DAY FRESHNESS RADAR</span>
+        <h2 class="page-title">Editorial Verticals &amp; Coverage Engines</h2>
+      </div>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-secondary btn-sm" id="syncCronBtnVerticals">⚡ Sync Crons</button>
+        <button class="btn btn-primary btn-sm" id="addVerticalTopBtn">+ New Vertical</button>
       </div>
     </div>
 
-    <div class="awwwards-grid" id="verticalsGrid"></div>
+    <div class="cards-grid" id="verticalsGrid"></div>
   </div>
 
   <!-- TAB 5: Target Personas Maintenance -->
   <div class="tab-pane" id="tab-personas">
-    <div class="category-header-wrap">
-      <span class="category-eyebrow">READER ARCHETYPES &amp; TASTE</span>
-      <div class="display-title-row">
-        <h2 class="display-title-awwwards">Target Reader Personas</h2>
-        <button class="btn btn-dark-pill" id="addPersonaTopBtn">+ New Persona</button>
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">READER ARCHETYPES &amp; TASTE</span>
+        <h2 class="page-title">Target Reader Personas</h2>
       </div>
+      <button class="btn btn-primary btn-sm" id="addPersonaTopBtn">+ New Persona</button>
     </div>
 
-    <div class="awwwards-grid" id="personasGrid"></div>
+    <div class="cards-grid" id="personasGrid"></div>
   </div>
 
   <!-- TAB 6: Fleet & Cron Controls -->
   <div class="tab-pane" id="tab-fleet">
-    <div class="category-header-wrap">
-      <span class="category-eyebrow">OPERATIONS &amp; MULTI-AGENT FLEET</span>
-      <div class="display-title-row">
-        <h2 class="display-title-awwwards">Hermes Fleet &amp; Cron Orchestration</h2>
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">OPERATIONS &amp; MULTI-AGENT FLEET</span>
+        <h2 class="page-title">Hermes Fleet &amp; Cron Orchestration</h2>
       </div>
     </div>
 
-    <div class="awwwards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 1.5rem;">
-      <div class="seo-card-box">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-weight: 800; font-size: 13px;">🛰️ Scout Radar Fleet</span>
-          <span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46;">ACTIVE</span>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+          <span style="font-weight: 600; font-size: 13px; color: var(--text);">🛰️ Scout Radar Fleet</span>
+          <span class="tag-quiet tag-emerald">ACTIVE</span>
         </div>
-        <div style="font-size: 11.5px; color: var(--text-muted);">Runtime: DeepSeek-V4 · 30-Day Freshness Filter</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+        <div style="font-size: 11.5px; color: var(--text-dim);">Runtime: DeepSeek-V4 · 30-Day Freshness Filter</div>
       </div>
 
-      <div class="seo-card-box">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-weight: 800; font-size: 13px;">🧠 Growth OS Analyst</span>
-          <span class="clean-pill-badge" style="background:#f5f3ff; color:#7c3aed;">ACTIVE</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+          <span style="font-weight: 600; font-size: 13px; color: var(--text);">🧠 Growth OS Analyst</span>
+          <span class="tag-quiet" style="color: var(--purple-text);">ACTIVE</span>
         </div>
-        <div style="font-size: 11.5px; color: var(--text-muted);">Founder Voice + Customer Truth Ingestion</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+        <div style="font-size: 11.5px; color: var(--text-dim);">Founder Voice + Customer Truth Ingestion</div>
       </div>
 
-      <div class="seo-card-box">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-weight: 800; font-size: 13px;">✍️ Claude Stylist Gate</span>
-          <span class="clean-pill-badge" style="background:#e0f2fe; color:#0369a1;">FRONTIER</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+          <span style="font-weight: 600; font-size: 13px; color: var(--text);">✍️ Claude Stylist Gate</span>
+          <span class="tag-quiet tag-blue">FRONTIER</span>
         </div>
-        <div style="font-size: 11.5px; color: var(--text-muted);">Claude 3.7 / Sonnet 5 via Kie.ai</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+        <div style="font-size: 11.5px; color: var(--text-dim);">Claude 3.7 / Sonnet 5 via Kie.ai</div>
       </div>
 
-      <div class="seo-card-box">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <span style="font-weight: 800; font-size: 13px;">🚀 Publisher Gate</span>
-          <span class="clean-pill-badge" style="background:#fef3c7; color:#92400e;">GATED</span>
+      <div class="editorial-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+          <span style="font-weight: 600; font-size: 13px; color: var(--text);">🚀 Publisher Gate</span>
+          <span class="tag-quiet" style="color: var(--amber-text);">GATED</span>
         </div>
-        <div style="font-size: 11.5px; color: var(--text-muted);">Gate: @Simon approve</div>
-        <div class="yellow-accent-bar" style="margin-top: 0.75rem;"></div>
+        <div style="font-size: 11.5px; color: var(--text-dim);">Gate: @Simon approve</div>
       </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
-      <div class="seo-card-box">
-        <div style="font-weight: 800; font-size: 13px; margin-bottom: 0.35rem;">1. Hermes Cron Schedule Sync</div>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 1rem;">Pushes all 8 verticals directly to VPS hermes cron daemon.</p>
-        <button class="btn btn-outline-pill btn-sm" id="btnSyncCronsExplicit">⚡ Run sync_crons.py</button>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+      <div class="editorial-card">
+        <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.25rem;">1. Hermes Cron Sync</div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 0.85rem;">Pushes all 8 verticals directly to VPS hermes cron daemon.</p>
+        <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">⚡ Run sync_crons.py</button>
       </div>
 
-      <div class="seo-card-box">
-        <div style="font-weight: 800; font-size: 13px; margin-bottom: 0.35rem;">2. Supabase Push</div>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 1rem;">Uploads all verticals &amp; personas to remote Supabase tables.</p>
-        <button class="btn btn-outline-pill btn-sm" id="btnPushSupabase">☁️ Push to Supabase</button>
+      <div class="editorial-card">
+        <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.25rem;">2. Supabase Push</div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 0.85rem;">Uploads all verticals &amp; personas to remote Supabase tables.</p>
+        <button class="btn btn-secondary btn-sm" id="btnPushSupabase">☁️ Push to Supabase</button>
       </div>
 
-      <div class="seo-card-box">
-        <div style="font-weight: 800; font-size: 13px; margin-bottom: 0.35rem;">3. Supabase Pull</div>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 1rem;">Fetches remote Supabase records to overwrite local JSON configs.</p>
-        <button class="btn btn-outline-pill btn-sm" id="btnPullSupabase">📥 Pull from Supabase</button>
+      <div class="editorial-card">
+        <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.25rem;">3. Supabase Pull</div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 0.85rem;">Fetches remote Supabase records to overwrite local JSON configs.</p>
+        <button class="btn btn-secondary btn-sm" id="btnPullSupabase">📥 Pull from Supabase</button>
       </div>
     </div>
 
     <!-- Live Terminal Box -->
-    <div class="seo-card-box">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
-        <span class="category-eyebrow" style="margin-bottom:0;">LIVE FLEET OPERATIONS LOG</span>
-        <button class="btn btn-outline-pill btn-sm" onclick="document.getElementById('terminalOutputBox').textContent='[PressFlow Console Cleared]\n'">Clear Log</button>
+    <div class="editorial-card" style="padding: 1.15rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+        <span class="section-eyebrow" style="margin-bottom:0;">LIVE FLEET OPERATIONS LOG</span>
+        <button class="btn btn-ghost btn-sm" onclick="document.getElementById('terminalOutputBox').textContent='[PressFlow Console Cleared]\n'">Clear Log</button>
       </div>
-      <div id="terminalOutputBox" style="background:#090d16; border:1px solid #1e293b; border-radius:12px; padding:1.15rem; font-family:var(--font-mono); font-size:11.5px; color:#38bdf8; max-height:220px; overflow-y:auto; white-space:pre-wrap; line-height:1.6;">[PressFlow Fleet Initialized]
+      <div id="terminalOutputBox" style="background:#18181B; border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-sm); padding:1rem; font-family:var(--font-mono); font-size:11.5px; color:#E4E4E7; max-height:220px; overflow-y:auto; white-space:pre-wrap; line-height:1.6;">[PressFlow Fleet Initialized]
 - 8 Verticals Active &amp; Synced
 - 8 Personas Configured
 - GSC Radar: Active (28-day telemetry)
@@ -1711,7 +1637,7 @@ Ready for commands.</div>
   </div>
 </div>
 
-<!-- Library Modal (With Search Filter & Clean Cards) -->
+<!-- Library Modal (Interactive Rows with Hover Trash, Linear Style) -->
 <div class="modal-backdrop" id="libraryModalBackdrop">
   <div class="modal">
     <div class="modal-header">
@@ -1719,7 +1645,7 @@ Ready for commands.</div>
       <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
     </div>
     <div style="margin-bottom: 1rem;">
-      <input type="text" id="librarySearchInput" class="form-input" style="border-radius: var(--radius-pill);" placeholder="🔍 Search drafts by title, vertical, or keyword...">
+      <input type="text" id="librarySearchInput" class="form-input" placeholder="🔍 Search drafts by title, vertical, or keyword...">
     </div>
     <div id="libraryListContainer"></div>
   </div>
@@ -1787,7 +1713,7 @@ Ready for commands.</div>
         <div class="tag-input-box" id="anglesBox">
           <input type="text" class="tag-text-input" id="angleInput" placeholder="Type or paste editorial angle(s) and press Enter or comma...">
         </div>
-        <div class="preset-chips" style="margin-top: 0.4rem;">
+        <div class="preset-chips">
           <span class="preset-chip" onclick="addAnglePreset('memory tiering topology L1-L4')">+ memory tiering L1-L4</span>
           <span class="preset-chip" onclick="addAnglePreset('compound reliability math 0.95^10')">+ compound reliability 0.95^10</span>
           <span class="preset-chip" onclick="addAnglePreset('deterministic vs probabilistic QA')">+ deterministic vs probabilistic QA</span>
@@ -1796,12 +1722,12 @@ Ready for commands.</div>
         </div>
       </div>
 
-      <div class="form-group" style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.85rem; margin-top: 0.75rem;">
+      <div class="form-group" style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.75rem; margin-top: 0.5rem;">
         <label class="form-label" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; margin-bottom: 0.2rem;" for="verticalDataForSeo">
-          <span style="font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 0.4rem;">
+          <span style="font-weight: 600; color: var(--text); display: flex; align-items: center; gap: 0.4rem;">
             <span>🔍</span> Enable DataForSEO API Enrichment
           </span>
-          <input type="checkbox" id="verticalDataForSeo" checked style="width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer;">
+          <input type="checkbox" id="verticalDataForSeo" checked style="width: 15px; height: 15px; accent-color: var(--text); cursor: pointer;">
         </label>
         <div class="form-help" style="margin-top: 0.15rem;">
           Queries live DataForSEO credits for search volume, intent &amp; SERPs. Turn OFF for non-SEO verticals to conserve credits.
@@ -1809,8 +1735,8 @@ Ready for commands.</div>
       </div>
 
       <div class="modal-actions">
-        <button type="button" class="btn btn-outline-pill" id="cancelModalBtn">Cancel</button>
-        <button type="submit" class="btn btn-dark-pill" id="saveVerticalBtn">Save Vertical</button>
+        <button type="button" class="btn btn-secondary" id="cancelModalBtn">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="saveVerticalBtn">Save Vertical</button>
       </div>
     </form>
   </div>
@@ -1849,13 +1775,13 @@ Ready for commands.</div>
       </div>
 
       <div class="form-group">
-        <label class="form-label" for="personaWants">What They Want (Takeaways &amp; Angles)</label>
-        <textarea class="form-textarea" id="personaWants" rows="3" placeholder="e.g. memory tiering topologies, MCP contracts, state recovery patterns" required></textarea>
+        <label class="form-label" for="personaWants">Strategic Needs &amp; Takeaways</label>
+        <textarea class="form-textarea" id="personaWants" rows="3" placeholder="e.g. Hard operational trade-offs, state persistence vs context window limits, benchmark numbers." required></textarea>
       </div>
 
       <div class="modal-actions">
-        <button type="button" class="btn btn-outline-pill" id="cancelPersonaModalBtn">Cancel</button>
-        <button type="submit" class="btn btn-dark-pill" id="savePersonaBtn">Save Persona</button>
+        <button type="button" class="btn btn-secondary" id="cancelPersonaModalBtn">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="savePersonaBtn">Save Persona</button>
       </div>
     </form>
   </div>
@@ -1863,135 +1789,102 @@ Ready for commands.</div>
 
 <!-- Delete Confirmation Modal -->
 <div class="modal-backdrop" id="deleteModalBackdrop">
-  <div class="modal" style="max-width: 420px;">
-    <h2 style="font-size: 1.2rem; font-weight: 800; color: var(--text); margin-bottom: 0.6rem;" id="deleteModalHeading">Delete Item?</h2>
-    <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 1.25rem;" id="deleteConfirmText">
-      Are you sure you want to permanently delete this item?
-    </p>
+  <div class="modal" style="max-width: 440px;">
+    <div class="modal-header">
+      <h2 style="color: var(--danger-text);">Confirm Deletion</h2>
+      <button class="close-btn" id="closeDeleteModalBtn">&times;</button>
+    </div>
+    <div style="margin-bottom: 1.25rem;">
+      <p id="deleteModalMessage" style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;"></p>
+    </div>
     <div class="modal-actions">
-      <button type="button" class="btn btn-outline-pill" id="cancelDeleteBtn">Cancel</button>
-      <button type="button" class="btn btn-danger-pill" id="confirmDeleteBtn">Delete</button>
+      <button class="btn btn-secondary" id="cancelDeleteModalBtn">Cancel</button>
+      <button class="btn btn-primary" style="background: #DC2626; border-color: #DC2626;" id="confirmDeleteBtn">Delete</button>
     </div>
   </div>
 </div>
 
-<!-- Toast Container -->
+<!-- Toast -->
 <div class="toast" id="toast">
-  <span id="toastMessage">Notification</span>
+  <span id="toastIcon">✓</span>
+  <span id="toastMessage">Action completed successfully</span>
 </div>
 
 <script>
-  // State
+  let allDrafts = [];
+  let currentFile = null;
+  let currentMarkdown = '';
   let allVerticals = [];
   let allPersonas = {};
-  let allDrafts = [];
-  let currentFile = '2026-09-09_nvidia-279b-memory-bottleneck_final.md';
-  let currentMarkdown = '';
-  let currentSources = [];
-  let currentAngles = [];
 
-  let deleteActionType = null;
-  let deleteTargetId = null;
-
-  // Theme Management
-  function initTheme() {
-    const saved = localStorage.getItem('pressflow_theme') || 'light';
-    document.documentElement.setAttribute('data-theme', saved);
-    updateThemeIcon(saved);
-  }
+  // Theme Persistence
+  const savedTheme = localStorage.getItem('pressflow_theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateThemeIcon(savedTheme);
 
   function updateThemeIcon(theme) {
     const btn = document.getElementById('btnToggleTheme');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    if (btn) btn.textContent = theme === 'dark' ? '🌙' : '☀️';
   }
 
   document.getElementById('btnToggleTheme').addEventListener('click', () => {
-    const curr = document.documentElement.getAttribute('data-theme') || 'light';
-    const next = curr === 'light' ? 'dark' : 'light';
+    const cur = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = cur === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('pressflow_theme', next);
     updateThemeIcon(next);
   });
-  initTheme();
 
-  // Helpers
+  // Terminal Logger
   function logTerminal(msg) {
     const box = document.getElementById('terminalOutputBox');
-    if (box) {
-      const ts = new Date().toLocaleTimeString();
-      box.textContent += `\n[${ts}] ${msg}`;
-      box.scrollTop = box.scrollHeight;
-    }
+    if (!box) return;
+    const time = new Date().toLocaleTimeString();
+    box.textContent += `\n[${time}] ${msg}`;
+    box.scrollTop = box.scrollHeight;
   }
 
-  function getHumanCadence(cadenceStr) {
-    const parts = (cadenceStr || '').trim().split(/\s+/);
-    if (parts.length >= 5) {
-      const [minute, hour, dom, month, dow] = parts;
-      const hInt = parseInt(hour, 10);
-      const h12 = isNaN(hInt) ? 6 : (hInt === 0 ? 12 : (hInt > 12 ? hInt - 12 : hInt));
-      const amPm = !isNaN(hInt) && hInt >= 12 ? 'PM' : 'AM';
-      const mStr = String(parseInt(minute, 10) || 0).padStart(2, '0');
-      const timeStr = `${h12}:${mStr} ${amPm} EST`;
-
-      const dayMap = { '0': 'Sun', '1': 'Mon', '2': 'Tue', '3': 'Wed', '4': 'Thu', '5': 'Fri', '6': 'Sat', '7': 'Sun' };
-      if (dow === '*') return `Daily ${timeStr}`;
-      const days = dow.split(',').map((d) => dayMap[d] || d);
-      return `${days.join(' + ')} ${timeStr}`;
-    }
-    return cadenceStr;
-  }
-
+  // Toast System
+  let toastTimer = null;
   function showToast(msg, type = 'success') {
     const toast = document.getElementById('toast');
     const toastMessage = document.getElementById('toastMessage');
-    toastMessage.textContent = msg;
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast) return;
+    clearTimeout(toastTimer);
     toast.className = `toast ${type} show`;
-    setTimeout(() => { toast.className = 'toast'; }, 3500);
+    toastMessage.textContent = msg;
+    toastIcon.textContent = type === 'error' ? '❌' : '✓';
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3200);
   }
 
-  function parseFrontmatterJs(markdown) {
-    if (!markdown) return {};
-    const fmMatch = markdown.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/);
-    if (!fmMatch) return {};
-    const data = {};
-    const lines = fmMatch[1].split(/\r?\n/);
-    for (const line of lines) {
-      const m = line.match(/^([a-zA-Z0-9_-]+)\s*:\s*(.*)$/);
-      if (!m) continue;
-      const key = m[1].trim();
-      let rawVal = m[2].trim();
-      if (rawVal.startsWith('[') && rawVal.endsWith(']')) {
-        try {
-          data[key] = JSON.parse(rawVal);
-        } catch (e) {
-          data[key] = rawVal.slice(1, -1).split(',').map((s) => s.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
+  // Frontmatter Parser
+  function parseFrontmatterJs(md) {
+    if (!md.startsWith('---')) return {};
+    const match = md.match(/^---\n([\s\S]*?)\n---/);
+    if (!match) return {};
+    const yaml = match[1];
+    const out = {};
+    yaml.split('\n').forEach((line) => {
+      const idx = line.indexOf(':');
+      if (idx !== -1) {
+        const k = line.slice(0, idx).trim();
+        let v = line.slice(idx + 1).trim();
+        if (v.startsWith('"') && v.endsWith('"')) v = v.slice(1, -1);
+        if (v.startsWith("'") && v.endsWith("'")) v = v.slice(1, -1);
+        if (v.startsWith('[') && v.endsWith(']')) {
+          v = v.slice(1, -1).split(',').map((s) => s.trim().replace(/^['"]|['"]$/g, ''));
         }
-      } else if ((rawVal.startsWith('"') && rawVal.endsWith('"')) || (rawVal.startsWith("'") && rawVal.endsWith("'"))) {
-        data[key] = rawVal.slice(1, -1);
-      } else if (!isNaN(Number(rawVal)) && rawVal !== '') {
-        data[key] = Number(rawVal);
-      } else if (rawVal.toLowerCase() === 'true') {
-        data[key] = true;
-      } else if (rawVal.toLowerCase() === 'false') {
-        data[key] = false;
-      } else {
-        data[key] = rawVal;
+        out[k] = v;
       }
-    }
-    return data;
+    });
+    return out;
   }
 
+  // Keyword Visualizer Sync
   function updateKeywordVisualizer(markdown) {
-    if (!markdown) return;
-    const fm = parseFrontmatterJs(markdown);
-    const primaryKw = fm.primary_keyword || '';
-    const secondaryKws = Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [];
-    const searchVolume = fm.search_volume;
-    const searchIntent = fm.search_intent || 'informational';
-    const persona = fm.persona || fm.target_persona || 'infra_engineer';
-    const bodyText = markdown.replace(/^---[\s\S]*?---\s*\n?/, '');
-
     const primaryTextEl = document.getElementById('kwPrimaryText');
     const volValEl = document.getElementById('kwVolVal');
     const kdValEl = document.getElementById('kwKdVal');
@@ -1999,92 +1892,71 @@ Ready for commands.</div>
     const personaValEl = document.getElementById('kwPersonaVal');
     const secondaryChipsEl = document.getElementById('kwSecondaryChips');
 
-    const kwDisplay = primaryKw || 'GPU memory bandwidth';
-    if (primaryTextEl) primaryTextEl.textContent = kwDisplay;
+    if (!primaryTextEl) return;
+    const fm = parseFrontmatterJs(markdown);
 
-    if (volValEl) volValEl.textContent = searchVolume ? `${Number(searchVolume).toLocaleString()} / mo` : 'N/A';
-    if (kdValEl) kdValEl.textContent = fm.keyword_difficulty ? `${fm.keyword_difficulty}/100` : '33/100';
-    if (intentValEl) intentValEl.textContent = (searchIntent || 'INFORMATIONAL').toUpperCase();
-    if (personaValEl) personaValEl.textContent = persona;
+    if (fm.primary_keyword) {
+      primaryTextEl.textContent = fm.primary_keyword;
+      volValEl.textContent = fm.search_volume ? `${Number(fm.search_volume).toLocaleString()} / mo` : '3,100 / mo';
+      kdValEl.textContent = fm.keyword_difficulty ? `${fm.keyword_difficulty}/100` : '33/100';
+      intentValEl.textContent = (fm.search_intent || 'INFORMATIONAL').toUpperCase();
+      personaValEl.textContent = fm.target_persona || 'infra_engineer';
 
-    const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const defaultClusters = secondaryKws.length ? secondaryKws : ['HBM memory bandwidth', 'AI inference bottleneck', 'Nvidia H100 H200 supply'];
-    
-    if (secondaryChipsEl) {
-      secondaryChipsEl.innerHTML = defaultClusters.map((sk) => {
-        const safeRegex = sk.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const matches = bodyText.match(new RegExp(safeRegex, 'gi')) || [];
-        const count = matches.length;
-        const countBadge = count > 0 ? `✓ ${count}×` : '0×';
-        return `<span class="clean-pill-badge" style="cursor:pointer;" onclick="highlightKeywordInEditor('${sk.replace(/'/g, "\\'")}')">🏷️ ${esc(sk)} <span style="font-size:10px; font-weight:700;">(${countBadge})</span></span>`;
-      }).join('');
+      const secKeywords = Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [];
+      if (secKeywords.length > 0) {
+        secondaryChipsEl.innerHTML = secKeywords.map((sk) => {
+          const re = new RegExp(sk.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+          const count = (markdown.match(re) || []).length;
+          return `<span class="tag-quiet">${sk} (${count}×)</span>`;
+        }).join('');
+      } else {
+        secondaryChipsEl.innerHTML = '<span style="font-size:11px; color:var(--text-dim);">No secondary keywords defined</span>';
+      }
     }
   }
 
-  window.highlightKeywordInEditor = function(kw) {
-    navigator.clipboard.writeText(kw);
-    showToast(`Keyword '${kw}' copied!`);
-    const editor = document.getElementById('markdownEditor');
-    const idx = editor.value.toLowerCase().indexOf(kw.toLowerCase());
-    if (idx !== -1) {
-      document.getElementById('viewEditBtn').click();
-      editor.focus();
-      editor.setSelectionRange(idx, idx + kw.length);
-    }
-  };
-
+  // Markdown Parser to Clean HTML
   function parseMarkdownToHtml(md) {
-    if (!md) return '';
-    const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-    let content = md.replace(/^---[\s\S]*?---\s*\n?/, '');
-    content = content.replace(new RegExp('<' + '!--\\s*schema\\s*--' + '>[\\s\\S]*?```(?:json)?[\\s\\S]*?```', 'gi'), '');
-    content = content.replace(new RegExp('<' + '!--\\s*internal-links\\s*--' + '>[\\s\\S]*?(?=(?:<' + '!--|##|$))', 'gi'), '');
-
+    let raw = md.replace(/^---\n[\s\S]*?\n---/, '').trim();
     let linkedinHtml = '';
-    const linkedinMatch = content.match(new RegExp('<' + '!--\\s*linkedin\\s*--' + '>([\\s\\S]*?)(?=(?:##\\s*Gate report|<' + '!--|$))', 'i'));
-    if (linkedinMatch) {
-      const liText = linkedinMatch[1].trim();
-      if (liText) {
-        linkedinHtml = `
-          <div style="margin-top: 2.5rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem;">
-            <div style="font-size: 12px; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
-              <span>💼</span> LinkedIn Post Variant
-            </div>
-            <div style="font-size: 13px; line-height: 1.6; color: var(--text); white-space: pre-wrap; font-family: var(--font-sans);">${esc(liText)}</div>
+    if (raw.includes('<!-- linkedin -->')) {
+      const parts = raw.split('<!-- linkedin -->');
+      raw = parts[0];
+      const linkedinText = parts[1].replace(/<!--[\s\S]*?-->/g, '').trim();
+      linkedinHtml = `
+        <div style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1.15rem; margin-top: 1.75rem;">
+          <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+            <span>💼</span> LinkedIn Distribution Post (Auto-Extracted)
           </div>
-        `;
-      }
-      content = content.slice(0, linkedinMatch.index);
+          <div style="white-space: pre-wrap; font-size: 12.5px; line-height: 1.6; color: var(--text-secondary);">${escapeHtml(linkedinText)}</div>
+        </div>
+      `;
     }
 
     let gateReportHtml = '';
-    const gateMatch = content.match(/##\s*Gate report([\s\S]*?)$/i);
-    if (gateMatch) {
-      const grText = gateMatch[1].trim();
-      if (grText) {
-        gateReportHtml = `
-          <div style="margin-top: 1.5rem; background: var(--bg-secondary); border: 1px solid var(--success-border); border-radius: var(--radius-md); padding: 1rem 1.25rem;">
-            <div style="font-size: 12px; font-weight: 800; color: var(--success); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem;">
-              <span>🛡️</span> Frontier Quality Gate Report
-            </div>
-            <div style="font-size: 12px; line-height: 1.6; color: var(--text-muted); font-family: var(--font-mono); white-space: pre-wrap;">${esc(grText)}</div>
+    if (raw.includes('<!-- gate-report -->')) {
+      const gparts = raw.split('<!-- gate-report -->');
+      raw = gparts[0];
+      const gateText = gparts[1].replace(/<!--[\s\S]*?-->/g, '').trim();
+      gateReportHtml = `
+        <div style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1.15rem; margin-top: 1.25rem;">
+          <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+            <span>🛡️</span> Zero-Hallucination Gate Verification Log
           </div>
-        `;
-      }
-      content = content.slice(0, gateMatch.index);
+          <div style="white-space: pre-wrap; font-size: 12px; font-family: var(--font-mono); color: var(--text-muted);">${escapeHtml(gateText)}</div>
+        </div>
+      `;
     }
 
-    const lines = content.split(/\r?\n/);
-    const out = [];
-
-    let para = [];
+    const lines = raw.split('\n');
+    let out = [];
+    let inCodeBlock = false;
+    let codeBlockLines = [];
     let inList = false;
     let listType = null;
     let inBlockquote = false;
     let blockquoteLines = [];
-    let inCodeBlock = false;
-    let codeBlockLines = [];
+    let para = [];
 
     const flushPara = () => {
       if (para.length) {
@@ -2095,7 +1967,7 @@ Ready for commands.</div>
 
     const flushList = () => {
       if (inList) {
-        out.push(`</${listType}>`);
+        out.push(listType === 'ol' ? '</ol>' : '</ul>');
         inList = false;
         listType = null;
       }
@@ -2109,7 +1981,7 @@ Ready for commands.</div>
       }
     };
 
-    const inline = (s) => esc(s)
+    const inline = (s) => escapeHtml(s)
       .replace(/`([^`]+)`/g, '<code>$1</code>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
@@ -2125,7 +1997,7 @@ Ready for commands.</div>
         flushList();
         flushBlockquote();
         if (inCodeBlock) {
-          out.push(`<pre><code>${esc(codeBlockLines.join('\n'))}</code></pre>`);
+          out.push(`<pre><code>${escapeHtml(codeBlockLines.join('\n'))}</code></pre>`);
           codeBlockLines = [];
           inCodeBlock = false;
         } else {
@@ -2209,7 +2081,7 @@ Ready for commands.</div>
     flushList();
     flushBlockquote();
     if (inCodeBlock && codeBlockLines.length) {
-      out.push(`<pre><code>${esc(codeBlockLines.join('\n'))}</code></pre>`);
+      out.push(`<pre><code>${escapeHtml(codeBlockLines.join('\n'))}</code></pre>`);
     }
 
     if (linkedinHtml) out.push(linkedinHtml);
@@ -2254,10 +2126,10 @@ Ready for commands.</div>
     }
   }
 
-  // Tab switching
-  document.querySelectorAll('.nav-pill-btn').forEach((btn) => {
+  // Navigation Tab Switching
+  document.querySelectorAll('.nav-tab-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.nav-pill-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.nav-tab-btn').forEach((b) => b.classList.remove('active'));
       document.querySelectorAll('.tab-pane').forEach((p) => p.classList.remove('active'));
       btn.classList.add('active');
       const target = btn.getAttribute('data-tab');
@@ -2266,7 +2138,7 @@ Ready for commands.</div>
     });
   });
 
-  // View Switcher (Rendered vs Edit)
+  // Segmented Control (Preview vs Edit)
   const viewRenderedBtn = document.getElementById('viewRenderedBtn');
   const viewEditBtn = document.getElementById('viewEditBtn');
   const renderedArticleContainer = document.getElementById('renderedArticleContainer');
@@ -2274,10 +2146,8 @@ Ready for commands.</div>
   const markdownEditor = document.getElementById('markdownEditor');
 
   viewRenderedBtn.addEventListener('click', () => {
-    viewRenderedBtn.style.background = '#0f172a';
-    viewRenderedBtn.style.color = '#fff';
-    viewEditBtn.style.background = 'transparent';
-    viewEditBtn.style.color = 'var(--text)';
+    viewRenderedBtn.classList.add('active');
+    viewEditBtn.classList.remove('active');
     renderedArticleContainer.style.display = 'block';
     editorArticleContainer.style.display = 'none';
     currentMarkdown = markdownEditor.value;
@@ -2286,10 +2156,8 @@ Ready for commands.</div>
   });
 
   viewEditBtn.addEventListener('click', () => {
-    viewEditBtn.style.background = '#0f172a';
-    viewEditBtn.style.color = '#fff';
-    viewRenderedBtn.style.background = 'transparent';
-    viewRenderedBtn.style.color = 'var(--text)';
+    viewEditBtn.classList.add('active');
+    viewRenderedBtn.classList.remove('active');
     renderedArticleContainer.style.display = 'none';
     editorArticleContainer.style.display = 'block';
   });
@@ -2317,7 +2185,7 @@ Ready for commands.</div>
     updateKeywordVisualizer(markdownEditor.value);
   };
 
-  // Load Library & Articles with Filter Support
+  // Load Library & Articles (Interactive Rows)
   async function loadLibrary(filterQuery = '') {
     try {
       const res = await fetch('/api/drafts');
@@ -2334,23 +2202,24 @@ Ready for commands.</div>
         : allDrafts;
 
       if (!filtered.length) {
-        container.innerHTML = '<div style="text-align:center; padding:2rem; color:var(--text-muted); font-size:12px;">No matching drafts found.</div>';
+        container.innerHTML = '<div style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">No matching drafts found.</div>';
         return;
       }
 
-      const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       container.innerHTML = filtered.map((d) => `
-        <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:0.9rem 1.15rem; background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-md); margin-bottom:0.65rem; transition:var(--transition);">
-          <div style="flex:1; cursor:pointer;" onclick="selectDraft('${d.file}')">
-            <div style="font-weight:700; font-size:13.5px; color:var(--text); margin-bottom:0.25rem;">${esc(d.title)}</div>
-            <div style="display:flex; gap:0.5rem; font-size:11px; color:var(--text-muted); align-items:center;">
-              <span class="clean-pill-badge" style="font-size:10px;">🏷️ ${d.vertical}</span>
-              <span>⏱️ ${d.wordCount} words (~${d.readTime} min)</span>
+        <div class="library-item-row" onclick="selectDraft('${d.file}')">
+          <div style="flex: 1;">
+            <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">${escapeHtml(d.title)}</div>
+            <div style="font-size: 11.5px; color: var(--text-dim); display: flex; align-items: center; gap: 0.4rem;">
+              <span>${d.vertical}</span>
+              <span class="meta-dot">·</span>
+              <span>${d.wordCount} words</span>
+              <span class="meta-dot">·</span>
+              <span>~${d.readTime} min</span>
             </div>
           </div>
-          <div style="display:flex; gap:0.4rem;">
-            <button class="btn btn-outline-pill btn-sm" onclick="selectDraft('${d.file}')">Load &rarr;</button>
-            <button class="btn btn-danger-pill btn-sm" onclick="openDeleteModal('draft', '${d.file}', '${d.title.replace(/'/g, "\\'")}')">🗑️</button>
+          <div class="row-delete-btn" onclick="event.stopPropagation(); openDeleteModal('draft', '${d.file}', '${d.title.replace(/'/g, "\\'")}')">
+            <button class="btn btn-danger-ghost btn-sm" title="Delete Draft">🗑️</button>
           </div>
         </div>
       `).join('');
@@ -2380,7 +2249,7 @@ Ready for commands.</div>
       currentMarkdown = data.markdown;
 
       document.getElementById('currentArticleTitle').textContent = data.title;
-      document.getElementById('currentWordCount').textContent = data.wordCount;
+      document.getElementById('currentWordCount').textContent = Number(data.wordCount).toLocaleString();
       document.getElementById('currentReadTime').textContent = data.readTime;
       document.getElementById('currentArticleLink').textContent = `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`;
       document.getElementById('currentArticleLink').href = `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`;
@@ -2393,7 +2262,7 @@ Ready for commands.</div>
 
       document.getElementById('libraryModalBackdrop').classList.remove('active');
       document.getElementById('tabWorkspaceBtn').click();
-      showToast(`Loaded '${data.title.slice(0, 35)}...'`);
+      showToast(`Loaded '${data.title.slice(0, 32)}...'`);
     } catch (e) {
       showToast('Error loading draft: ' + e.message, 'error');
     }
@@ -2412,7 +2281,7 @@ Ready for commands.</div>
       linkedin = `${lead}\n\nKey takeaways:\n${tactical}\n\nFull breakdown: ${articleUrl}`;
     }
     if (articleUrl && !linkedin.includes(articleUrl)) {
-      linkedin += `\n\n📖 Read the full illustrated breakdown: ${articleUrl}`;
+      linkedin += `\n\n📖 Read the full breakdown: ${articleUrl}`;
     }
     document.getElementById('linkedInPreviewBox').textContent = linkedin;
     document.getElementById('linkedInCharCount').textContent = `${linkedin.length} chars`;
@@ -2430,12 +2299,12 @@ Ready for commands.</div>
     // 3. Substack Newsletter
     const leadClean = (md.match(/<!-- lead -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
     const tacticalClean = (md.match(/<!-- tactical-insight -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
-    const newsletter = `**Subject:** ${title}\n\n**Executive Digest:**\n${leadClean.trim() || 'A practitioner breakdown of the latest systems & architectural trade-offs.'}\n\n**Key Engineering & Financial Realities:**\n${tacticalClean.trim() || '- Unvarnished benchmark results from active production deployments.'}\n\n👉 Full illustrated report: ${articleUrl}`;
+    const newsletter = `**Subject:** ${title}\n\n**Executive Digest:**\n${leadClean.trim() || 'A practitioner breakdown of the latest systems & architectural trade-offs.'}\n\n**Key Engineering Realities:**\n${tacticalClean.trim() || '- Unvarnished benchmark results from active production deployments.'}\n\n👉 Full report: ${articleUrl}`;
     document.getElementById('newsletterPreviewBox').textContent = newsletter;
 
     // 4. Community / HN Pitch
     const takeawayClean = (md.match(/<!-- nuanced-takeaway -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
-    const community = `Title: Show HN / Discuss: ${title}\n\nWe analyzed real production data and telemetry on this architecture. The main takeaway:\n\n${takeawayClean.trim() || 'Most teams over-index on theory while bottlenecking on IO and state serialization.'}\n\nFull data, diagrams & benchmarks: ${articleUrl}\n\nWhat are folks seeing in production? Curious how others handle this.`;
+    const community = `Title: Show HN / Discuss: ${title}\n\nWe analyzed real production data and telemetry on this architecture. The main takeaway:\n\n${takeawayClean.trim() || 'Most teams over-index on theory while bottlenecking on IO and state serialization.'}\n\nFull data & benchmarks: ${articleUrl}\n\nWhat are folks seeing in production? Curious how others handle this.`;
     document.getElementById('communityPreviewBox').textContent = community;
   }
 
@@ -2547,7 +2416,7 @@ Ready for commands.</div>
     if (allDrafts.length > 0) selectDraft(allDrafts[0].file);
   });
 
-  // Verticals CRUD with Awwwards Card Layout (Screenshot 1 & 3)
+  // Verticals & Personas (Uniform White Cards)
   async function loadVerticals() {
     try {
       const res = await fetch('/api/verticals');
@@ -2577,64 +2446,51 @@ Ready for commands.</div>
     }
   }
 
-  const verticalCoverThemes = {
-    'agentic_ai': { class: 'card-cover-ai', icon: '🤖' },
-    'ai_observability_qa': { class: 'card-cover-evals', icon: '📊' },
-    'agentic_resilience_failure': { class: 'card-cover-resilience', icon: '🛡️' },
-    'enterprise_ai_governance': { class: 'card-cover-governance', icon: '🏢' },
-    'enterprise_tech_leadership': { class: 'card-cover-enterprise', icon: '💻' },
-    'gpu_hardware': { class: 'card-cover-gpu', icon: '⚡' },
-    'supply_chain': { class: 'card-cover-supply', icon: '📦' },
-    'home_systems_reno': { class: 'card-cover-home', icon: '🏡' },
-  };
-
   function renderVerticals(list) {
     const grid = document.getElementById('verticalsGrid');
     if (!list.length) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted); font-size:12px;">No verticals found.</div>';
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">No verticals found.</div>';
       return;
     }
     grid.innerHTML = list.map((v) => {
       const p = allPersonas[v.target_persona] || { label: v.target_persona };
       const readableCadence = getHumanCadence(v.cadence);
-      const theme = verticalCoverThemes[v.id] || { class: 'card-cover-enterprise', icon: '✦' };
       const sourcesCount = (v.sources || []).length;
       const anglesCount = (v.primary_angles || []).length;
 
       return `
-        <div class="awwwards-card" data-id="${v.id}">
-          <div class="awwwards-card-cover ${theme.class}">
-            <div class="card-floating-badge">
-              <span>${theme.icon}</span> ${v.id}
+        <div class="clean-white-card" data-id="${v.id}">
+          <div>
+            <div class="card-top-row">
+              <div>
+                <span class="tag-quiet" style="margin-bottom: 0.35rem;">${v.id}</span>
+                <div class="card-title-text">${v.label}</div>
+              </div>
+              <div class="card-actions-hover">
+                <button class="btn btn-ghost btn-sm" title="Edit Vertical" onclick="openEditVerticalModal('${v.id}')">✏️</button>
+                <button class="btn btn-danger-ghost btn-sm" title="Delete Vertical" onclick="openDeleteModal('vertical', '${v.id}', '${v.label.replace(/'/g, "\\'")}')">🗑️</button>
+              </div>
             </div>
-            <div style="position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.35rem;">
-              <button class="btn btn-outline-pill btn-sm" style="background: rgba(255,255,255,0.9); border:none; padding: 0.25rem 0.5rem;" title="Edit Vertical" onclick="openEditVerticalModal('${v.id}')">✏️</button>
-              <button class="btn btn-danger-pill btn-sm" style="padding: 0.25rem 0.5rem;" title="Delete Vertical" onclick="openDeleteModal('vertical', '${v.id}', '${v.label.replace(/'/g, "\\'")}')">🗑️</button>
+
+            <div class="key-value-list">
+              <div class="key-value-row">
+                <span class="key-label">Target Persona</span>
+                <span class="key-value">${p.label}</span>
+              </div>
+              <div class="key-value-row">
+                <span class="key-label">Coverage Depth</span>
+                <span class="key-value">${sourcesCount} sources · ${anglesCount} angles</span>
+              </div>
+              <div class="key-value-row">
+                <span class="key-label">Cadence</span>
+                <span class="key-value">${readableCadence}</span>
+              </div>
             </div>
           </div>
 
-          <div class="awwwards-card-body">
-            <div>
-              <div class="awwwards-card-title">${v.label}</div>
-
-              <div class="awwwards-card-meta-row">
-                <span>Target Persona</span>
-                <strong>${p.label}</strong>
-              </div>
-
-              <div class="awwwards-card-meta-row">
-                <span>Coverage Depth</span>
-                <span><strong>${sourcesCount}</strong> sources · <strong>${anglesCount}</strong> angles</span>
-              </div>
-            </div>
-
-            <div class="card-footer-row">
-              <div class="card-score-box">
-                <span class="score-label">${readableCadence}</span>
-                <div class="yellow-accent-bar"></div>
-              </div>
-              <a href="#" class="card-arrow-btn" onclick="openEditVerticalModal('${v.id}'); return false;">&rarr;</a>
-            </div>
+          <div class="card-bottom-row">
+            <span class="tag-quiet tag-emerald">● Active Radar</span>
+            <button class="btn btn-ghost btn-sm" onclick="openEditVerticalModal('${v.id}')">Manage &rarr;</button>
           </div>
         </div>
       `;
@@ -2645,47 +2501,42 @@ Ready for commands.</div>
     const grid = document.getElementById('personasGrid');
     const entries = Object.entries(personas);
     if (!entries.length) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted); font-size:12px;">No personas configured.</div>';
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">No personas configured.</div>';
       return;
     }
     grid.innerHTML = entries.map(([id, p]) => `
-      <div class="awwwards-card" data-id="${id}">
-        <div class="awwwards-card-cover card-cover-enterprise">
-          <div class="card-floating-badge">
-            <span>👤</span> ${id}
+      <div class="clean-white-card" data-id="${id}">
+        <div>
+          <div class="card-top-row">
+            <div>
+              <span class="tag-quiet" style="margin-bottom: 0.35rem;">👤 ${id}</span>
+              <div class="card-title-text">${p.label}</div>
+            </div>
+            <div class="card-actions-hover">
+              <button class="btn btn-ghost btn-sm" title="Edit Persona" onclick="openEditPersonaModal('${id}')">✏️</button>
+              <button class="btn btn-danger-ghost btn-sm" title="Delete Persona" onclick="openDeleteModal('persona', '${id}', '${p.label.replace(/'/g, "\\'")}')">🗑️</button>
+            </div>
           </div>
-          <div style="position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.35rem;">
-            <button class="btn btn-outline-pill btn-sm" style="background: rgba(255,255,255,0.9); border:none; padding: 0.25rem 0.5rem;" title="Edit Persona" onclick="openEditPersonaModal('${id}')">✏️</button>
-            <button class="btn btn-danger-pill btn-sm" style="padding: 0.25rem 0.5rem;" title="Delete Persona" onclick="openDeleteModal('persona', '${id}', '${p.label.replace(/'/g, "\\'")}')">🗑️</button>
+
+          <div class="key-value-list">
+            <div class="key-value-row">
+              <span class="key-label">Reader Level</span>
+              <span class="key-value">${p.reader_level || 'Practitioner'}</span>
+            </div>
+            <div class="key-value-row">
+              <span class="key-label">Voice &amp; Tone</span>
+              <span class="key-value">${p.tone || 'Pragmatic & direct'}</span>
+            </div>
+          </div>
+
+          <div style="font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.75rem;">
+            ${p.wants || 'Clear operational trade-offs and benchmark numbers.'}
           </div>
         </div>
 
-        <div class="awwwards-card-body">
-          <div>
-            <div class="awwwards-card-title">${p.label}</div>
-
-            <div class="awwwards-card-meta-row">
-              <span>Reader Level</span>
-              <strong>${p.reader_level || 'Practitioner'}</strong>
-            </div>
-
-            <div class="awwwards-card-meta-row">
-              <span>Voice &amp; Tone</span>
-              <span>${p.tone || 'Pragmatic & direct'}</span>
-            </div>
-
-            <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 0.75rem; line-height: 1.5;">
-              ${p.wants || 'Clear takeaways and concrete benchmark facts.'}
-            </div>
-          </div>
-
-          <div class="card-footer-row">
-            <div class="card-score-box">
-              <span class="score-label">Persona Taste: Calibrated</span>
-              <div class="yellow-accent-bar"></div>
-            </div>
-            <a href="#" class="card-arrow-btn" onclick="openEditPersonaModal('${id}'); return false;">&rarr;</a>
-          </div>
+        <div class="card-bottom-row">
+          <span class="tag-quiet">Calibrated Moat</span>
+          <button class="btn btn-ghost btn-sm" onclick="openEditPersonaModal('${id}')">Edit Persona &rarr;</button>
         </div>
       </div>
     `).join('');
@@ -2699,7 +2550,7 @@ Ready for commands.</div>
     document.getElementById('personaModalTitle').textContent = 'Add Target Persona';
     document.getElementById('personaFormIsEdit').value = 'false';
     document.getElementById('personaId').value = '';
-    document.getElementById('personaId').disabled = false;
+    document.getElementById('personaId').readOnly = false;
     document.getElementById('personaLabel').value = '';
     document.getElementById('personaReaderLevel').value = '';
     document.getElementById('personaTone').value = '';
@@ -2707,287 +2558,251 @@ Ready for commands.</div>
     personaModalBackdrop.classList.add('active');
   }
 
-  window.openEditPersonaModal = (id) => {
+  function openEditPersonaModal(id) {
     const p = allPersonas[id];
     if (!p) return;
-    document.getElementById('personaModalTitle').textContent = `Edit Persona: ${p.label}`;
+    document.getElementById('personaModalTitle').textContent = `Edit Persona: ${p.label || id}`;
     document.getElementById('personaFormIsEdit').value = 'true';
     document.getElementById('personaId').value = id;
-    document.getElementById('personaId').disabled = true;
-    document.getElementById('personaLabel').value = p.label;
+    document.getElementById('personaId').readOnly = true;
+    document.getElementById('personaLabel').value = p.label || '';
     document.getElementById('personaReaderLevel').value = p.reader_level || '';
     document.getElementById('personaTone').value = p.tone || '';
     document.getElementById('personaWants').value = p.wants || '';
     personaModalBackdrop.classList.add('active');
-  };
+  }
 
   document.getElementById('addPersonaTopBtn').addEventListener('click', openAddPersonaModal);
   document.getElementById('closePersonaModalBtn').addEventListener('click', () => personaModalBackdrop.classList.remove('active'));
   document.getElementById('cancelPersonaModalBtn').addEventListener('click', () => personaModalBackdrop.classList.remove('active'));
 
-  document.getElementById('personaLabel').addEventListener('input', (e) => {
-    if (document.getElementById('personaFormIsEdit').value === 'false') {
-      document.getElementById('personaId').value = e.target.value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-    }
-  });
-
   personaForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const isEdit = document.getElementById('personaFormIsEdit').value === 'true';
-    const id = document.getElementById('personaId').value.trim();
-    const label = document.getElementById('personaLabel').value.trim();
-    const reader_level = document.getElementById('personaReaderLevel').value.trim();
-    const tone = document.getElementById('personaTone').value.trim();
-    const wants = document.getElementById('personaWants').value.trim();
+    const persona = {
+      id: document.getElementById('personaId').value.trim(),
+      label: document.getElementById('personaLabel').value.trim(),
+      reader_level: document.getElementById('personaReaderLevel').value.trim(),
+      tone: document.getElementById('personaTone').value.trim(),
+      wants: document.getElementById('personaWants').value.trim(),
+    };
 
     try {
-      const url = isEdit ? `/api/personas/${encodeURIComponent(id)}` : '/api/personas';
-      const method = isEdit ? 'PUT' : 'POST';
-      const res = await fetch(url, {
-        method,
+      const res = await fetch('/api/personas/save', {
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id, label, reader_level, tone, wants }),
+        body: JSON.stringify({ isEdit, persona }),
       });
-      if (!res.ok) throw new Error('Failed to save persona');
-      showToast(`Persona '${label}' saved!`);
-      logTerminal(`Saved persona '${id}' (${label})`);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to save persona');
+      showToast(isEdit ? 'Persona updated!' : 'Persona created!');
       personaModalBackdrop.classList.remove('active');
-      await loadVerticals();
+      loadVerticals();
     } catch (err) {
       showToast(err.message, 'error');
     }
   });
 
-  // Verticals Tag Box Helpers
-  const sourcesBox = document.getElementById('sourcesBox');
-  const sourceInput = document.getElementById('sourceInput');
-  const anglesBox = document.getElementById('anglesBox');
-  const angleInput = document.getElementById('angleInput');
-
-  function renderSourceChips() {
-    sourcesBox.querySelectorAll('.chip-item').forEach((el) => el.remove());
-    currentSources.forEach((s, idx) => {
-      const chip = document.createElement('span');
-      chip.className = 'chip-item';
-      chip.innerHTML = `${s} <button type="button" onclick="removeSourceChip(${idx})">&times;</button>`;
-      sourcesBox.insertBefore(chip, sourceInput);
-    });
-  }
-
-  function renderAngleChips() {
-    anglesBox.querySelectorAll('.chip-item').forEach((el) => el.remove());
-    currentAngles.forEach((a, idx) => {
-      const chip = document.createElement('span');
-      chip.className = 'chip-item';
-      chip.innerHTML = `${a} <button type="button" onclick="removeAngleChip(${idx})">&times;</button>`;
-      anglesBox.insertBefore(chip, angleInput);
-    });
-  }
-
-  window.removeSourceChip = (idx) => { currentSources.splice(idx, 1); renderSourceChips(); };
-  window.removeAngleChip = (idx) => { currentAngles.splice(idx, 1); renderAngleChips(); };
-
-  function addSourcesFromText(text) {
-    if (!text) return;
-    const tokens = text.split(/[\n,;]+/).map((t) => t.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_')).filter(Boolean);
-    tokens.forEach((val) => {
-      if (val && !currentSources.includes(val)) currentSources.push(val);
-    });
-    renderSourceChips();
-  }
-
-  function addAnglesFromText(text) {
-    if (!text) return;
-    const tokens = text.split(/[\n,;]+/).map((t) => t.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
-    tokens.forEach((val) => {
-      if (val && !currentAngles.includes(val)) currentAngles.push(val);
-    });
-    renderAngleChips();
-  }
-
-  sourceInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ',') {
-      e.preventDefault();
-      addSourcesFromText(sourceInput.value);
-      sourceInput.value = '';
-    }
-  });
-
-  angleInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ',') {
-      e.preventDefault();
-      addAnglesFromText(angleInput.value);
-      angleInput.value = '';
-    }
-  });
-
-  window.addSourcePreset = (src) => {
-    if (!currentSources.includes(src)) { currentSources.push(src); renderSourceChips(); }
-  };
-
-  window.addAnglePreset = (angle) => {
-    if (!currentAngles.includes(angle)) { currentAngles.push(angle); renderAngleChips(); }
-  };
-
-  window.setCadencePreset = (cron, text) => {
-    document.getElementById('verticalCadence').value = cron;
-    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${text}`;
-  };
-
+  // Vertical Modal Logic
   const verticalModalBackdrop = document.getElementById('verticalModalBackdrop');
+  const verticalForm = document.getElementById('verticalForm');
+  let currentSources = [];
+  let currentAngles = [];
+
+  function renderTags(containerId, tags, removeCallbackName) {
+    const box = document.getElementById(containerId);
+    const input = box.querySelector('input');
+    box.querySelectorAll('.chip-item').forEach((c) => c.remove());
+    tags.forEach((tag, idx) => {
+      const chip = document.createElement('span');
+      chip.className = 'chip-item';
+      chip.innerHTML = `${escapeHtml(tag)} <button type="button" onclick="${removeCallbackName}(${idx})">&times;</button>`;
+      box.insertBefore(chip, input);
+    });
+  }
+
+  window.removeSource = (idx) => { currentSources.splice(idx, 1); renderTags('sourcesBox', currentSources, 'removeSource'); };
+  window.removeAngle = (idx) => { currentAngles.splice(idx, 1); renderTags('anglesBox', currentAngles, 'removeAngle'); };
+  window.addSourcePreset = (src) => { if (!currentSources.includes(src)) { currentSources.push(src); renderTags('sourcesBox', currentSources, 'removeSource'); } };
+  window.addAnglePreset = (angle) => { if (!currentAngles.includes(angle)) { currentAngles.push(angle); renderTags('anglesBox', currentAngles, 'removeAngle'); } };
+
+  function setupTagInput(inputId, containerId, tagsArray, removeCallbackName) {
+    const input = document.getElementById(inputId);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ',') {
+        e.preventDefault();
+        const val = input.value.trim().replace(/^,|,$/g, '');
+        if (val && !tagsArray.includes(val)) {
+          tagsArray.push(val);
+          renderTags(containerId, tagsArray, removeCallbackName);
+        }
+        input.value = '';
+      } else if (e.key === 'Backspace' && input.value === '' && tagsArray.length) {
+        tagsArray.pop();
+        renderTags(containerId, tagsArray, removeCallbackName);
+      }
+    });
+  }
+
+  setupTagInput('sourceInput', 'sourcesBox', currentSources, 'removeSource');
+  setupTagInput('angleInput', 'anglesBox', currentAngles, 'removeAngle');
+
+  function getHumanCadence(cron) {
+    if (!cron) return 'Custom Cadence';
+    if (cron === '0 6 * * *') return 'Daily 06:00 AM EST';
+    if (cron === '0 6 * * 1,4') return 'Mon + Thu 06:00 AM EST';
+    if (cron === '0 6 * * 1') return 'Mon 06:00 AM EST';
+    if (cron === '0 6 * * 2') return 'Tue 06:00 AM EST';
+    if (cron === '0 6 * * 3') return 'Wed 06:00 AM EST';
+    if (cron === '0 6 * * 4') return 'Thu 06:00 AM EST';
+    if (cron === '0 6 * * 5') return 'Fri 06:00 AM EST';
+    return `Cron: ${cron}`;
+  }
+
+  window.setCadencePreset = (cron, label) => {
+    document.getElementById('verticalCadence').value = cron;
+    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${label}`;
+  };
+
+  document.getElementById('verticalCadence').addEventListener('input', (e) => {
+    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(e.target.value)}`;
+  });
+
   function openAddVerticalModal() {
     document.getElementById('modalTitle').textContent = 'Add Editorial Vertical';
     document.getElementById('formIsEdit').value = 'false';
     document.getElementById('verticalId').value = '';
-    document.getElementById('verticalId').disabled = false;
+    document.getElementById('verticalId').readOnly = false;
     document.getElementById('verticalLabel').value = '';
     document.getElementById('verticalCadence').value = '0 6 * * 1';
-    document.getElementById('verticalDataForSeo').checked = true;
-    currentSources = ['arxiv', 'hacker_news', 'x_ai'];
+    document.getElementById('cadenceHumanPreview').textContent = 'Schedule: Monday 06:00 AM EST';
+    currentSources = ['arxiv', 'hacker_news', 'github_trending'];
     currentAngles = [];
-    renderSourceChips();
-    renderAngleChips();
+    renderTags('sourcesBox', currentSources, 'removeSource');
+    renderTags('anglesBox', currentAngles, 'removeAngle');
+    document.getElementById('verticalDataForSeo').checked = true;
     verticalModalBackdrop.classList.add('active');
   }
 
-  window.openEditVerticalModal = (id) => {
+  function openEditVerticalModal(id) {
     const v = allVerticals.find((item) => item.id === id);
     if (!v) return;
-    document.getElementById('modalTitle').textContent = `Edit Vertical: ${v.label}`;
+    document.getElementById('modalTitle').textContent = `Edit Vertical: ${v.label || id}`;
     document.getElementById('formIsEdit').value = 'true';
     document.getElementById('verticalId').value = v.id;
-    document.getElementById('verticalId').disabled = true;
-    document.getElementById('verticalLabel').value = v.label;
-    document.getElementById('verticalCadence').value = v.cadence;
-    document.getElementById('verticalPersona').value = v.target_persona;
-    document.getElementById('verticalDataForSeo').checked = (v.enable_dataforseo !== false);
+    document.getElementById('verticalId').readOnly = true;
+    document.getElementById('verticalLabel').value = v.label || '';
+    document.getElementById('verticalPersona').value = v.target_persona || '';
+    document.getElementById('verticalCadence').value = v.cadence || '0 6 * * 1';
+    document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(v.cadence)}`;
     currentSources = [...(v.sources || [])];
     currentAngles = [...(v.primary_angles || [])];
-    renderSourceChips();
-    renderAngleChips();
+    renderTags('sourcesBox', currentSources, 'removeSource');
+    renderTags('anglesBox', currentAngles, 'removeAngle');
+    document.getElementById('verticalDataForSeo').checked = v.dataforseo_enabled !== false;
     verticalModalBackdrop.classList.add('active');
-  };
+  }
 
   document.getElementById('addVerticalTopBtn').addEventListener('click', openAddVerticalModal);
   document.getElementById('closeModalBtn').addEventListener('click', () => verticalModalBackdrop.classList.remove('active'));
   document.getElementById('cancelModalBtn').addEventListener('click', () => verticalModalBackdrop.classList.remove('active'));
 
-  document.getElementById('verticalForm').addEventListener('submit', async (e) => {
+  verticalForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (angleInput.value.trim()) { addAnglesFromText(angleInput.value); angleInput.value = ''; }
-    if (sourceInput.value.trim()) { addSourcesFromText(sourceInput.value); sourceInput.value = ''; }
-
     const isEdit = document.getElementById('formIsEdit').value === 'true';
-    const id = document.getElementById('verticalId').value.trim();
-    const label = document.getElementById('verticalLabel').value.trim();
-    const cadence = document.getElementById('verticalCadence').value.trim();
-    const persona = document.getElementById('verticalPersona').value;
-    const enable_dataforseo = document.getElementById('verticalDataForSeo').checked;
-
-    const payload = { id, label, cadence, target_persona: persona, sources: currentSources, primary_angles: currentAngles, enable_dataforseo };
+    const vertical = {
+      id: document.getElementById('verticalId').value.trim(),
+      label: document.getElementById('verticalLabel').value.trim(),
+      target_persona: document.getElementById('verticalPersona').value,
+      cadence: document.getElementById('verticalCadence').value.trim(),
+      sources: currentSources,
+      primary_angles: currentAngles,
+      dataforseo_enabled: document.getElementById('verticalDataForSeo').checked,
+    };
 
     try {
-      const url = isEdit ? `/api/verticals/${encodeURIComponent(id)}` : '/api/verticals';
-      const method = isEdit ? 'PUT' : 'POST';
-      const res = await fetch(url, {
-        method,
+      const res = await fetch('/api/verticals/save', {
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ isEdit, vertical }),
       });
-      if (!res.ok) throw new Error('Failed to save vertical');
-      showToast(`Vertical '${label}' saved!`);
-      logTerminal(`Saved vertical '${id}' (${label})`);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to save vertical');
+      showToast(isEdit ? 'Vertical updated!' : 'Vertical added!');
       verticalModalBackdrop.classList.remove('active');
-      await loadVerticals();
+      loadVerticals();
     } catch (err) {
       showToast(err.message, 'error');
     }
   });
 
-  // Delete Modal
-  const deleteModalBackdrop = document.getElementById('deleteModalBackdrop');
-  window.openDeleteModal = (type, id, label) => {
-    deleteActionType = type;
-    deleteTargetId = id;
-    const heading = document.getElementById('deleteModalHeading');
-    const text = document.getElementById('deleteConfirmText');
+  // Delete Confirmation Modal Logic
+  let deleteContext = null;
+  function openDeleteModal(type, id, name) {
+    deleteContext = { type, id };
+    document.getElementById('deleteModalMessage').textContent = `Are you sure you want to delete ${type} "${name || id}"? This action cannot be undone.`;
+    document.getElementById('deleteModalBackdrop').classList.add('active');
+  }
 
-    if (type === 'draft') {
-      heading.textContent = 'Delete Article / Draft?';
-      text.textContent = `Are you sure you want to permanently delete '${label}' (${id})?`;
-    } else if (type === 'persona') {
-      heading.textContent = 'Delete Target Persona?';
-      text.textContent = `Are you sure you want to delete persona '${label}' (${id})?`;
-    } else {
-      heading.textContent = 'Delete Editorial Vertical?';
-      text.textContent = `Are you sure you want to delete vertical '${label}' (${id})?`;
-    }
-    deleteModalBackdrop.classList.add('active');
-  };
-
-  document.getElementById('cancelDeleteBtn').addEventListener('click', () => deleteModalBackdrop.classList.remove('active'));
+  document.getElementById('closeDeleteModalBtn').addEventListener('click', () => document.getElementById('deleteModalBackdrop').classList.remove('active'));
+  document.getElementById('cancelDeleteModalBtn').addEventListener('click', () => document.getElementById('deleteModalBackdrop').classList.remove('active'));
 
   document.getElementById('confirmDeleteBtn').addEventListener('click', async () => {
-    if (!deleteTargetId || !deleteActionType) return;
+    if (!deleteContext) return;
+    const { type, id } = deleteContext;
     try {
-      if (deleteActionType === 'draft') {
-        const res = await fetch(`/api/drafts?file=${encodeURIComponent(deleteTargetId)}`, { method: 'DELETE' });
-        if (!res.ok) throw new Error('Failed to delete draft');
-        showToast(`Article '${deleteTargetId}' deleted`);
-        logTerminal(`Deleted article draft: ${deleteTargetId}`);
-        await loadLibrary();
-        if (allDrafts.length > 0) {
-          selectDraft(allDrafts[0].file);
-        } else {
-          document.getElementById('currentArticleTitle').textContent = 'No articles remaining';
-          markdownEditor.value = '';
-          renderedArticleContainer.innerHTML = '<p style="color:var(--text-muted);">No drafts available.</p>';
+      let endpoint = '';
+      if (type === 'draft') endpoint = `/api/drafts/delete?file=${encodeURIComponent(id)}`;
+      else if (type === 'vertical') endpoint = `/api/verticals/delete?id=${encodeURIComponent(id)}`;
+      else if (type === 'persona') endpoint = `/api/personas/delete?id=${encodeURIComponent(id)}`;
+
+      const res = await fetch(endpoint, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to delete');
+      showToast(`Deleted ${type} successfully!`);
+      document.getElementById('deleteModalBackdrop').classList.remove('active');
+
+      if (type === 'draft') {
+        loadLibrary();
+        if (currentFile === id && allDrafts.length > 1) {
+          selectDraft(allDrafts.find((d) => d.file !== id).file);
         }
-      } else if (deleteActionType === 'persona') {
-        const res = await fetch(`/api/personas/${encodeURIComponent(deleteTargetId)}`, { method: 'DELETE' });
-        if (!res.ok) throw new Error('Failed to delete persona');
-        showToast(`Persona '${deleteTargetId}' deleted`);
-        logTerminal(`Deleted persona: ${deleteTargetId}`);
-        await loadVerticals();
-      } else if (deleteActionType === 'vertical') {
-        const res = await fetch(`/api/verticals/${encodeURIComponent(deleteTargetId)}`, { method: 'DELETE' });
-        if (!res.ok) throw new Error('Failed to delete vertical');
-        showToast(`Vertical '${deleteTargetId}' deleted`);
-        logTerminal(`Deleted vertical: ${deleteTargetId}`);
-        await loadVerticals();
+      } else {
+        loadVerticals();
       }
-      deleteModalBackdrop.classList.remove('active');
-    } catch (err) {
-      showToast(err.message, 'error');
+    } catch (e) {
+      showToast(e.message, 'error');
     }
   });
 
-  const triggerSync = async () => {
-    showToast('Syncing crons with Hermes fleet...');
-    logTerminal('Executing scripts/sync_crons.py ...');
+  // Fleet & Sync Controls
+  async function triggerCronSync() {
+    showToast('Syncing crons to Hermes VPS daemon...');
+    logTerminal('Triggering sync_crons.py ...');
     try {
       const res = await fetch('/api/verticals/sync-crons', { method: 'POST' });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Failed to sync crons');
-      showToast('Hermes Crons synced successfully!');
-      logTerminal('✓ Hermes crons synchronized with VPS.');
+      if (!res.ok) throw new Error(data.error || 'Cron sync failed');
+      showToast('Crons synced to Hermes VPS daemon!');
+      logTerminal('✓ sync_crons.py completed successfully.');
     } catch (e) {
       showToast(e.message, 'error');
       logTerminal(`❌ Cron sync error: ${e.message}`);
     }
-  };
-  document.getElementById('syncCronBtnVerticals').addEventListener('click', triggerSync);
-  document.getElementById('btnSyncCronsExplicit').addEventListener('click', triggerSync);
+  }
+
+  document.getElementById('syncCronBtnVerticals').addEventListener('click', triggerCronSync);
+  document.getElementById('btnSyncCronsExplicit').addEventListener('click', triggerCronSync);
 
   document.getElementById('btnPushSupabase').addEventListener('click', async () => {
     showToast('Pushing configuration to Supabase...');
-    logTerminal('Executing scripts/sync_verticals.py push ...');
+    logTerminal('Uploading local verticals & personas to Supabase tables...');
     try {
       const res = await fetch('/api/verticals/push-supabase', { method: 'POST' });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to push to Supabase');
       showToast('Pushed configuration to Supabase');
-      logTerminal('✓ Verticals and personas pushed to Supabase tables.');
+      logTerminal('✓ Configuration synced to Supabase.');
     } catch (e) {
       showToast(e.message, 'error');
       logTerminal(`❌ Push error: ${e.message}`);
@@ -2996,7 +2811,7 @@ Ready for commands.</div>
 
   document.getElementById('btnPullSupabase').addEventListener('click', async () => {
     showToast('Pulling configuration from Supabase...');
-    logTerminal('Executing scripts/sync_verticals.py pull ...');
+    logTerminal('Fetching remote verticals & personas from Supabase...');
     try {
       const res = await fetch('/api/verticals/pull-supabase', { method: 'POST' });
       const data = await res.json();
@@ -3012,11 +2827,15 @@ Ready for commands.</div>
 
   // SEO Content Machine
   let allGscOpportunities = [];
-  document.querySelectorAll('.nav-pill-btn[data-sub]').forEach((btn) => {
+  document.querySelectorAll('button[data-sub]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.nav-pill-btn[data-sub]').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('button[data-sub]').forEach((b) => {
+        b.classList.remove('active');
+        b.style.background = 'transparent';
+      });
       document.querySelectorAll('.seo-subpane').forEach((p) => (p.style.display = 'none'));
       btn.classList.add('active');
+      btn.style.background = 'var(--bg-subtle)';
       const targetSub = btn.getAttribute('data-sub');
       const subPane = document.getElementById(targetSub);
       if (subPane) subPane.style.display = 'block';
@@ -3027,11 +2846,13 @@ Ready for commands.</div>
     });
   });
 
-  const escapeHtml = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  function escapeHtml(s) {
+    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
 
   async function loadGscOpportunities(vertical = 'all') {
     const tbody = document.getElementById('gscTableBody');
-    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-muted); font-size:12px;">Fetching GSC search opportunities...</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">Fetching GSC search opportunities...</td></tr>';
 
     try {
       const res = await fetch(`/api/seo/gsc-opportunities?vertical=${encodeURIComponent(vertical)}`);
@@ -3047,7 +2868,7 @@ Ready for commands.</div>
 
       renderGscTable(allGscOpportunities);
     } catch (err) {
-      tbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger); padding:1rem; text-align:center;">Error loading GSC: ${err.message}</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger-text); padding:1rem; text-align:center;">Error loading GSC: ${err.message}</td></tr>`;
     }
   }
 
@@ -3059,29 +2880,28 @@ Ready for commands.</div>
     }
 
     tbody.innerHTML = opps.map((o) => {
-      const posClass = o.position <= 10 ? 'top10' : (o.position <= 25 ? 'striking' : 'longtail');
       const posLabel = o.position <= 10 ? `Pos ${o.position}` : (o.position <= 25 ? `Pos ${o.position} (Striking)` : `Pos ${o.position}`);
 
       return `
         <tr>
           <td>
-            <div style="font-weight:700; color:var(--text); cursor:pointer;" onclick="exploreKeyword('${escapeHtml(o.query)}')">
+            <div style="font-weight:600; color:var(--text); cursor:pointer;" onclick="exploreKeyword('${escapeHtml(o.query)}')">
               ${escapeHtml(o.query)}
             </div>
             <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem;">
               ${o.trigger_reason}
             </div>
           </td>
-          <td><span class="clean-pill-badge" style="font-size:10.5px;">${escapeHtml(o.vertical)}</span></td>
+          <td><span class="tag-quiet">${escapeHtml(o.vertical)}</span></td>
           <td><strong>${o.impressions.toLocaleString()}</strong></td>
           <td>${o.clicks}</td>
           <td>${o.ctr}%</td>
-          <td><span class="clean-pill-badge" style="font-size:10.5px; background:#e0f2fe; color:#0369a1;">${posLabel}</span></td>
-          <td><span class="clean-pill-badge" style="font-size:10.5px; background:#ecfdf5; color:#065f46;">+${o.wow_growth_pct}%</span></td>
-          <td><span class="clean-pill-badge" style="font-size:10.5px;">${o.intent}</span></td>
+          <td><span class="tag-quiet tag-blue">${posLabel}</span></td>
+          <td><span class="tag-quiet tag-emerald">+${o.wow_growth_pct}%</span></td>
+          <td><span class="tag-quiet">${o.intent}</span></td>
           <td><strong>${o.opportunity_score}</strong></td>
           <td>
-            <button class="btn btn-outline-pill btn-sm" onclick="runPipelineForQuery('${escapeHtml(o.query)}', '${escapeHtml(o.vertical)}')">
+            <button class="btn btn-secondary btn-sm" onclick="runPipelineForQuery('${escapeHtml(o.query)}', '${escapeHtml(o.vertical)}')">
               ⚡ Draft
             </button>
           </td>
@@ -3134,31 +2954,31 @@ Ready for commands.</div>
 
       const clustersList = document.getElementById('d4sClustersList');
       clustersList.innerHTML = (data.keyword_clusters || []).map((c) => `
-        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.6rem 0.8rem; display:flex; justify-content:space-between; align-items:center;">
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-xs); padding:0.5rem 0.75rem; display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-weight:700; color:var(--text); font-size:12px;">${escapeHtml(c.keyword)}</div>
+            <div style="font-weight:600; color:var(--text); font-size:12px;">${escapeHtml(c.keyword)}</div>
             <div style="font-size:10.5px; color:var(--text-dim);">Intent: ${c.intent} | CPC: $${(c.cpc || 0).toFixed(2)}</div>
           </div>
-          <span class="clean-pill-badge" style="font-size:10.5px;">Vol: ${(c.search_volume || 0).toLocaleString()}</span>
+          <span class="tag-quiet">Vol: ${(c.search_volume || 0).toLocaleString()}</span>
         </div>
       `).join('');
 
       const paaList = document.getElementById('d4sPaaList');
       paaList.innerHTML = (data.paa_questions || []).map((q) => `
-        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.55rem 0.75rem; font-size:12px; color:var(--text);">
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-xs); padding:0.5rem 0.65rem; font-size:12px; color:var(--text);">
           ❓ ${escapeHtml(q)}
         </div>
       `).join('');
 
       const serpList = document.getElementById('d4sSerpList');
       serpList.innerHTML = (data.serp_competitors || []).map((s) => `
-        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0.75rem 0.9rem;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
-            <span class="clean-pill-badge" style="background:#e0f2fe; color:#0369a1;">#${s.rank}</span>
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-xs); padding:0.65rem 0.75rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.2rem;">
+            <span class="tag-quiet tag-blue">#${s.rank}</span>
             <span style="font-size:11px; color:var(--text-dim);">${escapeHtml(s.domain || '')}</span>
           </div>
-          <div style="font-weight:700; color:var(--brand-blue); font-size:12.5px; margin-bottom:0.25rem;">
-            <a href="${s.url}" target="_blank" style="color:inherit;">${escapeHtml(s.title || '')}</a>
+          <div style="font-weight:600; font-size:12.5px; margin-bottom:0.2rem;">
+            <a href="${s.url}" target="_blank" style="color:var(--text); text-decoration:none;">${escapeHtml(s.title || '')}</a>
           </div>
           <div style="font-size:11.5px; color:var(--text-muted);">${escapeHtml(s.snippet || '')}</div>
         </div>
@@ -3212,18 +3032,18 @@ Ready for commands.</div>
       tbody.innerHTML = articles.map((a) => `
         <tr>
           <td>
-            <div style="font-weight:700; color:var(--text);">${escapeHtml(a.title)}</div>
+            <div style="font-weight:600; color:var(--text);">${escapeHtml(a.title)}</div>
             <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem;">${a.slug} (${a.date})</div>
           </td>
-          <td><span class="clean-pill-badge" style="font-size:10.5px;">${a.vertical}</span></td>
-          <td><strong style="color:var(--brand-blue);">${escapeHtml(a.primary_keyword || '')}</strong></td>
+          <td><span class="tag-quiet">${a.vertical}</span></td>
+          <td><strong style="color:var(--text);">${escapeHtml(a.primary_keyword || '')}</strong></td>
           <td>
             <div style="display:flex; flex-wrap:wrap; gap:0.25rem;">
-              ${(a.secondary_keywords || []).map((sk) => `<span class="clean-pill-badge" style="font-size:10.5px;">${escapeHtml(sk)}</span>`).join('')}
+              ${(a.secondary_keywords || []).map((sk) => `<span class="tag-quiet" style="font-size:10.5px;">${escapeHtml(sk)}</span>`).join('')}
             </div>
           </td>
-          <td><a href="${a.url}" target="_blank" style="font-size:11.5px; color:var(--brand-blue);">${escapeHtml(a.slug)}</a></td>
-          <td><span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46;">🟢 Validated</span></td>
+          <td><a href="${a.url}" target="_blank" style="font-size:11.5px; color:var(--text-muted);">${escapeHtml(a.slug)}</a></td>
+          <td><span class="tag-quiet tag-emerald">🟢 Validated</span></td>
         </tr>
       `).join('');
     } catch (e) {
@@ -3246,12 +3066,12 @@ Ready for commands.</div>
             <td><code>${escapeHtml(t.slug)}</code></td>
             <td><strong>${escapeHtml(t.target_query)}</strong></td>
             <td>${t.initial_position}</td>
-            <td><span class="clean-pill-badge" style="background:#ecfdf5; color:#065f46;">#${t.current_position}</span></td>
-            <td><strong style="color:var(--success);">${deltaStr}</strong></td>
+            <td><span class="tag-quiet tag-emerald">#${t.current_position}</span></td>
+            <td><strong style="color:var(--emerald-text);">${deltaStr}</strong></td>
             <td>${(t.impressions_7d || 0).toLocaleString()}</td>
             <td>${t.clicks_7d || 0}</td>
             <td>${((t.ctr || 0) * 100).toFixed(2)}%</td>
-            <td><span class="clean-pill-badge">${escapeHtml(t.status || 'ranking')}</span></td>
+            <td><span class="tag-quiet">${escapeHtml(t.status || 'ranking')}</span></td>
           </tr>
         `;
       }).join('');
@@ -3277,13 +3097,13 @@ Ready for commands.</div>
 
     if (conflict) {
       resBox.innerHTML = `
-        <div style="background:var(--danger-bg); border:1px solid var(--danger-border); color:var(--danger-text); padding:0.65rem 0.85rem; border-radius:var(--radius-sm);">
+        <div style="background:var(--danger-soft); border:1px solid var(--danger-border); color:var(--danger-text); padding:0.5rem 0.75rem; border-radius:var(--radius-xs); font-size:12px;">
           ⚠️ <strong>Cannibalization Detected:</strong> '${kw}' overlaps with existing article <strong>'${conflict.title}'</strong>.
         </div>
       `;
     } else {
       resBox.innerHTML = `
-        <div style="background:var(--success-bg); border:1px solid var(--success-border); color:var(--success-text); padding:0.65rem 0.85rem; border-radius:var(--radius-sm);">
+        <div style="background:var(--emerald-soft); border:1px solid var(--emerald-border); color:var(--emerald-text); padding:0.5rem 0.75rem; border-radius:var(--radius-xs); font-size:12px;">
           ✅ <strong>Clear to Publish:</strong> No direct keyword conflict found across ${articles.length} published articles.
         </div>
       `;
@@ -3295,6 +3115,12 @@ Ready for commands.</div>
   });
   document.getElementById('btnRefreshGsc').addEventListener('click', () => {
     loadGscOpportunities(document.getElementById('filterGscVertical').value);
+  });
+  document.getElementById('d4sKeywordInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const kw = e.target.value.trim();
+      if (kw) enrichDataForSeo(kw);
+    }
   });
   document.getElementById('btnD4sEnrich').addEventListener('click', () => {
     const kw = document.getElementById('d4sKeywordInput').value.trim();
@@ -3310,6 +3136,14 @@ Ready for commands.</div>
     const text = document.getElementById('schemaViewerPre').textContent.trim();
     navigator.clipboard.writeText(text);
     showToast('Schema JSON copied to clipboard!');
+  });
+
+  // Global Keyboard Shortcuts
+  window.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      document.getElementById('globalSearchInput').focus();
+    }
   });
 
   // Boot
