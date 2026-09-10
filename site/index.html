@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PressFlow — Editorial Factory Studio & Verticals Engine</title>
+  <title>PressFlow — Editorial Factory Studio &amp; Verticals Engine</title>
   <meta name="description" content="Unified Editorial Factory Suite: 30-day radar verticals management, target personas maintenance, article drafting, rendered previews, and multi-channel distribution suite.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
       
       --purple: #7c3aed;
       --purple-light: #f5f3ff;
-      --purple-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      --purple-border: #ddd6fe;
       
       --success: #059669;
       --success-bg: #ecfdf5;
@@ -95,6 +95,7 @@
       --accent-glow: rgba(56, 189, 248, 0.25);
       --purple: #a855f7;
       --purple-light: rgba(168, 85, 247, 0.15);
+      --purple-border: rgba(168, 85, 247, 0.3);
       --success: #10b981;
       --success-bg: rgba(16, 185, 129, 0.15);
       --success-border: rgba(16, 185, 129, 0.3);
@@ -124,7 +125,7 @@
       color: var(--text);
       min-height: 100vh;
       line-height: 1.5;
-      font-size: 14px;
+      font-size: 13.5px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       background-image: 
@@ -280,7 +281,7 @@
     .btn-purple {
       background: var(--purple-light);
       color: var(--purple);
-      border-color: #ddd6fe;
+      border-color: var(--purple-border);
       box-shadow: var(--shadow-xs);
     }
 
@@ -826,7 +827,7 @@
       box-shadow: 0 0 0 3px var(--accent-glow);
     }
 
-    /* Multi-Channel Distribution Suite Preview */
+    /* Multi-Channel Distribution Suite Preview (4-Card Matrix) */
     .suite-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1032,6 +1033,53 @@
       color: #cbd5e1;
     }
 
+    /* Fleet Control Box */
+    .fleet-status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .fleet-bot-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .fleet-bot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .fleet-bot-name {
+      font-weight: 700;
+      color: var(--text);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .terminal-output-box {
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: #38bdf8;
+      max-height: 260px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+
     /* Modals & Forms */
     .modal-backdrop {
       position: fixed;
@@ -1175,6 +1223,10 @@
     }
 
     /* Library Modal */
+    .library-search-box {
+      margin-bottom: 1rem;
+    }
+
     .library-item {
       display: flex;
       align-items: center;
@@ -1201,6 +1253,7 @@
       font-size: 11px;
       color: var(--text-muted);
       display: flex;
+      flex-wrap: wrap;
       gap: 0.6rem;
     }
 
@@ -1856,7 +1909,7 @@
     </div>
   </div>
 
-  <!-- TAB 3: Multi-Channel Suite -->
+  <!-- TAB 3: Multi-Channel Suite (4-Channel Matrix) -->
   <div class="tab-pane" id="tab-suite">
     <div class="hero-article-card">
       <div class="brand-subtitle">Multi-Channel Distribution Suite</div>
@@ -1866,29 +1919,29 @@
       </p>
 
       <div class="suite-container">
-        <!-- LinkedIn Card -->
+        <!-- 1. LinkedIn Card -->
         <div class="channel-card">
           <div>
             <div class="channel-header">
-              <div class="channel-title">💼 LinkedIn Post Format</div>
+              <div class="channel-title">💼 LinkedIn Thought Leadership</div>
               <span class="clean-pill" id="linkedInCharCount">0 chars</span>
             </div>
             <div class="channel-box" id="linkedInPreviewBox">
               Click 'Generate Suite' or load an article to preview LinkedIn copy...
             </div>
           </div>
-          <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+          <div style="display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap;">
             <button class="btn btn-secondary btn-sm" id="btnCopyLinkedIn">📋 Copy Post</button>
             <button class="btn btn-primary btn-sm" id="btnPushLinkedInQueue">🚀 Queue to Supabase</button>
           </div>
         </div>
 
-        <!-- Twitter / X Card -->
+        <!-- 2. Twitter / X Card -->
         <div class="channel-card">
           <div>
             <div class="channel-header">
               <div class="channel-title">📱 X / Twitter Thread Series</div>
-              <span class="clean-pill">3-4 Tweets</span>
+              <span class="clean-pill" id="twitterPillCount">3-4 Tweets</span>
             </div>
             <div class="channel-box" id="twitterPreviewBox">
               Click 'Generate Suite' or load an article to preview thread series...
@@ -1896,6 +1949,38 @@
           </div>
           <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
             <button class="btn btn-secondary btn-sm" id="btnCopyTwitter">📋 Copy Thread</button>
+          </div>
+        </div>
+
+        <!-- 3. Substack / Newsletter Card -->
+        <div class="channel-card">
+          <div>
+            <div class="channel-header">
+              <div class="channel-title">📰 Substack / Newsletter Executive Brief</div>
+              <span class="clean-pill">Executive Digest</span>
+            </div>
+            <div class="channel-box" id="newsletterPreviewBox">
+              Executive takeaways, TL;DR bullet matrix, and curated links formatted for Substack/Beehiiv newsletters...
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+            <button class="btn btn-secondary btn-sm" id="btnCopyNewsletter">📋 Copy Newsletter</button>
+          </div>
+        </div>
+
+        <!-- 4. Hacker News / Reddit Technical Pitch -->
+        <div class="channel-card">
+          <div>
+            <div class="channel-header">
+              <div class="channel-title">💬 Hacker News &amp; Reddit Discussion Lead</div>
+              <span class="clean-pill">Engineering Community</span>
+            </div>
+            <div class="channel-box" id="communityPreviewBox">
+              Pragmatic, zero-marketing discussion starter and technical breakdown for r/MachineLearning, r/LocalLLaMA &amp; Hacker News...
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+            <button class="btn btn-secondary btn-sm" id="btnCopyCommunity">📋 Copy Pitch</button>
           </div>
         </div>
       </div>
@@ -1931,47 +2016,106 @@
 
   <!-- TAB 6: Fleet & Cron Controls -->
   <div class="tab-pane" id="tab-fleet">
-    <div class="card" style="max-width: 760px; margin: 0 auto;">
-      <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text);">Hermes Multi-Agent Fleet &amp; Supabase Sync</h2>
-      <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 1.25rem;">
-        Synchronize schedules with the VPS Hermes bot fleet and mirror configuration with Supabase cloud database.
+    <div class="hero-article-card" style="margin-bottom: 1.5rem;">
+      <div class="brand-subtitle">Operations &amp; Multi-Agent Fleet Command</div>
+      <h2 class="article-title-heading" style="font-size: 1.35rem;">Hermes Fleet &amp; Cron Orchestration</h2>
+      <p style="font-size: 12.5px; color: var(--text-muted);">
+        Autonomous 30-day radar sweeps, frontier Claude-Sonnet-5 humanizer gates, and Supabase cloud database synchronization.
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-        <div style="padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
+      <!-- Bot Fleet Overview -->
+      <div class="fleet-status-grid" style="margin-top: 1rem;">
+        <div class="fleet-bot-card">
+          <div class="fleet-bot-header">
+            <span class="fleet-bot-name">🛰️ Scout Radar Fleet</span>
+            <span class="clean-pill" style="font-size: 10px; background: #ecfdf5; color: #065f46; border-color: #a7f3d0;">ACTIVE</span>
+          </div>
+          <div style="font-size: 11px; color: var(--text-muted);">Runtime: DeepSeek-V4 · 30-Day Freshness Filter</div>
+          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Cadence: Auto-Dispatched</div>
+        </div>
+
+        <div class="fleet-bot-card">
+          <div class="fleet-bot-header">
+            <span class="fleet-bot-name">🧠 Growth OS Analyst</span>
+            <span class="clean-pill" style="font-size: 10px; background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;">ACTIVE</span>
+          </div>
+          <div style="font-size: 11px; color: var(--text-muted);">Founder Voice + Customer Truth Ingestion</div>
+          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Memory: Dual Moat Files</div>
+        </div>
+
+        <div class="fleet-bot-card">
+          <div class="fleet-bot-header">
+            <span class="fleet-bot-name">✍️ Claude Stylist Gate</span>
+            <span class="clean-pill" style="font-size: 10px; background: #e0f2fe; color: #0369a1; border-color: #bae6fd;">FRONTIER</span>
+          </div>
+          <div style="font-size: 11px; color: var(--text-muted);">Frontier Model: Claude 3.7 / Sonnet 5 (Kie.ai)</div>
+          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Gate: 0 AI Tells Required</div>
+        </div>
+
+        <div class="fleet-bot-card">
+          <div class="fleet-bot-header">
+            <span class="fleet-bot-name">🚀 Publisher &amp; Ghost Gate</span>
+            <span class="clean-pill" style="font-size: 10px; background: #fef3c7; color: #92400e; border-color: #fde68a;">APPROVAL GATED</span>
+          </div>
+          <div style="font-size: 11px; color: var(--text-muted);">Channels: Ghost + LinkedIn + Static Site</div>
+          <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-secondary); margin-top: 0.3rem;">Gate: @Simon approve</div>
+        </div>
+      </div>
+
+      <!-- Quick Operations Trigger Cards -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+        <div style="padding: 1.15rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
           <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">1. Hermes Cron Schedule Sync</div>
-          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.75rem;">
+          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.85rem;">
             Pushes all active verticals and their cron cadences directly to <code>hermes cron</code> jobs on the VPS.
           </div>
-          <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">Run scripts/sync_crons.py</button>
+          <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">⚡ Run scripts/sync_crons.py</button>
         </div>
 
-        <div style="padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">2. Supabase Push (Local JSON &rarr; Supabase)</div>
-          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.75rem;">
-            Uploads all verticals and personas into the Supabase tables.
+        <div style="padding: 1.15rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">2. Supabase Push (Local &rarr; Cloud)</div>
+          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.85rem;">
+            Uploads all 8 verticals and personas into the Supabase remote tables.
           </div>
-          <button class="btn btn-secondary btn-sm" id="btnPushSupabase">Push to Supabase</button>
+          <button class="btn btn-secondary btn-sm" id="btnPushSupabase">☁️ Push to Supabase</button>
         </div>
 
-        <div style="padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
-          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">3. Supabase Pull (Supabase &rarr; Local JSON)</div>
-          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.75rem;">
+        <div style="padding: 1.15rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-md);">
+          <div style="font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">3. Supabase Pull (Cloud &rarr; Local)</div>
+          <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 0.85rem;">
             Fetches all remote verticals from Supabase and overwrites local <code>context/verticals.json</code>.
           </div>
-          <button class="btn btn-secondary btn-sm" id="btnPullSupabase">Pull from Supabase</button>
+          <button class="btn btn-secondary btn-sm" id="btnPullSupabase">📥 Pull from Supabase</button>
         </div>
+      </div>
+
+      <!-- Live Operations Console Box -->
+      <div style="margin-top: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim);">Live Fleet Operations Log</span>
+          <button class="copy-pill-btn" onclick="document.getElementById('terminalOutputBox').textContent='[PressFlow Fleet Console Ready]\n'">Clear Log</button>
+        </div>
+        <div class="terminal-output-box" id="terminalOutputBox">[PressFlow Fleet Initialized]
+- 8 Verticals Active
+- 8 Personas Synced
+- GSC Radar: Active (28-day telemetry)
+- DataForSEO Enrichment: Configured
+- Frontier Quality Gate: Pinned to claude-sonnet-5 via Kie.ai
+Ready for commands.</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Library Modal -->
+<!-- Library Modal (With Search Filter & Clean Cards) -->
 <div class="modal-backdrop" id="libraryModalBackdrop">
   <div class="modal">
     <div class="modal-header">
       <h2>Editorial Drafts &amp; Published Library</h2>
       <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
+    </div>
+    <div class="library-search-box">
+      <input type="text" id="librarySearchInput" class="form-input" placeholder="🔍 Search drafts by title, vertical, or keyword...">
     </div>
     <div id="libraryListContainer"></div>
   </div>
@@ -1990,7 +2134,7 @@
 
       <div class="form-group">
         <label class="form-label" for="verticalId">Vertical ID (slug)</label>
-        <input type="text" class="form-input" id="verticalId" placeholder="e.g. agentic_ai or quantum_hardware" required>
+        <input type="text" class="form-input" id="verticalId" placeholder="e.g. agentic_ai or supply_chain" required>
         <div class="form-help">Unique identifier used by radar bots and cron commands.</div>
       </div>
 
@@ -2043,7 +2187,7 @@
           <span class="preset-chip" onclick="addAnglePreset('memory tiering topology L1-L4')">+ memory tiering L1-L4</span>
           <span class="preset-chip" onclick="addAnglePreset('compound reliability math 0.95^10')">+ compound reliability 0.95^10</span>
           <span class="preset-chip" onclick="addAnglePreset('deterministic vs probabilistic QA')">+ deterministic vs probabilistic QA</span>
-          <span class="preset-chip" onclick="addAnglePreset('ERP WMS decoupling 3-layer stack')">+ ERP decoupling stack</span>
+          <span class="preset-chip" onclick="addAnglePreset('enterprise ERP WMS TMS decoupling')">+ ERP decoupling stack</span>
           <span class="preset-chip" onclick="addAnglePreset('multi-echelon inventory optimization MEIO')">+ MEIO working capital</span>
         </div>
       </div>
@@ -2167,6 +2311,15 @@
   initTheme();
 
   // Helpers
+  function logTerminal(msg) {
+    const box = document.getElementById('terminalOutputBox');
+    if (box) {
+      const ts = new Date().toLocaleTimeString();
+      box.textContent += `\n[${ts}] ${msg}`;
+      box.scrollTop = box.scrollHeight;
+    }
+  }
+
   function getHumanCadence(cadenceStr) {
     const parts = (cadenceStr || '').trim().split(/\s+/);
     if (parts.length >= 5) {
@@ -2242,7 +2395,6 @@
     const intentValEl = document.getElementById('kwIntentVal');
     const personaValEl = document.getElementById('kwPersonaVal');
     const secondaryChipsEl = document.getElementById('kwSecondaryChips');
-    const liveBadgeEl = document.getElementById('kwLiveStatusBadge');
 
     const kwDisplay = primaryKw || 'GPU memory bandwidth';
     if (primaryTextEl) primaryTextEl.textContent = kwDisplay;
@@ -2283,14 +2435,10 @@
     if (!md) return '';
     const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-    // Strip YAML frontmatter
     let content = md.replace(/^---[\s\S]*?---\s*\n?/, '');
-
-    // Strip internal machine blocks from main article reading view
     content = content.replace(new RegExp('<' + '!--\\s*schema\\s*--' + '>[\\s\\S]*?```(?:json)?[\\s\\S]*?```', 'gi'), '');
     content = content.replace(new RegExp('<' + '!--\\s*internal-links\\s*--' + '>[\\s\\S]*?(?=(?:<' + '!--|##|$))', 'gi'), '');
 
-    // Extract linkedin post if present
     let linkedinHtml = '';
     const linkedinMatch = content.match(new RegExp('<' + '!--\\s*linkedin\\s*--' + '>([\\s\\S]*?)(?=(?:##\\s*Gate report|<' + '!--|$))', 'i'));
     if (linkedinMatch) {
@@ -2308,7 +2456,6 @@
       content = content.slice(0, linkedinMatch.index);
     }
 
-    // Extract gate report if present
     let gateReportHtml = '';
     const gateMatch = content.match(/##\s*Gate report([\s\S]*?)$/i);
     if (gateMatch) {
@@ -2564,28 +2711,36 @@
     updateKeywordVisualizer(markdownEditor.value);
   };
 
-  // Load Library & Articles
-  async function loadLibrary() {
+  // Load Library & Articles with Filter Support
+  async function loadLibrary(filterQuery = '') {
     try {
       const res = await fetch('/api/drafts');
       allDrafts = await res.json();
       document.getElementById('libraryCount').textContent = allDrafts.length;
 
       const container = document.getElementById('libraryListContainer');
-      if (!allDrafts.length) {
-        container.innerHTML = '<div style="text-align:center; padding:2rem; color:var(--text-muted);">No drafts found.</div>';
+      const filtered = filterQuery
+        ? allDrafts.filter(d => 
+            (d.title || '').toLowerCase().includes(filterQuery.toLowerCase()) ||
+            (d.vertical || '').toLowerCase().includes(filterQuery.toLowerCase()) ||
+            (d.primary_keyword || '').toLowerCase().includes(filterQuery.toLowerCase())
+          )
+        : allDrafts;
+
+      if (!filtered.length) {
+        container.innerHTML = '<div style="text-align:center; padding:2rem; color:var(--text-muted); font-size:12px;">No matching drafts found.</div>';
         return;
       }
 
       const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      container.innerHTML = allDrafts.map((d) => `
+      container.innerHTML = filtered.map((d) => `
         <div class="library-item">
           <div style="flex:1; cursor:pointer;" onclick="selectDraft('${d.file}')">
             <div class="library-item-title">${esc(d.title)}</div>
             <div class="library-item-meta">
-              <span>📁 ${d.type}</span>
-              <span>🏷️ ${d.vertical}</span>
-              <span>⏱️ ${d.wordCount} words (~${d.readTime} min)</span>
+              <span class="clean-pill" style="font-size:10px;">📁 ${d.type}</span>
+              <span class="clean-pill" style="font-size:10px;">🏷️ ${d.vertical}</span>
+              <span style="font-size:11px;">⏱️ ${d.wordCount} words (~${d.readTime} min)</span>
             </div>
           </div>
           <div style="display:flex; gap:0.4rem; align-items:center;">
@@ -2598,6 +2753,10 @@
       console.warn(e);
     }
   }
+
+  document.getElementById('librarySearchInput').addEventListener('input', (e) => {
+    loadLibrary(e.target.value.trim());
+  });
 
   window.selectDraft = async function(fileName) {
     try {
@@ -2617,6 +2776,9 @@
       updateKeywordVisualizer(currentMarkdown);
       syncSerpAndSchemaPreview(currentMarkdown);
 
+      // Auto-fill multi-channel previews based on loaded draft
+      deriveMultiChannelPreviews(currentMarkdown, data.title, `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`);
+
       document.getElementById('libraryModalBackdrop').classList.remove('active');
       document.getElementById('tabWorkspaceBtn').click();
       showToast(`Loaded '${data.title.slice(0, 35)}...'`);
@@ -2625,7 +2787,48 @@
     }
   };
 
+  function deriveMultiChannelPreviews(md, title, articleUrl) {
+    // 1. LinkedIn Post
+    let linkedin = '';
+    if (md.includes('<!-- linkedin -->')) {
+      linkedin = md.split('<!-- linkedin -->')[1].split('##')[0].split('<!--')[0].trim();
+    } else {
+      const leadMatch = md.match(/<!-- lead -->([\s\S]*?)(?:<!--|$)/);
+      const tacticalMatch = md.match(/<!-- tactical-insight -->([\s\S]*?)(?:<!--|$)/);
+      const lead = leadMatch ? leadMatch[1].trim() : '';
+      const tactical = tacticalMatch ? tacticalMatch[1].trim() : '';
+      linkedin = `${lead}\n\nKey takeaways:\n${tactical}\n\nFull breakdown: ${articleUrl}`;
+    }
+    if (articleUrl && !linkedin.includes(articleUrl)) {
+      linkedin += `\n\n📖 Read the full illustrated breakdown: ${articleUrl}`;
+    }
+    document.getElementById('linkedInPreviewBox').textContent = linkedin;
+    document.getElementById('linkedInCharCount').textContent = `${linkedin.length} chars`;
+
+    // 2. Twitter / X Thread
+    const paras = md
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/^#+.*$/gm, '')
+      .split(/\n\s*\n/)
+      .map((p) => p.trim())
+      .filter((p) => p.length > 60);
+    const tweets = paras.slice(0, 4).map((p, idx) => `${idx + 1}/ ${p.slice(0, 270)}...`);
+    document.getElementById('twitterPreviewBox').textContent = tweets.join('\n\n──────────────\n\n') || `${title}\n\nThread: 1/ Key architecture insights...\n2/ Field benchmarks & costs...\n3/ Takeaways for leaders.`;
+
+    // 3. Substack Newsletter
+    const leadClean = (md.match(/<!-- lead -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
+    const tacticalClean = (md.match(/<!-- tactical-insight -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
+    const newsletter = `**Subject:** ${title}\n\n**Executive Digest:**\n${leadClean.trim() || 'A practitioner breakdown of the latest systems & architectural trade-offs.'}\n\n**Key Engineering & Financial Realities:**\n${tacticalClean.trim() || '- Unvarnished benchmark results from active production deployments.'}\n\n👉 Full illustrated report: ${articleUrl}`;
+    document.getElementById('newsletterPreviewBox').textContent = newsletter;
+
+    // 4. Community / HN Pitch
+    const takeawayClean = (md.match(/<!-- nuanced-takeaway -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
+    const community = `Title: Show HN / Discuss: ${title}\n\nWe analyzed real production data and telemetry on this architecture. The main takeaway:\n\n${takeawayClean.trim() || 'Most teams over-index on theory while bottlenecking on IO and state serialization.'}\n\nFull data, diagrams & benchmarks: ${articleUrl}\n\nWhat are folks seeing in production? Curious how others handle this.`;
+    document.getElementById('communityPreviewBox').textContent = community;
+  }
+
   document.getElementById('btnOpenLibrary').addEventListener('click', () => {
+    document.getElementById('librarySearchInput').value = '';
     loadLibrary();
     document.getElementById('libraryModalBackdrop').classList.add('active');
   });
@@ -2645,6 +2848,7 @@
       if (res.ok) {
         showToast('Draft saved successfully!');
         syncSerpAndSchemaPreview(markdown);
+        deriveMultiChannelPreviews(markdown, document.getElementById('currentArticleTitle').textContent, document.getElementById('currentArticleLink').href);
         loadLibrary();
       } else {
         showToast('Failed to save draft', 'error');
@@ -2673,9 +2877,14 @@
       });
       const data = await res.json();
 
-      document.getElementById('linkedInPreviewBox').textContent = data.linkedin_post;
-      document.getElementById('linkedInCharCount').textContent = `${data.linkedin_post.length} chars`;
-      document.getElementById('twitterPreviewBox').textContent = data.twitter_thread.join('\n\n---\n\n');
+      deriveMultiChannelPreviews(md, document.getElementById('currentArticleTitle').textContent, articleUrl);
+      if (data.linkedin_post) {
+        document.getElementById('linkedInPreviewBox').textContent = data.linkedin_post;
+        document.getElementById('linkedInCharCount').textContent = `${data.linkedin_post.length} chars`;
+      }
+      if (data.twitter_thread) {
+        document.getElementById('twitterPreviewBox').textContent = data.twitter_thread.join('\n\n──────────────\n\n');
+      }
 
       document.getElementById('tabSuiteBtn').click();
       showToast('Multi-channel distribution suite generated!');
@@ -2694,6 +2903,14 @@
     navigator.clipboard.writeText(document.getElementById('twitterPreviewBox').textContent).then(() => showToast('Twitter thread copied!'));
   });
 
+  document.getElementById('btnCopyNewsletter').addEventListener('click', () => {
+    navigator.clipboard.writeText(document.getElementById('newsletterPreviewBox').textContent).then(() => showToast('Newsletter brief copied!'));
+  });
+
+  document.getElementById('btnCopyCommunity').addEventListener('click', () => {
+    navigator.clipboard.writeText(document.getElementById('communityPreviewBox').textContent).then(() => showToast('HN / Reddit pitch copied!'));
+  });
+
   document.getElementById('btnPushLinkedInQueue').addEventListener('click', async () => {
     try {
       const res = await fetch('/api/linkedin-sync', {
@@ -2708,6 +2925,7 @@
       });
       const data = await res.json();
       showToast(data.message || 'Queued to Supabase LinkedIn queue!');
+      logTerminal(`Queued LinkedIn post for slug: ${currentFile}`);
     } catch (e) {
       showToast(e.message, 'error');
     }
@@ -2750,7 +2968,7 @@
   function renderVerticals(list) {
     const grid = document.getElementById('verticalsGrid');
     if (!list.length) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted);">No verticals found.</div>';
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted); font-size:12px;">No verticals found.</div>';
       return;
     }
     grid.innerHTML = list.map((v) => {
@@ -2806,7 +3024,7 @@
     const grid = document.getElementById('personasGrid');
     const entries = Object.entries(personas);
     if (!entries.length) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted);">No personas configured.</div>';
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted); font-size:12px;">No personas configured.</div>';
       return;
     }
     grid.innerHTML = entries.map(([id, p]) => `
@@ -2897,6 +3115,7 @@
       });
       if (!res.ok) throw new Error('Failed to save persona');
       showToast(`Persona '${label}' saved!`);
+      logTerminal(`Saved persona '${id}' (${label})`);
       personaModalBackdrop.classList.remove('active');
       await loadVerticals();
     } catch (err) {
@@ -3042,6 +3261,7 @@
       });
       if (!res.ok) throw new Error('Failed to save vertical');
       showToast(`Vertical '${label}' saved!`);
+      logTerminal(`Saved vertical '${id}' (${label})`);
       verticalModalBackdrop.classList.remove('active');
       await loadVerticals();
     } catch (err) {
@@ -3079,6 +3299,7 @@
         const res = await fetch(`/api/drafts?file=${encodeURIComponent(deleteTargetId)}`, { method: 'DELETE' });
         if (!res.ok) throw new Error('Failed to delete draft');
         showToast(`Article '${deleteTargetId}' deleted`);
+        logTerminal(`Deleted article draft: ${deleteTargetId}`);
         await loadLibrary();
         if (allDrafts.length > 0) {
           selectDraft(allDrafts[0].file);
@@ -3091,11 +3312,13 @@
         const res = await fetch(`/api/personas/${encodeURIComponent(deleteTargetId)}`, { method: 'DELETE' });
         if (!res.ok) throw new Error('Failed to delete persona');
         showToast(`Persona '${deleteTargetId}' deleted`);
+        logTerminal(`Deleted persona: ${deleteTargetId}`);
         await loadVerticals();
       } else if (deleteActionType === 'vertical') {
         const res = await fetch(`/api/verticals/${encodeURIComponent(deleteTargetId)}`, { method: 'DELETE' });
         if (!res.ok) throw new Error('Failed to delete vertical');
         showToast(`Vertical '${deleteTargetId}' deleted`);
+        logTerminal(`Deleted vertical: ${deleteTargetId}`);
         await loadVerticals();
       }
       deleteModalBackdrop.classList.remove('active');
@@ -3106,25 +3329,50 @@
 
   const triggerSync = async () => {
     showToast('Syncing crons with Hermes fleet...');
+    logTerminal('Executing scripts/sync_crons.py ...');
     try {
-      await fetch('/api/verticals/sync-crons', { method: 'POST' });
+      const res = await fetch('/api/verticals/sync-crons', { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to sync crons');
       showToast('Hermes Crons synced successfully!');
+      logTerminal('✓ Hermes crons synchronized with VPS.');
     } catch (e) {
       showToast(e.message, 'error');
+      logTerminal(`❌ Cron sync error: ${e.message}`);
     }
   };
   document.getElementById('syncCronBtnVerticals').addEventListener('click', triggerSync);
   document.getElementById('btnSyncCronsExplicit').addEventListener('click', triggerSync);
 
   document.getElementById('btnPushSupabase').addEventListener('click', async () => {
-    await fetch('/api/verticals/push-supabase', { method: 'POST' });
-    showToast('Pushed configuration to Supabase');
+    showToast('Pushing configuration to Supabase...');
+    logTerminal('Executing scripts/sync_verticals.py push ...');
+    try {
+      const res = await fetch('/api/verticals/push-supabase', { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to push to Supabase');
+      showToast('Pushed configuration to Supabase');
+      logTerminal('✓ Verticals and personas pushed to Supabase tables.');
+    } catch (e) {
+      showToast(e.message, 'error');
+      logTerminal(`❌ Push error: ${e.message}`);
+    }
   });
 
   document.getElementById('btnPullSupabase').addEventListener('click', async () => {
-    await fetch('/api/verticals/pull-supabase', { method: 'POST' });
-    showToast('Pulled configuration from Supabase');
-    loadVerticals();
+    showToast('Pulling configuration from Supabase...');
+    logTerminal('Executing scripts/sync_verticals.py pull ...');
+    try {
+      const res = await fetch('/api/verticals/pull-supabase', { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to pull from Supabase');
+      showToast('Pulled configuration from Supabase');
+      logTerminal('✓ Verticals and personas pulled from Supabase.');
+      loadVerticals();
+    } catch (e) {
+      showToast(e.message, 'error');
+      logTerminal(`❌ Pull error: ${e.message}`);
+    }
   });
 
   // Search Filters
@@ -3175,7 +3423,7 @@
 
   async function loadGscOpportunities(vertical = 'all') {
     const tbody = document.getElementById('gscTableBody');
-    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-muted);">Fetching GSC search opportunities...</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-muted); font-size:12px;">Fetching GSC search opportunities...</td></tr>';
 
     try {
       const res = await fetch(`/api/seo/gsc-opportunities?vertical=${encodeURIComponent(vertical)}`);
@@ -3198,7 +3446,7 @@
   function renderGscTable(opps) {
     const tbody = document.getElementById('gscTableBody');
     if (!opps || opps.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim);">No queries match criteria.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">No queries match criteria.</td></tr>';
       return;
     }
 
@@ -3242,6 +3490,7 @@
 
   window.runPipelineForQuery = async function(query, vertical) {
     showToast(`Launching SEO Machine for '${query}'...`);
+    logTerminal(`Triggered SEO Machine Pipeline: query="${query}", vertical="${vertical}"`);
     try {
       const res = await fetch('/api/seo/run-pipeline', {
         method: 'POST',
@@ -3251,14 +3500,17 @@
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to run pipeline');
       showToast(`SEO article generated and staged!`);
+      logTerminal(`✓ Article generated: ${query}`);
       await loadLibrary();
     } catch (e) {
       showToast(e.message, 'error');
+      logTerminal(`❌ SEO Pipeline error: ${e.message}`);
     }
   };
 
   async function enrichDataForSeo(keyword) {
     showToast(`Querying DataForSEO intelligence for '${keyword}'...`);
+    logTerminal(`DataForSEO query: "${keyword}"`);
     try {
       const res = await fetch('/api/seo/dataforseo-enrich', {
         method: 'POST',
@@ -3305,8 +3557,10 @@
       `).join('');
 
       showToast(`DataForSEO intelligence loaded for '${keyword}'!`);
+      logTerminal(`✓ DataForSEO loaded: ${keyword} (Vol: ${data.search_volume || 'N/A'}, KD: ${data.keyword_difficulty || 'N/A'})`);
     } catch (err) {
       showToast(err.message, 'error');
+      logTerminal(`❌ DataForSEO error: ${err.message}`);
     }
   }
 
@@ -3334,6 +3588,7 @@
       });
       if (!res.ok) throw new Error('Failed to save knowledge');
       showToast('Growth OS knowledge saved to disk!');
+      logTerminal('✓ Growth OS taste moat saved (founder-voice.md & customer-truth.md)');
     } catch (e) {
       showToast(e.message, 'error');
     }
