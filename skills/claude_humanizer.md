@@ -1,13 +1,57 @@
-# SKILL: Frontier Humanizer (Loop 3 — Final Rewrite)
+# SKILL: Frontier Humanizer & Smart Brevity Stylist (Loop 3 — Final Rewrite)
 
 ## 1. Objective
-The last pass before approval. Strip every AI-tell, inject cadence and a genuine human voice, and
-iterate until every section passes its own gate. **Frontier model only.** The frontier is whatever
-the `stylist` profile is configured to (see §6). Current live config: `gemini-3.1-pro-preview`
-(`provider: gemini`). Restore Claude/kie.ai only when a valid key exists — never downgrade to a
-non-frontier model.
+The last pass before approval. Apply **Smart Brevity** principles to strip every AI-tell, craft punchy
+and scannable copy, inject cadence and a genuine human voice, and iterate until every section passes
+its own gate. **Frontier model only.** The frontier is whatever the `stylist` profile is configured
+to (see §7). Current live config: `gemini-3.1-pro-preview` (`provider: gemini`). Restore Claude/kie.ai
+only when a valid key exists — never downgrade to a non-frontier model.
 
-## 2. Negative constraints (apply verbatim, no exceptions)
+## 2. Required Inputs
+To apply Smart Brevity effectively, the styling pass consumes:
+1. **Target Audience (`persona`):** Defined in frontmatter / `context/personas.json` (e.g. `infra_engineer`, `eng_leader`).
+2. **The One Big Thing (`one_big_thing`):** The single most important takeaway, fact, or decision the reader must remember.
+3. **Raw Content / Source Material:** The unedited structural draft and verified brief with inline citations `[n]`.
+
+## 3. Smart Brevity Rules & Architecture
+
+### 3.1 The Tease (Headlines & Section Headers)
+- **H2 / H3 Section Headers:** Target **6 words or fewer**. Punchy, active, descriptive.
+- **Article Title:** The draft starts with a short title. The Stylist refines or polishes the title based on SEO keyword resonance and clarity without clickbait fluff, irony, or cryptic jargon.
+- **No clickbait or vague abstractions:** Headers tell the reader exactly what is in that section.
+
+### 3.2 The Lede (First Sentence)
+- Deliver the primary news or core takeaway immediately in the **very first sentence**.
+- Zero throat-clearing, preambles, rhetorical questions, or introductory fluff.
+- Tell the reader something essential, concrete, and load-bearing upfront.
+
+### 3.3 Context Signposts (Axioms)
+Introduce supporting context using bolded, standardized guide words followed immediately by a single direct, declarative sentence:
+- **Why it matters:** — Explain the systemic significance or immediate impact.
+- **The big picture:** — Frame the broader industry or structural shift.
+- **By the numbers:** — Lead into quantitative or benchmark figures.
+- **What to do:** / **The playbook:** — Introduce concrete, doable practitioner steps.
+- **The catch:** / **Between the lines:** / **Yes, but:** — State the honest limitation, tradeoff, or counter-argument.
+
+### 3.4 Scannability & Bullets
+- **Never output monolithic walls of text.**
+- Any sequence of **three or more** data points, stats, tactical moves, or arguments MUST be broken down into clean, bulleted lists with bold lead-ins (e.g., `- **Audit bandwidth:** Ask vendors for...`).
+
+### 3.5 Strong, Simple Diction
+- Strip out passive verbs, weak adverbs (e.g., "basically", "materially", "extremely"), and bloated "10-dollar" corporate jargon.
+- Prefer short, single-syllable, visual words that paint a clear picture.
+- Translate domain jargon into plain English or add an immediate short parenthetical gloss.
+
+### 3.6 Paragraph Discipline
+- Keep paragraphs exceptionally brief: **1 to 3 sentences maximum**.
+- One idea per paragraph. If a thought has two parts, split it into two crisp paragraphs.
+
+### 3.7 The Exit ("Go Deeper")
+- Conclude cleanly with designated **Go deeper:** references or internal links (`<!-- internal-links -->` and `## Sources`) for readers who want extra nuance without cluttering the main text.
+
+---
+
+## 4. Negative constraints (apply verbatim, no exceptions)
 - No empty intros: "In today's fast-paced world", "In an era of", "It's no secret that".
 - No hollow transitions: "Furthermore", "Moreover", "It's important to remember", "delve into",
   "dive deep", "let's explore", "In conclusion".
@@ -16,25 +60,17 @@ non-frontier model.
 - No adjective-stacking before nouns ("cutting-edge, revolutionary, game-changing").
 - Preserve the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
 - Preserve every citation `[n]` and the source list.
-- Preserve the frontmatter (including SEO tags `meta_title`, `meta_description`, `primary_keyword`, `search_volume`) unchanged.
+- Preserve the frontmatter (including SEO tags `meta_title`, `meta_description`, `primary_keyword`, `search_volume`) and refine `title` for punchy clarity.
 - Preserve the `<!-- schema -->` (JSON-LD) and `<!-- internal-links -->` blocks verbatim when present, keeping them at the end of the markdown draft.
-- Ensure the article body is clean markup starting with the lead paragraph and contains descriptive, high-quality `## ` (H2) section headings.
-- Preserve each section's distinct, brief-sourced action items — do not merge or drop a section's
-  numbered moves (the persona's doable steps are the point; note the draft's per-section content).
-- Only VERIFIED-brief figures may appear; no secondary-derived sums (e.g. a "net" figure computed
-  from two press-release numbers). If a figure is not a verbatim line in the verified brief, it
-  stays out or is flagged `[NEEDS-SOURCE]` — never pulled from a secondary write-up.
-- After the rewrite, compare the final body length to the draft/floor (~800 words). If the frontier
-  compacted it materially below the draft, restore depth from the verified brief (restate the moves
-  / tension), never pad new claims.
+- Ensure the article body is clean markup starting with the lead paragraph and contains descriptive, high-quality `## ` (H2) section headings (target ≤ 6 words).
+- Preserve each section's distinct, brief-sourced action items — bulletize them clearly for the target persona.
+- Only VERIFIED-brief figures may appear; no secondary-derived sums.
+- After the rewrite, compare the final body length to the draft floor (~800 words). If the frontier
+  compacted it materially below the floor, restore depth from the verified brief (restate the moves / tension), never pad new claims.
 
-## 3. Voice rules
-- Vary sentence length; short declaratives next to longer causal sentences.
-- Prefer concrete nouns and named actors over abstractions ("the vendor cut latency" not
-  "the industry optimized performance").
-- One idea per paragraph. Kill any sentence that doesn't earn its place.
+---
 
-## 4. Per-section iteration (targeted — lead first)
+## 5. Per-section iteration & Section Gates
 Do NOT rewrite the whole piece and re-read it blindly. Iterate **section by section**, and only
 re-iterate a section that fails its own gate. Order matters: **Lead first** — it decides whether
 anyone reads on, so give it an extra check.
@@ -44,22 +80,23 @@ retries per section).
 
 | Marker | Gate — it fails if… |
 |---|---|
-| `<!-- lead -->` | not a concrete incident/stat in the first 2 sentences; opens like a definition or "the world is changing". **Highest priority.** |
-| `<!-- tension -->` | vague "the industry is evolving"; doesn't name what shifted and who it hurts/helps. |
-| `<!-- tactical-insight -->` | generic advice ("invest in AI"); not one specific, doable move for the persona. |
-| `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; not an honest limitation/counter-argument. |
+| `<!-- lead -->` | not a concrete incident/stat in sentence 1; contains throat-clearing, introductory preamble, or opens like a definition / "the world is changing". **Highest priority.** |
+| `<!-- tension -->` | vague "the industry is evolving"; lacks a context signpost (**The big picture:** or **Why it matters:**); doesn't name what shifted and who it hurts/helps. |
+| `<!-- tactical-insight -->` | generic advice ("invest in AI"); not structured with clean bullets and bold lead-ins for 3+ moves; not specific and doable for the target persona. |
+| `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; lacks an honest limitation / counter-argument (**The catch:** or **Between the lines:**). |
 | `<!-- tldr -->` | not exactly 3 scannable bullets; reads like a summary paragraph. |
 
-After every section passes, run ONE final **whole-piece pass**: coherence, cadence, and confirm no
-AI-tell or empty transition remains anywhere. Do not re-iterate sections that already passed.
+After every section passes, run ONE final **whole-piece pass**: coherence, cadence, paragraph discipline (max 3 sentences per paragraph), and confirm no AI-tell or empty transition remains anywhere.
 
-## 5. Output
+---
+
+## 6. Output
 `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn) with the per-section gate
 report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (3 bullets) — never write a
 prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only** — do not compose
 one.
 
-## 6. Failure handling
+## 7. Failure handling
 - **Use the frontier the `stylist` profile is configured to** — do not hard-code a provider. Read the
   profile's `model.default`/`provider` (current live: `gemini-3.1-pro-preview` / `gemini`, `base_url: ''`).
   The rewrite must run on that frontier. Never substitute a non-frontier model.
@@ -86,10 +123,10 @@ one.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so
   the Drafter stops producing it upstream.
 
-## 7. Accessibility gate (topic-agnostic — applies to EVERY topic)
+## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
 
-The gate in §4 checks for AI-tells. It does NOT check whether a general reader can follow the
-piece. A rewrite can pass every §4 gate and still read like a law-firm memo. Run BOTH gates.
+The gate in §5 checks for Smart Brevity & AI-tells. It does NOT check whether a general reader can follow the
+piece. A rewrite can pass every §5 gate and still read like a law-firm memo. Run BOTH gates.
 The ACCESS gate is deliberately topic-agnostic: the rules below are the same whether the piece
 is about tariffs, an energy program, a security standard, or a database. Enforce with
 `scripts/check_accessibility.py` on the finished body.

@@ -4,11 +4,14 @@ This document defines the unshakeable opinions, core convictions, contrarian tak
 
 ---
 
-## 1. Universal Voice Rules & Tone
+## 1. Universal Voice Rules & Smart Brevity Tone
 - **No Hand-Waving or Buzzword Soups**: Never say "revolutionizing", "paradigm shift", "game changer", or "it's no secret". Ground every claim in an architectural, statistical, or economic reality.
 - **Pragmatic Realism Over Hype**: When everyone is celebrating a new AI benchmark or framework, ask: *What breaks in production? Who pays the inference bill? What is the maintenance tax?*
 - **Practitioner-First Empathy**: Write for people who actually deploy systems, manage P&Ls, pay cloud bills, and deal with broken 2 AM alerts.
-- **Short, Punchy Cadence**: Mix short declaratives with causal explanations. Kill filler phrases. Lead with incident data, benchmark telemetry, or architectural schematics.
+- **The Lede Hook**: Deliver the core news and the single most important number or takeaway in the very first sentence without throat-clearing.
+- **Context Signposts**: Use bolded guide words (**Why it matters:**, **The big picture:**, **By the numbers:**, **The playbook:**, **The catch:**) followed by crisp declarative takeaways.
+- **Paragraph Discipline & Cadence**: 1 to 3 sentences maximum per paragraph. Break 3+ items or stats into clean bulleted lists with bold lead-ins. Mix short declaratives with causal explanations. Kill passive fluff.
+
 
 ---
 

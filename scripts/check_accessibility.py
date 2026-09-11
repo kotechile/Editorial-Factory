@@ -83,9 +83,18 @@ def flesch(text):
 def is_defined(acr, text):
     """True if the acronym is expanded anywhere, in either order:
     'Expanded Form (ACR)' or 'ACR (Expanded Form / phrase)'. Both are common
-    conventions and both make the term followable by a general reader."""
-    order_a = re.compile(r"[A-Za-z][A-Za-z0-9 \-]{2,90}\(\s*" + re.escape(acr) + r"\s*\)")
-    order_b = re.compile(r"\b" + re.escape(acr) + r"\b\s*\(\s*[A-Za-z][A-Za-z0-9' \-]{4,90}\s*\)")
+    conventions and both make the term followable by a general reader.
+    Also accepts a trailing gloss inside the same parens — 'Full Name (ACR — gloss)'
+    or 'ACR (— gloss)' — which the frontier model favors (e.g. 'Total Cost of
+    Ownership (TCO—the full lifetime price of a part)')."""
+    p = re.escape(acr)
+    # "Expanded Form (ACR)" and "Expanded Form (ACR — gloss)": the text before the
+    # paren carries the expansion; anything after the acronym inside the parens is
+    # an optional plain-English gloss.
+    order_a = re.compile(r"[A-Za-z][A-Za-z0-9 \-]{2,90}\(\s*" + p + r"[^)]*\)")
+    # "ACR (Expanded Form / phrase)" and "ACR (— gloss)": the paren directly follows
+    # the acronym and carries at least one word of explanation.
+    order_b = re.compile(r"\b" + p + r"\b\s*\([^)]*[A-Za-z][^)]*\)")
     return bool(order_a.search(text) or order_b.search(text))
 
 
@@ -121,9 +130,55 @@ def jargon_hits(text):
     return [g for g in GATING if g.lower() in low]
 
 
+def check_smart_brevity(raw_text, body_text):
+    """Diagnose Smart Brevity compliance (advisory):
+    1. H2/H3 headers target <= 6 words.
+    2. Paragraph sentence count: max 3 sentences per paragraph.
+    3. Standardized context signposts: **Why it matters:**, **The big picture:**, etc.
+    """
+    warns = []
+    # 1. H2/H3 header length
+    headers = re.findall(r"^#{2,3}\s+(.+)$", raw_text, re.M)
+    long_headers = []
+    for h in headers:
+        clean_h = h.strip()
+        if clean_h.lower().startswith("sources") or clean_h.lower().startswith("gate report"):
+            continue
+        words = clean_h.split()
+        if len(words) > 6:
+            long_headers.append(f"'{clean_h}' ({len(words)}w)")
+    if long_headers:
+        warns.append("Smart Brevity: header > 6 words: " + "; ".join(long_headers[:2]))
+
+    # 2. Paragraph sentence counts
+    paras = [p.strip() for p in re.split(r"\n\s*\n", body_text) if p.strip()]
+    long_paras = 0
+    for p in paras:
+        if p.startswith("#") or p.startswith("-") or p.startswith("*") or p.startswith(">") or p.startswith("```"):
+            continue
+        sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", p) if s.strip()]
+        if len(sents) > 3:
+            long_paras += 1
+    if long_paras > 0:
+        warns.append(f"Smart Brevity: {long_paras} paragraph(s) > 3 sentences (aim for 1-3 max)")
+
+    # 3. Context signposts
+    signpost_patterns = [
+        r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*",
+        r"\*\*What to do:\*\*", r"\*\*The playbook:\*\*", r"\*\*The catch:\*\*",
+        r"\*\*Between the lines:\*\*", r"\*\*Yes, but:\*\*", r"\*\*Go deeper:\*\*", r"\*\*What's next:\*\*"
+    ]
+    has_signposts = any(re.search(pat, raw_text, re.I) for pat in signpost_patterns)
+    if not has_signposts:
+        warns.append("Smart Brevity: no bold context signposts found (**Why it matters:**, **The big picture:**, etc.)")
+
+    return warns
+
+
 def measure(path, target=TARGET, floor=FLOOR):
     """Return a structured diagnosis of the article's accessibility. Safe to call from other
     scripts (the Loop 3 humanizers) so they can read the exact FAIL reasons and retry."""
+    raw = pathlib.Path(path).read_text()
     text = body_of(path)
     score, w, s, long_rate = flesch(text)
     undef = undefined_acronyms(text)
@@ -143,6 +198,10 @@ def measure(path, target=TARGET, floor=FLOOR):
         fails.append("undefined acronym(s): " + ", ".join(undef))
     if jarg:
         warns.append("jargon to gloss/replace: " + ", ".join(jarg))
+
+    # Smart Brevity structural check
+    sb_warns = check_smart_brevity(raw, text)
+    warns.extend(sb_warns)
 
     # Keyword-stuffing guard (topic-agnostic: reads the article's own primary_keyword).
     kw, kw_count = _keyword_density(path, text)
