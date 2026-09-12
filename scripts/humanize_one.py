@@ -86,7 +86,7 @@ src_lines = [l.strip() for l in extract_sources(draft).splitlines() if l.strip()
 base_prompt = RULES + "\n\n" + draft
 MARKERS = ["<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
            "<!-- nuanced-takeaway -->", "<!-- tldr -->", "<!-- linkedin -->"]
-result, diag, srcs_ok, markers_ok = None, None, False, False
+result, diag, srcs_ok, markers_ok, len_ok = None, None, False, False, False
 attempts = 0
 for attempt in range(1, ht.MAX_ATTEMPTS + 1):
     attempts = attempt
@@ -98,6 +98,8 @@ for attempt in range(1, ht.MAX_ATTEMPTS + 1):
             extra.append("The ## Sources list is missing or altered — include it VERBATIM (do not edit, merge, or drop any source line or URL).")
         if not markers_ok:
             extra.append("Include every section marker: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.")
+        if not len_ok:
+            extra.append("The article body is too short (under %d words). Restore depth from the verified brief — restate the tactical moves and the tension in full, using only already-verified figures. Never invent new claims or numbers." % ht.MIN_BODY_WORDS)
         prompt = ht.retry_prompt(base_prompt, result, diag, extra=extra)
     try:
         raw = ht.call_gemini(prompt)
@@ -109,13 +111,14 @@ for attempt in range(1, ht.MAX_ATTEMPTS + 1):
     srcs_ok = all(s in result for s in src_lines)
     markers_ok = all(m in result for m in MARKERS)
     diag = ht.measure(out_path)
+    len_ok = diag.get("words", 0) >= ht.MIN_BODY_WORDS
     print(f"attempt {attempt}: VERDICT {diag['verdict']}  flesch={diag['flesch']}  words={diag['words']}  "
-          f"sources={'ok' if srcs_ok else 'MISSING'}  markers={'ok' if markers_ok else 'FAIL'}")
-    if diag["verdict"] == "PASS" and srcs_ok and markers_ok:
+          f"sources={'ok' if srcs_ok else 'MISSING'}  markers={'ok' if markers_ok else 'FAIL'}  length={'ok' if len_ok else 'SHORT'}")
+    if diag["verdict"] == "PASS" and srcs_ok and markers_ok and len_ok:
         break
 
 note = diag["verdict"] if diag else "UNKNOWN"
 print(f"WROTE {out_path.name}  final_verdict={note}  attempts={attempts}  "
-      f"sources={'ok' if srcs_ok else 'MISSING'}")
+      f"sources={'ok' if srcs_ok else 'MISSING'}  length={'ok' if len_ok else 'SHORT'}")
 if diag and diag["verdict"] != "PASS":
     sys.exit(1)  # held at Loop 3 (per claude_humanizer.md §7) — never ship a dense/partial piece

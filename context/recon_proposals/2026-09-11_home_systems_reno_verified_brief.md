@@ -1,0 +1,14 @@
+# Verified Brief: home_systems_reno — 2026-09-11
+
+| # | Claim | Status | Source URL | Verbatim |
+|---|-------|--------|-----------|----------|
+| 1 | NYS Clean Heat introduced the "Weatherized Tier" on September 1, 2026 | VERIFIED | https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100F5EA0-0000-CC28-AE78-E26712A9075D%7D | "The NYS Clean Heat Program introduces the Weatherized Tier ('Wx Tier') in this Program Manual on September 1, 2026." (Program Manual v3 §2.1.4) |
+| 2 | Weatherization becomes a mandatory prerequisite for any Clean Heat rebate by March 1, 2028 | VERIFIED | https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100F5EA0-0000-CC28-AE78-E26712A9075D%7D | "The Non-LMI EE/BE Order mandates that by March 1, 2028, Program Administrators adopt criteria for weatherization as a prerequisite to receiving Clean Heat incentives." (§2.1.5) |
+| 3 | The Weatherized Tier pays a higher rebate than the base tier — National Grid cold-climate ASHP full-load single-family rebate is $4,000 (base) vs $8,000 (Wx), and $7,000 vs $12,000 with decommissioning | VERIFIED | https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100F5EA0-0000-CC28-AE78-E26712A9075D%7D | Table 13 (National Grid Non-DAC Full Load): "Category 2 – ccASHP: Residential Full Load Heating $4,000 $8,000 … Category 2b – ccASHP: Residential Full Load Heating with Decommissioning $7,000 $12,000" |
+| 4 | Con Edison (NYC/Westchester) ccASHP full-load rebate rises from $7,000 (base) to $10,000 (Wx) for a non-DAC single-family home with decommissioning | VERIFIED | https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100F5EA0-0000-CC28-AE78-E26712A9075D%7D | Table 7 (Con Edison Non-DAC ASHP Full Load): "Category 2b – ccASHP: Residential Full Load Heating with Decommissioning $7,000 $10,000" |
+| 5 | Three ways a home qualifies: built after 2010; past participation in a weatherization program; or a performance test (building heating load per sq ft below a set standard) | VERIFIED | https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100F5EA0-0000-CC28-AE78-E26712A9075D%7D | §2.1.4: "The Weatherized Tier includes three Pathways … • Post-2010 Build/Modern Home Pathway • Past Participation Pathway • Performance Pathway" |
+| 6 | The federal 25C heat pump tax credit expired December 31, 2025 (context: state rebates are now the primary savings source) | VERIFIED | https://homes.rewiringamerica.org/federal-incentives/25c-heat-pump-tax-credits | "This credit expired on Dec. 31, 2025." / "All 25C tax credits expired on Dec. 31, 2025." |
+
+**Gate:** 6/6 VERIFIED, 0 FLAGGED, 0 REMOVED. All load-bearing figures trace to the NYS Clean Heat
+Program Manual v3 (primary, filed with the NY Department of Public Service) with the 25C expiry
+corroborated by Rewiring America's IRS-sourced guide. Proceed to draft.

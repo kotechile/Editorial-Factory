@@ -11,6 +11,7 @@ import urllib.request
 MODEL = "gemini-3.1-pro-preview"
 MAX_ATTEMPTS = 5  # how many times to re-prompt the model before holding at Loop 3
 MAX_TOKENS = 20000  # thinking-model budget: reasoning tokens count against this, so keep high
+MIN_BODY_WORDS = 600  # body word floor: below this the frontier over-compacted; restore depth from the brief
 
 
 def _key():

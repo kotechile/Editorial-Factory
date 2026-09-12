@@ -28,3 +28,17 @@ Persist every artifact unconditionally; distribute only after the `@Simon approv
 - Distribution failure → retry once, then report with the platform's error body.
 - Log platform quirks (rate limits, token scopes) to `skills/self_improvement_eval.md`.
 
+## 6. Deploy surface & access control
+- `site/server.mjs` is the only public surface. It must keep **no unauthenticated** route that
+  writes, deletes, shells out to a script, or reads unpublished material. Everything except
+  `/published/*`, `/api/articles.json` and `/healthz` requires `PRESSFLOW_AUTH_SECRET`
+  (see `docs/VPS_WIRING.md` §4); with the secret unset the app fails closed (503).
+- Never re-introduce a `POST`/`DELETE` handler above the access-control check at the top of the
+  request handler — the check runs before every route.
+- A deployment only contains **committed** files (Coolify clones git). A draft that was never
+  committed is invisible to the dashboard even after a redeploy, so "the site is stale" usually
+  means "the artifact was never committed", not "the deploy failed".
+- `context/published_log.md` may only list files that exist in `published/`. The filesystem is the
+  source of truth; the log is a record of it. A row for a file that is still in `context/drafts/`
+  is a false "published" claim.
+

@@ -5,6 +5,7 @@ import { join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { timingSafeEqual } from 'node:crypto';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -37,6 +38,93 @@ function loadEnv() {
   }
 }
 loadEnv();
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Access control
+//
+// PressFlow is an internal dashboard: it reads and writes the editorial working
+// tree and can shell out to scripts (seo_machine.py, sync_articles.py, ...) that
+// spend real API money. Only the published-article surface is public; the
+// dashboard, drafts, mutations and script runners all require the shared secret.
+//
+// Set PRESSFLOW_AUTH_SECRET in the deploy environment (Coolify → PressFlow
+// Editorial Factory → Environment Variables) and authenticate with any username
+// + that value (HTTP Basic), or `Authorization: Bearer <secret>`, or
+// `x-editorial-key: <secret>`, or a `pressflow_auth` cookie. If the secret is
+// not configured, every non-public route fails closed (503) instead of opening.
+// ─────────────────────────────────────────────────────────────────────────────
+const AUTH_SECRET = String(
+  process.env.PRESSFLOW_AUTH_SECRET || process.env.EDITORIAL_SECRET || ''
+).trim();
+
+// Reachable without credentials: the reader page for already-published articles
+// plus their manifest, and a health probe for the platform.
+function isPublicRequest(pathname, method) {
+  if (method !== 'GET' && method !== 'HEAD') return false;
+  if (pathname === '/healthz') return true;
+  if (pathname === '/api/articles.json') return true;
+  if (pathname.startsWith('/published/')) return true;
+  return false;
+}
+
+function secretMatches(candidate) {
+  if (!AUTH_SECRET || typeof candidate !== 'string') return false;
+  const a = Buffer.from(candidate);
+  const b = Buffer.from(AUTH_SECRET);
+  if (a.length !== b.length) return false;
+  return timingSafeEqual(a, b);
+}
+
+function isAuthorized(req) {
+  if (!AUTH_SECRET) return false;
+
+  const authHeader = String(req.headers['authorization'] || '');
+  if (authHeader.startsWith('Bearer ') && secretMatches(authHeader.slice(7).trim())) return true;
+
+  const apiKey = req.headers['x-editorial-key'];
+  if (apiKey && secretMatches(String(apiKey).trim())) return true;
+
+  if (authHeader.startsWith('Basic ')) {
+    try {
+      const decoded = Buffer.from(authHeader.slice(6).trim(), 'base64').toString('utf8');
+      const sep = decoded.indexOf(':');
+      if (sep > -1 && secretMatches(decoded.slice(sep + 1))) return true;
+    } catch (err) {
+      /* malformed header — fall through to the cookie check */
+    }
+  }
+
+  for (const part of String(req.headers['cookie'] || '').split(';')) {
+    const eq = part.indexOf('=');
+    if (eq === -1) continue;
+    const name = part.slice(0, eq).trim();
+    if (name !== 'pressflow_auth') continue;
+    try {
+      if (secretMatches(decodeURIComponent(part.slice(eq + 1).trim()))) return true;
+    } catch (err) {
+      /* malformed cookie value — ignore */
+    }
+  }
+  return false;
+}
+
+function sendAuthChallenge(res) {
+  if (!AUTH_SECRET) {
+    return sendJson(res, 503, {
+      error: 'Access control not configured',
+      detail:
+        'PressFlow is closed until PRESSFLOW_AUTH_SECRET is set in the deploy environment ' +
+        '(Coolify → PressFlow Editorial Factory → Environment Variables), then redeploy.',
+    });
+  }
+  res.writeHead(401, {
+    'Content-Type': MIME['.json'],
+    'WWW-Authenticate': 'Basic realm="PressFlow", charset="UTF-8"',
+    'Cache-Control': 'no-store',
+    'Access-Control-Allow-Origin': '*',
+  });
+  res.end(JSON.stringify({ error: 'Unauthorized' }));
+}
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -294,10 +382,20 @@ const server = createServer(async (req, res) => {
     return res.end();
   }
 
+  // Access control — everything except the public article surface requires the
+  // shared secret. Fails closed (503) when the secret is not configured.
+  if (!isPublicRequest(url.pathname, req.method) && !isAuthorized(req)) {
+    return sendAuthChallenge(res);
+  }
+
   try {
     // ----------------------------------------------------
-    // API: Drafts & Library Management (PressFlow Workspace)
+    // Health probe (public)
     // ----------------------------------------------------
+    if (url.pathname === '/healthz') {
+      return sendJson(res, 200, { status: 'ok' });
+    }
+
     if (url.pathname === '/api/drafts' && req.method === 'GET') {
       const draftsDir = join(ROOT, 'context', 'drafts');
       const pubDir = join(ROOT, 'published');
@@ -360,10 +458,16 @@ const server = createServer(async (req, res) => {
       const file = url.searchParams.get('file');
       if (!file) return sendJson(res, 400, { error: 'Missing file query param' });
 
+      // Only a bare filename inside context/drafts or published/ — never a path.
+      const safeFile = file.replace(/[^a-zA-Z0-9_\-\.]/g, '');
+      if (!safeFile || safeFile !== file || safeFile.startsWith('.')) {
+        return sendJson(res, 400, { error: 'Invalid file name' });
+      }
+
       const draftsDir = join(ROOT, 'context', 'drafts');
       const pubDir = join(ROOT, 'published');
-      let targetPath = join(draftsDir, file);
-      if (!existsSync(targetPath)) targetPath = join(pubDir, file);
+      let targetPath = join(draftsDir, safeFile);
+      if (!existsSync(targetPath)) targetPath = join(pubDir, safeFile);
 
       if (!existsSync(targetPath)) {
         return sendJson(res, 404, { error: 'Draft not found' });
@@ -941,7 +1045,15 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     if (url.pathname.startsWith('/published/')) {
       const file = url.pathname.replace(/^\/published\//, '');
-      const text = await readFile(join(ROOT, 'published', file), 'utf8');
+      const safeFile = file.replace(/[^a-zA-Z0-9_\-\.]/g, '');
+      if (!safeFile || safeFile !== file || safeFile.startsWith('.')) {
+        return sendJson(res, 400, { error: 'Invalid file name' });
+      }
+      const articlePath = join(ROOT, 'published', safeFile);
+      if (!existsSync(articlePath)) {
+        return sendJson(res, 404, { error: 'Article not found' });
+      }
+      const text = await readFile(articlePath, 'utf8');
       res.writeHead(200, { 'Content-Type': MIME['.html'] });
       const firstLine = text.split('\n')[0].replace(/^#\s+/, '');
       return res.end(layout(firstLine, mdToHtml(text)));

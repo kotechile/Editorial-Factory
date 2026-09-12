@@ -110,6 +110,7 @@ def humanize_single_draft(draft, out_path=None):
     base_prompt = RULES + "\n\n" + draft
     result = draft
     diag = None
+    len_ok = False
     for attempt in range(1, ht.MAX_ATTEMPTS + 1):
         if attempt == 1:
             prompt = base_prompt
@@ -119,6 +120,8 @@ def humanize_single_draft(draft, out_path=None):
                 extra.append("The ## Sources list is missing or altered — include it VERBATIM (do not edit, merge, or drop any source line or URL).")
             if not markers_ok:
                 extra.append("Include every section marker: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.")
+            if not len_ok:
+                extra.append("The article body is too short (under %d words). Restore depth from the verified brief — restate the tactical moves and the tension in full, using only already-verified figures. Never invent new claims or numbers." % ht.MIN_BODY_WORDS)
             prompt = ht.retry_prompt(base_prompt, result, diag, extra=extra)
         try:
             raw = call_gemini(prompt)
@@ -133,8 +136,9 @@ def humanize_single_draft(draft, out_path=None):
             diag = {"verdict": "PASS", "flesch": 65, "words": len(result.split())}
         srcs_ok = all(s in result for s in src_lines) if src_lines else True
         markers_ok = all(m in result for m in MARKERS)
-        print(f"  attempt {attempt}: {diag['verdict']}  flesch={diag['flesch']}")
-        if diag["verdict"] == "PASS" and srcs_ok and markers_ok:
+        len_ok = diag.get("words", 0) >= ht.MIN_BODY_WORDS
+        print(f"  attempt {attempt}: {diag['verdict']}  flesch={diag['flesch']}  words={diag.get('words', 0)}  length={'ok' if len_ok else 'SHORT'}")
+        if diag["verdict"] == "PASS" and srcs_ok and markers_ok and len_ok:
             break
     if diag and diag["verdict"] != "PASS":
         print(f"  ⚠️ ACCESSIBILITY GATE FAIL — held at Loop 3 ({diag['fails']}). Do NOT mark this verified/publishable.")

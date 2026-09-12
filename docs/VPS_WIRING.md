@@ -78,7 +78,13 @@ rewrite (Loop 3). Every pipeline halts at the `@Simon approve` gate before publi
 ## 4. Coolify deploy (the site)
 
 1. New application → GitHub repo `kotechile/editorial-factory`, Dockerfile build.
-2. Env vars: `PORT=3000` (no secrets needed for the static reader — the site serves `published/`).
+2. Env vars: `PORT=3000` **and `PRESSFLOW_AUTH_SECRET=<long random value>`**.
+   `PRESSFLOW_AUTH_SECRET` is not optional: without it `site/server.mjs` answers 503 on every
+   non-public route (fail closed). With it, the dashboard requires HTTP Basic auth — any username,
+   the value as the password — while `/published/<file>.md`, `/api/articles.json` and `/healthz`
+   stay public so published articles remain readable. Also set `SUPABASE_URL` +
+   `SUPABASE_SERVICE_ROLE_KEY` if the deployed dashboard should persist drafts/signals — without
+   them the container runs in filesystem-only mode (`"mocked"` responses on the Supabase routes).
 3. Domain: e.g. `editorial.<your-domain>` (products ship at subpaths in the factory; this is a
    separate app and can get its own subdomain).
 4. Optionally add a production Ghost CMS / PressFlow app and point the Publisher at it
