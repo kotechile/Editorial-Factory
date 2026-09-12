@@ -627,6 +627,25 @@
       color: var(--blue-text);
     }
 
+    .tag-rose {
+      background: rgba(225, 29, 72, 0.08);
+      border-color: rgba(225, 29, 72, 0.28);
+      color: #BE123C;
+    }
+
+    [data-theme="dark"] .tag-rose {
+      background: rgba(244, 63, 94, 0.12);
+      border-color: rgba(244, 63, 94, 0.35);
+      color: #FDA4AF;
+    }
+
+    .dist-filter.active,
+    .dist-platform.active {
+      background: var(--text);
+      border-color: var(--text);
+      color: var(--bg);
+    }
+
     [data-theme="dark"] .tag-quiet:not(.tag-emerald):not(.tag-blue) {
       background: rgba(255, 255, 255, 0.04);
       color: #8E8E93;
@@ -1224,6 +1243,9 @@
       <button class="nav-tab-btn" data-tab="tab-suite" id="tabSuiteBtn">
         🗂️ Multi-Channel
       </button>
+      <button class="nav-tab-btn" data-tab="tab-distribution" id="tabDistributionBtn">
+        📣 Distribution <span class="tab-counter" id="distributionCount">0</span>
+      </button>
       <button class="nav-tab-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
         ⚙️ Verticals <span class="tab-counter" id="verticalsCount">8</span>
       </button>
@@ -1726,6 +1748,38 @@
     </div>
 
     <div class="cards-grid" id="personasGrid"></div>
+  </div>
+
+  <!-- TAB: Distribution To-Do (Reddit / LinkedIn, no platform APIs) -->
+  <div class="tab-pane" id="tab-distribution">
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">COPY → POST → MARK · NO PLATFORM API</span>
+        <h2 class="page-title">Publication To-Do — Reddit &amp; LinkedIn</h2>
+      </div>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-secondary btn-sm" id="distRefreshBtn">↺ Refresh</button>
+        <button class="btn btn-primary btn-sm" id="distSeedBtn">+ Generate from published</button>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+      <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center;">
+        <span style="font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 0.15rem;">Status</span>
+        <button class="btn btn-ghost btn-sm dist-filter active" data-status="all">All</button>
+        <button class="btn btn-ghost btn-sm dist-filter" data-status="ready">Ready</button>
+        <button class="btn btn-ghost btn-sm dist-filter" data-status="published">Published</button>
+        <button class="btn btn-ghost btn-sm dist-filter" data-status="deleted">Deleted</button>
+        <span style="width: 1px; height: 18px; background: var(--border); margin: 0 0.35rem;"></span>
+        <span style="font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 0.15rem;">Platform</span>
+        <button class="btn btn-ghost btn-sm dist-platform active" data-platform="all">All</button>
+        <button class="btn btn-ghost btn-sm dist-platform" data-platform="reddit">Reddit</button>
+        <button class="btn btn-ghost btn-sm dist-platform" data-platform="linkedin">LinkedIn</button>
+      </div>
+      <span class="tag-quiet" id="distStorageBadge">—</span>
+    </div>
+
+    <div class="cards-grid" id="distGrid"></div>
   </div>
 
   <!-- TAB 6: Fleet & Cron Controls -->
@@ -2305,6 +2359,7 @@ Ready for commands.</div>
       const target = btn.getAttribute('data-tab');
       const pane = document.getElementById(target);
       if (pane) pane.classList.add('active');
+      if (target === 'tab-distribution') loadDistribution();
     });
   });
 
@@ -2567,21 +2622,201 @@ Ready for commands.</div>
 
   document.getElementById('btnPushLinkedInQueue').addEventListener('click', async () => {
     try {
-      const res = await fetch('/api/linkedin-sync', {
+      const slug = currentFile.replace(/\.md$/, '');
+      const res = await fetch('/api/distribution/tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          slug: currentFile.replace(/\.md$/, ''),
-          headline: document.getElementById('currentArticleTitle').textContent,
-          post_copy: document.getElementById('linkedInPreviewBox').textContent,
-          article_url: document.getElementById('currentArticleLink').href,
+          id: `linkedin:${slug}`,
+          platform: 'linkedin',
+          channel: 'LinkedIn feed',
+          variant: 'authored',
+          source_type: 'article',
+          source_id: slug,
+          source_title: document.getElementById('currentArticleTitle').textContent,
+          post_title: document.getElementById('currentArticleTitle').textContent,
+          post_content: document.getElementById('linkedInPreviewBox').textContent,
+          submit_url: 'https://www.linkedin.com/feed/?shareActive=true',
+          status: 'ready',
         }),
       });
       const data = await res.json();
-      showToast(data.message || 'Queued to Supabase LinkedIn queue!');
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      showToast('Added to the Distribution to-do (Ready)');
       logTerminal(`Queued LinkedIn post for slug: ${currentFile}`);
+      loadDistribution();
     } catch (e) {
       showToast(e.message, 'error');
+    }
+  });
+
+  // ----------------------------------------------------
+  // Distribution To-Do (Reddit / LinkedIn — no platform API)
+  // ----------------------------------------------------
+  let distTasks = [];
+  let distStatusFilter = 'all';
+  let distPlatformFilter = 'all';
+  let distEditingIdx = null;
+
+  const distEsc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+  ));
+
+  const DIST_STATUS_STYLE = {
+    ready: 'tag-quiet tag-emerald',
+    published: 'tag-quiet',
+    deleted: 'tag-quiet tag-rose',
+  };
+
+  function setDistBadge(data) {
+    const badge = document.getElementById('distStorageBadge');
+    if (!badge) return;
+    const label = data.storage === 'supabase'
+      ? 'Saved in Supabase'
+      : 'Local file (context/distribution_queue.json)';
+    badge.textContent = `${label} · ${data.total || 0} task${(data.total || 0) === 1 ? '' : 's'}`;
+  }
+
+  async function loadDistribution() {
+    const grid = document.getElementById('distGrid');
+    if (!grid) return;
+    try {
+      const res = await fetch(`/api/distribution/tasks?status=${distStatusFilter}&platform=${distPlatformFilter}`);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      distTasks = data.tasks || [];
+      setDistBadge(data);
+      const counter = document.getElementById('distributionCount');
+      if (counter) counter.textContent = (data.counts && data.counts.ready) || 0;
+      renderDistribution();
+    } catch (err) {
+      grid.innerHTML = `<div style="grid-column: 1/-1; padding: 2rem; text-align: center; color: var(--text-dim); font-size: 12px;">Could not load the distribution queue: ${distEsc(err.message)}</div>`;
+    }
+  }
+
+  function renderDistribution() {
+    const grid = document.getElementById('distGrid');
+    if (!grid) return;
+    if (!distTasks.length) {
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">Nothing here for this filter. Use “Generate from published” to build the to-do from published articles.</div>';
+      return;
+    }
+    grid.innerHTML = distTasks.map((t, idx) => {
+      const statusClass = DIST_STATUS_STYLE[t.status] || 'tag-quiet';
+      const platformLabel = t.platform === 'reddit' ? 'REDDIT' : 'LINKEDIN';
+      const editing = distEditingIdx === idx;
+      const body = editing
+        ? `<textarea id="distEditor-${idx}" style="width:100%; min-height:220px; font:12px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; padding:0.75rem; border:1px solid var(--border); border-radius:8px; background:var(--bg); color:var(--text);">${distEsc(t.post_content)}</textarea>`
+        : `<pre style="white-space:pre-wrap; word-break:break-word; font:12px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:0.85rem; max-height:320px; overflow:auto; margin:0.6rem 0;">${distEsc(t.post_content)}</pre>`;
+      return `
+        <div class="clean-white-card" data-idx="${idx}" style="grid-column: 1/-1;">
+          <div>
+            <div style="display:flex; gap:0.4rem; align-items:center; flex-wrap:wrap;">
+              <span class="tag-quiet">${platformLabel} · ${distEsc(t.channel)}</span>
+              <span class="${statusClass}">${distEsc(String(t.status).toUpperCase())}</span>
+              <span style="font-size:11px; color:var(--text-dim);">${distEsc(t.vertical || '')}${t.variant ? ' · ' + distEsc(t.variant) : ''}</span>
+            </div>
+            <div class="card-title-text" style="margin-top:0.4rem;">${distEsc(t.post_title)}</div>
+            <div style="font-size:11px; color:var(--text-dim); margin-top:0.2rem;">from ${distEsc(t.source_id || t.source_title || '')} · ${distEsc(String(t.post_content || '').length)} chars · updated ${distEsc(String(t.updated_at || '').slice(0, 16).replace('T', ' '))}</div>
+          </div>
+          ${body}
+          <div style="display:flex; gap:0.35rem; flex-wrap:wrap; align-items:center;">
+            <button class="btn btn-primary btn-sm" data-action="copy" data-idx="${idx}">📋 Copy text</button>
+            ${t.submit_url ? `<a class="btn btn-secondary btn-sm" href="${distEsc(t.submit_url)}" target="_blank" rel="noopener">↗ Open submit page</a>` : ''}
+            ${editing
+              ? `<button class="btn btn-primary btn-sm" data-action="save-edit" data-idx="${idx}">✓ Save text</button>
+                 <button class="btn btn-ghost btn-sm" data-action="cancel-edit" data-idx="${idx}">Cancel</button>`
+              : `<button class="btn btn-ghost btn-sm" data-action="edit" data-idx="${idx}">✎ Edit text</button>`}
+            ${t.status !== 'published' ? `<button class="btn btn-secondary btn-sm" data-action="published" data-idx="${idx}">✓ Mark published</button>` : ''}
+            ${t.status !== 'deleted' ? `<button class="btn btn-ghost btn-sm" data-action="deleted" data-idx="${idx}">🗑 Mark deleted</button>` : ''}
+            ${t.status !== 'ready' ? `<button class="btn btn-ghost btn-sm" data-action="ready" data-idx="${idx}">↺ Reopen as ready</button>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  async function patchDistributionTask(id, patch) {
+    const res = await fetch('/api/distribution/tasks', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, ...patch }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+    return data.task;
+  }
+
+  document.getElementById('distGrid').addEventListener('click', async (event) => {
+    const btn = event.target.closest('[data-action]');
+    if (!btn) return;
+    const idx = Number(btn.getAttribute('data-idx'));
+    const task = distTasks[idx];
+    if (!task) return;
+    const action = btn.getAttribute('data-action');
+    try {
+      if (action === 'copy') {
+        await navigator.clipboard.writeText(task.post_content);
+        showToast(`Copied ${task.platform === 'reddit' ? 'Reddit submission' : 'LinkedIn post'} text`);
+        return;
+      }
+      if (action === 'edit') { distEditingIdx = idx; renderDistribution(); return; }
+      if (action === 'cancel-edit') { distEditingIdx = null; renderDistribution(); return; }
+      if (action === 'save-edit') {
+        const editor = document.getElementById(`distEditor-${idx}`);
+        if (!editor) return;
+        await patchDistributionTask(task.id, { post_content: editor.value });
+        distEditingIdx = null;
+        showToast('Text saved');
+        await loadDistribution();
+        return;
+      }
+      if (['published', 'deleted', 'ready'].includes(action)) {
+        await patchDistributionTask(task.id, { status: action });
+        showToast(action === 'published' ? 'Marked published ✓' : action === 'deleted' ? 'Marked deleted' : 'Back to ready');
+        await loadDistribution();
+      }
+    } catch (err) {
+      showToast(err.message, 'error');
+    }
+  });
+
+  document.querySelectorAll('.dist-filter').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.dist-filter').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      distStatusFilter = btn.getAttribute('data-status');
+      loadDistribution();
+    });
+  });
+
+  document.querySelectorAll('.dist-platform').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.dist-platform').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      distPlatformFilter = btn.getAttribute('data-platform');
+      loadDistribution();
+    });
+  });
+
+  document.getElementById('distRefreshBtn').addEventListener('click', loadDistribution);
+
+  document.getElementById('distSeedBtn').addEventListener('click', async () => {
+    const btn = document.getElementById('distSeedBtn');
+    btn.disabled = true;
+    try {
+      const res = await fetch('/api/distribution/seed', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({}),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      showToast(`Queue built: +${data.added} new, ${data.total} total (${data.storage})`);
+      await loadDistribution();
+    } catch (err) {
+      showToast(err.message, 'error');
+    } finally {
+      btn.disabled = false;
     }
   });
 
@@ -3324,6 +3559,7 @@ Ready for commands.</div>
     await loadLibrary();
     await loadVerticals();
     await loadGscOpportunities('all');
+    loadDistribution();
     if (allDrafts.length > 0) {
       selectDraft(allDrafts[0].file);
     }

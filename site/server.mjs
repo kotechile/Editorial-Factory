@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { timingSafeEqual } from 'node:crypto';
+import { buildTasksForArticle, parseArticleMarkdown, STATUSES, PLATFORMS } from './distribution.mjs';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -369,6 +370,141 @@ function parseFrontmatter(markdown) {
   return data;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Distribution to-do queue
+//
+// Copy-ready Reddit / LinkedIn posts with a ready → published|deleted lifecycle.
+// No platform API is used: each task carries the text plus a submit web-intent URL.
+//
+// Storage is Supabase (`factory_config` row key `distribution_queue`) when credentials are
+// present, otherwise the repo file `context/distribution_queue.json`. The Supabase path is
+// what makes the queue survive a redeploy, since the container filesystem does not.
+// ─────────────────────────────────────────────────────────────────────────────
+const QUEUE_CONFIG_KEY = 'distribution_queue';
+const LOCAL_QUEUE_FILE = join(ROOT, 'context', 'distribution_queue.json');
+const READER_BASE = String(process.env.PRESSFLOW_READER_BASE_URL || 'https://pressflow.aichieve.net/published').replace(/\/$/, '');
+
+const nowIso = () => new Date().toISOString();
+
+function normalizeTask(raw, { existing = null } = {}) {
+  const base = existing || {};
+  const status = STATUSES.includes(raw.status) ? raw.status : (base.status || 'ready');
+  const task = {
+    id: String(raw.id || base.id || '').trim(),
+    platform: PLATFORMS.includes(raw.platform) ? raw.platform : (base.platform || 'reddit'),
+    channel: String(raw.channel ?? base.channel ?? '').slice(0, 120),
+    variant: String(raw.variant ?? base.variant ?? ''),
+    source_type: String(raw.source_type ?? base.source_type ?? 'article'),
+    source_id: String(raw.source_id ?? base.source_id ?? ''),
+    source_title: String(raw.source_title ?? base.source_title ?? '').slice(0, 300),
+    vertical: String(raw.vertical ?? base.vertical ?? ''),
+    post_title: String(raw.post_title ?? base.post_title ?? '').slice(0, 500),
+    post_content: String(raw.post_content ?? base.post_content ?? ''),
+    submit_url: String(raw.submit_url ?? base.submit_url ?? ''),
+    status,
+    created_at: base.created_at || raw.created_at || nowIso(),
+    updated_at: nowIso(),
+    completed_at: status === 'ready' ? null : (base.completed_at || raw.completed_at || nowIso()),
+  };
+  if (!task.id) throw new Error('task id is required');
+  if (!task.post_content.trim()) throw new Error(`task ${task.id} has empty post_content`);
+  return task;
+}
+
+async function readQueue() {
+  const { isConfigured } = getSupabaseConfig();
+  if (isConfigured) {
+    try {
+      const rows = await supabaseFetch(`factory_config?key=eq.${QUEUE_CONFIG_KEY}&select=id,value`);
+      if (Array.isArray(rows) && rows.length) {
+        const parsed = JSON.parse(rows[0].value || '[]');
+        if (Array.isArray(parsed)) return { storage: 'supabase', tasks: parsed };
+      }
+      return { storage: 'supabase', tasks: [] };
+    } catch (err) {
+      console.warn(`queue: supabase read failed (${err.message}); falling back to file`);
+    }
+  }
+  if (existsSync(LOCAL_QUEUE_FILE)) {
+    try {
+      const parsed = JSON.parse(await readFile(LOCAL_QUEUE_FILE, 'utf8'));
+      if (Array.isArray(parsed)) return { storage: 'file', tasks: parsed };
+    } catch (err) {
+      console.warn(`queue: local file unreadable (${err.message})`);
+    }
+  }
+  return { storage: isConfigured ? 'supabase' : 'file', tasks: [] };
+}
+
+async function writeQueue(tasks) {
+  const { isConfigured } = getSupabaseConfig();
+  const payload = JSON.stringify(tasks);
+  if (isConfigured) {
+    try {
+      const existing = await supabaseFetch(`factory_config?key=eq.${QUEUE_CONFIG_KEY}&select=id`);
+      if (Array.isArray(existing) && existing.length) {
+        await supabaseFetch(`factory_config?id=eq.${existing[0].id}`, {
+          method: 'PATCH',
+          body: JSON.stringify({ value: payload, updated_at: nowIso() }),
+        });
+      } else {
+        await supabaseFetch('factory_config', {
+          method: 'POST',
+          body: JSON.stringify({ key: QUEUE_CONFIG_KEY, value: payload }),
+        });
+      }
+      return 'supabase';
+    } catch (err) {
+      console.warn(`queue: supabase write failed (${err.message}); writing local file instead`);
+    }
+  }
+  await writeFile(LOCAL_QUEUE_FILE, `${JSON.stringify(tasks, null, 2)}\n`, 'utf8');
+  return 'file';
+}
+
+/** Generate tasks from every published article; existing ids keep their status and edits. */
+async function seedQueueFromPublished({ refresh = false } = {}) {
+  const { tasks: existing } = await readQueue();
+  const byId = new Map(existing.map((t) => [t.id, t]));
+  const pubDir = join(ROOT, 'published');
+  const files = existsSync(pubDir) ? (await readdir(pubDir)).filter((f) => f.endsWith('.md')).sort() : [];
+  let added = 0;
+  let refreshed = 0;
+
+  for (const file of files) {
+    const markdown = await readFile(join(pubDir, file), 'utf8');
+    const article = parseArticleMarkdown(markdown);
+    if (!article.slug) article.slug = file.replace(/\.md$/, '');
+    const generated = buildTasksForArticle(article, {
+      readerUrl: `${READER_BASE}/${file}`,
+      sourceId: file.replace(/\.md$/, ''),
+    });
+    for (const task of generated) {
+      const prev = byId.get(task.id);
+      if (!prev) {
+        byId.set(task.id, { ...task, created_at: nowIso(), updated_at: nowIso(), completed_at: null });
+        added += 1;
+      } else if (refresh && prev.status === 'ready') {
+        byId.set(task.id, { ...prev, post_title: task.post_title, post_content: task.post_content, submit_url: task.submit_url, updated_at: nowIso() });
+        refreshed += 1;
+      }
+    }
+  }
+
+  const tasks = [...byId.values()];
+  const storage = await writeQueue(tasks);
+  return { storage, added, refreshed, total: tasks.length };
+}
+
+function queueCounts(tasks) {
+  return tasks.reduce((acc, t) => {
+    acc[t.status] = (acc[t.status] || 0) + 1;
+    acc.platforms = acc.platforms || {};
+    acc.platforms[t.platform] = (acc.platforms[t.platform] || 0) + 1;
+    return acc;
+  }, {});
+}
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
 
@@ -394,6 +530,90 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     if (url.pathname === '/healthz') {
       return sendJson(res, 200, { status: 'ok' });
+    }
+
+    // ----------------------------------------------------
+    // API: Distribution to-do queue (Reddit / LinkedIn)
+    // ----------------------------------------------------
+    if (url.pathname === '/api/distribution/tasks' && req.method === 'GET') {
+      const { storage, tasks } = await readQueue();
+      const statusFilter = url.searchParams.get('status') || 'all';
+      const platformFilter = url.searchParams.get('platform') || 'all';
+      const counts = queueCounts(tasks);
+      let list = tasks;
+      if (statusFilter !== 'all') list = list.filter((t) => t.status === statusFilter);
+      if (platformFilter !== 'all') list = list.filter((t) => t.platform === platformFilter);
+      const order = { ready: 0, published: 1, deleted: 2 };
+      list = [...list].sort((a, b) => {
+        const s = (order[a.status] ?? 3) - (order[b.status] ?? 3);
+        if (s !== 0) return s;
+        return String(b.created_at).localeCompare(String(a.created_at));
+      });
+      return sendJson(res, 200, {
+        storage,
+        supabase_configured: getSupabaseConfig().isConfigured,
+        counts,
+        total: tasks.length,
+        tasks: list,
+      });
+    }
+
+    if (url.pathname === '/api/distribution/seed' && req.method === 'POST') {
+      let body = {};
+      try { body = await parseJsonBody(req); } catch (err) { /* empty body is fine */ }
+      const result = await seedQueueFromPublished({ refresh: Boolean(body && body.refresh) });
+      return sendJson(res, 200, { status: 'ok', ...result });
+    }
+
+    if (url.pathname === '/api/distribution/tasks' && req.method === 'POST') {
+      let body;
+      try { body = await parseJsonBody(req); } catch (err) {
+        return sendJson(res, 400, { error: `Invalid JSON body: ${err.message}` });
+      }
+      const { tasks } = await readQueue();
+      const idx = tasks.findIndex((t) => t.id === body.id);
+      let task;
+      try {
+        task = normalizeTask(body, { existing: idx > -1 ? tasks[idx] : null });
+      } catch (err) {
+        return sendJson(res, 400, { error: err.message });
+      }
+      if (idx > -1) tasks[idx] = task; else tasks.push(task);
+      const storage = await writeQueue(tasks);
+      return sendJson(res, 200, { status: 'ok', storage, task, created: idx === -1 });
+    }
+
+    if (url.pathname === '/api/distribution/tasks' && (req.method === 'PATCH' || req.method === 'PUT')) {
+      let body;
+      try { body = await parseJsonBody(req); } catch (err) {
+        return sendJson(res, 400, { error: `Invalid JSON body: ${err.message}` });
+      }
+      if (!body.id) return sendJson(res, 400, { error: 'id is required' });
+      if (body.status && !STATUSES.includes(body.status)) {
+        return sendJson(res, 400, { error: `status must be one of: ${STATUSES.join(', ')}` });
+      }
+      const { tasks } = await readQueue();
+      const idx = tasks.findIndex((t) => t.id === body.id);
+      if (idx === -1) return sendJson(res, 404, { error: `Task '${body.id}' not found` });
+      let updated;
+      try {
+        updated = normalizeTask(body, { existing: tasks[idx] });
+      } catch (err) {
+        return sendJson(res, 400, { error: err.message });
+      }
+      tasks[idx] = updated;
+      const storage = await writeQueue(tasks);
+      return sendJson(res, 200, { status: 'ok', storage, task: updated });
+    }
+
+    if (url.pathname === '/api/distribution/tasks' && req.method === 'DELETE') {
+      const id = url.searchParams.get('id');
+      if (!id) return sendJson(res, 400, { error: 'id query param is required' });
+      const { tasks } = await readQueue();
+      const next = tasks.filter((t) => t.id !== id);
+      if (next.length === tasks.length) return sendJson(res, 404, { error: `Task '${id}' not found` });
+      const storage = await writeQueue(next);
+      return sendJson(res, 200, { status: 'ok', storage, removed: id, total: next.length });
     }
 
     if (url.pathname === '/api/drafts' && req.method === 'GET') {
