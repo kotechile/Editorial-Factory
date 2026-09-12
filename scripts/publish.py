@@ -575,7 +575,74 @@ def auto_deploy_push(slug: str) -> bool:
         return False
 
 
+LOG_COLUMNS = "| Date | Vertical | Slug | Headline | Reader URL | Distribution |"
+LOG_DIVIDER = "|---|---|---|---|---|---|"
+
+ENV_FILE = os.path.join(REPO_ROOT, ".env")
+
+
+def load_env():
+    """Populate os.environ from the repo .env (same precedence rule as site/server.mjs:
+    real environment wins). Without this the Supabase upsert silently no-ops when the
+    publisher is run from a plain shell — which is exactly how it is documented to run."""
+    if not os.path.exists(ENV_FILE):
+        return
+    try:
+        with open(ENV_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, _, value = line.partition("=")
+                key = key.strip()
+                if key and not os.environ.get(key):
+                    os.environ[key] = value.strip().strip('"').strip("'")
+    except Exception as exc:  # never fail the publish over a malformed .env
+        print(f"! Could not parse {ENV_FILE}: {exc}")
+
+
+def normalize_slug(raw_slug, date_val):
+    """Return a bare slug: some drafts carry '<date>_<slug>' in frontmatter, which used to
+    produce 'published/<date>_<date>_<slug>.md' (and a doubled reader URL)."""
+    slug = str(raw_slug or "").strip()
+    if date_val and slug.startswith(f"{date_val}_"):
+        slug = slug[len(date_val) + 1:]
+    return re.sub(r"^\d{4}-\d{2}-\d{2}_", "", slug).strip()
+
+
+def record_publish(log_path, values):
+    """Insert one row at the end of the published-articles table (the file's first table).
+
+    Keeps the log a faithful record of `published/*.md`: same six columns, rows added in place
+    instead of appended at EOF (the file also carries an 'Awaiting approval' table that must not
+    be polluted by published rows).
+    """
+    row = "| " + " | ".join(str(v) for v in values) + " |"
+    if not os.path.exists(log_path) or os.path.getsize(log_path) == 0:
+        with open(log_path, "w", encoding="utf-8") as f:
+            f.write(f"# Published Log\n\n{LOG_COLUMNS}\n{LOG_DIVIDER}\n{row}\n")
+        return
+
+    with open(log_path, "r", encoding="utf-8") as f:
+        lines = f.read().split("\n")
+
+    table_start = next((i for i, line in enumerate(lines) if line.strip().startswith("|")), None)
+    if table_start is None:
+        lines += ["", LOG_COLUMNS, LOG_DIVIDER, row]
+    else:
+        last = table_start
+        i = table_start
+        while i < len(lines) and lines[i].strip().startswith("|"):
+            last = i
+            i += 1
+        lines.insert(last + 1, row)
+
+    with open(log_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
 def main():
+    load_env()
     parser = argparse.ArgumentParser(description="Publish an article and embed external illustrated article & tool promo URLs")
     parser.add_argument("draft_file", help="Path to final draft markdown file")
     parser.add_argument("-a", "--article-url", default=None, help="Final URL where the article (with illustrations) is published (e.g. PressFlow/Ghost/blog)")
@@ -594,7 +661,8 @@ def main():
 
     data = parse_draft(args.draft_file)
     date_val = data["date"]
-    slug_val = data["slug"]
+    slug_val = normalize_slug(data["slug"], date_val)
+    data["slug"] = slug_val  # keep the Supabase row / log consistent with the published filename
     pub_filename = f"{date_val}_{slug_val}.md"
     pub_path = os.path.join(REPO_ROOT, "published", pub_filename)
     log_path = os.path.join(REPO_ROOT, "context", "published_log.md")
@@ -719,30 +787,23 @@ def main():
         print(data["linkedin_post"])
         print("=" * 50 + "\n")
 
-    # 3. Append to published_log.md
-    os.makedirs(os.path.join(REPO_ROOT, "context"), exist_ok=True)
-    target_str = ", ".join(targets)
-    url_items = []
+    # 3. Record the publish in published_log.md.
+    #    The log is a *record of* published/*.md (six columns, first table in the file);
+    #    the filesystem stays the source of truth, so a row is written only after the
+    #    file exists on disk.
+    reader_base = os.environ.get("PRESSFLOW_READER_BASE_URL", "https://pressflow.aichieve.net/published").rstrip("/")
+    reader_url = f"{reader_base}/{pub_filename}"
+    links = []
     if article_url:
-        url_items.append(f"article: {article_url}")
+        links.append(f"[article]({article_url})")
     if promo_url:
-        url_items.append(f"tool: {promo_url}")
+        links.append(f"[tool]({promo_url})")
     if "linkedin" in live_urls:
-        url_items.append(f"linkedin: {live_urls['linkedin']}")
-    elif not url_items:
-        url_items.append("local/site")
+        links.append(f"[linkedin]({live_urls['linkedin']})")
+    distribution = " · ".join(links) if links else "manual review (LinkedIn auto-post off)"
 
-    url_str = " | ".join(url_items)
-    log_line = f"| {date_val} | {data['vertical']} | {slug_val} | {data['title']} | {target_str} | {url_str} |\n"
-
-    # Ensure log header exists
-    if not os.path.exists(log_path) or os.path.getsize(log_path) == 0:
-        with open(log_path, "w", encoding="utf-8") as f:
-            f.write("# Published Articles Log\n\n| date | vertical | slug | headline | targets | live URLs |\n|---|---|---|---|---|---|\n")
-
-    with open(log_path, "a", encoding="utf-8") as f:
-        f.write(log_line)
-    print("✓ Appended row to context/published_log.md")
+    record_publish(log_path, [date_val, data["vertical"], slug_val, data["title"], reader_url, distribution])
+    print("✓ Recorded row in context/published_log.md")
 
     # 4. Upsert to Supabase
     sync_to_supabase(data, live_urls)

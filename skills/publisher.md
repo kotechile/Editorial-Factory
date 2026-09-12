@@ -5,9 +5,15 @@ Persist every artifact unconditionally; distribute only after the `@Simon approv
 
 ## 2. Persistence (always)
 1. Write the final article to `published/YYYY-MM-DD_<slug>.md`.
-2. Append to `context/published_log.md`:
-   `| date | vertical | slug | headline | targets | live URLs |`
-3. Upsert to Supabase (articles, signals, claims). Never skip this step.
+   The slug is *bare* — `scripts/publish.py::normalize_slug()` strips a leading `YYYY-MM-DD_` if the
+   draft's frontmatter carries one, so the filename never doubles the date.
+2. Append to `context/published_log.md` via `scripts/publish.py::record_publish()` — six columns
+   (`Date | Vertical | Slug | Headline | Reader URL | Distribution`), inserted into the published
+   table in place, never appended at EOF.
+3. Upsert to Supabase (articles, signals, claims). Never skip this step. `publish.py` calls
+   `load_env()` first for exactly this reason: without it the Supabase step degrades to a printed
+   "Skipping DB sync." and the article never reaches the DB. If that line appears in a publish log,
+   the publish is incomplete — fix the credentials and re-run.
 
 ## 3. Distribution (gated — after `@Simon approve`)
 - **Execution:** run `python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md` (supports `--article-url <url>`, `--promo-url <url>`, `--interactive`).

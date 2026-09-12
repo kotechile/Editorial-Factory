@@ -1282,7 +1282,7 @@
       <span class="meta-dot">·</span>
       <span class="meta-tag">#AIEngineering</span>
       <span class="meta-dot">·</span>
-      <a href="#" id="currentArticleLink" class="meta-link" target="_blank">https://pressflow.aichieve.net/posts/2026-09-09_279b-nvidia-memory-bottleneck</a>
+      <a href="https://pressflow.aichieve.net/published/2026-09-09_nvidia-279b-memory-bottleneck.md" id="currentArticleLink" class="meta-link" target="_blank">https://pressflow.aichieve.net/published/2026-09-09_nvidia-279b-memory-bottleneck.md</a>
     </div>
 
     <!-- Dual SEO Target Architecture Cards (Quiet Linear Styling) -->
@@ -2421,8 +2421,11 @@ Ready for commands.</div>
       document.getElementById('currentArticleTitle').textContent = data.title;
       document.getElementById('currentWordCount').textContent = Number(data.wordCount).toLocaleString();
       document.getElementById('currentReadTime').textContent = data.readTime;
-      document.getElementById('currentArticleLink').textContent = `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`;
-      document.getElementById('currentArticleLink').href = `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`;
+      // Canonical public article path is the reader route: /published/<file>.md
+      // (the old `/posts/<slug>` scheme 404s — it made every dashboard-derived
+      // article URL, including the LinkedIn CTA, a dead link).
+      document.getElementById('currentArticleLink').textContent = `https://pressflow.aichieve.net/published/${data.file}`;
+      document.getElementById('currentArticleLink').href = `https://pressflow.aichieve.net/published/${data.file}`;
 
       markdownEditor.value = currentMarkdown;
       renderedArticleContainer.innerHTML = parseMarkdownToHtml(currentMarkdown);
