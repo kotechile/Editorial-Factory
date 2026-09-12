@@ -103,6 +103,30 @@ scripts/cron-seo-pipeline.sh    # SEO Content Machine
 scripts/verify.sh
 ```
 
+## Distribution to-do (Reddit & LinkedIn, no platform APIs)
+
+The **📣 Distribution** tab in the PressFlow dashboard (`site/index.html`) is the publication
+to-do list. There is no Reddit API in play: every item carries the finished text plus a
+pre-filled submit URL, and the operator copies → posts → marks it.
+
+- **One card per place to post.** Seeding a published article produces two Reddit tasks (numbers-first
+  and discussion-question framings, one per recommended subreddit for the vertical) and one LinkedIn
+  task (the authored `<!-- linkedin -->` block, with the reader link and hashtags appended).
+- **Statuses:** `ready` → `published` or `deleted`; any of them can be reopened as `ready`. Filter by
+  status and by platform; the tab badge counts what is still `ready`.
+- **Buttons per card:** Copy text · Open submit page (Reddit web intent / LinkedIn composer) ·
+  Edit text (saved back to the queue) · Mark published · Mark deleted · Reopen as ready.
+- **Seeding is idempotent.** `+ Generate from published` adds tasks for articles that do not have one
+  and never resets a status or an edit. `refresh: true` regenerates the text of `ready` items only.
+- **Storage:** Supabase `factory_config` key `distribution_queue` when `SUPABASE_URL` +
+  `SUPABASE_SERVICE_ROLE_KEY` are set (required in production — the container filesystem is
+  rebuilt on every deploy), otherwise `context/distribution_queue.json` locally.
+- **Formatter:** `site/distribution.mjs` — deterministic, no model calls, strips AI-tells, keeps
+  each bullet distinct from the lede, and validates length for both platforms.
+
+API (all behind the dashboard's access layer): `GET/POST/PATCH/DELETE /api/distribution/tasks`,
+`POST /api/distribution/seed`.
+
 ## Environment
 
 ```bash

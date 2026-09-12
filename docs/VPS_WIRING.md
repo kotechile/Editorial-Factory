@@ -82,9 +82,10 @@ rewrite (Loop 3). Every pipeline halts at the `@Simon approve` gate before publi
    `PRESSFLOW_AUTH_SECRET` is not optional: without it `site/server.mjs` answers 503 on every
    non-public route (fail closed). With it, the dashboard requires HTTP Basic auth — any username,
    the value as the password — while `/published/<file>.md`, `/api/articles.json` and `/healthz`
-   stay public so published articles remain readable. Also set `SUPABASE_URL` +
-   `SUPABASE_SERVICE_ROLE_KEY` if the deployed dashboard should persist drafts/signals — without
-   them the container runs in filesystem-only mode (`"mocked"` responses on the Supabase routes).
+   stay public so published articles remain readable. Set `SUPABASE_URL` +
+   `SUPABASE_SERVICE_ROLE_KEY` **as well**: they are what makes the deployed dashboard's
+   persistence work — without them the container runs filesystem-only (`"mocked"` responses on the
+   Supabase routes) and the Distribution to-do queue cannot survive a redeploy.
 3. Domain: e.g. `editorial.<your-domain>` (products ship at subpaths in the factory; this is a
    separate app and can get its own subdomain).
 4. Optionally add a production Ghost CMS / PressFlow app and point the Publisher at it

@@ -35,6 +35,7 @@ Persist every artifact unconditionally; distribute only after the `@Simon approv
 - Log platform quirks (rate limits, token scopes) to `skills/self_improvement_eval.md`.
 
 ## 6. Deploy surface & access control
+
 - `site/server.mjs` is the only public surface. It must keep **no unauthenticated** route that
   writes, deletes, shells out to a script, or reads unpublished material. Everything except
   `/published/*`, `/api/articles.json` and `/healthz` requires `PRESSFLOW_AUTH_SECRET`
@@ -47,4 +48,25 @@ Persist every artifact unconditionally; distribute only after the `@Simon approv
 - `context/published_log.md` may only list files that exist in `published/`. The filesystem is the
   source of truth; the log is a record of it. A row for a file that is still in `context/drafts/`
   is a false "published" claim.
+- `site/index.html` is one inline script: a duplicate identifier at the top level is a parse-time
+  `SyntaxError` that silently disables *every* handler while the page still returns 200. Grep for an
+  identifier before adding a helper, and verify dashboard changes with
+  `node scripts/verify-dashboard.mjs` (headless browser — `curl` proves nothing about JS).
+
+## 7. Distribution queue (Reddit & LinkedIn)
+
+Distribution is copy-paste, not API: the **📣 Distribution** tab holds one task per place to post,
+each with the finished text and a submit web-intent URL. `ready` → `published` | `deleted`, any
+state reopenable.
+
+- The queue is the single place a post waits to go out. "Queue to LinkedIn" in the Workspace tab
+  writes a task here — not to `linkedin_posts`, whose schema does not accept the dashboard's fields.
+- Storage: Supabase `factory_config` key `distribution_queue` (production) or
+  `context/distribution_queue.json` (local). In production the Supabase env vars are required —
+  the container filesystem is rebuilt on every deploy, so a file-only queue loses the operator's
+  marks.
+- Generation lives in `site/distribution.mjs` (deterministic; no model calls). Seeding is
+  idempotent: it never resets a status or an edit, and `refresh` only rewrites `ready` text.
+- Never add a task whose text has not been read: the generated framing is a starting point, the
+  operator edits and marks it.
 
