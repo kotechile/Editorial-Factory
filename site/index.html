@@ -2431,7 +2431,7 @@ Ready for commands.</div>
       renderedArticleContainer.innerHTML = parseMarkdownToHtml(currentMarkdown);
       updateKeywordVisualizer(currentMarkdown);
       syncSerpAndSchemaPreview(currentMarkdown);
-      deriveMultiChannelPreviews(currentMarkdown, data.title, `https://pressflow.aichieve.net/posts/${data.file.replace(/\.md$/, '')}`);
+      deriveMultiChannelPreviews(currentMarkdown, data.title, `https://pressflow.aichieve.net/published/${data.file}`);
 
       document.getElementById('libraryModalBackdrop').classList.remove('active');
       document.getElementById('tabWorkspaceBtn').click();
