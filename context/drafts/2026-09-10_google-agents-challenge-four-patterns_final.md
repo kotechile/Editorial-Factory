@@ -26,6 +26,11 @@ This lesson separates systems that work from ones that just burn money. One cust
 
 The Challenge winners built that gate. Google named the four moves: two-way Model Context Protocol (MCP) servers, event-driven concurrency (running tasks at the same time), same-bar model fallback, and tiered routing [1]. Each move takes a choice away from the model and gives it to the system structure.
 
+**By the numbers:**
+- **93% vs. 41% accuracy:** Trimming an agent's tool surface from 35 overlapping tool definitions to 6 strictly bounded tools increased task accuracy from 41% to 93% [1].
+- **40%+ pre-model filtering:** A 3-layer tiered router handled more than 40% of all incoming requests through deterministic rules before any reasoning model was called [1].
+- **4 decoupled event queues:** Replacing sequential agent call chains with 4 independent event queues eliminated cascading delays and deadline failures under load [1].
+
 <!-- tactical-insight -->
 ## Four moves worth stealing
 

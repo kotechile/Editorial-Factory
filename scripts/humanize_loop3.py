@@ -38,15 +38,16 @@ SMART BREVITY STYLING PRINCIPLES:
    - Title: Start from the draft title and polish/refine for punchy clarity and SEO resonance without clickbait fluff or cryptic jargon.
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
-3. CONTEXT SIGNPOSTS (Axioms):
+3. CONTEXT SIGNPOSTS & MANDATORY 'BY THE NUMBERS':
    - Introduce supporting context using bolded, standardized guide words followed immediately by a single direct, declarative sentence:
      - **Why it matters:** (the systemic significance or immediate impact)
      - **The big picture:** (the broader industry or structural shift)
-     - **By the numbers:** (data, benchmark, or financial breakdowns)
+     - **By the numbers:** (**MANDATORY** quantitative section presenting 2–4 verified figures/percentages in bold bullets)
      - **What to do:** or **The playbook:** (practitioner-specific tactical moves)
      - **The catch:** or **Between the lines:** (honest nuance, limitation, or counter-argument)
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
+   - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats (e.g., `- **40% routed:** ...`).
    - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
 5. STRONG, SIMPLE DICTION:
    - Strip out passive verbs, weak adverbs ("basically", "materially", "fundamentally"), and bloated "10-dollar" corporate jargon.

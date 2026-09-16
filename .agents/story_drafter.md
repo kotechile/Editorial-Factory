@@ -14,6 +14,7 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
    - **The One Big Thing** — articulate the single most load-bearing takeaway, fact, or decision.
    - **Lead** — a concrete incident or figure from the evidence (a number, a quote, a decision), not a definition and not a "world is changing" opener.
    - **Tension** — the systemic reason this is happening now (why it matters, who it hurts/helps).
+   - **By the numbers** — mandatory quantitative section (**By the numbers:**) featuring 2–4 verified stats, benchmarks, or cost metrics in bolded bullets.
    - **Tactical insight** — the actionable, specific takeaway for the target reader.
    - **Nuanced takeaway** — the honest limitation or counter-argument.
    - **TL;DR (At a Glance)** — 3-part structured breakdown: **The Reality Check** (core baseline in plain English), **The Winning Moves** (with indented sub-bullet definitions for each move), and **The Fine Print** (upfront design, security/access controls, and caveats).

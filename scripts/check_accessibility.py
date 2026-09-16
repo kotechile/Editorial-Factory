@@ -162,7 +162,7 @@ def check_smart_brevity(raw_text, body_text):
     if long_paras > 0:
         warns.append(f"Smart Brevity: {long_paras} paragraph(s) > 3 sentences (aim for 1-3 max)")
 
-    # 3. Context signposts
+    # 3. Context signposts & By the numbers
     signpost_patterns = [
         r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*",
         r"\*\*What to do:\*\*", r"\*\*The playbook:\*\*", r"\*\*The catch:\*\*",
@@ -171,6 +171,9 @@ def check_smart_brevity(raw_text, body_text):
     has_signposts = any(re.search(pat, raw_text, re.I) for pat in signpost_patterns)
     if not has_signposts:
         warns.append("Smart Brevity: no bold context signposts found (**Why it matters:**, **The big picture:**, etc.)")
+
+    if not re.search(r"\*\*By the numbers:\*\*", raw_text, re.I):
+        warns.append("Smart Brevity: missing mandatory '**By the numbers:**' section with bulleted stats")
 
     return warns
 

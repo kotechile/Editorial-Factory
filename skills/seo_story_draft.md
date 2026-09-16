@@ -27,6 +27,7 @@ slug: "YYYY-MM-DD_<slug>"
 ### B. Article Body Sections (Clean Markdown & Engaging H2 Headers)
 - `<!-- lead -->`: Concrete hook featuring an incident, production metric, or specific cost figure.
 - `<!-- tension -->`: Descriptive `## ` H2 header + systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
+- `**By the numbers:**`: Mandatory quantitative data section with 2–4 bolded metric bullets.
 - `<!-- tactical-insight -->`: Descriptive `## ` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
 - `<!-- nuanced-takeaway -->`: Descriptive `## ` H2 header + the honest catch, limitation, or counter-argument.
 - `<!-- tldr -->`: `## Key Takeaways` header + 3-part structured breakdown (**The Reality Check**, **The Winning Moves** with sub-bullet definitions, and **The Fine Print** in plain English).

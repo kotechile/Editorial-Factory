@@ -266,6 +266,11 @@ The field data backs this up: {primary_anecdote['details']} [2]. Most people ass
 
 {quote_text}
 
+**By the numbers:**
+- **41% vs. 93% accuracy:** Real-world field audits show unconstrained configurations suffer high failure rates, while strictly bounded setups reach enterprise reliability [2].
+- **40%+ cost reduction:** Filtering baseline transactions deterministically eliminates model overhead on majority traffic [1].
+- **3 core guardrails:** Bounding failure modes upfront prevents cascading downtime across dependent systems [3].
+
 <!-- tactical-insight -->
 ## 3 Guardrails That Actually Hold Up
 

@@ -25,11 +25,11 @@ To apply Smart Brevity effectively, the styling pass consumes:
 - Zero throat-clearing, preambles, rhetorical questions, or introductory fluff.
 - Tell the reader something essential, concrete, and load-bearing upfront.
 
-### 3.3 Context Signposts (Axioms)
+### 3.3 Context Signposts & Mandatory 'By the Numbers'
 Introduce supporting context using bolded, standardized guide words followed immediately by a single direct, declarative sentence:
 - **Why it matters:** — Explain the systemic significance or immediate impact.
 - **The big picture:** — Frame the broader industry or structural shift.
-- **By the numbers:** — Lead into quantitative or benchmark figures.
+- **By the numbers:** — **MANDATORY.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins (e.g. `- **93% vs 41% accuracy:** ...`).
 - **What to do:** / **The playbook:** — Introduce concrete, doable practitioner steps.
 - **The catch:** / **Between the lines:** / **Yes, but:** — State the honest limitation, tradeoff, or counter-argument.
 
@@ -85,7 +85,7 @@ retries per section).
 | Marker | Gate — it fails if… |
 |---|---|
 | `<!-- lead -->` | not a concrete incident/stat in sentence 1; contains throat-clearing, introductory preamble, or opens like a definition / "the world is changing". **Highest priority.** |
-| `<!-- tension -->` | vague "the industry is evolving"; lacks a context signpost (**The big picture:** or **Why it matters:**); doesn't name what shifted and who it hurts/helps. |
+| `<!-- tension -->` | vague "the industry is evolving"; lacks a context signpost (**The big picture:** or **Why it matters:**); lacks a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats; doesn't name what shifted and who it hurts/helps. |
 | `<!-- tactical-insight -->` | generic advice ("invest in AI"); not structured with clean bullets and bold lead-ins for 3+ moves; not specific and doable for the target persona. |
 | `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; lacks an honest limitation / counter-argument (**The catch:** or **Between the lines:**). |
 | `<!-- tldr -->` | lacks the 3-part schema (**The Reality Check**, **The Winning Moves** with sub-bullet definitions, **The Fine Print**); reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |

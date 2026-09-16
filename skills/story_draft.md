@@ -10,6 +10,7 @@ evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity
 | **Title** | Start with a short, punchy initial title (the Stylist will refine for SEO rewording / resonance). |
 | **Lead** | A concrete incident or figure from the evidence delivering the core news in sentence 1. Not a definition, not a "world is changing" opener. |
 | **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed (**Why it matters / The big picture**). |
+| **By the numbers** | Mandatory quantitative data section (**By the numbers:**) highlighting 2–4 verified figures, percentages, benchmarks, or cost changes in clean, bolded scannable bullets. |
 | **Tactical insight** | The actionable, specific takeaways for the target reader (`persona:` from `context/personas.json`). Sequence 3+ points cleanly for bulletization. |
 | **Nuanced takeaway** | The honest limitation or counter-argument (**The catch / Between the lines**). Ends on substance, not a cheerlead. |
 | **TL;DR (At a Glance)** | 3-part structured breakdown (**The Reality Check**, **The Winning Moves**, **The Fine Print**). Must clearly explain what happened, break down the moves with plain-English definitions in sub-bullets, and state the trade-offs/caveats. **Long-form only.** |
@@ -22,6 +23,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 - Two lengths from one skeleton: long-form draft + ~1,300-char LinkedIn post.
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
+- **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins (e.g. `- **40% routed:** ...`) that deliver the load-bearing quantitative facts before the tactical moves.
 - **At a Glance (TL;DR) Schema:** The `<!-- tldr -->` section must follow this exact 3-part plain-English structure:
   1. `- **The Reality Check:** <1-2 sentences exposing the baseline problem/gap in plain English>`
   2. `- **The Winning Moves:** <Intro line summarizing the playbook>` followed by indented sub-bullets:
@@ -50,6 +52,11 @@ slug: <slug>
 
 <!-- tension -->
 <the systemic shift / why now>
+
+**By the numbers:**
+- **<Stat 1>:** <concrete context and citation [1]>
+- **<Stat 2>:** <concrete context and citation [2]>
+- **<Stat 3>:** <concrete context and citation [3]>
 
 <!-- tactical-insight -->
 <the doable moves — structured cleanly for the persona>
