@@ -29,7 +29,7 @@ slug: "YYYY-MM-DD_<slug>"
 - `<!-- tension -->`: Descriptive `## ` H2 header + systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
 - `<!-- tactical-insight -->`: Descriptive `## ` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
 - `<!-- nuanced-takeaway -->`: Descriptive `## ` H2 header + the honest catch, limitation, or counter-argument.
-- `<!-- tldr -->`: `## Key Takeaways` header + 3 bullet takeaways that clearly explain the points in plain, conversational English (no buzzword stuffing).
+- `<!-- tldr -->`: `## Key Takeaways` header + 3-part structured breakdown (**The Reality Check**, **The Winning Moves** with sub-bullet definitions, and **The Fine Print** in plain English).
 
 ### C. Citations & Social Variants
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.

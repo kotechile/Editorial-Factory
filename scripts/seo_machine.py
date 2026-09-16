@@ -283,9 +283,12 @@ The hard catch is that closing this gap takes upfront investment in measurement 
 <!-- tldr -->
 ## Key Takeaways
 
-- The gap between vendor promises and production reality is the real cost center that catches teams off guard.
-- {primary_stance}
-- Set hard boundaries early, test against your own field data instead of demos, and never let models take actions without strict checking rules.
+- **The Reality Check:** The gap between vendor promises and production reality is the real cost center that catches engineering teams off guard.
+- **The Winning Moves:** Teams shipping reliable systems enforce strict architectural boundaries:
+  - **Set Hard Limits Upfront:** Cap retries, memory, and runaway spend before calling the model [1].
+  - **Test Against Real Field Data:** Validate against your own case history rather than benchmark demos [2].
+  - **Gate Actions Deterministically:** Never allow an agent to take an external action without a strict checking function [3].
+- **The Fine Print:** Closing this gap requires upfront investment in telemetry and access control; metrics and ROI depend entirely on your workload and traffic mix.
 
 ## Sources
 {sources_block}

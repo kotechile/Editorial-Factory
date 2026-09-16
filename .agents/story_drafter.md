@@ -16,7 +16,7 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
    - **Tension** — the systemic reason this is happening now (why it matters, who it hurts/helps).
    - **Tactical insight** — the actionable, specific takeaway for the target reader.
    - **Nuanced takeaway** — the honest limitation or counter-argument.
-   - **TL;DR (At a Glance)** — 3 scannable bullets that clearly explain the core reality, actionable moves, and trade-offs in plain, conversational English (no unexplained buzzword lists).
+   - **TL;DR (At a Glance)** — 3-part structured breakdown: **The Reality Check** (core baseline in plain English), **The Winning Moves** (with indented sub-bullet definitions for each move), and **The Fine Print** (upfront design, security/access controls, and caveats).
 2. Write to the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
 3. Cite inline: every claim carries a source marker `[1]`, `[2]` mapping to a source list at the end. Do not introduce uncited assertions.
 4. Produce two lengths from the same skeleton: a long-form article and a ~1,300-character LinkedIn post.

@@ -45,9 +45,13 @@ None of these moves are free. Two of them carry a warning Google itself flags. S
 The deeper limit is that these patterns stack, but they do not scale on their own. Google notes the best entries ran on supportive frameworks. These frameworks did not fight the developers on running tasks at once, falling back to smaller models, or handing a tool to another agent [1]. If your framework makes an event bus or a shared checking function painful, the pattern becomes a fight you will lose to deadlines. The system choice happens long before you write the code.
 
 <!-- tldr -->
-- Many so-called "multi-agent" systems are actually single models chaining prompts behind fake agent labels. Winning teams succeeded not by using larger models, but by enforcing strict architectural fences around how models interact [1].
-- The four winning moves: let agents share their tools directly with each other via two-way Model Context Protocol (MCP) servers, run independent tasks simultaneously on an event bus rather than waiting in slow chains, require smaller backup models to pass the exact same strict verification check as the main model, and filter simple questions with cheap rules before calling expensive models [1].
-- Exposing an agent's reasoning tools to outside callers introduces serious security risks that require real access controls, and traffic savings vary widely across different use cases [1].
+- **The Reality Check:** Most "multi-agent" systems are just single models wearing different hats. The Google AI Agents Challenge winners proved that true multi-agent architecture relies on hard, predictable boundaries — not just larger models [1].
+- **The Four Winning Moves:** The most successful teams built strict fences around their models using four distinct patterns:
+  - **Two-way MCP Servers:** Turn internal tools into servers that other agents can call directly [1].
+  - **Event Buses:** Replace slow, linear call chains with concurrent, event-driven queues so agents do not wait on each other [1].
+  - **Unified Verification:** Force every model fallback through the exact same strict checking gate so quality never slips [1].
+  - **Tiered Routing:** Filter simple requests through cheap, deterministic rules before paying for an expensive reasoning model [1].
+- **The Fine Print:** These moves require upfront design. Exposing agent tools demands real access control, and you need a flexible framework that does not fight you on concurrency or routing. In addition, cost-saving metrics (like routing 40 percent of traffic away from main models) depend entirely on your unique user mix [1].
 
 ## Sources
 [1] Google Developers Blog, "4 engineering patterns behind the strongest AI Agents Challenge submissions" (Sergio Villani, Sept 2, 2026) — https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions
