@@ -19,10 +19,10 @@ PERSONAS_PATH = os.path.join(REPO, "context", "personas.json")
 
 # Import helpers from sync_verticals if present
 try:
-    from sync_verticals import update_content_calendar, push_to_supabase, pull_from_supabase, get_supabase_creds
+    from sync_verticals import update_content_calendar, push_to_supabase, pull_from_supabase, get_supabase_creds, supabase_request
 except ImportError:
     sys.path.insert(0, os.path.join(REPO, "scripts"))
-    from sync_verticals import update_content_calendar, push_to_supabase, pull_from_supabase, get_supabase_creds
+    from sync_verticals import update_content_calendar, push_to_supabase, pull_from_supabase, get_supabase_creds, supabase_request
 
 
 def load_verticals():
@@ -66,12 +66,12 @@ def add_vertical(args):
 
     new_v = {
         "id": vid,
-        "label": args.label or vid,
-        "cadence": args.cadence or "0 6 * * 1",
+        "label": args.label.strip() if args.label else vid,
+        "cadence": args.cadence.strip() if args.cadence else "0 6 * * 1",
+        "target_persona": args.persona.strip() if args.persona else "eng_leader",
         "sources": sources,
         "primary_angles": angles,
-        "target_persona": args.persona or "eng_leader",
-        "enable_dataforseo": True if args.dataforseo is None else args.dataforseo,
+        "enable_dataforseo": not args.disable_dataforseo if hasattr(args, "disable_dataforseo") else True,
     }
     verticals.append(new_v)
     save_verticals(verticals)
@@ -97,18 +97,18 @@ def edit_vertical(args):
         print(f"ERROR: Vertical with ID '{vid}' not found.")
         return 1
 
-    if args.label:
+    if args.label is not None:
         target["label"] = args.label.strip()
-    if args.cadence:
+    if args.cadence is not None:
         target["cadence"] = args.cadence.strip()
-    if args.persona:
+    if args.persona is not None:
         target["target_persona"] = args.persona.strip()
     if args.sources is not None:
         target["sources"] = [s.strip() for s in args.sources.split(",") if s.strip()]
     if args.angles is not None:
         target["primary_angles"] = [a.strip() for a in args.angles.split(",") if a.strip()]
-    if args.dataforseo is not None:
-        target["enable_dataforseo"] = args.dataforseo
+    if hasattr(args, "enable_dataforseo") and args.enable_dataforseo is not None:
+        target["enable_dataforseo"] = args.enable_dataforseo
 
     save_verticals(verticals)
     print(f"Updated vertical '{vid}' successfully.")
@@ -135,8 +135,12 @@ def delete_vertical(args):
 
     url, _ = get_supabase_creds()
     if url:
-        print("  Pushing update to Supabase...")
-        push_to_supabase()
+        print(f"  Deleting vertical '{vid}' from Supabase...")
+        res, err = supabase_request(f"editorial_verticals?id=eq.{vid}", method="DELETE")
+        if err:
+            print(f"  Warning deleting vertical from Supabase: {err}")
+        else:
+            print(f"  Successfully deleted '{vid}' from Supabase editorial_verticals.")
     return 0
 
 

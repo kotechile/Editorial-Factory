@@ -505,6 +505,124 @@ function queueCounts(tasks) {
   }, {});
 }
 
+async function cleanPublishedLog(slugVariants = []) {
+  const logPath = join(ROOT, 'context', 'published_log.md');
+  if (!existsSync(logPath)) return;
+  try {
+    const text = await readFile(logPath, 'utf8');
+    const lines = text.split('\n');
+    const uniqueSlugs = slugVariants.filter(Boolean);
+    const filtered = lines.filter((line) => {
+      if (!line.startsWith('|')) return true;
+      if (line.includes('| Date |') || line.includes('|---|')) return true;
+      for (const s of uniqueSlugs) {
+        if (s && line.includes(s)) return false;
+      }
+      return true;
+    });
+    if (filtered.length !== lines.length) {
+      await writeFile(logPath, filtered.join('\n'), 'utf8');
+    }
+  } catch (e) {
+    console.warn('[PublishedLog] Warning cleaning published_log.md:', e.message);
+  }
+}
+
+async function cleanQueueForArticle(slugVariants = []) {
+  try {
+    const { tasks } = await readQueue();
+    if (!tasks || !tasks.length) return;
+    const uniqueSlugs = slugVariants.filter(Boolean);
+    const next = tasks.filter((t) => {
+      for (const s of uniqueSlugs) {
+        if (
+          (t.id && t.id.includes(s)) ||
+          (t.submit_url && t.submit_url.includes(s)) ||
+          (t.post_content && t.post_content.includes(s))
+        ) {
+          return false;
+        }
+      }
+      return true;
+    });
+    if (next.length !== tasks.length) {
+      await writeQueue(next);
+    }
+  } catch (e) {
+    console.warn('[Queue] Warning cleaning queue for article:', e.message);
+  }
+}
+
+async function deleteArticleFromSupabase(slugVariants = []) {
+  const sbConfig = getSupabaseConfig();
+  if (!sbConfig.isConfigured) return { deleted: false, reason: 'not_configured' };
+
+  const uniqueSlugs = [...new Set(slugVariants.filter(Boolean))];
+  const deletedArticleIds = new Set();
+  const operations = [];
+
+  for (const slug of uniqueSlugs) {
+    const enc = encodeURIComponent(slug);
+
+    // 1. Find article rows by slug or JSONB metadata->>slug
+    try {
+      const rows = await supabaseFetch(`articles?select=id,slug,metadata&or=(slug.eq.${enc},metadata->>slug.eq.${enc})`);
+      if (Array.isArray(rows)) {
+        for (const r of rows) {
+          if (r && r.id) deletedArticleIds.add(r.id);
+        }
+      }
+    } catch (e) {
+      try {
+        const rows = await supabaseFetch(`articles?select=id,metadata&metadata->>slug=eq.${enc}`);
+        if (Array.isArray(rows)) {
+          for (const r of rows) {
+            if (r && r.id) deletedArticleIds.add(r.id);
+          }
+        }
+      } catch (e2) {}
+    }
+
+    // 2. Direct DELETE on articles table by slug and metadata->>slug
+    try {
+      await supabaseFetch(`articles?slug=eq.${enc}`, { method: 'DELETE' });
+      operations.push(`articles?slug=eq.${slug}`);
+    } catch (e) {}
+
+    try {
+      await supabaseFetch(`articles?metadata->>slug=eq.${enc}`, { method: 'DELETE' });
+      operations.push(`articles?metadata->>slug=eq.${slug}`);
+    } catch (e) {}
+
+    // 3. Delete from linkedin_posts table by slug and article_url matching
+    try {
+      await supabaseFetch(`linkedin_posts?slug=eq.${enc}`, { method: 'DELETE' });
+      operations.push(`linkedin_posts?slug=eq.${slug}`);
+    } catch (e) {}
+
+    try {
+      await supabaseFetch(`linkedin_posts?article_url=ilike.*${enc}*`, { method: 'DELETE' });
+      operations.push(`linkedin_posts?article_url=ilike.*${slug}*`);
+    } catch (e) {}
+  }
+
+  // 4. Delete by primary ID for all matched articles and associated linkedin_posts
+  for (const id of deletedArticleIds) {
+    const encId = encodeURIComponent(id);
+    try {
+      await supabaseFetch(`linkedin_posts?article_id=eq.${encId}`, { method: 'DELETE' });
+      operations.push(`linkedin_posts?article_id=eq.${id}`);
+    } catch (e) {}
+
+    try {
+      await supabaseFetch(`articles?id=eq.${encId}`, { method: 'DELETE' });
+      operations.push(`articles?id=eq.${id}`);
+    } catch (e) {}
+  }
+
+  return { deleted: true, deletedArticleIds: Array.from(deletedArticleIds), operations };
+}
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
 
@@ -858,8 +976,12 @@ const server = createServer(async (req, res) => {
 
       const safeName = file.replace(/[^a-zA-Z0-9_\-\.]/g, '');
       const baseSlug = safeName.replace(/\.md$/, '').replace(/_final$/, '').replace(/_draft$/, '');
+      const shortSlug = baseSlug.replace(/^[0-9]{4}-[0-9]{2}-[0-9]{2}[-_]/, '');
+      const dateHyphenSlug = baseSlug.replace(/_/g, '-');
       const draftsDir = join(ROOT, 'context', 'drafts');
       const pubDir = join(ROOT, 'published');
+
+      const slugVariants = new Set([safeName, baseSlug, shortSlug, dateHyphenSlug]);
 
       const candidatePaths = [
         join(draftsDir, safeName),
@@ -871,6 +993,18 @@ const server = createServer(async (req, res) => {
         join(pubDir, `${safeName}.md`),
         join(pubDir, `${baseSlug}.md`),
       ];
+
+      // Extract frontmatter metadata from files before unlinking to gather all possible slugs/titles
+      for (const p of candidatePaths) {
+        if (existsSync(p)) {
+          try {
+            const text = await readFile(p, 'utf8');
+            const fm = parseFrontmatter(text);
+            if (fm.slug) slugVariants.add(fm.slug);
+            if (fm.title) slugVariants.add(fm.title);
+          } catch (e) {}
+        }
+      }
 
       const deletedFiles = [];
       for (const p of new Set(candidatePaths)) {
@@ -884,20 +1018,28 @@ const server = createServer(async (req, res) => {
         }
       }
 
-      const sbConfig = getSupabaseConfig();
-      if (sbConfig.isConfigured) {
-        try {
-          await supabaseFetch(`articles?slug=eq.${encodeURIComponent(baseSlug)}`, { method: 'DELETE' });
-        } catch (e) {
-          console.warn('[Supabase] Warning deleting article record:', e.message);
+      // 1. Delete from Supabase (articles + linkedin_posts)
+      const sbResult = await deleteArticleFromSupabase(Array.from(slugVariants));
+
+      // 2. Clean up context/published_log.md
+      await cleanPublishedLog(Array.from(slugVariants));
+
+      // 3. Clean up any related distribution queue tasks (Supabase + local)
+      await cleanQueueForArticle(Array.from(slugVariants));
+
+      if (deletedFiles.length === 0 && (!sbResult.deleted || (sbResult.deletedArticleIds && sbResult.deletedArticleIds.length === 0))) {
+        const sbConfig = getSupabaseConfig();
+        if (!sbConfig.isConfigured) {
+          return sendJson(res, 404, { error: `File '${safeName}' not found.` });
         }
       }
 
-      if (deletedFiles.length === 0 && !sbConfig.isConfigured) {
-        return sendJson(res, 404, { error: `File '${safeName}' not found.` });
-      }
-
-      return sendJson(res, 200, { status: 'ok', deleted: safeName, deleted_files: deletedFiles });
+      return sendJson(res, 200, {
+        status: 'ok',
+        deleted: safeName,
+        deleted_files: deletedFiles,
+        supabase: sbResult,
+      });
     }
 
     // ----------------------------------------------------
