@@ -834,51 +834,145 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     // API: Delete Article / Draft
     // ----------------------------------------------------
-    if ((url.pathname.startsWith('/api/drafts/') || url.pathname === '/api/drafts') && req.method === 'DELETE') {
-      const file = url.searchParams.get('file') || url.pathname.replace(/^\/api\/drafts\/?/, '');
+    const isDraftDelete = (
+      (url.pathname === '/api/drafts/delete' && (req.method === 'POST' || req.method === 'DELETE')) ||
+      ((url.pathname.startsWith('/api/drafts/') || url.pathname === '/api/drafts') &&
+        req.method === 'DELETE' &&
+        url.pathname !== '/api/drafts/detail' &&
+        url.pathname !== '/api/drafts/save')
+    );
+
+    if (isDraftDelete) {
+      let body = {};
+      try {
+        body = await parseJsonBody(req);
+      } catch (e) {
+        body = {};
+      }
+
+      let file = url.searchParams.get('file') || url.searchParams.get('id') || body.file || body.id;
+      if (!file && url.pathname.startsWith('/api/drafts/') && url.pathname !== '/api/drafts/delete') {
+        file = decodeURIComponent(url.pathname.replace(/^\/api\/drafts\/?/, ''));
+      }
       if (!file) return sendJson(res, 400, { error: 'Missing file parameter' });
 
       const safeName = file.replace(/[^a-zA-Z0-9_\-\.]/g, '');
+      const baseSlug = safeName.replace(/\.md$/, '').replace(/_final$/, '').replace(/_draft$/, '');
       const draftsDir = join(ROOT, 'context', 'drafts');
       const pubDir = join(ROOT, 'published');
-      let targetPath = join(draftsDir, safeName);
-      if (!existsSync(targetPath)) targetPath = join(pubDir, safeName);
 
-      if (!existsSync(targetPath)) {
-        return sendJson(res, 404, { error: `File '${safeName}' not found.` });
-      }
+      const candidatePaths = [
+        join(draftsDir, safeName),
+        join(draftsDir, `${safeName}.md`),
+        join(draftsDir, `${baseSlug}_final.md`),
+        join(draftsDir, `${baseSlug}_draft.md`),
+        join(draftsDir, `${baseSlug}.md`),
+        join(pubDir, safeName),
+        join(pubDir, `${safeName}.md`),
+        join(pubDir, `${baseSlug}.md`),
+      ];
 
-      await unlink(targetPath);
-
-      // Clean up companion _draft or _final if it exists in context/drafts
-      if (safeName.endsWith('_final.md')) {
-        const companionPath = join(draftsDir, safeName.replace('_final.md', '_draft.md'));
-        if (existsSync(companionPath)) {
-          try { await unlink(companionPath); } catch (e) {}
-        }
-      } else if (safeName.endsWith('_draft.md')) {
-        const companionPath = join(draftsDir, safeName.replace('_draft.md', '_final.md'));
-        if (existsSync(companionPath)) {
-          try { await unlink(companionPath); } catch (e) {}
+      const deletedFiles = [];
+      for (const p of new Set(candidatePaths)) {
+        if (existsSync(p)) {
+          try {
+            await unlink(p);
+            deletedFiles.push(p);
+          } catch (e) {
+            console.warn('[Delete] Error unlinking file:', p, e.message);
+          }
         }
       }
 
       const sbConfig = getSupabaseConfig();
       if (sbConfig.isConfigured) {
         try {
-          const slug = safeName.replace(/\.md$/, '').replace(/_final$/, '').replace(/_draft$/, '');
-          await supabaseFetch(`articles?slug=eq.${encodeURIComponent(slug)}`, { method: 'DELETE' });
+          await supabaseFetch(`articles?slug=eq.${encodeURIComponent(baseSlug)}`, { method: 'DELETE' });
         } catch (e) {
           console.warn('[Supabase] Warning deleting article record:', e.message);
         }
       }
 
-      return sendJson(res, 200, { status: 'ok', deleted: safeName });
+      if (deletedFiles.length === 0 && !sbConfig.isConfigured) {
+        return sendJson(res, 404, { error: `File '${safeName}' not found.` });
+      }
+
+      return sendJson(res, 200, { status: 'ok', deleted: safeName, deleted_files: deletedFiles });
     }
 
     // ----------------------------------------------------
     // API: Personas CRUD & Settings
     // ----------------------------------------------------
+    if (url.pathname === '/api/personas/save' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { isEdit, persona } = body;
+      if (!persona || !persona.id || !persona.label) {
+        return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
+      }
+
+      const slug = persona.id.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_');
+      const personas = await getLocalPersonas();
+      const sbConfig = getSupabaseConfig();
+
+      if (!isEdit && personas[slug]) {
+        return sendJson(res, 409, { error: `Persona with ID '${slug}' already exists.` });
+      }
+
+      const payload = {
+        label: persona.label.trim(),
+        reader_level: (persona.reader_level || '').trim(),
+        tone: (persona.tone || '').trim(),
+        wants: (persona.wants || '').trim(),
+      };
+
+      personas[slug] = payload;
+      await saveLocalPersonas(personas);
+
+      if (sbConfig.isConfigured) {
+        try {
+          if (isEdit) {
+            await supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(slug)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({ ...payload, updated_at: new Date().toISOString() }),
+            });
+          } else {
+            await supabaseFetch('editorial_personas', {
+              method: 'POST',
+              body: JSON.stringify({ id: slug, ...payload, updated_at: new Date().toISOString() }),
+            });
+          }
+        } catch (e) {
+          console.warn('[Supabase] Warning syncing persona save:', e.message);
+        }
+      }
+
+      return sendJson(res, 200, { status: 'ok', id: slug, persona: payload });
+    }
+
+    if (url.pathname === '/api/personas/delete' && (req.method === 'POST' || req.method === 'DELETE')) {
+      let body = {};
+      try { body = await parseJsonBody(req); } catch (e) { body = {}; }
+      const targetId = url.searchParams.get('id') || body.id;
+      if (!targetId) return sendJson(res, 400, { error: 'Missing persona id' });
+
+      const personas = await getLocalPersonas();
+      if (!personas[targetId]) {
+        return sendJson(res, 404, { error: `Persona '${targetId}' not found.` });
+      }
+
+      delete personas[targetId];
+      await saveLocalPersonas(personas);
+
+      const sbConfig = getSupabaseConfig();
+      if (sbConfig.isConfigured) {
+        supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(targetId)}`, {
+          method: 'DELETE',
+        }).catch((e) => console.warn('[Supabase] Warning syncing deleted persona:', e.message));
+      }
+
+      return sendJson(res, 200, { status: 'ok', deleted: targetId });
+    }
+
     if (url.pathname === '/api/personas') {
       const sbConfig = getSupabaseConfig();
       if (req.method === 'GET') {
@@ -927,62 +1021,145 @@ const server = createServer(async (req, res) => {
 
     if (url.pathname.startsWith('/api/personas/')) {
       const subpath = decodeURIComponent(url.pathname.replace(/^\/api\/personas\//, ''));
-      const sbConfig = getSupabaseConfig();
+      if (subpath !== 'save' && subpath !== 'delete') {
+        const sbConfig = getSupabaseConfig();
 
-      if (req.method === 'PUT') {
-        const body = await parseJsonBody(req);
-        const personas = await getLocalPersonas();
+        if (req.method === 'PUT') {
+          const body = await parseJsonBody(req);
+          const personas = await getLocalPersonas();
 
-        if (!personas[subpath]) {
-          return sendJson(res, 404, { error: `Persona '${subpath}' not found.` });
+          if (!personas[subpath]) {
+            return sendJson(res, 404, { error: `Persona '${subpath}' not found.` });
+          }
+
+          const existing = personas[subpath];
+          const updated = {
+            label: body.label !== undefined ? body.label.trim() : existing.label,
+            reader_level: body.reader_level !== undefined ? body.reader_level.trim() : existing.reader_level,
+            tone: body.tone !== undefined ? body.tone.trim() : existing.tone,
+            wants: body.wants !== undefined ? body.wants.trim() : existing.wants,
+          };
+
+          personas[subpath] = updated;
+          await saveLocalPersonas(personas);
+
+          if (sbConfig.isConfigured) {
+            supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({
+                ...updated,
+                updated_at: new Date().toISOString(),
+              }),
+            }).catch((e) => console.warn('[Supabase] Warning syncing updated persona:', e.message));
+          }
+
+          return sendJson(res, 200, { status: 'ok', id: subpath, persona: updated });
         }
 
-        const existing = personas[subpath];
-        const updated = {
-          label: body.label !== undefined ? body.label.trim() : existing.label,
-          reader_level: body.reader_level !== undefined ? body.reader_level.trim() : existing.reader_level,
-          tone: body.tone !== undefined ? body.tone.trim() : existing.tone,
-          wants: body.wants !== undefined ? body.wants.trim() : existing.wants,
-        };
+        if (req.method === 'DELETE') {
+          const personas = await getLocalPersonas();
+          if (!personas[subpath]) {
+            return sendJson(res, 404, { error: `Persona '${subpath}' not found.` });
+          }
 
-        personas[subpath] = updated;
-        await saveLocalPersonas(personas);
+          delete personas[subpath];
+          await saveLocalPersonas(personas);
 
-        if (sbConfig.isConfigured) {
-          supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
-            method: 'PATCH',
-            body: JSON.stringify({
-              ...updated,
-              updated_at: new Date().toISOString(),
-            }),
-          }).catch((e) => console.warn('[Supabase] Warning syncing updated persona:', e.message));
+          if (sbConfig.isConfigured) {
+            supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
+              method: 'DELETE',
+            }).catch((e) => console.warn('[Supabase] Warning syncing deleted persona:', e.message));
+          }
+
+          return sendJson(res, 200, { status: 'ok', deleted: subpath });
         }
-
-        return sendJson(res, 200, { status: 'ok', id: subpath, persona: updated });
-      }
-
-      if (req.method === 'DELETE') {
-        const personas = await getLocalPersonas();
-        if (!personas[subpath]) {
-          return sendJson(res, 404, { error: `Persona '${subpath}' not found.` });
-        }
-
-        delete personas[subpath];
-        await saveLocalPersonas(personas);
-
-        if (sbConfig.isConfigured) {
-          supabaseFetch(`editorial_personas?id=eq.${encodeURIComponent(subpath)}`, {
-            method: 'DELETE',
-          }).catch((e) => console.warn('[Supabase] Warning syncing deleted persona:', e.message));
-        }
-
-        return sendJson(res, 200, { status: 'ok', deleted: subpath });
       }
     }
 
     // ----------------------------------------------------
     // API: Verticals CRUD & Settings
     // ----------------------------------------------------
+    if (url.pathname === '/api/verticals/save' && req.method === 'POST') {
+      const body = await parseJsonBody(req);
+      const { isEdit, vertical } = body;
+      if (!vertical || !vertical.id || !vertical.label) {
+        return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
+      }
+
+      const slug = vertical.id.trim().toLowerCase().replace(/[^a-z0-9_]/g, '_');
+      const verticals = await getLocalVerticals();
+      const sbConfig = getSupabaseConfig();
+      const index = verticals.findIndex((v) => v.id === slug);
+
+      if (!isEdit && index !== -1) {
+        return sendJson(res, 409, { error: `Vertical with ID '${slug}' already exists.` });
+      }
+
+      const payload = {
+        id: slug,
+        label: vertical.label.trim(),
+        cadence: (vertical.cadence || '0 6 * * 1').trim(),
+        target_persona: (vertical.target_persona || 'eng_leader').trim(),
+        sources: Array.isArray(vertical.sources) ? vertical.sources : [],
+        primary_angles: Array.isArray(vertical.primary_angles) ? vertical.primary_angles : [],
+        enable_dataforseo: vertical.enable_dataforseo !== undefined ? Boolean(vertical.enable_dataforseo) : (vertical.dataforseo_enabled !== undefined ? Boolean(vertical.dataforseo_enabled) : true),
+      };
+
+      if (index !== -1) {
+        verticals[index] = payload;
+      } else {
+        verticals.push(payload);
+      }
+
+      await saveLocalVerticals(verticals);
+
+      if (sbConfig.isConfigured) {
+        try {
+          if (isEdit) {
+            await supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(slug)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({ ...payload, updated_at: new Date().toISOString() }),
+            });
+          } else {
+            await supabaseFetch('editorial_verticals', {
+              method: 'POST',
+              body: JSON.stringify({ ...payload, is_active: true, updated_at: new Date().toISOString() }),
+            });
+          }
+        } catch (e) {
+          console.warn('[Supabase] Warning syncing vertical save:', e.message);
+        }
+      }
+
+      return sendJson(res, 200, { status: 'ok', vertical: payload });
+    }
+
+    if (url.pathname === '/api/verticals/delete' && (req.method === 'POST' || req.method === 'DELETE')) {
+      let body = {};
+      try { body = await parseJsonBody(req); } catch (e) { body = {}; }
+      const targetId = url.searchParams.get('id') || body.id;
+      if (!targetId) return sendJson(res, 400, { error: 'Missing vertical id' });
+
+      const verticals = await getLocalVerticals();
+      const initialLen = verticals.length;
+      const filtered = verticals.filter((v) => v.id !== targetId);
+
+      if (filtered.length === initialLen) {
+        return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
+      }
+
+      await saveLocalVerticals(filtered);
+
+      const sbConfig = getSupabaseConfig();
+      if (sbConfig.isConfigured) {
+        supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+          method: 'DELETE',
+        }).catch((e) => console.warn('[Supabase] Warning syncing deleted vertical:', e.message));
+      }
+
+      return sendJson(res, 200, { status: 'ok', deleted: targetId });
+    }
+
     if (url.pathname === '/api/verticals') {
       const sbConfig = getSupabaseConfig();
 
@@ -1078,65 +1255,67 @@ const server = createServer(async (req, res) => {
 
       const targetId = decodeURIComponent(subpath);
 
-      if (req.method === 'PUT') {
-        const body = await parseJsonBody(req);
-        const verticals = await getLocalVerticals();
-        const index = verticals.findIndex((v) => v.id === targetId);
+      if (targetId !== 'save' && targetId !== 'delete') {
+        if (req.method === 'PUT') {
+          const body = await parseJsonBody(req);
+          const verticals = await getLocalVerticals();
+          const index = verticals.findIndex((v) => v.id === targetId);
 
-        if (index === -1) {
-          return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
+          if (index === -1) {
+            return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
+          }
+
+          const existing = verticals[index];
+          const updated = {
+            ...existing,
+            label: body.label !== undefined ? body.label.trim() : existing.label,
+            cadence: body.cadence !== undefined ? body.cadence.trim() : existing.cadence,
+            target_persona: body.target_persona !== undefined ? body.target_persona.trim() : existing.target_persona,
+            sources: Array.isArray(body.sources) ? body.sources : existing.sources,
+            primary_angles: Array.isArray(body.primary_angles) ? body.primary_angles : existing.primary_angles,
+            enable_dataforseo: body.enable_dataforseo !== undefined ? Boolean(body.enable_dataforseo) : (existing.enable_dataforseo !== undefined ? existing.enable_dataforseo : true),
+          };
+
+          verticals[index] = updated;
+          await saveLocalVerticals(verticals);
+
+          if (sbConfig.isConfigured) {
+            supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({
+                label: updated.label,
+                cadence: updated.cadence,
+                target_persona: updated.target_persona,
+                sources: updated.sources,
+                primary_angles: updated.primary_angles,
+                enable_dataforseo: updated.enable_dataforseo,
+                updated_at: new Date().toISOString(),
+              }),
+            }).catch((e) => console.warn('[Supabase] Warning syncing updated vertical:', e.message));
+          }
+
+          return sendJson(res, 200, { status: 'ok', vertical: updated });
         }
 
-        const existing = verticals[index];
-        const updated = {
-          ...existing,
-          label: body.label !== undefined ? body.label.trim() : existing.label,
-          cadence: body.cadence !== undefined ? body.cadence.trim() : existing.cadence,
-          target_persona: body.target_persona !== undefined ? body.target_persona.trim() : existing.target_persona,
-          sources: Array.isArray(body.sources) ? body.sources : existing.sources,
-          primary_angles: Array.isArray(body.primary_angles) ? body.primary_angles : existing.primary_angles,
-          enable_dataforseo: body.enable_dataforseo !== undefined ? Boolean(body.enable_dataforseo) : (existing.enable_dataforseo !== undefined ? existing.enable_dataforseo : true),
-        };
+        if (req.method === 'DELETE') {
+          const verticals = await getLocalVerticals();
+          const initialLen = verticals.length;
+          const filtered = verticals.filter((v) => v.id !== targetId);
 
-        verticals[index] = updated;
-        await saveLocalVerticals(verticals);
+          if (filtered.length === initialLen) {
+            return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
+          }
 
-        if (sbConfig.isConfigured) {
-          supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
-            method: 'PATCH',
-            body: JSON.stringify({
-              label: updated.label,
-              cadence: updated.cadence,
-              target_persona: updated.target_persona,
-              sources: updated.sources,
-              primary_angles: updated.primary_angles,
-              enable_dataforseo: updated.enable_dataforseo,
-              updated_at: new Date().toISOString(),
-            }),
-          }).catch((e) => console.warn('[Supabase] Warning syncing updated vertical:', e.message));
+          await saveLocalVerticals(filtered);
+
+          if (sbConfig.isConfigured) {
+            supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
+              method: 'DELETE',
+            }).catch((e) => console.warn('[Supabase] Warning syncing deleted vertical:', e.message));
+          }
+
+          return sendJson(res, 200, { status: 'ok', deleted: targetId });
         }
-
-        return sendJson(res, 200, { status: 'ok', vertical: updated });
-      }
-
-      if (req.method === 'DELETE') {
-        const verticals = await getLocalVerticals();
-        const initialLen = verticals.length;
-        const filtered = verticals.filter((v) => v.id !== targetId);
-
-        if (filtered.length === initialLen) {
-          return sendJson(res, 404, { error: `Vertical '${targetId}' not found.` });
-        }
-
-        await saveLocalVerticals(filtered);
-
-        if (sbConfig.isConfigured) {
-          supabaseFetch(`editorial_verticals?id=eq.${encodeURIComponent(targetId)}`, {
-            method: 'DELETE',
-          }).catch((e) => console.warn('[Supabase] Warning syncing deleted vertical:', e.message));
-        }
-
-        return sendJson(res, 200, { status: 'ok', deleted: targetId });
       }
     }
 

@@ -3171,9 +3171,20 @@ Ready for commands.</div>
       document.getElementById('deleteModalBackdrop').classList.remove('active');
 
       if (type === 'draft') {
-        loadLibrary();
-        if (currentFile === id && allDrafts.length > 1) {
-          selectDraft(allDrafts.find((d) => d.file !== id).file);
+        await loadLibrary();
+        if (currentFile === id) {
+          if (allDrafts.length > 0) {
+            selectDraft(allDrafts[0].file);
+          } else {
+            currentFile = null;
+            currentMarkdown = '';
+            document.getElementById('currentArticleTitle').textContent = 'No article selected';
+            document.getElementById('currentWordCount').textContent = '0';
+            document.getElementById('currentReadTime').textContent = '0';
+            document.getElementById('currentArticleLink').textContent = '';
+            markdownEditor.value = '';
+            renderedArticleContainer.innerHTML = '<div style="text-align:center; padding: 3rem; color: var(--text-dim);">No article selected.</div>';
+          }
         }
       } else {
         loadVerticals();
