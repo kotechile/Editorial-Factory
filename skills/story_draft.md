@@ -12,7 +12,7 @@ evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity
 | **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed (**Why it matters / The big picture**). |
 | **Tactical insight** | The actionable, specific takeaways for the target reader (`persona:` from `context/personas.json`). Sequence 3+ points cleanly for bulletization. |
 | **Nuanced takeaway** | The honest limitation or counter-argument (**The catch / Between the lines**). Ends on substance, not a cheerlead. |
-| **TL;DR** | 3 scannable bullets capturing the lead, the insight, and the catch. **Long-form only.** |
+| **TL;DR** | 3 scannable bullets capturing the core problem/reality, the practical moves explained in plain English, and the honest catch/takeaway. Must clearly explain what the point means in conversational English rather than dumping unexplained buzzwords. **Long-form only.** |
 
 The **TOC is render-time only** — the site derives it from the section headings. Never write a
 "Table of Contents" into the article body.
@@ -22,6 +22,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 - Two lengths from one skeleton: long-form draft + ~1,300-char LinkedIn post.
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
+- **Plain-English TL;DR rule:** The 3 `<!-- tldr -->` bullets must explain the underlying concepts clearly in plain English. A reader scanning only the bullets must understand *what* happened, *how* the solution works in simple terms, and *why* it matters—never compress ideas into cryptic jargon or comma-separated lists of unexplained terms.
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
 
 ## 4. Output schema

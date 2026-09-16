@@ -22,11 +22,11 @@ To apply Smart Brevity effectively, the Stylist requires three explicit inputs:
    - **By the numbers:** (data / benchmark breakdowns)
    - **What to do:** / **The playbook:** (tactical, doable moves)
    - **The catch:** / **Yes, but:** / **Between the lines:** (honest nuance / counter-argument)
-4. **Scannability & Bullets:** Never output dense blocks of text. Break down any sequence of 3+ data points, stats, or related steps into clean, bulleted lists with bold lead-ins.
+4. **Scannability & Bullets:** Never output dense blocks of text. Break down any sequence of 3+ data points, stats, or related steps into clean, bulleted lists with bold lead-ins. Under `<!-- tldr -->`, produce exactly 3 scannable bullets that clearly explain each takeaway in plain, conversational English (what happened, how it works, and why it matters) rather than compressing unexplained jargon.
 5. **Strong, Simple Diction:** Strip passive verbs, weak adverbs, and bloated "10-dollar" corporate/academic jargon. Prefer short, single-syllable, visual words.
 6. **Paragraph Discipline:** Keep paragraphs exceptionally brief — **1 to 3 sentences maximum**.
 7. **The Exit ("Go Deeper"):** Conclude cleanly with designated **Go deeper:** links/references (`<!-- internal-links -->` and `## Sources`).
-8. **Per-section critique:** Iterate section by section (lead → tension → tactical-insight → nuanced-takeaway → tldr) against each section's own gate, then one final whole-piece coherence pass.
+8. **Per-section critique:** Iterate section by section (lead → tension → tactical-insight → nuanced-takeaway → tldr) against each section's own gate (ensuring `tldr` passes both scannability and plain-English clarity), then one final whole-piece coherence pass.
 9. **Preservation:** Preserve all verified facts, inline citations `[n]`, frontmatter tags, and `## Sources` verbatim.
 
 ## Interaction contract

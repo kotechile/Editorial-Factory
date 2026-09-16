@@ -44,5 +44,7 @@ upserted to Supabase (`articles`); the table above is the record.
 
 ## Awaiting approval — NOT published
 
-None as of 2026-09-12: every finished draft in `context/drafts/` has been published. New drafts land
-here (or in this section) only after a pipeline run finishes and before the `@Simon approve` gate.
+| Date | Vertical | Slug | Headline | Status |
+|---|---|---|---|---|
+| 2026-09-14 | agentic_ai | openai-agents-api-managed-runtime | OpenAI just made the agent loop a commodity | finished at `context/drafts/2026-09-14_openai-agents-api-managed-runtime_final.md`; held at `@Simon approve` gate, not distributed |
+| 2026-09-16 | gpu_hardware | openai-jalapeno-custom-silicon | OpenAI's custom chip beats Nvidia on power | finished at `context/drafts/2026-09-16_openai-jalapeno-custom-silicon_final.md`; held at `@Simon approve` gate, not distributed |

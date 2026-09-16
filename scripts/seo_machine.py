@@ -283,9 +283,9 @@ The hard catch is that closing this gap takes upfront investment in measurement 
 <!-- tldr -->
 ## Key Takeaways
 
-- The gap between the pitch and the real-world result is the real cost center.
+- The gap between vendor promises and production reality is the real cost center that catches teams off guard.
 - {primary_stance}
-- Bound the failure modes, validate against real data, and gate decisions on evidence.
+- Set hard boundaries early, test against your own field data instead of demos, and never let models take actions without strict checking rules.
 
 ## Sources
 {sources_block}

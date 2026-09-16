@@ -48,14 +48,14 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) and polish `title` for punchy clarity.
 - PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
-- Keep the TL;DR as the structured <!-- tldr --> field, exactly 3 scannable bullet items starting with "-". Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC.
+- Keep the TL;DR as the structured <!-- tldr --> field, exactly 3 scannable bullet items starting with "-". Each bullet MUST clearly explain its takeaway point in plain, conversational English (what happened, how the mechanism works in simple words, and why it matters) rather than stringing together unexplained buzzwords or acronyms. Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC.
 
 SECTION GATES (each section must pass its own gate):
 - <!-- lead -->: delivers the core news/stat immediately in sentence 1; no throat-clearing or preamble. HIGHEST PRIORITY.
 - <!-- tension -->: frames the shift with a context signpost (**The big picture:** or **Why it matters:**); names who it hurts/helps.
 - <!-- tactical-insight -->: practitioner moves structured with clean bullets and bold lead-ins for 3+ items; doable for the persona.
 - <!-- nuanced-takeaway -->: honest limitation / counter-argument with a signpost (**The catch:** or **Between the lines:**).
-- <!-- tldr -->: exactly 3 scannable bullets; does not read like a summary paragraph.
+- <!-- tldr -->: exactly 3 scannable bullets; does not read like a summary paragraph; clearly explains each point in plain, accessible English without unexplained buzzwords.
 
 ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):
 - Every acronym is expanded at its FIRST use in the body (either "Full Name (ACR)" or "ACR (...plain meaning)"). Zero undefined acronyms at the end. Never reuse an acronym bare after introducing it.
@@ -67,7 +67,7 @@ ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary
 
 OUTPUT FORMAT (strict):
 1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM), then the <!-- linkedin --> variant.
-2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason>" or "FAIL — <reason>".
+2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason verifying plain-English clarity and scannability>" or "FAIL — <reason>".
 
 Now rewrite the following draft:"""
 

@@ -53,3 +53,10 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 ## 4. Failure handling
 - Zero candidates ≥ 60 → log query syntax to `skills/self_improvement_eval.md`, widen to 45 days,
   re-run once. If still empty, return "no publish" — never pad.
+- **Anchor-driven verticals** (configured sources that are annual/quarterly surveys or benchmarks —
+  e.g. `enterprise_tech_leadership`'s `cloud_cost_reports`, `hacker_news`, `substack_tech_leads`)
+  spike quarterly, not weekly. A weekly re-run whose window has advanced only ~7 days will
+  legitimately find no fresh primary data between spikes. The correct outcome is "no publish" — do
+  NOT widen the window past 45 days to smuggle a stale survey (e.g. an April survey into a
+  September window) past the 30-day freshness gate. Anchor-driven weakness is a cadence fact, not
+  a sweep defect.
