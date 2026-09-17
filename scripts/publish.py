@@ -155,12 +155,16 @@ def parse_draft(file_path: str):
         except Exception:
             pass
 
+    status = "published" if "/published/" in os.path.abspath(file_path) else "draft"
+
     return {
         "title": title,
         "slug": slug,
         "vertical": vertical,
         "persona": persona,
         "date": date_str,
+        "status": status,
+        "file_path": str(file_path),
         "article_url": article_url,
         "promo_url": promo_url,
         "promo_label": promo_label,
@@ -308,17 +312,31 @@ _COLUMNS_CACHE = None
 def _articles_live_columns(supabase_url: str, service_key: str):
     """Return the set of column names currently present on public.articles.
 
-    Probes each candidate column via PostgREST `?select=<col>&limit=1` (HTTP 200 =
-    exists, 400 = missing), which works even when the OpenAPI root returns 404.
+    Probes live table via select=* (fast path) or candidate columns via PostgREST
     Cached per process. Returns None on total failure so callers fall back to
     metadata-only persistence safely.
     """
     global _COLUMNS_CACHE
     if _COLUMNS_CACHE is not None:
         return _COLUMNS_CACHE
+    base = supabase_url.rstrip("/") + "/rest/v1/articles"
+    # Fast path: 1 request
+    try:
+        req = urllib.request.Request(
+            f"{base}?select=*&limit=1",
+            headers={"apikey": service_key, "Authorization": f"Bearer {service_key}",
+                     "Accept": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            if isinstance(data, list) and len(data) > 0 and isinstance(data[0], dict):
+                _COLUMNS_CACHE = set(data[0].keys())
+                return _COLUMNS_CACHE
+    except Exception:
+        pass
+
     candidates = ["slug", "vertical", "headline", "body_md", "content", "title",
                   "source_url", "sources", "tags", "status", "live_urls", "metadata"]
-    base = supabase_url.rstrip("/") + "/rest/v1/articles"
     found = set()
     try:
         for col in candidates:
@@ -328,11 +346,10 @@ def _articles_live_columns(supabase_url: str, service_key: str):
                          "Accept": "application/json"},
             )
             try:
-                with urllib.request.urlopen(req, timeout=20) as resp:
+                with urllib.request.urlopen(req, timeout=5) as resp:
                     found.add(col)
             except urllib.error.HTTPError as e:
                 if e.code != 400:
-                    # unexpected (auth/network) — bail to fallback
                     raise
     except Exception as e:
         print(f"  [Supabase] Column introspection failed ({e}); using metadata-only.")
@@ -427,14 +444,17 @@ def sync_to_supabase(data: dict, live_urls: dict):
     # Clean None values for clean JSON
     clean_seo = {k: v for k, v in seo_metadata.items() if v is not None and v != ""}
 
+    status = data.get("status") or ("published" if "/published/" in str(data.get("file_path", "")) else "draft")
+    targets = ["published/"] if status == "published" else ["context/drafts/"]
+
     metadata = {
         "slug": data.get("slug"),
         "vertical": data.get("vertical"),
         "headline": data.get("title"),
         "sources": data.get("sources") or [],
         "linkedin_post": data.get("linkedin_post"),
-        "status": "published",
-        "targets": ["published/"],
+        "status": status,
+        "targets": targets,
         "live_urls": live_urls or {},
         "article_url": (data.get("article_url") or live_urls.get("article_url", "")) or None,
         "promo_url": (data.get("promo_url") or live_urls.get("promo_url", "")) or None,
@@ -452,7 +472,7 @@ def sync_to_supabase(data: dict, live_urls: dict):
         "source_url": source_url or None,
         "sources": data.get("sources") or [],
         "tags": [data.get("vertical")] if data.get("vertical") else [],
-        "status": "published",
+        "status": status,
         "live_urls": live_urls or {},
         "primary_keyword": data.get("primary_keyword") or None,
         "secondary_keywords": data.get("secondary_keywords") or [],

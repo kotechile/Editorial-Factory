@@ -48,3 +48,4 @@ upserted to Supabase (`articles`); the table above is the record.
 |---|---|---|---|---|
 | 2026-09-14 | agentic_ai | openai-agents-api-managed-runtime | OpenAI just made the agent loop a commodity | finished at `context/drafts/2026-09-14_openai-agents-api-managed-runtime_final.md`; held at `@Simon approve` gate, not distributed |
 | 2026-09-16 | gpu_hardware | openai-jalapeno-custom-silicon | OpenAI's custom chip beats Nvidia on power | finished at `context/drafts/2026-09-16_openai-jalapeno-custom-silicon_final.md`; held at `@Simon approve` gate, not distributed |
+| 2026-09-17 | agentic_ai | salesforce-agent-harness-beats-model | The harness beats the model: Salesforce's 48-point proof | finished at `context/drafts/2026-09-17_salesforce-agent-harness-beats-model_final.md`; held at `@Simon approve` gate, not distributed |

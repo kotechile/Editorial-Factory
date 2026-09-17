@@ -623,6 +623,123 @@ async function deleteArticleFromSupabase(slugVariants = []) {
   return { deleted: true, deletedArticleIds: Array.from(deletedArticleIds), operations };
 }
 
+async function syncArticleToSupabase(item) {
+  const sbConfig = getSupabaseConfig();
+  if (!sbConfig.isConfigured) return { status: 'skipped', reason: 'supabase_not_configured' };
+
+  const markdown = await readFile(item.path, 'utf8');
+  const fm = parseFrontmatter(markdown);
+  const titleMatch = markdown.match(/^#\s+(.+)$/m);
+  const title = fm.title || (titleMatch ? titleMatch[1].trim() : item.file);
+
+  const baseName = item.file.replace(/\.md$/, '').replace(/_final$/, '').replace(/_draft$/, '');
+  const slug = fm.slug || baseName.replace(/^\d{4}-\d{2}-\d{2}_/, '');
+  const vertical = fm.vertical || 'general';
+  const status = item.type === 'published' ? 'published' : 'draft';
+
+  let linkedin = '';
+  if (markdown.includes('<!-- linkedin -->')) {
+    linkedin = markdown.split('<!-- linkedin -->')[1].trim();
+  }
+
+  const seoMetadata = {
+    primary_keyword: fm.primary_keyword || null,
+    secondary_keywords: Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [],
+    search_volume: fm.search_volume || null,
+    search_intent: fm.search_intent || null,
+    keyword_difficulty: fm.keyword_difficulty || null,
+    meta_title: fm.meta_title || null,
+    meta_description: fm.meta_description || null,
+  };
+
+  const metadata = {
+    slug,
+    vertical,
+    headline: title,
+    status,
+    file: item.file,
+    targets: item.type === 'published' ? ['published/'] : ['context/drafts/'],
+    seo: seoMetadata,
+    linkedin_post: linkedin,
+  };
+
+  const payload = {
+    slug,
+    vertical,
+    headline: title,
+    title,
+    body_md: markdown,
+    content: markdown,
+    status,
+    primary_keyword: fm.primary_keyword || null,
+    secondary_keywords: Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [],
+    search_volume: fm.search_volume || null,
+    search_intent: fm.search_intent || null,
+    meta_title: fm.meta_title || null,
+    meta_description: fm.meta_description || null,
+    metadata,
+  };
+
+  const encSlug = encodeURIComponent(slug);
+  let existing = null;
+  try {
+    const rows = await supabaseFetch(`articles?select=id,slug,metadata&or=(slug.eq.${encSlug},metadata->>slug.eq.${encSlug})&limit=1`);
+    if (Array.isArray(rows) && rows.length) existing = rows[0];
+  } catch (e) {
+    try {
+      const rows = await supabaseFetch(`articles?select=id,metadata&metadata->>slug=eq.${encSlug}&limit=1`);
+      if (Array.isArray(rows) && rows.length) existing = rows[0];
+    } catch (e2) {}
+  }
+
+  if (existing && existing.id) {
+    await supabaseFetch(`articles?id=eq.${encodeURIComponent(existing.id)}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ ...payload, updated_at: new Date().toISOString() }),
+    });
+    return { action: 'updated', id: existing.id, slug, status };
+  } else {
+    const inserted = await supabaseFetch('articles', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    });
+    const id = Array.isArray(inserted) && inserted.length ? inserted[0].id : null;
+    return { action: 'inserted', id, slug, status };
+  }
+}
+
+async function syncAllArticlesToSupabase() {
+  const pubDir = join(ROOT, 'published');
+  const draftsDir = join(ROOT, 'context', 'drafts');
+  const allItems = [];
+
+  if (existsSync(pubDir)) {
+    const pubFiles = (await readdir(pubDir)).filter((f) => f.endsWith('.md'));
+    for (const f of pubFiles) {
+      allItems.push({ file: f, path: join(pubDir, f), type: 'published' });
+    }
+  }
+
+  if (existsSync(draftsDir)) {
+    const draftFiles = (await readdir(draftsDir)).filter((f) => f.endsWith('.md') && !f.endsWith('_draft.md'));
+    for (const f of draftFiles) {
+      allItems.push({ file: f, path: join(draftsDir, f), type: 'draft' });
+    }
+  }
+
+  const results = [];
+  for (const item of allItems) {
+    try {
+      const res = await syncArticleToSupabase(item);
+      results.push({ file: item.file, ...res });
+    } catch (err) {
+      results.push({ file: item.file, action: 'error', error: err.message });
+    }
+  }
+
+  return { total: allItems.length, synced: results.filter((r) => r.action === 'inserted' || r.action === 'updated').length, details: results };
+}
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
 
@@ -838,6 +955,15 @@ const server = createServer(async (req, res) => {
       });
     }
 
+    if (url.pathname === '/api/articles/sync-supabase' && req.method === 'POST') {
+      try {
+        const result = await syncAllArticlesToSupabase();
+        return sendJson(res, 200, { status: 'ok', ...result });
+      } catch (err) {
+        return sendJson(res, 500, { error: err.message });
+      }
+    }
+
     if (url.pathname === '/api/drafts/save' && req.method === 'POST') {
       const body = await parseJsonBody(req);
       const { file, markdown } = body;
@@ -850,7 +976,15 @@ const server = createServer(async (req, res) => {
       const targetPath = join(draftsDir, safeName.endsWith('.md') ? safeName : `${safeName}.md`);
       await writeFile(targetPath, markdown, 'utf8');
 
-      return sendJson(res, 200, { status: 'ok', file: safeName });
+      // Sync updated draft to Supabase articles table
+      let sbSync = null;
+      try {
+        sbSync = await syncArticleToSupabase({ file: safeName, path: targetPath, type: 'draft' });
+      } catch (e) {
+        console.warn('[Supabase] Warning syncing draft save:', e.message);
+      }
+
+      return sendJson(res, 200, { status: 'ok', file: safeName, supabase: sbSync });
     }
 
     if (url.pathname === '/api/generate-suite' && req.method === 'POST') {
@@ -1629,4 +1763,10 @@ server.listen(PORT, () => {
   console.log(`PressFlow Editorial Dashboard on http://localhost:${PORT}`);
   console.log(`Storage Mode: ${sb.isConfigured ? '🟢 Supabase (' + sb.url + ')' : '🟡 Local JSON (context/verticals.json)'}`);
   console.log(`======================================================\n`);
+
+  if (sb.isConfigured) {
+    syncAllArticlesToSupabase()
+      .then((res) => console.log(`[Supabase Auto-Sync] Synced ${res.synced}/${res.total} articles to Supabase.`))
+      .catch((err) => console.warn('[Supabase Auto-Sync] Warning:', err.message));
+  }
 });

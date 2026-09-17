@@ -68,6 +68,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) and polish `title` for punchy clarity.
 - PRESERVE the `<!-- schema -->` block (JSON-LD) and `<!-- internal-links -->` block VERBATIM if present, placed at the end of the document.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
+- PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - Format the TL;DR as the structured <!-- tldr --> field strictly following this 3-part At a Glance schema:
   1) "- **The Reality Check:** <core baseline/problem explained in 1-2 plain-English sentences>"
   2) "- **The Winning Moves:** <summary of playbook>" followed by indented sub-bullets:
@@ -134,7 +135,7 @@ def humanize_single_draft(draft, out_path=None):
         except Exception as e:
             print(f"ERROR rewrite attempt {attempt}: {e}")
             break
-        result = clean(raw)
+        result = ht.normalize_frontmatter(clean(raw))
         if out_path:
             out_path.write_text(result + "\n")
             diag = ht.measure(out_path)

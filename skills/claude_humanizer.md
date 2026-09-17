@@ -65,6 +65,10 @@ Introduce supporting context using bolded, standardized guide words followed imm
 - Preserve the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
 - Preserve every citation `[n]` and the source list.
 - Preserve the frontmatter (including SEO tags `meta_title`, `meta_description`, `primary_keyword`, `search_volume`) and refine `title` for punchy clarity.
+- Preserve the frontmatter's opening and closing `---` YAML delimiters exactly. The frontier has
+  been observed wrapping the frontmatter in a triple-backtick code fence (dropping the `---`
+  lines), which breaks frontmatter parsing downstream. All three humanize scripts now normalize
+  this with `humanizer_tools.normalize_frontmatter()`; do not remove that call.
 - Preserve the `<!-- schema -->` (JSON-LD) and `<!-- internal-links -->` blocks verbatim when present, keeping them at the end of the markdown draft.
 - Ensure the article body is clean markup starting with the lead paragraph and contains descriptive, high-quality `## ` (H2) section headings (target ≤ 6 words).
 - Preserve each section's distinct, brief-sourced action items — bulletize them clearly for the target persona.

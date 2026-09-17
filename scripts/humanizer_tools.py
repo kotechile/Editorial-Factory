@@ -54,6 +54,35 @@ def measure(path):
     return ca.measure(path)
 
 
+def normalize_frontmatter(text):
+    """Restore the `---` YAML delimiters the frontier sometimes replaces with ``` code fences.
+
+    Observed failure: the model emits the frontmatter wrapped in a triple-backtick fence
+    instead of `---` lines. `clean()` strips only the *leading* fence, leaving an orphaned
+    closing ``` mid-file, which breaks frontmatter parsing downstream (publisher, site).
+
+    Idempotent: if the text already opens with a proper `---` fence, it is returned unchanged.
+    """
+    lines = text.split("\n")
+    if not lines:
+        return text
+    if lines[0].strip() == "---":
+        return text  # already correct
+    fm_keys = ("title:", "vertical:", "persona:", "date:", "slug:", "one_big_thing:",
+               "meta_title:", "meta_description:", "primary_keyword:", "secondary_keywords:",
+               "search_volume:", "search_intent:", "article_url:", "promo_url:", "promo_label:")
+    if not lines[0].strip().startswith(fm_keys):
+        return text  # no frontmatter to fix (or it's not a YAML block)
+    # Frontmatter present but the opening --- was dropped. Insert it, and convert the
+    # first stray ``` fence (the frontmatter closer) into the closing ---.
+    lines.insert(0, "---")
+    for i, ln in enumerate(lines):
+        if ln.strip() == "```":
+            lines[i] = "---"
+            break
+    return "\n".join(lines)
+
+
 def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     """Build a follow-up prompt telling the frontier model exactly what the gate rejected."""
     notes = []

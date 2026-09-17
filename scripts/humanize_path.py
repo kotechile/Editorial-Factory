@@ -49,6 +49,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) and polish `title` for punchy clarity.
 - PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
+- PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - Format the TL;DR as the structured <!-- tldr --> field strictly following this 3-part At a Glance schema:
   1) "- **The Reality Check:** <core baseline/problem explained in 1-2 plain-English sentences>"
   2) "- **The Winning Moves:** <summary of playbook>" followed by indented sub-bullets:
@@ -94,7 +95,7 @@ base_prompt = RULES + "\n\n" + draft
 MARKERS = ["<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
            "<!-- nuanced-takeaway -->", "<!-- tldr -->", "<!-- linkedin -->"]
 
-result, diag, srcs_ok, markers_ok = None, None, False, False
+result, diag, srcs_ok, markers_ok, len_ok = None, None, False, False, False
 attempts = 0
 for attempt in range(1, ht.MAX_ATTEMPTS + 1):
     attempts = attempt
@@ -106,24 +107,27 @@ for attempt in range(1, ht.MAX_ATTEMPTS + 1):
             extra.append("The ## Sources list is missing or altered — include it VERBATIM (do not edit, merge, or drop any source line or URL).")
         if not markers_ok:
             extra.append("Include every section marker: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.")
+        if not len_ok:
+            extra.append("The article body is too short (under %d words). Restore depth from the verified brief — restate the tactical moves and the tension in full, using only already-verified figures. Never invent new claims or numbers." % ht.MIN_BODY_WORDS)
         prompt = ht.retry_prompt(base_prompt, result, diag, extra=extra)
     try:
         raw = ht.call_gemini(prompt)
     except Exception as e:
         print(f"ERROR attempt {attempt}: {e}")
         break
-    result = clean(raw)
+    result = ht.normalize_frontmatter(clean(raw))
     out_path.write_text(result + "\n")
     srcs_ok = all(s in result for s in src_lines)
     markers_ok = all(m in result for m in MARKERS)
     diag = ht.measure(out_path)
+    len_ok = diag.get("words", 0) >= ht.MIN_BODY_WORDS
     print(f"attempt {attempt}: VERDICT {diag['verdict']}  flesch={diag['flesch']}  words={diag['words']}  "
-          f"sources={'ok' if srcs_ok else 'MISSING'}  markers={'ok' if markers_ok else 'FAIL'}")
-    if diag["verdict"] == "PASS" and srcs_ok and markers_ok:
+          f"sources={'ok' if srcs_ok else 'MISSING'}  markers={'ok' if markers_ok else 'FAIL'}  length={'ok' if len_ok else 'SHORT'}")
+    if diag["verdict"] == "PASS" and srcs_ok and markers_ok and len_ok:
         break
 
 note = diag["verdict"] if diag else "UNKNOWN"
 print(f"WROTE {out_path.name}  final_verdict={note}  attempts={attempts}  "
-      f"sources={'ok' if srcs_ok else 'MISSING'}")
+      f"sources={'ok' if srcs_ok else 'MISSING'}  length={'ok' if len_ok else 'SHORT'}")
 if diag and diag["verdict"] != "PASS":
     sys.exit(1)  # held at Loop 3 (per claude_humanizer.md §7) — never ship a dense/partial piece

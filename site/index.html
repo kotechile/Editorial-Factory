@@ -1864,9 +1864,12 @@ Ready for commands.</div>
 <!-- Library Modal (Interactive Rows with Hover Trash, Linear Style) -->
 <div class="modal-backdrop" id="libraryModalBackdrop">
   <div class="modal">
-    <div class="modal-header">
+    <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center;">
       <h2>Editorial Drafts &amp; Published Library</h2>
-      <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <button class="btn btn-secondary btn-sm" id="btnSyncAllSupabase" title="Sync all articles to Supabase" style="font-size: 11.5px; padding: 4px 10px; display: flex; align-items: center; gap: 4px;">⚡ Sync Supabase</button>
+        <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
+      </div>
     </div>
     <div style="margin-bottom: 1rem;">
       <input type="text" id="librarySearchInput" class="form-input" placeholder="🔍 Search drafts by title, vertical, or keyword...">
@@ -2455,6 +2458,24 @@ Ready for commands.</div>
 
   document.getElementById('librarySearchInput').addEventListener('input', (e) => {
     loadLibrary(e.target.value.trim());
+  });
+
+  document.getElementById('btnSyncAllSupabase').addEventListener('click', async () => {
+    const btn = document.getElementById('btnSyncAllSupabase');
+    btn.disabled = true;
+    btn.textContent = '⏳ Syncing...';
+    showToast('Syncing all library items to Supabase...');
+    try {
+      const res = await fetch('/api/articles/sync-supabase', { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Sync failed');
+      showToast(`Synced ${data.synced}/${data.total} articles to Supabase!`);
+    } catch (e) {
+      showToast('Sync error: ' + e.message, 'error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '⚡ Sync Supabase';
+    }
   });
 
   document.getElementById('globalSearchInput').addEventListener('input', (e) => {

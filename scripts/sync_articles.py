@@ -35,12 +35,13 @@ if args.files:
             target_files.append(p)
         else:
             print(f"Warning: file not found: {fp}")
-elif args.all:
-    target_files = sorted((ROOT / "published").glob("*.md")) + sorted((ROOT / "context" / "drafts").glob("*_final.md"))
 elif args.drafts:
     target_files = sorted((ROOT / "context" / "drafts").glob("*_final.md"))
 else:
-    target_files = sorted((ROOT / "published").glob("*.md"))
+    # Default: sync all library files (both published and final drafts)
+    pub_files = sorted((ROOT / "published").glob("*.md"))
+    draft_files = sorted((ROOT / "context" / "drafts").glob("*_final.md"))
+    target_files = pub_files + draft_files
 
 if not target_files:
     print("no markdown files found to sync")

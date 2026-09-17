@@ -48,6 +48,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE every citation [n] inline and the ## Sources list VERBATIM (do not change, merge, or drop any source line or its URL).
 - PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) and polish `title` for punchy clarity.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
+- PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
 - Format the TL;DR as the structured <!-- tldr --> field strictly following this 3-part At a Glance schema:
   1) "- **The Reality Check:** <core baseline/problem explained in 1-2 plain-English sentences>"
@@ -112,7 +113,7 @@ for attempt in range(1, ht.MAX_ATTEMPTS + 1):
     except Exception as e:
         print(f"ERROR attempt {attempt}: {e}")
         break
-    result = clean(raw)
+    result = ht.normalize_frontmatter(clean(raw))
     out_path.write_text(result + "\n")
     srcs_ok = all(s in result for s in src_lines)
     markers_ok = all(m in result for m in MARKERS)
