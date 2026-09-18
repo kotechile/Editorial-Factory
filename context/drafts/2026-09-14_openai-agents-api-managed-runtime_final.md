@@ -52,9 +52,13 @@ The deeper point is your true defense. If your system lacks a hard rule before t
 **Go deeper:** Read how this impacts [four engineering patterns behind winning agents], the latest [multi-agent failure modes], and new [agent permission boundaries].
 
 <!-- tldr -->
-- OpenAI's Agents API (public beta, Sept 10) runs the agent loop — model calls, sessions, memory, and recovery — as a managed service with no extra fee [1].
-- Four concepts — agent, environment, session, events — turn manual setups into a config file, including sub-agents via a simple flag [2].
-- The real defense moves: permission checks, outcome checks, and strict rules before any outside action must stay in your code [3].
+- **The Big Shift:** OpenAI launched its managed Agents API in public beta, moving the entire agent orchestration loop (session memory, tool execution, and crash recovery) onto OpenAI's servers with no added runtime fee [1].
+- **Why It Matters:** Building custom agent loops is no longer a technical moat. What engineering teams spent months cobbling together by hand is now a commoditized cloud primitive configured via simple API flags [2].
+- **The Winning Moves:**
+  - **Permission Boundaries:** OpenAI handles loop execution, but your application backend must still authorize and sandbox every tool call [3].
+  - **Outcome Verification:** A restored session ID does not guarantee external state survived; check your primary database before retrying actions [3].
+  - **Cost & Compute Controls:** Select the right execution environment (hosted sandboxes vs. read-only) and cap sub-agent concurrency to prevent runaway token spend [1][2].
+- **The Catch:** Data remains strictly hosted on US infrastructure with no Zero Data Retention options yet, and session reconnects cannot restore transient files lost during container resets [2][3].
 
 ## Sources
 [1] OpenAI, "Introducing the Agents API and hosted sandboxes" (announcement, Sept 10, 2026) — https://community.openai.com/t/introducing-the-agents-api-and-hosted-sandboxes/1396481
@@ -128,4 +132,4 @@ lead PASS — Delivers the core news in sentence 1; no throat-clearing.
 tension PASS — Uses "The big picture:" signpost and names who it hurts/helps.
 tactical-insight PASS — Uses "What to do:" and 4 bullet points; actionable for practitioners.
 nuanced-takeaway PASS — Explains limitations honestly with "The catch:" signpost.
-tldr PASS — Exactly 3 scannable bullets starting with dashes.
+tldr PASS — Follows 4-part Smart Brevity At a Glance executive summary with plain-English definitions and clear context.

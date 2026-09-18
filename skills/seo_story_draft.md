@@ -30,7 +30,7 @@ slug: "YYYY-MM-DD_<slug>"
 - `**By the numbers:**`: Mandatory quantitative data section with 2–4 bolded metric bullets.
 - `<!-- tactical-insight -->`: Descriptive `## ` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
 - `<!-- nuanced-takeaway -->`: Descriptive `## ` H2 header + the honest catch, limitation, or counter-argument.
-- `<!-- tldr -->`: `## Key Takeaways` header + 3-part structured breakdown (**The Reality Check**, **The Winning Moves** with sub-bullet definitions, and **The Fine Print** in plain English).
+- `<!-- tldr -->`: `## Key Takeaways` header + 4-part structured breakdown (**The Big Shift / What Happened**, **Why It Matters**, **The Winning Moves** with sub-bullet definitions, and **The Catch** in plain English).
 
 ### C. Citations & Social Variants
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.

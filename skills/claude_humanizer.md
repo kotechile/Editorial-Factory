@@ -36,10 +36,11 @@ Introduce supporting context using bolded, standardized guide words followed imm
 ### 3.4 Scannability & Bullets
 - **Never output monolithic walls of text.**
 - Any sequence of **three or more** data points, stats, tactical moves, or arguments MUST be broken down into clean, bulleted lists with bold lead-ins (e.g., `- **Audit bandwidth:** Ask vendors for...`).
-- **At a Glance / TL;DR 3-Part Schema:** The `<!-- tldr -->` block must strictly follow this 3-part structure in plain English:
-  1. `- **The Reality Check:**` — 1-2 sentences exposing the baseline problem or industry reality in plain, direct English.
-  2. `- **The Winning Moves:**` (or **The Playbook:**) — An intro sentence naming the core approach, followed by indented sub-bullets (`  - **<Move Name>:** <1-line plain English definition of what the move actually does>`).
-  3. `- **The Fine Print:**` (or **The Catch:**) — 1-2 sentences stating the upfront design needs, security/access requirements, and context-dependent trade-offs.
+- **At a Glance / TL;DR 4-Part Smart Brevity Schema:** The `<!-- tldr -->` block must serve as a 30-second executive summary that clearly explains what the article is about, following this structure in plain English:
+  1. `- **The Big Shift:**` (or **The Core Story:**) — 1-2 direct sentences explaining the event, breakthrough, or baseline problem and what the article is about.
+  2. `- **Why It Matters:**` — 1-2 sentences delivering the economic, architectural, or industry stakes and who is affected.
+  3. `- **The Winning Moves:**` (or **The Playbook:**) — An intro sentence naming the core approach, followed by indented sub-bullets (`  - **<Move Name>:** <1-line plain English definition explaining what it does and why>`).
+  4. `- **The Catch:**` (or **The Fine Print:**) — 1-2 sentences stating the upfront design needs, security/access controls, and realistic trade-offs.
 
 ### 3.5 Strong, Simple Diction
 - Strip out passive verbs, weak adverbs (e.g., "basically", "materially", "extremely"), and bloated "10-dollar" corporate jargon.
@@ -92,7 +93,7 @@ retries per section).
 | `<!-- tension -->` | vague "the industry is evolving"; lacks a context signpost (**The big picture:** or **Why it matters:**); lacks a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats; doesn't name what shifted and who it hurts/helps. |
 | `<!-- tactical-insight -->` | generic advice ("invest in AI"); not structured with clean bullets and bold lead-ins for 3+ moves; not specific and doable for the target persona. |
 | `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; lacks an honest limitation / counter-argument (**The catch:** or **Between the lines:**). |
-| `<!-- tldr -->` | lacks the 3-part schema (**The Reality Check**, **The Winning Moves** with sub-bullet definitions, **The Fine Print**); reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |
+| `<!-- tldr -->` | lacks the 4-part schema (**The Big Shift**, **Why It Matters**, **The Winning Moves** with sub-bullet definitions, **The Catch**); fails to explain what the article is about; reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |
 
 After every section passes, run ONE final **whole-piece pass**: coherence, cadence, paragraph discipline (max 3 sentences per paragraph), and confirm no AI-tell or empty transition remains anywhere.
 
@@ -100,7 +101,7 @@ After every section passes, run ONE final **whole-piece pass**: coherence, caden
 
 ## 6. Output
 `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn) with the per-section gate
-report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (following the 3-part Reality Check / Winning Moves / Fine Print schema) — never write a
+report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (following the 4-part Big Shift / Why It Matters / Winning Moves / Catch schema) — never write a
 prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only** — do not compose
 one.
 

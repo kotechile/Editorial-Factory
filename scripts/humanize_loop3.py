@@ -69,11 +69,12 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the `<!-- schema -->` block (JSON-LD) and `<!-- internal-links -->` block VERBATIM if present, placed at the end of the document.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
-- Format the TL;DR as the structured <!-- tldr --> field strictly following this 3-part At a Glance schema:
-  1) "- **The Reality Check:** <core baseline/problem explained in 1-2 plain-English sentences>"
-  2) "- **The Winning Moves:** <summary of playbook>" followed by indented sub-bullets:
-     "  - **<Move Name>:** <1-line plain-English definition of what the move actually does>"
-  3) "- **The Fine Print:** <upfront design needs, security/access controls, and context-dependent caveats>"
+- Format the TL;DR as the structured <!-- tldr --> field strictly following this 4-part Smart Brevity At a Glance schema (serves as a 30-second executive summary explaining what the article is about):
+  1) "- **The Big Shift:** <1-2 plain-English sentences explaining directly what happened and what the article is about>"
+  2) "- **Why It Matters:** <1-2 sentences stating the economic, architectural, or industry impact and who is affected>"
+  3) "- **The Winning Moves:** <summary of tactical playbook>" followed by indented sub-bullets:
+     "  - **<Move Name>:** <1-line plain-English definition explaining what it does and why>"
+  4) "- **The Catch:** <upfront design needs, security/access controls, and context-dependent trade-offs/caveats>"
   Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC (render-time only).
 
 ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):

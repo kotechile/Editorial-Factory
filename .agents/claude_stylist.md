@@ -22,11 +22,11 @@ To apply Smart Brevity effectively, the Stylist requires three explicit inputs:
    - **By the numbers:** (**MANDATORY** quantitative breakdown of 2–4 verified figures/percentages in bold bullets)
    - **What to do:** / **The playbook:** (tactical, doable moves)
    - **The catch:** / **Yes, but:** / **Between the lines:** (honest nuance / counter-argument)
-4. **Scannability & Bullets:** Never output dense blocks of text. Mandatory **By the numbers:** must format 2–4 stats as clean bullets. Under `<!-- tldr -->`, follow the 3-part At a Glance schema (**The Reality Check**, **The Winning Moves** with indented sub-bullet definitions for each move, and **The Fine Print** for trade-offs/prerequisites) in plain, conversational English.
+4. **Scannability & Bullets:** Never output dense blocks of text. Mandatory **By the numbers:** must format 2–4 stats as clean bullets. Under `<!-- tldr -->`, follow the 4-part At a Glance schema (**The Big Shift / What Happened**, **Why It Matters**, **The Winning Moves** with indented sub-bullet definitions for each move, and **The Catch**) in plain, conversational English, ensuring it briefly and clearly explains what the article is about.
 5. **Strong, Simple Diction:** Strip passive verbs, weak adverbs, and bloated "10-dollar" corporate/academic jargon. Prefer short, single-syllable, visual words.
 6. **Paragraph Discipline:** Keep paragraphs exceptionally brief — **1 to 3 sentences maximum**.
 7. **The Exit ("Go Deeper"):** Conclude cleanly with designated **Go deeper:** links/references (`<!-- internal-links -->` and `## Sources`).
-8. **Per-section critique:** Iterate section by section (lead → tension → tactical-insight → nuanced-takeaway → tldr) against each section's own gate (ensuring `tldr` passes the 3-part structure, sub-bullet definitions, and plain-English clarity), then one final whole-piece coherence pass.
+8. **Per-section critique:** Iterate section by section (lead → tension → tactical-insight → nuanced-takeaway → tldr) against each section's own gate (ensuring `tldr` passes the 4-part structure, explains what the article is about, includes sub-bullet definitions, and maintains plain-English clarity), then one final whole-piece coherence pass.
 9. **Preservation:** Preserve all verified facts, inline citations `[n]`, frontmatter tags, and `## Sources` verbatim.
 
 ## Interaction contract

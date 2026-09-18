@@ -17,7 +17,7 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
    - **By the numbers** — mandatory quantitative section (**By the numbers:**) featuring 2–4 verified stats, benchmarks, or cost metrics in bolded bullets.
    - **Tactical insight** — the actionable, specific takeaway for the target reader.
    - **Nuanced takeaway** — the honest limitation or counter-argument.
-   - **TL;DR (At a Glance)** — 3-part structured breakdown: **The Reality Check** (core baseline in plain English), **The Winning Moves** (with indented sub-bullet definitions for each move), and **The Fine Print** (upfront design, security/access controls, and caveats).
+   - **TL;DR (At a Glance)** — 4-part Smart Brevity breakdown: **The Big Shift / What Happened** (explains what the article is about in plain English), **Why It Matters** (systemic/cost stakes), **The Winning Moves** (with indented sub-bullet definitions for each move), and **The Catch** (upfront design, security/access controls, and caveats).
 2. Write to the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
 3. Cite inline: every claim carries a source marker `[1]`, `[2]` mapping to a source list at the end. Do not introduce uncited assertions.
 4. Produce two lengths from the same skeleton: a long-form article and a ~1,300-character LinkedIn post.
