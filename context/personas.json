@@ -59,6 +59,24 @@
       "reader_level": "analytical corporate/tech professional, high-earning homeowner",
       "tone": "direct, financially literate, pragmatic, zero fluff, systems-oriented",
       "wants": "TCO depreciation math, local-first reliability, contractor SOW templates, climate hardening, friction reduction"
+    },
+    "cross_border_expat": {
+      "label": "Cross-Border Executive & Expat Specialist",
+      "reader_level": "globally mobile professional, cross-border remote founder/executive",
+      "tone": "analytical, fiscally rigorous, zero-bullshit, multi-jurisdiction aware",
+      "wants": "FEIE vs FTC optimization, foreign entity tax nexus risks, bilateral tax treaties, multi-currency hedging, expat healthcare triage"
+    },
+    "equity_career_strategist": {
+      "label": "High-Growth Tech Careerist & Equity Negotiator",
+      "reader_level": "senior IC to VP-level tech professional",
+      "tone": "pragmatic, balance-sheet literate, negotiation-oriented, skeptical of paper wealth",
+      "wants": "cliff forfeiture valuation, ISO/NSO strike modeling, secondary liquidity math, total comp true hourly wage, certification ROI"
+    },
+    "systems_tinkerer_pro": {
+      "label": "Pragmatic Systems Optimizer & Self-Hoster",
+      "reader_level": "experienced technologist, homelab enthusiast, efficiency-obsessed professional",
+      "tone": "brutally honest about opportunity cost, engineering-grounded, anti-subscription creep",
+      "wants": "tinkering tax audits, self-hosting maintenance breakdown, micro-SaaS audit framework, 3D printing true cost models"
     }
   }
 }

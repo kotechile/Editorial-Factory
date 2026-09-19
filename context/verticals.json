@@ -316,6 +316,135 @@
       ],
       "target_persona": "pro_homeowner",
       "enable_dataforseo": false
+    },
+    {
+      "id": "home_infrastructure_lifecycle_tco",
+      "label": "Home Infrastructure & Major Asset Lifecycle TCO",
+      "cadence": "0 6 * * 1",
+      "sources": [
+        "energy_star",
+        "ashrae_standards",
+        "jchs_harvard",
+        "nrel_pvwatts",
+        "awwa_water_audits",
+        "reddit_homeimprovement",
+        "hvac_talk"
+      ],
+      "primary_angles": [
+        "smart home and hvac transition tco break-even timelines",
+        "the 10-year home capex roadmap and replacement windows",
+        "solar and backup battery payback models and grid-failure protection",
+        "smart irrigation and water efficiency audits with automated leak detection"
+      ],
+      "target_persona": "pro_homeowner",
+      "enable_dataforseo": false
+    },
+    {
+      "id": "workstation_compute_economics",
+      "label": "Autonomous Tech Workstations & AI Compute Economics",
+      "cadence": "0 6 * * 2",
+      "sources": [
+        "tomshardware",
+        "puget_systems_benchmarks",
+        "anandtech",
+        "reddit_localllama",
+        "hacker_news",
+        "github_trending",
+        "lambda_labs_benchmarks"
+      ],
+      "primary_angles": [
+        "local workstation build vs cloud gpu compute matrix",
+        "the developer hardware debt index and lost compilation hours",
+        "local llm fine-tuning hardware requirements vs commercial api per-token fees",
+        "automated video rendering pipeline roi local vs cloud rendering nodes"
+      ],
+      "target_persona": "infra_engineer",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "enterprise_build_vs_buy",
+      "label": "Enterprise Build-vs-Buy & Developer Tooling Architecture",
+      "cadence": "0 6 * * 3",
+      "sources": [
+        "hacker_news",
+        "substack_tech_leads",
+        "gartner_cloud",
+        "thoughtworks_radar",
+        "cloud_cost_reports",
+        "stackoverflow_surveys"
+      ],
+      "primary_angles": [
+        "the hidden compliance and maintenance multiplier over 3-year windows",
+        "internal tooling maintenance tax calculator with loaded salary rates",
+        "self-hosted infrastructure vs managed cloud services tco",
+        "api ingestion and third-party service redundancy costs and fallback layers"
+      ],
+      "target_persona": "eng_leader",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "expat_cross_border_relocation",
+      "label": "Advanced Expat, Cross-Border & Multi-Jurisdictional Relocation",
+      "cadence": "0 6 * * 4",
+      "sources": [
+        "irs_international_bulletins",
+        "oecd_tax_reports",
+        "pwc_global_mobility",
+        "reddit_expats",
+        "numbeo_cost_of_living",
+        "international_living",
+        "nomad_capitalist_audits"
+      ],
+      "primary_angles": [
+        "the true cost of dual-jurisdiction compliance feie and ftc optimization",
+        "cross-border net cash flow and fx shock simulator over 5-year horizons",
+        "cost of living vs healthcare quality trade-offs and out-of-pocket medical expenses",
+        "remote work tax nexus risks for employers and distributed employees"
+      ],
+      "target_persona": "cross_border_expat",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "career_velocity_equity_engineering",
+      "label": "Career Velocity, Equity Liquidity & Offer Engineering",
+      "cadence": "0 6 * * 5",
+      "sources": [
+        "levels_fyi",
+        "carta_equity_reports",
+        "sec_edgar_filings",
+        "blind_tech_threads",
+        "hacker_news",
+        "comp_gauge"
+      ],
+      "primary_angles": [
+        "how to quantify and negotiate cliff forfeitures and unvested equity",
+        "equity growth and scenario matrix startup strike prices vs enterprise comp",
+        "the true hourly rate of corporate leadership factoring meetings and off-hours",
+        "upskilling roi and certification amortization salary bump payback windows"
+      ],
+      "target_persona": "equity_career_strategist",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "personal_microeconomics_tinkering_tax",
+      "label": "Personal Asset Micro-Economics & 'Tinkering Tax' Audits",
+      "cadence": "0 6 * * 6",
+      "sources": [
+        "reddit_selfhosted",
+        "reddit_homelab",
+        "hacker_news",
+        "reddit_3dprinting",
+        "github_trending",
+        "substitutions_database"
+      ],
+      "primary_angles": [
+        "the trap of free open-source self-hosting and reverse proxy debugging hours",
+        "the hobbyist automation roi calculator setup time vs manual execution",
+        "subscription creep and micro-saas audit frameworks",
+        "the true cost of 3d printing and fabrication hobbies filament waste and calibration"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "enable_dataforseo": false
     }
   ]
 }

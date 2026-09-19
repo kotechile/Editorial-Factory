@@ -151,6 +151,54 @@ Every technical and executive article must be anchored in at least one of these 
 
 ---
 
+### Vertical: `home_infrastructure_lifecycle_tco` (Home Infrastructure & Major Asset Lifecycle TCO)
+- **The Mechanical Break-Even Reality**: Homeowners fall into the "one more repair" cycle on 12+ year old SEER-10/12 HVAC units. Factoring in compounding R-410A refrigerant phaseout prices, electrical efficiency drops, and rising summer peak tariffs, replacing an end-of-life compressor with an inverter heat pump breaks even in 4.2 to 6 years—before factoring in avoided emergency mid-summer hotel costs.
+- **The 10-Year CapEx Horizon (Sinking Fund vs. Cash Shocks)**: Roofs, water heaters, and structural deck membranes are predictable physical liabilities, not surprises. Allocating a proactive 1.5% annual capital depreciation sinking fund mathematically outperforms financing emergency replacements at prevailing 8–11% HELOC or home improvement loan rates.
+- **Solar & LFP Storage Unit Economics**: Sizing residential solar solely on annual kWh generation is a flawed metric under modern Net Billing Tariffs (NEM 3.0). Storage value lies in aggressive Time-of-Use (TOU) peak shedding and grid outage avoidance value, not grid export credits.
+- **Smart Irrigation as a Utility Hedge**: Municipal volumetric water tier penalties escalate exponentially past base usage. Automated smart zone controllers paired with inline ultrasonic pulse metering pay for themselves within 14–18 months by eliminating hidden subsurface leaks and weather-blind cycles.
+
+---
+
+### Vertical: `workstation_compute_economics` (Autonomous Tech Workstations & AI Compute Economics)
+- **Local Workstation Build vs. Cloud GPU Compute Matrix**: Cloud GPU instances (A100/H100) are rented operational flexibility, but running 24/7 autonomous agent loops or high-throughput batch inference on cloud nodes quickly exceeds hardware amortization. A dual-RTX 4090 or dual-RTX 5090 workstation ($5k–$7k capex, 48GB VRAM) running quantized models reaches capital break-even in 3.5 months against equivalent AWS/RunPod instance hourly spend.
+- **The Developer Hardware Debt Index**: A developer on a 4-year-old throttled thermal laptop losing 45 minutes daily to local compilation, test suites, and Docker container spins costs an organization $18,000/year in loaded engineering salary. Investing $3,500 in top-tier local compute pays for itself in under 60 working days.
+- **Local LLM Fine-Tuning & Open-Weights Economics**: For domain-specific workflows (parsing proprietary schemas, legal diffs, or internal codebases), fine-tuning an open-weights 8B–14B model (Llama/Qwen) deployed locally eliminates recurring commercial API token bills while preserving absolute IP confidentiality.
+- **Automated Video & Media Rendering Pipeline ROI**: Continuous media rendering and programmatic video synthesis pipelines choke on cloud bandwidth ingress/egress fees and GPU container spin-up overhead. Local NVENC/CUDA hardware arrays deliver zero-latency batch processing at fixed electrical cost.
+
+---
+
+### Vertical: `enterprise_build_vs_buy` (Enterprise Build-vs-Buy & Developer Tooling Architecture)
+- **The Hidden Compliance & Maintenance Multiplier**: "Free" in-house tooling carries a 3-year maintenance multiplier of 3.8× initial build cost. Every custom tool requires security patching, SSO/SAML maintenance, framework upgrades, and API deprecation rewrites that rob senior engineers from shipping revenue-generating products.
+- **Internal Tooling Maintenance Tax**: If an internal deployment tool requires 2 senior engineers dedicating 15% of their time to triage and bug fixes, the company pays a recurring loaded salary tax of $90,000/year for an asset that could be replaced by a $15,000/year SOC2-certified SaaS contract.
+- **Bare-Metal VPS vs. Managed Cloud PaaS**: Rented bare-metal VPS or Hetzner/OVH clusters running container orchestration slash infrastructure costs by 70% compared to AWS/GCP managed databases and serverless architectures—provided the team has the operational rigor to maintain backups and failover.
+- **API Ingestion & Redundancy Overhead**: Building custom resilient retry fabrics, exponential backoff circuits, and webhook deduplication layers across 10 third-party APIs incurs continuous engineering overhead. Paying enterprise API tiers with strict SLAs is often cheaper than dedicating an on-call engineer to upstream vendor outages.
+
+---
+
+### Vertical: `expat_cross_border_relocation` (Advanced Expat, Cross-Border & Multi-Jurisdictional Relocation)
+- **Dual-Jurisdiction Compliance & Cash Flow Shocks**: Relocating abroad without a synchronized tax strategy creates crippling double-taxation cash flow crunches. Navigating the Foreign Earned Income Exclusion (FEIE / Form 2555) versus the Foreign Tax Credit (FTC / Form 1116) requires strict modeling of local country progressive brackets, social security totalization agreements, and split-year tax residency triggers.
+- **FX Volatility & 5-Year Wealth Trajectory**: Earning in USD while spending in local foreign currencies or holding multi-currency assets introduces latent FX drag. A 12% adverse exchange-rate swing over 24 months can completely wipe out anticipated cost-of-living arbitrage advantages without active multi-currency treasury hedging.
+- **Expat Healthcare Economics & Out-of-Pocket Trade-offs**: Universal healthcare in foreign jurisdictions often carries long specialist wait times or exclusionary residency qualifying periods. Global mobility professionals must budget for private international health insurance (IPMI) with medical evacuation riders rather than assuming local state-subsidized care handles catastrophic claims.
+- **The Employer Remote Work Tax Nexus Minefield**: Working remotely from a foreign country for more than 90–183 days can inadvertently trigger a Permanent Establishment (PE) corporate tax nexus for the employer and local payroll withholding liabilities. Distributed teams must deploy Employer of Record (EOR) structures or B2B contractor frameworks to protect corporate balance sheets.
+
+---
+
+### Vertical: `career_velocity_equity_engineering` (Career Velocity, Equity Liquidity & Offer Engineering)
+- **Quantifying & Negotiating 'Cliff' Forfeitures**: Leaving an unvested 1-year equity cliff or unvested 401(k) company match on the table is an immediate, quantifiable cash penalty. High-leverage talent must calculate the exact net present value of forfeited equity and demand a front-loaded signing bonus or accelerated vest schedule to bridge the compensation gap.
+- **Equity Growth Matrix (Startup Paper vs. Enterprise Liquid Comp)**: A $300k startup equity grant with a 4-year vest at a $500M valuation is often worth less than $120k in liquid public stock (RSUs). Candidates must stress-test preference stacks, dilution rounds, strike exercise windows (90-day vs. 10-year PTEP), and 409A valuations against illiquid exit scenarios.
+- **The True Hourly Rate of Corporate Leadership**: A $400k executive total compensation package that demands 65 hours per week, constant off-hours slack availability, and weekend crisis calls yields a lower effective hourly rate ($118/hr) than a $240k senior individual contributor working focused 38-hour weeks ($121/hr)—with 3× the stress and health depreciation.
+- **Upskilling ROI & Certification Amortization**: Not all technical education yields positive ROI. Calculate the payback window: $(\text{Tuition} + \text{Exam Fees} + \text{Study Opportunity Cost Hours}) / \text{Annual Base Salary Increment}$. A certification that costs $6k and 200 hours of study must unlock a verifiable promotion or ≥$15k salary bump within 12 months to justify the capital outlay.
+
+---
+
+### Vertical: `personal_microeconomics_tinkering_tax` (Personal Asset Micro-Economics & "Tinkering Tax" Audits)
+- **The Free Open-Source Self-Hosting Trap**: "Free" open-source software is only free if your time has zero value. Spending 14 weekend hours configuring Traefik reverse proxies, chasing broken Docker Compose networking bridges, and babysitting self-hosted email deliverability costs a $150/hr engineer $2,100 in personal opportunity cost to save a $12/month managed SaaS fee.
+- **The Hobbyist Automation ROI Equation**: If automating a 2-minute weekly file cleanup task requires 8 hours of custom Python scripting and 30 minutes of quarterly maintenance when APIs break, the automation will require 5.2 years of unbroken execution just to break even on invested time. Automate for scale and error-proofing, never for novelty.
+- **Subscription Creep & The Micro-SaaS Audit Framework**: Unmonitored $9–$29 monthly subscriptions bleed $3,000–$6,000 in post-tax personal cash flow annually. Applying a quarterly zero-based software audit—canceling any tool with fewer than 4 recorded sessions in 30 days—liberates immediate high-yield savings capital.
+- **The True Unit Economics of 3D Printing & Fabrication**: Evaluating 3D printing purely on $20/kg spool filament costs ignores true unit economics: nozzle wear, bed adhesion failures, bed leveling calibration hours, support material waste (30–40% on complex geometries), and electricity loads. Printing a $15 bracket that takes 3 failed attempts and 6 hours of troubleshooting is a net financial loss against ordering an injection-molded retail part.
+
+---
+
 ## 4. Visualization Concepts & Authoritative Formats
 
 When drafting articles, map the core technical tension to its authoritative visual format:
@@ -192,6 +240,14 @@ When drafting articles, map the core technical tension to its authoritative visu
 28. **Local-First Zero-Egress Network Architecture Map (`smart_home_telemetry`)**: Demonstrates isolated IoT VLAN network topology, local Home Assistant broker coordination, Matter/Thread wireless mesh, and zero-cloud camera streaming.
 29. **Contractor Milestone Escrow & Permitting Swimlane (`home_ops_execution`)**: Maps the contractual lifecycle from architectural design, municipal permit filing, phased progress payments with retainage, and final unconditional mechanics lien releases.
 30. **Climate Hardening & Insurability Checklist Matrix (`resilient_home_assets`)**: Cross-references IBHS Fortified retrofits, ember-resistant attic screening, and dual-battery sump systems against carrier underwriting discount tiers and peril mitigation.
+
+### Personal Asset & Engineering Economics Visual Formats
+31. **Capital Amortization & Replacement Horizon Matrix (`home_infrastructure_lifecycle_tco`)**: Compares repair cost compounding against high-efficiency replacement capital outlay, showing true break-even curves and avoided seasonal peak tariffs.
+32. **Local Workstation vs. Cloud GPU TCO Payback Curve (`workstation_compute_economics`)**: Plots cumulative dollar spend of a high-end local dual-GPU workstation against hourly on-demand cloud GPU compute across 12 months of sustained inference.
+33. **3-Year Internal Maintenance Multiplier Waterfall (`enterprise_build_vs_buy`)**: Illustrates the non-linear maintenance burden of bespoke internal software (security updates, refactoring, dependency drift) vs. flat SaaS licensing.
+34. **Cross-Border Dual-Residency Tax & FX Waterfall (`expat_cross_border_relocation`)**: Details gross income, foreign exclusion allowances, progressive host-nation tax brackets, and bilateral foreign tax credits under varying currency exchange scenarios.
+35. **Equity Scenario Sensitivity Matrix (`career_velocity_equity_engineering`)**: Models unvested cliff forfeiture, strike exercise cost, dilution rounds, and net exit liquidity across bear, base, and bull startup valuation outcomes.
+36. **Tinkering Opportunity Cost Balance Sheet (`personal_microeconomics_tinkering_tax`)**: Weighs self-hosted server setup and troubleshooting hours valued at loaded professional rate against monthly managed SaaS service fees.
 
 ---
 

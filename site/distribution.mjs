@@ -23,6 +23,12 @@ const SUBREDDITS = {
   gpu_hardware: ['hardware', 'LocalLLaMA'],
   supply_chain: ['supplychain', 'logistics'],
   home_systems_reno: ['HomeImprovement', 'heatpumps'],
+  home_infrastructure_lifecycle_tco: ['HomeImprovement', 'energy'],
+  workstation_compute_economics: ['buildapc', 'LocalLLaMA'],
+  enterprise_build_vs_buy: ['ExperiencedDevs', 'devops'],
+  expat_cross_border_relocation: ['expats', 'tax'],
+  career_velocity_equity_engineering: ['cscareerquestions', 'financialindependence'],
+  personal_microeconomics_tinkering_tax: ['selfhosted', 'homelab'],
   default: ['technology'],
 };
 
