@@ -7,11 +7,17 @@ Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these sc
 | agentic_ai | 0 6 * * 1,4 | Mon + Thu 06:00 AM EST | active |
 | ai_observability_qa | 0 6 * * 2 | Tue 06:00 AM EST | active |
 | agentic_resilience_failure | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| enterprise_ai_governance | 0 6 * * 5 | Fri 06:00 AM EST | active |
+| enterprise_ai_governance | 0 6 * * 1 | Mon 06:00 AM EST | active |
+| nhil_infrastructure_ops | 0 6 * * 2 | Tue 06:00 AM EST | active |
+| multi_agent_enterprise_fabric | 0 6 * * 3 | Wed 06:00 AM EST | active |
+| enterprise_ai_finops | 0 6 * * 4 | Thu 06:00 AM EST | active |
 | enterprise_tech_leadership | 0 6 * * 2 | Tue 06:00 AM EST | active |
 | gpu_hardware | 0 6 * * 3 | Wed 06:00 AM EST | active |
 | supply_chain | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| home_systems_reno | 0 6 * * 5 | Fri 06:00 AM EST | active |
+| home_equity_tco | 0 6 * * 1 | Mon 06:00 AM EST | active |
+| smart_home_telemetry | 0 6 * * 2 | Tue 06:00 AM EST | active |
+| home_ops_execution | 0 6 * * 4 | Thu 06:00 AM EST | active |
+| resilient_home_assets | 0 6 * * 5 | Fri 06:00 AM EST | active |
 
 ## Run log
 | Date | Vertical | Result | Notes |

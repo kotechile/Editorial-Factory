@@ -27,8 +27,14 @@
     "enterprise_cai": {
       "label": "CIO / CISO / Enterprise AI Governance Leader",
       "reader_level": "executive-technical decision maker",
-      "tone": "strategic, risk-aware, unit-economics focused",
-      "wants": "shadow AI migration funnels, zero-trust actor boundaries, CFO TCO models, auditability"
+      "tone": "strategic, risk-aware, unit-economics focused, balance-sheet literate",
+      "wants": "non-human identity (NHI) lifecycle, ABAC context boundaries, cryptographic audit provenance, EU AI Act compliance, CRW unit economics"
+    },
+    "it_ops_leader": {
+      "label": "VP of IT & Infrastructure Operations",
+      "reader_level": "senior enterprise IT / NetOps leader",
+      "tone": "operational, resilience-focused, deterministic, P&L-grounded",
+      "wants": "closed-loop NHIL guardrails, rack density & power cooling ceilings, sovereign SLM deployment, ERP integration fabrics"
     },
     "ops_leader": {
       "label": "VP of Supply Chain & Operations Leader",
@@ -47,6 +53,12 @@
       "reader_level": "educated DIY-to-pro",
       "tone": "plain, honest, dollar-figure concrete",
       "wants": "payback math, gotchas, code/incentive reality"
+    },
+    "pro_homeowner": {
+      "label": "Professional Homeowner & Asset Manager (Ages 35–45)",
+      "reader_level": "analytical corporate/tech professional, high-earning homeowner",
+      "tone": "direct, financially literate, pragmatic, zero fluff, systems-oriented",
+      "wants": "TCO depreciation math, local-first reliability, contractor SOW templates, climate hardening, friction reduction"
     }
   }
 }
