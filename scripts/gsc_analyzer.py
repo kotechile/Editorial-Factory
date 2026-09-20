@@ -24,8 +24,24 @@ SAMPLE_DATA_FILE = GROWTH_OS_DIR / "gsc_sample_data.json"
 RECON_DIR = CONTEXT_DIR / "recon_proposals"
 
 
+def load_env():
+    """Load repo-local .env into os.environ if present."""
+    env_path = ROOT / ".env"
+    if env_path.exists():
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    k, v = k.strip(), v.strip().strip("'\"")
+                    if k not in os.environ:
+                        os.environ[k] = v
+
+
 def load_gsc_data(custom_path=None):
     """Load GSC search analytics data from API or fallback sample fixture."""
+    load_env()
+
     # Check if custom path is provided
     if custom_path and pathlib.Path(custom_path).exists():
         with open(custom_path, "r", encoding="utf-8") as f:
@@ -65,25 +81,45 @@ def load_gsc_data(custom_path=None):
                 )
 
             service = build("searchconsole", "v1", credentials=credentials)
-            # Query last 28 days dynamically
-            today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-            start_date_str = (datetime.now(timezone.utc) - timedelta(days=28)).strftime("%Y-%m-%d")
+            # Query last 28 days ending 3 days ago (GSC data lag requires endDate < today)
+            end_date_str = (datetime.now(timezone.utc) - timedelta(days=3)).strftime("%Y-%m-%d")
+            start_date_str = (datetime.now(timezone.utc) - timedelta(days=31)).strftime("%Y-%m-%d")
             request_body = {
                 "startDate": start_date_str,
-                "endDate": today_str,
+                "endDate": end_date_str,
                 "dimensions": ["query"],
                 "rowLimit": 1000,
             }
 
+            # Discover all accessible properties
+            try:
+                site_list_resp = service.sites().list().execute()
+                accessible_sites = [s.get("siteUrl", "") for s in site_list_resp.get("siteEntry", [])]
+            except Exception:
+                accessible_sites = []
+
             prop_urls = [p.strip() for p in prop_url.split(",") if p.strip()]
+            if not prop_urls and accessible_sites:
+                prop_urls = accessible_sites
+
             queries = []
             fetched_properties = []
 
             for p in prop_urls:
+                target_p = p
+                if accessible_sites and target_p not in accessible_sites:
+                    for acc in accessible_sites:
+                        if p.lower().replace("sc-domain:", "").strip("/") == acc.lower().replace("sc-domain:", "").strip("/"):
+                            target_p = acc
+                            break
+                        elif "welroost" in p.lower() and "wellroost" in acc.lower():
+                            target_p = acc
+                            break
+
                 try:
-                    response = service.searchanalytics().query(siteUrl=p, body=request_body).execute()
+                    response = service.searchanalytics().query(siteUrl=target_p, body=request_body).execute()
                     rows = response.get("rows", [])
-                    site_name = p.replace("sc-domain:", "").replace("https://", "").replace("http://", "").rstrip("/")
+                    site_name = target_p.replace("sc-domain:", "").replace("https://", "").replace("http://", "").rstrip("/")
                     for r in rows:
                         q = r.get("keys", [""])[0]
                         queries.append({
@@ -97,11 +133,11 @@ def load_gsc_data(custom_path=None):
                             "vertical": "general",
                             "site": site_name,
                         })
-                    fetched_properties.append(p)
+                    fetched_properties.append(target_p)
                 except Exception as e_p:
-                    print(f"[GSC Analyzer] Warning: Could not fetch from property '{p}': {e_p}", file=sys.stderr)
+                    print(f"[GSC Analyzer] Warning: Could not fetch from property '{target_p}': {e_p}", file=sys.stderr)
 
-            if queries:
+            if fetched_properties:
                 return {"property": ", ".join(fetched_properties), "queries": queries, "live_api": True}
         except Exception as e:
             print(f"[GSC Analyzer] Warning: Could not fetch from live GSC API ({e}). Using local data store.", file=sys.stderr)
@@ -118,6 +154,7 @@ def analyze_opportunities(data, vertical=None, min_impressions=500, min_pos=8.0,
     """Filter and score GSC queries based on demand and ranking opportunity."""
     queries = data.get("queries", [])
     opportunities = []
+    is_live = data.get("live_api", False)
 
     for item in queries:
         q_vert = item.get("vertical", "")
@@ -130,51 +167,78 @@ def analyze_opportunities(data, vertical=None, min_impressions=500, min_pos=8.0,
         ctr = item.get("ctr", 0.0)
         wow_growth = item.get("wow_growth_pct", 0.0)
 
-        # Filters:
-        # 1. Striking Distance: impressions >= min_impressions and min_pos <= position <= max_pos
-        # 2. Emerging Spike: wow_growth >= wow_threshold and impressions >= 300
-        is_striking_distance = (impressions >= min_impressions) and (min_pos <= position <= max_pos)
-        is_emerging_spike = (wow_growth >= wow_threshold) and (impressions >= 300)
+        if is_live:
+            if impressions < 1:
+                continue
+            is_striking_distance = (min_pos <= position <= max_pos)
+            is_emerging_spike = (wow_growth >= wow_threshold)
+            is_top_10 = (position <= 10.0)
 
-        if not (is_striking_distance or is_emerging_spike):
-            continue
+            pos_factor = max(0.0, 1.0 - (position - 1.0) / 40.0)
+            vol_factor = min(1.0, max(0.05, impressions / 100.0))
+            opportunity_score = round((pos_factor * 60.0) + (vol_factor * 40.0), 1)
 
-        # Calculate an Opportunity Score (0 - 100)
-        # Higher impressions + closer to page 1 + high WoW spike + low CTR gap = higher score
-        pos_factor = max(0.0, 1.0 - (position - 1.0) / 30.0)  # 1.0 at pos 1, ~0.5 at pos 15
-        vol_factor = min(1.0, impressions / 3000.0)
-        growth_factor = min(1.0, max(0.0, wow_growth / 100.0))
+            if is_top_10:
+                trigger = f"Top 10 Win (Pos {position:.1f})"
+            elif is_striking_distance:
+                trigger = f"Striking Distance (Pos {position:.1f}, {impressions} Impr)"
+            else:
+                trigger = f"Discovery Query (Pos {position:.1f}, {impressions} Impr)"
 
-        # Expected CTR for position benchmark
-        expected_ctr = max(0.01, 0.30 / (position ** 0.8))
-        ctr_gap = max(0.0, expected_ctr - ctr)
+            opportunities.append({
+                "query": item.get("query"),
+                "vertical": q_vert or "general",
+                "site": item.get("site", ""),
+                "impressions": impressions,
+                "clicks": clicks,
+                "ctr": round(ctr * 100, 2),
+                "position": round(position, 1),
+                "wow_growth_pct": round(wow_growth, 1),
+                "intent": item.get("intent", "informational"),
+                "target_url": item.get("target_url", ""),
+                "opportunity_score": opportunity_score,
+                "trigger_reason": trigger,
+            })
+        else:
+            is_striking_distance = (impressions >= min_impressions) and (min_pos <= position <= max_pos)
+            is_emerging_spike = (wow_growth >= wow_threshold) and (impressions >= 300)
 
-        opportunity_score = round(
-            (vol_factor * 35.0) +
-            (pos_factor * 30.0) +
-            (growth_factor * 25.0) +
-            (min(1.0, ctr_gap * 10.0) * 10.0),
-            1
-        )
+            if not (is_striking_distance or is_emerging_spike):
+                continue
 
-        opportunities.append({
-            "query": item.get("query"),
-            "vertical": q_vert or "general",
-            "impressions": impressions,
-            "clicks": clicks,
-            "ctr": round(ctr * 100, 2),
-            "position": round(position, 1),
-            "wow_growth_pct": round(wow_growth, 1),
-            "intent": item.get("intent", "informational"),
-            "target_url": item.get("target_url", ""),
-            "opportunity_score": opportunity_score,
-            "trigger_reason": "WoW Spike (+{:.0f}%)".format(wow_growth) if is_emerging_spike and not is_striking_distance else (
-                "Striking Distance (Pos {:.1f}) + Spike (+{:.0f}%)".format(position, wow_growth) if is_emerging_spike else
-                "Striking Distance (Pos {:.1f}, {} Impr)".format(position, impressions)
+            pos_factor = max(0.0, 1.0 - (position - 1.0) / 30.0)
+            vol_factor = min(1.0, impressions / 3000.0)
+            growth_factor = min(1.0, max(0.0, wow_growth / 100.0))
+
+            expected_ctr = max(0.01, 0.30 / (position ** 0.8))
+            ctr_gap = max(0.0, expected_ctr - ctr)
+
+            opportunity_score = round(
+                (vol_factor * 35.0) +
+                (pos_factor * 30.0) +
+                (growth_factor * 25.0) +
+                (min(1.0, ctr_gap * 10.0) * 10.0),
+                1
             )
-        })
 
-    # Sort descending by opportunity score
+            opportunities.append({
+                "query": item.get("query"),
+                "vertical": q_vert or "general",
+                "site": item.get("site", ""),
+                "impressions": impressions,
+                "clicks": clicks,
+                "ctr": round(ctr * 100, 2),
+                "position": round(position, 1),
+                "wow_growth_pct": round(wow_growth, 1),
+                "intent": item.get("intent", "informational"),
+                "target_url": item.get("target_url", ""),
+                "opportunity_score": opportunity_score,
+                "trigger_reason": "WoW Spike (+{:.0f}%)".format(wow_growth) if is_emerging_spike and not is_striking_distance else (
+                    "Striking Distance (Pos {:.1f}) + Spike (+{:.0f}%)".format(position, wow_growth) if is_emerging_spike else
+                    "Striking Distance (Pos {:.1f}, {} Impr)".format(position, impressions)
+                )
+            })
+
     opportunities.sort(key=lambda x: x["opportunity_score"], reverse=True)
     return opportunities
 

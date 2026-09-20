@@ -3292,11 +3292,14 @@ Ready for commands.</div>
 
   async function loadGscOpportunities(vertical = 'all') {
     const tbody = document.getElementById('gscTableBody');
-    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">Fetching GSC search opportunities...</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">Fetching live GSC search opportunities...</td></tr>';
 
     try {
       const res = await fetch(`/api/seo/gsc-opportunities?vertical=${encodeURIComponent(vertical)}`);
       const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(data.error || 'Failed to fetch search console data');
+      }
       allGscOpportunities = data.opportunities || [];
 
       document.getElementById('seoOpportunitiesCount').textContent = allGscOpportunities.length;
@@ -3308,14 +3311,15 @@ Ready for commands.</div>
 
       renderGscTable(allGscOpportunities);
     } catch (err) {
-      tbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger-text); padding:1rem; text-align:center;">Error loading GSC: ${err.message}</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger-text); padding:1.5rem; text-align:center; font-size:13px;">⚠️ Error loading GSC: ${escapeHtml(err.message)}</td></tr>`;
+      throw err;
     }
   }
 
   function renderGscTable(opps) {
     const tbody = document.getElementById('gscTableBody');
     if (!opps || opps.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">No queries match criteria.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">No queries match criteria or no search impressions yet.</td></tr>';
       return;
     }
 
@@ -3328,8 +3332,9 @@ Ready for commands.</div>
             <div style="font-weight:600; color:var(--text); cursor:pointer;" onclick="exploreKeyword('${escapeHtml(o.query)}')">
               ${escapeHtml(o.query)}
             </div>
-            <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem;">
-              ${o.trigger_reason}
+            <div style="font-size:11px; color:var(--text-dim); margin-top:0.15rem; display:flex; align-items:center; gap:0.4rem;">
+              <span>${escapeHtml(o.trigger_reason)}</span>
+              ${o.site ? `<span class="tag-quiet tag-blue" style="font-size:10px; padding:1px 6px;">${escapeHtml(o.site)}</span>` : ''}
             </div>
           </td>
           <td><span class="tag-quiet">${escapeHtml(o.vertical)}</span></td>
@@ -3553,8 +3558,32 @@ Ready for commands.</div>
   document.getElementById('filterGscVertical').addEventListener('change', (e) => {
     loadGscOpportunities(e.target.value);
   });
-  document.getElementById('btnRefreshGsc').addEventListener('click', () => {
-    loadGscOpportunities(document.getElementById('filterGscVertical').value);
+  document.getElementById('btnRefreshGsc').addEventListener('click', async () => {
+    const btn = document.getElementById('btnRefreshGsc');
+    const origHtml = btn.innerHTML;
+    btn.innerHTML = '⏳ Fetching GSC...';
+    btn.disabled = true;
+
+    // Switch to GSC Radar tab so the user sees results
+    const gscTabBtn = document.getElementById('btnSubGsc');
+    if (gscTabBtn) gscTabBtn.click();
+
+    showToast('Connecting to Google Search Console API...');
+
+    try {
+      const vert = document.getElementById('filterGscVertical') ? document.getElementById('filterGscVertical').value : 'all';
+      await loadGscOpportunities(vert);
+      if (allGscOpportunities.length > 0) {
+        showToast(`GSC refreshed: ${allGscOpportunities.length} opportunities loaded.`, 'success');
+      } else {
+        showToast('GSC connected: 0 search queries found in past 28 days.', 'info');
+      }
+    } catch (e) {
+      showToast(`GSC refresh failed: ${e.message}`, 'error');
+    } finally {
+      btn.innerHTML = origHtml;
+      btn.disabled = false;
+    }
   });
   document.getElementById('d4sKeywordInput').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
