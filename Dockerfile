@@ -1,6 +1,7 @@
 FROM node:20-alpine
 WORKDIR /app
-RUN apk add --no-cache python3 bash curl
+RUN apk add --no-cache python3 py3-pip bash curl && \
+    pip install --no-cache-dir --break-system-packages google-api-python-client google-auth
 COPY site/ ./site/
 COPY published/ ./published/
 COPY context/ ./context/

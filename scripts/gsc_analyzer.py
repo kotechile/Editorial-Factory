@@ -32,11 +32,21 @@ def load_gsc_data(custom_path=None):
             return json.load(f)
 
     # Check for live API credentials in environment
-    creds_json = os.environ.get("GSC_CREDENTIALS_JSON")
+    creds_json = os.environ.get("GSC_CREDENTIALS_JSON") or os.environ.get("GSC_CREDENTIALS_BASE64")
     prop_url = os.environ.get("GSC_PROPERTY_URL")
 
     if creds_json and prop_url:
         try:
+            # Support base64 encoded JSON credentials
+            if not os.path.exists(creds_json) and not creds_json.strip().startswith("{"):
+                try:
+                    import base64
+                    decoded = base64.b64decode(creds_json.strip()).decode("utf-8")
+                    if "{" in decoded and "private_key" in decoded:
+                        creds_json = decoded
+                except Exception:
+                    pass
+
             # If google-api-python-client is installed, use it; otherwise fallback
             import google.auth
             from googleapiclient.discovery import build
