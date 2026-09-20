@@ -68,10 +68,20 @@ def load_gsc_data(custom_path=None):
             from googleapiclient.discovery import build
 
             # If creds_json is a file path or raw JSON string
+            creds_path = None
             if os.path.exists(creds_json):
+                creds_path = creds_json
+            elif (ROOT / creds_json).exists():
+                creds_path = str(ROOT / creds_json)
+            elif (CONTEXT_DIR / pathlib.Path(creds_json).name).exists():
+                creds_path = str(CONTEXT_DIR / pathlib.Path(creds_json).name)
+            elif (CONTEXT_DIR / "gsc_service_account.json").exists():
+                creds_path = str(CONTEXT_DIR / "gsc_service_account.json")
+
+            if creds_path:
                 from google.oauth2 import service_account
                 credentials = service_account.Credentials.from_service_account_file(
-                    creds_json, scopes=["https://www.googleapis.com/auth/webmasters.readonly"]
+                    creds_path, scopes=["https://www.googleapis.com/auth/webmasters.readonly"]
                 )
             else:
                 from google.oauth2 import service_account
