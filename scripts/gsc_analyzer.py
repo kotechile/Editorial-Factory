@@ -15,7 +15,7 @@ import json
 import os
 import pathlib
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTEXT_DIR = ROOT / "context"
@@ -65,30 +65,44 @@ def load_gsc_data(custom_path=None):
                 )
 
             service = build("searchconsole", "v1", credentials=credentials)
-            # Query last 28 days
+            # Query last 28 days dynamically
             today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            start_date_str = (datetime.now(timezone.utc) - timedelta(days=28)).strftime("%Y-%m-%d")
             request_body = {
-                "startDate": "2026-08-10",
+                "startDate": start_date_str,
                 "endDate": today_str,
                 "dimensions": ["query"],
                 "rowLimit": 1000,
             }
-            response = service.searchanalytics().query(siteUrl=prop_url, body=request_body).execute()
-            rows = response.get("rows", [])
+
+            prop_urls = [p.strip() for p in prop_url.split(",") if p.strip()]
             queries = []
-            for r in rows:
-                q = r.get("keys", [""])[0]
-                queries.append({
-                    "query": q,
-                    "impressions": int(r.get("impressions", 0)),
-                    "clicks": int(r.get("clicks", 0)),
-                    "ctr": float(r.get("ctr", 0.0)),
-                    "position": float(r.get("position", 0.0)),
-                    "prev_period_impressions": int(r.get("impressions", 0) * 0.7),
-                    "wow_growth_pct": 42.0,
-                    "vertical": "general",
-                })
-            return {"property": prop_url, "queries": queries, "live_api": True}
+            fetched_properties = []
+
+            for p in prop_urls:
+                try:
+                    response = service.searchanalytics().query(siteUrl=p, body=request_body).execute()
+                    rows = response.get("rows", [])
+                    site_name = p.replace("sc-domain:", "").replace("https://", "").replace("http://", "").rstrip("/")
+                    for r in rows:
+                        q = r.get("keys", [""])[0]
+                        queries.append({
+                            "query": q,
+                            "impressions": int(r.get("impressions", 0)),
+                            "clicks": int(r.get("clicks", 0)),
+                            "ctr": float(r.get("ctr", 0.0)),
+                            "position": float(r.get("position", 0.0)),
+                            "prev_period_impressions": int(r.get("impressions", 0) * 0.7),
+                            "wow_growth_pct": 42.0,
+                            "vertical": "general",
+                            "site": site_name,
+                        })
+                    fetched_properties.append(p)
+                except Exception as e_p:
+                    print(f"[GSC Analyzer] Warning: Could not fetch from property '{p}': {e_p}", file=sys.stderr)
+
+            if queries:
+                return {"property": ", ".join(fetched_properties), "queries": queries, "live_api": True}
         except Exception as e:
             print(f"[GSC Analyzer] Warning: Could not fetch from live GSC API ({e}). Using local data store.", file=sys.stderr)
 
