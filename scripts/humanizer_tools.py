@@ -6,6 +6,7 @@ Import with:  import humanizer_tools as ht   (scripts/ is on sys.path when these
 """
 import json
 import pathlib
+import re
 import urllib.request
 
 MODEL = "gemini-3.1-pro-preview"
@@ -83,6 +84,29 @@ def normalize_frontmatter(text):
     return "\n".join(lines)
 
 
+def ensure_title_contains_keyword(text: str) -> str:
+    """Ensure that if frontmatter contains primary_keyword, title contains the keyword.
+    
+    If the humanized rewrite somehow omitted the keyword from the title, safely prepends
+    the properly-cased keyword to ensure 100% SEO alignment.
+    """
+    import check_accessibility as ca
+    title_ok, kw, title = ca.check_title_keyword(text)
+    if title_ok or not kw:
+        return text
+
+    # Need to fix title in frontmatter
+    kw_title = " ".join([w[:1].upper() + w[1:] for w in kw.split()])
+    new_title = f"{kw_title}: {title}" if title else f"{kw_title}: What the Field Data Actually Shows"
+    
+    # Replace title line in frontmatter
+    def _replace_title(m):
+        return f'title: "{new_title}"'
+    
+    fixed = re.sub(r'^title:\s*["\']?.*["\']?$', _replace_title, text, flags=re.M)
+    return fixed
+
+
 def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     """Build a follow-up prompt telling the frontier model exactly what the gate rejected."""
     notes = []
@@ -93,6 +117,8 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
         notes.append("ADVISORY (should be fixed):")
         notes += [f"- {w}" for w in diag["warnings"]]
     tip = []
+    if any("title missing SEO keyword" in f for f in diag.get("fails", [])):
+        tip.append("SEO KEYWORD IN TITLE: The frontmatter 'title:' MUST explicitly contain the exact or naturalized 'primary_keyword' (e.g. '<Keyword>: <Subtitle>'). Never omit the target search term from the headline.")
     if diag["undefined_acronyms"]:
         tip.append("Spell out each listed acronym in full at its first use (e.g. 'Full Name (ACR)').")
     if diag["flesch"] is not None and diag["flesch"] < diag["target"]:

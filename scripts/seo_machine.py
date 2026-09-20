@@ -416,6 +416,17 @@ def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=Tr
         final_file.write_text(draft_content, encoding="utf-8")
         print(f"  ℹ️ Humanizer skipped (--no-humanize). Final draft copied from base.")
 
+    # Guarantee: Title MUST contain primary keyword for SEO indexing
+    try:
+        import humanizer_tools as ht
+        final_text = final_file.read_text(encoding="utf-8")
+        guaranteed_text = ht.ensure_title_contains_keyword(final_text)
+        if guaranteed_text != final_text:
+            final_file.write_text(guaranteed_text, encoding="utf-8")
+            print(f"  🎯 Validated & enforced SEO primary keyword in title.")
+    except Exception as e:
+        print(f"  ⚠️ Title keyword check notice: {e}")
+
     print(f"\n=======================================================")
     print(f"🎉 Pipeline Execution Complete!")
     print(f"Draft Staged: {final_file}")

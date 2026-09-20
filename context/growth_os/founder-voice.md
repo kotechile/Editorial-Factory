@@ -109,6 +109,48 @@ Every technical and executive article must be anchored in at least one of these 
 
 ---
 
+### Vertical: `meio_working_capital_tco` (Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO)
+- **The Working Capital Trap**: Holding safety buffers at every warehouse node compounds capital lockup while amplifying the bullwhip effect. Every dollar trapped in stagnant inventory carries a 20–30% annual holding cost when factoring in cost of capital, warehouse lease rates, shrinkage, and obsolescence.
+- **Expedited Freight vs. Buffer Stock Arbitrage**: Finance teams often treat expedited air freight as an operational failure rather than an intentional hedging strategy. A rigorous economic model proves that for volatile, high-value SKUs, absorbing occasional air-freight surcharges is vastly cheaper than maintaining bloated regional safety stock across 5 distributed hubs.
+- **SKU Rationalization ROI**: Long-tail inventory absorbs hidden handling costs, warehouse slotting friction, and write-off liabilities that standard gross-margin reporting completely masks. Ruthless SKU pruning releases immediate cash flow and restores warehouse labor throughput.
+
+---
+
+### Vertical: `control_tower_exception_orchestration` (Control Tower Visibility & Real-Time Exception Orchestration)
+- **Control Tower Build vs. Buy Realism**: Building an in-house tracking aggregator using ad-hoc carrier APIs creates an endless engineering maintenance sink due to breaking EDI formats and fragile telematics feeds. Unless visibility is your proprietary core IP, buy an established multi-modal platform and invest engineering capacity into autonomous exception workflows.
+- **The Downstream Cost of Late Shipments**: A late container is not merely a $500 carrier detention penalty; it triggers factory line shutdowns, idle union labor shifts, missed customer delivery windows, and contract SLA chargebacks. True visibility tools calculate down-funnel P&L risk in real time.
+- **Telemetry & IoT ROI in Transit**: 90% of IoT sensor data is irrelevant noise. Continuous cellular tracking and shock/temperature sensors only justify their hardware unit economics and streaming fees when attached to high-spoilage perishables, active pharmaceuticals, or sensitive precision equipment where automated alerts trigger diversion before total asset loss.
+
+---
+
+### Vertical: `warehouse_automation_robotics_capex` (Warehouse Automation & Robotics CapEx Amortization)
+- **AMR Fleet Payback Period vs. Rigid AS/RS**: Fixed automated storage and retrieval systems (AS/RS) require multi-million dollar initial outlays, structural building modifications, and 18-month implementations that break when carton dimensions shift. Autonomous Mobile Robots (AMRs) leased under Robotics-as-a-Service (RaaS) models provide modular scale and achieve cash-positive payback within 9–14 months.
+- **Labor Volatility Risk Index**: Evaluating warehouse automation purely on today's hourly base wage is an executive blindspot. With warehouse turnover exceeding 40% and peak-season overtime rates surging, robotics investments must be modeled against avoided recruiting costs, onboarding lag, and operational downtime.
+- **The Pick-and-Pack Error Tax**: Manual fulfillment errors cost $35–$75 per incident once customer service triage, expedited replacement shipping, and reverse logistics return restocking are accounted for. Automated vision validation and robotic picking eliminate this margin leak at the source.
+
+---
+
+### Vertical: `demand_sensing_advanced_sop` (Demand Sensing & Advanced Sales & Operations Planning (S&OP))
+- **Forecast Accuracy Amortization**: Reducing Mean Absolute Percentage Error (MAPE) by even 1–2 percentage points across a high-velocity product line frees up millions in redundant safety stock while preventing stockouts. Machine learning demand sensing outclasses 12-month historical spreadsheet averages by incorporating real-time POS sell-through and macro signals.
+- **Promo and Seasonality Shock Simulation**: Traditional S&OP processes collapse during sudden promotional surges or supply shocks because they rely on linear monthly planning cadences. Supply chains require dynamic digital sandbox simulation to model physical capacity constraints before campaigns launch.
+- **ERP Native Planning vs. Specialized S&OP Solutions**: Legacy ERP planning modules operate as slow batch runs with primitive statistical models. However, specialized point solutions introduce sync latency and integration taxes. The winning architecture uses event-driven streaming to feed ML sensing engines while preserving ERP financial posting boundaries.
+
+---
+
+### Vertical: `last_mile_routing_fleet_carbon` (Last-Mile Route Optimization & Fleet Carbon Accounting)
+- **Dynamic Routing Software ROI**: Dynamic route optimization pays for itself not through hypothetical miles saved, but through measurable stops-per-driver increases and fuel burn reductions that instantly outpace SaaS licensing costs.
+- **EV Fleet Transition TCO Realities**: Transitioning to electric commercial delivery vans cannot be evaluated on sticker price alone. A 7-year TCO model must incorporate depot transformer upgrades, peak electrical demand charges, and regenerative braking maintenance savings against ICE diesel maintenance curves.
+- **Scope 3 Logistics Carbon Accounting**: Emerging regulatory frameworks (CSRD, SEC climate rules) are turning Scope 3 emissions into financial liabilities. Companies that quantify carrier route efficiency and carbon intensity now will protect contract margins against impending carbon penalties.
+
+---
+
+### Vertical: `supplier_risk_reshoring_decision` (Supplier Risk Management & Reshoring/Nearshoring Decision Engines)
+- **Total Landed Cost (TLC) Transparency**: Chasing cheap overseas unit labor costs is an optical illusion when ocean freight volatility, port demurrage, quality audit flights, and customs duties add 25–40% to base costs. True nearshoring decision engines calculate loaded lifecycle costs per unit.
+- **Disruption Resilience Matrix**: When single-source manufacturing hubs face multi-week factory shutdowns or maritime chokepoint delays, companies without alternate production nodes burn through safety cash reserves within 45 days. Resilience is an insurance policy with measurable balance-sheet value.
+- **Dual-Sourcing Overhead vs. Risk Mitigation**: Splitting purchase orders across domestic and offshore suppliers reduces volume discount tiers by 5–10%, but prevents catastrophic revenue collapse during geopolitical disruptions. Advanced decision engines model this discount premium against probability-weighted disruption costs.
+
+---
+
 ### Vertical: `enterprise_tech_leadership` (Technology & Architecture Decisions)
 - **Cloud Repatriation Math**: The cloud is an operational agility loan. When workload predictability hits steady-state, running high-throughput compute on AWS/GCP can cost 4–8× bare metal or colocation.
 - **Microservices Tax**: Microservices solve organizational scaling problems, not engineering problems. Splitting a 10-person team's codebase into 30 microservices is architectural suicide. Monoliths with clean boundaries win until you have hundreds of engineers.

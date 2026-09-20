@@ -24,6 +24,12 @@ Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these sc
 | expat_cross_border_relocation | 0 6 * * 4 | Thu 06:00 AM EST | active |
 | career_velocity_equity_engineering | 0 6 * * 5 | Fri 06:00 AM EST | active |
 | personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM EST | active |
+| meio_working_capital_tco | 0 6 * * 1 | Mon 06:00 AM EST | active |
+| control_tower_exception_orchestration | 0 6 * * 2 | Tue 06:00 AM EST | active |
+| warehouse_automation_robotics_capex | 0 6 * * 3 | Wed 06:00 AM EST | active |
+| demand_sensing_advanced_sop | 0 6 * * 4 | Thu 06:00 AM EST | active |
+| last_mile_routing_fleet_carbon | 0 6 * * 5 | Fri 06:00 AM EST | active |
+| supplier_risk_reshoring_decision | 0 6 * * 6 | Sat 06:00 AM EST | active |
 
 ## Run log
 | Date | Vertical | Result | Notes |

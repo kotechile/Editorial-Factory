@@ -445,6 +445,136 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "enable_dataforseo": false
+    },
+    {
+      "id": "meio_working_capital_tco",
+      "label": "Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO",
+      "cadence": "0 6 * * 1",
+      "sources": [
+        "freightwaves",
+        "supply_chain_dive",
+        "gartner_supply_chain",
+        "journal_of_commerce",
+        "cscmp_research",
+        "financial_times_trade",
+        "reddit_supplychain"
+      ],
+      "primary_angles": [
+        "quantifying cash flow impact of safety stock across distributed warehouses vs stockout risk and expedited freight",
+        "the working capital trap carrying cost of stagnant inventory against volatile supplier lead times",
+        "expedited freight vs safety stock calculator air freight surcharges vs excess regional buffer stock",
+        "sku rationalization roi true holding and handling cost of long-tail low-turnover inventory items"
+      ],
+      "target_persona": "ops_leader",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "control_tower_exception_orchestration",
+      "label": "Control Tower Visibility & Real-Time Exception Orchestration",
+      "cadence": "0 6 * * 2",
+      "sources": [
+        "freightwaves",
+        "supply_chain_dive",
+        "gartner_supply_chain",
+        "journal_of_commerce",
+        "logistics_management",
+        "iot_world_today",
+        "x_ai"
+      ],
+      "primary_angles": [
+        "assessing software and operational investment from reactive tracking to predictive ai exception management",
+        "control tower build vs buy matrix engineering maintenance overhead of custom api aggregators vs visibility platforms",
+        "the true cost of a late shipment automated model for downstream labor downtime penalty fees and customer churn",
+        "telemetry and iot roi in transit hardware and data streaming costs of real-time temperature shock sensors vs spoilage write-offs"
+      ],
+      "target_persona": "supply_chain_architect",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "warehouse_automation_robotics_capex",
+      "label": "Warehouse Automation & Robotics CapEx Amortization",
+      "cadence": "0 6 * * 3",
+      "sources": [
+        "modern_materials_handling",
+        "dc_velocity",
+        "robotics_business_review",
+        "supply_chain_dive",
+        "gartner_supply_chain",
+        "logistics_management",
+        "reddit_supplychain"
+      ],
+      "primary_angles": [
+        "financial modeling for fulfillment centers manual picking workflows vs amr and asrs capital deployment",
+        "amr fleet payback period calculator equipment lease maintenance facility modifications and labor turnover savings",
+        "labor volatility risk index rising minimum wages and warehouse labor shortages altering automation roi curve",
+        "pick-and-pack error tax reverse logistics and customer support overhead of human fulfillment errors vs automated vision validation"
+      ],
+      "target_persona": "ops_leader",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "demand_sensing_advanced_sop",
+      "label": "Demand Sensing & Advanced Sales & Operations Planning (S&OP)",
+      "cadence": "0 6 * * 4",
+      "sources": [
+        "gartner_supply_chain",
+        "supply_chain_brain",
+        "supply_chain_dive",
+        "harvard_business_review",
+        "journal_of_business_forecasting",
+        "x_ai"
+      ],
+      "primary_angles": [
+        "evaluating financial return of upgrading from spreadsheet forecasting to real-time ml demand sensing tools",
+        "forecast accuracy amortization reducing mape percentage driving millions in excess safety stock reduction",
+        "promo and seasonality shock simulator supply chain stress and capacity requirements during sudden demand spikes",
+        "erp native planning vs specialized sop point solutions total cost of ownership and integration friction of standalone modules"
+      ],
+      "target_persona": "ops_leader",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "last_mile_routing_fleet_carbon",
+      "label": "Last-Mile Route Optimization & Fleet Carbon Accounting",
+      "cadence": "0 6 * * 5",
+      "sources": [
+        "freightwaves",
+        "logistics_management",
+        "fleet_owner",
+        "epa_smartway",
+        "greenbiz_transport",
+        "supply_chain_dive"
+      ],
+      "primary_angles": [
+        "optimizing dynamic delivery routing fleet asset utilization and regulatory compliance for carbon tracking",
+        "dynamic routing software roi mileage reduction fuel burn drops and stop-density improvements vs saas license fees",
+        "ev fleet transition tco 7-year total cost of ownership for electric delivery vans vs ice and depot charging infrastructure",
+        "scope 3 logistics carbon tax modeling financial impact of emerging regulatory reporting on third-party carrier spend"
+      ],
+      "target_persona": "supply_chain_architect",
+      "enable_dataforseo": true
+    },
+    {
+      "id": "supplier_risk_reshoring_decision",
+      "label": "Supplier Risk Management & Reshoring/Nearshoring Decision Engines",
+      "cadence": "0 6 * * 6",
+      "sources": [
+        "reshoring_initiative",
+        "kearney_reshoring_index",
+        "freightos_baltic",
+        "journal_of_commerce",
+        "customs_rulings",
+        "usitc_reports",
+        "tariff_updates"
+      ],
+      "primary_angles": [
+        "quantifying geopolitical tariff and lead-time risks of single-source offshore manufacturing vs nearshoring unit costs",
+        "total landed cost tlc calculator factoring tariffs customs delays currency risk quality audit travel and ocean freight volatility",
+        "disruption resilience matrix financial survival curve of supply chain network facing multi-week export hub shutdowns",
+        "dual-sourcing overhead vs risk mitigation splitting purchase orders across two suppliers vs losing volume tier pricing discounts"
+      ],
+      "target_persona": "ops_leader",
+      "enable_dataforseo": true
     }
   ]
 }

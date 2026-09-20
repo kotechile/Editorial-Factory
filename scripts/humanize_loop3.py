@@ -35,7 +35,7 @@ REQUIRED INPUTS & CONTEXT INGESTION:
 SMART BREVITY STYLING PRINCIPLES:
 1. THE TEASE (Headlines & Section Headers):
    - Section Headers (H2 `## `): Target 6 words or fewer. Active, punchy, descriptive.
-   - Title: Start from the draft title and polish/refine for punchy clarity and SEO resonance without clickbait fluff or cryptic jargon.
+   - Title: Start from the draft title and polish/refine for punchy clarity and SEO resonance without clickbait fluff or cryptic jargon. When frontmatter defines `primary_keyword:`, the `title:` and `meta_title:` MUST explicitly contain the primary keyword (preserving proper/canonical casing, e.g. "<Keyword>: <Subtitle>"). Never drop or replace the keyword in the headline.
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
 3. CONTEXT SIGNPOSTS & MANDATORY 'BY THE NUMBERS':
@@ -65,7 +65,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - No adjective-stacking before nouns ("cutting-edge, revolutionary, game-changing").
 - PRESERVE the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
 - PRESERVE every citation [n] inline and the ## Sources list VERBATIM (do not change, merge, or drop any source line or its URL).
-- PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) and polish `title` for punchy clarity.
+- PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, vertical, persona, date, slug) and polish `title` for punchy clarity. When `primary_keyword` is defined in frontmatter, `title` and `meta_title` MUST explicitly contain the primary keyword. Never omit the target keyword from the title.
 - PRESERVE the `<!-- schema -->` block (JSON-LD) and `<!-- internal-links -->` block VERBATIM if present, placed at the end of the document.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
@@ -136,7 +136,7 @@ def humanize_single_draft(draft, out_path=None):
         except Exception as e:
             print(f"ERROR rewrite attempt {attempt}: {e}")
             break
-        result = ht.normalize_frontmatter(clean(raw))
+        result = ht.ensure_title_contains_keyword(ht.normalize_frontmatter(clean(raw)))
         if out_path:
             out_path.write_text(result + "\n")
             diag = ht.measure(out_path)

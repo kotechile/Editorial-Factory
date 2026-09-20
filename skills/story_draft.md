@@ -7,7 +7,7 @@ evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity
 ## 2. The house structure
 | Section | Rule |
 |---|---|
-| **Title** | Start with a short, punchy initial title (the Stylist will refine for SEO rewording / resonance). |
+| **Title** | Start with a short, punchy initial title (the Stylist will refine for SEO rewording / resonance). When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword. |
 | **Lead** | A concrete incident or figure from the evidence delivering the core news in sentence 1. Not a definition, not a "world is changing" opener. |
 | **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed (**Why it matters / The big picture**). |
 | **By the numbers** | Mandatory quantitative data section (**By the numbers:**) highlighting 2–4 verified figures, percentages, benchmarks, or cost changes in clean, bolded scannable bullets. |

@@ -10,7 +10,7 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
 
 ## Responsibilities
 1. Apply the house structure (see `skills/story_draft.md`):
-   - **Short Initial Title** — punchy, active headline draft (to be refined by the Stylist based on SEO rewording / resonance).
+   - **Short Initial Title** — punchy, active headline draft (to be refined by the Stylist based on SEO rewording / resonance). When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword.
    - **The One Big Thing** — articulate the single most load-bearing takeaway, fact, or decision.
    - **Lead** — a concrete incident or figure from the evidence (a number, a quote, a decision), not a definition and not a "world is changing" opener.
    - **Tension** — the systemic reason this is happening now (why it matters, who it hurts/helps).

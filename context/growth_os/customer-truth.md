@@ -65,6 +65,48 @@ This document captures real customer friction, anonymized case studies, operatio
 
 ---
 
+### Vertical: `meio_working_capital_tco` (Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO)
+- **Anecdote 1: The $14M Safety Stock Trap**: A medical device distributor holding inventory across 6 regional nodes maintained 45 days of forward buffer per facility to prevent stockouts. Lead time variability from European suppliers triggered localized hoarding. Implementing MEIO echelon-level pooling re-allocated buffer stock upstream to a central DC, cutting overall system holding costs by 26% ($14.2M released in working capital) while maintaining 99.4% service levels.
+- **Anecdote 2: Air Freight Arbitrage Saves $620k Over Regional Buffering**: An electronics manufacturer evaluated the cost of holding $2.5M in regional spare parts inventories (cost of capital + 18% obsolescence risk = $575k/year carrying cost) versus absorbing $85k/year in on-demand chartered air freight for stockout events. Modeling the trade-off proved air-freight absorption was 6.7× more capital-efficient.
+- **Anecdote 3: SKU Rationalization Drops 2,400 Dead SKUs**: A multi-brand apparel retailer audited its bottom 30% of slow-moving inventory. While gross margins appeared positive on paper, factoring in pick travel time, pallet storage fees, and annual markdown cycles revealed these items ran at a -18% net margin. Pruning the bottom 2,400 SKUs boosted warehouse throughput by 14% and freed up 38,000 square feet of high-velocity racking.
+
+---
+
+### Vertical: `control_tower_exception_orchestration` (Control Tower Visibility & Real-Time Exception Orchestration)
+- **Anecdote 1: The Custom API Aggregator Maintenance Nightmare**: A mid-sized freight brokerage spent $850,000 engineering a bespoke container tracking portal. Within 9 months, breaking API changes from 4 ocean carriers and 8 drayage operators required 3 dedicated full-time engineers just to patch schemas. Scrapping the internal aggregator in favor of an enterprise RTTV integration reduced monthly maintenance costs by 68%.
+- **Anecdote 2: The $420k Downstream Ripple of a Single Stalled Container**: A specialized HVAC manufacturer missed a critical component container delayed at Port of Los Angeles. The delay triggered 48 hours of idle factory line wages ($110,000), air-freight replacement parts ($160,000), and customer delivery SLA chargebacks ($150,000). Automated exception orchestration now simulates down-funnel operational costs the moment a port dwell exceeds 36 hours.
+- **Anecdote 3: Telemetry Spoilage Alert Saves $1.8M Biologic Shipment**: A pharmaceutical distributor fitted cryogenic vaccine containers with real-time cellular temperature and tilt sensors. When a reefer truck compressor failed on I-80, an automated exception alert triggered an emergency cold-storage detour within 40 minutes, salvaging a $1.8M payload that would have been completely destroyed before destination inspection.
+
+---
+
+### Vertical: `warehouse_automation_robotics_capex` (Warehouse Automation & Robotics CapEx Amortization)
+- **Anecdote 1: AMR Fleet Delivers 11-Month Payback on RaaS**: A 250,000 sq ft e-commerce fulfillment center deployed 32 autonomous mobile robots (AMRs) on a Robotics-as-a-Service model ($2,200/month per bot including maintenance). Worker pick walk time decreased from 12 miles/day to under 3 miles/day, lifting units-per-hour (UPH) from 65 to 195 and recouping deployment costs in 11 months.
+- **Anecdote 2: Labor Turnover & Wage Spike Triggers Automation**: Facing 48% annual warehouse worker turnover and a jump from $16.50 to $22.00 in starting warehouse hourly wages, a Midwest distributor saw its manual picking cost per unit rise by 38%. Investing in robotic goods-to-person picking insulated unit fulfillment economics from future regional wage inflation.
+- **Anecdote 3: Vision Validation Eliminates $85 Pick Error Tax**: A distributor processing 15,000 daily orders suffered a 1.2% manual mispick rate. Each mispick cost an average of $82 in customer support, prepaid return shipping labels, and product restocking. Installing automated vision scanners and weight check scales at packing stations cut fulfillment errors by 94%, saving $450,000 annually.
+
+---
+
+### Vertical: `demand_sensing_advanced_sop` (Demand Sensing & Advanced Sales & Operations Planning (S&OP))
+- **Anecdote 1: 3% MAPE Reduction Liberates $8.5M in Safety Buffers**: A consumer packaged goods brand reduced its 30-day forecast MAPE from 24% to 21% using machine learning demand sensing that incorporated localized weather and retailer POS velocity. The 3-point accuracy gain allowed the finance team to permanently trim $8.5M in excess finished-goods inventory.
+- **Anecdote 2: TikTok Viral Spike Overwhelms Spreadsheet S&OP**: A beverage startup experienced a 400% surge in regional demand after a viral social campaign. Because planning relied on 90-day backward-looking ERP forecasts, production remained throttled, resulting in 4 weeks of regional stockouts and $3.2M in unfulfilled orders. Deploying real-time demand sensing signals now adjusts replenishment triggers within 12 hours of trend detection.
+- **Anecdote 3: The Standalone S&OP Sync Latency Trap**: A manufacturer implemented a best-of-breed planning point solution that only synced with the core ERP via a nightly CSV batch export. Mid-day production changes frequently caused planners to commit phantom inventory. Replacing batch exports with an event-driven streaming interface closed the reconciliation window from 24 hours to sub-minute events.
+
+---
+
+### Vertical: `last_mile_routing_fleet_carbon` (Last-Mile Route Optimization & Fleet Carbon Accounting)
+- **Anecdote 1: Dynamic Route Density Lifts Stops/Hour by 22%**: A regional parcel carrier operating 140 delivery vans switched from static postal route dispatch to real-time dynamic routing. Fleet miles dropped 16%, fuel consumption fell by 1,800 gallons weekly, and stops per driver per hour increased from 18 to 22, generating a 5.4× return on the software license cost.
+- **Anecdote 2: EV Depot Charger Grid Shock**: A delivery company ordered 50 electric delivery vans without conducting a facility utility assessment. The local electric utility quoted a 26-month lead time and $450,000 in transformer upgrade costs to support simultaneous 50kW fast charging. Implementing smart depot load-management software that staggered overnight charging prevented peak demand charges and avoided the grid upgrade.
+- **Anecdote 3: CSRD Scope 3 Audit Surfaces Carrier Carbon Liability**: An EU retail supplier facing Corporate Sustainability Due Diligence audits was penalized for third-party carrier route inefficiencies. Auditing freight partner route density and transitioning 30% of freight volume to SmartWay-certified and electric fleets protected a €45M commercial vendor contract.
+
+---
+
+### Vertical: `supplier_risk_reshoring_decision` (Supplier Risk Management & Reshoring/Nearshoring Decision Engines)
+- **Anecdote 1: The Hidden 34% Total Landed Cost (TLC) Premium**: An industrial equipment maker celebrated sourcing custom steel castings in Southeast Asia at $18/unit versus $24/unit domestically. However, unexpected port demurrage, ocean container rate spikes, 12-week transit delays, and travel expenses for defect inspection raised the true landed cost to $24.80/unit. Nearshoring production to Monterrey, Mexico cut transit times from 42 days to 4 days at $21.50 landed cost.
+- **Anecdote 2: Export Hub Shutdown Paralyzes Electronics Line**: During a 3-week logistics lockdown at a major Asian export port, a medical device firm relying on a single overseas PCB supplier ran out of stock, idling its domestic assembly facility at $65,000/day. The $1.3M incident forced the executive team to implement a multi-hub disruption survival curve model across all critical component categories.
+- **Anecdote 3: Dual-Sourcing Optimization Protects Margins**: An automotive supplier split purchase orders 70/30 between a low-cost overseas supplier and a regional domestic supplier. While unit price increased by 4.2% due to tiered volume loss, the domestic partner absorbed two separate offshore supply disruptions, preventing $4.8M in OEM assembly line shutdown penalties.
+
+---
+
 ### Vertical: `enterprise_tech_leadership` (Technology & Architecture Decisions)
 - **Anecdote 1: The Cloud Egress Shock**: A high-volume data ingest startup was paying $68,000/month in AWS NAT Gateway and inter-AZ data transfer fees alone. Moving steady-state pipeline workloads to dedicated metal reduced their monthly infrastructure cost to $14,200.
 - **Anecdote 2: Microservice Sprawl**: A 25-engineer engineering org had 48 microservices across 3 Kubernetes clusters. Onboarding a new backend engineer took 3 weeks. Consolidating into 2 modular monoliths cut deployment cycle time from 4 days to 25 minutes.

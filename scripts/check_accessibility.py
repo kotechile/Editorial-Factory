@@ -214,6 +214,11 @@ def measure(path, target=TARGET, floor=FLOOR):
         elif kw_count >= 2:
             warns.append(f"keyword density high: '{kw}' appears {kw_count}x in body")
 
+    # Title contains primary_keyword check (SEO mandatory requirement)
+    title_ok, kw_val, title_val = check_title_keyword(raw)
+    if not title_ok:
+        fails.append(f"title missing SEO keyword: title '{title_val}' must contain primary_keyword '{kw_val}'")
+
     return {
         "file": pathlib.Path(path).name,
         "flesch": score, "target": target, "floor": floor,
@@ -237,6 +242,50 @@ def _keyword_density(path, body_text):
     # normalize: count phrase occurrences ignoring case
     count = len(re.findall(re.escape(kw.lower()), low))
     return kw, count
+
+
+def check_title_keyword(raw_text):
+    """Verify that when primary_keyword is declared in frontmatter, title contains the keyword."""
+    m_kw = re.search(r"primary_keyword:\s*[\"']?([^\"'\n]+)", raw_text)
+    if not m_kw:
+        return True, None, None
+    kw = m_kw.group(1).strip()
+    if not kw:
+        return True, None, None
+    m_title = re.search(r"title:\s*[\"']?([^\"'\n]+)", raw_text)
+    if not m_title:
+        return False, kw, ""
+    title = m_title.group(1).strip()
+
+    def norm(s):
+        s = s.lower().replace("-", " ")
+        s = re.sub(r"[^a-z0-9\s]", "", s)
+        return " ".join(s.split())
+
+    n_kw = norm(kw)
+    n_title = norm(title)
+    if not n_kw:
+        return True, kw, title
+
+    # Exact normalized substring match
+    if n_kw in n_title:
+        return True, kw, title
+
+    # All words in order with flexible spacing / prepositions
+    kw_words = n_kw.split()
+    if kw_words:
+        pattern = r"\b" + r"\b.*\b".join(re.escape(w) for w in kw_words) + r"\b"
+        if re.search(pattern, n_title):
+            return True, kw, title
+
+        # Stem simple trailing 's' if not matched
+        stem = lambda w: w[:-1] if w.endswith("s") and len(w) > 3 else w
+        kw_stems = [stem(w) for w in kw_words]
+        stem_pattern = r"\b" + r"[a-z]*\b.*\b".join(re.escape(w) for w in kw_stems) + r"[a-z]*\b"
+        if re.search(stem_pattern, n_title):
+            return True, kw, title
+
+    return False, kw, title
 
 
 def check(path, target=TARGET, floor=FLOOR):

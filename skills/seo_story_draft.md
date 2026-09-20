@@ -10,8 +10,8 @@ Every SEO draft must contain the following components:
 ### A. Frontmatter Metadata
 ```yaml
 ---
-title: "<headline — 50–70 chars>"
-meta_title: "<SEO title tag — 50–60 chars>"
+title: "<headline — 50–70 chars — MUST contain primary_keyword>"
+meta_title: "<SEO title tag — 50–60 chars — MUST contain primary_keyword>"
 meta_description: "<Meta description — 140–160 chars>"
 primary_keyword: "<exact keyword>"
 secondary_keywords: ["<cluster 1>", "<cluster 2>", "<cluster 3>"]
@@ -23,6 +23,9 @@ date: "YYYY-MM-DD"
 slug: "YYYY-MM-DD_<slug>"
 ---
 ```
+
+> [!IMPORTANT]
+> **Title Keyword Requirement:** The article `title:` and `meta_title:` MUST explicitly incorporate the `primary_keyword` (exact or naturalized proper casing, e.g. `<Primary Keyword>: <Punchy Hook/Angle>`). Never drop, omit, or paraphrase away the target keyword from the title.
 
 ### B. Article Body Sections (Clean Markdown & Engaging H2 Headers)
 - `<!-- lead -->`: Concrete hook featuring an incident, production metric, or specific cost figure.

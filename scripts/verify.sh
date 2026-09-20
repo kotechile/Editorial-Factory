@@ -73,6 +73,16 @@ for f in "$ROOT"/context/drafts/*.md "$ROOT"/published/*.md; do
   fi
 done
 
+# 5.5 SEO Keyword in Title Gate (hard gate): Every draft/published article declaring primary_keyword must contain it in its title.
+for f in "$ROOT"/context/drafts/*.md "$ROOT"/published/*.md; do
+  [ -e "$f" ] || continue
+  if grep -qE '^primary_keyword:' "$f"; then
+    if ! python3 -c "import sys, pathlib; sys.path.insert(0, '$ROOT/scripts'); import check_accessibility as ca; res = ca.check_title_keyword(pathlib.Path(sys.argv[1]).read_text()); sys.exit(0 if res[0] else 1)" "$f"; then
+      echo "FAIL: SEO title missing primary_keyword — $f"; FAIL=1
+    fi
+  fi
+done
+
 # 6. Helper and publishing scripts must compile cleanly.
 for py in "$ROOT/scripts"/*.py; do
   [ -e "$py" ] || continue

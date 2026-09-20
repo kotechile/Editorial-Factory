@@ -17,7 +17,7 @@ To apply Smart Brevity effectively, the styling pass consumes:
 
 ### 3.1 The Tease (Headlines & Section Headers)
 - **H2 / H3 Section Headers:** Target **6 words or fewer**. Punchy, active, descriptive.
-- **Article Title:** The draft starts with a short title. The Stylist refines or polishes the title based on SEO keyword resonance and clarity without clickbait fluff, irony, or cryptic jargon.
+- **Article Title:** The draft starts with a short title. The Stylist refines or polishes the title based on SEO keyword resonance and clarity without clickbait fluff, irony, or cryptic jargon. When `primary_keyword` is present in frontmatter, `title:` and `meta_title:` MUST explicitly contain the primary keyword (preserving proper/canonical casing, e.g. `<Keyword>: <Hook>`). Never drop, omit, or replace the keyword in the headline.
 - **No clickbait or vague abstractions:** Headers tell the reader exactly what is in that section.
 
 ### 3.2 The Lede (First Sentence)
@@ -65,7 +65,7 @@ Introduce supporting context using bolded, standardized guide words followed imm
 - No adjective-stacking before nouns ("cutting-edge, revolutionary, game-changing").
 - Preserve the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
 - Preserve every citation `[n]` and the source list.
-- Preserve the frontmatter (including SEO tags `meta_title`, `meta_description`, `primary_keyword`, `search_volume`) and refine `title` for punchy clarity.
+- Preserve the frontmatter (including SEO tags `meta_title`, `meta_description`, `primary_keyword`, `search_volume`) and refine `title` for punchy clarity. When `primary_keyword` is defined in frontmatter, `title` and `meta_title` MUST explicitly contain the target keyword — never drop or omit it.
 - Preserve the frontmatter's opening and closing `---` YAML delimiters exactly. The frontier has
   been observed wrapping the frontmatter in a triple-backtick code fence (dropping the `---`
   lines), which breaks frontmatter parsing downstream. All three humanize scripts now normalize
