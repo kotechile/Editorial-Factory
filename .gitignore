@@ -10,6 +10,8 @@ __pycache__/
 # env / secrets — never commit real values
 .env
 .env.local
+*service_account*.json
+context/gsc_service_account.json
 
 # local runtime artifacts
 *.log
