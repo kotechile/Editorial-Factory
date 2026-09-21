@@ -239,6 +239,7 @@
       "label": "Home Capital Allocation & TCO Economics",
       "cadence": "0 6 * * 1",
       "sources": [
+        "home_lifestyle_intel",
         "greenbuildingadvisor",
         "jchs_harvard",
         "nar_realtor_reports",
@@ -260,6 +261,7 @@
       "label": "Local-First Smart Infrastructure & Telemetry",
       "cadence": "0 6 * * 2",
       "sources": [
+        "home_lifestyle_intel",
         "home_assistant_community",
         "matter_thread_consortium",
         "hackaday",
@@ -281,6 +283,7 @@
       "label": "Home Operations, Permitting & Contractor Contracts",
       "cadence": "0 6 * * 4",
       "sources": [
+        "home_lifestyle_intel",
         "ashrae_standards",
         "contractor_talk",
         "icc_safe_codes",
@@ -302,6 +305,7 @@
       "label": "Climate Hardening, Insurability & Grid Resilience",
       "cadence": "0 6 * * 5",
       "sources": [
+        "home_lifestyle_intel",
         "ibhs_fortified",
         "insurance_information_institute",
         "noaa_climate_risk",
@@ -323,6 +327,7 @@
       "label": "Home Infrastructure & Major Asset Lifecycle TCO",
       "cadence": "0 6 * * 1",
       "sources": [
+        "home_lifestyle_intel",
         "energy_star",
         "ashrae_standards",
         "jchs_harvard",
@@ -431,6 +436,7 @@
       "label": "Personal Asset Micro-Economics & 'Tinkering Tax' Audits",
       "cadence": "0 6 * * 6",
       "sources": [
+        "home_lifestyle_intel",
         "reddit_selfhosted",
         "reddit_homelab",
         "hacker_news",

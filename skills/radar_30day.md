@@ -41,6 +41,13 @@ Vertical-specific sources/angles come from `context/verticals.json` — never in
 > (`search_intelligence`, `get_latest_insights`, `get_podcast_takeaways`, `get_vendor_evaluations`).
 > Primary sources, URLs, and exact figures in `key_metrics` are pre-anchored to the 30-day window.
 
+> **Intelligence MCP integration (`home_lifestyle_intel`):** For home capital allocation, smart home,
+> residential energy, and DIY/tinkering verticals, query the Coolify-hosted Home & Lifestyle Intelligence
+> server directly via `scripts/home_lifestyle_intel_client.py --recent 30 --vertical <id> --format signals`
+> or via MCP tools (`search_home_intelligence`, `get_latest_home_insights`, `get_market_and_mortgage_trends`,
+> `get_product_recommendations`, `get_diy_and_renovation_ideas`).
+
+
 
 ### Stage 3 — Capture & score
 For each raw signal capture: URL, date, the concrete claim/figure, and the angle it opens.

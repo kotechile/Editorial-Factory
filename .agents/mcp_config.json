@@ -2,6 +2,9 @@
   "mcpServers": {
     "supply-chain-intel": {
       "serverUrl": "https://intel.giniloh.com/sse"
+    },
+    "home-lifestyle-intel": {
+      "serverUrl": "https://lifestyle.giniloh.com/sse"
     }
   }
 }
