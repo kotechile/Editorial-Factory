@@ -205,6 +205,7 @@
       "label": "Supply Chain Orchestration & Physical Logistics",
       "cadence": "0 6 * * 4",
       "sources": [
+        "supply_chain_intel",
         "freightwaves",
         "supply_chain_dive",
         "journal_of_commerce",
@@ -451,6 +452,7 @@
       "label": "Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO",
       "cadence": "0 6 * * 1",
       "sources": [
+        "supply_chain_intel",
         "freightwaves",
         "supply_chain_dive",
         "gartner_supply_chain",
@@ -473,6 +475,7 @@
       "label": "Control Tower Visibility & Real-Time Exception Orchestration",
       "cadence": "0 6 * * 2",
       "sources": [
+        "supply_chain_intel",
         "freightwaves",
         "supply_chain_dive",
         "gartner_supply_chain",
@@ -495,6 +498,7 @@
       "label": "Warehouse Automation & Robotics CapEx Amortization",
       "cadence": "0 6 * * 3",
       "sources": [
+        "supply_chain_intel",
         "modern_materials_handling",
         "dc_velocity",
         "robotics_business_review",
@@ -517,6 +521,7 @@
       "label": "Demand Sensing & Advanced Sales & Operations Planning (S&OP)",
       "cadence": "0 6 * * 4",
       "sources": [
+        "supply_chain_intel",
         "gartner_supply_chain",
         "supply_chain_brain",
         "supply_chain_dive",
@@ -538,6 +543,7 @@
       "label": "Last-Mile Route Optimization & Fleet Carbon Accounting",
       "cadence": "0 6 * * 5",
       "sources": [
+        "supply_chain_intel",
         "freightwaves",
         "logistics_management",
         "fleet_owner",
@@ -559,6 +565,7 @@
       "label": "Supplier Risk Management & Reshoring/Nearshoring Decision Engines",
       "cadence": "0 6 * * 6",
       "sources": [
+        "supply_chain_intel",
         "reshoring_initiative",
         "kearney_reshoring_index",
         "freightos_baltic",

@@ -35,6 +35,13 @@ Vertical-specific sources/angles come from `context/verticals.json` — never in
 > timestamp-check every hit against `SCAN_WINDOW_START` before dropping it. Never trust the operator
 > alone to guarantee the window.
 
+> **Intelligence MCP integration (`supply_chain_intel`):** For supply chain, logistics, and IT
+> infrastructure verticals, query the Coolify-hosted Supply Chain Intelligence server directly via
+> `scripts/supply_chain_intel_client.py --recent 30 --vertical <id> --format signals` or via MCP tools
+> (`search_intelligence`, `get_latest_insights`, `get_podcast_takeaways`, `get_vendor_evaluations`).
+> Primary sources, URLs, and exact figures in `key_metrics` are pre-anchored to the 30-day window.
+
+
 ### Stage 3 — Capture & score
 For each raw signal capture: URL, date, the concrete claim/figure, and the angle it opens.
 Assign a **Signal Intensity (0–100)** and drop anything below **60**.

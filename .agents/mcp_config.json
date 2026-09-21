@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "supply-chain-intel": {
+      "serverUrl": "https://intel.giniloh.com/sse"
+    }
+  }
+}
