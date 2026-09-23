@@ -72,6 +72,7 @@ ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary
 - Target Flesch Reading Ease >= 60 on the body (hard floor >= 50). READABILITY comes from plain WORDS, not short sentences: replace long/technical words with everyday ones. Write connected, natural sentences of ~14-20 words with variation — do NOT fragment into choppy one-liners.
 - Write FLUENTLY — no keyword stuffing. A target search phrase (if any) appears AT MOST 2-3 times in the whole body.
 - Do not change or drop any fact, figure, [n] citation, or source line.
+- NEVER invent an expansion for a proper noun or system name (e.g. CRAB, DeltaBox). If a name has no known full form, do not fabricate one to satisfy the acronym rule — rephrase to drop the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB"). A fabricated acronym expansion is a hallucination and a hard failure.
 
 OUTPUT FORMAT (strict):
 1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM), then the <!-- linkedin --> variant.

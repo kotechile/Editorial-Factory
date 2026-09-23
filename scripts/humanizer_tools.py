@@ -68,6 +68,27 @@ def normalize_frontmatter(text):
     if not lines:
         return text
     if lines[0].strip() == "---":
+        # Opening delimiter correct, but the model sometimes leaves a stray ``` fence
+        # immediately after the frontmatter closing `---` (the orphaned *closing* code
+        # fence). Strip any ``` fence line that sits between the closing `---` and the
+        # first body content (a section marker, heading, or plain paragraph).
+        close_idx = None
+        for i in range(1, len(lines)):
+            if lines[i].strip() == "---":
+                close_idx = i
+                break
+        if close_idx is not None:
+            # Remove any ``` line(s) directly after the closing delimiter, before body text.
+            j = close_idx + 1
+            cleaned = lines[:close_idx + 1]
+            while j < len(lines) and (lines[j].strip() == "```" or lines[j].strip() == ""):
+                if lines[j].strip() == "```":
+                    j += 1
+                    continue
+                cleaned.append(lines[j])
+                j += 1
+            cleaned.extend(lines[j:])
+            return "\n".join(cleaned)
         return text  # already correct
     fm_keys = ("title:", "vertical:", "persona:", "date:", "slug:", "one_big_thing:",
                "meta_title:", "meta_description:", "primary_keyword:", "secondary_keywords:",

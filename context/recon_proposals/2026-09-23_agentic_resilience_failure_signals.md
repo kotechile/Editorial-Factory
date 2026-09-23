@@ -1,0 +1,16 @@
+# Signals: agentic_resilience_failure — 2026-09-23
+
+**Window:** 2026-08-24 → 2026-09-23
+**Queries run:** 6 (web_search across arxiv / incident_reports / postmortems / hacker_news / vendor-changelog angles)
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | "Safe to Resume? Breaking Execution Continuity of Agent Execution via Rollback" | https://arxiv.org/abs/2608.29381 | 2026-08-29 | First systematic security study of agent checkpoint/rollback; 5 failure modes (incomplete internal state coverage, inconsistent checkpoint state, external state mismatch, unbound nondeterministic replay, unrecorded external effects); 3 end-to-end attacks on Hermes/Cline/LangGraph → malware-verification bypass, unauthorized mail forwarding, double payment; 347 traces → 1,735 executions; detection 98.7% precision / 99.9% recall / 99.5% accuracy | state recovery & checkpointing / transactional undo-redo rollbacks / cascading containment | 92 |
+| 2 | "Agentic Transaction: Towards ACID-Compliant Agent Systems" | https://arxiv.org/abs/2608.13900 | 2026-08 | ACID-Agent: 90.0 score vs Claude Code (3-majority) 75.2 vs DA-Agent 65.2, at 444K tokens / $0.13 (Claude Code 1121K / $0.21); removing failed-step isolation drops score 11.7%; +10.6% over SOTA | transactional undo-redo rollbacks / state recovery | 85 |
+| 3 | Diagrid "Top 5 Mistakes Shipping AI Agents to Production in 2026" | https://www.diagrid.io/infrastructure/top-5-mistakes-shipping-agents-production-2026 | 2026-08-31 | Inngest 2026 report: 74% of AI teams had a customer-visible incident within 90 days (vs 62% non-AI); 35% run no evals; 20% spend up to half engineering capacity on reliability; 0% confident at 500+ eng scale; OpenAI+Stripe agentic checkout mandates Idempotency-Key; PocketOS prod DB deleted in 9s | compound reliability math / cascading containment | 78 |
+| 4 | "Correct Is Not Governed: Provenance Integrity in Agentic Workflows" | https://arxiv.org/abs/2608.12761 | 2026-08 | Provenance/integrity for agentic workflows; visible endpoint success can persist after the authorizing witness is invalid | state recovery / transactional rollbacks | 70 |
+| 5 | "From Untrusted Input to Trusted Memory" (memory poisoning) | https://arxiv.org/html/2606.04329v1 | 2026-06 | — OUT OF WINDOW (June 2026) | context poisoning mitigation | dropped |
+| 6 | "Context Contamination in LLM Analysis of Network Security Logs" | https://arxiv.org/html/2607.14493v1 | 2026-07 | — OUT OF WINDOW (July 2026) | context poisoning mitigation | dropped |
+| 7 | "From Spark to Fire" (error cascades in multi-agent collaboration) | https://arxiv.org/html/2603.04474v2 | 2026-03 | — OUT OF WINDOW (March 2026) | cascading error containment | dropped |
+| 8 | Microsoft "Taxonomy of Failure Modes in Agentic AI Systems, v2.0" | https://cdn-dynmedia-1.microsoft.com/.../Taxonomy-of-Failure-Modes-in-Agentic-AI-Systems-v2-0.pdf | 2026-04 | — OUT OF WINDOW (April 2026) | agentic failure mode taxonomy | dropped |
+| 9 | "Characterizing Faults in Agentic AI" | https://arxiv.org/html/2603.06847v1 | 2026-03 | — OUT OF WINDOW (March 2026) | agentic failure mode taxonomy | dropped |

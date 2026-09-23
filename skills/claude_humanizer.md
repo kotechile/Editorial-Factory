@@ -127,10 +127,25 @@ one.
   `maxOutputTokens`. A too-small budget makes the model think hard and then truncate the article
   (`finishReason: MAX_TOKENS`, partial output, missing `## Sources`/gate report). Keep
   `maxOutputTokens` **≥ 20,000** — verify with `finishReason: STOP` and `sources_check=ok`.
+- **Socket timeout (thinking models):** the rewrite can take well over 30s wall-clock because the
+  model reasons for seconds before emitting its first token. Any `generateContent` call in a humanizer
+  script MUST use a socket timeout ≥ 240s (as `humanizer_tools.call_gemini` does). A 30s timeout
+  aborts the full rewrite mid-generation with `The read operation timed out` and, worse,
+  `humanize_loop3.py`'s `humanize_all()` still prints `WROTE` unconditionally after the loop even
+  though the final file was never written — do not trust that message; verify the `_final.md` file
+  exists before reporting success. (Fixed in humanize_loop3.py 2026-09-23.)
 - A section that fails its gate after 2 retries → report the specific section + criterion to the
   Editor, do not silently ship.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so
   the Drafter stops producing it upstream.
+- **Post-rewrite figure audit (mandatory):** after the frontier passes the ACCESS gate, scan the
+  body for NEW specific numbers (dollar amounts, payback periods, time spans, counts) that are
+  NOT in the verified brief or the source list. The frontier has inserted unsourced figures
+  (observed: a fixed-machine payback rendered as "five years" when the brief carried no payback
+  number) that pass Flesch/acronym/length checks cleanly — the retry loop cannot catch them
+  because it has no knowledge of the brief's figure set. Revert any such number to qualitative
+  wording ("takes years") rather than a fabricated precision, and re-run `check_accessibility.py`
+  to confirm the gate still passes.
 
 ## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
 
@@ -146,6 +161,10 @@ Gates — the piece FAILS the ACCESS gate if:
    "International Emergency Economic Powers Act (IEEPA)" or "IEEPA (...the law that lets the
    president act in a national emergency)". Never reuse an acronym bare after introducing it.
    Checker target: **zero undefined acronyms**.
+   **Never invent an expansion.** If the token is a proper noun with no known full form (a
+   system/paper name like CRAB, DeltaBox, or Hermes), do NOT fabricate an expansion to satisfy
+   this gate — a fabricated full name is a hallucination and a hard failure. Rephrase to drop
+   the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB").
 2. **A specialist term from any domain is left untranslated for a general reader.** For each
    domain term (legal, finance, customs, energy, security, database, ML, government program),
    either (a) find the plain phrase the source used, or (b) add a short gloss. Examples:

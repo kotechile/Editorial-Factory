@@ -84,6 +84,7 @@ ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary
 - Target Flesch Reading Ease >= 60 on the body (hard floor >= 50). READABILITY comes from plain WORDS, not short sentences: replace long/technical words with everyday ones ("set up" not "implementation", "build" not "architect", "slows down" not "degrades throughput", "freezes" not "compounds down the stack"). Write connected, natural sentences of ~14-20 words with variation — do NOT fragment into choppy one-liners. Long proper nouns and the numbers are fine; the barrier is word choice.
 - Write FLUENTLY — no keyword stuffing. A target search phrase (if any) appears AT MOST 2-3 times in the whole body; let the title/meta/headings carry it and rephrase everywhere else (pronouns, synonyms, "these systems"). Vary sentence rhythm and link ideas; never let it read like a keyword-matching exercise.
 - Do not change or drop any fact, figure, [n] citation, or source line.
+- NEVER invent an expansion for a proper noun or system name (e.g. CRAB, DeltaBox). If a name has no known full form, do not fabricate one to satisfy the acronym rule — rephrase to drop the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB"). A fabricated acronym expansion is a hallucination and a hard failure.
 
 OUTPUT FORMAT (strict):
 1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM), then the <!-- linkedin --> variant.
@@ -98,7 +99,9 @@ def call_gemini(prompt):
     }
     req = urllib.request.Request(URL, data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
+    # Thinking models (gemini-3.1-pro-preview) burn seconds on reasoning before the first
+    # token; a 30s socket timeout aborts a full rewrite mid-generation. Match humanizer_tools.
+    with urllib.request.urlopen(req, timeout=240) as r:
         j = json.loads(r.read().decode())
     txt = j["candidates"][0]["content"]["parts"][0]["text"]
     return txt
