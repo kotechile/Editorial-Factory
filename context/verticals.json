@@ -71,7 +71,7 @@
     {
       "id": "enterprise_ai_governance",
       "label": "Enterprise AI Governance & Control Planes",
-      "cadence": "0 6 * * 1",
+      "cadence": "30 6 * * 1",
       "sources": [
         "ciso_reports",
         "owasp_genai",
@@ -97,7 +97,7 @@
     {
       "id": "nhil_infrastructure_ops",
       "label": "NHIL Infrastructure, NetOps & Power Strategy",
-      "cadence": "0 6 * * 2",
+      "cadence": "30 6 * * 2",
       "sources": [
         "datacenter_knowledge",
         "open_compute_project",
@@ -120,7 +120,7 @@
     {
       "id": "multi_agent_enterprise_fabric",
       "label": "Multi-Agent Orchestration & Enterprise Fabrics",
-      "cadence": "0 6 * * 3",
+      "cadence": "30 6 * * 3",
       "sources": [
         "arxiv",
         "github_trending",
@@ -142,7 +142,7 @@
     {
       "id": "enterprise_ai_finops",
       "label": "AI FinOps & Value Realization",
-      "cadence": "0 6 * * 4",
+      "cadence": "30 6 * * 4",
       "sources": [
         "cloud_cost_reports",
         "finops_foundation",
@@ -164,7 +164,7 @@
     {
       "id": "enterprise_tech_leadership",
       "label": "Technology & Architecture Decisions",
-      "cadence": "0 6 * * 2",
+      "cadence": "0 7 * * 2",
       "sources": [
         "hacker_news",
         "substack_tech_leads",
@@ -183,7 +183,7 @@
     {
       "id": "gpu_hardware",
       "label": "GPUs & AI Hardware",
-      "cadence": "0 6 * * 3",
+      "cadence": "0 7 * * 3",
       "sources": [
         "arxiv",
         "github_trending",
@@ -203,7 +203,7 @@
     {
       "id": "supply_chain",
       "label": "Supply Chain Orchestration & Physical Logistics",
-      "cadence": "0 6 * * 4",
+      "cadence": "0 7 * * 4",
       "sources": [
         "supply_chain_intel",
         "freightwaves",
@@ -237,7 +237,7 @@
     {
       "id": "home_equity_tco",
       "label": "Home Capital Allocation & TCO Economics",
-      "cadence": "0 6 * * 1",
+      "cadence": "0 7 * * 1",
       "sources": [
         "home_lifestyle_intel",
         "greenbuildingadvisor",
@@ -259,7 +259,7 @@
     {
       "id": "smart_home_telemetry",
       "label": "Local-First Smart Infrastructure & Telemetry",
-      "cadence": "0 6 * * 2",
+      "cadence": "30 7 * * 2",
       "sources": [
         "home_lifestyle_intel",
         "home_assistant_community",
@@ -281,7 +281,7 @@
     {
       "id": "home_ops_execution",
       "label": "Home Operations, Permitting & Contractor Contracts",
-      "cadence": "0 6 * * 4",
+      "cadence": "30 7 * * 4",
       "sources": [
         "home_lifestyle_intel",
         "ashrae_standards",
@@ -325,7 +325,7 @@
     {
       "id": "home_infrastructure_lifecycle_tco",
       "label": "Home Infrastructure & Major Asset Lifecycle TCO",
-      "cadence": "0 6 * * 1",
+      "cadence": "30 7 * * 1",
       "sources": [
         "home_lifestyle_intel",
         "energy_star",
@@ -348,7 +348,7 @@
     {
       "id": "workstation_compute_economics",
       "label": "Autonomous Tech Workstations & AI Compute Economics",
-      "cadence": "0 6 * * 2",
+      "cadence": "0 8 * * 2",
       "sources": [
         "tomshardware",
         "puget_systems_benchmarks",
@@ -370,7 +370,7 @@
     {
       "id": "enterprise_build_vs_buy",
       "label": "Enterprise Build-vs-Buy & Developer Tooling Architecture",
-      "cadence": "0 6 * * 3",
+      "cadence": "30 7 * * 3",
       "sources": [
         "hacker_news",
         "substack_tech_leads",
@@ -391,7 +391,7 @@
     {
       "id": "expat_cross_border_relocation",
       "label": "Advanced Expat, Cross-Border & Multi-Jurisdictional Relocation",
-      "cadence": "0 6 * * 4",
+      "cadence": "0 8 * * 4",
       "sources": [
         "irs_international_bulletins",
         "oecd_tax_reports",
@@ -413,7 +413,7 @@
     {
       "id": "career_velocity_equity_engineering",
       "label": "Career Velocity, Equity Liquidity & Offer Engineering",
-      "cadence": "0 6 * * 5",
+      "cadence": "30 6 * * 5",
       "sources": [
         "levels_fyi",
         "carta_equity_reports",
@@ -456,7 +456,7 @@
     {
       "id": "meio_working_capital_tco",
       "label": "Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO",
-      "cadence": "0 6 * * 1",
+      "cadence": "0 8 * * 1",
       "sources": [
         "supply_chain_intel",
         "freightwaves",
@@ -479,7 +479,7 @@
     {
       "id": "control_tower_exception_orchestration",
       "label": "Control Tower Visibility & Real-Time Exception Orchestration",
-      "cadence": "0 6 * * 2",
+      "cadence": "30 8 * * 2",
       "sources": [
         "supply_chain_intel",
         "freightwaves",
@@ -502,7 +502,7 @@
     {
       "id": "warehouse_automation_robotics_capex",
       "label": "Warehouse Automation & Robotics CapEx Amortization",
-      "cadence": "0 6 * * 3",
+      "cadence": "0 8 * * 3",
       "sources": [
         "supply_chain_intel",
         "modern_materials_handling",
@@ -525,7 +525,7 @@
     {
       "id": "demand_sensing_advanced_sop",
       "label": "Demand Sensing & Advanced Sales & Operations Planning (S&OP)",
-      "cadence": "0 6 * * 4",
+      "cadence": "30 8 * * 4",
       "sources": [
         "supply_chain_intel",
         "gartner_supply_chain",
@@ -547,7 +547,7 @@
     {
       "id": "last_mile_routing_fleet_carbon",
       "label": "Last-Mile Route Optimization & Fleet Carbon Accounting",
-      "cadence": "0 6 * * 5",
+      "cadence": "0 7 * * 5",
       "sources": [
         "supply_chain_intel",
         "freightwaves",
@@ -569,7 +569,7 @@
     {
       "id": "supplier_risk_reshoring_decision",
       "label": "Supplier Risk Management & Reshoring/Nearshoring Decision Engines",
-      "cadence": "0 6 * * 6",
+      "cadence": "30 6 * * 6",
       "sources": [
         "supply_chain_intel",
         "reshoring_initiative",

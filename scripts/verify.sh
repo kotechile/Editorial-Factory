@@ -91,6 +91,19 @@ for py in "$ROOT/scripts"/*.py; do
   fi
 done
 
+# 7. Cron parity gate (hard gate): one live `Full Pipeline: <vertical>` job per registry
+#    vertical, on the registry's cadence. Catches the drift class that let 22 verticals
+#    sit unscheduled (a create-only sync skipped jobs by name, so registry edits never
+#    reached the live fleet). Skips only when there is no scheduler state at all (the
+#    deploy container) — never on a real mismatch.
+if [ -e "${HERMES_CRON_JOBS:-$HOME/.hermes/cron/jobs.json}" ]; then
+  if ! python3 "$ROOT/scripts/sync_crons.py" --check; then
+    echo "FAIL: cron drift — run 'python3 scripts/sync_crons.py' to reconcile"; FAIL=1
+  fi
+else
+  echo "  skip: cron parity gate (no scheduler state on this host)"
+fi
+
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"
   exit 1

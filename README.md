@@ -85,7 +85,7 @@ published/ final approved articles       Dockerfile + docker-compose.yml
 ## Quick start (local)
 
 ```bash
-# 1. Configure verticals + voice personas (already seeded with 5 verticals)
+# 1. Configure verticals + voice personas (already seeded with 26 verticals)
 cat context/verticals.json
 
 # 2. Manual radar sweep for 30-day industry signals
@@ -152,9 +152,12 @@ See `docs/VPS_WIRING.md` for the VPS-side bot fleet, cron jobs, and Coolify depl
 Verticals live entirely in `context/verticals.json` — each entry carries `id`, `label`, `cadence`
 (cron expression), `sources`, `primary_angles`, and `target_persona`. To add one:
 
-1. Append an entry to `context/verticals.json`.
+1. Append an entry to `context/verticals.json`, giving it a `cadence` slot that is **free on every
+   weekday it uses** (slots are 30 minutes apart, 06:00–08:30 UTC — pipelines cannot share a slot).
 2. Run `python3 scripts/sync_crons.py` on the VPS — it creates the missing `Full Pipeline: <id>`
-   cron job from the `cadence` field (idempotent; existing jobs are left untouched).
+   cron job and fixes any job whose schedule drifted from the registry. Add `--dry-run` to see the
+   plan first; `--check` exits non-zero if the registry and the live fleet disagree (this is what
+   `scripts/verify.sh` runs).
 3. Optionally add a matching `target_persona` to `context/personas.json`.
 
 No code changes required.

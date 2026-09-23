@@ -81,19 +81,43 @@ The LinkedIn post is a separate ~1,300-char variant built from the same skeleton
 
 ## 3. What runs when
 
-Five cron jobs, one per vertical, each running the **complete** pipeline. Generated from
-`context/verticals.json` (see "Adding a vertical").
+One cron job per vertical in `context/verticals.json` — **26 today** — each running the
+**complete** pipeline. They are generated and reconciled by `scripts/sync_crons.py` and staggered
+30 minutes apart (06:00–08:30 UTC, no two jobs in the same slot on the same weekday), so a
+frontier-provider hiccup can't take out several pipelines at once.
 
 | Job | Vertical | Schedule (UTC) |
 |---|---|---|
-| `Full Pipeline: agentic_ai` | Agentic Automation & Architecture | Mon + Thu 06:00 |
-| `Full Pipeline: enterprise_tech_leadership` | Technology & Architecture Decisions | Tue 06:00 |
-| `Full Pipeline: gpu_hardware` | GPUs & AI Hardware | Wed 06:00 |
-| `Full Pipeline: supply_chain` | Supply Chain & Logistics Tech | Thu 06:00 |
-| `Full Pipeline: home_systems_reno` | Modern Home Infrastructure & Building Science | Fri 06:00 |
+| `Full Pipeline: agentic_ai` | Agentic Runtime & Architecture | Mon + Thu 06:00 |
+| `Full Pipeline: enterprise_ai_governance` | Enterprise AI Governance & Control Planes | Mon 06:30 |
+| `Full Pipeline: home_equity_tco` | Home Capital Allocation & TCO Economics | Mon 07:00 |
+| `Full Pipeline: home_infrastructure_lifecycle_tco` | Home Infrastructure & Major Asset Lifecycle TCO | Mon 07:30 |
+| `Full Pipeline: meio_working_capital_tco` | Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO | Mon 08:00 |
+| `Full Pipeline: ai_observability_qa` | Observability, Evals & Quality | Tue 06:00 |
+| `Full Pipeline: nhil_infrastructure_ops` | NHIL Infrastructure, NetOps & Power Strategy | Tue 06:30 |
+| `Full Pipeline: enterprise_tech_leadership` | Technology & Architecture Decisions | Tue 07:00 |
+| `Full Pipeline: smart_home_telemetry` | Local-First Smart Infrastructure & Telemetry | Tue 07:30 |
+| `Full Pipeline: workstation_compute_economics` | Autonomous Tech Workstations & AI Compute Economics | Tue 08:00 |
+| `Full Pipeline: control_tower_exception_orchestration` | Control Tower Visibility & Real-Time Exception Orchestration | Tue 08:30 |
+| `Full Pipeline: agentic_resilience_failure` | Resilience & Failure Engineering | Wed 06:00 |
+| `Full Pipeline: multi_agent_enterprise_fabric` | Multi-Agent Orchestration & Enterprise Fabrics | Wed 06:30 |
+| `Full Pipeline: gpu_hardware` | GPUs & AI Hardware | Wed 07:00 |
+| `Full Pipeline: enterprise_build_vs_buy` | Enterprise Build-vs-Buy & Developer Tooling Architecture | Wed 07:30 |
+| `Full Pipeline: warehouse_automation_robotics_capex` | Warehouse Automation & Robotics CapEx Amortization | Wed 08:00 |
+| `Full Pipeline: enterprise_ai_finops` | AI FinOps & Value Realization | Thu 06:30 |
+| `Full Pipeline: supply_chain` | Supply Chain Orchestration & Physical Logistics | Thu 07:00 |
+| `Full Pipeline: home_ops_execution` | Home Operations, Permitting & Contractor Contracts | Thu 07:30 |
+| `Full Pipeline: expat_cross_border_relocation` | Advanced Expat, Cross-Border & Multi-Jurisdictional Relocation | Thu 08:00 |
+| `Full Pipeline: demand_sensing_advanced_sop` | Demand Sensing & Advanced Sales & Operations Planning (S&OP) | Thu 08:30 |
+| `Full Pipeline: resilient_home_assets` | Climate Hardening, Insurability & Grid Resilience | Fri 06:00 |
+| `Full Pipeline: career_velocity_equity_engineering` | Career Velocity, Equity Liquidity & Offer Engineering | Fri 06:30 |
+| `Full Pipeline: last_mile_routing_fleet_carbon` | Last-Mile Route Optimization & Fleet Carbon Accounting | Fri 07:00 |
+| `Full Pipeline: personal_microeconomics_tinkering_tax` | Personal Asset Micro-Economics & 'Tinkering Tax' Audits | Sat 06:00 |
+| `Full Pipeline: supplier_risk_reshoring_decision` | Supplier Risk Management & Reshoring/Nearshoring Decision Engines | Sat 06:30 |
 
 View them with `hermes cron list` (or the dashboard **Cron** page). Each job runs with the repo
-as its working directory, so the bot reads `AGENTS.md` and `skills/`.
+as its working directory, so the bot reads `AGENTS.md` and `skills/`. If the registry and the live
+fleet ever disagree, `scripts/verify.sh` fails; reconcile with `python3 scripts/sync_crons.py`.
 
 ---
 
