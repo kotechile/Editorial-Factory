@@ -7,6 +7,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | Date | Vertical | Slug | Headline | Reader URL | Distribution |
 |---|---|---|---|---|---|
 | 2026-09-21 | agentic_ai | mcp-skills-extension | MCP Skills Extension: Standardizing Agent Workflows | https://pressflow.aichieve.net/published/2026-09-21_mcp-skills-extension.md | [article](https://pressflow.aichieve.net/published/2026-09-21_mcp-skills-extension.md) |
+| 2026-09-23 | agentic_resilience_failure | rollback-breaks-execution-continuity | Why Agent Rollbacks Fail | https://pressflow.aichieve.net/published/2026-09-23_rollback-breaks-execution-continuity.md | [article](https://pressflow.aichieve.net/published/2026-09-23_rollback-breaks-execution-continuity.md) |
 
 ## Awaiting approval — NOT published
 
