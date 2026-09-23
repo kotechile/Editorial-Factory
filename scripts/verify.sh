@@ -104,6 +104,13 @@ else
   echo "  skip: cron parity gate (no scheduler state on this host)"
 fi
 
+# 7.5 Sitemap drift gate (hard gate): context/sitemap.json is derived from published/*.md
+#     (scripts/sitemap_sync.py) and feeds the SEO tab + Growth OS loops. Hand-maintained it
+#     advertised four deleted articles and hid everything published since the fresh start.
+if ! python3 "$ROOT/scripts/sitemap_sync.py" --check; then
+  echo "FAIL: sitemap drift — run 'python3 scripts/sitemap_sync.py' to regenerate"; FAIL=1
+fi
+
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"
   exit 1

@@ -1075,10 +1075,20 @@ const server = createServer(async (req, res) => {
       const articles = [];
       for (const f of files) {
         const text = await readFile(join(pubDir, f), 'utf8');
-        const title = (text.match(/^#\s+(.+)$/m) || [])[1] || f;
-        const wordCount = text.split(/\s+/).filter(Boolean).length;
+        const fm = parseFrontmatter(text);
+        // Titles live in the frontmatter, not an H1: falling straight through to the
+        // filename made this public manifest advertise slugs ("2026-09-23_<slug>.md")
+        // as headlines for every article the publisher writes.
+        const title = fm.title || fm.meta_title || (text.match(/^#\s+(.+)$/m) || [])[1] || f;
+        // Count reader-facing prose only — frontmatter, "## Sources" and the
+        // `<!-- linkedin -->` variant are not part of the article body.
+        const body = text
+          .replace(/^---\s*[\r\n]+[\s\S]*?[\r\n]+---/, '')
+          .split(/^##\s+Sources\s*$/m)[0]
+          .split(/<!--\s*linkedin\s*-->/)[0];
+        const wordCount = body.split(/\s+/).filter(Boolean).length;
         const readTime = Math.max(1, Math.round(wordCount / 220));
-        articles.push({ slug: f.replace(/\.md$/, ''), file: f, title, wordCount, readTime });
+        articles.push({ slug: f.replace(/\.md$/, ''), file: f, title, wordCount, readTime, vertical: fm.vertical || '' });
       }
       return sendJson(res, 200, articles);
     }
