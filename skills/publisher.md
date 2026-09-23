@@ -14,6 +14,16 @@ Persist every artifact unconditionally; distribute only after the `@Simon approv
    `load_env()` first for exactly this reason: without it the Supabase step degrades to a printed
    "Skipping DB sync." and the article never reaches the DB. If that line appears in a publish log,
    the publish is incomplete — fix the credentials and re-run.
+4. Refresh the derived surfaces *in the same pass*. An article that is absent from them is a false
+   "not published" everywhere else (the SEO tab, the Growth OS loops), and a hand-maintained copy
+   drifts the moment anything is deleted:
+   - `python3 scripts/sitemap_sync.py` rewrites `context/sitemap.json` — the SEO tab's index and the
+     Growth OS / GSC-feedback input — from `published/*.md`. `verify.sh` §7.5 runs
+     `python3 scripts/sitemap_sync.py --check` as a hard gate, so a publish that skips this step
+     fails the gate instead of shipping a stale index. Never hand-edit that file.
+   - Flip the run-log row in `context/content_calendar.md` for the run that produced the article:
+     replace "halted at @Simon approve gate … Held at approval, not distributed." with the publish
+     outcome (approval source, `published/<file>`, publish commit).
 
 ## 3. Distribution (gated — after `@Simon approve`)
 - **Execution:** run `python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md` (supports `--article-url <url>`, `--promo-url <url>`, `--interactive`).
