@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T03:06:17Z",
+  "updated_at": "2026-09-26T06:09:01Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -168,6 +168,21 @@
       "h2_topics": [],
       "target_persona": "supply_chain_architect",
       "date": "2026-09-25"
+    },
+    {
+      "slug": "2026-09-26_disney-hulu-fourth-hike-subscription-creep",
+      "title": "Disney+ and Hulu Just Raised Prices 13% \u2014 Right After Doubling Profits",
+      "url": "https://pressflow.aichieve.net/published/2026-09-26_disney-hulu-fourth-hike-subscription-creep.md",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "A Bill That Compounds",
+        "Where This Bites",
+        "The Catch"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-09-26"
     },
     {
       "slug": "2026-09-26_tariff-cliff-already-priced-in",

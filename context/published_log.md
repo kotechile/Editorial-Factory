@@ -19,6 +19,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-09-25 | resilient_home_assets | ca-fair-plan-rate-hike-hardening-exit | California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy | https://pressflow.aichieve.net/published/2026-09-25_ca-fair-plan-rate-hike-hardening-exit.md | manual review (LinkedIn auto-post off) |
 | 2026-09-25 | career_velocity_equity_engineering | carta-unexercised-options-401k | Why 70% of Startup Options Go Unexercised | https://pressflow.aichieve.net/published/2026-09-25_carta-unexercised-options-401k.md | manual review (LinkedIn auto-post off) |
 | 2026-09-25 | last_mile_routing_fleet_carbon | zet-scale-ev-truck-residual-value-risk | Electric Trucks Just Doubled Overnight — and the Battery Wasn't the Reason | https://pressflow.aichieve.net/published/2026-09-25_zet-scale-ev-truck-residual-value-risk.md | manual review (LinkedIn auto-post off) |
+| 2026-09-26 | personal_microeconomics_tinkering_tax | disney-hulu-fourth-hike-subscription-creep | Disney+ and Hulu Just Raised Prices 13% — Right After Doubling Profits | https://pressflow.aichieve.net/published/2026-09-26_disney-hulu-fourth-hike-subscription-creep.md | manual review (LinkedIn auto-post off) |
 
 ## Awaiting approval — NOT published
 
