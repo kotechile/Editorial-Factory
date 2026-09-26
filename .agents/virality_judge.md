@@ -13,7 +13,9 @@ single, defensible winner (or a hard "no publish" when nothing clears the bar).
    - For single-signal candidates: **Novelty (0.40)**, **Authority (0.30)**, **Shareability (0.30)**.
    - For **Multi-Topic Syntheses (Signal A ⨂ Signal B)**: **Emergence (0.35)** (does the intersection produce a new insight neither covered alone?), **Dual Authority (0.30)** (both legs trace to verifiable primaries), **Tension & Shareability (0.35)**.
 2. Composite = weighted 1–10.
-3. Apply the hard gate: **score ≥ 8 to proceed.** Priority is given to Synthesis candidates over single news recaps to build proprietary editorial moat.
+3. Apply the hard gate: **score ≥ 8 to proceed.** A Synthesis candidate is preferred over a single
+   news recap only when it also beats the best single-signal candidate by ≥ 0.3 — a synthesis that wins
+   on a tie is a contrived pairing, and the single-signal winner takes the slot.
 4. For the winner, write the angle brief (specifying both anchors and the emergent collision point if a synthesis piece): hook, tension, target reader, and the single claim to defend.
 5. If no candidate clears 8, instruct the Scout to broaden seeds or test alternate signal pairs (Loop 1);
    if it still fails, return "no publish" with reasons.

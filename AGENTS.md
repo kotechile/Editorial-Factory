@@ -46,10 +46,14 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    to LinkedIn/Ghost requires the founder's `@Simon approve` gate (a hard gate). Approved articles
    are written to `published/` and `context/published_log.md`, then posted by the Publisher.
 9. **Multi-topic signal synthesis.** Rather than merely publishing single-signal press summaries,
-   the engine prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day developments
-   (e.g., falling LLM frontier pricing colliding with local in-house software development) to formulate
-   an emergent, high-conviction thesis that neither individual source could state on its own. Grounding
-   requires primary verified data for each leg of the synthesis.
+   the pipeline prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day
+   developments (e.g., falling LLM frontier pricing colliding with local in-house software
+   development) into an emergent, high-conviction thesis neither individual source could state on
+   its own. The pairs are proposed and scored by the **Judge** (`skills/virality_judge.md` §2.5)
+   and may be seeded by `scripts/synthesize_topics.py`, a mechanical, advisory pre-filter that
+   cannot score or clear the ≥ 8 gate. Grounding requires primary verified data for **each** leg
+   (the dual-anchor gate in `skills/fact_check.md` §5): if either leg fails verification, the
+   synthesis is under-sourced and returns to the Judge.
 
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).

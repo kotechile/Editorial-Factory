@@ -29,10 +29,14 @@ Single press articles are frequently commoditized vendor announcements, incremen
 
 Synthesis Composite = round(0.35·E + 0.30·A + 0.35·S, 1).
 
-**Precedence rule:** If a Synthesis candidate scores ≥ 8.0, it is selected over single-topic candidates because synthesis yields proprietary editorial moat instead of single-vendor news recaps.
+**Precedence rule (with a margin):** a Synthesis candidate is selected over single-topic candidates only
+when it scores ≥ 8.0 **and** beats the best single-signal candidate by ≥ 0.3. A synthesis that wins on a
+tie, or on novelty alone, is a contrived pairing displacing a stronger story — take the single-signal
+winner instead. Synthesis buys a proprietary moat only when the intersection actually beats the parts.
 
 ## 3. The hard gate
-- **Score ≥ 8 → proceed.** Select the single winner (giving priority to high-scoring syntheses).
+- **Score ≥ 8 → proceed.** Select the single winner (a synthesis only when it clears ≥ 8.0 **and** beats
+  the best single-signal candidate by ≥ 0.3 — see the precedence rule in §2.5).
 - Score 7–7.9 → broaden keyword seeds once (back to Scout) or test alternate signal pairs, re-score.
 - Score < 7 → drop.
 

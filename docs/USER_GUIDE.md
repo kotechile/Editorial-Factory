@@ -295,15 +295,24 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 - **How it reads** — the anti-AI voice rules live in `skills/claude_humanizer.md` (negative
   constraints + the human-voice gate). Tighten them there; the stylist follows them verbatim.
 - **How picky the topic gate is** — the ≥ 8/10 threshold is in `skills/virality_judge.md`.
-- **Multi-Topic Cross-Pollination** — configured in `skills/virality_judge.md` §2.5 and automated via `scripts/synthesize_topics.py`. Rather than publishing single-signal summaries, the engine actively pairs colliding 30-day developments:
+- **Multi-Topic Cross-Pollination** — the rule lives in `skills/virality_judge.md` §2.5: the Judge may
+  select a *synthesis* (Signal A ⨂ Signal B) over a single-signal recap when the intersection yields a
+  thesis neither anchor states alone. `scripts/synthesize_topics.py` is only a **mechanical, advisory
+  pre-filter** that seeds the candidate table — it never scores the ≥ 8 gate, never writes the headline
+  or claim, and "no valid pair" is a legitimate result:
   - *Signal A*: Frontier LLM token prices plunge 75–80%.
   - *Signal B*: Enterprise shift toward local in-house software development / platform teams.
-  - *Synthesis*: *"Would Lower LLM Frontier Model Prices Drive More Reliable In-House Development?"*
-  - Test or run via CLI:
+  - *Synthesis*: *"Would Lower LLM Frontier Model Prices Drive More Reliable In-House Development?"* — written by the Judge, not by the script.
+  - It admits a pair only when both rows carry an `https://` source, an in-window date and Intensity
+    ≥ 60, on different domains, colliding on ≥ 2 distinct word-boundary tokens through an archetype
+    scoped to that vertical. Each leg then has to clear the dual-anchor verification gate
+    (`skills/fact_check.md` §5) before drafting.
+  - Run or test it via CLI:
     ```bash
     python3 scripts/synthesize_topics.py --demo
     python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-24_agentic_ai_signals.md
-    python3 scripts/synthesize_topics.py --signal-a "..." --signal-b "..." --vertical agentic_ai
+    python3 scripts/synthesize_topics.py --signals <file> --format json --show-rejected
+    python3 scripts/test_synthesize_topics.py   # 18-case regression suite (wired into verify.sh §8)
     ```
 
 ---

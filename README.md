@@ -68,7 +68,7 @@ output is published articles instead of micro-SaaS products.
 | Editor-in-Chief | `editor` | orchestration, calendar, approval gate | orchestrator |
 | SEO Scout | `seo_scout` | GSC query detection, DataForSEO enrichment, cannibalization audit | fast |
 | Radar Scout | `radar` | 30-day sweep per vertical | fast |
-| Virality Judge | `judge` | score + drop < 8 | fast |
+| Virality Judge | `judge` | score single signals + cross-pollination pairs; drop < 8 | fast |
 | Fact Verifier | `verifier` | claim extraction + primary-source validation | mid |
 | Story Drafter | `drafter` | structural first pass & SEO schema markup | mid |
 | Claude Stylist & Critic | `stylist` | frontier human-voice rewrite | **Claude (frontier)** |
@@ -92,9 +92,10 @@ cat context/verticals.json
 # 2. Manual radar sweep for 30-day industry signals
 hermes -p radar chat -q "Run the 30-day radar for vertical 'agentic_ai' per skills/radar_30day.md"
 
-# 2b. Multi-topic signal synthesis (combine 2+ acute signals into an emergent article brief)
+# 2b. Multi-topic signal synthesis — pairing helper (advisory pre-filter, no scoring)
 python3 scripts/synthesize_topics.py --demo
 python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-24_agentic_ai_signals.md
+python3 scripts/test_synthesize_topics.py   # regression suite for the helper
 
 # 3. Demand-Led SEO Content Machine: Scan GSC opportunities & draft article
 python3 scripts/gsc_analyzer.py --min-impressions 500 --min-pos 8 --max-pos 25

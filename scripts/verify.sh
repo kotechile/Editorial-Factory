@@ -111,6 +111,21 @@ if ! python3 "$ROOT/scripts/sitemap_sync.py" --check; then
   echo "FAIL: sitemap drift — run 'python3 scripts/sitemap_sync.py' to regenerate"; FAIL=1
 fi
 
+# 8. Synthesis gates (hard). scripts/synthesize_topics.py is an advisory pairing pre-filter, so the
+#    properties that make it safe to ship are: it cannot clear the >=8 gate itself, its fixtures may
+#    not invent citations, and any committed synthesis artifact carries two verified anchors. The
+#    regression suite pins the defects it was rewritten to remove (constant gate-clearing scores,
+#    cross-domain substring collisions like carrier/port, canned theses, fabricated demo sources).
+if ! python3 "$ROOT/scripts/test_synthesize_topics.py" >/dev/null 2>&1; then
+  echo "FAIL: synthesis helper regression suite — detail:"; python3 "$ROOT/scripts/test_synthesize_topics.py" 2>&1 | tail -6; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-fixtures; then
+  echo "FAIL: a synthesis fixture cites a source absent from the committed signals files"; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-briefs; then
+  echo "FAIL: synthesis brief/draft anchoring (see messages above)"; FAIL=1
+fi
+
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"
   exit 1

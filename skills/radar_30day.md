@@ -77,6 +77,14 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 | 1 | #1 ⨂ #4 | Would tumbling frontier token prices make local in-house development more reliable than SaaS? | 8.5 |
 ```
 
+> **Pairing helper (advisory).** `python3 scripts/synthesize_topics.py --signals <that file>` prints a
+> mechanically validated candidate table: only rows with an `https://` source, an in-window date and
+> Intensity ≥ 60; word-boundary token collisions, ≥ 2 distinct tokens, different source domains, and
+> archetypes scoped to the registry verticals. It reports an advisory `emergence_heuristic` — **it does
+> not score the ≥ 8 gate, does not write a headline, and "no valid pair" is a legitimate answer.**
+> Use it to seed the table above, then let the Judge own the collision vector and the number. The
+> rows in the table above come from the Judge, not from the helper.
+
 ## 4. Failure handling
 - Zero candidates ≥ 60 → log query syntax to `skills/self_improvement_eval.md`, widen to 45 days,
   re-run once. If still empty, return "no publish" — never pad.
