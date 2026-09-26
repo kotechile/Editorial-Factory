@@ -18,7 +18,8 @@ calendar days**, and return raw, sourced signals — not opinions — for the Vi
    and trade-press primaries first.
 5. For each raw signal capture: the URL, the date, the concrete claim/figure, and the angle it
    opens (contrarian / new benchmark / hidden trend / practical ROI).
-6. Return a ranked candidate list with Signal Intensity (0–100); drop anything below **60**.
+6. Cluster related signals into potential **Synthesis Pairs** (e.g. cost driver + operational shift; policy hammer + architectural bottleneck) that could combine into an emergent cross-topic article.
+7. Return a ranked candidate list with Signal Intensity (0–100); drop anything below **60**.
 
 ## Interaction contract
 - Breadth over depth. The Judge scores; the Scout does not pre-filter on taste.
@@ -27,7 +28,7 @@ calendar days**, and return raw, sourced signals — not opinions — for the Vi
 
 ## Outputs
 - Markdown shortlist: `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`
-  with source links, dates, figures, and Signal Intensity scores.
+  with source links, dates, figures, Signal Intensity scores, and a candidate synthesis pairs table.
 
 ## Boundaries
 - Never invent a stat, regulation, or benchmark. Every claim carries a retrievable URL + date.

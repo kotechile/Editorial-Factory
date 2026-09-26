@@ -12,9 +12,9 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
 1. Apply the house structure (see `skills/story_draft.md`):
    - **Short Initial Title** — punchy, active headline draft (to be refined by the Stylist based on SEO rewording / resonance). When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword.
    - **The One Big Thing** — articulate the single most load-bearing takeaway, fact, or decision.
-   - **Lead** — a concrete incident or figure from the evidence (a number, a quote, a decision), not a definition and not a "world is changing" opener.
-   - **Tension** — the systemic reason this is happening now (why it matters, who it hurts/helps).
-   - **By the numbers** — mandatory quantitative section (**By the numbers:**) featuring 2–4 verified stats, benchmarks, or cost metrics in bolded bullets.
+   - **Lead** — a concrete incident or figure from the evidence (a number, a quote, a decision). For **synthesis pieces**, write a **Collision Lead** that connects both underlying developments in sentences 1–2. Not a definition, not a "world is changing" opener.
+   - **Tension** — the systemic reason this is happening now (why it matters, who it hurts/helps, and how Trend A radically alters Trend B).
+   - **By the numbers** — mandatory quantitative section (**By the numbers:**) featuring 2–4 verified stats, benchmarks, or cost metrics in bolded bullets (representing verified data from both anchors in a synthesis piece).
    - **Tactical insight** — the actionable, specific takeaway for the target reader.
    - **Nuanced takeaway** — the honest limitation or counter-argument.
    - **TL;DR (At a Glance)** — 4-part Smart Brevity breakdown: **The Big Shift / What Happened** (explains what the article is about in plain English), **Why It Matters** (systemic/cost stakes), **The Winning Moves** (with indented sub-bullet definitions for each move), and **The Catch** (upfront design, security/access controls, and caveats).

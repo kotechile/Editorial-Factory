@@ -12,9 +12,28 @@ Score the Scout's signals and return a single, defensible winning angle (or a ha
 
 Composite = round(0.40·N + 0.30·A + 0.30·S, 1).
 
+### 2.5 Multi-Topic Synthesis Protocol (Cross-Pollination Engine)
+Single press articles are frequently commoditized vendor announcements, incremental version bumps, or isolated news items. To create defensible editorial moat, the Judge must actively combine **two or more related signals** into an emergent, synthesized article:
+- **The Core Synthesis Question**: *What strategic tension or economic shift appears when Trend A collides with Trend B that neither article could state on its own?*
+- **Canonical Example**:
+  - *Signal A*: Frontier LLM API prices drop sharply (e.g., token pricing falling 70–80% across frontier models).
+  - *Signal B*: Enterprise shift toward local, in-house software development and internal developer platforms.
+  - *Emergent Synthesis*: *"Would lower LLM frontier model prices drive more reliable in-house development?"* — exploring how cheap intelligence tips the build-vs-buy calculation and whether deterministic self-correction eliminates external SaaS lock-in.
+
+**Synthesis Scoring Axes (1–10 each):**
+| Axis | Question | Weight |
+|---|---|---|
+| **Emergence (E)** | Does combining Signal A and Signal B create a genuinely new thesis that neither source posited on its own? | 0.35 |
+| **Dual Authority (A)** | Do both legs trace to verifiable primary sources (benchmarks, filings, pricing releases, code commits)? | 0.30 |
+| **Tension & Shareability (S)** | Does this intersection force a hard decision, debunk conventional wisdom, or alter the target reader's P&L / roadmap? | 0.35 |
+
+Synthesis Composite = round(0.35·E + 0.30·A + 0.35·S, 1).
+
+**Precedence rule:** If a Synthesis candidate scores ≥ 8.0, it is selected over single-topic candidates because synthesis yields proprietary editorial moat instead of single-vendor news recaps.
+
 ## 3. The hard gate
-- **Score ≥ 8 → proceed.** Select the single winner.
-- Score 7–7.9 → broaden keyword seeds once (back to Scout), re-score.
+- **Score ≥ 8 → proceed.** Select the single winner (giving priority to high-scoring syntheses).
+- Score 7–7.9 → broaden keyword seeds once (back to Scout) or test alternate signal pairs, re-score.
 - Score < 7 → drop.
 
 ### 3.5 Prior-cycle thesis de-dup (HARD check before scoring)
@@ -34,8 +53,27 @@ verdict line in the matching `content_calendar.md` run-log rows, and `context/pu
 
 ## 4. Output — the angle brief
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_angle_brief.md`:
+
+### Format A: Multi-Topic Synthesis Brief (Preferred)
 ```markdown
 # Angle Brief: <vertical> — YYYY-MM-DD
+**Angle Type:** Synthesis (Cross-Topic Fusion)
+**Winner:** <Provocative question or synthesis headline, e.g. "Would Lower LLM Frontier Model Prices Drive More Reliable In-House Development?">
+**Scores:** E=.. A=.. S=.. → Composite=..
+**Signal A (Anchor 1):** <Source URL, publication date, concrete figure/event>
+**Signal B (Anchor 2):** <Source URL, publication date, concrete figure/event>
+**Emergent Collision Point:** <Why Signal A alters the economics, reliability, or feasibility of Signal B>
+**Hook:** <The concrete collision lead tying both primary anchors together in sentence 1>
+**Tension:** <The systemic friction / who this empowers / who this threatens>
+**Target reader:** <persona id from context/personas.json>
+**Single claim to defend:** <The unified hypothesis linking both signals that the article must prove>
+**Runner-ups + why rejected:** <brief list of individual signals and alternative pairs>
+```
+
+### Format B: Single-Signal Brief (Fallback when no viable pair emerges)
+```markdown
+# Angle Brief: <vertical> — YYYY-MM-DD
+**Angle Type:** Single-Signal
 **Winner:** <headline-worthy one-liner>
 **Scores:** N=.. A=.. S=.. → Composite=..
 **Hook:** <the concrete incident/figure that opens the piece>
@@ -47,4 +85,4 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_angle_brief.md`:
 
 ## 5. Failure handling
 No candidate ≥ 8 after one broaden → return "no publish" with the scoring table. Log the weak
-vector (e.g. "all signals were retreads of the prior 30 days") to `skills/self_improvement_eval.md`.
+vector (e.g. "all signals were retreads of the prior 30 days; no valid synthesis pairs cleared the emergence gate") to `skills/self_improvement_eval.md`.

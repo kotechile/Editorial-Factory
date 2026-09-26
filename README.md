@@ -11,21 +11,22 @@ output is published articles instead of micro-SaaS products.
 
 ## Dual-Engine Architecture
 
-### Engine 1: 30-Day News & Intelligence Radar
+### Engine 1: 30-Day News & Intelligence Radar (with Cross-Topic Synthesis)
 ```
 [Cron / Gateway / Manual trigger]
         │
         ▼
-[Radar Scout]          Loop 1 — 30-day multi-source sweep per vertical
+[Radar Scout]          Loop 1 — 30-day multi-source sweep + synthesis pair clustering
         │
         ▼
-[Virality Judge]       scores ≥ 8/10 (Novelty × Authority × Shareability) or broaden seeds
+[Virality Judge]       evaluates single signals & cross-pollination pairs (Signal A ⨂ Signal B)
+                       scores ≥ 8/10 (Emergence × Dual Authority × Tension/Shareability)
         │
         ▼
-[Fact Verifier]        Loop 2 — extract 3–5 claims → validate vs primary sources
+[Fact Verifier]        Loop 2 — dual-anchor extraction → validate both vs primary sources
         │
         ▼
-[Story Drafter]        structure: incident/stat lead → systemic reason → tactical takeaway
+[Story Drafter]        structure: collision lead → systemic tension → dual-anchor stats → tactics
         │
         ▼
 [Claude Stylist]       Loop 3 — frontier rewrite + critic read-back until human-voice gate passes
@@ -90,6 +91,10 @@ cat context/verticals.json
 
 # 2. Manual radar sweep for 30-day industry signals
 hermes -p radar chat -q "Run the 30-day radar for vertical 'agentic_ai' per skills/radar_30day.md"
+
+# 2b. Multi-topic signal synthesis (combine 2+ acute signals into an emergent article brief)
+python3 scripts/synthesize_topics.py --demo
+python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-24_agentic_ai_signals.md
 
 # 3. Demand-Led SEO Content Machine: Scan GSC opportunities & draft article
 python3 scripts/gsc_analyzer.py --min-impressions 500 --min-pos 8 --max-pos 25

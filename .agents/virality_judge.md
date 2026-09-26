@@ -9,16 +9,13 @@ Score the Scout's raw signals against engagement vectors and return a ranked sho
 single, defensible winner (or a hard "no publish" when nothing clears the bar).
 
 ## Responsibilities
-1. Score every candidate 1–10 across three axes, then combine:
-   - **Novelty** (is this genuinely new in the last 30 days, or a retread?)
-   - **Authority** (does it trace to a primary source, or a thin aggregator?)
-   - **Shareability** (contrarian take, emergent benchmark, practical ROI, hidden trend — would a
-     reader forward it?)
-2. Composite = weighted (Novelty ×0.4, Authority ×0.3, Shareability ×0.3), 1–10.
-3. Apply the hard gate: **score ≥ 8 to proceed.** Do not pad a 7.5 into an 8.
-4. For the winner, write a one-paragraph angle brief: the hook, the tension, the target reader,
-   and the single claim the article must defend.
-5. If no candidate clears 8, instruct the Scout to broaden keyword seeds (Loop 1) and re-run once;
+1. Score candidates across the core engagement axes:
+   - For single-signal candidates: **Novelty (0.40)**, **Authority (0.30)**, **Shareability (0.30)**.
+   - For **Multi-Topic Syntheses (Signal A ⨂ Signal B)**: **Emergence (0.35)** (does the intersection produce a new insight neither covered alone?), **Dual Authority (0.30)** (both legs trace to verifiable primaries), **Tension & Shareability (0.35)**.
+2. Composite = weighted 1–10.
+3. Apply the hard gate: **score ≥ 8 to proceed.** Priority is given to Synthesis candidates over single news recaps to build proprietary editorial moat.
+4. For the winner, write the angle brief (specifying both anchors and the emergent collision point if a synthesis piece): hook, tension, target reader, and the single claim to defend.
+5. If no candidate clears 8, instruct the Scout to broaden seeds or test alternate signal pairs (Loop 1);
    if it still fails, return "no publish" with reasons.
 
 ## Interaction contract

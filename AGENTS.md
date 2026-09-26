@@ -45,6 +45,11 @@ gates, and every non-deterministic step is gated on retrievable evidence.
 8. **Approval-gated auto-publish.** Articles are drafted and verified autonomously, but publishing
    to LinkedIn/Ghost requires the founder's `@Simon approve` gate (a hard gate). Approved articles
    are written to `published/` and `context/published_log.md`, then posted by the Publisher.
+9. **Multi-topic signal synthesis.** Rather than merely publishing single-signal press summaries,
+   the engine prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day developments
+   (e.g., falling LLM frontier pricing colliding with local in-house software development) to formulate
+   an emergent, high-conviction thesis that neither individual source could state on its own. Grounding
+   requires primary verified data for each leg of the synthesis.
 
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).

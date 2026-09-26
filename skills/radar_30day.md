@@ -49,9 +49,17 @@ Vertical-specific sources/angles come from `context/verticals.json` — never in
 
 
 
-### Stage 3 — Capture & score
-For each raw signal capture: URL, date, the concrete claim/figure, and the angle it opens.
-Assign a **Signal Intensity (0–100)** and drop anything below **60**.
+### Stage 3 — Capture, score & cross-signal synthesis clustering
+1. For each raw signal capture: URL, date, the concrete claim/figure, and the angle it opens.
+   Assign a **Signal Intensity (0–100)** and drop anything below **60**.
+2. **Cross-signal synthesis clustering**: Actively identify intersecting pairs or clusters of signals
+   that collide to form a larger emergent story. Look for archetypal pairings:
+   - *Cost/Driver ⨂ Operational Shift*: e.g. Frontier LLM price collapse (Signal A) + Enterprise shift
+     toward local in-house software development (Signal B).
+   - *Governance/Regulatory Hammer ⨂ Technical Architecture*: e.g. Compliance audit mandate (Signal A) +
+     Autonomous agent tool-execution boundaries (Signal B).
+   - *Infrastructure Constraint ⨂ Algorithmic Optimization*: e.g. Datacenter power bottlenecks (Signal A) +
+     Model distillation & skill pruning (Signal B).
 
 ### Stage 4 — Output
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
@@ -62,6 +70,11 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 
 | # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
 |---|--------|-----------|------|--------------|-------|-----------|
+
+## Candidate Synthesis Pairs
+| Pair | Signals | Collision Vector / Emergent Inquiry | Estimated Emergence (1-10) |
+|---|---|---|---|
+| 1 | #1 ⨂ #4 | Would tumbling frontier token prices make local in-house development more reliable than SaaS? | 8.5 |
 ```
 
 ## 4. Failure handling

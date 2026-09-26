@@ -38,20 +38,22 @@ One pipeline run moves through three loops, then an approval gate:
 ```
 [Cron fires] → editor bot
    │
-   ▼  Loop 1 — Scouting & validation
+   ▼  Loop 1 — Scouting, synthesis & validation
 [radar] sweeps the vertical's sources (X/LinkedIn, arXiv, GitHub, Hacker News, Reddit,
-        trade press), constrained to the last 30 days.
-[judge] scores each signal on Novelty × Authority × Shareability.
-        Only a score ≥ 8/10 proceeds. No signal ≥ 8 → the seeds broaden once, then "no publish".
+        trade press), constrained to the last 30 days, clustering related signals into candidate pairs.
+[judge] scores individual signals AND cross-pollination pairs (Signal A ⨂ Signal B) on
+        Emergence × Dual Authority × Tension/Shareability. Priority is given to multi-topic
+        syntheses (e.g. collapsing LLM prices ⨂ rise of in-house software factories).
+        Only a composite score ≥ 8/10 proceeds.
    │
-   ▼  Loop 2 — Verification
-[verifier] breaks the winning angle into 3–5 checkable claims and validates each against a
-           PRIMARY source. Unverifiable claims are flagged or removed — never paraphrased
-           into plausibility.
+   ▼  Loop 2 — Verification (Dual-Anchor)
+[verifier] breaks the winning brief into checkable claims (2–3 from Anchor A, 2–3 from Anchor B)
+           and validates each against PRIMARY sources. Both legs must be verified; unverifiable
+           claims are removed.
    │
    ▼  Loop 3 — Draft & frontier rewrite
-[drafter] writes the structured first pass (incident/stat lead → systemic reason → tactical
-          takeaway), using only the verified evidence.
+[drafter] writes the structured first pass (collision lead bridging both events → systemic tension
+          → dual-metric quantitative section → tactical moves), using only the verified evidence.
 [stylist] (Claude) rewrites for human voice — cuts AI-tells, injects cadence — iterating
           section-by-section (lead first) until each section passes its own gate, then one
           whole-piece coherence pass.
@@ -293,6 +295,16 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 - **How it reads** — the anti-AI voice rules live in `skills/claude_humanizer.md` (negative
   constraints + the human-voice gate). Tighten them there; the stylist follows them verbatim.
 - **How picky the topic gate is** — the ≥ 8/10 threshold is in `skills/virality_judge.md`.
+- **Multi-Topic Cross-Pollination** — configured in `skills/virality_judge.md` §2.5 and automated via `scripts/synthesize_topics.py`. Rather than publishing single-signal summaries, the engine actively pairs colliding 30-day developments:
+  - *Signal A*: Frontier LLM token prices plunge 75–80%.
+  - *Signal B*: Enterprise shift toward local in-house software development / platform teams.
+  - *Synthesis*: *"Would Lower LLM Frontier Model Prices Drive More Reliable In-House Development?"*
+  - Test or run via CLI:
+    ```bash
+    python3 scripts/synthesize_topics.py --demo
+    python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-24_agentic_ai_signals.md
+    python3 scripts/synthesize_topics.py --signal-a "..." --signal-b "..." --vertical agentic_ai
+    ```
 
 ---
 
