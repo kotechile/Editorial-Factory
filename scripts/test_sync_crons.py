@@ -53,9 +53,10 @@ class PromptTemplate(unittest.TestCase):
     def test_instruction_keeps_the_safety_rails(self):
         prompt = sc.prompt_for({"id": "agentic_ai", "label": "Agentic"})
         self.assertIn("@Simon approve", prompt)
-        self.assertIn("do not publish without approval", prompt)
-        self.assertIn("never scores", prompt)          # the helper cannot clear the >=8 gate
-        self.assertIn("no valid pair", prompt)         # a legitimate outcome, not a failure
+        self.assertIn("NOT approval-gated", prompt)     # site + Supabase persist in the run
+        self.assertIn("outbound distribution", prompt)  # only distribution waits for the gate
+        self.assertIn("never scores", prompt)           # the helper cannot clear the >=8 gate
+        self.assertIn("no valid pair", prompt)          # a legitimate outcome, not a failure
 
     def test_instruction_is_vertical_specific(self):
         prompt = sc.prompt_for({"id": "expat_cross_border_relocation", "label": "Expat"})

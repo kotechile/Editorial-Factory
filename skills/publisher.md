@@ -1,7 +1,8 @@
 # SKILL: Publisher (Persistence + Distribution)
 
 ## 1. Objective
-Persist every artifact unconditionally; distribute only after the `@Simon approve` gate.
+Persist every finished article unconditionally — site + Supabase — in the same run that produced it;
+gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Simon approve`.
 
 ## 2. Persistence (always)
 1. Write the final article to `published/YYYY-MM-DD_<slug>.md`.
@@ -23,7 +24,10 @@ Persist every artifact unconditionally; distribute only after the `@Simon approv
      fails the gate instead of shipping a stale index. Never hand-edit that file.
    - Flip the run-log row in `context/content_calendar.md` for the run that produced the article:
      replace "halted at @Simon approve gate … Held at approval, not distributed." with the publish
-     outcome (approval source, `published/<file>`, publish commit).
+     outcome (who authorized, `published/<file>`, publish commit, Supabase row id).
+   - Run this persistence pass **as part of the pipeline run**, not after an approval: the reader
+     site + Supabase are not gated. `scripts/publish.py` refreshes `context/sitemap.json` for you;
+     the run-log flip is the one step it cannot infer, so do it in the same pass.
 
 ## 3. Distribution (gated — after `@Simon approve`)
 - **Execution:** run `python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md` (supports `--article-url <url>`, `--promo-url <url>`, `--interactive`).

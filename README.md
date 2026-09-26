@@ -32,7 +32,8 @@ output is published articles instead of micro-SaaS products.
 [Claude Stylist]       Loop 3 — frontier rewrite + critic read-back until human-voice gate passes
         │
         ▼
-[Publisher]            @approve gate → Supabase + LinkedIn/Ghost
+[Publisher]            persist → published/ + Supabase + sitemap (no gate)
+                       "@Simon approve" → LinkedIn / Ghost / Reddit distribution
 ```
 
 ### Engine 2: SEO Content Machine (Growth OS)
@@ -65,7 +66,7 @@ output is published articles instead of micro-SaaS products.
 
 | Role | Bot profile | Duty | Model tier |
 |---|---|---|---|
-| Editor-in-Chief | `editor` | orchestration, calendar, approval gate | orchestrator |
+| Editor-in-Chief | `editor` | orchestration, calendar, distribution gate | orchestrator |
 | SEO Scout | `seo_scout` | GSC query detection, DataForSEO enrichment, cannibalization audit | fast |
 | Radar Scout | `radar` | 30-day sweep per vertical | fast |
 | Virality Judge | `judge` | score single signals + cross-pollination pairs; drop < 8 | fast |

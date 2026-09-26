@@ -100,8 +100,13 @@ def prompt_for(v):
         f"to seed that file's Candidate Synthesis Pairs block (mechanical and advisory: it never scores "
         f"the >=8 gate, and \"no valid pair\" is a legitimate result — re-run it if you add or remove a "
         f"signal row, or scripts/verify.sh §8 will read the block as stale). Then pass the seeded file to "
-        f"the Judge. Halt at the @Simon approve gate — do not publish without approval. Write artifacts "
-        f"to context/recon_proposals/ and context/drafts/."
+        f"the Judge. When the article clears verification and the frontier rewrite, PERSIST it in the "
+        f"same run — `python3 scripts/publish.py context/drafts/<slug>_final.md` writes published/, the "
+        f"published log, Supabase and the sitemap, then flip the run-log row in "
+        f"context/content_calendar.md. Persistence to the reader site + Supabase is NOT approval-gated. "
+        f"Only outbound distribution (LinkedIn / Ghost / Reddit) waits for the @Simon approve gate — "
+        f"surface the LinkedIn/Reddit copy and halt there. Write artifacts to context/recon_proposals/ "
+        f"and context/drafts/."
     )
 
 

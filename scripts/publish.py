@@ -828,6 +828,19 @@ def main():
     # 4. Upsert to Supabase
     sync_to_supabase(data, live_urls)
 
+    # 4b. Refresh the derived surfaces in the same pass. context/sitemap.json is derived from
+    #     published/*.md (it feeds the SEO tab + Growth OS loops) and verify.sh §7.5 fails closed on
+    #     drift, so a persistence pass that skipped it shipped a stale index and a red gate.
+    try:
+        sm = subprocess.run([sys.executable, os.path.join(REPO_ROOT, "scripts", "sitemap_sync.py")],
+                            cwd=REPO_ROOT, capture_output=True, text=True)
+        if sm.returncode == 0:
+            print("✓ Refreshed context/sitemap.json from published/")
+        else:
+            print(f"! sitemap_sync.py failed: {(sm.stderr or sm.stdout).strip()[:200]}", file=sys.stderr)
+    except Exception as e:  # never fail the publish on a derived-surface refresh
+        print(f"! sitemap_sync.py could not run: {e}", file=sys.stderr)
+
     # 5. Auto-deploy: commit + push so the GitHub->Coolify build redeploys automatically.
     if not args.dry_run and parse_bool_env("AUTO_PUBLISH_DEPLOY", default=True) and not args.no_deploy:
         auto_deploy_push(slug_val)

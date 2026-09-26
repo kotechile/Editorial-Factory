@@ -42,9 +42,12 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    an explicit error — never a degraded substitute.
 7. **Self-healing SOPs.** Every failed run must patch a `skills/*.md` file so the failure class
    never recurs.
-8. **Approval-gated auto-publish.** Articles are drafted and verified autonomously, but publishing
-   to LinkedIn/Ghost requires the founder's `@Simon approve` gate (a hard gate). Approved articles
-   are written to `published/` and `context/published_log.md`, then posted by the Publisher.
+8. **Persistence is automatic; distribution is gated.** A verified, frontier-rewritten article is
+   persisted in the same run — `published/YYYY-MM-DD_<slug>.md`, `context/published_log.md`, the
+   Supabase rows, `context/sitemap.json` and the `context/content_calendar.md` run-log row — via
+   `scripts/publish.py <final draft>`. This is **not** approval-gated. Only **outbound
+   distribution** (LinkedIn / Ghost / Reddit) requires the founder's `@Simon approve` gate (a hard
+   gate); a rejected article is routed back to `stylist`, never silently dropped from the site.
 9. **Multi-topic signal synthesis.** Rather than merely publishing single-signal press summaries,
    the pipeline prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day
    developments (e.g., falling LLM frontier pricing colliding with local in-house software

@@ -58,12 +58,16 @@ One pipeline run moves through three loops, then an approval gate:
           section-by-section (lead first) until each section passes its own gate, then one
           whole-piece coherence pass.
    │
-   ▼  Approval gate
-[editor] halts. Nothing is published without your approval.
+   ▼  Persistence (not gated)
+[publisher] writes the article to published/, the published log, Supabase and the sitemap, and
+            flips the run-log row. The reader site is live immediately.
+   │
+   ▼  Distribution gate (outbound only)
+[editor] surfaces the LinkedIn / Reddit copy and waits. Nothing goes outbound without
+         `@Simon approve`.
    │
    ▼  (on approval)
-[publisher] writes the final article to published/ and (when configured) posts to
-            LinkedIn / Ghost.
+[publisher] posts to LinkedIn / Ghost and records the live URL.
 ```
 
 The full instructions live in `skills/*.md` (the SOPs) and the personas in `.agents/*.md`.
@@ -130,18 +134,23 @@ fleet ever disagree, `scripts/verify.sh` fails; reconcile with `python3 scripts/
 On schedule, the cron fires and the `editor` bot drives the pipeline for that vertical. You do
 nothing for the scouting, judging, verifying, and drafting stages — they run automatically.
 
-### 4.2 Your one job: the approval gate
+### 4.2 Your one job: the distribution gate
 
-After the Claude rewrite, the pipeline **halts and waits for you**. Review the final draft:
+The pipeline persists every finished article to the reader site + Supabase on its own — that step is
+**not** gated. What waits for you is **outbound distribution** (LinkedIn / Ghost / Reddit).
 
-- **In the dashboard:** Profiles → `editor` → its chat (or the Sessions page), or
-- **On disk:** `context/drafts/YYYY-MM-DD_<slug>_final.md`
+Review the published article:
+
+- **In the dashboard:** the article library, or Profiles → `editor` → its chat (or the Sessions page), or
+- **On disk / live:** `published/YYYY-MM-DD_<slug>.md` (source: `context/drafts/<slug>_final.md`),
+  served at `https://pressflow.aichieve.net/published/<file>.md`
 
 Then either:
 
-- **Approve** — reply `approve` to the `editor` bot. The `publisher` writes the article to
-  `published/` and logs it.
-- **Request changes** — send feedback; the editor routes it back to `stylist` and re-posts.
+- **Approve** — reply `approve` to the `editor` bot. The `publisher` posts the LinkedIn/Reddit copy
+  and records the live URL.
+- **Request changes** — send feedback; the editor routes it back to `stylist`, and the next
+  persistence pass replaces the site copy.
 
 > The gate is named `@Simon approve` in the personas (inherited from the Software Factory). If
 > you wire the `editor` bot to Slack, "`@Simon approve`" in a Slack thread becomes the approval
@@ -153,7 +162,7 @@ Then either:
 |---|---|
 | `context/recon_proposals/` | the raw signals, the angle brief, and the verified brief for each run |
 | `context/drafts/` | the structural draft and the final Claude-rewritten piece |
-| `published/` | approved articles (markdown) — served by the site |
+| `published/` | published articles (markdown) — served by the site; written in the run, not gated |
 | `context/published_log.md` | the running log of everything published |
 
 ### 4.4 Publishing to LinkedIn / a website
@@ -332,7 +341,7 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 | See the bots | Dashboard **Profiles**, or `hermes profile list` |
 | See the schedules | Dashboard **Cron**, or `hermes cron list` |
 | Health-check the jobs | `hermes cron doctor` |
-| Run one vertical now | `hermes -p editor chat -q "Run the full editorial pipeline for vertical 'agentic_ai' per skills/*.md. Halt at the approval gate."` |
+| Run one vertical now | `hermes -p editor chat -q "Run the full editorial pipeline for vertical 'agentic_ai' per skills/*.md. Persist to the site + Supabase, then stop at the distribution gate."` |
 | Validate a draft | `scripts/verify.sh` (config JSON, banned AI-tells, draft schema + citations, sitemap drift, cron cadence **and prompt** parity, synthesis seeding/anchoring) |
 | Gate the repo without a human | Cron job **Editorial Verify Gate** (`30 9 * * *`) runs `scripts/cron-verify-gate.sh`: silent when green, reports `verify.sh` failures and a pressflow image that is behind HEAD |
 | Reconcile the cron fleet | `python3 scripts/sync_crons.py` (fixes missing/drifted/stale-prompt/orphan jobs), `--check` to test |
