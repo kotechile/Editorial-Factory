@@ -201,5 +201,88 @@ class Gates(unittest.TestCase):
         self.assertEqual(payload["pairs"], [])  # no scoping → no pattern may fire
 
 
+class Seeding(unittest.TestCase):
+    """The autonomous step: the pipeline seeds each new signals file, and §8 proves it did."""
+
+    SOURCE = FIXTURES / "synthesis_positive_home_signals.md"
+
+    def _copy(self, tmp, name="2026-09-26_resilient_home_assets_signals.md"):
+        path = Path(tmp) / name
+        path.write_text(self.SOURCE.read_text(encoding="utf-8"), encoding="utf-8")
+        return path
+
+    def test_seed_is_idempotent_and_records_its_rows(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._copy(tmp)
+            first = st.seed_signals_file(path, "resilient_home_assets")
+            digest = path.read_bytes()
+            second = st.seed_signals_file(path, "resilient_home_assets")
+            self.assertTrue(first["ok"] and second["ok"])
+            self.assertEqual(digest, path.read_bytes(), "a second --seed must be byte-identical")
+            text = path.read_text(encoding="utf-8")
+            marker = st.SEED_MARKER_RE.search(text)
+            self.assertIsNotNone(marker, "the seed block must carry the machine-readable marker")
+            assert marker is not None
+            self.assertEqual(int(marker.group("rows")), 3)
+            self.assertEqual(int(marker.group("candidates")), 1)
+            self.assertIn(st.SEED_START, text)
+            self.assertIn(st.SEED_END, text)
+            self.assertNotIn("Composite", text)
+
+    def test_seed_creates_the_section_when_the_radar_omitted_it(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._copy(tmp)
+            self.assertNotIn(st.SEED_HEADING, path.read_text(encoding="utf-8"))
+            st.seed_signals_file(path, "resilient_home_assets")
+            self.assertIn(st.SEED_HEADING, path.read_text(encoding="utf-8"))
+
+    def test_seed_refuses_a_file_without_signal_rows(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "2026-09-26_agentic_ai_signals.md"
+            path.write_text("# Signals\n\nno table here\n", encoding="utf-8")
+            result = st.seed_signals_file(path, "agentic_ai")
+            self.assertFalse(result["ok"])
+            self.assertIn("no structured signals rows", result["error"])
+
+    def test_parser_ignores_a_sibling_pair_table(self):
+        """The seeded pair table must never be counted as signal rows (it broke idempotency once)."""
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._copy(tmp)
+            st.seed_signals_file(path, "resilient_home_assets")
+            self.assertEqual(len(st.parse_signals_markdown(path.read_text(encoding="utf-8"))), 3)
+
+    def test_check_seed_enforces_new_files_and_staleness(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._copy(tmp)
+            self.assertEqual(len(st.check_seed(directory=tmp)), 1, "unseeded new file must fail the gate")
+            st.seed_signals_file(path, "resilient_home_assets")
+            self.assertEqual(st.check_seed(directory=tmp), [])
+            rows = path.read_text(encoding="utf-8")
+            extra = ("| 4 | Row added after seeding | https://example.org/x | 2026-09-24 | probe "
+                     "| probe | 88 |\n| 3 | FAIR Plan exposure")
+            path.write_text(rows.replace("| 3 | FAIR Plan exposure", extra, 1), encoding="utf-8")
+            problems = st.check_seed(directory=tmp)
+            self.assertEqual(len(problems), 1)
+            self.assertIn("seed is stale", problems[0])
+            st.seed_signals_file(path, "resilient_home_assets")
+            self.assertEqual(st.check_seed(directory=tmp), [])
+
+    def test_check_seed_grandfathers_older_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._copy(tmp, name="2026-09-25_resilient_home_assets_signals.md")
+            self.assertEqual(st.check_seed(directory=tmp), [],
+                             "files written before the step existed are grandfathered")
+
+    def test_check_seed_rejects_a_foreign_helper_marker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self._copy(tmp)
+            st.seed_signals_file(path, "resilient_home_assets")
+            text = path.read_text(encoding="utf-8").replace("helper=synthesize_topics.py",
+                                                            "helper=hand_typed.py")
+            path.write_text(text, encoding="utf-8")
+            problems = st.check_seed(directory=tmp)
+            self.assertTrue(any("unknown helper" in p for p in problems), problems)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

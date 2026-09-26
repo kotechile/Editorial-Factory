@@ -64,13 +64,16 @@ python3 scripts/sync_crons.py --check     # exit 1 if drifted (wired into script
 python3 scripts/sync_crons.py --retire-orphans   # also drop jobs for retired verticals
 ```
 
-The script reconciles three drift classes, and `--check` fails closed on every one of them:
+The script reconciles four drift classes, and `--check` fails closed on every one of them:
 
 - **missing** — a registry vertical with no job (this is how 22 verticals sat unscheduled: the
   earlier create-only version skipped any job whose *name* already existed, so the 09-19/09-20
   registry expansion never reached the live fleet)
 - **drifted** — a job whose schedule differs from the registry `cadence` (a create-only sync can
   never apply a cadence change)
+- **stale prompt** — a job whose instruction differs from `prompt_for(vertical)`. The registry owns
+  the step *sequence* too, so a step added to the template (e.g. `synthesize_topics.py --seed`,
+  which seeds each signals file's candidate-pair block) cannot silently fail to reach the fleet.
 - **orphan** — a `Full Pipeline:` job for a vertical no longer in the registry (e.g.
   `home_systems_reno`, retired in `b927ea6` and replaced by the Home & Lifestyle set)
 
@@ -84,14 +87,33 @@ Current weekday slot map: **Mon** 06:00, 06:30, 07:00, 07:30, 08:00 (`agentic_ai
 `agentic_ai`) · **Fri** 06:00, 06:30, 07:00 (3) · **Sat** 06:00, 06:30 (2). Full table:
 `docs/USER_GUIDE.md` §3, or `hermes cron list`.
 
-Each job is self-contained and runs the complete pipeline (`radar_30day → virality_judge →
-fact_check → story_draft → claude_humanizer`) with `--workdir /root/editorial-factory` (loads
-`AGENTS.md` + `skills/`), `--model deepseek-v4-pro` and `--deliver slack` — the live fleet
+Each job is self-contained and runs the complete pipeline (`radar_30day → synthesize_topics --seed →
+virality_judge → fact_check → story_draft → claude_humanizer`) with `--workdir /root/editorial-factory`
+(loads `AGENTS.md` + `skills/`), `--model deepseek-v4-pro` and `--deliver slack` — the live fleet
 delivers to the Slack home channel (`#loop-ai`), which is where the `@Simon approve` gate is read.
 The `editor` bot orchestrates: it runs Loops 1–2 on deepseek, then dispatches `stylist`
 (`hermes -p stylist chat -q "…"`) for the Claude rewrite (Loop 3). Every pipeline halts at the
 `@Simon approve` gate before publishing. `EDITORIAL_CRON_DELIVER` / `EDITORIAL_CRON_MODEL` override
 the delivery target and model if you re-wire the fleet onto Bot Chats.
+
+### The seed step, and the gate that proves it ran
+
+`radar` writes `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`; the job instruction then
+requires `python3 scripts/synthesize_topics.py --seed <that file>`, which writes the file's
+`## Candidate Synthesis Pairs` block from its own rows (mechanically validated: `https://` source,
+in-window date, Intensity ≥ 60, word-boundary token collisions, archetypes scoped to the registry
+vertical) plus a machine-readable `<!-- pair-seeding: … rows=N … -->` marker. The helper never scores
+the ≥ 8 gate, and `"no valid pair"` is a legitimate outcome.
+
+Two things keep that step honest without a human:
+
+- `scripts/verify.sh` §8 re-derives that marker's row count against the file itself, so a signals file
+  that gained or lost a row after seeding is reported as stale (files written before 2026-09-26 are
+  grandfathered). It also runs the regression suites for the helper and this reconciler.
+- The **Editorial Verify Gate** cron job (`30 9 * * *`, `--no-agent --script`,
+  `~/.hermes/scripts/editorial_verify_gate.sh` → `scripts/cron-verify-gate.sh`) runs `verify.sh` and
+  checks that the pressflow image is on HEAD, printing **nothing** when green and a short, actionable
+  report to `#loop-ai` when not. A gate nobody runs is documentation; this is the thing that runs it.
 
 > The registry is the source of truth. Adding a vertical there and re-running the script is the
 > only supported way to add coverage — hand-created jobs are invisible to `--check` and are the

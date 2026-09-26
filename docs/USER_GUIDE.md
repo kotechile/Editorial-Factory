@@ -309,11 +309,19 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
     (`skills/fact_check.md` §5) before drafting.
   - Run or test it via CLI:
     ```bash
-    python3 scripts/synthesize_topics.py --demo
-    python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-24_agentic_ai_signals.md
+    python3 scripts/synthesize_topics.py --seed context/recon_proposals/2026-09-26_<vertical>_signals.md
     python3 scripts/synthesize_topics.py --signals <file> --format json --show-rejected
-    python3 scripts/test_synthesize_topics.py   # 18-case regression suite (wired into verify.sh §8)
+    python3 scripts/synthesize_topics.py --demo
+    python3 scripts/synthesize_topics.py --check-seed            # §8 gate: new signals files are seeded + fresh
+    python3 scripts/test_synthesize_topics.py                    # 25-case regression suite (wired into verify.sh §8)
+    python3 scripts/test_sync_crons.py                           # fleet contract tests (cadence + prompt parity)
     ```
+
+  The `--seed` step is **not optional in the pipeline**: every `Full Pipeline:` job instruction runs it
+  after the radar writes the file, and `verify.sh` §8 fails a signals file dated on/after 2026-09-26
+  that has no seed block or whose block is stale (its `rows=` marker no longer matches the table). The
+  scheduled **Editorial Verify Gate** job (`scripts/cron-verify-gate.sh`) runs `verify.sh` daily at
+  09:30 UTC and stays silent unless something is wrong.
 
 ---
 
@@ -325,7 +333,9 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 | See the schedules | Dashboard **Cron**, or `hermes cron list` |
 | Health-check the jobs | `hermes cron doctor` |
 | Run one vertical now | `hermes -p editor chat -q "Run the full editorial pipeline for vertical 'agentic_ai' per skills/*.md. Halt at the approval gate."` |
-| Validate a draft | `scripts/verify.sh` (checks config JSON, banned AI-tells, missing citations) |
+| Validate a draft | `scripts/verify.sh` (config JSON, banned AI-tells, draft schema + citations, sitemap drift, cron cadence **and prompt** parity, synthesis seeding/anchoring) |
+| Gate the repo without a human | Cron job **Editorial Verify Gate** (`30 9 * * *`) runs `scripts/cron-verify-gate.sh`: silent when green, reports `verify.sh` failures and a pressflow image that is behind HEAD |
+| Reconcile the cron fleet | `python3 scripts/sync_crons.py` (fixes missing/drifted/stale-prompt/orphan jobs), `--check` to test |
 | Read a run's artifacts | `context/recon_proposals/`, `context/drafts/` |
 
 ---

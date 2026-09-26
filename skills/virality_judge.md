@@ -14,6 +14,18 @@ Composite = round(0.40·N + 0.30·A + 0.30·S, 1).
 
 ### 2.5 Multi-Topic Synthesis Protocol (Cross-Pollination Engine)
 Single press articles are frequently commoditized vendor announcements, incremental version bumps, or isolated news items. To create defensible editorial moat, the Judge must actively combine **two or more related signals** into an emergent, synthesized article:
+
+**Read the seeded candidate block first.** The signals file carries a
+`<!-- synthesis-seed:start --> … <!-- synthesis-seed:end -->` block under `## Candidate Synthesis Pairs`,
+written mechanically from that file's own rows by `scripts/synthesize_topics.py --seed` (rows are only
+admissible with an `https://` source, an in-window date and Intensity ≥ 60; archetypes are scoped to the
+registry verticals). If the file is dated on/after the enforcement date and has no seeded block, or the
+block's marker row count disagrees with the table, run the seed step before scoring — `scripts/verify.sh`
+§8 reads a missing or stale block as a build failure. The helper's `emergence_heuristic` is **advisory
+only**: it is not a composite, it cannot clear the ≥ 8 gate, and a seeded candidate is a candidate, not a
+verdict. *"No valid pair"* in the block is a legitimate input — look for a synthesis the token layer
+missed, and if none clears the gate, publish the single-signal winner.
+
 - **The Core Synthesis Question**: *What strategic tension or economic shift appears when Trend A collides with Trend B that neither article could state on its own?*
 - **Canonical Example**:
   - *Signal A*: Frontier LLM API prices drop sharply (e.g., token pricing falling 70–80% across frontier models).

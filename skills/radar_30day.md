@@ -77,13 +77,15 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 | 1 | #1 ⨂ #4 | Would tumbling frontier token prices make local in-house development more reliable than SaaS? | 8.5 |
 ```
 
-> **Pairing helper (advisory).** `python3 scripts/synthesize_topics.py --signals <that file>` prints a
-> mechanically validated candidate table: only rows with an `https://` source, an in-window date and
-> Intensity ≥ 60; word-boundary token collisions, ≥ 2 distinct tokens, different source domains, and
-> archetypes scoped to the registry verticals. It reports an advisory `emergence_heuristic` — **it does
-> not score the ≥ 8 gate, does not write a headline, and "no valid pair" is a legitimate answer.**
-> Use it to seed the table above, then let the Judge own the collision vector and the number. The
-> rows in the table above come from the Judge, not from the helper.
+> **Pairing step (required, mechanical).** Once this file is written, run
+> `python3 scripts/synthesize_topics.py --seed <this file>` (the job instruction names it too). It seeds
+> the `## Candidate Synthesis Pairs` block below from **this file's own rows only**: rows with an
+> `https://` source, an in-window date and Intensity ≥ 60; word-boundary token collisions, ≥ 2 distinct
+> tokens, different source domains, and archetypes scoped to the registry verticals. It reports an
+> advisory `emergence_heuristic` — **it does not score the ≥ 8 gate, does not write a headline, and
+> "no valid pair" is a legitimate answer.** Re-run it whenever you add or remove a signal row (the
+> marker records the row count and `scripts/verify.sh` §8 reads a mismatched block as stale).
+> Then let the Judge own the collision vector, the headline and the number.
 
 ## 4. Failure handling
 - Zero candidates ≥ 60 → log query syntax to `skills/self_improvement_eval.md`, widen to 45 days,

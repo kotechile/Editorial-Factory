@@ -6,10 +6,16 @@ Run ON THE VPS:  python3 scripts/sync_crons.py            # apply
                  python3 scripts/sync_crons.py --check     # exit 1 if drifted (no writes)
 
 Contract: exactly one `Full Pipeline: <vertical>` job per registry entry, on the
-cadence the registry declares. Three ways that can fail, all of them reported:
+cadence the registry declares, running the pipeline sequence the registry
+declares. Four ways that can fail, all of them reported:
 
   missing  — a registry vertical with no job            → create
   drifted  — a job whose schedule != registry cadence   → edit
+  stale
+  prompt   — a job whose instruction != prompt_for(v)   → edit
+             (the registry owns the step sequence, so a step added to the
+             template — e.g. the `synthesize_topics.py --seed` step — cannot
+             silently fail to reach the live fleet)
   orphan   — a `Full Pipeline:` job for a vertical that is no longer in the
              registry (retired vertical, e.g. home_systems_reno replaced by the
              Home & Lifestyle set)                      → reported; removed only
@@ -76,6 +82,7 @@ def read_live():
                 "vertical": name[len(PREFIX):],
                 "cadence": sched.get("expr") or sched.get("display") or "",
                 "enabled": bool(j.get("enabled", True)),
+                "prompt": j.get("prompt") or "",
             }
         )
     return out
@@ -86,17 +93,22 @@ def prompt_for(v):
     label = v.get("label", vid)
     return (
         f"Run the full editorial pipeline for vertical '{vid}' ({label}) per the "
-        f"skills in {WORKDIR}/skills/ (radar_30day -> virality_judge -> fact_check "
-        f"-> story_draft -> claude_humanizer). Halt at the @Simon approve gate — do "
-        f"not publish without approval. Write artifacts to context/recon_proposals/ "
-        f"and context/drafts/."
+        f"skills in {WORKDIR}/skills/ (radar_30day -> synthesize_topics --seed -> "
+        f"virality_judge -> fact_check -> story_draft -> claude_humanizer). "
+        f"After the Radar writes context/recon_proposals/YYYY-MM-DD_{vid}_signals.md, run "
+        f"`python3 scripts/synthesize_topics.py --seed context/recon_proposals/YYYY-MM-DD_{vid}_signals.md` "
+        f"to seed that file's Candidate Synthesis Pairs block (mechanical and advisory: it never scores "
+        f"the >=8 gate, and \"no valid pair\" is a legitimate result — re-run it if you add or remove a "
+        f"signal row, or scripts/verify.sh §8 will read the block as stale). Then pass the seeded file to "
+        f"the Judge. Halt at the @Simon approve gate — do not publish without approval. Write artifacts "
+        f"to context/recon_proposals/ and context/drafts/."
     )
 
 
 def plan(verticals, live):
     by_vertical = {j["vertical"]: j for j in live}
     registry_ids = {v["id"] for v in verticals}
-    missing, drifted, paused = [], [], []
+    missing, drifted, orphans, paused, stale_prompt = [], [], [], [], []
     for v in verticals:
         cadence = v.get("cadence")
         if not cadence:
@@ -105,12 +117,19 @@ def plan(verticals, live):
         j = by_vertical.get(v["id"])
         if j is None:
             missing.append((v, cadence, None))
-        elif j["cadence"] != cadence:
+            continue
+        if j["cadence"] != cadence:
             drifted.append((v, cadence, j))
-        elif not j["enabled"]:
+        # Prompt drift: the registry owns the instruction text too. Without this class the
+        # pipeline sequence a job actually runs can silently diverge from the SOPs (a step
+        # added to the registry template never reaches the live fleet — the same failure the
+        # create-only sync had with cadences).
+        if j.get("prompt") != prompt_for(v):
+            stale_prompt.append((v, j))
+        if not j["enabled"]:
             paused.append((v, j))
     orphans = [j for j in live if j["vertical"] not in registry_ids]
-    return missing, drifted, orphans, paused
+    return missing, drifted, orphans, paused, stale_prompt
 
 
 def run(cmd):
@@ -124,21 +143,24 @@ def main():
         print(f"SKIP: no cron store at {JOBS_PATH} — not the scheduler host.")
         return 0
 
-    missing, drifted, orphans, paused = plan(verticals, live)
+    missing, drifted, orphans, paused, stale_prompt = plan(verticals, live)
     print(f"registry: {len(verticals)} verticals | live pipeline jobs: {len(live)}")
 
     for v, cadence, err in missing:
         print(f"  MISSING  {PREFIX}{v['id']}  ({err or cadence})")
     for v, cadence, j in drifted:
         print(f"  DRIFTED  {PREFIX}{v['id']}  live='{j['cadence']}' registry='{cadence}'")
+    for v, j in stale_prompt:
+        print(f"  STALE PROMPT  {PREFIX}{v['id']}  (live instruction != registry instruction)")
     for j in orphans:
         print(f"  ORPHAN   {j['name']}  ({j['cadence']}, not in registry)")
     for v, j in paused:
         print(f"  PAUSED   {j['name']}  (paused by operator; left alone)")
 
-    drift = bool(missing or drifted or orphans)
+    drift = bool(missing or drifted or orphans or stale_prompt)
     if CHECK:
-        print("check: " + ("DRIFT" if drift else f"ok — {len(verticals)} verticals in sync"))
+        print("check: " + ("DRIFT" if drift else
+                           f"ok — {len(verticals)} verticals in sync (cadence + prompt)"))
         return 1 if drift else 0
     if DRY_RUN and not drift:
         print("dry-run: nothing to do")
@@ -170,6 +192,14 @@ def main():
         else:
             print(f"FAILED: edit {PREFIX}{v['id']}  {r.stderr.strip()[:200]}")
             failed += 1
+    for v, j in stale_prompt:
+        r = run(["hermes", "cron", "edit", j["id"], "--prompt", prompt_for(v)])
+        if r.returncode == 0:
+            print(f"updated prompt: {PREFIX}{v['id']}")
+            updated += 1
+        else:
+            print(f"FAILED: prompt {PREFIX}{v['id']}  {r.stderr.strip()[:200]}")
+            failed += 1
     for j in orphans:
         if not RETIRE_ORPHANS:
             print(f"orphan left in place: {j['name']} (re-run with --retire-orphans)")
@@ -183,13 +213,13 @@ def main():
 
     # Verify by re-reading the store — never claim a state we did not observe.
     after = read_live()
-    m2, d2, o2, _p2 = plan(verticals, after)
+    m2, d2, o2, _p2, s2 = plan(verticals, after)
     print(
         f"done: {created} created, {updated} updated, {failed} failed | "
         f"verify: {len(verticals) - len(m2)}/{len(verticals)} verticals scheduled, "
-        f"{len(d2)} drifted, {len(o2)} orphan"
+        f"{len(d2)} drifted, {len(s2)} stale prompt, {len(o2)} orphan"
     )
-    return 1 if (failed or m2 or d2) else 0
+    return 1 if (failed or m2 or d2 or s2) else 0
 
 
 if __name__ == "__main__":

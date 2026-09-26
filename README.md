@@ -92,10 +92,12 @@ cat context/verticals.json
 # 2. Manual radar sweep for 30-day industry signals
 hermes -p radar chat -q "Run the 30-day radar for vertical 'agentic_ai' per skills/radar_30day.md"
 
-# 2b. Multi-topic signal synthesis — pairing helper (advisory pre-filter, no scoring)
+# 2b. Multi-topic signal synthesis — pair seeding (advisory pre-filter, no scoring)
+python3 scripts/synthesize_topics.py --seed context/recon_proposals/2026-09-26_<vertical>_signals.md
 python3 scripts/synthesize_topics.py --demo
-python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-24_agentic_ai_signals.md
-python3 scripts/test_synthesize_topics.py   # regression suite for the helper
+python3 scripts/synthesize_topics.py --check-seed    # does every new signals file carry a fresh seed block?
+python3 scripts/test_synthesize_topics.py            # regression suite for the helper
+python3 scripts/test_sync_crons.py                   # cron fleet contract tests (cadence + prompt)
 
 # 3. Demand-Led SEO Content Machine: Scan GSC opportunities & draft article
 python3 scripts/gsc_analyzer.py --min-impressions 500 --min-pos 8 --max-pos 25
@@ -105,7 +107,7 @@ python3 scripts/seo_machine.py --query "mcp server implementation python" --vert
 scripts/cron-full-pipeline.sh   # 30-day news pipeline
 scripts/cron-seo-pipeline.sh    # SEO Content Machine
 
-# 5. Verify the quality gate
+# 5. Verify the quality gate (also runs daily via the `Editorial Verify Gate` cron job)
 scripts/verify.sh
 ```
 

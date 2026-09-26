@@ -122,8 +122,14 @@ fi
 if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-fixtures; then
   echo "FAIL: a synthesis fixture cites a source absent from the committed signals files"; FAIL=1
 fi
+if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-seed; then
+  echo "FAIL: a signals file written since $(python3 -c "import sys;sys.path.insert(0,'$ROOT/scripts');import synthesize_topics as s;print(s.SEED_ENFORCED_FROM)") has no pair-seeding block, or its block is stale"; FAIL=1
+fi
 if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-briefs; then
   echo "FAIL: synthesis brief/draft anchoring (see messages above)"; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/test_sync_crons.py" >/dev/null 2>&1; then
+  echo "FAIL: cron fleet contract tests — detail:"; python3 "$ROOT/scripts/test_sync_crons.py" 2>&1 | tail -6; FAIL=1
 fi
 
 if [ "$FAIL" -ne 0 ]; then

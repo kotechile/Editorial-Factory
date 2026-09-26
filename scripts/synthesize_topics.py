@@ -29,9 +29,10 @@ Design rules (each exists because an earlier revision broke it)
     5. Refuses to overwrite the Judge's artifacts and never writes into `context/drafts/`.
 
 Usage
-    python3 scripts/synthesize_topics.py --signals context/recon_proposals/2026-09-25_resilient_home_assets_signals.md
+    python3 scripts/synthesize_topics.py --seed <signals file>   # pipeline step: seeds the pair block
     python3 scripts/synthesize_topics.py --signals <file> --format json --show-rejected
     python3 scripts/synthesize_topics.py --demo
+    python3 scripts/synthesize_topics.py --check-seed         # every new signals file is seeded, and fresh
     python3 scripts/synthesize_topics.py --check-fixtures     # fixtures cite only real committed sources
     python3 scripts/synthesize_topics.py --check-briefs       # synthesis briefs/drafts conform (verify.sh §8)
 """
@@ -182,6 +183,10 @@ def parse_signals_markdown(content):
     """Extract table rows from a signals markdown file.
 
     Columns: # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity [| extra...]
+
+    Rows are only collected while a table declaring a `Source URL` column is open, so a sibling table
+    (e.g. the seeded `## Candidate Synthesis Pairs` block, or the radar's own pair table) can never be
+    mistaken for signal rows.
     """
     signals, headers = [], None
     for raw in content.splitlines():
@@ -191,6 +196,8 @@ def parse_signals_markdown(content):
             continue
         if not line.startswith("|"):
             headers = None
+            continue
+        if headers is None:
             continue
         cols = [c.strip() for c in line.split("|")[1:-1]]
         if len(cols) < 5 or not cols[0].isdigit():
@@ -397,8 +404,16 @@ def retread_flags(leg_a, leg_b):
 # --------------------------------------------------------------------------- pairing
 
 def find_pairs(signals, vertical, window_start, window_end, registry):
-    """Return (pairs, rejected). Rejected carries the reason for pairs that had token signal."""
+    """Return (pairs, rejected). Rejected carries the reason for pairs that had token signal.
+
+    Fail-closed on the vertical: archetypes are scoped to registry verticals, so an unresolvable or
+    unregistered vertical yields no candidates rather than unscoped (cross-domain) ones.
+    """
     pairs, rejected = [], []
+    if vertical not in registry:
+        print(f"WARN: vertical {vertical!r} is not in context/verticals.json — no archetype can be "
+              f"scoped, so no candidates are emitted (fail-closed)", file=sys.stderr)
+        return pairs, rejected
     for i in range(len(signals)):
         for j in range(i + 1, len(signals)):
             leg_a, leg_b = signals[i], signals[j]
@@ -452,12 +467,17 @@ def render_table(vertical, window_start, window_end, signals, pairs, registry):
            "", ADVISORY,
            f"> Window: {window_start} → {window_end} | persona: {vert.get('target_persona', 'UNKNOWN')} "
            f"| signals rows: {len(signals)} | validated pairs: {len(pairs)}", ""]
+    out.append(render_table_body(pairs))
+    return "\n".join(out)
+
+
+def render_table_body(pairs):
+    """The table + its advisory terms. Used by the stdout view and the in-file seed block."""
     if not pairs:
-        out.append("_No mechanically valid pair. That is a legitimate answer, not a failure: the "
-                   "Judge may still find a synthesis this token layer cannot see._")
-        return "\n".join(out)
-    out += ["| Pair | Signals | Shared axis | Contrasting axis | Anchor URLs | Heuristic | Flags |",
-            "|---|---|---|---|---|---|---|"]
+        return ("_No mechanically valid pair. That is a legitimate answer, not a failure: the "
+                "Judge may still find a synthesis this token layer cannot see._")
+    out = ["| Pair | Signals | Shared axis | Contrasting axis | Anchor URLs | Heuristic | Flags |",
+           "|---|---|---|---|---|---|---|"]
     for idx, p in enumerate(pairs, 1):
         urls = " ".join(p["anchor_urls"])
         flags = "; ".join(p["flags"]) or "-"
@@ -470,6 +490,109 @@ def render_table(vertical, window_start, window_end, signals, pairs, registry):
                    f"angle_fit={t['angle_fit']} contrast={t['contrast']} → "
                    f"{p['emergence_heuristic']} ({p['pattern_id']})")
     return "\n".join(out)
+
+
+# --------------------------------------------------------------------------- autonomous seeding
+
+SEED_HEADING = "## Candidate Synthesis Pairs"
+SEED_START = "<!-- synthesis-seed:start -->"
+SEED_END = "<!-- synthesis-seed:end -->"
+SEED_ENFORCED_FROM = "2026-09-26"  # signals files dated on/after this must carry a seed block
+SEED_MARKER_RE = re.compile(
+    r"<!--\s*pair-seeding:\s*helper=(?P<helper>\S+)\s+rows=(?P<rows>\d+)\s+"
+    r"candidates=(?P<candidates>\d+)\s+heuristic=(?P<heuristic>\S+)\s+"
+    r"window=(?P<window_start>\d{4}-\d{2}-\d{2})\.\.(?P<window_end>\d{4}-\d{2}-\d{2})\s*-->"
+)
+
+
+def seed_block(pairs, rows, window_start, window_end):
+    """Deterministic seed block: marks that the step ran and what it found. No scores, no theses."""
+    heuristic = "-" if not pairs else f"{pairs[-1]['emergence_heuristic']:.2f}-{pairs[0]['emergence_heuristic']:.2f}"
+    marker = (f"<!-- pair-seeding: helper=synthesize_topics.py rows={rows} "
+              f"candidates={len(pairs)} heuristic={heuristic} "
+              f"window={window_start}..{window_end} -->")
+    block = [SEED_START, marker, ADVISORY,
+             ("> Seeded mechanically from this file's own rows by "
+              "`python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or "
+              "removing a signal row. The Judge scores the rows and writes the collision vector per "
+              "`skills/virality_judge.md` §2.5."), "",
+             render_table_body(pairs), SEED_END]
+    return "\n".join(block)
+
+
+def apply_seed(text, block):
+    """Insert or replace the seeded block, idempotently. Returns (new_text, action)."""
+    if SEED_START in text and SEED_END in text:
+        head, rest = text.split(SEED_START, 1)
+        _old, tail = rest.split(SEED_END, 1)
+        return f"{head}{block}{tail}", "replaced"
+    heading_re = re.compile(r"^" + re.escape(SEED_HEADING) + r"\s*$", re.MULTILINE)
+    m = heading_re.search(text)
+    if m:
+        nxt = re.compile(r"^##\s", re.MULTILINE).search(text, m.end())
+        end = nxt.start() if nxt else len(text)
+        return f"{text[:m.end()]}\n\n{block}\n\n{text[end:].lstrip(chr(10))}", "seeded"
+    sep = "" if text.endswith("\n") else "\n"
+    return f"{text}{sep}\n{SEED_HEADING}\n\n{block}\n", "appended"
+
+
+def seed_signals_file(path, vertical=None):
+    """Seed (or re-seed) the candidate-pair block inside a signals file. Idempotent."""
+    path = Path(path)
+    if not path.exists():
+        return {"ok": False, "error": f"file not found: {path}"}
+    content = path.read_text(encoding="utf-8")
+    signals = parse_signals_markdown(content)
+    if not signals:
+        return {"ok": False, "error": f"no structured signals rows in {path}"}
+    vertical = vertical or _resolve_vertical(path, None, content)
+    registry = load_vertical_registry()
+    window_start, window_end = parse_window(content)
+    pairs, _rejected = find_pairs(signals, vertical, window_start, window_end, registry)
+    block = seed_block(pairs, len(signals), window_start, window_end)
+    if "Composite" in block:
+        return {"ok": False, "error": "internal guard tripped — the seed block must never carry a gate score"}
+    new_text, action = apply_seed(content, block)
+    path.write_text(new_text, encoding="utf-8")
+    return {"ok": True, "action": action, "rows": len(signals), "candidates": len(pairs),
+            "window": [window_start, window_end], "vertical": vertical}
+
+
+def _signals_file_date(path):
+    m = re.match(r"(\d{4}-\d{2}-\d{2})_", Path(path).name)
+    return m.group(1) if m else None
+
+
+def check_seed(enforce_from=SEED_ENFORCED_FROM, directory=None):
+    """verify.sh §8 — signals files written since the step became autonomous must carry its proof.
+
+    The check is on the marker's `rows=` count against the file's own table, so a signals file whose
+    rows changed after seeding cannot pass as seeded; the Judge's edits to the pair table are ignored.
+    """
+    problems = []
+    for path in sorted((Path(directory) if directory else _recon_dir()).glob("*_signals.md")):
+        text = path.read_text(encoding="utf-8", errors="replace")
+        rows = len(parse_signals_markdown(text))
+        date = _signals_file_date(path)
+        enforced = bool(date and date >= enforce_from)
+        marker = SEED_MARKER_RE.search(text)
+        if not marker:
+            if enforced:
+                problems.append(f"{path.name}: no pair-seeding marker — run "
+                                f"`python3 scripts/synthesize_topics.py --seed {path.name}`")
+            continue
+        if marker.group("helper") != "synthesize_topics.py":
+            problems.append(f"{path.name}: seed marker names an unknown helper "
+                            f"{marker.group('helper')!r}")
+        if int(marker.group("rows")) != rows:
+            problems.append(f"{path.name}: seed is stale — marker says rows={marker.group('rows')}, "
+                            f"file has {rows} signal rows; re-run the --seed step")
+        if SEED_START not in text or SEED_END not in text:
+            problems.append(f"{path.name}: seed marker present without the seeded block delimiters")
+        if "Composite" in text.split(SEED_START)[-1].split(SEED_END)[0]:
+            problems.append(f"{path.name}: the seeded block carries a gate score")
+    return problems
+
 
 
 # --------------------------------------------------------------------------- checks
@@ -559,9 +682,6 @@ def run_signals(args):
         return 2
     vertical = _resolve_vertical(path, args.vertical, content)
     registry = load_vertical_registry()
-    if vertical and vertical not in registry:
-        print(f"WARN: vertical '{vertical}' is not in context/verticals.json — pattern scoping "
-              f"and angle_fit are degraded", file=sys.stderr)
     window_start, window_end = (args.window_start, args.window_end) if args.window_start and args.window_end \
         else parse_window(content)
     if args.window_start:
@@ -647,6 +767,14 @@ def main(argv=None):
     parser.add_argument("--out", help="Write output to this path (guarded)")
     parser.add_argument("--force", action="store_true", help="Allow overwriting an existing file")
     parser.add_argument("--demo", action="store_true", help="Run over the pinned fixture")
+    parser.add_argument("--seed", metavar="SIGNALS_FILE",
+                        help="Seed/re-seed the Candidate Synthesis Pairs block inside a signals file "
+                             "(the pipeline step; idempotent)")
+    parser.add_argument("--check-seed", action="store_true",
+                        help="Fail if a signals file written since the step became autonomous has no "
+                             "seed block, or its block is stale")
+    parser.add_argument("--enforce-from", help=f"Date from which --check-seed enforces "
+                                               f"(default {SEED_ENFORCED_FROM})")
     parser.add_argument("--check-fixtures", action="store_true",
                         help="Fail if any fixture cites a source absent from the committed signals files")
     parser.add_argument("--check-briefs", action="store_true",
@@ -655,7 +783,18 @@ def main(argv=None):
 
     if args.demo:
         return run_demo()
-    if args.check_fixtures:
+    if args.seed:
+        result = seed_signals_file(args.seed, args.vertical)
+        if not result["ok"]:
+            print(f"Error: {result['error']}", file=sys.stderr)
+            return 2
+        print(f"seeded {Path(args.seed).name}: {result['action']} | rows={result['rows']} "
+              f"candidates={result['candidates']} | window={result['window'][0]}..{result['window'][1]} "
+              f"(advisory — the Judge scores it)")
+        return 0
+    if args.check_seed:
+        problems = check_seed(args.enforce_from or SEED_ENFORCED_FROM)
+    elif args.check_fixtures:
         problems = check_fixtures()
     elif args.check_briefs:
         problems = check_briefs()
