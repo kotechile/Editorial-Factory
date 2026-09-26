@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T01:48:33Z",
+  "updated_at": "2026-09-26T01:53:47Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -94,6 +94,80 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-23"
+    },
+    {
+      "slug": "2026-09-24_ai-spend-27t-cost-visibility-mandate",
+      "title": "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement",
+      "url": "https://pressflow.aichieve.net/published/2026-09-24_ai-spend-27t-cost-visibility-mandate.md",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "enterprise_cai",
+      "date": "2026-09-24"
+    },
+    {
+      "slug": "2026-09-24_maskills-multi-agent-skills-optimization",
+      "title": "Stop Piling Memory Onto AI Agents: Optimize Skills",
+      "url": "https://pressflow.aichieve.net/published/2026-09-24_maskills-multi-agent-skills-optimization.md",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Why Memory Fails Agents",
+        "The Skill Playbook",
+        "Limits of Skill Libraries"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-09-24"
+    },
+    {
+      "slug": "2026-09-24_up-ns-rail-merger-clears-summary-denial",
+      "title": "Coast-to-Coast Rail Merger Clears First Big Test",
+      "url": "https://pressflow.aichieve.net/published/2026-09-24_up-ns-rail-merger-clears-summary-denial.md",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "ops_leader",
+      "date": "2026-09-24"
+    },
+    {
+      "slug": "2026-09-25_ca-fair-plan-rate-hike-hardening-exit",
+      "title": "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy",
+      "url": "https://pressflow.aichieve.net/published/2026-09-25_ca-fair-plan-rate-hike-hardening-exit.md",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "A huge, unfunded risk pool",
+        "How to fireproof your home",
+        "Fixes do not promise coverage"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-09-25"
+    },
+    {
+      "slug": "2026-09-25_carta-unexercised-options-401k",
+      "title": "Why 70% of Startup Options Go Unexercised",
+      "url": "https://pressflow.aichieve.net/published/2026-09-25_carta-unexercised-options-401k.md",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "equity_career_strategist",
+      "date": "2026-09-25"
+    },
+    {
+      "slug": "2026-09-25_zet-scale-ev-truck-residual-value-risk",
+      "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn't the Reason",
+      "url": "https://pressflow.aichieve.net/published/2026-09-25_zet-scale-ev-truck-residual-value-risk.md",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-09-25"
     },
     {
       "slug": "2026-09-26_tariff-cliff-already-priced-in",
