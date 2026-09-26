@@ -128,6 +128,49 @@ def ensure_title_contains_keyword(text: str) -> str:
     return fixed
 
 
+SOCIAL_VOICE_RULES = """
+SOCIAL VOICE — the <!-- linkedin --> variant (skills/claude_humanizer.md §3.8; verify.sh §9 gates it):
+- Write it as ONE PERSON COMMENTING on the news. You are not the author of the events, not the owner of
+  the truth, and not the reader's advisor. Hold a point of view and label it as one.
+- Required: at least one first-person observer cue — "I've been following this all week", "I keep coming
+  back to one number", "My read:", "The part I keep circling:", "I'm curious how others are reading…",
+  "What I'm watching next:".
+- BANNED, no exceptions: verdict framing ("the signal is clear", "the real story is", "the truth is",
+  "the lesson is/for", "make no mistake", "the bottom line is"); consultant framing ("here's the
+  playbook", "The playbook:", "here's what you need to do", "the winning moves", "let me be clear",
+  "trust me"); reader-directed commands and advice ("Stress test your…", "Match your…", "Treat X as a
+  live deadline", "Map your exposure today", "you need to / must / should / have to…"). Rewrite each as
+  an observation plus a question: "I'd want to know whether operators are stress-testing…", "Curious how
+  others are handling…".
+- Keep every figure, name and date the article carries, the hook-first first line, and <= 1,300
+  characters. No hashtags or links (the publisher appends them). Re-voice; never re-report.
+- The Reddit cards derive from this draft, so article prose addressed to the reader as advice ("You must
+  re-run every project plan") is dropped by the generator — prefer observation-shaped sentences there.
+"""
+
+LONGFORM_VOICE_RULES = """
+ARTICLE VOICE — the long-form body (skills/claude_humanizer.md §3.9; verify.sh §9 gates it):
+- The article is a COMMENT on what is happening, written by one person who has been reading the filings,
+  reports and news. Report the facts; label your reading of them as your reading. You did not cause the
+  events, you are not the owner of the truth, and you are not the reader's advisor.
+- Each interpreting section (<!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->)
+  carries at least one first-person observer cue: "I've been watching…", "What strikes me here:",
+  "My read:", "I could be wrong, but…", "What I'd watch next:", "The part I keep circling:". One per
+  section, not per sentence — the reporting stays plain.
+- The tactical section is NOT a playbook. Report what the people closest to the story are doing and what
+  the writer expects next; never instruct the reader. Use the signpost "**Where this bites:**" or
+  "**What I'd watch:**" instead of "**The playbook:**" / "**What to do:**", and phrase the bullets as
+  observations ("Operators are re-quoting every landed-cost model", "I'd want to see the December
+  sourcing numbers") rather than commands ("Stress test your landed costs").
+- The TL;DR's third slot is "**What I'd Watch:**" (not "**The Winning Moves:**"), with the same indented
+  sub-bullet definitions of what to watch and why it matters.
+- BANNED in the body: the same verdict/consultant/imperative constructions as SOCIAL VOICE above, plus
+  "The lesson is/for", "the takeaway is", and any sentence that tells the reader what to do.
+- Keep every fact, figure, [n] citation, acronym expansion and `## Sources` line. Re-voice; never
+  re-report, never add a claim the verified brief does not carry.
+"""
+
+
 def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     """Build a follow-up prompt telling the frontier model exactly what the gate rejected."""
     notes = []
@@ -161,7 +204,7 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     if any("Smart Brevity:" in w and "paragraph(s) > 3 sentences" in w for w in diag.get("warnings", [])):
         tip.append("SMART BREVITY PARAGRAPHS: Keep every paragraph to 1-3 sentences maximum. Split monolithic blocks.")
     if any("no bold context signposts found" in w for w in diag.get("warnings", [])):
-        tip.append("SMART BREVITY SIGNPOSTS: Include bolded context guide words (e.g. **Why it matters:**, **The big picture:**, **What to do:**, **The catch:**).")
+        tip.append("SMART BREVITY SIGNPOSTS: Include bolded context guide words (e.g. **Why it matters:**, **The big picture:**, **Where this bites:** / **What I'd watch:**, **The catch:**).")
     if tip:
         notes.append("HOW: " + " ".join(tip))
     if extra:

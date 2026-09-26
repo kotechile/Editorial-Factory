@@ -111,6 +111,21 @@ try {
       await reader.title());
     await reader.close();
   }
+  // Voice of the copy the operator actually posts: every ready card must read as the same observer
+  // commenting on the news (skills/claude_humanizer.md §3.8), not as the owner of the truth.
+  const voice = await page.evaluate(async () => {
+    const r = await fetch('/api/distribution/tasks', { credentials: 'same-origin' });
+    const d = await r.json();
+    return (d.tasks || []).filter((t) => t.status === 'ready')
+      .map((t) => ({ id: t.id, text: t.post_content || '' }));
+  });
+  const { inspectSocialVoice, describeViolations } = await import('../site/social_voice.mjs');
+  const voiceFailures = voice.flatMap((card) => {
+    const result = inspectSocialVoice(card.text);
+    return result.ok ? [] : describeViolations(`card ${card.id}`, result);
+  });
+  check(voice.length > 0, 'ready cards are postable copy', `${voice.length} ready card(s)`);
+  check(voiceFailures.length === 0, 'ready cards speak in the observer voice', voiceFailures[0] || '');
 } catch (err) {
   check(false, 'dashboard verification ran', err.message.split('\n')[0]);
 } finally {

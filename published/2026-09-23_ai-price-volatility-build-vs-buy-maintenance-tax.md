@@ -64,15 +64,17 @@ Buy common tools, but build your core features. You should buy basic AI tools an
 <!-- schema -->
 
 <!-- linkedin -->
-Three Artificial Intelligence (AI) vendors changed their prices five times in eight weeks this summer. OpenAI cut one model by 80% and another by 20% on the same day. Each price drop creates a new work ticket for your tech team.
+Three Artificial Intelligence (AI) vendors changed their prices five times in eight weeks this summer. OpenAI cut one model by 80% and another by 20% on the same day.
 
-AI made building cheap upfront. It also made what you build a moving target. The build-vs-buy choice no longer turns on sticker price. It turns on the long-term upkeep costs, and those costs just got worse.
+I've been following this repricing news all summer. The bit that stuck with me: AI made building cheap upfront and turned what gets built into a moving target. The build-vs-buy call no longer turns on sticker price; it turns on long-term upkeep, which just got worse.
 
-The numbers: Two engineers for nine months cost $375,000 in payroll before your custom tool even works. The permanent upkeep line runs $125k–$250k a year. And 76.6% of Software as a Service (SaaS) buyers still face surprise costs after signing.
+Numbers I keep coming back to: two engineers for nine months cost $375,000 in payroll before the custom tool works. Upkeep runs $125k–$250k a year, and 76.6% of Software as a Service (SaaS) buyers face surprise costs after signing.
 
-The playbook: Price both paths in engineer-years, treat vendor churn as a direct cost, build only what is narrow or vital, and run the reversibility test. Buying is easy to reverse. A failed build wastes permanent payroll.
+My read: engineer-years pricing on both paths, vendor churn counted as a direct cost, builds kept narrow or vital, a reversibility test — four moves reducing to one question: who owns the next price change? Buying is easy to undo; a failed build wastes payroll.
 
-The catch: Do not overcorrect and buy everything. Buy the common tools. Build your core features. A vendor's price change is yours to manage, but you must never rent your true edge.
+Where I've landed: buying everything is the wrong correction. Common tools get bought, core features stay in-house. A vendor's price change is mine to manage; the edge is not something I'd rent.
+
+What I'm watching next: whether the next repricing is the buyer's to absorb or the vendor's.
 
 #BuildVsBuy #EngineeringLeadership #FinOps #AITooling #PlatformEngineering
 

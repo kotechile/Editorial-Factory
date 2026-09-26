@@ -66,13 +66,15 @@ Skill libraries also face scaling limits. As libraries grow, finding and combini
 [3] https://github.com/DaRL-GenAI/MASkills — code
 
 <!-- linkedin -->
-A team at Arizona State University, Cisco Research, and the University of North Carolina just put a hard number on a big AI debate. MASkills shows multi-agent systems improve when you focus on *skills* — not when you dump more memory into a prompt.
+A team at Arizona State University (ASU), Cisco Research, and the University of North Carolina (UNC) just put a hard number on a big AI debate. MASkills shows multi-agent systems improve when the focus moves to *skills* — not when more memory gets dumped into a prompt.
 
-The paper's own words: memories are "hard to invoke, refine, or scale." Skills are the actionable unit. They form a clear package that tells an agent when to act, how to act, and which tools to use.
+I've been following this one all week, and the paper's own words are what stuck: memories are "hard to invoke, refine, or scale." A skill, by contrast, is a package that says when to act, how to act, and which tools to use. That framing is why I keep coming back to it.
 
-The kicker is the safety test. Remove the strict rollback gate, and complex reasoning performance crashes from 17.2 to 6.6. That is a 62% drop. A hard check before you save an agent change is not just ceremony. It is the exact thing keeping your system from silently breaking.
+The number I can't shake is the safety test. Remove the strict rollback gate and reasoning performance crashes from 17.2 to 6.6 — a 62% drop. My read: a hard check before saving an agent change is not ceremony, it is the thing keeping a working system from quietly breaking.
 
-The playbook: focus on skills instead of context, assign credit to specific skills, and gate every change behind a hard test. An impressive 76.3 accuracy score on the HotpotQA benchmark proves the recipe works.
+Where I've landed on the method: optimize skills instead of context, give credit to the specific skill that helped, and gate every change behind a fresh test. The 76.3 HotpotQA score is the part that makes me take it seriously.
+
+What I'm watching next: whether that hard check holds outside the paper's helpful, fixed-role agent setups.
 
 <!-- schema -->
 

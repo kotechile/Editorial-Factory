@@ -48,20 +48,20 @@ On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block
 [3] Railway Age, "STB Rejects 'Summary Denial' Motions for UP-NS Merger Application" (Sept. 21, 2026) — https://www.railwayage.com/regulatory/stb-rejects-summary-denial-motions-for-up-ns-merger-application
 
 <!-- linkedin -->
-America's first coast-to-coast railroad just cleared its first major test.
+I've been following this Union Pacific and Norfolk Southern merger all week; the Sept. 18 vote is the bit that stuck with me: America's first coast-to-coast railroad just cleared its first major test.
 
-The Surface Transportation Board (STB) unanimously refused to throw out the Union Pacific and Norfolk Southern merger, sending it into a full review. Rivals and shippers had asked the board to dismiss the deal outright.
+The Surface Transportation Board (STB) unanimously refused to throw the deal out, sending it into a full review. Rival railroads and shippers had asked the board to dismiss it outright.
 
-Why operations leaders need to care: One railroad owning both ends of a route can easily hike prices on shippers who lack a second rail option.
+My read: the risk isn't the merger so much as one railroad owning both ends of a route — a carrier in that spot can hike prices on shippers who have no second rail option.
 
-The playbook for supply chain teams before the Nov. 18 public comment deadline:
-- Map your single-rail trapped lanes using your Transportation Management System (TMS).
-- File a comment detailing your volumes and limited options.
-- Check your contracts to see how long your rates remain locked.
+Three things I'd want answered before Nov. 18:
+- Which lanes are single-rail only. Pulling start and end points from a Transportation Management System (TMS) is where I'd start.
+- Whether a short comment moves the needle. The STB is taking public notes through Nov. 18; a letter naming volumes and limited options is how that exposure gets into the record.
+- How long current rate locks hold, and whether any hub access rights survive the deal. Those rights are the leverage.
 
-The catch? The STB decision does not guarantee the merger will happen. The board warns the railroads "still have a long way to go."
+The catch: the vote doesn't mean the merger will pass. The board just chose to gather facts, and the railroads "still have a long way to go."
 
-Silence is a vote you don't have to cast. Map your exposure today.
+Curious how other ops teams are reading Nov. 18: a real planning deadline, or another date that slips?
 
 ## Gate report
 lead: PASS — Direct news in the first sentence; zero throat-clearing; all acronyms expanded.

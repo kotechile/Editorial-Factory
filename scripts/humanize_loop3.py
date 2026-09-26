@@ -43,7 +43,7 @@ SMART BREVITY STYLING PRINCIPLES:
      - **Why it matters:** (the systemic significance or immediate impact)
      - **The big picture:** (the broader industry or structural shift)
      - **By the numbers:** (**MANDATORY** quantitative section presenting 2–4 verified figures/percentages in bold bullets)
-     - **What to do:** or **The playbook:** (practitioner-specific tactical moves)
+     - **Where this bites:** or **What I'd watch:** (what the operators, vendors and regulators closest to the story are doing, and what the writer expects next — report it, never instruct the reader)
      - **The catch:** or **Between the lines:** (honest nuance, limitation, or counter-argument)
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
@@ -72,7 +72,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - Format the TL;DR as the structured <!-- tldr --> field strictly following this 4-part Smart Brevity At a Glance schema (serves as a 30-second executive summary explaining what the article is about):
   1) "- **The Big Shift:** <1-2 plain-English sentences explaining directly what happened and what the article is about>"
   2) "- **Why It Matters:** <1-2 sentences stating the economic, architectural, or industry impact and who is affected>"
-  3) "- **The Winning Moves:** <summary of tactical playbook>" followed by indented sub-bullets:
+  3) "- **What I'd Watch:** <what the writer is watching next, and why it matters>" followed by indented sub-bullets:
      "  - **<Move Name>:** <1-line plain-English definition explaining what it does and why>"
   4) "- **The Catch:** <upfront design needs, security/access controls, and context-dependent trade-offs/caveats>"
   Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC (render-time only).
@@ -91,6 +91,10 @@ OUTPUT FORMAT (strict):
 2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason verifying plain-English clarity and scannability>" or "FAIL — <reason>".
 
 Now rewrite the following draft:"""
+
+# The voice contract (skills/claude_humanizer.md §3.8/§3.9) is part of the job instruction, not a
+# suggestion: verify.sh §9 fails the build on the article body and on the social variant.
+RULES += "\n" + ht.LONGFORM_VOICE_RULES + "\n" + ht.SOCIAL_VOICE_RULES
 
 def call_gemini(prompt):
     body = {

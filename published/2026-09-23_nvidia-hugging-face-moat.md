@@ -59,13 +59,13 @@ Nvidia can only afford this massive bet because it holds roughly $197 billion in
 [3] "Nvidia Extends A.I. Spending Spree With $12.9 Billion Deal for Hugging Face" — The New York Times (Sept 3, 2026) — https://www.nytimes.com/2026/09/03/technology/nvidia-hugging-face.html
 
 <!-- linkedin -->
-Nvidia just paid $12.93 billion for Hugging Face. The startup makes roughly $150 million a year. That is 86 times revenue, and it is a moat story rather than a cash flow story.
+Nvidia just paid $12.93 billion for Hugging Face. I keep coming back to one number in this deal: the startup makes roughly $150 million a year. That is 86 times revenue, and my read is that this is a moat story rather than a cash flow story.
 
-OpenAI, Google, Amazon, Microsoft, and Meta are all building their own custom chips. They want to escape high hardware prices. When chip power becomes cheap and common, the lasting advantage moves from hardware to software.
+The bit that stuck with me is who sits on the other side of it. OpenAI, Google, Amazon, Microsoft, and Meta are building their own custom chips to escape high hardware prices. When chip power becomes cheap and common, the lasting advantage looks like it moves off the hardware and into software.
 
-Hugging Face is that exact software network. It hosts 18 million developers and 3 million open models. Jensen Huang promised the platform will stay open, but developers must watch the default settings.
+Hugging Face is that exact software network, with 18 million developers and 3 million open models. Jensen Huang promised the platform will stay open. The thing I'd want answered is whether the default settings quietly drift toward Nvidia's own software stack.
 
-The real lesson for anyone running models is to build for freedom. Use open weights and flexible software. The chip war is over before it starts if you lock yourself to one vendor's setup.
+Where I've landed: for anyone running models, the freedom to move between chips looks like the thing worth holding on to — open weights, flexible software. I could be wrong, but a setup locked to one vendor seems to lose the chip war before it starts.
 
 ## Gate report
 lead: PASS — Direct opening sentences with high readability, stating the exact price, multiple, and strategic motive without filler.

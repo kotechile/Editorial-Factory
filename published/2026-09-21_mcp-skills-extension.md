@@ -63,18 +63,18 @@ The security burden also lands on hosts. The creators removed the archive format
 [5] Claude Code changelog — https://code.claude.com/docs/en/changelog
 
 <!-- linkedin -->
-The Model Context Protocol (MCP) just gained a second core tool. On September 13, maintainers merged a new standard called Standard Enhancement Proposal (SEP) 2640, officially launching the MCP skills extension. This turns "skills"—folders of plain text that teach Artificial Intelligence (AI) agents repeatable tasks—into a vendor-neutral protocol feature.
+The Model Context Protocol (MCP) just gained a second core tool — I've followed the SEP-2640 news all week. On September 13, maintainers merged Standard Enhancement Proposal (SEP) 2640, launching the MCP skills extension. It turns "skills" — folders of plain text teaching Artificial Intelligence (AI) agents repeatable tasks — into a vendor-neutral feature.
 
-A skill is now just a collection of files served under a `skill://` address and discovered using two new commands (`skills/list` and `skills/get`). The agent stack has officially split into two clear layers: MCP handles the tools, and Skills handle the processes.
+The bit that stuck with me: a skill is now just files under a `skill://` address, found with two commands (`skills/list` and `skills/get`). My read: the stack split in two — MCP for tools, Skills for processes.
 
-Why it matters for system builders:
-- Skills stop being messy folders and become safe, verified protocol resources.
-- Approvals bind directly to Secure Hash Algorithm (SHA) fingerprints and exact file sizes. Change a single file, and the system revokes approval instantly.
-- Skill content is always untrusted input. Code execution and tool access require clear, per-skill consent.
+What I keep circling:
+- Skills stop being messy folders and become verified protocol resources.
+- Approvals bind to Secure Hash Algorithm (SHA) fingerprints and exact file sizes — change one file and approval is revoked.
+- Skill content stays untrusted input — code and tool access need clear per-skill consent.
 
-The catch: This standardizes moving files, not formatting them. The skill format itself still lives at agentskills.io, and hosts carry a heavy security burden. There is deliberately no zip archive format, as opening a remote server's zip file invites dangerous attacks.
+The catch: this standardizes moving files, not formatting them. Formatting still lives at agentskills.io, and hosts carry the security burden. There's no zip archive by design, since a remote server's zip invites dangerous attacks.
 
-Reusable processes are rapidly becoming standard network infrastructure. Build against the read path, not a vendor Software Development Kit (SDK).
+Where I've landed: these processes are becoming standard network infrastructure, and I'd want to know if teams build against the read path or a vendor Software Development Kit (SDK).
 
 <!-- schema -->
 {

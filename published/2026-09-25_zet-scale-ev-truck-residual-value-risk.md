@@ -63,18 +63,18 @@ Finally, these are heavy freight trucks. The finance lesson works for small deli
 <!-- linkedin -->
 The biggest electric truck order in U.S. history just closed — and the battery wasn't the reason.
 
-Microsoft, PepsiCo, Ikea, and Red Bull grouped demand for 2,500 electric heavy trucks. This single purchase nearly doubles the country's electric vehicle (EV) fleet overnight. Tesla is the primary original equipment manufacturer (OEM); Kenworth, Volvo, and other makers serve as backups.
+I've been following this one all week. Microsoft, PepsiCo, Ikea, and Red Bull grouped demand for 2,500 electric heavy trucks. This single purchase nearly doubles the country's electric vehicle (EV) fleet overnight. Tesla is the primary original equipment manufacturer (OEM); Kenworth, Volvo, and other makers serve as backups.
 
-What actually unblocked it: a fair-market-value lease that moves resale risk off the carrier's books, plus grouped demand that forced cheaper prices.
+What I take from it: the truck was never what unblocked this — the money and the demand signal were. A fair-market-value lease moves the resale risk off the carrier's books, and shippers pooling their freight before they ask for bids is what forced the cheaper prices.
 
-The numbers that matter:
+The number I keep coming back to:
 - 875 zero-emission heavy trucks sold in the U.S. in all of 2025 (0.3% of market)
 - $411,200 median electric heavy truck price vs $172,500 diesel
 - 10 freight hubs, 10,000-truck goal
 
-The lesson for anyone building a clean fleet: the truck was never the problem. The money and the demand signal were. Shift the resale risk, group demand before you ask for bids, and build your total cost of ownership (TCO) from real working data — not the sticker.
+My read: if that resale risk moves off a carrier's books, I'd want to know who is actually carrying it, and whether the total cost of ownership (TCO) case gets built from real working data rather than the sticker.
 
-The catch: the resale risk didn't disappear, it moved to the finance team. And the charging plan for those 10 hubs? Not public yet.
+The catch: the resale risk didn't disappear, it moved to the finance team. And the charging plan for those 10 hubs? Still the thing I'd want answered.
 
 ## Gate report
 lead: PASS — The opening sentence immediately delivers the core news of the 2,500 truck order and its impact without any preamble or throat-clearing.

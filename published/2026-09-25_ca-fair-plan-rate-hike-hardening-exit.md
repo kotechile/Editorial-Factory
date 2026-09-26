@@ -66,19 +66,17 @@ The 29.1% hike is also just an average [1]. Safe city homes might see a price dr
 [7] Stanford Woods Institute — "California's home insurance crisis is spreading beyond wildfire country" (https://woods.stanford.edu/news/californias-home-insurance-crisis-spreading-beyond-wildfire-country)
 
 <!-- linkedin -->
-California's last-resort insurer is about to get 29.1% more expensive.
+California's last-resort insurer is about to get 29.1% more expensive, and I've been following this all week.
 
-The Fair Access to Insurance Requirements (FAIR) Plan's steepest hike in recent history lands October 15 on over 675,000 users.
+The Fair Access to Insurance Requirements (FAIR) Plan lands its steepest hike in recent history on October 15, on over 675,000 users.
 
-But the number that should worry homeowners is not the 29.1%. It is this: $768 billion in total risk against just $200–$400 million in cash. When the plan cannot pay, the bill gets passed back to you. That extra fee does not care which ZIP code you live in.
+The number I keep coming back to isn't the 29.1%. It's $768 billion in total risk standing against just $200–$400 million in cash. My read: when a pool that size can't pay a big disaster, the gap comes back as an extra fee — and that fee doesn't care which ZIP code you live in.
 
-The exit is not another quote. It is fireproofing your home.
+The bit that stuck with me: hardening the house is the one move that isn't just shopping for another quote, and the plan itself pays for part of it — up to 16.4% off the fire portion of the bill for finishing all 12 Safer-from-Wildfires steps. That means a Class-A roof, safe vents, a five-foot stone border, closed eaves, and thick windows.
 
-The FAIR Plan itself will pay you to do it: up to 16.4% off the fire part of your bill for finishing all 12 Safer-from-Wildfires steps. That means a Class-A roof, safe vents, a five-foot stone border, closed eaves, and thick windows.
+Brokers say carriers are writing policies again that did not exist a month ago, which is how a fixed-up house leaves the state pool for good.
 
-Better yet: fixing the house is how you qualify for a private company and leave the state plan for good. Brokers say carriers are writing policies again that did not exist a month ago.
-
-If you live in a fire zone, the clock is running. Your October 15 renewal is the deadline to make your house tough against fire—and get off the most expensive insurance pool in the state.
+What I'm watching next: whether homeowners actually land a private renewal off those fixes before October 15, or whether the discount turns out to be the consolation prize.
 
 <!-- schema -->
 

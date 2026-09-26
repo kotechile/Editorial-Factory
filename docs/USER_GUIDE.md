@@ -76,8 +76,17 @@ The full instructions live in `skills/*.md` (the SOPs) and the personas in `.age
 
 Every article has a fixed skeleton, written into the draft as machine-checkable markers:
 
-`lead` (concrete incident/stat) → `tension` (the systemic shift) → `tactical-insight` (the
-doable move) → `nuanced-takeaway` (the honest catch) → `tldr` (3 bullets, long-form only).
+`lead` (concrete incident/stat) → `tension` (the systemic shift) → `tactical-insight` (where it
+bites / what to watch) → `nuanced-takeaway` (the honest catch) → `tldr` (3 bullets, long-form only).
+
+**Voice.** The article is a comment on the news, written by one person who has been reading the
+week's filings and reports: it holds a point of view and labels it as such, it does not claim to own
+the truth, and it does not advise the reader. Each interpreting section carries a first-person
+observer cue ("I've been watching…", "What strikes me here:", "My read:"), and the tactical section
+reports what the people closest to the story are doing instead of issuing a playbook — the signpost
+is `**Where this bites:**` / `**What I'd watch:**`, and the TL;DR's third slot is `**What I'd Watch:**`.
+The same person writes the LinkedIn variant and the Reddit cards. Rule:
+`skills/claude_humanizer.md` §3.8/§3.9; gate: `verify.sh` §9.
 
 Two extras are **not** part of the body: the **TL;DR** is a structured field (never a prose
 "in conclusion"), and the **TOC** is derived by the site at render time (never written by a bot).

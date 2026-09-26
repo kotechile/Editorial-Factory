@@ -30,7 +30,7 @@ Introduce supporting context using bolded, standardized guide words followed imm
 - **Why it matters:** — Explain the systemic significance or immediate impact.
 - **The big picture:** — Frame the broader industry or structural shift.
 - **By the numbers:** — **MANDATORY.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins (e.g. `- **93% vs 41% accuracy:** ...`).
-- **What to do:** / **The playbook:** — Introduce concrete, doable practitioner steps.
+- **Where this bites:** / **What I'd watch:** — Introduce the concrete consequences and the next signals to watch. Observations, never instructions to the reader (§3.9).
 - **The catch:** / **Between the lines:** / **Yes, but:** — State the honest limitation, tradeoff, or counter-argument.
 
 ### 3.4 Scannability & Bullets
@@ -39,7 +39,7 @@ Introduce supporting context using bolded, standardized guide words followed imm
 - **At a Glance / TL;DR 4-Part Smart Brevity Schema:** The `<!-- tldr -->` block must serve as a 30-second executive summary that clearly explains what the article is about, following this structure in plain English:
   1. `- **The Big Shift:**` (or **The Core Story:**) — 1-2 direct sentences explaining the event, breakthrough, or baseline problem and what the article is about.
   2. `- **Why It Matters:**` — 1-2 sentences delivering the economic, architectural, or industry stakes and who is affected.
-  3. `- **The Winning Moves:**` (or **The Playbook:**) — An intro sentence naming the core approach, followed by indented sub-bullets (`  - **<Move Name>:** <1-line plain English definition explaining what it does and why>`).
+  3. `- **What I'd Watch:**` — An intro sentence naming what the writer is watching next, followed by indented sub-bullets (`  - **<Thing to watch>:** <1-line plain English definition of what it is and why it matters>`). **The Winning Moves:** / **The Playbook:** are retired (§3.9).
   4. `- **The Catch:**` (or **The Fine Print:**) — 1-2 sentences stating the upfront design needs, security/access controls, and realistic trade-offs.
 
 ### 3.5 Strong, Simple Diction
@@ -53,6 +53,71 @@ Introduce supporting context using bolded, standardized guide words followed imm
 
 ### 3.7 The Exit ("Go Deeper")
 - Conclude cleanly with designated **Go deeper:** references or internal links (`<!-- internal-links -->` and `## Sources`) for readers who want extra nuance without cluttering the main text.
+
+### 3.8 The Social Variants — Observer Voice, Not Authority
+
+The long-form article explains. The `<!-- linkedin -->` variant and the Reddit card **comment** on it.
+The speaker is one person who has been reading the week's filings, reports and news and is saying what
+they make of it. They did not cause the events, they are not the owner of the truth, and they are not
+the reader's advisor: they hold a point of view and they label it as one.
+
+**Required — at least one, ideally two:**
+- **Observed it themselves:** "I've been following this all week", "I keep coming back to one number", "The bit that stuck with me:"
+- **Opinion labelled as opinion:** "My read:", "What I take from it:", "I could be wrong, but…", "Where I've landed:"
+- **Attention, not instruction:** "What I'm watching next:", "The thing I'd want answered:"
+
+**Banned — ownership/authority constructions (they read as the owner of the truth):**
+- Verdict framing: "the signal is clear", "the real story is", "the truth is", "the lesson is/for", "make no mistake", "the bottom line is", "the numbers don't lie".
+- Consultant framing: "here's the playbook", "the playbook:", "here's what you need to do", "the winning moves", "let me be clear", "trust me".
+- Line-initial imperatives and second-person advice: "Stress test your…", "Negotiate the…", "Match your…", "Treat X as a live deadline", "Map your exposure today", "Stop…", "Start…", and "you need to / must / should / have to…". Convert them to observation plus question: "I'd want to know whether operators are stress-testing…", "Curious how others are handling…".
+
+**Keep:** every figure, name, date and citation the article carries; its closing reader link; the
+hashtags (LinkedIn); the hook-first first line; ≤ 1,300 characters on LinkedIn. Never add a fact the
+article does not carry — re-voice, never re-report.
+
+**Reddit additionally:** the card sits inside someone else's thread. State the read, show the numbers,
+then ask. No instruction, no pitch tone; the write-up link is background, not a call to action.
+
+**Worked example — the 2026-09-26 tariff piece:**
+- *Before (authority):* "The signal is clear: CFOs are pricing in a tariff cliff. … Here is the playbook for supply chain leaders: - Stress test your landed costs … - Match your cash posture to your tariff exposure … Treat Jan. 10 as a live deadline. Not a December problem."
+- *After (observer):* "I've been following the tariff truce news all week, and one number from the Atlanta Fed stopped me. … My read: that's firms saying out loud that they expect the paused tariffs to come back. … The part I keep circling: hoarding is also just sound liquidity management, so this isn't proof of panic. … I'm curious how ops teams are reading Jan. 10: a real planning deadline, or another date that slips?"
+
+### 3.9 The Long-Form Article — a Comment, Not a Verdict
+
+The article is written by the same person as the social post: someone who has been reading the week's
+filings, reports and news, telling you what they make of it. It reports the facts plainly and labels its
+reading of them as its reading. It is not the author of the events, not the owner of the truth, and not
+the reader's advisor.
+
+**The load-bearing change: the tactical section stops being a playbook.** It was "**The playbook:** —
+concrete, doable practitioner steps", which is advice, which is authority. It becomes **"Where this
+bites:"** or **"What I'd watch:"** — what the people closest to the story are doing, what the consequences
+land on, and which signals answer the open question next.
+
+| Was (authority) | Becomes (observer) |
+|---|---|
+| "**The playbook:** Supply chain leaders should stress test landed costs." | "Operators are already re-quoting every landed-cost model. I'd want to see the December sourcing numbers before I believed the calm holds." |
+| Bullet: "**Match your cash posture** to your tariff exposure. Lean cash + heavy imports = high risk." | Bullet: "The firms with lean cash and heavy imports have the least room — and 70% of them are hoarding refunds as cash." |
+| TL;DR: "**The Winning Moves:** Negotiate the retirement match as hard as the stock grant." | TL;DR: "**What I'd Watch:** Whether offers start trading stock for match — the 401(k) is what lets people buy the equity they were given." |
+
+**Required in the body:**
+- A first-person observer cue in each interpreting section — `<!-- tension -->`, `<!-- tactical-insight -->`,
+  `<!-- nuanced-takeaway -->`: "I've been watching…", "What strikes me here:", "My read:", "I could be
+  wrong, but…", "The part I keep circling:", "What I'd watch next:". One per section, not per sentence:
+  the reporting stays plain.
+- Opinion labelled as opinion wherever a claim is the writer's reading rather than the source's.
+
+**Banned in the body** — the same constructions as §3.8, plus "The lesson is/for", "the takeaway is", and
+any sentence that tells the reader what to do. Reported advice is fine when it is attributed and clearly
+someone else's: "Bessent told importers to expect no further extensions" is reporting; "Lock in your
+suppliers now" is advice.
+
+**Unchanged:** every fact, figure, `[n]` citation, acronym expansion, `## Sources` line, the `<!-- tldr -->`
+four-slot schema (with slot 3 renamed), the section markers, the lead's hook-first job, and the
+accessibility floor. Re-voice, never re-report.
+
+`scripts/verify.sh` §9 gates both voices: it fails the build when an artifact dated on/after the cutover
+carries an authority construction, or when an interpreting section has no observer cue.
 
 ---
 
@@ -93,7 +158,7 @@ retries per section).
 | `<!-- tension -->` | vague "the industry is evolving"; lacks a context signpost (**The big picture:** or **Why it matters:**); lacks a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats; doesn't name what shifted and who it hurts/helps. |
 | `<!-- tactical-insight -->` | generic advice ("invest in AI"); not structured with clean bullets and bold lead-ins for 3+ moves; not specific and doable for the target persona. |
 | `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; lacks an honest limitation / counter-argument (**The catch:** or **Between the lines:**). |
-| `<!-- tldr -->` | lacks the 4-part schema (**The Big Shift**, **Why It Matters**, **The Winning Moves** with sub-bullet definitions, **The Catch**); fails to explain what the article is about; reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |
+| `<!-- tldr -->` | lacks the 4-part schema (**The Big Shift**, **Why It Matters**, **What I'd Watch** with sub-bullet definitions, **The Catch**); fails to explain what the article is about; reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |
 
 After every section passes, run ONE final **whole-piece pass**: coherence, cadence, paragraph discipline (max 3 sentences per paragraph), and confirm no AI-tell or empty transition remains anywhere.
 
@@ -101,7 +166,7 @@ After every section passes, run ONE final **whole-piece pass**: coherence, caden
 
 ## 6. Output
 `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn) with the per-section gate
-report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (following the 4-part Big Shift / Why It Matters / Winning Moves / Catch schema) — never write a
+report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (following the 4-part Big Shift / Why It Matters / What I'd Watch / Catch schema) — never write a
 prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only** — do not compose
 one.
 

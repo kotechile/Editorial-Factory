@@ -58,7 +58,15 @@ A setup called ACID-Agent uses Atomicity, Consistency, Isolation, Durability (AC
 [3] Diagrid, "Top 5 Mistakes Shipping AI Agents to Production in 2026" (Aug 31, 2026) — https://www.diagrid.io/infrastructure/top-5-mistakes-shipping-agents-production-2026
 
 <!-- linkedin -->
-Your agent save-and-restore tool has a security hole no one is talking about. A new paper (arXiv:2608.29381) shows that a perfect rollback can restore a mixed state where files, choices, and outside actions never actually lived together. The researchers showed three working attacks on Hermes, Cline, and LangGraph. Agents shipped a virus as clean code, forwarded private mail, and double-charged payments. None of these needed a hacked save file. The fix is not deleting rollbacks. It is treating the recovery zone as a strict design rule. Map what lives inside versus outside the snapshot. Make outside actions safe to repeat. Bind checks to the exact files scanned, and lock down random choices. A system called ACID-Agent hits 90.0 on tests versus 75.2 for a standard Claude Code setup, using 60% fewer tokens. Safe execution is needed. It is not enough.
+I keep coming back to one thing in a new paper (arXiv:2608.29381): a perfect rollback can restore a mixed state, where files, choices and outside actions never actually lived together.
+
+The bit that stuck with me is that none of the three working attacks - on Hermes, Cline and LangGraph - needed a hacked save file. Agents shipped a virus as clean code, forwarded private mail, and double-charged payments anyway.
+
+My read: this isn't a case for dropping rollbacks. It's a case for treating the recovery zone as a design rule, and I'd want to know where each tool draws it - what sits inside the snapshot and what doesn't, whether outside actions are safe to repeat, whether a passing scan is bound to the exact files it saw, and whether random choices are locked down.
+
+The number I keep circling: ACID-Agent scores 90.0 on tests versus 75.2 for a standard Claude Code setup, on 60% fewer tokens. I could be wrong, but that gap reads like the price of building the boundary properly.
+
+What I'm watching next: whether the cheap save-and-restore tools say anything about their boundary at all. Safe execution is needed. I'm less sure it's the same thing as a clean rollback.
 
 ## Gate report
 lead: PASS — Delivers the core malware bypass incident in sentence 1 using simple, everyday words and connected sentences.

@@ -48,13 +48,15 @@ Employees with a 401(k) retirement plan through their employer purchase options 
 [2] Vestwell — "Equity Is Not a Retirement Plan: New Data Shows Why Both Matter" (Sept 2026): https://www.vestwell.com/blog/Equity-Is-Not-a-Retirement-Plan-New-Data-Shows-Why-Both-Matter
 
 <!-- linkedin -->
-Most startup equity never turns into money. 
+Most startup equity never turns into money.
 
-Carta's new data (Sept. 10) reveals that over 70% of earned stock options are never purchased by employees. The difference between who cashes in and who walks away is often a standard 401(k), not the size of the stock grant. 
+I've been following Carta's new data (Sept. 10) all week, and I keep coming back to one number: over 70% of earned stock options are never purchased by employees. What stuck with me is that the gap between who cashes in and who walks away often isn't the size of the stock grant. It's whether the employer offers a standard 401(k).
 
-Employees with a 401(k) buy their options at a 26.1% rate, compared to 22.8% for those without one. Yet, close to half of US startups offer no 401(k) at all. 
+Employees with a 401(k) buy their options at a 26.1% rate, compared to 22.8% for those without one. Yet close to half of US startups offer no 401(k) at all.
 
-The lesson for anyone weighing an offer: Negotiate the retirement match as hard as the stock grant. A boring 401(k) gives you the cash cushion to actually buy your equity when the window opens. 
+My read: a boring retirement account is doing quiet work here. The cash cushion is what makes it possible to hand over money for shares that may never be sellable — which is not the same as saying it makes the options good.
+
+The thing I'd want answered by anyone weighing an offer: how much the retirement match actually weighs against the stock grant. A 401(k) is the part that turns into cash at retirement, while the equity is a bet on a company sale or a public offering that may never happen. I could be wrong, but that's where I've landed.
 
 Paper wealth is a marketing term. Exercise is a financial act.
 

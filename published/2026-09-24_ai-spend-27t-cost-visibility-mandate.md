@@ -60,18 +60,22 @@ The Trough of Disillusionment is a warning, not a firm prophecy. The teams that 
 [5] https://developers.cloudflare.com/ai-gateway/changelog
 
 <!-- linkedin -->
-Worldwide Artificial Intelligence (AI) spending will hit $2.7 trillion this year, growing 49.5%. But the real story hides inside Gartner's latest forecast: enterprises now demand that vendors manage costs and build usage tracking into the tools they sell.
+Worldwide Artificial Intelligence (AI) spending will hit $2.7 trillion this year, growing 49.5%. I've been sitting with Gartner's September forecast all week: enterprises now want vendors to manage costs and to build usage tracking into the tools they sell.
 
-Cost control is now a strict buying requirement. Meanwhile, Gartner puts Generative AI (GenAI) firmly in the "Trough of Disillusionment." The money flows faster than the proof it works.
+Cost control reads less like a back-office chore and more like a line on the purchase order. Gartner also puts Generative AI (GenAI) in the "Trough of Disillusionment" for 2026, so money flows faster than the proof it works.
 
-The biggest mistake tech leaders make is watching token prices, which have dropped for two years while total bills climbed. The metric that matters is cost per resolved work-unit. You must know what it actually costs to resolve a ticket or close a case, including human review.
+My read: the mistake I keep spotting is tracking token prices, which have fallen for two years while total bills climbed.
 
-Three moves separate the teams that survive the trough:
-1. Measure price per outcome, not per token.
-2. Make usage tracking a condition of every AI purchase.
-3. Budget the hidden layers—review labor, tool calls, and database searches—not just the model bill.
+The number I keep coming back to is cost per resolved work-unit — what it actually costs to resolve a ticket or close a case, human review included.
 
-The catch: Tracking costs perfectly is hard, and Gartner notes buyers ignore runaway costs for now. The first team in your industry to track per-unit value wins the budget war.
+The three things I notice in the teams getting this right:
+1. They measure price per outcome, not per token.
+2. They treat usage tracking as a condition of every buy, not a later add-on.
+3. They budget the hidden layers — review labor, tool calls, database searches — not just the model bill.
+
+The thing I'd want answered: tracking this perfectly is hard, and Gartner notes buyers are still shrugging off runaway costs.
+
+Where I've landed: the first team in an industry to track per-unit value probably wins the next budget cycle.
 
 ## Gate report
 lead: PASS — Delivers the $2.7T spending stat and the core shift in vendor requirements immediately in plain English.

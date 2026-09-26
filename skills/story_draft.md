@@ -11,9 +11,9 @@ evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity
 | **Lead** | A concrete incident or figure from the evidence delivering the core news in sentence 1. For **Synthesis articles**, write a **Collision Lead**: bridge the two underlying developments in the first 1–2 sentences (e.g., *"As frontier model inference prices plunge past 80% cuts, enterprise engineering teams are quietly turning their backs on off-the-shelf SaaS to build bespoke in-house software."*). Not a definition, not a "world is changing" opener. |
 | **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed (**Why it matters / The big picture**). In a synthesis piece, explain the friction point where Trend A radically alters the economics, reliability, or feasibility of Trend B. |
 | **By the numbers** | Mandatory quantitative data section (**By the numbers:**) highlighting 2–4 verified figures, percentages, benchmarks, or cost changes in clean, bolded scannable bullets. In synthesis articles, bullets must represent verifiable data from **both** underlying anchors. |
-| **Tactical insight** | The actionable, specific takeaways for the target reader (`persona:` from `context/personas.json`). Sequence 3+ points cleanly for bulletization. |
+| **Tactical insight** | What the people closest to the story are doing, what the consequences land on, and the next signals to watch — reported, never prescribed (`persona:` from `context/personas.json`). Signpost it **Where this bites:** / **What I'd watch:** and bulletize 3+ points. Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
 | **Nuanced takeaway** | The honest limitation or counter-argument (**The catch / Between the lines**). Ends on substance, not a cheerlead. |
-| **TL;DR (At a Glance)** | 4-part Smart Brevity breakdown (**The Big Shift / What Happened**, **Why It Matters**, **The Winning Moves**, **The Catch / Fine Print**). Must clearly explain what the article is about in sentence 1, articulate the systemic stakes, break down the tactical moves with plain-English definitions in sub-bullets, and state the trade-offs/caveats. **Long-form only.** |
+| **TL;DR (At a Glance)** | 4-part Smart Brevity breakdown (**The Big Shift / What Happened**, **Why It Matters**, **What I'd Watch**, **The Catch / Fine Print**). Must clearly explain what the article is about in sentence 1, articulate the systemic stakes, name what the writer is watching next with plain-English definitions in sub-bullets, and state the trade-offs/caveats. **Long-form only.** |
 
 The **TOC is render-time only** — the site derives it from the section headings. Never write a
 "Table of Contents" into the article body.
@@ -24,6 +24,11 @@ The **TOC is render-time only** — the site derives it from the section heading
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
 - **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins (e.g. `- **40% routed:** ...`) that deliver the load-bearing quantitative facts before the tactical moves.
+- **Observer voice (gated):** the body is a comment on the news, not a verdict and not a playbook:
+  each interpreting section (`<!-- tension -->`, `<!-- tactical-insight -->`, `<!-- nuanced-takeaway -->`)
+  carries a first-person observer cue, opinion is labelled as opinion, and the tactical section reports
+  what the people closest to the story are doing instead of instructing the reader
+  (`skills/claude_humanizer.md` §3.9, enforced by `verify.sh` §9).
 - **Synthesis Frontmatter (gated):** when the angle brief says `Angle Type: Synthesis`
   (`skills/virality_judge.md` §2.5), the draft **must** carry both keys or `verify.sh` §8 fails the
   build:
@@ -40,7 +45,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 - **At a Glance (TL;DR) Schema:** The `<!-- tldr -->` section must be a complete executive briefing that explains what the article is about in ~30 seconds using this exact 4-part plain-English structure:
   1. `- **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in clear, contextual terms>`
   2. `- **Why It Matters:** <1-2 sentences stating the systemic, financial, or architectural stakes for the reader>`
-  3. `- **The Winning Moves:** <Intro line summarizing the tactical playbook>` followed by indented sub-bullets:
+  3. `- **What I'd Watch:** <intro line naming what the writer is watching next, and why>` followed by indented sub-bullets:
      - `  - **<Move Name>:** <1-line plain-English definition explaining what it does and why it works>`
   4. `- **The Catch:** <1-2 sentences detailing the trade-offs, upfront design requirements, security/access controls, and realistic caveats>`
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
@@ -86,7 +91,7 @@ slug: <slug>
 <!-- tldr -->
 - **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in plain English>
 - **Why It Matters:** <1-2 sentences articulating the economic/operational impact>
-- **The Winning Moves:** <summary of playbook>
+- **What I'd Watch:** <what the writer is watching next, and why>
   - **<Move 1>:** <plain English definition of what it does and why>
   - **<Move 2>:** <plain English definition of what it does and why>
   - **<Move 3>:** <plain English definition of what it does and why>

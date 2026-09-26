@@ -57,11 +57,11 @@ United Natural Foods (UNFI) will spend $300 million on warehouse robots, new pla
 [5] CNBC — "Fed rate decision September 2026: Rates rise to 3.75%-4%" (Sept 16, 2026) — https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html
 
 <!-- linkedin -->
-United Natural Foods (UNFI) will spend $300 million on warehouse robots and new software next year — right after cheap process fixes across 44 of its warehouses delivered four straight quarters of better fill rates, on-time delivery, and output. 
+United Natural Foods (UNFI) will spend $300 million on warehouse robots and new software next year — right after cheap process fixes across 44 of its warehouses delivered four straight quarters of better fill rates, on-time delivery, and output.
 
-The timing matters: the Federal Reserve's recent rate hike makes giant, slow-payback machines a lot harder to justify. The lesson for operations leaders is sequence, not just spend. Fix the process first, bank the savings, then buy the robots. In a market where money is expensive, you want to rent fast-payback fleets instead of building giant fixed systems. 
+I've been sitting with the timing on this one. It landed days after the Federal Reserve raised rates, and my read is that the order of operations is doing more work here than the check size: fix the cheap process stuff first, bank the savings, then buy the machines. When money costs more, a rented fleet of Autonomous Mobile Robots (AMRs) that pays back fast is a much easier case to make than a giant fixed system that takes years.
 
-The catch: UNFI's sales actually fell 2.0% in 2026, meaning this is strict cost discipline on a shrinking top line, not growth. That is the honest payoff math most teams skip when they look at shiny new robots.
+Where I've landed: UNFI's sales actually fell 2.0% in 2026. That reads to me as strict cost discipline on a shrinking top line rather than growth — and it's the payoff math I'd want spelled out before calling this a robot story.
 
 ## Gate report
 lead: PASS — Opens directly with the $300M investment and the 44-warehouse workflow context; zero throat-clearing, uses plain English.

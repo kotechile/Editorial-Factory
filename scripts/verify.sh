@@ -134,8 +134,30 @@ fi
 if ! python3 "$ROOT/scripts/test_sync_crons.py" >/dev/null 2>&1; then
   echo "FAIL: cron fleet contract tests — detail:"; python3 "$ROOT/scripts/test_sync_crons.py" 2>&1 | tail -6; FAIL=1
 fi
+
 if ! python3 "$ROOT/scripts/test_distribution_prep.py" >/dev/null 2>&1; then
   echo "FAIL: distribution prep tests — detail:"; python3 "$ROOT/scripts/test_distribution_prep.py" 2>&1 | tail -6; FAIL=1
+fi
+
+# 9. Voice gate (hard): the article body AND the social copy must read as one person commenting on the
+#    news — not the owner of the truth and not the reader's advisor (skills/claude_humanizer.md
+#    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated
+#    on/after the cutover for an observer cue, (b) the whole reader-facing body for verdict /
+#    consultant / imperative constructions, (c) the authored `<!-- linkedin -->` block, and (d) the
+#    copy site/distribution.mjs generates for every published article — including reader-directed
+#    article sentences, which the generator now refuses to quote. Node is required because the
+#    formatter and the rules are both JS; the dashboard cannot run without node either, so this
+#    skips only on a host that could not serve PressFlow at all.
+if command -v node >/dev/null 2>&1; then
+  if ! node "$ROOT/scripts/check_social_voice.mjs" --self-test >/dev/null 2>&1; then
+    echo "FAIL: social-voice rule self-test — detail:"
+    node "$ROOT/scripts/check_social_voice.mjs" --self-test 2>&1 | tail -6; FAIL=1
+  fi
+  if ! node "$ROOT/scripts/check_social_voice.mjs"; then
+    echo "FAIL: social voice (see the list above; the rule is skills/claude_humanizer.md §3.8)"; FAIL=1
+  fi
+else
+  echo "  skip: social voice gate (node not on PATH)"
 fi
 
 if [ "$FAIL" -ne 0 ]; then

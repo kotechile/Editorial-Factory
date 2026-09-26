@@ -35,6 +35,11 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
      `sources:` in `published/…md` — without the flag it publishes as an unmarked single-signal
      story. `verify.sh` §8 fails the build when the flag is missing
      (`python3 scripts/synthesize_topics.py --check-briefs`).
+   - The voice is part of what you publish, and it is gated: the body is a comment on the news and the
+     social copy is the same person's observation (`skills/claude_humanizer.md` §3.8/§3.9). Do not
+     publish a body whose tactical section is a playbook or whose social block carries verdict
+     framing — `verify.sh` §9 (`node scripts/check_social_voice.mjs`) fails the build on either, and
+     the article page / distribution cards surface exactly this copy.
 
 ## 3. Distribution (prep automatic, posting manual)
 - **Preparation is automatic.** The persistence pass ends by seeding the dashboard's Reddit/LinkedIn

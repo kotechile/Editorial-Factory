@@ -58,19 +58,21 @@ A $12.55 billion valuation shows huge market hype. Your real defense is the undo
 [3] Temporal — "Temporal Agent Harness: An early look at durable agent infrastructure" (Aug 20, 2026) — https://temporal.io/blog/temporal-agent-harness-durable-agent-infrastructure
 
 <!-- linkedin -->
-Temporal just raised $550 million at a $12.55 billion valuation. This was not a bet on a new language model. It was a bet on the boring part of enterprise artificial intelligence (AI): making sure a swarm of agents finishes what it starts.
+Temporal just raised $550 million at a $12.55 billion valuation. Not a bet on a new language model, but on the plumbing of enterprise artificial intelligence (AI): making a swarm of agents finish what it starts.
 
-AI agents now touch real money and core business databases. Every extra step they take creates a new chance to fail. Chain ten 95%-reliable steps together, and you have barely a 60% chance the job finishes at all. Hitting "retry" does not erase a half-finished purchase order.
+I've been following this all week. One number stuck: chain ten 95%-reliable steps and you have barely a 60% chance the job finishes. Hitting "retry" does not erase a half-finished purchase order. Agents now touch real money and live databases.
 
-The numbers prove the shift: Temporal handled 1.9 trillion actions in August (up 350% year over year). It crossed 43 million free downloads and 4,300 paying customers. OpenAI used Temporal 60 times more in under one year.
+My read: the money is going into the plumbing, not the model. Temporal handled 1.9 trillion actions in August, up 350% year over year, and crossed 43 million free downloads, 4,300 paying customers. OpenAI used it 60 times more in under a year.
 
-The playbook for building a safe AI agent system:
-1. Run every agent as a durable workflow. Survive crashes and resume exactly where you left off.
-2. Put a strict checkpoint between "the AI decided" and "the tool fired."
-3. Design a clean undo up front. Every forward action needs a safe reverse switch.
-4. Keep the tool box small. Six focused tools easily beat a 42-tool registry.
+What I keep noticing in systems that hold up:
+1. Durable workflows, resuming exactly where a crash left them.
+2. A strict checkpoint between "the AI decided" and "the tool fired."
+3. Undo up front: every forward action needs a safe reverse switch.
+4. A small tool box. Six focused tools beat a 42-tool registry.
 
-The catch: Reliable execution just replays your mistakes faithfully. It is the floor, not the ceiling. Your real defense is the "undo" paths you design, not just the software running them.
+Where I've landed: reliable execution replays your mistakes faithfully. The defense is the undo paths someone designed, not the software.
+
+Curious how others weigh that, since the undo work pays off only at scale.
 
 #AI #Agents #DurableExecution #EnterpriseAI #SoftwareArchitecture
 

@@ -165,7 +165,8 @@ def check_smart_brevity(raw_text, body_text):
     # 3. Context signposts & By the numbers
     signpost_patterns = [
         r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*",
-        r"\*\*What to do:\*\*", r"\*\*The playbook:\*\*", r"\*\*The catch:\*\*",
+        r"\*\*Where this bites:\*\*", r"\*\*What I(?:'d| would) watch:\*\*",
+        r"\*\*The catch:\*\*",
         r"\*\*Between the lines:\*\*", r"\*\*Yes, but:\*\*", r"\*\*Go deeper:\*\*", r"\*\*What's next:\*\*"
     ]
     has_signposts = any(re.search(pat, raw_text, re.I) for pat in signpost_patterns)

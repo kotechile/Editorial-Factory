@@ -9,7 +9,12 @@
  * Ported and adapted from the deleted software-factory engine
  * (`src/lib/calc/content-distributor/engine.ts`, commit 791d6cd), retargeted at this repo's
  * draft/published markdown (frontmatter + `<!-- section -->` markers).
+ *
+ * Voice: the framing lines this module owns come from `social_voice.mjs` (observer commenting on
+ * the news — skills/claude_humanizer.md §3.8), and `scripts/check_social_voice.mjs` gates the
+ * generated copy plus the authored `<!-- linkedin -->` block it carries.
  */
+import { OBSERVER_FRAMING, isQuoteable } from './social_voice.mjs';
 
 export const STATUSES = ['ready', 'published', 'deleted'];
 export const PLATFORMS = ['reddit', 'linkedin'];
@@ -124,9 +129,13 @@ export function parseArticleMarkdown(markdown) {
   };
 }
 
-/** The `<!-- linkedin -->` block is authored by the drafter; strip its URL-append artefacts. */
+/** The `<!-- linkedin -->` block is authored by the drafter; strip its URL-append artefacts and any
+ *  pipeline marker that leaked in behind it — a leaked `<!-- schema -->` reached live LinkedIn
+ *  cards, which is internal metadata, not post copy. */
 function buildLinkedInFromBlock(block) {
   return String(block || '')
+    .split(/<!--\s*schema\s*-->|<!--\s*internal-links\s*-->/i)[0]
+    .replace(/<!--[\s\S]*?-->/g, '')
     .split(/\n{3,}/)
     .join('\n\n')
     .replace(/^\s*📖\s*Read the full[\s\S]*$/m, '')
@@ -175,6 +184,18 @@ export function extractKeySentences(text, maxPoints = 3) {
   return scored.slice(0, maxPoints).map((s) => s.sentence.replace(/\s+—\s+/g, ' — '));
 }
 
+/**
+ * Social copy quotes the article's prose, so a sentence addressed to the reader as advice ("You must
+ * re-run every project plan", "The lesson for anyone…") cannot be pasted into an observer-voice post
+ * — the card would read as the reader's advisor no matter what framing surrounds it. Drop those and
+ * keep the observation-shaped sentences; when nothing survives, the caller falls back.
+ */
+export function socialQuoteableSentences(text, maxPoints = 3) {
+  return extractKeySentences(text, Math.max(maxPoints * 3, maxPoints))
+    .filter(isQuoteable)
+    .slice(0, maxPoints);
+}
+
 export function extractHashtags(article, max = 4) {
   const words = [
     ...(article.secondaryKeywords || []),
@@ -217,61 +238,64 @@ function ensureNoAiTells(text) {
   return out.replace(/ {2,}/g, ' ').trim();
 }
 
-/** r/<sub> variant 1 — the numbers first. */
+/** r/<sub> variant 1 — the numbers first, framed as what the writer pulled out and read. */
 export function buildRedditBreakdownVariant(article, readerUrl) {
   const leadHead = String(article.lead || '').slice(0, 60);
   const takeawayText = String(article.takeaway || '').trim();
-  const points = extractKeySentences([article.tactical, article.takeaway].join(' '), 5)
+  const points = socialQuoteableSentences([article.tactical, article.takeaway].join(' '), 8)
     // never repeat the lede as a bullet — it is already the opening paragraph
     .filter((p) => !leadHead || !p.startsWith(leadHead.slice(0, 40)))
-    // the takeaway is printed verbatim below, so its sentences must not also appear as bullets
+    // the read is printed verbatim below, so its sentences must not also appear as bullets
     .filter((p) => !takeawayText.includes(p.replace(/^[-*\s]+/, '').trim()))
     .slice(0, 4);
+  const read = isQuoteable(takeawayText) ? takeawayText : (socialQuoteableSentences(article.takeaway, 1)[0] || '');
+  const fallback = socialQuoteableSentences(article.tension, 1)[0] || '';
   const bullets = points.map((p) => `- ${p}`).join('\n');
   const body = [
     article.lead,
     '',
-    '**The numbers that matter**',
+    OBSERVER_FRAMING.redditNumbers,
     '',
-    bullets || `- ${article.tension}`,
+    bullets || (fallback ? `- ${fallback}` : ''),
     '',
-    article.takeaway,
-    readerUrl ? `\nFull write-up with sources: ${readerUrl}` : '',
-  ].filter((line) => line !== null && line !== undefined).join('\n');
+    read ? `${OBSERVER_FRAMING.redditRead} ${read}` : '',
+    readerUrl ? `\nFull write-up with the sources: ${readerUrl}` : '',
+  ].filter((line) => line).join('\n');
   return ensureNoAiTells(body);
 }
 
-/** r/<sub> variant 2 — a question that invites practitioners to compare notes. */
+/** r/<sub> variant 2 — the writer's provisional read, then an invitation to compare notes. */
 export function buildRedditDiscussionVariant(article, readerUrl) {
   const leadHead = String(article.lead || '').slice(0, 40);
-  const points = extractKeySentences([article.tactical, article.tension].join(' '), 4)
+  const points = socialQuoteableSentences([article.tactical, article.tension].join(' '), 12)
     .filter((p) => !leadHead || !p.startsWith(leadHead))
     .slice(0, 3);
+  const fallback = socialQuoteableSentences(article.tension, 1)[0] || '';
   const body = [
     article.lead,
     '',
-    'Context:',
+    OBSERVER_FRAMING.redditDiscussion,
     '',
-    ...(points.length ? points.map((p) => `- ${p}`) : [`- ${article.tension}`]),
+    ...(points.length ? points.map((p) => `- ${p}`) : (fallback ? [`- ${fallback}`] : [])),
     '',
-    'Curious how others here are handling this. If you have run into the same thing, what did you do?',
-    readerUrl ? `\nBackground + primary sources: ${readerUrl}` : '',
-  ].filter((line) => line !== null && line !== undefined).join('\n');
+    OBSERVER_FRAMING.redditAsk,
+    readerUrl ? `\nBackground and primary sources: ${readerUrl}` : '',
+  ].filter((line) => line).join('\n');
   return ensureNoAiTells(body);
 }
 
 /** r/<sub> variant 3 — "here is what I found" framing. */
 export function buildRedditShowAndTellVariant(article, readerUrl) {
-  const tldr = article.tldr || extractKeySentences(article.takeaway, 3).map((p) => `- ${p}`).join('\n');
+  const tldr = socialQuoteableSentences(article.takeaway, 3).map((p) => `- ${p}`).join('\n');
   const body = [
     article.lead,
     '',
-    'What I found:',
+    OBSERVER_FRAMING.showAndTell,
     tldr,
     '',
-    article.tactical,
+    socialQuoteableSentences(article.tactical, 2).map((p) => `- ${p}`).join('\n'),
     readerUrl ? `\nI wrote up the full breakdown with the primary sources here: ${readerUrl}` : '',
-  ].filter((line) => line !== null && line !== undefined).join('\n');
+  ].filter((line) => line).join('\n');
   return ensureNoAiTells(body);
 }
 
@@ -283,11 +307,11 @@ function redditTitle(article) {
 function linkedInText(article, readerUrl) {
   let text = article.linkedinPost;
   if (!text) {
-    text = [
-      article.lead,
-      '',
-      [article.tactical, article.takeaway].filter(Boolean).join('\n\n'),
-    ].join('\n');
+    // Fallback when no authored block exists: still an observation, never a lecture, and never
+    // article prose that addresses the reader as advice.
+    const read = socialQuoteableSentences([article.tactical, article.takeaway].join(' '), 3)
+      .map((p) => `- ${p}`).join('\n');
+    text = [article.lead, '', OBSERVER_FRAMING.linkedinFallback, read].filter((line) => line).join('\n');
   }
   const tags = extractHashtags(article);
   if (readerUrl && !text.includes(readerUrl)) {
