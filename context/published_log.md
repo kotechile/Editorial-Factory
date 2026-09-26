@@ -12,6 +12,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-09-23 | gpu_hardware | nvidia-hugging-face-moat | Nvidia Buys the Open-Source Moat | https://pressflow.aichieve.net/published/2026-09-23_nvidia-hugging-face-moat.md | [article](https://pressflow.aichieve.net/published/2026-09-23_nvidia-hugging-face-moat.md) |
 | 2026-09-23 | enterprise_build_vs_buy | ai-price-volatility-build-vs-buy-maintenance-tax | AI Price Volatility: The $250k Upkeep Tax | https://pressflow.aichieve.net/published/2026-09-23_ai-price-volatility-build-vs-buy-maintenance-tax.md | [article](https://pressflow.aichieve.net/published/2026-09-23_ai-price-volatility-build-vs-buy-maintenance-tax.md) |
 | 2026-09-23 | warehouse_automation_robotics_capex | unfi-warehouse-automation-capex | UNFI Bets $300M on Warehouse Robots After Fixing Basic Workflows | https://pressflow.aichieve.net/published/2026-09-23_unfi-warehouse-automation-capex.md | [article](https://pressflow.aichieve.net/published/2026-09-23_unfi-warehouse-automation-capex.md) |
+| 2026-09-26 | supply_chain | tariff-cliff-already-priced-in | CFOs Are Pricing In the Tariff Cliff | https://pressflow.aichieve.net/published/2026-09-26_tariff-cliff-already-priced-in.md | manual review (LinkedIn auto-post off) |
 
 ## Awaiting approval — NOT published
 
