@@ -344,6 +344,7 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 | Run one vertical now | `hermes -p editor chat -q "Run the full editorial pipeline for vertical 'agentic_ai' per skills/*.md. Persist to the site + Supabase, then stop at the distribution gate."` |
 | Validate a draft | `scripts/verify.sh` (config JSON, banned AI-tells, draft schema + citations, sitemap drift, cron cadence **and prompt** parity, synthesis seeding/anchoring) |
 | Gate the repo without a human | Cron job **Editorial Verify Gate** (`30 9 * * *`) runs `scripts/cron-verify-gate.sh`: silent when green, reports `verify.sh` failures and a pressflow image that is behind HEAD |
+| Distribution to-do cards | Automatic in the publish pass (`scripts/publish.py` → `scripts/seed_distribution.py`); prove coverage with `python3 scripts/seed_distribution.py --check`. Nothing is posted automatically — the cards are copy-paste tasks |
 | Reconcile the cron fleet | `python3 scripts/sync_crons.py` (fixes missing/drifted/stale-prompt/orphan jobs), `--check` to test |
 | Read a run's artifacts | `context/recon_proposals/`, `context/drafts/` |
 

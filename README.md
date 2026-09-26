@@ -131,7 +131,13 @@ pre-filled submit URL, and the operator copies → posts → marks it.
   `SUPABASE_SERVICE_ROLE_KEY` are set (required in production — the container filesystem is
   rebuilt on every deploy), otherwise `context/distribution_queue.json` locally.
 - **Formatter:** `site/distribution.mjs` — deterministic, no model calls, strips AI-tells, keeps
-  each bullet distinct from the lede, and validates length for both platforms.
+  each bullet distinct from the lede, and validates length for both platforms. Sentence splitting
+  guards dates and abbreviations (`Jan. 10, 2027` must not become "Jan." + "10, 2027"), and the
+  numbers-first variant never repeats the closing takeaway as a bullet — both defects shipped
+  visibly in cards once.
+- **Seeding is automatic in the publish pass** (`scripts/publish.py` → `scripts/seed_distribution.py`):
+  a published article shows up as ready-to-post cards without anyone clicking "+ Generate from
+  published". Nothing is ever posted by it; the cards are copy-paste tasks.
 
 API (all behind the dashboard's access layer): `GET/POST/PATCH/DELETE /api/distribution/tasks`,
 `POST /api/distribution/seed`.

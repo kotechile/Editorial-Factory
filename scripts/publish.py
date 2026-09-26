@@ -561,6 +561,42 @@ def sync_to_supabase(data: dict, live_urls: dict):
         return False
 
 
+def seed_distribution_prep():
+    """Prepare the dashboard's Reddit/LinkedIn to-do cards for the published articles.
+
+    Preparation, not distribution: it calls the dashboard's idempotent seed endpoint, which adds
+    cards only for articles that have none, never posts, and never resets a status or an edit.
+    Best-effort — a publish must not fail because the dashboard is unreachable.
+    """
+    try:
+        import importlib.util
+
+        path = os.path.join(REPO_ROOT, "scripts", "seed_distribution.py")
+        spec = importlib.util.spec_from_file_location("seed_distribution", path)
+        if spec is None or spec.loader is None:
+            print(f"! distribution prep skipped: cannot load {path}")
+            return False
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        module.load_env()
+        if not os.environ.get("PRESSFLOW_AUTH_SECRET", "").strip():
+            print("! distribution prep skipped: PRESSFLOW_AUTH_SECRET is not set")
+            return False
+        result = module.seed()
+        state, missing = module.coverage_report()
+        counts = state.get("counts", {}) or {}
+        print(f"✓ distribution prep: {result.get('created', result.get('added', '?'))} card(s) added "
+              f"| queue now {state.get('total', 0)} cards ({counts.get('ready', 0)} ready) "
+              f"— nothing posted")
+        if missing:
+            print(f"! {len(missing)} published article(s) still have no distribution card: "
+                  f"{', '.join(missing[:3])}")
+        return True
+    except Exception as exc:  # network, auth, parsing — never fail the publish
+        print(f"! distribution prep skipped: {exc}")
+        return False
+
+
 def auto_deploy_push(slug: str) -> bool:
     """Commit pending factory changes and push to origin/<current-branch> so the GitHub->Coolify
     build redeploys automatically. Best-effort: warns and skips on any git failure rather than
@@ -673,6 +709,7 @@ def main():
     parser.add_argument("--auto-post-linkedin", action="store_true", default=None, help="Override LINKEDIN_AUTO_POST to true")
     parser.add_argument("--no-auto-post-linkedin", action="store_true", default=None, help="Override LINKEDIN_AUTO_POST to false")
     parser.add_argument("--no-deploy", action="store_true", default=False, help="Skip the auto commit+push (deploy) after publishing")
+    parser.add_argument("--no-seed", action="store_true", default=False, help="Skip seeding the distribution to-do cards (preparation only; nothing is posted either way)")
     args = parser.parse_args()
 
     if not os.path.exists(args.draft_file):
@@ -840,6 +877,11 @@ def main():
             print(f"! sitemap_sync.py failed: {(sm.stderr or sm.stdout).strip()[:200]}", file=sys.stderr)
     except Exception as e:  # never fail the publish on a derived-surface refresh
         print(f"! sitemap_sync.py could not run: {e}", file=sys.stderr)
+
+    # 4c. Prepare the distribution to-do cards (Reddit + LinkedIn) in the same pass. Preparation
+    #     only — the cards are copy-paste tasks an operator posts by hand; nothing is posted here.
+    if not args.no_seed and not args.dry_run:
+        seed_distribution_prep()
 
     # 5. Auto-deploy: commit + push so the GitHub->Coolify build redeploys automatically.
     if not args.dry_run and parse_bool_env("AUTO_PUBLISH_DEPLOY", default=True) and not args.no_deploy:

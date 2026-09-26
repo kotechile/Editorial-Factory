@@ -131,6 +131,9 @@ fi
 if ! python3 "$ROOT/scripts/test_sync_crons.py" >/dev/null 2>&1; then
   echo "FAIL: cron fleet contract tests — detail:"; python3 "$ROOT/scripts/test_sync_crons.py" 2>&1 | tail -6; FAIL=1
 fi
+if ! python3 "$ROOT/scripts/test_distribution_prep.py" >/dev/null 2>&1; then
+  echo "FAIL: distribution prep tests — detail:"; python3 "$ROOT/scripts/test_distribution_prep.py" 2>&1 | tail -6; FAIL=1
+fi
 
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"

@@ -134,10 +134,31 @@ function buildLinkedInFromBlock(block) {
     .trim();
 }
 
+/**
+ * Abbreviations and dates that end in a period but do not end a sentence. Without this guard a
+ * naive `(?<=[.!?])\s+` split cuts "…truce to Jan. 10, 2027" into "…truce to Jan." + "10, 2027",
+ * which then drops the date from the bullet and leaves a fragment ("- 10 as a hard deadline").
+ */
+const SENTENCE_ABBREVIATION =
+  /(?:^|\s)(?:jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec|mon|tue|wed|thu|fri|sat|sun|u\.s|u\.k|u\.n|e\.u|inc|ltd|co|corp|plc|vs|etc|approx|est|no|fig|dept|gov|sen|rep|sec|dr|mr|mrs|ms|st|jr|sr|[a-z])\.$/i;
+
+/** Split prose into sentences without cutting inside dates, abbreviations or initials. */
+export function splitSentences(text) {
+  const out = [];
+  for (const raw of String(text || '').split(/(?<=[.!?])\s+/)) {
+    const chunk = raw.trim();
+    if (!chunk) continue;
+    const prev = out.length ? out[out.length - 1] : '';
+    const continues = SENTENCE_ABBREVIATION.test(prev) || /\d\.$/.test(prev) || /^[a-z]/.test(chunk);
+    if (prev && continues) out[out.length - 1] = `${prev} ${chunk}`;
+    else out.push(chunk);
+  }
+  return out;
+}
+
 export function extractKeySentences(text, maxPoints = 3) {
   const clean = cleanRawContent(text);
-  const sentences = clean
-    .split(/(?<=[.!?])\s+(?=[A-Z0-9"$])/)
+  const sentences = splitSentences(clean)
     .map((s) => s.trim())
     .filter((s) => s.length > 35 && s.length < 320);
   const scored = sentences
@@ -199,9 +220,12 @@ function ensureNoAiTells(text) {
 /** r/<sub> variant 1 — the numbers first. */
 export function buildRedditBreakdownVariant(article, readerUrl) {
   const leadHead = String(article.lead || '').slice(0, 60);
+  const takeawayText = String(article.takeaway || '').trim();
   const points = extractKeySentences([article.tactical, article.takeaway].join(' '), 5)
     // never repeat the lede as a bullet — it is already the opening paragraph
     .filter((p) => !leadHead || !p.startsWith(leadHead.slice(0, 40)))
+    // the takeaway is printed verbatim below, so its sentences must not also appear as bullets
+    .filter((p) => !takeawayText.includes(p.replace(/^[-*\s]+/, '').trim()))
     .slice(0, 4);
   const bullets = points.map((p) => `- ${p}`).join('\n');
   const body = [
