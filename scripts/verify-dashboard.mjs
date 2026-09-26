@@ -86,6 +86,31 @@ try {
   await page.waitForTimeout(2000);
   const afterReopen = await page.evaluate(async () => (await (await fetch('/api/distribution/tasks?status=deleted', { credentials: 'same-origin' })).json()).tasks.length);
   check(afterReopen === 0, 'reopen as ready persists', `deleted=${afterReopen}`);
+
+  // Reader-facing synthesis surface: the flag + anchors in the public manifest, the badge on the
+  // article page. A synthesis article that ships unmarked is exactly what verify.sh §8 prevents in
+  // the repo, so this asserts the flag survives the deploy that publishes it.
+  const manifest = await page.evaluate(async () => (await (await fetch('/api/articles.json')).json()));
+  const flagged = manifest.filter((a) => a.synthesis === true);
+  check(manifest.length > 0 && manifest.every((a) => typeof a.synthesis === 'boolean' && Array.isArray(a.sources)),
+    'articles.json reports synthesis + sources', `${manifest.length} article(s)`);
+  check(manifest.every((a) => a.sourceCount === a.sources.length && a.sourceCount > 0),
+    'every article reports its source count', `min=${Math.min(...manifest.map((a) => a.sourceCount))}`);
+  check(flagged.length > 0 && flagged.every((a) => a.sourceCount >= 2),
+    'the synthesis flag implies >= 2 anchors', `${flagged.length} flagged: ${flagged.map((a) => a.slug).join(', ')}`);
+
+  if (flagged.length) {
+    const reader = await page.context().newPage();
+    await reader.goto(`${BASE}/published/${flagged[0].file}`, { waitUntil: 'domcontentloaded' });
+    check(await reader.locator('p.synthesis .pill').count() === 1, 'reader page badges the synthesis',
+      await reader.locator('p.synthesis').first().textContent().catch(() => ''));
+    const bodyText = await reader.locator('body').innerText();
+    check(!/Gate report|synthesis: true|^---/.test(bodyText),
+      'reader page hides pipeline sections + frontmatter', flagged[0].file);
+    check((await reader.title()) === flagged[0].title, 'reader page title is the headline',
+      await reader.title());
+    await reader.close();
+  }
 } catch (err) {
   check(false, 'dashboard verification ran', err.message.split('\n')[0]);
 } finally {

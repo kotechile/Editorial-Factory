@@ -284,5 +284,117 @@ class Seeding(unittest.TestCase):
             self.assertTrue(any("unknown helper" in p for p in problems), problems)
 
 
+class SynthesisCarryThrough(unittest.TestCase):
+    """§8: a brief that says `Angle Type: Synthesis` must reach its artifact as `synthesis: true`.
+
+    Without this, a fused thesis ships readable as a single-signal story — the reader (and every
+    surface built on the flag) cannot tell the two apart. The cases below pin the scoping too:
+    the flag has to land on the *same* date+vertical, not merely somewhere in the tree.
+    """
+
+    ANCHORS = ("https://a.example/signal-a", "https://b.example/signal-b")
+
+    def _recon(self, tmp):
+        """A conformant brief: 2 anchors, its signals file, and its verified brief."""
+        recon = Path(tmp) / "recon"
+        recon.mkdir()
+        (recon / "2026-09-26_probe_vertical_signals.md").write_text(
+            "# Signals: probe_vertical — 2026-09-26\n\n"
+            "| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |\n"
+            "|---|--------|-----------|------|--------------|-------|-----------|\n"
+            f"| 1 | Leg A | {self.ANCHORS[0]} | 2026-09-23 | figure A | probe | 80 |\n"
+            f"| 2 | Leg B | {self.ANCHORS[1]} | 2026-09-21 | figure B | probe | 80 |\n",
+            encoding="utf-8")
+        brief = ("# Angle Brief: probe_vertical — 2026-09-26\n\n"
+                 "**Angle Type:** Synthesis (Cross-Topic Fusion)\n\n"
+                 f"**Signal A:** probe leg A {self.ANCHORS[0]}\n"
+                 f"**Signal B:** probe leg B {self.ANCHORS[1]}\n")
+        (recon / "2026-09-26_probe_vertical_angle_brief.md").write_text(brief, encoding="utf-8")
+        (recon / "2026-09-26_probe_vertical_verified_brief.md").write_text(brief, encoding="utf-8")
+        return recon
+
+    def _dirs(self, tmp):
+        dirs = {name: Path(tmp) / name for name in ("drafts", "published")}
+        for path in dirs.values():
+            path.mkdir()
+        return dirs
+
+    @staticmethod
+    def _artifact(path, date="2026-09-26", vertical="probe_vertical", flag="synthesis: true"):
+        path.write_text(
+            "---\n"
+            'title: "Probe headline"\n'
+            f"vertical: {vertical}\n"
+            f"date: {date}\n"
+            f"{flag}\n"
+            "sources:\n"
+            f"  - {SynthesisCarryThrough.ANCHORS[0]}\n"
+            f"  - {SynthesisCarryThrough.ANCHORS[1]}\n"
+            "---\n\n"
+            "<!-- lead -->\nProbe body [1][2].\n\n"
+            "## Sources\n"
+            f"[1] A — {SynthesisCarryThrough.ANCHORS[0]}\n"
+            f"[2] B — {SynthesisCarryThrough.ANCHORS[1]}\n",
+            encoding="utf-8")
+
+    def test_missing_flag_on_the_artifact_fails_the_gate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            recon = self._recon(tmp)
+            dirs = self._dirs(tmp)
+            problems = st.check_briefs(recon_dir=recon, drafts_dir=dirs["drafts"],
+                                       published_dir=dirs["published"])
+            self.assertEqual(len(problems), 1, problems)
+            self.assertIn("synthesis: true", problems[0])
+
+    def test_flagged_final_draft_satisfies_the_gate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            recon = self._recon(tmp)
+            dirs = self._dirs(tmp)
+            self._artifact(dirs["drafts"] / "2026-09-26_probe-topic_final.md")
+            self.assertEqual(st.check_briefs(recon_dir=recon, drafts_dir=dirs["drafts"],
+                                             published_dir=dirs["published"]), [])
+
+    def test_published_copy_satisfies_the_gate_after_drafts_are_cleaned(self):
+        """A run whose drafts were deleted post-publish must not fail the build."""
+        with tempfile.TemporaryDirectory() as tmp:
+            recon = self._recon(tmp)
+            dirs = self._dirs(tmp)
+            self._artifact(dirs["published"] / "2026-09-26_probe-topic.md")
+            self.assertEqual(st.check_briefs(recon_dir=recon, drafts_dir=dirs["drafts"],
+                                             published_dir=dirs["published"]), [])
+
+    def test_flag_on_a_different_vertical_does_not_satisfy_the_brief(self):
+        """Three verticals share a Monday slot: one run's flag must not excuse another's."""
+        with tempfile.TemporaryDirectory() as tmp:
+            recon = self._recon(tmp)
+            dirs = self._dirs(tmp)
+            self._artifact(dirs["drafts"] / "2026-09-26_other-topic_final.md", vertical="other_vertical")
+            problems = st.check_briefs(recon_dir=recon, drafts_dir=dirs["drafts"],
+                                       published_dir=dirs["published"])
+            self.assertEqual(len(problems), 1, problems)
+            self.assertIn("probe_vertical", problems[0])
+
+    def test_flag_on_a_different_date_does_not_satisfy_the_brief(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            recon = self._recon(tmp)
+            dirs = self._dirs(tmp)
+            self._artifact(dirs["drafts"] / "2026-09-19_probe-topic_final.md", date="2026-09-19")
+            problems = st.check_briefs(recon_dir=recon, drafts_dir=dirs["drafts"],
+                                       published_dir=dirs["published"])
+            self.assertEqual(len(problems), 1, problems)
+
+    def test_inline_array_sources_are_counted(self):
+        inline = ('---\ntitle: "Probe"\nvertical: probe_vertical\ndate: 2026-09-26\n'
+                  f"synthesis: true\nsources: [{self.ANCHORS[0]}, {self.ANCHORS[1]}]\n---\n\nbody\n")
+        self.assertEqual(st.frontmatter_sources(inline), list(self.ANCHORS))
+        self.assertEqual(st.frontmatter_sources("---\ntitle: x\n---\n\nno sources here\n"), [])
+
+    def test_brief_vertical_reads_the_filename(self):
+        self.assertEqual(st.brief_vertical("2026-09-26_supply_chain_angle_brief.md"),
+                         ("2026-09-26", "supply_chain"))
+        self.assertIsNone(st.brief_vertical("2026-09-26_supply_chain_signals.md"))
+        self.assertIsNone(st.brief_vertical("supply_chain_angle_brief.md"))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

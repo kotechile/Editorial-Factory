@@ -201,10 +201,76 @@ function mdToHtml(md) {
   return out.join('\n');
 }
 
-function layout(title, body) {
+function stripFrontmatter(markdown) {
+  return String(markdown || '').replace(/^---\s*[\r\n]+[\s\S]*?[\r\n]+---[ \t]*(?:\r?\n|$)/, '');
+}
+
+// The reader's copy of the article: no frontmatter, and none of the pipeline's own sections —
+// the `<!-- linkedin -->` draft post and the `## Gate report` that follow `## Sources` are
+// internal working material and were being published verbatim on the public page. The
+// section markers (`<!-- lead -->` etc.) are directives, not prose.
+function readerBody(markdown) {
+  return stripFrontmatter(markdown)
+    .split(/<!--\s*linkedin\s*-->/)[0]
+    .split(/^##\s+Gate report\s*$/m)[0]
+    .split(/\r?\n/)
+    .filter((line) => !/^\s*<!--[\s\S]*-->\s*$/.test(line))
+    .join('\n');
+}
+
+// `parseFrontmatter` only reads single-line `key: value` pairs, so the multi-line
+// `sources:` list a synthesis article writes (`sources:\n  - <url>`) is invisible to it,
+// and older articles carry their citations only in the body's `## Sources` section.
+// Every reader-facing surface needs the same answer, so both shapes are collected here:
+// deduped, in first-seen order, and only real http(s) URLs.
+function collectSources(markdown, fm = null) {
+  const text = String(markdown || '');
+  const urls = [];
+  const seen = new Set();
+  const add = (candidate) => {
+    const url = String(candidate).trim().replace(/[),.;\]]+$/, '');
+    if (!/^https?:\/\//.test(url) || seen.has(url)) return;
+    seen.add(url);
+    urls.push(url);
+  };
+
+  if (Array.isArray(fm?.sources)) fm.sources.forEach(add);
+  const front = (text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/) || [])[1] || '';
+  for (const m of front.matchAll(/^\s*-\s*(https?:\/\/\S+)\s*$/gm)) add(m[1]);
+  const inline = (front.match(/^sources:\s*\[(.*)\]\s*$/m) || [])[1] || '';
+  inline.split(',').forEach((part) => add(part.replace(/^["'\s]+|["'\s]+$/g, '')));
+
+  const sourceSection = text
+    .split(/^##\s+Sources\s*$/m)[1]
+    ?.split(/^##\s/m)[0]
+    ?.split(/<!--\s*linkedin\s*-->/)[0];
+  for (const m of String(sourceSection || '').matchAll(/https?:\/\/[^\s)\]>,;]+/g)) add(m[0]);
+
+  return urls;
+}
+
+// The article's own headline: frontmatter title before the H1 before the filename — the
+// previous `firstLine` shortcut titled every published page `---`, because published
+// markdown opens with its frontmatter delimiter.
+function articleTitle(markdown, fm, filename) {
+  return fm?.title || fm?.meta_title || (String(markdown).match(/^#\s+(.+)$/m) || [])[1] || filename;
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function layout(title, body, options = {}) {
+  // A synthesis article fuses two independent signals (skills/virality_judge.md §2.5). The badge
+  // states that on the reader's page, with the anchor count the reader can verify below.
+  const badge = options.synthesis
+    ? `<p class="synthesis"><span class="pill">Synthesis</span> This article fuses `
+      + `${options.sourceCount} independent sources — both legs are cited in Sources.</p>`
+    : '';
   return `<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${title}</title>
+<title>${escapeHtml(title)}</title>
 <style>
 :root{color-scheme:light dark;--bg:#0f172a;--card:#1e293b;--text:#f8fafc;--muted:#94a3b8;--border:#334155;--accent:#38bdf8}
 @media(prefers-color-scheme:light){:root{--bg:#f8fafc;--card:#ffffff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--accent:#0284c7}}
@@ -214,7 +280,9 @@ code{background:var(--border);padding:.15em .4em;border-radius:4px;font-size:0.9
 pre{background:var(--card);border:1px solid var(--border);padding:1.2rem;border-radius:8px;overflow:auto}
 .back{margin-bottom:2rem;font-size:14px;font-weight:600}
 li{margin:.35em 0}
-</style></head><body><p class="back"><a href="/">&larr; Return to PressFlow Dashboard</a></p>${body}</body></html>`;
+.synthesis{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:.7rem .9rem;font-size:14px;color:var(--muted)}
+.pill{background:var(--accent);color:#0f172a;border-radius:999px;padding:.1em .6em;font-size:12px;font-weight:700;letter-spacing:.02em;margin-right:.4rem;text-transform:uppercase}
+</style></head><body><p class="back"><a href="/">&larr; Return to PressFlow Dashboard</a></p>${badge}${body}</body></html>`;
 }
 
 function formatHumanCadence(cadenceStr) {
@@ -1079,7 +1147,7 @@ const server = createServer(async (req, res) => {
         // Titles live in the frontmatter, not an H1: falling straight through to the
         // filename made this public manifest advertise slugs ("2026-09-23_<slug>.md")
         // as headlines for every article the publisher writes.
-        const title = fm.title || fm.meta_title || (text.match(/^#\s+(.+)$/m) || [])[1] || f;
+        const title = articleTitle(text, fm, f);
         // Count reader-facing prose only — frontmatter, "## Sources" and the
         // `<!-- linkedin -->` variant are not part of the article body.
         const body = text
@@ -1088,7 +1156,22 @@ const server = createServer(async (req, res) => {
           .split(/<!--\s*linkedin\s*-->/)[0];
         const wordCount = body.split(/\s+/).filter(Boolean).length;
         const readTime = Math.max(1, Math.round(wordCount / 220));
-        articles.push({ slug: f.replace(/\.md$/, ''), file: f, title, wordCount, readTime, vertical: fm.vertical || '' });
+        const sources = collectSources(text, fm);
+        // `synthesis: true` is the flag the drafting step writes for a cross-signal article
+        // (skills/story_draft.md §3) and verify.sh §8 gates; `sources` is the anchor list the
+        // flag's contract requires (>= 2). Every article carries citations, so without the flag
+        // source count alone cannot tell a fused thesis from a single-signal story.
+        articles.push({
+          slug: f.replace(/\.md$/, ''),
+          file: f,
+          title,
+          wordCount,
+          readTime,
+          vertical: fm.vertical || '',
+          synthesis: fm.synthesis === true,
+          sources,
+          sourceCount: sources.length,
+        });
       }
       return sendJson(res, 200, articles);
     }
@@ -1739,9 +1822,13 @@ const server = createServer(async (req, res) => {
         return sendJson(res, 404, { error: 'Article not found' });
       }
       const text = await readFile(articlePath, 'utf8');
+      const fm = parseFrontmatter(text);
+      const sources = collectSources(text, fm);
       res.writeHead(200, { 'Content-Type': MIME['.html'] });
-      const firstLine = text.split('\n')[0].replace(/^#\s+/, '');
-      return res.end(layout(firstLine, mdToHtml(text)));
+      return res.end(layout(articleTitle(text, fm, safeFile), mdToHtml(readerBody(text)), {
+        synthesis: fm.synthesis === true,
+        sourceCount: sources.length,
+      }));
     }
 
     // ----------------------------------------------------

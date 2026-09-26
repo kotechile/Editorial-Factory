@@ -46,6 +46,12 @@ when it scores ≥ 8.0 **and** beats the best single-signal candidate by ≥ 0.3
 tie, or on novelty alone, is a contrived pairing displacing a stronger story — take the single-signal
 winner instead. Synthesis buys a proprietary moat only when the intersection actually beats the parts.
 
+**Carry-through (gated):** writing `**Angle Type:** Synthesis` here obliges the run to carry the flag
+onto the artifact — the draft (or published copy) must declare `synthesis: true` plus both anchors under
+`sources:` (see `skills/story_draft.md` §3). `scripts/verify.sh` §8 fails the build when a Synthesis
+brief has no such artifact, matched on the artifact's date + `vertical`; the flag is what tells readers
+(and `/api/articles.json`) that the thesis fuses two signals rather than reporting one.
+
 ## 3. The hard gate
 - **Score ≥ 8 → proceed.** Select the single winner (a synthesis only when it clears ≥ 8.0 **and** beats
   the best single-signal candidate by ≥ 0.3 — see the precedence rule in §2.5).

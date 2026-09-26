@@ -24,7 +24,19 @@ The **TOC is render-time only** — the site derives it from the section heading
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
 - **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins (e.g. `- **40% routed:** ...`) that deliver the load-bearing quantitative facts before the tactical moves.
-- **Synthesis Frontmatter:** For multi-topic synthesis articles, include `synthesis: true` and list the primary source URLs in `sources: [...]`.
+- **Synthesis Frontmatter (gated):** when the angle brief says `Angle Type: Synthesis`
+  (`skills/virality_judge.md` §2.5), the draft **must** carry both keys or `verify.sh` §8 fails the
+  build:
+  ```yaml
+  synthesis: true
+  sources:
+    - <Signal A's primary anchor URL>
+    - <Signal B's primary anchor URL>
+  ```
+  Inline form (`sources: [<url>, <url>]`) is accepted, and the anchors must be traceable to the
+  matching `_signals.md`. This flag is what marks the article as a fusion on the reader surfaces
+  (`/api/articles.json`, the article page badge) — an unflagged synthesis publishes as a
+  single-signal story.
 - **At a Glance (TL;DR) Schema:** The `<!-- tldr -->` section must be a complete executive briefing that explains what the article is about in ~30 seconds using this exact 4-part plain-English structure:
   1. `- **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in clear, contextual terms>`
   2. `- **Why It Matters:** <1-2 sentences stating the systemic, financial, or architectural stakes for the reader>`
@@ -43,6 +55,11 @@ persona: <id from context/personas.json>
 one_big_thing: "<single most important takeaway or decision>"
 date: YYYY-MM-DD
 slug: <slug>
+# Synthesis articles only (Angle Type: Synthesis — see §3, gated by verify.sh §8):
+# synthesis: true
+# sources:
+#   - <Signal A's primary anchor URL>
+#   - <Signal B's primary anchor URL>
 # Optional external links:
 # article_url: https://pressflow.io/articles/... (or external illustrated post)
 # promo_url: https://factory.example.com/tools/... (e.g. software factory tool)

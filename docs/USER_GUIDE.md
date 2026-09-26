@@ -165,6 +165,21 @@ Then either:
 | `published/` | published articles (markdown) — served by the site; written in the run, not gated |
 | `context/published_log.md` | the running log of everything published |
 
+**Which articles fuse two signals (synthesis):** a run can either report one signal or collide two
+into a thesis neither states alone (`skills/virality_judge.md` §2.5). The collided ones are marked
+end-to-end, so you never have to guess:
+
+- the angle brief says `**Angle Type:** Synthesis` with **Signal A / Signal B** anchors, and the
+  signals file carries the seeded `## Candidate Synthesis Pairs` table (candidate pairs only — the
+  Judge may fuse a pair the token layer missed);
+- the draft/published frontmatter carries `synthesis: true` plus the `sources:` anchors, and
+  `scripts/verify.sh` §8 fails the build if a Synthesis brief never reaches its artifact — so the
+  marker cannot silently go missing;
+- on the site, `https://pressflow.aichieve.net/api/articles.json` reports `synthesis`, `sources` and
+  `sourceCount` per article, and the article page shows a **Synthesis** badge naming the anchor count.
+  Every article cites multiple sources, so read the badge/flag — not the source count — as the
+  fusion marker.
+
 ### 4.4 Publishing to LinkedIn / a website
 
 Approved articles land in `published/` automatically and are renderable by the bundled static

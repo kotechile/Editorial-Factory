@@ -28,6 +28,13 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
    - Run this persistence pass **as part of the pipeline run**, not after an approval: the reader
      site + Supabase are not gated. `scripts/publish.py` refreshes `context/sitemap.json` for you;
      the run-log flip is the one step it cannot infer, so do it in the same pass.
+   - The reader surfaces derive the synthesis marker from the artifact frontmatter:
+     `/api/articles.json` and the article page report `synthesis` + the `sources` anchors, and the
+     page badges a synthesis article as such. So an article whose brief said
+     `Angle Type: Synthesis` **must** carry `synthesis: true` and its >= 2 anchors under
+     `sources:` in `published/…md` — without the flag it publishes as an unmarked single-signal
+     story. `verify.sh` §8 fails the build when the flag is missing
+     (`python3 scripts/synthesize_topics.py --check-briefs`).
 
 ## 3. Distribution (prep automatic, posting manual)
 - **Preparation is automatic.** The persistence pass ends by seeding the dashboard's Reddit/LinkedIn

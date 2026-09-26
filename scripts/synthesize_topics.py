@@ -159,6 +159,46 @@ STOPWORDS = {
 # A URL only counts as a citation when a host follows immediately — "https://`" in prose is not one.
 URL_RE = r"https://[A-Za-z0-9][^\s)>\]]*"
 
+# The synthesis flag contract (verify.sh §8): a brief that declares `Angle Type: Synthesis` must be
+# carried through to the draft/published artifact it produced as `synthesis: true`, matched on the
+# artifact's date prefix + `vertical:` field, or the build fails. Same-day verticals therefore
+# cannot borrow each other's flag.
+ANGLE_BRIEF_SUFFIX = "_angle_brief.md"
+DATED_ARTIFACT_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_")
+SYNTHESIS_FLAG_RE = re.compile(r"^synthesis:\s*true\s*$", re.MULTILINE)
+VERTICAL_FIELD_RE = re.compile(r"^vertical:\s*(\S+)\s*$", re.MULTILINE)
+FRONTMATTER_RE = re.compile(r"\A---\s*\r?\n(.*?)\r?\n---\s*(?:\r?\n|\Z)", re.DOTALL)
+INLINE_SOURCES_RE = re.compile(r"^sources:\s*\[(.*)\]\s*$", re.MULTILINE)
+SOURCES_ITEM_RE = re.compile(r"^\s+-\s*(https://\S+)\s*$", re.MULTILINE)
+
+
+def frontmatter_sources(text):
+    """URLs declared under the frontmatter `sources:` key — block-list or inline-array form.
+
+    Both shapes are in the wild (`sources:\\n  - <url>` from the drafting step, `sources: [<url>, …]`
+    as documented in skills/story_draft.md §3), and this is the list the reader-facing surfaces
+    publish as the article's checkable anchors.
+    """
+    front = FRONTMATTER_RE.match(text or "")
+    if not front:
+        return []
+    body = front.group(1)
+    raw = []
+    inline = INLINE_SOURCES_RE.search(body)
+    if inline:
+        raw += [u.strip().strip("\"'") for u in inline.group(1).split(",")]
+    block = re.search(r"^sources:\s*$(.*?)(?=^\S|\Z)", body, re.MULTILINE | re.DOTALL)
+    if block:
+        raw += [m.group(1) for m in SOURCES_ITEM_RE.finditer(block.group(1))]
+    urls, seen = [], set()
+    for url in raw:
+        url = url.rstrip(",.;")
+        if not url.startswith("https://") or url in seen:
+            continue
+        seen.add(url)
+        urls.append(url)
+    return urls
+
 
 # --------------------------------------------------------------------------- inputs
 
@@ -601,10 +641,61 @@ def _recon_dir():
     return REPO_ROOT / "context" / "recon_proposals"
 
 
-def check_briefs():
-    """verify.sh §8 — synthesis artifacts must carry two real anchors, and no invented sources."""
+def _drafts_dir():
+    return REPO_ROOT / "context" / "drafts"
+
+
+def _published_dir():
+    return REPO_ROOT / "published"
+
+
+def brief_vertical(name):
+    """`2026-09-26_supply_chain_angle_brief.md` -> `('2026-09-26', 'supply_chain')`.
+
+    None when the name is not a dated angle brief. The vertical is read from the filename because
+    that is the only place the brief names it without parsing prose.
+    """
+    if not name.endswith(ANGLE_BRIEF_SUFFIX):
+        return None
+    match = DATED_ARTIFACT_RE.match(name)
+    if not match:
+        return None
+    return match.group(1), name[match.end():-len(ANGLE_BRIEF_SUFFIX)]
+
+
+def declared_syntheses(directories):
+    """`{(date, vertical)}` for every draft/published article declaring `synthesis: true`.
+
+    The flag is the only machine-readable statement that an article's thesis is the *fusion* of two
+    independent signals rather than a single-signal story with corroborating sources; §8 uses this
+    set to prove a Synthesis brief actually reached the artifact it was written for. Published
+    copies count as well, so a run whose drafts were cleaned up after publishing still passes.
+    """
+    declared = set()
+    for directory in directories:
+        for path in sorted(Path(directory).glob("*.md")):
+            text = path.read_text(encoding="utf-8", errors="replace")
+            if not SYNTHESIS_FLAG_RE.search(text):
+                continue
+            match = DATED_ARTIFACT_RE.match(path.name)
+            if not match:
+                continue
+            vertical = VERTICAL_FIELD_RE.search(text)
+            declared.add((match.group(1), vertical.group(1).strip("\"'") if vertical else ""))
+    return declared
+
+
+def check_briefs(recon_dir=None, drafts_dir=None, published_dir=None):
+    """verify.sh §8 — synthesis artifacts must carry two real anchors, and no invented sources.
+
+    A brief that declares `Angle Type: Synthesis` must also be *carried through*: the matching
+    draft or published article has to declare `synthesis: true` (matched on date + vertical), so a
+    fusion thesis can never ship indistinguishable from a single-signal story.
+    """
     problems = []
-    recon = _recon_dir()
+    recon = Path(recon_dir) if recon_dir else _recon_dir()
+    drafts_dir = Path(drafts_dir) if drafts_dir else _drafts_dir()
+    declared = declared_syntheses([drafts_dir, Path(published_dir) if published_dir else _published_dir()])
     signals_by_prefix = {p.name[: -len("_signals.md")]: p for p in recon.glob("*_signals.md")}
     committed_sources = "\n".join(p.read_text(encoding="utf-8", errors="replace")
                                   for p in signals_by_prefix.values())
@@ -631,15 +722,26 @@ def check_briefs():
                 for url in urls:
                     if url.rstrip("/") not in vtext.replace(")", ""):
                         problems.append(f"{path.name}: anchor {url} absent from {verified.name}")
+            # Carry-through: the fusion must be visible on the artifact, not only in the brief.
+            key = brief_vertical(path.name)
+            if key and key not in declared:
+                problems.append(
+                    f"{path.name}: synthesis brief has no artifact declaring `synthesis: true` for "
+                    f"{key[0]}/{key[1]} — add `synthesis: true` plus the two anchors to "
+                    f"`sources:` in the frontmatter of the matching "
+                    f"context/drafts/{key[0]}_<slug>_final.md (or the published copy), so a fused "
+                    f"thesis is not readable as a single-signal story"
+                )
 
-    for draft in sorted((REPO_ROOT / "context" / "drafts").glob("*.md")):
+    for draft in sorted(drafts_dir.glob("*.md")):
         text = draft.read_text(encoding="utf-8", errors="replace")
-        if not re.search(r"^synthesis:\s*true", text, re.MULTILINE):
+        if not SYNTHESIS_FLAG_RE.search(text):
             continue
-        urls = sorted(set(re.findall(URL_RE, text)))
-        if len(urls) < 2:
-            problems.append(f"drafts/{draft.name}: synthesis: true needs >= 2 https anchors in sources:")
-        for url in urls:
+        anchors = frontmatter_sources(text)
+        if len(anchors) < 2:
+            problems.append(f"drafts/{draft.name}: synthesis: true needs >= 2 https anchors in the "
+                            f"frontmatter `sources:` list, found {len(anchors)}")
+        for url in sorted(set(re.findall(URL_RE, text))):
             if url.rstrip("/") not in committed_sources.replace(")", ""):
                 problems.append(f"drafts/{draft.name}: anchor not traceable to any committed signals file: {url}")
     return problems
@@ -778,7 +880,8 @@ def main(argv=None):
     parser.add_argument("--check-fixtures", action="store_true",
                         help="Fail if any fixture cites a source absent from the committed signals files")
     parser.add_argument("--check-briefs", action="store_true",
-                        help="Fail if synthesis briefs/drafts are under-anchored or cite invented sources")
+                        help="Fail if synthesis briefs/drafts are under-anchored, cite invented sources, "
+                             "or a Synthesis brief was not carried through as `synthesis: true`")
     args = parser.parse_args(argv)
 
     if args.demo:

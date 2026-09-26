@@ -116,6 +116,9 @@ fi
 #    not invent citations, and any committed synthesis artifact carries two verified anchors. The
 #    regression suite pins the defects it was rewritten to remove (constant gate-clearing scores,
 #    cross-domain substring collisions like carrier/port, canned theses, fabricated demo sources).
+#    A brief that declares `Angle Type: Synthesis` must also reach its draft/published artifact as
+#    `synthesis: true` + >= 2 anchors in the frontmatter `sources:` list, so a fused thesis can never
+#    ship indistinguishable from a single-signal story.
 if ! python3 "$ROOT/scripts/test_synthesize_topics.py" >/dev/null 2>&1; then
   echo "FAIL: synthesis helper regression suite — detail:"; python3 "$ROOT/scripts/test_synthesize_topics.py" 2>&1 | tail -6; FAIL=1
 fi
