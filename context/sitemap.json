@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T06:39:33Z",
+  "updated_at": "2026-09-30T23:55:58Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -21,79 +21,6 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-09-21"
-    },
-    {
-      "slug": "2026-09-23_ai-price-volatility-build-vs-buy-maintenance-tax",
-      "title": "AI Price Volatility: The $250k Upkeep Tax",
-      "url": "https://pressflow.aichieve.net/published/2026-09-23_ai-price-volatility-build-vs-buy-maintenance-tax.md",
-      "vertical": "enterprise_build_vs_buy",
-      "primary_keyword": "",
-      "secondary_keywords": [],
-      "h2_topics": [
-        "Decide on the long tail",
-        "Do not buy everything"
-      ],
-      "target_persona": "eng_leader",
-      "date": "2026-09-23"
-    },
-    {
-      "slug": "2026-09-23_nvidia-hugging-face-moat",
-      "title": "Nvidia Buys the Open-Source Moat",
-      "url": "https://pressflow.aichieve.net/published/2026-09-23_nvidia-hugging-face-moat.md",
-      "vertical": "gpu_hardware",
-      "primary_keyword": "",
-      "secondary_keywords": [],
-      "h2_topics": [
-        "The Moat Moves to Software",
-        "How to Protect Your Setup",
-        "The Catch Behind the Deal"
-      ],
-      "target_persona": "infra_engineer",
-      "date": "2026-09-23"
-    },
-    {
-      "slug": "2026-09-23_rollback-breaks-execution-continuity",
-      "title": "Why Agent Rollbacks Fail",
-      "url": "https://pressflow.aichieve.net/published/2026-09-23_rollback-breaks-execution-continuity.md",
-      "vertical": "agentic_resilience_failure",
-      "primary_keyword": "",
-      "secondary_keywords": [],
-      "h2_topics": [
-        "The Safe Recovery Myth",
-        "How to Secure Agent Rollbacks",
-        "The Cost of Real Safety"
-      ],
-      "target_persona": "infra_engineer",
-      "date": "2026-09-23"
-    },
-    {
-      "slug": "2026-09-23_temporal-durable-execution-12-55b",
-      "title": "Durable Execution: The $12.55B Bet on Enterprise Agents",
-      "url": "https://pressflow.aichieve.net/published/2026-09-23_temporal-durable-execution-12-55b.md",
-      "vertical": "multi_agent_enterprise_fabric",
-      "primary_keyword": "",
-      "secondary_keywords": [],
-      "h2_topics": [
-        "Fix the agent plumbing",
-        "No automatic safety net"
-      ],
-      "target_persona": "ai_architect",
-      "date": "2026-09-23"
-    },
-    {
-      "slug": "2026-09-23_unfi-warehouse-automation-capex",
-      "title": "UNFI Bets $300M on Warehouse Robots After Fixing Basic Workflows",
-      "url": "https://pressflow.aichieve.net/published/2026-09-23_unfi-warehouse-automation-capex.md",
-      "vertical": "warehouse_automation_robotics_capex",
-      "primary_keyword": "",
-      "secondary_keywords": [],
-      "h2_topics": [
-        "The Cost of Money",
-        "Sequence Your Tech Spend",
-        "Cost Cuts, Not New Growth"
-      ],
-      "target_persona": "ops_leader",
-      "date": "2026-09-23"
     },
     {
       "slug": "2026-09-24_ai-spend-27t-cost-visibility-mandate",
