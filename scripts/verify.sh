@@ -147,6 +147,15 @@ if ! python3 "$ROOT/scripts/test_wp_draft.py" >/dev/null 2>&1; then
   echo "FAIL: wp_draft mapping tests — detail:"; python3 "$ROOT/scripts/test_wp_draft.py" 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.6 Pre-flight data gate (hard): a citation hub may only be drafted on metrics whose headline
+#     figure was actually retrieved from the cited primary source. Hermetic run (--no-network):
+#     the live audit of the shipped dossiers is a separate, deliberate step —
+#       python3 scripts/citation_hub_dossier.py --vertical <vertical_id>
+if ! python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network >/dev/null 2>&1; then
+  echo "FAIL: citation-hub data gate tests — detail:"
+  python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network 2>&1 | tail -8; FAIL=1
+fi
+
 # 9. Voice gate (hard): the article body AND the social copy must read as one person commenting on the
 #    news — not the owner of the truth and not the reader's advisor (skills/claude_humanizer.md
 #    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated

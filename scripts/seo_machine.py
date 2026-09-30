@@ -332,11 +332,22 @@ def build_citation_hub_draft(keyword_data, cannibalization, internal_links, grow
     kw_prose = naturalize_kw(kw)
     slug = f"{today_str}_{slugify(kw)}"
 
-    # 1. Pre-Flight Data Harvester & Gate
-    dossier = custom_dossier or chd.get_curated_dossier(vertical_id, kw)
-    is_valid, errors = chd.verify_dossier(dossier, min_points=4)
+    # 1. Pre-Flight Data Harvester & Gate. Every metric is retrieved from its own primary source
+    #    and its headline figure must actually appear in what was retrieved; date and sample size
+    #    must be present and the source reachable. The hub is not drafted until the whole dossier
+    #    clears the gate — an unverifiable benchmark is removed, never softened.
+    dossier = custom_dossier or chd.get_claimed_dossier(vertical_id, kw)
+    is_valid, errors, report = chd.verify_dossier(dossier, min_points=6)
     if not is_valid:
-        raise ValueError(f"Pre-flight Data Verification Failed for Citation Hub: {errors}")
+        print("  ✗ Pre-Flight Data Gate FAILED — no hub drafted. Per-point findings:")
+        for point in report["points"]:
+            print(f"      [{point['status']}] {point['metric_name']}: {point.get('reason', '')}")
+            if point.get("evidence"):
+                print(f"          evidence: …{point['evidence'][:200]}…")
+        raise chd.UnverifiedDossierError(
+            f"Pre-flight data verification failed for '{kw}' — {len(errors)} problem(s). "
+            f"A citation hub is only draftable on verified primary data; nothing was generated.")
+    print(f"  ✓ Pre-Flight Data Gate passed: {report['counts']}")
 
     title = f"{kw_title}: What the Field Benchmarks Actually Show"
     meta_title = f"{kw_title} (Audited Benchmarks & Data)"
