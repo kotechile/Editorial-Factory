@@ -13,6 +13,8 @@ Handles:
    - If LINKEDIN_AUTO_POST=true (and LINKEDIN_ACCESS_TOKEN is set): posts to LinkedIn API and records live URL.
    - If LINKEDIN_AUTO_POST=false (default): produces a formatted copy-paste snippet with all embedded links ready.
 7. Optional Ghost / PressFlow publishing when configured.
+8. Automatic WordPress draft creation in the destination CMS for the article's vertical
+   (scripts/wp_draft.py). Drafts only — the draft -> publish flip stays a human action.
 
 Usage:
   python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md --article-url "https://site.com/post"
@@ -597,6 +599,40 @@ def seed_distribution_prep():
         return False
 
 
+def push_wp_draft(slug: str) -> bool:
+    """Create the article's draft in the CMS its vertical maps to (public.vertical_sites).
+
+    Runs in the persistence pass, not behind the approval gate: a draft is invisible to readers
+    (the Astro frontends render published posts only) and the gate stays on the CMS's
+    draft -> publish flip, which is a human action. Idempotent by slug, so re-publishing an
+    article updates its existing draft instead of creating a second one.
+
+    Best-effort by design, like seed_distribution_prep(): a CMS that is down or an
+    unconfigured credential must not roll back a publish that already persisted the article to
+    published/, the log and Supabase. A failed push leaves the row without metadata.wordpress,
+    which is exactly what `scripts/wp_draft.py --all` selects for on the next sweep.
+    """
+    try:
+        import importlib.util
+
+        path = os.path.join(REPO_ROOT, "scripts", "wp_draft.py")
+        spec = importlib.util.spec_from_file_location("wp_draft", path)
+        if spec is None or spec.loader is None:
+            print(f"! WordPress draft skipped: cannot load {path}")
+            return False
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = module.push_by_slug(slug)
+        print(f"✓ WordPress draft {result['status']}: post {result['post_id']} on {result['site']} "
+              f"— {result['edit_url']}")
+        print("  (draft only — publishing it stays your call in the CMS)")
+        return True
+    except Exception as exc:  # network, credentials, routing, CMS — never fail the publish
+        print(f"! WordPress draft NOT created: {exc}", file=sys.stderr)
+        print("!   retry later with: python3 scripts/wp_draft.py --all", file=sys.stderr)
+        return False
+
+
 def auto_deploy_push(slug: str) -> bool:
     """Commit pending factory changes and push to origin/<current-branch> so the GitHub->Coolify
     build redeploys automatically. Best-effort: warns and skips on any git failure rather than
@@ -864,6 +900,15 @@ def main():
 
     # 4. Upsert to Supabase
     sync_to_supabase(data, live_urls)
+
+    # 4a. Create the article's draft in the destination CMS (scripts/wp_draft.py) — in this same
+    #     pass, so no manual step is needed. Persistence, not distribution: the draft is invisible
+    #     to readers and the approval gate stays on the CMS's draft -> publish flip. Best-effort;
+    #     a failure is surfaced here and re-tried by the scheduled `wp_draft.py --all` sweep.
+    if not args.dry_run:
+        push_wp_draft(slug_val)
+    else:
+        print("  [WordPress draft] skipped (dry-run).")
 
     # 4b. Refresh the derived surfaces in the same pass. context/sitemap.json is derived from
     #     published/*.md (it feeds the SEO tab + Growth OS loops) and verify.sh §7.5 fails closed on

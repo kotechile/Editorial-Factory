@@ -149,8 +149,11 @@ class Supabase:
         rows = rows or []
         if un_pushed_only:
             rows = [r for r in rows if not ((r.get("metadata") or {}).get(WORDPRESS) or {}).get("post_id")]
-        if limit:
-            rows = rows[:limit]
+        if limit is not None:
+            # `limit is not None`, not truthiness: limit=0 means "none" (a deliberate no-op probe),
+            # and treating it as falsy returned EVERY row instead — which turned a no-op test run
+            # into a full backfill. None means unlimited.
+            rows = rows[:max(0, limit)]
         return rows
 
     def site_for(self, vertical: str) -> dict:
@@ -548,6 +551,17 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
             "edit_url": record["edit_url"]}
 
 
+def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
+                 wp_factory=None, db=None) -> dict:
+    """Push one article by its Supabase slug. The single entry point used by both this CLI and
+    scripts/publish.py, so the in-run hook and a manual re-run share one code path."""
+    db = db or Supabase(*supabase_config())
+    rows = db.articles(slug=slug)
+    if not rows:
+        raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
+    return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name, wp_factory=wp_factory)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Push generated articles to their vertical's WordPress CMS as drafts")
     parser.add_argument("--slug", help="Article slug (metadata->>slug)")
@@ -562,9 +576,19 @@ def main() -> int:
         parser.error("pass --slug <slug> or --all")
 
     db = Supabase(*supabase_config())
-    rows = db.articles(slug=args.slug, un_pushed_only=args.all, limit=None if args.slug else args.limit)
+
+    if args.slug:
+        try:
+            push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name, db=db)
+        except Exception as exc:                       # rule 6: surface it, never a silent skip
+            print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
+            return 1
+        print("\npushed: 1/1 | drafts only — publishing stays a human step in the CMS")
+        return 0
+
+    rows = db.articles(un_pushed_only=True, limit=args.limit)
     if not rows:
-        print("Nothing to push (no matching row, or every row already has a draft in the CMS).")
+        print("Nothing to push (every row already has a draft in its CMS).")
         return 0
 
     failures = 0

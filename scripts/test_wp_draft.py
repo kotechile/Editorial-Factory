@@ -187,6 +187,12 @@ class FakeDB:
         self.site = site
         self.recorded: list[dict] = []
 
+    def articles(self, slug=None, un_pushed_only=False, limit=None):
+        """push_by_slug() reads the row through the db, exactly as the CLI and publish.py do."""
+        if slug and slug != ROW["metadata"]["slug"]:
+            return []
+        return [ROW]
+
     def site_for(self, vertical):
         if self.site is None:
             raise RuntimeError(f"no destination in public.vertical_sites for vertical '{vertical}'")
@@ -258,6 +264,18 @@ raises("unknown vertical refuses to push", lambda: wd.push_one(ROW, db_no_route,
 raises("inactive vertical refuses to push",
        lambda: wd.push_one(ROW, FakeDB(site={**SITE, "active": False}), dry_run=True), "active=false")
 
+print("\nrow selection — batch limit semantics")
+fdb = wd.Supabase("http://example.invalid", "key")
+fdb._call = lambda method, path, body=None, extra_headers=None: (
+    200, [{"id": str(i), "metadata": {}} for i in range(3)])
+check("limit=0 selects nothing (a no-op probe must not become a backfill)", fdb.articles(limit=0) == [])
+check("limit=None means unlimited", len(fdb.articles(limit=None)) == 3)
+check("limit=2 caps the batch", len(fdb.articles(limit=2)) == 2)
+fdb._call = lambda method, path, body=None, extra_headers=None: (
+    200, [{"id": "1", "metadata": {}}, {"id": "2", "metadata": {"wordpress": {"post_id": 9}}}])
+check("un_pushed_only skips rows that already have a draft",
+      [r["id"] for r in fdb.articles(un_pushed_only=True, limit=None)] == ["1"])
+
 print("\ncredentials")
 import os  # noqa: E402
 saved = {k: os.environ.pop(k, None) for k in ("WP_GINILOH_USER", "WP_GINILOH_APP_PASSWORD", "WP_USER", "WP_APP_PASSWORD")}
@@ -313,6 +331,50 @@ try:
     check("payload status is hard-coded to draft", payload["status"] == "draft")
 finally:
     server.shutdown()
+
+# ─────────────────────────────────────────────────────────────────────────────
+# the in-run hook: publish.py creates the draft in the same pass
+# ─────────────────────────────────────────────────────────────────────────────
+
+print("\nin-run hook (publish.py)")
+import importlib.util  # noqa: E402
+
+pub_src = (pathlib.Path(wd.__file__).parent / "publish.py").read_text()
+check("publish.py calls the shared entry point", "push_wp_draft(slug_val)" in pub_src)
+check("publish.py skips it on --dry-run", "if not args.dry_run:\n        push_wp_draft(slug_val)" in pub_src)
+check("publish.py retries via the sweep on failure", "wp_draft.py --all" in pub_src)
+check("publish.py explains the draft is human-published", "stays your call in the CMS" in pub_src)
+
+spec = importlib.util.spec_from_file_location("publish_mod", pathlib.Path(wd.__file__).parent / "publish.py")
+publish_mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(publish_mod)
+
+print("  (a CMS failure must not abort a publish that already persisted the article)")
+import io, contextlib  # noqa: E402
+stderr_buf = io.StringIO()
+try:
+    with contextlib.redirect_stderr(stderr_buf):
+        ok = publish_mod.push_wp_draft("definitely-not-a-real-slug-xyz")
+    raised_none = True
+except BaseException as exc:                      # noqa: BLE001
+    raised_none, ok = False, f"raised {exc!r}"
+check("push_wp_draft never raises", raised_none, str(ok))
+check("push_wp_draft reports the failure instead of swallowing it",
+      "WordPress draft NOT created" in stderr_buf.getvalue(), stderr_buf.getvalue()[:120])
+check("...and returns False so the caller can log it", ok is False, repr(ok))
+
+print("  (the hook pushes through the same path the CLI uses)")
+server2, base2 = start_stub()
+try:
+    stub_db = FakeDB()
+    result = wd.push_by_slug(ROW["metadata"]["slug"], db=stub_db,
+                             wp_factory=lambda b, u, p: wd.WordPress(base2, "editor", "secret"))
+    check("push_by_slug creates the draft", StubWP.posts and list(StubWP.posts.values())[-1]["status"] == "draft")
+    check("push_by_slug returns site + post id + edit url",
+          result["site"] == "giniloh.com" and result["post_id"] and "action=edit" in result["edit_url"])
+    check("push_by_slug writes the row back once", len(stub_db.recorded) == 1)
+finally:
+    server2.shutdown()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # real data (read-only; skipped when Supabase creds are absent)
