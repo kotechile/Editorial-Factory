@@ -139,6 +139,14 @@ if ! python3 "$ROOT/scripts/test_distribution_prep.py" >/dev/null 2>&1; then
   echo "FAIL: distribution prep tests — detail:"; python3 "$ROOT/scripts/test_distribution_prep.py" 2>&1 | tail -6; FAIL=1
 fi
 
+# 8.5 WordPress draft-push mapping (hard): the vertical -> CMS routing and the field contract that
+#     stops a raw vertical id reaching a live headline (scripts/wp_draft.py). Runs a stub WordPress
+#     REST API on localhost, so it needs no credentials and writes nothing; the read-only Supabase
+#     section skips itself when Supabase is unreachable, so a network hiccup cannot red the gate.
+if ! python3 "$ROOT/scripts/test_wp_draft.py" >/dev/null 2>&1; then
+  echo "FAIL: wp_draft mapping tests — detail:"; python3 "$ROOT/scripts/test_wp_draft.py" 2>&1 | tail -8; FAIL=1
+fi
+
 # 9. Voice gate (hard): the article body AND the social copy must read as one person commenting on the
 #    news — not the owner of the truth and not the reader's advisor (skills/claude_humanizer.md
 #    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated
