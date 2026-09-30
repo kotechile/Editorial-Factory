@@ -63,6 +63,8 @@ def body_of(path):
     t = re.sub(r"#{1,3}\s*Sources.*", "", t, flags=re.S)        # sources -> end
     t = re.sub(r"<!--\s*linkedin\s*-->.*", "", t, flags=re.S)   # linkedin variant
     t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)               # HTML section markers
+    t = re.sub(r"```.*?```", " ", t, flags=re.S)                # code blocks & mermaid diagrams
+    t = re.sub(r"<svg.*?</svg>", " ", t, flags=re.S)            # embedded SVG charts
     return t
 
 

@@ -57,6 +57,14 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    cannot score or clear the ≥ 8 gate. Grounding requires primary verified data for **each** leg
    (the dual-anchor gate in `skills/fact_check.md` §5): if either leg fails verification, the
    synthesis is under-sourced and returns to the Judge.
+10. **Audited Citation & Benchmark Hubs (AEO & Passive Backlink Pillars).** Rather than solely
+    publishing acute 30-day news commentary, the pipeline supports data-dense benchmark assets
+    (`skills/citation_hub.md`) targeting statistical search demand (`[topic] benchmarks`,
+    `[topic] statistics`). These assets act as evergreen pillar anchors that attract passive citations
+    from journalists and LLMs (Perplexity, SearchGPT, Claude). To avoid commoditized AI scrapers,
+    every hub enforces a strict **Pre-Flight Data Gate** (verifying primary source URL, sample size,
+    and methodology before a single word is drafted) and injects a contrarian reality audit
+    grounded in `customer-truth.md` and `founder-voice.md`.
 
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
