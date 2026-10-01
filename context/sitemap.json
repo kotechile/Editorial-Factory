@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T11:38:43Z",
+  "updated_at": "2026-10-01T13:09:42Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -164,6 +164,17 @@
         "A Fixed Backup Plan"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-01"
+    },
+    {
+      "slug": "2026-10-01_planning-ai-buys-capability-not-autonomy",
+      "title": "Planning AI Buys Capability, Not Autonomy",
+      "url": "https://pressflow.aichieve.net/published/2026-10-01_planning-ai-buys-capability-not-autonomy.md",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "ops_leader",
       "date": "2026-10-01"
     },
     {
