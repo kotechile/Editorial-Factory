@@ -41,7 +41,11 @@ slug: "YYYY-MM-DD_<slug>"
 
 ### D. Machine-Readable SEO Blocks (at document end)
 - `<!-- schema -->`: JSON-LD schema block featuring `@type: "Article"` and `@type: "FAQPage"`.
-- `<!-- internal-links -->`: 2–3 contextual links to existing published articles with exact anchor text.
+- `<!-- internal-links -->`: leave the marker in place, empty. The links are **not** yours to write:
+  they are generated deterministically at persistence/push time (`scripts/internal_links.py`) from the
+  live corpus (`context/internal_links.json` — same-site, live, scored), because the drafting stage
+  has no list of live pages and every block it filled by hand shipped empty. Never invent a URL,
+  never write a site-relative path, and never add links anywhere else in the body.
 
 ## 3. Growth OS Moat Rules
 1. **Taste Over Fluff**: Never define basic terms in a generic introductory paragraph (e.g., *"Artificial intelligence is changing software"*).

@@ -29,6 +29,35 @@ STOPWORDS = {"the", "a", "an", "of", "and", "or", "for", "to", "in", "on", "with
              "how", "why", "what", "your", "you", "it", "that", "this", "vs", "at", "by", "from",
              "as", "be", "can", "does", "do", "new", "2026", "best", "guide"}
 
+# ...and the second tier: real words that still carry no topical signal, so their presence on two
+# pages says nothing about whether they are about the same thing. Without these, an article matched
+# on "just", "more"/"than", "into" or "first" and a supply-chain piece was offered the Nvidia
+# memory-bet article because both contained "billion" (measured on the live corpus).
+GENERIC = {"just", "more", "most", "than", "then", "there", "these", "they", "their", "them", "into",
+           "over", "after", "before", "first", "last", "never", "still", "even", "also", "says", "said",
+           "year", "years", "week", "weeks", "month", "months", "day", "days", "today", "one", "two",
+           "three", "four", "five", "six", "seven", "eight", "nine", "ten", "its", "has", "have", "had",
+           "was", "were", "been", "being", "will", "would", "could", "should", "may", "might", "must",
+           "about", "across", "around", "between", "during", "under", "while", "when", "where", "which",
+           "who", "whom", "some", "any", "all", "both", "each", "other", "others", "such", "only",
+           "very", "much", "many", "less", "least", "own", "same", "out", "up", "down", "off", "again",
+           "further", "once", "here", "right", "left", "back", "big", "small", "high", "low", "long",
+           "short", "next", "now", "keep", "kept", "make", "made", "take", "took", "give", "gave",
+           "get", "got", "go", "goes", "went", "come", "came", "see", "seen", "know", "known", "think",
+           "want", "need", "needs", "use", "used", "uses", "using", "way", "ways", "thing", "things",
+           "part", "parts", "lot", "lots", "case", "cases", "points", "test", "tests", "reason",
+           "reasons", "choice", "choices", "data", "stop", "stops", "read", "reads", "say", "saying",
+           "show", "shows", "shown", "look", "looks", "looking", "put", "putting", "turn", "turns",
+           "call", "calls", "called", "given", "let", "lets", "tell", "told", "ask", "asked", "seem",
+           "seems", "become", "becomes", "became", "holding", "hold", "held", "stand", "standing",
+           "stay", "stays"}
+STOPWORDS = STOPWORDS | GENERIC
+
+# How many distinct subject tokens a candidate must share before a mere topical match is treated as
+# evidence of relevance. One is not: "billion" appears in a GPU-memory story and a tariff story.
+MIN_OVERLAP_TOKENS = 2
+MIN_TOKEN_LENGTH = 4            # "ai" is not a subject; a shared 2-letter token never links
+
 
 def load_sitemap():
     """Load sitemap from JSON or rebuild dynamically from published/ directory."""
@@ -193,7 +222,18 @@ def _anchor_for(candidate, target_words):
     return text
 
 
-def generate_internal_link_map(target_keyword, vertical=None, max_links=3):
+def _subject_tokens(text: str) -> set[str]:
+    """Tokens that can carry topical meaning: no stopwords, no generic filler, 4+ characters, and
+    never a bare number ("10" and "2026" appear in everything and identify nothing)."""
+    return {t for t in re.findall(r"[a-z0-9][a-z0-9'’-]*", (text or "").lower())
+            if t not in STOPWORDS and len(t) >= MIN_TOKEN_LENGTH and not t.isdigit()}
+
+
+def _slugify(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
+
+
+def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclude_slugs=()):
     """Propose internal links from the site's real, live corpus.
 
     Candidates come from context/internal_links.json, whose liveness is decided by each frontend's
@@ -202,15 +242,23 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3):
 
     Same-site only: a link from giniloh.com to wellroost.com is a cross-site link, not an internal
     one, so candidates from another domain are dropped rather than ranked lower.
+
+    `exclude_slugs` are the caller's own pages (the article being pushed, and any already-published
+    row it is refreshing). The self-exclusion below only matches when the target keyword *is* the
+    slug, which a headline-and-lead topic never is — so a refresh of a live article could otherwise
+    link it to itself.
     """
-    target_words = {w for w in re.findall(r"\w+", (target_keyword or "").lower()) if w not in STOPWORDS}
+    excluded = {s for s in (exclude_slugs or ()) if s}
+    target_words = _subject_tokens(target_keyword)
     self_slug = re.sub(r"[^a-z0-9]+", "-", (target_keyword or "").lower()).strip("-")
 
     index = load_internal_link_index()
+    category_names: dict[str, str] = {}
     if index:
         routing = _site_for_vertical(vertical) or {}
         destination = routing.get("site_domain")
         destination_category = routing.get("wp_category_id")
+        category_names = ((index.get("categories") or {}).get(destination or "", {}) or {})
         candidates = [c for c in index.get("candidates", []) if c.get("live") and c.get("url")]
         source = "context/internal_links.json"
     else:
@@ -227,6 +275,8 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3):
     for candidate in candidates:
         if self_slug and candidate.get("slug") == self_slug:
             continue                                            # never link an article to itself
+        if candidate.get("slug") in excluded:
+            continue                                            # ...nor to another of the caller's own pages
         if destination and candidate.get("site") and candidate["site"] != destination:
             continue                                            # internal links stay on the domain
 
@@ -242,27 +292,38 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3):
         if same_category:
             score += 3
             reasons.append("same category")
+        # The article's OWN category-hub page, when that hub is live on the frontend. It is the
+        # section the article will be listed on — a curated page for exactly this topic, so it is a
+        # valid target even when no single published article matches (the sparse-corpus case: a
+        # vertical whose first article is being written has nothing else in its category yet).
+        own_hub = False
+        if (destination_category and candidate.get("kind") == "category" and destination
+                and candidate.get("site") == destination):
+            name = category_names.get(str(destination_category), "")
+            if name and _slugify(name) == candidate.get("slug"):
+                own_hub = True
+                score += 3
+                reasons.append(f"the article's own category hub ({name})")
         if candidate.get("kind") == "article":
             score += 2
         elif candidate.get("kind") == "calculator":
             score += 1
 
         haystack = " ".join([str(candidate.get("title", "")), str(candidate.get("excerpt", "")),
-                             " ".join(candidate.get("categories") or [])]).lower()
-        overlap = sorted(target_words.intersection(set(re.findall(r"\w+", haystack))))
+                             " ".join(candidate.get("categories") or [])])
+        overlap = sorted(target_words.intersection(_subject_tokens(haystack)))
         score += len(overlap) * 2
         if overlap:
             reasons.append("topical overlap: " + ", ".join(overlap[:4]))
-        # A two-letter token is not evidence of relevance: "ai" appears on nearly every page of an
-        # AI site, so on its own it would drag an unrelated article into the list. Overlap has to
-        # include a substantive token (4+ characters), unless vertical or category already match.
-        substantive_overlap = [w for w in overlap if len(w) >= 4]
 
         # Sharing a domain is not a reason to link. An internal link to an unrelated article costs
-        # the reader's attention and dilutes the anchor, so a candidate must earn its place with
-        # either substantive topical overlap or a shared vertical/category. When nothing qualifies
-        # the article ships with no Related reading section — which is the honest outcome.
-        if not (substantive_overlap or same_vertical or same_category):
+        # the reader's attention and dilutes the anchor, so a candidate must earn its place with the
+        # destination's own curated hub (same vertical/category) or with real topical evidence: two
+        # distinct subject tokens. ONE is not evidence — measured on the live corpus, a single shared
+        # word ("just", "billion", "into", "test") was offering the Nvidia memory-bet story to a
+        # tariff article and an ebike calculator to a piece about agent skills. When nothing
+        # qualifies the article ships with no Related reading — which is the honest outcome.
+        if not (same_vertical or same_category or own_hub) and len(overlap) < MIN_OVERLAP_TOKENS:
             continue
         anchor = _anchor_for(candidate, target_words)
         scored.append({

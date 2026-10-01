@@ -16,13 +16,22 @@ Contract with the destinations (cms.<domain>, routed per vertical by public.vert
               boundary, never mid-word.
   content  <- the markdown body rendered to HTML: pipeline section markers removed, the
               internal `<!-- linkedin -->` variant and `## Gate report` dropped, tables and
-              blockquotes rendered as real elements.
+              blockquotes rendered as real elements. An artifact that reached the row with no
+              internal links has them generated here, before the body is rendered
+              (scripts/internal_links.py) — the reader-facing `## Related reading` section and the
+              operator's placement hints — and the enriched body is written back to the row so the
+              database and the CMS never disagree. Nothing is invented: if no live page on the
+              destination site scores for the topic, the section is absent and the gap is reported.
   schema   <- ONLY the `Dataset` node of metadata.seo.schema, appended as a JSON-LD script.
               The frontends already emit Article + BreadcrumbList + FAQPage from the post
               itself, so re-sending those would duplicate nodes. No Dataset node => nothing
               is emitted (never invented).
-  status   <- always "draft". There is no flag to publish: the founder's approval gate stays
-              on the draft -> publish flip, which is a human action in the CMS.
+  status   <- always "draft" for a post this connector creates or updates. There is no flag to
+              publish: the founder's approval gate stays on the draft -> publish flip, which is a
+              human action in the CMS. The one exception is an existing post that a human already
+              published — a refresh sends no status for it at all, so it stays live rather than
+              being demoted back to draft (verified: post 401 was published, and `--refresh` used
+              to send status=draft for every row).
 
 Write-back: metadata.wordpress = {post_id, edit_url, link, status, site, pushed_at} on the
 same row, so the next run can update rather than duplicate, and so GSC data can later be
@@ -57,6 +66,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES_TABLE = "articles"
 SITES_TABLE = "vertical_sites"
 EXCERPT_TARGET = 165          # characters, before the word-boundary trim
+LINK_LINKS_MAX = 3            # reader-facing internal links per article (internal_links.MAX_LINKS)
+LIVE_POST_NOTE = "live post kept published"    # upsert()'s action for an already-published post
 WORDPRESS = "wordpress"
 
 
@@ -199,6 +210,17 @@ class Supabase:
         self._call("PATCH", f"{ARTICLES_TABLE}?id=eq.{row_id}", {"metadata": merged},
                    {"Prefer": "return=minimal"})
 
+    def update_body(self, row_id: str, content: str, metadata: dict) -> None:
+        """Write an enriched body back onto the row, in ONE write with its metadata.
+
+        The connector pushes the row's own `content`, so a pass that enriched only the file on disk
+        (or only the payload) would be invisible to the next run: `--refresh` re-reads this row and
+        would push the unlinked body again. Content and metadata go together so the row can never
+        say it has links the CMS does not hold.
+        """
+        self._call("PATCH", f"{ARTICLES_TABLE}?id=eq.{row_id}",
+                   {"content": content, "metadata": dict(metadata or {})}, {"Prefer": "return=minimal"})
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # markdown -> HTML (the destinations store HTML in post_content)
@@ -206,12 +228,31 @@ class Supabase:
 
 def reader_markdown(markdown: str) -> str:
     """Strip frontmatter and the pipeline's internal sections — the same cuts the site's
-    readerBody() makes, so the CMS holds what a reader is meant to see."""
+    readerBody() makes, so the CMS holds what a reader is meant to see.
+
+    The non-reader blocks (the `<!-- linkedin -->` social variant, the machine `<!-- schema -->`)
+    are dropped as BOUNDED regions — the marker up to the next marker — not by truncating
+    everything after them. Truncating silently deleted whatever the artifact wrote later in the
+    file, and the internal-link block legitimately sits at the end in some artifacts (verified on
+    published/2026-09-21_mcp-skills-extension.md, where it was dropped for exactly that reason).
+    """
     body = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", markdown or "", flags=re.S)
-    body = body.split("<!-- linkedin -->")[0]
+    for marker in ("<!-- linkedin -->", "<!-- schema -->"):
+        body = _drop_marker_block(body, marker)
     body = re.split(r"^##\s+Gate report\s*$", body, flags=re.M)[0]
     body = re.sub(r"^\s*<!--.*?-->\s*$", "", body, flags=re.M)
     return body.strip()
+
+
+def _drop_marker_block(text: str, marker: str) -> str:
+    """Remove one non-reader block: `marker` through the line before the next marker (or EOF)."""
+    index = text.find(marker)
+    if index == -1:
+        return text
+    start = index + len(marker)
+    following = re.search(r"^[ \t]*<!--", text[start:], re.M)
+    end = start + following.start() if following else len(text)
+    return text[:index] + text[end:]
 
 
 def _linkify_bare_urls(text: str) -> str:
@@ -591,7 +632,16 @@ def _ld_blocks(content: str) -> list:
     return out
 
 
-def delivery_problems(payload: dict, post: dict) -> list[str]:
+def internal_link_count(content: str, site_domain: str) -> int:
+    """Links in a rendered body that point at the article's own site — the reader-visible internal
+    links. Counted on the rendered HTML because that is what the reader and a crawler see."""
+    if not site_domain:
+        return 0
+    host = re.escape(site_domain.split("/")[0].strip().lower())
+    return len(re.findall(r'href=["\']https?://(?:www\.)?' + host + r'(?=[/"\':])', content or "", re.I))
+
+
+def delivery_problems(payload: dict, post: dict, site_domain: str | None = None) -> list[str]:
     """Compare a post read back from the CMS against the payload that was sent. [] means it landed.
 
     This is the half that a push-only connector cannot see: the CMS is free to sanitize, truncate,
@@ -635,7 +685,21 @@ def delivery_problems(payload: dict, post: dict) -> list[str]:
     if sent_content.strip() and not stored_content.strip():
         problems.append("content: the CMS holds an empty body")
 
-    if stored_post_id and str(post.get("status") or "") not in ("draft", "pending", "private", ""):
+    # Internal links are the one part of the body whose absence is invisible in a diff of lengths:
+    # a sanitizer, an editor or a plugin can drop the Related reading section on save, and the post
+    # still looks complete. Compare the reader-visible same-site link count. (Zero on both sides is
+    # not a delivery failure — it is a content gap, reported by scripts/internal_links.py, which
+    # refuses to invent a link to fill it.)
+    if site_domain:
+        sent_links = internal_link_count(sent_content, site_domain)
+        stored_links = internal_link_count(stored_content, site_domain)
+        if sent_links != stored_links:
+            problems.append(f"internal links: sent {sent_links} link(s) to {site_domain}, CMS holds "
+                            f"{stored_links} — the reader would get {stored_links}")
+
+    sent_status = payload.get("status")
+    if stored_post_id and sent_status and str(post.get("status") or "") not in (
+            "draft", "pending", "private", ""):
         problems.append(f"status: the post came back {post.get('status')!r}, not draft — "
                         f"publishing must stay a human step in the CMS")
 
@@ -650,14 +714,15 @@ def delivery_problems(payload: dict, post: dict) -> list[str]:
     return problems
 
 
-def verification_summary(payload: dict, post: dict) -> str:
+def verification_summary(payload: dict, post: dict, site_domain: str | None = None) -> str:
     """A one-line description of what a successful read-back verified."""
     content = payload.get("content") or ""
     featured = f", featured media {payload['featured_media']}" if payload.get("featured_media") else ""
+    links = f", {internal_link_count(content, site_domain)} internal link(s)" if site_domain else ""
     return (f"title, {len(_plain_text(payload.get('excerpt')))}-char excerpt, "
             f"{len(_ld_blocks(content))} JSON-LD block(s), "
             f"{len(re.findall(r'<svg', content, re.I))} inline SVG(s), "
-            f"{len(content)} chars of body{featured}")
+            f"{len(content)} chars of body{links}{featured}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -727,9 +792,16 @@ class WordPress:
         _, post = self._call("GET", f"posts/{int(post_id)}?context=edit")
         return post or {}
 
-    def upsert(self, payload: dict) -> tuple[dict, str]:
-        existing = self.find_by_slug(payload["slug"])
+    def upsert(self, payload: dict, existing: dict | None = None) -> tuple[dict, str]:
+        existing = existing if existing is not None else self.find_by_slug(payload["slug"])
         if existing:
+            if str(existing.get("status") or "") == "publish":
+                # A published post is a published post: refreshing its body must not send
+                # status=draft, which would take a live article off the site (the approval gate was
+                # already passed by a human — this is not a second flip, and it is not an unpublish).
+                live = {k: v for k, v in payload.items() if k != "status"}
+                _, post = self._call("POST", f"posts/{existing['id']}", live)
+                return post or {}, f"updated ({LIVE_POST_NOTE})"
             _, post = self._call("POST", f"posts/{existing['id']}", payload)
             return post, "updated"
         _, post = self._call("POST", "posts", payload)
@@ -931,13 +1003,50 @@ def media_problems(expected: dict, item: dict) -> list[str]:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None = None,
-             author_name: str | None = None, wp_factory=None, verify: bool = True) -> dict:
+             author_name: str | None = None, wp_factory=None, verify: bool = True,
+             live_ok: bool = False) -> dict:
     metadata = row.get("metadata") or {}
     vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
     if not vertical:
         raise RuntimeError(f"row {row.get('id')} has no vertical — cannot route it to a site")
     site = db.site_for(vertical)
+    slug = (metadata.get("slug") or "").strip()
+
+    # Two things are needed before this run can decide to enrich the row's body: the WordPress client
+    # and the record of what the CMS already holds for this slug. A post a human already published is
+    # not a draft, and a refresh re-derives title/excerpt/body from the row — so rewriting a live
+    # article is an explicit decision (--refresh-live), never a side effect of the routine sweep.
+    wp = None
+    existing = None
+    if not dry_run:
+        user, password = credentials_for(site["site_domain"])
+        wp = (wp_factory or (lambda base, u, p: WordPress(base, u, p)))(site["cms_base_url"], user, password)
+        existing = wp.find_by_slug(slug) if slug else None
+        if existing and str(existing.get("status") or "") == "publish" and not live_ok:
+            print(f"\n  skipped: {site['site_domain']} holds '{slug}' as a PUBLISHED post "
+                  f"({existing.get('id')}) — a refresh re-derives its body from the row and can "
+                  f"overwrite what an editor tuned; pass --refresh-live to update it deliberately")
+            return {"status": "skipped (live post)", "site": site["site_domain"],
+                    "post_id": existing.get("id"), "verified": None, "problems": [], "skipped": True,
+                    "edit_url": f"{site['cms_base_url']}/wp-admin/post.php?post={existing.get('id')}"
+                                f"&action=edit"}
+
+    # Internal links first: they are part of the body that goes to the CMS, and the row this run
+    # pushes is the one the next run reads (scripts/internal_links.py). Best-effort — an article
+    # with no links is a worse article, an article that never reached the CMS is a missing one.
+    links_notes: list[str] = []
+    try:
+        import internal_links as il
+        row, links_notes = il.ensure_for_row(
+            row, persist=not dry_run, db=db, max_links=LINK_LINKS_MAX,
+            site_domain=site.get("site_domain"))
+    except Exception as exc:                       # noqa: BLE001 - surface, never swallow (rule 6)
+        links_notes = [f"internal links NOT generated: {exc}"]
+        print(f"  internal links NOT generated: {exc}", file=sys.stderr)
+
+    metadata = row.get("metadata") or {}          # re-read: the links pass rewrote it
     payload, notes = build_payload(row, site, publisher_name, author_name)
+    notes = links_notes + notes
 
     print(f"\n  article : {payload['title']}")
     print(f"  slug    : {payload['slug']}   (idempotency key)")
@@ -951,9 +1060,6 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         print("  DRY RUN — nothing sent. Payload:")
         print(json.dumps({**payload, "content": payload["content"][:400] + "…"}, indent=2)[:1600])
         return {"status": "dry-run", "site": site["site_domain"], "payload": payload}
-
-    user, password = credentials_for(site["site_domain"])
-    wp = (wp_factory or (lambda base, u, p: WordPress(base, u, p)))(site["cms_base_url"], user, password)
 
     # The featured image goes up BEFORE the post: the payload carries the attachment id and
     # WordPress will not accept one that does not exist yet. A failure here is reported and the
@@ -986,7 +1092,12 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         category_id = payload["categories"][0]
         print(f"  category: {category_id} — {html.unescape(wp.category_name(category_id))} "
               f"(validated on {site['site_domain']})")
-    post, action = wp.upsert(payload)
+    post, action = wp.upsert(payload, existing=existing)
+    # For an existing LIVE post the status was deliberately not sent (see upsert), so what was sent
+    # is the payload minus its status — compare the read-back against that, not against the draft
+    # intent we started from.
+    sent_payload = ({k: v for k, v in payload.items() if k != "status"}
+                    if LIVE_POST_NOTE in action else payload)
     print(f"  {action}: post {post.get('id')} ({post.get('status')}) {post.get('link')}")
 
     # Attach the image to the post in the library (post_parent), so an editor looking at the article
@@ -1005,7 +1116,7 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     if verify:
         try:
             stored = wp.read_back(post.get("id"))
-            problems += delivery_problems(payload, stored)
+            problems += delivery_problems(sent_payload, stored, site["site_domain"])
             if media:
                 stored_media = wp.media(media.get("id")) or {}
                 problems += media_problems(media_expected, stored_media)
@@ -1014,7 +1125,7 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
                 for problem in problems:
                     print(f"    - {problem}")
             else:
-                summary = verification_summary(payload, stored)
+                summary = verification_summary(sent_payload, stored, site["site_domain"])
                 print(f"  delivery verified on {site['site_domain']}: {summary}")
         except Exception as exc:                    # noqa: BLE001 - surface, never swallow (rule 6)
             problems = [f"could not read the post back to verify delivery: {exc}"]
@@ -1028,6 +1139,7 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         "site": site["site_domain"],
         "pushed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "pushed_by": "scripts/wp_draft.py",
+        "internal_links": internal_link_count(payload["content"], site["site_domain"]),
         "verified": not problems,
     }
     if media:
@@ -1051,7 +1163,7 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
 
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
                  author_name: str | None = None, wp_factory=None, db=None,
-                 verify: bool = True) -> dict:
+                 verify: bool = True, live_ok: bool = False) -> dict:
     """Push one article by its Supabase slug. The single entry point used by both this CLI and
     scripts/publish.py, so the in-run hook and a manual re-run share one code path."""
     db = db or Supabase(*supabase_config())
@@ -1059,7 +1171,7 @@ def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None
     if not rows:
         raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
     return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name,
-                    author_name=author_name, wp_factory=wp_factory, verify=verify)
+                    author_name=author_name, wp_factory=wp_factory, verify=verify, live_ok=live_ok)
 
 
 def main() -> int:
@@ -1068,8 +1180,14 @@ def main() -> int:
     parser.add_argument("--all", action="store_true", help="Every row with no metadata.wordpress.post_id yet")
     parser.add_argument("--refresh", action="store_true",
                         help="Every row, pushed or not: re-apply the current mapping (category, "
-                             "excerpt, chart, JSON-LD) to the drafts that already exist. Updates the "
-                             "same post per slug — use after a routing or content change")
+                             "excerpt, chart, JSON-LD, internal links) to the drafts that already "
+                             "exist. Updates the same post per slug — use after a routing or content "
+                             "change")
+    parser.add_argument("--refresh-live", action="store_true",
+                        help="With --refresh/--slug: also update posts that are already PUBLISHED "
+                             "(their status is never sent, so they stay live). Off by default: a "
+                             "refresh re-derives the body from the row and can overwrite what an "
+                             "editor tuned in the CMS")
     parser.add_argument("--limit", type=int, default=None,
                         help="Max articles to push in one run (default 1, or all with --refresh)")
     parser.add_argument("--dry-run", action="store_true", help="Print the payload without contacting WordPress")
@@ -1092,7 +1210,8 @@ def main() -> int:
     if args.slug:
         try:
             result = push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
-                                  author_name=args.author_name, db=db, verify=not args.no_verify)
+                                  author_name=args.author_name, db=db, verify=not args.no_verify,
+                                  live_ok=args.refresh_live)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
             return 1
@@ -1101,6 +1220,8 @@ def main() -> int:
                   "fix the mapping and re-run; the slug is the idempotency key, so this updates "
                   "the same post rather than duplicating it", file=sys.stderr)
             return 1
+        if result.get("skipped"):
+            return 0
         print("\npushed: 1/1 | drafts only — publishing stays a human step in the CMS")
         return 0
 
@@ -1111,17 +1232,23 @@ def main() -> int:
         return 0
 
     failures = 0
+    skipped = 0
     for row in rows:
         try:
             result = push_one(row, db, dry_run=args.dry_run, publisher_name=args.publisher_name,
-                              author_name=args.author_name, verify=not args.no_verify)
-            if result.get("problems"):
+                              author_name=args.author_name, verify=not args.no_verify,
+                              live_ok=args.refresh_live)
+            if result.get("skipped"):
+                skipped += 1
+            elif result.get("problems"):
                 failures += 1
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             failures += 1
             print(f"\n  FAILED {row.get('title')}: {exc}", file=sys.stderr)
 
-    print(f"\npushed: {len(rows) - failures}/{len(rows)} | drafts only — publishing stays a human step in the CMS")
+    tail = f" | {skipped} live post(s) left alone (--refresh-live to update them)" if skipped else ""
+    print(f"\npushed: {len(rows) - failures - skipped}/{len(rows)} | drafts only — publishing stays a "
+          f"human step in the CMS{tail}")
     return 1 if failures else 0
 
 

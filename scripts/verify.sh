@@ -204,8 +204,11 @@ if ! python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network >/dev/null 2
 fi
 
 # 8.7 Internal links (hard): candidates come from the live corpus and must be same-site, live, never
-#     the article itself, and never a mere domain match. The shipped-index section inspects
-#     context/internal_links.json without fetching; refresh it with
+#     the article itself, and never a mere domain match — and since the drafting stage cannot know the
+#     live corpus, the block itself is generated and delivered by scripts/internal_links.py (hooked
+#     into publish.py and wp_draft.py): same rules, plus a two-subject-token evidence bar, an
+#     idempotent block under `<!-- internal-links -->`, and reader copy under the marker left intact.
+#     The shipped-index section inspects context/internal_links.json without fetching; refresh it with
 #       python3 scripts/build_internal_link_index.py
 if ! python3 "$ROOT/scripts/test_internal_links.py" >/dev/null 2>&1; then
   echo "FAIL: internal-link tests — detail:"

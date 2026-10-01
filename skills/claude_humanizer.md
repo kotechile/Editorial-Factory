@@ -135,7 +135,11 @@ carries an authority construction, or when an interpreting section has no observ
   been observed wrapping the frontmatter in a triple-backtick code fence (dropping the `---`
   lines), which breaks frontmatter parsing downstream. All three humanize scripts now normalize
   this with `humanizer_tools.normalize_frontmatter()`; do not remove that call.
-- Preserve the `<!-- schema -->` (JSON-LD) and `<!-- internal-links -->` blocks verbatim when present, keeping them at the end of the markdown draft.
+- Preserve the `<!-- schema -->` (JSON-LD) block verbatim when present, keeping it at the end of the
+  markdown draft. The internal-link block is owned by the persistence pass
+  (`scripts/internal_links.py`), which replaces the region between its own
+  `<!-- internal-links:start/end -->` markers — so do not add links of your own anywhere in the body
+  and do not try to fix that block by hand.
 - Preserve any `<svg>…</svg>` chart block verbatim, in place: it is generated from the article's own numbers and a rewrite that reflows, re-indents, escapes or drops it turns the visual into a wall of markup. Do not add one either — a chart is emitted mechanically at persistence time (`scripts/article_assets.py`) only when the numbers section is a real series.
 - Never invent `meta_title` / `meta_description` if they are absent — leave the keys out and the persistence pass derives them from your headline and lead paragraph (`scripts/article_assets.py`). If you do write them, they must be grounded in the article's own text.
 - Ensure the article body is clean markup starting with the lead paragraph and contains descriptive, high-quality `## ` (H2) section headings (target ≤ 6 words).

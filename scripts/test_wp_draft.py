@@ -20,7 +20,18 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import wp_draft as wd  # noqa: E402
+import internal_links as il  # noqa: E402
 import chart_generator as cg  # noqa: E402
+
+# Internal links are scored against the live corpus (a real Supabase routing lookup), and this suite
+# is hermetic. The push path is what is under test here, so the resolver is replaced once; the
+# generated block, its placement and its idempotency are pinned by scripts/test_internal_links.py.
+FIXTURE_LINKS = [{
+    "anchor_text": "How to Cut Energy Bills", "url": "https://giniloh.com/how-to-cut-energy-bills/",
+    "kind": "article", "category": "Money & Wealth", "relevance_score": 12,
+    "why": "same site (giniloh.com); same category", "suggested_placement": "Link it in the lead.",
+}]
+il.resolve_links = lambda topic, vertical, max_links=3, exclude_slugs=(): list(FIXTURE_LINKS)
 
 PASS, FAIL = [], []
 
@@ -276,6 +287,7 @@ class FakeDB:
     def __init__(self, site=SITE):
         self.site = site
         self.recorded: list[dict] = []
+        self.bodies: list[dict] = []          # metadata.update_body writes (internal links)
 
     def articles(self, slug=None, un_pushed_only=False, limit=None):
         """push_by_slug() reads the row through the db, exactly as the CLI and publish.py do."""
@@ -292,6 +304,10 @@ class FakeDB:
 
     def record_push(self, row_id, metadata, record):
         self.recorded.append({"row_id": row_id, "metadata": metadata, "record": record})
+
+    def update_body(self, row_id, content, metadata):
+        """The one write that keeps the row's body and the CMS's body identical."""
+        self.bodies.append({"row_id": row_id, "content": content, "metadata": metadata})
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -336,6 +352,22 @@ check("no pipeline markers survive", "<!--" not in html_body)
 check("internal LinkedIn variant dropped", "internal variant must never reach" not in html_body)
 check("## Gate report dropped", "Gate report" not in html_body)
 check("frontmatter dropped", "vertical: supplier_risk" not in html_body)
+
+print("\nreader copy — a section written after <!-- linkedin --> still reaches the post")
+LATE_SECTION = MARKDOWN.replace(
+    "<!-- schema -->",
+    "<!-- internal-links -->\n\n## Related reading\n\n"
+    "- [How to Cut Energy Bills](https://giniloh.com/how-to-cut-energy-bills/) — more on Money\n\n"
+    "<!-- schema -->")
+late_html = wd.md_to_html(LATE_SECTION)
+check("the internal-link block is NOT truncated by the LinkedIn cut (the live defect on post 401)",
+      "## Related reading" in wd.reader_markdown(LATE_SECTION) and "Related reading" in late_html,
+      wd.reader_markdown(LATE_SECTION)[-160:])
+check("...as real anchors the reader can follow",
+      '<a href="https://giniloh.com/how-to-cut-energy-bills/">How to Cut Energy Bills</a>' in late_html)
+check("...while the LinkedIn variant and the machine schema are still dropped",
+      "internal variant must never reach" not in late_html and "application/ld+json" not in late_html
+      and "&lt;script" not in late_html)
 
 print("\ncharts in the reader copy")
 chart_md = ("Intro paragraph.\n\n"
@@ -646,6 +678,73 @@ try:
     check("write-back recorded the post id + edit url",
           db.recorded[0]["record"]["post_id"] == "101"
           and "action=edit" in db.recorded[0]["record"]["edit_url"])
+
+    print("\ninternal links — generated for the row, delivered to the CMS, written back")
+    check("the reader-facing links are in the post body",
+          '<a href="https://giniloh.com/how-to-cut-energy-bills/">How to Cut Energy Bills</a>'
+          in StubWP.posts["101"]["content"], StubWP.posts["101"]["content"][-400:])
+    check("the operator's placement hints stay out of the reader copy (they are for the artifact,",
+          "internal-link hint" not in StubWP.posts["101"]["content"])
+    check("...and are carried on the row the operator reads, next to the links they describe",
+          "internal-link hint" in db.bodies[0]["content"] and 'Anchor:' not in StubWP.posts["101"]["content"],
+          db.bodies[0]["content"][-300:])
+    check("the enriched body is written back to the Supabase row (the next --refresh reads it)",
+          bool(db.bodies) and "Related reading" in db.bodies[0]["content"],
+          str(db.bodies)[:200])
+    check("...recording what was generated, from where",
+          db.bodies[0]["metadata"].get("internal_links", {}).get("count") == 1
+          and "internal_links.json" in db.bodies[0]["metadata"]["internal_links"]["source"],
+          json.dumps(db.bodies[0]["metadata"].get("internal_links"))[:200])
+    check("the push records the link count it verified",
+          db.recorded[0]["record"].get("internal_links") == 1, json.dumps(db.recorded[0]["record"])[:200])
+    check("the delivery summary names the links", "internal link(s)" in
+          wd.verification_summary({"excerpt": "e", "content": StubWP.posts["101"]["content"]}, {},
+                                  "giniloh.com"))
+
+    print("\ninternal links — never rewritten twice (idempotent through the row)")
+    row_after = {"id": ROW["id"], "title": ROW["title"], "tags": ROW["tags"],
+                 "content": db.bodies[0]["content"], "metadata": db.bodies[0]["metadata"]}
+    db2 = FakeDB()
+    same, notes_same = il.ensure_for_row(row_after, persist=True, db=db2, site_domain="giniloh.com")
+    check("a row that already carries its links is left untouched",
+          same["content"] == row_after["content"] and not db2.bodies
+          and any("no change" in n for n in notes_same), str(notes_same)[:200])
+
+    second = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp)
+    check("second run updates the same post (no duplicate)",
+          second["status"] == "updated" and len(StubWP.posts) == 1, f"posts={list(StubWP.posts)}")
+    check("original draft status preserved on update",
+          StubWP.posts["101"]["status"] == "draft")
+
+    print("\na live post is refreshed, never demoted")
+    StubWP.posts["101"]["status"] = "publish"          # a human published it in the CMS
+    StubWP.requests.clear()
+    bodies_before = len(db.bodies)
+    skipped_result = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp)
+    check("a published post is left alone unless asked (a refresh re-derives its body and can "
+          "overwrite what an editor tuned in the CMS)",
+          skipped_result.get("skipped") is True and StubWP.posts["101"]["status"] == "publish",
+          str(skipped_result)[:200])
+    check("...no write reaches the CMS at all",
+          not [1 for method, path, _ in StubWP.requests if method == "POST" and path.endswith("/posts/101")],
+          str(StubWP.requests)[:200])
+    check("...and the row is not written back either (the DB must not claim links the CMS lacks)",
+          len(db.bodies) == bodies_before, str(len(db.bodies)))
+
+    StubWP.requests.clear()
+    live = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp, live_ok=True)
+    pushed = [body for method, path, body in StubWP.requests
+              if method == "POST" and path.endswith("/posts/101")]
+    check("--refresh-live updates it without ever sending a status (it cannot be unpublished)",
+          bool(pushed) and all("status" not in body for body in pushed), str(pushed)[:200])
+    check("...it stays live", StubWP.posts["101"]["status"] == "publish",
+          StubWP.posts["101"]["status"])
+    check("...and the push says so", "kept published" in live["status"], live["status"])
+    check("...and the read-back does not report the live status as a defect",
+          not any("status" in p for p in (live.get("problems") or [])), str(live.get("problems"))[:200])
+    check("...with the internal links in the body it just rewrote",
+          "Related reading" in StubWP.posts["101"]["content"])
+    StubWP.posts["101"]["status"] = "draft"
     check("Dataset JSON-LD embedded exactly once and retargeted",
           StubWP.posts["101"]["content"].count("application/ld+json") == 1
           and "giniloh.com" in StubWP.posts["101"]["content"]
@@ -779,6 +878,26 @@ check("a chart stored as escaped text is reported, not accepted as markup",
           chart_payload, stored_post(chart_payload, content=chart_payload["content"].replace("<svg", "&lt;svg")))))
 check("a post that came back published is reported (the human gate must hold)",
       any("status" in p for p in wd.delivery_problems(base_payload, stored_post(base_payload, status="publish"))))
+
+print("\ndelivery verification — internal links")
+link_payload, _ = wd.build_payload({**ROW, "content": LATE_SECTION}, SITE)
+check("the payload's same-site links are counted", wd.internal_link_count(link_payload["content"], "giniloh.com") == 1,
+      str(wd.internal_link_count(link_payload["content"], "giniloh.com")))
+check("a faithful read-back reports no problems, links included",
+      wd.delivery_problems(link_payload, stored_post(link_payload), "giniloh.com") == [],
+      str(wd.delivery_problems(link_payload, stored_post(link_payload), "giniloh.com")))
+check("a CMS that drops the Related reading section is reported",
+      any("internal links" in p for p in wd.delivery_problems(
+          link_payload, stored_post(link_payload, content=re.sub(r"<h2>Related reading</h2>[\s\S]*$", "",
+                                                                  link_payload["content"])),
+          "giniloh.com")),
+      str(wd.delivery_problems(
+          link_payload, stored_post(link_payload, content=re.sub(r"<h2>Related reading</h2>[\s\S]*$", "",
+                                                                  link_payload["content"])),
+          "giniloh.com")))
+check("a post whose status was not sent is not reported as an unpublished-to-published flip",
+      wd.delivery_problems({k: v for k, v in link_payload.items() if k != "status"},
+                           stored_post(link_payload, status="publish"), "giniloh.com") == [])
 
 print("\nend-to-end — the read-back runs on a real push against the stub CMS")
 server3, base3 = start_stub()

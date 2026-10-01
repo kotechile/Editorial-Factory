@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 from gsc_analyzer import analyze_opportunities, load_gsc_data
 from dataforseo_client import DataForSEOClient
 import growth_os as gos
+import internal_links as il          # the single owner of the `## Related reading` shape
 import check_accessibility as ca
 import chart_generator as cg
 import citation_hub_dossier as chd
@@ -198,26 +199,16 @@ def _format_related_reading(internal_links) -> str:
     the destination site and checked against its sitemap, so a draft never links to a page that is
     not live (both Astro fronts answer 200 with the homepage for an unknown URL, so a bad link would
     silently send readers home).
+
+    The shape lives in scripts/internal_links.py, which also fills the block on the paths that
+    publish (scripts/publish.py, scripts/wp_draft.py); this is the same renderer, not a second one.
     """
-    links = [l for l in (internal_links or []) if l.get("url") and l.get("anchor_text")]
-    if not links:
-        return ""
-    lines = ["## Related reading", ""]
-    for link in links:
-        category = (link.get("category") or "").strip()
-        reason = "calculator" if link.get("kind") == "calculator" else (
-            f"more on {category}" if category else "")
-        lines.append(f"- [{link['anchor_text']}]({link['url']})" + (f" — {reason}" if reason else ""))
-    return "\n".join(lines)
+    return il.render_related_reading(internal_links)
 
 
 def _format_link_hints(internal_links) -> str:
     """Placement hints for the operator, as HTML comments so they never reach a reader."""
-    lines = [f"<!-- internal-link hint: \"{l.get('anchor_text')}\" -> {l.get('url')} "
-             f"[{l.get('why', '')}] {l.get('suggested_placement', '')} -->"
-             for l in (internal_links or []) if l.get("url")]
-    return "\n".join(lines) or ("<!-- internal-link hint: none — no live page on this site scored "
-                               "for this topic -->")
+    return il.render_link_hints(internal_links)
 
 
 def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, vertical_id, persona_id):

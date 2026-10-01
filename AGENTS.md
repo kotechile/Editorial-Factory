@@ -78,6 +78,18 @@ gates, and every non-deterministic step is gated on retrievable evidence.
     verbatim cue from the article it was read from, and no image may contain legible text, a real
     brand's mark or a stock-photo cliché. Idempotent by the article's own digest, so a re-run never
     re-spends image credits on an unchanged text.
+12. **Internal links are generated from the live corpus, never invented.** The `<!-- internal-links
+    -->` block is filled in the persistence pass (`scripts/internal_links.py`, hooked into
+    `scripts/publish.py` and `scripts/wp_draft.py`) from `context/internal_links.json` — the pages
+    that actually EXIST per CMS and RESOLVE per each frontend's sitemap. The drafting stage cannot do
+    this: it has no list of live pages, so every artifact it wrote carried an empty block and every
+    CMS draft reached a reader with zero internal links while the hand-written back catalogue carried
+    2–10 each. A link must be on the destination's own site (a cross-site link is not an internal
+    one), live, never the article itself, and justified by the destination's own category hub or by
+    at least two shared subject tokens — one incidental word (`just`, `billion`, `into`) is not
+    evidence, and when nothing qualifies the section is absent and the gap is stated rather than
+    filled with an unrelated page. Idempotent, and the enriched body is written back to the Supabase
+    row so the database and the CMS can never disagree.
 
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).

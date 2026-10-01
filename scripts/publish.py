@@ -192,8 +192,34 @@ def apply_illustration(content: str, enabled: bool = True, *, pinned_style: str 
                          f"`python3 scripts/illustration_creator.py <artifact> --apply`"], None
 
 
+def apply_internal_links(content: str, enabled: bool = True) -> tuple[str, list[str]]:
+    """Fill the artifact's reader-facing internal links (scripts/internal_links.py).
+
+    Runs in the persistence pass, next to the derived metadata and the chart, because the links are
+    part of what is persisted: the published file, the Supabase row's `content` and the CMS draft
+    must carry the same body. Nothing here is invented — the candidates are the pages that are
+    actually live on the destination site (each frontend's sitemap decides that, not an HTTP 200,
+    because both Astro fronts answer 200 with the homepage for an unknown URL). When no page
+    qualifies the section is absent and the reason is printed.
+
+    Idempotent by construction (the generated block is delimited and replaced in place), and a
+    failure is reported rather than fatal: an article without internal links is a worse article,
+    an article that never got persisted is a missing one.
+    """
+    if not enabled:
+        return content, ["internal links: skipped (dry-run or --no-links)"]
+    header = dict(re.findall(r"^(vertical|title):[ \t]*\"?([^\"\n]+?)\"?[ \t]*$", content, re.M))
+    try:
+        import internal_links as il
+        enriched, notes, _links = il.enrich(content, vertical=header.get("vertical", ""))
+        return enriched, notes
+    except Exception as exc:                            # noqa: BLE001 - surfaced, never swallowed
+        return content, [f"internal links FAILED: {exc} — publishing without them; re-run "
+                         f"`python3 scripts/internal_links.py <artifact> --apply`"]
+
+
 def parse_draft(file_path: str, illustrate: bool = True, pinned_style: str | None = None,
-                pinned_model: str | None = None):
+                pinned_model: str | None = None, links: bool = True):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -204,6 +230,15 @@ def parse_draft(file_path: str, illustrate: bool = True, pinned_style: str | Non
     content, asset_notes = apply_derived_assets(content)
     for note in asset_notes:
         print(f"  [assets] {note}")
+
+    # Then the internal links — reader-facing body, derived from the sites' real live corpus
+    # (scripts/internal_links.py) rather than left to the drafting stage, which is an LLM with no
+    # list of live pages (verified: every artifact it produced carried an empty block and every CMS
+    # draft reached the reader with zero internal links, while the hand-written back catalogue
+    # carried 2-10 each).
+    content, links_notes = apply_internal_links(content, links)
+    for note in links_notes:
+        print(f"  [links] {note}")
 
     # Then the visual: art direction + generation, from the same text (scripts/illustration_creator.py).
     content, image_notes, illustration_meta = apply_illustration(
@@ -942,7 +977,8 @@ def main():
     illustrate = (not args.no_illustration and not args.dry_run
                   and parse_bool_env("ILLUSTRATION_ENABLED", default=True))
     data = parse_draft(args.draft_file, illustrate=illustrate,
-                       pinned_style=args.illustration_style, pinned_model=args.illustration_model)
+                       pinned_style=args.illustration_style, pinned_model=args.illustration_model,
+                       links=not args.dry_run)
     date_val = data["date"]
     slug_val = normalize_slug(data["slug"], date_val)
     data["slug"] = slug_val  # keep the Supabase row / log consistent with the published filename

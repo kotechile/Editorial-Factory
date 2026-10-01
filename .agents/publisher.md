@@ -13,6 +13,11 @@ distribute it outbound (LinkedIn, Ghost) only after the `@Simon approve` gate.
 2. Append a row to `context/published_log.md` (date, vertical, slug, headline, reader URL, distribution).
 3. Upsert the article + its signals + claims into Supabase; refresh `context/sitemap.json`
    (`scripts/publish.py` does this) and flip the run-log row in `context/content_calendar.md`.
+3b. Fill the article's reader-facing **internal links** in the same pass (`scripts/internal_links.py`):
+   the `## Related reading` section is generated from the live corpus (same-site, live, never the
+   article itself), written under `<!-- internal-links -->`, and the enriched body is stored on the
+   Supabase row. Nothing is invented — when no live page qualifies, the section is absent and the
+   reason is printed. The CMS draft carries the same links (`scripts/wp_draft.py`, draft only).
 4. Distribute only after `@Simon approve`:
    - Ingest external article URL (e.g. from PressFlow/Ghost/blog with illustrations) and optional tool promo URL (e.g. from Software Factory).
    - Embed URLs and CTAs cleanly into the LinkedIn post.
