@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-01T00:49:56+00:00
+# Internal-link candidates — 2026-10-01T04:55:35+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 

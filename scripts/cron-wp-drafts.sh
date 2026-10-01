@@ -66,4 +66,19 @@ else
   fi
 fi
 
+# Part 4 — routing coverage. Every vertical needs a destination AND a WordPress category: a draft
+# pushed with no wp_category_id lands in the CMS's default category (Uncategorized), which is the
+# state the operator otherwise re-files by hand on every post — and, missed, a published post that
+# appears on no category page and in no listing. Reported here so a routing gap cannot sit silent;
+# the fix is the migration it names, then `python3 scripts/wp_draft.py --refresh` to re-file the
+# drafts that already exist.
+ROUTE="$(python3 scripts/check_vertical_sites.py 2>&1)"
+RTC=$?
+if [ "$RTC" -ne 0 ]; then
+  printf '%s\n' "$ROUTE"
+  PROBLEMS=1
+else
+  printf '%s\n' "$ROUTE" | grep -E "^vertical_sites:|^  [a-z]" | head -4
+fi
+
 exit "$PROBLEMS"

@@ -805,7 +805,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Push generated articles to their vertical's WordPress CMS as drafts")
     parser.add_argument("--slug", help="Article slug (metadata->>slug)")
     parser.add_argument("--all", action="store_true", help="Every row with no metadata.wordpress.post_id yet")
-    parser.add_argument("--limit", type=int, default=1, help="Max articles to push in one run (default 1)")
+    parser.add_argument("--refresh", action="store_true",
+                        help="Every row, pushed or not: re-apply the current mapping (category, "
+                             "excerpt, chart, JSON-LD) to the drafts that already exist. Updates the "
+                             "same post per slug — use after a routing or content change")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Max articles to push in one run (default 1, or all with --refresh)")
     parser.add_argument("--dry-run", action="store_true", help="Print the payload without contacting WordPress")
     parser.add_argument("--no-verify", action="store_true",
                         help="Skip the post-push read-back (default: read the post back and compare "
@@ -817,9 +822,10 @@ def main() -> int:
                              "dropped rather than publishing the generator's {{AUTHOR_NAME}} token")
     args = parser.parse_args()
 
-    if not args.slug and not args.all:
-        parser.error("pass --slug <slug> or --all")
+    if not args.slug and not args.all and not args.refresh:
+        parser.error("pass --slug <slug>, --all or --refresh")
 
+    limit = args.limit if args.limit is not None else (None if args.refresh else 1)
     db = Supabase(*supabase_config())
 
     if args.slug:
@@ -837,9 +843,10 @@ def main() -> int:
         print("\npushed: 1/1 | drafts only — publishing stays a human step in the CMS")
         return 0
 
-    rows = db.articles(un_pushed_only=True, limit=args.limit)
+    rows = db.articles(un_pushed_only=not args.refresh, limit=limit)
     if not rows:
-        print("Nothing to push (every row already has a draft in its CMS).")
+        print("Nothing to push (every row already has a draft in its CMS)."
+              if not args.refresh else "No rows to refresh.")
         return 0
 
     failures = 0

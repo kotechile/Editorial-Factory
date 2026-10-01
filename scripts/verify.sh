@@ -188,6 +188,16 @@ if ! python3 "$ROOT/scripts/test_internal_links.py" >/dev/null 2>&1; then
   python3 "$ROOT/scripts/test_internal_links.py" 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.75 Vertical routing (hard, hermetic part): the audit is a pure function of the registry and the
+#      routing rows, so the rules are pinned offline — including the WordPress-category coverage
+#      (a vertical with no wp_category_id files its drafts under the CMS default, a step the operator
+#      otherwise redoes by hand on every post). The live audit runs on the host, where the credentials
+#      live: scripts/check_vertical_sites.py, wired into scripts/cron-wp-drafts.sh.
+if ! python3 "$ROOT/scripts/test_check_vertical_sites.py" >/dev/null 2>&1; then
+  echo "FAIL: vertical-routing audit tests — detail:"
+  python3 "$ROOT/scripts/test_check_vertical_sites.py" 2>&1 | tail -8; FAIL=1
+fi
+
 # 9. Voice gate (hard): the article body AND the social copy must read as one person commenting on the
 #    news — not the owner of the truth and not the reader's advisor (skills/claude_humanizer.md
 #    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated

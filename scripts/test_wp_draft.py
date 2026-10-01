@@ -412,6 +412,10 @@ try:
     check("no --status/--publish flag exists (publishing stays a human step)",
           not {"--status", "--publish"} & declared and '"status": "draft"' in src,
           f"declared options: {sorted(declared)}")
+    check("--refresh re-applies the mapping to drafts that already exist",
+          "--refresh" in declared and "un_pushed_only=not args.refresh" in src)
+    check("...and defaults to every row rather than the --limit 1 batch",
+          "None if args.refresh else 1" in src)
     payload, _ = wd.build_payload(ROW, SITE)
     check("payload status is hard-coded to draft", payload["status"] == "draft")
 finally:
