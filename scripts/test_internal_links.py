@@ -121,6 +121,10 @@ long_anchor = gos._anchor_for({"title": long_title}, set())
 check("a long title is trimmed at a word boundary, never mid-word",
       long_anchor.endswith("…") and all(w in long_title.split() for w in long_anchor.rstrip("…").split()),
       long_anchor)
+check("a subtitle title anchors on its head phrase",
+      gos._anchor_for({"title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes"}, set())
+      == "NY Heat Pump Rebate",
+      gos._anchor_for({"title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes"}, set()))
 check("no links => no section (an empty heading is worse than none)",
       sm._format_related_reading([]) == "")
 check("no links => the operator comment says so",

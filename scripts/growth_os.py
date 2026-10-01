@@ -183,6 +183,11 @@ def _anchor_for(candidate, target_words):
     text = re.sub(r"^(the|our|why|how to|how|what)\s+", "", text, flags=re.I).strip(" :,-–—")
     if not text:
         text = candidate.get("slug", "")
+    # Many titles carry a subtitle ("NY Heat Pump Rebate: Double Payouts for Sealed Homes"). The head
+    # phrase is the better anchor when it stands on its own — shorter, and it names the page.
+    head = re.split(r"\s+[—–|]\s+|:\s+", text, maxsplit=1)[0].strip(" ,;:-–—")
+    if len(head) >= 18:
+        text = head
     if len(text) > 64:
         text = text[:64].rsplit(" ", 1)[0] + "…"
     return text
