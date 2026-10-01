@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T00:20:18Z",
+  "updated_at": "2026-10-01T11:09:42Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -153,6 +153,17 @@
         "A Fixed Backup Plan"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-01"
+    },
+    {
+      "slug": "2026-10-01_token-prices-halved-cfo-cant-read-bill",
+      "title": "Token Prices Just Halved. The CFO Still Can't Read the Bill.",
+      "url": "https://pressflow.aichieve.net/published/2026-10-01_token-prices-halved-cfo-cant-read-bill.md",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "enterprise_cai",
       "date": "2026-10-01"
     }
   ]

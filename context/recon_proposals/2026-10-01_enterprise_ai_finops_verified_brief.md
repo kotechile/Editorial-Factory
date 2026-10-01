@@ -1,0 +1,22 @@
+# Verified Brief: enterprise_ai_finops — 2026-10-01
+
+Synthesis brief (Angle Type: Synthesis). Dual-anchor gate: both legs carry ≥2 VERIFIED claims against primary sources fetched live this run. 0 claims removed, 0 flagged.
+
+| # | Signal Leg | Claim | Status | Source URL | Verbatim |
+|---|------------|-------|--------|-----------|----------|
+| 1 | A (price collapse) | OpenAI cut GPT-6 Sol and Luna API prices by 50% versus GPT-5.6 promotional pricing | VERIFIED | https://openai.com/index/introducing-gpt-6-sol-and-luna/ | "reducing API prices for Sol and Luna by 50% compared with their GPT-5.6 promotional pricing" |
+| 2 | A | GPT-6 Sol = $2 in / $10 out per 1M tokens; GPT-6 Luna = $0.10 in / $0.50 out | VERIFIED | https://openai.com/index/introducing-gpt-6-sol-and-luna/ | "GPT-5.6 Sol → GPT-6 Sol: $4 → $2, $20 → $10, 50% cheaper … GPT-5.6 Luna → GPT-6 Luna: $0.20 → $0.10, $1.20 → $0.50, 50% cheaper. Prices are per 1 million tokens." |
+| 3 | A | OpenAI says caching and inference efficiency paid for the cut | VERIFIED | https://openai.com/index/introducing-gpt-6-sol-and-luna/ | "Improvements in caching and inference let us serve these models at lower cost, and we're passing those savings directly on to users and customers" |
+| 4 | A (price collapse) | Claude Opus 5.5 costs $4 in / $20 out per 1M tokens (20% below Opus 5) and cache reads $0.20 (60% below) | VERIFIED | https://www.anthropic.com/news/claude-opus-5-5 | "Input and output tokens are $4 and $20 per million, 20% less than Opus 5. Cache reads (which make up the majority of agentic and coding work costs) are $0.20 per million tokens, 60% less than Opus 5." |
+| 5 | A | Opus 5.5 matches Fable 5.1 on most work at 40% lower cost than Opus 5 | VERIFIED | https://www.anthropic.com/news/claude-opus-5-5 | "It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5." |
+| 6 | B (attribution) | Only 4% of enterprises asked providers for cheaper prices; 23% asked for more granular/transparent data | VERIFIED | https://www.finops.org/insights/state-of-tokenomics-september-2026 | "The ask to model and token providers is more granular AI spend and usage data, not discounts. 23% asked for more transparency and granular data. Only 4% asked for cheaper prices." |
+| 7 | B | Three in four enterprises cannot confidently prove AI business outcomes to the CFO (39% not confident) | VERIFIED | https://www.finops.org/insights/state-of-tokenomics-september-2026 | "three in four enterprises cannot confidently prove AI business outcomes to the CFO … 39% are not confident they can connect AI spend to a measurable business outcome their CFO would accept." |
+| 8 | B | Defined AI-economics ownership and model routing correlate with CFO value (3.7× and 4×) | VERIFIED | https://www.finops.org/insights/state-of-tokenomics-september-2026 | "Those with defined ownership of Tokenomics are 3.7x more likely to show value to the CFO … 86% overall are evaluating or using a model router. Those using routers are 4x more likely to be able to show CFO value." |
+| 9 | B | 7% wrote FOCUS (the open billing standard) into free-text answers unprompted | VERIFIED | https://www.finops.org/insights/state-of-tokenomics-september-2026 | "Without being asked about it, 7% wrote FOCUS, the open billing data standard now used across cloud providers, into a free-text answer." |
+| 10 | Bridge | The two legs are adjacent in time: price cut Sept 22, buyer-preference survey released Sept 23 | VERIFIED | (both A and B sources above) | OpenAI/Anthropic both dated "September 22, 2026"; Tokenomics Foundation report released Sept 23, 2026 (472 orgs, 11 industries, $4.6T combined revenue) |
+
+## Gate notes
+- **Dual-Anchor Gate: PASS.** Leg A carries 5 VERIFIED claims (OpenAI ×3, Anthropic ×2); Leg B carries 4 VERIFIED claims (Tokenomics Foundation ×4). Both legs ≥2. Not under-sourced.
+- **Freshness:** every load-bearing claim dates Sep 22–23, 2026 — inside the Sep 1 → Oct 1 window.
+- **Sample size for Leg B** (472 orgs / $4.6T) is stated in the Tokenomics Foundation report summary, not restated as a fabricatable precision here; if the draft cites it, it traces to the report's own description.
+- No claims were REMOVED or FLAGGED. The dropped pre-window items (Harness Jul 29, State of FinOps Feb 19) are excluded from the claim set as load-bearing anchors and may appear only as explicitly-dated background context, not as freshness anchors.
