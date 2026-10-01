@@ -308,7 +308,7 @@ function formatHumanCadence(cadenceStr) {
     const h12 = isNaN(hInt) ? 6 : (hInt === 0 ? 12 : (hInt > 12 ? hInt - 12 : hInt));
     const amPm = !isNaN(hInt) && hInt >= 12 ? 'PM' : 'AM';
     const mStr = String(parseInt(minute, 10) || 0).padStart(2, '0');
-    const timeStr = `${h12}:${mStr} ${amPm} EST`;
+    const timeStr = `${h12}:${mStr} ${amPm} UTC`;
 
     const dayMap = { '0': 'Sun', '1': 'Mon', '2': 'Tue', '3': 'Wed', '4': 'Thu', '5': 'Fri', '6': 'Sat', '7': 'Sun' };
     if (dow === '*') return `Daily ${timeStr}`;
@@ -333,12 +333,12 @@ async function updateCalendarMarkdown(verticals) {
       '',
       'Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these schedules.',
       '',
-      '| Vertical | Cadence | Schedule (EST) | Status |',
+      '| Vertical | Cadence | Schedule (UTC) | Status |',
       '|---|---|---|---|',
     ];
 
     for (const v of verticals) {
-      lines.push(`| ${v.id} | ${v.cadence || '0 6 * * 1'} | ${formatHumanCadence(v.cadence)} | active |`);
+      lines.push(`| ${v.id} | ${v.cadence || '30 10 * * 1'} | ${formatHumanCadence(v.cadence)} | active |`);
     }
 
     lines.push('');
@@ -1482,7 +1482,7 @@ const server = createServer(async (req, res) => {
       const payload = {
         id: slug,
         label: vertical.label.trim(),
-        cadence: (vertical.cadence || '0 6 * * 1').trim(),
+        cadence: (vertical.cadence || '30 10 * * 1').trim(),
         target_persona: (vertical.target_persona || 'eng_leader').trim(),
         sources: Array.isArray(vertical.sources) ? vertical.sources : [],
         primary_angles: Array.isArray(vertical.primary_angles) ? vertical.primary_angles : [],
@@ -1579,7 +1579,7 @@ const server = createServer(async (req, res) => {
         const newVertical = {
           id: slug,
           label: label.trim(),
-          cadence: (cadence || '0 6 * * 1').trim(),
+          cadence: (cadence || '30 10 * * 1').trim(),
           target_persona: (target_persona || 'eng_leader').trim(),
           sources: Array.isArray(sources) ? sources : [],
           primary_angles: Array.isArray(primary_angles) ? primary_angles : [],

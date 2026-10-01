@@ -97,7 +97,7 @@ class DriftDetection(unittest.TestCase):
     def test_orphan_and_paused_are_separate_from_drift(self):
         live = [live_entry(v["id"], v["cadence"]) for v in REGISTRY]
         live.append(live_entry("home_systems_reno", "0 6 * * 1", job_id="retired"))
-        live.append(live_entry("gpu_hardware", "0 7 * * 3", enabled=False))
+        live.append(live_entry("gpu_hardware", BY_ID["gpu_hardware"]["cadence"], enabled=False))
         missing, drifted, orphans, paused, stale = sc.plan(REGISTRY, live)
         self.assertEqual([j["vertical"] for j in orphans], ["home_systems_reno"])
         self.assertEqual([j["vertical"] for _v, j in paused], ["gpu_hardware"],
@@ -122,6 +122,35 @@ class DriftDetection(unittest.TestCase):
             self.assertEqual(calls, [])                   # …and nothing was written
         finally:
             sc.run, sc.CHECK = original_run, original_check
+
+
+class PeakWindow(unittest.TestCase):
+    """DeepSeek bills weekday tokens at 2x inside 01:00-04:00 and 06:00-10:00 UTC."""
+
+    def test_registry_has_no_peak_cadence(self):
+        self.assertEqual(sc.peak_violations(REGISTRY), [],
+                         "a registry cadence sits inside the DeepSeek peak windows")
+
+    def test_peak_cadence_is_refused_even_when_live_state_matches_it(self):
+        # The dangerous case: the store already agrees with a bad registry row, so cadence
+        # drift is empty and only the peak rule catches it.
+        bad = dict(BY_ID["gpu_hardware"], cadence="0 6 * * 3")
+        registry = [bad if v["id"] == "gpu_hardware" else v for v in REGISTRY]
+        live = [live_entry(v["id"], v["cadence"]) for v in registry]
+        _m, drifted, _o, _p, _s = sc.plan(registry, live)
+        self.assertEqual(drifted, [])
+        self.assertEqual([v["id"] for v, _c, _msg in sc.peak_violations(registry)], ["gpu_hardware"])
+
+    def test_weekend_cadences_are_never_peak(self):
+        self.assertEqual(sc.cadence_verdict("0 6 * * 6")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("30 8 * * 0")[0], "ok")
+
+    def test_window_edges_are_off_peak(self):
+        # 04:00 and 10:00 close their windows; a pipeline may start there.
+        self.assertEqual(sc.cadence_verdict("0 4 * * 2")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("0 10 * * 2")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("59 3 * * 2")[0], "peak")
+        self.assertEqual(sc.cadence_verdict("59 9 * * 2")[0], "peak")
 
 
 if __name__ == "__main__":

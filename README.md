@@ -168,11 +168,14 @@ Verticals live entirely in `context/verticals.json` — each entry carries `id`,
 (cron expression), `sources`, `primary_angles`, and `target_persona`. To add one:
 
 1. Append an entry to `context/verticals.json`, giving it a `cadence` slot that is **free on every
-   weekday it uses** (slots are 30 minutes apart, 06:00–08:30 UTC — pipelines cannot share a slot).
+   weekday it uses** (slots are 30 minutes apart, 10:30–13:00 UTC — pipelines cannot share a slot).
+   Keep it out of DeepSeek's peak windows (Mon–Fri 01:00–04:00 and 06:00–10:00 UTC, where tokens cost
+   2x): `scripts/sync_crons.py` refuses to apply such a cadence, `--check` fails on it, and
+   `scripts/check_offpeak_crons.py` audits the whole live fleet (watchdogs included) the same way.
 2. Run `python3 scripts/sync_crons.py` on the VPS — it creates the missing `Full Pipeline: <id>`
    cron job and fixes any job whose schedule drifted from the registry. Add `--dry-run` to see the
    plan first; `--check` exits non-zero if the registry and the live fleet disagree (this is what
-   `scripts/verify.sh` runs).
+   `scripts/verify.sh` runs, together with the off-peak gate).
 3. Optionally add a matching `target_persona` to `context/personas.json`.
 
 No code changes required.

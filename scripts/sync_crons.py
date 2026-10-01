@@ -29,10 +29,18 @@ Adding a vertical: append an entry to context/verticals.json with a "cadence",
 re-run this script, then `node scripts/vertical-sync.mjs --vendor` in
 /root/software-factory-core so the coverage-ledger snapshot matches.
 
-Staggering: every pipeline job fires in a 30-minute slot (06:00-08:30 UTC) and the
+Staggering: every pipeline job fires in a 30-minute slot (10:30-13:00 UTC) and the
 registry's slots are unique per weekday — concurrent full pipelines share the
 frontier (kie.ai) and deepseek endpoints, and a 6-way 06:00 collision is what we
 were seeing before. Keep slots unique per day when adding a vertical.
+
+Off-peak: DeepSeek bills weekday tokens at 2x inside 01:00-04:00 and 06:00-10:00 UTC
+(weekends are off-peak all day), and the scheduler reads these hours on the host clock,
+which is UTC here. Every weekday cadence therefore sits at/after 10:30 UTC — the first
+slot after the 06:00-10:00 window — so a slow pipeline cannot start inside the 2x band.
+`plan()`-adjacent `peak_violations()` is what refuses a registry edit that lands in peak;
+scripts/check_offpeak_crons.py applies the same rule to the whole live fleet (watchdogs,
+one-shots, interval jobs).
 """
 import json
 import os
@@ -55,6 +63,53 @@ JOBS_PATH = os.environ.get(
 CHECK = "--check" in sys.argv
 DRY_RUN = "--dry-run" in sys.argv or CHECK
 RETIRE_ORPHANS = "--retire-orphans" in sys.argv
+
+# DeepSeek peak windows, [start_hour, end_hour) Mon-Fri, in UTC (the host clock the scheduler
+# reads cadences in). Peak tokens cost 2x. Mirrored by scripts/check_offpeak_crons.py, which
+# audits the non-registry jobs too; this copy is what stops a registry edit from *creating*
+# a peak-scheduled pipeline.
+PEAK_WINDOWS_UTC = ((1, 4), (6, 10))
+PEAK_DAYS = (1, 2, 3, 4, 5)
+
+
+def in_peak_hour(hour):
+    return any(lo <= hour < hi for lo, hi in PEAK_WINDOWS_UTC)
+
+
+def cadence_verdict(cadence):
+    """('ok'|'peak'|'unknown', message) for a 5-field cron cadence, weekday fires only."""
+    parts = (cadence or "").strip().split()
+    if len(parts) != 5:
+        return "unknown", f"not a 5-field cron expression: {cadence!r}"
+    minute, hour, dom, month, dow = parts
+    try:
+        dows = list(range(0, 7)) if dow == "*" else [int(d) % 7 for d in dow.split(",")]
+    except ValueError:
+        return "unknown", f"unreadable day-of-week field: {dow!r}"
+    weekdays = [d for d in dows if d in PEAK_DAYS]
+    if not weekdays:
+        return "ok", "weekend only — weekends are off-peak all day"
+    if hour == "*":
+        hours = None
+    elif hour.startswith("*/") or "," in hour or "-" in hour:
+        hours = None
+    else:
+        try:
+            hours = [int(hour)]
+        except ValueError:
+            return "unknown", f"unreadable hour field: {hour!r}"
+    if hours is None or any(in_peak_hour(h) for h in hours):
+        return "peak", (f"cadence '{cadence}' fires inside a DeepSeek peak window "
+                        f"(Mon-Fri 01:00-04:00 / 06:00-10:00 UTC, 2x tokens)")
+    return "ok", "weekday fires are outside the peak windows"
+
+
+def peak_violations(verticals):
+    return [(v, v["cadence"], msg)
+            for v in verticals
+            if v.get("cadence")
+            for verdict, msg in [cadence_verdict(v["cadence"])]
+            if verdict in ("peak", "unknown")]
 
 
 def load_verticals():
@@ -149,6 +204,7 @@ def main():
         return 0
 
     missing, drifted, orphans, paused, stale_prompt = plan(verticals, live)
+    peaks = peak_violations(verticals)
     print(f"registry: {len(verticals)} verticals | live pipeline jobs: {len(live)}")
 
     for v, cadence, err in missing:
@@ -157,16 +213,23 @@ def main():
         print(f"  DRIFTED  {PREFIX}{v['id']}  live='{j['cadence']}' registry='{cadence}'")
     for v, j in stale_prompt:
         print(f"  STALE PROMPT  {PREFIX}{v['id']}  (live instruction != registry instruction)")
+    for v, cadence, _msg in peaks:
+        print(f"  PEAK     {PREFIX}{v['id']}  {cadence} — DeepSeek 2x window "
+              f"(Mon-Fri 01:00-04:00 / 06:00-10:00 UTC); move it to at/after 10:30 UTC")
     for j in orphans:
         print(f"  ORPHAN   {j['name']}  ({j['cadence']}, not in registry)")
     for v, j in paused:
         print(f"  PAUSED   {j['name']}  (paused by operator; left alone)")
 
-    drift = bool(missing or drifted or orphans or stale_prompt)
+    drift = bool(missing or drifted or orphans or stale_prompt or peaks)
     if CHECK:
         print("check: " + ("DRIFT" if drift else
-                           f"ok — {len(verticals)} verticals in sync (cadence + prompt)"))
+                           f"ok — {len(verticals)} verticals in sync (cadence + prompt + off-peak)"))
         return 1 if drift else 0
+    if peaks:
+        # Fail closed: never reconcile the fleet ONTO a 2x-token schedule.
+        print(f"refusing to apply: {len(peaks)} cadence(s) inside the DeepSeek peak windows")
+        return 1
     if DRY_RUN and not drift:
         print("dry-run: nothing to do")
         return 0
@@ -222,9 +285,10 @@ def main():
     print(
         f"done: {created} created, {updated} updated, {failed} failed | "
         f"verify: {len(verticals) - len(m2)}/{len(verticals)} verticals scheduled, "
-        f"{len(d2)} drifted, {len(s2)} stale prompt, {len(o2)} orphan"
+        f"{len(d2)} drifted, {len(s2)} stale prompt, {len(o2)} orphan, "
+        f"{len(peak_violations(verticals))} peak"
     )
-    return 1 if (failed or m2 or d2 or s2) else 0
+    return 1 if (failed or m2 or d2 or s2 or peak_violations(verticals)) else 0
 
 
 if __name__ == "__main__":

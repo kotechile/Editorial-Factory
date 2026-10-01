@@ -67,7 +67,9 @@ def add_vertical(args):
     new_v = {
         "id": vid,
         "label": args.label.strip() if args.label else vid,
-        "cadence": args.cadence.strip() if args.cadence else "0 6 * * 1",
+        # Default to an off-peak weekday slot: DeepSeek charges 2x on Mon-Fri 01:00-04:00 and
+        # 06:00-10:00 UTC, so a new vertical must not land in that window by default.
+        "cadence": args.cadence.strip() if args.cadence else "30 10 * * 1",
         "target_persona": args.persona.strip() if args.persona else "eng_leader",
         "sources": sources,
         "primary_angles": angles,
@@ -155,7 +157,7 @@ def main():
     p_add = subparsers.add_parser("add", help="Add a new vertical")
     p_add.add_argument("--id", required=True, help="Unique slug ID (e.g. agentic_ai)")
     p_add.add_argument("--label", required=True, help="Display label")
-    p_add.add_argument("--cadence", default="0 6 * * 1", help="Cron cadence (default: '0 6 * * 1')")
+    p_add.add_argument("--cadence", default="30 10 * * 1", help="Cron cadence (default: '30 10 * * 1' — off-peak UTC)")
     p_add.add_argument("--persona", default="eng_leader", help="Target persona ID (e.g. eng_leader)")
     p_add.add_argument("--sources", default="", help="Comma-separated sources")
     p_add.add_argument("--angles", default="", help="Comma-separated primary angles")

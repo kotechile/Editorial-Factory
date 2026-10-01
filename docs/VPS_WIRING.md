@@ -77,14 +77,26 @@ The script reconciles four drift classes, and `--check` fails closed on every on
 - **orphan** — a `Full Pipeline:` job for a vertical no longer in the registry (e.g.
   `home_systems_reno`, retired in `b927ea6` and replaced by the Home & Lifestyle set)
 
-**Staggering.** Slots are 30 minutes apart (06:00–08:30 UTC) and unique within each weekday, so no
+**Staggering.** Slots are 30 minutes apart (10:30–13:00 UTC) and unique within each weekday, so no
 two full pipelines fire together. Six concurrent 06:00 runs is what we saw before: they share the
 deepseek API and the pinned frontier stylist (`kie.ai`), whose 400/5xx responses halt Loop 3. Keep
 slots unique per day when adding a vertical.
 
-Current weekday slot map: **Mon** 06:00, 06:30, 07:00, 07:30, 08:00 (`agentic_ai` + 4) ·
-**Tue** 06:00 … 08:30 (6) · **Wed** 06:00 … 08:00 (5) · **Thu** 06:00, 06:30 … 08:30 (6, incl.
-`agentic_ai`) · **Fri** 06:00, 06:30, 07:00 (3) · **Sat** 06:00, 06:30 (2). Full table:
+**Off-peak.** DeepSeek bills weekday tokens at 2x inside **01:00–04:00 and 06:00–10:00 UTC**
+(weekends are off-peak all day), and the scheduler reads cadence hours on the host clock, which is
+UTC on this VPS. So every weekday pipeline sits at/after 10:30 UTC — the first slot after the
+morning window — which also leaves the longest runway before the next window opens at 01:00, so a
+slow pipeline cannot run *into* a 2x band. The watchdogs moved with the fleet: `Weekly Market Recon`
+Mon 14:30, `Editorial Verify Gate` 14:00, `WordPress Draft Sweep` 14:15, `Daily Proactive Sweep`
+15:30, `Build Watchdog` 16:30, `Growth Watchdog` Fri 17:00. Two gates enforce it:
+`scripts/sync_crons.py --check` (registry cadences — it refuses to *apply* a peak cadence) and
+`scripts/check_offpeak_crons.py` (every enabled job in the live store that makes a model call; run
+by `verify.sh` §7.2, so the daily gate reports a drift back into the 2x band). `--no_agent` script
+jobs are exempt: they make no model call.
+
+Current weekday slot map: **Mon** 10:30, 11:00, 11:30, 12:00, 12:30 (`agentic_ai` + 4) ·
+**Tue** 10:30 … 13:00 (6) · **Wed** 10:30 … 12:30 (5) · **Thu** 10:30, 11:00 … 13:00 (6, incl.
+`agentic_ai`) · **Fri** 10:30, 11:00, 11:30 (3) · **Sat** 06:00, 06:30 (2, off-peak). Full table:
 `docs/USER_GUIDE.md` §3, or `hermes cron list`.
 
 Each job is self-contained and runs the complete pipeline (`radar_30day → synthesize_topics --seed →
@@ -110,7 +122,7 @@ Two things keep that step honest without a human:
 - `scripts/verify.sh` §8 re-derives that marker's row count against the file itself, so a signals file
   that gained or lost a row after seeding is reported as stale (files written before 2026-09-26 are
   grandfathered). It also runs the regression suites for the helper and this reconciler.
-- The **Editorial Verify Gate** cron job (`30 9 * * *`, `--no-agent --script`,
+- The **Editorial Verify Gate** cron job (`0 14 * * *`, `--no-agent --script`,
   `~/.hermes/scripts/editorial_verify_gate.sh` → `scripts/cron-verify-gate.sh`) runs `verify.sh` and
   checks that the pressflow image is on HEAD, printing **nothing** when green and a short, actionable
   report to `#loop-ai` when not. A gate nobody runs is documentation; this is the thing that runs it.

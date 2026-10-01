@@ -104,6 +104,17 @@ else
   echo "  skip: cron parity gate (no scheduler state on this host)"
 fi
 
+# 7.2 Off-peak gate (hard gate): DeepSeek bills weekday tokens at 2x inside 01:00-04:00 and
+#     06:00-10:00 UTC, and the scheduler reads cadence hours on the host clock (UTC here), so no
+#     scheduled job that makes a model call may fire in those windows. Covers the whole live fleet
+#     — watchdogs, one-shots and interval jobs, not just the registry-reconciled pipelines — and
+#     fails if the host clock has stopped being UTC, because that silently re-labels every cadence.
+#     `no_agent` script jobs are exempt: they make no model call. Skips when no scheduler state
+#     exists on this host (the deploy container).
+if ! python3 "$ROOT/scripts/check_offpeak_crons.py"; then
+  echo "FAIL: off-peak gate — a scheduled job spends 2x tokens in a DeepSeek peak window"; FAIL=1
+fi
+
 # 7.5 Sitemap drift gate (hard gate): context/sitemap.json is derived from published/*.md
 #     (scripts/sitemap_sync.py) and feeds the SEO tab + Growth OS loops. Hand-maintained it
 #     advertised four deleted articles and hid everything published since the fresh start.
@@ -133,6 +144,9 @@ if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-briefs; then
 fi
 if ! python3 "$ROOT/scripts/test_sync_crons.py" >/dev/null 2>&1; then
   echo "FAIL: cron fleet contract tests — detail:"; python3 "$ROOT/scripts/test_sync_crons.py" 2>&1 | tail -6; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/test_check_offpeak_crons.py" >/dev/null 2>&1; then
+  echo "FAIL: off-peak gate contract tests — detail:"; python3 "$ROOT/scripts/test_check_offpeak_crons.py" 2>&1 | tail -6; FAIL=1
 fi
 
 if ! python3 "$ROOT/scripts/test_distribution_prep.py" >/dev/null 2>&1; then

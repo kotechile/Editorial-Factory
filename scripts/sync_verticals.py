@@ -81,7 +81,10 @@ def human_cadence(cadence_str: str) -> str:
         h_int = int(hour) if hour.isdigit() else 6
         am_pm = "AM" if h_int < 12 else "PM"
         h_12 = h_int if 1 <= h_int <= 12 else (h_int - 12 if h_int > 12 else 12)
-        time_str = f"{h_12:02d}:{int(minute) if minute.isdigit() else 0:02d} {am_pm} EST"
+        # The scheduler fires on the host clock, which is UTC on the VPS. Labelling this "EST"
+        # made the DeepSeek peak windows (Mon-Fri 01:00-04:00 + 06:00-10:00 UTC) look off by
+        # hours, so the label has to match how the cadence is actually read.
+        time_str = f"{h_12:02d}:{int(minute) if minute.isdigit() else 0:02d} {am_pm} UTC"
 
         day_map = {"0": "Sun", "1": "Mon", "2": "Tue", "3": "Wed", "4": "Thu", "5": "Fri", "6": "Sat", "7": "Sun"}
         if dow == "*":

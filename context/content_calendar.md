@@ -4,32 +4,32 @@ Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these sc
 
 | Vertical | Cadence | Schedule (EST) | Status |
 |---|---|---|---|
-| agentic_ai | 0 6 * * 1,4 | Mon + Thu 06:00 AM EST | active |
-| ai_observability_qa | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| agentic_resilience_failure | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| enterprise_ai_governance | 0 6 * * 1 | Mon 06:00 AM EST | active |
-| nhil_infrastructure_ops | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| multi_agent_enterprise_fabric | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| enterprise_ai_finops | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| enterprise_tech_leadership | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| gpu_hardware | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| supply_chain | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| home_equity_tco | 0 6 * * 1 | Mon 06:00 AM EST | active |
-| smart_home_telemetry | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| home_ops_execution | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| resilient_home_assets | 0 6 * * 5 | Fri 06:00 AM EST | active |
-| home_infrastructure_lifecycle_tco | 0 6 * * 1 | Mon 06:00 AM EST | active |
-| workstation_compute_economics | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| enterprise_build_vs_buy | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| expat_cross_border_relocation | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| career_velocity_equity_engineering | 0 6 * * 5 | Fri 06:00 AM EST | active |
-| personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM EST | active |
-| meio_working_capital_tco | 0 6 * * 1 | Mon 06:00 AM EST | active |
-| control_tower_exception_orchestration | 0 6 * * 2 | Tue 06:00 AM EST | active |
-| warehouse_automation_robotics_capex | 0 6 * * 3 | Wed 06:00 AM EST | active |
-| demand_sensing_advanced_sop | 0 6 * * 4 | Thu 06:00 AM EST | active |
-| last_mile_routing_fleet_carbon | 0 6 * * 5 | Fri 06:00 AM EST | active |
-| supplier_risk_reshoring_decision | 0 6 * * 6 | Sat 06:00 AM EST | active |
+| agentic_ai | 30 10 * * 1,4 | Mon + Thu 10:30 AM UTC | active |
+| ai_observability_qa | 30 10 * * 2 | Tue 10:30 AM UTC | active |
+| agentic_resilience_failure | 30 10 * * 3 | Wed 10:30 AM UTC | active |
+| enterprise_ai_governance | 0 11 * * 1 | Mon 11:00 AM UTC | active |
+| nhil_infrastructure_ops | 0 11 * * 2 | Tue 11:00 AM UTC | active |
+| multi_agent_enterprise_fabric | 0 11 * * 3 | Wed 11:00 AM UTC | active |
+| enterprise_ai_finops | 0 11 * * 4 | Thu 11:00 AM UTC | active |
+| enterprise_tech_leadership | 30 11 * * 2 | Tue 11:30 AM UTC | active |
+| gpu_hardware | 30 11 * * 3 | Wed 11:30 AM UTC | active |
+| supply_chain | 30 11 * * 4 | Thu 11:30 AM UTC | active |
+| home_equity_tco | 30 11 * * 1 | Mon 11:30 AM UTC | active |
+| smart_home_telemetry | 0 12 * * 2 | Tue 12:00 PM UTC | active |
+| home_ops_execution | 0 12 * * 4 | Thu 12:00 PM UTC | active |
+| resilient_home_assets | 30 10 * * 5 | Fri 10:30 AM UTC | active |
+| home_infrastructure_lifecycle_tco | 0 12 * * 1 | Mon 12:00 PM UTC | active |
+| workstation_compute_economics | 30 12 * * 2 | Tue 12:30 PM UTC | active |
+| enterprise_build_vs_buy | 0 12 * * 3 | Wed 12:00 PM UTC | active |
+| expat_cross_border_relocation | 30 12 * * 4 | Thu 12:30 PM UTC | active |
+| career_velocity_equity_engineering | 0 11 * * 5 | Fri 11:00 AM UTC | active |
+| personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM UTC | active |
+| meio_working_capital_tco | 30 12 * * 1 | Mon 12:30 PM UTC | active |
+| control_tower_exception_orchestration | 0 13 * * 2 | Tue 01:00 PM UTC | active |
+| warehouse_automation_robotics_capex | 30 12 * * 3 | Wed 12:30 PM UTC | active |
+| demand_sensing_advanced_sop | 0 13 * * 4 | Thu 01:00 PM UTC | active |
+| last_mile_routing_fleet_carbon | 30 11 * * 5 | Fri 11:30 AM UTC | active |
+| supplier_risk_reshoring_decision | 30 6 * * 6 | Sat 06:30 AM UTC | active |
 
 ## Run log
 | Date | Vertical | Result | Notes |
