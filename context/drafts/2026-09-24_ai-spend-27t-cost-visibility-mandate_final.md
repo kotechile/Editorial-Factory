@@ -5,6 +5,12 @@ persona: enterprise_cai
 one_big_thing: "Cost management has moved from back-office FinOps to a hard requirement embedded in every AI purchase — and the metric that matters is cost per resolved work-unit, not token price."
 date: 2026-09-24
 slug: ai-spend-27t-cost-visibility-mandate
+image_path: "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A matte clay 3D render showing a distinct foundational block embedded within a stack of soft geometric shapes."
+image_caption: "Cost management is becoming a foundational layer physically embedded within enterprise AI deployments."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

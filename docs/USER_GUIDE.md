@@ -60,7 +60,9 @@ One pipeline run moves through three loops, then an approval gate:
    │
    ▼  Persistence (not gated)
 [publisher] writes the article to published/, the published log, Supabase and the sitemap, and
-            flips the run-log row. The reader site is live immediately.
+            flips the run-log row. The reader site is live immediately. It also commissions the
+            article's featured image here (see "Featured images" below) and creates the draft in
+            the destination CMS with that image attached.
    │
    ▼  Distribution gate (outbound only)
 [editor] surfaces the LinkedIn / Reddit copy and waits. Nothing goes outbound without
@@ -71,6 +73,51 @@ One pipeline run moves through three loops, then an approval gate:
 ```
 
 The full instructions live in `skills/*.md` (the SOPs) and the personas in `.agents/*.md`.
+
+### Featured images (the art director)
+
+Every article gets one 16:9 header image, and it is a **decision about that story**, not a template:
+
+- A frontier **art director** (`scripts/illustration_creator.py`, running on Gemini 3.1 Pro) reads the
+  article's own title, thesis, lead, section headings, numbers section and source list, and picks a
+  **treatment** from a catalogue of ten: editorial macro, cinematic still, document flat-lay, matte 3D
+  render, technical isometric cutaway, minimal geometry, paper collage, compressed telephoto industry,
+  studio product shot, lit architecture at dusk (`skills/illustration_director.md`).
+- It then generates the image on **kie.ai** — **Flux-2 Pro** for anything physical or photographic,
+  **Nano Banana Pro** for anything constructed (a render, a cutaway, flat geometry, a collage) — and
+  writes the metadata the CMS needs: **alt text** (≤125 chars, for screen readers), a **caption**, and
+  a **credit**.
+- The direction is anchored to the text: the brief must quote a **verbatim cue** from the article,
+  and it may **not repeat a treatment used in the last four illustrations** — so a reader scrolling
+  the desk sees macro photography, then a clay render, then a cutaway, not one filter forty times.
+  Hard rules enforced in code: no legible text in the image, no real company's logo or product, no
+  stock-photo clichés (handshake, light bulb, chess pieces…), and the prompt must actually be in the
+  treatment it claims.
+- It runs **inside the persistence pass** (reported as `[image]` notes next to `[assets]`), is **not**
+  approval-gated, and never blocks a publish: if generation fails, the article still goes out and
+  `scripts/cron-wp-drafts.sh` retries the image on its next sweep.
+
+Where it lands: the image + its brief in `context/assets/illustrations/<slug>/` (the brief is
+committed, the binary is not — the CMS media library is the image's home), the `image_*` fields in the
+article's frontmatter, `metadata.illustration` on the Supabase row, and the attachment set as the
+post's **featured image** in WordPress with its alt text and caption.
+
+```bash
+# what each article has, and whether its image still matches its text (never spends)
+python3 scripts/illustration_creator.py published/*.md
+# commission (or re-commission) one by hand — the designer's override
+python3 scripts/illustration_creator.py context/drafts/X_final.md --apply --style technical_isometric
+# the brief only: see the treatment and prompt without spending image credits
+python3 scripts/illustration_creator.py context/drafts/X_final.md --dry-run
+# fill in images for articles that don't have one yet (bounded per run; skips unchanged texts)
+python3 scripts/illustration_creator.py --backfill --limit 2
+```
+
+Cost: measured ≈5–7 kie.ai credits per Flux-2 Pro image and ≈18 per Nano Banana Pro image (the desk
+holds a shared credit balance; `curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization:
+Bearer $KIE_API_KEY"`). Nothing is re-generated while the article's text is unchanged. Switch the
+whole step off with `--no-illustration` / `ILLUSTRATION_ENABLED=false`. Requires `KIE_API_KEY` (the
+kie.ai gateway key — **not** an `sk-ant-…` Anthropic key) and `GOOGLE_API_KEY` (the Loop 3 key).
 
 ### Article anatomy
 
@@ -179,6 +226,8 @@ Then either:
 | `context/drafts/` | the structural draft and the final Claude-rewritten piece |
 | `published/` | published articles (markdown) — served by the site; written in the run, not gated |
 | `context/published_log.md` | the running log of everything published |
+| `context/assets/illustrations/<slug>/` | each article's featured image + its brief (`featured.json`: treatment, prompt, model, task id, credits, alt/caption). The briefs are committed; the binaries are not (the CMS media library is their home) |
+| `context/illustration_log.md` | one row per generated image — what the art director reads to avoid repeating a treatment |
 
 **Which articles fuse two signals (synthesis):** a run can either report one signal or collide two
 into a thesis neither states alone (`skills/virality_judge.md` §2.5). The collided ones are marked
@@ -388,6 +437,9 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 | Claude rewrite returns 502/503 | kie.ai's Claude upstream is intermittently unstable (known). The stylist retries 3× before halting — usually resolves on its own. Check `https://api.kie.ai/api/v1/chat/credit` to confirm the key is still valid. |
 | A run produces nothing | Normal when no topic scores ≥ 8 — the engine refuses to publish a weak article. See the angle brief in `context/recon_proposals/` for why candidates were dropped. |
 | "Missing ANTHROPIC_API_KEY" | The stylist halts (by design) — verify `ANTHROPIC_API_KEY=*** <key>` in the stylist profile's `.env`. |
+| An article has no featured image | `python3 scripts/illustration_creator.py published/<file>.md` reports why (no key, no image staged on this host, or a text change awaiting a re-read). The sweep (`scripts/cron-wp-drafts.sh`) re-tries before every CMS push; run one by hand with `... <artifact> --apply`. |
+| "no kie.ai key" when illustrating | `KIE_API_KEY` must be the **kie.ai** gateway key (the stylist profile holds the same value as `ANTHROPIC_API_KEY=Bearer <kie key>`). An `sk-ant-…` Anthropic-direct key authenticates the Claude API but not `api.kie.ai`. |
+| A generated image fails | kie.ai's image upstreams fail intermittently (`Internal Error` on an accepted task) — the client retries the task 3× and a failed task is not billed. A persistent failure surfaces, the article still publishes, and the sweep re-tries. |
 | Claims removed | The verifier dropped unverifiable claims. Check the verified brief; that's the no-hallucination rule working as intended. |
 | Job not firing | `hermes cron status` and `systemctl --user status hermes-gateway.service hermes-dashboard.service`. |
 

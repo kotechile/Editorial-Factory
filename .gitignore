@@ -20,6 +20,14 @@ test-results/
 playwright-report/
 .*_backup*
 
+# generated featured images: the CMS media library is their canonical home and the staged file is
+# only the upload's source. The brief beside each image (featured.json) IS committed — it is the
+# provenance record (prompt, model, task id, credits, alt/caption) and the anti-repeat history.
+context/assets/illustrations/**/*.jpg
+context/assets/illustrations/**/*.jpeg
+context/assets/illustrations/**/*.png
+context/assets/illustrations/**/*.webp
+
 # OS
 .DS_Store
 

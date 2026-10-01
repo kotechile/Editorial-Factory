@@ -14,6 +14,7 @@ import html
 import pathlib
 import re
 import sys
+import tempfile
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -46,10 +47,13 @@ def raises(name: str, fn, contains: str = ""):
 
 class StubWP(BaseHTTPRequestHandler):
     posts: dict[str, dict] = {}
+    media: dict[str, dict] = {}
+    media_bytes: dict[str, bytes] = {}
     requests: list[tuple[str, str, dict]] = []
     require_auth = True
     expected_auth = ""       # set by the test: "Basic <b64>" — a wrong password must 401
     sanitize = False         # True = behave like a CMS that strips scripts/SVG on save (kses)
+    media_alt_forbidden = False   # True = behave like an account without edit_post on attachments
 
     def log_message(self, *args):                 # keep the test output readable
         pass
@@ -95,6 +99,16 @@ class StubWP(BaseHTTPRequestHandler):
         if not self._authed():
             return
         StubWP.requests.append(("GET", self.path, {}))
+        if self.path.startswith("/wp-json/wp/v2/media/"):
+            media_id = self.path.split("/wp-json/wp/v2/media/")[1].split("?")[0]
+            item = StubWP.media.get(media_id)
+            if not item:
+                return self._send(404, {"code": "rest_post_invalid_id", "message": "Invalid media ID."})
+            return self._send(200, self._media_shaped(item))
+        if self.path.startswith("/wp-json/wp/v2/media?"):
+            slug = self.path.split("slug=")[1].split("&")[0]
+            return self._send(200, [self._media_shaped(m) for m in StubWP.media.values()
+                                    if m["slug"] == slug])
         if self.path.startswith("/wp-json/wp/v2/categories/"):
             cid = self.path.split("/wp-json/wp/v2/categories/")[1].split("?")[0]
             catalog = {"9": "Autonomous &amp; Agentic Workflows", "7": "AI Stack &amp; Tool TCO"}
@@ -113,9 +127,51 @@ class StubWP(BaseHTTPRequestHandler):
             return self._send(200, found)
         self._send(404, {"message": "not found"})
 
+    @staticmethod
+    def _media_shaped(item: dict) -> dict:
+        """What WordPress actually returns for an attachment: `title` and `caption` are
+        `{raw, rendered}` objects while `alt_text` is a plain string. Returning plain strings here
+        would hide the read-back false positive that a live push hits."""
+        shaped = dict(item)
+        for field in ("title", "caption"):
+            value = item.get(field) or ""
+            shaped[field] = {"raw": value, "rendered": value}
+        return shaped
+
+    def _post_media(self):
+        """The media endpoints take the image as the raw request body, not JSON."""
+        length = int(self.headers.get("Content-Length") or 0)
+        raw = self.rfile.read(length)
+        if self.path == "/wp-json/wp/v2/media":
+            disposition = self.headers.get("Content-Disposition") or ""
+            found = re.search(r'filename="?([^";]+)"?', disposition)
+            filename = found.group(1) if found else "upload.bin"
+            StubWP.requests.append(("POST", self.path, {"filename": filename, "bytes": len(raw),
+                                                        "content_type": self.headers.get("Content-Type")}))
+            media_id = str(1000 + len(StubWP.media) + 1)
+            item = {"id": media_id, "slug": pathlib.Path(filename).stem,
+                    "source_url": f"https://cms.example.com/wp-content/uploads/{filename}",
+                    "alt_text": "", "caption": "", "title": "", "post": 0,
+                    "mime_type": self.headers.get("Content-Type") or "application/octet-stream"}
+            StubWP.media[media_id] = item
+            StubWP.media_bytes[media_id] = raw
+            return self._send(201, self._media_shaped(item))
+        media_id = self.path.rsplit("/", 1)[1]
+        item = StubWP.media.get(media_id)
+        if not item:
+            return self._send(404, {"code": "rest_post_invalid_id", "message": "Invalid media ID."})
+        updates = json.loads(raw.decode() or "{}")
+        if StubWP.media_alt_forbidden:               # the capability that silently drops alt text
+            updates = {k: v for k, v in updates.items() if k != "alt_text"}
+        item.update(updates)
+        StubWP.requests.append(("POST", self.path, updates))
+        return self._send(200, self._media_shaped(item))
+
     def do_POST(self):
         if not self._authed():
             return
+        if self.path == "/wp-json/wp/v2/media" or self.path.startswith("/wp-json/wp/v2/media/"):
+            return self._post_media()
         body = self._read()
         StubWP.requests.append(("POST", self.path, body))
         if StubWP.sanitize:
@@ -372,7 +428,181 @@ check("credentials_for returns the per-site pair",
 # end-to-end against the stub CMS
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# featured image — staged by scripts/illustration_creator.py, uploaded and verified here
+# ─────────────────────────────────────────────────────────────────────────────
+
+SLUG = ROW["metadata"]["slug"]
+ILLUSTRATION = {
+    "slug": SLUG, "style": "editorial_macro", "style_label": "Editorial macro",
+    "model": "flux-2/pro-text-to-image",
+    "alt_text": "Translucent plastic resin pellets resting on a steel plate.",
+    "caption": "The duty now lands on the material before it becomes packaging.",
+    "title": "Plastic resin pellets",
+    "credit": "Illustration: Editorial-Factory Intelligence Unit",
+    "local_path": f"context/assets/illustrations/{SLUG}/featured.png",
+}
+ILLUSTRATED_ROW = {**ROW, "metadata": {**ROW["metadata"], "illustration": ILLUSTRATION}}
+
+print("\nfeatured image — payload mapping")
+recorded_row = {**ROW, "metadata": {**ROW["metadata"], "wordpress": {"post_id": 101, "media_id": 1234}}}
+payload_recorded, notes_recorded = wd.build_payload(recorded_row, SITE)
+check("a recorded attachment id is re-sent, so a refresh keeps the article's image",
+      payload_recorded.get("featured_media") == 1234, str(payload_recorded.get("featured_media")))
+check("...and is reported", any("featured media 1234" in n for n in notes_recorded), str(notes_recorded))
+check("no illustration and no recorded media => no featured_media key",
+      "featured_media" not in wd.build_payload(ROW, SITE)[0])
+bad_media_notes = wd.build_payload(
+    {**ROW, "metadata": {**ROW["metadata"], "wordpress": {"media_id": "not-a-number"}}}, SITE)[1]
+check("a non-numeric recorded media id is reported instead of sent",
+      any("not a number" in n for n in bad_media_notes)
+      and "featured_media" not in wd.build_payload(
+          {**ROW, "metadata": {**ROW["metadata"], "wordpress": {"media_id": "not-a-number"}}}, SITE)[0],
+      str(bad_media_notes))
+
+# what the attachment fields must carry, derived from the illustration record
+meta = wd.media_meta(ILLUSTRATION, SLUG)
+check("the alt text and caption come from the brief, unchanged",
+      meta["alt_text"] == ILLUSTRATION["alt_text"] and meta["caption"] == ILLUSTRATION["caption"])
+check("...and the library description records how the image was made",
+      "Editorial macro" in meta["description"] and "flux-2/pro-text-to-image" in meta["description"],
+      meta["description"])
+
+print("\nfeatured image — upload, caption, reuse (no duplicate bytes in the library)")
+StubWP.media, StubWP.media_bytes = {}, {}
+media_server, media_base = start_stub()
+with tempfile.TemporaryDirectory() as tmp:
+    origin_root = wd.ROOT
+    wd.ROOT = pathlib.Path(tmp)
+    try:
+        staged = pathlib.Path(tmp) / ILLUSTRATION["local_path"]
+        staged.parent.mkdir(parents=True, exist_ok=True)
+        blob = b"\x89PNG\r\n\x1a\n" + b"header bytes" * 40
+        staged.write_bytes(blob)
+
+        wp = wd.WordPress(media_base, "editor", "secret")
+        notes: list = []
+        item = wd.ensure_featured_media(wp, SLUG, ILLUSTRATION, notes)
+        check("the staged image is uploaded as an attachment",
+              item and item["id"] in StubWP.media and StubWP.media_bytes[item["id"]] == blob)
+        check("...named `<slug>-featured` so the media slug is a stable idempotency key",
+              item["slug"] == f"{SLUG}-featured", item["slug"])
+        check("...typed from its extension", item["mime_type"] == "image/png", item["mime_type"])
+        check("...with the brief's alt text, caption and library title set on the CMS",
+              item["alt_text"] == ILLUSTRATION["alt_text"]
+              and wd._field_text(item["caption"]) == ILLUSTRATION["caption"]
+              and wd._field_text(item["title"]) == ILLUSTRATION["title"], json.dumps(item))
+        check("...and the upload reported", any("uploaded" in n for n in notes), str(notes))
+
+        notes2: list = []
+        again = wd.ensure_featured_media(wp, SLUG, ILLUSTRATION, notes2, recorded_id=item["id"])
+        check("a re-push with the recorded id reuses the attachment",
+              again["id"] == item["id"] and len(StubWP.media) == 1, str(list(StubWP.media)))
+        check("...and says so", any("recorded on the row" in n for n in notes2), str(notes2))
+
+        notes3: list = []
+        by_slug = wd.ensure_featured_media(wp, SLUG, ILLUSTRATION, notes3)
+        check("without a recorded id the media slug still finds it (no second copy)",
+              by_slug["id"] == item["id"] and len(StubWP.media) == 1, str(list(StubWP.media)))
+        check("...and says so", any("media slug match" in n for n in notes3), str(notes3))
+
+        StubWP.media[item["id"]]["alt_text"] = "stale alt from a previous push"
+        wd.ensure_featured_media(wp, SLUG, ILLUSTRATION, [])
+        check("an attachment whose metadata drifted is re-captioned, not re-uploaded",
+              StubWP.media[item["id"]]["alt_text"] == ILLUSTRATION["alt_text"]
+              and len(StubWP.media) == 1)
+
+        missing = wd.ensure_featured_media(wp, "no-such-slug",
+                                           {"slug": "no-such-slug", "local_path": "nope.png"}, [])
+        missing_notes: list = []
+        wd.ensure_featured_media(wp, "no-such-slug", {"slug": "no-such-slug",
+                                                     "local_path": "nope.png"}, missing_notes)
+        check("an article whose image is not on this host is reported, not silently headerless",
+              missing is None and any("illustration_creator.py" in n for n in missing_notes),
+              str(missing_notes))
+    finally:
+        wd.ROOT = origin_root
+
+print("\nfeatured image — the alt text a lower-privilege password cannot set")
+dropped = wd.media_problems(meta, {"alt_text": "", "title": meta["title"], "caption": meta["caption"]})
+check("a CMS that drops alt_text is caught by the read-back",
+      len(dropped) == 1 and "alt_text" in dropped[0], str(dropped))
+check("a read-back in WordPress's own shape ({raw, rendered}) is NOT a defect",
+      wd.media_problems(meta, {"alt_text": meta["alt_text"],
+                               "title": {"raw": meta["title"], "rendered": meta["title"]},
+                               "caption": {"raw": meta["caption"], "rendered": meta["caption"]}}) == [],
+      str(wd.media_problems(meta, {"alt_text": meta["alt_text"],
+                                   "title": {"rendered": meta["title"]},
+                                   "caption": {"rendered": meta["caption"]}})))
+check("matching fields report nothing",
+      wd.media_problems(meta, {"alt_text": meta["alt_text"], "title": meta["title"],
+                               "caption": meta["caption"]}) == [])
+check("an unattached image is fine, a missing featured_media on the post is not",
+      wd.delivery_problems({"featured_media": 3, "title": "t", "excerpt": "e", "content": "c"},
+                           {"featured_media": 0, "title": {"raw": "t"}, "excerpt": {"raw": "e"},
+                            "content": {"raw": "c"}, "status": "draft"})
+      and not wd.delivery_problems({"title": "t", "excerpt": "e", "content": "c"},
+                                   {"title": {"raw": "t"}, "excerpt": {"raw": "e"},
+                                    "content": {"raw": "c"}, "status": "draft"}))
+check("the summary names the featured media it verified",
+      "featured media 3" in wd.verification_summary(
+          {"featured_media": 3, "excerpt": "e", "content": "c"}, {}))
+
+print("\nfeatured image — end to end through push_one")
+StubWP.posts, StubWP.media = {}, {}
+with tempfile.TemporaryDirectory() as tmp:
+    origin_root = wd.ROOT
+    wd.ROOT = pathlib.Path(tmp)
+    try:
+        staged = pathlib.Path(tmp) / ILLUSTRATION["local_path"]
+        staged.parent.mkdir(parents=True, exist_ok=True)
+        staged.write_bytes(b"\x89PNG\r\n\x1a\n" + b"illustrated header" * 32)
+        db = FakeDB()
+        # The stub server, not the fixture's real CMS base URL: wp_factory receives the site's
+        # cms_base_url, and a test that forwards it would be talking to the live site.
+        withmedia = wd.push_one(ILLUSTRATED_ROW, db,
+                                wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+        post = StubWP.posts[[k for k in StubWP.posts][0]]
+        check("the draft is created with the attachment as its featured image",
+              str(post.get("featured_media")) == str(withmedia["media_id"]) and withmedia["media_id"],
+              f"post featured_media={post.get('featured_media')} media_id={withmedia['media_id']}")
+        check("...attached to the post in the library (post_parent set)",
+              StubWP.media[str(withmedia["media_id"])]["post"] == post["id"],
+              str(StubWP.media[str(withmedia["media_id"])]["post"]))
+        record = db.recorded[-1]["record"]
+        check("...and recorded on the Supabase row (id, url, alt)",
+              record["media_id"] == withmedia["media_id"] and record["media_url"].startswith("https://")
+              and record["media_alt"] == ILLUSTRATION["alt_text"], json.dumps(record)[:200])
+        check("...with the delivery verified, featured image included",
+              withmedia["verified"] and not withmedia["problems"]
+              and "featured media" in withmedia["summary"], str(withmedia)[:240])
+
+        # The image must not be uploaded twice for the same article.
+        db2 = FakeDB()
+        second = wd.push_one({**ILLUSTRATED_ROW,
+                              "metadata": {**ILLUSTRATED_ROW["metadata"],
+                                           "wordpress": {"media_id": withmedia["media_id"]}}},
+                             db2, wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+        check("a second push reuses the attachment instead of adding a copy",
+              second["media_id"] == withmedia["media_id"] and len(StubWP.media) == 1,
+              str(list(StubWP.media)))
+
+        StubWP.media_alt_forbidden = True
+        withbadmedia = wd.push_one({**ILLUSTRATED_ROW, "title": "Another headline for a new slug",
+                                    "metadata": {**ILLUSTRATED_ROW["metadata"],
+                                                 "slug": "second-article",
+                                                 "illustration": {**ILLUSTRATION, "slug": "second-article"}}},
+                                   FakeDB(), wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+        check("an account that cannot set alt text fails the verification loudly",
+              not withbadmedia["verified"]
+              and any("alt_text" in p for p in withbadmedia["problems"]),
+              str(withbadmedia["problems"])[:200])
+        StubWP.media_alt_forbidden = False
+    finally:
+        wd.ROOT = origin_root
+
 print("\nend-to-end against a stub WordPress")
+StubWP.posts, StubWP.media = {}, {}      # the earlier featured-image section left posts behind
 server, base = start_stub()
 try:
     db = FakeDB()

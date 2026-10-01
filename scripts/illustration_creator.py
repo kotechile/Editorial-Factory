@@ -106,6 +106,11 @@ _CLICHE_RE = re.compile(
     r"scales of justice|gavel|thumbs up|magnifying glass over|robot handshake)\b", re.I)
 _NON_ENGLISH_RE = re.compile(r"[\u0400-\u04FF\u4E00-\u9FFF\u0600-\u06FF\u3040-\u30FF\uAC00-\uD7AF]")
 _ALT_PREFIX_RE = re.compile(r"^\s*(an?\s+)?(image|picture|photo|photograph|illustration|graphic|render)\s+(of|showing)\b", re.I)
+# The same "medium of/showing" opening, reached through one or two adjectives ("a matte clay 3D
+# render showing…"): a screen reader gains nothing from the medium, so the description should start
+# with the subject. Scoped to the opening of the string so a legitimate mid-sentence use is fine.
+_ALT_MEDIUM_RE = re.compile(r"^.{0,45}?\b(image|picture|photo|photograph|illustration|graphic|render)\b"
+                            r"\s+(of|showing|depicting)\b", re.I | re.S)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -423,8 +428,9 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if not 20 <= len(alt) <= 125:
         problems.append(f"alt_text is {len(alt)} chars — the desk writes 125 or fewer so a screen "
                         f"reader reads it whole")
-    if _ALT_PREFIX_RE.match(alt):
-        problems.append("alt_text opens with 'image/picture/photo of' — describe the subject instead")
+    if _ALT_PREFIX_RE.match(alt) or _ALT_MEDIUM_RE.match(alt):
+        problems.append("alt_text opens on the medium ('image/photo/render of…') — describe the "
+                        "subject instead; a screen reader gains nothing from the medium")
     if _NON_ENGLISH_RE.search(alt):
         problems.append("alt_text is not in English")
 
@@ -637,15 +643,30 @@ def parse_json_object(text: str) -> dict:
         raise BriefError(f"the brief is not JSON: {cleaned[:200]!r}") from None
 
 
-def style_history(ledger: pathlib.Path | None = None, limit: int = 12) -> list[str]:
-    """Treatments used most recently, newest first — read from the desk's own illustration ledger."""
+def style_history(ledger: pathlib.Path | None = None, limit: int = 12,
+                  exclude_slug: str | None = None) -> list[str]:
+    """Treatments used most recently, newest first — read from the desk's own illustration ledger.
+
+    The style cell is backticked in the ledger (`| \`editorial_macro\` |`), so the cell is
+    un-backticked before the catalogue lookup: matching the raw cell found nothing and the rotation
+    rule silently saw an empty history.
+
+    `exclude_slug` drops the rows belonging to the article being illustrated now. The rotation
+    exists so two DIFFERENT articles do not share a treatment; an article rewritten a week later
+    reusing the treatment it already had is not a repetition, and forbidding it would make every
+    re-read of a live piece produce a visual the text never earned.
+    """
     path = ledger or LEDGER
     if not path.exists():
         return []
     styles: list[str] = []
     for line in reversed(path.read_text(encoding="utf-8", errors="replace").splitlines()):
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) >= 4 and cells[3] in STYLES:
+        cells = [c.strip().strip("`").strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 4:
+            continue
+        if exclude_slug and len(cells) > 1 and cells[1] == exclude_slug:
+            continue
+        if cells[3] in STYLES:
             styles.append(cells[3])
         if len(styles) >= limit:
             break
@@ -1023,8 +1044,7 @@ def check_artifact(md: str, *, root: pathlib.Path | None = None,
     problems: list[str] = []
     if not slug:
         return ["no slug in frontmatter"]
-    missing = [k for k in ("image_path", "image_style", "image_alt", "image_source_hash")
-               if not fm.get(k)]
+    missing = [k for k in ("image_path", "image_style", "image_alt") if not fm.get(k)]
     if missing and not has_illustration(md):
         return [f"no illustration ({', '.join(missing)} absent)"]
     problems += [f"frontmatter missing {k}" for k in missing]
@@ -1062,17 +1082,26 @@ def ensure_illustration(md: str, *, root: pathlib.Path | None = None, slug: str 
 
     existing = read_sidecar(slug, root)
     current_hash = source_hash(md)
-    if (not force and has_illustration(md) and existing
-            and existing.get("source_hash") == current_hash):
-        notes.append(f"illustration already present: {existing['style']} "
-                     f"({existing['model_key']}, rev {existing.get('revision', 1)}) — text unchanged")
-        return md, notes, supabase_metadata(existing)
+    if not force and existing and existing.get("source_hash") == current_hash:
+        # The image already exists and was read from these exact words — with or without the
+        # frontmatter fields. An article illustrated AFTER it was published (the sweep, or a
+        # hand-run) has the image and a brief but no `image_*` fields in the artifact, and
+        # regenerating here would spend credits for a new reading of unchanged text. Fill the
+        # fields in instead.
+        if has_illustration(md):
+            notes.append(f"illustration already present: {existing['style']} "
+                         f"({existing['model_key']}, rev {existing.get('revision', 1)}) — text unchanged")
+            return md, notes, supabase_metadata(existing)
+        notes.append(f"already illustrated (rev {existing.get('revision', 1)}, {existing.get('style')}) "
+                     f"for this unchanged text — writing its fields into the frontmatter, "
+                     f"generating nothing")
+        return _write_frontmatter(md, frontmatter_fields(existing)), notes, supabase_metadata(existing)
 
     if existing and existing.get("source_hash") != current_hash:
         notes.append(f"the article text changed since rev {existing.get('revision', 1)} "
                      f"({existing.get('style')}) — commissioning a new reading")
 
-    history = style_history(ledger if ledger is not None else ledger_path(root))
+    history = style_history(ledger if ledger is not None else ledger_path(root), exclude_slug=slug)
     brief = direct(md, history=history, llm=llm, pinned_style=pinned_style,
                    pinned_model=pinned_model, notes=notes)
     brief.pinned = {k: v for k, v in (("style", pinned_style), ("model", pinned_model)) if v}
@@ -1108,9 +1137,16 @@ def _report(path: pathlib.Path, root: pathlib.Path | None = None) -> list[str]:
                          f"task {sidecar.get('task_id')}  {sidecar.get('credits', 0):g} credits  "
                          f"{'text unchanged' if age else 'TEXT CHANGED — a new reading is due'}")
     else:
-        history = style_history(ledger_path(root))
-        lines.append(f"{path.name}: no illustration"
-                     + (f"  [recent treatments: {', '.join(history[:4])}]" if history else ""))
+        side = read_sidecar(slug, root) if slug else None
+        if side:
+            lines.append(f"{path.name}: no image fields in the frontmatter, but rev "
+                         f"{side.get('revision', 1)} ({side.get('style')}, {side.get('model_key')}) "
+                         f"was read from this same text — the image is staged and pushed to the CMS; "
+                         f"re-running --apply fills the fields in (no new generation)")
+        else:
+            history = style_history(ledger_path(root))
+            lines.append(f"{path.name}: no illustration"
+                         + (f"  [recent treatments: {', '.join(history[:4])}]" if history else ""))
     return lines
 
 
@@ -1132,7 +1168,9 @@ def main() -> int:
     parser.add_argument("--force", action="store_true", help="regenerate even when the text is unchanged")
     parser.add_argument("--style", help=f"pin a treatment ({', '.join(STYLES)})")
     parser.add_argument("--model", help=f"pin a model ({', '.join(sorted(MODELS))})")
-    parser.add_argument("--limit", type=int, default=None, help="max artifacts in one run")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="max artifacts to GENERATE in one run (already-illustrated artifacts "
+                             "are examined and skipped for free)")
     parser.add_argument("--root", default=None, help="repo root (default: the script's parent)")
     args = parser.parse_args()
 
@@ -1180,9 +1218,10 @@ def main() -> int:
             if new_md != md:
                 path.write_text(new_md, encoding="utf-8")
                 print(f"  {path.name}: illustration written")
+                applied += 1     # --limit bounds GENERATIONS, not files examined: a backfill sweep
+                                 # must be able to walk an already-illustrated corpus for free
             else:
                 print(f"  {path.name}: unchanged")
-            applied += 1
         except IllustrationError as exc:
             print(f"  FAIL {path.name}: {exc}", file=sys.stderr)
             exit_code = 1

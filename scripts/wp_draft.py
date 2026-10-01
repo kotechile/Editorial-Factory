@@ -547,6 +547,16 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
     else:
         notes.append(f"no {SITES_TABLE}.wp_category_id for this vertical — WordPress will file the "
                      f"draft under its default category; set one before publishing")
+    # A previous push recorded the featured image's attachment id. Sending it keeps a --refresh or a
+    # dry run honest about what the post will carry; push_one replaces it with the id it resolves.
+    recorded_media = (metadata.get(WORDPRESS) or {}).get("media_id")
+    if recorded_media:
+        try:
+            payload["featured_media"] = int(recorded_media)
+            notes.append(f"featured media {int(recorded_media)} (recorded by a previous push)")
+        except (TypeError, ValueError):
+            notes.append(f"metadata.{WORDPRESS}.media_id is not a number ({recorded_media!r}) — "
+                         f"re-uploading the image rather than sending an id the CMS cannot accept")
     if not payload["slug"]:
         raise RuntimeError("article has no metadata.slug — it is the idempotency key")
     return payload, notes
@@ -628,16 +638,26 @@ def delivery_problems(payload: dict, post: dict) -> list[str]:
     if stored_post_id and str(post.get("status") or "") not in ("draft", "pending", "private", ""):
         problems.append(f"status: the post came back {post.get('status')!r}, not draft — "
                         f"publishing must stay a human step in the CMS")
+
+    # The featured image is a separate object; a post whose featured_media came back 0 (or dropped)
+    # renders with no header at all, which no post-field comparison would catch.
+    sent_media = payload.get("featured_media")
+    if sent_media:
+        stored_media = post.get("featured_media")
+        if str(stored_media or "") != str(sent_media):
+            problems.append(f"featured image: sent media {sent_media}, CMS holds {stored_media!r} — "
+                            f"the post would render without its header")
     return problems
 
 
 def verification_summary(payload: dict, post: dict) -> str:
     """A one-line description of what a successful read-back verified."""
     content = payload.get("content") or ""
+    featured = f", featured media {payload['featured_media']}" if payload.get("featured_media") else ""
     return (f"title, {len(_plain_text(payload.get('excerpt')))}-char excerpt, "
             f"{len(_ld_blocks(content))} JSON-LD block(s), "
             f"{len(re.findall(r'<svg', content, re.I))} inline SVG(s), "
-            f"{len(content)} chars of body")
+            f"{len(content)} chars of body{featured}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -715,6 +735,174 @@ class WordPress:
         _, post = self._call("POST", "posts", payload)
         return post, "created"
 
+    # ── media library (the featured image's home) ────────────────────────────
+    #
+    # The featured image is not sent in the post body: WordPress stores it as an attachment and the
+    # post carries its id in `featured_media`. So a push is two writes (media, then post) and the
+    # image's public URL only exists after the first one — which is why the id is recorded in
+    # metadata.wordpress and reused on every later push instead of re-uploading the same bytes.
+
+    def media(self, media_id) -> dict | None:
+        """One attachment by id, or None when the CMS no longer holds it (deleted in wp-admin)."""
+        try:
+            _, item = self._call("GET", f"media/{int(media_id)}?_fields=id,slug,source_url,alt_text,"
+                                        f"caption,title,post,media_type,mime_type")
+        except RuntimeError as exc:
+            if "HTTP 404" in str(exc) or "rest_post_invalid_id" in str(exc):
+                return None
+            raise
+        return item or None
+
+    def find_media(self, slug: str) -> dict | None:
+        """The attachment whose slug matches — `slug` here is the media slug, not the post slug.
+
+        WordPress derives an attachment's slug from its filename, so `<article-slug>-featured` is a
+        stable idempotency key for the image across pushes.
+        """
+        _, items = self._call("GET", f"media?slug={urllib.parse.quote(slug)}&per_page=1"
+                                     f"&_fields=id,slug,source_url,alt_text,caption,title,post")
+        return (items or [None])[0]
+
+    def upload_media(self, filename: str, blob: bytes, content_type: str,
+                     meta: dict | None = None) -> dict:
+        """Upload one image as an attachment. WordPress needs the binary as the raw body."""
+        url = f"{self.base}/wp-json/wp/v2/media"
+        headers = {"Authorization": self.auth,
+                   "Content-Type": content_type or "application/octet-stream",
+                   "Content-Disposition": f'attachment; filename="{filename}"',
+                   "Accept": "application/json"}
+        req = urllib.request.Request(url, data=blob, headers=headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=self.timeout) as response:
+                created = json.loads(response.read().decode("utf-8", "replace") or "{}")
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", "replace")[:400]
+            raise RuntimeError(f"WordPress POST media ({filename}, {len(blob)} bytes) -> "
+                               f"HTTP {exc.code}: {detail}") from None
+        if meta:
+            created = {**created, **(self.update_media(created.get("id"), meta) or {})}
+        return created
+
+    def update_media(self, media_id, meta: dict) -> dict | None:
+        """Set the attachment's alt text / caption / title. Idempotent: a no-op change is a POST."""
+        if not media_id:
+            return None
+        _, item = self._call("POST", f"media/{int(media_id)}", meta)
+        return item or None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# featured image — scripts/illustration_creator.py stages it, this uploads it
+# ─────────────────────────────────────────────────────────────────────────────
+
+MEDIA_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
+
+
+def illustration_record(row: dict) -> dict:
+    """The art direction recorded on the row (metadata.illustration); {} for articles illustrated
+    before this step existed."""
+    return ((row.get("metadata") or {}).get("illustration") or {})
+
+
+def illustration_file(record: dict) -> pathlib.Path | None:
+    """The staged image on THIS host, or None.
+
+    The binary is deliberately not committed (see .gitignore): the CMS media library is the image's
+    canonical home, and the staged file is only the upload's source. So a push that cannot find the
+    file has to say so — pushing the post without a featured image and without a word is exactly the
+    silent degradation the third surgical rule forbids.
+    """
+    candidates = []
+    if record.get("local_path"):
+        candidates.append(ROOT / str(record["local_path"]))
+    slug = str(record.get("slug") or "")
+    if slug:
+        candidates += sorted((ROOT / "context" / "assets" / "illustrations" / slug).glob("featured.*"))
+    for path in candidates:
+        if path.is_file() and path.suffix.lower() in MEDIA_TYPES:
+            return path
+    return None
+
+
+def media_meta(record: dict, slug: str) -> dict:
+    """The attachment's CMS fields: the reader-facing alt/caption plus how the image was made."""
+    credit = record.get("credit") or ""
+    provenance = " · ".join(str(x) for x in (record.get("style_label"), record.get("model")) if x)
+    description = f"{credit} ({provenance})" if credit and provenance else (credit or provenance)
+    return {"title": record.get("title") or f"{slug} featured image",
+            "alt_text": record.get("alt_text") or "",
+            "caption": record.get("caption") or "",
+            "description": description}
+
+
+def ensure_featured_media(wp, slug: str, record: dict, notes: list, *, path=None,
+                          recorded_id=None) -> dict | None:
+    """Upload or re-find the article's featured image and make sure the CMS carries its metadata.
+
+    Idempotency is the media SLUG (`<article-slug>-featured`, derived from the filename WordPress
+    stores), backed by the id recorded in metadata.wordpress — so a re-push reuses the attachment
+    instead of adding a second copy of the same bytes to the library, which is what happens when a
+    connector simply posts the file again.
+    """
+    path = path or illustration_file(record)
+    if path is None:
+        notes.append(f"no featured image staged for {slug} "
+                     f"(looked for {record.get('local_path') or 'context/assets/illustrations/' + slug}) "
+                     f"— run `python3 scripts/illustration_creator.py <artifact> --apply` on this host; "
+                     f"pushing the draft without one")
+        return None
+    filename = f"{slug}-featured{path.suffix.lower()}"
+    media_slug = pathlib.Path(filename).stem
+    meta = media_meta(record, slug)
+
+    item = wp.media(recorded_id) if recorded_id else None
+    action = "reused (the id recorded on the row)"
+    if item is None:
+        item = wp.find_media(media_slug)
+        action = "reused (media slug match)"
+    if item is None:
+        item = wp.upload_media(filename, path.read_bytes(), MEDIA_TYPES[path.suffix.lower()])
+        action = "uploaded"
+    if not item or not item.get("id"):
+        raise RuntimeError(f"WordPress returned no attachment id for {filename}")
+    stale = {k: v for k, v in meta.items() if _field_text(item.get(k)) != _field_text(v)}
+    if stale:
+        item = {**item, **(wp.update_media(item.get("id"), stale) or {})}
+        action += f" + set {', '.join(sorted(stale))}"
+    notes.append(f"featured image {action}: media {item.get('id')} ({filename}, "
+                 f"{path.stat().st_size // 1024} KB, {path.stat().st_size} bytes)")
+    return item
+
+
+def _field_text(value) -> str:
+    """A CMS text field as reader-visible text, whether it came back as a string or as the
+    `{raw, rendered}` object WordPress returns for `title`/`caption` on media and posts.
+
+    Comparing the raw value against what was sent is the false positive this avoids: a correct
+    push reads back as `{'rendered': 'Macro plastic resin pellets'}` and would be reported as
+    'the CMS does not hold what was sent' on every single push.
+    """
+    if isinstance(value, dict):
+        value = value.get("raw") or value.get("rendered") or ""
+    return _plain_text(value)
+
+
+def media_problems(expected: dict, item: dict) -> list[str]:
+    """Compare the attachment fields that were sent against what the CMS holds.
+
+    Alt text is the one that matters most: it is what a screen reader announces, and WordPress
+    silently drops an `alt_text` a lower-privilege application password is not allowed to set.
+    """
+    problems: list[str] = []
+    for field in ("alt_text", "title", "caption"):
+        sent = _field_text(expected.get(field))
+        if not sent:
+            continue
+        if _field_text((item or {}).get(field)) != sent:
+            problems.append(f"media {field}: sent {sent[:60]!r}, CMS holds "
+                            f"{_field_text((item or {}).get(field))[:60]!r}")
+    return problems
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # driver
@@ -744,6 +932,29 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
 
     user, password = credentials_for(site["site_domain"])
     wp = (wp_factory or (lambda base, u, p: WordPress(base, u, p)))(site["cms_base_url"], user, password)
+
+    # The featured image goes up BEFORE the post: the payload carries the attachment id and
+    # WordPress will not accept one that does not exist yet. A failure here is reported and the
+    # draft is still pushed — an article with no featured image is recoverable by the next sweep,
+    # an article that never reached the CMS is not.
+    illustration = illustration_record(row)
+    recorded_media = (metadata.get(WORDPRESS) or {}).get("media_id")
+    media = None
+    media_failure = ""
+    media_expected: dict = {}
+    if illustration or recorded_media:
+        try:
+            media = ensure_featured_media(wp, payload["slug"], illustration, notes,
+                                          recorded_id=recorded_media)
+        except Exception as exc:                       # noqa: BLE001 - surface, never swallow (rule 6)
+            media_failure = str(exc)
+            notes.append(f"featured image FAILED: {media_failure}")
+            print(f"  featured image FAILED: {media_failure}", file=sys.stderr)
+        if media:
+            payload["featured_media"] = media.get("id")
+            media_expected = media_meta(illustration, payload["slug"])
+            print(f"  featured: media {media.get('id')} — {media.get('source_url') or 'no url returned'}")
+
     if payload.get("categories"):
         category_id = payload["categories"][0]
         print(f"  category: {category_id} — {html.unescape(wp.category_name(category_id))} "
@@ -751,15 +962,26 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     post, action = wp.upsert(payload)
     print(f"  {action}: post {post.get('id')} ({post.get('status')}) {post.get('link')}")
 
+    # Attach the image to the post in the library (post_parent), so an editor looking at the article
+    # finds its header image filed under it rather than loose in the media list.
+    if media and str(media.get("post") or "") != str(post.get("id")):
+        try:
+            wp.update_media(media.get("id"), {"post": post.get("id")})
+        except Exception as exc:                       # noqa: BLE001 - reported, never fatal
+            print(f"  featured image not attached to the post in the library: {exc}", file=sys.stderr)
+
     # Read the post back. A 201 says the request was accepted, not that the CMS kept what was sent:
     # sanitizers, plugins and editors are all free to strip a <script> or an inline <svg> on save,
     # which is exactly the failure a push-only connector cannot see. Reported, never assumed.
-    problems: list[str] = []
+    problems: list[str] = [media_failure] if media_failure else []
     summary = ""
     if verify:
         try:
             stored = wp.read_back(post.get("id"))
-            problems = delivery_problems(payload, stored)
+            problems += delivery_problems(payload, stored)
+            if media:
+                stored_media = wp.media(media.get("id")) or {}
+                problems += media_problems(media_expected, stored_media)
             if problems:
                 print("  DELIVERY VERIFICATION FAILED — the CMS does not hold what was sent:")
                 for problem in problems:
@@ -781,11 +1003,18 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         "pushed_by": "scripts/wp_draft.py",
         "verified": not problems,
     }
+    if media:
+        # Recorded so the next push reuses this attachment (no duplicate bytes in the library) and
+        # so the image can be found again by hand from the Supabase row alone.
+        record.update({"featured_media": payload.get("featured_media"),
+                       "media_id": media.get("id"),
+                       "media_url": media.get("source_url"),
+                       "media_alt": media_expected.get("alt_text")})
     db.record_push(row["id"], metadata, record)
     print(f"  recorded metadata.{WORDPRESS} on the Supabase row ({row['id']})")
     return {"status": action, "site": site["site_domain"], "post_id": post.get("id"),
             "edit_url": record["edit_url"], "verified": not problems, "problems": problems,
-            "summary": summary}
+            "media_id": record.get("media_id"), "summary": summary}
 
 
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,

@@ -37,6 +37,7 @@ import urllib.request
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
 import article_assets  # noqa: E402  (derived SEO metadata + charts, artifact-local)
+import illustration_creator  # noqa: E402  (art-directed featured image + its metadata)
 
 _SCHEMA_MARKER = re.compile(r"<!--\s*schema\s*-->(.*)", re.S | re.IGNORECASE)
 
@@ -164,7 +165,35 @@ def parse_bool_env(var_name: str, default: bool = False) -> bool:
     return val in ("1", "true", "yes", "on", "enable", "enabled")
 
 
-def parse_draft(file_path: str):
+def apply_illustration(content: str, enabled: bool = True, *, pinned_style: str | None = None,
+                       pinned_model: str | None = None) -> tuple[str, list[str], dict | None]:
+    """Commission the article's featured image and its metadata (scripts/illustration_creator.py).
+
+    Runs inside the persistence pass because the image is part of what is persisted: the artifact
+    carries the image fields, the Supabase row carries metadata.illustration, and the CMS push
+    uploads it. It is idempotent by content — an article whose text is unchanged re-uses the image
+    it already has. A failure is reported and the article still publishes: a missing header image
+    is recoverable by the host sweep (`scripts/cron-wp-drafts.sh` re-runs this before pushing),
+    whereas an article held back for it is not.
+    """
+    if not enabled:
+        return content, ["featured image: skipped (dry-run, --no-illustration, or "
+                         "ILLUSTRATION_ENABLED=false)"], None
+    # The asset directory is keyed by the BARE slug — the same one the published filename and the
+    # Supabase row use — so a frontmatter slug that still carries its date prefix cannot file the
+    # image under a slug nothing else knows.
+    header = dict(re.findall(r"^(slug|date):[ \t]*\"?([^\"\n]+?)\"?[ \t]*$", content, re.M))
+    try:
+        return illustration_creator.ensure_illustration(
+            content, slug=normalize_slug(header.get("slug"), header.get("date")) or None,
+            pinned_style=pinned_style, pinned_model=pinned_model)
+    except Exception as exc:                            # noqa: BLE001 - surfaced, never swallowed
+        return content, [f"featured image FAILED: {exc} — publishing without one; re-run "
+                         f"`python3 scripts/illustration_creator.py <artifact> --apply`"], None
+
+
+def parse_draft(file_path: str, illustrate: bool = True, pinned_style: str | None = None,
+                pinned_model: str | None = None):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -175,6 +204,12 @@ def parse_draft(file_path: str):
     content, asset_notes = apply_derived_assets(content)
     for note in asset_notes:
         print(f"  [assets] {note}")
+
+    # Then the visual: art direction + generation, from the same text (scripts/illustration_creator.py).
+    content, image_notes, illustration_meta = apply_illustration(
+        content, illustrate, pinned_style=pinned_style, pinned_model=pinned_model)
+    for note in image_notes:
+        print(f"  [image] {note}")
 
     # Parse YAML frontmatter if present
     frontmatter = {}
@@ -307,6 +342,7 @@ def parse_draft(file_path: str):
         "meta_description": meta_desc,
         "meta_description_source": frontmatter.get("meta_description_source", ""),
         "schema": schema_json,
+        "illustration": illustration_meta,
         "body_md": body_article,
         "linkedin_post": linkedin_post,
         "sources": sources,
@@ -594,6 +630,11 @@ def sync_to_supabase(data: dict, live_urls: dict):
     }
     if clean_seo:
         metadata["seo"] = clean_seo
+    # The featured image's brief (scripts/illustration_creator.py): the CMS push reads the staged
+    # image's path and the alt text/caption/credit from here, and it is the record of what the desk
+    # decided and what it spent.
+    if data.get("illustration"):
+        metadata["illustration"] = data["illustration"]
 
     full = {
         "slug": data.get("slug"),
@@ -884,13 +925,24 @@ def main():
     parser.add_argument("--no-auto-post-linkedin", action="store_true", default=None, help="Override LINKEDIN_AUTO_POST to false")
     parser.add_argument("--no-deploy", action="store_true", default=False, help="Skip the auto commit+push (deploy) after publishing")
     parser.add_argument("--no-seed", action="store_true", default=False, help="Skip seeding the distribution to-do cards (preparation only; nothing is posted either way)")
+    parser.add_argument("--no-illustration", action="store_true", default=False,
+                        help="Skip the featured-image pass (scripts/illustration_creator.py). Default: "
+                             "art-direct + generate one header image unless ILLUSTRATION_ENABLED=false")
+    parser.add_argument("--illustration-style", default=None,
+                        help="Pin the treatment for this article (see STYLES in scripts/illustration_creator.py)")
+    parser.add_argument("--illustration-model", default=None,
+                        help="Pin the image model: flux or nanobanana")
     args = parser.parse_args()
 
     if not os.path.exists(args.draft_file):
         print(f"Error: file not found: {args.draft_file}", file=sys.stderr)
         return 1
 
-    data = parse_draft(args.draft_file)
+    # A dry run must not spend image credits, so the featured-image pass is skipped there and said so.
+    illustrate = (not args.no_illustration and not args.dry_run
+                  and parse_bool_env("ILLUSTRATION_ENABLED", default=True))
+    data = parse_draft(args.draft_file, illustrate=illustrate,
+                       pinned_style=args.illustration_style, pinned_model=args.illustration_model)
     date_val = data["date"]
     slug_val = normalize_slug(data["slug"], date_val)
     data["slug"] = slug_val  # keep the Supabase row / log consistent with the published filename

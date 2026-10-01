@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # WordPress Draft Reconciliation + CMS defect check.
 #
+# Part 0 — featured images. scripts/publish.py commissions each article's header image in the same
+# pass that persists it; this sweep re-runs that step for articles still missing one so a transient
+# kie.ai failure (or an article published before the step existed) costs a sweep, not a header. It
+# runs BEFORE the push below, so the draft reconciled here already carries its image.
+#
 # Part 1 — drafts. scripts/publish.py creates each article's draft in its destination CMS as part
 # of the persistence pass. This sweep is the safety net for the cases where that could not happen:
 # the CMS was down, a credential was missing, or the routing row was added afterwards. It selects
@@ -26,6 +31,31 @@ cd "$REPO" 2>/dev/null || {
 }
 
 PROBLEMS=0
+
+# Part 0 — featured images. An article that reached the CMS without one (a transient kie.ai failure,
+# a missing key, or an article published before this step existed) gets its header image here, BEFORE
+# the push below, so the draft this sweep reconciles carries it. Idempotent by content: an artifact
+# whose text has not changed is examined and skipped without spending image credits, which is why
+# --limit bounds generations rather than files. Bounded per run because each new image costs credits
+# and ~30-60s. Set ILLUSTRATION_ENABLED=false to switch the whole step off; IMAGE_LIMIT=0 walks the
+# corpus and reports without generating anything (no spend).
+if [ "${ILLUSTRATION_ENABLED:-true}" != "false" ]; then
+  IMGS="$(python3 scripts/illustration_creator.py $(ls published/*.md 2>/dev/null) --apply \
+            --limit "${IMAGE_LIMIT:-2}" 2>&1)"
+  IRC=$?
+  if [ "$IRC" -ne 0 ]; then
+    echo "WordPress Draft Sweep: featured images FAILED (exit $IRC)"
+    printf '%s\n' "$IMGS" | grep -E 'FAIL|Error' | head -6
+    PROBLEMS=1
+  else
+    NEW="$(printf '%s\n' "$IMGS" | grep -c 'illustration written')"
+    if [ "$NEW" -gt 0 ]; then
+      echo "WordPress Draft Sweep: $NEW featured image(s) generated"
+      printf '%s\n' "$IMGS" | grep -E '^    - (direction|generated)' | head -8
+    fi
+  fi
+fi
+
 OUT="$(python3 scripts/wp_draft.py --all --limit "$LIMIT" 2>&1)"
 RC=$?
 

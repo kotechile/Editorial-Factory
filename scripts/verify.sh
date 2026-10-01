@@ -170,6 +170,30 @@ if ! python3 "$ROOT/scripts/test_article_assets.py" >/dev/null 2>&1; then
   echo "FAIL: article-asset tests — detail:"; python3 "$ROOT/scripts/test_article_assets.py" 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.56 Featured image (hard, hermetic): the header image is art-directed per article
+#      (scripts/illustration_creator.py) — treatment chosen from the text, never repeated
+#      back-to-back, no legible text or brand marks in the prompt, alt/caption within budget — and
+#      idempotent by content, so a re-run cannot re-spend image credits. The suite stubs both the
+#      director and the kie.ai transport: no network, no LLM, no credits. The image binaries are
+#      not committed (see .gitignore), so this gate checks metadata and briefs only; whether an
+#      artifact HAS an image yet is reported by `illustration_creator.py`, not failed on.
+if ! python3 "$ROOT/scripts/test_illustration_creator.py" >/dev/null 2>&1; then
+  echo "FAIL: illustration tests — detail:"
+  python3 "$ROOT/scripts/test_illustration_creator.py" 2>&1 | tail -8; FAIL=1
+fi
+# ...and the image binaries stay out of the repo. The CMS media library is their canonical home and
+# the staged file is only the upload's source; a 400 KB JPEG per article would bloat a repository
+# that commits and deploys on every publish (see .gitignore).
+if [ -d "$ROOT/.git" ]; then
+  TRACKED_IMAGES="$(git -C "$ROOT" ls-files context/assets/illustrations 2>/dev/null \
+                    | grep -E '\.(jpg|jpeg|png|webp)$' || true)"
+  if [ -n "$TRACKED_IMAGES" ]; then
+    echo "FAIL: generated featured images must not be committed (untrack: git rm --cached <path>):"
+    printf '%s\n' "$TRACKED_IMAGES"
+    FAIL=1
+  fi
+fi
+
 # 8.6 Pre-flight data gate (hard): a citation hub may only be drafted on metrics whose headline
 #     figure was actually retrieved from the cited primary source. Hermetic run (--no-network):
 #     the live audit of the shipped dossiers is a separate, deliberate step —

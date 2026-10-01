@@ -146,11 +146,13 @@ JPEG = b"\xff\xd8\xff" + b"0" * 64
 class StubTransport:
     """A kie.ai that answers createTask / recordInfo / the result download from a script."""
 
-    def __init__(self, *, states=None, body=PNG, download_status=200, create_ok=True):
+    def __init__(self, *, states=None, body=PNG, download_status=200, create_ok=True,
+                 result_urls=("https://temp.example/img",)):
         self.states = list(states or ["success"])
         self.body = body
         self.download_status = download_status
         self.create_ok = create_ok
+        self.result_urls = list(result_urls)
         self.calls: list[tuple] = []
         self.tasks = 0
 
@@ -166,7 +168,7 @@ class StubTransport:
             payload = {"code": 200, "data": {
                 "taskId": "task1", "state": state, "failMsg": "" if state != "fail" else "Internal Error",
                 "creditsConsumed": 7.0 if state == "success" else 0, "costTime": 26000,
-                "resultJson": json.dumps({"resultUrls": ["https://temp.example/img"]})
+                "resultJson": json.dumps({"resultUrls": self.result_urls})
                 if state == "success" else "{}"}}
             return 200, json.dumps(payload).encode()
         if method == "GET":
@@ -175,6 +177,8 @@ class StubTransport:
 
 
 def client(**kwargs) -> ic.KieClient:
+    """A client whose sleeps and polls are instant — the stub API answers immediately."""
+    kwargs.setdefault("poll_timeout", 0.5)
     return ic.KieClient("test-key", transport=kwargs.pop("transport", StubTransport()),
                         poll_interval=0, sleeper=lambda _s: None, **kwargs)
 
@@ -245,7 +249,9 @@ refuse({"aspect_ratio": "1:1"}, "featured-header shape")
 refuse({"resolution": "4K"}, "is not one of 1K, 2K")
 refuse({"alt_text": "Pellets."}, "alt_text is")
 refuse({"alt_text": "Photo of translucent plastic resin pellets on a steel plate and a thumb."},
-       "opens with 'image/picture/photo of'")
+       "opens on the medium")
+refuse({"alt_text": "A matte clay 3D render showing plastic pellets on a steel plate."},
+       "opens on the medium")
 refuse({"caption": "no full stop here"}, "caption must be")
 refuse({"title": "x"}, "media title must be")
 refuse({"rationale": "it fits"}, "rationale must be")
@@ -341,7 +347,7 @@ raises("a task that never finishes is a timeout, not an empty image",
                             poll_timeout=0.01, sleeper=lambda _s: None).generate(macro),
        "did not finish within")
 raises("a 'successful' task with no resultUrls is an error",
-       lambda: client(transport=StubTransport(states=["weird"])).generate(macro), "no resultUrls")
+       lambda: client(transport=StubTransport(result_urls=[])).generate(macro), "no resultUrls")
 raises("a result URL that is not an image is refused",
        lambda: client(transport=StubTransport(body=b"<html>expired</html>")).generate(macro),
        "not a JPEG/PNG/WEBP")
@@ -426,14 +432,37 @@ with tempfile.TemporaryDirectory() as tmp:
                                           llm=stub_llm(brief_json()), force=True)
     check("--force recommissions an unchanged article", transport.tasks == tasks_after_first + 2)
 
-    raises("a pinned treatment the director will not follow fails loudly",
-           lambda: ic.ensure_illustration(rewritten + "\n", root=root, client=client(transport=transport),
-                                          llm=stub_llm(brief_json()), pinned_style="minimal_geometry"),
-           "pinned treatment")
+with tempfile.TemporaryDirectory() as tmp:
+    root = pathlib.Path(tmp)
+    transport = StubTransport()
+    ic.ensure_illustration(ARTICLE, root=root, client=client(transport=transport),
+                           llm=stub_llm(brief_json()))
+    tasks = transport.tasks
+    # An article illustrated AFTER it was published: the image and its brief exist, the artifact
+    # carries no image fields. Re-running must fill them in, not buy a second reading of the same
+    # words — which is what a corpus backfill does to every pre-feature article.
+    filled, notes5, meta5 = ic.ensure_illustration(ARTICLE, root=root,
+                                                  client=client(transport=transport),
+                                                  llm=stub_llm(brief_json()))
+    check("an artifact whose image exists but whose frontmatter lacks the fields is filled in",
+          "image_style:" in filled and ic.has_illustration(filled), "no fields written")
+    check("...without generating anything", transport.tasks == tasks, f"tasks={transport.tasks}")
+    check("...and says so", any("generating nothing" in n for n in notes5), str(notes5))
+    check("...keeping the same image (the sidecar is not rewritten)",
+          meta5["sha256"] == ic.read_sidecar("reshoring-moved-the-tariff-upstream", root)["sha256"]
+          and ic.read_sidecar("reshoring-moved-the-tariff-upstream", root)["revision"] == 1)
+
+raises("a pinned treatment the director will not follow fails loudly",
+       lambda: ic.validate_brief(json.loads(brief_json(style_id="clay_render", model="nanobanana")),
+                                 ARTICLE, allowed=ic.allowed_styles([]),
+                                 pinned_style="minimal_geometry"),
+       "pinned treatment")
+
+with tempfile.TemporaryDirectory() as tmp:
+    root = pathlib.Path(tmp)
     _, _, pinned_meta = ic.ensure_illustration(
-        rewritten + "\n", root=root, client=client(transport=transport),
-        llm=stub_llm(brief_json(style_id="minimal_geometry", model="nanobanana")),
-        pinned_style="minimal_geometry")
+        ARTICLE, root=root, client=client(), pinned_style="minimal_geometry",
+        llm=stub_llm(brief_json(style_id="minimal_geometry", model="nanobanana")))
     pinned_sidecar = ic.read_sidecar("reshoring-moved-the-tariff-upstream", root)
     check("...and a followed pin is recorded as a pin, not as the director's own choice",
           pinned_sidecar["pinned"] == {"style": "minimal_geometry"}

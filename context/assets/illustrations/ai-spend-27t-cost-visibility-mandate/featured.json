@@ -1,0 +1,51 @@
+{
+  "slug": "ai-spend-27t-cost-visibility-mandate",
+  "revision": 1,
+  "history": [],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "matte clay 3D render, soft-body shapes, studio render with a neutral seamless backdrop. Three or four simplified geometric forms arranged in a clear physical stack, with one distinct, contrasting block firmly wedged into the center of the structure. Single soft key light with gentle contact shadows, matte muted palette of soft gray and a single accent color, clean minimalist arrangement.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, metallic surfaces, sharp edges, complex details, realistic objects, watermarks, people, faces",
+  "rationale": "The integration of cost management into AI tooling is a structural, abstract shift. A matte clay 3D render represents this by showing a distinct foundational block seamlessly embedded into a larger technological stack, avoiding literal software UI while capturing the structural requirement.",
+  "cue": "embedded in every AI purchase",
+  "subject": "a matte clay 3D render of structural blocks with a distinct layer embedded within",
+  "alt_text": "A matte clay 3D render showing a distinct foundational block embedded within a stack of soft geometric shapes.",
+  "caption": "Cost management is becoming a foundational layer physically embedded within enterprise AI deployments.",
+  "title": "AI FinOps Structure Clay Render",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1440150,
+  "sha256": "sha256:65e65e59c06226c05d1f4c4e8d75e160",
+  "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9",
+  "source_chars": 4783,
+  "task_id": "212c3ca81377ed5c4787a37a4f8857fc",
+  "credits": 18.0,
+  "cost_ms": 40,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8dd5ff97e8bab25c9b903ede6536791b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "matte clay 3D render, soft-body shapes, studio render with a neutral seamless backdrop. Three or four simplified geometric forms arranged in a clear physical stack, with one distinct, contrasting block firmly wedged into the center of the structure. Single soft key light with gentle contact shadows, matte muted palette of soft gray and a single accent color, clean minimalist arrangement.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, metallic surfaces, sharp edges, complex details, realistic objects, watermarks, people, faces.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-01T13:20:36+00:00"
+}

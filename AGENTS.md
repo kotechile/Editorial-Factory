@@ -21,6 +21,9 @@ gates, and every non-deterministic step is gated on retrievable evidence.
 - `.agents/`     — persona & role contracts (canonical; mirrored into each Bot's SOUL.md)
 - `skills/`      — Standard Operating Procedures (SOPs). Canonical source of truth.
 - `context/`     — shared memory (verticals, personas, calendar, published log, sitemap, GSC metrics)
+- `context/assets/` — staged featured images + their briefs (`featured.json`). The binaries are not
+  committed (the CMS media library is their canonical home); the briefs are — they are the
+  provenance record and what the next article's art director reads.
 - `context/growth_os/` — founder-voice.md, customer-truth.md, performance_learnings.md
 - `scripts/`     — cron triggers, GSC/DataForSEO analyzers, growth_os engine, verify gates
 - `site/`        — PressFlow editorial reader & SEO command center (Coolify-deployable)
@@ -65,10 +68,25 @@ gates, and every non-deterministic step is gated on retrievable evidence.
     every hub enforces a strict **Pre-Flight Data Gate** (verifying primary source URL, sample size,
     and methodology before a single word is drafted) and injects a contrarian reality audit
     grounded in `customer-truth.md` and `founder-voice.md`.
+11. **Art-directed featured images.** Every article is illustrated in the same pass that persists it
+    (`scripts/illustration_creator.py`, `skills/illustration_director.md`): a frontier art director
+    reads the artifact's own text, picks a treatment from the catalogue — macro, cinematic still,
+    clay 3D render, technical isometric, minimal geometry, paper collage, … — and generates one
+    16:9 header on kie.ai (Flux-2 Pro for the physical and photographic, Nano Banana Pro for the
+    constructed), with the alt text, caption and credit the CMS needs. The treatment is a decision
+    per article, never a preset: it must differ from the last four illustrations, it must quote a
+    verbatim cue from the article it was read from, and no image may contain legible text, a real
+    brand's mark or a stock-photo cliché. Idempotent by the article's own digest, so a re-run never
+    re-spends image credits on an unchanged text.
 
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
 The **Claude Stylist & Critic** role is pinned to a frontier Anthropic model served through
 **kie.ai** (`https://api.kie.ai/claude`, model `claude-sonnet-5`), which requires
-`ANTHROPIC_API_KEY=Bearer <kie.ai key>` plus a `model.base_url` override on the stylist profile.
+`ANTHROPIC_API_KEY=Bearer <kie key>` plus a `model.base_url` override on the stylist profile.
 Without it, the pipeline halts at the frontier gate rather than substituting a non-frontier model.
+
+The **Art Director** (`scripts/illustration_creator.py`) runs on `gemini-3.1-pro-preview` via
+`GOOGLE_API_KEY` (the Loop 3 key) and generates through the same kie.ai gateway with `KIE_API_KEY`
+(two image models: `flux-2/pro-text-to-image`, `nano-banana-pro`). A missing key is an explicit
+error, never a placeholder image.

@@ -40,6 +40,18 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
      publish a body whose tactical section is a playbook or whose social block carries verdict
      framing — `verify.sh` §9 (`node scripts/check_social_voice.mjs`) fails the build on either, and
      the article page / distribution cards surface exactly this copy.
+5. Commission the article's **featured image** in the same pass, from the same text —
+   `scripts/illustration_creator.py`, called by `publish.py` and reported as `[image]` notes (the
+   treatment, the verbatim cue it read, the model, the sha256, the credits). This is persistence,
+   not distribution: it is **not** approval-gated, but it is also not a template — the treatment is
+   chosen per article and must not repeat the last four (`skills/illustration_director.md`).
+   Idempotent by content (an unchanged article reuses its image; `--force` regenerates), skippable
+   with `--no-illustration` or `ILLUSTRATION_ENABLED=false`, and a failure never blocks the
+   publish: `scripts/cron-wp-drafts.sh` re-runs it for artifacts still missing an image *before*
+   the CMS push, so a transient kie.ai failure costs a sweep, not a header. The CMS draft then
+   carries it — the attachment is uploaded, captioned (alt text/caption/credit) and set as the
+   post's `featured_media`, with `metadata.wordpress.media_id`/`media_url`/`media_alt` recorded so
+   the next push reuses it instead of duplicating the bytes.
 
 ## 3. Distribution (prep automatic, posting manual)
 - **Preparation is automatic.** The persistence pass ends by seeding the dashboard's Reddit/LinkedIn
@@ -64,7 +76,10 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
 - A failed distribution call surfaces an explicit error with the payload — never a silent skip, never a fabricated URL.
 
 ## 4. Output
-- `published/YYYY-MM-DD_<slug>.md`, updated published log, Supabase rows, live URLs (when approved).
+- `published/YYYY-MM-DD_<slug>.md` (carrying the `image_*` frontmatter fields), updated published
+  log, Supabase rows (including `metadata.illustration`), the staged image + its brief
+  (`context/assets/illustrations/<slug>/`), the CMS draft with its featured image, live URLs (when
+  approved).
 
 ## 5. Failure handling
 - Distribution failure → retry once, then report with the platform's error body.
