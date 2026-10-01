@@ -143,15 +143,41 @@ def _naturalize_question(question: str, kw: str, kw_prose: str) -> str:
     return re.sub(re.escape(kw), kw_prose, question, flags=re.IGNORECASE)
 
 
+def kw_frontmatter(keyword_data: dict) -> str:
+    """The keyword-metric lines for a draft's frontmatter — measured values only.
+
+    A metric that was not measured is OMITTED rather than defaulted. This used to write
+    `search_volume: 1200` (a template constant) into every article and `4800`-style hash-derived
+    values for the seven verticals with DataForSEO disabled — numbers indistinguishable from a real
+    reading once the article reaches Supabase and the CMS. The provenance travels alongside, so
+    whoever reads the frontmatter knows which case they are looking at.
+    """
+    lines = []
+    source = keyword_data.get("keyword_data_source") or (
+        "dataforseo_live" if keyword_data.get("live_data") else "sandbox_estimate")
+    volume = keyword_data.get("search_volume")
+
+    if source == "dataforseo_live" and isinstance(volume, (int, float)) and not isinstance(volume, bool) and volume > 0:
+        lines.append(f"search_volume: {int(volume)}")
+    if keyword_data.get("search_intent"):
+        lines.append(f"search_intent: \"{keyword_data['search_intent']}\"")
+    lines.append(f"keyword_data_source: \"{source}\"")
+    if keyword_data.get("clusters_source") == "generated":
+        lines.append("secondary_keywords_source: \"generated\"")
+    return "\n".join(lines)
+
+
 def _format_sources(serp_competitors):
     """Build a ## Sources block from SERP competitor data.
 
-    Live DataForSEO runs return real organic results (title + url); sandbox runs
-    return placeholder entries that must be replaced before publish. Kept data-driven
-    so the template never hardcodes fabricated citations.
+    Live DataForSEO runs return real organic results (title + url). Entries the client generated
+    itself (techleaders.example.com and friends) are marked synthetic and skipped, so an API failure
+    produces an article that admits it has no source instead of one that cites a placeholder domain.
     """
     lines = []
     for i, c in enumerate(serp_competitors[:3], start=1):
+        if c.get("synthetic"):
+            continue
         url = (c.get("url") or "").strip()
         title = (c.get("title") or "").strip()
         domain = (c.get("domain") or "").strip()
@@ -248,8 +274,7 @@ meta_title: "{meta_title}"
 meta_description: "{meta_desc}"
 primary_keyword: "{kw}"
 secondary_keywords: [{clusters_str}]
-search_volume: {keyword_data.get('search_volume', 1200)}
-search_intent: "{keyword_data.get('search_intent', 'informational')}"
+{kw_frontmatter(keyword_data)}
 vertical: "{vertical_id}"
 persona: "{persona_id}"
 date: "{today_str}"
@@ -436,8 +461,7 @@ meta_title: "{meta_title}"
 meta_description: "{meta_desc}"
 primary_keyword: "{kw}"
 secondary_keywords: [{clusters_str}]
-search_volume: {keyword_data.get('search_volume', 1200)}
-search_intent: "{keyword_data.get('search_intent', 'informational')}"
+{kw_frontmatter(keyword_data)}
 vertical: "{vertical_id}"
 persona: "{persona_id}"
 archetype: "citation_hub"
@@ -573,8 +597,25 @@ def run_pipeline(target_query=None, vertical=None, force=False, run_humanizer=Tr
 
     d4s_client = DataForSEOClient()
     kw_data = d4s_client.enrich_keyword(target_query, force_sandbox=not use_d4s)
-    print(f"  • Search Volume: {kw_data['search_volume']:,} / mo | Intent: {kw_data['search_intent'].upper()} | KD: {kw_data['keyword_difficulty']}/100")
-    print(f"  • Top Cluster: {[c['keyword'] for c in kw_data['keyword_clusters'][:3]]}")
+    kw_source = kw_data.get("keyword_data_source") or (
+        "dataforseo_live" if kw_data.get("live_data") else "sandbox_estimate")
+    volume, kd = kw_data.get("search_volume"), kw_data.get("keyword_difficulty")
+    if kw_source != "dataforseo_live":
+        print("\n" + "!" * 78)
+        print("  ⚠️  KEYWORD METRICS ARE NOT MEASURED — DataForSEO live enrichment was skipped.")
+        print(f"      Volume / difficulty / CPC for '{target_query}' are derived from a hash of the")
+        print("      keyword itself. The draft therefore records NO search volume and carries")
+        print('      keyword_data_source: "sandbox_estimate". Turn on enable_dataforseo for this')
+        print("      vertical in context/verticals.json, or pass --dataforseo, for real research data.")
+        print("!" * 78)
+    elif not volume:
+        print("  ⚠️  The live API returned no search volume for this keyword — the draft records none "
+              "rather than a default.")
+    vol_display = f"{int(volume):,} / mo (measured)" if volume else "not measured"
+    print(f"  • Search Volume: {vol_display} | Intent: {str(kw_data.get('search_intent') or 'unknown').upper()}"
+          f" | KD: {kd if kd else 'not measured'}")
+    print(f"  • Top Cluster: {[c['keyword'] for c in kw_data.get('keyword_clusters', [])[:3]]}"
+          f"{'  (generated, not researched)' if kw_data.get('clusters_source') == 'generated' else ''}")
 
     # 3. Check Cannibalization & Internal Links via Growth OS
     print(f"\n🛡️ Step 3: Running Growth OS cannibalization & internal link analysis...")

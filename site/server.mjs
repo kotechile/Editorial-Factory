@@ -181,9 +181,23 @@ async function supabaseFetch(path, options = {}) {
 }
 
 // Minimal markdown -> HTML helper for reader
+// Generated inline SVG must reach the reader as a chart, not as its own markup. This renderer
+// escapes HTML (right for prose), which turned the citation hub's chart into a wall of `&lt;svg …`
+// text on the page. Lift each block out before rendering and put it back verbatim; a block carrying
+// a script tag or an event handler is dropped instead of passed through.
+const RAW_SVG = /<svg\b[^>]*>[\s\S]*?<\/svg>/gi;
+const RAW_UNSAFE = /<script\b|\son[a-z]+\s*=/i;
+
 function mdToHtml(md) {
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  const lines = md.split(/\r?\n/);
+  const raw = new Map();
+  const stashed = String(md).replace(RAW_SVG, (block) => {
+    if (RAW_UNSAFE.test(block)) return '';
+    const key = `RAWBLOCK${raw.size}TOKEN`;
+    raw.set(key, block);
+    return `\n\n${key}\n\n`;
+  });
+  const lines = stashed.split(/\r?\n/);
   const out = [];
   let para = [];
   const flush = () => { if (para.length) { out.push(`<p>${para.join(' ')}</p>`); para = []; } };
@@ -192,7 +206,8 @@ function mdToHtml(md) {
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   for (const line of lines) {
-    if (/^#{1,6}\s/.test(line)) { flush(); const m = line.match(/^(#{1,6})\s+(.*)/); const lvl = m[1].length; out.push(`<h${lvl}>${inline(m[2])}</h${lvl}>`); }
+    if (raw.has(line.trim())) { flush(); out.push(raw.get(line.trim())); }
+    else if (/^#{1,6}\s/.test(line)) { flush(); const m = line.match(/^(#{1,6})\s+(.*)/); const lvl = m[1].length; out.push(`<h${lvl}>${inline(m[2])}</h${lvl}>`); }
     else if (/^[-*]\s/.test(line)) { flush(); out.push(`<li>${inline(line.replace(/^[-*]\s/, ''))}</li>`); }
     else if (/^\s*$/.test(line)) { flush(); }
     else { para.push(inline(line)); }

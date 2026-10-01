@@ -178,11 +178,13 @@ class DataForSEOClient:
         try:
             tasks = sv_res.get("tasks", [])
             res_item = tasks[0]["result"][0] if tasks and tasks[0].get("result") else {}
-            sv = res_item.get("search_volume", 1200)
-            cpc = res_item.get("cpc", 3.50)
-            kd = res_item.get("competition_index", 45)
+            # No invented defaults: a metric the API did not return stays None, so the draft records
+            # "not measured" instead of a number that reads exactly like a measurement.
+            sv = res_item.get("search_volume")
+            cpc = res_item.get("cpc")
+            kd = res_item.get("competition_index")
         except Exception:
-            sv, cpc, kd = 1200, 3.50, 45
+            sv, cpc, kd = None, None, None
 
         # Clusters
         clusters = []
@@ -190,11 +192,12 @@ class DataForSEOClient:
             sug_tasks = sug_res.get("tasks", [])
             sug_items = sug_tasks[0]["result"][0]["items"] if sug_tasks and sug_tasks[0].get("result") else []
             for item in sug_items[:8]:
+                keyword_info = item.get("keyword_info") or {}
                 clusters.append({
                     "keyword": item.get("keyword"),
-                    "search_volume": item.get("keyword_info", {}).get("search_volume", 400),
-                    "cpc": item.get("keyword_info", {}).get("cpc", 2.10),
-                    "intent": item.get("search_intent_info", {}).get("main_intent", "commercial")
+                    "search_volume": keyword_info.get("search_volume"),
+                    "cpc": keyword_info.get("cpc"),
+                    "intent": (item.get("search_intent_info") or {}).get("main_intent")
                 })
         except Exception:
             pass
@@ -216,19 +219,39 @@ class DataForSEOClient:
         except Exception:
             pass
 
+        # Anything the API did not return is filled with clearly-marked generated data: the entries
+        # carry synthetic=True so no downstream consumer can mistake a placeholder domain for a
+        # citation. _format_sources() drops them, and the article says it has no source rather than
+        # quoting techleaders.example.com.
+        clusters_source = "dataforseo" if clusters else "generated"
+        if not clusters:
+            clusters = self._generate_fallback_clusters(keyword)
+            for entry in clusters:
+                entry["synthetic"] = True
+
+        serp_source = "dataforseo" if serp_items else "generated"
+        if not serp_items:
+            serp_items = self._generate_fallback_serp(keyword)
+            for entry in serp_items:
+                entry["synthetic"] = True
+
         return {
             "keyword": keyword,
             "search_volume": sv,
             "cpc": cpc,
             "keyword_difficulty": kd,
             "search_intent": "commercial" if any(w in keyword for w in ["best", "vs", "cost", "roi", "tool", "review", "pricing"]) else "informational",
-            "keyword_clusters": clusters or self._generate_fallback_clusters(keyword),
-            "serp_competitors": serp_items or self._generate_fallback_serp(keyword),
+            "keyword_clusters": clusters,
+            "serp_competitors": serp_items,
             "paa_questions": [
                 f"What is the biggest bottleneck in {keyword}?",
                 f"How to evaluate and optimize {keyword} in production?",
                 f"What are the cost tradeoffs of {keyword} vs alternatives?"
             ],
+            "keyword_data_source": "dataforseo_live",
+            "clusters_source": clusters_source,
+            "serp_source": serp_source,
+            "paa_source": "generated",
             "live_data": True
         }
 
@@ -252,6 +275,8 @@ class DataForSEOClient:
 
         clusters = self._generate_fallback_clusters(keyword)
         serp = self._generate_fallback_serp(keyword)
+        for entry in clusters + serp:
+            entry["synthetic"] = True
 
         return {
             "keyword": keyword,
@@ -267,6 +292,10 @@ class DataForSEOClient:
                 f"What are the real production benchmarks for {keyword}?",
                 f"What is the expected ROI when addressing {keyword}?"
             ],
+            "keyword_data_source": "sandbox_estimate",
+            "clusters_source": "generated",
+            "serp_source": "generated",
+            "paa_source": "generated",
             "live_data": False
         }
 

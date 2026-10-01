@@ -254,6 +254,25 @@ check("internal LinkedIn variant dropped", "internal variant must never reach" n
 check("## Gate report dropped", "Gate report" not in html_body)
 check("frontmatter dropped", "vertical: supplier_risk" not in html_body)
 
+print("\ncharts in the reader copy")
+chart_md = ("Intro paragraph.\n\n"
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 120">\n'
+            "  <!-- Row 1 -->\n"
+            '  <rect x="220" y="8" width="160" height="18" fill="#818cf8"/>\n'
+            '  <text x="20" y="22">FinOps waste</text>\n'
+            "</svg>\n\n"
+            "Closing paragraph.")
+chart_html = wd.md_to_html(chart_md)
+check("a generated SVG chart reaches the post as markup, not escaped text",
+      "<svg" in chart_html and "&lt;svg" not in chart_html)
+check("...its inner comments survive the comment filter", "<!-- Row 1 -->" in chart_html)
+check("...and the prose around it still renders",
+      "<p>Intro paragraph.</p>" in chart_html and "<p>Closing paragraph.</p>" in chart_html)
+check("an SVG carrying a script is dropped, not passed through",
+      "<svg" not in wd.md_to_html('<svg xmlns="x"><script>alert(1)</script></svg>'))
+check("...likewise one carrying an event handler",
+      "<svg" not in wd.md_to_html('<svg xmlns="x" onload="go()"></svg>'))
+
 print("\nschema handling")
 dataset = wd.extract_dataset_node(ROW["metadata"]["seo"]["schema"])
 check("sends only the Dataset node (Article/FAQPage come from the frontends)",

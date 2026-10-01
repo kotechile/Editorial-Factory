@@ -228,14 +228,41 @@ def _inline(text: str) -> str:
     return _linkify_bare_urls(out)
 
 
+_RAW_SVG = re.compile(r"<svg\b[^>]*>.*?</svg>", re.S | re.I)
+_RAW_UNSAFE = re.compile(r"<script\b|\son[a-z]+\s*=", re.I)
+
+
+def _stash_raw_blocks(markdown: str) -> tuple[str, dict[str, str]]:
+    """Lift generated inline SVG out of the markdown so the reader gets a chart, not its markup.
+
+    This renderer escapes HTML, which is correct for prose but turned the hub's chart into a wall of
+    `&lt;svg …` text on the page — the chart only ever existed as a visual in the source file.
+    Stashing the block also protects the `<!-- Row n -->` comments inside the SVG from being read as
+    markdown comment lines and dropped. A block carrying a script tag or an event handler is
+    discarded rather than passed through.
+    """
+    blocks: dict[str, str] = {}
+
+    def stash(match: "re.Match[str]") -> str:
+        block = match.group(0)
+        if _RAW_UNSAFE.search(block):
+            return ""
+        key = f"RAWBLOCK{len(blocks)}TOKEN"
+        blocks[key] = block
+        return f"\n\n{key}\n\n"
+
+    return _RAW_SVG.sub(stash, markdown), blocks
+
+
 def md_to_html(markdown: str) -> str:
     """Render the reader-facing markdown to HTML.
 
     Handles the constructs the pipeline actually emits: headings, paragraphs, nested-ish
     bullet lists, ordered lists, blockquotes (the Quick-Cite cards), pipe tables (the
     citation-hub benchmark matrix) and fenced code. Deliberately small: an unknown line
-    becomes a paragraph rather than being dropped.
+    becomes a paragraph rather than being dropped. Generated inline SVG passes through as markup.
     """
+    markdown, raw_blocks = _stash_raw_blocks(markdown)
     lines = reader_markdown(markdown).split("\n")
     out: list[str] = []
     para: list[str] = []
@@ -278,6 +305,11 @@ def md_to_html(markdown: str) -> str:
 
     for line in lines:
         stripped = line.strip()
+
+        if stripped in raw_blocks:
+            flush_all()
+            out.append(raw_blocks[stripped])
+            continue
 
         if stripped.startswith("```"):
             if in_fence:

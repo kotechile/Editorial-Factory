@@ -181,6 +181,67 @@ try:
 except ImportError as exc:
     check("the hub builder gates on the dossier", False, f"could not import seo_machine: {exc}")
 
+print("\nchart honesty")
+try:
+    import chart_generator as cg
+
+    pct = [{"headline_figure": "98%", "metric_name": "FinOps respondents reporting waste",
+            "primary_source_name": "data.finops.org"},
+           {"headline_figure": "78%", "metric_name": "Organisations using AI",
+            "primary_source_name": "Stanford HAI"}]
+    svg = cg.generate_benchmark_visual(pct, "Telemetry")
+    check("a chart is emitted when two points carry percentages", svg.startswith("<svg"))
+    check("...and the old invented placeholder value is gone", "50.0" not in svg)
+    check("no chart for non-percentage figures — mixed units are not one scale",
+          cg.generate_benchmark_visual([{"headline_figure": "50 min", "metric_name": "METR",
+                                         "primary_source_name": "arXiv"}], "T") == "")
+    check("no chart for a single percentage — no invented second bar",
+          cg.generate_benchmark_visual(pct[:1], "T") == "")
+    long_label = [{"headline_figure": "40%", "metric_name": "Autonomous agentic workflow orchestration",
+                   "primary_source_name": "FinOps Foundation"},
+                  {"headline_figure": "7%", "metric_name": "Second metric", "primary_source_name": "s"}]
+    svgl = cg.generate_benchmark_visual(long_label, "T")
+    check("a long label is trimmed at a word boundary, never mid-word",
+          "orchestration" not in svgl and "workflow…" in svgl)
+    check("a label that already fits is left alone", cg._shorten("Agent drift") == "Agent drift")
+except ImportError as exc:
+    check("chart generator importable", False, repr(exc))
+
+print("\nkeyword-metric provenance")
+try:
+    import seo_machine as sm
+
+    sandbox = sm.kw_frontmatter({"keyword": "x", "search_volume": 4800, "search_intent": "commercial",
+                                 "keyword_data_source": "sandbox_estimate",
+                                 "clusters_source": "generated"})
+    check("a sandbox estimate never reaches frontmatter as a search volume",
+          "search_volume:" not in sandbox)
+    check("...but its provenance is recorded, so the reader knows",
+          'keyword_data_source: "sandbox_estimate"' in sandbox
+          and 'secondary_keywords_source: "generated"' in sandbox)
+    live = sm.kw_frontmatter({"keyword": "x", "search_volume": 4800, "search_intent": "commercial",
+                              "keyword_data_source": "dataforseo_live"})
+    check("a measured search volume does reach frontmatter", "search_volume: 4800" in live)
+    check("...labelled as measured", 'keyword_data_source: "dataforseo_live"' in live)
+    check("a live call that returned no volume records none, not a default",
+          "search_volume:" not in sm.kw_frontmatter({"keyword": "x", "search_volume": None,
+                                                     "keyword_data_source": "dataforseo_live"}))
+    check("a payload with no provenance at all is treated as unmeasured (fails closed)",
+          "search_volume:" not in sm.kw_frontmatter({"keyword": "x", "search_volume": 4800}))
+
+    sources = sm._format_sources([
+        {"url": "https://techleaders.example.com/insights/x-guide", "title": "Ultimate Guide",
+         "synthetic": True},
+        {"url": "https://arxiv.org/abs/2503.14499", "title": "METR", "synthetic": False}])
+    check("a generated placeholder domain is never printed as a citation",
+          "techleaders.example.com" not in sources)
+    check("...while a real result still is", "arxiv.org/abs/2503.14499" in sources)
+    check("when every entry is generated the block admits there is no source",
+          "No verified source attached" in sm._format_sources(
+              [{"url": "https://techleaders.example.com/x", "synthetic": True}]))
+except ImportError as exc:
+    check("the keyword-provenance helpers import cleanly", False, repr(exc))
+
 if "--no-network" not in sys.argv:
     print("\nlive audit — the module's own claimed dossiers, against their real sources")
     try:

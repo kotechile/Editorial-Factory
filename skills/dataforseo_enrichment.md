@@ -23,7 +23,11 @@ Pull 5–8 related long-tail keywords and semantic variations to use as secondar
 Examine the top 10 ranking URLs:
 1. **Headline Angle Analysis**: What promise are competitors making?
 2. **Missing Gaps & Thin Content**: Where do generic competitor guides fail to provide concrete code, cost math, or operational realities?
-3. **People Also Ask (PAA)**: Identify 3–4 high-volume questions to embed directly into `FAQPage` schema.
+3. **People Also Ask (PAA)**: the generator does NOT query Google PAA. `enrich_keyword()` emits three
+   templated questions ("What is the biggest bottleneck in {keyword}?" …) that are embedded into
+   `FAQPage` schema and answered from the article's own audited content. Treat them as the page's FAQ —
+   self-authored Q&A, which is what FAQPage schema is for — and do not describe them as researched
+   PAA questions. The client marks this as `paa_source: "generated"`.
 
 ## 4. Execution Command
 ```bash

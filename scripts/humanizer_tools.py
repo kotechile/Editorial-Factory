@@ -92,7 +92,8 @@ def normalize_frontmatter(text):
         return text  # already correct
     fm_keys = ("title:", "vertical:", "persona:", "date:", "slug:", "one_big_thing:",
                "meta_title:", "meta_description:", "primary_keyword:", "secondary_keywords:",
-               "search_volume:", "search_intent:", "article_url:", "promo_url:", "promo_label:")
+               "search_volume:", "search_intent:", "keyword_data_source:",
+               "secondary_keywords_source:", "article_url:", "promo_url:", "promo_label:")
     if not lines[0].strip().startswith(fm_keys):
         return text  # no frontmatter to fix (or it's not a YAML block)
     # Frontmatter present but the opening --- was dropped. Insert it, and convert the
