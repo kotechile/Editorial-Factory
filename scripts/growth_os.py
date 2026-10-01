@@ -253,12 +253,16 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3):
         score += len(overlap) * 2
         if overlap:
             reasons.append("topical overlap: " + ", ".join(overlap[:4]))
+        # A two-letter token is not evidence of relevance: "ai" appears on nearly every page of an
+        # AI site, so on its own it would drag an unrelated article into the list. Overlap has to
+        # include a substantive token (4+ characters), unless vertical or category already match.
+        substantive_overlap = [w for w in overlap if len(w) >= 4]
 
         # Sharing a domain is not a reason to link. An internal link to an unrelated article costs
         # the reader's attention and dilutes the anchor, so a candidate must earn its place with
-        # either topical overlap or a shared vertical/category. When nothing qualifies the article
-        # ships with no Related reading section — which is the honest outcome.
-        if not (overlap or same_vertical or same_category):
+        # either substantive topical overlap or a shared vertical/category. When nothing qualifies
+        # the article ships with no Related reading section — which is the honest outcome.
+        if not (substantive_overlap or same_vertical or same_category):
             continue
         anchor = _anchor_for(candidate, target_words)
         scored.append({

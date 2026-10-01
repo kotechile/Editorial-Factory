@@ -97,6 +97,10 @@ check("a page that is not live is never offered",
 check("every offered link is https and absolute", all(u.startswith("https://") for u in urls), urls)
 check("a same-site page with no topical overlap and no shared category is rejected",
       "https://a.com/ai-proof-jobs/" not in urls, urls)
+short_token = gos.generate_internal_link_map("ai", "unrouted_vertical", max_links=5)
+check("a match on a short token alone ('ai') is not enough to link",
+      not any("ai-proof-jobs" in l["url"] for l in short_token),
+      [l["url"] for l in short_token])
 check("scores are ordered high to low",
       all(a["relevance_score"] >= b["relevance_score"] for a, b in zip(links, links[1:])),
       [l["relevance_score"] for l in links])
