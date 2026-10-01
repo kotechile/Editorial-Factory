@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T14:17:42+00:00",
+  "generated_at": "2026-10-01T15:48:59+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -33,6 +33,23 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 401,
+      "slug": "mcp-skills-extension",
+      "title": "MCP Skills Extension: Standardizing Agent Workflows",
+      "url": "https://giniloh.com/mcp-skills-extension/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Skills \u2014 portable bundles of workflow instructions \u2014 became an official MCP extension on September 13, standardizing how agents discover, retrieve, and verify\u2026",
+      "modified": "2026-10-01T15:47:55",
+      "live": true
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -682,6 +699,19 @@
       "slug": "money-wealth",
       "title": "Money Wealth",
       "url": "https://giniloh.com/categories/money-wealth/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "supply-chain-operations",
+      "title": "Supply Chain Operations",
+      "url": "https://giniloh.com/categories/supply-chain-operations/",
       "categories": [],
       "category_ids": [],
       "excerpt": "",

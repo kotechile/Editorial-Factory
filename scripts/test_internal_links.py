@@ -340,6 +340,12 @@ check("...and no operator hint reaches the reader", "internal-link hint" not in 
 print("\nindex guard")
 check("a candidate URL is reduced to its last path segment",
       bli.path_segment("https://a.com/calculators/lease-break/") == "lease-break")
+check("a section page is indexed, a nested permutation of it is not",
+      bli.is_section_page("/calculators/lease-break/", "calculators") is True
+      and bli.is_section_page("/calculators/career-ai-resilience/chief-executives/", "calculators")
+      is False, "a per-role calculator page (1,029 of them on one live site) is not a link target")
+check("...and the section itself is furniture, not a target",
+      bli.is_section_page("/calculators/", "calculators") is False)
 check("a slug becomes a readable title", bli.title_from_slug("ny-heat-pump-rebate") == "Ny Heat Pump Rebate")
 
 _empty = pathlib.Path(_tmp.name) / "empty.json"

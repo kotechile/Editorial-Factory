@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-10-01T14:17:42+00:00
+# Internal-link candidates — 2026-10-01T15:48:59+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
-## giniloh.com — 24 live article(s), 19 other target(s)
+## giniloh.com — 25 live article(s), 20 other target(s)
 
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
 - [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — Mental Models & Strategy
@@ -14,6 +14,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — Major Purchases & Assets
 - [Jobs Switch Calculator: Step-by-Step Profit Guide](https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/) — Mental Models & Strategy
 - [Lease Break Calculator: Save $1,850 in 3 Steps](https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/) — Mental Models & Strategy
+- [MCP Skills Extension: Standardizing Agent Workflows](https://giniloh.com/mcp-skills-extension/) — Autonomous & Agentic Workflows:
 - [Multi Agent Orchestration: Building the One-Person Enterprise](https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO
 - [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — Major Purchases & Assets
 - [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — Mental Models & Strategy
@@ -45,6 +46,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [No Code Terminator calculator (calculator)](https://giniloh.com/calculators/no-code-terminator/) — —
 - [Raise Velocity calculator (calculator)](https://giniloh.com/calculators/raise-velocity/) — —
 - [Relocation Cost calculator (calculator)](https://giniloh.com/calculators/relocation-cost/) — —
+- [Supply Chain Operations (category)](https://giniloh.com/categories/supply-chain-operations/) — —
 - [Tech Debt Repair calculator (calculator)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Total Comp calculator (calculator)](https://giniloh.com/calculators/total-comp/) — —
 

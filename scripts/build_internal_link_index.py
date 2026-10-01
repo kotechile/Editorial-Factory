@@ -57,6 +57,19 @@ SKIP_SEGMENTS = {"/", "/about", "/contact", "/privacy", "/terms", "/author", "/c
                  "/calculators"}
 
 
+def is_section_page(path: str, section: str) -> bool:
+    """`/calculators/<slug>/` — the section page itself, not a nested permutation of it.
+
+    Both frontends publish a page per ROLE for every calculator (`/calculators/career-ai-resilience/`
+    → `/chief-executives/`, `/chief-sustainability-officers/`, …), which is 1,029 URLs on giniloh.com
+    alone (measured). Those are live pages, but a per-role variant is not a "go deeper" target for an
+    article — indexing them turned a 55-candidate corpus into 1,073 and would have let a nested page
+    win a link on two incidental shared words.
+    """
+    parts = [p for p in (path or "").split("/") if p]
+    return len(parts) == 2 and parts[0] == section
+
+
 def site_list() -> tuple[list[tuple[str, str, str]], str]:
     """The sites to index, from public.vertical_sites when available (one row per vertical)."""
     row = wd.supabase_get("vertical_sites?select=site_domain,cms_base_url,frontend_url")
@@ -154,9 +167,9 @@ def build() -> dict:
                 continue
             if segment in by_segment and any(c["url"] == url for c in candidates):
                 continue
-            if path.startswith("/calculators/"):
+            if path.startswith("/calculators/") and is_section_page(path, "calculators"):
                 kind = "calculator"
-            elif path.startswith("/categories/"):
+            elif path.startswith("/categories/") and is_section_page(path, "categories"):
                 kind = "category"
             else:
                 continue
