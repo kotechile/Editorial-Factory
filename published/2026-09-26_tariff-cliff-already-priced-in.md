@@ -9,6 +9,10 @@ synthesis: true
 sources:
   - https://www.nbcnews.com/business/economy/us-china-extend-trade-truce-trump-rcna599525
   - https://www.atlantafed.org/research-and-data/publications/policy-hub-macroblog/2026/09/21/how-are-firms-using-tariff-refunds
+meta_title: "CFOs Are Pricing In the Tariff Cliff"
+meta_title_source: "derived_from_title"
+meta_description: "Washington just pushed the United States–China tariff truce to Jan. 10, 2027, and American companies are not buying the calm."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

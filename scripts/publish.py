@@ -35,6 +35,126 @@ import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
+import article_assets  # noqa: E402  (derived SEO metadata + charts, artifact-local)
+
+_SCHEMA_MARKER = re.compile(r"<!--\s*schema\s*-->(.*)", re.S | re.IGNORECASE)
+
+
+def _schema_block(body: str) -> tuple[dict | None, str, tuple[int, int] | None]:
+    """Locate the artifact's JSON-LD block: (schema, note, (start, end) of the whole block).
+
+    Both of the generator's styles are accepted — a ```json fence and a bare object — because a
+    fenced-only pattern silently dropped a real block: the mcp-skills-extension artifact carries an
+    unfenced JSON-LD object after the marker (published/2026-09-21_mcp-skills-extension.md:79) and
+    its Supabase row has no `metadata.seo.schema` at all, so nothing reached the CMS. A marker with
+    no JSON after it (the marker is written even when the block is not — see
+    published/2026-09-24_maskills-*.md) is reported rather than swallowed, and a block that does not
+    parse is reported rather than replaced: an invented node is worse than no node.
+    """
+    match = _SCHEMA_MARKER.search(body or "")
+    if not match:
+        return None, "no `<!-- schema -->` block in the artifact — nothing captured (never invented)", None
+
+    rest = match.group(1)
+    lead = len(rest) - len(rest.lstrip())
+    text_start = match.start(1) + lead
+    body_from_text = rest[lead:]
+
+    fenced = re.match(r"```(?:json)?\s*(.*?)\s*```", body_from_text, re.S)
+    if fenced:
+        candidate, block_end = fenced.group(1), text_start + fenced.end()
+    elif body_from_text.startswith("{"):
+        # Brace-match the object so trailing prose / gate-report lines are not dragged into the parse.
+        depth, end, in_str, escaped = 0, None, False, False
+        for index, char in enumerate(body_from_text):
+            if in_str:
+                if escaped:
+                    escaped = False
+                elif char == "\\":
+                    escaped = True
+                elif char == '"':
+                    in_str = False
+                continue
+            if char == '"':
+                in_str = True
+            elif char == "{":
+                depth += 1
+            elif char == "}":
+                depth -= 1
+                if depth == 0:
+                    end = index + 1
+                    break
+        if end is None:
+            return None, "schema marker found but its JSON object never closes — nothing captured", None
+        candidate, block_end = body_from_text[:end], text_start + end
+    else:
+        following = (body_from_text.strip().splitlines() or ["(end of file)"])[0][:60]
+        return None, (f"schema marker present but no JSON-LD block follows (next line: {following!r}) "
+                      f"— a marker alone is not schema, nothing captured"), None
+
+    try:
+        parsed = json.loads(candidate)
+    except Exception as exc:                       # noqa: BLE001 - reported, never substituted
+        return None, f"schema block did not parse as JSON ({exc}) — nothing captured (never invented)", None
+    if not isinstance(parsed, dict):
+        return None, f"schema block parsed to {type(parsed).__name__}, not an object — ignored", None
+
+    nodes = parsed.get("@graph") if isinstance(parsed.get("@graph"), list) else [parsed]
+    types = ", ".join(str(node.get("@type")) for node in nodes if isinstance(node, dict))
+    return parsed, f"schema JSON-LD captured ({types or 'no @type'})", (match.start(), block_end)
+
+
+def extract_schema_json(body: str) -> tuple[dict | None, str]:
+    """The JSON-LD graph the artifact carries, as (schema, note)."""
+    schema, note, _ = _schema_block(body)
+    return schema, note
+
+
+def strip_schema_block(body: str) -> str:
+    """Drop the machine-readable schema block from the reader-facing body (fenced OR bare).
+
+    The reader must never receive the JSON-LD as prose: only a fenced block used to be stripped, so
+    a bare object — the style the SEO machine writes — would have shipped as visible text as soon as
+    it appeared before the `<!-- linkedin -->` cut.
+    """
+    _schema, _note, span = _schema_block(body)
+    if not span:
+        return body
+    return (body[:span[0]] + body[span[1]:]).strip()
+
+
+def apply_derived_assets(content: str) -> tuple[str, list[str]]:
+    """Add the derived SEO metadata (frontmatter) and an inline chart (body) to an artifact.
+
+    The drafting stage is an LLM: it emits `meta_title` / `meta_description` only on the SEO path,
+    and never emits a visual. Both are DERIVED from the artifact's own text here (the headline, the
+    lead paragraph, the `**By the numbers:**` percentages) so every destination gets them without a
+    research step that could invent anything. Idempotent — a value or a chart already present wins,
+    including the drafting stage's own. Every decision is reported, never applied silently.
+    """
+    match = re.match(r"\A---\s*\n(.*?)\n---\s*\n*", content, re.S)
+    fm_text, body = (match.group(1), content[match.end():]) if match else ("", content)
+
+    existing = {}
+    for line in fm_text.splitlines():
+        if ":" in line:
+            key, _, value = line.partition(":")
+            existing[key.strip()] = value.strip().strip('"').strip("'")
+
+    enriched, notes = article_assets.ensure_seo_metadata(dict(existing), body)
+    additions = {k: v for k, v in enriched.items() if k not in existing}
+    body, chart_note = article_assets.inject_chart(body)
+    notes.append(chart_note)
+
+    fm_lines = fm_text.rstrip("\n")
+    for key, value in additions.items():
+        fm_lines += f'\n{key}: "{str(value).replace(chr(34), chr(92) + chr(34))}"'
+    rebuilt = f"---\n{fm_lines}\n---\n\n{body.lstrip(chr(10))}" if match else body
+
+    if rebuilt == content:
+        return content, [f"{note} (already present)" for note in notes]
+    return rebuilt, notes
 
 
 def parse_bool_env(var_name: str, default: bool = False) -> bool:
@@ -47,6 +167,14 @@ def parse_bool_env(var_name: str, default: bool = False) -> bool:
 def parse_draft(file_path: str):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
+
+    # Derived assets first: the frontmatter's meta_title/meta_description and the inline chart are
+    # filled from the artifact's own text (scripts/article_assets.py) before anything reads them, so
+    # the published file, the Supabase row and the CMS draft all carry one version. Idempotent and
+    # reported — see apply_derived_assets.
+    content, asset_notes = apply_derived_assets(content)
+    for note in asset_notes:
+        print(f"  [assets] {note}")
 
     # Parse YAML frontmatter if present
     frontmatter = {}
@@ -91,7 +219,7 @@ def parse_draft(file_path: str):
         body_article = body_content.strip()
 
     # Cleanly strip machine-readable schema, internal-links hints, and gate reports from body_article
-    body_article = re.sub(r"<!--\s*schema\s*-->\s*```(?:json)?\s*\{.+?\}\s*```", "", body_article, flags=re.DOTALL | re.IGNORECASE).strip()
+    body_article = strip_schema_block(body_article)
     # Operator-facing HTML comments (section markers, internal-link placement hints) are machinery.
     # The reader-facing `## Related reading` links are article body and must survive this.
     body_article = re.sub(r"^\s*<!--.*?-->\s*$", "", body_article, flags=re.M).strip()
@@ -150,14 +278,9 @@ def parse_draft(file_path: str):
     meta_title = frontmatter.get("meta_title", "")
     meta_desc = frontmatter.get("meta_description", "")
 
-    # Extract JSON-LD schema if present
-    schema_json = None
-    schema_match = re.search(r"<!--\s*schema\s*-->\s*```(?:json)?\s*(\{.+?\})\s*```", body_content, re.DOTALL | re.IGNORECASE)
-    if schema_match:
-        try:
-            schema_json = json.loads(schema_match.group(1))
-        except Exception:
-            pass
+    # Extract JSON-LD schema if present (fenced or bare — see extract_schema_json).
+    schema_json, schema_note = extract_schema_json(body_content)
+    print(f"  [schema] {schema_note}")
 
     status = "published" if "/published/" in os.path.abspath(file_path) else "draft"
 
@@ -180,7 +303,9 @@ def parse_draft(file_path: str):
         "cpc": cpc,
         "gsc_impressions": gsc_impressions,
         "meta_title": meta_title,
+        "meta_title_source": frontmatter.get("meta_title_source", ""),
         "meta_description": meta_desc,
+        "meta_description_source": frontmatter.get("meta_description_source", ""),
         "schema": schema_json,
         "body_md": body_article,
         "linkedin_post": linkedin_post,
@@ -442,11 +567,15 @@ def sync_to_supabase(data: dict, live_urls: dict):
         "cpc": data.get("cpc"),
         "gsc_impressions": data.get("gsc_impressions"),
         "meta_title": data.get("meta_title"),
+        "meta_title_source": data.get("meta_title_source"),
         "meta_description": data.get("meta_description"),
+        "meta_description_source": data.get("meta_description_source"),
         "schema": data.get("schema"),
     }
-    # Clean None values for clean JSON
-    clean_seo = {k: v for k, v in seo_metadata.items() if v is not None and v != ""}
+    # Clean empty values for clean JSON. The emptiness test is value-based, not None-based: an empty
+    # list is falsy but not None, so `v is not None and v != ""` wrote `seo: {secondary_keywords: []}`
+    # onto 10 of the 11 published rows — a `seo` object that looked populated and carried nothing.
+    clean_seo = {k: v for k, v in seo_metadata.items() if v not in (None, "", [], {})}
 
     status = data.get("status") or ("published" if "/published/" in str(data.get("file_path", "")) else "draft")
     targets = ["published/"] if status == "published" else ["context/drafts/"]
@@ -627,6 +756,13 @@ def push_wp_draft(slug: str) -> bool:
         result = module.push_by_slug(slug)
         print(f"✓ WordPress draft {result['status']}: post {result['post_id']} on {result['site']} "
               f"— {result['edit_url']}")
+        if result.get("problems"):
+            print("! the draft exists but the CMS does not hold what was sent:", file=sys.stderr)
+            for problem in result["problems"]:
+                print(f"!   - {problem}", file=sys.stderr)
+            print("!   fix the mapping and re-run: python3 scripts/wp_draft.py --all", file=sys.stderr)
+        else:
+            print(f"  (verified on the CMS: {result.get('summary') or 'title, excerpt, JSON-LD, inline SVG'})")
         print("  (draft only — publishing it stays your call in the CMS)")
         return True
     except Exception as exc:  # network, credentials, routing, CMS — never fail the publish

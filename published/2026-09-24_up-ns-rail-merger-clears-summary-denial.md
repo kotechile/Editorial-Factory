@@ -5,6 +5,10 @@ persona: ops_leader
 one_big_thing: "The Surface Transportation Board unanimously let the Union Pacific–Norfolk Southern merger advance to a full merits review — the first transcontinental Class I railroad is now on a fixed clock to a 2027 decision, so every shipper should map its single-rail exposure before comments close Nov. 18."
 date: 2026-09-24
 slug: up-ns-rail-merger-clears-summary-denial
+meta_title: "Coast-to-Coast Rail Merger Clears First Big Test"
+meta_title_source: "derived_from_title"
+meta_description: "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

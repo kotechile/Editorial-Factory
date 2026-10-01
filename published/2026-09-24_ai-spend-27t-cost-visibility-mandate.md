@@ -5,6 +5,10 @@ persona: enterprise_cai
 one_big_thing: "Cost management has moved from back-office FinOps to a hard requirement embedded in every AI purchase — and the metric that matters is cost per resolved work-unit, not token price."
 date: 2026-09-24
 slug: ai-spend-27t-cost-visibility-mandate
+meta_title: "The $2.7 Trillion AI Bill Just Turned Cost Control Into a…"
+meta_title_source: "derived_from_title"
+meta_description: "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

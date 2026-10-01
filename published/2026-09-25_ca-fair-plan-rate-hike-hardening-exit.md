@@ -5,6 +5,10 @@ persona: pro_homeowner
 one_big_thing: "Hardening your home is the only durable exit from California's last-resort insurance pool before its 29.1% rate hike lands."
 date: 2026-09-25
 slug: ca-fair-plan-rate-hike-hardening-exit
+meta_title: "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit…"
+meta_title_source: "derived_from_title"
+meta_description: "California's last-resort insurer—the Fair Access to Insurance Requirements (FAIR) Plan—raises rates by an average of 29.1% on October 15, 2026."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

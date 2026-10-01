@@ -5,6 +5,10 @@ persona: supply_chain_architect
 one_big_thing: "The EV fleet transition's real bottleneck was residual-value risk and fragmented demand — a lease that shifts residual risk off carriers plus pooled shipper demand unlocked the largest electric truck order in U.S. history."
 date: 2026-09-25
 slug: zet-scale-ev-truck-residual-value-risk
+meta_title: "Electric Trucks Just Doubled Overnight — and the Battery…"
+meta_title_source: "derived_from_title"
+meta_description: "Top brands like Microsoft, PepsiCo, Ikea, and Red Bull just ordered 2,500 heavy-duty electric trucks."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

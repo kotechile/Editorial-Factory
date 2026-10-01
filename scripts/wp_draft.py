@@ -410,7 +410,7 @@ def make_excerpt(row: dict, limit: int = EXCERPT_TARGET) -> str:
     """meta_description when the pipeline wrote one, else the lead paragraph.
 
     Always trimmed on a word boundary: the budget this feeds is a <meta name="description">
-    tag, and a mid-word cut ("...contrasted with vendor cl...") is what the generator ships.
+    tag, and a mid-word cut ("...contrasted with vendor cl…") is what the generator ships.
     """
     seo = (row.get("metadata") or {}).get("seo") or {}
     text = (seo.get("meta_description") or "").strip() or lead_paragraph(row.get("content") or "")
@@ -515,7 +515,17 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
             '\n<script type="application/ld+json">'
             + json.dumps(dataset, separators=(",", ":")) + "</script>")
     else:
-        notes.append("no Dataset node in metadata.seo.schema — sent no JSON-LD (frontends emit Article/FAQPage)")
+        notes.append("no Dataset node in metadata.seo.schema — sent no JSON-LD. The frontends emit "
+                     "Article/BreadcrumbList/FAQPage themselves, so this is only a defect when the "
+                     "generator produced a node it did not capture (scripts/publish.py reports that)")
+
+    seo = metadata.get("seo") or {}
+    if not (seo.get("meta_description") or "").strip():
+        notes.append("no metadata.seo.meta_description — the excerpt fell back to the article's lead "
+                     "paragraph. Run scripts/article_assets.py on the artifact (publish.py does it "
+                     "automatically) to generate and store one")
+    if re.search(r"<svg\b", content_html, re.I) is None:
+        notes.append("no inline SVG in the content — nothing to transfer (the artifact carries no chart)")
 
     payload = {
         "title": make_title(row),
@@ -540,6 +550,94 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
     if not payload["slug"]:
         raise RuntimeError("article has no metadata.slug — it is the idempotency key")
     return payload, notes
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# delivery verification (read the post back, compare to what was sent)
+# ─────────────────────────────────────────────────────────────────────────────
+
+_LD_SCRIPT = re.compile(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.S | re.I)
+
+
+def _plain_text(value) -> str:
+    """Reader-visible text of a CMS field: unescaped, tags dropped, whitespace collapsed.
+
+    A CMS read-back is not the string that was written — WordPress entity-encodes punctuation
+    (`&#8217;`) and wraps `excerpt` in `<p>…</p>` — so a raw comparison reports a failure on a
+    perfectly good push.
+    """
+    text = html.unescape(str(value or ""))
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _ld_blocks(content: str) -> list:
+    out = []
+    for raw in _LD_SCRIPT.findall(content or ""):
+        try:
+            out.append(json.loads(raw))
+        except Exception:                          # noqa: BLE001 - an unparsable block is a defect
+            out.append({"__unparsable__": raw[:120]})
+    return out
+
+
+def delivery_problems(payload: dict, post: dict) -> list[str]:
+    """Compare a post read back from the CMS against the payload that was sent. [] means it landed.
+
+    This is the half that a push-only connector cannot see: the CMS is free to sanitize, truncate,
+    re-encode or drop anything in the body, and a 201 response proves only that the request was
+    accepted. Run it after every real push and report the result instead of assuming it.
+    """
+    problems: list[str] = []
+    sent_content = payload.get("content") or ""
+    stored_content = ((post.get("content") or {}).get("raw")
+                      or (post.get("content") or {}).get("rendered") or "")
+    stored_post_id = post.get("id")
+
+    if _plain_text(((post.get("title") or {}).get("raw") or (post.get("title") or {}).get("rendered"))) \
+            != _plain_text(payload.get("title")):
+        problems.append(f"title: sent {payload.get('title')!r}, CMS holds "
+                        f"{_plain_text(((post.get('title') or {}).get('raw')))[:80]!r}")
+
+    stored_excerpt = _plain_text((post.get("excerpt") or {}).get("raw")
+                                 or (post.get("excerpt") or {}).get("rendered"))
+    sent_excerpt = _plain_text(payload.get("excerpt"))
+    if stored_excerpt and sent_excerpt and stored_excerpt[:80] != sent_excerpt[:80]:
+        problems.append(f"excerpt: sent {sent_excerpt[:60]!r}, CMS holds {stored_excerpt[:60]!r}")
+    elif sent_excerpt and not stored_excerpt:
+        problems.append("excerpt: empty on the CMS — the frontends' <meta name=\"description\"> is blank")
+
+    sent_ld, stored_ld = _ld_blocks(sent_content), _ld_blocks(stored_content)
+    if len(stored_ld) != len(sent_ld):
+        problems.append(f"JSON-LD: sent {len(sent_ld)} block(s), CMS holds {len(stored_ld)} — "
+                        f"a <script type=application/ld+json> block was dropped or added")
+    else:
+        for index, (sent_node, stored_node) in enumerate(zip(sent_ld, stored_ld)):
+            if json.dumps(sent_node, sort_keys=True) != json.dumps(stored_node, sort_keys=True):
+                problems.append(f"JSON-LD block {index + 1} differs from what was sent")
+
+    sent_svg = len(re.findall(r"<svg\b", sent_content, re.I))
+    stored_svg = len(re.findall(r"<svg\b", stored_content, re.I))
+    if sent_svg != stored_svg:
+        problems.append(f"inline SVG: sent {sent_svg} chart(s), CMS holds {stored_svg}")
+    if sent_svg and re.search(r"&lt;svg", stored_content, re.I):
+        problems.append("inline SVG: the chart was stored as escaped text (&lt;svg), not as markup")
+    if sent_content.strip() and not stored_content.strip():
+        problems.append("content: the CMS holds an empty body")
+
+    if stored_post_id and str(post.get("status") or "") not in ("draft", "pending", "private", ""):
+        problems.append(f"status: the post came back {post.get('status')!r}, not draft — "
+                        f"publishing must stay a human step in the CMS")
+    return problems
+
+
+def verification_summary(payload: dict, post: dict) -> str:
+    """A one-line description of what a successful read-back verified."""
+    content = payload.get("content") or ""
+    return (f"title, {len(_plain_text(payload.get('excerpt')))}-char excerpt, "
+            f"{len(_ld_blocks(content))} JSON-LD block(s), "
+            f"{len(re.findall(r'<svg', content, re.I))} inline SVG(s), "
+            f"{len(content)} chars of body")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -600,6 +698,15 @@ class WordPress:
                 f"public.vertical_sites.wp_category_id for the vertical's own domain ({exc})") from None
         return str((category or {}).get("name") or "")
 
+    def read_back(self, post_id) -> dict:
+        """The post as the CMS actually holds it — raw fields, drafts included.
+
+        `context=edit` is what returns `content.raw`; the default `view` context returns rendered
+        HTML, where the read-back cannot tell an injected script tag from a stripped one.
+        """
+        _, post = self._call("GET", f"posts/{int(post_id)}?context=edit")
+        return post or {}
+
     def upsert(self, payload: dict) -> tuple[dict, str]:
         existing = self.find_by_slug(payload["slug"])
         if existing:
@@ -614,7 +721,7 @@ class WordPress:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None = None,
-             author_name: str | None = None, wp_factory=None) -> dict:
+             author_name: str | None = None, wp_factory=None, verify: bool = True) -> dict:
     metadata = row.get("metadata") or {}
     vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
     if not vertical:
@@ -644,6 +751,26 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     post, action = wp.upsert(payload)
     print(f"  {action}: post {post.get('id')} ({post.get('status')}) {post.get('link')}")
 
+    # Read the post back. A 201 says the request was accepted, not that the CMS kept what was sent:
+    # sanitizers, plugins and editors are all free to strip a <script> or an inline <svg> on save,
+    # which is exactly the failure a push-only connector cannot see. Reported, never assumed.
+    problems: list[str] = []
+    summary = ""
+    if verify:
+        try:
+            stored = wp.read_back(post.get("id"))
+            problems = delivery_problems(payload, stored)
+            if problems:
+                print("  DELIVERY VERIFICATION FAILED — the CMS does not hold what was sent:")
+                for problem in problems:
+                    print(f"    - {problem}")
+            else:
+                summary = verification_summary(payload, stored)
+                print(f"  delivery verified on {site['site_domain']}: {summary}")
+        except Exception as exc:                    # noqa: BLE001 - surface, never swallow (rule 6)
+            problems = [f"could not read the post back to verify delivery: {exc}"]
+            print(f"  DELIVERY VERIFICATION FAILED — {problems[0]}")
+
     record = {
         "post_id": post.get("id"),
         "status": post.get("status"),
@@ -652,15 +779,18 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         "site": site["site_domain"],
         "pushed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "pushed_by": "scripts/wp_draft.py",
+        "verified": not problems,
     }
     db.record_push(row["id"], metadata, record)
     print(f"  recorded metadata.{WORDPRESS} on the Supabase row ({row['id']})")
     return {"status": action, "site": site["site_domain"], "post_id": post.get("id"),
-            "edit_url": record["edit_url"]}
+            "edit_url": record["edit_url"], "verified": not problems, "problems": problems,
+            "summary": summary}
 
 
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
-                 author_name: str | None = None, wp_factory=None, db=None) -> dict:
+                 author_name: str | None = None, wp_factory=None, db=None,
+                 verify: bool = True) -> dict:
     """Push one article by its Supabase slug. The single entry point used by both this CLI and
     scripts/publish.py, so the in-run hook and a manual re-run share one code path."""
     db = db or Supabase(*supabase_config())
@@ -668,7 +798,7 @@ def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None
     if not rows:
         raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
     return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name,
-                    author_name=author_name, wp_factory=wp_factory)
+                    author_name=author_name, wp_factory=wp_factory, verify=verify)
 
 
 def main() -> int:
@@ -677,6 +807,9 @@ def main() -> int:
     parser.add_argument("--all", action="store_true", help="Every row with no metadata.wordpress.post_id yet")
     parser.add_argument("--limit", type=int, default=1, help="Max articles to push in one run (default 1)")
     parser.add_argument("--dry-run", action="store_true", help="Print the payload without contacting WordPress")
+    parser.add_argument("--no-verify", action="store_true",
+                        help="Skip the post-push read-back (default: read the post back and compare "
+                             "what the CMS stored against what was sent)")
     parser.add_argument("--publisher-name", default=None,
                         help="Organization name for the schema (default: the destination site domain)")
     parser.add_argument("--author-name", default=None,
@@ -691,10 +824,15 @@ def main() -> int:
 
     if args.slug:
         try:
-            push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
-                         author_name=args.author_name, db=db)
+            result = push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
+                                  author_name=args.author_name, db=db, verify=not args.no_verify)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
+            return 1
+        if result.get("problems"):
+            print("\n  the draft exists, but the CMS does not hold what was sent (see above) — "
+                  "fix the mapping and re-run; the slug is the idempotency key, so this updates "
+                  "the same post rather than duplicating it", file=sys.stderr)
             return 1
         print("\npushed: 1/1 | drafts only — publishing stays a human step in the CMS")
         return 0
@@ -707,8 +845,10 @@ def main() -> int:
     failures = 0
     for row in rows:
         try:
-            push_one(row, db, dry_run=args.dry_run, publisher_name=args.publisher_name,
-                     author_name=args.author_name)
+            result = push_one(row, db, dry_run=args.dry_run, publisher_name=args.publisher_name,
+                              author_name=args.author_name, verify=not args.no_verify)
+            if result.get("problems"):
+                failures += 1
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             failures += 1
             print(f"\n  FAILED {row.get('title')}: {exc}", file=sys.stderr)

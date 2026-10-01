@@ -10,6 +10,7 @@ WordPress call) when credentials are present, then exits non-zero on any failure
 from __future__ import annotations
 
 import json
+import html
 import pathlib
 import re
 import sys
@@ -18,6 +19,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import wp_draft as wd  # noqa: E402
+import chart_generator as cg  # noqa: E402
 
 PASS, FAIL = [], []
 
@@ -47,6 +49,7 @@ class StubWP(BaseHTTPRequestHandler):
     requests: list[tuple[str, str, dict]] = []
     require_auth = True
     expected_auth = ""       # set by the test: "Basic <b64>" — a wrong password must 401
+    sanitize = False         # True = behave like a CMS that strips scripts/SVG on save (kses)
 
     def log_message(self, *args):                 # keep the test output readable
         pass
@@ -73,6 +76,21 @@ class StubWP(BaseHTTPRequestHandler):
             return False
         return True
 
+    @staticmethod
+    def _wp_shaped(post: dict) -> dict:
+        """What WordPress returns for `context=edit`: raw + rendered fields, excerpt wrapped.
+
+        The excerpt comes back as `<p>…</p>` with entity-encoded punctuation, which is exactly why
+        the read-back cannot compare raw strings.
+        """
+        return {
+            **post,
+            "title": {"raw": post.get("title"), "rendered": f"<p>{html.escape(post.get('title') or '')}</p>"},
+            "excerpt": {"raw": f"<p>{html.escape(post.get('excerpt') or '')}</p>",
+                        "rendered": f"<p>{html.escape(post.get('excerpt') or '')}</p>"},
+            "content": {"raw": post.get("content") or "", "rendered": post.get("content") or ""},
+        }
+
     def do_GET(self):
         if not self._authed():
             return
@@ -83,6 +101,12 @@ class StubWP(BaseHTTPRequestHandler):
             if cid in catalog:
                 return self._send(200, {"id": int(cid), "name": catalog[cid]})
             return self._send(404, {"code": "rest_term_invalid", "message": "Term does not exist."})
+        if self.path.startswith("/wp-json/wp/v2/posts/"):
+            post_id = self.path.split("/wp-json/wp/v2/posts/")[1].split("?")[0]
+            post = StubWP.posts.get(post_id)
+            if not post:
+                return self._send(404, {"code": "rest_post_invalid_id", "message": "Invalid post ID."})
+            return self._send(200, self._wp_shaped(post))
         if self.path.startswith("/wp-json/wp/v2/posts?"):
             slug = self.path.split("slug=")[1].split("&")[0]
             found = [p for p in StubWP.posts.values() if p["slug"] == slug]
@@ -94,6 +118,9 @@ class StubWP(BaseHTTPRequestHandler):
             return
         body = self._read()
         StubWP.requests.append(("POST", self.path, body))
+        if StubWP.sanitize:
+            body["content"] = re.sub(r"<script[^>]*>.*?</script>", "", body.get("content") or "", flags=re.S)
+            body["content"] = re.sub(r"<svg\b.*?</svg>", "", body["content"], flags=re.S | re.I)
         if self.path == "/wp-json/wp/v2/posts":
             post_id = str(100 + len(StubWP.posts) + 1)
             post = {"id": post_id, "slug": body["slug"], "status": body["status"],
@@ -435,8 +462,99 @@ finally:
     server2.shutdown()
 
 # ─────────────────────────────────────────────────────────────────────────────
-# real data (read-only; skipped when Supabase creds are absent)
+# delivery verification — read the post back and compare it to what was sent
 # ─────────────────────────────────────────────────────────────────────────────
+
+print("\ndelivery verification — what the CMS actually kept")
+
+SVG_CHART = cg.generate_svg_bar_chart("Verified figures", [("Price hike", 13.0, "[1]"), ("Ad tier", 4.0, "[2]")])
+CHART_ROW = {**ROW, "content": MARKDOWN.replace("## Sources", SVG_CHART + "\n\n## Sources")}
+
+base_payload, _ = wd.build_payload(ROW, SITE)
+chart_payload, chart_notes = wd.build_payload(CHART_ROW, SITE)
+
+
+def stored_post(payload: dict, content: str | None = None, status: str = "draft",
+                title: str | None = None, excerpt: str | None = None) -> dict:
+    """A WordPress-shaped read-back of `payload`."""
+    return {
+        "id": 101,
+        "status": status,
+        "title": {"raw": payload["title"] if title is None else title, "rendered": "<p>x</p>"},
+        "excerpt": {"raw": f"<p>{html.escape(payload['excerpt'] if excerpt is None else excerpt)}</p>"},
+        "content": {"raw": payload["content"] if content is None else content},
+    }
+
+
+check("the inline chart is in the payload",
+      "<svg" in chart_payload["content"] and "&lt;svg" not in chart_payload["content"])
+check("no SVG in the artifact => no SVG in the payload (nothing invented)",
+      "<svg" not in base_payload["content"])
+
+check("a faithful read-back reports no problems",
+      wd.delivery_problems(chart_payload, stored_post(chart_payload)) == [],
+      str(wd.delivery_problems(chart_payload, stored_post(chart_payload))))
+check("...even though WordPress wraps and entity-encodes the excerpt",
+      wd.delivery_problems(base_payload, stored_post(base_payload)) == [])
+check("a mismatched title is reported",
+      any("title" in p for p in wd.delivery_problems(base_payload, stored_post(base_payload, title="Wrong"))))
+check("an excerpt the CMS left empty is reported",
+      any("excerpt" in p for p in wd.delivery_problems(base_payload, stored_post(base_payload, excerpt=""))))
+check("a JSON-LD block stripped on save is reported",
+      any("JSON-LD" in p for p in wd.delivery_problems(
+          base_payload,
+          stored_post(base_payload, content=re.sub(r"<script[^>]*>.*?</script>", "",
+                                                   base_payload["content"], flags=re.S)))))
+check("an inline SVG stripped on save is reported",
+      any("SVG" in p for p in wd.delivery_problems(
+          chart_payload, stored_post(chart_payload, content=re.sub(r"<svg\b.*?</svg>", "",
+                                                                    chart_payload["content"], flags=re.S | re.I)))))
+check("a chart stored as escaped text is reported, not accepted as markup",
+      any("escaped text" in p for p in wd.delivery_problems(
+          chart_payload, stored_post(chart_payload, content=chart_payload["content"].replace("<svg", "&lt;svg")))))
+check("a post that came back published is reported (the human gate must hold)",
+      any("status" in p for p in wd.delivery_problems(base_payload, stored_post(base_payload, status="publish"))))
+
+print("\nend-to-end — the read-back runs on a real push against the stub CMS")
+server3, base3 = start_stub()
+StubWP.posts.clear()
+StubWP.requests.clear()
+StubWP.sanitize = False
+try:
+    db3 = FakeDB()
+    wp3 = wd.WordPress(base3, "editor", "secret")
+    def _resend(row=CHART_ROW, **kw):
+        return wd.push_one(row, db3, wp_factory=lambda b, u, p: wp3, **kw)
+
+    first = _resend()
+    check("push_one verifies the draft it created", first["verified"] is True and not first["problems"],
+          str(first["problems"]))
+    check("...and reports what it verified", "JSON-LD" in (first.get("summary") or ""), str(first.get("summary")))
+    check("...by reading the post back with context=edit",
+          any("context=edit" in path for _, path, _ in StubWP.requests))
+    check("...and records the verification on the Supabase row",
+          db3.recorded[-1]["record"]["verified"] is True)
+    stored_content = StubWP.posts[list(StubWP.posts)[-1]]["content"]
+    check("the chart is on the CMS post as markup, next to its JSON-LD",
+          "<svg" in stored_content and "&lt;svg" not in stored_content
+          and "application/ld+json" in stored_content)
+
+    StubWP.sanitize = True                     # a CMS/plugin that strips scripts and SVG on save
+    sanitized = _resend()
+    check("a CMS that strips the script/SVG is reported instead of assumed fine",
+          sanitized["verified"] is False and len(sanitized["problems"]) >= 2, str(sanitized["problems"]))
+    check("...and the row records verified=false (the sweep can find it)",
+          db3.recorded[-1]["record"]["verified"] is False)
+
+    StubWP.sanitize = False
+    reads_before = len([1 for _, path, _ in StubWP.requests if "context=edit" in path])
+    _resend(verify=False)
+    reads_after = len([1 for _, path, _ in StubWP.requests if "context=edit" in path])
+    check("--no-verify skips the read-back", reads_after == reads_before)
+finally:
+    server3.shutdown()
+
+
 
 print("\nreal Supabase row (read-only, no WordPress call)")
 try:

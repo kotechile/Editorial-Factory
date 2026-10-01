@@ -136,6 +136,8 @@ carries an authority construction, or when an interpreting section has no observ
   lines), which breaks frontmatter parsing downstream. All three humanize scripts now normalize
   this with `humanizer_tools.normalize_frontmatter()`; do not remove that call.
 - Preserve the `<!-- schema -->` (JSON-LD) and `<!-- internal-links -->` blocks verbatim when present, keeping them at the end of the markdown draft.
+- Preserve any `<svg>…</svg>` chart block verbatim, in place: it is generated from the article's own numbers and a rewrite that reflows, re-indents, escapes or drops it turns the visual into a wall of markup. Do not add one either — a chart is emitted mechanically at persistence time (`scripts/article_assets.py`) only when the numbers section is a real series.
+- Never invent `meta_title` / `meta_description` if they are absent — leave the keys out and the persistence pass derives them from your headline and lead paragraph (`scripts/article_assets.py`). If you do write them, they must be grounded in the article's own text.
 - Ensure the article body is clean markup starting with the lead paragraph and contains descriptive, high-quality `## ` (H2) section headings (target ≤ 6 words).
 - Preserve each section's distinct, brief-sourced action items — bulletize them clearly for the target persona.
 - Only VERIFIED-brief figures may appear; no secondary-derived sums.

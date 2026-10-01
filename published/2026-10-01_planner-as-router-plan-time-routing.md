@@ -5,6 +5,10 @@ persona: ai_architect
 one_big_thing: "Planner-as-Router cuts multi-agent cost 44% by assigning each subtask a model tier at plan time — no router model, no training data — and its own pilot warns cheap routing may quietly compound errors."
 date: 2026-10-01
 slug: planner-as-router-plan-time-routing
+meta_title: "Planner-as-Router: Fold the Model Choice Into the Plan"
+meta_title_source: "derived_from_title"
+meta_description: "On Sept. 26, three researchers shared a new system called Planner-as-Router (PaR) that cuts AI agent costs by 44 percent."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

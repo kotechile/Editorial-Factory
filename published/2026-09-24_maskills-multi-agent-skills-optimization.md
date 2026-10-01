@@ -5,6 +5,10 @@ persona: ai_architect
 one_big_thing: "A peer-reviewed ablation shows the validation-and-rollback gate is the highest-leverage part of a multi-agent optimization loop — delete it and LoCoMo collapses 17.2 → 6.6 — and that optimizing skills, not memory, is how multi-agent systems actually improve."
 date: 2026-09-24
 slug: maskills-multi-agent-skills-optimization
+meta_title: "Stop Piling Memory Onto AI Agents: Optimize Skills"
+meta_title_source: "derived_from_title"
+meta_description: "Drop one hard check from an Artificial Intelligence (AI) agent's learning loop, and its test score crashes from 17.2 to 6.6."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

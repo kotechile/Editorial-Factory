@@ -161,6 +161,15 @@ if ! python3 "$ROOT/scripts/test_wp_draft.py" >/dev/null 2>&1; then
   echo "FAIL: wp_draft mapping tests — detail:"; python3 "$ROOT/scripts/test_wp_draft.py" 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.55 Derived article assets (hard): every artifact that reaches a destination carries a
+#      meta_description (the CMS excerpt / the frontends' <meta name="description">) and a chart when
+#      its own numbers section is a real series. The drafting stage is an LLM and emits neither
+#      reliably, so both are derived from the artifact's own text (scripts/article_assets.py) — and
+#      the rules that stop a chart from inventing a figure are pinned by this suite.
+if ! python3 "$ROOT/scripts/test_article_assets.py" >/dev/null 2>&1; then
+  echo "FAIL: article-asset tests — detail:"; python3 "$ROOT/scripts/test_article_assets.py" 2>&1 | tail -8; FAIL=1
+fi
+
 # 8.6 Pre-flight data gate (hard): a citation hub may only be drafted on metrics whose headline
 #     figure was actually retrieved from the cited primary source. Hermetic run (--no-network):
 #     the live audit of the shipped dossiers is a separate, deliberate step —

@@ -5,6 +5,10 @@ persona: equity_career_strategist
 one_big_thing: "More than 70% of vested startup options are never exercised — and a 401(k) is one of the biggest levers deciding who actually converts paper equity into cash."
 date: 2026-09-25
 slug: carta-unexercised-options-401k
+meta_title: "Why 70% of Startup Options Go Unexercised"
+meta_title_source: "derived_from_title"
+meta_description: "More than 70% of vested startup stock options are never exercised, according to new data from Carta published Sept. 10."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+"""Derive the assets a destination needs from an article artifact: SEO metadata + a chart.
+
+Both are **derived from the artifact's own text** — never invented. The generator's drafting stage
+is an LLM and it does not reliably emit `meta_title` / `meta_description`, and the news path emits no
+visual at all, so the destinations (the CMS excerpt, the frontends' `<meta name="description">`, the
+reader's page) end up with whatever the last writer happened to leave behind. This module makes both
+deterministic, idempotent and testable, and reports every decision (including "no chart, and why").
+
+Two halves:
+
+  metadata   `meta_title` / `meta_description`, from the headline and the lead paragraph, only when
+             the artifact does not already carry them (a keyword-aware value written by the drafting
+             stage always wins). Provenance is recorded in `meta_title_source` /
+             `meta_description_source` so a derived value is never mistaken for a researched one.
+
+  chart      An inline SVG bar chart of the percentages the article's own `**By the numbers:**`
+             section states. Charted only when the figures are a real, single-unit series:
+
+               - only the numbers section is read, never the prose of the article;
+               - only figures carrying `%` (a 0-100 axis is then a true comparison — money, counts
+                 and multipliers never share it);
+               - a bullet whose own sentence contains a second percentage is skipped: that figure is
+                 being *compared* to another one, not stated as a series point;
+               - at least two points, at most five; fewer than two emits no chart at all, and says so.
+
+             There is deliberately no placeholder fallback. A chart is the most quotable part of an
+             article; a bar that exists only so a visual exists is an invented figure.
+
+CLI:
+  python3 scripts/article_assets.py context/drafts/foo_final.md            # report only
+  python3 scripts/article_assets.py context/drafts/foo_final.md --apply    # write in place
+  python3 scripts/article_assets.py --check published/*.md                 # exit 1 if anything is missing
+"""
+
+from __future__ import annotations
+
+import argparse
+import pathlib
+import re
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import chart_generator as cg  # noqa: E402
+
+META_TITLE_MAX = 60
+META_DESC_TARGET = 158          # characters; the WordPress excerpt / <meta name="description"> budget
+META_DESC_MIN = 110             # below this a description is a fragment, not a description
+CHART_MAX_POINTS = 5
+CHART_MIN_POINTS = 2            # fewer than two points is not a series
+CHART_SUBTITLE = "Figures as stated in this article's own numbers section (verified figures, %)"
+
+_NUMBERS_HEADING = re.compile(r"^\*\*By the numbers:\*\*\s*$", re.M)
+_BULLET = re.compile(r"^\s*[-*]\s+(.*)$")
+_BOLD_LEAD = re.compile(r"^\*\*(?P<lead>.+?)\*\*\s*:?\s*(?P<rest>.*)$", re.S)
+_PCT = re.compile(r"(\d+(?:[.,]\d+)?)\s*%")
+_SECTION_BREAK = re.compile(r"^(#{1,6}\s|\s*<!--|\s*\|)")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# artifact parsing (frontmatter + the numbers section)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def split_frontmatter(md: str) -> tuple[dict[str, str], str]:
+    """The artifact's frontmatter as raw strings, plus the body. Mirrors publish.py's parser."""
+    fm: dict[str, str] = {}
+    body = md
+    if md.startswith("---"):
+        parts = md.split("---", 2)
+        if len(parts) >= 3:
+            body = parts[2].lstrip("\n")
+            for line in parts[1].strip().splitlines():
+                if ":" in line:
+                    k, v = line.split(":", 1)
+                    fm[k.strip()] = v.strip().strip('"').strip("'")
+    return fm, body
+
+
+def numbers_block(body: str) -> str:
+    """The `**By the numbers:**` bullet block, or "" when the article has none."""
+    match = _NUMBERS_HEADING.search(body)
+    if not match:
+        return ""
+    lines: list[str] = []
+    for line in body[match.end():].splitlines():
+        stripped = line.strip()
+        if stripped and not _BULLET.match(line) and _SECTION_BREAK.match(stripped):
+            break
+        lines.append(line)
+    return "\n".join(lines).strip("\n")
+
+
+def _bullets(block: str) -> list[str]:
+    return [m.group(1).strip() for line in block.splitlines() if (m := _BULLET.match(line))]
+
+
+def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:
+    """(items, notes) — the series the numbers section states, and what was left out and why.
+
+    The points are returned even when there are too few to chart (the ≥2 rule lives in
+    `inject_chart`), because a caller reporting "0 chartable points" when the artifact has one is
+    just as misleading as inventing the second.
+    """
+    block = numbers_block(body)
+    if not block:
+        return [], "no `**By the numbers:**` section — nothing to chart"
+    items: list[tuple[str, float, str]] = []
+    skipped: list[str] = []
+    for bullet in _bullets(block):
+        lead = _BOLD_LEAD.match(bullet)
+        if not lead:
+            skipped.append(f"no bold figure: {bullet[:40]}")
+            continue
+        figure, rest = lead.group("lead"), lead.group("rest")
+        fig_pct = _PCT.search(figure)
+        if not fig_pct:
+            skipped.append(f"not a percentage: {figure[:24]}")
+            continue
+        if _PCT.search(rest):                       # a second % in the same sentence = a comparison
+            skipped.append(f"states a second figure, so it is a comparison not a series point: {figure}")
+            continue
+        value = float(fig_pct.group(1).replace(",", "."))
+        if value > 100:
+            # A rate above 100% is growth over a base, not a share of one; plotting it on the same
+            # 0-100 axis as the shares beside it is a wrong comparison dressed as a chart.
+            skipped.append(f"above 100%, so it is a growth rate not a share: {figure}")
+            continue
+        label = re.split(r"[.]\s", rest)[0] if rest else figure
+        label = re.sub(r"\[\d+\]", "", label).strip(" ,;:—-")
+        citations = " ".join(re.findall(r"\[\d+\]", rest or ""))
+        items.append((label[:64] or figure, value, citations))
+
+    if len(items) < 2:
+        return items, (f"{len(items)} chartable percentage point(s) in the numbers section "
+                       f"({'; '.join(skipped[:3]) or 'no bullets'}) — emitting none rather than "
+                       f"inventing a series")
+    return items[:CHART_MAX_POINTS], ("skipped: " + "; ".join(skipped) if skipped else "")
+
+
+def inject_chart(md: str, subtitle: str = CHART_SUBTITLE) -> tuple[str, str]:
+    """(markdown, note). Idempotent: an artifact that already carries an <svg> is left alone."""
+    if re.search(r"<svg\b", md, re.I):
+        return md, "chart already present — left alone"
+
+    series, notes = chart_series(md)
+    if len(series) < CHART_MIN_POINTS:
+        return md, f"no chart: {notes}"
+
+    title = _chart_title(md)
+    svg = cg.generate_svg_bar_chart(title, series, subtitle=subtitle)
+
+    match = _NUMBERS_HEADING.search(md)
+    if not match:
+        return md, f"no chart: {notes}"
+    # Insert after the numbers bullet block, so the chart sits with the figures it charts.
+    end = match.end()
+    for line in md[match.end():].splitlines(keepends=True):
+        if line.strip() and not _BULLET.match(line) and _SECTION_BREAK.match(line.strip()):
+            break
+        end += len(line)
+    out = md[:end].rstrip("\n") + "\n\n" + svg + "\n\n" + md[end:].lstrip("\n")
+    return out, (f"chart added: {len(series)} point(s) — {', '.join(l for l, _, _ in series)}"
+                 + (f" | {notes}" if notes else ""))
+
+
+def _chart_title(md: str) -> str:
+    fm, _ = split_frontmatter(md)
+    return fm.get("meta_title") or fm.get("title") or "Verified figures"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SEO metadata
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _lead_paragraph(body: str) -> str:
+    """The article's first real paragraph — the same source the CMS excerpt falls back to."""
+    for block in re.sub(r"^---.*?---", "", body, flags=re.S).split("\n"):
+        text = block.strip()
+        if not text or text.startswith(("#", "|", ">", "-", "*", "```", "<!--")):
+            continue
+        text = re.sub(r"\[([^\]]+)\]\([^)\s]+\)", r"\1", text)
+        text = re.sub(r"\[\d+\]", "", text)          # inline [1] citation markers
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = re.sub(r"[*`_]", "", text)
+        text = re.sub(r"\s+([.,;:])", r"\1", text)   # a marker removed mid-sentence leaves " ."
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text.split()) >= 8:
+            return text
+    return ""
+
+
+def _trim_words(text: str, limit: int) -> str:
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "…"
+
+
+def derive_meta_description(body: str, target: int = META_DESC_TARGET) -> str:
+    """A description built from the article's own lead paragraph, trimmed on a word boundary.
+
+    Whole sentences are preferred over a mid-clause cut, because this string becomes the CMS excerpt
+    and the frontends' `<meta name="description">`: a truncated fragment reads as broken metadata,
+    while one or two complete lead sentences read as a summary. Only when the first sentence alone
+    overruns the budget is it trimmed on a word boundary.
+    """
+    lead = _lead_paragraph(body)
+    if not lead:
+        return ""
+    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", lead) if s.strip()]
+    if not sentences:
+        return ""
+    if len(sentences[0]) > target:
+        return _trim_words(sentences[0], target)
+    out = sentences[0]
+    for sentence in sentences[1:]:
+        if len(out) + 1 + len(sentence) > target:
+            break
+        out = f"{out} {sentence}"
+    return out
+
+
+def ensure_seo_metadata(fm: dict[str, str], body: str) -> tuple[dict[str, str], list[str]]:
+    """Fill meta_title / meta_description + provenance. A value the artifact already carries wins."""
+    notes: list[str] = []
+    title = (fm.get("title") or "").strip()
+    if not (fm.get("meta_title") or "").strip() and title:
+        fm["meta_title"] = _trim_words(title, META_TITLE_MAX)
+        fm["meta_title_source"] = "derived_from_title"
+        notes.append(f"meta_title derived from the title ({len(fm['meta_title'])} chars)")
+    if not (fm.get("meta_description") or "").strip():
+        desc = derive_meta_description(body)
+        if desc:
+            fm["meta_description"] = desc
+            fm["meta_description_source"] = "derived_from_lead"
+            notes.append(f"meta_description derived from the lead paragraph ({len(desc)} chars)")
+        else:
+            notes.append("no meta_description could be derived: no lead paragraph found")
+    return fm, notes
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# whole-artifact pass (what the publish path calls)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def ensure_assets(md: str, chart: bool = True) -> tuple[str, list[str]]:
+    """Enrich an artifact: frontmatter SEO fields + an inline chart. Returns (markdown, notes)."""
+    fm, body = split_frontmatter(md)
+    fm, notes = ensure_seo_metadata(fm, body)
+    md = _reemit_frontmatter(fm, body) if fm else md
+    if chart:
+        md, note = inject_chart(md)
+        notes.append(note)
+    return md, notes
+
+
+def _reemit_frontmatter(fm: dict[str, str], body: str) -> str:
+    lines = ["---"]
+    for key, value in fm.items():
+        lines.append(f'{key}: "{value}"' if not re.fullmatch(r"[\w.+-]+", str(value)) else f"{key}: {value}")
+    lines.append("---")
+    return "\n".join(lines) + "\n\n" + body.lstrip("\n")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CLI — report (default) or write in place
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _report(path: pathlib.Path) -> tuple[bool, list[str]]:
+    md = path.read_text(encoding="utf-8")
+    fm, body = split_frontmatter(md)
+    notes: list[str] = []
+    complete = True
+    if not (fm.get("meta_title") or "").strip():
+        complete = False
+        notes.append("meta_title: MISSING")
+    if not (fm.get("meta_description") or "").strip():
+        complete = False
+        notes.append("meta_description: MISSING")
+    series, reason = chart_series(md)
+    if re.search(r"<svg\b", md, re.I):
+        notes.append("chart: present")
+    elif len(series) >= CHART_MIN_POINTS:
+        complete = False
+        notes.append(f"chart: CHARTABLE ({len(series)} points) but not embedded")
+    else:
+        notes.append(f"chart: n/a — {reason}")
+    return complete, notes
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("files", nargs="*", help="article markdown files")
+    parser.add_argument("--apply", action="store_true", help="write the assets into the files")
+    parser.add_argument("--check", action="store_true", help="exit 1 when an asset is missing")
+    args = parser.parse_args()
+
+    if not args.files:
+        parser.error("pass at least one markdown file")
+
+    incomplete = 0
+    for raw in args.files:
+        path = pathlib.Path(raw)
+        text = path.read_text(encoding="utf-8")
+        check_only = args.check and not args.apply
+        if not check_only and args.apply:
+            enriched, notes = ensure_assets(text)
+            if enriched != text:
+                path.write_text(enriched, encoding="utf-8")
+            print(f"  {path.name}")
+            for n in notes:
+                print(f"    - {n}")
+            print(f"    - {'written' if enriched != text else 'already complete (no change)'}")
+        else:
+            complete, notes = _report(path)
+            incomplete += 0 if complete else 1
+            print(f"  {path.name}")
+            for n in notes:
+                print(f"    - {n}")
+
+    if args.check and incomplete:
+        print(f"\nFAIL: {incomplete} artifact(s) missing derived SEO metadata or an available chart")
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

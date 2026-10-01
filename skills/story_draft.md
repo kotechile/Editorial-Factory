@@ -21,6 +21,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 ## 3. Rules
 - Inline citations: every factual sentence carries `[n]` mapping to a source list at the end.
 - Two lengths from one skeleton: long-form draft + ~1,300-char LinkedIn post.
+- **SEO frontmatter is optional to author and never invented:** if the brief carries a keyword set, write `meta_title` (≤60 chars) and `meta_description` (140–160 chars) grounded in the article's own headline and lead; if you have neither, omit the keys. The persistence pass derives both from your headline and lead paragraph (`scripts/article_assets.py`) so the CMS excerpt and the frontends' `<meta name="description">` are never empty — do not pad them with claims the article does not make.
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
 - **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins (e.g. `- **40% routed:** ...`) that deliver the load-bearing quantitative facts before the tactical moves.

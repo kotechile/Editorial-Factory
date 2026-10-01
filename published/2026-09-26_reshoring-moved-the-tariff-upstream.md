@@ -9,6 +9,10 @@ synthesis: true
 sources:
   - https://fortune.com/2026/09/15/coca-cola-invest-10-billion-us-growth-through-2030-cfo
   - https://media.rabobank.com/asset/d0da754d-5253-48d8-a4c9-1ff0045fae48/Unwrapped-Plastic-packaging-matters-August-2026.pdf
+meta_title: "Reshoring Didn't Kill Tariff Risk — It Moved Upstream Into…"
+meta_title_source: "derived_from_title"
+meta_description: "Coca-Cola just pledged $10 billion for U.S. plants by 2030, which its Chief Financial Officer (CFO) calls a growth plan rather than a tariff shield."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->

@@ -5,6 +5,10 @@ persona: systems_tinkerer_pro
 one_big_thing: "Disney+ and Hulu lifted their ad-free tier 13% to $21.49 a month on Sept. 23 — the fourth hike in four years — weeks after Disney+ and Hulu's combined operating income jumped 116% to $712 million, the tell that a subscription stack compounds even while profits do."
 date: 2026-09-26
 slug: disney-hulu-fourth-hike-subscription-creep
+meta_title: "Disney+ and Hulu Just Raised Prices 13% — Right After…"
+meta_title_source: "derived_from_title"
+meta_description: "On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent to $21.49 a month. This marks the fourth price hike in four years."
+meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->
@@ -22,6 +26,23 @@ On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent
 - **4% / $0.50:** The tiny increase for the ad-supported tier, which now costs $12.49 a month and steers viewers toward ads [2].
 - **+116%:** The year-over-year growth in combined operating income for Disney+ and Hulu, hitting $712 million [6].
 - **~3×:** The rate that streaming prices have outpaced the broader inflation rate since 2022 [4].
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
+  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Verified figures</text>
+  <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
+  <!-- Row 1 -->
+  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">The price jump for both…</text>
+  <rect x="220" y="70" width="320" height="18" rx="4" fill="#1e293b"/>
+  <rect x="220" y="70" width="41" height="18" rx="4" fill="#818cf8"/>
+  <text x="271" y="84" fill="#f1f5f9" font-size="13" font-weight="600">13%</text>
+  <text x="325" y="84" fill="#64748b" font-size="11">([1])</text>
+  <!-- Row 2 -->
+  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">The tiny increase for the…</text>
+  <rect x="220" y="118" width="320" height="18" rx="4" fill="#1e293b"/>
+  <rect x="220" y="118" width="12" height="18" rx="4" fill="#818cf8"/>
+  <text x="242" y="132" fill="#f1f5f9" font-size="13" font-weight="600">4%</text>
+  <text x="296" y="132" fill="#64748b" font-size="11">([2])</text>
+</svg>
 
 <!-- tactical-insight -->
 ## Where This Bites

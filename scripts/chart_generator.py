@@ -41,10 +41,15 @@ def generate_mermaid_bar_chart(title: str, items: List[Tuple[str, float]], x_lab
     return "\n".join(lines)
 
 
-def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_val: float = 100.0) -> str:
+def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_val: float = 100.0,
+                           subtitle: str = "Audited Field Telemetry vs Industry Claims (2026)") -> str:
     """Generate a sleek, responsive SVG bar chart with dark-mode aesthetic.
     
     items: List of (label, percentage_value, subtext/annotation)
+
+    `subtitle` is caller-supplied because it states what the bars are: the citation hub's default
+    ("audited field telemetry vs industry claims") is a claim about the data, and an article that
+    charts its own reported figures must not borrow it.
     """
     row_height = 48
     header_height = 56
@@ -55,7 +60,7 @@ def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_
     svg_lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">',
         f'  <text x="{padding}" y="36" fill="#f8fafc" font-size="16" font-weight="600">{html.escape(title)}</text>',
-        f'  <text x="{padding}" y="52" fill="#94a3b8" font-size="12">Audited Field Telemetry vs Industry Claims (2026)</text>'
+        f'  <text x="{padding}" y="52" fill="#94a3b8" font-size="12">{html.escape(subtitle)}</text>'
     ]
 
     bar_max_width = 320
@@ -73,7 +78,9 @@ def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_
         svg_lines.append(f'  <text x="{padding}" y="{y+16}" fill="#e2e8f0" font-size="13" font-weight="500">{html.escape(_shorten(label))}</text>')
         svg_lines.append(f'  <rect x="{bar_start_x}" y="{y+2}" width="{bar_max_width}" height="18" rx="4" fill="#1e293b"/>')
         svg_lines.append(f'  <rect x="{bar_start_x}" y="{y+2}" width="{bar_w}" height="18" rx="4" fill="{bar_color}"/>')
-        svg_lines.append(f'  <text x="{bar_start_x + bar_w + 10}" y="{y+16}" fill="#f1f5f9" font-size="13" font-weight="600">{pct}%</text>')
+        # Label the bar with the figure it was given, never with the axis-clamped width: printing the
+        # clamp turned a 116% growth rate into a quoted "100.0%" — a number the source never said.
+        svg_lines.append(f'  <text x="{bar_start_x + bar_w + 10}" y="{y+16}" fill="#f1f5f9" font-size="13" font-weight="600">{round(float(val), 1):g}%</text>')
         if note:
             svg_lines.append(f'  <text x="{bar_start_x + bar_w + 64}" y="{y+16}" fill="#64748b" font-size="11">({html.escape(_shorten(note, 22))})</text>')
 
