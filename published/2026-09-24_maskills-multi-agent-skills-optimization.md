@@ -10,10 +10,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Drop one hard check from an Artificial Intelligence (AI) agent's learning loop, and its test score crashes from 17.2 to 6.6."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/maskills-multi-agent-skills-optimization/featured.png"
-image_style: "minimal_geometry"
+image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "A large geometric block tilting slightly because a supporting wedge has been removed."
-image_caption: "Multi-agent systems rely on validation gates to function; dropping them causes performance to collapse."
+image_alt: "A modular mechanical track with an unlatched inspection gate removed from the main assembly line."
+image_caption: "Removing a single validation gate from a multi-agent learning loop can severely degrade its reasoning capabilities."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

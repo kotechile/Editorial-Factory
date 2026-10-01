@@ -98,6 +98,12 @@ Every article gets one 16:9 header image, and it is a **decision about that stor
 - It runs **inside the persistence pass** (reported as `[image]` notes next to `[assets]`), is **not**
   approval-gated, and never blocks a publish: if generation fails, the article still goes out and
   `scripts/cron-wp-drafts.sh` retries the image on its next sweep.
+- A **re-commissioned** image (an article rewritten, or a treatment re-read after the rules changed)
+  needs one extra command to reach a post that already exists: `python3 scripts/wp_draft.py --slug
+  <slug> --reimage`. The CMS push is idempotent by the media slug, so an ordinary push would reuse the
+  attachment it recorded and only update its alt text — the reader would keep seeing the previous
+  reading. `--reimage` replaces the attachment and nothing else (no title, excerpt, body or status),
+  and proves the bytes the CMS serves against the staged file.
 
 Where it lands: the image + its brief in `context/assets/illustrations/<slug>/` (the brief is
 committed, the binary is not — the CMS media library is the image's home), the `image_*` fields in the

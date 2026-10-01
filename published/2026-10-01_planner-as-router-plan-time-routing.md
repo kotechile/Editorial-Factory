@@ -10,10 +10,10 @@ meta_title_source: "derived_from_title"
 meta_description: "On Sept. 26, three researchers shared a new system called Planner-as-Router (PaR) that cuts AI agent costs by 44 percent."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/planner-as-router-plan-time-routing/featured.png"
-image_style: "minimal_geometry"
+image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "A large rectangular geometric shape split into distinct colour bands on a solid background."
-image_caption: "Folding the model choice into the initial plan avoids the need for a separate router."
+image_alt: "An interlocking mechanical connector splitting into two conduit paths on a minimal background."
+image_caption: "Planner-as-Router assigns a model tier to each subtask at the start of the planning phase, reducing costs by 44 percent."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

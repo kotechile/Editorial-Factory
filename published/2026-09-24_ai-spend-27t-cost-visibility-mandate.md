@@ -10,10 +10,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png"
-image_style: "clay_render"
+image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "A matte clay 3D render showing a distinct foundational block embedded within a stack of soft geometric shapes."
-image_caption: "Cost management is becoming a foundational layer physically embedded within enterprise AI deployments."
+image_alt: "Isometric cutaway of a modular server blade featuring an integrated metering valve and flow sensor."
+image_caption: "As AI spending surges, buyers are demanding that cost management and usage tracking be engineered directly into the underlying architecture."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

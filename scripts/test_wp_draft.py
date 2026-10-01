@@ -178,6 +178,20 @@ class StubWP(BaseHTTPRequestHandler):
         StubWP.requests.append(("POST", self.path, updates))
         return self._send(200, self._media_shaped(item))
 
+    def do_DELETE(self):
+        """Media deletion with ?force=true — how a replaced header is taken out of the library."""
+        if not self._authed():
+            return
+        StubWP.requests.append(("DELETE", self.path, {}))
+        if self.path.startswith("/wp-json/wp/v2/media/"):
+            media_id = self.path.split("/wp-json/wp/v2/media/")[1].split("?")[0]
+            item = StubWP.media.pop(media_id, None)
+            StubWP.media_bytes.pop(media_id, None)
+            if not item:
+                return self._send(404, {"code": "rest_post_invalid_id", "message": "Invalid media ID."})
+            return self._send(200, {"deleted": True, "previous": item})
+        self._send(404, {"message": "not found"})
+
     def do_POST(self):
         if not self._authed():
             return
@@ -305,9 +319,28 @@ class FakeDB:
     def record_push(self, row_id, metadata, record):
         self.recorded.append({"row_id": row_id, "metadata": metadata, "record": record})
 
+    def record_illustration(self, row_id, metadata, illustration):
+        self.illustrations.append({"row_id": row_id, "metadata": metadata, "illustration": illustration})
+
     def update_body(self, row_id, content, metadata):
         """The one write that keeps the row's body and the CMS's body identical."""
         self.bodies.append({"row_id": row_id, "content": content, "metadata": metadata})
+
+
+class ReimageDB(FakeDB):
+    """A row whose `metadata.illustration` describes the image being replaced.
+
+    `--reimage` must publish the reading the desk holds NOW, so the staged brief beside the image
+    wins over the row's; a row-first lookup would caption the new image with the old description.
+    """
+
+    def __init__(self, row):
+        super().__init__()
+        self.row = row
+        self.illustrations: list = []
+
+    def articles(self, slug=None, un_pushed_only=False, limit=None):
+        return [self.row]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -579,6 +612,92 @@ check("an unattached image is fine, a missing featured_media on the post is not"
 check("the summary names the featured media it verified",
       "featured media 3" in wd.verification_summary(
           {"featured_media": 3, "excerpt": "e", "content": "c"}, {}))
+
+print("\nfeatured image — replacing a header already in the CMS (--reimage)")
+# The gap this covers: the featured image is idempotent by media slug, so a re-commissioned header
+# (illustration_creator.py --force) would never reach a post that already exists — the push reuses
+# the attachment and only re-captions it. A reader would keep seeing the previous reading of an
+# article whose art direction had changed.
+REIMAGED = {**ILLUSTRATION, "style": "component_assembly", "style_label": "Modular component assembly",
+            "model": "nano-banana-pro", "alt_text": "A modular server bay with an unlatched gate.",
+            "caption": "The gate is what the article turns on.", "title": "Unlatched inspection gate"}
+OLD_BLOB = b"\x89PNG\r\n\x1a\n" + b"the bare-geometry header being replaced" * 20
+NEW_BLOB = OLD_BLOB + b" v2 (a mechanism, finally)"
+StubWP.posts, StubWP.media, StubWP.media_bytes = {}, {}, {}
+StubWP.requests.clear()
+with tempfile.TemporaryDirectory() as tmp:
+    origin_root, origin_served = wd.ROOT, wd._served_bytes
+    wd.ROOT = pathlib.Path(tmp)
+    try:
+        staged = pathlib.Path(tmp) / REIMAGED["local_path"]
+        staged.parent.mkdir(parents=True, exist_ok=True)
+        staged.write_bytes(NEW_BLOB)
+        # The sidecar beside the image is the brief `illustration_creator.py --force` just wrote; the
+        # row still describes the image being replaced. The sidecar must win.
+        (staged.parent / "featured.json").write_text(json.dumps(REIMAGED), encoding="utf-8")
+        StubWP.posts["501"] = {"id": 501, "slug": SLUG, "status": "publish", "title": "Live headline",
+                               "excerpt": "live excerpt", "content": "<p>live body</p>",
+                               "featured_media": 900, "link": "https://cms.example.com/?p=501"}
+        StubWP.media["900"] = {"id": "900", "slug": f"{SLUG}-featured", "post": 501,
+                               "source_url": "https://cms.example.com/old.png", "alt_text": "old alt",
+                               "caption": "", "title": "", "mime_type": "image/png"}
+        StubWP.media_bytes["900"] = OLD_BLOB
+        stale_row = {**ROW, "metadata": {**ROW["metadata"], "illustration": ILLUSTRATION,
+                                         "wordpress": {"post_id": 501, "media_id": 900,
+                                                       "site": "giniloh.com"}}}
+        db = ReimageDB(stale_row)
+        served = {"bytes": NEW_BLOB}
+        wd._served_bytes = lambda url: (served["bytes"], "")
+        result = wd.reimage_by_slug(SLUG, db=db,
+                                    wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+        post = StubWP.posts["501"]
+        new_id = str(result["media_id"])
+        check("the post is pointed at the new attachment",
+              str(post.get("featured_media")) == new_id and new_id not in ("", "900"),
+              f"featured_media={post.get('featured_media')} new={new_id}")
+        check("...and the replaced attachment is deleted, not orphaned in the library",
+              "900" not in StubWP.media and "removed" in result["removed"], str(list(StubWP.media)))
+        check("...the new image carries the STAGED brief, not the row's stale one",
+              StubWP.media[new_id]["alt_text"] == REIMAGED["alt_text"]
+              and wd._field_text(StubWP.media[new_id]["caption"]) == REIMAGED["caption"],
+              json.dumps(StubWP.media[new_id])[:200])
+        check("...and the run says which source the brief came from (the sidecar, not the row)",
+              "beside the image" in result["brief_source"] and "supersedes the row's" in result["brief_source"],
+              result["brief_source"])
+        check("...it takes back the canonical media slug (the idempotency key)",
+              StubWP.media[new_id]["slug"] == f"{SLUG}-featured", StubWP.media[new_id]["slug"])
+        check("...and is filed under the article in the library",
+              str(StubWP.media[new_id].get("post")) == "501", str(StubWP.media[new_id].get("post")))
+        check("a LIVE post is not rewritten: title, body and status are untouched",
+              post["title"] == "Live headline" and post["content"] == "<p>live body</p>"
+              and post["status"] == "publish", json.dumps(post)[:200])
+        check("...because no content or status field was ever sent for the post",
+              all(set(body) <= {"featured_media"} for method, path, body in StubWP.requests
+                  if method == "POST" and path.startswith("/wp-json/wp/v2/posts")),
+              str([body for method, path, body in StubWP.requests if "posts" in path]))
+        check("the row is written back: the new media id and the brief that produced it",
+              db.recorded[-1]["record"]["media_id"] == result["media_id"]
+              and db.illustrations[-1]["illustration"]["style"] == "component_assembly"
+              and db.illustrations[-1]["metadata"]["wordpress"]["media_id"] == result["media_id"],
+              json.dumps(db.illustrations[-1])[:200])
+        check("the bytes the CMS serves are proven against the staged file",
+              result["problems"] == [], str(result["problems"]))
+        served["bytes"] = b"\x89PNG\r\n\x1a\n something else entirely"
+        mismatched = wd.reimage_by_slug(SLUG, db=db,
+                                        wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+        check("...and a CMS serving different bytes is caught, not assumed",
+              any("NOT the staged image" in p for p in mismatched["problems"]), str(mismatched["problems"]))
+        raises("replacing a header for a post that does not exist says to push it first",
+               lambda: wd.reimage_by_slug("no-such-slug-here", db=db,
+                                          wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p)),
+               "holds no post")
+        staged.unlink()
+        raises("...and an article with no staged image is refused, not replaced with nothing",
+               lambda: wd.reimage_by_slug(SLUG, db=db,
+                                          wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p)),
+               "never invents one")
+    finally:
+        wd.ROOT, wd._served_bytes = origin_root, origin_served
 
 print("\nfeatured image — end to end through push_one")
 StubWP.posts, StubWP.media = {}, {}

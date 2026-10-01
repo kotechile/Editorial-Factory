@@ -114,7 +114,16 @@ python3 scripts/illustration_creator.py --backfill --limit 3                   #
 python3 scripts/illustration_creator.py X.md --apply --style technical_isometric   # pin the treatment
 python3 scripts/illustration_creator.py X.md --apply --model nanobanana            # pin the model
 python3 scripts/illustration_creator.py --check published/*.md                # exit 1 on frontmatter/sidecar drift (no network)
+python3 scripts/wp_draft.py --slug <slug> --reimage                            # put a re-commissioned header on a post that already exists
 ```
+A *regenerated* image needs the last command: the CMS push is idempotent by the media slug
+(`<slug>-featured`), so an ordinary push reuses the attachment it recorded and only refreshes its
+alt/caption — the new reading would sit on this host while the reader kept seeing the old one. The
+sweep cannot cover it either (it only pushes rows with no `post_id` yet). `--reimage` uploads the
+staged image, points the post at it, deletes the attachment it replaced, writes
+`metadata.illustration` + `metadata.wordpress` on the row, and sends no title, excerpt, body or
+status — so a live post keeps what an editor tuned in it.
+
 In the pipeline it runs inside the persistence pass (`scripts/publish.py`, `[image]` notes), is
 skippable (`--no-illustration`, or `ILLUSTRATION_ENABLED=false`), and is re-run by the host sweep
 (`scripts/cron-wp-drafts.sh`) before pushing drafts — so an article whose generation failed gets its

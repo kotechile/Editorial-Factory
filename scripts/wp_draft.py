@@ -41,6 +41,13 @@ Usage:
   python3 scripts/wp_draft.py --slug reshoring-moved-the-tariff-upstream --dry-run
   python3 scripts/wp_draft.py --slug mcp-skills-extension                  # creates a draft
   python3 scripts/wp_draft.py --all --limit 5                              # every un-pushed row
+  python3 scripts/wp_draft.py --slug X --reimage                           # replace a pushed header
+
+`--reimage` is the one case a normal push cannot cover: the featured image is idempotent by the
+media slug, so a *re-commissioned* header (`illustration_creator.py --force`) would otherwise never
+reach the CMS — the push reuses the attachment it recorded and only refreshes its alt/caption. It
+replaces the attachment and the row's image bookkeeping, and sends no title, excerpt, body or
+status, so a live post is not rewritten and never dips back to draft.
 
 Credentials (env or ./.env), keyed by the destination domain:
   WP_GINILOH_USER / WP_GINILOH_APP_PASSWORD
@@ -51,6 +58,7 @@ Create the password in the CMS: Users -> Profile -> Application Passwords (core,
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -207,6 +215,19 @@ class Supabase:
         """Merge metadata.wordpress into the row's metadata jsonb (no new columns needed)."""
         merged = dict(metadata or {})
         merged[WORDPRESS] = record
+        self._call("PATCH", f"{ARTICLES_TABLE}?id=eq.{row_id}", {"metadata": merged},
+                   {"Prefer": "return=minimal"})
+
+    def record_illustration(self, row_id: str, metadata: dict, illustration: dict) -> None:
+        """Write metadata.illustration (the brief the CMS push reads) in one PATCH.
+
+        `push_one` only writes this field when the row does not carry one — a row that already has a
+        brief keeps its own, which is what makes a *replaced* image need this write: without it the
+        row still describes the reading that was just taken down, and the next push would put the old
+        alt text and caption back onto the new attachment.
+        """
+        merged = dict(metadata or {})
+        merged["illustration"] = illustration
         self._call("PATCH", f"{ARTICLES_TABLE}?id=eq.{row_id}", {"metadata": merged},
                    {"Prefer": "return=minimal"})
 
@@ -999,6 +1020,168 @@ def media_problems(expected: dict, item: dict) -> list[str]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# replacing a header image that is already in the CMS
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _own_attachment(item: dict, slug: str) -> bool:
+    """Is this attachment the article's own featured image (rather than a human's upload)?"""
+    return str((item or {}).get("slug") or "").startswith(f"{slug}-featured")
+
+
+def reimage_by_slug(slug: str, *, db=None, wp_factory=None, verify: bool = True) -> dict:
+    """Replace the header image of the post that ALREADY exists for `slug` — and nothing else.
+
+    Why this exists: `ensure_featured_media` is idempotent by the media slug, which is what stops a
+    re-push from filling the library with copies of the same bytes — but it also means a
+    *regenerated* header never reaches the CMS. The push reuses the attachment it recorded and only
+    refreshes its alt/caption, so a reader keeps looking at the previous reading of an article whose
+    art direction has changed (a rewritten article; a treatment re-commissioned after a rule
+    changed). The sweep cannot fix that either: it only pushes rows with no `post_id` yet.
+
+    Two deliberate choices:
+
+    * The staged brief beside the image wins over `metadata.illustration` on the row. The command
+      exists to publish the reading the desk holds NOW, and after a regeneration the row still
+      describes the one being replaced — taking alt text from the row would put the old description
+      on the new image.
+    * Only the attachment and the row's image bookkeeping are written. No title, excerpt, body or
+      status is sent, so a live post keeps whatever an editor tuned in it and never dips back to
+      draft.
+
+    The previous attachment is removed only when it is recognisably this article's own
+    (`<slug>-featured*`) and the post no longer points at it; anything else is reported and left.
+    """
+    db = db or Supabase(*supabase_config())
+    rows = db.articles(slug=slug)
+    if not rows:
+        raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
+    row = rows[0]
+    metadata = dict(row.get("metadata") or {})
+    vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
+    site = db.site_for(vertical)
+
+    illustration, staged_note = staged_illustration(slug)
+    if illustration:
+        source = f"the committed brief beside the image ({illustration.get('style')} on " \
+                 f"{illustration.get('model')})"
+        if illustration_record(row):
+            source += " — it supersedes the row's, which describes the reading being replaced"
+    else:
+        illustration = illustration_record(row)
+        source = f"metadata.illustration on the row ({illustration.get('style')})" if illustration else ""
+        if staged_note:                     # e.g. a corrupt sidecar the operator must see
+            source = f"{source} — {staged_note}" if source else staged_note
+    if not illustration:
+        raise RuntimeError(f"no illustration record for '{slug}' — neither the staged brief nor the "
+                           f"row carries one; run `python3 scripts/illustration_creator.py <artifact> "
+                           f"--apply` first" + (f" ({staged_note})" if staged_note else ""))
+    path = illustration_file(illustration)
+    if path is None:
+        raise RuntimeError(
+            f"no featured image staged for '{slug}' "
+            f"({illustration.get('local_path') or 'context/assets/illustrations/' + slug}) — run "
+            f"`python3 scripts/illustration_creator.py <artifact> --apply --force` on this host; this "
+            f"command replaces an image, it never invents one")
+
+    user, password = credentials_for(site["site_domain"])
+    wp = (wp_factory or (lambda base, u, p: WordPress(base, u, p)))(site["cms_base_url"], user, password)
+    existing = wp.find_by_slug(slug)
+    if not existing:
+        raise RuntimeError(f"{site['site_domain']} holds no post for '{slug}' — push it first "
+                           f"(`python3 scripts/wp_draft.py --slug {slug}`)")
+    post_id = existing.get("id")
+
+    print(f"\n  article : {slug}")
+    print(f"  site    : {site['site_domain']}  post {post_id} ({existing.get('status')})")
+    print(f"  brief   : {source}")
+    print(f"  image   : {path.relative_to(ROOT) if str(path).startswith(str(ROOT)) else path} "
+          f"({path.stat().st_size // 1024} KB, {illustration.get('style')} on {illustration.get('model_key')})")
+
+    previous_id = (metadata.get(WORDPRESS) or {}).get("media_id")
+    previous = wp.media(previous_id) if previous_id else wp.find_media(f"{slug}-featured")
+    meta = media_meta(illustration, slug)
+    filename = f"{slug}-featured{path.suffix.lower()}"
+    fresh = wp.upload_media(filename, path.read_bytes(), MEDIA_TYPES[path.suffix.lower()], meta)
+    fresh_id: str = str(fresh.get("id") or "") if fresh else ""
+    if not fresh_id:
+        raise RuntimeError(f"WordPress returned no attachment id for {filename}")
+    print(f"  uploaded: media {fresh_id} ({filename}) — featured_media NOT yet switched")
+    try:
+        # The post is pointed at the new attachment BEFORE the old one is touched: there is no
+        # instant at which a live post references an image that does not exist. Only the one field is
+        # sent — a REST update is partial, so the title, excerpt, body and status are not rewritten.
+        wp._call("POST", f"posts/{int(post_id)}", {"featured_media": int(fresh_id)})
+    except RuntimeError:
+        wp._call("DELETE", f"media/{int(fresh_id)}?force=true")      # never leave a loose copy
+        raise
+    problems: list[str] = []
+    removed = ""
+    if previous and str(previous.get("id")) != str(fresh_id):
+        if _own_attachment(previous, slug):
+            wp._call("DELETE", f"media/{int(previous['id'])}?force=true")
+            removed = f"removed the previous attachment {previous['id']} ({previous.get('slug')})"
+        else:
+            removed = (f"left attachment {previous.get('id')} ({previous.get('slug')!r}) alone — "
+                       f"it is not recognisably this article's featured image")
+    if str(fresh.get("slug") or "") != f"{slug}-featured":
+        try:                                    # the canonical slug is the idempotency key: restore it
+            _, renamed = wp._call("POST", f"media/{int(fresh_id)}", {"slug": f"{slug}-featured"})
+            fresh["slug"] = (renamed or {}).get("slug") or fresh.get("slug")
+        except RuntimeError as exc:              # noqa: BLE001 — cosmetic, reported, never fatal
+            problems.append(f"the new attachment could not be renamed to the canonical media slug: {exc}")
+    try:                                        # filed under the article, as a normal push does
+        wp.update_media(fresh_id, {"post": post_id})
+    except RuntimeError as exc:                  # noqa: BLE001
+        print(f"  note: the image is not attached to the post in the library: {exc}", file=sys.stderr)
+
+    record = {**(metadata.get(WORDPRESS) or {}), "site": site["site_domain"], "post_id": post_id,
+              "edit_url": f"{site['cms_base_url']}/wp-admin/post.php?post={post_id}&action=edit",
+              "media_id": fresh_id, "media_url": (fresh.get("source_url") or None),
+              "media_alt": meta.get("alt_text")}
+    db.record_push(row["id"], metadata, record)
+    db.record_illustration(row["id"], {**metadata, WORDPRESS: record}, illustration)
+    print(f"  recorded: metadata.illustration + metadata.{WORDPRESS} on the Supabase row")
+
+    if verify:
+        stored = wp.read_back(post_id)
+        if str(stored.get("featured_media") or "") != str(fresh_id):
+            problems.append(f"featured image: sent media {fresh_id}, CMS holds "
+                            f"{stored.get('featured_media')!r}")
+        if str(stored.get("status") or "") not in ("", str(existing.get("status") or "")):
+            problems.append(f"the post's status changed: was {existing.get('status')!r}, now "
+                            f"{stored.get('status')!r}")
+        problems += media_problems(meta, wp.media(fresh_id) or {})
+        served, note = _served_bytes(fresh.get("source_url"))
+        if served is not None:
+            local = hashlib.sha256(path.read_bytes()).hexdigest()
+            if hashlib.sha256(served).hexdigest() != local:
+                problems.append("the bytes the CMS serves are NOT the staged image")
+            else:
+                print(f"  verified: the CMS serves those exact bytes ({len(served)} bytes)")
+        else:
+            problems.append(f"could not fetch the uploaded image back from the CMS: {note}")
+        if removed.startswith("removed"):
+            print(f"  {removed}")
+    print(f"  {'FAILED VERIFICATION' if problems else 'done'} — post {post_id} keeps its body, title "
+          f"and status")
+    return {"slug": slug, "site": site["site_domain"], "post_id": post_id, "media_id": fresh_id,
+            "media_url": fresh.get("source_url"), "previous_media_id": (previous or {}).get("id"),
+            "brief_source": source, "removed": removed, "problems": problems}
+
+
+def _served_bytes(url: str | None) -> tuple[bytes | None, str]:
+    """The image as the CMS serves it — the only proof that the right bytes are live (skill rule 3)."""
+    if not url:
+        return None, "no source_url returned for the attachment"
+    try:
+        with urllib.request.urlopen(url, timeout=60) as response:
+            return response.read(), ""
+    except Exception as exc:                        # noqa: BLE001 — reported, never swallowed
+        return None, str(exc)
+
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # driver
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -1191,6 +1374,11 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=None,
                         help="Max articles to push in one run (default 1, or all with --refresh)")
     parser.add_argument("--dry-run", action="store_true", help="Print the payload without contacting WordPress")
+    parser.add_argument("--reimage", action="store_true",
+                        help="With --slug: replace the featured image of the post that already exists "
+                             "(after re-commissioning it with `illustration_creator.py --force`). "
+                             "Touches the attachment and the row's image bookkeeping only — no title, "
+                             "excerpt, body or status, so a live post is not rewritten")
     parser.add_argument("--no-verify", action="store_true",
                         help="Skip the post-push read-back (default: read the post back and compare "
                              "what the CMS stored against what was sent)")
@@ -1201,11 +1389,28 @@ def main() -> int:
                              "dropped rather than publishing the generator's {{AUTHOR_NAME}} token")
     args = parser.parse_args()
 
-    if not args.slug and not args.all and not args.refresh:
+    if not args.slug and not args.all and not args.refresh and not args.reimage:
         parser.error("pass --slug <slug>, --all or --refresh")
 
     limit = args.limit if args.limit is not None else (None if args.refresh else 1)
     db = Supabase(*supabase_config())
+
+    if args.reimage:
+        if not args.slug:
+            parser.error("--reimage needs --slug <slug> — replacing a header is a per-article decision")
+        if args.all or args.refresh:
+            parser.error("--reimage works on one --slug at a time, deliberately")
+        try:
+            result = reimage_by_slug(args.slug, db=db, verify=not args.no_verify)
+        except Exception as exc:                       # rule 6: surface it, never a silent skip
+            print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
+            return 1
+        if result.get("problems"):
+            print("\n  the image was replaced, but the CMS does not hold what was sent (see above) — "
+                  "re-run to finish, or fix the cause and run again; the article was left untouched "
+                  "otherwise", file=sys.stderr)
+            return 1
+        return 0
 
     if args.slug:
         try:
