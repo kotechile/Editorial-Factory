@@ -13,6 +13,12 @@ meta_title: "Reshoring Didn't Kill Tariff Risk — It Moved Upstream Into…"
 meta_title_source: "derived_from_title"
 meta_description: "Coca-Cola just pledged $10 billion for U.S. plants by 2030, which its Chief Financial Officer (CFO) calls a growth plan rather than a tariff shield."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "Close-up photograph of translucent plastic resin pellets used in manufacturing."
+image_caption: "New tariffs are impacting the supply chain upstream, hitting materials like plastics before they become packaging."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

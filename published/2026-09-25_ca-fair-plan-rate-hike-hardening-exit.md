@@ -9,6 +9,12 @@ meta_title: "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit…"
 meta_title_source: "derived_from_title"
 meta_description: "California's last-resort insurer—the Fair Access to Insurance Requirements (FAIR) Plan—raises rates by an average of 29.1% on October 15, 2026."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/ca-fair-plan-rate-hike-hardening-exit/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Overhead view of slightly misaligned, blank regulatory paper documents on a plain desk."
+image_caption: "California homeowners face a steep rate hike unless they harden their homes to earn a discount."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

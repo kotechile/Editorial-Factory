@@ -13,6 +13,12 @@ meta_title: "Washington Cuts the Tariff on the Goods. The Fee on the…"
 meta_title_source: "derived_from_title"
 meta_description: "On Sept. 27, the U.S.-China Board of Trade recommended cutting tariffs on $30 billion of everyday goods in each direction."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/goods-tariff-relief-vs-vessel-fee/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "A telephoto view of stacked shipping containers and cranes at a sprawling maritime port under an overcast sky."
+image_caption: "A resuming vessel fee of up to $120 per container threatens to offset recent tariff relief on everyday imported goods."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

@@ -10,6 +10,12 @@ vertical: agentic_ai
 persona: ai_architect
 date: 2026-09-21
 slug: mcp-skills-extension
+image_path: "context/assets/illustrations/mcp-skills-extension/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "An isometric diagram showing distinct horizontal layers connected by vertical pipelines."
+image_caption: "The MCP skills extension standardizes agent workflows by splitting tools from processes."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

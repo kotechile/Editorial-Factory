@@ -390,6 +390,26 @@ with tempfile.TemporaryDirectory() as tmp:
     check("...and the ledger gains a row for the new revision",
           (root / "context" / "illustration_log.md").read_text().count("`my-slug`") == 2)
 
+print("\nthe asset key (a slug that still carries its date)")
+DATED = ARTICLE.replace("slug: reshoring-moved-the-tariff-upstream",
+                        "slug: 2026-10-01_reshoring-moved-the-tariff-upstream")
+check("a dated frontmatter slug is normalized to the bare post slug",
+      ic.slug_from_frontmatter(DATED) == "reshoring-moved-the-tariff-upstream",
+      ic.slug_from_frontmatter(DATED))
+check("...and a bare slug is left alone",
+      ic.slug_from_frontmatter(ARTICLE) == "reshoring-moved-the-tariff-upstream")
+with tempfile.TemporaryDirectory() as tmp:
+    root = pathlib.Path(tmp)
+    dated_md, _, dated_meta = ic.ensure_illustration(DATED, root=root, client=client(),
+                                                    llm=stub_llm(brief_json()))
+    check("...so the image is filed under the slug the CMS push looks for",
+          dated_meta["local_path"] ==
+          "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.png"
+          and (root / dated_meta["local_path"]).is_file(), dated_meta["local_path"])
+    check("...and the artifact records that same path",
+          ic.split_frontmatter(dated_md)[0]["image_path"] == dated_meta["local_path"],
+          ic.split_frontmatter(dated_md)[0].get("image_path", ""))
+
 print("\nthe pipeline pass — idempotent by content, not by presence")
 with tempfile.TemporaryDirectory() as tmp:
     root = pathlib.Path(tmp)

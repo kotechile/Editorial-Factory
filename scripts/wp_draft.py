@@ -804,6 +804,28 @@ def illustration_record(row: dict) -> dict:
     return ((row.get("metadata") or {}).get("illustration") or {})
 
 
+def staged_illustration(slug: str) -> tuple[dict, str]:
+    """(record, note) — the brief committed beside the image, for a row that does not carry one.
+
+    `metadata.illustration` is written by the persistence pass, so an article illustrated *after* it
+    was published (the sweep in scripts/cron-wp-drafts.sh generates images for artifacts that have
+    none) has a brief on disk and nothing on its row. Without this lookup the sweep would generate an
+    image and then push the draft without it — the exact silent outcome the step exists to prevent.
+    The note is returned so the push says which source it used.
+    """
+    if not slug:
+        return {}, ""
+    path = ROOT / "context" / "assets" / "illustrations" / slug / "featured.json"
+    if not path.is_file():
+        return {}, ""
+    try:
+        record = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return {}, f"staged brief at {path} is unreadable ({exc}) — pushing without a featured image"
+    return record, f"the brief committed at context/assets/illustrations/{slug}/featured.json " \
+                   f"(the row carries no metadata.illustration)"
+
+
 def illustration_file(record: dict) -> pathlib.Path | None:
     """The staged image on THIS host, or None.
 
@@ -938,6 +960,11 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     # draft is still pushed — an article with no featured image is recoverable by the next sweep,
     # an article that never reached the CMS is not.
     illustration = illustration_record(row)
+    if not illustration:
+        illustration, staged_note = staged_illustration(payload["slug"])
+        if staged_note:
+            notes.append(staged_note)
+            print(f"  featured: {staged_note}")
     recorded_media = (metadata.get(WORDPRESS) or {}).get("media_id")
     media = None
     media_failure = ""
@@ -1010,6 +1037,11 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
                        "media_id": media.get("id"),
                        "media_url": media.get("source_url"),
                        "media_alt": media_expected.get("alt_text")})
+    if illustration and not illustration_record(row):
+        # The brief came from disk (the sweep generated this image after the article was published),
+        # so write it onto the row now: from here on the row is self-describing and the next push
+        # reads it from Supabase like any other. Same field the persistence pass maintains.
+        metadata = {**metadata, "illustration": illustration}
     db.record_push(row["id"], metadata, record)
     print(f"  recorded metadata.{WORDPRESS} on the Supabase row ({row['id']})")
     return {"status": action, "site": site["site_domain"], "post_id": post.get("id"),

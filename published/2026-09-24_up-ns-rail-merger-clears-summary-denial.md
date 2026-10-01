@@ -9,6 +9,12 @@ meta_title: "Coast-to-Coast Rail Merger Clears First Big Test"
 meta_title_source: "derived_from_title"
 meta_description: "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Overlapping railroad tracks and generic freight cars receding into deep haze at a large industrial yard."
+image_caption: "Shippers have until mid-November to map their single-line rail exposure as the transcontinental merger advances to a review."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

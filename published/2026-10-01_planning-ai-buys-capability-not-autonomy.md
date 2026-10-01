@@ -9,6 +9,12 @@ meta_title: "Planning AI Buys Capability, Not Autonomy"
 meta_title_source: "derived_from_title"
 meta_description: "By 2030, just 5% of firms with supply chain software will let it make 10% of choices on its own."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/planning-ai-buys-capability-not-autonomy/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "Lit windows of an empty industrial operations center at dusk."
+image_caption: "While companies invest heavily in planning technology, humans remain the ultimate decision-makers."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

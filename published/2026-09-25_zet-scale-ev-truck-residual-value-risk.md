@@ -9,6 +9,12 @@ meta_title: "Electric Trucks Just Doubled Overnight — and the Battery…"
 meta_title_source: "derived_from_title"
 meta_description: "Top brands like Microsoft, PepsiCo, Ikea, and Red Bull just ordered 2,500 heavy-duty electric trucks."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/zet-scale-ev-truck-residual-value-risk/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Rows of identical heavy-duty trucks parked in a misty logistics yard at dawn."
+image_caption: "A single pooled order will nearly double the U.S. electric heavy truck fleet overnight."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

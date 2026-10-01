@@ -1,21 +1,6 @@
-# Internal-link candidates — 2026-10-01T04:55:35+00:00
+# Internal-link candidates — 2026-10-01T14:17:42+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
-
-## wellroost.com — 4 live article(s), 8 other target(s)
-
-- [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
-- [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
-- [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
-- [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
-- [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
-- [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — —
-- [Lifestyle (category)](https://wellroost.com/categories/lifestyle/) — —
-- [Move Or Improve calculator (calculator)](https://wellroost.com/calculators/move-or-improve/) — —
-- [Remodeling Roi calculator (calculator)](https://wellroost.com/calculators/remodeling-roi/) — —
-- [Remodelytics calculator (calculator)](https://wellroost.com/calculators/remodelytics/) — —
-- [Smart Home Security (category)](https://wellroost.com/categories/smart-home-security/) — —
-- [Tools Equipment (category)](https://wellroost.com/categories/tools-equipment/) — —
 
 ## giniloh.com — 24 live article(s), 19 other target(s)
 
@@ -62,3 +47,18 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Relocation Cost calculator (calculator)](https://giniloh.com/calculators/relocation-cost/) — —
 - [Tech Debt Repair calculator (calculator)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Total Comp calculator (calculator)](https://giniloh.com/calculators/total-comp/) — —
+
+## wellroost.com — 4 live article(s), 8 other target(s)
+
+- [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
+- [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
+- [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
+- [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
+- [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
+- [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — —
+- [Lifestyle (category)](https://wellroost.com/categories/lifestyle/) — —
+- [Move Or Improve calculator (calculator)](https://wellroost.com/calculators/move-or-improve/) — —
+- [Remodeling Roi calculator (calculator)](https://wellroost.com/calculators/remodeling-roi/) — —
+- [Remodelytics calculator (calculator)](https://wellroost.com/calculators/remodelytics/) — —
+- [Smart Home Security (category)](https://wellroost.com/categories/smart-home-security/) — —
+- [Tools Equipment (category)](https://wellroost.com/categories/tools-equipment/) — —

@@ -1,25 +1,17 @@
 {
-  "generated_at": "2026-10-01T04:55:35+00:00",
+  "generated_at": "2026-10-01T14:17:42+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
-    "wellroost.com": {
-      "cms": "https://cms.wellroost.com",
-      "frontend": "https://wellroost.com"
-    },
     "giniloh.com": {
       "cms": "https://cms.giniloh.com",
       "frontend": "https://giniloh.com"
+    },
+    "wellroost.com": {
+      "cms": "https://cms.wellroost.com",
+      "frontend": "https://wellroost.com"
     }
   },
   "categories": {
-    "wellroost.com": {
-      "4": "Energy & Efficiency",
-      "2": "Home Cost Decisions",
-      "15": "Lifestyle",
-      "5": "Smart Home & Security",
-      "3": "Tools & Equipment",
-      "1": "Uncategorized"
-    },
     "giniloh.com": {
       "7": "AI Stack & Tool TCO",
       "6": "Artificial Intelligence & Future of Work",
@@ -28,182 +20,19 @@
       "2": "Major Purchases & Assets",
       "3": "Mental Models & Strategy",
       "4": "Money & Wealth",
+      "10": "Supply Chain & Operations",
+      "1": "Uncategorized"
+    },
+    "wellroost.com": {
+      "4": "Energy & Efficiency",
+      "2": "Home Cost Decisions",
+      "15": "Lifestyle",
+      "5": "Smart Home & Security",
+      "3": "Tools & Equipment",
       "1": "Uncategorized"
     }
   },
   "candidates": [
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 55,
-      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
-      "title": "Emporia Vue: How to Cut Energy Bills",
-      "url": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
-      "categories": [
-        "Smart Home & Security"
-      ],
-      "category_ids": [
-        5
-      ],
-      "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the p",
-      "modified": "2026-09-16T01:44:14",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 50,
-      "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
-      "title": "Benefits of Living in the City: 2026 Pros and Cons",
-      "url": "https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/",
-      "categories": [
-        "Lifestyle"
-      ],
-      "category_ids": [
-        15
-      ],
-      "excerpt": "The benefits of living in the city have never been more nuanced\u2014or more decisive\u2014for mid-career professionals. In 2025, with hybrid work reshaping where talent lives, the urban advantage remains powerful: denser job markets, higher earning potential, walkable transit, world-class",
-      "modified": "2026-09-15T02:00:20",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 14,
-      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
-      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
-      "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [
-        4
-      ],
-      "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
-      "modified": "2026-09-13T00:39:31",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 9,
-      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
-      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
-      "url": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [
-        4
-      ],
-      "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
-      "modified": "2026-09-07T13:34:30",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "calculator",
-      "id": null,
-      "slug": "move-or-improve",
-      "title": "Move Or Improve calculator",
-      "url": "https://wellroost.com/calculators/move-or-improve/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "calculator",
-      "id": null,
-      "slug": "remodeling-roi",
-      "title": "Remodeling Roi calculator",
-      "url": "https://wellroost.com/calculators/remodeling-roi/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "calculator",
-      "id": null,
-      "slug": "remodelytics",
-      "title": "Remodelytics calculator",
-      "url": "https://wellroost.com/calculators/remodelytics/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "category",
-      "id": null,
-      "slug": "energy-efficiency",
-      "title": "Energy Efficiency",
-      "url": "https://wellroost.com/categories/energy-efficiency/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "category",
-      "id": null,
-      "slug": "home-cost-decisions",
-      "title": "Home Cost Decisions",
-      "url": "https://wellroost.com/categories/home-cost-decisions/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "category",
-      "id": null,
-      "slug": "lifestyle",
-      "title": "Lifestyle",
-      "url": "https://wellroost.com/categories/lifestyle/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "category",
-      "id": null,
-      "slug": "smart-home-security",
-      "title": "Smart Home Security",
-      "url": "https://wellroost.com/categories/smart-home-security/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "category",
-      "id": null,
-      "slug": "tools-equipment",
-      "title": "Tools Equipment",
-      "url": "https://wellroost.com/categories/tools-equipment/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
-      "live": true
-    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -853,6 +682,178 @@
       "slug": "money-wealth",
       "title": "Money Wealth",
       "url": "https://giniloh.com/categories/money-wealth/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 55,
+      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
+      "title": "Emporia Vue: How to Cut Energy Bills",
+      "url": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [
+        5
+      ],
+      "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the p",
+      "modified": "2026-09-16T01:44:14",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 50,
+      "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
+      "title": "Benefits of Living in the City: 2026 Pros and Cons",
+      "url": "https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/",
+      "categories": [
+        "Lifestyle"
+      ],
+      "category_ids": [
+        15
+      ],
+      "excerpt": "The benefits of living in the city have never been more nuanced\u2014or more decisive\u2014for mid-career professionals. In 2025, with hybrid work reshaping where talent lives, the urban advantage remains powerful: denser job markets, higher earning potential, walkable transit, world-class",
+      "modified": "2026-09-15T02:00:20",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 14,
+      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
+      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
+      "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
+      "modified": "2026-09-13T00:39:31",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 9,
+      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
+      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
+      "url": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
+      "modified": "2026-09-07T13:34:30",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "move-or-improve",
+      "title": "Move Or Improve calculator",
+      "url": "https://wellroost.com/calculators/move-or-improve/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "remodeling-roi",
+      "title": "Remodeling Roi calculator",
+      "url": "https://wellroost.com/calculators/remodeling-roi/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "remodelytics",
+      "title": "Remodelytics calculator",
+      "url": "https://wellroost.com/calculators/remodelytics/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "energy-efficiency",
+      "title": "Energy Efficiency",
+      "url": "https://wellroost.com/categories/energy-efficiency/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "home-cost-decisions",
+      "title": "Home Cost Decisions",
+      "url": "https://wellroost.com/categories/home-cost-decisions/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "lifestyle",
+      "title": "Lifestyle",
+      "url": "https://wellroost.com/categories/lifestyle/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "smart-home-security",
+      "title": "Smart Home Security",
+      "url": "https://wellroost.com/categories/smart-home-security/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "tools-equipment",
+      "title": "Tools Equipment",
+      "url": "https://wellroost.com/categories/tools-equipment/",
       "categories": [],
       "category_ids": [],
       "excerpt": "",

@@ -291,7 +291,7 @@ class FakeDB:
         return self.site
 
     def record_push(self, row_id, metadata, record):
-        self.recorded.append({"row_id": row_id, "record": record})
+        self.recorded.append({"row_id": row_id, "metadata": metadata, "record": record})
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -598,6 +598,37 @@ with tempfile.TemporaryDirectory() as tmp:
               and any("alt_text" in p for p in withbadmedia["problems"]),
               str(withbadmedia["problems"])[:200])
         StubWP.media_alt_forbidden = False
+    finally:
+        wd.ROOT = origin_root
+
+print("\nfeatured image — a brief on disk, no metadata on the row (the sweep's case)")
+with tempfile.TemporaryDirectory() as tmp:
+    origin_root = wd.ROOT
+    wd.ROOT = pathlib.Path(tmp)
+    try:
+        staged = pathlib.Path(tmp) / ILLUSTRATION["local_path"]
+        staged.parent.mkdir(parents=True, exist_ok=True)
+        staged.write_bytes(b"\x89PNG\r\n\x1a\n" + b"sweep generated this" * 16)
+        (staged.parent / "featured.json").write_text(json.dumps(ILLUSTRATION), encoding="utf-8")
+        record, note = wd.staged_illustration(SLUG)
+        check("the brief committed beside the image is found for a row that does not carry one",
+              record.get("alt_text") == ILLUSTRATION["alt_text"] and "featured.json" in note, note[:120])
+        check("a slug with nothing staged yields nothing to report",
+              wd.staged_illustration("no-such-slug") == ({}, ""))
+        StubWP.posts, StubWP.media = {}, {}
+        plain_row = {**ROW, "metadata": {k: v for k, v in ROW["metadata"].items() if k != "illustration"}}
+        db = FakeDB()
+        result = wd.push_one(plain_row, db, wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+        post = StubWP.posts[[k for k in StubWP.posts][0]]
+        check("the draft still gets its featured image",
+              bool(result["media_id"]) and post.get("featured_media") == result["media_id"],
+              str(result)[:200])
+        check("...with the alt text from the committed brief",
+              StubWP.media[str(result["media_id"])]["alt_text"] == ILLUSTRATION["alt_text"],
+              json.dumps(StubWP.media[str(result["media_id"])])[:160])
+        check("...and the row becomes self-describing (the brief is written back)",
+              db.recorded[-1]["metadata"].get("illustration", {}).get("alt_text")
+              == ILLUSTRATION["alt_text"], json.dumps(db.recorded[-1]["metadata"])[:160])
     finally:
         wd.ROOT = origin_root
 

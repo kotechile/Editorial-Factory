@@ -1026,6 +1026,18 @@ def _write_frontmatter(md: str, fields: dict) -> str:
     return "---\n" + "\n".join(lines) + "\n---" + body
 
 
+def slug_from_frontmatter(md: str) -> str:
+    """The artifact's asset key: its frontmatter slug with any leading `YYYY-MM-DD_` stripped.
+
+    One artifact in this corpus still carries the date inside its frontmatter slug. Left alone it
+    files the image under a directory nothing else knows: the CMS push resolves the media by the
+    BARE post slug (`<slug>-featured`), so the image would be generated, committed, paid for — and
+    silently never attached. Normalized here, once, for every caller (CLI, backfill, sweep).
+    """
+    fm, _ = split_frontmatter(md)
+    return re.sub(r"^\d{4}-\d{2}-\d{2}_", "", (fm.get("slug") or "").strip())
+
+
 def has_illustration(md: str) -> bool:
     fm, _ = split_frontmatter(md)
     return all(fm.get(k) for k in ("image_path", "image_style", "image_alt"))
@@ -1040,7 +1052,7 @@ def check_artifact(md: str, *, root: pathlib.Path | None = None,
     host-side sweep, never by the gate.
     """
     fm, _ = split_frontmatter(md)
-    slug = slug or fm.get("slug") or ""
+    slug = slug or slug_from_frontmatter(md)
     problems: list[str] = []
     if not slug:
         return ["no slug in frontmatter"]
@@ -1076,7 +1088,7 @@ def ensure_illustration(md: str, *, root: pathlib.Path | None = None, slug: str 
     """
     notes = notes if notes is not None else []
     fm, _ = split_frontmatter(md)
-    slug = slug or fm.get("slug") or ""
+    slug = slug or slug_from_frontmatter(md)
     if not slug:
         raise IllustrationError("the artifact has no slug — it is the asset's idempotency key")
 
@@ -1123,7 +1135,7 @@ def ensure_illustration(md: str, *, root: pathlib.Path | None = None, slug: str 
 def _report(path: pathlib.Path, root: pathlib.Path | None = None) -> list[str]:
     md = path.read_text(encoding="utf-8")
     fm, _ = split_frontmatter(md)
-    slug = fm.get("slug") or ""
+    slug = slug_from_frontmatter(md)
     lines: list[str] = []
     sidecar = read_sidecar(slug, root) if slug else None
     if has_illustration(md):

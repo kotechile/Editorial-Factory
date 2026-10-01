@@ -13,6 +13,12 @@ meta_title: "CFOs Are Pricing In the Tariff Cliff"
 meta_title_source: "derived_from_title"
 meta_description: "Washington just pushed the United States–China tariff truce to Jan. 10, 2027, and American companies are not buying the calm."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/tariff-cliff-already-priced-in/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "A central storage tank filling up while small output pipes restrict the outward flow."
+image_caption: "Supply chain leaders are funneling tariff refunds into cash reserves rather than immediate growth or rebates."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
