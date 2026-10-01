@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T00:43:51+00:00",
+  "generated_at": "2026-10-01T00:49:56+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "wellroost.com": {
@@ -98,19 +98,6 @@
       ],
       "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
       "modified": "2026-09-07T13:34:30",
-      "live": true
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "calculator",
-      "id": null,
-      "slug": "calculators",
-      "title": "Calculators calculator",
-      "url": "https://wellroost.com/calculators/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
       "live": true
     },
     {
@@ -623,19 +610,6 @@
       ],
       "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the L",
       "modified": "2026-07-09T16:36:32",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "calculator",
-      "id": null,
-      "slug": "calculators",
-      "title": "Calculators calculator",
-      "url": "https://giniloh.com/calculators/",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "",
       "live": true
     },
     {

@@ -1,14 +1,13 @@
-# Internal-link candidates — 2026-10-01T00:43:51+00:00
+# Internal-link candidates — 2026-10-01T00:49:56+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
-## wellroost.com — 4 live article(s), 9 other target(s)
+## wellroost.com — 4 live article(s), 8 other target(s)
 
 - [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
 - [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
 - [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
-- [Calculators calculator (calculator)](https://wellroost.com/calculators/) — —
 - [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
 - [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — —
 - [Lifestyle (category)](https://wellroost.com/categories/lifestyle/) — —
@@ -18,7 +17,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Smart Home Security (category)](https://wellroost.com/categories/smart-home-security/) — —
 - [Tools Equipment (category)](https://wellroost.com/categories/tools-equipment/) — —
 
-## giniloh.com — 24 live article(s), 20 other target(s)
+## giniloh.com — 24 live article(s), 19 other target(s)
 
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
 - [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — Mental Models & Strategy
@@ -47,7 +46,6 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Ai Stack Tool Tco (category)](https://giniloh.com/categories/ai-stack-tool-tco/) — —
 - [Artificial Intelligence Future Of Work (category)](https://giniloh.com/categories/artificial-intelligence-future-of-work/) — —
 - [Autonomous Agentic Workflows (category)](https://giniloh.com/categories/autonomous-agentic-workflows/) — —
-- [Calculators calculator (calculator)](https://giniloh.com/calculators/) — —
 - [Career Ai Resilience (category)](https://giniloh.com/categories/career-ai-resilience/) — —
 - [Career Ai Resilience calculator (calculator)](https://giniloh.com/calculators/career-ai-resilience/) — —
 - [Coffee Arbitrage calculator (calculator)](https://giniloh.com/calculators/coffee-arbitrage/) — —

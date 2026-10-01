@@ -53,7 +53,8 @@ FALLBACK_SITES = [
 ]
 
 # Path segments that are site furniture, not link targets worth suggesting.
-SKIP_SEGMENTS = {"/", "/about", "/contact", "/privacy", "/terms", "/author", "/categories"}
+SKIP_SEGMENTS = {"/", "/about", "/contact", "/privacy", "/terms", "/author", "/categories",
+                 "/calculators"}
 
 
 def site_list() -> tuple[list[tuple[str, str, str]], str]:
