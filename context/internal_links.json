@@ -1,0 +1,890 @@
+{
+  "generated_at": "2026-10-01T00:43:51+00:00",
+  "site_source": "public.vertical_sites",
+  "sites": {
+    "wellroost.com": {
+      "cms": "https://cms.wellroost.com",
+      "frontend": "https://wellroost.com"
+    },
+    "giniloh.com": {
+      "cms": "https://cms.giniloh.com",
+      "frontend": "https://giniloh.com"
+    }
+  },
+  "categories": {
+    "wellroost.com": {
+      "4": "Energy & Efficiency",
+      "2": "Home Cost Decisions",
+      "15": "Lifestyle",
+      "5": "Smart Home & Security",
+      "3": "Tools & Equipment",
+      "1": "Uncategorized"
+    },
+    "giniloh.com": {
+      "7": "AI Stack & Tool TCO",
+      "6": "Artificial Intelligence & Future of Work",
+      "9": "Autonomous & Agentic Workflows:",
+      "8": "Career & AI Resilience:",
+      "2": "Major Purchases & Assets",
+      "3": "Mental Models & Strategy",
+      "4": "Money & Wealth",
+      "1": "Uncategorized"
+    }
+  },
+  "candidates": [
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 55,
+      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
+      "title": "Emporia Vue: How to Cut Energy Bills",
+      "url": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [
+        5
+      ],
+      "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the p",
+      "modified": "2026-09-16T01:44:14",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 50,
+      "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
+      "title": "Benefits of Living in the City: 2026 Pros and Cons",
+      "url": "https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/",
+      "categories": [
+        "Lifestyle"
+      ],
+      "category_ids": [
+        15
+      ],
+      "excerpt": "The benefits of living in the city have never been more nuanced\u2014or more decisive\u2014for mid-career professionals. In 2025, with hybrid work reshaping where talent lives, the urban advantage remains powerful: denser job markets, higher earning potential, walkable transit, world-class",
+      "modified": "2026-09-15T02:00:20",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 14,
+      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
+      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
+      "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
+      "modified": "2026-09-13T00:39:31",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 9,
+      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
+      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
+      "url": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
+      "modified": "2026-09-07T13:34:30",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "calculators",
+      "title": "Calculators calculator",
+      "url": "https://wellroost.com/calculators/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "move-or-improve",
+      "title": "Move Or Improve calculator",
+      "url": "https://wellroost.com/calculators/move-or-improve/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "remodeling-roi",
+      "title": "Remodeling Roi calculator",
+      "url": "https://wellroost.com/calculators/remodeling-roi/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "remodelytics",
+      "title": "Remodelytics calculator",
+      "url": "https://wellroost.com/calculators/remodelytics/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "energy-efficiency",
+      "title": "Energy Efficiency",
+      "url": "https://wellroost.com/categories/energy-efficiency/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "home-cost-decisions",
+      "title": "Home Cost Decisions",
+      "url": "https://wellroost.com/categories/home-cost-decisions/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "lifestyle",
+      "title": "Lifestyle",
+      "url": "https://wellroost.com/categories/lifestyle/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "smart-home-security",
+      "title": "Smart Home Security",
+      "url": "https://wellroost.com/categories/smart-home-security/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "tools-equipment",
+      "title": "Tools Equipment",
+      "url": "https://wellroost.com/categories/tools-equipment/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 391,
+      "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
+      "title": "The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision",
+      "url": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "The enterprise build-vs-buy decision is no longer about initial sticker price\u2014it is about the compounding, long-term cost of ownership. While rapid prototyping makes custom tools appear cheap, they carry steep financial and operational risks. The Hidden Cost of Building: A homegr",
+      "modified": "2026-09-30T23:44:46",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 380,
+      "slug": "multi-agent-orchestration-building-the-one-person-enterprise",
+      "title": "Multi Agent Orchestration: Building the One-Person Enterprise",
+      "url": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Team agents are defined as multiple AI systems working in concert\u2014each with specialized skills\u2014to execute complex business tasks that once required entire departments. For founders and executives, this changes everything. Sam Altman predicts the first one-person billion-dollar co",
+      "modified": "2026-09-24T01:25:21",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 374,
+      "slug": "agentic-ai-adoption-soars-but-profits-stall-in-2026",
+      "title": "Agentic AI Adoption Soars, But Profits Stall in 2026",
+      "url": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Forty percent of billion-dollar companies now deploy AI agents across their operations\u2014up from just 27 percent a year ago. That\u2019s not incremental growth. That\u2019s a strategic inflection point, and IT leaders who treat agentic AI adoption as a wait-and-see proposition are already be",
+      "modified": "2026-09-19T12:41:13",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 364,
+      "slug": "openai-just-made-the-agent-loop-a-commodity",
+      "title": "OpenAI just made the agent loop a commodity",
+      "url": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Agentic AI projects are autonomous systems that perceive, reason, plan, call tools, and execute multi-step work with minimal human intervention. On September 10, OpenAI moved the hardest part\u2014the agent loop\u2014into its Agents API public beta, handling model calls, MCP servers, sessi",
+      "modified": "2026-09-19T02:04:27",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 355,
+      "slug": "openais-custom-chip-beats-nvidia-on-power-2",
+      "title": "OpenAI\u2019s custom chip beats Nvidia on power",
+      "url": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "OpenAI\u2019s new custom AI inference chip, Jalape\u00f1o, outperformed Nvidia\u2019s GB300 on the InferenceX test, delivering 1.5 to 1.9 times more work per watt while using under 550 watts. Designed solely to run models rather than train them, Jalape\u00f1o highlights a broader industry shift towa",
+      "modified": "2026-09-18T00:49:05",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 345,
+      "slug": "nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet",
+      "title": "Nvidia says its GPUs aren\u2019t sold out. Its CFO\u2019s $279 billion memory bet says otherwise.",
+      "url": "https://giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Nvidia agreed to buy $279 billion in parts this quarter.",
+      "modified": "2026-09-17T02:10:24",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 341,
+      "slug": "expats-evaluating-the-true-value-of-a-job-driven-move-overseas",
+      "title": "Expats: Evaluating the True Value of a Job-Driven Move overseas",
+      "url": "https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "For mid-career professionals, moving abroad is no longer a simple salary comparison. Expats must weigh a U.S. $200K tech salary against a \u20ac130K European offer, then factor in lower healthcare, education, and daily costs alongside dual-country taxation expats face, visa rules, and",
+      "modified": "2026-09-14T01:16:38",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 333,
+      "slug": "is-a-3000-espresso-maker-machine-worth-it",
+      "title": "Is a $3,000 Espresso Maker Machine Worth It?",
+      "url": "https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "For many coffee enthusiasts, the decision to invest in a premium espresso maker machine is clouded by emotion and brand loyalty. A data-driven approach, however, reveals a surprising bottom line. Using the Giniloh Strategic Decision-Intelligence Engine, a detailed cost-per-use an",
+      "modified": "2026-07-09T21:19:00",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 308,
+      "slug": "beyond-the-emergency-fund-how-to-build-a-frictionless-wealth",
+      "title": "Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System",
+      "url": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Imagine your checking account drops to $500 after an unexpected car repair\u2014but within hours, an automatic sweep from your savings restores your floor, no manual intervention required. That\u2019s the power of the Giniloh Frictionless Money Flow Simulator, a hands-on tool that lets you",
+      "modified": "2026-07-09T17:01:18",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 281,
+      "slug": "simulate-a-frictionless-liquidity-sweep-in-giniloh",
+      "title": "Simulate a Frictionless Liquidity Sweep in Giniloh",
+      "url": "https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Let\u2019s cut to the chase: a liquidity sweep isn\u2019t just random market noise\u2014it\u2019s where institutional players deliberately spike prices through stop-loss clusters to grab trapped liquidity. If you\u2019ve ever watched your stop get hit only for the market to reverse immediately, you\u2019ve se",
+      "modified": "2026-07-09T17:07:31",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 275,
+      "slug": "smart-ways-to-invest-an-extra-500-a-day",
+      "title": "Smart Ways to Invest an Extra $500 a Day",
+      "url": "https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Imagine your income suddenly surges to $500 a day, your emergency fund is fully stocked at $15,000, and you carry zero high-interest debt. Where does every extra dollar go? The giniloh Money Flow Simulator answers that question with stunning clarity, turning abstract financial pl",
+      "modified": "2026-07-09T01:34:05",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 266,
+      "slug": "best-ai-proof-jobs-in-a-changing-market",
+      "title": "Best AI Proof Jobs in a Changing Market",
+      "url": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Worried robots are coming for your paycheck? You\u2019re not alone\u2014but the real story is far more hopeful. This guide cuts through the scare headlines to reveal exactly where smart, sustainable career opportunities exist right now. We\u2019ve curated a list of true ai proof jobs\u2014roles in h",
+      "modified": "2026-07-08T22:53:39",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 257,
+      "slug": "nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check",
+      "title": "NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?",
+      "url": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "For professionals weighing a leap into Nvidia\u2019s RTX PRO lineup\u2014a $12,400 Blackwell 6000 with 98GB VRAM\u2014the sticker shock often overshadows long-term value. But what if a single interactive calculator could reveal whether that investment pays off faster than renting cloud GPUs? Gi",
+      "modified": "2026-07-05T17:27:26",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 238,
+      "slug": "lease-break-calculator-save-1850-in-3-steps",
+      "title": "Lease Break Calculator: Save $1,850 in 3 Steps",
+      "url": "https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Sarah faced a classic career-versus-home dilemma: a $20,000 salary bump in NYC, but eight months and $24,000 remaining on her Austin lease. With confusing penalty clauses and no clear exit path, she needed hard numbers\u2014not guesswork. Using the Giniloh Lease Break Calculator, she ",
+      "modified": "2026-06-28T00:02:04",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 211,
+      "slug": "zapier-notion-integration-calculate-your-tinkering-tax",
+      "title": "Zapier Notion Integration: Calculate Your Tinkering Tax",
+      "url": "https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "E-commerce teams relying on a zapier notion integration to sync customer data and orders often face a hidden cost far exceeding any subscription fee. When broken integrations, duplicated records, and sync timeouts consume 12 hours of an operations manager\u2019s time each month at $85",
+      "modified": "2026-06-26T16:54:15",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 196,
+      "slug": "replace-laptop-screen-let-this-decision-engine-do-the-math",
+      "title": "Replace Laptop Screen? Let This Decision Engine Do the Math",
+      "url": "https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "Is a cracked laptop screen forcing you to shell out hundreds for a repair? Before you rush to replace laptop screen, stop and calculate whether it\u2019s actually worth it. Most repair guides only show you how, not if you should. That\u2019s where the Giniloh Strategic Decision-Intelligenc",
+      "modified": "2026-06-26T00:56:32",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 189,
+      "slug": "self-hosted-ai-when-to-buy-vs-rent-gpus",
+      "title": "Self-Hosted AI: When to Buy vs Rent GPUs",
+      "url": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "For AI developers and deep learning engineers, the decision to invest in a self-hosted AI rig versus renting cloud GPU compute has never been more critical\u2014or more confusing. With rising electricity costs and fluctuating cloud rates, the wrong choice can drain your budget by thou",
+      "modified": "2026-06-30T23:24:38",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 121,
+      "slug": "ebike-costs-per-use-calculator-for-commuters",
+      "title": "Ebike Costs: Per-Use Calculator for Commuters",
+      "url": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "Stop guessing whether an e-bike is worth it\u2014most people overpay for their commute without realizing it. This article uses the Giniloh Decision Intelligence Framework to uncover the true ebike costs and which choice saves real money. Instead of just listing price tags, you\u2019ll lear",
+      "modified": "2026-06-20T11:03:06",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 107,
+      "slug": "jobs-switch-calculator-step-by-step-profit-guide",
+      "title": "Jobs Switch Calculator: Step-by-Step Profit Guide",
+      "url": "https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Are you considering a jobs switch but worried about forfeiting years of unvested 401(k) matches? The Gilinoh Raise & Job-Hop Velocity Calculator exposes the hidden financial trade-offs most professionals overlook. In a realistic scenario, a mid-career engineer earning $120,000 re",
+      "modified": "2026-06-20T00:52:04",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 99,
+      "slug": "calculate-your-career-relocation-payback",
+      "title": "Calculate Your Career Relocation Payback",
+      "url": "https://giniloh.com/calculate-your-career-relocation-payback/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Moving for a career relocation is one of the most consequential financial decisions a professional can make\u2014yet most job offers gloss over the hidden costs that can turn a salary bump into a net loss. A new interactive tool, the Giniloh Career Relocation Cost & Payback Calculator",
+      "modified": "2026-08-12T00:47:00",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 91,
+      "slug": "negotiate-job-offer-with-giniloh-visualizer",
+      "title": "Negotiate Job Offer with Giniloh Visualizer",
+      "url": "https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Most candidates fixate on base salary when they negotiate a job offer\u2014but that leaves money on the table. The Giniloh Total Compensation Visualizer transforms the process. You input specific numbers for salary, equity, bonuses, and benefits, then instantly see how different scena",
+      "modified": "2026-07-09T17:12:12",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 62,
+      "slug": "the-blueprint-behind-giniloh-money-flow",
+      "title": "The Blueprint Behind Giniloh Money Flow",
+      "url": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Imagine taking control of your money flow without the usual spreadsheet headaches or second-guessing every move. That\u2019s exactly what the Giniloh Money Flow Simulator delivers\u2014a risk-free sandbox where you can test your smart money decisions in real time. Instead of hoping your bi",
+      "modified": "2026-06-15T00:25:11",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 33,
+      "slug": "how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless",
+      "title": "Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows",
+      "url": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Mastering your money flows is no longer guesswork. The Giniloh Frictionless Money Flow Simulator lets you configure a real-time cash routing engine on an interactive canvas\u2014click any account node to drag sliders for balances, ceiling limits, and safety floors. Its AI Orchestratio",
+      "modified": "2026-06-10T21:24:19",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 11,
+      "slug": "the-giniloh-money-flow-simulator-explained",
+      "title": "How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)",
+      "url": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the L",
+      "modified": "2026-07-09T16:36:32",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "calculators",
+      "title": "Calculators calculator",
+      "url": "https://giniloh.com/calculators/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "lease-break",
+      "title": "Lease Break calculator",
+      "url": "https://giniloh.com/calculators/lease-break/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "raise-velocity",
+      "title": "Raise Velocity calculator",
+      "url": "https://giniloh.com/calculators/raise-velocity/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "total-comp",
+      "title": "Total Comp calculator",
+      "url": "https://giniloh.com/calculators/total-comp/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "money-flow",
+      "title": "Money Flow calculator",
+      "url": "https://giniloh.com/calculators/money-flow/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "relocation-cost",
+      "title": "Relocation Cost calculator",
+      "url": "https://giniloh.com/calculators/relocation-cost/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "decision-intelligence",
+      "title": "Decision Intelligence calculator",
+      "url": "https://giniloh.com/calculators/decision-intelligence/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "coffee-arbitrage",
+      "title": "Coffee Arbitrage calculator",
+      "url": "https://giniloh.com/calculators/coffee-arbitrage/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "tech-debt-repair",
+      "title": "Tech Debt Repair calculator",
+      "url": "https://giniloh.com/calculators/tech-debt-repair/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "no-code-terminator",
+      "title": "No Code Terminator calculator",
+      "url": "https://giniloh.com/calculators/no-code-terminator/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "gpu-compute",
+      "title": "Gpu Compute calculator",
+      "url": "https://giniloh.com/calculators/gpu-compute/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "career-ai-resilience",
+      "title": "Career Ai Resilience calculator",
+      "url": "https://giniloh.com/calculators/career-ai-resilience/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "calculator",
+      "id": null,
+      "slug": "expat-evaluator",
+      "title": "Expat Evaluator calculator",
+      "url": "https://giniloh.com/calculators/expat-evaluator/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "ai-stack-tool-tco",
+      "title": "Ai Stack Tool Tco",
+      "url": "https://giniloh.com/categories/ai-stack-tool-tco/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "artificial-intelligence-future-of-work",
+      "title": "Artificial Intelligence Future Of Work",
+      "url": "https://giniloh.com/categories/artificial-intelligence-future-of-work/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "autonomous-agentic-workflows",
+      "title": "Autonomous Agentic Workflows",
+      "url": "https://giniloh.com/categories/autonomous-agentic-workflows/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "career-ai-resilience",
+      "title": "Career Ai Resilience",
+      "url": "https://giniloh.com/categories/career-ai-resilience/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "major-purchases-assets",
+      "title": "Major Purchases Assets",
+      "url": "https://giniloh.com/categories/major-purchases-assets/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "mental-models-strategy",
+      "title": "Mental Models Strategy",
+      "url": "https://giniloh.com/categories/mental-models-strategy/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "category",
+      "id": null,
+      "slug": "money-wealth",
+      "title": "Money Wealth",
+      "url": "https://giniloh.com/categories/money-wealth/",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "",
+      "live": true
+    }
+  ],
+  "not_live": []
+}

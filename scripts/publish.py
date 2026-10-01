@@ -90,9 +90,11 @@ def parse_draft(file_path: str):
     else:
         body_article = body_content.strip()
 
-    # Cleanly strip machine-readable schema, internal-links, and gate reports from body_article
+    # Cleanly strip machine-readable schema, internal-links hints, and gate reports from body_article
     body_article = re.sub(r"<!--\s*schema\s*-->\s*```(?:json)?\s*\{.+?\}\s*```", "", body_article, flags=re.DOTALL | re.IGNORECASE).strip()
-    body_article = re.sub(r"<!--\s*internal-links\s*-->\s*(?:- .+\n?)+", "", body_article, flags=re.IGNORECASE).strip()
+    # Operator-facing HTML comments (section markers, internal-link placement hints) are machinery.
+    # The reader-facing `## Related reading` links are article body and must survive this.
+    body_article = re.sub(r"^\s*<!--.*?-->\s*$", "", body_article, flags=re.M).strip()
     body_article = re.sub(r"##\s*Gate report[\s\S]*$", "", body_article, flags=re.IGNORECASE).strip()
 
     # Extract Sources

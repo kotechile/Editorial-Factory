@@ -20,8 +20,14 @@ GROWTH_OS_DIR = CONTEXT_DIR / "growth_os"
 FOUNDER_VOICE_FILE = GROWTH_OS_DIR / "founder-voice.md"
 CUSTOMER_TRUTH_FILE = GROWTH_OS_DIR / "customer-truth.md"
 SITEMAP_FILE = CONTEXT_DIR / "sitemap.json"
+INTERNAL_LINK_INDEX = CONTEXT_DIR / "internal_links.json"
 PUBLISHED_DIR = ROOT / "published"
 DRAFTS_DIR = CONTEXT_DIR / "drafts"
+
+# Words carrying no topical signal — excluded so a shared "the" never scores a link.
+STOPWORDS = {"the", "a", "an", "of", "and", "or", "for", "to", "in", "on", "with", "is", "are",
+             "how", "why", "what", "your", "you", "it", "that", "this", "vs", "at", "by", "from",
+             "as", "be", "can", "does", "do", "new", "2026", "best", "guide"}
 
 
 def load_sitemap():
@@ -123,49 +129,150 @@ def check_cannibalization(target_keyword, vertical=None, threshold=0.65):
     }
 
 
+def load_internal_link_index():
+    """The internal-link candidate index built from the live sites (build_internal_link_index.py).
+
+    Falls back to the app's own sitemap — which only knows what this pipeline published — with a
+    warning, rather than returning nothing and silently drafting articles with no internal links.
+    """
+    if INTERNAL_LINK_INDEX.exists():
+        try:
+            index = json.loads(INTERNAL_LINK_INDEX.read_text(encoding="utf-8"))
+            if index.get("candidates"):
+                return index
+            print("[internal-links] index holds no candidates — falling back to the local sitemap",
+                  file=sys.stderr)
+        except (ValueError, OSError) as exc:
+            print(f"[internal-links] index unreadable ({exc}) — falling back to the local sitemap",
+                  file=sys.stderr)
+    else:
+        print("[internal-links] context/internal_links.json is missing — run "
+              "scripts/build_internal_link_index.py; falling back to the local sitemap (no real "
+              "corpus)", file=sys.stderr)
+    return None
+
+
+def _site_for_vertical(vertical):
+    """The site + category a vertical routes to, from public.vertical_sites (best effort)."""
+    if not vertical:
+        return None
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        import wp_draft
+        # wp_category_id arrives with migration 0004; ask for it, and retry without it so routing
+        # still works against a database that has not been migrated yet.
+        for fields, quiet in (("site_domain,frontend_url,wp_category_id", True),
+                              ("site_domain,frontend_url", False)):
+            rows = wp_draft.supabase_get(
+                f"vertical_sites?select={fields}&vertical_id=eq.{vertical}", quiet=quiet)
+            if rows:
+                return rows[0]
+        return None
+    except Exception:                                          # noqa: BLE001 - optional
+        return None
+
+
+def _anchor_for(candidate, target_words):
+    """Anchor text for a candidate: its own title, trimmed at a word boundary.
+
+    Anchors are taken from the destination page's title rather than invented, so the link text
+    describes the page it points at. Titles that begin with a question or a stopword are trimmed to
+    the substantive phrase.
+    """
+    text = " ".join(str(candidate.get("title") or candidate.get("slug") or "").split())
+    text = re.sub(r"^(the|our|why|how to|how|what)\s+", "", text, flags=re.I).strip(" :,-–—")
+    if not text:
+        text = candidate.get("slug", "")
+    if len(text) > 64:
+        text = text[:64].rsplit(" ", 1)[0] + "…"
+    return text
+
+
 def generate_internal_link_map(target_keyword, vertical=None, max_links=3):
-    """Scan published sitemap and propose internal links with context and anchor texts."""
-    sitemap = load_sitemap()
-    articles = sitemap.get("articles", [])
-    target_words = set(re.findall(r"\w+", target_keyword.lower()))
+    """Propose internal links from the site's real, live corpus.
 
-    scored_candidates = []
+    Candidates come from context/internal_links.json, whose liveness is decided by each frontend's
+    sitemap — the 28 hand-written articles already live on giniloh.com and wellroost.com are the
+    strongest targets on either site and were previously invisible to the generator.
 
-    for art in articles:
-        vert = art.get("vertical", "")
-        title = art.get("title", "")
-        p_kw = art.get("primary_keyword", "")
-        sec_kws = art.get("secondary_keywords", [])
-        h2s = art.get("h2_topics", [])
+    Same-site only: a link from giniloh.com to wellroost.com is a cross-site link, not an internal
+    one, so candidates from another domain are dropped rather than ranked lower.
+    """
+    target_words = {w for w in re.findall(r"\w+", (target_keyword or "").lower()) if w not in STOPWORDS}
+    self_slug = re.sub(r"[^a-z0-9]+", "-", (target_keyword or "").lower()).strip("-")
 
-        score = 0
-        if vertical and vert == vertical:
-            score += 3  # same vertical bonus
+    index = load_internal_link_index()
+    if index:
+        routing = _site_for_vertical(vertical) or {}
+        destination = routing.get("site_domain")
+        destination_category = routing.get("wp_category_id")
+        candidates = [c for c in index.get("candidates", []) if c.get("live") and c.get("url")]
+        source = "context/internal_links.json"
+    else:
+        sitemap = load_sitemap()
+        destination, destination_category, routing = None, None, {}
+        candidates = [{"site": None, "kind": "article", "title": a.get("title"),
+                       "slug": a.get("slug"), "url": a.get("url"),
+                       "categories": [], "category_ids": [], "excerpt": "",
+                       "vertical": a.get("vertical")}
+                      for a in sitemap.get("articles", []) if a.get("url")]
+        source = "context/sitemap.json (fallback)"
 
-        combined_text = f"{title} {p_kw} {' '.join(sec_kws)} {' '.join(h2s)}".lower()
-        art_words = set(re.findall(r"\w+", combined_text))
+    scored = []
+    for candidate in candidates:
+        if self_slug and candidate.get("slug") == self_slug:
+            continue                                            # never link an article to itself
+        if destination and candidate.get("site") and candidate["site"] != destination:
+            continue                                            # internal links stay on the domain
 
-        overlap = len(target_words.intersection(art_words))
-        score += overlap * 2
+        score, reasons = 0, []
+        same_vertical = bool(vertical) and candidate.get("vertical") == vertical
+        same_category = bool(destination_category) and destination_category in (candidate.get("category_ids") or [])
+        if destination and candidate.get("site") == destination:
+            score += 4
+            reasons.append(f"same site ({destination})")
+        if same_vertical:
+            score += 3
+            reasons.append(f"same vertical ({vertical})")
+        if same_category:
+            score += 3
+            reasons.append("same category")
+        if candidate.get("kind") == "article":
+            score += 2
+        elif candidate.get("kind") == "calculator":
+            score += 1
 
-        if score > 0:
-            # Generate contextual anchor text
-            anchor = p_kw if p_kw else title
-            # Clean anchor
-            anchor = re.sub(r"^(the|our|why|how to)\s+", "", anchor, flags=re.I).strip()
+        haystack = " ".join([str(candidate.get("title", "")), str(candidate.get("excerpt", "")),
+                             " ".join(candidate.get("categories") or [])]).lower()
+        overlap = sorted(target_words.intersection(set(re.findall(r"\w+", haystack))))
+        score += len(overlap) * 2
+        if overlap:
+            reasons.append("topical overlap: " + ", ".join(overlap[:4]))
 
-            scored_candidates.append({
-                "title": title,
-                "slug": art.get("slug"),
-                "url": art.get("url"),
-                "vertical": vert,
-                "anchor_text": anchor,
-                "relevance_score": score,
-                "suggested_placement": f"Link in the background/tension section when referencing {anchor}."
-            })
+        # Sharing a domain is not a reason to link. An internal link to an unrelated article costs
+        # the reader's attention and dilutes the anchor, so a candidate must earn its place with
+        # either topical overlap or a shared vertical/category. When nothing qualifies the article
+        # ships with no Related reading section — which is the honest outcome.
+        if not (overlap or same_vertical or same_category):
+            continue
+        anchor = _anchor_for(candidate, target_words)
+        scored.append({
+            "title": candidate.get("title"),
+            "slug": candidate.get("slug"),
+            "url": candidate.get("url"),
+            "site": candidate.get("site"),
+            "kind": candidate.get("kind", "article"),
+            "anchor_text": anchor,
+            "relevance_score": score,
+            "why": "; ".join(reasons),
+            "category": (candidate.get("categories") or [""])[0],
+            "suggested_placement": (f"Link \"{anchor}\" in the section where the article touches "
+                                    f"{', '.join(overlap[:3]) or 'this topic'}."),
+        })
 
-    scored_candidates.sort(key=lambda x: x["relevance_score"], reverse=True)
-    return scored_candidates[:max_links]
+    scored.sort(key=lambda x: (-x["relevance_score"], x["title"] or ""))
+    print(f"  • Internal-link candidates from {source}: {len(scored)} scored of {len(candidates)}")
+    return scored[:max_links]
 
 
 def extract_growth_os_knowledge(vertical, keyword=""):

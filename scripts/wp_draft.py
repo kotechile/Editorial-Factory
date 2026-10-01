@@ -88,6 +88,23 @@ def supabase_config() -> tuple[str, str]:
     return url, key
 
 
+def supabase_get(path: str, quiet: bool = False) -> list[dict] | None:
+    """Best-effort PostgREST GET — returns None rather than exiting.
+
+    For optional reads (the site list behind the internal-link index) where an unreachable database
+    should degrade to a documented fallback instead of killing the run. Use Supabase() directly when
+    a miss has to fail loudly. `quiet` suppresses the warning for an attempt that is expected to fail,
+    e.g. asking for a column an unapplied migration has not added yet.
+    """
+    try:
+        _, rows = Supabase(*supabase_config())._call("GET", path)
+        return rows or []
+    except Exception as exc:                                   # noqa: BLE001 - optional read
+        if not quiet:
+            print(f"[supabase] optional read failed ({path}): {exc}", file=sys.stderr)
+        return None
+
+
 def credentials_for(site_domain: str) -> tuple[str, str]:
     """WP_USER / WP_APP_PASSWORD for a site, keyed by its domain label.
 
@@ -193,8 +210,7 @@ def reader_markdown(markdown: str) -> str:
     body = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", markdown or "", flags=re.S)
     body = body.split("<!-- linkedin -->")[0]
     body = re.split(r"^##\s+Gate report\s*$", body, flags=re.M)[0]
-    body = re.sub(r"^\s*<!--\s*(lead|tension|tactical-insight|nuanced-takeaway|tldr|quick-cite|schema|internal-links)\s*-->\s*$",
-                  "", body, flags=re.M)
+    body = re.sub(r"^\s*<!--.*?-->\s*$", "", body, flags=re.M)
     return body.strip()
 
 

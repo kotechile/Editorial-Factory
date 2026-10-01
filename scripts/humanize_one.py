@@ -50,6 +50,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
+- PRESERVE the `## Related reading` section exactly as written — its anchor texts and URLs are verified internal links to live pages on the same site. Never rewrite, drop, merge, or invent one, and never add a link that is not already there.
 - Format the TL;DR as the structured <!-- tldr --> field strictly following this 4-part Smart Brevity At a Glance schema (serves as a 30-second executive summary explaining what the article is about):
   1) "- **The Big Shift:** <1-2 plain-English sentences explaining directly what happened and what the article is about>"
   2) "- **Why It Matters:** <1-2 sentences stating the economic, architectural, or industry impact and who is affected>"

@@ -48,6 +48,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE every citation [n] inline and the ## Sources list VERBATIM (do not change, merge, or drop any source line or its URL).
 - PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, keyword_data_source, secondary_keywords_source, vertical, persona, date, slug) and polish `title` for punchy clarity. When `primary_keyword` is defined in frontmatter, `title` and `meta_title` MUST explicitly contain the primary keyword. Never omit the target keyword from the title.
 - PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
+- PRESERVE the `## Related reading` section exactly as written — its anchor texts and URLs are verified internal links to live pages on the same site. Never rewrite, drop, merge, or invent one, and never add a link that is not already there.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - Format the TL;DR as the structured <!-- tldr --> field strictly following this 4-part Smart Brevity At a Glance schema (serves as a 30-second executive summary explaining what the article is about):

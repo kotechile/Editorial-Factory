@@ -156,6 +156,15 @@ if ! python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network >/dev/null 2
   python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.7 Internal links (hard): candidates come from the live corpus and must be same-site, live, never
+#     the article itself, and never a mere domain match. The shipped-index section inspects
+#     context/internal_links.json without fetching; refresh it with
+#       python3 scripts/build_internal_link_index.py
+if ! python3 "$ROOT/scripts/test_internal_links.py" >/dev/null 2>&1; then
+  echo "FAIL: internal-link tests — detail:"
+  python3 "$ROOT/scripts/test_internal_links.py" 2>&1 | tail -8; FAIL=1
+fi
+
 # 9. Voice gate (hard): the article body AND the social copy must read as one person commenting on the
 #    news — not the owner of the truth and not the reader's advisor (skills/claude_humanizer.md
 #    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated

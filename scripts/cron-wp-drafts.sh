@@ -47,4 +47,23 @@ if [ "$DRC" -ne 0 ]; then
   PROBLEMS=1
 fi
 
+# Part 3 — internal-link index. The generator links to the site's real, live pages, so the index has
+# to follow the corpus: new articles appear, and a post that stops being live must drop out of the
+# candidate pool rather than become a link that sends readers to the homepage. Rebuilding is how
+# liveness is re-decided (the sitemap is re-read), so this is a refresh rather than a check.
+IDX="$(python3 scripts/build_internal_link_index.py 2>&1)"
+IRC=$?
+if [ "$IRC" -ne 0 ]; then
+  echo "WordPress Draft Sweep: internal-link index FAILED (exit $IRC)"
+  printf '%s\n' "$IDX" | tail -6
+  PROBLEMS=1
+else
+  echo "$IDX" | grep -E "indexed|candidate\(s\)" | head -4
+  NOT_LIVE="$(printf '%s\n' "$IDX" | grep -cE '^    .* #[0-9]+ ')"
+  if [ "$NOT_LIVE" -gt 0 ]; then
+    echo "  $NOT_LIVE post(s) published in a CMS but absent from its site's sitemap (frontend not rebuilt):"
+    printf '%s\n' "$IDX" | grep -E '^    .* #[0-9]+ ' | head -6
+  fi
+fi
+
 exit "$PROBLEMS"

@@ -190,6 +190,36 @@ def _format_sources(serp_competitors):
     return "\n".join(lines)
 
 
+def _format_related_reading(internal_links) -> str:
+    """The reader-facing internal links — real anchors, on the same site, verified live.
+
+    A body section, not an operator note: an internal link only does anything for the reader or the
+    crawler if it reaches the published post as an <a href>. Candidates arrive already filtered to
+    the destination site and checked against its sitemap, so a draft never links to a page that is
+    not live (both Astro fronts answer 200 with the homepage for an unknown URL, so a bad link would
+    silently send readers home).
+    """
+    links = [l for l in (internal_links or []) if l.get("url") and l.get("anchor_text")]
+    if not links:
+        return ""
+    lines = ["## Related reading", ""]
+    for link in links:
+        category = (link.get("category") or "").strip()
+        reason = "calculator" if link.get("kind") == "calculator" else (
+            f"more on {category}" if category else "")
+        lines.append(f"- [{link['anchor_text']}]({link['url']})" + (f" — {reason}" if reason else ""))
+    return "\n".join(lines)
+
+
+def _format_link_hints(internal_links) -> str:
+    """Placement hints for the operator, as HTML comments so they never reach a reader."""
+    lines = [f"<!-- internal-link hint: \"{l.get('anchor_text')}\" -> {l.get('url')} "
+             f"[{l.get('why', '')}] {l.get('suggested_placement', '')} -->"
+             for l in (internal_links or []) if l.get("url")]
+    return "\n".join(lines) or ("<!-- internal-link hint: none — no live page on this site scored "
+                               "for this topic -->")
+
+
 def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, vertical_id, persona_id):
     """Generate structured markdown draft containing full SEO metadata, schema, and sections."""
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -259,11 +289,8 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
     }
 
     # Format internal links
-    il_lines = []
-    for il in internal_links:
-        il_lines.append(f"- **Anchor:** `[{il['anchor_text']}]` -> `{il['url']}` (*{il['title']}*)")
-
-    il_block = "\n".join(il_lines) if il_lines else "- *No direct internal links required.*"
+    related_block = _format_related_reading(internal_links)
+    link_hints = _format_link_hints(internal_links)
 
     clusters_str = ", ".join([f"\"{c['keyword']}\"" for c in keyword_data.get("keyword_clusters", [])[:5]])
 
@@ -322,6 +349,8 @@ The catch I keep coming back to: closing this gap takes upfront investment in me
   - **Deterministic Action Gates:** whether an agent can take an external action without a strict checking function [3].
 - **The Fine Print:** Closing this gap requires upfront investment in telemetry and access control; metrics and ROI depend entirely on your workload and traffic mix.
 
+{related_block}
+
 ## Sources
 {sources_block}
 
@@ -344,7 +373,7 @@ What is your team actually measuring before you commit?
 ```
 
 <!-- internal-links -->
-{il_block}
+{link_hints}
 """
     return slug, md
 
@@ -437,10 +466,8 @@ def build_citation_hub_draft(keyword_data, cannibalization, internal_links, grow
     }
 
     # Format internal links
-    il_lines = []
-    for il in internal_links:
-        il_lines.append(f"- **Anchor:** `[{il['anchor_text']}]` -> `{il['url']}` (*{il['title']}*)")
-    il_block = "\n".join(il_lines) if il_lines else "- *No direct internal links required.*"
+    related_block = _format_related_reading(internal_links)
+    link_hints = _format_link_hints(internal_links)
 
     clusters_str = ", ".join([f"\"{c['keyword']}\"" for c in keyword_data.get("keyword_clusters", [])[:5]])
 
@@ -517,6 +544,8 @@ The catch I keep coming back to is sample bias in vendor evaluations. Benchmark 
   - **Unit Economics Tracking:** monitoring total workflow cost per resolution rather than raw token pricing [2].
 - **The Catch:** Establishing rigorous telemetry requires upfront infrastructure and domain-specific validation gates; zero-effort shortcuts do not hold in production.
 
+{related_block}
+
 ## Sources
 {sources_block}
 
@@ -544,7 +573,7 @@ What metrics are your engineering teams verifying before signing off on deployme
 ```
 
 <!-- internal-links -->
-{il_block}
+{link_hints}
 """
     return slug, md
 
