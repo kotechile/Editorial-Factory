@@ -397,40 +397,66 @@ def extract_dataset_node(schema) -> dict | None:
     return None
 
 
-def retarget_publisher(node: dict, site: dict, publisher_name: str | None) -> tuple[dict, list[str]]:
-    """Point creator/publisher at the site the article is actually published on.
+def _resolve_placeholders(value, mapping: dict, notes: list[str], path: str):
+    """Recursively substitute {{TOKEN}} placeholders and report every substitution."""
+    if isinstance(value, dict):
+        return {k: _resolve_placeholders(v, mapping, notes, f"{path}.{k}") for k, v in value.items()}
+    if isinstance(value, list):
+        return [_resolve_placeholders(v, mapping, notes, f"{path}[{i}]") for i, v in enumerate(value)]
+    if isinstance(value, str):
+        for token, replacement in mapping.items():
+            if token in value:
+                value = value.replace(token, replacement)
+                notes.append(f"{path}: {token} -> {replacement}")
+        if "editorial-factory.com" in value:      # legacy artifact from an older generator run
+            value = value.replace("https://editorial-factory.com", mapping["{{SITE_URL}}"])
+            notes.append(f"{path}: editorial-factory.com (does not resolve) -> {mapping['{{SITE_URL}}']}")
+        if "editorial factory" in value.lower():
+            value = re.sub(r"editorial factory[^\"']*", mapping["{{PUBLISHER_NAME}}"], value, flags=re.I)
+            notes.append(f"{path}: 'Editorial Factory…' -> {mapping['{{PUBLISHER_NAME}}']}")
+    return value
 
-    The generator hard-codes `editorial-factory.com`, which does not resolve (verified), so a
-    pasted schema asserts a publisher that does not exist. The destination is known here, so
-    it is rewritten — and reported, never done silently.
+
+def retarget_publisher(node: dict, site: dict, publisher_name: str | None,
+                       author_name: str | None = None) -> tuple[dict, list[str]]:
+    """Point the schema's identity at the site the article is actually published on.
+
+    The generator emits placeholders ({{SITE_URL}}, {{PUBLISHER_NAME}}, {{AUTHOR_NAME}}) because the
+    destination is chosen here, not there; older artifacts instead hard-code
+    `editorial-factory.com`, which does not resolve (verified), and the internal approval handle as
+    the public author. Either way the value is rewritten — and reported, never done silently. A
+    placeholder with no value supplied is DROPPED rather than published literally: a consumer
+    reading `{{AUTHOR_NAME}}` as an author name is worse than no author node.
     """
     notes: list[str] = []
     node = json.loads(json.dumps(node))
-    for key in ("creator", "publisher"):
-        value = node.get(key)
-        if not isinstance(value, dict):
-            continue
-        url = str(value.get("url") or "")
-        if not url or "editorial-factory.com" in url:
-            value["url"] = site["frontend_url"]
-            notes.append(f"schema {key}.url -> {site['frontend_url']} (was '{url or 'unset'}')")
-        if publisher_name:
-            value["name"] = publisher_name
-        name = str(value.get("name") or "")
-        if "editorial factory" in name.lower():
-            value["name"] = publisher_name or site["site_domain"]
-            notes.append(f"schema {key}.name -> '{value['name']}' (was '{name}')")
+    if author_name:
+        mapping = {"{{SITE_URL}}": site["frontend_url"],
+                   "{{PUBLISHER_NAME}}": publisher_name or site["site_domain"],
+                   "{{AUTHOR_NAME}}": author_name}
+    else:
+        mapping = {"{{SITE_URL}}": site["frontend_url"],
+                   "{{PUBLISHER_NAME}}": publisher_name or site["site_domain"]}
+        for key in ("author", "creator", "publisher"):
+            value = node.get(key)
+            if isinstance(value, dict) and str(value.get("name") or "").strip() == "{{AUTHOR_NAME}}":
+                node.pop(key, None)
+                notes.append(f"schema {key} dropped: generator placeholder with no --author-name supplied")
+
+    node = _resolve_placeholders(node, mapping, notes, "schema")
     return node, notes
 
 
-def build_payload(row: dict, site: dict, publisher_name: str | None = None) -> tuple[dict, list[str]]:
+def build_payload(row: dict, site: dict, publisher_name: str | None = None,
+                  author_name: str | None = None) -> tuple[dict, list[str]]:
     """The exact WordPress post payload, plus a list of mapping notes for the operator."""
     metadata = row.get("metadata") or {}
     notes: list[str] = []
     content_html = md_to_html(row.get("content") or "")
 
     dataset, schema_notes = retarget_publisher(
-        extract_dataset_node((metadata.get("seo") or {}).get("schema")) or {}, site, publisher_name)
+        extract_dataset_node((metadata.get("seo") or {}).get("schema")) or {}, site, publisher_name,
+        author_name)
     notes += schema_notes
     if dataset:
         content_html += (
@@ -510,13 +536,13 @@ class WordPress:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None = None,
-             wp_factory=None) -> dict:
+             author_name: str | None = None, wp_factory=None) -> dict:
     metadata = row.get("metadata") or {}
     vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
     if not vertical:
         raise RuntimeError(f"row {row.get('id')} has no vertical — cannot route it to a site")
     site = db.site_for(vertical)
-    payload, notes = build_payload(row, site, publisher_name)
+    payload, notes = build_payload(row, site, publisher_name, author_name)
 
     print(f"\n  article : {payload['title']}")
     print(f"  slug    : {payload['slug']}   (idempotency key)")
@@ -552,14 +578,15 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
 
 
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
-                 wp_factory=None, db=None) -> dict:
+                 author_name: str | None = None, wp_factory=None, db=None) -> dict:
     """Push one article by its Supabase slug. The single entry point used by both this CLI and
     scripts/publish.py, so the in-run hook and a manual re-run share one code path."""
     db = db or Supabase(*supabase_config())
     rows = db.articles(slug=slug)
     if not rows:
         raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
-    return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name, wp_factory=wp_factory)
+    return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name,
+                    author_name=author_name, wp_factory=wp_factory)
 
 
 def main() -> int:
@@ -569,7 +596,10 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=1, help="Max articles to push in one run (default 1)")
     parser.add_argument("--dry-run", action="store_true", help="Print the payload without contacting WordPress")
     parser.add_argument("--publisher-name", default=None,
-                        help="Organization name to write into the Dataset schema (default: the site domain)")
+                        help="Organization name for the schema (default: the destination site domain)")
+    parser.add_argument("--author-name", default=None,
+                        help="Byline for the schema's author node. Omitted = the author node is "
+                             "dropped rather than publishing the generator's {{AUTHOR_NAME}} token")
     args = parser.parse_args()
 
     if not args.slug and not args.all:
@@ -579,7 +609,8 @@ def main() -> int:
 
     if args.slug:
         try:
-            push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name, db=db)
+            push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
+                         author_name=args.author_name, db=db)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
             return 1
@@ -594,7 +625,8 @@ def main() -> int:
     failures = 0
     for row in rows:
         try:
-            push_one(row, db, dry_run=args.dry_run, publisher_name=args.publisher_name)
+            push_one(row, db, dry_run=args.dry_run, publisher_name=args.publisher_name,
+                     author_name=args.author_name)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             failures += 1
             print(f"\n  FAILED {row.get('title')}: {exc}", file=sys.stderr)

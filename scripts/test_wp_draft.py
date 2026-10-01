@@ -257,6 +257,23 @@ check("editorial-factory.com (unresolvable) rewritten to the destination",
       retargeted["creator"]["url"] == "https://giniloh.com" and any("creator.url" in n for n in notes))
 check("...and reported, not silent", len(notes) >= 1 and "giniloh.com" in notes[0])
 
+# The generator now emits placeholders instead of a guessed publisher; the destination fills them.
+placeholder_node = {
+    "@type": "Dataset",
+    "creator": {"@type": "Organization", "name": "{{PUBLISHER_NAME}}", "url": "{{SITE_URL}}"},
+    "author": {"@type": "Person", "name": "{{AUTHOR_NAME}}"},
+}
+filled, fill_notes = wd.retarget_publisher(placeholder_node, SITE, "Gini Loh")
+check("{{SITE_URL}} filled from the destination", filled["creator"]["url"] == "https://giniloh.com")
+check("{{PUBLISHER_NAME}} filled from --publisher-name", filled["creator"]["name"] == "Gini Loh")
+check("an unresolved {{AUTHOR_NAME}} node is DROPPED, not published literally",
+      "author" not in filled and any("dropped" in n for n in fill_notes), filled)
+with_author, _ = wd.retarget_publisher(placeholder_node, SITE, "Gini Loh", "Jorge Fernandez")
+check("...and filled when an author is supplied", with_author["author"]["name"] == "Jorge Fernandez")
+check("no placeholder token survives once values are supplied", "{{" not in json.dumps(with_author))
+check("the generator no longer hard-codes the internal approval handle as a byline",
+      "Simon" not in json.dumps(wd.retarget_publisher(placeholder_node, SITE, None)))
+
 print("\nrouting — fails closed")
 db_no_route = FakeDB(site=None)
 raises("unknown vertical refuses to push", lambda: wd.push_one(ROW, db_no_route, dry_run=True),

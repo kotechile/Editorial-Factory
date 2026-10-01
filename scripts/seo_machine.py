@@ -213,8 +213,8 @@ def build_seo_draft(keyword_data, cannibalization, internal_links, growth_data, 
                 "headline": title,
                 "description": meta_desc,
                 "datePublished": f"{today_str}T06:00:00Z",
-                "author": {"@type": "Person", "name": "Simon"},
-                "publisher": {"@type": "Organization", "name": "Editorial Factory"}
+                "author": {"@type": "Person", "name": "{{AUTHOR_NAME}}"},
+                "publisher": {"@type": "Organization", "name": "{{PUBLISHER_NAME}}"}
             },
             {
                 "@type": "FAQPage",
@@ -391,8 +391,8 @@ def build_citation_hub_draft(keyword_data, cannibalization, internal_links, grow
                 "headline": title,
                 "description": meta_desc,
                 "datePublished": f"{today_str}T06:00:00Z",
-                "author": {"@type": "Person", "name": "Simon"},
-                "publisher": {"@type": "Organization", "name": "Editorial Factory"}
+                "author": {"@type": "Person", "name": "{{AUTHOR_NAME}}"},
+                "publisher": {"@type": "Organization", "name": "{{PUBLISHER_NAME}}"}
             },
             dataset_schema,
             {

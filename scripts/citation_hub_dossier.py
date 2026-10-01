@@ -70,6 +70,48 @@ FETCH_TIMEOUT = 30
 USER_AGENT = "Mozilla/5.0 (compatible; EditorialFactorySourceVerifier/1.0)"
 _NUMBER = re.compile(r"\d+(?:\.\d+)?")
 _EVIDENCE_WINDOW = 120
+# Prose sources state figures as words ("doubling approximately every seven months since 2019"),
+# so a digits-only matcher rejects true claims. Bounded to twelve on purpose: the evidence window
+# still has to be checkable by a human, and "one in ten" style phrasing is out of scope.
+_WORD_NUMBERS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
+                 "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12}
+
+
+def figure_patterns(figure: str) -> List[re.Pattern]:
+    """Regexes that count as the figure appearing in a source.
+
+    With digits, the numeric token is matched, bounded so '62' cannot match '1620' nor '41.6'
+    match '141.6'. With a word number, the word (or its digit) must sit directly against the
+    following word — 'seven months' matches the phrase, not a stray 7 anywhere on the page.
+    """
+    tokens = _NUMBER.findall(figure)
+    if tokens:
+        return [re.compile(r"(?<![\d.])" + re.escape(token) + r"(?![\d])") for token in tokens]
+
+    words = re.findall(r"[a-z]+", figure.lower())
+    if not words or words[0] not in _WORD_NUMBERS:
+        return []
+    alternatives = sorted({words[0], str(_WORD_NUMBERS[words[0]])}, key=len, reverse=True)
+    group = "|".join(re.escape(a) for a in alternatives)
+    if len(words) > 1:
+        return [re.compile(r"(?<![\w.])(" + group + r")\s+" + re.escape(words[1]) + r"\b", re.I)]
+    return [re.compile(r"(?<![\w.])(" + group + r")(?![\w])", re.I)]
+
+
+def figure_evidence(figure: str, text: str) -> Optional[str]:
+    """Return the source text around the figure if the figure actually appears, else None.
+
+    The surrounding window is returned as the operator-facing evidence: a bare number on a long
+    page is weak on its own, and the excerpt is the thing a human can check at a glance.
+    """
+    if not figure or not text:
+        return None
+    for pattern in figure_patterns(figure):
+        match = pattern.search(text)
+        if match:
+            start = max(0, match.start() - _EVIDENCE_WINDOW)
+            return text[start:match.end() + _EVIDENCE_WINDOW].strip()
+    return None
 
 
 def _plain_text(body: str) -> str:
@@ -105,24 +147,6 @@ def fetch_source(url: str, timeout: int = FETCH_TIMEOUT) -> Dict[str, str]:
     return {"status": "fetched", "http": str(status), "reason": "",
             "text": _plain_text(raw.decode("utf-8", "replace")),
             "sha256": hashlib.sha256(raw).hexdigest()}
-
-
-def figure_evidence(figure: str, text: str) -> Optional[str]:
-    """Return the source text around the figure if the figure actually appears, else None.
-
-    Matched on the numeric token, bounded so '62' cannot match '1620' or '41.69'. The surrounding
-    window is returned as the operator-facing evidence: a bare number on a long page is weak on
-    its own, and the excerpt is the thing a human can check in one glance.
-    """
-    if not figure or not text:
-        return None
-    for token in _NUMBER.findall(figure):
-        pattern = re.compile(r"(?<![\d.])" + re.escape(token) + r"(?![\d])")
-        match = pattern.search(text)
-        if match:
-            start = max(0, match.start() - _EVIDENCE_WINDOW)
-            return text[start:match.end() + _EVIDENCE_WINDOW].strip()
-    return None
 
 
 def verify_point(item: Dict[str, str], fetch: Callable[..., Dict[str, str]] = fetch_source) -> Dict[str, str]:
@@ -162,8 +186,11 @@ def verify_point(item: Dict[str, str], fetch: Callable[..., Dict[str, str]] = fe
     record["sha256"] = fetched.get("sha256", "")
     record["bytes"] = str(len(text))
     # Secondary signal, recorded but not decisive: does the claimed publisher appear at all?
-    record["source_name_on_page"] = str(
-        str(item.get("primary_source_name") or "").split("—")[0].strip().lower() in text.lower())
+    # Parentheticals are dropped first — "Paper Title (arXiv 2310.06770)" would otherwise never
+    # match the page text, and a permanent False is a signal nobody can act on.
+    claimed_name = re.sub(r"\([^)]*\)", " ", str(item.get("primary_source_name") or ""))
+    claimed_name = claimed_name.split("—")[0].strip().lower()
+    record["source_name_on_page"] = str(bool(claimed_name) and claimed_name in text.lower())
 
     evidence = figure_evidence(record["figure"], text)
     if not evidence:
@@ -261,10 +288,15 @@ def generate_dataset_schema(dossier: List[Dict[str, str]], title: str, descripti
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "isAccessibleForFree": True,
         "variableMeasured": variables,
+        # Creator is NOT known here: the destination site is chosen at push time from
+        # public.vertical_sites, and structured data that names a publisher the generator guessed
+        # is how an unresolvable "editorial-factory.com" ended up in shipped JSON-LD. The tokens
+        # are filled by the publisher (scripts/wp_draft.py); an unresolved one is dropped rather
+        # than published literally.
         "creator": {
             "@type": "Organization",
-            "name": "Editorial Factory Intelligence Unit",
-            "url": "https://editorial-factory.com"
+            "name": "{{PUBLISHER_NAME}}",
+            "url": "{{SITE_URL}}"
         }
     }
 
@@ -282,73 +314,95 @@ def get_claimed_dossier(vertical: str, query: str) -> List[Dict[str, str]]:
     q = (query or "").lower()
 
     if "agent" in v or "ai" in v or "agent" in q:
+        # Every point below was retrieved and matched against its own source by verify_dossier().
+        # Audit any time with:  python3 scripts/citation_hub_dossier.py --vertical agentic_ai
+        #
+        # The provenance fields state exactly what the source states. Where a source gives no
+        # publication date or no sample size, the field says so rather than carrying an invented
+        # one — inventing them is precisely how the previous revision of this file shipped a
+        # nonexistent organisation and made-up survey counts.
+        #
+        # field_reality is the founder/field audit from context/growth_os/ (founder-voice.md,
+        # customer-truth.md), as skills/citation_hub.md requires. It is an attributed opinion, not
+        # an external statistic, so it carries no figures of its own.
         return [
             BenchmarkDataPoint(
-                category="Reliability & Accuracy",
-                metric_name="Autonomous Task Completion (Coding & System Ops)",
-                headline_figure="41.6%",
-                vendor_claim="State of the art benchmark score on complex software tasks",
-                field_reality="Production telemetry reveals completion drops to 18% when unconstrained by rigid step budgets and sandboxed linters.",
-                primary_source_name="SWE-bench Verified",
+                category="Capability Ceilings",
+                metric_name="Frontier long-task completion horizon",
+                headline_figure="50 minutes",
+                vendor_claim="Frontier models hold a 50% success horizon measured in tens of minutes, so hour-scale autonomy is imminent",
+                field_reality="The metric times models on self-contained software tasks against a human baseline, so it reads capability rather than deployability. The failure our field notes record is not a model losing the thread; it is a loop with no deterministic verification gate before an external write.",
+                primary_source_name="METR — Measuring AI Ability to Complete Long Software Tasks (arXiv 2503.14499)",
+                primary_source_url="https://arxiv.org/abs/2503.14499",
+                publication_date="2025-03-18 (v1; last revised 2026-07-10, v4)",
+                sample_size="Frontier models on RE-Bench + HCAST + 66 novel shorter software tasks, with human-timed baselines",
+            ).to_dict(),
+            BenchmarkDataPoint(
+                category="Capability Ceilings",
+                metric_name="Time-horizon doubling period",
+                headline_figure="seven months",
+                vendor_claim="Frontier capability doubles roughly every seven months, which puts month-long tasks a few years out",
+                field_reality="The paper's own text calls the trend approximate and possibly accelerated, and ties the forecast to software tasks in a controlled setting. A doubling rate is a projection, not a delivery date; the enterprise constraint is the ownership tail wrapped around the model.",
+                primary_source_name="METR — Measuring AI Ability to Complete Long Software Tasks (arXiv 2503.14499)",
+                primary_source_url="https://arxiv.org/abs/2503.14499",
+                publication_date="2025-03-18 (v1; last revised 2026-07-10, v4)",
+                sample_size="Frontier models on RE-Bench + HCAST + 66 novel shorter software tasks, with human-timed baselines",
+            ).to_dict(),
+            BenchmarkDataPoint(
+                category="Benchmark Baselines",
+                metric_name="Resolve rate on real GitHub issues (2023 baseline)",
+                headline_figure="1.96%",
+                vendor_claim="The best-performing model of the day solved under 2% of real repository issues, so agents were unusable on real code",
+                field_reality="Read against the current board: the same family of task went from a single-digit ceiling to two thirds, and it still measures isolated issue resolution with the test suite as the oracle — not a multi-service change shipped under change control.",
+                primary_source_name="SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (arXiv 2310.06770)",
+                primary_source_url="https://arxiv.org/abs/2310.06770",
+                publication_date="2023-10-10 (v1; last revised 2024-11-11, v3)",
+                sample_size="2,294 software engineering problems drawn from real GitHub issues across 12 popular Python repositories",
+            ).to_dict(),
+            BenchmarkDataPoint(
+                category="Benchmark Baselines",
+                metric_name="Resolve rate on the current SWE-bench Verified board",
+                headline_figure="65%",
+                vendor_claim="Agents now clear two thirds of a human-validated real-world issue set, so coding autonomy has arrived",
+                field_reality="The number moved with the harness, not the model: the leaderboard attributes it to a 100-line agent. That is the founder note made concrete — the win came from a tight, deterministic scaffold, not a bigger frontier model.",
+                primary_source_name="SWE-bench Leaderboards (swebench.com)",
                 primary_source_url="https://www.swebench.com",
-                publication_date="2026-03",
-                sample_size="500 verified real-world GitHub issues",
+                publication_date="entry dated Jul 2025 on the leaderboard page (page itself undated)",
+                sample_size="SWE-bench Verified, the leaderboard's human-validated subset",
             ).to_dict(),
             BenchmarkDataPoint(
-                category="Unit Economics & Cost",
-                metric_name="Cost Multiplier vs Direct API Inference",
-                headline_figure="7.4x",
-                vendor_claim="Near-zero incremental cost for agentic wrapper loops",
-                field_reality="Multi-step reasoning, repeated tool calls, and recursive prompt re-hydration compound token bills rapidly.",
-                primary_source_name="FinOps Foundation AI Working Group",
+                category="Unit Economics",
+                metric_name="GPU cluster utilisation versus spend",
+                headline_figure="40%",
+                vendor_claim="Provisioning for peak demand is the safe default, and elastic scaling absorbs the slack",
+                field_reality="The Foundation's own framing: a cluster running at 40% utilisation is wasting more than half its spend. Utilisation is the metric most teams never collect, which is why a per-session cost ceiling and tool-call budget matter more than the invoice.",
+                primary_source_name="FinOps Foundation — FinOps for AI: Tools & Services Considerations",
                 primary_source_url="https://www.finops.org/wg/finops-for-ai-tools-services-considerations",
-                publication_date="2026-02",
-                sample_size="240 enterprise production workloads",
+                publication_date="undated working-group paper; retrieved 2026-10-01",
+                sample_size="working-group guidance paper, states no sample",
             ).to_dict(),
             BenchmarkDataPoint(
-                category="Production Failures",
-                metric_name="Primary Cause of Multi-Agent Failure",
-                headline_figure="62%",
-                vendor_claim="Model reasoning deficiency or lack of intelligence",
-                field_reality="Tool call timeouts, API contract drift, and unbudgeted infinite loops cause the majority of system outages.",
-                primary_source_name="Enterprise Systems Reliability Consortium",
-                primary_source_url="https://arxiv.org/abs/2402.01680",
-                publication_date="2026-01",
-                sample_size="1,200 agent deployment incidents",
+                category="Unit Economics",
+                metric_name="Share of teams managing AI spend",
+                headline_figure="98%",
+                vendor_claim="AI cost control is now standard practice, so the cost problem is largely solved",
+                field_reality="Tracking a bill is not bounding a loop. The same report shows the practice was rare two years ago, so this measures adoption of the discipline rather than maturity in it — our field notes are full of teams that can quote monthly spend but cannot cap one runaway session.",
+                primary_source_name="State of FinOps 2026 Report (FinOps Foundation)",
+                primary_source_url="https://data.finops.org",
+                publication_date="2026 report (6th annual survey since 2020)",
+                sample_size="1,192 respondents representing $83bn+ in annual cloud spend",
             ).to_dict(),
             BenchmarkDataPoint(
                 category="Enterprise Adoption",
-                metric_name="Enterprise Proof-of-Concept to Production Rate",
-                headline_figure="14%",
-                vendor_claim="85% of enterprises actively piloting agentic workflows",
-                field_reality="Only 1 in 7 pilots graduates to ungated production due to unbudgeted human-in-the-loop audit labor.",
-                primary_source_name="Gartner Enterprise AI Forecast",
-                primary_source_url="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026",
-                publication_date="2026-09",
-                sample_size="3,400 global IT leaders surveyed",
+                metric_name="Organisations reporting AI use",
+                headline_figure="78%",
+                vendor_claim="Enterprise AI adoption is near-universal, so the hard part is behind us",
+                field_reality="Use is not deployment. Adoption sits at the top of the funnel; what the field struggles with is the run-it-forever tail — approvals, schema drift, and the human verification step nobody budgeted for when the pilot ended.",
+                primary_source_name="The 2025 AI Index Report (Stanford HAI)",
+                primary_source_url="https://hai.stanford.edu/ai-index/2025-ai-index-report",
+                publication_date="2025 report, data year 2024 (page undated)",
+                sample_size="organisations reported in the AI Index business-usage section",
             ).to_dict(),
-            BenchmarkDataPoint(
-                category="Latency & User Experience",
-                metric_name="Average End-to-End Task Latency",
-                headline_figure="42.8s",
-                vendor_claim="Interactive multi-turn response in seconds",
-                field_reality="Multi-step chain-of-thought and parallel tool execution push P95 latency past 40 seconds, requiring asynchronous UI paradigms.",
-                primary_source_name="AgentOps Production Telemetry Report",
-                primary_source_url="https://data.finops.org",
-                publication_date="2026-04",
-                sample_size="15 million recorded trace steps",
-            ).to_dict(),
-            BenchmarkDataPoint(
-                category="Human Supervision",
-                metric_name="Human Review Overhead per Work Unit",
-                headline_figure="3.2 mins",
-                vendor_claim="Fully autonomous 'fire and forget' agent execution",
-                field_reality="Compliance and hallucination risk force senior staff to verify external system writes, reducing net labor savings by 35%.",
-                primary_source_name="Stanford Digital Economy Lab",
-                primary_source_url="https://digitaleconomy.stanford.edu",
-                publication_date="2026-05",
-                sample_size="85 engineering organizations",
-            ).to_dict()
         ]
 
     # NO FALLBACK — deliberately. An earlier revision returned a generic SaaS/cloud dossier here,

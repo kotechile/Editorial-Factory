@@ -92,6 +92,10 @@ check("does not match a number inside a longer one ('62' vs '1620')",
 check("does not match a longer number for a short figure ('7.4x' vs '17.4x')",
       chd.figure_evidence("7.4x", "17.4x uplift") is None)
 check("matches a decimal figure with its unit", chd.figure_evidence("42.8s", "p95 latency 42.8s") is not None)
+check("matches a word-number figure against its phrase",
+      chd.figure_evidence("seven months", "doubling approximately every seven months since 2019") is not None)
+check("a word-number figure does not match a stray number elsewhere",
+      chd.figure_evidence("seven months", "we ran 7 experiments across nine weeks") is None)
 check("empty figure never matches", chd.figure_evidence("", "anything") is None)
 
 print("\nper-point verification")
@@ -140,20 +144,42 @@ except chd.UnverifiedDossierError as exc:
 except Exception as exc:                                   # noqa: BLE001
     check("a vertical with no sourced data raises instead of substituting", False, repr(exc))
 
-print("\nthe hub builder refuses to draft on unverified data")
+print("\nthe hub builder gates on the dossier")
 try:
     import seo_machine
+
     kw = {"keyword": "agentic ai enterprise benchmarks", "search_volume": 4800,
           "search_intent": "commercial", "keyword_clusters": [], "paa_questions": []}
+    growth = {"founder_stances": [], "founder_quotes": [], "customer_anecdotes": []}
+
+    # Negative control: an unverifiable dossier must stop the draft at the gate.
+    unverifiable = [{
+        "metric_name": "Invented Metric", "headline_figure": "62%",
+        "vendor_claim": "invented", "field_reality": "invented",
+        "primary_source_name": "Enterprise Systems Reliability Consortium",
+        "primary_source_url": "https://arxiv.org/abs/2402.01680",
+        "publication_date": "2026-01", "sample_size": "1,200 agent deployment incidents",
+    }]
     try:
-        seo_machine.build_citation_hub_draft(kw, {}, [], {"founder_stances": [], "founder_quotes": [],
-                                                          "customer_anecdotes": []},
-                                             "agentic_ai", "ai_architect")
+        seo_machine.build_citation_hub_draft(kw, {}, [], growth, "agentic_ai", "ai_architect",
+                                             custom_dossier=unverifiable)
         check("build_citation_hub_draft refuses an unverified dossier", False, "it drafted a hub")
-    except chd.UnverifiedDossierError as exc:
-        check("build_citation_hub_draft refuses an unverified dossier", "Pre-flight data verification failed" in str(exc))
+    except chd.UnverifiedDossierError:
+        check("build_citation_hub_draft refuses an unverified dossier", True)
+
+    # And the shipped, verified dossier drafts normally, carrying the real sourced figures.
+    slug, md = seo_machine.build_citation_hub_draft(kw, {}, [], growth, "agentic_ai", "ai_architect")
+    check("the verified dossier drafts a hub end to end", bool(md) and bool(slug))
+    check("...the hub carries the sourced figures",
+          all(f in md for f in ("50 minutes", "seven months", "1.96%", "65%", "40%", "98%", "78%")),
+          [f for f in ("50 minutes", "seven months", "1.96%", "65%", "40%", "98%", "78%") if f not in md])
+    check("...and no trace of the old fabricated sources",
+          not any(x in md for x in ("Enterprise Systems Reliability Consortium", "AgentOps",
+                                    "Ponemon", "editorial-factory.com")))
+    check("...the schema carries destination placeholders, not a guessed publisher",
+          "{{SITE_URL}}" in md and "{{PUBLISHER_NAME}}" in md)
 except ImportError as exc:
-    check("build_citation_hub_draft refuses an unverified dossier", False, f"could not import seo_machine: {exc}")
+    check("the hub builder gates on the dossier", False, f"could not import seo_machine: {exc}")
 
 if "--no-network" not in sys.argv:
     print("\nlive audit — the module's own claimed dossiers, against their real sources")
@@ -165,10 +191,23 @@ if "--no-network" not in sys.argv:
             print(f"      [{p['status']:13s}] {p['metric_name'][:46]:46s} {p.get('http', ''):>5}  {p['url'][:52]}")
             if p.get("reason"):
                 print(f"                      {p['reason'][:104]}")
-        check("the shipped claimed dossiers do NOT pass the gate (that is the point of the change)",
-              not report["ok"], "they passed — the gate is still a rubber stamp")
-        check("...every failing point names a concrete reason",
-              all(p.get("reason") for p in report["points"] if p["status"] != "verified"))
+        check("the shipped dossier PASSES the gate (shipped data must be verifiable)",
+              report["ok"], report["errors"])
+        check("...every point carries evidence, a body hash and an HTTP 200",
+              all(p.get("evidence") and p.get("sha256") and p.get("http") == "200" for p in report["points"]))
+        # Negative control: the exact class of claim this gate was built to reject — the invented
+        # organisation and sample size that used to ship in this very file.
+        fabricated = [{
+            "metric_name": "Primary Cause of Multi-Agent Failure",
+            "headline_figure": "62%", "vendor_claim": "model reasoning deficiency",
+            "field_reality": "invented",
+            "primary_source_name": "Enterprise Systems Reliability Consortium",
+            "primary_source_url": "https://arxiv.org/abs/2402.01680",
+            "publication_date": "2026-01", "sample_size": "1,200 agent deployment incidents",
+        }]
+        ok_fabricated, errors_fabricated, _ = chd.verify_dossier(fabricated, min_points=1)
+        check("the old fabricated claim still fails against its real source",
+              not ok_fabricated, errors_fabricated)
     except chd.UnverifiedDossierError as exc:
         check("the shipped claimed dossiers do NOT pass the gate", False, f"unexpected: {exc}")
 
