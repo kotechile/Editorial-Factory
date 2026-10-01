@@ -23,8 +23,8 @@ alter table public.vertical_sites
 
 -- ── giniloh.com ──────────────────────────────────────────────────────────────
 -- Categories: 7 AI Stack & Tool TCO | 6 Artificial Intelligence & Future of Work |
---             9 Autonomous & Agentic Workflows | 8 Career & AI Resilience |
---             2 Major Purchases & Assets | 3 Mental Models & Strategy | 4 Money & Wealth
+--             9 Autonomous & Agentic Workflows | 8 Career & AI Resilience | 10 Supply Chain &
+--             Operations | 2 Major Purchases & Assets | 3 Mental Models & Strategy | 4 Money & Wealth
 --
 -- EVIDENCE: the live build-vs-buy post (enterprisebuildvsbuy-the-250k-ai-upkeep-tax) is filed
 -- under #7, and #7/#2/#3/#4 are the buckets the manual flow actually used (6 posts each).
@@ -51,10 +51,11 @@ update public.vertical_sites set wp_category_id = 3, updated_at = now()
 -- INFERRED — personal finance decisions
 update public.vertical_sites set wp_category_id = 4, updated_at = now()
   where vertical_id in ('expat_cross_border_relocation', 'personal_microeconomics_tinkering_tax');
--- INFERRED, WEAKEST — giniloh has no operations category, and the manual flow never published one
--- of these here. #3 "Mental Models & Strategy" is the closest bucket; if supply chain deserves its
--- own category, create it in WordPress and point these seven at it in one UPDATE.
-update public.vertical_sites set wp_category_id = 3, updated_at = now()
+-- Operations / supply chain — category #10 "Supply Chain & Operations", created in WordPress for
+-- these seven (the manual flow never published one here, so #3 was the closest bucket until now).
+-- Created via the REST API on cms.giniloh.com (slug supply-chain-operations); scripts/check_
+-- vertical_sites.py fails if a routed vertical has no category, and the sweep names this file.
+update public.vertical_sites set wp_category_id = 10, updated_at = now()
   where vertical_id in ('supply_chain', 'meio_working_capital_tco',
                         'control_tower_exception_orchestration', 'warehouse_automation_robotics_capex',
                         'demand_sensing_advanced_sop', 'last_mile_routing_fleet_carbon',
