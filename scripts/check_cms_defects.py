@@ -74,7 +74,7 @@ def auth_for(site_domain: str) -> str:
 def fetch_posts(site_domain: str, base: str) -> list[dict]:
     request = urllib.request.Request(
         f"{base}/wp-json/wp/v2/posts?status=any&per_page=100&context=edit"
-        f"&_fields=id,slug,status,title,content,link",
+        f"&_fields=id,slug,status,title,content,link,categories,featured_media",
         headers={"Authorization": auth_for(site_domain), "Accept": "application/json"})
     try:
         with urllib.request.urlopen(request, timeout=60) as response:
@@ -85,6 +85,21 @@ def fetch_posts(site_domain: str, base: str) -> list[dict]:
         sys.exit(f"FAIL: could not reach {base}: {exc}")
 
 
+def uncategorized_id(site_domain: str, base: str) -> int | None:
+    """WordPress's default category id, so a post filed there can be called out."""
+    request = urllib.request.Request(
+        f"{base}/wp-json/wp/v2/categories?per_page=100&_fields=id,slug",
+        headers={"Authorization": auth_for(site_domain), "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            for category in json.loads(response.read().decode("utf-8", "replace") or "[]"):
+                if category.get("slug") == "uncategorized":
+                    return int(category["id"])
+    except Exception:                                          # noqa: BLE001 - best effort
+        pass
+    return None
+
+
 def check() -> dict:
     posts: dict[str, list[dict]] = {}
     defects: list[str] = []
@@ -92,6 +107,7 @@ def check() -> dict:
     for site_domain, base in SITES.items():
         rows = fetch_posts(site_domain, base)
         posts[site_domain] = rows
+        default_category = uncategorized_id(site_domain, base)
         for post in rows:
             title = html.unescape(re.sub(r"<[^>]+>", "", post["title"]["rendered"])).strip()
             if VERTICAL_ID.match(title):
@@ -100,6 +116,16 @@ def check() -> dict:
             if VERTICAL_ID.match(post["slug"]):
                 defects.append(f"vertical id in a slug — {site_domain} #{post['id']} "
                                f"'{post['slug']}' ({post['link']})")
+            # Published only: a live post filed under the default category never appears on a
+            # category page, and every published post on both sites otherwise carries one.
+            if post["status"] == "publish":
+                categories = post.get("categories") or []
+                if not categories:
+                    defects.append(f"published post with NO category — {site_domain} #{post['id']} "
+                                   f"'{post['slug']}' ({post['link']})")
+                elif default_category and categories == [default_category]:
+                    defects.append(f"published post left in Uncategorized — {site_domain} #{post['id']} "
+                                   f"'{post['slug']}' ({post['link']})")
 
     # Same slug on one site twice (WP allows a draft and a published post to share a slug).
     for site_domain, rows in posts.items():

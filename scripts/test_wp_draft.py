@@ -77,6 +77,12 @@ class StubWP(BaseHTTPRequestHandler):
         if not self._authed():
             return
         StubWP.requests.append(("GET", self.path, {}))
+        if self.path.startswith("/wp-json/wp/v2/categories/"):
+            cid = self.path.split("/wp-json/wp/v2/categories/")[1].split("?")[0]
+            catalog = {"9": "Autonomous &amp; Agentic Workflows", "7": "AI Stack &amp; Tool TCO"}
+            if cid in catalog:
+                return self._send(200, {"id": int(cid), "name": catalog[cid]})
+            return self._send(404, {"code": "rest_term_invalid", "message": "Term does not exist."})
         if self.path.startswith("/wp-json/wp/v2/posts?"):
             slug = self.path.split("slug=")[1].split("&")[0]
             found = [p for p in StubWP.posts.values() if p["slug"] == slug]
@@ -115,7 +121,8 @@ def start_stub():
 # ─────────────────────────────────────────────────────────────────────────────
 
 SITE = {"vertical_id": "supplier_risk_reshoring_decision", "cms_base_url": "https://cms.giniloh.com",
-        "site_domain": "giniloh.com", "frontend_url": "https://giniloh.com", "active": True}
+        "site_domain": "giniloh.com", "frontend_url": "https://giniloh.com", "active": True,
+        "wp_category_id": 9}
 
 MARKDOWN = """---
 title: "Reshoring Didn't Kill Tariff Risk"
@@ -274,6 +281,17 @@ check("no placeholder token survives once values are supplied", "{{" not in json
 check("the generator no longer hard-codes the internal approval handle as a byline",
       "Simon" not in json.dumps(wd.retarget_publisher(placeholder_node, SITE, None)))
 
+print("\ncategory routing")
+payload_with_cat, notes_with_cat = wd.build_payload(ROW, SITE)
+check("a routed wp_category_id is sent as a WordPress category",
+      payload_with_cat.get("categories") == [9], payload_with_cat.get("categories"))
+check("...and reported in the notes", any("category 9" in n for n in notes_with_cat), notes_with_cat)
+no_cat_site = {k: v for k, v in SITE.items() if k != "wp_category_id"}
+payload_no_cat, notes_no_cat = wd.build_payload(ROW, no_cat_site)
+check("no routed category => no categories key, so WordPress's default applies",
+      "categories" not in payload_no_cat)
+check("...and the operator is told to set one", any("wp_category_id" in n for n in notes_no_cat), notes_no_cat)
+
 print("\nrouting — fails closed")
 db_no_route = FakeDB(site=None)
 raises("unknown vertical refuses to push", lambda: wd.push_one(ROW, db_no_route, dry_run=True),
@@ -339,6 +357,10 @@ try:
     raises("a bad password surfaces an explicit error (no silent skip)",
            lambda: unauth.find_by_slug("x"), "401")
     StubWP.expected_auth = ""
+    check("a category id valid on the destination resolves to its name",
+          "Agentic" in wp.category_name(9))
+    raises("a category id that does NOT exist on the site fails loudly",
+           lambda: wp.category_name(999), "does not exist on this site")
     src = pathlib.Path(wd.__file__).read_text()
     declared = set(re.findall(r'add_argument\("(--[a-z-]+)"', src))
     check("no --status/--publish flag exists (publishing stays a human step)",

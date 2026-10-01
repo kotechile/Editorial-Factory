@@ -157,10 +157,14 @@ class Supabase:
         return rows
 
     def site_for(self, vertical: str) -> dict:
-        """Resolve the destination CMS for a vertical. Fails closed — never guesses a site."""
+        """Resolve the destination CMS for a vertical. Fails closed — never guesses a site.
+
+        Selects `*` rather than a column list so an added column (wp_category_id) is picked up the
+        moment the migration is applied — and so a push does not break on a database that has not
+        been migrated yet.
+        """
         _, rows = self._call(
-            "GET", f"{SITES_TABLE}?select=vertical_id,cms_base_url,site_domain,frontend_url,active"
-                       f"&vertical_id=eq.{urllib.parse.quote(vertical)}")
+            "GET", f"{SITES_TABLE}?select=*&vertical_id=eq.{urllib.parse.quote(vertical)}")
         rows = rows or []
         if not rows:
             raise RuntimeError(
@@ -474,6 +478,17 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
         "comment_status": "closed",
         "ping_status": "closed",
     }
+    # Category. Every published post on both sites carries one, so a draft that lands in
+    # WordPress's default (Uncategorized) leaves work for the operator and, if missed, a post that
+    # never appears on a category page. The id is per-site, so it is routed per vertical in
+    # public.vertical_sites (migrations/0004) — never guessed from the vertical name here.
+    category_id = site.get("wp_category_id")
+    if category_id:
+        payload["categories"] = [int(category_id)]
+        notes.append(f"category {int(category_id)} (from {SITES_TABLE}.wp_category_id)")
+    else:
+        notes.append(f"no {SITES_TABLE}.wp_category_id for this vertical — WordPress will file the "
+                     f"draft under its default category; set one before publishing")
     if not payload["slug"]:
         raise RuntimeError("article has no metadata.slug — it is the idempotency key")
     return payload, notes
@@ -522,6 +537,21 @@ class WordPress:
             raise
         return (posts or [None])[0]
 
+    def category_name(self, category_id: int) -> str:
+        """The category's name on THIS site, or an explicit failure.
+
+        Category ids are per-site — giniloh #4 is "Money & Wealth", wellroost #4 is "Energy &
+        Efficiency" — so a value routed for one site and pushed to the other would silently misfile
+        the post. Validating here turns that into a loud error instead.
+        """
+        try:
+            _, category = self._call("GET", f"categories/{int(category_id)}?_fields=id,name")
+        except RuntimeError as exc:
+            raise RuntimeError(
+                f"{self.base}: category {category_id} does not exist on this site — check "
+                f"public.vertical_sites.wp_category_id for the vertical's own domain ({exc})") from None
+        return str((category or {}).get("name") or "")
+
     def upsert(self, payload: dict) -> tuple[dict, str]:
         existing = self.find_by_slug(payload["slug"])
         if existing:
@@ -559,6 +589,10 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
 
     user, password = credentials_for(site["site_domain"])
     wp = (wp_factory or (lambda base, u, p: WordPress(base, u, p)))(site["cms_base_url"], user, password)
+    if payload.get("categories"):
+        category_id = payload["categories"][0]
+        print(f"  category: {category_id} — {html.unescape(wp.category_name(category_id))} "
+              f"(validated on {site['site_domain']})")
     post, action = wp.upsert(payload)
     print(f"  {action}: post {post.get('id')} ({post.get('status')}) {post.get('link')}")
 
