@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T23:55:58Z",
+  "updated_at": "2026-10-01T00:20:18Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -140,6 +140,20 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "2026-10-01_planner-as-router-plan-time-routing",
+      "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
+      "url": "https://pressflow.aichieve.net/published/2026-10-01_planner-as-router-plan-time-routing.md",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The Router Moves Upfront",
+        "A Fixed Backup Plan"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-01"
     }
   ]
 }
