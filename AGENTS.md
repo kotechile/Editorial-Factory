@@ -71,13 +71,17 @@ gates, and every non-deterministic step is gated on retrievable evidence.
 11. **Art-directed featured images.** Every article is illustrated in the same pass that persists it
     (`scripts/illustration_creator.py`, `skills/illustration_director.md`): a frontier art director
     reads the artifact's own text, picks a treatment from the catalogue — macro, cinematic still,
-    clay 3D render, technical isometric, minimal geometry, paper collage, … — and generates one
-    16:9 header on kie.ai (Flux-2 Pro for the physical and photographic, Nano Banana Pro for the
+    clay 3D render, technical isometric, modular component assembly, paper collage, … — and generates
+    one 16:9 header on kie.ai (Flux-2 Pro for the physical and photographic, Nano Banana Pro for the
     constructed), with the alt text, caption and credit the CMS needs. The treatment is a decision
     per article, never a preset: it must differ from the last four illustrations, it must quote a
     verbatim cue from the article it was read from, and no image may contain legible text, a real
-    brand's mark or a stock-photo cliché. Idempotent by the article's own digest, so a re-run never
-    re-spends image credits on an unchanged text.
+    brand's mark or a stock-photo cliché. **A shape is not a subject**: an abstract story has to be
+    carried by a named physical mechanism (a modular bay, an unlatched inspection gate, a rack of
+    blades), and a prompt whose subject is bare geometry is refused in code — the desk's own first
+    ten headers included two agentic-AI articles illustrated as a rectangle with a colour band and a
+    block resting on a wedge. Idempotent by the article's own digest, so a re-run never re-spends
+    image credits on an unchanged text.
 12. **Internal links are generated from the live corpus, never invented.** The `<!-- internal-links
     -->` block is filled in the persistence pass (`scripts/internal_links.py`, hooked into
     `scripts/publish.py` and `scripts/wp_draft.py`) from `context/internal_links.json` — the pages

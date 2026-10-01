@@ -87,11 +87,14 @@ PROMPTS = {
     "editorial_macro": "Extreme close-up macro photograph of translucent plastic resin pellets on a "
                        "rough surfaced steel plate, 100mm macro lens, one razor-sharp focal plane, "
                        "shallow depth of field, soft directional daylight, hero object off-centre.",
-    "clay_render": "Matte clay 3D render of three simplified stacked boxes in a clear physical "
-                   "arrangement, soft-body forms, studio render on a neutral seamless backdrop, "
-                   "single soft key light with gentle contact shadows, matte muted palette.",
-    "minimal_geometry": "Minimalist flat composition, one large geometric form in a muted two-colour "
-                        "palette, hard edges, one deliberate asymmetry, generous negative space.",
+    "clay_render": "Matte clay 3D render of a small modular assembly: three machined component "
+                   "housings with one bay cover unlatched and a connector half-inserted, studio "
+                   "render on a neutral seamless backdrop, single soft key light with gentle "
+                   "contact shadows, matte muted palette.",
+    "component_assembly": "Minimalist studio composition of a modular component assembly: one rack "
+                          "rail carrying two module bays, an inspection latch left open on the "
+                          "lower bay, hard clean edges, generous negative space, matte muted "
+                          "palette of slate grey and ochre.",
 }
 
 
@@ -195,6 +198,21 @@ check("every treatment carries prompt vocabulary and a valid model",
       all(s.keywords and s.model in ic.MODELS for s in ic.STYLES.values()))
 check("every treatment's vocabulary is lowercase (the match is case-folded)",
       all(k == k.lower() for s in ic.STYLES.values() for k in s.keywords))
+check("no treatment's own vocabulary invites bare geometry",
+      not any(ic._PRIMITIVE_RE.search(k) for s in ic.STYLES.values() for k in s.keywords),
+      str([k for s in ic.STYLES.values() for k in s.keywords if ic._PRIMITIVE_RE.search(k)]))
+check("the constructed treatments' vocabulary is mechanism vocabulary",
+      all(ic._MECHANISM_RE.search(k) for k in ic.STYLES["component_assembly"].keywords),
+      str(ic.STYLES["component_assembly"].keywords))
+check("a retired treatment id names its replacement",
+      bool(ic.RETIRED_STYLES) and all(v in ic.STYLES for v in ic.RETIRED_STYLES.values()),
+      str(ic.RETIRED_STYLES))
+MECHANISM_WORDS = ("module", "modules", "assembly", "assemblies", "latch", "latches", "switch",
+                   "switches", "gearbox", "gearboxes", "truss", "trusses", "rack", "brackets",
+                   "inspection gate", "relay", "connector")
+check("the mechanism vocabulary matches the singular and the plural of a real part",
+      all(ic._MECHANISM_RE.search(w) for w in MECHANISM_WORDS),
+      str([w for w in MECHANISM_WORDS if not ic._MECHANISM_RE.search(w)]))
 
 print("\nwhat the image is a reading of")
 check("the core text carries the thesis and the lead",
@@ -260,6 +278,47 @@ refuse({"depicts_real_brand": True}, "depicts a real company")
 refuse({"prompt": "Macro close-up photograph of a light bulb glowing above a handshake, 100mm macro "
                   "lens, shallow depth of field, soft daylight."}, "stock-photo cliché")
 
+print("\ndomain grounding — a shape is not a subject")
+# The two headers this rule was written from, taken from the desk's own sidecars: two agentic-AI
+# articles illustrated as "a rectangle with a colour band" and "a block resting on a wedge".
+geometry_message = raises(
+    "refused: a prompt whose subject is bare geometry (a rectangle with colour bands)",
+    lambda: ic.validate_brief(json.loads(brief_json(
+        style_id="clay_render", model="nanobanana",
+        prompt="Matte clay 3D render of one large geometric rectangle divided horizontally into "
+               "distinct bands of colour, hard edges, generous negative space, matte muted flat "
+               "palette.")),
+        ARTICLE, allowed=ic.allowed_styles([])), "bare geometry")
+check("...and grounding is the only complaint (the treatment vocabulary is satisfied)",
+      "vocabulary" not in geometry_message, geometry_message[:200])
+raises("refused: a clay render of 'simplified forms' with no mechanism in the frame",
+       lambda: ic.validate_brief(json.loads(brief_json(
+           style_id="clay_render", model="nanobanana",
+           prompt="Matte clay 3D render of three or four simplified geometric forms stacked in a "
+                  "clear physical arrangement, studio render on a neutral seamless backdrop, matte "
+                  "muted palette, single soft key light.")),
+           ARTICLE, allowed=ic.allowed_styles([])), "bare geometry")
+check("...but a primitive shape carried by a named mechanism is commissionable",
+      ic.validate_brief(json.loads(brief_json(
+          style_id="component_assembly", model="nanobanana",
+          prompt="Minimalist studio composition of a modular rack holding two rectangular module "
+                 "bays, an inspection latch left open, generous negative space, hard clean edges, "
+                 "matte muted palette.")),
+      ARTICLE, allowed=ic.allowed_styles([])).style_id == "component_assembly")
+# A compositional phrase is not shape-talk: "clean geometry" in a photograph describes how the shot
+# is framed, and refusing it would send a legitimate architectural brief back for no reason.
+check("...and a photographic prompt's compositional 'clean geometry' is not mistaken for the subject",
+      ic.validate_brief(json.loads(brief_json(
+          style_id="architectural_night", model="flux",
+          prompt="Architectural photograph of a modern industrial control building at blue hour, lit "
+                 "windows as the only warm light, long exposure with no moving figures, deep blue "
+                 "ambient light, clean geometry, small human scale implied by a doorway.")),
+      ARTICLE, allowed=ic.allowed_styles([])).style_id == "architectural_night")
+raises("refused: a retired treatment, naming the one that replaced it",
+       lambda: ic.validate_brief(json.loads(brief_json(style_id="minimal_geometry", model="nanobanana")),
+                                 ARTICLE, allowed=ic.allowed_styles([])), "was retired")
+refuse({"subject": ""}, "what is in the frame")
+
 print("\nthe art director — refusals are fed back, then exhausted")
 calls: list = []
 bad_cue = json.dumps({**json.loads(brief_json()), "cue": "a phrase not in the text"})
@@ -278,11 +337,13 @@ check("...naming the last refusal", "unknown treatment" in exhausted, exhausted[
 
 seen: list = []
 ic.direct(ARTICLE, history=["editorial_macro", "clay_render"],
-          llm=stub_llm(brief_json(style_id="minimal_geometry", model="nanobanana"), calls=seen))
+          llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana"), calls=seen))
 check("the director is told which treatments are already used",
       "editorial_macro, clay_render" in seen[0] and "MUST choose one of" in seen[0])
 check("...and a repeat inside the window is not in the allowed set",
       "editorial_macro" not in seen[0].split("MUST choose one of: ")[1].split("\n")[0])
+check("...and the commission carries the domain-grounding mandate",
+      "DOMAIN GROUNDING" in seen[0] and "bare geometry" in seen[0])
 
 print("\nrotation")
 history = ["editorial_macro", "cinematic_still", "clay_render", "document_flatlay", "paper_collage"]
@@ -292,6 +353,28 @@ check("the last four treatments are withheld", "editorial_macro" not in allowed
 check("...but the fifth-from-last is available again", "paper_collage" in allowed)
 check("a catalogue smaller than the window still yields a choice",
       len(ic.allowed_styles(list(ic.STYLES))) >= 3)
+check("four withheld treatments never empty the desk (the window is a style rule, not a corner)",
+      all(len(ic.allowed_styles(list(s))) >= 6 for s in
+          __import__("itertools").permutations(ic.STYLES, ic.HISTORY_WINDOW)),
+      str([len(ic.allowed_styles(list(s))) for s in
+           __import__("itertools").permutations(ic.STYLES, ic.HISTORY_WINDOW)]))
+constructed = [s for s, v in ic.STYLES.items() if v.model == "nanobanana"]
+check("the catalogue's constructed family is the small one (this is what can be emptied)",
+      len(constructed) <= ic.HISTORY_WINDOW, str(constructed))
+emptied = list(constructed) + ["editorial_macro"] * 2
+check("...and a window that would leave no constructed treatment re-admits one",
+      any(ic.STYLES[s].model == "nanobanana" for s in ic.allowed_styles(emptied)),
+      str(ic.allowed_styles(emptied)))
+readmitted = [s for s in ic.allowed_styles(constructed)
+              if s in set(constructed[:ic.HISTORY_WINDOW])]
+check("...re-admitting the one closest to leaving the window, never the newest",
+      readmitted == [constructed[-1]], str(readmitted))
+readmit_prompt = ic.director_prompt(ARTICLE, history=list(constructed), allowed=ic.allowed_styles(list(constructed)))
+check("...and the director is told that re-admission is not an invitation to repeat",
+      "re-admitted" in readmit_prompt, readmit_prompt[:200])
+check("...while an ordinary window says nothing about re-admission",
+      "re-admitted" not in ic.director_prompt(ARTICLE, history=["editorial_macro"],
+                                              allowed=ic.allowed_styles(["editorial_macro"])))
 
 with tempfile.TemporaryDirectory() as tmp:
     ledger = pathlib.Path(tmp) / "illustration_log.md"
@@ -301,7 +384,11 @@ with tempfile.TemporaryDirectory() as tmp:
                       "| 2026-09-30 | `b` | v | `minimal_geometry` | nanobanana | 16:9 | 1K | 18 | `y` |\n",
                       encoding="utf-8")
     check("the ledger is read newest-first",
-          ic.style_history(ledger) == ["minimal_geometry", "clay_render"], str(ic.style_history(ledger)))
+          ic.style_history(ledger) == ["component_assembly", "clay_render"], str(ic.style_history(ledger)))
+    check("...and a row written under a retired id counts as the treatment that replaced it",
+          ic.canonical_style_id("minimal_geometry") == "component_assembly"
+          and "minimal_geometry" not in ic.style_history(ledger),
+          str(ic.style_history(ledger)))
     check("a ledger that does not exist yet is simply empty, not an error",
           ic.style_history(pathlib.Path(tmp) / "nope.md") == [])
 
@@ -475,18 +562,18 @@ with tempfile.TemporaryDirectory() as tmp:
 raises("a pinned treatment the director will not follow fails loudly",
        lambda: ic.validate_brief(json.loads(brief_json(style_id="clay_render", model="nanobanana")),
                                  ARTICLE, allowed=ic.allowed_styles([]),
-                                 pinned_style="minimal_geometry"),
+                                 pinned_style="component_assembly"),
        "pinned treatment")
 
 with tempfile.TemporaryDirectory() as tmp:
     root = pathlib.Path(tmp)
     _, _, pinned_meta = ic.ensure_illustration(
-        ARTICLE, root=root, client=client(), pinned_style="minimal_geometry",
-        llm=stub_llm(brief_json(style_id="minimal_geometry", model="nanobanana")))
+        ARTICLE, root=root, client=client(), pinned_style="component_assembly",
+        llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana")))
     pinned_sidecar = ic.read_sidecar("reshoring-moved-the-tariff-upstream", root)
     check("...and a followed pin is recorded as a pin, not as the director's own choice",
-          pinned_sidecar["pinned"] == {"style": "minimal_geometry"}
-          and pinned_meta["style"] == "minimal_geometry", json.dumps(pinned_sidecar["pinned"]))
+          pinned_sidecar["pinned"] == {"style": "component_assembly"}
+          and pinned_meta["style"] == "component_assembly", json.dumps(pinned_sidecar["pinned"]))
 
 print("\nconsistency check (metadata only — the binary may live only on the host)")
 with tempfile.TemporaryDirectory() as tmp:

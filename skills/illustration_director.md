@@ -21,19 +21,37 @@ every brief that names a treatment without the vocabulary of that treatment is r
 | `editorial_macro` | the story turns on one physical thing — a part, a material, a component, a document — and what it costs, contains or crosses a border is the news | flux-2 Pro |
 | `cinematic_still` | the article holds one decisive moment or place (a yard at dawn, a control room, a shutdown line) | flux-2 Pro |
 | `document_flatlay` | the story is regulatory or contractual — a filing, a mandate, a rate notice, a purchase order | flux-2 Pro |
-| `clay_render` | the news is structural and abstract — a stack reordered, a layer added, a flow rerouted | Nano Banana Pro |
+| `clay_render` | the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and the idea is stated as a small assembly of recognisable parts | Nano Banana Pro |
 | `technical_isometric` | the article explains how a system or process actually works (money flows, supply chains, an agent assembly line) | Nano Banana Pro |
-| `minimal_geometry` | the story is a single number, rule or shift, and restraint is the point | Nano Banana Pro |
+| `component_assembly` | the story is a single number, rule, gate or shift and there is no scene to photograph — the frame is a real assembly (a modular bay, an unlatched inspection gate, a rack of blades) | Nano Banana Pro |
 | `paper_collage` | the piece is a synthesis of two colliding developments and the collision is the story | Nano Banana Pro |
 | `long_lens_industry` | scale is the story — a port, a refinery, a data-centre hall, a yard full of cranes | flux-2 Pro |
 | `studio_object` | the story is a product, device, price or market for a thing the reader could buy | flux-2 Pro |
 | `architectural_night` | the change happens after hours — automation displacing shifts, capacity running while people sleep | flux-2 Pro |
 
+`minimal_geometry` (bare shapes, "no objects") was **retired**: it was the only entry whose `when`
+fitted an abstract software story *and* the only one that forbade objects, so it collected exactly the
+headers a reader cannot connect to the article. `component_assembly` replaces it and `RETIRED_STYLES`
+maps the old id, so the ledger's old rows still count in the anti-repeat window.
+
 **Model routing is a fact about the models, not a preference.** flux-2 Pro is photographic and
-physical; Nano Banana Pro is better at constructed scenes (renders, cutaways, flat geometry,
-collage). A brief that deviates from its treatment's catalogue model must state a
+physical (macro, cinematic still, flat-lay, telephoto industry, studio object, night architecture);
+Nano Banana Pro is better at constructed scenes (clay render, isometric cutaway, component assembly,
+paper collage). A brief that deviates from its treatment's catalogue model must state a
 `model_override_reason` (≥20 chars) — a silent substitution is how a "photograph" brief lands on an
 illustration model and comes back looking like neither.
+
+**A shape is not a subject.** For an abstract story the director must reach for a recognisable
+physical engineering analogy (modular server components, an unlatched inspection gate, a relay switch,
+a linkage, an interlocking connector, a workstation terminal) and name it in the prompt. A prompt whose
+subject is bare geometry — a cube, a sphere, a wedge, a slab, "simplified forms" — is refused in code
+(`_PRIMITIVE_RE` + `_MECHANISM_RE`) and answered again. The evidence is in the ledger: two agentic-AI
+articles were illustrated as "a rectangle with a colour band" and "a block resting on a wedge".
+
+**When to use which model, in practice**: anchor the article by a real place or object where you can
+(`cinematic_still`, `editorial_macro`, `studio_object`, `long_lens_industry` → Flux-2 Pro); use
+`clay_render`, `technical_isometric`, `component_assembly` and `paper_collage` (→ Nano Banana Pro) for
+process diagrams and conceptual models — with a mechanism in the frame, never a bare shape.
 
 ## 3. Non-negotiable direction rules (enforced in code, not just in the prompt)
 1. **One concrete noun from the story.** The brief must carry a `cue`: a phrase of ≤10 words copied
@@ -49,13 +67,23 @@ illustration model and comes back looking like neither.
 5. **The treatment must be real in the prompt**: at least one word of the chosen treatment's
    vocabulary (e.g. macro → "macro / close-up / depth of field") must appear, or the brief is
    refused. A "macro" brief that is really a wide shot is a different image wearing the label.
-6. **The treatment must not repeat.** The last four illustrations' treatments are withheld from the
+6. **A shape is not a subject.** A prompt may mention a primitive shape only when it also names a
+   recognisable mechanism ("a modular rack with two module bays", "an unlatched inspection gate"); a
+   prompt whose subject is bare geometry — a cube, sphere, wedge, slab, "simplified forms" — is
+   refused with that reason and answered again (`_PRIMITIVE_RE` vs `_MECHANISM_RE`). A compositional
+   phrase ("clean geometry" in an architectural shot) is not shape-talk and must keep passing.
+7. **The treatment must not repeat.** The last four illustrations' treatments are withheld from the
    allowed set, and the director may not answer with one of them. Rows belonging to the *same*
    article are excluded from that window: a rewritten article reusing its own treatment is not a
-   repetition.
-7. **Alt text is a deliverable**: ≤125 chars, in English, describing the subject, never starting
+   repetition. The window is not narrowed below four — at this catalogue size it can never empty the
+   desk, and a shorter window would re-use a treatment sooner. What *can* be emptied is a **family**
+   (the two catalogue models: 6 flux treatments, 4 nano-banana ones — three of the four constructed
+   treatments were used back to back in the first ten illustrations). When the window would leave a
+   family with no treatment at all, its oldest blocked member is re-admitted and the director is told
+   it is a re-admission, not an invitation to repeat.
+8. **Alt text is a deliverable**: ≤125 chars, in English, describing the subject, never starting
    "image of"/"photo of". The caption is one quotable sentence. Both are checked by length and shape.
-8. **Featured-header shape**: `16:9` or `3:2`, 1K by default, 2K only where fine physical detail is
+9. **Featured-header shape**: `16:9` or `3:2`, 1K by default, 2K only where fine physical detail is
    the point.
 
 Three refused briefs in a row raise `BriefError` (with the last refusal quoted) rather than being

@@ -81,18 +81,20 @@ Every article gets one 16:9 header image, and it is a **decision about that stor
 - A frontier **art director** (`scripts/illustration_creator.py`, running on Gemini 3.1 Pro) reads the
   article's own title, thesis, lead, section headings, numbers section and source list, and picks a
   **treatment** from a catalogue of ten: editorial macro, cinematic still, document flat-lay, matte 3D
-  render, technical isometric cutaway, minimal geometry, paper collage, compressed telephoto industry,
-  studio product shot, lit architecture at dusk (`skills/illustration_director.md`).
+  render, technical isometric cutaway, modular component assembly, paper collage, compressed telephoto
+  industry, studio product shot, lit architecture at dusk (`skills/illustration_director.md`).
 - It then generates the image on **kie.ai** — **Flux-2 Pro** for anything physical or photographic,
-  **Nano Banana Pro** for anything constructed (a render, a cutaway, flat geometry, a collage) — and
-  writes the metadata the CMS needs: **alt text** (≤125 chars, for screen readers), a **caption**, and
-  a **credit**.
+  **Nano Banana Pro** for anything constructed (a render, a cutaway, a component assembly, a collage) —
+  and writes the metadata the CMS needs: **alt text** (≤125 chars, for screen readers), a **caption**,
+  and a **credit**.
 - The direction is anchored to the text: the brief must quote a **verbatim cue** from the article,
   and it may **not repeat a treatment used in the last four illustrations** — so a reader scrolling
   the desk sees macro photography, then a clay render, then a cutaway, not one filter forty times.
   Hard rules enforced in code: no legible text in the image, no real company's logo or product, no
-  stock-photo clichés (handshake, light bulb, chess pieces…), and the prompt must actually be in the
-  treatment it claims.
+  stock-photo clichés (handshake, light bulb, chess pieces…), the prompt must actually be in the
+  treatment it claims, and **a shape is not a subject** — an abstract story has to be carried by a
+  named mechanism (a modular bay, an unlatched inspection gate, a rack of blades), never by a bare
+  cube, wedge or "simplified form".
 - It runs **inside the persistence pass** (reported as `[image]` notes next to `[assets]`), is **not**
   approval-gated, and never blocks a publish: if generation fails, the article still goes out and
   `scripts/cron-wp-drafts.sh` retries the image on its next sweep.

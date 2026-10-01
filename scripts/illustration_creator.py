@@ -11,11 +11,14 @@ headings, the numbers section, the source list — and commissions one 16:9 head
 
   1. DIRECTION  A frontier model acts as the desk's art director. It picks a *treatment* for this
                 specific story from the catalogue in `STYLES` (macro photograph, cinematic still,
-                clay 3D render, technical isometric, minimal geometry, paper collage, …), states
-                the verbatim cue in the article that drove the choice, and writes the generation
-                prompt, the negative prompt, and the reader-facing metadata (alt text, caption,
-                title, credit). It is explicitly forbidden from repeating a treatment used in the
-                last few articles, so the desk does not look like one filter over 40 posts.
+                clay 3D render, technical isometric, modular component assembly, paper collage, …),
+                states the verbatim cue in the article that drove the choice, and writes the
+                generation prompt, the negative prompt, and the reader-facing metadata (alt text,
+                caption, title, credit). It is explicitly forbidden from repeating a treatment used
+                in the last few articles, so the desk does not look like one filter over 40 posts.
+                It is equally forbidden from illustrating an abstract story with bare geometry: a
+                cube, wedge or slab carries nothing a reader can connect back to the article, so
+                every prompt must name a physical mechanism (`_MECHANISM_RE`).
 
   2. GENERATION One image model on kie.ai runs the brief: Flux-2 Pro (`flux-2/pro-text-to-image`)
                 for anything photographic or physical, Nano Banana Pro (`nano-banana-pro`) where
@@ -83,7 +86,18 @@ DIRECTOR_MAX_ATTEMPTS = 3
 DEFAULT_ASPECT = "16:9"
 FEATURED_ASPECTS = ("16:9", "3:2")     # a featured image is landscape; a square header crops badly
 FEATURE_RESOLUTIONS = ("1K", "2K")
-HISTORY_WINDOW = 4                     # a treatment may not repeat within the last N illustrations
+# A treatment may not repeat within the last N illustrations. Deliberately 4 and not 2: at this
+# catalogue size four withheld treatments can never empty the desk (ten treatments, at most four
+# blocked, six always left), while narrowing the window to 2 would let a treatment come back after
+# two articles instead of four — which is the sameness this desk exists to prevent, not a fix for
+# it. The genuine corner is a *family* (the catalogue's two models), and `allowed_styles` guards
+# that one directly.
+HISTORY_WINDOW = 4
+
+# A retired treatment id and the one that replaced it. Left here rather than deleted because the
+# desk's ledger, the published frontmatter and the operator's runbooks all carry the old id, and a
+# rotation window that silently stopped seeing those rows would let the replacement repeat.
+RETIRED_STYLES = {"minimal_geometry": "component_assembly"}
 
 # The negative half of every brief. In-image text is the single most common way an otherwise good
 # generated header is unusable, so the brief has to forbid it explicitly and this module checks that
@@ -104,6 +118,33 @@ _CLICHE_RE = re.compile(
     r"\b(light ?bulb|handshake|chess piece|chessboard|puzzle piece|glowing brain|trophy|dartboard|"
     r"rocket ship|rocket launch|target with an arrow|arrow(s)? pointing up|gears? of|"
     r"scales of justice|gavel|thumbs up|magnifying glass over|robot handshake)\b", re.I)
+# ── domain grounding: a shape is not a subject ────────────────────────────────────────────────
+# The failure this pins, from the desk's own ledger: two agentic-AI articles were illustrated with
+# "a rectangle with a colour band" and "a block resting on a wedge" — headers a reader cannot
+# connect to the piece, and the director's own rationale for one of them said it was "avoiding
+# literal depictions of abstract concepts". The cause is not the model; it is a prompt that names
+# bare geometry as the SUBJECT. This desk therefore allows shape-talk in a prompt only when the
+# prompt also names the mechanism the shape belongs to. `_PRIMITIVE_RE` finds the shape,
+# `_MECHANISM_RE` proves something physical is in the frame; a prompt with the first and not the
+# second is refused and answered again (the refusal names the mechanism vocabulary to reach for).
+_PRIMITIVE_RE = re.compile(
+    r"\b(cubes?|spheres?|orbs?|balls?|wedges?|triangles?|prisms?|cones?|cylinders?|rectangles?|"
+    r"polygons?|tori|torus|discs?|disks?|blobs?|slabs?|bars?|rods?|cuboids?|hexagons?|pyramids?|"
+    r"blocks?|geometric\s+(?:shapes?|forms?|volumes?|solids?|bodies)|"
+    r"abstract\s+(?:shapes?|forms?|volumes?)|"
+    r"(?:simple|simplified|plain|basic|primitive|bare)\s+(?:shapes?|forms?|volumes?))\b", re.I)
+# A recognisable physical engineering part. Deliberately broad: the rule is a floor that stops
+# "a grey cube" from being a commission, not a vocabulary exam — the director's mandate does the
+# finer work of picking the RIGHT mechanism for the story.
+_MECHANISM_RE = re.compile(
+    r"\b(modular|modules?|components?|sub-?assembl(?:y|ies)|assembl(?:y|ies|ed)|chassis|housings?|"
+    r"casings?|enclosures?|racks?|blades?|bays?|trays?|docks?|connectors?|couplings?|latch(?:es)?|"
+    r"hinges?|brackets?|fasteners?|bolts?|screws?|relays?|contactors?|switch(?:es)?|switchgear|"
+    r"solenoids?|servos?|actuators?|linkages?|bearings?|valves?|pumps?|pipes?|piping|manifolds?|"
+    r"conduits?|harness(?:es)?|circuits?|busbars?|panels?|workstations?|terminals?|keyboards?|"
+    r"consoles?|inspection|checkpoints?|gates?|end[- ]effectors?|gearbox(?:es)?|turbines?|rotors?|"
+    r"stators?|conveyors?|gantr(?:y|ies)|cranes?|rails?|truss(?:es)?|girders?|scaffolding|"
+    r"pallets?|crates?|drums?|tanks?|machined|milled|stamped|bolted|riveted|welded)\b", re.I)
 _NON_ENGLISH_RE = re.compile(r"[\u0400-\u04FF\u4E00-\u9FFF\u0600-\u06FF\u3040-\u30FF\uAC00-\uD7AF]")
 _ALT_PREFIX_RE = re.compile(r"^\s*(an?\s+)?(image|picture|photo|photograph|illustration|graphic|render)\s+(of|showing)\b", re.I)
 # The same "medium of/showing" opening, reached through one or two adjectives ("a matte clay 3D
@@ -168,29 +209,40 @@ STYLES: dict[str, Style] = {s.id: s for s in [
     Style(
         id="clay_render", label="Matte 3D render",
         when="the news is structural and abstract — a stack reordered, a layer added, a flow "
-             "rerouted — and there is no literal object that carries it",
-        medium="matte clay 3D render, soft-body shapes, studio render with a neutral seamless backdrop",
-        craft="three or four simplified forms in a clear physical arrangement that states the idea, "
-              "single soft key light with gentle contact shadows, matte muted palette, no text",
-        keywords=("3d render", "clay", "matte", "studio render", "soft-body", "3d"),
+             "rerouted — and there is no literal object that carries it, so the idea is stated as a "
+             "small physical assembly of recognisable parts rather than as bare shapes",
+        medium="matte clay 3D render of a small mechanical assembly, studio render on a neutral "
+               "seamless backdrop",
+        craft="three or four recognisable engineered parts — a modular block, a housing, a latched "
+              "cover, a connector or a bay — in a clear physical arrangement that states the idea; "
+              "matte surfaces with moulding seams and contact shadows, single soft key light, matte "
+              "muted palette, no plain spheres or wedges standing in for the subject, no text",
+        keywords=("3d render", "clay", "matte", "studio render", "component", "modular", "assembly",
+                  "housing", "bay", "3d"),
         model="nanobanana"),
     Style(
         id="technical_isometric", label="Technical isometric cutaway",
         when="the article explains how a system, process or stack actually works — money flows, "
              "supply chains, pipelines, an agent assembly line",
         medium="clean isometric cutaway illustration, technical drawing style, axonometric projection",
-        craft="flat muted palette with one accent colour, thin consistent line weight, simplified "
-              "boxes and pipes with visible depth, unlabelled, generous empty margin",
+        craft="flat muted palette with one accent colour, thin consistent line weight, recognisable "
+              "hardware — racks, modules, trays, connectors, pipes with visible depth — rather than "
+              "abstract boxes, unlabelled, generous empty margin",
         keywords=("isometric", "axonometric", "cutaway", "cut-away", "cross-section", "schematic"),
         model="nanobanana"),
     Style(
-        id="minimal_geometry", label="Minimal geometry",
-        when="the story is a single number, a single rule, or a single shift — and restraint is the "
-             "point rather than a scene",
-        medium="minimalist flat composition, one large geometric form, generous negative space",
-        craft="two or three flat colours from a muted palette, hard edges, one deliberate asymmetry, "
-              "no texture and no objects, gallery-print calm",
-        keywords=("minimal", "minimalist", "negative space", "geometric", "flat colours", "flat colors"),
+        id="component_assembly", label="Modular component assembly",
+        when="the story is a single number, rule, gate or shift and restraint is the point — with "
+             "no scene to photograph, the frame must still be a real assembly: a modular bay, an "
+             "unlatched inspection gate, a rack of blades, an interlocking connector",
+        medium="minimalist studio composition of a modular mechanical assembly, soft even light, "
+               "generous negative space",
+        craft="two or three recognisable engineered parts (a module, a latch, a rack rail, a bay "
+              "cover, an inspection gate) in one deliberate arrangement that states the idea; hard "
+              "clean edges, matte muted palette, gallery-print calm, never bare shapes — a cube, a "
+              "sphere or a wedge is not a subject",
+        keywords=("modular", "module", "component", "assembly", "connector", "rack", "chassis",
+                  "bay", "bracket", "latch"),
         model="nanobanana"),
     Style(
         id="paper_collage", label="Editorial paper collage",
@@ -350,6 +402,16 @@ class Brief:
         return asdict(self)
 
 
+def canonical_style_id(value: str) -> str:
+    """A retired treatment id mapped onto the one that replaced it.
+
+    Old ledger rows, old frontmatter and old runbooks all say `minimal_geometry`; without this the
+    rotation window would stop seeing those illustrations and the replacement could be chosen again
+    immediately.
+    """
+    return RETIRED_STYLES.get(str(value or "").strip(), str(value or "").strip())
+
+
 def _alias_model(value: str) -> str:
     key = MODEL_ALIASES.get(str(value or "").strip().lower())
     if not key:
@@ -374,6 +436,11 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
         raise BriefError(f"the brief must be a JSON object, got {type(raw).__name__}")
 
     style_id = str(raw.get("style_id") or "").strip()
+    if style_id in RETIRED_STYLES:
+        raise BriefError(
+            f"treatment {style_id!r} was retired — it is {RETIRED_STYLES[style_id]!r} "
+            f"({STYLES[RETIRED_STYLES[style_id]].label}) now: the desk no longer commissions a frame "
+            f"built from bare shapes. Allowed now: {', '.join(allowed)}")
     if style_id not in STYLES:
         raise BriefError(f"unknown treatment {style_id!r} — allowed now: {', '.join(allowed)}")
     if style_id not in allowed:
@@ -411,6 +478,15 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if not any(k in prompt.lower() for k in style.keywords):
         problems.append(f"prompt carries no {style_id} vocabulary "
                         f"(one of: {', '.join(style.keywords)}) — it is not the treatment it claims")
+    # Domain grounding (see _MECHANISM_RE): a geometric shape is a way of drawing an idea, never
+    # the idea itself. The prompt may mention one only alongside a recognisable mechanism.
+    shape = _PRIMITIVE_RE.search(prompt)
+    if shape and not _MECHANISM_RE.search(prompt):
+        problems.append(
+            f"prompt's subject is bare geometry ({shape.group(0)!r}) and the frame names no "
+            f"mechanism — a cube, sphere or wedge carries nothing a reader can connect to this "
+            f"article. Name the physical thing it stands for: a modular bay, an unlatched "
+            f"inspection gate, a rack of blades, a relay, a linkage, an interlocking connector")
 
     negative = re.sub(r"\s+", " ", str(raw.get("negative_prompt") or "")).strip()
     if not _NO_TEXT_RE.search(negative):
@@ -457,6 +533,13 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
         problems.append(f"cue {cue[:50]!r} is not a verbatim phrase in the article — the direction has to "
                         f"come from this text, not from the model's idea of the topic")
 
+    # The frame's subject, in plain language. Unvalidated until now, which is how a brief could
+    # carry a prompt about nothing: if the director cannot say what is in the frame, it does not
+    # know — and the reader gets a header unrelated to the article.
+    subject = re.sub(r"\s+", " ", str(raw.get("subject") or "")).strip()
+    if len(subject) < 10:
+        problems.append("subject must state what is in the frame (>=10 chars)")
+
     if raw.get("depicts_real_brand"):
         problems.append("the brief depicts a real company's product/logo — depict the mechanism, not the mark")
 
@@ -465,7 +548,7 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
 
     return Brief(
         style_id=style_id, rationale=rationale, cue=cue,
-        subject=re.sub(r"\s+", " ", str(raw.get("subject") or "")).strip()[:300],
+        subject=subject[:300],
         model=model, prompt=prompt, negative_prompt=negative, aspect_ratio=aspect,
         resolution=resolution, alt_text=alt, caption=caption, title=title, credit=credit,
         depicts_real_brand=False, model_note=model_note)
@@ -540,6 +623,13 @@ def director_prompt(article_md: str, *, history: list[str], allowed: tuple) -> s
     history_line = ", ".join(history) if history else "(no illustrations on file yet)"
     numbers = "\n".join(f"- {n}" for n in _numbers(article_md)) or "(none)"
     sources = ", ".join(source_names(article_md)) or "(none)"
+    # A treatment re-admitted to keep a family available is not the same as an allowed repeat: say
+    # so, or the director reads a contradiction between this list and the recent history above it.
+    readmitted = [s for s in allowed if s in set(history[:HISTORY_WINDOW])]
+    readmit_line = ("\nNote: " + ", ".join(readmitted) +
+                    " appears above as recently used and is re-admitted only so that its model is "
+                    "not left with no treatment at all — choose it only if it genuinely fits this "
+                    "story.\n") if readmitted else ""
     return f"""You are the art director on an industry-analysis editorial desk. You commission ONE \
 featured image per article: the 16:9 header a reader sees above the headline and that the CMS \
 shows as the article's card. You are not a preset — you read THIS text and pick the treatment it \
@@ -562,25 +652,37 @@ TREATMENT CATALOGUE
 TREATMENTS ALREADY USED, MOST RECENT FIRST: {history_line}
 You MUST choose one of: {', '.join(allowed)} — a treatment may not repeat within the last \
 {HISTORY_WINDOW} illustrations.
+{readmit_line}
+DOMAIN GROUNDING (the desk's most common failure, and it is checked in code, not just asked for)
+When the story is abstract — software, AI agents, a data flow, a cost model, a policy shift — do
+NOT build the frame from bare geometry. Cubes, spheres, wedges, slabs, rectangles and "simplified
+forms" are not subjects: a reader cannot connect them to the article, and the brief is refused.
+Always reach for a recognisable physical engineering analogy instead: modular server components or
+blades in a rack, a bay with its cover off, an unlatched inspection gate or latch, a relay switch, a
+solenoid or servo, an interlocking connector, a machine linkage, a manifold or conduit, a workstation
+terminal, a sensor head. Name that mechanism in the prompt's own words — the mechanism is what
+grounds the metaphor in this story.
 
 HARD RULES
 - Depict a concrete noun from this story (the material, part, place, document or mechanism that \
-carries it). Never an abstract concept, never a metaphor stock photo.
+carries it). Never an abstract concept, never a metaphor stock photo, and never bare geometry — \
+see the grounding rule above.
 - No text, letters, numbers, wordmarks, signage or UI in the image: generated lettering is \
 unreadable. Forbid them in `negative_prompt`.
 - No real company's logo, packaging or product, and no recognisable real person. Depict the \
 mechanism instead. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
-- Alt text describes the subject for a screen reader in <=125 characters, without starting \
-"image of". The caption is one sentence a reader could quote. The credit is e.g. \
+- Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \
+itself (never "image of", never "a clay 3D render of…", never the medium). The caption is one \
+sentence a reader could quote. The credit is e.g. \
 "Illustration: Editorial-Factory Intelligence Unit".
 
 Return ONLY a JSON object, no markdown fence, with exactly these keys:
 {{"style_id": one of {list(allowed)},
  "rationale": "2-3 sentences: why this treatment for this story",
  "cue": "a phrase of 2-10 words copied verbatim from the article above",
- "subject": "what is in the frame, one clause",
+ "subject": "the physical thing in the frame, one clause — never a bare shape",
  "model": "{' or '.join(sorted(MODELS))}",
  "model_override_reason": "required only if you deviate from the catalogue model, else omit",
  "prompt": "the generation prompt, 15-120 words, English, containing the vocabulary of the \
@@ -588,7 +690,7 @@ treatment you chose",
  "negative_prompt": "what must not appear; must name text/watermarks/logos",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
  "resolution": "1K for most stories, 2K only when fine physical detail is the point",
- "alt_text": "<=125 chars",
+ "alt_text": "<=125 chars, the SUBJECT first — never 'a render/photo of…'",
  "caption": "one sentence ending in a full stop",
  "title": "3-100 chars, the CMS media-library label",
  "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -666,20 +768,40 @@ def style_history(ledger: pathlib.Path | None = None, limit: int = 12,
             continue
         if exclude_slug and len(cells) > 1 and cells[1] == exclude_slug:
             continue
-        if cells[3] in STYLES:
-            styles.append(cells[3])
+        style = canonical_style_id(cells[3])
+        if style in STYLES:
+            styles.append(style)
         if len(styles) >= limit:
             break
     return styles
 
 
 def allowed_styles(history: list[str], window: int = HISTORY_WINDOW) -> tuple:
-    """The catalogue minus the treatments used in the last `window` illustrations."""
-    recent = set(history[:window])
-    allowed = tuple(s for s in STYLES if s not in recent)
+    """The catalogue minus the treatments used in the last `window` illustrations.
+
+    Two guards, both learned from the desk's own ledger:
+
+    * The window is a *style* rule and it is deliberately not narrowed to buy variety. At this
+      catalogue size four withheld treatments can never empty the desk (ten treatments, at most
+      four blocked, six always left); at a window of two a treatment would return after two
+      articles instead of four, which is the sameness this desk exists to prevent.
+    * A *family* (the two catalogue models — photographic/flux and constructed/nano-banana) is
+      small enough to be emptied: three of the four constructed treatments were used back to back
+      in the desk's first ten illustrations, and a fourth would have left a story with no
+      photograph in it no choice but a photograph. When the window would leave a family with no
+      treatment at all, its oldest blocked member is re-admitted.
+    """
+    blocked = set(history[:window])
+    allowed = [s for s in STYLES if s not in blocked]
+    for family in sorted({s.model for s in STYLES.values()}):
+        if not any(STYLES[s].model == family for s in allowed):
+            for used in reversed(history[:window]):    # oldest first: closest to leaving the window
+                if STYLES.get(used) and STYLES[used].model == family and used not in allowed:
+                    allowed.append(used)
+                    break
     if len(allowed) < 3:                           # a tiny catalogue must not deadlock the desk
         return tuple(STYLES)
-    return allowed
+    return tuple(s for s in STYLES if s in allowed)   # catalogue order: the menu stays stable
 
 
 def direct(article_md: str, *, history: list[str] | None = None, llm=None,
@@ -1187,8 +1309,12 @@ def main() -> int:
     args = parser.parse_args()
 
     root = pathlib.Path(args.root).resolve() if args.root else ROOT
-    if args.style and args.style not in STYLES:
-        parser.error(f"unknown --style {args.style!r}; one of {', '.join(STYLES)}")
+    if args.style:
+        # An operator's runbook (and the desk's own older notes) still name a retired treatment;
+        # resolve it to its replacement rather than refusing a one-word alias.
+        args.style = canonical_style_id(args.style)
+        if args.style not in STYLES:
+            parser.error(f"unknown --style {args.style!r}; one of {', '.join(STYLES)}")
 
     files = [pathlib.Path(f) for f in args.files]
     if args.backfill:
