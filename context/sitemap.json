@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T11:09:42Z",
+  "updated_at": "2026-10-01T11:38:43Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -140,6 +140,17 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-26"
+    },
+    {
+      "slug": "2026-10-01_goods-tariff-relief-vs-vessel-fee",
+      "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.",
+      "url": "https://pressflow.aichieve.net/published/2026-10-01_goods-tariff-relief-vs-vessel-fee.md",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [],
+      "target_persona": "ops_leader",
+      "date": "2026-10-01"
     },
     {
       "slug": "2026-10-01_planner-as-router-plan-time-routing",
