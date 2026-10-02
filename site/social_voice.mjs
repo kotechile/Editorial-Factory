@@ -21,7 +21,7 @@ export const VOICE_ENFORCED_FROM = '2026-09-26';
 /** At least one of these must appear in every social copy and in each interpreting article section. */
 export const OBSERVER_CUES = [
   { label: 'first-person observation', re: /\bI(?:'ve| have|'m| am|'d| would| keep| kept| think| thought| read| watched| noticed| pulled| see| saw| hear| heard)\b/i },
-  { label: 'labelled opinion', re: /\b(?:my read|my take|my sense|my view|where I(?:'ve| have) landed|what I take from)\b/i },
+  { label: 'labelled opinion', re: /\b(?:my read|my take|my sense|my view|where I(?:'ve| have) landed|what I take from|I could be wrong)\b/i },
   {
     label: 'attention, not instruction',
     re: /\b(?:what I(?:'m| am) watching|what strikes me|the bit that stuck with me|the part I keep circling|the thing I(?:'d| would) want|curious (?:how|what|whether|if))\b/i,
@@ -128,7 +128,11 @@ export function bodySections(markdown) {
 export function inspectLongform(markdown) {
   const sections = bodySections(markdown);
   const prose = [sections.lead, sections.tension, sections['tactical-insight'],
-    sections['nuanced-takeaway'], sections.tldr].filter(Boolean).join('\n\n');
+    sections['nuanced-takeaway'], sections.tldr].filter(Boolean).join('\n\n')
+    // HTML comments (section markers, the internal-links machinery) are not reader-facing prose.
+    // The internal-links block carries `<!-- internal-links:start -->`, whose ":start" must not read
+    // as advice-after-colon. Strip comments before the authority scan.
+    .replace(/<!--[\s\S]*?-->/g, ' ');
   const violations = [];
   for (const { label, re } of AUTHORITY_PATTERNS) {
     const match = prose.match(re);
