@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T10:42:19Z",
+  "updated_at": "2026-10-02T11:40:43Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -199,6 +199,22 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-02"
+    },
+    {
+      "slug": "2026-10-02_same-day-race-undoes-route-optimization",
+      "title": "The Same-Day Delivery Race Is Undoing a Decade of Route Optimization",
+      "url": "https://pressflow.aichieve.net/published/2026-10-02_same-day-race-undoes-route-optimization.md",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The high cost of speed",
+        "Where the money flows",
+        "The quiet casualty",
+        "Related reading"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-10-02"
     }
   ]
