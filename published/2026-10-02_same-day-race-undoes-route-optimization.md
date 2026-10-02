@@ -34,22 +34,22 @@ My read: Speed and fuel are pulling teams in opposite ways. Smart routing gave f
 Brands are fully leaning into this shift despite the costs. Nordstrom says it wants to ship goods seven days a week and just tested same-day beauty drops in Los Angeles [5]. Amazon is pushing even harder, chasing one-hour and three-hour drop-offs on top of its daily runs [1].
 
 **By the numbers:**
-- **$6.53 a gallon:** The record price for U.S. diesel noted by the Energy Information Administration (EIA), topping the old June 2022 high of $5.81 [2].
-- **88% price jump:** Diesel fuel started the year near $3.46 a gallon and almost doubled in just a few short months [2].
-- **21% to 29.5%:** The leap in the United Parcel Service (UPS) fuel fee on Sept. 21, before the carrier changed its math to slow the drop [2].
-- **200 daily packages:** The strict cap for the Amazon-USPS test across three paths in Morgantown, West Virginia, and Lake Havasu City, Arizona [1]. This grows to Columbia, South Carolina, with 500 packages on Oct. 20 [1].
+- **$6.53 a gallon — Record diesel price:** The record price for U.S. on-highway diesel noted by the Energy Information Administration (EIA), topping the June 2022 high of $5.81 [2].
+- **88% — Diesel price jump:** Diesel fuel started the year near $3.46 a gallon and almost doubled in just a few short months [2].
+- **21% to 29.5% — UPS fuel fee:** United Parcel Service (UPS) bumped its fuel surcharge on Sept. 21, before the carrier changed its math to slow the drop [2].
+- **200 daily packages — Amazon-USPS pilot cap:** The strict cap for the Amazon-USPS test across three paths in Morgantown, West Virginia, and Lake Havasu City, Arizona [1]. This grows to Columbia, South Carolina, with 500 packages on Oct. 20 [1].
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
   <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">The Same-Day Delivery Race Is Undoing a Decade of Route…</text>
   <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
   <!-- Row 1 -->
-  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">Diesel fuel started the year</text>
+  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">Diesel price jump</text>
   <rect x="240" y="70" width="300" height="18" rx="4" fill="#1e293b"/>
   <rect x="240" y="70" width="264" height="18" rx="4" fill="#818cf8"/>
   <text x="514" y="84" fill="#f1f5f9" font-size="13" font-weight="600">88%</text>
   <text x="568" y="84" fill="#64748b" font-size="11">([2])</text>
   <!-- Row 2 -->
-  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">The leap in the United Parcel</text>
+  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">UPS fuel fee</text>
   <rect x="240" y="118" width="300" height="18" rx="4" fill="#1e293b"/>
   <rect x="240" y="118" width="63" height="18" rx="4" fill="#818cf8"/>
   <text x="313" y="132" fill="#f1f5f9" font-size="13" font-weight="600">21%</text>

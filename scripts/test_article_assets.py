@@ -144,6 +144,13 @@ injected_long, _ = aa.inject_chart(LONG_LABEL)
 check("...so the rendered row labels carry no ellipsis (a figure readers quote verbatim)",
       bool(row_labels(injected_long)) and all("\u2026" not in label for label in row_labels(injected_long)),
       str(row_labels(injected_long)))
+check("narrative lead-ins are cleaned into descriptive metric names",
+      aa.clean_metric_label("88% price jump", "Diesel fuel started the year near $3.46 a gallon and almost doubled in just a few short months [2].") == "Diesel price jump")
+check("corporate acronyms and narrative fillers are simplified without clipping",
+      aa.clean_metric_label("21% to 29.5%", "The leap in the United Parcel Service (UPS) fuel fee on Sept. 21, before the carrier changed its math to slow the drop [2].") == "UPS fuel fee")
+check("structured em-dash metric titles are preserved directly",
+      aa.clean_metric_label("88% — Diesel price jump", "Prices surged from $3.46/gal [2].") == "Diesel price jump" and
+      aa.clean_metric_label("21% to 29.5% — UPS fuel fee", "The fuel fee jumped on Sept. 21 [2].") == "UPS fuel fee")
 check("...and every corpus label fits the same ceiling",
       all(len(label) <= cg.LABEL_MAX
           for path in sorted(pathlib.Path(aa.__file__).parent.parent.glob("published/*.md"))

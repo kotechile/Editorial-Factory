@@ -97,8 +97,9 @@ def _bullets(block: str) -> list[str]:
 def clean_metric_label(figure: str, rest: str) -> str:
     """Derive a concise, human-readable metric label for charts.
 
-    Prefers structured titles, strips conversational lead-ins ('The price jump for...'),
-    and trims trailing subordinate clauses so the chart displays a clean metric name
+    Prefers structured titles, strips conversational lead-ins ('The price jump for...',
+    'The leap in the...'), normalizes agency/corporate acronyms (e.g. 'United Parcel Service (UPS)'
+    -> 'UPS'), and trims trailing subordinate clauses so the chart displays a clean metric name
     rather than a truncated sentence fragment.
 
     Every candidate is bounded by `chart_generator.LABEL_MAX` — the widest label that clears the
@@ -130,15 +131,29 @@ def clean_metric_label(figure: str, rest: str) -> str:
             if 3 <= len(cand) <= cg.LABEL_MAX:
                 return cand
 
-    # 3. Clean citations and trailing punctuation
+    # 3. Clean citations and trailing punctuation early
     text = re.sub(r"\[\d+\]", "", text).strip(" ,;:—.-/")
 
-    # 4. Cut at sentence end, commas, semicolons, or subordinate clause markers
-    clause = re.split(r"[,;.]|\s+(?:taking|hitting|reaching|costing|which|down from|compared to|fell to|dropped to|rose to|cut to|to\s+[\$0-9])\b", text, flags=re.I)[0].strip()
+    # 4. Check if figure carries a descriptive metric noun (e.g. '88% price jump', '40% routed', '5.9% rate hike')
+    fig_clean = re.sub(r"[\$€£]?\s*[\d.,]+(?:\s*(?:to|–|-|\/|vs\.?|and)\s*[\$€£]?[\d.,]+)?\s*[%xX×\+]?", "", figure, flags=re.I)
+    fig_clean = re.sub(r"[\d.,\s%xX×\+\$€£/–—:-]+", " ", fig_clean).strip()
+    non_num_fig = " ".join([w for w in fig_clean.split() if w.lower() not in ("to", "vs", "and", "or", "a", "an", "the", "per")])
+
+    if non_num_fig and len(non_num_fig) >= 3:
+        subj_m = re.match(r"^([A-Z][a-zA-Z0-9\+\s]+?)(?:\s+(?:started|began|rose|fell|jumped|dropped|hit|costs|priced|was|is|are|were|grew|surged|on|in|at)\b|[,;:])", text)
+        if subj_m:
+            subj = subj_m.group(1).strip()
+            subj = re.sub(r"\s+fuel$", "", subj, flags=re.I)
+            if 2 <= len(subj) <= 20 and subj.lower() not in non_num_fig.lower():
+                combined = f"{subj} {non_num_fig}".strip()
+                if len(combined) <= cg.LABEL_MAX:
+                    return combined[0].upper() + combined[1:]
+        if len(non_num_fig) <= cg.LABEL_MAX:
+            return non_num_fig[0].upper() + non_num_fig[1:]
 
     # 5. Strip common conversational filler prefixes
-    filler_re = r"^(?:the\s+)?(?:tiny\s+|huge\s+|massive\s+|slight\s+|modest\s+)?(?:price\s+jump|price\s+hike|increase|growth|drop|fall|cut|reduction)\s+(?:for\s+(?:both\s+|the\s+)?|in\s+(?:the\s+)?|of\s+(?:the\s+)?)"
-    stripped = re.sub(filler_re, "", clause, flags=re.I).strip(" ,;:—.-/")
+    filler_re = r"^(?:the\s+)?(?:tiny\s+|huge\s+|massive\s+|slight\s+|modest\s+|strict\s+|record\s+)?(?:price\s+jump|price\s+hike|leap|jump|surge|spike|rise|climb|gain|increase|growth|drop|fall|cut|reduction|decline|slump|rate|share|slice|size|fee|cost|number|amount)\s+(?:for\s+(?:both\s+|the\s+)?|in\s+(?:the\s+)?|of\s+(?:the\s+)?|to\s+(?:the\s+)?|on\s+(?:the\s+)?|that\s+)"
+    stripped = re.sub(filler_re, "", text, flags=re.I).strip(" ,;:—.-/")
 
     filler_re2 = r"^(?:the\s+)?(?:year-over-year\s+|yoy\s+)?(?:growth|increase|drop)\s+(?:for\s+(?:both\s+|the\s+)?|in\s+(?:the\s+)?|of\s+(?:the\s+)?)"
     stripped = re.sub(filler_re2, "", stripped, flags=re.I).strip(" ,;:—.-/")
@@ -146,13 +161,24 @@ def clean_metric_label(figure: str, rest: str) -> str:
     filler_re3 = r"^(?:the\s+)?(?:tiny\s+|huge\s+|massive\s+|slight\s+|modest\s+)?(?:rate\s+that|rate\s+prices\s+outpaced|share\s+of|rate\s+of)\s+"
     stripped = re.sub(filler_re3, "", stripped, flags=re.I).strip(" ,;:—.-/")
 
-    # Clean action verbs like 'dropped', 'cut'
-    stripped = re.sub(r"\b(?:dropped|cut|slashed)\b", "", stripped, flags=re.I).strip(" ,;:—.-/")
+    # Normalize entity acronyms: 'United Parcel Service (UPS)' -> 'UPS'
+    stripped = re.sub(r"\b(?:[A-Z][a-z0-9]+\s+){1,5}\(([A-Z0-9]{2,8})\)", r"\1", stripped)
+    stripped = re.sub(r"\bUnited Parcel Service\b", "UPS", stripped)
+    stripped = re.sub(r"\bUnited States Postal Service\b", "USPS", stripped)
+    stripped = re.sub(r"\bFederal Express\b", "FedEx", stripped)
 
-    if len(stripped) > 28 and " for " in stripped.lower():
-        stripped = re.split(r"\s+for\s+", stripped, flags=re.I)[0].strip()
+    # 6. Cut at clause boundaries or narrative timing markers
+    _MONTH_PAT = r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+    clause_pat = rf"[,;.]|\s+(?:taking|hitting|reaching|costing|which|down from|compared to|fell to|dropped to|rose to|cut to|to\s+[\$0-9]|on\s+{_MONTH_PAT}|on\s+\d+|before\b|after\b|since\b|during\b)"
+    clause = re.split(clause_pat, stripped, flags=re.I)[0].strip()
 
-    res = stripped if len(stripped) >= 4 else clause
+    # Clean action verbs like 'dropped', 'cut', 'claims'
+    cleaned = re.sub(r"\b(?:dropped|cut|slashed|claims)\b", "", clause, flags=re.I).strip(" ,;:—.-/")
+
+    if len(cleaned) > 28 and " for " in cleaned.lower():
+        cleaned = re.split(r"\s+for\s+", cleaned, flags=re.I)[0].strip()
+
+    res = cleaned if len(cleaned) >= 3 else clause
     if not res:
         res = figure
 
@@ -161,11 +187,14 @@ def clean_metric_label(figure: str, rest: str) -> str:
     while dangling.search(res):
         res = dangling.sub("", res).strip(" ,;:—.-/")
 
+    res = re.sub(r"\s+", " ", res).strip()
+
     if len(res) <= cg.LABEL_MAX:
         return res[0].upper() + res[1:] if len(res) > 1 else res.upper()
 
     cut = res[:cg.LABEL_MAX - 2].rsplit(" ", 1)[0].rstrip(" ,;:-")
     return (cut or res[:cg.LABEL_MAX - 2]).strip()
+
 
 
 def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:

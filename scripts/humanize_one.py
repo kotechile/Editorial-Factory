@@ -28,7 +28,7 @@ SMART BREVITY STYLING PRINCIPLES:
      - **The catch:** or **Between the lines:** (honest nuance, limitation, or counter-argument)
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
-   - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats (e.g., `- **40% routed:** ...`).
+   - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats pairing the figure with a concise 2–4 word metric title (e.g., `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). The words following the bold lead MUST NOT begin with conversational or background narrative filler ("Diesel fuel started the year...", "The leap in the..."). Instead, structure as `- **<Figure> — <Metric Title>:** <Clear explanation> [Citation]`.
    - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
 5. STRONG, SIMPLE DICTION:
    - Strip out passive verbs, weak adverbs ("basically", "materially", "fundamentally"), and bloated "10-dollar" corporate jargon.
