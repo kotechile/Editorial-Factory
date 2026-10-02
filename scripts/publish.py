@@ -145,7 +145,12 @@ def apply_derived_assets(content: str) -> tuple[str, list[str]]:
 
     enriched, notes = article_assets.ensure_seo_metadata(dict(existing), body)
     additions = {k: v for k, v in enriched.items() if k not in existing}
-    body, chart_note = article_assets.inject_chart(body)
+    # The chart is injected into the BODY, which is the frontmatter-less half of the artifact — so
+    # the artifact's own headline has to be handed over explicitly. Without it `_chart_title` found
+    # no title and captioned every pipeline-generated chart "Verified figures" (a heading that
+    # describes nothing), and that caption is what reached the CMS.
+    chart_title = enriched.get("meta_title") or enriched.get("title") or existing.get("title")
+    body, chart_note = article_assets.inject_chart(body, title=chart_title)
     notes.append(chart_note)
 
     fm_lines = fm_text.rstrip("\n")

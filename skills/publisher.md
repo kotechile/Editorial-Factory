@@ -52,6 +52,24 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
    carries it — the attachment is uploaded, captioned (alt text/caption/credit) and set as the
    post's `featured_media`, with `metadata.wordpress.media_id`/`media_url`/`media_alt` recorded so
    the next push reuses it instead of duplicating the bytes.
+6. **A regenerated visual has to reach the ROW, not just the artifact file.** The connector pushes
+   the Supabase row's `content`, and `wp_draft.py --refresh` re-derives the body from that same row —
+   so a chart rewritten in `published/<file>.md` (a new `chart_generator.py` revision, or
+   `article_assets.py --force-chart`) reaches no reader. Verified live: the artifact carried the
+   fixed chart while CMS draft #420 still served the old layout with three ellipsized labels and a
+   generic caption. Regenerate the markup from the **row's own** numbers section, splice it in place
+   of the existing `<svg>`, assert the serialization *outside* the block is byte-identical, write the
+   row, then `python3 scripts/wp_draft.py --slug <slug>` and read the post back. Pass the headline
+   explicitly when regenerating from a row — a chart titled from a frontmatter-less body is captioned
+   "Verified figures"; `article_assets.inject_chart(..., title=…)` takes it and `publish.py` hands
+   over the artifact's `meta_title`.
+7. **`scripts/article_assets.py --apply` preserves frontmatter line for line — keep it that way.**
+   Its frontmatter reader is a line-based `key: value` parser, so re-serialising the block from that
+   dict destroyed a real artifact's `sources:` list (`sources: ""` plus a broken `- https: "//…"`
+   line, on 3 artifacts) and churned the quoting of every key the pipeline had written quoted, which
+   made a no-op run report every file as rewritten. `_reemit_frontmatter()` now appends only the keys
+   the pass derives and returns the artifact byte-identical otherwise, and `test_article_assets.py`
+   fails on any artifact a pass would rewrite (14/14 currently unchanged).
 
 ## 3. Distribution (prep automatic, posting manual)
 - **Preparation is automatic.** The persistence pass ends by seeding the dashboard's Reddit/LinkedIn

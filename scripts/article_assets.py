@@ -100,6 +100,10 @@ def clean_metric_label(figure: str, rest: str) -> str:
     Prefers structured titles, strips conversational lead-ins ('The price jump for...'),
     and trims trailing subordinate clauses so the chart displays a clean metric name
     rather than a truncated sentence fragment.
+
+    Every candidate is bounded by `chart_generator.LABEL_MAX` — the widest label that clears the
+    bars — so the renderer never has to shorten this output. A label longer than the ceiling that
+    still reads as a name is cut on a word boundary instead of being handed back for ellipsis.
     """
     # 0. Check if metric name is embedded in the bold figure itself: e.g. "13% — Ad-free Disney+ & Hulu"
     for sep in [" — ", " – ", " - "]:
@@ -107,7 +111,7 @@ def clean_metric_label(figure: str, rest: str) -> str:
             for p in figure.split(sep):
                 if "%" not in p and len(p.strip(" :—-")) >= 3:
                     cand = p.strip(" :—-")
-                    if len(cand) <= 40:
+                    if len(cand) <= cg.LABEL_MAX:
                         return cand
 
     text = rest.strip()
@@ -115,7 +119,7 @@ def clean_metric_label(figure: str, rest: str) -> str:
     bold_m = re.match(r"^\*\*(.+?)\*\*\s*:?\s*(.*)$", text)
     if bold_m:
         cand = bold_m.group(1).strip(" :—-")
-        if 3 <= len(cand) <= 40:
+        if 3 <= len(cand) <= cg.LABEL_MAX:
             return cand
 
     # 2. Separator like ' — ', ' – ', ' - '
@@ -123,7 +127,7 @@ def clean_metric_label(figure: str, rest: str) -> str:
         if sep in text:
             cand = text.split(sep)[0].strip(" :—-")
             cand = re.sub(r"\[\d+\]", "", cand).strip()
-            if 3 <= len(cand) <= 40:
+            if 3 <= len(cand) <= cg.LABEL_MAX:
                 return cand
 
     # 3. Clean citations and trailing punctuation
@@ -157,11 +161,11 @@ def clean_metric_label(figure: str, rest: str) -> str:
     while dangling.search(res):
         res = dangling.sub("", res).strip(" ,;:—.-/")
 
-    if len(res) <= 32:
+    if len(res) <= cg.LABEL_MAX:
         return res[0].upper() + res[1:] if len(res) > 1 else res.upper()
 
-    cut = res[:30].rsplit(" ", 1)[0].rstrip(" ,;:-")
-    return (cut or res[:30]).strip()
+    cut = res[:cg.LABEL_MAX - 2].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return (cut or res[:cg.LABEL_MAX - 2]).strip()
 
 
 def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:
@@ -206,8 +210,13 @@ def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:
     return items[:CHART_MAX_POINTS], ("skipped: " + "; ".join(skipped) if skipped else "")
 
 
-def inject_chart(md: str, subtitle: str = CHART_SUBTITLE, force: bool = False) -> tuple[str, str]:
-    """(markdown, note). Idempotent: an artifact that already carries an <svg> is left alone."""
+def inject_chart(md: str, subtitle: str = CHART_SUBTITLE, force: bool = False,
+                 title: str | None = None) -> tuple[str, str]:
+    """(markdown, note). Idempotent: an artifact that already carries an <svg> is left alone.
+
+    `title` is the caller's headline for the chart. It is only consulted when the markdown carries
+    no frontmatter — see `_chart_title` for why that case is real.
+    """
     if re.search(r"<svg\b", md, re.I):
         if not force:
             return md, "chart already present — left alone"
@@ -218,8 +227,8 @@ def inject_chart(md: str, subtitle: str = CHART_SUBTITLE, force: bool = False) -
     if len(series) < CHART_MIN_POINTS:
         return md, f"no chart: {notes}"
 
-    title = _chart_title(md)
-    svg = cg.generate_svg_bar_chart(title, series, subtitle=subtitle)
+    chart_title = _chart_title(md, title)
+    svg = cg.generate_svg_bar_chart(chart_title, series, subtitle=subtitle)
 
     match = _NUMBERS_HEADING.search(md)
     if not match:
@@ -235,9 +244,21 @@ def inject_chart(md: str, subtitle: str = CHART_SUBTITLE, force: bool = False) -
                  + (f" | {notes}" if notes else ""))
 
 
-def _chart_title(md: str) -> str:
-    fm, _ = split_frontmatter(md)
-    return fm.get("meta_title") or fm.get("title") or "Verified figures"
+def _chart_title(md: str, title: str | None = None) -> str:
+    """The chart's headline: the artifact's own, else the caller's, else the body's first H1.
+
+    The fallbacks are not hypothetical. `publish.apply_derived_assets` splits the frontmatter off
+    BEFORE it injects the chart, so on the pipeline's own path the markdown has no frontmatter at
+    all — which is how a chart titled "Verified figures" (a generic caption about nothing) reached
+    the CMS on every article generated that way. A caller that holds the artifact's headline passes
+    it in; a caller that does not gets the body's own top heading.
+    """
+    fm, body = split_frontmatter(md)
+    for candidate in (fm.get("meta_title"), fm.get("title"), title):
+        if (candidate or "").strip():
+            return str(candidate).strip()
+    heading = re.search(r"^#\s+(.+?)\s*$", body, re.M)
+    return heading.group(1).strip() if heading else "Verified figures"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -314,23 +335,47 @@ def ensure_seo_metadata(fm: dict[str, str], body: str) -> tuple[dict[str, str], 
 # whole-artifact pass (what the publish path calls)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def ensure_assets(md: str, chart: bool = True, force_chart: bool = False) -> tuple[str, list[str]]:
-    """Enrich an artifact: frontmatter SEO fields + an inline chart. Returns (markdown, notes)."""
+def ensure_assets(md: str, chart: bool = True, force_chart: bool = False,
+                  title: str | None = None) -> tuple[str, list[str]]:
+    """Enrich an artifact: frontmatter SEO fields + an inline chart. Returns (markdown, notes).
+
+    `title` is the chart's headline, for a body that carries no frontmatter of its own (the shape
+    the CMS row holds, and the shape `publish.apply_derived_assets` passes down). Ignored when the
+    markdown has a frontmatter title of its own.
+    """
     fm, body = split_frontmatter(md)
     fm, notes = ensure_seo_metadata(fm, body)
-    md = _reemit_frontmatter(fm, body) if fm else md
+    md = _reemit_frontmatter(fm, body, md)
     if chart:
-        md, note = inject_chart(md, force=force_chart)
+        md, note = inject_chart(md, force=force_chart, title=title)
         notes.append(note)
     return md, notes
 
 
-def _reemit_frontmatter(fm: dict[str, str], body: str) -> str:
-    lines = ["---"]
-    for key, value in fm.items():
-        lines.append(f'{key}: "{value}"' if not re.fullmatch(r"[\w.+-]+", str(value)) else f"{key}: {value}")
-    lines.append("---")
-    return "\n".join(lines) + "\n\n" + body.lstrip("\n")
+def _reemit_frontmatter(fm: dict[str, str], body: str, md: str) -> str:
+    """The document with ONLY the keys this pass added appended to its frontmatter.
+
+    The frontmatter is YAML and `split_frontmatter` is a line-based `key: value` reader: it knows
+    nothing about lists, nested mappings, comments or block scalars. Rebuilding the block from that
+    dict therefore DESTROYED a real artifact's `sources:` list — `sources: ""` plus a broken
+    `- https: "//…"` line (three artifacts, the first time this CLI was pointed at the whole
+    corpus) — and flipped the quoting of every key the pipeline had written quoted, so a run that
+    changed nothing reported every file as rewritten. So the block is preserved LINE FOR LINE and
+    only genuinely new keys are appended; nothing this pass did not add is re-serialised.
+    """
+    match = re.match(r"\A---\s*\n(.*?)\n---\s*\n*", md, re.S)
+    if not match:
+        return md
+    block = match.group(1)
+    present = {line.split(":", 1)[0].strip() for line in block.splitlines() if ":" in line}
+    additions = [(key, value) for key, value in fm.items() if key not in present]
+    if not additions:
+        return md                      # nothing derived: the artifact is returned byte-identical
+    lines = block.rstrip("\n").splitlines()
+    for key, value in additions:
+        lines.append(f'{key}: "{value}"' if not re.fullmatch(r"[\w.+-]+", str(value))
+                     else f"{key}: {value}")
+    return "---\n" + "\n".join(lines) + "\n---\n\n" + body.lstrip("\n")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -364,6 +409,9 @@ def main() -> int:
     parser.add_argument("files", nargs="*", help="article markdown files")
     parser.add_argument("--apply", action="store_true", help="write the assets into the files")
     parser.add_argument("--force-chart", action="store_true", help="regenerate chart even if <svg> exists")
+    parser.add_argument("--title", default=None,
+                        help="the chart's headline for a body with no frontmatter of its own "
+                             "(the shape a CMS row holds); ignored when the file carries a title")
     parser.add_argument("--check", action="store_true", help="exit 1 when an asset is missing")
     args = parser.parse_args()
 
@@ -376,7 +424,7 @@ def main() -> int:
         text = path.read_text(encoding="utf-8")
         check_only = args.check and not args.apply
         if not check_only and args.apply:
-            enriched, notes = ensure_assets(text, force_chart=args.force_chart)
+            enriched, notes = ensure_assets(text, force_chart=args.force_chart, title=args.title)
             if enriched != text:
                 path.write_text(enriched, encoding="utf-8")
             print(f"  {path.name}")

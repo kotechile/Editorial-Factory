@@ -9,8 +9,15 @@ from typing import List, Dict, Tuple
 import html
 import sys
 
+# The widest row label that clears the bar track. Text starts at `padding` (20) and the track at
+# `bar_start_x` (240), so at font-size 13 a label may run to about LABEL_MAX characters (≈7px each)
+# before it reaches the bars. `article_assets.clean_metric_label` trims to this same ceiling, so a
+# cleaned label is never re-shortened here — an ellipsis inside a charted figure is a truncated
+# metric name in the one part of an article readers quote verbatim.
+LABEL_MAX = 32
 
-def _shorten(text: str, limit: int = 30) -> str:
+
+def _shorten(text: str, limit: int = LABEL_MAX) -> str:
     """Trim a label to fit without cutting a word in half.
 
     The renderer used `label[:28]`, which put "Autonomous & Agentic Workf" into a figure that is
@@ -75,7 +82,7 @@ def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_
         bar_color = "#38bdf8" if "success" in label.lower() or "retention" in label.lower() else "#f43f5e" if "fail" in label.lower() or "drift" in label.lower() else "#818cf8"
         
         svg_lines.append(f'  <!-- Row {idx+1} -->')
-        svg_lines.append(f'  <text x="{padding}" y="{y+16}" fill="#e2e8f0" font-size="13" font-weight="500">{html.escape(_shorten(label, 32))}</text>')
+        svg_lines.append(f'  <text x="{padding}" y="{y+16}" fill="#e2e8f0" font-size="13" font-weight="500">{html.escape(_shorten(label, LABEL_MAX))}</text>')
         svg_lines.append(f'  <rect x="{bar_start_x}" y="{y+2}" width="{bar_max_width}" height="18" rx="4" fill="#1e293b"/>')
         svg_lines.append(f'  <rect x="{bar_start_x}" y="{y+2}" width="{bar_w}" height="18" rx="4" fill="{bar_color}"/>')
         # Label the bar with the figure it was given, never with the axis-clamped width: printing the

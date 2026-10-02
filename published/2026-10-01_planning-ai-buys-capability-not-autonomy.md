@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/planning-ai-buys-capability-not-autonomy/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Lit windows of an empty industrial operations center at dusk."
-image_caption: "While companies invest heavily in planning technology, humans remain the ultimate decision-makers."
+image_alt: "An industrial control building illuminated at dusk with warm light from windows."
+image_caption: "Firms are heavily investing in planning automation to support human decisions rather than achieve full autonomy."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T13:09:42Z",
+  "updated_at": "2026-10-02T10:42:19Z",
   "base_url": "https://pressflow.aichieve.net/published",
   "articles": [
     {
@@ -187,6 +187,19 @@
       "h2_topics": [],
       "target_persona": "enterprise_cai",
       "date": "2026-10-01"
+    },
+    {
+      "slug": "2026-10-02_moss-landing-burns-home-becomes-the-grid",
+      "title": "Moss Landing Burns Again: Homeowners Become the Grid",
+      "url": "https://pressflow.aichieve.net/published/2026-10-02_moss-landing-burns-home-becomes-the-grid.md",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-02"
     }
   ]
 }

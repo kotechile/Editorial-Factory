@@ -1,7 +1,18 @@
 {
   "slug": "planning-ai-buys-capability-not-autonomy",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "architectural_night",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "architectural photograph of a modern industrial control center at blue hour. A wide shot from outside showing lit windows as the only warm light against the deep blue ambient dusk. Long-exposure calm with no moving figures, clean geometry, empty chairs at consoles implying human oversight. Deep shadows, quiet atmosphere.",
+      "task_id": "4940407247cf9520e190612076fe248a",
+      "sha256": "sha256:c766d2bbfb22648d637d5fc3fb97800d",
+      "generated_at": "2026-10-01T14:16:58+00:00",
+      "source_hash": "sha256:26f499300d9683416436f0af34d946fd"
+    }
+  ],
   "style": "architectural_night",
   "style_label": "Lit architecture at dusk",
   "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
@@ -10,14 +21,14 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "architectural photograph of a modern industrial control center at blue hour. A wide shot from outside showing lit windows as the only warm light against the deep blue ambient dusk. Long-exposure calm with no moving figures, clean geometry, empty chairs at consoles implying human oversight. Deep shadows, quiet atmosphere.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, light bulb, handshake, chess, puzzle piece, glowing brain, rocket, dartboard, scales of justice, gavel, thumbs up, people, logos, watermarks, daylight",
-  "rationale": "The article is about operations leaders spending millions on planning automation, but retaining human control. An empty control room or lit office floor at dusk implies the system running in the background while human operators maintain oversight, capturing the 'capability, not autonomy' angle.",
+  "prompt": "architectural photograph of a modern industrial control center or planning office building at blue hour, lit windows as the only warm light, long-exposure calm with no moving figures, deep blue ambient light, clean geometry, small human scale implied by a doorway, 16:9 anamorphic look",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, people, logos, light bulbs, handshakes, puzzles, glowing brains, rockets",
+  "rationale": "The story highlights significant investment in AI planning automation that largely supports human decisions rather than replacing them. An architectural night scene representing a control room or planning center implies automated capacity running while people are present or sleeping, perfectly capturing the theme of tech adoption in operations.",
   "cue": "make even 10% of planning decisions",
-  "subject": "a glowing operations control room or office floor viewed from outside at blue hour",
-  "alt_text": "Lit windows of an empty industrial operations center at dusk.",
-  "caption": "While companies invest heavily in planning technology, humans remain the ultimate decision-makers.",
-  "title": "planning-automation-oversight-night",
+  "subject": "a modern industrial control center or planning office building at blue hour",
+  "alt_text": "An industrial control building illuminated at dusk with warm light from windows.",
+  "caption": "Firms are heavily investing in planning automation to support human decisions rather than achieve full autonomy.",
+  "title": "AI Planning Investment Control Center Dusk",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,21 +38,21 @@
   "local_path": "context/assets/illustrations/planning-ai-buys-capability-not-autonomy/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 386598,
-  "sha256": "sha256:c766d2bbfb22648d637d5fc3fb97800d",
+  "bytes": 436999,
+  "sha256": "sha256:6d0faf130671b59774c72976c3151731",
   "source_hash": "sha256:26f499300d9683416436f0af34d946fd",
   "source_chars": 4339,
-  "task_id": "4940407247cf9520e190612076fe248a",
+  "task_id": "1841661b8b219ba9b7a45968da53e096",
   "credits": 5.0,
-  "cost_ms": 55,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/4940407247cf9520e190612076fe248a_1790864215646.jpg",
+  "cost_ms": 64,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1841661b8b219ba9b7a45968da53e096_1790864545790.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "architectural photograph of a modern industrial control center at blue hour. A wide shot from outside showing lit windows as the only warm light against the deep blue ambient dusk. Long-exposure calm with no moving figures, clean geometry, empty chairs at consoles implying human oversight. Deep shadows, quiet atmosphere.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, light bulb, handshake, chess, puzzle piece, glowing brain, rocket, dartboard, scales of justice, gavel, thumbs up, people, logos, watermarks, daylight.",
+      "prompt": "architectural photograph of a modern industrial control center or planning office building at blue hour, lit windows as the only warm light, long-exposure calm with no moving figures, deep blue ambient light, clean geometry, small human scale implied by a doorway, 16:9 anamorphic look\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, people, logos, light bulbs, handshakes, puzzles, glowing brains, rockets.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-01T14:16:58+00:00"
+  "generated_at": "2026-10-01T14:22:28+00:00"
 }

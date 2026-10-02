@@ -14,6 +14,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import article_assets as aa  # noqa: E402
+import chart_generator as cg  # noqa: E402
 
 PASS, FAIL = [], []
 
@@ -121,6 +122,50 @@ check("one pass yields frontmatter metadata AND the chart",
       "meta_description:" in whole and "<svg" in whole and "meta_description_source: derived_from_lead" in whole)
 check("...and is idempotent", aa.ensure_assets(whole)[0] == whole)
 
+print("\nchart labels — bounded by the renderer's own allowance")
+
+
+def row_labels(markdown: str) -> list[str]:
+    """The chart's row labels (x=20, but not the title at y=36 nor the caption at y=52)."""
+    match = re.search(r"<svg\b[\s\S]*?</svg>", markdown)
+    if not match:
+        return []
+    return [text for y, text in re.findall(r'<text x="20" y="(\d+)"[^>]*>([^<]*)</text>', match.group(0))
+            if y not in ("36", "52")]
+
+
+LONG_LABEL = ARTICLE.replace(
+    "- **13% / $2.50:** The price jump for both ad-free tiers [1].\n",
+    "- **37%:** Autonomous agentic workflow adoption across regulated enterprises [1].\n")
+long_series, _ = aa.chart_series(LONG_LABEL)
+check("a sentence-fragment metric is reduced to a name, not handed back for ellipsis",
+      all(len(label) <= cg.LABEL_MAX for label, _, _ in long_series), str(long_series))
+injected_long, _ = aa.inject_chart(LONG_LABEL)
+check("...so the rendered row labels carry no ellipsis (a figure readers quote verbatim)",
+      bool(row_labels(injected_long)) and all("\u2026" not in label for label in row_labels(injected_long)),
+      str(row_labels(injected_long)))
+check("...and every corpus label fits the same ceiling",
+      all(len(label) <= cg.LABEL_MAX
+          for path in sorted(pathlib.Path(aa.__file__).parent.parent.glob("published/*.md"))
+          for label, _, _ in aa.chart_series(path.read_text(encoding="utf-8"))[0]),
+      "a published artifact charts a label longer than LABEL_MAX")
+
+print("\nchart title — the artifact's own, the caller's, or the body's own heading")
+body_only = aa.split_frontmatter(ARTICLE)[1]
+titled, _ = aa.inject_chart(body_only, title="The artifact's own headline")
+check("a chart built from a frontmatter-less body keeps the caller's headline",
+      "The artifact&#x27;s own headline" in titled, titled[:160])
+check("...and the generic caption is not used when a real title is available",
+      "Verified figures" not in titled)
+check("the generic caption is the last resort, only when nothing names the article",
+      "Verified figures" in aa.inject_chart(body_only)[0])
+head = "# A Heading The Body Carries\n\n" + body_only
+check("a body's own top heading is used when no caller title is passed",
+      "A Heading The Body Carries" in aa.inject_chart(head)[0])
+check("a title the markdown already carries beats the caller's",
+      "Verified figures" not in aa.inject_chart(ARTICLE, title="CALLER MUST LOSE")[0]
+      and "CALLER MUST LOSE" not in aa.inject_chart(ARTICLE, title="CALLER MUST LOSE")[0])
+
 print("\nreal artifacts (read-only)")
 for path in sorted(pathlib.Path(aa.__file__).parent.parent.glob("published/*.md")):
     text = path.read_text(encoding="utf-8")
@@ -128,6 +173,17 @@ for path in sorted(pathlib.Path(aa.__file__).parent.parent.glob("published/*.md"
     derived, _ = aa.ensure_seo_metadata(dict(fm2), body2)
     check(f"{path.name[:44]}: every article ends up with a meta_description",
           bool(derived.get("meta_description")) or not body2.strip())
+    # A pass over a complete artifact must not rewrite it: the frontmatter is YAML and the parser
+    # is a line-based `key: value` reader, so re-serialising the block from that dict destroys a
+    # `sources:` list and churns the quoting of every line the pipeline wrote quoted.
+    enriched, _enotes = aa.ensure_assets(text)
+    check(f"  ...a pass that has nothing to derive leaves the artifact byte-identical",
+          enriched == text,
+          f"{len(text)} -> {len(enriched)} chars")
+    check(f"  ...and no frontmatter line is re-serialised (list items survive verbatim)",
+          [line for line in text.split("---")[1].splitlines() if line.strip()]
+          == [line for line in enriched.split("---")[1].splitlines() if line.strip()]
+          or enriched == text, "a frontmatter line was rewritten")
     series2, reason2 = aa.chart_series(text)
     charted = len(series2) >= aa.CHART_MIN_POINTS
     check(f"  ...chart only when the numbers section is a series "
