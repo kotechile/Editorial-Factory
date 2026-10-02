@@ -298,6 +298,19 @@ raises("refused: a clay render of 'simplified forms' with no mechanism in the fr
                   "clear physical arrangement, studio render on a neutral seamless backdrop, matte "
                   "muted palette, single soft key light.")),
            ARTICLE, allowed=ic.allowed_styles([])), "bare geometry")
+raises("refused: cut-paper collage of torn paper scraps with no symbolic mechanism",
+       lambda: ic.validate_brief(json.loads(brief_json(
+           style_id="paper_collage", model="nanobanana",
+           prompt="Cut-paper editorial collage, layered torn paper scraps and strips in muted ink colours, "
+                  "clean silhouette edges against a plain background, no legible print.")),
+           ARTICLE, allowed=ic.allowed_styles([])), "bare geometry")
+check("...but a paper collage depicting a symbolic certificate silhouette is commissionable",
+      ic.validate_brief(json.loads(brief_json(
+          style_id="paper_collage", model="nanobanana",
+          prompt="Minimalist editorial cut-paper collage featuring the silhouette of a stock certificate "
+                 "and an hourglass, halftone newsprint texture, clean edges, generous negative space, "
+                 "no legible print.")),
+          ARTICLE, allowed=ic.allowed_styles([])).style_id == "paper_collage")
 check("...but a primitive shape carried by a named mechanism is commissionable",
       ic.validate_brief(json.loads(brief_json(
           style_id="component_assembly", model="nanobanana",
@@ -344,6 +357,8 @@ check("...and a repeat inside the window is not in the allowed set",
       "editorial_macro" not in seen[0].split("MUST choose one of: ")[1].split("\n")[0])
 check("...and the commission carries the domain-grounding mandate",
       "DOMAIN GROUNDING" in seen[0] and "bare geometry" in seen[0])
+check("...and the commission anchors on Headline and Excerpt",
+      "VISUAL ANCHOR (READ THIS FIRST):" in seen[0] and "Headline:" in seen[0] and "Excerpt:" in seen[0])
 
 print("\nrotation")
 history = ["editorial_macro", "cinematic_still", "clay_render", "document_flatlay", "paper_collage"]

@@ -132,7 +132,8 @@ _PRIMITIVE_RE = re.compile(
     r"polygons?|tori|torus|discs?|disks?|blobs?|slabs?|bars?|rods?|cuboids?|hexagons?|pyramids?|"
     r"blocks?|geometric\s+(?:shapes?|forms?|volumes?|solids?|bodies)|"
     r"abstract\s+(?:shapes?|forms?|volumes?)|"
-    r"(?:simple|simplified|plain|basic|primitive|bare)\s+(?:shapes?|forms?|volumes?))\b", re.I)
+    r"(?:simple|simplified|plain|basic|primitive|bare|unformed|amorphous)\s+(?:shapes?|forms?|volumes?|scraps?|strips?)|"
+    r"(?:torn|cut)\s+(?:paper\s+)?(?:scraps?|shreds?|strips?))\b", re.I)
 # A recognisable physical engineering part. Deliberately broad: the rule is a floor that stops
 # "a grey cube" from being a commission, not a vocabulary exam — the director's mandate does the
 # finer work of picking the RIGHT mechanism for the story.
@@ -144,7 +145,11 @@ _MECHANISM_RE = re.compile(
     r"conduits?|harness(?:es)?|circuits?|busbars?|panels?|workstations?|terminals?|keyboards?|"
     r"consoles?|inspection|checkpoints?|gates?|end[- ]effectors?|gearbox(?:es)?|turbines?|rotors?|"
     r"stators?|conveyors?|gantr(?:y|ies)|cranes?|rails?|truss(?:es)?|girders?|scaffolding|"
-    r"pallets?|crates?|drums?|tanks?|machined|milled|stamped|bolted|riveted|welded)\b", re.I)
+    r"pallets?|crates?|drums?|tanks?|machined|milled|stamped|bolted|riveted|welded|"
+    r"certificate|certificates|ledger|ledgers|hourglass|hourglasses|envelope|envelopes|"
+    r"safe|safes|vault|vaults|padlock|padlocks|dial|dials|gauge|gauges|meter|meters|caliper|calipers|"
+    r"balance\s+scale|weighing\s+scale|token|tokens|chit|chits|document|documents|"
+    r"document|documents|filing|filings|contract|contracts|folio|folios)\b", re.I)
 _NON_ENGLISH_RE = re.compile(r"[\u0400-\u04FF\u4E00-\u9FFF\u0600-\u06FF\u3040-\u30FF\uAC00-\uD7AF]")
 _ALT_PREFIX_RE = re.compile(r"^\s*(an?\s+)?(image|picture|photo|photograph|illustration|graphic|render)\s+(of|showing)\b", re.I)
 # The same "medium of/showing" opening, reached through one or two adjectives ("a matte clay 3D
@@ -248,10 +253,11 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         id="paper_collage", label="Editorial paper collage",
         when="the article is a synthesis of two colliding developments, and the collision itself is "
              "the story",
-        medium="cut-paper editorial collage, layered torn and cut shapes, halftone newsprint texture",
-        craft="two or three elements that visibly oppose or interlock, printed-texture paper in muted "
-              "ink colours, clean silhouette edges against a plain background, no legible print",
-        keywords=("collage", "cut-paper", "cut paper", "torn", "halftone", "newsprint"),
+        medium="minimalist editorial cut-paper collage, crisp cut-out object silhouettes, halftone newsprint texture",
+        craft="two or three stylized cut-paper object silhouettes (such as an hourglass, certificate, key, or mechanism) "
+              "layered deliberately against a solid neutral paper backdrop; muted modern editorial palette, crisp clean edges, "
+              "generous negative space, never bare geometry or random torn scraps, no legible print",
+        keywords=("collage", "cut-paper", "cut paper", "silhouette", "cut-out", "cutout", "torn", "halftone", "newsprint"),
         model="nanobanana"),
     Style(
         id="long_lens_industry", label="Compressed telephoto industry",
@@ -321,6 +327,29 @@ def _section(body: str, marker: str) -> str:
     """The text between one `<!-- marker -->` and the next section marker or heading."""
     match = re.search(rf"<!--\s*{marker}\s*-->\s*(.*?)(?=\n<!--|\n##\s|\Z)", body, re.S | re.I)
     return (match.group(1) if match else "").strip()
+
+
+def article_excerpt(md: str) -> str:
+    """The article's excerpt or summary (meta_description, lead section, or first real paragraph)."""
+    fm, body = split_frontmatter(md)
+    if (fm.get("meta_description") or "").strip():
+        return fm["meta_description"].strip()
+    lead = _section(body, "lead")
+    if lead:
+        lead = re.sub(r"\[\d+\]", "", lead)
+        return re.sub(r"\s+", " ", lead).strip()
+    for block in re.sub(r"^---.*?---", "", body, flags=re.S).split("\n"):
+        text = block.strip()
+        if not text or text.startswith(("#", "|", ">", "-", "*", "```", "<!--")):
+            continue
+        text = re.sub(r"\[([^\]]+)\]\([^)\s]+\)", r"\1", text)
+        text = re.sub(r"\[\d+\]", "", text)
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = re.sub(r"[*`_]", "", text)
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text.split()) >= 6:
+            return text
+    return (fm.get("one_big_thing") or "").strip()
 
 
 def article_core_text(md: str) -> str:
@@ -615,6 +644,8 @@ def gemini_key() -> str:
 def director_prompt(article_md: str, *, history: list[str], allowed: tuple) -> str:
     """The commission the art director answers. Everything it may rely on is in here."""
     fm, body = split_frontmatter(article_md)
+    title = (fm.get('title') or '').strip()
+    excerpt = article_excerpt(article_md)
     headings = re.findall(r"^##\s+(.+)$", body, re.M)[:6]
     menu = "\n".join(
         f"- {s.id} ({s.label}): reach for it when {s.when}. Medium: {s.medium}. "
@@ -636,8 +667,14 @@ shows as the article's card. You are not a preset — you read THIS text and pic
 deserves, and you change treatment between articles so the desk does not look like one filter \
 over forty posts.
 
-ARTICLE
-Title: {fm.get('title', '')}
+VISUAL ANCHOR (READ THIS FIRST):
+Headline: {title}
+Excerpt: {excerpt}
+The image MUST visually represent the core premise stated in this Headline and Excerpt. When a \
+reader views the image alongside the headline and excerpt, the subject or visual metaphor must make \
+immediate, unmistakable sense.
+
+ARTICLE DETAILS
 Vertical: {fm.get('vertical', '')} | Persona: {fm.get('persona', '')}
 One big thing: {fm.get('one_big_thing', '')}
 Lead: {_section(body, 'lead')[:700]}
@@ -654,14 +691,24 @@ You MUST choose one of: {', '.join(allowed)} — a treatment may not repeat with
 {HISTORY_WINDOW} illustrations.
 {readmit_line}
 DOMAIN GROUNDING (the desk's most common failure, and it is checked in code, not just asked for)
-When the story is abstract — software, AI agents, a data flow, a cost model, a policy shift — do
-NOT build the frame from bare geometry. Cubes, spheres, wedges, slabs, rectangles and "simplified
-forms" are not subjects: a reader cannot connect them to the article, and the brief is refused.
-Always reach for a recognisable physical engineering analogy instead: modular server components or
-blades in a rack, a bay with its cover off, an unlatched inspection gate or latch, a relay switch, a
-solenoid or servo, an interlocking connector, a machine linkage, a manifold or conduit, a workstation
-terminal, a sensor head. Name that mechanism in the prompt's own words — the mechanism is what
-grounds the metaphor in this story.
+1. NEVER DEPICT A GENERIC OFFICE WORKER AT A DESK: Do not default to stock photos of a person \
+typing at a laptop, sitting at an office desk, or in a conference room. No people facing camera.
+2. ROTATE MEDIUMS & DO NOT DEFAULT ONLY TO REAL-LIFE PHOTOS: The publication relies on a rich \
+mix of treatments — photographic (macro, architectural, document still life) AND illustrative or \
+constructed (matte 3D clay renders, technical isometric cutaways, studio object shots, paper collages).
+3. EVERY MEDIUM MUST DEPICT A RECOGNIZABLE SUBJECT: In every treatment, the subject must be a \
+recognizable physical object, mechanical assembly, or clear symbolic silhouette derived from the \
+Headline and Excerpt (e.g. an unexercised options certificate alongside an hourglass, an interlocking \
+rack module, a brass padlock on a ledger, a cutaway conveyor).
+4. NO BARE SHAPES OR ABSTRACT SCRAPS: Cubes, spheres, wedges, slabs, rectangles, amorphous blobs, \
+and random torn paper scraps are not subjects. A prompt whose subject is bare geometry or unformed \
+paper scraps is refused. Ground the subject in a tangible mechanism or symbolic object.
+When the story is abstract — software, finance, AI agents, contracts, a cost model — do NOT build \
+the frame from bare geometry. Always reach for a recognisable physical engineering or conceptual \
+analogy instead: modular server components or blades in a rack, an unlatched inspection gate, an \
+hourglass, an options certificate with an un-struck seal, an interlocking connector, a manifold. Name \
+that mechanism or object in the prompt's own words — the mechanism is what grounds the metaphor in \
+this story.
 
 HARD RULES
 - Depict a concrete noun from this story (the material, part, place, document or mechanism that \
@@ -670,7 +717,7 @@ see the grounding rule above.
 - No text, letters, numbers, wordmarks, signage or UI in the image: generated lettering is \
 unreadable. Forbid them in `negative_prompt`.
 - No real company's logo, packaging or product, and no recognisable real person. Depict the \
-mechanism instead. No {', '.join(CLICHE_BAN)}.
+mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
 - Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \
@@ -747,7 +794,7 @@ def parse_json_object(text: str) -> dict:
 
 def style_history(ledger: pathlib.Path | None = None, limit: int = 12,
                   exclude_slug: str | None = None) -> list[str]:
-    """Treatments used most recently, newest first — read from the desk's own illustration ledger.
+    r"""Treatments used most recently, newest first — read from the desk's own illustration ledger.
 
     The style cell is backticked in the ledger (`| \`editorial_macro\` |`), so the cell is
     un-backticked before the catalogue lookup: matching the raw cell found nothing and the rotation

@@ -54,9 +54,11 @@ articles were illustrated as "a rectangle with a colour band" and "a block resti
 process diagrams and conceptual models — with a mechanism in the frame, never a bare shape.
 
 ## 3. Non-negotiable direction rules (enforced in code, not just in the prompt)
-1. **One concrete noun from the story.** The brief must carry a `cue`: a phrase of ≤10 words copied
-   verbatim from the article that drove the treatment. A cue that is not in the article is refused —
-   the direction has to come from *this* text, not from the model's idea of the topic.
+1. **One concrete noun from the story, anchored by the Title + Excerpt.** The art director
+   reads the Headline and Excerpt first to establish the visual concept. The brief must carry a `cue`:
+   a phrase of ≤10 words copied verbatim from the article that drove the treatment. The image must
+   visually symbolize the concept in the Headline + Excerpt across all treatments — never generic office
+   workers at desks, and never unformed paper scraps or bare geometry.
 2. **No legible text, ever.** No text, letters, numbers, wordmarks, signage or UI in the frame
    (they render as rubble) — the negative prompt must forbid them explicitly and the positive
    prompt may not *ask* for them ("a sign reading…" is refused).
