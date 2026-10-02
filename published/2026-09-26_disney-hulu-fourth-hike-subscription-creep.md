@@ -6,12 +6,12 @@ one_big_thing: "Disney+ and Hulu lifted their ad-free tier 13% to $21.49 a month
 date: 2026-09-26
 slug: disney-hulu-fourth-hike-subscription-creep
 meta_title: "Disney+ and Hulu Just Raised Prices 13% — Right After…"
-meta_title_source: "derived_from_title"
+meta_title_source: derived_from_title
 meta_description: "On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent to $21.49 a month. This marks the fourth price hike in four years."
-meta_description_source: "derived_from_lead"
+meta_description_source: derived_from_lead
 image_path: "context/assets/illustrations/disney-hulu-fourth-hike-subscription-creep/featured.png"
-image_style: "paper_collage"
-image_model: "nanobanana"
+image_style: paper_collage
+image_model: nanobanana
 image_alt: "Layered cut-paper collage of a billing invoice interlocking with a rising growth chart in muted ink colors."
 image_caption: "The latest ad-free tier price hike lands just weeks after combined operating profits for the services more than doubled."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
@@ -28,26 +28,26 @@ On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent
 **The big picture:** Disney did not raise its prices because its own costs went up. It raised prices because its streaming business is finally making real money. Disney+ and Hulu saw their combined operating income jump 116 percent compared to last year. The total reached $712 million, while their revenue grew 11 percent [6][7]. The part I keep circling is the timing of this move. The price follows the profit, and the higher bill lands right on the subscriber. Disney knows that most people will just let the charge roll over next month. The auto-renew system is a powerful tool for companies because it relies on human habits. People sign up for a show, forget to cancel, and then pay the higher rate for months before they notice the change.
 
 **By the numbers:**
-- **13% / $2.50:** The price jump for both ad-free Disney+ and Hulu, taking each service to $21.49 a month [1].
-- **4% / $0.50:** The tiny increase for the ad-supported tier, which now costs $12.49 a month and steers viewers toward ads [2].
-- **+116%:** The year-over-year growth in combined operating income for Disney+ and Hulu, hitting $712 million [6].
-- **~3×:** The rate that streaming prices have outpaced the broader inflation rate since 2022 [4].
+- **13% / $2.50 — Ad-free Disney+ & Hulu:** Price jump taking each service to $21.49 a month [1].
+- **4% / $0.50 — Ad-supported tier:** Tiny increase to $12.49 a month that steers viewers toward ads [2].
+- **+116% — Operating income:** Combined operating income for Disney+ and Hulu hit $712 million [6].
+- **~3× — Streaming inflation:** Rate that streaming prices outpaced general inflation since 2022 [4].
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
-  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Verified figures</text>
+  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Disney+ and Hulu Just Raised Prices 13% — Right After…</text>
   <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
   <!-- Row 1 -->
-  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">The price jump for both…</text>
-  <rect x="220" y="70" width="320" height="18" rx="4" fill="#1e293b"/>
-  <rect x="220" y="70" width="41" height="18" rx="4" fill="#818cf8"/>
-  <text x="271" y="84" fill="#f1f5f9" font-size="13" font-weight="600">13%</text>
-  <text x="325" y="84" fill="#64748b" font-size="11">([1])</text>
+  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">Ad-free Disney+ &amp; Hulu</text>
+  <rect x="240" y="70" width="300" height="18" rx="4" fill="#1e293b"/>
+  <rect x="240" y="70" width="39" height="18" rx="4" fill="#818cf8"/>
+  <text x="289" y="84" fill="#f1f5f9" font-size="13" font-weight="600">13%</text>
+  <text x="343" y="84" fill="#64748b" font-size="11">([1])</text>
   <!-- Row 2 -->
-  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">The tiny increase for the…</text>
-  <rect x="220" y="118" width="320" height="18" rx="4" fill="#1e293b"/>
-  <rect x="220" y="118" width="12" height="18" rx="4" fill="#818cf8"/>
-  <text x="242" y="132" fill="#f1f5f9" font-size="13" font-weight="600">4%</text>
-  <text x="296" y="132" fill="#64748b" font-size="11">([2])</text>
+  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">Ad-supported tier</text>
+  <rect x="240" y="118" width="300" height="18" rx="4" fill="#1e293b"/>
+  <rect x="240" y="118" width="12" height="18" rx="4" fill="#818cf8"/>
+  <text x="262" y="132" fill="#f1f5f9" font-size="13" font-weight="600">4%</text>
+  <text x="316" y="132" fill="#64748b" font-size="11">([2])</text>
 </svg>
 
 <!-- tactical-insight -->

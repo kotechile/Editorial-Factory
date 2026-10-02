@@ -63,8 +63,8 @@ def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_
         f'  <text x="{padding}" y="52" fill="#94a3b8" font-size="12">{html.escape(subtitle)}</text>'
     ]
 
-    bar_max_width = 320
-    bar_start_x = 220
+    bar_max_width = 300
+    bar_start_x = 240
 
     for idx, (label, val, note) in enumerate(items):
         y = header_height + (idx * row_height) + 12
@@ -75,7 +75,7 @@ def generate_svg_bar_chart(title: str, items: List[Tuple[str, float, str]], max_
         bar_color = "#38bdf8" if "success" in label.lower() or "retention" in label.lower() else "#f43f5e" if "fail" in label.lower() or "drift" in label.lower() else "#818cf8"
         
         svg_lines.append(f'  <!-- Row {idx+1} -->')
-        svg_lines.append(f'  <text x="{padding}" y="{y+16}" fill="#e2e8f0" font-size="13" font-weight="500">{html.escape(_shorten(label))}</text>')
+        svg_lines.append(f'  <text x="{padding}" y="{y+16}" fill="#e2e8f0" font-size="13" font-weight="500">{html.escape(_shorten(label, 32))}</text>')
         svg_lines.append(f'  <rect x="{bar_start_x}" y="{y+2}" width="{bar_max_width}" height="18" rx="4" fill="#1e293b"/>')
         svg_lines.append(f'  <rect x="{bar_start_x}" y="{y+2}" width="{bar_w}" height="18" rx="4" fill="{bar_color}"/>')
         # Label the bar with the figure it was given, never with the axis-clamped width: printing the

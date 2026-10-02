@@ -24,7 +24,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 - **SEO frontmatter is optional to author and never invented:** if the brief carries a keyword set, write `meta_title` (≤60 chars) and `meta_description` (140–160 chars) grounded in the article's own headline and lead; if you have neither, omit the keys. The persistence pass derives both from your headline and lead paragraph (`scripts/article_assets.py`) so the CMS excerpt and the frontends' `<meta name="description">` are never empty — do not pad them with claims the article does not make.
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
-- **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins (e.g. `- **40% routed:** ...`) that deliver the load-bearing quantitative facts before the tactical moves.
+- **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash or colon (e.g. `- **40% — Routing accuracy:** ...` or `- **13% / $2.50 — Ad-free Disney+ & Hulu:** ...`). This delivers load-bearing data cleanly and ensures automated SVG charts display meaningful, untruncated labels.
 - **Observer voice (gated):** the body is a comment on the news, not a verdict and not a playbook:
   each interpreting section (`<!-- tension -->`, `<!-- tactical-insight -->`, `<!-- nuanced-takeaway -->`)
   carries a first-person observer cue, opinion is labelled as opinion, and the tactical section reports
@@ -79,9 +79,9 @@ slug: <slug>
 <the systemic shift / why now>
 
 **By the numbers:**
-- **<Stat 1>:** <concrete context and citation [1]>
-- **<Stat 2>:** <concrete context and citation [2]>
-- **<Stat 3>:** <concrete context and citation [3]>
+- **<Stat 1> — <Metric Title>:** <concrete context and citation [1]>
+- **<Stat 2> — <Metric Title>:** <concrete context and citation [2]>
+- **<Stat 3> — <Metric Title>:** <concrete context and citation [3]>
 
 <!-- tactical-insight -->
 <the doable moves — structured cleanly for the persona>

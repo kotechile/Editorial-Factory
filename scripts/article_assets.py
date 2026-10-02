@@ -94,6 +94,76 @@ def _bullets(block: str) -> list[str]:
     return [m.group(1).strip() for line in block.splitlines() if (m := _BULLET.match(line))]
 
 
+def clean_metric_label(figure: str, rest: str) -> str:
+    """Derive a concise, human-readable metric label for charts.
+
+    Prefers structured titles, strips conversational lead-ins ('The price jump for...'),
+    and trims trailing subordinate clauses so the chart displays a clean metric name
+    rather than a truncated sentence fragment.
+    """
+    # 0. Check if metric name is embedded in the bold figure itself: e.g. "13% — Ad-free Disney+ & Hulu"
+    for sep in [" — ", " – ", " - "]:
+        if sep in figure:
+            for p in figure.split(sep):
+                if "%" not in p and len(p.strip(" :—-")) >= 3:
+                    cand = p.strip(" :—-")
+                    if len(cand) <= 40:
+                        return cand
+
+    text = rest.strip()
+    # 1. Bold metric title: **Metric Name**: description or **Metric Name** — description
+    bold_m = re.match(r"^\*\*(.+?)\*\*\s*:?\s*(.*)$", text)
+    if bold_m:
+        cand = bold_m.group(1).strip(" :—-")
+        if 3 <= len(cand) <= 40:
+            return cand
+
+    # 2. Separator like ' — ', ' – ', ' - '
+    for sep in [" — ", " – ", " - "]:
+        if sep in text:
+            cand = text.split(sep)[0].strip(" :—-")
+            cand = re.sub(r"\[\d+\]", "", cand).strip()
+            if 3 <= len(cand) <= 40:
+                return cand
+
+    # 3. Clean citations and trailing punctuation
+    text = re.sub(r"\[\d+\]", "", text).strip(" ,;:—.-/")
+
+    # 4. Cut at sentence end, commas, semicolons, or subordinate clause markers
+    clause = re.split(r"[,;.]|\s+(?:taking|hitting|reaching|costing|which|down from|compared to|fell to|dropped to|rose to|cut to|to\s+[\$0-9])\b", text, flags=re.I)[0].strip()
+
+    # 5. Strip common conversational filler prefixes
+    filler_re = r"^(?:the\s+)?(?:tiny\s+|huge\s+|massive\s+|slight\s+|modest\s+)?(?:price\s+jump|price\s+hike|increase|growth|drop|fall|cut|reduction)\s+(?:for\s+(?:both\s+|the\s+)?|in\s+(?:the\s+)?|of\s+(?:the\s+)?)"
+    stripped = re.sub(filler_re, "", clause, flags=re.I).strip(" ,;:—.-/")
+
+    filler_re2 = r"^(?:the\s+)?(?:year-over-year\s+|yoy\s+)?(?:growth|increase|drop)\s+(?:for\s+(?:both\s+|the\s+)?|in\s+(?:the\s+)?|of\s+(?:the\s+)?)"
+    stripped = re.sub(filler_re2, "", stripped, flags=re.I).strip(" ,;:—.-/")
+
+    filler_re3 = r"^(?:the\s+)?(?:tiny\s+|huge\s+|massive\s+|slight\s+|modest\s+)?(?:rate\s+that|rate\s+prices\s+outpaced|share\s+of|rate\s+of)\s+"
+    stripped = re.sub(filler_re3, "", stripped, flags=re.I).strip(" ,;:—.-/")
+
+    # Clean action verbs like 'dropped', 'cut'
+    stripped = re.sub(r"\b(?:dropped|cut|slashed)\b", "", stripped, flags=re.I).strip(" ,;:—.-/")
+
+    if len(stripped) > 28 and " for " in stripped.lower():
+        stripped = re.split(r"\s+for\s+", stripped, flags=re.I)[0].strip()
+
+    res = stripped if len(stripped) >= 4 else clause
+    if not res:
+        res = figure
+
+    # Strip dangling trailing prepositions/conjunctions
+    dangling = re.compile(r"\s+(?:to|for|in|of|and|or|by|with|at|the|a|an)\s*$", flags=re.I)
+    while dangling.search(res):
+        res = dangling.sub("", res).strip(" ,;:—.-/")
+
+    if len(res) <= 32:
+        return res[0].upper() + res[1:] if len(res) > 1 else res.upper()
+
+    cut = res[:30].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return (cut or res[:30]).strip()
+
+
 def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:
     """(items, notes) — the series the numbers section states, and what was left out and why.
 
@@ -125,10 +195,9 @@ def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:
             # 0-100 axis as the shares beside it is a wrong comparison dressed as a chart.
             skipped.append(f"above 100%, so it is a growth rate not a share: {figure}")
             continue
-        label = re.split(r"[.]\s", rest)[0] if rest else figure
-        label = re.sub(r"\[\d+\]", "", label).strip(" ,;:—-")
+        label = clean_metric_label(figure, rest)
         citations = " ".join(re.findall(r"\[\d+\]", rest or ""))
-        items.append((label[:64] or figure, value, citations))
+        items.append((label, value, citations))
 
     if len(items) < 2:
         return items, (f"{len(items)} chartable percentage point(s) in the numbers section "
@@ -137,10 +206,13 @@ def chart_series(body: str) -> tuple[list[tuple[str, float, str]], str]:
     return items[:CHART_MAX_POINTS], ("skipped: " + "; ".join(skipped) if skipped else "")
 
 
-def inject_chart(md: str, subtitle: str = CHART_SUBTITLE) -> tuple[str, str]:
+def inject_chart(md: str, subtitle: str = CHART_SUBTITLE, force: bool = False) -> tuple[str, str]:
     """(markdown, note). Idempotent: an artifact that already carries an <svg> is left alone."""
     if re.search(r"<svg\b", md, re.I):
-        return md, "chart already present — left alone"
+        if not force:
+            return md, "chart already present — left alone"
+        md = re.sub(r"\s*<svg[\s\S]*?</svg>\s*", "\n\n", md)
+
 
     series, notes = chart_series(md)
     if len(series) < CHART_MIN_POINTS:
@@ -242,13 +314,13 @@ def ensure_seo_metadata(fm: dict[str, str], body: str) -> tuple[dict[str, str], 
 # whole-artifact pass (what the publish path calls)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def ensure_assets(md: str, chart: bool = True) -> tuple[str, list[str]]:
+def ensure_assets(md: str, chart: bool = True, force_chart: bool = False) -> tuple[str, list[str]]:
     """Enrich an artifact: frontmatter SEO fields + an inline chart. Returns (markdown, notes)."""
     fm, body = split_frontmatter(md)
     fm, notes = ensure_seo_metadata(fm, body)
     md = _reemit_frontmatter(fm, body) if fm else md
     if chart:
-        md, note = inject_chart(md)
+        md, note = inject_chart(md, force=force_chart)
         notes.append(note)
     return md, notes
 
@@ -291,6 +363,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("files", nargs="*", help="article markdown files")
     parser.add_argument("--apply", action="store_true", help="write the assets into the files")
+    parser.add_argument("--force-chart", action="store_true", help="regenerate chart even if <svg> exists")
     parser.add_argument("--check", action="store_true", help="exit 1 when an asset is missing")
     args = parser.parse_args()
 
@@ -303,7 +376,7 @@ def main() -> int:
         text = path.read_text(encoding="utf-8")
         check_only = args.check and not args.apply
         if not check_only and args.apply:
-            enriched, notes = ensure_assets(text)
+            enriched, notes = ensure_assets(text, force_chart=args.force_chart)
             if enriched != text:
                 path.write_text(enriched, encoding="utf-8")
             print(f"  {path.name}")

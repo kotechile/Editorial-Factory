@@ -1,22 +1,20 @@
 ---
-title: Token Prices Just Halved. The CFO Still Can't Read the Bill.
+title: "Token Prices Just Halved. The CFO Still Can't Read the Bill."
 vertical: enterprise_ai_finops
 persona: enterprise_cai
 one_big_thing: "Cheaper tokens don't fix an unexplainable bill — the unit of account must move from cost-per-token to cost-per-resolved-work-unit."
 date: 2026-10-01
 slug: token-prices-halved-cfo-cant-read-bill
 synthesis: true
-sources:
-  - https://openai.com/index/introducing-gpt-6-sol-and-luna/
-  - https://www.anthropic.com/news/claude-opus-5-5
-  - https://www.finops.org/insights/state-of-tokenomics-september-2026/
+sources: ""
+- https: "//www.finops.org/insights/state-of-tokenomics-september-2026/"
 meta_title: "Token Prices Just Halved. The CFO Still Can't Read the Bill."
-meta_title_source: "derived_from_title"
+meta_title_source: derived_from_title
 meta_description: "OpenAI and Anthropic slashed frontier Artificial Intelligence (AI) token prices on September 22."
-meta_description_source: "derived_from_lead"
+meta_description_source: derived_from_lead
 image_path: "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.jpg"
-image_style: "document_flatlay"
-image_model: "flux"
+image_style: document_flatlay
+image_model: flux
 image_alt: "Overhead view of a thick stack of complex billing documents scattered on a plain desk."
 image_caption: "The core problem for business buyers is not the price per token, but the inability to decipher the resulting invoice."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
@@ -41,26 +39,26 @@ OpenAI says better caching and inference funded its Generative Pre-trained Trans
 - **4% vs. 23%:** The tiny share of buyers asking for cheaper prices versus the group begging for clear billing data [3].
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 220" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
-  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Verified figures</text>
+  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Token Prices Just Halved. The CFO Still Can&#x27;t Read the Bill.</text>
   <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
   <!-- Row 1 -->
-  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">OpenAI dropped GPT-6 Sol to…</text>
-  <rect x="220" y="70" width="320" height="18" rx="4" fill="#1e293b"/>
-  <rect x="220" y="70" width="160" height="18" rx="4" fill="#818cf8"/>
-  <text x="390" y="84" fill="#f1f5f9" font-size="13" font-weight="600">50%</text>
-  <text x="444" y="84" fill="#64748b" font-size="11">([1])</text>
+  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">OpenAI GPT-6 Sol</text>
+  <rect x="240" y="70" width="300" height="18" rx="4" fill="#1e293b"/>
+  <rect x="240" y="70" width="150" height="18" rx="4" fill="#818cf8"/>
+  <text x="400" y="84" fill="#f1f5f9" font-size="13" font-weight="600">50%</text>
+  <text x="454" y="84" fill="#64748b" font-size="11">([1])</text>
   <!-- Row 2 -->
-  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">Anthropic cache read costs…</text>
-  <rect x="220" y="118" width="320" height="18" rx="4" fill="#1e293b"/>
-  <rect x="220" y="118" width="192" height="18" rx="4" fill="#818cf8"/>
-  <text x="422" y="132" fill="#f1f5f9" font-size="13" font-weight="600">60%</text>
-  <text x="476" y="132" fill="#64748b" font-size="11">([2])</text>
+  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">Anthropic cache read costs</text>
+  <rect x="240" y="118" width="300" height="18" rx="4" fill="#1e293b"/>
+  <rect x="240" y="118" width="180" height="18" rx="4" fill="#818cf8"/>
+  <text x="430" y="132" fill="#f1f5f9" font-size="13" font-weight="600">60%</text>
+  <text x="484" y="132" fill="#64748b" font-size="11">([2])</text>
   <!-- Row 3 -->
-  <text x="20" y="180" fill="#e2e8f0" font-size="13" font-weight="500">The tiny share of buyers…</text>
-  <rect x="220" y="166" width="320" height="18" rx="4" fill="#1e293b"/>
-  <rect x="220" y="166" width="12" height="18" rx="4" fill="#818cf8"/>
-  <text x="242" y="180" fill="#f1f5f9" font-size="13" font-weight="600">4%</text>
-  <text x="296" y="180" fill="#64748b" font-size="11">([3])</text>
+  <text x="20" y="180" fill="#e2e8f0" font-size="13" font-weight="500">Buyers asking</text>
+  <rect x="240" y="166" width="300" height="18" rx="4" fill="#1e293b"/>
+  <rect x="240" y="166" width="12" height="18" rx="4" fill="#818cf8"/>
+  <text x="262" y="180" fill="#f1f5f9" font-size="13" font-weight="600">4%</text>
+  <text x="316" y="180" fill="#64748b" font-size="11">([3])</text>
 </svg>
 
 <!-- tactical-insight -->

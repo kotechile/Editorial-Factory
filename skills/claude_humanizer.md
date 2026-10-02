@@ -29,7 +29,7 @@ To apply Smart Brevity effectively, the styling pass consumes:
 Introduce supporting context using bolded, standardized guide words followed immediately by a single direct, declarative sentence:
 - **Why it matters:** — Explain the systemic significance or immediate impact.
 - **The big picture:** — Frame the broader industry or structural shift.
-- **By the numbers:** — **MANDATORY.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins (e.g. `- **93% vs 41% accuracy:** ...`).
+- **By the numbers:** — **MANDATORY.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash (e.g. `- **93% vs 41% — Accuracy gap:** ...` or `- **13% / $2.50 — Ad-free tier hike:** ...`). This keeps bullets scannable and allows automated SVG charts to render clean metric names without clipping.
 - **Where this bites:** / **What I'd watch:** — Introduce the concrete consequences and the next signals to watch. Observations, never instructions to the reader (§3.9).
 - **The catch:** / **Between the lines:** / **Yes, but:** — State the honest limitation, tradeoff, or counter-argument.
 
