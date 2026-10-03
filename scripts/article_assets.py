@@ -50,7 +50,7 @@ CHART_MAX_POINTS = 5
 CHART_MIN_POINTS = 2            # fewer than two points is not a series
 CHART_SUBTITLE = "Figures as stated in this article's own numbers section (verified figures, %)"
 
-_NUMBERS_HEADING = re.compile(r"^\*\*By the numbers:\*\*\s*$", re.M)
+_NUMBERS_HEADING = re.compile(r"^(?:##\s*By the numbers:?|\*\*By the numbers:\*\*)\s*$", re.M | re.I)
 _BULLET = re.compile(r"^\s*[-*]\s+(.*)$")
 _BOLD_LEAD = re.compile(r"^\*\*(?P<lead>.+?)\*\*\s*:?\s*(?P<rest>.*)$", re.S)
 _PCT = re.compile(r"(\d+(?:[.,]\d+)?)\s*%")

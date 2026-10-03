@@ -25,15 +25,14 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 On Sept. 30, Amazon and the United States Postal Service (USPS) turned on a quiet test to speed up local shipping [1]. If a worker hands off a package at lunch, it reaches a front door by 8 p.m. that same day [1]. During that exact same week, U.S. on-highway diesel fuel hit a record high of $6.53 a gallon [2].
 
 <!-- tension -->
-## The high cost of speed
-
-**Why it matters:** For ten years, fleets paid for smart software to pack more stops into short trips. Same-day shipping tears those tight routes apart to move one package fast. These two forces are crashing into each other right as every extra mile costs more than it ever has [2].
+## The big picture:
+ For ten years, fleets paid for smart software to pack more stops into short trips. Same-day shipping tears those tight routes apart to move one package fast. These two forces are crashing into each other right as every extra mile costs more than it ever has [2].
 
 My read: Speed and fuel are pulling teams in opposite ways. Smart routing gave fleets clear gains by cutting fuel use and packing stops close together. The rush for same-day delivery throws away those hard-won gains to win the speed race. 
 
 Brands are fully leaning into this shift despite the costs. Nordstrom says it wants to ship goods seven days a week and just tested same-day beauty drops in Los Angeles [5]. Amazon is pushing even harder, chasing one-hour and three-hour drop-offs on top of its daily runs [1].
 
-**By the numbers:**
+## By the numbers
 - **$6.53 a gallon — Record diesel price:** The record price for U.S. on-highway diesel noted by the Energy Information Administration (EIA), topping the June 2022 high of $5.81 [2].
 - **88% — Diesel price jump:** Diesel fuel started the year near $3.46 a gallon and almost doubled in just a few short months [2].
 - **21% to 29.5% — UPS fuel fee:** United Parcel Service (UPS) bumped its fuel surcharge on Sept. 21, before the carrier changed its math to slow the drop [2].
@@ -67,9 +66,8 @@ Brands are fully leaning into this shift despite the costs. Nordstrom says it wa
 - **The heavy carbon bill:** Thin routes mean trucks burn more gas for each package they drop. I am watching to see if brands check their new same-day test runs against the emissions a packed truck would have made.
 
 <!-- nuanced-takeaway -->
-## The quiet casualty
-
-**The catch:** My read is that the crash is real, but the true dollar pain is still small today. The Amazon test is tiny, moving just 200 packages a day across three small routes [1]. Diesel prices could also fall just as fast as they went up [2]. 
+## The catch
+ My read is that the crash is real, but the true dollar pain is still small today. The Amazon test is tiny, moving just 200 packages a day across three small routes [1]. Diesel prices could also fall just as fast as they went up [2]. 
 
 Yet the broad shift feels locked in place for the long haul. Brands are paying top dollar for speed, and smart route planning is the quiet casualty.
 
@@ -83,6 +81,7 @@ Yet the broad shift feels locked in place for the long haul. Brands are paying t
 <!-- internal-links:end -->
 
 <!-- tldr -->
+## At a glance
 - **The Big Shift:** Amazon and the USPS started a same-day delivery test the exact same week U.S. diesel fuel hit a record high of $6.53 a gallon. The race for same-day speed breaks tight delivery routes apart to move single boxes fast, undoing years of software gains.
 - **Why It Matters:** The push for speed adds trips and miles right as fuel hits a peak. At the same time, major freight carriers are pushing steep rate hikes and heavy fuel fees.
 - **What I'd Watch:** I am watching how brands handle the huge jump in last-mile costs.

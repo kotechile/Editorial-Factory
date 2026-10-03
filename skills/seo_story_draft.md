@@ -28,12 +28,12 @@ slug: "YYYY-MM-DD_<slug>"
 > **Title Keyword Requirement:** The article `title:` and `meta_title:` MUST explicitly incorporate the `primary_keyword` (exact or naturalized proper casing, e.g. `<Primary Keyword>: <Punchy Hook/Angle>`). Never drop, omit, or paraphrase away the target keyword from the title.
 
 ### B. Article Body Sections (Clean Markdown & Engaging H2 Headers)
-- `<!-- lead -->`: Concrete hook featuring an incident, production metric, or specific cost figure.
-- `<!-- tension -->`: Descriptive `## ` H2 header + systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
-- `**By the numbers:**`: Mandatory quantitative data section with 2–4 bolded metric bullets pairing figures with concise 2–4 word metric titles before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). No conversational filler lead-ins.
-- `<!-- tactical-insight -->`: Descriptive `## ` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
-- `<!-- nuanced-takeaway -->`: Descriptive `## ` H2 header + the honest catch, limitation, or counter-argument.
-- `<!-- tldr -->`: `## Key Takeaways` header + 4-part structured breakdown (**The Big Shift / What Happened**, **Why It Matters**, **What I'd Watch** with sub-bullet definitions, and **The Catch** in plain English).
+- `<!-- lead -->`: Concrete hook featuring an incident, production metric, or specific cost figure (no heading, hook in sentence 1).
+- `<!-- tension -->`: `## The big picture:` H2 header + systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
+- `## By the numbers`: Mandatory quantitative H2 section with 2–4 bolded metric bullets pairing figures with concise 2–4 word metric titles before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). No conversational filler lead-ins.
+- `<!-- tactical-insight -->`: Descriptive `## What I'd watch:` or `## Where the money flows` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
+- `<!-- nuanced-takeaway -->`: `## The catch` H2 header + the honest catch, limitation, or counter-argument.
+- `<!-- tldr -->`: `## At a glance` H2 header + 4-part structured breakdown (**The Big Shift**, **Why It Matters**, **The Winning Moves** / **What I'd Watch** with sub-bullet definitions, and **The Fine Print** in plain English), distinctly separated from "The catch".
 
 ### C. Citations & Social Variants
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.

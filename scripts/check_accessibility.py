@@ -166,7 +166,7 @@ def check_smart_brevity(raw_text, body_text):
 
     # 3. Context signposts & By the numbers
     signpost_patterns = [
-        r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*",
+        r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*", r"##\s*The big picture:?", r"##\s*By the numbers:?", r"##\s*The catch:?",
         r"\*\*Where this bites:\*\*", r"\*\*What I(?:'d| would) watch:\*\*",
         r"\*\*The catch:\*\*",
         r"\*\*Between the lines:\*\*", r"\*\*Yes, but:\*\*", r"\*\*Go deeper:\*\*", r"\*\*What's next:\*\*"
@@ -175,7 +175,7 @@ def check_smart_brevity(raw_text, body_text):
     if not has_signposts:
         warns.append("Smart Brevity: no bold context signposts found (**Why it matters:**, **The big picture:**, etc.)")
 
-    if not re.search(r"\*\*By the numbers:\*\*", raw_text, re.I):
+    if not re.search(r"(?:##\s*By the numbers|\*\*By the numbers:\*\*)", raw_text, re.I):
         warns.append("Smart Brevity: missing mandatory '**By the numbers:**' section with bulleted stats")
 
     return warns

@@ -25,13 +25,13 @@ To apply Smart Brevity effectively, the styling pass consumes:
 - Zero throat-clearing, preambles, rhetorical questions, or introductory fluff.
 - Tell the reader something essential, concrete, and load-bearing upfront.
 
-### 3.3 Context Signposts & Mandatory 'By the Numbers'
-Introduce supporting context using bolded, standardized guide words followed immediately by a single direct, declarative sentence:
-- **Why it matters:** — Explain the systemic significance or immediate impact.
-- **The big picture:** — Frame the broader industry or structural shift.
-- **By the numbers:** — **MANDATORY.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). Never begin bullet explanations with conversational or background narrative ("Diesel fuel started the year...", "The leap in the..."). State the clean metric title directly so automated SVG charts display meaningful, unclipped labels.
-- **Where this bites:** / **What I'd watch:** — Introduce the concrete consequences and the next signals to watch. Observations, never instructions to the reader (§3.9).
-- **The catch:** / **Between the lines:** / **Yes, but:** — State the honest limitation, tradeoff, or counter-argument.
+### 3.3 Context Signposts & Mandatory H2 Headers
+Introduce supporting context using standardized H2 headers (`## `) followed immediately by a single direct, declarative sentence:
+- **`## The big picture:`** — Frame the broader industry or structural shift (in `<!-- tension -->`).
+- **`## By the numbers`** — **MANDATORY H2.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). Never begin bullet explanations with conversational or background narrative ("Diesel fuel started the year...", "The leap in the..."). State the clean metric title directly so automated SVG charts display meaningful, unclipped labels.
+- **`## What I'd watch:`** / **`## Where the money flows`** — Introduce the concrete consequences and the next signals to watch (in `<!-- tactical-insight -->`). Observations, never instructions to the reader (§3.9).
+- **`## The catch`** — State the honest limitation, tradeoff, or counter-argument (in `<!-- nuanced-takeaway -->`).
+- **`## At a glance`** — Mandatory H2 opening the `<!-- tldr -->` executive summary, clearly separating the 4-part Smart Brevity breakdown so it is NEVER embedded under "The catch".
 
 ### 3.4 Scannability & Bullets
 - **Never output monolithic walls of text.**

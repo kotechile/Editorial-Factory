@@ -1098,7 +1098,9 @@ const server = createServer(async (req, res) => {
       // Generate TL;DR
       let tldr = '';
       if (markdown.includes('<!-- tldr -->')) {
-        tldr = markdown.split('<!-- tldr -->')[1].split('##')[0].trim();
+        const afterTldr = markdown.split('<!-- tldr -->')[1];
+        const tldrSection = afterTldr.split(/##\s+Sources|<!--/i)[0].trim();
+        tldr = tldrSection.replace(/^##\s+.*$\n?/m, '').trim();
       }
 
       // Twitter / X thread (split into 3-4 punchy tweets)

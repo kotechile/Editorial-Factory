@@ -38,13 +38,13 @@ SMART BREVITY STYLING PRINCIPLES:
    - Title: Start from the draft title and polish/refine for punchy clarity and SEO resonance without clickbait fluff or cryptic jargon. When frontmatter defines `primary_keyword:`, the `title:` and `meta_title:` MUST explicitly contain the primary keyword (preserving proper/canonical casing, e.g. "<Keyword>: <Subtitle>"). Never drop or replace the keyword in the headline.
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
-3. CONTEXT SIGNPOSTS & MANDATORY 'BY THE NUMBERS':
-   - Introduce supporting context using bolded, standardized guide words followed immediately by a single direct, declarative sentence:
-     - **Why it matters:** (the systemic significance or immediate impact)
-     - **The big picture:** (the broader industry or structural shift)
-     - **By the numbers:** (**MANDATORY** quantitative section presenting 2–4 verified figures/percentages in bold bullets)
-     - **Where this bites:** or **What I'd watch:** (what the operators, vendors and regulators closest to the story are doing, and what the writer expects next — report it, never instruct the reader)
-     - **The catch:** or **Between the lines:** (honest nuance, limitation, or counter-argument)
+3. CONTEXT SIGNPOSTS & MANDATORY H2 HEADERS:
+   - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators:
+     - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift)
+     - `## By the numbers` (MANDATORY quantitative section presenting 2–4 verified figures/percentages in bold bullets pairing the figure with a concise metric title)
+     - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
+     - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument)
+     - `## At a glance` (in <!-- tldr -->, clearly separating the 4-part Smart Brevity executive summary with its own distinct H2 header so it is NEVER embedded under "The catch")
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
    - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats pairing the figure with a concise 2–4 word metric title (e.g., `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). The words following the bold lead MUST NOT begin with conversational or background narrative filler ("Diesel fuel started the year...", "The leap in the..."). Instead, structure as `- **<Figure> — <Metric Title>:** <Clear explanation> [Citation]`.
@@ -70,12 +70,13 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the `## Related reading` section exactly as written — its anchor texts and URLs are verified internal links to live pages on the same site. Never rewrite, drop, merge, or invent one, and never add a link that is not already there.
 - PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
-- Format the TL;DR as the structured <!-- tldr --> field strictly following this 4-part Smart Brevity At a Glance schema (serves as a 30-second executive summary explaining what the article is about):
+- Format the TL;DR as the structured <!-- tldr --> field opening with an H2 header '## At a glance', strictly following this 4-part Smart Brevity schema (serves as a 30-second executive summary explaining what the article is about, distinctly separated from the preceding body):
+  ## At a glance
   1) "- **The Big Shift:** <1-2 plain-English sentences explaining directly what happened and what the article is about>"
   2) "- **Why It Matters:** <1-2 sentences stating the economic, architectural, or industry impact and who is affected>"
-  3) "- **What I'd Watch:** <what the writer is watching next, and why it matters>" followed by indented sub-bullets:
+  3) "- **The Winning Moves:** <what the writer is watching next, and why it matters>" (or "- **What I'd Watch:**") followed by indented sub-bullets:
      "  - **<Move Name>:** <1-line plain-English definition explaining what it does and why>"
-  4) "- **The Catch:** <upfront design needs, security/access controls, and context-dependent trade-offs/caveats>"
+  4) "- **The Fine Print:** <upfront design needs, security/access controls, and realistic trade-offs/caveats>" (or "- **The Catch:**")
   Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC (render-time only).
 
 ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):

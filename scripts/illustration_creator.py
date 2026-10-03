@@ -387,7 +387,7 @@ def source_names(md: str) -> list[str]:
 def _numbers(md: str) -> list[str]:
     """The `**By the numbers:**` bullets, which often carry the most depictable object in the piece."""
     fm, body = split_frontmatter(md)
-    block = re.search(r"\*\*By the numbers:\*\*\s*(.*?)(?=\n\s*\n|\n##|\Z)", body, re.S)
+    block = re.search(r"(?:##\s*By the numbers:?|\*\*By the numbers:\*\*)\s*(.*?)(?=\n\s*\n|\n##|\Z)", body, re.S | re.I)
     if not block:
         return []
     return [re.sub(r"\s+", " ", b.strip())[:160] for b in re.findall(r"^\s*[-*]\s+(.*)$", block.group(1), re.M)][:5]

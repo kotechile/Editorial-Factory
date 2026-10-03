@@ -76,27 +76,33 @@ slug: <slug>
 <concrete incident/stat — core news delivered immediately in sentence 1, hook first, no heading>
 
 <!-- tension -->
+## The big picture:
 <the systemic shift / why now>
 
-**By the numbers:**
+## By the numbers
 - **<Stat 1> — <Metric Title>:** <concrete context and citation [1]>
 - **<Stat 2> — <Metric Title>:** <concrete context and citation [2]>
 - **<Stat 3> — <Metric Title>:** <concrete context and citation [3]>
 
 <!-- tactical-insight -->
+## What I'd watch:
 <the doable moves — structured cleanly for the persona>
+- **<Move 1>:** ...
+- **<Move 2>:** ...
 
 <!-- nuanced-takeaway -->
+## The catch
 <the honest limitation / counter-argument>
 
 <!-- tldr -->
+## At a glance
 - **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in plain English>
 - **Why It Matters:** <1-2 sentences articulating the economic/operational impact>
-- **What I'd Watch:** <what the writer is watching next, and why>
+- **The Winning Moves:** <what the writer is watching next, and why> (or **What I'd Watch:**)
   - **<Move 1>:** <plain English definition of what it does and why>
   - **<Move 2>:** <plain English definition of what it does and why>
   - **<Move 3>:** <plain English definition of what it does and why>
-- **The Catch:** <practical caveats, access control, and context dependencies>
+- **The Fine Print:** <practical caveats, trade-offs, and realistic constraints> (or **The Catch:**)
 
 ## Sources
 [1] ...  [2] ...
