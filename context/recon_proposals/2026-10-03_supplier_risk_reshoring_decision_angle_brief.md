@@ -1,0 +1,31 @@
+# Angle Brief: supplier_risk_reshoring_decision — 2026-10-03
+
+**Angle Type:** Synthesis (Cross-Topic Fusion)
+
+**Winner:** The Tariff Regime Just Split in Two — and Reshoring Follows the Protected Half
+
+**Scores:** E=8.0 · A=8.0 · S=8.0 → Composite=8.0 (≥8 → proceed; beats best single-signal 7.0 by ≥0.3)
+
+**Signal A (Anchor 1):** The US and China cut tariffs on ~$60B of "non-sensitive" goods — roughly $30B each way — covering household goods, toys, and holiday decorations, with China also trimming tariffs on US farm products and agreeing to import 10M metric tons of US coal a year. USTR Jamieson Greer framed it as "market access for about 30% of US exports to China," and the deal specifies no reduction amounts and no implementation date. (Supply Chain Dive, Sept 28, 2026, reporting the USTR statement — https://www.supplychaindive.com/news/us-china-trade-board-carves-path-for-tariff-relief-on-60b-of-goods/831479)
+
+**Signal B (Anchor 2):** Reshoring capital is flowing to the *strategic* half. US Steel broke ground on a $475M quench-and-tempering line at Fairfield Tubular for the oil & gas market (Sept 21); Pirelli is building a $1.2B tire plant in Rome, Georgia (Sept 22); and IndustrialSage's tracker put total announced US manufacturing investment at $2.084T across 251 companies and 43 states (Sept 28), with high/medium-high-tech sectors (electronics, EV batteries, solar, transportation) carrying ~90% of reshoring jobs. (https://www.ussteel.com/media/newsroom-details ; https://www.industrialsage.com/us-manufacturing-investment-tracker)
+
+**Emergent Collision Point:** The first genuine US–China tariff *de-escalation* drew an explicit line between "sensitive" and "non-sensitive" goods — and the line falls in the exact wrong place for the reshoring story. Relief went to toys, household goods and holiday decorations: the light-assembly categories that are cheapest and fastest to reshore. Protection stayed on steel, tires, semiconductors and batteries: the categories where reshoring is a decade-long, nine-figure project. So the tariff regime now *defends the goods America can't build yet* and *walks back the tariffs on the goods it could* — and the investment data confirms reshoring capital is piling into the defended half. A reshoring decision that still inputs a single "tariff = reshore" number is answering the old question; the new input is a per-SKU sensitive/non-sensitive classification.
+
+**Hook:** Washington just handed supply chains a map of which goods it will defend. On September 28 the US and China cut tariffs on $60 billion of "non-sensitive" goods — toys, household items, holiday decorations — with no dollar amount or start date attached. The same week, US Steel broke ground on a $475 million tubular line and Pirelli committed $1.2 billion to a Georgia tire plant, pushing announced US manufacturing investment past $2 trillion. The relief and the reshoring are going to opposite halves of the catalog.
+
+**Tension:** Who this empowers — ops leaders whose reshoring/nearshoring decision engines classify every SKU by tariff sensitivity and by *the probability that the tariff survives*, rather than by a single landed-cost figure. Who this threatens — teams who underwrite a reshoring bet on the "tariffs make China uncompetitive" reflex and discover, mid-project, that their category just got reclassified as non-sensitive. The systemic friction: tariff policy now moves faster than a factory, so a seven-year reshoring capex decision is a bet on which category Washington will still be defending at the end of it.
+
+**Target reader:** ops_leader (VP of Supply Chain & Operations Leader — numerate, balance-sheet aware, ROI-first, grounded in physical physics).
+
+**Single claim to defend:** The tariff regime has bifurcated into a *defended* half (steel, tires, semiconductors, batteries — where reshoring is hard and slow) and a *walked-back* half (toys, household goods — where reshoring is easy and fast), so the reshoring/nearshoring decision engine's load-bearing input has shifted from "what is my tariff-adjusted landed cost?" to "which sensitivity bucket is my SKU in, and will that tariff still exist when my plant opens?" — a claim proven by the Sept 28 US–China $60B non-sensitive-goods relief colliding with reshoring capital concentrating in the defended categories (US Steel $475M, Pirelli $1.2B, IndustrialSage $2.084T).
+
+**Runner-ups + why rejected:**
+- *#1 ⨂ #3 (relief ⨂ Pirelli $1.2B)* — the mechanical top pair (0.86); the winning thesis rests on this same collision, broadened to the full defended half (steel + tires + the $2.084T aggregate), not a single tire plant. Chosen as Signal B's strongest single instance.
+- *#3 ⨂ #6 (Pirelli ⨂ Section 301 stacking)* — mechanical top pair (0.87); both legs are "tariff stays high," same-direction, no emergent tension (E=6).
+- *#1 ⨂ #6 (relief ⨂ stacking)* — both legs are tariff-policy; the second leg is a forward-looking law-firm note, weak authority (A=5), and it re-argues the 10-01 `supply_chain` relief-vs-vessel-fee thesis family.
+- *Single-signal US-China $60B* — N=7 (event already published cross-vertical on 10-01), A=8, S=6 → 7.0. Below gate.
+- *Single-signal US Steel / Pirelli / IndustrialSage reshoring volume* — retread of the 09-10 `supply_chain` `reshoring-capacity-gap` family; Novelty capped ≤6.0 → 6.0.
+- *Tanker cyber (#5)* — off the reshoring axis, maritime-security story; weak `ops_leader` persona fit → 6.5.
+
+**De-dup check (virality_judge §3.5):** Prior-cycle thesis de-dup for THIS vertical: the 09-26 first run won `reshoring-moved-the-tariff-upstream` (Coca-Cola $10B ⨂ plastics Section 338) — a *vertical* migration of tariff risk into inputs. This brief argues a *horizontal* bifurcation (sensitive vs non-sensitive split), a different rule, not a re-litigation. Cross-vertical: the 10-01 `supply_chain` winner `goods-tariff-relief-vs-vessel-fee` used the same $60B *event* but a different *thesis* (relief offset by a per-container vessel fee); this brief's thesis is the reshoring-decision bifurcation, which that piece never touched. The 09-10 `supply_chain` `reshoring-capacity-gap` (Kearney + Reshoring Initiative) argues capacity/labor, not tariff-regime bifurcation. No overlap on the load-bearing rule.

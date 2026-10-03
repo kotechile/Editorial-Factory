@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T01:55:04Z",
+  "updated_at": "2026-10-03T06:42:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -235,6 +235,24 @@
       "date": "2026-10-02",
       "public": true,
       "url": "https://giniloh.com/same-day-race-undoes-route-optimization/"
+    },
+    {
+      "slug": "2026-10-03_tariff-split-reshoring-heavy-half",
+      "title": "The Tariff Split in Two \u2014 Reshoring Took the Heavy Half",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-03",
+      "public": false
     }
   ]
 }

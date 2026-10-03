@@ -1,0 +1,72 @@
+{
+  "slug": "tariff-split-reshoring-heavy-half",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "style": "paper_collage",
+      "model": "nano-banana-pro",
+      "prompt": "Minimalist editorial cut-paper collage, crisp cut-out object silhouettes. A stylized toy rocking horse silhouette on the left, sharply divided by a clean vertical line from a heavy industrial gear silhouette on the right. Layered deliberately against a solid neutral paper backdrop with a subtle halftone newsprint texture. Muted modern editorial palette, crisp clean edges, generous negative space.",
+      "task_id": "852b11f5f175b6edb00cfc9e68cd7d33",
+      "sha256": "sha256:8b6b2b6f1134d4ad8730fb47ed933b2c",
+      "generated_at": "2026-10-03T06:42:07+00:00",
+      "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e"
+    },
+    {
+      "revision": 2,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "minimalist studio composition of a modular mechanical assembly, a sleek industrial manifold splitting into two distinct output channels or pipes, one side capped and the other open with an inspection gate. Soft even light, generous negative space, hard clean edges, matte muted palette, gallery-print calm. B2B editorial style.",
+      "task_id": "3407de754c2c0f9b7919ce081c08b49d",
+      "sha256": "sha256:bc38720e693614b3ab227eb6031d3c0b",
+      "generated_at": "2026-10-03T13:12:23+00:00",
+      "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. An automated logistics sorting conveyor system splitting a single stream of cargo boxes into two distinct diverging tracks. One track handles smaller consumer-sized parcels, the other track routes heavy industrial equipment modules. Flat muted palette with a steel-blue accent color, thin consistent line weight, recognizable hardware, rollers, conveyor belts, mechanical diversion gate, visible depth, unlabelled, generous empty margin.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, labels, logos, people, generic office worker, light bulb, arrows, abstract boxes, bare shapes",
+  "rationale": "The article is about a structural split in supply chains\u2014two distinct flows of goods and capital based on tariff treatment. A technical isometric cutaway is perfect for showing this divergence, illustrating a system where flows are routed into two distinct paths: a light consumer goods stream and a heavy industrial/tech stream.",
+  "cue": "supply teams adapt now",
+  "subject": "an automated sorting conveyor system splitting a stream of cargo crates into two distinct tracks",
+  "alt_text": "An automated conveyor system splitting cargo into two diverging tracks.",
+  "caption": "Supply chains are splitting as goods face differing tariff environments.",
+  "title": "Tariff-Split-Isometric-Conveyor",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "technical_isometric"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 2240630,
+  "sha256": "sha256:f876aa1538a72fe03313f375c5b3d786",
+  "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e",
+  "source_chars": 3707,
+  "task_id": "08b4bf67184d5c24c67d7e7c3e6c9c6f",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1d1f03e740a1c7ab06dd89fa46eaf1c0.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. An automated logistics sorting conveyor system splitting a single stream of cargo boxes into two distinct diverging tracks. One track handles smaller consumer-sized parcels, the other track routes heavy industrial equipment modules. Flat muted palette with a steel-blue accent color, thin consistent line weight, recognizable hardware, rollers, conveyor belts, mechanical diversion gate, visible depth, unlabelled, generous empty margin.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, labels, logos, people, generic office worker, light bulb, arrows, abstract boxes, bare shapes.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-03T13:22:43+00:00"
+}
