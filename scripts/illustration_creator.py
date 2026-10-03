@@ -117,7 +117,8 @@ _TEXT_REQUEST_RE = re.compile(
 _CLICHE_RE = re.compile(
     r"\b(light ?bulb|handshake|chess piece|chessboard|puzzle piece|glowing brain|trophy|dartboard|"
     r"rocket ship|rocket launch|target with an arrow|arrow(s)? pointing up|gears? of|"
-    r"scales of justice|gavel|thumbs up|magnifying glass over|robot handshake)\b", re.I)
+    r"scales of justice|gavel|thumbs up|magnifying glass over|robot handshake|"
+    r"rocking horse|toy horse|toy block|doll|teddy bear|paper cutout|paper cut-out|clipart)\b", re.I)
 # ── domain grounding: a shape is not a subject ────────────────────────────────────────────────
 # The failure this pins, from the desk's own ledger: two agentic-AI articles were illustrated with
 # "a rectangle with a colour band" and "a block resting on a wedge" — headers a reader cannot
@@ -251,8 +252,7 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         model="nanobanana"),
     Style(
         id="paper_collage", label="Editorial paper collage",
-        when="the article is a synthesis of two colliding developments, and the collision itself is "
-             "the story",
+        when="the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure — use cinematic still or telephoto industry instead",
         medium="minimalist editorial cut-paper collage, crisp cut-out object silhouettes, halftone newsprint texture",
         craft="two or three stylized cut-paper object silhouettes (such as an hourglass, certificate, key, or mechanism) "
               "layered deliberately against a solid neutral paper backdrop; muted modern editorial palette, crisp clean edges, "
@@ -677,11 +677,15 @@ immediate, unmistakable sense.
 ARTICLE DETAILS
 Vertical: {fm.get('vertical', '')} | Persona: {fm.get('persona', '')}
 One big thing: {fm.get('one_big_thing', '')}
-Lead: {_section(body, 'lead')[:700]}
 Section headings: {' | '.join(headings)}
 Numbers section:
 {numbers}
 Sources (names only — never depict these companies, their products or their logos): {sources}
+
+ARTICLE SUBSTANTIVE CONTENT (Read this carefully to ground the visual in the actual industry context, facilities, equipment, operational reality, and core thesis):
+---
+{article_core_text(article_md)[:3500]}
+---
 
 TREATMENT CATALOGUE
 {menu}
@@ -709,6 +713,12 @@ analogy instead: modular server components or blades in a rack, an unlatched ins
 hourglass, an options certificate with an un-struck seal, an interlocking connector, a manifold. Name \
 that mechanism or object in the prompt's own words — the mechanism is what grounds the metaphor in \
 this story.
+5. MATURE, PROFESSIONAL B2B GROUNDING — NEVER DEPICT TOYS OR CARTOON GRAPHICS:
+This is an institutional, executive B2B publication read by supply chain leaders, CFOs, and engineers.
+- NEVER depict literal children's toys (such as rocking horses, toy blocks, dolls, cartoon figurines), clip-art silhouettes, or playful nursery symbols.
+- If consumer goods or retail products are discussed alongside manufacturing (e.g. basic consumer goods vs. heavy industry/steel plants), anchor the visual in the REAL, MATURE industrial or commercial environment: modern heavy manufacturing mills, automated logistics yards, shipping container terminals, high-tech semiconductor cleanrooms, or commercial warehouse fulfillment systems.
+- For stories involving manufacturing, steel, energy, factories, shipping, transport, infrastructure, or hardware, ALWAYS prefer photographic treatments (cinematic_still, long_lens_industry, editorial_macro, architectural_night) that depict real physical facilities, machinery, and logistics.
+- Every visual must feel like an authentic, high-end editorial feature image from Bloomberg, The Wall Street Journal, or Financial Times.
 
 HARD RULES
 - Depict a concrete noun from this story (the material, part, place, document or mechanism that \
