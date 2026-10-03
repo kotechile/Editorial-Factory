@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T17:43:01Z",
+  "updated_at": "2026-10-03T18:15:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -328,6 +328,24 @@
     {
       "slug": "2026-10-03_tariff-split-reshoring-heavy-half",
       "title": "The Tariff Split in Two \u2014 Reshoring Took the Heavy Half",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-03",
+      "public": false
+    },
+    {
+      "slug": "2026-10-03_total-landed-cost-china-vs-mexico",
+      "title": "The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost",
       "vertical": "supplier_risk_reshoring_decision",
       "primary_keyword": "",
       "secondary_keywords": [],
