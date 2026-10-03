@@ -37,3 +37,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-03 | `tariff-split-reshoring-heavy-half` | supplier_risk_reshoring_decision | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png` |
 | 2026-10-03 | `tariff-split-reshoring-heavy-half` | supplier_risk_reshoring_decision | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png` |
 | 2026-10-03 | `tariff-split-reshoring-heavy-half` | supplier_risk_reshoring_decision | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png` |
+| 2026-10-03 | `same-day-race-undoes-route-optimization` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/same-day-race-undoes-route-optimization/featured.png` |

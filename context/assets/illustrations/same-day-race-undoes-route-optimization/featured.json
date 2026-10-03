@@ -1,6 +1,6 @@
 {
   "slug": "same-day-race-undoes-route-optimization",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -21,50 +21,63 @@
       "sha256": "sha256:37d001e75be3d66a8b9cbc9865b79649",
       "generated_at": "2026-10-02T20:46:28+00:00",
       "source_hash": "sha256:c6422d3aaf468eab2147f170ddb9b9e7"
+    },
+    {
+      "revision": 3,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "clean isometric cutaway illustration of a fragmented modular delivery routing grid with intersecting conveyor belts, scattered distribution hubs, and industrial fuel tanks, technical drawing style, axonometric projection, flat muted palette with a bright amber accent colour highlighting the broken pathways, thin consistent line weight, recognisable hardware, generous empty margin",
+      "task_id": "e933610d128a767d1b0ed433f9dd1d56",
+      "sha256": "sha256:6deebdf2e5c71544fad9710a1bcea570",
+      "generated_at": "2026-10-03T00:07:32+00:00",
+      "source_hash": "sha256:91e0a7bb16273cd4c4e3d05f28cc0d3d"
     }
   ],
-  "style": "technical_isometric",
-  "style_label": "Technical isometric cutaway",
-  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "clean isometric cutaway illustration of a fragmented modular delivery routing grid with intersecting conveyor belts, scattered distribution hubs, and industrial fuel tanks, technical drawing style, axonometric projection, flat muted palette with a bright amber accent colour highlighting the broken pathways, thin consistent line weight, recognisable hardware, generous empty margin",
-  "negative_prompt": "text, words, numbers, letters, watermark, signature, logos, abstract boxes, bare geometry, people, vehicles, labels",
-  "rationale": "A technical isometric cutaway perfectly illustrates the abstract concept of route optimization and its breakdown, mapping out the fragmented delivery paths as a complex physical system.",
-  "cue": "fragmenting last-mile routes",
-  "subject": "a fragmented modular delivery routing grid with intersecting conveyor belts and fuel tanks",
-  "alt_text": "Fragmented modular delivery routing grid with intersecting conveyor belts and fuel tanks in an isometric cutaway.",
-  "caption": "Same-day delivery demands are fracturing once-optimized routing networks, multiplying fuel costs in the process.",
-  "title": "Fragmented Delivery Route Isometric",
+  "prompt": "matte clay 3D render of a small mechanical assembly, a unified modular routing block with interlocking tracks pulling apart and fracturing into separate, disconnected paths, studio render on a neutral seamless backdrop, three or four recognisable engineered parts, matte surfaces with moulding seams and contact shadows, single soft key light, matte muted palette, clean structural metaphor for fragmentation.",
+  "negative_prompt": "text, numbers, logos, watermarks, UI, bare geometry, spheres, cubes, vans, trucks, cardboard boxes, toys",
+  "rationale": "The story describes route optimization\u2014a tightly packed, efficient mechanism\u2014being pulled apart or fragmented by the rush for same-day delivery. A matte 3D clay render of a mechanical module or routing block splitting apart cleanly represents this structural inefficiency without needing literal vans or packages.",
+  "cue": "tears those tight routes apart",
+  "subject": "a unified modular logistics routing block fracturing into separate, disconnected paths",
+  "alt_text": "A modular mechanical routing block pulling apart into separate disconnected tracks.",
+  "caption": "The rush for same-day delivery is tearing apart tight, optimized delivery routes.",
+  "title": "Route fragmentation 3D render",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
-  "pinned": {},
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render",
+    "model": "nanobanana"
+  },
   "file": "featured.png",
   "local_path": "context/assets/illustrations/same-day-race-undoes-route-optimization/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1748421,
-  "sha256": "sha256:6deebdf2e5c71544fad9710a1bcea570",
-  "source_hash": "sha256:91e0a7bb16273cd4c4e3d05f28cc0d3d",
-  "source_chars": 3913,
-  "task_id": "e933610d128a767d1b0ed433f9dd1d56",
+  "bytes": 1155851,
+  "sha256": "sha256:1368f65f4e0a105a665399b8d57cb648",
+  "source_hash": "sha256:ac255d48b8cd5be1050dea3ae7c57338",
+  "source_chars": 3918,
+  "task_id": "a6e0694e28659e2c292e29dabe86a917",
   "credits": 18.0,
-  "cost_ms": 23,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8211991ef2a93e123e7311a1ca1d17a8.png",
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f8d7ce6ce58ecb76c662a7db63217c44.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "clean isometric cutaway illustration of a fragmented modular delivery routing grid with intersecting conveyor belts, scattered distribution hubs, and industrial fuel tanks, technical drawing style, axonometric projection, flat muted palette with a bright amber accent colour highlighting the broken pathways, thin consistent line weight, recognisable hardware, generous empty margin\n\nDo not include: text, words, numbers, letters, watermark, signature, logos, abstract boxes, bare geometry, people, vehicles, labels.",
+      "prompt": "matte clay 3D render of a small mechanical assembly, a unified modular routing block with interlocking tracks pulling apart and fracturing into separate, disconnected paths, studio render on a neutral seamless backdrop, three or four recognisable engineered parts, matte surfaces with moulding seams and contact shadows, single soft key light, matte muted palette, clean structural metaphor for fragmentation.\n\nDo not include: text, numbers, logos, watermarks, UI, bare geometry, spheres, cubes, vans, trucks, cardboard boxes, toys.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-03T00:07:32+00:00"
+  "generated_at": "2026-10-03T14:57:48+00:00"
 }
