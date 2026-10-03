@@ -1,0 +1,52 @@
+{
+  "slug": "3d-printing-failed-prints-are-the-cost",
+  "revision": 1,
+  "history": [],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a modular mechanical assembly, soft even light, generous negative space. a partially formed, misaligned mechanical bracket surrounded by a bird's nest of tangled plastic extrusion, resting on a flat neutral surface. hard clean edges, matte muted palette, gallery-print calm.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logo, watermark, people, bare shapes, abstract scraps, toys",
+  "rationale": "The article discusses the high failure rate of desktop 3D prints, making a modular mechanical assembly an ideal treatment to represent the 'failed prints' and wasted parts. The component assembly style will highlight a broken or unfinished manufactured part, emphasizing the 'tinkering tax' and the reality of the 41.1% failure rate.",
+  "cue": "prints that never come out",
+  "subject": "a partially formed, misaligned mechanical bracket surrounded by tangled plastic extrusion",
+  "alt_text": "A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
+  "caption": "The true cost of 3D printing is hidden in the parts that warp, clog, or fail halfway through.",
+  "title": "Failed 3D Print Bracket",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/3d-printing-failed-prints-are-the-cost/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1588478,
+  "sha256": "sha256:e457456f6cc8a30f94459cbd41f3365f",
+  "source_hash": "sha256:366609961d40b4b04fb423cbc9b70ab4",
+  "source_chars": 3800,
+  "task_id": "6d5886686daaba2049b0f2e399841249",
+  "credits": 18.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f3e9ae0d729dc471121b1ba85dde7244.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a modular mechanical assembly, soft even light, generous negative space. a partially formed, misaligned mechanical bracket surrounded by a bird's nest of tangled plastic extrusion, resting on a flat neutral surface. hard clean edges, matte muted palette, gallery-print calm.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logo, watermark, people, bare shapes, abstract scraps, toys.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-03T17:50:01+00:00"
+}
