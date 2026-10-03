@@ -9,6 +9,12 @@ meta_title: "California Legalizes Plug-In Home Solar Panels"
 meta_title_source: "derived_from_title"
 meta_description: "California just made it legal to plug a solar panel straight into a normal wall outlet. On Sept. 30, 2026, Gov. Gavin Newsom signed Senate Bill 868 (SB 868)."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/california-legalizes-plug-in-solar/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A small modular solar panel connected to a standard wall plug on a plain surface."
+image_caption: "California's SB 868 allows residents to plug home solar panels directly into standard wall outlets without utility permission."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

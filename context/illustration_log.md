@@ -41,3 +41,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-03 | `heloc-at-8-vs-battery-that-earns` | home_equity_tco | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/heloc-at-8-vs-battery-that-earns/featured.png` |
 | 2026-10-03 | `cloud-update-bricked-the-fridge-local-first` | smart_home_telemetry | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/cloud-update-bricked-the-fridge-local-first/featured.png` |
 | 2026-10-03 | `heat-pumps-cheaper-to-run-pricier-to-buy` | home_infrastructure_lifecycle_tco | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/heat-pumps-cheaper-to-run-pricier-to-buy/featured.png` |
+| 2026-10-03 | `california-legalizes-plug-in-solar` | resilient_home_assets | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/california-legalizes-plug-in-solar/featured.png` |

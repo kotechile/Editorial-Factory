@@ -1,0 +1,52 @@
+{
+  "slug": "california-legalizes-plug-in-solar",
+  "revision": 1,
+  "history": [],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a small modular solar panel unit with an integrated cable ending in a standard three-prong wall plug, arranged on a seamless neutral surface, soft even light, generous negative space, matte muted palette, gallery-print calm, hard clean edges, a deliberate physical arrangement of these engineered parts",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, watermarks, people, complex backgrounds, bare geometry, abstract shapes",
+  "rationale": "The article is about a specific piece of hardware (a plug-in solar panel kit) and a single regulatory shift that permits it. Component assembly is ideal here to focus on the modular connection\u2014the panel and the plug\u2014in a clean, minimalist way, emphasizing the simplicity of the new rule.",
+  "cue": "plug a solar panel straight into a normal wall outlet",
+  "subject": "a small modular solar panel unit connected to a standard three-prong wall plug",
+  "alt_text": "A small modular solar panel connected to a standard wall plug on a plain surface.",
+  "caption": "California's SB 868 allows residents to plug home solar panels directly into standard wall outlets without utility permission.",
+  "title": "Plug-In Solar Panel Kit Assembly",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/california-legalizes-plug-in-solar/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1523823,
+  "sha256": "sha256:78108eeb926d894601daffb83ad73f0a",
+  "source_hash": "sha256:3843cd50fe13fd709f0a8768b8486c8a",
+  "source_chars": 3798,
+  "task_id": "877eb61be57ce0ec1c9d7a2bc9fe6bf4",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_26c031f04a8e5ae996c8bd5adb3c888a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a small modular solar panel unit with an integrated cable ending in a standard three-prong wall plug, arranged on a seamless neutral surface, soft even light, generous negative space, matte muted palette, gallery-print calm, hard clean edges, a deliberate physical arrangement of these engineered parts\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, watermarks, people, complex backgrounds, bare geometry, abstract shapes.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-03T16:24:59+00:00"
+}
