@@ -17,11 +17,14 @@ const PERSONAS_FILE = join(ROOT, 'context', 'personas.json');
 const CALENDAR_FILE = join(ROOT, 'context', 'content_calendar.md');
 const ENV_FILE = join(ROOT, '.env');
 
-// Load repo-level .env if present and not in process.env
+// Load repo-level .env if present and not in process.env. PRESSFLOW_ENV_FILE overrides the path so
+// the public-surface test (scripts/test_public_surface.mjs) can run hermetically — including the
+// fail-closed case, which needs an environment with no secret in it.
 function loadEnv() {
-  if (existsSync(ENV_FILE)) {
+  const envFile = process.env.PRESSFLOW_ENV_FILE || ENV_FILE;
+  if (existsSync(envFile)) {
     try {
-      const content = readFileSync(ENV_FILE, 'utf8');
+      const content = readFileSync(envFile, 'utf8');
       for (const line of content.split('\n')) {
         const trimmed = line.trim();
         if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
@@ -58,13 +61,15 @@ const AUTH_SECRET = String(
   process.env.PRESSFLOW_AUTH_SECRET || process.env.EDITORIAL_SECRET || ''
 ).trim();
 
-// Reachable without credentials: the reader page for already-published articles
-// plus their manifest, and a health probe for the platform.
+// Reachable without credentials: a health probe for the platform, and a robots.txt that tells
+// crawlers to stay out. NOTHING ELSE. PressFlow is an internal dashboard — the articles it holds
+// are exported to the reader sites (giniloh.com / wellroost.com, see context/internal_links.json
+// `sites`), so serving them here published a second, competing public copy of every article on a
+// domain that is not a reader surface, including the ones still sitting as CMS drafts.
 function isPublicRequest(pathname, method) {
   if (method !== 'GET' && method !== 'HEAD') return false;
   if (pathname === '/healthz') return true;
-  if (pathname === '/api/articles.json') return true;
-  if (pathname.startsWith('/published/')) return true;
+  if (pathname === '/robots.txt') return true;
   return false;
 }
 
@@ -475,7 +480,40 @@ function parseFrontmatter(markdown) {
 // ─────────────────────────────────────────────────────────────────────────────
 const QUEUE_CONFIG_KEY = 'distribution_queue';
 const LOCAL_QUEUE_FILE = join(ROOT, 'context', 'distribution_queue.json');
-const READER_BASE = String(process.env.PRESSFLOW_READER_BASE_URL || 'https://pressflow.aichieve.net/published').replace(/\/$/, '');
+// The reader URL for an article is only ever the public frontend page it was exported to.
+// PressFlow holds the working artifacts, not the reader copy: its own /published/ path is behind
+// the shared secret now, and reader-facing copy must not point at the dashboard (a social post
+// aimed there would send readers to a login prompt and advertise the internal surface).
+// `context/internal_links.json` is the live-corpus index — it is built from the frontends' own
+// sitemaps, so an article missing from it is simply not public yet.
+const LIVE_INDEX_FILE = join(ROOT, 'context', 'internal_links.json');
+
+function wpSlug(publishedSlug) {
+  return String(publishedSlug || '').replace(/^(\d{4})-(\d{2})-(\d{2})_/, '');
+}
+
+function liveReaderUrls() {
+  try {
+    if (!existsSync(LIVE_INDEX_FILE)) return {};
+    const data = JSON.parse(readFileSync(LIVE_INDEX_FILE, 'utf8'));
+    const out = {};
+    for (const candidate of data.candidates || []) {
+      if (candidate && candidate.live && candidate.url && candidate.slug) {
+        out[candidate.slug] = candidate.url;
+      }
+    }
+    return out;
+  } catch (err) {
+    console.warn(`readerUrls: could not read ${LIVE_INDEX_FILE} (${err.message})`);
+    return {};
+  }
+}
+
+/** '' when the article is not live on a frontend yet — the social builders then omit the link
+ *  rather than advertising a page a reader cannot reach. */
+function readerUrlFor(publishedSlug) {
+  return liveReaderUrls()[wpSlug(publishedSlug)] || '';
+}
 
 const nowIso = () => new Date().toISOString();
 
@@ -569,7 +607,7 @@ async function seedQueueFromPublished({ refresh = false } = {}) {
     const article = parseArticleMarkdown(markdown);
     if (!article.slug) article.slug = file.replace(/\.md$/, '');
     const generated = buildTasksForArticle(article, {
-      readerUrl: `${READER_BASE}/${file}`,
+      readerUrl: readerUrlFor(article.slug),
       sourceId: file.replace(/\.md$/, ''),
     });
     for (const task of generated) {
@@ -836,6 +874,11 @@ async function syncAllArticlesToSupabase() {
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
 
+  // Defence in depth for an internal app: nothing served from this origin is a reader surface
+  // (the articles live on giniloh.com / wellroost.com), so no crawler should index any of it —
+  // including the health probe, and anything that was public before the surface was closed.
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
+
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     res.writeHead(204, {
@@ -846,7 +889,7 @@ const server = createServer(async (req, res) => {
     return res.end();
   }
 
-  // Access control — everything except the public article surface requires the
+  // Access control — everything except the health probe and robots.txt requires the
   // shared secret. Fails closed (503) when the secret is not configured.
   if (!isPublicRequest(url.pathname, req.method) && !isAuthorized(req)) {
     return sendAuthChallenge(res);
@@ -858,6 +901,14 @@ const server = createServer(async (req, res) => {
     // ----------------------------------------------------
     if (url.pathname === '/healthz') {
       return sendJson(res, 200, { status: 'ok' });
+    }
+
+    // ----------------------------------------------------
+    // robots.txt (public, and the one thing a crawler should read here)
+    // ----------------------------------------------------
+    if (url.pathname === '/robots.txt') {
+      res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+      return res.end('User-agent: *\nDisallow: /\n');
     }
 
     // ----------------------------------------------------
@@ -1805,7 +1856,7 @@ const server = createServer(async (req, res) => {
         const data = JSON.parse(await readFile(smPath, 'utf8'));
         return sendJson(res, 200, data);
       }
-      return sendJson(res, 200, { articles: [], base_url: 'https://editorialfactory.io' });
+      return sendJson(res, 200, { articles: [] });
     }
 
     if (url.pathname === '/api/seo/run-pipeline' && req.method === 'POST') {

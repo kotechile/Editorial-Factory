@@ -1,11 +1,9 @@
 {
-  "updated_at": "2026-10-02T11:40:43Z",
-  "base_url": "https://pressflow.aichieve.net/published",
+  "updated_at": "2026-10-03T01:43:45Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
       "title": "MCP Skills Extension: Standardizing Agent Workflows",
-      "url": "https://pressflow.aichieve.net/published/2026-09-21_mcp-skills-extension.md",
       "vertical": "agentic_ai",
       "primary_keyword": "MCP skills extension",
       "secondary_keywords": [
@@ -20,23 +18,25 @@
         "The Security Burden Remains"
       ],
       "target_persona": "ai_architect",
-      "date": "2026-09-21"
+      "date": "2026-09-21",
+      "public": true,
+      "url": "https://giniloh.com/mcp-skills-extension/"
     },
     {
       "slug": "2026-09-24_ai-spend-27t-cost-visibility-mandate",
       "title": "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement",
-      "url": "https://pressflow.aichieve.net/published/2026-09-24_ai-spend-27t-cost-visibility-mandate.md",
       "vertical": "enterprise_ai_finops",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [],
       "target_persona": "enterprise_cai",
-      "date": "2026-09-24"
+      "date": "2026-09-24",
+      "public": true,
+      "url": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/"
     },
     {
       "slug": "2026-09-24_maskills-multi-agent-skills-optimization",
       "title": "Stop Piling Memory Onto AI Agents: Optimize Skills",
-      "url": "https://pressflow.aichieve.net/published/2026-09-24_maskills-multi-agent-skills-optimization.md",
       "vertical": "agentic_ai",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -46,23 +46,25 @@
         "Limits of Skill Libraries"
       ],
       "target_persona": "ai_architect",
-      "date": "2026-09-24"
+      "date": "2026-09-24",
+      "public": true,
+      "url": "https://giniloh.com/maskills-multi-agent-skills-optimization/"
     },
     {
       "slug": "2026-09-24_up-ns-rail-merger-clears-summary-denial",
       "title": "Coast-to-Coast Rail Merger Clears First Big Test",
-      "url": "https://pressflow.aichieve.net/published/2026-09-24_up-ns-rail-merger-clears-summary-denial.md",
       "vertical": "supply_chain",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [],
       "target_persona": "ops_leader",
-      "date": "2026-09-24"
+      "date": "2026-09-24",
+      "public": true,
+      "url": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/"
     },
     {
       "slug": "2026-09-25_ca-fair-plan-rate-hike-hardening-exit",
       "title": "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy",
-      "url": "https://pressflow.aichieve.net/published/2026-09-25_ca-fair-plan-rate-hike-hardening-exit.md",
       "vertical": "resilient_home_assets",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -72,34 +74,42 @@
         "Fixes do not promise coverage"
       ],
       "target_persona": "pro_homeowner",
-      "date": "2026-09-25"
+      "date": "2026-09-25",
+      "public": true,
+      "url": "https://wellroost.com/ca-fair-plan-rate-hike-hardening-exit/"
     },
     {
       "slug": "2026-09-25_carta-unexercised-options-401k",
       "title": "Why 70% of Startup Options Go Unexercised",
-      "url": "https://pressflow.aichieve.net/published/2026-09-25_carta-unexercised-options-401k.md",
       "vertical": "career_velocity_equity_engineering",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [],
       "target_persona": "equity_career_strategist",
-      "date": "2026-09-25"
+      "date": "2026-09-25",
+      "public": true,
+      "url": "https://giniloh.com/carta-unexercised-options-401k/"
     },
     {
       "slug": "2026-09-25_zet-scale-ev-truck-residual-value-risk",
       "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn't the Reason",
-      "url": "https://pressflow.aichieve.net/published/2026-09-25_zet-scale-ev-truck-residual-value-risk.md",
       "vertical": "last_mile_routing_fleet_carbon",
       "primary_keyword": "",
       "secondary_keywords": [],
-      "h2_topics": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "The playbook:",
+        "The catch",
+        "At a glance"
+      ],
       "target_persona": "supply_chain_architect",
-      "date": "2026-09-25"
+      "date": "2026-09-25",
+      "public": false
     },
     {
       "slug": "2026-09-26_disney-hulu-fourth-hike-subscription-creep",
       "title": "Disney+ and Hulu Just Raised Prices 13% \u2014 Right After Doubling Profits",
-      "url": "https://pressflow.aichieve.net/published/2026-09-26_disney-hulu-fourth-hike-subscription-creep.md",
       "vertical": "personal_microeconomics_tinkering_tax",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -109,12 +119,13 @@
         "The Catch"
       ],
       "target_persona": "systems_tinkerer_pro",
-      "date": "2026-09-26"
+      "date": "2026-09-26",
+      "public": true,
+      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/"
     },
     {
       "slug": "2026-09-26_reshoring-moved-the-tariff-upstream",
       "title": "Reshoring Didn't Kill Tariff Risk \u2014 It Moved Upstream Into Packaging",
-      "url": "https://pressflow.aichieve.net/published/2026-09-26_reshoring-moved-the-tariff-upstream.md",
       "vertical": "supplier_risk_reshoring_decision",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -124,12 +135,13 @@
         "The Catch"
       ],
       "target_persona": "ops_leader",
-      "date": "2026-09-26"
+      "date": "2026-09-26",
+      "public": true,
+      "url": "https://giniloh.com/reshoring-moved-the-tariff-upstream/"
     },
     {
       "slug": "2026-09-26_tariff-cliff-already-priced-in",
       "title": "CFOs Are Pricing In the Tariff Cliff",
-      "url": "https://pressflow.aichieve.net/published/2026-09-26_tariff-cliff-already-priced-in.md",
       "vertical": "supply_chain",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -139,23 +151,24 @@
         "Cash Is Not Proof"
       ],
       "target_persona": "ops_leader",
-      "date": "2026-09-26"
+      "date": "2026-09-26",
+      "public": true,
+      "url": "https://giniloh.com/tariff-cliff-already-priced-in/"
     },
     {
       "slug": "2026-10-01_goods-tariff-relief-vs-vessel-fee",
       "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.",
-      "url": "https://pressflow.aichieve.net/published/2026-10-01_goods-tariff-relief-vs-vessel-fee.md",
       "vertical": "supply_chain",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [],
       "target_persona": "ops_leader",
-      "date": "2026-10-01"
+      "date": "2026-10-01",
+      "public": false
     },
     {
       "slug": "2026-10-01_planner-as-router-plan-time-routing",
       "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
-      "url": "https://pressflow.aichieve.net/published/2026-10-01_planner-as-router-plan-time-routing.md",
       "vertical": "agentic_ai",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -164,34 +177,34 @@
         "A Fixed Backup Plan"
       ],
       "target_persona": "ai_architect",
-      "date": "2026-10-01"
+      "date": "2026-10-01",
+      "public": false
     },
     {
       "slug": "2026-10-01_planning-ai-buys-capability-not-autonomy",
       "title": "Planning AI Buys Capability, Not Autonomy",
-      "url": "https://pressflow.aichieve.net/published/2026-10-01_planning-ai-buys-capability-not-autonomy.md",
       "vertical": "demand_sensing_advanced_sop",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [],
       "target_persona": "ops_leader",
-      "date": "2026-10-01"
+      "date": "2026-10-01",
+      "public": false
     },
     {
       "slug": "2026-10-01_token-prices-halved-cfo-cant-read-bill",
       "title": "Token Prices Just Halved. The CFO Still Can't Read the Bill.",
-      "url": "https://pressflow.aichieve.net/published/2026-10-01_token-prices-halved-cfo-cant-read-bill.md",
       "vertical": "enterprise_ai_finops",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [],
       "target_persona": "enterprise_cai",
-      "date": "2026-10-01"
+      "date": "2026-10-01",
+      "public": false
     },
     {
       "slug": "2026-10-02_moss-landing-burns-home-becomes-the-grid",
       "title": "Moss Landing Burns Again: Homeowners Become the Grid",
-      "url": "https://pressflow.aichieve.net/published/2026-10-02_moss-landing-burns-home-becomes-the-grid.md",
       "vertical": "resilient_home_assets",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -199,23 +212,26 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
-      "date": "2026-10-02"
+      "date": "2026-10-02",
+      "public": false
     },
     {
       "slug": "2026-10-02_same-day-race-undoes-route-optimization",
       "title": "The Same-Day Delivery Race Is Undoing a Decade of Route Optimization",
-      "url": "https://pressflow.aichieve.net/published/2026-10-02_same-day-race-undoes-route-optimization.md",
       "vertical": "last_mile_routing_fleet_carbon",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [
-        "The high cost of speed",
+        "The big picture:",
+        "By the numbers",
         "Where the money flows",
-        "The quiet casualty",
-        "Related reading"
+        "The catch",
+        "Related reading",
+        "At a glance"
       ],
       "target_persona": "supply_chain_architect",
-      "date": "2026-10-02"
+      "date": "2026-10-02",
+      "public": false
     }
   ]
 }

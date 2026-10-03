@@ -28,9 +28,10 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
    - Run this persistence pass **as part of the pipeline run**, not after an approval: the reader
      site + Supabase are not gated. `scripts/publish.py` refreshes `context/sitemap.json` for you;
      the run-log flip is the one step it cannot infer, so do it in the same pass.
-   - The reader surfaces derive the synthesis marker from the artifact frontmatter:
+   - The dashboard surfaces derive the synthesis marker from the artifact frontmatter:
      `/api/articles.json` and the article page report `synthesis` + the `sources` anchors, and the
-     page badges a synthesis article as such. So an article whose brief said
+     page badges a synthesis article as such (both sit behind `PRESSFLOW_AUTH_SECRET` — PressFlow is
+     internal, the articles are read on giniloh.com / wellroost.com). So an article whose brief said
      `Angle Type: Synthesis` **must** carry `synthesis: true` and its >= 2 anchors under
      `sources:` in `published/…md` — without the flag it publishes as an unmarked single-signal
      story. `verify.sh` §8 fails the build when the flag is missing
@@ -105,10 +106,14 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
 
 ## 6. Deploy surface & access control
 
-- `site/server.mjs` is the only public surface. It must keep **no unauthenticated** route that
-  writes, deletes, shells out to a script, or reads unpublished material. Everything except
-  `/published/*`, `/api/articles.json` and `/healthz` requires `PRESSFLOW_AUTH_SECRET`
-  (see `docs/VPS_WIRING.md` §4); with the secret unset the app fails closed (503).
+- `site/server.mjs` is the only public surface. It must keep **no unauthenticated** route except
+  `/healthz` and a disallow-all `/robots.txt`: everything else — the dashboard, the article pages,
+  the article manifest and the drafts — requires `PRESSFLOW_AUTH_SECRET` (see
+  `docs/VPS_WIRING.md` §4), and with the secret unset the app fails closed (503). PressFlow is an
+  **internal** dashboard; the articles are exported to the reader sites (`giniloh.com` /
+  `wellroost.com`), so a public `/published/*` or `/api/articles.json` publishes a second copy of
+  every article on a domain that is not a reader surface. `scripts/test_public_surface.mjs` is the
+  gate that keeps that true (`verify.sh` §10), and every response carries `X-Robots-Tag: noindex`.
 - Never re-introduce a `POST`/`DELETE` handler above the access-control check at the top of the
   request handler — the check runs before every route.
 - A deployment only contains **committed** files (Coolify clones git). A draft that was never

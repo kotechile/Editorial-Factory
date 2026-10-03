@@ -6,8 +6,14 @@ GSC-feedback loops. It used to be hand-maintained and drifted silently: after th
 2026-09-19 fresh-start commit it still listed four deleted 09-03/09-04/09-07 articles,
 omitted everything published since, and carried a stale `editorialfactory.io` base URL.
 
-Published markdown is the source of truth for "is it live?", so the sitemap is derived
-from it. Run this after every publish:
+Published markdown is the source of truth for "what has this pipeline produced?", so the sitemap is
+derived from it. It is NOT the source of truth for "where can a reader find it?" — PressFlow is an
+internal dashboard and its articles are exported to giniloh.com / wellroost.com, so an entry only
+carries a `url` once the article is live on a frontend (`context/internal_links.json`, which is
+built from the frontends' own sitemaps). An entry without a `url` is `"public": false` and is
+skipped by the internal-link map, which must never link a reader to a page that does not exist.
+
+Run this after every publish:
 
     python3 scripts/sitemap_sync.py           # rewrite context/sitemap.json
     python3 scripts/sitemap_sync.py --check   # exit 1 if it disagrees with published/
@@ -19,7 +25,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -28,11 +33,31 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PUB_DIR = ROOT / "published"
 SITEMAP = ROOT / "context" / "sitemap.json"
-DEFAULT_BASE = "https://pressflow.aichieve.net/published"
+LIVE_INDEX = ROOT / "context" / "internal_links.json"
 
 
-def base_url() -> str:
-    return os.environ.get("PRESSFLOW_READER_BASE_URL", DEFAULT_BASE).rstrip("/")
+def wp_slug(published_slug: str) -> str:
+    """`2026-09-26_tariff-cliff-already-priced-in` -> `tariff-cliff-already-priced-in`."""
+    return re.sub(r"^\d{4}-\d{2}-\d{2}_", "", published_slug)
+
+
+def public_urls() -> dict:
+    """wp-slug -> public frontend URL, from the live-corpus index.
+
+    That index is built from each frontend's own sitemap, so an article missing from it is simply
+    not public yet — which is the case for every article still sitting as a CMS draft.
+    """
+    if not LIVE_INDEX.exists():
+        return {}
+    try:
+        data = json.loads(LIVE_INDEX.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    out: dict = {}
+    for candidate in data.get("candidates") or []:
+        if candidate.get("live") and candidate.get("url") and candidate.get("slug"):
+            out.setdefault(candidate["slug"], candidate["url"])
+    return out
 
 
 def parse_frontmatter(text: str) -> dict:
@@ -62,32 +87,36 @@ def h2_topics(text: str) -> list:
     return re.findall(r"^##\s+(.+)$", body, re.M)
 
 
-def entry_for(path: Path, base: str) -> dict:
+def entry_for(path: Path, live: dict) -> dict:
     text = path.read_text(encoding="utf-8")
     fm = parse_frontmatter(text)
     slug = path.name[:-3]
     secondary = fm.get("secondary_keywords") or []
     if isinstance(secondary, str):
         secondary = [secondary]
-    return {
+    entry = {
         "slug": slug,
         "title": fm.get("title") or fm.get("meta_title") or slug,
-        "url": f"{base}/{path.name}",
         "vertical": fm.get("vertical", ""),
         "primary_keyword": fm.get("primary_keyword", ""),
         "secondary_keywords": secondary,
         "h2_topics": h2_topics(text),
         "target_persona": fm.get("persona") or fm.get("target_persona", ""),
         "date": fm.get("date", ""),
+        "public": False,
     }
+    url = live.get(wp_slug(slug))
+    if url:
+        entry["url"] = url
+        entry["public"] = True
+    return entry
 
 
 def build() -> dict:
-    base = base_url()
-    articles = [entry_for(p, base) for p in sorted(PUB_DIR.glob("*.md"))]
+    live = public_urls()
+    articles = [entry_for(p, live) for p in sorted(PUB_DIR.glob("*.md"))]
     return {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "base_url": base,
         "articles": articles,
     }
 
@@ -128,8 +157,9 @@ def main() -> int:
         return 0
 
     SITEMAP.write_text(json.dumps(fresh, indent=2) + "\n", encoding="utf-8")
+    public = sum(1 for a in fresh["articles"] if a.get("public"))
     print(f"sitemap:    wrote {len(fresh['articles'])} articles to context/sitemap.json "
-          f"(base {fresh['base_url']})")
+          f"({public} live on a frontend, {len(fresh['articles']) - public} internal-only)")
     return 0
 
 

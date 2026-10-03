@@ -157,8 +157,12 @@ Two things keep that step honest without a human:
 2. Env vars: `PORT=3000` **and `PRESSFLOW_AUTH_SECRET=<long random value>`**.
    `PRESSFLOW_AUTH_SECRET` is not optional: without it `site/server.mjs` answers 503 on every
    non-public route (fail closed). With it, the dashboard requires HTTP Basic auth — any username,
-   the value as the password — while `/published/<file>.md`, `/api/articles.json` and `/healthz`
-   stay public so published articles remain readable. Set `SUPABASE_URL` +
+   the value as the password — and **only `/healthz` and a disallow-all `/robots.txt` are reachable
+   without it**. PressFlow is an internal dashboard: the articles it holds are exported to the reader
+   sites (`giniloh.com` / `wellroost.com`), so serving them here would publish a second, competing
+   copy of every article — including the ones still sitting as CMS drafts — on a domain that is not a
+   reader surface. `scripts/test_public_surface.mjs` (run by `verify.sh` §10) spawns the real server
+   and asserts exactly that surface, including the fail-closed path. Set `SUPABASE_URL` +
    `SUPABASE_SERVICE_ROLE_KEY` **as well**: they are what makes the deployed dashboard's
    persistence work — without them the container runs filesystem-only (`"mocked"` responses on the
    Supabase routes) and the Distribution to-do queue cannot survive a redeploy.

@@ -40,8 +40,8 @@ The **TOC is render-time only** — the site derives it from the section heading
     - <Signal B's primary anchor URL>
   ```
   Inline form (`sources: [<url>, <url>]`) is accepted, and the anchors must be traceable to the
-  matching `_signals.md`. This flag is what marks the article as a fusion on the reader surfaces
-  (`/api/articles.json`, the article page badge) — an unflagged synthesis publishes as a
+  matching `_signals.md`. This flag is what marks the article as a fusion on the dashboard's own
+  surfaces (`/api/articles.json`, the article page badge) — an unflagged synthesis publishes as a
   single-signal story.
 - **At a Glance (TL;DR) Schema:** The `<!-- tldr -->` section must be a complete executive briefing that explains what the article is about in ~30 seconds using this exact 4-part plain-English structure:
   1. `- **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in clear, contextual terms>`

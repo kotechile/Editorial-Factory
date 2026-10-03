@@ -265,6 +265,22 @@ else
   echo "  skip: social voice gate (node not on PATH)"
 fi
 
+# 10. Public surface (hard): PressFlow is an internal dashboard — the articles it holds are exported
+#     to the reader sites (giniloh.com / wellroost.com), so the ONLY things reachable without the
+#     shared secret are /healthz and a disallow-all /robots.txt. An earlier revision whitelisted
+#     `/published/*` and `/api/articles.json` as "the reader surface", which published a second
+#     public copy of every article — including the ones still sitting as CMS drafts — on a domain
+#     that is not a reader surface. The test spawns the real server on a free port with a throwaway
+#     secret and an empty env file, so it needs no credentials and writes nothing.
+if command -v node >/dev/null 2>&1; then
+  if ! node "$ROOT/scripts/test_public_surface.mjs" >/dev/null 2>&1; then
+    echo "FAIL: public surface — detail:"
+    node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8; FAIL=1
+  fi
+else
+  echo "  skip: public-surface gate (node not on PATH)"
+fi
+
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"
   exit 1

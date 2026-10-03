@@ -253,8 +253,13 @@ The pipeline persists every finished article to the reader site + Supabase on it
 Review the published article:
 
 - **In the dashboard:** the article library, or Profiles → `editor` → its chat (or the Sessions page), or
-- **On disk / live:** `published/YYYY-MM-DD_<slug>.md` (source: `context/drafts/<slug>_final.md`),
-  served at `https://pressflow.aichieve.net/published/<file>.md`
+- **On disk / live:** `published/YYYY-MM-DD_<slug>.md` (source: `context/drafts/<slug>_final.md`).
+
+  That page is the **internal** review copy behind the dashboard login — PressFlow is not a reader
+  surface. The article becomes public only when it is published on its own site
+  (`giniloh.com` / `wellroost.com`, routed per vertical); `context/sitemap.json` records each
+  article's real reader URL once it is live there, and `published_log.md`'s Reader URL column is
+  filled in with it at that point.
 
 Then either:
 
@@ -288,8 +293,9 @@ end-to-end, so you never have to guess:
 - the draft/published frontmatter carries `synthesis: true` plus the `sources:` anchors, and
   `scripts/verify.sh` §8 fails the build if a Synthesis brief never reaches its artifact — so the
   marker cannot silently go missing;
-- on the site, `https://pressflow.aichieve.net/api/articles.json` reports `synthesis`, `sources` and
-  `sourceCount` per article, and the article page shows a **Synthesis** badge naming the anchor count.
+- on the dashboard's own article page (behind the login), the manifest
+  `https://pressflow.aichieve.net/api/articles.json` reports `synthesis`, `sources` and
+  `sourceCount` per article, and the page shows a **Synthesis** badge naming the anchor count.
   Every article cites multiple sources, so read the badge/flag — not the source count — as the
   fusion marker.
 

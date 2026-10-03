@@ -87,7 +87,7 @@ def load_sitemap():
                 "secondary_keywords": [],
                 "date": md_path.stem[:10] if re.match(r"^\d{4}-\d{2}-\d{2}", md_path.stem) else ""
             })
-    return {"articles": articles, "base_url": "https://editorialfactory.io"}
+    return {"articles": articles}
 
 
 def check_cannibalization(target_keyword, vertical=None, threshold=0.65):
