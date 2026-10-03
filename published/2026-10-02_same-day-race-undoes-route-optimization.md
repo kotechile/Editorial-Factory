@@ -88,7 +88,7 @@ Yet the broad shift feels locked in place for the long haul. Brands are paying t
   - **Mixing up carriers:** Shippers hiring new local delivery brands to dodge heavy fees and save cash on each order.
   - **The new rate waves:** Major freight firms pushing base rate hikes that will make every spread-out mile cost more.
   - **Stop counts versus speed:** The fight to keep high stop counts while still hitting fast drop-off times.
-- **The Catch:** The Amazon test is still small, and fuel costs swing wildly from month to month, but the long-term trend clearly favors raw speed over packed, green routes.
+- **The Fine Print:** The Amazon test is still small, and fuel costs swing wildly from month to month, but the long-term trend clearly favors raw speed over packed, green routes.
 
 ## Sources
 [1] Supply Chain Dive — "USPS, Amazon partner on same-day delivery pilot" (Sept. 30, 2026) — https://www.supplychaindive.com/news/usps-amazon-partner-on-same-day-delivery-pilot/831647/

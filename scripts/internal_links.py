@@ -59,6 +59,7 @@ MAX_LINKS = 3
 _BLOCK_RE = re.compile(r"[ \t]*" + re.escape(BLOCK_START) + r".*?" + re.escape(BLOCK_END) + r"[ \t]*\n?",
                        re.S)
 _FM_RE = re.compile(r"\A---\s*\n.*?\n---\s*\n", re.S)
+_BARE_RELATED_RE = re.compile(r"(?:\n|^)##\s*Related reading\s*\n+(?:[ \t]*[-*+]\s+\[[^\]]+\]\([^)]+\)[^\n]*\n*)+", re.M)
 _LIST_ITEM = re.compile(r"^-\s+\[(?P<anchor>[^\]]+)\]\((?P<url>https?://[^)\s]+)\)"
                         r"(?:\s+—\s+(?P<reason>.*))?$")
 _COMMENT_LINE = re.compile(r"^[ \t]*<!--.*?-->[ \t]*$\n?", re.M)
@@ -248,6 +249,8 @@ def enrich(markdown: str, *, vertical: str | None = None, topic: str | None = No
     had_delimited = previous is not None
     if had_delimited:
         body = _BLOCK_RE.sub("", body)
+    if _BARE_RELATED_RE.search(body):
+        body = _BARE_RELATED_RE.sub("\n", body)
 
     title = _frontmatter_title(frontmatter) or _first_heading(body)
     if links is None:
