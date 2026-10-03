@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T16:20:36Z",
+  "updated_at": "2026-10-03T17:43:01Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -234,6 +234,24 @@
       "date": "2026-10-02",
       "public": true,
       "url": "https://giniloh.com/same-day-race-undoes-route-optimization/"
+    },
+    {
+      "slug": "2026-10-03_3d-printing-failed-prints-are-the-cost",
+      "title": "Almost Half of 3D Prints Fail: The Real Cost of the Hobby",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-03",
+      "public": false
     },
     {
       "slug": "2026-10-03_california-legalizes-plug-in-solar",
