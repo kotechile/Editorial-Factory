@@ -45,8 +45,13 @@ def list_verticals():
     print("=" * 70)
     for i, v in enumerate(verticals, 1):
         d4s_status = "ON (live API credits)" if v.get("enable_dataforseo", True) else "OFF (credit bypass)"
+        news_on = v.get("news_enabled", True)
+        evergreen_on = bool(v.get("evergreen_cadence")) and v.get("evergreen_enabled", True)
+        modes = "+".join(n for n, on in (("news", news_on), ("evergreen", evergreen_on)) if on) or "disabled"
         print(f"{i}. [{v.get('id')}] {v.get('label')}")
-        print(f"   Cadence:    {v.get('cadence')}")
+        print(f"   Modes:      {modes}")
+        print(f"   Cadence:    {v.get('cadence') if news_on else '— (news off)'}")
+        print(f"   Evergreen:  {(v.get('evergreen_cadence') or '—') if evergreen_on else '— (evergreen off)'}")
         print(f"   Persona:    {v.get('target_persona')}")
         print(f"   DataForSEO: {d4s_status}")
         print(f"   Sources:    {', '.join(v.get('sources', []))}")
@@ -70,6 +75,12 @@ def add_vertical(args):
         # Default to an off-peak weekday slot: DeepSeek charges 2x on Mon-Fri 01:00-04:00 and
         # 06:00-10:00 UTC, so a new vertical must not land in that window by default.
         "cadence": args.cadence.strip() if args.cadence else "30 10 * * 1",
+        "news_enabled": True,
+        # No evergreen slot by default: the band has to be picked against the live fleet, and
+        # scripts/sync_crons.py --check fails on a collision or a peak window. Pass
+        # --evergreen-cadence (e.g. '30 18 * * 1') to switch the second pipeline on.
+        "evergreen_cadence": (getattr(args, "evergreen_cadence", "") or "").strip(),
+        "evergreen_enabled": bool((getattr(args, "evergreen_cadence", "") or "").strip()),
         "target_persona": args.persona.strip() if args.persona else "eng_leader",
         "sources": sources,
         "primary_angles": angles,
@@ -111,6 +122,12 @@ def edit_vertical(args):
         target["primary_angles"] = [a.strip() for a in args.angles.split(",") if a.strip()]
     if hasattr(args, "enable_dataforseo") and args.enable_dataforseo is not None:
         target["enable_dataforseo"] = args.enable_dataforseo
+    if getattr(args, "news_enabled", None) is not None:
+        target["news_enabled"] = args.news_enabled
+    if getattr(args, "evergreen_cadence", None) is not None:
+        target["evergreen_cadence"] = args.evergreen_cadence.strip()
+    if getattr(args, "evergreen_enabled", None) is not None:
+        target["evergreen_enabled"] = args.evergreen_enabled
 
     save_verticals(verticals)
     print(f"Updated vertical '{vid}' successfully.")
@@ -163,6 +180,7 @@ def main():
     p_add.add_argument("--angles", default="", help="Comma-separated primary angles")
     p_add.add_argument("--dataforseo", dest="dataforseo", action="store_true", default=None, help="Enable DataForSEO enrichment")
     p_add.add_argument("--no-dataforseo", dest="dataforseo", action="store_false", help="Disable DataForSEO enrichment to save credits")
+    p_add.add_argument("--evergreen-cadence", default="", help="Evergreen pipeline cron cadence (default: none — pick a free slot in the 17:30-20:00 UTC band)")
 
     # edit
     p_edit = subparsers.add_parser("edit", help="Edit an existing vertical")
@@ -174,6 +192,11 @@ def main():
     p_edit.add_argument("--angles", help="New comma-separated primary angles")
     p_edit.add_argument("--dataforseo", dest="dataforseo", action="store_true", default=None, help="Enable DataForSEO enrichment")
     p_edit.add_argument("--no-dataforseo", dest="dataforseo", action="store_false", help="Disable DataForSEO enrichment to save credits")
+    p_edit.add_argument("--news-enabled", dest="news_enabled", action="store_true", default=None, help="Switch the news pipeline back on")
+    p_edit.add_argument("--no-news", dest="news_enabled", action="store_false", help="Switch the news pipeline off (its cron job is removed on the next sync)")
+    p_edit.add_argument("--evergreen-cadence", help="New evergreen cadence ('' clears it)")
+    p_edit.add_argument("--evergreen-enabled", dest="evergreen_enabled", action="store_true", default=None, help="Switch the evergreen pipeline on")
+    p_edit.add_argument("--no-evergreen", dest="evergreen_enabled", action="store_false", help="Switch the evergreen pipeline off (its cron job is removed on the next sync)")
 
 
     # delete

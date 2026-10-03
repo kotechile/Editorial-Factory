@@ -1,35 +1,38 @@
 # Content Calendar
 
-Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these schedules.
+Schedules per vertical, for both fleets. The Editor-in-Chief dispatches the Radar Scout on
+the news schedule and the Evergreen Scout on the evergreen schedule; a mode switched off in
+the vertical's settings (`news_enabled` / `evergreen_enabled`) has no job at all —
+`scripts/sync_crons.py` reconciles both fleets from `context/verticals.json`.
 
-| Vertical | Cadence | Schedule (EST) | Status |
-|---|---|---|---|
-| agentic_ai | 30 10 * * 1,4 | Mon + Thu 10:30 AM UTC | active |
-| ai_observability_qa | 30 10 * * 2 | Tue 10:30 AM UTC | active |
-| agentic_resilience_failure | 30 10 * * 3 | Wed 10:30 AM UTC | active |
-| enterprise_ai_governance | 0 11 * * 1 | Mon 11:00 AM UTC | active |
-| nhil_infrastructure_ops | 0 11 * * 2 | Tue 11:00 AM UTC | active |
-| multi_agent_enterprise_fabric | 0 11 * * 3 | Wed 11:00 AM UTC | active |
-| enterprise_ai_finops | 0 11 * * 4 | Thu 11:00 AM UTC | active |
-| enterprise_tech_leadership | 30 11 * * 2 | Tue 11:30 AM UTC | active |
-| gpu_hardware | 30 11 * * 3 | Wed 11:30 AM UTC | active |
-| supply_chain | 30 11 * * 4 | Thu 11:30 AM UTC | active |
-| home_equity_tco | 30 11 * * 1 | Mon 11:30 AM UTC | active |
-| smart_home_telemetry | 0 12 * * 2 | Tue 12:00 PM UTC | active |
-| home_ops_execution | 0 12 * * 4 | Thu 12:00 PM UTC | active |
-| resilient_home_assets | 30 10 * * 5 | Fri 10:30 AM UTC | active |
-| home_infrastructure_lifecycle_tco | 0 12 * * 1 | Mon 12:00 PM UTC | active |
-| workstation_compute_economics | 30 12 * * 2 | Tue 12:30 PM UTC | active |
-| enterprise_build_vs_buy | 0 12 * * 3 | Wed 12:00 PM UTC | active |
-| expat_cross_border_relocation | 30 12 * * 4 | Thu 12:30 PM UTC | active |
-| career_velocity_equity_engineering | 0 11 * * 5 | Fri 11:00 AM UTC | active |
-| personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM UTC | active |
-| meio_working_capital_tco | 30 12 * * 1 | Mon 12:30 PM UTC | active |
-| control_tower_exception_orchestration | 0 13 * * 2 | Tue 01:00 PM UTC | active |
-| warehouse_automation_robotics_capex | 30 12 * * 3 | Wed 12:30 PM UTC | active |
-| demand_sensing_advanced_sop | 0 13 * * 4 | Thu 01:00 PM UTC | active |
-| last_mile_routing_fleet_carbon | 30 11 * * 5 | Fri 11:30 AM UTC | active |
-| supplier_risk_reshoring_decision | 30 6 * * 6 | Sat 06:30 AM UTC | active |
+| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Mode |
+|---|---|---|---|---|---|
+| agentic_ai | 30 10 * * 1,4 | Mon + Thu 10:30 AM UTC | 30 17 * * 1,4 | Mon + Thu 05:30 PM UTC | news+evergreen |
+| ai_observability_qa | 30 10 * * 2 | Tue 10:30 AM UTC | 30 17 * * 2 | Tue 05:30 PM UTC | news+evergreen |
+| agentic_resilience_failure | 30 10 * * 3 | Wed 10:30 AM UTC | 30 17 * * 3 | Wed 05:30 PM UTC | news+evergreen |
+| enterprise_ai_governance | 0 11 * * 1 | Mon 11:00 AM UTC | 0 18 * * 1 | Mon 06:00 PM UTC | news+evergreen |
+| nhil_infrastructure_ops | 0 11 * * 2 | Tue 11:00 AM UTC | 0 18 * * 2 | Tue 06:00 PM UTC | news+evergreen |
+| multi_agent_enterprise_fabric | 0 11 * * 3 | Wed 11:00 AM UTC | 0 18 * * 3 | Wed 06:00 PM UTC | news+evergreen |
+| enterprise_ai_finops | 0 11 * * 4 | Thu 11:00 AM UTC | 0 18 * * 4 | Thu 06:00 PM UTC | news+evergreen |
+| enterprise_tech_leadership | 30 11 * * 2 | Tue 11:30 AM UTC | 30 18 * * 2 | Tue 06:30 PM UTC | news+evergreen |
+| gpu_hardware | 30 11 * * 3 | Wed 11:30 AM UTC | 30 18 * * 3 | Wed 06:30 PM UTC | news+evergreen |
+| supply_chain | 30 11 * * 4 | Thu 11:30 AM UTC | 30 18 * * 4 | Thu 06:30 PM UTC | news+evergreen |
+| home_equity_tco | 30 11 * * 1 | Mon 11:30 AM UTC | 30 18 * * 1 | Mon 06:30 PM UTC | news+evergreen |
+| smart_home_telemetry | 0 12 * * 2 | Tue 12:00 PM UTC | 0 19 * * 2 | Tue 07:00 PM UTC | news+evergreen |
+| home_ops_execution | 0 12 * * 4 | Thu 12:00 PM UTC | 0 19 * * 4 | Thu 07:00 PM UTC | news+evergreen |
+| resilient_home_assets | 30 10 * * 5 | Fri 10:30 AM UTC | 0 18 * * 5 | Fri 06:00 PM UTC | news+evergreen |
+| home_infrastructure_lifecycle_tco | 0 12 * * 1 | Mon 12:00 PM UTC | 0 19 * * 1 | Mon 07:00 PM UTC | news+evergreen |
+| workstation_compute_economics | 30 12 * * 2 | Tue 12:30 PM UTC | 30 19 * * 2 | Tue 07:30 PM UTC | news+evergreen |
+| enterprise_build_vs_buy | 0 12 * * 3 | Wed 12:00 PM UTC | 0 19 * * 3 | Wed 07:00 PM UTC | news+evergreen |
+| expat_cross_border_relocation | 30 12 * * 4 | Thu 12:30 PM UTC | 30 19 * * 4 | Thu 07:30 PM UTC | news+evergreen |
+| career_velocity_equity_engineering | 0 11 * * 5 | Fri 11:00 AM UTC | 30 18 * * 5 | Fri 06:30 PM UTC | news+evergreen |
+| personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM UTC | 30 17 * * 6 | Sat 05:30 PM UTC | news+evergreen |
+| meio_working_capital_tco | 30 12 * * 1 | Mon 12:30 PM UTC | 30 19 * * 1 | Mon 07:30 PM UTC | news+evergreen |
+| control_tower_exception_orchestration | 0 13 * * 2 | Tue 01:00 PM UTC | 0 20 * * 2 | Tue 08:00 PM UTC | news+evergreen |
+| warehouse_automation_robotics_capex | 30 12 * * 3 | Wed 12:30 PM UTC | 30 19 * * 3 | Wed 07:30 PM UTC | news+evergreen |
+| demand_sensing_advanced_sop | 0 13 * * 4 | Thu 01:00 PM UTC | 0 20 * * 4 | Thu 08:00 PM UTC | news+evergreen |
+| last_mile_routing_fleet_carbon | 30 11 * * 5 | Fri 11:30 AM UTC | 0 19 * * 5 | Fri 07:00 PM UTC | news+evergreen |
+| supplier_risk_reshoring_decision | 30 6 * * 6 | Sat 06:30 AM UTC | 0 18 * * 6 | Sat 06:00 PM UTC | news+evergreen |
 
 ## Run log
 | Date | Vertical | Result | Notes |
@@ -79,3 +82,4 @@ Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these sc
 | 2026-10-01 | demand_sensing_advanced_sop | published to pressflow + Supabase (reader/DB surface is not approval-gated) | Winner: planning-ai-buys-capability-not-autonomy (8.8, Single-Signal). 6/6 claims VERIFIED, 0 removed, 0 flagged. Primary: Gartner press release (Sep 24) — only 5% of orgs will make ≥10% of planning decisions autonomously by 2030; 83% spent ≥$3M, 51% $3–10M; survey of 243 leaders (Nov 11–Dec 18 2025); analyst Buse Aras. Corroborating: Supply Chain Dive "6 food manufacturers" (Sep 25) — General Mills AI demand forecasting + $1B savings target, Nestlé SKU cuts. Seed block reported 0 candidates ("no valid pair"); synthesis (⨂ Barclays food-manufacturers) rejected — second leg is cost-reduction, not demand-sensing. Frontier rewrite on gemini-3.1-pro-preview (2 attempts); accessibility PASS (Flesch 65.2, target 60); 669 body words. First fresh primary for this anchor-driven vertical (prior 09-24 run was no-publish). PUBLISHED 2026-10-01 → published/2026-10-01_planning-ai-buys-capability-not-autonomy.md, commit 4753f59; Supabase article id 31eee6a2-8368-4985-bd2c-a03ee4e371af; WordPress draft post 422 (cms.giniloh.com, draft only); published_log.md + sitemap.json updated. LinkedIn/Reddit distribution still manual (@Simon approve gate). |
 | 2026-10-02 | resilient_home_assets | published to pressflow + Supabase (reader/DB surface is not approval-gated) | Winner: moss-landing-burns-home-becomes-the-grid (9.0, Synthesis). 9/9 claims VERIFIED, 0 removed, 0 flagged. Primaries: CalMatters (Sept 18 — ~1,500 still-charged modules reignited; 4th safety incident since 2019; aging NMC design) ⨂ Gov. Newsom legislative update (Sept 30 — SB 905 "Electricity" + SB 913 "Resource adequacy: aggregated distributed energy resources" signed; AB 1813 community-solar vetoed same day). Synthesis: centralized grid-battery fire ⨂ VPP behind-the-meter compensation = "the failure of the big battery became the argument for the small one." Mechanically-seeded block reported "no valid pair" (token layer missed the fire⨂VPP collision; Judge found it). Frontier rewrite on gemini-3.1-pro-preview (2 attempts); accessibility PASS (Flesch 50.0, floor 50); 628 body words. De-duped vs 09-25 ca-fair-plan-rate-hike (insurability/hardening — distinct thesis). PUBLISHED 2026-10-02 → published/2026-10-02_moss-landing-burns-home-becomes-the-grid.md; Supabase article id f023bcf0-103a-410f-9503-fc44f4113cab; WordPress draft post 65 (cms.wellroost.com, draft only); published_log.md + sitemap.json updated; distribution cards seeded (2). LinkedIn/Reddit distribution still manual (@Simon approve gate). |
 | 2026-10-02 | career_velocity_equity_engineering | **no publish** (weak cycle; virality gate — second run) | 30-day window (Sep 2–Oct 2) advanced only ~7 days since the 09-25 first run, which already won the window's sharpest story (Carta "State of Employee Equity & 401(k)", Sept 10 → carta-unexercised-options-401k, 9.0). Fresh in-window candidates: NPM PAM™ AI investing agent (Sept 17, 7.0 — vendor product launch, investor-side, weak persona fit), Oracle unvested-equity cancellation (Sept 23, 6.9 — retread of the 09-25 runner-up), JPMorgan QSBS 3-changes explainer (Sept 22, 6.2 — evergreen, underlying law July 2025), Levels.fyi medians (Sept 30, 5.2 — rolling aggregate). Best synthesis (NPM PAM ⨂ Oracle, "liquidity rails for capital ⨂ equity clawback for labor") = 7.35, below the 8.0 gate and on a retread leg. Sharpest on-vertical data (EquityZen Q2 38% secondary discount, July 9) out of window. Recon written to recon_proposals/2026-10-02_career_velocity_equity_engineering_signals.md (seeded: rows=4 candidates=0, "no valid pair") + _angle_brief.md. No draft/humanize/publish. Failure class already covered by radar_30day.md §4 + virality_judge.md §3.5; log entry added, no new patch. Watch-items: EquityZen Q3 secondary report (~Oct), next Carta comp/equity data drop, a fresh named-company equity-clawback case, QSBS 2027 inflation index, big-tech Q4 refresher disclosures. |
+| 2026-10-02 | last_mile_routing_fleet_carbon | published to pressflow + Supabase (reader/DB surface is not approval-gated) | Winner: same-day-race-undoes-route-optimization (8.4, Synthesis). 8/8 claims VERIFIED, 0 removed, 0 flagged. Primaries: Supply Chain Dive USPS–Amazon same-day pilot (Sept 30 — 12–1pm drop → 2–8pm same-day delivery; 200 pkgs/day + 3 routes at Morgantown WV + Lake Havasu City AZ; expanding Columbia SC Oct 20 with 500 pkgs/5 routes) ⨂ EIA on-highway diesel $6.53/gal all-time record via Bain (Oct 1 — +88% YTD from ~$3.46, fuel 25–30% of trucking op cost vs 21% in 2024, UPS surcharge 21%→29.5%). Synthesis: same-day speed race ⨂ record fuel = "the same-day arms race is undoing a decade of route optimization — at $6.53 a gallon." Mechanically-seeded block reported "no valid pair" (no archetype scoped to this vertical; the Judge found the pair). Second run for this vertical; de-duped vs 09-25 zet-scale-ev-truck-residual-value-risk (EV financing — distinct thesis; diesel $6.28 was a rejected runner-up, $6.53 is a new record). Frontier rewrite on gemini-3.1-pro-preview (2 attempts); accessibility PASS (Flesch 68.6, target 60); 731 body words. PUBLISHED 2026-10-02 → published/2026-10-02_same-day-race-undoes-route-optimization.md; Supabase article id e704a0c6-35c3-4090-a6d8-464b04da2fa9; WordPress draft post 462 (cms.giniloh.com, draft only, featured media 461, 1 internal link); published_log.md + sitemap.json updated; distribution cards seeded (0 new — queue 50). LinkedIn/Reddit distribution still manual (@Simon approve gate). |

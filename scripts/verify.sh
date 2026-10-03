@@ -203,6 +203,25 @@ if ! python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network >/dev/null 2
   python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.65 Evergreen track (hard). The evergreen fleet is a second pipeline whose whole point is the
+#      topics the news gate must reject, so its floor is code rather than prose
+#      (scripts/evergreen_gate.py, skills/evergreen_topics.md): >= 3 cited primary sources on
+#      >= 2 hosts, EVERY one fetched live and shown to contain the figure it is cited for, plus a
+#      named persona decision, a de-dup statement naming a prior artifact that exists, and an
+#      `as of` date on any time-bound figure. The rules are pinned offline by the suite
+#      (stubbed fetch — no network, no credits); the committed briefs are then checked for a
+#      FRESH marker only, so the daily gate never makes an outbound request. Editing a row after
+#      the gate ran leaves the marker stale and fails here, which is the point: it is the same
+#      contract the synthesis seed block uses.
+if ! python3 "$ROOT/scripts/test_evergreen_gate.py" >/dev/null 2>&1; then
+  echo "FAIL: evergreen gate tests — detail:"
+  python3 "$ROOT/scripts/test_evergreen_gate.py" 2>&1 | tail -8; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/evergreen_gate.py" --check-artifacts --no-network; then
+  echo "FAIL: an evergreen brief has no gate marker or a stale one — re-run scripts/evergreen_gate.py --brief <path>"
+  FAIL=1
+fi
+
 # 8.7 Internal links (hard): candidates come from the live corpus and must be same-site, live, never
 #     the article itself, and never a mere domain match — and since the drafting stage cannot know the
 #     live corpus, the block itself is generated and delivered by scripts/internal_links.py (hooked

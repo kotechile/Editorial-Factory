@@ -331,14 +331,24 @@ async function updateCalendarMarkdown(verticals) {
     const lines = [
       '# Content Calendar',
       '',
-      'Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these schedules.',
+      'Schedules per vertical, for both fleets. The Editor-in-Chief dispatches the Radar Scout on',
+      'the news schedule and the Evergreen Scout on the evergreen schedule; a mode switched off in',
+      'the vertical\'s settings (`news_enabled` / `evergreen_enabled`) has no job at all —',
+      '`scripts/sync_crons.py` reconciles both fleets from `context/verticals.json`.',
       '',
-      '| Vertical | Cadence | Schedule (UTC) | Status |',
-      '|---|---|---|---|',
+      '| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Mode |',
+      '|---|---|---|---|---|---|',
     ];
 
     for (const v of verticals) {
-      lines.push(`| ${v.id} | ${v.cadence || '30 10 * * 1'} | ${formatHumanCadence(v.cadence)} | active |`);
+      const newsOn = v.news_enabled !== false;
+      const evergreenOn = Boolean(v.evergreen_cadence) && v.evergreen_enabled !== false;
+      const modes = [newsOn ? 'news' : null, evergreenOn ? 'evergreen' : null].filter(Boolean).join('+');
+      lines.push(`| ${v.id} | ${newsOn ? (v.cadence || '30 10 * * 1') : '—'} `
+        + `| ${newsOn ? formatHumanCadence(v.cadence) : 'off'} `
+        + `| ${evergreenOn ? v.evergreen_cadence : '—'} `
+        + `| ${evergreenOn ? formatHumanCadence(v.evergreen_cadence) : 'off'} `
+        + `| ${modes || 'disabled'} |`);
     }
 
     lines.push('');
@@ -1485,6 +1495,12 @@ const server = createServer(async (req, res) => {
         id: slug,
         label: vertical.label.trim(),
         cadence: (vertical.cadence || '30 10 * * 1').trim(),
+        // Fleet modes. The registry is the source of truth for the cron fleet
+        // (scripts/sync_crons.py reconciles one job per mode from these fields), so a save that
+        // dropped them would silently re-enable a pipeline the operator switched off.
+        news_enabled: vertical.news_enabled !== undefined ? Boolean(vertical.news_enabled) : true,
+        evergreen_cadence: (vertical.evergreen_cadence || '').trim(),
+        evergreen_enabled: vertical.evergreen_enabled !== undefined ? Boolean(vertical.evergreen_enabled) : true,
         target_persona: (vertical.target_persona || 'eng_leader').trim(),
         sources: Array.isArray(vertical.sources) ? vertical.sources : [],
         primary_angles: Array.isArray(vertical.primary_angles) ? vertical.primary_angles : [],
@@ -1565,7 +1581,8 @@ const server = createServer(async (req, res) => {
 
       if (req.method === 'POST') {
         const body = await parseJsonBody(req);
-        const { id, label, cadence, target_persona, sources, primary_angles, enable_dataforseo } = body;
+        const { id, label, cadence, target_persona, sources, primary_angles, enable_dataforseo,
+          news_enabled, evergreen_cadence, evergreen_enabled } = body;
 
         if (!id || !label) {
           return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
@@ -1582,6 +1599,11 @@ const server = createServer(async (req, res) => {
           id: slug,
           label: label.trim(),
           cadence: (cadence || '30 10 * * 1').trim(),
+          news_enabled: news_enabled !== undefined ? Boolean(news_enabled) : true,
+          // A new vertical starts with no evergreen run: the slot has to be chosen against the
+          // live fleet (scripts/sync_crons.py --check fails on a collision or a peak window).
+          evergreen_cadence: (evergreen_cadence || '').trim(),
+          evergreen_enabled: evergreen_enabled !== undefined ? Boolean(evergreen_enabled) : true,
           target_persona: (target_persona || 'eng_leader').trim(),
           sources: Array.isArray(sources) ? sources : [],
           primary_angles: Array.isArray(primary_angles) ? primary_angles : [],

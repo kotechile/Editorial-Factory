@@ -54,59 +54,76 @@ Each bot's working directory must be this repo (so `skills/`, `context/`, and `s
 
 ## 3. Cron jobs (config-driven, reconciled)
 
-One `Full Pipeline: <vertical>` job per entry in `context/verticals.json` (**26 today**), generated
-and reconciled by `scripts/sync_crons.py`:
+Two fleets, both generated from `context/verticals.json` (**26 + 26 today**) by
+`scripts/sync_crons.py`: one `Full Pipeline: <vertical>` job per registry `cadence` (the 30-day news
+radar) and one `Evergreen Pipeline: <vertical>` job per registry `evergreen_cadence` (the useful,
+durable track, `skills/evergreen_topics.md`). A vertical whose `news_enabled` / `evergreen_enabled`
+is false has **no job for that mode** — see the drift classes below.
 
 ```
 python3 scripts/sync_crons.py --dry-run   # show the plan
-python3 scripts/sync_crons.py             # create missing, fix drifted
+python3 scripts/sync_crons.py             # create missing, fix drifted, remove disabled
 python3 scripts/sync_crons.py --check     # exit 1 if drifted (wired into scripts/verify.sh)
 python3 scripts/sync_crons.py --retire-orphans   # also drop jobs for retired verticals
 ```
 
-The script reconciles four drift classes, and `--check` fails closed on every one of them:
+The script reconciles six drift classes, and `--check` fails closed on every one of them:
 
-- **missing** — a registry vertical with no job (this is how 22 verticals sat unscheduled: the
-  earlier create-only version skipped any job whose *name* already existed, so the 09-19/09-20
-  registry expansion never reached the live fleet)
-- **drifted** — a job whose schedule differs from the registry `cadence` (a create-only sync can
-  never apply a cadence change)
-- **stale prompt** — a job whose instruction differs from `prompt_for(vertical)`. The registry owns
-  the step *sequence* too, so a step added to the template (e.g. `synthesize_topics.py --seed`,
-  which seeds each signals file's candidate-pair block) cannot silently fail to reach the fleet.
-- **orphan** — a `Full Pipeline:` job for a vertical no longer in the registry (e.g.
-  `home_systems_reno`, retired in `b927ea6` and replaced by the Home & Lifestyle set)
+- **missing** — a registry vertical with no job for an enabled mode (this is how 22 verticals sat
+  unscheduled: the earlier create-only version skipped any job whose *name* already existed, so the
+  09-19/09-20 registry expansion never reached the live fleet)
+- **drifted** — a job whose schedule differs from the registry `cadence` / `evergreen_cadence`
+  (a create-only sync can never apply a cadence change)
+- **stale prompt** — a job whose instruction differs from `prompt_for(vertical)` /
+  `evergreen_prompt_for(vertical)`. The registry owns the step *sequence* too, so a step added to
+  the template (e.g. `synthesize_topics.py --seed`, which seeds each signals file's candidate-pair
+  block, or the evergreen gate step) cannot silently fail to reach the fleet.
+- **disabled** — the settings say the mode is off for the vertical but a live job still exists. The
+  registry owns the job's *existence*, so apply **removes** it (re-enabling recreates it). Reusing
+  `pause()` here would be ambiguous with an operator's deliberate pause, which the tool leaves alone.
+- **orphan** — a job for a vertical no longer in the registry (e.g. `home_systems_reno`, retired in
+  `b927ea6` and replaced by the Home & Lifestyle set)
+- **collision** — two registry cadences sharing a `(weekday, hour, minute)` slot, across both
+  fleets. Slots were a manual discipline ("verify per-weekday uniqueness from the live store, not by
+  eye") until the evergreen fleet doubled the number of slots to check; it is a gate now, because
+  concurrent pipelines stampede the shared deepseek API and the pinned frontier stylist.
 
-**Staggering.** Slots are 30 minutes apart (10:30–13:00 UTC) and unique within each weekday, so no
-two full pipelines fire together. Six concurrent 06:00 runs is what we saw before: they share the
-deepseek API and the pinned frontier stylist (`kie.ai`), whose 400/5xx responses halt Loop 3. Keep
-slots unique per day when adding a vertical.
+**Staggering.** Slots are 30 minutes apart — news 10:30–13:00 UTC, evergreen 17:30–20:00 UTC — and
+unique within each weekday, so no two jobs fire together. Six concurrent 06:00 runs is what we saw
+before: they share the deepseek API and the pinned frontier stylist (`kie.ai`), whose 400/5xx
+responses halt Loop 3.
 
 **Off-peak.** DeepSeek bills weekday tokens at 2x inside **01:00–04:00 and 06:00–10:00 UTC**
 (weekends are off-peak all day), and the scheduler reads cadence hours on the host clock, which is
-UTC on this VPS. So every weekday pipeline sits at/after 10:30 UTC — the first slot after the
-morning window — which also leaves the longest runway before the next window opens at 01:00, so a
-slow pipeline cannot run *into* a 2x band. The watchdogs moved with the fleet: `Weekly Market Recon`
-Mon 14:30, `Editorial Verify Gate` 14:00, `WordPress Draft Sweep` 14:15, `Daily Proactive Sweep`
-15:30, `Build Watchdog` 16:30, `Growth Watchdog` Fri 17:00. Two gates enforce it:
-`scripts/sync_crons.py --check` (registry cadences — it refuses to *apply* a peak cadence) and
-`scripts/check_offpeak_crons.py` (every enabled job in the live store that makes a model call; run
-by `verify.sh` §7.2, so the daily gate reports a drift back into the 2x band). `--no_agent` script
-jobs are exempt: they make no model call.
+UTC on this VPS. So every weekday cadence sits at/after 10:30 UTC — the first slot after the
+morning window — and the evergreen band starts at 17:30. The watchdogs sit with the fleet:
+`Weekly Market Recon` Mon 14:30, `Editorial Verify Gate` 14:00, `WordPress Draft Sweep` 14:15,
+`Daily Proactive Sweep` 15:30, `Build Watchdog` 16:30, `Growth Watchdog` Fri 17:00 (which is why the
+Friday evergreen band starts at 18:00). Two gates enforce it: `scripts/sync_crons.py --check`
+(registry cadences — it refuses to *apply* a peak cadence) and `scripts/check_offpeak_crons.py`
+(every enabled job in the live store that makes a model call; run by `verify.sh` §7.2, so the daily
+gate reports a drift back into the 2x band). `--no_agent` script jobs are exempt: they make no model
+call.
 
-Current weekday slot map: **Mon** 10:30, 11:00, 11:30, 12:00, 12:30 (`agentic_ai` + 4) ·
-**Tue** 10:30 … 13:00 (6) · **Wed** 10:30 … 12:30 (5) · **Thu** 10:30, 11:00 … 13:00 (6, incl.
-`agentic_ai`) · **Fri** 10:30, 11:00, 11:30 (3) · **Sat** 06:00, 06:30 (2, off-peak). Full table:
-`docs/USER_GUIDE.md` §3, or `hermes cron list`.
+Current weekday slot map: **Mon** news 10:30, 11:00, 11:30, 12:00, 12:30 + evergreen 17:30 … 19:30 ·
+**Tue** news 10:30 … 13:00 (6) + evergreen 17:30 … 20:00 (6) · **Wed** news 10:30 … 12:30 (5) +
+evergreen 17:30 … 19:30 · **Thu** news 10:30 … 13:00 (6, incl. `agentic_ai`) + evergreen 17:30 … 20:00 ·
+**Fri** news 10:30, 11:00, 11:30 + evergreen 18:00, 18:30, 19:00 · **Sat** news 06:00, 06:30 +
+evergreen 17:30, 18:00 (all off-peak). Full table: `docs/USER_GUIDE.md` §3, or `hermes cron list`.
 
-Each job is self-contained and runs the complete pipeline (`radar_30day → synthesize_topics --seed →
-virality_judge → fact_check → story_draft → claude_humanizer`) with `--workdir /root/editorial-factory`
-(loads `AGENTS.md` + `skills/`), `--model deepseek-v4-pro` and `--deliver slack` — the live fleet
-delivers to the Slack home channel (`#loop-ai`), which is where the `@Simon approve` gate is read.
-The `editor` bot orchestrates: it runs Loops 1–2 on deepseek, then dispatches `stylist`
-(`hermes -p stylist chat -q "…"`) for the Claude rewrite (Loop 3). Every pipeline halts at the
-`@Simon approve` gate before publishing. `EDITORIAL_CRON_DELIVER` / `EDITORIAL_CRON_MODEL` override
-the delivery target and model if you re-wire the fleet onto Bot Chats.
+Each job is self-contained and runs its track's complete pipeline. News:
+`radar_30day → synthesize_topics --seed → virality_judge → fact_check → story_draft →
+claude_humanizer`. Evergreen: `evergreen_topics → evergreen_gate --brief → fact_check → story_draft →
+claude_humanizer` — note the news gate (`virality_judge`) deliberately does **not** run there: its
+Novelty axis (0.40) is what dead-ends a durable topic, and the evergreen evidence floor is enforced
+in code instead. Both fleets run with `--workdir /root/editorial-factory` (loads `AGENTS.md` +
+`skills/`), `--model deepseek-v4-pro` and `--deliver slack` — the live fleet delivers to the Slack
+home channel (`#loop-ai`), which is where the `@Simon approve` gate is read. The `editor` bot
+orchestrates: it runs Loops 1–2 on deepseek, then dispatches `stylist`
+(`hermes -p stylist chat -q "…"`) for the Claude rewrite (Loop 3). Publishing is not approval-gated
+(site + Supabase persist in the run); outbound distribution waits for the `@Simon approve` gate.
+`EDITORIAL_CRON_DELIVER` / `EDITORIAL_CRON_MODEL` override the delivery target and model if you
+re-wire the fleet onto Bot Chats.
 
 ### The seed step, and the gate that proves it ran
 

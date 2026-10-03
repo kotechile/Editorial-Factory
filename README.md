@@ -9,7 +9,7 @@ output is published articles instead of micro-SaaS products.
 
 > 📖 **Read [docs/USER_GUIDE.md](docs/USER_GUIDE.md)** — how it works and how to use it.
 
-## Dual-Engine Architecture
+## Triple-Engine Architecture
 
 ### Engine 1: 30-Day News & Intelligence Radar (with Cross-Topic Synthesis)
 ```
@@ -61,6 +61,28 @@ output is published articles instead of micro-SaaS products.
            ▼
    [Performance Loop]    ──> Post-publish rank tracking in GSC feeds learnings back to Growth OS
 ```
+
+### Engine 3: Evergreen Track (useful, durable topics)
+```
+[Cron: Evergreen Pipeline: <vertical>] ──> same weekday as the news run, 17:30-20:00 UTC band
+           │
+           ▼
+ [Evergreen Scout]      ──> topic from EVIDENCE, never invention: the vertical's primary_angles,
+           │                the persona's `wants`, founder-voice §2/§3 pillars, customer-truth
+           │                field notes, the intel feeds, GSC striking-distance queries
+           ▼
+ [Evidence floor]       ──> scripts/evergreen_gate.py: >= 3 primary sources on >= 2 hosts, each
+           │                FETCHED and shown to contain the figure cited, a named persona
+           │                decision, a proven 180-day de-dup, an `as of` date on time-bound figures
+           ▼
+   [fact_check] ──> [story_draft] ──> [claude_humanizer] ──> publish.py (published/ + Supabase)
+```
+Engine 1 answers *what happened this month* and is gated on freshness (Novelty carries 0.40), so it
+correctly refuses a durable topic. Engine 3 publishes the topics Engine 1 must refuse — a decision
+the reader faces for years — with a different gate (`skills/evergreen_topics.md`), its own schedule,
+and the same persistence/approval rules. Both fleets are reconciled from `context/verticals.json`
+and each mode can be switched off per vertical (`news_enabled` / `evergreen_enabled`), which removes
+its cron job rather than leaving a half-configured pipeline behind.
 
 ## Agent workforce
 
@@ -165,18 +187,25 @@ See `docs/VPS_WIRING.md` for the VPS-side bot fleet, cron jobs, and Coolify depl
 ## Adding a vertical (config-as-data)
 
 Verticals live entirely in `context/verticals.json` — each entry carries `id`, `label`, `cadence`
-(cron expression), `sources`, `primary_angles`, and `target_persona`. To add one:
+(cron expression), `news_enabled`, `evergreen_cadence`, `evergreen_enabled`, `sources`,
+`primary_angles`, and `target_persona`. To add one:
 
 1. Append an entry to `context/verticals.json`, giving it a `cadence` slot that is **free on every
    weekday it uses** (slots are 30 minutes apart, 10:30–13:00 UTC — pipelines cannot share a slot).
    Keep it out of DeepSeek's peak windows (Mon–Fri 01:00–04:00 and 06:00–10:00 UTC, where tokens cost
    2x): `scripts/sync_crons.py` refuses to apply such a cadence, `--check` fails on it, and
    `scripts/check_offpeak_crons.py` audits the whole live fleet (watchdogs included) the same way.
-2. Run `python3 scripts/sync_crons.py` on the VPS — it creates the missing `Full Pipeline: <id>`
-   cron job and fixes any job whose schedule drifted from the registry. Add `--dry-run` to see the
-   plan first; `--check` exits non-zero if the registry and the live fleet disagree (this is what
-   `scripts/verify.sh` runs, together with the off-peak gate).
-3. Optionally add a matching `target_persona` to `context/personas.json`.
+2. Add an `evergreen_cadence` if the vertical should also run the evergreen track — a free slot in
+   the **17:30–20:00 UTC** band (the news fleet's slots and the daily watchdogs are taken), on the
+   same weekday as its news run. `--check` fails on a collision between the two fleets. Leave it
+   out (or set `evergreen_enabled: false`) for a news-only vertical.
+3. Run `python3 scripts/sync_crons.py` on the VPS — it creates the missing
+   `Full Pipeline: <id>` / `Evergreen Pipeline: <id>` cron jobs and fixes any job whose schedule or
+   instruction drifted from the registry. Add `--dry-run` to see the plan first; `--check` exits
+   non-zero if the registry and the live fleets disagree (this is what `scripts/verify.sh` runs,
+   together with the off-peak gate). A mode switched off (`news_enabled: false` /
+   `evergreen_enabled: false`) has its job **removed** by the same run.
+4. Optionally add a matching `target_persona` to `context/personas.json`.
 
 No code changes required.
 

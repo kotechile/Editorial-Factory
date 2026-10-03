@@ -19,6 +19,15 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VERTICALS_PATH = os.path.join(REPO, "context", "verticals.json")
 PERSONAS_PATH = os.path.join(REPO, "context", "personas.json")
 CALENDAR_PATH = os.path.join(REPO, "context", "content_calendar.md")
+
+# The fleet-mode columns (news vs evergreen) are additive: an existing project's
+# `editorial_verticals` table predates them, and PostgREST rejects the whole upsert on one unknown
+# key. So the mirror degrades loudly instead of failing — see push_to_supabase().
+FLEET_COLUMNS = ("news_enabled", "evergreen_cadence", "evergreen_enabled")
+SCHEMA_ALTER = """alter table editorial_verticals
+  add column if not exists news_enabled boolean default true,
+  add column if not exists evergreen_cadence text,
+  add column if not exists evergreen_enabled boolean default true;"""
 ENV_PATH = os.path.join(REPO, ".env")
 
 
@@ -95,7 +104,12 @@ def human_cadence(cadence_str: str) -> str:
 
 
 def update_content_calendar(verticals):
-    """Regenerate context/content_calendar.md with updated cadence table while preserving log."""
+    """Regenerate context/content_calendar.md with updated cadence table while preserving log.
+
+    Both fleets are listed, because both are reconciled from this registry
+    (`scripts/sync_crons.py`) and a mode switched off in the vertical's settings has no job at all.
+    So the calendar has to show the *settings*, not just the news slot it used to show.
+    """
     existing_log = ""
     if os.path.exists(CALENDAR_PATH):
         with open(CALENDAR_PATH, "r", encoding="utf-8") as f:
@@ -109,17 +123,29 @@ def update_content_calendar(verticals):
     lines = [
         "# Content Calendar",
         "",
-        "Cadence per vertical. The Editor-in-Chief dispatches the Radar Scout on these schedules.",
+        "Schedules per vertical, for both fleets. The Editor-in-Chief dispatches the Radar Scout on",
+        "the news schedule and the Evergreen Scout on the evergreen schedule; a mode switched off in",
+        "the vertical's settings (`news_enabled` / `evergreen_enabled`) has no job at all —",
+        "`scripts/sync_crons.py` reconciles both fleets from `context/verticals.json`.",
         "",
-        "| Vertical | Cadence | Schedule (EST) | Status |",
-        "|---|---|---|---|",
+        "| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Mode |",
+        "|---|---|---|---|---|---|",
     ]
 
     for v in verticals:
         vid = v.get("id", "")
-        cadence = v.get("cadence", "")
-        readable = human_cadence(cadence)
-        lines.append(f"| {vid} | {cadence} | {readable} | active |")
+        news = v.get("cadence", "")
+        evergreen = v.get("evergreen_cadence", "")
+        news_on = v.get("news_enabled", True)
+        evergreen_on = bool(evergreen) and v.get("evergreen_enabled", True)
+        mode = "+".join(n for n, on in (("news", news_on), ("evergreen", evergreen_on)) if on)
+        lines.append(
+            f"| {vid} | {news if news_on else '—'} "
+            f"| {human_cadence(news) if news_on else 'off'} "
+            f"| {evergreen if evergreen_on else '—'} "
+            f"| {human_cadence(evergreen) if evergreen_on else 'off'} "
+            f"| {mode or 'disabled'} |"
+        )
 
     lines.append("")
     lines.append(existing_log.strip())
@@ -147,6 +173,9 @@ def push_to_supabase():
             "id": v["id"],
             "label": v.get("label", v["id"]),
             "cadence": v.get("cadence", "0 6 * * 1"),
+            "news_enabled": v.get("news_enabled", True),
+            "evergreen_cadence": v.get("evergreen_cadence") or None,
+            "evergreen_enabled": v.get("evergreen_enabled", True),
             "target_persona": v.get("target_persona", "eng_leader"),
             "sources": v.get("sources", []),
             "primary_angles": v.get("primary_angles", []),
@@ -155,6 +184,16 @@ def push_to_supabase():
         })
 
     res, err = supabase_request("editorial_verticals", method="POST", data=rows)
+    if err and any(t in str(err).lower() for t in ("does not exist", "schema cache", "column")):
+        # Fail loud, then degrade in a way the operator can act on: the local registry is the
+        # source of truth for the fleet, so keeping the rest of the mirror current beats refusing
+        # to sync until the DDL lands. The dashboard's mode toggles still persist locally.
+        print("WARNING: the Supabase 'editorial_verticals' table has no fleet-mode columns, so the "
+              "remote mirror cannot store them. Run this in the Supabase SQL editor:\n\n"
+              + SCHEMA_ALTER + "\n")
+        print("Retrying without news_enabled / evergreen_cadence / evergreen_enabled ...")
+        legacy = [{k: val for k, val in r.items() if k not in FLEET_COLUMNS} for r in rows]
+        res, err = supabase_request("editorial_verticals", method="POST", data=legacy)
     if err:
         print(f"ERROR pushing verticals to Supabase: {err}")
         return 1
@@ -206,6 +245,9 @@ def pull_from_supabase():
             "id": row["id"],
             "label": row.get("label", row["id"]),
             "cadence": row.get("cadence", "0 6 * * 1"),
+            "news_enabled": row.get("news_enabled") if row.get("news_enabled") is not None else True,
+            "evergreen_cadence": row.get("evergreen_cadence") or "",
+            "evergreen_enabled": row.get("evergreen_enabled") if row.get("evergreen_enabled") is not None else True,
             "sources": row.get("sources") or [],
             "primary_angles": row.get("primary_angles") or [],
             "target_persona": row.get("target_persona", "eng_leader"),
@@ -242,6 +284,9 @@ create table if not exists editorial_verticals (
   id text primary key,
   label text not null,
   cadence text not null,
+  news_enabled boolean default true,
+  evergreen_cadence text,
+  evergreen_enabled boolean default true,
   target_persona text not null,
   sources jsonb default '[]'::jsonb,
   primary_angles jsonb default '[]'::jsonb,
@@ -250,6 +295,9 @@ create table if not exists editorial_verticals (
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );
+
+-- Existing project? Add the fleet-mode columns (the dashboard's News / Evergreen toggles):
+""" + SCHEMA_ALTER + """
 
 
 create table if not exists editorial_personas (

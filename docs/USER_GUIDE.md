@@ -151,10 +151,13 @@ The LinkedIn post is a separate ~1,300-char variant built from the same skeleton
 
 ## 3. What runs when
 
-One cron job per vertical in `context/verticals.json` — **26 today** — each running the
-**complete** pipeline. They are generated and reconciled by `scripts/sync_crons.py` and staggered
-30 minutes apart (10:30–13:00 UTC, no two jobs in the same slot on the same weekday), so a
-frontier-provider hiccup can't take out several pipelines at once.
+Two cron jobs per vertical in `context/verticals.json` — **26 news + 26 evergreen today** — each
+running the **complete** pipeline for its track. They are generated and reconciled by
+`scripts/sync_crons.py` and staggered 30 minutes apart (news 10:30–13:00 UTC, evergreen 17:30–20:00
+UTC; no two jobs in the same slot on the same weekday), so a frontier-provider hiccup can't take out
+several pipelines at once. A vertical can run one track or both: the **Pipelines** toggles in
+**Settings → Verticals** (`news_enabled` / `evergreen_enabled`) decide which jobs exist at all —
+switching one off removes its cron job on the next sync, and switching it back on recreates it.
 
 The slots sit **after** DeepSeek's weekday peak windows (01:00–04:00 and 06:00–10:00 UTC, where
 tokens cost 2x; weekends are off-peak all day). Nothing scheduled makes a model call inside a
@@ -190,6 +193,44 @@ watchdogs included) — both run in `scripts/verify.sh`.
 | `Full Pipeline: last_mile_routing_fleet_carbon` | Last-Mile Route Optimization & Fleet Carbon Accounting | Fri 11:30 |
 | `Full Pipeline: personal_microeconomics_tinkering_tax` | Personal Asset Micro-Economics & 'Tinkering Tax' Audits | Sat 06:00 |
 | `Full Pipeline: supplier_risk_reshoring_decision` | Supplier Risk Management & Reshoring/Nearshoring Decision Engines | Sat 06:30 |
+
+### The evergreen fleet
+
+The same 26 verticals each carry a second job that publishes a **useful, durable** topic — the
+material the news gate must reject, because Novelty carries 0.40 and the window is 30 days
+(`skills/evergreen_topics.md`). It runs on the same weekday as the vertical's news run, in the
+17:30–20:00 UTC band, and its evidence floor is code rather than prose
+(`scripts/evergreen_gate.py`): at least three fetched primary sources on two or more hosts, a named
+persona decision, a proven de-dup check, and an `as of` date on any time-bound figure.
+
+| Job | Vertical | Schedule (UTC) |
+|---|---|---|
+| `Evergreen Pipeline: agentic_ai` | Agentic Runtime & Architecture | Mon + Thu 5:30 PM |
+| `Evergreen Pipeline: enterprise_ai_governance` | Enterprise AI Governance & Control Planes | Mon 6:00 PM |
+| `Evergreen Pipeline: home_equity_tco` | Home Capital Allocation & TCO Economics | Mon 6:30 PM |
+| `Evergreen Pipeline: home_infrastructure_lifecycle_tco` | Home Infrastructure & Major Asset Lifecycle TCO | Mon 7:00 PM |
+| `Evergreen Pipeline: meio_working_capital_tco` | Multi-Echelon Inventory Optimization (MEIO) & Working Capital TCO | Mon 7:30 PM |
+| `Evergreen Pipeline: ai_observability_qa` | Observability, Evals & Quality | Tue 5:30 PM |
+| `Evergreen Pipeline: nhil_infrastructure_ops` | NHIL Infrastructure, NetOps & Power Strategy | Tue 6:00 PM |
+| `Evergreen Pipeline: enterprise_tech_leadership` | Technology & Architecture Decisions | Tue 6:30 PM |
+| `Evergreen Pipeline: smart_home_telemetry` | Local-First Smart Infrastructure & Telemetry | Tue 7:00 PM |
+| `Evergreen Pipeline: workstation_compute_economics` | Autonomous Tech Workstations & AI Compute Economics | Tue 7:30 PM |
+| `Evergreen Pipeline: control_tower_exception_orchestration` | Control Tower Visibility & Real-Time Exception Orchestration | Tue 8:00 PM |
+| `Evergreen Pipeline: agentic_resilience_failure` | Resilience & Failure Engineering | Wed 5:30 PM |
+| `Evergreen Pipeline: multi_agent_enterprise_fabric` | Multi-Agent Orchestration & Enterprise Fabrics | Wed 6:00 PM |
+| `Evergreen Pipeline: gpu_hardware` | GPUs & AI Hardware | Wed 6:30 PM |
+| `Evergreen Pipeline: enterprise_build_vs_buy` | Enterprise Build-vs-Buy & Developer Tooling Architecture | Wed 7:00 PM |
+| `Evergreen Pipeline: warehouse_automation_robotics_capex` | Warehouse Automation & Robotics CapEx Amortization | Wed 7:30 PM |
+| `Evergreen Pipeline: enterprise_ai_finops` | AI FinOps & Value Realization | Thu 6:00 PM |
+| `Evergreen Pipeline: supply_chain` | Supply Chain Orchestration & Physical Logistics | Thu 6:30 PM |
+| `Evergreen Pipeline: home_ops_execution` | Home Operations, Permitting & Contractor Contracts | Thu 7:00 PM |
+| `Evergreen Pipeline: expat_cross_border_relocation` | Advanced Expat, Cross-Border & Multi-Jurisdictional Relocation | Thu 7:30 PM |
+| `Evergreen Pipeline: demand_sensing_advanced_sop` | Demand Sensing & Advanced Sales & Operations Planning (S&OP) | Thu 8:00 PM |
+| `Evergreen Pipeline: resilient_home_assets` | Climate Hardening, Insurability & Grid Resilience | Fri 6:00 PM |
+| `Evergreen Pipeline: career_velocity_equity_engineering` | Career Velocity, Equity Liquidity & Offer Engineering | Fri 6:30 PM |
+| `Evergreen Pipeline: last_mile_routing_fleet_carbon` | Last-Mile Route Optimization & Fleet Carbon Accounting | Fri 7:00 PM |
+| `Evergreen Pipeline: personal_microeconomics_tinkering_tax` | Personal Asset Micro-Economics & 'Tinkering Tax' Audits | Sat 5:30 PM |
+| `Evergreen Pipeline: supplier_risk_reshoring_decision` | Supplier Risk Management & Reshoring/Nearshoring Decision Engines | Sat 6:00 PM |
 
 View them with `hermes cron list` (or the dashboard **Cron** page). Each job runs with the repo
 as its working directory, so the bot reads `AGENTS.md` and `skills/`. If the registry and the live
@@ -346,7 +387,10 @@ Verticals can be managed interactively via the **PressFlow Web UI (Settings)**, 
 ### Option A: Interactively via PressFlow Web UI (Recommended)
 1. Open the PressFlow web dashboard (`http://<vps-or-domain>:3000` or `http://localhost:3000`).
 2. Click **⚙️ Verticals & Radar Settings** &rarr; **+ Add Vertical** (or click ✏️ to edit).
-3. Select your cadence preset, target reader persona, sources, and angles.
+3. Select your news cadence preset, target reader persona, sources, and angles. Switch the
+   **📰 News** / **🌱 Evergreen** pipelines on or off, and if evergreen is on, give it a cadence in
+   the 17:30–20:00 UTC band that no other job uses (`scripts/sync_crons.py --check` fails on a
+   collision or a DeepSeek peak window).
 4. Click **Save Vertical** — it instantly updates `context/verticals.json`, regenerates `context/content_calendar.md`, and syncs to Supabase (if configured).
 5. Click **⚡ Sync Crons** to register new pipeline jobs in Hermes.
 

@@ -1921,6 +1921,38 @@ Ready for commands.</div>
       </div>
 
       <div class="form-group">
+        <label class="form-label">Pipelines</label>
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;" for="verticalNewsEnabled">
+            <input type="checkbox" id="verticalNewsEnabled" checked style="width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer;">
+            <span style="font-weight: 600;">📰 News pipeline</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;" for="verticalEvergreenEnabled">
+            <input type="checkbox" id="verticalEvergreenEnabled" style="width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer;">
+            <span style="font-weight: 600;">🌱 Evergreen pipeline</span>
+          </label>
+        </div>
+        <div class="form-help" style="margin-top: 0.35rem;">
+          News publishes what happened in the last 30 days. Evergreen publishes useful, durable topics
+          built on 3+ fetched primary sources. A mode switched off has no cron job at all — the next
+          sync removes it, and switching it back on recreates it.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="verticalEvergreenCadence">Evergreen Cadence (Cron Expression)</label>
+        <input type="text" class="form-input" id="verticalEvergreenCadence" placeholder="e.g. 0 18 * * 1" value="">
+        <div class="form-help" id="evergreenCadenceHumanPreview">Leave blank for no evergreen run.</div>
+        <div class="preset-chips">
+          <span class="preset-chip" onclick="setEvergreenPreset('30 17 * * 1')">Mon 17:30</span>
+          <span class="preset-chip" onclick="setEvergreenPreset('0 18 * * 2')">Tue 18:00</span>
+          <span class="preset-chip" onclick="setEvergreenPreset('30 18 * * 3')">Wed 18:30</span>
+          <span class="preset-chip" onclick="setEvergreenPreset('0 19 * * 4')">Thu 19:00</span>
+          <span class="preset-chip" onclick="setEvergreenPreset('30 19 * * 5')">Fri 19:30</span>
+        </div>
+      </div>
+
+      <div class="form-group">
         <label class="form-label">Research &amp; Radar Sources</label>
         <div class="tag-input-box" id="sourcesBox">
           <input type="text" class="tag-text-input" id="sourceInput" placeholder="Type source and press Enter...">
@@ -2895,6 +2927,12 @@ Ready for commands.</div>
       const readableCadence = getHumanCadence(v.cadence);
       const sourcesCount = (v.sources || []).length;
       const anglesCount = (v.primary_angles || []).length;
+      const newsOn = v.news_enabled !== false;
+      const evergreenOn = Boolean(v.evergreen_cadence) && v.evergreen_enabled !== false;
+      const modeBadges = [
+        newsOn ? '<span class="tag-quiet tag-emerald">📰 News</span>' : null,
+        evergreenOn ? '<span class="tag-quiet tag-emerald">🌱 Evergreen</span>' : null,
+      ].filter(Boolean).join(' ') || '<span class="tag-quiet">● Disabled</span>';
 
       return `
         <div class="clean-white-card" data-id="${v.id}">
@@ -2920,14 +2958,18 @@ Ready for commands.</div>
                 <span class="key-value">${sourcesCount} sources · ${anglesCount} angles</span>
               </div>
               <div class="key-value-row">
-                <span class="key-label">Cadence</span>
-                <span class="key-value">${readableCadence}</span>
+                <span class="key-label">News Cadence</span>
+                <span class="key-value">${newsOn ? readableCadence : 'off'}</span>
+              </div>
+              <div class="key-value-row">
+                <span class="key-label">Evergreen Cadence</span>
+                <span class="key-value">${evergreenOn ? describeCron(v.evergreen_cadence) : 'off'}</span>
               </div>
             </div>
           </div>
 
           <div class="card-bottom-row">
-            <span class="tag-quiet tag-emerald">● Active Radar</span>
+            <span style="display: flex; gap: 0.35rem; flex-wrap: wrap;">${modeBadges}</span>
             <button class="btn btn-ghost btn-sm" onclick="openEditVerticalModal('${v.id}')">Manage &rarr;</button>
           </div>
         </div>
@@ -3102,6 +3144,33 @@ Ready for commands.</div>
     document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${label}`;
   };
 
+  // Generic cron -> prose, for the evergreen field: the news field's map above is a lookup of a
+  // handful of legacy presets and would print "Cron: …" for anything the fleet actually runs.
+  function describeCron(cron) {
+    const parts = (cron || '').trim().split(/\s+/);
+    if (parts.length < 5) return cron ? `Cron: ${cron}` : '';
+    const [minute, hour, , , dow] = parts;
+    const h = parseInt(hour, 10);
+    if (isNaN(h) || isNaN(parseInt(minute, 10))) return `Cron: ${cron}`;
+    const h12 = h === 0 ? 12 : (h > 12 ? h - 12 : h);
+    const time = `${h12}:${String(parseInt(minute, 10)).padStart(2, '0')} ${h >= 12 ? 'PM' : 'AM'} UTC`;
+    if (dow === '*') return `Daily ${time}`;
+    const dayMap = { '0': 'Sun', '1': 'Mon', '2': 'Tue', '3': 'Wed', '4': 'Thu', '5': 'Fri', '6': 'Sat', '7': 'Sun' };
+    return `${dow.split(',').map((d) => dayMap[d] || d).join(' + ')} ${time}`;
+  }
+
+  window.setEvergreenPreset = (cron) => {
+    document.getElementById('verticalEvergreenCadence').value = cron;
+    document.getElementById('evergreenCadenceHumanPreview').textContent = `Schedule: ${describeCron(cron)}`;
+    document.getElementById('verticalEvergreenEnabled').checked = true;
+  };
+
+  document.getElementById('verticalEvergreenCadence').addEventListener('input', (e) => {
+    const value = e.target.value.trim();
+    document.getElementById('evergreenCadenceHumanPreview').textContent =
+      value ? `Schedule: ${describeCron(value)}` : 'Leave blank for no evergreen run.';
+  });
+
   document.getElementById('verticalCadence').addEventListener('input', (e) => {
     document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(e.target.value)}`;
   });
@@ -3114,6 +3183,10 @@ Ready for commands.</div>
     document.getElementById('verticalLabel').value = '';
     document.getElementById('verticalCadence').value = '0 6 * * 1';
     document.getElementById('cadenceHumanPreview').textContent = 'Schedule: Monday 06:00 AM EST';
+    document.getElementById('verticalNewsEnabled').checked = true;
+    document.getElementById('verticalEvergreenCadence').value = '';
+    document.getElementById('evergreenCadenceHumanPreview').textContent = 'Leave blank for no evergreen run.';
+    document.getElementById('verticalEvergreenEnabled').checked = false;
     currentSources = ['arxiv', 'hacker_news', 'github_trending'];
     currentAngles = [];
     renderTags('sourcesBox', currentSources, 'removeSource');
@@ -3133,6 +3206,13 @@ Ready for commands.</div>
     document.getElementById('verticalPersona').value = v.target_persona || '';
     document.getElementById('verticalCadence').value = v.cadence || '0 6 * * 1';
     document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(v.cadence)}`;
+    document.getElementById('verticalNewsEnabled').checked = v.news_enabled !== false;
+    const evCadence = v.evergreen_cadence || '';
+    document.getElementById('verticalEvergreenCadence').value = evCadence;
+    document.getElementById('evergreenCadenceHumanPreview').textContent =
+      evCadence ? `Schedule: ${describeCron(evCadence)}` : 'Leave blank for no evergreen run.';
+    document.getElementById('verticalEvergreenEnabled').checked =
+      Boolean(evCadence) && v.evergreen_enabled !== false;
     currentSources = [...(v.sources || [])];
     currentAngles = [...(v.primary_angles || [])];
     renderTags('sourcesBox', currentSources, 'removeSource');
@@ -3153,6 +3233,9 @@ Ready for commands.</div>
       label: document.getElementById('verticalLabel').value.trim(),
       target_persona: document.getElementById('verticalPersona').value,
       cadence: document.getElementById('verticalCadence').value.trim(),
+      news_enabled: document.getElementById('verticalNewsEnabled').checked,
+      evergreen_cadence: document.getElementById('verticalEvergreenCadence').value.trim(),
+      evergreen_enabled: document.getElementById('verticalEvergreenEnabled').checked,
       sources: currentSources,
       primary_angles: currentAngles,
       dataforseo_enabled: document.getElementById('verticalDataForSeo').checked,

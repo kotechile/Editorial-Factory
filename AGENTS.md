@@ -95,6 +95,21 @@ gates, and every non-deterministic step is gated on retrievable evidence.
     filled with an unrelated page. Idempotent, and the enriched body is written back to the Supabase
     row so the database and the CMS can never disagree.
 
+13. **A second pipeline for the topics the news gate must refuse.** The 30-day radar is gated on
+    freshness (Novelty carries 0.40), so it correctly returns "no publish" for a durable topic —
+    which is why verticals whose beat is periodic (statute books, survey cycles, procurement) ran
+    empty week after week while the runs logged *"undated evergreen; not anchored to window"*. A
+    vertical therefore carries two independent schedules, reconciled from the same registry: the
+    news run, and an **evergreen** run (`skills/evergreen_topics.md`) that publishes one useful,
+    durable article. The news gate does not run there — that is the point — so the evergreen floor
+    is **code, not prose** (`scripts/evergreen_gate.py`): ≥ 3 cited primary sources on ≥ 2 hosts,
+    every one fetched and shown to contain the figure it is cited for, a named persona decision, a
+    de-dup check against the last 180 days that names an artifact which exists, and an `as of` date
+    on any time-bound figure. Both modes are per-vertical settings (`news_enabled` /
+    `evergreen_cadence` / `evergreen_enabled`): a mode switched off has its cron job removed by
+    `scripts/sync_crons.py`, never left half-configured. A topic whose value expires inside ~90 days
+    is news — route it back to Radar.
+
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
 The **Claude Stylist & Critic** role is pinned to a frontier Anthropic model served through
