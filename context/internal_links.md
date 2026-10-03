@@ -1,14 +1,18 @@
-# Internal-link candidates — 2026-10-01T15:48:59+00:00
+# Internal-link candidates — 2026-10-03T01:54:47+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
-## giniloh.com — 25 live article(s), 20 other target(s)
+## giniloh.com — 38 live article(s), 20 other target(s)
 
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
 - [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — Mental Models & Strategy
 - [Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System](https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/) — Money & Wealth
+- [CFOs Are Pricing In the Tariff Cliff](https://giniloh.com/tariff-cliff-already-priced-in/) — Supply Chain & Operations
 - [Calculate Your Career Relocation Payback](https://giniloh.com/calculate-your-career-relocation-payback/) — Mental Models & Strategy
+- [Coast-to-Coast Rail Merger Clears First Big Test](https://giniloh.com/up-ns-rail-merger-clears-summary-denial/) — Supply Chain & Operations
+- [Disney+ and Hulu Just Raised Prices 13% — Right After Doubling Profits](https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/) — Money & Wealth
 - [Ebike Costs: Per-Use Calculator for Commuters](https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/) — Major Purchases & Assets
+- [Electric Trucks Just Doubled Overnight — and the Battery Wasn’t the Reason](https://giniloh.com/zet-scale-ev-truck-residual-value-risk/) — Supply Chain & Operations
 - [Expats: Evaluating the True Value of a Job-Driven Move overseas](https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/) — Mental Models & Strategy
 - [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — Money & Wealth
 - [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — Major Purchases & Assets
@@ -21,13 +25,22 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Nvidia says its GPUs aren’t sold out. Its CFO’s $279 billion memory bet says otherwise.](https://giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO
 - [OpenAI just made the agent loop a commodity](https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/) — AI Stack & Tool TCO
 - [OpenAI’s custom chip beats Nvidia on power](https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/) — AI Stack & Tool TCO
+- [Planner-as-Router: Fold the Model Choice Into the Plan](https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/) — Autonomous & Agentic Workflows:
+- [Planning AI Buys Capability, Not Autonomy](https://giniloh.com/planning-ai-buys-capability-not-autonomy/) — Supply Chain & Operations
 - [Replace Laptop Screen? Let This Decision Engine Do the Math](https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/) — Major Purchases & Assets
+- [Reshoring Didn’t Kill Tariff Risk — It Moved Upstream Into Packaging](https://giniloh.com/reshoring-moved-the-tariff-upstream/) — Supply Chain & Operations
 - [Self-Hosted AI: When to Buy vs Rent GPUs](https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/) — Major Purchases & Assets
 - [Simulate a Frictionless Liquidity Sweep in Giniloh](https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/) — Money & Wealth
 - [Smart Ways to Invest an Extra $500 a Day](https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/) — Money & Wealth
+- [Stop Piling Memory Onto AI Agents: Optimize Skills](https://giniloh.com/maskills-multi-agent-skills-optimization/) — Autonomous & Agentic Workflows:
+- [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://giniloh.com/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO
 - [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO
 - [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — Money & Wealth
+- [The Same-Day Delivery Race Is Undoing a Decade of Route Optimization](https://giniloh.com/same-day-race-undoes-route-optimization/) — Supply Chain & Operations
+- [Token Prices Just Halved. The CFO Still Can’t Read the Bill.](https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/) — AI Stack & Tool TCO
 - [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — Money & Wealth
+- [Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.](https://giniloh.com/goods-tariff-relief-vs-vessel-fee/) — Supply Chain & Operations
+- [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — Career & AI Resilience:
 - [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — Major Purchases & Assets
 - [Ai Stack Tool Tco (category)](https://giniloh.com/categories/ai-stack-tool-tco/) — —
 - [Artificial Intelligence Future Of Work (category)](https://giniloh.com/categories/artificial-intelligence-future-of-work/) — —
@@ -50,9 +63,10 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Tech Debt Repair calculator (calculator)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Total Comp calculator (calculator)](https://giniloh.com/calculators/total-comp/) — —
 
-## wellroost.com — 4 live article(s), 8 other target(s)
+## wellroost.com — 5 live article(s), 8 other target(s)
 
 - [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
+- [California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy](https://wellroost.com/ca-fair-plan-rate-hike-hardening-exit/) — Energy & Efficiency
 - [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
 - [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency

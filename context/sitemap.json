@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T01:43:45Z",
+  "updated_at": "2026-10-03T01:55:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -87,8 +87,7 @@
       "h2_topics": [],
       "target_persona": "equity_career_strategist",
       "date": "2026-09-25",
-      "public": true,
-      "url": "https://giniloh.com/carta-unexercised-options-401k/"
+      "public": false
     },
     {
       "slug": "2026-09-25_zet-scale-ev-truck-residual-value-risk",
@@ -105,7 +104,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-09-25",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/"
     },
     {
       "slug": "2026-09-26_disney-hulu-fourth-hike-subscription-creep",
@@ -164,7 +164,8 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-10-01",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/"
     },
     {
       "slug": "2026-10-01_planner-as-router-plan-time-routing",
@@ -189,7 +190,8 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-10-01",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/planning-ai-buys-capability-not-autonomy/"
     },
     {
       "slug": "2026-10-01_token-prices-halved-cfo-cant-read-bill",
@@ -231,7 +233,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-02",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/same-day-race-undoes-route-optimization/"
     }
   ]
 }

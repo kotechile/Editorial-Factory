@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T15:48:59+00:00",
+  "generated_at": "2026-10-03T01:54:47+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -33,6 +33,227 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 421,
+      "slug": "goods-tariff-relief-vs-vessel-fee",
+      "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.",
+      "url": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "On Sept. 27, the U.S.-China Board of Trade recommended cutting tariffs on $30 billion of everyday goods in each direction.",
+      "modified": "2026-10-03T00:44:33",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 422,
+      "slug": "planning-ai-buys-capability-not-autonomy",
+      "title": "Planning AI Buys Capability, Not Autonomy",
+      "url": "https://giniloh.com/planning-ai-buys-capability-not-autonomy/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "By 2030, just 5% of firms with supply chain software will let it make 10% of choices on its own.",
+      "modified": "2026-10-03T00:43:04",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 404,
+      "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
+      "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
+      "url": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "On Sept. 26, three researchers shared a new system called Planner-as-Router (PaR) that cuts AI agent costs by 44 percent.",
+      "modified": "2026-10-03T00:32:39",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 395,
+      "slug": "zet-scale-ev-truck-residual-value-risk",
+      "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn\u2019t the Reason",
+      "url": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Top brands like Microsoft, PepsiCo, Ikea, and Red Bull just ordered 2,500 heavy-duty electric trucks.",
+      "modified": "2026-10-03T00:54:23",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 420,
+      "slug": "token-prices-just-halved-the-cfo-still-cant-read-the-bill",
+      "title": "Token Prices Just Halved. The CFO Still Can\u2019t Read the Bill.",
+      "url": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "OpenAI and Anthropic slashed frontier Artificial Intelligence (AI) token prices on September 22.",
+      "modified": "2026-10-02T22:28:12",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 462,
+      "slug": "same-day-race-undoes-route-optimization",
+      "title": "The Same-Day Delivery Race Is Undoing a Decade of Route Optimization",
+      "url": "https://giniloh.com/same-day-race-undoes-route-optimization/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "On Sept. 30, Amazon and the United States Postal Service (USPS) turned on a quiet test to speed up local shipping.",
+      "modified": "2026-10-03T00:54:25",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 392,
+      "slug": "reshoring-moved-the-tariff-upstream",
+      "title": "Reshoring Didn\u2019t Kill Tariff Risk \u2014 It Moved Upstream Into Packaging",
+      "url": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Coca-Cola just pledged $10 billion for U.S. plants by 2030, which its Chief Financial Officer (CFO) calls a growth plan rather than a tariff shield.",
+      "modified": "2026-10-02T01:18:49",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 394,
+      "slug": "disney-hulu-fourth-hike-subscription-creep",
+      "title": "Disney+ and Hulu Just Raised Prices 13% \u2014 Right After Doubling Profits",
+      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent to $21.49 a month. This marks the fourth price hike in four years.",
+      "modified": "2026-10-02T01:58:29",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 396,
+      "slug": "why-70-of-startup-options-go-unexercised",
+      "title": "Why 70% of Startup Options Go Unexercised",
+      "url": "https://giniloh.com/why-70-of-startup-options-go-unexercised/",
+      "categories": [
+        "Career & AI Resilience:"
+      ],
+      "category_ids": [
+        8
+      ],
+      "excerpt": "More than 70% of vested startup stock options are never exercised, according to new data from Carta published Sept. 10.",
+      "modified": "2026-10-02T21:50:02",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 397,
+      "slug": "up-ns-rail-merger-clears-summary-denial",
+      "title": "Coast-to-Coast Rail Merger Clears First Big Test",
+      "url": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger.",
+      "modified": "2026-10-01T17:05:30",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 398,
+      "slug": "ai-spend-27t-cost-visibility-mandate",
+      "title": "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement",
+      "url": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%.",
+      "modified": "2026-10-01T22:18:31",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 399,
+      "slug": "maskills-multi-agent-skills-optimization",
+      "title": "Stop Piling Memory Onto AI Agents: Optimize Skills",
+      "url": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Drop one hard check from an Artificial Intelligence (AI) agent\u2019s learning loop, and its test score crashes from 17.2 to 6.6.",
+      "modified": "2026-10-01T22:17:45",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 400,
+      "slug": "tariff-cliff-already-priced-in",
+      "title": "CFOs Are Pricing In the Tariff Cliff",
+      "url": "https://giniloh.com/tariff-cliff-already-priced-in/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Washington just pushed the United States\u2013China tariff truce to Jan. 10, 2027, and American companies are not buying the calm.",
+      "modified": "2026-10-01T15:56:41",
+      "live": true
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -716,6 +937,23 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 58,
+      "slug": "ca-fair-plan-rate-hike-hardening-exit",
+      "title": "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy",
+      "url": "https://wellroost.com/ca-fair-plan-rate-hike-hardening-exit/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "California\u2019s last-resort insurer\u2014the Fair Access to Insurance Requirements (FAIR) Plan\u2014raises rates by an average of 29.1% on October 15, 2026.",
+      "modified": "2026-10-01T23:53:56",
       "live": true
     },
     {
