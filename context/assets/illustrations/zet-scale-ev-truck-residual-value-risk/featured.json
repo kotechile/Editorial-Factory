@@ -1,7 +1,18 @@
 {
   "slug": "zet-scale-ev-truck-residual-value-risk",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, anamorphic 35mm look. A wide establishing composition of a logistics yard at dawn. Rows of identical, unbranded heavy-duty truck cabs are parked in perfect alignment, receding into deep atmospheric haze. A single strong practical light source casts long shadows. Restrained teal-and-amber palette. Motion is implied by an empty loading bay in the foreground, with no people facing the camera.",
+      "task_id": "840017810935978dc473a92d0004fd2e",
+      "sha256": "sha256:8d24455840c40c01e5936940c33b9a0b",
+      "generated_at": "2026-10-01T14:10:26+00:00",
+      "source_hash": "sha256:781905d092dac2e3f13e8b406f16d54c"
+    }
+  ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
   "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
@@ -10,14 +21,14 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, anamorphic 35mm look. A wide establishing composition of a logistics yard at dawn. Rows of identical, unbranded heavy-duty truck cabs are parked in perfect alignment, receding into deep atmospheric haze. A single strong practical light source casts long shadows. Restrained teal-and-amber palette. Motion is implied by an empty loading bay in the foreground, with no people facing the camera.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, branding, recognizable people, light bulb, handshake, puzzle pieces",
-  "rationale": "The article discusses a massive single order of electric trucks and a rollout targeting major freight paths and hubs. A cinematic still of a logistics yard at dawn captures the scale and the decisive moment of transition.",
-  "cue": "major freight paths",
-  "subject": "a fleet of identical heavy-duty trucks parked in a logistics yard",
-  "alt_text": "Rows of identical heavy-duty trucks parked in a misty logistics yard at dawn.",
-  "caption": "A single pooled order will nearly double the U.S. electric heavy truck fleet overnight.",
-  "title": "electric-truck-fleet-yard",
+  "prompt": "Cinematic film still, anamorphic 35mm look. A sleek, heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a vast depot at dawn. Single strong practical light source from a floodlight casting long shadows. Deep atmospheric haze, restrained teal-and-amber palette, motion implied by a glowing charge indicator on the pedestal. Wide establishing composition, no people facing camera, unbranded generic truck design.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, UI elements, logos, real company packaging, recognizable real persons, light bulb, chess, puzzle piece, glowing brain, rocket, dartboard, abstract blobs, bare spheres, wedges",
+  "rationale": "The article describes a watershed moment for the EV fleet transition, defined by a massive influx of heavy-duty trucks. A cinematic still of a heavy-duty electric truck cab in a vast yard at dawn captures the scale and decisive nature of this overnight shift.",
+  "cue": "heavy-duty electric trucks",
+  "subject": "a sleek, heavy-duty electric commercial truck cab parked at a charging pedestal",
+  "alt_text": "A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a hazy depot at dawn.",
+  "caption": "Pooled demand has unlocked a record-breaking order for electric heavy-duty vehicles.",
+  "title": "Electric Heavy Truck Dawn",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,21 +38,21 @@
   "local_path": "context/assets/illustrations/zet-scale-ev-truck-residual-value-risk/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 310583,
-  "sha256": "sha256:8d24455840c40c01e5936940c33b9a0b",
-  "source_hash": "sha256:781905d092dac2e3f13e8b406f16d54c",
-  "source_chars": 5265,
-  "task_id": "840017810935978dc473a92d0004fd2e",
+  "bytes": 229239,
+  "sha256": "sha256:0734bdaddb8aebf3894506badd9a431d",
+  "source_hash": "sha256:9aa9b280e14f3fc3c7822e59e74535b2",
+  "source_chars": 4573,
+  "task_id": "4c0ffb685c2e2aee4a816c67b19e5158",
   "credits": 5.0,
-  "cost_ms": 28,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/840017810935978dc473a92d0004fd2e_1790863822195.jpg",
+  "cost_ms": 50,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4c0ffb685c2e2aee4a816c67b19e5158_1790986123435.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Cinematic film still, anamorphic 35mm look. A wide establishing composition of a logistics yard at dawn. Rows of identical, unbranded heavy-duty truck cabs are parked in perfect alignment, receding into deep atmospheric haze. A single strong practical light source casts long shadows. Restrained teal-and-amber palette. Motion is implied by an empty loading bay in the foreground, with no people facing the camera.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, branding, recognizable people, light bulb, handshake, puzzle pieces.",
+      "prompt": "Cinematic film still, anamorphic 35mm look. A sleek, heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a vast depot at dawn. Single strong practical light source from a floodlight casting long shadows. Deep atmospheric haze, restrained teal-and-amber palette, motion implied by a glowing charge indicator on the pedestal. Wide establishing composition, no people facing camera, unbranded generic truck design.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, UI elements, logos, real company packaging, recognizable real persons, light bulb, chess, puzzle piece, glowing brain, rocket, dartboard, abstract blobs, bare spheres, wedges.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-01T14:10:26+00:00"
+  "generated_at": "2026-10-03T00:08:44+00:00"
 }

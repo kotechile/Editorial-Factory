@@ -237,6 +237,13 @@ Gates — the piece FAILS the ACCESS gate if:
    system/paper name like CRAB, DeltaBox, or Hermes), do NOT fabricate an expansion to satisfy
    this gate — a fabricated full name is a hallucination and a hard failure. Rephrase to drop
    the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB").
+   **Apostrophe in the expansion (learned 2026-10-03):** when an acronym's real expansion contains
+   an apostrophe or ampersand — e.g. S&P = "Standard & Poor's" — write it **acronym-first**
+   ("S&P (Standard & Poor's)"), never "Standard and Poor's (S&P)". The checker's
+   "Expanded Form (ACR)" regex only accepts letters/digits/spaces/hyphens *before* the parens, so
+   an apostrophe in the expansion breaks the match and the rewrite loops to MAX_ATTEMPTS and
+   exits 1 (held at Loop 3) over a term that was actually spelled out. The acronym-first form always
+   matches (the parenthetical accepts any characters).
 2. **A specialist term from any domain is left untranslated for a general reader.** For each
    domain term (legal, finance, customs, energy, security, database, ML, government program),
    either (a) find the plain phrase the source used, or (b) add a short gloss. Examples:
