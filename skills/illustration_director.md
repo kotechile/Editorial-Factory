@@ -143,6 +143,12 @@ image on the next sweep instead of never.
 - kie.ai upstreams fail intermittently with `Internal Error` on an accepted task: the client retries
   the *task* (new task id) and reports each attempt; a persistent failure surfaces, and the article
   still publishes without a header image.
+- A **hang is not a fast fail**: when kie.ai stalls on an accepted task instead of returning
+  `Internal Error`, the retry loop can block for many minutes and `scripts/publish.py` times out
+  *before* it writes `published/`, the log, Supabase or the sitemap — the persistence steps run
+  after the illustration pass. On a hang, re-run publish with `--no-illustration` to persist, then
+  recover the header later with `scripts/illustration_creator.py <artifact> --apply` or the host
+  sweep.
 - The sweep reports an article whose Supabase metadata carries an illustration but whose staged file
   is missing from this host — it pushes the draft without the image and says so, rather than
   silently shipping a headerless post.
