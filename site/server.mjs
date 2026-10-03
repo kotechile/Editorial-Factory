@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { timingSafeEqual } from 'node:crypto';
-import { buildTasksForArticle, parseArticleMarkdown, STATUSES, PLATFORMS } from './distribution.mjs';
+import { buildTasksForArticle, parseArticleMarkdown, pruneOrphanTasks, STATUSES, PLATFORMS } from './distribution.mjs';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -622,9 +622,19 @@ async function seedQueueFromPublished({ refresh = false } = {}) {
     }
   }
 
-  const tasks = [...byId.values()];
+  const tasks0 = [...byId.values()];
+  // A card outlives its article unless we say otherwise: the loop above only adds and refreshes, so
+  // withdrawing an article used to leave an offer to post it (with its dead reader URL) in the queue.
+  const publishedSlugs = new Set(files.map((f) => f.replace(/\.md$/, '')));
+  const { keep, dropped } = pruneOrphanTasks(tasks0, publishedSlugs);
+  const tasks = keep;
+  if (dropped.length) {
+    console.log(`distribution: pruned ${dropped.length} card(s) for articles no longer in published/ `
+      + `(${[...new Set(dropped.map((t) => t.source_id))].join(', ')})`);
+  }
+
   const storage = await writeQueue(tasks);
-  return { storage, added, refreshed, total: tasks.length };
+  return { storage, added, refreshed, pruned: dropped.length, total: tasks.length };
 }
 
 function queueCounts(tasks) {

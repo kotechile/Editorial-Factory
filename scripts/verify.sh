@@ -277,6 +277,13 @@ if command -v node >/dev/null 2>&1; then
     echo "FAIL: public surface — detail:"
     node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8; FAIL=1
   fi
+  # ...and a distribution card must not outlive the article it was seeded from: the queue only ever
+  # added/refreshed, so withdrawing an article left an offer to post it (with its then-reader URL —
+  # the internal dashboard) in the queue. Five withdrawn articles had left 12 such cards.
+  if ! node "$ROOT/scripts/test_distribution_queue.mjs" >/dev/null 2>&1; then
+    echo "FAIL: distribution queue lifecycle — detail:"
+    node "$ROOT/scripts/test_distribution_queue.mjs" 2>&1 | tail -8; FAIL=1
+  fi
 else
   echo "  skip: public-surface gate (node not on PATH)"
 fi

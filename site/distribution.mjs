@@ -372,3 +372,23 @@ export function buildTasksForArticle(article, { readerUrl = '', sourceId = '', s
 
   return tasks;
 }
+
+/**
+ * Drop queue cards whose source article is no longer in `published/`.
+ *
+ * The seed only ever adds and refreshes, so a card survived the article being withdrawn — and kept
+ * offering to post it, with the reader URL it was seeded with. Five articles deleted by founder
+ * request left 12 such cards behind, each still pointing at the internal dashboard. A card is only
+ * prunable when it was seeded from an artifact (`source_type: 'article'` + a `source_id`):
+ * hand-written cards, external-link cards and anything without a source are left alone.
+ */
+export function pruneOrphanTasks(tasks, publishedSlugs) {
+  const keep = [];
+  const dropped = [];
+  for (const task of tasks) {
+    const fromArtifact = task && task.source_type === 'article' && task.source_id;
+    if (fromArtifact && !publishedSlugs.has(task.source_id)) dropped.push(task);
+    else keep.push(task);
+  }
+  return { keep, dropped };
+}
