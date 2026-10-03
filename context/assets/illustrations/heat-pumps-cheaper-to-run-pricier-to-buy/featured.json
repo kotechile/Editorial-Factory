@@ -1,0 +1,52 @@
+{
+  "slug": "heat-pumps-cheaper-to-run-pricier-to-buy",
+  "revision": 1,
+  "history": [],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection of a residential heat pump compressor unit. The unit features a visible fan assembly and internal cooling coils. Two distinct, unlabelled tracks or conduits flow in opposite directions across the base of the unit, one colored in a muted accent blue and the other in a muted accent red. Flat muted palette with thin consistent line weight, generous empty margin.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, brands, people, abstract boxes, bare geometry, realistic textures",
+  "rationale": "The article contrasts two distinct financial vectors for a single piece of hardware: rising upfront costs versus growing operational savings. A technical isometric cutaway is perfect for illustrating this dual-flow, systems-level math, showing a heat pump unit with clear directional arrows or tracks indicating opposing forces.",
+  "cue": "math to break even",
+  "subject": "an isometric cutaway of a residential heat pump unit with two distinct internal tracks",
+  "alt_text": "Isometric cutaway of a heat pump unit showing internal components and two opposing tracks.",
+  "caption": "The math behind a heat pump upgrade hinges on upfront costs rising just as operational savings grow.",
+  "title": "Heat Pump Break Even Isometric",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "technical_isometric",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/heat-pumps-cheaper-to-run-pricier-to-buy/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1001728,
+  "sha256": "sha256:3525c425c91b3e03fd8d213c2351aeeb",
+  "source_hash": "sha256:b0a77e15529ac83612543873d446e41f",
+  "source_chars": 4842,
+  "task_id": "05bef0dad41cc79387902b4cd3f327b0",
+  "credits": 18.0,
+  "cost_ms": 32,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_38ea0c72a750c69ec66bd002543bd2ec.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection of a residential heat pump compressor unit. The unit features a visible fan assembly and internal cooling coils. Two distinct, unlabelled tracks or conduits flow in opposite directions across the base of the unit, one colored in a muted accent blue and the other in a muted accent red. Flat muted palette with thin consistent line weight, generous empty margin.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, brands, people, abstract boxes, bare geometry, realistic textures.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-03T16:23:26+00:00"
+}

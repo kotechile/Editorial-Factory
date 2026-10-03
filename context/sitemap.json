@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T06:42:10Z",
+  "updated_at": "2026-10-03T16:20:36Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -75,8 +75,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-09-25",
-      "public": true,
-      "url": "https://wellroost.com/ca-fair-plan-rate-hike-hardening-exit/"
+      "public": false
     },
     {
       "slug": "2026-09-25_carta-unexercised-options-401k",
@@ -235,6 +234,78 @@
       "date": "2026-10-02",
       "public": true,
       "url": "https://giniloh.com/same-day-race-undoes-route-optimization/"
+    },
+    {
+      "slug": "2026-10-03_california-legalizes-plug-in-solar",
+      "title": "California Legalizes Plug-In Home Solar Panels",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-03",
+      "public": false
+    },
+    {
+      "slug": "2026-10-03_cloud-update-bricked-the-fridge-local-first",
+      "title": "A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying 'Cloud.'",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-03",
+      "public": false
+    },
+    {
+      "slug": "2026-10-03_heat-pumps-cheaper-to-run-pricier-to-buy",
+      "title": "Heat Pumps Just Got Cheaper to Run \u2014 and Pricier to Buy",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-03",
+      "public": false
+    },
+    {
+      "slug": "2026-10-03_heloc-at-8-vs-battery-that-earns",
+      "title": "Borrow at 8% to remodel, or let your battery earn on the grid",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-03",
+      "public": false
     },
     {
       "slug": "2026-10-03_tariff-split-reshoring-heavy-half",

@@ -1,0 +1,52 @@
+{
+  "slug": "heloc-at-8-vs-battery-that-earns",
+  "revision": 1,
+  "history": [],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration of a wall-mounted home battery wired into a residential electrical main panel and a utility grid meter. Technical drawing style, axonometric projection. Flat muted palette with a single bright green accent color indicating power flow. Thin consistent line weight, recognizable hardware modules, electrical conduit, heat sinks, and breakers with visible depth. Unlabelled, generous empty margin, minimal architectural context.",
+  "negative_prompt": "text, numbers, letters, wordmarks, UI, generic house shapes, people, cartoon, toys, bare abstract geometry, watermarks, signature, logos",
+  "rationale": "An isometric cutaway perfectly illustrates the structural shift in home capital described in the article, contrasting the physical integration of a revenue-earning home battery system with the grid.",
+  "cue": "revenue-earning assets like grid-connected batteries",
+  "subject": "wall-mounted home battery wired to an electrical panel and utility meter",
+  "alt_text": "Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility meter.",
+  "caption": "As HELOC rates cross 8 percent, grid-connected home batteries offer a cash-funded alternative to financed home upgrades.",
+  "title": "Isometric Home Battery Grid Integration",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "technical_isometric",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/heloc-at-8-vs-battery-that-earns/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1005179,
+  "sha256": "sha256:d616d3eb2967ee7231f7f232f5540756",
+  "source_hash": "sha256:80afdb24ea695f9050efe4c83e054026",
+  "source_chars": 4484,
+  "task_id": "b745a8b2f67013b588e8937859003240",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0dc2dcbaf9e4299c0d9b5f97975e19a3.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration of a wall-mounted home battery wired into a residential electrical main panel and a utility grid meter. Technical drawing style, axonometric projection. Flat muted palette with a single bright green accent color indicating power flow. Thin consistent line weight, recognizable hardware modules, electrical conduit, heat sinks, and breakers with visible depth. Unlabelled, generous empty margin, minimal architectural context.\n\nDo not include: text, numbers, letters, wordmarks, UI, generic house shapes, people, cartoon, toys, bare abstract geometry, watermarks, signature, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-03T15:55:40+00:00"
+}

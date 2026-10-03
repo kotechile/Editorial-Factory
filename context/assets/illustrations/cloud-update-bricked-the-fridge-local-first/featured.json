@@ -1,0 +1,52 @@
+{
+  "slug": "cloud-update-bricked-the-fridge-local-first",
+  "revision": 1,
+  "history": [],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A modern refrigerator with a cutaway section revealing its internal smart control board and antenna. The antenna's wireless link is visibly broken or severed, disconnected from a floating remote server rack module nearby. Flat muted palette with one stark red accent color on the severed connection, thin consistent line weight, recognisable hardware with visible depth, unlabelled, generous empty margin.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, UI elements, logos, people, abstract shapes, bare geometry, 3d render shading, messy lines, gradients",
+  "rationale": "An isometric cutaway perfectly illustrates the structural failure of a smart home appliance. By showing the internal smart module of a refrigerator severed from a remote server node, it visually explains the remote patch bricking the hardware.",
+  "cue": "giant paperweight over a network link",
+  "subject": "an isometric cutaway of a modern refrigerator's smart control board severed from a remote server module",
+  "alt_text": "Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote server module.",
+  "caption": "A failed remote patch highlights the vulnerability of smart appliances dependent on cloud connections.",
+  "title": "Isometric cutaway of bricked smart fridge",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "technical_isometric",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/cloud-update-bricked-the-fridge-local-first/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1208984,
+  "sha256": "sha256:56fb4325d7b3220a0a6a5aa1c8aa175f",
+  "source_hash": "sha256:60ddae8225228f50fd03fab1a94b95a4",
+  "source_chars": 3812,
+  "task_id": "2f9da1126fffcd78be214e6ed83858a3",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_3651879adee5078b6b167bf8dddb8fd3.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A modern refrigerator with a cutaway section revealing its internal smart control board and antenna. The antenna's wireless link is visibly broken or severed, disconnected from a floating remote server rack module nearby. Flat muted palette with one stark red accent color on the severed connection, thin consistent line weight, recognisable hardware with visible depth, unlabelled, generous empty margin.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, UI elements, logos, people, abstract shapes, bare geometry, 3d render shading, messy lines, gradients.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-03T15:56:17+00:00"
+}

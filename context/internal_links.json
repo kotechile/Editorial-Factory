@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T01:54:47+00:00",
+  "generated_at": "2026-10-03T14:22:11+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -942,10 +942,27 @@
     {
       "site": "wellroost.com",
       "kind": "article",
-      "id": 58,
-      "slug": "ca-fair-plan-rate-hike-hardening-exit",
+      "id": 65,
+      "slug": "moss-landing-burns-again-homeowners-become-the-grid",
+      "title": "Moss Landing Burns Again: Homeowners Become the Grid",
+      "url": "https://wellroost.com/moss-landing-burns-again-homeowners-become-the-grid/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "On Sept. 18, California\u2019s main grid battery at Moss Landing caught fire for the fourth time in seven years after roughly 1,500 units sparked on their own.",
+      "modified": "2026-10-03T14:09:46",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 68,
+      "slug": "california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy",
       "title": "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy",
-      "url": "https://wellroost.com/ca-fair-plan-rate-hike-hardening-exit/",
+      "url": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
       "categories": [
         "Energy & Efficiency"
       ],
@@ -953,7 +970,7 @@
         4
       ],
       "excerpt": "California\u2019s last-resort insurer\u2014the Fair Access to Insurance Requirements (FAIR) Plan\u2014raises rates by an average of 29.1% on October 15, 2026.",
-      "modified": "2026-10-01T23:53:56",
+      "modified": "2026-10-03T13:52:19",
       "live": true
     },
     {
