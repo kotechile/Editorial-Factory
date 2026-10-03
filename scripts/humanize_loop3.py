@@ -39,11 +39,12 @@ SMART BREVITY STYLING PRINCIPLES:
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
 3. CONTEXT SIGNPOSTS & MANDATORY H2 HEADERS:
-   - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators:
-     - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift)
+   - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators.
+   - FORMATTING REQUIREMENT: Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. NEVER place body prose or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
+     - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift; followed on a new paragraph by a single direct sentence)
      - `## By the numbers` (MANDATORY quantitative section presenting 2–4 verified figures/percentages in bold bullets pairing the figure with a concise metric title)
      - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
-     - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument)
+     - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; followed on a new paragraph)
      - `## At a glance` (in <!-- tldr -->, clearly separating the 4-part Smart Brevity executive summary with its own distinct H2 header so it is NEVER embedded under "The catch")
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.

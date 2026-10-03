@@ -21,8 +21,10 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 Top brands like Microsoft, PepsiCo, Ikea, and Red Bull just ordered 2,500 heavy-duty electric trucks [1][2]. This single purchase nearly doubles the entire United States electric heavy truck fleet overnight [1].
 
 <!-- tension -->
+
 ## The big picture:
- Electric trucks spent a decade stuck in test runs. The battery was never the real problem. Carriers refused to buy these trucks because of money risks. 
+
+Electric trucks spent a decade stuck in test runs. The battery was never the real problem. Carriers refused to buy these trucks because of money risks. 
 
 Nobody knew what a used electric vehicle (EV) would be worth years down the road [1]. The battery makes up a huge part of the truck's cost. Replacement prices stay hidden, and no resale history exists to guide buyers. 
 
@@ -35,14 +37,17 @@ Second, they changed how carriers pay. A finance group leases the trucks using a
 Catalyst Mobility CEO Michael Berube explained the shift clearly. Good tech alone cannot build a market [1]. Shippers had to organize their demand so makers could drop prices, pulling clean trucks out of the test phase [1].
 
 ## By the numbers
+
 - **2,500 trucks:** The massive single order size. Tesla won the spot as the primary original equipment manufacturer (OEM). Kenworth, Volvo, and other makers serve as backups [1][3].
 - **875 trucks:** The total zero-emission heavy trucks sold in the United States during 2025. That equals a tiny 0.3% of the market, making the new order massive by comparison [3].
 - **$411,200 vs. $172,500:** The median price of a battery-electric heavy truck compared to its diesel twin in 2022 dollars. Grouping demand helps close this huge cost gap [3].
 - **10 hubs:** The first rollout targets major freight paths like Los Angeles, Seattle, Chicago, Houston, and Dallas. The group aims for 10,000 trucks total [1].
 
 <!-- tactical-insight -->
+
 ## The playbook:
- Supply chain architects face a clear lesson here. The truck itself rarely ruins a clean fleet project. Bad financing and weak demand signals cause the real failures.
+
+Supply chain architects face a clear lesson here. The truck itself rarely ruins a clean fleet project. Bad financing and weak demand signals cause the real failures.
 
 - **Shift the future risk.** Do not buy the truck outright. Use a fair-market-value lease to move the resale risk off your books. If your lease lacks this shield, you must negotiate for it [1]. 
 - **Group your demand early.** Combine your freight needs with other shippers before you ask for bids. A single shipper pays the full list price, but a giant group wins scale pricing. Brands like Microsoft and PepsiCo won on pure signal strength [1][2].
@@ -51,15 +56,19 @@ Catalyst Mobility CEO Michael Berube explained the shift clearly. Good tech alon
 - **Lock down charging early.** The massive truck order is real, but the charging plan remains a secret [3]. Power access and route plans hide the biggest dangers. Architects must build the power plan before the trucks arrive.
 
 <!-- nuanced-takeaway -->
+
 ## The catch
- The future resale risk did not vanish. It simply moved to the group's finance team [1]. This entire setup only works if a real market for used electric trucks actually forms later. 
+
+The future resale risk did not vanish. It simply moved to the group's finance team [1]. This entire setup only works if a real market for used electric trucks actually forms later. 
 
 The math relies on the exact thing nobody could price before. Also, 2,500 trucks is still a tiny drop in a diesel market that moves hundreds of thousands of units [3]. Doubling a fleet of 875 trucks looks dramatic, but it remains just 0.3% of the market [3]. 
 
 Finally, these are heavy freight trucks. The finance lesson works for small delivery vans, but the daily route math does not match.
 
 <!-- tldr -->
+
 ## At a glance
+
 - **The Big Shift:** Top brands led by Microsoft and PepsiCo ordered 2,500 electric heavy trucks. They used a new lease that removes resale risk from carriers and groups demand to lower prices.
 - **Why It Matters:** This order proves that money risks and split demand stall clean fleets, not battery limits. It gives a clear guide for cutting carbon on real freight routes.
 - **The Winning Moves:** Supply chain leaders must group demand and change how they pay for assets.
@@ -69,6 +78,7 @@ Finally, these are heavy freight trucks. The finance lesson works for small deli
 - **The Fine Print:** The money risk just shifts to the finance team, relying on a future used-truck market that does not exist yet. Also, public charging plans for these heavy trucks remain a secret.
 
 ## Sources
+
 [1] Catalyst Mobility (CALSTART) & Smart Freight Centre — "Largest Electric Truck Order Will Nearly Double the U.S. Electric Class 8 Fleet" (Sept 22, 2026) — https://calstart.org/catalyst-mobility-and-smart-freight-centre-launch-zet-scale-program/
 [2] Supply Chain Dive — "Shippers' coalition advances Class 8 electric battery truck adoption" (Sept 23, 2026) — https://www.supplychaindive.com/news/shippers-coalition-advances-class-8-electric-battery-truck-adoption/831160/
 [3] FreightWaves — "Tesla wins lead role in 2,500-truck electric Class 8 order" (Sept 23, 2026) — https://www.freightwaves.com/news/tesla-semi-zet-scale-2500-truck-order
@@ -91,6 +101,7 @@ My read: if that resale risk moves off a carrier's books, I'd want to know who i
 The catch: the resale risk didn't disappear, it moved to the finance team. And the charging plan for those 10 hubs? Still the thing I'd want answered.
 
 ## Gate report
+
 lead: PASS — The opening sentence immediately delivers the core news of the 2,500 truck order and its impact without any preamble or throat-clearing.
 tension: PASS — Successfully frames the shift using simple language to explain the financial bottleneck. Context signpost and the mandatory 4-bullet "By the numbers" section are present. Every paragraph is strictly 1-3 sentences.
 tactical-insight: PASS — Translates the shift into actionable, bulleted practitioner moves using plain English ("Shift the future risk", "Group your demand early") with bold lead-ins.

@@ -25,14 +25,17 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 On Sept. 30, Amazon and the United States Postal Service (USPS) turned on a quiet test to speed up local shipping [1]. If a worker hands off a package at lunch, it reaches a front door by 8 p.m. that same day [1]. During that exact same week, U.S. on-highway diesel fuel hit a record high of $6.53 a gallon [2].
 
 <!-- tension -->
+
 ## The big picture:
- For ten years, fleets paid for smart software to pack more stops into short trips. Same-day shipping tears those tight routes apart to move one package fast. These two forces are crashing into each other right as every extra mile costs more than it ever has [2].
+
+For ten years, fleets paid for smart software to pack more stops into short trips. Same-day shipping tears those tight routes apart to move one package fast. These two forces are crashing into each other right as every extra mile costs more than it ever has [2].
 
 My read: Speed and fuel are pulling teams in opposite ways. Smart routing gave fleets clear gains by cutting fuel use and packing stops close together. The rush for same-day delivery throws away those hard-won gains to win the speed race. 
 
 Brands are fully leaning into this shift despite the costs. Nordstrom says it wants to ship goods seven days a week and just tested same-day beauty drops in Los Angeles [5]. Amazon is pushing even harder, chasing one-hour and three-hour drop-offs on top of its daily runs [1].
 
 ## By the numbers
+
 - **$6.53 a gallon — Record diesel price:** The record price for U.S. on-highway diesel noted by the Energy Information Administration (EIA), topping the June 2022 high of $5.81 [2].
 - **88% — Diesel price jump:** Diesel fuel started the year near $3.46 a gallon and almost doubled in just a few short months [2].
 - **21% to 29.5% — UPS fuel fee:** United Parcel Service (UPS) bumped its fuel surcharge on Sept. 21, before the carrier changed its math to slow the drop [2].
@@ -56,6 +59,7 @@ Brands are fully leaning into this shift despite the costs. Nordstrom says it wa
 </svg>
 
 <!-- tactical-insight -->
+
 ## Where the money flows
 
 **What I'd watch:** The teams closest to the street are making moves, and their choices show where the real pain points sit.
@@ -66,8 +70,10 @@ Brands are fully leaning into this shift despite the costs. Nordstrom says it wa
 - **The heavy carbon bill:** Thin routes mean trucks burn more gas for each package they drop. I am watching to see if brands check their new same-day test runs against the emissions a packed truck would have made.
 
 <!-- nuanced-takeaway -->
+
 ## The catch
- My read is that the crash is real, but the true dollar pain is still small today. The Amazon test is tiny, moving just 200 packages a day across three small routes [1]. Diesel prices could also fall just as fast as they went up [2]. 
+
+My read is that the crash is real, but the true dollar pain is still small today. The Amazon test is tiny, moving just 200 packages a day across three small routes [1]. Diesel prices could also fall just as fast as they went up [2]. 
 
 Yet the broad shift feels locked in place for the long haul. Brands are paying top dollar for speed, and smart route planning is the quiet casualty.
 
@@ -75,13 +81,16 @@ Yet the broad shift feels locked in place for the long haul. Brands are paying t
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Supply Chain Operations" -> https://giniloh.com/categories/supply-chain-operations/ [same site (giniloh.com); the article's own category hub (Supply Chain & Operations)] Link "Supply Chain Operations" in the section where the article touches this topic. -->
+
 ## Related reading
 
 - [Supply Chain Operations](https://giniloh.com/categories/supply-chain-operations/)
 <!-- internal-links:end -->
 
 <!-- tldr -->
+
 ## At a glance
+
 - **The Big Shift:** Amazon and the USPS started a same-day delivery test the exact same week U.S. diesel fuel hit a record high of $6.53 a gallon. The race for same-day speed breaks tight delivery routes apart to move single boxes fast, undoing years of software gains.
 - **Why It Matters:** The push for speed adds trips and miles right as fuel hits a peak. At the same time, major freight carriers are pushing steep rate hikes and heavy fuel fees.
 - **What I'd Watch:** I am watching how brands handle the huge jump in last-mile costs.
@@ -91,6 +100,7 @@ Yet the broad shift feels locked in place for the long haul. Brands are paying t
 - **The Fine Print:** The Amazon test is still small, and fuel costs swing wildly from month to month, but the long-term trend clearly favors raw speed over packed, green routes.
 
 ## Sources
+
 [1] Supply Chain Dive — "USPS, Amazon partner on same-day delivery pilot" (Sept. 30, 2026) — https://www.supplychaindive.com/news/usps-amazon-partner-on-same-day-delivery-pilot/831647/
 [2] Bain & Company — "Diesel Prices Hit an All-Time High. What Should Companies Do?" (Oct. 1, 2026; EIA data) — https://www.bain.com/insights/diesel-prices-hit-an-all-time-high-what-should-companies-do
 [3] Supply Chain Dive — "FedEx preps 5.9% rate hike, surcharge increases for 2027" (Sept. 21, 2026) — https://www.supplychaindive.com/news/fedex-preps-59-rate-hike-surcharge-increases-for-2027/830903/
@@ -110,6 +120,7 @@ The numbers: Diesel is up 88% since January. United Parcel Service (UPS) bumped 
 I'm curious how supply chain teams are reading this. Shippers are already mixing up carriers to save $2 to $3 an order. I'd want to know if these same-day sprints will get checked against the emissions a packed truck would have made — because that carbon bill is coming due next.
 
 ## Gate report
+
 lead: PASS — Delivers the core news (Amazon/USPS pilot and diesel record) in sentence 1 with zero throat-clearing, using plain English.
 tension: PASS — Frames the shift with 'Why it matters', includes mandatory 'By the numbers' with 4 bolded stats, and spells out all acronyms at first use (EIA, UPS). Paragraphs are kept to 1-3 sentences.
 tactical-insight: PASS — Uses 'What I'd watch' signpost, structures 4 observations as clean bullets with bold lead-ins, and avoids instructing the reader. Plain vocabulary replaces dense jargon.

@@ -247,6 +247,26 @@ class Supabase:
 # markdown -> HTML (the destinations store HTML in post_content)
 # ─────────────────────────────────────────────────────────────────────────────
 
+def normalize_heading_spacing(text: str) -> str:
+    """Ensure every markdown heading stands on its own separate line with blank lines before and after."""
+    lines = text.split("\n")
+    out = []
+    for i, line in enumerate(lines):
+        m = re.match(r"^(#{1,6}\s+.*)$", line)
+        if m:
+            if out and out[-1].strip() != "":
+                out.append("")
+            out.append(m.group(1).rstrip())
+            if i + 1 < len(lines) and lines[i+1].strip() != "":
+                out.append("")
+        else:
+            if len(out) >= 2 and re.match(r"^#{1,6}\s+", out[-2]) and out[-1] == "" and line.startswith(" "):
+                out.append(line.lstrip())
+            else:
+                out.append(line)
+    return "\n".join(out)
+
+
 def reader_markdown(markdown: str) -> str:
     """Strip frontmatter and the pipeline's internal sections — the same cuts the site's
     readerBody() makes, so the CMS holds what a reader is meant to see.
@@ -262,6 +282,7 @@ def reader_markdown(markdown: str) -> str:
         body = _drop_marker_block(body, marker)
     body = re.split(r"^##\s+Gate report\s*$", body, flags=re.M)[0]
     body = re.sub(r"^\s*<!--.*?-->\s*$", "", body, flags=re.M)
+    body = normalize_heading_spacing(body)
     return body.strip()
 
 

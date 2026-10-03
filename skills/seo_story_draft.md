@@ -28,6 +28,8 @@ slug: "YYYY-MM-DD_<slug>"
 > **Title Keyword Requirement:** The article `title:` and `meta_title:` MUST explicitly incorporate the `primary_keyword` (exact or naturalized proper casing, e.g. `<Primary Keyword>: <Punchy Hook/Angle>`). Never drop, omit, or paraphrase away the target keyword from the title.
 
 ### B. Article Body Sections (Clean Markdown & Engaging H2 Headers)
+**Formatting requirement:** Every H2 header (`## `) MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. Never place body text or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line.
+
 - `<!-- lead -->`: Concrete hook featuring an incident, production metric, or specific cost figure (no heading, hook in sentence 1).
 - `<!-- tension -->`: `## The big picture:` H2 header + systemic reasons why this happens now, reinforced with **Founder Voice stances** and **Customer Truth anecdotes**.
 - `## By the numbers`: Mandatory quantitative H2 section with 2–4 bolded metric bullets pairing figures with concise 2–4 word metric titles before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). No conversational filler lead-ins.
