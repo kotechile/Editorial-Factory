@@ -288,6 +288,11 @@ def parse_draft(file_path: str, illustrate: bool = True, pinned_style: str | Non
     linkedin_match = re.search(r"<!--\s*linkedin\s*-->\s*(.+)", body_content, re.DOTALL | re.IGNORECASE)
     if linkedin_match:
         linkedin_post = linkedin_match.group(1).strip()
+        # The humanizer writes its per-section Gate report after the LinkedIn block, so the
+        # greedy match above swallows it: the stored/posted social copy carried the desk's
+        # internal review notes ("## Gate report … lead: PASS"). Strip it here, the same way
+        # body_article is cleaned below — the report is an operator artifact, never reader copy.
+        linkedin_post = re.sub(r"##\s*Gate report[\s\S]*$", "", linkedin_post, flags=re.IGNORECASE).strip()
         # Remove linkedin section from the long-form body
         body_article = body_content[:linkedin_match.start()].strip()
     else:

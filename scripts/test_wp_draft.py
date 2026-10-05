@@ -477,6 +477,8 @@ fdb._call = lambda method, path, body=None, extra_headers=None: (
     200, [{"id": "1", "metadata": {}}, {"id": "2", "metadata": {"wordpress": {"post_id": 9}}}])
 check("un_pushed_only skips rows that already have a draft",
       [r["id"] for r in fdb.articles(un_pushed_only=True, limit=None)] == ["1"])
+check("missing_media_only skips rows with no post_id or no staged image",
+      [r["id"] for r in fdb.articles(missing_media_only=True, limit=None)] == [])
 
 print("\ncredentials")
 import os  # noqa: E402

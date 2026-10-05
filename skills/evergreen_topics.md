@@ -114,6 +114,12 @@ It fetches every row, prints the evidence it found for each figure, and writes t
 `<!-- evergreen-gate: -->` marker on pass. **Editing a row after that makes the marker stale, and
 `scripts/verify.sh` reads a stale or missing marker as a build failure** — re-run the gate.
 
+**Writing the figure cell so the gate can read it:** the matcher looks for numeric tokens, so a row
+whose figure is written in words must *begin* with the number word (`six months — …` matches "six
+months" or "6 months"; `at least six months — …` generates no pattern at all and reads as
+`figure_absent`). Lead the cell with the figure, then the gloss, and never bury it after prose —
+the same row that fails this way will pass once the figure moves to the front.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`

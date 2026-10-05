@@ -1,0 +1,51 @@
+{
+  "slug": "total-landed-cost-china-vs-mexico",
+  "revision": 1,
+  "history": [],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection, stacked supply chain components showing a shipping container module layered above a factory floor section and a customs gate structure, flat muted palette with one accent colour, thin consistent line weight, recognisable hardware with visible depth, unlabelled, generous empty margin",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, UI elements, labels, people, abstract shapes, blobs, messy lines, realistic photo, watermarks, logos",
+  "rationale": "The article breaks down the mathematical components of total landed cost, detailing freight, tariffs, and labor costs. A technical isometric cutaway is perfect for showing the stacked components of these costs as a physical assembly of shipping and manufacturing modules, visualizing the 'stack' of tariffs and freight.",
+  "cue": "total landed cost",
+  "subject": "isometric cutaway of a shipping container layered over a manufacturing module and tariff gate",
+  "alt_text": "Isometric technical cutaway showing a shipping container stacked above manufacturing and customs modules.",
+  "caption": "The true cost of offshore manufacturing is found by stacking freight, tariffs, and labor into one total landed cost.",
+  "title": "Total Landed Cost Stack Isometric",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "technical_isometric"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/total-landed-cost-china-vs-mexico/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 900292,
+  "sha256": "sha256:0a9d2da12ae65ffc4428c2ce41a8c294",
+  "source_hash": "sha256:75d3e3bef6ce0908c69e3fe0fa4bcb5a",
+  "source_chars": 3988,
+  "task_id": "63b6b492cd81e7e54b3359f57009d266",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_86c35cf2f1bf78a9b2f1732dd2d9fc8a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection, stacked supply chain components showing a shipping container module layered above a factory floor section and a customs gate structure, flat muted palette with one accent colour, thin consistent line weight, recognisable hardware with visible depth, unlabelled, generous empty margin\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, UI elements, labels, people, abstract shapes, blobs, messy lines, realistic photo, watermarks, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-04T20:41:07+00:00"
+}

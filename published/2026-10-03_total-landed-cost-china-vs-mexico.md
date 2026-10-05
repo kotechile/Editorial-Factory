@@ -11,6 +11,12 @@ meta_title: "The Sticker Price Lies: Why Mexico Beats China on Total…"
 meta_title_source: "derived_from_title"
 meta_description: "A product that costs $100 at a factory in China lands in the US at $136. The same item built for $108 in Mexico lands at just $110."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/total-landed-cost-china-vs-mexico/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric technical cutaway showing a shipping container stacked above manufacturing and customs modules."
+image_caption: "The true cost of offshore manufacturing is found by stacking freight, tariffs, and labor into one total landed cost."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

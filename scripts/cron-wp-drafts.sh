@@ -70,6 +70,19 @@ elif ! printf '%s' "$OUT" | grep -q "Nothing to push"; then
   printf '%s\n' "$OUT" | grep -E '^  (created|updated):' | head -12
 fi
 
+# Part 1b — reconcile featured media for existing drafts that were pushed without one.
+RECON="$(python3 scripts/wp_draft.py --reconcile-media --limit "$LIMIT" 2>&1)"
+RRC=$?
+
+if [ "$RRC" -ne 0 ]; then
+  echo "WordPress Draft Sweep: media reconciliation FAILED (exit $RRC)"
+  printf '%s\n' "$RECON" | grep -E 'FAILED|Error|FAIL' | head -8
+  PROBLEMS=1
+elif ! printf '%s' "$RECON" | grep -q "Nothing to reconcile"; then
+  echo "WordPress Draft Sweep: $(printf '%s\n' "$RECON" | grep -cE '^  (created|updated)') draft(s) reconciled with featured media"
+  printf '%s\n' "$RECON" | grep -E '^  (created|updated):' | head -12
+fi
+
 DEFECTS="$(python3 scripts/check_cms_defects.py 2>&1)"
 DRC=$?
 if [ "$DRC" -ne 0 ]; then

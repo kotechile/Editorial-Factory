@@ -11,6 +11,15 @@ The failure this skill exists to prevent is sameness: forty posts sharing one vi
 as one machine, and a header that has nothing to do with the article reads as filler. The second
 failure it prevents is an image that is *wrong* in a way that costs — legible gibberish text baked
 into the pixels, a real company's mark, a stock-photo cliché, alt text a screen reader cannot use.
+The third failure is **boring, sterile images**: generic server blades, blank modular cubes, or unlatched
+gates on flat backgrounds that lack soul, drama, and narrative weight.
+
+### The 4-Step Creative Process
+To ensure editorial imagery matches the standard of top publications (Wired, The Atlantic, Bloomberg Businessweek):
+1. **Read Substantive Content & Extract Main Idea**: The LLM reads the core body of the article (not just the headline/excerpt) to identify the central tension, turning point, or real-world stake. Recorded in `main_idea`.
+2. **Select an Evocative Hero Object or Scene**: Choose a tangible, storytelling hero object or authentic narrative scene with character, texture, and drama (e.g., an aborted 3D print bird's nest on a glass bed, container cranes at blue hour in coastal fog, high-voltage copper busbars, or a physical relay bypass wired around a dark logic board). Never sterile cubes or plain server racks. Recorded in `object_or_scene`.
+3. **Choose the Best Treatment & Model**: Select the treatment from the catalogue that provides maximum visual impact, weaving that treatment's core vocabulary naturally into the prompt.
+4. **Craft a Cinematic, High-Texture Prompt**: Specify camera angle, lens/optics (e.g. 35mm anamorphic wide, 100mm macro), dramatic atmospheric lighting (golden hour, volumetric blue-hour haze, rim lighting), rich physical textures (weathered metals, frosted copper, polymers), and elegant composition with negative space.
 
 ## 2. The treatment catalogue (`STYLES` in `scripts/illustration_creator.py`)
 The art director may only choose from the catalogue; it is stated to the director verbatim, and
@@ -55,10 +64,10 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
 
 ## 3. Non-negotiable direction rules (enforced in code, not just in the prompt)
 1. **One concrete noun from the story, anchored by the Title + Excerpt.** The art director
-   reads the Headline and Excerpt first to establish the visual concept. The brief must carry a `cue`:
-   a phrase of ≤10 words copied verbatim from the article that drove the treatment. The image must
-   visually symbolize the concept in the Headline + Excerpt across all treatments — never generic office
-   workers at desks, and never unformed paper scraps or bare geometry.
+   reads the substantive article body to extract the `main_idea` and choose an evocative `object_or_scene`.
+   The brief must carry a `cue`: a phrase of ≤10 words copied verbatim from the article that drove
+   the treatment. The image must visually symbolize the concept in the Headline + Excerpt across all
+   treatments — never generic office workers at desks, and never unformed paper scraps or bare geometry.
 2. **No legible text, ever.** No text, letters, numbers, wordmarks, signage or UI in the frame
    (they render as rubble) — the negative prompt must forbid them explicitly and the positive
    prompt may not *ask* for them ("a sign reading…" is refused).

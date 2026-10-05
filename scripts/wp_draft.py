@@ -174,7 +174,7 @@ class Supabase:
             raise RuntimeError(f"Supabase {method} {path} -> HTTP {exc.code}: {detail}") from None
 
     def articles(self, slug: str | None = None, un_pushed_only: bool = False,
-                 limit: int | None = None) -> list[dict]:
+                 missing_media_only: bool = False, limit: int | None = None) -> list[dict]:
         """Rows from public.articles. The editorial fields live in the metadata jsonb."""
         fields = "id,title,content,source_url,tags,metadata,created_at"
         if slug:
@@ -185,6 +185,21 @@ class Supabase:
         rows = rows or []
         if un_pushed_only:
             rows = [r for r in rows if not ((r.get("metadata") or {}).get(WORDPRESS) or {}).get("post_id")]
+        elif missing_media_only:
+            candidates = []
+            for r in rows:
+                wp_meta = (r.get("metadata") or {}).get(WORDPRESS) or {}
+                if not wp_meta.get("post_id"):
+                    continue
+                if wp_meta.get("media_id"):
+                    continue
+                r_slug = (r.get("metadata") or {}).get("slug") or ""
+                ill = (r.get("metadata") or {}).get("illustration")
+                if not ill and r_slug:
+                    ill, _ = staged_illustration(r_slug)
+                if ill and illustration_file(ill):
+                    candidates.append(r)
+            rows = candidates
         if limit is not None:
             # `limit is not None`, not truthiness: limit=0 means "none" (a deliberate no-op probe),
             # and treating it as falsy returned EVERY row instead — which turned a no-op test run
@@ -1408,12 +1423,15 @@ def main() -> int:
     parser.add_argument("--author-name", default=None,
                         help="Byline for the schema's author node. Omitted = the author node is "
                              "dropped rather than publishing the generator's {{AUTHOR_NAME}} token")
+    parser.add_argument("--reconcile-media", action="store_true",
+                        help="Reconcile existing posts that have no featured image attached in the CMS "
+                             "yet, but now have a staged or recorded illustration ready")
     args = parser.parse_args()
 
-    if not args.slug and not args.all and not args.refresh and not args.reimage:
-        parser.error("pass --slug <slug>, --all or --refresh")
+    if not args.slug and not args.all and not args.refresh and not args.reimage and not args.reconcile_media:
+        parser.error("pass --slug <slug>, --all, --refresh or --reconcile-media")
 
-    limit = args.limit if args.limit is not None else (None if args.refresh else 1)
+    limit = args.limit if args.limit is not None else (None if (args.refresh or args.reconcile_media) else 1)
     db = Supabase(*supabase_config())
 
     if args.reimage:
@@ -1451,11 +1469,17 @@ def main() -> int:
         print("\npushed: 1/1 | drafts only — publishing stays a human step in the CMS")
         return 0
 
-    rows = db.articles(un_pushed_only=not args.refresh, limit=limit)
-    if not rows:
-        print("Nothing to push (every row already has a draft in its CMS)."
-              if not args.refresh else "No rows to refresh.")
-        return 0
+    if args.reconcile_media:
+        rows = db.articles(missing_media_only=True, limit=limit)
+        if not rows:
+            print("Nothing to reconcile (no existing drafts missing a featured image).")
+            return 0
+    else:
+        rows = db.articles(un_pushed_only=not args.refresh, limit=limit)
+        if not rows:
+            print("Nothing to push (every row already has a draft in its CMS)."
+                  if not args.refresh else "No rows to refresh.")
+            return 0
 
     failures = 0
     skipped = 0

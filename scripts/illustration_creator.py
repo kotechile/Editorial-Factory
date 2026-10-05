@@ -414,6 +414,8 @@ class Brief:
     title: str
     credit: str
     depicts_real_brand: bool
+    main_idea: str = ""
+    object_or_scene: str = ""
     director: str = GEMINI_MODEL
     attempts: int = 1
     pinned: dict = field(default_factory=dict)
@@ -575,12 +577,16 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if problems:
         raise BriefError("; ".join(problems))
 
+    main_idea = re.sub(r"\s+", " ", str(raw.get("main_idea") or "")).strip()
+    object_or_scene = re.sub(r"\s+", " ", str(raw.get("object_or_scene") or "")).strip()
+
     return Brief(
         style_id=style_id, rationale=rationale, cue=cue,
         subject=subject[:300],
         model=model, prompt=prompt, negative_prompt=negative, aspect_ratio=aspect,
         resolution=resolution, alt_text=alt, caption=caption, title=title, credit=credit,
-        depicts_real_brand=False, model_note=model_note)
+        depicts_real_brand=False, main_idea=main_idea, object_or_scene=object_or_scene,
+        model_note=model_note)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -667,12 +673,40 @@ shows as the article's card. You are not a preset — you read THIS text and pic
 deserves, and you change treatment between articles so the desk does not look like one filter \
 over forty posts.
 
-VISUAL ANCHOR (READ THIS FIRST):
+CREATIVE PROCESS (AVOIDING BORING, STERILE IMAGES):
+The single biggest failure mode on this desk is BORING, STERILE, REPETITIVE IMAGES (e.g. generic computer racks, blank modular cubes, unlatched metal gates on plain backdrops, sterile document flatlays).
+The reader should be wowed by the image. It must feel like an authentic, award-winning editorial hero image from Wired, The Atlantic, The New York Times Magazine, Bloomberg Businessweek, or Financial Times.
+
+You MUST execute this 4-step creative method:
+
+STEP 1: READ THE SUBSTANTIVE ARTICLE & EXTRACT THE MAIN IDEA
+Do NOT just read the headline. Read the ARTICLE SUBSTANTIVE CONTENT below carefully.
+Identify the central tension, turning point, or real-world stake. What is the core dramatic conflict or revelation of this story?
+(State this in your `main_idea` field).
+
+STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE
+Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea.
+(State this in your `object_or_scene` field).
+- REJECT BORING, STERILE TROPES: Avoid generic server blades in a rack, abstract grey modular cubes, unlatched inspection gates on empty backdrops, or plain paper sheets.
+- CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES WITH CHARACTER AND TEXTURE:
+  * For industrial / supply chain / manufacturing: an authentic, textured industrial setting — a cinematic container port at blue hour with towering gantry cranes, an ocean vessel berthed in coastal fog, a manufacturing line with glowing metal or precision machining residue, an industrial freight scale with heavy cargo, a desert highway border crossing at sunset.
+  * For hardware / tinkering / 3D printing / engineering: an evocative workshop scene with focused spotlighting — e.g. an aborted 3D print with a tangled bird's nest of vibrant filament over an unfinished gear on a glass bed, a precision CNC milling head over gleaming aluminum chips, a technician's bench with intricate wiring and circuit probes.
+  * For energy / housing / climate: high-voltage copper busbars, inverter circuits gleaming in evening light, a residential battery backup system in a clean garage workshop, or rooftop solar arrays catching the first light of dawn.
+  * For software / AI / finance / governance: choose an evocative physical metaphor or forensic environment — a glowing disconnected terminal in an empty control room at dusk, a physical relay bypass wired around a dark logic board, a forensic accounting workspace with heavy leather ledger books under an architect's desk lamp, or fiber optic bundles glowing in a moody data vault.
+
+STEP 3: CHOOSE THE BEST TREATMENT & MODEL
+Select the treatment from the catalogue that provides the most stunning visual impact for your chosen scene. Weave that treatment's core vocabulary naturally into the prompt.
+
+STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
+Write a prompt (15-120 words) with rich sensory and visual details:
+- Camera angle & lens: define perspective, lens focal length, focal plane, depth of field (e.g., 35mm anamorphic wide shot, 100mm macro razor-sharp plane, dramatic low-angle perspective).
+- Lighting & atmosphere: golden hour sunlight casting long shadows, blue-hour twilight with warm amber worklights, cinematic volumetric haze, rim lighting highlighting metallic edges.
+- Textures & materials: brushed metals, weathered corrugated containers, frosted copper tubing, dusty workshop glass, textured matte polymers.
+- Composition & mood: generous negative space, editorial elegance, sophisticated color palette.
+
+VISUAL ANCHOR:
 Headline: {title}
 Excerpt: {excerpt}
-The image MUST visually represent the core premise stated in this Headline and Excerpt. When a \
-reader views the image alongside the headline and excerpt, the subject or visual metaphor must make \
-immediate, unmistakable sense.
 
 ARTICLE DETAILS
 Vertical: {fm.get('vertical', '')} | Persona: {fm.get('persona', '')}
@@ -694,7 +728,7 @@ TREATMENTS ALREADY USED, MOST RECENT FIRST: {history_line}
 You MUST choose one of: {', '.join(allowed)} — a treatment may not repeat within the last \
 {HISTORY_WINDOW} illustrations.
 {readmit_line}
-DOMAIN GROUNDING (the desk's most common failure, and it is checked in code, not just asked for)
+DOMAIN GROUNDING
 1. NEVER DEPICT A GENERIC OFFICE WORKER AT A DESK: Do not default to stock photos of a person \
 typing at a laptop, sitting at an office desk, or in a conference room. No people facing camera.
 2. ROTATE MEDIUMS & DO NOT DEFAULT ONLY TO REAL-LIFE PHOTOS: The publication relies on a rich \
@@ -702,21 +736,13 @@ mix of treatments — photographic (macro, architectural, document still life) A
 constructed (matte 3D clay renders, technical isometric cutaways, studio object shots, paper collages).
 3. EVERY MEDIUM MUST DEPICT A RECOGNIZABLE SUBJECT: In every treatment, the subject must be a \
 recognizable physical object, mechanical assembly, or clear symbolic silhouette derived from the \
-Headline and Excerpt (e.g. an unexercised options certificate alongside an hourglass, an interlocking \
-rack module, a brass padlock on a ledger, a cutaway conveyor).
+Headline and Excerpt.
 4. NO BARE SHAPES OR ABSTRACT SCRAPS: Cubes, spheres, wedges, slabs, rectangles, amorphous blobs, \
 and random torn paper scraps are not subjects. A prompt whose subject is bare geometry or unformed \
 paper scraps is refused. Ground the subject in a tangible mechanism or symbolic object.
-When the story is abstract — software, finance, AI agents, contracts, a cost model — do NOT build \
-the frame from bare geometry. Always reach for a recognisable physical engineering or conceptual \
-analogy instead: modular server components or blades in a rack, an unlatched inspection gate, an \
-hourglass, an options certificate with an un-struck seal, an interlocking connector, a manifold. Name \
-that mechanism or object in the prompt's own words — the mechanism is what grounds the metaphor in \
-this story.
 5. MATURE, PROFESSIONAL B2B GROUNDING — NEVER DEPICT TOYS OR CARTOON GRAPHICS:
 This is an institutional, executive B2B publication read by supply chain leaders, CFOs, and engineers.
-- NEVER depict literal children's toys (such as rocking horses, toy blocks, dolls, cartoon figurines), clip-art silhouettes, or playful nursery symbols.
-- If consumer goods or retail products are discussed alongside manufacturing (e.g. basic consumer goods vs. heavy industry/steel plants), anchor the visual in the REAL, MATURE industrial or commercial environment: modern heavy manufacturing mills, automated logistics yards, shipping container terminals, high-tech semiconductor cleanrooms, or commercial warehouse fulfillment systems.
+- NEVER depict literal children's toys, clip-art silhouettes, or playful nursery symbols.
 - For stories involving manufacturing, steel, energy, factories, shipping, transport, infrastructure, or hardware, ALWAYS prefer photographic treatments (cinematic_still, long_lens_industry, editorial_macro, architectural_night) that depict real physical facilities, machinery, and logistics.
 - Every visual must feel like an authentic, high-end editorial feature image from Bloomberg, The Wall Street Journal, or Financial Times.
 
@@ -736,7 +762,9 @@ sentence a reader could quote. The credit is e.g. \
 "Illustration: Editorial-Factory Intelligence Unit".
 
 Return ONLY a JSON object, no markdown fence, with exactly these keys:
-{{"style_id": one of {list(allowed)},
+{{"main_idea": "1-2 sentences: the core tension, conflict, or revelation extracted from reading the substantive article body",
+ "object_or_scene": "the specific hero object or narrative scene chosen to represent that idea, and why it visually tells the story without being boring",
+ "style_id": one of {list(allowed)},
  "rationale": "2-3 sentences: why this treatment for this story",
  "cue": "a phrase of 2-10 words copied verbatim from the article above",
  "subject": "the physical thing in the frame, one clause — never a bare shape",

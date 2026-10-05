@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T18:15:41Z",
+  "updated_at": "2026-10-05T19:08:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -269,7 +269,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/california-legalizes-plug-in-solar/"
     },
     {
       "slug": "2026-10-03_cloud-update-bricked-the-fridge-local-first",
@@ -287,7 +288,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/"
     },
     {
       "slug": "2026-10-03_heat-pumps-cheaper-to-run-pricier-to-buy",
@@ -305,7 +307,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/"
     },
     {
       "slug": "2026-10-03_heloc-at-8-vs-battery-that-earns",
@@ -323,7 +326,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/"
     },
     {
       "slug": "2026-10-03_tariff-split-reshoring-heavy-half",
@@ -341,7 +345,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-03",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/tariff-split-reshoring-heavy-half/"
     },
     {
       "slug": "2026-10-03_total-landed-cost-china-vs-mexico",
@@ -359,6 +364,132 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-03",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_agent-audit-trail-not-evidence",
+      "title": "An Agent's Logs Aren't Evidence: What to Capture, and How Long to Keep It",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_agent-safety-gate-moves-to-verified-state",
+      "title": "The Agent Safety Gate Moves to Verified State",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_fed-rate-hike-inverts-working-capital-trap",
+      "title": "Higher Rates Meet Historically Lean Inventories",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_multi-agent-coordination-topology-cost",
+      "title": "Multi-Agent Coordination: Pick the Topology That Pays",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_remodel-capitalization-trap-shell-not-show",
+      "title": "The Remodel That Pays You Back Isn't the One You Want",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_smart-irrigation-payback-water-tier",
+      "title": "A Smart Sprinkler Pays Back at Your Top Water Tier, Not the Spec Sheet",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_you-think-youre-governing-your-agents",
+      "title": "You Think You're Governing Your AI Agents. The Data Says You're Not.",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-05",
       "public": false
     }
   ]

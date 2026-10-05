@@ -195,6 +195,13 @@ one.
   alias model IDs like `claude-sonnet-5`). That key is currently **auth-rejected (HTTP 401)** — do not use it.
   The working frontier is Gemini until a valid Anthropic/kie.ai key is restored. `api.kie.ai` is whitelisted
   in `_anthropic_base_url_override_ok` (runtime_provider.py) if it is re-enabled.
+- **`humanize_loop3.humanize_all()` is month-locked — do not call it per-draft.** Its loop globs
+  `DRAFTS.glob("2026-09-*.md")` (a hard-coded September). Hand it a draft dated on/after 2026-10-01
+  and it finds nothing, writes no `_final.md`, and still exits 0 — a silent no-op that looks like a
+  successful Loop 3. Invoke the humanizer per-draft instead, calling the function directly:
+  `python3 -c "import sys,pathlib; sys.path.insert(0,'scripts'); import humanize_loop3 as hl;
+  hl.humanize_single_draft(pathlib.Path('<slug>_draft.md').read_text(), pathlib.Path('<slug>_final.md'))"`.
+  Always confirm the `_final.md` file now exists — never trust the script's own summary.
 - **Output-token budget (thinking models):** the frontier is a *thinking* model, and its internal
   reasoning tokens (`thoughtsTokenCount`, typically ~6,400 for a full rewrite) are counted **against**
   `maxOutputTokens`. A too-small budget makes the model think hard and then truncate the article
