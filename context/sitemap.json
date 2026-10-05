@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T19:08:46Z",
+  "updated_at": "2026-10-05T19:38:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -405,6 +405,24 @@
     {
       "slug": "2026-10-05_fed-rate-hike-inverts-working-capital-trap",
       "title": "Higher Rates Meet Historically Lean Inventories",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-05_inventory-carrying-cost-rate",
+      "title": "Your Inventory Carrying Cost Is 20\u201330% a Year, Not Your 7% Borrowing Rate",
       "vertical": "meio_working_capital_tco",
       "primary_keyword": "",
       "secondary_keywords": [],

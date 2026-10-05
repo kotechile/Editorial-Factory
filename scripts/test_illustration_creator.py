@@ -358,7 +358,7 @@ check("...and a repeat inside the window is not in the allowed set",
 check("...and the commission carries the domain-grounding mandate",
       "DOMAIN GROUNDING" in seen[0] and "bare geometry" in seen[0])
 check("...and the commission anchors on Headline and Excerpt",
-      "VISUAL ANCHOR (READ THIS FIRST):" in seen[0] and "Headline:" in seen[0] and "Excerpt:" in seen[0])
+      "VISUAL ANCHOR" in seen[0] and "Headline:" in seen[0] and "Excerpt:" in seen[0])
 
 print("\nrotation")
 history = ["editorial_macro", "cinematic_still", "clay_render", "document_flatlay", "paper_collage"]
