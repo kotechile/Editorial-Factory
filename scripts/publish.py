@@ -776,10 +776,10 @@ def sync_to_supabase(data: dict, live_urls: dict):
 
 
 def seed_distribution_prep():
-    """Prepare the dashboard's Reddit/LinkedIn to-do cards for the published articles.
+    """Prepare the dashboard's app-promotion to-do cards for the promoted software apps.
 
     Preparation, not distribution: it calls the dashboard's idempotent seed endpoint, which adds
-    cards only for articles that have none, never posts, and never resets a status or an edit.
+    cards only for apps that have none, never posts, and never resets a status or an edit.
     Best-effort — a publish must not fail because the dashboard is unreachable.
     """
     try:
@@ -799,11 +799,12 @@ def seed_distribution_prep():
         result = module.seed()
         state, missing = module.coverage_report()
         counts = state.get("counts", {}) or {}
-        print(f"✓ distribution prep: {result.get('created', result.get('added', '?'))} card(s) added "
+        print(f"✓ distribution prep: {result.get('created', result.get('added', '?'))} card(s) added, "
+              f"{result.get('pruned', 0)} pruned "
               f"| queue now {state.get('total', 0)} cards ({counts.get('ready', 0)} ready) "
               f"— nothing posted")
         if missing:
-            print(f"! {len(missing)} published article(s) still have no distribution card: "
+            print(f"! {len(missing)} promoted app(s) still have no promotion card: "
                   f"{', '.join(missing[:3])}")
         return True
     except Exception as exc:  # network, auth, parsing — never fail the publish
@@ -1154,7 +1155,7 @@ def main():
     except Exception as e:  # never fail the publish on a derived-surface refresh
         print(f"! sitemap_sync.py could not run: {e}", file=sys.stderr)
 
-    # 4c. Prepare the distribution to-do cards (Reddit + LinkedIn) in the same pass. Preparation
+    # 4c. Prepare the app-promotion to-do cards (Reddit + LinkedIn) in the same pass. Preparation
     #     only — the cards are copy-paste tasks an operator posts by hand; nothing is posted here.
     if not args.no_seed and not args.dry_run:
         seed_distribution_prep()

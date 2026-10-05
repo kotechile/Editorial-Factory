@@ -134,32 +134,39 @@ scripts/cron-seo-pipeline.sh    # SEO Content Machine
 scripts/verify.sh
 ```
 
-## Distribution to-do (Reddit & LinkedIn, no platform APIs)
+## App promotion to-do (Reddit & LinkedIn, no platform APIs)
 
-The **📣 Distribution** tab in the PressFlow dashboard (`site/index.html`) is the publication
-to-do list. There is no Reddit API in play: every item carries the finished text plus a
-pre-filled submit URL, and the operator copies → posts → marks it.
+The **📣 Distribution** tab in the PressFlow dashboard (`site/index.html`) is the promotion to-do
+list for the software factory's live apps, defined in `context/promoted_apps.json`. There is no
+Reddit API in play: every item carries the finished text plus a pre-filled submit URL, and the
+operator copies → posts → marks it.
 
-- **One card per place to post.** Seeding a published article produces two Reddit tasks (numbers-first
-  and discussion-question framings, one per recommended subreddit for the vertical) and one LinkedIn
-  task (the authored `<!-- linkedin -->` block, with the reader link and hashtags appended).
+- **One card per place to post.** Each promoted app yields one Reddit card per recommended
+  subreddit — every card names its subreddit (`r/stripe`, `r/FulfillmentByAmazon`, …) and shows the
+  reason it was recommended — plus one LinkedIn card.
+- **The catalog is the source of truth**, not the queue: it lists which apps are promoted, the
+  recommended subreddits and the copy. Edit the copy there and re-seed with `--refresh` (only
+  `ready` cards are rewritten). The queue is derived state.
 - **Statuses:** `ready` → `published` or `deleted`; any of them can be reopened as `ready`. Filter by
   status and by platform; the tab badge counts what is still `ready`.
 - **Buttons per card:** Copy text · Open submit page (Reddit web intent / LinkedIn composer) ·
   Edit text (saved back to the queue) · Mark published · Mark deleted · Reopen as ready.
-- **Seeding is idempotent.** `+ Generate from published` adds tasks for articles that do not have one
+- **Seeding is idempotent.** `+ Generate from the app inventory` adds cards for apps that have none
   and never resets a status or an edit. `refresh: true` regenerates the text of `ready` items only.
+  A card whose app leaves the catalog is pruned — that is also how the queue's previous source (the
+  per-article cards) was cleared when promotion moved to the apps.
 - **Storage:** Supabase `factory_config` key `distribution_queue` when `SUPABASE_URL` +
   `SUPABASE_SERVICE_ROLE_KEY` are set (required in production — the container filesystem is
   rebuilt on every deploy), otherwise `context/distribution_queue.json` locally.
-- **Formatter:** `site/distribution.mjs` — deterministic, no model calls, strips AI-tells, keeps
-  each bullet distinct from the lede, and validates length for both platforms. Sentence splitting
-  guards dates and abbreviations (`Jan. 10, 2027` must not become "Jan." + "10, 2027"), and the
-  numbers-first variant never repeats the closing takeaway as a bullet — both defects shipped
-  visibly in cards once.
+- **Links are the public app pages** (`apps.giniloh.com/<slug>`), never the dashboard: a promotion
+  card that sends a stranger to a login prompt advertises the internal surface instead of the
+  product.
+- **The copy is voice-gated.** Cardinal rules in `site/social_voice.mjs`, checked by
+  `scripts/check_social_voice.mjs` (verify.sh §9): a card reads as one person describing something
+  they built — an observer cue, no imperative advice, no consultant or verdict framing.
 - **Seeding is automatic in the publish pass** (`scripts/publish.py` → `scripts/seed_distribution.py`):
-  a published article shows up as ready-to-post cards without anyone clicking "+ Generate from
-  published". Nothing is ever posted by it; the cards are copy-paste tasks.
+  the cards stay fresh without anyone clicking the button. Nothing is ever posted by it; the cards
+  are copy-paste tasks.
 
 API (all behind the dashboard's access layer): `GET/POST/PATCH/DELETE /api/distribution/tasks`,
 `POST /api/distribution/seed`.

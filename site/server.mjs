@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { timingSafeEqual } from 'node:crypto';
-import { buildTasksForArticle, parseArticleMarkdown, pruneOrphanTasks, STATUSES, PLATFORMS } from './distribution.mjs';
+import { buildTasksForApp, appSourceIds, pruneOrphanTasks, STATUSES, PLATFORMS } from './distribution.mjs';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -469,10 +469,14 @@ function parseFrontmatter(markdown) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Distribution to-do queue
+// Promotion to-do queue
 //
-// Copy-ready Reddit / LinkedIn posts with a ready → published|deleted lifecycle.
-// No platform API is used: each task carries the text plus a submit web-intent URL.
+// Copy-ready Reddit / LinkedIn posts promoting the software factory's live apps, with a
+// ready → published|deleted lifecycle. No platform API is used: each task carries the text plus a
+// submit web-intent URL.
+//
+// The catalog (`context/promoted_apps.json`) is the source of truth for WHICH apps are promoted,
+// the recommended subreddit per card, and the copy an operator pastes. The queue is derived state.
 //
 // Storage is Supabase (`factory_config` row key `distribution_queue`) when credentials are
 // present, otherwise the repo file `context/distribution_queue.json`. The Supabase path is
@@ -480,39 +484,23 @@ function parseFrontmatter(markdown) {
 // ─────────────────────────────────────────────────────────────────────────────
 const QUEUE_CONFIG_KEY = 'distribution_queue';
 const LOCAL_QUEUE_FILE = join(ROOT, 'context', 'distribution_queue.json');
-// The reader URL for an article is only ever the public frontend page it was exported to.
-// PressFlow holds the working artifacts, not the reader copy: its own /published/ path is behind
-// the shared secret now, and reader-facing copy must not point at the dashboard (a social post
-// aimed there would send readers to a login prompt and advertise the internal surface).
-// `context/internal_links.json` is the live-corpus index — it is built from the frontends' own
-// sitemaps, so an article missing from it is simply not public yet.
-const LIVE_INDEX_FILE = join(ROOT, 'context', 'internal_links.json');
+// The promoted-apps catalog. The links in it point at the apps' public pages
+// (`apps.giniloh.com/<slug>`), never at the dashboard: a promotion card that sends a stranger to a
+// login prompt advertises the internal surface instead of the product.
+const PROMOTED_APPS_FILE = join(ROOT, 'context', 'promoted_apps.json');
 
-function wpSlug(publishedSlug) {
-  return String(publishedSlug || '').replace(/^(\d{4})-(\d{2})-(\d{2})_/, '');
-}
-
-function liveReaderUrls() {
+function readPromotedApps() {
   try {
-    if (!existsSync(LIVE_INDEX_FILE)) return {};
-    const data = JSON.parse(readFileSync(LIVE_INDEX_FILE, 'utf8'));
-    const out = {};
-    for (const candidate of data.candidates || []) {
-      if (candidate && candidate.live && candidate.url && candidate.slug) {
-        out[candidate.slug] = candidate.url;
-      }
+    if (!existsSync(PROMOTED_APPS_FILE)) {
+      console.warn(`promotedApps: ${PROMOTED_APPS_FILE} is missing — the queue will seed nothing`);
+      return [];
     }
-    return out;
+    const data = JSON.parse(readFileSync(PROMOTED_APPS_FILE, 'utf8'));
+    return Array.isArray(data.apps) ? data.apps.filter((app) => app && app.slug) : [];
   } catch (err) {
-    console.warn(`readerUrls: could not read ${LIVE_INDEX_FILE} (${err.message})`);
-    return {};
+    console.warn(`promotedApps: could not read ${PROMOTED_APPS_FILE} (${err.message})`);
+    return [];
   }
-}
-
-/** '' when the article is not live on a frontend yet — the social builders then omit the link
- *  rather than advertising a page a reader cannot reach. */
-function readerUrlFor(publishedSlug) {
-  return liveReaderUrls()[wpSlug(publishedSlug)] || '';
 }
 
 const nowIso = () => new Date().toISOString();
@@ -524,8 +512,9 @@ function normalizeTask(raw, { existing = null } = {}) {
     id: String(raw.id || base.id || '').trim(),
     platform: PLATFORMS.includes(raw.platform) ? raw.platform : (base.platform || 'reddit'),
     channel: String(raw.channel ?? base.channel ?? '').slice(0, 120),
+    channel_note: String(raw.channel_note ?? base.channel_note ?? '').slice(0, 200),
     variant: String(raw.variant ?? base.variant ?? ''),
-    source_type: String(raw.source_type ?? base.source_type ?? 'article'),
+    source_type: String(raw.source_type ?? base.source_type ?? 'app'),
     source_id: String(raw.source_id ?? base.source_id ?? ''),
     source_title: String(raw.source_title ?? base.source_title ?? '').slice(0, 300),
     vertical: String(raw.vertical ?? base.vertical ?? ''),
@@ -593,48 +582,49 @@ async function writeQueue(tasks) {
   return 'file';
 }
 
-/** Generate tasks from every published article; existing ids keep their status and edits. */
-async function seedQueueFromPublished({ refresh = false } = {}) {
+/** Generate tasks from the promoted-apps catalog; existing ids keep their status and edits. */
+async function seedQueueFromApps({ refresh = false } = {}) {
   const { tasks: existing } = await readQueue();
   const byId = new Map(existing.map((t) => [t.id, t]));
-  const pubDir = join(ROOT, 'published');
-  const files = existsSync(pubDir) ? (await readdir(pubDir)).filter((f) => f.endsWith('.md')).sort() : [];
+  const apps = readPromotedApps();
   let added = 0;
   let refreshed = 0;
 
-  for (const file of files) {
-    const markdown = await readFile(join(pubDir, file), 'utf8');
-    const article = parseArticleMarkdown(markdown);
-    if (!article.slug) article.slug = file.replace(/\.md$/, '');
-    const generated = buildTasksForArticle(article, {
-      readerUrl: readerUrlFor(article.slug),
-      sourceId: file.replace(/\.md$/, ''),
-    });
+  for (const app of apps) {
+    const generated = buildTasksForApp(app);
     for (const task of generated) {
       const prev = byId.get(task.id);
       if (!prev) {
         byId.set(task.id, { ...task, created_at: nowIso(), updated_at: nowIso(), completed_at: null });
         added += 1;
       } else if (refresh && prev.status === 'ready') {
-        byId.set(task.id, { ...prev, post_title: task.post_title, post_content: task.post_content, submit_url: task.submit_url, updated_at: nowIso() });
+        byId.set(task.id, {
+          ...prev,
+          channel: task.channel,
+          channel_note: task.channel_note,
+          post_title: task.post_title,
+          post_content: task.post_content,
+          submit_url: task.submit_url,
+          updated_at: nowIso(),
+        });
         refreshed += 1;
       }
     }
   }
 
   const tasks0 = [...byId.values()];
-  // A card outlives its article unless we say otherwise: the loop above only adds and refreshes, so
-  // withdrawing an article used to leave an offer to post it (with its dead reader URL) in the queue.
-  const publishedSlugs = new Set(files.map((f) => f.replace(/\.md$/, '')));
-  const { keep, dropped } = pruneOrphanTasks(tasks0, publishedSlugs);
+  // A card outlives its source unless we say otherwise: the loop above only adds and refreshes, so
+  // dropping an app (or switching the queue's source, which is how the article cards were cleared)
+  // used to leave an offer to post something the pipeline no longer produces.
+  const { keep, dropped } = pruneOrphanTasks(tasks0, appSourceIds(apps));
   const tasks = keep;
   if (dropped.length) {
-    console.log(`distribution: pruned ${dropped.length} card(s) for articles no longer in published/ `
-      + `(${[...new Set(dropped.map((t) => t.source_id))].join(', ')})`);
+    console.log(`distribution: pruned ${dropped.length} card(s) whose source is no longer produced `
+      + `(${[...new Set(dropped.map((t) => `${t.source_type}:${t.source_id}`))].join(', ')})`);
   }
 
   const storage = await writeQueue(tasks);
-  return { storage, added, refreshed, pruned: dropped.length, total: tasks.length };
+  return { storage, added, refreshed, pruned: dropped.length, total: tasks.length, apps: apps.map((a) => a.slug) };
 }
 
 function queueCounts(tasks) {
@@ -950,7 +940,7 @@ const server = createServer(async (req, res) => {
     if (url.pathname === '/api/distribution/seed' && req.method === 'POST') {
       let body = {};
       try { body = await parseJsonBody(req); } catch (err) { /* empty body is fine */ }
-      const result = await seedQueueFromPublished({ refresh: Boolean(body && body.refresh) });
+      const result = await seedQueueFromApps({ refresh: Boolean(body && body.refresh) });
       return sendJson(res, 200, { status: 'ok', ...result });
     }
 

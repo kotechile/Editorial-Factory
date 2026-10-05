@@ -41,20 +41,21 @@ def run(argv):
 
 
 class Coverage(unittest.TestCase):
-    def test_card_matches_on_source_id_with_or_without_the_date_prefix(self):
-        tasks = [{"source_id": "2026-09-26_tariff-cliff-already-priced-in"},
-                 {"source_id": "maskills-multi-agent-skills-optimization"}]
-        articles = {"2026-09-26_tariff-cliff-already-priced-in.md": {"tariff-cliff-already-priced-in",
-                                                                    "2026-09-26_tariff-cliff-already-priced-in"},
-                    "2026-09-24_maskills-multi-agent-skills-optimization.md": {"maskills-multi-agent-skills-optimization"},
-                    "2026-09-30_brand-new-piece.md": {"brand-new-piece", "2026-09-30_brand-new-piece"}}
-        self.assertEqual(sd.uncovered(articles, tasks), ["2026-09-30_brand-new-piece.md"])
+    def test_uncovered_names_the_apps_with_no_card(self):
+        apps = {"ledgerlink": "LedgerLink", "facturgate": "FacturGate", "caseproof": "CaseProof"}
+        tasks = [{"source_id": "ledgerlink"}, {"source_id": "caseproof"}, {"source_id": "some-other-id"}]
+        self.assertEqual(sd.uncovered(apps, tasks), ["FacturGate"])
 
-    def test_published_articles_reads_the_frontmatter_slug(self):
-        articles = sd.published_articles()
-        self.assertTrue(articles, "expected published articles in the repo")
-        for candidates in articles.values():
-            self.assertTrue(all(candidates), "every candidate slug must be non-empty")
+    def test_promoted_apps_reads_the_catalog(self):
+        apps = sd.promoted_apps()
+        self.assertTrue(apps, "expected promoted apps in context/promoted_apps.json")
+        for slug, name in apps.items():
+            self.assertTrue(slug and name, "every promoted app needs a non-empty slug and name")
+
+    def test_a_covered_catalog_reports_nothing_missing(self):
+        apps = sd.promoted_apps()
+        tasks = [{"source_id": slug} for slug in apps]
+        self.assertEqual(sd.uncovered(apps, tasks), [])
 
 
 class Safety(unittest.TestCase):
@@ -63,7 +64,7 @@ class Safety(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertIn(f"POST ", out)
         self.assertIn(sd.SEED_PATH, out)          # the seeding endpoint…
-        self.assertIn("published articles:", out)  # …and what it would cover
+        self.assertIn("promoted apps:", out)   # …and what it would cover
 
     def test_missing_secret_is_a_clean_error_not_a_call(self):
         """Without a secret the guard must stop before issuing a request the dashboard would reject."""

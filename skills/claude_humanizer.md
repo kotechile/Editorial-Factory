@@ -57,7 +57,8 @@ Introduce supporting context using standardized H2 headers (`## `).
 
 ### 3.8 The Social Variants — Observer Voice, Not Authority
 
-The long-form article explains. The `<!-- linkedin -->` variant and the Reddit card **comment** on it.
+The long-form article explains. The `<!-- linkedin -->` variant and the app-promotion cards
+(`context/promoted_apps.json`) speak in the same voice: one person saying what they make of it.
 The speaker is one person who has been reading the week's filings, reports and news and is saying what
 they make of it. They did not cause the events, they are not the owner of the truth, and they are not
 the reader's advisor: they hold a point of view and they label it as one.

@@ -9,8 +9,9 @@
  *   1. the authored `<!-- linkedin -->` block in every artifact dated >= VOICE_ENFORCED_FROM
  *      (drafts and published copies — newer artifacts are grandfathered, their voice predates the
  *       rule), and
- *   2. the copy `site/distribution.mjs` generates for every published article: the Reddit variants
- *      the operator pastes and the LinkedIn text that ships.
+ *   2. the copy the app-promotion to-do queue ships for every promoted app
+ *      (`context/promoted_apps.json`): the Reddit cards the operator pastes and the LinkedIn text
+ *      that goes out.
  *
  * Usage:
  *   node scripts/check_social_voice.mjs              # gate (exit 1 on any violation)
@@ -22,17 +23,16 @@
  * decided by omission.
  */
 import { readFile, readdir } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   VOICE_ENFORCED_FROM, inspectSocialVoice, describeViolations, inspectLongform, INTERPRETING_SECTIONS,
 } from '../site/social_voice.mjs';
-import { parseArticleMarkdown, buildTasksForArticle } from '../site/distribution.mjs';
+import { buildTasksForApp } from '../site/distribution.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const READER_BASE = (process.env.PRESSFLOW_READER_BASE_URL
-  || 'https://pressflow.aichieve.net/published').replace(/\/$/, '');
+const PROMOTED_APPS_FILE = join(ROOT, 'context', 'promoted_apps.json');
 
 /** The authored block: between the `<!-- linkedin -->` marker and the next marker or `## ` heading. */
 export function extractLinkedInBlock(markdown) {
@@ -91,20 +91,29 @@ async function checkArticles(report) {
   }
 }
 
-async function checkGenerated(report) {
-  const pubDir = join(ROOT, 'published');
-  if (!existsSync(pubDir)) return;
-  for (const name of (await readdir(pubDir)).sort()) {
-    if (!name.endsWith('.md')) continue;
-    const markdown = await readFile(join(pubDir, name), 'utf8');
-    const article = parseArticleMarkdown(markdown);
-    const tasks = buildTasksForArticle(article, { readerUrl: `${READER_BASE}/${name}` });
-    for (const task of tasks) {
+async function checkPromotedApps(report) {
+  if (!existsSync(PROMOTED_APPS_FILE)) {
+    report.problems.push('context/promoted_apps.json is missing — the promotion copy cannot be checked');
+    return;
+  }
+  let apps = [];
+  try {
+    apps = (JSON.parse(readFileSync(PROMOTED_APPS_FILE, 'utf8')).apps) || [];
+  } catch (err) {
+    report.problems.push(`context/promoted_apps.json is unreadable (${err.message})`);
+    return;
+  }
+  if (!apps.length) {
+    report.problems.push('context/promoted_apps.json lists no apps — the promotion queue would be empty');
+    return;
+  }
+  for (const app of apps) {
+    for (const task of buildTasksForApp(app)) {
       const inspection = inspectSocialVoice(task.post_content);
       if (!inspection.ok) {
-        report.problems.push(...describeViolations(`generated ${task.id}`, inspection));
+        report.problems.push(...describeViolations(`promotion ${task.id}`, inspection));
       }
-      report.checked.push(`generated ${task.id}`);
+      report.checked.push(`promotion ${task.id}`);
     }
   }
 }
@@ -232,8 +241,8 @@ if (process.argv.includes('--self-test')) {
 const phaseIndex = process.argv.indexOf('--phase');
 const phase = phaseIndex > -1 ? process.argv[phaseIndex + 1] : '';
 
-if (phase === 'generated') {
-  await checkGenerated(report);
+if (phase === 'generated' || phase === 'promotion') {
+  await checkPromotedApps(report);
 } else if (phase === 'authored') {
   await checkAuthored(report);
 } else if (phase === 'articles') {
@@ -241,7 +250,7 @@ if (phase === 'generated') {
 } else {
   await checkAuthored(report);
   await checkArticles(report);
-  await checkGenerated(report);
+  await checkPromotedApps(report);
 }
 
 if (process.argv.includes('--json')) {

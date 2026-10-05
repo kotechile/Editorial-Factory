@@ -65,7 +65,7 @@ One pipeline run moves through three loops, then an approval gate:
             the destination CMS with that image attached.
    │
    ▼  Distribution gate (outbound only)
-[editor] surfaces the LinkedIn / Reddit copy and waits. Nothing goes outbound without
+[editor] surfaces the LinkedIn copy and waits. Nothing goes outbound without
          `@Simon approve`.
    │
    ▼  (on approval)
@@ -140,7 +140,7 @@ the truth, and it does not advise the reader. Each interpreting section carries 
 observer cue ("I've been watching…", "What strikes me here:", "My read:"), and the tactical section
 reports what the people closest to the story are doing instead of issuing a playbook — the signpost
 is `**Where this bites:**` / `**What I'd watch:**`, and the TL;DR's third slot is `**What I'd Watch:**`.
-The same person writes the LinkedIn variant and the Reddit cards. Rule:
+The same person writes the LinkedIn variant and the app-promotion cards. Rule:
 `skills/claude_humanizer.md` §3.8/§3.9; gate: `verify.sh` §9.
 
 Two extras are **not** part of the body: the **TL;DR** is a structured field (never a prose
@@ -263,7 +263,7 @@ Review the published article:
 
 Then either:
 
-- **Approve** — reply `approve` to the `editor` bot. The `publisher` posts the LinkedIn/Reddit copy
+- **Approve** — reply `approve` to the `editor` bot. The `publisher` posts the LinkedIn copy
   and records the live URL.
 - **Request changes** — send feedback; the editor routes it back to `stylist`, and the next
   persistence pass replaces the site copy.
@@ -482,7 +482,7 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 | Validate a draft | `scripts/verify.sh` (config JSON, banned AI-tells, draft schema + citations, sitemap drift, cron cadence **and prompt** parity, synthesis seeding/anchoring) |
 | Gate the repo without a human | Cron job **Editorial Verify Gate** (`0 14 * * *`) runs `scripts/cron-verify-gate.sh`: silent when green, reports `verify.sh` failures and a pressflow image that is behind HEAD |
 | Keep runs off DeepSeek's 2x peak | `python3 scripts/check_offpeak_crons.py` (run by `verify.sh` §7.2): fails if any enabled job that makes a model call fires Mon–Fri 01:00–04:00 or 06:00–10:00 UTC |
-| Distribution to-do cards | Automatic in the publish pass (`scripts/publish.py` → `scripts/seed_distribution.py`); prove coverage with `python3 scripts/seed_distribution.py --check`. Nothing is posted automatically — the cards are copy-paste tasks |
+| App promotion to-do cards | Automatic in the publish pass (`scripts/publish.py` → `scripts/seed_distribution.py`); prove coverage with `python3 scripts/seed_distribution.py --check`. The cards promote the apps in `context/promoted_apps.json` on Reddit + LinkedIn, each naming its recommended subreddit. Nothing is posted automatically — the cards are copy-paste tasks |
 | Reconcile the cron fleet | `python3 scripts/sync_crons.py` (fixes missing/drifted/stale-prompt/orphan jobs), `--check` to test |
 | Read a run's artifacts | `context/recon_proposals/`, `context/drafts/` |
 

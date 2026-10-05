@@ -74,11 +74,12 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
 
 ## 3. Distribution (prep automatic, posting manual)
 - **Preparation is automatic.** The persistence pass ends by seeding the dashboard's Reddit/LinkedIn
-  **to-do cards** for every published article — `scripts/publish.py` calls
+  **app-promotion cards** for every app in `context/promoted_apps.json` — `scripts/publish.py` calls
   `scripts/seed_distribution.py`, which hits the dashboard's idempotent `POST /api/distribution/seed`.
-  It adds cards only for articles that have none, never posts, and never resets a status or an
+  It adds cards only for apps that have none, never posts, and never resets a status or an
   operator's edit. Run it by hand with `python3 scripts/seed_distribution.py` (`--check` to prove
   coverage, `--refresh` to regenerate the text of `ready` cards only, `--dry-run` to see the call).
+  The catalog, not the queue, is where the copy and the recommended subreddits live.
 - **Posting is manual and operator-driven.** Nothing in this repo posts to Reddit; the cards carry
   the finished text plus a pre-filled submit URL, and an operator copies → posts → marks it done in
   the Distribution tab. LinkedIn is the exception where a switch exists: `LINKEDIN_AUTO_POST=false`
@@ -139,7 +140,8 @@ state reopenable.
   `context/distribution_queue.json` (local). In production the Supabase env vars are required —
   the container filesystem is rebuilt on every deploy, so a file-only queue loses the operator's
   marks.
-- Generation lives in `site/distribution.mjs` (deterministic; no model calls). Seeding is
+- Generation lives in `site/distribution.mjs` (deterministic; no model calls) and the promoted-apps
+  catalog in `context/promoted_apps.json` (which apps, which subreddits, the copy). Seeding is
   idempotent: it never resets a status or an edit, and `refresh` only rewrites `ready` text.
 - Never add a task whose text has not been read: the generated framing is a starting point, the
   operator edits and marks it.

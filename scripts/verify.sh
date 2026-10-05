@@ -249,10 +249,9 @@ fi
 #    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated
 #    on/after the cutover for an observer cue, (b) the whole reader-facing body for verdict /
 #    consultant / imperative constructions, (c) the authored `<!-- linkedin -->` block, and (d) the
-#    copy site/distribution.mjs generates for every published article — including reader-directed
-#    article sentences, which the generator now refuses to quote. Node is required because the
-#    formatter and the rules are both JS; the dashboard cannot run without node either, so this
-#    skips only on a host that could not serve PressFlow at all.
+#    promotion copy the to-do queue ships for every promoted app (context/promoted_apps.json).
+#    Node is required because the formatter and the rules are both JS; the dashboard cannot run
+#    without node either, so this skips only on a host that could not serve PressFlow at all.
 if command -v node >/dev/null 2>&1; then
   if ! node "$ROOT/scripts/check_social_voice.mjs" --self-test >/dev/null 2>&1; then
     echo "FAIL: social-voice rule self-test — detail:"
@@ -277,12 +276,16 @@ if command -v node >/dev/null 2>&1; then
     echo "FAIL: public surface — detail:"
     node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8; FAIL=1
   fi
-  # ...and a distribution card must not outlive the article it was seeded from: the queue only ever
-  # added/refreshed, so withdrawing an article left an offer to post it (with its then-reader URL —
-  # the internal dashboard) in the queue. Five withdrawn articles had left 12 such cards.
+  # ...and a promotion card must not outlive the app it was seeded from, nor stop naming the
+  # subreddit it is recommended for: the queue only ever added/refreshed, so withdrawing a source
+  # left an offer to post it (with its then-link — the internal dashboard) in the queue.
   if ! node "$ROOT/scripts/test_distribution_queue.mjs" >/dev/null 2>&1; then
     echo "FAIL: distribution queue lifecycle — detail:"
     node "$ROOT/scripts/test_distribution_queue.mjs" 2>&1 | tail -8; FAIL=1
+  fi
+  if ! node "$ROOT/scripts/test_distribution_apps.mjs" >/dev/null 2>&1; then
+    echo "FAIL: app-promotion cards — detail:"
+    node "$ROOT/scripts/test_distribution_apps.mjs" 2>&1 | tail -8; FAIL=1
   fi
 else
   echo "  skip: public-surface gate (node not on PATH)"
