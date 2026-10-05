@@ -117,6 +117,12 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
   gate that keeps that true (`verify.sh` §10), and every response carries `X-Robots-Tag: noindex`.
 - Never re-introduce a `POST`/`DELETE` handler above the access-control check at the top of the
   request handler — the check runs before every route.
+- **`publish.py`'s auto-deploy is `git add -A`.** It commits and pushes whatever else is uncommitted in
+  the tree — including a half-finished edit — so a bundled in-flight change can turn `main` red under an
+  otherwise clean publish (an evergreen auto-deploy shipped a partially-edited `wp_draft.py` and left a
+  stale static assertion in `test_wp_draft.py`, which `verify.sh` then fails). When the tree carries
+  unrelated WIP, pass `--no-deploy` and let a human push; if a bundle did go out, run
+  `bash scripts/verify.sh` and fix or revert the stray edit before reporting the publish green.
 - A deployment only contains **committed** files (Coolify clones git). A draft that was never
   committed is invisible to the dashboard even after a redeploy, so "the site is stale" usually
   means "the artifact was never committed", not "the deploy failed".
