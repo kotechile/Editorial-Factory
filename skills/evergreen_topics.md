@@ -120,6 +120,14 @@ months" or "6 months"; `at least six months — …` generates no pattern at all
 `figure_absent`). Lead the cell with the figure, then the gloss, and never bury it after prose —
 the same row that fails this way will pass once the figure moves to the front.
 
+**A multi-token figure can verify on the wrong number.** `citation_hub_dossier.figure_evidence`
+returns evidence as soon as *any* numeric token in the cell appears in the fetched page, so a range
+written `8% to 15%` will "verify" on a bare `8` the source never tied to the claim (observed: the
+phrase was absent from both cited pages entirely, and a lone `8` elsewhere on the page passed it).
+Lead the cell with the one distinctive figure the source actually states (e.g. `20% to 30%`), and
+eye-check that the *phrase* — not a coincidental single digit — is on the page. A figure that
+verifies this way ships a claim the source never made.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
