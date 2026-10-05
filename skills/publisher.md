@@ -123,6 +123,19 @@ gate only the **outbound distribution** (LinkedIn / Ghost / Reddit) behind `@Sim
 - `context/published_log.md` may only list files that exist in `published/`. The filesystem is the
   source of truth; the log is a record of it. A row for a file that is still in `context/drafts/`
   is a false "published" claim.
+- **The reader sites are static builds, so a CMS change is not live until the frontend rebuilds.**
+  `giniloh.com` / `wellroost.com` (Coolify apps `c6sm5gz59a3jnrjg1ouahfp7` / `mln99jwbwspi62huuifloxla`,
+  repos `kotechile/giniloh` / `kotechile/wellroost`) fetch every post from the `cms.` host at BUILD
+  time (`PUBLIC_WORDPRESS_API_BASE`, `ARG CACHEBUST=1`); the deployed container is a folder of HTML.
+  A post trashed or deleted in WordPress therefore keeps answering, keeps its sitemap entry and keeps
+  every inbound internal link alive until the next build — `scripts/build_internal_link_index.py
+  --check` is what catches that drift (it failed on the 10-05 removal until the index was rebuilt).
+  The redirect is the WordPress mu-plugin, not this repo: `wellroost-coolify-redeploy.php` /
+  `giniloh-coolify-redeploy.php` fire `POST /api/v1/deploy {"uuid":…,"force":true}` on the Coolify API
+  (`https://coolify.giniloh.com`). Since 2026-10-05 they also fire when a post LEAVES publish, is
+  permanently deleted, or has a published post edited (debounced 10 min) — before that only a
+  transition INTO publish rebuilt, so a removal was silent. Trigger one by hand whenever a CMS change
+  must reach readers immediately; `GET /api/v1/deploy` is gone, it is a POST (see `docs/VPS_WIRING.md`).
 - `site/index.html` is one inline script: a duplicate identifier at the top level is a parse-time
   `SyntaxError` that silently disables *every* handler while the page still returns 200. Grep for an
   identifier before adding a helper, and verify dashboard changes with

@@ -1,30 +1,35 @@
-# Internal-link candidates — 2026-10-03T14:22:11+00:00
+# Internal-link candidates — 2026-10-05T14:28:07+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
-## giniloh.com — 38 live article(s), 20 other target(s)
+## giniloh.com — 46 live article(s), 21 other target(s)
 
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
+- [Almost Half of 3D Prints Fail: The Real Cost of the Hobby](https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/) — Money & Wealth
 - [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — Mental Models & Strategy
 - [Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System](https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/) — Money & Wealth
 - [CFOs Are Pricing In the Tariff Cliff](https://giniloh.com/tariff-cliff-already-priced-in/) — Supply Chain & Operations
 - [Calculate Your Career Relocation Payback](https://giniloh.com/calculate-your-career-relocation-payback/) — Mental Models & Strategy
+- [CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor’s Spreadsheet:](https://giniloh.com/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/) — Business Automation & Operations
 - [Coast-to-Coast Rail Merger Clears First Big Test](https://giniloh.com/up-ns-rail-merger-clears-summary-denial/) — Supply Chain & Operations
 - [Disney+ and Hulu Just Raised Prices 13% — Right After Doubling Profits](https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/) — Money & Wealth
 - [Ebike Costs: Per-Use Calculator for Commuters](https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/) — Major Purchases & Assets
 - [Electric Trucks Just Doubled Overnight — and the Battery Wasn’t the Reason](https://giniloh.com/zet-scale-ev-truck-residual-value-risk/) — Supply Chain & Operations
 - [Expats: Evaluating the True Value of a Job-Driven Move overseas](https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/) — Mental Models & Strategy
+- [FacturGate: The Deterministic Pre-Send Gate & Converter for European E-Invoicing (EN 16931)](https://giniloh.com/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/) — Business Automation & Operations
 - [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — Money & Wealth
 - [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — Major Purchases & Assets
 - [Jobs Switch Calculator: Step-by-Step Profit Guide](https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/) — Mental Models & Strategy
 - [Lease Break Calculator: Save $1,850 in 3 Steps](https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/) — Mental Models & Strategy
 - [MCP Skills Extension: Standardizing Agent Workflows](https://giniloh.com/mcp-skills-extension/) — Autonomous & Agentic Workflows:
+- [Moss Landing Burns Again: Homeowners Become the Grid](https://giniloh.com/moss-landing-burns-again-homeowners-become-the-grid/) — Money & Wealth
 - [Multi Agent Orchestration: Building the One-Person Enterprise](https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO
 - [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — Major Purchases & Assets
 - [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — Mental Models & Strategy
 - [Nvidia says its GPUs aren’t sold out. Its CFO’s $279 billion memory bet says otherwise.](https://giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO
 - [OpenAI just made the agent loop a commodity](https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/) — AI Stack & Tool TCO
 - [OpenAI’s custom chip beats Nvidia on power](https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/) — AI Stack & Tool TCO
+- [ParcelProof: Stop Bleeding 2–8% on Carrier Invoices](https://giniloh.com/parcelproof-stop-bleeding-28-on-carrier-invoices/) — Business Automation & Operations
 - [Planner-as-Router: Fold the Model Choice Into the Plan](https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/) — Autonomous & Agentic Workflows:
 - [Planning AI Buys Capability, Not Autonomy](https://giniloh.com/planning-ai-buys-capability-not-autonomy/) — Supply Chain & Operations
 - [Replace Laptop Screen? Let This Decision Engine Do the Math](https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/) — Major Purchases & Assets
@@ -33,10 +38,13 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Simulate a Frictionless Liquidity Sweep in Giniloh](https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/) — Money & Wealth
 - [Smart Ways to Invest an Extra $500 a Day](https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/) — Money & Wealth
 - [Stop Piling Memory Onto AI Agents: Optimize Skills](https://giniloh.com/maskills-multi-agent-skills-optimization/) — Autonomous & Agentic Workflows:
+- [Stripe Accounting Software: Solving the Payout Black Box with LedgerLink](https://giniloh.com/stripe-accounting-software-solving-the-payout-black-box-with/) — Business Automation & Operations
 - [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://giniloh.com/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO
 - [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO
 - [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — Money & Wealth
 - [The Same-Day Delivery Race Is Undoing a Decade of Route Optimization](https://giniloh.com/same-day-race-undoes-route-optimization/) — Supply Chain & Operations
+- [The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost](https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — Supply Chain & Operations
+- [The Tariff Split in Two — Reshoring Took the Heavy Half](https://giniloh.com/tariff-split-reshoring-heavy-half/) — Supply Chain & Operations
 - [Token Prices Just Halved. The CFO Still Can’t Read the Bill.](https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/) — AI Stack & Tool TCO
 - [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — Money & Wealth
 - [Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.](https://giniloh.com/goods-tariff-relief-vs-vessel-fee/) — Supply Chain & Operations
@@ -45,6 +53,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Ai Stack Tool Tco (category)](https://giniloh.com/categories/ai-stack-tool-tco/) — —
 - [Artificial Intelligence Future Of Work (category)](https://giniloh.com/categories/artificial-intelligence-future-of-work/) — —
 - [Autonomous Agentic Workflows (category)](https://giniloh.com/categories/autonomous-agentic-workflows/) — —
+- [Business Automation Operations (category)](https://giniloh.com/categories/business-automation-operations/) — —
 - [Career Ai Resilience (category)](https://giniloh.com/categories/career-ai-resilience/) — —
 - [Career Ai Resilience calculator (calculator)](https://giniloh.com/calculators/career-ai-resilience/) — —
 - [Coffee Arbitrage calculator (calculator)](https://giniloh.com/calculators/coffee-arbitrage/) — —
@@ -63,12 +72,16 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Tech Debt Repair calculator (calculator)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Total Comp calculator (calculator)](https://giniloh.com/calculators/total-comp/) — —
 
-## wellroost.com — 6 live article(s), 8 other target(s)
+## wellroost.com — 10 live article(s), 8 other target(s)
 
+- [A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying ‘Cloud.](https://wellroost.com/cloud-update-bricked-the-fridge-local-first/) — Smart Home & Security
 - [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
+- [Borrow at 8% to remodel, or let your battery earn on the grid](https://wellroost.com/heloc-at-8-vs-battery-that-earns/) — Energy & Efficiency
 - [California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy](https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/) — Energy & Efficiency
+- [California Legalizes Plug-In Home Solar Panels](https://wellroost.com/california-legalizes-plug-in-solar/) — Energy & Efficiency
 - [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
-- [Moss Landing Burns Again: Homeowners Become the Grid](https://wellroost.com/moss-landing-burns-again-homeowners-become-the-grid/) — Energy & Efficiency
+- [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency, Home Cost Decisions
+- [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
 - [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
