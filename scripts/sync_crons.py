@@ -177,10 +177,11 @@ def prompt_for(v):
         f"the Judge. When the article clears verification and the frontier rewrite, PERSIST it in the "
         f"same run — `python3 scripts/publish.py context/drafts/<slug>_final.md` writes published/, the "
         f"published log, Supabase and the sitemap, then flip the run-log row in "
-        f"context/content_calendar.md. Persistence to the reader site + Supabase is NOT approval-gated. "
-        f"Only outbound distribution (LinkedIn / Ghost / Reddit) waits for the @Simon approve gate — "
-        f"surface the LinkedIn/Reddit copy and halt there. Write artifacts to context/recon_proposals/ "
-        f"and context/drafts/."
+        f"context/content_calendar.md. Persistence to the reader site (giniloh.com / wellroost.com, "
+        f"via the CMS) + Supabase is NOT approval-gated, and the CMS draft push is part of the same "
+        f"pass. There is no social distribution step: the LinkedIn and Reddit channels were removed "
+        f"by the owner on 2026-10-06, so write no LinkedIn/Reddit copy and queue nothing. Write "
+        f"artifacts to context/recon_proposals/ and context/drafts/."
     )
 
 
@@ -217,9 +218,9 @@ def evergreen_prompt_for(v):
         f"clears verification and the frontier rewrite, PERSIST it in the same run — `python3 "
         f"scripts/publish.py context/drafts/<slug>_final.md` writes published/, the published log, "
         f"Supabase and the sitemap, then flip the run-log row in context/content_calendar.md. "
-        f"Persistence to the reader site + Supabase is NOT approval-gated. Only outbound "
-        f"distribution (LinkedIn / Ghost / Reddit) waits for the @Simon approve gate — surface the "
-        f"LinkedIn/Reddit copy and halt there. The draft must carry `archetype: evergreen` and "
+        f"Persistence to the reader site + Supabase is NOT approval-gated, and there is no social "
+        f"distribution step (the LinkedIn and Reddit channels were removed by the owner on "
+        f"2026-10-06). The draft must carry `archetype: evergreen` and "
         f"`evergreen: true` in its frontmatter. Write artifacts to context/recon_proposals/ and "
         f"context/drafts/."
     )

@@ -106,12 +106,6 @@ async function syncArticle(item) {
   const vertical = fm.vertical || 'general';
   const status = item.type === 'published' ? 'published' : 'draft';
 
-  // Extract linkedin post if present
-  let linkedin = '';
-  if (markdown.includes('<!-- linkedin -->')) {
-    linkedin = markdown.split('<!-- linkedin -->')[1].trim();
-  }
-
   const seoMetadata = {
     primary_keyword: fm.primary_keyword || null,
     secondary_keywords: Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [],
@@ -130,7 +124,6 @@ async function syncArticle(item) {
     file: item.file,
     targets: item.type === 'published' ? ['published/'] : ['context/drafts/'],
     seo: seoMetadata,
-    linkedin_post: linkedin,
   };
 
   const payload = {

@@ -37,9 +37,11 @@ slug: "YYYY-MM-DD_<slug>"
 - `<!-- nuanced-takeaway -->`: `## The catch` H2 header + the honest catch, limitation, or counter-argument.
 - `<!-- tldr -->`: `## At a glance` H2 header + 4-part structured breakdown (**The Big Shift**, **Why It Matters**, **The Winning Moves** / **What I'd Watch** with sub-bullet definitions, and **The Fine Print** in plain English), distinctly separated from "The catch".
 
-### C. Citations & Social Variants
+### C. Citations
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.
-- `<!-- linkedin -->`: ~1,300-char LinkedIn post summarizing the contrarian angle.
+
+No social variant: the LinkedIn/Reddit channel was removed on 2026-10-06, so a `<!-- linkedin -->`
+block is neither required nor wanted.
 
 ### D. Machine-Readable SEO Blocks (at document end)
 - `<!-- schema -->`: JSON-LD schema block featuring `@type: "Article"` and `@type: "FAQPage"`.

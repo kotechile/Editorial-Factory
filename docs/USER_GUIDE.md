@@ -3,7 +3,7 @@
 The Editorial Factory is an **autonomous content-intelligence engine**. It finds the most
 compelling developments from the **last 30 days** in a set of topic areas ("verticals"),
 verifies them against primary sources, and writes trustworthy, human-voice articles — with the
-final polish always done by a frontier model (Claude, via kie.ai). Output is ready for LinkedIn
+final polish always done by a frontier model (Claude, via kie.ai). Output is ready for its reader sites
 or a website.
 
 It is the editorial twin of the Software Factory (`kotechile/factory`): same agentic workforce
@@ -64,12 +64,10 @@ One pipeline run moves through three loops, then an approval gate:
             article's featured image here (see "Featured images" below) and creates the draft in
             the destination CMS with that image attached.
    │
-   ▼  Distribution gate (outbound only)
-[editor] surfaces the LinkedIn copy and waits. Nothing goes outbound without
-         `@Simon approve`.
-   │
-   ▼  (on approval)
-[publisher] posts to LinkedIn / Ghost and records the live URL.
+   ▼  Destinations
+[publisher] the article is on the reader site, and the CMS draft is created in the same pass.
+            There is no social distribution step — the LinkedIn/Reddit channel was removed
+            2026-10-06.
 ```
 
 The full instructions live in `skills/*.md` (the SOPs) and the personas in `.agents/*.md`.
@@ -140,12 +138,11 @@ the truth, and it does not advise the reader. Each interpreting section carries 
 observer cue ("I've been watching…", "What strikes me here:", "My read:"), and the tactical section
 reports what the people closest to the story are doing instead of issuing a playbook — the signpost
 is `**Where this bites:**` / `**What I'd watch:**`, and the TL;DR's third slot is `**What I'd Watch:**`.
-The same person writes the LinkedIn variant and the app-promotion cards. Rule:
-`skills/claude_humanizer.md` §3.8/§3.9; gate: `verify.sh` §9.
+Rule: `skills/claude_humanizer.md` §3.9; gate: `verify.sh` §9. There is no social variant —
+the LinkedIn/Reddit channel (and the copy that fed it) was removed on 2026-10-06.
 
 Two extras are **not** part of the body: the **TL;DR** is a structured field (never a prose
 "in conclusion"), and the **TOC** is derived by the site at render time (never written by a bot).
-The LinkedIn post is a separate ~1,300-char variant built from the same skeleton.
 
 ---
 
@@ -245,32 +242,32 @@ fleet ever disagree, `scripts/verify.sh` fails; reconcile with `python3 scripts/
 On schedule, the cron fires and the `editor` bot drives the pipeline for that vertical. You do
 nothing for the scouting, judging, verifying, and drafting stages — they run automatically.
 
-### 4.2 Your one job: the distribution gate
+### 4.2 Your one job: the CMS draft → publish flip
 
-The pipeline persists every finished article to the reader site + Supabase on its own — that step is
-**not** gated. What waits for you is **outbound distribution** (LinkedIn / Ghost / Reddit).
+The pipeline persists every finished article on its own — `published/`, the Supabase row, the
+sitemap, the run-log row and the CMS draft — and that step is **not** gated and has nothing waiting
+for you.
 
-Review the published article:
+What is left for you is the CMS: the draft the pipeline creates for the article's vertical
+(`scripts/wp_draft.py` → giniloh.com / wellroost.com) sits in WordPress as a draft. Read it, fix
+what you want, and publish it there; the frontend rebuilds from the CMS, and that is the moment the
+piece is public.
+
+Review the article:
 
 - **In the dashboard:** the article library, or Profiles → `editor` → its chat (or the Sessions page), or
-- **On disk / live:** `published/YYYY-MM-DD_<slug>.md` (source: `context/drafts/<slug>_final.md`).
+- **On disk:** `published/YYYY-MM-DD_<slug>.md` (source: `context/drafts/<slug>_final.md`).
 
-  That page is the **internal** review copy behind the dashboard login — PressFlow is not a reader
-  surface. The article becomes public only when it is published on its own site
-  (`giniloh.com` / `wellroost.com`, routed per vertical); `context/sitemap.json` records each
-  article's real reader URL once it is live there, and `published_log.md`'s Reader URL column is
-  filled in with it at that point.
+  That is the **internal** review copy behind the dashboard login — PressFlow is not a reader
+  surface. The article becomes public when its CMS draft is published there;
+  `context/sitemap.json` records each article's real reader URL, and `published_log.md`'s Reader URL
+  column is filled in with it at that point.
 
-Then either:
+If the copy is wrong, send the feedback to the `editor` bot: it routes the critique back to
+`stylist`, and the next persistence pass replaces the artifact.
 
-- **Approve** — reply `approve` to the `editor` bot. The `publisher` posts the LinkedIn copy
-  and records the live URL.
-- **Request changes** — send feedback; the editor routes it back to `stylist`, and the next
-  persistence pass replaces the site copy.
-
-> The gate is named `@Simon approve` in the personas (inherited from the Software Factory). If
-> you wire the `editor` bot to Slack, "`@Simon approve`" in a Slack thread becomes the approval
-> channel; today the approval happens in the dashboard's editor-bot chat.
+> There is no distribution gate any more. The LinkedIn and Reddit channel was removed by the owner
+> on 2026-10-06 (see §4.4), so no run waits on `@Simon approve` to put anything anywhere.
 
 ### 4.3 Where the output lands
 
@@ -299,37 +296,34 @@ end-to-end, so you never have to guess:
   Every article cites multiple sources, so read the badge/flag — not the source count — as the
   fusion marker.
 
-### 4.4 Publishing to LinkedIn / a website
+### 4.4 Publishing an article (reader sites + CMS)
 
-Approved articles land in `published/` automatically and are renderable by the bundled static
-reader (`site/`, deployable via Coolify).
+Articles land in `published/` automatically and the same pass creates the draft in the CMS their
+vertical maps to (`giniloh.com` / `wellroost.com`). The bundled static reader under `site/` is the
+**internal** dashboard surface (behind the login), not a reader site.
 
-#### Embedding External Illustrated Articles & Software Factory Tools
-When the article is generated, styled with illustrations in PressFlow/Ghost/external CMS, and you want the LinkedIn post to drive traffic to that live page or cross-promote a software factory tool:
+#### External illustrated article & software-factory tool links
+When the long-form article also lives somewhere else — an illustrated page in the CMS, an external
+blog, a tool from the Software Factory — pass those URLs so they are recorded on the article's row:
 
 ```bash
 # 1. Supply URLs via CLI arguments:
 python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md \
-  --article-url "https://pressflow.example.com/posts/my-article-with-illustrations" \
-  --promo-url "https://factory.example.com/tools/agent-security-scanner"
+  --article-url "https://giniloh.com/<slug>" \
+  --promo-url "https://apps.giniloh.com/<tool>"
 
 # 2. Or run interactively (will prompt for URLs):
 python3 scripts/publish.py --interactive context/drafts/YYYY-MM-DD_<slug>_final.md
 
 # 3. Or specify in the draft frontmatter:
-# article_url: "https://pressflow.example.com/..."
-# promo_url: "https://factory.example.com/tools/..."
+# article_url: "https://giniloh.com/..."
+# promo_url: "https://apps.giniloh.com/..."
 ```
 
-The publisher automatically embeds the links into the LinkedIn post with clean call-to-actions:
-```text
-📖 Read the full illustrated breakdown: https://pressflow.example.com/...
-🛠️ Try the live tool: https://factory.example.com/...
-```
-
-#### LinkedIn Switch (`LINKEDIN_AUTO_POST`)
-- **`LINKEDIN_AUTO_POST=false` (default / review mode):** Outputs the complete formatted post with all embedded links ready to copy-paste into LinkedIn.
-- **`LINKEDIN_AUTO_POST=true` (automated mode):** When `LINKEDIN_ACCESS_TOKEN` is set, dispatches the post with link attachments directly via the LinkedIn API.
+There is **no LinkedIn/Reddit post** to go with it. That channel — the dashboard's Distribution tab,
+the app-promotion cards, the `LINKEDIN_AUTO_POST` switch — was removed by the owner on 2026-10-06.
+The publisher writes the article, the log row, the Supabase row, the featured image and the CMS
+draft, and posts nowhere.
 
 ### 4.5 Demand-Led SEO Content Machine (Growth OS)
 
@@ -478,11 +472,10 @@ When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set in `.env`:
 | See the bots | Dashboard **Profiles**, or `hermes profile list` |
 | See the schedules | Dashboard **Cron**, or `hermes cron list` |
 | Health-check the jobs | `hermes cron doctor` |
-| Run one vertical now | `hermes -p editor chat -q "Run the full editorial pipeline for vertical 'agentic_ai' per skills/*.md. Persist to the site + Supabase, then stop at the distribution gate."` |
+| Run one vertical now | `hermes -p editor chat -q "Run the full editorial pipeline for vertical 'agentic_ai' per skills/*.md. Persist to the site + Supabase and create the CMS draft."` |
 | Validate a draft | `scripts/verify.sh` (config JSON, banned AI-tells, draft schema + citations, sitemap drift, cron cadence **and prompt** parity, synthesis seeding/anchoring) |
 | Gate the repo without a human | Cron job **Editorial Verify Gate** (`0 14 * * *`) runs `scripts/cron-verify-gate.sh`: silent when green, reports `verify.sh` failures and a pressflow image that is behind HEAD |
 | Keep runs off DeepSeek's 2x peak | `python3 scripts/check_offpeak_crons.py` (run by `verify.sh` §7.2): fails if any enabled job that makes a model call fires Mon–Fri 01:00–04:00 or 06:00–10:00 UTC |
-| App promotion to-do cards | Automatic in the publish pass (`scripts/publish.py` → `scripts/seed_distribution.py`); prove coverage with `python3 scripts/seed_distribution.py --check`. The cards promote the apps in `context/promoted_apps.json` on Reddit + LinkedIn, each naming its recommended subreddit. Nothing is posted automatically — the cards are copy-paste tasks |
 | Reconcile the cron fleet | `python3 scripts/sync_crons.py` (fixes missing/drifted/stale-prompt/orphan jobs), `--check` to test |
 | Read a run's artifacts | `context/recon_proposals/`, `context/drafts/` |
 
@@ -519,5 +512,5 @@ docs/          this guide + VPS_WIRING.md (deployment details)
 
 - **Live:** 7 bot profiles, 5 cron jobs, config-driven verticals, the reader site, the approval
   gate, and Claude-via-kie.ai routing.
-- **Pending your input:** LinkedIn/Ghost publishing keys, Supabase persistence tables, and a
+- **Pending your input:** CMS credentials, Supabase persistence tables, and a
   Slack channel for the `editor` bot if you want `@Simon approve` to flow through Slack.

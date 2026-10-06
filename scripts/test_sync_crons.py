@@ -78,11 +78,15 @@ class PromptTemplate(unittest.TestCase):
 
     def test_instruction_keeps_the_safety_rails(self):
         prompt = sc.prompt_for({"id": "agentic_ai", "label": "Agentic"})
-        self.assertIn("@Simon approve", prompt)
         self.assertIn("NOT approval-gated", prompt)     # site + Supabase persist in the run
-        self.assertIn("outbound distribution", prompt)  # only distribution waits for the gate
+        self.assertIn("There is no social distribution step", prompt)  # channel removed 2026-10-06
         self.assertIn("never scores", prompt)           # the helper cannot clear the >=8 gate
         self.assertIn("no valid pair", prompt)          # a legitimate outcome, not a failure
+        # No gate, and no social copy to surface: the LinkedIn/Reddit channel was removed, so a
+        # prompt that still asks the run to stop and wait would dead-end every article.
+        self.assertNotIn("@Simon approve", prompt)
+        self.assertNotIn("surface the LinkedIn", prompt)
+        self.assertIn("reader site (giniloh.com / wellroost.com", prompt)
 
     def test_instruction_is_vertical_specific(self):
         prompt = sc.prompt_for({"id": "expat_cross_border_relocation", "label": "Expat"})
@@ -116,9 +120,10 @@ class EvergreenPromptTemplate(unittest.TestCase):
 
     def test_instruction_keeps_the_persistence_rules(self):
         prompt = sc.evergreen_prompt_for({"id": "agentic_ai", "label": "Agentic"})
-        self.assertIn("@Simon approve", prompt)
         self.assertIn("NOT approval-gated", prompt)
-        self.assertIn("outbound distribution", prompt)
+        self.assertIn("there is no social", prompt)
+        self.assertNotIn("@Simon approve", prompt)
+        self.assertNotIn("surface the", prompt)
 
     def test_instruction_is_vertical_specific(self):
         prompt = sc.evergreen_prompt_for({"id": "gpu_hardware", "label": "GPUs"})

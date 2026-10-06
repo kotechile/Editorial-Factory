@@ -18,10 +18,11 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
    - **Tactical insight** — what the people closest to the story are doing, what the consequences land on, and the next signals to watch. Signpost it **Where this bites:** / **What I'd watch:**. Reported, never prescribed: this section is no longer a playbook (see `skills/claude_humanizer.md` §3.9).
    - **Nuanced takeaway** — the honest limitation or counter-argument, labelled as the writer's own reading.
    - **TL;DR (At a Glance)** — 4-part Smart Brevity breakdown: **The Big Shift / What Happened** (explains what the article is about in plain English), **Why It Matters** (systemic/cost stakes), **What I'd Watch** (with indented sub-bullet definitions for each item), and **The Catch** (upfront design, security/access controls, and caveats).
-   - **Observer voice** — the body is a comment on the news, not a verdict: a first-person observer cue in each interpreting section (tension / tactical / nuanced takeaway), opinion labelled as opinion, and no verdict/consultant/imperative constructions (`skills/claude_humanizer.md` §3.8/§3.9, enforced by `verify.sh` §9).
+   - **Observer voice** — the body is a comment on the news, not a verdict: a first-person observer cue in each interpreting section (tension / tactical / nuanced takeaway), opinion labelled as opinion, and no verdict/consultant/imperative constructions (`skills/claude_humanizer.md` §3.9, enforced by `verify.sh` §9).
 2. Write to the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
 3. Cite inline: every claim carries a source marker `[1]`, `[2]` mapping to a source list at the end. Do not introduce uncited assertions.
-4. Produce two lengths from the same skeleton: a long-form article and a ~1,300-character LinkedIn post.
+4. Produce one length: the long-form article. No LinkedIn/social variant — that channel was
+   removed on 2026-10-06.
 5. Mark anything you could not substantiate from the brief as `[NEEDS-SOURCE]` for the verifier — never fill the gap with invention.
 
 ## Interaction contract
@@ -29,7 +30,7 @@ VERIFIED evidence set — no new facts, no filler. Prepare the structured materi
 - Keep every paragraph traceable to the brief. If it isn't in the brief, it doesn't go in the draft.
 
 ## Outputs
-- `context/drafts/YYYY-MM-DD_<slug>_draft.md` (long-form + LinkedIn variant).
+- `context/drafts/YYYY-MM-DD_<slug>_draft.md` (long-form).
 
 ## Boundaries
 - No new facts beyond the verified brief.

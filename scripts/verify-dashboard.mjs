@@ -15,8 +15,7 @@
  * (the sibling software-factory-core repo ships one):
  *   PLAYWRIGHT_PATH=/root/software-factory-core/node_modules/playwright
  *
- * Exits non-zero on: console/page errors, missing Distribution tab, wrong card counts, or a
- * failing status round-trip.
+ * Exits non-zero on: console/page errors, a missing tab, or a failed surface assertion.
  */
 import { createRequire } from 'node:module';
 import { readFileSync } from 'node:fs';
@@ -53,39 +52,18 @@ try {
   await page.waitForTimeout(4000); // let boot() finish (it opens the newest article and re-tabs)
   check((await page.title()).includes('PressFlow'), 'dashboard loads', await page.title());
 
-  await page.click('[data-tab="tab-distribution"]');
-  await page.locator('#distGrid').waitFor({ state: 'visible', timeout: 15000 });
+  // The README/verify.sh removal of the LinkedIn/Reddit channel is what this pins: no
+  // Distribution tab, no distribution API, and the remaining channel-copy cards still render.
+  // The API check goes through the browser context's request API (not `fetch` inside the page):
+  // a 404 logged by the page would trip the "no console errors" check below.
+  check(await page.locator('[data-tab="tab-distribution"]').count() === 0, 'no Distribution tab');
+  const distApi = (await page.request.get(`${BASE}/api/distribution/tasks`)).status();
+  check(distApi === 404, 'distribution API is gone', `HTTP ${distApi}`);
+  await page.click('[data-tab="tab-suite"]');
   await page.waitForTimeout(1500);
-
-  const empty = await page.locator('#distGrid .clean-white-card').count();
-  if (empty === 0) {
-    console.log('· queue is empty — running “Generate from published” first');
-    await page.click('#distSeedBtn');
-    await page.waitForTimeout(6000);
-  }
-
-  const cards = await page.locator('#distGrid .clean-white-card').count();
-  check(cards > 0, 'distribution cards render', `${cards} card(s)`);
-  const badge = await page.textContent('#distStorageBadge');
-  check(/Supabase|Local file/.test(badge), 'storage badge reports the backend', badge);
-
-  const api = await page.evaluate(async () => {
-    const r = await fetch('/api/distribution/tasks', { credentials: 'same-origin' });
-    const d = await r.json();
-    return { status: r.status, total: d.total, storage: d.storage, counts: d.counts };
-  });
-  check(api.status === 200 && api.total > 0, 'queue API responds', `total=${api.total} storage=${api.storage}`);
-
-  // status round-trip through the UI, left clean afterwards
-  const first = page.locator('#distGrid .clean-white-card').first();
-  await first.locator('button[data-action="deleted"]').click();
-  await page.waitForTimeout(2000);
-  const afterDelete = await page.evaluate(async () => (await (await fetch('/api/distribution/tasks?status=deleted', { credentials: 'same-origin' })).json()).tasks.length);
-  check(afterDelete > 0, 'mark deleted persists', `deleted=${afterDelete}`);
-  await page.locator('#distGrid .clean-white-card button[data-action="ready"]').first().click();
-  await page.waitForTimeout(2000);
-  const afterReopen = await page.evaluate(async () => (await (await fetch('/api/distribution/tasks?status=deleted', { credentials: 'same-origin' })).json()).tasks.length);
-  check(afterReopen === 0, 'reopen as ready persists', `deleted=${afterReopen}`);
+  check(await page.locator('#twitterPreviewBox').count() === 1
+    && await page.locator('#newsletterPreviewBox').count() === 1, 'channel copy renders (X + newsletter)');
+  check(await page.locator('#linkedInPreviewBox').count() === 0, 'no LinkedIn card in the suite');
 
   // Reader-facing synthesis surface: the flag + anchors in the public manifest, the badge on the
   // article page. A synthesis article that ships unmarked is exactly what verify.sh §8 prevents in
@@ -111,21 +89,6 @@ try {
       await reader.title());
     await reader.close();
   }
-  // Voice of the copy the operator actually posts: every ready card must read as the same observer
-  // commenting on the news (skills/claude_humanizer.md §3.8), not as the owner of the truth.
-  const voice = await page.evaluate(async () => {
-    const r = await fetch('/api/distribution/tasks', { credentials: 'same-origin' });
-    const d = await r.json();
-    return (d.tasks || []).filter((t) => t.status === 'ready')
-      .map((t) => ({ id: t.id, text: t.post_content || '' }));
-  });
-  const { inspectSocialVoice, describeViolations } = await import('../site/social_voice.mjs');
-  const voiceFailures = voice.flatMap((card) => {
-    const result = inspectSocialVoice(card.text);
-    return result.ok ? [] : describeViolations(`card ${card.id}`, result);
-  });
-  check(voice.length > 0, 'ready cards are postable copy', `${voice.length} ready card(s)`);
-  check(voiceFailures.length === 0, 'ready cards speak in the observer voice', voiceFailures[0] || '');
 } catch (err) {
   check(false, 'dashboard verification ran', err.message.split('\n')[0]);
 } finally {

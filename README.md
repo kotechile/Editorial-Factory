@@ -1,7 +1,7 @@
 # Editorial Factory — Autonomous Content Intelligence & Editorial Engine
 
 A Hermes-native, multi-agent editorial pipeline that turns the last 30 days of signals in a
-chosen vertical into **trustworthy, human-voice articles** ready for LinkedIn or a website.
+chosen vertical into **trustworthy, human-voice articles** ready for its reader sites.
 
 It is the editorial twin of [`kotechile/factory`](https://github.com/kotechile/factory): same
 agentic workforce pattern (bot fleet + skills + shared context + cron + approval gate), but the
@@ -32,8 +32,8 @@ output is published articles instead of micro-SaaS products.
 [Claude Stylist]       Loop 3 — frontier rewrite + critic read-back until human-voice gate passes
         │
         ▼
-[Publisher]            persist → published/ + Supabase + sitemap (no gate)
-                       "@Simon approve" → LinkedIn / Ghost / Reddit distribution
+[Publisher]            persist → published/ + Supabase + sitemap + CMS draft (no gate)
+                       (no social distribution — the LinkedIn/Reddit channel was removed 2026-10-06)
 ```
 
 ### Engine 2: SEO Content Machine (Growth OS)
@@ -88,14 +88,14 @@ its cron job rather than leaving a half-configured pipeline behind.
 
 | Role | Bot profile | Duty | Model tier |
 |---|---|---|---|
-| Editor-in-Chief | `editor` | orchestration, calendar, distribution gate | orchestrator |
+| Editor-in-Chief | `editor` | orchestration, calendar, run-log | orchestrator |
 | SEO Scout | `seo_scout` | GSC query detection, DataForSEO enrichment, cannibalization audit | fast |
 | Radar Scout | `radar` | 30-day sweep per vertical | fast |
 | Virality Judge | `judge` | score single signals + cross-pollination pairs; drop < 8 | fast |
 | Fact Verifier | `verifier` | claim extraction + primary-source validation | mid |
 | Story Drafter | `drafter` | structural first pass & SEO schema markup | mid |
 | Claude Stylist & Critic | `stylist` | frontier human-voice rewrite | **Claude (frontier)** |
-| Publisher | `publisher` | persistence + LinkedIn/Ghost | light |
+| Publisher | `publisher` | persistence + CMS draft | light |
 
 ## Repository layout
 
@@ -134,42 +134,29 @@ scripts/cron-seo-pipeline.sh    # SEO Content Machine
 scripts/verify.sh
 ```
 
-## App promotion to-do (Reddit & LinkedIn, no platform APIs)
+## Removed: the LinkedIn / Reddit distribution channel (2026-10-06)
 
-The **📣 Distribution** tab in the PressFlow dashboard (`site/index.html`) is the promotion to-do
-list for the software factory's live apps, defined in `context/promoted_apps.json`. There is no
-Reddit API in play: every item carries the finished text plus a pre-filled submit URL, and the
-operator copies → posts → marks it.
+The desk used to hold a **📣 Distribution** tab in the PressFlow dashboard: promotion cards for the
+software factory's live apps, each carrying finished Reddit/LinkedIn copy and a pre-filled submit
+URL, with a seeding pass wired into `scripts/publish.py`, a `linkedin_posts` Supabase write path, a
+`LINKEDIN_AUTO_POST` switch and an `@Simon approve` gate in front of it all. The owner removed that
+channel on 2026-10-06 — nothing in it had ever been posted.
 
-- **One card per place to post.** Each promoted app yields one Reddit card per recommended
-  subreddit — every card names its subreddit (`r/stripe`, `r/FulfillmentByAmazon`, …) and shows the
-  reason it was recommended — plus one LinkedIn card.
-- **The catalog is the source of truth**, not the queue: it lists which apps are promoted, the
-  recommended subreddits and the copy. Edit the copy there and re-seed with `--refresh` (only
-  `ready` cards are rewritten). The queue is derived state.
-- **Statuses:** `ready` → `published` or `deleted`; any of them can be reopened as `ready`. Filter by
-  status and by platform; the tab badge counts what is still `ready`.
-- **Buttons per card:** Copy text · Open submit page (Reddit web intent / LinkedIn composer) ·
-  Edit text (saved back to the queue) · Mark published · Mark deleted · Reopen as ready.
-- **Seeding is idempotent.** `+ Generate from the app inventory` adds cards for apps that have none
-  and never resets a status or an edit. `refresh: true` regenerates the text of `ready` items only.
-  A card whose app leaves the catalog is pruned — that is also how the queue's previous source (the
-  per-article cards) was cleared when promotion moved to the apps.
-- **Storage:** Supabase `factory_config` key `distribution_queue` when `SUPABASE_URL` +
-  `SUPABASE_SERVICE_ROLE_KEY` are set (required in production — the container filesystem is
-  rebuilt on every deploy), otherwise `context/distribution_queue.json` locally.
-- **Links are the public app pages** (`apps.giniloh.com/<slug>`), never the dashboard: a promotion
-  card that sends a stranger to a login prompt advertises the internal surface instead of the
-  product.
-- **The copy is voice-gated.** Cardinal rules in `site/social_voice.mjs`, checked by
-  `scripts/check_social_voice.mjs` (verify.sh §9): a card reads as one person describing something
-  they built — an observer cue, no imperative advice, no consultant or verdict framing.
-- **Seeding is automatic in the publish pass** (`scripts/publish.py` → `scripts/seed_distribution.py`):
-  the cards stay fresh without anyone clicking the button. Nothing is ever posted by it; the cards
-  are copy-paste tasks.
+What that means for the code:
 
-API (all behind the dashboard's access layer): `GET/POST/PATCH/DELETE /api/distribution/tasks`,
-`POST /api/distribution/seed`.
+- The dashboard has no distribution tab and no `/api/distribution/*` route; the card generator
+  (`site/distribution.mjs`), the seeder (`scripts/seed_distribution.py`) and the copy catalog
+  (`context/promoted_apps.json`) are deleted.
+- `scripts/publish.py` persists only: `published/<file>.md`, the log row, the Supabase row, the
+  featured image and the CMS draft (`scripts/wp_draft.py`). It posts nowhere and prints no social
+  copy, and it reads no social credential.
+- The article's legacy `<!-- linkedin -->` block is no longer required, produced or shipped; a
+  reader never saw it. Artifacts that still carry one are ignored (`scripts/wp_draft.py` and the
+  reader renderer cut it at the marker).
+- `verify.sh` §9 keeps the long-form voice gate (`scripts/check_social_voice.mjs`, rules in
+  `site/social_voice.mjs`).
+- If a social channel is ever wanted again, it is a new decision with a named destination — not a
+  restoration.
 
 ## Environment
 
@@ -177,8 +164,6 @@ API (all behind the dashboard's access layer): `GET/POST/PATCH/DELETE /api/distr
 ANTHROPIC_API_KEY=        # REQUIRED for the Claude frontier rewrite step
 SUPABASE_URL=             # drafts/signals/published store
 SUPABASE_SERVICE_ROLE_KEY=
-LINKEDIN_AUTO_POST=       # true to auto-post via API; false (default) for copy-paste review
-LINKEDIN_ACCESS_TOKEN=    # publisher (used when LINKEDIN_AUTO_POST=true)
 GHOST_ADMIN_API_KEY=      # publisher (optional)
 GHOST_API_URL=
 

@@ -55,13 +55,17 @@ Introduce supporting context using standardized H2 headers (`## `).
 ### 3.7 The Exit ("Go Deeper")
 - Conclude cleanly with designated **Go deeper:** references or internal links (`<!-- internal-links -->` and `## Sources`) for readers who want extra nuance without cluttering the main text.
 
-### 3.8 The Social Variants — Observer Voice, Not Authority
+### 3.8 The Observer Voice — Not Authority
 
-The long-form article explains. The `<!-- linkedin -->` variant and the app-promotion cards
-(`context/promoted_apps.json`) speak in the same voice: one person saying what they make of it.
-The speaker is one person who has been reading the week's filings, reports and news and is saying what
-they make of it. They did not cause the events, they are not the owner of the truth, and they are not
-the reader's advisor: they hold a point of view and they label it as one.
+**The social variants this section used to govern are gone.** The authored `<!-- linkedin -->` block
+and the app-promotion cards (`context/promoted_apps.json`) were removed with the LinkedIn/Reddit
+channel on 2026-10-06, so the desk writes no copy for a social platform at all. What survives is the
+voice rule itself, applied to the reader-facing article (§3.9) and machine-checked by
+`scripts/check_social_voice.mjs` (`verify.sh` §9) against the patterns in `site/social_voice.mjs`.
+
+The speaker is one person who has been reading the week's filings, reports and news and is saying
+what they make of it. They did not cause the events, they are not the owner of the truth, and they
+are not the reader's advisor: they hold a point of view and they label it as one.
 
 **Required — at least one, ideally two:**
 - **Observed it themselves:** "I've been following this all week", "I keep coming back to one number", "The bit that stuck with me:"
@@ -74,11 +78,7 @@ the reader's advisor: they hold a point of view and they label it as one.
 - Line-initial imperatives and second-person advice: "Stress test your…", "Negotiate the…", "Match your…", "Treat X as a live deadline", "Map your exposure today", "Stop…", "Start…", and "you need to / must / should / have to…". Convert them to observation plus question: "I'd want to know whether operators are stress-testing…", "Curious how others are handling…".
 
 **Keep:** every figure, name, date and citation the article carries; its closing reader link; the
-hashtags (LinkedIn); the hook-first first line; ≤ 1,300 characters on LinkedIn. Never add a fact the
-article does not carry — re-voice, never re-report.
-
-**Reddit additionally:** the card sits inside someone else's thread. State the read, show the numbers,
-then ask. No instruction, no pitch tone; the write-up link is background, not a call to action.
+hook-first first line. Never add a fact the article does not carry — re-voice, never re-report.
 
 **Worked example — the 2026-09-26 tariff piece:**
 - *Before (authority):* "The signal is clear: CFOs are pricing in a tariff cliff. … Here is the playbook for supply chain leaders: - Stress test your landed costs … - Match your cash posture to your tariff exposure … Treat Jan. 10 as a live deadline. Not a December problem."
@@ -173,7 +173,7 @@ After every section passes, run ONE final **whole-piece pass**: coherence, caden
 ---
 
 ## 6. Output
-`context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn) with the per-section gate
+`context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form) with the per-section gate
 report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (following the 4-part Big Shift / Why It Matters / What I'd Watch / Catch schema) — never write a
 prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only** — do not compose
 one.
@@ -266,8 +266,8 @@ Gates — the piece FAILS the ACCESS gate if:
    on it. "The biggest figure was spoken on a call, never written down" needs a breath that
    says why that is odd.
 4. **The body reads at a difficult level for a general audience.** Checker: target
-   **Flesch Reading Ease ≥ 60** on the body (frontmatter, `## Sources`, and the
-   `<!-- linkedin -->` variant are excluded). Hard floor: ≥ 50. Readability comes from plain
+   **Flesch Reading Ease ≥ 60** on the body (frontmatter and `## Sources` are excluded, and the
+   legacy `<!-- linkedin -->` block is cut when an artifact still carries one). Hard floor: ≥ 50. Readability comes from plain
    **words**, not short sentences — swap long/technical terms for everyday ones
    ("set up" not "implementation", "slows down" not "degrades throughput") and write connected
    ~14-20-word sentences with variation; do NOT fragment into choppy one-liners. Long proper

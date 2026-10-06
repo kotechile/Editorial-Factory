@@ -98,7 +98,10 @@ try {
     '/api/articles.json': 'the article manifest',
     [`/published/${article}`]: 'a published article page',
     '/api/drafts': 'unpublished drafts',
-    '/api/distribution/tasks': 'the distribution queue',
+    // The LinkedIn/Reddit queue was removed (2026-10-06) and this route no longer exists; it is in
+    // the list because a removed route must not become a way in — the access check runs first, so
+    // it answers 401 like everything else rather than 404-with-no-secret.
+    '/api/distribution/tasks': 'a removed admin route',
   };
   for (const [path, what] of Object.entries(anon)) {
     const res = await probe(base, path);

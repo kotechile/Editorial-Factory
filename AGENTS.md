@@ -45,12 +45,14 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    an explicit error — never a degraded substitute.
 7. **Self-healing SOPs.** Every failed run must patch a `skills/*.md` file so the failure class
    never recurs.
-8. **Persistence is automatic; distribution is gated.** A verified, frontier-rewritten article is
-   persisted in the same run — `published/YYYY-MM-DD_<slug>.md`, `context/published_log.md`, the
-   Supabase rows, `context/sitemap.json` and the `context/content_calendar.md` run-log row — via
-   `scripts/publish.py <final draft>`. This is **not** approval-gated. Only **outbound
-   distribution** (LinkedIn / Ghost / Reddit) requires the founder's `@Simon approve` gate (a hard
-   gate); a rejected article is routed back to `stylist`, never silently dropped from the site.
+8. **Persistence is automatic and ungated; there is no social distribution step.** A verified,
+   frontier-rewritten article is persisted in the same run — `published/YYYY-MM-DD_<slug>.md`,
+   `context/published_log.md`, the Supabase rows, `context/sitemap.json`, the CMS draft
+   (`scripts/wp_draft.py`) and the `context/content_calendar.md` run-log row — via
+   `scripts/publish.py <final draft>`. **The reader sites are the destination** (`giniloh.com` /
+   `wellroost.com`, fed by the CMS); the LinkedIn and Reddit channels were removed by the owner on
+   2026-10-06, so no run produces social copy, queues a post or waits on a distribution approval.
+   The CMS's draft -> publish flip stays a human action in the CMS.
 9. **Multi-topic signal synthesis.** Rather than merely publishing single-signal press summaries,
    the pipeline prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day
    developments (e.g., falling LLM frontier pricing colliding with local in-house software

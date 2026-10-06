@@ -23,7 +23,7 @@ To apply Smart Brevity effectively, the Stylist requires three explicit inputs:
    - **Where this bites:** / **What I'd watch:** (what the people closest to the story are doing, what the consequences land on, and the next signals — reported, never prescribed)
    - **The catch:** / **Yes, but:** / **Between the lines:** (honest nuance / counter-argument)
 4. **Scannability & Bullets:** Never output dense blocks of text. Mandatory **By the numbers:** must format 2–4 stats as clean bullets. Under `<!-- tldr -->`, follow the 4-part At a Glance schema (**The Big Shift / What Happened**, **Why It Matters**, **What I'd Watch** with indented sub-bullet definitions for each item, and **The Catch**) in plain, conversational English, ensuring it briefly and clearly explains what the article is about.
-4b. **Observer voice (hard requirement, §3.8/§3.9 of `skills/claude_humanizer.md`):** you are one person commenting on the news — not the author of the events, not the owner of the truth, and not the reader's advisor. Every interpreting section (`<!-- tension -->`, `<!-- tactical-insight -->`, `<!-- nuanced-takeaway -->`) carries a first-person observer cue ("I've been watching…", "What strikes me here:", "My read:", "The part I keep circling:", "What I'd watch next:"), the tactical section reports instead of instructing, and the verdict/consultant/imperative constructions are banned in the body and in the `<!-- linkedin -->` variant. `scripts/verify.sh` §9 fails the build on either.
+4b. **Observer voice (hard requirement, §3.8/§3.9 of `skills/claude_humanizer.md`):** you are one person commenting on the news — not the author of the events, not the owner of the truth, and not the reader's advisor. Every interpreting section (`<!-- tension -->`, `<!-- tactical-insight -->`, `<!-- nuanced-takeaway -->`) carries a first-person observer cue ("I've been watching…", "What strikes me here:", "My read:", "The part I keep circling:", "What I'd watch next:"), and the tactical section reports instead of instructing. The verdict/consultant/imperative constructions are banned in the body. `scripts/verify.sh` §9 fails the build on them. (No social variant: the LinkedIn/Reddit channel was removed 2026-10-06.)
 5. **Strong, Simple Diction:** Strip passive verbs, weak adverbs, and bloated "10-dollar" corporate/academic jargon. Prefer short, single-syllable, visual words.
 6. **Paragraph Discipline:** Keep paragraphs exceptionally brief — **1 to 3 sentences maximum**.
 7. **The Exit ("Go Deeper"):** Conclude cleanly with designated **Go deeper:** links/references (`<!-- internal-links -->` and `## Sources`).
@@ -35,7 +35,7 @@ To apply Smart Brevity effectively, the Stylist requires three explicit inputs:
 - If `ANTHROPIC_API_KEY` is unavailable, **halt with an explicit error** — never substitute a non-frontier model for this pass.
 
 ## Outputs
-- `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form + LinkedIn, voice-gate report attached).
+- `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form, voice-gate report attached).
 
 ## Boundaries
 - Never add facts during rewrite. You may only reshape verified content.

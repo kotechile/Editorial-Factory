@@ -121,7 +121,8 @@ in code instead. Both fleets run with `--workdir /root/editorial-factory` (loads
 home channel (`#loop-ai`), which is where the `@Simon approve` gate is read. The `editor` bot
 orchestrates: it runs Loops 1–2 on deepseek, then dispatches `stylist`
 (`hermes -p stylist chat -q "…"`) for the Claude rewrite (Loop 3). Publishing is not approval-gated
-(site + Supabase persist in the run); outbound distribution waits for the `@Simon approve` gate.
+(site + Supabase + the CMS draft persist in the run) and there is no social distribution step: the
+LinkedIn/Reddit channel was removed by the owner on 2026-10-06.
 `EDITORIAL_CRON_DELIVER` / `EDITORIAL_CRON_MODEL` override the delivery target and model if you
 re-wire the fleet onto Bot Chats.
 
@@ -165,13 +166,13 @@ Two things keep that step honest without a human:
    and asserts exactly that surface, including the fail-closed path. Set `SUPABASE_URL` +
    `SUPABASE_SERVICE_ROLE_KEY` **as well**: they are what makes the deployed dashboard's
    persistence work — without them the container runs filesystem-only (`"mocked"` responses on the
-   Supabase routes) and the Distribution to-do queue cannot survive a redeploy.
+   Supabase routes) and nothing it writes survives a redeploy.
 3. Domain: e.g. `editorial.<your-domain>` (products ship at subpaths in the factory; this is a
    separate app and can get its own subdomain).
-4. Optionally add a production Ghost CMS / PressFlow app and point the Publisher at it
-   (`GHOST_API_URL`, `GHOST_ADMIN_API_KEY`) when auto-publish is approved.
-5. To configure LinkedIn, toggle `LINKEDIN_AUTO_POST=true` or `false` (default) with `LINKEDIN_ACCESS_TOKEN`.
-   Publishing is executed via `python3 scripts/publish.py <draft_path>`.
+4. Optionally add a production CMS app and point the Publisher at it (`GHOST_API_URL`,
+   `GHOST_ADMIN_API_KEY`).
+   Publishing is executed via `python3 scripts/publish.py <draft_path>`. There is no LinkedIn /
+   Reddit / social configuration — that channel was removed on 2026-10-06.
 
 ## 5. Supabase (persistence)
 

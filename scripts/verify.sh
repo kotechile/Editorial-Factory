@@ -35,10 +35,12 @@ for phrase in "${BANNED[@]}"; do
   fi
 done
 
-# 3. Every draft must carry the full section schema (markers + Sources + LinkedIn variant).
+# 3. Every draft must carry the section schema (markers + Sources). The `<!-- linkedin -->`
+#    social variant is no longer required — the LinkedIn/Reddit channels were removed on
+#    2026-10-06 — and artifacts written before that still carry it; nothing here rejects it.
 SCHEMA_MARKERS=(
   '<!-- lead -->' '<!-- tension -->' '<!-- tactical-insight -->'
-  '<!-- nuanced-takeaway -->' '<!-- tldr -->' '<!-- linkedin -->'
+  '<!-- nuanced-takeaway -->' '<!-- tldr -->'
 )
 for f in "$ROOT"/context/drafts/*.md; do
   [ -e "$f" ] || continue
@@ -149,10 +151,6 @@ if ! python3 "$ROOT/scripts/test_check_offpeak_crons.py" >/dev/null 2>&1; then
   echo "FAIL: off-peak gate contract tests — detail:"; python3 "$ROOT/scripts/test_check_offpeak_crons.py" 2>&1 | tail -6; FAIL=1
 fi
 
-if ! python3 "$ROOT/scripts/test_distribution_prep.py" >/dev/null 2>&1; then
-  echo "FAIL: distribution prep tests — detail:"; python3 "$ROOT/scripts/test_distribution_prep.py" 2>&1 | tail -6; FAIL=1
-fi
-
 # 8.5 WordPress draft-push mapping (hard): the vertical -> CMS routing and the field contract that
 #     stops a raw vertical id reaching a live headline (scripts/wp_draft.py). Runs a stub WordPress
 #     REST API on localhost, so it needs no credentials and writes nothing; the read-only Supabase
@@ -244,24 +242,24 @@ if ! python3 "$ROOT/scripts/test_check_vertical_sites.py" >/dev/null 2>&1; then
   python3 "$ROOT/scripts/test_check_vertical_sites.py" 2>&1 | tail -8; FAIL=1
 fi
 
-# 9. Voice gate (hard): the article body AND the social copy must read as one person commenting on the
-#    news — not the owner of the truth and not the reader's advisor (skills/claude_humanizer.md
-#    §3.8 social / §3.9 long-form). Checks (a) each interpreting section of every artifact dated
-#    on/after the cutover for an observer cue, (b) the whole reader-facing body for verdict /
-#    consultant / imperative constructions, (c) the authored `<!-- linkedin -->` block, and (d) the
-#    promotion copy the to-do queue ships for every promoted app (context/promoted_apps.json).
-#    Node is required because the formatter and the rules are both JS; the dashboard cannot run
-#    without node either, so this skips only on a host that could not serve PressFlow at all.
+# 9. Voice gate (hard): the article body must read as one person commenting on the news — not the
+#    owner of the truth and not the reader's advisor (skills/claude_humanizer.md §3.9). Checks each
+#    interpreting section of every artifact dated on/after the cutover for an observer cue, and the
+#    whole reader-facing body for verdict / consultant / imperative constructions. (The §3.8 rules
+#    for the social variants went with the LinkedIn/Reddit channels on 2026-10-06; the same module
+#    still owns the long-form rules.) Node is required because the formatter and the rules are both
+#    JS; the dashboard cannot run without node either, so this skips only on a host that could not
+#    serve PressFlow at all.
 if command -v node >/dev/null 2>&1; then
   if ! node "$ROOT/scripts/check_social_voice.mjs" --self-test >/dev/null 2>&1; then
-    echo "FAIL: social-voice rule self-test — detail:"
+    echo "FAIL: voice rule self-test — detail:"
     node "$ROOT/scripts/check_social_voice.mjs" --self-test 2>&1 | tail -6; FAIL=1
   fi
   if ! node "$ROOT/scripts/check_social_voice.mjs"; then
-    echo "FAIL: social voice (see the list above; the rule is skills/claude_humanizer.md §3.8)"; FAIL=1
+    echo "FAIL: article voice (see the list above; the rule is skills/claude_humanizer.md §3.9)"; FAIL=1
   fi
 else
-  echo "  skip: social voice gate (node not on PATH)"
+  echo "  skip: voice gate (node not on PATH)"
 fi
 
 # 10. Public surface (hard): PressFlow is an internal dashboard — the articles it holds are exported
@@ -275,17 +273,6 @@ if command -v node >/dev/null 2>&1; then
   if ! node "$ROOT/scripts/test_public_surface.mjs" >/dev/null 2>&1; then
     echo "FAIL: public surface — detail:"
     node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8; FAIL=1
-  fi
-  # ...and a promotion card must not outlive the app it was seeded from, nor stop naming the
-  # subreddit it is recommended for: the queue only ever added/refreshed, so withdrawing a source
-  # left an offer to post it (with its then-link — the internal dashboard) in the queue.
-  if ! node "$ROOT/scripts/test_distribution_queue.mjs" >/dev/null 2>&1; then
-    echo "FAIL: distribution queue lifecycle — detail:"
-    node "$ROOT/scripts/test_distribution_queue.mjs" 2>&1 | tail -8; FAIL=1
-  fi
-  if ! node "$ROOT/scripts/test_distribution_apps.mjs" >/dev/null 2>&1; then
-    echo "FAIL: app-promotion cards — detail:"
-    node "$ROOT/scripts/test_distribution_apps.mjs" 2>&1 | tail -8; FAIL=1
   fi
 else
   echo "  skip: public-surface gate (node not on PATH)"

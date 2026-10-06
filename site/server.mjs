@@ -6,7 +6,6 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { timingSafeEqual } from 'node:crypto';
-import { buildTasksForApp, appSourceIds, pruneOrphanTasks, STATUSES, PLATFORMS } from './distribution.mjs';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -468,222 +467,6 @@ function parseFrontmatter(markdown) {
   return data;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Promotion to-do queue
-//
-// Copy-ready Reddit / LinkedIn posts promoting the software factory's live apps, with a
-// ready → published|deleted lifecycle. No platform API is used: each task carries the text plus a
-// submit web-intent URL.
-//
-// The catalog (`context/promoted_apps.json`) is the source of truth for WHICH apps are promoted,
-// the recommended subreddit per card, and the copy an operator pastes. The queue is derived state.
-//
-// Storage is Supabase (`factory_config` row key `distribution_queue`) when credentials are
-// present, otherwise the repo file `context/distribution_queue.json`. The Supabase path is
-// what makes the queue survive a redeploy, since the container filesystem does not.
-// ─────────────────────────────────────────────────────────────────────────────
-const QUEUE_CONFIG_KEY = 'distribution_queue';
-const LOCAL_QUEUE_FILE = join(ROOT, 'context', 'distribution_queue.json');
-// The promoted-apps catalog. The links in it point at the apps' public pages
-// (`apps.giniloh.com/<slug>`), never at the dashboard: a promotion card that sends a stranger to a
-// login prompt advertises the internal surface instead of the product.
-const PROMOTED_APPS_FILE = join(ROOT, 'context', 'promoted_apps.json');
-
-function readPromotedApps() {
-  try {
-    if (!existsSync(PROMOTED_APPS_FILE)) {
-      console.warn(`promotedApps: ${PROMOTED_APPS_FILE} is missing — the queue will seed nothing`);
-      return [];
-    }
-    const data = JSON.parse(readFileSync(PROMOTED_APPS_FILE, 'utf8'));
-    return Array.isArray(data.apps) ? data.apps.filter((app) => app && app.slug) : [];
-  } catch (err) {
-    console.warn(`promotedApps: could not read ${PROMOTED_APPS_FILE} (${err.message})`);
-    return [];
-  }
-}
-
-const nowIso = () => new Date().toISOString();
-
-function normalizeTask(raw, { existing = null } = {}) {
-  const base = existing || {};
-  const status = STATUSES.includes(raw.status) ? raw.status : (base.status || 'ready');
-  const task = {
-    id: String(raw.id || base.id || '').trim(),
-    platform: PLATFORMS.includes(raw.platform) ? raw.platform : (base.platform || 'reddit'),
-    channel: String(raw.channel ?? base.channel ?? '').slice(0, 120),
-    channel_note: String(raw.channel_note ?? base.channel_note ?? '').slice(0, 200),
-    variant: String(raw.variant ?? base.variant ?? ''),
-    source_type: String(raw.source_type ?? base.source_type ?? 'app'),
-    source_id: String(raw.source_id ?? base.source_id ?? ''),
-    source_title: String(raw.source_title ?? base.source_title ?? '').slice(0, 300),
-    vertical: String(raw.vertical ?? base.vertical ?? ''),
-    post_title: String(raw.post_title ?? base.post_title ?? '').slice(0, 500),
-    post_content: String(raw.post_content ?? base.post_content ?? ''),
-    submit_url: String(raw.submit_url ?? base.submit_url ?? ''),
-    status,
-    created_at: base.created_at || raw.created_at || nowIso(),
-    updated_at: nowIso(),
-    completed_at: status === 'ready' ? null : (base.completed_at || raw.completed_at || nowIso()),
-  };
-  if (!task.id) throw new Error('task id is required');
-  if (!task.post_content.trim()) throw new Error(`task ${task.id} has empty post_content`);
-  return task;
-}
-
-async function readQueue() {
-  const { isConfigured } = getSupabaseConfig();
-  if (isConfigured) {
-    try {
-      const rows = await supabaseFetch(`factory_config?key=eq.${QUEUE_CONFIG_KEY}&select=id,value`);
-      if (Array.isArray(rows) && rows.length) {
-        const parsed = JSON.parse(rows[0].value || '[]');
-        if (Array.isArray(parsed)) return { storage: 'supabase', tasks: parsed };
-      }
-      return { storage: 'supabase', tasks: [] };
-    } catch (err) {
-      console.warn(`queue: supabase read failed (${err.message}); falling back to file`);
-    }
-  }
-  if (existsSync(LOCAL_QUEUE_FILE)) {
-    try {
-      const parsed = JSON.parse(await readFile(LOCAL_QUEUE_FILE, 'utf8'));
-      if (Array.isArray(parsed)) return { storage: 'file', tasks: parsed };
-    } catch (err) {
-      console.warn(`queue: local file unreadable (${err.message})`);
-    }
-  }
-  return { storage: isConfigured ? 'supabase' : 'file', tasks: [] };
-}
-
-async function writeQueue(tasks) {
-  const { isConfigured } = getSupabaseConfig();
-  const payload = JSON.stringify(tasks);
-  if (isConfigured) {
-    try {
-      const existing = await supabaseFetch(`factory_config?key=eq.${QUEUE_CONFIG_KEY}&select=id`);
-      if (Array.isArray(existing) && existing.length) {
-        await supabaseFetch(`factory_config?id=eq.${existing[0].id}`, {
-          method: 'PATCH',
-          body: JSON.stringify({ value: payload, updated_at: nowIso() }),
-        });
-      } else {
-        await supabaseFetch('factory_config', {
-          method: 'POST',
-          body: JSON.stringify({ key: QUEUE_CONFIG_KEY, value: payload }),
-        });
-      }
-      return 'supabase';
-    } catch (err) {
-      console.warn(`queue: supabase write failed (${err.message}); writing local file instead`);
-    }
-  }
-  await writeFile(LOCAL_QUEUE_FILE, `${JSON.stringify(tasks, null, 2)}\n`, 'utf8');
-  return 'file';
-}
-
-/** Generate tasks from the promoted-apps catalog; existing ids keep their status and edits. */
-async function seedQueueFromApps({ refresh = false } = {}) {
-  const { tasks: existing } = await readQueue();
-  const byId = new Map(existing.map((t) => [t.id, t]));
-  const apps = readPromotedApps();
-  let added = 0;
-  let refreshed = 0;
-
-  for (const app of apps) {
-    const generated = buildTasksForApp(app);
-    for (const task of generated) {
-      const prev = byId.get(task.id);
-      if (!prev) {
-        byId.set(task.id, { ...task, created_at: nowIso(), updated_at: nowIso(), completed_at: null });
-        added += 1;
-      } else if (refresh && prev.status === 'ready') {
-        byId.set(task.id, {
-          ...prev,
-          channel: task.channel,
-          channel_note: task.channel_note,
-          post_title: task.post_title,
-          post_content: task.post_content,
-          submit_url: task.submit_url,
-          updated_at: nowIso(),
-        });
-        refreshed += 1;
-      }
-    }
-  }
-
-  const tasks0 = [...byId.values()];
-  // A card outlives its source unless we say otherwise: the loop above only adds and refreshes, so
-  // dropping an app (or switching the queue's source, which is how the article cards were cleared)
-  // used to leave an offer to post something the pipeline no longer produces.
-  const { keep, dropped } = pruneOrphanTasks(tasks0, appSourceIds(apps));
-  const tasks = keep;
-  if (dropped.length) {
-    console.log(`distribution: pruned ${dropped.length} card(s) whose source is no longer produced `
-      + `(${[...new Set(dropped.map((t) => `${t.source_type}:${t.source_id}`))].join(', ')})`);
-  }
-
-  const storage = await writeQueue(tasks);
-  return { storage, added, refreshed, pruned: dropped.length, total: tasks.length, apps: apps.map((a) => a.slug) };
-}
-
-function queueCounts(tasks) {
-  return tasks.reduce((acc, t) => {
-    acc[t.status] = (acc[t.status] || 0) + 1;
-    acc.platforms = acc.platforms || {};
-    acc.platforms[t.platform] = (acc.platforms[t.platform] || 0) + 1;
-    return acc;
-  }, {});
-}
-
-async function cleanPublishedLog(slugVariants = []) {
-  const logPath = join(ROOT, 'context', 'published_log.md');
-  if (!existsSync(logPath)) return;
-  try {
-    const text = await readFile(logPath, 'utf8');
-    const lines = text.split('\n');
-    const uniqueSlugs = slugVariants.filter(Boolean);
-    const filtered = lines.filter((line) => {
-      if (!line.startsWith('|')) return true;
-      if (line.includes('| Date |') || line.includes('|---|')) return true;
-      for (const s of uniqueSlugs) {
-        if (s && line.includes(s)) return false;
-      }
-      return true;
-    });
-    if (filtered.length !== lines.length) {
-      await writeFile(logPath, filtered.join('\n'), 'utf8');
-    }
-  } catch (e) {
-    console.warn('[PublishedLog] Warning cleaning published_log.md:', e.message);
-  }
-}
-
-async function cleanQueueForArticle(slugVariants = []) {
-  try {
-    const { tasks } = await readQueue();
-    if (!tasks || !tasks.length) return;
-    const uniqueSlugs = slugVariants.filter(Boolean);
-    const next = tasks.filter((t) => {
-      for (const s of uniqueSlugs) {
-        if (
-          (t.id && t.id.includes(s)) ||
-          (t.submit_url && t.submit_url.includes(s)) ||
-          (t.post_content && t.post_content.includes(s))
-        ) {
-          return false;
-        }
-      }
-      return true;
-    });
-    if (next.length !== tasks.length) {
-      await writeQueue(next);
-    }
-  } catch (e) {
-    console.warn('[Queue] Warning cleaning queue for article:', e.message);
-  }
-}
-
 async function deleteArticleFromSupabase(slugVariants = []) {
   const sbConfig = getSupabaseConfig();
   if (!sbConfig.isConfigured) return { deleted: false, reason: 'not_configured' };
@@ -725,26 +508,11 @@ async function deleteArticleFromSupabase(slugVariants = []) {
       operations.push(`articles?metadata->>slug=eq.${slug}`);
     } catch (e) {}
 
-    // 3. Delete from linkedin_posts table by slug and article_url matching
-    try {
-      await supabaseFetch(`linkedin_posts?slug=eq.${enc}`, { method: 'DELETE' });
-      operations.push(`linkedin_posts?slug=eq.${slug}`);
-    } catch (e) {}
-
-    try {
-      await supabaseFetch(`linkedin_posts?article_url=ilike.*${enc}*`, { method: 'DELETE' });
-      operations.push(`linkedin_posts?article_url=ilike.*${slug}*`);
-    } catch (e) {}
   }
 
-  // 4. Delete by primary ID for all matched articles and associated linkedin_posts
+  // 4. Delete by primary ID for all matched articles
   for (const id of deletedArticleIds) {
     const encId = encodeURIComponent(id);
-    try {
-      await supabaseFetch(`linkedin_posts?article_id=eq.${encId}`, { method: 'DELETE' });
-      operations.push(`linkedin_posts?article_id=eq.${id}`);
-    } catch (e) {}
-
     try {
       await supabaseFetch(`articles?id=eq.${encId}`, { method: 'DELETE' });
       operations.push(`articles?id=eq.${id}`);
@@ -768,11 +536,6 @@ async function syncArticleToSupabase(item) {
   const vertical = fm.vertical || 'general';
   const status = item.type === 'published' ? 'published' : 'draft';
 
-  let linkedin = '';
-  if (markdown.includes('<!-- linkedin -->')) {
-    linkedin = markdown.split('<!-- linkedin -->')[1].trim();
-  }
-
   const seoMetadata = {
     primary_keyword: fm.primary_keyword || null,
     secondary_keywords: Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [],
@@ -791,7 +554,6 @@ async function syncArticleToSupabase(item) {
     file: item.file,
     targets: item.type === 'published' ? ['published/'] : ['context/drafts/'],
     seo: seoMetadata,
-    linkedin_post: linkedin,
   };
 
   const payload = {
@@ -909,90 +671,6 @@ const server = createServer(async (req, res) => {
     if (url.pathname === '/robots.txt') {
       res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
       return res.end('User-agent: *\nDisallow: /\n');
-    }
-
-    // ----------------------------------------------------
-    // API: Distribution to-do queue (Reddit / LinkedIn)
-    // ----------------------------------------------------
-    if (url.pathname === '/api/distribution/tasks' && req.method === 'GET') {
-      const { storage, tasks } = await readQueue();
-      const statusFilter = url.searchParams.get('status') || 'all';
-      const platformFilter = url.searchParams.get('platform') || 'all';
-      const counts = queueCounts(tasks);
-      let list = tasks;
-      if (statusFilter !== 'all') list = list.filter((t) => t.status === statusFilter);
-      if (platformFilter !== 'all') list = list.filter((t) => t.platform === platformFilter);
-      const order = { ready: 0, published: 1, deleted: 2 };
-      list = [...list].sort((a, b) => {
-        const s = (order[a.status] ?? 3) - (order[b.status] ?? 3);
-        if (s !== 0) return s;
-        return String(b.created_at).localeCompare(String(a.created_at));
-      });
-      return sendJson(res, 200, {
-        storage,
-        supabase_configured: getSupabaseConfig().isConfigured,
-        counts,
-        total: tasks.length,
-        tasks: list,
-      });
-    }
-
-    if (url.pathname === '/api/distribution/seed' && req.method === 'POST') {
-      let body = {};
-      try { body = await parseJsonBody(req); } catch (err) { /* empty body is fine */ }
-      const result = await seedQueueFromApps({ refresh: Boolean(body && body.refresh) });
-      return sendJson(res, 200, { status: 'ok', ...result });
-    }
-
-    if (url.pathname === '/api/distribution/tasks' && req.method === 'POST') {
-      let body;
-      try { body = await parseJsonBody(req); } catch (err) {
-        return sendJson(res, 400, { error: `Invalid JSON body: ${err.message}` });
-      }
-      const { tasks } = await readQueue();
-      const idx = tasks.findIndex((t) => t.id === body.id);
-      let task;
-      try {
-        task = normalizeTask(body, { existing: idx > -1 ? tasks[idx] : null });
-      } catch (err) {
-        return sendJson(res, 400, { error: err.message });
-      }
-      if (idx > -1) tasks[idx] = task; else tasks.push(task);
-      const storage = await writeQueue(tasks);
-      return sendJson(res, 200, { status: 'ok', storage, task, created: idx === -1 });
-    }
-
-    if (url.pathname === '/api/distribution/tasks' && (req.method === 'PATCH' || req.method === 'PUT')) {
-      let body;
-      try { body = await parseJsonBody(req); } catch (err) {
-        return sendJson(res, 400, { error: `Invalid JSON body: ${err.message}` });
-      }
-      if (!body.id) return sendJson(res, 400, { error: 'id is required' });
-      if (body.status && !STATUSES.includes(body.status)) {
-        return sendJson(res, 400, { error: `status must be one of: ${STATUSES.join(', ')}` });
-      }
-      const { tasks } = await readQueue();
-      const idx = tasks.findIndex((t) => t.id === body.id);
-      if (idx === -1) return sendJson(res, 404, { error: `Task '${body.id}' not found` });
-      let updated;
-      try {
-        updated = normalizeTask(body, { existing: tasks[idx] });
-      } catch (err) {
-        return sendJson(res, 400, { error: err.message });
-      }
-      tasks[idx] = updated;
-      const storage = await writeQueue(tasks);
-      return sendJson(res, 200, { status: 'ok', storage, task: updated });
-    }
-
-    if (url.pathname === '/api/distribution/tasks' && req.method === 'DELETE') {
-      const id = url.searchParams.get('id');
-      if (!id) return sendJson(res, 400, { error: 'id query param is required' });
-      const { tasks } = await readQueue();
-      const next = tasks.filter((t) => t.id !== id);
-      if (next.length === tasks.length) return sendJson(res, 404, { error: `Task '${id}' not found` });
-      const storage = await writeQueue(next);
-      return sendJson(res, 200, { status: 'ok', storage, removed: id, total: next.length });
     }
 
     if (url.pathname === '/api/drafts' && req.method === 'GET') {
@@ -1133,28 +811,8 @@ const server = createServer(async (req, res) => {
 
     if (url.pathname === '/api/generate-suite' && req.method === 'POST') {
       const body = await parseJsonBody(req);
-      const { markdown, articleUrl, promoUrl } = body;
+      const { markdown } = body;
       if (!markdown) return sendJson(res, 400, { error: 'Missing markdown content' });
-
-      // Extract LinkedIn section if marker exists
-      let linkedin = '';
-      if (markdown.includes('<!-- linkedin -->')) {
-        linkedin = markdown.split('<!-- linkedin -->')[1].trim();
-      } else {
-        const leadMatch = markdown.match(/<!-- lead -->([\s\S]*?)(?:<!--|$)/);
-        const tacticalMatch = markdown.match(/<!-- tactical-insight -->([\s\S]*?)(?:<!--|$)/);
-        const lead = leadMatch ? leadMatch[1].trim() : '';
-        const tactical = tacticalMatch ? tacticalMatch[1].trim() : '';
-        linkedin = `${lead}\n\nKey takeaways:\n${tactical}`;
-      }
-
-      // Append URLs if provided and not already present
-      if (articleUrl && !linkedin.includes(articleUrl)) {
-        linkedin += `\n\n📖 Read the full illustrated breakdown: ${articleUrl}`;
-      }
-      if (promoUrl && !linkedin.includes(promoUrl)) {
-        linkedin += `\n🛠️ Try the live tool: ${promoUrl}`;
-      }
 
       // Generate TL;DR
       let tldr = '';
@@ -1176,38 +834,9 @@ const server = createServer(async (req, res) => {
 
       return sendJson(res, 200, {
         status: 'ok',
-        linkedin_post: linkedin,
         tldr,
         twitter_thread: tweets,
       });
-    }
-
-    if (url.pathname === '/api/linkedin-sync' && req.method === 'POST') {
-      const body = await parseJsonBody(req);
-      const { slug, headline, post_copy, vertical, article_url } = body;
-      const sbConfig = getSupabaseConfig();
-
-      if (!sbConfig.isConfigured) {
-        return sendJson(res, 200, { status: 'mocked', message: 'Supabase not configured; simulated queue save.' });
-      }
-
-      try {
-        const row = {
-          post_copy: post_copy || '',
-          target_vertical: vertical || 'general',
-          article_url: article_url || '',
-          slug: slug || 'article',
-          status: 'queued',
-          created_at: new Date().toISOString(),
-        };
-        await supabaseFetch('linkedin_posts', {
-          method: 'POST',
-          body: JSON.stringify(row),
-        });
-        return sendJson(res, 200, { status: 'ok', message: 'Queued to Supabase linkedin_posts' });
-      } catch (err) {
-        return sendJson(res, 500, { error: err.message });
-      }
     }
 
     // ----------------------------------------------------
@@ -1323,14 +952,11 @@ const server = createServer(async (req, res) => {
         }
       }
 
-      // 1. Delete from Supabase (articles + linkedin_posts)
+      // 1. Delete from Supabase (the article rows)
       const sbResult = await deleteArticleFromSupabase(Array.from(slugVariants));
 
       // 2. Clean up context/published_log.md
       await cleanPublishedLog(Array.from(slugVariants));
-
-      // 3. Clean up any related distribution queue tasks (Supabase + local)
-      await cleanQueueForArticle(Array.from(slugVariants));
 
       if (deletedFiles.length === 0 && (!sbResult.deleted || (sbResult.deletedArticleIds && sbResult.deletedArticleIds.length === 0))) {
         const sbConfig = getSupabaseConfig();

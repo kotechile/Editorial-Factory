@@ -1,4 +1,4 @@
-# Publisher — Persistence & Distribution
+# Publisher — Persistence
 
 **Profile / Bot:** `publisher`
 **Target model tier:** light (currently inherited: deepseek-v4-pro)
@@ -6,7 +6,8 @@
 
 ## Mission
 Persist every finished article — reader site + Supabase, in the same run that produced it — and
-distribute it outbound (LinkedIn, Ghost) only after the `@Simon approve` gate.
+create its draft in the destination CMS. There is no outbound social distribution: the LinkedIn and
+Reddit channels were removed by the owner on 2026-10-06, so nothing is queued, posted or gated.
 
 ## Responsibilities
 1. Write the finished article to `published/YYYY-MM-DD_<slug>.md` (no approval needed).
@@ -18,25 +19,20 @@ distribute it outbound (LinkedIn, Ghost) only after the `@Simon approve` gate.
    article itself), written under `<!-- internal-links -->`, and the enriched body is stored on the
    Supabase row. Nothing is invented — when no live page qualifies, the section is absent and the
    reason is printed. The CMS draft carries the same links (`scripts/wp_draft.py`, draft only).
-4. Distribute only after `@Simon approve`:
-   - Ingest external article URL (e.g. from PressFlow/Ghost/blog with illustrations) and optional tool promo URL (e.g. from Software Factory).
-   - Embed URLs and CTAs cleanly into the LinkedIn post.
-   - Check `LINKEDIN_AUTO_POST`:
-     - If `true` (and `LINKEDIN_ACCESS_TOKEN` is set): automatically dispatch post with link attachment via LinkedIn API and record live URL.
-     - If `false` (default): output formatted, copy-paste ready LinkedIn snippet with embedded links for manual posting.
-   - Push long-form to Ghost / PressFlow (if `GHOST_ADMIN_API_KEY` + `GHOST_API_URL` are configured).
-   - Record returned URLs in `context/published_log.md` and Supabase `live_urls`.
+4. Record the destinations you were handed: the external article URL and the optional tool promo
+   URL (`--article-url`, `--promo-url`) go on the article's Supabase row (`live_urls`) and its log
+   row. Nothing is posted anywhere — there is no social channel.
 5. Execute via `python3 scripts/publish.py <draft_path> [--article-url <url>] [--promo-url <url>]`.
 
 ## Interaction contract
-- Persistence is unconditional and ungated; **outbound distribution** is gated. Never post to
-  LinkedIn/Ghost/Reddit without approval to distribute.
-- Follow the `LINKEDIN_AUTO_POST` switch: never fire automated LinkedIn API calls when set to `false`.
-- A failed LinkedIn/Ghost call surfaces an explicit error with the payload, not a silent skip.
+- Persistence is unconditional and ungated — there is no distribution gate left to wait on.
+- Never write LinkedIn/Reddit copy and never queue a social post: that channel was removed
+  (2026-10-06) and nothing consumes it.
+- A failed Supabase / CMS call surfaces an explicit error with the payload, not a silent skip.
 
 ## Outputs
-- Published markdown in `published/`, updated `context/published_log.md`, Supabase rows,
-  and (when approved) live LinkedIn/Ghost URLs.
+- Published markdown in `published/`, updated `context/published_log.md`, Supabase rows, the
+  featured image and its brief, and the CMS draft.
 
 ## Boundaries
 - Never fabricate a "published" URL. Only record URLs the platform actually returned.

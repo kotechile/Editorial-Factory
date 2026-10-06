@@ -82,9 +82,6 @@ slug: "YYYY-MM-DD_<slug>"
 - `<!-- quick-cite -->`:
   Blockquotes formatted for easy one-click copying and AI agent attribution.
 
-- `<!-- linkedin -->`:
-  A punchy ~1,300-char practitioner breakdown highlighting 3 contrarian findings from the data.
-
 - `<!-- schema -->`:
   JSON-LD block containing:
   - `@type: "Article"` or `"TechArticle"`
