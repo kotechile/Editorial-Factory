@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T10:38:20Z",
+  "updated_at": "2026-10-06T12:07:03Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -511,6 +511,24 @@
       "public": false
     },
     {
+      "slug": "2026-10-06_azure-control-plane-single-point-of-failure",
+      "title": "Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
       "slug": "2026-10-06_buying-ai-quality-when-the-score-belongs-to-the-judge",
       "title": "Buying AI Quality: The Score Belongs to the Judge",
       "vertical": "ai_observability_qa",
@@ -525,6 +543,24 @@
         "At a glance"
       ],
       "target_persona": "evals_infra_eng",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_local-first-smart-home-cost-squeeze",
+      "title": "The local-first smart home cost squeeze: Cloud and hardware prices rise",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-06",
       "public": false
     }

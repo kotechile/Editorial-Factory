@@ -53,3 +53,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-05 | `smart-irrigation-payback-water-tier` | home_infrastructure_lifecycle_tco | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/smart-irrigation-payback-water-tier/featured.jpg` |
 | 2026-10-05 | `inventory-carrying-cost-rate` | meio_working_capital_tco | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/inventory-carrying-cost-rate/featured.jpg` |
 | 2026-10-06 | `buying-ai-quality-when-the-score-belongs-to-the-judge` | ai_observability_qa | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg` |
+| 2026-10-06 | `azure-control-plane-single-point-of-failure` | enterprise_tech_leadership | `technical_isometric` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.png` |
+| 2026-10-06 | `local-first-smart-home-cost-squeeze` | smart_home_telemetry | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/local-first-smart-home-cost-squeeze/featured.png` |
