@@ -345,19 +345,6 @@ The catch I keep coming back to: closing this gap takes upfront investment in me
 ## Sources
 {sources_block}
 
-<!-- linkedin -->
-Most discussions about {kw_prose} ignore what actually happens in the real world.
-
-Here is what the field data reveals:
-
-1. Hard limits matter more than cleverness: unbound retries and runaway costs compound fast.
-2. Real data beats demos: validate against your own history, not vendor claims.
-3. The hidden cost is the real one: overhead and drift accumulate where nobody is measuring.
-
-{primary_stance}
-
-What is your team actually measuring before you commit?
-
 <!-- schema -->
 ```json
 {json.dumps(schema_dict, indent=2)}
@@ -542,21 +529,6 @@ The catch I keep coming back to is sample bias in vendor evaluations. Benchmark 
 
 <!-- quick-cite -->
 {quick_cite_md}
-
-<!-- linkedin -->
-I've been analyzing production telemetry across {kw_prose} all week.
-
-My read: synthetic benchmarks measure isolated happy paths, while real-world engineering teams deal with compounding costs and unhandled retries.
-
-The three findings that stick with me:
-
-1. Synthetic accuracy drops when unconstrained by strict step budgets.
-2. Compounding loops drive total costs higher even as token prices decline.
-3. Over 60% of production failures stem from tool timeouts and integration drift, not model reasoning.
-
-{primary_stance}
-
-What metrics are your engineering teams verifying before signing off on deployment?
 
 <!-- schema -->
 ```json

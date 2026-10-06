@@ -129,26 +129,6 @@ def ensure_title_contains_keyword(text: str) -> str:
     return fixed
 
 
-SOCIAL_VOICE_RULES = """
-SOCIAL VOICE — the <!-- linkedin --> variant (skills/claude_humanizer.md §3.8; verify.sh §9 gates it):
-- Write it as ONE PERSON COMMENTING on the news. You are not the author of the events, not the owner of
-  the truth, and not the reader's advisor. Hold a point of view and label it as one.
-- Required: at least one first-person observer cue — "I've been following this all week", "I keep coming
-  back to one number", "My read:", "The part I keep circling:", "I'm curious how others are reading…",
-  "What I'm watching next:".
-- BANNED, no exceptions: verdict framing ("the signal is clear", "the real story is", "the truth is",
-  "the lesson is/for", "make no mistake", "the bottom line is"); consultant framing ("here's the
-  playbook", "The playbook:", "here's what you need to do", "the winning moves", "let me be clear",
-  "trust me"); reader-directed commands and advice ("Stress test your…", "Match your…", "Treat X as a
-  live deadline", "Map your exposure today", "you need to / must / should / have to…"). Rewrite each as
-  an observation plus a question: "I'd want to know whether operators are stress-testing…", "Curious how
-  others are handling…".
-- Keep every figure, name and date the article carries, the hook-first first line, and <= 1,300
-  characters. No hashtags or links (the publisher appends them). Re-voice; never re-report.
-- The Reddit cards derive from this draft, so article prose addressed to the reader as advice ("You must
-  re-run every project plan") is dropped by the generator — prefer observation-shaped sentences there.
-"""
-
 LONGFORM_VOICE_RULES = """
 ARTICLE VOICE — the long-form body (skills/claude_humanizer.md §3.9; verify.sh §9 gates it):
 - The article is a COMMENT on what is happening, written by one person who has been reading the filings,

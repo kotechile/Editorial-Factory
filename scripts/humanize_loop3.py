@@ -2,7 +2,8 @@
 """Editorial-factory Loop 3: frontier humanizer on Gemini for the restored drafts.
 
 Writes context/drafts/YYYY-MM-DD_<slug>_final.md per skills/claude_humanizer.md §5:
-long-form + LinkedIn, all section markers, ## Sources verbatim, + a Gate report.
+long-form, all section markers, ## Sources verbatim, + a Gate report. No social variant (the
+LinkedIn/Reddit channel was removed 2026-10-06).
 """
 import json, os, re, sys, urllib.request, urllib.parse, pathlib
 import humanizer_tools as ht  # retry loop + accessibility feedback
@@ -69,7 +70,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, keyword_data_source, secondary_keywords_source, vertical, persona, date, slug) and polish `title` for punchy clarity. When `primary_keyword` is defined in frontmatter, `title` and `meta_title` MUST explicitly contain the primary keyword. Never omit the target keyword from the title.
 - PRESERVE the `<!-- schema -->` block (JSON-LD) and `<!-- internal-links -->` block VERBATIM if present, placed at the end of the document.
 - PRESERVE the `## Related reading` section exactly as written — its anchor texts and URLs are verified internal links to live pages on the same site. Never rewrite, drop, merge, or invent one, and never add a link that is not already there.
-- PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.
+- PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->.
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - Format the TL;DR as the structured <!-- tldr --> field opening with an H2 header '## At a glance', strictly following this 4-part Smart Brevity schema (serves as a 30-second executive summary explaining what the article is about, distinctly separated from the preceding body):
   ## At a glance
@@ -90,14 +91,15 @@ ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary
 - NEVER invent an expansion for a proper noun or system name (e.g. CRAB, DeltaBox). If a name has no known full form, do not fabricate one to satisfy the acronym rule — rephrase to drop the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB"). A fabricated acronym expansion is a hallucination and a hard failure.
 
 OUTPUT FORMAT (strict):
-1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM), then the <!-- linkedin --> variant.
+1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM). Write nothing after that but the `## Gate report` — the social variant was removed with the LinkedIn/Reddit channel (2026-10-06).
 2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason verifying plain-English clarity and scannability>" or "FAIL — <reason>".
 
 Now rewrite the following draft:"""
 
-# The voice contract (skills/claude_humanizer.md §3.8/§3.9) is part of the job instruction, not a
-# suggestion: verify.sh §9 fails the build on the article body and on the social variant.
-RULES += "\n" + ht.LONGFORM_VOICE_RULES + "\n" + ht.SOCIAL_VOICE_RULES
+# The voice contract (skills/claude_humanizer.md §3.9) is part of the job instruction, not a
+# suggestion: verify.sh §9 fails the build on the article body. (No social variant — the LinkedIn/
+# Reddit channel was removed 2026-10-06.)
+RULES += "\n" + ht.LONGFORM_VOICE_RULES
 
 def call_gemini(prompt):
     body = {
@@ -114,14 +116,14 @@ def call_gemini(prompt):
     return txt
 
 def extract_sources(draft):
-    m = re.search(r"## Sources\s*\n(.*?)(?=\n<!-- linkedin -->|\Z)", draft, re.S)
+    m = re.search(r"## Sources\s*\n(.*?)(?=\n<!-- linkedin -->|\n## Gate report|\Z)", draft, re.S)
     return m.group(1).strip() if m else ""
 
 def clean(raw):
     return re.sub(r"\s*```$", "", re.sub(r"^```[a-zA-Z]*\s*", "", raw.strip())).strip()
 
 MARKERS = ["<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
-           "<!-- nuanced-takeaway -->", "<!-- tldr -->", "<!-- linkedin -->"]
+           "<!-- nuanced-takeaway -->", "<!-- tldr -->"]
 
 def humanize_single_draft(draft, out_path=None):
     src_lines = [l.strip() for l in extract_sources(draft).splitlines() if l.strip()]
@@ -137,7 +139,7 @@ def humanize_single_draft(draft, out_path=None):
             if not srcs_ok:
                 extra.append("The ## Sources list is missing or altered — include it VERBATIM (do not edit, merge, or drop any source line or URL).")
             if not markers_ok:
-                extra.append("Include every section marker: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->, <!-- linkedin -->.")
+                extra.append("Include every section marker: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->.")
             if not len_ok:
                 extra.append("The article body is too short (under %d words). Restore depth from the verified brief — restate the tactical moves and the tension in full, using only already-verified figures. Never invent new claims or numbers." % ht.MIN_BODY_WORDS)
             prompt = ht.retry_prompt(base_prompt, result, diag, extra=extra)
