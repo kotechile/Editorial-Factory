@@ -52,3 +52,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-05 | `remodel-capitalization-trap-shell-not-show` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/remodel-capitalization-trap-shell-not-show/featured.jpg` |
 | 2026-10-05 | `smart-irrigation-payback-water-tier` | home_infrastructure_lifecycle_tco | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/smart-irrigation-payback-water-tier/featured.jpg` |
 | 2026-10-05 | `inventory-carrying-cost-rate` | meio_working_capital_tco | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/inventory-carrying-cost-rate/featured.jpg` |
+| 2026-10-06 | `buying-ai-quality-when-the-score-belongs-to-the-judge` | ai_observability_qa | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg` |

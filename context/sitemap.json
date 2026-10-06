@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T19:38:28Z",
+  "updated_at": "2026-10-06T10:38:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -508,6 +508,24 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_buying-ai-quality-when-the-score-belongs-to-the-judge",
+      "title": "Buying AI Quality: The Score Belongs to the Judge",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-06",
       "public": false
     }
   ]
