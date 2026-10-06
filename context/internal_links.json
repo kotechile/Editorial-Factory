@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T14:28:07+00:00",
+  "generated_at": "2026-10-06T14:15:59+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -1092,6 +1092,23 @@
     {
       "site": "wellroost.com",
       "kind": "article",
+      "id": 90,
+      "slug": "remodel-capitalization-trap-shell-not-show",
+      "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
+      "url": "https://wellroost.com/remodel-capitalization-trap-shell-not-show/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
+      "modified": "2026-10-05T23:43:28",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
       "id": 86,
       "slug": "heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy",
       "title": "Heat Pumps Just Got Cheaper to Run \u2014 and Pricier to Buy",
@@ -1122,7 +1139,7 @@
         4
       ],
       "excerpt": "The average Home Equity Line of Credit (HELOC) just hit 8.194%.",
-      "modified": "2026-10-04T22:08:17",
+      "modified": "2026-10-05T14:28:26",
       "live": true
     },
     {
@@ -1173,7 +1190,7 @@
         4
       ],
       "excerpt": "California just made it legal to plug a solar panel straight into a normal wall outlet. On Sept. 30, 2026, Gov. Gavin Newsom signed Senate Bill 868 (SB 868).",
-      "modified": "2026-10-04T20:39:33",
+      "modified": "2026-10-05T14:28:37",
       "live": true
     },
     {

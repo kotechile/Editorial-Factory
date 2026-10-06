@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-05T14:28:07+00:00
+# Internal-link candidates — 2026-10-06T14:15:59+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
@@ -72,7 +72,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Tech Debt Repair calculator (calculator)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Total Comp calculator (calculator)](https://giniloh.com/calculators/total-comp/) — —
 
-## wellroost.com — 10 live article(s), 8 other target(s)
+## wellroost.com — 11 live article(s), 8 other target(s)
 
 - [A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying ‘Cloud.](https://wellroost.com/cloud-update-bricked-the-fridge-local-first/) — Smart Home & Security
 - [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
@@ -84,6 +84,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
+- [The Remodel That Pays You Back Isn’t the One You Want](https://wellroost.com/remodel-capitalization-trap-shell-not-show/) — Energy & Efficiency
 - [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
 - [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — —
 - [Lifestyle (category)](https://wellroost.com/categories/lifestyle/) — —

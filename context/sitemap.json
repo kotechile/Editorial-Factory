@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T12:07:03Z",
+  "updated_at": "2026-10-06T19:38:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -472,7 +472,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-05",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/remodel-capitalization-trap-shell-not-show/"
     },
     {
       "slug": "2026-10-05_smart-irrigation-payback-water-tier",
@@ -508,6 +509,24 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-05",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_agent-reliability-pass-k-not-one-green-run",
+      "title": "One Green Run Is Not Reliability: Gating Agents on Pass^k",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-06",
       "public": false
     },
     {
@@ -547,8 +566,116 @@
       "public": false
     },
     {
+      "slug": "2026-10-06_cloud-repatriation-break-even",
+      "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_control-tower-silent-exception",
+      "title": "Will Your Control Tower Auto-Resolve the Theft It Can't See?",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_fine-tune-vs-rent-by-token",
+      "title": "Fine-Tune or Rent: The Denominator Decides Your Break-Even",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_local-ai-payback-cloud-gpu-spread",
+      "title": "Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
       "slug": "2026-10-06_local-first-smart-home-cost-squeeze",
       "title": "The local-first smart home cost squeeze: Cloud and hardware prices rise",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_rack-power-density-ceiling-build-before-you-buy",
+      "title": "The 40 kW Line: Why the AI Rack Is a Building Project",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-10-06",
+      "public": false
+    },
+    {
+      "slug": "2026-10-06_water-leak-monitor-rate-threshold",
+      "title": "Water Leak Monitors: The Flow Rate That Decides If It Pays",
       "vertical": "smart_home_telemetry",
       "primary_keyword": "",
       "secondary_keywords": [],
