@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-10-06T14:15:59+00:00
+# Internal-link candidates — 2026-10-07T14:15:29+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
-## giniloh.com — 46 live article(s), 21 other target(s)
+## giniloh.com — 47 live article(s), 21 other target(s)
 
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
 - [Almost Half of 3D Prints Fail: The Real Cost of the Hobby](https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/) — Money & Wealth
@@ -41,6 +41,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Stripe Accounting Software: Solving the Payout Black Box with LedgerLink](https://giniloh.com/stripe-accounting-software-solving-the-payout-black-box-with/) — Business Automation & Operations
 - [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://giniloh.com/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO
 - [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO
+- [The Agent Safety Gate Moves to Verified State](https://giniloh.com/agent-safety-gate-moves-to-verified-state/) — Autonomous & Agentic Workflows:
 - [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — Money & Wealth
 - [The Same-Day Delivery Race Is Undoing a Decade of Route Optimization](https://giniloh.com/same-day-race-undoes-route-optimization/) — Supply Chain & Operations
 - [The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost](https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — Supply Chain & Operations
@@ -72,7 +73,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Tech Debt Repair calculator (calculator)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Total Comp calculator (calculator)](https://giniloh.com/calculators/total-comp/) — —
 
-## wellroost.com — 11 live article(s), 8 other target(s)
+## wellroost.com — 12 live article(s), 8 other target(s)
 
 - [A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying ‘Cloud.](https://wellroost.com/cloud-update-bricked-the-fridge-local-first/) — Smart Home & Security
 - [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
@@ -85,6 +86,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
 - [The Remodel That Pays You Back Isn’t the One You Want](https://wellroost.com/remodel-capitalization-trap-shell-not-show/) — Energy & Efficiency
+- [Water Leak Monitors: The Flow Rate That Decides If It Pays](https://wellroost.com/water-leak-monitor-rate-threshold/) — Smart Home & Security
 - [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
 - [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — —
 - [Lifestyle (category)](https://wellroost.com/categories/lifestyle/) — —

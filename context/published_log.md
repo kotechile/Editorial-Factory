@@ -54,6 +54,8 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-07 | enterprise_build_vs_buy | vendor-replacement-ai-ceiling | The Vendor-Replacement Wave Is Real — AI Just Won't Run It | https://pressflow.aichieve.net/published/2026-10-07_vendor-replacement-ai-ceiling.md | reader site only |
 | 2026-10-07 | warehouse_automation_robotics_capex | automation-payback-splits-by-sku-geometry | Amazon Builds the Robots; Walmart Builds for What They Can't Lift | https://pressflow.aichieve.net/published/2026-10-07_automation-payback-splits-by-sku-geometry.md | reader site only |
 | 2026-10-07 | agentic_resilience_failure | agent-memory-poisoning-write-path | Agent Memory Poisoning: Guard the Write, Not the Prompt | https://pressflow.aichieve.net/published/2026-10-07_agent-memory-poisoning-write-path.md | reader site only |
+| 2026-10-07 | multi_agent_enterprise_fabric | agent-tool-count-ceiling | The Tool-List Budget: How Many Tools One Agent Can Hold | https://pressflow.aichieve.net/published/2026-10-07_agent-tool-count-ceiling.md | reader site only |
+| 2026-10-07 | gpu_hardware | kv-cache-is-the-concurrency-ceiling | Your GPU Runs Out of Cache Before It Runs Out of Math | https://pressflow.aichieve.net/published/2026-10-07_kv-cache-is-the-concurrency-ceiling.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

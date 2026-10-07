@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T17:39:40Z",
+  "updated_at": "2026-10-07T18:38:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -730,6 +730,24 @@
       "public": false
     },
     {
+      "slug": "2026-10-07_agent-tool-count-ceiling",
+      "title": "The Tool-List Budget: How Many Tools One Agent Can Hold",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-07",
+      "public": false
+    },
+    {
       "slug": "2026-10-07_automation-payback-splits-by-sku-geometry",
       "title": "Amazon Builds the Robots; Walmart Builds for What They Can't Lift",
       "vertical": "warehouse_automation_robotics_capex",
@@ -768,6 +786,24 @@
     {
       "slug": "2026-10-07_gpu-hour-price-set-by-memory",
       "title": "The Price of a GPU-Hour Is Now Set by Memory, Not Compute",
+      "vertical": "gpu_hardware",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-07",
+      "public": false
+    },
+    {
+      "slug": "2026-10-07_kv-cache-is-the-concurrency-ceiling",
+      "title": "Your GPU Runs Out of Cache Before It Runs Out of Math",
       "vertical": "gpu_hardware",
       "primary_keyword": "",
       "secondary_keywords": [],

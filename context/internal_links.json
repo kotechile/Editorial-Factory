@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T14:15:59+00:00",
+  "generated_at": "2026-10-07T14:15:29+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -34,6 +34,23 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 529,
+      "slug": "agent-safety-gate-moves-to-verified-state",
+      "title": "The Agent Safety Gate Moves to Verified State",
+      "url": "https://giniloh.com/agent-safety-gate-moves-to-verified-state/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "An \\\u201dapproved\\\u201d AI action no longer means a safe result. Say an agent changes a bill to pay it.",
+      "modified": "2026-10-06T23:41:40",
+      "live": true
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -1087,6 +1104,23 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 98,
+      "slug": "water-leak-monitor-rate-threshold",
+      "title": "Water Leak Monitors: The Flow Rate That Decides If It Pays",
+      "url": "https://wellroost.com/water-leak-monitor-rate-threshold/",
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [
+        5
+      ],
+      "excerpt": "A tiny hole in a slab leaks about 0.08 gallons a minute, putting roughly 115 gallons a day into the dirt.",
+      "modified": "2026-10-06T22:26:24",
       "live": true
     },
     {
