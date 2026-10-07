@@ -128,6 +128,22 @@ Lead the cell with the one distinctive figure the source actually states (e.g. `
 eye-check that the *phrase* — not a coincidental single digit — is on the page. A figure that
 verifies this way ships a claim the source never made.
 
+**The gate fetches with a fixed, non-browser user-agent — check fetchability before you write a
+row.** `citation_hub_dossier.fetch_source` sends
+`Mozilla/5.0 (compatible; EditorialFactorySourceVerifier/1.0)`, and several hosts answer it with
+HTTP 403 even though the page is public in a browser. Observed: the entire Bureau of Labor
+Statistics site (`bls.gov` — OEWS/CES/JOLTS/ECEC), which is otherwise the best measured anchor for
+wage, turnover and benefit figures, returns 403 to the verifier and therefore cannot carry a gate
+row. Probe a candidate URL through the same fetch the gate uses before committing to it:
+
+```bash
+python3 -c "import sys; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; \
+print(c.fetch_source('<url>')['status'])"
+```
+
+A `verified` row needs `status == 'fetched'`; a 403/404/PDF row fails the floor no matter how good
+the figure is, so build the topic around sources that actually retrieve.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
