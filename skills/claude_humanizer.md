@@ -226,6 +226,25 @@ one.
   because it has no knowledge of the brief's figure set. Revert any such number to qualitative
   wording ("takes years") rather than a fabricated precision, and re-run `check_accessibility.py`
   to confirm the gate still passes.
+- **Audit names too, not only numbers (learned 2026-10-07).** The same pass must compare every proper
+  noun the frontier touched against the brief and the source: a rewrite of a paper-based article
+  renamed the cited paper's first author ("Tapio Mraz" for **Oto Mraz**), and a substituted name is
+  as load-bearing as an invented figure — it attributes a claim to someone who did not make it.
+  Correct it to the source's spelling, and do it *before* the accessibility gate rather than after:
+  Flesch and the acronym check cannot see a wrong name.
+- **Flesch ceiling on proper-noun-dense bodies (learned 2026-10-06):** the compliance-retry loop
+  can exhaust all `MAX_ATTEMPTS` and still FAIL the Flesch floor when the body is dominated by
+  long brand/product tokens. Observed on an Azure incident piece: five full rewrites scored
+  21.4 → 39.3 → 45.1 → 45.7 → 44.6 (best 45.7, floor 50) — the frontier cannot lift the score by
+  re-voicing because the syllable ratio is set by repeated proper nouns (`Azure OpenAI Service`,
+  `Application Gateway`, `ExpressRoute`, `Coordinated Universal Time`) and by average sentence
+  length. Do **not** spend more attempts; hand-tune the finished body: (1) split every sentence
+  over ~20 words into two (average sentence length carries the larger coefficient, 1.015);
+  (2) keep each long proper-noun string to ONE full mention and shorten later ones
+  (`Azure OpenAI Service` → `Azure OpenAI`; drop a repeated service list from the numbers bullets);
+  (3) swap 3-syllable generic words for 1–2-syllable ones (`provider` → `vendor`,
+  `observability` → `monitoring`). Verified: 44.6 → 53.1 PASS with facts, `[n]` citations, section
+  markers and the `## Sources` list untouched. Re-measure with `check_accessibility.py` after the tune.
 
 ## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
 
@@ -278,6 +297,8 @@ Gates — the piece FAILS the ACCESS gate if:
    The checker flags `primary_keyword` appearing ≥4× in the body as a FAIL.
 
 Do not sacrifice accuracy or a citation: this is a swap of vocabulary, never a change of fact.
+
+**The Related-reading block is reader-facing — and it can carry an undefined acronym (learned 2026-10-06).** The block is injected in the *persistence* pass (`scripts/internal_links.py`), after the frontier rewrite, and each link's reader copy ends `— more on <destination CMS category>`. When that category name contains an all-caps token (`AI Stack & Tool TCO`), the published artifact reads as an undefined-acronym FAIL even though the `_final.md` the humanizer passed was clean (`check_accessibility.py` on `published/<slug>.md` vs the final: Flesch 60.7 / FAIL — TCO, against PASS on the final). So: read the gate result from the *final*, and when a published artifact flags an acronym, check whether it came from the generated block rather than the prose — the fix is a gloss in the block or dropping the category label, never editing the article body to compensate. **Implemented 2026-10-07:** `scripts/internal_links.py::render_related_reading` now drops a category label that carries a bare all-caps token (and trims a trailing colon) before it becomes reader copy — the class is closed by construction for every newly generated block, with no invented expansion and without rewriting any existing article's footer (`python3 scripts/test_internal_links.py` 64/64). Artifacts published before that date keep the label until they are next re-pushed, so their `access:` line in `verify.sh` §5 stays flagged until then. `verify.sh` §5 reports published files advisory-only (`STRICT_ACCESS=1` makes it hard), which is why this can sit unnoticed.
 
 Post-rewrite: run `python3 scripts/check_accessibility.py <final.md>`. Report the verdict in the
 gate report. The humanizer scripts now auto-retry: if the rewrite fails the ACCESS gate, the script

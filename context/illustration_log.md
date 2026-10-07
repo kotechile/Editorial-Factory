@@ -62,3 +62,6 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-06 | `cloud-repatriation-break-even` | enterprise_tech_leadership | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/cloud-repatriation-break-even/featured.jpg` |
 | 2026-10-06 | `water-leak-monitor-rate-threshold` | smart_home_telemetry | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/water-leak-monitor-rate-threshold/featured.jpg` |
 | 2026-10-06 | `fine-tune-vs-rent-by-token` | workstation_compute_economics | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/fine-tune-vs-rent-by-token/featured.png` |
+| 2026-10-06 | `demurrage-invoice-30-day-clocks` | control_tower_exception_orchestration | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg` |
+| 2026-10-07 | `retry-is-the-failure-amplifier` | agentic_resilience_failure | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/retry-is-the-failure-amplifier/featured.jpg` |
+| 2026-10-07 | `durable-execution-not-a-transaction` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/durable-execution-not-a-transaction/featured.jpg` |

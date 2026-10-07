@@ -77,6 +77,24 @@ _LINK_ONLY_LINE = re.compile(
 # rendering — the only place the block's shape is defined
 # ─────────────────────────────────────────────────────────────────────────────
 
+_ACRONYM_RE = re.compile(r"\b[A-Z]{2,}\b")
+
+
+def _reader_safe_category(category: str) -> str:
+    """The category label is reader-facing copy, so it must survive the accessibility gate.
+
+    A destination CMS category like `AI Stack & Tool TCO` echoes a bare all-caps token into the
+    article, and `check_accessibility.py` then reads the PUBLISHED artifact as an undefined-acronym
+    FAIL even though the `_final.md` the humanizer passed was clean (learned 2026-10-06). Editing
+    the article body to compensate is the wrong fix, and inventing an expansion for a token the
+    destination site owns is a hallucination — so the label is dropped. Same for a trailing colon.
+    """
+    category = (category or "").strip().rstrip(":").strip()
+    if not category or _ACRONYM_RE.search(category):
+        return ""
+    return category
+
+
 def render_related_reading(links) -> str:
     """The reader-facing section: real anchors, on the same site, verified live.
 
@@ -88,7 +106,7 @@ def render_related_reading(links) -> str:
         return ""
     lines = ["## Related reading", ""]
     for link in links:
-        category = (link.get("category") or "").strip()
+        category = _reader_safe_category(link.get("category"))
         reason = "calculator" if link.get("kind") == "calculator" else (
             f"more on {category}" if category else "")
         lines.append(f"- [{link['anchor_text']}]({link['url']})" + (f" — {reason}" if reason else ""))

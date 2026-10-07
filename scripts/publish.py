@@ -729,7 +729,17 @@ def record_publish(log_path, values):
         while i < len(lines) and lines[i].strip().startswith("|"):
             last = i
             i += 1
-        lines.insert(last + 1, row)
+        # Idempotent by slug: re-publishing an artifact (a corrected internal-links block, a
+        # regenerated visual, a fixed body) has to UPDATE its row, never add a second one. The log's
+        # invariant is one row per file in `published/`, so a duplicate makes it a false count.
+        # (learned 2026-10-07: a re-run after an internal_links.py fix appended an identical row.)
+        slug = str(values[2]) if len(values) > 2 else ""
+        existing = next((j for j in range(table_start, last + 1)
+                         if slug and f"| {slug} |" in lines[j]), None)
+        if existing is not None:
+            lines[existing] = row
+        else:
+            lines.insert(last + 1, row)
 
     with open(log_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
@@ -841,6 +851,16 @@ def main():
     print("✓ Recorded row in context/published_log.md")
 
     # 4. Upsert to Supabase
+    #    `live_urls` carries where else the article lives (article_url / promo_url). It used to
+    #    also carry the LinkedIn post URL; that channel was removed on 2026-10-06 and the removal
+    #    deleted this dict's construction here by accident, leaving the call below referencing an
+    #    undefined name — a NameError that aborted the pass AFTER the log row was written, silently
+    #    skipping the Supabase row, the CMS draft and the sitemap refresh for every publish since.
+    live_urls = {}
+    if article_url:
+        live_urls["article_url"] = article_url
+    if promo_url:
+        live_urls["promo_url"] = promo_url
     sync_to_supabase(data, live_urls)
 
     # 4a. Create the article's draft in the destination CMS (scripts/wp_draft.py) — in this same
