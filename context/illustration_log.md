@@ -72,3 +72,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-07 | `agent-memory-poisoning-write-path` | agentic_resilience_failure | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-poisoning-write-path/featured.png` |
 | 2026-10-07 | `agent-tool-count-ceiling` | multi_agent_enterprise_fabric | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/agent-tool-count-ceiling/featured.jpg` |
 | 2026-10-07 | `kv-cache-is-the-concurrency-ceiling` | gpu_hardware | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.jpg` |
+| 2026-10-07 | `sla-credit-is-not-insurance` | enterprise_build_vs_buy | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/sla-credit-is-not-insurance/featured.jpg` |
+| 2026-10-07 | `warehouse-pick-error-tax-payback` | warehouse_automation_robotics_capex | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/warehouse-pick-error-tax-payback/featured.jpg` |

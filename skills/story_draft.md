@@ -50,6 +50,13 @@ The **TOC is render-time only** — the site derives it from the section heading
   3. `- **What I'd Watch:** <intro line naming what the writer is watching next, and why>` followed by indented sub-bullets:
      - `  - **<Move Name>:** <1-line plain-English definition explaining what it does and why it works>`
   4. `- **The Catch:** <1-2 sentences detailing the trade-offs, upfront design requirements, security/access controls, and realistic caveats>`
+- **Pre-tune the draft to the accessibility floor before Loop 3.** Run
+  `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. A draft that
+  already clears the Flesch floor (~50) and carries a first-person observer cue in every interpreting
+  section converges the frontier rewrite in ~2 attempts; a dense draft burns 4–5 attempts and then needs
+  a hand-tune anyway (`skills/claude_humanizer.md` §7–§8). Average sentence length carries the largest
+  Flesch coefficient, so split long sentences and swap long technical words for short everyday ones **at
+  drafting time** — never by dropping a figure, a name or a citation.
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
 
 ## 4. Output schema

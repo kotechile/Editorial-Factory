@@ -1,0 +1,36 @@
+# Evergreen Brief: multi_agent_enterprise_fabric — 2026-10-07
+
+**Archetype:** evergreen
+**Vertical:** multi_agent_enterprise_fabric
+**Persona:** ai_architect
+**Decision the reader is facing:** How many tools one agent may hold in a single reasoning context before its tool selection stops being reliable — and, once it does, whether to split that agent into small specialists or keep one agent and retrieve a short catalogue per query. The decision bites the moment a "do-everything" fabric agent is wired to a shared enterprise tool registry and starts calling the wrong endpoint on a write.
+**Durability:** The mechanism is architectural, not a version artefact: tool selection is a discrete-choice problem, so an agent's accuracy falls as the number of described tools in its context grows — a property of choosing among a large set, not of any one model — and the fix is a control on what the model sees. The measured rates are as of the studies cited (RAG-MCP, submitted 6 May 2025; the chance-corrected depth study, v2 7 June 2026; the MCP registry census, 14 September 2026); the exact percentages will drift as models change, but the design rule — bound each agent's live catalogue and retrieve rather than dump — does not expire, and a larger context window does not lift the ceiling.
+**De-dup:** Nearest prior artifacts for this vertical are the news brief `2026-10-07_multi_agent_enterprise_fabric_verified_brief.md` and its published output `durable-execution-not-a-transaction` (2026-10-07): that thesis is the tool *contract* and the orchestrator's missing state footprint — what an effect means — not the size of the tool catalogue or selection reliability. This piece carries a different rule (bound the in-context catalogue / retrieve a short list), a different figure set (accuracy-versus-catalogue-size and prompt-token measurements) and shares no source with it. Cross-vertical: the 2026-10-05 `multi-agent-coordination-topology-cost` evergreen (agentic_ai) prices coordination *topology*, not tool-selection reliability, and the 2026-10-07 `agent-memory-poisoning-write-path` (agentic_resilience_failure) governs the *memory* store, not the tool catalogue.
+**Thesis:** The number of tools an agent holds is an architectural budget, not a convenience: tool selection degrades as the in-context catalogue grows, so the production fix is to retrieve a short list per query or split into small specialist agents — a bigger context window and a frontier model do not raise the ceiling.
+
+**Lead:** The vertical's own `primary_angles` lines "tool schema bloat and context poisoning mitigation" and "model context protocol MCP anti-corruption layer" (`context/verticals.json`); founder-voice §3 `multi_agent_enterprise_fabric` bullet 3 ("Tool Schema Bloat & Blast-Radius Quarantines" — bound autonomous agents to lean, decoupled tool sets, ≤ 8 per agent); and customer-truth §`multi_agent_enterprise_fabric` Anecdote 2 (a dispatch agent handed 42 tool endpoints hit 63% tool-parameter hallucination and 37% task completion; refactoring into three decoupled specialists with ≤ 6 schema-validated tools each lifted completion to 94.8%). Demand corroboration only: `gsc_analyzer.py --vertical multi_agent_enterprise_fabric` returns thin striking-distance impressions on a young site, which per `skills/evergreen_topics.md` §2 never vetoes a lead.
+
+| # | Source | URL | Retrieved | Figure/claim it supports | Vendor claim or measured? |
+|---|---|---|---|---|---|
+| 1 | Gan & Sun — *RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation* (arXiv:2505.03275, 6 May 2025) | https://arxiv.org/abs/2505.03275 | 2026-10-07 | 43.13% — retrieval-scoped selection offloads tool discovery so only the relevant tool descriptions reach the model, and "more than triples tool selection accuracy (43.13% vs 13.62% baseline)" while cutting prompt tokens by over 50% on an MCP stress test | measured |
+| 2 | Repantis, Gawde, Singh & Blackwell — *How Many Tools Should an LLM Agent See? A Chance-Corrected Answer* (arXiv:2605.24660, v2 7 Jun 2026) | https://arxiv.org/abs/2605.24660 | 2026-10-07 | 93.1% — downstream validation with Claude Sonnet 4.6 shows shorter adaptive shortlists improve the model's ability to select the right tool, 93.1% versus 87.1% when always shown 5 tools; on BFCL the learned depth nearly matches showing 50 tools (90.3% vs 90.8%) while presenting only 7 on average, across registries from 20 to 3,251 tools | measured |
+| 3 | Thompson — *When too many tools become too much context* (WRITER engineering, the RAG-MCP / MCP-Gateway team's writeup) | https://writer.com/engineering/rag-mcp | 2026-10-07 | 50% — the team's own framing of the RAG-MCP result: retrieval-augmented selection "more than triples tool-selection accuracy and reduce prompt tokens by over 50%", i.e. an enterprise gateway that governs and scales the tool catalogue rather than exposing all of it | vendor claim (engineering writeup of the vendor's own paper) |
+| 4 | Trofimov & Novikov — *When Tool Calls Succeed but Workflows Fail: Anomalies at the Agent-Tool Boundary* (arXiv:2609.15397, 14 Sep 2026) | https://arxiv.org/abs/2609.15397 | 2026-10-07 | 98,291 — the declared tool surface actually exposed in production is enormous: a full snapshot of the official MCP registry measured "98,291 tools exposed by registered Model Context Protocol (MCP) servers", the catalogue size a fabric agent is expected to select from | measured |
+| 5 | OpenAI Developer Community — *Maximum amount of tools for the bot to use?* (documented vendor cap) | https://community.openai.com/t/maximum-amount-of-tools-for-the-bot-to-use/665720 | 2026-10-07 | 128 — the vendor's hard API ceiling on tools per request is 128, a limit far above the point at which selection quality actually falls, so the API maximum is not the engineering ceiling | vendor claim (documented API limit, quoted in the vendor's own developer forum) |
+
+## Candidate topics considered
+| Topic | Usefulness | Durability | Evidence | Actionability | Composite | Verdict |
+|---|---|---|---|---|---|---|
+| Bound the tool catalogue: how many tools an agent may see, and when to retrieve or split | 9 | 9 | 9 | 8 | 8.9 | **winner** |
+| Saga/compensation failure math at N chained agent steps ($0.95^{10}$) | 8 | 9 | 5 | 9 | 7.7 | dropped — the load-bearing figure is arithmetic, and the round's retry and memory-poisoning pieces already carry the compounding-failure framing |
+| The MCP anti-corruption layer: gateway versus direct system-of-record access | 9 | 9 | 5 | 7 | 7.7 | dropped — the strongest claims are architectural and rest on vendor guidance; no fetchable measured figure ties a gateway to an outcome |
+| Tool-schema quality: description hygiene and namespacing rules | 7 | 8 | 6 | 6 | 6.9 | dropped — guidance-only; no threshold or measured anchor of its own, so it reads as a listicle |
+
+## Gate result
+<!-- written by scripts/evergreen_gate.py — do not hand-edit; re-run the gate if you edit a row -->
+
+## Gate result
+
+<!-- evergreen-gate:start -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=5 fetched=5 sources=5 hosts=3 decision="sha1:b5e668fd83" dedup="matched a prior artifact: 2026-10-07_multi_agent_enterprise_" window_days=180 checked_at=2026-10-07T18:03:23+00:00 -->
+<!-- evergreen-gate:end -->

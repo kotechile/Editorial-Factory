@@ -24,6 +24,11 @@ For each claim:
    - **VERIFIED** — matched to a primary source.
    - **FLAGGED** — partially supported or a conflict found; record the discrepancy.
    - **REMOVED** — no retrievable source; delete the claim.
+4. **When a source carries both a data table and a prose gloss of it, the table is the claim of record.**
+   Survey releases and reports routinely round or misstate their own numbers (observed: a survey whose
+   prose said "54% of those building with AI replace vendors" while its own table gave 54.4% *of the
+   vendor-replacers* using AI). Extract from the table, check the arithmetic (count ÷ base), record the
+   discrepancy in the Verbatim cell, and tell the drafter not to repeat the prose gloss.
 
 ## 4. Output — the verified brief
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_verified_brief.md`:

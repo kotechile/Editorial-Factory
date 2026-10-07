@@ -97,6 +97,7 @@ prints no social copy and reads no social credential.
 
 ## 5. Failure handling
 - A failed Supabase / CMS / image step → retry once, then report with the service's error body.
+- **A persistence pass is not complete until the Supabase row, the CMS draft and the sitemap are each confirmed from their own surface.** `record_publish()` writes the `published_log.md` line *before* the Supabase, CMS and sitemap steps run, so a `NameError`/exception in a later step leaves the artifact file and the log row in place while the reader surfaces are silently skipped — the run looks half-successful and `✓ Recorded row in published_log.md` prints anyway (verified: a `NameError: name 'live_urls' is not defined` from `main()` after a deleted-feature refactor left `sync_to_supabase` referencing removed state; the abort skipped Supabase + CMS + sitemap for every publish until it was caught). Read the process exit code and the traceback, then confirm each step's own output (`[Supabase] inserted … id=…`, `WordPress draft created: post …`, `sitemap: wrote N articles`). A refactor that removes a feature must leave no call site referencing the state it deleted.
 - Log platform quirks (rate limits, token scopes) to `skills/self_improvement_eval.md`.
 
 ## 6. Deploy surface & access control

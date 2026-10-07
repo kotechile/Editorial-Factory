@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T18:38:31Z",
+  "updated_at": "2026-10-07T19:39:39Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -838,6 +838,24 @@
       "public": false
     },
     {
+      "slug": "2026-10-07_sla-credit-is-not-insurance",
+      "title": "Why Cloud Uptime SLAs Are Not Insurance",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-07",
+      "public": false
+    },
+    {
       "slug": "2026-10-07_vendor-replacement-ai-ceiling",
       "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just Won't Run It",
       "vertical": "enterprise_build_vs_buy",
@@ -852,6 +870,24 @@
         "At a glance"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-10-07",
+      "public": false
+    },
+    {
+      "slug": "2026-10-07_warehouse-pick-error-tax-payback",
+      "title": "A 1% Mispick Rate Is a Seven-Figure Line Item",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-07",
       "public": false
     }
