@@ -1,0 +1,60 @@
+{
+  "slug": "agent-memory-poisoning-write-path",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A modular memory storage bank and server rack assembly, featuring a structured data pipeline pathway routed through a heavy mechanical validation gate before entering the storage trays. Flat muted palette with one accent color of deep crimson highlighting the gate mechanism. Thin consistent line weight, recognizable hardware modules with visible depth, unlabelled, generous empty margin, sophisticated editorial elegance.",
+      "task_id": "0d67f3128f7204adec5b464ef50533d8",
+      "sha256": "sha256:b13ed30d0ee2ccc3d5b94bbdc6379cf0",
+      "generated_at": "2026-10-07T17:36:33+00:00",
+      "source_hash": "sha256:b99301a28b6d723ce79ffc07c1013544"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration of a data storage module featuring a mechanical validation checkpoint on the intake feed, technical drawing style, axonometric projection. Flat muted palette with a single stark amber accent color highlighting the validation gate. Thin consistent line weight, recognizable hardware components including memory banks, intake conduits, and an inspection valve with visible depth, unlabelled, generous empty margin.",
+  "negative_prompt": "text, words, numbers, letters, UI, labels, abstract cubes, bare geometry, realistic photography, messy, 3d render shadows, glowing brains, padlocks, shields",
+  "rationale": "The article explains the internal mechanics of how an agent processes and stores data, highlighting a specific architectural flaw (the write path vs the prompt). A technical isometric cutaway perfectly illustrates this system flow and architectural defense without relying on abstract cubes or boring generic racks.",
+  "cue": "a checked write path",
+  "subject": "an isometric technical drawing of a data memory storage module with a validation checkpoint on the intake flow",
+  "alt_text": "Isometric cutaway drawing of a data storage module with a validation checkpoint on the intake conduit.",
+  "caption": "Securing an agent requires validating data at the memory write boundary rather than just filtering the prompt.",
+  "title": "Agent Memory Write Path Cutaway",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/agent-memory-poisoning-write-path/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1590905,
+  "sha256": "sha256:9a132acbf3304c271412bd4af108f595",
+  "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a",
+  "source_chars": 4115,
+  "task_id": "8b72fd42c22b5c187ee86762b5b992f4",
+  "credits": 18.0,
+  "cost_ms": 29,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1791394776221-yz21cbvzw2f.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration of a data storage module featuring a mechanical validation checkpoint on the intake feed, technical drawing style, axonometric projection. Flat muted palette with a single stark amber accent color highlighting the validation gate. Thin consistent line weight, recognizable hardware components including memory banks, intake conduits, and an inspection valve with visible depth, unlabelled, generous empty margin.\n\nDo not include: text, words, numbers, letters, UI, labels, abstract cubes, bare geometry, realistic photography, messy, 3d render shadows, glowing brains, padlocks, shields.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-07T17:39:38+00:00"
+}

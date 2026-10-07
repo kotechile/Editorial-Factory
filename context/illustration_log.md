@@ -65,3 +65,8 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-06 | `demurrage-invoice-30-day-clocks` | control_tower_exception_orchestration | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg` |
 | 2026-10-07 | `retry-is-the-failure-amplifier` | agentic_resilience_failure | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/retry-is-the-failure-amplifier/featured.jpg` |
 | 2026-10-07 | `durable-execution-not-a-transaction` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/durable-execution-not-a-transaction/featured.jpg` |
+| 2026-10-07 | `gpu-hour-price-set-by-memory` | gpu_hardware | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/gpu-hour-price-set-by-memory/featured.png` |
+| 2026-10-07 | `vendor-replacement-ai-ceiling` | enterprise_build_vs_buy | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/vendor-replacement-ai-ceiling/featured.jpg` |
+| 2026-10-07 | `automation-payback-splits-by-sku-geometry` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg` |
+| 2026-10-07 | `agent-memory-poisoning-write-path` | agentic_resilience_failure | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-poisoning-write-path/featured.png` |
+| 2026-10-07 | `agent-memory-poisoning-write-path` | agentic_resilience_failure | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-poisoning-write-path/featured.png` |
