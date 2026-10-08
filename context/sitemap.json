@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T18:42:42Z",
+  "updated_at": "2026-10-08T19:06:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1000,6 +1000,24 @@
         "At a glance"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-10-08",
+      "public": false
+    },
+    {
+      "slug": "2026-10-08_mechanics-lien-clock-payment-release",
+      "title": "The Hidden Lien Clock Behind Your Remodel Payments",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-08",
       "public": false
     },

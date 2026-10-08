@@ -81,3 +81,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-08 | `agent-memory-tiering-l1-l4` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png` |
 | 2026-10-08 | `cache-boundary-decides-input-bill` | enterprise_ai_finops | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/cache-boundary-decides-input-bill/featured.png` |
 | 2026-10-08 | `fuel-surcharge-peg-mpg-audit` | supply_chain | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg` |
+| 2026-10-08 | `mechanics-lien-clock-payment-release` | home_ops_execution | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/mechanics-lien-clock-payment-release/featured.png` |

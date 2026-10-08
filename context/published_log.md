@@ -65,6 +65,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-08 | agentic_ai | agent-memory-tiering-l1-l4 | Long Context Is Not Memory: Why AI Agents Need Tiered State | https://pressflow.aichieve.net/published/2026-10-08_agent-memory-tiering-l1-l4.md | reader site only |
 | 2026-10-08 | enterprise_ai_finops | cache-boundary-decides-input-bill | Where the Prompt Breaks Decides the AI Bill | https://pressflow.aichieve.net/published/2026-10-08_cache-boundary-decides-input-bill.md | reader site only |
 | 2026-10-08 | supply_chain | fuel-surcharge-peg-mpg-audit | Your Fuel Surcharge Hides Three Negotiated Numbers | https://pressflow.aichieve.net/published/2026-10-08_fuel-surcharge-peg-mpg-audit.md | reader site only |
+| 2026-10-08 | home_ops_execution | mechanics-lien-clock-payment-release | The Hidden Lien Clock Behind Your Remodel Payments | https://pressflow.aichieve.net/published/2026-10-08_mechanics-lien-clock-payment-release.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
