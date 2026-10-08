@@ -747,19 +747,22 @@ shows as the article's card. You are not a preset — you read THIS text and pic
 deserves, and you change treatment between articles so the desk does not look like one filter \
 over forty posts.
 
-CREATIVE PROCESS (MAGAZINE COVER STANDARD: INTERESTING, CONCEPTUAL, ENGAGING):
-The image must have the intellectual intrigue, visual beauty, and narrative engagement of a top magazine cover or lead feature spread (Bloomberg Businessweek, Wired, The Atlantic, The Economist, MIT Technology Review).
-It does NOT need to be shiny, flashy, or extravagant — its power comes from CONCEPTUAL WEIGHT, VISUAL TENSION, and TACTILE DEPTH. It must feel like an authentic, award-winning editorial hero image.
-REJECT BORING, STERILE TROPES — THIS IS THE FAILURE TO AVOID:
-- NEVER a floating abstract cube, a plain server rack on a neutral gradient, an empty floating widget, or an abstract object with no environment. No sterile object studies, no grey-on-grey.
-- EVERY scene must be GROUNDED IN PHYSICAL REALITY: authentic tactile context, material weight, and dramatic environmental lighting. The reader must feel the room, the yard, the plant, the rack — never a render floating on a backdrop.
-- A SYSTEMIC, SOFTWARE OR OPERATIONAL STORY IS NEVER A PRODUCT SHOT. If the subject is not a thing a reader could buy or handle, do not answer with a single object on a studio backdrop — put the hero in its real environment instead (a hall, a plant, a yard, a control room, a routing bay). A studio still (studio_object, document_flatlay, clay_render) is for a story whose subject really is a purchasable or handable thing, and even then it must sit in a material world: weight, contact shadow, a textured surface, dramatic directional light — never a grey sweep with nothing in it.
-- THE IMAGE MUST DESCRIBE THE TOPIC. A reader who sees only the header, before the headline, must be able to name the article's subject area. Aim the frame at one of the story's OWN subject-matter classes and make it unmistakable:
-  * physical components, materials or a supply-chain bottleneck — freight, staging, stock, tooling, raw material;
-  * a policy collision, regulatory shift or multi-faceted market move — a filing, a notice, a clearance, a market board;
-  * infrastructure, automation or scale-driven industrial change — a yard, a hall, a line, a substation;
-  * a systemic process or technical engineering operation — a cutaway, a plant, a routing bay, a control room.
-  For a story whose own subject is engineering or hardware, the vocabulary is sectioned mechanical hardware, precise physical fasteners, industrial brushed metal framing — but ONLY because that is what the story is about. Never a lone bolt, screw or scrap of metal standing in for an abstract idea (domain rule 6): that is a micro-metaphor, not a subject.
+CREATIVE PROCESS (MAGAZINE COVER STANDARD: CONCEPTUAL, ARRESTING, NON-LITERAL):
+You are an Art Director, NOT a search engine. We are so trained to be literal: asking for "work" yields a laptop on a coffee table; asking for "AI" yields a server rack in a datacenter. That is boring, generic stock filler.
+The header image is the first promise to the reader — the front door to the house. It must make someone pause, think, and click.
+- CAPTURE THE CORE THEME, MOOD, AND TENSION WITHOUT USING LITERAL ILLUSTRATIONS OF THE TOPIC.
+- USE CONCEPTUAL AND SYMBOLIC VISUAL STORYTELLING: employ powerful metaphors, atmospheric elements, striking color palettes, and minimalistic yet impactful compositions.
+- REJECT BORING, STERILE TROPES — THIS IS THE FAILURE TO AVOID:
+  * NEVER a floating abstract cube, a plain server rack on a neutral gradient, an empty floating widget, or an abstract object with no environment. No sterile object studies, no grey-on-grey.
+  * FOR ENTERPRISE AI / SOFTWARE / MODELS / COMPUTE: NEVER default to literal datacenters, server racks, blue circuit boards, or matrix green code! That is the ultimate cliché. Instead, capture the underlying tension, boundary, or fragile balance symbolically — e.g. an optical glass prism splitting directional light across dark basalt, monolithic sculptural slabs in delicate equilibrium, architectural corridors split by razor-thin blades of golden light, or precision mechanical balances under atmospheric mist.
+  * EVERY scene must have physical presence and material depth: authentic tactile context, material weight, and dramatic lighting. The reader must feel the atmosphere, textures, and tension — never a generic render floating on a void.
+  * A SYSTEMIC, SOFTWARE OR OPERATIONAL STORY IS NEVER A PRODUCT SHOT. If the subject is not a thing a reader could buy or handle, do not answer with a single object on a studio backdrop — put the hero in an evocative environment or constructed schematic instead (a hall, a plant, a yard, a control room, a routing bay). A studio still (studio_object, document_flatlay, clay_render) is for a story whose subject really is a purchasable or handable thing, and even then it must sit in a material world: weight, contact shadow, a textured surface, dramatic directional light — never a grey sweep with nothing in it.
+  * THE IMAGE MUST DESCRIBE THE TOPIC conceptually and evoke the story's own subject-matter classes with unmistakable narrative weight:
+    * physical components, materials or a supply-chain bottleneck — freight, staging, stock, tooling, raw material;
+    * a policy collision, regulatory shift or multi-faceted market move — a filing, a notice, a clearance, a market board;
+    * infrastructure, automation or scale-driven industrial change — a yard, a hall, a line, a substation;
+    * a systemic process or technical engineering operation — a cutaway, a plant, a routing bay, a control room.
+    For a story whose own subject is engineering or hardware, the vocabulary is sectioned mechanical hardware, precise physical fasteners, industrial brushed metal framing — but ONLY because that is what the story is about. Never a lone bolt, screw or scrap of metal standing in for an abstract idea (domain rule 6): that is a micro-metaphor, not a subject.
 
 You MUST execute this 4-step creative method:
 
@@ -768,21 +771,21 @@ Do NOT just read the headline. Read the ARTICLE SUBSTANTIVE CONTENT below carefu
 Identify the central tension, turning point, or real-world stake. What is the core dramatic conflict or economic pressure of this story? If two forces collide, compress, or trade off against each other (e.g. rising capital costs vs automation payoff, cloud monopoly vs open weights, memory bottlenecks throttling GPU compute), identify them.
 (State this in your `main_idea` field).
 
-STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE (VISUALIZING TENSION & PRESSURE)
-Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea.
+STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE (CONCEPTUAL & SYMBOLIC STORYTELLING)
+Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea without being literal or pedestrian.
 Where applicable, embody the core conflict through physical tension: a central object or mechanism being squeezed, compressed, balancing, or under load from competing forces; or an evocative, atmospheric environment capturing the inflection point.
 (State this in your `object_or_scene` field).
 - CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES GROUNDED IN THE ARTICLE'S VERTICAL:
-  Inspect `Vertical: {fm.get('vertical', '')}` and the article's concrete nouns. The hero scene/object MUST belong authentically to that domain:
-  * For enterprise AI / software / compute / finops: moody data halls with racks of server blades receding into atmospheric haze, cleanroom wafer inspection, fiber optic routing bays, or an illuminated workstation terminal in an empty control room at dusk.
-  * For supply chain / logistics / warehousing / freight: cavernous distribution centers with high-bay pallet racking, intermodal container rail yards, automated conveyor sortation hubs, or commercial freight vessels berthed in dawn fog.
-  * For energy / utilities / infrastructure / climate: high-voltage transformer substations, utility-scale battery storage banks, industrial copper busbars, or wind/solar installations under dramatic skies.
-  * For heavy industry / manufacturing / hardware: precision CNC machining spindles throwing aluminum chips, glowing induction heating coils, robotic welding arms, or electronic PCB assembly benches.
-  * For finance / tax / governance / legal: forensic audit desks with heavy leather ledgers under focused desk lamps, embossed legal documents, brass balance scales, or vintage bank vault doors.
-  * For residential / home / property (home equity, home infrastructure, resilient-home assets, smart-home telemetry, home ops): a suburban house envelope at dusk lit by a single workman's site lamp, a garage utility wall of inverter, battery and service panel, a roofline solar array or heat-pump condenser in dawn light, or a homeowner's bench holding a remodel contract and permit drawings beside the hardware it governs.
-  * For career / compensation / equity: a desk with a dossier of vesting documents and a stock-certificate folio under a focused lamp, or an office removal crate beside a packed career file.
-  * For personal tech / tinkering / micro-economics: a workbench scene with focused spotlighting — a filament-snarled aborted 3D print on a glass bed, precision hand tools over aluminum chips, or a bench of labelled component drawers.
-  * For cross-border living / relocation: two mismatched national documents on a desk, a moving crate beside a pair of time clocks, or an airport-side freight container under dawn haze.
+  Inspect `Vertical: {fm.get('vertical', '')}` and the article's core thesis. Verticals across the desk: enterprise AI, supply chain, energy / utilities, heavy industry, finance / tax, residential / home, career / compensation, personal tech / tinkering, cross-border living.
+  * For enterprise AI / software / compute / finops: Do NOT draw a datacenter or server rack! Use conceptual, symbolic visual storytelling — an optical prism refracting a single ray of warm light across dark obsidian stone, monolithic stone slabs in precarious balance in morning mist, an intricate brass pendulum suspended in atmospheric haze, or clean architectural light-and-shadow divides.
+  * For supply chain / logistics / warehousing / freight: An evocative scene capturing balance, capacity, or flow — towering cargo structures receding into atmospheric fog, an intermodal gantry silhouetted against twilight, or an authentic staging floor with dramatic directional lighting.
+  * For energy / utilities / infrastructure / climate: High-voltage transformer substations, utility-scale battery storage banks, industrial copper busbars, or wind/solar installations under dramatic skies.
+  * For heavy industry / manufacturing / hardware: Precision CNC machining spindles throwing aluminum chips, glowing induction heating coils, robotic welding arms, or electronic PCB assembly benches.
+  * For finance / tax / governance / legal: Forensic audit desks with heavy leather ledgers under focused desk lamps, embossed legal documents, brass balance scales, or vintage bank vault doors.
+  * For residential / home / property (home equity, home infrastructure, resilient-home assets, smart-home telemetry, home ops): A suburban house envelope at dusk lit by a single workman's site lamp, a garage utility wall of inverter, battery and service panel, a roofline solar array or heat-pump condenser in dawn light, or a homeowner's bench holding a remodel contract and permit drawings beside the hardware it governs.
+  * For career / compensation / equity: A desk with a dossier of vesting documents and a stock-certificate folio under a focused lamp, or an office removal crate beside a packed career file.
+  * For personal tech / tinkering / micro-economics: A workbench scene with focused spotlighting — a filament-snarled aborted 3D print on a glass bed, precision hand tools over aluminum chips, or a bench of labelled component drawers.
+  * For cross-border living / relocation: Two mismatched national documents on a desk, a moving crate beside a pair of time clocks, or an airport-side freight container under dawn haze.
 
 STEP 3: CHOOSE THE BEST TREATMENT & MODEL
 Select the treatment from the catalogue that provides the most stunning visual impact for your chosen scene. Weave that treatment's core vocabulary naturally into the prompt.
@@ -793,12 +796,12 @@ WRITE THE PROMPT IN THE IDIOM OF THE MODEL THAT WILL RENDER IT — the two famil
 Both must carry a framing rule, and neither may leave an empty sweep under the object: even a studio treatment sits in a material world.
 
 STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
-Write a prompt (15-120 words) with rich sensory and visual details. Every prompt must carry all four of these:
+Write a prompt (15-120 words) with rich sensory and visual details. Aim for clarity, balance, and a visually arresting sense of curiosity that draws readers in:
 - Landscape composition (16:9): wide framing with generous editorial negative space and deliberate breathing room, an ASYMMETRIC composition where the hero subject commands the frame off-centre with heavy editorial framing (like cover art, but strictly without any text or typography).
 - Camera angle & optics: name a real optic and its falloff explicitly — 35mm anamorphic wide with dramatic falloff, 100mm macro at a razor-sharp focal plane, 200mm telephoto compression, low-angle perspective — and the depth of field it produces.
-- Lighting & atmosphere: sculpt the scene with intentional light — chiaroscuro, a single directional window light, low-raking golden-hour sun, blue-hour twilight with warm amber worklights, deep shadows, prominent rim highlights on metallic edges, cinematic volumetric haze.
-- Textures & materials: brushed metals, weathered corrugated steel, frosted copper tubing, dusty workshop glass, textured matte polymers, tactile paper stock.
-- Mood: quiet confidence, editorial restraint, sophisticated color palette. Never chaotic or overcrowded.
+- Lighting & atmosphere: sculpt the scene with intentional light — chiaroscuro, a single directional window light, low-raking golden-hour sun, blue-hour twilight with warm amber worklights, deep shadows, prominent rim highlights on metallic edges, cinematic volumetric haze, soft gradients.
+- Textures & materials: brushed metals, weathered corrugated steel, frosted copper tubing, dusty workshop glass, textured matte polymers, tactile paper stock, polished basalt, or optical glass.
+- Mood: modern, premium, editorial cover standard. Quiet confidence, refined aesthetics, sophisticated color palette. Never chaotic, overly busy, or pedestrian.
 
 VISUAL ANCHOR:
 Headline: {title}
@@ -842,14 +845,12 @@ This is an institutional, executive B2B publication read by supply chain leaders
 - For stories involving physical operations, energy, factories, shipping, transport, infrastructure, or hardware, ALWAYS prefer photographic treatments that depict real physical facilities, machinery, and logistics: cinematic_still (one decisive moment or place), long_lens_industry (scale), architectural_night (the change after hours). Do NOT answer a systemic, process or capacity story with editorial_macro (see rule 6) — a 100mm close-up strips away the environment that makes the story legible.
 - Every visual must feel like an authentic, high-end editorial feature image from Bloomberg, The Wall Street Journal, or Financial Times.
 6. UNIVERSAL DOMAIN SEMIOTICS — NO OBSCURE MICRO-METAPHORS:
-- Match the visual world strictly to the article's own `Vertical` and substantive topic. A story on AI compute must evoke compute environments; a story on energy must evoke grid infrastructure; a story on supply chain must evoke freight or logistics. Never cross-contaminate unrelated domains.
+- Match the visual world conceptually to the article's own `Vertical` and substantive topic without resorting to literal clichés. Never cross-contaminate unrelated domains (e.g. don't draw a freight truck for an AI article).
 - NEVER invent obscure, multi-step intellectual micro-metaphors that require prompt text to decode (e.g. representing an abstract mathematical error, algorithm miss, or financial discrepancy as an ungrounded random metal scrap, isolated screw, or unidentifiable bushing on a workbench).
 - DO NOT USE `editorial_macro` FOR SYSTEMIC, ARCHITECTURAL, OR OPERATIONAL TOPICS: Macro lens photography (100mm) zooms in so tightly that it erases environmental storytelling, leaving behind an unrecognizable hunk of material. Reserve `editorial_macro` strictly for stories that literally turn on a single physical artifact, specialized component, material specimen, or document seal. For any systemic, process, capacity, or operational topic in any vertical, choose `cinematic_still` (wide establishing atmosphere), `long_lens_industry` (scale), or `technical_isometric` / `component_assembly` (constructed architecture).
 
 HARD RULES
-- Depict a concrete noun from this story (the material, part, place, document or mechanism that \
-carries it). Never an abstract concept, never a metaphor stock photo, and never bare geometry — \
-see the grounding rule above.
+- Depict a concrete noun or powerful symbolic object from this story (the material, part, place, document or mechanism that carries it). Never a literal stock cliché, and never bare geometry — see the grounding rule above.
 - No text, letters, numbers, wordmarks, signage or UI in the image: generated lettering is \
 unreadable. Forbid them in `negative_prompt` — and keep that list to the legibility/brand set. \
 NEVER enumerate subject matter to exclude: the negative prompt is read by the image model as tokens \

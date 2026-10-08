@@ -19,15 +19,20 @@ isolated widget, screw, or CNC scrap block on a table) and zooming in with a mac
 destroys narrative context: the reader sees unidentifiable shop scrap instead of the actual operational domain.
 Editorial imagery must have **instantly readable domain semiotics** anchored directly in the article's own vertical.
 
-### The 4-Step Creative Process (Magazine Cover Standard: Interesting, Conceptual, Engaging)
-To ensure editorial imagery matches the visual intrigue, conceptual depth, and aesthetic engagement of a top magazine cover or lead feature spread (Wired, The Atlantic, Bloomberg Businessweek, The Economist):
-- **Intriguing and Beautiful, Not Extravagant or Shiny**: The image does not need to be flashy sci-fi glitter or over-the-top rendering; its impact comes from **conceptual weight, visual tension, and tactile authenticity**. It conveys quiet confidence and editorial sophistication.
-- **Landscape Composition**: Keep the landscape header format (`16:9` or `3:2`) for CMS featured headers, composed with the generous negative space and dramatic focal weighting of premium editorial cover art.
+### The 4-Step Creative Process (The Art Director Standard: Conceptual, Arresting, Non-Literal)
+**Talk to the AI like an Art Director, NOT a search engine.** We are so trained to be literal: asking for "work" yields a laptop on a coffee table; asking for "AI" yields a server rack in a datacenter. That is generic, soulless stock filler. The header image is the first promise to a reader — the front door to the house. It must make someone pause, think, and click.
+
+Core principles:
+- **Capture Core Theme, Mood, and Tension Without Literal Illustrations**: Avoid pedestrian 1-to-1 depictions. For AI, software, or models, NEVER default to literal datacenters, server racks, or blue circuit traces.
+- **Conceptual & Symbolic Visual Storytelling**: Use evocative metaphors, atmospheric elements, striking color palettes, and minimalistic yet impactful compositions. Embody tensions through visual symbolism (e.g. an optical glass prism splitting directional light across dark obsidian, monolithic stone slabs in delicate equilibrium, architectural corridors divided by razor-thin blades of light).
+- **Visually Arresting Sense of Curiosity**: Create clarity, balance, and intrigue. The image should feel modern, premium, and editorial (like Medium.com feature spreads, The Atlantic, Wired, Bloomberg Businessweek).
+- **Refined Aesthetics & Lighting**: Ultra-high quality, crisp directional lighting (chiaroscuro, golden hour, blue hour), soft gradients, tactile textures, and generous negative space. Zero in-image text, logos, or human faces.
+- **Landscape Composition**: Keep the landscape header format (`16:9` or `3:2`) for CMS featured headers, composed with asymmetrical balance and deliberate breathing room.
 
 1. **Read Substantive Content & Extract Main Idea**: The LLM reads the core body of the article (not just the headline/excerpt) to identify the central tension, turning point, or real-world stake. Where two forces collide or squeeze an outcome, identify both. Recorded in `main_idea`.
-2. **Select an Evocative Hero Object or Scene (Visualizing Tension & Pressure)**: Choose a tangible, storytelling hero object or authentic narrative scene with character, texture, and drama. Where applicable, represent the central dilemma through physical tension: an object caught between opposing forces, compressed by constraints, balancing on a knife edge, or exposed in an atmospheric environment. Never sterile cubes or plain server racks. Recorded in `object_or_scene`.
+2. **Select an Evocative Hero Object or Scene (Conceptual & Symbolic Storytelling)**: Choose a tangible, storytelling hero object or authentic narrative scene with character, texture, and drama without being pedestrian or literal. Embody the central dilemma through physical tension: an object caught between opposing forces, compressed by constraints, balancing on a knife edge, or exposed in an atmospheric environment. Never generic server racks, datacenters for AI, or sterile cubes. Recorded in `object_or_scene`.
 3. **Choose the Best Treatment & Model**: Select the treatment from the catalogue that provides maximum visual impact, weaving that treatment's core vocabulary naturally into the prompt.
-4. **Craft a Cinematic, High-Texture Prompt**: Specify camera angle, lens/optics (e.g. 35mm anamorphic wide, 100mm macro), dramatic atmospheric lighting (chiaroscuro, deep shadows, single directional spotlight, low-raking sunlight, rim highlights), rich physical textures (weathered metals, frosted copper, polymers, tactile paper), and generous negative space. Zero in-image text or typography.
+4. **Craft a Cinematic, High-Texture Prompt**: Specify camera angle, lens/optics (e.g. 35mm anamorphic wide, 100mm macro), dramatic atmospheric lighting (chiaroscuro, deep shadows, single directional spotlight, low-raking sunlight, rim highlights), rich physical textures (weathered metals, frosted copper, polished basalt, optical glass), and generous negative space. Zero in-image text or typography.
 
 ## 2. The treatment catalogue (`STYLES` in `scripts/illustration_creator.py`)
 The art director may only choose from the catalogue; it is stated to the director verbatim, and
