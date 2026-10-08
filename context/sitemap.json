@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T19:37:59Z",
+  "updated_at": "2026-10-08T20:06:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1018,6 +1018,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-08",
+      "public": false
+    },
+    {
+      "slug": "2026-10-08_safety-stock-forecast-error-not-demand-noise",
+      "title": "Safety Stock Sizing: Why Your Buffer Uses the Wrong Number",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-08",
       "public": false
     },

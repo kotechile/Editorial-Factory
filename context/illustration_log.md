@@ -83,3 +83,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-08 | `fuel-surcharge-peg-mpg-audit` | supply_chain | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg` |
 | 2026-10-08 | `mechanics-lien-clock-payment-release` | home_ops_execution | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/mechanics-lien-clock-payment-release/featured.png` |
 | 2026-10-08 | `split-year-two-clock-seam` | expat_cross_border_relocation | `component_assembly` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/split-year-two-clock-seam/featured.png` |
+| 2026-10-08 | `safety-stock-forecast-error-not-demand-noise` | demand_sensing_advanced_sop | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/safety-stock-forecast-error-not-demand-noise/featured.jpg` |
