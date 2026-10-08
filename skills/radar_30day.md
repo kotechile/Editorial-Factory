@@ -105,3 +105,10 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
   NOT widen the window past 45 days to smuggle a stale survey (e.g. an April survey into a
   September window) past the 30-day freshness gate. Anchor-driven weakness is a cadence fact, not
   a sweep defect.
+- **A report's title year is not its fielding date.** A study released (or re-surfaced) *this month*
+  can rest on a survey fielded a quarter earlier — date the *figure*, not the cover. Observed
+  2026-10-08: an Incisiv/Anaplan "2026 Supply Chain Resilience & AI Adoption Study" resurfaced in
+  the window via a Sept/Oct webinar and white paper, but its 298-executive survey was fielded in
+  Q1 2026 and the release was 28 April 2026 → out of window; it was carried as dated background,
+  not an anchor. Apply the same check to a "new" annual report whose underlying data predates the
+  window.
