@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T19:39:39Z",
+  "updated_at": "2026-10-08T10:36:38Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -889,6 +889,24 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-07",
+      "public": false
+    },
+    {
+      "slug": "2026-10-08_agent-failure-topology-not-model",
+      "title": "Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-08",
       "public": false
     }
   ]
