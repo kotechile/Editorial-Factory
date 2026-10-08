@@ -667,8 +667,20 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
 _LD_SCRIPT = re.compile(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', re.S | re.I)
 
 
+# WordPress's `wptexturize` rewrites straight quotes/apostrophes on save (a caption the desk sent as
+# "the day's work" reads back as "the day’s work"), so a raw string comparison reports a failure on a
+# perfectly good push whenever the alt text, title or caption carries an apostrophe. Fold the
+# typographic forms the CMS produces back to ASCII before comparing — both sides pass through here,
+# so the fold is symmetric and can only remove false negatives, never manufacture a pass.
+_TYPOGRAPHY_FOLD = str.maketrans({
+    "\u2018": "'", "\u2019": "'", "\u201c": '"', "\u201d": '"',
+    "\u2013": "-", "\u2014": "-", "\u2026": "...", "\u00a0": " ",
+})
+
+
 def _plain_text(value) -> str:
-    """Reader-visible text of a CMS field: unescaped, tags dropped, whitespace collapsed.
+    """Reader-visible text of a CMS field: unescaped, tags dropped, typography folded, whitespace
+    collapsed.
 
     A CMS read-back is not the string that was written — WordPress entity-encodes punctuation
     (`&#8217;`) and wraps `excerpt` in `<p>…</p>` — so a raw comparison reports a failure on a
@@ -676,6 +688,7 @@ def _plain_text(value) -> str:
     """
     text = html.unescape(str(value or ""))
     text = re.sub(r"<[^>]+>", " ", text)
+    text = text.translate(_TYPOGRAPHY_FOLD)
     return re.sub(r"\s+", " ", text).strip()
 
 

@@ -604,6 +604,20 @@ check("a read-back in WordPress's own shape ({raw, rendered}) is NOT a defect",
 check("matching fields report nothing",
       wd.media_problems(meta, {"alt_text": meta["alt_text"], "title": meta["title"],
                                "caption": meta["caption"]}) == [])
+# The defect this pins: WordPress's wptexturize stores a straight apostrophe as a curly one, so the
+# read-back never matched a caption the desk sent with "day's" in it and --reimage reported
+# "the CMS does not hold what was sent" on a push that was in fact correct.
+_apostrophe = {**meta, "caption": "Statutory clocks run after the day's work ends."}
+check("a caption WordPress curled (day's -> day\\u2019s) is not a defect",
+      wd.media_problems(_apostrophe, {"alt_text": _apostrophe["alt_text"],
+                                      "title": _apostrophe["title"],
+                                      "caption": "Statutory clocks run after the day\u2019s work ends."}) == []
+      and wd.media_problems(_apostrophe, {"alt_text": _apostrophe["alt_text"],
+                                          "title": _apostrophe["title"],
+                                          "caption": "Statutory clocks run after the day&#8217;s work ends."}) == [],
+      str(wd.media_problems(_apostrophe, {"caption": "Statutory clocks run after the day\u2019s work ends."})))
+check("...while a genuinely different caption is still caught",
+      wd.media_problems(_apostrophe, {"caption": "A totally different sentence."}) != [])
 check("an unattached image is fine, a missing featured_media on the post is not",
       wd.delivery_problems({"featured_media": 3, "title": "t", "excerpt": "e", "content": "c"},
                            {"featured_media": 0, "title": {"raw": "t"}, "excerpt": {"raw": "e"},
