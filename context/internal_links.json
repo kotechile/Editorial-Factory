@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T14:15:29+00:00",
+  "generated_at": "2026-10-08T14:15:45+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -34,6 +34,74 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 582,
+      "slug": "warehouse-pick-error-tax-payback",
+      "title": "A 1% Mispick Rate Is a Seven-Figure Line Item",
+      "url": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "A single wrong pick looks like a rounding error until a team prices the annual leak.",
+      "modified": "2026-10-08T12:35:21",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 584,
+      "slug": "agent-failure-topology-not-model",
+      "title": "Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model",
+      "url": "https://giniloh.com/agent-failure-topology-not-model/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "When an agent stack fails, the common reflex is to buy a bigger model. Two new papers point to a different fix: the shape of the system.",
+      "modified": "2026-10-08T12:34:59",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 586,
+      "slug": "token-price-record-low-budget-overrun",
+      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn\u2019t.",
+      "url": "https://giniloh.com/token-price-record-low-budget-overrun/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Silicon Data\u2019s token-price index just printed $0.96 per million tokens \u2014 the first reading under a dollar and the cheapest rate on record.",
+      "modified": "2026-10-08T12:34:18",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 588,
+      "slug": "freight-scale-bet-vs-contract-duration",
+      "title": "The $5.8 Billion Freight Bet Meets a Market That Won\u2019t Commit",
+      "url": "https://giniloh.com/freight-scale-bet-vs-contract-duration/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "C.H. Robinson is spending $5.8 billion to build the densest freight network in North America.",
+      "modified": "2026-10-08T12:33:11",
+      "live": true
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -1104,6 +1172,23 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 96,
+      "slug": "local-first-smart-home-cost-squeeze",
+      "title": "The local-first smart home cost squeeze: Cloud and hardware prices rise",
+      "url": "https://wellroost.com/local-first-smart-home-cost-squeeze/",
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [
+        5
+      ],
+      "excerpt": "Both ways to run a smart home got more expensive in the same week.",
+      "modified": "2026-10-08T01:55:23",
       "live": true
     },
     {

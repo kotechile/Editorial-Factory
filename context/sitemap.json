@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T13:08:58Z",
+  "updated_at": "2026-10-08T17:36:12Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -672,7 +672,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/local-first-smart-home-cost-squeeze/"
     },
     {
       "slug": "2026-10-06_rack-power-density-ceiling-build-before-you-buy",
@@ -889,11 +890,31 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/warehouse-pick-error-tax-payback/"
     },
     {
       "slug": "2026-10-08_agent-failure-topology-not-model",
       "title": "Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-08",
+      "public": true,
+      "url": "https://giniloh.com/agent-failure-topology-not-model/"
+    },
+    {
+      "slug": "2026-10-08_agent-memory-tiering-l1-l4",
+      "title": "Long Context Is Not Memory: Why AI Agents Need Tiered State",
       "vertical": "agentic_ai",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -943,7 +964,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/freight-scale-bet-vs-contract-duration/"
     },
     {
       "slug": "2026-10-08_token-price-record-low-budget-overrun",
@@ -961,7 +983,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/token-price-record-low-budget-overrun/"
     }
   ]
 }
