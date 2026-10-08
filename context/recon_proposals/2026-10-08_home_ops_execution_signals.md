@@ -1,0 +1,31 @@
+# Signals: home_ops_execution — 2026-10-08
+**Window:** 2026-09-08 → 2026-10-08
+**Queries run:** 14 (home_lifestyle_intel `--recent 30` + `--search` + 12 web-fallback sweeps: icc_safe_codes / ashrae_standards / contractor_talk / journal_light_construction / reddit_home, plus municipal-permit-reform, contractor-licensing, mechanics-lien/retainage, unpermitted-work-insurance, ICC 2027 I-Codes, AIM Act R-410A, DOE water-heater, FEMA rebuild-permit, HVAC delta-T angles)
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | Minneapolis slashes residential permit review times — kitchen/porch/room 2–3 weeks → 4 days; roof permits ~1 week → 1 day; toilet/furnace/AC/window permits issued instantly online | https://www.youtube.com/watch?v=woNhYA0meyQ | 2026-10-02 | Mayor Jacob Frey & CPED director Eric Hansen (cityofminneapolis press conference): "It used to take between two and three weeks to add on a porch, to renovate a kitchen, or to add a room. Going forward, it's going to take four days… It used to take about one week to get a permit for replacing your roof. Moving forward, one day"; permits for toilets/furnaces/AC/plumbing/windows "issued instantaneously" online; city issues ~12,000 permits/year; "cut by more than half the permit review process" | permitting / preventative maintenance vendor contracts | 80 |
+| 2 | Pittsburgh implements Phase 1 of comprehensive permitting reform — routine home-improvement permits >1 week → as little as 1 business day | https://www.pittsburghpa.gov/News-articles/Homepage/Mayor-O%E2%80%99Connor-Announces-Updates-for-Phase-1-of-Comprehensive-Permitting-Reforms | 2026-09-23 | Mayor Corey O'Connor: "People doing routine home improvements used to have to wait over a week to get their permit and now will get that permit in as little as one business day"; Phase 1 lands <9 months after a day-one Executive Order directing departments to rebuild the permit process | permitting / scope-of-work | 78 |
+| 3 | California AB 1751 (Missing Middle Townhome Ownership Act) signed — ministerial, by-right approval pathway for townhome developments up to 150 units; CEQA review eliminated | https://www.hklaw.com/en/insights/publications/2026/10/california-enacts-ab-1751-streamlined-path-for-missing-middle | 2026-09-29 | Gov. Newsom signed AB 1751 on Sept 29, 2026; effective Jan 1, 2027; first-of-its-kind ministerial approval pathway for qualifying townhome-ownership developments up to 150 units; developer/for-sale side, not the owner-occupant remodel beat | permitting / (supply-side, outside pro_homeowner) | 66 |
+| 4 | New Mexico adopts 2024 Plumbing + Mechanical Codes (2024 NM Uniform Plumbing/Mechanical Code) | https://www.icc-nta.org/code-updates | 2026-09-08 | ICC NTA code-update log: "September 8, 2026 — The state of New Mexico will be adopting… 2024 New Mexico Plumbing Code / 2024 New Mexico Mechanical Code"; single-state model-code adoption | permitting / code adoption | 62 |
+| 5 | 2027 I-Codes finalization advances — IBC, IFC and IWUIC published Sept 2026 (IRC deferred to Feb 2027) | https://www.nahb.org/blog/2026/08/2027-building-codes-i-code-final-vote | 2026-09-30 | NAHB: 2027 I-Codes publish in stages — IBC/IFC/IWUIC "anticipated in September 2026", IRC "in February 2027"; NAHB had an 85% success rate on residential proposals; payload (modular/off-site standards, 500-yr floodplain) skews builder-side | code adoption / inspection | 64 |
+
+**Dropped (< 60 intensity or out-of-window anchor / retread):**
+- **Florida § 489.1295 "Prohibition Against Nonpayment"** (Peckar & Abramson analysis, originally published 2026-09-15/29) — the *analysed event* is SB 290 (Ch. 2026-3), **effective July 1, 2026**, ~3 months before the window start. Anchor-freshness rule (`virality_judge.md` §3.5): a candidate whose load-bearing claim is dated outside the window cannot be carried past the freshness gate. Retread-risk ≥ drop.
+- **Colorado HB26-1311 retainage-bond law** — signed May 7, 2026, **effective August 12, 2026** (~4 weeks pre-window); darkwellcapital analysis Oct 5. Out-of-window anchor.
+- **Alabama Act 2026-396** (SB 279) — effective **Oct 1, 2026** (in-window) but already scored **6.3** in the 10-03 run (single-state, commercial-GC regime under § 34-8-7, weak pro_homeowner fit). Retread.
+- **EPA AIM Act R-410A install-deadline rollback** — no-action assurance lapsed Sep 1 (now just *before* the window start); substantive anchors Dec 22 2025 / May 26 / Jul 27. Retread (dropped 6.2 in the 10-01 run).
+- **DOE commercial gas water-heater condensing mandate (Oct 6)** — commercial-skewed; retread (dropped 6.3 in the 10-01 run).
+- **California Civil Code § 8811 5% retainage cap / Ohio HB 614 / Louisiana Act 757 / CA SB 517 home-improvement-contract disclosures** — the Jan/Aug 2026 contractor/permitting law wave, ~3–9 months old, out of window (`radar_30day.md` §4: never widen past 45 days).
+- **MA Permit Extension Act / MA mechanics-lien-law articles** — undated evergreen explainers or 2024/2025 anchors; not anchored to the window.
+- **home_lifestyle_intel MCP**: 40 items across 4 categories — **zero** map to contractor/permitting/lien/HVAC-diagnostic angles (same as 09-24 / 10-01 / 10-03; this vertical must lean on web fallbacks). Only tangential item is Canary Media VFD/motor-efficiency (Oct 5, commercial-industrial, wrong persona).
+
+## Candidate Synthesis Pairs
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=5 candidates=0 heuristic=- window=2026-09-08..2026-10-08 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+_No mechanically valid pair. That is a legitimate answer, not a failure: the Judge may still find a synthesis this token layer cannot see._
+<!-- synthesis-seed:end -->
