@@ -80,3 +80,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-08 | `forecast-accuracy-is-not-shock-protection` | demand_sensing_advanced_sop | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg` |
 | 2026-10-08 | `agent-memory-tiering-l1-l4` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png` |
 | 2026-10-08 | `cache-boundary-decides-input-bill` | enterprise_ai_finops | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/cache-boundary-decides-input-bill/featured.png` |
+| 2026-10-08 | `fuel-surcharge-peg-mpg-audit` | supply_chain | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg` |
