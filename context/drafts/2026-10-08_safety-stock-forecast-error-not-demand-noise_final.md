@@ -7,6 +7,12 @@ date: 2026-10-08
 slug: safety-stock-forecast-error-not-demand-noise
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/safety-stock-forecast-error-not-demand-noise/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Towering warehouse pallet racks stacked deep with shrink-wrapped inventory receding into atmospheric haze."
+image_caption: "A single statistical choice in a planning formula determines the physical scale of idle inventory held across the network."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

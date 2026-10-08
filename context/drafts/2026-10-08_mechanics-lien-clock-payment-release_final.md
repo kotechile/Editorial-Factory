@@ -7,6 +7,12 @@ date: 2026-10-08
 slug: mechanics-lien-clock-payment-release
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/mechanics-lien-clock-payment-release/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "Suburban home under exterior renovation at dusk illuminated by a single amber worklight."
+image_caption: "Statutory lien clocks continue to run long after the day's work ends on a home remodel."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

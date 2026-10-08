@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Feed a safety-stock formula the standard spread of demand, and it builds a much bigger buffer than the forecast actually needs."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/safety-stock-forecast-error-not-demand-noise/featured.jpg"
-image_style: "editorial_macro"
+image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Industrial scale holding a small aluminum part next to a massive cast-iron weight."
-image_caption: "Using the wrong metric to size safety stock creates a massive mismatch between what is needed and what is held."
+image_alt: "Towering warehouse pallet racks stacked deep with shrink-wrapped inventory receding into atmospheric haze."
+image_caption: "A single statistical choice in a planning formula determines the physical scale of idle inventory held across the network."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
