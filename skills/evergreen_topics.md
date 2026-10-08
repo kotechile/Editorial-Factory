@@ -144,6 +144,18 @@ print(c.fetch_source('<url>')['status'])"
 A `verified` row needs `status == 'fetched'`; a 403/404/PDF row fails the floor no matter how good
 the figure is, so build the topic around sources that actually retrieve.
 
+**A `fetched` row can still fail as `figure_absent` — the page loaded and the number did not.**
+Several vendor rate-card hosts render their tables client-side, so the verifier gets HTTP 200 with a
+body that carries no numeric tokens at all. Observed 2026-10-08 building the supply_chain evergreen
+brief: `fedex.com`, `odfl.com`, `xpo.com`, `tforcefreight.com`, `saia.com` and `ups.com` fuel-surcharge
+pages either 404 or return a `fetched` page whose text is navigation only, so a row on a carrier's own
+published surcharge table fails the floor even though the table is visible in a browser.
+`fred.stlouisfed.org` is unreachable to the verifier outright. The source types that reliably return the
+figure as text are government statistics pages (`eia.gov` works where `bls.gov` 403s), arXiv/doc sites,
+and industry explainers — so check the figure, not just `status`, before committing a row:
+`python3 -c "import sys; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; \
+print(c.figure_evidence('<figure>', c.fetch_source('<url>')['text']))"`.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
