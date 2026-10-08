@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T11:07:19Z",
+  "updated_at": "2026-10-08T11:37:14Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -906,6 +906,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-08",
+      "public": false
+    },
+    {
+      "slug": "2026-10-08_freight-scale-bet-vs-contract-duration",
+      "title": "The $5.8 Billion Freight Bet Meets a Market That Won't Commit",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-08",
       "public": false
     },
