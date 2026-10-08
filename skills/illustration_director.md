@@ -13,6 +13,11 @@ failure it prevents is an image that is *wrong* in a way that costs — legible 
 into the pixels, a real company's mark, a stock-photo cliché, alt text a screen reader cannot use.
 The third failure is **boring, sterile images**: generic server blades, blank modular cubes, or unlatched
 gates on flat backgrounds that lack soul, drama, and narrative weight.
+The fourth failure is **unrelated, obscure micro-metaphors**: inventing a contrived multi-step intellectual
+metaphor (such as depicting an abstract formula error, software queue miss, or financial variance as a random
+isolated widget, screw, or CNC scrap block on a table) and zooming in with a macro lens. The result completely
+destroys narrative context: the reader sees unidentifiable shop scrap instead of the actual operational domain.
+Editorial imagery must have **instantly readable domain semiotics** anchored directly in the article's own vertical.
 
 ### The 4-Step Creative Process (Magazine Cover Standard: Interesting, Conceptual, Engaging)
 To ensure editorial imagery matches the visual intrigue, conceptual depth, and aesthetic engagement of a top magazine cover or lead feature spread (Wired, The Atlantic, Bloomberg Businessweek, The Economist):
@@ -66,11 +71,23 @@ articles were illustrated as "a rectangle with a colour band" and "a block resti
 process diagrams and conceptual models — with a mechanism in the frame, never a bare shape.
 
 ## 3. Non-negotiable direction rules (enforced in code, not just in the prompt)
-1. **One concrete noun from the story, anchored by the Title + Excerpt.** The art director
+1. **One concrete noun from the story, anchored by the Title + Excerpt with readable domain semiotics.** The art director
    reads the substantive article body to extract the `main_idea` and choose an evocative `object_or_scene`.
    The brief must carry a `cue`: a phrase of ≤10 words copied verbatim from the article that drove
    the treatment. The image must visually symbolize the concept in the Headline + Excerpt across all
    treatments — never generic office workers at desks, and never unformed paper scraps or bare geometry.
+   Crucially, the image must belong unmistakably to the domain of the story (e.g. AI/compute -> server
+   halls/wafers; energy -> substations/busbars; logistics -> freight hubs/staging bays; finance/legal ->
+   audits/ledgers/seals; residential/property -> a house envelope, a garage utility wall, a roofline array).
+   The director's own vertical→domain list must name a domain for **every** vertical the desk publishes
+   to (public.vertical_sites, mirrored in `context/verticals.json`), including the whole residential
+   set that feeds wellroost.com — a list that stops at finance leaves half the desk with no grounding
+   and is how a home story comes back as an abstract house-with-hourglass collage.
+   Never cross-contaminate unrelated domains or invent obscure micro-metaphors
+   (like depicting mathematical or algorithmic variance as a lone screw or scrap block). Never use
+   `editorial_macro` for systemic, architectural, or operational topics where extreme close-ups strip away
+   environmental meaning — and never *recommend* it for those topics elsewhere in the commission (rule 5's
+   photographic-preference list must not name it, or the two rules cancel out).
 2. **No legible text, ever.** No text, letters, numbers, wordmarks, signage or UI in the frame
    (they render as rubble) — the negative prompt must forbid them explicitly and the positive
    prompt may not *ask* for them ("a sign reading…" is refused).
@@ -170,3 +187,9 @@ When a generated header fails a rule that is not yet pinned by `scripts/test_ill
 (a new class of unusable prompt, a new metadata defect), add the rule to `validate_brief` and the
 regression case to the suite in the same change — the gate (`verify.sh` §8.56) runs the suite
 hermetically on every deploy.
+
+A rule that lives only in the commission (domain grounding, treatment-vs-topic judgement) is not
+mechanically checkable in the brief alone, so pin its *contract* instead: the suite asserts the
+commission still carries the domain mandate and that its vertical→domain list names a domain for
+every desk vertical. When a vertical is added to `public.vertical_sites`, add its domain bullet to
+`director_prompt` STEP 2 and the matching assertion to the suite in the same change.

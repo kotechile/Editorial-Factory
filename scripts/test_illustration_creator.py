@@ -359,6 +359,20 @@ check("...and the commission carries the domain-grounding mandate",
       "DOMAIN GROUNDING" in seen[0] and "bare geometry" in seen[0])
 check("...and the commission anchors on Headline and Excerpt",
       "VISUAL ANCHOR" in seen[0] and "Headline:" in seen[0] and "Excerpt:" in seen[0])
+# Every vertical the desk publishes to must have a domain bullet: a list that stopped at finance left
+# the whole residential set (wellroost.com) ungrounded, which is how a home story came back as an
+# abstract house-with-hourglass collage. And rule 5 must not *recommend* editorial_macro for the
+# operational topics rule 6 forbids it on, or the two rules cancel out.
+_DOMAINS = ["enterprise AI", "supply chain", "energy / utilities", "heavy industry", "finance / tax",
+            "residential / home", "career / compensation", "personal tech / tinkering",
+            "cross-border living"]
+check("...and the vertical -> domain list names a domain for every family on the desk",
+      all(d in seen[0] for d in _DOMAINS), str([d for d in _DOMAINS if d not in seen[0]]))
+_photo_rule = next((ln for ln in seen[0].splitlines()
+                    if ln.startswith("- For stories involving physical operations")), "")
+_recommended = _photo_rule.split("Do NOT")[0]
+check("...and the photographic-preference rule no longer recommends editorial_macro for operational work",
+      bool(_photo_rule) and "editorial_macro" not in _recommended, _photo_rule)
 
 print("\nrotation")
 history = ["editorial_macro", "cinematic_still", "clay_render", "document_flatlay", "paper_collage"]

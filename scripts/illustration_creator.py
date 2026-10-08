@@ -689,11 +689,17 @@ STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE (VISUALIZING TENSION & PRESSURE
 Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea.
 Where applicable, embody the core conflict through physical tension: a central object or mechanism being squeezed, compressed, balancing, or under load from competing forces; or an evocative, atmospheric environment capturing the inflection point.
 (State this in your `object_or_scene` field).
-- CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES WITH CHARACTER AND TEXTURE:
-  * For industrial / supply chain / manufacturing: an authentic, textured industrial setting — a cinematic container port at blue hour with towering gantry cranes, an ocean vessel berthed in coastal fog, a manufacturing line with glowing metal or precision machining residue, an industrial freight scale with heavy cargo, a desert highway border crossing at sunset.
-  * For hardware / tinkering / 3D printing / engineering: an evocative workshop scene with focused spotlighting — e.g. an aborted 3D print with a tangled bird's nest of vibrant filament over an unfinished gear on a glass bed, a precision CNC milling head over gleaming aluminum chips, a technician's bench with intricate wiring and circuit probes.
-  * For energy / housing / climate: high-voltage copper busbars, inverter circuits gleaming in evening light, a residential battery backup system in a clean garage workshop, or rooftop solar arrays catching the first light of dawn.
-  * For software / AI / finance / governance: choose an evocative physical metaphor or forensic environment — a glowing disconnected terminal in an empty control room at dusk, a physical relay bypass wired around a dark logic board, a forensic accounting workspace with heavy leather ledger books under an architect's desk lamp, or fiber optic bundles glowing in a moody data vault.
+- CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES GROUNDED IN THE ARTICLE'S VERTICAL:
+  Inspect `Vertical: {fm.get('vertical', '')}` and the article's concrete nouns. The hero scene/object MUST belong authentically to that domain:
+  * For enterprise AI / software / compute / finops: moody data halls with racks of server blades receding into atmospheric haze, cleanroom wafer inspection, fiber optic routing bays, or an illuminated workstation terminal in an empty control room at dusk.
+  * For supply chain / logistics / warehousing / freight: cavernous distribution centers with high-bay pallet racking, intermodal container rail yards, automated conveyor sortation hubs, or commercial freight vessels berthed in dawn fog.
+  * For energy / utilities / infrastructure / climate: high-voltage transformer substations, utility-scale battery storage banks, industrial copper busbars, or wind/solar installations under dramatic skies.
+  * For heavy industry / manufacturing / hardware: precision CNC machining spindles throwing aluminum chips, glowing induction heating coils, robotic welding arms, or electronic PCB assembly benches.
+  * For finance / tax / governance / legal: forensic audit desks with heavy leather ledgers under focused desk lamps, embossed legal documents, brass balance scales, or vintage bank vault doors.
+  * For residential / home / property (home equity, home infrastructure, resilient-home assets, smart-home telemetry, home ops): a suburban house envelope at dusk lit by a single workman's site lamp, a garage utility wall of inverter, battery and service panel, a roofline solar array or heat-pump condenser in dawn light, or a homeowner's bench holding a remodel contract and permit drawings beside the hardware it governs.
+  * For career / compensation / equity: a desk with a dossier of vesting documents and a stock-certificate folio under a focused lamp, or an office removal crate beside a packed career file.
+  * For personal tech / tinkering / micro-economics: a workbench scene with focused spotlighting — a filament-snarled aborted 3D print on a glass bed, precision hand tools over aluminum chips, or a bench of labelled component drawers.
+  * For cross-border living / relocation: two mismatched national documents on a desk, a moving crate beside a pair of time clocks, or an airport-side freight container under dawn haze.
 
 STEP 3: CHOOSE THE BEST TREATMENT & MODEL
 Select the treatment from the catalogue that provides the most stunning visual impact for your chosen scene. Weave that treatment's core vocabulary naturally into the prompt.
@@ -745,8 +751,12 @@ paper scraps is refused. Ground the subject in a tangible mechanism or symbolic 
 5. MATURE, PROFESSIONAL B2B GROUNDING — NEVER DEPICT TOYS OR CARTOON GRAPHICS:
 This is an institutional, executive B2B publication read by supply chain leaders, CFOs, and engineers.
 - NEVER depict literal children's toys, clip-art silhouettes, or playful nursery symbols.
-- For stories involving manufacturing, steel, energy, factories, shipping, transport, infrastructure, or hardware, ALWAYS prefer photographic treatments (cinematic_still, long_lens_industry, editorial_macro, architectural_night) that depict real physical facilities, machinery, and logistics.
+- For stories involving physical operations, energy, factories, shipping, transport, infrastructure, or hardware, ALWAYS prefer photographic treatments that depict real physical facilities, machinery, and logistics: cinematic_still (one decisive moment or place), long_lens_industry (scale), architectural_night (the change after hours). Do NOT answer a systemic, process or capacity story with editorial_macro (see rule 6) — a 100mm close-up strips away the environment that makes the story legible.
 - Every visual must feel like an authentic, high-end editorial feature image from Bloomberg, The Wall Street Journal, or Financial Times.
+6. UNIVERSAL DOMAIN SEMIOTICS — NO OBSCURE MICRO-METAPHORS:
+- Match the visual world strictly to the article's own `Vertical` and substantive topic. A story on AI compute must evoke compute environments; a story on energy must evoke grid infrastructure; a story on supply chain must evoke freight or logistics. Never cross-contaminate unrelated domains.
+- NEVER invent obscure, multi-step intellectual micro-metaphors that require prompt text to decode (e.g. representing an abstract mathematical error, algorithm miss, or financial discrepancy as an ungrounded random metal scrap, isolated screw, or unidentifiable bushing on a workbench).
+- DO NOT USE `editorial_macro` FOR SYSTEMIC, ARCHITECTURAL, OR OPERATIONAL TOPICS: Macro lens photography (100mm) zooms in so tightly that it erases environmental storytelling, leaving behind an unrecognizable hunk of material. Reserve `editorial_macro` strictly for stories that literally turn on a single physical artifact, specialized component, material specimen, or document seal. For any systemic, process, capacity, or operational topic in any vertical, choose `cinematic_still` (wide establishing atmosphere), `long_lens_industry` (scale), or `technical_isometric` / `component_assembly` (constructed architecture).
 
 HARD RULES
 - Depict a concrete noun from this story (the material, part, place, document or mechanism that \
