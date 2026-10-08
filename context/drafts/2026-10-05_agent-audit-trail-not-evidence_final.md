@@ -7,6 +7,12 @@ date: 2026-10-05
 slug: agent-audit-trail-not-evidence
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "Thick, textured compliance ledger resting on a dark desk under directional light, viewed in extreme close-up."
+image_caption: "Under new governance rules, the retention clock for agent audit trails can extend up to six years for financial records."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

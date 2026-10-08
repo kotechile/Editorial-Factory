@@ -1,7 +1,18 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "telephoto compression, 200mm long-lens view of industrial infrastructure, endless aisles of towering physical server racks in a massive data center hall. Stacked overlapping layers of heavy metal structure receding into deep atmospheric haze, flat compressed perspective. Cool desaturated palette with rows of faint blue and amber LED indicators glowing in the overcast ambient light, visible cooling exhaust vents, heavy industrial cables, no people in the foreground, cinematic industrial scale.",
+      "task_id": "ee732c910b08c0c42d420b649bc6c3c8",
+      "sha256": "sha256:4580cb21ad9b9f9e9dbfe90548f4624a",
+      "generated_at": "2026-10-06T18:36:41+00:00",
+      "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd"
+    }
+  ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
   "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
@@ -10,14 +21,15 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "telephoto compression, 200mm long-lens view of industrial infrastructure, endless aisles of towering physical server racks in a massive data center hall. Stacked overlapping layers of heavy metal structure receding into deep atmospheric haze, flat compressed perspective. Cool desaturated palette with rows of faint blue and amber LED indicators glowing in the overcast ambient light, visible cooling exhaust vents, heavy industrial cables, no people in the foreground, cinematic industrial scale.",
-  "negative_prompt": "text, words, letters, numbers, logos, watermarks, people, workers, abstract shapes, bare geometry, cartoon, UI, signage.",
-  "rationale": "The telephoto compression visually communicates the massive physical scale, density, and industrial reality of bare-metal servers, grounding the abstract concept of 'cloud bills' in heavy physical infrastructure.",
-  "cue": "buying physical racks",
-  "subject": "endless aisles of heavy physical server racks",
-  "alt_text": "Rows of heavy physical server racks receding into the distance in a massive data center hall.",
-  "caption": "Moving steady workloads to owned physical servers can cut massive cloud hosting bills by half.",
-  "title": "Owned Data Center Racks",
+  "prompt": "Telephoto compression, 200mm long-lens view of a massive physical data center hall. Stacked overlapping layers of heavy bare-metal server racks and cooling infrastructure receding deeply into atmospheric haze. Flat compressed perspective, cool desaturated color palette with faint amber and blue LED indicators piercing the dim aisles. Overcast ambient light from overhead service gantries, emphasizing the brushed steel and textured matte polymers of the server hardware. Generous editorial negative space on the left side, empty cavernous facility, no people in the foreground. Cinematic film still quality, rich environmental texture.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, UI, interface, people, faces, hands",
+  "rationale": "The story is about the sheer scale of server infrastructure and the financial weight of renting versus owning it. Telephoto compression emphasizes the physical reality and massive scale of the data hall required to house these repatriated servers.",
+  "cue": "owned gear wears out",
+  "subject": "a deep corridor of physical bare-metal server racks in a massive data center hall",
+  "composition": "extreme asymmetric telephoto compression",
+  "alt_text": "A compressed telephoto view of physical bare-metal server racks receding into the hazy distance of a large data center hall.",
+  "caption": "Repatriating steady workloads to owned physical racks can cut infrastructure costs by half or more.",
+  "title": "The Bare Metal Break-Even",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,21 +39,21 @@
   "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 436725,
-  "sha256": "sha256:4580cb21ad9b9f9e9dbfe90548f4624a",
+  "bytes": 336625,
+  "sha256": "sha256:b391ac05da92205e1408e9d78aaa343a",
   "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd",
   "source_chars": 4169,
-  "task_id": "ee732c910b08c0c42d420b649bc6c3c8",
+  "task_id": "1fe407a28b9b60129effb63e55c346af",
   "credits": 5.0,
-  "cost_ms": 56,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/ee732c910b08c0c42d420b649bc6c3c8_1791311795083.jpg",
+  "cost_ms": 49,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1fe407a28b9b60129effb63e55c346af_1791501300920.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "telephoto compression, 200mm long-lens view of industrial infrastructure, endless aisles of towering physical server racks in a massive data center hall. Stacked overlapping layers of heavy metal structure receding into deep atmospheric haze, flat compressed perspective. Cool desaturated palette with rows of faint blue and amber LED indicators glowing in the overcast ambient light, visible cooling exhaust vents, heavy industrial cables, no people in the foreground, cinematic industrial scale.\n\nDo not include: text, words, letters, numbers, logos, watermarks, people, workers, abstract shapes, bare geometry, cartoon, UI, signage..",
+      "prompt": "Telephoto compression, 200mm long-lens view of a massive physical data center hall. Stacked overlapping layers of heavy bare-metal server racks and cooling infrastructure receding deeply into atmospheric haze. Flat compressed perspective, cool desaturated color palette with faint amber and blue LED indicators piercing the dim aisles. Overcast ambient light from overhead service gantries, emphasizing the brushed steel and textured matte polymers of the server hardware. Generous editorial negative space on the left side, empty cavernous facility, no people in the foreground. Cinematic film still quality, rich environmental texture.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-06T18:36:41+00:00"
+  "generated_at": "2026-10-08T23:15:04+00:00"
 }

@@ -5,6 +5,12 @@ persona: eng_leader
 one_big_thing: "Multi-region inside one cloud provider does not hedge the failure class it is bought for — a second control plane does."
 date: 2026-10-06
 slug: azure-control-plane-single-point-of-failure
+image_path: "context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.png"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "Three server blade housings routing cables into one central matte clay control module on brushed steel."
+image_caption: "When multiple cloud regions share a single network gateway, the primary benefit of distributed redundancy is lost."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://demandforecast.ai/resources/forecast-accuracy-report
   - https://www.maplecroft.com/solutions/supply-chain-risk/insights/latin-americas-vulnerability-to-super-el-nino-poised-to-upend-key-supply-chains/
+image_path: "context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze."
+image_caption: "Mathematical models optimize daily efficiency, but physical buffer space remains the only defense against massive supply chain shocks."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

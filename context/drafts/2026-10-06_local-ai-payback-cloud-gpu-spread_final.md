@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-5090-vanishes-from-online-retail-in-the-us-third-party-sellers-now-demand-as-much-as-usd9-500-for-nvidias-fastest-gpu
   - https://getdeploying.com/gpu-price-trends
+image_path: "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "An unbranded heavy-duty GPU compute module resting on a dark textured slate surface under dramatic studio lighting."
+image_caption: "The decision to buy local AI hardware now hinges on navigating surging memory costs and wildly diverging cloud rental rates."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

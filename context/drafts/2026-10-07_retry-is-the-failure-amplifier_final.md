@@ -11,6 +11,12 @@ sources:
   - https://arxiv.org/abs/2609.29095
 meta_title: "The Retry Is the Bug: An Agent's Costliest Failure"
 meta_description: "A corrupted value sent a ledger agent into 15,000 retries and a $50,000 bill. A 25,930-episode study shows the same retry duplicates payments while the agent reports success."
+image_path: "context/assets/illustrations/retry-is-the-failure-amplifier/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "A modern data center building at dusk with a repeating grid of warm glowing windows."
+image_caption: "Unmonitored agent retries can trigger endless compute loops, racking up massive cloud bills overnight."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

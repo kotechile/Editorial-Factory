@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Hugging Face's guide says you can fine-tune a 33-billion-parameter model on one 24-gigabyte graphics card."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.png"
-image_style: "technical_isometric"
+image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "High-performance graphics card wired to a heavy-duty power supply unit in an axonometric technical drawing."
-image_caption: "The true cost of local fine-tuning hinges on the heavy power draw required by workstation graphics cards."
+image_alt: "Heavy finned graphics compute block and thick braided power cable connector arranged on a brushed steel surface."
+image_caption: "The true test of local compute is often the power limit and the rented price you choose not to beat."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

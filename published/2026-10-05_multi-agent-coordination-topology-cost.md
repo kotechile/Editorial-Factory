@@ -9,11 +9,11 @@ archetype: evergreen
 evergreen: true
 meta_title: "Multi-Agent Coordination: Pick the Topology That Pays"
 meta_description: "Anthropic's agent swarm beat a single model by 90.2% and used about 15 times the tokens. The coordination mode, not the model, is the real budget line."
-image_path: "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.png"
-image_style: "clay_render"
-image_model: "nanobanana"
-image_alt: "Modular mechanical junction block splitting one input into multiple parallel outputs in a matte clay style."
-image_caption: "The topology used to coordinate multiple AI agents drives the system's final operating cost and reliability."
+image_path: "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "A massive fiber optic routing bay in a dark data center, with complex glowing cables branching out from a central switch."
+image_caption: "The topology of multi-agent systems dictates their compute cost, making wiring design a critical budget decision."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

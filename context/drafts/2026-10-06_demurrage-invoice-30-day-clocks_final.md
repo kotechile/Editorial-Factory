@@ -7,6 +7,12 @@ date: 2026-10-06
 slug: demurrage-invoice-30-day-clocks
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "A heavy industrial timestamp mechanism resting on textured shipping paperwork under directional light."
+image_caption: "Under the new rule, the exact time stamps logged by a control tower determine whether a demurrage bill stands."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

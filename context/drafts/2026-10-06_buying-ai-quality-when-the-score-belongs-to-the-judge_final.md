@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://www.dynatrace.com/news/blog/dynatrace-completes-acquisition-of-arize
   - https://arxiv.org/abs/2609.30751
+image_path: "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "An unlatched modular diagnostic bay and an interlocking connector resting on a brushed steel surface."
+image_caption: "Because AI quality scores vary heavily depending on the model chosen to evaluate them, the industry standard remains a moving target."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

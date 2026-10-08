@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Two clocks dictate the true cost of moving abroad, and they rarely sync up: the US demands 330 full days overseas within a 12-month window to shield your…"
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/split-year-two-clock-seam/featured.png"
-image_style: "component_assembly"
+image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Two mismatched mechanical timing rotors and gears attempting to interlock on a neutral matte base."
-image_caption: "The timing gap between distinct residency thresholds forces expats to navigate misaligned schedules."
+image_alt: "Two overlapping, misaligned clock face paper silhouettes on a neutral background."
+image_caption: "The timing gap between different national residency rules is often where relocating professionals face unexpected costs."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

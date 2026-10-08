@@ -5,6 +5,12 @@ persona: pro_homeowner
 one_big_thing: "Hardening your home is the only durable exit from California's last-resort insurance pool before its 29.1% rate hike lands."
 date: 2026-09-25
 slug: ca-fair-plan-rate-hike-hardening-exit
+image_path: "context/assets/illustrations/ca-fair-plan-rate-hike-hardening-exit/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Overhead view of heavy paper documents beneath a housing blueprint and a square of metal vent mesh on a dark surface."
+image_caption: "Homeowners must weigh the upfront cost of physical fireproofing against the certainty of massive state insurance rate hikes."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

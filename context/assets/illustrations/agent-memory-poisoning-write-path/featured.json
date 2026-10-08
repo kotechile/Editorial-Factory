@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-poisoning-write-path",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -11,24 +11,45 @@
       "sha256": "sha256:b13ed30d0ee2ccc3d5b94bbdc6379cf0",
       "generated_at": "2026-10-07T17:36:33+00:00",
       "source_hash": "sha256:b99301a28b6d723ce79ffc07c1013544"
+    },
+    {
+      "revision": 2,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration of a data storage module featuring a mechanical validation checkpoint on the intake feed, technical drawing style, axonometric projection. Flat muted palette with a single stark amber accent color highlighting the validation gate. Thin consistent line weight, recognizable hardware components including memory banks, intake conduits, and an inspection valve with visible depth, unlabelled, generous empty margin.",
+      "task_id": "8b72fd42c22b5c187ee86762b5b992f4",
+      "sha256": "sha256:9a132acbf3304c271412bd4af108f595",
+      "generated_at": "2026-10-07T17:39:38+00:00",
+      "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a"
+    },
+    {
+      "revision": 3,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration of a server storage bay with a distinct physical screening gate on the input routing path. Technical drawing style, axonometric projection. Recognisable hardware including modular memory trays, structural connectors, and an interlocking inspection valve at the boundary layer. Flat muted cool-grey palette with a single amber accent colour highlighting the boundary checkpoint. Thin consistent line weight, generous empty margin, 16:9 landscape composition, asymmetric layout positioned slightly off-centre. Minimalist, professional editorial restraint.",
+      "task_id": "93bf60dbfd82e3296adbca5e6698737b",
+      "sha256": "sha256:702e47a5cfeea2b3a22d759eeb2700c3",
+      "generated_at": "2026-10-08T22:42:52+00:00",
+      "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a"
     }
   ],
-  "style": "technical_isometric",
-  "style_label": "Technical isometric cutaway",
-  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Clean isometric cutaway illustration of a data storage module featuring a mechanical validation checkpoint on the intake feed, technical drawing style, axonometric projection. Flat muted palette with a single stark amber accent color highlighting the validation gate. Thin consistent line weight, recognizable hardware components including memory banks, intake conduits, and an inspection valve with visible depth, unlabelled, generous empty margin.",
-  "negative_prompt": "text, words, numbers, letters, UI, labels, abstract cubes, bare geometry, realistic photography, messy, 3d render shadows, glowing brains, padlocks, shields",
-  "rationale": "The article explains the internal mechanics of how an agent processes and stores data, highlighting a specific architectural flaw (the write path vs the prompt). A technical isometric cutaway perfectly illustrates this system flow and architectural defense without relying on abstract cubes or boring generic racks.",
-  "cue": "a checked write path",
-  "subject": "an isometric technical drawing of a data memory storage module with a validation checkpoint on the intake flow",
-  "alt_text": "Isometric cutaway drawing of a data storage module with a validation checkpoint on the intake conduit.",
-  "caption": "Securing an agent requires validating data at the memory write boundary rather than just filtering the prompt.",
-  "title": "Agent Memory Write Path Cutaway",
+  "prompt": "Matte clay 3D render of a modular server memory assembly resting on a weathered concrete surface in a real space. The physical arrangement features three recognizable engineered parts: a slotted data housing block, a heavy open mechanical latch acting as a security gate, and a single distinct memory cartridge positioned just outside the write slot. Matte surfaces with subtle moulding seams and realistic contact shadows. One directional key light raking across the concrete from the left, casting long shadows. Muted modern editorial palette with a terracotta accent on the incoming cartridge. Wide landscape composition, heavy asymmetric layout with the assembly anchored in the lower right, generous empty margin.",
+  "negative_prompt": "text, watermarks, logos, UI, typography, legible print, letters, numbers",
+  "rationale": "Clay render is ideal for structural software concepts like memory storage layers, translating a digital write path into a tangible, modular physical assembly of drives and gates.",
+  "cue": "the control belongs at the store boundary",
+  "subject": "modular memory drive assembly with a security latch",
+  "composition": "extreme asymmetry, heavy negative space",
+  "alt_text": "Modular memory drive assembly with a security latch intercepting a cartridge on a concrete surface.",
+  "caption": "Securing persistent-memory agents requires validating data at the storage boundary before it is written.",
+  "title": "Agent Memory Write Path",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,23 +59,23 @@
   "local_path": "context/assets/illustrations/agent-memory-poisoning-write-path/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1590905,
-  "sha256": "sha256:9a132acbf3304c271412bd4af108f595",
+  "bytes": 1639122,
+  "sha256": "sha256:9e4ff262e40513da132a84b9f098032c",
   "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a",
   "source_chars": 4115,
-  "task_id": "8b72fd42c22b5c187ee86762b5b992f4",
+  "task_id": "0b38907557d8954179068ad934ddcb1b",
   "credits": 18.0,
-  "cost_ms": 29,
-  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1791394776221-yz21cbvzw2f.png",
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_4f7ac6c028a142c4644669f746c876d8.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Clean isometric cutaway illustration of a data storage module featuring a mechanical validation checkpoint on the intake feed, technical drawing style, axonometric projection. Flat muted palette with a single stark amber accent color highlighting the validation gate. Thin consistent line weight, recognizable hardware components including memory banks, intake conduits, and an inspection valve with visible depth, unlabelled, generous empty margin.\n\nDo not include: text, words, numbers, letters, UI, labels, abstract cubes, bare geometry, realistic photography, messy, 3d render shadows, glowing brains, padlocks, shields.",
+      "prompt": "Matte clay 3D render of a modular server memory assembly resting on a weathered concrete surface in a real space. The physical arrangement features three recognizable engineered parts: a slotted data housing block, a heavy open mechanical latch acting as a security gate, and a single distinct memory cartridge positioned just outside the write slot. Matte surfaces with subtle moulding seams and realistic contact shadows. One directional key light raking across the concrete from the left, casting long shadows. Muted modern editorial palette with a terracotta accent on the incoming cartridge. Wide landscape composition, heavy asymmetric layout with the assembly anchored in the lower right, generous empty margin.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-07T17:39:38+00:00"
+  "generated_at": "2026-10-08T23:31:03+00:00"
 }

@@ -7,6 +7,12 @@ date: 2026-10-07
 slug: sla-credit-is-not-insurance
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/sla-credit-is-not-insurance/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise data hall."
+image_caption: "The gap between a vendor's bill credit and a buyer's actual financial exposure turns redundancy into a critical design choice."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

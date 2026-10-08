@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Massive industrial warehouse facades and heavy concrete loading docks receding into hazy distance."
-image_caption: "Operators are splitting their automation investments into distinct physical channels based on the size and shape of their inventory."
+image_alt: "Cavernous warehouse interior contrasting dense automated steel racking with open floor staging for bulky freight."
+image_caption: "Automation payback models are splitting based on the physical dimensions of the goods being moved."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

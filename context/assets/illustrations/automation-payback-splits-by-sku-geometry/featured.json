@@ -1,7 +1,18 @@
 {
   "slug": "automation-payback-splits-by-sku-geometry",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Telephoto compression, 200mm long-lens view of massive industrial warehouse infrastructure. Stacked overlapping layers of corrugated steel distribution buildings, heavy concrete loading bays, and towering logistics facilities receding into deep atmospheric haze. Flat compressed perspective, overcast soft light, cool desaturated palette with muted steel, concrete, and asphalt tones. Generous empty margin at the top, cinematic editorial photography, no people in the foreground.",
+      "task_id": "770a97a4f4cd1121032938542596afdf",
+      "sha256": "sha256:4337ef8e97a50baee6f5a72c1ae85e93",
+      "generated_at": "2026-10-07T12:37:29+00:00",
+      "source_hash": "sha256:8f2cc9b640f4d1df3c57118faace609d"
+    }
+  ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
   "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
@@ -10,14 +21,14 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Telephoto compression, 200mm long-lens view of massive industrial warehouse infrastructure. Stacked overlapping layers of corrugated steel distribution buildings, heavy concrete loading bays, and towering logistics facilities receding into deep atmospheric haze. Flat compressed perspective, overcast soft light, cool desaturated palette with muted steel, concrete, and asphalt tones. Generous empty margin at the top, cinematic editorial photography, no people in the foreground.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, watermarks, people, workers, generic abstract shapes, bare boxes, plain spheres.",
-  "rationale": "The article contrasts a $100 million robotics plant with a $300 million facility for bulky goods. A telephoto industrial shot perfectly captures the massive scale and physical reality of these diverging capital investments.",
-  "cue": "buying concrete and human labor",
-  "subject": "sprawling industrial warehouse facade with massive concrete loading docks",
-  "alt_text": "Massive industrial warehouse facades and heavy concrete loading docks receding into hazy distance.",
-  "caption": "Operators are splitting their automation investments into distinct physical channels based on the size and shape of their inventory.",
-  "title": "warehouse-capex-sku-geometry",
+  "prompt": "Wide establishing 16:9 200mm telephoto compression photograph of a cavernous distribution center interior. Overlapping layers of dense, automated high-bay steel racking structure on the left side recede into cool atmospheric haze. On the right, a sprawling, open concrete floor space holds massive, bulky, palletized freight under overcast industrial skylight. Cool desaturated palette, muted teal and grey tones, monumental scale, flat compressed perspective, no people in foreground, quiet editorial restraint.",
+  "negative_prompt": "text, typography, numbers, wordmarks, UI, UI elements, watermarks, logos, labels, people, faces, hands, bare shapes, empty floating cubes, abstract objects, toys, cartoon graphics",
+  "rationale": "The article contrasts two distinct physical scales of warehouse operations: dense robotic automation for small goods versus expansive real estate for bulky items. A long_lens_industry treatment captures this massive scale and the architectural division within a modern logistics hub.",
+  "cue": "SKU geometry",
+  "subject": "a massive industrial warehouse interior showing contrasting zones",
+  "alt_text": "Cavernous warehouse interior contrasting dense automated steel racking with open floor staging for bulky freight.",
+  "caption": "Automation payback models are splitting based on the physical dimensions of the goods being moved.",
+  "title": "Warehouse Scale Division SKU Geometry",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,21 +38,21 @@
   "local_path": "context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 328558,
-  "sha256": "sha256:4337ef8e97a50baee6f5a72c1ae85e93",
+  "bytes": 293552,
+  "sha256": "sha256:2efaa27b59a267483cf58fec394c91cb",
   "source_hash": "sha256:8f2cc9b640f4d1df3c57118faace609d",
   "source_chars": 3821,
-  "task_id": "770a97a4f4cd1121032938542596afdf",
+  "task_id": "c2b0d4bf2eb9435d16f161ce41f81fbd",
   "credits": 5.0,
-  "cost_ms": 43,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/770a97a4f4cd1121032938542596afdf_1791376645266.jpg",
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c2b0d4bf2eb9435d16f161ce41f81fbd_1791499407751.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Telephoto compression, 200mm long-lens view of massive industrial warehouse infrastructure. Stacked overlapping layers of corrugated steel distribution buildings, heavy concrete loading bays, and towering logistics facilities receding into deep atmospheric haze. Flat compressed perspective, overcast soft light, cool desaturated palette with muted steel, concrete, and asphalt tones. Generous empty margin at the top, cinematic editorial photography, no people in the foreground.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, watermarks, people, workers, generic abstract shapes, bare boxes, plain spheres..",
+      "prompt": "Wide establishing 16:9 200mm telephoto compression photograph of a cavernous distribution center interior. Overlapping layers of dense, automated high-bay steel racking structure on the left side recede into cool atmospheric haze. On the right, a sprawling, open concrete floor space holds massive, bulky, palletized freight under overcast industrial skylight. Cool desaturated palette, muted teal and grey tones, monumental scale, flat compressed perspective, no people in foreground, quiet editorial restraint.\n\nDo not include: text, typography, numbers, wordmarks, UI, UI elements, watermarks, logos, labels, people, faces, hands, bare shapes, empty floating cubes, abstract objects, toys, cartoon graphics.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-07T12:37:29+00:00"
+  "generated_at": "2026-10-08T22:43:30+00:00"
 }

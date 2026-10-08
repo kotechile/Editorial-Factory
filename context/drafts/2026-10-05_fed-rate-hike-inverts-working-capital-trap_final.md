@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm
   - https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html
+image_path: "context/assets/illustrations/fed-rate-hike-inverts-working-capital-trap/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Vast, mostly empty steel high-bay warehouse racking receding into atmospheric haze with only a single pallet visible."
+image_caption: "Operations are running lean into rising prices, leaving plants with no safety buffers left to trim."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

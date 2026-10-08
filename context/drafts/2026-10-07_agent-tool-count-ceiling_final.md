@@ -7,6 +7,12 @@ date: 2026-10-07
 slug: agent-tool-count-ceiling
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/agent-tool-count-ceiling/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight."
+image_caption: "Restricting an agent to a targeted shortlist of tools proves far more reliable than exposing it to an unfiltered registry."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

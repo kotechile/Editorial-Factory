@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Isometric cutaway of a modular server blade featuring an integrated metering valve and flow sensor."
-image_caption: "As AI spending surges, buyers are demanding that cost management and usage tracking be engineered directly into the underlying architecture."
+image_alt: "Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers."
+image_caption: "Enterprises are demanding visibility into the hidden layers of compute that drive up AI costs per resolved work-unit."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

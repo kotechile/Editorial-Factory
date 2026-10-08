@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://spycloud.com/newsroom/spycloud-2026-identity-threat-report-finds-non-human-identities
   - https://www.redhat.com/en/blog/why-red-hat-building-open-foundation-enterprise-agents-openclaw-enterprise
+image_path: "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A modular server rack assembly with an interlocking inspection gate resting on brushed steel."
+image_caption: "Enterprise leaders are moving AI agent rules from static paper into live runtime enforcement layers."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

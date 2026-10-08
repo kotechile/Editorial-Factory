@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Overlapping railroad tracks and generic freight cars receding into deep haze at a large industrial yard."
-image_caption: "Shippers have until mid-November to map their single-line rail exposure as the transcontinental merger advances to a review."
+image_alt: "Intermodal freight trains and shipping containers receding into the distance at a massive rail yard."
+image_caption: "The proposed merger would create the first modern transcontinental railroad, spanning coast to coast."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

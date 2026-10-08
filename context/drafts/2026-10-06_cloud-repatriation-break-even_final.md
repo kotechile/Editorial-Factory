@@ -7,6 +7,12 @@ date: 2026-10-06
 slug: cloud-repatriation-break-even
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "A compressed telephoto view of physical bare-metal server racks receding into the hazy distance of a large data center hall."
+image_caption: "Repatriating steady workloads to owned physical racks can cut infrastructure costs by half or more."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

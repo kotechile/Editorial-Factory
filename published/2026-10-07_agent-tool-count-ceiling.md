@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Giving one AI agent a massive tool list crashes its accuracy to roughly one pick in seven."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-tool-count-ceiling/featured.jpg"
-image_style: "editorial_macro"
+image_style: "architectural_night"
 image_model: "flux"
-image_alt: "An overloaded and jammed mechanical tool carousel filled with colliding titanium drill bits and milling heads."
-image_caption: "Handing an AI agent a massive catalogue of tools crashes its selection accuracy, much like overloading a physical mechanism."
+image_alt: "A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight."
+image_caption: "Restricting an agent to a targeted shortlist of tools proves far more reliable than exposing it to an unfiltered registry."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

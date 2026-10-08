@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Amazon hands back 10% of the monthly bill when a cloud region drops below 99.99% uptime, but it takes a full month below 95% to see a 100% credit."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/sla-credit-is-not-insurance/featured.jpg"
-image_style: "document_flatlay"
+image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Overhead view of a thick, dark-bound service contract with a single small copper coin resting on top."
-image_caption: "Cloud uptime promises are structured as vendor refund schedules rather than true insurance policies."
+image_alt: "Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise data hall."
+image_caption: "The gap between a vendor's bill credit and a buyer's actual financial exposure turns redundancy into a critical design choice."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -5,6 +5,12 @@ persona: ops_leader
 one_big_thing: "The Surface Transportation Board unanimously let the Union Pacific–Norfolk Southern merger advance to a full merits review — the first transcontinental Class I railroad is now on a fixed clock to a 2027 decision, so every shipper should map its single-rail exposure before comments close Nov. 18."
 date: 2026-09-24
 slug: up-ns-rail-merger-clears-summary-denial
+image_path: "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Intermodal freight trains and shipping containers receding into the distance at a massive rail yard."
+image_caption: "The proposed merger would create the first modern transcontinental railroad, spanning coast to coast."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

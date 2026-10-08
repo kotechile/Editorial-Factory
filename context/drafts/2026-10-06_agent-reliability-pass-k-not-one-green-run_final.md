@@ -7,6 +7,12 @@ date: 2026-10-06
 slug: agent-reliability-pass-k-not-one-green-run
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/agent-reliability-pass-k-not-one-green-run/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric cutaway of a logic routing bay with a central validation gate and blocked retry loops."
+image_caption: "Repeat-trial testing exposes structural flaws in agent design that a single lucky run hides."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

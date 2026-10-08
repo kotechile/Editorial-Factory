@@ -6,10 +6,10 @@ one_big_thing: "Cost management has moved from back-office FinOps to a hard requ
 date: 2026-09-24
 slug: ai-spend-27t-cost-visibility-mandate
 image_path: "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png"
-image_style: "clay_render"
+image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "A matte clay 3D render showing a distinct foundational block embedded within a stack of soft geometric shapes."
-image_caption: "Cost management is becoming a foundational layer physically embedded within enterprise AI deployments."
+image_alt: "Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers."
+image_caption: "Enterprises are demanding visibility into the hidden layers of compute that drive up AI costs per resolved work-unit."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

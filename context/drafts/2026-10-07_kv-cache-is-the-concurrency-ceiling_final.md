@@ -7,6 +7,12 @@ date: 2026-10-07
 slug: kv-cache-is-the-concurrency-ceiling
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "An anodized aluminum memory module sliding into a brushed steel rack bay on a textured surface."
+image_caption: "Efficient block paging maximizes GPU memory capacity by allocating cache in precise chunks."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

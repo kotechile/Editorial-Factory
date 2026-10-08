@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://press.aboutamazon.com/job-creation-and-investment/2026/9/amazon-to-create-300-high-paying-jobs-at-new-advanced-manufacturing-facility-in-greenwood-indiana
   - https://www.jobsohio.com/newsroom/news-press/walmart-plans-300-million-fulfillment-center-in-greater-cincinnati-creating-more-than-300-jobs
+image_path: "context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Cavernous warehouse interior contrasting dense automated steel racking with open floor staging for bulky freight."
+image_caption: "Automation payback models are splitting based on the physical dimensions of the goods being moved."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

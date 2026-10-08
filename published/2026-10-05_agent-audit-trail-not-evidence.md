@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "An agent's log is only proof if it can replay the exact choice."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg"
-image_style: "document_flatlay"
+image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Overhead view of a weathered leather ledger book and a metallic solid-state drive resting on a dark wood desk."
-image_caption: "Agent action records must meet stringent financial compliance standards, requiring full replayability and multi-year retention."
+image_alt: "Thick, textured compliance ledger resting on a dark desk under directional light, viewed in extreme close-up."
+image_caption: "Under new governance rules, the retention clock for agent audit trails can extend up to six years for financial records."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "Overhead view of misaligned rate contract pages resting under a heavy brass ruler on a dark desk."
-image_caption: "The math behind a fuel surcharge sits in plain sight on rate tables, yet buyers rarely review the specific formula levers they signed."
+image_alt: "Overhead view of heavy commercial freight contracts and rate tables on a wooden desk."
+image_caption: "The true cost of fuel is hidden in the carrier's mathematical formulas, not the federal diesel index."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

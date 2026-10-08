@@ -1,7 +1,18 @@
 {
   "slug": "ca-fair-plan-rate-hike-hardening-exit",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "document_flatlay",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "overhead flat-lay photograph of paper documents on a plain desk surface, top-down 90-degree view, a stack of regulatory notices and bills slightly out of alignment to look handled, illegibly cropped text, muted paper tones, even diffused daylight, blank pages",
+      "task_id": "af6a91c8172f257e05f223af85ef59ea",
+      "sha256": "sha256:81c781818b3d372e2e93df6611346d3f",
+      "generated_at": "2026-10-01T14:08:23+00:00",
+      "source_hash": "sha256:7caaad8ca01b944dd5c570a4331f4625"
+    }
+  ],
   "style": "document_flatlay",
   "style_label": "Document still life",
   "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
@@ -10,14 +21,14 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "overhead flat-lay photograph of paper documents on a plain desk surface, top-down 90-degree view, a stack of regulatory notices and bills slightly out of alignment to look handled, illegibly cropped text, muted paper tones, even diffused daylight, blank pages",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, watermarks, people, hands, faces, lightbulb, gavel, scales of justice",
-  "rationale": "The story revolves around a significant rate hike in an insurance pool\u2014a regulatory and contractual change that hits homeowners via a rate notice. A flatlay of paper documents captures the administrative reality of this change, emphasizing the bill and the mandated fixes without relying on abstract metaphors.",
-  "cue": "the wildfire part of the bill",
-  "subject": "a stack of muted, slightly misaligned regulatory paper documents",
-  "alt_text": "Overhead view of slightly misaligned, blank regulatory paper documents on a plain desk.",
-  "caption": "California homeowners face a steep rate hike unless they harden their homes to earn a discount.",
-  "title": "FAIR Plan Rate Notice Documents",
+  "prompt": "Overhead flat-lay photograph of heavy, thick-stock paper documents under an architectural housing blueprint and a square of fine metal vent mesh, resting on a matte dark wood surface. Top-down 90-degree view, even diffused daylight casting soft contact shadows. The objects are slightly out of alignment to look handled. Blank and illegibly cropped paper, muted paper tones, brushed steel texture of the mesh contrasting with the matte paperwork. Wide 16:9 framing, generous negative space, sophisticated editorial restraint, moody architectural lighting.",
+  "negative_prompt": "text, numbers, letters, words, typography, logos, watermarks, UI, generic office supplies, paperclips, pens, chaotic desk, people, hands, messy, bright colors",
+  "rationale": "The story revolves around a regulatory rate hike and the contractual necessity to physically alter a home. A document flat-lay captures the bureaucratic weight of the insurance mandate while integrating the physical reality of the required retrofits.",
+  "cue": "only real exit is to fireproof",
+  "subject": "insurance document under a blueprint and metal vent mesh",
+  "alt_text": "Overhead view of heavy paper documents beneath a housing blueprint and a square of metal vent mesh on a dark surface.",
+  "caption": "Homeowners must weigh the upfront cost of physical fireproofing against the certainty of massive state insurance rate hikes.",
+  "title": "FAIR-Plan-Rate-Hike-Exit",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,21 +38,21 @@
   "local_path": "context/assets/illustrations/ca-fair-plan-rate-hike-hardening-exit/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 181960,
-  "sha256": "sha256:81c781818b3d372e2e93df6611346d3f",
+  "bytes": 289740,
+  "sha256": "sha256:12b78cf8b8c9fb090b3db27707f7f861",
   "source_hash": "sha256:7caaad8ca01b944dd5c570a4331f4625",
   "source_chars": 4501,
-  "task_id": "af6a91c8172f257e05f223af85ef59ea",
+  "task_id": "e1965ed3d44f83d9e194cade4cb3c4a1",
   "credits": 5.0,
-  "cost_ms": 94,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/af6a91c8172f257e05f223af85ef59ea_1790863699612.jpg",
+  "cost_ms": 36,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e1965ed3d44f83d9e194cade4cb3c4a1_1791498135594.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "overhead flat-lay photograph of paper documents on a plain desk surface, top-down 90-degree view, a stack of regulatory notices and bills slightly out of alignment to look handled, illegibly cropped text, muted paper tones, even diffused daylight, blank pages\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, watermarks, people, hands, faces, lightbulb, gavel, scales of justice.",
+      "prompt": "Overhead flat-lay photograph of heavy, thick-stock paper documents under an architectural housing blueprint and a square of fine metal vent mesh, resting on a matte dark wood surface. Top-down 90-degree view, even diffused daylight casting soft contact shadows. The objects are slightly out of alignment to look handled. Blank and illegibly cropped paper, muted paper tones, brushed steel texture of the mesh contrasting with the matte paperwork. Wide 16:9 framing, generous negative space, sophisticated editorial restraint, moody architectural lighting.\n\nDo not include: text, numbers, letters, words, typography, logos, watermarks, UI, generic office supplies, paperclips, pens, chaotic desk, people, hands, messy, bright colors.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-01T14:08:23+00:00"
+  "generated_at": "2026-10-08T22:22:17+00:00"
 }

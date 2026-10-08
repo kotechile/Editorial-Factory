@@ -7,6 +7,12 @@ date: 2026-10-08
 slug: agent-memory-tiering-l1-l4
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A tiered mechanical assembly with multiple distinct modular bays resting on a concrete surface."
+image_caption: "Effective AI agents require structured, multi-tiered memory systems rather than relying on a single sprawling context window."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

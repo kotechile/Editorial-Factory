@@ -1,6 +1,6 @@
 {
   "slug": "ai-spend-27t-cost-visibility-mandate",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -10,6 +10,16 @@
       "task_id": "212c3ca81377ed5c4787a37a4f8857fc",
       "sha256": "sha256:65e65e59c06226c05d1f4c4e8d75e160",
       "generated_at": "2026-10-01T13:20:36+00:00",
+      "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9"
+    },
+    {
+      "revision": 2,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A modular server blade assembly featuring an integrated mechanical metering valve and flow sensor attached directly to the main processing housing. Flat muted palette with one bright accent colour highlighting the metering component, thin consistent line weight. Recognisable hardware with racks, trays, and conduit pipes showing visible depth. Unlabelled, generous empty margin.",
+      "task_id": "b49578e60bb816bcd99698f620b2db48",
+      "sha256": "sha256:e1d5509459d869f7126a0f301728f5cd",
+      "generated_at": "2026-10-01T22:09:19+00:00",
       "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9"
     }
   ],
@@ -21,14 +31,14 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A modular server blade assembly featuring an integrated mechanical metering valve and flow sensor attached directly to the main processing housing. Flat muted palette with one bright accent colour highlighting the metering component, thin consistent line weight. Recognisable hardware with racks, trays, and conduit pipes showing visible depth. Unlabelled, generous empty margin.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, abstract boxes, bare geometry, cubes, spheres, logos, watermarks, people, glowing brains",
-  "rationale": "The story focuses on embedding cost control and usage tracking directly into the architecture of AI purchases. A technical isometric cutaway effectively illustrates this integration by showing a recognisable engineered module with an integrated metering mechanism.",
-  "cue": "build usage tracking directly into",
-  "subject": "an isometric cutaway of a modular server blade with an integrated metering valve and sensor",
-  "alt_text": "Isometric cutaway of a modular server blade featuring an integrated metering valve and flow sensor.",
-  "caption": "As AI spending surges, buyers are demanding that cost management and usage tracking be engineered directly into the underlying architecture.",
-  "title": "AI FinOps Metering Isometric",
+  "prompt": "Clean isometric cutaway illustration of a multi-tiered enterprise compute server stack, technical drawing style, axonometric projection. Flat muted grey palette with a single bright amber accent color tracking a data flow down through three distinct internal processing trays and routing bays. Recognizable hardware racks, cooling modules, and visible depth, clean consistent line weight, generous empty margin on a neutral seamless background.",
+  "negative_prompt": "text, words, letters, numbers, abstract boxes, bare geometry, UI elements, logos, watermarks, people, chaotic layout, messy lines, grids.",
+  "rationale": "The article emphasizes the 'hidden layers' of software calls and database lookups that stack on top of raw token costs. A technical isometric cutaway perfectly visualizes these hidden structural layers and the flow of compute in a clean, analytical manner.",
+  "cue": "budget the hidden layers",
+  "subject": "isometric cutaway of a multi-tiered compute server stack",
+  "alt_text": "Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers.",
+  "caption": "Enterprises are demanding visibility into the hidden layers of compute that drive up AI costs per resolved work-unit.",
+  "title": "isometric-ai-compute-layers",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,23 +48,23 @@
   "local_path": "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1834706,
-  "sha256": "sha256:e1d5509459d869f7126a0f301728f5cd",
+  "bytes": 1574022,
+  "sha256": "sha256:9b94a6fa11fcc0f1032b8c2a11089008",
   "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9",
   "source_chars": 4783,
-  "task_id": "b49578e60bb816bcd99698f620b2db48",
+  "task_id": "cb9da70aaf2d8f4bb7e939b8cac7302a",
   "credits": 18.0,
-  "cost_ms": 25,
-  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1790892557503-77wxrsflwln.png",
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ea6456b43b4e81be66131e160bab94c4.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A modular server blade assembly featuring an integrated mechanical metering valve and flow sensor attached directly to the main processing housing. Flat muted palette with one bright accent colour highlighting the metering component, thin consistent line weight. Recognisable hardware with racks, trays, and conduit pipes showing visible depth. Unlabelled, generous empty margin.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, abstract boxes, bare geometry, cubes, spheres, logos, watermarks, people, glowing brains.",
+      "prompt": "Clean isometric cutaway illustration of a multi-tiered enterprise compute server stack, technical drawing style, axonometric projection. Flat muted grey palette with a single bright amber accent color tracking a data flow down through three distinct internal processing trays and routing bays. Recognizable hardware racks, cooling modules, and visible depth, clean consistent line weight, generous empty margin on a neutral seamless background.\n\nDo not include: text, words, letters, numbers, abstract boxes, bare geometry, UI elements, logos, watermarks, people, chaotic layout, messy lines, grids..",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-01T22:09:19+00:00"
+  "generated_at": "2026-10-08T22:20:14+00:00"
 }

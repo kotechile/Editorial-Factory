@@ -5,6 +5,12 @@ persona: ai_architect
 one_big_thing: "A peer-reviewed ablation shows the validation-and-rollback gate is the highest-leverage part of a multi-agent optimization loop — delete it and LoCoMo collapses 17.2 → 6.6 — and that optimizing skills, not memory, is how multi-agent systems actually improve."
 date: 2026-09-24
 slug: maskills-multi-agent-skills-optimization
+image_path: "context/assets/illustrations/maskills-multi-agent-skills-optimization/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Brushed titanium server blade locking into a precision inspection gate bay against a charcoal background."
+image_caption: "Strict mechanical validation gates prevent a single bad update from breaking an agent's ability to act."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

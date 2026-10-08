@@ -7,6 +7,12 @@ date: 2026-10-08
 slug: cache-boundary-decides-input-bill
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/cache-boundary-decides-input-bill/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric cutaway of a server pipeline showing a heavy locked block of static racks partitioned from loose shifting blades."
+image_caption: "The financial efficiency of an AI agent depends entirely on where developers place the boundary between fixed instructions and dynamic inputs."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

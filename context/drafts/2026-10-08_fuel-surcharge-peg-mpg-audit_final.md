@@ -7,6 +7,12 @@ date: 2026-10-08
 slug: fuel-surcharge-peg-mpg-audit
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Overhead view of heavy commercial freight contracts and rate tables on a wooden desk."
+image_caption: "The true cost of fuel is hidden in the carrier's mathematical formulas, not the federal diesel index."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

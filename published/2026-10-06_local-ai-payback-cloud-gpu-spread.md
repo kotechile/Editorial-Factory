@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "Massive workstation graphics processing unit with heavy cooling fins resting on a dark surface."
-image_caption: "The memory shortage has pushed local AI compute hardware into a rare luxury tier."
+image_alt: "An unbranded heavy-duty GPU compute module resting on a dark textured slate surface under dramatic studio lighting."
+image_caption: "The decision to buy local AI hardware now hinges on navigating surging memory costs and wildly diverging cloud rental rates."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

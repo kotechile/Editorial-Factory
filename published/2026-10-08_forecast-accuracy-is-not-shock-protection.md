@@ -14,10 +14,10 @@ meta_title_source: "derived_from_title"
 meta_description: "A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15 of 15 live rollouts, cutting errors by 32% on average."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg"
-image_style: "editorial_macro"
+image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Heavy weathered steel shipping latch with a small, glowing digital sensor attached, extreme close-up."
-image_caption: "A tighter mathematical forecast cannot replace the physical buffers needed to absorb real-world supply chain shocks."
+image_alt: "Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze."
+image_caption: "Mathematical models optimize daily efficiency, but physical buffer space remains the only defense against massive supply chain shocks."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

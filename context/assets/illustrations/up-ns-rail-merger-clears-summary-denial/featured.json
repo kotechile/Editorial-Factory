@@ -1,7 +1,18 @@
 {
   "slug": "up-ns-rail-merger-clears-summary-denial",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "telephoto compression, 200mm long-lens view of industrial infrastructure. A massive rail yard with dozens of parallel tracks and generic freight train cars. Stacked overlapping layers of structure receding into deep atmospheric haze, flat compressed perspective, overcast light, cool desaturated palette, no people in the foreground.",
+      "task_id": "097ae3038957bec201fcd9eb6b24b3f2",
+      "sha256": "sha256:6d7973833359aa6c47b4e13e55a6280f",
+      "generated_at": "2026-10-01T14:06:40+00:00",
+      "source_hash": "sha256:03821bdbb1e4457cdae0422b0393f0c5"
+    }
+  ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
   "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
@@ -10,14 +21,14 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "telephoto compression, 200mm long-lens view of industrial infrastructure. A massive rail yard with dozens of parallel tracks and generic freight train cars. Stacked overlapping layers of structure receding into deep atmospheric haze, flat compressed perspective, overcast light, cool desaturated palette, no people in the foreground.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, branding, recognizable company liveries, people, watermarks",
-  "rationale": "The story concerns a massive transcontinental railroad merger covering 45 states and over 10,000 routes. A compressed telephoto view of a vast rail yard emphasizes the sheer physical scale and infrastructural footprint of the proposed system.",
-  "cue": "one giant system",
-  "subject": "a vast rail yard with overlapping tracks and freight cars receding into haze",
-  "alt_text": "Overlapping railroad tracks and generic freight cars receding into deep haze at a large industrial yard.",
-  "caption": "Shippers have until mid-November to map their single-line rail exposure as the transcontinental merger advances to a review.",
-  "title": "Rail Merger Scale Yard",
+  "prompt": "Telephoto compression, 200mm long-lens view of a sprawling intermodal rail yard. Stacked overlapping layers of freight trains, shipping containers, and heavy rail infrastructure receding into deep atmospheric haze. Flat compressed perspective, overcast soft light, cool desaturated color palette. Wide 16:9 framing with deliberate editorial breathing room. No people in the foreground, quiet but imposing industrial scale.",
+  "negative_prompt": "text, words, letters, numbers, wordmarks, signage, UI, logos, branding, people, chaotic, cartoon, 3d render",
+  "rationale": "The story is fundamentally about the massive physical scale of a coast-to-coast rail network and the volume of freight it controls. A compressed telephoto view of a rail yard perfectly captures this overwhelming scale.",
+  "cue": "coast-to-coast railroad",
+  "subject": "sprawling intermodal rail yard",
+  "alt_text": "Intermodal freight trains and shipping containers receding into the distance at a massive rail yard.",
+  "caption": "The proposed merger would create the first modern transcontinental railroad, spanning coast to coast.",
+  "title": "Coast-to-Coast Rail Merger",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,21 +38,21 @@
   "local_path": "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 525022,
-  "sha256": "sha256:6d7973833359aa6c47b4e13e55a6280f",
+  "bytes": 503378,
+  "sha256": "sha256:ba790236b034828efa596e705d092d4f",
   "source_hash": "sha256:03821bdbb1e4457cdae0422b0393f0c5",
   "source_chars": 4604,
-  "task_id": "097ae3038957bec201fcd9eb6b24b3f2",
+  "task_id": "afcd2a22daedbb81ce92ddeec2ac8146",
   "credits": 5.0,
-  "cost_ms": 66,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/097ae3038957bec201fcd9eb6b24b3f2_1790863598997.jpg",
+  "cost_ms": 50,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/afcd2a22daedbb81ce92ddeec2ac8146_1791498080820.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "telephoto compression, 200mm long-lens view of industrial infrastructure. A massive rail yard with dozens of parallel tracks and generic freight train cars. Stacked overlapping layers of structure receding into deep atmospheric haze, flat compressed perspective, overcast light, cool desaturated palette, no people in the foreground.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, logos, branding, recognizable company liveries, people, watermarks.",
+      "prompt": "Telephoto compression, 200mm long-lens view of a sprawling intermodal rail yard. Stacked overlapping layers of freight trains, shipping containers, and heavy rail infrastructure receding into deep atmospheric haze. Flat compressed perspective, overcast soft light, cool desaturated color palette. Wide 16:9 framing with deliberate editorial breathing room. No people in the foreground, quiet but imposing industrial scale.\n\nDo not include: text, words, letters, numbers, wordmarks, signage, UI, logos, branding, people, chaotic, cartoon, 3d render.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-01T14:06:40+00:00"
+  "generated_at": "2026-10-08T22:21:23+00:00"
 }

@@ -7,6 +7,12 @@ date: 2026-10-08
 slug: split-year-two-clock-seam
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/split-year-two-clock-seam/featured.png"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Two overlapping, misaligned clock face paper silhouettes on a neutral background."
+image_caption: "The timing gap between different national residency rules is often where relocating professionals face unexpected costs."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

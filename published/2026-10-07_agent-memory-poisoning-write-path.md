@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "One simple text file is enough to take over a coding agent's memory."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-memory-poisoning-write-path/featured.png"
-image_style: "technical_isometric"
+image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Isometric cutaway drawing of a data storage module with a validation checkpoint on the intake conduit."
-image_caption: "Securing an agent requires validating data at the memory write boundary rather than just filtering the prompt."
+image_alt: "Modular memory drive assembly with a security latch intercepting a cartridge on a concrete surface."
+image_caption: "Securing persistent-memory agents requires validating data at the storage boundary before it is written."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/ca-fair-plan-rate-hike-hardening-exit/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "Overhead view of slightly misaligned, blank regulatory paper documents on a plain desk."
-image_caption: "California homeowners face a steep rate hike unless they harden their homes to earn a discount."
+image_alt: "Overhead view of heavy paper documents beneath a housing blueprint and a square of metal vent mesh on a dark surface."
+image_caption: "Homeowners must weigh the upfront cost of physical fireproofing against the certainty of massive state insurance rate hikes."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

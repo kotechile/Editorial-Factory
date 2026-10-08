@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "When Chroma engineers tested 18 large language models (LLM) across eight lengths, scores dropped as the prompts grew — even on simple tasks."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png"
-image_style: "technical_isometric"
+image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Isometric cutaway of a tiered modular sorting tower with four distinct storage trays."
-image_caption: "AI builders are abandoning flat context windows in favor of layered, tiered memory architectures."
+image_alt: "A tiered mechanical assembly with multiple distinct modular bays resting on a concrete surface."
+image_caption: "Effective AI agents require structured, multi-tiered memory systems rather than relying on a single sprawling context window."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

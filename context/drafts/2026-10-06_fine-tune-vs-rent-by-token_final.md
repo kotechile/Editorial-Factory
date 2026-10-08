@@ -7,6 +7,12 @@ date: 2026-10-06
 slug: fine-tune-vs-rent-by-token
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Heavy finned graphics compute block and thick braided power cable connector arranged on a brushed steel surface."
+image_caption: "The true test of local compute is often the power limit and the rented price you choose not to beat."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

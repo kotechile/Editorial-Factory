@@ -10,10 +10,10 @@ sources:
   - https://fortune.com/2026/09/15/coca-cola-invest-10-billion-us-growth-through-2030-cfo
   - https://media.rabobank.com/asset/d0da754d-5253-48d8-a4c9-1ff0045fae48/Unwrapped-Plastic-packaging-matters-August-2026.pdf
 image_path: "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.jpg"
-image_style: "editorial_macro"
+image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Close-up photograph of translucent plastic resin pellets used in manufacturing."
-image_caption: "New tariffs are impacting the supply chain upstream, hitting materials like plastics before they become packaging."
+image_alt: "Towering pallets of industrial plastic resin sacks and packaging molds in a cavernous warehouse at twilight."
+image_caption: "The risk of trade tariffs has shifted from finished goods to the raw materials and packaging required for domestic assembly."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

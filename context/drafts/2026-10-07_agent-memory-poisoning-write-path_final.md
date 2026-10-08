@@ -7,6 +7,12 @@ date: 2026-10-07
 slug: agent-memory-poisoning-write-path
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/agent-memory-poisoning-write-path/featured.png"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "Modular memory drive assembly with a security latch intercepting a cartridge on a concrete surface."
+image_caption: "Securing persistent-memory agents requires validating data at the storage boundary before it is written."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

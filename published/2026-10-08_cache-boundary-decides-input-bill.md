@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "A research team ran the same agent workload through OpenAI, Anthropic, and Google and found that prompt caching cut application programming interface (API)…"
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/cache-boundary-decides-input-bill/featured.png"
-image_style: "clay_render"
+image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "A matte modular mechanical assembly with a fixed block and an interchangeable cartridge slot on a neutral backdrop."
-image_caption: "The cache boundary forces developers to strictly separate static instructions from dynamic inputs."
+image_alt: "Isometric cutaway of a server pipeline showing a heavy locked block of static racks partitioned from loose shifting blades."
+image_caption: "The financial efficiency of an AI agent depends entirely on where developers place the boundary between fixed instructions and dynamic inputs."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -5,6 +5,12 @@ persona: equity_career_strategist
 one_big_thing: "More than 70% of vested startup options are never exercised — and a 401(k) is one of the biggest levers deciding who actually converts paper equity into cash."
 date: 2026-09-25
 slug: carta-unexercised-options-401k
+image_path: "context/assets/illustrations/carta-unexercised-options-401k/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "Vesting documents and a stock-certificate folio under soft directional light on a dark wooden desk."
+image_caption: "Access to a retirement account can provide the cash cushion needed to turn paper equity into actual shares."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

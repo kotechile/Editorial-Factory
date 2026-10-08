@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://www.nbcnews.com/business/economy/us-china-extend-trade-truce-trump-rcna599525
   - https://www.atlantafed.org/research-and-data/publications/policy-hub-macroblog/2026/09/21/how-are-firms-using-tariff-refunds
+image_path: "context/assets/illustrations/tariff-cliff-already-priced-in/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn lighting."
+image_caption: "Supply chain operators are building cash buffers to hedge against the looming return of suspended tariffs."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://www.tive.com/press-release/tive-research-45-of-companies-using-active-monitoring-recover-more-than-half-of-stolen-cargo-1-5x-the-rate-of-those-relying-on-passive-monitoring
   - https://www.scmr.com/article/agentic-ai-supply-chain-exception-management
+image_path: "context/assets/illustrations/control-tower-silent-exception/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Commercial freight trailer backed into an industrial loading dock at dawn under heavy atmospheric haze."
+image_caption: "When a shipment is handed to a fake carrier, the theft begins before an exception is ever triggered."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Rows of heavy physical server racks receding into the distance in a massive data center hall."
-image_caption: "Moving steady workloads to owned physical servers can cut massive cloud hosting bills by half."
+image_alt: "A compressed telephoto view of physical bare-metal server racks receding into the hazy distance of a large data center hall."
+image_caption: "Repatriating steady workloads to owned physical racks can cut infrastructure costs by half or more."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
