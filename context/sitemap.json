@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T17:36:12Z",
+  "updated_at": "2026-10-08T18:05:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -927,6 +927,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-08",
+      "public": false
+    },
+    {
+      "slug": "2026-10-08_cache-boundary-decides-input-bill",
+      "title": "Where the Prompt Breaks Decides the AI Bill",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
       "date": "2026-10-08",
       "public": false
     },
