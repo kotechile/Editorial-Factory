@@ -673,21 +673,22 @@ shows as the article's card. You are not a preset — you read THIS text and pic
 deserves, and you change treatment between articles so the desk does not look like one filter \
 over forty posts.
 
-CREATIVE PROCESS (AVOIDING BORING, STERILE IMAGES):
-The single biggest failure mode on this desk is BORING, STERILE, REPETITIVE IMAGES (e.g. generic computer racks, blank modular cubes, unlatched metal gates on plain backdrops, sterile document flatlays).
-The reader should be wowed by the image. It must feel like an authentic, award-winning editorial hero image from Wired, The Atlantic, The New York Times Magazine, Bloomberg Businessweek, or Financial Times.
+CREATIVE PROCESS (MAGAZINE COVER STANDARD: INTERESTING, CONCEPTUAL, ENGAGING):
+The image must have the intellectual intrigue, visual beauty, and narrative engagement of a top magazine cover or lead feature spread (Bloomberg Businessweek, Wired, The Atlantic, The Economist, MIT Technology Review).
+It does NOT need to be shiny, flashy, or extravagant — its power comes from CONCEPTUAL WEIGHT, VISUAL TENSION, and TACTILE DEPTH. It must feel like an authentic, award-winning editorial hero image.
+REJECT BORING, STERILE TROPES: Avoid generic server blades in a rack, abstract grey modular cubes, unlatched inspection gates on empty backdrops, or sterile document flatlays.
 
 You MUST execute this 4-step creative method:
 
 STEP 1: READ THE SUBSTANTIVE ARTICLE & EXTRACT THE MAIN IDEA
 Do NOT just read the headline. Read the ARTICLE SUBSTANTIVE CONTENT below carefully.
-Identify the central tension, turning point, or real-world stake. What is the core dramatic conflict or revelation of this story?
+Identify the central tension, turning point, or real-world stake. What is the core dramatic conflict or economic pressure of this story? If two forces collide, compress, or trade off against each other (e.g. rising capital costs vs automation payoff, cloud monopoly vs open weights, memory bottlenecks throttling GPU compute), identify them.
 (State this in your `main_idea` field).
 
-STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE
+STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE (VISUALIZING TENSION & PRESSURE)
 Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea.
+Where applicable, embody the core conflict through physical tension: a central object or mechanism being squeezed, compressed, balancing, or under load from competing forces; or an evocative, atmospheric environment capturing the inflection point.
 (State this in your `object_or_scene` field).
-- REJECT BORING, STERILE TROPES: Avoid generic server blades in a rack, abstract grey modular cubes, unlatched inspection gates on empty backdrops, or plain paper sheets.
 - CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES WITH CHARACTER AND TEXTURE:
   * For industrial / supply chain / manufacturing: an authentic, textured industrial setting — a cinematic container port at blue hour with towering gantry cranes, an ocean vessel berthed in coastal fog, a manufacturing line with glowing metal or precision machining residue, an industrial freight scale with heavy cargo, a desert highway border crossing at sunset.
   * For hardware / tinkering / 3D printing / engineering: an evocative workshop scene with focused spotlighting — e.g. an aborted 3D print with a tangled bird's nest of vibrant filament over an unfinished gear on a glass bed, a precision CNC milling head over gleaming aluminum chips, a technician's bench with intricate wiring and circuit probes.
@@ -699,10 +700,11 @@ Select the treatment from the catalogue that provides the most stunning visual i
 
 STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
 Write a prompt (15-120 words) with rich sensory and visual details:
+- Landscape composition (16:9): wide framing with generous editorial negative space and deliberate breathing room, letting the hero subject command the frame (like cover art, but strictly without any text or typography).
 - Camera angle & lens: define perspective, lens focal length, focal plane, depth of field (e.g., 35mm anamorphic wide shot, 100mm macro razor-sharp plane, dramatic low-angle perspective).
-- Lighting & atmosphere: golden hour sunlight casting long shadows, blue-hour twilight with warm amber worklights, cinematic volumetric haze, rim lighting highlighting metallic edges.
-- Textures & materials: brushed metals, weathered corrugated containers, frosted copper tubing, dusty workshop glass, textured matte polymers.
-- Composition & mood: generous negative space, editorial elegance, sophisticated color palette.
+- Lighting & atmosphere: dramatic studio lighting, chiaroscuro, single strong directional light casting deep shadows, golden hour sunlight, blue-hour twilight with warm amber worklights, cinematic volumetric haze, rim lighting highlighting metallic edges.
+- Textures & materials: brushed metals, weathered corrugated steel, frosted copper tubing, dusty workshop glass, textured matte polymers, tactile paper stock.
+- Mood: quiet confidence, editorial restraint, sophisticated color palette. Never chaotic or overcrowded.
 
 VISUAL ANCHOR:
 Headline: {title}

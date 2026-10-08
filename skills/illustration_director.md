@@ -14,12 +14,15 @@ into the pixels, a real company's mark, a stock-photo cliché, alt text a screen
 The third failure is **boring, sterile images**: generic server blades, blank modular cubes, or unlatched
 gates on flat backgrounds that lack soul, drama, and narrative weight.
 
-### The 4-Step Creative Process
-To ensure editorial imagery matches the standard of top publications (Wired, The Atlantic, Bloomberg Businessweek):
-1. **Read Substantive Content & Extract Main Idea**: The LLM reads the core body of the article (not just the headline/excerpt) to identify the central tension, turning point, or real-world stake. Recorded in `main_idea`.
-2. **Select an Evocative Hero Object or Scene**: Choose a tangible, storytelling hero object or authentic narrative scene with character, texture, and drama (e.g., an aborted 3D print bird's nest on a glass bed, container cranes at blue hour in coastal fog, high-voltage copper busbars, or a physical relay bypass wired around a dark logic board). Never sterile cubes or plain server racks. Recorded in `object_or_scene`.
+### The 4-Step Creative Process (Magazine Cover Standard: Interesting, Conceptual, Engaging)
+To ensure editorial imagery matches the visual intrigue, conceptual depth, and aesthetic engagement of a top magazine cover or lead feature spread (Wired, The Atlantic, Bloomberg Businessweek, The Economist):
+- **Intriguing and Beautiful, Not Extravagant or Shiny**: The image does not need to be flashy sci-fi glitter or over-the-top rendering; its impact comes from **conceptual weight, visual tension, and tactile authenticity**. It conveys quiet confidence and editorial sophistication.
+- **Landscape Composition**: Keep the landscape header format (`16:9` or `3:2`) for CMS featured headers, composed with the generous negative space and dramatic focal weighting of premium editorial cover art.
+
+1. **Read Substantive Content & Extract Main Idea**: The LLM reads the core body of the article (not just the headline/excerpt) to identify the central tension, turning point, or real-world stake. Where two forces collide or squeeze an outcome, identify both. Recorded in `main_idea`.
+2. **Select an Evocative Hero Object or Scene (Visualizing Tension & Pressure)**: Choose a tangible, storytelling hero object or authentic narrative scene with character, texture, and drama. Where applicable, represent the central dilemma through physical tension: an object caught between opposing forces, compressed by constraints, balancing on a knife edge, or exposed in an atmospheric environment. Never sterile cubes or plain server racks. Recorded in `object_or_scene`.
 3. **Choose the Best Treatment & Model**: Select the treatment from the catalogue that provides maximum visual impact, weaving that treatment's core vocabulary naturally into the prompt.
-4. **Craft a Cinematic, High-Texture Prompt**: Specify camera angle, lens/optics (e.g. 35mm anamorphic wide, 100mm macro), dramatic atmospheric lighting (golden hour, volumetric blue-hour haze, rim lighting), rich physical textures (weathered metals, frosted copper, polymers), and elegant composition with negative space.
+4. **Craft a Cinematic, High-Texture Prompt**: Specify camera angle, lens/optics (e.g. 35mm anamorphic wide, 100mm macro), dramatic atmospheric lighting (chiaroscuro, deep shadows, single directional spotlight, low-raking sunlight, rim highlights), rich physical textures (weathered metals, frosted copper, polymers, tactile paper), and generous negative space. Zero in-image text or typography.
 
 ## 2. The treatment catalogue (`STYLES` in `scripts/illustration_creator.py`)
 The art director may only choose from the catalogue; it is stated to the director verbatim, and
