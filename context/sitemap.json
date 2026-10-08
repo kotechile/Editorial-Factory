@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T10:36:38Z",
+  "updated_at": "2026-10-08T11:07:19Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -906,6 +906,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-08",
+      "public": false
+    },
+    {
+      "slug": "2026-10-08_token-price-record-low-budget-overrun",
+      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn't.",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
       "date": "2026-10-08",
       "public": false
     }

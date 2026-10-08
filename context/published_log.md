@@ -59,6 +59,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-07 | enterprise_build_vs_buy | sla-credit-is-not-insurance | Why Cloud Uptime SLAs Are Not Insurance | https://pressflow.aichieve.net/published/2026-10-07_sla-credit-is-not-insurance.md | reader site only |
 | 2026-10-07 | warehouse_automation_robotics_capex | warehouse-pick-error-tax-payback | A 1% Mispick Rate Is a Seven-Figure Line Item | https://pressflow.aichieve.net/published/2026-10-07_warehouse-pick-error-tax-payback.md | reader site only |
 | 2026-10-08 | agentic_ai | agent-failure-topology-not-model | Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model | https://pressflow.aichieve.net/published/2026-10-08_agent-failure-topology-not-model.md | reader site only |
+| 2026-10-08 | enterprise_ai_finops | token-price-record-low-budget-overrun | Token Prices Hit Record Lows. Enterprise AI Bills Didn't. | https://pressflow.aichieve.net/published/2026-10-08_token-price-record-low-budget-overrun.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
