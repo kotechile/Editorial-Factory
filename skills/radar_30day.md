@@ -87,6 +87,14 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > marker records the row count and `scripts/verify.sh` §8 reads a mismatched block as stale).
 > Then let the Judge own the collision vector, the headline and the number.
 
+> **Every URL a downstream artifact cites must appear as a URL in this file (learned 2026-10-08).**
+> `scripts/synthesize_topics.py --check-briefs` (verify.sh §8) extracts *every* `https://` URL from a
+> draft's body — including a corroborating citation in `## Sources`, not just the two synthesis
+> anchors — and fails if any one of them is absent from a committed `*_signals.md` file. A draft that
+> cites a record-low figure to CNBC while the signals file only mentions "CNBC" in prose (no URL)
+> reds the build. Write the full `https://` URL of every corroborating source you intend to cite into
+> this file (its own row or a primary-source note), not just the load-bearing anchors.
+
 ## 4. Failure handling
 - Zero candidates ≥ 60 → log query syntax to `skills/self_improvement_eval.md`, widen to 45 days,
   re-run once. If still empty, return "no publish" — never pad.
