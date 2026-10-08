@@ -1,0 +1,34 @@
+# Signals: demand_sensing_advanced_sop — 2026-10-08
+
+**Window:** 2026-09-08 → 2026-10-08 (30 calendar days)
+**Queries run:** 16 (web: demand sensing / forecast accuracy / S&OP / Gartner supply chain planning / El Niño supply chain shock / latency tax; + supply_chain_intel MCP `--recent 30` and `--search` on "demand sensing", "S&OP", "sales and operations planning", "forecast accuracy", "demand planning")
+**Sources swept:** supply_chain_intel (healthy; 96 documents), gartner_supply_chain, supply_chain_brain, supply_chain_dive, harvard_business_review, journal_of_business_forecasting, x_ai (+ web fallback: DemandForecast.ai/Pecan, Verisk Maplecroft, Oxford Economics, SupplyChainBrain, Anaplan/Incisiv, IBF)
+
+## Raw candidate table
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | DemandForecast.ai "Demand Forecasting Accuracy Report 2026" — first annual benchmark of AI forecasts vs the incumbent a company already ran | https://demandforecast.ai/resources/forecast-accuracy-report | 2026-10-01 | 15/15 deployments the AI forecast beat the incumbent; forecast error cut **14%–56%, avg 32%**; manual planning effort **−70%** (Mars: 75% of forecast volume "touchless"); overstock −50% and sales +10–25% (fast-fashion, 10,000+ SKUs/~5,000 stores); Kenvue MAPE −37%; Rimports weighted MAPE 146%→64%; Nucor +$4–5M sales at one site. "No surveys" — measured live deployments, Pecan engine, 2022–2026, 10 industries | financial return of upgrading from spreadsheet/manual forecasting to ML demand sensing (MAPE amortization, safety stock) | 88 |
+| 2 | Verisk Maplecroft: "Record El Niño poses growing risk to Latin American supply chains, commodity output and infrastructure" | https://www.maplecroft.com/solutions/supply-chain-risk/insights/latin-americas-vulnerability-to-super-el-nino-poised-to-upend-key-supply-chains/ | 2026-09-30 | A repeat/amplification of 1997/98 El Niño is possible → **USD 5.7 trillion** in global economic losses, ~3× the 2008 GDP decline; 2026 El Niño "already the strongest ever recorded in terms of Pacific Ocean temperatures … not set to peak until December"; drought threatens Panama Canal; sectors at risk: copper, coffee, soy, maize, salmon | promo & seasonality shock simulator / capacity under demand spike | 86 |
+| 3 | Oxford Economics (Sept 8 report) — Super El Niño macro cost, via SupplyChainBrain | https://www.supplychainbrain.com/articles/44808-super-el-nino-could-cost-global-economy-72t | 2026-09-08 | **$986 billion** in global losses in 2027 and up to **$7.2 trillion over six years**; WMO warns near-100% likelihood the peak extends through **February 2027**; equatorial Pacific sea-surface temps rose up to **2.6°C** above average late July–early August | shock sizing for planning / working-capital exposure | 80 |
+| 4 | Gartner Supply Chain Planning Summit (London, Oct 5–6) — session framing: "chasing higher forecast accuracy … factories overreact" | https://www.gartner.com/en/conferences/emea/supply-chain-planning-uk/sessions | 2026-10-06 | "Many organizations chase higher forecast accuracy, only to see their factories overreact when high-level monthly buckets collide with granular weekly master schedules … misaligned planning cadences and poorly managed forecast-consumption windows create phantom demand spikes, driving costly changeovers, emergency runs and inventory build-ups" | S&OP cadence / forecast consumption / ERP-native vs specialized planning | 72 |
+| 5 | Supply Chain Dive: TJX CEO — distribution model will help weather El Niño | https://www.supplychaindive.com/news/tjx-ceo-distribution-model-will-help-weather-el-nino/830665/ | 2026-09-18 | Retailer "leveraged its holding capability during the quarter to align inbound seasonal merchandise with actual weather-driven customer demand" | practitioner response to a seasonality shock (buffer vs forecast) | 66 |
+| 6 | Anaplan/Incisiv 2026 Supply Chain Resilience & AI Adoption Study (background, dated) | https://www.anaplan.com/resources/research-report/incisiv-2026-supply-chain-resilience-ai-adoption-study | 2026-04-28 | "Latency tax": supply chains lose **5+ cents on every dollar** to slow decisions; **65%** refresh forecasts monthly or less; **73%** rely on slow/manual/alert-based processes; 72-point gap between AI importance and deployment | cadence / decision latency | 62 |
+
+## Sweep verdict
+
+- **Two hard-figure, in-window primaries, on two of this vertical's own primary angles.** #1 (DemandForecast.ai, October 2026) is the first annual *outcome benchmark* of AI demand sensing vs the incumbent forecast a team already runs — squarely the "financial return of upgrading from spreadsheet forecasting to real-time ML demand sensing" angle. #2/#3 (Verisk Maplecroft 30 Sep + Oxford Economics 8 Sep) quantify an in-window *demand/supply shock* — the "promo and seasonality shock simulator / capacity under demand spikes" angle.
+- **Cross-topic collision is live and non-obvious:** the benchmark measures the accuracy you can *buy* on historical pattern error; the El Niño reports measure a *structural break* (record anomaly, peaks December, ~$1T in 2027) that no incumbent-vs-AI comparison domain contains. The emergent thesis — "a better forecast is not a shock absorber" — is stated by neither source. Gartner's Oct 5–6 session adds the mechanism (a tighter forecast still pings a cadence that overreacts), and TJX (#5) shows an operator already answering with buffer, not math.
+- **Retread check (prior 30 days, this vertical):** 2026-10-01 published "Planning AI Buys Capability, Not Autonomy" (Gartner Sept 24 — autonomy vs augmentation). Different rule/event/figure; this cycle's thesis (accuracy ROI vs an unmodeled shock) does not re-argue it. 2026-09-24 was a no-publish (no fresh signal).
+- **#6 is dated background, not an anchor** (survey fielded Q1 2026, released April 2026 → outside the 30-day window); carried for context only, not cited as an in-window figure.
+
+## Candidate Synthesis Pairs
+
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=6 candidates=0 heuristic=- window=2026-09-08..2026-10-08 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+_No mechanically valid pair. That is a legitimate answer, not a failure: the Judge may still find a synthesis this token layer cannot see._
+<!-- synthesis-seed:end -->
