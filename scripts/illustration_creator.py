@@ -108,6 +108,37 @@ DEFAULT_NEGATIVE = (
     "subjects, deformed anatomy, extra fingers, low resolution, blur, jpeg artifacts"
 )
 _NO_TEXT_RE = re.compile(r"\b(text|letter|word|caption|typograph|watermark|logo|brand mark|signature)", re.I)
+
+# What is actually appended to the image model's prompt. Deliberately NOT the director's
+# `negative_prompt`: kie takes the prompt as ONE text field, so every prohibition is read back as a
+# token to draw — a brief that forbids "abstract cubes, spheres, wedges" is a brief that asked for
+# them, which is how kv-cache-is-the-concurrency-ceiling came back as a cube-and-block assembly. Only
+# the legibility/brand set earns that risk, because in-image text ruins a header outright. The
+# director's own negative stays on the brief as provenance and is still checked by validate_brief.
+IMAGE_GUARD = "Do not include: text, lettering, numbers, logos, watermarks, UI."
+
+# Potency vocabulary — what a brief must NAME to be worth an image credit. A floor, not a style test:
+# a prompt that names neither an optic nor a light is a description, not a photograph, and that is
+# how a "cinematic" brief comes back a flat render. The two model families need different anchors
+# (flux: stage the photograph; nano: build the structure), so the check is per model_key.
+_OPTIC_RE = re.compile(
+    r"\b(lens|\d{2,3}\s?mm|anamorphic|macro|telephoto|wide[- ]angle|fisheye|focal|depth of field|"
+    r"shallow focus|long[- ]lens)\b", re.I)
+_LIGHT_RE = re.compile(
+    r"\b(light|lights|lighting|lit|illuminat\w+|chiaroscuro|rim[- ]?light\w*|rim highlight\w*|"
+    r"spotlight|backlit|sunlight|daylight|golden hour|blue hour|dusk|twilight|glow|shadow\w*|"
+    r"silhouette\w*|haze|hazy|volumetric)\b", re.I)
+_TEXTURE_RE = re.compile(
+    r"\b(textur\w+|weathered|brushed|polished|oxidiz\w+|oxidiz\w+|rust\w*|patina|concrete|steel|"
+    r"copper|aluminium|aluminum|timber|wooden|canvas|rag paper|paper stock|polymer|matte|grain\w*|"
+    r"tactile|surfaces?|dusty|grimy)\b", re.I)
+_STRUCTURE_RE = re.compile(
+    r"\b(assembl\w+|cutaway|isometric|arrang\w+|tier\w*|stack\w*|modul\w+|bay|bays|rack\w*|rails?|"
+    r"layers?|layered|interlock\w*|mounted|chassis|sectioned|framed|jig|bracket\w*|housing\w*)\b", re.I)
+_FRAMING_RE = re.compile(
+    r"\b(asymmetr\w*|off[- ]centre\w*|off[- ]center\w*|low[- ]angle|high[- ]angle|three[- ]quarter|"
+    r"top[- ]down|symmetr\w*|centred|centered|scale contrast|rule of thirds|leading lines?|"
+    r"diagonal|foreground|midground|hero subject|extreme close|wide establishing)\b", re.I)
 # Phrases that ask the model to render legible text (as opposed to forbidding it).
 _TEXT_REQUEST_RE = re.compile(
     r"\b(with|featuring|showing|displaying|reading|saying|spelling|stating|labelled|labeled|titled|"
@@ -217,12 +248,14 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         when="the news is structural and abstract — a stack reordered, a layer added, a flow "
              "rerouted — and there is no literal object that carries it, so the idea is stated as a "
              "small physical assembly of recognisable parts rather than as bare shapes",
-        medium="matte clay 3D render of a small mechanical assembly, studio render on a neutral "
-               "seamless backdrop",
+        medium="matte clay 3D render of a small mechanical assembly resting on a real textured "
+               "surface in a real space",
         craft="three or four recognisable engineered parts — a modular block, a housing, a latched "
               "cover, a connector or a bay — in a clear physical arrangement that states the idea; "
-              "matte surfaces with moulding seams and contact shadows, single soft key light, matte "
-              "muted palette, no plain spheres or wedges standing in for the subject, no text",
+              "matte surfaces with moulding seams and contact shadows resting on weathered concrete "
+              "or brushed steel, one directional key light raking across them, matte muted palette, "
+              "no plain spheres or wedges standing in for the subject, no text and no moulded or "
+              "embossed lettering",
         keywords=("3d render", "clay", "matte", "studio render", "component", "modular", "assembly",
                   "housing", "bay", "3d"),
         model="nanobanana"),
@@ -231,9 +264,10 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         when="the article explains how a system, process or stack actually works — money flows, "
              "supply chains, pipelines, an agent assembly line",
         medium="clean isometric cutaway illustration, technical drawing style, axonometric projection",
-        craft="flat muted palette with one accent colour, thin consistent line weight, recognisable "
-              "hardware — racks, modules, trays, connectors, pipes with visible depth — rather than "
-              "abstract boxes, unlabelled, generous empty margin",
+        craft="flat muted palette with one accent colour, thin consistent line weight, laid over a "
+              "real material surface — a workbench, a plant floor, a drafting table — recognisable "
+              "hardware with racks, modules, trays, connectors, pipes with visible depth rather "
+              "than abstract boxes, one directional light, unlabelled, generous empty margin",
         keywords=("isometric", "axonometric", "cutaway", "cut-away", "cross-section", "schematic"),
         model="nanobanana"),
     Style(
@@ -241,12 +275,13 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         when="the story is a single number, rule, gate or shift and restraint is the point — with "
              "no scene to photograph, the frame must still be a real assembly: a modular bay, an "
              "unlatched inspection gate, a rack of blades, an interlocking connector",
-        medium="minimalist studio composition of a modular mechanical assembly, soft even light, "
-               "generous negative space",
+        medium="minimalist studio composition of a modular mechanical assembly on a real surface, "
+               "one directional light, generous negative space",
         craft="two or three recognisable engineered parts (a module, a latch, a rack rail, a bay "
               "cover, an inspection gate) in one deliberate arrangement that states the idea; hard "
-              "clean edges, matte muted palette, gallery-print calm, never bare shapes — a cube, a "
-              "sphere or a wedge is not a subject",
+              "clean edges on weathered concrete or brushed steel, one directional light throwing a "
+              "long cast shadow, matte muted palette, never bare shapes — a cube, a sphere or a "
+              "wedge is not a subject — and no moulded, engraved or printed lettering",
         keywords=("modular", "module", "component", "assembly", "connector", "rack", "chassis",
                   "bay", "bracket", "latch"),
         model="nanobanana"),
@@ -255,7 +290,8 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         when="the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure — use cinematic still or telephoto industry instead",
         medium="minimalist editorial cut-paper collage, crisp cut-out object silhouettes, halftone newsprint texture",
         craft="two or three stylized cut-paper object silhouettes (such as an hourglass, certificate, key, or mechanism) "
-              "layered deliberately against a solid neutral paper backdrop; muted modern editorial palette, crisp clean edges, "
+              "layered deliberately on a real table — hand-torn rag paper with visible fibre, physical cast shadows "
+              "under each layer, one raking light; muted modern editorial palette, crisp clean edges, "
               "generous negative space, never bare geometry or random torn scraps, no legible print",
         keywords=("collage", "cut-paper", "cut paper", "silhouette", "cut-out", "cutout", "torn", "halftone", "newsprint"),
         model="nanobanana"),
@@ -272,10 +308,12 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         id="studio_object", label="Studio product shot",
         when="the story is a product, a device, a price or a market for a thing the reader could buy "
              "— an appliance, a panel, a router, a robot arm",
-        medium="studio product photograph on a seamless backdrop, single hero object",
-        craft="softbox key light with visible falloff and a soft contact shadow, three-quarter angle, "
-              "generic unbranded object, catalogue clarity, muted background gradient",
-        keywords=("studio", "seamless backdrop", "product shot", "softbox", "three-quarter"),
+        medium="studio product photograph of one hero object on a real studio surface, single "
+               "directional light",
+        craft="softbox key light with visible falloff and a long cast contact shadow across a "
+              "textured surface, three-quarter angle, generic unbranded object, catalogue clarity, "
+              "no gradient sweep and no embossed or printed lettering",
+        keywords=("studio", "studio surface", "product shot", "softbox", "three-quarter"),
         model="flux"),
     Style(
         id="architectural_night", label="Lit architecture at dusk",
@@ -404,6 +442,7 @@ class Brief:
     rationale: str
     cue: str                  # verbatim phrase from the article that drove the choice
     subject: str
+    composition: str          # the mandated framing rule (asymmetry, low-angle, scale contrast)
     model: str                # "flux" | "nanobanana"
     prompt: str
     negative_prompt: str
@@ -519,6 +558,38 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
             f"article. Name the physical thing it stands for: a modular bay, an unlatched "
             f"inspection gate, a rack of blades, a relay, a linkage, an interlocking connector")
 
+    # Potency, per model family. The failure: a brief that names a treatment but no optic, no light
+    # and no material comes back a flat render on a sweep — it described the idea instead of staging
+    # the photograph. Every class is required; an `any()` over the list passes on one word such as
+    # "shadow". The anchors differ because the models do: flux stages a photograph, nano builds a
+    # structure.
+    if model == "flux":
+        missing = [label for label, pattern in (
+            ("an optic", _OPTIC_RE), ("light", _LIGHT_RE), ("material texture", _TEXTURE_RE),
+            ("a framing rule", _FRAMING_RE)) if not pattern.search(prompt)]
+        remedy = ("name the optic (35mm anamorphic, 100mm macro, 200mm telephoto), the light it "
+                  "sits in, the material")
+    else:
+        missing = [label for label, pattern in (
+            ("a structural arrangement", _STRUCTURE_RE), ("light", _LIGHT_RE),
+            ("material texture", _TEXTURE_RE), ("a framing rule", _FRAMING_RE))
+            if not pattern.search(prompt)]
+        remedy = ("state how the parts are arranged (a modular bay, a tiered stack, an isometric "
+                  "cutaway) and the light and material")
+    if missing:
+        problems.append(
+            f"prompt names no {', no '.join(missing)} — {model} reads the prompt literally, so "
+            f"{remedy}")
+
+    # The layout is mandated, not left to the model: a composition that states no anchoring rule is
+    # how two different articles end up with the same centred object on the same sweep.
+    composition = re.sub(r"\s+", " ", str(raw.get("composition") or "")).strip()
+    if len(composition) < 12 or not _FRAMING_RE.search(composition):
+        problems.append("composition must name the framing rule (>=12 chars, e.g. 'extreme "
+                        "asymmetry, the hero off-centre and low in frame', 'low-angle with dramatic "
+                        "scale contrast', 'symmetrical top-down') — the layout is part of the "
+                        "direction, not the model's choice")
+
     negative = re.sub(r"\s+", " ", str(raw.get("negative_prompt") or "")).strip()
     if not _NO_TEXT_RE.search(negative):
         problems.append("negative_prompt does not forbid text/watermarks/logos")
@@ -582,7 +653,7 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
 
     return Brief(
         style_id=style_id, rationale=rationale, cue=cue,
-        subject=subject[:300],
+        subject=subject[:300], composition=composition,
         model=model, prompt=prompt, negative_prompt=negative, aspect_ratio=aspect,
         resolution=resolution, alt_text=alt, caption=caption, title=title, credit=credit,
         depicts_real_brand=False, main_idea=main_idea, object_or_scene=object_or_scene,
@@ -713,6 +784,11 @@ Where applicable, embody the core conflict through physical tension: a central o
 STEP 3: CHOOSE THE BEST TREATMENT & MODEL
 Select the treatment from the catalogue that provides the most stunning visual impact for your chosen scene. Weave that treatment's core vocabulary naturally into the prompt.
 
+WRITE THE PROMPT IN THE IDIOM OF THE MODEL THAT WILL RENDER IT — the two families are read differently:
+- flux-2 Pro (editorial_macro, cinematic_still, document_flatlay, long_lens_industry, studio_object, architectural_night) stages a PHOTOGRAPH. Name the optic and its falloff, the light in the room, the material of the surface, and place the subject in a real environment.
+- Nano Banana Pro (clay_render, technical_isometric, component_assembly, paper_collage) builds a STRUCTURE. State the parts and how each is arranged, what each is made of, and the light that falls on it — a spatial construction, not a mood paragraph.
+Both must carry a framing rule, and neither may leave an empty sweep under the object: even a studio treatment sits in a material world.
+
 STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
 Write a prompt (15-120 words) with rich sensory and visual details. Every prompt must carry all four of these:
 - Landscape composition (16:9): wide framing with generous editorial negative space and deliberate breathing room, an ASYMMETRIC composition where the hero subject commands the frame off-centre with heavy editorial framing (like cover art, but strictly without any text or typography).
@@ -772,7 +848,9 @@ HARD RULES
 carries it). Never an abstract concept, never a metaphor stock photo, and never bare geometry — \
 see the grounding rule above.
 - No text, letters, numbers, wordmarks, signage or UI in the image: generated lettering is \
-unreadable. Forbid them in `negative_prompt`.
+unreadable. Forbid them in `negative_prompt` — and keep that list to the legibility/brand set. \
+NEVER enumerate subject matter to exclude: the negative prompt is read by the image model as tokens \
+to draw, so "no abstract cubes" is an instruction to draw abstract cubes.
 - No real company's logo, packaging or product, no recognisable real person, and no human face \
 or hands in frame. Depict the mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
@@ -789,11 +867,14 @@ Return ONLY a JSON object, no markdown fence, with exactly these keys:
  "rationale": "2-3 sentences: why this treatment for this story",
  "cue": "a phrase of 2-10 words copied verbatim from the article above",
  "subject": "the physical thing in the frame, one clause — never a bare shape",
+ "composition": "the framing rule that anchors the layout (>=12 chars) — extreme asymmetry, low-angle with scale contrast, symmetrical top-down; the layout is your direction, not the model's choice",
  "model": "{' or '.join(sorted(MODELS))}",
  "model_override_reason": "required only if you deviate from the catalogue model, else omit",
- "prompt": "the generation prompt, 15-120 words, English, containing the vocabulary of the \
-treatment you chose",
- "negative_prompt": "what must not appear; must name text/watermarks/logos",
+ "prompt": "the generation prompt, 15-120 words, English, in the idiom of the model's family — \
+flux stages a photograph (optic, light, material, environment), nano builds a structure (parts, \
+arrangement, material, light) — and containing the vocabulary of the treatment you chose",
+ "negative_prompt": "short; must name text/watermarks/logos. Never enumerate subject matter to \
+exclude — the image model reads the negative as tokens to draw",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
  "resolution": "1K for most stories, 2K only when fine physical detail is the point",
  "alt_text": "<=125 chars, the SUBJECT first — never 'a render/photo of…'",
@@ -1010,7 +1091,7 @@ class KieClient:
         extra `image_input` list and an explicit `output_format`, and rejects `jpeg` (its allowed
         set is png/webp) — a field difference that silently 500s if it is assumed away.
         """
-        common = {"prompt": f"{brief.prompt}\n\nDo not include: {brief.negative_prompt}.",
+        common = {"prompt": f"{brief.prompt}\n\n{IMAGE_GUARD}",
                   "aspect_ratio": brief.aspect_ratio, "resolution": brief.resolution}
         if brief.model == "nanobanana":
             return {**common, "image_input": [], "output_format": "png"}
@@ -1145,6 +1226,7 @@ def store(slug: str, generation: Generation, brief: Brief, md: str, *,
         "aspect_ratio": brief.aspect_ratio, "resolution": brief.resolution,
         "prompt": brief.prompt, "negative_prompt": brief.negative_prompt,
         "rationale": brief.rationale, "cue": brief.cue, "subject": brief.subject,
+        "composition": brief.composition,
         "alt_text": brief.alt_text, "caption": brief.caption, "title": brief.title,
         "credit": brief.credit, "depicts_real_brand": brief.depicts_real_brand,
         "director": brief.director, "director_attempts": brief.attempts,
@@ -1219,7 +1301,8 @@ def supabase_metadata(record: dict) -> dict:
     """`metadata.illustration` — what the CMS push needs to upload and caption the image."""
     return {k: record.get(k) for k in (
         "slug", "style", "style_label", "model", "model_key", "aspect_ratio", "resolution",
-        "prompt", "negative_prompt", "rationale", "cue", "subject", "alt_text", "caption", "title",
+        "prompt", "negative_prompt", "rationale", "cue", "subject", "composition", "alt_text",
+        "caption", "title",
         "credit", "local_path", "ext", "content_type", "bytes", "sha256", "source_hash",
         "task_id", "credits", "generated_at", "revision", "director", "director_attempts")}
 

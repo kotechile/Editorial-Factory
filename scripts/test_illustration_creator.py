@@ -88,13 +88,14 @@ PROMPTS = {
                        "rough surfaced steel plate, 100mm macro lens, one razor-sharp focal plane, "
                        "shallow depth of field, soft directional daylight, hero object off-centre.",
     "clay_render": "Matte clay 3D render of a small modular assembly: three machined component "
-                   "housings with one bay cover unlatched and a connector half-inserted, studio "
-                   "render on a neutral seamless backdrop, single soft key light with gentle "
-                   "contact shadows, matte muted palette.",
+                   "housings with one bay cover unlatched and a connector half-inserted, asymmetric "
+                   "composition off-centre on a weathered concrete surface, single soft key light "
+                   "with gentle contact shadows, matte muted palette.",
     "component_assembly": "Minimalist studio composition of a modular component assembly: one rack "
                           "rail carrying two module bays, an inspection latch left open on the "
-                          "lower bay, hard clean edges, generous negative space, matte muted "
-                          "palette of slate grey and ochre.",
+                          "lower bay, laid on brushed steel in low-angle view with the hero off-centre, "
+                          "a single soft key light, hard clean edges, generous negative space, matte "
+                          "muted palette of slate grey and ochre.",
 }
 
 
@@ -106,6 +107,7 @@ def brief_json(**over) -> str:
                      "lands on it before it becomes packaging.",
         "cue": "Moved Upstream Into Packaging",
         "subject": "translucent plastic resin pellets on a rough surface",
+        "composition": "extreme asymmetry, the pellets off-centre and low in frame",
         "model": "flux",
         "prompt": PROMPTS["editorial_macro"],
         "negative_prompt": ic.DEFAULT_NEGATIVE,
@@ -204,6 +206,21 @@ check("no treatment's own vocabulary invites bare geometry",
 check("the constructed treatments' vocabulary is mechanism vocabulary",
       all(ic._MECHANISM_RE.search(k) for k in ic.STYLES["component_assembly"].keywords),
       str(ic.STYLES["component_assembly"].keywords))
+# The sterile-output source was the catalogue itself: clay_render's medium read "studio render on a
+# neutral seamless backdrop" and component_assembly's craft "gallery-print calm", so the director
+# faithfully commissioned a parts-on-a-sweep render — and the model obediently drew one. No
+# treatment may prescribe that again; each constructed treatment must ask for a material world.
+_STERILE_TERMS = ("seamless backdrop", "seamless sweep", "gallery-print calm", "background gradient")
+check("no treatment's own direction prescribes a sterile seamless sweep",
+      [s for s, v in ic.STYLES.items()
+       if any(t in f"{v.craft} {v.medium}".lower() for t in _STERILE_TERMS)] == [],
+      str([s for s, v in ic.STYLES.items()
+           if any(t in f"{v.craft} {v.medium}".lower() for t in _STERILE_TERMS)]))
+_MATERIAL_WORDS = ("surface", "steel", "concrete", "table", "workbench", "floor", "paper")
+check("...and every constructed treatment asks for a real material surface",
+      all(any(w in f"{v.craft} {v.medium}".lower() for w in _MATERIAL_WORDS)
+          for v in ic.STYLES.values() if v.model == "nanobanana"),
+      str([s for s, v in ic.STYLES.items() if v.model == "nanobanana"]))
 check("a retired treatment id names its replacement",
       bool(ic.RETIRED_STYLES) and all(v in ic.STYLES for v in ic.RETIRED_STYLES.values()),
       str(ic.RETIRED_STYLES))
@@ -252,10 +269,13 @@ raises("refused: a treatment used in the last illustrations",
 refuse({"model": "dall-e"}, "unknown model")
 refuse({"style_id": "clay_render", "model": "flux"}, "model_override_reason")
 check("...and a stated reason lets the deviation through",
-      ic.validate_brief(json.loads(brief_json(style_id="clay_render", model="flux",
-                                              model_override_reason="the desk wants soft-body forms "
-                                                                    "in a photographic grade")),
-                        ARTICLE, allowed=ic.allowed_styles([])).model == "flux")
+      ic.validate_brief(json.loads(brief_json(
+          style_id="clay_render", model="flux",
+          model_override_reason="the desk wants soft-body forms in a photographic grade",
+          prompt="Studio photograph of a matte clay modular assembly on a weathered concrete "
+                 "surface, 100mm macro lens with shallow depth of field, single soft key light, "
+                 "asymmetric composition with the hero off-centre, tactile matte texture.")),
+          ARTICLE, allowed=ic.allowed_styles([])).model == "flux")
 refuse({"prompt": "A macro close-up of a desk with a sign reading TARIFF RELIEF, 100mm macro lens, "
                   "shallow depth of field."}, "legible text")
 refuse({"prompt": "A wide landscape photograph of a factory floor at dawn, seen from the doorway, "
@@ -308,29 +328,45 @@ check("...but a paper collage depicting a symbolic certificate silhouette is com
       ic.validate_brief(json.loads(brief_json(
           style_id="paper_collage", model="nanobanana",
           prompt="Minimalist editorial cut-paper collage featuring the silhouette of a stock certificate "
-                 "and an hourglass, halftone newsprint texture, clean edges, generous negative space, "
-                 "no legible print.")),
+                 "and an hourglass, layered hand-torn rag paper with halftone newsprint texture, "
+                 "asymmetric composition with the hero off-centre, single raking light casting deep "
+                 "shadow layers, no legible print.")),
           ARTICLE, allowed=ic.allowed_styles([])).style_id == "paper_collage")
 check("...but a primitive shape carried by a named mechanism is commissionable",
       ic.validate_brief(json.loads(brief_json(
           style_id="component_assembly", model="nanobanana",
           prompt="Minimalist studio composition of a modular rack holding two rectangular module "
-                 "bays, an inspection latch left open, generous negative space, hard clean edges, "
-                 "matte muted palette.")),
+                 "bays, an inspection latch left open on brushed steel, low-angle view with the hero "
+                 "off-centre, single soft key light, matte muted palette with tactile grain.")),
       ARTICLE, allowed=ic.allowed_styles([])).style_id == "component_assembly")
 # A compositional phrase is not shape-talk: "clean geometry" in a photograph describes how the shot
 # is framed, and refusing it would send a legitimate architectural brief back for no reason.
 check("...and a photographic prompt's compositional 'clean geometry' is not mistaken for the subject",
       ic.validate_brief(json.loads(brief_json(
           style_id="architectural_night", model="flux",
-          prompt="Architectural photograph of a modern industrial control building at blue hour, lit "
-                 "windows as the only warm light, long exposure with no moving figures, deep blue "
-                 "ambient light, clean geometry, small human scale implied by a doorway.")),
+          prompt="Architectural photograph on a 35mm lens of a modern industrial control building at "
+                 "blue hour, lit windows as the only warm light, low-angle view with dramatic scale "
+                 "contrast, long exposure with no moving figures, weathered concrete and brushed "
+                 "steel, clean geometry.")),
       ARTICLE, allowed=ic.allowed_styles([])).style_id == "architectural_night")
 raises("refused: a retired treatment, naming the one that replaced it",
        lambda: ic.validate_brief(json.loads(brief_json(style_id="minimal_geometry", model="nanobanana")),
                                  ARTICLE, allowed=ic.allowed_styles([])), "was retired")
 refuse({"subject": ""}, "what is in the frame")
+# Potency, per model family: a brief that names a treatment but stages nothing is what comes back a
+# flat render. Both classes must be present — an `any()` over the list would pass on one word.
+refuse({"prompt": "A cinematic still of a warehouse at dusk, quiet and restrained, generous "
+                  "negative space, asymmetric composition, brushed steel surfaces."},
+       "names no an optic")
+refuse({"style_id": "component_assembly", "model": "nanobanana",
+        "prompt": "A modular assembly of three bays on brushed steel, asymmetric composition, "
+                  "matte muted palette."},
+       "names no light")
+refuse({"composition": "nicely balanced"}, "must name the framing rule")
+refuse({"composition": ""}, "must name the framing rule")
+check("...while a brief that stages the photograph passes the potency floor",
+      ic.validate_brief(json.loads(brief_json()), ARTICLE,
+                        allowed=ic.allowed_styles([])).style_id == "editorial_macro")
 
 print("\nthe art director — refusals are fed back, then exhausted")
 calls: list = []
@@ -443,7 +479,18 @@ macro = ic.validate_brief(json.loads(brief_json()), ARTICLE, allowed=ic.allowed_
 flux_payload = ic.KieClient.payload(macro)
 check("flux-2 takes prompt/aspect_ratio/resolution", set(flux_payload) ==
       {"prompt", "aspect_ratio", "resolution"}, str(sorted(flux_payload)))
-check("...with the negative folded into the prompt", "Do not include:" in flux_payload["prompt"])
+check("...and only the short legibility guard is appended to the image prompt",
+      ic.IMAGE_GUARD in flux_payload["prompt"] and flux_payload["prompt"].endswith(ic.IMAGE_GUARD))
+# The bleed this pins: the director's own negative used to be appended to the image prompt, so a
+# brief that forbade "abstract cubes, spheres, wedges" sent those exact tokens to the model — and
+# kv-cache-is-the-concurrency-ceiling came back as a cube-and-block assembly.
+_bleeding = ic.validate_brief(json.loads(brief_json(
+    negative_prompt="text, logos, abstract cubes, empty floating widget, bare shapes")),
+    ARTICLE, allowed=ic.allowed_styles([]))
+check("...and the director's negative is NOT forwarded as tokens to draw",
+      "abstract cubes" not in ic.KieClient.payload(_bleeding)["prompt"]
+      and "empty floating widget" not in ic.KieClient.payload(_bleeding)["prompt"],
+      ic.KieClient.payload(_bleeding)["prompt"])
 clay = ic.validate_brief(json.loads(brief_json(style_id="clay_render", model="nanobanana")),
                          ARTICLE, allowed=ic.allowed_styles([]))
 nano_payload = ic.KieClient.payload(clay)

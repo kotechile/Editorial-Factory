@@ -9,7 +9,7 @@ model, task id, credits, the text digest it read).
 
 The failure this skill exists to prevent is sameness: forty posts sharing one visual language read
 as one machine, and a header that has nothing to do with the article reads as filler. The second
-failure it prevents is an image that is *wrong* in a way that costs — legible gibberish text baked
+failure it prevents is an image that is *wrong* in a waay that costs — legible gibberish text baked
 into the pixels, a real company's mark, a stock-photo cliché, alt text a screen reader cannot use.
 The third failure is **boring, sterile images**: generic server blades, blank modular cubes, or unlatched
 gates on flat backgrounds that lack soul, drama, and narrative weight.
@@ -57,6 +57,14 @@ Nano Banana Pro is better at constructed scenes (clay render, isometric cutaway,
 paper collage). A brief that deviates from its treatment's catalogue model must state a
 `model_override_reason` (≥20 chars) — a silent substitution is how a "photograph" brief lands on an
 illustration model and comes back looking like neither.
+
+**The treatment's own `craft`/`medium` text is a direction, and it is read literally.** It is what
+made the desk sterile: `clay_render`'s medium read "studio render on a neutral seamless backdrop" and
+`component_assembly`'s craft "gallery-print calm", so the director commissioned a parts-on-a-sweep
+render and the model drew one. No treatment may prescribe a seamless sweep or a background gradient —
+each constructed treatment now names a real material surface (weathered concrete, brushed steel, a
+workbench, a drafting table, a table of torn rag paper) and one directional light. The suite pins
+this, so a future catalogue entry cannot reintroduce the sweep.
 
 **A shape is not a subject.** For an abstract story the director must reach for a recognisable
 physical engineering analogy (modular server components, an unlatched inspection gate, a relay switch,
@@ -127,7 +135,23 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
     directional window light, low-raking golden hour, rim highlights), and forbids human faces and
     hands. `sectioned mechanical hardware, precise physical fasteners, industrial brushed metal
     framing` is the vocabulary for a story that is *about* hardware — it is never the default for an
-    abstract topic, which is the micro-metaphor rule 1 already refuses.
+    abstract topic, which the micro-metaphor rule 1 already refuses.
+11. **The negative prompt is a liability, not a safety net.** kie takes the prompt as ONE text field,
+    so every prohibition is read back as a token to draw: a brief forbidding "abstract cubes, spheres,
+    wedges" is a brief that asked for them. Only the legibility/brand set is worth that risk and it is
+    appended from `IMAGE_GUARD`, never from the director's `negative_prompt` — a systemic story came
+    back as a cube-and-block assembly precisely because the shape negatives travelled with the prompt.
+    The director's own negative stays on the brief as provenance and must never enumerate subject
+    matter.
+12. **A brief must be potent enough to earn an image credit.** `validate_brief` refuses a prompt that
+    names no optic, no light, no material and no framing rule (flux), or no structural arrangement, no
+    light, no material and no framing rule (Nano Banana). All classes are required — an `any()` over
+    the list passes on the single word "shadow". The anchors differ because the models do: flux stages
+    a photograph, Nano Banana builds a structure.
+13. **The layout is mandated.** The brief carries a `composition` field naming the framing rule
+    (extreme asymmetry, low-angle with scale contrast, symmetrical top-down); a composition that
+    anchors nothing is how two different articles end up with the same centred object on the same
+    sweep.
 
 Three refused briefs in a row raise `BriefError` (with the last refusal quoted) rather than being
 repaired here: the treatment choice is the product, so a refusal is fed back to the director and
