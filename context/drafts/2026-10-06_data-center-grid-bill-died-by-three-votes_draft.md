@@ -16,7 +16,7 @@ On Sept. 16 the U.S. House voted 417-3 to make big data centers pay the full cos
 
 The Ratepayer Protection Act (H.R. 9340) asked for little. It would have told every state to *consider* a rule that makes a large power user pay for the poles and wires its site forces the utility to build — even if the user later walks away [2]. A "large-load customer" meant a data center that draws 100 megawatts (MW) or more at one site [2].
 
-What stays with me is the vote count. A bill that won the House 417-3 could not pass a test vote in the Senate [3]. The reason: the bill only told states to think about it. Senate Democrats called it a "toothless messaging bill" and voted it down, saying it would not shield homes from rising bills [3]. Analysts said it would only "reinforce" a shift already underway, as states write their own large-load rules [4].
+The bit that stuck with me is the vote count. A bill that won the House 417-3 could not pass a test vote in the Senate [3]. The reason: the bill only told states to think about it. Senate Democrats called it a "toothless messaging bill" and voted it down, saying it would not shield homes from rising bills [3]. Analysts said it would only "reinforce" a shift already underway, as states write their own large-load rules [4].
 
 The body that decides whether a rack gets power, though, is not Congress. It is a state utility board and, more and more, a grid operator's audit queue.
 

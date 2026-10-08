@@ -16,7 +16,7 @@ On Sept. 16, the U.S. House voted 417-3 to make large data centers pay the full 
 
 The Ratepayer Protection Act (H.R. 9340) asked for very little. It told states to look at rules for large power users. It wanted them to pay for the poles and wires they force utilities to build, even if the user later walks away [2]. The bill defined a large-load customer as a data center using 100 megawatts (MW) or more at one site [2].
 
-What stays with me is the vote count. A bill that won the House 417-3 could not pass a basic test vote in the Senate [3]. Senate Democrats called it a weak message bill that failed to shield homes from rising costs [3]. 
+The bit that stuck with me is the vote count. A bill that won the House 417-3 could not pass a basic test vote in the Senate [3]. Senate Democrats called it a weak message bill that failed to shield homes from rising costs [3]. 
 
 Analysts said the bill would only back a shift that is already happening [4]. States are writing their own rules for large power users anyway [4].
 
