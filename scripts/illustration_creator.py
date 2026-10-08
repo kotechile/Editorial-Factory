@@ -136,9 +136,11 @@ _STRUCTURE_RE = re.compile(
     r"\b(assembl\w+|cutaway|isometric|arrang\w+|tier\w*|stack\w*|modul\w+|bay|bays|rack\w*|rails?|"
     r"layers?|layered|interlock\w*|mounted|chassis|sectioned|framed|jig|bracket\w*|housing\w*)\b", re.I)
 _FRAMING_RE = re.compile(
-    r"\b(asymmetr\w*|off[- ]centre\w*|off[- ]center\w*|low[- ]angle|high[- ]angle|three[- ]quarter|"
-    r"top[- ]down|symmetr\w*|centred|centered|scale contrast|rule of thirds|leading lines?|"
-    r"diagonal|foreground|midground|hero subject|extreme close|wide establishing)\b", re.I)
+    r"\b(asymmetr\w*|symmetr\w*|off[- ]centre\w*|off[- ]center\w*|centred|centered|"
+    r"left[- ]aligned|right[- ]aligned|left third|right third|rule of thirds|thirds|"
+    r"low[- ]angle|high[- ]angle|top[- ]down|three[- ]quarter|scale contrast|leading lines?|"
+    r"vanishing point|diagonal|foreground|midground|receding|stacked|"
+    r"wide establishing|extreme close|close crop|hero subject)\b", re.I)
 # Phrases that ask the model to render legible text (as opposed to forbidding it).
 _TEXT_REQUEST_RE = re.compile(
     r"\b(with|featuring|showing|displaying|reading|saying|spelling|stating|labelled|labeled|titled|"
@@ -568,14 +570,15 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
             ("an optic", _OPTIC_RE), ("light", _LIGHT_RE), ("material texture", _TEXTURE_RE),
             ("a framing rule", _FRAMING_RE)) if not pattern.search(prompt)]
         remedy = ("name the optic (35mm anamorphic, 100mm macro, 200mm telephoto), the light it "
-                  "sits in, the material")
+                  "sits in, the material, and the framing rule (asymmetric, off-centre, low-angle)")
     else:
         missing = [label for label, pattern in (
             ("a structural arrangement", _STRUCTURE_RE), ("light", _LIGHT_RE),
             ("material texture", _TEXTURE_RE), ("a framing rule", _FRAMING_RE))
             if not pattern.search(prompt)]
         remedy = ("state how the parts are arranged (a modular bay, a tiered stack, an isometric "
-                  "cutaway) and the light and material")
+                  "cutaway), the light and material, and the framing rule (asymmetric, off-centre, "
+                  "low-angle, stacked, symmetrical top-down)")
     if missing:
         problems.append(
             f"prompt names no {', no '.join(missing)} — {model} reads the prompt literally, so "
