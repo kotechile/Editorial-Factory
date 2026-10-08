@@ -116,6 +116,18 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    "image of"/"photo of". The caption is one quotable sentence. Both are checked by length and shape.
 9. **Featured-header shape**: `16:9` or `3:2`, 1K by default, 2K only where fine physical detail is
    the point.
+10. **The image must describe the topic, and must not be sterile.** A reader who sees only the header,
+    before the headline, has to be able to name the article's subject area, and the frame has to sit
+    in one of the story's own subject-matter classes: physical components/materials or a supply-chain
+    bottleneck; a policy collision, regulatory shift or multi-faceted market move; infrastructure,
+    automation or scale-driven industrial change; or a systemic process/technical engineering
+    operation. The commission forbids the sterile output — a floating abstract cube, a plain rack on a
+    neutral gradient, an empty floating widget, a lone object on a seamless sweep — requires each
+    prompt to name a real optic (with its falloff) and sculpted light (chiaroscuro, a single
+    directional window light, low-raking golden hour, rim highlights), and forbids human faces and
+    hands. `sectioned mechanical hardware, precise physical fasteners, industrial brushed metal
+    framing` is the vocabulary for a story that is *about* hardware — it is never the default for an
+    abstract topic, which is the micro-metaphor rule 1 already refuses.
 
 Three refused briefs in a row raise `BriefError` (with the last refusal quoted) rather than being
 repaired here: the treatment choice is the product, so a refusal is fed back to the director and

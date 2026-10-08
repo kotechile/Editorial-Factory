@@ -676,7 +676,16 @@ over forty posts.
 CREATIVE PROCESS (MAGAZINE COVER STANDARD: INTERESTING, CONCEPTUAL, ENGAGING):
 The image must have the intellectual intrigue, visual beauty, and narrative engagement of a top magazine cover or lead feature spread (Bloomberg Businessweek, Wired, The Atlantic, The Economist, MIT Technology Review).
 It does NOT need to be shiny, flashy, or extravagant — its power comes from CONCEPTUAL WEIGHT, VISUAL TENSION, and TACTILE DEPTH. It must feel like an authentic, award-winning editorial hero image.
-REJECT BORING, STERILE TROPES: Avoid generic server blades in a rack, abstract grey modular cubes, unlatched inspection gates on empty backdrops, or sterile document flatlays.
+REJECT BORING, STERILE TROPES — THIS IS THE FAILURE TO AVOID:
+- NEVER a floating abstract cube, a plain server rack on a neutral gradient, an empty floating widget, or an abstract object with no environment. No sterile object studies, no grey-on-grey.
+- EVERY scene must be GROUNDED IN PHYSICAL REALITY: authentic tactile context, material weight, and dramatic environmental lighting. The reader must feel the room, the yard, the plant, the rack — never a render floating on a backdrop.
+- A SYSTEMIC, SOFTWARE OR OPERATIONAL STORY IS NEVER A PRODUCT SHOT. If the subject is not a thing a reader could buy or handle, do not answer with a single object on a studio backdrop — put the hero in its real environment instead (a hall, a plant, a yard, a control room, a routing bay). A studio still (studio_object, document_flatlay, clay_render) is for a story whose subject really is a purchasable or handable thing, and even then it must sit in a material world: weight, contact shadow, a textured surface, dramatic directional light — never a grey sweep with nothing in it.
+- THE IMAGE MUST DESCRIBE THE TOPIC. A reader who sees only the header, before the headline, must be able to name the article's subject area. Aim the frame at one of the story's OWN subject-matter classes and make it unmistakable:
+  * physical components, materials or a supply-chain bottleneck — freight, staging, stock, tooling, raw material;
+  * a policy collision, regulatory shift or multi-faceted market move — a filing, a notice, a clearance, a market board;
+  * infrastructure, automation or scale-driven industrial change — a yard, a hall, a line, a substation;
+  * a systemic process or technical engineering operation — a cutaway, a plant, a routing bay, a control room.
+  For a story whose own subject is engineering or hardware, the vocabulary is sectioned mechanical hardware, precise physical fasteners, industrial brushed metal framing — but ONLY because that is what the story is about. Never a lone bolt, screw or scrap of metal standing in for an abstract idea (domain rule 6): that is a micro-metaphor, not a subject.
 
 You MUST execute this 4-step creative method:
 
@@ -705,10 +714,10 @@ STEP 3: CHOOSE THE BEST TREATMENT & MODEL
 Select the treatment from the catalogue that provides the most stunning visual impact for your chosen scene. Weave that treatment's core vocabulary naturally into the prompt.
 
 STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
-Write a prompt (15-120 words) with rich sensory and visual details:
-- Landscape composition (16:9): wide framing with generous editorial negative space and deliberate breathing room, letting the hero subject command the frame (like cover art, but strictly without any text or typography).
-- Camera angle & lens: define perspective, lens focal length, focal plane, depth of field (e.g., 35mm anamorphic wide shot, 100mm macro razor-sharp plane, dramatic low-angle perspective).
-- Lighting & atmosphere: dramatic studio lighting, chiaroscuro, single strong directional light casting deep shadows, golden hour sunlight, blue-hour twilight with warm amber worklights, cinematic volumetric haze, rim lighting highlighting metallic edges.
+Write a prompt (15-120 words) with rich sensory and visual details. Every prompt must carry all four of these:
+- Landscape composition (16:9): wide framing with generous editorial negative space and deliberate breathing room, an ASYMMETRIC composition where the hero subject commands the frame off-centre with heavy editorial framing (like cover art, but strictly without any text or typography).
+- Camera angle & optics: name a real optic and its falloff explicitly — 35mm anamorphic wide with dramatic falloff, 100mm macro at a razor-sharp focal plane, 200mm telephoto compression, low-angle perspective — and the depth of field it produces.
+- Lighting & atmosphere: sculpt the scene with intentional light — chiaroscuro, a single directional window light, low-raking golden-hour sun, blue-hour twilight with warm amber worklights, deep shadows, prominent rim highlights on metallic edges, cinematic volumetric haze.
 - Textures & materials: brushed metals, weathered corrugated steel, frosted copper tubing, dusty workshop glass, textured matte polymers, tactile paper stock.
 - Mood: quiet confidence, editorial restraint, sophisticated color palette. Never chaotic or overcrowded.
 
@@ -764,8 +773,8 @@ carries it). Never an abstract concept, never a metaphor stock photo, and never 
 see the grounding rule above.
 - No text, letters, numbers, wordmarks, signage or UI in the image: generated lettering is \
 unreadable. Forbid them in `negative_prompt`.
-- No real company's logo, packaging or product, and no recognisable real person. Depict the \
-mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
+- No real company's logo, packaging or product, no recognisable real person, and no human face \
+or hands in frame. Depict the mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
 - Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \

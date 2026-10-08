@@ -373,6 +373,23 @@ _photo_rule = next((ln for ln in seen[0].splitlines()
 _recommended = _photo_rule.split("Do NOT")[0]
 check("...and the photographic-preference rule no longer recommends editorial_macro for operational work",
       bool(_photo_rule) and "editorial_macro" not in _recommended, _photo_rule)
+# The sterile-output failure: headers that name a topic but depict a lone object on a seamless
+# sweep. The commission must forbid it, require the frame to describe the topic, and demand the
+# optics and lighting that separate editorial art from a render on a gradient.
+check("...and the commission forbids sterile floating objects",
+      "floating abstract cube" in seen[0] and "sterile object studies" in seen[0], seen[0][:200])
+check("...and requires the image to describe one of the story's own subject-matter classes",
+      all(k in seen[0] for k in ["MUST DESCRIBE THE TOPIC", "supply-chain bottleneck",
+                                 "policy collision", "scale-driven industrial change",
+                                 "systemic process"]), seen[0][:200])
+check("...and requires a named optic with its falloff, and sculpted light",
+      "anamorphic" in seen[0] and "chiaroscuro" in seen[0] and "ASYM" in seen[0], seen[0][:200])
+check("...and forbids human faces and hands",
+      "no human face" in seen[0], seen[0][:200])
+check("...while the hardware vocabulary stays tied to a hardware story, not offered as a default",
+      "sectioned mechanical hardware" in seen[0] and "Never a lone bolt" in seen[0], seen[0][:200])
+check("...and a systemic/software story is never answered with a product shot",
+      "NEVER A PRODUCT SHOT" in seen[0], seen[0][:200])
 
 print("\nrotation")
 history = ["editorial_macro", "cinematic_still", "clay_render", "document_flatlay", "paper_collage"]
