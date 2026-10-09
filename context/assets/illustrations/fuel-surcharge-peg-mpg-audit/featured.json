@@ -1,6 +1,6 @@
 {
   "slug": "fuel-surcharge-peg-mpg-audit",
-  "revision": 4,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -31,49 +31,110 @@
       "sha256": "sha256:143bfe93b98bc48c4a94b1b3e51ff1ed",
       "generated_at": "2026-10-08T22:40:03+00:00",
       "source_hash": "sha256:c1b8fda70db70895f31c15ee2682fcd2"
+    },
+    {
+      "revision": 4,
+      "style": "document_flatlay",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Overhead flat-lay photograph of thick commercial freight contracts and rate sheets resting on a weathered wooden dispatch desk. Shot top-down with a 50mm standard prime lens, edge-to-edge sharpness with a slight vignette falloff. The tactile matte paper stock is slightly misaligned to look handled. Illuminated by even diffused daylight from a nearby window and a warm directional desk lamp casting subtle contact shadows. Muted paper tones, deep textures, generous asymmetric editorial negative space.",
+      "task_id": "27aaa51788bb8c1cf19102b20ec338e5",
+      "sha256": "sha256:d4d32a7ddb25609a0bf3bf40df85e7dd",
+      "generated_at": "2026-10-08T23:09:32+00:00",
+      "source_hash": "sha256:c1b8fda70db70895f31c15ee2682fcd2"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Modular mechanical gauge assembly with three distinct adjustable dials resting on a concrete surface.",
+      "caption": "The final fuel surcharge depends on negotiated variables, not just the market price of diesel.",
+      "title": "fuel-surcharge-mechanics",
+      "bytes": 1724198,
+      "sha256": "sha256:315f80e8bbfdfcf5d9220474d3df5df6"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The Freight Fuel Formula. Modular mechanical gauge assembly with three distinct adjustable dials resting on a concrete surfac",
+      "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+      "title": "The Freight Fuel Formula",
+      "bytes": 1327530,
+      "sha256": "sha256:3a4258802eb05c71fd29a77fa79b24d8ea0c27410b1aa0f4b2a4e2c195bb26f4"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three distinct adjustable dials re",
+      "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+      "title": "The Freight Fuel Formula",
+      "bytes": 1327292,
+      "sha256": "sha256:217b92a3dc6ed485e5e9058bb44b09830c80b11113c553dffe0dd7cf08c060bd"
     }
   ],
-  "style": "document_flatlay",
-  "style_label": "Document still life",
-  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Overhead flat-lay photograph of thick commercial freight contracts and rate sheets resting on a weathered wooden dispatch desk. Shot top-down with a 50mm standard prime lens, edge-to-edge sharpness with a slight vignette falloff. The tactile matte paper stock is slightly misaligned to look handled. Illuminated by even diffused daylight from a nearby window and a warm directional desk lamp casting subtle contact shadows. Muted paper tones, deep textures, generous asymmetric editorial negative space.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, watermarks, human face, hands",
-  "rationale": "The story centers on the hidden math in carrier contracts. A document flatlay directly visually represents the 'sheets they signed' and the auditing process required to catch margin drift.",
-  "cue": "sheets they signed",
-  "subject": "commercial freight contracts and rate tables",
-  "composition": "asymmetrical top-down flat-lay",
-  "alt_text": "Overhead view of heavy commercial freight contracts and rate tables on a wooden desk.",
-  "caption": "The true cost of fuel is hidden in the carrier's mathematical formulas, not the federal diesel index.",
-  "title": "Freight Contract Flatlay",
+  "prompt": "Matte clay 3D render of a small mechanical assembly resting on a weathered concrete surface in a real space. Three recognizable engineered parts \u2014 a modular block housing, an adjustable dial mechanism, and a tiered measurement gauge \u2014 arranged to show a multi-step calibration process. Matte surfaces with molding seams and contact shadows, one directional key light raking across them, matte muted palette of industrial grey and hazard orange. Extreme asymmetry with the object anchored in the lower right third, generous negative space. No text, no molded or embossed lettering.",
+  "negative_prompt": "text, typography, letters, numbers, watermark, logo, UI",
+  "rationale": "The story is structural and abstract, dealing with a formula and its hidden levers. A matte clay render of a mechanical assembly with adjustable parts perfectly captures the concept of a multi-variable calculation without relying on literal trucks.",
+  "cue": "three negotiated numbers",
+  "subject": "A modular mechanical gauge assembly with three distinct adjustable dials",
+  "composition": "extreme asymmetry with the object anchored in the lower right third",
+  "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three di",
+  "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+  "title": "The Freight Fuel Formula",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 500353,
-  "sha256": "sha256:d4d32a7ddb25609a0bf3bf40df85e7dd",
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1331894,
+  "sha256": "sha256:bf65df3a44d4972e8ecdd64c102cc3a00213314c307b39e3e123615816dffd63",
   "source_hash": "sha256:c1b8fda70db70895f31c15ee2682fcd2",
   "source_chars": 3633,
-  "task_id": "27aaa51788bb8c1cf19102b20ec338e5",
-  "credits": 5.0,
-  "cost_ms": 18,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/27aaa51788bb8c1cf19102b20ec338e5_1791500970027.jpg",
+  "task_id": "446fcd81a208bd7e1f6c5d6f9238943e",
+  "credits": 18.0,
+  "cost_ms": 41,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f0ea35974b91817992c6df5fd6a83239.png",
   "provider_request": {
-    "model": "flux-2/pro-text-to-image",
+    "model": "nano-banana-pro",
     "input": {
-      "prompt": "Overhead flat-lay photograph of thick commercial freight contracts and rate sheets resting on a weathered wooden dispatch desk. Shot top-down with a 50mm standard prime lens, edge-to-edge sharpness with a slight vignette falloff. The tactile matte paper stock is slightly misaligned to look handled. Illuminated by even diffused daylight from a nearby window and a warm directional desk lamp casting subtle contact shadows. Muted paper tones, deep textures, generous asymmetric editorial negative space.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Matte clay 3D render of a small mechanical assembly resting on a weathered concrete surface in a real space. Three recognizable engineered parts \u2014 a modular block housing, an adjustable dial mechanism, and a tiered measurement gauge \u2014 arranged to show a multi-step calibration process. Matte surfaces with molding seams and contact shadows, one directional key light raking across them, matte muted palette of industrial grey and hazard orange. Extreme asymmetry with the object anchored in the lower right third, generous negative space. No text, no molded or embossed lettering.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K"
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T23:09:32+00:00"
+  "generated_at": "2026-10-09T00:46:56+00:00",
+  "overlay": {
+    "kicker": "FREIGHT LOGISTICS // FUEL SURCHARGES",
+    "title": "THE FREIGHT FUEL FORMULA",
+    "hook": "Three carrier numbers that decide your freight fuel bill",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 60,
+    "contrast": 5.9,
+    "target": 5.5,
+    "clutter": 0.364,
+    "region_rgb": [
+      69,
+      61,
+      49
+    ],
+    "binding_rgb": [
+      148,
+      128,
+      103
+    ],
+    "title_lines": [
+      "THE FREIGHT",
+      "FUEL FORMULA"
+    ]
+  }
 }

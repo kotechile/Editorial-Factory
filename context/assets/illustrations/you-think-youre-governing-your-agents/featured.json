@@ -1,6 +1,6 @@
 {
   "slug": "you-think-youre-governing-your-agents",
-  "revision": 2,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,64 @@
       "sha256": "sha256:88bac6b33cbc46e172f3eb1c31761e75",
       "generated_at": "2026-10-05T11:13:40+00:00",
       "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5"
+    },
+    {
+      "revision": 2,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "A minimalist studio composition of a modular server rack assembly with a heavy interlocking inspection gate and rack rails. Asymmetric off-centre composition with generous editorial negative space on the left. The engineered parts are arranged in a deliberate locked configuration on a weathered brushed steel surface. Hard clean edges, matte muted dark grey and silver palette. One directional light casting a long, crisp shadow across the steel. Technical, tactile, unlabelled.",
+      "task_id": "d86c5b1799e32996884cdaa4ae392819",
+      "sha256": "sha256:e030ef37dca9483a941779b6083338fb",
+      "generated_at": "2026-10-08T23:28:20+00:00",
+      "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A heavy interlocking mechanical connector clamped to a steel rail on a textured concrete surface.",
+      "caption": "Active runtime enforcement layers are replacing static policies to secure autonomous enterprise systems.",
+      "title": "Component Assembly Runtime Enforcement",
+      "bytes": 2060296,
+      "sha256": "sha256:c8fef8336f992e9f4274c86393259846"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Stolen Machine Identities. A heavy interlocking mechanical connector clamped to a steel rail on a textured concrete surface.",
+      "caption": "Stolen Machine Identities: The race to secure untracked enterprise AI agents.",
+      "title": "Stolen Machine Identities",
+      "bytes": 1569559,
+      "sha256": "sha256:f8111a0564b5b79077e2cbe9c91b43ffb311a2d85d80291eba9612844c7e8cb3"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The AI Agent Blind Spot. Stolen Machine Identities. A heavy interlocking mechanical connector clamped to a steel rail on a te",
+      "caption": "The AI Agent Blind Spot: Why stolen machine identities are the top enterprise risk.",
+      "title": "The AI Agent Blind Spot",
+      "bytes": 1560208,
+      "sha256": "sha256:c2d4663ed6939257136f08c277e4ddbb4142bb6a2b9601660c7d487cd22e1466"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Stolen Machine Identities. The AI Agent Blind Spot. Stolen Machine Identities. A heavy interlocking mechanical connector clam",
+      "caption": "Stolen Machine Identities: Non-human identities are the top way hackers breach firms.",
+      "title": "Stolen Machine Identities",
+      "bytes": 1554192,
+      "sha256": "sha256:1468896cacf9901a781281336c744a99112ec09b9a3e0ba9e44d463aba964d69"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Stolen Machine Identities. Stolen Machine Identities. The AI Agent Blind Spot. Stolen Machine Identities. A heavy interlockin",
+      "caption": "Stolen Machine Identities: Non-human identities are the top way hackers breach firms.",
+      "title": "Stolen Machine Identities",
+      "bytes": 1554441,
+      "sha256": "sha256:9d4cf5e1152a19a2bd5d56313a6c8ae1e7515a2ad1597d718cbee80a0a3841a0"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. The AI Agent Blind Spot. Stolen Machine Iden",
+      "caption": "Stolen Machine Identities: Non-human identities are the top way hackers breach firms.",
+      "title": "Stolen Machine Identities",
+      "bytes": 1554441,
+      "sha256": "sha256:9d4cf5e1152a19a2bd5d56313a6c8ae1e7515a2ad1597d718cbee80a0a3841a0"
     }
   ],
   "style": "component_assembly",
@@ -21,15 +79,15 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "A minimalist studio composition of a modular server rack assembly with a heavy interlocking inspection gate and rack rails. Asymmetric off-centre composition with generous editorial negative space on the left. The engineered parts are arranged in a deliberate locked configuration on a weathered brushed steel surface. Hard clean edges, matte muted dark grey and silver palette. One directional light casting a long, crisp shadow across the steel. Technical, tactile, unlabelled.",
-  "negative_prompt": "text, lettering, numbers, wordmarks, watermarks, signage, UI, logos, brands, faces, hands",
-  "rationale": "The component assembly treatment effectively visualizes the shift from abstract policy to a concrete 'control plane' by depicting a physical enforcement mechanism in a server environment.",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, asymmetric off-centre composition with generous negative space. A heavy industrial interlocking connector actively clamping onto a brushed steel rail, alongside an unlatched inspection gate. Clean hard edges, matte muted palette of gunmetal and frosted copper, single directional key light throwing a long dramatic cast shadow across the textured concrete.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermarks, logos, branding, typography, human face, hands",
+  "rationale": "Component assembly perfectly captures the concept of a modular 'control plane' or runtime layer being physically implemented, avoiding literal datacenters while maintaining a sophisticated enterprise aesthetic.",
   "cue": "runtime enforcement layer",
-  "subject": "a modular server rack assembly with an interlocking inspection gate",
+  "subject": "a heavy industrial interlocking connector clamping onto a brushed steel rail",
   "composition": "asymmetric off-centre composition",
-  "alt_text": "A modular server rack assembly with an interlocking inspection gate resting on brushed steel.",
-  "caption": "Enterprise leaders are moving AI agent rules from static paper into live runtime enforcement layers.",
-  "title": "Agent Control Plane Assembly",
+  "alt_text": "Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. The AI Agent Blin",
+  "caption": "Stolen Machine Identities: Non-human identities are the top way hackers breach firms.",
+  "title": "Stolen Machine Identities",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -39,23 +97,48 @@
   "local_path": "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 2046046,
-  "sha256": "sha256:e030ef37dca9483a941779b6083338fb",
+  "bytes": 1554441,
+  "sha256": "sha256:9d4cf5e1152a19a2bd5d56313a6c8ae1e7515a2ad1597d718cbee80a0a3841a0",
   "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5",
   "source_chars": 3529,
-  "task_id": "d86c5b1799e32996884cdaa4ae392819",
+  "task_id": "a81d1344ffef1b1e7abc28bf6ed9283c",
   "credits": 18.0,
   "cost_ms": 24,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f39a7a03eee51eb4845b6b2db827897f.png",
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_fbb2a61ca10e4db28e31bd2d2e868a57.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "A minimalist studio composition of a modular server rack assembly with a heavy interlocking inspection gate and rack rails. Asymmetric off-centre composition with generous editorial negative space on the left. The engineered parts are arranged in a deliberate locked configuration on a weathered brushed steel surface. Hard clean edges, matte muted dark grey and silver palette. One directional light casting a long, crisp shadow across the steel. Technical, tactile, unlabelled.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, asymmetric off-centre composition with generous negative space. A heavy industrial interlocking connector actively clamping onto a brushed steel rail, alongside an unlatched inspection gate. Clean hard edges, matte muted palette of gunmetal and frosted copper, single directional key light throwing a long dramatic cast shadow across the textured concrete.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T23:28:20+00:00"
+  "generated_at": "2026-10-09T00:25:20+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // MACHINE IDENTITIES",
+    "title": "STOLEN MACHINE IDENTITIES",
+    "hook": "Non-human identities are the top way hackers breach firms",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 11.39,
+    "target": 4.5,
+    "clutter": 0.066,
+    "region_rgb": [
+      217,
+      213,
+      194
+    ],
+    "binding_rgb": [
+      210,
+      203,
+      184
+    ],
+    "title_lines": [
+      "STOLEN MACHINE",
+      "IDENTITIES"
+    ]
+  }
 }

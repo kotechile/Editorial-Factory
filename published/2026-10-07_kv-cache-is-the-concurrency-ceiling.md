@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "An anodized aluminum memory module sliding into a brushed steel rack bay on a textured surface."
-image_caption: "Efficient block paging maximizes GPU memory capacity by allocating cache in precise chunks."
+image_alt: "The GPU Memory Bottleneck. The GPU Memory Bottleneck. The GPU Memory Bottleneck. The GPU Memory Bottleneck. The KV Cache Bott"
+image_caption: "The GPU Memory Bottleneck: Why cache limits dictate your hardware needs."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

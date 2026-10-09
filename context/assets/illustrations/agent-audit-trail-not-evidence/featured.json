@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,49 +11,124 @@
       "sha256": "sha256:80d1b3a9ff2a8415f2c3c69591ca1e2a",
       "generated_at": "2026-10-05T18:09:56+00:00",
       "source_hash": "sha256:c444586232bf864156d0a4b263f3569b"
+    },
+    {
+      "revision": 2,
+      "style": "editorial_macro",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. An embossed, thick paper compliance ledger resting on a dark, heavy wooden forensic audit desk. Shallow depth of field, visible textured paper grain, leather binding, and dust motes. Soft directional daylight grazing the page, highlighting the tactile paper stock and subtle indentations. Hero object positioned off-centre on the right third, with the background falling away into deep, atmospheric shadows. Quiet confidence, sophisticated muted color palette, strictly no text or typography.",
+      "task_id": "dd6df403cbd88d50b69b3820a46dcbcf",
+      "sha256": "sha256:2dfcbe8cd91faa66f9a6002bb4ba0dbd",
+      "generated_at": "2026-10-08T23:20:18+00:00",
+      "source_hash": "sha256:c444586232bf864156d0a4b263f3569b"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Archival paper dossiers and a continuous perforated ledger resting on a dark desk",
+      "caption": "Agent logs must serve as permanent, replayable evidence to meet strict regulatory clocks.",
+      "title": "Agent Logs as Archival Evidence",
+      "bytes": 256402,
+      "sha256": "sha256:d9c42024b35bd5f5bd6a726c5afc45e7"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Logging AI Agent Actions. Archival paper dossiers and a continuous perforated ledger resting on a dark desk",
+      "caption": "Logging AI Agent Actions: Building agent audit trails to replay exact decisions.",
+      "title": "Logging AI Agent Actions",
+      "bytes": 239646,
+      "sha256": "sha256:274b5ef2b3519b96ac94a5392cef83f9265b3948fc7c0bedb17c7e07d8c9f186"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Building Agent Audit Trails. Logging AI Agent Actions. Archival paper dossiers and a continuous perforated ledger resting on ",
+      "caption": "Building Agent Audit Trails: Proving compliance by replaying the exact agent choice.",
+      "title": "Building Agent Audit Trails",
+      "bytes": 238490,
+      "sha256": "sha256:706f7ee0c34ddbbe01dc24ee40db1c8ad50033313afb2c060af50a189772f31c"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Building Agent Audit Trails. Building Agent Audit Trails. Logging AI Agent Actions. Archival paper dossiers and a continuous ",
+      "caption": "Building Agent Audit Trails: Proving compliance by replaying the exact agent choice.",
+      "title": "Building Agent Audit Trails",
+      "bytes": 240622,
+      "sha256": "sha256:bcaaa987c9a4f7c96496d368a5dfcc21b4b0334c54b5b737a2a4877e90773514"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Logging AI Agent Actions. Archival pap",
+      "caption": "Building Agent Audit Trails: Proving compliance by replaying the exact agent choice.",
+      "title": "Building Agent Audit Trails",
+      "bytes": 240622,
+      "sha256": "sha256:bcaaa987c9a4f7c96496d368a5dfcc21b4b0334c54b5b737a2a4877e90773514"
     }
   ],
-  "style": "editorial_macro",
-  "style_label": "Editorial macro",
-  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "2K",
-  "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. An embossed, thick paper compliance ledger resting on a dark, heavy wooden forensic audit desk. Shallow depth of field, visible textured paper grain, leather binding, and dust motes. Soft directional daylight grazing the page, highlighting the tactile paper stock and subtle indentations. Hero object positioned off-centre on the right third, with the background falling away into deep, atmospheric shadows. Quiet confidence, sophisticated muted color palette, strictly no text or typography.",
-  "negative_prompt": "text, words, typography, letters, numbers, watermark, logo, signature, unreadable characters, people, faces, hands",
-  "rationale": "Editorial macro emphasizes the physical weight and precise scrutiny required for compliance records, turning an abstract software logging rule into a tangible, high-stakes object.",
-  "cue": "a full replay",
-  "subject": "embossed financial compliance ledger",
-  "composition": "extreme asymmetry, hero on the right third",
-  "alt_text": "Thick, textured compliance ledger resting on a dark desk under directional light, viewed in extreme close-up.",
-  "caption": "Under new governance rules, the retention clock for agent audit trails can extend up to six years for financial records.",
-  "title": "AI-Agent-Audit-Logs-Compliance",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of heavy archival paper dossiers and a continuous perforated audit ledger on a plain dark matte desk surface. Top-down 90-degree view, 50mm lens. The thick rag paper documents are slightly out of alignment to look handled, featuring heavy tactile embossing, visible paper fibers, and deep textures, but are entirely devoid of legible ink or print. Even diffused daylight from a window casts soft, subtle shadows across the scene, emphasizing the physical weight and permanence of the muted, cream-toned records. Asymmetric composition with generous negative space on the left.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, logo, typography, faces, hands, pen, pencil",
+  "rationale": "The story revolves around regulatory compliance, audit trails, and financial record-keeping, making a document flatlay the perfect metaphor for evidentiary logs.",
+  "cue": "the longest clock winning",
+  "subject": "heavy archival paper dossiers and a continuous perforated audit ledger",
+  "composition": "Asymmetric top-down layout",
+  "alt_text": "Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Logging A",
+  "caption": "Building Agent Audit Trails: Proving compliance by replaying the exact agent choice.",
+  "title": "Building Agent Audit Trails",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
+  "director_attempts": 1,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 519770,
-  "sha256": "sha256:2dfcbe8cd91faa66f9a6002bb4ba0dbd",
+  "bytes": 240622,
+  "sha256": "sha256:bcaaa987c9a4f7c96496d368a5dfcc21b4b0334c54b5b737a2a4877e90773514",
   "source_hash": "sha256:c444586232bf864156d0a4b263f3569b",
   "source_chars": 5203,
-  "task_id": "dd6df403cbd88d50b69b3820a46dcbcf",
-  "credits": 7.0,
-  "cost_ms": 18,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/dd6df403cbd88d50b69b3820a46dcbcf_1791501615190.jpg",
+  "task_id": "60ef4a929356a9a2035bea613c0f9230",
+  "credits": 5.0,
+  "cost_ms": 41,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/60ef4a929356a9a2035bea613c0f9230_1791506076065.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. An embossed, thick paper compliance ledger resting on a dark, heavy wooden forensic audit desk. Shallow depth of field, visible textured paper grain, leather binding, and dust motes. Soft directional daylight grazing the page, highlighting the tactile paper stock and subtle indentations. Hero object positioned off-centre on the right third, with the background falling away into deep, atmospheric shadows. Quiet confidence, sophisticated muted color palette, strictly no text or typography.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Overhead flat-lay photograph of heavy archival paper dossiers and a continuous perforated audit ledger on a plain dark matte desk surface. Top-down 90-degree view, 50mm lens. The thick rag paper documents are slightly out of alignment to look handled, featuring heavy tactile embossing, visible paper fibers, and deep textures, but are entirely devoid of legible ink or print. Even diffused daylight from a window casts soft, subtle shadows across the scene, emphasizing the physical weight and permanence of the muted, cream-toned records. Asymmetric composition with generous negative space on the left.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "2K"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:20:18+00:00"
+  "generated_at": "2026-10-09T00:34:41+00:00",
+  "overlay": {
+    "kicker": "AI GOVERNANCE // AGENT AUDIT TRAILS",
+    "title": "BUILDING AGENT AUDIT TRAILS",
+    "hook": "Proving compliance by replaying the exact agent choice",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.64,
+    "target": 5.5,
+    "clutter": 0.361,
+    "region_rgb": [
+      49,
+      49,
+      49
+    ],
+    "binding_rgb": [
+      39,
+      41,
+      40
+    ],
+    "title_lines": [
+      "BUILDING AGENT",
+      "AUDIT TRAILS"
+    ]
+  }
 }

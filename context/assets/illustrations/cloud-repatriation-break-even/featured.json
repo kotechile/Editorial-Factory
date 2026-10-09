@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,49 +11,124 @@
       "sha256": "sha256:4580cb21ad9b9f9e9dbfe90548f4624a",
       "generated_at": "2026-10-06T18:36:41+00:00",
       "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd"
+    },
+    {
+      "revision": 2,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Telephoto compression, 200mm long-lens view of a massive physical data center hall. Stacked overlapping layers of heavy bare-metal server racks and cooling infrastructure receding deeply into atmospheric haze. Flat compressed perspective, cool desaturated color palette with faint amber and blue LED indicators piercing the dim aisles. Overcast ambient light from overhead service gantries, emphasizing the brushed steel and textured matte polymers of the server hardware. Generous editorial negative space on the left side, empty cavernous facility, no people in the foreground. Cinematic film still quality, rich environmental texture.",
+      "task_id": "1fe407a28b9b60129effb63e55c346af",
+      "sha256": "sha256:b391ac05da92205e1408e9d78aaa343a",
+      "generated_at": "2026-10-08T23:15:04+00:00",
+      "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Massive dark stone slabs balancing on a machined steel fulcrum in an atmospheric, dimly lit room.",
+      "caption": "When workloads run flat and steady, the stable weight of owned physical hardware often outbalances the escalating premium of metered cloud space.",
+      "title": "Cloud Repatriation Economics",
+      "bytes": 241308,
+      "sha256": "sha256:685110050f7287cad81e1368dd0a8b50"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Cloud Break-Even. Massive dark stone slabs balancing on a machined steel fulcrum in an atmospheric, dimly lit room.",
+      "caption": "The Cloud Break-Even: When buying your own servers beats renting cloud space.",
+      "title": "The Cloud Break-Even",
+      "bytes": 193717,
+      "sha256": "sha256:c75348097be3080b1682eb6fd669974fd32f3e87ec3d37a46eea4efd712313a7"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The Cloud Break-Even. The Cloud Break-Even. Massive dark stone slabs balancing on a machined steel fulcrum in an atmospheric,",
+      "caption": "The Cloud Break-Even: The math behind moving apps off the public cloud.",
+      "title": "The Cloud Break-Even",
+      "bytes": 195747,
+      "sha256": "sha256:17f932c4e74c4b5c30a531fde5025e61a5f5db14ec78914ee4bb45519f5afc74"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. Massive dark stone slabs balancing on a machined steel fulc",
+      "caption": "The Cloud Break-Even: The math behind moving apps off the public cloud.",
+      "title": "The Cloud Break-Even",
+      "bytes": 196537,
+      "sha256": "sha256:563848c4f7f2b7abcaa46da26c3c5b8467fca2048b60c3936b5d0c7c6a764bc1"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. Massive dark stone slabs balancing on",
+      "caption": "The Cloud Break-Even: The math behind moving apps off the public cloud.",
+      "title": "The Cloud Break-Even",
+      "bytes": 198349,
+      "sha256": "sha256:c647c72fe52f74fd0b49222ccf3a4bd841e5db958bcae6ae78c1cf0103a22dae"
     }
   ],
-  "style": "long_lens_industry",
-  "style_label": "Compressed telephoto industry",
-  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Telephoto compression, 200mm long-lens view of a massive physical data center hall. Stacked overlapping layers of heavy bare-metal server racks and cooling infrastructure receding deeply into atmospheric haze. Flat compressed perspective, cool desaturated color palette with faint amber and blue LED indicators piercing the dim aisles. Overcast ambient light from overhead service gantries, emphasizing the brushed steel and textured matte polymers of the server hardware. Generous editorial negative space on the left side, empty cavernous facility, no people in the foreground. Cinematic film still quality, rich environmental texture.",
-  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, UI, interface, people, faces, hands",
-  "rationale": "The story is about the sheer scale of server infrastructure and the financial weight of renting versus owning it. Telephoto compression emphasizes the physical reality and massive scale of the data hall required to house these repatriated servers.",
-  "cue": "owned gear wears out",
-  "subject": "a deep corridor of physical bare-metal server racks in a massive data center hall",
-  "composition": "extreme asymmetric telephoto compression",
-  "alt_text": "A compressed telephoto view of physical bare-metal server racks receding into the hazy distance of a large data center hall.",
-  "caption": "Repatriating steady workloads to owned physical racks can cut infrastructure costs by half or more.",
-  "title": "The Bare Metal Break-Even",
+  "prompt": "Cinematic film still, anamorphic 35mm look. Massive monolithic dark basalt slabs in delicate, perfect equilibrium, balancing on a precision-machined brushed steel fulcrum. Deep atmospheric haze, a single strong practical warm light source cutting through the mist, throwing long heavy cast shadows across a polished concrete floor. Restrained teal-and-amber palette, wide establishing composition with heavy editorial negative space on the left, capturing the physical weight and tension of fixed boundaries.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, labels, ui, graphic overlays, people",
+  "rationale": "A cinematic still allows for deep atmospheric lighting and material weight, perfectly capturing the heavy, physical reality of 'owned gear' as a massive, stable force through the metaphor of balanced monoliths.",
+  "cue": "a metered charge that grows",
+  "subject": "monolithic stone slabs balancing on a steel fulcrum",
+  "composition": "extreme asymmetry, wide atmospheric framing",
+  "alt_text": "The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. Massive dark st",
+  "caption": "The Cloud Break-Even: The math behind moving apps off the public cloud.",
+  "title": "The Cloud Break-Even",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 336625,
-  "sha256": "sha256:b391ac05da92205e1408e9d78aaa343a",
+  "bytes": 198376,
+  "sha256": "sha256:3124d64e6b2c5800819c56558ee5182f6e763d3fb70861e6549446ec0caaccd2",
   "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd",
   "source_chars": 4169,
-  "task_id": "1fe407a28b9b60129effb63e55c346af",
+  "task_id": "c25d6a2e0055ecbcb2f5a51daeede9ec",
   "credits": 5.0,
   "cost_ms": 49,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/1fe407a28b9b60129effb63e55c346af_1791501300920.jpg",
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c25d6a2e0055ecbcb2f5a51daeede9ec_1791506527355.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Telephoto compression, 200mm long-lens view of a massive physical data center hall. Stacked overlapping layers of heavy bare-metal server racks and cooling infrastructure receding deeply into atmospheric haze. Flat compressed perspective, cool desaturated color palette with faint amber and blue LED indicators piercing the dim aisles. Overcast ambient light from overhead service gantries, emphasizing the brushed steel and textured matte polymers of the server hardware. Generous editorial negative space on the left side, empty cavernous facility, no people in the foreground. Cinematic film still quality, rich environmental texture.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Cinematic film still, anamorphic 35mm look. Massive monolithic dark basalt slabs in delicate, perfect equilibrium, balancing on a precision-machined brushed steel fulcrum. Deep atmospheric haze, a single strong practical warm light source cutting through the mist, throwing long heavy cast shadows across a polished concrete floor. Restrained teal-and-amber palette, wide establishing composition with heavy editorial negative space on the left, capturing the physical weight and tension of fixed boundaries.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:15:04+00:00"
+  "generated_at": "2026-10-09T00:42:10+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE IT // CLOUD REPATRIATION",
+    "title": "THE CLOUD BREAK-EVEN",
+    "hook": "The math behind moving apps off the public cloud",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.63,
+    "target": 4.5,
+    "clutter": 0.23,
+    "region_rgb": [
+      74,
+      94,
+      95
+    ],
+    "binding_rgb": [
+      111,
+      127,
+      124
+    ],
+    "title_lines": [
+      "THE CLOUD",
+      "BREAK-EVEN"
+    ]
+  }
 }

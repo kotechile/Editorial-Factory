@@ -1,6 +1,6 @@
 {
   "slug": "fed-rate-hike-inverts-working-capital-trap",
-  "revision": 2,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,32 @@
       "sha256": "sha256:4c0b311533ce425ebf45c3be6ec7183d",
       "generated_at": "2026-10-05T12:39:13+00:00",
       "source_hash": "sha256:87fc743c6ae2a776445c2d494a46aeeb"
+    },
+    {
+      "revision": 2,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "200mm telephoto compression of a massive, mostly empty high-bay warehouse racking system. Wide establishing composition with extreme asymmetry, focusing on a single remaining pallet of corrugated cardboard boxes on miles of bare, cold-rolled steel shelving. Deep atmospheric haze, overcast light casting long shadows across dusty concrete floors. Cool desaturated palette with muted tones. Stacked overlapping layers of vertical brushed metal structures receding into the distance, conveying vast empty scale. Quiet editorial restraint, cinematic lighting.",
+      "task_id": "7af2e45f72c14bfd1134336995af4801",
+      "sha256": "sha256:10a06c667e3ca09fbbb64297c1824ba5",
+      "generated_at": "2026-10-08T23:22:19+00:00",
+      "source_hash": "sha256:87fc743c6ae2a776445c2d494a46aeeb"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A vast, nearly empty industrial staging yard with sparse cargo receding into deep atmospheric haze.",
+      "caption": "Rising capital costs are colliding with critically depleted physical buffers across the industrial supply chain.",
+      "title": "Depleted Industrial Staging Yard",
+      "bytes": 285859,
+      "sha256": "sha256:7cd64fb7937f38b2cff45dc5978ee479"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo receding into deep atmospheric haz",
+      "caption": "Rates Hit Lean Inventories: Rising capital costs hit supply chains with no slack.",
+      "title": "Rates Hit Lean Inventories",
+      "bytes": 227059,
+      "sha256": "sha256:6c0802c5e9807dff1045ba3c0250b3cbc546e32d2f7df1ceafc45f279f7c3cf5"
     }
   ],
   "style": "long_lens_industry",
@@ -21,39 +47,46 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "200mm telephoto compression of a massive, mostly empty high-bay warehouse racking system. Wide establishing composition with extreme asymmetry, focusing on a single remaining pallet of corrugated cardboard boxes on miles of bare, cold-rolled steel shelving. Deep atmospheric haze, overcast light casting long shadows across dusty concrete floors. Cool desaturated palette with muted tones. Stacked overlapping layers of vertical brushed metal structures receding into the distance, conveying vast empty scale. Quiet editorial restraint, cinematic lighting.",
-  "negative_prompt": "text, words, letters, numbers, watermark, logo, brand, human, face, workers, forklift, UI, graphic, typography",
-  "rationale": "The telephoto compression emphasizes the vast, cavernous scale of the industrial facility while highlighting the physical reality of depleted stock and empty shelves.",
+  "prompt": "Cinematic long_lens_industry view, 200mm telephoto compression of a vast, nearly empty industrial staging yard at dawn. Stacked overlapping rows of heavy steel racking and sparse, depleted cargo containers receding into deep atmospheric haze. Flat compressed perspective, overcast light casting soft shadows, cool desaturated teal and grey palette. Deliberate asymmetrical composition with heavy editorial negative space in the sky, no people, emphasizing massive scale and depleted physical capacity.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, signage, UI, people, human face, hands, logos, branding, gradient",
+  "rationale": "The telephoto compression emphasizes the vast scale of industrial capacity while visually compressing the empty space, perfectly capturing the systemic lack of physical buffer described in the article.",
   "cue": "no slack left to cut",
-  "subject": "mostly empty high-bay warehouse racking",
-  "composition": "extreme asymmetry with deep linear perspective",
-  "alt_text": "Vast, mostly empty steel high-bay warehouse racking receding into atmospheric haze with only a single pallet visible.",
-  "caption": "Operations are running lean into rising prices, leaving plants with no safety buffers left to trim.",
-  "title": "Lean-Inventory-Racking-Scale",
+  "subject": "a vast, nearly empty industrial staging yard receding into mist",
+  "composition": "off-centre asymmetry with heavy negative space",
+  "alt_text": "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi",
+  "caption": "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut.",
+  "title": "Rate Hike Meets Zero Slack",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 3,
+  "director_attempts": 1,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/fed-rate-hike-inverts-working-capital-trap/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 428088,
-  "sha256": "sha256:10a06c667e3ca09fbbb64297c1824ba5",
+  "bytes": 243345,
+  "sha256": "sha256:4ec0238768283a1b2e63a8eecf27f33cdfa142e1f2e8f7d7e457ffee113d2f8f",
   "source_hash": "sha256:87fc743c6ae2a776445c2d494a46aeeb",
   "source_chars": 4044,
-  "task_id": "7af2e45f72c14bfd1134336995af4801",
+  "task_id": "a1a7f0ce345ce20380d5c017eb4a489b",
   "credits": 5.0,
-  "cost_ms": 51,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/7af2e45f72c14bfd1134336995af4801_1791501738075.jpg",
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a1a7f0ce345ce20380d5c017eb4a489b_1791505806641.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "200mm telephoto compression of a massive, mostly empty high-bay warehouse racking system. Wide establishing composition with extreme asymmetry, focusing on a single remaining pallet of corrugated cardboard boxes on miles of bare, cold-rolled steel shelving. Deep atmospheric haze, overcast light casting long shadows across dusty concrete floors. Cool desaturated palette with muted tones. Stacked overlapping layers of vertical brushed metal structures receding into the distance, conveying vast empty scale. Quiet editorial restraint, cinematic lighting.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Cinematic long_lens_industry view, 200mm telephoto compression of a vast, nearly empty industrial staging yard at dawn. Stacked overlapping rows of heavy steel racking and sparse, depleted cargo containers receding into deep atmospheric haze. Flat compressed perspective, overcast light casting soft shadows, cool desaturated teal and grey palette. Deliberate asymmetrical composition with heavy editorial negative space in the sky, no people, emphasizing massive scale and depleted physical capacity.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:22:19+00:00"
+  "generated_at": "2026-10-09T00:30:53+00:00",
+  "overlay": {
+    "kicker": "INVENTORY // INTEREST RATE SQUEEZE",
+    "title": "RATE HIKE MEETS ZERO SLACK",
+    "hook": "Rising rates squeeze supply chains with no stock to cut",
+    "anchor": "top-left",
+    "light": false
+  }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "control-tower-silent-exception",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,49 +11,124 @@
       "sha256": "sha256:c3aae98ab59be63f3ac9b9df4383a0cb",
       "generated_at": "2026-10-06T13:07:28+00:00",
       "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa"
+    },
+    {
+      "revision": 2,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, anamorphic 35mm look. A wide establishing composition of a commercial freight loading dock at dawn. A heavy articulated trailer is backed into an industrial warehouse bay under deep atmospheric haze. A single strong amber practical yard light illuminates the corrugated steel loading door against the cool teal shadows of the distribution center. Restrained teal-and-amber palette, deep shadows, moody industrial atmosphere. No people, quiet tension of the empty staging area.",
+      "task_id": "b8dad4203cea4683edf4952d8cbc2a87",
+      "sha256": "sha256:9c555982601643bcff0cd51db439b71b",
+      "generated_at": "2026-10-08T23:16:43+00:00",
+      "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa"
+    },
+    {
+      "revision": 3,
+      "alt_text": "An empty industrial loading dock bay illuminated by a single warm overhead light during blue hour.",
+      "caption": "The most costly cargo thefts occur right at the pickup dock, leaving an empty bay before tracking even begins.",
+      "title": "Loading Dock Blind Spot",
+      "bytes": 320981,
+      "sha256": "sha256:22940976efa3f2377ca3d7f4eb537bca"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Fake Carrier Blind Spot. An empty industrial loading dock bay illuminated by a single warm overhead light during blue hou",
+      "caption": "The Fake Carrier Blind Spot: Automated tracking misses the costliest cargo thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 249280,
+      "sha256": "sha256:fd35f1a5ba567588a40f5bdfcb4b2df5bc2a315b94b696ae0d70f2ee3862c7a7"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. An empty industrial loading dock bay illuminated by a single warm o",
+      "caption": "The Fake Carrier Blind Spot: Why control towers miss the costliest cargo thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 250984,
+      "sha256": "sha256:47510ad6c9c2f9a93f6675f25d3ca36bd1d30b441599d76048feea77a3610fff"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. An empty industrial loading dock bay i",
+      "caption": "The Fake Carrier Blind Spot: Why control towers miss the costliest cargo thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 248839,
+      "sha256": "sha256:3d39dd7bd27f1441f77ecc43af2e455762f56f7302b569679e28fdd75d44baa5"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. An empty ",
+      "caption": "The Fake Carrier Blind Spot: Why control towers miss the costliest cargo thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 250028,
+      "sha256": "sha256:5573558a7a0f35a11f43bf12ae533b250a494d72de3231c3bbd907ec6b3293ac"
     }
   ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, anamorphic 35mm look. A wide establishing composition of a commercial freight loading dock at dawn. A heavy articulated trailer is backed into an industrial warehouse bay under deep atmospheric haze. A single strong amber practical yard light illuminates the corrugated steel loading door against the cool teal shadows of the distribution center. Restrained teal-and-amber palette, deep shadows, moody industrial atmosphere. No people, quiet tension of the empty staging area.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, people, human face, hands, logos",
-  "rationale": "A cinematic still captures the atmospheric tension of the loading dock, emphasizing the physical reality of freight handover where the blind-spot theft takes place.",
-  "cue": "fake identity at the pickup dock",
-  "subject": "a commercial freight trailer parked at a warehouse loading dock",
-  "composition": "wide establishing composition",
-  "alt_text": "Commercial freight trailer backed into an industrial loading dock at dawn under heavy atmospheric haze.",
-  "caption": "When a shipment is handed to a fake carrier, the theft begins before an exception is ever triggered.",
-  "title": "Loading Dock Cargo Theft",
+  "prompt": "Architectural photograph of an empty industrial loading dock bay at blue hour, low-angle perspective with an asymmetric composition. A single warm amber overhead work light illuminates the weathered concrete and corrugated steel of the vacant bay, while the rest of the exterior facility fades into deep blue twilight shadow. Cinematic long-exposure calm, no moving figures, thick atmospheric mist, 35mm wide lens with deep depth of field, cool ambient light contrasting with the isolated pool of warm illumination.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, people, human face, hands",
+  "rationale": "The story discusses a systemic vulnerability at the very beginning of a journey (the pickup dock) that goes unnoticed until later. The 'architectural_night' treatment perfectly captures this eerie absence and the quiet, unmonitored moments of industrial operations, emphasizing the 'blind spot' after hours.",
+  "cue": "the expensive blind spot",
+  "subject": "an empty loading dock bay illuminated by a single overhead work light",
+  "composition": "low-angle perspective with an off-centre focal point emphasizing the vacant bay",
+  "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake ",
+  "caption": "The Fake Carrier Blind Spot: Why control towers miss the costliest cargo thefts.",
+  "title": "The Fake Carrier Blind Spot",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/control-tower-silent-exception/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 251215,
-  "sha256": "sha256:9c555982601643bcff0cd51db439b71b",
+  "bytes": 249975,
+  "sha256": "sha256:67cab3fc682bb18719290c069da8175097f5ccdc4f8d0686c5cac3b35d30dc06",
   "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa",
   "source_chars": 4557,
-  "task_id": "b8dad4203cea4683edf4952d8cbc2a87",
+  "task_id": "d0d1d60161621dac846e8498ed0b98b9",
   "credits": 5.0,
-  "cost_ms": 24,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/b8dad4203cea4683edf4952d8cbc2a87_1791501402383.jpg",
+  "cost_ms": 46,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d0d1d60161621dac846e8498ed0b98b9_1791506336152.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Cinematic film still, anamorphic 35mm look. A wide establishing composition of a commercial freight loading dock at dawn. A heavy articulated trailer is backed into an industrial warehouse bay under deep atmospheric haze. A single strong amber practical yard light illuminates the corrugated steel loading door against the cool teal shadows of the distribution center. Restrained teal-and-amber palette, deep shadows, moody industrial atmosphere. No people, quiet tension of the empty staging area.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Architectural photograph of an empty industrial loading dock bay at blue hour, low-angle perspective with an asymmetric composition. A single warm amber overhead work light illuminates the weathered concrete and corrugated steel of the vacant bay, while the rest of the exterior facility fades into deep blue twilight shadow. Cinematic long-exposure calm, no moving figures, thick atmospheric mist, 35mm wide lens with deep depth of field, cool ambient light contrasting with the isolated pool of warm illumination.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:16:43+00:00"
+  "generated_at": "2026-10-09T00:39:02+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // CARGO THEFT",
+    "title": "THE FAKE CARRIER BLIND SPOT",
+    "hook": "Why control towers miss the costliest cargo thefts",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 75,
+    "contrast": 5.76,
+    "target": 5.5,
+    "clutter": 0.37,
+    "region_rgb": [
+      81,
+      97,
+      110
+    ],
+    "binding_rgb": [
+      146,
+      143,
+      150
+    ],
+    "title_lines": [
+      "THE FAKE CARRIER",
+      "BLIND SPOT"
+    ]
+  }
 }

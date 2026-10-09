@@ -1,6 +1,6 @@
 {
   "slug": "fine-tune-vs-rent-by-token",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,51 +11,124 @@
       "sha256": "sha256:d373b28b3981d502e718af111863d196",
       "generated_at": "2026-10-06T19:38:12+00:00",
       "source_hash": "sha256:631e76fd0eb04a89c3150a7d11aad7d2"
+    },
+    {
+      "revision": 2,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered brushed steel surface. An interlocking arrangement featuring a heavy finned graphics compute block, an unlatched inspection gate, and a thick braided power cable connector. Extreme asymmetry, hero off-centre right with heavy negative space left. Matte muted palette, hard clean edges, tactile industrial materials. One directional key light throwing a long cast shadow to the left.",
+      "task_id": "a91970389f2d2ef581cf832b2ea4ecbc",
+      "sha256": "sha256:92628b2d349d4e9a8e6232ba1b605954",
+      "generated_at": "2026-10-08T23:13:55+00:00",
+      "source_hash": "sha256:631e76fd0eb04a89c3150a7d11aad7d2"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Extreme close-up of a braided power cable connecting to a brushed aluminum workstation heat-sink.",
+      "caption": "Local compute economics ultimately hit a hard physical power limit before a bill is ever printed.",
+      "title": "Workstation-Power-Macro",
+      "bytes": 740855,
+      "sha256": "sha256:37e67303cada343c605cccc08249259c"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Local AI Break-Even. Extreme close-up of a braided power cable connecting to a brushed aluminum workstation heat-sink.",
+      "caption": "The Local AI Break-Even: How API token pricing dictates your hardware choice.",
+      "title": "The Local AI Break-Even",
+      "bytes": 653525,
+      "sha256": "sha256:98627ba2832655148adc63991cbbd86c3c1edc6ff2042c07f904fd2575f23dca"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The Local AI Break-Even. The Local AI Break-Even. Extreme close-up of a braided power cable connecting to a brushed aluminum ",
+      "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+      "title": "The Local AI Break-Even",
+      "bytes": 658138,
+      "sha256": "sha256:154687b0332363cde6aee8b7c50675a2f820127a20d2105395378b13305ef447"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. Extreme close-up of a braided power cable connecti",
+      "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+      "title": "The Local AI Break-Even",
+      "bytes": 658196,
+      "sha256": "sha256:686ebacce3bc32d0c958c822803841d4fdaa874490aab8c4856a65a59cfd89e6"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. Extreme close-up of a bra",
+      "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+      "title": "The Local AI Break-Even",
+      "bytes": 660439,
+      "sha256": "sha256:cbb2ef93a65c8066116a0ec4f0af7a2e2b686ff5059b584f4da8d12ef6d828fb"
     }
   ],
-  "style": "component_assembly",
-  "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
-  "model": "nano-banana-pro",
-  "model_key": "nanobanana",
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "1K",
-  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered brushed steel surface. An interlocking arrangement featuring a heavy finned graphics compute block, an unlatched inspection gate, and a thick braided power cable connector. Extreme asymmetry, hero off-centre right with heavy negative space left. Matte muted palette, hard clean edges, tactile industrial materials. One directional key light throwing a long cast shadow to the left.",
-  "negative_prompt": "text, typography, letters, numbers, wordmark, logo, human, face, hands, spheres, cubes, bare geometry",
-  "rationale": "A modular mechanical assembly isolates the physical hardware and power requirements that make up the hidden costs of local fine-tuning, emphasizing the material reality behind abstract token math.",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy-duty, braided electrical power cable firmly locked into the brushed aluminum heat-sink fins of a high-end workstation compute module. Shallow depth of field, visible surface texture, metallic dust, and heavy contact shadows. Soft directional daylight striking the metallic fins, creating stark highlights against deep shadows, with the background falling away into smooth, dark editorial negative space. The hero object is positioned asymmetrically on the right third of the frame.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, branding, watermarks",
+  "rationale": "The story hinges on a specific physical constraint\u2014a single workstation graphics card and its massive power draw\u2014making an extreme macro shot of the hardware-power connection the perfect physical embodiment of this economic bottleneck.",
   "cue": "hard power limit",
-  "subject": "a modular graphics compute block and power supply cable",
-  "composition": "extreme asymmetry, hero off-centre right with heavy negative space left",
-  "alt_text": "Heavy finned graphics compute block and thick braided power cable connector arranged on a brushed steel surface.",
-  "caption": "The true test of local compute is often the power limit and the rented price you choose not to beat.",
-  "title": "Compute Economics Power Hardware Assembly",
+  "subject": "heavy-duty braided power cable locking into a brushed aluminum heat-sink",
+  "composition": "extreme asymmetry off-centre on the thirds",
+  "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. ",
+  "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+  "title": "The Local AI Break-Even",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
+  "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 2233953,
-  "sha256": "sha256:92628b2d349d4e9a8e6232ba1b605954",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 660538,
+  "sha256": "sha256:11552e90aeac095a094103e3fed654d5d2f94ba833cde4db0bde45a12896918a",
   "source_hash": "sha256:631e76fd0eb04a89c3150a7d11aad7d2",
   "source_chars": 4600,
-  "task_id": "a91970389f2d2ef581cf832b2ea4ecbc",
-  "credits": 18.0,
-  "cost_ms": 26,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_90ce5f78e4e68c86e2565c03b5c4099f.png",
+  "task_id": "317eeb60939ed7d08ae4cff111170f77",
+  "credits": 7.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/317eeb60939ed7d08ae4cff111170f77_1791506579824.jpg",
   "provider_request": {
-    "model": "nano-banana-pro",
+    "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered brushed steel surface. An interlocking arrangement featuring a heavy finned graphics compute block, an unlatched inspection gate, and a thick braided power cable connector. Extreme asymmetry, hero off-centre right with heavy negative space left. Matte muted palette, hard clean edges, tactile industrial materials. One directional key light throwing a long cast shadow to the left.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy-duty, braided electrical power cable firmly locked into the brushed aluminum heat-sink fins of a high-end workstation compute module. Shallow depth of field, visible surface texture, metallic dust, and heavy contact shadows. Soft directional daylight striking the metallic fins, creating stark highlights against deep shadows, with the background falling away into smooth, dark editorial negative space. The hero object is positioned asymmetrically on the right third of the frame.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
-      "image_input": [],
-      "output_format": "png"
+      "resolution": "2K"
     }
   },
-  "generated_at": "2026-10-08T23:13:55+00:00"
+  "generated_at": "2026-10-09T00:43:04+00:00",
+  "overlay": {
+    "kicker": "LOCAL AI // COMPUTE ECONOMICS",
+    "title": "THE LOCAL AI BREAK-EVEN",
+    "hook": "Rented token prices decide if local hardware pays off",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 75,
+    "contrast": 5.93,
+    "target": 5.5,
+    "clutter": 0.434,
+    "region_rgb": [
+      80,
+      76,
+      72
+    ],
+    "binding_rgb": [
+      147,
+      140,
+      134
+    ],
+    "title_lines": [
+      "THE LOCAL AI",
+      "BREAK-EVEN"
+    ]
+  }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "demurrage-invoice-30-day-clocks",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,49 +11,124 @@
       "sha256": "sha256:4e5d466dbec6c13e6e57881a12216c7e",
       "generated_at": "2026-10-06T20:08:23+00:00",
       "source_hash": "sha256:36efd58a31820761e4c761982e2c3ef8"
+    },
+    {
+      "revision": 2,
+      "style": "editorial_macro",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "An extreme close-up macro photograph of a heavy, brushed-steel industrial timestamp mechanism pressing down onto a thick, textured shipping ledger. 100mm macro lens, razor-sharp focal plane on the metallic numerals of the time dial, shallow depth of field with the background falling away into soft shadow. Visible surface texture, dust motes in the air, soft directional daylight raking across the heavy paper stock. Extreme asymmetry, hero mechanism anchored off-centre on the right third.",
+      "task_id": "b315abba5d36b4f2fc69ef2fe4164f61",
+      "sha256": "sha256:56f3653fcae6b7c870b7169300ce2e74",
+      "generated_at": "2026-10-08T23:12:58+00:00",
+      "source_hash": "sha256:36efd58a31820761e4c761982e2c3ef8"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Shipping invoices under mechanical time stamps on a wooden desk.",
+      "caption": "Demurrage disputes rely entirely on precise, logged time records to beat strict 30-day windows.",
+      "title": "Demurrage Time Clocks",
+      "bytes": 328759,
+      "sha256": "sha256:be20a9a7843b951d10dc330663baf15c"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The 30-Day Demurrage Clock. Shipping invoices under mechanical time stamps on a wooden desk.",
+      "caption": "The 30-Day Demurrage Clock: How event data defeats invalid shipping container fees.",
+      "title": "The 30-Day Demurrage Clock",
+      "bytes": 278027,
+      "sha256": "sha256:818b42ea262018d8836edf59c8f1db84435c45758f1959960b624fd873eddfbf"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The Demurrage 30-Day Clocks. The 30-Day Demurrage Clock. Shipping invoices under mechanical time stamps on a wooden desk.",
+      "caption": "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-Day Clocks",
+      "bytes": 281978,
+      "sha256": "sha256:2b1a7ab2fed06ced9b92a97dd163fb94385f8da06b595e980dcdfd17dd46e4ce"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Day Demurrage Clock. Shipping invoices under mechanical time",
+      "caption": "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-Day Clocks",
+      "bytes": 284228,
+      "sha256": "sha256:ce3c431d9f1dad90373d71cfc41584eba696bbb9747199ebae2a419e336213ee"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Day Demurrage Clock. Shipping i",
+      "caption": "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-Day Clocks",
+      "bytes": 286108,
+      "sha256": "sha256:df0f1fd22e1dbcc940272fd8e77de16d5278013a940a97069b954200124bdaa9"
     }
   ],
-  "style": "editorial_macro",
-  "style_label": "Editorial macro",
-  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "2K",
-  "prompt": "An extreme close-up macro photograph of a heavy, brushed-steel industrial timestamp mechanism pressing down onto a thick, textured shipping ledger. 100mm macro lens, razor-sharp focal plane on the metallic numerals of the time dial, shallow depth of field with the background falling away into soft shadow. Visible surface texture, dust motes in the air, soft directional daylight raking across the heavy paper stock. Extreme asymmetry, hero mechanism anchored off-centre on the right third.",
-  "negative_prompt": "text, typography, numbers, letters, watermark, signature, logo, branding, human face, hands",
-  "rationale": "The story hinges on specific documents (invoices, regulations) and the exact timestamps recorded on them to settle disputes. An extreme close-up of a physical timestamp on heavy shipping paperwork captures the tactile reality of this critical compliance and billing mechanism.",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of paper documents on a plain desk surface. Top-down 90-degree view, 50mm lens, extreme asymmetry with the hero objects pushed to the lower right. Even diffused daylight casting a soft shadow. Heavy textured paper stock of shipping ledgers, slightly misaligned, weighed down by two heavy brushed brass mechanical time-stamping devices. Muted paper tones, tactile brass textures, resting on a weathered wooden shipping desk. Generous editorial negative space on the left, cinematic volumetric haze over the desk.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermarks, logos, typography, writing",
+  "rationale": "A document flatlay perfectly captures the regulatory and contractual nature of billing disputes and the precise 30-day timeframes governing shipping invoices.",
   "cue": "settled by records",
-  "subject": "a mechanical industrial timestamp pressing into heavy shipping paperwork",
-  "composition": "extreme asymmetry, hero object off-centre on the thirds",
-  "alt_text": "A heavy industrial timestamp mechanism resting on textured shipping paperwork under directional light.",
-  "caption": "Under the new rule, the exact time stamps logged by a control tower determine whether a demurrage bill stands.",
-  "title": "timestamp-shipping-ledger-macro",
+  "subject": "shipping invoices under mechanical time stamps",
+  "composition": "extreme asymmetry top-down",
+  "alt_text": "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
+  "caption": "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes.",
+  "title": "The Demurrage 30-Day Clocks",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 653290,
-  "sha256": "sha256:56f3653fcae6b7c870b7169300ce2e74",
+  "bytes": 286061,
+  "sha256": "sha256:00b6489c07948957f56bd12ae778874796be8e804bd1d75e59e03629f936d226",
   "source_hash": "sha256:36efd58a31820761e4c761982e2c3ef8",
   "source_chars": 5385,
-  "task_id": "b315abba5d36b4f2fc69ef2fe4164f61",
-  "credits": 7.0,
-  "cost_ms": 19,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/b315abba5d36b4f2fc69ef2fe4164f61_1791501175407.jpg",
+  "task_id": "55223c21c0156791afaaac48b15f7c9a",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/55223c21c0156791afaaac48b15f7c9a_1791506674677.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "An extreme close-up macro photograph of a heavy, brushed-steel industrial timestamp mechanism pressing down onto a thick, textured shipping ledger. 100mm macro lens, razor-sharp focal plane on the metallic numerals of the time dial, shallow depth of field with the background falling away into soft shadow. Visible surface texture, dust motes in the air, soft directional daylight raking across the heavy paper stock. Extreme asymmetry, hero mechanism anchored off-centre on the right third.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Overhead flat-lay photograph of paper documents on a plain desk surface. Top-down 90-degree view, 50mm lens, extreme asymmetry with the hero objects pushed to the lower right. Even diffused daylight casting a soft shadow. Heavy textured paper stock of shipping ledgers, slightly misaligned, weighed down by two heavy brushed brass mechanical time-stamping devices. Muted paper tones, tactile brass textures, resting on a weathered wooden shipping desk. Generous editorial negative space on the left, cinematic volumetric haze over the desk.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "2K"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:12:58+00:00"
+  "generated_at": "2026-10-09T00:44:35+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // DEMURRAGE BILLS",
+    "title": "THE DEMURRAGE 30-DAY CLOCKS",
+    "hook": "Using exact timestamps to win container fee disputes",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.72,
+    "target": 4.5,
+    "clutter": 0.181,
+    "region_rgb": [
+      104,
+      95,
+      91
+    ],
+    "binding_rgb": [
+      133,
+      120,
+      114
+    ],
+    "title_lines": [
+      "THE DEMURRAGE",
+      "30-DAY CLOCKS"
+    ]
+  }
 }

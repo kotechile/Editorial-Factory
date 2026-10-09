@@ -1,6 +1,6 @@
 {
   "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,51 +11,124 @@
       "sha256": "sha256:a1c2fbf330e523115af98d7e9eff1646",
       "generated_at": "2026-10-06T10:38:16+00:00",
       "source_hash": "sha256:e04af2fe6e6769e244647c862506afa2"
+    },
+    {
+      "revision": 2,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered brushed steel workbench. Two recognizable engineered parts: a heavy, unlatched diagnostic bay cover and an interlocking optical connector piece, pulled slightly apart to indicate they are swappable. Arranged asymmetrically with generous editorial negative space on the left. Matte muted palette of industrial grey and frosted copper, hard clean edges, single directional key light throwing a long, deliberate cast shadow across the tactile metallic surface. No printed lettering.",
+      "task_id": "9d1e2eceb0ca2767bcb3359ac5bb61f5",
+      "sha256": "sha256:30533a9f705a9306089e1be80e1365ec",
+      "generated_at": "2026-10-08T23:19:24+00:00",
+      "source_hash": "sha256:e04af2fe6e6769e244647c862506afa2"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Heavy brass and optical glass measurement apparatus focusing a beam of light on dark basalt in atmospheric haze.",
+      "caption": "The AI observability market is consolidating around quality scores that belong to the judge, not a fixed mathematical standard.",
+      "title": "AI Judge Quality Score Measurement",
+      "bytes": 255372,
+      "sha256": "sha256:6c8eb9499a90f31c6d3a94d20200cc29"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Buying The AI Judge. Heavy brass and optical glass measurement apparatus focusing a beam of light on dark basalt in atmospher",
+      "caption": "Buying The AI Judge: Why the AI quality score is a moving target.",
+      "title": "Buying The AI Judge",
+      "bytes": 212123,
+      "sha256": "sha256:108f48fc44e9b3853710926a5dfb3407b385ade03955cfded883acba8532d6b2"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Grading The LLM Judge. Buying The AI Judge. Heavy brass and optical glass measurement apparatus focusing a beam of light on d",
+      "caption": "Grading The LLM Judge: The billion-dollar market built on a moving target.",
+      "title": "Grading The LLM Judge",
+      "bytes": 216210,
+      "sha256": "sha256:a56c809aef8cfee7c7fa2e37709353b67b37d24332a76cd8e9880471a30efd57"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Grading The LLM Judge. Grading The LLM Judge. Buying The AI Judge. Heavy brass and optical glass measurement apparatus focusi",
+      "caption": "Grading The LLM Judge: The billion-dollar market built on a moving target.",
+      "title": "Grading The LLM Judge",
+      "bytes": 217042,
+      "sha256": "sha256:a756db97515b4d5221c6a171c443b4d98edbccf713d09758deb9abbe70aa49e9"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Grading The LLM Judge. Grading The LLM Judge. Grading The LLM Judge. Buying The AI Judge. Heavy brass and optical glass measu",
+      "caption": "Grading The LLM Judge: The billion-dollar market built on a moving target.",
+      "title": "Grading The LLM Judge",
+      "bytes": 217042,
+      "sha256": "sha256:a756db97515b4d5221c6a171c443b4d98edbccf713d09758deb9abbe70aa49e9"
     }
   ],
-  "style": "component_assembly",
-  "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
-  "model": "nano-banana-pro",
-  "model_key": "nanobanana",
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered brushed steel workbench. Two recognizable engineered parts: a heavy, unlatched diagnostic bay cover and an interlocking optical connector piece, pulled slightly apart to indicate they are swappable. Arranged asymmetrically with generous editorial negative space on the left. Matte muted palette of industrial grey and frosted copper, hard clean edges, single directional key light throwing a long, deliberate cast shadow across the tactile metallic surface. No printed lettering.",
-  "negative_prompt": "text, typography, letters, numbers, wordmarks, logos, watermarks, UI, faces, hands, bare abstract geometry",
-  "rationale": "The story focuses on a specific, swappable element (the judge) within a broader system (AI observability). A modular component assembly captures the idea of an interchangeable testing unit that dictates the final score.",
-  "cue": "a property of the judge",
-  "subject": "an unlatched modular diagnostic bay and an interlocking connector",
-  "composition": "extreme asymmetry with heavy negative space",
-  "alt_text": "An unlatched modular diagnostic bay and an interlocking connector resting on a brushed steel surface.",
-  "caption": "Because AI quality scores vary heavily depending on the model chosen to evaluate them, the industry standard remains a moving target.",
-  "title": "AI Judge Swappable Module",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition with severe asymmetry. An intricate, heavy brass and optical glass measurement apparatus resting on a slab of rough dark basalt, focusing a single razor-thin beam of warm amber light. Deep atmospheric haze, single strong practical directional light source casting deep shadows. Restrained teal-and-amber palette, prominent rim highlights on the brushed metallic edges of the lens housing. Quiet confidence, refined aesthetics, authentic tactile context and material weight, physical tension implied by the precise, delicate alignment of the heavy glass elements. Generous editorial negative space on the left.",
+  "negative_prompt": "text, typography, wordmarks, watermarks, logos, labels, ui, branding, faces, people",
+  "rationale": "A cinematic still provides the material weight and atmospheric depth needed to ground an abstract software concept. By using a physical, precision measurement apparatus in a moody environment, we capture the tension of a 'moving target' standard without resorting to literal code or datacenter clich\u00e9s.",
+  "cue": "not a fixed ruler",
+  "subject": "intricate brass and optical glass measurement apparatus",
+  "composition": "wide asymmetric establishing composition",
+  "alt_text": "Grading The LLM Judge. Grading The LLM Judge. Grading The LLM Judge. Grading The LLM Judge. Buying The AI Judge. Heavy brass ",
+  "caption": "Grading The LLM Judge: The billion-dollar market built on a moving target.",
+  "title": "Grading The LLM Judge",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1924649,
-  "sha256": "sha256:30533a9f705a9306089e1be80e1365ec",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 217042,
+  "sha256": "sha256:a756db97515b4d5221c6a171c443b4d98edbccf713d09758deb9abbe70aa49e9",
   "source_hash": "sha256:e04af2fe6e6769e244647c862506afa2",
   "source_chars": 4606,
-  "task_id": "9d1e2eceb0ca2767bcb3359ac5bb61f5",
-  "credits": 18.0,
-  "cost_ms": 24,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_64fa6c193d22a49cf5ae46b729be641b.png",
+  "task_id": "b4b328cc7ea5c3597602a3a35c7d93e4",
+  "credits": 5.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b4b328cc7ea5c3597602a3a35c7d93e4_1791506126545.jpg",
   "provider_request": {
-    "model": "nano-banana-pro",
+    "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered brushed steel workbench. Two recognizable engineered parts: a heavy, unlatched diagnostic bay cover and an interlocking optical connector piece, pulled slightly apart to indicate they are swappable. Arranged asymmetrically with generous editorial negative space on the left. Matte muted palette of industrial grey and frosted copper, hard clean edges, single directional key light throwing a long, deliberate cast shadow across the tactile metallic surface. No printed lettering.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition with severe asymmetry. An intricate, heavy brass and optical glass measurement apparatus resting on a slab of rough dark basalt, focusing a single razor-thin beam of warm amber light. Deep atmospheric haze, single strong practical directional light source casting deep shadows. Restrained teal-and-amber palette, prominent rim highlights on the brushed metallic edges of the lens housing. Quiet confidence, refined aesthetics, authentic tactile context and material weight, physical tension implied by the precise, delicate alignment of the heavy glass elements. Generous editorial negative space on the left.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
-      "image_input": [],
-      "output_format": "png"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:19:24+00:00"
+  "generated_at": "2026-10-09T00:35:31+00:00",
+  "overlay": {
+    "kicker": "AI OBSERVABILITY // MODEL EVALUATION",
+    "title": "GRADING THE LLM JUDGE",
+    "hook": "The billion-dollar market built on a moving target",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.56,
+    "target": 4.5,
+    "clutter": 0.054,
+    "region_rgb": [
+      31,
+      44,
+      46
+    ],
+    "binding_rgb": [
+      33,
+      49,
+      49
+    ],
+    "title_lines": [
+      "GRADING THE",
+      "LLM JUDGE"
+    ]
+  }
 }

@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/fed-rate-hike-inverts-working-capital-trap/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Vast, mostly empty steel high-bay warehouse racking receding into atmospheric haze with only a single pallet visible."
-image_caption: "Operations are running lean into rising prices, leaving plants with no safety buffers left to trim."
+image_alt: "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi"
+image_caption: "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

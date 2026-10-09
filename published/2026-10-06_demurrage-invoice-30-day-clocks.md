@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "A late fee for a delayed shipping container — demurrage, in trade terms — now carries two strict 30-day clocks."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg"
-image_style: "editorial_macro"
+image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "A heavy industrial timestamp mechanism resting on textured shipping paperwork under directional light."
-image_caption: "Under the new rule, the exact time stamps logged by a control tower determine whether a demurrage bill stands."
+image_alt: "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da"
+image_caption: "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

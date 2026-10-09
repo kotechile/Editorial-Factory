@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "37signals cut its cloud bill from $3.2 million to $1.3 million a year by moving seven apps off Amazon and onto its own gear."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg"
-image_style: "long_lens_industry"
+image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "A compressed telephoto view of physical bare-metal server racks receding into the hazy distance of a large data center hall."
-image_caption: "Repatriating steady workloads to owned physical racks can cut infrastructure costs by half or more."
+image_alt: "The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. Massive dark st"
+image_caption: "The Cloud Break-Even: The math behind moving apps off the public cloud."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

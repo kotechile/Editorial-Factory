@@ -1,6 +1,6 @@
 {
   "slug": "kv-cache-is-the-concurrency-ceiling",
-  "revision": 3,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,62 @@
       "sha256": "sha256:78dccf4ba95e61c3b33b66de78312bee",
       "generated_at": "2026-10-08T22:41:22+00:00",
       "source_hash": "sha256:6347f8ca5265bf0017581589e4e1a297"
+    },
+    {
+      "revision": 3,
+      "alt_text": "An anodized aluminum memory module sliding into a brushed steel rack bay on a textured surface.",
+      "caption": "Efficient block paging maximizes GPU memory capacity by allocating cache in precise chunks.",
+      "title": "GPU Memory Block Paging Assembly",
+      "bytes": 1635150,
+      "sha256": "sha256:f6c3648154577f7f79f822d61ff03719"
+    },
+    {
+      "revision": 4,
+      "alt_text": "THE KV Cache Bottleneck. An anodized aluminum memory module sliding into a brushed steel rack bay on a textured surface.",
+      "caption": "THE KV Cache Bottleneck: The hidden memory cost limiting your AI hardware.",
+      "title": "THE KV Cache Bottleneck",
+      "bytes": 1158598,
+      "sha256": "sha256:2361c9355de6008ad9571f47cc327b02e2513f13df73c07fe7583624870a1962"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The KV Cache Bottleneck. THE KV Cache Bottleneck. An anodized aluminum memory module sliding into a brushed steel rack bay on",
+      "caption": "The KV Cache Bottleneck: Why inference is constrained by memory, not math.",
+      "title": "The KV Cache Bottleneck",
+      "bytes": 1152449,
+      "sha256": "sha256:5d2f2c59d58f63fd523cf589ec37defd5249448234fd14e7ecf6e7c1e6461fa5"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The KV Cache Bottleneck. The KV Cache Bottleneck. THE KV Cache Bottleneck. An anodized aluminum memory module sliding into a ",
+      "caption": "The KV Cache Bottleneck: Software fixes save memory before you buy another card.",
+      "title": "The KV Cache Bottleneck",
+      "bytes": 1144426,
+      "sha256": "sha256:81e1de2718f950a7e0d45e319dc9a65c39e9f886611e18365d3ca4b3161c6e28"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The GPU Memory Bottleneck. The KV Cache Bottleneck. The KV Cache Bottleneck. THE KV Cache Bottleneck. An anodized aluminum me",
+      "caption": "The GPU Memory Bottleneck: Why cache limits dictate your hardware needs.",
+      "title": "The GPU Memory Bottleneck",
+      "bytes": 1142649,
+      "sha256": "sha256:f5ab79f0da1d10dc98f8bb4c9332b64a2756720eba2c8d17f60a9175421741c4"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The GPU Memory Bottleneck. The GPU Memory Bottleneck. The KV Cache Bottleneck. The KV Cache Bottleneck. THE KV Cache Bottlene",
+      "caption": "The GPU Memory Bottleneck: Why cache limits dictate your hardware needs.",
+      "title": "The GPU Memory Bottleneck",
+      "bytes": 1142882,
+      "sha256": "sha256:57a9d4643ddeae286d7d1f788772deee207aab48229e4c279b775612633d6408"
+    },
+    {
+      "revision": 9,
+      "alt_text": "The GPU Memory Bottleneck. The GPU Memory Bottleneck. The GPU Memory Bottleneck. The KV Cache Bottleneck. The KV Cache Bottle",
+      "caption": "The GPU Memory Bottleneck: Why cache limits dictate your hardware needs.",
+      "title": "The GPU Memory Bottleneck",
+      "bytes": 1142882,
+      "sha256": "sha256:57a9d4643ddeae286d7d1f788772deee207aab48229e4c279b775612633d6408"
     }
   ],
   "style": "component_assembly",
@@ -37,9 +93,9 @@
   "cue": "fixed-size blocks",
   "subject": "a modular memory block being slotted into a rigid rack",
   "composition": "asymmetric layout with strong negative space on the left",
-  "alt_text": "An anodized aluminum memory module sliding into a brushed steel rack bay on a textured surface.",
-  "caption": "Efficient block paging maximizes GPU memory capacity by allocating cache in precise chunks.",
-  "title": "GPU Memory Block Paging Assembly",
+  "alt_text": "The GPU Memory Bottleneck. The GPU Memory Bottleneck. The GPU Memory Bottleneck. The GPU Memory Bottleneck. The KV Cache Bott",
+  "caption": "The GPU Memory Bottleneck: Why cache limits dictate your hardware needs.",
+  "title": "The GPU Memory Bottleneck",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -49,8 +105,8 @@
   "local_path": "context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1635150,
-  "sha256": "sha256:f6c3648154577f7f79f822d61ff03719",
+  "bytes": 1142882,
+  "sha256": "sha256:57a9d4643ddeae286d7d1f788772deee207aab48229e4c279b775612633d6408",
   "source_hash": "sha256:6347f8ca5265bf0017581589e4e1a297",
   "source_chars": 4179,
   "task_id": "ce6588ddf9857afbd3e88ff169f13b84",
@@ -67,5 +123,30 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T23:07:50+00:00"
+  "generated_at": "2026-10-08T23:07:50+00:00",
+  "overlay": {
+    "kicker": "AI HARDWARE // MEMORY BOTTLENECK",
+    "title": "THE GPU MEMORY BOTTLENECK",
+    "hook": "Why cache limits dictate your hardware needs",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.55,
+    "target": 4.5,
+    "clutter": 0.115,
+    "region_rgb": [
+      91,
+      90,
+      80
+    ],
+    "binding_rgb": [
+      108,
+      104,
+      95
+    ],
+    "title_lines": [
+      "THE GPU MEMORY",
+      "BOTTLENECK"
+    ]
+  }
 }

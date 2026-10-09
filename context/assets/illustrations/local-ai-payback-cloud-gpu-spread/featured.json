@@ -1,6 +1,6 @@
 {
   "slug": "local-ai-payback-cloud-gpu-spread",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,49 +11,126 @@
       "sha256": "sha256:532af1b6fff0abed048a4ca66e1ddda2",
       "generated_at": "2026-10-06T12:37:06+00:00",
       "source_hash": "sha256:8c8392064556ded9b22eb938bb5b56a8"
+    },
+    {
+      "revision": 2,
+      "style": "studio_object",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Studio product photograph of a single, massive unbranded heavy-duty GPU compute module resting on a dark, textured slate surface. Off-centre asymmetrical composition with heavy editorial negative space on the left. Shot with a 100mm telephoto lens, sharp focal plane on the brushed aluminum heatsink fins and matte black polymer shroud. A single softbox key light from the upper right casts a long, dramatic contact shadow across the slate. Rich chiaroscuro, catalogue clarity, muted sophisticated palette, deep ambient shadows, no text or printed lettering.",
+      "task_id": "4179da1bb26005a6146555dcaaac5d96",
+      "sha256": "sha256:249234660f44ef1982bbb8d3e7e8217d",
+      "generated_at": "2026-10-08T23:17:25+00:00",
+      "source_hash": "sha256:8c8392064556ded9b22eb938bb5b56a8"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A heavy metallic compute housing splitting into three interlocking modular bays on a concrete surface.",
+      "caption": "The changing economics of memory supply have fractured the standard equation for AI compute hardware.",
+      "title": "AI Compute Pricing Divergence Assembly",
+      "bytes": 1706014,
+      "sha256": "sha256:6bed5eef1cb28757ba9c27f3feedbaa8"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The GPU Payback Split. A heavy metallic compute housing splitting into three interlocking modular bays on a concrete surface.",
+      "caption": "The GPU Payback Split: Why the build-or-rent math for AI compute just broke.",
+      "title": "The GPU Payback Split",
+      "bytes": 1250722,
+      "sha256": "sha256:5e7250b8202266acfe6802b8a55be8de493bc21e259b63cf587be04752c5aad8"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The GPU Pricing Fracture. The GPU Payback Split. A heavy metallic compute housing splitting into three interlocking modular b",
+      "caption": "The GPU Pricing Fracture: Build-vs-rent math breaks as local and cloud prices split.",
+      "title": "The GPU Pricing Fracture",
+      "bytes": 1251148,
+      "sha256": "sha256:4055140349b30f618c0aafb281697347e756870b4860fa78777a2ba6aef4b838"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Payback Split. A heavy metallic compute housing splitting into th",
+      "caption": "The GPU Pricing Fracture: Build-vs-rent math breaks as local and cloud prices split.",
+      "title": "The GPU Pricing Fracture",
+      "bytes": 1242423,
+      "sha256": "sha256:e50aaaa16da81a71508a15a22282de4142b8a3994f22fb7ad9e2250d3ac28c30"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Payback Split. A heavy metallic compute",
+      "caption": "The GPU Pricing Fracture: Build-vs-rent math breaks as local and cloud prices split.",
+      "title": "The GPU Pricing Fracture",
+      "bytes": 1247409,
+      "sha256": "sha256:26cb15977d7d8831d84cee10240879d355579dc339d8c4c2dbafc44a831aca22"
     }
   ],
-  "style": "studio_object",
-  "style_label": "Studio product shot",
-  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "2K",
-  "prompt": "Studio product photograph of a single, massive unbranded heavy-duty GPU compute module resting on a dark, textured slate surface. Off-centre asymmetrical composition with heavy editorial negative space on the left. Shot with a 100mm telephoto lens, sharp focal plane on the brushed aluminum heatsink fins and matte black polymer shroud. A single softbox key light from the upper right casts a long, dramatic contact shadow across the slate. Rich chiaroscuro, catalogue clarity, muted sophisticated palette, deep ambient shadows, no text or printed lettering.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, branding, watermarks, people, faces, hands",
-  "rationale": "The story revolves around the literal cost of a physical piece of hardware (the local AI rig/GPU) that teams buy, making a studio product shot the ideal treatment to emphasize its sudden premium status and tangible weight.",
-  "cue": "The graphics processing unit",
-  "subject": "an unbranded heavy-duty GPU compute module",
-  "composition": "off-centre asymmetry with heavy negative space",
-  "alt_text": "An unbranded heavy-duty GPU compute module resting on a dark textured slate surface under dramatic studio lighting.",
-  "caption": "The decision to buy local AI hardware now hinges on navigating surging memory costs and wildly diverging cloud rental rates.",
-  "title": "GPU Compute Module Studio",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered concrete surface. A central heavy anodized aluminum compute housing splitting into three distinct interlocking modular rack bays of varying heights. Positioned asymmetrically on the right third of the frame with generous negative space to the left. The engineered parts feature hard clean edges, matte surfaces, and frosted copper connectors. One strong directional key light throws long, deep cast shadows across the concrete. Muted industrial color palette, highly tactile materials. No bare geometry, no molded lettering.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, labels, ui, graphic overlays",
+  "rationale": "This treatment perfectly captures the structural logic of a single system splitting into three distinct economic pathways, using tangible modular hardware to represent the market divergence without resorting to literal data centers.",
+  "cue": "a roughly three-times provider spread",
+  "subject": "a central compute housing splitting into three interlocking modular bays",
+  "composition": "extreme asymmetry on the right third",
+  "alt_text": "The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Payback Split",
+  "caption": "The GPU Pricing Fracture: Build-vs-rent math breaks as local and cloud prices split.",
+  "title": "The GPU Pricing Fracture",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 662880,
-  "sha256": "sha256:249234660f44ef1982bbb8d3e7e8217d",
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1248202,
+  "sha256": "sha256:2516550b1c8fabf91a4391efc737ee6fb09a2d799932c5c12dc52f13b3613002",
   "source_hash": "sha256:8c8392064556ded9b22eb938bb5b56a8",
   "source_chars": 4906,
-  "task_id": "4179da1bb26005a6146555dcaaac5d96",
-  "credits": 7.0,
-  "cost_ms": 21,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/4179da1bb26005a6146555dcaaac5d96_1791501439828.jpg",
+  "task_id": "7c84cf3c1e1c4cf1addff6c42bdf7c0a",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d066e33ba5ef8f4dc15757181dbdf9a1.png",
   "provider_request": {
-    "model": "flux-2/pro-text-to-image",
+    "model": "nano-banana-pro",
     "input": {
-      "prompt": "Studio product photograph of a single, massive unbranded heavy-duty GPU compute module resting on a dark, textured slate surface. Off-centre asymmetrical composition with heavy editorial negative space on the left. Shot with a 100mm telephoto lens, sharp focal plane on the brushed aluminum heatsink fins and matte black polymer shroud. A single softbox key light from the upper right casts a long, dramatic contact shadow across the slate. Rich chiaroscuro, catalogue clarity, muted sophisticated palette, deep ambient shadows, no text or printed lettering.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered concrete surface. A central heavy anodized aluminum compute housing splitting into three distinct interlocking modular rack bays of varying heights. Positioned asymmetrically on the right third of the frame with generous negative space to the left. The engineered parts feature hard clean edges, matte surfaces, and frosted copper connectors. One strong directional key light throws long, deep cast shadows across the concrete. Muted industrial color palette, highly tactile materials. No bare geometry, no molded lettering.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "2K"
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T23:17:25+00:00"
+  "generated_at": "2026-10-09T00:37:32+00:00",
+  "overlay": {
+    "kicker": "AI COMPUTE // GPU ECONOMICS",
+    "title": "THE GPU PRICING FRACTURE",
+    "hook": "Build-vs-rent math breaks as local and cloud prices split",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.25,
+    "target": 5.5,
+    "clutter": 0.401,
+    "region_rgb": [
+      139,
+      134,
+      124
+    ],
+    "binding_rgb": [
+      188,
+      182,
+      170
+    ],
+    "title_lines": [
+      "THE GPU PRICING",
+      "FRACTURE"
+    ]
+  }
 }

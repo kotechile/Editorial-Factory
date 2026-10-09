@@ -10,10 +10,10 @@ meta_title_source: "derived_from_title"
 meta_description: "At 10:03 Coordinated Universal Time (UTC) on 29 September 2026, Azure OpenAI Service broke in Sweden Central. It stayed down for six hours."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.png"
-image_style: "clay_render"
+image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Three server blade housings routing cables into one central matte clay control module on brushed steel."
-image_caption: "When multiple cloud regions share a single network gateway, the primary benefit of distributed redundancy is lost."
+image_alt: "Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. The Azure"
+image_caption: "Azure Control Plane Outages: Why multi-region setups fail when control planes break."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

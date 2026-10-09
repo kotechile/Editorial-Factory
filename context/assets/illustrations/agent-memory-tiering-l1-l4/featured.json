@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-tiering-l1-l4",
-  "revision": 4,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -31,51 +31,152 @@
       "sha256": "sha256:5b2a0203a2b33cd97ff2fbf2b4c2822f",
       "generated_at": "2026-10-08T22:37:59+00:00",
       "source_hash": "sha256:730b650c93e2601af1c068b669444a87"
+    },
+    {
+      "revision": 4,
+      "style": "clay_render",
+      "model": "nano-banana-pro",
+      "prompt": "Matte clay 3D render of a small multi-tiered mechanical memory assembly resting on a weathered concrete surface. The structure features three distinct vertical layers: a wide shallow top working tray, a middle routing bay with visible connector ridges, and a heavy foundational storage block with closed latches. Asymmetric three-quarter angle composition positioned off-centre to the right, leaving generous negative editorial space on the left. The recognizable engineered parts are rendered in matte muted polymer and dark brushed steel tones with visible moulding seams. A single directional key light rakes across the assembly from the top left, throwing a deep, long cast shadow across the concrete.",
+      "task_id": "8cbe7a3511d01b55ebc91f3d3e7fc13d",
+      "sha256": "sha256:ead63a245e0f45177ed54094bf10cb3b",
+      "generated_at": "2026-10-08T23:11:10+00:00",
+      "source_hash": "sha256:730b650c93e2601af1c068b669444a87"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Multi-tiered mechanical sorting assembly with distinct storage levels on a clean drafting surface.",
+      "caption": "Agents running long-horizon tasks require structured memory tiers rather than a single massive context window.",
+      "title": "AI-Tiered-State-Isometric",
+      "bytes": 1952028,
+      "sha256": "sha256:acc0766b835a8a3c312178d223dd6368"
+    },
+    {
+      "revision": 6,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetrical layout with generous negative space off-centre on the right. A multi-tiered mechanical sorting assembly resting on a drafting table surface. The top tier features an open, unlatched workspace tray, while lower levels consist of structured, locked filing modules and distinct rack bays. Matte muted palette with one warm amber accent color on the lowest secure tier. Thin consistent line weight, visible physical depth, one directional soft light casting an angled shadow.",
+      "task_id": "9ef674ef09b142b6ec31dd749a37db67",
+      "sha256": "sha256:1b8b2d20ca54476f67116b5cc95cced19f244c5d8b3cc2029c032719331651bb",
+      "generated_at": "2026-10-09T00:22:14+00:00",
+      "source_hash": "sha256:730b650c93e2601af1c068b669444a87"
+    },
+    {
+      "revision": 7,
+      "alt_text": "A modular mechanical assembly with three distinct stacked tiers resting on brushed steel.",
+      "caption": "Long-horizon AI agents rely on a structured, tiered memory architecture rather than a single flat context window.",
+      "title": "Tiered AI Memory Stack",
+      "bytes": 1903811,
+      "sha256": "sha256:cdfc66b8575276308a9120c86aed639c"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Long Context Is Not Memory. A modular mechanical assembly with three distinct stacked tiers resting on brushed steel.",
+      "caption": "Long Context Is Not Memory: Why large context windows cannot replace tiered memory.",
+      "title": "Long Context Is Not Memory",
+      "bytes": 1441436,
+      "sha256": "sha256:03e2b8461838fb31ee136eddf42c14f50a0ded24550ab075cfabadeb0e6f99dc"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Long Context Is Not Memory. Long Context Is Not Memory. A modular mechanical assembly with three distinct stacked tiers resti",
+      "caption": "Long Context Is Not Memory: Why giant context windows fail at long-horizon tasks.",
+      "title": "Long Context Is Not Memory",
+      "bytes": 1443099,
+      "sha256": "sha256:e0a879f19569e88d5902b3843af318fb5633ab438c58cc5370da4416487a2fe1"
+    },
+    {
+      "revision": 10,
+      "alt_text": "Tiered State For AI Agents. Long Context Is Not Memory. Long Context Is Not Memory. A modular mechanical assembly with three ",
+      "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
+      "title": "Tiered State For AI Agents",
+      "bytes": 1437675,
+      "sha256": "sha256:35eb608313870137811af45fdd2121d72bbf0f5ed2f6862f001fa974a5a8b1a4"
+    },
+    {
+      "revision": 11,
+      "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Long Context Is Not Memory. Long Context Is Not Memory. A modular mec",
+      "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
+      "title": "Tiered State For AI Agents",
+      "bytes": 1438497,
+      "sha256": "sha256:7017c9f91ecb984135e21cb7a972b789cc18e510da6ef17de9cde0c81a32f6c0"
+    },
+    {
+      "revision": 12,
+      "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context Is Not Memory. Long Context ",
+      "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
+      "title": "Tiered State For AI Agents",
+      "bytes": 1438497,
+      "sha256": "sha256:7017c9f91ecb984135e21cb7a972b789cc18e510da6ef17de9cde0c81a32f6c0"
     }
   ],
-  "style": "clay_render",
-  "style_label": "Matte 3D render",
-  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Matte clay 3D render of a small multi-tiered mechanical memory assembly resting on a weathered concrete surface. The structure features three distinct vertical layers: a wide shallow top working tray, a middle routing bay with visible connector ridges, and a heavy foundational storage block with closed latches. Asymmetric three-quarter angle composition positioned off-centre to the right, leaving generous negative editorial space on the left. The recognizable engineered parts are rendered in matte muted polymer and dark brushed steel tones with visible moulding seams. A single directional key light rakes across the assembly from the top left, throwing a deep, long cast shadow across the concrete.",
-  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, labels, UI",
-  "rationale": "A matte clay 3D render is ideal for abstract structural concepts, allowing us to visualize software memory tiers as a tangible, layered mechanical assembly.",
-  "cue": "workspace, not a hard drive",
-  "subject": "A multi-tiered mechanical memory assembly with distinct modular bays",
-  "composition": "Asymmetric three-quarter tiered arrangement",
-  "alt_text": "A tiered mechanical assembly with multiple distinct modular bays resting on a concrete surface.",
-  "caption": "Effective AI agents require structured, multi-tiered memory systems rather than relying on a single sprawling context window.",
-  "title": "Tiered AI Memory Structure",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a real brushed steel surface. An asymmetrical arrangement with the hero stack off-centre on the right third, leaving generous negative space on the left. The structure features three distinct, stacked tiers made of matte textured polymer and frosted copper: a wide upper inspection tray feeding down into two secured, latched storage bays. A single directional key light throws a long, hard cast shadow across the weathered steel. Muted modern editorial palette, clean hard edges, no text or embossed lettering.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, logos, watermarks, humans, faces",
+  "rationale": "This treatment visualizes the 'tiered state' and 'layered setup' concepts as a physical, modular stack, emphasizing the structural design choice required for AI memory without resorting to literal server racks.",
+  "cue": "layered setup is cheaper",
+  "subject": "a modular mechanical assembly with distinct stacked tiers",
+  "composition": "extreme asymmetry, the hero stack off-centre on the right third",
+  "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context ",
+  "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
+  "title": "Tiered State For AI Agents",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 3,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.png",
   "local_path": "context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 2032440,
-  "sha256": "sha256:ead63a245e0f45177ed54094bf10cb3b",
+  "bytes": 1438497,
+  "sha256": "sha256:7017c9f91ecb984135e21cb7a972b789cc18e510da6ef17de9cde0c81a32f6c0",
   "source_hash": "sha256:730b650c93e2601af1c068b669444a87",
   "source_chars": 3727,
-  "task_id": "8cbe7a3511d01b55ebc91f3d3e7fc13d",
+  "task_id": "63f7374b1327064dd42c42563cf123ef",
   "credits": 18.0,
-  "cost_ms": 25,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_07879ca4117e014b031f64df490c5690.png",
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6eb384c027a0ce856af0fdc092f00244.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Matte clay 3D render of a small multi-tiered mechanical memory assembly resting on a weathered concrete surface. The structure features three distinct vertical layers: a wide shallow top working tray, a middle routing bay with visible connector ridges, and a heavy foundational storage block with closed latches. Asymmetric three-quarter angle composition positioned off-centre to the right, leaving generous negative editorial space on the left. The recognizable engineered parts are rendered in matte muted polymer and dark brushed steel tones with visible moulding seams. A single directional key light rakes across the assembly from the top left, throwing a deep, long cast shadow across the concrete.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a real brushed steel surface. An asymmetrical arrangement with the hero stack off-centre on the right third, leaving generous negative space on the left. The structure features three distinct, stacked tiers made of matte textured polymer and frosted copper: a wide upper inspection tray feeding down into two secured, latched storage bays. A single directional key light throws a long, hard cast shadow across the weathered steel. Muted modern editorial palette, clean hard edges, no text or embossed lettering.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T23:11:10+00:00"
+  "generated_at": "2026-10-09T00:45:38+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // TIERED MEMORY",
+    "title": "TIERED STATE FOR AI AGENTS",
+    "hook": "Why long context fails and agents require tiered memory",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.42,
+    "target": 4.5,
+    "clutter": 0.07,
+    "region_rgb": [
+      47,
+      52,
+      54
+    ],
+    "binding_rgb": [
+      55,
+      58,
+      63
+    ],
+    "title_lines": [
+      "TIERED STATE",
+      "FOR AI AGENTS"
+    ]
+  }
 }

@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "A modular server rack assembly with an interlocking inspection gate resting on brushed steel."
-image_caption: "Enterprise leaders are moving AI agent rules from static paper into live runtime enforcement layers."
+image_alt: "Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. The AI Agent Blin"
+image_caption: "Stolen Machine Identities: Non-human identities are the top way hackers breach firms."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

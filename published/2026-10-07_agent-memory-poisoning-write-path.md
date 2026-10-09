@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-memory-poisoning-write-path/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Obsidian architectural vault divided by a razor-thin blade of golden light."
-image_caption: "The most critical security boundary for AI agents lies at the memory storage layer."
+image_alt: "Agent Memory Poisoning: Guard the write path — not the prompt. Monolithic vault divided by a razor-thin blade of light."
+image_caption: "Agent memory poisoning: Guard the write path — not the prompt."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

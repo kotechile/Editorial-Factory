@@ -1,6 +1,6 @@
 {
   "slug": "azure-control-plane-single-point-of-failure",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -11,51 +11,126 @@
       "sha256": "sha256:d82b7de79d19e9bce9eb6b99d7dc5348",
       "generated_at": "2026-10-06T11:41:07+00:00",
       "source_hash": "sha256:e3c8b2ea037bdb85bc873a17d681f24c"
+    },
+    {
+      "revision": 2,
+      "style": "clay_render",
+      "model": "nano-banana-pro",
+      "prompt": "Matte clay 3D render of a small mechanical network assembly resting on a weathered brushed steel surface. Three distinct server blade housings are connected by thick physical routing cables into one central, unified control module. The central module acts as a structural bottleneck in the arrangement. Matte muted teal and slate grey palette. Visible moulding seams and soft contact shadows. One directional key light raking across the assembly from the left, casting deep shadows into the generous empty right margin. Asymmetric composition, no text.",
+      "task_id": "9ecc86372106b0a2ce7a90b028e7abb2",
+      "sha256": "sha256:0c3e7142e1572b95cb9a8999ac86436a",
+      "generated_at": "2026-10-08T23:18:37+00:00",
+      "source_hash": "sha256:e3c8b2ea037bdb85bc873a17d681f24c"
+    },
+    {
+      "revision": 3,
+      "alt_text": "An isometric drawing of multiple independent server bays connected to one central node.",
+      "caption": "When independent regions rely on a shared control plane, a single update can cascade across the entire network.",
+      "title": "Azure Outage Control Plane Bottleneck",
+      "bytes": 2330267,
+      "sha256": "sha256:14e3ff1a3b19e0573585cd6c0a044b7f"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Azure Control Plane Flaw. An isometric drawing of multiple independent server bays connected to one central node.",
+      "caption": "The Azure Control Plane Flaw: Why multi-region cloud fails against shared outages.",
+      "title": "The Azure Control Plane Flaw",
+      "bytes": 1810009,
+      "sha256": "sha256:d47c2abe0e9003373856123bf0359a1b57da0479f3d67b6274b355b6d8343cd5"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Azure Control Plane Outages. The Azure Control Plane Flaw. An isometric drawing of multiple independent server bays connected",
+      "caption": "Azure Control Plane Outages: Why multi-region setups fail when control planes break.",
+      "title": "Azure Control Plane Outages",
+      "bytes": 1810835,
+      "sha256": "sha256:d5c3693db9c3bfb92aefdc6de449947d2d7aa19a9f58c1fc6d98fa4cedcf26b1"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Azure Control Plane Outages. Azure Control Plane Outages. The Azure Control Plane Flaw. An isometric drawing of multiple inde",
+      "caption": "Azure Control Plane Outages: Why multi-region setups fail when control planes break.",
+      "title": "Azure Control Plane Outages",
+      "bytes": 1800469,
+      "sha256": "sha256:f6772ae2f9ce42c306c3eb17e8b550563ac4bdb0ef3d73fc904998df77d9c8c0"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. The Azure Control Plane Flaw. An isome",
+      "caption": "Azure Control Plane Outages: Why multi-region setups fail when control planes break.",
+      "title": "Azure Control Plane Outages",
+      "bytes": 1803900,
+      "sha256": "sha256:b6c56961e651526f07e384f3f3fd821565e7e217b934e21ac23e43c535fce2e5"
     }
   ],
-  "style": "clay_render",
-  "style_label": "Matte 3D render",
-  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Matte clay 3D render of a small mechanical network assembly resting on a weathered brushed steel surface. Three distinct server blade housings are connected by thick physical routing cables into one central, unified control module. The central module acts as a structural bottleneck in the arrangement. Matte muted teal and slate grey palette. Visible moulding seams and soft contact shadows. One directional key light raking across the assembly from the left, casting deep shadows into the generous empty right margin. Asymmetric composition, no text.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, logo",
-  "rationale": "The story describes an abstract architectural flaw in network routing rather than a single photographable event. A matte clay render distills this systemic flaw into a clean, tangible mechanical assembly, illustrating the convergence into a single vulnerability without unnecessary visual noise.",
-  "cue": "broken piece was shared",
-  "subject": "multiple server blade housings routing into one centralized control module",
-  "composition": "asymmetric wide framing",
-  "alt_text": "Three server blade housings routing cables into one central matte clay control module on brushed steel.",
-  "caption": "When multiple cloud regions share a single network gateway, the primary benefit of distributed redundancy is lost.",
-  "title": "Cloud Shared Control Plane Architecture",
+  "prompt": "clean isometric cutaway illustration of independent modular routing bays connected to a single central control node, technical drawing style, axonometric projection, flat muted palette with one amber accent colour highlighting the central node, thin consistent line weight, laid over a matte concrete drafting surface, recognisable hardware racks and connectors with visible depth, one directional light casting long shadows, unlabelled, generous empty margin, the central assembly off-centre in the frame",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermarks, logos, typography, branding",
+  "rationale": "The story involves the architectural structure of cloud services, specifically how a shared component across independent regions creates a bottleneck. A technical isometric cutaway perfectly visualizes this systemic structural flaw.",
+  "cue": "shared network tool",
+  "subject": "an isometric cutaway of independent routing bays bridged by a single central node",
+  "composition": "generous negative space, hero off-centre",
+  "alt_text": "Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. The Azure",
+  "caption": "Azure Control Plane Outages: Why multi-region setups fail when control planes break.",
+  "title": "Azure Control Plane Outages",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 3,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.png",
   "local_path": "context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1765811,
-  "sha256": "sha256:0c3e7142e1572b95cb9a8999ac86436a",
+  "bytes": 1804835,
+  "sha256": "sha256:b99f680c1c174116ab06c7bcd839cc2b203b7d1e8fd81b4e39b8be56c90e78f3",
   "source_hash": "sha256:e3c8b2ea037bdb85bc873a17d681f24c",
   "source_chars": 4298,
-  "task_id": "9ecc86372106b0a2ce7a90b028e7abb2",
+  "task_id": "b2c37f0159999bba5ce233e07b3e4d77",
   "credits": 18.0,
   "cost_ms": 23,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ff9bb163fee445249d261cb78ae310b9.png",
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e376a84a75ca5f2ab7f7a33536e2b965.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Matte clay 3D render of a small mechanical network assembly resting on a weathered brushed steel surface. Three distinct server blade housings are connected by thick physical routing cables into one central, unified control module. The central module acts as a structural bottleneck in the arrangement. Matte muted teal and slate grey palette. Visible moulding seams and soft contact shadows. One directional key light raking across the assembly from the left, casting deep shadows into the generous empty right margin. Asymmetric composition, no text.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "clean isometric cutaway illustration of independent modular routing bays connected to a single central control node, technical drawing style, axonometric projection, flat muted palette with one amber accent colour highlighting the central node, thin consistent line weight, laid over a matte concrete drafting surface, recognisable hardware racks and connectors with visible depth, one directional light casting long shadows, unlabelled, generous empty margin, the central assembly off-centre in the frame\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T23:18:37+00:00"
+  "generated_at": "2026-10-09T00:36:33+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE CLOUD // CONTROL PLANES",
+    "title": "AZURE CONTROL PLANE OUTAGES",
+    "hook": "Why multi-region setups fail when control planes break",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 90,
+    "contrast": 5.95,
+    "target": 5.5,
+    "clutter": 0.354,
+    "region_rgb": [
+      143,
+      144,
+      137
+    ],
+    "binding_rgb": [
+      76,
+      89,
+      95
+    ],
+    "title_lines": [
+      "AZURE CONTROL",
+      "PLANE OUTAGES"
+    ]
+  }
 }

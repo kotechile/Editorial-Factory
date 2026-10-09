@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "The best tool-using Artificial Intelligence (AI) agents fail more than half the time, but normal testing hides the flaws."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-reliability-pass-k-not-one-green-run/featured.png"
-image_style: "technical_isometric"
+image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Isometric cutaway of a logic routing bay with a central validation gate and blocked retry loops."
-image_caption: "Repeat-trial testing exposes structural flaws in agent design that a single lucky run hides."
+image_alt: "The Repeat Trial Gate. A sequential row of three modular inspection gates on a brushed steel surface, with a block passing th"
+image_caption: "The Repeat Trial Gate: Why one successful run is not enough for an AI agent."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
