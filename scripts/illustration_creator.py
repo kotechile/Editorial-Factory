@@ -232,7 +232,7 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         when="the article describes one decisive moment or place — a yard at dawn, a control room, "
              "a shutdown line, a handover — that a film still could hold",
         medium="cinematic film still, anamorphic 35mm look, wide establishing composition",
-        craft="single strong practical light source, deep atmospheric haze, restrained teal-and-amber "
+        craft="single strong practical light source, crisp atmospheric depth, restrained teal-and-amber "
               "palette, no people facing camera, motion implied rather than shown",
         keywords=("cinematic", "film still", "anamorphic", "35mm", "establishing"),
         model="flux"),
@@ -302,8 +302,8 @@ STYLES: dict[str, Style] = {s.id: s for s in [
         when="scale is the story — a port, a refinery, a data centre hall, a rail yard, a skyline of "
              "cranes — and the reader needs to feel how big it is",
         medium="telephoto compression, 200mm long-lens view of industrial infrastructure",
-        craft="stacked overlapping layers of structure receding into haze, flat compressed "
-              "perspective, overcast light, cool desaturated palette, no people in the foreground",
+        craft="stacked overlapping layers of structure with crystal-clear telephoto distance clarity, flat compressed "
+              "perspective, sharp directional lighting and deep industrial contrast, no people in the foreground, no fog or haze",
         keywords=("telephoto", "long lens", "long-lens", "compressed", "200mm"),
         model="flux"),
     Style(
@@ -457,6 +457,8 @@ class Brief:
     depicts_real_brand: bool
     main_idea: str = ""
     object_or_scene: str = ""
+    core_thesis: str = ""
+    core_conflict: str = ""
     director: str = GEMINI_MODEL
     attempts: int = 1
     pinned: dict = field(default_factory=dict)
@@ -653,6 +655,8 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
 
     main_idea = re.sub(r"\s+", " ", str(raw.get("main_idea") or "")).strip()
     object_or_scene = re.sub(r"\s+", " ", str(raw.get("object_or_scene") or "")).strip()
+    core_thesis = re.sub(r"\s+", " ", str(raw.get("core_thesis") or "")).strip()
+    core_conflict = re.sub(r"\s+", " ", str(raw.get("core_conflict") or "")).strip()
 
     return Brief(
         style_id=style_id, rationale=rationale, cue=cue,
@@ -660,6 +664,7 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
         model=model, prompt=prompt, negative_prompt=negative, aspect_ratio=aspect,
         resolution=resolution, alt_text=alt, caption=caption, title=title, credit=credit,
         depicts_real_brand=False, main_idea=main_idea, object_or_scene=object_or_scene,
+        core_thesis=core_thesis, core_conflict=core_conflict,
         model_note=model_note)
 
 
@@ -766,10 +771,12 @@ The header image is the first promise to the reader — the front door to the ho
 
 You MUST execute this 4-step creative method:
 
-STEP 1: READ THE SUBSTANTIVE ARTICLE & EXTRACT THE MAIN IDEA
+STEP 1: ANCHOR ON THE CORE THESIS ('ONE BIG THING') & EXTRACT THE GOVERNING CONFLICT
 Do NOT just read the headline. Read the ARTICLE SUBSTANTIVE CONTENT below carefully.
+- The hero subject MUST visually embody `One big thing: {fm.get('one_big_thing', '')}` — the single non-negotiable revelation and central assertion of the article.
+- BEWARE THE PERIPHERAL ANECDOTE TRAP: Articles frequently use minor examples, supporting anecdotes, or incidental props (e.g., a screw, a delivery van, a specific chip model, a pallet of scrap, a coffee cup, packaging tape) to illustrate an abstract concept. NEVER elevate an incidental anecdote into the hero subject! The hero subject must represent the GOVERNING MECHANISM or SYSTEMIC TENSION that drives the entire piece (e.g. formula error inflating safety stock vs actual demand variance, memory write-path persistence bypassing prompt guardrails, rising capital cost vs automation ROI).
 Identify the central tension, turning point, or real-world stake. What is the core dramatic conflict or economic pressure of this story? If two forces collide, compress, or trade off against each other (e.g. rising capital costs vs automation payoff, cloud monopoly vs open weights, memory bottlenecks throttling GPU compute), identify them.
-(State this in your `main_idea` field).
+(State this in your `core_thesis`, `core_conflict`, and `main_idea` fields).
 
 STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE (CONCEPTUAL & SYMBOLIC STORYTELLING)
 Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea without being literal or pedestrian.
@@ -778,7 +785,7 @@ Where applicable, embody the core conflict through physical tension: a central o
 - CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES GROUNDED IN THE ARTICLE'S VERTICAL:
   Inspect `Vertical: {fm.get('vertical', '')}` and the article's core thesis. Verticals across the desk: enterprise AI, supply chain, energy / utilities, heavy industry, finance / tax, residential / home, career / compensation, personal tech / tinkering, cross-border living.
   * For enterprise AI / software / compute / finops: Do NOT draw a datacenter or server rack! Use conceptual, symbolic visual storytelling — an optical prism refracting a single ray of warm light across dark obsidian stone, monolithic stone slabs in precarious balance in morning mist, an intricate brass pendulum suspended in atmospheric haze, or clean architectural light-and-shadow divides.
-  * For supply chain / logistics / warehousing / freight: An evocative scene capturing balance, capacity, or flow — towering cargo structures receding into atmospheric fog, an intermodal gantry silhouetted against twilight, or an authentic staging floor with dramatic directional lighting.
+  * For supply chain / logistics / warehousing / freight: An evocative scene capturing balance, capacity, or flow with crystal-clear air and high-contrast lighting — towering cargo structures under hard raking sunlight, an intermodal gantry silhouetted against twilight, or an authentic staging floor with dramatic directional lighting and deep contact shadows. Do NOT drown the scene in grey fog, murky haze, or overcast washouts.
   * For energy / utilities / infrastructure / climate: High-voltage transformer substations, utility-scale battery storage banks, industrial copper busbars, or wind/solar installations under dramatic skies.
   * For heavy industry / manufacturing / hardware: Precision CNC machining spindles throwing aluminum chips, glowing induction heating coils, robotic welding arms, or electronic PCB assembly benches.
   * For finance / tax / governance / legal: Forensic audit desks with heavy leather ledgers under focused desk lamps, embossed legal documents, brass balance scales, or vintage bank vault doors.
@@ -799,7 +806,7 @@ STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
 Write a prompt (15-120 words) with rich sensory and visual details. Aim for clarity, balance, and a visually arresting sense of curiosity that draws readers in:
 - Landscape composition (16:9): wide framing with generous editorial negative space and deliberate breathing room, an ASYMMETRIC composition where the hero subject commands the frame off-centre with heavy editorial framing (like cover art, but strictly without any text or typography).
 - Camera angle & optics: name a real optic and its falloff explicitly — 35mm anamorphic wide with dramatic falloff, 100mm macro at a razor-sharp focal plane, 200mm telephoto compression, low-angle perspective — and the depth of field it produces.
-- Lighting & atmosphere: sculpt the scene with intentional light — chiaroscuro, a single directional window light, low-raking golden-hour sun, blue-hour twilight with warm amber worklights, deep shadows, prominent rim highlights on metallic edges, cinematic volumetric haze, soft gradients.
+- Lighting & atmosphere: sculpt the scene with intentional light — chiaroscuro, a single directional window light, low-raking golden-hour sun, blue-hour twilight with warm amber worklights, deep shadows, prominent rim highlights on metallic edges, crisp crystalline air, clean high-contrast atmosphere, soft gradients.
 - Textures & materials: brushed metals, weathered corrugated steel, frosted copper tubing, dusty workshop glass, textured matte polymers, tactile paper stock, polished basalt, or optical glass.
 - Mood: modern, premium, editorial cover standard. Quiet confidence, refined aesthetics, sophisticated color palette. Never chaotic, overly busy, or pedestrian.
 
@@ -865,12 +872,14 @@ sentence a reader could quote. The credit is e.g. \
 "Illustration: Editorial-Factory Intelligence Unit".
 
 Return ONLY a JSON object, no markdown fence, with exactly these keys:
-{{"main_idea": "1-2 sentences: the core tension, conflict, or revelation extracted from reading the substantive article body",
- "object_or_scene": "the specific hero object or narrative scene chosen to represent that idea, and why it visually tells the story without being boring",
+{{"core_thesis": "1 sentence: the central assertion and insight from 'one_big_thing' that this image communicates",
+ "core_conflict": "the governing systemic or economic tension (e.g. write-path persistence vs prompt filters, formula miss vs buffer scale)",
+ "main_idea": "1-2 sentences: the core tension, conflict, or revelation extracted from reading the substantive article body",
+ "object_or_scene": "the specific hero object or narrative scene chosen to represent the core thesis, capturing the governing mechanism rather than an incidental anecdote",
  "style_id": one of {list(allowed)},
  "rationale": "2-3 sentences: why this treatment for this story",
- "cue": "a phrase of 2-10 words copied verbatim from the article above",
- "subject": "the physical thing in the frame, one clause — never a bare shape",
+ "cue": "a phrase of 2-10 words copied verbatim from the article above (strongly prefer quoting the headline, lead, or 'one_big_thing')",
+ "subject": "the physical thing in the frame, one clause — representing the governing mechanism, never an incidental anecdote, never a bare shape",
  "composition": "the framing rule that anchors the layout (>=12 chars) — extreme asymmetry, low-angle with scale contrast, symmetrical top-down; the layout is your direction, not the model's choice",
  "model": "{' or '.join(sorted(MODELS))}",
  "model_override_reason": "required only if you deviate from the catalogue model, else omit",
@@ -1230,6 +1239,7 @@ def store(slug: str, generation: Generation, brief: Brief, md: str, *,
         "aspect_ratio": brief.aspect_ratio, "resolution": brief.resolution,
         "prompt": brief.prompt, "negative_prompt": brief.negative_prompt,
         "rationale": brief.rationale, "cue": brief.cue, "subject": brief.subject,
+        "core_thesis": brief.core_thesis, "core_conflict": brief.core_conflict,
         "composition": brief.composition,
         "alt_text": brief.alt_text, "caption": brief.caption, "title": brief.title,
         "credit": brief.credit, "depicts_real_brand": brief.depicts_real_brand,
