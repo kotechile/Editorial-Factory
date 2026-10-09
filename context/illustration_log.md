@@ -172,3 +172,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-09 | `cloud-repatriation-break-even` | enterprise_tech_leadership | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/cloud-repatriation-break-even/featured.png` |
 | 2026-10-09 | `your-ev-is-now-a-home-battery-behind-a-paywall` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg` |
 | 2026-10-09 | `staggered-lockup-six-selling-decisions` | career_velocity_equity_engineering | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/staggered-lockup-six-selling-decisions/featured.jpg` |
+| 2026-10-09 | `diesel-620-electric-freight-certificate-gap` | last_mile_routing_fleet_carbon | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/diesel-620-electric-freight-certificate-gap/featured.png` |

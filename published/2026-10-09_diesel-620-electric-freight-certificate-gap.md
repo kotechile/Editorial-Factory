@@ -13,6 +13,12 @@ meta_title: "Diesel Hits $6.20: Why Shippers Still Pay Extra for…"
 meta_title_source: "derived_from_title"
 meta_description: "U.S. on-highway diesel fell to $6.199 a gallon the week of Oct. 5, dropping 33 cents in two weeks."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/diesel-620-electric-freight-certificate-gap/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Electric freight charging bay built on top of a layered financial ledger in an isometric cutaway."
+image_caption: "Shippers are bridging the electric freight cost gap not with fuel savings, but with carbon certificates."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
