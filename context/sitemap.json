@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T11:07:06Z",
+  "updated_at": "2026-10-09T11:36:12Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1075,6 +1075,24 @@
       "date": "2026-10-08",
       "public": true,
       "url": "https://giniloh.com/token-price-record-low-budget-overrun/"
+    },
+    {
+      "slug": "2026-10-09_diesel-620-electric-freight-certificate-gap",
+      "title": "Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-09",
+      "public": false
     },
     {
       "slug": "2026-10-09_staggered-lockup-six-selling-decisions",
