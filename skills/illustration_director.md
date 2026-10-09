@@ -13,10 +13,7 @@ failure it prevents is an image that is *wrong* in a waay that costs — legible
 into the pixels, a real company's mark, a stock-photo cliché, alt text a screen reader cannot use.
 The third failure is **boring, sterile images**: generic server blades, blank modular cubes, or unlatched
 gates on flat backgrounds that lack soul, drama, and narrative weight.
-The fourth failure is **unrelated, obscure micro-metaphors**: inventing a contrived multi-step intellectual
-metaphor (such as depicting an abstract formula error, software queue miss, or financial variance as a random
-isolated widget, screw, or CNC scrap block on a table) and zooming in with a macro lens. The result completely
-destroys narrative context: the reader sees unidentifiable shop scrap instead of the actual operational domain.
+
 Editorial imagery must have **instantly readable domain semiotics** anchored directly in the article's own vertical.
 
 ### The 4-Step Creative Process (The Art Director Standard: Conceptual, Arresting, Non-Literal)
@@ -38,18 +35,69 @@ Core principles:
 The art director may only choose from the catalogue; it is stated to the director verbatim, and
 every brief that names a treatment without the vocabulary of that treatment is refused.
 
-| Treatment | Reach for it when | Catalogue model |
-| --- | --- | --- |
-| `editorial_macro` | the story turns on one physical thing — a part, a material, a component, a document — and what it costs, contains or crosses a border is the news | flux-2 Pro |
-| `cinematic_still` | the article holds one decisive moment or place (a yard at dawn, a control room, a shutdown line) | flux-2 Pro |
-| `document_flatlay` | the story is regulatory or contractual — a filing, a mandate, a rate notice, a purchase order | flux-2 Pro |
-| `clay_render` | the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and the idea is stated as a small assembly of recognisable parts | Nano Banana Pro |
-| `technical_isometric` | the article explains how a system or process actually works (money flows, supply chains, an agent assembly line) | Nano Banana Pro |
-| `component_assembly` | the story is a single number, rule, gate or shift and there is no scene to photograph — the frame is a real assembly (a modular bay, an unlatched inspection gate, a rack of blades) | Nano Banana Pro |
-| `paper_collage` | the piece is a synthesis of two colliding developments and the collision is the story | Nano Banana Pro |
-| `long_lens_industry` | scale is the story — a port, a refinery, a data-centre hall, a yard full of cranes | flux-2 Pro |
-| `studio_object` | the story is a product, device, price or market for a thing the reader could buy | flux-2 Pro |
-| `architectural_night` | the change happens after hours — automation displacing shifts, capacity running while people sleep | flux-2 Pro |
+## Visual Treatment Catalogue & Selection Rules
+
+When selecting an image treatment for an article or story, choose from the following catalogue based on the narrative trigger. Always route generation to the specified catalogue model (`flux-2 Pro` or `Nano Banana Pro`) and apply the corresponding prompt style formula.
+
+### 1. Editorial Macro (`flux-2 Pro`)
+- **Reach for it when:** The story turns on one physical thing (a rare mineral, a microchip, a forged seal) where detail, texture, and scale convey economic or geopolitical stakes.
+- **Prompt Formula:** [Subject] captured in extreme macro, hyper-detailed surface texture, dramatic chiaroscuro side-lighting casting deep shadows, shallow depth of field, tactile realism, moody editorial magazine style.
+
+### 2. Cinematic Still (`flux-2 Pro`)
+- **Reach for it when:** The article holds one decisive, tense moment or place (a yard at dawn, a control room console, a shutdown line) charged with human presence or imminent transition.
+- **Prompt Formula:** [Location/Scene] at twilight, anamorphic lens flare, moody desaturated palette with a single vivid neon accent, volumetric fog, wide cinematic 2.39:1 framing, photographic realism.
+
+### 3. Document Flatlay (`flux-2 Pro`)
+- **Reach for it when:** The story is regulatory or contractual (a classified filing, a signed mandate, an emergency rate notice) requiring clean intellectual authority.
+- **Prompt Formula:** [Documents/Artifacts] arranged in precise geometric flat-lay on dark brushed slate, crisp overhead studio lighting, sharp typographic contrast, minimal modernist editorial layout.
+
+### 4. Clay Render (`Nano Banana Pro`)
+- **Reach for it when:** The news is structural and abstract (a market reordered, a supply layer added, a data flow rerouted) and needs to be visualized as a tangible physical model.
+- **Prompt Formula:** Minimalist matte-clay architectural model of [System/Process], soft pastel gradients, tactile rounded edges, clean studio cyclorama lighting, playful modern isometric design.
+
+### 5. Technical Isometric (`Nano Banana Pro`)
+- **Reach for it when:** The article explains how a complex system actually works (money flows, multi-agent pipelines, global distribution loops).
+- **Prompt Formula:** High-precision axonometric cross-section of [System], glowing neon vector pathways, cutaway layers revealing internal mechanics, dark matte tech background, crisp blueprint clarity.
+
+### 6. Component Assembly (`Nano Banana Pro`)
+- **Reach for it when:** The story centers on a single hard constraint, gate, or physical boundary with no human scene to photograph.
+- **Prompt Formula:** Industrial macro shot of [Hardware/Bay/Gate], heavy unlatched steel hinges, grease-slicked bolt threads, industrial amber work-light glare, gritty raw hardware aesthetic.
+
+### 7. Paper Collage (`Nano Banana Pro`)
+- **Reach for it when:** The piece is a synthesis of two colliding developments, where the friction of the collision is the story.
+- **Prompt Formula:** Mixed-media handmade paper cut-out collage depicting [Concept A colliding with Concept B], textured newsprint, torn kraft edges, bold primary ink splashes, tactile layered depth.
+
+### 8. Long Lens Industry (`flux-2 Pro`)
+- **Reach for it when:** Scale is the primary narrative driver (a sprawling port, a midnight refinery, a data-centre hall packed with cooling towers).
+- **Prompt Formula:** Extreme telephoto compressor shot of [Industrial Site], heat haze distortion waves, rows of rhythmic steel framing, flat geometric layering, monumental scale.
+
+### 9. Studio Object (`flux-2 Pro`)
+- **Reach for it when:** The story covers a specific consumer or enterprise product, device, or hardware breakthrough hitting the market.
+- **Prompt Formula:** Sleek minimalist product shot of [Device] floating on a reflective obsidian plinth, soft ambient rim lighting, premium matte finish, commercial advertising perfection.
+
+### 10. Architectural Night (`flux-2 Pro`)
+- **Reach for it when:** The change happens after hours (automation displacing shifts, algorithmic capacity running while a city sleeps).
+- **Prompt Formula:** Brutalist concrete facility at midnight, glowing warm windows cutting through pitch-black surroundings, solitary glowing server racks, long exposure mood, architectural digest style.
+
+### 11. Split Screen Contrast (`Nano Banana Pro`)
+- **Reach for it when:** The article contrasts two competing realities (before/after reform, legacy vs. automated stack, urban vs. rural adoption).
+- **Prompt Formula:** Diptych split-screen composition contrasting [State A] on the left with warm golden tones against [State B] on the right in stark cool cyan, clean architectural dividing line, graphic editorial contrast.
+
+### 12. Terminal Audit (`flux-2 Pro`)
+- **Reach for it when:** The story centers on a software bug, security breach, algorithmic anomaly, or deep-dive code/data investigation.
+- **Prompt Formula:** Macro shot of an illuminated vintage amber CRT terminal screen displaying lines of [Code/Data logs] in a dark server room, glowing reflection on a brushed steel desk surface, cinematic hacker aesthetic.
+
+### 13. Historical Artifact (`flux-2 Pro`)
+- **Reach for it when:** The piece covers legal precedents, foundational agreements, archival investigations, or multi-decade structural shifts.
+- **Prompt Formula:** Aged parchment manuscript of [Document Name] with wax seals and handwritten margin notes, resting on a worn oak table, illuminated by a single warm desk lamp, museum archive lighting, shallow depth of field.
+
+### 14. Cross Section Cutaway (`Nano Banana Pro`)
+- **Reach for it when:** The article explains hidden physical infrastructure buried beneath ground or water (subsea cables, metro transit tunnels, subterranean storage).
+- **Prompt Formula:** 3D technical cutaway render of [Infrastructure] revealing subterranean layers, bedrock strata, embedded conduit pathways, clean vector callouts, architectural presentation style.
+
+### 15. Schematic Blueprint (`Nano Banana Pro`)
+- **Reach for it when:** The story introduces an entirely new system architecture, protocol standard, or conceptual framework before public rollout.
+- **Prompt Formula:** White-on-blue architectural blueprint schematic of [System Architecture] with fine drafting lines, crisp grid coordinates, subtle paper grain texture, engineering precision style.
 
 `minimal_geometry` (bare shapes, "no objects") was **retired**: it was the only entry whose `when`
 fitted an abstract software story *and* the only one that forbade objects, so it collected exactly the
@@ -101,9 +149,13 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    `editorial_macro` for systemic, architectural, or operational topics where extreme close-ups strip away
    environmental meaning — and never *recommend* it for those topics elsewhere in the commission (rule 5's
    photographic-preference list must not name it, or the two rules cancel out).
-2. **No legible text, ever.** No text, letters, numbers, wordmarks, signage or UI in the frame
-   (they render as rubble) — the negative prompt must forbid them explicitly and the positive
-   prompt may not *ask* for them ("a sign reading…" is refused).
+2. **No legible text from the image model, ever.** No text, letters, numbers, wordmarks, signage or UI
+   in the frame (they render as rubble) — the negative prompt must forbid them explicitly and the positive
+   prompt may not *ask* for them ("a sign reading…" is refused). This is about text the model draws.
+   The desk's own cover typography — a topic kicker, the headline and a hook — is composited
+   afterwards as a separate, measured step (`scripts/illustration_overlay.py`), because a deliberately
+   conceptual image is often not descriptive enough on its own and the type has to carry the topic.
+   It is never written by the image model, and it never carries the desk's own name.
 3. **No real brands, no recognisable people.** The source list is passed to the director as a
    "never depict these companies" list; the brief must assert `depicts_real_brand: false`.
 4. **No stock-photo clichés** — light bulb, handshake, chess pieces, glowing brain, gavel, scales,
@@ -182,12 +234,23 @@ answered again — the module never picks for it.
 python3 scripts/illustration_creator.py context/drafts/X_final.md              # report — no spend
 python3 scripts/illustration_creator.py context/drafts/X_final.md --dry-run    # brief only (LLM tokens, no image credits)
 python3 scripts/illustration_creator.py context/drafts/X_final.md --apply      # direct + generate + write the artifact
+python3 scripts/illustration_overlay.py --slug X                               # composite the cover type
 python3 scripts/illustration_creator.py --backfill --limit 3                   # every artifact missing one
 python3 scripts/illustration_creator.py X.md --apply --style technical_isometric   # pin the treatment
 python3 scripts/illustration_creator.py X.md --apply --model nanobanana            # pin the model
 python3 scripts/illustration_creator.py --check published/*.md                # exit 1 on frontmatter/sidecar drift (no network)
 python3 scripts/wp_draft.py --slug <slug> --reimage                            # put a re-commissioned header on a post that already exists
 ```
+
+**The cover typography** (`scripts/illustration_overlay.py`) is the last step before the push, for any
+article, new or re-commissioned. It writes three lines for the article — a topic kicker, the headline
+and a hook — and composites them with the fixed recipe (kicker 2.9% of height in gold, headline 8.6%
+bold, hook 3.6%, upper-left or the emptiest corner). Two things are measured rather than assumed: the
+corner comes from the edge energy of the image, and the ink and scrim come from the brightest (for
+light ink) or darkest (for dark ink) pixel the text block actually covers, raised until the pair
+clears a WCAG contrast target. The clean render is kept beside the composited one as
+`featured.base.<ext>`, so the step is idempotent and the copy is reused on a re-run. A header is only
+finished when the type reads: this is what makes a deliberately conceptual image describable.
 A *regenerated* image needs the last command: the CMS push is idempotent by the media slug
 (`<slug>-featured`), so an ordinary push reuses the attachment it recorded and only refreshes its
 alt/caption — the new reading would sit on this host while the reader kept seeing the old one. The
