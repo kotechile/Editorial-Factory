@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 8,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,24 @@
       "title": "The Cloud Break-Even",
       "bytes": 198349,
       "sha256": "sha256:c647c72fe52f74fd0b49222ccf3a4bd841e5db958bcae6ae78c1cf0103a22dae"
+    },
+    {
+      "revision": 8,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, anamorphic 35mm look. Massive monolithic dark basalt slabs in delicate, perfect equilibrium, balancing on a precision-machined brushed steel fulcrum. Deep atmospheric haze, a single strong practical warm light source cutting through the mist, throwing long heavy cast shadows across a polished concrete floor. Restrained teal-and-amber palette, wide establishing composition with heavy editorial negative space on the left, capturing the physical weight and tension of fixed boundaries.",
+      "task_id": "c25d6a2e0055ecbcb2f5a51daeede9ec",
+      "sha256": "sha256:3124d64e6b2c5800819c56558ee5182f6e763d3fb70861e6549446ec0caaccd2",
+      "generated_at": "2026-10-09T00:42:10+00:00",
+      "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd"
+    },
+    {
+      "revision": 9,
+      "alt_text": "A heavy brass pendulum suspended in a dark, misty concrete corridor lit by a single beam of golden light",
+      "caption": "Repatriating steady workloads to owned physical infrastructure offers a harsh but mathematically clear cost advantage.",
+      "title": "Cloud-Repatriation-Pendulum",
+      "bytes": 327524,
+      "sha256": "sha256:bce7e8a94721f2a35ab483a89eaaec09"
     }
   ],
   "style": "cinematic_still",
@@ -71,63 +89,65 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, anamorphic 35mm look. Massive monolithic dark basalt slabs in delicate, perfect equilibrium, balancing on a precision-machined brushed steel fulcrum. Deep atmospheric haze, a single strong practical warm light source cutting through the mist, throwing long heavy cast shadows across a polished concrete floor. Restrained teal-and-amber palette, wide establishing composition with heavy editorial negative space on the left, capturing the physical weight and tension of fixed boundaries.",
-  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, labels, ui, graphic overlays, people",
-  "rationale": "A cinematic still allows for deep atmospheric lighting and material weight, perfectly capturing the heavy, physical reality of 'owned gear' as a massive, stable force through the metaphor of balanced monoliths.",
-  "cue": "a metered charge that grows",
-  "subject": "monolithic stone slabs balancing on a steel fulcrum",
-  "composition": "extreme asymmetry, wide atmospheric framing",
-  "alt_text": "The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. Massive dark st",
-  "caption": "The Cloud Break-Even: The math behind moving apps off the public cloud.",
-  "title": "The Cloud Break-Even",
+  "prompt": "Cinematic film still, anamorphic 35mm look. A massive, intricate brass pendulum suspended in a vast, brutalist architectural concrete void. The heavy, brushed brass counterweight hangs perfectly still, positioned off-centre in the right third of the frame, symbolizing steady and predictable gravity. A single, razor-thin blade of warm golden light cuts through deep blue atmospheric mist, striking the polished metal to create a glowing rim highlight. Deep shadows, crisp atmospheric depth, restrained teal-and-amber palette, wide establishing composition with generous negative space. Authentic material weight, no people.",
+  "negative_prompt": "text, typography, letters, numbers, watermark, logo, branding, face, hands, people",
+  "rationale": "A cinematic still allows us to use physical weight and gravity as a metaphor for steady, predictable workloads and the heavy reality of owned infrastructure, avoiding literal server rack clich\u00e9s.",
+  "cue": "a choice with clear math",
+  "subject": "a massive intricate brass pendulum suspended in an atmospheric architectural void",
+  "core_thesis": "Moving steady workloads off the cloud to owned hardware drastically cuts costs by shifting from unpredictable rental fees to fixed physical investments.",
+  "core_conflict": "The high, variable cost of renting cloud space for flat workloads versus the heavy but fixed capital investment of owning physical hardware.",
+  "composition": "extreme asymmetry with the heavy pendulum off-centre",
+  "alt_text": "The Cloud Bill Break-Even. A heavy brass pendulum suspended in a dark, misty concrete corridor lit by a single beam of golden",
+  "caption": "The Cloud Bill Break-Even: Why moving steady apps to owned gear cuts spend in half.",
+  "title": "The Cloud Bill Break-Even",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
+  "director_attempts": 1,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 198376,
-  "sha256": "sha256:3124d64e6b2c5800819c56558ee5182f6e763d3fb70861e6549446ec0caaccd2",
+  "bytes": 269199,
+  "sha256": "sha256:f96a62210bc3991b9ab4b9527203a0adf2092807757aad348927f58deca6dc4e",
   "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd",
   "source_chars": 4169,
-  "task_id": "c25d6a2e0055ecbcb2f5a51daeede9ec",
+  "task_id": "13444e278a860fd630b74c47eb7303a9",
   "credits": 5.0,
-  "cost_ms": 49,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/c25d6a2e0055ecbcb2f5a51daeede9ec_1791506527355.jpg",
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/13444e278a860fd630b74c47eb7303a9_1791508849639.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Cinematic film still, anamorphic 35mm look. Massive monolithic dark basalt slabs in delicate, perfect equilibrium, balancing on a precision-machined brushed steel fulcrum. Deep atmospheric haze, a single strong practical warm light source cutting through the mist, throwing long heavy cast shadows across a polished concrete floor. Restrained teal-and-amber palette, wide establishing composition with heavy editorial negative space on the left, capturing the physical weight and tension of fixed boundaries.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Cinematic film still, anamorphic 35mm look. A massive, intricate brass pendulum suspended in a vast, brutalist architectural concrete void. The heavy, brushed brass counterweight hangs perfectly still, positioned off-centre in the right third of the frame, symbolizing steady and predictable gravity. A single, razor-thin blade of warm golden light cuts through deep blue atmospheric mist, striking the polished metal to create a glowing rim highlight. Deep shadows, crisp atmospheric depth, restrained teal-and-amber palette, wide establishing composition with generous negative space. Authentic material weight, no people.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T00:42:10+00:00",
+  "generated_at": "2026-10-09T01:20:53+00:00",
   "overlay": {
-    "kicker": "ENTERPRISE IT // CLOUD REPATRIATION",
-    "title": "THE CLOUD BREAK-EVEN",
-    "hook": "The math behind moving apps off the public cloud",
+    "kicker": "CLOUD ECONOMICS // SERVER COSTS",
+    "title": "THE CLOUD BILL BREAK-EVEN",
+    "hook": "Why moving steady apps to owned gear cuts spend in half",
     "anchor": "top-left",
     "light": true,
-    "scrim": 15,
-    "contrast": 4.63,
-    "target": 4.5,
-    "clutter": 0.23,
+    "scrim": 90,
+    "contrast": 5.58,
+    "target": 5.5,
+    "clutter": 0.41,
     "region_rgb": [
-      74,
-      94,
-      95
+      89,
+      103,
+      109
     ],
     "binding_rgb": [
-      111,
-      127,
-      124
+      154,
+      163,
+      162
     ],
     "title_lines": [
-      "THE CLOUD",
+      "THE CLOUD BILL",
       "BREAK-EVEN"
     ]
   }

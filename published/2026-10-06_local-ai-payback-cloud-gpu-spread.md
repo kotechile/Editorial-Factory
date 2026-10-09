@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Pricing Fracture. The GPU Payback Split"
-image_caption: "The GPU Pricing Fracture: Build-vs-rent math breaks as local and cloud prices split."
+image_alt: "The New Build-Vs-Rent Math. A heavy brushed-aluminum structural housing sitting unlatched beside a three-way routing manifold"
+image_caption: "The New Build-Vs-Rent Math: Local GPU costs soar as cloud rental prices split."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

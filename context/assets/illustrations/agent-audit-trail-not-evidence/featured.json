@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 8,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,24 @@
       "title": "Building Agent Audit Trails",
       "bytes": 240622,
       "sha256": "sha256:bcaaa987c9a4f7c96496d368a5dfcc21b4b0334c54b5b737a2a4877e90773514"
+    },
+    {
+      "revision": 8,
+      "style": "document_flatlay",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Overhead flat-lay photograph of heavy archival paper dossiers and a continuous perforated audit ledger on a plain dark matte desk surface. Top-down 90-degree view, 50mm lens. The thick rag paper documents are slightly out of alignment to look handled, featuring heavy tactile embossing, visible paper fibers, and deep textures, but are entirely devoid of legible ink or print. Even diffused daylight from a window casts soft, subtle shadows across the scene, emphasizing the physical weight and permanence of the muted, cream-toned records. Asymmetric composition with generous negative space on the left.",
+      "task_id": "60ef4a929356a9a2035bea613c0f9230",
+      "sha256": "sha256:bcaaa987c9a4f7c96496d368a5dfcc21b4b0334c54b5b737a2a4877e90773514",
+      "generated_at": "2026-10-09T00:34:41+00:00",
+      "source_hash": "sha256:c444586232bf864156d0a4b263f3569b"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Overhead view of an open legal dossier with system schematics anchored by a brass date-stamp on an oak desk.",
+      "caption": "Agent logs must serve as durable, replayable evidence to meet strict multi-year regulatory standards.",
+      "title": "Agent Log Evidence",
+      "bytes": 477282,
+      "sha256": "sha256:97b7c5654ce2634e45db10fd6f3e423d"
     }
   ],
   "style": "document_flatlay",
@@ -71,64 +89,66 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Overhead flat-lay photograph of heavy archival paper dossiers and a continuous perforated audit ledger on a plain dark matte desk surface. Top-down 90-degree view, 50mm lens. The thick rag paper documents are slightly out of alignment to look handled, featuring heavy tactile embossing, visible paper fibers, and deep textures, but are entirely devoid of legible ink or print. Even diffused daylight from a window casts soft, subtle shadows across the scene, emphasizing the physical weight and permanence of the muted, cream-toned records. Asymmetric composition with generous negative space on the left.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, logo, typography, faces, hands, pen, pencil",
-  "rationale": "The story revolves around regulatory compliance, audit trails, and financial record-keeping, making a document flatlay the perfect metaphor for evidentiary logs.",
-  "cue": "the longest clock winning",
-  "subject": "heavy archival paper dossiers and a continuous perforated audit ledger",
-  "composition": "Asymmetric top-down layout",
-  "alt_text": "Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Logging A",
-  "caption": "Building Agent Audit Trails: Proving compliance by replaying the exact agent choice.",
-  "title": "Building Agent Audit Trails",
+  "prompt": "Overhead flat-lay photograph, 50mm prime lens overhead at f/8 for razor-sharp edge-to-edge focus. Extreme asymmetric flat-lay composition with generous negative space on the right. A heavy, textured rag-paper legal dossier lies open on a dark polished oak desk. The paper features muted, illegibly cropped schematic routing lines. Resting on the bottom left corner of the dossier is a solid brass vintage date-stamp, throwing a deep contact shadow. Even diffused daylight from a single window to the left, muted paper tones, quiet confidence, editorial cover standard.",
+  "negative_prompt": "text, typography, watermark, letters, numbers, logo, signature, words",
+  "rationale": "A document flatlay perfectly captures the regulatory and evidentiary nature of the story, transforming the abstract concept of software logs into physical, legal proof anchored by time.",
+  "cue": "replay the exact choice",
+  "subject": "an open legal dossier with system schematics anchored by a brass date-stamp",
+  "core_thesis": "An AI agent's log is only legally viable evidence if it serves as a complete, replayable record of its decisions and is retained for the longest applicable regulatory period.",
+  "core_conflict": "Transient, incomplete system logs vs. durable, replayable regulatory evidence spanning years.",
+  "composition": "extreme asymmetric flat-lay",
+  "alt_text": "AI Agent Audit Trails. Overhead view of an open legal dossier with system schematics anchored by a brass date-stamp on an oak",
+  "caption": "AI Agent Audit Trails: Why your agent's logs are not evidence of its decisions.",
+  "title": "AI Agent Audit Trails",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 240622,
-  "sha256": "sha256:bcaaa987c9a4f7c96496d368a5dfcc21b4b0334c54b5b737a2a4877e90773514",
+  "bytes": 404367,
+  "sha256": "sha256:dedbf06b46e01bc0917059e9b884985c7fa4ec45c3478cc6914056ce255bb7f0",
   "source_hash": "sha256:c444586232bf864156d0a4b263f3569b",
   "source_chars": 5203,
-  "task_id": "60ef4a929356a9a2035bea613c0f9230",
+  "task_id": "83518e25529824c0ade41611ce1cd485",
   "credits": 5.0,
-  "cost_ms": 41,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/60ef4a929356a9a2035bea613c0f9230_1791506076065.jpg",
+  "cost_ms": 49,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/83518e25529824c0ade41611ce1cd485_1791509192061.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Overhead flat-lay photograph of heavy archival paper dossiers and a continuous perforated audit ledger on a plain dark matte desk surface. Top-down 90-degree view, 50mm lens. The thick rag paper documents are slightly out of alignment to look handled, featuring heavy tactile embossing, visible paper fibers, and deep textures, but are entirely devoid of legible ink or print. Even diffused daylight from a window casts soft, subtle shadows across the scene, emphasizing the physical weight and permanence of the muted, cream-toned records. Asymmetric composition with generous negative space on the left.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Overhead flat-lay photograph, 50mm prime lens overhead at f/8 for razor-sharp edge-to-edge focus. Extreme asymmetric flat-lay composition with generous negative space on the right. A heavy, textured rag-paper legal dossier lies open on a dark polished oak desk. The paper features muted, illegibly cropped schematic routing lines. Resting on the bottom left corner of the dossier is a solid brass vintage date-stamp, throwing a deep contact shadow. Even diffused daylight from a single window to the left, muted paper tones, quiet confidence, editorial cover standard.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T00:34:41+00:00",
+  "generated_at": "2026-10-09T01:26:35+00:00",
   "overlay": {
-    "kicker": "AI GOVERNANCE // AGENT AUDIT TRAILS",
-    "title": "BUILDING AGENT AUDIT TRAILS",
-    "hook": "Proving compliance by replaying the exact agent choice",
-    "anchor": "top-left",
+    "kicker": "AI GOVERNANCE // AGENT AUDIT LOGS",
+    "title": "AI AGENT AUDIT TRAILS",
+    "hook": "Why your agent's logs are not evidence of its decisions",
+    "anchor": "top-right",
     "light": true,
     "scrim": 0,
-    "contrast": 14.64,
-    "target": 5.5,
-    "clutter": 0.361,
+    "contrast": 12.4,
+    "target": 4.5,
+    "clutter": 0.059,
     "region_rgb": [
-      49,
-      49,
-      49
+      51,
+      40,
+      33
     ],
     "binding_rgb": [
-      39,
-      41,
-      40
+      64,
+      49,
+      44
     ],
     "title_lines": [
-      "BUILDING AGENT",
-      "AUDIT TRAILS"
+      "AI AGENT AUDIT",
+      "TRAILS"
     ]
   }
 }

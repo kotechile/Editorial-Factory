@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. The Cloud Break-Even. Massive dark st"
-image_caption: "The Cloud Break-Even: The math behind moving apps off the public cloud."
+image_alt: "The Cloud Bill Break-Even. A heavy brass pendulum suspended in a dark, misty concrete corridor lit by a single beam of golden"
+image_caption: "The Cloud Bill Break-Even: Why moving steady apps to owned gear cuts spend in half."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

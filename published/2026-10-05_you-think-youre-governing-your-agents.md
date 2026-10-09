@@ -14,10 +14,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Stolen machine identities just became the top way hackers break into companies."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png"
-image_style: "component_assembly"
+image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. Stolen Machine Identities. The AI Agent Blin"
-image_caption: "Stolen Machine Identities: Non-human identities are the top way hackers breach firms."
+image_alt: "Stolen Machine Identities. Isometric technical cutaway of a mechanical routing bay with an active locking module on a draftin"
+image_caption: "Stolen Machine Identities: The blind spot in AI agent governance and access control."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

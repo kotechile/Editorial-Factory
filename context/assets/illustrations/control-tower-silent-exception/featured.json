@@ -1,6 +1,6 @@
 {
   "slug": "control-tower-silent-exception",
-  "revision": 8,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,24 @@
       "title": "The Fake Carrier Blind Spot",
       "bytes": 250028,
       "sha256": "sha256:5573558a7a0f35a11f43bf12ae533b250a494d72de3231c3bbd907ec6b3293ac"
+    },
+    {
+      "revision": 8,
+      "style": "architectural_night",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Architectural photograph of an empty industrial loading dock bay at blue hour, low-angle perspective with an asymmetric composition. A single warm amber overhead work light illuminates the weathered concrete and corrugated steel of the vacant bay, while the rest of the exterior facility fades into deep blue twilight shadow. Cinematic long-exposure calm, no moving figures, thick atmospheric mist, 35mm wide lens with deep depth of field, cool ambient light contrasting with the isolated pool of warm illumination.",
+      "task_id": "d0d1d60161621dac846e8498ed0b98b9",
+      "sha256": "sha256:67cab3fc682bb18719290c069da8175097f5ccdc4f8d0686c5cac3b35d30dc06",
+      "generated_at": "2026-10-09T00:39:02+00:00",
+      "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa"
+    },
+    {
+      "revision": 9,
+      "alt_text": "An empty, brightly lit loading dock bay stands out in a long row of closed bays at a distribution center at dusk.",
+      "caption": "Control towers are designed to catch deviations on the road, leaving a massive blind spot for loads stolen right at the pickup dock.",
+      "title": "Control Tower Pickup Blind Spot",
+      "bytes": 305438,
+      "sha256": "sha256:fd80abd99a2a2e108c5858e6dbc21ff7"
     }
   ],
   "style": "architectural_night",
@@ -71,14 +89,16 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Architectural photograph of an empty industrial loading dock bay at blue hour, low-angle perspective with an asymmetric composition. A single warm amber overhead work light illuminates the weathered concrete and corrugated steel of the vacant bay, while the rest of the exterior facility fades into deep blue twilight shadow. Cinematic long-exposure calm, no moving figures, thick atmospheric mist, 35mm wide lens with deep depth of field, cool ambient light contrasting with the isolated pool of warm illumination.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, people, human face, hands",
-  "rationale": "The story discusses a systemic vulnerability at the very beginning of a journey (the pickup dock) that goes unnoticed until later. The 'architectural_night' treatment perfectly captures this eerie absence and the quiet, unmonitored moments of industrial operations, emphasizing the 'blind spot' after hours.",
-  "cue": "the expensive blind spot",
-  "subject": "an empty loading dock bay illuminated by a single overhead work light",
-  "composition": "low-angle perspective with an off-centre focal point emphasizing the vacant bay",
-  "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake ",
-  "caption": "The Fake Carrier Blind Spot: Why control towers miss the costliest cargo thefts.",
+  "prompt": "Architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. A modern distribution center exterior featuring a long, repetitive row of closed corrugated steel loading bays. Wide asymmetric framing where one single loading bay is wide open and completely empty, illuminated from within by warm amber worklights that cast long shadows on the polished concrete apron. Deep blue ambient twilight, crystalline air, clean industrial geometry, creating a quiet tension of a missing load. Modern, premium, editorial cover standard.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, signage, UI, watermarks, logos, labels",
+  "rationale": "The story is about a systemic blind spot in logistics operations. An architectural night shot of a massive loading dock captures the physical environment of the handover, while a single empty, illuminated bay visually represents the vanished load that the system missed.",
+  "cue": "auto-resolve the theft it can't see",
+  "subject": "a single empty, brightly illuminated loading dock bay in a massive distribution center",
+  "core_thesis": "Control towers fail to flag the most costly cargo theft\u2014loads handed to fake carriers at pickup\u2014meaning agent autonomy should be restricted by loss severity, not exception frequency.",
+  "core_conflict": "High-volume automated exception clearing versus high-severity, untraceable identity fraud at the pickup dock.",
+  "composition": "wide asymmetric framing",
+  "alt_text": "The Fake Carrier Blind Spot. An empty, brightly lit loading dock bay stands out in a long row of closed bays at a distributio",
+  "caption": "The Fake Carrier Blind Spot: Why control towers fail to spot fake carrier theft.",
   "title": "The Fake Carrier Blind Spot",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -89,42 +109,42 @@
   "local_path": "context/assets/illustrations/control-tower-silent-exception/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 249975,
-  "sha256": "sha256:67cab3fc682bb18719290c069da8175097f5ccdc4f8d0686c5cac3b35d30dc06",
+  "bytes": 244035,
+  "sha256": "sha256:b0ca645e34b6153b764dca0de96bdb6e9fbd0e4415715cefe2d862de6ca96fb3",
   "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa",
   "source_chars": 4557,
-  "task_id": "d0d1d60161621dac846e8498ed0b98b9",
+  "task_id": "89e5778881a6860c10200f9570227c70",
   "credits": 5.0,
-  "cost_ms": 46,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/d0d1d60161621dac846e8498ed0b98b9_1791506336152.jpg",
+  "cost_ms": 47,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/89e5778881a6860c10200f9570227c70_1791508948799.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Architectural photograph of an empty industrial loading dock bay at blue hour, low-angle perspective with an asymmetric composition. A single warm amber overhead work light illuminates the weathered concrete and corrugated steel of the vacant bay, while the rest of the exterior facility fades into deep blue twilight shadow. Cinematic long-exposure calm, no moving figures, thick atmospheric mist, 35mm wide lens with deep depth of field, cool ambient light contrasting with the isolated pool of warm illumination.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. A modern distribution center exterior featuring a long, repetitive row of closed corrugated steel loading bays. Wide asymmetric framing where one single loading bay is wide open and completely empty, illuminated from within by warm amber worklights that cast long shadows on the polished concrete apron. Deep blue ambient twilight, crystalline air, clean industrial geometry, creating a quiet tension of a missing load. Modern, premium, editorial cover standard.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T00:39:02+00:00",
+  "generated_at": "2026-10-09T01:22:34+00:00",
   "overlay": {
-    "kicker": "SUPPLY CHAIN // CARGO THEFT",
+    "kicker": "CONTROL TOWERS // CARGO THEFT",
     "title": "THE FAKE CARRIER BLIND SPOT",
-    "hook": "Why control towers miss the costliest cargo thefts",
+    "hook": "Why control towers fail to spot fake carrier theft",
     "anchor": "top-left",
     "light": true,
-    "scrim": 75,
-    "contrast": 5.76,
-    "target": 5.5,
-    "clutter": 0.37,
+    "scrim": 0,
+    "contrast": 6.64,
+    "target": 4.5,
+    "clutter": 0.08,
     "region_rgb": [
-      81,
-      97,
-      110
+      19,
+      82,
+      144
     ],
     "binding_rgb": [
-      146,
-      143,
-      150
+      21,
+      95,
+      158
     ],
     "title_lines": [
       "THE FAKE CARRIER",

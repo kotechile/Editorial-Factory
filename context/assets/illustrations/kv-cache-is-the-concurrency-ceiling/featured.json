@@ -1,6 +1,6 @@
 {
   "slug": "kv-cache-is-the-concurrency-ceiling",
-  "revision": 16,
+  "revision": 18,
   "history": [
     {
       "revision": 1,
@@ -133,27 +133,45 @@
       "title": "GPU Cache Bottleneck",
       "bytes": 1917658,
       "sha256": "sha256:66a1a379881af3128a7a70bbe8a25d3e"
+    },
+    {
+      "revision": 16,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A hardware board layout with a massive, prominent central processing unit module, connected to disproportionately narrow and congested memory cache pipelines. Flat muted palette with an amber accent colour highlighting the restricted memory pathways, thin consistent line weight. Laid over a real brushed steel drafting table. One directional light throwing a long shadow, unlabelled, generous empty margin. Extreme asymmetry off-centre on the thirds.",
+      "task_id": "d2583a80e7ebc4ef9f30e0c45072f4a1",
+      "sha256": "sha256:0120869bf46d912191ae2c187186ab1f55aafe1198698af18bed5a8fefa79327",
+      "generated_at": "2026-10-09T01:18:51+00:00",
+      "source_hash": "sha256:6347f8ca5265bf0017581589e4e1a297"
+    },
+    {
+      "revision": 17,
+      "alt_text": "Modular mechanical assembly of interlocking steel memory blades in a rigid chassis bay, lit by a single directional light.",
+      "caption": "The true limit on generating tokens is the physical capacity to store the key-value cache.",
+      "title": "GPU-KV-Cache-Assembly",
+      "bytes": 1876396,
+      "sha256": "sha256:ce2581830ea5fcb29616c32e3c9fcf25"
     }
   ],
-  "style": "technical_isometric",
-  "style_label": "Technical isometric cutaway",
-  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A hardware board layout with a massive, prominent central processing unit module, connected to disproportionately narrow and congested memory cache pipelines. Flat muted palette with an amber accent colour highlighting the restricted memory pathways, thin consistent line weight. Laid over a real brushed steel drafting table. One directional light throwing a long shadow, unlabelled, generous empty margin. Extreme asymmetry off-centre on the thirds.",
-  "negative_prompt": "text, watermark, typography, letters, numbers, logo, branding, ui, interface",
-  "rationale": "The article explains a systemic hardware bottleneck: memory capacity limiting processing. A technical isometric cutaway effectively visualizes the flow and restriction within a system architecture.",
-  "cue": "Runs Out of Cache",
-  "subject": "isometric cutaway of a processor board with a massive central processing unit bottlenecked by narrow memory cache pipelines",
-  "core_thesis": "The limit on a GPU's capacity is set by memory for the key-value cache, not by the weights or math speed.",
-  "core_conflict": "Raw math processing power vs memory cache bottlenecks.",
-  "composition": "extreme asymmetry off-centre on the thirds",
-  "alt_text": "The KV Cache Bottleneck. Isometric cutaway of a large processor bottlenecked by narrow memory pipelines on a drafting table.",
-  "caption": "The KV Cache Bottleneck: How the KV cache dictates GPU capacity.",
-  "title": "The KV Cache Bottleneck",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly, extreme asymmetric off-centre layout with generous negative space. An interlocking grid of anodized aluminum heat-sink fins and brushed steel memory-blade modules sliding into a rigid titanium chassis bay. Two of the modules are slightly extended, demonstrating physical capacity and constraint. Resting on a weathered brushed steel workbench. One harsh directional key light throwing a long sharp cast shadow across the surface. Matte muted palette of deep grey, industrial silver, and dark shadows. Clean mechanical edges, no text or printed lettering.",
+  "negative_prompt": "text, words, letters, numbers, watermarks, logos, branding, ui, typography",
+  "rationale": "The component_assembly treatment perfectly visualizes the rigid, modular nature of memory block paging without resorting to generic circuit boards. A tight mechanical structure emphasizes capacity constraints and physical allocation.",
+  "cue": "memory for the key-value cache",
+  "subject": "modular mechanical assembly of interlocking brushed steel memory-blade modules in a rigid chassis bay",
+  "core_thesis": "On a fixed GPU, the number of users one card can serve at once is set by memory for the key-value cache, not by the weights or the math rate.",
+  "core_conflict": "Massive computational processing power bottlenecked by a finite, rigidly constrained physical memory capacity.",
+  "composition": "extreme asymmetric off-centre layout",
+  "alt_text": "The Real GPU Bottleneck. Modular mechanical assembly of interlocking steel memory blades in a rigid chassis bay, lit by a sin",
+  "caption": "The Real GPU Bottleneck: Why memory limits LLM serving before math does.",
+  "title": "The Real GPU Bottleneck",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -163,47 +181,47 @@
   "local_path": "context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1403728,
-  "sha256": "sha256:0120869bf46d912191ae2c187186ab1f55aafe1198698af18bed5a8fefa79327",
+  "bytes": 1330513,
+  "sha256": "sha256:ad7683e9b6c20a67e557b05cc5949bb6f7e3c832245131e534c503ccdee69b38",
   "source_hash": "sha256:6347f8ca5265bf0017581589e4e1a297",
   "source_chars": 4179,
-  "task_id": "d2583a80e7ebc4ef9f30e0c45072f4a1",
+  "task_id": "aa7190627e7877023146e940cfbc5193",
   "credits": 18.0,
-  "cost_ms": 24,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_39a127fa592391758bd9773c18574052.png",
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f959a8a94a1e772d6066e43d9de8ec87.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A hardware board layout with a massive, prominent central processing unit module, connected to disproportionately narrow and congested memory cache pipelines. Flat muted palette with an amber accent colour highlighting the restricted memory pathways, thin consistent line weight. Laid over a real brushed steel drafting table. One directional light throwing a long shadow, unlabelled, generous empty margin. Extreme asymmetry off-centre on the thirds.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly, extreme asymmetric off-centre layout with generous negative space. An interlocking grid of anodized aluminum heat-sink fins and brushed steel memory-blade modules sliding into a rigid titanium chassis bay. Two of the modules are slightly extended, demonstrating physical capacity and constraint. Resting on a weathered brushed steel workbench. One harsh directional key light throwing a long sharp cast shadow across the surface. Matte muted palette of deep grey, industrial silver, and dark shadows. Clean mechanical edges, no text or printed lettering.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-09T01:18:51+00:00",
+  "generated_at": "2026-10-09T01:31:13+00:00",
   "overlay": {
-    "kicker": "GPU MEMORY // CACHE BOTTLENECK",
-    "title": "THE KV CACHE BOTTLENECK",
-    "hook": "How the KV cache dictates GPU capacity",
+    "kicker": "LLM HARDWARE // KV CACHE LIMITS",
+    "title": "THE REAL GPU BOTTLENECK",
+    "hook": "Why memory limits LLM serving before math does",
     "anchor": "top-left",
-    "light": false,
-    "scrim": 0,
-    "contrast": 9.48,
-    "target": 4.5,
-    "clutter": 0.062,
+    "light": true,
+    "scrim": 75,
+    "contrast": 5.92,
+    "target": 5.5,
+    "clutter": 0.344,
     "region_rgb": [
-      202,
-      196,
-      175
+      70,
+      71,
+      72
     ],
     "binding_rgb": [
-      191,
-      186,
-      167
+      141,
+      141,
+      141
     ],
     "title_lines": [
-      "THE KV CACHE",
+      "THE REAL GPU",
       "BOTTLENECK"
     ]
   }

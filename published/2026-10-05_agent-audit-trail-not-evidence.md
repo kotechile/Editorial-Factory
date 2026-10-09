@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Building Agent Audit Trails. Logging A"
-image_caption: "Building Agent Audit Trails: Proving compliance by replaying the exact agent choice."
+image_alt: "AI Agent Audit Trails. Overhead view of an open legal dossier with system schematics anchored by a brass date-stamp on an oak"
+image_caption: "AI Agent Audit Trails: Why your agent's logs are not evidence of its decisions."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

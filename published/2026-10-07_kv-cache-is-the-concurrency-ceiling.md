@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "A graphics processing unit (GPU) serving a 7-billion-parameter model at 16-bit precision holds about 14GB of weights in memory before it answers a single…"
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png"
-image_style: "technical_isometric"
+image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "The KV Cache Bottleneck. Isometric cutaway of a large processor bottlenecked by narrow memory pipelines on a drafting table."
-image_caption: "The KV Cache Bottleneck: How the KV cache dictates GPU capacity."
+image_alt: "The Real GPU Bottleneck. Modular mechanical assembly of interlocking steel memory blades in a rigid chassis bay, lit by a sin"
+image_caption: "The Real GPU Bottleneck: Why memory limits LLM serving before math does."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

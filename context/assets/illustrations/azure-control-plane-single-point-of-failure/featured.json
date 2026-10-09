@@ -1,6 +1,6 @@
 {
   "slug": "azure-control-plane-single-point-of-failure",
-  "revision": 8,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -61,76 +61,94 @@
       "title": "Azure Control Plane Outages",
       "bytes": 1803900,
       "sha256": "sha256:b6c56961e651526f07e384f3f3fd821565e7e217b934e21ac23e43c535fce2e5"
+    },
+    {
+      "revision": 8,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "clean isometric cutaway illustration of independent modular routing bays connected to a single central control node, technical drawing style, axonometric projection, flat muted palette with one amber accent colour highlighting the central node, thin consistent line weight, laid over a matte concrete drafting surface, recognisable hardware racks and connectors with visible depth, one directional light casting long shadows, unlabelled, generous empty margin, the central assembly off-centre in the frame",
+      "task_id": "b2c37f0159999bba5ce233e07b3e4d77",
+      "sha256": "sha256:b99f680c1c174116ab06c7bcd839cc2b203b7d1e8fd81b4e39b8be56c90e78f3",
+      "generated_at": "2026-10-09T00:36:33+00:00",
+      "source_hash": "sha256:e3c8b2ea037bdb85bc873a17d681f24c"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Multiple brightly lit architectural corridors converging into a single dark, shadow-cast stone monolith.",
+      "caption": "When a centralized control plane fails, geographic redundancy cannot prevent a multi-region outage.",
+      "title": "Cloud Control Plane Failure Metaphor",
+      "bytes": 318271,
+      "sha256": "sha256:17e63bf55407cd832cfd26fd00efb184"
     }
   ],
-  "style": "technical_isometric",
-  "style_label": "Technical isometric cutaway",
-  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
-  "model": "nano-banana-pro",
-  "model_key": "nanobanana",
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "clean isometric cutaway illustration of independent modular routing bays connected to a single central control node, technical drawing style, axonometric projection, flat muted palette with one amber accent colour highlighting the central node, thin consistent line weight, laid over a matte concrete drafting surface, recognisable hardware racks and connectors with visible depth, one directional light casting long shadows, unlabelled, generous empty margin, the central assembly off-centre in the frame",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermarks, logos, typography, branding",
-  "rationale": "The story involves the architectural structure of cloud services, specifically how a shared component across independent regions creates a bottleneck. A technical isometric cutaway perfectly visualizes this systemic structural flaw.",
-  "cue": "shared network tool",
-  "subject": "an isometric cutaway of independent routing bays bridged by a single central node",
-  "composition": "generous negative space, hero off-centre",
-  "alt_text": "Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. Azure Control Plane Outages. The Azure",
-  "caption": "Azure Control Plane Outages: Why multi-region setups fail when control planes break.",
-  "title": "Azure Control Plane Outages",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A vast, modern brutalist architectural space featuring five parallel illuminated corridors of warm amber light, representing multiple routing regions. All five light paths converge into a single, massive central obsidian monolith that stands in heavy, imposing shadow, blocking the flow of light. Crisp atmospheric depth, restrained teal-and-amber palette, deep architectural shadows, polished basalt floor reflecting the severed light rays. Implied structural tension, heavy physical scale, no people, pure atmospheric narrative.",
+  "negative_prompt": "text, words, typography, letters, logos, UI, watermark, people, faces, literal server racks, glowing matrix code, abstract floating cubes",
+  "rationale": "For a systemic enterprise software story about routing and structural vulnerability, a cinematic still of a monumental architectural space provides a powerful physical metaphor for multi-region infrastructure converging on a single point.",
+  "cue": "single point of failure",
+  "subject": "multiple illuminated architectural corridors converging into a single darkened central monolith",
+  "core_thesis": "Multi-region cloud architecture offers false security if all geographically dispersed regions rely on a single centralized control plane.",
+  "core_conflict": "Geographic hardware redundancy versus centralized software vulnerability.",
+  "composition": "wide establishing asymmetry",
+  "alt_text": "Azure Control Plane Failure. Multiple brightly lit architectural corridors converging into a single dark, shadow-cast stone m",
+  "caption": "Azure Control Plane Failure: Multi-region setups don't fix shared control plane flaws.",
+  "title": "Azure Control Plane Failure",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
+  "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1804835,
-  "sha256": "sha256:b99f680c1c174116ab06c7bcd839cc2b203b7d1e8fd81b4e39b8be56c90e78f3",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 268037,
+  "sha256": "sha256:b5d5772f5a1352055f996b9f6cd8f16dfb2c20c44825c40c0ce0dd129bc3161b",
   "source_hash": "sha256:e3c8b2ea037bdb85bc873a17d681f24c",
   "source_chars": 4298,
-  "task_id": "b2c37f0159999bba5ce233e07b3e4d77",
-  "credits": 18.0,
-  "cost_ms": 23,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e376a84a75ca5f2ab7f7a33536e2b965.png",
+  "task_id": "60d4aec5adce421d8b0fafb450d66806",
+  "credits": 5.0,
+  "cost_ms": 57,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/60d4aec5adce421d8b0fafb450d66806_1791509546720.jpg",
   "provider_request": {
-    "model": "nano-banana-pro",
+    "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "clean isometric cutaway illustration of independent modular routing bays connected to a single central control node, technical drawing style, axonometric projection, flat muted palette with one amber accent colour highlighting the central node, thin consistent line weight, laid over a matte concrete drafting surface, recognisable hardware racks and connectors with visible depth, one directional light casting long shadows, unlabelled, generous empty margin, the central assembly off-centre in the frame\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A vast, modern brutalist architectural space featuring five parallel illuminated corridors of warm amber light, representing multiple routing regions. All five light paths converge into a single, massive central obsidian monolith that stands in heavy, imposing shadow, blocking the flow of light. Crisp atmospheric depth, restrained teal-and-amber palette, deep architectural shadows, polished basalt floor reflecting the severed light rays. Implied structural tension, heavy physical scale, no people, pure atmospheric narrative.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
-      "image_input": [],
-      "output_format": "png"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T00:36:33+00:00",
+  "generated_at": "2026-10-09T01:32:31+00:00",
   "overlay": {
-    "kicker": "ENTERPRISE CLOUD // CONTROL PLANES",
-    "title": "AZURE CONTROL PLANE OUTAGES",
-    "hook": "Why multi-region setups fail when control planes break",
+    "kicker": "ENTERPRISE CLOUD // RELIABILITY",
+    "title": "AZURE CONTROL PLANE FAILURE",
+    "hook": "Multi-region setups don't fix shared control plane flaws",
     "anchor": "top-left",
-    "light": false,
-    "scrim": 90,
-    "contrast": 5.95,
+    "light": true,
+    "scrim": 30,
+    "contrast": 5.86,
     "target": 5.5,
-    "clutter": 0.354,
+    "clutter": 0.312,
     "region_rgb": [
-      143,
-      144,
-      137
+      61,
+      66,
+      64
     ],
     "binding_rgb": [
-      76,
-      89,
-      95
+      103,
+      117,
+      117
     ],
     "title_lines": [
       "AZURE CONTROL",
-      "PLANE OUTAGES"
+      "PLANE FAILURE"
     ]
   }
 }

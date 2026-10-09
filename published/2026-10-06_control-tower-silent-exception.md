@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/control-tower-silent-exception/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake "
-image_caption: "The Fake Carrier Blind Spot: Why control towers miss the costliest cargo thefts."
+image_alt: "The Fake Carrier Blind Spot. An empty, brightly lit loading dock bay stands out in a long row of closed bays at a distributio"
+image_caption: "The Fake Carrier Blind Spot: Why control towers fail to spot fake carrier theft."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

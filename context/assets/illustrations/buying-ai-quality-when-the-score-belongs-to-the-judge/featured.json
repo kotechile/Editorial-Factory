@@ -1,6 +1,6 @@
 {
   "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-  "revision": 8,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -61,74 +61,96 @@
       "title": "Grading The LLM Judge",
       "bytes": 217042,
       "sha256": "sha256:a756db97515b4d5221c6a171c443b4d98edbccf713d09758deb9abbe70aa49e9"
+    },
+    {
+      "revision": 8,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition with severe asymmetry. An intricate, heavy brass and optical glass measurement apparatus resting on a slab of rough dark basalt, focusing a single razor-thin beam of warm amber light. Deep atmospheric haze, single strong practical directional light source casting deep shadows. Restrained teal-and-amber palette, prominent rim highlights on the brushed metallic edges of the lens housing. Quiet confidence, refined aesthetics, authentic tactile context and material weight, physical tension implied by the precise, delicate alignment of the heavy glass elements. Generous editorial negative space on the left.",
+      "task_id": "b4b328cc7ea5c3597602a3a35c7d93e4",
+      "sha256": "sha256:a756db97515b4d5221c6a171c443b4d98edbccf713d09758deb9abbe70aa49e9",
+      "generated_at": "2026-10-09T00:35:31+00:00",
+      "source_hash": "sha256:e04af2fe6e6769e244647c862506afa2"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Modular calibration gauge with a swappable central measuring fulcrum resting on a textured concrete surface.",
+      "caption": "When AI models grade other models, the quality score becomes a property of the evaluator rather than a fixed metric.",
+      "title": "AI Observability Shifting Judge",
+      "bytes": 1949037,
+      "sha256": "sha256:7ae74b69b23681585d143fb33061763c"
     }
   ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition with severe asymmetry. An intricate, heavy brass and optical glass measurement apparatus resting on a slab of rough dark basalt, focusing a single razor-thin beam of warm amber light. Deep atmospheric haze, single strong practical directional light source casting deep shadows. Restrained teal-and-amber palette, prominent rim highlights on the brushed metallic edges of the lens housing. Quiet confidence, refined aesthetics, authentic tactile context and material weight, physical tension implied by the precise, delicate alignment of the heavy glass elements. Generous editorial negative space on the left.",
-  "negative_prompt": "text, typography, wordmarks, watermarks, logos, labels, ui, branding, faces, people",
-  "rationale": "A cinematic still provides the material weight and atmospheric depth needed to ground an abstract software concept. By using a physical, precision measurement apparatus in a moody environment, we capture the tension of a 'moving target' standard without resorting to literal code or datacenter clich\u00e9s.",
-  "cue": "not a fixed ruler",
-  "subject": "intricate brass and optical glass measurement apparatus",
-  "composition": "wide asymmetric establishing composition",
-  "alt_text": "Grading The LLM Judge. Grading The LLM Judge. Grading The LLM Judge. Grading The LLM Judge. Buying The AI Judge. Heavy brass ",
-  "caption": "Grading The LLM Judge: The billion-dollar market built on a moving target.",
-  "title": "Grading The LLM Judge",
+  "prompt": "Matte clay 3D render of a precision mechanical calibration assembly resting on weathered dark concrete. The structure features a heavy base bracket and a distinct, swappable central measuring fulcrum block in muted amber polymer, positioned off-centre. Clean physical arrangement of recognizable engineered parts, locking pins, and a dial-less indicator resting in delicate equilibrium. One directional key light raking across the matte surfaces, casting deep, hard contact shadows. Muted modern B2B palette, generous empty editorial margin.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, logos, plain spheres, simple cubes, faces, people",
+  "rationale": "A matte clay 3D render perfectly captures the structural abstraction of a 'swappable judge' by depicting a mechanical assembly where the core measurement component is modular and interchangeable, giving physical weight to an algorithmic concept.",
+  "cue": "The Score Belongs to the Judge",
+  "subject": "A modular calibration gauge with a swappable central measuring fulcrum",
+  "core_thesis": "A quality score is a property of the judge, not of the system being judged \u2014 so the AI-observability market has consolidated around a moving target.",
+  "core_conflict": "The desire for a fixed quality metric versus the reality that the evaluator itself is a shifting, subjective variable.",
+  "composition": "extreme asymmetry with the subject anchored on the right third",
+  "alt_text": "The Flawed AI Quality Score. Modular calibration gauge with a swappable central measuring fulcrum resting on a textured concr",
+  "caption": "The Flawed AI Quality Score: Why billion-dollar AI quality scores are a moving target.",
+  "title": "The Flawed AI Quality Score",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 217042,
-  "sha256": "sha256:a756db97515b4d5221c6a171c443b4d98edbccf713d09758deb9abbe70aa49e9",
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1510675,
+  "sha256": "sha256:3108147b7eee9aa919874fa943ee7f793e56ca47f94f3c3c4e0c65cd2fd7c397",
   "source_hash": "sha256:e04af2fe6e6769e244647c862506afa2",
   "source_chars": 4606,
-  "task_id": "b4b328cc7ea5c3597602a3a35c7d93e4",
-  "credits": 5.0,
-  "cost_ms": 17,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/b4b328cc7ea5c3597602a3a35c7d93e4_1791506126545.jpg",
+  "task_id": "a39eea2a9846857925b7b0426516f8db",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d6630f42fb97b44cfbf5a3a3d26347ea.png",
   "provider_request": {
-    "model": "flux-2/pro-text-to-image",
+    "model": "nano-banana-pro",
     "input": {
-      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition with severe asymmetry. An intricate, heavy brass and optical glass measurement apparatus resting on a slab of rough dark basalt, focusing a single razor-thin beam of warm amber light. Deep atmospheric haze, single strong practical directional light source casting deep shadows. Restrained teal-and-amber palette, prominent rim highlights on the brushed metallic edges of the lens housing. Quiet confidence, refined aesthetics, authentic tactile context and material weight, physical tension implied by the precise, delicate alignment of the heavy glass elements. Generous editorial negative space on the left.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Matte clay 3D render of a precision mechanical calibration assembly resting on weathered dark concrete. The structure features a heavy base bracket and a distinct, swappable central measuring fulcrum block in muted amber polymer, positioned off-centre. Clean physical arrangement of recognizable engineered parts, locking pins, and a dial-less indicator resting in delicate equilibrium. One directional key light raking across the matte surfaces, casting deep, hard contact shadows. Muted modern B2B palette, generous empty editorial margin.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K"
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
     }
   },
-  "generated_at": "2026-10-09T00:35:31+00:00",
+  "generated_at": "2026-10-09T01:25:09+00:00",
   "overlay": {
-    "kicker": "AI OBSERVABILITY // MODEL EVALUATION",
-    "title": "GRADING THE LLM JUDGE",
-    "hook": "The billion-dollar market built on a moving target",
+    "kicker": "AI OBSERVABILITY // LLM JUDGES",
+    "title": "THE FLAWED AI QUALITY SCORE",
+    "hook": "Why billion-dollar AI quality scores are a moving target",
     "anchor": "top-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 13.56,
-    "target": 4.5,
-    "clutter": 0.054,
+    "scrim": 90,
+    "contrast": 6.18,
+    "target": 5.5,
+    "clutter": 0.363,
     "region_rgb": [
-      31,
-      44,
-      46
+      74,
+      68,
+      62
     ],
     "binding_rgb": [
-      33,
-      49,
-      49
+      164,
+      148,
+      122
     ],
     "title_lines": [
-      "GRADING THE",
-      "LLM JUDGE"
+      "THE FLAWED AI",
+      "QUALITY SCORE"
     ]
   }
 }
