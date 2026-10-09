@@ -167,10 +167,7 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    afterwards as a separate, measured step (`scripts/illustration_overlay.py`), because a deliberately
    conceptual image is often not descriptive enough on its own and the type has to carry the topic.
    It is never written by the image model, and it never carries the desk's own name.
-3. **No real brand logos, no recognisable people.** The source list is passed to the director as a
-   "never depict these companies" list; the brief must assert `depicts_real_brand: false`.
-   However, this applies to trademarks, emblems, and logos — it does **NOT** mean omitting the underlying vehicle or machine.
-   When the story is about Tesla, Ford, or BYD, depict a sleek, modern, unbranded generic electric vehicle without proprietary badges.
+3. **Brand fidelity without defective logos.** When the story is about a company's vehicle, product, or facility (e.g. Tesla, Maersk, Boeing, NVIDIA, Apple, Caterpillar), depicting the authentic vehicle, vessel, or hardware faithfully reflecting the brand's real industrial design and styling is fully permitted and encouraged. What must be avoided is prompting for isolated close-up text logos or wordmarks that diffusion models mangle into garbled or misspelled letters. The brand's identity should be carried cleanly by its authentic industrial design, iconic vehicle silhouette, and operational context. No recognisable real person, and no human face or hands in frame.
 4. **No stock-photo clichés** — light bulb, handshake, chess pieces, glowing brain, gavel, scales,
    thumbs-up, rockets, dartboards, puzzle pieces (`_CLICHE_RE`).
 5. **The treatment must be real in the prompt**: at least one word of the chosen treatment's

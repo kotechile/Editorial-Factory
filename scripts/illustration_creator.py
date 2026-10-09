@@ -823,7 +823,7 @@ One big thing: {fm.get('one_big_thing', '')}
 Section headings: {' | '.join(headings)}
 Numbers section:
 {numbers}
-Sources (names only — never depict these companies, their products or their logos): {sources}
+Sources (names only): {sources}
 
 ARTICLE SUBSTANTIVE CONTENT (Read this carefully to ground the visual in the actual industry context, facilities, equipment, operational reality, and core thesis):
 ---
@@ -845,7 +845,7 @@ mix of treatments — photographic (macro, architectural, document still life) A
 constructed (matte 3D clay renders, technical isometric cutaways, studio object shots, paper collages).
 3. EVERY MEDIUM MUST DEPICT A RECOGNIZABLE SUBJECT: In every treatment, the subject must be a \
 recognizable physical object, mechanical assembly, or clear symbolic silhouette derived from the \
-Headline and Excerpt. If the story is about an electric vehicle or machine, the unbranded vehicle/machine MUST be in the frame.
+Headline and Excerpt. If the story is about a company's vehicle, machine, or hardware, depict the authentic machine/vehicle faithfully reflecting the brand's genuine industrial design.
 4. NO BARE SHAPES OR ABSTRACT SCRAPS: Cubes, spheres, wedges, slabs, rectangles, amorphous blobs, \
 and random torn paper scraps are not subjects. A prompt whose subject is bare geometry or unformed \
 paper scraps is refused. Ground the subject in a tangible mechanism or symbolic object.
@@ -866,7 +866,7 @@ HARD RULES
 unreadable. Forbid them in `negative_prompt` — and keep that list to the legibility/brand set. \
 NEVER enumerate subject matter to exclude: the negative prompt is read by the image model as tokens \
 to draw, so "no abstract cubes" is an instruction to draw abstract cubes.
-- No real company's logo, wordmark, or brand badge: depict sleek, unbranded, beautifully designed machinery or vehicles. If the story is about Tesla, Ford, or BYD, depict a sleek unbranded modern electric vehicle with NO logos or emblems. NEVER omit the vehicle or machine itself when it is the subject of the story! No recognisable real person, and no human face or hands in frame. Depict the mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
+- BRAND & PRODUCT INTEGRITY: When the article focuses on a real company (e.g. Tesla, Maersk, Boeing, NVIDIA, Apple, Caterpillar), depicting their authentic vehicles, vessels, machinery, or hardware is FULLY PERMITTED and encouraged, provided it accurately reflects the brand's genuine industrial design, iconic silhouette, and correct styling. What must be avoided is DEFECTIVE, GARBLED, OR MISSPELLED BRAND LOGOS: diffusion models frequently distort fine typographic text and lettermarks. Therefore, never prompt for isolated close-up text logos or wordmarks that the model might mangle. Let the correct vehicle form factor, signature livery, authentic hardware engineering, and operational context represent the brand proudly and accurately. No recognisable real person, and no human face or hands in frame. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
 - Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \
