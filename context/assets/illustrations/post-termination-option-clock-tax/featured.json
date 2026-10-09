@@ -1,0 +1,87 @@
+{
+  "slug": "post-termination-option-clock-tax",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A cut-paper hourglass silhouette spilling heavy textured weights onto a layered dossier in a minimalist collage.",
+      "caption": "Three months after a job ends, an incentive stock option loses its tax status, triggering the alternative minimum tax.",
+      "title": "ISO-AMT-Tax-Clock",
+      "bytes": 2073487,
+      "sha256": "sha256:e1b20fb040d5378d0f1d62617c82c11f"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage, extreme asymmetric composition with the hero assembly heavily off-center to the right. A stylized cut-paper hourglass silhouette spilling heavy, textured paper weights, layered deliberately over a thick, tiered paper financial dossier resting on a real slate table. Hand-torn rag paper with visible heavy fibre, physical cast shadows under each distinct layered element, one raking key light casting deep directional shadows across the slate. Muted modern editorial palette of charcoal, cream, and dark amber. Crisp clean edges, generous negative space on the left, no bare geometry, no legible print.",
+  "negative_prompt": "text, typography, letters, numbers, wordmarks, watermarks, signatures, legible print",
+  "rationale": "The story is a purely conceptual policy dilemma concerning tax rules and time limits. Paper collage provides an elegant, abstract way to represent the '90-day clock' and the resulting financial burden without inventing physical infrastructure.",
+  "cue": "Turns Options Into a Tax Bill",
+  "subject": "a cut-paper hourglass silhouette spilling heavy textured weights onto a layered dossier",
+  "core_thesis": "The real cost of exercising a vested stock option is the tax, not the strike price, triggered by a strict 90-day post-employment window that strips ISOs of their tax advantage.",
+  "core_conflict": "Option strike price vs. Alternative Minimum Tax liability on the spread",
+  "composition": "extreme asymmetric composition, right-aligned",
+  "alt_text": "The 90-Day Option Tax Trap. A cut-paper hourglass silhouette spilling heavy textured weights onto a layered dossier in a mini",
+  "caption": "The 90-Day Option Tax Trap: The hidden tax penalty of exercising options post-exit.",
+  "title": "The 90-Day Option Tax Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/post-termination-option-clock-tax/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1546638,
+  "sha256": "sha256:43b88a19e4d82c5e3d3a81ec138ba6203270b1f7955f567d9cc57f3708434013",
+  "source_hash": "sha256:911394d6b28c731454c268f5165d8d42",
+  "source_chars": 4393,
+  "task_id": "662cddc15c37ba0dd7f28298ede7dfa3",
+  "credits": 18.0,
+  "cost_ms": 32,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_71e852c76ee96faac76b5070452afad9.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage, extreme asymmetric composition with the hero assembly heavily off-center to the right. A stylized cut-paper hourglass silhouette spilling heavy, textured paper weights, layered deliberately over a thick, tiered paper financial dossier resting on a real slate table. Hand-torn rag paper with visible heavy fibre, physical cast shadows under each distinct layered element, one raking key light casting deep directional shadows across the slate. Muted modern editorial palette of charcoal, cream, and dark amber. Crisp clean edges, generous negative space on the left, no bare geometry, no legible print.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-09T18:36:05+00:00",
+  "overlay": {
+    "kicker": "STARTUP EQUITY // ISO TAX WINDOW",
+    "title": "THE 90-DAY OPTION TAX TRAP",
+    "hook": "The hidden tax penalty of exercising options post-exit",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.36,
+    "target": 4.5,
+    "clutter": 0.094,
+    "region_rgb": [
+      42,
+      46,
+      51
+    ],
+    "binding_rgb": [
+      55,
+      62,
+      68
+    ],
+    "title_lines": [
+      "THE 90-DAY",
+      "OPTION TAX TRAP"
+    ],
+    "generated_at": "2026-10-09T18:36:05+00:00"
+  }
+}
