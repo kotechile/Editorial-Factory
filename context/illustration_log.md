@@ -162,3 +162,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-09 | `you-think-youre-governing-your-agents` | enterprise_ai_governance | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/you-think-youre-governing-your-agents/featured.png` |
 | 2026-10-09 | `kv-cache-is-the-concurrency-ceiling` | gpu_hardware | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png` |
 | 2026-10-09 | `azure-control-plane-single-point-of-failure` | enterprise_tech_leadership | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.jpg` |
+| 2026-10-09 | `multi-agent-coordination-topology-cost` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg` |

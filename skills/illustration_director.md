@@ -151,7 +151,9 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    set that feeds wellroost.com — a list that stops at finance leaves half the desk with no grounding
    and is how a home story comes back as an abstract house-with-hourglass collage.
    Never cross-contaminate unrelated domains or invent obscure micro-metaphors
-   (like depicting mathematical or algorithmic variance as a lone screw or scrap block). Never use
+   (like depicting mathematical variance as a lone screw, or software agent topologies as pneumatic valves or plumbing manifolds).
+   For software, algorithms, and multi-agent coordination, depict optical beam-splitters, parallel light pathways,
+   axonometric technical cutaways, or synchronized instruments — never industrial plumbing. Never use
    `editorial_macro` for systemic, architectural, or operational topics where extreme close-ups strip away
    environmental meaning — and never *recommend* it for those topics elsewhere in the commission (rule 5's
    photographic-preference list must not name it, or the two rules cancel out).

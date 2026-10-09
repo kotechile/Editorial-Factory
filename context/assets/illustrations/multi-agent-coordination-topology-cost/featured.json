@@ -1,6 +1,6 @@
 {
   "slug": "multi-agent-coordination-topology-cost",
-  "revision": 11,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -87,76 +87,96 @@
       "title": "Agent Topology Manifold",
       "bytes": 285999,
       "sha256": "sha256:a39dce6e001a1b049b2cb820513e78f8"
+    },
+    {
+      "revision": 11,
+      "style": "studio_object",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Studio product photograph, 100mm lens with shallow depth of field. A modular brushed-aluminum pneumatic manifold valve block with a single heavy input pipe fanning out into fifteen delicate parallel channels. The mechanism rests on a dark, textured slate studio surface. Asymmetric composition, placed off-centre in the right third with generous negative space. A single directional softbox key light throws a long, dramatic contact shadow across the slate, highlighting the precision milled edges of the metal. Muted premium color palette, catalogue clarity, sophisticated editorial cover standard.",
+      "task_id": "63aacf51d0007ee88108aaec041973f0",
+      "sha256": "sha256:2f2fc6d24ec6748363bfa584724649af42f6f00547e1e5f37831d0f70f0962fd",
+      "generated_at": "2026-10-09T01:27:44+00:00",
+      "source_hash": "sha256:30717e6ccd83aad0c700a41dbb2fe977"
+    },
+    {
+      "revision": 12,
+      "alt_text": "An architectural optical routing array directing light beams through parallel and sequential pathways in a dimly lit room.",
+      "caption": "Agent coordination topologies split the operational path, driving entirely different capability and cost outcomes.",
+      "title": "Agent Coordination Optical Topology",
+      "bytes": 305594,
+      "sha256": "sha256:c0b1815672f3be526ed37a2de3dbe38b"
     }
   ],
-  "style": "studio_object",
-  "style_label": "Studio product shot",
-  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Studio product photograph, 100mm lens with shallow depth of field. A modular brushed-aluminum pneumatic manifold valve block with a single heavy input pipe fanning out into fifteen delicate parallel channels. The mechanism rests on a dark, textured slate studio surface. Asymmetric composition, placed off-centre in the right third with generous negative space. A single directional softbox key light throws a long, dramatic contact shadow across the slate, highlighting the precision milled edges of the metal. Muted premium color palette, catalogue clarity, sophisticated editorial cover standard.",
-  "negative_prompt": "text, words, letters, numbers, watermark, logo, brand, typography, human, hands, face",
-  "rationale": "Studio object isolates the concept of 'wiring choice' and 'cost' by presenting a tangible mechanism of flow and distribution\u2014a mechanical manifold\u2014as a concrete physical object representing the topology decision.",
-  "cue": "a wiring choice",
-  "subject": "modular brushed-aluminum pneumatic manifold valve block",
-  "core_thesis": "Coordination topology is a cost-and-verifiability decision, not a capability flex: parallel fan-out buys breadth at roughly 15\u00d7 the tokens.",
-  "core_conflict": "Wide-net parallel execution costs versus predictable, flat sequential pipeline budgets.",
-  "composition": "asymmetric three-quarter angle",
-  "alt_text": "The Cost Of Agent Topology. A modular brushed-aluminum pneumatic manifold valve block fanning out into multiple channels on a",
-  "caption": "The Cost Of Agent Topology: How agent wiring choices dictate your token budget.",
-  "title": "The Cost Of Agent Topology",
+  "prompt": "cinematic film still, anamorphic 35mm look, wide establishing composition. An architectural optical routing array in a dimly lit control room. Three distinct pathways govern the space: one splitting a single beam into a wide parallel fan-out of warm amber light, another passing a crisp beam sequentially down a line of polished obsidian relay nodes. Crisp atmospheric depth, single strong practical light source raking across brushed aluminum structures, restrained teal-and-amber palette. Motion implied through the directional light rays. No people facing camera.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, logo",
+  "rationale": "The story is about structural topology and systemic choice. A cinematic still of a grand optical routing architecture captures the weight of this systemic decision without resorting to literal server racks or abstract geometry.",
+  "cue": "Pick the Topology That Pays",
+  "subject": "an architectural optical routing array",
+  "core_thesis": "Coordination topology is a deliberate cost-and-verifiability trade-off, where parallel fan-out significantly increases token cost compared to sequential handoffs.",
+  "core_conflict": "Parallel capability expansion versus massive token cost inflation.",
+  "composition": "wide anamorphic establishing shot, asymmetric right",
+  "alt_text": "Agent Topology Costs. An architectural optical routing array directing light beams through parallel and sequential pathways i",
+  "caption": "Agent Topology Costs: Coordination mode is your system's real budget line.",
+  "title": "Agent Topology Costs",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
-  "pinned": {},
+  "director_attempts": 3,
+  "pinned": {
+    "style": "cinematic_still"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 258858,
-  "sha256": "sha256:2f2fc6d24ec6748363bfa584724649af42f6f00547e1e5f37831d0f70f0962fd",
+  "bytes": 247631,
+  "sha256": "sha256:0933bb43846d6c71ebf3c3f47b7d09ae93dbe6ca498e56910b8248ac4d776e5d",
   "source_hash": "sha256:30717e6ccd83aad0c700a41dbb2fe977",
   "source_chars": 4204,
-  "task_id": "63aacf51d0007ee88108aaec041973f0",
+  "task_id": "8dce9631b8fa31668f05519af67e933f",
   "credits": 5.0,
-  "cost_ms": 17,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/63aacf51d0007ee88108aaec041973f0_1791509260135.jpg",
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/8dce9631b8fa31668f05519af67e933f_1791510415085.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Studio product photograph, 100mm lens with shallow depth of field. A modular brushed-aluminum pneumatic manifold valve block with a single heavy input pipe fanning out into fifteen delicate parallel channels. The mechanism rests on a dark, textured slate studio surface. Asymmetric composition, placed off-centre in the right third with generous negative space. A single directional softbox key light throws a long, dramatic contact shadow across the slate, highlighting the precision milled edges of the metal. Muted premium color palette, catalogue clarity, sophisticated editorial cover standard.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "cinematic film still, anamorphic 35mm look, wide establishing composition. An architectural optical routing array in a dimly lit control room. Three distinct pathways govern the space: one splitting a single beam into a wide parallel fan-out of warm amber light, another passing a crisp beam sequentially down a line of polished obsidian relay nodes. Crisp atmospheric depth, single strong practical light source raking across brushed aluminum structures, restrained teal-and-amber palette. Motion implied through the directional light rays. No people facing camera.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T01:27:44+00:00",
+  "generated_at": "2026-10-09T01:46:59+00:00",
   "overlay": {
-    "kicker": "MULTI-AGENT SYSTEMS // TOKEN COSTS",
-    "title": "THE COST OF AGENT TOPOLOGY",
-    "hook": "How agent wiring choices dictate your token budget",
-    "anchor": "top-left",
+    "kicker": "MULTI-AGENT AI // TOPOLOGY COSTS",
+    "title": "AGENT TOPOLOGY COSTS",
+    "hook": "Coordination mode is your system's real budget line",
+    "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 4.71,
+    "contrast": 8.23,
     "target": 4.5,
-    "clutter": 0.244,
+    "clutter": 0.14,
     "region_rgb": [
-      84,
-      87,
-      93
+      43,
+      49,
+      46
     ],
     "binding_rgb": [
-      111,
-      116,
-      122
+      58,
+      72,
+      72
     ],
     "title_lines": [
-      "THE COST OF",
-      "AGENT TOPOLOGY"
+      "AGENT TOPOLOGY",
+      "COSTS"
     ]
   }
 }
