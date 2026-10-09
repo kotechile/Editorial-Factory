@@ -170,3 +170,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-09 | `buying-ai-quality-when-the-score-belongs-to-the-judge` | ai_observability_qa | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg` |
 | 2026-10-09 | `control-tower-silent-exception` | control_tower_exception_orchestration | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/control-tower-silent-exception/featured.jpg` |
 | 2026-10-09 | `cloud-repatriation-break-even` | enterprise_tech_leadership | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/cloud-repatriation-break-even/featured.png` |
+| 2026-10-09 | `your-ev-is-now-a-home-battery-behind-a-paywall` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg` |

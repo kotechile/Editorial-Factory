@@ -13,6 +13,12 @@ meta_title: "Your EV Is Now a Home Battery — Behind a Paywall"
 meta_title_source: "derived_from_title"
 meta_description: "Tesla just turned its two best-selling cars into backup batteries for your house."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "A glowing wall-mounted residential battery and electrical panel on a dark garage exterior at dusk."
+image_caption: "The massive potential of vehicle-to-home backup is currently gated by expensive hardware requirements."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
