@@ -1,6 +1,6 @@
 {
   "slug": "you-think-youre-governing-your-agents",
-  "revision": 11,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -87,6 +87,32 @@
       "title": "Isometric Control Plane Interception",
       "bytes": 2171954,
       "sha256": "sha256:ad0c145912a40d06c2eadf0c89b38235"
+    },
+    {
+      "revision": 11,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An engineered mechanical routing bay assembly resting on a textured drafting table. The structure features brushed steel conduits, modular data trays, and one prominent interlocking gate clamping down on a central channel to represent active enforcement. Flat muted palette with a single amber accent color on the clamp. Thin consistent line weight, one directional key light casting a deep shadow, unlabelled, extreme asymmetry with generous empty margin.",
+      "task_id": "eedc058c3a3694e83bd879e040a6a9c8",
+      "sha256": "sha256:bac8f11caf0711cec46a5d9fef35c1aff9edfca3829d14cbc21f3f225e8462dc",
+      "generated_at": "2026-10-09T01:28:46+00:00",
+      "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5"
+    },
+    {
+      "revision": 12,
+      "alt_text": "Technical isometric cutaway of a precision optical routing bay with a central beam-splitter gating light pathways.",
+      "caption": "A live control plane actively enforces boundaries that static policies miss.",
+      "title": "openclaw-runtime-enforcement-isometric",
+      "bytes": 6991632,
+      "sha256": "sha256:bf5556ca6f037225d850dd6490a252a1"
+    },
+    {
+      "revision": 13,
+      "alt_text": "The AI Agent Blind Spot. Technical isometric cutaway of a precision optical routing bay with a central beam-splitter gating l",
+      "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
+      "title": "The AI Agent Blind Spot",
+      "bytes": 5116990,
+      "sha256": "sha256:14314097d4cf5b545ab6deb2a24647fd831945ce0630fc65fad1b1d1b174dd0c"
     }
   ],
   "style": "technical_isometric",
@@ -96,69 +122,70 @@
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "1K",
-  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An engineered mechanical routing bay assembly resting on a textured drafting table. The structure features brushed steel conduits, modular data trays, and one prominent interlocking gate clamping down on a central channel to represent active enforcement. Flat muted palette with a single amber accent color on the clamp. Thin consistent line weight, one directional key light casting a deep shadow, unlabelled, extreme asymmetry with generous empty margin.",
-  "negative_prompt": "text, words, letters, numbers, watermark, logo, signage, typography, UI",
-  "rationale": "The technical isometric cutaway perfectly illustrates the shift from abstract paper policy to a live, structural control plane actively intercepting system flows.",
+  "resolution": "2K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry, placed off-centre on the lower right with generous empty margin. A technical cutaway of a precision optical routing bay resting on a dark matte drafting surface. The assembly features modular processing trays, optical channels, and a central crystalline beam-splitter actively gating and redirecting parallel amber light pathways. Flat muted palette with one warm amber accent colour, thin consistent line weight, visible depth to the trays and connectors, one directional key light throwing a sharp cast shadow. No text, no labels.",
+  "negative_prompt": "text, words, letters, numbers, watermark, signature, logo, branding, people, faces, human hands, messy, chaotic",
+  "rationale": "An isometric cutaway perfectly illustrates the systemic architecture of a live control plane, showing how multiple agent pathways are actively governed and routed without using literal server racks or plumbing metaphors.",
   "cue": "the runtime enforcement layer",
-  "subject": "an isometric mechanical routing bay with an active clamping module",
-  "core_thesis": "Non-human identities are now the primary breach route, requiring live runtime enforcement over static paper policies.",
-  "core_conflict": "Live, unchecked autonomous agent access versus static, ineffective paper rules.",
-  "composition": "extreme asymmetry with generous negative space",
-  "alt_text": "Stolen Machine Identities. Isometric technical cutaway of a mechanical routing bay with an active locking module on a draftin",
-  "caption": "Stolen Machine Identities: The blind spot in AI agent governance and access control.",
-  "title": "Stolen Machine Identities",
+  "subject": "a technical cutaway of a precision optical routing bay with a central beam-splitter",
+  "core_thesis": "Non-human identities are now the primary breach vector, requiring a live runtime control plane to enforce boundaries that static policies cannot.",
+  "core_conflict": "Static paper policies versus the need for active, live runtime enforcement of autonomous AI agents.",
+  "composition": "extreme asymmetry, off-centre",
+  "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical routing bay with a centr",
+  "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
+  "title": "The AI Agent Blind Spot",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.png",
   "local_path": "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1652978,
-  "sha256": "sha256:bac8f11caf0711cec46a5d9fef35c1aff9edfca3829d14cbc21f3f225e8462dc",
+  "bytes": 2708220,
+  "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c",
   "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5",
   "source_chars": 3529,
-  "task_id": "eedc058c3a3694e83bd879e040a6a9c8",
+  "task_id": "d9147037e31b0fcdb488d0747aa95800",
   "credits": 18.0,
-  "cost_ms": 32,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_4f0b6df8a6abe7cda07afe8a4705401f.png",
+  "cost_ms": 63,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1d64f6a4f3aca0d9565a723a79e3ac06.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An engineered mechanical routing bay assembly resting on a textured drafting table. The structure features brushed steel conduits, modular data trays, and one prominent interlocking gate clamping down on a central channel to represent active enforcement. Flat muted palette with a single amber accent color on the clamp. Thin consistent line weight, one directional key light casting a deep shadow, unlabelled, extreme asymmetry with generous empty margin.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry, placed off-centre on the lower right with generous empty margin. A technical cutaway of a precision optical routing bay resting on a dark matte drafting surface. The assembly features modular processing trays, optical channels, and a central crystalline beam-splitter actively gating and redirecting parallel amber light pathways. Flat muted palette with one warm amber accent colour, thin consistent line weight, visible depth to the trays and connectors, one directional key light throwing a sharp cast shadow. No text, no labels.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
+      "resolution": "2K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-09T01:28:46+00:00",
+  "generated_at": "2026-10-09T02:01:28+00:00",
   "overlay": {
-    "kicker": "ENTERPRISE AI // AGENT SECURITY",
-    "title": "STOLEN MACHINE IDENTITIES",
-    "hook": "The blind spot in AI agent governance and access control",
+    "kicker": "AI GOVERNANCE // MACHINE IDENTITIES",
+    "title": "THE AI AGENT BLIND SPOT",
+    "hook": "How stolen machine identities expose the enterprise",
     "anchor": "top-left",
-    "light": false,
+    "light": true,
     "scrim": 0,
-    "contrast": 16.07,
+    "contrast": 7.87,
     "target": 4.5,
-    "clutter": 0.201,
+    "clutter": 0.03,
     "region_rgb": [
-      240,
-      237,
-      230
+      65,
+      67,
+      72
     ],
     "binding_rgb": [
-      243,
-      239,
-      230
+      71,
+      72,
+      77
     ],
     "title_lines": [
-      "STOLEN MACHINE",
-      "IDENTITIES"
-    ]
+      "THE AI AGENT",
+      "BLIND SPOT"
+    ],
+    "generated_at": "2026-10-09T02:01:28+00:00"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 10,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -79,76 +79,105 @@
       "title": "Cloud-Repatriation-Pendulum",
       "bytes": 327524,
       "sha256": "sha256:bce7e8a94721f2a35ab483a89eaaec09"
+    },
+    {
+      "revision": 10,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, anamorphic 35mm look. A massive, intricate brass pendulum suspended in a vast, brutalist architectural concrete void. The heavy, brushed brass counterweight hangs perfectly still, positioned off-centre in the right third of the frame, symbolizing steady and predictable gravity. A single, razor-thin blade of warm golden light cuts through deep blue atmospheric mist, striking the polished metal to create a glowing rim highlight. Deep shadows, crisp atmospheric depth, restrained teal-and-amber palette, wide establishing composition with generous negative space. Authentic material weight, no people.",
+      "task_id": "13444e278a860fd630b74c47eb7303a9",
+      "sha256": "sha256:f96a62210bc3991b9ab4b9527203a0adf2092807757aad348927f58deca6dc4e",
+      "generated_at": "2026-10-09T01:20:53+00:00",
+      "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd"
+    },
+    {
+      "revision": 11,
+      "alt_text": "A heavy brushed-steel modular block locking into a fixed aluminum chassis rail on a concrete surface.",
+      "caption": "The strict math of physical infrastructure offers predictable savings for steady workloads.",
+      "title": "Owned Infrastructure Break-Even",
+      "bytes": 2438490,
+      "sha256": "sha256:354191967aa7c988134aaf18c4a221e2"
+    },
+    {
+      "revision": 12,
+      "alt_text": "The Cloud Repatriation Math. A heavy brushed-steel modular block locking into a fixed aluminum chassis rail on a concrete sur",
+      "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
+      "title": "The Cloud Repatriation Math",
+      "bytes": 1886101,
+      "sha256": "sha256:18132b9f77f8db2269a537d945bf6abea1b24367363dca73f7cffeeccdf90f5e"
     }
   ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, anamorphic 35mm look. A massive, intricate brass pendulum suspended in a vast, brutalist architectural concrete void. The heavy, brushed brass counterweight hangs perfectly still, positioned off-centre in the right third of the frame, symbolizing steady and predictable gravity. A single, razor-thin blade of warm golden light cuts through deep blue atmospheric mist, striking the polished metal to create a glowing rim highlight. Deep shadows, crisp atmospheric depth, restrained teal-and-amber palette, wide establishing composition with generous negative space. Authentic material weight, no people.",
-  "negative_prompt": "text, typography, letters, numbers, watermark, logo, branding, face, hands, people",
-  "rationale": "A cinematic still allows us to use physical weight and gravity as a metaphor for steady, predictable workloads and the heavy reality of owned infrastructure, avoiding literal server rack clich\u00e9s.",
-  "cue": "a choice with clear math",
-  "subject": "a massive intricate brass pendulum suspended in an atmospheric architectural void",
-  "core_thesis": "Moving steady workloads off the cloud to owned hardware drastically cuts costs by shifting from unpredictable rental fees to fixed physical investments.",
-  "core_conflict": "The high, variable cost of renting cloud space for flat workloads versus the heavy but fixed capital investment of owning physical hardware.",
-  "composition": "extreme asymmetry with the heavy pendulum off-centre",
-  "alt_text": "The Cloud Bill Break-Even. A heavy brass pendulum suspended in a dark, misty concrete corridor lit by a single beam of golden",
-  "caption": "The Cloud Bill Break-Even: Why moving steady apps to owned gear cuts spend in half.",
-  "title": "The Cloud Bill Break-Even",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a textured concrete surface. Extreme asymmetric composition, hero object commanding the right third, generous negative space on the left. The structure consists of a heavy brushed-steel modular block firmly sliding and locking into a rigid, anodized aluminum chassis rail. Matte muted palette of industrial silver and deep grey, hard clean engineered edges. One directional spotlight from the top left throwing a long, sharp cast shadow across the weathered concrete, emphasizing the physical weight and permanence of the assembly.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermark, logo, bare shapes",
+  "rationale": "A component assembly treatment perfectly captures the strict math and physical reality of repatriating workloads. The heavy, modular block locking into place symbolizes the return to fixed, owned infrastructure over abstract rented space.",
+  "cue": "onto its own gear",
+  "subject": "a heavy brushed-steel modular block locking into a fixed chassis rail",
+  "core_thesis": "Moving steady workloads from rented cloud space to owned physical gear slashes costs by half or more due to the strict math of fixed hardware.",
+  "core_conflict": "The inflated cost of wasted rented capacity versus the fixed, predictable economics of owned physical infrastructure.",
+  "composition": "Extreme asymmetric composition",
+  "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block locking into a fixed aluminum c",
+  "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
+  "title": "The Cloud Repatriation Math",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 269199,
-  "sha256": "sha256:f96a62210bc3991b9ab4b9527203a0adf2092807757aad348927f58deca6dc4e",
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1845476,
+  "sha256": "sha256:0ff51821a99e06634da8ab4ad250a698fff934af3e637e9b85c02f6a9b928202",
   "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd",
   "source_chars": 4169,
-  "task_id": "13444e278a860fd630b74c47eb7303a9",
-  "credits": 5.0,
-  "cost_ms": 17,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/13444e278a860fd630b74c47eb7303a9_1791508849639.jpg",
+  "task_id": "df6cca46e4ba2401e5c606393a8b8e61",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_115f1e826f315e1ce919717c637c088d.png",
   "provider_request": {
-    "model": "flux-2/pro-text-to-image",
+    "model": "nano-banana-pro",
     "input": {
-      "prompt": "Cinematic film still, anamorphic 35mm look. A massive, intricate brass pendulum suspended in a vast, brutalist architectural concrete void. The heavy, brushed brass counterweight hangs perfectly still, positioned off-centre in the right third of the frame, symbolizing steady and predictable gravity. A single, razor-thin blade of warm golden light cuts through deep blue atmospheric mist, striking the polished metal to create a glowing rim highlight. Deep shadows, crisp atmospheric depth, restrained teal-and-amber palette, wide establishing composition with generous negative space. Authentic material weight, no people.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a textured concrete surface. Extreme asymmetric composition, hero object commanding the right third, generous negative space on the left. The structure consists of a heavy brushed-steel modular block firmly sliding and locking into a rigid, anodized aluminum chassis rail. Matte muted palette of industrial silver and deep grey, hard clean engineered edges. One directional spotlight from the top left throwing a long, sharp cast shadow across the weathered concrete, emphasizing the physical weight and permanence of the assembly.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K"
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
     }
   },
-  "generated_at": "2026-10-09T01:20:53+00:00",
+  "generated_at": "2026-10-09T02:07:45+00:00",
   "overlay": {
-    "kicker": "CLOUD ECONOMICS // SERVER COSTS",
-    "title": "THE CLOUD BILL BREAK-EVEN",
-    "hook": "Why moving steady apps to owned gear cuts spend in half",
+    "kicker": "INFRASTRUCTURE // CLOUD REPATRIATION",
+    "title": "THE CLOUD REPATRIATION MATH",
+    "hook": "The math behind moving steady apps to owned gear",
     "anchor": "top-left",
     "light": true,
     "scrim": 90,
-    "contrast": 5.58,
+    "contrast": 5.63,
     "target": 5.5,
-    "clutter": 0.41,
+    "clutter": 0.395,
     "region_rgb": [
-      89,
-      103,
-      109
+      86,
+      81,
+      70
     ],
     "binding_rgb": [
-      154,
-      163,
-      162
+      152,
+      144,
+      131
     ],
     "title_lines": [
-      "THE CLOUD BILL",
-      "BREAK-EVEN"
-    ]
+      "THE CLOUD",
+      "REPATRIATION MATH"
+    ],
+    "generated_at": "2026-10-09T02:07:45+00:00"
   }
 }

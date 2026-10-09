@@ -14,10 +14,10 @@ meta_title_source: "derived_from_title"
 meta_description: "A load stolen by a fake carrier never shows up as a late load."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/control-tower-silent-exception/featured.jpg"
-image_style: "architectural_night"
+image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Fake Carrier Blind Spot. An empty, brightly lit loading dock bay stands out in a long row of closed bays at a distributio"
-image_caption: "The Fake Carrier Blind Spot: Why control towers fail to spot fake carrier theft."
+image_alt: "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests under a harsh spotlight at a"
+image_caption: "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

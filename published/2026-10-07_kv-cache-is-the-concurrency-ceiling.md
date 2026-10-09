@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "The Real GPU Bottleneck. Modular mechanical assembly of interlocking steel memory blades in a rigid chassis bay, lit by a sin"
-image_caption: "The Real GPU Bottleneck: Why memory limits LLM serving before math does."
+image_alt: "The KV Cache Bottleneck. The KV Cache Bottleneck. A heavy machined aluminum bay divided into precise slots with interlocking "
+image_caption: "The KV Cache Bottleneck: Why LLMs run out of memory before they run out of math."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

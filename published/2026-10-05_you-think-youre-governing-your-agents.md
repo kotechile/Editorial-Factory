@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Stolen Machine Identities. Isometric technical cutaway of a mechanical routing bay with an active locking module on a draftin"
-image_caption: "Stolen Machine Identities: The blind spot in AI agent governance and access control."
+image_alt: "The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical routing bay with a centr"
+image_caption: "The AI Agent Blind Spot: How stolen machine identities expose the enterprise."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

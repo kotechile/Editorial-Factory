@@ -54,6 +54,7 @@ FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
 SAFE_W, SAFE_H = 0.54, 0.50          # the scrim box, as a fraction of the frame
+MAX_WIDTH = 1920                     # delivery size; WordPress rescales anything above 2560
 KICKER_MAX, TITLE_MAX, HOOK_MAX = 46, 34, 58
 KICKER_PT, TITLE_PT, HOOK_PT = 0.029, 0.086, 0.036    # of the frame height
 # (kicker, title, hook) rgb, for a dark frame and for a light one. The scrim strength is not a
@@ -338,11 +339,20 @@ def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict) -> dic
         for line in lines:
             d.text((x, ly), line, font=font, fill=(*rgb, alpha))
             ly += int(font.size * 1.18)
-    Image.alpha_composite(base, overlay).convert("RGB").save(out_path, quality=95)
+    out = Image.alpha_composite(base, overlay).convert("RGB")
+    # Delivery size, not render size. Above 2560px WordPress silently rescales the upload (so the
+    # CMS can never serve the staged bytes and the desk's own read-back fails) — and a 5MB header is
+    # a page-weight problem on its own. The type is drawn first, so everything scales together.
+    if out.width > MAX_WIDTH:
+        out = out.resize((MAX_WIDTH, round(out.height * MAX_WIDTH / out.width)), Image.LANCZOS)
+    if out_path.suffix.lower() in (".jpg", ".jpeg"):
+        out.save(out_path, quality=90, optimize=True, progressive=True)
+    else:
+        out.save(out_path, optimize=True)
     return {**p, "light": light_ink, "ink": ink, "scrim": scrim, "scrim_tone": tone,
             "region_rgb": mean_rgb, "binding_rgb": binding, "clutter": round(clutter, 3),
             "contrast": round(contrast, 2), "target": round(target, 2),
-            "title_lines": t_lines, "title_px": f_t.size}
+            "title_lines": t_lines, "title_px": f_t.size, "size": out.size}
 
 
 def base_path(img: pathlib.Path) -> pathlib.Path:
@@ -369,10 +379,14 @@ def apply_to_slug(slug: str, *, llm=None, dry_run: bool = False, force_copy: dic
     side = json.loads(side_path.read_text())
     img = ROOT / side["local_path"]
     clean_img = base_path(img)
-    for stale in img.parent.glob(f"{img.stem}.base.*"):     # a regeneration can change the extension
-        if stale != clean_img:
+    # Is the staged image a NEW render, or the copy this step already composited? The base must be
+    # refreshed when the render changed, or a regeneration is silently discarded and the type lands
+    # on the previous artwork. `generated_at` is the creator's stamp for the render itself.
+    prev = side.get("overlay") or {}
+    regenerated = prev.get("generated_at") != side.get("generated_at")
+    if regenerated or not clean_img.exists():
+        for stale in img.parent.glob(f"{img.stem}.base.*"):    # a regeneration may change the suffix
             stale.unlink()
-    if not clean_img.exists():                     # keep the pristine render beside the composited one
         shutil.copy2(img, clean_img)
     placement = composite(clean_img, img, copy)
     blob = img.read_bytes()
@@ -383,7 +397,8 @@ def apply_to_slug(slug: str, *, llm=None, dry_run: bool = False, force_copy: dic
     side["sha256"] = "sha256:" + hashlib.sha256(blob).hexdigest()
     side["overlay"] = {**copy, **{k: placement[k] for k in
                                    ("anchor", "light", "scrim", "contrast", "target", "clutter",
-                                    "region_rgb", "binding_rgb", "title_lines")}}
+                                    "region_rgb", "binding_rgb", "title_lines")},
+                       "generated_at": side["generated_at"]}
     head = sentence_case(copy["title"])
     side["alt_text"] = f"{head}. {side['alt_text']}"[:125]
     side["caption"] = (f"{head}: {copy['hook']}." if copy.get("hook") else head + ".")[:200]
