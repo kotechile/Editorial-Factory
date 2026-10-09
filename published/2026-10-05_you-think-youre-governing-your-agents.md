@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical routing bay with a centr"
+image_alt: "The AI Agent Blind Spot. The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical"
 image_caption: "The AI Agent Blind Spot: How stolen machine identities expose the enterprise."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

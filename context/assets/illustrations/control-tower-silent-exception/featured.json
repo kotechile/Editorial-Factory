@@ -1,6 +1,6 @@
 {
   "slug": "control-tower-silent-exception",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -105,6 +105,14 @@
       "title": "The Fake Carrier Blind Spot",
       "bytes": 248192,
       "sha256": "sha256:4e1adaad06215287e1bee9a5f2607978238dc468fc565d1c1a00aadb6209d959"
+    },
+    {
+      "revision": 13,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests under a harsh spotlight at a",
+      "caption": "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 166859,
+      "sha256": "sha256:9e7f0d33763241c7897d7adb2b2125e05124d42385a4b7b5912cbe283547ca94"
     }
   ],
   "style": "cinematic_still",
@@ -123,7 +131,7 @@
   "core_thesis": "Identity fraud at pickup bypasses automated control tower alerts, meaning the costliest theft is the one the system fails to flag.",
   "core_conflict": "Automated exception frequency vs. catastrophic loss severity at the pickup dock.",
   "composition": "extreme asymmetry, foreground off-centre",
-  "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests under a harsh spotlight at a",
+  "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests",
   "caption": "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts.",
   "title": "The Fake Carrier Blind Spot",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

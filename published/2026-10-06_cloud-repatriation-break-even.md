@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/cloud-repatriation-break-even/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block locking into a fixed aluminum c"
+image_alt: "The Cloud Repatriation Math. The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block lo"
 image_caption: "The Cloud Repatriation Math: The math behind moving steady apps to owned gear."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -105,6 +105,14 @@
       "title": "The AI Agent Audit Trail",
       "bytes": 324258,
       "sha256": "sha256:daf494ad401150a885b4b27d3ca108991e432a9a56a9deb626a01e4655caa393"
+    },
+    {
+      "revision": 13,
+      "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alignment tool on a dark mahog",
+      "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
+      "title": "The AI Agent Audit Trail",
+      "bytes": 221367,
+      "sha256": "sha256:d4872dcfa84c074e09b833f609f536553ce3c64faf1f2c8670a22962db20265a"
     }
   ],
   "style": "document_flatlay",
@@ -123,7 +131,7 @@
   "core_thesis": "An agent action record is only viable evidence if it completely captures and replays the decision-making process for long-term regulatory review.",
   "core_conflict": "Comprehensive, immutable data capture versus the fleeting nature of standard application logs and strict storage timelines.",
   "composition": "extreme asymmetric top-down",
-  "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alignment tool on a dark mahog",
+  "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig",
   "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
   "title": "The AI Agent Audit Trail",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -135,8 +143,8 @@
   "local_path": "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 221367,
-  "sha256": "sha256:d4872dcfa84c074e09b833f609f536553ce3c64faf1f2c8670a22962db20265a",
+  "bytes": 224747,
+  "sha256": "sha256:d61d91cc45894a417ebc3ba7bf897dcdc83acf1dd5c621f942c0a6969880dc9b",
   "source_hash": "sha256:c444586232bf864156d0a4b263f3569b",
   "source_chars": 5203,
   "task_id": "a73808a55815b86496bbef15d4d3fb99",
@@ -156,21 +164,21 @@
     "kicker": "AI GOVERNANCE // AGENT AUDIT LOGS",
     "title": "THE AI AGENT AUDIT TRAIL",
     "hook": "Building logs that can replay an agent's exact choice",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 75,
-    "contrast": 5.55,
+    "scrim": 45,
+    "contrast": 5.76,
     "target": 5.5,
-    "clutter": 0.36,
+    "clutter": 0.3,
     "region_rgb": [
-      94,
-      76,
-      65
+      73,
+      58,
+      49
     ],
     "binding_rgb": [
-      149,
-      131,
-      121
+      125,
+      109,
+      94
     ],
     "title_lines": [
       "THE AI AGENT",

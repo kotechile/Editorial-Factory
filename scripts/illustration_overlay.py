@@ -55,6 +55,7 @@ FONT_REG = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
 SAFE_W, SAFE_H = 0.54, 0.50          # the scrim box, as a fraction of the frame
 MAX_WIDTH = 1920                     # delivery size; WordPress rescales anything above 2560
+SWITCH_MARGIN = 0.90                 # leave the top-left default only if a corner is 10% emptier
 KICKER_MAX, TITLE_MAX, HOOK_MAX = 46, 34, 58
 KICKER_PT, TITLE_PT, HOOK_PT = 0.029, 0.086, 0.036    # of the frame height
 # (kicker, title, hook) rgb, for a dark frame and for a light one. The scrim strength is not a
@@ -246,11 +247,11 @@ def plan(img) -> dict:
                "bottom-left": (0, h - bh), "bottom-right": (w - bw, h - bh)}
     order = ["top-left", "top-right", "bottom-left", "bottom-right"]
     busy = {name: _busiest(img, (x, y, x + bw, y + bh)) for name, (x, y) in corners.items()}
-    # The owner's design anchors top-left; another corner only wins if it is clearly emptier.
-    best = "top-left"
-    for name in order:
-        if busy[name] < busy[best] * 0.65:
-            best = name
+    # The owner's design anchors top-left, so keep it unless another corner is MEANINGFULLY emptier.
+    # The margin is what makes this work: requiring a corner to be half as busy (the first cut) meant
+    # the anchor never moved and the automatic placement looked broken.
+    emptiest = min(order, key=lambda name: busy[name])
+    best = "top-left" if busy["top-left"] <= busy[emptiest] / SWITCH_MARGIN else emptiest
     x, y = corners[best]
     return {"anchor": best, "x": x, "y": y, "busy": {k: round(v, 4) for k, v in busy.items()}}
 
@@ -299,14 +300,17 @@ def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict) -> dic
     if copy.get("hook"):
         blocks.append(("hook", [copy["hook"]],
                        _fit(probe, copy["hook"], FONT_REG, int(h * HOOK_PT), column)))
-    # Block extents, so the ink is chosen against the pixels the type really covers.
-    top = y
-    cursor = y
-    spans = []
+    # Block extents, so the ink is chosen against the pixels the type really covers — and so a
+    # bottom anchor cannot push the last line off the frame.
+    spans, cursor = [], 0
     for kind, lines, font in blocks:
         height = int(font.size * (1.45 if kind == "kicker" else 1.18))
-        spans.append((kind, lines, font, cursor))
+        spans.append([kind, lines, font, cursor])
         cursor += height * len(lines) if kind == "title" else height
+    total = cursor
+    y = max(0, min(y, h - total - int(h * 0.02)))
+    spans = [[k, l, f, y + rel] for k, l, f, rel in spans]
+    top, cursor = y, y + total
     block_box = (max(0, x - pad // 2), max(0, top - int(h * 0.012)),
                  min(w, x + column + pad // 2), min(h, cursor + int(h * 0.012)))
     mean_rgb = _region_rgb(base, block_box)

@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/control-tower-silent-exception/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests under a harsh spotlight at a"
+image_alt: "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests"
 image_caption: "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

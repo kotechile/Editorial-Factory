@@ -1,6 +1,6 @@
 {
   "slug": "multi-agent-coordination-topology-cost",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -131,6 +131,14 @@
       "title": "Pricing Agent Topologies",
       "bytes": 1047950,
       "sha256": "sha256:1273023686960454111dbbfd209218e26fae74129e71addadf82f9edd8ec2e9e"
+    },
+    {
+      "revision": 16,
+      "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a central channel into multiple",
+      "caption": "Pricing Agent Topologies: Coordination mode is your biggest agent budget line.",
+      "title": "Pricing Agent Topologies",
+      "bytes": 1023501,
+      "sha256": "sha256:8c2fafa8266d2c70afbbab8bddca060b20f049ef45dcdaa5cb10be21ba875fa4"
     }
   ],
   "style": "clay_render",
@@ -149,7 +157,7 @@
   "core_thesis": "Coordination topology in multi-agent systems is a fundamental economic choice between expensive parallel fan-out and efficient sequential handoffs.",
   "core_conflict": "Capability breadth versus token cost and systemic efficiency.",
   "composition": "Asymmetric diagonal layout with heavy negative space on the left",
-  "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a central channel into multiple",
+  "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen",
   "caption": "Pricing Agent Topologies: Coordination mode is your biggest agent budget line.",
   "title": "Pricing Agent Topologies",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -161,8 +169,8 @@
   "local_path": "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1023501,
-  "sha256": "sha256:8c2fafa8266d2c70afbbab8bddca060b20f049ef45dcdaa5cb10be21ba875fa4",
+  "bytes": 1017059,
+  "sha256": "sha256:f51b19cf5f3f021756269a647c2fed48199dfb27e56c68a3bd46689f076727de",
   "source_hash": "sha256:30717e6ccd83aad0c700a41dbb2fe977",
   "source_chars": 4204,
   "task_id": "c30cf4e1e6b9af959989ede46bfb0296",
@@ -184,21 +192,21 @@
     "kicker": "MULTI-AGENT SYSTEMS // COST CONTROL",
     "title": "PRICING AGENT TOPOLOGIES",
     "hook": "Coordination mode is your biggest agent budget line",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": false,
     "scrim": 0,
-    "contrast": 9.11,
-    "target": 4.5,
-    "clutter": 0.156,
+    "contrast": 9.01,
+    "target": 5.5,
+    "clutter": 0.344,
     "region_rgb": [
-      213,
-      213,
-      203
+      202,
+      202,
+      193
     ],
     "binding_rgb": [
-      216,
-      216,
-      206
+      215,
+      215,
+      203
     ],
     "title_lines": [
       "PRICING AGENT",

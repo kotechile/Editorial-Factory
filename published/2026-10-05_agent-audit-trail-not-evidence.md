@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alignment tool on a dark mahog"
+image_alt: "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig"
 image_caption: "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

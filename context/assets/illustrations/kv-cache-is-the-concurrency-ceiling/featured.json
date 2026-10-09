@@ -1,6 +1,6 @@
 {
   "slug": "kv-cache-is-the-concurrency-ceiling",
-  "revision": 21,
+  "revision": 22,
   "history": [
     {
       "revision": 1,
@@ -177,6 +177,14 @@
       "title": "The KV Cache Bottleneck",
       "bytes": 1494246,
       "sha256": "sha256:98e685b9b0dc0f9b7de9f235d8cb83cbd3407410718d4a187a3ab21ab50cda51"
+    },
+    {
+      "revision": 21,
+      "alt_text": "The KV Cache Bottleneck. The KV Cache Bottleneck. A heavy machined aluminum bay divided into precise slots with interlocking ",
+      "caption": "The KV Cache Bottleneck: Why LLMs run out of memory before they run out of math.",
+      "title": "The KV Cache Bottleneck",
+      "bytes": 1470714,
+      "sha256": "sha256:0c061f6aa4cc74737709f7c3123dc8e4135c9646471ccc1d8fb88cf30a070f1b"
     }
   ],
   "style": "component_assembly",
@@ -195,7 +203,7 @@
   "core_thesis": "The capacity of a GPU to serve multiple users is bottlenecked by the memory required for the key-value cache, not its mathematical processing power.",
   "core_conflict": "Available compute speed versus the hard physical limits of cache memory allocation.",
   "composition": "Asymmetric, off-centre layout with generous negative space",
-  "alt_text": "The KV Cache Bottleneck. The KV Cache Bottleneck. A heavy machined aluminum bay divided into precise slots with interlocking ",
+  "alt_text": "The KV Cache Bottleneck. The KV Cache Bottleneck. The KV Cache Bottleneck. A heavy machined aluminum bay divided into precise",
   "caption": "The KV Cache Bottleneck: Why LLMs run out of memory before they run out of math.",
   "title": "The KV Cache Bottleneck",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

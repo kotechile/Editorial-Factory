@@ -1,6 +1,6 @@
 {
   "slug": "you-think-youre-governing-your-agents",
-  "revision": 14,
+  "revision": 15,
   "history": [
     {
       "revision": 1,
@@ -113,6 +113,14 @@
       "title": "The AI Agent Blind Spot",
       "bytes": 5116990,
       "sha256": "sha256:14314097d4cf5b545ab6deb2a24647fd831945ce0630fc65fad1b1d1b174dd0c"
+    },
+    {
+      "revision": 14,
+      "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical routing bay with a centr",
+      "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
+      "title": "The AI Agent Blind Spot",
+      "bytes": 2708220,
+      "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c"
     }
   ],
   "style": "technical_isometric",
@@ -131,7 +139,7 @@
   "core_thesis": "Non-human identities are now the primary breach vector, requiring a live runtime control plane to enforce boundaries that static policies cannot.",
   "core_conflict": "Static paper policies versus the need for active, live runtime enforcement of autonomous AI agents.",
   "composition": "extreme asymmetry, off-centre",
-  "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical routing bay with a centr",
+  "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical",
   "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
   "title": "The AI Agent Blind Spot",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

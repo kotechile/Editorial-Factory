@@ -12,7 +12,7 @@ meta_description: "Anthropic's agent swarm beat a single model by 90.2% and used
 image_path: "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.png"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a central channel into multiple"
+image_alt: "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen"
 image_caption: "Pricing Agent Topologies: Coordination mode is your biggest agent budget line."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

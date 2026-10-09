@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Buying The LLM Judge. Buying The LLM Judge. An optical beam-splitter prism and calibration lens fracturing a single beam of l"
+image_alt: "Buying The LLM Judge. Buying The LLM Judge. Buying The LLM Judge. An optical beam-splitter prism and calibration lens fractur"
 image_caption: "Buying The LLM Judge: The costly race to own unreliable AI quality scores."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

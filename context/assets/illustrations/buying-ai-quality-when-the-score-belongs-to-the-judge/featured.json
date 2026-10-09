@@ -1,6 +1,6 @@
 {
   "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -105,6 +105,14 @@
       "title": "Buying The LLM Judge",
       "bytes": 482864,
       "sha256": "sha256:89ce286392d95a5fb96588665bbe5a1f837a4355962de955f579b2825740171b"
+    },
+    {
+      "revision": 13,
+      "alt_text": "Buying The LLM Judge. Buying The LLM Judge. An optical beam-splitter prism and calibration lens fracturing a single beam of l",
+      "caption": "Buying The LLM Judge: The costly race to own unreliable AI quality scores.",
+      "title": "Buying The LLM Judge",
+      "bytes": 328075,
+      "sha256": "sha256:679ed7b56094067bf54b81628a5e31346e5491c6ccb67e5be90b162f5aff28d8"
     }
   ],
   "style": "editorial_macro",
@@ -123,7 +131,7 @@
   "core_thesis": "The AI quality score is entirely dependent on the specific 'judge' model used, making the benchmark a moving, subjective target.",
   "core_conflict": "Fixed observability dashboards vs. the constantly changing, subjective nature of the underlying LLM judge.",
   "composition": "extreme asymmetry, hero object on the right third",
-  "alt_text": "Buying The LLM Judge. Buying The LLM Judge. An optical beam-splitter prism and calibration lens fracturing a single beam of l",
+  "alt_text": "Buying The LLM Judge. Buying The LLM Judge. Buying The LLM Judge. An optical beam-splitter prism and calibration lens fractur",
   "caption": "Buying The LLM Judge: The costly race to own unreliable AI quality scores.",
   "title": "Buying The LLM Judge",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

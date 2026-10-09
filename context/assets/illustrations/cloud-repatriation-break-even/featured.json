@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -105,6 +105,14 @@
       "title": "The Cloud Repatriation Math",
       "bytes": 1886101,
       "sha256": "sha256:18132b9f77f8db2269a537d945bf6abea1b24367363dca73f7cffeeccdf90f5e"
+    },
+    {
+      "revision": 13,
+      "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block locking into a fixed aluminum c",
+      "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
+      "title": "The Cloud Repatriation Math",
+      "bytes": 1845476,
+      "sha256": "sha256:0ff51821a99e06634da8ab4ad250a698fff934af3e637e9b85c02f6a9b928202"
     }
   ],
   "style": "component_assembly",
@@ -123,7 +131,7 @@
   "core_thesis": "Moving steady workloads from rented cloud space to owned physical gear slashes costs by half or more due to the strict math of fixed hardware.",
   "core_conflict": "The inflated cost of wasted rented capacity versus the fixed, predictable economics of owned physical infrastructure.",
   "composition": "Extreme asymmetric composition",
-  "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block locking into a fixed aluminum c",
+  "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block lo",
   "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
   "title": "The Cloud Repatriation Math",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
