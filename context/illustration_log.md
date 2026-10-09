@@ -131,3 +131,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-08 | `multi-agent-coordination-topology-cost` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg` |
 | 2026-10-08 | `you-think-youre-governing-your-agents` | enterprise_ai_governance | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/you-think-youre-governing-your-agents/featured.png` |
 | 2026-10-08 | `agent-memory-poisoning-write-path` | agentic_resilience_failure | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-poisoning-write-path/featured.png` |
+| 2026-10-08 | `agent-memory-poisoning-write-path` | agentic_resilience_failure | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-poisoning-write-path/featured.png` |
+| 2026-10-09 | `agent-memory-poisoning-write-path` | agentic_resilience_failure | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/agent-memory-poisoning-write-path/featured.jpg` |
