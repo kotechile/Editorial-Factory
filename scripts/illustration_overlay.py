@@ -13,11 +13,11 @@ dark photograph:
   * the ink and the scrim follow the luminance under the text, because a light image swallows light
     type whole (the first article this ran on came back near-invisible on a cream background).
 
-Sizes, colours and anchors are unchanged from the owner's design:
-  kicker    Liberation Sans Bold, 2.2% of height, warm gold   (230,185,115) on dark, dark amber on light
-  title     Liberation Sans Bold, 6.2% of height, white on dark, near-black on light
-  hook      Liberation Sans Regular, 2.7% of height, slate on dark, warm grey on light
-  scrim     40% of the height x 44% of the width, fading out, strength by luminance
+Sizes, colours and anchors:
+  kicker    Liberation Sans Bold, 2.9% of height, warm gold (238,196,120) on dark, dark amber on light
+  title     Liberation Sans Bold, 8.6% of height, off-white (240,238,233) on dark, dark gray / charcoal (45,49,55) on light
+  hook      Liberation Sans Regular, 3.6% of height, soft slate on dark, slate charcoal on light
+  scrim     safe box fading out, strength by luminance
   saved     quality 95
 
 The three lines are written for the article, not derived from it (a section label is not the
@@ -54,13 +54,12 @@ FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
 SAFE_W, SAFE_H = 0.54, 0.50          # the scrim box, as a fraction of the frame
-LIGHT = 0.52                         # above this mean luminance the frame is treated as light
 KICKER_MAX, TITLE_MAX, HOOK_MAX = 46, 34, 58
 KICKER_PT, TITLE_PT, HOOK_PT = 0.029, 0.086, 0.036    # of the frame height
-# (kicker, title, hook) rgb, for a dark frame and for a light one
-INK_DARK = ((238, 196, 120), (255, 255, 255), (214, 222, 230))
-INK_LIGHT = ((150, 106, 18), (18, 20, 24), (62, 70, 80))
-SCRIM_DARK, SCRIM_LIGHT = 135, 95    # peak alpha of the corner scrim
+# (kicker, title, hook) rgb, for a dark frame and for a light one. The scrim strength is not a
+# constant: it is derived per image by `_choose_ink`, from the pixels under the type.
+INK_DARK = ((238, 196, 120), (240, 238, 233), (214, 222, 230))
+INK_LIGHT = ((150, 106, 18), (45, 49, 55), (62, 70, 80))
 
 ACRONYMS = {"AI", "ML", "LLM", "LLMS", "KV", "GPU", "GPUS", "CPU", "API", "APIS", "TCO", "ROI",
             "CFO", "CIO", "CTO", "SLA", "SLAS", "SaaS", "IOT", "RAG", "SQL", "ETL", "ERP", "CRM",
