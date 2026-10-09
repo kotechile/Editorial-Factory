@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T10:39:25Z",
+  "updated_at": "2026-10-09T11:07:06Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1075,6 +1075,24 @@
       "date": "2026-10-08",
       "public": true,
       "url": "https://giniloh.com/token-price-record-low-budget-overrun/"
+    },
+    {
+      "slug": "2026-10-09_staggered-lockup-six-selling-decisions",
+      "title": "SpaceX's Staggered Lockup: Six Windows, Not One",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "equity_career_strategist",
+      "date": "2026-10-09",
+      "public": false
     },
     {
       "slug": "2026-10-09_your-ev-is-now-a-home-battery-behind-a-paywall",
