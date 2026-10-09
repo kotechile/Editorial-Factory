@@ -149,3 +149,7 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-09 | `demurrage-invoice-30-day-clocks` | control_tower_exception_orchestration | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg` |
 | 2026-10-09 | `agent-memory-tiering-l1-l4` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png` |
 | 2026-10-09 | `fuel-surcharge-peg-mpg-audit` | supply_chain | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.png` |
+| 2026-10-09 | `kv-cache-is-the-concurrency-ceiling` | gpu_hardware | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png` |
+| 2026-10-09 | `kv-cache-is-the-concurrency-ceiling` | gpu_hardware | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png` |
+| 2026-10-09 | `kv-cache-is-the-concurrency-ceiling` | gpu_hardware | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png` |
+| 2026-10-09 | `kv-cache-is-the-concurrency-ceiling` | gpu_hardware | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/kv-cache-is-the-concurrency-ceiling/featured.png` |
