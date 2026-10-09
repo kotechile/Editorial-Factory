@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T20:06:16Z",
+  "updated_at": "2026-10-09T10:37:35Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1075,6 +1075,24 @@
       "date": "2026-10-08",
       "public": true,
       "url": "https://giniloh.com/token-price-record-low-budget-overrun/"
+    },
+    {
+      "slug": "2026-10-09_your-ev-is-now-a-home-battery-behind-a-paywall",
+      "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-09",
+      "public": false
     }
   ]
 }

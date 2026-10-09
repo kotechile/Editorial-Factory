@@ -68,6 +68,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-08 | home_ops_execution | mechanics-lien-clock-payment-release | The Hidden Lien Clock Behind Your Remodel Payments | https://pressflow.aichieve.net/published/2026-10-08_mechanics-lien-clock-payment-release.md | reader site only |
 | 2026-10-08 | expat_cross_border_relocation | split-year-two-clock-seam | The Two Clocks That Decide Your First Year Abroad | https://pressflow.aichieve.net/published/2026-10-08_split-year-two-clock-seam.md | reader site only |
 | 2026-10-08 | demand_sensing_advanced_sop | safety-stock-forecast-error-not-demand-noise | Safety Stock Sizing: Why Your Buffer Uses the Wrong Number | https://pressflow.aichieve.net/published/2026-10-08_safety-stock-forecast-error-not-demand-noise.md | reader site only |
+| 2026-10-09 | resilient_home_assets | your-ev-is-now-a-home-battery-behind-a-paywall | Your EV Is Now a Home Battery — Behind a Paywall | https://pressflow.aichieve.net/published/2026-10-09_your-ev-is-now-a-home-battery-behind-a-paywall.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
