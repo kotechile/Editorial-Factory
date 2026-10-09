@@ -185,10 +185,24 @@ def apply_illustration(content: str, enabled: bool = True, *, pinned_style: str 
     # Supabase row use — so a frontmatter slug that still carries its date prefix cannot file the
     # image under a slug nothing else knows.
     header = dict(re.findall(r"^(slug|date):[ \t]*\"?([^\"\n]+?)\"?[ \t]*$", content, re.M))
+    bare_slug = normalize_slug(header.get("slug"), header.get("date")) or None
     try:
-        return illustration_creator.ensure_illustration(
-            content, slug=normalize_slug(header.get("slug"), header.get("date")) or None,
+        content, notes, meta = illustration_creator.ensure_illustration(
+            content, slug=bare_slug,
             pinned_style=pinned_style, pinned_model=pinned_model)
+        if bare_slug:
+            try:
+                import illustration_overlay
+                ov = illustration_overlay.apply_to_slug(bare_slug, article_md=content)
+                anchor = ov.get("placement", {}).get("anchor") or ov.get("anchor") or "placed"
+                notes.append(f"typography overlay applied ({anchor})")
+                side = illustration_creator.read_sidecar(bare_slug)
+                if side:
+                    content = illustration_creator._write_frontmatter(content, illustration_creator.frontmatter_fields(side))
+                    meta = illustration_creator.supabase_metadata(side)
+            except Exception as ov_err:
+                notes.append(f"typography overlay note: {ov_err}")
+        return content, notes, meta
     except Exception as exc:                            # noqa: BLE001 - surfaced, never swallowed
         return content, [f"featured image FAILED: {exc} — publishing without one; re-run "
                          f"`python3 scripts/illustration_creator.py <artifact> --apply`"], None

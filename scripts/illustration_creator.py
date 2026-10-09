@@ -755,7 +755,9 @@ over forty posts.
 CREATIVE PROCESS (MAGAZINE COVER STANDARD: CONCEPTUAL, ARRESTING, NON-LITERAL):
 You are an Art Director, NOT a search engine. We are so trained to be literal: asking for "work" yields a laptop on a coffee table; asking for "AI" yields a server rack in a datacenter. That is boring, generic stock filler.
 The header image is the first promise to the reader — the front door to the house. It must make someone pause, think, and click.
-- CAPTURE THE CORE THEME, MOOD, AND TENSION WITHOUT USING LITERAL ILLUSTRATIONS OF THE TOPIC.
+- THE HERO SUBJECT MUST DIRECTLY EMBODY THE STORY'S CORE PROTAGONIST, MACHINE, OR SYSTEMIC PHENOMENON:
+  * If the headline or lead names an electric vehicle (EV), car, cargo vessel, intermodal gantry, industrial turbine, or robotic arm: THAT MACHINE MUST BE THE HERO IN THE FRAME! Never hide or omit the vehicle/machine.
+  * Capture the core theme, mood, and tension through dramatic environmental storytelling and conflict (e.g. an unbranded EV powering a home during a blackout), NOT boring stock photos or cheesy clip art.
 - USE CONCEPTUAL AND SYMBOLIC VISUAL STORYTELLING: employ powerful metaphors, atmospheric elements, striking color palettes, and minimalistic yet impactful compositions.
 - REJECT BORING, STERILE TROPES — THIS IS THE FAILURE TO AVOID:
   * NEVER a floating abstract cube, a plain server rack on a neutral gradient, an empty floating widget, or an abstract object with no environment. No sterile object studies, no grey-on-grey.
@@ -774,7 +776,8 @@ You MUST execute this 4-step creative method:
 STEP 1: ANCHOR ON THE CORE THESIS ('ONE BIG THING') & EXTRACT THE GOVERNING CONFLICT
 Do NOT just read the headline. Read the ARTICLE SUBSTANTIVE CONTENT below carefully.
 - The hero subject MUST visually embody `One big thing: {fm.get('one_big_thing', '')}` — the single non-negotiable revelation and central assertion of the article.
-- BEWARE THE PERIPHERAL ANECDOTE TRAP: Articles frequently use minor examples, supporting anecdotes, or incidental props (e.g., a screw, a delivery van, a specific chip model, a pallet of scrap, a coffee cup, packaging tape) to illustrate an abstract concept. NEVER elevate an incidental anecdote into the hero subject! The hero subject must represent the GOVERNING MECHANISM or SYSTEMIC TENSION that drives the entire piece (e.g. formula error inflating safety stock vs actual demand variance, memory write-path persistence bypassing prompt guardrails, rising capital cost vs automation ROI).
+- BEWARE THE PERIPHERAL ANECDOTE TRAP: Articles frequently use minor examples, supporting anecdotes, or incidental props (e.g., a screw, a delivery van, a specific chip model, a pallet of scrap, a coffee cup, packaging tape) to illustrate an abstract concept. NEVER elevate an incidental anecdote into the hero subject!
+- BEWARE INVERTING THE PROTAGONIST: When an article is about an EV turning into a home backup battery, the EV is the primary protagonist, not an empty wall panel or meter box! Do not swap the main actor for a background utility box. If a car, truck, ship, or turbine is the subject of the story, depict the unbranded vehicle/machine in its narrative context!
 Identify the central tension, turning point, or real-world stake. What is the core dramatic conflict or economic pressure of this story? If two forces collide, compress, or trade off against each other (e.g. rising capital costs vs automation payoff, cloud monopoly vs open weights, memory bottlenecks throttling GPU compute), identify them.
 (State this in your `core_thesis`, `core_conflict`, and `main_idea` fields).
 
@@ -789,7 +792,7 @@ Where applicable, embody the core conflict through physical tension: a central o
   * For energy / utilities / infrastructure / climate: High-voltage transformer substations, utility-scale battery storage banks, industrial copper busbars, or wind/solar installations under dramatic skies.
   * For heavy industry / manufacturing / hardware: Precision CNC machining spindles throwing aluminum chips, glowing induction heating coils, robotic welding arms, or electronic PCB assembly benches.
   * For finance / tax / governance / legal: Forensic audit desks with heavy leather ledgers under focused desk lamps, embossed legal documents, brass balance scales, or vintage bank vault doors.
-  * For residential / home / property (home equity, home infrastructure, resilient-home assets, smart-home telemetry, home ops): A suburban house envelope at dusk lit by a single workman's site lamp, a garage utility wall of inverter, battery and service panel, a roofline solar array or heat-pump condenser in dawn light, or a homeowner's bench holding a remodel contract and permit drawings beside the hardware it governs.
+  * For residential / home / energy resilience (V2H, home batteries, microgrids): When the story is about vehicle-to-home (V2H) or electric vehicles backing up a home, the hero subject MUST BE an unbranded modern electric vehicle parked on a residential driveway or open garage at dusk / night, connected to the house by an illuminated heavy-duty charging umbilical cable, with warm light glowing from the house windows during a dark neighborhood outage (the car functioning as the household power plant). For general home infrastructure/equity: a suburban house envelope at dusk lit by a single workman's site lamp, a garage utility wall of inverter and service panel, a roofline solar array or heat-pump condenser in dawn light, or a homeowner's permit bench.
   * For career / compensation / equity: A desk with a dossier of vesting documents and a stock-certificate folio under a focused lamp, or an office removal crate beside a packed career file.
   * For personal tech / tinkering / micro-economics: A workbench scene with focused spotlighting — a filament-snarled aborted 3D print on a glass bed, precision hand tools over aluminum chips, or a bench of labelled component drawers.
   * For cross-border living / relocation: Two mismatched national documents on a desk, a moving crate beside a pair of time clocks, or an airport-side freight container under dawn haze.
@@ -842,7 +845,7 @@ mix of treatments — photographic (macro, architectural, document still life) A
 constructed (matte 3D clay renders, technical isometric cutaways, studio object shots, paper collages).
 3. EVERY MEDIUM MUST DEPICT A RECOGNIZABLE SUBJECT: In every treatment, the subject must be a \
 recognizable physical object, mechanical assembly, or clear symbolic silhouette derived from the \
-Headline and Excerpt.
+Headline and Excerpt. If the story is about an electric vehicle or machine, the unbranded vehicle/machine MUST be in the frame.
 4. NO BARE SHAPES OR ABSTRACT SCRAPS: Cubes, spheres, wedges, slabs, rectangles, amorphous blobs, \
 and random torn paper scraps are not subjects. A prompt whose subject is bare geometry or unformed \
 paper scraps is refused. Ground the subject in a tangible mechanism or symbolic object.
@@ -863,8 +866,7 @@ HARD RULES
 unreadable. Forbid them in `negative_prompt` — and keep that list to the legibility/brand set. \
 NEVER enumerate subject matter to exclude: the negative prompt is read by the image model as tokens \
 to draw, so "no abstract cubes" is an instruction to draw abstract cubes.
-- No real company's logo, packaging or product, no recognisable real person, and no human face \
-or hands in frame. Depict the mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
+- No real company's logo, wordmark, or brand badge: depict sleek, unbranded, beautifully designed machinery or vehicles. If the story is about Tesla, Ford, or BYD, depict a sleek unbranded modern electric vehicle with NO logos or emblems. NEVER omit the vehicle or machine itself when it is the subject of the story! No recognisable real person, and no human face or hands in frame. Depict the mechanism or symbolic object instead. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
 - Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \
@@ -1557,6 +1559,18 @@ def main() -> int:
                 md, root=root, force=args.force, pinned_style=args.style, pinned_model=args.model)
             for note in notes:
                 print(f"    - {note}")
+            slug = slug_from_frontmatter(new_md) or slug_from_frontmatter(md)
+            if slug:
+                try:
+                    import illustration_overlay
+                    ov = illustration_overlay.apply_to_slug(slug, article_md=new_md)
+                    anchor = ov.get("placement", {}).get("anchor") or ov.get("anchor") or "placed"
+                    print(f"    - typography overlay applied ({anchor})")
+                    side = read_sidecar(slug, root)
+                    if side:
+                        new_md = _write_frontmatter(new_md, frontmatter_fields(side))
+                except Exception as ov_err:
+                    print(f"    - typography overlay note: {ov_err}")
             if new_md != md:
                 path.write_text(new_md, encoding="utf-8")
                 print(f"  {path.name}: illustration written")

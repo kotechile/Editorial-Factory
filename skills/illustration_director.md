@@ -143,9 +143,12 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    The brief must carry a `cue`: a phrase of ≤10 words copied verbatim from the article that drove
    the treatment. The image must visually symbolize the concept in the Headline + Excerpt across all
    treatments — never generic office workers at desks, and never unformed paper scraps or bare geometry.
+   Crucially, the hero subject must directly embody the story's core protagonist, machine, or systemic phenomenon.
+   If the headline or lead names an electric vehicle (EV), car, aircraft, cargo vessel, intermodal gantry, industrial turbine, or robotic arm: **that machine must be the hero subject in the frame!**
+   Never invert the protagonist by replacing the central machine with an empty background utility box or meter panel.
    Crucially, the image must belong unmistakably to the domain of the story (e.g. AI/compute -> server
-   halls/wafers; energy -> substations/busbars; logistics -> freight hubs/staging bays; finance/legal ->
-   audits/ledgers/seals; residential/property -> a house envelope, a garage utility wall, a roofline array).
+   halls/wafers/optical routing; energy -> substations/busbars; logistics -> freight hubs/staging bays;
+   residential/property -> an unbranded EV plugged into the home during a blackout, a house envelope, a garage utility wall, a roofline array).
    The director's own vertical→domain list must name a domain for **every** vertical the desk publishes
    to (public.vertical_sites, mirrored in `context/verticals.json`), including the whole residential
    set that feeds wellroost.com — a list that stops at finance leaves half the desk with no grounding
@@ -164,8 +167,10 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    afterwards as a separate, measured step (`scripts/illustration_overlay.py`), because a deliberately
    conceptual image is often not descriptive enough on its own and the type has to carry the topic.
    It is never written by the image model, and it never carries the desk's own name.
-3. **No real brands, no recognisable people.** The source list is passed to the director as a
+3. **No real brand logos, no recognisable people.** The source list is passed to the director as a
    "never depict these companies" list; the brief must assert `depicts_real_brand: false`.
+   However, this applies to trademarks, emblems, and logos — it does **NOT** mean omitting the underlying vehicle or machine.
+   When the story is about Tesla, Ford, or BYD, depict a sleek, modern, unbranded generic electric vehicle without proprietary badges.
 4. **No stock-photo clichés** — light bulb, handshake, chess pieces, glowing brain, gavel, scales,
    thumbs-up, rockets, dartboards, puzzle pieces (`_CLICHE_RE`).
 5. **The treatment must be real in the prompt**: at least one word of the chosen treatment's

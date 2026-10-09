@@ -363,14 +363,15 @@ def base_path(img: pathlib.Path) -> pathlib.Path:
     return img.with_suffix(f".base{img.suffix}")
 
 
-def apply_to_slug(slug: str, *, llm=None, dry_run: bool = False, force_copy: dict | None = None) -> dict:
+def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run: bool = False, force_copy: dict | None = None) -> dict:
     """Composite onto the staged header and keep the sidecar's bytes/sha and alt/caption honest."""
     import hashlib
     hits = sorted((ROOT / "published").glob(f"*_{slug}.md")) or \
         sorted((ROOT / "context" / "drafts").glob(f"*_{slug}_final.md"))
-    if not hits:
-        raise SystemExit(f"no artifact for '{slug}'")
-    article_md = hits[-1].read_text()
+    if not article_md:
+        if not hits:
+            raise FileNotFoundError(f"no artifact for '{slug}'")
+        article_md = hits[-1].read_text()
     side_path = ic.sidecar_path(slug, ROOT)
     reuse = None
     if not dry_run and side_path.exists():
@@ -404,7 +405,10 @@ def apply_to_slug(slug: str, *, llm=None, dry_run: bool = False, force_copy: dic
                                     "region_rgb", "binding_rgb", "title_lines")},
                        "generated_at": side["generated_at"]}
     head = sentence_case(copy["title"])
-    side["alt_text"] = f"{head}. {side['alt_text']}"[:125]
+    raw_alt = side.get("alt_text", "")
+    if raw_alt.startswith(f"{head}. "):
+        raw_alt = raw_alt[len(head) + 2:].strip()
+    side["alt_text"] = f"{head}. {raw_alt}"[:125]
     side["caption"] = (f"{head}: {copy['hook']}." if copy.get("hook") else head + ".")[:200]
     side["title"] = head[:100]
     side_path.write_text(json.dumps(side, indent=2) + "\n")
