@@ -131,6 +131,16 @@ prints no social copy and reads no social credential.
   stale static assertion in `test_wp_draft.py`, which `verify.sh` then fails). When the tree carries
   unrelated WIP, pass `--no-deploy` and let a human push; if a bundle did go out, run
   `bash scripts/verify.sh` and fix or revert the stray edit before reporting the publish green.
+  - **Recovering a swept bundle (verified 2026-10-10).** A clean `git status` before `publish.py` is not
+    proof the tree is clean at push time — a concurrent job can write into it mid-run. Read the commit's
+    own file list (`git show --stat <auto-deploy commit>`); if it carries files the run never touched,
+    revert **only those paths** to the auto-deploy's parent (`git checkout <parent> -- <path> …`), commit,
+    and push — the swept WIP stays fully recoverable in the auto-deploy commit for its author to re-apply,
+    and `main` goes green again. Then prove it from a throwaway checkout rather than the working tree:
+    `git worktree add --detach /tmp/vh HEAD && (cd /tmp/vh && python3 scripts/sitemap_sync.py --check)`.
+    A concurrent editor's uncommitted edits to `published/*.md` make the *local* tree red (sitemap drift)
+    while `HEAD` is green; do not "fix" that drift by regenerating the sitemap, which would bake their
+    half-finished state into a derived surface.
 - A deployment only contains **committed** files (Coolify clones git). A draft that was never
   committed is invisible to the dashboard even after a redeploy, so "the site is stale" usually
   means "the artifact was never committed", not "the deploy failed".
