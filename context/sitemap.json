@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T16:58:48Z",
+  "updated_at": "2026-10-10T17:38:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1253,6 +1253,24 @@
       "date": "2026-10-10",
       "public": true,
       "url": "https://giniloh.com/nearshoring-doesnt-move-the-trade-case/"
+    },
+    {
+      "slug": "2026-10-10_self-hosting-break-even-one-hour-a-year",
+      "title": "Self-Hosting Break-Even: 1.26 Hours a Year",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-10",
+      "public": false
     }
   ]
 }

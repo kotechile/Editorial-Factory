@@ -1,0 +1,85 @@
+{
+  "slug": "self-hosting-break-even-one-hour-a-year",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Network storage drive caddy and precision screwdriver resting on a metal surface.",
+      "caption": "The true cost of a self-hosted stack is measured in maintenance hours, not hardware.",
+      "title": "self-hosting-labor-break-even",
+      "bytes": 583600,
+      "sha256": "sha256:586ece5504085af4b55d4800e9c3bcf4"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens at a razor-sharp focal plane. A single anodized aluminum network storage drive caddy, pulled halfway out of its brushed metal server chassis, resting beside a knurled steel precision maintenance screwdriver. Shallow depth of field, visible surface texture and fine dust on the metallic casing. Soft directional daylight casting long shadows. Extreme asymmetric composition, hero object off-centre on the thirds with the background falling away into smooth bokeh. Premium editorial cover standard, quiet confidence, restrained color palette.",
+  "negative_prompt": "text, typography, watermark, garbled letters, logos, UI, bare shapes",
+  "rationale": "Editorial macro focuses on the physical reality of the self-hosted stack\u2014a single drive bay\u2014alongside a maintenance tool, symbolizing the hidden labor cost.",
+  "cue": "a hard break-even",
+  "subject": "partially extracted network storage drive caddy beside a precision screwdriver",
+  "core_thesis": "Self-hosting is a trade of a small visible hardware bill for a large invisible labor cost, with a break-even of just 1.26 hours of maintenance.",
+  "core_conflict": "Visible hardware and subscription savings versus the invisible, high-cost burden of unbilled maintenance hours.",
+  "composition": "extreme asymmetry",
+  "alt_text": "The Cost Of Self-Hosting. Network storage drive caddy and precision screwdriver resting on a metal surface.",
+  "caption": "The Cost Of Self-Hosting: The hidden labor costs of running your own services.",
+  "title": "The Cost Of Self-Hosting",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/self-hosting-break-even-one-hour-a-year/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 339274,
+  "sha256": "sha256:463f27493288ced235681a5474d68a51af70614026adcc0f6940bbc7484d040f",
+  "source_hash": "sha256:90baa9d47dc92c57e4dc6a1e9a0ee91f",
+  "source_chars": 4514,
+  "task_id": "d13392a29180badc866e09c33885f6d6",
+  "credits": 7.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d13392a29180badc866e09c33885f6d6_1791653923806.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens at a razor-sharp focal plane. A single anodized aluminum network storage drive caddy, pulled halfway out of its brushed metal server chassis, resting beside a knurled steel precision maintenance screwdriver. Shallow depth of field, visible surface texture and fine dust on the metallic casing. Soft directional daylight casting long shadows. Extreme asymmetric composition, hero object off-centre on the thirds with the background falling away into smooth bokeh. Premium editorial cover standard, quiet confidence, restrained color palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-10T17:38:46+00:00",
+  "overlay": {
+    "kicker": "SELF-HOSTING // LABOR COSTS",
+    "title": "THE COST OF SELF-HOSTING",
+    "hook": "The hidden labor costs of running your own services",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 135,
+    "contrast": 6.33,
+    "target": 5.5,
+    "clutter": 0.406,
+    "region_rgb": [
+      107,
+      105,
+      101
+    ],
+    "binding_rgb": [
+      185,
+      182,
+      177
+    ],
+    "title_lines": [
+      "THE COST OF",
+      "SELF-HOSTING"
+    ],
+    "generated_at": "2026-10-10T17:38:46+00:00"
+  }
+}
