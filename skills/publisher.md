@@ -9,11 +9,14 @@ nothing is queued, posted or held for a distribution approval. The reader sites 
 
 **The push is gated (owner, 2026-10-10).** `scripts/wp_draft.py` re-runs the mechanical gates on the
 artifact immediately before it publishes — Sources present, no banned AI-tells, the accessibility
-floor, the social-voice gate (`scripts/publish_gate.py`). A failing article gets **one rewrite
-attempt** (the Loop 3 humanizer, rewiring only the body between the artifact's own frontmatter and
-its own `## Sources`); if it clears the gate it is published, and if it still fails it is created as
-a **DRAFT** and reported. An article is never lost and never published un-evaluated. An
-already-published post is never rewritten or demoted by the gate — it is reported. Knobs:
+floor, the social-voice gate (`scripts/publish_gate.py`) — and scores the headline against the
+house standard (`scripts/headline_score.py`; see `skills/story_draft.md`). A failing article gets
+**one rewrite attempt** (the Loop 3 humanizer, rewiring only the body between the artifact's own
+frontmatter and its own `## Sources`); a weak headline is re-cut once from the article's own figures.
+If it clears the gate it is published, and if it still fails it is created as a **DRAFT** and
+reported — a structurally broken headline (past 13 words or 75 chars) holds the article on its own.
+An article is never lost and never published un-evaluated. An already-published post is never
+rewritten or demoted by the gate — it is reported. Knobs:
 `PUBLISH_GATE=off|report|enforce` (default `enforce`), `PUBLISH_GATE_REWRITES` (default 1).
 
 ## 2. Persistence (always)

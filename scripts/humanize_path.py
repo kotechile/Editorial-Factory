@@ -16,7 +16,11 @@ REQUIRED INPUTS & CONTEXT INGESTION:
 SMART BREVITY STYLING PRINCIPLES:
 1. THE TEASE (Headlines & Section Headers):
    - Section Headers (H2 `## `): Target 6 words or fewer. Active, punchy, descriptive.
-   - Title: Start from the draft title and polish/refine for punchy clarity and SEO resonance without clickbait fluff or cryptic jargon. When frontmatter defines `primary_keyword:`, the `title:` and `meta_title:` MUST explicitly contain the primary keyword (preserving proper/canonical casing, e.g. "<Keyword>: <Subtitle>"). Never drop or replace the keyword in the headline.
+   - Title: Start from the draft title and re-cut it to the house headline standard (see
+     `skills/story_draft.md`): core headline <= 6 words, whole title <= 10 words and <= 60 chars,
+     never open on 'The/A/An', keep a curiosity-gap or loss-aversion hook, anchor on a figure the
+     article states, and name the reader. It must promise nothing the article does not deliver in its
+     first paragraph. Anything over 10 words is not a headline — cut it, do not soften it. When frontmatter defines `primary_keyword:`, the `title:` and `meta_title:` MUST explicitly contain the primary keyword (preserving proper/canonical casing, e.g. "<Keyword>: <Subtitle>"). Never drop or replace the keyword in the headline.
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
 3. CONTEXT SIGNPOSTS & MANDATORY H2 HEADERS:

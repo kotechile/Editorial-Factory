@@ -144,6 +144,18 @@ def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
         return report
 
     failures = text_failures(path, root=root)
+    # The headline is scored on the same pass: a structurally broken one (past 13 words or 75 chars)
+    # holds the article even when the prose is clean, and a merely weak one is re-cut once.
+    try:
+        report["title"] = title_gate(path, rewrite=rewrite, apply=rewrite)
+        if report["title"].get("hold"):
+            worst = report["title"]["before"]["failures"]
+            failures = failures + [f"headline ({report['title']['before']['score']}/100): "
+                                  + (worst[0] if worst else "does not meet the title standard")]
+    except Exception as exc:                           # noqa: BLE001 - report, never swallow
+        report["title"] = {"error": f"title gate failed: {exc}"}
+        failures = failures + [f"headline: the title gate could not run ({exc})"]
+    report["failures"] = failures
     if not failures:
         return report
 
@@ -345,6 +357,165 @@ def _served_bytes_pg(url: str | None) -> tuple[bytes | None, str]:
         return None, str(exc)
 
 
+def _title_standards() -> str:
+    return """The house title standard (all of it is scored mechanically by scripts/headline_score.py):
+- CORE HEADLINE <= 6 WORDS before any subtitle. Whole title <= 10 words, <= 60 characters.
+- Never open on 'The', 'A' or 'An'. Front-load the strongest noun or the most concrete benefit.
+- Carry a hook: a curiosity gap (a delta the reader must close) or loss aversion (the mistake, the
+  trap, the silent cost) — or invert the conventional wisdom.
+- Anchor it in a number the article itself states (take it from the piece, never invent one).
+- Call the reader out: 'your/you' or a named role or subject (CFO, shipper, homeowner, SpaceX).
+- No filler, no vague generalities, no bait-and-switch: the article must deliver what the title
+  promises in its first paragraph.
+Good: "California FAIR Plan Premiums Jump 29.1%" / "Your Battery Is Sized Wrong" /
+"SpaceX Unlocks Six Windows, Not One" / "Stop Sizing Your Battery on Annual Usage".
+Bad: "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement" (13 words,
+opens on 'The', 76 chars, no reader)."""
+
+
+def title_prompt(title: str, body: str, one_big: str, count: int) -> str:
+    figures = "\n".join(f"- {b.strip()[:160]}" for b in
+                        re.findall(r"^\s*[-*]\s*\*\*.*$", body, re.M)[:6]) or "(none stated)"
+    return f"""You are the headline editor for an institutional B2B research desk. Write {count} \
+alternative headlines for ONE article, then stop.
+
+CURRENT TITLE: {title}
+THE ONE BIG THING: {one_big or '(read the numbers below)'}
+THE ARTICLE'S OWN FIGURES:
+{figures}
+
+{_title_standards()}
+
+Rules for your output:
+- Use ONLY facts present in the current title and the figures above. Invent nothing, and never add a
+  number that is not in that list.
+- Keep the same subject and the same claim as the current title. You are re-cutting the headline,
+  not changing the story.
+- Reply with a JSON array of exactly {count} strings, best first. No commentary, no markdown fence."""
+
+
+def title_candidates(path: pathlib.Path, count: int = 5) -> list[dict]:
+    """Ask the frontier for headlines, score every one, and return them best-first.
+
+    Scoring is the desk's own (scripts/headline_score.py) and runs on the article's real body, so a
+    candidate that promises something the piece never says is rejected mechanically.
+    """
+    import headline_score as hs
+    sys.path.insert(0, str(SCRIPTS))
+    import humanizer_tools as ht
+    text = path.read_text()
+    m = re.match(r"---\n(.*?)\n---\n(.*)", text, re.S)
+    fm, body = (m.group(1), m.group(2)) if m else ("", text)
+    title = one_big = ""
+    for line in fm.splitlines():
+        if line.startswith("title:"):
+            title = line.split(":", 1)[1].strip().strip('"').strip("'")
+        elif line.startswith("one_big_thing:"):
+            one_big = line.split(":", 1)[1].strip().strip('"').strip("'")
+    raw = ht.call_gemini(title_prompt(title, body, one_big, count), max_tokens=3000, temperature=0.9)
+    # The model's array is often truncated mid-string (a long list hits the token ceiling), so a
+    # strict json.loads throws away perfectly good candidates. Take the JSON when it parses and fall
+    # back to harvesting the quoted strings — every candidate is scored below regardless.
+    cands: list[str] = []
+    m2 = re.search(r"\[.*\]", raw or "", re.S)
+    if m2:
+        try:
+            parsed = json.loads(m2.group(0))
+            cands = [c for c in parsed if isinstance(c, str)]
+        except json.JSONDecodeError:
+            cands = []
+    if not cands:
+        cands = [re.sub(r"\\(.)", r"\1", s) for s in
+                 re.findall(r'"((?:[^"\\]|\\.)*)"', raw or "") if len(s) > 12]
+    out = []
+    seen = set()
+    for c in cands:
+        c = c.strip()
+        if not c or c.lower() in seen:
+            continue
+        seen.add(c.lower())
+        out.append({**hs.score(c, body=body), "gained": True})
+    return sorted(out, key=lambda r: -r["score"])
+
+
+def apply_title(path: pathlib.Path, title: str) -> dict:
+    """Write a new headline into the artifact's frontmatter (title + meta_title, if one exists)."""
+    text = path.read_text()
+    m = re.match(r"(---\n)(.*?)(\n---\n)(.*)", text, re.S)
+    if not m:
+        return {"applied": False, "note": "no frontmatter to write a title into"}
+    head, fm, close, body = m.groups()
+    lines = fm.splitlines()
+    for i, line in enumerate(lines):
+        if line.startswith("title:"):
+            lines[i] = f'title: "{title}"'
+        elif line.startswith("meta_title:") and len(title) <= 60:
+            lines[i] = f'meta_title: "{title}"'
+    path.write_text(head + "\n".join(lines) + close + body)
+    return {"applied": True, "title": title}
+
+
+def sync_title(slug: str, title: str) -> dict:
+    """Push a new headline into the Supabase row, narrowly.
+
+    The row is what the connector publishes, so a title fixed only in the file never reaches a
+    reader. This PATCHes title/headline and metadata.headline only — deliberately NOT
+    `sync_articles.py`, which is the whole publish pass and would re-commission the article's header
+    image (credits spent, fresh drift against the live post) to change one line of text.
+    """
+    try:
+        import wp_draft as wd
+        wd.load_env()
+        url, key = wd.supabase_config()
+        db = wd.Supabase(url, key)
+        rows = db.articles(slug=slug)
+        if not rows:
+            return {"synced": False, "note": f"no Supabase row for '{slug}'"}
+        row = rows[0]
+        metadata = {**(row.get("metadata") or {}), "headline": title}
+        db._call("PATCH", f"articles?id=eq.{row['id']}",
+                 {"title": title, "headline": title, "metadata": metadata},
+                 {"Prefer": "return=minimal"})
+        return {"synced": True, "note": f"row {row['id']} headline updated"}
+    except Exception as exc:                           # noqa: BLE001
+        return {"synced": False, "note": f"row title sync failed: {exc}"}
+
+
+def title_gate(path: pathlib.Path, *, rewrite: bool, apply: bool = False) -> dict:
+    """Score an artifact's headline; when it is poor, commission and adopt a better one.
+
+    Style is the owner's call, not a machine verdict — so a weak title does not hold an article by
+    itself. A structurally broken one does: past 13 words or 75 characters it is not a headline any
+    more, and 17-word titles are in this corpus. `apply=False` (the audit/dry-run path) proposes and
+    scores but writes nothing.
+    """
+    import headline_score as hs
+    title, body, keyword = hs.artifact_title(path)
+    before = hs.score(title, body=body, keyword=keyword)
+    report = {"before": before, "after": None, "adopted": None, "candidates": []}
+    structurally_broken = before["words"] > 13 or before["chars"] > hs.HARD_CHARS_MAX
+    if not rewrite or before["verdict"] == "STRONG":
+        report["hold"] = structurally_broken
+        return report
+    try:
+        report["candidates"] = title_candidates(path)
+    except Exception as exc:                           # noqa: BLE001 - a dead model must not hold
+        report["error"] = f"title candidates failed: {exc}"
+        report["hold"] = structurally_broken
+        return report
+    best = report["candidates"][0] if report["candidates"] else None
+    if best and best["score"] > before["score"] and best["score"] >= 90:
+        report["after"] = best
+        report["adopted"] = best["title"]
+        if apply:
+            apply_title(path, best["title"])
+            report["row"] = sync_title(path.name[11:-3], best["title"])
+    elif best:
+        report["after"] = best
+    report["hold"] = structurally_broken and not (report["after"] and report["after"]["score"] >= 90)
+    return report
+
+
 # ─────────────────────────────── CLI ───────────────────────────────
 
 def _print(report: dict, slug: str | None = None) -> None:
@@ -371,10 +542,43 @@ def main() -> int:
     ap.add_argument("--audit-live", action="store_true",
                     help="compare the live CMS header/alt against the staged brief for the newest "
                          "artifacts (catches a re-render that was never re-pushed)")
+    ap.add_argument("--titles", action="store_true",
+                    help="score every headline and (with --rewrite) commission better ones; "
+                         "writes nothing unless --apply")
+    ap.add_argument("--apply", action="store_true",
+                    help="with --titles: write the adopted headline into the artifact + Supabase row")
     ap.add_argument("--limit", type=int, default=10, help="how many artifacts --audit-live reads")
     ap.add_argument("--rewrite", action="store_true", help="attempt one rewrite when the gate fails")
     ap.add_argument("--json", action="store_true", help="machine-readable output")
     args = ap.parse_args()
+
+    if args.titles:
+        import headline_score as hs
+        rows = []
+        for path in sorted((ROOT / "published").glob("*.md")):
+            title, body, keyword = hs.artifact_title(path)
+            entry = {"file": path.name, **hs.score(title, body=body, keyword=keyword)}
+            if args.rewrite:
+                tg = title_gate(path, rewrite=True, apply=args.apply)
+                entry["adopted"] = tg.get("adopted")
+                entry["candidates"] = [c["title"] + f"  ({c['score']})" for c in tg.get("candidates", [])[:4]]
+                entry["held"] = bool(tg.get("hold"))
+            rows.append(entry)
+        if args.json:
+            print(json.dumps(rows, indent=2))
+        else:
+            weak = [r for r in rows if r["verdict"] in ("WEAK", "POOR")]
+            print(f"titles: {len(rows)} scored | {sum(1 for r in rows if r['verdict']=='STRONG')} strong, "
+                  f"{sum(1 for r in rows if r['verdict']=='OK')} ok, {len(weak)} weak/poor")
+            for r in sorted(rows, key=lambda r: r["score"]):
+                print(f"  {r['score']:>3} {r['verdict']:<6} | {r['title'][:66]}")
+                if r.get("adopted"):
+                    print(f"        -> ADOPTED: {r['adopted']}")
+                for c in (r.get("candidates") or [])[:3]:
+                    print(f"        candidate: {c}")
+            if args.rewrite and not args.apply:
+                print("\n(nothing written — pass --apply to adopt the headlines and sync the rows)")
+        return 0
 
     if args.audit_live:
         problems = audit_live(args.limit)

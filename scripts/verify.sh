@@ -219,6 +219,25 @@ if ! grep -q "publish_gate" "$ROOT/scripts/publish.py"; then
   FAIL=1
 fi
 
+# 8.58 Headline standard (hard): the title is the only part of the piece with no craft rule of its
+#      own until the owner's standard landed (2026-10-10) — scored by scripts/headline_score.py and
+#      enforced at the push (a structurally broken title holds the article, a weak one is re-cut
+#      once). The corpus audit is advisory: existing headlines are reported, never rewritten by the
+#      gate, because a live headline is the owner's call.
+if ! python3 -m pytest "$ROOT/scripts/test_headline_score.py" -q >/dev/null 2>&1; then
+  echo "FAIL: headline scoring tests — detail:"
+  python3 -m pytest "$ROOT/scripts/test_headline_score.py" -q 2>&1 | tail -8
+  FAIL=1
+fi
+if ! grep -q "headline_score" "$ROOT/scripts/publish_gate.py"; then
+  echo "FAIL: the publish gate no longer scores headlines (scripts/headline_score.py)"
+  FAIL=1
+fi
+# Advisory corpus read-out. Deliberately pipe-free: `python3 … | head -1` under `set -o pipefail`
+# kills the writer with SIGPIPE and fails the whole gate with no message at all (it did).
+HEADLINE_AUDIT="$(python3 "$ROOT/scripts/headline_score.py" --all 2>&1 || true)"
+echo "  headlines: ${HEADLINE_AUDIT%%$'\n'*}"
+
 # 8.6 Pre-flight data gate (hard): a citation hub may only be drafted on metrics whose headline
 #     figure was actually retrieved from the cited primary source. Hermetic run (--no-network):
 #     the live audit of the shipped dossiers is a separate, deliberate step —
