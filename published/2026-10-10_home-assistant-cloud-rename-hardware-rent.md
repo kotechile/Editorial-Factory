@@ -1,11 +1,11 @@
 ---
-title: Home Assistant Renames Cloud to Fight Hardware Rent
+title: "Why Home Assistant Renamed Its Cloud"
 vertical: personal_microeconomics_tinkering_tax
 persona: systems_tinkerer_pro
 one_big_thing: "The cloud has become a recurring rent on hardware people already own — and the honest counterweight to it is not 'self-hosting is free' but 'self-hosting is a maintenance bill,' which is now being repriced too."
 date: 2026-10-10
 slug: home-assistant-cloud-rename-hardware-rent
-meta_title: "Home Assistant Renames Cloud to Fight Hardware Rent"
+meta_title: "Why Home Assistant Renamed Its Cloud"
 meta_title_source: "derived_from_title"
 meta_description: "The maker of Home Assistant just renamed its paid remote service. Home Assistant Cloud is now Home Assistant Link."
 meta_description_source: "derived_from_lead"

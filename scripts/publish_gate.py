@@ -484,8 +484,11 @@ def sync_title(slug: str, title: str) -> dict:
             return {"synced": False, "note": f"no Supabase row for '{slug}'"}
         row = rows[0]
         metadata = {**(row.get("metadata") or {}), "headline": title}
+        # `articles` has `title` + a metadata jsonb; there is NO `headline` column (a PATCH that sends
+        # one is rejected wholesale with PGRST204, which is how the first attempt silently kept the
+        # old headline and wrote it back over the CMS title).
         db._call("PATCH", f"articles?id=eq.{row['id']}",
-                 {"title": title, "headline": title, "metadata": metadata},
+                 {"title": title, "metadata": metadata},
                  {"Prefer": "return=minimal"})
         return {"synced": True, "note": f"row {row['id']} headline updated"}
     except Exception as exc:                           # noqa: BLE001

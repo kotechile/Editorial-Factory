@@ -1,5 +1,5 @@
 ---
-title: The 90-Day Clock That Turns Options Into a Tax Bill
+title: "Options Trap: Your 26% AMT Bill"
 vertical: career_velocity_equity_engineering
 persona: equity_career_strategist
 one_big_thing: "The real cost of exercising a vested stock option is the tax, not the strike price: the spread on an incentive stock option feeds the alternative minimum tax at 26% of the first $239,100 (tax year 2025), and Section 422 ends ISO status three months after employment does."
@@ -7,7 +7,7 @@ date: 2026-10-09
 slug: post-termination-option-clock-tax
 archetype: evergreen
 evergreen: true
-meta_title: "The 90-Day Clock That Turns Options Into a Tax Bill"
+meta_title: "Options Trap: Your 26% AMT Bill"
 meta_description: "Three months after a job ends, an incentive stock option loses its tax status — the alternative minimum tax on the exercise spread can outweigh the strike."
 image_path: "context/assets/illustrations/post-termination-option-clock-tax/featured.png"
 image_style: "paper_collage"

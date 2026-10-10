@@ -1,5 +1,5 @@
 ---
-title: Your EV Is Now a Home Battery — Behind a Paywall
+title: "Your 11.5kW EV Backup Costs $8,200"
 vertical: resilient_home_assets
 persona: pro_homeowner
 one_big_thing: "Tesla made the Model 3 and Model Y able to back up a home, but the feature still needs an $8,200 Powerwall 3 — so the cheapest new home backup arrives behind a paywall, just as bills and rate requests hit records."
@@ -9,7 +9,7 @@ synthesis: true
 sources:
   - https://www.tesla.com/powershare
   - https://powerlines.org/utilities-request-18-6-billion-in-rate-increases-in-first-half-of-2026/
-meta_title: "Your EV Is Now a Home Battery — Behind a Paywall"
+meta_title: "Your 11.5kW EV Backup Costs $8,200"
 meta_title_source: "derived_from_title"
 meta_description: "Tesla just turned its two best-selling cars into backup batteries for your house."
 meta_description_source: "derived_from_lead"

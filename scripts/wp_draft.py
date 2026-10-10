@@ -1489,6 +1489,38 @@ def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None
                     author_name=author_name, wp_factory=wp_factory, verify=verify, live_ok=live_ok)
 
 
+def retitle_slug(slug: str, *, db=None, title: str | None = None) -> dict:
+    """Set a post's headline from its row, and touch nothing else.
+
+    A headline change is not a re-publish: the body, status, category, featured image and excerpt are
+    never sent, so a post an editor has tuned cannot be damaged by renaming it. `--refresh-live`
+    re-derives the whole post from the row and is the right tool only when the copy changed too.
+    The read-back is the proof — a title WordPress sanitized is reported, not assumed.
+    """
+    db = db or Supabase(*supabase_config())
+    rows = db.articles(slug=slug)
+    if not rows:
+        raise RuntimeError(f"no Supabase row for '{slug}'")
+    row = rows[0]
+    metadata = row.get("metadata") or {}
+    vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
+    site = db.site_for(vertical)
+    new_title = (title or make_title(row)).strip()
+    user, password = credentials_for(site["site_domain"])
+    wp = WordPress(site["cms_base_url"], user, password)
+    post = wp.find_by_slug(slug)
+    if not post:
+        raise RuntimeError(f"{site['site_domain']} holds no post for '{slug}'")
+    was = _field_text((wp.read_back(post["id"]) or {}).get("title"))
+    wp._call("PATCH", f"posts/{post['id']}", {"title": new_title})
+    stored = _field_text((wp.read_back(post["id"]) or {}).get("title"))
+    problems = [] if stored == new_title else [f"the CMS reads back {stored!r}, not {new_title!r}"]
+    return {"slug": slug, "site": site["site_domain"], "post_id": post["id"], "was": was,
+            "title": new_title, "stored": stored,
+            "edit_url": f"{site['cms_base_url']}/wp-admin/post.php?post={post['id']}&action=edit",
+            "problems": problems}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Push generated articles to their vertical's WordPress CMS as live posts (status publish)")
     parser.add_argument("--slug", help="Article slug (metadata->>slug)")
@@ -1511,6 +1543,10 @@ def main() -> int:
                              "(after re-commissioning it with `illustration_creator.py --force`). "
                              "Touches the attachment and the row's image bookkeeping only — no title, "
                              "excerpt, body or status, so a live post is not rewritten")
+    parser.add_argument("--retitle", action="store_true",
+                        help="With --slug: set the post's headline from the row and touch nothing else "
+                             "(for a headline change, where --refresh-live would re-derive the whole "
+                             "body and excerpt too)")
     parser.add_argument("--no-verify", action="store_true",
                         help="Skip the post-push read-back (default: read the post back and compare "
                              "what the CMS stored against what was sent)")
@@ -1548,6 +1584,19 @@ def main() -> int:
         return 0
 
     if args.slug:
+        if args.retitle:
+            try:
+                result = retitle_slug(args.slug)
+            except Exception as exc:                   # rule 6: surface it, never a silent skip
+                print(f"\n  FAILED retitle {args.slug}: {exc}", file=sys.stderr)
+                return 1
+            print(f"\n  {result['site']} post {result['post_id']}")
+            print(f"  was : {result['was']}")
+            print(f"  now : {result['stored']}")
+            print(f"  {result['edit_url']}")
+            for problem in result["problems"]:
+                print(f"  ! {problem}", file=sys.stderr)
+            return 1 if result["problems"] else 0
         try:
             result = push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
                                   author_name=args.author_name, db=db, verify=not args.no_verify,
