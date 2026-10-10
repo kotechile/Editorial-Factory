@@ -36,7 +36,7 @@ What strikes me is that this cost is public. Managed replacements publish their 
 
 Two numbers settle most of these calls before anyone opens a terminal.
 
-I have watched this play out in the field. One systems administrator spent 26 weekend hours fixing a self-hosted mail server. Gmail and Outlook were quietly blocking it, and a real-estate deadline slipped by in the meantime. At a $150-an-hour engineering rate, that weekend burned $3,900 of unpaid labor to save a $72-a-year mailbox fee.
+I have watched this play out in the field. A mail server that Gmail and Outlook quietly stop accepting does not fix itself, and the weekend spent on it slips past whatever deadline it was serving. Do the arithmetic on one such weekend — 26 hours — at the $47.66 median rate above: that is $1,239 of unpaid labor to avoid a $60-a-year mailbox fee [1][4].
 
 Repeat that across a home rack, and the math stays ruthless. The cash out is tiny. The time out is the cost.
 

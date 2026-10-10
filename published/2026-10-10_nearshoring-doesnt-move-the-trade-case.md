@@ -7,7 +7,7 @@ date: 2026-10-10
 slug: nearshoring-doesnt-move-the-trade-case
 synthesis: true
 sources:
-  - https://www.usitc.gov/keywords/antidumping
+  - https://www.usitc.gov/press_room/news_release/2026/er0930_69296.htm
   - https://www.justice.gov/opa/media/1463571/dl
 meta_title: "Nearshoring Doesn't Move the Trade Case"
 meta_title_source: "derived_from_title"
@@ -22,7 +22,7 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S. International Trade Commission (USITC) voted to keep alive a case against hydraulic cylinders from Mexico [1]. U.S. producers filed for anti-dumping duties on railway tank cars from Mexico alone [2].
+Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S. International Trade Commission (USITC) voted to keep alive a case against hydraulic cylinders from Mexico [1]. U.S. producers filed for anti-dumping duties on railway tank cars from Mexico alone [2][5].
 
 The next morning, the Department of Justice (DOJ) named tariff evasion and forced labor as corporate enforcement priorities [3]. Neither move is a duty rate. Both now sit in the file of anyone who moved a factory to Mexico to escape one.
 
@@ -38,7 +38,7 @@ A trade case attaches to a good, defined by where it is made. The cylinder case 
 
 The tank-car case narrows to one product and one country [2]. If it lands, it is not a bargaining position. It is a cash deposit taken at the border on every covered shipment. That deposit could start as early as December 2026 [5].
 
-The DOJ push works differently. Directive 26-12 names an act, not a good and not a country [3]. It makes tariff evasion and forced labor two of four enforcement priorities.
+The DOJ push works differently. Directive 26-12 names an act, not a good and not a country [3]. It folds tariff evasion and forced labor into one of its four enforcement priorities, revenue evasion [3].
 
 Prosecutors must weigh ten factors heavily. One is a scheme lasting three years or more. Another is harm of $25 million or more. Every serious corporate probe must also go to a new desk within seven days [3].
 
@@ -100,7 +100,7 @@ A trade case and an enforcement file are neither. The cost lands months later, o
 - **The Catch:** No duties exist yet. The margins are only claims, and a finding of no harm would end the tank-car case. What is live is a schedule and a standard, not a bill.
 
 ## Sources
-[1] U.S. International Trade Commission, News Release 26-142, "USITC Votes to Continue Investigations on Linear Hydraulic Cylinders from Canada, China, India, Mexico, and South Korea," September 30, 2026 — https://www.usitc.gov/keywords/antidumping
+[1] U.S. International Trade Commission, News Release 26-142, "USITC Votes to Continue Investigations on Linear Hydraulic Cylinders from Canada, China, India, Mexico, and South Korea," September 30, 2026 — https://www.usitc.gov/press_room/news_release/2026/er0930_69296.htm
 [2] U.S. International Trade Commission, Preliminary Conference — Railway Tank Cars and Parts Thereof from Mexico, Inv. Nos. 701-TA-809 and 731-TA-1810, October 21, 2026 — https://www.usitc.gov/calendarpad/events/preliminary_conference_person_railway_tank_cars_102126.htm
 [3] U.S. Department of Justice, Directive 26-12: Corporate Enforcement in the Fight Against Fraud, October 1, 2026 — https://www.justice.gov/opa/media/1463571/dl
 [4] U.S. Customs and Border Protection, "CBP issues Withhold Release Orders on Mitra Aneka Rezeki and Hardaya Inti Plantation," September 29, 2026 — https://www.cbp.gov/newsroom/national-media-release/cbp-issues-withhold-release-orders-mitra-aneka-rezeki-and-hardaya

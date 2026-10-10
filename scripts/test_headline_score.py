@@ -142,3 +142,23 @@ def test_lead_delivery_passes_when_the_paragraph_states_the_number():
             "That is the whole break-even argument.\n")
     r = hs.score("Self-Hosting Break-Even: 1.26 Hours a Year", body=body)
     assert r["lead_ok"] is True and r["lead_note"] == ""
+
+
+def test_the_hook_vocabulary_knows_illusion_and_moving_target():
+    """The owner re-cut an article with 'The $915M Illusion ... Moving Target' and the loss/curiosity
+    list did not contain either device, so the scorer called a good headline hookless."""
+    body = ("In traditional software, a test is a ruler. In AI the test is an illusion: Dynatrace paid "
+            "$915 million on October 1 for an AI judge that grades other AI systems, and the judge moves "
+            "whenever its prompt changes. " * 4)
+    r = hs.score("$915M Illusion: Your AI Judge Moves", body=body)
+    assert r["verdict"] == "STRONG", r["failures"]
+    assert hs.score("Your Judge Is a Moving Target", body=body)["passes"]
+
+
+def test_a_figure_is_matched_on_its_digits_not_its_surface_form():
+    """'$915M' in a headline vs '$915 million' in the lead is the same figure: comparing the surface
+    strings, original case against a lowercased lead, reported a delivered lead as undelivered."""
+    body = ("Dynatrace paid $915 million on October 1 for Arize, and the judge that grades AI systems "
+            "moves every time you update its prompt. " * 6)
+    r = hs.score("$915M Illusion: Your AI Judge Moves", body=body)
+    assert "915" not in r["lead_note"], r["lead_note"]

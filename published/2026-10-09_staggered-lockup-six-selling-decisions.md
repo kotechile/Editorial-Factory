@@ -49,8 +49,8 @@ What strikes me here is how these staggered dates clash with standard corporate 
 
 - **The earnings trigger:** A release of about 1.3 billion shares becomes free to trade after the third-quarter report [4][5]. This is about 28% of the block and ranks as the largest single release of 2026 [4][5]. The date depends on when SpaceX reports, so the calendar matters more than the math [3].
 - **The window gap:** A lockup date simply lifts the IPO ban on a slice of your shares. It does not open your employer's internal trading window, which usually shuts in the weeks before earnings [3]. The right to sell and the ability to sell are two different gates.
-- **The 10b5-1 clock:** A worker who is not a director or officer needs a pre-set trading plan (a 10b5-1) signed at least 30 days before its first trade [3]. Directors and officers face a 90- to 120-day wait [3]. A plan meant to trade in December has to exist in early November [3].
-- **The tax-year seam:** The final 180-day window ends December 8, and a sale lands in the 2027 tax year if it slips past January 1 [3][5]. Splitting a planned sale across December and January spreads the tax hit over two years [5].
+- **The 10b5-1 clock:** A worker who is not a director or officer needs a pre-set trading plan (a 10b5-1) signed at least 30 days before its first trade [8]. Directors and officers face a 90- to 120-day wait [8]. A plan meant to trade in December has to exist in early November [3].
+- **The tax-year seam:** The final 180-day window ends December 8, and a sale lands in the 2027 tax year if it slips past January 1 [3]. Splitting a planned sale across December and January spreads the tax hit over two years [5].
 
 <!-- nuanced-takeaway -->
 
@@ -60,11 +60,11 @@ Staggering the release does not make the choice easier. If anything, it makes it
 
 My read on the trap: A single cliff forces one clear call, but six windows invite six small delays. A worker who never writes a plan down can "decide" six times to sell nothing, ending the year with all their risk in one stock [5].
 
-Most of the tax bill also landed before anyone could sell. Restricted stock unit (RSU) shares were taxed as wages the day they were delivered [3].
+Most of the tax bill also landed before anyone could sell. Restricted stock unit (RSU) shares were taxed as wages the day they were delivered [7][3].
 
-The company likely held back taxes at the 22% flat rate, leaving a gap for high earners to pay the following April [3]. The bigger the grant, the larger that gap.
+The company likely held back taxes at the 22% flat rate, leaving a gap for high earners to pay the following April [7][3]. The bigger the grant, the larger that gap.
 
-The math is also only as good as the stock price. A bonus release meant to trigger 30% above the $135 offer never fired [3]. The stock closed no higher than $125.33 during the measuring window, proving the ladder is fixed but its cash value is not [3].
+The math is also only as good as the stock price. A bonus release meant to trigger 30% above the $135 offer never fired [1][3]. The stock closed no higher than $125.33 during the measuring window, proving the ladder is fixed but its cash value is not [3].
 
 <!-- internal-links -->
 
@@ -90,12 +90,14 @@ The math is also only as good as the stock price. A bonus release meant to trigg
 - **The Catch:** A staged release rewards a plan written before the first window and punishes delay. The tax gap on RSUs and the missed bonus trigger mean the headline stock size rarely matches the actual cash received [3].
 
 ## Sources
-[1] https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/
+[1] SpaceX, "424B4" prospectus filed with the SEC (2026-06-11) — https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
 [2] https://www.reuters.com/business/spacex-shares-slip-lockup-expiry-adds-post-ipo-woes-2026-08-06
 [3] https://bfawealth.com/deals/spacex-lockup
 [4] https://www.fool.com/investing/2026/09/29/elon-musk-cant-sell-spacex-shares-until-2027-heres
 [5] https://savantwealth.com/savant-views-news/article/spacexs-staggered-lockup-means-six-selling-decisions-not-one-how-employees-should-think-about-each-window
-[6] https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm
+[6] SpaceX, registration statement filed with the SEC — https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm
+[7] Internal Revenue Service, "Publication 15-A: Employer's Supplemental Tax Guide" — supplemental wages and the 22% optional flat withholding rate — https://www.irs.gov/publications/p15a
+[8] U.S. Code of Federal Regulations, 17 CFR 240.10b5-1 — trading "on the basis of" material nonpublic information (the cooling-off conditions) — https://www.ecfr.gov/current/title-17/section-240.10b5-1
 
 ## Gate report
 PASS — Lead delivers the news of the fourth lockup window and the core shift to a staged ladder clearly in the first sentence with simple vocabulary.

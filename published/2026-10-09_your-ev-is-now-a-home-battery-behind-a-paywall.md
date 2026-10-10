@@ -24,7 +24,7 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 <!-- lead -->
 Tesla just turned its two best-selling cars into backup batteries for your house.
 
-The Model 3 and Model Y can now power a home without the costly wall charger that every other system requires [1][3]. The change covers cars ordered in the United States after Oct. 1, 2026, turning the electric vehicle (EV) in millions of driveways into a backup battery [1].
+The Model 3 and Model Y can now power a home without the costly wall charger that almost every other system requires [1][3]. The change covers cars ordered in the United States after Oct. 1, 2026, turning the electric vehicle (EV) in millions of driveways into a backup battery [1].
 
 The barrier sits a few feet away in the garage. To send that power into a home, owners must buy a Tesla Powerwall 3, a home battery that costs $8,200 before installation [3].
 
@@ -38,14 +38,14 @@ Power bills are climbing fast, and the grid is struggling to keep up. The averag
 
 At the same time, California has 22 gigawatts of clean energy and batteries stuck behind transmission lines it has not built [7]. I have been watching the home-energy market all year. This is the first time a giant hardware fix and a glaring grid problem have landed in the same month.
 
-Tesla delivered its fix on Oct. 6 [1]. Most vehicle-to-home (V2H) systems need a separate box on the wall, a direct-current (DC) charger that runs $6,500 to $10,000 [3].
+Most vehicle-to-home (V2H) systems need a separate box on the wall, a direct-current (DC) charger that runs $6,500 to $10,000 [3]. Tesla skipped it.
 
 Tesla pushed that cost into the car instead. The battery already converts wall power to DC to charge, so it can run the same job in reverse [3].
 
 ## By the numbers
 
 - **11.5 kilowatts — Home backup draw:** The maximum power a Model 3 or Model Y can push into a house, beating several rivals [2].
-- **$8,200 — Powerwall 3:** The home battery required to make the setup work, before installation costs that can reach five figures [2][3].
+- **$8,200 — Powerwall 3:** The home battery required to make the setup work, before installation costs that can reach five figures [3].
 - **18.44¢/kWh — U.S. residential price:** The national average power cost in May 2026, up 6.2% year over year [6].
 - **$18.6 billion — Rate requests:** The record amount utilities asked regulators to approve in the first half of 2026 [5].
 

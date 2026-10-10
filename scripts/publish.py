@@ -143,7 +143,24 @@ def apply_derived_assets(content: str) -> tuple[str, list[str]]:
             existing[key.strip()] = value.strip().strip('"').strip("'")
 
     enriched, notes = article_assets.ensure_seo_metadata(dict(existing), body)
-    additions = {k: v for k, v in enriched.items() if k not in existing}
+    # A value the artifact does not carry yet is added; a value that carries a DERIVED provenance
+    # marker is recomputed from its source. Without that second half, editing the lead left the SEO
+    # description, the CMS excerpt and the JSON-LD `description` all still describing the old opening
+    # sentence — the marker said 'derived_from_lead' while nothing ever re-derived it. The
+    # derivation is called directly: `ensure_seo_metadata` only fills empty fields, so a present value
+    # never reaches the comparison. A value authored by an editor carries no derived marker and is
+    # left exactly as written.
+    additions: dict[str, str] = {k: v for k, v in enriched.items() if k not in existing}
+    if existing.get("meta_description_source") == "derived_from_lead":
+        fresh = article_assets.derive_meta_description(body)
+        if fresh and fresh.strip() != existing.get("meta_description", "").strip():
+            additions["meta_description"] = fresh
+            notes.append("meta_description re-derived from the lead paragraph — it no longer matched")
+    if existing.get("meta_title_source") == "derived_from_title" and existing.get("title"):
+        fresh = article_assets._trim_words(existing["title"], article_assets.META_TITLE_MAX)
+        if fresh.strip() != existing.get("meta_title", "").strip():
+            additions["meta_title"] = fresh
+            notes.append("meta_title re-derived from the title — it no longer matched")
     # The chart is injected into the BODY, which is the frontmatter-less half of the artifact — so
     # the artifact's own headline has to be handed over explicitly. Without it `_chart_title` found
     # no title and captioned every pipeline-generated chart "Verified figures" (a heading that
@@ -152,9 +169,20 @@ def apply_derived_assets(content: str) -> tuple[str, list[str]]:
     body, chart_note = article_assets.inject_chart(body, title=chart_title)
     notes.append(chart_note)
 
-    fm_lines = fm_text.rstrip("\n")
+    fm_lines = fm_text.rstrip("\n").split("\n")
+    kept: list[str] = []
+    replaced: set[str] = set()
+    for line in fm_lines:
+        key = line.partition(":")[0].strip() if ":" in line else ""
+        if key in additions:  # replace in place: appending a second 'key:' would duplicate the YAML key
+            kept.append(f'{key}: "{str(additions[key]).replace(chr(34), chr(92) + chr(34))}"')
+            replaced.add(key)
+        else:
+            kept.append(line)
     for key, value in additions.items():
-        fm_lines += f'\n{key}: "{str(value).replace(chr(34), chr(92) + chr(34))}"'
+        if key not in replaced:
+            kept.append(f'{key}: "{str(value).replace(chr(34), chr(92) + chr(34))}"')
+    fm_lines = "\n".join(kept)
     rebuilt = f"---\n{fm_lines}\n---\n\n{body.lstrip(chr(10))}" if match else body
 
     if rebuilt == content:

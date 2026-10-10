@@ -1,5 +1,5 @@
 ---
-title: "Buying AI Quality: The Score Belongs to the Judge"
+title: "$915M Illusion: Your AI Judge Moves"
 vertical: ai_observability_qa
 persona: evals_infra_eng
 one_big_thing: "A quality score is a property of the judge, not of the system being judged — so the AI-observability market has consolidated around a moving target."
@@ -9,10 +9,10 @@ synthesis: true
 sources:
   - https://www.dynatrace.com/news/blog/dynatrace-completes-acquisition-of-arize
   - https://arxiv.org/abs/2609.30751
-meta_title: "Buying AI Quality: The Score Belongs to the Judge"
+meta_title: "$915M Illusion: Your AI Judge Moves"
 meta_title_source: "derived_from_title"
-meta_description: "On October 1, Dynatrace paid $915 million for Arize."
-meta_description_source: "derived_from_lead"
+meta_description: "In AI, the test is another black box that moves every time you update its prompt — and Dynatrace paid $915 million for the most widely used one."
+meta_description_source: "authored"
 image_path: "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
@@ -22,7 +22,7 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-On October 1, Dynatrace paid $915 million for Arize. Arize makes the tracing and testing tools teams use to check if an artificial intelligence (AI) system works well [1][2]. In the same fortnight, a research paper warned that the core tool in this space—the large language model (LLM) judge—does not measure the same thing twice [4].
+In traditional software, a test is a ruler. In AI, the test is another black box that moves every time you update its prompt — what looks like a measurement is often an illusion. Dynatrace paid $915 million on October 1 for the most widely used version of that black box, an artificial intelligence (AI) judge that grades other AI systems [1][2]. In the same fortnight, a research paper warned that the core tool in this space—the large language model (LLM) judge—does not measure the same thing twice [4].
 
 <!-- tension -->
 
@@ -31,6 +31,13 @@ On October 1, Dynatrace paid $915 million for Arize. Arize makes the tracing and
 The big sales pitch for AI tracking tools is that quality is a simple number you can watch. 
 
 Dynatrace expects this market to pass $10 billion by 2030. They say buying Arize adds about 200 basis points to their yearly growth [2]. The bet is simple: whoever holds the score owns the standard.
+
+| | Traditional software | AI quality |
+|---|---|---|
+| **What tests it** | A fixed ruler, written once | Another model, reading a prompt |
+| **What moves it** | A change to the code | A change to the judge's prompt |
+| **What the score describes** | The software | The judge |
+| **What survives a swap** | The test suite | The trace data |
 
 What strikes me here is how narrow the tool really is. Most often, the judge is just one LLM grading another LLM's work. 
 
@@ -52,6 +59,8 @@ A third paper on September 22 looked at a small decision-only judge. This system
 <!-- tactical-insight -->
 
 ## What I'd watch:
+
+> A ruler does not change its mind. A judge does — and the invoice for the judge was $915 million.
 
 The teams closest to this work do not care which brand owns the score. They want to know if the score survives a model change, because research shows it rarely does.
 

@@ -63,11 +63,15 @@ WEAK_VERBS = {"is", "are", "was", "were", "has", "have", "had", "will", "can", "
 # Rule 2 — psychological triggers.
 CURIOSITY = ("why", "how", "what", "stop", "not", "isn't", "aren't", "doesn't", "don't", "won't",
              "no longer", "still", "but", "myth", "everyone", "nobody", "actually", "wrong",
-             "never", "before you", "instead")
+             "never", "before you", "instead", "moving target", "shifts", "changes")
 LOSS = ("mistake", "trap", "kill", "dies", "dead", "wrong", "overpriced", "overpay", "hidden",
         "silent", "fail", "failure", "gap", "penalty", "lose", "loss", "risk", "stuck", "blind",
         "denied", "expensive", "pricier", "paywall", "bricked", "break", "overrun", "creep",
-        "squeeze", "bill", "cost", "cheaper", "raise", "jump", "hike", "cliff", "veto", "denial")
+        "squeeze", "bill", "cost", "cheaper", "raise", "jump", "hike", "cliff", "veto", "denial",
+        # Added after the owner re-cut an article himself: 'illusion' (you were sold something that
+        # is not what it looks like), 'brittle' and 'drift' (it breaks, or moves off you) are the
+        # friction words his own example headlines used, and the list did not know them.
+        "illusion", "brittle", "drift")
 
 # Rule 3 — specificity.
 TARGET = ("your", "you", "shipper", "carrier", "homeowner", "cfo", "cfo's", "ops", "landlord",
@@ -102,6 +106,16 @@ def lead_of(body: str) -> str:
     return paras[0] if paras else ""
 
 
+def _figure_cores(text: str) -> list[str]:
+    """The digits inside every figure, so '$915M', '$915 million' and '915' compare equal.
+
+    Case and unit suffixes broke the first version of this check: a title reading '$915M' was
+    compared, original case, against a lowercased lead containing '$915 million' and reported the
+    lead as not stating the figure. Compare digit cores, never the surface form.
+    """
+    return [re.sub(r"[^\d]", "", f) for f in re.findall(r"\$?\d[\d.,]*%?", text) if re.sub(r"[^\d]", "", f)]
+
+
 def lead_delivery(title: str, body: str) -> tuple[bool, str]:
     """Does the FIRST PARAGRAPH deliver what the headline promises? ADVISORY — never scored.
 
@@ -116,9 +130,14 @@ def lead_delivery(title: str, body: str) -> tuple[bool, str]:
     if len(words(body)) < 40:
         return True, ""
     lead = lead_of(body).lower()
-    content = [x.lower().strip(".,;:") for x in words(title) if x.lower() not in STOP and len(x) > 3]
-    substantive = [f for f in re.findall(r"\$?\d[\d.,]*%?", title) if len(f.strip("$%")) > 1]
-    miss_figs = [f for f in substantive if f not in lead]
+    # Only real words: a figure token ('$915M') must be judged by the figure check below, not as a
+    # word looking for a literal '$915m' in the prose — a lead reading '$915 million' satisfies it.
+    content = [x.lower().strip(".,;:") for x in words(title)
+               if x.lower() not in STOP and len(x) > 3 and not any(c.isdigit() for c in x)]
+    lead_cores = _figure_cores(lead)
+    substantive = [f for f in re.findall(r"\$?\d[\d.,]*%?[a-z]?", title)
+                   if len(re.sub(r"[^\d]", "", f)) > 1]
+    miss_figs = [f for f in substantive if re.sub(r"[^\d]", "", f) not in lead_cores]
     miss_words = [c for c in content if c not in lead]
     if not miss_figs and len(miss_words) <= max(1, len(content) // 3):
         return True, ""
@@ -178,7 +197,8 @@ def score(title: str, *, body: str = "", keyword: str = "") -> dict:
 
     # ── 5. honesty (no bait-and-switch) ────────────────────────────────────────────────────────
     if len(words(body)) > 40:
-        content = [x.lower().strip(".,;:") for x in w if x.lower() not in STOP and len(x) > 3]
+        content = [x.lower().strip(".,;:") for x in w
+                   if x.lower() not in STOP and len(x) > 3 and not any(c.isdigit() for c in x)]
         front = " ".join(words(body)[:600]).lower()
         missing = [c for c in content if c not in front]
         rule("the promise is in the article (first ~600 words)", len(missing) <= max(1, len(content) // 3),

@@ -7,7 +7,7 @@ date: 2026-10-10
 slug: home-assistant-cloud-rename-hardware-rent
 meta_title: "Why Home Assistant Renamed Its Cloud"
 meta_title_source: "derived_from_title"
-meta_description: "The maker of Home Assistant just renamed its paid remote service. Home Assistant Cloud is now Home Assistant Link."
+meta_description: "The maker of Home Assistant announced a rename of its paid remote service, effective December 2. Home Assistant Cloud becomes Home Assistant Link."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/home-assistant-cloud-rename-hardware-rent/featured.png"
 image_style: "clay_render"
@@ -18,7 +18,7 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-The maker of Home Assistant just renamed its paid remote service. Home Assistant Cloud is now Home Assistant Link. The reason, in its own words: "Big tech ruined the cloud" [1][2].
+The maker of Home Assistant announced on October 2 that it will rename its paid remote service on December 2. Home Assistant Cloud becomes Home Assistant Link. The reason, in its own words: "Big tech ruined the cloud" [1][2].
 
 "We hate clouds," founder Paulus Schoutsen told The Verge [3].
 
@@ -32,7 +32,7 @@ The real fight is over where that rent goes. Vendors are moving fees off digital
 
 Nabu Casa draws a hard line. Its Link service is optional and has no lock-in; a home keeps working if the fee is cancelled [1][2]. A big-tech cloud, by contrast, is required and walled off [2].
 
-Schoutsen points to blunt examples. Nest switched off the cloud for early thermostats. Weber shut down the servers running the June Oven. "Now you have a dumb oven that cost $1,500," he said [3].
+Schoutsen points to blunt examples. Nest switched off the cloud for thermostats in Europe. Weber shut down the servers running the June Oven. "Now you have a dumb oven that cost $1,500," he said [3].
 
 What strikes me here is that vendors are naming the tinkering tax out loud. This desk has long argued that "free" self-hosting is only free if your hours cost nothing. Now the sticker buys the box, and the plan buys the right to keep using it.
 
@@ -92,7 +92,7 @@ Not everyone wants to run a server room. Home Assistant sits in about 2.7 millio
 
 ## At a glance
 
-- **The Big Shift:** The maker of Home Assistant renamed its paid remote service to Home Assistant Link on October 2, declaring "Big Tech ruined the cloud." The $6.50 monthly price stays. The point is the argument: cloud access has become a recurring rent on hardware people already own.
+- **The Big Shift:** The maker of Home Assistant will rename its paid remote service to Home Assistant Link on December 2, declaring "Big Tech ruined the cloud." The $6.50 monthly price stays. The point is the argument: cloud access has become a recurring rent on hardware people already own.
 - **Why It Matters:** Tech rent is spreading from digital content to physical devices. Cameras stop recording without a plan, and ovens stop working when a vendor turns off a server. The box price no longer buys true ownership.
 - **What I'd Watch:** Whether the hours spent on the "own it yourself" path keep rising while cash bills rise on the corporate side.
   - **Cert renewals:** Let's Encrypt cuts free cert lives from 90 days to 64 on February 10, 2027, then 45 days by 2028. Automatic tools absorb it; hardcoded schedules break.
