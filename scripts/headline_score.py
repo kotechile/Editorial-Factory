@@ -36,6 +36,17 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
+# Grandfathering, exactly as the voice gate does it (check_social_voice.mjs VOICE_ENFORCED_FROM):
+# the standard governs articles published from this date on. The 70 headlines that predate it are
+# scored and reported, never rewritten or held — retro-fitting live headlines is the owner's call,
+# not the machine's (owner decision, 2026-10-10: "make these changes for future articles only").
+ENFORCED_FROM = "2026-10-10"
+
+
+def enforced(date: str) -> bool:
+    """Is this artifact's date inside the standard? Unknown dates count as enforced."""
+    return not date or date >= ENFORCED_FROM
+
 # Rule 1 — length and scannability.
 CORE_WORDS_MAX = 6            # the core headline, before any colon/dash subtitle
 TOTAL_WORDS_MAX = 10          # hard ceiling for the whole title
@@ -178,15 +189,18 @@ def main() -> int:
         rows = []
         for path in sorted((ROOT / "published").glob("*.md")):
             t, b, k = artifact_title(path)
-            rows.append({**score(t, body=b, keyword=k), "file": path.name})
+            rows.append({**score(t, body=b, keyword=k), "file": path.name,
+                         "date": path.name[:10], "enforced": enforced(path.name[:10])})
         if args.json:
             print(json.dumps(rows, indent=2))
         else:
-            bad = [r for r in rows if r["verdict"] in ("WEAK", "POOR")]
-            print(f"headlines: {len(rows)} scored | {sum(1 for r in rows if r['verdict']=='STRONG')} strong, "
-                  f"{sum(1 for r in rows if r['verdict']=='OK')} ok, {len(bad)} weak/poor")
-            print(f"median score {sorted(r['score'] for r in rows)[len(rows)//2]}")
-            for r in sorted(rows, key=lambda r: r["score"])[:12]:
+            live = [r for r in rows if r["enforced"]]
+            old = [r for r in rows if not r["enforced"]]
+            bad = [r for r in live if r["verdict"] in ("WEAK", "POOR")]
+            print(f"headlines: {len(rows)} scored | {sum(1 for r in live if r['verdict']=='STRONG')} strong, "
+                  f"{sum(1 for r in live if r['verdict']=='OK')} ok, {len(bad)} weak/poor "
+                  f"(standard applies from {ENFORCED_FROM}; {len(old)} older headline(s) grandfathered)")
+            for r in sorted(live, key=lambda r: r["score"])[:12]:
                 print(f"  {r['score']:>3} {r['verdict']:<6} {r['words']:>2}w {r['chars']:>3}c | "
                       f"{r['title'][:70]}")
                 for f in r["failures"][:3]:

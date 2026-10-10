@@ -75,6 +75,12 @@ def test_named_subject_counts_as_calling_the_reader_out():
     assert not any("names the reader" in f for f in r["failures"])
 
 
+def test_the_standard_grandfathers_older_articles():
+    """Owner, 2026-10-10: the changes apply to future articles only."""
+    assert hs.enforced(hs.ENFORCED_FROM) and hs.enforced("2026-10-11") and hs.enforced("")
+    assert not hs.enforced("2026-10-09") and not hs.enforced("2026-09-21")
+
+
 def test_bait_and_switch_is_caught():
     """A headline about something the article never mentions must fail, however punchy it is."""
     r = hs.score("Your Mortgage Rate Collapses Overnight", body=BODY)

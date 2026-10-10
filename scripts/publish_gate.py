@@ -133,6 +133,10 @@ def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
     Returns {"slug", "artifact", "failures", "verdict", "rewrite"} where verdict is one of
     "publish" (cleared), "publish-after-rewrite" (cleared by the rewrite), "draft" (still failing —
     the caller must not publish it) or "no-artifact".
+
+    A headline is scored on the same pass but only enforced for articles dated on/after
+    `headline_score.ENFORCED_FROM`: older artifacts are grandfathered (owner, 2026-10-10, "future
+    articles only") — scored and reported, never rewritten and never held on style.
     """
     path = artifact_for(slug, root)
     report: dict = {"slug": slug, "artifact": str(path) if path else None, "failures": [],
@@ -143,31 +147,38 @@ def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
                               f"nothing to gate, so it cannot be published"]
         return report
 
-    failures = text_failures(path, root=root)
-    # The headline is scored on the same pass: a structurally broken one (past 13 words or 75 chars)
-    # holds the article even when the prose is clean, and a merely weak one is re-cut once.
+    body_failures = text_failures(path, root=root)
+    headline_failures: list[str] = []
+    # The headline is scored on the same pass. A structurally broken one (past 13 words or 75 chars)
+    # holds the article even when the prose is clean; a merely weak one is re-cut once; a headline
+    # older than the standard is grandfathered inside title_gate and never held.
     try:
         report["title"] = title_gate(path, rewrite=rewrite, apply=rewrite)
         if report["title"].get("hold"):
             worst = report["title"]["before"]["failures"]
-            failures = failures + [f"headline ({report['title']['before']['score']}/100): "
-                                  + (worst[0] if worst else "does not meet the title standard")]
+            headline_failures = [f"headline ({report['title']['before']['score']}/100): "
+                                 + (worst[0] if worst else "does not meet the title standard")]
     except Exception as exc:                           # noqa: BLE001 - report, never swallow
         report["title"] = {"error": f"title gate failed: {exc}"}
-        failures = failures + [f"headline: the title gate could not run ({exc})"]
+        headline_failures = [f"headline: the title gate could not run ({exc})"]
+
+    failures = body_failures + headline_failures
     report["failures"] = failures
     if not failures:
         return report
-
-    report["failures"] = failures
     report["verdict"] = "draft"
     if not rewrite:
         return report
 
+    # Only the PROSE earns a Loop 3 rewrite. A held headline does not: rewriting the whole body to
+    # fix a title would spend a frontier call and churn the article for nothing — and, before this,
+    # it also dropped the headline hold from the verdict (the re-gate only re-ran the text checks).
+    if not body_failures:
+        return report
+
     report["rewrite"] = attempt_rewrite(path)
-    re_failures = text_failures(path, root=root)
-    report["failures"] = re_failures
-    report["verdict"] = "publish-after-rewrite" if not re_failures else "draft"
+    report["failures"] = text_failures(path, root=root) + headline_failures
+    report["verdict"] = "publish-after-rewrite" if not report["failures"] else "draft"
     return report
 
 
@@ -492,8 +503,17 @@ def title_gate(path: pathlib.Path, *, rewrite: bool, apply: bool = False) -> dic
     import headline_score as hs
     title, body, keyword = hs.artifact_title(path)
     before = hs.score(title, body=body, keyword=keyword)
-    report = {"before": before, "after": None, "adopted": None, "candidates": []}
+    date = path.name[:10]
+    standardized = hs.enforced(date)
+    report = {"before": before, "after": None, "adopted": None, "candidates": [],
+              "enforced": standardized, "date": date}
     structurally_broken = before["words"] > 13 or before["chars"] > hs.HARD_CHARS_MAX
+    if not standardized:
+        # Grandfathered: an article older than the standard is scored and reported, never rewritten
+        # and never held (owner, 2026-10-10 — the changes apply to future articles only).
+        report["hold"] = False
+        report["grandfathered"] = True
+        return report
     if not rewrite or before["verdict"] == "STRONG":
         report["hold"] = structurally_broken
         return report

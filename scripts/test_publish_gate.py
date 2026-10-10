@@ -180,6 +180,34 @@ def test_rewrite_does_not_run_on_a_live_post(repo, monkeypatch):
     assert report["verdict"] == "draft" and report["rewrite"] is None
 
 
+def test_a_grandfathered_article_is_never_held_or_rewritten_for_its_headline(repo, monkeypatch):
+    """Owner, 2026-10-10: the headline standard applies to future articles only — an older piece is
+    scored and reported, never rewritten and never held on style."""
+    write(repo, name="2026-10-05_old-style.md",
+          text=GOOD.replace('title: "Battery Sizing For The Loads You Actually Own"',
+                            'title: "The Complicated Story Of How Battery Sizing Works In Every '
+                            'Modern Home Across The Country Today"'))
+    monkeypatch.setattr(pg, "title_candidates",
+                        lambda *a, **k: pytest.fail("the gate re-cut a grandfathered headline"))
+    monkeypatch.setattr(pg, "attempt_rewrite",
+                        lambda *a, **k: pytest.fail("the gate rewrote a grandfathered article"))
+    report = pg.gate("old-style", root=repo)
+    assert report["verdict"] == "publish"
+    assert report["title"]["grandfathered"] is True and report["title"]["hold"] is False
+
+
+def test_a_new_article_with_a_broken_headline_is_held(repo, monkeypatch):
+    """From ENFORCED_FROM on, a headline that is not a headline (17 words) holds the article."""
+    write(repo, name="2026-10-11_new-style.md",
+          text=GOOD.replace('title: "Battery Sizing For The Loads You Actually Own"',
+                            'title: "The Complicated Story Of How Battery Sizing Works In Every '
+                            'Modern Home Across The Country Today"'))
+    monkeypatch.setattr(pg, "title_candidates", lambda *a, **k: [])
+    report = pg.gate("new-style", root=repo)
+    assert report["verdict"] == "draft"
+    assert any("headline" in f for f in report["failures"])
+
+
 def test_artifact_lookup_prefers_the_published_copy(repo):
     (repo / "context" / "drafts" / "2026-10-11_battery-sizing_final.md").write_text(GOOD)
     published = write(repo)
