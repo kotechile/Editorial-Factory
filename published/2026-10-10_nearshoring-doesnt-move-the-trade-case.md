@@ -1,5 +1,5 @@
 ---
-title: "Nearshoring: Your 32.58% Trade Risk Remains"
+title: "Nearshoring Doesn't Move the Trade Case"
 vertical: supplier_risk_reshoring_decision
 persona: ops_leader
 one_big_thing: "A sourcing decision now carries two liabilities a duty rate cannot show — a trade case that attaches to the product's country of origin, and an enforcement file that attaches to the importer's own records — and moving the factory relocates neither."
@@ -9,7 +9,7 @@ synthesis: true
 sources:
   - https://www.usitc.gov/keywords/antidumping
   - https://www.justice.gov/opa/media/1463571/dl
-meta_title: "Nearshoring: Your 32.58% Trade Risk Remains"
+meta_title: "Nearshoring Doesn't Move the Trade Case"
 meta_title_source: "derived_from_title"
 meta_description: "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S."
 meta_description_source: "derived_from_lead"

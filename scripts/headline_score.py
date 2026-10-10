@@ -95,6 +95,37 @@ def body_figures(body: str) -> list[str]:
     return re.findall(r"\$?\d[\d,.]*\s?(?:%|percent|k|m|bn|billion|million)?", scope)
 
 
+def lead_of(body: str) -> str:
+    """The first paragraph of prose — everything a reader sees before deciding to stay or leave."""
+    paras = [p.strip() for p in re.sub(r"<!--.*?-->", "", body or "", flags=re.S).split("\n\n")
+             if p.strip() and not p.startswith(("#", "-", ">", "|"))]
+    return paras[0] if paras else ""
+
+
+def lead_delivery(title: str, body: str) -> tuple[bool, str]:
+    """Does the FIRST PARAGRAPH deliver what the headline promises? ADVISORY — never scored.
+
+    Reported, not scored, on purpose. An independent read of five live articles (2026-10-10) found
+    four headlines whose promise the lead never made: 'Your 11.5kW EV Backup Costs $8,200' over a lead
+    about Tesla turning cars into batteries; 'Nearshoring: Your 32.58% Trade Risk Remains' over a lead
+    that never names 32.58%; '6 Windows, Not 1' over a lead that never counts them. But a literal
+    string match cannot see paraphrase ('Three months after a job ends' *is* '90-day'), so making this
+    a scored rule would punish correct headlines and tilt the weights — it broke the reference headline
+    the moment it was scored. Keep it as evidence for the reviewer, never as a scoring input.
+    """
+    if len(words(body)) < 40:
+        return True, ""
+    lead = lead_of(body).lower()
+    content = [x.lower().strip(".,;:") for x in words(title) if x.lower() not in STOP and len(x) > 3]
+    substantive = [f for f in re.findall(r"\$?\d[\d.,]*%?", title) if len(f.strip("$%")) > 1]
+    miss_figs = [f for f in substantive if f not in lead]
+    miss_words = [c for c in content if c not in lead]
+    if not miss_figs and len(miss_words) <= max(1, len(content) // 3):
+        return True, ""
+    why = f"the lead never states {', '.join(miss_figs)}" if miss_figs else ""
+    return False, (why or f"absent from the lead: {', '.join(miss_words[:4])}")
+
+
 def score(title: str, *, body: str = "", keyword: str = "") -> dict:
     """Score one headline. Returns the rules that passed, the ones that failed, and 0-100."""
     title = (title or "").strip()
@@ -158,9 +189,10 @@ def score(title: str, *, body: str = "", keyword: str = "") -> dict:
 
     verdict = "STRONG" if points == maxpoints else ("OK" if points >= maxpoints * 0.75 else
                                                     ("WEAK" if points >= maxpoints * 0.5 else "POOR"))
+    lead_ok, lead_note = lead_delivery(title, body)
     return {"title": title, "core": core, "words": len(w), "core_words": len(cw), "chars": len(title),
             "score": round(100 * points / max(1, maxpoints)), "verdict": verdict,
-            "failures": failures, "passes": passes}
+            "failures": failures, "passes": passes, "lead_ok": lead_ok, "lead_note": lead_note}
 
 
 def artifact_title(path: pathlib.Path) -> tuple[str, str, str]:
@@ -200,6 +232,12 @@ def main() -> int:
             print(f"headlines: {len(rows)} scored | {sum(1 for r in live if r['verdict']=='STRONG')} strong, "
                   f"{sum(1 for r in live if r['verdict']=='OK')} ok, {len(bad)} weak/poor "
                   f"(standard applies from {ENFORCED_FROM}; {len(old)} older headline(s) grandfathered)")
+            undelivered = [r for r in live if not r["lead_ok"]]
+            print(f"lead delivery (advisory, unscored): {len(live) - len(undelivered)}/{len(live)} headlines "
+                  f"are delivered by their own first paragraph")
+            for r in undelivered:
+                print(f"  ? {r['score']:>3} {r['verdict']:<6} | {r['title'][:70]}")
+                print(f"        - {r['lead_note']}")
             for r in sorted(live, key=lambda r: r["score"])[:12]:
                 print(f"  {r['score']:>3} {r['verdict']:<6} {r['words']:>2}w {r['chars']:>3}c | "
                       f"{r['title'][:70]}")

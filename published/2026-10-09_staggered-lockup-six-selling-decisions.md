@@ -1,11 +1,11 @@
 ---
-title: "SpaceX Lockup Trap: 6 Windows, Not 1"
+title: "SpaceX's Staggered Lockup: Six Windows, Not One"
 vertical: career_velocity_equity_engineering
 persona: equity_career_strategist
 one_big_thing: "A staged IPO lockup turns one sell-or-hold decision into six, so the employees who keep the most of their equity are the ones who engineer the schedule — tranche by tranche, tax year by tax year — before the first window opens."
 date: 2026-10-09
 slug: staggered-lockup-six-selling-decisions
-meta_title: "SpaceX Lockup Trap: 6 Windows, Not 1"
+meta_title: "SpaceX's Staggered Lockup: Six Windows, Not One"
 meta_title_source: "derived_from_title"
 meta_description: "SpaceX workers get their next chance to sell today as 328.4 million shares — about 7% of the locked stock — open for trading."
 meta_description_source: "derived_from_lead"

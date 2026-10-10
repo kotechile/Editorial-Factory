@@ -115,3 +115,30 @@ def test_artifact_title_reads_frontmatter():
         p.write_text('---\ntitle: "Your Battery Sizing Is Wrong"\nprimary_keyword: battery sizing\n---\n\nBody.\n')
         title, body, keyword = hs.artifact_title(p)
         assert title == "Your Battery Sizing Is Wrong" and keyword == "battery sizing"
+
+
+def test_lead_delivery_is_advisory_and_never_moves_the_score():
+    """The lead check reports, it does not score: the reference headline stays STRONG/100 even though
+    its figure lives outside the first paragraph. Scored, this rule broke the reference (fleet reverted
+    it as 'undo the stray in-flight edit'), so it must stay out of the weight table."""
+    body = ("California FAIR Plan premiums are climbing for homeowners who never filed a claim.\n\n"
+            "## By the numbers\n\n- **29.1%** average increase approved for 2026\n")
+    r = hs.score("California FAIR Plan Premiums Jump 29.1%", body=body)
+    assert r["verdict"] == "STRONG" and r["score"] == 100
+    assert "lead_ok" in r and "lead_note" in r
+
+
+def test_lead_delivery_flags_a_promise_the_first_paragraph_never_makes():
+    body = ("Tesla just turned its two best-selling cars into backup batteries for your house.\n\n"
+            "The Powerwall 3 hardware runs $8,200 before installation, and installers quote five "
+            "figures for the full job in most US markets, which puts the feature out of reach for "
+            "the households the utility bills are squeezing hardest right now.\n")
+    r = hs.score("Your 11.5kW EV Backup Costs $8,200", body=body)
+    assert r["lead_ok"] is False and "8,200" in r["lead_note"]
+
+
+def test_lead_delivery_passes_when_the_paragraph_states_the_number():
+    body = ("Self-hosting costs about 1.26 hours of upkeep a year at 2025 medians.\n\n"
+            "That is the whole break-even argument.\n")
+    r = hs.score("Self-Hosting Break-Even: 1.26 Hours a Year", body=body)
+    assert r["lead_ok"] is True and r["lead_note"] == ""
