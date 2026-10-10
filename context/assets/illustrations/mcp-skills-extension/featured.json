@@ -1,6 +1,6 @@
 {
   "slug": "mcp-skills-extension",
-  "revision": 3,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -17,76 +17,97 @@
       "title": "Standardizing MCP Skills",
       "bytes": 1002913,
       "sha256": "sha256:ff88a65463f4a9e0ccb9aa826b00f37628ed8cbfe2dcb6c4583a910793c4e2d0"
+    },
+    {
+      "revision": 3,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A multi-layered architecture stack showing distinct horizontal platforms separated by vertical channels. The bottom layer represents a base tool layer, the top layer represents process pipelines. Flat muted palette with one accent colour, thin consistent line weight, simplified boxes and pipes with visible depth, unlabelled, generous empty margin.",
+      "task_id": "60d9ee60872263ef2fcc07bbc51802c0",
+      "sha256": "sha256:ff88a65463f4a9e0ccb9aa826b00f37628ed8cbfe2dcb6c4583a910793c4e2d0",
+      "generated_at": "2026-10-01T13:59:00+00:00",
+      "source_hash": "sha256:91577c57e1dca7fb93371f9433e06c77"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The new MCP extension separates AI agent tools from standardized workflow processes.",
+      "title": "MCP-Skills-Stack-Split",
+      "bytes": 2386236,
+      "sha256": "sha256:848e67350cbf115e15e983133316b009"
     }
   ],
-  "style": "technical_isometric",
-  "style_label": "Technical isometric cutaway",
-  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A multi-layered architecture stack showing distinct horizontal platforms separated by vertical channels. The bottom layer represents a base tool layer, the top layer represents process pipelines. Flat muted palette with one accent colour, thin consistent line weight, simplified boxes and pipes with visible depth, unlabelled, generous empty margin.",
-  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, labels, logos, people, physical folders, puzzle pieces, glowing brains",
-  "rationale": "The article discusses the standardisation of agent workflows and the splitting of the agent software stack into tools and processes (skills). A technical isometric cutaway perfectly illustrates the structural reorganisation of this software architecture into distinct layers and components.",
-  "cue": "cleanly splits the software stack",
-  "subject": "a multi-layered software stack separating tools from process pipelines",
-  "alt_text": "Standardizing MCP Skills. An isometric diagram showing distinct horizontal layers connected by vertical pipelines.",
-  "caption": "Standardizing MCP Skills: A new protocol for agents to retrieve reusable workflows.",
-  "title": "Standardizing MCP Skills",
+  "prompt": "Minimalist editorial cut-paper collage. Two stylized cut-out object silhouettes\u2014a rigid mechanical tool form cleanly separating from a stacked workflow dossier shape\u2014layered deliberately on a real flat surface. Hand-torn rag paper with visible fiber, physical cast shadows under each crisp layer, one raking directional light throwing long shadows. Muted modern editorial palette of slate blue and soft cream, crisp clean edges, generous editorial negative space, subtle halftone newsprint texture.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, printed text, numbers",
+  "rationale": "The article describes a purely conceptual software standard and an architectural stack split, which is elegantly represented through a minimalist paper collage visualizing the separation of two distinct logical layers.",
+  "cue": "Splitting the Agent Stack",
+  "subject": "two abstract cut-paper silhouettes separating cleanly",
+  "core_thesis": "The MCP skills extension officially splits the AI agent stack into two distinct layers: tools and standardized processes.",
+  "core_conflict": "Monolithic agent execution vs cleanly separated, standardized network resources.",
+  "composition": "extreme asymmetrical layout",
+  "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+  "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+  "title": "The MCP Skills Extension",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 2,
+  "director_attempts": 1,
   "pinned": {},
   "file": "featured.png",
   "local_path": "context/assets/illustrations/mcp-skills-extension/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1002913,
-  "sha256": "sha256:ff88a65463f4a9e0ccb9aa826b00f37628ed8cbfe2dcb6c4583a910793c4e2d0",
+  "bytes": 1727995,
+  "sha256": "sha256:0395bb404fcd5389a4272836b6f10d39661b9d685c14e9cf8558bb099a5c3c4a",
   "source_hash": "sha256:91577c57e1dca7fb93371f9433e06c77",
   "source_chars": 4130,
-  "task_id": "60d9ee60872263ef2fcc07bbc51802c0",
+  "task_id": "62ca9d88bc1fe8992614d5d5046e25bd",
   "credits": 18.0,
-  "cost_ms": 26,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_bd1b5dcf5714545fc5451e67b5e93f75.png",
+  "cost_ms": 58,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_431524b19662608934e6a2c610086014.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A multi-layered architecture stack showing distinct horizontal platforms separated by vertical channels. The bottom layer represents a base tool layer, the top layer represents process pipelines. Flat muted palette with one accent colour, thin consistent line weight, simplified boxes and pipes with visible depth, unlabelled, generous empty margin.\n\nDo not include: text, letters, numbers, wordmarks, signage, UI, labels, logos, people, physical folders, puzzle pieces, glowing brains.",
+      "prompt": "Minimalist editorial cut-paper collage. Two stylized cut-out object silhouettes\u2014a rigid mechanical tool form cleanly separating from a stacked workflow dossier shape\u2014layered deliberately on a real flat surface. Hand-torn rag paper with visible fiber, physical cast shadows under each crisp layer, one raking directional light throwing long shadows. Muted modern editorial palette of slate blue and soft cream, crisp clean edges, generous editorial negative space, subtle halftone newsprint texture.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-01T13:59:00+00:00",
+  "generated_at": "2026-10-10T15:51:54+00:00",
   "overlay": {
-    "kicker": "AI AGENTS // MCP SKILLS EXTENSION",
-    "title": "STANDARDIZING MCP SKILLS",
-    "hook": "A new protocol for agents to retrieve reusable workflows",
+    "kicker": "AGENT ARCHITECTURE // MCP SKILLS",
+    "title": "THE MCP SKILLS EXTENSION",
+    "hook": "Standardizing how agents discover and retrieve workflows",
     "anchor": "top-left",
     "light": false,
     "scrim": 0,
-    "contrast": 6.23,
+    "contrast": 9.84,
     "target": 5.5,
-    "clutter": 0.288,
+    "clutter": 0.324,
     "region_rgb": [
-      219,
-      222,
-      220
+      224,
+      223,
+      213
     ],
     "binding_rgb": [
-      168,
-      181,
-      189
+      230,
+      223,
+      205
     ],
     "title_lines": [
-      "STANDARDIZING",
-      "MCP SKILLS"
+      "THE MCP SKILLS",
+      "EXTENSION"
     ],
-    "generated_at": "2026-10-01T13:59:00+00:00"
+    "generated_at": "2026-10-10T15:51:54+00:00"
   }
 }

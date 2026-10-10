@@ -1,6 +1,6 @@
 {
   "slug": "maskills-multi-agent-skills-optimization",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -29,6 +29,14 @@
       "title": "Agentic AI Skill Validation Gate",
       "bytes": 1433768,
       "sha256": "sha256:aac97056f3dfb8f6ec97fe65d79db55d"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Optimize Skills Not Memory. Brushed titanium server blade locking into a precision inspection gate bay against a charcoal bac",
+      "caption": "Optimize Skills Not Memory: Why agents need optimized skills instead of more memory.",
+      "title": "Optimize Skills Not Memory",
+      "bytes": 933115,
+      "sha256": "sha256:be2f2d1e0264d65167f6c4c46edf42c69975a09804599b3702cf6cd56eda75ce"
     }
   ],
   "style": "component_assembly",

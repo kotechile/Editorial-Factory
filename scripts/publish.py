@@ -609,12 +609,14 @@ def sync_to_supabase(data: dict, live_urls: dict):
 
 
 def push_wp_draft(slug: str) -> bool:
-    """Create the article's draft in the CMS its vertical maps to (public.vertical_sites).
+    """Create the article's post in the CMS its vertical maps to (public.vertical_sites).
 
-    Runs in the persistence pass, not behind the approval gate: a draft is invisible to readers
-    (the Astro frontends render published posts only) and the gate stays on the CMS's
-    draft -> publish flip, which is a human action. Idempotent by slug, so re-publishing an
-    article updates its existing draft instead of creating a second one.
+    Runs in the persistence pass, not behind an approval gate: the reader sites are the destination
+    and the article goes up with status 'publish', so it is live the moment this returns. There is
+    no draft -> publish flip left for a human to make; the one protection against a blind re-sync
+    rewriting something an editor tuned is wp_draft's skip-live guard (a routine push leaves an
+    existing published post alone unless --refresh-live is passed). Idempotent by slug, so
+    re-publishing an article updates its existing post instead of creating a second one.
 
     Best-effort by design: a CMS that is down or an
     unconfigured credential must not roll back a publish that already persisted the article to

@@ -142,8 +142,15 @@ def sentence_case(text: str, source: str = "") -> str:
             w = w.replace(core, spelled)
         elif core.upper() in ACRONYMS:
             w = w.upper()
+        elif core.isupper() and len(core) > 1 and "-" in core and max(len(p) for p in core.split("-")) <= 3:
+            pass   # an initialism compound the director already set right ('UP-NS') — '.title()'
+                   # would render it 'Up-Ns', which is not how the article or the reader names it
         elif core.isupper() and len(core) > 1:
-            w = w.title()
+            cased = core.title()
+            if "-" in core:           # keep an acronym that is one half of a compound: 'AI-COST'
+                cased = "-".join(p.upper() if p.upper() in ACRONYMS else p
+                                 for p in cased.split("-"))
+            w = w.replace(core, cased)
         elif i and core.islower():
             w = w.capitalize()
         words.append(w)
@@ -258,15 +265,26 @@ def _choose_ink(img, box) -> tuple:
     return ink, tone, scrim, achieved, target, light_ink, binding, clutter
 
 
-def plan(img) -> dict:
+def plan(img, anchor: str | None = None) -> dict:
     """Where the type goes: the emptiest corner. Ink and scrim are settled after the type is laid
-    out, against the pixels the block actually covers — see `_choose_ink`."""
+    out, against the pixels the block actually covers — see `_choose_ink`.
+
+    `anchor` forces a corner. Only for the case this metric cannot see: sparse line art (a technical
+    isometric, a flat-lay on white) scores as an *empty* corner while the strokes the type lands on
+    still cut through the letters. The clutter probe cannot separate thin ink from flat background, so
+    a collision it cannot feel has to be steered by hand."""
     w, h = img.size
     bw, bh = int(w * SAFE_W), int(h * SAFE_H)
     corners = {"top-left": (0, 0), "top-right": (w - bw, 0),
                "bottom-left": (0, h - bh), "bottom-right": (w - bw, h - bh)}
     order = ["top-left", "top-right", "bottom-left", "bottom-right"]
     busy = {name: _busiest(img, (x, y, x + bw, y + bh)) for name, (x, y) in corners.items()}
+    if anchor:
+        if anchor not in corners:
+            raise ValueError(f"anchor must be one of {order}, got {anchor!r}")
+        x, y = corners[anchor]
+        return {"anchor": anchor, "x": x, "y": y, "forced": True,
+                "busy": {k: round(v, 4) for k, v in busy.items()}}
     # The owner's design anchors top-left, so keep it unless another corner is MEANINGFULLY emptier.
     # The margin is what makes this work: requiring a corner to be half as busy (the first cut) meant
     # the anchor never moved and the automatic placement looked broken.
@@ -301,12 +319,13 @@ def _fit_wrapped(draw, text: str, path: str, px: int, max_w: int, max_lines: int
     return font, [text]
 
 
-def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict) -> dict:
+def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict,
+              anchor: str | None = None) -> dict:
     """Lay the type out, measure the pixels under THAT block, then choose ink and scrim and draw."""
     from PIL import Image, ImageDraw
     base = Image.open(img_path).convert("RGBA")
     w, h = base.size
-    p = plan(base)
+    p = plan(base, anchor)
     probe = ImageDraw.Draw(base)
     pad = int(w * 0.045)
     x, y = p["x"] + pad, p["y"] + int(h * 0.055)
@@ -383,7 +402,8 @@ def base_path(img: pathlib.Path) -> pathlib.Path:
     return img.with_suffix(f".base{img.suffix}")
 
 
-def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run: bool = False, force_copy: dict | None = None) -> dict:
+def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run: bool = False,
+                  force_copy: dict | None = None, anchor: str | None = None) -> dict:
     """Composite onto the staged header and keep the sidecar's bytes/sha and alt/caption honest."""
     import hashlib
     hits = sorted((ROOT / "published").glob(f"*_{slug}.md")) or \
@@ -413,7 +433,7 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
         for stale in img.parent.glob(f"{img.stem}.base.*"):    # a regeneration may change the suffix
             stale.unlink()
         shutil.copy2(img, clean_img)
-    placement = composite(clean_img, img, copy)
+    placement = composite(clean_img, img, copy, anchor)
     blob = img.read_bytes()
     side.setdefault("history", []).append(
         {k: side.get(k) for k in ("revision", "alt_text", "caption", "title", "bytes", "sha256")})
@@ -443,9 +463,14 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
 def main() -> int:
     ap = argparse.ArgumentParser(description="Composite the desk's cover typography onto a header.")
     ap.add_argument("--slug", required=True)
+    ap.add_argument("--anchor", choices=["top-left", "top-right", "bottom-left", "bottom-right"],
+                    help="Force the type block into this corner. Use only when the automatic pick "
+                         "lands the type on sparse line art it reads as empty (the collision shows up "
+                         "in the composite, not in the clutter score)")
     ap.add_argument("--dry-run", action="store_true", help="print the copy, touch nothing")
     args = ap.parse_args()
-    print(json.dumps(apply_to_slug(args.slug, dry_run=args.dry_run), indent=2, default=str))
+    print(json.dumps(apply_to_slug(args.slug, dry_run=args.dry_run, anchor=args.anchor),
+                     indent=2, default=str))
     return 0
 
 

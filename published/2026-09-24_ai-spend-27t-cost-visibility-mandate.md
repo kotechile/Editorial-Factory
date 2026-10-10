@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "AI Cost Control Mandate. Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers."
-image_caption: "AI Cost Control Mandate: Tracking outcomes instead of token prices."
+image_alt: "The AI Cost Control Mandate. Isometric technical cutaway of an AI processing stack with precision metering gates embedded in "
+image_caption: "The AI Cost Control Mandate: Buyers demand built-in tracking for every AI purchase."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

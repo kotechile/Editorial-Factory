@@ -5,9 +5,13 @@ A push-only connector cannot answer "is the schema/SVG in WordPress": the 201 sa
 accepted, while WordPress (or a plugin, or the editor) is free to sanitize, re-encode or drop anything
 in `post_content` on save. This script closes that gap: it builds ONE article's payload out of real
 generated material — a verified citation-hub dossier's `Dataset` node plus a real artifact's chart —
-creates it as a clearly-labelled draft, reads it back with `context=edit`, compares every delivered
-field, confirms the draft is not publicly visible, and (unless `--keep`) trashes it again and confirms
-the CMS is back at its baseline.
+creates it as a clearly-labelled, explicitly DRAFT post, reads it back with `context=edit`, compares
+every delivered field, confirms the probe is not publicly visible, and (unless `--keep`) trashes it
+again and confirms the CMS is back at its baseline.
+
+The probe pins its own payload to `status: "draft"` on purpose: the connector's default is now
+`publish` (the reader sites are the destination), and a transport check must never put a test post in
+front of readers. Pinning it here is what keeps the "not publicly visible" checks below meaningful.
 
 Nothing here touches Supabase: the payload is built in memory and never written to a row.
 
@@ -116,6 +120,9 @@ def main() -> int:
     }
 
     payload, mapping_notes = wd.build_payload(row, site, publisher_name=site["site_domain"])
+    # The connector publishes by default. This probe is test residue, not content: pin it to draft so
+    # running the check can never publish a "DELIVERY CHECK" placeholder to the reader site.
+    payload["status"] = "draft"
     sent_ld, sent_svg = payload["content"].count("application/ld+json"), payload["content"].count("<svg")
     sent_bytes = len(payload["content"])
     print(f"payload     : {sent_bytes} chars | {sent_ld} JSON-LD block(s) | {sent_svg} inline SVG(s)")
@@ -148,8 +155,8 @@ def main() -> int:
         check("the excerpt (the frontends' <meta description> source) is populated",
               bool(wd._plain_text((stored.get("excerpt") or {}).get("raw"))))
         check("no delivery problem reported by the connector's own read-back", problems == [], str(problems))
-        check("the post is a DRAFT (publishing stays a human step)", stored.get("status") == "draft",
-              str(stored.get("status")))
+        check("the probe post is DRAFT (the connector publishes by default; a probe must not)",
+              stored.get("status") == "draft", str(stored.get("status")))
 
         # ── and it is not public ──
         check("the draft is absent from the anonymous post list", anonymous_slugs(base, slug) == [],

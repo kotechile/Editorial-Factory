@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T06:39:17Z",
+  "updated_at": "2026-10-10T15:48:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -269,8 +269,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": true,
-      "url": "https://wellroost.com/california-legalizes-plug-in-solar/"
+      "public": false
     },
     {
       "slug": "2026-10-03_cloud-update-bricked-the-fridge-local-first",
@@ -326,8 +325,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": true,
-      "url": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/"
+      "public": false
     },
     {
       "slug": "2026-10-03_tariff-split-reshoring-heavy-half",
@@ -382,7 +380,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-05",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/agent-audit-trail-not-evidence/"
     },
     {
       "slug": "2026-10-05_agent-safety-gate-moves-to-verified-state",
@@ -475,8 +474,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-05",
-      "public": true,
-      "url": "https://wellroost.com/remodel-capitalization-trap-shell-not-show/"
+      "public": false
     },
     {
       "slug": "2026-10-05_smart-irrigation-payback-water-tier",
@@ -513,7 +511,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-05",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/you-think-youre-governing-your-agents/"
     },
     {
       "slug": "2026-10-06_agent-reliability-pass-k-not-one-green-run",
@@ -569,7 +568,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/"
     },
     {
       "slug": "2026-10-06_cloud-repatriation-break-even",
@@ -605,7 +605,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/control-tower-silent-exception/"
     },
     {
       "slug": "2026-10-06_demurrage-invoice-30-day-clocks",
@@ -832,7 +833,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/"
     },
     {
       "slug": "2026-10-07_retry-is-the-failure-amplifier",
@@ -1116,7 +1118,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/backup-battery-sizing-critical-loads/"
     },
     {
       "slug": "2026-10-09_diesel-620-electric-freight-certificate-gap",
@@ -1134,7 +1137,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/"
     },
     {
       "slug": "2026-10-09_last-mile-carbon-number-is-a-rate-table",
@@ -1152,7 +1156,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/last-mile-carbon-number-is-a-rate-table/"
     },
     {
       "slug": "2026-10-09_post-termination-option-clock-tax",
@@ -1170,7 +1175,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/post-termination-option-clock-tax/"
     },
     {
       "slug": "2026-10-09_staggered-lockup-six-selling-decisions",
@@ -1188,7 +1194,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/"
     },
     {
       "slug": "2026-10-09_your-ev-is-now-a-home-battery-behind-a-paywall",
@@ -1206,7 +1213,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/"
     },
     {
       "slug": "2026-10-10_home-assistant-cloud-rename-hardware-rent",
@@ -1224,7 +1232,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-10",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/"
     },
     {
       "slug": "2026-10-10_nearshoring-doesnt-move-the-trade-case",
@@ -1242,7 +1251,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-10",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/nearshoring-doesnt-move-the-trade-case/"
     }
   ]
 }

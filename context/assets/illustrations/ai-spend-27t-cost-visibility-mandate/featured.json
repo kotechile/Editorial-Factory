@@ -1,6 +1,6 @@
 {
   "slug": "ai-spend-27t-cost-visibility-mandate",
-  "revision": 5,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -37,6 +37,24 @@
       "title": "AI Cost Control Mandate",
       "bytes": 1126142,
       "sha256": "sha256:a62b11303cacc0c084ec6aedb1ef40b95f6df8e1f079aff4d5176cfaa5abba60"
+    },
+    {
+      "revision": 5,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean isometric cutaway illustration of a multi-tiered enterprise compute server stack, technical drawing style, axonometric projection. Flat muted grey palette with a single bright amber accent color tracking a data flow down through three distinct internal processing trays and routing bays. Recognizable hardware racks, cooling modules, and visible depth, clean consistent line weight, generous empty margin on a neutral seamless background.",
+      "task_id": "cb9da70aaf2d8f4bb7e939b8cac7302a",
+      "sha256": "sha256:a62b11303cacc0c084ec6aedb1ef40b95f6df8e1f079aff4d5176cfaa5abba60",
+      "generated_at": "2026-10-08T22:20:14+00:00",
+      "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Isometric technical cutaway of an AI processing stack with precision metering gates embedded in optical routing layers.",
+      "caption": "Buyers now demand that vendors build usage tracking directly into their tools to prove the tech actually works.",
+      "title": "ai-finops-isometric-architecture",
+      "bytes": 7796718,
+      "sha256": "sha256:8b179b7d44a54a039152e8b4ccb6308d"
     }
   ],
   "style": "technical_isometric",
@@ -46,67 +64,70 @@
   "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "1K",
-  "prompt": "Clean isometric cutaway illustration of a multi-tiered enterprise compute server stack, technical drawing style, axonometric projection. Flat muted grey palette with a single bright amber accent color tracking a data flow down through three distinct internal processing trays and routing bays. Recognizable hardware racks, cooling modules, and visible depth, clean consistent line weight, generous empty margin on a neutral seamless background.",
-  "negative_prompt": "text, words, letters, numbers, abstract boxes, bare geometry, UI elements, logos, watermarks, people, chaotic layout, messy lines, grids.",
-  "rationale": "The article emphasizes the 'hidden layers' of software calls and database lookups that stack on top of raw token costs. A technical isometric cutaway perfectly visualizes these hidden structural layers and the flow of compute in a clean, analytical manner.",
-  "cue": "budget the hidden layers",
-  "subject": "isometric cutaway of a multi-tiered compute server stack",
-  "alt_text": "AI Cost Control Mandate. Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers.",
-  "caption": "AI Cost Control Mandate: Tracking outcomes instead of token prices.",
-  "title": "AI Cost Control Mandate",
+  "resolution": "2K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A multi-layered AI processing stack constructed of translucent processing modules, optical data routing channels, and precision brass metering gates embedded directly into the pathways. Each layer represents a software call structurally integrated with measurement nodes. Flat muted palette with a sharp amber accent color, thin consistent line weight. Laid over a textured drafting table surface. One directional light casting sharp shadows. Extreme asymmetry framing, positioned off-center in the lower right quadrant with generous empty margin. No labels, no text, no bare cubes.",
+  "negative_prompt": "text, letters, numbers, watermark, UI, label, print, typo, garbled",
+  "rationale": "An isometric cutaway perfectly maps the hidden layers of AI execution described in the article, illustrating how cost-tracking must be structurally embedded into the multi-agent stack rather than tacked on.",
+  "cue": "cost per resolved work-unit",
+  "subject": "an isometric technical cutaway of an AI processing stack with precision metering gates embedded in the optical routing layers",
+  "core_thesis": "Cost management has moved from back-office FinOps to a hard requirement embedded in every AI purchase, demanding visibility into cost per resolved work-unit.",
+  "core_conflict": "Opaque, multi-layered system execution costs versus raw, superficial token pricing.",
+  "composition": "extreme asymmetry, positioned off-center in the lower right quadrant",
+  "alt_text": "The AI Cost Control Mandate. Isometric technical cutaway of an AI processing stack with precision metering gates embedded in ",
+  "caption": "The AI Cost Control Mandate: Buyers demand built-in tracking for every AI purchase.",
+  "title": "The AI Cost Control Mandate",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
-  "director_attempts": 1,
+  "director_attempts": 2,
   "pinned": {},
   "file": "featured.png",
   "local_path": "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1126142,
-  "sha256": "sha256:a62b11303cacc0c084ec6aedb1ef40b95f6df8e1f079aff4d5176cfaa5abba60",
+  "bytes": 3122743,
+  "sha256": "sha256:d3fcb91ffac287dd9184d9fe1098b4af797fc7878711c7a12f2e7dfa2c293c3c",
   "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9",
   "source_chars": 4783,
-  "task_id": "cb9da70aaf2d8f4bb7e939b8cac7302a",
+  "task_id": "fcd2b7327862ea73e6e193acfd866c9d",
   "credits": 18.0,
-  "cost_ms": 23,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ea6456b43b4e81be66131e160bab94c4.png",
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c56d88b365c1015e52e37db94c7ec9f0.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Clean isometric cutaway illustration of a multi-tiered enterprise compute server stack, technical drawing style, axonometric projection. Flat muted grey palette with a single bright amber accent color tracking a data flow down through three distinct internal processing trays and routing bays. Recognizable hardware racks, cooling modules, and visible depth, clean consistent line weight, generous empty margin on a neutral seamless background.\n\nDo not include: text, words, letters, numbers, abstract boxes, bare geometry, UI elements, logos, watermarks, people, chaotic layout, messy lines, grids..",
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A multi-layered AI processing stack constructed of translucent processing modules, optical data routing channels, and precision brass metering gates embedded directly into the pathways. Each layer represents a software call structurally integrated with measurement nodes. Flat muted palette with a sharp amber accent color, thin consistent line weight. Laid over a textured drafting table surface. One directional light casting sharp shadows. Extreme asymmetry framing, positioned off-center in the lower right quadrant with generous empty margin. No labels, no text, no bare cubes.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
+      "resolution": "2K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T22:20:14+00:00",
+  "generated_at": "2026-10-10T15:50:26+00:00",
   "overlay": {
-    "kicker": "ENTERPRISE AI // COST CONTROL",
-    "title": "AI COST CONTROL MANDATE",
-    "hook": "Tracking outcomes instead of token prices",
+    "kicker": "ENTERPRISE AI // COST MANAGEMENT",
+    "title": "THE AI COST CONTROL MANDATE",
+    "hook": "Buyers demand built-in tracking for every AI purchase",
     "anchor": "top-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 6.97,
+    "scrim": 60,
+    "contrast": 5.56,
     "target": 5.5,
-    "clutter": 0.317,
+    "clutter": 0.424,
     "region_rgb": [
-      215,
-      214,
-      205
+      222,
+      213,
+      199
     ],
     "binding_rgb": [
-      193,
-      189,
-      178
+      151,
+      141,
+      131
     ],
     "title_lines": [
-      "AI COST CONTROL",
-      "MANDATE"
+      "THE AI COST",
+      "CONTROL MANDATE"
     ],
-    "generated_at": "2026-10-08T22:20:14+00:00"
+    "generated_at": "2026-10-10T15:50:26+00:00"
   }
 }

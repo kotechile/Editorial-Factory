@@ -65,6 +65,32 @@ def test_source_spelling_finds_the_canonical_form():
     assert source_spelling("macos", ARTICLE) == "macOS"
 
 
+@pytest.mark.parametrize("raw, expected", [
+    ("UP-NS RAIL MERGER ADVANCES", "UP-NS Rail Merger Advances"),   # a hyphenated initialism the
+    ("THE AI-COST MANDATE", "The AI-Cost Mandate"),                  # director already set right
+])
+def test_hyphenated_initialisms_keep_their_caps(raw, expected):
+    """`.title()` turned 'UP-NS' into 'Up-Ns' — a name neither the article nor the ticker uses."""
+    assert sentence_case(raw) == expected
+
+
+def test_long_hyphenated_words_are_still_title_cased():
+    assert sentence_case("STATE-OF-THE-ART RIG") == "State-Of-The-Art Rig"
+
+
+def test_anchor_can_be_forced_and_validates():
+    from PIL import Image
+    from scripts.illustration_overlay import plan
+    img = Image.new("RGB", (1000, 500), "white")
+    auto = plan(img)
+    forced = plan(img, "bottom-right")
+    assert auto["anchor"] == "top-left" and not auto.get("forced")
+    assert forced["anchor"] == "bottom-right" and forced["forced"] is True
+    assert forced["x"] > auto["x"] and forced["y"] > auto["y"]
+    with pytest.raises(ValueError):
+        plan(img, "middle")
+
+
 def test_module_is_importable_from_the_repo_root():
     """The suite runs from the repo root; the module must not need a sys.path shim."""
     assert pathlib.Path(__file__).resolve().parent.parent.name == "editorial-factory"

@@ -181,3 +181,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-09 | `staggered-lockup-six-selling-decisions` | career_velocity_equity_engineering | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/staggered-lockup-six-selling-decisions/featured.png` |
 | 2026-10-10 | `home-assistant-cloud-rename-hardware-rent` | personal_microeconomics_tinkering_tax | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/home-assistant-cloud-rename-hardware-rent/featured.png` |
 | 2026-10-10 | `nearshoring-doesnt-move-the-trade-case` | supplier_risk_reshoring_decision | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/nearshoring-doesnt-move-the-trade-case/featured.jpg` |
+| 2026-10-10 | `ai-spend-27t-cost-visibility-mandate` | enterprise_ai_finops | `technical_isometric` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png` |
+| 2026-10-10 | `mcp-skills-extension` | agentic_ai | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/mcp-skills-extension/featured.png` |

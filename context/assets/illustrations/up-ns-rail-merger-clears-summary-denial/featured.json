@@ -1,6 +1,6 @@
 {
   "slug": "up-ns-rail-merger-clears-summary-denial",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -19,6 +19,14 @@
       "title": "Coast-to-Coast Rail Merger",
       "bytes": 503378,
       "sha256": "sha256:ba790236b034828efa596e705d092d4f"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Up-Ns Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
+      "caption": "Up-Ns Rail Merger Advances: Shippers must map route exposure before Nov 18.",
+      "title": "Up-Ns Rail Merger Advances",
+      "bytes": 305700,
+      "sha256": "sha256:76cba6378b71940e75550c671097c5f21cc610e51625d8f4d1bc2aeb3b58a9fc"
     }
   ],
   "style": "long_lens_industry",
@@ -34,9 +42,9 @@
   "rationale": "The story is fundamentally about the massive physical scale of a coast-to-coast rail network and the volume of freight it controls. A compressed telephoto view of a rail yard perfectly captures this overwhelming scale.",
   "cue": "coast-to-coast railroad",
   "subject": "sprawling intermodal rail yard",
-  "alt_text": "Up-Ns Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
-  "caption": "Up-Ns Rail Merger Advances: Shippers must map route exposure before Nov 18.",
-  "title": "Up-Ns Rail Merger Advances",
+  "alt_text": "UP-NS Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
+  "caption": "UP-NS Rail Merger Advances: Shippers must map route exposure before Nov 18.",
+  "title": "UP-NS Rail Merger Advances",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",

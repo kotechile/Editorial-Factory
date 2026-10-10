@@ -6,11 +6,13 @@
 # kie.ai failure (or an article published before the step existed) costs a sweep, not a header. It
 # runs BEFORE the push below, so the draft reconciled here already carries its image.
 #
-# Part 1 — drafts. scripts/publish.py creates each article's draft in its destination CMS as part
-# of the persistence pass. This sweep is the safety net for the cases where that could not happen:
-# the CMS was down, a credential was missing, or the routing row was added afterwards. It selects
-# only rows with no metadata.wordpress.post_id, is idempotent (a re-run updates the same post),
-# and never publishes — publishing stays a human action in the CMS.
+# Part 1 — posts. scripts/publish.py creates each article's post in its destination CMS as part of the
+# persistence pass, and that push is LIVE (status 'publish'), not a draft: the reader sites are the
+# destination, so a sweep can put an article in front of readers with no human read in between. This
+# sweep is the safety net for the cases where the persistence push could not happen: the CMS was down,
+# a credential was missing, or the routing row was added afterwards. It selects only rows with no
+# metadata.wordpress.post_id, is idempotent (a re-run updates the same post), and never touches a post
+# that is already published (wp_draft's skip-live guard; --refresh-live is the explicit override).
 #
 # Part 2 — defects. scripts/check_cms_defects.py scans both CMSes for the two defects that were
 # previously only caught by hand: a raw vertical id in a live title/slug, and the same article
@@ -64,13 +66,13 @@ if [ "$RC" -ne 0 ]; then
   printf '%s\n' "$OUT" | grep -E 'FAILED|Error|FAIL' | head -8
   PROBLEMS=1
 elif ! printf '%s' "$OUT" | grep -q "Nothing to push"; then
-  # Drafts were created or updated: one short line each, so the operator knows what is waiting for
-  # review in which CMS.
-  echo "WordPress Draft Sweep: $(printf '%s\n' "$OUT" | grep -cE '^  (created|updated)') draft(s) touched"
+  # Posts were created or updated: one short line each, so the operator knows what is now LIVE on
+  # which site (this sweep publishes; it does not stage a draft for review).
+  echo "WordPress Draft Sweep: $(printf '%s\n' "$OUT" | grep -cE '^  (created|updated)') post(s) published/updated"
   printf '%s\n' "$OUT" | grep -E '^  (created|updated):' | head -12
 fi
 
-# Part 1b — reconcile featured media for existing drafts that were pushed without one.
+# Part 1b — reconcile featured media for existing posts that were pushed without one.
 RECON="$(python3 scripts/wp_draft.py --reconcile-media --limit "$LIMIT" 2>&1)"
 RRC=$?
 
@@ -79,7 +81,7 @@ if [ "$RRC" -ne 0 ]; then
   printf '%s\n' "$RECON" | grep -E 'FAILED|Error|FAIL' | head -8
   PROBLEMS=1
 elif ! printf '%s' "$RECON" | grep -q "Nothing to reconcile"; then
-  echo "WordPress Draft Sweep: $(printf '%s\n' "$RECON" | grep -cE '^  (created|updated)') draft(s) reconciled with featured media"
+  echo "WordPress Draft Sweep: $(printf '%s\n' "$RECON" | grep -cE '^  (created|updated)') post(s) reconciled with featured media"
   printf '%s\n' "$RECON" | grep -E '^  (created|updated):' | head -12
 fi
 

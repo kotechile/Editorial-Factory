@@ -1403,7 +1403,7 @@ def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Push generated articles to their vertical's WordPress CMS as drafts")
+    parser = argparse.ArgumentParser(description="Push generated articles to their vertical's WordPress CMS as live posts (status publish)")
     parser.add_argument("--slug", help="Article slug (metadata->>slug)")
     parser.add_argument("--all", action="store_true", help="Every row with no metadata.wordpress.post_id yet")
     parser.add_argument("--refresh", action="store_true",
@@ -1469,24 +1469,24 @@ def main() -> int:
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
             return 1
         if result.get("problems"):
-            print("\n  the draft exists, but the CMS does not hold what was sent (see above) — "
+            print("\n  the post exists, but the CMS does not hold what was sent (see above) — "
                   "fix the mapping and re-run; the slug is the idempotency key, so this updates "
                   "the same post rather than duplicating it", file=sys.stderr)
             return 1
         if result.get("skipped"):
             return 0
-        print("\npushed: 1/1 | drafts only — publishing stays a human step in the CMS")
+        print("\npushed: 1/1 | published live on the CMS (the post is public immediately)")
         return 0
 
     if args.reconcile_media:
         rows = db.articles(missing_media_only=True, limit=limit)
         if not rows:
-            print("Nothing to reconcile (no existing drafts missing a featured image).")
+            print("Nothing to reconcile (no existing posts missing a featured image).")
             return 0
     else:
         rows = db.articles(un_pushed_only=not args.refresh, limit=limit)
         if not rows:
-            print("Nothing to push (every row already has a draft in its CMS)."
+            print("Nothing to push (every row already has a post in its CMS)."
                   if not args.refresh else "No rows to refresh.")
             return 0
 
@@ -1506,8 +1506,8 @@ def main() -> int:
             print(f"\n  FAILED {row.get('title')}: {exc}", file=sys.stderr)
 
     tail = f" | {skipped} live post(s) left alone (--refresh-live to update them)" if skipped else ""
-    print(f"\npushed: {len(rows) - failures - skipped}/{len(rows)} | drafts only — publishing stays a "
-          f"human step in the CMS{tail}")
+    print(f"\npushed: {len(rows) - failures - skipped}/{len(rows)} | live on the CMS "
+          f"(status publish — the posts are public immediately){tail}")
     return 1 if failures else 0
 
 
