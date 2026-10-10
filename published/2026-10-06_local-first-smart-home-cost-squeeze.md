@@ -13,16 +13,16 @@ meta_title: "The local-first smart home cost squeeze: Cloud and hardware…"
 meta_title_source: "derived_from_title"
 meta_description: "Both ways to run a smart home got more expensive in the same week."
 meta_description_source: "derived_from_lead"
-image_path: "context/assets/illustrations/local-first-smart-home-cost-squeeze/featured.png"
-image_style: "component_assembly"
-image_model: "nanobanana"
-image_alt: "A modular smart home hub casing interlocking with a dense memory module against a minimal backdrop."
-image_caption: "The rising cost of memory components is squeezing the economics of local-first smart home setups."
+image_path: "context/assets/illustrations/local-first-smart-home-cost-squeeze/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "The Local-First Smart Home Cost. Split-screen diptych of a matte white smart home hub and a raw silicon compute board on dark"
+image_caption: "The Local-First Smart Home Cost: Both ways to run a smart home got more expensive in the."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Both ways to run a smart home got more expensive in the same week. On October 1, Raspberry Pi raised its prices for the third time this year, adding $12.50 to its 2GB Pi 4 and Pi 5 boards [1][2]. A day later, Home Assistant — the open-source platform powering most local-first setups — renamed its cloud service because "Big Tech has given the cloud a bad name" [4].
+Both ways to run a smart home got more expensive in the exact same week. On October 1, Raspberry Pi raised prices for the third time this year, adding $12.50 to its 2-gigabyte (GB) Pi 4 and Pi 5 boards [1][2]. A day later, Home Assistant — the open-source platform powering most local-first setups — renamed its cloud service, declaring that Big Tech has given the cloud a bad name [4].
 
 <!-- tension -->
 
@@ -30,18 +30,22 @@ Both ways to run a smart home got more expensive in the same week. On October 1,
 
 The smart home has two escape routes from rising costs, and both are closing at once.
 
-Staying on a vendor's cloud is getting pricier by policy. Samsung is ending free access to its SmartThings application programming interface (API), moving individual developers to a $4.99-a-month plan [5]. This change directly hits the Home Assistant integration many owners rely on. Home Assistant leaders note the cloud now stands for "ever-increasing subscription prices to outages and data harvesting" [4].
+Staying on a vendor's cloud is getting pricier by policy. Samsung is ending free access to its SmartThings application programming interface (API). The company is moving individual developers to a $4.99-a-month plan [5].
 
-What strikes me here is that the other route — owning your hardware — is being repriced by the exact same market forces. Raspberry Pi blames memory costs, which it says "have risen very steeply over the past two years and continues to increase" [1]. The artificial intelligence (AI) datacenter build-out is finally arriving at your hallway hub.
+This change directly hits the Home Assistant integration many owners rely on. Home Assistant leaders note the cloud now stands for ever-increasing subscription prices, outages, and data harvesting [4].
 
-Micron's chief executive told investors the memory shortage runs through at least 2028, with three-quarters of 2027 output already claimed [3]. Samsung expects high-bandwidth memory (HBM) — the fast chips that AI servers devour — to take almost 30% of dynamic random-access memory (DRAM) factory capacity next year, up from 20% this year [3]. Consumer boards just get what is left over.
+What strikes me here is that the other route — owning your hardware — faces the exact same market forces. Raspberry Pi blames memory costs, which the company says have risen steeply over the past two years [1]. 
+
+The artificial intelligence (AI) datacenter build-out finally arrives at your hallway hub. Micron's chief executive told investors the memory shortage runs through at least 2028, with three-quarters of 2027 output already claimed [3].
+
+Samsung expects high-bandwidth memory (HBM) — the fast chips that AI servers devour — to take almost 30% of dynamic random-access memory (DRAM) factory capacity next year [3]. That figure is up from 20% this year. Consumer boards just get what is left over.
 
 ## By the numbers
 
-- **$12.50 — Raspberry Pi hike:** The 2GB Pi 4 rises to $67.50 and the 2GB Pi 5 hits $77.50, effective October 1, driven by memory costs [1][2].
-- **75% — Micron 2027 output sold:** The memory maker says most current sales talks target 2028, and demand will outrun supply for years [3].
-- **30% vs 20% — AI memory share:** Samsung expects HBM chips to take nearly a third of factory wafer capacity in 2027, up from a fifth this year, thinning the supply left for consumer gear [3].
-- **$4.99 a month — SmartThings cloud fee:** Free API access ends this month, pushing non-commercial developers and Home Assistant users to a paid personal plan [5].
+- **$12.50 — Raspberry Pi hike:** The 2GB Pi 4 rises to $67.50 and the 2GB Pi 5 hits $77.50, driven by memory costs [1][2].
+- **75% — Micron 2027 output sold:** The memory maker says most current sales talks target 2028, with demand outrunning supply for years [3].
+- **30% — AI memory share:** Samsung expects HBM chips to take nearly a third of factory wafer capacity in 2027, up from 20% this year [3].
+- **$4.99 a month — SmartThings cloud fee:** Free API access ends this month, pushing non-commercial developers to a paid personal plan [5].
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
   <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">The local-first smart home cost squeeze: Cloud and hardware…</text>
@@ -64,20 +68,22 @@ Micron's chief executive told investors the memory shortage runs through at leas
 
 ## What I'd watch:
 
-The people closest to this are doing arithmetic, not ideology. I've been watching the Home Assistant forum fill with owners rushing to migrate off SmartThings before the new fee lands.
+The people closest to this shift are doing math, not taking a stand. I've been watching the Home Assistant forum fill with owners rushing to migrate off SmartThings before the new fee lands.
 
 - **The cheap tier:** Raspberry Pi advises buyers to purchase only the memory they actually need and to consider older boards [1]. A smart home hub is not a desktop workstation.
 - **The floor that held:** The 1GB boards and 2GB Compute Modules kept their prices this round [1]. This is now the stable end of the market, and I expect buyers to camp there.
-- **The mini-PC detour:** A basic Intel mini-PC often costs less than a high-memory board once you add storage and a case. I want to see whether local-first homes start jumping across to these small computers.
+- **The mini-PC detour:** A basic Intel mini-personal computer (PC) often costs less than a high-memory board once you add storage and a case. I want to see whether local-first homes start jumping across to these small computers.
 - **The 2028 question:** If the hardware shortage actually runs to 2028 [3], waiting for prices to fall is not a realistic plan for anyone building a system this year.
 
 <!-- nuanced-takeaway -->
 
 ## The catch
 
-I could be wrong to tie a memory shortage directly to a software naming decision. Home Assistant's rebrand costs users nothing, the service remains optional, and your home keeps working without it [4].
+I could be wrong to tie a memory shortage directly to a software naming decision. Home Assistant's rebrand costs users nothing. The service remains optional, and your home keeps working without it [4].
 
-The honest limit is that these two trends run on different clocks. The Pi hike is a single move this month, while the memory shortage is a two-year trend. The cloud paywall is a pricing choice, but the local-first premium is a supply shock. Supply shocks eventually reverse.
+The honest limit is that these two trends run on different clocks. The Pi hike is a single move this month, while the memory shortage is a two-year trend.
+
+The cloud paywall is a pricing choice, but the local-first premium is a supply shock. Supply shocks eventually reverse.
 
 The part I keep circling is the original local-first promise: a fixed cost where you buy once and run it for years. That promise only holds if the hardware underneath stays cheap and stable. Right now, it is neither. The escape hatch from subscription creep is turning into a subscription to hardware inflation.
 
@@ -99,12 +105,14 @@ The part I keep circling is the original local-first promise: a fixed cost where
 ## At a glance
 
 - **The Big Shift:** Raspberry Pi raised board prices for the third time this year, while Home Assistant renamed its cloud service to distance itself from Big Tech price hikes.
-- **Why It Matters:** Both ways to run a smart home are getting more expensive. Cloud platforms are adding paywalls, and local hardware is being repriced by AI datacenter memory demand.
+- **Why It Matters:** Both ways to run a smart home are getting more expensive. Cloud platforms are adding paywalls, and local hardware faces price hikes driven by artificial intelligence (AI) datacenter memory demand.
 - **What I'd Watch:**
   - **The cheap tier:** Whether buyers stop paying for extra memory headroom and pick older boards instead.
   - **The mini-PC detour:** Whether local-first homes move to small Intel boxes that often cost less than a high-memory single-board computer.
-  - **The floor that held:** The 1GB boards whose prices did not move, which now represent the stable end of the market.
+  - **The floor that held:** The 1-gigabyte (GB) boards whose prices did not move, which now represent the stable end of the market.
 - **The Catch:** The Home Assistant rename costs users nothing, and the memory shortage may ease by 2028. But waiting for prices to fall is not a plan for anyone building a system today.
+
+
 
 ## Sources
 [1] Raspberry Pi, "Price increases for 2GB Raspberry Pi 4 and Raspberry Pi 5" (2026-10-01). https://www.raspberrypi.com/news/price-increases-for-2gb-raspberry-pi-4-and-raspberry-pi-5/

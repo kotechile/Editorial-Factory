@@ -11,12 +11,18 @@ from __future__ import annotations
 
 import json
 import html
+import os
 import pathlib
 import re
 import sys
 import tempfile
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+
+# The pre-publish gate (scripts/publish_gate.py) is a separate suite's subject, and it reads the real
+# artifacts in published/ — so this hermetic suite pins it off rather than depending on the corpus.
+# The default stays `enforce` for every real push; see verify.sh §8.57 for the wiring check.
+os.environ.setdefault("PUBLISH_GATE", "off")
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import wp_draft as wd  # noqa: E402

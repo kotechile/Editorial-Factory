@@ -2,10 +2,19 @@
 
 ## 1. Objective
 Persist every finished article unconditionally — site + Supabase — in the same run that produced it,
-and create its draft in the destination CMS. There is **no outbound social distribution step**: the
-LinkedIn and Reddit channels were removed by the owner on 2026-10-06, so nothing is queued, posted or
-held for a distribution approval. The reader sites (`giniloh.com` / `wellroost.com`, fed by the CMS)
-are the destination.
+and create its post in the destination CMS (live: status `publish`). There is **no outbound social
+distribution step**: the LinkedIn and Reddit channels were removed by the owner on 2026-10-06, so
+nothing is queued, posted or held for a distribution approval. The reader sites (`giniloh.com` /
+`wellroost.com`, fed by the CMS) are the destination.
+
+**The push is gated (owner, 2026-10-10).** `scripts/wp_draft.py` re-runs the mechanical gates on the
+artifact immediately before it publishes — Sources present, no banned AI-tells, the accessibility
+floor, the social-voice gate (`scripts/publish_gate.py`). A failing article gets **one rewrite
+attempt** (the Loop 3 humanizer, rewiring only the body between the artifact's own frontmatter and
+its own `## Sources`); if it clears the gate it is published, and if it still fails it is created as
+a **DRAFT** and reported. An article is never lost and never published un-evaluated. An
+already-published post is never rewritten or demoted by the gate — it is reported. Knobs:
+`PUBLISH_GATE=off|report|enforce` (default `enforce`), `PUBLISH_GATE_REWRITES` (default 1).
 
 ## 2. Persistence (always)
 1. Write the final article to `published/YYYY-MM-DD_<slug>.md`.

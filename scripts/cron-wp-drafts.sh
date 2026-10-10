@@ -126,4 +126,20 @@ else
   printf '%s\n' "$ROUTE" | grep -E "^vertical_sites:|^  [a-z]" | head -4
 fi
 
+# Part 5 — delivery audit. The push-time gate (scripts/publish_gate.py) compares the served image
+# with the staged render as it pushes, which catches drift AT a push. This is the other half: an
+# artifact re-typed or re-rendered AFTER it was published and never pushed again — four articles were
+# live with their previous artwork for exactly that reason (2026-10-10). Also reports an artifact
+# whose slug no longer matches its CMS post, which is what makes a hand-written sitemap URL a 404.
+# Bounded because it downloads one image per artifact; AUDIT_LIMIT=0 switches it off.
+if [ "${AUDIT_LIMIT:-10}" != "0" ]; then
+  AUDIT="$(python3 scripts/publish_gate.py --audit-live --limit "${AUDIT_LIMIT:-10}" 2>&1)"
+  ARC=$?
+  if [ "$ARC" -ne 0 ]; then
+    echo "WordPress Draft Sweep: delivery audit found drift between an artifact and its live post:"
+    printf '%s\n' "$AUDIT" | grep -E '^  |^    -' | head -10
+    PROBLEMS=1
+  fi
+fi
+
 exit "$PROBLEMS"

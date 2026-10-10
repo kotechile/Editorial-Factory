@@ -52,7 +52,11 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    `scripts/publish.py <final draft>`. **The reader sites are the destination** (`giniloh.com` /
    `wellroost.com`, fed by the CMS); the LinkedIn and Reddit channels were removed by the owner on
    2026-10-06, so no run produces social copy, queues a post or waits on a distribution approval.
-   The article is pushed directly live to the CMS with status 'publish'.
+   The article is pushed directly live to the CMS with status 'publish' — **through the pre-publish
+   gate** (`scripts/publish_gate.py`, owner 2026-10-10): the mechanical gates (Sources, banned
+   AI-tells, the accessibility floor, the social-voice gate) are re-run on the artifact at the push,
+   a failing article gets one rewrite attempt, and one that still fails is created as a DRAFT instead
+   of a live post. Automated publishing never means un-evaluated publishing.
 9. **Multi-topic signal synthesis.** Rather than merely publishing single-signal press summaries,
    the pipeline prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day
    developments (e.g., falling LLM frontier pricing colliding with local in-house software

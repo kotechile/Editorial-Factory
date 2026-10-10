@@ -192,6 +192,33 @@ if [ -d "$ROOT/.git" ]; then
   fi
 fi
 
+# 8.57 Pre-publish gate (hard): the mechanical gates (Sources, banned AI-tells, the accessibility
+#      floor, the social-voice gate) are re-run AT the push, and an article that fails gets one
+#      rewrite attempt before it is held back as a DRAFT — never published un-evaluated (owner,
+#      2026-10-10). Two things are checked: the connector still calls the gate (silently un-wiring
+#      it would restore "evaluate inside the run, publish anyway"), and the gate's own suite passes.
+#      These suites are pytest-style, so they run with -m (the standalone ones run directly).
+for suite in scripts/test_publish_gate.py scripts/test_illustration_overlay.py scripts/test_check_accessibility.py; do
+  if ! python3 -m pytest "$ROOT/$suite" -q >/dev/null 2>&1; then
+    echo "FAIL: $suite — detail:"
+    python3 -m pytest "$ROOT/$suite" -q 2>&1 | tail -8
+    FAIL=1
+  fi
+done
+if ! grep -q "import publish_gate" "$ROOT/scripts/wp_draft.py" \
+   || ! grep -q "publish_gate.gate(" "$ROOT/scripts/wp_draft.py"; then
+  echo "FAIL: scripts/wp_draft.py no longer gates an article before publishing it (scripts/publish_gate.py)"
+  FAIL=1
+fi
+if ! grep -q 'PUBLISH_GATE", "enforce"' "$ROOT/scripts/wp_draft.py"; then
+  echo "FAIL: the pre-publish gate no longer defaults to 'enforce' — an un-gated publish is possible"
+  FAIL=1
+fi
+if ! grep -q "publish_gate" "$ROOT/scripts/publish.py"; then
+  echo "FAIL: the persistence pass does not mention the pre-publish gate (see skills/publisher.md §2)"
+  FAIL=1
+fi
+
 # 8.6 Pre-flight data gate (hard): a citation hub may only be drafted on metrics whose headline
 #     figure was actually retrieved from the cited primary source. Hermetic run (--no-network):
 #     the live audit of the shipped dossiers is a separate, deliberate step —

@@ -75,6 +75,18 @@ LINK_LINKS_MAX = 3            # reader-facing internal links per article (intern
 LIVE_POST_NOTE = "live post kept published"    # upsert()'s action for an already-published post
 WORDPRESS = "wordpress"
 
+# The pre-publish gate (scripts/publish_gate.py). The run's own gates — fact-check, de-dup, Loop 3
+# accessibility, social voice — are executed by the pipeline following its skills; before this,
+# nothing in the connector re-checked any of them, so a run that skipped a step still went live the
+# moment publishing became automatic (owner, 2026-10-10). Now the artifact is re-gated at the push,
+# the text gets ONE rewrite attempt when it fails, and an article that still fails is created as a
+# DRAFT instead of a live post: never publish un-evaluated text, never lose an article.
+#   PUBLISH_GATE=report   audit and report, but publish anyway (a one-off, not the default)
+#   PUBLISH_GATE=off      skip the gate entirely (debugging only)
+#   PUBLISH_GATE_REWRITES how many rewrite attempts before holding the article (default 1; 0 = none)
+PUBLISH_GATE = os.environ.get("PUBLISH_GATE", "enforce").strip().lower()
+PUBLISH_GATE_REWRITES = int(os.environ.get("PUBLISH_GATE_REWRITES", "1"))
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # config
@@ -1020,9 +1032,25 @@ def ensure_featured_media(wp, slug: str, record: dict, notes: list, *, path=None
     if item is None:
         item = wp.find_media(media_slug)
         action = "reused (media slug match)"
+    if item is not None:
+        # Reuse is keyed on the media slug and the recorded id — both of which survive a re-render,
+        # so a reuse without a byte compare ships whatever the CMS already held. That is how a
+        # re-typed header stayed invisible while the repo held the new one (four articles were live
+        # with their previous artwork, 2026-10-10). The staged file is the intent; only the served
+        # bytes prove it landed.
+        served, note = _served_bytes(item.get("source_url"))
+        staged = path.read_bytes()
+        if served is None:
+            notes.append(f"featured image: could not re-read media {item.get('id')} to compare it "
+                         f"with the staged file ({note}) — reusing it unverified")
+        elif len(served) != len(staged) or hashlib.sha256(served).digest() != hashlib.sha256(staged).digest():
+            notes.append(f"featured image: media {item.get('id')} holds different bytes than the "
+                         f"staged file ({len(served)} vs {len(staged)} bytes) — the header changed "
+                         f"after the last push; uploading the staged render instead")
+            item, action = None, "uploaded (the attached copy was stale)"
     if item is None:
         item = wp.upload_media(filename, path.read_bytes(), MEDIA_TYPES[path.suffix.lower()])
-        action = "uploaded"
+        action = action if action.startswith("uploaded") else "uploaded"
     if not item or not item.get("id"):
         raise RuntimeError(f"WordPress returned no attachment id for {filename}")
     stale = {k: v for k, v in meta.items() if _field_text(item.get(k)) != _field_text(v)}
@@ -1273,8 +1301,63 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         print(f"  internal links NOT generated: {exc}", file=sys.stderr)
 
     metadata = row.get("metadata") or {}          # re-read: the links pass rewrote it
+
+    # ── the pre-publish gate ────────────────────────────────────────────────────────────────────
+    # Re-check the artifact here, on the way out, because the connector is the last thing between a
+    # finished run and a reader. A failing article gets one rewrite; if it still fails it goes up as
+    # a DRAFT (staged for a human) rather than as a live post.
+    gate_status: str | None = None
+    gate_notes: list[str] = []
+    if PUBLISH_GATE != "off":
+        try:
+            import publish_gate
+            live_post = bool(existing) and str(existing.get("status") or "") == "publish"
+            # A dry run must never spend a frontier rewrite — it reports what would happen instead.
+            report = publish_gate.gate(
+                slug, rewrite=(not live_post and not dry_run and PUBLISH_GATE_REWRITES > 0))
+            if live_post:
+                # Never rewrite or demote something already live — the upsert does not even send a
+                # status for it. Report what it fails so the item is visible instead of silent.
+                if report["failures"]:
+                    print(f"! the live post fails the gate ({'; '.join(report['failures'])[:220]}) — "
+                          f"left published; fix the artifact and re-push with --refresh-live",
+                          file=sys.stderr)
+            elif report["verdict"] == "publish-after-rewrite":
+                sync = publish_gate.sync_rewrite(slug)
+                if sync.get("synced"):
+                    print(f"  gate   : the text failed the gate; one rewrite cleared it "
+                          f"(Flesch {report['rewrite'].get('flesch_after')}) — row re-synced")
+                    fresh = db.articles(slug=slug)
+                    if fresh:
+                        row, metadata = fresh[0], (fresh[0].get("metadata") or {})
+                else:
+                    # The rewrite is only real once the ROW carries it — the connector publishes the
+                    # row, not the file. Without the sync we would publish the un-rewritten text.
+                    gate_status = "draft"
+                    gate_notes.append(f"pre-publish gate: rewrite could not be written back "
+                                      f"({sync.get('note')})")
+                    print(f"! the rewrite could not be written back to the row ({sync.get('note')}) — "
+                          f"holding this article as a DRAFT", file=sys.stderr)
+            elif report["verdict"] in ("draft", "no-artifact"):
+                gate_status = "draft"
+                gate_notes.append("pre-publish gate held it: " + "; ".join(report["failures"])[:400])
+                print("! the pre-publish gate held this article back — creating it as a DRAFT, not a "
+                      "live post:", file=sys.stderr)
+                for failure in report["failures"]:
+                    print(f"!   - {failure}", file=sys.stderr)
+            if PUBLISH_GATE == "report" and gate_status:
+                print("  gate   : PUBLISH_GATE=report — publishing anyway", file=sys.stderr)
+                gate_status = None
+        except Exception as exc:                       # noqa: BLE001 - a dead gate must not publish
+            gate_status = "draft"
+            gate_notes.append(f"pre-publish gate could not run: {exc}")
+            print(f"! the pre-publish gate could not run ({exc}) — holding this article as a DRAFT "
+                  f"rather than publishing un-evaluated text", file=sys.stderr)
+
     payload, notes = build_payload(row, site, publisher_name, author_name)
-    notes = links_notes + notes
+    if gate_status:
+        payload["status"] = gate_status              # the gate's decision, not the default
+    notes = links_notes + gate_notes + notes
 
     print(f"\n  article : {payload['title']}")
     print(f"  slug    : {payload['slug']}   (idempotency key)")
@@ -1372,10 +1455,14 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     }
     if media:
         # Recorded so the next push reuses this attachment (no duplicate bytes in the library) and
-        # so the image can be found again by hand from the Supabase row alone.
+        # so the image can be found again by hand from the Supabase row alone. `media_sha` is the
+        # stamp an audit compares the served bytes against without re-downloading them.
+        staged = ROOT / (illustration.get("local_path") or "")
         record.update({"featured_media": payload.get("featured_media"),
                        "media_id": media.get("id"),
                        "media_url": media.get("source_url"),
+                       "media_sha": (f"sha256:{hashlib.sha256(staged.read_bytes()).hexdigest()}"
+                                     if staged.exists() else None),
                        "media_alt": media_expected.get("alt_text")})
     if illustration and not illustration_record(row):
         # The brief came from disk (the sweep generated this image after the article was published),

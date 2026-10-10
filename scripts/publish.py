@@ -8,7 +8,9 @@ Handles:
 4. Persistence to Supabase (articles, sources, live URLs) when configured.
 5. The art-directed featured image and the derived SEO assets (`scripts/article_assets.py`).
 6. Automatic WordPress post creation in the destination CMS for the article's vertical
-   (scripts/wp_draft.py) with status 'publish' so the article is live immediately.
+   (scripts/wp_draft.py) with status 'publish' so the article is live immediately — gated on the way
+   out by scripts/publish_gate.py, which re-runs the mechanical gates, rewrites a failing article
+   once, and holds it as a draft if it still fails.
 
 There is no outbound social distribution step: the LinkedIn and Reddit channels were removed
 by the owner (2026-10-06). The reader sites (giniloh.com / wellroost.com, fed by the CMS) are
@@ -617,6 +619,10 @@ def push_wp_draft(slug: str) -> bool:
     rewriting something an editor tuned is wp_draft's skip-live guard (a routine push leaves an
     existing published post alone unless --refresh-live is passed). Idempotent by slug, so
     re-publishing an article updates its existing post instead of creating a second one.
+
+    The push is *gated*: `scripts/wp_draft.py` re-runs the mechanical gates on the artifact on the
+    way out (scripts/publish_gate.py), gives a failing article one rewrite attempt, and holds it as a
+    draft when it still fails. Publishing is automatic; publishing un-evaluated text is not.
 
     Best-effort by design: a CMS that is down or an
     unconfigured credential must not roll back a publish that already persisted the article to
