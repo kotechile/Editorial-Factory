@@ -185,3 +185,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-10 | `mcp-skills-extension` | agentic_ai | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/mcp-skills-extension/featured.png` |
 | 2026-10-10 | `local-first-smart-home-cost-squeeze` | smart_home_telemetry | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/local-first-smart-home-cost-squeeze/featured.jpg` |
 | 2026-10-10 | `self-hosting-break-even-one-hour-a-year` | personal_microeconomics_tinkering_tax | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/self-hosting-break-even-one-hour-a-year/featured.jpg` |
+| 2026-10-10 | `why-importers-forfeit-duty-refunds` | supplier_risk_reshoring_decision | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-importers-forfeit-duty-refunds/featured.jpg` |

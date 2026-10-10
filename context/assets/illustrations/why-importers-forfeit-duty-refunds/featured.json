@@ -1,0 +1,85 @@
+{
+  "slug": "why-importers-forfeit-duty-refunds",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A customs drawback filing dossier and export manifest arranged on a dark oak desk.",
+      "caption": "The paper trail for drawback refunds is the true gatekeeper of tariff recovery.",
+      "title": "Duty Drawback Paperwork Flatlay",
+      "bytes": 491412,
+      "sha256": "sha256:12906a75ee67ebab55ed8b9a9129a319"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "overhead flat-lay photograph, 50mm prime lens with a razor-sharp focal plane focused on a desk surface. A heavy customs duty drawback filing dossier and an export manifest resting on a weathered dark oak desk. Top-down 90-degree view, one document slightly out of alignment to look handled, asymmetrical composition with the documents occupying the lower left third. Even diffused daylight from a nearby window, muted paper tones, blank or illegibly cropped paper text, authentic tactile paper stock, generous editorial negative space.",
+  "negative_prompt": "legible text, garbled letters, random numbers, ui elements, watermarks, people, hands",
+  "rationale": "The article explicitly states that 'the paper, not the tariff list, is the real gate' for drawback refunds. A document flatlay elegantly captures the regulatory and administrative burden that unlocks the 99% duty refund.",
+  "cue": "the paper, not the tariff list, is the real gate",
+  "subject": "a customs drawback filing dossier and export manifest",
+  "core_thesis": "Drawback rules allow companies to recover 99% of tariffs on imported components that are later exported, meaning reshoring plans often overstate their actual tax savings.",
+  "core_conflict": "Modeled tariff savings from physical reshoring vs. existing recoverable cash unlocked through export drawback paperwork.",
+  "composition": "symmetrical top-down with one skewed element",
+  "alt_text": "Duty Drawback Math. A customs drawback filing dossier and export manifest arranged on a dark oak desk.",
+  "caption": "Duty Drawback Math: Why unrecovered duty refunds skew reshoring math.",
+  "title": "Duty Drawback Math",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/why-importers-forfeit-duty-refunds/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 292840,
+  "sha256": "sha256:fcd8cdd407d6b6de731ce4f2198fa17c2aa3d862a978bd3974d8938de90ba2f3",
+  "source_hash": "sha256:74ca5addfa82f0261f169f06f1b6fe6e",
+  "source_chars": 4134,
+  "task_id": "3af9889f582a5c1be5f9e540d940fdea",
+  "credits": 5.0,
+  "cost_ms": 33,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3af9889f582a5c1be5f9e540d940fdea_1791655708622.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "overhead flat-lay photograph, 50mm prime lens with a razor-sharp focal plane focused on a desk surface. A heavy customs duty drawback filing dossier and an export manifest resting on a weathered dark oak desk. Top-down 90-degree view, one document slightly out of alignment to look handled, asymmetrical composition with the documents occupying the lower left third. Even diffused daylight from a nearby window, muted paper tones, blank or illegibly cropped paper text, authentic tactile paper stock, generous editorial negative space.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-10T18:08:32+00:00",
+  "overlay": {
+    "kicker": "RESHORING MATH // DUTY REFUNDS",
+    "title": "DUTY DRAWBACK MATH",
+    "hook": "Why unrecovered duty refunds skew reshoring math",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 150,
+    "contrast": 6.44,
+    "target": 5.5,
+    "clutter": 0.607,
+    "region_rgb": [
+      145,
+      142,
+      134
+    ],
+    "binding_rgb": [
+      208,
+      206,
+      194
+    ],
+    "title_lines": [
+      "DUTY DRAWBACK",
+      "MATH"
+    ],
+    "generated_at": "2026-10-10T18:08:32+00:00"
+  }
+}

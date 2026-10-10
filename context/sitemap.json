@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T17:38:56Z",
+  "updated_at": "2026-10-10T18:09:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1269,6 +1269,24 @@
         "At a glance"
       ],
       "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-10",
+      "public": true,
+      "url": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/"
+    },
+    {
+      "slug": "2026-10-10_why-importers-forfeit-duty-refunds",
+      "title": "Why Importers Forfeit 99% Duty Refunds",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-10",
       "public": false
     }

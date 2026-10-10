@@ -385,8 +385,10 @@ opens on 'The', 76 chars, no reader)."""
 
 
 def title_prompt(title: str, body: str, one_big: str, count: int) -> str:
+    import headline_score as hs
     figures = "\n".join(f"- {b.strip()[:160]}" for b in
                         re.findall(r"^\s*[-*]\s*\*\*.*$", body, re.M)[:6]) or "(none stated)"
+    lead = hs.lead_of(body)[:600]
     return f"""You are the headline editor for an institutional B2B research desk. Write {count} \
 alternative headlines for ONE article, then stop.
 
@@ -395,13 +397,20 @@ THE ONE BIG THING: {one_big or '(read the numbers below)'}
 THE ARTICLE'S OWN FIGURES:
 {figures}
 
+THE ARTICLE'S FIRST PARAGRAPH (the reader's first five seconds — a headline that this paragraph does
+not deliver on has failed, however good it reads; prefer the figures and the promise ALREADY in it):
+{lead}
+
 {_title_standards()}
 
 Rules for your output:
-- Use ONLY facts present in the current title and the figures above. Invent nothing, and never add a
-  number that is not in that list.
+- Use ONLY facts present in the current title, the first paragraph and the figures above. Invent
+  nothing, and never add a number that is not in that list.
 - Keep the same subject and the same claim as the current title. You are re-cutting the headline,
   not changing the story.
+- A figure you put in the headline MUST appear in that first paragraph. If no figure in the paragraph
+  is strong enough to lead with, write a headline without one rather than borrowing one from deeper
+  in the piece.
 - Reply with a JSON array of exactly {count} strings, best first. No commentary, no markdown fence."""
 
 
