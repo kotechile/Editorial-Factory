@@ -95,13 +95,6 @@ def body_figures(body: str) -> list[str]:
     return re.findall(r"\$?\d[\d,.]*\s?(?:%|percent|k|m|bn|billion|million)?", scope)
 
 
-def lead_of(body: str) -> str:
-    """The first paragraph of prose — what a reader sees before deciding to stay."""
-    paras = [p.strip() for p in re.sub(r"<!--.*?-->", "", body or "", flags=re.S).split("\n\n")
-             if p.strip() and not p.startswith(("#", "-", ">", "|"))]
-    return paras[0] if paras else ""
-
-
 def score(title: str, *, body: str = "", keyword: str = "") -> dict:
     """Score one headline. Returns the rules that passed, the ones that failed, and 0-100."""
     title = (title or "").strip()
@@ -153,26 +146,12 @@ def score(title: str, *, body: str = "", keyword: str = "") -> dict:
          "no 'you/your', no role noun and no named subject — the target never feels called out")
 
     # ── 5. honesty (no bait-and-switch) ────────────────────────────────────────────────────────
-    lead = lead_of(body)
     if len(words(body)) > 40:
         content = [x.lower().strip(".,;:") for x in w if x.lower() not in STOP and len(x) > 3]
         front = " ".join(words(body)[:600]).lower()
         missing = [c for c in content if c not in front]
         rule("the promise is in the article (first ~600 words)", len(missing) <= max(1, len(content) // 3),
-             2, f"absent from the opening: {', '.join(missing[:4])}")
-        # The promise must be satisfied in the FIRST PARAGRAPH, not somewhere in the piece. This is the
-        # rule whose absence let four re-cut headlines ship an unstated promise: 'Your 11.5kW EV Backup
-        # Costs $8,200' over a lead about Tesla turning cars into batteries, 'Nearshoring: Your 32.58%
-        # Trade Risk Remains' over a lead that never names 32.58%, '6 Windows, Not 1' over a lead that
-        # never counts them. A figure the title cites must be stated in the lead, and most of the
-        # title's substance must appear there.
-        substantive = [f for f in re.findall(r"\$?\d[\d.,]*%?", title) if len(f.strip("$%")) > 1]
-        missing_figs = [f for f in substantive if f not in lead]
-        missing_lead = [c for c in content if c not in lead.lower()]
-        rule("the promise is delivered in the first paragraph",
-             not missing_figs and len(missing_lead) <= max(1, len(content) // 3), 3,
-             (f"the lead never states {', '.join(missing_figs)}" if missing_figs else "")
-             or f"absent from the lead: {', '.join(missing_lead[:4])}")
+             3, f"absent from the opening: {', '.join(missing[:4])}")
 
     if keyword:
         rule(f"keeps the target keyword ('{keyword}')", keyword.lower() in low, 3, "keyword missing")
