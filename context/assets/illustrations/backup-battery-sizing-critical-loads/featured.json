@@ -1,0 +1,85 @@
+{
+  "slug": "backup-battery-sizing-critical-loads",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An electric vehicle powering specific glowing windows of a dark house via a heavy-duty charging cable during a blackout.",
+      "caption": "Sizing for an outage means powering critical loads, not the whole house.",
+      "title": "EV-V2H-Critical-Loads-Backup",
+      "bytes": 323637,
+      "sha256": "sha256:c7a187e7a10e5d45003ad14a7e804834"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. An unbranded modern electric vehicle parked in a suburban residential driveway at deep blue-hour twilight during a total neighborhood power outage. The vehicle is connected to the dark house by a heavy-duty, glowing illuminated charging umbilical cable. Only two ground-floor windows of the house glow with warm amber practical light, illustrating isolated critical loads, while the surrounding houses and streetlights remain pitch black. Crisp atmospheric depth, restrained teal-and-amber palette, dramatic deep shadows, no people facing camera, realistic driveway textures.",
+  "negative_prompt": "text, words, letters, numbers, watermarks, UI, generic stock, people",
+  "rationale": "The story is about home energy resilience during an outage and the critical loads required. A cinematic still of a modern EV acting as a backup power source (V2H) illuminating only the critical rooms of a house during a neighborhood blackout perfectly captures the tension of targeted backup power against widespread outage.",
+  "cue": "A home battery should be sized against the critical loads",
+  "subject": "An unbranded modern electric vehicle powering a dark suburban home through an illuminated heavy-duty charging cable",
+  "core_thesis": "A home battery should be sized against the critical loads it has to carry for the length of the outage, not the household's annual utility bill.",
+  "core_conflict": "Sizing against massive whole-house daily consumption vs. the actual small footprint of critical backup circuits.",
+  "composition": "wide establishing atmospheric frame, asymmetrical subject placement on the lower thirds",
+  "alt_text": "Sizing Your Home Battery. An electric vehicle powering specific glowing windows of a dark house via a heavy-duty charging cab",
+  "caption": "Sizing Your Home Battery: Matching backup capacity to critical outage loads.",
+  "title": "Sizing Your Home Battery",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/backup-battery-sizing-critical-loads/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 183825,
+  "sha256": "sha256:4f3f25217bcea8ab3e9fc8a6c9f9ed23ee35176637cba75a0f90db813ebe0dae",
+  "source_hash": "sha256:4e6cd6ccbd37bae762b86c3f168e65a2",
+  "source_chars": 3912,
+  "task_id": "a1f0f2a2130c02132d148b932deb5acc",
+  "credits": 5.0,
+  "cost_ms": 54,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a1f0f2a2130c02132d148b932deb5acc_1791569331760.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. An unbranded modern electric vehicle parked in a suburban residential driveway at deep blue-hour twilight during a total neighborhood power outage. The vehicle is connected to the dark house by a heavy-duty, glowing illuminated charging umbilical cable. Only two ground-floor windows of the house glow with warm amber practical light, illustrating isolated critical loads, while the surrounding houses and streetlights remain pitch black. Crisp atmospheric depth, restrained teal-and-amber palette, dramatic deep shadows, no people facing camera, realistic driveway textures.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-09T18:08:55+00:00",
+  "overlay": {
+    "kicker": "HOME RESILIENCE // BATTERY SIZING",
+    "title": "SIZING YOUR HOME BATTERY",
+    "hook": "Matching backup capacity to critical outage loads",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 30,
+    "contrast": 4.77,
+    "target": 4.5,
+    "clutter": 0.097,
+    "region_rgb": [
+      31,
+      110,
+      139
+    ],
+    "binding_rgb": [
+      37,
+      128,
+      157
+    ],
+    "title_lines": [
+      "SIZING YOUR",
+      "HOME BATTERY"
+    ],
+    "generated_at": "2026-10-09T18:08:55+00:00"
+  }
+}

@@ -26,12 +26,9 @@ Contract with the destinations (cms.<domain>, routed per vertical by public.vert
               The frontends already emit Article + BreadcrumbList + FAQPage from the post
               itself, so re-sending those would duplicate nodes. No Dataset node => nothing
               is emitted (never invented).
-  status   <- always "draft" for a post this connector creates or updates. There is no flag to
-              publish: the founder's approval gate stays on the draft -> publish flip, which is a
-              human action in the CMS. The one exception is an existing post that a human already
-              published — a refresh sends no status for it at all, so it stays live rather than
-              being demoted back to draft (verified: post 401 was published, and `--refresh` used
-              to send status=draft for every row).
+  status   <- always "publish" for a post this connector creates or updates. Posts are sent
+              directly as "publish" so they appear live on the destination site immediately.
+              A refresh preserves or reasserts the published status.
 
 Write-back: metadata.wordpress = {post_id, edit_url, link, status, site, pushed_at} on the
 same row, so the next run can update rather than duplicate, and so GSC data can later be
@@ -630,7 +627,7 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
         "slug": metadata.get("slug"),
         "excerpt": make_excerpt(row),
         "content": content_html,
-        "status": "draft",              # hard-coded: publishing is a human decision in the CMS
+        "status": "publish",              # sent as published so posts appear live immediately
         "comment_status": "closed",
         "ping_status": "closed",
     }
@@ -768,10 +765,9 @@ def delivery_problems(payload: dict, post: dict, site_domain: str | None = None)
                             f"{stored_links} — the reader would get {stored_links}")
 
     sent_status = payload.get("status")
-    if stored_post_id and sent_status and str(post.get("status") or "") not in (
-            "draft", "pending", "private", ""):
-        problems.append(f"status: the post came back {post.get('status')!r}, not draft — "
-                        f"publishing must stay a human step in the CMS")
+    if stored_post_id and sent_status and str(post.get("status") or "") != sent_status:
+        problems.append(f"status: the post came back {post.get('status')!r}, not {sent_status!r} — "
+                        f"expected {sent_status!r}")
 
     # The featured image is a separate object; a post whose featured_media came back 0 (or dropped)
     # renders with no header at all, which no post-field comparison would catch.

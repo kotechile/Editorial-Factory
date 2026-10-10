@@ -1,0 +1,87 @@
+{
+  "slug": "home-assistant-cloud-rename-hardware-rent",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular smart home hub unit with a heavy locking latch and a stack of maintenance ledger cards on weathered concrete.",
+      "caption": "The alternative to cloud hardware rent is a local maintenance bill paid in hours and power.",
+      "title": "Home Assistant Link Maintenance Bill",
+      "bytes": 1662789,
+      "sha256": "sha256:64d3836ed466fa46bcaa08bc5d40282e"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a small mechanical assembly resting on weathered concrete, asymmetric off-centre composition. Three recognisable engineered parts arranged in a clear physical stack: a modular smart home hub unit, a heavy mechanical locking latch securing it, and a thick stack of maintenance ledger cards docked into the side. Matte surfaces with moulding seams and contact shadows, one directional key light raking across them throwing a long cast shadow, matte muted grey and amber palette, generous negative space.",
+  "negative_prompt": "text, garbled text, letters, numbers, UI, watermark, typography, lettering",
+  "rationale": "A matte clay 3D render perfectly visualizes the structural and abstract concept of shifting costs (hardware rent vs maintenance time) using a clear physical assembly of recognizable parts.",
+  "cue": "self-hosting is a maintenance bill",
+  "subject": "a modular smart home hub unit with a heavy locking latch and a stack of maintenance ledger cards",
+  "core_thesis": "The cloud has become a recurring rent on hardware people already own \u2014 and the honest counterweight to it is not 'self-hosting is free' but 'self-hosting is a maintenance bill.'",
+  "core_conflict": "cloud hardware rent vs local self-hosted maintenance bill",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "Home Assistant Drops Cloud. A modular smart home hub unit with a heavy locking latch and a stack of maintenance ledger cards ",
+  "caption": "Home Assistant Drops Cloud: The push to end subscription lock-in for smart devices.",
+  "title": "Home Assistant Drops Cloud",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/home-assistant-cloud-rename-hardware-rent/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1240498,
+  "sha256": "sha256:5234af41cd71e2fdf01005cd33e5509fdb107a0867998bea2568dffb6f53da3a",
+  "source_hash": "sha256:7a1f2f175864e84a3831f016c974904f",
+  "source_chars": 4350,
+  "task_id": "cdfa2a7c98b47b84f84fea3530f6c61a",
+  "credits": 18.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_639130250228f27d39bd6e5720ab915e.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a small mechanical assembly resting on weathered concrete, asymmetric off-centre composition. Three recognisable engineered parts arranged in a clear physical stack: a modular smart home hub unit, a heavy mechanical locking latch securing it, and a thick stack of maintenance ledger cards docked into the side. Matte surfaces with moulding seams and contact shadows, one directional key light raking across them throwing a long cast shadow, matte muted grey and amber palette, generous negative space.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-10T06:07:44+00:00",
+  "overlay": {
+    "kicker": "SMART HOME // HARDWARE RENT",
+    "title": "HOME ASSISTANT DROPS CLOUD",
+    "hook": "The push to end subscription lock-in for smart devices",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.05,
+    "target": 4.5,
+    "clutter": 0.213,
+    "region_rgb": [
+      62,
+      56,
+      44
+    ],
+    "binding_rgb": [
+      94,
+      89,
+      70
+    ],
+    "title_lines": [
+      "HOME ASSISTANT",
+      "DROPS CLOUD"
+    ],
+    "generated_at": "2026-10-10T06:07:44+00:00"
+  }
+}

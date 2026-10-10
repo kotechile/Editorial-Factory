@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/maskills-multi-agent-skills-optimization/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "Brushed titanium server blade locking into a precision inspection gate bay against a charcoal background."
-image_caption: "Strict mechanical validation gates prevent a single bad update from breaking an agent's ability to act."
+image_alt: "Optimize Skills Not Memory. Brushed titanium server blade locking into a precision inspection gate bay against a charcoal bac"
+image_caption: "Optimize Skills Not Memory: Why agents need optimized skills instead of more memory."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

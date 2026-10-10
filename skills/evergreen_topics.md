@@ -144,6 +144,15 @@ print(c.fetch_source('<url>')['status'])"
 A `verified` row needs `status == 'fetched'`; a 403/404/PDF row fails the floor no matter how good
 the figure is, so build the topic around sources that actually retrieve.
 
+**A `fetched` row can also be an error page wearing HTTP 200 — check the body, not just the status.**
+EIA's `epm_table_grapher.php` URLs (Electric Power Monthly figure tables) intermittently answer 200 with
+a ~260-character stub reading *"Sorry! Unexpected Error … routed to the appropriate person"* and no
+numbers at all, so the same row passes on one fetch and reads `figure_absent` on the next (observed
+2026-10-09: the July 2026 industrial price row verified on a manual probe, then failed inside the gate
+run). Prefer a stable EIA prose page for the same figure — `eia.gov/energyexplained/electricity/…`
+carries the annual average price by customer class in plain text and retrieves every time — and treat any
+`fetched` body under ~400 characters as unreachable until you eyeball it.
+
 **A `fetched` row can still fail as `figure_absent` — the page loaded and the number did not.**
 Several vendor rate-card hosts render their tables client-side, so the verifier gets HTTP 200 with a
 body that carries no numeric tokens at all. Observed 2026-10-08 building the supply_chain evergreen

@@ -1,0 +1,85 @@
+{
+  "slug": "last-mile-carbon-number-is-a-rate-table",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two official regulatory rate documents layered slightly out of alignment on a plain desk.",
+      "caption": "A last-mile carbon score is often determined by the choice of a published rate factor rather than a real change on the road.",
+      "title": "carbon-factor-rate-table-flatlay",
+      "bytes": 338731,
+      "sha256": "sha256:2ac46312ad1731ca5e7ba7f444d8a5e1"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of paper documents on a plain matte desk surface, shot with a 50mm overhead flat-lay optic with a razor-sharp focal plane. Top-down 90-degree view, asymmetric composition with generous editorial negative space on the right. Two thick, official regulatory rate documents and clipped filings layered slightly out of alignment to look handled, sitting on a textured grey desk. Even diffused daylight casting soft contact shadows, muted tactile paper tones, blank or illegibly cropped paper, creating a quiet, refined editorial aesthetic.",
+  "negative_prompt": "text, letters, numbers, wordmarks, signage, UI, watermarks, logos",
+  "rationale": "The story revolves around administrative rates, published factors, and the discrepancy between official regulatory documents. A document flatlay perfectly captures the bureaucratic reality of calculating carbon scores.",
+  "cue": "activity times a published factor",
+  "subject": "two official regulatory rate documents layered slightly out of alignment",
+  "core_thesis": "A last-mile carbon score is calculated using published rate factors that vary between agencies, rather than absolute physical emissions.",
+  "core_conflict": "Variable published administrative rates vs absolute physical carbon reporting",
+  "composition": "top-down 90-degree view, asymmetric composition",
+  "alt_text": "Last-Mile Carbon Rates. Two official regulatory rate documents layered slightly out of alignment on a plain desk.",
+  "caption": "Last-Mile Carbon Rates: Why your fleet's carbon score is just a published rate.",
+  "title": "Last-Mile Carbon Rates",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/last-mile-carbon-number-is-a-rate-table/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 203753,
+  "sha256": "sha256:93b33a16d1a182ac1af783d878787aa8529036a8e6630d2dc75edde335eff7c3",
+  "source_hash": "sha256:cd11f2a6aa61bd3a64c63633964c29ef",
+  "source_chars": 4635,
+  "task_id": "de2d6222459b0a23b821ef16ce322b61",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/de2d6222459b0a23b821ef16ce322b61_1791573189879.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of paper documents on a plain matte desk surface, shot with a 50mm overhead flat-lay optic with a razor-sharp focal plane. Top-down 90-degree view, asymmetric composition with generous editorial negative space on the right. Two thick, official regulatory rate documents and clipped filings layered slightly out of alignment to look handled, sitting on a textured grey desk. Even diffused daylight casting soft contact shadows, muted tactile paper tones, blank or illegibly cropped paper, creating a quiet, refined editorial aesthetic.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-09T19:13:14+00:00",
+  "overlay": {
+    "kicker": "LAST-MILE EMISSIONS // RATE TABLES",
+    "title": "LAST-MILE CARBON RATES",
+    "hook": "Why your fleet's carbon score is just a published rate",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 60,
+    "contrast": 4.58,
+    "target": 4.5,
+    "clutter": 0.054,
+    "region_rgb": [
+      128,
+      129,
+      131
+    ],
+    "binding_rgb": [
+      120,
+      121,
+      123
+    ],
+    "title_lines": [
+      "LAST-MILE",
+      "CARBON RATES"
+    ],
+    "generated_at": "2026-10-09T19:13:14+00:00"
+  }
+}

@@ -27,6 +27,7 @@ context/assets/illustrations/**/*.jpg
 context/assets/illustrations/**/*.jpeg
 context/assets/illustrations/**/*.png
 context/assets/illustrations/**/*.webp
+context/assets/_review_*
 
 # OS
 .DS_Store

@@ -160,14 +160,8 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    `editorial_macro` for systemic, architectural, or operational topics where extreme close-ups strip away
    environmental meaning — and never *recommend* it for those topics elsewhere in the commission (rule 5's
    photographic-preference list must not name it, or the two rules cancel out).
-2. **No legible text from the image model, ever.** No text, letters, numbers, wordmarks, signage or UI
-   in the frame (they render as rubble) — the negative prompt must forbid them explicitly and the positive
-   prompt may not *ask* for them ("a sign reading…" is refused). This is about text the model draws.
-   The desk's own cover typography — a topic kicker, the headline and a hook — is composited
-   afterwards as a separate, measured step (`scripts/illustration_overlay.py`), because a deliberately
-   conceptual image is often not descriptive enough on its own and the type has to carry the topic.
-   It is never written by the image model, and it never carries the desk's own name.
-3. **Brand fidelity without defective logos.** When the story is about a company's vehicle, product, or facility (e.g. Tesla, Maersk, Boeing, NVIDIA, Apple, Caterpillar), depicting the authentic vehicle, vessel, or hardware faithfully reflecting the brand's real industrial design and styling is fully permitted and encouraged. What must be avoided is prompting for isolated close-up text logos or wordmarks that diffusion models mangle into garbled or misspelled letters. The brand's identity should be carried cleanly by its authentic industrial design, iconic vehicle silhouette, and operational context. No recognisable real person, and no human face or hands in frame.
+2. **No garbled or hallucinated text from the image model.** Random lettering, illegible numbers, pseudo-words, or UI clutter in the frame render as rubble — the negative prompt must forbid them explicitly and the positive prompt may not ask for random text ("a sign reading…" is refused). This does not prohibit authentic, recognized brand emblems and iconic logos (see Rule 3). The desk's own cover typography — a topic kicker, the headline and a hook — is composited afterwards as a separate, measured step (`scripts/illustration_overlay.py`), because a deliberately conceptual image is often not descriptive enough on its own and the type has to carry the topic. It is never written by the image model, and it never carries the desk's own name.
+3. **Brand fidelity with accurate logos and recognized brand subjects.** When the story is about a company's vehicle, product, facility, or technology (e.g. Tesla, Maersk, Boeing, NVIDIA, Apple, Caterpillar, AWS), depicting their authentic vehicle, vessel, hardware, recognized brand subjects, and accurate name-brand logos or emblems is fully permitted and encouraged, provided their representation is faithful and accurate to the brand's genuine visual identity and design. What must be avoided is garbled pseudo-text, misspelled lettering, or ungrounded random typography. The brand's identity should be carried cleanly by its authentic industrial design, iconic silhouette, signature livery, and genuine emblem. No recognisable real person, and no human face or hands in frame.
 4. **No stock-photo clichés** — light bulb, handshake, chess pieces, glowing brain, gavel, scales,
    thumbs-up, rockets, dartboards, puzzle pieces (`_CLICHE_RE`).
 5. **The treatment must be real in the prompt**: at least one word of the chosen treatment's
@@ -216,9 +210,9 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
     the list passes on the single word "shadow". The anchors differ because the models do: flux stages
     a photograph, Nano Banana builds a structure.
 13. **The layout is mandated.** The brief carries a `composition` field naming the framing rule
-    (extreme asymmetry, low-angle with scale contrast, symmetrical top-down); a composition that
+    (extreme asymmetry, split-screen diptych, low-angle with scale contrast, symmetrical top-down); a composition that
     anchors nothing is how two different articles end up with the same centred object on the same
-    sweep.
+    sweep. When an article contrasts two scenarios, paradigms, or migration paths (e.g. *migrate from cloud to on-premise*, *gas versus electric*, *build vs buy*), the mandated composition is a split-screen diptych: left side captures Scenario A, right side captures Scenario B, divided cleanly by a split axis or vertical boundary seam with unified lighting and material realism.
 
 Three refused briefs in a row raise `BriefError` (with the last refusal quoted) rather than being
 repaired here: the treatment choice is the product, so a refusal is fed back to the director and

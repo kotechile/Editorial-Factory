@@ -1,6 +1,6 @@
 {
   "slug": "ai-spend-27t-cost-visibility-mandate",
-  "revision": 3,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,22 @@
       "sha256": "sha256:e1d5509459d869f7126a0f301728f5cd",
       "generated_at": "2026-10-01T22:09:19+00:00",
       "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers.",
+      "caption": "Enterprises are demanding visibility into the hidden layers of compute that drive up AI costs per resolved work-unit.",
+      "title": "isometric-ai-compute-layers",
+      "bytes": 1574022,
+      "sha256": "sha256:9b94a6fa11fcc0f1032b8c2a11089008"
+    },
+    {
+      "revision": 4,
+      "alt_text": "AI Cost Control Mandate. Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers.",
+      "caption": "AI Cost Control Mandate: Tracking outcomes instead of token prices.",
+      "title": "AI Cost Control Mandate",
+      "bytes": 1126142,
+      "sha256": "sha256:a62b11303cacc0c084ec6aedb1ef40b95f6df8e1f079aff4d5176cfaa5abba60"
     }
   ],
   "style": "technical_isometric",
@@ -36,9 +52,9 @@
   "rationale": "The article emphasizes the 'hidden layers' of software calls and database lookups that stack on top of raw token costs. A technical isometric cutaway perfectly visualizes these hidden structural layers and the flow of compute in a clean, analytical manner.",
   "cue": "budget the hidden layers",
   "subject": "isometric cutaway of a multi-tiered compute server stack",
-  "alt_text": "Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers.",
-  "caption": "Enterprises are demanding visibility into the hidden layers of compute that drive up AI costs per resolved work-unit.",
-  "title": "isometric-ai-compute-layers",
+  "alt_text": "AI Cost Control Mandate. Isometric cutaway diagram of a multi-tiered compute server stack showing internal routing layers.",
+  "caption": "AI Cost Control Mandate: Tracking outcomes instead of token prices.",
+  "title": "AI Cost Control Mandate",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -48,8 +64,8 @@
   "local_path": "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1574022,
-  "sha256": "sha256:9b94a6fa11fcc0f1032b8c2a11089008",
+  "bytes": 1126142,
+  "sha256": "sha256:a62b11303cacc0c084ec6aedb1ef40b95f6df8e1f079aff4d5176cfaa5abba60",
   "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9",
   "source_chars": 4783,
   "task_id": "cb9da70aaf2d8f4bb7e939b8cac7302a",
@@ -66,5 +82,31 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T22:20:14+00:00"
+  "generated_at": "2026-10-08T22:20:14+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // COST CONTROL",
+    "title": "AI COST CONTROL MANDATE",
+    "hook": "Tracking outcomes instead of token prices",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.97,
+    "target": 5.5,
+    "clutter": 0.317,
+    "region_rgb": [
+      215,
+      214,
+      205
+    ],
+    "binding_rgb": [
+      193,
+      189,
+      178
+    ],
+    "title_lines": [
+      "AI COST CONTROL",
+      "MANDATE"
+    ],
+    "generated_at": "2026-10-08T22:20:14+00:00"
+  }
 }

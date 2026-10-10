@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T11:36:12Z",
+  "updated_at": "2026-10-10T06:39:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -419,7 +419,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-05",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/"
     },
     {
       "slug": "2026-10-05_inventory-carrying-cost-rate",
@@ -437,7 +438,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-05",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/inventory-carrying-cost-rate/"
     },
     {
       "slug": "2026-10-05_multi-agent-coordination-topology-cost",
@@ -492,7 +494,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-05",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/smart-irrigation-payback-water-tier/"
     },
     {
       "slug": "2026-10-05_you-think-youre-governing-your-agents",
@@ -528,7 +531,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/"
     },
     {
       "slug": "2026-10-06_azure-control-plane-single-point-of-failure",
@@ -546,7 +550,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/azure-control-plane-single-point-of-failure/"
     },
     {
       "slug": "2026-10-06_buying-ai-quality-when-the-score-belongs-to-the-judge",
@@ -618,7 +623,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/demurrage-invoice-30-day-clocks/"
     },
     {
       "slug": "2026-10-06_fine-tune-vs-rent-by-token",
@@ -636,7 +642,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/fine-tune-vs-rent-by-token/"
     },
     {
       "slug": "2026-10-06_local-ai-payback-cloud-gpu-spread",
@@ -654,7 +661,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/"
     },
     {
       "slug": "2026-10-06_local-first-smart-home-cost-squeeze",
@@ -691,7 +699,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-10-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/"
     },
     {
       "slug": "2026-10-06_water-leak-monitor-rate-threshold",
@@ -728,7 +737,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/agent-memory-poisoning-write-path/"
     },
     {
       "slug": "2026-10-07_agent-tool-count-ceiling",
@@ -746,7 +756,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/agent-tool-count-ceiling/"
     },
     {
       "slug": "2026-10-07_automation-payback-splits-by-sku-geometry",
@@ -764,7 +775,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/automation-payback-splits-by-sku-geometry/"
     },
     {
       "slug": "2026-10-07_durable-execution-not-a-transaction",
@@ -782,7 +794,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/durable-execution-not-a-transaction/"
     },
     {
       "slug": "2026-10-07_gpu-hour-price-set-by-memory",
@@ -800,7 +813,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/gpu-hour-price-set-by-memory/"
     },
     {
       "slug": "2026-10-07_kv-cache-is-the-concurrency-ceiling",
@@ -836,7 +850,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/retry-is-the-failure-amplifier/"
     },
     {
       "slug": "2026-10-07_sla-credit-is-not-insurance",
@@ -854,7 +869,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/sla-credit-is-not-insurance/"
     },
     {
       "slug": "2026-10-07_vendor-replacement-ai-ceiling",
@@ -872,7 +888,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/vendor-replacement-ai-ceiling/"
     },
     {
       "slug": "2026-10-07_warehouse-pick-error-tax-payback",
@@ -928,7 +945,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/agent-memory-tiering-l1-l4/"
     },
     {
       "slug": "2026-10-08_cache-boundary-decides-input-bill",
@@ -946,7 +964,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/cache-boundary-decides-input-bill/"
     },
     {
       "slug": "2026-10-08_forecast-accuracy-is-not-shock-protection",
@@ -964,7 +983,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/forecast-accuracy-is-not-shock-protection/"
     },
     {
       "slug": "2026-10-08_freight-scale-bet-vs-contract-duration",
@@ -1001,7 +1021,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/fuel-surcharge-peg-mpg-audit/"
     },
     {
       "slug": "2026-10-08_mechanics-lien-clock-payment-release",
@@ -1019,7 +1040,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/mechanics-lien-clock-payment-release/"
     },
     {
       "slug": "2026-10-08_safety-stock-forecast-error-not-demand-noise",
@@ -1037,7 +1059,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/safety-stock-forecast-error-not-demand-noise/"
     },
     {
       "slug": "2026-10-08_split-year-two-clock-seam",
@@ -1055,7 +1078,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/split-year-two-clock-seam/"
     },
     {
       "slug": "2026-10-08_token-price-record-low-budget-overrun",
@@ -1077,6 +1101,24 @@
       "url": "https://giniloh.com/token-price-record-low-budget-overrun/"
     },
     {
+      "slug": "2026-10-09_backup-battery-sizing-critical-loads",
+      "title": "Your Home Backup Battery Is Sized Against the Wrong Number",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-09",
+      "public": false
+    },
+    {
       "slug": "2026-10-09_diesel-620-electric-freight-certificate-gap",
       "title": "Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight",
       "vertical": "last_mile_routing_fleet_carbon",
@@ -1091,6 +1133,42 @@
         "At a glance"
       ],
       "target_persona": "supply_chain_architect",
+      "date": "2026-10-09",
+      "public": false
+    },
+    {
+      "slug": "2026-10-09_last-mile-carbon-number-is-a-rate-table",
+      "title": "Your Last-Mile Carbon Number Is a Rate Table",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-09",
+      "public": false
+    },
+    {
+      "slug": "2026-10-09_post-termination-option-clock-tax",
+      "title": "The 90-Day Clock That Turns Options Into a Tax Bill",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
       "public": false
     },
@@ -1128,6 +1206,42 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-09",
+      "public": false
+    },
+    {
+      "slug": "2026-10-10_home-assistant-cloud-rename-hardware-rent",
+      "title": "Home Assistant Renames Cloud to Fight Hardware Rent",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-10",
+      "public": false
+    },
+    {
+      "slug": "2026-10-10_nearshoring-doesnt-move-the-trade-case",
+      "title": "Nearshoring Doesn't Move the Trade Case",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-10",
       "public": false
     }
   ]

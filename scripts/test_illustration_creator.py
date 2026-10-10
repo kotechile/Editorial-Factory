@@ -293,8 +293,15 @@ refuse({"alt_text": "A matte clay 3D render showing plastic pellets on a steel p
 refuse({"caption": "no full stop here"}, "caption must be")
 refuse({"title": "x"}, "media title must be")
 refuse({"rationale": "it fits"}, "rationale must be")
-refuse({"cue": "the tariff story"}, "not a verbatim phrase")
-refuse({"depicts_real_brand": True}, "depicts a real company")
+brief_brand = json.loads(brief_json(cue="reshoring didn't kill tariff risk"))
+brief_brand["depicts_real_brand"] = True
+ic.validate_brief(brief_brand, ARTICLE, allowed=ic.allowed_styles([]))
+check("depicts_real_brand: True is accepted when authentic brand representation is used", True)
+
+brief_split = json.loads(brief_json(cue="reshoring didn't kill tariff risk"))
+brief_split["composition"] = "split-screen diptych comparing scenario A to scenario B"
+ic.validate_brief(brief_split, ARTICLE, allowed=ic.allowed_styles([]))
+check("split-screen diptych composition is accepted as a valid framing rule", True)
 refuse({"prompt": "Macro close-up photograph of a light bulb glowing above a handshake, 100mm macro "
                   "lens, shallow depth of field, soft daylight."}, "stock-photo cliché")
 

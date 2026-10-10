@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:15:45+00:00",
+  "generated_at": "2026-10-10T14:16:14+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -34,6 +34,584 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 795,
+      "slug": "nearshoring-doesnt-move-the-trade-case",
+      "title": "Nearshoring Doesn\u2019t Move the Trade Case",
+      "url": "https://giniloh.com/nearshoring-doesnt-move-the-trade-case/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S.",
+      "modified": "2026-10-10T06:39:16",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 793,
+      "slug": "home-assistant-cloud-rename-hardware-rent",
+      "title": "Home Assistant Renames Cloud to Fight Hardware Rent",
+      "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "The maker of Home Assistant just renamed its paid remote service. Home Assistant Cloud is now Home Assistant Link.",
+      "modified": "2026-10-10T06:07:57",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 578,
+      "slug": "kv-cache-is-the-concurrency-ceiling",
+      "title": "Your GPU Runs Out of Cache Before It Runs Out of Math",
+      "url": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "A graphics processing unit (GPU) serving a 7-billion-parameter model at 16-bit precision holds about 14GB of weights in memory before it answers a single\u2026",
+      "modified": "2026-10-10T01:57:54",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 537,
+      "slug": "agent-audit-trail-not-evidence",
+      "title": "An Agent\u2019s Logs Aren\u2019t Evidence: What to Capture, and How Long to Keep It",
+      "url": "https://giniloh.com/agent-audit-trail-not-evidence/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "An agent\u2019s log is only proof if it can replay the exact choice.",
+      "modified": "2026-10-10T01:57:19",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 541,
+      "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
+      "title": "Buying AI Quality: The Score Belongs to the Judge",
+      "url": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "On October 1, Dynatrace paid $915 million for Arize.",
+      "modified": "2026-10-10T01:55:34",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 554,
+      "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
+      "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying",
+      "url": "https://giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "37signals cut its cloud bill from $3.2 million to $1.3 million a year by moving seven apps off Amazon and onto its own gear.",
+      "modified": "2026-10-10T01:54:19",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 777,
+      "slug": "staggered-lockup-six-selling-decisions",
+      "title": "SpaceX\u2019s Staggered Lockup: Six Windows, Not One",
+      "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/",
+      "categories": [
+        "Career & AI Resilience:"
+      ],
+      "category_ids": [
+        8
+      ],
+      "excerpt": "SpaceX workers get their next chance to sell today as 328.4 million shares \u2014 about 7% of the locked stock \u2014 open for trading.",
+      "modified": "2026-10-10T01:43:38",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 778,
+      "slug": "diesel-620-electric-freight-certificate-gap",
+      "title": "Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight",
+      "url": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "U.S. on-highway diesel fell to $6.199 a gallon the week of Oct. 5, dropping 33 cents in two weeks.",
+      "modified": "2026-10-10T01:42:34",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 547,
+      "slug": "control-tower-silent-exception",
+      "title": "Will Your Control Tower Auto-Resolve the Theft It Can\u2019t See?",
+      "url": "https://giniloh.com/control-tower-silent-exception/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "A load stolen by a fake carrier never shows up as a late load.",
+      "modified": "2026-10-09T22:06:48",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 531,
+      "slug": "you-think-youre-governing-your-agents",
+      "title": "You Think You\u2019re Governing Your AI Agents. The Data Says You\u2019re Not.",
+      "url": "https://giniloh.com/you-think-youre-governing-your-agents/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Stolen machine identities just became the top way hackers break into companies.",
+      "modified": "2026-10-09T22:06:31",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 782,
+      "slug": "post-termination-option-clock-tax",
+      "title": "The 90-Day Clock That Turns Options Into a Tax Bill",
+      "url": "https://giniloh.com/post-termination-option-clock-tax/",
+      "categories": [
+        "Career & AI Resilience:"
+      ],
+      "category_ids": [
+        8
+      ],
+      "excerpt": "Three months after a job ends, an incentive stock option loses its tax status \u2014 the alternative minimum tax on the exercise spread can outweigh the strike.",
+      "modified": "2026-10-09T22:02:51",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 784,
+      "slug": "last-mile-carbon-number-is-a-rate-table",
+      "title": "Your Last-Mile Carbon Number Is a Rate Table",
+      "url": "https://giniloh.com/last-mile-carbon-number-is-a-rate-table/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "A last-mile carbon claim is activity times a published factor, and two federal agencies publish two different grid factors for the same kilowatt-hour.",
+      "modified": "2026-10-09T22:02:35",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 543,
+      "slug": "azure-control-plane-single-point-of-failure",
+      "title": "Azure\u2019s Bad 40 Hours: The Control Plane Is the Single Point of Failure",
+      "url": "https://giniloh.com/azure-control-plane-single-point-of-failure/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "At 10:03 Coordinated Universal Time (UTC) on 29 September 2026, Azure OpenAI Service broke in Sweden Central. It stayed down for six hours.",
+      "modified": "2026-10-09T01:35:03",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 545,
+      "slug": "local-ai-payback-cloud-gpu-spread",
+      "title": "Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways",
+      "url": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "The graphics processing unit (GPU) that local artificial intelligence (AI) teams actually buy just shot up in price.",
+      "modified": "2026-10-09T01:25:53",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 556,
+      "slug": "fine-tune-vs-rent-by-token",
+      "title": "Fine-Tune or Rent: The Denominator Decides Your Break-Even",
+      "url": "https://giniloh.com/fine-tune-vs-rent-by-token/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "Hugging Face\u2019s guide says you can fine-tune a 33-billion-parameter model on one 24-gigabyte graphics card.",
+      "modified": "2026-10-09T01:10:36",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 558,
+      "slug": "demurrage-invoice-30-day-clocks",
+      "title": "A Late Container\u2019s Bill Carries Two 30-Day Clocks",
+      "url": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "A late fee for a delayed shipping container \u2014 demurrage, in trade terms \u2014 now carries two strict 30-day clocks.",
+      "modified": "2026-10-09T01:09:53",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 596,
+      "slug": "agent-memory-tiering-l1-l4",
+      "title": "Long Context Is Not Memory: Why AI Agents Need Tiered State",
+      "url": "https://giniloh.com/agent-memory-tiering-l1-l4/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "When Chroma engineers tested 18 large language models (LLM) across eight lengths, scores dropped as the prompts grew \u2014 even on simple tasks.",
+      "modified": "2026-10-09T01:08:52",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 600,
+      "slug": "fuel-surcharge-peg-mpg-audit",
+      "title": "Your Fuel Surcharge Hides Three Negotiated Numbers",
+      "url": "https://giniloh.com/fuel-surcharge-peg-mpg-audit/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "The price of diesel does not set your freight fuel bill.",
+      "modified": "2026-10-09T01:01:15",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 549,
+      "slug": "agent-reliability-pass-k-not-one-green-run",
+      "title": "One Green Run Is Not Reliability: Gating Agents on Pass^k",
+      "url": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "The best tool-using Artificial Intelligence (AI) agents fail more than half the time, but normal testing hides the flaws.",
+      "modified": "2026-10-09T00:41:37",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 533,
+      "slug": "fed-rate-hike-inverts-working-capital-trap",
+      "title": "Higher Rates Meet Historically Lean Inventories",
+      "url": "https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "The Federal Reserve raised its main interest rate by a quarter point to a range of 3-3/4 to 4 percent, its first hike in three years.",
+      "modified": "2026-10-09T00:34:58",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 598,
+      "slug": "cache-boundary-decides-input-bill",
+      "title": "Where the Prompt Breaks Decides the AI Bill",
+      "url": "https://giniloh.com/cache-boundary-decides-input-bill/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "A research team ran the same agent workload through OpenAI, Anthropic, and Google and found that prompt caching cut application programming interface (API)\u2026",
+      "modified": "2026-10-09T00:33:18",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 572,
+      "slug": "agent-memory-poisoning-write-path",
+      "title": "Agent Memory Poisoning: Guard the Write, Not the Prompt",
+      "url": "https://giniloh.com/agent-memory-poisoning-write-path/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "One simple text file is enough to take over a coding agent\u2019s memory.",
+      "modified": "2026-10-09T00:14:17",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 580,
+      "slug": "sla-credit-is-not-insurance",
+      "title": "Why Cloud Uptime SLAs Are Not Insurance",
+      "url": "https://giniloh.com/sla-credit-is-not-insurance/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Amazon hands back 10% of the monthly bill when a cloud region drops below 99.99% uptime, but it takes a full month below 95% to see a 100% credit.",
+      "modified": "2026-10-08T23:32:55",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 561,
+      "slug": "retry-is-the-failure-amplifier",
+      "title": "The Retry Is the Bug: An Agent\u2019s Costliest Failure Mode",
+      "url": "https://giniloh.com/retry-is-the-failure-amplifier/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "A corrupted value sent a ledger agent into 15,000 retries and a $50,000 bill. A 25,930-episode study shows the same retry duplicates payments while the agent\u2026",
+      "modified": "2026-10-08T23:30:51",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 550,
+      "slug": "rack-power-density-ceiling-build-before-you-buy",
+      "title": "The 40 kW Line: Why the AI Rack Is a Building Project",
+      "url": "https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Data centers now report peak rack power of 30 kilowatts (kW) or more. Dense artificial intelligence (AI) racks push past 100 kW.",
+      "modified": "2026-10-08T23:04:55",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 539,
+      "slug": "inventory-carrying-cost-rate",
+      "title": "Inventory Carrying Cost Is 20\u201330% a Year, Not Your 7% Borrowing Rate",
+      "url": "https://giniloh.com/inventory-carrying-cost-rate/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "The true cost to hold a dollar of stock runs 20% to 30% a year, yet most models load only the 7.00% bank prime rate.",
+      "modified": "2026-10-08T23:03:55",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 568,
+      "slug": "vendor-replacement-ai-ceiling",
+      "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just Won\u2019t Run It",
+      "url": "https://giniloh.com/vendor-replacement-ai-ceiling/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Developers are rushing to write software that replaces paid tools, but barely half trust artificial intelligence (AI) to do the heavy lifting.",
+      "modified": "2026-10-08T23:01:23",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 576,
+      "slug": "agent-tool-count-ceiling",
+      "title": "The Tool-List Budget: How Many Tools One Agent Can Hold",
+      "url": "https://giniloh.com/agent-tool-count-ceiling/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Giving one AI agent a massive tool list crashes its accuracy to roughly one pick in seven.",
+      "modified": "2026-10-08T22:50:56",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 570,
+      "slug": "automation-payback-splits-by-sku-geometry",
+      "title": "Amazon Builds the Robots; Walmart Builds for What They Can\u2019t Lift",
+      "url": "https://giniloh.com/automation-payback-splits-by-sku-geometry/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear that runs its shipping network.",
+      "modified": "2026-10-08T22:49:48",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 563,
+      "slug": "durable-execution-not-a-transaction",
+      "title": "Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts",
+      "url": "https://giniloh.com/durable-execution-not-a-transaction/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely knows if it can undo a mistake.",
+      "modified": "2026-10-08T22:42:39",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 566,
+      "slug": "gpu-hour-price-set-by-memory",
+      "title": "The Price of a GPU-Hour Is Now Set by Memory, Not Compute",
+      "url": "https://giniloh.com/gpu-hour-price-set-by-memory/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "Cloud provider Nebius raised its hourly rate for an Nvidia H100 chip from $3.85 to $4.50 on October 1, 2026, while pushing the newer B200 to $8.50.",
+      "modified": "2026-10-08T22:40:12",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 594,
+      "slug": "forecast-accuracy-is-not-shock-protection",
+      "title": "Forecast Accuracy: A 32% Boost Will Not Stop El Ni\u00f1o",
+      "url": "https://giniloh.com/forecast-accuracy-is-not-shock-protection/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15 of 15 live rollouts, cutting errors by 32% on average.",
+      "modified": "2026-10-08T22:38:06",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 602,
+      "slug": "split-year-two-clock-seam",
+      "title": "The Two Clocks That Decide Your First Year Abroad",
+      "url": "https://giniloh.com/split-year-two-clock-seam/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Two clocks dictate the true cost of moving abroad, and they rarely sync up: the US demands 330 full days overseas within a 12-month window to shield your\u2026",
+      "modified": "2026-10-08T22:27:58",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 605,
+      "slug": "safety-stock-forecast-error-not-demand-noise",
+      "title": "Safety Stock Sizing: Why Your Buffer Uses the Wrong Number",
+      "url": "https://giniloh.com/safety-stock-forecast-error-not-demand-noise/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Feed a safety-stock formula the standard spread of demand, and it builds a much bigger buffer than the forecast actually needs.",
+      "modified": "2026-10-08T22:13:14",
+      "live": true
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -371,7 +949,7 @@
         10
       ],
       "excerpt": "Coca-Cola just pledged $10 billion for U.S. plants by 2030, which its Chief Financial Officer (CFO) calls a growth plan rather than a tariff shield.",
-      "modified": "2026-10-02T01:18:49",
+      "modified": "2026-10-08T22:23:54",
       "live": true
     },
     {
@@ -422,7 +1000,7 @@
         10
       ],
       "excerpt": "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger.",
-      "modified": "2026-10-01T17:05:30",
+      "modified": "2026-10-08T22:21:24",
       "live": true
     },
     {
@@ -439,7 +1017,7 @@
         7
       ],
       "excerpt": "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%.",
-      "modified": "2026-10-01T22:18:31",
+      "modified": "2026-10-08T22:20:17",
       "live": true
     },
     {
@@ -456,7 +1034,7 @@
         9
       ],
       "excerpt": "Drop one hard check from an Artificial Intelligence (AI) agent\u2019s learning loop, and its test score crashes from 17.2 to 6.6.",
-      "modified": "2026-10-01T22:17:45",
+      "modified": "2026-10-08T22:19:34",
       "live": true
     },
     {
@@ -473,7 +1051,7 @@
         10
       ],
       "excerpt": "Washington just pushed the United States\u2013China tariff truce to Jan. 10, 2027, and American companies are not buying the calm.",
-      "modified": "2026-10-01T15:56:41",
+      "modified": "2026-10-08T22:18:34",
       "live": true
     },
     {
@@ -1177,6 +1755,74 @@
     {
       "site": "wellroost.com",
       "kind": "article",
+      "id": 113,
+      "slug": "backup-battery-sizing-critical-loads",
+      "title": "Your Home Backup Battery Is Sized Against the Wrong Number",
+      "url": "https://wellroost.com/backup-battery-sizing-critical-loads/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "The average American home buys 899 kilowatt-hours (kWh) of power a month. Most buyers use that huge yearly total to size a backup battery.",
+      "modified": "2026-10-09T20:09:41",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 109,
+      "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
+      "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
+      "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
+      "modified": "2026-10-09T20:06:02",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 92,
+      "slug": "smart-irrigation-payback-water-tier",
+      "title": "A Smart Sprinkler Pays Back at Your Top Water Tier, Not the Spec Sheet",
+      "url": "https://wellroost.com/smart-irrigation-payback-water-tier/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "A smart sprinkler box claims to save \\\u201dup to 15,000 gallons\\\u201d of water a year. Yet a U.S.",
+      "modified": "2026-10-08T23:00:10",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 103,
+      "slug": "mechanics-lien-clock-payment-release",
+      "title": "The Hidden Lien Clock Behind Your Remodel Payments",
+      "url": "https://wellroost.com/mechanics-lien-clock-payment-release/",
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "A California homeowner has exactly 15 days after a remodel ends to file one form: a Notice of Completion.",
+      "modified": "2026-10-08T22:13:26",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
       "id": 96,
       "slug": "local-first-smart-home-cost-squeeze",
       "title": "The local-first smart home cost squeeze: Cloud and hardware prices rise",
@@ -1212,9 +1858,9 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": 90,
-      "slug": "remodel-capitalization-trap-shell-not-show",
+      "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
       "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
-      "url": "https://wellroost.com/remodel-capitalization-trap-shell-not-show/",
+      "url": "https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
       "categories": [
         "Energy & Efficiency"
       ],
@@ -1222,7 +1868,7 @@
         4
       ],
       "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
-      "modified": "2026-10-05T23:43:28",
+      "modified": "2026-10-09T21:14:29",
       "live": true
     },
     {
@@ -1248,9 +1894,9 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": 73,
-      "slug": "heloc-at-8-vs-battery-that-earns",
+      "slug": "borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid",
       "title": "Borrow at 8% to remodel, or let your battery earn on the grid",
-      "url": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/",
+      "url": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
       "categories": [
         "Energy & Efficiency"
       ],
@@ -1258,7 +1904,7 @@
         4
       ],
       "excerpt": "The average Home Equity Line of Credit (HELOC) just hit 8.194%.",
-      "modified": "2026-10-05T14:28:26",
+      "modified": "2026-10-09T21:59:07",
       "live": true
     },
     {
@@ -1299,9 +1945,9 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": 75,
-      "slug": "california-legalizes-plug-in-solar",
+      "slug": "california-legalizes-plug-in-home-solar-panels",
       "title": "California Legalizes Plug-In Home Solar Panels",
-      "url": "https://wellroost.com/california-legalizes-plug-in-solar/",
+      "url": "https://wellroost.com/california-legalizes-plug-in-home-solar-panels/",
       "categories": [
         "Energy & Efficiency"
       ],
@@ -1309,7 +1955,7 @@
         4
       ],
       "excerpt": "California just made it legal to plug a solar panel straight into a normal wall outlet. On Sept. 30, 2026, Gov. Gavin Newsom signed Senate Bill 868 (SB 868).",
-      "modified": "2026-10-05T14:28:37",
+      "modified": "2026-10-09T21:33:02",
       "live": true
     },
     {

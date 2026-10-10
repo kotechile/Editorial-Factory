@@ -1,0 +1,85 @@
+{
+  "slug": "nearshoring-doesnt-move-the-trade-case",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An unbranded railway tank car resting idle on tracks at a dimly lit industrial border checkpoint at dusk.",
+      "caption": "Nearshoring a manufacturing facility does not leave trade cases and enforcement liabilities behind.",
+      "title": "tank-car-border-checkpoint",
+      "bytes": 351541,
+      "sha256": "sha256:a8208b46dd2a5a50124bd5ba63bcf41a"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm wide establishing shot. An imposing, unbranded industrial railway tank car resting idle on steel tracks at a shadowy border checkpoint at dusk. A single strong practical security light casts a crisp, heavy shadow across the corrugated steel and heavy valves of the tank car. Restrained teal-and-amber palette, crisp atmospheric depth, deep blue hour ambient light. No people facing camera, quiet tension, high-end editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, people facing camera",
+  "rationale": "A cinematic still captures the physical reality of the specific good mentioned in the text (railway tank cars) stalled at a checkpoint, perfectly embodying the looming border and compliance risk.",
+  "cue": "moving the factory relocates neither",
+  "subject": "an unbranded railway tank car stalled at a dimly lit border checkpoint",
+  "core_thesis": "A sourcing decision carries trade and enforcement liabilities that attach to the product and importer's records, regardless of the factory's geographic location.",
+  "core_conflict": "Geographic nearshoring vs. persistent compliance and trade liabilities.",
+  "composition": "wide establishing composition with the tank car off-center",
+  "alt_text": "The Nearshoring Illusion. An unbranded railway tank car resting idle on tracks at a dimly lit industrial border checkpoint at",
+  "caption": "The Nearshoring Illusion: New trade liabilities for nearshored supply chains.",
+  "title": "The Nearshoring Illusion",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/nearshoring-doesnt-move-the-trade-case/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 197869,
+  "sha256": "sha256:f9e415a2dc156c622567d2a32406b85fc9a8643a76c177e7359ca4575a7f0718",
+  "source_hash": "sha256:c9073422959b95c7b5679c562270db79",
+  "source_chars": 4711,
+  "task_id": "338824363f7d2f0bc3fc05990a98c95f",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/338824363f7d2f0bc3fc05990a98c95f_1791614340714.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm wide establishing shot. An imposing, unbranded industrial railway tank car resting idle on steel tracks at a shadowy border checkpoint at dusk. A single strong practical security light casts a crisp, heavy shadow across the corrugated steel and heavy valves of the tank car. Restrained teal-and-amber palette, crisp atmospheric depth, deep blue hour ambient light. No people facing camera, quiet tension, high-end editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-10T06:39:02+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // NEARSHORING RISK",
+    "title": "THE NEARSHORING ILLUSION",
+    "hook": "New trade liabilities for nearshored supply chains",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 4.69,
+    "target": 4.5,
+    "clutter": 0.119,
+    "region_rgb": [
+      70,
+      101,
+      97
+    ],
+    "binding_rgb": [
+      89,
+      110,
+      105
+    ],
+    "title_lines": [
+      "THE NEARSHORING",
+      "ILLUSION"
+    ],
+    "generated_at": "2026-10-10T06:39:02+00:00"
+  }
+}

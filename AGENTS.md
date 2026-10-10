@@ -47,12 +47,12 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    never recurs.
 8. **Persistence is automatic and ungated; there is no social distribution step.** A verified,
    frontier-rewritten article is persisted in the same run — `published/YYYY-MM-DD_<slug>.md`,
-   `context/published_log.md`, the Supabase rows, `context/sitemap.json`, the CMS draft
-   (`scripts/wp_draft.py`) and the `context/content_calendar.md` run-log row — via
+   `context/published_log.md`, the Supabase rows, `context/sitemap.json`, the CMS post
+   (`scripts/wp_draft.py`, sent with status 'publish') and the `context/content_calendar.md` run-log row — via
    `scripts/publish.py <final draft>`. **The reader sites are the destination** (`giniloh.com` /
    `wellroost.com`, fed by the CMS); the LinkedIn and Reddit channels were removed by the owner on
    2026-10-06, so no run produces social copy, queues a post or waits on a distribution approval.
-   The CMS's draft -> publish flip stays a human action in the CMS.
+   The article is pushed directly live to the CMS with status 'publish'.
 9. **Multi-topic signal synthesis.** Rather than merely publishing single-signal press summaries,
    the pipeline prioritizes dialectical cross-topic synthesis: combining two or more acute 30-day
    developments (e.g., falling LLM frontier pricing colliding with local in-house software

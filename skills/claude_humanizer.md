@@ -214,6 +214,19 @@ one.
   `humanize_loop3.py`'s `humanize_all()` still prints `WROTE` unconditionally after the loop even
   though the final file was never written — do not trust that message; verify the `_final.md` file
   exists before reporting success. (Fixed in humanize_loop3.py 2026-09-23.)
+- **Run Loop 3 in the foreground when the run is a cron/one-shot session (learned 2026-10-10).** A
+  background `terminal(background=true)` humanize run gets no completion notification in a cron
+  context (the session cannot receive async completions), so the per-attempt log — verdict, Flesch,
+  word count, which attempt passed — is lost and you must infer success from the `_final.md` alone.
+  Run the per-draft invocation in the foreground (or `... 2>&1 | tee /tmp/loop3.log`) so the attempt
+  trail survives, and still confirm the `_final.md` exists and re-measure it before publishing.
+- **The frontier can PASS the floor and still land under target (learned 2026-10-10).** A rewrite that
+  exits PASS at Flesch ~50–51 clears the hard gate but sits on the floor, and the persistence pass
+  injects the `## Related reading` block *after* the rewrite, which can push the *published* artifact
+  below 50. Hand-tune the `_final.md` toward the 60 target before publishing — split long sentences,
+  swap long generic words, keep each long proper noun to one full mention. Verified path: 50.7 → 61.4
+  on the final, so the published artifact landed at 57.3 instead of under the floor. Facts, `[n]`
+  citations, section markers and `## Sources` stay untouched.
 - A section that fails its gate after 2 retries → report the specific section + criterion to the
   Editor, do not silently ship.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so

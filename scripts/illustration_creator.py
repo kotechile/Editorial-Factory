@@ -103,11 +103,11 @@ RETIRED_STYLES = {"minimal_geometry": "component_assembly"}
 # generated header is unusable, so the brief has to forbid it explicitly and this module checks that
 # it did (see `validate_brief`).
 DEFAULT_NEGATIVE = (
-    "text, letters, numbers, words, captions, subtitles, typography, wordmarks, watermarks, logos, "
-    "brand marks, signatures, UI elements, charts, borders, frames, split panels, duplicated "
+    "garbled text, random letters, fake words, captions, subtitles, typography, wordmarks, watermarks, "
+    "illegible signatures, UI elements, charts, borders, frames, duplicated "
     "subjects, deformed anatomy, extra fingers, low resolution, blur, jpeg artifacts"
 )
-_NO_TEXT_RE = re.compile(r"\b(text|letter|word|caption|typograph|watermark|logo|brand mark|signature)", re.I)
+_NO_TEXT_RE = re.compile(r"\b(text|letter|word|caption|typograph|watermark|signature)", re.I)
 
 # What is actually appended to the image model's prompt. Deliberately NOT the director's
 # `negative_prompt`: kie takes the prompt as ONE text field, so every prohibition is read back as a
@@ -115,7 +115,7 @@ _NO_TEXT_RE = re.compile(r"\b(text|letter|word|caption|typograph|watermark|logo|
 # them, which is how kv-cache-is-the-concurrency-ceiling came back as a cube-and-block assembly. Only
 # the legibility/brand set earns that risk, because in-image text ruins a header outright. The
 # director's own negative stays on the brief as provenance and is still checked by validate_brief.
-IMAGE_GUARD = "Do not include: text, lettering, numbers, logos, watermarks, UI."
+IMAGE_GUARD = "Do not include: garbled text, random lettering, numbers, watermarks, UI."
 
 # Potency vocabulary — what a brief must NAME to be worth an image credit. A floor, not a style test:
 # a prompt that names neither an optic nor a light is a description, not a photograph, and that is
@@ -140,7 +140,9 @@ _FRAMING_RE = re.compile(
     r"left[- ]aligned|right[- ]aligned|left third|right third|rule of thirds|thirds|"
     r"low[- ]angle|high[- ]angle|top[- ]down|three[- ]quarter|scale contrast|leading lines?|"
     r"vanishing point|diagonal|foreground|midground|receding|stacked|"
-    r"wide establishing|extreme close|close crop|hero subject)\b", re.I)
+    r"wide establishing|extreme close|close crop|hero subject|"
+    r"split[- ]screen|split[- ]frame|split[- ]panel\w*|split[- ]composition|diptych|"
+    r"dual[- ]scene|dual[- ]panel\w*|side[- ]by[- ]side|two[- ]scenario\w*)\b", re.I)
 # Phrases that ask the model to render legible text (as opposed to forbidding it).
 _TEXT_REQUEST_RE = re.compile(
     r"\b(with|featuring|showing|displaying|reading|saying|spelling|stating|labelled|labeled|titled|"
@@ -647,9 +649,6 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if len(subject) < 10:
         problems.append("subject must state what is in the frame (>=10 chars)")
 
-    if raw.get("depicts_real_brand"):
-        problems.append("the brief depicts a real company's product/logo — depict the mechanism, not the mark")
-
     if problems:
         raise BriefError("; ".join(problems))
 
@@ -787,7 +786,7 @@ Where applicable, embody the core conflict through physical tension: a central o
 (State this in your `object_or_scene` field).
 - CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES GROUNDED IN THE ARTICLE'S VERTICAL:
   Inspect `Vertical: {fm.get('vertical', '')}` and the article's core thesis. Verticals across the desk: enterprise AI, supply chain, energy / utilities, heavy industry, finance / tax, residential / home, career / compensation, personal tech / tinkering, cross-border living.
-  * For enterprise AI / multi-agent systems / software / compute / finops: Do NOT draw a datacenter, server rack, OR plumbing/pneumatic valves! Use conceptual, symbolic visual storytelling — an optical beam-splitter prism dividing a single beam of warm light into parallel rays across dark obsidian stone, a high-precision axonometric technical cutaway of coordinated processing bays, monolithic stone slabs in delicate equilibrium, an intricate brass pendulum, or clean architectural light-and-shadow divides.
+  * For enterprise AI / multi-agent systems / software / compute / finops: Do NOT draw a plain datacenter, server rack, OR plumbing/pneumatic valves without emphasizing the main message from the text. It must be clear! You can use use conceptual, symbolic visual storytelling — a team of secret agents working together, an optical beam-splitter prism dividing a single beam of warm light into parallel rays across dark obsidian stone, a high-precision axonometric technical cutaway of coordinated processing bays, monolithic stone slabs in delicate equilibrium, an intricate brass pendulum, or clean architectural light-and-shadow divides.
   * For supply chain / logistics / warehousing / freight: An evocative scene capturing balance, capacity, or flow with crystal-clear air and high-contrast lighting — towering cargo structures under hard raking sunlight, an intermodal gantry silhouetted against twilight, or an authentic staging floor with dramatic directional lighting and deep contact shadows. Do NOT drown the scene in grey fog, murky haze, or overcast washouts.
   * For energy / utilities / infrastructure / climate: High-voltage transformer substations, utility-scale battery storage banks, industrial copper busbars, or wind/solar installations under dramatic skies.
   * For heavy industry / manufacturing / hardware: Precision CNC machining spindles throwing aluminum chips, glowing induction heating coils, robotic welding arms, or electronic PCB assembly benches.
@@ -862,11 +861,12 @@ This is an institutional, executive B2B publication read by supply chain leaders
 
 HARD RULES
 - Depict a concrete noun or powerful symbolic object from this story (the material, part, place, document or mechanism that carries it). Never a literal stock cliché, and never bare geometry — see the grounding rule above.
-- No text, letters, numbers, wordmarks, signage or UI in the image: generated lettering is \
-unreadable. Forbid them in `negative_prompt` — and keep that list to the legibility/brand set. \
+- No garbled text, random letters, numbers, or UI in the image: generated lettering is \
+unreadable. Forbid them in `negative_prompt` — and keep that list to the legibility set. \
 NEVER enumerate subject matter to exclude: the negative prompt is read by the image model as tokens \
 to draw, so "no abstract cubes" is an instruction to draw abstract cubes.
-- BRAND & PRODUCT INTEGRITY: When the article focuses on a real company (e.g. Tesla, Maersk, Boeing, NVIDIA, Apple, Caterpillar), depicting their authentic vehicles, vessels, machinery, or hardware is FULLY PERMITTED and encouraged, provided it accurately reflects the brand's genuine industrial design, iconic silhouette, and correct styling. What must be avoided is DEFECTIVE, GARBLED, OR MISSPELLED BRAND LOGOS: diffusion models frequently distort fine typographic text and lettermarks. Therefore, never prompt for isolated close-up text logos or wordmarks that the model might mangle. Let the correct vehicle form factor, signature livery, authentic hardware engineering, and operational context represent the brand proudly and accurately. No recognisable real person, and no human face or hands in frame. No {', '.join(CLICHE_BAN)}.
+- TWO-SCENARIO DUALITIES (SPLIT SCREEN): When the article contrasts two scenarios, paradigms, technologies, or migration paths (e.g. "Migrate from Cloud to on-premise", "Gas versus electric", legacy vs modern, build vs buy, centralized vs distributed), use a split-screen diptych composition. The frame must be divided into two contrasting halves: the left side captures Scenario A, the right side captures Scenario B, divided cleanly by a split axis or vertical boundary seam, while maintaining a unified lighting palette and consistent material realism across both sides. In "composition", specify a split-screen framing rule (e.g. 'split-screen diptych with left-right scenario contrast').
+- BRAND & PRODUCT INTEGRITY (RECOGNIZED BRAND SUBJECTS & LOGOS): When the article focuses on a real company (e.g. Tesla, Apple, NVIDIA, AWS, Maersk, Boeing, Caterpillar), depicting their recognized brand subjects, authentic products/machinery, and accurate name-brand logos or emblems is FULLY PERMITTED and encouraged, provided their representation is faithful and accurate to the brand's genuine visual identity and design. Avoid isolated gibberish text or distorted lettering. Set "depicts_real_brand": true when a recognized brand subject, vehicle, hardware, or authentic logo is featured in the frame. No recognisable real person, and no human face or hands in frame. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
 - Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \
@@ -883,13 +883,13 @@ Return ONLY a JSON object, no markdown fence, with exactly these keys:
  "rationale": "2-3 sentences: why this treatment for this story",
  "cue": "a phrase of 2-10 words copied verbatim from the article above (strongly prefer quoting the headline, lead, or 'one_big_thing')",
  "subject": "the physical thing in the frame, one clause — representing the governing mechanism, never an incidental anecdote, never a bare shape",
- "composition": "the framing rule that anchors the layout (>=12 chars) — extreme asymmetry, low-angle with scale contrast, symmetrical top-down; the layout is your direction, not the model's choice",
+ "composition": "the framing rule that anchors the layout (>=12 chars) — extreme asymmetry, split-screen diptych, low-angle with scale contrast, symmetrical top-down; the layout is your direction, not the model's choice",
  "model": "{' or '.join(sorted(MODELS))}",
  "model_override_reason": "required only if you deviate from the catalogue model, else omit",
  "prompt": "the generation prompt, 15-120 words, English, in the idiom of the model's family — \
 flux stages a photograph (optic, light, material, environment), nano builds a structure (parts, \
 arrangement, material, light) — and containing the vocabulary of the treatment you chose",
- "negative_prompt": "short; must name text/watermarks/logos. Never enumerate subject matter to \
+ "negative_prompt": "short; must name garbled text/random lettering/watermarks. Never enumerate subject matter to \
 exclude — the image model reads the negative as tokens to draw",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
  "resolution": "1K for most stories, 2K only when fine physical detail is the point",

@@ -7,8 +7,8 @@ Handles:
 3. Logging to `context/published_log.md` with the reader URL and any external URLs.
 4. Persistence to Supabase (articles, sources, live URLs) when configured.
 5. The art-directed featured image and the derived SEO assets (`scripts/article_assets.py`).
-6. Automatic WordPress draft creation in the destination CMS for the article's vertical
-   (scripts/wp_draft.py). Drafts only — the draft -> publish flip stays a human action.
+6. Automatic WordPress post creation in the destination CMS for the article's vertical
+   (scripts/wp_draft.py) with status 'publish' so the article is live immediately.
 
 There is no outbound social distribution step: the LinkedIn and Reddit channels were removed
 by the owner (2026-10-06). The reader sites (giniloh.com / wellroost.com, fed by the CMS) are
@@ -632,16 +632,16 @@ def push_wp_draft(slug: str) -> bool:
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         result = module.push_by_slug(slug)
-        print(f"✓ WordPress draft {result['status']}: post {result['post_id']} on {result['site']} "
+        print(f"✓ WordPress post {result['status']}: post {result['post_id']} on {result['site']} "
               f"— {result['edit_url']}")
         if result.get("problems"):
-            print("! the draft exists but the CMS does not hold what was sent:", file=sys.stderr)
+            print("! the post exists but the CMS does not hold what was sent:", file=sys.stderr)
             for problem in result["problems"]:
                 print(f"!   - {problem}", file=sys.stderr)
             print("!   fix the mapping and re-run: python3 scripts/wp_draft.py --all", file=sys.stderr)
         else:
             print(f"  (verified on the CMS: {result.get('summary') or 'title, excerpt, JSON-LD, inline SVG'})")
-        print("  (draft only — publishing it stays your call in the CMS)")
+        print("  (published live on WordPress)")
         return True
     except Exception as exc:  # network, credentials, routing, CMS — never fail the publish
         print(f"! WordPress draft NOT created: {exc}", file=sys.stderr)

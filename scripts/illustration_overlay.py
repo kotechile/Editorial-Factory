@@ -116,12 +116,31 @@ def clean(copy: dict) -> dict:
     return out
 
 
-def sentence_case(text: str) -> str:
-    """Title Case for a reader-facing alt/caption that does not mangle acronyms ('Ai', 'Llm')."""
+def source_spelling(word: str, source: str) -> str | None:
+    """The article's own spelling of `word`, when it carries a capital past the first letter.
+
+    The copy comes back uppercased for the header ('SPACEX STAGGERED LOCKUP'), so title-casing it
+    mangles every brand and product the piece names ('Spacex', 'Iphone'). The article body is the
+    authority on those spellings; a word it does not name is left to the acronym/case rules.
+    """
+    if not word or not source:
+        return None
+    for tok in re.findall(r"[A-Za-z][A-Za-z'’]*", source):
+        if tok.lower() == word.lower() and any(c.isupper() for c in tok[1:]):
+            return tok
+    return None
+
+
+def sentence_case(text: str, source: str = "") -> str:
+    """Title Case for a reader-facing alt/caption that does not mangle acronyms ('Ai', 'Llm') or the
+    article's own brand spellings ('Spacex' -> 'SpaceX')."""
     words = []
     for i, w in enumerate(str(text or "").split()):
         core = w.strip(".,:;—–-")
-        if core.upper() in ACRONYMS:
+        spelled = source_spelling(core, source)
+        if spelled:
+            w = w.replace(core, spelled)
+        elif core.upper() in ACRONYMS:
             w = w.upper()
         elif core.isupper() and len(core) > 1:
             w = w.title()
@@ -129,7 +148,8 @@ def sentence_case(text: str) -> str:
             w = w.capitalize()
         words.append(w)
     out = " ".join(words)
-    return out[:1].upper() + out[1:] if out else out
+    first = out.strip(".,:;—–-")
+    return out[:1].upper() + out[1:] if out and first == first.lower() else out
 
 
 def write_copy(article_md: str, llm=None) -> dict:
@@ -404,10 +424,11 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
                                    ("anchor", "light", "scrim", "contrast", "target", "clutter",
                                     "region_rgb", "binding_rgb", "title_lines")},
                        "generated_at": side["generated_at"]}
-    head = sentence_case(copy["title"])
+    head = sentence_case(copy["title"], article_md if isinstance(article_md, str) else "")
     raw_alt = side.get("alt_text", "")
-    if raw_alt.startswith(f"{head}. "):
-        raw_alt = raw_alt[len(head) + 2:].strip()
+    prev_head, sep, rest = raw_alt.partition(". ")
+    if rest and prev_head.strip().lower() == head.strip().lower():
+        raw_alt = rest.strip()          # the alt already carries a head (possibly cased differently)
     side["alt_text"] = f"{head}. {raw_alt}"[:125]
     side["caption"] = (f"{head}: {copy['hook']}." if copy.get("hook") else head + ".")[:200]
     side["title"] = head[:100]

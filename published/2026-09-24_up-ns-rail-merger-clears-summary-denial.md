@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Intermodal freight trains and shipping containers receding into the distance at a massive rail yard."
-image_caption: "The proposed merger would create the first modern transcontinental railroad, spanning coast to coast."
+image_alt: "Up-Ns Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya"
+image_caption: "Up-Ns Rail Merger Advances: Shippers must map route exposure before Nov 18."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

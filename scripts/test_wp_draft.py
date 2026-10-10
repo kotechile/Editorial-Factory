@@ -749,7 +749,8 @@ with tempfile.TemporaryDirectory() as tmp:
         second = wd.push_one({**ILLUSTRATED_ROW,
                               "metadata": {**ILLUSTRATED_ROW["metadata"],
                                            "wordpress": {"media_id": withmedia["media_id"]}}},
-                             db2, wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p))
+                             db2, wp_factory=lambda b, u, p: wd.WordPress(media_base, u, p),
+                             live_ok=True)
         check("a second push reuses the attachment instead of adding a copy",
               second["media_id"] == withmedia["media_id"] and len(StubWP.media) == 1,
               str(list(StubWP.media)))
@@ -806,7 +807,7 @@ try:
     db = FakeDB()
     wp = wd.WordPress(base, "editor", "secret")
     first = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp)
-    check("first run creates a DRAFT (never publish)", StubWP.posts["101"]["status"] == "draft",
+    check("first run creates a PUBLISHED post", StubWP.posts["101"]["status"] == "publish",
           f"status={StubWP.posts['101'].get('status')}")
     check("title mapped from metadata.headline",
           StubWP.posts["101"]["title"] == ROW["metadata"]["headline"])
@@ -845,16 +846,9 @@ try:
           same["content"] == row_after["content"] and not db2.bodies
           and any("no change" in n for n in notes_same), str(notes_same)[:200])
 
-    second = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp)
-    check("second run updates the same post (no duplicate)",
-          second["status"] == "updated" and len(StubWP.posts) == 1, f"posts={list(StubWP.posts)}")
-    check("original draft status preserved on update",
-          StubWP.posts["101"]["status"] == "draft")
-
-    print("\na live post is refreshed, never demoted")
-    StubWP.posts["101"]["status"] = "publish"          # a human published it in the CMS
-    StubWP.requests.clear()
+    print("\na published post is skipped on routine push, never rewritten without --refresh-live")
     bodies_before = len(db.bodies)
+    StubWP.requests.clear()
     skipped_result = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp)
     check("a published post is left alone unless asked (a refresh re-derives its body and can "
           "overwrite what an editor tuned in the CMS)",
@@ -888,8 +882,8 @@ try:
     second = wd.push_one(ROW, db, wp_factory=lambda b, u, p: wp)
     check("second run updates the same post (no duplicate)",
           second["status"] == "updated" and len(StubWP.posts) == 1, f"posts={list(StubWP.posts)}")
-    check("original draft status preserved on update",
-          StubWP.posts["101"]["status"] == "draft")
+    check("draft post updated to publish",
+          StubWP.posts["101"]["status"] == "publish")
 
     StubWP.require_auth = True
     import base64 as _b64
@@ -904,15 +898,15 @@ try:
            lambda: wp.category_name(999), "does not exist on this site")
     src = pathlib.Path(wd.__file__).read_text()
     declared = set(re.findall(r'add_argument\("(--[a-z-]+)"', src))
-    check("no --status/--publish flag exists (publishing stays a human step)",
-          not {"--status", "--publish"} & declared and '"status": "draft"' in src,
+    check("no --status/--publish flag exists (publishing is default)",
+          not {"--status", "--publish"} & declared and '"status": "publish"' in src,
           f"declared options: {sorted(declared)}")
-    check("--refresh re-applies the mapping to drafts that already exist",
+    check("--refresh re-applies the mapping to posts that already exist",
           "--refresh" in declared and "un_pushed_only=not args.refresh" in src)
     check("...and defaults to every row rather than the --limit 1 batch",
           "None if (args.refresh or args.reconcile_media) else 1" in src)
     payload, _ = wd.build_payload(ROW, SITE)
-    check("payload status is hard-coded to draft", payload["status"] == "draft")
+    check("payload status is hard-coded to publish", payload["status"] == "publish")
 finally:
     server.shutdown()
 
@@ -927,7 +921,7 @@ pub_src = (pathlib.Path(wd.__file__).parent / "publish.py").read_text()
 check("publish.py calls the shared entry point", "push_wp_draft(slug_val)" in pub_src)
 check("publish.py skips it on --dry-run", "if not args.dry_run:\n        push_wp_draft(slug_val)" in pub_src)
 check("publish.py retries via the sweep on failure", "wp_draft.py --all" in pub_src)
-check("publish.py explains the draft is human-published", "stays your call in the CMS" in pub_src)
+check("publish.py explains the post is published live", "published live on WordPress" in pub_src)
 
 spec = importlib.util.spec_from_file_location("publish_mod", pathlib.Path(wd.__file__).parent / "publish.py")
 publish_mod = importlib.util.module_from_spec(spec)
@@ -949,11 +943,13 @@ check("...and returns False so the caller can log it", ok is False, repr(ok))
 
 print("  (the hook pushes through the same path the CLI uses)")
 server2, base2 = start_stub()
+StubWP.posts.clear()
+StubWP.requests.clear()
 try:
     stub_db = FakeDB()
     result = wd.push_by_slug(ROW["metadata"]["slug"], db=stub_db,
                              wp_factory=lambda b, u, p: wd.WordPress(base2, "editor", "secret"))
-    check("push_by_slug creates the draft", StubWP.posts and list(StubWP.posts.values())[-1]["status"] == "draft")
+    check("push_by_slug creates the published post", StubWP.posts and list(StubWP.posts.values())[-1]["status"] == "publish")
     check("push_by_slug returns site + post id + edit url",
           result["site"] == "giniloh.com" and result["post_id"] and "action=edit" in result["edit_url"])
     check("push_by_slug writes the row back once", len(stub_db.recorded) == 1)
@@ -973,7 +969,7 @@ base_payload, _ = wd.build_payload(ROW, SITE)
 chart_payload, chart_notes = wd.build_payload(CHART_ROW, SITE)
 
 
-def stored_post(payload: dict, content: str | None = None, status: str = "draft",
+def stored_post(payload: dict, content: str | None = None, status: str = "publish",
                 title: str | None = None, excerpt: str | None = None) -> dict:
     """A WordPress-shaped read-back of `payload`."""
     return {
@@ -1011,8 +1007,8 @@ check("an inline SVG stripped on save is reported",
 check("a chart stored as escaped text is reported, not accepted as markup",
       any("escaped text" in p for p in wd.delivery_problems(
           chart_payload, stored_post(chart_payload, content=chart_payload["content"].replace("<svg", "&lt;svg")))))
-check("a post that came back published is reported (the human gate must hold)",
-      any("status" in p for p in wd.delivery_problems(base_payload, stored_post(base_payload, status="publish"))))
+check("a post that came back as draft is reported (expected publish)",
+      any("status" in p for p in wd.delivery_problems(base_payload, stored_post(base_payload, status="draft"))))
 
 print("\ndelivery verification — internal links")
 link_payload, _ = wd.build_payload({**ROW, "content": LATE_SECTION}, SITE)
@@ -1043,6 +1039,7 @@ try:
     db3 = FakeDB()
     wp3 = wd.WordPress(base3, "editor", "secret")
     def _resend(row=CHART_ROW, **kw):
+        kw.setdefault("live_ok", True)
         return wd.push_one(row, db3, wp_factory=lambda b, u, p: wp3, **kw)
 
     first = _resend()
@@ -1103,7 +1100,7 @@ else:
               site["cms_base_url"] == "https://cms.giniloh.com", site["cms_base_url"])
         check("real row: content is HTML with no pipeline markers",
               payload["content"].startswith("<p>") and "<!--" not in payload["content"])
-        check("real row: status draft", payload["status"] == "draft")
+        check("real row: status publish", payload["status"] == "publish")
         print(f"  payload: {len(payload['content'])} chars HTML, excerpt {len(payload['excerpt'])} chars")
 
 print(f"\n{len(PASS)} passed, {len(FAIL)} failed")

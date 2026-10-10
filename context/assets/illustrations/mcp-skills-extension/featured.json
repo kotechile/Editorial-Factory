@@ -1,7 +1,24 @@
 {
   "slug": "mcp-skills-extension",
-  "revision": 1,
-  "history": [],
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An isometric diagram showing distinct horizontal layers connected by vertical pipelines.",
+      "caption": "The MCP skills extension standardizes agent workflows by splitting tools from processes.",
+      "title": "MCP Skills Extension Architecture",
+      "bytes": 1392700,
+      "sha256": "sha256:aa04b4329adddbd94ab984aa88777788"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Standardizing MCP Skills. An isometric diagram showing distinct horizontal layers connected by vertical pipelines.",
+      "caption": "Standardizing MCP Skills: A new protocol for agents to retrieve reusable workflows.",
+      "title": "Standardizing MCP Skills",
+      "bytes": 1002913,
+      "sha256": "sha256:ff88a65463f4a9e0ccb9aa826b00f37628ed8cbfe2dcb6c4583a910793c4e2d0"
+    }
+  ],
   "style": "technical_isometric",
   "style_label": "Technical isometric cutaway",
   "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
@@ -15,9 +32,9 @@
   "rationale": "The article discusses the standardisation of agent workflows and the splitting of the agent software stack into tools and processes (skills). A technical isometric cutaway perfectly illustrates the structural reorganisation of this software architecture into distinct layers and components.",
   "cue": "cleanly splits the software stack",
   "subject": "a multi-layered software stack separating tools from process pipelines",
-  "alt_text": "An isometric diagram showing distinct horizontal layers connected by vertical pipelines.",
-  "caption": "The MCP skills extension standardizes agent workflows by splitting tools from processes.",
-  "title": "MCP Skills Extension Architecture",
+  "alt_text": "Standardizing MCP Skills. An isometric diagram showing distinct horizontal layers connected by vertical pipelines.",
+  "caption": "Standardizing MCP Skills: A new protocol for agents to retrieve reusable workflows.",
+  "title": "Standardizing MCP Skills",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +44,8 @@
   "local_path": "context/assets/illustrations/mcp-skills-extension/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1392700,
-  "sha256": "sha256:aa04b4329adddbd94ab984aa88777788",
+  "bytes": 1002913,
+  "sha256": "sha256:ff88a65463f4a9e0ccb9aa826b00f37628ed8cbfe2dcb6c4583a910793c4e2d0",
   "source_hash": "sha256:91577c57e1dca7fb93371f9433e06c77",
   "source_chars": 4130,
   "task_id": "60d9ee60872263ef2fcc07bbc51802c0",
@@ -45,5 +62,31 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-01T13:59:00+00:00"
+  "generated_at": "2026-10-01T13:59:00+00:00",
+  "overlay": {
+    "kicker": "AI AGENTS // MCP SKILLS EXTENSION",
+    "title": "STANDARDIZING MCP SKILLS",
+    "hook": "A new protocol for agents to retrieve reusable workflows",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.23,
+    "target": 5.5,
+    "clutter": 0.288,
+    "region_rgb": [
+      219,
+      222,
+      220
+    ],
+    "binding_rgb": [
+      168,
+      181,
+      189
+    ],
+    "title_lines": [
+      "STANDARDIZING",
+      "MCP SKILLS"
+    ],
+    "generated_at": "2026-10-01T13:59:00+00:00"
+  }
 }

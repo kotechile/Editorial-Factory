@@ -1,6 +1,6 @@
 {
   "slug": "maskills-multi-agent-skills-optimization",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,14 @@
       "sha256": "sha256:0a282273e3dcd70d612cec55757d62c3",
       "generated_at": "2026-10-01T22:08:14+00:00",
       "source_hash": "sha256:5d3705b94bc2c0ec8fb0d1cf17716ee5"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Brushed titanium server blade locking into a precision inspection gate bay against a charcoal background.",
+      "caption": "Strict mechanical validation gates prevent a single bad update from breaking an agent's ability to act.",
+      "title": "Agentic AI Skill Validation Gate",
+      "bytes": 1433768,
+      "sha256": "sha256:aac97056f3dfb8f6ec97fe65d79db55d"
     }
   ],
   "style": "component_assembly",
@@ -36,9 +44,9 @@
   "rationale": "The story centers on a specific architectural rule\u2014the validation gate. A component assembly of a modular inspection gate perfectly captures this structural shift without relying on literal code or abstract shapes.",
   "cue": "gate edits with rollbacks",
   "subject": "precision inspection gate bay receiving a specialized server module",
-  "alt_text": "Brushed titanium server blade locking into a precision inspection gate bay against a charcoal background.",
-  "caption": "Strict mechanical validation gates prevent a single bad update from breaking an agent's ability to act.",
-  "title": "Agentic AI Skill Validation Gate",
+  "alt_text": "Optimize Skills Not Memory. Brushed titanium server blade locking into a precision inspection gate bay against a charcoal bac",
+  "caption": "Optimize Skills Not Memory: Why agents need optimized skills instead of more memory.",
+  "title": "Optimize Skills Not Memory",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -48,8 +56,8 @@
   "local_path": "context/assets/illustrations/maskills-multi-agent-skills-optimization/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1433768,
-  "sha256": "sha256:aac97056f3dfb8f6ec97fe65d79db55d",
+  "bytes": 933115,
+  "sha256": "sha256:be2f2d1e0264d65167f6c4c46edf42c69975a09804599b3702cf6cd56eda75ce",
   "source_hash": "sha256:5d3705b94bc2c0ec8fb0d1cf17716ee5",
   "source_chars": 4672,
   "task_id": "4b1c30514321325dadbfd2827d7ef036",
@@ -66,5 +74,31 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T22:19:30+00:00"
+  "generated_at": "2026-10-08T22:19:30+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // SKILL OPTIMIZATION",
+    "title": "OPTIMIZE SKILLS NOT MEMORY",
+    "hook": "Why agents need optimized skills instead of more memory",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 45,
+    "contrast": 4.78,
+    "target": 4.5,
+    "clutter": 0.038,
+    "region_rgb": [
+      142,
+      139,
+      132
+    ],
+    "binding_rgb": [
+      138,
+      135,
+      128
+    ],
+    "title_lines": [
+      "OPTIMIZE SKILLS",
+      "NOT MEMORY"
+    ],
+    "generated_at": "2026-10-08T22:19:30+00:00"
+  }
 }
