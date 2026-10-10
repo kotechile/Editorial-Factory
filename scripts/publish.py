@@ -226,10 +226,16 @@ def apply_internal_links(content: str, enabled: bool = True) -> tuple[str, list[
     """
     if not enabled:
         return content, ["internal links: skipped (dry-run or --no-links)"]
-    header = dict(re.findall(r"^(vertical|title):[ \t]*\"?([^\"\n]+?)\"?[ \t]*$", content, re.M))
+    header = dict(re.findall(r"^(vertical|title|slug):[ \t]*\"?([^\"\n]+?)\"?[ \t]*$", content, re.M))
     try:
         import internal_links as il
-        enriched, notes, _links = il.enrich(content, vertical=header.get("vertical", ""))
+        # The artifact's own slug is excluded, exactly as `ensure_for_row` excludes the row's: once an
+        # article is live, it is a candidate in `context/internal_links.json` itself, so a re-push
+        # (--refresh, sync_articles, a publish-gate rewrite) that omits the exclusion links the post
+        # to itself — observed 2026-10-10 on the first live re-enrichment of an evergreen artifact.
+        slug = header.get("slug", "").strip()
+        enriched, notes, _links = il.enrich(content, vertical=header.get("vertical", ""),
+                                            exclude_slugs=(slug,) if slug else ())
         return enriched, notes
     except Exception as exc:                            # noqa: BLE001 - surfaced, never swallowed
         return content, [f"internal links FAILED: {exc} — publishing without them; re-run "

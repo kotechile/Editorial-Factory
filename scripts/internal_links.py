@@ -419,6 +419,17 @@ def _report(path: pathlib.Path) -> tuple[bool, list[str]]:
     return complete, notes
 
 
+def _artifact_slug(path: pathlib.Path) -> str:
+    """The slug of the artifact a CLI path names (`2026-10-10_my-slug.md` -> `my-slug`).
+
+    The CLI is also how an artifact that is ALREADY live gets re-enriched, and by then the article
+    is itself a candidate in `context/internal_links.json` — so the exclusion `ensure_for_row` passes
+    (the row's own slug) has to be passed here too, or the re-run links the post to itself.
+    """
+    stem = path.name[:-3] if path.name.lower().endswith(".md") else path.name
+    return stem[11:] if re.match(r"\d{4}-\d{2}-\d{2}_", stem) else stem
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=(__doc__ or "").splitlines()[0])
     parser.add_argument("files", nargs="*", help="article markdown files")
@@ -435,7 +446,8 @@ def main() -> int:
         text = path.read_text(encoding="utf-8")
         print(f"  {path.name}")
         if args.apply:
-            enriched, notes, links = enrich(text, vertical=_vertical_of(text))
+            enriched, notes, links = enrich(text, vertical=_vertical_of(text),
+                                            exclude_slugs=(_artifact_slug(path),))
             if enriched != text:
                 path.write_text(enriched, encoding="utf-8")
             for note in notes:

@@ -1,6 +1,6 @@
 {
   "slug": "self-hosting-break-even-one-hour-a-year",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,22 @@
       "title": "self-hosting-labor-break-even",
       "bytes": 583600,
       "sha256": "sha256:586ece5504085af4b55d4800e9c3bcf4"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The Cost Of Self-Hosting. Network storage drive caddy and precision screwdriver resting on a metal surface.",
+      "caption": "The Cost Of Self-Hosting: The hidden labor costs of running your own services.",
+      "title": "The Cost Of Self-Hosting",
+      "bytes": 339274,
+      "sha256": "sha256:463f27493288ced235681a5474d68a51af70614026adcc0f6940bbc7484d040f"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The Cost Of Self-Hosting. Network storage drive caddy and precision screwdriver resting on a metal surface.",
+      "caption": "The Cost Of Self-Hosting: The hidden labor costs of running your own services.",
+      "title": "The Cost Of Self-Hosting",
+      "bytes": 339274,
+      "sha256": "sha256:463f27493288ced235681a5474d68a51af70614026adcc0f6940bbc7484d040f"
     }
   ],
   "style": "editorial_macro",

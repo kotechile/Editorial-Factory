@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-10T14:16:14+00:00
+# Internal-link candidates — 2026-10-10T17:43:21+00:00
 
 Source of sites: public.vertical_sites. Liveness is decided by each frontend's sitemap.xml, not by an HTTP status.
 
@@ -8,7 +8,6 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [A Late Container’s Bill Carries Two 30-Day Clocks](https://giniloh.com/demurrage-invoice-30-day-clocks/) — Supply Chain & Operations
 - [Agent Memory Poisoning: Guard the Write, Not the Prompt](https://giniloh.com/agent-memory-poisoning-write-path/) — Autonomous & Agentic Workflows:
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
-- [Almost Half of 3D Prints Fail: The Real Cost of the Hobby](https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/) — Money & Wealth
 - [Amazon Builds the Robots; Walmart Builds for What They Can’t Lift](https://giniloh.com/automation-payback-splits-by-sku-geometry/) — Supply Chain & Operations
 - [An Agent’s Logs Aren’t Evidence: What to Capture, and How Long to Keep It](https://giniloh.com/agent-audit-trail-not-evidence/) — Mental Models & Strategy
 - [Azure’s Bad 40 Hours: The Control Plane Is the Single Point of Failure](https://giniloh.com/azure-control-plane-single-point-of-failure/) — Mental Models & Strategy
@@ -29,7 +28,6 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Fine-Tune or Rent: The Denominator Decides Your Break-Even](https://giniloh.com/fine-tune-vs-rent-by-token/) — Major Purchases & Assets
 - [Forecast Accuracy: A 32% Boost Will Not Stop El Niño](https://giniloh.com/forecast-accuracy-is-not-shock-protection/) — Supply Chain & Operations
 - [Higher Rates Meet Historically Lean Inventories](https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/) — Supply Chain & Operations
-- [Home Assistant Renames Cloud to Fight Hardware Rent](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — Money & Wealth
 - [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — Money & Wealth
 - [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing Rate](https://giniloh.com/inventory-carrying-cost-rate/) — Supply Chain & Operations
 - [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — Major Purchases & Assets
@@ -41,12 +39,13 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Moss Landing Burns Again: Homeowners Become the Grid](https://giniloh.com/moss-landing-burns-again-homeowners-become-the-grid/) — Money & Wealth
 - [Multi Agent Orchestration: Building the One-Person Enterprise](https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO
 - [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — Major Purchases & Assets
-- [Nearshoring Doesn’t Move the Trade Case](https://giniloh.com/nearshoring-doesnt-move-the-trade-case/) — Supply Chain & Operations
+- [Nearshoring: Your 32.58% Trade Risk Remains](https://giniloh.com/nearshoring-doesnt-move-the-trade-case/) — Supply Chain & Operations
 - [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — Mental Models & Strategy
 - [Nvidia says its GPUs aren’t sold out. Its CFO’s $279 billion memory bet says otherwise.](https://giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO
 - [One Green Run Is Not Reliability: Gating Agents on Pass^k](https://giniloh.com/agent-reliability-pass-k-not-one-green-run/) — AI Stack & Tool TCO
 - [OpenAI just made the agent loop a commodity](https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/) — AI Stack & Tool TCO
 - [OpenAI’s custom chip beats Nvidia on power](https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/) — AI Stack & Tool TCO
+- [Options Trap: Your 26% AMT Bill](https://giniloh.com/post-termination-option-clock-tax/) — Career & AI Resilience:
 - [ParcelProof: Stop Bleeding 2–8% on Carrier Invoices](https://giniloh.com/parcelproof-stop-bleeding-28-on-carrier-invoices/) — Business Automation & Operations
 - [Planner-as-Router: Fold the Model Choice Into the Plan](https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/) — Autonomous & Agentic Workflows:
 - [Planning AI Buys Capability, Not Autonomy](https://giniloh.com/planning-ai-buys-capability-not-autonomy/) — Supply Chain & Operations
@@ -54,16 +53,16 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Reshoring Didn’t Kill Tariff Risk — It Moved Upstream Into Packaging](https://giniloh.com/reshoring-moved-the-tariff-upstream/) — Supply Chain & Operations
 - [Safety Stock Sizing: Why Your Buffer Uses the Wrong Number](https://giniloh.com/safety-stock-forecast-error-not-demand-noise/) — Supply Chain & Operations
 - [Self-Hosted AI: When to Buy vs Rent GPUs](https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/) — Major Purchases & Assets
+- [Self-Hosting Break-Even: 1.26 Hours a Year](https://giniloh.com/self-hosting-break-even-one-hour-a-year/) — Money & Wealth
 - [Simulate a Frictionless Liquidity Sweep in Giniloh](https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/) — Money & Wealth
 - [Smart Ways to Invest an Extra $500 a Day](https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/) — Money & Wealth
-- [SpaceX’s Staggered Lockup: Six Windows, Not One](https://giniloh.com/staggered-lockup-six-selling-decisions/) — Career & AI Resilience:
+- [SpaceX Lockup Trap: 6 Windows, Not 1](https://giniloh.com/staggered-lockup-six-selling-decisions/) — Career & AI Resilience:
 - [Stop Piling Memory Onto AI Agents: Optimize Skills](https://giniloh.com/maskills-multi-agent-skills-optimization/) — Autonomous & Agentic Workflows:
 - [Stripe Accounting Software: Solving the Payout Black Box with LedgerLink](https://giniloh.com/stripe-accounting-software-solving-the-payout-black-box-with/) — Business Automation & Operations
 - [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://giniloh.com/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO
 - [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO
 - [The $5.8 Billion Freight Bet Meets a Market That Won’t Commit](https://giniloh.com/freight-scale-bet-vs-contract-duration/) — Supply Chain & Operations
 - [The 40 kW Line: Why the AI Rack Is a Building Project](https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/) — AI Stack & Tool TCO
-- [The 90-Day Clock That Turns Options Into a Tax Bill](https://giniloh.com/post-termination-option-clock-tax/) — Career & AI Resilience:
 - [The Agent Safety Gate Moves to Verified State](https://giniloh.com/agent-safety-gate-moves-to-verified-state/) — Autonomous & Agentic Workflows:
 - [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — Money & Wealth
 - [The Cloud Bill Break-Even: When Renting Servers Stops Paying](https://giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/) — Mental Models & Strategy
@@ -82,6 +81,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [Where the Prompt Breaks Decides the AI Bill](https://giniloh.com/cache-boundary-decides-input-bill/) — AI Stack & Tool TCO
 - [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — Career & AI Resilience:
 - [Why Cloud Uptime SLAs Are Not Insurance](https://giniloh.com/sla-credit-is-not-insurance/) — AI Stack & Tool TCO
+- [Why Home Assistant Renamed Its Cloud](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — Money & Wealth
 - [Will Your Control Tower Auto-Resolve the Theft It Can’t See?](https://giniloh.com/control-tower-silent-exception/) — Supply Chain & Operations
 - [You Think You’re Governing Your AI Agents. The Data Says You’re Not.](https://giniloh.com/you-think-youre-governing-your-agents/) — Mental Models & Strategy
 - [Your Fuel Surcharge Hides Three Negotiated Numbers](https://giniloh.com/fuel-surcharge-peg-mpg-audit/) — Supply Chain & Operations
@@ -128,7 +128,7 @@ Source of sites: public.vertical_sites. Liveness is decided by each frontend's s
 - [The Remodel That Pays You Back Isn’t the One You Want](https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/) — Energy & Efficiency
 - [The local-first smart home cost squeeze: Cloud and hardware prices rise](https://wellroost.com/local-first-smart-home-cost-squeeze/) — Smart Home & Security
 - [Water Leak Monitors: The Flow Rate That Decides If It Pays](https://wellroost.com/water-leak-monitor-rate-threshold/) — Smart Home & Security
-- [Your EV Is Now a Home Battery — Behind a Paywall](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
+- [Your 11.5kW EV Backup Costs $8,200](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
 - [Energy Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — —
 - [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — —

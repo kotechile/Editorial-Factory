@@ -150,6 +150,20 @@ prints no social copy and reads no social credential.
   permanently deleted, or has a published post edited (debounced 10 min) — before that only a
   transition INTO publish rebuilt, so a removal was silent. Trigger one by hand whenever a CMS change
   must reach readers immediately; `GET /api/v1/deploy` is gone, it is a POST (see `docs/VPS_WIRING.md`).
+- **An internal link is "live" only as of the index build, and the artifact's own slug must be excluded.**
+  `context/internal_links.json` decides liveness from each frontend's sitemap at build time, so a page
+  retired from the frontend since then leaves a `## Related reading` link that 404s in the reader.
+  Before trusting a generated block, check its URLs (an HTTP 200, not the index's `live` flag):
+  `python3 scripts/build_internal_link_index.py` rebuilds the corpus and
+  `python3 scripts/internal_links.py <artifact> --apply` regenerates the block from it. And once an
+  article is live it is *itself* a candidate, so every re-enrichment must exclude its own slug —
+  `publish.apply_internal_links` and the `internal_links.py` CLI both pass one now (observed
+  2026-10-10 on the first re-push of a live evergreen artifact: the block came back with a self-link
+  and a retired page, and both paths were fixed and pinned by `test_internal_links.py`). To correct the
+  body of a post that is already live: `python3 scripts/sync_articles.py <published file>` then
+  `python3 scripts/wp_draft.py --slug <slug> --refresh --refresh-live` — the status is never sent, so
+  the post stays published, and no image is re-commissioned (the block is outside the illustration
+  digest). The edit itself triggers the mu-plugin's debounced frontend rebuild.
 - `site/index.html` is one inline script: a duplicate identifier at the top level is a parse-time
   `SyntaxError` that silently disables *every* handler while the page still returns 200. Grep for an
   identifier before adding a helper, and verify dashboard changes with

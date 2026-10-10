@@ -377,6 +377,32 @@ if _real_index_json.exists():
 else:
     print("\nthe shipped index (not built yet — skipping its inspection)")
 
+# The CLI path must exclude the artifact it is enriching, exactly as `ensure_for_row` does: a
+# re-enrichment of a page that is ALREADY live finds the article itself in the index, so a missing
+# exclusion links the post to itself (observed 2026-10-10 on a re-published evergreen artifact).
+print("\ncli self-exclusion")
+check("a dated artifact's slug is derived from its filename",
+      il._artifact_slug(pathlib.Path("published/2026-10-10_my-slug.md")) == "my-slug",
+      il._artifact_slug(pathlib.Path("published/2026-10-10_my-slug.md")))
+check("an undated draft keeps its whole stem",
+      il._artifact_slug(pathlib.Path("context/drafts/my-slug_final.md")) == "my-slug_final",
+      il._artifact_slug(pathlib.Path("context/drafts/my-slug_final.md")))
+_captured = {}
+_real_resolve = il.resolve_links
+il.resolve_links = lambda topic, vertical, max_links=3, exclude_slugs=(), **kw: (
+    _captured.update(exclude_slugs=tuple(exclude_slugs)) or [])
+try:
+    with tempfile.TemporaryDirectory() as _dir:
+        _p = pathlib.Path(_dir) / "2026-10-10_my-slug.md"
+        _p.write_text("---\ntitle: My Slug\nvertical: agentic_ai\n---\n\n<!-- lead -->\nLead text.\n",
+                      encoding="utf-8")
+        sys.argv = ["internal_links.py", str(_p), "--apply"]
+        il.main()
+    check("the CLI passes the artifact's own slug to the scorer",
+          _captured.get("exclude_slugs") == ("my-slug",), str(_captured))
+finally:
+    il.resolve_links = _real_resolve
+
 print(f"\n{len(PASS)} passed, {len(FAIL)} failed")
 for name in FAIL:
     print(f"  FAILED: {name}")

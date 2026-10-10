@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T14:16:14+00:00",
+  "generated_at": "2026-10-10T17:43:21+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -37,9 +37,26 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 807,
+      "slug": "self-hosting-break-even-one-hour-a-year",
+      "title": "Self-Hosting Break-Even: 1.26 Hours a Year",
+      "url": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/",
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "An hour of network admin work was worth $47.66 at the 2025 median wage. A year of managed email costs $60.",
+      "modified": "2026-10-10T17:38:56",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 795,
       "slug": "nearshoring-doesnt-move-the-trade-case",
-      "title": "Nearshoring Doesn\u2019t Move the Trade Case",
+      "title": "Nearshoring: Your 32.58% Trade Risk Remains",
       "url": "https://giniloh.com/nearshoring-doesnt-move-the-trade-case/",
       "categories": [
         "Supply Chain & Operations"
@@ -48,7 +65,7 @@
         10
       ],
       "excerpt": "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S.",
-      "modified": "2026-10-10T06:39:16",
+      "modified": "2026-10-10T16:52:03",
       "live": true
     },
     {
@@ -56,7 +73,7 @@
       "kind": "article",
       "id": 793,
       "slug": "home-assistant-cloud-rename-hardware-rent",
-      "title": "Home Assistant Renames Cloud to Fight Hardware Rent",
+      "title": "Why Home Assistant Renamed Its Cloud",
       "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/",
       "categories": [
         "Money & Wealth"
@@ -65,7 +82,7 @@
         4
       ],
       "excerpt": "The maker of Home Assistant just renamed its paid remote service. Home Assistant Cloud is now Home Assistant Link.",
-      "modified": "2026-10-10T06:07:57",
+      "modified": "2026-10-10T16:52:02",
       "live": true
     },
     {
@@ -141,7 +158,7 @@
       "kind": "article",
       "id": 777,
       "slug": "staggered-lockup-six-selling-decisions",
-      "title": "SpaceX\u2019s Staggered Lockup: Six Windows, Not One",
+      "title": "SpaceX Lockup Trap: 6 Windows, Not 1",
       "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/",
       "categories": [
         "Career & AI Resilience:"
@@ -150,7 +167,7 @@
         8
       ],
       "excerpt": "SpaceX workers get their next chance to sell today as 328.4 million shares \u2014 about 7% of the locked stock \u2014 open for trading.",
-      "modified": "2026-10-10T01:43:38",
+      "modified": "2026-10-10T16:51:59",
       "live": true
     },
     {
@@ -209,7 +226,7 @@
       "kind": "article",
       "id": 782,
       "slug": "post-termination-option-clock-tax",
-      "title": "The 90-Day Clock That Turns Options Into a Tax Bill",
+      "title": "Options Trap: Your 26% AMT Bill",
       "url": "https://giniloh.com/post-termination-option-clock-tax/",
       "categories": [
         "Career & AI Resilience:"
@@ -218,7 +235,7 @@
         8
       ],
       "excerpt": "Three months after a job ends, an incentive stock option loses its tax status \u2014 the alternative minimum tax on the exercise spread can outweigh the strike.",
-      "modified": "2026-10-09T22:02:51",
+      "modified": "2026-10-10T16:51:58",
       "live": true
     },
     {
@@ -700,23 +717,6 @@
     {
       "site": "giniloh.com",
       "kind": "article",
-      "id": 496,
-      "slug": "almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby",
-      "title": "Almost Half of 3D Prints Fail: The Real Cost of the Hobby",
-      "url": "https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/",
-      "categories": [
-        "Money & Wealth"
-      ],
-      "category_ids": [
-        4
-      ],
-      "excerpt": "A 2019 study of desktop 3D printers in university maker spaces found that 41.1% of prints fail.",
-      "modified": "2026-10-04T21:19:05",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
       "id": 501,
       "slug": "the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost",
       "title": "The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost",
@@ -1000,7 +1000,7 @@
         10
       ],
       "excerpt": "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger.",
-      "modified": "2026-10-08T22:21:24",
+      "modified": "2026-10-10T15:52:22",
       "live": true
     },
     {
@@ -1017,7 +1017,7 @@
         7
       ],
       "excerpt": "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%.",
-      "modified": "2026-10-08T22:20:17",
+      "modified": "2026-10-10T15:52:31",
       "live": true
     },
     {
@@ -1034,7 +1034,7 @@
         9
       ],
       "excerpt": "Drop one hard check from an Artificial Intelligence (AI) agent\u2019s learning loop, and its test score crashes from 17.2 to 6.6.",
-      "modified": "2026-10-08T22:19:34",
+      "modified": "2026-10-10T15:52:26",
       "live": true
     },
     {
@@ -1068,7 +1068,7 @@
         9
       ],
       "excerpt": "Skills \u2014 portable bundles of workflow instructions \u2014 became an official MCP extension on September 13, standardizing how agents discover, retrieve, and verify\u2026",
-      "modified": "2026-10-01T15:47:55",
+      "modified": "2026-10-10T15:52:33",
       "live": true
     },
     {
@@ -1774,7 +1774,7 @@
       "kind": "article",
       "id": 109,
       "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
-      "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
+      "title": "Your 11.5kW EV Backup Costs $8,200",
       "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
       "categories": [
         "Energy & Efficiency"
@@ -1783,7 +1783,7 @@
         4
       ],
       "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
-      "modified": "2026-10-09T20:06:02",
+      "modified": "2026-10-10T16:52:00",
       "live": true
     },
     {
@@ -1834,7 +1834,7 @@
         5
       ],
       "excerpt": "Both ways to run a smart home got more expensive in the same week.",
-      "modified": "2026-10-08T01:55:23",
+      "modified": "2026-10-10T16:17:30",
       "live": true
     },
     {

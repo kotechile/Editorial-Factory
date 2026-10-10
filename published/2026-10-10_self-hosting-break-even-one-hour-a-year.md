@@ -75,13 +75,13 @@ Cost is a poor reason to self-host, but it is a good reason to decide once. Two 
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Beyond the Emergency Fund" -> https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/ [same site (giniloh.com); same category; topical overlap: hours] Link "Beyond the Emergency Fund" in the section where the article touches hours. -->
-<!-- internal-link hint: "Almost Half of 3D Prints Fail" -> https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/ [same site (giniloh.com); same category] Link "Almost Half of 3D Prints Fail" in the section where the article touches this topic. -->
 <!-- internal-link hint: "Disney+ and Hulu Just Raised Prices 13%" -> https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/ [same site (giniloh.com); same category] Link "Disney+ and Hulu Just Raised Prices 13%" in the section where the article touches this topic. -->
+<!-- internal-link hint: "Build a Frictionless Wealth Waterfall (And Stop Stressing Over…" -> https://giniloh.com/the-giniloh-money-flow-simulator-explained/ [same site (giniloh.com); same category] Link "Build a Frictionless Wealth Waterfall (And Stop Stressing Over…" in the section where the article touches this topic. -->
 ## Related reading
 
 - [Beyond the Emergency Fund](https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/) — more on Money & Wealth
-- [Almost Half of 3D Prints Fail](https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/) — more on Money & Wealth
 - [Disney+ and Hulu Just Raised Prices 13%](https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/) — more on Money & Wealth
+- [Build a Frictionless Wealth Waterfall (And Stop Stressing Over…](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — more on Money & Wealth
 <!-- internal-links:end -->
 
 <!-- tldr -->
