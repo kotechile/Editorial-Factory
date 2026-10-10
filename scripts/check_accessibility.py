@@ -61,6 +61,11 @@ def body_of(path):
     t = pathlib.Path(path).read_text()
     t = re.sub(r"^---\n.*?\n---\n", "", t, flags=re.S)          # frontmatter
     t = re.sub(r"#{1,3}\s*Sources.*", "", t, flags=re.S)        # sources -> end
+    t = re.sub(r"#{1,3}\s*Related reading.*", "", t, flags=re.S)  # the internal-link block the
+    #   persistence pass injects AFTER Loop 3 rewrote and measured the body. It is link titles, not
+    #   the article's prose, and counting it dragged 21 of 70 published artifacts under the floor
+    #   (spanning ~5 points) while the per-run gate — which measures the body it actually rewrote —
+    #   had passed them. Measuring it here made the desk's own floor unreproducible.
     t = re.sub(r"<!--\s*linkedin\s*-->.*", "", t, flags=re.S)   # linkedin variant
     t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)               # HTML section markers
     t = re.sub(r"```.*?```", " ", t, flags=re.S)                # code blocks & mermaid diagrams
