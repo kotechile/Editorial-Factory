@@ -153,6 +153,18 @@ run). Prefer a stable EIA prose page for the same figure — `eia.gov/energyexpl
 carries the annual average price by customer class in plain text and retrieves every time — and treat any
 `fetched` body under ~400 characters as unreachable until you eyeball it.
 
+**Hosts probed live 2026-10-10, building a wage-and-price audit from retrievable rows.** Works, with the
+figure as plain text: `onetonline.org` (median wage by occupation, hourly **and** annual — the measured
+wage anchor that `bls.gov`'s 403 refuses), `eia.gov` energy-explained, `synology.com` product spec pages
+(power draw in watts), and the vendor list-price pages `fastmail.com/pricing`,
+`workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047`
+and `tailscale.com/pricing` — the reliable way to cite "what the managed alternative costs" without
+leaning on a secondary writeup. Fails: `raspberrypi.com` documentation (403), `reddit.com` wikis
+(403 Blocked), `nvd.nist.gov` and `cve.org` dashboards (client-rendered, 10–42 character bodies), and
+`analytics.home-assistant.io` (HTTP 200 but ~700 characters — its install-count stub is the whole page).
+A price page is a legitimate row for a price claim as long as its table cell reads `vendor claim`, and a
+per-unit figure written `$4.00 per month` verifies on the row's own `$ 4.00` token.
+
 **A `fetched` row can still fail as `figure_absent` — the page loaded and the number did not.**
 Several vendor rate-card hosts render their tables client-side, so the verifier gets HTTP 200 with a
 body that carries no numeric tokens at all. Observed 2026-10-08 building the supply_chain evergreen
