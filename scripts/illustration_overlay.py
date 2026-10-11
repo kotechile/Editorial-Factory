@@ -6,10 +6,13 @@ article (agent-memory-poisoning-write-path): a kicker, a title and a hook set in
 negative space over a soft corner vignette. It lived in an ad-hoc `python3 -c` PIL call, so the desk
 could not reproduce it — this module makes it a step.
 
-The recipe is theirs, with two corrections the sample could not reveal because it happened to be a
+The recipe is theirs, with three corrections the sample could not reveal because it happened to be a
 dark photograph:
-  * the type is placed in the emptiest corner, not always the upper-left — the commission asks for
-    negative space but the model does not always obey, and type laid over the subject is unreadable;
+  * the type is placed in the emptiest *space*, not always the upper-left — the commission asks for
+    negative space but the model does not always obey, and type laid over the subject is unreadable.
+    Emptiness means "no subject here": the old probe scored edge energy, and edge energy ranks a
+    smooth subject (a document on a desk, a slab of metal, a lit backdrop) as the emptiest region in
+    the frame while it punishes plain grain and texture. See `_subject_map`;
   * the ink and the scrim follow the luminance under the text, because a light image swallows light
     type whole (the first article this ran on came back near-invisible on a cream background).
 
@@ -55,7 +58,12 @@ FONT_REG = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
 SAFE_W, SAFE_H = 0.54, 0.50          # the scrim box, as a fraction of the frame
 MAX_WIDTH = 1920                     # delivery size; WordPress rescales anything above 2560
-SWITCH_MARGIN = 0.90                 # leave the top-left default only if a corner is 10% emptier
+SWITCH_MARGIN = 0.90                 # leave the top-left default only if a spot is 10% freer
+MIN_GAIN = 0.02                      # ...and only if it removes this much of the type's subject coverage
+SUBJECT_FLOOR = 0.22                 # type this far onto the artwork is on the subject, not near it
+SUBJECT_TIGHT = 0.35                 # no spot in the frame is free — the render needs re-commissioning
+GRID_X, GRID_Y = 7, 5                # candidate origins swept across the frame for the real footprint
+PANEL_WEIGHT = 0.25                  # the feathered scrim panel is scored at this weight vs the ink
 KICKER_MAX, TITLE_MAX, HOOK_MAX = 46, 34, 58
 KICKER_PT, TITLE_PT, HOOK_PT = 0.029, 0.086, 0.036    # of the frame height
 # (kicker, title, hook) rgb, for a dark frame and for a light one. The scrim strength is not a
@@ -183,13 +191,112 @@ def _fit(draw, text: str, path: str, px: int, max_w: int):
     return ImageFont.truetype(path, size=8)
 
 
-def _busiest(img, box) -> float:
-    """Edge energy in a region — a proxy for 'is the artwork already there'."""
+def _subject_map(img, n: int = 192):
+    """How much of each cell is *the picture* rather than the background — 0-1, low resolution.
+
+    Three cues, because no single one survives the corpus:
+
+    * **the dominant colour.** Most of these renders are an object on a plain ground, so the frame's
+      modal colour is the ground and distance from it is subject. Catches the case the old probe got
+      backwards: a bright document on a dark desk scored as the *emptiest* corner by edge energy.
+    * **the border plate.** A lit backdrop is a gradient, not a colour, so the camera side of a
+      studio frame is not separable from the mode. The median colour of each border, interpolated
+      across the frame, models that gradient.
+    * **coarse local contrast.** A subject that reaches the frame edge poisons the border it touches
+      and can match the mode; its own shading still differs from a heavy blur of its surroundings.
+
+    The cues are combined by maximum: any one of them saying "picture here" is enough to keep type
+    off that spot.
+    """
+    import numpy as np
     from PIL import ImageFilter
-    crop = img.crop(box).convert("L").resize((120, 60))
-    edges = crop.filter(ImageFilter.FIND_EDGES)
-    data = list(edges.getdata())
-    return sum(data) / max(len(data), 1) / 255.0
+    w, h = img.size
+    nh = max(8, int(round(n * h / w)))
+    small = img.convert("RGB").resize((n, nh), 1)
+    a = np.asarray(small, dtype=np.float32)
+    band = max(2, int(min(nh, n) * 0.05))
+
+    def spread(dist, floor):
+        """Distance → 0-1, against the frame's own noise floor: grain and gradient are not subject.
+
+        The floor is capped at a third of the map's own range: on a frame whose *whole* surface is
+        textured (a mosaic, a crowd, a gravel close-up) the border's texture is as large as the
+        subject's distance, and an uncapped floor would zero the map and blind the placement.
+        """
+        ring = np.ones_like(dist, dtype=bool)
+        ring[band:-band, band:-band] = False
+        hi = float(np.percentile(dist, 98))
+        noise = float(np.median(dist[ring])) if ring.any() else 0.0
+        noise = min(noise, 0.35 * max(hi, 1.0))
+        span = max(hi - noise, floor)
+        return np.clip((dist - max(noise * 2.0, floor * 0.5)) / span, 0.0, 1.0)
+
+    # The frame's modal colour: the centroid of the most populated coarse colour bin, weighted, so a
+    # ground with a gradient still lands in one bin while a subject several bins away does not.
+    q = np.round(a / 32.0).astype(np.int32)
+    keys = q[..., 0] * 10000 + q[..., 1] * 100 + q[..., 2]
+    vals, counts = np.unique(keys, return_counts=True)
+    mode_key = int(vals[int(np.argmax(counts))])
+    mode = a[keys == mode_key].mean(axis=0)
+    dominant = spread(np.linalg.norm(a - mode, axis=2), 24.0)
+
+    # The border plate: each side's median colour, interpolated — a background that follows the light.
+    def side(part):
+        return np.median(part.reshape(-1, 3), axis=0)
+    u = ((np.arange(n) + 0.5) / n)[:, None]
+    v = ((np.arange(nh) + 0.5) / nh)[:, None]
+    horz = (1.0 - u) * side(a[:, :band]) + u * side(a[:, -band:])
+    vert = (1.0 - v) * side(a[:band]) + v * side(a[-band:])
+    plate = 0.5 * horz[None, :, :] + 0.5 * vert[:, None, :]
+    border = spread(np.linalg.norm(a - plate, axis=2), 28.0)
+
+    blurred = np.asarray(small.filter(ImageFilter.GaussianBlur(max(2, n // 22))), dtype=np.float32)
+    coarse = spread(np.linalg.norm(a - blurred, axis=2), 18.0) * 0.6
+
+    return np.maximum(np.maximum(dominant, border), coarse)
+
+
+def _patches(smap, rects, size):
+    """The subject map under each pixel rect, as flat arrays (clipped to the frame)."""
+    import numpy as np
+    w, h = size
+    sh, sw = smap.shape
+    out = []
+    for x0, y0, x1, y1 in rects:
+        if x1 <= x0 or y1 <= y0:
+            continue
+        i0 = max(0, min(sw - 1, int(x0 / w * sw)))
+        i1 = max(i0 + 1, min(sw, int(np.ceil(x1 / w * sw))))
+        j0 = max(0, min(sh - 1, int(y0 / h * sh)))
+        j1 = max(j0 + 1, min(sh, int(np.ceil(y1 / h * sh))))
+        out.append(smap[j0:j1, i0:i1].ravel())
+    return out
+
+
+def _cost(smap, rects, size, weights=None):
+    """How much subject the type would sit on: 0 is clean air, 1 is entirely on the artwork.
+
+    The area-weighted mean is the honest headline ("a third of the block is on the subject"), but one
+    word crossed by the artwork is enough to lose the line, so the worst cell in the block carries a
+    fifth of the weight — a spot with a spike under one corner cannot win on an otherwise empty box.
+    """
+    import numpy as np
+    patches = _patches(smap, rects, size)
+    if not patches:
+        return 0.0, 0.0, 0.0
+    weights = weights or [1.0] * len(patches)
+    areas = np.array([max(len(p), 1) * val for p, val in zip(patches, weights)], dtype=np.float64)
+    means = np.array([float(p.mean()) for p in patches], dtype=np.float64)
+    pooled = float((means * areas).sum() / max(areas.sum(), 1e-9))
+    spike = float(np.percentile(np.concatenate(patches), 95))
+    return 0.8 * pooled + 0.2 * spike, pooled, spike
+
+
+def _label(x: int, y: int, bw: int, bh: int, size) -> str:
+    """The corner the block's centre sits in — the sidecar's `anchor` vocabulary, kept truthful."""
+    w, h = size
+    return ("top-" if (y + bh / 2) < h / 2 else "bottom-") + \
+           ("left" if (x + bw / 2) < w / 2 else "right")
 
 
 def _region_rgb(img, box) -> tuple:
@@ -265,33 +372,106 @@ def _choose_ink(img, box) -> tuple:
     return ink, tone, scrim, achieved, target, light_ink, binding, clutter
 
 
-def plan(img, anchor: str | None = None) -> dict:
-    """Where the type goes: the emptiest corner. Ink and scrim are settled after the type is laid
-    out, against the pixels the block actually covers — see `_choose_ink`.
+def plan(img, anchor: str | None = None, rects=None, box=None, pad: int = 0) -> dict:
+    """Where the type goes: the emptiest space its letters actually occupy, scored on the subject map.
 
-    `anchor` forces a corner. Only for the case this metric cannot see: sparse line art (a technical
-    isometric, a flat-lay on white) scores as an *empty* corner while the strokes the type lands on
-    still cut through the letters. The clutter probe cannot separate thin ink from flat background, so
-    a collision it cannot feel has to be steered by hand."""
+    Two shapes, because the caller sometimes has no layout to score:
+
+    * **with `rects`** (the real path, from `composite`): `rects` are the type's line boxes in pixels,
+      *relative to the block origin*, and `box` the block's own width/height with `pad` the gutter the
+      origin is held at. The frame is swept on a grid and scored on the pixels the letters cover, so
+      the answer is a position in the whitespace — which is not always a corner, and is not always
+      where the type used to sit. The top-left default is kept unless another spot is meaningfully
+      freer (`SWITCH_MARGIN`) — or unless the default is actually ON the subject (`SUBJECT_FLOOR`),
+      which is the case the old corner metric shipped again and again.
+    * **without `rects`** (a caller with no layout, the unit test): the four historical corners are
+      scored on the fixed safe box, so the answer is still a corner and the label vocabulary holds.
+
+    `anchor` forces a corner, for the collisions the metric cannot feel: sparse line art (a technical
+    isometric, a flat-lay on white) reads as empty space while the strokes the type lands on still cut
+    through the letters. When every spot carries art the block goes to the freest one and the returned
+    `subject` says so (`>= SUBJECT_TIGHT` means the render needs re-commissioning, not more shoving).
+    """
     w, h = img.size
-    bw, bh = int(w * SAFE_W), int(h * SAFE_H)
-    corners = {"top-left": (0, 0), "top-right": (w - bw, 0),
-               "bottom-left": (0, h - bh), "bottom-right": (w - bw, h - bh)}
+    smap = _subject_map(img)
     order = ["top-left", "top-right", "bottom-left", "bottom-right"]
-    busy = {name: _busiest(img, (x, y, x + bw, y + bh)) for name, (x, y) in corners.items()}
+    if rects is None:
+        bw, bh = int(w * SAFE_W), int(h * SAFE_H)
+        corners = {"top-left": (0, 0), "top-right": (w - bw, 0),
+                   "bottom-left": (0, h - bh), "bottom-right": (w - bw, h - bh)}
+        costs = {name: _cost(smap, [(x, y, x + bw, y + bh)], (w, h))[0]
+                 for name, (x, y) in corners.items()}
+        if anchor:
+            if anchor not in corners:
+                raise ValueError(f"anchor must be one of {order}, got {anchor!r}")
+            x, y = corners[anchor]
+            return {"anchor": anchor, "x": x, "y": y, "forced": True,
+                    "subject": round(costs[anchor], 3), "corners": _rounded(costs)}
+        emptiest = min(order, key=lambda name: costs[name])
+        best = "top-left" if costs["top-left"] <= costs[emptiest] / SWITCH_MARGIN else emptiest
+        x, y = corners[best]
+        return {"anchor": best, "x": x, "y": y, "subject": round(costs[best], 3),
+                "corners": _rounded(costs)}
+
+    bw, bh = box if box else (int(w * SAFE_W), int(h * SAFE_H))
+    # The block's own bounds: the feathered panel must sit inside the frame, so the origin slides over
+    # the frame's full width — a tighter box (the old corner gutter) left the freest strip on the right
+    # unusable, which on a right-hand subject is the only empty column there is.
+    column = max(1, bw - pad)
+    x_lo, x_hi = max(0, pad // 2), max(0, w - column - pad // 2)
+    y_lo = max(0, int(h * 0.012))
+    y_hi = max(y_lo, h - bh - int(h * 0.012))
+    default = (max(x_lo, min(pad, x_hi)), max(y_lo, min(int(h * 0.055), y_hi)))   # the design, as it was
+    spots = {default}
+    for i in range(GRID_X):
+        for j in range(GRID_Y):
+            spots.add((x_lo + round(i * (x_hi - x_lo) / (GRID_X - 1)),
+                       y_lo + round(j * (y_hi - y_lo) / (GRID_Y - 1))))
     if anchor:
-        if anchor not in corners:
+        if anchor not in order:
             raise ValueError(f"anchor must be one of {order}, got {anchor!r}")
-        x, y = corners[anchor]
-        return {"anchor": anchor, "x": x, "y": y, "forced": True,
-                "busy": {k: round(v, 4) for k, v in busy.items()}}
-    # The owner's design anchors top-left, so keep it unless another corner is MEANINGFULLY emptier.
-    # The margin is what makes this work: requiring a corner to be half as busy (the first cut) meant
-    # the anchor never moved and the automatic placement looked broken.
-    emptiest = min(order, key=lambda name: busy[name])
-    best = "top-left" if busy["top-left"] <= busy[emptiest] / SWITCH_MARGIN else emptiest
-    x, y = corners[best]
-    return {"anchor": best, "x": x, "y": y, "busy": {k: round(v, 4) for k, v in busy.items()}}
+        corner = {"top-left": (x_lo, y_lo), "top-right": (x_hi, y_lo),
+                  "bottom-left": (x_lo, y_hi), "bottom-right": (x_hi, y_hi)}[anchor]
+        spot = (corner[0] + pad if anchor.endswith("left") else corner[0], corner[1])
+        spot = (min(max(spot[0], x_lo), x_hi), min(max(spot[1], y_lo), y_hi))
+        cost, pooled, spike = _spot_cost(smap, rects, (w, h), spot, bw, bh, pad)
+        return {"anchor": anchor, "x": spot[0], "y": spot[1], "forced": True,
+                "subject": round(cost, 3), "ink_subject": round(pooled, 3), "spike": round(spike, 3)}
+
+    scored = {}
+    for spot in sorted(spots):
+        scored[spot] = _spot_cost(smap, rects, (w, h), spot, bw, bh, pad)
+    best = min(scored, key=lambda s: scored[s][0])
+    # The owner's design anchors inset in the top-left, so it keeps its place unless another spot is
+    # MEANINGFULLY freer — `SWITCH_MARGIN` on the ratio, which stops a coin-flip between two empty
+    # spots from drifting the design, plus `MIN_GAIN` on the absolute, which stops a clean frame
+    # (every cost within noise of zero) from drifting for a gain no eye can see. And it always moves
+    # when the default is ON the subject (`SUBJECT_FLOOR`) — the case the old metric kept shipping.
+    default_cost = scored[default][0]
+    freer = (scored[best][0] <= default_cost * SWITCH_MARGIN
+             and default_cost - scored[best][0] >= MIN_GAIN)
+    spot = best if (freer or default_cost >= SUBJECT_FLOOR) else default
+    cost, pooled, spike = scored[spot]
+    out = {"anchor": _label(spot[0], spot[1], bw, bh, (w, h)), "x": spot[0], "y": spot[1],
+           "subject": round(cost, 3), "ink_subject": round(pooled, 3), "spike": round(spike, 3),
+           "default_subject": round(default_cost, 3), "spots": len(scored), "moved": spot != default}
+    if cost >= SUBJECT_TIGHT:
+        out["note"] = (f"no free space: {round(cost * 100)}% of the type sits on the artwork — "
+                       "re-commission the render rather than moving the block again")
+    return out
+
+
+def _spot_cost(smap, rects, size, spot, bw, bh, pad):
+    """The cost of one candidate origin: the line boxes plus the scrim panel, the panel at a discount."""
+    x, y = spot
+    ink = [(x + r[0], y + r[1], x + r[2], y + r[3]) for r in rects]
+    panel = (x - pad // 2, y - int(size[1] * 0.012), x + bw + pad // 2, y + bh + int(size[1] * 0.012))
+    return _cost(smap, ink + [panel], size, [1.0] * len(ink) + [PANEL_WEIGHT])
+
+
+def _rounded(costs: dict) -> dict:
+    return {k: round(v, 4) for k, v in costs.items()}
+
 
 
 def _fit_wrapped(draw, text: str, path: str, px: int, max_w: int, max_lines: int = 2):
@@ -325,29 +505,15 @@ def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict,
     from PIL import Image, ImageDraw
     base = Image.open(img_path).convert("RGBA")
     w, h = base.size
-    p = plan(base, anchor)
     probe = ImageDraw.Draw(base)
     pad = int(w * 0.045)
-    x, y = p["x"] + pad, p["y"] + int(h * 0.055)
     column = int(w * SAFE_W) - pad * 2
-    blocks = []                                   # (kind, lines, font) in draw order
-    if copy.get("kicker"):
-        blocks.append(("kicker", [copy["kicker"]],
-                       _fit(probe, copy["kicker"], FONT_BOLD, int(h * KICKER_PT), column)))
-    f_t, t_lines = _fit_wrapped(probe, copy["title"], FONT_BOLD, int(h * TITLE_PT), column, 2)
-    blocks.append(("title", t_lines, f_t))
-    if copy.get("hook"):
-        blocks.append(("hook", [copy["hook"]],
-                       _fit(probe, copy["hook"], FONT_REG, int(h * HOOK_PT), column)))
-    # Block extents, so the ink is chosen against the pixels the type really covers — and so a
-    # bottom anchor cannot push the last line off the frame.
-    spans, cursor = [], 0
-    for kind, lines, font in blocks:
-        height = int(font.size * (1.45 if kind == "kicker" else 1.18))
-        spans.append([kind, lines, font, cursor])
-        cursor += height * len(lines) if kind == "title" else height
-    total = cursor
-    y = max(0, min(y, h - total - int(h * 0.02)))
+    spans, ink, total = _layout(probe, copy, h, column)
+    # The placement is chosen after the type is set, against the pixels the letters actually cover:
+    # a short line must not pay for the empty column beside it, and the block must land where the
+    # subject is not. `plan` gets the line boxes relative to the origin, its own size and the gutter.
+    p = plan(base, anchor, rects=ink, box=(column + pad, total), pad=pad)
+    x, y = p["x"], p["y"]
     spans = [[k, l, f, y + rel] for k, l, f, rel in spans]
     top, cursor = y, y + total
     block_box = (max(0, x - pad // 2), max(0, top - int(h * 0.012)),
@@ -392,10 +558,41 @@ def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict,
         out.save(out_path, quality=90, optimize=True, progressive=True)
     else:
         out.save(out_path, optimize=True)
+    t_lines = next(l for k, l, _f, _r in spans if k == "title")
+    f_t = next(f for k, _l, f, _r in spans if k == "title")
     return {**p, "light": light_ink, "ink": ink, "scrim": scrim, "scrim_tone": tone,
             "region_rgb": mean_rgb, "binding_rgb": binding, "clutter": round(clutter, 3),
             "contrast": round(contrast, 2), "target": round(target, 2),
-            "title_lines": t_lines, "title_px": f_t.size, "size": out.size}
+            "title_lines": t_lines, "title_px": f_t.size, "size": out.size, "block": [x, y, total]}
+
+
+def _layout(probe, copy: dict, h: int, column: int):
+    """The type blocks, and the pixel box of every line relative to the block's own origin.
+
+    Laid out BEFORE the placement is chosen, because the placement is scored on the pixels the
+    letters cover: scoring the fixed 0.54x0.50 safe box instead is what let the type land on the
+    subject (the box is mostly empty air on a frame whose subject is a corner object).
+    """
+    blocks = []                                   # (kind, lines, font) in draw order
+    if copy.get("kicker"):
+        blocks.append(("kicker", [copy["kicker"]],
+                       _fit(probe, copy["kicker"], FONT_BOLD, int(h * KICKER_PT), column)))
+    f_t, t_lines = _fit_wrapped(probe, copy["title"], FONT_BOLD, int(h * TITLE_PT), column, 2)
+    blocks.append(("title", t_lines, f_t))
+    if copy.get("hook"):
+        blocks.append(("hook", [copy["hook"]],
+                       _fit(probe, copy["hook"], FONT_REG, int(h * HOOK_PT), column)))
+    # Block extents, so the ink is chosen against the pixels the type really covers — and so a
+    # bottom anchor cannot push the last line off the frame.
+    spans, rects, cursor = [], [], 0
+    for kind, lines, font in blocks:
+        step = int(font.size * (1.45 if kind == "kicker" else 1.18))
+        spans.append([kind, lines, font, cursor])
+        for i, line in enumerate(lines):
+            top = cursor + i * step
+            rects.append((0, top, int(probe.textlength(line, font=font)), top + step))
+        cursor += step * len(lines) if kind == "title" else step
+    return spans, rects, cursor
 
 
 def base_path(img: pathlib.Path) -> pathlib.Path:
@@ -442,7 +639,10 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
     side["sha256"] = "sha256:" + hashlib.sha256(blob).hexdigest()
     side["overlay"] = {**copy, **{k: placement[k] for k in
                                    ("anchor", "light", "scrim", "contrast", "target", "clutter",
-                                    "region_rgb", "binding_rgb", "title_lines")},
+                                    "region_rgb", "binding_rgb", "title_lines")
+                                   if k in placement},
+                       **{k: placement[k] for k in ("subject", "ink_subject", "spike")
+                          if placement.get(k) is not None},
                        "generated_at": side["generated_at"]}
     head = sentence_case(copy["title"], article_md if isinstance(article_md, str) else "")
     raw_alt = side.get("alt_text", "")
@@ -464,9 +664,10 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Composite the desk's cover typography onto a header.")
     ap.add_argument("--slug", required=True)
     ap.add_argument("--anchor", choices=["top-left", "top-right", "bottom-left", "bottom-right"],
-                    help="Force the type block into this corner. Use only when the automatic pick "
-                         "lands the type on sparse line art it reads as empty (the collision shows up "
-                         "in the composite, not in the clutter score)")
+                    help="Force the type block into this corner, overriding the automatic search for "
+                         "an empty spot. Use when the search lands the type on sparse line art it "
+                         "reads as background (the collision shows up in the composite) — if no spot "
+                         "is free, re-commission instead with illustration_creator.py --force")
     ap.add_argument("--dry-run", action="store_true", help="print the copy, touch nothing")
     args = ap.parse_args()
     print(json.dumps(apply_to_slug(args.slug, dry_run=args.dry_run, anchor=args.anchor),

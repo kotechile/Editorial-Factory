@@ -1564,8 +1564,18 @@ def main() -> int:
                 try:
                     import illustration_overlay
                     ov = illustration_overlay.apply_to_slug(slug, article_md=new_md)
-                    anchor = ov.get("placement", {}).get("anchor") or ov.get("anchor") or "placed"
-                    print(f"    - typography overlay applied ({anchor})")
+                    place = ov.get("placement", {}) or {}
+                    anchor = place.get("anchor") or ov.get("anchor") or "placed"
+                    # Where the type landed, and how much of it still meets the artwork: a spot under
+                    # the floor is air, and a spot over SUBJECT_TIGHT means the frame itself is wrong.
+                    onto = place.get("subject") or 0.0
+                    if place.get("note"):
+                        onto_note = f" — {place['note']}"
+                    elif onto >= illustration_overlay.SUBJECT_FLOOR:
+                        onto_note = f" — {round(onto * 100)}% of the type still meets the artwork"
+                    else:
+                        onto_note = ""
+                    print(f"    - typography overlay applied ({anchor}{onto_note})")
                     side = read_sidecar(slug, root)
                     if side:
                         new_md = _write_frontmatter(new_md, frontmatter_fields(side))
