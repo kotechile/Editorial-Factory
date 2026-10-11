@@ -50,8 +50,9 @@ gates, and every non-deterministic step is gated on retrievable evidence.
    `context/published_log.md`, the Supabase rows, `context/sitemap.json`, the CMS post
    (`scripts/wp_draft.py`, sent with status 'publish') and the `context/content_calendar.md` run-log row — via
    `scripts/publish.py <final draft>`. **The reader sites are the destination** (`giniloh.com` /
-   `wellroost.com`, fed by the CMS); the LinkedIn and Reddit channels were removed by the owner on
-   2026-10-06, so no run produces social copy, queues a post or waits on a distribution approval.
+   `wellroost.com`, fed by the CMS); the LinkedIn and Reddit channels for articles were removed by the owner on
+   2026-10-06, so no run produces article social copy, queues an article post or waits on a distribution approval
+   (the PressFlow promotion to-do queue serves live software factory applications only, from `context/promoted_apps.json`).
    The article is pushed directly live to the CMS with status 'publish' — **through the pre-publish
    gate** (`scripts/publish_gate.py`, owner 2026-10-10): the mechanical gates (Sources, banned
    AI-tells, the accessibility floor, the social-voice gate) are re-run on the artifact at the push,

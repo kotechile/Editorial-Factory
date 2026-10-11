@@ -320,6 +320,14 @@ if command -v node >/dev/null 2>&1; then
     echo "FAIL: public surface — detail:"
     node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8; FAIL=1
   fi
+  if ! node "$ROOT/scripts/test_distribution_queue.mjs" >/dev/null 2>&1; then
+    echo "FAIL: distribution queue lifecycle — detail:"
+    node "$ROOT/scripts/test_distribution_queue.mjs" 2>&1 | tail -8; FAIL=1
+  fi
+  if ! node "$ROOT/scripts/test_distribution_apps.mjs" >/dev/null 2>&1; then
+    echo "FAIL: app-promotion cards — detail:"
+    node "$ROOT/scripts/test_distribution_apps.mjs" 2>&1 | tail -8; FAIL=1
+  fi
 else
   echo "  skip: public-surface gate (node not on PATH)"
 fi

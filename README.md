@@ -134,29 +134,16 @@ scripts/cron-seo-pipeline.sh    # SEO Content Machine
 scripts/verify.sh
 ```
 
-## Removed: the LinkedIn / Reddit distribution channel (2026-10-06)
+## App Promotion To-Do Queue (Applications only) & Removed Article Distribution
 
-The desk used to hold a **📣 Distribution** tab in the PressFlow dashboard: promotion cards for the
-software factory's live apps, each carrying finished Reddit/LinkedIn copy and a pre-filled submit
-URL, with a seeding pass wired into `scripts/publish.py`, a `linkedin_posts` Supabase write path, a
-`LINKEDIN_AUTO_POST` switch and an `@Simon approve` gate in front of it all. The owner removed that
-channel on 2026-10-06 — nothing in it had ever been posted.
+The PressFlow dashboard provides an **📣 App Promotion To-Do** list strictly for the software factory's live applications (catalog: `context/promoted_apps.json`). Each app card features recommended subreddits, ready-to-paste Reddit/LinkedIn copy, and a direct web-intent submit link for manual posting.
 
-What that means for the code:
+In contrast, **article-level** social distribution remains removed (as of 2026-10-06):
 
-- The dashboard has no distribution tab and no `/api/distribution/*` route; the card generator
-  (`site/distribution.mjs`), the seeder (`scripts/seed_distribution.py`) and the copy catalog
-  (`context/promoted_apps.json`) are deleted.
-- `scripts/publish.py` persists only: `published/<file>.md`, the log row, the Supabase row, the
-  featured image and the CMS draft (`scripts/wp_draft.py`). It posts nowhere and prints no social
-  copy, and it reads no social credential.
-- The article's legacy `<!-- linkedin -->` block is no longer required, produced or shipped; a
-  reader never saw it. Artifacts that still carry one are ignored (`scripts/wp_draft.py` and the
-  reader renderer cut it at the marker).
-- `verify.sh` §9 keeps the long-form voice gate (`scripts/check_social_voice.mjs`, rules in
-  `site/social_voice.mjs`).
-- If a social channel is ever wanted again, it is a new decision with a named destination — not a
-  restoration.
+- The pipeline generates **no** social media copy for published articles.
+- `scripts/publish.py` persists articles to the reader sites (`published/`, Supabase, and WordPress CMS) without creating article social cards.
+- The article's legacy `<!-- linkedin -->` block is not required, produced or shipped.
+- The to-do list in PressFlow is populated exclusively from `context/promoted_apps.json` via `POST /api/distribution/seed` and manual curation.
 
 ## Environment
 

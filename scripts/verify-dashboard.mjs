@@ -52,13 +52,10 @@ try {
   await page.waitForTimeout(4000); // let boot() finish (it opens the newest article and re-tabs)
   check((await page.title()).includes('PressFlow'), 'dashboard loads', await page.title());
 
-  // The README/verify.sh removal of the LinkedIn/Reddit channel is what this pins: no
-  // Distribution tab, no distribution API, and the remaining channel-copy cards still render.
-  // The API check goes through the browser context's request API (not `fetch` inside the page):
-  // a 404 logged by the page would trip the "no console errors" check below.
-  check(await page.locator('[data-tab="tab-distribution"]').count() === 0, 'no Distribution tab');
+  // App Promotion to-do queue is present for software factory apps only.
+  check(await page.locator('[data-tab="tab-distribution"]').count() === 1, 'App Promotion to-do tab present');
   const distApi = (await page.request.get(`${BASE}/api/distribution/tasks`)).status();
-  check(distApi === 404, 'distribution API is gone', `HTTP ${distApi}`);
+  check(distApi === 200, 'distribution API responds 200', `HTTP ${distApi}`);
   await page.click('[data-tab="tab-suite"]');
   await page.waitForTimeout(1500);
   check(await page.locator('#twitterPreviewBox').count() === 1

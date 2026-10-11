@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { timingSafeEqual } from 'node:crypto';
+import { buildTasksForApp, appSourceIds, pruneOrphanTasks, STATUSES, PLATFORMS } from './distribution.mjs';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -633,6 +634,160 @@ async function syncAllArticlesToSupabase() {
   return { total: allItems.length, synced: results.filter((r) => r.action === 'inserted' || r.action === 'updated').length, details: results };
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// App Promotion To-Do Queue (software factory apps only; not articles)
+// ─────────────────────────────────────────────────────────────────────────────
+const QUEUE_CONFIG_KEY = 'distribution_queue';
+const LOCAL_QUEUE_FILE = join(ROOT, 'context', 'distribution_queue.json');
+const PROMOTED_APPS_FILE = join(ROOT, 'context', 'promoted_apps.json');
+
+function readPromotedApps() {
+  try {
+    if (!existsSync(PROMOTED_APPS_FILE)) {
+      console.warn(`promotedApps: ${PROMOTED_APPS_FILE} is missing — the queue will seed nothing`);
+      return [];
+    }
+    const data = JSON.parse(readFileSync(PROMOTED_APPS_FILE, 'utf8'));
+    return Array.isArray(data.apps) ? data.apps.filter((app) => app && app.slug) : [];
+  } catch (err) {
+    console.warn(`promotedApps: could not read ${PROMOTED_APPS_FILE} (${err.message})`);
+    return [];
+  }
+}
+
+const nowIso = () => new Date().toISOString();
+
+function normalizeTask(raw, { existing = null } = {}) {
+  const base = existing || {};
+  const status = STATUSES.includes(raw.status) ? raw.status : (base.status || 'ready');
+  const task = {
+    id: String(raw.id || base.id || '').trim(),
+    platform: PLATFORMS.includes(raw.platform) ? raw.platform : (base.platform || 'reddit'),
+    channel: String(raw.channel ?? base.channel ?? '').slice(0, 120),
+    channel_note: String(raw.channel_note ?? base.channel_note ?? '').slice(0, 200),
+    variant: String(raw.variant ?? base.variant ?? ''),
+    source_type: String(raw.source_type ?? base.source_type ?? 'app'),
+    source_id: String(raw.source_id ?? base.source_id ?? ''),
+    source_title: String(raw.source_title ?? base.source_title ?? '').slice(0, 300),
+    vertical: String(raw.vertical ?? base.vertical ?? ''),
+    suite: String(raw.suite ?? base.suite ?? ''),
+    suite_name: String(raw.suite_name ?? base.suite_name ?? ''),
+    post_title: String(raw.post_title ?? base.post_title ?? '').slice(0, 500),
+    post_content: String(raw.post_content ?? base.post_content ?? ''),
+    submit_url: String(raw.submit_url ?? base.submit_url ?? ''),
+    status,
+    created_at: base.created_at || raw.created_at || nowIso(),
+    updated_at: nowIso(),
+    completed_at: status === 'ready' ? null : (base.completed_at || raw.completed_at || nowIso()),
+  };
+  if (!task.id) throw new Error('task id is required');
+  if (!task.post_content.trim()) throw new Error(`task ${task.id} has empty post_content`);
+  return task;
+}
+
+async function readQueue() {
+  const { isConfigured } = getSupabaseConfig();
+  if (isConfigured) {
+    try {
+      const rows = await supabaseFetch(`factory_config?key=eq.${QUEUE_CONFIG_KEY}&select=id,value`);
+      if (Array.isArray(rows) && rows.length) {
+        const parsed = JSON.parse(rows[0].value || '[]');
+        if (Array.isArray(parsed)) return { storage: 'supabase', tasks: parsed };
+      }
+      return { storage: 'supabase', tasks: [] };
+    } catch (err) {
+      console.warn(`queue: supabase read failed (${err.message}); falling back to file`);
+    }
+  }
+  if (existsSync(LOCAL_QUEUE_FILE)) {
+    try {
+      const parsed = JSON.parse(await readFile(LOCAL_QUEUE_FILE, 'utf8'));
+      if (Array.isArray(parsed)) return { storage: 'file', tasks: parsed };
+    } catch (err) {
+      console.warn(`queue: local file unreadable (${err.message})`);
+    }
+  }
+  return { storage: isConfigured ? 'supabase' : 'file', tasks: [] };
+}
+
+async function writeQueue(tasks) {
+  const { isConfigured } = getSupabaseConfig();
+  const payload = JSON.stringify(tasks);
+  if (isConfigured) {
+    try {
+      const existing = await supabaseFetch(`factory_config?key=eq.${QUEUE_CONFIG_KEY}&select=id`);
+      if (Array.isArray(existing) && existing.length) {
+        await supabaseFetch(`factory_config?id=eq.${existing[0].id}`, {
+          method: 'PATCH',
+          body: JSON.stringify({ value: payload, updated_at: nowIso() }),
+        });
+      } else {
+        await supabaseFetch('factory_config', {
+          method: 'POST',
+          body: JSON.stringify({ key: QUEUE_CONFIG_KEY, value: payload }),
+        });
+      }
+      return 'supabase';
+    } catch (err) {
+      console.warn(`queue: supabase write failed (${err.message}); writing local file instead`);
+    }
+  }
+  await writeFile(LOCAL_QUEUE_FILE, `${JSON.stringify(tasks, null, 2)}\n`, 'utf8');
+  return 'file';
+}
+
+async function seedQueueFromApps({ refresh = false } = {}) {
+  const { tasks: existing } = await readQueue();
+  const byId = new Map(existing.map((t) => [t.id, t]));
+  const apps = readPromotedApps();
+  let added = 0;
+  let refreshed = 0;
+
+  for (const app of apps) {
+    const generated = buildTasksForApp(app);
+    for (const task of generated) {
+      const prev = byId.get(task.id);
+      if (!prev) {
+        byId.set(task.id, { ...task, created_at: nowIso(), updated_at: nowIso(), completed_at: null });
+        added += 1;
+      } else if (refresh && prev.status === 'ready') {
+        byId.set(task.id, {
+          ...prev,
+          channel: task.channel,
+          channel_note: task.channel_note,
+          post_title: task.post_title,
+          post_content: task.post_content,
+          submit_url: task.submit_url,
+          suite: task.suite,
+          suite_name: task.suite_name,
+          updated_at: nowIso(),
+        });
+        refreshed += 1;
+      }
+    }
+  }
+
+  const tasks0 = [...byId.values()];
+  const { keep, dropped } = pruneOrphanTasks(tasks0, appSourceIds(apps));
+  const tasks = keep;
+  if (dropped.length) {
+    console.log(`distribution: pruned ${dropped.length} card(s) whose source is no longer produced `
+      + `(${[...new Set(dropped.map((t) => `${t.source_type}:${t.source_id}`))].join(', ')})`);
+  }
+
+  const storage = await writeQueue(tasks);
+  return { storage, added, refreshed, pruned: dropped.length, total: tasks.length, apps: apps.map((a) => a.slug) };
+}
+
+function queueCounts(tasks) {
+  return tasks.reduce((acc, t) => {
+    acc[t.status] = (acc[t.status] || 0) + 1;
+    acc.platforms = acc.platforms || {};
+    acc.platforms[t.platform] = (acc.platforms[t.platform] || 0) + 1;
+    return acc;
+  }, {});
+}
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
 
@@ -671,6 +826,92 @@ const server = createServer(async (req, res) => {
     if (url.pathname === '/robots.txt') {
       res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
       return res.end('User-agent: *\nDisallow: /\n');
+    }
+
+    // ----------------------------------------------------
+    // API: Distribution / Promotion to-do queue (Apps only)
+    // ----------------------------------------------------
+    if (url.pathname === '/api/distribution/tasks' && req.method === 'GET') {
+      const { storage, tasks } = await readQueue();
+      const statusFilter = url.searchParams.get('status') || 'all';
+      const platformFilter = url.searchParams.get('platform') || 'all';
+      const suiteFilter = url.searchParams.get('suite') || 'all';
+      const counts = queueCounts(tasks);
+      let list = tasks;
+      if (statusFilter !== 'all') list = list.filter((t) => t.status === statusFilter);
+      if (platformFilter !== 'all') list = list.filter((t) => t.platform === platformFilter);
+      if (suiteFilter !== 'all') list = list.filter((t) => t.suite === suiteFilter);
+      const order = { ready: 0, published: 1, deleted: 2 };
+      list = [...list].sort((a, b) => {
+        const s = (order[a.status] ?? 3) - (order[b.status] ?? 3);
+        if (s !== 0) return s;
+        return String(b.created_at).localeCompare(String(a.created_at));
+      });
+      return sendJson(res, 200, {
+        storage,
+        supabase_configured: getSupabaseConfig().isConfigured,
+        counts,
+        total: tasks.length,
+        tasks: list,
+      });
+    }
+
+    if (url.pathname === '/api/distribution/seed' && req.method === 'POST') {
+      let body = {};
+      try { body = await parseJsonBody(req); } catch (err) { /* empty body is fine */ }
+      const result = await seedQueueFromApps({ refresh: Boolean(body && body.refresh) });
+      return sendJson(res, 200, { status: 'ok', ...result });
+    }
+
+    if (url.pathname === '/api/distribution/tasks' && req.method === 'POST') {
+      let body;
+      try { body = await parseJsonBody(req); } catch (err) {
+        return sendJson(res, 400, { error: `Invalid JSON body: ${err.message}` });
+      }
+      const { tasks } = await readQueue();
+      const idx = tasks.findIndex((t) => t.id === body.id);
+      let task;
+      try {
+        task = normalizeTask(body, { existing: idx > -1 ? tasks[idx] : null });
+      } catch (err) {
+        return sendJson(res, 400, { error: err.message });
+      }
+      if (idx > -1) tasks[idx] = task; else tasks.push(task);
+      const storage = await writeQueue(tasks);
+      return sendJson(res, 200, { status: 'ok', storage, task, created: idx === -1 });
+    }
+
+    if (url.pathname === '/api/distribution/tasks' && (req.method === 'PATCH' || req.method === 'PUT')) {
+      let body;
+      try { body = await parseJsonBody(req); } catch (err) {
+        return sendJson(res, 400, { error: `Invalid JSON body: ${err.message}` });
+      }
+      if (!body.id) return sendJson(res, 400, { error: 'id is required' });
+      if (body.status && !STATUSES.includes(body.status)) {
+        return sendJson(res, 400, { error: `status must be one of: ${STATUSES.join(', ')}` });
+      }
+      const { tasks } = await readQueue();
+      const idx = tasks.findIndex((t) => t.id === body.id);
+      if (idx === -1) return sendJson(res, 404, { error: `Task '${body.id}' not found` });
+      let updated;
+      try {
+        updated = normalizeTask(body, { existing: tasks[idx] });
+      } catch (err) {
+        return sendJson(res, 400, { error: err.message });
+      }
+      tasks[idx] = updated;
+      const storage = await writeQueue(tasks);
+      return sendJson(res, 200, { status: 'ok', storage, task: updated });
+    }
+
+    if (url.pathname === '/api/distribution/tasks' && req.method === 'DELETE') {
+      const id = url.searchParams.get('id');
+      if (!id) return sendJson(res, 400, { error: 'id query param is required' });
+      const { tasks } = await readQueue();
+      const next = tasks.filter((t) => t.id !== id);
+      if (next.length === tasks.length) return sendJson(res, 404, { error: `Task '${id}' not found` });
+      const storage = await writeQueue(next);
+      return sendJson(res, 200, { status: 'ok', storage, removed: id, total: next.length });
     }
 
     if (url.pathname === '/api/drafts' && req.method === 'GET') {

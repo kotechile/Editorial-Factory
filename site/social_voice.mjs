@@ -60,6 +60,42 @@ const snippet = (text, index, length = 60) =>
   String(text).slice(Math.max(0, index - 20), Math.max(0, index) + length).replace(/\s+/g, ' ').trim();
 
 /**
+ * True when a sentence can be quoted into social copy without tripping the rules — the generator
+ * drops reader-directed sentences rather than re-voicing article prose it did not write.
+ */
+export function isQuoteable(sentence) {
+  return inspectSocialVoice(sentence).violations.length === 0;
+}
+
+/**
+ * Check one piece of social copy. Returns { ok, cue, violations: [{ label, match, snippet }] }.
+ * `ok` requires both a present observer cue and zero authority constructions.
+ */
+export function inspectSocialVoice(text) {
+  const body = String(text || '');
+  const violations = [];
+  for (const { label, re } of AUTHORITY_PATTERNS) {
+    const match = body.match(re);
+    if (match) violations.push({ label, match: match[0], snippet: snippet(body, match.index ?? 0) });
+  }
+  const cue = OBSERVER_CUES.find(({ re }) => re.test(body))?.label || '';
+  return { ok: !!cue && violations.length === 0, cue, violations };
+}
+
+/** Human-readable one-liners for a failed inspection. */
+export function describeViolations(name, inspection) {
+  const lines = [];
+  for (const v of inspection.violations) {
+    lines.push(`${name}: ${v.label} — "${v.match}" … ${v.snippet}`);
+  }
+  if (!inspection.cue) {
+    lines.push(`${name}: no observer cue — add one first-person observation, a labelled opinion `
+      + `("My read:"), or an attention line ("What I'm watching:") per skills/claude_humanizer.md §3.8`);
+  }
+  return lines;
+}
+
+/**
  * Long-form sections that must read as the writer's own reading of the news (skills/claude_humanizer.md
  * §3.9). The lead reports; these three interpret, so each needs an observer cue.
  */
