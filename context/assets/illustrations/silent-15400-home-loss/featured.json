@@ -1,0 +1,88 @@
+{
+  "slug": "silent-15400-home-loss",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A calcified brass pressure relief valve on an aging water heater in extreme close-up.",
+      "caption": "The parts that cause severe water damage carry listed service lives, putting the failure date and the eventual bill on a predictable schedule.",
+      "title": "Aging Water Heater Valve",
+      "bytes": 771712,
+      "sha256": "sha256:ed4dddf8cf22b9bc2b63c39a485b57f5"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, razor-sharp focal plane. A weathered, calcified brass pressure-relief valve on a dark, aging residential water heater. Visible surface texture, crusty white mineral buildup, and dust. Soft, cool directional basement light casting deep shadows and prominent rim highlights on the metallic edges. Asymmetric composition, hero object off-centre on the right third, background falling away into smooth, dark atmospheric bokeh. Premium editorial cover standard, quiet confidence, sophisticated muted color palette.",
+  "negative_prompt": "text, garbled text, random letters, numbers, watermark, UI, human face, hands",
+  "rationale": "Editorial macro focuses tightly on the physical component that drives the article's financial argument\u2014the aging, scheduled-to-fail plumbing fixture\u2014emphasizing the tactile reality of the ticking clock.",
+  "cue": "the parts that cause it carry listed service lives",
+  "subject": "calcified brass pressure relief valve on a water heater",
+  "core_thesis": "Deferred home maintenance on water systems with known service lives is an unfunded liability with a predictable, high-cost failure date.",
+  "core_conflict": "scheduled mechanical failure vs ignored household budgeting",
+  "composition": "asymmetric hero placement on the right third",
+  "alt_text": "The Price Of Skipped Upkeep. A calcified brass pressure relief valve on an aging water heater in extreme close-up.",
+  "caption": "The Price Of Skipped Upkeep: Why deferred home maintenance behaves like debt.",
+  "title": "The Price Of Skipped Upkeep",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/silent-15400-home-loss/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 455635,
+  "sha256": "sha256:9bbe566496f96a20f66d90b2d6cfbdca0b451d7379cdde13ead4221e92247fcf",
+  "source_hash": "sha256:7e3f0b79e81f7896142268b1f43fda25",
+  "source_chars": 4581,
+  "task_id": "32c53ff277454a69ce31ad87383c04a8",
+  "credits": 7.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/32c53ff277454a69ce31ad87383c04a8_1791830441640.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, razor-sharp focal plane. A weathered, calcified brass pressure-relief valve on a dark, aging residential water heater. Visible surface texture, crusty white mineral buildup, and dust. Soft, cool directional basement light casting deep shadows and prominent rim highlights on the metallic edges. Asymmetric composition, hero object off-centre on the right third, background falling away into smooth, dark atmospheric bokeh. Premium editorial cover standard, quiet confidence, sophisticated muted color palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-12T18:40:44+00:00",
+  "overlay": {
+    "kicker": "HOME EQUITY // DEFERRED MAINTENANCE",
+    "title": "THE PRICE OF SKIPPED UPKEEP",
+    "hook": "Why deferred home maintenance behaves like debt",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.69,
+    "target": 4.5,
+    "clutter": 0.161,
+    "region_rgb": [
+      32,
+      29,
+      28
+    ],
+    "binding_rgb": [
+      46,
+      46,
+      48
+    ],
+    "title_lines": [
+      "THE PRICE OF",
+      "SKIPPED UPKEEP"
+    ],
+    "subject": 0.041,
+    "ink_subject": 0.014,
+    "spike": 0.152,
+    "generated_at": "2026-10-12T18:40:44+00:00"
+  }
+}
