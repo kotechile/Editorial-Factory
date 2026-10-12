@@ -93,6 +93,8 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_angle_brief.md`:
 ```
 
 > **Anchor URLs must be full `https://` links (verify.sh §8 — learned 2026-10-05).** `scripts/synthesize_topics.py --check-briefs` counts the angle brief's anchors with a regex that captures *trailing punctuation* (`[^\s)>]*` does not stop at `.`). Writing `arXiv:2609.31301` (no URL), or a bare `https://arxiv.org/abs/…31301.` followed by a period, yields either "needs 2 distinct https anchors, found 0" or "url not present in its signals file". Write each anchor as a full `https://` URL *inside a closing parenthesis or immediately before a space/`)`* — e.g. `(…submitted to IEEE TSE; 2026-09-25 — https://arxiv.org/abs/2609.31301).` — so the regex stops clean and the URL matches the `_signals.md` and `_verified_brief.md` text byte-for-byte.
+>
+> **Two anchors on one line need a separator the regex stops on (learned 2026-10-12).** `(https://a.example/x, https://b.example/y)` captures the first URL **with the comma** (`https://a.example/x,`), so `--check-briefs` reds the build twice: "url not present in its signals file" on the brief and "anchor … absent from the `_verified_brief.md`". Join them with ` and ` — `(https://a.example/x and https://b.example/y)` — or wrap each in its own parentheses. Never a comma.
 
 
 ### Format B: Single-Signal Brief (Fallback when no viable pair emerges)

@@ -227,6 +227,7 @@ one.
   swap long generic words, keep each long proper noun to one full mention. Verified path: 50.7 → 61.4
   on the final, so the published artifact landed at 57.3 instead of under the floor. Facts, `[n]`
   citations, section markers and `## Sources` stay untouched.
+- **A `humanize_one.py` PASS is measured against `MIN_BODY_WORDS` (600), not the house floor (~800) (learned 2026-10-12).** A 1,100-word structural draft came back at 678 words with `verdict=PASS  length=ok`: the script checks accessibility, the source list and the section markers — not the long-form floor, and not §9's observer cue, which the rewrite had also dropped from `<!-- nuanced-takeaway -->`. Treat its PASS as the accessibility verdict only. Before persisting: restore depth from the verified brief (a synthesis that compacts ~40% has usually shed the anchor carrying the collision), re-read each interpreting section for its first-person cue, and re-cut the title if the frontier swapped your `STRONG` headline for its own.
 - A section that fails its gate after 2 retries → report the specific section + criterion to the
   Editor, do not silently ship.
 - Recurring AI-tells in drafts → log the tell + the fix to `skills/self_improvement_eval.md` so
