@@ -78,6 +78,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-10 | supplier_risk_reshoring_decision | nearshoring-doesnt-move-the-trade-case | Nearshoring Doesn't Move the Trade Case | https://pressflow.aichieve.net/published/2026-10-10_nearshoring-doesnt-move-the-trade-case.md | reader site only |
 | 2026-10-10 | personal_microeconomics_tinkering_tax | self-hosting-break-even-one-hour-a-year | Self-Hosting Break-Even: 1.26 Hours a Year | https://pressflow.aichieve.net/published/2026-10-10_self-hosting-break-even-one-hour-a-year.md | reader site only |
 | 2026-10-10 | supplier_risk_reshoring_decision | why-importers-forfeit-duty-refunds | Why Importers Forfeit 99% Duty Refunds | https://pressflow.aichieve.net/published/2026-10-10_why-importers-forfeit-duty-refunds.md | reader site only |
+| 2026-10-12 | agentic_ai | one-skill-too-many-green-test | One Skill Too Many: Why Agent Green Tests Are Blind | https://pressflow.aichieve.net/published/2026-10-12_one-skill-too-many-green-test.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

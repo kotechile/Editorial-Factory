@@ -1,0 +1,90 @@
+{
+  "slug": "one-skill-too-many-green-test",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical modular blocks in a mechanical rack, one pushing the other out of alignment.",
+      "caption": "When two similar agent skills are installed, one can silently displace the other and drop critical security checks.",
+      "title": "Agent Skill Displacement Blind Spot",
+      "bytes": 1636280,
+      "sha256": "sha256:44bcd02d91e1eaf53606ec975869f061"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, extreme asymmetric composition with the hero structure off-centre right. Two identical engineered server-module blocks in a heavy rack rail, one matte black block physically shunting the other out of the active bay. Hard clean edges, one directional key light throwing a long cast shadow, matte muted palette of deep charcoal and silver, generous empty margin on the left, clear physical arrangement stating the idea of displacement. No bare shapes, no printed lettering.",
+  "negative_prompt": "text, garbled text, random lettering, watermarks, UI elements",
+  "rationale": "Component assembly perfectly illustrates the modular, stateful nature of agent skills, showing a physical stand-in for the software vulnerability where a look-alike component silently overrides the intended one.",
+  "cue": "a stateful supply chain",
+  "subject": "two identical modular blocks in a mechanical rack, one pushing the other out of alignment",
+  "core_thesis": "A co-installed look-alike skill can silently hijack a coding agent's run and bypass guardrails while the system still reports a successful test.",
+  "core_conflict": "Malicious skill substitution vs intended guardrails",
+  "composition": "extreme asymmetric composition, off-centre right",
+  "alt_text": "The SKILL Layer Blind Spot. Two identical modular blocks in a mechanical rack, one pushing the other out of alignment.",
+  "caption": "The SKILL Layer Blind Spot: Look-alike packages quietly bypass agent safety checks.",
+  "title": "The SKILL Layer Blind Spot",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/one-skill-too-many-green-test/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1175312,
+  "sha256": "sha256:36763db83c38bc7e5a3feb6ed8a77699e7e27c1006ff6cae2bf6437730727567",
+  "source_hash": "sha256:d21423661d994588123ab77c62b9c4a4",
+  "source_chars": 4937,
+  "task_id": "00cf5bc769d3491c69a8e6ee55d6fba1",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e34bd0e53ed5e1950dfec18de8dec58f.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, extreme asymmetric composition with the hero structure off-centre right. Two identical engineered server-module blocks in a heavy rack rail, one matte black block physically shunting the other out of the active bay. Hard clean edges, one directional key light throwing a long cast shadow, matte muted palette of deep charcoal and silver, generous empty margin on the left, clear physical arrangement stating the idea of displacement. No bare shapes, no printed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-12T10:37:54+00:00",
+  "overlay": {
+    "kicker": "CODING AGENTS // SKILL VULNERABILITY",
+    "title": "THE SKILL LAYER BLIND SPOT",
+    "hook": "Look-alike packages quietly bypass agent safety checks",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 15,
+    "contrast": 4.78,
+    "target": 4.5,
+    "clutter": 0.147,
+    "region_rgb": [
+      166,
+      175,
+      184
+    ],
+    "binding_rgb": [
+      143,
+      151,
+      162
+    ],
+    "title_lines": [
+      "THE SKILL LAYER",
+      "BLIND SPOT"
+    ],
+    "subject": 0.007,
+    "ink_subject": 0.002,
+    "spike": 0.028,
+    "generated_at": "2026-10-12T10:37:54+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T18:30:15Z",
+  "updated_at": "2026-10-12T10:38:34Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1288,6 +1288,25 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-10",
+      "public": true,
+      "url": "https://giniloh.com/why-importers-forfeit-duty-refunds/"
+    },
+    {
+      "slug": "2026-10-12_one-skill-too-many-green-test",
+      "title": "270 Attacks: Your Green Tests Are Blind",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-12",
       "public": false
     }
   ]
