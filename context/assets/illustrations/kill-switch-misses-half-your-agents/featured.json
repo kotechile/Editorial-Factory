@@ -1,0 +1,90 @@
+{
+  "slug": "kill-switch-misses-half-your-agents",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing amber pathway.",
+      "caption": "The industry is standardizing runtime containment to instantly halt unowned AI agents.",
+      "title": "Agent Runtime Containment Bay",
+      "bytes": 7913273,
+      "sha256": "sha256:1f587d2b7a02747e547c2e4939479b38"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry, hero subject anchored off-centre on the right thirds. A multi-agent routing bay composed of brushed metal racks, modular processing trays, and illuminated fibre-optic conduits. One distinct precision containment gate physically severs a glowing amber pathway, acting as an instant runtime kill switch, while adjacent teal pathways flow uninterrupted. Flat muted palette with teal and amber accents, thin consistent line weight, laid over a matte grey drafting table surface. One directional light casting sharp physical depth, unlabelled, generous empty margin.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, signature, labels",
+  "rationale": "The technical isometric style perfectly captures the systemic, architectural nature of multi-agent routing and runtime containment mechanisms without resorting to literal office tropes.",
+  "cue": "containment-first",
+  "subject": "isometric cutaway of an algorithmic routing bay with a precision containment gate",
+  "core_thesis": "Agent governance has flipped from permission-first to containment-first: the shared control the industry is standardizing is instant, reversible revocation at the runtime.",
+  "core_conflict": "slow approval gates creating shadow AI vs runtime containment stopping rogue agents",
+  "composition": "extreme asymmetry, hero subject anchored off-centre on the right thirds",
+  "alt_text": "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing ",
+  "caption": "Flawed Agent Kill Switch: The new kill switch misses agents without known owners.",
+  "title": "Flawed Agent Kill Switch",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/kill-switch-misses-half-your-agents/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 3118208,
+  "sha256": "sha256:70aad87e211f3e91914009ea963c7c8564fb3ca0b09e9eb4a7e4d66f25014b66",
+  "source_hash": "sha256:3e34e1cd1c1d09d35f98aa24c6754be1",
+  "source_chars": 5976,
+  "task_id": "216860b073854094d756279d70de30e9",
+  "credits": 18.0,
+  "cost_ms": 67,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0f89439db06921c5a5730f8e9317a426.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry, hero subject anchored off-centre on the right thirds. A multi-agent routing bay composed of brushed metal racks, modular processing trays, and illuminated fibre-optic conduits. One distinct precision containment gate physically severs a glowing amber pathway, acting as an instant runtime kill switch, while adjacent teal pathways flow uninterrupted. Flat muted palette with teal and amber accents, thin consistent line weight, laid over a matte grey drafting table surface. One directional light casting sharp physical depth, unlabelled, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-12T11:10:39+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // ROGUE AGENTS",
+    "title": "FLAWED AGENT KILL SWITCH",
+    "hook": "The new kill switch misses agents without known owners",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 30,
+    "contrast": 4.86,
+    "target": 4.5,
+    "clutter": 0.099,
+    "region_rgb": [
+      145,
+      153,
+      156
+    ],
+    "binding_rgb": [
+      138,
+      146,
+      149
+    ],
+    "title_lines": [
+      "FLAWED AGENT",
+      "KILL SWITCH"
+    ],
+    "subject": 0.096,
+    "ink_subject": 0.033,
+    "spike": 0.349,
+    "generated_at": "2026-10-12T11:10:39+00:00"
+  }
+}

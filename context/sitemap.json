@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T10:38:34Z",
+  "updated_at": "2026-10-12T11:10:55Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1290,6 +1290,24 @@
       "date": "2026-10-10",
       "public": true,
       "url": "https://giniloh.com/why-importers-forfeit-duty-refunds/"
+    },
+    {
+      "slug": "2026-10-12_kill-switch-misses-half-your-agents",
+      "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-12",
+      "public": false
     },
     {
       "slug": "2026-10-12_one-skill-too-many-green-test",

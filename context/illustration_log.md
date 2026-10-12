@@ -187,3 +187,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-10 | `self-hosting-break-even-one-hour-a-year` | personal_microeconomics_tinkering_tax | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/self-hosting-break-even-one-hour-a-year/featured.jpg` |
 | 2026-10-10 | `why-importers-forfeit-duty-refunds` | supplier_risk_reshoring_decision | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-importers-forfeit-duty-refunds/featured.jpg` |
 | 2026-10-12 | `one-skill-too-many-green-test` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/one-skill-too-many-green-test/featured.png` |
+| 2026-10-12 | `kill-switch-misses-half-your-agents` | enterprise_ai_governance | `technical_isometric` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/kill-switch-misses-half-your-agents/featured.png` |
