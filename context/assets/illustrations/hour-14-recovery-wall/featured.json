@@ -1,0 +1,88 @@
+{
+  "slug": "hour-14-recovery-wall",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Heavy freight truck idling at an industrial terminal gate under amber lights during twilight.",
+      "caption": "The real cost of a missed window is the premium rate the dock crew earns when the driver's clock runs out.",
+      "title": "terminal-gate-14-hour-wall",
+      "bytes": 378818,
+      "sha256": "sha256:4fba83f4506d1a646801eb9b90860316"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. An unbranded heavy freight truck idling at an imposing industrial terminal gate during blue-hour twilight. Crisp atmospheric depth, striking teal-and-amber palette. Warm, practical amber worklights cast long shadows on the weathered concrete yard, contrasting with the deep blue evening sky. Motion implied as the massive vehicle waits, capturing the tension of a ticking clock. High editorial standard, clean aesthetics, no people facing the camera.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, text, faces, blurry, distorted.",
+  "rationale": "A cinematic still captures the atmospheric tension of a heavy freight terminal at dusk, perfectly illustrating the ticking clock of a driver's shift and the physical reality of the gate wait.",
+  "cue": "bounded by the driver's 14-hour on-duty window",
+  "subject": "an idling heavy freight truck at an industrial terminal gate",
+  "core_thesis": "A late shipment's recovery is bounded by the driver's 14-hour on-duty window, making dock crew overtime the true cost of delays.",
+  "core_conflict": "Rigid regulatory on-duty clocks versus physical delays at the terminal gate.",
+  "composition": "extreme asymmetry, the hero truck positioned low and off-centre",
+  "alt_text": "The 14-Hour Labor Wall. Heavy freight truck idling at an industrial terminal gate under amber lights during twilight.",
+  "caption": "The 14-Hour Labor Wall: Pricing dock crew overtime before late fees.",
+  "title": "The 14-Hour Labor Wall",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/hour-14-recovery-wall/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 207750,
+  "sha256": "sha256:27ac475a2d5549570697960c99bd0690673c8be562195d8c3dd01ae2ed47e32e",
+  "source_hash": "sha256:ea7e030ccf77de005713aed96e8a612a",
+  "source_chars": 5545,
+  "task_id": "fd2d8124fa1df2f8544c7682d6e503b1",
+  "credits": 5.0,
+  "cost_ms": 36,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/fd2d8124fa1df2f8544c7682d6e503b1_1791922378412.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. An unbranded heavy freight truck idling at an imposing industrial terminal gate during blue-hour twilight. Crisp atmospheric depth, striking teal-and-amber palette. Warm, practical amber worklights cast long shadows on the weathered concrete yard, contrasting with the deep blue evening sky. Motion implied as the massive vehicle waits, capturing the tension of a ticking clock. High editorial standard, clean aesthetics, no people facing the camera.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-13T20:13:04+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // THE 14-HOUR RULE",
+    "title": "THE 14-HOUR LABOR WALL",
+    "hook": "Pricing dock crew overtime before late fees",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.76,
+    "target": 4.5,
+    "clutter": 0.12,
+    "region_rgb": [
+      51,
+      57,
+      58
+    ],
+    "binding_rgb": [
+      74,
+      73,
+      71
+    ],
+    "title_lines": [
+      "THE 14-HOUR",
+      "LABOR WALL"
+    ],
+    "subject": 0.057,
+    "ink_subject": 0.031,
+    "spike": 0.161,
+    "generated_at": "2026-10-13T20:13:04+00:00"
+  }
+}
