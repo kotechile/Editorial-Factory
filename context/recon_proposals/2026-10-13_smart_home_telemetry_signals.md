@@ -1,0 +1,49 @@
+# Signals: smart_home_telemetry — 2026-10-13
+**Window:** 2026-09-13 → 2026-10-13
+**Queries run:** 21 web fan-outs across the vertical's six configured sources (home_lifestyle_intel, home_assistant_community, matter_thread_consortium, hackaday, reddit_homelab, github_trending) + 1 intel-MCP pull (`home_lifestyle_intel_client.py --recent 30 --vertical smart_home_telemetry --format signals` — 10 items, none on the local-first/telemetry beat: solar, mortgage rates, warehouse robotics, a Fitbit) + 11 primary-source fetches. Every hit timestamp-checked against the window.
+
+**Window note (freshness discipline).** Four candidate clusters were probed and **dropped as out-of-window** rather than softened: the Gamers Nexus LG smart-TV investigation and LG's rebuttal (2026-09-07 → 09-12, and the reassuring statement is dated *before* the window opens); Insta360-style IFA product launches incl. Anker's MindBase hub and Shelly's Wall Display Matter-controller update (01–08 Sept, at IFA, before the window); the CSA's Suzi (sub-GHz Zigbee) certification opening (2026-09-02); and the AWS us-east-1 outage that took cloud-only smart homes dark (2025-10-20 — a year old, re-surfaced this month by explainers). No rows below are outside the window.
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | Schneider Electric agrees to acquire Shelly Group — issuer announcement (Shelly Group SE Investor Relations, Corporate News) | https://corporate.shelly.com/en/news/shelly-group-has-entered-into-an-investment-agreement-with-schneider-electric-on-the-intended-voluntary-public-takeover | 2026-09-24 | All-cash offer of EUR 70.00 per Shelly Group share; values the company at approximately EUR 1.2 billion, a 27% premium to the unaffected reference price (EUR 55.2 as of 28 July 2026) and 22% to the reference price (EUR 57.5 as of 23 Sept 2026); minimum acceptance threshold 95% then squeeze-out; both founders (~57% of share capital) support it; FSC clearance expected end-Nov/early-Dec 2026, closing expected Q1 2027; Shelly is described in its own release as "a software-led platform for home energy management" whose "growth model combines interoperable hardware with cloud-enabled services" and which "generates revenue from its cloud applications" | Local-first relay/CT-clamp energy-hardware vendor (the brand Home Assistant's own docs tell users to buy for local-API energy monitoring) consolidated into an industrial energy-management group | 92 |
+| 2 | Schneider Electric's own release text for the same offer (acquirer side) | https://www.debevoise.com/-/media/document/2026/10/schneiderelectricannouncesavoluntarypublictakeover.pdf | 2026-09-24 | "an all-cash transaction valued at €1.2 bn"; offer subject to a minimum acceptance threshold of 95% "enabling Schneider Electric to acquire full ownership through a subsequent squeeze-out"; Frederic Godemel, EVP Energy Management: "By combining Shelly's software-led home energy platform with Schneider Electric's technology leadership, we unlock the next level of Energy Intelligence across residential, retrofit and small commercial buildings"; the deal is explicitly aimed at "Home and small buildings" | The acquirer frames the asset as a software-led home-energy platform inside a building/campus automation portfolio — the residential layer is the entry point, not the destination | 90 |
+| 3 | Shelly Group — Tender Offer page (Bidder's stated intentions) | https://corporate.shelly.com/en/page/tender-offer | 2026-09-24 | Purpose of the acquisition: "to acquire up to 100% of the share capital and voting rights of the Target and thereby secure full ownership and control over the Target"; the Bidder "intends to maintain the headquarters and the production facilities of the Company or its Group as well as the geographical footprint of the Group for a period at least until 31 December 2029" — the preservation promise is a dated corporate commitment about premises and staffing, and it does not name the local API, MQTT or the open interface | The firmest protection the homeowner has is a three-year real-estate/headcount commitment expiring 31 Dec 2029 — a lease on behaviour, not a guarantee about the product interface | 84 |
+| 4 | Shelly Group SE Board of Directors' positive opinion on the registered offer (company ad-hoc announcement) | https://markets.ft.com/data/announce/detail?dockey=600-202610051505DGAP____ADHOC____adhoc_2410688_en-1 | 2026-10-05 | Board "supports" the offer at EUR 70.00 per share and considers it "fair and adequate from a financial point of view"; offer registered with the Bulgarian Financial Supervision Commission (FSC) on 28 September 2026 and to be published on FSC approval; the board cites the Bidder's stated intentions on "management, geographical footprint, employment levels and the preservation of its core trademarks" | The deal advanced inside the window (registered 28 Sept, board opinion 5 Oct) — the second mover in the same story, not a new component of it | 82 |
+| 5 | Reuters — Schneider to launch €1.2 billion bid for Shelly | https://www.reuters.com/legal/transactional/schneider-agrees-takeover-bid-shelly-70-per-share-2026-09-24 | 2026-09-24 | Independent confirmation of the voluntary public takeover offer at €70 per share for "Bulgarian smart-home device maker Shelly Group"; secondary (the issuers' own releases are the record) | Third-party corroboration of the price and the target's category | 70 |
+| 6 | Home Assistant 2026.10 "You are here" release notes (platform release) | https://www.home-assistant.io/blog/2026/10/07/release-202610 | 2026-10-07 | "The map provider we relied on started stamping an 'API key required' message across its map images, breaking every map in Home Assistant at once." Response: switch from pre-rendered images to vector tiles from the OpenStreetMap Foundation, fetched and cached "through your Home Assistant instance, so your browser does not contact external tile servers directly"; recently viewed map areas survive "a short internet hiccup"; 15 new integrations; a new Modbus connections panel; "connecting your AI in one click"; Nabu Casa migrated all servers to bare metal and added a latency checker | The same fortnight the hardware layer was sold, the platform layer removed an external API dependency and pulled the data path inside the house — the two halves of a "local-first" home moved in opposite directions | 90 |
+| 7 | Home Assistant Core 2026.10 changelog (release record) | https://www.home-assistant.io/changelogs/core-2026.10 | 2026-10-07 | "Add option to require an admin user for the MCP server endpoint" (core PR #180713) — an access control on the new agent-facing endpoint; also records the SolarEdge Modbus (local, no account) integration work landing in the release train | The platform's own answer to agent access to home telemetry is an authorisation gate, not a cloud proxy — evidence the local-first claim is being enforced at the interface | 66 |
+| 8 | homeassistant-ai/ha-mcp — unofficial Home Assistant Model Context Protocol server (GitHub) | https://github.com/homeassistant-ai/ha-mcp | 2026-10-06 | 5.0k stars, 232 forks, 2,959 commits, MIT; exposes a Home Assistant instance's entities and services to LLM agents over MCP; repo activity 6 Oct 2026 | The home's telemetry and actuators are being wired to LLM agents through a community server faster than the platform vendors have shipped theirs — the control plane is moving into the same house the sensors live in | 64 |
+
+## Candidate Synthesis Pairs
+
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=8 candidates=0 heuristic=- window=2026-09-13..2026-10-13 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+_No mechanically valid pair. That is a legitimate answer, not a failure: the Judge may still find a synthesis this token layer cannot see._
+<!-- synthesis-seed:end -->
+
+## Primary sources (corroboration — every URL an artifact may cite must appear in this file)
+
+Signal 1–4 primaries / corroboration:
+- https://corporate.shelly.com/en/news/shelly-group-se-disclosure-of-inside-information-about-recent-media-reports
+- https://www.reuters.com/legal/transactional/schneider-agrees-takeover-bid-shelly-70-per-share-2026-09-24
+- https://www.wsj.com/business/deals/schneider-electric-to-launch-bid-for-shelly-group-in-1-4-billion-deal-c6cc008e
+- https://finance.yahoo.com/markets/stocks/articles/shelly-group-board-backs-schneider-071830054.html
+- https://www.se.com/ww/en/about-us/investor-relations/regulatory-information/overview
+- https://memoori.com/shelly-group-will-schneider-electric-buy-e1-3-billion
+
+Signal 6–8 primaries (the platform side):
+- https://www.home-assistant.io/docs/energy/electricity-grid
+- https://www.home-assistant.io/blog/2026/10/02/big-tech-ruined-the-cloud-so-were-renaming-ours/
+- https://www.home-assistant.io/cloud/
+- https://support.nabucasa.com/hc/en-us/articles/39385482184733
+- https://www.home-assistant.io/integrations/map_tiles/
+
+Dropped as out-of-window (recorded so a later reviewer does not re-surface them as fresh):
+- https://www.lg.com/global/newsroom/news/statements/statement-understanding-privacy-on-lg-smart-tvs (2026-09-12)
+- https://www.theverge.com/tech/987936/anker-eufy-mindbase-ai-security-camera-system-matter (2026-09-03)
+- https://csa-iot.org/newsroom (Suzi certification, 2026-09-02)

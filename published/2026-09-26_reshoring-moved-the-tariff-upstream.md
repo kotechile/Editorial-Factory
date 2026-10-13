@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Towering pallets of industrial plastic resin sacks and packaging molds in a cavernous warehouse at twilight."
-image_caption: "The risk of trade tariffs has shifted from finished goods to the raw materials and packaging required for domestic assembly."
+image_alt: "Tariffs Move Upstream. Towering pallets of industrial plastic resin sacks and packaging molds in a cavernous warehouse at twi"
+image_caption: "Tariffs Move Upstream: New upstream tariffs threaten reshored supply chains."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

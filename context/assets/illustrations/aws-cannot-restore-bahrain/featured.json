@@ -1,0 +1,90 @@
+{
+  "slug": "aws-cannot-restore-bahrain",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Severed modular data storage block resting on concrete, separated from a solitary intact backup drive.",
+      "caption": "When a cloud region fails permanently, only an external backup outside the provider's control survives.",
+      "title": "severed-cloud-region-backup",
+      "bytes": 2056123,
+      "sha256": "sha256:82095d4b0535bc75ce6f6f0eaa8350d2"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "matte clay 3D render of a small mechanical assembly resting on weathered concrete. extreme asymmetry with off-centre hero object. three recognisable engineered parts: a large modular server housing that is physically split and darkened, sitting next to a completely detached, intact solid-state backup drive module placed far to the right edge. the parts are arranged in a clear physical separation that states the idea of remote, disconnected storage. matte surfaces with moulding seams and deep contact shadows resting on the concrete, one directional key light raking across them from the left, throwing long cast shadows. matte muted palette of charcoal grey and stark white. no plain spheres or wedges, no text, no moulded lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, labels, typography, print",
+  "rationale": "A clay render perfectly captures the structural reality of regional cloud architecture and the physical severing of data availability, using a stark, tactile assembly of recognizable modular parts.",
+  "cue": "declared permanently unrecoverable",
+  "subject": "a severed modular data storage block with an isolated intact backup drive",
+  "core_thesis": "A cloud region can be permanently unrecoverable, making an external, out-of-provider backup the only true guarantee of data survival.",
+  "core_conflict": "Regional redundancy vs catastrophic physical loss",
+  "composition": "extreme asymmetry with off-centre hero object",
+  "alt_text": "AWS Cannot Restore Bahrain. Severed modular data storage block resting on concrete, separated from a solitary intact backup d",
+  "caption": "AWS Cannot Restore Bahrain: When a cloud provider declares a region unrecoverable.",
+  "title": "AWS Cannot Restore Bahrain",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/aws-cannot-restore-bahrain/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1582389,
+  "sha256": "sha256:1145bedc1c5c518ba6e12f0ab66a52e424702ce5d2a10644b929bfdb1ad41058",
+  "source_hash": "sha256:5847e27b418412d72eaba57b0f7eedd3",
+  "source_chars": 5521,
+  "task_id": "aa3fd212ba767cac85d6ef631fcc3a3a",
+  "credits": 18.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d38d92c06d8da9d7d952ddc1e044a452.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "matte clay 3D render of a small mechanical assembly resting on weathered concrete. extreme asymmetry with off-centre hero object. three recognisable engineered parts: a large modular server housing that is physically split and darkened, sitting next to a completely detached, intact solid-state backup drive module placed far to the right edge. the parts are arranged in a clear physical separation that states the idea of remote, disconnected storage. matte surfaces with moulding seams and deep contact shadows resting on the concrete, one directional key light raking across them from the left, throwing long cast shadows. matte muted palette of charcoal grey and stark white. no plain spheres or wedges, no text, no moulded lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-13T11:42:49+00:00",
+  "overlay": {
+    "kicker": "CLOUD ARCHITECTURE // REGIONAL LOSS",
+    "title": "AWS CANNOT RESTORE BAHRAIN",
+    "hook": "When a cloud provider declares a region unrecoverable",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 75,
+    "contrast": 4.6,
+    "target": 4.5,
+    "clutter": 0.155,
+    "region_rgb": [
+      147,
+      137,
+      120
+    ],
+    "binding_rgb": [
+      116,
+      110,
+      96
+    ],
+    "title_lines": [
+      "AWS CANNOT",
+      "RESTORE BAHRAIN"
+    ],
+    "subject": 0.087,
+    "ink_subject": 0.051,
+    "spike": 0.232,
+    "generated_at": "2026-10-13T11:42:49+00:00"
+  }
+}

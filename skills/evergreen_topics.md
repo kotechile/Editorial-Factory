@@ -120,6 +120,14 @@ months" or "6 months"; `at least six months — …` generates no pattern at all
 `figure_absent`). Lead the cell with the figure, then the gloss, and never bury it after prose —
 the same row that fails this way will pass once the figure moves to the front.
 
+**Lead the `De-dup:` line with the artifact, not with the word "evergreen" (learned 2026-10-13).**
+`evergreen_gate.check_dedup` returns the *first* ref in the line that matches a filename, and its ref
+regex accepts any run of 9+ `[a-z0-9-]` characters — so "the published evergreen `2026-10-06_<slug>`"
+matches on the word **evergreen** (every `*_evergreen_brief.md` satisfies it) and the marker records
+`dedup="matched a prior artifact: evergreen"`: the gate still PASSes, but the audit trail names nothing.
+Open the field with the bare slug or date-slug (`` `2026-10-06_<slug>` is this vertical's nearest prior
+evergreen artifact … ``) so the marker proves the check the rule intends.
+
 **A multi-token figure can verify on the wrong number.** `citation_hub_dossier.figure_evidence`
 returns evidence as soon as *any* numeric token in the cell appears in the fetched page, so a range
 written `8% to 15%` will "verify" on a bare `8` the source never tied to the claim (observed: the
@@ -144,6 +152,18 @@ print(c.fetch_source('<url>')['status'])"
 A `verified` row needs `status == 'fetched'`; a 403/404/PDF row fails the floor no matter how good
 the figure is, so build the topic around sources that actually retrieve.
 
+**arXiv `abs` pages carry no numbers — cite the `/html/<id>vN` full text for any mined figure (learned 2026-10-13).**
+The abstract page fetches fine and its prose supports a qualitative row, but the numeric figure a row leads with
+is usually absent from it: the `abs` page for "Quantifying Variance in Evaluation Benchmarks" rendered zero `%`
+tokens, while the same paper's `/html/2406.10229v1` carries the tables. `https://arxiv.org/html/<id>vN` retrieves
+with the figure as text (45–110 KB bodies observed; an ICML position paper's "92.5% coverage at N=100", its
+"N = 20 questions" figure and an "at least 1,000 questions" recommendation were all present there and absent from
+the corresponding `abs` pages), so build every numeric row on the HTML full text and keep the `abs` URL only when
+the row cites a claim the abstract itself states. Same run: `nvlpubs.nist.gov` PDFs come back `unsupported` (no
+PDF extractor in the fetch path), but NIST's own HTML news/publication pages for a report fetch at ~12 KB carrying
+that report's findings, its benchmark names, its model count and the document number — a standards row the PDF
+cannot carry.
+
 **A `fetched` row can also be an error page wearing HTTP 200 — check the body, not just the status.**
 EIA's `epm_table_grapher.php` URLs (Electric Power Monthly figure tables) intermittently answer 200 with
 a ~260-character stub reading *"Sorry! Unexpected Error … routed to the appropriate person"* and no
@@ -164,6 +184,20 @@ leaning on a secondary writeup. Fails: `raspberrypi.com` documentation (403), `r
 `analytics.home-assistant.io` (HTTP 200 but ~700 characters — its install-count stub is the whole page).
 A price page is a legitimate row for a price claim as long as its table cell reads `vendor claim`, and a
 per-unit figure written `$4.00 per month` verifies on the row's own `$ 4.00` token.
+
+**`eur-lex.europa.eu` fetches but cannot carry a quoted row (observed 2026-10-12).** A full Official
+Journal regulation page (`https://eur-lex.europa.eu/eli/reg/…/oj/eng`) retrieves at HTTP 200 with a
+~300 KB body, yet the article's own text is not in the fetched document: a brief row quoting the Data
+Act's switching-charge wording (`switching charges`, `12 January 2027` in the operative sentence) read
+`figure_absent` twice in a row while the page's navigation and the date table did match. Cite the
+regulation through a page whose prose the fetcher can actually read (a national regulator's summary, a
+commission implementation page, or the consolidated-version text page), or drop the row — do not
+assume the OJ link is self-evidencing because the regulation is public. The same run re-confirmed the
+EIA `electricity/monthly/update/end-use.php` flakiness below: one `--check-artifacts` pass read a row
+`figure_absent` (18.31 cents/kWh) and a re-probe minutes later found the figure on the same page, so
+treat an EIA row that fails once as retryable-before-replaceable.
+
+**A row on `artificialintelligenceact.eu` can verify on a navigation digit — eye-check the phrase, not the gate's excerpt (observed 2026-10-12).** The site lists every article number in its sidebar above the body, and `figure_evidence` matches a single numeric token anywhere on the page: a row citing "15 days" from Article 73 "verified" against `Arts. 8–15` in the nav, and a row citing "72 hours" from GDPR Article 33 against `Art. 72 Procedure`, so the marker's evidence excerpt reads as navigation while the real quote sits further down. The rows are honest — the phrases are in the body — but the audit trail is not self-evidencing, so confirm each phrase inside its own sentence before drafting and write the check into the verified companion (`python3 -c "import sys,re; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; t=c.fetch_source('<url>')['text']; print(re.search(r'.{0,160}15 days.{0,160}', t).group(0))"`). Prefer a lead figure the page states once — a full date ("2 December 2027") or a rare phrase is safer than a two-digit number the nav already contains.
 
 **A `fetched` row can still fail as `figure_absent` — the page loaded and the number did not.**
 Several vendor rate-card hosts render their tables client-side, so the verifier gets HTTP 200 with a

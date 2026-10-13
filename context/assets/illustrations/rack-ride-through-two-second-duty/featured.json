@@ -1,0 +1,88 @@
+{
+  "slug": "rack-ride-through-two-second-duty",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A vast array of high-voltage data center substation transformers compressed through a telephoto lens.",
+      "caption": "A local duty to protect servers can leave a multi-gigawatt hole in the wider grid.",
+      "title": "Right Locally Wrong by 3.8 GW",
+      "bytes": 712207,
+      "sha256": "sha256:185aeedbf639a13f485dcaf8416a9be0"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto long-lens view of a massive data center electrical substation array. Asymmetric telephoto compression stacking layers of heavy infrastructure. Towering galvanized steel transformer ribs, frosted ceramic high-voltage insulators, and thick copper busbars stretching into the distance. Sharp directional lighting carving deep industrial contrast, casting long hard shadows across the textured concrete yard. Crystal-clear telephoto distance clarity, flat compressed perspective, no fog or haze, no people. Premium editorial cover standard, quiet confidence.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, illegible text, logos",
+  "rationale": "The story is about the massive scale of aggregate power drops\u20143.8 GW lost in an instant. A compressed telephoto shot of heavy power infrastructure visually communicates the overwhelming physical scale of these data center loads.",
+  "cue": "Right Locally, Wrong by 3.8 GW",
+  "subject": "a vast array of high-voltage data center substation transformers",
+  "core_thesis": "Data center operators standardized a two-second ride-through to protect their local servers, inadvertently creating a systemic vulnerability that can shear 3.8 GW off the wider electrical grid.",
+  "core_conflict": "Local facility protection vs. global grid stability",
+  "composition": "asymmetric telephoto compression stacking layers of heavy infrastructure",
+  "alt_text": "The 3.8 GW Grid Dropoff. A vast array of high-voltage data center substation transformers compressed through a telephoto lens",
+  "caption": "The 3.8 GW Grid Dropoff: Tech giants set new rules to survive grid voltage dips.",
+  "title": "The 3.8 GW Grid Dropoff",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/rack-ride-through-two-second-duty/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404205,
+  "sha256": "sha256:493cf75c1c9b258b202dd6afe4f8e18f94617751920e3ccdfadb0db8f627cc0f",
+  "source_hash": "sha256:919dd141b2cba489ad5f3d257374134b",
+  "source_chars": 8312,
+  "task_id": "1c9a2c3a5129dcd64d9fa24234e9ef03",
+  "credits": 5.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1c9a2c3a5129dcd64d9fa24234e9ef03_1791890345263.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto long-lens view of a massive data center electrical substation array. Asymmetric telephoto compression stacking layers of heavy infrastructure. Towering galvanized steel transformer ribs, frosted ceramic high-voltage insulators, and thick copper busbars stretching into the distance. Sharp directional lighting carving deep industrial contrast, casting long hard shadows across the textured concrete yard. Crystal-clear telephoto distance clarity, flat compressed perspective, no fog or haze, no people. Premium editorial cover standard, quiet confidence.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-13T11:19:08+00:00",
+  "overlay": {
+    "kicker": "GRID RELIABILITY // DATA CENTERS",
+    "title": "THE 3.8 GW GRID DROPOFF",
+    "hook": "Tech giants set new rules to survive grid voltage dips",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 75,
+    "contrast": 5.68,
+    "target": 5.5,
+    "clutter": 0.326,
+    "region_rgb": [
+      70,
+      68,
+      65
+    ],
+    "binding_rgb": [
+      146,
+      129,
+      113
+    ],
+    "title_lines": [
+      "THE 3.8 GW GRID",
+      "DROPOFF"
+    ],
+    "subject": 0.108,
+    "ink_subject": 0.046,
+    "spike": 0.357,
+    "generated_at": "2026-10-13T11:19:08+00:00"
+  }
+}

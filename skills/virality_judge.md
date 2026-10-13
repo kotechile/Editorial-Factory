@@ -26,6 +26,15 @@ only**: it is not a composite, it cannot clear the ≥ 8 gate, and a seeded cand
 verdict. *"No valid pair"* in the block is a legitimate input — look for a synthesis the token layer
 missed, and if none clears the gate, publish the single-signal winner.
 
+**A pair whose shared axis is a measurement always seeds as "no valid pair" (learned 2026-10-13).**
+The helper matches *vocabulary* against the registry archetypes; it has no archetype for two published
+readings of the same network. Two legs that collide on their metrics — a vessel on-time rate ⨂ a
+terminal dwell figure, a defect rate ⨂ a rework cost — carry no axis_a/axis_b tokens in common and come
+back `candidates=0` even when the collision is the strongest story of the window. That is the case the
+Judge exists for: score the pair normally under §2.5 (both legs primary, both dated inside the window),
+carry the flag through to the artifact, and re-run the seed once the row set is frozen so `verify.sh` §8
+sees a fresh marker instead of reading the block as stale.
+
 - **The Core Synthesis Question**: *What strategic tension or economic shift appears when Trend A collides with Trend B that neither article could state on its own?*
 - **Canonical Example**:
   - *Signal A*: Frontier LLM API prices drop sharply (e.g., token pricing falling 70–80% across frontier models).

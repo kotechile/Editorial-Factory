@@ -1,0 +1,88 @@
+{
+  "slug": "battery-payback-five-state-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical home battery units shown in a split screen, one brightly lit and the other in deep shadow.",
+      "caption": "The exact same home battery now offers drastically different returns depending on local utility programs and grid reliability.",
+      "title": "Home Battery Geographic Payback Divide",
+      "bytes": 294502,
+      "sha256": "sha256:84c14abdea8fe77a494001c4fd77b6bc"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing split-screen diptych composition. Left side: a sleek, modern home battery inverter wall unit mounted in a garage, brightly illuminated by warm amber practical worklights and glowing utility connection indicators, signaling integration. Right side: the exact same battery unit on an identical garage wall, but submerged in cold blue-hour darkness and deep shadows of an unpowered outage, isolated from the grid. Crisp atmospheric depth, restrained teal-and-amber palette, highly detailed brushed metals and textured matte polymers, heavy editorial framing.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermark, people, faces, hands, labels",
+  "rationale": "A cinematic split-screen diptych perfectly captures the stark geographic disparity between two identical hardware setups, illustrating how location and utility integration completely change the battery's value proposition.",
+  "cue": "Two identical battery setups now offer completely different paybacks",
+  "subject": "two identical modern home battery wall units in contrasting lighting",
+  "core_thesis": "A home battery's financial viability now heavily depends on geographic location, local utility payouts, and grid outage frequency rather than universal federal incentives.",
+  "core_conflict": "Utility-backed virtual power plants (VPPs) paying for grid support versus standalone residential backup during outages.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The 5-State Battery Gap. Two identical home battery units shown in a split screen, one brightly lit and the other in deep sha",
+  "caption": "The 5-State Battery Gap: Why home backup power now depends on local utilities.",
+  "title": "The 5-State Battery Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/battery-payback-five-state-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 161456,
+  "sha256": "sha256:f187d83dc1eda4cde1321972ea03b4cf25755bbc7a9dd987148dad82b01ecccd",
+  "source_hash": "sha256:6f523b679474626d5ef41dabbfd31056",
+  "source_chars": 4915,
+  "task_id": "d1c5fe11b611d12cc6cfa757ea5d626f",
+  "credits": 5.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d1c5fe11b611d12cc6cfa757ea5d626f_1791807084561.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing split-screen diptych composition. Left side: a sleek, modern home battery inverter wall unit mounted in a garage, brightly illuminated by warm amber practical worklights and glowing utility connection indicators, signaling integration. Right side: the exact same battery unit on an identical garage wall, but submerged in cold blue-hour darkness and deep shadows of an unpowered outage, isolated from the grid. Crisp atmospheric depth, restrained teal-and-amber palette, highly detailed brushed metals and textured matte polymers, heavy editorial framing.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-12T12:11:28+00:00",
+  "overlay": {
+    "kicker": "HOME BATTERIES // PAYBACK DIVIDE",
+    "title": "THE 5-STATE BATTERY GAP",
+    "hook": "Why home backup power now depends on local utilities",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.7,
+    "target": 4.5,
+    "clutter": 0.123,
+    "region_rgb": [
+      22,
+      28,
+      28
+    ],
+    "binding_rgb": [
+      59,
+      43,
+      27
+    ],
+    "title_lines": [
+      "THE 5-STATE",
+      "BATTERY GAP"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.004,
+    "spike": 0.029,
+    "generated_at": "2026-10-12T12:11:28+00:00"
+  }
+}

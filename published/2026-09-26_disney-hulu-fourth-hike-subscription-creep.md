@@ -9,11 +9,11 @@ meta_title: "Disney+ and Hulu Just Raised Prices 13% — Right After…"
 meta_title_source: derived_from_title
 meta_description: "On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent to $21.49 a month. This marks the fourth price hike in four years."
 meta_description_source: derived_from_lead
-image_path: "context/assets/illustrations/disney-hulu-fourth-hike-subscription-creep/featured.png"
-image_style: paper_collage
-image_model: nanobanana
-image_alt: "Layered cut-paper collage of a billing invoice interlocking with a rising growth chart in muted ink colors."
-image_caption: "The latest ad-free tier price hike lands just weeks after combined operating profits for the services more than doubled."
+image_path: "context/assets/illustrations/disney-hulu-fourth-hike-subscription-creep/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Disney Plus Price Hike. An amended billing statement and rate notice resting slightly out of alignment on a plain desk surfac"
+image_caption: "Disney Plus Price Hike: Streaming costs rise three times faster than inflation."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

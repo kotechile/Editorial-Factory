@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/zet-scale-ev-truck-residual-value-risk/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Rows of identical heavy-duty trucks parked in a misty logistics yard at dawn."
-image_caption: "A single pooled order will nearly double the U.S. electric heavy truck fleet overnight."
+image_alt: "The 2500 Electric Truck Deal. A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a h"
+image_caption: "The 2500 Electric Truck Deal: How a new lease model unlocked a massive EV truck order."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

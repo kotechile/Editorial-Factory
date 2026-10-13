@@ -1,0 +1,88 @@
+{
+  "slug": "shippers-stuck-in-the-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Towering stacks of weathered shipping containers looming over a narrow rail transfer seam.",
+      "caption": "The delay a control tower cannot remove now sits in the handoff between the ship and the train, where buffer room is the scarce asset.",
+      "title": "Port Terminal Buffer Bottleneck",
+      "bytes": 338966,
+      "sha256": "sha256:c8d5d9c42ab5bea238c147ff087bc7f7"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "cinematic film still, anamorphic 35mm look, wide establishing composition. A towering, monolithic stack of weathered steel shipping containers looms asymmetrically on the left, dwarfing a narrow, shadowed rail transfer seam in the center. Crisp atmospheric depth, low-angle perspective, restrained teal-and-amber palette. A single strong practical worklight cuts across the steel siding, highlighting the lack of buffer space. No people facing camera, motion implied rather than shown. High-end editorial standard, dramatic scale and tension.",
+  "negative_prompt": "text, typography, letters, numbers, watermark, signature, garbled text",
+  "rationale": "The article explicitly points out the massive scale of the bottleneck at port terminals where ground buffer space is exhausted. A cinematic still captures this physical reality with dramatic lighting and monumental scale, illustrating the tension at the handoff point.",
+  "cue": "buffer room is the scarce asset",
+  "subject": "a massive, densely packed stack of shipping containers looming over a narrow rail transfer gap",
+  "core_thesis": "Global shipping delays have shifted from vessel transit to the critical handoff point between docked ships and rail transport, where physical buffer space has run out.",
+  "core_conflict": "Incoming cargo volume vs finite terminal ground capacity",
+  "composition": "asymmetric low-angle perspective with heavy foreground framing",
+  "alt_text": "Shippers Stuck In The Gap. Towering stacks of weathered shipping containers looming over a narrow rail transfer seam.",
+  "caption": "Shippers Stuck In The Gap: Falling on-time rates and rail dwell trap global cargo.",
+  "title": "Shippers Stuck In The Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/shippers-stuck-in-the-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 190433,
+  "sha256": "sha256:2e0fdfcc57e7e64ba12a4d281380e215d146dd081f02067431c9cf74737288b0",
+  "source_hash": "sha256:a470e2b78e4792783177b5e52c7a09ef",
+  "source_chars": 5598,
+  "task_id": "2e3eeec3f8efa213a775601039e04148",
+  "credits": 5.0,
+  "cost_ms": 61,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2e3eeec3f8efa213a775601039e04148_1791897421884.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "cinematic film still, anamorphic 35mm look, wide establishing composition. A towering, monolithic stack of weathered steel shipping containers looms asymmetrically on the left, dwarfing a narrow, shadowed rail transfer seam in the center. Crisp atmospheric depth, low-angle perspective, restrained teal-and-amber palette. A single strong practical worklight cuts across the steel siding, highlighting the lack of buffer space. No people facing camera, motion implied rather than shown. High-end editorial standard, dramatic scale and tension.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-13T13:17:03+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // RAIL BOTTLENECKS",
+    "title": "SHIPPERS STUCK IN THE GAP",
+    "hook": "Falling on-time rates and rail dwell trap global cargo",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.9,
+    "target": 4.5,
+    "clutter": 0.088,
+    "region_rgb": [
+      21,
+      24,
+      24
+    ],
+    "binding_rgb": [
+      30,
+      26,
+      23
+    ],
+    "title_lines": [
+      "SHIPPERS STUCK",
+      "IN THE GAP"
+    ],
+    "subject": 0.053,
+    "ink_subject": 0.025,
+    "spike": 0.163,
+    "generated_at": "2026-10-13T13:17:03+00:00"
+  }
+}

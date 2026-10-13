@@ -1,6 +1,6 @@
 {
   "slug": "disney-hulu-fourth-hike-subscription-creep",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -41,6 +41,14 @@
       "sha256": "sha256:c30600d82172c3c278ceb959e4465777",
       "generated_at": "2026-10-01T22:19:29+00:00",
       "source_hash": "sha256:08a132d7ee5d3711717814692ceef5ff"
+    },
+    {
+      "revision": 5,
+      "alt_text": "An amended billing statement and rate notice resting slightly out of alignment on a plain desk surface.",
+      "caption": "The latest round of streaming price hikes highlights how a stacked subscription model compounds costs for viewers.",
+      "title": "streaming-rate-notice-flatlay",
+      "bytes": 261586,
+      "sha256": "sha256:6df29701dff44d27ca0bb84db32a675c"
     }
   ],
   "style": "document_flatlay",
@@ -56,9 +64,9 @@
   "rationale": "The story hinges on a direct consumer cost increase and the changing economics of a subscription bill. A document flatlay of an amended rate notice captures the contractual shift and the sting of a compounding bill without needing literal logos.",
   "cue": "A Bill That Compounds",
   "subject": "an amended billing statement on a plain desk",
-  "alt_text": "An amended billing statement and rate notice resting slightly out of alignment on a plain desk surface.",
-  "caption": "The latest round of streaming price hikes highlights how a stacked subscription model compounds costs for viewers.",
-  "title": "streaming-rate-notice-flatlay",
+  "alt_text": "Disney Plus Price Hike. An amended billing statement and rate notice resting slightly out of alignment on a plain desk surfac",
+  "caption": "Disney Plus Price Hike: Streaming costs rise three times faster than inflation.",
+  "title": "Disney Plus Price Hike",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -68,8 +76,8 @@
   "local_path": "context/assets/illustrations/disney-hulu-fourth-hike-subscription-creep/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 261586,
-  "sha256": "sha256:6df29701dff44d27ca0bb84db32a675c",
+  "bytes": 149148,
+  "sha256": "sha256:15199e9e52290e1ffb862ee131bc074bf4ce4c03bc6fa3fde5a0a23ec5e68ede",
   "source_hash": "sha256:a079e5a91a3e4390d4f502aeaa258c34",
   "source_chars": 6864,
   "task_id": "570f9881af6c966a0511715d49a9dcf5",
@@ -84,5 +92,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-02T01:58:17+00:00"
+  "generated_at": "2026-10-02T01:58:17+00:00",
+  "overlay": {
+    "kicker": "STREAMING COSTS // AUTO-RENEW TRAP",
+    "title": "DISNEY PLUS PRICE HIKE",
+    "hook": "Streaming costs rise three times faster than inflation",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 30,
+    "contrast": 4.64,
+    "target": 4.5,
+    "clutter": 0.175,
+    "region_rgb": [
+      159,
+      158,
+      151
+    ],
+    "binding_rgb": [
+      143,
+      140,
+      131
+    ],
+    "title_lines": [
+      "DISNEY PLUS",
+      "PRICE HIKE"
+    ],
+    "subject": 0.185,
+    "ink_subject": 0.103,
+    "spike": 0.514,
+    "generated_at": "2026-10-02T01:58:17+00:00"
+  }
 }

@@ -1,0 +1,90 @@
+{
+  "slug": "slow-movers-hold-your-stock",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of massive dark storage racks dwarfing a small active loading bay, showing disproportionate floor space.",
+      "caption": "Slow-moving inventory masks its true cost by quietly consuming floor space and capital-days.",
+      "title": "Isometric Warehouse Long Tail Inventory",
+      "bytes": 8271728,
+      "sha256": "sha256:0234b70ce2ac4161ce22dd900e64c915"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Asymmetric composition off-centre. A massive, towering expanse of densely packed, dark industrial storage racks dwarfing a tiny, brightly lit modular picking bay in the corner. Flat muted palette with one vivid amber accent colour on the small active bay. Thin consistent line weight, laid over a real weathered concrete plant floor. Recognisable hardware with racks, pallets, and trays showing visible depth. One directional light casting long shadows across the concrete, unlabelled, generous empty margin.",
+  "negative_prompt": "text, typography, watermark, gibberish, lettering, labels, people, face, hands",
+  "rationale": "An isometric cutaway perfectly visualizes the structural disparity of the warehouse footprint, demonstrating how much physical space and capital the 'long tail' consumes compared to the active work area.",
+  "cue": "a floor-space and capital-days problem",
+  "subject": "massive static storage racks dwarfing a small active picking bay",
+  "core_thesis": "The long tail is not a margin problem \u2014 it is a floor-space and capital-days problem: score the prune on stock held per unit of work.",
+  "core_conflict": "Positive gross margin vs. hidden floor-space and capital-days costs",
+  "composition": "asymmetric composition off-centre",
+  "alt_text": "Hidden Costs Of Slow Stock. Isometric cutaway of massive dark storage racks dwarfing a small active loading bay, showing disp",
+  "caption": "Hidden Costs Of Slow Stock: How the long tail silently drains floor space and cash.",
+  "title": "Hidden Costs Of Slow Stock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/slow-movers-hold-your-stock/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 3412363,
+  "sha256": "sha256:d440122ab10795f574b500856b7577b3c80a319d0416df87a9f0f29202b5b57a",
+  "source_hash": "sha256:9f13c22e6fbb22c123339f3091a722be",
+  "source_chars": 5115,
+  "task_id": "6e859ebc0a4611389605ee868889952f",
+  "credits": 18.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_af222639d0fcb0c6b85fce316f325f07.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Asymmetric composition off-centre. A massive, towering expanse of densely packed, dark industrial storage racks dwarfing a tiny, brightly lit modular picking bay in the corner. Flat muted palette with one vivid amber accent colour on the small active bay. Thin consistent line weight, laid over a real weathered concrete plant floor. Recognisable hardware with racks, pallets, and trays showing visible depth. One directional light casting long shadows across the concrete, unlabelled, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-12T19:40:54+00:00",
+  "overlay": {
+    "kicker": "INVENTORY MANAGEMENT // SLOW STOCK",
+    "title": "HIDDEN COSTS OF SLOW STOCK",
+    "hook": "How the long tail silently drains floor space and cash",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 15,
+    "contrast": 5.54,
+    "target": 5.5,
+    "clutter": 0.356,
+    "region_rgb": [
+      224,
+      220,
+      214
+    ],
+    "binding_rgb": [
+      159,
+      164,
+      170
+    ],
+    "title_lines": [
+      "HIDDEN COSTS OF",
+      "SLOW STOCK"
+    ],
+    "subject": 0.236,
+    "ink_subject": 0.131,
+    "spike": 0.653,
+    "generated_at": "2026-10-12T19:40:54+00:00"
+  }
+}

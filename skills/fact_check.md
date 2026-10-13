@@ -29,6 +29,11 @@ For each claim:
    prose said "54% of those building with AI replace vendors" while its own table gave 54.4% *of the
    vendor-replacers* using AI). Extract from the table, check the arithmetic (count ÷ base), record the
    discrepancy in the Verbatim cell, and tell the drafter not to repeat the prose gloss.
+   A statistical agency's release and its own data table disagree too (observed 2026-10-12: the EIA's
+   October 2026 Winter Fuels Outlook release says "the forecast 30% increase in heating oil prices"
+   while the outlook's own heating-oil table gives a **+34%** price change and a +21% expenditure
+   change). Quote the table, and write the divergence into the verified brief so the drafter cannot
+   pick up the release's number by accident.
 
 ## 4. Output — the verified brief
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_verified_brief.md`:

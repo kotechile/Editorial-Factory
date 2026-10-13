@@ -1,0 +1,88 @@
+{
+  "slug": "agent-timeout-false-alarm-budget",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An intricate brass mechanical timer and steel calipers on a slate surface.",
+      "caption": "The deadline for an agent tool call must be a deliberate budget choice, not a default round number.",
+      "title": "precision_timer_budget",
+      "bytes": 361862,
+      "sha256": "sha256:f8fd7a9cb018bd080a558b4f5fe50279"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph, 100mm lens, razor-sharp focal plane. A partially disassembled, intricate brass mechanical timer mechanism resting on a dark slate surface, alongside a pair of polished steel engineering calipers. Softbox key light casting a long, deliberate contact shadow across the textured slate. Three-quarter angle, crisp catalogue clarity, deep amber and cool steel tones. Quiet, refined editorial aesthetic.",
+  "negative_prompt": "text, typography, watermark, garbled letters, numbers, floating elements, abstract shapes, ungrounded objects",
+  "rationale": "The story centers on a precise, measurable parameter (a timeout budget) that developers must deliberately 'buy' or set, rather than a systemic environment. A studio object shot of a precision timing instrument conveys the required exactitude and the tangible consequence of setting a deadline.",
+  "cue": "the deadline is a strict budget choice",
+  "subject": "a precision mechanical timer and engineering calipers",
+  "core_thesis": "Agent tool call retries sit inside a loop the model drives, requiring deadlines based on false-timeout budgets rather than arbitrary round numbers.",
+  "core_conflict": "Arbitrary round-number timeouts vs precise, mathematically derived latency budgets (0.1% false-timeout rate).",
+  "composition": "asymmetric composition, hero object anchored in the lower right third with generous negative space",
+  "alt_text": "Agent Timeout Budgets. An intricate brass mechanical timer and steel calipers on a slate surface.",
+  "caption": "Agent Timeout Budgets: Why lazy timeout settings break agent retry loops.",
+  "title": "Agent Timeout Budgets",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-timeout-false-alarm-budget/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 215145,
+  "sha256": "sha256:661b17506876ce73eeb50b2bdf4c4618a8a63e5025aedf64fb25c230bb09dbd6",
+  "source_hash": "sha256:bb46f683b948c670fa4e70a702a606a3",
+  "source_chars": 4790,
+  "task_id": "77804ff1470ef265f44460847f01ec20",
+  "credits": 5.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/77804ff1470ef265f44460847f01ec20_1791826650707.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph, 100mm lens, razor-sharp focal plane. A partially disassembled, intricate brass mechanical timer mechanism resting on a dark slate surface, alongside a pair of polished steel engineering calipers. Softbox key light casting a long, deliberate contact shadow across the textured slate. Three-quarter angle, crisp catalogue clarity, deep amber and cool steel tones. Quiet, refined editorial aesthetic.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-12T17:37:36+00:00",
+  "overlay": {
+    "kicker": "AGENT TOOL CALLS // TIMEOUTS",
+    "title": "AGENT TIMEOUT BUDGETS",
+    "hook": "Why lazy timeout settings break agent retry loops",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.43,
+    "target": 4.5,
+    "clutter": 0.17,
+    "region_rgb": [
+      69,
+      76,
+      88
+    ],
+    "binding_rgb": [
+      87,
+      97,
+      109
+    ],
+    "title_lines": [
+      "AGENT TIMEOUT",
+      "BUDGETS"
+    ],
+    "subject": 0.095,
+    "ink_subject": 0.055,
+    "spike": 0.256,
+    "generated_at": "2026-10-12T17:37:36+00:00"
+  }
+}

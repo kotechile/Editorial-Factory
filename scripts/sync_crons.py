@@ -88,29 +88,71 @@ def in_peak_hour(hour):
     return any(lo <= hour < hi for lo, hi in PEAK_WINDOWS_UTC)
 
 
+def expand_cron_field(field, lo, hi):
+    """The set of values a cron field covers, or None when it cannot be read.
+
+    Handles '*', plain values, ranges ('a-b'), steps ('*/n', 'a-b/n') and comma lists. A field
+    that cannot be read returns None, and the caller must treat None as *unproven*, never as
+    off-peak — that is the property that keeps the gate un-satisfiable by accident.
+    """
+    out = set()
+    for part in str(field or "").split(","):
+        part = part.strip()
+        if not part:
+            return None
+        base, _, step_txt = part.partition("/")
+        if step_txt:
+            try:
+                step = int(step_txt)
+            except ValueError:
+                return None
+            if step <= 0:
+                return None
+        else:
+            step = 1
+        if base == "*":
+            start, end = lo, hi
+        elif "-" in base.lstrip("-"):
+            a, _, b = base.partition("-")
+            try:
+                start, end = int(a), int(b)
+            except ValueError:
+                return None
+        else:
+            try:
+                start = end = int(base)
+            except ValueError:
+                return None
+        if start > end or start < lo or end > hi:
+            return None
+        out.update(range(start, end + 1, step))
+    return out or None
+
+
 def cadence_verdict(cadence):
-    """('ok'|'peak'|'unknown', message) for a 5-field cron cadence, weekday fires only."""
+    """('ok'|'peak'|'unknown', message) for a 5-field cron cadence, weekday fires only.
+
+    An hour expression is *expanded* rather than assumed: a range such as '11-23' or a step such
+    as '*/2' is read value by value, so a cadence that genuinely clears both windows ('11-23' does)
+    is no longer reported as a violation. Anything unreadable stays unproven and is reported.
+    """
     parts = (cadence or "").strip().split()
     if len(parts) != 5:
         return "unknown", f"not a 5-field cron expression: {cadence!r}"
     minute, hour, dom, month, dow = parts
-    try:
-        dows = list(range(0, 7)) if dow == "*" else [int(d) % 7 for d in dow.split(",")]
-    except ValueError:
+    dows = expand_cron_field(dow, 0, 7)
+    if dows is None:
         return "unknown", f"unreadable day-of-week field: {dow!r}"
+    dows = {d % 7 for d in dows}
     weekdays = [d for d in dows if d in PEAK_DAYS]
     if not weekdays:
         return "ok", "weekend only — weekends are off-peak all day"
-    if hour == "*":
-        hours = None
-    elif hour.startswith("*/") or "," in hour or "-" in hour:
-        hours = None
-    else:
-        try:
-            hours = [int(hour)]
-        except ValueError:
-            return "unknown", f"unreadable hour field: {hour!r}"
-    if hours is None or any(in_peak_hour(h) for h in hours):
+    hours = expand_cron_field(hour, 0, 23)
+    if hours is None:
+        return "peak", (f"cadence '{cadence}' has an unreadable hour field — it cannot be proven "
+                        f"off-peak against the DeepSeek peak windows "
+                        f"(Mon-Fri 01:00-04:00 / 06:00-10:00 UTC, 2x tokens)")
+    if any(in_peak_hour(h) for h in hours):
         return "peak", (f"cadence '{cadence}' fires inside a DeepSeek peak window "
                         f"(Mon-Fri 01:00-04:00 / 06:00-10:00 UTC, 2x tokens)")
     return "ok", "weekday fires are outside the peak windows"

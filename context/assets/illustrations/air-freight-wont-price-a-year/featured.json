@@ -1,0 +1,88 @@
+{
+  "slug": "air-freight-wont-price-a-year",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Densely packed intermodal shipping containers and warehouse bays viewed through a compressed telephoto lens.",
+      "caption": "As warehousing space shrinks and air freight terms shorten, the physical buffer in supply chains is becoming exceptionally tight.",
+      "title": "Supply Chain Capacity Squeeze",
+      "bytes": 541419,
+      "sha256": "sha256:e33d6f6359b29df309324aa2e1292b43"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A 200mm telephoto compression shot of densely stacked intermodal cargo containers towering next to a massive industrial warehouse exterior, crystal-clear distance clarity. Flat compressed perspective, sharp directional sunlight and deep industrial contrast, casting long dark shadows over the narrow remaining aisles. The stacked structures create a claustrophobic sense of constrained physical capacity, painted in weathered industrial blues and faded safety orange. No people in the foreground, no fog or haze, crisp clean high-contrast atmosphere.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, people, faces, fog, haze, blurry",
+  "rationale": "For a logistics story about capacity constraints and the physical reality of safety stock, long-lens telephoto compression perfectly captures the sheer scale and claustrophobic tightening of warehouse and freight space.",
+  "cue": "Both legs of the buffer-versus-expedite trade stopped being priceable",
+  "subject": "densely stacked intermodal containers and warehouse bays",
+  "core_thesis": "Supply chain safety-stock models are breaking down as both fast shipping options and physical warehousing capacity become simultaneously constrained and unpredictable.",
+  "core_conflict": "buffer versus expedite (warehousing capacity vs air freight availability)",
+  "composition": "flat compressed perspective with stacked overlapping layers",
+  "alt_text": "The Safety Stock Squeeze. Densely packed intermodal shipping containers and warehouse bays viewed through a compressed teleph",
+  "caption": "The Safety Stock Squeeze: Short air deals and tight storage break the safety buffer.",
+  "title": "The Safety Stock Squeeze",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/air-freight-wont-price-a-year/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 273592,
+  "sha256": "sha256:d9160395ed5f8a938b063faa28aa97d89a6f70f1c07b5375861d8b6b91bf01fc",
+  "source_hash": "sha256:0c2af8e536ca4553fa416cba4341b1d6",
+  "source_chars": 5957,
+  "task_id": "d6d6d09f47e49da5edba3a9e5770b3e9",
+  "credits": 5.0,
+  "cost_ms": 33,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d6d6d09f47e49da5edba3a9e5770b3e9_1791808718638.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A 200mm telephoto compression shot of densely stacked intermodal cargo containers towering next to a massive industrial warehouse exterior, crystal-clear distance clarity. Flat compressed perspective, sharp directional sunlight and deep industrial contrast, casting long dark shadows over the narrow remaining aisles. The stacked structures create a claustrophobic sense of constrained physical capacity, painted in weathered industrial blues and faded safety orange. No people in the foreground, no fog or haze, crisp clean high-contrast atmosphere.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-12T12:38:42+00:00",
+  "overlay": {
+    "kicker": "LOGISTICS // FREIGHT CONTRACTS",
+    "title": "THE SAFETY STOCK SQUEEZE",
+    "hook": "Short air deals and tight storage break the safety buffer",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.68,
+    "target": 4.5,
+    "clutter": 0.046,
+    "region_rgb": [
+      19,
+      21,
+      24
+    ],
+    "binding_rgb": [
+      27,
+      28,
+      32
+    ],
+    "title_lines": [
+      "THE SAFETY",
+      "STOCK SQUEEZE"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-12T12:38:42+00:00"
+  }
+}

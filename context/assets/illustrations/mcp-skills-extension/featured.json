@@ -1,6 +1,6 @@
 {
   "slug": "mcp-skills-extension",
-  "revision": 5,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -35,6 +35,30 @@
       "title": "MCP-Skills-Stack-Split",
       "bytes": 2386236,
       "sha256": "sha256:848e67350cbf115e15e983133316b009"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+      "title": "The MCP Skills Extension",
+      "bytes": 1727995,
+      "sha256": "sha256:0395bb404fcd5389a4272836b6f10d39661b9d685c14e9cf8558bb099a5c3c4a"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+      "title": "The MCP Skills Extension",
+      "bytes": 1726354,
+      "sha256": "sha256:5289ff17377d974b1df19ec59482f8c1a47147df673947a4a351d9113c6c95c3"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+      "title": "The MCP Skills Extension",
+      "bytes": 1726354,
+      "sha256": "sha256:5289ff17377d974b1df19ec59482f8c1a47147df673947a4a351d9113c6c95c3"
     }
   ],
   "style": "paper_collage",
@@ -65,8 +89,8 @@
   "local_path": "context/assets/illustrations/mcp-skills-extension/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1727995,
-  "sha256": "sha256:0395bb404fcd5389a4272836b6f10d39661b9d685c14e9cf8558bb099a5c3c4a",
+  "bytes": 1726354,
+  "sha256": "sha256:5289ff17377d974b1df19ec59482f8c1a47147df673947a4a351d9113c6c95c3",
   "source_hash": "sha256:91577c57e1dca7fb93371f9433e06c77",
   "source_chars": 4130,
   "task_id": "62ca9d88bc1fe8992614d5d5046e25bd",
@@ -88,26 +112,29 @@
     "kicker": "AGENT ARCHITECTURE // MCP SKILLS",
     "title": "THE MCP SKILLS EXTENSION",
     "hook": "Standardizing how agents discover and retrieve workflows",
-    "anchor": "top-left",
+    "anchor": "top-right",
     "light": false,
     "scrim": 0,
-    "contrast": 9.84,
-    "target": 5.5,
-    "clutter": 0.324,
+    "contrast": 9.76,
+    "target": 4.5,
+    "clutter": 0.195,
     "region_rgb": [
-      224,
-      223,
-      213
+      230,
+      226,
+      212
     ],
     "binding_rgb": [
-      230,
-      223,
-      205
+      228,
+      222,
+      210
     ],
     "title_lines": [
       "THE MCP SKILLS",
       "EXTENSION"
     ],
+    "subject": 0.102,
+    "ink_subject": 0.057,
+    "spike": 0.286,
     "generated_at": "2026-10-10T15:51:54+00:00"
   }
 }

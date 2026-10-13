@@ -1,0 +1,88 @@
+{
+  "slug": "ai-incident-clock-4-hours-not-15-days",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A mechanical stopwatch resting on a stack of regulatory documents on a plain desk",
+      "caption": "Enterprises face overlapping incident-reporting clocks that demand action in hours, not days.",
+      "title": "AI-Incident-Clock-Flatlay",
+      "bytes": 344771,
+      "sha256": "sha256:a905fc44d1b89fcb3f6179bbcb025da9"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, top-down 90-degree view, 50mm lens with a razor-sharp focal plane. A sleek, modern mechanical stopwatch resting on top of a stack of muted, heavy paper regulatory rulebooks and embossed filings. Extreme asymmetry, placing the documents and stopwatch in the bottom left corner with generous empty desk space to the right. Even diffused daylight, soft contact shadows, matte paper tones, tactile paper stock, dark wood desk surface, refined editorial aesthetic. No legible text.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, typography, legible writing",
+  "rationale": "The story revolves around competing regulatory mandates and filing deadlines. A document flatlay captures the bureaucratic reality of these distinct rulebooks and the stark contrast between active and delayed timelines.",
+  "cue": "Your AI Incident Clock",
+  "subject": "a mechanical stopwatch resting on open regulatory rulebooks",
+  "core_thesis": "Enterprises are relying on the AI Act's 15-day incident reporting deadline, but their actual regulatory clock is driven by existing rules that demand action in as little as four hours.",
+  "core_conflict": "Delayed 15-day vendor compliance vs. immediate 4-hour enterprise regulatory reality",
+  "composition": "top-down 90-degree view, extreme asymmetry",
+  "alt_text": "The 4-Hour AI Deadline. A mechanical stopwatch resting on a stack of regulatory documents on a plain desk",
+  "caption": "The 4-Hour AI Deadline: The real deadline for enterprise AI incidents is 4 hours.",
+  "title": "The 4-Hour AI Deadline",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/ai-incident-clock-4-hours-not-15-days/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 207884,
+  "sha256": "sha256:fc795da80c033ed17787c5c96ce63564c99e5d76043556733bfecd542ea5ab7b",
+  "source_hash": "sha256:04c120424a3768ef272ffaf6145fa734",
+  "source_chars": 5470,
+  "task_id": "c510a062bcc15342c37e1cb49704f937",
+  "credits": 5.0,
+  "cost_ms": 57,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c510a062bcc15342c37e1cb49704f937_1791828743794.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, top-down 90-degree view, 50mm lens with a razor-sharp focal plane. A sleek, modern mechanical stopwatch resting on top of a stack of muted, heavy paper regulatory rulebooks and embossed filings. Extreme asymmetry, placing the documents and stopwatch in the bottom left corner with generous empty desk space to the right. Even diffused daylight, soft contact shadows, matte paper tones, tactile paper stock, dark wood desk surface, refined editorial aesthetic. No legible text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-12T18:12:28+00:00",
+  "overlay": {
+    "kicker": "AI GOVERNANCE // INCIDENT REPORTS",
+    "title": "THE 4-HOUR AI DEADLINE",
+    "hook": "The real deadline for enterprise AI incidents is 4 hours",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.23,
+    "target": 4.5,
+    "clutter": 0.028,
+    "region_rgb": [
+      61,
+      55,
+      54
+    ],
+    "binding_rgb": [
+      65,
+      61,
+      62
+    ],
+    "title_lines": [
+      "THE 4-HOUR AI",
+      "DEADLINE"
+    ],
+    "subject": 0.001,
+    "ink_subject": 0.001,
+    "spike": 0.0,
+    "generated_at": "2026-10-12T18:12:28+00:00"
+  }
+}

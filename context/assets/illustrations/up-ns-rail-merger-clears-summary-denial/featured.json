@@ -1,6 +1,6 @@
 {
   "slug": "up-ns-rail-merger-clears-summary-denial",
-  "revision": 4,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -27,6 +27,30 @@
       "title": "Up-Ns Rail Merger Advances",
       "bytes": 305700,
       "sha256": "sha256:76cba6378b71940e75550c671097c5f21cc610e51625d8f4d1bc2aeb3b58a9fc"
+    },
+    {
+      "revision": 4,
+      "alt_text": "UP-NS Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
+      "caption": "UP-NS Rail Merger Advances: Shippers must map route exposure before Nov 18.",
+      "title": "UP-NS Rail Merger Advances",
+      "bytes": 305700,
+      "sha256": "sha256:76cba6378b71940e75550c671097c5f21cc610e51625d8f4d1bc2aeb3b58a9fc"
+    },
+    {
+      "revision": 5,
+      "alt_text": "UP-NS Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
+      "caption": "UP-NS Rail Merger Advances: Shippers must map route exposure before Nov 18.",
+      "title": "UP-NS Rail Merger Advances",
+      "bytes": 308613,
+      "sha256": "sha256:7bffb5f895407fe8e7b9768ce2962bb4c5506c0af581a6527ea3812ed9a4eea3"
+    },
+    {
+      "revision": 6,
+      "alt_text": "UP-NS Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
+      "caption": "UP-NS Rail Merger Advances: Shippers must map route exposure before Nov 18.",
+      "title": "UP-NS Rail Merger Advances",
+      "bytes": 308613,
+      "sha256": "sha256:7bffb5f895407fe8e7b9768ce2962bb4c5506c0af581a6527ea3812ed9a4eea3"
     }
   ],
   "style": "long_lens_industry",
@@ -54,8 +78,8 @@
   "local_path": "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 305700,
-  "sha256": "sha256:76cba6378b71940e75550c671097c5f21cc610e51625d8f4d1bc2aeb3b58a9fc",
+  "bytes": 308613,
+  "sha256": "sha256:7bffb5f895407fe8e7b9768ce2962bb4c5506c0af581a6527ea3812ed9a4eea3",
   "source_hash": "sha256:03821bdbb1e4457cdae0422b0393f0c5",
   "source_chars": 4604,
   "task_id": "afcd2a22daedbb81ce92ddeec2ac8146",
@@ -75,15 +99,15 @@
     "kicker": "FREIGHT RAIL // MEGA-MERGER",
     "title": "UP-NS RAIL MERGER ADVANCES",
     "hook": "Shippers must map route exposure before Nov 18",
-    "anchor": "top-left",
+    "anchor": "top-right",
     "light": false,
     "scrim": 0,
     "contrast": 8.26,
     "target": 4.5,
-    "clutter": 0.073,
+    "clutter": 0.055,
     "region_rgb": [
-      209,
-      213,
+      210,
+      214,
       217
     ],
     "binding_rgb": [
@@ -95,6 +119,9 @@
       "UP-NS RAIL",
       "MERGER ADVANCES"
     ],
+    "subject": 0.082,
+    "ink_subject": 0.056,
+    "spike": 0.186,
     "generated_at": "2026-10-08T22:21:23+00:00"
   }
 }

@@ -1,0 +1,90 @@
+{
+  "slug": "remediator-recovers-46-percent",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a routing bay showing a patched module breaking a parallel connection at a gate.",
+      "caption": "Automatic repair tools speed up recovery, but often introduce regressions that external control gates must catch.",
+      "title": "Automated-Repair-Silent-Regression-Gate",
+      "bytes": 2028559,
+      "sha256": "sha256:5bf498a096e24019c3875750a539a7a7"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Asymmetric off-centre framing rule with a generous empty margin. A modular automated routing bay resting on a matte drafting table. The assembly features recognizable hardware trays and interlocking conduits. In the center, a bright green patched module successfully bridges a gap, but its placement mechanically forces an adjacent parallel blue conduit to snap out of alignment just before passing through a heavy, unlatched inspection gate. Flat muted palette with green and blue accents, thin consistent line weight, visible structural depth, one directional light casting a crisp shadow, unlabelled.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, words, labels, people, human face, hands",
+  "rationale": "The technical isometric style perfectly visualizes the structural logic of a software pipeline and a gate. It allows us to show a clean 'fix' on one track that mechanically breaks a parallel track, capturing the silent regression.",
+  "cue": "the silent regression",
+  "subject": "an isometric cutaway of a routing bay where a green patched connection forces a parallel blue line to sever at an inspection gate",
+  "core_thesis": "Automatic repair agents speed up fixes but frequently introduce silent regressions, requiring external gates to determine safety.",
+  "core_conflict": "Rapid automated patching vs. silent systemic regressions breaking previously working cases",
+  "composition": "asymmetric off-centre framing rule with generous empty margin",
+  "alt_text": "The Automated Repair Ceiling. Isometric cutaway of a routing bay showing a patched module breaking a parallel connection at a",
+  "caption": "The Automated Repair Ceiling: Autonomous repair agents quietly break working code.",
+  "title": "The Automated Repair Ceiling",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/remediator-recovers-46-percent/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1572298,
+  "sha256": "sha256:fb0a2a5b0b8c7649595a3050efc842c0f71544d2bb9d84c826744672826e86bb",
+  "source_hash": "sha256:9cc66c10cc40cab81ea9378db79612fd",
+  "source_chars": 5511,
+  "task_id": "36643018397bc65daf51ba7f4fa75123",
+  "credits": 18.0,
+  "cost_ms": 29,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_879b9cc8d9cd20cb6a0d1037e3683abf.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Asymmetric off-centre framing rule with a generous empty margin. A modular automated routing bay resting on a matte drafting table. The assembly features recognizable hardware trays and interlocking conduits. In the center, a bright green patched module successfully bridges a gap, but its placement mechanically forces an adjacent parallel blue conduit to snap out of alignment just before passing through a heavy, unlatched inspection gate. Flat muted palette with green and blue accents, thin consistent line weight, visible structural depth, one directional light casting a crisp shadow, unlabelled.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-13T18:09:19+00:00",
+  "overlay": {
+    "kicker": "IT OPERATIONS // SELF-HEALING TOOLS",
+    "title": "THE AUTOMATED REPAIR CEILING",
+    "hook": "Autonomous repair agents quietly break working code",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 9.93,
+    "target": 4.5,
+    "clutter": 0.241,
+    "region_rgb": [
+      234,
+      224,
+      203
+    ],
+    "binding_rgb": [
+      232,
+      224,
+      203
+    ],
+    "title_lines": [
+      "THE AUTOMATED",
+      "REPAIR CEILING"
+    ],
+    "subject": 0.109,
+    "ink_subject": 0.041,
+    "spike": 0.382,
+    "generated_at": "2026-10-13T18:09:19+00:00"
+  }
+}

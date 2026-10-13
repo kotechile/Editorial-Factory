@@ -1,0 +1,90 @@
+{
+  "slug": "windows-13-percent-best-case",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular cross-section of a heavy double-pane architectural window frame resting on a steel surface.",
+      "caption": "The true value of a multi-decade window replacement lies in its physical barrier to the elements, not just the single-season energy label.",
+      "title": "Window-Replacement-TCO-Comfort",
+      "bytes": 1788047,
+      "sha256": "sha256:62bf5cd0430803756f332fe8a1cc2e91"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface. Extreme asymmetric off-centre composition featuring a heavy cross-section of a double-pane architectural window frame, revealing thick glass panes, an internal insulating spacer, and an extruded matte polymer housing. Two recognizable engineered parts\u2014the rigid window extrusion and a heavy glass assembly\u2014arranged in one deliberate interlocking configuration that states the idea of long-term physical infrastructure. Hard clean edges, one strong directional light throwing a long cast shadow across the brushed steel, generous negative space, muted modern editorial palette.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, numbers, printed words, labels",
+  "rationale": "A component assembly strips away the lifestyle marketing of home windows, focusing instead on the engineered physical fixture\u2014the heavy glass and extruded frame\u2014that actually sits in the wall for decades, highlighting the tension between a complex physical product and a simplistic single-season energy metric.",
+  "cue": "a one-time spend on a 15-to-40-year fixture",
+  "subject": "a modular cross-section of a heavy double-pane architectural window frame",
+  "core_thesis": "The 13 percent saving quoted for replacement windows is a best-case scenario against a fraction of the energy bill, meaning a 15-to-40-year fixture is truly a comfort purchase rather than a financial payback.",
+  "core_conflict": "Simplistic energy payback math versus multi-decade residential comfort and structural fixture lifespan.",
+  "composition": "extreme asymmetric off-centre composition",
+  "alt_text": "The 13 Percent Window Myth. A modular cross-section of a heavy double-pane architectural window frame resting on a steel surf",
+  "caption": "The 13 Percent Window Myth: Why new windows are a comfort buy, not an energy one.",
+  "title": "The 13 Percent Window Myth",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/windows-13-percent-best-case/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1322378,
+  "sha256": "sha256:28e1dd03df2cd7e73d78f27963749bcbef576c5c8d80a8feb1becacd815cee50",
+  "source_hash": "sha256:33fd0683a77437bef7734184dec6ff46",
+  "source_chars": 4553,
+  "task_id": "4f4b5deff20b2c3491f482ef91384c0b",
+  "credits": 18.0,
+  "cost_ms": 29,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_bb0da02a78995be9cd603464149bec79.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface. Extreme asymmetric off-centre composition featuring a heavy cross-section of a double-pane architectural window frame, revealing thick glass panes, an internal insulating spacer, and an extruded matte polymer housing. Two recognizable engineered parts\u2014the rigid window extrusion and a heavy glass assembly\u2014arranged in one deliberate interlocking configuration that states the idea of long-term physical infrastructure. Hard clean edges, one strong directional light throwing a long cast shadow across the brushed steel, generous negative space, muted modern editorial palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-12T19:14:18+00:00",
+  "overlay": {
+    "kicker": "HOME ENERGY // WINDOW UPGRADES",
+    "title": "THE 13 PERCENT WINDOW MYTH",
+    "hook": "Why new windows are a comfort buy, not an energy one",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 30,
+    "contrast": 4.5,
+    "target": 4.5,
+    "clutter": 0.148,
+    "region_rgb": [
+      155,
+      159,
+      167
+    ],
+    "binding_rgb": [
+      131,
+      138,
+      148
+    ],
+    "title_lines": [
+      "THE 13 PERCENT",
+      "WINDOW MYTH"
+    ],
+    "subject": 0.002,
+    "ink_subject": 0.002,
+    "spike": 0.004,
+    "generated_at": "2026-10-12T19:14:18+00:00"
+  }
+}

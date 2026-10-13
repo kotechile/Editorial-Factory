@@ -1,0 +1,88 @@
+{
+  "slug": "local-api-isnt-in-the-contract",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A smart home relay module sitting on top of a thick stack of corporate legal documents on a dark oak desk.",
+      "caption": "The Shelly buyout paperwork guarantees offices and payroll until 2029, but leaves the local API unwritten.",
+      "title": "shelly-buyout-documents-flatlay",
+      "bytes": 336124,
+      "sha256": "sha256:14791233da1b6a02f0e04a733656e356"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of heavy corporate buyout legal documents on a matte dark oak desk surface. Top-down 90-degree view, even diffused daylight. A thick stack of muted, illegibly cropped contract papers rests slightly out of alignment to look handled. Resting on top of the printed documents as a paperweight is a small, unbranded matte-black smart home relay module with exposed terminal screws, next to a short clipped blue ethernet wire. Soft directional daylight casting subtle contact shadows, shallow depth of field, muted paper tones, modern premium editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements, human hands, faces, logos",
+  "rationale": "The narrative hinges entirely on what is written\u2014and what is missing\u2014in the \u20ac1.2 billion takeover paperwork. A document flatlay perfectly captures the contractual nature of the buyout, placing a physical smart relay onto the legal papers to represent the unwritten local interface.",
+  "cue": "the lasting part of a local-first home",
+  "subject": "a small unbranded smart home relay module resting on a stack of corporate legal documents",
+  "core_thesis": "The lasting value of a local-first home relies on the local interface you can test today, because the \u20ac1.2 billion takeover promise omits any guarantee for it.",
+  "core_conflict": "Corporate buyout paperwork guaranteeing physical assets vs the unwritten guarantee of a local-first software interface.",
+  "composition": "symmetrical top-down flatlay",
+  "alt_text": "The \u20ac1.2 Billion Shelly Buyout. A smart home relay module sitting on top of a thick stack of corporate legal documents on a d",
+  "caption": "The \u20ac1.2 Billion Shelly Buyout: Schneider's takeover leaves the local API unprotected.",
+  "title": "The \u20ac1.2 Billion Shelly Buyout",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/local-api-isnt-in-the-contract/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 205448,
+  "sha256": "sha256:b41f484d1a850321e981432314fe1057bd144b26e3393daec50ad996da82cd40",
+  "source_hash": "sha256:95ef2038bb883cc3e21e1584ba953070",
+  "source_chars": 5720,
+  "task_id": "c5967d5fca720cba7c6cb35948ddf9f1",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c5967d5fca720cba7c6cb35948ddf9f1_1791893587362.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of heavy corporate buyout legal documents on a matte dark oak desk surface. Top-down 90-degree view, even diffused daylight. A thick stack of muted, illegibly cropped contract papers rests slightly out of alignment to look handled. Resting on top of the printed documents as a paperweight is a small, unbranded matte-black smart home relay module with exposed terminal screws, next to a short clipped blue ethernet wire. Soft directional daylight casting subtle contact shadows, shallow depth of field, muted paper tones, modern premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-13T12:13:13+00:00",
+  "overlay": {
+    "kicker": "SMART HOME // LOCAL API BUYOUT",
+    "title": "THE \u20ac1.2 BILLION SHELLY BUYOUT",
+    "hook": "Schneider's takeover leaves the local API unprotected",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 105,
+    "contrast": 6.15,
+    "target": 5.5,
+    "clutter": 0.397,
+    "region_rgb": [
+      63,
+      61,
+      60
+    ],
+    "binding_rgb": [
+      148,
+      149,
+      151
+    ],
+    "title_lines": [
+      "THE \u20ac1.2 BILLION",
+      "SHELLY BUYOUT"
+    ],
+    "subject": 0.234,
+    "ink_subject": 0.104,
+    "spike": 0.751,
+    "generated_at": "2026-10-13T12:13:13+00:00"
+  }
+}

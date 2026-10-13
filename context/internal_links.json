@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T17:43:21+00:00",
+  "generated_at": "2026-10-13T14:16:44+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -37,6 +37,210 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 846,
+      "slug": "shippers-stuck-in-the-gap",
+      "title": "49.9% On Time: Shippers Stuck in the Gap",
+      "url": "https://giniloh.com/shippers-stuck-in-the-gap/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Half of the world\u2019s container ships missed their August schedules, dropping the global on-time rate to 49.9%.",
+      "modified": "2026-10-13T13:17:14",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 843,
+      "slug": "your-32gb-card-gone",
+      "title": "Your 32GB Card, Gone: 41% Memory Hike",
+      "url": "https://giniloh.com/your-32gb-card-gone/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "Nvidia has reportedly stopped making the only consumer graphics card with 32 gigabytes (GB) of video memory.",
+      "modified": "2026-10-13T12:44:17",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 841,
+      "slug": "aws-cannot-restore-bahrain",
+      "title": "AWS Cannot Restore Bahrain: 144 Services Lost",
+      "url": "https://giniloh.com/aws-cannot-restore-bahrain/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Amazon Web Services (AWS) cannot give customers their data back from its Middle East (Bahrain) region.",
+      "modified": "2026-10-13T11:43:02",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 839,
+      "slug": "rack-ride-through-two-second-duty",
+      "title": "Right Locally, Wrong by 3.8 GW",
+      "url": "https://giniloh.com/rack-ride-through-two-second-duty/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "On July 22, a power line in northern Virginia failed and cleared exactly as it should.",
+      "modified": "2026-10-13T11:19:52",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 835,
+      "slug": "agent-failures-tests-stayed-green",
+      "title": "70% of Agent Failures: Your Tests Stayed Green",
+      "url": "https://giniloh.com/agent-failures-tests-stayed-green/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Roughly 70% of agent failures in a live runtime were first caught by a human reading the product, while thousands of tests stayed green.",
+      "modified": "2026-10-13T10:44:57",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 834,
+      "slug": "slow-movers-hold-your-stock",
+      "title": "Ops Leaders: Why 60.7% of Stock Hides Costs",
+      "url": "https://giniloh.com/slow-movers-hold-your-stock/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "The two slowest classes of stock-keeping units (SKUs) are 67.76% of the items on file in one warehouse study.",
+      "modified": "2026-10-12T19:41:10",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 832,
+      "slug": "ai-incident-clock-4-hours-not-15-days",
+      "title": "Your AI Incident Clock: 4 Hours, Not 15 Days",
+      "url": "https://giniloh.com/ai-incident-clock-4-hours-not-15-days/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "The AI Act\u2019s 15-day serious-incident report is the vendor\u2019s filing and starts in December 2027. The clocks an enterprise has to meet are 72, 24 and 4 hours.",
+      "modified": "2026-10-12T18:12:45",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 830,
+      "slug": "agent-timeout-false-alarm-budget",
+      "title": "Agent Timeouts: Pick 0.1%, Not a Round Number",
+      "url": "https://giniloh.com/agent-timeout-false-alarm-budget/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Amazon sets a call timeout from an accepted false-timeout rate of 0.1%, then reads the downstream p99.9. Most agent stacks pick one round number instead.",
+      "modified": "2026-10-12T17:37:49",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 827,
+      "slug": "air-freight-wont-price-a-year",
+      "title": "60% Air Deals: Your Stock Math Breaks",
+      "url": "https://giniloh.com/air-freight-wont-price-a-year/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "60% of new air capacity deals now run three months or less, as warehousing capacity contracts at its fastest rate since March 2022.",
+      "modified": "2026-10-12T12:40:02",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 825,
+      "slug": "kill-switch-misses-half-your-agents",
+      "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
+      "url": "https://giniloh.com/kill-switch-misses-half-your-agents/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "One in three firms watched staff skip the AI approval queue as too slow. The fix that shipped in September misses half the agents it was built to stop.",
+      "modified": "2026-10-12T11:10:54",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 821,
+      "slug": "one-skill-too-many-green-test",
+      "title": "270 Attacks: Your Green Tests Are Blind",
+      "url": "https://giniloh.com/one-skill-too-many-green-test/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Two research groups, a day apart, ran 6,368 coding-agent runs and 270 attack cases and found the same blind spot.",
+      "modified": "2026-10-12T10:40:29",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 810,
+      "slug": "why-importers-forfeit-duty-refunds",
+      "title": "Why Importers Forfeit 99% Duty Refunds",
+      "url": "https://giniloh.com/why-importers-forfeit-duty-refunds/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Drawback refunds up to 99% of the duty paid on imports that are later exported or destroyed. That one rule changes the math of moving a factory.",
+      "modified": "2026-10-10T18:09:04",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 807,
       "slug": "self-hosting-break-even-one-hour-a-year",
       "title": "Self-Hosting Break-Even: 1.26 Hours a Year",
@@ -48,7 +252,7 @@
         4
       ],
       "excerpt": "An hour of network admin work was worth $47.66 at the 2025 median wage. A year of managed email costs $60.",
-      "modified": "2026-10-10T17:38:56",
+      "modified": "2026-10-10T18:25:31",
       "live": true
     },
     {
@@ -56,7 +260,7 @@
       "kind": "article",
       "id": 795,
       "slug": "nearshoring-doesnt-move-the-trade-case",
-      "title": "Nearshoring: Your 32.58% Trade Risk Remains",
+      "title": "Nearshoring Doesn\u2019t Move the Trade Case",
       "url": "https://giniloh.com/nearshoring-doesnt-move-the-trade-case/",
       "categories": [
         "Supply Chain & Operations"
@@ -65,7 +269,7 @@
         10
       ],
       "excerpt": "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S.",
-      "modified": "2026-10-10T16:52:03",
+      "modified": "2026-10-10T18:25:33",
       "live": true
     },
     {
@@ -81,8 +285,8 @@
       "category_ids": [
         4
       ],
-      "excerpt": "The maker of Home Assistant just renamed its paid remote service. Home Assistant Cloud is now Home Assistant Link.",
-      "modified": "2026-10-10T16:52:02",
+      "excerpt": "The maker of Home Assistant announced a rename of its paid remote service, effective December 2. Home Assistant Cloud becomes Home Assistant Link.",
+      "modified": "2026-10-10T18:25:28",
       "live": true
     },
     {
@@ -124,7 +328,7 @@
       "kind": "article",
       "id": 541,
       "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-      "title": "Buying AI Quality: The Score Belongs to the Judge",
+      "title": "$915M Illusion: Your AI Judge Moves",
       "url": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/",
       "categories": [
         "AI Stack & Tool TCO"
@@ -132,8 +336,8 @@
       "category_ids": [
         7
       ],
-      "excerpt": "On October 1, Dynatrace paid $915 million for Arize.",
-      "modified": "2026-10-10T01:55:34",
+      "excerpt": "In AI, the test is another black box that moves every time you update its prompt \u2014 and Dynatrace paid $915 million for the most widely used one.",
+      "modified": "2026-10-10T18:35:52",
       "live": true
     },
     {
@@ -158,7 +362,7 @@
       "kind": "article",
       "id": 777,
       "slug": "staggered-lockup-six-selling-decisions",
-      "title": "SpaceX Lockup Trap: 6 Windows, Not 1",
+      "title": "SpaceX\u2019s Staggered Lockup: Six Windows, Not One",
       "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/",
       "categories": [
         "Career & AI Resilience:"
@@ -167,7 +371,7 @@
         8
       ],
       "excerpt": "SpaceX workers get their next chance to sell today as 328.4 million shares \u2014 about 7% of the locked stock \u2014 open for trading.",
-      "modified": "2026-10-10T16:51:59",
+      "modified": "2026-10-10T18:25:35",
       "live": true
     },
     {
@@ -1755,6 +1959,91 @@
     {
       "site": "wellroost.com",
       "kind": "article",
+      "id": 139,
+      "slug": "local-api-isnt-in-the-contract",
+      "title": "\u20ac1.2 Billion for Shelly: Your Local API Unwritten",
+      "url": "https://wellroost.com/local-api-isnt-in-the-contract/",
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [
+        5
+      ],
+      "excerpt": "Shelly Group agreed to a \u20ac1.2 billion buyout on 24 September.",
+      "modified": "2026-10-13T12:13:53",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 137,
+      "slug": "windows-13-percent-best-case",
+      "title": "Windows: 13% Is the Best Case, Not Average",
+      "url": "https://wellroost.com/windows-13-percent-best-case/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Windows: the 13 percent saving on a replacement label is the best case, not an average.",
+      "modified": "2026-10-12T19:14:31",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 134,
+      "slug": "silent-15400-home-loss",
+      "title": "Water Damage: Your $15,400 Silent Loss",
+      "url": "https://wellroost.com/silent-15400-home-loss/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Water damage and freezing hits 1.50% of insured homes a year at an average $15,400 a claim, while the parts that cause it carry published service lives.",
+      "modified": "2026-10-12T18:43:13",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 132,
+      "slug": "battery-payback-five-state-gap",
+      "title": "Your Battery Payback: A 5-State Gap",
+      "url": "https://wellroost.com/battery-payback-five-state-gap/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Two-thirds of U.S. homeowners lost power in 2026, yet home battery sales are set to shrink 4% and five states take 88% of them. Where the payback now comes from.",
+      "modified": "2026-10-12T12:11:38",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 130,
+      "slug": "cheapest-fuel-priciest-pipe",
+      "title": "Cheap Gas, $20,000 Pipe: The Winter Heat Trap",
+      "url": "https://wellroost.com/cheapest-fuel-priciest-pipe/",
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [
+        4
+      ],
+      "excerpt": "Gas is the cheapest heat this winter at $640, while heating oil runs $2,115. California just started paying homeowners to quit the gas line that makes it possible.",
+      "modified": "2026-10-12T11:40:23",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
       "id": 113,
       "slug": "backup-battery-sizing-critical-loads",
       "title": "Your Home Backup Battery Is Sized Against the Wrong Number",
@@ -1774,7 +2063,7 @@
       "kind": "article",
       "id": 109,
       "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
-      "title": "Your 11.5kW EV Backup Costs $8,200",
+      "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
       "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
       "categories": [
         "Energy & Efficiency"
@@ -1783,7 +2072,7 @@
         4
       ],
       "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
-      "modified": "2026-10-10T16:52:00",
+      "modified": "2026-10-10T18:25:37",
       "live": true
     },
     {

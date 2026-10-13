@@ -1,6 +1,6 @@
 {
   "slug": "zet-scale-ev-truck-residual-value-risk",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,22 @@
       "sha256": "sha256:8d24455840c40c01e5936940c33b9a0b",
       "generated_at": "2026-10-01T14:10:26+00:00",
       "source_hash": "sha256:781905d092dac2e3f13e8b406f16d54c"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a hazy depot at dawn.",
+      "caption": "Pooled demand has unlocked a record-breaking order for electric heavy-duty vehicles.",
+      "title": "Electric Heavy Truck Dawn",
+      "bytes": 229239,
+      "sha256": "sha256:0734bdaddb8aebf3894506badd9a431d"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The 2500 Electric Truck Deal. A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a h",
+      "caption": "The 2500 Electric Truck Deal: How a new lease model unlocked a massive EV truck order.",
+      "title": "The 2500 Electric Truck Deal",
+      "bytes": 128144,
+      "sha256": "sha256:1e6304b34c3b4f1b32c33c98de82c01bf7801ed5d64224a30fc26c47e0af4c7d"
     }
   ],
   "style": "cinematic_still",
@@ -26,9 +42,9 @@
   "rationale": "The article describes a watershed moment for the EV fleet transition, defined by a massive influx of heavy-duty trucks. A cinematic still of a heavy-duty electric truck cab in a vast yard at dawn captures the scale and decisive nature of this overnight shift.",
   "cue": "heavy-duty electric trucks",
   "subject": "a sleek, heavy-duty electric commercial truck cab parked at a charging pedestal",
-  "alt_text": "A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a hazy depot at dawn.",
-  "caption": "Pooled demand has unlocked a record-breaking order for electric heavy-duty vehicles.",
-  "title": "Electric Heavy Truck Dawn",
+  "alt_text": "The 2500 Electric Truck Deal. A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a h",
+  "caption": "The 2500 Electric Truck Deal: How a new lease model unlocked a massive EV truck order.",
+  "title": "The 2500 Electric Truck Deal",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +54,8 @@
   "local_path": "context/assets/illustrations/zet-scale-ev-truck-residual-value-risk/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 229239,
-  "sha256": "sha256:0734bdaddb8aebf3894506badd9a431d",
+  "bytes": 128144,
+  "sha256": "sha256:1e6304b34c3b4f1b32c33c98de82c01bf7801ed5d64224a30fc26c47e0af4c7d",
   "source_hash": "sha256:9aa9b280e14f3fc3c7822e59e74535b2",
   "source_chars": 4573,
   "task_id": "4c0ffb685c2e2aee4a816c67b19e5158",
@@ -54,5 +70,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-03T00:08:44+00:00"
+  "generated_at": "2026-10-03T00:08:44+00:00",
+  "overlay": {
+    "kicker": "EV FLEETS // RESIDUAL VALUE RISK",
+    "title": "THE 2500 ELECTRIC TRUCK DEAL",
+    "hook": "How a new lease model unlocked a massive EV truck order",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 15,
+    "contrast": 4.63,
+    "target": 4.5,
+    "clutter": 0.148,
+    "region_rgb": [
+      161,
+      172,
+      166
+    ],
+    "binding_rgb": [
+      131,
+      152,
+      147
+    ],
+    "title_lines": [
+      "THE 2500 ELECTRIC",
+      "TRUCK DEAL"
+    ],
+    "subject": 0.062,
+    "ink_subject": 0.027,
+    "spike": 0.204,
+    "generated_at": "2026-10-03T00:08:44+00:00"
+  }
 }

@@ -1,0 +1,90 @@
+{
+  "slug": "100-case-eval-925-coverage",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Precision mechanical inspection gauge with brackets failing to span the full width of a modular test block.",
+      "caption": "Release gates relying on small test suites often print falsely confident error intervals that fail to encompass real-world variance.",
+      "title": "CI Gate Accuracy Interval Tolerance",
+      "bytes": 2050375,
+      "sha256": "sha256:2ff7f838971e854d922245706c6e7496"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface. A precision anodized aluminum inspection gauge featuring two narrow measuring brackets clasps a central machined test block, but the block's wider stepped base visibly extends beyond the restrictive brackets. Hard clean edges, one directional key light throwing a long cast shadow across the weathered steel, matte muted palette of industrial grey and safety orange. Generous negative space, extreme asymmetrical off-center composition. No bare shapes, no text, no molded or printed lettering.",
+  "negative_prompt": "text, letters, numbers, watermark, garbled typography, labels, UI",
+  "rationale": "The story is about a single numerical gate and its failure to measure true variance. Component assembly perfectly abstracts this statistical bottleneck into a tangible physical inspection tool that visibly misses the mark.",
+  "cue": "wider bars than the benchmark number",
+  "subject": "precision inspection gauge with brackets too narrow for its test block",
+  "core_thesis": "A 100-case evaluation suite's claimed 95% accuracy interval only delivers 92.5% true coverage, providing falsely narrow error bars for ship-or-hold release gates.",
+  "core_conflict": "Narrow benchmark accuracy vs wider generalized real-world performance variance",
+  "composition": "extreme asymmetry",
+  "alt_text": "The 100-Case Eval Problem. Precision mechanical inspection gauge with brackets failing to span the full width of a modular te",
+  "caption": "The 100-Case Eval Problem: Why small test suites fail standard confidence intervals.",
+  "title": "The 100-Case Eval Problem",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/100-case-eval-925-coverage/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1476849,
+  "sha256": "sha256:5231bf8e8977f43215c64e59063729559216e485811ba3bf327e01e561424ea1",
+  "source_hash": "sha256:29a5a2816295862c5bc8c626757dbabb",
+  "source_chars": 5128,
+  "task_id": "dcc4eead53ce2396e82dab8721b88578",
+  "credits": 18.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_85543d2f4aef9fe5412bfb8b0c8f3c48.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface. A precision anodized aluminum inspection gauge featuring two narrow measuring brackets clasps a central machined test block, but the block's wider stepped base visibly extends beyond the restrictive brackets. Hard clean edges, one directional key light throwing a long cast shadow across the weathered steel, matte muted palette of industrial grey and safety orange. Generous negative space, extreme asymmetrical off-center composition. No bare shapes, no text, no molded or printed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-13T17:38:43+00:00",
+  "overlay": {
+    "kicker": "MODEL EVALS // CONFIDENCE INTERVALS",
+    "title": "THE 100-CASE EVAL PROBLEM",
+    "hook": "Why small test suites fail standard confidence intervals",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 5.34,
+    "target": 4.5,
+    "clutter": 0.169,
+    "region_rgb": [
+      190,
+      190,
+      185
+    ],
+    "binding_rgb": [
+      165,
+      166,
+      161
+    ],
+    "title_lines": [
+      "THE 100-CASE",
+      "EVAL PROBLEM"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.004,
+    "spike": 0.03,
+    "generated_at": "2026-10-13T17:38:43+00:00"
+  }
+}

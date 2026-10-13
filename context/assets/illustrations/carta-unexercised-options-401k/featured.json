@@ -1,6 +1,6 @@
 {
   "slug": "carta-unexercised-options-401k",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,22 @@
       "sha256": "sha256:f4eccb826d08077da5599ab71cad6214",
       "generated_at": "2026-10-01T14:09:47+00:00",
       "source_hash": "sha256:2564557c08d6487255b621f42cc83608"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Vesting documents and a stock-certificate folio under soft directional light on a dark wooden desk.",
+      "caption": "Access to a retirement account can provide the cash cushion needed to turn paper equity into actual shares.",
+      "title": "Unexercised Startup Options Vesting Documents",
+      "bytes": 224304,
+      "sha256": "sha256:75b658b070988672850fde73e741138c"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des",
+      "caption": "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded.",
+      "title": "Why Options Go Unexercised",
+      "bytes": 138291,
+      "sha256": "sha256:b3a4e94b70a4ae7acdbd9a99b0f15362cd07ece28ef4f09cd9c18d1dff508306"
     }
   ],
   "style": "editorial_macro",
@@ -26,9 +42,9 @@
   "rationale": "The story revolves around a specific contractual reality: unexercised stock options. An editorial macro of vesting documents captures the tactile, paper nature of equity grants, highlighting the gap between theoretical wealth and realized cash.",
   "cue": "converts paper equity into",
   "subject": "vesting documents and a stock-certificate folio",
-  "alt_text": "Vesting documents and a stock-certificate folio under soft directional light on a dark wooden desk.",
-  "caption": "Access to a retirement account can provide the cash cushion needed to turn paper equity into actual shares.",
-  "title": "Unexercised Startup Options Vesting Documents",
+  "alt_text": "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des",
+  "caption": "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded.",
+  "title": "Why Options Go Unexercised",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +54,8 @@
   "local_path": "context/assets/illustrations/carta-unexercised-options-401k/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 224304,
-  "sha256": "sha256:75b658b070988672850fde73e741138c",
+  "bytes": 138291,
+  "sha256": "sha256:b3a4e94b70a4ae7acdbd9a99b0f15362cd07ece28ef4f09cd9c18d1dff508306",
   "source_hash": "sha256:2564557c08d6487255b621f42cc83608",
   "source_chars": 4416,
   "task_id": "4e71492ebe2fe9dc6af3da6d5cd35d5f",
@@ -54,5 +70,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:23:25+00:00"
+  "generated_at": "2026-10-08T22:23:25+00:00",
+  "overlay": {
+    "kicker": "STARTUP EQUITY // 401(K) FACTOR",
+    "title": "WHY OPTIONS GO UNEXERCISED",
+    "hook": "How a missing 401(k) leaves paper wealth stranded",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.17,
+    "target": 4.5,
+    "clutter": 0.106,
+    "region_rgb": [
+      30,
+      21,
+      16
+    ],
+    "binding_rgb": [
+      49,
+      34,
+      27
+    ],
+    "title_lines": [
+      "WHY OPTIONS GO",
+      "UNEXERCISED"
+    ],
+    "subject": 0.001,
+    "ink_subject": 0.001,
+    "spike": 0.0,
+    "generated_at": "2026-10-08T22:23:25+00:00"
+  }
 }

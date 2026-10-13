@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T11:10:55Z",
+  "updated_at": "2026-10-13T18:39:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1292,6 +1292,101 @@
       "url": "https://giniloh.com/why-importers-forfeit-duty-refunds/"
     },
     {
+      "slug": "2026-10-12_agent-timeout-false-alarm-budget",
+      "title": "Agent Timeouts: Pick 0.1%, Not a Round Number",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://giniloh.com/agent-timeout-false-alarm-budget/"
+    },
+    {
+      "slug": "2026-10-12_ai-incident-clock-4-hours-not-15-days",
+      "title": "Your AI Incident Clock: 4 Hours, Not 15 Days",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://giniloh.com/ai-incident-clock-4-hours-not-15-days/"
+    },
+    {
+      "slug": "2026-10-12_air-freight-wont-price-a-year",
+      "title": "60% Air Deals: Your Stock Math Breaks",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://giniloh.com/air-freight-wont-price-a-year/"
+    },
+    {
+      "slug": "2026-10-12_battery-payback-five-state-gap",
+      "title": "Your Battery Payback: A 5-State Gap",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://wellroost.com/battery-payback-five-state-gap/"
+    },
+    {
+      "slug": "2026-10-12_cheapest-fuel-priciest-pipe",
+      "title": "Cheap Gas, $20,000 Pipe: The Winter Heat Trap",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://wellroost.com/cheapest-fuel-priciest-pipe/"
+    },
+    {
       "slug": "2026-10-12_kill-switch-misses-half-your-agents",
       "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
       "vertical": "enterprise_ai_governance",
@@ -1307,7 +1402,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-12",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/kill-switch-misses-half-your-agents/"
     },
     {
       "slug": "2026-10-12_one-skill-too-many-green-test",
@@ -1325,7 +1421,233 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-12",
+      "public": true,
+      "url": "https://giniloh.com/one-skill-too-many-green-test/"
+    },
+    {
+      "slug": "2026-10-12_silent-15400-home-loss",
+      "title": "Water Damage: Your $15,400 Silent Loss",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://wellroost.com/silent-15400-home-loss/"
+    },
+    {
+      "slug": "2026-10-12_slow-movers-hold-your-stock",
+      "title": "Ops Leaders: Why 60.7% of Stock Hides Costs",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://giniloh.com/slow-movers-hold-your-stock/"
+    },
+    {
+      "slug": "2026-10-12_windows-13-percent-best-case",
+      "title": "Windows: 13% Is the Best Case, Not Average",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-12",
+      "public": true,
+      "url": "https://wellroost.com/windows-13-percent-best-case/"
+    },
+    {
+      "slug": "2026-10-13_100-case-eval-925-coverage",
+      "title": "Your 100-Case Eval: 92.5% Coverage, Not 95%",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-13",
       "public": false
+    },
+    {
+      "slug": "2026-10-13_agent-failures-tests-stayed-green",
+      "title": "70% of Agent Failures: Your Tests Stayed Green",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-13",
+      "public": true,
+      "url": "https://giniloh.com/agent-failures-tests-stayed-green/"
+    },
+    {
+      "slug": "2026-10-13_ai-coding-seats-measure-or-renew",
+      "title": "AI Coding Seats: The 75-Point Gap",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-13",
+      "public": false
+    },
+    {
+      "slug": "2026-10-13_aws-cannot-restore-bahrain",
+      "title": "AWS Cannot Restore Bahrain: 144 Services Lost",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-13",
+      "public": true,
+      "url": "https://giniloh.com/aws-cannot-restore-bahrain/"
+    },
+    {
+      "slug": "2026-10-13_local-api-isnt-in-the-contract",
+      "title": "\u20ac1.2 Billion for Shelly: Your Local API Unwritten",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-13",
+      "public": true,
+      "url": "https://wellroost.com/local-api-isnt-in-the-contract/"
+    },
+    {
+      "slug": "2026-10-13_rack-ride-through-two-second-duty",
+      "title": "Right Locally, Wrong by 3.8 GW",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-10-13",
+      "public": true,
+      "url": "https://giniloh.com/rack-ride-through-two-second-duty/"
+    },
+    {
+      "slug": "2026-10-13_remediator-recovers-46-percent",
+      "title": "Your Remediator Recovers 46.67%: The Silent Regression",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-10-13",
+      "public": false
+    },
+    {
+      "slug": "2026-10-13_shippers-stuck-in-the-gap",
+      "title": "49.9% On Time: Shippers Stuck in the Gap",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-13",
+      "public": true,
+      "url": "https://giniloh.com/shippers-stuck-in-the-gap/"
+    },
+    {
+      "slug": "2026-10-13_your-32gb-card-gone",
+      "title": "Your 32GB Card, Gone: 41% Memory Hike",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-13",
+      "public": true,
+      "url": "https://giniloh.com/your-32gb-card-gone/"
     }
   ]
 }

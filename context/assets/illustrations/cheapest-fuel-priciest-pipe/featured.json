@@ -1,0 +1,88 @@
+{
+  "slug": "cheapest-fuel-priciest-pipe",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An excavated trench in a dark lawn exposes a heavy utility pipe, with a warmly lit house in the background at twilight.",
+      "caption": "The massive cost of replacing aging underground gas lines is prompting utilities to offer homeowners cash buyouts.",
+      "title": "Winter-Heat-Trap-Pipe-Cost",
+      "bytes": 381399,
+      "sha256": "sha256:3b5048c0123ec8f07ed512198f45aebe"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph at blue hour. A deep excavated dirt trench cuts aggressively across the foreground of a manicured suburban lawn, revealing a thick, weathered iron utility pipe. The trench is illuminated by a single harsh amber construction site lamp casting deep shadows into the earth. In the background, slightly out of focus, a modern suburban home glows with warm, inviting window light against the deep blue twilight sky. Cinematic atmosphere, crisp crystalline air, deep contrast, wide anamorphic 35mm composition, long-exposure calm.",
+  "negative_prompt": "garbled text, random letters, watermarks, UI, printed text, numbers, people, faces, pedestrians",
+  "rationale": "Architectural night captures the tension of residential energy infrastructure by contrasting the warm, familiar glow of a home against the harsh, disruptive reality of an excavated utility trench in the blue-hour darkness.",
+  "cue": "that buried pipe a clear choice",
+  "subject": "an excavated lawn trench exposing a heavy utility pipe",
+  "core_thesis": "Natural gas is the cheapest winter fuel, but its aging underground infrastructure is so expensive to replace that states are paying homeowners to abandon their gas lines.",
+  "core_conflict": "Cheap commodity fuel cost versus exorbitant buried infrastructure replacement cost",
+  "composition": "heavy foreground asymmetry with background architectural depth",
+  "alt_text": "The Gas Line Trap. An excavated trench in a dark lawn exposes a heavy utility pipe, with a warmly lit house in the background",
+  "caption": "The Gas Line Trap: The hidden $30,000 pipe cost behind cheap winter heat.",
+  "title": "The Gas Line Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/cheapest-fuel-priciest-pipe/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 201158,
+  "sha256": "sha256:7c8ea5b94a48f5b3c9d7e354b762e7562f97d8a6afbf41415f1858d38d01525b",
+  "source_hash": "sha256:3477450cc3450537683bc0eb9ec21196",
+  "source_chars": 5672,
+  "task_id": "dee30ec35e23e26808069f651a8e7c04",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/dee30ec35e23e26808069f651a8e7c04_1791805205444.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph at blue hour. A deep excavated dirt trench cuts aggressively across the foreground of a manicured suburban lawn, revealing a thick, weathered iron utility pipe. The trench is illuminated by a single harsh amber construction site lamp casting deep shadows into the earth. In the background, slightly out of focus, a modern suburban home glows with warm, inviting window light against the deep blue twilight sky. Cinematic atmosphere, crisp crystalline air, deep contrast, wide anamorphic 35mm composition, long-exposure calm.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-12T11:40:11+00:00",
+  "overlay": {
+    "kicker": "WINTER HEATING // GAS PIPELINES",
+    "title": "THE GAS LINE TRAP",
+    "hook": "The hidden $30,000 pipe cost behind cheap winter heat",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.37,
+    "target": 4.5,
+    "clutter": 0.076,
+    "region_rgb": [
+      14,
+      20,
+      19
+    ],
+    "binding_rgb": [
+      18,
+      33,
+      28
+    ],
+    "title_lines": [
+      "THE GAS LINE",
+      "TRAP"
+    ],
+    "subject": 0.015,
+    "ink_subject": 0.006,
+    "spike": 0.048,
+    "generated_at": "2026-10-12T11:40:11+00:00"
+  }
+}

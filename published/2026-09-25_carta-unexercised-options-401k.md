@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/carta-unexercised-options-401k/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Vesting documents and a stock-certificate folio under soft directional light on a dark wooden desk."
-image_caption: "Access to a retirement account can provide the cash cushion needed to turn paper equity into actual shares."
+image_alt: "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des"
+image_caption: "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

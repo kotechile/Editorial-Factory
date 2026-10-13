@@ -214,12 +214,43 @@ one.
   `humanize_loop3.py`'s `humanize_all()` still prints `WROTE` unconditionally after the loop even
   though the final file was never written — do not trust that message; verify the `_final.md` file
   exists before reporting success. (Fixed in humanize_loop3.py 2026-09-23.)
+- **240s is the floor for the socket timeout, not the ceiling (learned 2026-10-13).** A ~2,000-word
+  synthesis draft on `gemini-3.1-pro-preview` aborted on its very first attempt with
+  `ERROR rewrite attempt 1: The read operation timed out`; `humanize_single_draft()` treats that
+  exception as fatal (`break`), so Loop 3 writes no `_final.md` at all. Note that
+  `humanize_loop3.call_gemini` carries its **own** hard-coded `timeout=240` in the module — extending
+  `humanizer_tools.call_gemini` does nothing for it. Drive the run from a small per-draft script that
+  rebinds the module-level `hl.call_gemini` to a 480s socket timeout and keep everything else
+  (`normalize_frontmatter`, the access-retry loop, the marker/source/length checks) unchanged; the
+  attempt trail then still prints.
+- **The post-rewrite audit has three failure classes beyond invented numbers, and all three appeared
+  in one run (learned 2026-10-13).** (1) **A quantity swap inside a real figure:** Trane's "over 1,000
+  tons (3.5 MW) of cooling *capacity*" came back as a chiller "**drawing** 3.5 MW" — the number is
+  right and the noun is wrong, so the Flesch gate, the acronym check and a numeric diff all pass it;
+  check every figure's *unit noun* against the source, not just its digits. (2) **An invented count
+  on an aggregate event:** the rewrite rendered "three dozen sites transferred at once" where no
+  source gives a site count — replace an aggregation the source never made with a hedge ("many
+  sites"), never a plausible-looking number. (3) **A rival figure handed to the wrong source row:**
+  "another outlet measured the same event at 3.9 GW [3]" pointed at the source that prints 3.8 — if
+  the piece contrasts two published readings of one event, the *second* reading needs its own
+  `## Sources` entry (add a row; `synthesize_topics.py --check-briefs` only requires the URL to be in
+  a committed signals file). Also re-check **name expansions the frontier invents for an acronym** —
+  a rewrite expanded PJM to "Pennsylvania-New Jersey-Maryland Interconnection", a name the run never
+  fetched; the acronym-first gloss ("PJM (the grid operator for 13 states and Washington, D.C.)")
+  satisfies the accessibility gate without asserting an unverified legal name.
 - **Run Loop 3 in the foreground when the run is a cron/one-shot session (learned 2026-10-10).** A
   background `terminal(background=true)` humanize run gets no completion notification in a cron
   context (the session cannot receive async completions), so the per-attempt log — verdict, Flesch,
   word count, which attempt passed — is lost and you must infer success from the `_final.md` alone.
   Run the per-draft invocation in the foreground (or `... 2>&1 | tee /tmp/loop3.log`) so the attempt
   trail survives, and still confirm the `_final.md` exists and re-measure it before publishing.
+- **In a cron session a "foreground" call over the tool's 600 s cap is silently promoted to a
+  background process (learned 2026-10-13).** Asking for `timeout 1700 python3 <driver>` returns
+  `Background process started` and a session id, the call "succeeds" with no output, and the attempt
+  trail exists only in whatever file you redirected to — so always pipe the driver through
+  `tee /tmp/loop3.log`, check the `_final.md` mtime/size afterwards, and poll the session
+  (`process action=wait`, clamped to ~180 s per call, repeatedly until `exited`) instead of assuming
+  the rewrite finished.
 - **The frontier can PASS the floor and still land under target (learned 2026-10-10).** A rewrite that
   exits PASS at Flesch ~50–51 clears the hard gate but sits on the floor, and the persistence pass
   injects the `## Related reading` block *after* the rewrite, which can push the *published* artifact
@@ -241,6 +272,8 @@ one.
   it ("None of this argues for building everything twice"), then re-measure with
   `check_accessibility.py` — re-voice only, never drop a figure or a citation. A rewrite that names no
   new figure can still fail the build on voice alone; the §9 gate is cheaper to run than a re-publish.
+- **Audit a relative interval by computing it, never by estimating it (learned 2026-10-13).** A draft that bridges two dated events ("eleven days before that report", "three weeks earlier") carries an arithmetic claim that no gate checks — not Flesch, not the acronym check, not a figure diff, because both of its endpoints are correct dates. Observed on `your-32gb-card-gone`: the drafted body and the frontier rewrite both said the Nebius increase was "eleven days" before the 2026-10-10 production report, when 2026-10-01 → 2026-10-10 is **nine** days. Compute every interval from its two dates (`datetime.date(2026,10,10) - datetime.date(2026,10,1)` = 9 days) before the accessibility gate, and when a sentence's interval is load-bearing, name both endpoints so a reader can check it without arithmetic.
+- **Audit an attributive property against the noun it modifies (learned 2026-10-13).** The unit-noun class above covers a right number with the wrong unit; the same error appears when a rewrite collapses a source's *property* into the noun it describes. NVIDIA's page says "84 GB GDDR7 with error-correcting code (ECC)"; the rewrite produced "84 GB of error-correcting code memory", which reads as though ECC were the memory itself. Both pass every gate. Check each glossed technical phrase against the source's own wording, not just its digits.
 - **Post-rewrite figure audit (mandatory):** after the frontier passes the ACCESS gate, scan the
   body for NEW specific numbers (dollar amounts, payback periods, time spans, counts) that are
   NOT in the verified brief or the source list. The frontier has inserted unsourced figures
@@ -255,6 +288,14 @@ one.
   as load-bearing as an invented figure — it attributes a claim to someone who did not make it.
   Correct it to the source's spelling, and do it *before* the accessibility gate rather than after:
   Flesch and the acronym check cannot see a wrong name.
+- **Audit a clock's trigger, not only its number (learned 2026-10-12).** A rewrite can keep every
+  figure and still move what starts the timer: DORA's four-hour initial notification came back as
+  "after they spot it" from "once it has classified it as major", so the discovery-based 24-hour
+  outer bound read as the start of the four-hour clock. For every deadline, threshold or payback
+  the brief states, check the *trigger* in the rewritten sentence against the source's own wording
+  (classification vs awareness vs discovery), because the Flesch score and the figure audit both
+  pass a sentence whose number is right and whose start is wrong.
+- **Audit quotations and new tokens too (learned 2026-10-13).** The audits above cover figures, names and clock triggers; they do not cover *the words inside quotation marks*, and the rewrite does edit them. Observed on an enterprise_tech_leadership final: a source's `"a lot of cloud repatriation projects are actually FinOps projects in disguise"` came back with the expansion inserted *inside* the quotes (`"…actually financial operations (FinOps) projects in disguise"`) — the desk's gloss in a quoted source's mouth. Diff every quoted string against the source verbatim before the accessibility gate. Same pass, same run: the rewrite *added* the all-caps brand token `ZDNET` to the body (the outlet had been cited only in `## Sources`), which the accessibility checker fails as an undefined acronym — re-voice the new token away rather than inventing an expansion for it; it also genericised a named attribution ("One consultant's line…") and turned a source-true activity ("prioritizing the restoration of services and tools that enable customers to back up and migrate") into an invented duration ("spent days fixing"). All four pass Flesch, the acronym check and the `[n]` citation check untouched, so none is visible to any gate.
 - **Flesch ceiling on proper-noun-dense bodies (learned 2026-10-06):** the compliance-retry loop
   can exhaust all `MAX_ATTEMPTS` and still FAIL the Flesch floor when the body is dominated by
   long brand/product tokens. Observed on an Azure incident piece: five full rewrites scored
@@ -294,6 +335,12 @@ Gates — the piece FAILS the ACCESS gate if:
    an apostrophe in the expansion breaks the match and the rewrite loops to MAX_ATTEMPTS and
    exits 1 (held at Loop 3) over a term that was actually spelled out. The acronym-first form always
    matches (the parenthetical accepts any characters).
+   **A comma appositive is not an expansion (learned 2026-10-12).** "SMUD, the Sacramento Municipal
+   Utility District, cut its incentive" reads correctly to a human but still fails the gate as an
+   undefined acronym: the checker accepts only the expansion-before-parens form or the
+   acronym-before-parens form, never an appositive. Write "SMUD (the Sacramento Municipal Utility
+   District) cut its incentive" — and note the gate is checked on the *body*, so a gloss written
+   into a bold `By the numbers` lead-in counts only in that parenthesis form.
 2. **A specialist term from any domain is left untranslated for a general reader.** For each
    domain term (legal, finance, customs, energy, security, database, ML, government program),
    either (a) find the plain phrase the source used, or (b) add a short gloss. Examples:

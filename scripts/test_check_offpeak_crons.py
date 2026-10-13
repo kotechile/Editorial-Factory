@@ -46,6 +46,21 @@ class WindowBoundaries(unittest.TestCase):
         self.assertEqual(sc.cadence_verdict("0 */2 * * 1")[0], "peak")
         self.assertEqual(sc.cadence_verdict("0 6,14 * * 1")[0], "peak")
 
+    def test_hour_ranges_are_expanded_not_assumed(self):
+        # A range or step must be read value by value: '11-23' clears both windows, so reporting
+        # it as a violation is a false positive that reds the whole gate (observed 2026-10-13 on a
+        # live '*/30 11-23 * * *' job). A range that touches a window is still a violation.
+        self.assertEqual(sc.cadence_verdict("*/30 11-23 * * *")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("0 10-23 * * 1")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("0 4,10,11 * * 1")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("0 10-23/4 * * 1")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("0 5-11 * * 1")[0], "peak")
+        self.assertEqual(sc.cadence_verdict("0 */3 * * 1")[0], "peak")
+
+    def test_day_of_week_ranges_are_read(self):
+        self.assertEqual(sc.cadence_verdict("30 10 * * 1-5")[0], "ok")
+        self.assertEqual(sc.cadence_verdict("0 6 * * 1-5")[0], "peak")
+
     def test_unparseable_cadence_is_unknown_not_ok(self):
         self.assertEqual(sc.cadence_verdict("every 2h")[0], "unknown")
         self.assertEqual(sc.cadence_verdict("")[0], "unknown")

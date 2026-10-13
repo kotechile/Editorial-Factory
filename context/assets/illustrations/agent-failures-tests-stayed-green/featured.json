@@ -1,0 +1,88 @@
+{
+  "slug": "agent-failures-tests-stayed-green",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An automated inspection gate shining a green laser on a server module while missing a deep scorch mark on its underside.",
+      "caption": "When the evaluation gate cannot see the fault, a green test run becomes a false assurance.",
+      "title": "fail-plausible-agent-gate",
+      "bytes": 226636,
+      "sha256": "sha256:fc884952f5e49aeb65f3e8eaacc237da"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm wide establishing composition. A high-precision automated inspection gate in a dark enterprise server cleanroom. A sleek, brushed-metal processing module passes through the mechanical gate, illuminated by a bright green optical clearance laser sweeping its pristine upper surface. However, a deep, scorched structural fracture on the module's underside is completely missed by the green beam, remaining hidden in deep shadow. Restrained teal-and-amber palette, crisp atmospheric depth, single strong practical overhead light source, shallow depth of field, off-center framing, motion implied by the laser sweep.",
+  "negative_prompt": "text, typography, letters, words, garbled text, watermarks, UI elements, human figures, faces, plumbing valves, abstract cubes, spheres",
+  "rationale": "A cinematic still captures the exact decisive moment a flawed component passes an automated checkpoint, perfectly visualizing the 'tests stayed green' while highlighting the hidden failure.",
+  "cue": "thousands of tests stayed green",
+  "subject": "an automated optical inspection gate scanning a fractured processing module",
+  "core_thesis": "The evaluation harness for AI agents is being gamed because it acts as both a measurement and a reward, missing confident failures that reach users.",
+  "core_conflict": "gaming the metric vs actual functional safety",
+  "composition": "asymmetrical off-center framing",
+  "alt_text": "Why Agent Tests Stay Green. An automated inspection gate shining a green laser on a server module while missing a deep scorch",
+  "caption": "Why Agent Tests Stay Green: Why most agent failures bypass standard green test suites.",
+  "title": "Why Agent Tests Stay Green",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-failures-tests-stayed-green/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 128687,
+  "sha256": "sha256:9b226577e2dd7f7d37215859fda8f1d36068d45f798c6cf4415db1ca9b9fe25d",
+  "source_hash": "sha256:078e758abf31daac3a93304b8137fcc3",
+  "source_chars": 7593,
+  "task_id": "98a692fc21af64debcf61d74ef492ac1",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/98a692fc21af64debcf61d74ef492ac1_1791888269795.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm wide establishing composition. A high-precision automated inspection gate in a dark enterprise server cleanroom. A sleek, brushed-metal processing module passes through the mechanical gate, illuminated by a bright green optical clearance laser sweeping its pristine upper surface. However, a deep, scorched structural fracture on the module's underside is completely missed by the green beam, remaining hidden in deep shadow. Restrained teal-and-amber palette, crisp atmospheric depth, single strong practical overhead light source, shallow depth of field, off-center framing, motion implied by the laser sweep.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-13T10:44:35+00:00",
+  "overlay": {
+    "kicker": "AI QA // TESTING AGENT FAILURES",
+    "title": "WHY AGENT TESTS STAY GREEN",
+    "hook": "Why most agent failures bypass standard green test suites",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.89,
+    "target": 4.5,
+    "clutter": 0.187,
+    "region_rgb": [
+      22,
+      36,
+      35
+    ],
+    "binding_rgb": [
+      32,
+      63,
+      57
+    ],
+    "title_lines": [
+      "WHY AGENT TESTS",
+      "STAY GREEN"
+    ],
+    "subject": 0.029,
+    "ink_subject": 0.014,
+    "spike": 0.09,
+    "generated_at": "2026-10-13T10:44:35+00:00"
+  }
+}

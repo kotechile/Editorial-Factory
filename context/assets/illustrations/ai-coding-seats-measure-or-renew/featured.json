@@ -1,0 +1,90 @@
+{
+  "slug": "ai-coding-seats-measure-or-renew",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Dual mechanical gauges side-by-side, one needle pointing high and the other pointing low, in a matte clay rendering.",
+      "caption": "The true ROI of an AI coding seat depends entirely on whether it is tested on greenfield projects or a team's own complex legacy code.",
+      "title": "AI-Coding-Trial-Gap",
+      "bytes": 1944154,
+      "sha256": "sha256:cc852ed7d6cf861f49ada0aee57acddd"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "matte clay 3D render of a modular mechanical measurement assembly on a weathered concrete surface. Split-screen diptych with left-right scenario contrast. On the left, a cleanly engineered gauge housing with its needle surging high; on the right, a matching gauge with its needle dropping low. Crafted with matte surfaces, moulding seams, and heavy contact shadows. One directional key light raking across the concrete, muted matte palette, generous negative space. No text, no moulded lettering, no bare geometry.",
+  "negative_prompt": "text, letters, words, garbled text, watermark, typography, UI elements",
+  "rationale": "Clay render perfectly captures the abstract structural disparity of software benchmarks by turning the 75-point gap into a tangible, minimalist mechanical assembly of dual gauges.",
+  "cue": "The 75-Point Gap",
+  "subject": "dual mechanical gauges showing contrasting extreme measurements",
+  "core_thesis": "The published randomized trials of AI coding tools span 55.8% faster to 19% slower, so a seat count has to rest on a trial of your own code.",
+  "core_conflict": "Vendor-supplied greenfield speed benchmarks versus the reality of maintaining known, complex proprietary code.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The AI Coding Gap. Dual mechanical gauges side-by-side, one needle pointing high and the other pointing low, in a matte clay ",
+  "caption": "The AI Coding Gap: Why AI coding tools show a 75-point productivity gap.",
+  "title": "The AI Coding Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/ai-coding-seats-measure-or-renew/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1475472,
+  "sha256": "sha256:96f52db3621b4288ea5650c6a9ba67dc47684949d5ca3e5f579e60e92cc7cb4c",
+  "source_hash": "sha256:2811dd4d4c551911d60a809ec692bff1",
+  "source_chars": 5367,
+  "task_id": "ad33c96bd1599dceec8120c6a8f1a477",
+  "credits": 18.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b238f7b0627aa8aec838cccce414f605.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "matte clay 3D render of a modular mechanical measurement assembly on a weathered concrete surface. Split-screen diptych with left-right scenario contrast. On the left, a cleanly engineered gauge housing with its needle surging high; on the right, a matching gauge with its needle dropping low. Crafted with matte surfaces, moulding seams, and heavy contact shadows. One directional key light raking across the concrete, muted matte palette, generous negative space. No text, no moulded lettering, no bare geometry.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-13T18:39:10+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // CODING ASSISTANTS",
+    "title": "THE AI CODING GAP",
+    "hook": "Why AI coding tools show a 75-point productivity gap",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.41,
+    "target": 5.5,
+    "clutter": 0.375,
+    "region_rgb": [
+      130,
+      120,
+      104
+    ],
+    "binding_rgb": [
+      175,
+      159,
+      136
+    ],
+    "title_lines": [
+      "THE AI CODING",
+      "GAP"
+    ],
+    "subject": 0.186,
+    "ink_subject": 0.102,
+    "spike": 0.524,
+    "generated_at": "2026-10-13T18:39:10+00:00"
+  }
+}
