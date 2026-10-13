@@ -206,3 +206,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-13 | `remediator-recovers-46-percent` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/remediator-recovers-46-percent/featured.png` |
 | 2026-10-13 | `ai-coding-seats-measure-or-renew` | enterprise_tech_leadership | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/ai-coding-seats-measure-or-renew/featured.png` |
 | 2026-10-13 | `panel-upgrade-80-percent-test` | smart_home_telemetry | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/panel-upgrade-80-percent-test/featured.jpg` |
+| 2026-10-13 | `build-wait-payback-threshold` | workstation_compute_economics | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/build-wait-payback-threshold/featured.jpg` |

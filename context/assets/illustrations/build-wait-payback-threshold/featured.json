@@ -1,0 +1,88 @@
+{
+  "slug": "build-wait-payback-threshold",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "High-end workstation CPU with a mechanical stopwatch resting on its metal surface.",
+      "caption": "The measured leap from 32 to 64 cores returns just 90 seconds on a full rebuild.",
+      "title": "Workstation CPU Time ROI",
+      "bytes": 560250,
+      "sha256": "sha256:73bd2ac733dd73c38abfbcb7159f5abb"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, razor-sharp focal plane. A heavy, high-end workstation processor chip resting on a matte dark grey testing bench, with a precision brass mechanical stopwatch resting partially over its metallic heat spreader. Shallow depth of field, visible surface texture on the brushed metal and subtle dust motes in the air. Soft directional daylight falling from the left, highlighting the precision contact pins and the glass of the stopwatch dial. The hero objects are positioned off-centre on the right third, with the background falling away into a smooth, dark out-of-focus blur. Modern editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, typography, logos",
+  "rationale": "The story turns precisely on a physical hardware artifact\u2014a workstation CPU\u2014and a specific measurement of time. An extreme macro shot emphasizes the tangible component at the center of this economic calculation.",
+  "cue": "90 Seconds, Not 11 Minutes",
+  "subject": "a high-end workstation processor chip with a mechanical stopwatch resting on it",
+  "core_thesis": "A $3,900 CPU upgrade only saves 90 seconds on a full rebuild, falling far short of the 11 minutes per day required to return its cost.",
+  "core_conflict": "Theoretical hardware time savings versus actual measured compile time and capital expenditure",
+  "composition": "off-centre hero object on the thirds",
+  "alt_text": "Workstation Upgrade Math. High-end workstation CPU with a mechanical stopwatch resting on its metal surface.",
+  "caption": "Workstation Upgrade Math: Why a $3,900 processor upgrade rarely pays off.",
+  "title": "Workstation Upgrade Math",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/build-wait-payback-threshold/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 354895,
+  "sha256": "sha256:878d89ea171d2069904b138145c05ddf9c575931e6ae6e06bd3946b3fb3dd276",
+  "source_hash": "sha256:f68ef5fba68145b46b0a6aef98c39338",
+  "source_chars": 4658,
+  "task_id": "1d7f5c394e8f5c54a8d355f0a716857c",
+  "credits": 7.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1d7f5c394e8f5c54a8d355f0a716857c_1791920611558.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, razor-sharp focal plane. A heavy, high-end workstation processor chip resting on a matte dark grey testing bench, with a precision brass mechanical stopwatch resting partially over its metallic heat spreader. Shallow depth of field, visible surface texture on the brushed metal and subtle dust motes in the air. Soft directional daylight falling from the left, highlighting the precision contact pins and the glass of the stopwatch dial. The hero objects are positioned off-centre on the right third, with the background falling away into a smooth, dark out-of-focus blur. Modern editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-13T19:43:36+00:00",
+  "overlay": {
+    "kicker": "HARDWARE ROI // COMPUTE ECONOMICS",
+    "title": "WORKSTATION UPGRADE MATH",
+    "hook": "Why a $3,900 processor upgrade rarely pays off",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.14,
+    "target": 4.5,
+    "clutter": 0.203,
+    "region_rgb": [
+      33,
+      32,
+      31
+    ],
+    "binding_rgb": [
+      63,
+      62,
+      67
+    ],
+    "title_lines": [
+      "WORKSTATION",
+      "UPGRADE MATH"
+    ],
+    "subject": 0.095,
+    "ink_subject": 0.058,
+    "spike": 0.244,
+    "generated_at": "2026-10-13T19:43:36+00:00"
+  }
+}
