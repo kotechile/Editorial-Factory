@@ -215,6 +215,26 @@ print(c.figure_evidence('<figure>', c.fetch_source('<url>')['text']))"`.
 
 **Lead each row with the token the page states *once* — `figure_evidence` returns the window around the first occurrence of the first numeric token in the cell (learned 2026-10-13).** A row written `24,000 samples per second` evidenced on a stray `24/7` in the page's navigation, `48A` evidenced on an `MLO 48` product-family label, and a Home Assistant recorder retention row written `10` evidenced on `MariaDB ≥ 10.3` — every one of those phrases is genuinely on its page, so the gate PASSes, but the marker's audit trail reads as a coincidence. Probe each candidate figure with `c.figure_evidence(<figure>, text)` before writing the row and lead with the token whose excerpt is a sentence about the claim (`80 amps` → the worked example; `$199.99` → the price line); when the natural figure collides, pick the page's rarer one rather than shipping a row whose evidence a reader cannot check.
 
+**Hosts probed live 2026-10-13, building a build-wait / hardware-debt payback brief.** Carries the figure
+as plain text and fetches first try: `pugetsystems.com` (the measured-benchmark anchor `bls.gov`'s 403
+denies — lab articles print compile times in prose *and* in spec tables that also carry CPU list MSRPs:
+"the 32-core 7975WX takes 5 minutes and 30 seconds, while the 64-core 7985WX completes it in 4 minutes
+flat", "AMD Ryzen Threadripper PRO 9985WX 8,000 64 … Jul 2025", and the lab's own audit line "the extra
+$3500 may be better served elsewhere"); `onetonline.org` (median wage, hourly *and* annual, by occupation);
+`eia.gov` energy-explained (retail price by customer class — the commercial rate, not residential, is the
+one a workstation payback needs); and NVIDIA's workstation product pages under
+`nvidia.com/en-us/products/workstations/professional-desktop-gpus/<part>/`. Fails: `intel.com` spec pages
+(403), guessed `amd.com` product URLs (404 — resolve the real slug first), `phoronix.com` review pages
+(client-rendered, ~2.3 KB bodies), `ccache.dev/manual` and `bazel.build` (they fetch, but their numeric
+tokens are cache/GC timers, not build times), and `dora.dev/research/…` (3 KB landing pages; the report
+itself is a PDF).
+
+**A row's `measured`/`vendor claim` cell is a claim too — check it on the page that row cites (learned
+2026-10-13).** The gate verifies the figure, never the provenance gloss: a row inherited NVIDIA's
+"preliminary product specifications, subject to change" footnote from the RTX PRO 5500 page onto the RTX
+PRO 6000 page, which does not carry it. Read the footnote on the named page before writing that cell; a
+wrong provenance line survives every gate and misstates how firm the figure is.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
