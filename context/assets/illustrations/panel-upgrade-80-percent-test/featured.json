@@ -1,0 +1,88 @@
+{
+  "slug": "panel-upgrade-80-percent-test",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Illuminated smart electrical subpanel mounted on a concrete garage wall at night.",
+      "caption": "Smart load management devices allow homes to bypass expensive panel upgrades by capping real-world peak usage.",
+      "title": "Smart Panel Load Management",
+      "bytes": 308301,
+      "sha256": "sha256:dd55b6d0696477e4f68b830c44f0803b"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. An unbranded modern smart electrical subpanel and heavy-duty inverter mounted on a textured concrete garage utility wall. A thick brushed metal conduit runs to an EV charger. Deep blue ambient twilight contrasts with the warm amber LED status lights glowing from the smart panel's tempered glass interface. Deep shadows, clean architectural geometry, crisp high-contrast atmosphere, asymmetric composition with generous editorial negative space on the left side, capturing the quiet after-hours energy management of a modern home.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, text, words",
+  "rationale": "Captures the actual environment of the residential energy upgrade\u2014the garage utility wall at dusk\u2014where the smart load management takes place after hours, emphasizing the physical hardware bypassing the paper math.",
+  "cue": "Your Panel Doesn't Need More Amps",
+  "subject": "An illuminated smart subpanel and EV charger on a modern garage utility wall",
+  "core_thesis": "A home panel upgrade decision turns on the 80 percent threshold calculation versus actual metered peak usage and smart load-shedding hardware.",
+  "core_conflict": "Theoretical worst-case code calculations vs. actual measured electrical load and smart management.",
+  "composition": "Asymmetric wide shot with generous negative space",
+  "alt_text": "Skip The Panel Upgrade. Illuminated smart electrical subpanel mounted on a concrete garage wall at night.",
+  "caption": "Skip The Panel Upgrade: How smart subpanels bypass costly electrical upgrades.",
+  "title": "Skip The Panel Upgrade",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/panel-upgrade-80-percent-test/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 176065,
+  "sha256": "sha256:e209cf5cffaa21dd46f16a074a5e5acd33306b20638c9cda8f3a97a7182d0f44",
+  "source_hash": "sha256:baf5f357a104489a915b7e30d03d5583",
+  "source_chars": 5110,
+  "task_id": "ce74136e62c448bc0a2d0f2ecbde8a06",
+  "credits": 5.0,
+  "cost_ms": 39,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ce74136e62c448bc0a2d0f2ecbde8a06_1791918713323.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. An unbranded modern smart electrical subpanel and heavy-duty inverter mounted on a textured concrete garage utility wall. A thick brushed metal conduit runs to an EV charger. Deep blue ambient twilight contrasts with the warm amber LED status lights glowing from the smart panel's tempered glass interface. Deep shadows, clean architectural geometry, crisp high-contrast atmosphere, asymmetric composition with generous editorial negative space on the left side, capturing the quiet after-hours energy management of a modern home.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-13T19:11:56+00:00",
+  "overlay": {
+    "kicker": "HOME ENERGY // SMART SUBPANELS",
+    "title": "SKIP THE PANEL UPGRADE",
+    "hook": "How smart subpanels bypass costly electrical upgrades",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.62,
+    "target": 4.5,
+    "clutter": 0.058,
+    "region_rgb": [
+      24,
+      38,
+      57
+    ],
+    "binding_rgb": [
+      30,
+      47,
+      73
+    ],
+    "title_lines": [
+      "SKIP THE PANEL",
+      "UPGRADE"
+    ],
+    "subject": 0.01,
+    "ink_subject": 0.003,
+    "spike": 0.036,
+    "generated_at": "2026-10-13T19:11:56+00:00"
+  }
+}

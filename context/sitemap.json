@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T18:39:22Z",
+  "updated_at": "2026-10-13T19:12:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1573,6 +1573,24 @@
       "date": "2026-10-13",
       "public": true,
       "url": "https://wellroost.com/local-api-isnt-in-the-contract/"
+    },
+    {
+      "slug": "2026-10-13_panel-upgrade-80-percent-test",
+      "title": "Your Panel Doesn't Need More Amps: The 80% Test",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-13",
+      "public": false
     },
     {
       "slug": "2026-10-13_rack-ride-through-two-second-duty",
