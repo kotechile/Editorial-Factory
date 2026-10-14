@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/tariff-cliff-already-priced-in/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn lighting."
-image_caption: "Supply chain operators are building cash buffers to hedge against the looming return of suspended tariffs."
+image_alt: "Pricing In The Tariff Cliff. Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn light"
+image_caption: "Pricing In The Tariff Cliff: CFOs hoard tariff refunds ahead of a looming snap-back."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

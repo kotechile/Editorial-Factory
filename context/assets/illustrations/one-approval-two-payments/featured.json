@@ -1,0 +1,90 @@
+{
+  "slug": "one-approval-two-payments",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a hardware routing bay where one input splits into two output lanes bypassing a central module.",
+      "caption": "When a framework resumes a parked approval, the lack of an external lock can send one action down multiple parallel execution paths.",
+      "title": "Agent-Framework-Duplicate-Routing-Cutaway",
+      "bytes": 7574590,
+      "sha256": "sha256:90d8e2d06d69e69479f2135deae280e6"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry framing rule with the hero assembly positioned off-centre on the right. A mechanical dual-path routing bay where a single input channel splits into two parallel output lanes that physically bypass a central grey checkpoint module. Recognisable hardware with modular racks, brushed steel connectors, and frosted copper piping laid over a textured drafting table. Flat muted palette with a single bright golden-amber accent colour highlighting the duplicated output lanes. Thin consistent line weight, one directional light casting a long shadow, generous empty margin.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, labels, illegible text, UI elements",
+  "rationale": "The article explains a systemic software architecture flaw where a single path incorrectly duplicates. A technical isometric cutaway perfectly maps this abstract computational routing error into a clear, physical pipeline diagram.",
+  "cue": "A checkpoint records progress, never effect identity",
+  "subject": "an isometric cutaway of a dual-path routing module bypassing a central checkpoint",
+  "core_thesis": "A checkpoint layer records progress but not effect identity, allowing a single parked approval to trigger duplicate downstream actions if not gated by an external consume-once store.",
+  "core_conflict": "Checkpoint progress tracking versus external state execution and duplicate payments",
+  "composition": "extreme asymmetry off-centre",
+  "alt_text": "The Double Payment Trap. Isometric cutaway of a hardware routing bay where one input splits into two output lanes bypassing a",
+  "caption": "The Double Payment Trap: How resuming paused approvals fires duplicate payments.",
+  "title": "The Double Payment Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/one-approval-two-payments/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 3125424,
+  "sha256": "sha256:3f308889d5e2d20ab1058c1fde7fadb7f8d758553936fd1b1e5f7c2e90cb4e5a",
+  "source_hash": "sha256:e0ed6596b5b16061289bd7c0ac6a3105",
+  "source_chars": 5526,
+  "task_id": "a6286af306764a1ec03b85ae8333e36b",
+  "credits": 18.0,
+  "cost_ms": 37,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_aadacec8b6d4f600a1953329b2ce0e3f.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry framing rule with the hero assembly positioned off-centre on the right. A mechanical dual-path routing bay where a single input channel splits into two parallel output lanes that physically bypass a central grey checkpoint module. Recognisable hardware with modular racks, brushed steel connectors, and frosted copper piping laid over a textured drafting table. Flat muted palette with a single bright golden-amber accent colour highlighting the duplicated output lanes. Thin consistent line weight, one directional light casting a long shadow, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-14T18:14:57+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AGENTS // DOUBLE PAYMENTS",
+    "title": "THE DOUBLE PAYMENT TRAP",
+    "hook": "How resuming paused approvals fires duplicate payments",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 12.4,
+    "target": 4.5,
+    "clutter": 0.005,
+    "region_rgb": [
+      251,
+      250,
+      248
+    ],
+    "binding_rgb": [
+      249,
+      249,
+      247
+    ],
+    "title_lines": [
+      "THE DOUBLE",
+      "PAYMENT TRAP"
+    ],
+    "subject": 0.001,
+    "ink_subject": 0.001,
+    "spike": 0.0,
+    "generated_at": "2026-10-14T18:14:57+00:00"
+  }
+}

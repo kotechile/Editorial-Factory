@@ -1,6 +1,6 @@
 {
   "slug": "tariff-cliff-already-priced-in",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:a8ebb56a551788f7e9122f882e86c6f2",
       "generated_at": "2026-10-01T14:12:20+00:00",
       "source_hash": "sha256:385c2c3f7bcae7e8bb3d5546336786cc"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn lighting.",
+      "caption": "Supply chain operators are building cash buffers to hedge against the looming return of suspended tariffs.",
+      "title": "Tariff Truce Cash Hoard",
+      "bytes": 273090,
+      "sha256": "sha256:672262af1b9c6719bb38e9a0147df38e"
     }
   ],
   "style": "cinematic_still",
@@ -26,9 +34,9 @@
   "rationale": "A cinematic still of a quiet, towering container yard perfectly captures the scale of the supply chain and the eerie, suspended reality of hoarding capital while waiting for a tariff snap-back.",
   "cue": "live sourcing-and-cash deadline",
   "subject": "towering stacks of intermodal shipping containers in a quiet yard",
-  "alt_text": "Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn lighting.",
-  "caption": "Supply chain operators are building cash buffers to hedge against the looming return of suspended tariffs.",
-  "title": "Tariff Truce Cash Hoard",
+  "alt_text": "Pricing In The Tariff Cliff. Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn light",
+  "caption": "Pricing In The Tariff Cliff: CFOs hoard tariff refunds ahead of a looming snap-back.",
+  "title": "Pricing In The Tariff Cliff",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +46,8 @@
   "local_path": "context/assets/illustrations/tariff-cliff-already-priced-in/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 273090,
-  "sha256": "sha256:672262af1b9c6719bb38e9a0147df38e",
+  "bytes": 135319,
+  "sha256": "sha256:440d24fd098c5bd96af4800fd84c8d12360eaa9013dcdcf82a943f08bb132b10",
   "source_hash": "sha256:385c2c3f7bcae7e8bb3d5546336786cc",
   "source_chars": 4366,
   "task_id": "679b3cd0de8ca9843b521d2a97ca681c",
@@ -54,5 +62,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:18:33+00:00"
+  "generated_at": "2026-10-08T22:18:33+00:00",
+  "overlay": {
+    "kicker": "GLOBAL TRADE // TARIFF CLIFF",
+    "title": "PRICING IN THE TARIFF CLIFF",
+    "hook": "CFOs hoard tariff refunds ahead of a looming snap-back",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.04,
+    "target": 4.5,
+    "clutter": 0.22,
+    "region_rgb": [
+      36,
+      47,
+      48
+    ],
+    "binding_rgb": [
+      66,
+      72,
+      72
+    ],
+    "title_lines": [
+      "PRICING IN THE",
+      "TARIFF CLIFF"
+    ],
+    "subject": 0.132,
+    "ink_subject": 0.047,
+    "spike": 0.471,
+    "generated_at": "2026-10-08T22:18:33+00:00"
+  }
 }

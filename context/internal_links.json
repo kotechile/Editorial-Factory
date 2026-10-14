@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:16:44+00:00",
+  "generated_at": "2026-10-14T14:20:22+00:00",
   "site_source": "public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -34,6 +34,176 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 867,
+      "slug": "owned-shuttles-or-rented-robots",
+      "title": "$62M Says You Never Buy Robots",
+      "url": "https://giniloh.com/owned-shuttles-or-rented-robots/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Tractor Supply just spent more than $200 million to own an 865,000-square-foot automated warehouse in Idaho.",
+      "modified": "2026-10-14T12:53:52",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 866,
+      "slug": "flat-price-was-the-hedge",
+      "title": "Your Jira Bill Rose 10%: Memory Rose Six Times",
+      "url": "https://giniloh.com/flat-price-was-the-hedge/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Atlassian raised cloud prices for Jira and Confluence by 3% to 10% on 13 October.",
+      "modified": "2026-10-14T12:14:04",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 863,
+      "slug": "your-chip-stopped-deciding",
+      "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
+      "url": "https://giniloh.com/your-chip-stopped-deciding/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "Non-GPUs overtook GPUs in China for the first time in the first half of 2026: 1.016 million chips built for specific jobs against 991,000 graphics processing\u2026",
+      "modified": "2026-10-14T11:43:07",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 861,
+      "slug": "stale-grants-travel-the-graph",
+      "title": "Your Agent Fabric\u2019s 52.2% Blind Spot",
+      "url": "https://giniloh.com/stale-grants-travel-the-graph/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Two measurements landed a day apart: one left 13 capability-steps reachable after their last justified use, the other lifted disclosure to an agent the\u2026",
+      "modified": "2026-10-14T11:14:09",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 859,
+      "slug": "retry-permission-leaves-the-caller",
+      "title": "Retry Budgets Fail: Agents Retry 60 of 80 Anyway",
+      "url": "https://giniloh.com/retry-permission-leaves-the-caller/",
+      "categories": [
+        "Autonomous & Agentic Workflows:"
+      ],
+      "category_ids": [
+        9
+      ],
+      "excerpt": "Uber cut the worst retry storm its network can produce from 25 hops to three by taking the decision to retry away from the caller.",
+      "modified": "2026-10-14T10:41:06",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 856,
+      "slug": "hour-14-recovery-wall",
+      "title": "Dock Overtime: Your Real 14-Hour Cost",
+      "url": "https://giniloh.com/hour-14-recovery-wall/",
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [
+        10
+      ],
+      "excerpt": "Two hours before a delayed container clears the gate, the driver\u2019s day is already spent.",
+      "modified": "2026-10-13T20:16:13",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 854,
+      "slug": "build-wait-payback-threshold",
+      "title": "Silent Build Wait: 90 Seconds, Not 11 Minutes",
+      "url": "https://giniloh.com/build-wait-payback-threshold/",
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [
+        2
+      ],
+      "excerpt": "An outside lab ran a standard graphics test on two work chips, where a 32-core chip finished in five and a half minutes and a 64-core chip took exactly four\u2026",
+      "modified": "2026-10-13T19:44:11",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 852,
+      "slug": "ai-coding-seats-measure-or-renew",
+      "title": "AI Coding Seats: The 75-Point Gap",
+      "url": "https://giniloh.com/ai-coding-seats-measure-or-renew/",
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [
+        3
+      ],
+      "excerpt": "Two random trials of AI coding seats sit about 75 points apart. In one, GitHub measured a group finishing a task 55.8% faster with its Copilot assistant.",
+      "modified": "2026-10-13T18:39:21",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 850,
+      "slug": "remediator-recovers-46-percent",
+      "title": "Your Remediator Recovers 46.67%: The Silent Regression",
+      "url": "https://giniloh.com/remediator-recovers-46-percent/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Self-healing tools now grade their own work, and the scores clash.",
+      "modified": "2026-10-13T18:09:53",
+      "live": true
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 848,
+      "slug": "100-case-eval-925-coverage",
+      "title": "Your 100-Case Eval: 92.5% Coverage, Not 95%",
+      "url": "https://giniloh.com/100-case-eval-925-coverage/",
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [
+        7
+      ],
+      "excerpt": "Your 100-case eval prints one number. If it prints a bar at all, it calls that bar 95%.",
+      "modified": "2026-10-13T17:38:59",
+      "live": true
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -1566,125 +1736,6 @@
     },
     {
       "site": "giniloh.com",
-      "kind": "article",
-      "id": 121,
-      "slug": "ebike-costs-per-use-calculator-for-commuters",
-      "title": "Ebike Costs: Per-Use Calculator for Commuters",
-      "url": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [
-        2
-      ],
-      "excerpt": "Stop guessing whether an e-bike is worth it\u2014most people overpay for their commute without realizing it. This article uses the Giniloh Decision Intelligence Framework to uncover the true ebike costs and which choice saves real money. Instead of just listing price tags, you\u2019ll lear",
-      "modified": "2026-06-20T11:03:06",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 107,
-      "slug": "jobs-switch-calculator-step-by-step-profit-guide",
-      "title": "Jobs Switch Calculator: Step-by-Step Profit Guide",
-      "url": "https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/",
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [
-        3
-      ],
-      "excerpt": "Are you considering a jobs switch but worried about forfeiting years of unvested 401(k) matches? The Gilinoh Raise & Job-Hop Velocity Calculator exposes the hidden financial trade-offs most professionals overlook. In a realistic scenario, a mid-career engineer earning $120,000 re",
-      "modified": "2026-06-20T00:52:04",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 99,
-      "slug": "calculate-your-career-relocation-payback",
-      "title": "Calculate Your Career Relocation Payback",
-      "url": "https://giniloh.com/calculate-your-career-relocation-payback/",
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [
-        3
-      ],
-      "excerpt": "Moving for a career relocation is one of the most consequential financial decisions a professional can make\u2014yet most job offers gloss over the hidden costs that can turn a salary bump into a net loss. A new interactive tool, the Giniloh Career Relocation Cost & Payback Calculator",
-      "modified": "2026-08-12T00:47:00",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 91,
-      "slug": "negotiate-job-offer-with-giniloh-visualizer",
-      "title": "Negotiate Job Offer with Giniloh Visualizer",
-      "url": "https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/",
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [
-        3
-      ],
-      "excerpt": "Most candidates fixate on base salary when they negotiate a job offer\u2014but that leaves money on the table. The Giniloh Total Compensation Visualizer transforms the process. You input specific numbers for salary, equity, bonuses, and benefits, then instantly see how different scena",
-      "modified": "2026-07-09T17:12:12",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 62,
-      "slug": "the-blueprint-behind-giniloh-money-flow",
-      "title": "The Blueprint Behind Giniloh Money Flow",
-      "url": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
-      "categories": [
-        "Money & Wealth"
-      ],
-      "category_ids": [
-        4
-      ],
-      "excerpt": "Imagine taking control of your money flow without the usual spreadsheet headaches or second-guessing every move. That\u2019s exactly what the Giniloh Money Flow Simulator delivers\u2014a risk-free sandbox where you can test your smart money decisions in real time. Instead of hoping your bi",
-      "modified": "2026-06-15T00:25:11",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 33,
-      "slug": "how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless",
-      "title": "Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows",
-      "url": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
-      "categories": [
-        "Money & Wealth"
-      ],
-      "category_ids": [
-        4
-      ],
-      "excerpt": "Mastering your money flows is no longer guesswork. The Giniloh Frictionless Money Flow Simulator lets you configure a real-time cash routing engine on an interactive canvas\u2014click any account node to drag sliders for balances, ceiling limits, and safety floors. Its AI Orchestratio",
-      "modified": "2026-06-10T21:24:19",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 11,
-      "slug": "the-giniloh-money-flow-simulator-explained",
-      "title": "How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)",
-      "url": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
-      "categories": [
-        "Money & Wealth"
-      ],
-      "category_ids": [
-        4
-      ],
-      "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the L",
-      "modified": "2026-07-09T16:36:32",
-      "live": true
-    },
-    {
-      "site": "giniloh.com",
       "kind": "calculator",
       "id": null,
       "slug": "lease-break",
@@ -1954,6 +2005,23 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "",
+      "live": true
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": 141,
+      "slug": "panel-upgrade-80-percent-test",
+      "title": "Your Panel Doesn\u2019t Need More Amps: The 80% Test",
+      "url": "https://wellroost.com/panel-upgrade-80-percent-test/",
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [
+        5
+      ],
+      "excerpt": "A homeowner recently bypassed a seven-month wait and an $11,200 quote to upgrade a 200-amp panel to 400 amps. They installed a $4,200 smart subpanel instead.",
+      "modified": "2026-10-13T19:12:08",
       "live": true
     },
     {

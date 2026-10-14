@@ -1,6 +1,6 @@
 {
   "slug": "disney-hulu-fourth-hike-subscription-creep",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -49,6 +49,14 @@
       "title": "streaming-rate-notice-flatlay",
       "bytes": 261586,
       "sha256": "sha256:6df29701dff44d27ca0bb84db32a675c"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Disney Plus Price Hike. An amended billing statement and rate notice resting slightly out of alignment on a plain desk surfac",
+      "caption": "Disney Plus Price Hike: Streaming costs rise three times faster than inflation.",
+      "title": "Disney Plus Price Hike",
+      "bytes": 149148,
+      "sha256": "sha256:15199e9e52290e1ffb862ee131bc074bf4ce4c03bc6fa3fde5a0a23ec5e68ede"
     }
   ],
   "style": "document_flatlay",

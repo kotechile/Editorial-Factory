@@ -1,7 +1,16 @@
 {
   "slug": "goods-tariff-relief-vs-vessel-fee",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A telephoto view of stacked shipping containers and cranes at a sprawling maritime port under an overcast sky.",
+      "caption": "A resuming vessel fee of up to $120 per container threatens to offset recent tariff relief on everyday imported goods.",
+      "title": "Container-Ship-Port-Fee",
+      "bytes": 415785,
+      "sha256": "sha256:e92309484c18c0e103b31a266c3770ea"
+    }
+  ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
   "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
@@ -15,9 +24,9 @@
   "rationale": "The article discusses a flat container fee applied to ships, contrasting with a tariff cut on goods. A long-lens compressed view of stacked shipping containers and port cranes conveys the massive physical scale of the trade facing these opposing policies.",
   "cue": "$120 per container",
   "subject": "stacked shipping containers at a port terminal",
-  "alt_text": "A telephoto view of stacked shipping containers and cranes at a sprawling maritime port under an overcast sky.",
-  "caption": "A resuming vessel fee of up to $120 per container threatens to offset recent tariff relief on everyday imported goods.",
-  "title": "Container-Ship-Port-Fee",
+  "alt_text": "Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and cranes at a sprawling maritime port un",
+  "caption": "Washington Cuts The Tariff On The: On Sept. 27, the U.S.-China Board of Trade recommended.",
+  "title": "Washington Cuts The Tariff On The",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +36,8 @@
   "local_path": "context/assets/illustrations/goods-tariff-relief-vs-vessel-fee/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 415785,
-  "sha256": "sha256:e92309484c18c0e103b31a266c3770ea",
+  "bytes": 221505,
+  "sha256": "sha256:8e6f408e3dc96d96f0bae813e80162da64e3295fc8b512c3b6b55fc747ff2888",
   "source_hash": "sha256:64afea2b37b7b60c41f96997291330c6",
   "source_chars": 4026,
   "task_id": "bc009468ce8125898f03f84394c780ee",
@@ -43,5 +52,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-01T14:13:25+00:00"
+  "generated_at": "2026-10-01T14:13:25+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "WASHINGTON CUTS THE TARIFF ON THE",
+    "hook": "On Sept. 27, the U.S.-China Board of Trade recommended",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 75,
+    "contrast": 4.94,
+    "target": 4.5,
+    "clutter": 0.226,
+    "region_rgb": [
+      100,
+      117,
+      131
+    ],
+    "binding_rgb": [
+      123,
+      149,
+      162
+    ],
+    "title_lines": [
+      "WASHINGTON CUTS",
+      "THE TARIFF ON THE"
+    ],
+    "subject": 0.068,
+    "ink_subject": 0.038,
+    "spike": 0.19,
+    "generated_at": "2026-10-01T14:13:25+00:00"
+  }
 }

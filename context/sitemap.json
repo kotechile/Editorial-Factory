@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T17:41:02Z",
+  "updated_at": "2026-10-14T18:15:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1743,6 +1743,24 @@
         "At a glance"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-10-14",
+      "public": false
+    },
+    {
+      "slug": "2026-10-14_one-approval-two-payments",
+      "title": "One Approval, Two Payments: The 24-Hour Trap",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-10-14",
       "public": false
     },
