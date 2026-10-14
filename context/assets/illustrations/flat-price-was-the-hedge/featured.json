@@ -1,0 +1,90 @@
+{
+  "slug": "flat-price-was-the-hedge",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Split-screen diptych contrasting a cloud billing module and a server memory bank on concrete.",
+      "caption": "The build-versus-buy decision now forces teams to choose between software price hikes and skyrocketing hardware memory costs.",
+      "title": "build-vs-buy-cost-curves-split",
+      "bytes": 2409514,
+      "sha256": "sha256:60744cbeed1afd270645bc48f3d87c12"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a split-screen diptych with left-right scenario contrast resting on a weathered concrete surface. On the left, a modular cloud subscription billing meter with an interlocking bay. On the right, a physical enterprise server memory bank with dense memory stick modules. Distinct physical arrangement, hard clean edges, contact shadows, one directional key light raking across them. Matte muted palette with subtle tech accents, no plain spheres, no text.",
+  "negative_prompt": "garbled text, random letters, UI, watermarks, embossed text, printed lettering",
+  "rationale": "A matte clay 3D render allows us to structurally contrast the two escalating cost models\u2014a cloud meter module versus a hardware memory bank\u2014using a clear split-screen diptych without relying on literal stock photos.",
+  "cue": "a choice between two cost curves",
+  "subject": "split-screen assembly of a cloud billing meter and a server memory bank",
+  "core_thesis": "Build-vs-buy is now a choice between two escalating cost curves: cloud software price hikes versus surging hardware memory costs.",
+  "core_conflict": "Predictable software subscription meters vs volatile hardware memory capital costs",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The New Cost Of Software. Split-screen diptych contrasting a cloud billing module and a server memory bank on concrete.",
+  "caption": "The New Cost Of Software: Flat-rate pricing ends as memory and SaaS costs jump.",
+  "title": "The New Cost Of Software",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/flat-price-was-the-hedge/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1863416,
+  "sha256": "sha256:09925a507b5c72a393efd299093b99b7cea18ff96d848f2f1c63f349825b5ded",
+  "source_hash": "sha256:52a496d6f84999089e062179ef17954a",
+  "source_chars": 4502,
+  "task_id": "5435bf3a769b813cdbcebc76de227225",
+  "credits": 18.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_82737bfc9d0e1d6133d6658fbb98c51c.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a split-screen diptych with left-right scenario contrast resting on a weathered concrete surface. On the left, a modular cloud subscription billing meter with an interlocking bay. On the right, a physical enterprise server memory bank with dense memory stick modules. Distinct physical arrangement, hard clean edges, contact shadows, one directional key light raking across them. Matte muted palette with subtle tech accents, no plain spheres, no text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-14T12:13:45+00:00",
+  "overlay": {
+    "kicker": "BUILD VS BUY // CLOUD INFLATION",
+    "title": "THE NEW COST OF SOFTWARE",
+    "hook": "Flat-rate pricing ends as memory and SaaS costs jump",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.76,
+    "target": 5.5,
+    "clutter": 0.411,
+    "region_rgb": [
+      107,
+      99,
+      87
+    ],
+    "binding_rgb": [
+      187,
+      172,
+      151
+    ],
+    "title_lines": [
+      "THE NEW COST OF",
+      "SOFTWARE"
+    ],
+    "subject": 0.126,
+    "ink_subject": 0.087,
+    "spike": 0.285,
+    "generated_at": "2026-10-14T12:13:45+00:00"
+  }
+}

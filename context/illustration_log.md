@@ -211,3 +211,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-14 | `retry-permission-leaves-the-caller` | agentic_resilience_failure | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/retry-permission-leaves-the-caller/featured.png` |
 | 2026-10-14 | `stale-grants-travel-the-graph` | multi_agent_enterprise_fabric | `technical_isometric` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/stale-grants-travel-the-graph/featured.png` |
 | 2026-10-14 | `your-chip-stopped-deciding` | gpu_hardware | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-chip-stopped-deciding/featured.jpg` |
+| 2026-10-14 | `flat-price-was-the-hedge` | enterprise_build_vs_buy | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/flat-price-was-the-hedge/featured.png` |
