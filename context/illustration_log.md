@@ -208,3 +208,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-13 | `panel-upgrade-80-percent-test` | smart_home_telemetry | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/panel-upgrade-80-percent-test/featured.jpg` |
 | 2026-10-13 | `build-wait-payback-threshold` | workstation_compute_economics | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/build-wait-payback-threshold/featured.jpg` |
 | 2026-10-13 | `hour-14-recovery-wall` | control_tower_exception_orchestration | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/hour-14-recovery-wall/featured.jpg` |
+| 2026-10-14 | `retry-permission-leaves-the-caller` | agentic_resilience_failure | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/retry-permission-leaves-the-caller/featured.png` |

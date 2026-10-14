@@ -1,0 +1,90 @@
+{
+  "slug": "retry-permission-leaves-the-caller",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An industrial inspection gate mechanism blocking modular routing blocks on weathered concrete.",
+      "caption": "When agents cannot be trusted to respect retry limits, the network boundary must enforce the right to retry.",
+      "title": "Agentic Retry Boundary Gate",
+      "bytes": 2144015,
+      "sha256": "sha256:31290be65d25a7cf47459f07b78850ff"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a modular mechanical assembly on a textured weathered concrete surface. An unlatched industrial inspection gate mechanism in brushed steel forcefully blocks small incoming modular routing blocks while an authorized block rests securely inside the shielded bay. Hard clean edges, extreme asymmetric off-centre framing with the gate commanding the left side of the frame, generous negative space on the right. One dramatic directional light throwing a long cast shadow across the concrete, matte muted palette with a single caution-yellow accent on the latch. No text.",
+  "negative_prompt": "garbled text, numbers, letters, watermark, UI, letters, words",
+  "rationale": "The story focuses on a systemic rule shift\u2014a modular gate taking control away from individual callers. Component assembly perfectly illustrates a hard systemic boundary or inspection point restricting flow, using constructed architectural metaphor.",
+  "cue": "moved out of the caller",
+  "subject": "a heavy industrial inspection gate blocking modular routing tokens",
+  "core_thesis": "The right to retry failed calls has moved to the error owner to prevent unauthorized agents from causing severe network retry storms.",
+  "core_conflict": "Agentic persistence vs systemic control and strict error ownership boundaries.",
+  "composition": "extreme asymmetric off-centre framing",
+  "alt_text": "Agents Break Retry Budgets. An industrial inspection gate mechanism blocking modular routing blocks on weathered concrete.",
+  "caption": "Agents Break Retry Budgets: AI models ignore the retry limits that protect networks.",
+  "title": "Agents Break Retry Budgets",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/retry-permission-leaves-the-caller/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1548503,
+  "sha256": "sha256:186d000ecef948129bb5c61855e9c8135551d77478a81d886236ff196e777221",
+  "source_hash": "sha256:b90b78aa35bb16ba28114e8f0b60fe42",
+  "source_chars": 9075,
+  "task_id": "0894db7a43ff5d8161d0bd99a26e7f65",
+  "credits": 18.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_4891dfbcff1e7d81d5d71a7f098ed761.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a modular mechanical assembly on a textured weathered concrete surface. An unlatched industrial inspection gate mechanism in brushed steel forcefully blocks small incoming modular routing blocks while an authorized block rests securely inside the shielded bay. Hard clean edges, extreme asymmetric off-centre framing with the gate commanding the left side of the frame, generous negative space on the right. One dramatic directional light throwing a long cast shadow across the concrete, matte muted palette with a single caution-yellow accent on the latch. No text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-14T10:40:52+00:00",
+  "overlay": {
+    "kicker": "AGENT RESILIENCE // RETRY STORMS",
+    "title": "AGENTS BREAK RETRY BUDGETS",
+    "hook": "AI models ignore the retry limits that protect networks",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.89,
+    "target": 4.5,
+    "clutter": 0.109,
+    "region_rgb": [
+      63,
+      63,
+      58
+    ],
+    "binding_rgb": [
+      64,
+      65,
+      59
+    ],
+    "title_lines": [
+      "AGENTS BREAK",
+      "RETRY BUDGETS"
+    ],
+    "subject": 0.063,
+    "ink_subject": 0.028,
+    "spike": 0.202,
+    "generated_at": "2026-10-14T10:40:52+00:00"
+  }
+}

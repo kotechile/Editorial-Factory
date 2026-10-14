@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T20:16:28Z",
+  "updated_at": "2026-10-14T10:41:08Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1702,6 +1702,24 @@
       "date": "2026-10-13",
       "public": true,
       "url": "https://giniloh.com/your-32gb-card-gone/"
+    },
+    {
+      "slug": "2026-10-14_retry-permission-leaves-the-caller",
+      "title": "Retry Budgets Fail: Agents Retry 60 of 80 Anyway",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-14",
+      "public": false
     }
   ]
 }
