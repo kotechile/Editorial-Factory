@@ -1,0 +1,88 @@
+{
+  "slug": "wage-floor-sets-robot-payback",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Industrial robotic picking arm illuminated by a warm worklight in a quiet warehouse staging floor.",
+      "caption": "Automation capital plans must anchor on local minimum wage floors rather than national medians.",
+      "title": "warehouse-robot-wage-floor",
+      "bytes": 320313,
+      "sha256": "sha256:572af597c4f9571e2657b58a799aec5e"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, 35mm anamorphic wide with dramatic falloff. An asymmetric wide framing showing a heavy-duty industrial robotic picking arm off-centre in a vast, quiet warehouse staging floor. The robot features brushed steel joints and matte yellow polymer housing, resting on weathered concrete. A single strong practical warm amber worklight illuminates the machine against deep blue-hour shadows, emphasizing tactile material weight and industrial contrast. Crisp atmospheric depth, no people, modern editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, logos, UI, people, human face, hands",
+  "rationale": "A cinematic still captures the physical reality of the automation investment, placing the robotic capital in an authentic industrial setting to ground the financial math.",
+  "cue": "payback belongs at the floor",
+  "subject": "an industrial robotic picking arm in a warehouse staging bay",
+  "core_thesis": "Automation payback models must use local minimum wage floors by specific occupation rather than blended national medians.",
+  "core_conflict": "Local legal wage floors versus national blended averages in capital planning.",
+  "composition": "asymmetric wide framing with the subject off-centre",
+  "alt_text": "Automation Wage Math. Industrial robotic picking arm illuminated by a warm worklight in a quiet warehouse staging floor.",
+  "caption": "Automation Wage Math: Why national wage averages break robot ROI models.",
+  "title": "Automation Wage Math",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/wage-floor-sets-robot-payback/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 179014,
+  "sha256": "sha256:a5f03f31e5bb3b73e452dff0bb4c1c2ee6d32681334aba3bb87b4136f49791e6",
+  "source_hash": "sha256:fae832b09deac6b3f24aff3f0893bffe",
+  "source_chars": 4798,
+  "task_id": "ed4c8b89064dcb7e3efe8b3fa459c4e8",
+  "credits": 5.0,
+  "cost_ms": 207,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ed4c8b89064dcb7e3efe8b3fa459c4e8_1792007339931.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, 35mm anamorphic wide with dramatic falloff. An asymmetric wide framing showing a heavy-duty industrial robotic picking arm off-centre in a vast, quiet warehouse staging floor. The robot features brushed steel joints and matte yellow polymer housing, resting on weathered concrete. A single strong practical warm amber worklight illuminates the machine against deep blue-hour shadows, emphasizing tactile material weight and industrial contrast. Crisp atmospheric depth, no people, modern editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-14T19:49:04+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE CAPEX // WAGE FLOORS",
+    "title": "AUTOMATION WAGE MATH",
+    "hook": "Why national wage averages break robot ROI models",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.27,
+    "target": 4.5,
+    "clutter": 0.178,
+    "region_rgb": [
+      41,
+      42,
+      43
+    ],
+    "binding_rgb": [
+      47,
+      56,
+      65
+    ],
+    "title_lines": [
+      "AUTOMATION",
+      "WAGE MATH"
+    ],
+    "subject": 0.077,
+    "ink_subject": 0.051,
+    "spike": 0.181,
+    "generated_at": "2026-10-14T19:49:04+00:00"
+  }
+}

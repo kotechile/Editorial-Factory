@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T19:10:10Z",
+  "updated_at": "2026-10-14T19:49:18Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1838,6 +1838,24 @@
       "date": "2026-10-14",
       "public": true,
       "url": "https://giniloh.com/stale-grants-travel-the-graph/"
+    },
+    {
+      "slug": "2026-10-14_wage-floor-sets-robot-payback",
+      "title": "Warehouse Payback: $17.00, Not $17.95",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-14",
+      "public": false
     },
     {
       "slug": "2026-10-14_your-chip-stopped-deciding",
