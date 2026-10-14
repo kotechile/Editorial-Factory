@@ -213,6 +213,16 @@ print(c.figure_evidence('<figure>', c.fetch_source('<url>')['text']))"`.
 
 **Hosts probed live 2026-10-13, building a panel-ampacity / load-management brief out of a residential-electrification decision.** Carries the figure as plain text and fetches first try: `greenhomeinstitute.org` (a transcribed webinar article — the 80 % load-calculation threshold, the ~$8K-$10K installed smart-panel price against a $780 load-manager MSRP, full electrification "on services as small as 150 amps"), `afdc.energy.gov` (the DOE Alternative Fuels Data Center charger page — "7.2 kW", the dedicated 40-Amp circuit, National Electric Code Article 625), `emporiaenergy.com` (product page: 24,000 samples per second, +/-2 % accuracy, the $99.99/$149.99/$199.99 bundle prices; its blog: a worked "80 amps of your 100-amp service" example), `span.io` (48A / 11.5 kW dynamic against the "24-40A (5.7-9.6 kW)" a worst-case fixed install is limited to). Fails or cannot carry a row: `cltc.ucdavis.edu` (403 to the verifier on its project pages, and the service-upgrade-avoidance field study itself is a PDF — the best *measured* anchor for this beat is unreachable to the gate), `eaton.com` (unreachable), `ecmag.com` (403), `up.codes` (HTTP 500), `blog.se.com` (fetches at ~5.8 KB but the body carried no numeric tokens at all, so no row can lead on it), and guessed `energy.gov/energysaver/<slug>` URLs (404 — the NREL/LBNL/ACES panel-capacity material is PDF-only and therefore `unsupported`). A brief on this beat can be built from fetchable HTML primaries, but it cannot cite a code article number beyond the one the DOE page states; write the code pathway in prose ("systems inspectors accept when properly listed") rather than inventing a citation.
 
+**A cell that leads on a word number is matched on the digits it also carries (learned 2026-10-14).**
+`figure_patterns` returns digit patterns whenever the cell contains *any* digit, so
+`three minor releases — release branches are maintained only for the most recent three minor releases (1.37, 1.36, 1.35)`
+is probed on `1.37` first and its evidence window becomes whatever text mentions 1.37, not the claim the row
+makes: the row still PASSes, so the marker's audit trail reads as a coincidence — the same class as the
+comma-grouped and stray-`24/7` cases below. When the lead figure is a word, keep the whole cell digit-free
+(`three minor releases — release branches are maintained only for the most recent three minor releases, and
+current versions receive approximately one year of patch support`), and carry whatever version numbers or dates
+the row wants in the article's prose instead, where the same page citation covers them.
+
 **The matcher splits a comma-grouped figure — lead the cell with a different number, or expect a coincidental excerpt (learned 2026-10-14).**
 `figure_patterns` tokenises with `\d+(?:\.\d+)?`, so a figure cell leading on `4,989 tokens` produces the
 patterns `4` and `989`: the first one matches the earliest bare `4` anywhere on the page (observed: the
