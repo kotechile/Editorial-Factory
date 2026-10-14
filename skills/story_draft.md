@@ -58,6 +58,12 @@ The **TOC is render-time only** — the site derives it from the section heading
   Flesch coefficient, so split long sentences and swap long technical words for short everyday ones **at
   drafting time** — never by dropping a figure, a name or a citation.
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
+  **A draft must emit `<!-- tldr -->` itself (learned 2026-10-14).** The marker set is gated on the *draft*
+  file as well as the `_final.md`, and the Loop 3 rewrite adds the `<!-- tldr -->` marker it needs on the way out —
+  so a draft written without it fails `verify.sh` §2 at line 1 while every downstream stage looks green and the
+  published artifact is clean. The five markers are `<!-- lead -->`, `<!-- tension -->`, `<!-- tactical-insight -->`,
+  `<!-- nuanced-takeaway -->` and `<!-- tldr -->`; check them with
+  `grep -o '<!-- [a-z-]* -->' <draft>` before running the accessibility gate, not after the push.
 
 ## 4. Output schema
 `context/drafts/YYYY-MM-DD_<slug>_draft.md`:

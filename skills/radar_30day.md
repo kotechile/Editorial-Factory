@@ -99,6 +99,17 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > "no valid pair" is a legitimate answer.** Re-run it whenever you add or remove a signal row (the
 > marker records the row count and `scripts/verify.sh` §8 reads a mismatched block as stale).
 > Then let the Judge own the collision vector, the headline and the number.
+>
+> **A vertical whose every row resolves to one domain always seeds "no valid pair" — one dated first-party page
+> fixes that (learned 2026-10-14).** The helper requires the two legs to sit on *different source domains*, so a
+> research-only sweep (every row `arxiv.org`) returns `candidates=0` on every run, however strong the substantive
+> collision is — the pattern this vertical hit on 2026-10-07 and again for `gpu_hardware`. Writing in one dated
+> first-party page (a vendor docs page carrying its own `Last updated YYYY-MM-DD` footer counts, and is admissible
+> at a low Intensity when it states a design rather than a measurement) gave the same sweep `rows=7 candidates=3`.
+> Two consequences: the seeded candidates are *input*, not a verdict — on that run the Judge scored all three
+> (each rested on the unmeasured page) and adopted a pair the token layer could not see, so answer every seeded
+> candidate in the brief's runner-ups and say why; and a page with no measurement can corroborate a collision
+> (as friction: what the industry ships) but can never serve as a dual-authority anchor alongside a measured leg.
 
 > **Every URL a downstream artifact cites must appear as a URL in this file (learned 2026-10-08).**
 > `scripts/synthesize_topics.py --check-briefs` (verify.sh §8) extracts *every* `https://` URL from a
