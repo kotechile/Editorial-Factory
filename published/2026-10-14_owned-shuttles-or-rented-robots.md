@@ -13,6 +13,12 @@ meta_title: "$62M Says You Never Buy Robots"
 meta_title_source: "derived_from_title"
 meta_description: "Tractor Supply just spent more than $200 million to own an 865,000-square-foot automated warehouse in Idaho."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/owned-shuttles-or-rented-robots/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Buying Vs Renting Robots. Split-screen view of a permanent automated warehouse grid on the left and a standalone packing robo"
+image_caption: "Buying Vs Renting Robots: How automation costs land on opposite sides of the ledger."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

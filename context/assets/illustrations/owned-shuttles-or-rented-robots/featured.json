@@ -1,0 +1,88 @@
+{
+  "slug": "owned-shuttles-or-rented-robots",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Split-screen view of a permanent automated warehouse grid on the left and a standalone packing robot on the right.",
+      "caption": "Operators must choose between buying the entire automated storage stack or renting robots on a monthly basis.",
+      "title": "Warehouse Automation CapEx vs OpEx",
+      "bytes": 444061,
+      "sha256": "sha256:0239fb035857454a44cb28e8f491a54c"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych with left-right scenario contrast. Cinematic film still, anamorphic 35mm look, wide establishing composition. Left side: a massive, permanent automated storage and retrieval grid structure in a pristine new warehouse, heavy steel framing, cool blue industrial lighting. Right side: a nimble, standalone collaborative robotic packing arm operating on an older, scuffed leased concrete floor, bathed in warm amber warehouse lighting. Clean vertical boundary seam dividing the two contrasting operational realities. Crisp atmospheric depth, no people facing camera, motion implied rather than shown, premium editorial cover standard.",
+  "negative_prompt": "text, garbled letters, watermarks, people, human face, hands",
+  "rationale": "The story explicitly contrasts two opposing physical and financial models for warehouse automation. A cinematic split-screen visually captures the tension between massive permanent infrastructure (CapEx) and modular robotic rentals (OpEx).",
+  "cue": "buying fixes the number",
+  "subject": "split-screen contrast of a massive permanent automated storage grid and a nimble standalone packing robot",
+  "core_thesis": "In warehouse automation, buying fixes the number and leaves the operator holding a forecast it wrote; renting moves the machine off the books but leaves the floor space, the monthly price and the software roadmap in other hands.",
+  "core_conflict": "Capital expenditure (fixed risk and ownership) versus operational expenditure (rental flexibility but vendor dependency)",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Buying Vs Renting Robots. Split-screen view of a permanent automated warehouse grid on the left and a standalone packing robo",
+  "caption": "Buying Vs Renting Robots: How automation costs land on opposite sides of the ledger.",
+  "title": "Buying Vs Renting Robots",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/owned-shuttles-or-rented-robots/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 249598,
+  "sha256": "sha256:79fe9f87ebdd8fbcbe320f41fab88910602c7a6717437bdb35cb016ae35aafaf",
+  "source_hash": "sha256:ef1f7b93e9c90efc7f6095aec682c98e",
+  "source_chars": 4962,
+  "task_id": "f7aa335aecbbb8c2c208e537b771a7ee",
+  "credits": 5.0,
+  "cost_ms": 45,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f7aa335aecbbb8c2c208e537b771a7ee_1791982390873.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Split-screen diptych with left-right scenario contrast. Cinematic film still, anamorphic 35mm look, wide establishing composition. Left side: a massive, permanent automated storage and retrieval grid structure in a pristine new warehouse, heavy steel framing, cool blue industrial lighting. Right side: a nimble, standalone collaborative robotic packing arm operating on an older, scuffed leased concrete floor, bathed in warm amber warehouse lighting. Clean vertical boundary seam dividing the two contrasting operational realities. Crisp atmospheric depth, no people facing camera, motion implied rather than shown, premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-14T12:53:12+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE ROBOTICS // CAPEX VS OPEX",
+    "title": "BUYING VS RENTING ROBOTS",
+    "hook": "How automation costs land on opposite sides of the ledger",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.53,
+    "target": 4.5,
+    "clutter": 0.195,
+    "region_rgb": [
+      35,
+      92,
+      111
+    ],
+    "binding_rgb": [
+      60,
+      123,
+      140
+    ],
+    "title_lines": [
+      "BUYING VS",
+      "RENTING ROBOTS"
+    ],
+    "subject": 0.102,
+    "ink_subject": 0.058,
+    "spike": 0.278,
+    "generated_at": "2026-10-14T12:53:12+00:00"
+  }
+}
