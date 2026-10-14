@@ -27,6 +27,19 @@ Run parallel queries across the vertical's configured sources. Generic templates
 ```
 Vertical-specific sources/angles come from `context/verticals.json` — never invent a source.
 
+> **arXiv/HN sourcing mechanics (learned 2026-10-14):** in this environment an arXiv `abs` or `html`
+> page fetched through the web tools returns boilerplate with **no abstract text**, so a paper cannot
+> be dated or quoted from the page itself. Query the API instead —
+> `https://export.arxiv.org/api/query?search_query=<terms>&sortBy=submittedDate&sortOrder=descending`
+> for a discovery sweep, and `...?id_list=2609.17930,2610.15884` for exact `published` dates plus the
+> full `<summary>` (the abstract) of named papers; `http://` (not `https://`) fails there with 0
+> entries. For Hacker News use Algolia rather than the site:
+> `https://hn.algolia.com/api/v1/search_by_date?query=<q>&tags=story&numericFilters=created_at_i%3E<epoch>`
+> returns dated stories, which is how a `site:news.ycombinator.com` angle is satisfied for a window.
+> Fetched abstracts are the primary record; a publisher's own index page
+> (e.g. `uber.com/us/en/blog/engineering`) is what dates a first-party post whose page carries no
+> visible date in the extract.
+
 > **Backend note (learned 2026-09-07):** the search backend may silently ignore `after:` / `since:`
 > date filters, returning an empty result set even on a healthy source (observed: a nearshoring
 > `after:<window_start>` query → 0 results; date-agnostic phrasing on the same angle → results).
