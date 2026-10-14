@@ -101,6 +101,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-13 | workstation_compute_economics | build-wait-payback-threshold | Silent Build Wait: 90 Seconds, Not 11 Minutes | https://pressflow.aichieve.net/published/2026-10-13_build-wait-payback-threshold.md | reader site only |
 | 2026-10-13 | control_tower_exception_orchestration | hour-14-recovery-wall | Dock Overtime: Your Real 14-Hour Cost | https://pressflow.aichieve.net/published/2026-10-13_hour-14-recovery-wall.md | reader site only |
 | 2026-10-14 | agentic_resilience_failure | retry-permission-leaves-the-caller | Retry Budgets Fail: Agents Retry 60 of 80 Anyway | https://pressflow.aichieve.net/published/2026-10-14_retry-permission-leaves-the-caller.md | reader site only |
+| 2026-10-14 | multi_agent_enterprise_fabric | stale-grants-travel-the-graph | Your Agent Fabric's 52.2% Blind Spot | https://pressflow.aichieve.net/published/2026-10-14_stale-grants-travel-the-graph.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

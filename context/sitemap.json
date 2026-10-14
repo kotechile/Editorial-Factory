@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T10:41:08Z",
+  "updated_at": "2026-10-14T11:14:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1718,6 +1718,24 @@
         "At a glance"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-10-14",
+      "public": false
+    },
+    {
+      "slug": "2026-10-14_stale-grants-travel-the-graph",
+      "title": "Your Agent Fabric's 52.2% Blind Spot",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-10-14",
       "public": false
     }

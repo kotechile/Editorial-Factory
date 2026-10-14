@@ -1,0 +1,90 @@
+{
+  "slug": "stale-grants-travel-the-graph",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An isometric technical cutaway showing a central routing gate leaking amber light across a complex network of pathways.",
+      "caption": "Per-request permission models fail to contain exposure when the underlying multi-agent network topology continues to route information.",
+      "title": "Agent Fabric Topology Leakage",
+      "bytes": 8609357,
+      "sha256": "sha256:a0aab3cfcaad2c59b2bce7215cc90a31"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric isometric cutaway placed off-centre on a dark drafting table. A central modular routing bay made of matte grey polymer acts as a security gate, passing a single illuminated optical beam. Beneath and around it, a sprawling network of frosted copper busbars and glass pathways leak secondary rays of amber light, extending out of bounds. Flat muted palette with amber accent colour, thin consistent line weight, visible structural depth, one directional key light casting sharp geometric shadows, generous empty margin.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, printed words, labels, typography",
+  "rationale": "Technical isometric cutaways are perfect for illustrating systemic processes, routing topologies, and how an agent stack actually operates under the hood, making the abstract concept of network leakage tangible.",
+  "cue": "cannot bound what the fabric leaks",
+  "subject": "an isometric routing bay with a central security gate and sprawling, leaking secondary optical pathways",
+  "core_thesis": "In a multi-agent fabric, traditional per-call permissions fail because authority and data outlive the initial request, leaking across the network topology.",
+  "core_conflict": "Per-call security gating versus persistent network topology leakage.",
+  "composition": "asymmetric isometric cutaway placed off-centre",
+  "alt_text": "The Agent Fabric Blind Spot. An isometric technical cutaway showing a central routing gate leaking amber light across a compl",
+  "caption": "The Agent Fabric Blind Spot: How agent fabric wiring leaks data past per-call checks.",
+  "title": "The Agent Fabric Blind Spot",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/stale-grants-travel-the-graph/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 3461913,
+  "sha256": "sha256:9705f3711289abae0bb6f6e845119cdd6bd3110e13740d9ee8933e207f6d3321",
+  "source_hash": "sha256:11079945aa2f3f45bbb34f7238cc5ba2",
+  "source_chars": 7305,
+  "task_id": "3b59167cf513ffbe1839a27f9b3111f9",
+  "credits": 18.0,
+  "cost_ms": 75,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1bd1e975f056653b71597514cc41faa4.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric isometric cutaway placed off-centre on a dark drafting table. A central modular routing bay made of matte grey polymer acts as a security gate, passing a single illuminated optical beam. Beneath and around it, a sprawling network of frosted copper busbars and glass pathways leak secondary rays of amber light, extending out of bounds. Flat muted palette with amber accent colour, thin consistent line weight, visible structural depth, one directional key light casting sharp geometric shadows, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-14T11:13:39+00:00",
+  "overlay": {
+    "kicker": "AGENT ARCHITECTURE // PERMISSION LEAKS",
+    "title": "THE AGENT FABRIC BLIND SPOT",
+    "hook": "How agent fabric wiring leaks data past per-call checks",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.01,
+    "target": 5.5,
+    "clutter": 0.265,
+    "region_rgb": [
+      60,
+      54,
+      48
+    ],
+    "binding_rgb": [
+      61,
+      56,
+      50
+    ],
+    "title_lines": [
+      "THE AGENT FABRIC",
+      "BLIND SPOT"
+    ],
+    "subject": 0.264,
+    "ink_subject": 0.124,
+    "spike": 0.824,
+    "generated_at": "2026-10-14T11:13:39+00:00"
+  }
+}
