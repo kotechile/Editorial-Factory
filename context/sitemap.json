@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:46:56Z",
+  "updated_at": "2026-10-14T17:41:02Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1497,7 +1497,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-10-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/100-case-eval-925-coverage/"
     },
     {
       "slug": "2026-10-13_agent-failures-tests-stayed-green",
@@ -1534,7 +1535,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/ai-coding-seats-measure-or-renew/"
     },
     {
       "slug": "2026-10-13_aws-cannot-restore-bahrain",
@@ -1571,7 +1573,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/build-wait-payback-threshold/"
     },
     {
       "slug": "2026-10-13_hour-14-recovery-wall",
@@ -1589,7 +1592,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/hour-14-recovery-wall/"
     },
     {
       "slug": "2026-10-13_local-api-isnt-in-the-contract",
@@ -1626,7 +1630,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-13",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/panel-upgrade-80-percent-test/"
     },
     {
       "slug": "2026-10-13_rack-ride-through-two-second-duty",
@@ -1663,7 +1668,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-10-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/remediator-recovers-46-percent/"
     },
     {
       "slug": "2026-10-13_shippers-stuck-in-the-gap",
@@ -1719,6 +1725,25 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-14",
+      "public": true,
+      "url": "https://giniloh.com/flat-price-was-the-hedge/"
+    },
+    {
+      "slug": "2026-10-14_gate-the-step-not-the-model",
+      "title": "Your Agent's Next Step: 11-14x Likelier to Fail",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-14",
       "public": false
     },
     {
@@ -1737,7 +1762,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/owned-shuttles-or-rented-robots/"
     },
     {
       "slug": "2026-10-14_retry-permission-leaves-the-caller",
@@ -1755,7 +1781,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/retry-permission-leaves-the-caller/"
     },
     {
       "slug": "2026-10-14_stale-grants-travel-the-graph",
@@ -1773,7 +1800,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/stale-grants-travel-the-graph/"
     },
     {
       "slug": "2026-10-14_your-chip-stopped-deciding",
@@ -1791,7 +1819,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-chip-stopped-deciding/"
     }
   ]
 }

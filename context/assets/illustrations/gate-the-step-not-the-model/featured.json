@@ -1,0 +1,90 @@
+{
+  "slug": "gate-the-step-not-the-model",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An interlocking modular inspection gate with a physical circuit-breaker mechanism isolating one pathway on a steel surface.",
+      "caption": "Boundary controls like circuit breakers and output gates act on the seams between agent steps to halt cascading errors.",
+      "title": "Agentic-Boundary-Containment-Gate",
+      "bytes": 1667067,
+      "sha256": "sha256:c9562b5cf026a56e2cb3711aec0f32c2"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a brushed steel surface. An asymmetric composition, hero off-centre on the right third with generous negative space on the left. Two interlocking machined aluminum routing bays, separated by a distinct physical inspection gate and a heavy brass quarantine latch. One pathway is seamlessly aligned, while the parallel channel is physically shuttered by the drop-gate. Hard clean edges, matte muted industrial palette with one amber accent on the latch. One strong directional key light raking across the modules, casting a long, deep shadow. Tactile material presence.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, signature, illegible typography",
+  "rationale": "The story is about a structural rule\u2014a boundary gate and containment quarantine. A minimalist studio composition of an interlocking mechanical inspection gate captures this precise modular restraint without resorting to software cliches.",
+  "cue": "set at the boundary between its steps",
+  "subject": "an interlocking modular inspection gate with a physical circuit-breaker mechanism isolating one pathway",
+  "core_thesis": "An agent's end-to-end reliability is determined at the boundary between steps, where failure compounds exponentially without physical containment controls.",
+  "core_conflict": "Cascading systemic failure vs. rigorous boundary containment and isolation.",
+  "composition": "asymmetric composition, hero off-centre on the right third",
+  "alt_text": "Agent Failure Cascades. An interlocking modular inspection gate with a physical circuit-breaker mechanism isolating one pathw",
+  "caption": "Agent Failure Cascades: One wrong step makes the next 11x likelier to fail.",
+  "title": "Agent Failure Cascades",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/gate-the-step-not-the-model/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1204491,
+  "sha256": "sha256:49542717879a39e25254b2144075d4d6ead1f5849ca04a511378f8a6d3fd96fe",
+  "source_hash": "sha256:0b0842f597dc5cb1aafd56f7db731d9e",
+  "source_chars": 5494,
+  "task_id": "3947f16a3927f986fb4d05640bca8cc8",
+  "credits": 18.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_19040235c99a683d0218006fd6c28d32.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a brushed steel surface. An asymmetric composition, hero off-centre on the right third with generous negative space on the left. Two interlocking machined aluminum routing bays, separated by a distinct physical inspection gate and a heavy brass quarantine latch. One pathway is seamlessly aligned, while the parallel channel is physically shuttered by the drop-gate. Hard clean edges, matte muted industrial palette with one amber accent on the latch. One strong directional key light raking across the modules, casting a long, deep shadow. Tactile material presence.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-14T17:40:25+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // ERROR CASCADES",
+    "title": "AGENT FAILURE CASCADES",
+    "hook": "One wrong step makes the next 11x likelier to fail",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 30,
+    "contrast": 4.79,
+    "target": 4.5,
+    "clutter": 0.221,
+    "region_rgb": [
+      77,
+      81,
+      83
+    ],
+    "binding_rgb": [
+      115,
+      119,
+      120
+    ],
+    "title_lines": [
+      "AGENT FAILURE",
+      "CASCADES"
+    ],
+    "subject": 0.098,
+    "ink_subject": 0.029,
+    "spike": 0.373,
+    "generated_at": "2026-10-14T17:40:25+00:00"
+  }
+}
