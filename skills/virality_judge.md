@@ -36,6 +36,7 @@ carry the flag through to the artifact, and re-run the seed once the row set is 
 sees a fresh marker instead of reading the block as stale.
 
 - **The Core Synthesis Question**: *What strategic tension or economic shift appears when Trend A collides with Trend B that neither article could state on its own?*
+- **A pair of published price lists also seeds "no valid pair" (learned 2026-10-14).** A vendor's own repricing document ⨂ another vendor's repricing document is a genuine collision when the two sit on opposite sides of the reader's decision — but neither leg carries axis_a/axis_b tokens (the archetypes are cost-driver / governance / infrastructure classes, not commercial documents), so the helper returns `candidates=0` and the Judge must assert the pair. Score it normally under §2.5: both legs primary and dated in the window, the collision stated as the thing neither document says (in the 2026-10-14 run, a software price list ⨂ a hosting price list collided on *who absorbs the input cost* — the vendor's slice versus the operator's, which is the build-vs-buy decision itself).
 - **Canonical Example**:
   - *Signal A*: Frontier LLM API prices drop sharply (e.g., token pricing falling 70–80% across frontier models).
   - *Signal B*: Enterprise shift toward local, in-house software development and internal developer platforms.
