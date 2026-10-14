@@ -111,6 +111,18 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > candidate in the brief's runner-ups and say why; and a page with no measurement can corroborate a collision
 > (as friction: what the industry ships) but can never serve as a dual-authority anchor alongside a measured leg.
 
+> **Date a trade-press hit from the publisher's own date field, never from the search result (learned 2026-10-14).**
+> A search hit reads as current — it ranks, it has a fresh-looking excerpt — but the story it reports can be
+> weeks old, and a stale anchor silently reds the freshness gate after the Judge has already scored it.
+> Most of this vertical's sources are WordPress-backed, so the publication date is one call away:
+> `https://<host>/wp-json/wp/v2/posts?search=<urlencoded title>&_fields=date,modified,link,title` returns the
+> canonical `date`. Observed: a "$1.8M revenue ahead of a humanoid SPAC" story was the strongest available
+> unit-economics leg for this vertical, and the WP `date` field showed 2026-09-07 (its subject S-4 was filed
+> 2026-09-04) — both outside a window that began 2026-09-14, so the anchor was dropped at Stage 1 instead of
+> being discovered at fact-check. Probe every trade-press anchor this way before it enters the signals file;
+> for a filing-backed story, date the *filing* too (SEC full-text search returns `file_date`), because a
+> report is never fresher than the record it reports on.
+
 > **Every URL a downstream artifact cites must appear as a URL in this file (learned 2026-10-08).**
 > `scripts/synthesize_topics.py --check-briefs` (verify.sh §8) extracts *every* `https://` URL from a
 > draft's body — including a corroborating citation in `## Sources`, not just the two synthesis
