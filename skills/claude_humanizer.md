@@ -268,10 +268,17 @@ one.
   `scripts/check_social_voice.mjs`, so a rewrite that exits 0 and reads clean on Flesch can still fail
   `verify.sh` §9. The frontier reintroduces second-person instruction in the interpreting sections
   (observed on an evergreen rewrite: "None of this means you should build everything twice", a §3.9
-  ban). Run `node scripts/check_social_voice.mjs` after Loop 3, fix any flagged sentence by re-voicing
-  it ("None of this argues for building everything twice"), then re-measure with
-  `check_accessibility.py` — re-voice only, never drop a figure or a citation. A rewrite that names no
-  new figure can still fail the build on voice alone; the §9 gate is cheaper to run than a re-publish.
+  ban), and it will put an imperative after the colon of a labelled-opinion cue (observed 2026-10-14:
+  the containment rewrite opened The catch with a "my read" cue, a colon, and the verb "treat", which
+  `ADVICE_AFTER_COLON` reads as advice; the fix is to state the reading as a sentence — "My read is
+  that the containment ladder is a shape worth copying"). Run `node scripts/check_social_voice.mjs`
+  after Loop 3, fix any flagged sentence by re-voicing it ("None of this argues for building everything
+  twice"), then re-measure with `check_accessibility.py` — re-voice only, never drop a figure or a
+  citation. A rewrite that names no new figure can still fail the build on voice alone; the §9 gate is
+  cheaper to run than a re-publish. **The gate reads the whole file, your own `## Gate report`
+  included** — a note that quotes the offending construction back (e.g. reproducing the bad
+  "colon + verb" string while documenting the fix) re-fails the same check, so describe the repair in
+  prose without reproducing the string.
 - **Audit a relative interval by computing it, never by estimating it (learned 2026-10-13).** A draft that bridges two dated events ("eleven days before that report", "three weeks earlier") carries an arithmetic claim that no gate checks — not Flesch, not the acronym check, not a figure diff, because both of its endpoints are correct dates. Observed on `your-32gb-card-gone`: the drafted body and the frontier rewrite both said the Nebius increase was "eleven days" before the 2026-10-10 production report, when 2026-10-01 → 2026-10-10 is **nine** days. Compute every interval from its two dates (`datetime.date(2026,10,10) - datetime.date(2026,10,1)` = 9 days) before the accessibility gate, and when a sentence's interval is load-bearing, name both endpoints so a reader can check it without arithmetic.
 - **Audit a derived *difference* the rewrite promotes out of the body (learned 2026-10-13).** The interval class above is a claim whose endpoints are both real dates; the sibling class is a subtraction of two real figures that no source states. Observed on the evergreen `panel-upgrade-80-percent-test`: the rewrite took a field note's $11,200 quote and $4,200 resolution, subtracted them, and put "$7,000" into BOTH the lead and its re-cut headline ("Homeowners: The 80% test saves $7,000 on panel upgrades") — presenting one anecdote's spread as a general saving, with a figure that appears in no source row and that the verified brief's arithmetic allowance did not cover. Flesch, the acronym check and the source-presence check all pass it. When a rewrite touches the lead or the headline, diff those two surfaces against the verified brief's *authorised* arithmetic, not just against the numbers: restore the un-derived wording and the hand-written headline, and re-run `headline_score.py` to confirm the restored title still clears 90.
 - **Audit an attributive property against the noun it modifies (learned 2026-10-13).** The unit-noun class above covers a right number with the wrong unit; the same error appears when a rewrite collapses a source's *property* into the noun it describes. NVIDIA's page says "84 GB GDDR7 with error-correcting code (ECC)"; the rewrite produced "84 GB of error-correcting code memory", which reads as though ECC were the memory itself. Both pass every gate. Check each glossed technical phrase against the source's own wording, not just its digits.
