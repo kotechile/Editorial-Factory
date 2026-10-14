@@ -57,6 +57,7 @@ The **TOC is render-time only** — the site derives it from the section heading
   a hand-tune anyway (`skills/claude_humanizer.md` §7–§8). Average sentence length carries the largest
   Flesch coefficient, so split long sentences and swap long technical words for short everyday ones **at
   drafting time** — never by dropping a figure, a name or a citation.
+- **The title's content words must appear verbatim (substring) in the first ~600 words — inflections do not count (learned 2026-10-14).** `headline_score.lead_delivery`/the honesty rule checks each title content word as a plain substring of the opening: a title reading "Why Your Card **Serves** 1.6" scores 100 STRONG standalone but reports `lead_ok: False` when the lead says "**served** about 1.6 requests a second", and the pre-publish gate will then re-cut the headline. Write the lead in the title's own inflection ("one card **serves** about 1.6 requests a second") or check with `python3 -c "import sys,headline_score as hs; print(hs.score('<title>', body=open('<draft>').read()))"` before the accessibility gate. Up to `max(1, len(content_words)//3)` of them may be absent, so one missing word clears — every additional one re-cuts the title.
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
   **A draft must emit `<!-- tldr -->` itself (learned 2026-10-14).** The marker set is gated on the *draft*
   file as well as the `_final.md`, and the Loop 3 rewrite adds the `<!-- tldr -->` marker it needs on the way out —
