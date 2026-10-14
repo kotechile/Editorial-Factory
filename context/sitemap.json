@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T11:14:11Z",
+  "updated_at": "2026-10-14T11:42:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1736,6 +1736,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-14",
+      "public": false
+    },
+    {
+      "slug": "2026-10-14_your-chip-stopped-deciding",
+      "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
+      "vertical": "gpu_hardware",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-10-14",
       "public": false
     }

@@ -1,0 +1,88 @@
+{
+  "slug": "your-chip-stopped-deciding",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy compute blade partitioned by illuminated amber acrylic dividers on a dark stone surface.",
+      "caption": "As hardware commoditizes, the software layer that fractions and schedules compute becomes the true product.",
+      "title": "GPU-Fractioning-Operator-Studio",
+      "bytes": 548061,
+      "sha256": "sha256:feb03bd8639f889b2a3ac6747b3861e0"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph of a heavy anodized aluminum compute blade structurally partitioned by illuminated amber acrylic dividers, resting on a textured dark basalt studio surface. Shot with an 85mm studio telephoto lens at a razor-sharp focal plane, shallow depth of field. Asymmetric composition with the fractioned module off-centre on the thirds, leaving generous editorial negative space. Single softbox key light with visible falloff creating a long contact shadow across the stone. Crisp catalogue clarity, premium brushed metal textures, no gradient sweep.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, printed text, plain gradient sweep",
+  "rationale": "The studio object treatment isolates the compute module as a purchasable commodity, structurally divided by the new 'product'\u2014the fractioning software layer\u2014rendered as a premium physical object.",
+  "cue": "GPU-fractioning operator and quota layer",
+  "subject": "a heavy compute blade partitioned by illuminated acrylic dividers",
+  "core_thesis": "The software layer that fractions and schedules GPU compute has become the primary product differentiator as specialized chips overtake general-purpose GPUs.",
+  "core_conflict": "Hardware commoditization vs software-defined compute fractioning",
+  "composition": "asymmetric composition off-centre",
+  "alt_text": "The GPU Scheduling War. A heavy compute blade partitioned by illuminated amber acrylic dividers on a dark stone surface.",
+  "caption": "The GPU Scheduling War: Why the fight for AI capacity moved off the single chip.",
+  "title": "The GPU Scheduling War",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-chip-stopped-deciding/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 333221,
+  "sha256": "sha256:4cc9382e48e5a1802e110f4faf676f01fd13dec8e3f3f8c121bd54fb8f281470",
+  "source_hash": "sha256:42348f8d458cd3071fcd582c8b43c32d",
+  "source_chars": 5713,
+  "task_id": "95479e91581114a597096eecaa7f7f8b",
+  "credits": 5.0,
+  "cost_ms": 40,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/95479e91581114a597096eecaa7f7f8b_1791978098239.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph of a heavy anodized aluminum compute blade structurally partitioned by illuminated amber acrylic dividers, resting on a textured dark basalt studio surface. Shot with an 85mm studio telephoto lens at a razor-sharp focal plane, shallow depth of field. Asymmetric composition with the fractioned module off-centre on the thirds, leaving generous editorial negative space. Single softbox key light with visible falloff creating a long contact shadow across the stone. Crisp catalogue clarity, premium brushed metal textures, no gradient sweep.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-14T11:41:39+00:00",
+  "overlay": {
+    "kicker": "AI CHIPS // CLUSTER SCHEDULING",
+    "title": "THE GPU SCHEDULING WAR",
+    "hook": "Why the fight for AI capacity moved off the single chip",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.08,
+    "target": 4.5,
+    "clutter": 0.103,
+    "region_rgb": [
+      46,
+      45,
+      46
+    ],
+    "binding_rgb": [
+      63,
+      63,
+      63
+    ],
+    "title_lines": [
+      "THE GPU",
+      "SCHEDULING WAR"
+    ],
+    "subject": 0.035,
+    "ink_subject": 0.02,
+    "spike": 0.097,
+    "generated_at": "2026-10-14T11:41:39+00:00"
+  }
+}
