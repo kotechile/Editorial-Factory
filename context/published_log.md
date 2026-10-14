@@ -108,6 +108,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-14 | agentic_resilience_failure | gate-the-step-not-the-model | Your Agent's Next Step: 11-14x Likelier to Fail | https://pressflow.aichieve.net/published/2026-10-14_gate-the-step-not-the-model.md | reader site only |
 | 2026-10-14 | multi_agent_enterprise_fabric | one-approval-two-payments | One Approval, Two Payments: The 24-Hour Trap | https://pressflow.aichieve.net/published/2026-10-14_one-approval-two-payments.md | reader site only |
 | 2026-10-14 | gpu_hardware | prefill-decode-two-pool-gap | Why Your Card Serves 1.6: The Two-Pool Gap | https://pressflow.aichieve.net/published/2026-10-14_prefill-decode-two-pool-gap.md | reader site only |
+| 2026-10-14 | enterprise_build_vs_buy | your-cluster-hidden-clock | Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year | https://pressflow.aichieve.net/published/2026-10-14_your-cluster-hidden-clock.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

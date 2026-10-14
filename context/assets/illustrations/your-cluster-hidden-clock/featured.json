@@ -1,0 +1,88 @@
+{
+  "slug": "your-cluster-hidden-clock",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An overlapping stack of maintenance ledgers and technical calendars resting on a plain desk surface.",
+      "caption": "The hidden cost of self-hosted systems lies in tracking overlapping upstream support clocks.",
+      "title": "Upgrade Calendar Flatlay",
+      "bytes": 246927,
+      "sha256": "sha256:761dfbb09312809ec5e4449377f8ea2c"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of paper documents on a plain matte desk surface. 50mm prime lens, top-down 90-degree view, razor-sharp edge-to-edge focus. An asymmetrical top-down composition featuring an overlapping stack of heavy maintenance ledgers, embossed upgrade calendars, and technical server blueprints. One document is slightly out of alignment to look handled. Even diffused daylight casting soft contact shadows, muted paper tones, thick tactile paper stock, refined editorial aesthetic, clean minimalism.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, illegible writing, printed lettering",
+  "rationale": "The article's focus on rules, calendars, and support clocks translates perfectly to a document flatlay. It conceptually captures the administrative and contractual burden of maintaining self-hosted software lifecycles.",
+  "cue": "the upgrade calendar",
+  "subject": "an overlapping stack of maintenance ledgers and upgrade calendars over a server blueprint",
+  "core_thesis": "Managed platform providers are essentially selling the upgrade calendar, relieving teams of the hidden labor required to keep self-hosted components like Kubernetes and PostgreSQL patched before their tight support windows expire.",
+  "core_conflict": "Hidden labor of self-hosted maintenance vs. the transparent pricing of managed cloud services",
+  "composition": "asymmetrical top-down flatlay",
+  "alt_text": "The Hidden Upgrade Clock. An overlapping stack of maintenance ledgers and technical calendars resting on a plain desk surface",
+  "caption": "The Hidden Upgrade Clock: Why self-hosted systems hide an expensive patch calendar.",
+  "title": "The Hidden Upgrade Clock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-cluster-hidden-clock/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 151328,
+  "sha256": "sha256:d09b67deda539b60026b328b7b935d5bdcf49a46791e191feaf3eaf1a365dca4",
+  "source_hash": "sha256:c33e807f67d12427c6641f6d942bb01d",
+  "source_chars": 4616,
+  "task_id": "355f43fdd2e81bd45b25f132639e07cb",
+  "credits": 5.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/355f43fdd2e81bd45b25f132639e07cb_1792004994503.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of paper documents on a plain matte desk surface. 50mm prime lens, top-down 90-degree view, razor-sharp edge-to-edge focus. An asymmetrical top-down composition featuring an overlapping stack of heavy maintenance ledgers, embossed upgrade calendars, and technical server blueprints. One document is slightly out of alignment to look handled. Even diffused daylight casting soft contact shadows, muted paper tones, thick tactile paper stock, refined editorial aesthetic, clean minimalism.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-14T19:09:57+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE INFRA // UPGRADE CLOCKS",
+    "title": "THE HIDDEN UPGRADE CLOCK",
+    "hook": "Why self-hosted systems hide an expensive patch calendar",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 15,
+    "contrast": 4.82,
+    "target": 4.5,
+    "clutter": 0.153,
+    "region_rgb": [
+      166,
+      165,
+      161
+    ],
+    "binding_rgb": [
+      152,
+      151,
+      147
+    ],
+    "title_lines": [
+      "THE HIDDEN",
+      "UPGRADE CLOCK"
+    ],
+    "subject": 0.091,
+    "ink_subject": 0.058,
+    "spike": 0.223,
+    "generated_at": "2026-10-14T19:09:57+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T18:47:18Z",
+  "updated_at": "2026-10-14T19:10:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1857,6 +1857,24 @@
       "date": "2026-10-14",
       "public": true,
       "url": "https://giniloh.com/your-chip-stopped-deciding/"
+    },
+    {
+      "slug": "2026-10-14_your-cluster-hidden-clock",
+      "title": "Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-14",
+      "public": false
     }
   ]
 }
