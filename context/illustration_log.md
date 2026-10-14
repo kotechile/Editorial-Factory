@@ -215,3 +215,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-14 | `owned-shuttles-or-rented-robots` | warehouse_automation_robotics_capex | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/owned-shuttles-or-rented-robots/featured.jpg` |
 | 2026-10-14 | `gate-the-step-not-the-model` | agentic_resilience_failure | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/gate-the-step-not-the-model/featured.png` |
 | 2026-10-14 | `one-approval-two-payments` | multi_agent_enterprise_fabric | `technical_isometric` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/one-approval-two-payments/featured.png` |
+| 2026-10-14 | `prefill-decode-two-pool-gap` | gpu_hardware | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/prefill-decode-two-pool-gap/featured.jpg` |

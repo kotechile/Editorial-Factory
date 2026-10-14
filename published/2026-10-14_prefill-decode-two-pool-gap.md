@@ -11,6 +11,12 @@ meta_title: "Why Your Card Serves 1.6: The Two-Pool Gap"
 meta_title_source: "derived_from_title"
 meta_description: "One graphics processing unit (GPU) serves about 1.6 requests a second when it runs a 13-billion-parameter model by itself."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/prefill-decode-two-pool-gap/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "The Prefill Decode Split. Two distinct metallic processor modules connected by a glowing amber cable on a dark basalt surface"
+image_caption: "The Prefill Decode Split: Splitting GPU tasks into two pools doubles request rates."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
