@@ -104,6 +104,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-14 | multi_agent_enterprise_fabric | stale-grants-travel-the-graph | Your Agent Fabric's 52.2% Blind Spot | https://pressflow.aichieve.net/published/2026-10-14_stale-grants-travel-the-graph.md | reader site only |
 | 2026-10-14 | gpu_hardware | your-chip-stopped-deciding | 1.016M Non-GPUs: Your Chip Stopped Deciding | https://pressflow.aichieve.net/published/2026-10-14_your-chip-stopped-deciding.md | reader site only |
 | 2026-10-14 | enterprise_build_vs_buy | flat-price-was-the-hedge | Your Jira Bill Rose 10%: Memory Rose Six Times | https://pressflow.aichieve.net/published/2026-10-14_flat-price-was-the-hedge.md | reader site only |
+| 2026-10-14 | warehouse_automation_robotics_capex | owned-shuttles-or-rented-robots | $200M Owned, $62M Rented: The Price Is Not Yours | https://pressflow.aichieve.net/published/2026-10-14_owned-shuttles-or-rented-robots.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
