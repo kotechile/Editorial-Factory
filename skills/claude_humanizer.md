@@ -251,6 +251,15 @@ one.
   `tee /tmp/loop3.log`, check the `_final.md` mtime/size afterwards, and poll the session
   (`process action=wait`, clamped to ~180 s per call, repeatedly until `exited`) instead of assuming
   the rewrite finished.
+- **A rewrite can re-cut a hand-set title past the standard and drop a brief's own qualification (learned
+  2026-10-15).** The frontier re-emitted a hand-set 8-word title as an 11-word one ("…: Why 52% of Plans
+  Lose to Last Period"), which scores 89 OK — not STRONG — so `publish_gate.title_gate` commissions
+  candidates and may re-cut it after the run reports success. Score the final's title against the final's
+  own body and restore a STRONG version (`headline_score.score(..., body=...)`, 100/100 with `lead_ok`
+  true) instead of trusting the rewrite. The same rewrite silently dropped a qualification the verified
+  brief required — a worked illustration ("a theoretical situation" cited from Gilliland 2010) came back
+  reading as a measured company result. Diff the final against the brief's own "gate rulings for the
+  drafter" list, not just against the numbers: framing and provenance are part of the claim.
 - **The frontier can PASS the floor and still land under target (learned 2026-10-10).** A rewrite that
   exits PASS at Flesch ~50–51 clears the hard gate but sits on the floor, and the persistence pass
   injects the `## Related reading` block *after* the rewrite, which can push the *published* artifact

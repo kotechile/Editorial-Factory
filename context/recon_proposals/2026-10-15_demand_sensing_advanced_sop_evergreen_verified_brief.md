@@ -2,7 +2,7 @@
 
 **Angle:** Evergreen — "score every planning layer against a naive benchmark before renewing the sensing spend"
 **Archetype:** evergreen | **Persona:** ops_leader | **Source brief:** `context/recon_proposals/2026-10-15_demand_sensing_advanced_sop_evergreen_brief.md` (evergreen gate PASS, 5 sources / 5 hosts, marker `2026-10-15T20:06:49+00:00`)
-**Claim count:** 11 extracted · 10 VERIFIED · 1 FLAGGED (framing) · 0 REMOVED
+**Claim count:** 11 claims extracted · 10 VERIFIED sourced rows + 1 VERIFIED internal field note · 0 FLAGGED · 0 REMOVED
 
 | # | Signal Leg | Claim | Status | Source URL | Verbatim |
 |---|------------|-------|--------|-----------|----------|
