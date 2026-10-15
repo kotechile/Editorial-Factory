@@ -309,6 +309,17 @@ PY
   fi
 fi
 
+# 8.8 CMS link repair (hard, hermetic): the rewriter that fixes cross-site anchors INSIDE the CMS post
+#     bodies, because a front-end patch dies on the next rebuild from the CMS (the fronts render the post
+#     content verbatim). The rules pinned here decide whether a reader on aichieve.net gets a link that
+#     stays on aichieve.net, and the byte-diff invariant that turns "only the URLs changed" into a check
+#     instead of a claim — this repo has already shipped one pass that deleted reader copy and reported
+#     success. Hermetic: fixtures only, no CMS, no network, no writes.
+if ! python3 "$ROOT/scripts/test_fix_cms_links.py" >/dev/null 2>&1; then
+  echo "FAIL: CMS link-rewriter tests — detail:"
+  python3 "$ROOT/scripts/test_fix_cms_links.py" 2>&1 | tail -8; FAIL=1
+fi
+
 # 8.75 Vertical routing (hard, hermetic part): the audit is a pure function of the registry and the
 #      routing rows, so the rules are pinned offline — including the WordPress-category coverage
 #      (a vertical with no wp_category_id files its drafts under the CMS default, a step the operator
