@@ -1,0 +1,88 @@
+{
+  "slug": "three-forms-cost-more-than-tax",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three thick leather ledgers and a brass time clock on a dark oak desk under a single focused lamp.",
+      "caption": "The risk for expats is not the tax bill, but the stacking penalties on missed compliance forms.",
+      "title": "expat-filing-penalties-ledgers",
+      "bytes": 297640,
+      "sha256": "sha256:1075c5820b200a95c14dc05a66354197"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look. Wide establishing composition, extreme asymmetry. Three thick, embossed leather-bound financial ledgers stacked ominously on a weathered oak desk, resting beside a heavy brass time-clock. A single strong practical light source from a focused banker's lamp casts deep, long contact shadows across the wood grain, creating crisp atmospheric depth. Restrained teal-and-amber palette, highlighting the rich tactile paper stock and polished brass textures. The background falls away into dark, heavy shadows, implying the oppressive weight of bureaucratic scrutiny. Quiet confidence, refined aesthetics, cover standard.",
+  "negative_prompt": "text, typography, letters, numbers, watermarks, people, faces",
+  "rationale": "A cinematic still of heavy, archaic ledgers under harsh directional light perfectly captures the oppressive weight and stacking, time-sensitive nature of these costly compliance penalties.",
+  "cue": "missing just one costs $10,000",
+  "subject": "three thick leather-bound ledgers stacked beside a brass time-clock",
+  "core_thesis": "Moving abroad triggers three distinct US compliance filings where failure to report balances and ownership yields stacking $10,000 penalties.",
+  "core_conflict": "Simple international relocation vs. stacking bureaucratic penalty clocks.",
+  "composition": "off-centre asymmetrical framing with heavy negative space",
+  "alt_text": "The $10,000 Expat Filing Trap. Three thick leather ledgers and a brass time clock on a dark oak desk under a single focused",
+  "caption": "The $10,000 Expat Filing Trap: Unfiled foreign asset forms carry a $10,000 annual fee.",
+  "title": "The $10,000 Expat Filing Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/three-forms-cost-more-than-tax/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 167972,
+  "sha256": "sha256:aa07248093e56399b04eba957d33c132da7871d5392796d484d4588fd6cb9fea",
+  "source_hash": "sha256:d154f90ff4c29beb663cdf0b5067752d",
+  "source_chars": 4394,
+  "task_id": "3861ae0b1bfa81402966ab7880f0c169",
+  "credits": 5.0,
+  "cost_ms": 36,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3861ae0b1bfa81402966ab7880f0c169_1792093455493.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look. Wide establishing composition, extreme asymmetry. Three thick, embossed leather-bound financial ledgers stacked ominously on a weathered oak desk, resting beside a heavy brass time-clock. A single strong practical light source from a focused banker's lamp casts deep, long contact shadows across the wood grain, creating crisp atmospheric depth. Restrained teal-and-amber palette, highlighting the rich tactile paper stock and polished brass textures. The background falls away into dark, heavy shadows, implying the oppressive weight of bureaucratic scrutiny. Quiet confidence, refined aesthetics, cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-15T19:44:17+00:00",
+  "overlay": {
+    "kicker": "EXPAT TAX // REPORTING PENALTIES",
+    "title": "THE $10,000 EXPAT FILING TRAP",
+    "hook": "Unfiled foreign asset forms carry a $10,000 annual fee",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.11,
+    "target": 5.5,
+    "clutter": 0.253,
+    "region_rgb": [
+      26,
+      38,
+      34
+    ],
+    "binding_rgb": [
+      41,
+      59,
+      63
+    ],
+    "title_lines": [
+      "THE $10,000 EXPAT",
+      "FILING TRAP"
+    ],
+    "subject": 0.164,
+    "ink_subject": 0.086,
+    "spike": 0.477,
+    "generated_at": "2026-10-15T19:44:17+00:00"
+  }
+}

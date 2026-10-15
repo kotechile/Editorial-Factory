@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T19:14:38Z",
+  "updated_at": "2026-10-15T19:44:40Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1985,6 +1985,24 @@
         "At a glance"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-10-15",
+      "public": false
+    },
+    {
+      "slug": "2026-10-15_three-forms-cost-more-than-tax",
+      "title": "Moving Abroad: Why Missed US Forms Cost $10,000 Each",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
       "date": "2026-10-15",
       "public": false
     }
