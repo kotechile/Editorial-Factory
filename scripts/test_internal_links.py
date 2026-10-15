@@ -24,6 +24,7 @@ import tempfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import build_internal_link_index as bli  # noqa: E402
+import frontends as fe  # noqa: E402
 import growth_os as gos  # noqa: E402
 import internal_links as il  # noqa: E402
 import seo_machine as sm  # noqa: E402
@@ -339,14 +340,54 @@ check("...and no operator hint reaches the reader", "internal-link hint" not in 
 
 print("\nindex guard")
 check("a candidate URL is reduced to its last path segment",
-      bli.path_segment("https://a.com/calculators/lease-break/") == "lease-break")
-check("a section page is indexed, a nested permutation of it is not",
-      bli.is_section_page("/calculators/lease-break/", "calculators") is True
-      and bli.is_section_page("/calculators/career-ai-resilience/chief-executives/", "calculators")
-      is False, "a per-role calculator page (1,029 of them on one live site) is not a link target")
-check("...and the section itself is furniture, not a target",
-      bli.is_section_page("/calculators/", "calculators") is False)
-check("a slug becomes a readable title", bli.title_from_slug("ny-heat-pump-rebate") == "Ny Heat Pump Rebate")
+      fe.slug_of("https://giniloh.com/calculators/lease-break/") == "lease-break")
+check("a section page is a candidate, a nested permutation of it is not",
+      fe.is_candidate_shape("https://giniloh.com/calculators/lease-break/", "giniloh.com") is True
+      and fe.is_candidate_shape("https://giniloh.com/calculators/career-ai-resilience/chief-executives/",
+                                "giniloh.com") is False,
+      "a per-role calculator page (1,029 of them on one live site) is not a link target")
+check("...and a tool URL is only a candidate on the front that publishes that shape",
+      fe.is_candidate_shape("https://aichieve.net/tools/gpu-compute/", "aichieve.net") is True
+      and fe.is_candidate_shape("https://aichieve.net/calculators/gpu-compute/", "aichieve.net") is False
+      and fe.is_candidate_shape("https://giniloh.com/calculators/gpu-compute/", "giniloh.com") is True,
+      "giniloh publishes /calculators/<slug>/, aichieve /tools/<slug>/ — the same tool, two paths")
+check("site furniture is not a target",
+      fe.is_candidate_shape("https://giniloh.com/about/", "giniloh.com") is False
+      and fe.is_candidate_shape("https://giniloh.com/wage-floor-sets-robot-payback/", "giniloh.com") is True)
+check("a slug becomes a readable title", bli.humanise_slug("ny-heat-pump-rebate") == "Ny Heat Pump Rebate")
+check("the registry names the three fronts, giniloh.com first (it owns the reader URL of a shared slug)",
+      fe.domains()[:3] == ["giniloh.com", "wellroost.com", "aichieve.net"], fe.domains())
+check("a front's served categories are read from its own sitemap",
+      fe.served_categories("aichieve.net", ["https://aichieve.net/",
+                                            "https://aichieve.net/x/",
+                                            "https://aichieve.net/categories/supply-chain-operations/",
+                                            "https://aichieve.net/categories/ai-stack-tool-tco/"])
+      == {"supply-chain-operations", "ai-stack-tool-tco"})
+
+# The check must reject a corpus that is not honest about where its pages live (a cms.* host in the
+# corpus is the old, wrong model), and it must be hermetic here: the sitemap re-read is stubbed.
+# (The shipped-index section captures bli.INDEX_JSON right below, so this borrow MUST be given back.)
+_guard_saved_index = bli.INDEX_JSON
+_real_discover = bli.sc.discover_sitemaps
+bli.sc.discover_sitemaps = lambda frontend, **kw: ["https://a.com/agent-routing-benchmarks/"]
+_bad = pathlib.Path(_tmp.name) / "cms_host.json"
+_bad.write_text(json.dumps({"generated_at": "2026-10-15T00:00:00+00:00",
+                            "sites": {"a.com": {"cms": "https://cms.a.com", "frontend": "https://a.com"}},
+                            "candidates": [{"site": "a.com", "kind": "article", "slug": "x",
+                                            "url": "https://cms.a.com/x/", "live": True}]}),
+                encoding="utf-8")
+bli.INDEX_JSON = _bad
+check("the guard fails on a candidate URL that is on a CMS host", bli.check() == 1)
+_foreign = pathlib.Path(_tmp.name) / "foreign_host.json"
+_foreign.write_text(json.dumps({"generated_at": "2026-10-15T00:00:00+00:00",
+                                "sites": {"a.com": {"cms": "https://cms.a.com", "frontend": "https://a.com"}},
+                                "candidates": [{"site": "a.com", "kind": "article", "slug": "x",
+                                                "url": "https://b.com/x/", "live": True}]}),
+                    encoding="utf-8")
+bli.INDEX_JSON = _foreign
+check("the guard fails on a candidate URL hosted on a different front", bli.check() == 1)
+bli.sc.discover_sitemaps = _real_discover
+bli.INDEX_JSON = _guard_saved_index
 
 _empty = pathlib.Path(_tmp.name) / "empty.json"
 _empty.write_text(json.dumps({"generated_at": "2026-10-01T00:00:00+00:00", "candidates": []}), encoding="utf-8")
@@ -402,6 +443,143 @@ try:
           _captured.get("exclude_slugs") == ("my-slug",), str(_captured))
 finally:
     il.resolve_links = _real_resolve
+
+print("\nstamping: one stored body, every front that serves it")
+STAMP_INDEX = {
+    "generated_at": "2026-10-15T00:00:00+00:00",
+    "site_source": "fixture",
+    "sites": {"a.com": {"cms": "https://cms.a.com", "frontend": "https://a.com"},
+              "b.com": {"cms": "https://cms.b.com", "frontend": "https://b.com"}},
+    "hub_slugs": {"a.com": ["supply-chain-operations", "money-wealth"],
+                  "b.com": ["supply-chain-operations"]},
+    "categories": {"a.com": {"10": "Supply Chain & Operations", "11": "Money & Wealth"}},
+    # A corpus must hold something: `load_internal_link_index()` treats an empty candidate list as "no
+    # corpus" and falls back, which would make every case below pass or fail for the wrong reason.
+    "candidates": [{"site": "a.com", "kind": "article", "slug": "wage-floor", "title": "Wage Floor",
+                    "url": "https://a.com/wage-floor/", "path": "/wage-floor/",
+                    "sites_live": {"a.com": "/wage-floor/", "b.com": "/wage-floor/"},
+                    "categories": ["Supply Chain & Operations"], "category_slugs": ["supply-chain-operations"],
+                    "category_ids": [], "excerpt": "", "live": True}],
+    "not_live": [],
+}
+_stamp_file = pathlib.Path(_tmp.name) / "stamp_index.json"
+_stamp_file.write_text(json.dumps(STAMP_INDEX), encoding="utf-8")
+
+
+def stamped(anchor, url, sites_live, serve, kind="article"):
+    """A scored link as `generate_internal_link_map` returns it: the candidate's `sites_live` map plus
+    the render set the scorer resolved (`serve`). The renderer must not work either out for itself."""
+    return {"anchor_text": anchor, "url": url, "kind": kind, "why": "fixture",
+            "relevance_score": 9, "category": "", "sites_live": sites_live, "path": "/",
+            "serve": list(serve)}
+
+
+_real_index, _real_routing = gos.INTERNAL_LINK_INDEX, gos._site_for_vertical
+gos.INTERNAL_LINK_INDEX = _stamp_file
+
+
+def _routing(vertical):
+    """The fixture's routing row: each vertical routes to its own category (a.com, ids 10 and 11).
+
+    A constant id would make every vertical resolve to one category, so the render-set cases could
+    not distinguish a category two fronts serve from one only a.com serves — the two behaviours this
+    block exists to pin.
+    """
+    if not vertical:
+        return None
+    return {"site_domain": "a.com", "frontend_url": "https://a.com",
+            "wp_category_id": {"supply_chain": 10, "money_wealth": 11}.get(vertical, 10)}
+
+
+gos._site_for_vertical = _routing
+try:
+    BOTH = [stamped("Cloud Uptime SLAs", "https://a.com/sla-credit/",
+                    {"a.com": "/sla-credit/", "b.com": "/sla-credit/"}, serve=["a.com", "b.com"]),
+            stamped("Gone From B", "https://a.com/only-on-a/", {"a.com": "/only-on-a/"},
+                    serve=["a.com", "b.com"]),
+            stamped("Tool", "https://a.com/calculators/gpu-compute/",
+                    {"a.com": "/calculators/gpu-compute/", "b.com": "/tools/gpu-compute/"},
+                    serve=["a.com", "b.com"], kind="calculator")]
+    check("the render set rides on the links (the scorer resolved it, the renderer reads it)",
+          il.renderers_for(BOTH) == ["a.com", "b.com"], il.renderers_for(BOTH))
+    check("...and a link whose set is only one front reports only that front",
+          il.renderers_for([stamped("X", "https://a.com/x/", {"a.com": "/x/"}, serve=["a.com"])])
+          == ["a.com"])
+    check("...and links with no render set at all stamp nothing",
+          il.renderers_for([{"anchor_text": "X", "url": "https://a.com/x/"}]) == [])
+    SHARED, shared_notes, used_shared = il.enrich(ARTIFACT, vertical="supply_chain", links=list(BOTH))
+    check("a link live on both fronts is stamped as the relative path they share",
+          [l.get("href") for l in used_shared if l["anchor_text"] == "Cloud Uptime SLAs"] == ["/sla-credit/"],
+          str(used_shared))
+    check("...so the stored body carries no other front's domain",
+          "https://a.com/sla-credit/" not in SHARED and "(/sla-credit/)" in SHARED, SHARED[-400:])
+    check("a target that is not live on EVERY front serving the article is dropped",
+          not any(l["anchor_text"] == "Gone From B" for l in used_shared)
+          and any("not live on every front" in n and "b.com" in n for n in shared_notes),
+          str(shared_notes))
+    check("a target the fronts publish at different paths is dropped, never stamped wrongly",
+          not any(l["anchor_text"] == "Tool" for l in used_shared)
+          and any("different paths" in n for n in shared_notes), str(shared_notes))
+    check("what was stamped can be read back (the CLI and --check count relative links)",
+          [l["url"] for l in il.read_links(SHARED)] == ["/sla-credit/"], str(il.read_links(SHARED)))
+    check("a stamped block is idempotent (a second pass writes nothing)",
+          il.enrich(SHARED, vertical="supply_chain", links=list(BOTH))[0] == SHARED)
+
+    ONE_FRONT = [stamped(l["anchor_text"], l["url"], l["sites_live"], serve=["a.com"],
+                         kind=l["kind"]) for l in BOTH]
+    SINGLE, _, single_used = il.enrich(ARTIFACT, vertical="money_wealth", links=list(ONE_FRONT))
+    check("when only one front serves the article, a target live there is kept",
+          any(l["anchor_text"] == "Gone From B" for l in single_used), str(single_used))
+    check("...and it is still stamped relative, so a later pull cannot break it",
+          all((l.get("href") or "").startswith("/") for l in single_used), str(single_used))
+    check("a caller's own links (no corpus metadata) are never restamped",
+          all(l.get("href") is None for l in il.enrich(ARTIFACT, vertical="supply_chain",
+                                                      links=[{"anchor_text": "X", "url": "https://a.com/x/"}])[2]))
+
+    # Regression, 2026-10-15: the first revision of the stamper resolved the render set itself, which
+    # meant calling routing — and routing reaches `wp_draft.supabase_config()`, which EXITS THE PROCESS
+    # when the credentials are absent (`except Exception` cannot catch SystemExit). Proven here on the
+    # one path that matters: stamping a link must not need the database at all.
+    def _explode(vertical):
+        raise RuntimeError("routing must not be consulted while stamping a link")
+
+    _saved_routing = gos._site_for_vertical
+    gos._site_for_vertical = _explode
+    try:
+        _, guard_notes, guard_used = il.enrich(ARTIFACT, vertical="supply_chain", links=list(BOTH))
+        check("stamping a link never consults routing (a publish cannot die on a missing Supabase key)",
+              [l.get("href") for l in guard_used if l["anchor_text"] == "Cloud Uptime SLAs"] == ["/sla-credit/"],
+              f"{guard_used} {guard_notes}")
+    finally:
+        gos._site_for_vertical = _saved_routing
+finally:
+    gos.INTERNAL_LINK_INDEX, gos._site_for_vertical = _real_index, _real_routing
+
+print("\ncategory matching moved from WordPress ids to the hub slug the front publishes")
+gos.INTERNAL_LINK_INDEX = _stamp_file
+gos._site_for_vertical = _routing
+try:
+    _slug_index = json.loads(_stamp_file.read_text(encoding="utf-8"))
+    _slug_index["candidates"] = [
+        {"site": "a.com", "kind": "article", "slug": "quarterly-roundup", "title": "Quarterly Roundup",
+         "url": "https://a.com/quarterly-roundup/", "categories": ["Supply Chain & Operations"],
+         "category_slugs": ["supply-chain-operations"], "category_ids": [], "excerpt": "", "live": True},
+        {"site": "a.com", "kind": "article", "slug": "unrelated", "title": "Nothing In Common",
+         "url": "https://a.com/unrelated/", "categories": ["Money & Wealth"],
+         "category_slugs": ["money-wealth"], "category_ids": [], "excerpt": "", "live": True},
+    ]
+    _stamp_file.write_text(json.dumps(_slug_index), encoding="utf-8")
+    _links = gos.generate_internal_link_map("something unrelated to both", "supply_chain", max_links=5)
+    _urls = [l["url"] for l in _links]
+    check("a page in the destination's own hub category qualifies on the slug alone",
+          "https://a.com/quarterly-roundup/" in _urls, _urls)
+    check("...and a page in another category does not", "https://a.com/unrelated/" not in _urls, _urls)
+    check("the scorer hands the renderer what it needs to stamp (sites_live + path + serve)",
+          all("sites_live" in l and "path" in l and "serve" in l for l in _links), str(_links[:1]))
+    check("...and the render set it hands over is every front publishing that category hub",
+          all(l["serve"] == ["a.com", "b.com"] for l in _links), str([l["serve"] for l in _links]))
+finally:
+    gos.INTERNAL_LINK_INDEX, gos._site_for_vertical = _real_index, _real_routing
 
 print(f"\n{len(PASS)} passed, {len(FAIL)} failed")
 for name in FAIL:

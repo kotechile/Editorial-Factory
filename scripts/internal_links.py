@@ -21,6 +21,13 @@ Rules that decide whether the reader gets a useful link or a broken one:
   * the destination is resolved from the artifact's vertical (public.vertical_sites). No vertical =>
     no links: a link to the other site is a cross-site link, not an internal one, and guessing
     "the main site" is how content gets mis-routed. Says so rather than generating anything.
+  * stamped ONCE, for every front that will serve the article (learned 2026-10-15). One shared CMS
+    serves several fronts that pull different category subsets of it, so a body written for one site is
+    read on another: an absolute `https://giniloh.com/...` anchor is internal on giniloh.com and a
+    cross-site link on aichieve.net, and no front rewrites it. A link is therefore stamped as the
+    site-relative path (`/slug/`) it resolves to on EVERY front that serves the article, and dropped
+    when the fronts disagree about the path (giniloh's `/calculators/x/` vs aichieve's `/tools/x/`) or
+    when it is not live on all of them. A link that 404s or leaves the site is worse than no link.
   * same-site, live-on-the-frontend-sitemap, never the article itself (its own slug is excluded here
     as well, so refreshing an already-published article cannot link it to itself), never a mere
     domain match — all enforced by the scorer.
@@ -60,7 +67,11 @@ _BLOCK_RE = re.compile(r"[ \t]*" + re.escape(BLOCK_START) + r".*?" + re.escape(B
                        re.S)
 _FM_RE = re.compile(r"\A---\s*\n.*?\n---\s*\n", re.S)
 _BARE_RELATED_RE = re.compile(r"(?:\n|^)##\s*Related reading\s*\n+(?:[ \t]*[-*+]\s+\[[^\]]+\]\([^)]+\)[^\n]*\n*)+", re.M)
-_LIST_ITEM = re.compile(r"^-\s+\[(?P<anchor>[^\]]+)\]\((?P<url>https?://[^)\s]+)\)"
+# Absolute OR site-relative, because a stamped link is a relative path (`/slug/`) — a reader-facing
+# link only has to resolve on the front that serves the post, and reading one back must not depend on
+# the form it was written in (a relative-only block would read as "0 links", which the CLI and
+# `--check` would report as an article that reaches readers with no internal link at all).
+_LIST_ITEM = re.compile(r"^-\s+\[(?P<anchor>[^\]]+)\]\((?P<url>(?:https?://|/)[^)\s]+)\)"
                         r"(?:\s+—\s+(?P<reason>.*))?$")
 _COMMENT_LINE = re.compile(r"^[ \t]*<!--.*?-->[ \t]*$\n?", re.M)
 # A line that is only link material: a markdown link, a bare URL, or a site-relative path. Used to
@@ -95,6 +106,14 @@ def _reader_safe_category(category: str) -> str:
     return category
 
 
+def href_of(link) -> str:
+    """The URL to stamp in the body: the relative path when one was stamped, else the absolute URL.
+
+    Only links that arrived with corpus metadata (`sites_live`) are stamped; a caller that passes its
+    own links keeps the URLs it chose."""
+    return link.get("href") or link.get("url", "")
+
+
 def render_related_reading(links) -> str:
     """The reader-facing section: real anchors, on the same site, verified live.
 
@@ -109,13 +128,13 @@ def render_related_reading(links) -> str:
         category = _reader_safe_category(link.get("category"))
         reason = "calculator" if link.get("kind") == "calculator" else (
             f"more on {category}" if category else "")
-        lines.append(f"- [{link['anchor_text']}]({link['url']})" + (f" — {reason}" if reason else ""))
+        lines.append(f"- [{link['anchor_text']}]({href_of(link)})" + (f" — {reason}" if reason else ""))
     return "\n".join(lines)
 
 
 def render_link_hints(links) -> str:
     """Placement hints for the operator, as HTML comments so they never reach a reader."""
-    lines = [f"<!-- internal-link hint: \"{l.get('anchor_text')}\" -> {l.get('url')} "
+    lines = [f"<!-- internal-link hint: \"{l.get('anchor_text')}\" -> {href_of(l)} "
              f"[{l.get('why', '')}] {l.get('suggested_placement', '')} -->"
              for l in (links or []) if l.get("url")]
     return "\n".join(lines) or ("<!-- internal-link hint: none — no live page on this site scored "
@@ -216,6 +235,78 @@ def topic_for(title: str, body: str) -> str:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# the render set — which fronts will serve this article, and what form a link takes
+# ─────────────────────────────────────────────────────────────────────────────
+
+def renderers_for(links) -> list[str]:
+    """The fronts that will serve this article — as the SCORER resolved them, carried on the links.
+
+    Deliberately not computed here. Working out the render set needs the article's routing row, and the
+    only code that may touch routing is the scorer, which already holds it: routing goes through
+    `wp_draft.supabase_config()`, which EXITS THE PROCESS when the Supabase credentials are absent —
+    an `except Exception` cannot catch that, so a link pass that reached for it would kill a publish
+    instead of degrading. `generate_internal_link_map` resolves the set (the fronts publishing the
+    article's category hub) and stamps it on every link it returns.
+
+    Returns [] when nothing carries a render set — a caller's own links, or a corpus with no hub data —
+    and the caller then stamps nothing rather than guessing.
+    """
+    for link in links or []:
+        serve = link.get("serve")
+        if serve:
+            return [d for d in serve if d]
+    return []
+
+
+def stamp_links(links, renderers, site_domain=None) -> tuple[list[dict], list[str]]:
+    """Stamp each link in the form that is internal on every front that serves the article.
+
+    Returns (kept_links, notes). Kept links carry `href`, the relative path; a link is dropped, with a
+    note, when it is not live on every renderer or when the renderers publish it at different paths. A
+    link with no corpus metadata (a caller's own list) is passed through untouched.
+    """
+    renderers = [d for d in (renderers or []) if d]
+    if not renderers:
+        # The fronts that will serve this article could not be resolved (no index, no routing row, or
+        # an index built before the fronts owned the corpus). Nothing is dropped and nothing is
+        # restamped: the links keep the form the corpus gave them. This is the one degradation that
+        # must not be destructive — `publish.apply_internal_links` calls this without a site_domain,
+        # so guessing an empty render set here would strip every link from every article it touches.
+        return list(links or []), ["the fronts that serve this article could not be resolved — links "
+                                   "left in the form the corpus gave them (nothing was stamped)"]
+    kept: list[dict] = []
+    dropped_absent: list[str] = []
+    dropped_divergent: list[str] = []
+    for link in links or []:
+        live = link.get("sites_live") or {}
+        if not live:
+            kept.append(link)
+            continue
+        paths = [live.get(d) for d in renderers]
+        if any(p is None for p in paths):
+            missing = [d for d, p in zip(renderers, paths) if p is None] or ["?"]
+            dropped_absent.append(f"{link.get('anchor_text')!r} (not live on {', '.join(missing)})")
+            continue
+        if len(set(paths)) != 1:
+            where = ", ".join(f"{d}:{p}" for d, p in zip(renderers, paths))
+            dropped_divergent.append(f"{link.get('anchor_text')!r} ({where})")
+            continue
+        kept.append({**link, "href": paths[0]})
+
+    notes = []
+    if renderers:
+        notes.append(f"links stamped for {len(renderers)} front(s) that serve this article: "
+                     f"{', '.join(renderers)} — a relative path is internal on each of them")
+    if dropped_absent:
+        notes.append(f"dropped {len(dropped_absent)} candidate(s) that are not live on every front "
+                     f"serving this article: " + "; ".join(dropped_absent[:3]))
+    if dropped_divergent:
+        notes.append(f"dropped {len(dropped_divergent)} candidate(s) the fronts publish at different "
+                     f"paths (a relative path cannot be right on both): " + "; ".join(dropped_divergent[:3]))
+    return kept, notes
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # link resolution — the one seam between this module and the corpus
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -281,6 +372,9 @@ def enrich(markdown: str, *, vertical: str | None = None, topic: str | None = No
             links = resolve_links(topic or topic_for(title, body), vertical, max_links,
                                   exclude_slugs) or []
     links = list(links)
+    if links:
+        links, stamp_notes = stamp_links(links, renderers_for(links), site_domain)
+        notes += stamp_notes
     if site_domain:
         off_site = [l for l in links if not same_site(l.get("url", ""), site_domain)]
         if off_site:
