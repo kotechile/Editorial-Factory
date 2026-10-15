@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T17:39:23Z",
+  "updated_at": "2026-10-15T18:11:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1914,6 +1914,23 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-15",
+      "public": false
+    },
+    {
+      "slug": "2026-10-15_cheaper-model-pricier-task",
+      "title": "Your Cheaper Model: 57% Pricier Tasks",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
       "date": "2026-10-15",
       "public": false
     },

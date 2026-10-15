@@ -12,7 +12,7 @@ import pathlib
 
 import pytest
 
-from scripts.illustration_overlay import sentence_case, source_spelling
+from scripts.illustration_overlay import alt_clip, sentence_case, source_spelling
 
 ARTICLE = (
     "SpaceX workers get their next chance to sell today. The iPhone order book and the eBay "
@@ -228,3 +228,18 @@ def test_the_composite_records_where_the_type_landed(tmp_path):
 def test_module_is_importable_from_the_repo_root():
     """The suite runs from the repo root; the module must not need a sys.path shim."""
     assert pathlib.Path(__file__).resolve().parent.parent.name == "editorial-factory"
+
+
+def test_alt_clip_breaks_at_a_word_boundary_never_mid_word():
+    """The 125-char cap used to slice '…a massive stack of opaque proc'."""
+    raw = ("Cheaper Models Cost More. Modular mechanical assembly showing a small input block "
+           "connected to a massive stack of opaque processing bays.")
+    clipped = alt_clip(raw)
+    assert len(clipped) <= 125
+    assert raw.startswith(clipped)              # a prefix of the original, nothing invented
+    assert raw[len(clipped):len(clipped) + 1] in ("", " ")   # the cut landed on a space
+    assert not clipped.endswith("proc")
+
+
+def test_alt_clip_leaves_short_text_alone():
+    assert alt_clip("A short alt.") == "A short alt."

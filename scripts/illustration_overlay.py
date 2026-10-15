@@ -139,6 +139,19 @@ def source_spelling(word: str, source: str) -> str | None:
     return None
 
 
+def alt_clip(text: str, limit: int = 125) -> str:
+    """Trim reader-facing alt text to `limit` chars on a WORD boundary.
+
+    A hard slice cut the string mid-word ("…a massive stack of opaque proc"), which is what a screen
+    reader then announces; the cap stays, the half word does not.
+    """
+    text = str(text or "").strip()
+    if len(text) <= limit:
+        return text
+    clipped = text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:.-—")
+    return clipped or text[:limit]
+
+
 def sentence_case(text: str, source: str = "") -> str:
     """Title Case for a reader-facing alt/caption that does not mangle acronyms ('Ai', 'Llm') or the
     article's own brand spellings ('Spacex' -> 'SpaceX')."""
@@ -649,7 +662,7 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
     prev_head, sep, rest = raw_alt.partition(". ")
     if rest and prev_head.strip().lower() == head.strip().lower():
         raw_alt = rest.strip()          # the alt already carries a head (possibly cased differently)
-    side["alt_text"] = f"{head}. {raw_alt}"[:125]
+    side["alt_text"] = alt_clip(f"{head}. {raw_alt}")
     side["caption"] = (f"{head}: {copy['hook']}." if copy.get("hook") else head + ".")[:200]
     side["title"] = head[:100]
     side_path.write_text(json.dumps(side, indent=2) + "\n")

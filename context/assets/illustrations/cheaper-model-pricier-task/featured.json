@@ -1,0 +1,114 @@
+{
+  "slug": "cheaper-model-pricier-task",
+  "revision": 5,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Modular mechanical assembly showing a small input block connected to a massive stack of opaque processing bays.",
+      "caption": "The hidden volume of reasoning tokens can easily erase the savings of a cheaper per-token input rate.",
+      "title": "AI Token Cost Assembly",
+      "bytes": 1847700,
+      "sha256": "sha256:de8336987376639bf00e3cec2f59b29b"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Cheaper Models Cost More. Modular mechanical assembly showing a small input block connected to a massive stack of opaque proc",
+      "caption": "Cheaper Models Cost More: Why cheaper models cost 57% more per finished task.",
+      "title": "Cheaper Models Cost More",
+      "bytes": 1351065,
+      "sha256": "sha256:397dca8560ff7aedc5b380e0713b0290692112d380868bf096f94721bf8f1608"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Modular mechanical assembly showing a small input block connected to a massive stack of opaque processing bays.",
+      "caption": "Cheaper Models Cost More: Why cheaper models cost 57% more per finished task.",
+      "title": "Cheaper Models Cost More",
+      "bytes": 1351065,
+      "sha256": "sha256:397dca8560ff7aedc5b380e0713b0290692112d380868bf096f94721bf8f1608"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Cheaper Models Cost More. A small input block tethered to a massive stack of opaque processing bays.",
+      "caption": "Cheaper Models Cost More: Why cheaper models cost 57% more per finished task.",
+      "title": "Cheaper Models Cost More",
+      "bytes": 1351065,
+      "sha256": "sha256:397dca8560ff7aedc5b380e0713b0290692112d380868bf096f94721bf8f1608"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, extreme asymmetry, off-centre layout. A small, sleek brushed steel input module sits on the left, connected via heavy interlocking structural ribbons to a massive, towering stack of dark matte polymer processing bays that dominate the right side of the frame. Hard clean edges, one directional key light throwing a long, heavy cast shadow to the left, generous negative space. Matte muted palette with a single amber accent on the large stack, no text or moulded lettering.",
+  "negative_prompt": "text, letters, numbers, watermark, UI, typography, garbled, bare shapes, abstract cubes",
+  "rationale": "A component assembly visually builds the concept of hidden bloat by showing a small, seemingly efficient module physically dragging a massive, hidden structural burden behind it, using stark scale contrast.",
+  "cue": "57% more cost per query",
+  "subject": "modular mechanical assembly with a small input block tethered to a massive stack of opaque processing bays",
+  "core_thesis": "Output tokens are billed at a multiple of the input rate and the reasoning half of them is invisible, meaning a tier priced 50% cheaper per token can cost 57% more per resolved task.",
+  "core_conflict": "Lower sticker price for input tokens vs invisible, uncontrollable output token bloat.",
+  "composition": "extreme asymmetry, off-centre layout",
+  "alt_text": "Cheaper Models Cost More. A small input block tethered to a massive stack of opaque processing bays.",
+  "caption": "Cheaper Models Cost More: Why cheaper models cost 57% more per finished task.",
+  "title": "Cheaper Models Cost More",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/cheaper-model-pricier-task/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1351065,
+  "sha256": "sha256:397dca8560ff7aedc5b380e0713b0290692112d380868bf096f94721bf8f1608",
+  "source_hash": "sha256:2cdfbe8ceab4d5a6e230598a19e2b6cd",
+  "source_chars": 4610,
+  "task_id": "82f39bd4045a13bfe2b3873244a3dc4d",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_743a86e665e47e4b369b1d45a1530e27.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, extreme asymmetry, off-centre layout. A small, sleek brushed steel input module sits on the left, connected via heavy interlocking structural ribbons to a massive, towering stack of dark matte polymer processing bays that dominate the right side of the frame. Hard clean edges, one directional key light throwing a long, heavy cast shadow to the left, generous negative space. Matte muted palette with a single amber accent on the large stack, no text or moulded lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-15T18:13:03+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // TOKEN ECONOMICS",
+    "title": "CHEAPER MODELS COST MORE",
+    "hook": "Why cheaper models cost 57% more per finished task",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.97,
+    "target": 4.5,
+    "clutter": 0.138,
+    "region_rgb": [
+      106,
+      103,
+      95
+    ],
+    "binding_rgb": [
+      126,
+      124,
+      112
+    ],
+    "title_lines": [
+      "CHEAPER MODELS",
+      "COST MORE"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-15T18:13:03+00:00"
+  }
+}
