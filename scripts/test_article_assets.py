@@ -173,6 +173,29 @@ check("a title the markdown already carries beats the caller's",
       "Verified figures" not in aa.inject_chart(ARTICLE, title="CALLER MUST LOSE")[0]
       and "CALLER MUST LOSE" not in aa.inject_chart(ARTICLE, title="CALLER MUST LOSE")[0])
 
+print("\nmeta description — an initialism is not a sentence boundary")
+# A lead that opens "U.S. shoppers will spend …" split at "U.S. " and shipped a 4-character
+# description as the CMS excerpt (observed live 2026-10-15). The splitter keeps the initialism with
+# its sentence, and a result below META_DESC_MIN can never be returned.
+_INITIALISM_LEAD = (
+    "U.S. shoppers will spend a record $275.1 billion online this holiday, Adobe Analytics "
+    "forecasts — 6.7% growth on last year, and $95.8 billion of it in October alone [1]. A "
+    "consumer study of more than 15,000 shoppers says those same people are buying fewer units [2]."
+)
+_sents = aa._sentences(_INITIALISM_LEAD)
+check("the first sentence keeps the initialism attached",
+      _sents[0].startswith("U.S. shoppers will spend") and len(_sents) == 2,
+      f"{len(_sents)} sentences, first {_sents[0][:40]!r}")
+_desc = aa.derive_meta_description(f"<!-- lead -->\n{_INITIALISM_LEAD}\n")
+check("...so the derived description is a summary, not a fragment",
+      len(_desc) >= aa.META_DESC_MIN and _desc.startswith("U.S. shoppers"),
+      f"{len(_desc)} chars: {_desc!r}")
+check("...and it stays inside the excerpt budget",
+      len(_desc) <= aa.META_DESC_TARGET, f"{len(_desc)} chars")
+check("a bare-initialism fragment is never returned on its own",
+      aa.derive_meta_description("<!-- lead -->\nU.S. The consultancy tracked basket sizes, "
+                                 "discounts and store trips across the whole year [1].\n") != "U.S.")
+
 print("\nreal artifacts (read-only)")
 for path in sorted(pathlib.Path(aa.__file__).parent.parent.glob("published/*.md")):
     text = path.read_text(encoding="utf-8")

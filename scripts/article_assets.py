@@ -317,18 +317,41 @@ def _trim_words(text: str, limit: int) -> str:
     return text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "…"
 
 
+_INITIALISM_END = re.compile(r"(?:^|\s)(?:[A-Z]\.){1,4}$")   # "U.S." / "U.K." — not a sentence end
+
+
+def _sentences(lead: str) -> list[str]:
+    """Split a lead paragraph into sentences, keeping an initialism attached to its sentence.
+
+    A period inside an initialism is not a sentence boundary: a lead that opens "U.S. shoppers will
+    spend …" split into a 4-character "U.S." first sentence and produced a 4-character CMS excerpt
+    (observed live on 2026-10-15). Re-join a fragment whose predecessor ends on an initialism.
+    """
+    out: list[str] = []
+    for part in re.split(r"(?<=[.!?])\s+", lead):
+        part = part.strip()
+        if not part:
+            continue
+        if out and _INITIALISM_END.search(out[-1]):
+            out[-1] = f"{out[-1]} {part}"
+        else:
+            out.append(part)
+    return out
+
+
 def derive_meta_description(body: str, target: int = META_DESC_TARGET) -> str:
     """A description built from the article's own lead paragraph, trimmed on a word boundary.
 
     Whole sentences are preferred over a mid-clause cut, because this string becomes the CMS excerpt
     and the frontends' `<meta name="description">`: a truncated fragment reads as broken metadata,
     while one or two complete lead sentences read as a summary. Only when the first sentence alone
-    overruns the budget is it trimmed on a word boundary.
+    overruns the budget is it trimmed on a word boundary. A result shorter than META_DESC_MIN is
+    never returned — it falls back to the whole lead on a word boundary.
     """
     lead = _lead_paragraph(body)
     if not lead:
         return ""
-    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", lead) if s.strip()]
+    sentences = _sentences(lead)
     if not sentences:
         return ""
     if len(sentences[0]) > target:
@@ -338,6 +361,8 @@ def derive_meta_description(body: str, target: int = META_DESC_TARGET) -> str:
         if len(out) + 1 + len(sentence) > target:
             break
         out = f"{out} {sentence}"
+    if len(out) < META_DESC_MIN:
+        return _trim_words(lead, target)
     return out
 
 

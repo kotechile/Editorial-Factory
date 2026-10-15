@@ -11,12 +11,12 @@ sources:
   - https://www.alixpartners.com/newsroom/press-release-us-holiday-sales-expected-to-grow-4-7-this-season-even-as-consumer-confidence-declines
 meta_title: "Why 6.7% Holiday Growth Misses Units"
 meta_title_source: "derived_from_title"
-meta_description: "U.S."
-meta_description_source: "derived_from_lead"
+meta_description: "U.S. shoppers will spend a record $275.1 billion online this holiday, Adobe Analytics forecasts — 6.7% growth on last year, and $95.8 billion of it in October alone."
+meta_description_source: "derived_from_lead_backfilled"
 image_path: "context/assets/illustrations/holiday-forecasts-miss-what-shoppers-count/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Holiday Dollars Vs Units. Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic "
+image_alt: "Holiday Dollars Vs Units. Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic"
 image_caption: "Holiday Dollars Vs Units: Record spending masks a drop in physical items shipped."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

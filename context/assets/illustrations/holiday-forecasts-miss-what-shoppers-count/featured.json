@@ -1,6 +1,6 @@
 {
   "slug": "holiday-forecasts-miss-what-shoppers-count",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "holiday-logistics-unit-decline",
       "bytes": 508153,
       "sha256": "sha256:7d1ae3737f91074d0cc456b1b9a938cd"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Holiday Dollars Vs Units. Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic ",
+      "caption": "Holiday Dollars Vs Units: Record spending masks a drop in physical items shipped.",
+      "title": "Holiday Dollars Vs Units",
+      "bytes": 269643,
+      "sha256": "sha256:c233615ed247290257a96962ae02729e78480042d9fe2c9d91c459f8e187cdb3"
     }
   ],
   "style": "long_lens_industry",
@@ -27,7 +35,7 @@
   "core_thesis": "A retail plan merged in dollars can show record holiday growth while the actual physical units it must ship are falling.",
   "core_conflict": "Rising dollar forecasts driven by inflation and early deals vs. falling physical unit volume driven by consumer caution.",
   "composition": "extreme asymmetry with off-centre hero subject",
-  "alt_text": "Holiday Dollars Vs Units. Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic ",
+  "alt_text": "Holiday Dollars Vs Units. Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic",
   "caption": "Holiday Dollars Vs Units: Record spending masks a drop in physical items shipped.",
   "title": "Holiday Dollars Vs Units",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
