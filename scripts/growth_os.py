@@ -259,11 +259,27 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
         destination = routing.get("site_domain")
         destination_category = routing.get("wp_category_id")
         category_names = ((index.get("categories") or {}).get(destination or "", {}) or {})
+        # The category axis matches on the SLUG the destination's own front publishes (the hub URL a
+        # reader and the corpus can both verify). The routing row still carries a WordPress category id,
+        # and an index built before 2026-10-15 carries only ids, so both axes are honoured below.
+        destination_slug = _slugify(category_names.get(str(destination_category), ""))
+        # Which fronts will serve this article: the ones publishing the category hub it routes to. One
+        # shared CMS serves several fronts that pull different category subsets, so the article's
+        # category — not its vertical — decides who serves it. Resolved HERE, once, because this is the
+        # function that already holds the routing row: the renderer must not reach the database itself
+        # (`wp_draft.supabase_config()` exits the process when the credentials are absent, which no
+        # `except Exception` can catch, and stamping a link is not worth killing a publish for).
+        hubs = index.get("hub_slugs") or {}
+        serve = [d for d in (index.get("sites") or {})
+                 if destination_slug and destination_slug in (hubs.get(d) or [])]
+        if not serve and destination:
+            serve = [destination]           # no hub list, or a category no front publishes: the routed site
         candidates = [c for c in index.get("candidates", []) if c.get("live") and c.get("url")]
         source = "context/internal_links.json"
     else:
         sitemap = load_sitemap()
         destination, destination_category, routing = None, None, {}
+        serve = []                          # no corpus index => no front knows about the others
         candidates = [{"site": None, "kind": "article", "title": a.get("title"),
                        "slug": a.get("slug"), "url": a.get("url"),
                        "categories": [], "category_ids": [], "excerpt": "",
@@ -282,7 +298,10 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
 
         score, reasons = 0, []
         same_vertical = bool(vertical) and candidate.get("vertical") == vertical
-        same_category = bool(destination_category) and destination_category in (candidate.get("category_ids") or [])
+        same_category = ((bool(destination_slug)
+                          and destination_slug in (candidate.get("category_slugs") or []))
+                         or (bool(destination_category)
+                             and destination_category in (candidate.get("category_ids") or [])))
         if destination and candidate.get("site") == destination:
             score += 4
             reasons.append(f"same site ({destination})")
@@ -297,13 +316,13 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
         # valid target even when no single published article matches (the sparse-corpus case: a
         # vertical whose first article is being written has nothing else in its category yet).
         own_hub = False
-        if (destination_category and candidate.get("kind") == "category" and destination
-                and candidate.get("site") == destination):
+        if ((destination_slug or destination_category) and candidate.get("kind") == "category"
+                and destination and candidate.get("site") == destination):
             name = category_names.get(str(destination_category), "")
-            if name and _slugify(name) == candidate.get("slug"):
+            if candidate.get("slug") in {s for s in (destination_slug, _slugify(name)) if s}:
                 own_hub = True
                 score += 3
-                reasons.append(f"the article's own category hub ({name})")
+                reasons.append(f"the article's own category hub ({name or candidate['slug']})")
         if candidate.get("kind") == "article":
             score += 2
         elif candidate.get("kind") == "calculator":
@@ -336,6 +355,12 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
             "relevance_score": score,
             "why": "; ".join(reasons),
             "category": (candidate.get("categories") or [""])[0],
+            # Which fronts publish this exact page, and where. `scripts/internal_links.py` stamps a
+            # site-relative path from this map, so one stored body stays internal on every front that
+            # serves the article (the map is empty for an index built before the fronts owned it).
+            "sites_live": dict(candidate.get("sites_live") or {}),
+            "path": candidate.get("path") or "",
+            "serve": list(serve),
             "suggested_placement": (f"Link \"{anchor}\" in the section where the article touches "
                                     f"{', '.join(overlap[:3]) or 'this topic'}."),
         })
