@@ -1,0 +1,3675 @@
+[
+ {
+  "cms": "giniloh.com",
+  "id": 880,
+  "slug": "wage-floor-sets-robot-payback",
+  "link": "https://cms.giniloh.com/2026/10/14/wage-floor-sets-robot-payback/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 2,
+   "retired": 1
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/owned-shuttles-or-rented-robots/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/slow-movers-hold-your-stock/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 878,
+  "slug": "your-cluster-hidden-clock",
+  "link": "https://cms.giniloh.com/2026/10/14/your-cluster-hidden-clock/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/agent-failures-tests-stayed-green/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/sla-credit-is-not-insurance/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 874,
+  "slug": "prefill-decode-two-pool-gap",
+  "link": "https://cms.giniloh.com/2026/10/14/prefill-decode-two-pool-gap/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/fine-tune-vs-rent-by-token/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 873,
+  "slug": "one-approval-two-payments",
+  "link": "https://cms.giniloh.com/2026/10/14/one-approval-two-payments/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/retry-is-the-failure-amplifier/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/one-skill-too-many-green-test/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 871,
+  "slug": "gate-the-step-not-the-model",
+  "link": "https://cms.giniloh.com/2026/10/14/gate-the-step-not-the-model/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/durable-execution-not-a-transaction/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/retry-permission-leaves-the-caller/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/one-skill-too-many-green-test/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 867,
+  "slug": "owned-shuttles-or-rented-robots",
+  "link": "https://cms.giniloh.com/2026/10/14/owned-shuttles-or-rented-robots/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/automation-payback-splits-by-sku-geometry/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/slow-movers-hold-your-stock/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 866,
+  "slug": "flat-price-was-the-hedge",
+  "link": "https://cms.giniloh.com/2026/10/14/flat-price-was-the-hedge/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/sla-credit-is-not-insurance/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 863,
+  "slug": "your-chip-stopped-deciding",
+  "link": "https://cms.giniloh.com/2026/10/14/your-chip-stopped-deciding/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/your-32gb-card-gone/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 861,
+  "slug": "stale-grants-travel-the-graph",
+  "link": "https://cms.giniloh.com/2026/10/14/stale-grants-travel-the-graph/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/one-skill-too-many-green-test/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-failure-topology-not-model/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 859,
+  "slug": "retry-permission-leaves-the-caller",
+  "link": "https://cms.giniloh.com/2026/10/14/retry-permission-leaves-the-caller/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/agent-memory-tiering-l1-l4/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 856,
+  "slug": "hour-14-recovery-wall",
+  "link": "https://cms.giniloh.com/2026/10/13/hour-14-recovery-wall/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/shippers-stuck-in-the-gap/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 854,
+  "slug": "build-wait-payback-threshold",
+  "link": "https://cms.giniloh.com/2026/10/13/build-wait-payback-threshold/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/fine-tune-vs-rent-by-token/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 852,
+  "slug": "ai-coding-seats-measure-or-renew",
+  "link": "https://cms.giniloh.com/2026/10/13/ai-coding-seats-measure-or-renew/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/aws-cannot-restore-bahrain/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-audit-trail-not-evidence/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/azure-control-plane-single-point-of-failure/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 850,
+  "slug": "remediator-recovers-46-percent",
+  "link": "https://cms.giniloh.com/2026/10/13/remediator-recovers-46-percent/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 848,
+  "slug": "100-case-eval-925-coverage",
+  "link": "https://cms.giniloh.com/2026/10/13/100-case-eval-925-coverage/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-failures-tests-stayed-green/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 846,
+  "slug": "shippers-stuck-in-the-gap",
+  "link": "https://cms.giniloh.com/2026/10/13/shippers-stuck-in-the-gap/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/air-freight-wont-price-a-year/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 843,
+  "slug": "your-32gb-card-gone",
+  "link": "https://cms.giniloh.com/2026/10/13/your-32gb-card-gone/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/fine-tune-vs-rent-by-token/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 841,
+  "slug": "aws-cannot-restore-bahrain",
+  "link": "https://cms.giniloh.com/2026/10/13/aws-cannot-restore-bahrain/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/sla-credit-is-not-insurance/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-audit-trail-not-evidence/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 839,
+  "slug": "rack-ride-through-two-second-duty",
+  "link": "https://cms.giniloh.com/2026/10/13/rack-ride-through-two-second-duty/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 835,
+  "slug": "agent-failures-tests-stayed-green",
+  "link": "https://cms.giniloh.com/2026/10/13/agent-failures-tests-stayed-green/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 834,
+  "slug": "slow-movers-hold-your-stock",
+  "link": "https://cms.giniloh.com/2026/10/12/slow-movers-hold-your-stock/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/air-freight-wont-price-a-year/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/inventory-carrying-cost-rate/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/safety-stock-forecast-error-not-demand-noise/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 832,
+  "slug": "ai-incident-clock-4-hours-not-15-days",
+  "link": "https://cms.giniloh.com/2026/10/12/ai-incident-clock-4-hours-not-15-days/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 1,
+   "retired": 2
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/azure-control-plane-single-point-of-failure/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 830,
+  "slug": "agent-timeout-false-alarm-budget",
+  "link": "https://cms.giniloh.com/2026/10/12/agent-timeout-false-alarm-budget/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/agent-tool-count-ceiling/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/durable-execution-not-a-transaction/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 827,
+  "slug": "air-freight-wont-price-a-year",
+  "link": "https://cms.giniloh.com/2026/10/12/air-freight-wont-price-a-year/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/fuel-surcharge-peg-mpg-audit/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 825,
+  "slug": "kill-switch-misses-half-your-agents",
+  "link": "https://cms.giniloh.com/2026/10/12/kill-switch-misses-half-your-agents/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/vendor-replacement-ai-ceiling/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 821,
+  "slug": "one-skill-too-many-green-test",
+  "link": "https://cms.giniloh.com/2026/10/12/one-skill-too-many-green-test/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/cache-boundary-decides-input-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/durable-execution-not-a-transaction/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 810,
+  "slug": "why-importers-forfeit-duty-refunds",
+  "link": "https://cms.giniloh.com/2026/10/10/why-importers-forfeit-duty-refunds/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/automation-payback-splits-by-sku-geometry/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 807,
+  "slug": "self-hosting-break-even-one-hour-a-year",
+  "link": "https://cms.giniloh.com/2026/10/10/self-hosting-break-even-one-hour-a-year/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 795,
+  "slug": "nearshoring-doesnt-move-the-trade-case",
+  "link": "https://cms.giniloh.com/2026/10/10/nearshoring-doesnt-move-the-trade-case/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 793,
+  "slug": "home-assistant-cloud-rename-hardware-rent",
+  "link": "https://cms.giniloh.com/2026/10/10/home-assistant-cloud-rename-hardware-rent/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "same-front": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 578,
+  "slug": "kv-cache-is-the-concurrency-ceiling",
+  "link": "https://cms.giniloh.com/2026/10/10/kv-cache-is-the-concurrency-ceiling/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 537,
+  "slug": "agent-audit-trail-not-evidence",
+  "link": "https://cms.giniloh.com/2026/10/10/agent-audit-trail-not-evidence/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 541,
+  "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
+  "link": "https://cms.giniloh.com/2026/10/10/buying-ai-quality-when-the-score-belongs-to-the-judge/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/vendor-replacement-ai-ceiling/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 554,
+  "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
+  "link": "https://cms.giniloh.com/2026/10/10/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 777,
+  "slug": "staggered-lockup-six-selling-decisions",
+  "link": "https://cms.giniloh.com/2026/10/10/staggered-lockup-six-selling-decisions/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/post-termination-option-clock-tax/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/why-70-of-startup-options-go-unexercised/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/categories/career-ai-resilience/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 778,
+  "slug": "diesel-620-electric-freight-certificate-gap",
+  "link": "https://cms.giniloh.com/2026/10/10/diesel-620-electric-freight-certificate-gap/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/freight-scale-bet-vs-contract-duration/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 547,
+  "slug": "control-tower-silent-exception",
+  "link": "https://cms.giniloh.com/2026/10/09/control-tower-silent-exception/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 531,
+  "slug": "you-think-youre-governing-your-agents",
+  "link": "https://cms.giniloh.com/2026/10/09/you-think-youre-governing-your-agents/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 782,
+  "slug": "post-termination-option-clock-tax",
+  "link": "https://cms.giniloh.com/2026/10/09/post-termination-option-clock-tax/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 2,
+   "retired": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/why-70-of-startup-options-go-unexercised/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 784,
+  "slug": "last-mile-carbon-number-is-a-rate-table",
+  "link": "https://cms.giniloh.com/2026/10/09/last-mile-carbon-number-is-a-rate-table/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/same-day-race-undoes-route-optimization/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 543,
+  "slug": "azure-control-plane-single-point-of-failure",
+  "link": "https://cms.giniloh.com/2026/10/09/azure-control-plane-single-point-of-failure/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 545,
+  "slug": "local-ai-payback-cloud-gpu-spread",
+  "link": "https://cms.giniloh.com/2026/10/09/local-ai-payback-cloud-gpu-spread/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 556,
+  "slug": "fine-tune-vs-rent-by-token",
+  "link": "https://cms.giniloh.com/2026/10/09/fine-tune-vs-rent-by-token/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 1,
+   "retired": 2
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 558,
+  "slug": "demurrage-invoice-30-day-clocks",
+  "link": "https://cms.giniloh.com/2026/10/09/demurrage-invoice-30-day-clocks/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/same-day-race-undoes-route-optimization/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 596,
+  "slug": "agent-memory-tiering-l1-l4",
+  "link": "https://cms.giniloh.com/2026/10/09/agent-memory-tiering-l1-l4/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agent-safety-gate-moves-to-verified-state/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 600,
+  "slug": "fuel-surcharge-peg-mpg-audit",
+  "link": "https://cms.giniloh.com/2026/10/09/fuel-surcharge-peg-mpg-audit/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/freight-scale-bet-vs-contract-duration/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 549,
+  "slug": "agent-reliability-pass-k-not-one-green-run",
+  "link": "https://cms.giniloh.com/2026/10/09/agent-reliability-pass-k-not-one-green-run/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 533,
+  "slug": "fed-rate-hike-inverts-working-capital-trap",
+  "link": "https://cms.giniloh.com/2026/10/09/fed-rate-hike-inverts-working-capital-trap/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 1,
+   "cross-site": 2
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 598,
+  "slug": "cache-boundary-decides-input-bill",
+  "link": "https://cms.giniloh.com/2026/10/09/cache-boundary-decides-input-bill/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 572,
+  "slug": "agent-memory-poisoning-write-path",
+  "link": "https://cms.giniloh.com/2026/10/09/agent-memory-poisoning-write-path/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 580,
+  "slug": "sla-credit-is-not-insurance",
+  "link": "https://cms.giniloh.com/2026/10/08/sla-credit-is-not-insurance/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 561,
+  "slug": "retry-is-the-failure-amplifier",
+  "link": "https://cms.giniloh.com/2026/10/08/retry-is-the-failure-amplifier/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 2,
+   "retired": 1
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 550,
+  "slug": "rack-power-density-ceiling-build-before-you-buy",
+  "link": "https://cms.giniloh.com/2026/10/08/rack-power-density-ceiling-build-before-you-buy/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 539,
+  "slug": "inventory-carrying-cost-rate",
+  "link": "https://cms.giniloh.com/2026/10/08/inventory-carrying-cost-rate/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 1,
+   "retired": 2
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 568,
+  "slug": "vendor-replacement-ai-ceiling",
+  "link": "https://cms.giniloh.com/2026/10/08/vendor-replacement-ai-ceiling/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 576,
+  "slug": "agent-tool-count-ceiling",
+  "link": "https://cms.giniloh.com/2026/10/08/agent-tool-count-ceiling/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 570,
+  "slug": "automation-payback-splits-by-sku-geometry",
+  "link": "https://cms.giniloh.com/2026/10/08/automation-payback-splits-by-sku-geometry/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/same-day-race-undoes-route-optimization/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 563,
+  "slug": "durable-execution-not-a-transaction",
+  "link": "https://cms.giniloh.com/2026/10/08/durable-execution-not-a-transaction/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 566,
+  "slug": "gpu-hour-price-set-by-memory",
+  "link": "https://cms.giniloh.com/2026/10/08/gpu-hour-price-set-by-memory/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 594,
+  "slug": "forecast-accuracy-is-not-shock-protection",
+  "link": "https://cms.giniloh.com/2026/10/08/forecast-accuracy-is-not-shock-protection/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 602,
+  "slug": "split-year-two-clock-seam",
+  "link": "https://cms.giniloh.com/2026/10/08/split-year-two-clock-seam/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 2,
+   "retired": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/almost-half-of-3d-prints-fail-the-real-cost-of-the-hobby/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 605,
+  "slug": "safety-stock-forecast-error-not-demand-noise",
+  "link": "https://cms.giniloh.com/2026/10/08/safety-stock-forecast-error-not-demand-noise/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 582,
+  "slug": "warehouse-pick-error-tax-payback",
+  "link": "https://cms.giniloh.com/2026/10/08/warehouse-pick-error-tax-payback/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 584,
+  "slug": "agent-failure-topology-not-model",
+  "link": "https://cms.giniloh.com/2026/10/08/agent-failure-topology-not-model/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 586,
+  "slug": "token-price-record-low-budget-overrun",
+  "link": "https://cms.giniloh.com/2026/10/08/token-price-record-low-budget-overrun/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 588,
+  "slug": "freight-scale-bet-vs-contract-duration",
+  "link": "https://cms.giniloh.com/2026/10/08/freight-scale-bet-vs-contract-duration/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 529,
+  "slug": "agent-safety-gate-moves-to-verified-state",
+  "link": "https://cms.giniloh.com/2026/10/06/agent-safety-gate-moves-to-verified-state/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 2,
+   "retired": 1
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 501,
+  "slug": "the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost",
+  "link": "https://cms.giniloh.com/2026/10/04/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 484,
+  "slug": "tariff-split-reshoring-heavy-half",
+  "link": "https://cms.giniloh.com/2026/10/03/tariff-split-reshoring-heavy-half/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 493,
+  "slug": "moss-landing-burns-again-homeowners-become-the-grid",
+  "link": "https://cms.giniloh.com/2026/10/03/moss-landing-burns-again-homeowners-become-the-grid/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+    "class": "retired"
+   },
+   {
+    "href": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+    "class": "retired"
+   },
+   {
+    "href": "https://wellroost.com/categories/energy-efficiency/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 421,
+  "slug": "goods-tariff-relief-vs-vessel-fee",
+  "link": "https://cms.giniloh.com/2026/10/03/goods-tariff-relief-vs-vessel-fee/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 1,
+  "counts": {
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/categories/supply-chain-operations/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 422,
+  "slug": "planning-ai-buys-capability-not-autonomy",
+  "link": "https://cms.giniloh.com/2026/10/03/planning-ai-buys-capability-not-autonomy/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 1,
+  "counts": {
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/categories/supply-chain-operations/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 404,
+  "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
+  "link": "https://cms.giniloh.com/2026/10/02/planner-as-router-fold-the-model-choice-into-the-plan/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 2,
+   "retired": 1
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/categories/autonomous-agentic-workflows/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 395,
+  "slug": "zet-scale-ev-truck-residual-value-risk",
+  "link": "https://cms.giniloh.com/2026/10/02/zet-scale-ev-truck-residual-value-risk/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 420,
+  "slug": "token-prices-just-halved-the-cfo-still-cant-read-the-bill",
+  "link": "https://cms.giniloh.com/2026/10/02/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 462,
+  "slug": "same-day-race-undoes-route-optimization",
+  "link": "https://cms.giniloh.com/2026/10/02/same-day-race-undoes-route-optimization/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 392,
+  "slug": "reshoring-moved-the-tariff-upstream",
+  "link": "https://cms.giniloh.com/2026/10/02/reshoring-moved-the-tariff-upstream/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 1,
+  "counts": {
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/categories/supply-chain-operations/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 394,
+  "slug": "disney-hulu-fourth-hike-subscription-creep",
+  "link": "https://cms.giniloh.com/2026/10/02/disney-hulu-fourth-hike-subscription-creep/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 6,
+  "counts": {
+   "same-front": 6
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 396,
+  "slug": "why-70-of-startup-options-go-unexercised",
+  "link": "https://cms.giniloh.com/2026/10/02/why-70-of-startup-options-go-unexercised/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 1,
+  "counts": {
+   "same-front": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/categories/career-ai-resilience/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 397,
+  "slug": "up-ns-rail-merger-clears-summary-denial",
+  "link": "https://cms.giniloh.com/2026/10/01/up-ns-rail-merger-clears-summary-denial/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 1,
+  "counts": {
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/categories/supply-chain-operations/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 398,
+  "slug": "ai-spend-27t-cost-visibility-mandate",
+  "link": "https://cms.giniloh.com/2026/10/01/ai-spend-27t-cost-visibility-mandate/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 399,
+  "slug": "maskills-multi-agent-skills-optimization",
+  "link": "https://cms.giniloh.com/2026/10/01/maskills-multi-agent-skills-optimization/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 3
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/mcp-skills-extension/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 400,
+  "slug": "tariff-cliff-already-priced-in",
+  "link": "https://cms.giniloh.com/2026/10/01/tariff-cliff-already-priced-in/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 1,
+  "counts": {
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/categories/supply-chain-operations/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 401,
+  "slug": "mcp-skills-extension",
+  "link": "https://cms.giniloh.com/2026/10/01/mcp-skills-extension/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 3,
+  "counts": {
+   "cross-site": 2,
+   "retired": 1
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/categories/autonomous-agentic-workflows/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 391,
+  "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
+  "link": "https://cms.giniloh.com/2026/09/26/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 1,
+  "counts": {
+   "cross-site": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 380,
+  "slug": "multi-agent-orchestration-building-the-one-person-enterprise",
+  "link": "https://cms.giniloh.com/2026/09/24/multi-agent-orchestration-building-the-one-person-enterprise/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 2,
+  "counts": {
+   "cross-site": 2
+  },
+  "needs_fix": 2,
+  "detail": [
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 374,
+  "slug": "agentic-ai-adoption-soars-but-profits-stall-in-2026",
+  "link": "https://cms.giniloh.com/2026/09/19/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 4,
+  "counts": {
+   "cross-site": 3,
+   "retired": 1
+  },
+  "needs_fix": 3,
+  "detail": [
+   {
+    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 364,
+  "slug": "openai-just-made-the-agent-loop-a-commodity",
+  "link": "https://cms.giniloh.com/2026/09/19/openai-just-made-the-agent-loop-a-commodity/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 2,
+  "counts": {
+   "cross-site": 1,
+   "retired": 1
+  },
+  "needs_fix": 1,
+  "detail": [
+   {
+    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "cross-site"
+   },
+   {
+    "href": "https://giniloh.com/agentic-ai-adoption-hit-a-record-in-2026-but-profits-stalled/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 341,
+  "slug": "expats-evaluating-the-true-value-of-a-job-driven-move-overseas",
+  "link": "https://cms.giniloh.com/2026/09/14/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 2,
+  "counts": {
+   "same-front": 2
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/expat-evaluator/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 333,
+  "slug": "is-a-3000-espresso-maker-machine-worth-it",
+  "link": "https://cms.giniloh.com/2026/07/09/is-a-3000-espresso-maker-machine-worth-it/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 5,
+  "counts": {
+   "same-front": 5
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/coffee-arbitrage/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/coffee-arbitrage/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/coffee-arbitrage/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/coffee-arbitrage/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 308,
+  "slug": "beyond-the-emergency-fund-how-to-build-a-frictionless-wealth",
+  "link": "https://cms.giniloh.com/2026/07/09/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 2,
+  "counts": {
+   "same-front": 2
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 281,
+  "slug": "simulate-a-frictionless-liquidity-sweep-in-giniloh",
+  "link": "https://cms.giniloh.com/2026/07/09/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 4,
+  "counts": {
+   "same-front": 4
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 275,
+  "slug": "smart-ways-to-invest-an-extra-500-a-day",
+  "link": "https://cms.giniloh.com/2026/07/09/smart-ways-to-invest-an-extra-500-a-day/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 10,
+  "counts": {
+   "retired": 6,
+   "same-front": 4
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/2026/06/05/the-giniloh-money-flow-simulator-explained/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/2026/06/06/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/2026/06/12/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/2026/06/12/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 266,
+  "slug": "best-ai-proof-jobs-in-a-changing-market",
+  "link": "https://cms.giniloh.com/2026/07/08/best-ai-proof-jobs-in-a-changing-market/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/career-ai-resilience/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/career-ai-resilience/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 257,
+  "slug": "nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check",
+  "link": "https://cms.giniloh.com/2026/07/05/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 4,
+  "counts": {
+   "retired": 4
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 238,
+  "slug": "lease-break-calculator-save-1850-in-3-steps",
+  "link": "https://cms.giniloh.com/2026/06/28/lease-break-calculator-save-1850-in-3-steps/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 8,
+  "counts": {
+   "same-front": 8
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/lease-break/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/lease-break/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 211,
+  "slug": "zapier-notion-integration-calculate-your-tinkering-tax",
+  "link": "https://cms.giniloh.com/2026/06/26/zapier-notion-integration-calculate-your-tinkering-tax/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 6,
+  "counts": {
+   "same-front": 6
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/no-code-terminator/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/no-code-terminator/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/no-code-terminator/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 196,
+  "slug": "replace-laptop-screen-let-this-decision-engine-do-the-math",
+  "link": "https://cms.giniloh.com/2026/06/26/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 9,
+  "counts": {
+   "same-front": 6,
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/tech-debt-repair/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/tech-debt-repair/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/tech-debt-repair/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/decision-intelligence/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/tech-debt-repair/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/tech-debt-repair/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/tech-debt-repair/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 189,
+  "slug": "self-hosted-ai-when-to-buy-vs-rent-gpus",
+  "link": "https://cms.giniloh.com/2026/06/24/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+  "serve": [
+   "aichieve.net"
+  ],
+  "anchors": 9,
+  "counts": {
+   "retired": 9
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/gpu-compute/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 121,
+  "slug": "ebike-costs-per-use-calculator-for-commuters",
+  "link": "https://cms.giniloh.com/2026/06/20/ebike-costs-per-use-calculator-for-commuters/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 5,
+  "counts": {
+   "retired": 4,
+   "same-front": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/decision-intelligence/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/decision-intelligence/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/decision-intelligence/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/decision-intelligence/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 107,
+  "slug": "jobs-switch-calculator-step-by-step-profit-guide",
+  "link": "https://cms.giniloh.com/2026/06/19/jobs-switch-calculator-step-by-step-profit-guide/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 9,
+  "counts": {
+   "same-front": 6,
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/raise-velocity/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/raise-velocity/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/raise-velocity/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/watch-your-500day-source-income-overflow/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/watch-your-500day-source-income-overflow/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/raise-velocity/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 99,
+  "slug": "calculate-your-career-relocation-payback",
+  "link": "https://cms.giniloh.com/2026/06/18/calculate-your-career-relocation-payback/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 5,
+  "counts": {
+   "same-front": 4,
+   "retired": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/relocation-cost/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculators/relocation-cost/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/relocation-cost/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 91,
+  "slug": "negotiate-job-offer-with-giniloh-visualizer",
+  "link": "https://cms.giniloh.com/2026/06/17/negotiate-job-offer-with-giniloh-visualizer/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 9,
+  "counts": {
+   "same-front": 8,
+   "retired": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/how-to-simulate-emergency-expense-protection/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/total-comp/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 62,
+  "slug": "the-blueprint-behind-giniloh-money-flow",
+  "link": "https://cms.giniloh.com/2026/06/14/the-blueprint-behind-giniloh-money-flow/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 33,
+  "slug": "how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless",
+  "link": "https://cms.giniloh.com/2026/06/10/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 2,
+  "counts": {
+   "same-front": 2
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "giniloh.com",
+  "id": 11,
+  "slug": "the-giniloh-money-flow-simulator-explained",
+  "link": "https://cms.giniloh.com/2026/06/05/the-giniloh-money-flow-simulator-explained/",
+  "serve": [
+   "giniloh.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://giniloh.com/calculators/money-flow/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 141,
+  "slug": "panel-upgrade-80-percent-test",
+  "link": "https://cms.wellroost.com/2026/10/13/panel-upgrade-80-percent-test/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/local-first-smart-home-cost-squeeze/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 139,
+  "slug": "local-api-isnt-in-the-contract",
+  "link": "https://cms.wellroost.com/2026/10/13/local-api-isnt-in-the-contract/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/local-first-smart-home-cost-squeeze/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 137,
+  "slug": "windows-13-percent-best-case",
+  "link": "https://cms.wellroost.com/2026/10/12/windows-13-percent-best-case/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/backup-battery-sizing-critical-loads/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 134,
+  "slug": "silent-15400-home-loss",
+  "link": "https://cms.wellroost.com/2026/10/12/silent-15400-home-loss/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/backup-battery-sizing-critical-loads/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/smart-irrigation-payback-water-tier/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 132,
+  "slug": "battery-payback-five-state-gap",
+  "link": "https://cms.wellroost.com/2026/10/12/battery-payback-five-state-gap/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/backup-battery-sizing-critical-loads/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 130,
+  "slug": "cheapest-fuel-priciest-pipe",
+  "link": "https://cms.wellroost.com/2026/10/12/cheapest-fuel-priciest-pipe/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 113,
+  "slug": "backup-battery-sizing-critical-loads",
+  "link": "https://cms.wellroost.com/2026/10/09/backup-battery-sizing-critical-loads/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "same-front": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/",
+    "class": "retired"
+   },
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-legalizes-plug-in-solar/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 109,
+  "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
+  "link": "https://cms.wellroost.com/2026/10/09/your-ev-is-now-a-home-battery-behind-a-paywall/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/backup-battery-sizing-critical-loads/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-legalizes-plug-in-home-solar-panels/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 92,
+  "slug": "smart-irrigation-payback-water-tier",
+  "link": "https://cms.wellroost.com/2026/10/08/smart-irrigation-payback-water-tier/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 2,
+   "retired": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 103,
+  "slug": "mechanics-lien-clock-payment-release",
+  "link": "https://cms.wellroost.com/2026/10/08/mechanics-lien-clock-payment-release/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 1,
+  "counts": {
+   "same-front": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/categories/tools-equipment/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 96,
+  "slug": "local-first-smart-home-cost-squeeze",
+  "link": "https://cms.wellroost.com/2026/10/08/local-first-smart-home-cost-squeeze/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/water-leak-monitor-rate-threshold/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 98,
+  "slug": "water-leak-monitor-rate-threshold",
+  "link": "https://cms.wellroost.com/2026/10/06/water-leak-monitor-rate-threshold/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/categories/smart-home-security/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 90,
+  "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
+  "link": "https://cms.wellroost.com/2026/10/05/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 2,
+   "same-front": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/",
+    "class": "retired"
+   },
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-legalizes-plug-in-solar/",
+    "class": "retired"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 86,
+  "slug": "heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy",
+  "link": "https://cms.wellroost.com/2026/10/05/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 73,
+  "slug": "borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid",
+  "link": "https://cms.wellroost.com/2026/10/04/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 2,
+   "retired": 1
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-legalizes-plug-in-solar/",
+    "class": "retired"
+   },
+   {
+    "href": "https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 74,
+  "slug": "cloud-update-bricked-the-fridge-local-first",
+  "link": "https://cms.wellroost.com/2026/10/04/cloud-update-bricked-the-fridge-local-first/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 2,
+  "counts": {
+   "same-front": 2
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/categories/smart-home-security/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 80,
+  "slug": "heat-pumps-cheaper-to-run-pricier-to-buy",
+  "link": "https://cms.wellroost.com/2026/10/04/heat-pumps-cheaper-to-run-pricier-to-buy/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 75,
+  "slug": "california-legalizes-plug-in-home-solar-panels",
+  "link": "https://cms.wellroost.com/2026/10/04/california-legalizes-plug-in-home-solar-panels/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 1,
+   "same-front": 2
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/heloc-at-8-vs-battery-that-earns/",
+    "class": "retired"
+   },
+   {
+    "href": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 68,
+  "slug": "california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy",
+  "link": "https://cms.wellroost.com/2026/10/03/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "same-front": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+    "class": "same-front"
+   },
+   {
+    "href": "https://wellroost.com/categories/energy-efficiency/",
+    "class": "same-front"
+   }
+  ]
+ },
+ {
+  "cms": "wellroost.com",
+  "id": 9,
+  "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
+  "link": "https://cms.wellroost.com/2026/09/07/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+  "serve": [
+   "wellroost.com"
+  ],
+  "anchors": 3,
+  "counts": {
+   "retired": 3
+  },
+  "needs_fix": 0,
+  "detail": [
+   {
+    "href": "https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/",
+    "class": "retired"
+   },
+   {
+    "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
+    "class": "retired"
+   }
+  ]
+ }
+]
