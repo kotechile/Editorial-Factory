@@ -111,6 +111,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-14 | enterprise_build_vs_buy | your-cluster-hidden-clock | Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year | https://pressflow.aichieve.net/published/2026-10-14_your-cluster-hidden-clock.md | reader site only |
 | 2026-10-14 | warehouse_automation_robotics_capex | wage-floor-sets-robot-payback | Warehouse Payback: $17.00, Not $17.95 | https://pressflow.aichieve.net/published/2026-10-14_wage-floor-sets-robot-payback.md | reader site only |
 | 2026-10-15 | demand_sensing_advanced_sop | holiday-forecasts-miss-what-shoppers-count | Why 6.7% Holiday Growth Misses Units | https://pressflow.aichieve.net/published/2026-10-15_holiday-forecasts-miss-what-shoppers-count.md | reader site only |
+| 2026-10-15 | agentic_ai | agent-loop-bound-not-a-budget | 68 Loops Your Runtime Never Stopped | https://pressflow.aichieve.net/published/2026-10-15_agent-loop-bound-not-a-budget.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

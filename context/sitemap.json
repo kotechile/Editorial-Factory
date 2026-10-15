@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T13:16:41Z",
+  "updated_at": "2026-10-15T17:39:23Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1898,6 +1898,24 @@
       "date": "2026-10-14",
       "public": true,
       "url": "https://aichieve.net/your-cluster-hidden-clock/"
+    },
+    {
+      "slug": "2026-10-15_agent-loop-bound-not-a-budget",
+      "title": "68 Loops Your Runtime Never Stopped",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-15",
+      "public": false
     },
     {
       "slug": "2026-10-15_holiday-forecasts-miss-what-shoppers-count",

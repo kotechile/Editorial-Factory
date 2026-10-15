@@ -1,0 +1,90 @@
+{
+  "slug": "agent-loop-bound-not-a-budget",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular looping track mechanism with an unattached barrier resting on brushed steel.",
+      "caption": "An agent run requires a strong external bound to stop endless, costly execution loops.",
+      "title": "runaway-agent-loops-clay",
+      "bytes": 1857352,
+      "sha256": "sha256:5d9e1ff9438a7c631fd21e58d19a3b03"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "matte clay 3D render of a small mechanical assembly resting on a real textured surface in a real space. The assembly features an intricate, modular looping track mechanism running endlessly, with a distinct, heavy-duty gating barrier positioned physically outside the loop's path, failing to intersect it. Recognisable engineered parts: a circular track module, a disconnected block housing, and an unlatched gate cover. Matte surfaces with visible moulding seams and contact shadows resting on weathered brushed steel. Asymmetrical off-centre layout with heavy editorial margin on the right. One directional key light raking across them, throwing a long cast shadow. Matte muted palette with one bright amber accent on the gate. Minimalist composition, generous empty margin.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, signatures",
+  "rationale": "A clay render is ideal for illustrating abstract, structural news like software loops and missing bounds. By depicting an engineered, repeating track assembly (the loop) missing a crucial barrier, it captures the 'runaway' concept physically without relying on literal datacenter cliches.",
+  "cue": "68 loops that nothing in the code stopped",
+  "subject": "a mechanical looping track assembly missing a gate",
+  "core_thesis": "Agentic AI loops can run endlessly and exhaust resources without external bounds, as default frameworks often fail to stop them.",
+  "core_conflict": "Unchecked autonomous agent loops vs. rigid external control limits",
+  "composition": "asymmetrical off-centre layout with heavy editorial margin",
+  "alt_text": "Unstoppable Agent Loops. A modular looping track mechanism with an unattached barrier resting on brushed steel.",
+  "caption": "Unstoppable Agent Loops: Missing runtime bounds cause massive API billing spikes.",
+  "title": "Unstoppable Agent Loops",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/agent-loop-bound-not-a-budget/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1380739,
+  "sha256": "sha256:3649bdc7655f504b9020ad9c093c5396164a1bf51d80937f9fb4e4427fa5b4e7",
+  "source_hash": "sha256:cb6d67d97cc08d68234994c79744f807",
+  "source_chars": 5269,
+  "task_id": "86981c0c67135c2a4060deabd7d4c540",
+  "credits": 18.0,
+  "cost_ms": 39,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d29cb4d902e050392ed597ea3352b85a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "matte clay 3D render of a small mechanical assembly resting on a real textured surface in a real space. The assembly features an intricate, modular looping track mechanism running endlessly, with a distinct, heavy-duty gating barrier positioned physically outside the loop's path, failing to intersect it. Recognisable engineered parts: a circular track module, a disconnected block housing, and an unlatched gate cover. Matte surfaces with visible moulding seams and contact shadows resting on weathered brushed steel. Asymmetrical off-centre layout with heavy editorial margin on the right. One directional key light raking across them, throwing a long cast shadow. Matte muted palette with one bright amber accent on the gate. Minimalist composition, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-15T17:39:09+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // RUNTIME FAILURES",
+    "title": "UNSTOPPABLE AGENT LOOPS",
+    "hook": "Missing runtime bounds cause massive API billing spikes",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 5.8,
+    "target": 4.5,
+    "clutter": 0.096,
+    "region_rgb": [
+      176,
+      187,
+      198
+    ],
+    "binding_rgb": [
+      161,
+      174,
+      190
+    ],
+    "title_lines": [
+      "UNSTOPPABLE",
+      "AGENT LOOPS"
+    ],
+    "subject": 0.001,
+    "ink_subject": 0.001,
+    "spike": 0.004,
+    "generated_at": "2026-10-15T17:39:09+00:00"
+  }
+}

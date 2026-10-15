@@ -219,3 +219,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-14 | `your-cluster-hidden-clock` | enterprise_build_vs_buy | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-cluster-hidden-clock/featured.jpg` |
 | 2026-10-14 | `wage-floor-sets-robot-payback` | warehouse_automation_robotics_capex | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/wage-floor-sets-robot-payback/featured.jpg` |
 | 2026-10-15 | `holiday-forecasts-miss-what-shoppers-count` | demand_sensing_advanced_sop | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/holiday-forecasts-miss-what-shoppers-count/featured.jpg` |
+| 2026-10-15 | `agent-loop-bound-not-a-budget` | agentic_ai | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-loop-bound-not-a-budget/featured.png` |
