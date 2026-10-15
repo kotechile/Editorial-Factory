@@ -9,18 +9,18 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 2,
+   "internal": 2,
    "retired": 1
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/owned-shuttles-or-rented-robots/",
-    "class": "cross-site"
+    "href": "/owned-shuttles-or-rented-robots/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/slow-movers-hold-your-stock/",
-    "class": "cross-site"
+    "href": "/slow-movers-hold-your-stock/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/",
@@ -38,21 +38,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/agent-failures-tests-stayed-green/",
-    "class": "cross-site"
+    "href": "/agent-failures-tests-stayed-green/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-    "class": "cross-site"
+    "href": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/sla-credit-is-not-insurance/",
-    "class": "cross-site"
+    "href": "/sla-credit-is-not-insurance/",
+    "class": "internal"
    }
   ]
  },
@@ -66,21 +66,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
-    "class": "cross-site"
+    "href": "/kv-cache-is-the-concurrency-ceiling/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/fine-tune-vs-rent-by-token/",
-    "class": "cross-site"
+    "href": "/fine-tune-vs-rent-by-token/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
-    "class": "cross-site"
+    "href": "/local-ai-payback-cloud-gpu-spread/",
+    "class": "internal"
    }
   ]
  },
@@ -122,21 +122,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/durable-execution-not-a-transaction/",
-    "class": "cross-site"
+    "href": "/durable-execution-not-a-transaction/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/retry-permission-leaves-the-caller/",
-    "class": "cross-site"
+    "href": "/retry-permission-leaves-the-caller/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/one-skill-too-many-green-test/",
-    "class": "cross-site"
+    "href": "/one-skill-too-many-green-test/",
+    "class": "internal"
    }
   ]
  },
@@ -150,21 +150,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/automation-payback-splits-by-sku-geometry/",
-    "class": "cross-site"
+    "href": "/automation-payback-splits-by-sku-geometry/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/slow-movers-hold-your-stock/",
-    "class": "cross-site"
+    "href": "/slow-movers-hold-your-stock/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-    "class": "cross-site"
+    "href": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "internal"
    }
   ]
  },
@@ -178,21 +178,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
-    "class": "cross-site"
+    "href": "/gpu-hour-price-set-by-memory/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-    "class": "cross-site"
+    "href": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/sla-credit-is-not-insurance/",
-    "class": "cross-site"
+    "href": "/sla-credit-is-not-insurance/",
+    "class": "internal"
    }
   ]
  },
@@ -206,21 +206,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
-    "class": "cross-site"
+    "href": "/local-ai-payback-cloud-gpu-spread/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/your-32gb-card-gone/",
-    "class": "cross-site"
+    "href": "/your-32gb-card-gone/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
-    "class": "cross-site"
+    "href": "/kv-cache-is-the-concurrency-ceiling/",
+    "class": "internal"
    }
   ]
  },
@@ -234,21 +234,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/one-skill-too-many-green-test/",
-    "class": "cross-site"
+    "href": "/one-skill-too-many-green-test/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-failure-topology-not-model/",
-    "class": "cross-site"
+    "href": "/agent-failure-topology-not-model/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
-    "class": "cross-site"
+    "href": "/agent-memory-poisoning-write-path/",
+    "class": "internal"
    }
   ]
  },
@@ -262,21 +262,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/agent-memory-tiering-l1-l4/",
-    "class": "cross-site"
+    "href": "/agent-memory-tiering-l1-l4/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-    "class": "cross-site"
+    "href": "/maskills-multi-agent-skills-optimization/",
+    "class": "internal"
    }
   ]
  },
@@ -290,21 +290,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
-    "class": "cross-site"
+    "href": "/demurrage-invoice-30-day-clocks/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/shippers-stuck-in-the-gap/",
-    "class": "cross-site"
+    "href": "/shippers-stuck-in-the-gap/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-    "class": "cross-site"
+    "href": "/up-ns-rail-merger-clears-summary-denial/",
+    "class": "internal"
    }
   ]
  },
@@ -318,21 +318,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/fine-tune-vs-rent-by-token/",
-    "class": "cross-site"
+    "href": "/fine-tune-vs-rent-by-token/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
-    "class": "cross-site"
+    "href": "/local-ai-payback-cloud-gpu-spread/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
-    "class": "cross-site"
+    "href": "/gpu-hour-price-set-by-memory/",
+    "class": "internal"
    }
   ]
  },
@@ -346,21 +346,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/aws-cannot-restore-bahrain/",
-    "class": "cross-site"
+    "href": "/aws-cannot-restore-bahrain/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-audit-trail-not-evidence/",
-    "class": "cross-site"
+    "href": "/agent-audit-trail-not-evidence/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/azure-control-plane-single-point-of-failure/",
-    "class": "cross-site"
+    "href": "/azure-control-plane-single-point-of-failure/",
+    "class": "internal"
    }
   ]
  },
@@ -374,21 +374,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
-    "class": "cross-site"
+    "href": "/openais-custom-chip-beats-nvidia-on-power-2/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-    "class": "cross-site"
+    "href": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "internal"
    }
   ]
  },
@@ -402,21 +402,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/",
-    "class": "cross-site"
+    "href": "/buying-ai-quality-when-the-score-belongs-to-the-judge/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-failures-tests-stayed-green/",
-    "class": "cross-site"
+    "href": "/agent-failures-tests-stayed-green/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    }
   ]
  },
@@ -430,21 +430,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/",
-    "class": "cross-site"
+    "href": "/diesel-620-electric-freight-certificate-gap/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/air-freight-wont-price-a-year/",
-    "class": "cross-site"
+    "href": "/air-freight-wont-price-a-year/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    }
   ]
  },
@@ -458,21 +458,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/fine-tune-vs-rent-by-token/",
-    "class": "cross-site"
+    "href": "/fine-tune-vs-rent-by-token/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/gpu-hour-price-set-by-memory/",
-    "class": "cross-site"
+    "href": "/gpu-hour-price-set-by-memory/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
-    "class": "cross-site"
+    "href": "/kv-cache-is-the-concurrency-ceiling/",
+    "class": "internal"
    }
   ]
  },
@@ -486,21 +486,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
-    "class": "cross-site"
+    "href": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/sla-credit-is-not-insurance/",
-    "class": "cross-site"
+    "href": "/sla-credit-is-not-insurance/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-audit-trail-not-evidence/",
-    "class": "cross-site"
+    "href": "/agent-audit-trail-not-evidence/",
+    "class": "internal"
    }
   ]
  },
@@ -514,21 +514,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/",
-    "class": "cross-site"
+    "href": "/rack-power-density-ceiling-build-before-you-buy/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
-    "class": "cross-site"
+    "href": "/openais-custom-chip-beats-nvidia-on-power-2/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    }
   ]
  },
@@ -542,21 +542,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/",
-    "class": "cross-site"
+    "href": "/agent-reliability-pass-k-not-one-green-run/",
+    "class": "internal"
    }
   ]
  },
@@ -570,21 +570,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/air-freight-wont-price-a-year/",
-    "class": "cross-site"
+    "href": "/air-freight-wont-price-a-year/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/inventory-carrying-cost-rate/",
-    "class": "cross-site"
+    "href": "/inventory-carrying-cost-rate/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/safety-stock-forecast-error-not-demand-noise/",
-    "class": "cross-site"
+    "href": "/safety-stock-forecast-error-not-demand-noise/",
+    "class": "internal"
    }
   ]
  },
@@ -598,14 +598,14 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 1,
+   "internal": 1,
    "retired": 2
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/azure-control-plane-single-point-of-failure/",
-    "class": "cross-site"
+    "href": "/azure-control-plane-single-point-of-failure/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/calculate-your-career-relocation-payback/",
@@ -627,21 +627,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/agent-tool-count-ceiling/",
-    "class": "cross-site"
+    "href": "/agent-tool-count-ceiling/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
-    "class": "cross-site"
+    "href": "/agent-memory-poisoning-write-path/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/durable-execution-not-a-transaction/",
-    "class": "cross-site"
+    "href": "/durable-execution-not-a-transaction/",
+    "class": "internal"
    }
   ]
  },
@@ -655,21 +655,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/fuel-surcharge-peg-mpg-audit/",
-    "class": "cross-site"
+    "href": "/fuel-surcharge-peg-mpg-audit/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/",
-    "class": "cross-site"
+    "href": "/diesel-620-electric-freight-certificate-gap/",
+    "class": "internal"
    }
   ]
  },
@@ -683,21 +683,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/",
-    "class": "cross-site"
+    "href": "/agent-reliability-pass-k-not-one-green-run/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-    "class": "cross-site"
+    "href": "/maskills-multi-agent-skills-optimization/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/vendor-replacement-ai-ceiling/",
-    "class": "cross-site"
+    "href": "/vendor-replacement-ai-ceiling/",
+    "class": "internal"
    }
   ]
  },
@@ -711,21 +711,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/cache-boundary-decides-input-bill/",
-    "class": "cross-site"
+    "href": "/cache-boundary-decides-input-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-memory-poisoning-write-path/",
-    "class": "cross-site"
+    "href": "/agent-memory-poisoning-write-path/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/durable-execution-not-a-transaction/",
-    "class": "cross-site"
+    "href": "/durable-execution-not-a-transaction/",
+    "class": "internal"
    }
   ]
  },
@@ -739,21 +739,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
-    "class": "cross-site"
+    "href": "/demurrage-invoice-30-day-clocks/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/automation-payback-splits-by-sku-geometry/",
-    "class": "cross-site"
+    "href": "/automation-payback-splits-by-sku-geometry/",
+    "class": "internal"
    }
   ]
  },
@@ -795,21 +795,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
-    "class": "cross-site"
+    "href": "/demurrage-invoice-30-day-clocks/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
-    "class": "cross-site"
+    "href": "/tariff-split-reshoring-heavy-half/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    }
   ]
  },
@@ -908,21 +908,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/vendor-replacement-ai-ceiling/",
-    "class": "cross-site"
+    "href": "/vendor-replacement-ai-ceiling/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    }
   ]
  },
@@ -992,21 +992,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
-    "class": "cross-site"
+    "href": "/zet-scale-ev-truck-residual-value-risk/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/freight-scale-bet-vs-contract-duration/",
-    "class": "cross-site"
+    "href": "/freight-scale-bet-vs-contract-duration/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    }
   ]
  },
@@ -1020,21 +1020,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-    "class": "cross-site"
+    "href": "/up-ns-rail-merger-clears-summary-denial/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
-    "class": "cross-site"
+    "href": "/zet-scale-ev-truck-residual-value-risk/",
+    "class": "internal"
    }
   ]
  },
@@ -1049,17 +1049,17 @@
   "anchors": 3,
   "counts": {
    "retired": 2,
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
     "href": "https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/",
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
@@ -1106,21 +1106,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/same-day-race-undoes-route-optimization/",
-    "class": "cross-site"
+    "href": "/same-day-race-undoes-route-optimization/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/",
-    "class": "cross-site"
+    "href": "/fed-rate-hike-inverts-working-capital-trap/",
+    "class": "internal"
    }
   ]
  },
@@ -1135,17 +1135,17 @@
   "anchors": 3,
   "counts": {
    "retired": 2,
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
     "href": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
@@ -1164,9 +1164,9 @@
   "anchors": 3,
   "counts": {
    "retired": 2,
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
     "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
@@ -1177,8 +1177,8 @@
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    }
   ]
  },
@@ -1192,14 +1192,14 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 1,
+   "internal": 1,
    "retired": 2
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
@@ -1221,21 +1221,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/same-day-race-undoes-route-optimization/",
-    "class": "cross-site"
+    "href": "/same-day-race-undoes-route-optimization/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
-    "class": "cross-site"
+    "href": "/tariff-split-reshoring-heavy-half/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    }
   ]
  },
@@ -1249,21 +1249,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-    "class": "cross-site"
+    "href": "/maskills-multi-agent-skills-optimization/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agent-safety-gate-moves-to-verified-state/",
-    "class": "cross-site"
+    "href": "/agent-safety-gate-moves-to-verified-state/",
+    "class": "internal"
    }
   ]
  },
@@ -1277,21 +1277,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/freight-scale-bet-vs-contract-duration/",
-    "class": "cross-site"
+    "href": "/freight-scale-bet-vs-contract-duration/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-    "class": "cross-site"
+    "href": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    }
   ]
  },
@@ -1305,21 +1305,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
-    "class": "cross-site"
+    "href": "/ai-spend-27t-cost-visibility-mandate/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-    "class": "cross-site"
+    "href": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-    "class": "cross-site"
+    "href": "/maskills-multi-agent-skills-optimization/",
+    "class": "internal"
    }
   ]
  },
@@ -1334,21 +1334,21 @@
   "anchors": 3,
   "counts": {
    "retired": 1,
-   "cross-site": 2
+   "internal": 2
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
     "href": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/",
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    }
   ]
  },
@@ -1362,21 +1362,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-    "class": "cross-site"
+    "href": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    }
   ]
  },
@@ -1390,21 +1390,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
-    "class": "cross-site"
+    "href": "/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-    "class": "cross-site"
+    "href": "/maskills-multi-agent-skills-optimization/",
+    "class": "internal"
    }
   ]
  },
@@ -1418,21 +1418,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
-    "class": "cross-site"
+    "href": "/ai-spend-27t-cost-visibility-mandate/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-    "class": "cross-site"
+    "href": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    }
   ]
  },
@@ -1446,22 +1446,22 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 2,
+   "internal": 2,
    "retired": 1
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-    "class": "cross-site"
+    "href": "/maskills-multi-agent-skills-optimization/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
-    "class": "cross-site"
+    "href": "/ai-spend-27t-cost-visibility-mandate/",
+    "class": "internal"
    }
   ]
  },
@@ -1475,21 +1475,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
-    "class": "cross-site"
+    "href": "/openais-custom-chip-beats-nvidia-on-power-2/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-    "class": "cross-site"
+    "href": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "internal"
    }
   ]
  },
@@ -1503,14 +1503,14 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 1,
+   "internal": 1,
    "retired": 2
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-    "class": "cross-site"
+    "href": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
@@ -1532,21 +1532,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
-    "class": "cross-site"
+    "href": "/ai-spend-27t-cost-visibility-mandate/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-    "class": "cross-site"
+    "href": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    }
   ]
  },
@@ -1560,21 +1560,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
-    "class": "cross-site"
+    "href": "/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "internal"
    }
   ]
  },
@@ -1588,21 +1588,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/same-day-race-undoes-route-optimization/",
-    "class": "cross-site"
+    "href": "/same-day-race-undoes-route-optimization/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-    "class": "cross-site"
+    "href": "/up-ns-rail-merger-clears-summary-denial/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    }
   ]
  },
@@ -1616,21 +1616,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
-    "class": "cross-site"
+    "href": "/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    }
   ]
  },
@@ -1645,17 +1645,17 @@
   "anchors": 3,
   "counts": {
    "retired": 2,
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
     "href": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
@@ -1673,21 +1673,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
-    "class": "cross-site"
+    "href": "/reshoring-moved-the-tariff-upstream/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
-    "class": "cross-site"
+    "href": "/tariff-split-reshoring-heavy-half/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    }
   ]
  },
@@ -1730,21 +1730,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-    "class": "cross-site"
+    "href": "/warehouse-pick-error-tax-payback/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-    "class": "cross-site"
+    "href": "/up-ns-rail-merger-clears-summary-denial/",
+    "class": "internal"
    }
   ]
  },
@@ -1758,21 +1758,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
-    "class": "cross-site"
+    "href": "/zet-scale-ev-truck-residual-value-risk/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-    "class": "cross-site"
+    "href": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
-    "class": "cross-site"
+    "href": "/tariff-split-reshoring-heavy-half/",
+    "class": "internal"
    }
   ]
  },
@@ -1786,21 +1786,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
-    "class": "cross-site"
+    "href": "/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    }
   ]
  },
@@ -1814,21 +1814,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-    "class": "cross-site"
+    "href": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-    "class": "cross-site"
+    "href": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "internal"
    }
   ]
  },
@@ -1842,21 +1842,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
-    "class": "cross-site"
+    "href": "/reshoring-moved-the-tariff-upstream/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
-    "class": "cross-site"
+    "href": "/tariff-split-reshoring-heavy-half/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    }
   ]
  },
@@ -1870,18 +1870,18 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 2,
+   "internal": 2,
    "retired": 1
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
-    "class": "cross-site"
+    "href": "/planner-as-router-fold-the-model-choice-into-the-plan/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
@@ -1899,21 +1899,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-    "class": "cross-site"
+    "href": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    }
   ]
  },
@@ -1927,21 +1927,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-    "class": "cross-site"
+    "href": "/goods-tariff-relief-vs-vessel-fee/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
-    "class": "cross-site"
+    "href": "/reshoring-moved-the-tariff-upstream/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    }
   ]
  },
@@ -1983,13 +1983,13 @@
   ],
   "anchors": 1,
   "counts": {
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/categories/supply-chain-operations/",
-    "class": "cross-site"
+    "href": "/categories/supply-chain-operations/",
+    "class": "internal"
    }
   ]
  },
@@ -2003,13 +2003,13 @@
   ],
   "anchors": 1,
   "counts": {
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/categories/supply-chain-operations/",
-    "class": "cross-site"
+    "href": "/categories/supply-chain-operations/",
+    "class": "internal"
    }
   ]
  },
@@ -2023,18 +2023,18 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 2,
+   "internal": 2,
    "retired": 1
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/categories/autonomous-agentic-workflows/",
@@ -2052,21 +2052,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-    "class": "cross-site"
+    "href": "/up-ns-rail-merger-clears-summary-denial/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
-    "class": "cross-site"
+    "href": "/reshoring-moved-the-tariff-upstream/",
+    "class": "internal"
    }
   ]
  },
@@ -2080,21 +2080,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    }
   ]
  },
@@ -2108,21 +2108,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-    "class": "cross-site"
+    "href": "/up-ns-rail-merger-clears-summary-denial/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/tariff-cliff-already-priced-in/",
-    "class": "cross-site"
+    "href": "/tariff-cliff-already-priced-in/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
-    "class": "cross-site"
+    "href": "/reshoring-moved-the-tariff-upstream/",
+    "class": "internal"
    }
   ]
  },
@@ -2136,13 +2136,13 @@
   ],
   "anchors": 1,
   "counts": {
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/categories/supply-chain-operations/",
-    "class": "cross-site"
+    "href": "/categories/supply-chain-operations/",
+    "class": "internal"
    }
   ]
  },
@@ -2216,13 +2216,13 @@
   ],
   "anchors": 1,
   "counts": {
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/categories/supply-chain-operations/",
-    "class": "cross-site"
+    "href": "/categories/supply-chain-operations/",
+    "class": "internal"
    }
   ]
  },
@@ -2236,21 +2236,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-    "class": "cross-site"
+    "href": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-    "class": "cross-site"
+    "href": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    }
   ]
  },
@@ -2264,21 +2264,21 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 3
+   "internal": 3
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/mcp-skills-extension/",
-    "class": "cross-site"
+    "href": "/mcp-skills-extension/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    }
   ]
  },
@@ -2292,13 +2292,13 @@
   ],
   "anchors": 1,
   "counts": {
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/categories/supply-chain-operations/",
-    "class": "cross-site"
+    "href": "/categories/supply-chain-operations/",
+    "class": "internal"
    }
   ]
  },
@@ -2312,18 +2312,18 @@
   ],
   "anchors": 3,
   "counts": {
-   "cross-site": 2,
+   "internal": 2,
    "retired": 1
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/categories/autonomous-agentic-workflows/",
@@ -2341,13 +2341,13 @@
   ],
   "anchors": 1,
   "counts": {
-   "cross-site": 1
+   "internal": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-    "class": "cross-site"
+    "href": "/multi-agent-orchestration-building-the-one-person-enterprise/",
+    "class": "internal"
    }
   ]
  },
@@ -2361,17 +2361,17 @@
   ],
   "anchors": 2,
   "counts": {
-   "cross-site": 2
+   "internal": 2
   },
-  "needs_fix": 2,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    }
   ]
  },
@@ -2385,26 +2385,26 @@
   ],
   "anchors": 4,
   "counts": {
-   "cross-site": 3,
+   "internal": 3,
    "retired": 1
   },
-  "needs_fix": 3,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-    "class": "cross-site"
+    "href": "/openai-just-made-the-agent-loop-a-commodity/",
+    "class": "internal"
    },
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
     "class": "retired"
    },
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    }
   ]
  },
@@ -2418,14 +2418,14 @@
   ],
   "anchors": 2,
   "counts": {
-   "cross-site": 1,
+   "internal": 1,
    "retired": 1
   },
-  "needs_fix": 1,
+  "needs_fix": 0,
   "detail": [
    {
-    "href": "https://giniloh.com/self-hosted-ai-when-to-buy-vs-rent-gpus/",
-    "class": "cross-site"
+    "href": "/self-hosted-ai-when-to-buy-vs-rent-gpus/",
+    "class": "internal"
    },
    {
     "href": "https://giniloh.com/agentic-ai-adoption-hit-a-record-in-2026-but-profits-stalled/",

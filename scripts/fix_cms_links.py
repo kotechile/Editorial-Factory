@@ -115,14 +115,21 @@ def classify(href: str, *, slug: str, serve: set[str], paths: dict) -> str:
     set later widens, and making it relative has its own small risk (a relative path needs the target to
     exist on whichever front renders it), so it is left alone unless `--include-same-front` asks.
     """
+    # A relative href is checked FIRST: it has no host, so a host-based scan classifies it "external"
+    # and never looks at it again. That is not a cosmetic gap — after the repair every rewritten anchor
+    # is relative, and an instrument that cannot see them reports "0 cross-site" for the right reason but
+    # also reports that the corpus has no internal links at all.
+    path = _path_of(href)
+    if href.startswith("/"):
+        if not serve:
+            return "relative-unknown-serve"
+        resolved = {f for f in serve if path in paths.get(f, set())}
+        if resolved == serve:
+            return "internal"                      # resolves everywhere it is read
+        return "differs-by-front" if resolved else "retired"
     host = (urllib.parse.urlparse(href).hostname or "").lower()
     if host not in FRONT_HOSTS:
         return "external"
-    path = _path_of(href)
-    if href.startswith("/"):
-        # already relative: only a question of whether it still resolves where it is read
-        resolved = {f for f in serve if path in paths.get(f, set())}
-        return "internal" if resolved == serve and serve else ("retired" if not resolved else "divergent")
     if not serve:
         return "missing"
     if slug and path == f"/{slug}/":
@@ -228,13 +235,21 @@ def apply_post(domain: str, cms: str, post: dict, *, sites_live: dict, paths: di
     wp = wd.WordPress(cms, user, password)
     # content only: no `status`, so a published post can never be unpublished by this pass.
     wp._call("POST", f"posts/{post['id']}", {"content": updated})
-    _, fresh = wp._call("GET", f"posts/{post['id']}?_fields=id,slug,content")
+    # Read back the RAW body (`context=edit`), not `content.rendered`: WordPress runs `the_content`
+    # filters on the way out (wpautop and friends), so comparing against the rendered form would report
+    # a difference on every single post and hide a real one. Same field `wp_draft.delivery_problems`
+    # compares, for the same reason.
+    _, fresh = wp._call("GET", f"posts/{post['id']}?context=edit&_fields=id,slug,status,content")
     fresh = fresh or {}
-    served = (fresh.get("content") or {}).get("rendered") or ""
+    stored = fresh.get("content") or {}
+    served = stored.get("raw") or stored.get("rendered") or ""
     still = [c for c in changes if c["class"] in ("cross-site", "same-front")
              and not c["new_href"].startswith("/")]
     report["problems"] = verify_write(original, served, changes, slug, serve, paths)
     report["written"] = True
+    report["status"] = fresh.get("status")
+    if str(fresh.get("status") or "") != "publish":
+        report["problems"].append(f"the post came back status={fresh.get('status')!r}, not 'publish'")
     report["read_back_matches"] = mask_hrefs(served) == mask_hrefs(updated)
     if not report["read_back_matches"]:
         report["problems"].append("the CMS serves a body that differs from what was sent")

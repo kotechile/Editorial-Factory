@@ -89,9 +89,13 @@ def classify(href: str, *, serve: set[str], paths: dict, slug: str) -> str:
 def audit_post(*, cms_domain: str, post: dict, sites_live: dict, paths: dict) -> dict:
     html = (post.get("content") or {}).get("rendered") or ""
     slug = post.get("slug") or ""
-    serve = set(sites_live.get(slug) or {})
-    if cms_domain in FRONT_HOSTS and cms_domain in serve:
-        pass                                  # already in the measured set
+    # The fixer's own serve-set rule, fallback included: a post the corpus does not know is served by
+    # its own front. Re-deriving it here (the first revision read `sites_live` directly, with no
+    # fallback) made the audit classify exactly the posts the fixer had just rewritten as if they had
+    # no serving front at all — an instrument that disagrees with the tool it verifies is worse than no
+    # instrument.
+    import fix_cms_links as fx
+    serve = fx.serve_set_for(slug, cms_domain, sites_live)
     anchors = []
     for href in A_HREF.findall(html):
         cls = classify(href, serve=serve, paths=paths, slug=slug)
@@ -119,7 +123,12 @@ def fetch_posts(domain: str, cms: str, only_id: int | None = None) -> list[dict]
     wp = wd.WordPress(cms, user, password)
     fields = "id,slug,link,content"
     if only_id:
-        _, one = wp._call("GET", f"posts/{only_id}?_fields={fields}")
+        try:
+            _, one = wp._call("GET", f"posts/{only_id}?_fields={fields}")
+        except RuntimeError:
+            # The id belongs to the OTHER install (each CMS numbers its own posts), so this one simply
+            # does not have it. Not an error: `--post 878` should audit that post wherever it lives.
+            return []
         return [one] if one else []
     out, page = [], 1
     while True:
