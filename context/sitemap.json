@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T19:49:18Z",
+  "updated_at": "2026-10-15T07:02:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1744,7 +1744,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/gate-the-step-not-the-model/"
     },
     {
       "slug": "2026-10-14_one-approval-two-payments",
@@ -1762,7 +1763,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/one-approval-two-payments/"
     },
     {
       "slug": "2026-10-14_owned-shuttles-or-rented-robots",
@@ -1799,7 +1801,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/prefill-decode-two-pool-gap/"
     },
     {
       "slug": "2026-10-14_retry-permission-leaves-the-caller",
@@ -1855,7 +1858,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/wage-floor-sets-robot-payback/"
     },
     {
       "slug": "2026-10-14_your-chip-stopped-deciding",
@@ -1892,7 +1896,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-14",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-cluster-hidden-clock/"
     }
   ]
 }
