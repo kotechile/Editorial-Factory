@@ -1,6 +1,6 @@
 {
   "slug": "goods-tariff-relief-vs-vessel-fee",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Container-Ship-Port-Fee",
       "bytes": 415785,
       "sha256": "sha256:e92309484c18c0e103b31a266c3770ea"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and cranes at a sprawling maritime port un",
+      "caption": "Washington Cuts The Tariff On The: On Sept. 27, the U.S.-China Board of Trade recommended.",
+      "title": "Washington Cuts The Tariff On The",
+      "bytes": 221505,
+      "sha256": "sha256:8e6f408e3dc96d96f0bae813e80162da64e3295fc8b512c3b6b55fc747ff2888"
     }
   ],
   "style": "long_lens_industry",
@@ -24,9 +32,9 @@
   "rationale": "The article discusses a flat container fee applied to ships, contrasting with a tariff cut on goods. A long-lens compressed view of stacked shipping containers and port cranes conveys the massive physical scale of the trade facing these opposing policies.",
   "cue": "$120 per container",
   "subject": "stacked shipping containers at a port terminal",
-  "alt_text": "Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and cranes at a sprawling maritime port un",
-  "caption": "Washington Cuts The Tariff On The: On Sept. 27, the U.S.-China Board of Trade recommended.",
-  "title": "Washington Cuts The Tariff On The",
+  "alt_text": "New Ship Fees Erase Tariff Cuts. Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and crane",
+  "caption": "New Ship Fees Erase Tariff Cuts: How a flat vessel fee wipes out goods tariff relief.",
+  "title": "New Ship Fees Erase Tariff Cuts",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -36,8 +44,8 @@
   "local_path": "context/assets/illustrations/goods-tariff-relief-vs-vessel-fee/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 221505,
-  "sha256": "sha256:8e6f408e3dc96d96f0bae813e80162da64e3295fc8b512c3b6b55fc747ff2888",
+  "bytes": 223466,
+  "sha256": "sha256:e07fe73828a878eb026ea7e9b1b7c13e9a0fce21e7bb1489a55d088b59ba881d",
   "source_hash": "sha256:64afea2b37b7b60c41f96997291330c6",
   "source_chars": 4026,
   "task_id": "bc009468ce8125898f03f84394c780ee",
@@ -54,32 +62,32 @@
   },
   "generated_at": "2026-10-01T14:13:25+00:00",
   "overlay": {
-    "kicker": "",
-    "title": "WASHINGTON CUTS THE TARIFF ON THE",
-    "hook": "On Sept. 27, the U.S.-China Board of Trade recommended",
-    "anchor": "top-left",
+    "kicker": "US-CHINA TRADE // SHIPPING FEES",
+    "title": "NEW SHIP FEES ERASE TARIFF CUTS",
+    "hook": "How a flat vessel fee wipes out goods tariff relief",
+    "anchor": "bottom-left",
     "light": true,
     "scrim": 75,
-    "contrast": 4.94,
+    "contrast": 4.69,
     "target": 4.5,
-    "clutter": 0.226,
+    "clutter": 0.238,
     "region_rgb": [
-      100,
-      117,
-      131
+      101,
+      118,
+      132
     ],
     "binding_rgb": [
-      123,
-      149,
-      162
+      130,
+      153,
+      167
     ],
     "title_lines": [
-      "WASHINGTON CUTS",
-      "THE TARIFF ON THE"
+      "NEW SHIP FEES",
+      "ERASE TARIFF CUTS"
     ],
-    "subject": 0.068,
-    "ink_subject": 0.038,
-    "spike": 0.19,
+    "subject": 0.081,
+    "ink_subject": 0.043,
+    "spike": 0.235,
     "generated_at": "2026-10-01T14:13:25+00:00"
   }
 }

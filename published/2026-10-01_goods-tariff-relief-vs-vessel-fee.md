@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/goods-tariff-relief-vs-vessel-fee/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and cranes at a sprawling maritime port un"
-image_caption: "Washington Cuts The Tariff On The: On Sept. 27, the U.S.-China Board of Trade recommended."
+image_alt: "New Ship Fees Erase Tariff Cuts. Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and crane"
+image_caption: "New Ship Fees Erase Tariff Cuts: How a flat vessel fee wipes out goods tariff relief."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

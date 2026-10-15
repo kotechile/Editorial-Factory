@@ -113,6 +113,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-15 | demand_sensing_advanced_sop | holiday-forecasts-miss-what-shoppers-count | Why 6.7% Holiday Growth Misses Units | https://pressflow.aichieve.net/published/2026-10-15_holiday-forecasts-miss-what-shoppers-count.md | reader site only |
 | 2026-10-15 | agentic_ai | agent-loop-bound-not-a-budget | 68 Loops Your Runtime Never Stopped | https://pressflow.aichieve.net/published/2026-10-15_agent-loop-bound-not-a-budget.md | reader site only |
 | 2026-10-15 | enterprise_ai_finops | cheaper-model-pricier-task | Your Cheaper Model: 57% Pricier Tasks | https://pressflow.aichieve.net/published/2026-10-15_cheaper-model-pricier-task.md | reader site only |
+| 2026-10-15 | supply_chain | freight-claim-dies-at-9-months | Your Claim Dies at 9 Months | https://pressflow.aichieve.net/published/2026-10-15_freight-claim-dies-at-9-months.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

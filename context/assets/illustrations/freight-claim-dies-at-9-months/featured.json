@@ -1,0 +1,88 @@
+{
+  "slug": "freight-claim-dies-at-9-months",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A sharply focused formal freight claim document resting on a blurred, crumpled yellow delivery receipt.",
+      "caption": "A quick shortage note on a delivery receipt fails to meet the federal standard for a formal claim.",
+      "title": "Freight-Claim-Filing-Window",
+      "bytes": 1020290,
+      "sha256": "sha256:bcc29d5be3890f3d233455c6daeecd19"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, razor-sharp focal plane. A crisp, formal typed freight claim document made of heavy tactile paper stock with an embossed corporate seal, resting deliberately on a crumpled, hastily scribbled yellow carbon-copy delivery receipt. Shallow depth of field, soft directional daylight casting subtle contact shadows across the textured paper. Visible surface dust motes in the crisp atmosphere. The formal document commands the right third of the frame, with the left background falling away into a smooth, muted amber blur. Premium editorial cover standard, refined muted color palette.",
+  "negative_prompt": "garbled text, random lettering, gibberish, typography, watermarks, UI, people, hands, faces",
+  "rationale": "The story hinges entirely on the physical and legal distinction between two types of paperwork. An extreme macro photograph emphasizes the crucial material difference between a formal demand and a casual dock note.",
+  "cue": "A freight claim is a written demand",
+  "subject": "a formal typed freight claim document resting on a crumpled yellow delivery receipt",
+  "core_thesis": "A freight claim must be a formal written demand for a specific dollar amount filed within 9 months, not just a shortage note on a delivery receipt.",
+  "core_conflict": "Informal dock notes vs. formal legal demands",
+  "composition": "extreme asymmetry, right-weighted",
+  "alt_text": "How Freight Claims Die. A sharply focused formal freight claim document resting on a blurred, crumpled yellow delivery",
+  "caption": "How Freight Claims Die: Why a dock note will not save your freight claim.",
+  "title": "How Freight Claims Die",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/freight-claim-dies-at-9-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 593795,
+  "sha256": "sha256:951be257481d6d7e5bb8dd56ac12480d67c30a86c67c4e15b47c818fd9c081cd",
+  "source_hash": "sha256:bd700315167da35a7668d2a81d44bc2b",
+  "source_chars": 4660,
+  "task_id": "70480d897be6d4e1b2e0d24a64199fb4",
+  "credits": 7.0,
+  "cost_ms": 163,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/70480d897be6d4e1b2e0d24a64199fb4_1792089696011.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, razor-sharp focal plane. A crisp, formal typed freight claim document made of heavy tactile paper stock with an embossed corporate seal, resting deliberately on a crumpled, hastily scribbled yellow carbon-copy delivery receipt. Shallow depth of field, soft directional daylight casting subtle contact shadows across the textured paper. Visible surface dust motes in the crisp atmosphere. The formal document commands the right third of the frame, with the left background falling away into a smooth, muted amber blur. Premium editorial cover standard, refined muted color palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-15T18:41:41+00:00",
+  "overlay": {
+    "kicker": "FREIGHT CLAIMS // FILING RULES",
+    "title": "HOW FREIGHT CLAIMS DIE",
+    "hook": "Why a dock note will not save your freight claim",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 6.02,
+    "target": 5.5,
+    "clutter": 0.337,
+    "region_rgb": [
+      161,
+      153,
+      149
+    ],
+    "binding_rgb": [
+      113,
+      103,
+      101
+    ],
+    "title_lines": [
+      "HOW FREIGHT",
+      "CLAIMS DIE"
+    ],
+    "subject": 0.079,
+    "ink_subject": 0.038,
+    "spike": 0.243,
+    "generated_at": "2026-10-15T18:41:41+00:00"
+  }
+}

@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/planner-as-router-plan-time-routing/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "An interlocking mechanical connector splitting into two conduit paths on a minimal background."
-image_caption: "Planner-as-Router assigns a model tier to each subtask at the start of the planning phase, reducing costs by 44 percent."
+image_alt: "Planner-As-Router. An interlocking mechanical connector splitting into two conduit paths on a minimal background."
+image_caption: "Planner-As-Router: Folding model choice into the plan to cut costs by 44%."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

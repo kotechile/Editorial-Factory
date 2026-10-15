@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-15T07:15:24+00:00
+# Internal-link candidates — 2026-10-15T14:16:43+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -185,6 +185,7 @@ Category hubs this front serves: artificial-intelligence-future-of-work, supply-
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #958 `holiday-forecasts-miss-what-shoppers-count` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #880 `wage-floor-sets-robot-payback` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #878 `your-cluster-hidden-clock` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #874 `prefill-decode-two-pool-gap` — published in the CMS but absent from the frontend sitemap

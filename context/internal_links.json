@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T07:15:24+00:00",
+  "generated_at": "2026-10-15T14:16:43+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -3837,6 +3837,20 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 958,
+      "slug": "holiday-forecasts-miss-what-shoppers-count",
+      "title": "Why 6.7% Holiday Growth Misses Units",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-15T13:18:27",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 880,
       "slug": "wage-floor-sets-robot-payback",
       "title": "Warehouse Payback: $17.00, Not $17.95",
@@ -3844,7 +3858,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T19:49:17",
+      "modified": "2026-10-15T12:33:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3858,7 +3872,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T19:10:08",
+      "modified": "2026-10-15T12:33:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3872,7 +3886,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T18:49:44",
+      "modified": "2026-10-15T12:33:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3886,7 +3900,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T17:41:02",
+      "modified": "2026-10-15T12:33:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3900,7 +3914,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T12:53:52",
+      "modified": "2026-10-15T12:33:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3914,7 +3928,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T12:14:04",
+      "modified": "2026-10-15T12:33:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3928,7 +3942,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T11:43:07",
+      "modified": "2026-10-15T12:33:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3942,7 +3956,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T11:14:09",
+      "modified": "2026-10-15T12:33:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3956,7 +3970,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-14T10:41:06",
+      "modified": "2026-10-15T12:33:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3970,7 +3984,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T20:16:13",
+      "modified": "2026-10-15T12:33:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3984,7 +3998,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T19:44:11",
+      "modified": "2026-10-15T12:33:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -3998,7 +4012,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T18:39:21",
+      "modified": "2026-10-15T12:33:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4012,7 +4026,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T18:09:53",
+      "modified": "2026-10-15T12:33:34",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4026,7 +4040,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T17:38:59",
+      "modified": "2026-10-15T12:33:34",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4040,7 +4054,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T13:17:14",
+      "modified": "2026-10-15T12:33:35",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4054,7 +4068,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T12:44:17",
+      "modified": "2026-10-15T12:33:35",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4068,7 +4082,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T11:43:02",
+      "modified": "2026-10-15T12:33:35",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4082,7 +4096,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T11:19:52",
+      "modified": "2026-10-15T12:33:36",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4096,7 +4110,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-13T10:44:57",
+      "modified": "2026-10-15T12:33:36",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4110,7 +4124,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-12T19:41:10",
+      "modified": "2026-10-15T12:33:36",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4124,7 +4138,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-12T18:12:45",
+      "modified": "2026-10-15T12:33:36",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4138,7 +4152,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-12T17:37:49",
+      "modified": "2026-10-15T12:33:37",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4152,7 +4166,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-12T12:40:02",
+      "modified": "2026-10-15T12:33:37",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4166,7 +4180,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-12T11:10:54",
+      "modified": "2026-10-15T12:33:37",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4180,7 +4194,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-12T10:40:29",
+      "modified": "2026-10-15T12:33:38",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4194,7 +4208,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T18:09:04",
+      "modified": "2026-10-15T12:33:38",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4208,7 +4222,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T18:25:33",
+      "modified": "2026-10-15T12:33:38",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4250,7 +4264,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T18:35:52",
+      "modified": "2026-10-15T12:33:38",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4278,7 +4292,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T01:42:34",
+      "modified": "2026-10-15T12:33:39",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4292,7 +4306,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T22:06:48",
+      "modified": "2026-10-15T12:33:39",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4306,7 +4320,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T22:06:31",
+      "modified": "2026-10-15T12:33:39",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4320,7 +4334,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T22:02:35",
+      "modified": "2026-10-15T12:33:40",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4334,7 +4348,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T01:35:03",
+      "modified": "2026-10-15T12:33:40",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4348,7 +4362,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T01:25:53",
+      "modified": "2026-10-15T12:33:40",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4362,7 +4376,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T01:10:36",
+      "modified": "2026-10-15T12:33:40",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4376,7 +4390,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T01:09:53",
+      "modified": "2026-10-15T12:33:41",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4390,7 +4404,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T01:08:52",
+      "modified": "2026-10-15T12:33:41",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4404,7 +4418,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T01:01:15",
+      "modified": "2026-10-15T12:33:41",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4418,7 +4432,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T00:41:37",
+      "modified": "2026-10-15T12:33:42",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4432,7 +4446,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T00:34:58",
+      "modified": "2026-10-15T12:33:42",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4446,7 +4460,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T00:33:18",
+      "modified": "2026-10-15T12:33:42",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4460,7 +4474,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-09T00:14:17",
+      "modified": "2026-10-15T12:33:43",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4474,7 +4488,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T23:32:55",
+      "modified": "2026-10-15T12:33:43",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4488,7 +4502,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T23:30:51",
+      "modified": "2026-10-15T12:33:43",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4502,7 +4516,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T23:04:55",
+      "modified": "2026-10-15T12:33:43",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4516,7 +4530,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T23:03:55",
+      "modified": "2026-10-15T12:33:43",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4530,7 +4544,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T23:01:23",
+      "modified": "2026-10-15T12:33:44",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4544,7 +4558,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:50:56",
+      "modified": "2026-10-15T12:33:44",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4558,7 +4572,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:49:48",
+      "modified": "2026-10-15T12:33:44",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4572,7 +4586,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:42:39",
+      "modified": "2026-10-15T12:33:44",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4586,7 +4600,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:40:12",
+      "modified": "2026-10-15T12:33:45",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4600,7 +4614,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:38:06",
+      "modified": "2026-10-15T12:33:45",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4614,7 +4628,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:13:14",
+      "modified": "2026-10-15T12:33:45",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4628,7 +4642,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T12:35:21",
+      "modified": "2026-10-15T12:33:45",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4642,7 +4656,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T12:34:59",
+      "modified": "2026-10-15T12:33:45",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4656,7 +4670,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T12:34:18",
+      "modified": "2026-10-15T12:33:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4670,7 +4684,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T12:33:11",
+      "modified": "2026-10-15T12:33:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4684,7 +4698,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-06T23:41:40",
+      "modified": "2026-10-15T12:33:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4698,7 +4712,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-04T21:34:11",
+      "modified": "2026-10-15T12:33:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4754,7 +4768,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-03T18:16:28",
+      "modified": "2026-10-15T12:33:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4782,7 +4796,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-03T00:44:33",
+      "modified": "2026-10-15T12:33:47",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4796,7 +4810,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-03T00:43:04",
+      "modified": "2026-10-15T12:33:47",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4810,7 +4824,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-03T00:32:39",
+      "modified": "2026-10-15T12:33:47",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4824,7 +4838,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-03T00:54:23",
+      "modified": "2026-10-15T12:33:47",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4838,7 +4852,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-02T22:28:12",
+      "modified": "2026-10-15T12:33:47",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4852,7 +4866,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-03T15:01:04",
+      "modified": "2026-10-15T12:33:48",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4866,7 +4880,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:23:54",
+      "modified": "2026-10-15T12:33:48",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4880,7 +4894,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T15:52:22",
+      "modified": "2026-10-15T12:33:48",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4894,7 +4908,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T15:52:31",
+      "modified": "2026-10-15T12:33:48",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4908,7 +4922,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T15:52:26",
+      "modified": "2026-10-15T12:33:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4922,7 +4936,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-08T22:18:34",
+      "modified": "2026-10-15T12:33:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4936,7 +4950,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-10T15:52:33",
+      "modified": "2026-10-15T12:33:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4950,7 +4964,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-09-30T23:44:46",
+      "modified": "2026-10-15T12:33:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4964,7 +4978,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-09-24T01:25:21",
+      "modified": "2026-10-15T12:33:50",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4978,7 +4992,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-09-19T12:41:13",
+      "modified": "2026-10-15T12:33:50",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4992,7 +5006,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-09-19T02:04:27",
+      "modified": "2026-10-15T12:33:50",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

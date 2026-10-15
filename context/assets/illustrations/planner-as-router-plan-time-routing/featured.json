@@ -1,6 +1,6 @@
 {
   "slug": "planner-as-router-plan-time-routing",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:733fa4d30b4fabe4a1ff8a0a0ce3ebe6",
       "generated_at": "2026-10-01T14:14:11+00:00",
       "source_hash": "sha256:4ccb1ed6216de84da95f42687fabd2b3"
+    },
+    {
+      "revision": 2,
+      "alt_text": "An interlocking mechanical connector splitting into two conduit paths on a minimal background.",
+      "caption": "Planner-as-Router assigns a model tier to each subtask at the start of the planning phase, reducing costs by 44 percent.",
+      "title": "Planner-as-Router Modular Assembly",
+      "bytes": 1511484,
+      "sha256": "sha256:c1bf18de8adcffb4e2383e1bd29f24be"
     }
   ],
   "style": "component_assembly",
@@ -26,9 +34,9 @@
   "rationale": "The article is about a structural shift in AI agent design\u2014folding model choice into the initial plan to save costs. Since this is an abstract process shift (a single rule/gate shift), it is best represented by a physical assembly that signifies routing or assigning paths. A component assembly of an interlocking connector mechanism conveys the idea of upfront routing.",
   "cue": "assigns a cheap or smart model",
   "subject": "an interlocking mechanical connector with two routed paths",
-  "alt_text": "An interlocking mechanical connector splitting into two conduit paths on a minimal background.",
-  "caption": "Planner-as-Router assigns a model tier to each subtask at the start of the planning phase, reducing costs by 44 percent.",
-  "title": "Planner-as-Router Modular Assembly",
+  "alt_text": "Planner-As-Router. An interlocking mechanical connector splitting into two conduit paths on a minimal background.",
+  "caption": "Planner-As-Router: Folding model choice into the plan to cut costs by 44%.",
+  "title": "Planner-As-Router",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +46,8 @@
   "local_path": "context/assets/illustrations/planner-as-router-plan-time-routing/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1511484,
-  "sha256": "sha256:c1bf18de8adcffb4e2383e1bd29f24be",
+  "bytes": 999149,
+  "sha256": "sha256:1dfc880ec3d9d1814d360ab777f92c68e8918231c9df7316f6d4b77a99b10e9f",
   "source_hash": "sha256:4ccb1ed6216de84da95f42687fabd2b3",
   "source_chars": 3996,
   "task_id": "34cddf82e6ceaae851e2eb460c19631f",
@@ -56,5 +64,33 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-01T22:08:40+00:00"
+  "generated_at": "2026-10-01T22:08:40+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // COST OPTIMIZATION",
+    "title": "PLANNER-AS-ROUTER",
+    "hook": "Folding model choice into the plan to cut costs by 44%",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 10.44,
+    "target": 4.5,
+    "clutter": 0.009,
+    "region_rgb": [
+      231,
+      231,
+      226
+    ],
+    "binding_rgb": [
+      233,
+      229,
+      226
+    ],
+    "title_lines": [
+      "PLANNER-AS-ROUTER"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-01T22:08:40+00:00"
+  }
 }

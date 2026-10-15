@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T18:11:46Z",
+  "updated_at": "2026-10-15T18:41:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1931,6 +1931,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-10-15",
+      "public": false
+    },
+    {
+      "slug": "2026-10-15_freight-claim-dies-at-9-months",
+      "title": "Your Claim Dies at 9 Months",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-15",
       "public": false
     },
