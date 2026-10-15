@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T07:02:06+00:00",
+  "generated_at": "2026-10-15T07:15:24+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -165,25 +165,6 @@
       "site": "giniloh.com",
       "kind": "tool",
       "id": null,
-      "slug": "decision-intelligence",
-      "title": "Master Asset & Software TCO Calculator",
-      "url": "https://giniloh.com/calculators/decision-intelligence/",
-      "path": "/calculators/decision-intelligence/",
-      "sites_live": {
-        "giniloh.com": "/calculators/decision-intelligence/"
-      },
-      "categories": [],
-      "category_ids": [],
-      "category_slugs": [],
-      "excerpt": "Evaluate high-value business and lifestyle decisions. Compare custom codebases vs. SaaS CIAM, e-bike commutes vs. parking/rideshares, asset repair index thresholds, and tinkering time taxes.",
-      "modified": "",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "tool",
-      "id": null,
       "slug": "coffee-arbitrage",
       "title": "Home Espresso Cost-per-Use Calculator",
       "url": "https://giniloh.com/calculators/coffee-arbitrage/",
@@ -233,26 +214,6 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Calculate the hidden tinkering tax of manual workarounds and sheets vs upgrading to HubSpot CRM. Focus optimization calculator.",
-      "modified": "",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "tool",
-      "id": null,
-      "slug": "gpu-compute",
-      "title": "GPU TCO Analyzer",
-      "url": "https://giniloh.com/calculators/gpu-compute/",
-      "path": "/calculators/gpu-compute/",
-      "sites_live": {
-        "giniloh.com": "/calculators/gpu-compute/",
-        "aichieve.net": "/tools/gpu-compute/"
-      },
-      "categories": [],
-      "category_ids": [],
-      "category_slugs": [],
-      "excerpt": "Compare the TCO of building a local deep learning GPU workstation against renting cloud GPU compute instances.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -516,78 +477,6 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
-      "slug": "wage-floor-sets-robot-payback",
-      "title": "Warehouse Payback: $17.00, Not $17.95",
-      "url": "https://giniloh.com/wage-floor-sets-robot-payback/",
-      "path": "/wage-floor-sets-robot-payback/",
-      "sites_live": {
-        "giniloh.com": "/wage-floor-sets-robot-payback/",
-        "aichieve.net": "/wage-floor-sets-robot-payback/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "New York's minimum wage reaches $17.00 an hour on January 1, 2027, in the city, on Long Island and in Westchester County.",
-      "modified": "2026-10-14T19:49:17",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "your-cluster-hidden-clock",
-      "title": "Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year",
-      "url": "https://giniloh.com/your-cluster-hidden-clock/",
-      "path": "/your-cluster-hidden-clock/",
-      "sites_live": {
-        "giniloh.com": "/your-cluster-hidden-clock/",
-        "aichieve.net": "/your-cluster-hidden-clock/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Kubernetes patches its three newest minor versions, then drops each one roughly a year after it ships.",
-      "modified": "2026-10-14T19:10:08",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "prefill-decode-two-pool-gap",
-      "title": "Why Your Card Serves 1.6: The Two-Pool Gap",
-      "url": "https://giniloh.com/prefill-decode-two-pool-gap/",
-      "path": "/prefill-decode-two-pool-gap/",
-      "sites_live": {
-        "giniloh.com": "/prefill-decode-two-pool-gap/",
-        "aichieve.net": "/prefill-decode-two-pool-gap/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "One graphics processing unit (GPU) serves about 1.6 requests a second when it runs a 13-billion-parameter model by itself.",
-      "modified": "2026-10-14T18:49:44",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
       "slug": "one-approval-two-payments",
       "title": "One Approval, Two Payments: The 24-Hour Trap",
       "url": "https://giniloh.com/one-approval-two-payments/",
@@ -604,558 +493,6 @@
       ],
       "excerpt": "One paused approval answered by two workers can fire two payments.",
       "modified": "2026-10-14T18:15:14",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "gate-the-step-not-the-model",
-      "title": "Your Agent's Next Step: 11-14x Likelier to Fail",
-      "url": "https://giniloh.com/gate-the-step-not-the-model/",
-      "path": "/gate-the-step-not-the-model/",
-      "sites_live": {
-        "giniloh.com": "/gate-the-step-not-the-model/",
-        "aichieve.net": "/gate-the-step-not-the-model/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "One wrong step does not stay one mistake. In a study of 2,518 agent runs, a single wrong step made the next step roughly 11 to 14 times likelier to fail.",
-      "modified": "2026-10-14T17:41:02",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "owned-shuttles-or-rented-robots",
-      "title": "$62M Says You Never Buy Robots",
-      "url": "https://giniloh.com/owned-shuttles-or-rented-robots/",
-      "path": "/owned-shuttles-or-rented-robots/",
-      "sites_live": {
-        "giniloh.com": "/owned-shuttles-or-rented-robots/",
-        "aichieve.net": "/owned-shuttles-or-rented-robots/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Tractor Supply just spent more than $200 million to own an 865,000-square-foot automated warehouse in Idaho.",
-      "modified": "2026-10-14T12:53:52",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "flat-price-was-the-hedge",
-      "title": "Your Jira Bill Rose 10%: Memory Rose Six Times",
-      "url": "https://giniloh.com/flat-price-was-the-hedge/",
-      "path": "/flat-price-was-the-hedge/",
-      "sites_live": {
-        "giniloh.com": "/flat-price-was-the-hedge/",
-        "aichieve.net": "/flat-price-was-the-hedge/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Atlassian raised cloud prices for Jira and Confluence by 3% to 10% on 13 October.",
-      "modified": "2026-10-14T12:14:04",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "your-chip-stopped-deciding",
-      "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
-      "url": "https://giniloh.com/your-chip-stopped-deciding/",
-      "path": "/your-chip-stopped-deciding/",
-      "sites_live": {
-        "giniloh.com": "/your-chip-stopped-deciding/",
-        "aichieve.net": "/your-chip-stopped-deciding/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "Non-GPUs overtook GPUs in China for the first time in the first half of 2026: 1.016 million chips built for specific jobs against 991,000 graphics processing\u2026",
-      "modified": "2026-10-14T11:43:07",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "stale-grants-travel-the-graph",
-      "title": "Your Agent Fabric's 52.2% Blind Spot",
-      "url": "https://giniloh.com/stale-grants-travel-the-graph/",
-      "path": "/stale-grants-travel-the-graph/",
-      "sites_live": {
-        "giniloh.com": "/stale-grants-travel-the-graph/",
-        "aichieve.net": "/stale-grants-travel-the-graph/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Two measurements landed a day apart: one left 13 capability-steps reachable after their last justified use, the other lifted disclosure to an agent the\u2026",
-      "modified": "2026-10-14T11:14:09",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "retry-permission-leaves-the-caller",
-      "title": "Retry Budgets Fail: Agents Retry 60 of 80 Anyway",
-      "url": "https://giniloh.com/retry-permission-leaves-the-caller/",
-      "path": "/retry-permission-leaves-the-caller/",
-      "sites_live": {
-        "giniloh.com": "/retry-permission-leaves-the-caller/",
-        "aichieve.net": "/retry-permission-leaves-the-caller/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Uber cut the worst retry storm its network can produce from 25 hops to three by taking the decision to retry away from the caller.",
-      "modified": "2026-10-14T10:41:06",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "hour-14-recovery-wall",
-      "title": "Dock Overtime: Your Real 14-Hour Cost",
-      "url": "https://giniloh.com/hour-14-recovery-wall/",
-      "path": "/hour-14-recovery-wall/",
-      "sites_live": {
-        "giniloh.com": "/hour-14-recovery-wall/",
-        "aichieve.net": "/hour-14-recovery-wall/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Two hours before a delayed container clears the gate, the driver's day is already spent.",
-      "modified": "2026-10-13T20:16:13",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "build-wait-payback-threshold",
-      "title": "Silent Build Wait: 90 Seconds, Not 11 Minutes",
-      "url": "https://giniloh.com/build-wait-payback-threshold/",
-      "path": "/build-wait-payback-threshold/",
-      "sites_live": {
-        "giniloh.com": "/build-wait-payback-threshold/",
-        "aichieve.net": "/build-wait-payback-threshold/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "An outside lab ran a standard graphics test on two work chips, where a 32-core chip finished in five and a half minutes and a 64-core chip took exactly four\u2026",
-      "modified": "2026-10-13T19:44:11",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "ai-coding-seats-measure-or-renew",
-      "title": "AI Coding Seats: The 75-Point Gap",
-      "url": "https://giniloh.com/ai-coding-seats-measure-or-renew/",
-      "path": "/ai-coding-seats-measure-or-renew/",
-      "sites_live": {
-        "giniloh.com": "/ai-coding-seats-measure-or-renew/",
-        "aichieve.net": "/ai-coding-seats-measure-or-renew/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "Two random trials of AI coding seats sit about 75 points apart. In one, GitHub measured a group finishing a task 55.8% faster with its Copilot assistant.",
-      "modified": "2026-10-13T18:39:21",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "remediator-recovers-46-percent",
-      "title": "Your Remediator Recovers 46.67%: The Silent Regression",
-      "url": "https://giniloh.com/remediator-recovers-46-percent/",
-      "path": "/remediator-recovers-46-percent/",
-      "sites_live": {
-        "giniloh.com": "/remediator-recovers-46-percent/",
-        "aichieve.net": "/remediator-recovers-46-percent/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Self-healing tools now grade their own work, and the scores clash.",
-      "modified": "2026-10-13T18:09:53",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "100-case-eval-925-coverage",
-      "title": "Your 100-Case Eval: 92.5% Coverage, Not 95%",
-      "url": "https://giniloh.com/100-case-eval-925-coverage/",
-      "path": "/100-case-eval-925-coverage/",
-      "sites_live": {
-        "giniloh.com": "/100-case-eval-925-coverage/",
-        "aichieve.net": "/100-case-eval-925-coverage/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Your 100-case eval prints one number. If it prints a bar at all, it calls that bar 95%.",
-      "modified": "2026-10-13T17:38:59",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "shippers-stuck-in-the-gap",
-      "title": "49.9% On Time: Shippers Stuck in the Gap",
-      "url": "https://giniloh.com/shippers-stuck-in-the-gap/",
-      "path": "/shippers-stuck-in-the-gap/",
-      "sites_live": {
-        "giniloh.com": "/shippers-stuck-in-the-gap/",
-        "aichieve.net": "/shippers-stuck-in-the-gap/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Half of the world's container ships missed their August schedules, dropping the global on-time rate to 49.9%.",
-      "modified": "2026-10-13T13:17:14",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "your-32gb-card-gone",
-      "title": "Your 32GB Card, Gone: 41% Memory Hike",
-      "url": "https://giniloh.com/your-32gb-card-gone/",
-      "path": "/your-32gb-card-gone/",
-      "sites_live": {
-        "giniloh.com": "/your-32gb-card-gone/",
-        "aichieve.net": "/your-32gb-card-gone/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "Nvidia has reportedly stopped making the only consumer graphics card with 32 gigabytes (GB) of video memory.",
-      "modified": "2026-10-13T12:44:17",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "aws-cannot-restore-bahrain",
-      "title": "AWS Cannot Restore Bahrain: 144 Services Lost",
-      "url": "https://giniloh.com/aws-cannot-restore-bahrain/",
-      "path": "/aws-cannot-restore-bahrain/",
-      "sites_live": {
-        "giniloh.com": "/aws-cannot-restore-bahrain/",
-        "aichieve.net": "/aws-cannot-restore-bahrain/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "Amazon Web Services (AWS) cannot give customers their data back from its Middle East (Bahrain) region.",
-      "modified": "2026-10-13T11:43:02",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "rack-ride-through-two-second-duty",
-      "title": "Right Locally, Wrong by 3.8 GW",
-      "url": "https://giniloh.com/rack-ride-through-two-second-duty/",
-      "path": "/rack-ride-through-two-second-duty/",
-      "sites_live": {
-        "giniloh.com": "/rack-ride-through-two-second-duty/",
-        "aichieve.net": "/rack-ride-through-two-second-duty/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "On July 22, a power line in northern Virginia failed and cleared exactly as it should.",
-      "modified": "2026-10-13T11:19:52",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-failures-tests-stayed-green",
-      "title": "70% of Agent Failures: Your Tests Stayed Green",
-      "url": "https://giniloh.com/agent-failures-tests-stayed-green/",
-      "path": "/agent-failures-tests-stayed-green/",
-      "sites_live": {
-        "giniloh.com": "/agent-failures-tests-stayed-green/",
-        "aichieve.net": "/agent-failures-tests-stayed-green/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Roughly 70% of agent failures in a live runtime were first caught by a human reading the product, while thousands of tests stayed green.",
-      "modified": "2026-10-13T10:44:57",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "slow-movers-hold-your-stock",
-      "title": "Ops Leaders: Why 60.7% of Stock Hides Costs",
-      "url": "https://giniloh.com/slow-movers-hold-your-stock/",
-      "path": "/slow-movers-hold-your-stock/",
-      "sites_live": {
-        "giniloh.com": "/slow-movers-hold-your-stock/",
-        "aichieve.net": "/slow-movers-hold-your-stock/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "The two slowest classes of stock-keeping units (SKUs) are 67.76% of the items on file in one warehouse study.",
-      "modified": "2026-10-12T19:41:10",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "ai-incident-clock-4-hours-not-15-days",
-      "title": "Your AI Incident Clock: 4 Hours, Not 15 Days",
-      "url": "https://giniloh.com/ai-incident-clock-4-hours-not-15-days/",
-      "path": "/ai-incident-clock-4-hours-not-15-days/",
-      "sites_live": {
-        "giniloh.com": "/ai-incident-clock-4-hours-not-15-days/",
-        "aichieve.net": "/ai-incident-clock-4-hours-not-15-days/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "The AI Act's 15-day serious-incident report is the vendor's filing and starts in December 2027. The clocks an enterprise has to meet are 72, 24 and 4 hours.",
-      "modified": "2026-10-12T18:12:45",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-timeout-false-alarm-budget",
-      "title": "Agent Timeouts: Pick 0.1%, Not a Round Number",
-      "url": "https://giniloh.com/agent-timeout-false-alarm-budget/",
-      "path": "/agent-timeout-false-alarm-budget/",
-      "sites_live": {
-        "giniloh.com": "/agent-timeout-false-alarm-budget/",
-        "aichieve.net": "/agent-timeout-false-alarm-budget/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Amazon sets a call timeout from an accepted false-timeout rate of 0.1%, then reads the downstream p99.9. Most agent stacks pick one round number instead.",
-      "modified": "2026-10-12T17:37:49",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "air-freight-wont-price-a-year",
-      "title": "60% Air Deals: Your Stock Math Breaks",
-      "url": "https://giniloh.com/air-freight-wont-price-a-year/",
-      "path": "/air-freight-wont-price-a-year/",
-      "sites_live": {
-        "giniloh.com": "/air-freight-wont-price-a-year/",
-        "aichieve.net": "/air-freight-wont-price-a-year/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "60% of new air capacity deals now run three months or less, as warehousing capacity contracts at its fastest rate since March 2022.",
-      "modified": "2026-10-12T12:40:02",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "kill-switch-misses-half-your-agents",
-      "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
-      "url": "https://giniloh.com/kill-switch-misses-half-your-agents/",
-      "path": "/kill-switch-misses-half-your-agents/",
-      "sites_live": {
-        "giniloh.com": "/kill-switch-misses-half-your-agents/",
-        "aichieve.net": "/kill-switch-misses-half-your-agents/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "One in three firms watched staff skip the AI approval queue as too slow. The fix that shipped in September misses half the agents it was built to stop.",
-      "modified": "2026-10-12T11:10:54",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "one-skill-too-many-green-test",
-      "title": "270 Attacks: Your Green Tests Are Blind",
-      "url": "https://giniloh.com/one-skill-too-many-green-test/",
-      "path": "/one-skill-too-many-green-test/",
-      "sites_live": {
-        "giniloh.com": "/one-skill-too-many-green-test/",
-        "aichieve.net": "/one-skill-too-many-green-test/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Two research groups, a day apart, ran 6,368 coding-agent runs and 270 attack cases and found the same blind spot.",
-      "modified": "2026-10-12T10:40:29",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "why-importers-forfeit-duty-refunds",
-      "title": "Why Importers Forfeit 99% Duty Refunds",
-      "url": "https://giniloh.com/why-importers-forfeit-duty-refunds/",
-      "path": "/why-importers-forfeit-duty-refunds/",
-      "sites_live": {
-        "giniloh.com": "/why-importers-forfeit-duty-refunds/",
-        "aichieve.net": "/why-importers-forfeit-duty-refunds/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Drawback refunds up to 99% of the duty paid on imports that are later exported or destroyed. That one rule changes the math of moving a factory.",
-      "modified": "2026-10-10T18:09:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1186,30 +523,6 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
-      "slug": "nearshoring-doesnt-move-the-trade-case",
-      "title": "Nearshoring Doesn't Move the Trade Case",
-      "url": "https://giniloh.com/nearshoring-doesnt-move-the-trade-case/",
-      "path": "/nearshoring-doesnt-move-the-trade-case/",
-      "sites_live": {
-        "giniloh.com": "/nearshoring-doesnt-move-the-trade-case/",
-        "aichieve.net": "/nearshoring-doesnt-move-the-trade-case/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S.",
-      "modified": "2026-10-10T18:25:33",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
       "slug": "home-assistant-cloud-rename-hardware-rent",
       "title": "Why Home Assistant Renamed Its Cloud",
       "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/",
@@ -1226,102 +539,6 @@
       ],
       "excerpt": "The maker of Home Assistant announced a rename of its paid remote service, effective December 2. Home Assistant Cloud becomes Home Assistant Link.",
       "modified": "2026-10-10T18:25:28",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "kv-cache-is-the-concurrency-ceiling",
-      "title": "Your GPU Runs Out of Cache Before It Runs Out of Math",
-      "url": "https://giniloh.com/kv-cache-is-the-concurrency-ceiling/",
-      "path": "/kv-cache-is-the-concurrency-ceiling/",
-      "sites_live": {
-        "giniloh.com": "/kv-cache-is-the-concurrency-ceiling/",
-        "aichieve.net": "/kv-cache-is-the-concurrency-ceiling/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "A graphics processing unit (GPU) serving a 7-billion-parameter model at 16-bit precision holds about 14GB of weights in memory before it answers a single\u2026",
-      "modified": "2026-10-10T01:57:54",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-audit-trail-not-evidence",
-      "title": "An Agent's Logs Aren't Evidence: What to Capture, and How Long to Keep It",
-      "url": "https://giniloh.com/agent-audit-trail-not-evidence/",
-      "path": "/agent-audit-trail-not-evidence/",
-      "sites_live": {
-        "giniloh.com": "/agent-audit-trail-not-evidence/",
-        "aichieve.net": "/agent-audit-trail-not-evidence/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "An agent's log is only proof if it can replay the exact choice.",
-      "modified": "2026-10-10T01:57:19",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-      "title": "$915M Illusion: Your AI Judge Moves",
-      "url": "https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/",
-      "path": "/buying-ai-quality-when-the-score-belongs-to-the-judge/",
-      "sites_live": {
-        "giniloh.com": "/buying-ai-quality-when-the-score-belongs-to-the-judge/",
-        "aichieve.net": "/buying-ai-quality-when-the-score-belongs-to-the-judge/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "In AI, the test is another black box that moves every time you update its prompt \u2014 and Dynatrace paid $915 million for the most widely used one.",
-      "modified": "2026-10-10T18:35:52",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
-      "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying",
-      "url": "https://giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
-      "path": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
-      "sites_live": {
-        "giniloh.com": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
-        "aichieve.net": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "37signals cut its cloud bill from $3.2 million to $1.3 million a year by moving seven apps off Amazon and onto its own gear.",
-      "modified": "2026-10-10T01:54:19",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1352,78 +569,6 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
-      "slug": "diesel-620-electric-freight-certificate-gap",
-      "title": "Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight",
-      "url": "https://giniloh.com/diesel-620-electric-freight-certificate-gap/",
-      "path": "/diesel-620-electric-freight-certificate-gap/",
-      "sites_live": {
-        "giniloh.com": "/diesel-620-electric-freight-certificate-gap/",
-        "aichieve.net": "/diesel-620-electric-freight-certificate-gap/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "U.S. on-highway diesel fell to $6.199 a gallon the week of Oct. 5, dropping 33 cents in two weeks.",
-      "modified": "2026-10-10T01:42:34",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "control-tower-silent-exception",
-      "title": "Will Your Control Tower Auto-Resolve the Theft It Can't See?",
-      "url": "https://giniloh.com/control-tower-silent-exception/",
-      "path": "/control-tower-silent-exception/",
-      "sites_live": {
-        "giniloh.com": "/control-tower-silent-exception/",
-        "aichieve.net": "/control-tower-silent-exception/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "A load stolen by a fake carrier never shows up as a late load.",
-      "modified": "2026-10-09T22:06:48",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "you-think-youre-governing-your-agents",
-      "title": "You Think You're Governing Your AI Agents. The Data Says You're Not.",
-      "url": "https://giniloh.com/you-think-youre-governing-your-agents/",
-      "path": "/you-think-youre-governing-your-agents/",
-      "sites_live": {
-        "giniloh.com": "/you-think-youre-governing-your-agents/",
-        "aichieve.net": "/you-think-youre-governing-your-agents/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "Stolen machine identities just became the top way hackers break into companies.",
-      "modified": "2026-10-09T22:06:31",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
       "slug": "post-termination-option-clock-tax",
       "title": "Options Trap: Your 26% AMT Bill",
       "url": "https://giniloh.com/post-termination-option-clock-tax/",
@@ -1440,510 +585,6 @@
       ],
       "excerpt": "Three months after a job ends, an incentive stock option loses its tax status \u2014 the alternative minimum tax on the exercise spread can outweigh the strike.",
       "modified": "2026-10-10T16:51:58",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "last-mile-carbon-number-is-a-rate-table",
-      "title": "Your Last-Mile Carbon Number Is a Rate Table",
-      "url": "https://giniloh.com/last-mile-carbon-number-is-a-rate-table/",
-      "path": "/last-mile-carbon-number-is-a-rate-table/",
-      "sites_live": {
-        "giniloh.com": "/last-mile-carbon-number-is-a-rate-table/",
-        "aichieve.net": "/last-mile-carbon-number-is-a-rate-table/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "A last-mile carbon claim is activity times a published factor, and two federal agencies publish two different grid factors for the same kilowatt-hour.",
-      "modified": "2026-10-09T22:02:35",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "azure-control-plane-single-point-of-failure",
-      "title": "Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure",
-      "url": "https://giniloh.com/azure-control-plane-single-point-of-failure/",
-      "path": "/azure-control-plane-single-point-of-failure/",
-      "sites_live": {
-        "giniloh.com": "/azure-control-plane-single-point-of-failure/",
-        "aichieve.net": "/azure-control-plane-single-point-of-failure/"
-      },
-      "categories": [
-        "Mental Models & Strategy"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "mental-models-strategy"
-      ],
-      "excerpt": "At 10:03 Coordinated Universal Time (UTC) on 29 September 2026, Azure OpenAI Service broke in Sweden Central. It stayed down for six hours.",
-      "modified": "2026-10-09T01:35:03",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "local-ai-payback-cloud-gpu-spread",
-      "title": "Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways",
-      "url": "https://giniloh.com/local-ai-payback-cloud-gpu-spread/",
-      "path": "/local-ai-payback-cloud-gpu-spread/",
-      "sites_live": {
-        "giniloh.com": "/local-ai-payback-cloud-gpu-spread/",
-        "aichieve.net": "/local-ai-payback-cloud-gpu-spread/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "The graphics processing unit (GPU) that local artificial intelligence (AI) teams actually buy just shot up in price.",
-      "modified": "2026-10-09T01:25:53",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "fine-tune-vs-rent-by-token",
-      "title": "Fine-Tune or Rent: The Denominator Decides Your Break-Even",
-      "url": "https://giniloh.com/fine-tune-vs-rent-by-token/",
-      "path": "/fine-tune-vs-rent-by-token/",
-      "sites_live": {
-        "giniloh.com": "/fine-tune-vs-rent-by-token/",
-        "aichieve.net": "/fine-tune-vs-rent-by-token/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "Hugging Face's guide says you can fine-tune a 33-billion-parameter model on one 24-gigabyte graphics card.",
-      "modified": "2026-10-09T01:10:36",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "demurrage-invoice-30-day-clocks",
-      "title": "A Late Container's Bill Carries Two 30-Day Clocks",
-      "url": "https://giniloh.com/demurrage-invoice-30-day-clocks/",
-      "path": "/demurrage-invoice-30-day-clocks/",
-      "sites_live": {
-        "giniloh.com": "/demurrage-invoice-30-day-clocks/",
-        "aichieve.net": "/demurrage-invoice-30-day-clocks/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "A late fee for a delayed shipping container \u2014 demurrage, in trade terms \u2014 now carries two strict 30-day clocks.",
-      "modified": "2026-10-09T01:09:53",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-memory-tiering-l1-l4",
-      "title": "Long Context Is Not Memory: Why AI Agents Need Tiered State",
-      "url": "https://giniloh.com/agent-memory-tiering-l1-l4/",
-      "path": "/agent-memory-tiering-l1-l4/",
-      "sites_live": {
-        "giniloh.com": "/agent-memory-tiering-l1-l4/",
-        "aichieve.net": "/agent-memory-tiering-l1-l4/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "When Chroma engineers tested 18 large language models (LLM) across eight lengths, scores dropped as the prompts grew \u2014 even on simple tasks.",
-      "modified": "2026-10-09T01:08:52",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "fuel-surcharge-peg-mpg-audit",
-      "title": "Your Fuel Surcharge Hides Three Negotiated Numbers",
-      "url": "https://giniloh.com/fuel-surcharge-peg-mpg-audit/",
-      "path": "/fuel-surcharge-peg-mpg-audit/",
-      "sites_live": {
-        "giniloh.com": "/fuel-surcharge-peg-mpg-audit/",
-        "aichieve.net": "/fuel-surcharge-peg-mpg-audit/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "The price of diesel does not set your freight fuel bill.",
-      "modified": "2026-10-09T01:01:15",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-reliability-pass-k-not-one-green-run",
-      "title": "One Green Run Is Not Reliability: Gating Agents on Pass^k",
-      "url": "https://giniloh.com/agent-reliability-pass-k-not-one-green-run/",
-      "path": "/agent-reliability-pass-k-not-one-green-run/",
-      "sites_live": {
-        "giniloh.com": "/agent-reliability-pass-k-not-one-green-run/",
-        "aichieve.net": "/agent-reliability-pass-k-not-one-green-run/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "The best tool-using Artificial Intelligence (AI) agents fail more than half the time, but normal testing hides the flaws.",
-      "modified": "2026-10-09T00:41:37",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "fed-rate-hike-inverts-working-capital-trap",
-      "title": "Higher Rates Meet Historically Lean Inventories",
-      "url": "https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/",
-      "path": "/fed-rate-hike-inverts-working-capital-trap/",
-      "sites_live": {
-        "giniloh.com": "/fed-rate-hike-inverts-working-capital-trap/",
-        "aichieve.net": "/fed-rate-hike-inverts-working-capital-trap/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "The Federal Reserve raised its main interest rate by a quarter point to a range of 3-3/4 to 4 percent, its first hike in three years.",
-      "modified": "2026-10-09T00:34:58",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "cache-boundary-decides-input-bill",
-      "title": "Where the Prompt Breaks Decides the AI Bill",
-      "url": "https://giniloh.com/cache-boundary-decides-input-bill/",
-      "path": "/cache-boundary-decides-input-bill/",
-      "sites_live": {
-        "giniloh.com": "/cache-boundary-decides-input-bill/",
-        "aichieve.net": "/cache-boundary-decides-input-bill/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "A research team ran the same agent workload through OpenAI, Anthropic, and Google and found that prompt caching cut application programming interface (API)\u2026",
-      "modified": "2026-10-09T00:33:18",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-memory-poisoning-write-path",
-      "title": "Agent Memory Poisoning: Guard the Write, Not the Prompt",
-      "url": "https://giniloh.com/agent-memory-poisoning-write-path/",
-      "path": "/agent-memory-poisoning-write-path/",
-      "sites_live": {
-        "giniloh.com": "/agent-memory-poisoning-write-path/",
-        "aichieve.net": "/agent-memory-poisoning-write-path/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "One simple text file is enough to take over a coding agent's memory.",
-      "modified": "2026-10-09T00:14:17",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "sla-credit-is-not-insurance",
-      "title": "Why Cloud Uptime SLAs Are Not Insurance",
-      "url": "https://giniloh.com/sla-credit-is-not-insurance/",
-      "path": "/sla-credit-is-not-insurance/",
-      "sites_live": {
-        "giniloh.com": "/sla-credit-is-not-insurance/",
-        "aichieve.net": "/sla-credit-is-not-insurance/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Amazon hands back 10% of the monthly bill when a cloud region drops below 99.99% uptime, but it takes a full month below 95% to see a 100% credit.",
-      "modified": "2026-10-08T23:32:55",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "retry-is-the-failure-amplifier",
-      "title": "The Retry Is the Bug: An Agent's Costliest Failure Mode",
-      "url": "https://giniloh.com/retry-is-the-failure-amplifier/",
-      "path": "/retry-is-the-failure-amplifier/",
-      "sites_live": {
-        "giniloh.com": "/retry-is-the-failure-amplifier/",
-        "aichieve.net": "/retry-is-the-failure-amplifier/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "A corrupted value sent a ledger agent into 15,000 retries and a $50,000 bill. A 25,930-episode study shows the same retry duplicates payments while the agent\u2026",
-      "modified": "2026-10-08T23:30:51",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "rack-power-density-ceiling-build-before-you-buy",
-      "title": "The 40 kW Line: Why the AI Rack Is a Building Project",
-      "url": "https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/",
-      "path": "/rack-power-density-ceiling-build-before-you-buy/",
-      "sites_live": {
-        "giniloh.com": "/rack-power-density-ceiling-build-before-you-buy/",
-        "aichieve.net": "/rack-power-density-ceiling-build-before-you-buy/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Data centers now report peak rack power of 30 kilowatts (kW) or more. Dense artificial intelligence (AI) racks push past 100 kW.",
-      "modified": "2026-10-08T23:04:55",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "inventory-carrying-cost-rate",
-      "title": "Inventory Carrying Cost Is 20\u201330% a Year, Not Your 7% Borrowing Rate",
-      "url": "https://giniloh.com/inventory-carrying-cost-rate/",
-      "path": "/inventory-carrying-cost-rate/",
-      "sites_live": {
-        "giniloh.com": "/inventory-carrying-cost-rate/",
-        "aichieve.net": "/inventory-carrying-cost-rate/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "The true cost to hold a dollar of stock runs 20% to 30% a year, yet most models load only the 7.00% bank prime rate.",
-      "modified": "2026-10-08T23:03:55",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "vendor-replacement-ai-ceiling",
-      "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just Won't Run It",
-      "url": "https://giniloh.com/vendor-replacement-ai-ceiling/",
-      "path": "/vendor-replacement-ai-ceiling/",
-      "sites_live": {
-        "giniloh.com": "/vendor-replacement-ai-ceiling/",
-        "aichieve.net": "/vendor-replacement-ai-ceiling/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Developers are rushing to write software that replaces paid tools, but barely half trust artificial intelligence (AI) to do the heavy lifting.",
-      "modified": "2026-10-08T23:01:23",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-tool-count-ceiling",
-      "title": "The Tool-List Budget: How Many Tools One Agent Can Hold",
-      "url": "https://giniloh.com/agent-tool-count-ceiling/",
-      "path": "/agent-tool-count-ceiling/",
-      "sites_live": {
-        "giniloh.com": "/agent-tool-count-ceiling/",
-        "aichieve.net": "/agent-tool-count-ceiling/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Giving one AI agent a massive tool list crashes its accuracy to roughly one pick in seven.",
-      "modified": "2026-10-08T22:50:56",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "automation-payback-splits-by-sku-geometry",
-      "title": "Amazon Builds the Robots; Walmart Builds for What They Can't Lift",
-      "url": "https://giniloh.com/automation-payback-splits-by-sku-geometry/",
-      "path": "/automation-payback-splits-by-sku-geometry/",
-      "sites_live": {
-        "giniloh.com": "/automation-payback-splits-by-sku-geometry/",
-        "aichieve.net": "/automation-payback-splits-by-sku-geometry/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear that runs its shipping network.",
-      "modified": "2026-10-08T22:49:48",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "durable-execution-not-a-transaction",
-      "title": "Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts",
-      "url": "https://giniloh.com/durable-execution-not-a-transaction/",
-      "path": "/durable-execution-not-a-transaction/",
-      "sites_live": {
-        "giniloh.com": "/durable-execution-not-a-transaction/",
-        "aichieve.net": "/durable-execution-not-a-transaction/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely knows if it can undo a mistake.",
-      "modified": "2026-10-08T22:42:39",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "gpu-hour-price-set-by-memory",
-      "title": "The Price of a GPU-Hour Is Now Set by Memory, Not Compute",
-      "url": "https://giniloh.com/gpu-hour-price-set-by-memory/",
-      "path": "/gpu-hour-price-set-by-memory/",
-      "sites_live": {
-        "giniloh.com": "/gpu-hour-price-set-by-memory/",
-        "aichieve.net": "/gpu-hour-price-set-by-memory/"
-      },
-      "categories": [
-        "Major Purchases & Assets"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "major-purchases-assets"
-      ],
-      "excerpt": "Cloud provider Nebius raised its hourly rate for an Nvidia H100 chip from $3.85 to $4.50 on October 1, 2026, while pushing the newer B200 to $8.50.",
-      "modified": "2026-10-08T22:40:12",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "forecast-accuracy-is-not-shock-protection",
-      "title": "Forecast Accuracy: A 32% Boost Will Not Stop El Ni\u00f1o",
-      "url": "https://giniloh.com/forecast-accuracy-is-not-shock-protection/",
-      "path": "/forecast-accuracy-is-not-shock-protection/",
-      "sites_live": {
-        "giniloh.com": "/forecast-accuracy-is-not-shock-protection/",
-        "aichieve.net": "/forecast-accuracy-is-not-shock-protection/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15 of 15 live rollouts, cutting errors by 32% on average.",
-      "modified": "2026-10-08T22:38:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1974,294 +615,6 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
-      "slug": "safety-stock-forecast-error-not-demand-noise",
-      "title": "Safety Stock Sizing: Why Your Buffer Uses the Wrong Number",
-      "url": "https://giniloh.com/safety-stock-forecast-error-not-demand-noise/",
-      "path": "/safety-stock-forecast-error-not-demand-noise/",
-      "sites_live": {
-        "giniloh.com": "/safety-stock-forecast-error-not-demand-noise/",
-        "aichieve.net": "/safety-stock-forecast-error-not-demand-noise/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Feed a safety-stock formula the standard spread of demand, and it builds a much bigger buffer than the forecast actually needs.",
-      "modified": "2026-10-08T22:13:14",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "warehouse-pick-error-tax-payback",
-      "title": "A 1% Mispick Rate Is a Seven-Figure Line Item",
-      "url": "https://giniloh.com/warehouse-pick-error-tax-payback/",
-      "path": "/warehouse-pick-error-tax-payback/",
-      "sites_live": {
-        "giniloh.com": "/warehouse-pick-error-tax-payback/",
-        "aichieve.net": "/warehouse-pick-error-tax-payback/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "A single wrong pick looks like a rounding error until a team prices the annual leak.",
-      "modified": "2026-10-08T12:35:21",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-failure-topology-not-model",
-      "title": "Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model",
-      "url": "https://giniloh.com/agent-failure-topology-not-model/",
-      "path": "/agent-failure-topology-not-model/",
-      "sites_live": {
-        "giniloh.com": "/agent-failure-topology-not-model/",
-        "aichieve.net": "/agent-failure-topology-not-model/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "When an agent stack fails, the common reflex is to buy a bigger model. Two new papers point to a different fix: the shape of the system.",
-      "modified": "2026-10-08T12:34:59",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "token-price-record-low-budget-overrun",
-      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn't.",
-      "url": "https://giniloh.com/token-price-record-low-budget-overrun/",
-      "path": "/token-price-record-low-budget-overrun/",
-      "sites_live": {
-        "giniloh.com": "/token-price-record-low-budget-overrun/",
-        "aichieve.net": "/token-price-record-low-budget-overrun/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Silicon Data's token-price index just printed $0.96 per million tokens \u2014 the first reading under a dollar and the cheapest rate on record.",
-      "modified": "2026-10-08T12:34:18",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "freight-scale-bet-vs-contract-duration",
-      "title": "The $5.8 Billion Freight Bet Meets a Market That Won't Commit",
-      "url": "https://giniloh.com/freight-scale-bet-vs-contract-duration/",
-      "path": "/freight-scale-bet-vs-contract-duration/",
-      "sites_live": {
-        "giniloh.com": "/freight-scale-bet-vs-contract-duration/",
-        "aichieve.net": "/freight-scale-bet-vs-contract-duration/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "C.H. Robinson is spending $5.8 billion to build the densest freight network in North America.",
-      "modified": "2026-10-08T12:33:11",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agent-safety-gate-moves-to-verified-state",
-      "title": "The Agent Safety Gate Moves to Verified State",
-      "url": "https://giniloh.com/agent-safety-gate-moves-to-verified-state/",
-      "path": "/agent-safety-gate-moves-to-verified-state/",
-      "sites_live": {
-        "giniloh.com": "/agent-safety-gate-moves-to-verified-state/",
-        "aichieve.net": "/agent-safety-gate-moves-to-verified-state/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "An \\\"approved\\\" AI action no longer means a safe result. Say an agent changes a bill to pay it.",
-      "modified": "2026-10-06T23:41:40",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost",
-      "title": "The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost",
-      "url": "https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-      "path": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-      "sites_live": {
-        "giniloh.com": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
-        "aichieve.net": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "A product that costs $100 at a factory in China lands in the US at $136. The same item built for $108 in Mexico lands at just $110.",
-      "modified": "2026-10-04T21:34:11",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors",
-      "title": "CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor\u2019s Spreadsheet:",
-      "url": "https://giniloh.com/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/",
-      "path": "/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/",
-      "sites_live": {
-        "giniloh.com": "/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/",
-        "aichieve.net": "/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/"
-      },
-      "categories": [
-        "Business Automation & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "business-automation-operations"
-      ],
-      "excerpt": "Every year, logistics leaders approve multimillion-dollar robotics deals based on a spreadsheet built by the vendor selling the hardware. But warehouse automation cost is rarely what the quote promises. Hidden maintenance, fully loaded labor, integration fees, and 2026 Section 179 phase-outs can stretch a claimed 14-month payback to 41 months. CaseProof is the buyer-side audit engine that re-runs vendor proposals against your operating reality\u2014normalizing capex, lease, and RaaS bids into one after-tax cash model, attributing every month of payback variance, and flagging unstated lines before you sign. It delivers a payback waterfall, year-by-year cash schedule, ranked confirm-in-writing ledger, and board-ready decision pack in minutes. Before you commit seven figures, audit the math yourself. Launch CaseProof now to see the true warehouse automation cost\u2014for less than ten dollars.",
-      "modified": "2026-10-04T18:30:02",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "parcelproof-stop-bleeding-28-on-carrier-invoices",
-      "title": "ParcelProof: Stop Bleeding 2\u20138% on Carrier Invoices",
-      "url": "https://giniloh.com/parcelproof-stop-bleeding-28-on-carrier-invoices/",
-      "path": "/parcelproof-stop-bleeding-28-on-carrier-invoices/",
-      "sites_live": {
-        "giniloh.com": "/parcelproof-stop-bleeding-28-on-carrier-invoices/",
-        "aichieve.net": "/parcelproof-stop-bleeding-28-on-carrier-invoices/"
-      },
-      "categories": [
-        "Business Automation & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "business-automation-operations"
-      ],
-      "excerpt": "Every week, parcel carriers quietly invoice ecommerce brands and 3PLs for phantom dimensional weight, unearned accessorial surcharges, and missed delivery guarantees. By the time accounts payable reviews the billing file, the 21-to-30-day dispute window has already slammed shut. Here is how ParcelProof puts cash back into shippers' accounts by automating carrier invoice reconciliation with deterministic, verifiable proof.",
-      "modified": "2026-10-04T16:45:36",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "facturgate-the-deterministic-pre-send-gate-converter-for-european-e",
-      "title": "FacturGate: The Deterministic Pre-Send Gate & Converter for European E-Invoicing (EN 16931)",
-      "url": "https://giniloh.com/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/",
-      "path": "/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/",
-      "sites_live": {
-        "giniloh.com": "/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/",
-        "aichieve.net": "/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/"
-      },
-      "categories": [
-        "Business Automation & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "business-automation-operations"
-      ],
-      "excerpt": "European e-invoicing regulations have converted accounts receivable into an uncompromising algorithmic gatekeeper, where a single \u20ac0.01 calculation variance halts cash collection instantly. FacturGate is a deterministic, client-side pre-send validation gate and format converter that intercepts defective invoice payloads, audits them against 223 Schematron business rules and domestic CIUS overlays, balances totals to the exact cent, and emits compliant Factur-X (CII) and UBL 2.1 artifacts before transmissions hit government tax firewalls.",
-      "modified": "2026-10-04T15:06:41",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "tariff-split-reshoring-heavy-half",
-      "title": "The Tariff Split in Two \u2014 Reshoring Took the Heavy Half",
-      "url": "https://giniloh.com/tariff-split-reshoring-heavy-half/",
-      "path": "/tariff-split-reshoring-heavy-half/",
-      "sites_live": {
-        "giniloh.com": "/tariff-split-reshoring-heavy-half/",
-        "aichieve.net": "/tariff-split-reshoring-heavy-half/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "On September 28, Washington advised cutting trade taxes on $60 billion of basic goods like toys and home items.",
-      "modified": "2026-10-03T18:16:28",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "stripe-accounting-software-solving-the-payout-black-box-with",
-      "title": "Stripe Accounting Software: Solving the Payout Black Box with LedgerLink",
-      "url": "https://giniloh.com/stripe-accounting-software-solving-the-payout-black-box-with/",
-      "path": "/stripe-accounting-software-solving-the-payout-black-box-with/",
-      "sites_live": {
-        "giniloh.com": "/stripe-accounting-software-solving-the-payout-black-box-with/",
-        "aichieve.net": "/stripe-accounting-software-solving-the-payout-black-box-with/"
-      },
-      "categories": [
-        "Business Automation & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "business-automation-operations"
-      ],
-      "excerpt": "When Stripe deposits funds into your bank account, it lands as a single net lump sum\u2014such as $14,250.40\u2014masking gross billings, interchange fees, customer refunds, and dispute reserves. Booking these net deposits directly as sales understates top-line revenue, conceals operating expenses, and violates statutory accounting standards like ASC 606 and IFRS 15. Meet LedgerLink (https://apps.giniloh.com/ledgerlink)\u2014a specialized, deterministic financial reconciliation utility that automatically decomposes netted Stripe payouts into categorized double-entry General Ledger (GL) journal lines. Strict Mathematical Invariant: The engine (stripeRecon.ts) enforces a zero-tolerance invariant where total debits and credits balance down to the exact cent, flagging any variance immediately. Automated GL Categorization: Cleans and sorts transactions into standard double-entry rows including Revenue, Stripe Fees, Refunds, and Chargebacks. Zero-Trust Privacy: Run calculations locally in your browser via JSON exports, or fetch directly from Stripe using read-only restricted keys (rk_\u2026) while blocking master secret keys (sk_\u2026). Accounting Software & Agent Ready: Generates pre-formatted CSV imports for QuickBooks Online and Xero, and exposes the reconcile_stripe_payout tool via WebMCP for autonomous AI accounting agents.",
-      "modified": "2026-10-04T15:07:11",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
       "slug": "moss-landing-burns-again-homeowners-become-the-grid",
       "title": "Moss Landing Burns Again: Homeowners Become the Grid",
       "url": "https://giniloh.com/moss-landing-burns-again-homeowners-become-the-grid/",
@@ -2278,174 +631,6 @@
       ],
       "excerpt": "On Sept. 18, California\u2019s main grid battery at Moss Landing caught fire for the fourth time in seven years after roughly 1,500 units sparked on their own.",
       "modified": "2026-10-03T14:24:44",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "goods-tariff-relief-vs-vessel-fee",
-      "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.",
-      "url": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/",
-      "path": "/goods-tariff-relief-vs-vessel-fee/",
-      "sites_live": {
-        "giniloh.com": "/goods-tariff-relief-vs-vessel-fee/",
-        "aichieve.net": "/goods-tariff-relief-vs-vessel-fee/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "On Sept. 27, the U.S.-China Board of Trade recommended cutting tariffs on $30 billion of everyday goods in each direction.",
-      "modified": "2026-10-03T00:44:33",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "planning-ai-buys-capability-not-autonomy",
-      "title": "Planning AI Buys Capability, Not Autonomy",
-      "url": "https://giniloh.com/planning-ai-buys-capability-not-autonomy/",
-      "path": "/planning-ai-buys-capability-not-autonomy/",
-      "sites_live": {
-        "giniloh.com": "/planning-ai-buys-capability-not-autonomy/",
-        "aichieve.net": "/planning-ai-buys-capability-not-autonomy/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "By 2030, just 5% of firms with supply chain software will let it make 10% of choices on its own.",
-      "modified": "2026-10-03T00:43:04",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
-      "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
-      "url": "https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/",
-      "path": "/planner-as-router-fold-the-model-choice-into-the-plan/",
-      "sites_live": {
-        "giniloh.com": "/planner-as-router-fold-the-model-choice-into-the-plan/",
-        "aichieve.net": "/planner-as-router-fold-the-model-choice-into-the-plan/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "On Sept. 26, three researchers shared a new system called Planner-as-Router (PaR) that cuts AI agent costs by 44 percent.",
-      "modified": "2026-10-03T00:32:39",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "zet-scale-ev-truck-residual-value-risk",
-      "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn't the Reason",
-      "url": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/",
-      "path": "/zet-scale-ev-truck-residual-value-risk/",
-      "sites_live": {
-        "giniloh.com": "/zet-scale-ev-truck-residual-value-risk/",
-        "aichieve.net": "/zet-scale-ev-truck-residual-value-risk/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Top brands like Microsoft, PepsiCo, Ikea, and Red Bull just ordered 2,500 heavy-duty electric trucks.",
-      "modified": "2026-10-03T00:54:23",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "token-prices-just-halved-the-cfo-still-cant-read-the-bill",
-      "title": "Token Prices Just Halved. The CFO Still Can\u2019t Read the Bill.",
-      "url": "https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-      "path": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-      "sites_live": {
-        "giniloh.com": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
-        "aichieve.net": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "OpenAI and Anthropic slashed frontier Artificial Intelligence (AI) token prices on September 22.",
-      "modified": "2026-10-02T22:28:12",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "same-day-race-undoes-route-optimization",
-      "title": "The Same-Day Delivery Race Is Undoing a Decade of Route Optimization",
-      "url": "https://giniloh.com/same-day-race-undoes-route-optimization/",
-      "path": "/same-day-race-undoes-route-optimization/",
-      "sites_live": {
-        "giniloh.com": "/same-day-race-undoes-route-optimization/",
-        "aichieve.net": "/same-day-race-undoes-route-optimization/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "On Sept. 30, Amazon and the United States Postal Service (USPS) turned on a quiet test to speed up local shipping.",
-      "modified": "2026-10-03T15:01:04",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "reshoring-moved-the-tariff-upstream",
-      "title": "Reshoring Didn't Kill Tariff Risk \u2014 It Moved Upstream Into Packaging",
-      "url": "https://giniloh.com/reshoring-moved-the-tariff-upstream/",
-      "path": "/reshoring-moved-the-tariff-upstream/",
-      "sites_live": {
-        "giniloh.com": "/reshoring-moved-the-tariff-upstream/",
-        "aichieve.net": "/reshoring-moved-the-tariff-upstream/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Coca-Cola just pledged $10 billion for U.S. plants by 2030, which its Chief Financial Officer (CFO) calls a growth plan rather than a tariff shield.",
-      "modified": "2026-10-08T22:23:54",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2492,270 +677,6 @@
       ],
       "excerpt": "More than 70% of vested startup stock options are never exercised, according to new data from Carta published Sept. 10.",
       "modified": "2026-10-02T21:50:02",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "up-ns-rail-merger-clears-summary-denial",
-      "title": "Coast-to-Coast Rail Merger Clears First Big Test",
-      "url": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/",
-      "path": "/up-ns-rail-merger-clears-summary-denial/",
-      "sites_live": {
-        "giniloh.com": "/up-ns-rail-merger-clears-summary-denial/",
-        "aichieve.net": "/up-ns-rail-merger-clears-summary-denial/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger.",
-      "modified": "2026-10-10T15:52:22",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "ai-spend-27t-cost-visibility-mandate",
-      "title": "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement",
-      "url": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/",
-      "path": "/ai-spend-27t-cost-visibility-mandate/",
-      "sites_live": {
-        "giniloh.com": "/ai-spend-27t-cost-visibility-mandate/",
-        "aichieve.net": "/ai-spend-27t-cost-visibility-mandate/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%.",
-      "modified": "2026-10-10T15:52:31",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "maskills-multi-agent-skills-optimization",
-      "title": "Stop Piling Memory Onto AI Agents: Optimize Skills",
-      "url": "https://giniloh.com/maskills-multi-agent-skills-optimization/",
-      "path": "/maskills-multi-agent-skills-optimization/",
-      "sites_live": {
-        "giniloh.com": "/maskills-multi-agent-skills-optimization/",
-        "aichieve.net": "/maskills-multi-agent-skills-optimization/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Drop one hard check from an Artificial Intelligence (AI) agent's learning loop, and its test score crashes from 17.2 to 6.6.",
-      "modified": "2026-10-10T15:52:26",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "tariff-cliff-already-priced-in",
-      "title": "CFOs Are Pricing In the Tariff Cliff",
-      "url": "https://giniloh.com/tariff-cliff-already-priced-in/",
-      "path": "/tariff-cliff-already-priced-in/",
-      "sites_live": {
-        "giniloh.com": "/tariff-cliff-already-priced-in/",
-        "aichieve.net": "/tariff-cliff-already-priced-in/"
-      },
-      "categories": [
-        "Supply Chain & Operations"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "supply-chain-operations"
-      ],
-      "excerpt": "Washington just pushed the United States\u2013China tariff truce to Jan. 10, 2027, and American companies are not buying the calm.",
-      "modified": "2026-10-08T22:18:34",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "mcp-skills-extension",
-      "title": "MCP Skills Extension: Standardizing Agent Workflows",
-      "url": "https://giniloh.com/mcp-skills-extension/",
-      "path": "/mcp-skills-extension/",
-      "sites_live": {
-        "giniloh.com": "/mcp-skills-extension/",
-        "aichieve.net": "/mcp-skills-extension/"
-      },
-      "categories": [
-        "Autonomous & Agentic Workflows"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "autonomous-agentic-workflows"
-      ],
-      "excerpt": "Skills \u2014 portable bundles of workflow instructions \u2014 became an official MCP extension on September 13, standardizing how agents discover, retrieve, and verify\u2026",
-      "modified": "2026-10-10T15:52:33",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
-      "title": "The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision",
-      "url": "https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-      "path": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-      "sites_live": {
-        "giniloh.com": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
-        "aichieve.net": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "The enterprise build-vs-buy decision is no longer about initial sticker price\u2014it is about the compounding, long-term cost of ownership. While rapid prototyping makes custom tools appear cheap, they carry steep financial and operational risks. The Hidden Cost of Building: A homegrown tool averages $375,000 in upfront engineering payroll before it even works, plus a permanent $125k\u2013$250k annual maintenance bill. The Risk of Buying: Vendor pricing is highly volatile, with over 76% of SaaS buyers facing unexpected costs and rapid price shifts after signing. The Strategic Playbook: Evaluate both paths in total engineer-years, restrict internal builds strictly to core strategic advantages, and mandate a reversibility test before committing.",
-      "modified": "2026-09-30T23:44:46",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "multi-agent-orchestration-building-the-one-person-enterprise",
-      "title": "Multi Agent Orchestration: Building the One-Person Enterprise",
-      "url": "https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/",
-      "path": "/multi-agent-orchestration-building-the-one-person-enterprise/",
-      "sites_live": {
-        "giniloh.com": "/multi-agent-orchestration-building-the-one-person-enterprise/",
-        "aichieve.net": "/multi-agent-orchestration-building-the-one-person-enterprise/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Team agents are defined as multiple AI systems working in concert\u2014each with specialized skills\u2014to execute complex business tasks that once required entire departments. For founders and executives, this changes everything. Sam Altman predicts the first one-person billion-dollar company is coming; team agents are how it happens. You no longer need to hire a full staff to build agentic workflows that automate research, content production, customer support, and operations. With an agentic AI builder, you can deploy a coordinated team of AI specialists in hours, not months\u2014slashing overhead while scaling output. The next Creator Bootcamp starts in 3 days. If you're ready to replace your salary or build something far bigger, this is your window. Don't wait while competitors move first.",
-      "modified": "2026-09-24T01:25:21",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "agentic-ai-adoption-soars-but-profits-stall-in-2026",
-      "title": "Agentic AI Adoption Soars, But Profits Stall in 2026",
-      "url": "https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-      "path": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-      "sites_live": {
-        "giniloh.com": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
-        "aichieve.net": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Forty percent of billion-dollar companies now deploy AI agents across their operations\u2014up from just 27 percent a year ago. That's not incremental growth. That's a strategic inflection point, and IT leaders who treat agentic AI adoption as a wait-and-see proposition are already behind. Agentic AI is defined as autonomous software systems that perceive their environment, make decisions, and execute multi-step tasks with minimal human intervention\u2014distinct from generative AI's content creation and traditional automation's rigid rule-following. The enterprises pulling ahead aren't just experimenting. They're delegating routine workflows to agents while repositioning human talent toward judgment, oversight, and strategy. The payoff is measurable: operational efficiency gains, faster cycle times, and workforce augmentation that multiplies output without proportional headcount growth. But scaling requires more than procurement\u2014it demands governance frameworks, security protocols, and a phased roadmap that moves from pilot to production without exposing the enterprise to runaway autonomy or compliance failure. The adoption window is narrowing. Competitors are already building the playbooks, and the gap between early movers and laggards compounds quarterly.",
-      "modified": "2026-09-19T12:41:13",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "openai-just-made-the-agent-loop-a-commodity",
-      "title": "OpenAI just made the agent loop a commodity",
-      "url": "https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/",
-      "path": "/openai-just-made-the-agent-loop-a-commodity/",
-      "sites_live": {
-        "giniloh.com": "/openai-just-made-the-agent-loop-a-commodity/",
-        "aichieve.net": "/openai-just-made-the-agent-loop-a-commodity/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Agentic AI projects are autonomous systems that perceive, reason, plan, call tools, and execute multi-step work with minimal human intervention. On September 10, OpenAI moved the hardest part\u2014the agent loop\u2014into its Agents API public beta, handling model calls, MCP servers, sessions, memory, sub-agents, and crash recovery at no extra loop fee. The payoff: teams stop rebuilding fragile orchestration and start shipping. Yet managed plumbing is not a defense. Runaway agents have burned $4,200 in 45 minutes. Function tools still need app-side user checks and business rules. A resumed session does not prove a file survived or an action completed. Before your next build, audit permission boundaries, verify outcomes in your source-of-truth database, and choose the right sandbox mode: none, hosted, or self-hosted. The loop is free; the mistakes are not.",
-      "modified": "2026-09-19T02:04:27",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "openais-custom-chip-beats-nvidia-on-power-2",
-      "title": "OpenAI's custom chip beats Nvidia on power",
-      "url": "https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/",
-      "path": "/openais-custom-chip-beats-nvidia-on-power-2/",
-      "sites_live": {
-        "giniloh.com": "/openais-custom-chip-beats-nvidia-on-power-2/",
-        "aichieve.net": "/openais-custom-chip-beats-nvidia-on-power-2/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "OpenAI\u2019s new custom AI inference chip, Jalape\u00f1o, outperformed Nvidia's GB300 on the InferenceX test, delivering 1.5 to 1.9 times more work per watt while using under 550 watts. Designed solely to run models rather than train them, Jalape\u00f1o highlights a broader industry shift toward prioritizing energy efficiency and custom silicon over peak speed.",
-      "modified": "2026-09-18T00:49:05",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet",
-      "title": "Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.",
-      "url": "https://giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
-      "path": "/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
-      "sites_live": {
-        "giniloh.com": "/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
-        "aichieve.net": "/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/"
-      },
-      "categories": [
-        "AI Stack & Tool TCO"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "ai-stack-tool-tco"
-      ],
-      "excerpt": "Nvidia agreed to buy $279 billion in parts this quarter.",
-      "modified": "2026-09-17T02:10:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2894,6 +815,259 @@
       ],
       "excerpt": "Worried robots are coming for your paycheck? You\u2019re not alone\u2014but the real story is far more hopeful. This guide cuts through the scare headlines to reveal exactly where smart, sustainable career opportunities exist right now. We\u2019ve curated a list of true ai proof jobs\u2014roles in healthcare, skilled trades, and cybersecurity that not only survive automation but thrive because of human judgment and empathy. You\u2019ll get specific, money-making data on projected growth (the BLS says wind turbine technicians, for instance, will grow 44% by 2032), real salary ranges from active job listings, and a simple self-assessment quiz to identify your own most resilient path. Plus, we name companies hiring today and the niche job boards they use. Stop worrying and start planning\u2014your secure career is closer than you think.",
       "modified": "2026-07-08T22:53:39",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check",
+      "title": "NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?",
+      "url": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+      "path": "/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+      "sites_live": {
+        "giniloh.com": "/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "For professionals weighing a leap into Nvidia\u2019s RTX PRO lineup\u2014a $12,400 Blackwell 6000 with 98GB VRAM\u2014the sticker shock often overshadows long-term value. But what if a single interactive calculator could reveal whether that investment pays off faster than renting cloud GPUs? Gilinho\u2019s new TCO Analyzer does exactly that, letting you input acquisition cost, power draw, maintenance, and depreciation to compare ownership versus rental across workloads like Llama 3 inference or Blender rendering. Early results show the RTX PRO can slash cost per render hour by 40% over a three-year horizon. Stop guessing and start optimizing your hardware budget. Try the analyzer now to see if RTX PRO is your smartest compute bet.",
+      "modified": "2026-07-05T17:27:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "lease-break-calculator-save-1850-in-3-steps",
+      "title": "Lease Break Calculator: Save $1,850 in 3 Steps",
+      "url": "https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/",
+      "path": "/lease-break-calculator-save-1850-in-3-steps/",
+      "sites_live": {
+        "giniloh.com": "/lease-break-calculator-save-1850-in-3-steps/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Sarah faced a classic career-versus-home dilemma: a $20,000 salary bump in NYC, but eight months and $24,000 remaining on her Austin lease. With confusing penalty clauses and no clear exit path, she needed hard numbers\u2014not guesswork. Using the Giniloh Lease Break Calculator, she compared three real scenarios: a worst-case $3,500 outlay, a negotiated buyout at $1,650 net, and a best-case where her new employer covered the exit cost. The calculator\u2019s payback math revealed she\u2019d fully recover even the worst penalty in just 2.1 months. Armed with concrete data, Sarah turned a painful lease break into a leverage point\u2014either for a signing bonus or a swift financial recovery. The result? A clear, data-driven path out of a costly commitment, proving that with the right tool, breaking a lease doesn\u2019t have to break your budget.",
+      "modified": "2026-06-28T00:02:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "zapier-notion-integration-calculate-your-tinkering-tax",
+      "title": "Zapier Notion Integration: Calculate Your Tinkering Tax",
+      "url": "https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/",
+      "path": "/zapier-notion-integration-calculate-your-tinkering-tax/",
+      "sites_live": {
+        "giniloh.com": "/zapier-notion-integration-calculate-your-tinkering-tax/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "E-commerce teams relying on a zapier notion integration to sync customer data and orders often face a hidden cost far exceeding any subscription fee. When broken integrations, duplicated records, and sync timeouts consume 12 hours of an operations manager\u2019s time each month at $85 per hour, the monthly tinkering tax hits $1,020. That\u2019s $36,720 over three years\u2014more than double the $18,000 premium for upgrading to a unified centralized CRM like HubSpot. By plugging these real-world figures into Giniloh\u2019s No-Code Workaround Terminator calculator, you can see the exact net savings\u2014$18,720 in this scenario\u2014and reclaim stress-free operations. Stop guessing whether your workflow is worth it; the data reveals the smarter move.",
+      "modified": "2026-06-26T16:54:15",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "replace-laptop-screen-let-this-decision-engine-do-the-math",
+      "title": "Replace Laptop Screen? Let This Decision Engine Do the Math",
+      "url": "https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+      "path": "/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+      "sites_live": {
+        "giniloh.com": "/replace-laptop-screen-let-this-decision-engine-do-the-math/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Is a cracked laptop screen forcing you to shell out hundreds for a repair? Before you rush to replace laptop screen, stop and calculate whether it's actually worth it. Most repair guides only show you how, not if you should. That's where the Giniloh Strategic Decision-Intelligence Engine changes the game. Instead of guessing, use the Consumer 1,500 Rule: multiply your laptop's age by the repair quote. If the result exceeds 1,500, it's smarter to buy new laptop than patch old hardware. A 4-year-old device with a $450 repair gives you an asset tech debt index of 1,800\u2014a clear \"replace\" verdict. This data-driven approach saves you from pouring money into outdated machines. Learn the exact steps to perform the calculation, get a definitive answer, and stop wasting funds on uneconomical fixes. The math doesn't lie\u2014your wallet will thank you.",
+      "modified": "2026-06-26T00:56:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "ebike-costs-per-use-calculator-for-commuters",
+      "title": "Ebike Costs: Per-Use Calculator for Commuters",
+      "url": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+      "path": "/ebike-costs-per-use-calculator-for-commuters/",
+      "sites_live": {
+        "giniloh.com": "/ebike-costs-per-use-calculator-for-commuters/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Stop guessing whether an e-bike is worth it\u2014most people overpay for their commute without realizing it. This article uses the Giniloh Decision Intelligence Framework to uncover the true ebike costs and which choice saves real money. Instead of just listing price tags, you\u2019ll learn a simple Cost-Per-Use (CPU) calculation that compares a $2,500 premium e-bike against your current parking, fuel, and rideshare expenses. The result? A commuter who rides three days a week could save $2,875 over three years\u2014dropping their per-trip cost from $15.00 to just $7.90. That\u2019s a clear BUY verdict based on your own numbers. By matching the electric bike cost to your exact lifestyle, you stop overthinking and start saving immediately. Ready to run your own CPU check? The interactive calculator inside does the math for you.",
+      "modified": "2026-06-20T11:03:06",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "jobs-switch-calculator-step-by-step-profit-guide",
+      "title": "Jobs Switch Calculator: Step-by-Step Profit Guide",
+      "url": "https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/",
+      "path": "/jobs-switch-calculator-step-by-step-profit-guide/",
+      "sites_live": {
+        "giniloh.com": "/jobs-switch-calculator-step-by-step-profit-guide/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Are you considering a jobs switch but worried about forfeiting years of unvested 401(k) matches? The Gilinoh Raise & Job-Hop Velocity Calculator exposes the hidden financial trade-offs most professionals overlook. In a realistic scenario, a mid-career engineer earning $120,000 receives a 12% raise offer\u2014yet loses over $21,000 in unvested employer matches, creating a $4,000 switching deficit in year three. This tool transforms abstract risk into concrete numbers, showing exactly how to negotiate a signing bonus of at least $15,000 to break even. Stop leaving money behind. Use the calculator\u2019s step-by-step walkthrough to compare stay-versus-switch trajectories, identify negotiation levers, and ensure your next move actually pays off.",
+      "modified": "2026-06-20T00:52:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "calculate-your-career-relocation-payback",
+      "title": "Calculate Your Career Relocation Payback",
+      "url": "https://giniloh.com/calculate-your-career-relocation-payback/",
+      "path": "/calculate-your-career-relocation-payback/",
+      "sites_live": {
+        "giniloh.com": "/calculate-your-career-relocation-payback/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Moving for a career relocation is one of the most consequential financial decisions a professional can make\u2014yet most job offers gloss over the hidden costs that can turn a salary bump into a net loss. A new interactive tool, the Giniloh Career Relocation Cost & Payback Calculator, changes that by delivering hard numbers instead of guesswork. In a real-world case study\u2014a software engineer leapfrogging from Maryland to California for a $25,000 raise\u2014the calculator reveals a net upfront cost of $6,065 driven by lease penalties and an overlooked state-tax drag on employer reimbursements. More importantly, it pinpoints the exact break-even point: just 5.0 months, after which the move becomes pure profit. By modeling taxable transit benefits, AB 692 exclusions, and monthly take-home gains, this calculator transforms career relocation from a leap of faith into a data-backed strategy. Don\u2019t sign that offer without knowing your actual payback timeline.",
+      "modified": "2026-08-12T00:47:00",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "negotiate-job-offer-with-giniloh-visualizer",
+      "title": "Negotiate Job Offer with Giniloh Visualizer",
+      "url": "https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/",
+      "path": "/negotiate-job-offer-with-giniloh-visualizer/",
+      "sites_live": {
+        "giniloh.com": "/negotiate-job-offer-with-giniloh-visualizer/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Most candidates fixate on base salary when they negotiate a job offer\u2014but that leaves money on the table. The Giniloh Total Compensation Visualizer transforms the process. You input specific numbers for salary, equity, bonuses, and benefits, then instantly see how different scenarios affect your net worth. Simulate asking for higher salary versus more equity and compare long-term outcomes. This visual representation gives you objective data to justify counteroffers with confidence. Don't accept a deal that undervalues your skills. Before your next call, prepare a TCV visualization to highlight gaps and trade-offs. Discover a step-by-step method to quantitatively compare offers and turn a stressful conversation into a strategic advantage. Learn how to use this tool to negotiate a job offer that reflects your total value and secure the package you deserve.",
+      "modified": "2026-07-09T17:12:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "the-blueprint-behind-giniloh-money-flow",
+      "title": "The Blueprint Behind Giniloh Money Flow",
+      "url": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+      "path": "/the-blueprint-behind-giniloh-money-flow/",
+      "sites_live": {
+        "giniloh.com": "/the-blueprint-behind-giniloh-money-flow/"
+      },
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "money-wealth"
+      ],
+      "excerpt": "Imagine taking control of your money flow without the usual spreadsheet headaches or second-guessing every move. That\u2019s exactly what the Giniloh Money Flow Simulator delivers\u2014a risk-free sandbox where you can test your smart money decisions in real time. Instead of hoping your bills line up, you automate cash flow pipelines that sweep surpluses toward debt, savings, or investments while underbalance pulls instantly prevent overdrafts. No more panic, no more guesswork. Based on the Loh-Friction Philosophy, this tool lets you simulate aggressive paydowns, emergency floors, even corporate treasury sweeps, and watch exactly how your money decisions play out before committing a single dollar. With built-in regulatory guardrails like Roth IRA penalty checks, the model stays realistic. Stop leaving your financial momentum on idle\u2014start testing your strategies today and see your money flow work for you.",
+      "modified": "2026-06-15T00:25:11",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless",
+      "title": "Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows",
+      "url": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+      "path": "/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+      "sites_live": {
+        "giniloh.com": "/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/"
+      },
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "money-wealth"
+      ],
+      "excerpt": "Mastering your money flows is no longer guesswork. The Giniloh Frictionless Money Flow Simulator lets you configure a real-time cash routing engine on an interactive canvas\u2014click any account node to drag sliders for balances, ceiling limits, and safety floors. Its AI Orchestration Chat establishes automated pipelines, then tests them against macroeconomic scenarios like stagflation or a 2008-style market contraction. You can apply conditional market scripting rules that adjust sweeps when inflation rises or buy dips when the S&P 500 drops. The simulator enforces regulatory guardrails\u2014blocking Roth IRA early withdrawals, settlement delays, and pattern-day-trader limits\u2014so every simulation mirrors reality. Start the automated clock or step day-by-day to watch your cash move according to your logic. Whether in Personal or Enterprise mode, this tool transforms abstract financial planning into a concrete, risk-free sandbox. Stop guessing; start controlling where your money flows before it hits the real world.",
+      "modified": "2026-06-10T21:24:19",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "the-giniloh-money-flow-simulator-explained",
+      "title": "How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)",
+      "url": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+      "path": "/the-giniloh-money-flow-simulator-explained/",
+      "sites_live": {
+        "giniloh.com": "/the-giniloh-money-flow-simulator-explained/"
+      },
+      "categories": [
+        "Money & Wealth"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "money-wealth"
+      ],
+      "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the Loh-Friction Philosophy, it eliminates decision fatigue: surpluses automatically sweep toward debt, savings, or investments, while underbalance pulls instantly retrieve funds to prevent overdrafts. No more manual juggling or retrospective panic. You can simulate real-life scenarios\u2014aggressive debt paydown, emergency floor protection, even corporate treasury sweeps\u2014and see exactly how your smart money decisions play out. With built-in regulatory guardrails (like Roth IRA sweep penalties), the model stays realistic. Start testing your strategies today and stop leaving your momentum on idle.",
+      "modified": "2026-07-09T16:36:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3607,7 +1781,6 @@
       "url": "https://aichieve.net/100-case-eval-925-coverage/",
       "path": "/100-case-eval-925-coverage/",
       "sites_live": {
-        "giniloh.com": "/100-case-eval-925-coverage/",
         "aichieve.net": "/100-case-eval-925-coverage/"
       },
       "categories": [
@@ -3631,7 +1804,6 @@
       "url": "https://aichieve.net/agent-audit-trail-not-evidence/",
       "path": "/agent-audit-trail-not-evidence/",
       "sites_live": {
-        "giniloh.com": "/agent-audit-trail-not-evidence/",
         "aichieve.net": "/agent-audit-trail-not-evidence/"
       },
       "categories": [
@@ -3655,7 +1827,6 @@
       "url": "https://aichieve.net/agent-failure-topology-not-model/",
       "path": "/agent-failure-topology-not-model/",
       "sites_live": {
-        "giniloh.com": "/agent-failure-topology-not-model/",
         "aichieve.net": "/agent-failure-topology-not-model/"
       },
       "categories": [
@@ -3679,7 +1850,6 @@
       "url": "https://aichieve.net/agent-failures-tests-stayed-green/",
       "path": "/agent-failures-tests-stayed-green/",
       "sites_live": {
-        "giniloh.com": "/agent-failures-tests-stayed-green/",
         "aichieve.net": "/agent-failures-tests-stayed-green/"
       },
       "categories": [
@@ -3703,7 +1873,6 @@
       "url": "https://aichieve.net/agent-memory-poisoning-write-path/",
       "path": "/agent-memory-poisoning-write-path/",
       "sites_live": {
-        "giniloh.com": "/agent-memory-poisoning-write-path/",
         "aichieve.net": "/agent-memory-poisoning-write-path/"
       },
       "categories": [
@@ -3727,7 +1896,6 @@
       "url": "https://aichieve.net/agent-memory-tiering-l1-l4/",
       "path": "/agent-memory-tiering-l1-l4/",
       "sites_live": {
-        "giniloh.com": "/agent-memory-tiering-l1-l4/",
         "aichieve.net": "/agent-memory-tiering-l1-l4/"
       },
       "categories": [
@@ -3751,7 +1919,6 @@
       "url": "https://aichieve.net/agent-reliability-pass-k-not-one-green-run/",
       "path": "/agent-reliability-pass-k-not-one-green-run/",
       "sites_live": {
-        "giniloh.com": "/agent-reliability-pass-k-not-one-green-run/",
         "aichieve.net": "/agent-reliability-pass-k-not-one-green-run/"
       },
       "categories": [
@@ -3775,7 +1942,6 @@
       "url": "https://aichieve.net/agent-safety-gate-moves-to-verified-state/",
       "path": "/agent-safety-gate-moves-to-verified-state/",
       "sites_live": {
-        "giniloh.com": "/agent-safety-gate-moves-to-verified-state/",
         "aichieve.net": "/agent-safety-gate-moves-to-verified-state/"
       },
       "categories": [
@@ -3799,7 +1965,6 @@
       "url": "https://aichieve.net/agent-timeout-false-alarm-budget/",
       "path": "/agent-timeout-false-alarm-budget/",
       "sites_live": {
-        "giniloh.com": "/agent-timeout-false-alarm-budget/",
         "aichieve.net": "/agent-timeout-false-alarm-budget/"
       },
       "categories": [
@@ -3823,7 +1988,6 @@
       "url": "https://aichieve.net/agent-tool-count-ceiling/",
       "path": "/agent-tool-count-ceiling/",
       "sites_live": {
-        "giniloh.com": "/agent-tool-count-ceiling/",
         "aichieve.net": "/agent-tool-count-ceiling/"
       },
       "categories": [
@@ -3847,7 +2011,6 @@
       "url": "https://aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
       "path": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
       "sites_live": {
-        "giniloh.com": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
         "aichieve.net": "/agentic-ai-adoption-soars-but-profits-stall-in-2026/"
       },
       "categories": [
@@ -3871,7 +2034,6 @@
       "url": "https://aichieve.net/ai-coding-seats-measure-or-renew/",
       "path": "/ai-coding-seats-measure-or-renew/",
       "sites_live": {
-        "giniloh.com": "/ai-coding-seats-measure-or-renew/",
         "aichieve.net": "/ai-coding-seats-measure-or-renew/"
       },
       "categories": [
@@ -3895,7 +2057,6 @@
       "url": "https://aichieve.net/ai-incident-clock-4-hours-not-15-days/",
       "path": "/ai-incident-clock-4-hours-not-15-days/",
       "sites_live": {
-        "giniloh.com": "/ai-incident-clock-4-hours-not-15-days/",
         "aichieve.net": "/ai-incident-clock-4-hours-not-15-days/"
       },
       "categories": [
@@ -3919,7 +2080,6 @@
       "url": "https://aichieve.net/ai-spend-27t-cost-visibility-mandate/",
       "path": "/ai-spend-27t-cost-visibility-mandate/",
       "sites_live": {
-        "giniloh.com": "/ai-spend-27t-cost-visibility-mandate/",
         "aichieve.net": "/ai-spend-27t-cost-visibility-mandate/"
       },
       "categories": [
@@ -3943,7 +2103,6 @@
       "url": "https://aichieve.net/air-freight-wont-price-a-year/",
       "path": "/air-freight-wont-price-a-year/",
       "sites_live": {
-        "giniloh.com": "/air-freight-wont-price-a-year/",
         "aichieve.net": "/air-freight-wont-price-a-year/"
       },
       "categories": [
@@ -3967,7 +2126,6 @@
       "url": "https://aichieve.net/automation-payback-splits-by-sku-geometry/",
       "path": "/automation-payback-splits-by-sku-geometry/",
       "sites_live": {
-        "giniloh.com": "/automation-payback-splits-by-sku-geometry/",
         "aichieve.net": "/automation-payback-splits-by-sku-geometry/"
       },
       "categories": [
@@ -3991,7 +2149,6 @@
       "url": "https://aichieve.net/aws-cannot-restore-bahrain/",
       "path": "/aws-cannot-restore-bahrain/",
       "sites_live": {
-        "giniloh.com": "/aws-cannot-restore-bahrain/",
         "aichieve.net": "/aws-cannot-restore-bahrain/"
       },
       "categories": [
@@ -4015,7 +2172,6 @@
       "url": "https://aichieve.net/azure-control-plane-single-point-of-failure/",
       "path": "/azure-control-plane-single-point-of-failure/",
       "sites_live": {
-        "giniloh.com": "/azure-control-plane-single-point-of-failure/",
         "aichieve.net": "/azure-control-plane-single-point-of-failure/"
       },
       "categories": [
@@ -4039,7 +2195,6 @@
       "url": "https://aichieve.net/build-wait-payback-threshold/",
       "path": "/build-wait-payback-threshold/",
       "sites_live": {
-        "giniloh.com": "/build-wait-payback-threshold/",
         "aichieve.net": "/build-wait-payback-threshold/"
       },
       "categories": [
@@ -4063,7 +2218,6 @@
       "url": "https://aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/",
       "path": "/buying-ai-quality-when-the-score-belongs-to-the-judge/",
       "sites_live": {
-        "giniloh.com": "/buying-ai-quality-when-the-score-belongs-to-the-judge/",
         "aichieve.net": "/buying-ai-quality-when-the-score-belongs-to-the-judge/"
       },
       "categories": [
@@ -4087,7 +2241,6 @@
       "url": "https://aichieve.net/cache-boundary-decides-input-bill/",
       "path": "/cache-boundary-decides-input-bill/",
       "sites_live": {
-        "giniloh.com": "/cache-boundary-decides-input-bill/",
         "aichieve.net": "/cache-boundary-decides-input-bill/"
       },
       "categories": [
@@ -4111,7 +2264,6 @@
       "url": "https://aichieve.net/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/",
       "path": "/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/",
       "sites_live": {
-        "giniloh.com": "/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/",
         "aichieve.net": "/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/"
       },
       "categories": [
@@ -4179,7 +2331,6 @@
       "url": "https://aichieve.net/control-tower-silent-exception/",
       "path": "/control-tower-silent-exception/",
       "sites_live": {
-        "giniloh.com": "/control-tower-silent-exception/",
         "aichieve.net": "/control-tower-silent-exception/"
       },
       "categories": [
@@ -4203,7 +2354,6 @@
       "url": "https://aichieve.net/demurrage-invoice-30-day-clocks/",
       "path": "/demurrage-invoice-30-day-clocks/",
       "sites_live": {
-        "giniloh.com": "/demurrage-invoice-30-day-clocks/",
         "aichieve.net": "/demurrage-invoice-30-day-clocks/"
       },
       "categories": [
@@ -4227,7 +2377,6 @@
       "url": "https://aichieve.net/diesel-620-electric-freight-certificate-gap/",
       "path": "/diesel-620-electric-freight-certificate-gap/",
       "sites_live": {
-        "giniloh.com": "/diesel-620-electric-freight-certificate-gap/",
         "aichieve.net": "/diesel-620-electric-freight-certificate-gap/"
       },
       "categories": [
@@ -4251,7 +2400,6 @@
       "url": "https://aichieve.net/durable-execution-not-a-transaction/",
       "path": "/durable-execution-not-a-transaction/",
       "sites_live": {
-        "giniloh.com": "/durable-execution-not-a-transaction/",
         "aichieve.net": "/durable-execution-not-a-transaction/"
       },
       "categories": [
@@ -4275,7 +2423,6 @@
       "url": "https://aichieve.net/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
       "path": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
       "sites_live": {
-        "giniloh.com": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
         "aichieve.net": "/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/"
       },
       "categories": [
@@ -4299,7 +2446,6 @@
       "url": "https://aichieve.net/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/",
       "path": "/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/",
       "sites_live": {
-        "giniloh.com": "/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/",
         "aichieve.net": "/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/"
       },
       "categories": [
@@ -4323,7 +2469,6 @@
       "url": "https://aichieve.net/fed-rate-hike-inverts-working-capital-trap/",
       "path": "/fed-rate-hike-inverts-working-capital-trap/",
       "sites_live": {
-        "giniloh.com": "/fed-rate-hike-inverts-working-capital-trap/",
         "aichieve.net": "/fed-rate-hike-inverts-working-capital-trap/"
       },
       "categories": [
@@ -4347,7 +2492,6 @@
       "url": "https://aichieve.net/fine-tune-vs-rent-by-token/",
       "path": "/fine-tune-vs-rent-by-token/",
       "sites_live": {
-        "giniloh.com": "/fine-tune-vs-rent-by-token/",
         "aichieve.net": "/fine-tune-vs-rent-by-token/"
       },
       "categories": [
@@ -4371,7 +2515,6 @@
       "url": "https://aichieve.net/flat-price-was-the-hedge/",
       "path": "/flat-price-was-the-hedge/",
       "sites_live": {
-        "giniloh.com": "/flat-price-was-the-hedge/",
         "aichieve.net": "/flat-price-was-the-hedge/"
       },
       "categories": [
@@ -4395,7 +2538,6 @@
       "url": "https://aichieve.net/forecast-accuracy-is-not-shock-protection/",
       "path": "/forecast-accuracy-is-not-shock-protection/",
       "sites_live": {
-        "giniloh.com": "/forecast-accuracy-is-not-shock-protection/",
         "aichieve.net": "/forecast-accuracy-is-not-shock-protection/"
       },
       "categories": [
@@ -4419,7 +2561,6 @@
       "url": "https://aichieve.net/freight-scale-bet-vs-contract-duration/",
       "path": "/freight-scale-bet-vs-contract-duration/",
       "sites_live": {
-        "giniloh.com": "/freight-scale-bet-vs-contract-duration/",
         "aichieve.net": "/freight-scale-bet-vs-contract-duration/"
       },
       "categories": [
@@ -4443,7 +2584,6 @@
       "url": "https://aichieve.net/fuel-surcharge-peg-mpg-audit/",
       "path": "/fuel-surcharge-peg-mpg-audit/",
       "sites_live": {
-        "giniloh.com": "/fuel-surcharge-peg-mpg-audit/",
         "aichieve.net": "/fuel-surcharge-peg-mpg-audit/"
       },
       "categories": [
@@ -4467,7 +2607,6 @@
       "url": "https://aichieve.net/gate-the-step-not-the-model/",
       "path": "/gate-the-step-not-the-model/",
       "sites_live": {
-        "giniloh.com": "/gate-the-step-not-the-model/",
         "aichieve.net": "/gate-the-step-not-the-model/"
       },
       "categories": [
@@ -4491,7 +2630,6 @@
       "url": "https://aichieve.net/goods-tariff-relief-vs-vessel-fee/",
       "path": "/goods-tariff-relief-vs-vessel-fee/",
       "sites_live": {
-        "giniloh.com": "/goods-tariff-relief-vs-vessel-fee/",
         "aichieve.net": "/goods-tariff-relief-vs-vessel-fee/"
       },
       "categories": [
@@ -4515,7 +2653,6 @@
       "url": "https://aichieve.net/gpu-hour-price-set-by-memory/",
       "path": "/gpu-hour-price-set-by-memory/",
       "sites_live": {
-        "giniloh.com": "/gpu-hour-price-set-by-memory/",
         "aichieve.net": "/gpu-hour-price-set-by-memory/"
       },
       "categories": [
@@ -4539,7 +2676,6 @@
       "url": "https://aichieve.net/hour-14-recovery-wall/",
       "path": "/hour-14-recovery-wall/",
       "sites_live": {
-        "giniloh.com": "/hour-14-recovery-wall/",
         "aichieve.net": "/hour-14-recovery-wall/"
       },
       "categories": [
@@ -4563,7 +2699,6 @@
       "url": "https://aichieve.net/inventory-carrying-cost-rate/",
       "path": "/inventory-carrying-cost-rate/",
       "sites_live": {
-        "giniloh.com": "/inventory-carrying-cost-rate/",
         "aichieve.net": "/inventory-carrying-cost-rate/"
       },
       "categories": [
@@ -4587,7 +2722,6 @@
       "url": "https://aichieve.net/kill-switch-misses-half-your-agents/",
       "path": "/kill-switch-misses-half-your-agents/",
       "sites_live": {
-        "giniloh.com": "/kill-switch-misses-half-your-agents/",
         "aichieve.net": "/kill-switch-misses-half-your-agents/"
       },
       "categories": [
@@ -4611,7 +2745,6 @@
       "url": "https://aichieve.net/kv-cache-is-the-concurrency-ceiling/",
       "path": "/kv-cache-is-the-concurrency-ceiling/",
       "sites_live": {
-        "giniloh.com": "/kv-cache-is-the-concurrency-ceiling/",
         "aichieve.net": "/kv-cache-is-the-concurrency-ceiling/"
       },
       "categories": [
@@ -4635,7 +2768,6 @@
       "url": "https://aichieve.net/last-mile-carbon-number-is-a-rate-table/",
       "path": "/last-mile-carbon-number-is-a-rate-table/",
       "sites_live": {
-        "giniloh.com": "/last-mile-carbon-number-is-a-rate-table/",
         "aichieve.net": "/last-mile-carbon-number-is-a-rate-table/"
       },
       "categories": [
@@ -4659,7 +2791,6 @@
       "url": "https://aichieve.net/local-ai-payback-cloud-gpu-spread/",
       "path": "/local-ai-payback-cloud-gpu-spread/",
       "sites_live": {
-        "giniloh.com": "/local-ai-payback-cloud-gpu-spread/",
         "aichieve.net": "/local-ai-payback-cloud-gpu-spread/"
       },
       "categories": [
@@ -4683,7 +2814,6 @@
       "url": "https://aichieve.net/maskills-multi-agent-skills-optimization/",
       "path": "/maskills-multi-agent-skills-optimization/",
       "sites_live": {
-        "giniloh.com": "/maskills-multi-agent-skills-optimization/",
         "aichieve.net": "/maskills-multi-agent-skills-optimization/"
       },
       "categories": [
@@ -4707,7 +2837,6 @@
       "url": "https://aichieve.net/mcp-skills-extension/",
       "path": "/mcp-skills-extension/",
       "sites_live": {
-        "giniloh.com": "/mcp-skills-extension/",
         "aichieve.net": "/mcp-skills-extension/"
       },
       "categories": [
@@ -4731,7 +2860,6 @@
       "url": "https://aichieve.net/multi-agent-orchestration-building-the-one-person-enterprise/",
       "path": "/multi-agent-orchestration-building-the-one-person-enterprise/",
       "sites_live": {
-        "giniloh.com": "/multi-agent-orchestration-building-the-one-person-enterprise/",
         "aichieve.net": "/multi-agent-orchestration-building-the-one-person-enterprise/"
       },
       "categories": [
@@ -4755,7 +2883,6 @@
       "url": "https://aichieve.net/nearshoring-doesnt-move-the-trade-case/",
       "path": "/nearshoring-doesnt-move-the-trade-case/",
       "sites_live": {
-        "giniloh.com": "/nearshoring-doesnt-move-the-trade-case/",
         "aichieve.net": "/nearshoring-doesnt-move-the-trade-case/"
       },
       "categories": [
@@ -4779,7 +2906,6 @@
       "url": "https://aichieve.net/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
       "path": "/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
       "sites_live": {
-        "giniloh.com": "/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/",
         "aichieve.net": "/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/"
       },
       "categories": [
@@ -4803,7 +2929,6 @@
       "url": "https://aichieve.net/one-skill-too-many-green-test/",
       "path": "/one-skill-too-many-green-test/",
       "sites_live": {
-        "giniloh.com": "/one-skill-too-many-green-test/",
         "aichieve.net": "/one-skill-too-many-green-test/"
       },
       "categories": [
@@ -4827,7 +2952,6 @@
       "url": "https://aichieve.net/openai-just-made-the-agent-loop-a-commodity/",
       "path": "/openai-just-made-the-agent-loop-a-commodity/",
       "sites_live": {
-        "giniloh.com": "/openai-just-made-the-agent-loop-a-commodity/",
         "aichieve.net": "/openai-just-made-the-agent-loop-a-commodity/"
       },
       "categories": [
@@ -4851,7 +2975,6 @@
       "url": "https://aichieve.net/openais-custom-chip-beats-nvidia-on-power-2/",
       "path": "/openais-custom-chip-beats-nvidia-on-power-2/",
       "sites_live": {
-        "giniloh.com": "/openais-custom-chip-beats-nvidia-on-power-2/",
         "aichieve.net": "/openais-custom-chip-beats-nvidia-on-power-2/"
       },
       "categories": [
@@ -4875,7 +2998,6 @@
       "url": "https://aichieve.net/owned-shuttles-or-rented-robots/",
       "path": "/owned-shuttles-or-rented-robots/",
       "sites_live": {
-        "giniloh.com": "/owned-shuttles-or-rented-robots/",
         "aichieve.net": "/owned-shuttles-or-rented-robots/"
       },
       "categories": [
@@ -4899,7 +3021,6 @@
       "url": "https://aichieve.net/parcelproof-stop-bleeding-28-on-carrier-invoices/",
       "path": "/parcelproof-stop-bleeding-28-on-carrier-invoices/",
       "sites_live": {
-        "giniloh.com": "/parcelproof-stop-bleeding-28-on-carrier-invoices/",
         "aichieve.net": "/parcelproof-stop-bleeding-28-on-carrier-invoices/"
       },
       "categories": [
@@ -4923,7 +3044,6 @@
       "url": "https://aichieve.net/planner-as-router-fold-the-model-choice-into-the-plan/",
       "path": "/planner-as-router-fold-the-model-choice-into-the-plan/",
       "sites_live": {
-        "giniloh.com": "/planner-as-router-fold-the-model-choice-into-the-plan/",
         "aichieve.net": "/planner-as-router-fold-the-model-choice-into-the-plan/"
       },
       "categories": [
@@ -4947,7 +3067,6 @@
       "url": "https://aichieve.net/planning-ai-buys-capability-not-autonomy/",
       "path": "/planning-ai-buys-capability-not-autonomy/",
       "sites_live": {
-        "giniloh.com": "/planning-ai-buys-capability-not-autonomy/",
         "aichieve.net": "/planning-ai-buys-capability-not-autonomy/"
       },
       "categories": [
@@ -4971,7 +3090,6 @@
       "url": "https://aichieve.net/prefill-decode-two-pool-gap/",
       "path": "/prefill-decode-two-pool-gap/",
       "sites_live": {
-        "giniloh.com": "/prefill-decode-two-pool-gap/",
         "aichieve.net": "/prefill-decode-two-pool-gap/"
       },
       "categories": [
@@ -4995,7 +3113,6 @@
       "url": "https://aichieve.net/rack-power-density-ceiling-build-before-you-buy/",
       "path": "/rack-power-density-ceiling-build-before-you-buy/",
       "sites_live": {
-        "giniloh.com": "/rack-power-density-ceiling-build-before-you-buy/",
         "aichieve.net": "/rack-power-density-ceiling-build-before-you-buy/"
       },
       "categories": [
@@ -5019,7 +3136,6 @@
       "url": "https://aichieve.net/rack-ride-through-two-second-duty/",
       "path": "/rack-ride-through-two-second-duty/",
       "sites_live": {
-        "giniloh.com": "/rack-ride-through-two-second-duty/",
         "aichieve.net": "/rack-ride-through-two-second-duty/"
       },
       "categories": [
@@ -5043,7 +3159,6 @@
       "url": "https://aichieve.net/remediator-recovers-46-percent/",
       "path": "/remediator-recovers-46-percent/",
       "sites_live": {
-        "giniloh.com": "/remediator-recovers-46-percent/",
         "aichieve.net": "/remediator-recovers-46-percent/"
       },
       "categories": [
@@ -5067,7 +3182,6 @@
       "url": "https://aichieve.net/reshoring-moved-the-tariff-upstream/",
       "path": "/reshoring-moved-the-tariff-upstream/",
       "sites_live": {
-        "giniloh.com": "/reshoring-moved-the-tariff-upstream/",
         "aichieve.net": "/reshoring-moved-the-tariff-upstream/"
       },
       "categories": [
@@ -5091,7 +3205,6 @@
       "url": "https://aichieve.net/retry-is-the-failure-amplifier/",
       "path": "/retry-is-the-failure-amplifier/",
       "sites_live": {
-        "giniloh.com": "/retry-is-the-failure-amplifier/",
         "aichieve.net": "/retry-is-the-failure-amplifier/"
       },
       "categories": [
@@ -5115,7 +3228,6 @@
       "url": "https://aichieve.net/retry-permission-leaves-the-caller/",
       "path": "/retry-permission-leaves-the-caller/",
       "sites_live": {
-        "giniloh.com": "/retry-permission-leaves-the-caller/",
         "aichieve.net": "/retry-permission-leaves-the-caller/"
       },
       "categories": [
@@ -5139,7 +3251,6 @@
       "url": "https://aichieve.net/safety-stock-forecast-error-not-demand-noise/",
       "path": "/safety-stock-forecast-error-not-demand-noise/",
       "sites_live": {
-        "giniloh.com": "/safety-stock-forecast-error-not-demand-noise/",
         "aichieve.net": "/safety-stock-forecast-error-not-demand-noise/"
       },
       "categories": [
@@ -5163,7 +3274,6 @@
       "url": "https://aichieve.net/same-day-race-undoes-route-optimization/",
       "path": "/same-day-race-undoes-route-optimization/",
       "sites_live": {
-        "giniloh.com": "/same-day-race-undoes-route-optimization/",
         "aichieve.net": "/same-day-race-undoes-route-optimization/"
       },
       "categories": [
@@ -5210,7 +3320,6 @@
       "url": "https://aichieve.net/shippers-stuck-in-the-gap/",
       "path": "/shippers-stuck-in-the-gap/",
       "sites_live": {
-        "giniloh.com": "/shippers-stuck-in-the-gap/",
         "aichieve.net": "/shippers-stuck-in-the-gap/"
       },
       "categories": [
@@ -5234,7 +3343,6 @@
       "url": "https://aichieve.net/sla-credit-is-not-insurance/",
       "path": "/sla-credit-is-not-insurance/",
       "sites_live": {
-        "giniloh.com": "/sla-credit-is-not-insurance/",
         "aichieve.net": "/sla-credit-is-not-insurance/"
       },
       "categories": [
@@ -5258,7 +3366,6 @@
       "url": "https://aichieve.net/slow-movers-hold-your-stock/",
       "path": "/slow-movers-hold-your-stock/",
       "sites_live": {
-        "giniloh.com": "/slow-movers-hold-your-stock/",
         "aichieve.net": "/slow-movers-hold-your-stock/"
       },
       "categories": [
@@ -5282,7 +3389,6 @@
       "url": "https://aichieve.net/stale-grants-travel-the-graph/",
       "path": "/stale-grants-travel-the-graph/",
       "sites_live": {
-        "giniloh.com": "/stale-grants-travel-the-graph/",
         "aichieve.net": "/stale-grants-travel-the-graph/"
       },
       "categories": [
@@ -5306,7 +3412,6 @@
       "url": "https://aichieve.net/stripe-accounting-software-solving-the-payout-black-box-with/",
       "path": "/stripe-accounting-software-solving-the-payout-black-box-with/",
       "sites_live": {
-        "giniloh.com": "/stripe-accounting-software-solving-the-payout-black-box-with/",
         "aichieve.net": "/stripe-accounting-software-solving-the-payout-black-box-with/"
       },
       "categories": [
@@ -5330,7 +3435,6 @@
       "url": "https://aichieve.net/tariff-cliff-already-priced-in/",
       "path": "/tariff-cliff-already-priced-in/",
       "sites_live": {
-        "giniloh.com": "/tariff-cliff-already-priced-in/",
         "aichieve.net": "/tariff-cliff-already-priced-in/"
       },
       "categories": [
@@ -5354,7 +3458,6 @@
       "url": "https://aichieve.net/tariff-split-reshoring-heavy-half/",
       "path": "/tariff-split-reshoring-heavy-half/",
       "sites_live": {
-        "giniloh.com": "/tariff-split-reshoring-heavy-half/",
         "aichieve.net": "/tariff-split-reshoring-heavy-half/"
       },
       "categories": [
@@ -5378,7 +3481,6 @@
       "url": "https://aichieve.net/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
       "path": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
       "sites_live": {
-        "giniloh.com": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
         "aichieve.net": "/the-cloud-bill-break-even-when-renting-servers-stops-paying/"
       },
       "categories": [
@@ -5402,7 +3504,6 @@
       "url": "https://aichieve.net/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
       "path": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
       "sites_live": {
-        "giniloh.com": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/",
         "aichieve.net": "/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/"
       },
       "categories": [
@@ -5426,7 +3527,6 @@
       "url": "https://aichieve.net/token-price-record-low-budget-overrun/",
       "path": "/token-price-record-low-budget-overrun/",
       "sites_live": {
-        "giniloh.com": "/token-price-record-low-budget-overrun/",
         "aichieve.net": "/token-price-record-low-budget-overrun/"
       },
       "categories": [
@@ -5450,7 +3550,6 @@
       "url": "https://aichieve.net/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
       "path": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
       "sites_live": {
-        "giniloh.com": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/",
         "aichieve.net": "/token-prices-just-halved-the-cfo-still-cant-read-the-bill/"
       },
       "categories": [
@@ -5474,7 +3573,6 @@
       "url": "https://aichieve.net/tools/gpu-compute/",
       "path": "/tools/gpu-compute/",
       "sites_live": {
-        "giniloh.com": "/calculators/gpu-compute/",
         "aichieve.net": "/tools/gpu-compute/"
       },
       "categories": [],
@@ -5513,7 +3611,6 @@
       "url": "https://aichieve.net/up-ns-rail-merger-clears-summary-denial/",
       "path": "/up-ns-rail-merger-clears-summary-denial/",
       "sites_live": {
-        "giniloh.com": "/up-ns-rail-merger-clears-summary-denial/",
         "aichieve.net": "/up-ns-rail-merger-clears-summary-denial/"
       },
       "categories": [
@@ -5537,7 +3634,6 @@
       "url": "https://aichieve.net/vendor-replacement-ai-ceiling/",
       "path": "/vendor-replacement-ai-ceiling/",
       "sites_live": {
-        "giniloh.com": "/vendor-replacement-ai-ceiling/",
         "aichieve.net": "/vendor-replacement-ai-ceiling/"
       },
       "categories": [
@@ -5561,7 +3657,6 @@
       "url": "https://aichieve.net/wage-floor-sets-robot-payback/",
       "path": "/wage-floor-sets-robot-payback/",
       "sites_live": {
-        "giniloh.com": "/wage-floor-sets-robot-payback/",
         "aichieve.net": "/wage-floor-sets-robot-payback/"
       },
       "categories": [
@@ -5585,7 +3680,6 @@
       "url": "https://aichieve.net/warehouse-pick-error-tax-payback/",
       "path": "/warehouse-pick-error-tax-payback/",
       "sites_live": {
-        "giniloh.com": "/warehouse-pick-error-tax-payback/",
         "aichieve.net": "/warehouse-pick-error-tax-payback/"
       },
       "categories": [
@@ -5609,7 +3703,6 @@
       "url": "https://aichieve.net/why-importers-forfeit-duty-refunds/",
       "path": "/why-importers-forfeit-duty-refunds/",
       "sites_live": {
-        "giniloh.com": "/why-importers-forfeit-duty-refunds/",
         "aichieve.net": "/why-importers-forfeit-duty-refunds/"
       },
       "categories": [
@@ -5633,7 +3726,6 @@
       "url": "https://aichieve.net/you-think-youre-governing-your-agents/",
       "path": "/you-think-youre-governing-your-agents/",
       "sites_live": {
-        "giniloh.com": "/you-think-youre-governing-your-agents/",
         "aichieve.net": "/you-think-youre-governing-your-agents/"
       },
       "categories": [
@@ -5657,7 +3749,6 @@
       "url": "https://aichieve.net/your-32gb-card-gone/",
       "path": "/your-32gb-card-gone/",
       "sites_live": {
-        "giniloh.com": "/your-32gb-card-gone/",
         "aichieve.net": "/your-32gb-card-gone/"
       },
       "categories": [
@@ -5681,7 +3772,6 @@
       "url": "https://aichieve.net/your-chip-stopped-deciding/",
       "path": "/your-chip-stopped-deciding/",
       "sites_live": {
-        "giniloh.com": "/your-chip-stopped-deciding/",
         "aichieve.net": "/your-chip-stopped-deciding/"
       },
       "categories": [
@@ -5705,7 +3795,6 @@
       "url": "https://aichieve.net/your-cluster-hidden-clock/",
       "path": "/your-cluster-hidden-clock/",
       "sites_live": {
-        "giniloh.com": "/your-cluster-hidden-clock/",
         "aichieve.net": "/your-cluster-hidden-clock/"
       },
       "categories": [
@@ -5729,7 +3818,6 @@
       "url": "https://aichieve.net/zet-scale-ev-truck-residual-value-risk/",
       "path": "/zet-scale-ev-truck-residual-value-risk/",
       "sites_live": {
-        "giniloh.com": "/zet-scale-ev-truck-residual-value-risk/",
         "aichieve.net": "/zet-scale-ev-truck-residual-value-risk/"
       },
       "categories": [
@@ -5745,5 +3833,1196 @@
       "source": "frontend-sitemap"
     }
   ],
-  "not_live": []
+  "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 880,
+      "slug": "wage-floor-sets-robot-payback",
+      "title": "Warehouse Payback: $17.00, Not $17.95",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T19:49:17",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 878,
+      "slug": "your-cluster-hidden-clock",
+      "title": "Your Cluster&#8217;s Hidden Clock: 3 Minor Versions, 1 Year",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T19:10:08",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 874,
+      "slug": "prefill-decode-two-pool-gap",
+      "title": "Why Your Card Serves 1.6: The Two-Pool Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T18:49:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 871,
+      "slug": "gate-the-step-not-the-model",
+      "title": "Your Agent&#8217;s Next Step: 11-14x Likelier to Fail",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T17:41:02",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 867,
+      "slug": "owned-shuttles-or-rented-robots",
+      "title": "$62M Says You Never Buy Robots",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T12:53:52",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 866,
+      "slug": "flat-price-was-the-hedge",
+      "title": "Your Jira Bill Rose 10%: Memory Rose Six Times",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T12:14:04",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 863,
+      "slug": "your-chip-stopped-deciding",
+      "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T11:43:07",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 861,
+      "slug": "stale-grants-travel-the-graph",
+      "title": "Your Agent Fabric&#8217;s 52.2% Blind Spot",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T11:14:09",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 859,
+      "slug": "retry-permission-leaves-the-caller",
+      "title": "Retry Budgets Fail: Agents Retry 60 of 80 Anyway",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-14T10:41:06",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 856,
+      "slug": "hour-14-recovery-wall",
+      "title": "Dock Overtime: Your Real 14-Hour Cost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T20:16:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 854,
+      "slug": "build-wait-payback-threshold",
+      "title": "Silent Build Wait: 90 Seconds, Not 11 Minutes",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T19:44:11",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 852,
+      "slug": "ai-coding-seats-measure-or-renew",
+      "title": "AI Coding Seats: The 75-Point Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T18:39:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 850,
+      "slug": "remediator-recovers-46-percent",
+      "title": "Your Remediator Recovers 46.67%: The Silent Regression",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T18:09:53",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 848,
+      "slug": "100-case-eval-925-coverage",
+      "title": "Your 100-Case Eval: 92.5% Coverage, Not 95%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T17:38:59",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 846,
+      "slug": "shippers-stuck-in-the-gap",
+      "title": "49.9% On Time: Shippers Stuck in the Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T13:17:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 843,
+      "slug": "your-32gb-card-gone",
+      "title": "Your 32GB Card, Gone: 41% Memory Hike",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T12:44:17",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 841,
+      "slug": "aws-cannot-restore-bahrain",
+      "title": "AWS Cannot Restore Bahrain: 144 Services Lost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T11:43:02",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 839,
+      "slug": "rack-ride-through-two-second-duty",
+      "title": "Right Locally, Wrong by 3.8 GW",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T11:19:52",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 835,
+      "slug": "agent-failures-tests-stayed-green",
+      "title": "70% of Agent Failures: Your Tests Stayed Green",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-13T10:44:57",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 834,
+      "slug": "slow-movers-hold-your-stock",
+      "title": "Ops Leaders: Why 60.7% of Stock Hides Costs",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-12T19:41:10",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 832,
+      "slug": "ai-incident-clock-4-hours-not-15-days",
+      "title": "Your AI Incident Clock: 4 Hours, Not 15 Days",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-12T18:12:45",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 830,
+      "slug": "agent-timeout-false-alarm-budget",
+      "title": "Agent Timeouts: Pick 0.1%, Not a Round Number",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-12T17:37:49",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 827,
+      "slug": "air-freight-wont-price-a-year",
+      "title": "60% Air Deals: Your Stock Math Breaks",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-12T12:40:02",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 825,
+      "slug": "kill-switch-misses-half-your-agents",
+      "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-12T11:10:54",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 821,
+      "slug": "one-skill-too-many-green-test",
+      "title": "270 Attacks: Your Green Tests Are Blind",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-12T10:40:29",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 810,
+      "slug": "why-importers-forfeit-duty-refunds",
+      "title": "Why Importers Forfeit 99% Duty Refunds",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T18:09:04",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 795,
+      "slug": "nearshoring-doesnt-move-the-trade-case",
+      "title": "Nearshoring Doesn&#8217;t Move the Trade Case",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T18:25:33",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 578,
+      "slug": "kv-cache-is-the-concurrency-ceiling",
+      "title": "Your GPU Runs Out of Cache Before It Runs Out of Math",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T01:57:54",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 537,
+      "slug": "agent-audit-trail-not-evidence",
+      "title": "An Agent&#8217;s Logs Aren&#8217;t Evidence: What to Capture, and How Long to Keep It",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T01:57:19",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 541,
+      "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
+      "title": "$915M Illusion: Your AI Judge Moves",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T18:35:52",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 554,
+      "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
+      "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T01:54:19",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 778,
+      "slug": "diesel-620-electric-freight-certificate-gap",
+      "title": "Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T01:42:34",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 547,
+      "slug": "control-tower-silent-exception",
+      "title": "Will Your Control Tower Auto-Resolve the Theft It Can&#8217;t See?",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T22:06:48",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 531,
+      "slug": "you-think-youre-governing-your-agents",
+      "title": "You Think You&#8217;re Governing Your AI Agents. The Data Says You&#8217;re Not.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T22:06:31",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 784,
+      "slug": "last-mile-carbon-number-is-a-rate-table",
+      "title": "Your Last-Mile Carbon Number Is a Rate Table",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T22:02:35",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 543,
+      "slug": "azure-control-plane-single-point-of-failure",
+      "title": "Azure&#8217;s Bad 40 Hours: The Control Plane Is the Single Point of Failure",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T01:35:03",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 545,
+      "slug": "local-ai-payback-cloud-gpu-spread",
+      "title": "Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T01:25:53",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 556,
+      "slug": "fine-tune-vs-rent-by-token",
+      "title": "Fine-Tune or Rent: The Denominator Decides Your Break-Even",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T01:10:36",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 558,
+      "slug": "demurrage-invoice-30-day-clocks",
+      "title": "A Late Container&#8217;s Bill Carries Two 30-Day Clocks",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T01:09:53",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 596,
+      "slug": "agent-memory-tiering-l1-l4",
+      "title": "Long Context Is Not Memory: Why AI Agents Need Tiered State",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T01:08:52",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 600,
+      "slug": "fuel-surcharge-peg-mpg-audit",
+      "title": "Your Fuel Surcharge Hides Three Negotiated Numbers",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T01:01:15",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 549,
+      "slug": "agent-reliability-pass-k-not-one-green-run",
+      "title": "One Green Run Is Not Reliability: Gating Agents on Pass^k",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T00:41:37",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 533,
+      "slug": "fed-rate-hike-inverts-working-capital-trap",
+      "title": "Higher Rates Meet Historically Lean Inventories",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T00:34:58",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 598,
+      "slug": "cache-boundary-decides-input-bill",
+      "title": "Where the Prompt Breaks Decides the AI Bill",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T00:33:18",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 572,
+      "slug": "agent-memory-poisoning-write-path",
+      "title": "Agent Memory Poisoning: Guard the Write, Not the Prompt",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-09T00:14:17",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 580,
+      "slug": "sla-credit-is-not-insurance",
+      "title": "Why Cloud Uptime SLAs Are Not Insurance",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T23:32:55",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 561,
+      "slug": "retry-is-the-failure-amplifier",
+      "title": "The Retry Is the Bug: An Agent&#8217;s Costliest Failure Mode",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T23:30:51",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 550,
+      "slug": "rack-power-density-ceiling-build-before-you-buy",
+      "title": "The 40 kW Line: Why the AI Rack Is a Building Project",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T23:04:55",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 539,
+      "slug": "inventory-carrying-cost-rate",
+      "title": "Inventory Carrying Cost Is 20\u201330% a Year, Not Your 7% Borrowing Rate",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T23:03:55",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 568,
+      "slug": "vendor-replacement-ai-ceiling",
+      "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just Won&#8217;t Run It",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T23:01:23",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 576,
+      "slug": "agent-tool-count-ceiling",
+      "title": "The Tool-List Budget: How Many Tools One Agent Can Hold",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:50:56",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 570,
+      "slug": "automation-payback-splits-by-sku-geometry",
+      "title": "Amazon Builds the Robots; Walmart Builds for What They Can&#8217;t Lift",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:49:48",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 563,
+      "slug": "durable-execution-not-a-transaction",
+      "title": "Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:42:39",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 566,
+      "slug": "gpu-hour-price-set-by-memory",
+      "title": "The Price of a GPU-Hour Is Now Set by Memory, Not Compute",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:40:12",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 594,
+      "slug": "forecast-accuracy-is-not-shock-protection",
+      "title": "Forecast Accuracy: A 32% Boost Will Not Stop El Ni\u00f1o",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:38:06",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 605,
+      "slug": "safety-stock-forecast-error-not-demand-noise",
+      "title": "Safety Stock Sizing: Why Your Buffer Uses the Wrong Number",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:13:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 582,
+      "slug": "warehouse-pick-error-tax-payback",
+      "title": "A 1% Mispick Rate Is a Seven-Figure Line Item",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T12:35:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 584,
+      "slug": "agent-failure-topology-not-model",
+      "title": "Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T12:34:59",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 586,
+      "slug": "token-price-record-low-budget-overrun",
+      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn&#8217;t.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T12:34:18",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 588,
+      "slug": "freight-scale-bet-vs-contract-duration",
+      "title": "The $5.8 Billion Freight Bet Meets a Market That Won&#8217;t Commit",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T12:33:11",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 529,
+      "slug": "agent-safety-gate-moves-to-verified-state",
+      "title": "The Agent Safety Gate Moves to Verified State",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-06T23:41:40",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 501,
+      "slug": "the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost",
+      "title": "The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-04T21:34:11",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 514,
+      "slug": "caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors",
+      "title": "CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor\u2019s Spreadsheet:",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-04T18:30:02",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 511,
+      "slug": "parcelproof-stop-bleeding-28-on-carrier-invoices",
+      "title": "ParcelProof: Stop Bleeding 2\u20138% on Carrier Invoices",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-04T16:45:36",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 508,
+      "slug": "facturgate-the-deterministic-pre-send-gate-converter-for-european-e",
+      "title": "FacturGate: The Deterministic Pre-Send Gate &#038; Converter for European E-Invoicing (EN 16931)",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-04T15:06:41",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 484,
+      "slug": "tariff-split-reshoring-heavy-half",
+      "title": "The Tariff Split in Two \u2014 Reshoring Took the Heavy Half",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-03T18:16:28",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 498,
+      "slug": "stripe-accounting-software-solving-the-payout-black-box-with",
+      "title": "Stripe Accounting Software: Solving the Payout Black Box with LedgerLink",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-04T15:07:11",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 421,
+      "slug": "goods-tariff-relief-vs-vessel-fee",
+      "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-03T00:44:33",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 422,
+      "slug": "planning-ai-buys-capability-not-autonomy",
+      "title": "Planning AI Buys Capability, Not Autonomy",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-03T00:43:04",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 404,
+      "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
+      "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-03T00:32:39",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 395,
+      "slug": "zet-scale-ev-truck-residual-value-risk",
+      "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn&#8217;t the Reason",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-03T00:54:23",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 420,
+      "slug": "token-prices-just-halved-the-cfo-still-cant-read-the-bill",
+      "title": "Token Prices Just Halved. The CFO Still Can\u2019t Read the Bill.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-02T22:28:12",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 462,
+      "slug": "same-day-race-undoes-route-optimization",
+      "title": "The Same-Day Delivery Race Is Undoing a Decade of Route Optimization",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-03T15:01:04",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 392,
+      "slug": "reshoring-moved-the-tariff-upstream",
+      "title": "Reshoring Didn&#8217;t Kill Tariff Risk \u2014 It Moved Upstream Into Packaging",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:23:54",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 397,
+      "slug": "up-ns-rail-merger-clears-summary-denial",
+      "title": "Coast-to-Coast Rail Merger Clears First Big Test",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T15:52:22",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 398,
+      "slug": "ai-spend-27t-cost-visibility-mandate",
+      "title": "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T15:52:31",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 399,
+      "slug": "maskills-multi-agent-skills-optimization",
+      "title": "Stop Piling Memory Onto AI Agents: Optimize Skills",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T15:52:26",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 400,
+      "slug": "tariff-cliff-already-priced-in",
+      "title": "CFOs Are Pricing In the Tariff Cliff",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-08T22:18:34",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 401,
+      "slug": "mcp-skills-extension",
+      "title": "MCP Skills Extension: Standardizing Agent Workflows",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-10T15:52:33",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 391,
+      "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
+      "title": "The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-09-30T23:44:46",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 380,
+      "slug": "multi-agent-orchestration-building-the-one-person-enterprise",
+      "title": "Multi Agent Orchestration: Building the One-Person Enterprise",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-09-24T01:25:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 374,
+      "slug": "agentic-ai-adoption-soars-but-profits-stall-in-2026",
+      "title": "Agentic AI Adoption Soars, But Profits Stall in 2026",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-09-19T12:41:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 364,
+      "slug": "openai-just-made-the-agent-loop-a-commodity",
+      "title": "OpenAI just made the agent loop a commodity",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-09-19T02:04:27",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 355,
+      "slug": "openais-custom-chip-beats-nvidia-on-power-2",
+      "title": "OpenAI&#8217;s custom chip beats Nvidia on power",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-09-18T00:49:05",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 345,
+      "slug": "nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet",
+      "title": "Nvidia says its GPUs aren&#8217;t sold out. Its CFO&#8217;s $279 billion memory bet says otherwise.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-09-17T02:10:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    }
+  ]
 }

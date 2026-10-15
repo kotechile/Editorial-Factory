@@ -1,111 +1,37 @@
-# Internal-link candidates — 2026-10-15T07:02:06+00:00
+# Internal-link candidates — 2026-10-15T07:15:24+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 100 live article(s), 21 other target(s)
+## giniloh.com — 26 live article(s), 19 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, career-ai-resilience, major-purchases-assets, mental-models-strategy, money-wealth, supply-chain-operations
 
-- [$62M Says You Never Buy Robots](https://giniloh.com/owned-shuttles-or-rented-robots/) — Supply Chain & Operations — also served by aichieve.net/owned-shuttles-or-rented-robots/
-- [$915M Illusion: Your AI Judge Moves](https://giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/) — AI Stack & Tool TCO — also served by aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/
-- [1.016M Non-GPUs: Your Chip Stopped Deciding](https://giniloh.com/your-chip-stopped-deciding/) — Major Purchases & Assets — also served by aichieve.net/your-chip-stopped-deciding/
-- [270 Attacks: Your Green Tests Are Blind](https://giniloh.com/one-skill-too-many-green-test/) — Autonomous & Agentic Workflows — also served by aichieve.net/one-skill-too-many-green-test/
-- [49.9% On Time: Shippers Stuck in the Gap](https://giniloh.com/shippers-stuck-in-the-gap/) — Supply Chain & Operations — also served by aichieve.net/shippers-stuck-in-the-gap/
-- [60% Air Deals: Your Stock Math Breaks](https://giniloh.com/air-freight-wont-price-a-year/) — Supply Chain & Operations — also served by aichieve.net/air-freight-wont-price-a-year/
-- [70% of Agent Failures: Your Tests Stayed Green](https://giniloh.com/agent-failures-tests-stayed-green/) — AI Stack & Tool TCO — also served by aichieve.net/agent-failures-tests-stayed-green/
-- [A 1% Mispick Rate Is a Seven-Figure Line Item](https://giniloh.com/warehouse-pick-error-tax-payback/) — Supply Chain & Operations — also served by aichieve.net/warehouse-pick-error-tax-payback/
-- [A Late Container's Bill Carries Two 30-Day Clocks](https://giniloh.com/demurrage-invoice-30-day-clocks/) — Supply Chain & Operations — also served by aichieve.net/demurrage-invoice-30-day-clocks/
-- [AI Coding Seats: The 75-Point Gap](https://giniloh.com/ai-coding-seats-measure-or-renew/) — Mental Models & Strategy — also served by aichieve.net/ai-coding-seats-measure-or-renew/
-- [AWS Cannot Restore Bahrain: 144 Services Lost](https://giniloh.com/aws-cannot-restore-bahrain/) — Mental Models & Strategy — also served by aichieve.net/aws-cannot-restore-bahrain/
-- [Agent Memory Poisoning: Guard the Write, Not the Prompt](https://giniloh.com/agent-memory-poisoning-write-path/) — Autonomous & Agentic Workflows — also served by aichieve.net/agent-memory-poisoning-write-path/
-- [Agent Timeouts: Pick 0.1%, Not a Round Number](https://giniloh.com/agent-timeout-false-alarm-budget/) — Autonomous & Agentic Workflows — also served by aichieve.net/agent-timeout-false-alarm-budget/
-- [Agentic AI Adoption Soars, But Profits Stall in 2026](https://giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO — also served by aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/
-- [Amazon Builds the Robots; Walmart Builds for What They Can't Lift](https://giniloh.com/automation-payback-splits-by-sku-geometry/) — Supply Chain & Operations — also served by aichieve.net/automation-payback-splits-by-sku-geometry/
-- [An Agent's Logs Aren't Evidence: What to Capture, and How Long to Keep It](https://giniloh.com/agent-audit-trail-not-evidence/) — Mental Models & Strategy — also served by aichieve.net/agent-audit-trail-not-evidence/
-- [Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure](https://giniloh.com/azure-control-plane-single-point-of-failure/) — Mental Models & Strategy — also served by aichieve.net/azure-control-plane-single-point-of-failure/
 - [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — Mental Models & Strategy
 - [Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System](https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/) — Money & Wealth
-- [CFOs Are Pricing In the Tariff Cliff](https://giniloh.com/tariff-cliff-already-priced-in/) — Supply Chain & Operations — also served by aichieve.net/tariff-cliff-already-priced-in/
-- [CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor’s Spreadsheet:](https://giniloh.com/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/) — Business Automation & Operations — also served by aichieve.net/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/
-- [Coast-to-Coast Rail Merger Clears First Big Test](https://giniloh.com/up-ns-rail-merger-clears-summary-denial/) — Supply Chain & Operations — also served by aichieve.net/up-ns-rail-merger-clears-summary-denial/
-- [Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight](https://giniloh.com/diesel-620-electric-freight-certificate-gap/) — Supply Chain & Operations — also served by aichieve.net/diesel-620-electric-freight-certificate-gap/
+- [Calculate Your Career Relocation Payback](https://giniloh.com/calculate-your-career-relocation-payback/) — Mental Models & Strategy
 - [Disney+ and Hulu Just Raised Prices 13% — Right After Doubling Profits](https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/) — Money & Wealth
-- [Dock Overtime: Your Real 14-Hour Cost](https://giniloh.com/hour-14-recovery-wall/) — Supply Chain & Operations — also served by aichieve.net/hour-14-recovery-wall/
-- [Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts](https://giniloh.com/durable-execution-not-a-transaction/) — Autonomous & Agentic Workflows — also served by aichieve.net/durable-execution-not-a-transaction/
-- [Electric Trucks Just Doubled Overnight — and the Battery Wasn't the Reason](https://giniloh.com/zet-scale-ev-truck-residual-value-risk/) — Supply Chain & Operations — also served by aichieve.net/zet-scale-ev-truck-residual-value-risk/
+- [Ebike Costs: Per-Use Calculator for Commuters](https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/) — Major Purchases & Assets
 - [Expats: Evaluating the True Value of a Job-Driven Move overseas](https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/) — Mental Models & Strategy
-- [FacturGate: The Deterministic Pre-Send Gate & Converter for European E-Invoicing (EN 16931)](https://giniloh.com/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/) — Business Automation & Operations — also served by aichieve.net/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/
-- [Fine-Tune or Rent: The Denominator Decides Your Break-Even](https://giniloh.com/fine-tune-vs-rent-by-token/) — Major Purchases & Assets — also served by aichieve.net/fine-tune-vs-rent-by-token/
-- [Forecast Accuracy: A 32% Boost Will Not Stop El Niño](https://giniloh.com/forecast-accuracy-is-not-shock-protection/) — Supply Chain & Operations — also served by aichieve.net/forecast-accuracy-is-not-shock-protection/
-- [Higher Rates Meet Historically Lean Inventories](https://giniloh.com/fed-rate-hike-inverts-working-capital-trap/) — Supply Chain & Operations — also served by aichieve.net/fed-rate-hike-inverts-working-capital-trap/
-- [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing Rate](https://giniloh.com/inventory-carrying-cost-rate/) — Supply Chain & Operations — also served by aichieve.net/inventory-carrying-cost-rate/
+- [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — Money & Wealth
 - [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — Major Purchases & Assets
-- [Kill Switch Misses Half Your Agents: 12 Vendors Agree](https://giniloh.com/kill-switch-misses-half-your-agents/) — Mental Models & Strategy — also served by aichieve.net/kill-switch-misses-half-your-agents/
-- [Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways](https://giniloh.com/local-ai-payback-cloud-gpu-spread/) — Major Purchases & Assets — also served by aichieve.net/local-ai-payback-cloud-gpu-spread/
-- [Long Context Is Not Memory: Why AI Agents Need Tiered State](https://giniloh.com/agent-memory-tiering-l1-l4/) — Autonomous & Agentic Workflows — also served by aichieve.net/agent-memory-tiering-l1-l4/
-- [MCP Skills Extension: Standardizing Agent Workflows](https://giniloh.com/mcp-skills-extension/) — Autonomous & Agentic Workflows — also served by aichieve.net/mcp-skills-extension/
+- [Jobs Switch Calculator: Step-by-Step Profit Guide](https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/) — Mental Models & Strategy
+- [Lease Break Calculator: Save $1,850 in 3 Steps](https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/) — Mental Models & Strategy
 - [Moss Landing Burns Again: Homeowners Become the Grid](https://giniloh.com/moss-landing-burns-again-homeowners-become-the-grid/) — Money & Wealth
-- [Multi Agent Orchestration: Building the One-Person Enterprise](https://giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO — also served by aichieve.net/multi-agent-orchestration-building-the-one-person-enterprise/
-- [Nearshoring Doesn't Move the Trade Case](https://giniloh.com/nearshoring-doesnt-move-the-trade-case/) — Supply Chain & Operations — also served by aichieve.net/nearshoring-doesnt-move-the-trade-case/
-- [Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.](https://giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO — also served by aichieve.net/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/
+- [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — Major Purchases & Assets
+- [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — Mental Models & Strategy
 - [One Approval, Two Payments: The 24-Hour Trap](https://giniloh.com/one-approval-two-payments/) — Autonomous & Agentic Workflows
-- [One Green Run Is Not Reliability: Gating Agents on Pass^k](https://giniloh.com/agent-reliability-pass-k-not-one-green-run/) — AI Stack & Tool TCO — also served by aichieve.net/agent-reliability-pass-k-not-one-green-run/
-- [OpenAI just made the agent loop a commodity](https://giniloh.com/openai-just-made-the-agent-loop-a-commodity/) — AI Stack & Tool TCO — also served by aichieve.net/openai-just-made-the-agent-loop-a-commodity/
-- [OpenAI's custom chip beats Nvidia on power](https://giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/) — AI Stack & Tool TCO — also served by aichieve.net/openais-custom-chip-beats-nvidia-on-power-2/
-- [Ops Leaders: Why 60.7% of Stock Hides Costs](https://giniloh.com/slow-movers-hold-your-stock/) — Supply Chain & Operations — also served by aichieve.net/slow-movers-hold-your-stock/
 - [Options Trap: Your 26% AMT Bill](https://giniloh.com/post-termination-option-clock-tax/) — Career & AI Resilience
-- [ParcelProof: Stop Bleeding 2–8% on Carrier Invoices](https://giniloh.com/parcelproof-stop-bleeding-28-on-carrier-invoices/) — Business Automation & Operations — also served by aichieve.net/parcelproof-stop-bleeding-28-on-carrier-invoices/
-- [Planner-as-Router: Fold the Model Choice Into the Plan](https://giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/) — Autonomous & Agentic Workflows — also served by aichieve.net/planner-as-router-fold-the-model-choice-into-the-plan/
-- [Planning AI Buys Capability, Not Autonomy](https://giniloh.com/planning-ai-buys-capability-not-autonomy/) — Supply Chain & Operations — also served by aichieve.net/planning-ai-buys-capability-not-autonomy/
-- [Reshoring Didn't Kill Tariff Risk — It Moved Upstream Into Packaging](https://giniloh.com/reshoring-moved-the-tariff-upstream/) — Supply Chain & Operations — also served by aichieve.net/reshoring-moved-the-tariff-upstream/
-- [Retry Budgets Fail: Agents Retry 60 of 80 Anyway](https://giniloh.com/retry-permission-leaves-the-caller/) — Autonomous & Agentic Workflows — also served by aichieve.net/retry-permission-leaves-the-caller/
-- [Right Locally, Wrong by 3.8 GW](https://giniloh.com/rack-ride-through-two-second-duty/) — AI Stack & Tool TCO — also served by aichieve.net/rack-ride-through-two-second-duty/
-- [Safety Stock Sizing: Why Your Buffer Uses the Wrong Number](https://giniloh.com/safety-stock-forecast-error-not-demand-noise/) — Supply Chain & Operations — also served by aichieve.net/safety-stock-forecast-error-not-demand-noise/
+- [Replace Laptop Screen? Let This Decision Engine Do the Math](https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/) — Major Purchases & Assets
 - [Self-Hosting Break-Even: 1.26 Hours a Year](https://giniloh.com/self-hosting-break-even-one-hour-a-year/) — Money & Wealth
-- [Silent Build Wait: 90 Seconds, Not 11 Minutes](https://giniloh.com/build-wait-payback-threshold/) — Major Purchases & Assets — also served by aichieve.net/build-wait-payback-threshold/
 - [Simulate a Frictionless Liquidity Sweep in Giniloh](https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/) — Money & Wealth
 - [Smart Ways to Invest an Extra $500 a Day](https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/) — Money & Wealth
 - [SpaceX's Staggered Lockup: Six Windows, Not One](https://giniloh.com/staggered-lockup-six-selling-decisions/) — Career & AI Resilience
-- [Stop Piling Memory Onto AI Agents: Optimize Skills](https://giniloh.com/maskills-multi-agent-skills-optimization/) — Autonomous & Agentic Workflows — also served by aichieve.net/maskills-multi-agent-skills-optimization/
-- [Stripe Accounting Software: Solving the Payout Black Box with LedgerLink](https://giniloh.com/stripe-accounting-software-solving-the-payout-black-box-with/) — Business Automation & Operations — also served by aichieve.net/stripe-accounting-software-solving-the-payout-black-box-with/
-- [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://giniloh.com/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO — also served by aichieve.net/ai-spend-27t-cost-visibility-mandate/
-- [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO — also served by aichieve.net/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/
-- [The $5.8 Billion Freight Bet Meets a Market That Won't Commit](https://giniloh.com/freight-scale-bet-vs-contract-duration/) — Supply Chain & Operations — also served by aichieve.net/freight-scale-bet-vs-contract-duration/
-- [The 40 kW Line: Why the AI Rack Is a Building Project](https://giniloh.com/rack-power-density-ceiling-build-before-you-buy/) — AI Stack & Tool TCO — also served by aichieve.net/rack-power-density-ceiling-build-before-you-buy/
-- [The Agent Safety Gate Moves to Verified State](https://giniloh.com/agent-safety-gate-moves-to-verified-state/) — Autonomous & Agentic Workflows — also served by aichieve.net/agent-safety-gate-moves-to-verified-state/
-- [The Cloud Bill Break-Even: When Renting Servers Stops Paying](https://giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/) — Mental Models & Strategy — also served by aichieve.net/the-cloud-bill-break-even-when-renting-servers-stops-paying/
-- [The Price of a GPU-Hour Is Now Set by Memory, Not Compute](https://giniloh.com/gpu-hour-price-set-by-memory/) — Major Purchases & Assets — also served by aichieve.net/gpu-hour-price-set-by-memory/
-- [The Retry Is the Bug: An Agent's Costliest Failure Mode](https://giniloh.com/retry-is-the-failure-amplifier/) — Autonomous & Agentic Workflows — also served by aichieve.net/retry-is-the-failure-amplifier/
-- [The Same-Day Delivery Race Is Undoing a Decade of Route Optimization](https://giniloh.com/same-day-race-undoes-route-optimization/) — Supply Chain & Operations — also served by aichieve.net/same-day-race-undoes-route-optimization/
-- [The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost](https://giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — Supply Chain & Operations — also served by aichieve.net/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/
-- [The Tariff Split in Two — Reshoring Took the Heavy Half](https://giniloh.com/tariff-split-reshoring-heavy-half/) — Supply Chain & Operations — also served by aichieve.net/tariff-split-reshoring-heavy-half/
-- [The Tool-List Budget: How Many Tools One Agent Can Hold](https://giniloh.com/agent-tool-count-ceiling/) — Autonomous & Agentic Workflows — also served by aichieve.net/agent-tool-count-ceiling/
+- [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — Money & Wealth
 - [The Two Clocks That Decide Your First Year Abroad](https://giniloh.com/split-year-two-clock-seam/) — Money & Wealth
-- [The Vendor-Replacement Wave Is Real — AI Just Won't Run It](https://giniloh.com/vendor-replacement-ai-ceiling/) — AI Stack & Tool TCO — also served by aichieve.net/vendor-replacement-ai-ceiling/
-- [Token Prices Hit Record Lows. Enterprise AI Bills Didn't.](https://giniloh.com/token-price-record-low-budget-overrun/) — AI Stack & Tool TCO — also served by aichieve.net/token-price-record-low-budget-overrun/
-- [Token Prices Just Halved. The CFO Still Can’t Read the Bill.](https://giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/) — AI Stack & Tool TCO — also served by aichieve.net/token-prices-just-halved-the-cfo-still-cant-read-the-bill/
-- [Warehouse Payback: $17.00, Not $17.95](https://giniloh.com/wage-floor-sets-robot-payback/) — Supply Chain & Operations — also served by aichieve.net/wage-floor-sets-robot-payback/
-- [Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.](https://giniloh.com/goods-tariff-relief-vs-vessel-fee/) — Supply Chain & Operations — also served by aichieve.net/goods-tariff-relief-vs-vessel-fee/
-- [Where the Prompt Breaks Decides the AI Bill](https://giniloh.com/cache-boundary-decides-input-bill/) — AI Stack & Tool TCO — also served by aichieve.net/cache-boundary-decides-input-bill/
+- [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — Money & Wealth
 - [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — Career & AI Resilience
-- [Why Cloud Uptime SLAs Are Not Insurance](https://giniloh.com/sla-credit-is-not-insurance/) — AI Stack & Tool TCO — also served by aichieve.net/sla-credit-is-not-insurance/
 - [Why Home Assistant Renamed Its Cloud](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — Money & Wealth
-- [Why Importers Forfeit 99% Duty Refunds](https://giniloh.com/why-importers-forfeit-duty-refunds/) — Supply Chain & Operations — also served by aichieve.net/why-importers-forfeit-duty-refunds/
-- [Why Your Card Serves 1.6: The Two-Pool Gap](https://giniloh.com/prefill-decode-two-pool-gap/) — Major Purchases & Assets — also served by aichieve.net/prefill-decode-two-pool-gap/
-- [Will Your Control Tower Auto-Resolve the Theft It Can't See?](https://giniloh.com/control-tower-silent-exception/) — Supply Chain & Operations — also served by aichieve.net/control-tower-silent-exception/
-- [You Think You're Governing Your AI Agents. The Data Says You're Not.](https://giniloh.com/you-think-youre-governing-your-agents/) — Mental Models & Strategy — also served by aichieve.net/you-think-youre-governing-your-agents/
-- [Your 100-Case Eval: 92.5% Coverage, Not 95%](https://giniloh.com/100-case-eval-925-coverage/) — AI Stack & Tool TCO — also served by aichieve.net/100-case-eval-925-coverage/
-- [Your 32GB Card, Gone: 41% Memory Hike](https://giniloh.com/your-32gb-card-gone/) — Major Purchases & Assets — also served by aichieve.net/your-32gb-card-gone/
-- [Your AI Incident Clock: 4 Hours, Not 15 Days](https://giniloh.com/ai-incident-clock-4-hours-not-15-days/) — Mental Models & Strategy — also served by aichieve.net/ai-incident-clock-4-hours-not-15-days/
-- [Your Agent Fabric's 52.2% Blind Spot](https://giniloh.com/stale-grants-travel-the-graph/) — Autonomous & Agentic Workflows — also served by aichieve.net/stale-grants-travel-the-graph/
-- [Your Agent's Next Step: 11-14x Likelier to Fail](https://giniloh.com/gate-the-step-not-the-model/) — Autonomous & Agentic Workflows — also served by aichieve.net/gate-the-step-not-the-model/
-- [Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year](https://giniloh.com/your-cluster-hidden-clock/) — AI Stack & Tool TCO — also served by aichieve.net/your-cluster-hidden-clock/
-- [Your Fuel Surcharge Hides Three Negotiated Numbers](https://giniloh.com/fuel-surcharge-peg-mpg-audit/) — Supply Chain & Operations — also served by aichieve.net/fuel-surcharge-peg-mpg-audit/
-- [Your GPU Runs Out of Cache Before It Runs Out of Math](https://giniloh.com/kv-cache-is-the-concurrency-ceiling/) — Major Purchases & Assets — also served by aichieve.net/kv-cache-is-the-concurrency-ceiling/
-- [Your Jira Bill Rose 10%: Memory Rose Six Times](https://giniloh.com/flat-price-was-the-hedge/) — AI Stack & Tool TCO — also served by aichieve.net/flat-price-was-the-hedge/
-- [Your Last-Mile Carbon Number Is a Rate Table](https://giniloh.com/last-mile-carbon-number-is-a-rate-table/) — Supply Chain & Operations — also served by aichieve.net/last-mile-carbon-number-is-a-rate-table/
-- [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://giniloh.com/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows — also served by aichieve.net/agent-failure-topology-not-model/
-- [Your Remediator Recovers 46.67%: The Silent Regression](https://giniloh.com/remediator-recovers-46-percent/) — AI Stack & Tool TCO — also served by aichieve.net/remediator-recovers-46-percent/
+- [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — Major Purchases & Assets
 - [AI Career Radar (tool)](https://giniloh.com/calculators/career-ai-resilience/) — —
 - [AI Stack & Tool TCO (category)](https://giniloh.com/categories/ai-stack-tool-tco/) — Artificial Intelligence & Future of Work, AI Stack & Tool TCO
 - [Artificial Intelligence & Future of Work (category)](https://giniloh.com/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence & Future of Work — also served by aichieve.net/categories/artificial-intelligence-future-of-work/
@@ -114,13 +40,11 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Business Automation & Operations (category)](https://giniloh.com/categories/business-automation-operations/) — Artificial Intelligence & Future of Work, Business Automation & Operations
 - [Career & AI Resilience (category)](https://giniloh.com/categories/career-ai-resilience/) — Artificial Intelligence & Future of Work, Career & AI Resilience
 - [Expat Financial & International Tax Evaluator (tool)](https://giniloh.com/calculators/expat-evaluator/) — —
-- [GPU TCO Analyzer (tool)](https://giniloh.com/calculators/gpu-compute/) — — — also served by aichieve.net/tools/gpu-compute/
 - [Geographic Relocation & Tax Adjustment Modeler (tool)](https://giniloh.com/calculators/relocation-cost/) — —
 - [Home Espresso Cost-per-Use Calculator (tool)](https://giniloh.com/calculators/coffee-arbitrage/) — —
 - [Job-Hop vs. Retention Compensation Calculator (tool)](https://giniloh.com/calculators/raise-velocity/) — —
 - [Lease Break Penalty & Offset Estimator (tool)](https://giniloh.com/calculators/lease-break/) — —
 - [Major Purchases & Assets (category)](https://giniloh.com/categories/major-purchases-assets/) — Major Purchases & Assets
-- [Master Asset & Software TCO Calculator (tool)](https://giniloh.com/calculators/decision-intelligence/) — —
 - [Mental Models & Strategy (category)](https://giniloh.com/categories/mental-models-strategy/) — Mental Models & Strategy
 - [Money & Wealth (category)](https://giniloh.com/categories/money-wealth/) — Money & Wealth
 - [Supply Chain & Operations (category)](https://giniloh.com/categories/supply-chain-operations/) — Supply Chain & Operations — also served by aichieve.net/categories/supply-chain-operations/
@@ -168,93 +92,181 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, lifesty
 
 Category hubs this front serves: artificial-intelligence-future-of-work, supply-chain-operations
 
-- [$62M Says You Never Buy Robots](https://aichieve.net/owned-shuttles-or-rented-robots/) — Supply Chain & Operations — also served by giniloh.com/owned-shuttles-or-rented-robots/
-- [$915M Illusion: Your AI Judge Moves](https://aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/) — AI Stack & Tool TCO — also served by giniloh.com/buying-ai-quality-when-the-score-belongs-to-the-judge/
-- [1.016M Non-GPUs: Your Chip Stopped Deciding](https://aichieve.net/your-chip-stopped-deciding/) — Major Purchases & Assets — also served by giniloh.com/your-chip-stopped-deciding/
-- [270 Attacks: Your Green Tests Are Blind](https://aichieve.net/one-skill-too-many-green-test/) — Autonomous & Agentic Workflows — also served by giniloh.com/one-skill-too-many-green-test/
-- [49.9% On Time: Shippers Stuck in the Gap](https://aichieve.net/shippers-stuck-in-the-gap/) — Supply Chain & Operations — also served by giniloh.com/shippers-stuck-in-the-gap/
-- [60% Air Deals: Your Stock Math Breaks](https://aichieve.net/air-freight-wont-price-a-year/) — Supply Chain & Operations — also served by giniloh.com/air-freight-wont-price-a-year/
-- [70% of Agent Failures: Your Tests Stayed Green](https://aichieve.net/agent-failures-tests-stayed-green/) — AI Stack & Tool TCO — also served by giniloh.com/agent-failures-tests-stayed-green/
-- [A 1% Mispick Rate Is a Seven-Figure Line Item](https://aichieve.net/warehouse-pick-error-tax-payback/) — Supply Chain & Operations — also served by giniloh.com/warehouse-pick-error-tax-payback/
-- [A Late Container's Bill Carries Two 30-Day Clocks](https://aichieve.net/demurrage-invoice-30-day-clocks/) — Supply Chain & Operations — also served by giniloh.com/demurrage-invoice-30-day-clocks/
-- [AI Coding Seats: The 75-Point Gap](https://aichieve.net/ai-coding-seats-measure-or-renew/) — Mental Models & Strategy — also served by giniloh.com/ai-coding-seats-measure-or-renew/
-- [AWS Cannot Restore Bahrain: 144 Services Lost](https://aichieve.net/aws-cannot-restore-bahrain/) — Mental Models & Strategy — also served by giniloh.com/aws-cannot-restore-bahrain/
-- [Agent Memory Poisoning: Guard the Write, Not the Prompt](https://aichieve.net/agent-memory-poisoning-write-path/) — Autonomous & Agentic Workflows — also served by giniloh.com/agent-memory-poisoning-write-path/
-- [Agent Timeouts: Pick 0.1%, Not a Round Number](https://aichieve.net/agent-timeout-false-alarm-budget/) — Autonomous & Agentic Workflows — also served by giniloh.com/agent-timeout-false-alarm-budget/
-- [Agentic AI Adoption Soars, But Profits Stall in 2026](https://aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO — also served by giniloh.com/agentic-ai-adoption-soars-but-profits-stall-in-2026/
-- [Amazon Builds the Robots; Walmart Builds for What They Can't Lift](https://aichieve.net/automation-payback-splits-by-sku-geometry/) — Supply Chain & Operations — also served by giniloh.com/automation-payback-splits-by-sku-geometry/
-- [An Agent's Logs Aren't Evidence: What to Capture, and How Long to Keep It](https://aichieve.net/agent-audit-trail-not-evidence/) — Mental Models & Strategy — also served by giniloh.com/agent-audit-trail-not-evidence/
-- [Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure](https://aichieve.net/azure-control-plane-single-point-of-failure/) — Mental Models & Strategy — also served by giniloh.com/azure-control-plane-single-point-of-failure/
-- [CFOs Are Pricing In the Tariff Cliff](https://aichieve.net/tariff-cliff-already-priced-in/) — Supply Chain & Operations — also served by giniloh.com/tariff-cliff-already-priced-in/
-- [CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor’s Spreadsheet:](https://aichieve.net/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/) — Business Automation & Operations — also served by giniloh.com/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/
-- [Coast-to-Coast Rail Merger Clears First Big Test](https://aichieve.net/up-ns-rail-merger-clears-summary-denial/) — Supply Chain & Operations — also served by giniloh.com/up-ns-rail-merger-clears-summary-denial/
-- [Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight](https://aichieve.net/diesel-620-electric-freight-certificate-gap/) — Supply Chain & Operations — also served by giniloh.com/diesel-620-electric-freight-certificate-gap/
-- [Dock Overtime: Your Real 14-Hour Cost](https://aichieve.net/hour-14-recovery-wall/) — Supply Chain & Operations — also served by giniloh.com/hour-14-recovery-wall/
-- [Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts](https://aichieve.net/durable-execution-not-a-transaction/) — Autonomous & Agentic Workflows — also served by giniloh.com/durable-execution-not-a-transaction/
-- [Electric Trucks Just Doubled Overnight — and the Battery Wasn't the Reason](https://aichieve.net/zet-scale-ev-truck-residual-value-risk/) — Supply Chain & Operations — also served by giniloh.com/zet-scale-ev-truck-residual-value-risk/
-- [FacturGate: The Deterministic Pre-Send Gate & Converter for European E-Invoicing (EN 16931)](https://aichieve.net/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/) — Business Automation & Operations — also served by giniloh.com/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/
-- [Fine-Tune or Rent: The Denominator Decides Your Break-Even](https://aichieve.net/fine-tune-vs-rent-by-token/) — Major Purchases & Assets — also served by giniloh.com/fine-tune-vs-rent-by-token/
-- [Forecast Accuracy: A 32% Boost Will Not Stop El Niño](https://aichieve.net/forecast-accuracy-is-not-shock-protection/) — Supply Chain & Operations — also served by giniloh.com/forecast-accuracy-is-not-shock-protection/
-- [Higher Rates Meet Historically Lean Inventories](https://aichieve.net/fed-rate-hike-inverts-working-capital-trap/) — Supply Chain & Operations — also served by giniloh.com/fed-rate-hike-inverts-working-capital-trap/
-- [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing Rate](https://aichieve.net/inventory-carrying-cost-rate/) — Supply Chain & Operations — also served by giniloh.com/inventory-carrying-cost-rate/
-- [Kill Switch Misses Half Your Agents: 12 Vendors Agree](https://aichieve.net/kill-switch-misses-half-your-agents/) — Mental Models & Strategy — also served by giniloh.com/kill-switch-misses-half-your-agents/
-- [Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways](https://aichieve.net/local-ai-payback-cloud-gpu-spread/) — Major Purchases & Assets — also served by giniloh.com/local-ai-payback-cloud-gpu-spread/
-- [Long Context Is Not Memory: Why AI Agents Need Tiered State](https://aichieve.net/agent-memory-tiering-l1-l4/) — Autonomous & Agentic Workflows — also served by giniloh.com/agent-memory-tiering-l1-l4/
-- [MCP Skills Extension: Standardizing Agent Workflows](https://aichieve.net/mcp-skills-extension/) — Autonomous & Agentic Workflows — also served by giniloh.com/mcp-skills-extension/
-- [Multi Agent Orchestration: Building the One-Person Enterprise](https://aichieve.net/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO — also served by giniloh.com/multi-agent-orchestration-building-the-one-person-enterprise/
-- [Nearshoring Doesn't Move the Trade Case](https://aichieve.net/nearshoring-doesnt-move-the-trade-case/) — Supply Chain & Operations — also served by giniloh.com/nearshoring-doesnt-move-the-trade-case/
-- [Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.](https://aichieve.net/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO — also served by giniloh.com/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/
-- [One Green Run Is Not Reliability: Gating Agents on Pass^k](https://aichieve.net/agent-reliability-pass-k-not-one-green-run/) — AI Stack & Tool TCO — also served by giniloh.com/agent-reliability-pass-k-not-one-green-run/
-- [OpenAI just made the agent loop a commodity](https://aichieve.net/openai-just-made-the-agent-loop-a-commodity/) — AI Stack & Tool TCO — also served by giniloh.com/openai-just-made-the-agent-loop-a-commodity/
-- [OpenAI's custom chip beats Nvidia on power](https://aichieve.net/openais-custom-chip-beats-nvidia-on-power-2/) — AI Stack & Tool TCO — also served by giniloh.com/openais-custom-chip-beats-nvidia-on-power-2/
-- [Ops Leaders: Why 60.7% of Stock Hides Costs](https://aichieve.net/slow-movers-hold-your-stock/) — Supply Chain & Operations — also served by giniloh.com/slow-movers-hold-your-stock/
-- [ParcelProof: Stop Bleeding 2–8% on Carrier Invoices](https://aichieve.net/parcelproof-stop-bleeding-28-on-carrier-invoices/) — Business Automation & Operations — also served by giniloh.com/parcelproof-stop-bleeding-28-on-carrier-invoices/
-- [Planner-as-Router: Fold the Model Choice Into the Plan](https://aichieve.net/planner-as-router-fold-the-model-choice-into-the-plan/) — Autonomous & Agentic Workflows — also served by giniloh.com/planner-as-router-fold-the-model-choice-into-the-plan/
-- [Planning AI Buys Capability, Not Autonomy](https://aichieve.net/planning-ai-buys-capability-not-autonomy/) — Supply Chain & Operations — also served by giniloh.com/planning-ai-buys-capability-not-autonomy/
-- [Reshoring Didn't Kill Tariff Risk — It Moved Upstream Into Packaging](https://aichieve.net/reshoring-moved-the-tariff-upstream/) — Supply Chain & Operations — also served by giniloh.com/reshoring-moved-the-tariff-upstream/
-- [Retry Budgets Fail: Agents Retry 60 of 80 Anyway](https://aichieve.net/retry-permission-leaves-the-caller/) — Autonomous & Agentic Workflows — also served by giniloh.com/retry-permission-leaves-the-caller/
-- [Right Locally, Wrong by 3.8 GW](https://aichieve.net/rack-ride-through-two-second-duty/) — AI Stack & Tool TCO — also served by giniloh.com/rack-ride-through-two-second-duty/
-- [Safety Stock Sizing: Why Your Buffer Uses the Wrong Number](https://aichieve.net/safety-stock-forecast-error-not-demand-noise/) — Supply Chain & Operations — also served by giniloh.com/safety-stock-forecast-error-not-demand-noise/
+- [$62M Says You Never Buy Robots](https://aichieve.net/owned-shuttles-or-rented-robots/) — Supply Chain & Operations
+- [$915M Illusion: Your AI Judge Moves](https://aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/) — AI Stack & Tool TCO
+- [1.016M Non-GPUs: Your Chip Stopped Deciding](https://aichieve.net/your-chip-stopped-deciding/) — Major Purchases & Assets
+- [270 Attacks: Your Green Tests Are Blind](https://aichieve.net/one-skill-too-many-green-test/) — Autonomous & Agentic Workflows
+- [49.9% On Time: Shippers Stuck in the Gap](https://aichieve.net/shippers-stuck-in-the-gap/) — Supply Chain & Operations
+- [60% Air Deals: Your Stock Math Breaks](https://aichieve.net/air-freight-wont-price-a-year/) — Supply Chain & Operations
+- [70% of Agent Failures: Your Tests Stayed Green](https://aichieve.net/agent-failures-tests-stayed-green/) — AI Stack & Tool TCO
+- [A 1% Mispick Rate Is a Seven-Figure Line Item](https://aichieve.net/warehouse-pick-error-tax-payback/) — Supply Chain & Operations
+- [A Late Container's Bill Carries Two 30-Day Clocks](https://aichieve.net/demurrage-invoice-30-day-clocks/) — Supply Chain & Operations
+- [AI Coding Seats: The 75-Point Gap](https://aichieve.net/ai-coding-seats-measure-or-renew/) — Mental Models & Strategy
+- [AWS Cannot Restore Bahrain: 144 Services Lost](https://aichieve.net/aws-cannot-restore-bahrain/) — Mental Models & Strategy
+- [Agent Memory Poisoning: Guard the Write, Not the Prompt](https://aichieve.net/agent-memory-poisoning-write-path/) — Autonomous & Agentic Workflows
+- [Agent Timeouts: Pick 0.1%, Not a Round Number](https://aichieve.net/agent-timeout-false-alarm-budget/) — Autonomous & Agentic Workflows
+- [Agentic AI Adoption Soars, But Profits Stall in 2026](https://aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
+- [Amazon Builds the Robots; Walmart Builds for What They Can't Lift](https://aichieve.net/automation-payback-splits-by-sku-geometry/) — Supply Chain & Operations
+- [An Agent's Logs Aren't Evidence: What to Capture, and How Long to Keep It](https://aichieve.net/agent-audit-trail-not-evidence/) — Mental Models & Strategy
+- [Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure](https://aichieve.net/azure-control-plane-single-point-of-failure/) — Mental Models & Strategy
+- [CFOs Are Pricing In the Tariff Cliff](https://aichieve.net/tariff-cliff-already-priced-in/) — Supply Chain & Operations
+- [CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor’s Spreadsheet:](https://aichieve.net/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/) — Business Automation & Operations
+- [Coast-to-Coast Rail Merger Clears First Big Test](https://aichieve.net/up-ns-rail-merger-clears-summary-denial/) — Supply Chain & Operations
+- [Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight](https://aichieve.net/diesel-620-electric-freight-certificate-gap/) — Supply Chain & Operations
+- [Dock Overtime: Your Real 14-Hour Cost](https://aichieve.net/hour-14-recovery-wall/) — Supply Chain & Operations
+- [Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts](https://aichieve.net/durable-execution-not-a-transaction/) — Autonomous & Agentic Workflows
+- [Electric Trucks Just Doubled Overnight — and the Battery Wasn't the Reason](https://aichieve.net/zet-scale-ev-truck-residual-value-risk/) — Supply Chain & Operations
+- [FacturGate: The Deterministic Pre-Send Gate & Converter for European E-Invoicing (EN 16931)](https://aichieve.net/facturgate-the-deterministic-pre-send-gate-converter-for-european-e/) — Business Automation & Operations
+- [Fine-Tune or Rent: The Denominator Decides Your Break-Even](https://aichieve.net/fine-tune-vs-rent-by-token/) — Major Purchases & Assets
+- [Forecast Accuracy: A 32% Boost Will Not Stop El Niño](https://aichieve.net/forecast-accuracy-is-not-shock-protection/) — Supply Chain & Operations
+- [Higher Rates Meet Historically Lean Inventories](https://aichieve.net/fed-rate-hike-inverts-working-capital-trap/) — Supply Chain & Operations
+- [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing Rate](https://aichieve.net/inventory-carrying-cost-rate/) — Supply Chain & Operations
+- [Kill Switch Misses Half Your Agents: 12 Vendors Agree](https://aichieve.net/kill-switch-misses-half-your-agents/) — Mental Models & Strategy
+- [Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways](https://aichieve.net/local-ai-payback-cloud-gpu-spread/) — Major Purchases & Assets
+- [Long Context Is Not Memory: Why AI Agents Need Tiered State](https://aichieve.net/agent-memory-tiering-l1-l4/) — Autonomous & Agentic Workflows
+- [MCP Skills Extension: Standardizing Agent Workflows](https://aichieve.net/mcp-skills-extension/) — Autonomous & Agentic Workflows
+- [Multi Agent Orchestration: Building the One-Person Enterprise](https://aichieve.net/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO
+- [Nearshoring Doesn't Move the Trade Case](https://aichieve.net/nearshoring-doesnt-move-the-trade-case/) — Supply Chain & Operations
+- [Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.](https://aichieve.net/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO
+- [One Green Run Is Not Reliability: Gating Agents on Pass^k](https://aichieve.net/agent-reliability-pass-k-not-one-green-run/) — AI Stack & Tool TCO
+- [OpenAI just made the agent loop a commodity](https://aichieve.net/openai-just-made-the-agent-loop-a-commodity/) — AI Stack & Tool TCO
+- [OpenAI's custom chip beats Nvidia on power](https://aichieve.net/openais-custom-chip-beats-nvidia-on-power-2/) — AI Stack & Tool TCO
+- [Ops Leaders: Why 60.7% of Stock Hides Costs](https://aichieve.net/slow-movers-hold-your-stock/) — Supply Chain & Operations
+- [ParcelProof: Stop Bleeding 2–8% on Carrier Invoices](https://aichieve.net/parcelproof-stop-bleeding-28-on-carrier-invoices/) — Business Automation & Operations
+- [Planner-as-Router: Fold the Model Choice Into the Plan](https://aichieve.net/planner-as-router-fold-the-model-choice-into-the-plan/) — Autonomous & Agentic Workflows
+- [Planning AI Buys Capability, Not Autonomy](https://aichieve.net/planning-ai-buys-capability-not-autonomy/) — Supply Chain & Operations
+- [Reshoring Didn't Kill Tariff Risk — It Moved Upstream Into Packaging](https://aichieve.net/reshoring-moved-the-tariff-upstream/) — Supply Chain & Operations
+- [Retry Budgets Fail: Agents Retry 60 of 80 Anyway](https://aichieve.net/retry-permission-leaves-the-caller/) — Autonomous & Agentic Workflows
+- [Right Locally, Wrong by 3.8 GW](https://aichieve.net/rack-ride-through-two-second-duty/) — AI Stack & Tool TCO
+- [Safety Stock Sizing: Why Your Buffer Uses the Wrong Number](https://aichieve.net/safety-stock-forecast-error-not-demand-noise/) — Supply Chain & Operations
 - [Self-Hosted AI: When to Buy vs Rent GPUs](https://aichieve.net/self-hosted-ai-when-to-buy-vs-rent-gpus/) — Major Purchases & Assets
-- [Silent Build Wait: 90 Seconds, Not 11 Minutes](https://aichieve.net/build-wait-payback-threshold/) — Major Purchases & Assets — also served by giniloh.com/build-wait-payback-threshold/
-- [Stop Piling Memory Onto AI Agents: Optimize Skills](https://aichieve.net/maskills-multi-agent-skills-optimization/) — Autonomous & Agentic Workflows — also served by giniloh.com/maskills-multi-agent-skills-optimization/
-- [Stripe Accounting Software: Solving the Payout Black Box with LedgerLink](https://aichieve.net/stripe-accounting-software-solving-the-payout-black-box-with/) — Business Automation & Operations — also served by giniloh.com/stripe-accounting-software-solving-the-payout-black-box-with/
-- [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://aichieve.net/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO — also served by giniloh.com/ai-spend-27t-cost-visibility-mandate/
-- [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://aichieve.net/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO — also served by giniloh.com/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/
-- [The $5.8 Billion Freight Bet Meets a Market That Won't Commit](https://aichieve.net/freight-scale-bet-vs-contract-duration/) — Supply Chain & Operations — also served by giniloh.com/freight-scale-bet-vs-contract-duration/
-- [The 40 kW Line: Why the AI Rack Is a Building Project](https://aichieve.net/rack-power-density-ceiling-build-before-you-buy/) — AI Stack & Tool TCO — also served by giniloh.com/rack-power-density-ceiling-build-before-you-buy/
-- [The Agent Safety Gate Moves to Verified State](https://aichieve.net/agent-safety-gate-moves-to-verified-state/) — Autonomous & Agentic Workflows — also served by giniloh.com/agent-safety-gate-moves-to-verified-state/
-- [The Cloud Bill Break-Even: When Renting Servers Stops Paying](https://aichieve.net/the-cloud-bill-break-even-when-renting-servers-stops-paying/) — Mental Models & Strategy — also served by giniloh.com/the-cloud-bill-break-even-when-renting-servers-stops-paying/
-- [The Price of a GPU-Hour Is Now Set by Memory, Not Compute](https://aichieve.net/gpu-hour-price-set-by-memory/) — Major Purchases & Assets — also served by giniloh.com/gpu-hour-price-set-by-memory/
-- [The Retry Is the Bug: An Agent's Costliest Failure Mode](https://aichieve.net/retry-is-the-failure-amplifier/) — Autonomous & Agentic Workflows — also served by giniloh.com/retry-is-the-failure-amplifier/
-- [The Same-Day Delivery Race Is Undoing a Decade of Route Optimization](https://aichieve.net/same-day-race-undoes-route-optimization/) — Supply Chain & Operations — also served by giniloh.com/same-day-race-undoes-route-optimization/
-- [The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost](https://aichieve.net/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — Supply Chain & Operations — also served by giniloh.com/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/
-- [The Tariff Split in Two — Reshoring Took the Heavy Half](https://aichieve.net/tariff-split-reshoring-heavy-half/) — Supply Chain & Operations — also served by giniloh.com/tariff-split-reshoring-heavy-half/
-- [The Tool-List Budget: How Many Tools One Agent Can Hold](https://aichieve.net/agent-tool-count-ceiling/) — Autonomous & Agentic Workflows — also served by giniloh.com/agent-tool-count-ceiling/
-- [The Vendor-Replacement Wave Is Real — AI Just Won't Run It](https://aichieve.net/vendor-replacement-ai-ceiling/) — AI Stack & Tool TCO — also served by giniloh.com/vendor-replacement-ai-ceiling/
-- [Token Prices Hit Record Lows. Enterprise AI Bills Didn't.](https://aichieve.net/token-price-record-low-budget-overrun/) — AI Stack & Tool TCO — also served by giniloh.com/token-price-record-low-budget-overrun/
-- [Token Prices Just Halved. The CFO Still Can’t Read the Bill.](https://aichieve.net/token-prices-just-halved-the-cfo-still-cant-read-the-bill/) — AI Stack & Tool TCO — also served by giniloh.com/token-prices-just-halved-the-cfo-still-cant-read-the-bill/
-- [Warehouse Payback: $17.00, Not $17.95](https://aichieve.net/wage-floor-sets-robot-payback/) — Supply Chain & Operations — also served by giniloh.com/wage-floor-sets-robot-payback/
-- [Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.](https://aichieve.net/goods-tariff-relief-vs-vessel-fee/) — Supply Chain & Operations — also served by giniloh.com/goods-tariff-relief-vs-vessel-fee/
-- [Where the Prompt Breaks Decides the AI Bill](https://aichieve.net/cache-boundary-decides-input-bill/) — AI Stack & Tool TCO — also served by giniloh.com/cache-boundary-decides-input-bill/
-- [Why Cloud Uptime SLAs Are Not Insurance](https://aichieve.net/sla-credit-is-not-insurance/) — AI Stack & Tool TCO — also served by giniloh.com/sla-credit-is-not-insurance/
-- [Why Importers Forfeit 99% Duty Refunds](https://aichieve.net/why-importers-forfeit-duty-refunds/) — Supply Chain & Operations — also served by giniloh.com/why-importers-forfeit-duty-refunds/
-- [Why Your Card Serves 1.6: The Two-Pool Gap](https://aichieve.net/prefill-decode-two-pool-gap/) — Major Purchases & Assets — also served by giniloh.com/prefill-decode-two-pool-gap/
-- [Will Your Control Tower Auto-Resolve the Theft It Can't See?](https://aichieve.net/control-tower-silent-exception/) — Supply Chain & Operations — also served by giniloh.com/control-tower-silent-exception/
-- [You Think You're Governing Your AI Agents. The Data Says You're Not.](https://aichieve.net/you-think-youre-governing-your-agents/) — Mental Models & Strategy — also served by giniloh.com/you-think-youre-governing-your-agents/
-- [Your 100-Case Eval: 92.5% Coverage, Not 95%](https://aichieve.net/100-case-eval-925-coverage/) — AI Stack & Tool TCO — also served by giniloh.com/100-case-eval-925-coverage/
-- [Your 32GB Card, Gone: 41% Memory Hike](https://aichieve.net/your-32gb-card-gone/) — Major Purchases & Assets — also served by giniloh.com/your-32gb-card-gone/
-- [Your AI Incident Clock: 4 Hours, Not 15 Days](https://aichieve.net/ai-incident-clock-4-hours-not-15-days/) — Mental Models & Strategy — also served by giniloh.com/ai-incident-clock-4-hours-not-15-days/
-- [Your Agent Fabric's 52.2% Blind Spot](https://aichieve.net/stale-grants-travel-the-graph/) — Autonomous & Agentic Workflows — also served by giniloh.com/stale-grants-travel-the-graph/
-- [Your Agent's Next Step: 11-14x Likelier to Fail](https://aichieve.net/gate-the-step-not-the-model/) — Autonomous & Agentic Workflows — also served by giniloh.com/gate-the-step-not-the-model/
-- [Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year](https://aichieve.net/your-cluster-hidden-clock/) — AI Stack & Tool TCO — also served by giniloh.com/your-cluster-hidden-clock/
-- [Your Fuel Surcharge Hides Three Negotiated Numbers](https://aichieve.net/fuel-surcharge-peg-mpg-audit/) — Supply Chain & Operations — also served by giniloh.com/fuel-surcharge-peg-mpg-audit/
-- [Your GPU Runs Out of Cache Before It Runs Out of Math](https://aichieve.net/kv-cache-is-the-concurrency-ceiling/) — Major Purchases & Assets — also served by giniloh.com/kv-cache-is-the-concurrency-ceiling/
-- [Your Jira Bill Rose 10%: Memory Rose Six Times](https://aichieve.net/flat-price-was-the-hedge/) — AI Stack & Tool TCO — also served by giniloh.com/flat-price-was-the-hedge/
-- [Your Last-Mile Carbon Number Is a Rate Table](https://aichieve.net/last-mile-carbon-number-is-a-rate-table/) — Supply Chain & Operations — also served by giniloh.com/last-mile-carbon-number-is-a-rate-table/
-- [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://aichieve.net/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows — also served by giniloh.com/agent-failure-topology-not-model/
-- [Your Remediator Recovers 46.67%: The Silent Regression](https://aichieve.net/remediator-recovers-46-percent/) — AI Stack & Tool TCO — also served by giniloh.com/remediator-recovers-46-percent/
+- [Silent Build Wait: 90 Seconds, Not 11 Minutes](https://aichieve.net/build-wait-payback-threshold/) — Major Purchases & Assets
+- [Stop Piling Memory Onto AI Agents: Optimize Skills](https://aichieve.net/maskills-multi-agent-skills-optimization/) — Autonomous & Agentic Workflows
+- [Stripe Accounting Software: Solving the Payout Black Box with LedgerLink](https://aichieve.net/stripe-accounting-software-solving-the-payout-black-box-with/) — Business Automation & Operations
+- [The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement](https://aichieve.net/ai-spend-27t-cost-visibility-mandate/) — AI Stack & Tool TCO
+- [The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision](https://aichieve.net/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/) — AI Stack & Tool TCO
+- [The $5.8 Billion Freight Bet Meets a Market That Won't Commit](https://aichieve.net/freight-scale-bet-vs-contract-duration/) — Supply Chain & Operations
+- [The 40 kW Line: Why the AI Rack Is a Building Project](https://aichieve.net/rack-power-density-ceiling-build-before-you-buy/) — AI Stack & Tool TCO
+- [The Agent Safety Gate Moves to Verified State](https://aichieve.net/agent-safety-gate-moves-to-verified-state/) — Autonomous & Agentic Workflows
+- [The Cloud Bill Break-Even: When Renting Servers Stops Paying](https://aichieve.net/the-cloud-bill-break-even-when-renting-servers-stops-paying/) — Mental Models & Strategy
+- [The Price of a GPU-Hour Is Now Set by Memory, Not Compute](https://aichieve.net/gpu-hour-price-set-by-memory/) — Major Purchases & Assets
+- [The Retry Is the Bug: An Agent's Costliest Failure Mode](https://aichieve.net/retry-is-the-failure-amplifier/) — Autonomous & Agentic Workflows
+- [The Same-Day Delivery Race Is Undoing a Decade of Route Optimization](https://aichieve.net/same-day-race-undoes-route-optimization/) — Supply Chain & Operations
+- [The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost](https://aichieve.net/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — Supply Chain & Operations
+- [The Tariff Split in Two — Reshoring Took the Heavy Half](https://aichieve.net/tariff-split-reshoring-heavy-half/) — Supply Chain & Operations
+- [The Tool-List Budget: How Many Tools One Agent Can Hold](https://aichieve.net/agent-tool-count-ceiling/) — Autonomous & Agentic Workflows
+- [The Vendor-Replacement Wave Is Real — AI Just Won't Run It](https://aichieve.net/vendor-replacement-ai-ceiling/) — AI Stack & Tool TCO
+- [Token Prices Hit Record Lows. Enterprise AI Bills Didn't.](https://aichieve.net/token-price-record-low-budget-overrun/) — AI Stack & Tool TCO
+- [Token Prices Just Halved. The CFO Still Can’t Read the Bill.](https://aichieve.net/token-prices-just-halved-the-cfo-still-cant-read-the-bill/) — AI Stack & Tool TCO
+- [Warehouse Payback: $17.00, Not $17.95](https://aichieve.net/wage-floor-sets-robot-payback/) — Supply Chain & Operations
+- [Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.](https://aichieve.net/goods-tariff-relief-vs-vessel-fee/) — Supply Chain & Operations
+- [Where the Prompt Breaks Decides the AI Bill](https://aichieve.net/cache-boundary-decides-input-bill/) — AI Stack & Tool TCO
+- [Why Cloud Uptime SLAs Are Not Insurance](https://aichieve.net/sla-credit-is-not-insurance/) — AI Stack & Tool TCO
+- [Why Importers Forfeit 99% Duty Refunds](https://aichieve.net/why-importers-forfeit-duty-refunds/) — Supply Chain & Operations
+- [Why Your Card Serves 1.6: The Two-Pool Gap](https://aichieve.net/prefill-decode-two-pool-gap/) — Major Purchases & Assets
+- [Will Your Control Tower Auto-Resolve the Theft It Can't See?](https://aichieve.net/control-tower-silent-exception/) — Supply Chain & Operations
+- [You Think You're Governing Your AI Agents. The Data Says You're Not.](https://aichieve.net/you-think-youre-governing-your-agents/) — Mental Models & Strategy
+- [Your 100-Case Eval: 92.5% Coverage, Not 95%](https://aichieve.net/100-case-eval-925-coverage/) — AI Stack & Tool TCO
+- [Your 32GB Card, Gone: 41% Memory Hike](https://aichieve.net/your-32gb-card-gone/) — Major Purchases & Assets
+- [Your AI Incident Clock: 4 Hours, Not 15 Days](https://aichieve.net/ai-incident-clock-4-hours-not-15-days/) — Mental Models & Strategy
+- [Your Agent Fabric's 52.2% Blind Spot](https://aichieve.net/stale-grants-travel-the-graph/) — Autonomous & Agentic Workflows
+- [Your Agent's Next Step: 11-14x Likelier to Fail](https://aichieve.net/gate-the-step-not-the-model/) — Autonomous & Agentic Workflows
+- [Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year](https://aichieve.net/your-cluster-hidden-clock/) — AI Stack & Tool TCO
+- [Your Fuel Surcharge Hides Three Negotiated Numbers](https://aichieve.net/fuel-surcharge-peg-mpg-audit/) — Supply Chain & Operations
+- [Your GPU Runs Out of Cache Before It Runs Out of Math](https://aichieve.net/kv-cache-is-the-concurrency-ceiling/) — Major Purchases & Assets
+- [Your Jira Bill Rose 10%: Memory Rose Six Times](https://aichieve.net/flat-price-was-the-hedge/) — AI Stack & Tool TCO
+- [Your Last-Mile Carbon Number Is a Rate Table](https://aichieve.net/last-mile-carbon-number-is-a-rate-table/) — Supply Chain & Operations
+- [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://aichieve.net/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows
+- [Your Remediator Recovers 46.67%: The Silent Regression](https://aichieve.net/remediator-recovers-46-percent/) — AI Stack & Tool TCO
 - [Artificial Intelligence & Future of Work (category)](https://aichieve.net/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence Future Of Work — also served by giniloh.com/categories/artificial-intelligence-future-of-work/
-- [GPU TCO Analyzer — Local Build vs. Cloud Lease (tool)](https://aichieve.net/tools/gpu-compute/) — — — also served by giniloh.com/calculators/gpu-compute/
+- [GPU TCO Analyzer — Local Build vs. Cloud Lease (tool)](https://aichieve.net/tools/gpu-compute/) — —
 - [Master Asset & Software TCO Calculator (tool)](https://aichieve.net/tools/master-asset-tco/) — —
 - [Supply Chain & Operations (category)](https://aichieve.net/categories/supply-chain-operations/) — Supply Chain Operations — also served by giniloh.com/categories/supply-chain-operations/
+
+## Published in a CMS but NOT live on its site (never suggested as a link target)
+
+- giniloh.com #880 `wage-floor-sets-robot-payback` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #878 `your-cluster-hidden-clock` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #874 `prefill-decode-two-pool-gap` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #871 `gate-the-step-not-the-model` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #867 `owned-shuttles-or-rented-robots` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #866 `flat-price-was-the-hedge` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #863 `your-chip-stopped-deciding` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #861 `stale-grants-travel-the-graph` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #859 `retry-permission-leaves-the-caller` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #856 `hour-14-recovery-wall` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #854 `build-wait-payback-threshold` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #852 `ai-coding-seats-measure-or-renew` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #850 `remediator-recovers-46-percent` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #848 `100-case-eval-925-coverage` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #846 `shippers-stuck-in-the-gap` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #843 `your-32gb-card-gone` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #841 `aws-cannot-restore-bahrain` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #839 `rack-ride-through-two-second-duty` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #835 `agent-failures-tests-stayed-green` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #834 `slow-movers-hold-your-stock` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #832 `ai-incident-clock-4-hours-not-15-days` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #830 `agent-timeout-false-alarm-budget` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #827 `air-freight-wont-price-a-year` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #825 `kill-switch-misses-half-your-agents` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #821 `one-skill-too-many-green-test` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #810 `why-importers-forfeit-duty-refunds` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #795 `nearshoring-doesnt-move-the-trade-case` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #578 `kv-cache-is-the-concurrency-ceiling` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #537 `agent-audit-trail-not-evidence` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #541 `buying-ai-quality-when-the-score-belongs-to-the-judge` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #554 `the-cloud-bill-break-even-when-renting-servers-stops-paying` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #778 `diesel-620-electric-freight-certificate-gap` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #547 `control-tower-silent-exception` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #531 `you-think-youre-governing-your-agents` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #784 `last-mile-carbon-number-is-a-rate-table` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #543 `azure-control-plane-single-point-of-failure` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #545 `local-ai-payback-cloud-gpu-spread` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #556 `fine-tune-vs-rent-by-token` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #558 `demurrage-invoice-30-day-clocks` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #596 `agent-memory-tiering-l1-l4` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #600 `fuel-surcharge-peg-mpg-audit` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #549 `agent-reliability-pass-k-not-one-green-run` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #533 `fed-rate-hike-inverts-working-capital-trap` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #598 `cache-boundary-decides-input-bill` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #572 `agent-memory-poisoning-write-path` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #580 `sla-credit-is-not-insurance` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #561 `retry-is-the-failure-amplifier` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #550 `rack-power-density-ceiling-build-before-you-buy` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #539 `inventory-carrying-cost-rate` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #568 `vendor-replacement-ai-ceiling` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #576 `agent-tool-count-ceiling` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #570 `automation-payback-splits-by-sku-geometry` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #563 `durable-execution-not-a-transaction` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #566 `gpu-hour-price-set-by-memory` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #594 `forecast-accuracy-is-not-shock-protection` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #605 `safety-stock-forecast-error-not-demand-noise` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #582 `warehouse-pick-error-tax-payback` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #584 `agent-failure-topology-not-model` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #586 `token-price-record-low-budget-overrun` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #588 `freight-scale-bet-vs-contract-duration` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #529 `agent-safety-gate-moves-to-verified-state` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #501 `the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #514 `caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #511 `parcelproof-stop-bleeding-28-on-carrier-invoices` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #508 `facturgate-the-deterministic-pre-send-gate-converter-for-european-e` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #484 `tariff-split-reshoring-heavy-half` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #498 `stripe-accounting-software-solving-the-payout-black-box-with` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #421 `goods-tariff-relief-vs-vessel-fee` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #422 `planning-ai-buys-capability-not-autonomy` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #404 `planner-as-router-fold-the-model-choice-into-the-plan` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #395 `zet-scale-ev-truck-residual-value-risk` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #420 `token-prices-just-halved-the-cfo-still-cant-read-the-bill` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #462 `same-day-race-undoes-route-optimization` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #392 `reshoring-moved-the-tariff-upstream` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #397 `up-ns-rail-merger-clears-summary-denial` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #398 `ai-spend-27t-cost-visibility-mandate` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #399 `maskills-multi-agent-skills-optimization` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #400 `tariff-cliff-already-priced-in` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #401 `mcp-skills-extension` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #391 `enterprisebuildvsbuy-the-250k-ai-upkeep-tax` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #380 `multi-agent-orchestration-building-the-one-person-enterprise` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #374 `agentic-ai-adoption-soars-but-profits-stall-in-2026` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #364 `openai-just-made-the-agent-loop-a-commodity` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #355 `openais-custom-chip-beats-nvidia-on-power-2` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #345 `nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet` — published in the CMS but absent from the frontend sitemap
