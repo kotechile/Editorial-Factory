@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T12:35:23Z",
+  "updated_at": "2026-10-15T13:16:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1898,6 +1898,24 @@
       "date": "2026-10-14",
       "public": true,
       "url": "https://aichieve.net/your-cluster-hidden-clock/"
+    },
+    {
+      "slug": "2026-10-15_holiday-forecasts-miss-what-shoppers-count",
+      "title": "Why 6.7% Holiday Growth Misses Units",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-15",
+      "public": false
     }
   ]
 }

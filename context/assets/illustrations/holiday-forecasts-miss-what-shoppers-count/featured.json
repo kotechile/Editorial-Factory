@@ -1,0 +1,88 @@
+{
+  "slug": "holiday-forecasts-miss-what-shoppers-count",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic lighting.",
+      "caption": "A plan merged in dollars can show growth while the physical units it must ship fall.",
+      "title": "holiday-logistics-unit-decline",
+      "bytes": 508153,
+      "sha256": "sha256:7d1ae3737f91074d0cc456b1b9a938cd"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression, long-lens view of an industrial logistics staging yard. Extreme asymmetry, off-centre framing. Stacked overlapping layers of heavy steel infrastructure and sparse, weathered corrugated cargo containers. Crystal-clear telephoto distance clarity, flat compressed perspective. Sharp directional lighting and deep industrial contrast, raking golden-hour sun highlighting the brushed metal and painted steel textures. Generous editorial negative space in the sky, no people in the foreground, no fog or haze.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, text, typography",
+  "rationale": "The story contrasts abstract dollar growth with the harsh physical reality of shipping units. A telephoto compression of heavy logistics infrastructure anchors the abstract financial data in the physical supply chain that actually has to move the goods.",
+  "cue": "while the units it must ship fall",
+  "subject": "towering industrial logistics staging yard with sparse physical shipping containers",
+  "core_thesis": "A retail plan merged in dollars can show record holiday growth while the actual physical units it must ship are falling.",
+  "core_conflict": "Rising dollar forecasts driven by inflation and early deals vs. falling physical unit volume driven by consumer caution.",
+  "composition": "extreme asymmetry with off-centre hero subject",
+  "alt_text": "Holiday Dollars Vs Units. Telephoto view of a heavy industrial logistics yard with sparse shipping containers under dramatic ",
+  "caption": "Holiday Dollars Vs Units: Record spending masks a drop in physical items shipped.",
+  "title": "Holiday Dollars Vs Units",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/holiday-forecasts-miss-what-shoppers-count/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 269643,
+  "sha256": "sha256:c233615ed247290257a96962ae02729e78480042d9fe2c9d91c459f8e187cdb3",
+  "source_hash": "sha256:2ac30bc114512a75a3987dd470b8b2fe",
+  "source_chars": 5805,
+  "task_id": "cc829eb3ffb22caea4424561d69d3fd7",
+  "credits": 5.0,
+  "cost_ms": 171,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/cc829eb3ffb22caea4424561d69d3fd7_1792070182417.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression, long-lens view of an industrial logistics staging yard. Extreme asymmetry, off-centre framing. Stacked overlapping layers of heavy steel infrastructure and sparse, weathered corrugated cargo containers. Crystal-clear telephoto distance clarity, flat compressed perspective. Sharp directional lighting and deep industrial contrast, raking golden-hour sun highlighting the brushed metal and painted steel textures. Generous editorial negative space in the sky, no people in the foreground, no fog or haze.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-15T13:16:27+00:00",
+  "overlay": {
+    "kicker": "RETAIL PLANNING // HOLIDAY FORECAST",
+    "title": "HOLIDAY DOLLARS VS UNITS",
+    "hook": "Record spending masks a drop in physical items shipped",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 90,
+    "contrast": 5.85,
+    "target": 5.5,
+    "clutter": 0.337,
+    "region_rgb": [
+      85,
+      67,
+      54
+    ],
+    "binding_rgb": [
+      193,
+      125,
+      78
+    ],
+    "title_lines": [
+      "HOLIDAY DOLLARS",
+      "VS UNITS"
+    ],
+    "subject": 0.148,
+    "ink_subject": 0.103,
+    "spike": 0.327,
+    "generated_at": "2026-10-15T13:16:27+00:00"
+  }
+}
