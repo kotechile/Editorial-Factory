@@ -1,0 +1,90 @@
+{
+  "slug": "forecast-value-added-lose-to-last-period",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A tiered stack of translucent data modules being measured by a precision gauge on a steel workbench.",
+      "caption": "Operators rarely score their forecasting layers against the naive baseline below them.",
+      "title": "forecast-value-added-stack",
+      "bytes": 2157197,
+      "sha256": "sha256:073a96faf8ae040dfff95491b7c551d3"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A tiered architectural stack of translucent data modules resting on a solid brushed steel workbench. A precision brass measuring gauge intersects the upper layers, highlighting structural flaws where the top modules misalign. Flat muted palette with a single bright amber accent on the misaligned layer, thin consistent line weight. Asymmetric off-centre placement on the left side of the frame, single directional light casting clear geometric shadows, generous empty margin on the right, unlabelled.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, ui elements, labels, people, chaotic linework",
+  "rationale": "The article breaks down the forecasting process into a stack of distinct layers. A technical isometric illustration perfectly represents this layered architecture, allowing us to visually depict the structural measurement of value added.",
+  "cue": "A planning stack is a pile of layers",
+  "subject": "a tiered stack of data modules being measured by a precision gauge",
+  "core_thesis": "Every layer of a demand forecast must be scored against a simple baseline to prove it adds value rather than extracting it.",
+  "core_conflict": "Added complexity vs naive baseline accuracy",
+  "composition": "asymmetric off-centre placement with generous negative space",
+  "alt_text": "Measuring Forecast Value. A tiered stack of translucent data modules being measured by a precision gauge on a steel",
+  "caption": "Measuring Forecast Value: Why 52 percent of forecasts lose to a simple random walk.",
+  "title": "Measuring Forecast Value",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/forecast-value-added-lose-to-last-period/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1642593,
+  "sha256": "sha256:409964c3b82cd5fd6c35ccb3faee57188fb8c6f9e4498c4eda474bef7b00bbd2",
+  "source_hash": "sha256:6a28ab09c08f3e311e46911f2e0179f9",
+  "source_chars": 4403,
+  "task_id": "09608b86d195ccf6e5d1dd6cff30ad0d",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_cea57086dc4a774e2686e02d1a3af701.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. A tiered architectural stack of translucent data modules resting on a solid brushed steel workbench. A precision brass measuring gauge intersects the upper layers, highlighting structural flaws where the top modules misalign. Flat muted palette with a single bright amber accent on the misaligned layer, thin consistent line weight. Asymmetric off-centre placement on the left side of the frame, single directional light casting clear geometric shadows, generous empty margin on the right, unlabelled.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-15T20:10:51+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // FORECAST VALUE ADDED",
+    "title": "MEASURING FORECAST VALUE",
+    "hook": "Why 52 percent of forecasts lose to a simple random walk",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 11.78,
+    "target": 4.5,
+    "clutter": 0.005,
+    "region_rgb": [
+      245,
+      245,
+      240
+    ],
+    "binding_rgb": [
+      244,
+      243,
+      239
+    ],
+    "title_lines": [
+      "MEASURING",
+      "FORECAST VALUE"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-15T20:10:51+00:00"
+  }
+}

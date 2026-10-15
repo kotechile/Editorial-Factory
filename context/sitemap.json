@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T19:44:40Z",
+  "updated_at": "2026-10-15T20:11:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1931,6 +1931,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-10-15",
+      "public": false
+    },
+    {
+      "slug": "2026-10-15_forecast-value-added-lose-to-last-period",
+      "title": "Forecast Value Added: 52% Lose to Last Period",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-15",
       "public": false
     },
