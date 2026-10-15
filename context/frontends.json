@@ -1,0 +1,23 @@
+[
+  {
+    "domain": "giniloh.com",
+    "frontend_url": "https://giniloh.com",
+    "article_path": "/{slug}/",
+    "category_path": "/categories/{slug}/",
+    "tool_path": "/calculators/{slug}/"
+  },
+  {
+    "domain": "wellroost.com",
+    "frontend_url": "https://wellroost.com",
+    "article_path": "/{slug}/",
+    "category_path": "/categories/{slug}/",
+    "tool_path": "/calculators/{slug}/"
+  },
+  {
+    "domain": "aichieve.net",
+    "frontend_url": "https://aichieve.net",
+    "article_path": "/{slug}/",
+    "category_path": "/categories/{slug}/",
+    "tool_path": "/tools/{slug}/"
+  }
+]
