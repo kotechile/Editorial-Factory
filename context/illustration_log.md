@@ -222,3 +222,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-15 | `agent-loop-bound-not-a-budget` | agentic_ai | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-loop-bound-not-a-budget/featured.png` |
 | 2026-10-15 | `cheaper-model-pricier-task` | enterprise_ai_finops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/cheaper-model-pricier-task/featured.png` |
 | 2026-10-15 | `freight-claim-dies-at-9-months` | supply_chain | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/freight-claim-dies-at-9-months/featured.jpg` |
+| 2026-10-15 | `hold-back-capped-at-5-percent` | home_ops_execution | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/hold-back-capped-at-5-percent/featured.jpg` |

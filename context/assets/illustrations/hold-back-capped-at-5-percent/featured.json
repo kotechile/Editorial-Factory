@@ -1,0 +1,88 @@
+{
+  "slug": "hold-back-capped-at-5-percent",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A construction contract on a wooden desk held down by a heavy brass architect's scale.",
+      "caption": "State laws are increasingly overriding private contracts to cap construction retainage at 5 percent.",
+      "title": "Retainage-Contract-Flatlay",
+      "bytes": 379849,
+      "sha256": "sha256:349c07d83ee8ad253fdc27b609dcce0d"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph using a 50mm standard overhead lens, sharp focal plane. A thick, textured home remodel contract document resting on a worn walnut drafting desk. The paperwork is weighted down by a heavy, matte brass architect's scale placed asymmetrically off-centre to the right. Even, diffused daylight from a nearby window casts soft contact shadows. Muted paper tones, crisp architectural blueprint edges peeking from beneath. Generous negative space on the left wood grain. High-end editorial cover standard, quiet confidence, strictly no legible text or UI.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, people, faces, hands",
+  "rationale": "The story centers on contractual clauses, legal caps, and financial terms, making a document still life the most precise and evocative way to represent the regulatory stakes.",
+  "cue": "Retainage Trap: 5 Percent, Not 15",
+  "subject": "a home construction contract weighted down by a brass architect's scale",
+  "core_thesis": "States are increasingly capping the amount of cash an owner can hold back on a construction project to 5 percent of the completed work.",
+  "core_conflict": "Owner's desire to withhold cash for leverage versus builder's need for timely payment",
+  "composition": "asymmetrical top-down composition",
+  "alt_text": "The 5 Percent Retainage Cap. A construction contract on a wooden desk held down by a heavy brass architect's scale.",
+  "caption": "The 5 Percent Retainage Cap: How states limit the cash owners hold back from builders.",
+  "title": "The 5 Percent Retainage Cap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/hold-back-capped-at-5-percent/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 224523,
+  "sha256": "sha256:2a9bd53716ddc95d6e773a692bf76598a7b79515614781ef0a2e432a709bba07",
+  "source_hash": "sha256:79a2a3d946e53afc43d6aeb4cbb778e9",
+  "source_chars": 4267,
+  "task_id": "43368652f14f755debad0585ce76eb78",
+  "credits": 5.0,
+  "cost_ms": 58,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/43368652f14f755debad0585ce76eb78_1792091663443.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph using a 50mm standard overhead lens, sharp focal plane. A thick, textured home remodel contract document resting on a worn walnut drafting desk. The paperwork is weighted down by a heavy, matte brass architect's scale placed asymmetrically off-centre to the right. Even, diffused daylight from a nearby window casts soft contact shadows. Muted paper tones, crisp architectural blueprint edges peeking from beneath. Generous negative space on the left wood grain. High-end editorial cover standard, quiet confidence, strictly no legible text or UI.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-15T19:14:27+00:00",
+  "overlay": {
+    "kicker": "HOME CONTRACTS // RETAINAGE CAPS",
+    "title": "THE 5 PERCENT RETAINAGE CAP",
+    "hook": "How states limit the cash owners hold back from builders",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.14,
+    "target": 5.5,
+    "clutter": 0.405,
+    "region_rgb": [
+      62,
+      48,
+      40
+    ],
+    "binding_rgb": [
+      94,
+      63,
+      45
+    ],
+    "title_lines": [
+      "THE 5 PERCENT",
+      "RETAINAGE CAP"
+    ],
+    "subject": 0.22,
+    "ink_subject": 0.06,
+    "spike": 0.859,
+    "generated_at": "2026-10-15T19:14:27+00:00"
+  }
+}
