@@ -165,8 +165,10 @@ prints no social copy and reads no social credential.
   transition INTO publish rebuilt, so a removal was silent. Trigger one by hand whenever a CMS change
   must reach readers immediately; `GET /api/v1/deploy` is gone, it is a POST (see `docs/VPS_WIRING.md`).
 - **An internal link is "live" only as of the index build, and the artifact's own slug must be excluded.**
-  `context/internal_links.json` decides liveness from each frontend's sitemap at build time, so a page
-  retired from the frontend since then leaves a `## Related reading` link that 404s in the reader.
+  `context/internal_links.json` is built from each frontend's own sitemap + page content (canonical-
+  checked; the CMS is not a candidate source) and the generated block stamps site-relative paths, so
+  the same stored body stays internal on every front that serves it. A page retired from the frontend
+  since the build leaves a `## Related reading` link that 404s in the reader.
   Before trusting a generated block, check its URLs (an HTTP 200, not the index's `live` flag):
   `python3 scripts/build_internal_link_index.py` rebuilds the corpus and
   `python3 scripts/internal_links.py <artifact> --apply` regenerates the block from it. And once an

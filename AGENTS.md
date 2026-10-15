@@ -91,8 +91,10 @@ gates, and every non-deterministic step is gated on retrievable evidence.
     image credits on an unchanged text.
 12. **Internal links are generated from the live corpus, never invented.** The `<!-- internal-links
     -->` block is filled in the persistence pass (`scripts/internal_links.py`, hooked into
-    `scripts/publish.py` and `scripts/wp_draft.py`) from `context/internal_links.json` — the pages
-    that actually EXIST per CMS and RESOLVE per each frontend's sitemap. The drafting stage cannot do
+    `scripts/publish.py` and `scripts/wp_draft.py`) from `context/internal_links.json` — the pages the
+    reader fronts actually serve, resolved from each front's own live sitemap + page metadata
+    (WordPress no longer proposes candidates) — and it stamps site-relative paths, so the same stored
+    body is internal on whichever front serves it. The drafting stage cannot do
     this: it has no list of live pages, so every artifact it wrote carried an empty block and every
     CMS draft reached a reader with zero internal links while the hand-written back catalogue carried
     2–10 each. A link must be on the destination's own site (a cross-site link is not an internal

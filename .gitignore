@@ -19,6 +19,7 @@ context/gsc_service_account.json
 test-results/
 playwright-report/
 .*_backup*
+context/.site_cache/
 
 # generated featured images: the CMS media library is their canonical home and the staged file is
 # only the upload's source. The brief beside each image (featured.json) IS committed — it is the

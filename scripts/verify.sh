@@ -271,11 +271,42 @@ fi
 #     live corpus, the block itself is generated and delivered by scripts/internal_links.py (hooked
 #     into publish.py and wp_draft.py): same rules, plus a two-subject-token evidence bar, an
 #     idempotent block under `<!-- internal-links -->`, and reader copy under the marker left intact.
-#     The shipped-index section inspects context/internal_links.json without fetching; refresh it with
+#     Candidates come from each front end's own sitemap + page content (not from WordPress), and the
+#     generated block stamps site-relative paths so one stored body stays internal on every front that
+#     serves it. The shipped-index section inspects context/internal_links.json without fetching;
+#     refresh it with
 #       python3 scripts/build_internal_link_index.py
 if ! python3 "$ROOT/scripts/test_internal_links.py" >/dev/null 2>&1; then
   echo "FAIL: internal-link tests — detail:"
   python3 "$ROOT/scripts/test_internal_links.py" 2>&1 | tail -8; FAIL=1
+fi
+
+# 8.7 (cont.) Shipped index (hard, hermetic, no network): every candidate's url host must be its own
+#     `site` (the corpus is the reader fronts, never a CMS host), and no `cms.` host may appear.
+#     Skipped silently when the index has not been generated yet.
+if [ -f "$ROOT/context/internal_links.json" ]; then
+  BADLINK="$(python3 - "$ROOT/context/internal_links.json" <<'PY'
+import json, sys
+from urllib.parse import urlparse
+try:
+    data = json.load(open(sys.argv[1]))
+except Exception as exc:
+    print(f"unreadable context/internal_links.json: {exc}")
+    sys.exit(0)
+bad = []
+for c in data.get("candidates", []):
+    url = c.get("url") or ""
+    site = (c.get("site") or "").lower()
+    host = urlparse(url).netloc.lower()
+    if host != site or host.startswith("cms."):
+        bad.append(f"{site or '?'} -> {url or '?'}")
+print("\n".join(bad))
+PY
+)"
+  if [ -n "$BADLINK" ]; then
+    echo "FAIL: internal-link candidate url host is not its own site (or is a cms. host):"
+    printf '%s\n' "$BADLINK" | head -8; FAIL=1
+  fi
 fi
 
 # 8.75 Vertical routing (hard, hermetic part): the audit is a pure function of the registry and the

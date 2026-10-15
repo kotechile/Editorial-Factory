@@ -96,7 +96,7 @@ fi
 # to follow the corpus: new articles appear, and a post that stops being live must drop out of the
 # candidate pool rather than become a link that sends readers to the homepage. Rebuilding is how
 # liveness is re-decided (the sitemap is re-read), so this is a refresh rather than a check.
-IDX="$(python3 scripts/build_internal_link_index.py 2>&1)"
+IDX="$(timeout 600 python3 scripts/build_internal_link_index.py 2>&1)"
 IRC=$?
 if [ "$IRC" -ne 0 ]; then
   echo "WordPress Draft Sweep: internal-link index FAILED (exit $IRC)"
