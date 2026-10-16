@@ -20,6 +20,18 @@ An article is never lost and never published un-evaluated. An already-published 
 rewritten or demoted by the gate — it is reported. Knobs:
 `PUBLISH_GATE=off|report|enforce` (default `enforce`), `PUBLISH_GATE_REWRITES` (default 1).
 
+**The push names the article's vertical on the destination CMS (owner, 2026-10-16).** One CMS can
+serve several reader fronts — `cms.giniloh.com` feeds both `giniloh.com` and `aichieve.net` — and
+each post carries exactly one `vertical` taxonomy term; that term is the per-post key a front routes
+on, so **a post published without one is listed by no front while every other field on it looks
+perfect**. `scripts/wp_draft.py` resolves the term by slug *on the destination* (`resolve_vertical_term`),
+sends it as `vertical: [<term id>]`, reads it back and refuses to publish when the CMS registers the
+taxonomy but holds no term for the article's vertical (one term fixes it; the guard
+`python3 scripts/check_vertical_sites.py` names the gap before a run). `cms.wellroost.com` registers
+no such taxonomy today, and a push there says so rather than inventing anything. `--vertical <id>`
+publishes one article under a different vertical, for a row whose own routing is wrong — it is
+refused on `--all`/`--refresh`, where one article's routing must not become another's.
+
 ## 2. Persistence (always)
 1. Write the final article to `published/YYYY-MM-DD_<slug>.md`.
    The slug is *bare* — `scripts/publish.py::normalize_slug()` strips a leading `YYYY-MM-DD_` if the

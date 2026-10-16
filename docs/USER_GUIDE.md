@@ -298,9 +298,11 @@ end-to-end, so you never have to guess:
 
 ### 4.4 Publishing an article (reader sites + CMS)
 
-Articles land in `published/` automatically and the same pass creates the draft in the CMS their
-vertical maps to (`giniloh.com` / `wellroost.com`). The bundled static reader under `site/` is the
-**internal** dashboard surface (behind the login), not a reader site.
+Articles land in `published/` automatically and the same pass creates the post in the CMS their
+vertical maps to, **naming that vertical as the CMS's `vertical` taxonomy term** — one CMS serves
+several reader fronts (cms.giniloh.com feeds both giniloh.com and aichieve.net), and the term is what
+routes a post to one of them. The bundled static reader under `site/` is the **internal** dashboard
+surface (behind the login), not a reader site.
 
 #### External illustrated article & software-factory tool links
 When the long-form article also lives somewhere else — an illustrated page in the CMS, an external
