@@ -1,0 +1,88 @@
+{
+  "slug": "your-blocks-30b-hardening-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A fire-hardened modern house exterior illuminated by a single warm worklight against a dark blue twilight sky.",
+      "caption": "The physical house remains the lagging, unfunded half of wildfire defense.",
+      "title": "unfunded-home-hardening-gap",
+      "bytes": 417421,
+      "sha256": "sha256:6541f5589f3947b2f202181af95d674b"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph of a modern fire-hardened suburban house exterior at blue hour. 35mm anamorphic wide lens. Asymmetric wide framing, the house anchored in the lower-right third, leaving generous negative space in the deep blue twilight sky. The house features tactile cement board siding and a brushed metal roof. A single warm amber construction worklight illuminates one corner of the reinforced wall, casting sharp directional light against the dark ambient blue hour environment. No moving figures, crisp atmospheric depth, cinematic editorial standard.",
+  "negative_prompt": "garbled text, random lettering, numbers, UI, watermarks, people",
+  "rationale": "Architectural night captures the lonely, expensive burden of the physical home in a high-risk environment. The blue-hour isolation highlights the house as the unfunded liability.",
+  "cue": "lagging half of wildfire risk",
+  "subject": "A fire-hardened modern house exterior at dusk",
+  "core_thesis": "California's $30 billion home hardening need remains largely unfunded as the state grant meant to pay for it is practically empty.",
+  "core_conflict": "Massive infrastructure cost of physical home defense vs. empty public grant pools",
+  "composition": "Asymmetric wide framing",
+  "alt_text": "The $30B Home Hardening Bill. A fire-hardened modern house exterior illuminated by a single warm worklight against a dark",
+  "caption": "The $30B Home Hardening Bill: The $30B retrofit bill lands entirely on homeowners.",
+  "title": "The $30B Home Hardening Bill",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-blocks-30b-hardening-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 228120,
+  "sha256": "sha256:e0fad0bf8b47542623f60a4e496240f4f85c7e51d2dad24ef8c9f40ee3078cae",
+  "source_hash": "sha256:bb6b475c12cc921cf4385860c444c82f",
+  "source_chars": 5986,
+  "task_id": "dcbef17f939b5747f634c26a1ded8729",
+  "credits": 5.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/dcbef17f939b5747f634c26a1ded8729_1792147215775.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph of a modern fire-hardened suburban house exterior at blue hour. 35mm anamorphic wide lens. Asymmetric wide framing, the house anchored in the lower-right third, leaving generous negative space in the deep blue twilight sky. The house features tactile cement board siding and a brushed metal roof. A single warm amber construction worklight illuminates one corner of the reinforced wall, casting sharp directional light against the dark ambient blue hour environment. No moving figures, crisp atmospheric depth, cinematic editorial standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-16T10:40:18+00:00",
+  "overlay": {
+    "kicker": "WILDFIRE RESILIENCE // HOME HARDENING",
+    "title": "THE $30B HOME HARDENING BILL",
+    "hook": "The $30B retrofit bill lands entirely on homeowners",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.37,
+    "target": 4.5,
+    "clutter": 0.077,
+    "region_rgb": [
+      10,
+      72,
+      127
+    ],
+    "binding_rgb": [
+      12,
+      89,
+      143
+    ],
+    "title_lines": [
+      "THE $30B HOME",
+      "HARDENING BILL"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-16T10:40:18+00:00"
+  }
+}

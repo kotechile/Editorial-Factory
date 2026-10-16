@@ -225,3 +225,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-15 | `hold-back-capped-at-5-percent` | home_ops_execution | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/hold-back-capped-at-5-percent/featured.jpg` |
 | 2026-10-15 | `three-forms-cost-more-than-tax` | expat_cross_border_relocation | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/three-forms-cost-more-than-tax/featured.jpg` |
 | 2026-10-15 | `forecast-value-added-lose-to-last-period` | demand_sensing_advanced_sop | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/forecast-value-added-lose-to-last-period/featured.png` |
+| 2026-10-16 | `your-blocks-30b-hardening-bill` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-blocks-30b-hardening-bill/featured.jpg` |
