@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T11:45:54Z",
+  "updated_at": "2026-10-16T18:17:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1764,7 +1764,7 @@
       "target_persona": "ai_architect",
       "date": "2026-10-14",
       "public": true,
-      "url": "https://giniloh.com/one-approval-two-payments/"
+      "url": "https://aichieve.net/one-approval-two-payments/"
     },
     {
       "slug": "2026-10-14_owned-shuttles-or-rented-robots",
@@ -1915,7 +1915,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/agent-loop-bound-not-a-budget/"
     },
     {
       "slug": "2026-10-15_cheaper-model-pricier-task",
@@ -1932,7 +1933,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/cheaper-model-pricier-task/"
     },
     {
       "slug": "2026-10-15_forecast-value-added-lose-to-last-period",
@@ -1950,7 +1952,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/forecast-value-added-lose-to-last-period/"
     },
     {
       "slug": "2026-10-15_freight-claim-dies-at-9-months",
@@ -1968,7 +1971,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/freight-claim-dies-at-9-months/"
     },
     {
       "slug": "2026-10-15_hold-back-capped-at-5-percent",
@@ -1986,7 +1990,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/hold-back-capped-at-5-percent/"
     },
     {
       "slug": "2026-10-15_holiday-forecasts-miss-what-shoppers-count",
@@ -2004,7 +2009,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/holiday-forecasts-miss-what-shoppers-count/"
     },
     {
       "slug": "2026-10-15_three-forms-cost-more-than-tax",
@@ -2022,7 +2028,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-15",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/three-forms-cost-more-than-tax/"
     },
     {
       "slug": "2026-10-16_nyc-buys-night-deliveries-8-diesel-bills-you",
@@ -2043,6 +2050,24 @@
       "public": false
     },
     {
+      "slug": "2026-10-16_roof-claim-hidden-second-check-12-months",
+      "title": "Your Roof Claim's Hidden Second Check: 12 Months to Collect",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-16",
+      "public": false
+    },
+    {
       "slug": "2026-10-16_your-blocks-30b-hardening-bill",
       "title": "Your Block's $30B Hardening Bill",
       "vertical": "resilient_home_assets",
@@ -2058,7 +2083,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-16",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-blocks-30b-hardening-bill/"
     },
     {
       "slug": "2026-10-16_your-ipo-payday-tax-bill",

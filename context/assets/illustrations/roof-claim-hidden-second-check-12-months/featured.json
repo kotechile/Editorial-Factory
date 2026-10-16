@@ -1,0 +1,88 @@
+{
+  "slug": "roof-claim-hidden-second-check-12-months",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An insurance settlement document and a bank check resting on a dark walnut desk.",
+      "caption": "The withheld depreciation on a roof claim sits safe behind an event the homeowner controls.",
+      "title": "roof-claim-withheld-depreciation",
+      "bytes": 905101,
+      "sha256": "sha256:8a606853b8c6ba1062e3e4fdf73e4a43"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Overhead flat-lay photograph, 50mm overhead optic with a razor-sharp focal plane, top-down 90-degree view. A thick, embossed insurance settlement document sits on a matte dark walnut desk, with a partially visible bank check protruding from beneath it. Even diffused daylight casting soft shadows, one document slightly out of alignment to look handled. Muted paper tones, heavy tactile paper stock, generous editorial negative space. No legible text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, people, hands, UI",
+  "rationale": "The story turns on regulatory rules, contract riders, and settlement sequences hidden in policy papers. A document flatlay perfectly captures the administrative reality of the split-payment model.",
+  "cue": "hidden second check",
+  "subject": "an official insurance settlement document overlapping a partially exposed bank check",
+  "core_thesis": "A replacement-cost roof claim arrives as two payments, and the hidden second check is only paid on proof the work was done inside a policy-granted window.",
+  "core_conflict": "Guaranteed replacement value versus the rigid proof-of-work deadline.",
+  "composition": "symmetrical top-down overhead framing",
+  "alt_text": "Roof Claim Second Check. An insurance settlement document and a bank check resting on a dark walnut desk.",
+  "caption": "Roof Claim Second Check: Claiming the withheld depreciation on a roof replacement.",
+  "title": "Roof Claim Second Check",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/roof-claim-hidden-second-check-12-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 534940,
+  "sha256": "sha256:bab1fbd05d474a9bcd8f54b13792857847433cace9a0a53f0f58d86d5dda04b3",
+  "source_hash": "sha256:536f688b48f3c0109a32bbc5739bf629",
+  "source_chars": 5489,
+  "task_id": "b0f8b95537d7238b0d2170839e1e9bfa",
+  "credits": 7.0,
+  "cost_ms": 243,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b0f8b95537d7238b0d2170839e1e9bfa_1792174614897.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, 50mm overhead optic with a razor-sharp focal plane, top-down 90-degree view. A thick, embossed insurance settlement document sits on a matte dark walnut desk, with a partially visible bank check protruding from beneath it. Even diffused daylight casting soft shadows, one document slightly out of alignment to look handled. Muted paper tones, heavy tactile paper stock, generous editorial negative space. No legible text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-16T18:16:59+00:00",
+  "overlay": {
+    "kicker": "PROPERTY INSURANCE // ROOF CLAIMS",
+    "title": "ROOF CLAIM SECOND CHECK",
+    "hook": "Claiming the withheld depreciation on a roof replacement",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 150,
+    "contrast": 6.32,
+    "target": 5.5,
+    "clutter": 0.537,
+    "region_rgb": [
+      96,
+      78,
+      65
+    ],
+    "binding_rgb": [
+      213,
+      209,
+      200
+    ],
+    "title_lines": [
+      "ROOF CLAIM",
+      "SECOND CHECK"
+    ],
+    "subject": 0.295,
+    "ink_subject": 0.137,
+    "spike": 0.926,
+    "generated_at": "2026-10-16T18:16:59+00:00"
+  }
+}
