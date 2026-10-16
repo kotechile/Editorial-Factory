@@ -1,0 +1,90 @@
+{
+  "slug": "your-raise-dies-at-51-5-hours",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical gear hitting a solid steel limit block on a concrete surface.",
+      "caption": "The management pay premium disappears entirely at 51.5 hours a week.",
+      "title": "Manager Salary Ceiling Limit Stop Assembly",
+      "bytes": 2546612,
+      "sha256": "sha256:e5be3a4d3a74b20dc5bbe81df0720a5a"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, extreme asymmetric off-centre left framing with generous negative space on the right. Three recognisable engineered parts: a heavy brass time-clock gear mechanism, a latched inspection cover, and a solid steel limit block physically stopping the gear's rotation. Hard clean edges, one directional key light from above throwing a long cast shadow to the right. Matte muted palette of industrial grey and oxidized brass. No bare geometry, no text, no molded lettering.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, floating shapes",
+  "rationale": "The story is about a structural, mathematical ceiling on compensation. A component assembly physically materializes this abstract threshold as a mechanical limit stop.",
+  "cue": "Your raise dies at about 51.5 hours",
+  "subject": "A modular mechanical time-clock assembly hitting a physical steel limit stop",
+  "core_thesis": "Federal pay tables assume a 40-hour week, but actual hours push the hourly value of a manager's salary down to a developer's rate at 51.5 hours.",
+  "core_conflict": "Fixed salary compensation versus uncapped actual hours worked.",
+  "composition": "extreme asymmetric off-centre left framing",
+  "alt_text": "Your Raise Dies At 51 Hours. A modular mechanical gear hitting a solid steel limit block on a concrete surface.",
+  "caption": "Your Raise Dies At 51 Hours: Unpaid extra hours erase the tech manager salary premium.",
+  "title": "Your Raise Dies At 51 Hours",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-raise-dies-at-51-5-hours/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1900486,
+  "sha256": "sha256:799514543ebce65c9998273566afc743575e8df94f0da6ea6fb3c08e538bc629",
+  "source_hash": "sha256:3be9903052a0351723f8776b417ddfe9",
+  "source_chars": 4632,
+  "task_id": "d4e6d8a88e0b481a4ace7c3312587f0c",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1b0035113c05ce076db9b88cbe249655.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, extreme asymmetric off-centre left framing with generous negative space on the right. Three recognisable engineered parts: a heavy brass time-clock gear mechanism, a latched inspection cover, and a solid steel limit block physically stopping the gear's rotation. Hard clean edges, one directional key light from above throwing a long cast shadow to the right. Matte muted palette of industrial grey and oxidized brass. No bare geometry, no text, no molded lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-16T18:41:53+00:00",
+  "overlay": {
+    "kicker": "TECH MANAGEMENT // UNPAID OVERTIME",
+    "title": "YOUR RAISE DIES AT 51 HOURS",
+    "hook": "Unpaid extra hours erase the tech manager salary premium",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 75,
+    "contrast": 4.72,
+    "target": 4.5,
+    "clutter": 0.157,
+    "region_rgb": [
+      130,
+      124,
+      110
+    ],
+    "binding_rgb": [
+      155,
+      149,
+      135
+    ],
+    "title_lines": [
+      "YOUR RAISE DIES",
+      "AT 51 HOURS"
+    ],
+    "subject": 0.025,
+    "ink_subject": 0.011,
+    "spike": 0.08,
+    "generated_at": "2026-10-16T18:41:53+00:00"
+  }
+}

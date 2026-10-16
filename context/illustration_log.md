@@ -231,3 +231,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-16 | `nyc-buys-night-deliveries-8-diesel-bills-you` | last_mile_routing_fleet_carbon | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/nyc-buys-night-deliveries-8-diesel-bills-you/featured.jpg` |
 | 2026-10-16 | `nyc-buys-night-deliveries-8-diesel-bills-you` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/nyc-buys-night-deliveries-8-diesel-bills-you/featured.png` |
 | 2026-10-16 | `roof-claim-hidden-second-check-12-months` | resilient_home_assets | `document_flatlay` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/roof-claim-hidden-second-check-12-months/featured.jpg` |
+| 2026-10-16 | `your-raise-dies-at-51-5-hours` | career_velocity_equity_engineering | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-raise-dies-at-51-5-hours/featured.png` |

@@ -121,6 +121,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-16 | career_velocity_equity_engineering | your-ipo-payday-tax-bill | Your IPO Payday: A 47.7% Tax Bill | https://pressflow.aichieve.net/published/2026-10-16_your-ipo-payday-tax-bill.md | reader site only |
 | 2026-10-16 | last_mile_routing_fleet_carbon | nyc-buys-night-deliveries-8-diesel-bills-you | NYC Buys Night Deliveries: $8 Diesel Bills You | https://pressflow.aichieve.net/published/2026-10-16_nyc-buys-night-deliveries-8-diesel-bills-you.md | reader site only |
 | 2026-10-16 | resilient_home_assets | roof-claim-hidden-second-check-12-months | Your Roof Claim's Hidden Second Check: 12 Months to Collect | https://pressflow.aichieve.net/published/2026-10-16_roof-claim-hidden-second-check-12-months.md | reader site only |
+| 2026-10-16 | career_velocity_equity_engineering | your-raise-dies-at-51-5-hours | Your Raise Dies at 51.5 Hours | https://pressflow.aichieve.net/published/2026-10-16_your-raise-dies-at-51-5-hours.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
