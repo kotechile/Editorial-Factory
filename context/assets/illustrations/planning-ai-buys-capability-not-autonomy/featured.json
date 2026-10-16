@@ -1,6 +1,6 @@
 {
   "slug": "planning-ai-buys-capability-not-autonomy",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:c766d2bbfb22648d637d5fc3fb97800d",
       "generated_at": "2026-10-01T14:16:58+00:00",
       "source_hash": "sha256:26f499300d9683416436f0af34d946fd"
+    },
+    {
+      "revision": 2,
+      "alt_text": "An industrial control building illuminated at dusk with warm light from windows.",
+      "caption": "Firms are heavily investing in planning automation to support human decisions rather than achieve full autonomy.",
+      "title": "AI Planning Investment Control Center Dusk",
+      "bytes": 436999,
+      "sha256": "sha256:6d0faf130671b59774c72976c3151731"
     }
   ],
   "style": "architectural_night",
@@ -26,9 +34,9 @@
   "rationale": "The story highlights significant investment in AI planning automation that largely supports human decisions rather than replacing them. An architectural night scene representing a control room or planning center implies automated capacity running while people are present or sleeping, perfectly capturing the theme of tech adoption in operations.",
   "cue": "make even 10% of planning decisions",
   "subject": "a modern industrial control center or planning office building at blue hour",
-  "alt_text": "An industrial control building illuminated at dusk with warm light from windows.",
-  "caption": "Firms are heavily investing in planning automation to support human decisions rather than achieve full autonomy.",
-  "title": "AI Planning Investment Control Center Dusk",
+  "alt_text": "AI Won'T Run Supply Chains. An industrial control building illuminated at dusk with warm light from windows.",
+  "caption": "AI Won'T Run Supply Chains: Millions spent on tech but humans still make the calls.",
+  "title": "AI Won'T Run Supply Chains",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +46,8 @@
   "local_path": "context/assets/illustrations/planning-ai-buys-capability-not-autonomy/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 436999,
-  "sha256": "sha256:6d0faf130671b59774c72976c3151731",
+  "bytes": 248475,
+  "sha256": "sha256:6ed41dd3933d0f2646eb37d352d0efb1cb02dfc9912fa3da038f10e370c0e175",
   "source_hash": "sha256:26f499300d9683416436f0af34d946fd",
   "source_chars": 4339,
   "task_id": "1841661b8b219ba9b7a45968da53e096",
@@ -54,5 +62,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-01T14:22:28+00:00"
+  "generated_at": "2026-10-01T14:22:28+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN PLANNING AI",
+    "title": "AI WON'T RUN SUPPLY CHAINS",
+    "hook": "Millions spent on tech but humans still make the calls",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 30,
+    "contrast": 4.86,
+    "target": 4.5,
+    "clutter": 0.18,
+    "region_rgb": [
+      19,
+      107,
+      168
+    ],
+    "binding_rgb": [
+      19,
+      122,
+      189
+    ],
+    "title_lines": [
+      "AI WON'T RUN",
+      "SUPPLY CHAINS"
+    ],
+    "subject": 0.133,
+    "ink_subject": 0.073,
+    "spike": 0.373,
+    "generated_at": "2026-10-01T14:22:28+00:00"
+  }
 }

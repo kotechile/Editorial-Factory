@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/planning-ai-buys-capability-not-autonomy/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "An industrial control building illuminated at dusk with warm light from windows."
-image_caption: "Firms are heavily investing in planning automation to support human decisions rather than achieve full autonomy."
+image_alt: "AI Won'T Run Supply Chains. An industrial control building illuminated at dusk with warm light from windows."
+image_caption: "AI Won'T Run Supply Chains: Millions spent on tech but humans still make the calls."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

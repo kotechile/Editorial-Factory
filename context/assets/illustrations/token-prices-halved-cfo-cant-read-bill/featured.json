@@ -1,6 +1,6 @@
 {
   "slug": "token-prices-halved-cfo-cant-read-bill",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:89ff7833542119ad5acd22d2bc56d849",
       "generated_at": "2026-10-01T14:17:37+00:00",
       "source_hash": "sha256:6dc6316e4011a5b45a11e7bcbf3808fb"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop.",
+      "caption": "Cheaper token rates mean little if the resulting enterprise AI bill remains an unreadable black box.",
+      "title": "Padlocked AI Server Module",
+      "bytes": 1215973,
+      "sha256": "sha256:65de515b8bd24b855bd77bd99c03da98"
     }
   ],
   "style": "clay_render",
@@ -26,9 +34,9 @@
   "rationale": "The story deals with structural abstraction\u2014the shift from unit pricing to explainable work units. A clay render of a locked, opaque housing module perfectly captures the concept of an unreadable, opaque bill that CFOs cannot parse.",
   "cue": "a bill they could explain",
   "subject": "an opaque modular server housing with a heavy padlocked cover",
-  "alt_text": "Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop.",
-  "caption": "Cheaper token rates mean little if the resulting enterprise AI bill remains an unreadable black box.",
-  "title": "Padlocked AI Server Module",
+  "alt_text": "The Unexplainable AI Bill. Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop.",
+  "caption": "The Unexplainable AI Bill: Price cuts cannot fix an unexplainable enterprise AI bill.",
+  "title": "The Unexplainable AI Bill",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +46,8 @@
   "local_path": "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1215973,
-  "sha256": "sha256:65de515b8bd24b855bd77bd99c03da98",
+  "bytes": 805735,
+  "sha256": "sha256:d15f4cc5b20e44c8b52cda9d1c8bdbf6a878fe86f07d8bb75475f41246f3e8bb",
   "source_hash": "sha256:badc2990c8fe46a450e4f54cc1146075",
   "source_chars": 6822,
   "task_id": "12c3440324ca4bb328efce0b99b900a2",
@@ -56,5 +64,34 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-02T14:23:53+00:00"
+  "generated_at": "2026-10-02T14:23:53+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // FINOPS BILLING",
+    "title": "THE UNEXPLAINABLE AI BILL",
+    "hook": "Price cuts cannot fix an unexplainable enterprise AI bill",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 60,
+    "contrast": 4.88,
+    "target": 4.5,
+    "clutter": 0.052,
+    "region_rgb": [
+      132,
+      130,
+      125
+    ],
+    "binding_rgb": [
+      129,
+      128,
+      123
+    ],
+    "title_lines": [
+      "THE UNEXPLAINABLE",
+      "AI BILL"
+    ],
+    "subject": 0.055,
+    "ink_subject": 0.022,
+    "spike": 0.19,
+    "generated_at": "2026-10-02T14:23:53+00:00"
+  }
 }

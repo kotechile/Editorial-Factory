@@ -1,0 +1,88 @@
+{
+  "slug": "your-fleets-charger-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Industrial service panel and charging cable connected to an electric delivery van at a depot at night.",
+      "caption": "A fleet's true charging capability is governed by the depot's physical electrical infrastructure, not the vehicle's spec sheet.",
+      "title": "Depot Wall Charger Capacity",
+      "bytes": 388234,
+      "sha256": "sha256:e58b90814b68d1a796e2a79891eec16a"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph at blue hour, wide asymmetric composition with heavy editorial framing on the left. An industrial electrical service panel mounted on a weathered corrugated steel depot wall, with a thick, heavy-duty charging umbilical cable routing out to an unbranded modern electric delivery van parked in the shadows. Shot with a 35mm anamorphic wide lens with dramatic falloff. Deep blue ambient light contrasted by a single warm amber worklight illuminating the metallic conduit and the brushed steel of the service box. Crisp crystalline air, clean high-contrast atmosphere, quiet confidence, editorial cover standard.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, people, faces, humans, generic office worker",
+  "rationale": "The architectural night treatment perfectly captures the reality of fleet charging: vehicles sitting plugged into a depot wall overnight, governed by the facility's electrical capacity under the cool glow of industrial worklights.",
+  "cue": "set at the depot wall",
+  "subject": "an industrial electrical service panel and heavy charging umbilical connected to a parked electric delivery van",
+  "core_thesis": "A delivery fleet's electric charging constraint and cost are fundamentally dictated by the depot's physical power infrastructure, not the vehicle's maximum capability.",
+  "core_conflict": "The mismatch between high-capacity electric delivery vans and the hard limits of depot wall service panels and circuits.",
+  "composition": "wide asymmetric composition with heavy editorial framing on the left",
+  "alt_text": "The Depot Charger Gap. Industrial service panel and charging cable connected to an electric delivery van at a depot at night.",
+  "caption": "The Depot Charger Gap: Depot power limits set the true cost of electric fleets.",
+  "title": "The Depot Charger Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-fleets-charger-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 214088,
+  "sha256": "sha256:5bd3700473ce8f96651a1f488cf9897ff7829601ba322b8413222ce4891f2ca2",
+  "source_hash": "sha256:70f1c843913acdb33254ad990a3897da",
+  "source_chars": 5459,
+  "task_id": "9bbc19a38c91b4c12b17e8771e473df9",
+  "credits": 5.0,
+  "cost_ms": 32,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/9bbc19a38c91b4c12b17e8771e473df9_1792177743415.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph at blue hour, wide asymmetric composition with heavy editorial framing on the left. An industrial electrical service panel mounted on a weathered corrugated steel depot wall, with a thick, heavy-duty charging umbilical cable routing out to an unbranded modern electric delivery van parked in the shadows. Shot with a 35mm anamorphic wide lens with dramatic falloff. Deep blue ambient light contrasted by a single warm amber worklight illuminating the metallic conduit and the brushed steel of the service box. Crisp crystalline air, clean high-contrast atmosphere, quiet confidence, editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-16T19:09:07+00:00",
+  "overlay": {
+    "kicker": "FLEET EVS // DEPOT POWER LIMITS",
+    "title": "THE DEPOT CHARGER GAP",
+    "hook": "Depot power limits set the true cost of electric fleets",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.23,
+    "target": 4.5,
+    "clutter": 0.099,
+    "region_rgb": [
+      13,
+      27,
+      37
+    ],
+    "binding_rgb": [
+      27,
+      45,
+      57
+    ],
+    "title_lines": [
+      "THE DEPOT",
+      "CHARGER GAP"
+    ],
+    "subject": 0.028,
+    "ink_subject": 0.012,
+    "spike": 0.091,
+    "generated_at": "2026-10-16T19:09:07+00:00"
+  }
+}

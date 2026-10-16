@@ -1,6 +1,6 @@
 {
   "slug": "goods-tariff-relief-vs-vessel-fee",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "Washington Cuts The Tariff On The",
       "bytes": 221505,
       "sha256": "sha256:8e6f408e3dc96d96f0bae813e80162da64e3295fc8b512c3b6b55fc747ff2888"
+    },
+    {
+      "revision": 3,
+      "alt_text": "New Ship Fees Erase Tariff Cuts. Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and crane",
+      "caption": "New Ship Fees Erase Tariff Cuts: How a flat vessel fee wipes out goods tariff relief.",
+      "title": "New Ship Fees Erase Tariff Cuts",
+      "bytes": 223466,
+      "sha256": "sha256:e07fe73828a878eb026ea7e9b1b7c13e9a0fce21e7bb1489a55d088b59ba881d"
     }
   ],
   "style": "long_lens_industry",

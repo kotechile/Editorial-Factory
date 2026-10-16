@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T18:42:05Z",
+  "updated_at": "2026-10-16T19:09:19Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2085,6 +2085,23 @@
       "date": "2026-10-16",
       "public": true,
       "url": "https://wellroost.com/your-blocks-30b-hardening-bill/"
+    },
+    {
+      "slug": "2026-10-16_your-fleets-charger-gap",
+      "title": "Your Fleet's Charger Gap: 7.2 kW a Port",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-16",
+      "public": false
     },
     {
       "slug": "2026-10-16_your-ipo-payday-tax-bill",

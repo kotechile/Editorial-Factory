@@ -15,8 +15,8 @@ meta_description_source: derived_from_lead
 image_path: "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.png"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop."
-image_caption: "Cheaper token rates mean little if the resulting enterprise AI bill remains an unreadable black box."
+image_alt: "The Unexplainable AI Bill. Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop."
+image_caption: "The Unexplainable AI Bill: Price cuts cannot fix an unexplainable enterprise AI bill."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
