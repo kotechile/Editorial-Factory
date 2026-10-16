@@ -77,6 +77,7 @@ class StubWP(BaseHTTPRequestHandler):
     # field and silently drops it on save (the read-back's job to catch).
     vertical_taxonomy = True
     vertical_assignment = True
+    vertical_guard = False        # True = behave like a CMS running the vertical publish-guard
     vertical_terms: dict[int, dict] = {
         14: {"id": 14, "slug": "agentic_ai", "name": "agentic_ai"},
         31: {"id": 31, "slug": "supplier_risk_reshoring_decision",
@@ -236,6 +237,18 @@ class StubWP(BaseHTTPRequestHandler):
         StubWP.requests.append(("POST", self.path, body))
         if not StubWP.vertical_assignment:
             body.pop("vertical", None)       # a CMS that accepts the taxonomy field and drops it
+        if StubWP.vertical_guard and body.get("status") == "publish":
+            # The destination decides a post's status inside wp_insert_post_data, and its vertical
+            # guard holds a publish it cannot see a vertical FOR as a draft. WordPress runs that
+            # filter inside wp_insert_post(), BEFORE the REST controller attaches the taxonomy
+            # (wp_set_object_terms), so a publish is held unless the term is ALREADY on the post —
+            # which is why a one-shot REST publish comes back a draft and a second, status-only
+            # call is what publishes. Models cms.giniloh.com and cms.wellroost.com.
+            attached = []
+            if self.path.startswith("/wp-json/wp/v2/posts/"):
+                attached = (StubWP.posts.get(self.path.rsplit("/", 1)[1]) or {}).get("vertical") or []
+            if not attached:
+                body["status"] = "draft"
         if StubWP.sanitize:
             body["content"] = re.sub(r"<script[^>]*>.*?</script>", "", body.get("content") or "", flags=re.S)
             body["content"] = re.sub(r"<svg\b.*?</svg>", "", body["content"], flags=re.S | re.I)
@@ -531,6 +544,75 @@ check("...and a CMS that kept it is not a defect",
                             "vertical": [31]}) == [])
 check("the delivery summary names the vertical term",
       "vertical term 31" in wd.verification_summary(payload_with_vertical, {}))
+
+print("\nvertical — the CMS holds a publish it cannot see a vertical for (why publishing takes two calls)")
+# The destination decides a post's status inside wp_insert_post_data, and its `vertical` guard holds
+# a publish it cannot see a term for as a DRAFT (an unroutable post must not reach a front). But
+# WordPress runs that filter inside wp_insert_post(), BEFORE the REST controller attaches the
+# taxonomy — so a one-shot REST publish comes back a draft EVEN WITH the term in the request.
+# Verified on both live CMSes; the connector therefore writes the post as a draft with its term and
+# publishes it in a second call. This stub models exactly that, and these checks pin it.
+StubWP.posts, StubWP.media = {}, {}
+StubWP.vertical_taxonomy, StubWP.vertical_assignment, StubWP.vertical_guard = True, True, True
+# push_one() resolves credentials per destination domain before it writes anything; the suite's
+# credentials section (below) sets the same pair, so set them here too rather than depend on order.
+os.environ.setdefault("WP_GINILOH_USER", "editor")
+os.environ.setdefault("WP_GINILOH_APP_PASSWORD", "secret")
+gserver, gbase = start_stub()
+try:
+    wpq = wd.WordPress(gbase, "editor", "secret")
+    _, one_shot = wpq._call("POST", "posts", {"title": "t", "slug": "one-shot-publish", "status": "publish",
+                                              "content": "<p>x</p>", "vertical": [31]})
+    check("a one-shot REST publish is held as a draft, term and all",
+          one_shot.get("status") == "draft" and one_shot.get("vertical") == [31], str(one_shot)[:160])
+
+    StubWP.posts.clear()
+    gdb = FakeDB()
+    live = wd.push_one(ROW, gdb, wp_factory=lambda b, u, p: wpq)
+    gpost = StubWP.posts[list(StubWP.posts)[-1]]
+    check("push_one publishes anyway, in a second call", gpost.get("status") == "publish",
+          str(gpost.get("status")))
+    check("...on a post that carries its vertical term", gpost.get("vertical") == [31],
+          str(gpost.get("vertical")))
+    check("...and says so, instead of reporting a plain 'created'",
+          any("published in two calls" in n for n in live.get("notes") or []), str(live.get("notes"))[:200])
+    check("...verified against the live post, not the draft",
+          live["verified"] is True and not live["problems"], str(live.get("problems"))[:200])
+    check("...and recorded on the row as published",
+          gdb.recorded[-1]["record"]["status"] == "publish", json.dumps(gdb.recorded[-1]["record"])[:160])
+
+    # The failure the vertical prevents, pinned: a publish with no term is held as a draft and the
+    # read-back reports it rather than claiming the article went live.
+    _, _ = wpq.upsert({"title": "t", "slug": "no-vertical-at-all", "status": "publish",
+                       "content": "<p>x</p>"})
+    held = [p for p in StubWP.posts.values() if p["slug"] == "no-vertical-at-all"][0]
+    check("a publish with no vertical is held as a draft by the CMS", held["status"] == "draft",
+          str(held.get("status")))
+    check("...and the read-back reports that instead of a clean push",
+          any("status" in p for p in wd.delivery_problems(
+              {"title": "t", "excerpt": "e", "content": "<p>x</p>", "status": "publish"},
+              {"id": held["id"], "status": held["status"], "title": {"raw": "t"},
+               "excerpt": {"raw": "e"}, "content": {"raw": "<p>x</p>"}})))
+
+    # A vertical-carrying publish always takes the two calls: the connector cannot know whether the
+    # destination's guard is installed, and both CMSes it publishes to run it. A publish with NO
+    # vertical at all (a destination that registers no such taxonomy) is a single write.
+    StubWP.posts, StubWP.requests, StubWP.vertical_guard = {}, [], False
+    wd.push_one(ROW, FakeDB(), wp_factory=lambda b, u, p: wpq)
+    writes = [b for m, path, b in StubWP.requests
+              if m == "POST" and path.startswith("/wp-json/wp/v2/posts")]
+    check("a vertical-carrying publish writes twice (draft with the term, then publish)",
+          [w.get("status") for w in writes] == ["draft", "publish"], str(writes)[:200])
+
+    StubWP.posts, StubWP.requests, StubWP.vertical_taxonomy = {}, [], False
+    wd.push_one(ROW, FakeDB(), wp_factory=lambda b, u, p: wpq)
+    writes = [b for m, path, b in StubWP.requests
+              if m == "POST" and path.startswith("/wp-json/wp/v2/posts")]
+    check("...while a destination with no vertical taxonomy publishes in one call",
+          len(writes) == 1 and writes[0].get("status") == "publish", str(writes)[:160])
+    StubWP.vertical_taxonomy, StubWP.vertical_guard = True, False
+finally:
+    gserver.shutdown()
 
 print("\nrouting — fails closed")
 db_no_route = FakeDB(site=None)

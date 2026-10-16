@@ -221,6 +221,15 @@ if ! grep -q "VERTICAL_TAXONOMY" "$ROOT/scripts/wp_draft.py" \
   echo "      term its reader fronts route on) — see resolve_vertical_term / VERTICAL_TAXONOMY"
   FAIL=1
 fi
+# …and a vertical-carrying publish must still take its SECOND call. The CMS decides the status inside
+# wp_insert_post_data, before the REST controller attaches the taxonomy, so a one-shot publish of a
+# post whose vertical guard cannot see a term is silently held as a DRAFT (verified on both CMSes).
+# Dropping the second call would turn every publish into a draft with no visible error.
+if ! grep -q "_publish_then_confirm" "$ROOT/scripts/wp_draft.py"; then
+  echo "FAIL: scripts/wp_draft.py no longer publishes in two calls — every publish on a CMS with the"
+  echo "      vertical guard would be held as a draft (WordPress.upsert._publish_then_confirm)"
+  FAIL=1
+fi
 if ! grep -q 'PUBLISH_GATE", "enforce"' "$ROOT/scripts/wp_draft.py"; then
   echo "FAIL: the pre-publish gate no longer defaults to 'enforce' — an un-gated publish is possible"
   FAIL=1

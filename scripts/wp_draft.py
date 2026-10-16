@@ -37,7 +37,12 @@ Contract with the destinations (cms.<domain>, routed per vertical by public.vert
               nothing is sent for it.
   status   <- always "publish" for a post this connector creates or updates. Posts are sent
               directly as "publish" so they appear live on the destination site immediately.
-              A refresh preserves or reasserts the published status.
+              A refresh preserves or reasserts the published status. Where the destination
+              registers the `vertical` taxonomy this takes TWO calls (draft with the term, then a
+              status-only update): WordPress attaches a taxonomy AFTER the filter that decides the
+              status, and the destination's vertical guard holds a publish it cannot see a term for
+              as a draft — so a one-shot publish would never go live. See
+              WordPress._publish_then_confirm.
 
 Write-back: metadata.wordpress = {post_id, edit_url, link, status, site, pushed_at} on the
 same row, so the next run can update rather than duplicate, and so GSC data can later be
@@ -990,10 +995,44 @@ class WordPress:
                 live = {k: v for k, v in payload.items() if k != "status"}
                 _, post = self._call("POST", f"posts/{existing['id']}", live)
                 return post or {}, f"updated ({LIVE_POST_NOTE})"
+        # A post whose vertical is being named on this write publishes in TWO steps — see
+        # _publish_then_confirm() for why a one-shot publish cannot work on this CMS.
+        if payload.get(VERTICAL_TAXONOMY) and payload.get("status") == "publish":
+            return self._publish_then_confirm(payload, existing)
+        if existing:
             _, post = self._call("POST", f"posts/{existing['id']}", payload)
             return post, "updated"
         _, post = self._call("POST", "posts", payload)
-        return post, "created"
+        return post or {}, "created"
+
+    def _publish_then_confirm(self, payload: dict, existing: dict | None) -> tuple[dict, str]:
+        """Write the post (as a draft) with its vertical, then publish it in a SECOND call.
+
+        The CMS decides a post's status inside `wp_insert_post_data`, and the destination's
+        `vertical` guard (mu-plugin `vertical-taxonomy.php`) holds a publish it cannot see a vertical
+        for — as a DRAFT, so an unroutable post never reaches a front. But WordPress runs that filter
+        inside `wp_insert_post()`, BEFORE the REST controller attaches the taxonomy
+        (`wp_set_object_terms`, class-wp-rest-posts-controller.php), so a one-shot REST publish is
+        ALWAYS held as a draft even when the request carries the term: verified on both CMSes
+        (one-shot -> `draft` with the term attached; a following status-only PATCH -> `publish`).
+
+        So the second call is what actually publishes, and its response is what the caller verifies
+        and reads back. If it fails, the article is left as a draft WITH its term — staged for a
+        human, never lost, and never public without its vertical.
+        """
+        staged = {**payload, "status": "draft"}
+        action = "updated"
+        if existing:
+            _, written = self._call("POST", f"posts/{existing['id']}", staged)
+        else:
+            _, written = self._call("POST", "posts", staged)
+            action = "created"
+        post_id = (written or {}).get("id") or (existing or {}).get("id")
+        if not post_id:
+            raise RuntimeError(f"WordPress returned no post id for slug {payload.get('slug')!r} — "
+                               f"the article is not on the CMS")
+        _, post = self._call("POST", f"posts/{int(post_id)}", {"status": payload["status"]})
+        return post or {}, action
 
     # ── media library (the featured image's home) ────────────────────────────
     #
@@ -1488,6 +1527,12 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     payload, notes = build_payload(row, site, publisher_name, author_name, vertical_term)
     if gate_status:
         payload["status"] = gate_status              # the gate's decision, not the default
+    if payload.get(VERTICAL_TAXONOMY) and payload["status"] == "publish":
+        # Not cosmetic: the CMS attaches a taxonomy term AFTER the filter that decides the status, so
+        # the publish needs a second call (WordPress.upsert._publish_then_confirm). Say so, because
+        # an operator watching one request per article would otherwise read two writes as a retry.
+        notes.append(f"published in two calls: WordPress attaches the {VERTICAL_TAXONOMY} term after "
+                     f"the status filter, so a one-shot publish would be held as a draft")
     notes = vertical_notes + links_notes + gate_notes + notes
 
     print(f"\n  article : {payload['title']}")
@@ -1612,7 +1657,7 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
     print(f"  recorded metadata.{WORDPRESS} on the Supabase row ({row['id']})")
     return {"status": action, "site": site["site_domain"], "post_id": post.get("id"),
             "edit_url": record["edit_url"], "verified": not problems, "problems": problems,
-            "media_id": record.get("media_id"), "summary": summary}
+            "media_id": record.get("media_id"), "summary": summary, "notes": notes}
 
 
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
