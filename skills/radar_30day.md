@@ -123,6 +123,16 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > `synthesize_topics.py --check-briefs`. `parse_signal_date` reads the *leading* date token, so an observation date makes the
 > row admissible to the seeder while the claim cell keeps the provenance honest. Never silently restate a status as an event.
 
+> **A recurring report's PRIOR edition is still live on the same domain — pin the edition, not the page (learned 2026-10-16).**
+> The sibling of the rule above: a report that carries the same name every year leaves last year's figure set one click away, still indexed, still ranking
+> for the same query. Observed on the 2026-10-16 `career_velocity_equity_engineering` sweep — the publisher's 2026 edition page carried 47% / 88% / 26% /
+> 41% / 37%, while its **2025** edition, on the same domain under the same report brand, carried a different set entirely (39% next-event tenders, plus
+> the "only 5% feel very prepared to facilitate a tender offer compared to 41% for an IPO" pair) and stated its own fielding window as
+> "January – February of 2025". Both pages describe themselves as the same report. Before any figure from an annual or recurring report enters the
+> signals file, read that edition's own methodology or dated disclosure line and record which edition the number belongs to in the claim cell; a figure
+> that cannot be pinned to the current edition is dropped, and the **verified brief names the excluded prior-edition figure explicitly** so the drafter
+> cannot pick it up by accident.
+>
 > **Date a trade-press hit from the publisher's own date field, never from the search result (learned 2026-10-14).**
 > A search hit reads as current — it ranks, it has a fresh-looking excerpt — but the story it reports can be
 > weeks old, and a stale anchor silently reds the freshness gate after the Judge has already scored it.
