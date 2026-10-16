@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Standing defect check for the two WordPress CMSes.
 
-Catches, on every run, the two defects that were previously only found by hand:
+Catches, on every run, the three defects that were previously only found by hand:
 
   1. a raw vertical id in a live title or slug  — e.g. the published giniloh post titled
      "enterprise_build_vs_buy: The $250k AI Upkeep Tax", which put the vertical id into the H1,
@@ -9,6 +9,11 @@ Catches, on every run, the two defects that were previously only found by hand:
   2. the same article on BOTH sites — the routing table sends each vertical to exactly one CMS,
      so a slug present on both is either a stale manual push or a misroute. It is also the shape
      of a cross-site duplicate-content problem if both are published.
+  3. a published post carrying no `vertical` term on a CMS that registers the taxonomy. One CMS can
+     serve several reader fronts (cms.giniloh.com feeds giniloh.com AND aichieve.net), and the term
+     is the per-post key a front routes on — so a live post without one is listed by no front while
+     every other field on it looks perfect. Every published post on cms.giniloh.com carries exactly
+     one (118/118 when this check was added).
 
 Contract (watchdog): print NOTHING and exit 0 when clean; print the findings and exit 1 when a
 defect is found, so the job that runs it reports to Slack instead of staying silent.
@@ -74,7 +79,7 @@ def auth_for(site_domain: str) -> str:
 def fetch_posts(site_domain: str, base: str) -> list[dict]:
     request = urllib.request.Request(
         f"{base}/wp-json/wp/v2/posts?status=any&per_page=100&context=edit"
-        f"&_fields=id,slug,status,title,content,link,categories,featured_media",
+        f"&_fields=id,slug,status,title,content,link,categories,featured_media,vertical",
         headers={"Authorization": auth_for(site_domain), "Accept": "application/json"})
     try:
         with urllib.request.urlopen(request, timeout=60) as response:
@@ -83,6 +88,23 @@ def fetch_posts(site_domain: str, base: str) -> list[dict]:
         sys.exit(f"FAIL: {base} returned HTTP {exc.code} for the post list")
     except urllib.error.URLError as exc:
         sys.exit(f"FAIL: could not reach {base}: {exc}")
+
+
+def has_vertical_taxonomy(base: str) -> bool:
+    """Does this CMS name a vertical on a post at all?
+
+    cms.giniloh.com registers the `vertical` taxonomy (it feeds two fronts, and the term is what
+    routes a post to one of them); cms.wellroost.com does not. Asking keeps the check from
+    reporting the same "no vertical" on a site where nothing can carry one. Public read, no writes.
+    """
+    request = urllib.request.Request(f"{base}/wp-json/wp/v2/taxonomies",
+                                     headers={"Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(request, timeout=45) as response:
+            found = json.loads(response.read().decode("utf-8", "replace") or "{}")
+    except Exception:                                          # noqa: BLE001 - best effort
+        return False
+    return isinstance(found, dict) and "vertical" in found
 
 
 def uncategorized_id(site_domain: str, base: str) -> int | None:
@@ -108,6 +130,7 @@ def check() -> dict:
         rows = fetch_posts(site_domain, base)
         posts[site_domain] = rows
         default_category = uncategorized_id(site_domain, base)
+        vertical_taxonomy = has_vertical_taxonomy(base)
         for post in rows:
             title = html.unescape(re.sub(r"<[^>]+>", "", post["title"]["rendered"])).strip()
             if VERTICAL_ID.match(title):
@@ -126,6 +149,13 @@ def check() -> dict:
                 elif default_category and categories == [default_category]:
                     defects.append(f"published post left in Uncategorized — {site_domain} #{post['id']} "
                                    f"'{post['slug']}' ({post['link']})")
+                # The vertical is what a front routes on when one CMS feeds several (cms.giniloh.com
+                # serves giniloh.com AND aichieve.net), so a live post without it is listed by
+                # neither — a defect no other field here shows, because the post looks complete.
+                if vertical_taxonomy and not post.get("vertical"):
+                    defects.append(f"published post with NO vertical term — {site_domain} #{post['id']} "
+                                   f"'{post['slug']}' ({post['link']}) — the fronts that share this CMS "
+                                   f"route on this term; scripts/wp_draft.py names it on every push")
 
     # Same slug on one site twice (WP allows a draft and a published post to share a slug).
     for site_domain, rows in posts.items():

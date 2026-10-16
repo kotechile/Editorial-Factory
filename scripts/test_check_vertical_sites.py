@@ -34,19 +34,38 @@ def row(vertical_id: str, domain: str = "giniloh.com", **overrides) -> dict:
 
 
 print("routing — the destination rules still hold")
-good = cvs.audit({"agentic_ai"}, [row("agentic_ai")])
+FRONTS = {"giniloh.com", "wellroost.com", "aichieve.net"}
+good = cvs.audit({"agentic_ai"}, [row("agentic_ai")], fronts=FRONTS)
 check("a routed vertical with a category passes", good["ok"], str(good["problems"]))
 check("...and the category routing is summarised",
       good["routed_by_category"] == {"giniloh.com": {"9": 1}}, str(good["routed_by_category"]))
 
 check("an unrouted vertical fails", not cvs.audit({"agentic_ai", "new_vertical"}, [row("agentic_ai")])["ok"])
-check("a stale routing row fails", not cvs.audit({"agentic_ai"}, [row("agentic_ai"), row("dead_vertical")])["ok"])
-check("a cms URL off the destination domain fails",
-      not cvs.audit({"agentic_ai"}, [row("agentic_ai", cms_base_url="https://cms.example.com")])["ok"])
+check("a row for a vertical this registry does not declare is reported, not failed",
+      cvs.audit({"agentic_ai"}, [row("agentic_ai"), row("dead_vertical")])["ok"]
+      and any("dead_vertical" in n for n in
+              cvs.audit({"agentic_ai"}, [row("agentic_ai"), row("dead_vertical")])["notices"]),
+      str(cvs.audit({"agentic_ai"}, [row("agentic_ai"), row("dead_vertical")])))
+check("a cms URL off the estate fails",
+      not cvs.audit({"agentic_ai"}, [row("agentic_ai", cms_base_url="https://cms.example.com")],
+                    fronts=FRONTS)["ok"])
+check("...but a CMS another front owns is fine (one CMS serves several fronts)",
+      cvs.audit({"agentic_ai"}, [row("agentic_ai", domain="aichieve.net",
+                                     cms_base_url="https://cms.giniloh.com")],
+                fronts=FRONTS)["ok"],
+      str(cvs.audit({"agentic_ai"}, [row("agentic_ai", domain="aichieve.net",
+                                         cms_base_url="https://cms.giniloh.com")],
+                    fronts=FRONTS)["problems"]))
+check("a routing row for a domain that is not a reader front fails",
+      not cvs.audit({"agentic_ai"}, [row("agentic_ai", domain="example.com",
+                                         cms_base_url="https://cms.example.com")],
+                    fronts=FRONTS)["ok"])
 check("a trailing slash fails",
       not cvs.audit({"agentic_ai"}, [row("agentic_ai", frontend_url="https://giniloh.com/")])["ok"])
 check("an active=false row for a live vertical fails",
       not cvs.audit({"agentic_ai"}, [row("agentic_ai", active=False)])["ok"])
+check("without the front registry the URL rules fall back to the cms.<domain> shape",
+      cvs.audit({"agentic_ai"}, [row("agentic_ai", cms_base_url="https://giniloh.com")])["ok"] is False)
 
 print("\ncategories — a vertical with no category is a defect, not a default")
 no_category = cvs.audit({"agentic_ai"}, [row("agentic_ai", wp_category_id=None)])
@@ -62,13 +81,59 @@ check("...and names the migration to apply",
 check("...only once, not once per vertical",
       sum(1 for p in no_column["problems"] if "does not exist" in p) == 1, str(no_column["problems"]))
 
+print("\nthe CMS's own vertical taxonomy — the term a front routes on")
+# The push resolves this term on the destination and fails closed when it is missing
+# (scripts/wp_draft.py resolve_vertical_term), so the coverage belongs in the audit that runs
+# BEFORE a publish run: a new vertical routed to cms.giniloh.com with no term there is a push that
+# would refuse at 17:30, and the fix is one term.
+covered = cvs.audit({"agentic_ai"}, [row("agentic_ai")], {"giniloh.com": {"agentic_ai"}})
+check("a vertical with a term on its CMS passes", covered["ok"], str(covered["problems"]))
+check("...and the coverage is reported", covered["cms_vertical_terms"] == {"giniloh.com": ["agentic_ai"]},
+      str(covered["cms_vertical_terms"]))
+
+gap = cvs.audit({"agentic_ai", "brand_new_vertical"},
+                [row("agentic_ai"), row("brand_new_vertical")],
+                {"giniloh.com": {"agentic_ai"}})
+check("a routed vertical with no CMS term fails the audit", not gap["ok"], str(gap["problems"]))
+check("...naming the term to create and where to create it",
+      any("brand_new_vertical" in p and "wp-json/wp/v2/vertical" in p for p in gap["problems"]),
+      str(gap["problems"]))
+check("...and not reporting the covered one", not any("'agentic_ai'" in p for p in gap["problems"]),
+      str(gap["problems"]))
+
+unsupported = cvs.audit({"agentic_ai"}, [row("agentic_ai", domain="wellroost.com")],
+                        {"wellroost.com": None})
+check("a CMS with no vertical taxonomy is a notice, not a failure", unsupported["ok"],
+      str(unsupported["problems"]))
+check("...said out loud, with the reason", any("registers no 'vertical' taxonomy" in n
+                                              for n in unsupported["notices"]), str(unsupported["notices"]))
+check("...and reported as None (not an empty term list) in the coverage",
+      unsupported["cms_vertical_terms"] == {"wellroost.com": None},
+      str(unsupported["cms_vertical_terms"]))
+
+unreadable = cvs.audit({"agentic_ai"}, [row("agentic_ai")], {},
+                       {"giniloh.com": "could not reach https://cms.giniloh.com"})
+check("a CMS that could not be read is a notice, not a failure", unreadable["ok"],
+      str(unreadable["problems"]))
+check("...and is not silently treated as covered", unreadable["cms_vertical_terms"] == {"giniloh.com": "unreadable"},
+      str(unreadable["cms_vertical_terms"]))
+
+check("no CMS probe passed => the audit is exactly the routing check it was",
+      "cms_vertical_terms" in cvs.audit({"agentic_ai"}, [row("agentic_ai")])
+      and cvs.audit({"agentic_ai"}, [row("agentic_ai")])["cms_vertical_terms"] == {})
+
 print("\nthe live registry and table")
 result = cvs.check()
 print(f"  routed: {result['routed_verticals']}/{result['declared_verticals']} | "
       f"category column: {result['category_column']} | problems: {len(result['problems'])}")
+for domain, terms in result.get("cms_vertical_terms", {}).items():
+    print(f"    {domain}: {'no vertical taxonomy' if terms is None else terms if terms == 'unreadable' else f'{len(terms)} vertical term(s)'}")
+for notice in result.get("notices", []):
+    print(f"    note: {notice}")
 for problem in result["problems"][:3]:
     print(f"    - {problem}")
-check("every vertical declared in verticals.json is routed", result["routed_verticals"] == result["declared_verticals"])
+check("every vertical declared in verticals.json is routed",
+      not any("has no destination row" in p for p in result["problems"]), str(result["problems"])[:300])
 check("the audit reports whether the category migration is applied",
       isinstance(result["category_column"], bool))
 

@@ -14,9 +14,11 @@
 # metadata.wordpress.post_id, is idempotent (a re-run updates the same post), and never touches a post
 # that is already published (wp_draft's skip-live guard; --refresh-live is the explicit override).
 #
-# Part 2 — defects. scripts/check_cms_defects.py scans both CMSes for the two defects that were
-# previously only caught by hand: a raw vertical id in a live title/slug, and the same article
-# sitting on BOTH sites (a stale manual push, or cross-site duplicate content if both are live).
+# Part 2 — defects. scripts/check_cms_defects.py scans both CMSes for the defects that were
+# previously only caught by hand: a raw vertical id in a live title/slug, the same article sitting on
+# BOTH sites (a stale manual push, or cross-site duplicate content if both are live), and a published
+# post carrying no `vertical` term on a CMS that registers that taxonomy — the term a front routes on
+# when one CMS feeds several fronts, which no other field on the post reveals.
 #
 # Watchdog contract, mirroring scripts/cron-verify-gate.sh: silent when there is nothing to do and
 # nothing is wrong; a short actionable report otherwise. Defects exit non-zero so the job reports
