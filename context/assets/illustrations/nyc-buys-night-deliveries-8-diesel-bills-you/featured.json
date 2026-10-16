@@ -1,0 +1,128 @@
+{
+  "slug": "nyc-buys-night-deliveries-8-diesel-bills-you",
+  "revision": 6,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Heavy freight trucks queued at night under amber staging lights, captured with telephoto compression.",
+      "caption": "New York is paying to move commercial freight out of peak traffic, but the fuel bill remains a heavy burden for small fleets.",
+      "title": "NYC-Night-Freight-Diesel-Costs",
+      "bytes": 459711,
+      "sha256": "sha256:bc6cec99422375538f8d1fb94624dc33"
+    },
+    {
+      "revision": 2,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Telephoto compression, 200mm long-lens view of industrial freight infrastructure at night. Stacked overlapping layers of heavy unbranded freight trucks queued under harsh amber staging lights against deep blue ambient night shadows. Flat compressed perspective, sharp directional lighting highlighting the metallic grilles, diesel tanks, and weathered trailers with crystal-clear telephoto distance clarity. No people in the foreground, no fog or haze, high-contrast industrial reality capturing the massive scale of the midnight logistics shift.",
+      "task_id": "b681c6881c7b4527c5dd7cc249154163",
+      "sha256": "sha256:167daf7ed9c4c977e31f116fdf4641e898b20dfef10b05e468922888ad15fd8d",
+      "generated_at": "2026-10-16T11:43:05+00:00",
+      "source_hash": "sha256:f40eb940e66e7e81ae6310482cf1b349"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Dense queue of heavy delivery trucks at a night fueling depot captured with telephoto compression.",
+      "caption": "Moving deliveries to the night shift buys fleets time, but the core cost of survival is still measured in gallons of diesel.",
+      "title": "Night-Freight-Diesel-Scale",
+      "bytes": 434441,
+      "sha256": "sha256:eaf000c9a6e17e9204cf2b5ede397fe8"
+    },
+    {
+      "revision": 4,
+      "style": "long_lens_industry",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Telephoto compression, 200mm long-lens view of industrial freight logistics. A dense, overlapping queue of heavy commercial delivery trucks lined up at an industrial diesel fueling depot under stark, high-contrast night lighting. Stacked layers of metallic truck cabs, heavy cargo trailers, and towering fuel canopy structures rendered with crystal-clear telephoto distance clarity and flat compressed perspective. Deep industrial contrast, stark amber utility lights cutting through the darkness, heavy shadows on brushed metal and weathered steel, no fog or haze, empty foreground, an imposing and unyielding scale of nocturnal freight dependency.",
+      "task_id": "f067340182295e7ec2a33d6ef6f505b4",
+      "sha256": "sha256:331ccab71fc0316cc3dd1d6037f913c7252cb359643df2b5c33d40767f2f4840",
+      "generated_at": "2026-10-16T11:44:01+00:00",
+      "source_hash": "sha256:f40eb940e66e7e81ae6310482cf1b349"
+    },
+    {
+      "revision": 5,
+      "alt_text": "A matte clay assembly of a tachograph dial and a diesel pump nozzle resting on concrete.",
+      "caption": "While off-hour routes save time, the fuel burden for small fleets remains measured in gallons.",
+      "title": "NYC-Night-Deliveries-Diesel",
+      "bytes": 2087851,
+      "sha256": "sha256:eb93aee16799f8b8ef8d31172ed92706"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a small mechanical assembly interlocking a heavy freight tachograph dial and an industrial diesel fuel nozzle. Asymmetric off-centre composition, generous negative space on the right. The recognizable engineered parts feature matte surfaces with moulding seams, resting heavily on a weathered concrete surface. One soft directional key light raking across from the left, casting deep contact shadows. Muted modern editorial palette of slate blue and terracotta, clean physical arrangement, no plain spheres or wedges, no text, no embossed lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, legible print",
+  "rationale": "A clay render allows us to construct a conceptual mechanical assembly that physically forces the concepts of time and fuel into a single interlocking structure, emphasizing their systemic collision.",
+  "cue": "measured in time \u2014 while the cost",
+  "subject": "an interlocking mechanical assembly of a freight tachograph dial and an industrial diesel fuel nozzle",
+  "core_thesis": "New York's initiative to move deliveries to the night saves time, but small fleets are still crushed by the inflexible cost of diesel fuel.",
+  "core_conflict": "Time savings via off-hour routing versus the fixed, high volumetric cost of diesel.",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "NYC Buys Night Deliveries. A matte clay assembly of a tachograph dial and a diesel pump nozzle resting on concrete.",
+  "caption": "NYC Buys Night Deliveries: City subsidies face off against soaring diesel prices.",
+  "title": "NYC Buys Night Deliveries",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/nyc-buys-night-deliveries-8-diesel-bills-you/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1601552,
+  "sha256": "sha256:ce58081ca6d03a988f5d4d4246883bf6d1047fab4930b7da68d78617afd4b634",
+  "source_hash": "sha256:f40eb940e66e7e81ae6310482cf1b349",
+  "source_chars": 4712,
+  "task_id": "635325216d8ee38dbb18a1d2db440e6f",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c3de5a9842e86513c20e47362b4fa176.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a small mechanical assembly interlocking a heavy freight tachograph dial and an industrial diesel fuel nozzle. Asymmetric off-centre composition, generous negative space on the right. The recognizable engineered parts feature matte surfaces with moulding seams, resting heavily on a weathered concrete surface. One soft directional key light raking across from the left, casting deep contact shadows. Muted modern editorial palette of slate blue and terracotta, clean physical arrangement, no plain spheres or wedges, no text, no embossed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-16T11:45:21+00:00",
+  "overlay": {
+    "kicker": "URBAN FREIGHT // NIGHT DELIVERIES",
+    "title": "NYC BUYS NIGHT DELIVERIES",
+    "hook": "City subsidies face off against soaring diesel prices",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 15,
+    "contrast": 4.68,
+    "target": 4.5,
+    "clutter": 0.061,
+    "region_rgb": [
+      163,
+      156,
+      143
+    ],
+    "binding_rgb": [
+      155,
+      148,
+      132
+    ],
+    "title_lines": [
+      "NYC BUYS NIGHT",
+      "DELIVERIES"
+    ],
+    "subject": 0.012,
+    "ink_subject": 0.005,
+    "spike": 0.037,
+    "generated_at": "2026-10-16T11:45:21+00:00"
+  }
+}

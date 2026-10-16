@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T11:10:20Z",
+  "updated_at": "2026-10-16T11:45:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2022,6 +2022,24 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-15",
+      "public": false
+    },
+    {
+      "slug": "2026-10-16_nyc-buys-night-deliveries-8-diesel-bills-you",
+      "title": "NYC Buys Night Deliveries: $8 Diesel Bills You",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-16",
       "public": false
     },
     {
