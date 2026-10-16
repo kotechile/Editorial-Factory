@@ -71,6 +71,17 @@ class StubWP(BaseHTTPRequestHandler):
     expected_auth = ""       # set by the test: "Basic <b64>" — a wrong password must 401
     sanitize = False         # True = behave like a CMS that strips scripts/SVG on save (kses)
     media_alt_forbidden = False   # True = behave like an account without edit_post on attachments
+    # The vertical taxonomy, exactly as cms.giniloh.com registers it: a term per editorial vertical,
+    # whose slug IS the vertical id. `vertical_taxonomy = False` models cms.wellroost.com, which
+    # registers no such taxonomy at all; `vertical_assignment = False` models a CMS that accepts the
+    # field and silently drops it on save (the read-back's job to catch).
+    vertical_taxonomy = True
+    vertical_assignment = True
+    vertical_terms: dict[int, dict] = {
+        14: {"id": 14, "slug": "agentic_ai", "name": "agentic_ai"},
+        31: {"id": 31, "slug": "supplier_risk_reshoring_decision",
+             "name": "supplier_risk_reshoring_decision"},
+    }
 
     def log_message(self, *args):                 # keep the test output readable
         pass
@@ -126,6 +137,24 @@ class StubWP(BaseHTTPRequestHandler):
             slug = self.path.split("slug=")[1].split("&")[0]
             return self._send(200, [self._media_shaped(m) for m in StubWP.media.values()
                                     if m["slug"] == slug])
+        if self.path.startswith("/wp-json/wp/v2/taxonomies"):
+            found = {"category": {"rest_base": "categories"}, "post_tag": {"rest_base": "tags"}}
+            if StubWP.vertical_taxonomy:
+                found["vertical"] = {"rest_base": "vertical"}
+            return self._send(200, found)
+        if self.path.startswith("/wp-json/wp/v2/vertical"):
+            if not StubWP.vertical_taxonomy:
+                return self._send(404, {"code": "rest_no_route",
+                                        "message": "No route was found matching the URL and request method."})
+            terms = sorted(StubWP.vertical_terms.values(), key=lambda t: t["id"])
+            if "slug=" in self.path:
+                wanted = self.path.split("slug=")[1].split("&")[0]
+                terms = [t for t in terms if t["slug"] == wanted]
+            fields = self.path.split("_fields=")[1] if "_fields=" in self.path else ""
+            if fields:
+                keep = [f for f in fields.split(",") if f]
+                terms = [{k: v for k, v in t.items() if k in keep} for t in terms]
+            return self._send(200, terms)
         if self.path.startswith("/wp-json/wp/v2/categories/"):
             cid = self.path.split("/wp-json/wp/v2/categories/")[1].split("?")[0]
             catalog = {"9": "Autonomous &amp; Agentic Workflows", "7": "AI Stack &amp; Tool TCO"}
@@ -205,6 +234,8 @@ class StubWP(BaseHTTPRequestHandler):
             return self._post_media()
         body = self._read()
         StubWP.requests.append(("POST", self.path, body))
+        if not StubWP.vertical_assignment:
+            body.pop("vertical", None)       # a CMS that accepts the taxonomy field and drops it
         if StubWP.sanitize:
             body["content"] = re.sub(r"<script[^>]*>.*?</script>", "", body.get("content") or "", flags=re.S)
             body["content"] = re.sub(r"<svg\b.*?</svg>", "", body["content"], flags=re.S | re.I)
@@ -464,6 +495,42 @@ payload_no_cat, notes_no_cat = wd.build_payload(ROW, no_cat_site)
 check("no routed category => no categories key, so WordPress's default applies",
       "categories" not in payload_no_cat)
 check("...and the operator is told to set one", any("wp_category_id" in n for n in notes_no_cat), notes_no_cat)
+
+print("\nvertical — the CMS taxonomy term the reader fronts route on")
+# The gap this covers: one CMS can serve several fronts (cms.giniloh.com feeds giniloh.com AND
+# aichieve.net), and the term is the per-post key that decides which front lists an article. A push
+# that named no vertical produced a live post no front routed to, while every other field looked
+# perfect — so the term is resolved by slug on the destination, sent with the post, and asserted on
+# the read-back.
+TERM = {"id": 31, "slug": "supplier_risk_reshoring_decision", "name": "supplier_risk_reshoring_decision"}
+payload_with_vertical, notes_with_vertical = wd.build_payload(ROW, SITE, vertical_term=TERM)
+check("a resolved term is sent as the destination's vertical taxonomy field",
+      payload_with_vertical.get("vertical") == [31], str(payload_with_vertical.get("vertical")))
+check("...and reported in the notes", any("vertical taxonomy: term 31" in n for n in notes_with_vertical),
+      str(notes_with_vertical))
+check("no term resolved => nothing is sent for it (never a guessed id)",
+      "vertical" not in wd.build_payload(ROW, SITE)[0])
+
+check("the verification reads the vertical back, not assumes it",
+      any("vertical" in p for p in wd.delivery_problems(
+          payload_with_vertical,
+          {"id": 101, "status": "publish", "title": {"raw": payload_with_vertical["title"]},
+           "excerpt": {"raw": payload_with_vertical["excerpt"]},
+           "content": {"raw": payload_with_vertical["content"]}, "vertical": []})),
+      str(wd.delivery_problems(payload_with_vertical,
+                               {"id": 101, "title": {"raw": payload_with_vertical["title"]},
+                                "excerpt": {"raw": payload_with_vertical["excerpt"]},
+                                "content": {"raw": payload_with_vertical["content"]},
+                                "vertical": []})))
+check("...and a CMS that kept it is not a defect",
+      wd.delivery_problems(payload_with_vertical,
+                           {"id": 101, "status": "publish",
+                            "title": {"raw": payload_with_vertical["title"]},
+                            "excerpt": {"raw": payload_with_vertical["excerpt"]},
+                            "content": {"raw": payload_with_vertical["content"]},
+                            "vertical": [31]}) == [])
+check("the delivery summary names the vertical term",
+      "vertical term 31" in wd.verification_summary(payload_with_vertical, {}))
 
 print("\nrouting — fails closed")
 db_no_route = FakeDB(site=None)
@@ -806,6 +873,78 @@ with tempfile.TemporaryDirectory() as tmp:
     finally:
         wd.ROOT = origin_root
 
+print("\nvertical — resolved on the destination, sent with the post, asserted on the read-back")
+# Two CMSes, two shapes: cms.giniloh.com registers the `vertical` taxonomy (one term per editorial
+# vertical, the per-post key that routes a post to one of the fronts it feeds), cms.wellroost.com
+# registers none. Neither shape may be assumed — both are probed on the destination.
+StubWP.posts, StubWP.media = {}, {}
+StubWP.vertical_taxonomy, StubWP.vertical_assignment = True, True
+vserver, vbase = start_stub()
+try:
+    wpv = wd.WordPress(vbase, "editor", "secret")
+    term, note = wd.resolve_vertical_term(wpv, "supplier_risk_reshoring_decision", "giniloh.com")
+    check("the term is looked up by slug on THIS destination", (term or {}).get("id") == 31, str(term))
+    check("...and a destination that holds it needs no note", note == "", note)
+
+    vdb = FakeDB()
+    pushed = wd.push_one(ROW, vdb, wp_factory=lambda b, u, p: wpv)
+    vpost = StubWP.posts[list(StubWP.posts)[-1]]
+    check("the post is created carrying the vertical term", vpost.get("vertical") == [31],
+          str(vpost.get("vertical")))
+    check("...verified on the read-back, not assumed",
+          pushed["verified"] is True and "vertical term 31" in (pushed.get("summary") or ""),
+          str(pushed)[:240])
+    check("...and recorded on the row beside the vertical it came from",
+          vdb.recorded[-1]["record"].get("vertical") == "supplier_risk_reshoring_decision"
+          and vdb.recorded[-1]["record"].get("vertical_term_id") == 31,
+          json.dumps(vdb.recorded[-1]["record"])[:240])
+
+    # A CMS that accepts the field and drops it on save is the silent failure the read-back exists
+    # for: the post looks complete and no front lists it.
+    StubWP.posts, StubWP.vertical_assignment = {}, False
+    dropped = wd.push_one(ROW, FakeDB(), wp_factory=lambda b, u, p: wpv)
+    check("a CMS that drops the term is reported, not assumed fine",
+          dropped["verified"] is False and any("vertical" in p for p in dropped["problems"]),
+          str(dropped["problems"])[:200])
+    StubWP.vertical_assignment = True
+
+    # No taxonomy at all (cms.wellroost.com today): there is nothing to specify, and that is said
+    # rather than silently skipped.
+    StubWP.posts, StubWP.vertical_taxonomy = {}, False
+    term, note = wd.resolve_vertical_term(wpv, "home_equity_tco", "wellroost.com")
+    check("a destination with no vertical taxonomy says so, instead of inventing a term",
+          term is None and "registers no 'vertical' taxonomy" in note, note)
+    plain = wd.push_one(ROW, FakeDB(), wp_factory=lambda b, u, p: wpv)
+    check("...and the post is pushed with no such field (nothing sent, nothing to verify)",
+          plain["verified"] is True and "vertical" not in StubWP.posts[list(StubWP.posts)[-1]],
+          str(plain)[:200])
+    StubWP.vertical_taxonomy = True
+
+    # The taxonomy exists but holds no term for the article's vertical: publishing would put the
+    # article on a CMS whose fronts cannot route it, so it fails closed with the slug to create.
+    msg = raises("a vertical with no CMS term refuses to publish",
+                 lambda: wd.resolve_vertical_term(wpv, "brand_new_vertical", "giniloh.com"),
+                 "no term for vertical 'brand_new_vertical'")
+    check("...naming the term to create and the guard that reports the gap ahead of a run",
+          "wp-json/wp/v2/vertical" in msg and "check_vertical_sites.py" in msg, msg[:220])
+    raises("...and a push refuses through the same path",
+           lambda: wd.push_one({**ROW, "metadata": {**ROW["metadata"],
+                                                    "slug": "an-article-on-a-brand-new-vertical",
+                                                    "vertical": "brand_new_vertical"}},
+                               FakeDB(), wp_factory=lambda b, u, p: wpv),
+           "cannot route it")
+
+    # --vertical: the operator naming the vertical, for a row whose own routing is wrong.
+    StubWP.posts = {}
+    override = wd.push_one(ROW, FakeDB(), wp_factory=lambda b, u, p: wpv,
+                           vertical_override="agentic_ai")
+    opost = StubWP.posts[list(StubWP.posts)[-1]]
+    check("--vertical publishes under the named vertical's term, not the row's",
+          opost.get("vertical") == [14], str(opost.get("vertical")))
+    check("...and the push still verifies clean", override["verified"] is True, str(override)[:200])
+finally:
+    vserver.shutdown()
+
 print("\nend-to-end against a stub WordPress")
 StubWP.posts, StubWP.media = {}, {}      # the earlier featured-image section left posts behind
 server, base = start_stub()
@@ -909,6 +1048,9 @@ try:
           f"declared options: {sorted(declared)}")
     check("--refresh re-applies the mapping to posts that already exist",
           "--refresh" in declared and "un_pushed_only=not args.refresh" in src)
+    check("--vertical exists, and is refused on a batch (one article's routing is not another's)",
+          "--vertical" in declared and "names one vertical for one article" in src,
+          f"declared options: {sorted(declared)}")
     check("...and defaults to every row rather than the --limit 1 batch",
           "None if (args.refresh or args.reconcile_media) else 1" in src)
     payload, _ = wd.build_payload(ROW, SITE)

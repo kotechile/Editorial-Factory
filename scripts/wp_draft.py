@@ -26,6 +26,15 @@ Contract with the destinations (cms.<domain>, routed per vertical by public.vert
               The frontends already emit Article + BreadcrumbList + FAQPage from the post
               itself, so re-sending those would duplicate nodes. No Dataset node => nothing
               is emitted (never invented).
+  vertical <- the destination's `vertical` taxonomy: the term whose slug IS the article's
+              vertical id. One CMS can serve several reader fronts (cms.giniloh.com feeds
+              giniloh.com AND aichieve.net), and the term is the per-post key a front routes on —
+              so a post that carries no vertical reaches no front. Resolved on the destination by
+              slug (the taxonomy's own term ids are per-site, never guessed here) and asserted on
+              the read-back. A destination that registers the taxonomy but not the term fails the
+              push: publishing there would put the article somewhere nothing lists it. A
+              destination that registers no such taxonomy (cms.wellroost.com today) says so, and
+              nothing is sent for it.
   status   <- always "publish" for a post this connector creates or updates. Posts are sent
               directly as "publish" so they appear live on the destination site immediately.
               A refresh preserves or reasserts the published status.
@@ -70,6 +79,7 @@ from datetime import datetime, timezone
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES_TABLE = "articles"
 SITES_TABLE = "vertical_sites"
+VERTICAL_TAXONOMY = "vertical"  # the CMS taxonomy whose term names the article's vertical
 EXCERPT_TARGET = 165          # characters, before the word-boundary trim
 LINK_LINKS_MAX = 3            # reader-facing internal links per article (internal_links.MAX_LINKS)
 LIVE_POST_NOTE = "live post kept published"    # upsert()'s action for an already-published post
@@ -606,8 +616,46 @@ def retarget_publisher(node: dict, site: dict, publisher_name: str | None,
     return node, notes
 
 
+def resolve_vertical_term(wp, vertical: str, site_domain: str) -> tuple[dict | None, str]:
+    """(term, note) — the CMS term that names this article's vertical.
+
+    The vertical is what a front routes on: cms.giniloh.com serves two reader fronts
+    (giniloh.com and aichieve.net) and every post published on it carries exactly one `vertical`
+    term (verified across all 118 live posts on 2026-10-16). A post without one reaches neither
+    front, so the term belongs to the push rather than to a manual step afterwards.
+
+    Three outcomes, deliberately different:
+
+    * the destination registers the taxonomy and holds the term -> (term, "") and the payload
+      carries its id. The id is per-site and resolved by SLUG from the destination itself, never
+      guessed or copied from the other CMS.
+    * the destination registers the taxonomy but not the term -> RAISE. The article would land on
+      a CMS that cannot route it; the fix is one term, and the message names it.
+    * the destination registers no such taxonomy -> (None, note). cms.wellroost.com is a
+      single-front site today, so there is no vertical to specify there; that is reported, and
+      the guard (scripts/check_vertical_sites.py) lists which destinations can carry one.
+    """
+    definition = (wp.taxonomies() or {}).get(VERTICAL_TAXONOMY)
+    if not definition:
+        return None, (f"{site_domain} registers no '{VERTICAL_TAXONOMY}' taxonomy — this CMS has no "
+                      f"vertical to specify for '{vertical}' (nothing sent for it)")
+    rest_base = definition.get("rest_base") or VERTICAL_TAXONOMY
+    term = wp.term_by_slug(rest_base, vertical)
+    if not term:
+        available = sorted(str(t.get("slug")) for t in (wp.terms(rest_base) or []) if t.get("slug"))
+        shown = ", ".join(available[:12]) + ("…" if len(available) > 12 else "")
+        raise RuntimeError(
+            f"{site_domain} registers the '{VERTICAL_TAXONOMY}' taxonomy but holds no term for "
+            f"vertical '{vertical}' — publishing would put the article on a CMS whose fronts cannot "
+            f"route it. Create the term first (`POST /wp-json/wp/v2/{rest_base}` with slug+name, or "
+            f"in wp-admin) — scripts/check_vertical_sites.py reports this gap before a run. "
+            f"Terms on this site: {shown or 'none'}")
+    return term, ""
+
+
 def build_payload(row: dict, site: dict, publisher_name: str | None = None,
-                  author_name: str | None = None) -> tuple[dict, list[str]]:
+                  author_name: str | None = None,
+                  vertical_term: dict | None = None) -> tuple[dict, list[str]]:
     """The exact WordPress post payload, plus a list of mapping notes for the operator."""
     metadata = row.get("metadata") or {}
     notes: list[str] = []
@@ -654,6 +702,13 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
     else:
         notes.append(f"no {SITES_TABLE}.wp_category_id for this vertical — WordPress will file the "
                      f"draft under its default category; set one before publishing")
+    # The vertical term (see resolve_vertical_term). Sent as the taxonomy's own field name, exactly
+    # as `categories` is: WordPress resolves a registered taxonomy's REST field by its rest_base.
+    if vertical_term:
+        term_id = int(vertical_term["id"])
+        payload[VERTICAL_TAXONOMY] = [term_id]
+        notes.append(f"{VERTICAL_TAXONOMY} taxonomy: term {term_id} "
+                     f"('{vertical_term.get('slug') or vertical_term.get('name')}')")
     # A previous push recorded the featured image's attachment id. Sending it keeps a --refresh or a
     # dry run honest about what the post will carry; push_one replaces it with the id it resolves.
     recorded_media = (metadata.get(WORDPRESS) or {}).get("media_id")
@@ -789,6 +844,21 @@ def delivery_problems(payload: dict, post: dict, site_domain: str | None = None)
         if str(stored_media or "") != str(sent_media):
             problems.append(f"featured image: sent media {sent_media}, CMS holds {stored_media!r} — "
                             f"the post would render without its header")
+
+    # Same shape of gap, one layer out: the vertical term is what a front routes on, so a CMS that
+    # dropped it leaves a live post that no reader surface lists — invisible in every other field.
+    sent_vertical = payload.get(VERTICAL_TAXONOMY)
+    if sent_vertical:
+        stored_vertical = post.get(VERTICAL_TAXONOMY)
+        try:
+            same = (sorted(int(v) for v in (stored_vertical or []))
+                    == sorted(int(v) for v in sent_vertical))
+        except (TypeError, ValueError):
+            same = False
+        if not same:
+            problems.append(f"{VERTICAL_TAXONOMY}: sent term(s) {list(sent_vertical)}, CMS holds "
+                            f"{stored_vertical!r} — the post carries no vertical on the CMS, so no "
+                            f"front routes a reader to it")
     return problems
 
 
@@ -797,10 +867,12 @@ def verification_summary(payload: dict, post: dict, site_domain: str | None = No
     content = payload.get("content") or ""
     featured = f", featured media {payload['featured_media']}" if payload.get("featured_media") else ""
     links = f", {internal_link_count(content, site_domain)} internal link(s)" if site_domain else ""
+    vertical = (f", vertical term {', '.join(str(v) for v in payload[VERTICAL_TAXONOMY])}"
+                if payload.get(VERTICAL_TAXONOMY) else "")
     return (f"title, {len(_plain_text(payload.get('excerpt')))}-char excerpt, "
             f"{len(_ld_blocks(content))} JSON-LD block(s), "
             f"{len(re.findall(r'<svg', content, re.I))} inline SVG(s), "
-            f"{len(content)} chars of body{links}{featured}")
+            f"{len(content)} chars of body{links}{vertical}{featured}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -860,6 +932,44 @@ class WordPress:
                 f"{self.base}: category {category_id} does not exist on this site — check "
                 f"public.vertical_sites.wp_category_id for the vertical's own domain ({exc})") from None
         return str((category or {}).get("name") or "")
+
+    def taxonomies(self) -> dict:
+        """The taxonomies THIS site registers — the destination is the authority on what a post
+        may carry, so nothing about the vertical taxonomy is assumed in code.
+
+        cms.giniloh.com registers a `vertical` taxonomy whose terms are the editorial verticals;
+        cms.wellroost.com does not. The difference is what lets a push tell "this CMS has no
+        vertical to specify" apart from "this CMS has one and the article's term is missing".
+        Read in the public (view) context: `rest_base` is in it, so the probe needs no
+        credentials and — deliberately — no `context=edit` URL, which would read as a post
+        read-back to the gate that counts them.
+        """
+        try:
+            _, found = self._call("GET", "taxonomies")
+        except RuntimeError as exc:
+            raise RuntimeError(f"{self.base}: could not read the CMS's taxonomies ({exc})") from None
+        return found or {}
+
+    def terms(self, taxonomy_rest_base: str) -> list[dict]:
+        """Every term of one taxonomy (best-effort: used to name the choices in an error)."""
+        try:
+            _, terms = self._call("GET", f"{taxonomy_rest_base}?per_page=100&_fields=id,slug,name")
+        except RuntimeError:
+            return []
+        return terms or []
+
+    def term_by_slug(self, taxonomy_rest_base: str, slug: str) -> dict | None:
+        """One term of a taxonomy by slug, or None when the taxonomy does not exist / has no such
+        term. Both outcomes are handled by the caller; a 404 here means "no term", not a failure.
+        """
+        try:
+            _, terms = self._call("GET", f"{taxonomy_rest_base}?slug={urllib.parse.quote(slug)}"
+                                         f"&_fields=id,slug,name")
+        except RuntimeError as exc:
+            if "HTTP 404" in str(exc) or "rest_no_route" in str(exc):
+                return None
+            raise
+        return (terms or [None])[0]
 
     def read_back(self, post_id) -> dict:
         """The post as the CMS actually holds it — raw fields, drafts included.
@@ -1101,7 +1211,8 @@ def _own_attachment(item: dict, slug: str) -> bool:
     return str((item or {}).get("slug") or "").startswith(f"{slug}-featured")
 
 
-def reimage_by_slug(slug: str, *, db=None, wp_factory=None, verify: bool = True) -> dict:
+def reimage_by_slug(slug: str, *, db=None, wp_factory=None, verify: bool = True,
+                    vertical_override: str | None = None) -> dict:
     """Replace the header image of the post that ALREADY exists for `slug` — and nothing else.
 
     Why this exists: `ensure_featured_media` is idempotent by the media slug, which is what stops a
@@ -1130,7 +1241,7 @@ def reimage_by_slug(slug: str, *, db=None, wp_factory=None, verify: bool = True)
         raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
     row = rows[0]
     metadata = dict(row.get("metadata") or {})
-    vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
+    vertical = vertical_override or metadata.get("vertical") or (row.get("tags") or [""])[0]
     site = db.site_for(vertical)
 
     illustration, staged_note = staged_illustration(slug)
@@ -1260,11 +1371,15 @@ def _served_bytes(url: str | None) -> tuple[bytes | None, str]:
 
 def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None = None,
              author_name: str | None = None, wp_factory=None, verify: bool = True,
-             live_ok: bool = False) -> dict:
+             live_ok: bool = False, vertical_override: str | None = None) -> dict:
     metadata = row.get("metadata") or {}
-    vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
+    row_vertical = (metadata.get("vertical") or (row.get("tags") or [""])[0])
+    vertical = vertical_override or row_vertical
     if not vertical:
         raise RuntimeError(f"row {row.get('id')} has no vertical — cannot route it to a site")
+    if vertical_override and vertical_override != row_vertical:
+        print(f"  note    : publishing as vertical '{vertical}' (--vertical); the row declares "
+              f"'{row_vertical or 'none'}'", file=sys.stderr)
     site = db.site_for(vertical)
     slug = (metadata.get("slug") or "").strip()
 
@@ -1286,6 +1401,22 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
                     "post_id": existing.get("id"), "verified": None, "problems": [], "skipped": True,
                     "edit_url": f"{site['cms_base_url']}/wp-admin/post.php?post={existing.get('id')}"
                                 f"&action=edit"}
+
+    # ── the vertical, named on the destination ──────────────────────────────────────────────────
+    # The article's vertical is not just a routing decision on our side: the destination CMS
+    # carries it as a taxonomy term, and that term is what a front routes on when one CMS serves
+    # several (cms.giniloh.com feeds giniloh.com and aichieve.net). Resolved here — by slug, on
+    # this site — and asserted on the read-back below, because a post published without it reaches
+    # no front while every other field looks perfect.
+    vertical_term: dict | None = None
+    vertical_notes: list[str] = []
+    if dry_run:
+        vertical_notes.append(f"vertical '{vertical}' — its term on {site['site_domain']} is "
+                              f"resolved at push time; a dry run does not contact the CMS")
+    else:
+        vertical_term, vertical_note = resolve_vertical_term(wp, vertical, site["site_domain"])
+        if vertical_note:
+            vertical_notes.append(vertical_note)
 
     # Internal links first: they are part of the body that goes to the CMS, and the row this run
     # pushes is the one the next run reads (scripts/internal_links.py). Best-effort — an article
@@ -1354,14 +1485,16 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
             print(f"! the pre-publish gate could not run ({exc}) — holding this article as a DRAFT "
                   f"rather than publishing un-evaluated text", file=sys.stderr)
 
-    payload, notes = build_payload(row, site, publisher_name, author_name)
+    payload, notes = build_payload(row, site, publisher_name, author_name, vertical_term)
     if gate_status:
         payload["status"] = gate_status              # the gate's decision, not the default
-    notes = links_notes + gate_notes + notes
+    notes = vertical_notes + links_notes + gate_notes + notes
 
     print(f"\n  article : {payload['title']}")
     print(f"  slug    : {payload['slug']}   (idempotency key)")
-    print(f"  vertical: {vertical}  ->  {site['site_domain']}  ({site['cms_base_url']})")
+    print(f"  vertical: {vertical}  ->  {site['site_domain']}  ({site['cms_base_url']})"
+          + (f"  |  {VERTICAL_TAXONOMY} term {vertical_term['id']}" if vertical_term
+             else f"  |  no {VERTICAL_TAXONOMY} term sent"))
     print(f"  excerpt : {len(payload['excerpt'])} chars | {payload['excerpt'][:72]}…")
     print(f"  content : {len(payload['content'])} chars HTML | status={payload['status']}")
     for note in notes:
@@ -1448,6 +1581,12 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         "link": post.get("link"),
         "edit_url": f"{site['cms_base_url']}/wp-admin/post.php?post={post.get('id')}&action=edit",
         "site": site["site_domain"],
+        # The vertical the CMS accepted, beside the one the row declares. An audit can then tell a
+        # publish that carried its term from one that reached no front — and, on a destination with
+        # no such taxonomy, from one that had nothing to carry (both are `null` here, which is why
+        # `vertical` is recorded next to it rather than instead of it).
+        "vertical": vertical,
+        "vertical_term_id": int(vertical_term["id"]) if vertical_term else None,
         "pushed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "pushed_by": "scripts/wp_draft.py",
         "internal_links": internal_link_count(payload["content"], site["site_domain"]),
@@ -1478,7 +1617,8 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
 
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
                  author_name: str | None = None, wp_factory=None, db=None,
-                 verify: bool = True, live_ok: bool = False) -> dict:
+                 verify: bool = True, live_ok: bool = False,
+                 vertical_override: str | None = None) -> dict:
     """Push one article by its Supabase slug. The single entry point used by both this CLI and
     scripts/publish.py, so the in-run hook and a manual re-run share one code path."""
     db = db or Supabase(*supabase_config())
@@ -1486,7 +1626,8 @@ def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None
     if not rows:
         raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
     return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name,
-                    author_name=author_name, wp_factory=wp_factory, verify=verify, live_ok=live_ok)
+                    author_name=author_name, wp_factory=wp_factory, verify=verify, live_ok=live_ok,
+                    vertical_override=vertical_override)
 
 
 def retitle_slug(slug: str, *, db=None, title: str | None = None) -> dict:
@@ -1555,6 +1696,12 @@ def main() -> int:
     parser.add_argument("--author-name", default=None,
                         help="Byline for the schema's author node. Omitted = the author node is "
                              "dropped rather than publishing the generator's {{AUTHOR_NAME}} token")
+    parser.add_argument("--vertical", default=None, dest="vertical_override",
+                        help="Publish this article as the named vertical instead of the one its row "
+                             "declares. The vertical picks both the destination CMS "
+                             "(public.vertical_sites) and the CMS taxonomy term the reader fronts "
+                             "route on, so an unknown one fails loudly rather than defaulting. "
+                             "Single-article runs only (--slug/--reimage)")
     parser.add_argument("--reconcile-media", action="store_true",
                         help="Reconcile existing posts that have no featured image attached in the CMS "
                              "yet, but now have a staged or recorded illustration ready")
@@ -1562,6 +1709,11 @@ def main() -> int:
 
     if not args.slug and not args.all and not args.refresh and not args.reimage and not args.reconcile_media:
         parser.error("pass --slug <slug>, --all, --refresh or --reconcile-media")
+    if args.vertical_override and not args.slug:
+        # A vertical named on a batch would re-route every row in it to one CMS term: one article's
+        # routing decision must not become another's. Single-article runs only.
+        parser.error("--vertical names one vertical for one article — use it with --slug, "
+                     "not with --all/--refresh/--reconcile-media")
 
     limit = args.limit if args.limit is not None else (None if (args.refresh or args.reconcile_media) else 1)
     db = Supabase(*supabase_config())
@@ -1572,7 +1724,8 @@ def main() -> int:
         if args.all or args.refresh:
             parser.error("--reimage works on one --slug at a time, deliberately")
         try:
-            result = reimage_by_slug(args.slug, db=db, verify=not args.no_verify)
+            result = reimage_by_slug(args.slug, db=db, verify=not args.no_verify,
+                                     vertical_override=args.vertical_override)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
             return 1
@@ -1600,7 +1753,8 @@ def main() -> int:
         try:
             result = push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
                                   author_name=args.author_name, db=db, verify=not args.no_verify,
-                                  live_ok=args.refresh_live)
+                                  live_ok=args.refresh_live,
+                                  vertical_override=args.vertical_override)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
             return 1

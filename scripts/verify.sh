@@ -210,6 +210,17 @@ if ! grep -q "import publish_gate" "$ROOT/scripts/wp_draft.py" \
   echo "FAIL: scripts/wp_draft.py no longer gates an article before publishing it (scripts/publish_gate.py)"
   FAIL=1
 fi
+# The vertical is part of the push, not an operator step afterwards: the destination CMS carries it
+# as a taxonomy term and that term is what a reader front routes on when one CMS serves several
+# (cms.giniloh.com feeds giniloh.com AND aichieve.net). Un-wiring it would restore live posts that no
+# front lists while every other field looks perfect, which is invisible to every other check here.
+if ! grep -q "VERTICAL_TAXONOMY" "$ROOT/scripts/wp_draft.py" \
+   || ! grep -q 'payload\[VERTICAL_TAXONOMY\] = \[term_id\]' "$ROOT/scripts/wp_draft.py" \
+   || ! grep -q "resolve_vertical_term(" "$ROOT/scripts/wp_draft.py"; then
+  echo "FAIL: scripts/wp_draft.py no longer names the article's vertical on the destination CMS (the"
+  echo "      term its reader fronts route on) — see resolve_vertical_term / VERTICAL_TAXONOMY"
+  FAIL=1
+fi
 if ! grep -q 'PUBLISH_GATE", "enforce"' "$ROOT/scripts/wp_draft.py"; then
   echo "FAIL: the pre-publish gate no longer defaults to 'enforce' — an un-gated publish is possible"
   FAIL=1
