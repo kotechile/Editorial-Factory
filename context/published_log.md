@@ -118,6 +118,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-15 | expat_cross_border_relocation | three-forms-cost-more-than-tax | Moving Abroad: Why Missed US Forms Cost $10,000 Each | https://pressflow.aichieve.net/published/2026-10-15_three-forms-cost-more-than-tax.md | reader site only |
 | 2026-10-15 | demand_sensing_advanced_sop | forecast-value-added-lose-to-last-period | Forecast Value Added: 52% Lose to Last Period | https://pressflow.aichieve.net/published/2026-10-15_forecast-value-added-lose-to-last-period.md | reader site only |
 | 2026-10-16 | resilient_home_assets | your-blocks-30b-hardening-bill | Your Block's $30B Hardening Bill | https://pressflow.aichieve.net/published/2026-10-16_your-blocks-30b-hardening-bill.md | reader site only |
+| 2026-10-16 | career_velocity_equity_engineering | your-ipo-payday-tax-bill | Your IPO Payday: A 47.7% Tax Bill | https://pressflow.aichieve.net/published/2026-10-16_your-ipo-payday-tax-bill.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

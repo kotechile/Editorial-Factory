@@ -1,0 +1,90 @@
+{
+  "slug": "your-ipo-payday-tax-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A machined aluminum block cleanly split into two modules, with a heavy latch securing one half.",
+      "caption": "The mechanics of IPO settlement automatically carve out a massive slice of equity for tax withholding.",
+      "title": "IPO Tax Withholding Assembly",
+      "bytes": 2063710,
+      "sha256": "sha256:a32cb41bf351c2b917200539779e5862"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, extreme asymmetric off-centre arrangement. Two recognizable engineered parts: a thick machined aluminum block cleanly split into two unequal modules, with a heavy anodized containment latch locking down nearly half of the structure. Hard clean edges, matte muted palette of industrial grey and brushed steel. One directional key light throwing a long, dramatic cast shadow across the concrete, generous empty negative space, deliberate architectural restraint.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, numbers, people, face, hands, cubes, spheres",
+  "rationale": "The story is about a strict structural rule and a single dividing number (47.7% withheld). A modular component assembly powerfully represents this unyielding, mechanical division of assets without resorting to literal finance clich\u00e9s.",
+  "cue": "shares held back for tax",
+  "subject": "a modular block cleanly divided by a heavy mechanical latch",
+  "core_thesis": "At a liquidity event, the shares held back for tax and the assumed rate dictate what a worker actually keeps, rather than the headline valuation.",
+  "core_conflict": "Headline paper valuation versus the harsh structural reality of massive tax withholding mechanisms.",
+  "composition": "extreme asymmetric off-centre arrangement",
+  "alt_text": "The 47.7 Percent IPO Tax. A machined aluminum block cleanly split into two modules, with a heavy latch securing one half.",
+  "caption": "The 47.7 Percent IPO Tax: Why half your equity vanishes at a liquidity event.",
+  "title": "The 47.7 Percent IPO Tax",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-ipo-payday-tax-bill/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1493519,
+  "sha256": "sha256:8cea61185c0f8f5687365633ae143bd1e4621bd9543b7bf1afa1ffb8c7e47223",
+  "source_hash": "sha256:24c965c094e3f7f093e3dd8e264bb1cb",
+  "source_chars": 6302,
+  "task_id": "0253a71e6e3c8f75df569741552c0514",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_763c9db1c37a55242f72fa9382d33a28.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface, extreme asymmetric off-centre arrangement. Two recognizable engineered parts: a thick machined aluminum block cleanly split into two unequal modules, with a heavy anodized containment latch locking down nearly half of the structure. Hard clean edges, matte muted palette of industrial grey and brushed steel. One directional key light throwing a long, dramatic cast shadow across the concrete, generous empty negative space, deliberate architectural restraint.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-16T11:10:05+00:00",
+  "overlay": {
+    "kicker": "EQUITY COMPENSATION // RSU TAXES",
+    "title": "THE 47.7 PERCENT IPO TAX",
+    "hook": "Why half your equity vanishes at a liquidity event",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.13,
+    "target": 4.5,
+    "clutter": 0.129,
+    "region_rgb": [
+      84,
+      81,
+      74
+    ],
+    "binding_rgb": [
+      104,
+      99,
+      93
+    ],
+    "title_lines": [
+      "THE 47.7 PERCENT",
+      "IPO TAX"
+    ],
+    "subject": 0.017,
+    "ink_subject": 0.007,
+    "spike": 0.057,
+    "generated_at": "2026-10-16T11:10:05+00:00"
+  }
+}

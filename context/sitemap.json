@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T10:40:31Z",
+  "updated_at": "2026-10-16T11:10:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2039,6 +2039,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-16",
+      "public": false
+    },
+    {
+      "slug": "2026-10-16_your-ipo-payday-tax-bill",
+      "title": "Your IPO Payday: A 47.7% Tax Bill",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "equity_career_strategist",
       "date": "2026-10-16",
       "public": false
     }
