@@ -111,6 +111,18 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > candidate in the brief's runner-ups and say why; and a page with no measurement can corroborate a collision
 > (as friction: what the industry ships) but can never serve as a dual-authority anchor alongside a measured leg.
 
+> **A sweep can legitimately rest on live status pages — date them by observation and put the event date in the claim cell (learned 2026-10-16).**
+> Some verticals' strongest in-window signal is a *state of the world* rather than a dated article: a regulator's project page
+> ("staff continue to work with OAL on a final review"), a county programme page ("pausing grant activities after September 1st"),
+> a federal grant page ("FEMA is currently reviewing submissions"), a register entry. These carry no publication date, and a
+> strict "drop anything older than the window" reading would discard the rows that make the story. The workable convention, used
+> on the 2026-10-16 `resilient_home_assets` run: put the **observation date** (`2026-10-16`) in the Date column, state the
+> underlying event date **inside the Figure/Claim cell** ("pause effective 2026-09-01"; "OAL action logged 2026-09-08"), add a
+> `**Dating note**` paragraph under the table saying exactly which rows are event-dated and which are standing records, and keep
+> the undated/just-out-of-window primaries in the `## Dated background` list so their URLs are still in the file for
+> `synthesize_topics.py --check-briefs`. `parse_signal_date` reads the *leading* date token, so an observation date makes the
+> row admissible to the seeder while the claim cell keeps the provenance honest. Never silently restate a status as an event.
+
 > **Date a trade-press hit from the publisher's own date field, never from the search result (learned 2026-10-14).**
 > A search hit reads as current — it ranks, it has a fresh-looking excerpt — but the story it reports can be
 > weeks old, and a stale anchor silently reds the freshness gate after the Judge has already scored it.
