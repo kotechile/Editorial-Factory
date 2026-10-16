@@ -32,6 +32,17 @@ no such taxonomy today, and a push there says so rather than inventing anything.
 publishes one article under a different vertical, for a row whose own routing is wrong — it is
 refused on `--all`/`--refresh`, where one article's routing must not become another's.
 
+**A vertical-carrying publish takes TWO calls — do not "simplify" it into one.** The destination
+runs a `vertical` guard inside `wp_insert_post_data` (mu-plugin `vertical-taxonomy.php`, live on both
+CMSes) that holds a publish it cannot see a term for as a DRAFT, and WordPress attaches taxonomy
+terms *after* that filter (`wp_set_object_terms` in the REST controller) — so a one-shot REST publish
+comes back `draft` **even with the term in the request**, verified on both CMSes. The connector
+therefore writes the post as a draft with its term and then publishes it with a status-only second
+call (`WordPress._publish_then_confirm`), reports "published in two calls" in its notes, and verifies
+against the live post. A one-call refactor would silently turn every publish into a draft — the run
+would look green while nothing reached a front (verify.sh §8.5 greps for the second call, and
+`scripts/test_wp_draft.py` models the guard).
+
 ## 2. Persistence (always)
 1. Write the final article to `published/YYYY-MM-DD_<slug>.md`.
    The slug is *bare* — `scripts/publish.py::normalize_slug()` strips a leading `YYYY-MM-DD_` if the
