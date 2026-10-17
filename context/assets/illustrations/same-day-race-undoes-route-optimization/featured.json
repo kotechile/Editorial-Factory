@@ -1,6 +1,6 @@
 {
   "slug": "same-day-race-undoes-route-optimization",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -31,6 +31,14 @@
       "sha256": "sha256:6deebdf2e5c71544fad9710a1bcea570",
       "generated_at": "2026-10-03T00:07:32+00:00",
       "source_hash": "sha256:91e0a7bb16273cd4c4e3d05f28cc0d3d"
+    },
+    {
+      "revision": 4,
+      "alt_text": "A modular mechanical routing block pulling apart into separate disconnected tracks.",
+      "caption": "The rush for same-day delivery is tearing apart tight, optimized delivery routes.",
+      "title": "Route fragmentation 3D render",
+      "bytes": 1155851,
+      "sha256": "sha256:1368f65f4e0a105a665399b8d57cb648"
     }
   ],
   "style": "clay_render",
@@ -46,9 +54,9 @@
   "rationale": "The story describes route optimization\u2014a tightly packed, efficient mechanism\u2014being pulled apart or fragmented by the rush for same-day delivery. A matte 3D clay render of a mechanical module or routing block splitting apart cleanly represents this structural inefficiency without needing literal vans or packages.",
   "cue": "tears those tight routes apart",
   "subject": "a unified modular logistics routing block fracturing into separate, disconnected paths",
-  "alt_text": "A modular mechanical routing block pulling apart into separate disconnected tracks.",
-  "caption": "The rush for same-day delivery is tearing apart tight, optimized delivery routes.",
-  "title": "Route fragmentation 3D render",
+  "alt_text": "Undoing Route Optimization. A modular mechanical routing block pulling apart into separate disconnected tracks.",
+  "caption": "Undoing Route Optimization: Fast shipping undoes a decade of last-mile route gains.",
+  "title": "Undoing Route Optimization",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -61,8 +69,8 @@
   "local_path": "context/assets/illustrations/same-day-race-undoes-route-optimization/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1155851,
-  "sha256": "sha256:1368f65f4e0a105a665399b8d57cb648",
+  "bytes": 797996,
+  "sha256": "sha256:01c279af66d3f71a6967c56882cbc186c9c7b764c0c8f0fa45845e520942c650",
   "source_hash": "sha256:ac255d48b8cd5be1050dea3ae7c57338",
   "source_chars": 3918,
   "task_id": "a6e0694e28659e2c292e29dabe86a917",
@@ -79,5 +87,34 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-03T14:57:48+00:00"
+  "generated_at": "2026-10-03T14:57:48+00:00",
+  "overlay": {
+    "kicker": "LAST-MILE LOGISTICS // SAME-DAY DELIVERY",
+    "title": "UNDOING ROUTE OPTIMIZATION",
+    "hook": "Fast shipping undoes a decade of last-mile route gains",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 60,
+    "contrast": 4.94,
+    "target": 4.5,
+    "clutter": 0.102,
+    "region_rgb": [
+      148,
+      145,
+      138
+    ],
+    "binding_rgb": [
+      132,
+      129,
+      122
+    ],
+    "title_lines": [
+      "UNDOING ROUTE",
+      "OPTIMIZATION"
+    ],
+    "subject": 0.013,
+    "ink_subject": 0.005,
+    "spike": 0.042,
+    "generated_at": "2026-10-03T14:57:48+00:00"
+  }
 }

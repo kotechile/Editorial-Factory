@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/same-day-race-undoes-route-optimization/featured.png"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "A modular mechanical routing block pulling apart into separate disconnected tracks."
-image_caption: "The rush for same-day delivery is tearing apart tight, optimized delivery routes."
+image_alt: "Undoing Route Optimization. A modular mechanical routing block pulling apart into separate disconnected tracks."
+image_caption: "Undoing Route Optimization: Fast shipping undoes a decade of last-mile route gains."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

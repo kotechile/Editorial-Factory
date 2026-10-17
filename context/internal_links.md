@@ -1,57 +1,51 @@
-# Internal-link candidates — 2026-10-16T14:16:18+00:00
+# Internal-link candidates — 2026-10-17T14:21:16+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 25 live article(s), 19 other target(s)
+## giniloh.com — 28 live article(s), 10 other target(s)
 
-Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, career-ai-resilience, major-purchases-assets, mental-models-strategy, money-wealth, supply-chain-operations
+Category hubs this front serves: —
 
-- [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — Mental Models & Strategy
-- [Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System](https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/) — Money & Wealth
-- [Calculate Your Career Relocation Payback](https://giniloh.com/calculate-your-career-relocation-payback/) — Mental Models & Strategy
-- [Disney+ and Hulu Just Raised Prices 13% — Right After Doubling Profits](https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/) — Money & Wealth
-- [Ebike Costs: Per-Use Calculator for Commuters](https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/) — Major Purchases & Assets
-- [Expats: Evaluating the True Value of a Job-Driven Move overseas](https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/) — Mental Models & Strategy
-- [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — Money & Wealth
-- [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — Major Purchases & Assets
-- [Jobs Switch Calculator: Step-by-Step Profit Guide](https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/) — Mental Models & Strategy
-- [Lease Break Calculator: Save $1,850 in 3 Steps](https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/) — Mental Models & Strategy
-- [Moving Abroad: Why Missed US Forms Cost $10,000 Each](https://giniloh.com/three-forms-cost-more-than-tax/) — Money & Wealth
-- [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — Major Purchases & Assets
-- [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — Mental Models & Strategy
-- [Options Trap: Your 26% AMT Bill](https://giniloh.com/post-termination-option-clock-tax/) — Career & AI Resilience
-- [Replace Laptop Screen? Let This Decision Engine Do the Math](https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/) — Major Purchases & Assets
-- [Self-Hosting Break-Even: 1.26 Hours a Year](https://giniloh.com/self-hosting-break-even-one-hour-a-year/) — Money & Wealth
-- [Simulate a Frictionless Liquidity Sweep in Giniloh](https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/) — Money & Wealth
-- [Smart Ways to Invest an Extra $500 a Day](https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/) — Money & Wealth
-- [SpaceX's Staggered Lockup: Six Windows, Not One](https://giniloh.com/staggered-lockup-six-selling-decisions/) — Career & AI Resilience
-- [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — Money & Wealth
-- [The Two Clocks That Decide Your First Year Abroad](https://giniloh.com/split-year-two-clock-seam/) — Money & Wealth
-- [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — Money & Wealth
-- [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — Career & AI Resilience
-- [Why Home Assistant Renamed Its Cloud](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — Money & Wealth
-- [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — Major Purchases & Assets
+- [Best AI Proof Jobs in a Changing Market](https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/) — —
+- [Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System](https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/) — —
+- [Calculate Your Career Relocation Payback](https://giniloh.com/calculate-your-career-relocation-payback/) — —
+- [Disney+ and Hulu Just Raised Prices 13% — Right After Doubling Profits](https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/) — —
+- [Ebike Costs: Per-Use Calculator for Commuters](https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/) — —
+- [Expats: Evaluating the True Value of a Job-Driven Move overseas](https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/) — —
+- [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — —
+- [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — —
+- [Jobs Switch Calculator: Step-by-Step Profit Guide](https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/) — —
+- [Lease Break Calculator: Save $1,850 in 3 Steps](https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/) — —
+- [Moving Abroad: Why Missed US Forms Cost $10,000 Each](https://giniloh.com/three-forms-cost-more-than-tax/) — —
+- [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — —
+- [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — —
+- [Options Trap: Your 26% AMT Bill](https://giniloh.com/post-termination-option-clock-tax/) — —
+- [Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade](https://giniloh.com/pi-5-price-jump-older-kit-wins/) — —
+- [Replace Laptop Screen? Let This Decision Engine Do the Math](https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/) — —
+- [Self-Hosting Break-Even: 1.26 Hours a Year](https://giniloh.com/self-hosting-break-even-one-hour-a-year/) — —
+- [Simulate a Frictionless Liquidity Sweep in Giniloh](https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/) — —
+- [Smart Ways to Invest an Extra $500 a Day](https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/) — —
+- [SpaceX's Staggered Lockup: Six Windows, Not One](https://giniloh.com/staggered-lockup-six-selling-decisions/) — —
+- [The Blueprint Behind Giniloh Money Flow](https://giniloh.com/the-blueprint-behind-giniloh-money-flow/) — —
+- [The Two Clocks That Decide Your First Year Abroad](https://giniloh.com/split-year-two-clock-seam/) — —
+- [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — —
+- [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — —
+- [Why Home Assistant Renamed Its Cloud](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — —
+- [Your IPO Payday: A 47.7% Tax Bill](https://giniloh.com/your-ipo-payday-tax-bill/) — —
+- [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
+- [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — —
 - [AI Career Radar (tool)](https://giniloh.com/calculators/career-ai-resilience/) — —
-- [AI Stack & Tool TCO (category)](https://giniloh.com/categories/ai-stack-tool-tco/) — Artificial Intelligence & Future of Work, AI Stack & Tool TCO
-- [Artificial Intelligence & Future of Work (category)](https://giniloh.com/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence & Future of Work — also served by aichieve.net/categories/artificial-intelligence-future-of-work/
 - [Automated Income Waterfall Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
-- [Autonomous & Agentic Workflows (category)](https://giniloh.com/categories/autonomous-agentic-workflows/) — Artificial Intelligence & Future of Work, Autonomous & Agentic Workflows
-- [Business Automation & Operations (category)](https://giniloh.com/categories/business-automation-operations/) — Artificial Intelligence & Future of Work, Business Automation & Operations
-- [Career & AI Resilience (category)](https://giniloh.com/categories/career-ai-resilience/) — Artificial Intelligence & Future of Work, Career & AI Resilience
 - [Expat Financial & International Tax Evaluator (tool)](https://giniloh.com/calculators/expat-evaluator/) — —
 - [Geographic Relocation & Tax Adjustment Modeler (tool)](https://giniloh.com/calculators/relocation-cost/) — —
 - [Home Espresso Cost-per-Use Calculator (tool)](https://giniloh.com/calculators/coffee-arbitrage/) — —
 - [Job-Hop vs. Retention Compensation Calculator (tool)](https://giniloh.com/calculators/raise-velocity/) — —
 - [Lease Break Penalty & Offset Estimator (tool)](https://giniloh.com/calculators/lease-break/) — —
-- [Major Purchases & Assets (category)](https://giniloh.com/categories/major-purchases-assets/) — Major Purchases & Assets
-- [Mental Models & Strategy (category)](https://giniloh.com/categories/mental-models-strategy/) — Mental Models & Strategy
-- [Money & Wealth (category)](https://giniloh.com/categories/money-wealth/) — Money & Wealth
-- [Supply Chain & Operations (category)](https://giniloh.com/categories/supply-chain-operations/) — Supply Chain & Operations — also served by aichieve.net/categories/supply-chain-operations/
 - [Tech Repair vs. Replace Optimizer (tool)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Tinkering Tax vs. SaaS Upgrade Calculator (tool)](https://giniloh.com/calculators/no-code-terminator/) — —
 - [Total Compensation & Equity Visualizer (tool)](https://giniloh.com/calculators/total-comp/) — —
 
-## wellroost.com — 25 live article(s), 8 other target(s)
+## wellroost.com — 26 live article(s), 8 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, lifestyle, smart-home-security, tools-equipment
 
@@ -79,6 +73,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, lifesty
 - [Your EV Is Now a Home Battery — Behind a Paywall](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
 - [Your Panel Doesn't Need More Amps: The 80% Test](https://wellroost.com/panel-upgrade-80-percent-test/) — Smart Home & Security
+- [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
 - [€1.2 Billion for Shelly: Your Local API Unwritten](https://wellroost.com/local-api-isnt-in-the-contract/) — Smart Home & Security
 - [Energy & Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — Energy & Efficiency
 - [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — Home Cost Decisions
@@ -89,9 +84,9 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, lifesty
 - [Smart Home & Security (category)](https://wellroost.com/categories/smart-home-security/) — Smart Home & Security
 - [Tools & Equipment (category)](https://wellroost.com/categories/tools-equipment/) — Tools & Equipment
 
-## aichieve.net — 92 live article(s), 4 other target(s)
+## aichieve.net — 95 live article(s), 7 other target(s)
 
-Category hubs this front serves: artificial-intelligence-future-of-work, supply-chain-operations
+Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
 - [$62M Says You Never Buy Robots](https://aichieve.net/owned-shuttles-or-rented-robots/) — Supply Chain & Operations
 - [$915M Illusion: Your AI Judge Moves](https://aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/) — AI Stack & Tool TCO
@@ -129,6 +124,7 @@ Category hubs this front serves: artificial-intelligence-future-of-work, supply-
 - [Long Context Is Not Memory: Why AI Agents Need Tiered State](https://aichieve.net/agent-memory-tiering-l1-l4/) — Autonomous & Agentic Workflows
 - [MCP Skills Extension: Standardizing Agent Workflows](https://aichieve.net/mcp-skills-extension/) — Autonomous & Agentic Workflows
 - [Multi Agent Orchestration: Building the One-Person Enterprise](https://aichieve.net/multi-agent-orchestration-building-the-one-person-enterprise/) — AI Stack & Tool TCO
+- [NYC Buys Night Deliveries: $8 Diesel Bills You](https://aichieve.net/nyc-buys-night-deliveries-8-diesel-bills-you/) — Supply Chain & Operations
 - [Nearshoring Doesn't Move the Trade Case](https://aichieve.net/nearshoring-doesnt-move-the-trade-case/) — Supply Chain & Operations
 - [Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.](https://aichieve.net/nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet/) — AI Stack & Tool TCO
 - [One Approval, Two Payments: The 24-Hour Trap](https://aichieve.net/one-approval-two-payments/) — Autonomous & Agentic Workflows
@@ -179,21 +175,27 @@ Category hubs this front serves: artificial-intelligence-future-of-work, supply-
 - [Your Cheaper Model: 57% Pricier Tasks](https://aichieve.net/cheaper-model-pricier-task/) — AI Stack & Tool TCO
 - [Your Claim Dies at 9 Months](https://aichieve.net/freight-claim-dies-at-9-months/) — Supply Chain & Operations
 - [Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year](https://aichieve.net/your-cluster-hidden-clock/) — AI Stack & Tool TCO
+- [Your Fleet's Charger Gap: 7.2 kW a Port](https://aichieve.net/your-fleets-charger-gap/) — Supply Chain & Operations
 - [Your Fuel Surcharge Hides Three Negotiated Numbers](https://aichieve.net/fuel-surcharge-peg-mpg-audit/) — Supply Chain & Operations
 - [Your GPU Runs Out of Cache Before It Runs Out of Math](https://aichieve.net/kv-cache-is-the-concurrency-ceiling/) — Major Purchases & Assets
 - [Your Jira Bill Rose 10%: Memory Rose Six Times](https://aichieve.net/flat-price-was-the-hedge/) — AI Stack & Tool TCO
 - [Your Last-Mile Carbon Number Is a Rate Table](https://aichieve.net/last-mile-carbon-number-is-a-rate-table/) — Supply Chain & Operations
+- [Your Mexico Hedge: A 2027 Renewal Risk](https://aichieve.net/your-mexico-hedge-renewal-risk/) — Supply Chain & Operations
 - [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://aichieve.net/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows
 - [Your Remediator Recovers 46.67%: The Silent Regression](https://aichieve.net/remediator-recovers-46-percent/) — AI Stack & Tool TCO
-- [Artificial Intelligence & Future of Work (category)](https://aichieve.net/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence Future Of Work — also served by giniloh.com/categories/artificial-intelligence-future-of-work/
+- [AI Stack & Tool TCO (category)](https://aichieve.net/categories/ai-stack-tool-tco/) — Ai Stack Tool Tco
+- [Artificial Intelligence & Future of Work (category)](https://aichieve.net/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence Future Of Work
+- [Autonomous & Agentic Workflows (category)](https://aichieve.net/categories/autonomous-agentic-workflows/) — Autonomous Agentic Workflows
+- [Business Automation & Operations (category)](https://aichieve.net/categories/business-automation-operations/) — Business Automation Operations
 - [GPU TCO Analyzer — Local Build vs. Cloud Lease (tool)](https://aichieve.net/tools/gpu-compute/) — —
 - [Master Asset & Software TCO Calculator (tool)](https://aichieve.net/tools/master-asset-tco/) — —
-- [Supply Chain & Operations (category)](https://aichieve.net/categories/supply-chain-operations/) — Supply Chain Operations — also served by giniloh.com/categories/supply-chain-operations/
+- [Supply Chain & Operations (category)](https://aichieve.net/categories/supply-chain-operations/) — Supply Chain Operations
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1003 `your-mexico-hedge-renewal-risk` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #997 `your-fleets-charger-gap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #991 `nyc-buys-night-deliveries-8-diesel-bills-you` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #988 `your-ipo-payday-tax-bill` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #970 `forecast-value-added-lose-to-last-period` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #966 `freight-claim-dies-at-9-months` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #962 `cheaper-model-pricier-task` — published in the CMS but absent from the frontend sitemap
@@ -280,11 +282,8 @@ Category hubs this front serves: artificial-intelligence-future-of-work, supply-
 - giniloh.com #400 `tariff-cliff-already-priced-in` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #401 `mcp-skills-extension` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #391 `enterprisebuildvsbuy-the-250k-ai-upkeep-tax` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #380 `multi-agent-orchestration-building-the-one-person-enterprise` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #374 `agentic-ai-adoption-soars-but-profits-stall-in-2026` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #364 `openai-just-made-the-agent-loop-a-commodity` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #355 `openais-custom-chip-beats-nvidia-on-power-2` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #991 `nyc-buys-night-deliveries-8-diesel-bills-you` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1000 `pi-5-price-jump-older-kit-wins` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #994 `your-raise-dies-at-51-5-hours` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #988 `your-ipo-payday-tax-bill` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #968 `three-forms-cost-more-than-tax` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #807 `self-hosting-break-even-one-hour-a-year` — published in the CMS but absent from the frontend sitemap

@@ -1,6 +1,6 @@
 {
   "slug": "tariff-cliff-already-priced-in",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -30,6 +30,14 @@
     },
     {
       "revision": 4,
+      "alt_text": "Pricing In The Tariff Cliff. Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn light",
+      "caption": "Pricing In The Tariff Cliff: CFOs hoard tariff refunds ahead of a looming snap-back.",
+      "title": "Pricing In The Tariff Cliff",
+      "bytes": 135319,
+      "sha256": "sha256:440d24fd098c5bd96af4800fd84c8d12360eaa9013dcdcf82a943f08bb132b10"
+    },
+    {
+      "revision": 5,
       "alt_text": "Pricing In The Tariff Cliff. Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn light",
       "caption": "Pricing In The Tariff Cliff: CFOs hoard tariff refunds ahead of a looming snap-back.",
       "title": "Pricing In The Tariff Cliff",

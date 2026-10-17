@@ -1,0 +1,88 @@
+{
+  "slug": "your-disks-35-dead-by-year-six",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A multi-bay hard drive enclosure on a dark workbench with one heavy metal drive sled pulled halfway out.",
+      "caption": "Storage arrays rely on moving parts that inevitably wear down, making scheduled disk replacements critical.",
+      "title": "Homelab Storage Failure Rates",
+      "bytes": 242220,
+      "sha256": "sha256:c9b0f9b78003e14ee4ae4fd7b0cf5266"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A sleek, unbranded multi-bay hard drive NAS enclosure sitting on a dark wooden workbench at night. One heavy brushed-metal drive sled is pulled halfway out of the array, catching a single strong practical warm amber worklight. The metallic edges gleam against deep shadows. Crisp atmospheric depth, restrained teal-and-amber palette, high contrast, capturing the physical weight and mechanical nature of the hardware. No people, motion implied through the half-ejected drive, sophisticated editorial cover standard.",
+  "negative_prompt": "text, garbled lettering, UI, watermark, people, human face, hands",
+  "rationale": "A cinematic still captures the physical, mechanical reality of homelab storage hardware. The moody lighting emphasizes the passage of time and the tension of imminent hardware failure in a quiet environment.",
+  "cue": "younger disks on a replacement calendar",
+  "subject": "a multi-bay hard drive enclosure with one drive pulled out",
+  "core_thesis": "Hard drives, unlike solid-state compute boards, have wearing parts, meaning homelab owners should replace them on a calendar schedule before they reach their high-failure sixth year.",
+  "core_conflict": "Mechanical wear and physical degradation versus solid-state electronic longevity.",
+  "composition": "wide asymmetrical framing with hero object on the right third",
+  "alt_text": "Disk Failure By Year Six. A multi-bay hard drive enclosure on a dark workbench with one heavy metal drive sled pulled",
+  "caption": "Disk Failure By Year Six: Why scheduled disk replacements save your data.",
+  "title": "Disk Failure By Year Six",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-disks-35-dead-by-year-six/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 133942,
+  "sha256": "sha256:1665cc149c9a0e2e50c53dbe3868b64e05282a4f984c5d8f157166cf59c323a9",
+  "source_hash": "sha256:27dc571d8d0f6a1fcac6d68749a1e6ee",
+  "source_chars": 5278,
+  "task_id": "b12e970a7db9a8b85c353e979650adee",
+  "credits": 5.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b12e970a7db9a8b85c353e979650adee_1792258727725.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A sleek, unbranded multi-bay hard drive NAS enclosure sitting on a dark wooden workbench at night. One heavy brushed-metal drive sled is pulled halfway out of the array, catching a single strong practical warm amber worklight. The metallic edges gleam against deep shadows. Crisp atmospheric depth, restrained teal-and-amber palette, high contrast, capturing the physical weight and mechanical nature of the hardware. No people, motion implied through the half-ejected drive, sophisticated editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-17T17:38:51+00:00",
+  "overlay": {
+    "kicker": "HOMELAB STORAGE // DISK LIFESPAN",
+    "title": "DISK FAILURE BY YEAR SIX",
+    "hook": "Why scheduled disk replacements save your data",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.37,
+    "target": 4.5,
+    "clutter": 0.094,
+    "region_rgb": [
+      16,
+      29,
+      31
+    ],
+    "binding_rgb": [
+      20,
+      39,
+      43
+    ],
+    "title_lines": [
+      "DISK FAILURE BY",
+      "YEAR SIX"
+    ],
+    "subject": 0.034,
+    "ink_subject": 0.019,
+    "spike": 0.094,
+    "generated_at": "2026-10-17T17:38:51+00:00"
+  }
+}
