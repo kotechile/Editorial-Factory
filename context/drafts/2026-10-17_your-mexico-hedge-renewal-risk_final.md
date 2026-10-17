@@ -12,7 +12,7 @@ sources:
 image_path: "context/assets/illustrations/your-mexico-hedge-renewal-risk/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "2027 Mexico Renewal Risk. Industrial brass clock mechanism resting on a shipping docket and silicon wafer on a desk."
+image_alt: "Isometric split-screen cutaway: a cross-border freight yard with gantry cranes and container trucks on the left, a semiconductor cleanroom with process tools and piping on the right."
 image_caption: "2027 Mexico Renewal Risk: The looming 2027 threat to your Mexico supply chain."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

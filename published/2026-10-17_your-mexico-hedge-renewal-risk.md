@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-mexico-hedge-renewal-risk/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "USMCA 2027 Renewal Risk. Isometric split-screen cutaway illustrating a cross-border freight yard on the left and a"
+image_alt: "Isometric split-screen cutaway: a cross-border freight yard with gantry cranes and container trucks on the left, a semiconductor cleanroom with process tools and piping on the right."
 image_caption: "USMCA 2027 Renewal Risk: Your duty-free Mexico sourcing hedge is now on a clock."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
