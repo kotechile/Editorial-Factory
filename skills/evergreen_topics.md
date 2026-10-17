@@ -199,6 +199,17 @@ treat an EIA row that fails once as retryable-before-replaceable.
 
 **A row on `artificialintelligenceact.eu` can verify on a navigation digit — eye-check the phrase, not the gate's excerpt (observed 2026-10-12).** The site lists every article number in its sidebar above the body, and `figure_evidence` matches a single numeric token anywhere on the page: a row citing "15 days" from Article 73 "verified" against `Arts. 8–15` in the nav, and a row citing "72 hours" from GDPR Article 33 against `Art. 72 Procedure`, so the marker's evidence excerpt reads as navigation while the real quote sits further down. The rows are honest — the phrases are in the body — but the audit trail is not self-evidencing, so confirm each phrase inside its own sentence before drafting and write the check into the verified companion (`python3 -c "import sys,re; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; t=c.fetch_source('<url>')['text']; print(re.search(r'.{0,160}15 days.{0,160}', t).group(0))"`). Prefer a lead figure the page states once — a full date ("2 December 2027") or a rare phrase is safer than a two-digit number the nav already contains.
 
+**An eCFR page's own banner header poisons a row that leads on a small integer (learned 2026-10-17).** The
+eCFR prints `Displaying title 19, up to date as of 10/15/2026` above the regulations, so a cell beginning
+`10 days — …` matches the **banner date's** `10` and reports that boilerplate as the row's evidence, the same
+class as a nav-digit match. Write such a cell digit-free and let the word-number pattern do the work
+(`ten days — an oral prior disclosure must be confirmed within ten days` matches the sentence and nothing in
+the banner), lead on a rare token whose window is the operative sentence (`$100,000` for a review threshold),
+and remember that `thirty`/`forty`-class words are not in `_WORD_NUMBERS` while `ten` is — a digit-free
+`thirty days` cell generates no pattern at all and dies as `figure_absent`. `cbp.gov` stayed unreachable to
+the verifier again, so an agency figure it publishes is citable through the Federal Register full-text
+endpoint (`https://www.federalregister.gov/documents/full_text/text/YYYY/MM/DD/<doc>.txt`) instead.
+
 **A `fetched` row can still fail as `figure_absent` — the page loaded and the number did not.**
 Several vendor rate-card hosts render their tables client-side, so the verifier gets HTTP 200 with a
 body that carries no numeric tokens at all. Observed 2026-10-08 building the supply_chain evergreen
