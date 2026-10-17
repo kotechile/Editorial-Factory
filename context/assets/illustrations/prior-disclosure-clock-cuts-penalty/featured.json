@@ -1,0 +1,88 @@
+{
+  "slug": "prior-disclosure-clock-cuts-penalty",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Customs entry paperwork with a prominent red date stamp resting on a dark desk.",
+      "caption": "A prior disclosure for a misclassified entry is lost by missing a dated step, not by being wrong.",
+      "title": "Tariff Misclassification Penalties",
+      "bytes": 1077295,
+      "sha256": "sha256:f91ea3a60d9c6d2cc218c1617e064c1e"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Overhead flat-lay photograph of heavy customs entry documents on a dark textured leather desk surface. 50mm prime lens, sharp edge-to-edge clarity, top-down 90-degree view. Muted paper tones with one stark red date stamp on a slightly misaligned sheet, looking handled and urgent. Even diffused daylight from a nearby window casting soft shadows. Extreme asymmetric overhead composition with the stack pushed to the lower right corner, leaving vast dark negative space on the left.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, humans, faces, hands",
+  "rationale": "The story is entirely about regulatory paperwork, filing deadlines, and severe financial multipliers tied to documentation errors, making a document flatlay the perfect conceptual fit.",
+  "cue": "This is a filing problem",
+  "subject": "customs entry paperwork with a prominent date stamp",
+  "core_thesis": "A minor paperwork error in tariff classification can trigger massive financial penalties, and the only defense is a strict, time-sensitive prior disclosure.",
+  "core_conflict": "Administrative oversight vs. severe multiplier penalties on a strict timeline",
+  "composition": "extreme asymmetric overhead composition",
+  "alt_text": "Misclassified Entry Costs. Customs entry paperwork with a prominent red date stamp resting on a dark desk.",
+  "caption": "Misclassified Entry Costs: A wrong tariff code costs up to four times the duty.",
+  "title": "Misclassified Entry Costs",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/prior-disclosure-clock-cuts-penalty/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 689702,
+  "sha256": "sha256:a2e58f88e63b7ec9fd57703e52c7cf195f09800abd0884db6a6cf993442c3de7",
+  "source_hash": "sha256:d7bc89729bba5a0a1b57a51bfcbc586b",
+  "source_chars": 5731,
+  "task_id": "9ea37a8d45e5437495a4127beb95d261",
+  "credits": 7.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/9ea37a8d45e5437495a4127beb95d261_1792260507697.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of heavy customs entry documents on a dark textured leather desk surface. 50mm prime lens, sharp edge-to-edge clarity, top-down 90-degree view. Muted paper tones with one stark red date stamp on a slightly misaligned sheet, looking handled and urgent. Even diffused daylight from a nearby window casting soft shadows. Extreme asymmetric overhead composition with the stack pushed to the lower right corner, leaving vast dark negative space on the left.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-17T18:08:31+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // TARIFF PENALTIES",
+    "title": "MISCLASSIFIED ENTRY COSTS",
+    "hook": "A wrong tariff code costs up to four times the duty",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.88,
+    "target": 4.5,
+    "clutter": 0.05,
+    "region_rgb": [
+      27,
+      27,
+      27
+    ],
+    "binding_rgb": [
+      39,
+      39,
+      39
+    ],
+    "title_lines": [
+      "MISCLASSIFIED",
+      "ENTRY COSTS"
+    ],
+    "subject": 0.008,
+    "ink_subject": 0.004,
+    "spike": 0.026,
+    "generated_at": "2026-10-17T18:08:31+00:00"
+  }
+}

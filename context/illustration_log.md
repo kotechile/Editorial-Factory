@@ -237,3 +237,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-17 | `your-mexico-hedge-renewal-risk` | supplier_risk_reshoring_decision | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/your-mexico-hedge-renewal-risk/featured.jpg` |
 | 2026-10-17 | `your-mexico-hedge-renewal-risk` | supplier_risk_reshoring_decision | `technical_isometric` | nanobanana | 16:9 | 2K | 18 | `context/assets/illustrations/your-mexico-hedge-renewal-risk/featured.png` |
 | 2026-10-17 | `your-disks-35-dead-by-year-six` | personal_microeconomics_tinkering_tax | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-disks-35-dead-by-year-six/featured.jpg` |
+| 2026-10-17 | `prior-disclosure-clock-cuts-penalty` | supplier_risk_reshoring_decision | `document_flatlay` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/prior-disclosure-clock-cuts-penalty/featured.jpg` |
