@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T19:09:19Z",
+  "updated_at": "2026-10-17T06:15:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2137,6 +2137,24 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-16",
+      "public": false
+    },
+    {
+      "slug": "2026-10-17_pi-5-price-jump-older-kit-wins",
+      "title": "Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-17",
       "public": false
     }
   ]

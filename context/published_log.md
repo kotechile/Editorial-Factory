@@ -123,6 +123,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-16 | resilient_home_assets | roof-claim-hidden-second-check-12-months | Your Roof Claim's Hidden Second Check: 12 Months to Collect | https://pressflow.aichieve.net/published/2026-10-16_roof-claim-hidden-second-check-12-months.md | reader site only |
 | 2026-10-16 | career_velocity_equity_engineering | your-raise-dies-at-51-5-hours | Your Raise Dies at 51.5 Hours | https://pressflow.aichieve.net/published/2026-10-16_your-raise-dies-at-51-5-hours.md | reader site only |
 | 2026-10-16 | last_mile_routing_fleet_carbon | your-fleets-charger-gap | Your Fleet's Charger Gap: 7.2 kW a Port | https://pressflow.aichieve.net/published/2026-10-16_your-fleets-charger-gap.md | reader site only |
+| 2026-10-17 | personal_microeconomics_tinkering_tax | pi-5-price-jump-older-kit-wins | Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade | https://pressflow.aichieve.net/published/2026-10-17_pi-5-price-jump-older-kit-wins.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

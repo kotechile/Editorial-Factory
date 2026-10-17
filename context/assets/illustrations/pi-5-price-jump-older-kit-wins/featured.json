@@ -1,0 +1,88 @@
+{
+  "slug": "pi-5-price-jump-older-kit-wins",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An older bare circuit board resting next to a sleek modern memory module on a dark slate surface.",
+      "caption": "Rising memory prices are forcing self-hosters to rely on older hardware for affordable upgrades.",
+      "title": "Hardware Upgrade Cost Tension",
+      "bytes": 312332,
+      "sha256": "sha256:ad69510750f54acd62fa9efb21220a2b"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "studio product photograph of a slightly dusty, older green bare circuit board sitting beside a sleek, gleaming modern black memory module on a textured dark slate surface, single directional softbox key light with visible falloff throwing long cast contact shadows, three-quarter angle, shallow depth of field, high-end editorial catalogue clarity, muted modern palette, no gradient sweep.",
+  "negative_prompt": "text, typography, watermark, letters, numbers, gibberish, ui",
+  "rationale": "The story focuses on a specific, purchasable hardware item\u2014the Raspberry Pi and memory modules\u2014and their rising prices. A studio object shot cleanly isolates this economic choice, contrasting the premium finish of new tech with the utilitarian reality of older hardware.",
+  "cue": "the only substitution that still saves money is older hardware",
+  "subject": "An older, dusty bare circuit board next to a modern memory module",
+  "core_thesis": "Self-hosting hardware costs have risen due to AI datacenter demand for memory, leaving older hardware as the only cost-effective option.",
+  "core_conflict": "Rising memory costs driven by enterprise AI vs the budget constraints of home self-hosting.",
+  "composition": "asymmetric composition with off-centre hero object",
+  "alt_text": "Raspberry Pi 5 Price Jump. An older bare circuit board resting next to a sleek modern memory module on a dark slate surface.",
+  "caption": "Raspberry Pi 5 Price Jump: AI memory demand pushes home labs to older hardware.",
+  "title": "Raspberry Pi 5 Price Jump",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/pi-5-price-jump-older-kit-wins/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 189822,
+  "sha256": "sha256:9b86539302bf11aa65b0a3a089fa76e0f045efb1d77d52d62ae0001dfd455e19",
+  "source_hash": "sha256:6e90184da1d19e531cfe29e8143629ed",
+  "source_chars": 5016,
+  "task_id": "9695539a0679a39f1ee6daa3f8fad192",
+  "credits": 5.0,
+  "cost_ms": 408,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/9695539a0679a39f1ee6daa3f8fad192_1792217712266.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "studio product photograph of a slightly dusty, older green bare circuit board sitting beside a sleek, gleaming modern black memory module on a textured dark slate surface, single directional softbox key light with visible falloff throwing long cast contact shadows, three-quarter angle, shallow depth of field, high-end editorial catalogue clarity, muted modern palette, no gradient sweep.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-17T06:15:18+00:00",
+  "overlay": {
+    "kicker": "HOME LABS // HARDWARE INFLATION",
+    "title": "RASPBERRY PI 5 PRICE JUMP",
+    "hook": "AI memory demand pushes home labs to older hardware",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.93,
+    "target": 4.5,
+    "clutter": 0.2,
+    "region_rgb": [
+      72,
+      73,
+      76
+    ],
+    "binding_rgb": [
+      89,
+      90,
+      95
+    ],
+    "title_lines": [
+      "RASPBERRY PI 5",
+      "PRICE JUMP"
+    ],
+    "subject": 0.112,
+    "ink_subject": 0.038,
+    "spike": 0.411,
+    "generated_at": "2026-10-17T06:15:18+00:00"
+  }
+}
