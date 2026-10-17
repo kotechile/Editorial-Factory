@@ -26,7 +26,7 @@ USTR (the Office of the U.S. Trade Representative) just opened a public docket o
 
 I keep coming back to one thing: both escape routes from China exposure shifted their legal footing this month, in opposite directions.
 
-The Mexico case rests on the trade deal, not on a duty rate. The Federal Register notice published on October 5 records what happened at the July 1 meeting of the deal's Free Trade Commission. "The United States did not agree to extend the Agreement for a new 16-year term," it says [1]. Absent an extension, the text ends on July 1, 2036. Until then, the Commission meets to review it every year [1].
+The Mexico case rests on the trade deal, not on a duty rate. The Federal Register notice published on October 5 records what happened at the July 1 meeting of the Free Trade Commission, the body that runs the USMCA (the United States-Mexico-Canada Agreement). "The United States did not agree to extend the Agreement for a new 16-year term," it says [1]. Absent an extension, the text ends on July 1, 2036. Until then, the Commission meets to review it every year [1].
 
 A rule reviewed each year can be reopened each year. The review also brings enforcement. On October 8, USTR invoked the deal's Rapid Response Labor Mechanism at an auto-parts plant in Puebla, Mexico. It asked Mexico to review whether workers there can organize. It also told Treasury to hold that plant's imports open instead of closing them out [3]. That freezes cash at one plant. No new duty rate is needed to hurt.
 

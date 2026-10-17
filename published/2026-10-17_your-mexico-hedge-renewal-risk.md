@@ -13,11 +13,11 @@ meta_title: "Your Mexico Hedge: A 2027 Renewal Risk"
 meta_title_source: "derived_from_title"
 meta_description: "USTR (the Office of the U.S. Trade Representative) just opened a public docket on whether the trade rules behind your Mexico sourcing hedge will hold."
 meta_description_source: "derived_from_lead"
-image_path: "context/assets/illustrations/your-mexico-hedge-renewal-risk/featured.jpg"
-image_style: "editorial_macro"
-image_model: "flux"
-image_alt: "2027 Mexico Renewal Risk. Industrial brass clock mechanism resting on a shipping docket and silicon wafer on a desk."
-image_caption: "2027 Mexico Renewal Risk: The looming 2027 threat to your Mexico supply chain."
+image_path: "context/assets/illustrations/your-mexico-hedge-renewal-risk/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "USMCA 2027 Renewal Risk. Isometric split-screen cutaway illustrating a cross-border freight yard on the left and a"
+image_caption: "USMCA 2027 Renewal Risk: Your duty-free Mexico sourcing hedge is now on a clock."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -30,7 +30,7 @@ USTR (the Office of the U.S. Trade Representative) just opened a public docket o
 
 I keep coming back to one thing: both escape routes from China exposure shifted their legal footing this month, in opposite directions.
 
-The Mexico case rests on the trade deal, not on a duty rate. The Federal Register notice published on October 5 records what happened at the July 1 meeting of the deal's Free Trade Commission. "The United States did not agree to extend the Agreement for a new 16-year term," it says [1]. Absent an extension, the text ends on July 1, 2036. Until then, the Commission meets to review it every year [1].
+The Mexico case rests on the trade deal, not on a duty rate. The Federal Register notice published on October 5 records what happened at the July 1 meeting of the Free Trade Commission, the body that runs the USMCA (the United States-Mexico-Canada Agreement). "The United States did not agree to extend the Agreement for a new 16-year term," it says [1]. Absent an extension, the text ends on July 1, 2036. Until then, the Commission meets to review it every year [1].
 
 A rule reviewed each year can be reopened each year. The review also brings enforcement. On October 8, USTR invoked the deal's Rapid Response Labor Mechanism at an auto-parts plant in Puebla, Mexico. It asked Mexico to review whether workers there can organize. It also told Treasury to hold that plant's imports open instead of closing them out [3]. That freezes cash at one plant. No new duty rate is needed to hurt.
 
