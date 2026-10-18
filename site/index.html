@@ -633,6 +633,42 @@
       color: #BE123C;
     }
 
+    /* Target-domain chip — the publishing surface for a vertical, from Supabase vertical_sites.
+       The dot is part of the chip so the domain reads at a glance without relying on colour. */
+    .tag-domain {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-xs);
+      border: 1px solid var(--border);
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .tag-domain::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+    a.tag-domain:hover { border-color: var(--border-strong); text-decoration: none; }
+    .tag-domain.domain-giniloh { color: #0F766E; background: rgba(15, 118, 110, 0.08); border-color: rgba(15, 118, 110, 0.28); }
+    .tag-domain.domain-aichieve { color: #1D4ED8; background: rgba(29, 78, 216, 0.08); border-color: rgba(29, 78, 216, 0.26); }
+    .tag-domain.domain-wellroost { color: #9A3412; background: rgba(154, 52, 18, 0.08); border-color: rgba(154, 52, 18, 0.26); }
+    .tag-domain.domain-unmapped { color: #B45309; background: rgba(180, 83, 9, 0.08); border-color: rgba(180, 83, 9, 0.3); }
+    [data-theme="dark"] .tag-domain { background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.1); color: #C7C7CC; }
+    [data-theme="dark"] .tag-domain.domain-giniloh { color: #5EEAD4; background: rgba(45, 212, 191, 0.1); border-color: rgba(45, 212, 191, 0.3); }
+    [data-theme="dark"] .tag-domain.domain-aichieve { color: #93C5FD; background: rgba(96, 165, 250, 0.1); border-color: rgba(96, 165, 250, 0.3); }
+    [data-theme="dark"] .tag-domain.domain-wellroost { color: #FDBA74; background: rgba(251, 146, 60, 0.1); border-color: rgba(251, 146, 60, 0.3); }
+    [data-theme="dark"] .tag-domain.domain-unmapped { color: #FCD34D; background: rgba(252, 211, 77, 0.1); border-color: rgba(252, 211, 77, 0.3); }
+
     [data-theme="dark"] .tag-rose {
       background: rgba(244, 63, 94, 0.12);
       border-color: rgba(244, 63, 94, 0.35);
@@ -640,7 +676,8 @@
     }
 
     .dist-filter.active,
-    .dist-platform.active {
+    .dist-platform.active,
+    .domain-filter.active {
       background: var(--text);
       border-color: var(--text);
       color: var(--bg);
@@ -1703,6 +1740,11 @@
       </div>
     </div>
 
+    <div id="verticalDomainFilters" style="display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
+      <span class="section-eyebrow" style="margin: 0;">PUBLISHING TARGET</span>
+      <span id="verticalDomainSource" style="font-size: 11px; color: var(--text-muted); margin-left: 0.25rem;"></span>
+    </div>
+
     <div class="cards-grid" id="verticalsGrid"></div>
   </div>
 
@@ -2050,6 +2092,8 @@ Ready for commands.</div>
   let currentMarkdown = '';
   let allVerticals = [];
   let allPersonas = {};
+  let verticalDomainFilter = 'all';
+  let verticalDomainsSource = '';
 
   // Theme Persistence
   const savedTheme = localStorage.getItem('pressflow_theme') || 'light';
@@ -2619,16 +2663,69 @@ Ready for commands.</div>
       const data = await res.json();
       allVerticals = data.verticals || [];
       allPersonas = data.personas || {};
+      verticalDomainsSource = data.domains_source || '';
 
       document.getElementById('verticalsCount').textContent = allVerticals.length;
       document.getElementById('personasCount').textContent = Object.keys(allPersonas).length;
 
       populatePersonaDropdown();
+      renderDomainFilters();
       renderVerticals(allVerticals);
       renderPersonas(allPersonas);
     } catch (err) {
       console.warn(err);
     }
+  }
+
+  function domainClassFor(domain) {
+    return domain ? `domain-${domain.split('.')[0]}` : 'domain-unmapped';
+  }
+
+  function domainChip(v, { link = false } = {}) {
+    const domain = v.target_domain || null;
+    const cls = domainClassFor(domain);
+    const title = domain
+      ? `Publishes to ${domain}${v.site_active === false ? ' (vertical_sites row inactive)' : ''}`
+      : 'No vertical_sites row — this vertical has no publishing target yet';
+    const label = domain || 'unmapped';
+    return link && v.frontend_url
+      ? `<a class="tag-domain ${cls}" href="${v.frontend_url}" target="_blank" rel="noopener" title="${title}">${label}</a>`
+      : `<span class="tag-domain ${cls}" title="${title}">${label}</span>`;
+  }
+
+  function renderDomainFilters() {
+    const wrap = document.getElementById('verticalDomainFilters');
+    const sourceEl = document.getElementById('verticalDomainSource');
+    if (!wrap) return;
+    const counts = new Map();
+    for (const v of allVerticals) {
+      const d = v.target_domain || 'unmapped';
+      counts.set(d, (counts.get(d) || 0) + 1);
+    }
+    const domains = [...counts.keys()].filter((d) => d !== 'unmapped').sort();
+    if (counts.has('unmapped')) domains.push('unmapped');
+
+    const chips = [`<button class="btn btn-ghost btn-sm domain-filter ${verticalDomainFilter === 'all' ? 'active' : ''}" data-domain="all">All (${allVerticals.length})</button>`]
+      .concat(domains.map((d) => {
+        const active = verticalDomainFilter === d ? 'active' : '';
+        return `<button class="btn btn-ghost btn-sm domain-filter ${active}" data-domain="${d}">${d} (${counts.get(d)})</button>`;
+      }));
+
+    wrap.innerHTML = '<span class="section-eyebrow" style="margin: 0;">PUBLISHING TARGET</span>' + chips.join('');
+    if (sourceEl) {
+      sourceEl.textContent = verticalDomainsSource
+        ? `source: ${verticalDomainsSource}`
+        : '';
+    }
+
+    wrap.querySelectorAll('.domain-filter').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        verticalDomainFilter = btn.getAttribute('data-domain');
+        wrap.querySelectorAll('.domain-filter').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderVerticals(allVerticals);
+      });
+    });
   }
 
   function populatePersonaDropdown() {
@@ -2644,11 +2741,14 @@ Ready for commands.</div>
 
   function renderVerticals(list) {
     const grid = document.getElementById('verticalsGrid');
-    if (!list.length) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">No verticals found.</div>';
+    const visible = verticalDomainFilter === 'all'
+      ? list
+      : list.filter((v) => (v.target_domain || 'unmapped') === verticalDomainFilter);
+    if (!visible.length) {
+      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">No verticals found for this publishing target.</div>';
       return;
     }
-    grid.innerHTML = list.map((v) => {
+    grid.innerHTML = visible.map((v) => {
       const p = allPersonas[v.target_persona] || { label: v.target_persona };
       const readableCadence = getHumanCadence(v.cadence);
       const sourcesCount = (v.sources || []).length;
@@ -2675,6 +2775,10 @@ Ready for commands.</div>
             </div>
 
             <div class="key-value-list">
+              <div class="key-value-row">
+                <span class="key-label">Target Domain</span>
+                <span class="key-value">${domainChip(v, { link: true })}</span>
+              </div>
               <div class="key-value-row">
                 <span class="key-label">Target Persona</span>
                 <span class="key-value">${p.label}</span>

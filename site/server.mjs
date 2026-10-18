@@ -185,6 +185,58 @@ async function supabaseFetch(path, options = {}) {
   }
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Vertical → target domain
+//
+// The registry (context/verticals.json) says what a vertical IS; it does not say where its
+// articles publish. That mapping lives in Supabase `vertical_sites` (vertical_id → site_domain +
+// frontend_url + cms_base_url), which is also what the reader-site builds derive ownership from
+// (giniloh/scripts/routing-sync.mjs). Reading it here is what puts the target domain on the
+// vertical card without a second, hand-kept copy that can disagree with the build.
+//
+// Failure policy: Supabase is an enhancement, not a dependency. If it is unreachable the card
+// falls back to the `target_domain` mirrored in the registry file, and the API says so via
+// `domains_source` — an unmapped vertical shows as unmapped, never as a guessed domain.
+// ─────────────────────────────────────────────────────────────────────────────
+const VERTICAL_SITES_TTL_MS = 60_000;
+let verticalSitesCache = { at: 0, rows: [], error: null };
+
+async function getVerticalSites() {
+  const now = Date.now();
+  if (now - verticalSitesCache.at < VERTICAL_SITES_TTL_MS) return verticalSitesCache;
+  const cfg = getSupabaseConfig();
+  if (!cfg.isConfigured) {
+    verticalSitesCache = { at: now, rows: verticalSitesCache.rows, error: 'supabase not configured' };
+    return verticalSitesCache;
+  }
+  try {
+    const rows = await supabaseFetch(
+      'vertical_sites?select=vertical_id,site_domain,frontend_url,cms_base_url,active&order=vertical_id'
+    );
+    verticalSitesCache = { at: now, rows: Array.isArray(rows) ? rows : [], error: null };
+  } catch (err) {
+    // Keep the last good rows; only the freshness stamp moves, so we do not hammer a down DB.
+    verticalSitesCache = { at: now, rows: verticalSitesCache.rows, error: err.message };
+  }
+  return verticalSitesCache;
+}
+
+/** Attach the publishing target to each registry vertical. */
+function withTargetDomains(verticals, siteRows, siteError) {
+  const byVertical = new Map((siteRows || []).map((r) => [r.vertical_id, r]));
+  return verticals.map((v) => {
+    const site = byVertical.get(v.id);
+    return {
+      ...v,
+      target_domain: site?.site_domain || v.target_domain || null,
+      frontend_url: site?.frontend_url || null,
+      cms_base_url: site?.cms_base_url || null,
+      site_active: site ? site.active !== false : null,
+      domain_source: site ? 'vertical_sites' : v.target_domain ? 'registry' : null,
+    };
+  });
+}
+
 // Minimal markdown -> HTML helper for reader
 // Generated inline SVG must reach the reader as a chart, not as its own markup. This renderer
 // escapes HTML (right for prose), which turned the citation hub's chart into a wall of `&lt;svg …`
@@ -1425,6 +1477,11 @@ const server = createServer(async (req, res) => {
         enable_dataforseo: vertical.enable_dataforseo !== undefined ? Boolean(vertical.enable_dataforseo) : (vertical.dataforseo_enabled !== undefined ? Boolean(vertical.dataforseo_enabled) : true),
       };
 
+      // The registry mirrors the publishing target so pressflow can render it from a cold start,
+      // before (or without) Supabase. Field is optional: an unmapped vertical stays unmapped.
+      const targetDomain = String(vertical.target_domain || '').trim().toLowerCase();
+      if (targetDomain) payload.target_domain = targetDomain;
+
       if (index !== -1) {
         verticals[index] = payload;
       } else {
@@ -1485,13 +1542,19 @@ const server = createServer(async (req, res) => {
 
       if (req.method === 'GET') {
         const personas = await getLocalPersonas();
-        const verticals = await getLocalVerticals();
+        const registry = await getLocalVerticals();
+        const siteInfo = await getVerticalSites();
+        const verticals = withTargetDomains(registry, siteInfo.rows, siteInfo.error);
         const storageMode = sbConfig.isConfigured ? 'supabase (mirrored)' : 'local';
+        const domains = [...new Set(verticals.map((v) => v.target_domain).filter(Boolean))].sort();
 
         return sendJson(res, 200, {
           status: 'ok',
           storage_mode: storageMode,
           supabase_configured: sbConfig.isConfigured,
+          domains_source: siteInfo.error ? 'registry (vertical_sites unavailable)' : 'vertical_sites',
+          domains_error: siteInfo.error || null,
+          domains,
           verticals,
           personas,
         });
@@ -1527,6 +1590,8 @@ const server = createServer(async (req, res) => {
           primary_angles: Array.isArray(primary_angles) ? primary_angles : [],
           enable_dataforseo: enable_dataforseo !== undefined ? Boolean(enable_dataforseo) : true,
         };
+        const createTargetDomain = String(body.target_domain || '').trim().toLowerCase();
+        if (createTargetDomain) newVertical.target_domain = createTargetDomain;
 
         verticals.push(newVertical);
         await saveLocalVerticals(verticals);
@@ -1601,6 +1666,8 @@ const server = createServer(async (req, res) => {
             primary_angles: Array.isArray(body.primary_angles) ? body.primary_angles : existing.primary_angles,
             enable_dataforseo: body.enable_dataforseo !== undefined ? Boolean(body.enable_dataforseo) : (existing.enable_dataforseo !== undefined ? existing.enable_dataforseo : true),
           };
+          const putDomain = body.target_domain !== undefined ? String(body.target_domain).trim().toLowerCase() : '';
+          if (putDomain) updated.target_domain = putDomain;
 
           verticals[index] = updated;
           await saveLocalVerticals(verticals);
