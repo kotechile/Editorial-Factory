@@ -1,91 +1,92 @@
 {
- "_note": "FOLLOW-UP COPY. The canonical decision queue is software-factory-core/context/approval_queue.json, which the PressFlow server fetches from main at runtime (PRESSFLOW_APPROVALS_URL). This copy is only what the Approvals tab shows when that fetch fails, so keep it level with the canonical file.",
- "updated": "2026-10-19T00:41:52Z",
- "source": "https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json",
- "items": [
-  {
-   "id": "traffic-marker",
-   "app": "",
-   "kind": "decision",
-   "state": "pending",
-   "headline": "Mark our own test visits so traffic numbers mean something",
-   "detail": "Our browser suites write page views into the same table as real visitors, so a run inflates the count and 'did a real person visit' cannot be answered.",
-   "impact": "Every traffic figure stays ambiguous.",
-   "reply": "@Simon approve traffic marker",
-   "opened": "",
-   "updated": "2026-10-18"
-  },
-  {
-   "id": "aichieve-robots",
-   "app": "",
-   "kind": "decision",
-   "state": "resolved",
-   "headline": "aichieve.net has no robots.txt and no sitemap.xml",
-   "detail": "Done 2026-10-19, verified live: https://aichieve.net/robots.txt answers 200 (66 B — `User-agent: *`, `Allow: /`, `Sitemap: https://aichieve.net/sitemap.xml`) and https://aichieve.net/sitemap.xml answers 200 as a sitemap index pointing at sitemap-0.xml, which lists 110 URLs (home, article paths, hubs, /about/) — three listed paths re-probed 200. Closed on the owner's instruction `@Simon aichieve robots and sitemap`; no code change was needed from the factory because the front already serves both.",
-   "impact": "Closed — crawlers and AI agents get a rule set and a sitemap to follow on aichieve.net.",
-   "reply": "",
-   "opened": "2026-10-15",
-   "updated": "2026-10-19"
-  },
-  {
-   "id": "quarterline-leftovers",
-   "app": "QuarterLine",
-   "kind": "retire",
-   "state": "resolved",
-   "headline": "Delete the last QuarterLine references",
-   "detail": "Done 2026-10-19: the legacy plugin descriptor was DELETED (it advertised the killed product and an /openapi.json URL that answered 404). /.well-known/mcp.json, generated from the live inventory, is the one agent descriptor; a guard test now fails the build when any /.well-known file names a retired product, slug or tool, and the receipt sender no longer names it either.",
-   "impact": "Closed — no published descriptor or customer email names a product we no longer sell.",
-   "reply": "",
-   "opened": "2026-10-15",
-   "updated": "2026-10-19"
-  },
-  {
-   "id": "duplicate-videos",
-   "app": "Launch videos",
-   "kind": "delete",
-   "state": "pending",
-   "headline": "Four duplicate launch-video copies are still public",
-   "detail": "The desk's first cuts sit beside the five videos the product pages embed, so each product has two films online.",
-   "impact": "Viewers and search find two versions of every film.",
-   "reply": "@Simon delete the duplicate launch videos",
-   "opened": "",
-   "updated": "2026-10-18"
-  },
-  {
-   "id": "career-capital-home",
-   "app": "Career Capital calculators",
-   "kind": "decision",
-   "state": "pending",
-   "headline": "Pick one home for the two career-capital calculators",
-   "detail": "The W-2 vs 1099 and RSU hold-vs-sell engines exist twice: once in the factory repo (still uncommitted) and once on giniloh.com. The numbers are identical today.",
-   "impact": "They drift apart on the next statutory update.",
-   "reply": "@Simon keep one career capital copy",
-   "opened": "2026-10-18",
-   "updated": "2026-10-18"
-  },
-  {
-   "id": "ide-header-gap",
-   "app": "",
-   "kind": "fix",
-   "state": "resolved",
-   "headline": "One-line fix for the IDE header gap and gutter alignment",
-   "detail": "Done 2026-10-19 (owner: `@Simon fix the header gap`): both IDE chrome bars carry `gap-x-3` + `flex-wrap`, `min-w-0`/`truncate` on the title and `shrink-0` on the badge group, and below `sm` the badge prints the claim alone (\"ZERO EGRESS\"). Measured before the fix: the editable bar's badge overran the bar and painted over the file title at 375 px (−34.0 px on all four products). /parcelproof's Recovery-summary badge no longer squeezes to a two-line pill. A new build-time guard in tests/e2e/text-geometry.spec.ts measures the chrome boxes at 1280 px and 375 px and was proven to bite by reverting the components. Gate green end to end (96/96 Playwright, visual-QA 24/24).",
-   "impact": "Closed — the badge never touches the file title at 1280 px or 375 px, and the build fails if it does.",
-   "reply": "",
-   "opened": "2026-10-17",
-   "updated": "2026-10-19"
-  },
-  {
-   "id": "canopyproof",
-   "app": "CanopyProof",
-   "kind": "build",
-   "state": "approved",
-   "headline": "Supplier geolocation pre-flight audit for the EU deforestation rules (EUDR)",
-   "detail": "A model reads the declared fields out of supplier packs; overlap, declared-vs-computed area and scope are checked by our own geometry. Plan in five slices, S1 engine through S5 gate + deploy.",
-   "impact": "Build in progress since 2026-10-18. EUDR application date is 30 December 2026.",
-   "reply": "",
-   "opened": "2026-10-12",
-   "updated": "2026-10-18"
-  }
- ]
+  "_note": "FOLLOW-UP COPY. The canonical decision queue is software-factory-core/context/approval_queue.json, which the PressFlow server fetches from main at runtime (PRESSFLOW_APPROVALS_URL). This copy is only what the Approvals tab shows when that fetch fails, so keep it level with the canonical file.",
+  "updated": "2026-10-19T00:58:00Z",
+  "source": "https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json",
+  "items": [
+    {
+      "id": "traffic-marker",
+      "app": "",
+      "kind": "decision",
+      "state": "pending",
+      "headline": "Mark our own test visits so traffic numbers mean something",
+      "detail": "Our browser suites write page views into the same table as real visitors, so a run inflates the count and 'did a real person visit' cannot be answered.",
+      "impact": "Every traffic figure stays ambiguous.",
+      "reply": "@Simon approve traffic marker",
+      "opened": "",
+      "updated": "2026-10-18"
+    },
+    {
+      "id": "aichieve-robots",
+      "app": "",
+      "kind": "decision",
+      "state": "resolved",
+      "headline": "aichieve.net has no robots.txt and no sitemap.xml",
+      "detail": "Done 2026-10-19, verified live: https://aichieve.net/robots.txt answers 200 (66 B — `User-agent: *`, `Allow: /`, `Sitemap: https://aichieve.net/sitemap.xml`) and https://aichieve.net/sitemap.xml answers 200 as a sitemap index pointing at sitemap-0.xml, which lists 110 URLs (home, article paths, hubs, /about/) — three listed paths re-probed 200. Closed on the owner's instruction `@Simon aichieve robots and sitemap`; no code change was needed from the factory because the front already serves both.",
+      "impact": "Closed — crawlers and AI agents get a rule set and a sitemap to follow on aichieve.net.",
+      "reply": "",
+      "opened": "2026-10-15",
+      "updated": "2026-10-19"
+    },
+    {
+      "id": "quarterline-leftovers",
+      "app": "QuarterLine",
+      "kind": "retire",
+      "state": "resolved",
+      "headline": "Delete the last QuarterLine references",
+      "detail": "Done 2026-10-19: the legacy plugin descriptor was DELETED (it advertised the killed product and an /openapi.json URL that answered 404). /.well-known/mcp.json, generated from the live inventory, is the one agent descriptor; a guard test now fails the build when any /.well-known file names a retired product, slug or tool, and the receipt sender no longer names it either.",
+      "impact": "Closed — no published descriptor or customer email names a product we no longer sell.",
+      "reply": "",
+      "opened": "2026-10-15",
+      "updated": "2026-10-19"
+    },
+    {
+      "id": "duplicate-videos",
+      "app": "Launch videos",
+      "kind": "delete",
+      "state": "pending",
+      "headline": "Four duplicate launch-video copies are still public",
+      "detail": "The desk's first cuts sit beside the five videos the product pages embed, so each product has two films online.",
+      "impact": "Viewers and search find two versions of every film.",
+      "reply": "@Simon delete the duplicate launch videos",
+      "opened": "",
+      "updated": "2026-10-18"
+    },
+    {
+      "id": "career-capital-home",
+      "app": "Career Capital calculators",
+      "kind": "decision",
+      "state": "resolved",
+      "headline": "One copy of the W-2 vs 1099 and RSU hold-vs-sell engines — giniloh.com",
+      "detail": "The factory-repo duplicate (src/lib/calc/*.ts + 11 vitest) and the two scripts that copied code into /root/giniloh are deleted. The live giniloh.com copy is the single home, and scripts/check-calculators.mjs now pins ~50 known answers from the 2026 spec vector, so a changed constant fails instead of quietly changing someone's pay numbers.",
+      "impact": "Closed 2026-10-19: one engine per calculator, drift impossible, regressions caught locally.",
+      "reply": "",
+      "opened": "2026-10-18",
+      "updated": "2026-10-19",
+      "closed": "2026-10-19"
+    },
+    {
+      "id": "ide-header-gap",
+      "app": "",
+      "kind": "fix",
+      "state": "resolved",
+      "headline": "One-line fix for the IDE header gap and gutter alignment",
+      "detail": "Done 2026-10-19 (owner: `@Simon fix the header gap`): both IDE chrome bars carry `gap-x-3` + `flex-wrap`, `min-w-0`/`truncate` on the title and `shrink-0` on the badge group, and below `sm` the badge prints the claim alone (\"ZERO EGRESS\"). Measured before the fix: the editable bar's badge overran the bar and painted over the file title at 375 px (−34.0 px on all four products). /parcelproof's Recovery-summary badge no longer squeezes to a two-line pill. A new build-time guard in tests/e2e/text-geometry.spec.ts measures the chrome boxes at 1280 px and 375 px and was proven to bite by reverting the components. Gate green end to end (96/96 Playwright, visual-QA 24/24).",
+      "impact": "Closed — the badge never touches the file title at 1280 px or 375 px, and the build fails if it does.",
+      "reply": "",
+      "opened": "2026-10-17",
+      "updated": "2026-10-19"
+    },
+    {
+      "id": "canopyproof",
+      "app": "CanopyProof",
+      "kind": "build",
+      "state": "approved",
+      "headline": "Supplier geolocation pre-flight audit for the EU deforestation rules (EUDR)",
+      "detail": "A model reads the declared fields out of supplier packs; overlap, declared-vs-computed area and scope are checked by our own geometry. Plan in five slices, S1 engine through S5 gate + deploy.",
+      "impact": "Build in progress since 2026-10-18. EUDR application date is 30 December 2026.",
+      "reply": "",
+      "opened": "2026-10-12",
+      "updated": "2026-10-18"
+    }
+  ]
 }
