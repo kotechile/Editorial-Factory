@@ -1,0 +1,90 @@
+{
+  "slug": "inventory-cut-bets-against-prices",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a tiered server rack with an empty middle bay on a textured matte surface.",
+      "caption": "When replacement prices climb double digits, shrinking the inventory buffer exposes the supply chain to severe market premiums.",
+      "title": "Inventory Cut Price Squeeze",
+      "bytes": 2106965,
+      "sha256": "sha256:53eee682fa04db96a5af72c8ea083ad0"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean technical isometric cutaway illustration of a tiered industrial server rack and modular memory component bays. Extreme asymmetry, off-centre layout with generous empty margin. Three distinct levels of brushed steel and frosted copper modular trays, with the middle tray conspicuously removed to leave a stark empty void. Flat muted palette with a single stark amber accent highlighting the empty bay. Thin consistent line weight, laid over a textured matte plant floor surface. Axonometric projection, one directional raking light casting sharp shadows, unlabelled, professional B2B editorial standard.",
+  "negative_prompt": "text, letters, words, watermark, labels, random characters, garbled text, typography",
+  "rationale": "The technical isometric treatment visualizes the systemic logic of multi-echelon inventory, cleanly showing the missing buffer layer that exposes the buyer to rising replacement costs.",
+  "cue": "an inventory-days target is a bet",
+  "subject": "an isometric cutaway of a tiered mechanical server rack with a conspicuous empty bay",
+  "core_thesis": "When input prices rise faster than the cost of carrying stock, cutting inventory days is a costly short position on materials.",
+  "core_conflict": "Rising replacement costs of components versus the financial push to shrink inventory buffers.",
+  "composition": "extreme asymmetry, off-centre layout",
+  "alt_text": "The Inventory Trap. Isometric cutaway of a tiered server rack with an empty middle bay on a textured matte surface.",
+  "caption": "The Inventory Trap: Cutting stock is a losing bet against rising prices.",
+  "title": "The Inventory Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/inventory-cut-bets-against-prices/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1572279,
+  "sha256": "sha256:8ab9fa96989a9b9292db572100bdea83b1d9f18480f13ff9cd1edeb433b9c69d",
+  "source_hash": "sha256:37071d53ff309f40ce5bc78140cafaeb",
+  "source_chars": 5248,
+  "task_id": "550b0edfa2117b3903068d07cf4aee8c",
+  "credits": 18.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_149b2e1e441a9a1dd641efcf58062464.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean technical isometric cutaway illustration of a tiered industrial server rack and modular memory component bays. Extreme asymmetry, off-centre layout with generous empty margin. Three distinct levels of brushed steel and frosted copper modular trays, with the middle tray conspicuously removed to leave a stark empty void. Flat muted palette with a single stark amber accent highlighting the empty bay. Thin consistent line weight, laid over a textured matte plant floor surface. Axonometric projection, one directional raking light casting sharp shadows, unlabelled, professional B2B editorial standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-19T12:46:59+00:00",
+  "overlay": {
+    "kicker": "WORKING CAPITAL // INVENTORY",
+    "title": "THE INVENTORY TRAP",
+    "hook": "Cutting stock is a losing bet against rising prices",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.64,
+    "target": 4.5,
+    "clutter": 0.16,
+    "region_rgb": [
+      193,
+      182,
+      161
+    ],
+    "binding_rgb": [
+      196,
+      183,
+      164
+    ],
+    "title_lines": [
+      "THE INVENTORY",
+      "TRAP"
+    ],
+    "subject": 0.131,
+    "ink_subject": 0.06,
+    "spike": 0.413,
+    "generated_at": "2026-10-19T12:46:59+00:00"
+  }
+}
