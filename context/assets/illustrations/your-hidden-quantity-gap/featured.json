@@ -1,0 +1,88 @@
+{
+  "slug": "your-hidden-quantity-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A partially empty industrial storage bay in a vast warehouse setting.",
+      "caption": "The decline in OTIF scores reflects a quantity gap as suppliers ship partial orders to manage costs.",
+      "title": "OTIF Quantity Gap",
+      "bytes": 559152,
+      "sha256": "sha256:855e76e16dadafb8a3f017f678ada50a"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "telephoto compression, 200mm long-lens view of a massive industrial warehouse staging floor. In the foreground, a heavily weathered metal storage bay sits partially empty, with distinct gaps where missing shipping crates should be. Stacked overlapping layers of industrial racking stretch into the distance with crystal-clear telephoto distance clarity. Sharp directional lighting and deep industrial contrast, throwing long shadows across the concrete floor. No people in the foreground, no fog or haze, flat compressed perspective, restrained teal-and-amber palette.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements, text, printed words",
+  "rationale": "The story is about a systemic supply chain issue\u2014missing volume and depleted stock across the industry. A telephoto view of a partially empty industrial storage or staging area captures the scale of the missing inventory and the physical reality of the 'quantity gap'.",
+  "cue": "loss came from missing units",
+  "subject": "a partially empty industrial storage bay on a warehouse floor",
+  "core_thesis": "The decline in OTIF performance is driven by missing quantities as suppliers absorb higher input costs by holding back inventory, rather than delayed deliveries.",
+  "core_conflict": "Rising input costs versus maintaining full order quantities, leading to depleted buyer stock buffers.",
+  "composition": "asymmetrical wide framing with scale contrast",
+  "alt_text": "OTIF Falls On Missing Units. A partially empty industrial storage bay in a vast warehouse setting.",
+  "caption": "OTIF Falls On Missing Units: Missing units drive the OTIF drop as stock buffers thin.",
+  "title": "OTIF Falls On Missing Units",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-hidden-quantity-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 321114,
+  "sha256": "sha256:601a12d9470b59762ea729b692e0170fd606a9d894177b4a42eb549cb7936a2c",
+  "source_hash": "sha256:eff54da5abc46d60d94d9997bf03d1c9",
+  "source_chars": 5679,
+  "task_id": "a7c329859b9a250cff592103b5fb8a26",
+  "credits": 5.0,
+  "cost_ms": 82,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a7c329859b9a250cff592103b5fb8a26_1792415497203.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "telephoto compression, 200mm long-lens view of a massive industrial warehouse staging floor. In the foreground, a heavily weathered metal storage bay sits partially empty, with distinct gaps where missing shipping crates should be. Stacked overlapping layers of industrial racking stretch into the distance with crystal-clear telephoto distance clarity. Sharp directional lighting and deep industrial contrast, throwing long shadows across the concrete floor. No people in the foreground, no fog or haze, flat compressed perspective, restrained teal-and-amber palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-19T13:11:43+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // QUANTITY GAP",
+    "title": "OTIF FALLS ON MISSING UNITS",
+    "hook": "Missing units drive the OTIF drop as stock buffers thin",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 15,
+    "contrast": 5.73,
+    "target": 5.5,
+    "clutter": 0.282,
+    "region_rgb": [
+      64,
+      69,
+      60
+    ],
+    "binding_rgb": [
+      105,
+      98,
+      79
+    ],
+    "title_lines": [
+      "OTIF FALLS ON",
+      "MISSING UNITS"
+    ],
+    "subject": 0.03,
+    "ink_subject": 0.019,
+    "spike": 0.075,
+    "generated_at": "2026-10-19T13:11:43+00:00"
+  }
+}

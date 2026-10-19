@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T12:47:13Z",
+  "updated_at": "2026-10-19T13:12:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2267,6 +2267,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-10-19",
+      "public": false
+    },
+    {
+      "slug": "2026-10-19_your-hidden-quantity-gap",
+      "title": "63.6% OTIF: Your Hidden Quantity Gap",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-19",
       "public": false
     },
