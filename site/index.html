@@ -898,7 +898,15 @@
     [data-theme="dark"] .form-textarea,
     [data-theme="dark"] .header-search-input,
     [data-theme="dark"] .tag-input-box,
-    /* Long-form text field — still used by the Growth OS editor in the SEO tab. */
+    [data-theme="dark"] .editor-box {
+      background: #0E1015;
+      border-color: rgba(255, 255, 255, 0.08);
+      color: #EDEDEF;
+    }
+
+    /* Long-form text field — only the Growth OS editor in the SEO tab uses it now that the
+       article editor is gone; it keeps its own sizing and must not join the input selector list
+       above, where `min-height: 520px` would stretch every dark-mode input. */
     .editor-box {
       width: 100%;
       min-height: 520px;
@@ -917,11 +925,6 @@
     .editor-box:focus {
       border-color: var(--border-focus);
       box-shadow: 0 0 0 1px var(--border-focus);
-    }
-    [data-theme="dark"] .editor-box {
-      background: #0E1015;
-      border-color: rgba(255, 255, 255, 0.08);
-      color: #EDEDEF;
     }
     [data-theme="dark"] .form-input:focus,
     [data-theme="dark"] .form-select:focus,
@@ -1170,14 +1173,6 @@
       </button>
     </div>
 
-    <div style="display: flex; gap: 0.35rem; align-items: center;">
-      <button class="btn btn-ghost btn-sm" id="quickFilterBtn" onclick="document.getElementById('tabVerticalsBtn').click()">
-        Verticals (<span id="quickVerticalCount">0</span>) ▾
-      </button>
-      <button class="btn btn-ghost btn-sm" onclick="document.getElementById('btnRefreshGsc').click()">
-        Refresh Radar ↺
-      </button>
-    </div>
   </div>
 </nav>
 
@@ -1857,7 +1852,6 @@ Waiting for commands.</div>
       verticalDomainsSource = data.domains_source || '';
 
       document.getElementById('verticalsCount').textContent = allVerticals.length;
-      document.getElementById('quickVerticalCount').textContent = allVerticals.length;
       document.getElementById('personasCount').textContent = Object.keys(allPersonas).length;
       renderVerticalSyncStatus(data);
 
