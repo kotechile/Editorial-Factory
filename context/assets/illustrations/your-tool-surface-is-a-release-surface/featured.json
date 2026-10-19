@@ -1,0 +1,111 @@
+{
+  "slug": "your-tool-surface-is-a-release-surface",
+  "revision": 4,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical inspection gate interlocking with a solid processing module on a brushed steel surface.",
+      "caption": "The gateway's design is the definitive boundary that dictates which tools the model can see.",
+      "title": "Gateway Tool Surface Filter",
+      "bytes": 1490385,
+      "sha256": "sha256:92fa54ec5abd55cda2b4aceff144480e"
+    },
+    {
+      "revision": 2,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a brushed steel surface. Two recognizable engineered parts: a solid processing module interlocking with an unlatched mechanical inspection gate, arranged sequentially to form a restricted physical filter. Constructed from matte muted polymer and anodized aluminum with hard clean edges. One directional key light throwing a long cast shadow across the steel plane. Asymmetric, off-centre framing with generous editorial negative space. No text, no embossed lettering.",
+      "task_id": "8f153c35b3bd6b81ef6c6990591e04cb",
+      "sha256": "sha256:a973a2fd0833a2a23f795556e39f6da84275efec96727510294fb084ab28211a",
+      "generated_at": "2026-10-19T10:36:59+00:00",
+      "source_hash": "sha256:5cf300b9ae924eed52cf67b9dda5cb44"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A heavy machined inspection gate and slotted routing bay filtering fiber-optic tracks on a brushed steel surface.",
+      "caption": "The gateway acts as the critical security perimeter, determining which tools an agent can see and access.",
+      "title": "Agentic Gateway Injection Risk Assembly",
+      "bytes": 1955733,
+      "sha256": "sha256:bfeeae3f54acd13ffda4e8307543202a"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on brushed steel. An off-centre asymmetric arrangement featuring a heavy machined inspection gate and a slotted routing bay filtering three textured fiber-optic tracks before they reach a central brushed-aluminum processing housing. Generous empty margin on the left. Hard clean edges, matte muted palette of gunmetal and silver with a single amber indicator. One directional key light throwing a long cast shadow across the weathered steel surface.",
+  "negative_prompt": "garbled text, random lettering, numbers, UI, watermarks, printed words, floating shapes",
+  "rationale": "A modular component assembly perfectly illustrates the structural role of an AI gateway acting as a selective filter and routing mechanism before the main processing core. It physicalizes the software architecture into recognizable engineered parts.",
+  "cue": "decides an agent's security",
+  "subject": "a modular inspection gate mechanism filtering tracks",
+  "core_thesis": "The gateway's design, specifically how it exposes tools to an AI agent, dictates the system's injection risk and cost more than the underlying model itself.",
+  "core_conflict": "Tool injection risk and token bloat vs. dynamic discovery gateway filtering.",
+  "composition": "off-centre asymmetric arrangement",
+  "alt_text": "Gateway Injection Risk. A heavy machined inspection gate and slotted routing bay filtering fiber-optic tracks on a brushed",
+  "caption": "Gateway Injection Risk: Gateway design decides your agent's tool injection risk.",
+  "title": "Gateway Injection Risk",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-tool-surface-is-a-release-surface/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1428981,
+  "sha256": "sha256:c693ef6a450165fbd496fb58f559acfafa03fef044d83f128af2c919d98b6c34",
+  "source_hash": "sha256:5cf300b9ae924eed52cf67b9dda5cb44",
+  "source_chars": 7490,
+  "task_id": "c8b34355650333dda02b4b2e5d976ab7",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_aae0c0434ddbd986711e65a6b02c2f53.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on brushed steel. An off-centre asymmetric arrangement featuring a heavy machined inspection gate and a slotted routing bay filtering three textured fiber-optic tracks before they reach a central brushed-aluminum processing housing. Generous empty margin on the left. Hard clean edges, matte muted palette of gunmetal and silver with a single amber indicator. One directional key light throwing a long cast shadow across the weathered steel surface.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-19T10:38:28+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // GATEWAY SECURITY",
+    "title": "GATEWAY INJECTION RISK",
+    "hook": "Gateway design decides your agent's tool injection risk",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.73,
+    "target": 4.5,
+    "clutter": 0.129,
+    "region_rgb": [
+      109,
+      109,
+      104
+    ],
+    "binding_rgb": [
+      129,
+      128,
+      124
+    ],
+    "title_lines": [
+      "GATEWAY",
+      "INJECTION RISK"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.005,
+    "spike": 0.028,
+    "generated_at": "2026-10-19T10:38:28+00:00"
+  }
+}
