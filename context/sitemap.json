@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T17:46:56Z",
+  "updated_at": "2026-10-19T18:10:03Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2253,6 +2253,24 @@
       "date": "2026-10-19",
       "public": true,
       "url": "https://aichieve.net/inventory-cut-bets-against-prices/"
+    },
+    {
+      "slug": "2026-10-19_model-retirement-breaks-audit-trail",
+      "title": "2-Week Notice Breaks Your Audit Trail",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-19",
+      "public": false
     },
     {
       "slug": "2026-10-19_your-75000-btu-tank-venting-trap",

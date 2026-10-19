@@ -1,0 +1,88 @@
+{
+  "slug": "model-retirement-breaks-audit-trail",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Embossed audit seal on textured paper over-stamped with a harsh red expiration mark.",
+      "caption": "Vendor-imposed model retirements can abruptly invalidate pinned audit trails with just weeks of notice.",
+      "title": "AI-Model-Audit-Expiration",
+      "bytes": 1076173,
+      "sha256": "sha256:653a7c48d30288898ab505ceb12f8083"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Editorial macro photograph, 100mm macro lens, razor-sharp focal plane, shallow depth of field. An asymmetric off-centre layout with the hero subject positioned on the right third. Extreme close-up of a heavy textured rag paper audit ledger bearing a delicate, formal blind-embossed governance seal, violently over-stamped with a stark, heavy red ink expiration mark that bleeds into the raw paper fibers. Soft directional daylight throws deep micro-shadows across the tactile paper grain, highlighting the tension between the permanent embossing and the aggressive temporary stamp. Muted warm tones, sophisticated editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, people, blurry, abstract geometry",
+  "rationale": "Editorial macro perfectly captures the fragility of the audit trail by focusing tightly on a physical record, emphasizing the sudden invalidation (expiration stamp) over the permanent governance proof (embossing).",
+  "cue": "breaks your audit trail",
+  "subject": "embossed audit seal stamped with an expiration mark",
+  "core_thesis": "A pinned AI model version provides an audit trail but carries a vendor-imposed expiration date, meaning preservation of proof and re-validation capacity are intrinsically linked.",
+  "core_conflict": "Audit trail permanence versus vendor-imposed model expiration timelines",
+  "composition": "asymmetric off-centre layout",
+  "alt_text": "Expiring AI Audit Trails. Embossed audit seal on textured paper over-stamped with a harsh red expiration mark.",
+  "caption": "Expiring AI Audit Trails: Short vendor notices erase your AI compliance evidence.",
+  "title": "Expiring AI Audit Trails",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/model-retirement-breaks-audit-trail/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 623766,
+  "sha256": "sha256:15ffbafcad3f2fa1e546bf8e50d09e1ce47678cb578366fec5781cfbcb85b914",
+  "source_hash": "sha256:53460bfbd372d057ca2dd290e39d670b",
+  "source_chars": 4153,
+  "task_id": "acccf6ddbccc8416b60b5c5abd85865f",
+  "credits": 7.0,
+  "cost_ms": 54,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/acccf6ddbccc8416b60b5c5abd85865f_1792433357313.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Editorial macro photograph, 100mm macro lens, razor-sharp focal plane, shallow depth of field. An asymmetric off-centre layout with the hero subject positioned on the right third. Extreme close-up of a heavy textured rag paper audit ledger bearing a delicate, formal blind-embossed governance seal, violently over-stamped with a stark, heavy red ink expiration mark that bleeds into the raw paper fibers. Soft directional daylight throws deep micro-shadows across the tactile paper grain, highlighting the tension between the permanent embossing and the aggressive temporary stamp. Muted warm tones, sophisticated editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-19T18:09:19+00:00",
+  "overlay": {
+    "kicker": "AI GOVERNANCE // MODEL RETIREMENT",
+    "title": "EXPIRING AI AUDIT TRAILS",
+    "hook": "Short vendor notices erase your AI compliance evidence",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 90,
+    "contrast": 6.11,
+    "target": 5.5,
+    "clutter": 0.327,
+    "region_rgb": [
+      93,
+      81,
+      74
+    ],
+    "binding_rgb": [
+      144,
+      136,
+      117
+    ],
+    "title_lines": [
+      "EXPIRING AI AUDIT",
+      "TRAILS"
+    ],
+    "subject": 0.177,
+    "ink_subject": 0.108,
+    "spike": 0.455,
+    "generated_at": "2026-10-19T18:09:19+00:00"
+  }
+}
