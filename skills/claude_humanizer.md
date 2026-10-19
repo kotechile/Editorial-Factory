@@ -232,6 +232,17 @@ one.
   moment a `_final.md` lands — restore the two anchor URLs verbatim from the draft's frontmatter, and
   re-score the title with the artifact's own body (`headline_score.score(t, body=b)`) before accepting
   any re-cut.
+- **A 900 s socket rebind converged a rewrite the shorter timeouts aborted (learned 2026-10-19).** On a
+  957-word synthesis draft, the per-draft driver at **900 s** produced attempt 1 (FAIL, Flesch 46.3) and
+  attempt 2 (PASS, Flesch 64.8) in one detached run — the same class that had died at 480 s and 600 s on
+  earlier runs. When relaunching, raise the rebind rather than re-tuning the prompt, and pipe the driver
+  through a log file (`nohup python3 -u <driver> > /tmp/loop3.log 2>&1 &`) so the attempt trail survives.
+- **The rewrite drops the title's own content words out of the lead, silently un-hooking the headline
+  (learned 2026-10-19).** A 100 STRONG title whose words sat in the draft's lead came back from Loop 3
+  with a lead re-voiced around synonyms ("missing units", "count") — `headline_score.score(t, body=<the
+  FINAL>)` then reports `lead_ok: False` and the pre-publish gate may re-cut a headline the run believed
+  settled. Re-score against the **final** body, not the draft, and restore the title's words in the lead
+  sentence (the pipeline's own vocabulary on the same facts), rather than accepting the re-cut.
 - **A 600 s socket rebind is not a guarantee either; and a body that passes markers/sources but fails only
   the Flesch floor is a hand-tune case, not a re-run case.** Observed 2026-10-19: the per-draft driver at
   600 s produced attempt 1 (markers ok, sources ok, Flesch 48.0 — four points under the floor) and then

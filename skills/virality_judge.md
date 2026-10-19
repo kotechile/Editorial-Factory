@@ -83,6 +83,15 @@ verdict line in the matching `content_calendar.md` run-log rows, and `context/pu
 - Anchor-freshness rule: a candidate whose load-bearing claim/figure is dated OUTSIDE the 30-day window
   is dropped by the radar at Stage 1; if it still surfaces here, do not let its authority/shareability
   carry it past the freshness gate.
+- **De-dup is per-vertical, but the DESK is shared — demote a figure another vertical already anchored
+  this week (learned 2026-10-19).** §3.5 compares only this vertical's artifacts, so a figure can be
+  perfectly fresh here and still be the third article in a week to lean on it. Observed on the first
+  `sales_order_service_level_otif` run: diesel at about $6.20 had anchored two published pieces
+  (2026-10-09, 2026-10-16) and the Xeneta three-month contract split anchored a third (2026-10-12),
+  making both unusable as anchors for a fourth. `grep -rl --include=*.md -E "<figure>" published/`
+  before scoring costs one call; a reused figure may stay as a single **corroborating** line with no
+  argument resting on it, but when it displaces a fresher leg the whole angle is weaker than its score
+  suggests.
 
 ## 4. Output — the angle brief
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_angle_brief.md`:
