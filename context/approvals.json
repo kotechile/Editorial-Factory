@@ -1,6 +1,6 @@
 {
  "_note": "FOLLOW-UP COPY. The canonical decision queue is software-factory-core/context/approval_queue.json, which the PressFlow server fetches from main at runtime (PRESSFLOW_APPROVALS_URL). This copy is only what the Approvals tab shows when that fetch fails, so keep it level with the canonical file.",
- "updated": "2026-10-19T00:50:00Z",
+ "updated": "2026-10-19T00:41:52Z",
  "source": "https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json",
  "items": [
   {
