@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T14:21:16+00:00",
+  "generated_at": "2026-10-18T14:16:24+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -254,6 +254,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-disks-35-dead-by-year-six",
+      "title": "Your Disks: 35% Dead by Year Six",
+      "url": "https://giniloh.com/your-disks-35-dead-by-year-six/",
+      "path": "/your-disks-35-dead-by-year-six/",
+      "sites_live": {
+        "giniloh.com": "/your-disks-35-dead-by-year-six/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "35% of your hard drives are dead by year six. That is Backblaze's own finding from the fleet it runs, and it should decide your next homelab purchase.",
+      "modified": "2026-10-17T17:39:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3117,6 +3136,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "prior-disclosure-clock-cuts-penalty",
+      "title": "Your Misclassified Entry Costs 4x Duty",
+      "url": "https://aichieve.net/prior-disclosure-clock-cuts-penalty/",
+      "path": "/prior-disclosure-clock-cuts-penalty/",
+      "sites_live": {
+        "aichieve.net": "/prior-disclosure-clock-cuts-penalty/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your misclassified entry costs up to 4x the duty you underpaid, and the bill does not stop at the border. Duty is the tax charged when goods enter the\u2026",
+      "modified": "2026-10-17T18:08:43",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "rack-power-density-ceiling-build-before-you-buy",
       "title": "The 40 kW Line: Why the AI Rack Is a Building Project",
       "url": "https://aichieve.net/rack-power-density-ceiling-build-before-you-buy/",
@@ -3889,6 +3931,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1012,
+      "slug": "prior-disclosure-clock-cuts-penalty",
+      "title": "Your Misclassified Entry Costs 4x Duty",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-17T18:08:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -5108,30 +5164,16 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 401,
-      "slug": "mcp-skills-extension",
-      "title": "MCP Skills Extension: Standardizing Agent Workflows",
+      "id": 1009,
+      "slug": "your-disks-35-dead-by-year-six",
+      "title": "Your Disks: 35% Dead by Year Six",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:49",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 391,
-      "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
-      "title": "The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:49",
+      "modified": "2026-10-17T17:39:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

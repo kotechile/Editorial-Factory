@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-10-17T14:21:16+00:00
+# Internal-link candidates — 2026-10-18T14:16:24+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 28 live article(s), 10 other target(s)
+## giniloh.com — 29 live article(s), 10 other target(s)
 
 Category hubs this front serves: —
 
@@ -31,6 +31,7 @@ Category hubs this front serves: —
 - [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — —
 - [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — —
 - [Why Home Assistant Renamed Its Cloud](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — —
+- [Your Disks: 35% Dead by Year Six](https://giniloh.com/your-disks-35-dead-by-year-six/) — —
 - [Your IPO Payday: A 47.7% Tax Bill](https://giniloh.com/your-ipo-payday-tax-bill/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
 - [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — —
@@ -84,7 +85,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, lifesty
 - [Smart Home & Security (category)](https://wellroost.com/categories/smart-home-security/) — Smart Home & Security
 - [Tools & Equipment (category)](https://wellroost.com/categories/tools-equipment/) — Tools & Equipment
 
-## aichieve.net — 95 live article(s), 7 other target(s)
+## aichieve.net — 96 live article(s), 7 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -181,6 +182,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Jira Bill Rose 10%: Memory Rose Six Times](https://aichieve.net/flat-price-was-the-hedge/) — AI Stack & Tool TCO
 - [Your Last-Mile Carbon Number Is a Rate Table](https://aichieve.net/last-mile-carbon-number-is-a-rate-table/) — Supply Chain & Operations
 - [Your Mexico Hedge: A 2027 Renewal Risk](https://aichieve.net/your-mexico-hedge-renewal-risk/) — Supply Chain & Operations
+- [Your Misclassified Entry Costs 4x Duty](https://aichieve.net/prior-disclosure-clock-cuts-penalty/) — Supply Chain & Operations
 - [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://aichieve.net/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows
 - [Your Remediator Recovers 46.67%: The Silent Regression](https://aichieve.net/remediator-recovers-46-percent/) — AI Stack & Tool TCO
 - [AI Stack & Tool TCO (category)](https://aichieve.net/categories/ai-stack-tool-tco/) — Ai Stack Tool Tco
@@ -193,6 +195,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1012 `prior-disclosure-clock-cuts-penalty` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1003 `your-mexico-hedge-renewal-risk` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #997 `your-fleets-charger-gap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #991 `nyc-buys-night-deliveries-8-diesel-bills-you` — published in the CMS but absent from the frontend sitemap
@@ -280,8 +283,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #398 `ai-spend-27t-cost-visibility-mandate` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #399 `maskills-multi-agent-skills-optimization` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #400 `tariff-cliff-already-priced-in` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #401 `mcp-skills-extension` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #391 `enterprisebuildvsbuy-the-250k-ai-upkeep-tax` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1009 `your-disks-35-dead-by-year-six` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1000 `pi-5-price-jump-older-kit-wins` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #994 `your-raise-dies-at-51-5-hours` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #988 `your-ipo-payday-tax-bill` — published in the CMS but absent from the frontend sitemap

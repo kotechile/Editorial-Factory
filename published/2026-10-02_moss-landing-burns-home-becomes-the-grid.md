@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/moss-landing-burns-home-becomes-the-grid/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a seamless grey backdrop."
-image_caption: "Moss Landing Burns Again: On Sept. 18, California's main grid battery at Moss."
+image_alt: "Homeowners Become The Grid. Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a"
+image_caption: "Homeowners Become The Grid: Battery fires push California to rely on home storage."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

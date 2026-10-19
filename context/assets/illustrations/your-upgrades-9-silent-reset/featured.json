@@ -1,0 +1,88 @@
+{
+  "slug": "your-upgrades-9-silent-reset",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two contrasting financial documents overlapping on a dark wooden desk.",
+      "caption": "The equipment quote is locked, but the loan behind it resets monthly.",
+      "title": "Home Upgrade Loan Reset",
+      "bytes": 263453,
+      "sha256": "sha256:2f3dee5b7d716af0b5207857d657fdfa"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of two overlapping documents on a dark oak desk. On the left, a thick, matte, embossed equipment contract with sharp, permanent creases. On the right, a thinner, slightly translucent financial ledger with varied texture, suggesting dynamic change. 100mm macro lens, razor-sharp focal plane on the overlapping edge, shallow depth of field. Soft directional daylight from a nearby window, casting a gentle shadow across the heavy paper stock. Visible surface texture, dust motes in the air, muted professional tones.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, signature, logos",
+  "rationale": "The story pivots on a specific contractual discrepancy\u2014the gap between a fixed equipment quote and a floating loan rate. An editorial macro photograph of these two contrasting documents highlights the 'silent reset' in the paperwork itself, providing a tangible anchor for the financial tension.",
+  "cue": "the money resets monthly",
+  "subject": "two contrasting financial documents on a desk",
+  "core_thesis": "A financed home upgrade involves two separate pricing clocks: a fixed equipment price at signing, and a loan rate that resets monthly based on prime, making static payback models inaccurate.",
+  "core_conflict": "Fixed equipment quotes vs. floating variable-rate financing.",
+  "composition": "asymmetric composition off-centre on the thirds",
+  "alt_text": "The Silent HELOC Reset. Two contrasting financial documents overlapping on a dark wooden desk.",
+  "caption": "The Silent HELOC Reset: Monthly rate resets silently inflate home upgrade costs.",
+  "title": "The Silent HELOC Reset",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-upgrades-9-silent-reset/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 156791,
+  "sha256": "sha256:daffb7d11fedb7f3a03f4e086da1e78d85ce62dac74eca4fe4784790659f4ac4",
+  "source_hash": "sha256:22ac581535521b99fed54f21ae419f1a",
+  "source_chars": 5291,
+  "task_id": "5377254b20f20dcc4fc0cd3a865d0e74",
+  "credits": 5.0,
+  "cost_ms": 42,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/5377254b20f20dcc4fc0cd3a865d0e74_1792410012361.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of two overlapping documents on a dark oak desk. On the left, a thick, matte, embossed equipment contract with sharp, permanent creases. On the right, a thinner, slightly translucent financial ledger with varied texture, suggesting dynamic change. 100mm macro lens, razor-sharp focal plane on the overlapping edge, shallow depth of field. Soft directional daylight from a nearby window, casting a gentle shadow across the heavy paper stock. Visible surface texture, dust motes in the air, muted professional tones.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-19T11:40:16+00:00",
+  "overlay": {
+    "kicker": "HOME FINANCING // HELOC RESETS",
+    "title": "THE SILENT HELOC RESET",
+    "hook": "Monthly rate resets silently inflate home upgrade costs",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.88,
+    "target": 5.5,
+    "clutter": 0.307,
+    "region_rgb": [
+      137,
+      138,
+      142
+    ],
+    "binding_rgb": [
+      99,
+      102,
+      109
+    ],
+    "title_lines": [
+      "THE SILENT",
+      "HELOC RESET"
+    ],
+    "subject": 0.177,
+    "ink_subject": 0.082,
+    "spike": 0.558,
+    "generated_at": "2026-10-19T11:40:16+00:00"
+  }
+}

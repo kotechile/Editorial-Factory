@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/3d-printing-failed-prints-are-the-cost/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface."
-image_caption: "The true cost of 3D printing is hidden in the parts that warp, clog, or fail halfway through."
+image_alt: "The 3D Printing Failure Rate. A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface."
+image_caption: "The 3D Printing Failure Rate: The hidden cost of failed prints and wasted filament."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

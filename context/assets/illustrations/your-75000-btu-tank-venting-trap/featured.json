@@ -1,0 +1,88 @@
+{
+  "slug": "your-75000-btu-tank-venting-trap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A large modern condensing water heater with thick white PVC venting pipes in a dimly lit concrete basement.",
+      "caption": "The shift to condensing equipment turns a routine hot-water tank swap into a major capital retrofit.",
+      "title": "condensing-water-heater-venting-retrofit",
+      "bytes": 415837,
+      "sha256": "sha256:e77d5037ba0748ec72ec0f521750de0c"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, 35mm anamorphic wide lens with dramatic falloff. Asymmetrical wide composition, hero object off-centre. A massive, modern white-enamel condensing water heater stands in an unfinished residential basement. Thick, pristine matte white PVC venting pipes jut aggressively from the unit, routing across a weathered, heavily textured concrete wall. Illuminated by a single harsh, amber workman's site lamp that casts long, deep shadows across the brushed metal utility panels. Restrained teal-and-amber color palette, crisp atmospheric depth, heavy material contrast between the new plastic venting and the old stone foundation.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, text, words, human faces, people",
+  "rationale": "A cinematic still frames the physical reality of the retrofit trap\u2014the sheer scale of the new equipment and venting required in a typical, aging residential basement\u2014using dramatic lighting to emphasize the unexpected capital burden.",
+  "cue": "Your 75,000-Btu Tank's Venting Trap",
+  "subject": "A modern condensing water heater with prominent new PVC venting pipes in a basement.",
+  "core_thesis": "Replacing a gas water heater above 75,000 Btu/hr is no longer a simple swap but a major capital retrofit requiring new venting and condensate drainage.",
+  "core_conflict": "Capital upgrade costs and complex retrofits versus simple like-for-like replacement budgets.",
+  "composition": "asymmetrical wide shot with off-centre hero placement",
+  "alt_text": "The 75,000-Btu Venting Trap. A large modern condensing water heater with thick white PVC venting pipes in a dimly lit",
+  "caption": "The 75,000-Btu Venting Trap: Ending cheap like-for-like gas heater replacements.",
+  "title": "The 75,000-Btu Venting Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-75000-btu-tank-venting-trap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 236201,
+  "sha256": "sha256:d42c5555ac20706a1f76223245d8470f2213e0b7443e55d395c2f50428a51e1a",
+  "source_hash": "sha256:137ae5255c7dfc120d7b8efb4d75bd78",
+  "source_chars": 5009,
+  "task_id": "704be5701c9f5c6c567291ab6440fa0d",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/704be5701c9f5c6c567291ab6440fa0d_1792412703556.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, 35mm anamorphic wide lens with dramatic falloff. Asymmetrical wide composition, hero object off-centre. A massive, modern white-enamel condensing water heater stands in an unfinished residential basement. Thick, pristine matte white PVC venting pipes jut aggressively from the unit, routing across a weathered, heavily textured concrete wall. Illuminated by a single harsh, amber workman's site lamp that casts long, deep shadows across the brushed metal utility panels. Restrained teal-and-amber color palette, crisp atmospheric depth, heavy material contrast between the new plastic venting and the old stone foundation.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-19T12:25:09+00:00",
+  "overlay": {
+    "kicker": "HOME HVAC // WATER HEATER RULES",
+    "title": "THE 75,000-BTU VENTING TRAP",
+    "hook": "Ending cheap like-for-like gas heater replacements",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.01,
+    "target": 4.5,
+    "clutter": 0.187,
+    "region_rgb": [
+      65,
+      58,
+      49
+    ],
+    "binding_rgb": [
+      101,
+      87,
+      74
+    ],
+    "title_lines": [
+      "THE 75,000-BTU",
+      "VENTING TRAP"
+    ],
+    "subject": 0.117,
+    "ink_subject": 0.073,
+    "spike": 0.296,
+    "generated_at": "2026-10-19T12:25:09+00:00"
+  }
+}

@@ -1,7 +1,16 @@
 {
   "slug": "3d-printing-failed-prints-are-the-cost",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
+      "caption": "The true cost of 3D printing is hidden in the parts that warp, clog, or fail halfway through.",
+      "title": "Failed 3D Print Bracket",
+      "bytes": 1588478,
+      "sha256": "sha256:e457456f6cc8a30f94459cbd41f3365f"
+    }
+  ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
   "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
@@ -15,9 +24,9 @@
   "rationale": "The article discusses the high failure rate of desktop 3D prints, making a modular mechanical assembly an ideal treatment to represent the 'failed prints' and wasted parts. The component assembly style will highlight a broken or unfinished manufactured part, emphasizing the 'tinkering tax' and the reality of the 41.1% failure rate.",
   "cue": "prints that never come out",
   "subject": "a partially formed, misaligned mechanical bracket surrounded by tangled plastic extrusion",
-  "alt_text": "A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
-  "caption": "The true cost of 3D printing is hidden in the parts that warp, clog, or fail halfway through.",
-  "title": "Failed 3D Print Bracket",
+  "alt_text": "The 3D Printing Failure Rate. A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
+  "caption": "The 3D Printing Failure Rate: The hidden cost of failed prints and wasted filament.",
+  "title": "The 3D Printing Failure Rate",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -30,8 +39,8 @@
   "local_path": "context/assets/illustrations/3d-printing-failed-prints-are-the-cost/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1588478,
-  "sha256": "sha256:e457456f6cc8a30f94459cbd41f3365f",
+  "bytes": 1124805,
+  "sha256": "sha256:6340952148f21d94672360583b8a415170d99e0f496d4c50a0636631e97a1201",
   "source_hash": "sha256:366609961d40b4b04fb423cbc9b70ab4",
   "source_chars": 3800,
   "task_id": "6d5886686daaba2049b0f2e399841249",
@@ -48,5 +57,34 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-03T17:50:01+00:00"
+  "generated_at": "2026-10-03T17:50:01+00:00",
+  "overlay": {
+    "kicker": "3D PRINTING // THE HIDDEN COSTS",
+    "title": "THE 3D PRINTING FAILURE RATE",
+    "hook": "The hidden cost of failed prints and wasted filament",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 8.21,
+    "target": 4.5,
+    "clutter": 0.015,
+    "region_rgb": [
+      208,
+      206,
+      203
+    ],
+    "binding_rgb": [
+      208,
+      204,
+      203
+    ],
+    "title_lines": [
+      "THE 3D PRINTING",
+      "FAILURE RATE"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-03T17:50:01+00:00"
+  }
 }

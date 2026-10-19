@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T11:08:09Z",
+  "updated_at": "2026-10-19T12:25:21Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2218,6 +2218,24 @@
       "url": "https://aichieve.net/your-mexico-hedge-renewal-risk/"
     },
     {
+      "slug": "2026-10-19_your-75000-btu-tank-venting-trap",
+      "title": "Your 75,000-Btu Tank's Venting Trap",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-19",
+      "public": false
+    },
+    {
       "slug": "2026-10-19_your-agent-obeyed-the-data-left",
       "title": "Silent Egress: Your Agent's 0-Click Leak",
       "vertical": "enterprise_ai_governance",
@@ -2249,6 +2267,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-19",
+      "public": false
+    },
+    {
+      "slug": "2026-10-19_your-upgrades-9-silent-reset",
+      "title": "Your Upgrade's $9 Silent Reset",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-19",
       "public": false
     }

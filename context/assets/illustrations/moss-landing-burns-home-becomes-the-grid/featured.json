@@ -1,6 +1,6 @@
 {
   "slug": "moss-landing-burns-home-becomes-the-grid",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Residential Garage Battery Unit",
       "bytes": 131307,
       "sha256": "sha256:61f6c1a64d505a0fc5efcbaee195d22b"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a seamless grey backdrop.",
+      "caption": "Moss Landing Burns Again: On Sept. 18, California's main grid battery at Moss.",
+      "title": "Moss Landing Burns Again",
+      "bytes": 72510,
+      "sha256": "sha256:e19c10da183faceb2a5de6f18d9a11f3be618328a482394ad6a1896c62ccbc9b"
     }
   ],
   "style": "studio_object",
@@ -24,9 +32,9 @@
   "rationale": "The story shifts focus from industrial-scale grid failures to consumer-owned assets. A studio product shot of a generic residential battery unit highlights the physical hardware that homeowners will use to become the distributed grid.",
   "cue": "power stored in their garage batteries",
   "subject": "a generic, unbranded wall-mounted residential battery unit",
-  "alt_text": "Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a seamless grey backdrop.",
-  "caption": "Moss Landing Burns Again: On Sept. 18, California's main grid battery at Moss.",
-  "title": "Moss Landing Burns Again",
+  "alt_text": "Homeowners Become The Grid. Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a",
+  "caption": "Homeowners Become The Grid: Battery fires push California to rely on home storage.",
+  "title": "Homeowners Become The Grid",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -36,8 +44,8 @@
   "local_path": "context/assets/illustrations/moss-landing-burns-home-becomes-the-grid/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 72510,
-  "sha256": "sha256:e19c10da183faceb2a5de6f18d9a11f3be618328a482394ad6a1896c62ccbc9b",
+  "bytes": 74092,
+  "sha256": "sha256:30156fe239169730bd0172ecba412a8b98f2ad3a358979d4f11ae9107a9e4fab",
   "source_hash": "sha256:d26dac9bb46ea837a49f67a991f2189f",
   "source_chars": 4166,
   "task_id": "f2826fb1829fcb3059ffbeea91bb5c67",
@@ -54,32 +62,32 @@
   },
   "generated_at": "2026-10-02T10:42:15+00:00",
   "overlay": {
-    "kicker": "",
-    "title": "MOSS LANDING BURNS AGAIN",
-    "hook": "On Sept. 18, California's main grid battery at Moss",
+    "kicker": "GRID STORAGE // HOME BATTERIES",
+    "title": "HOMEOWNERS BECOME THE GRID",
+    "hook": "Battery fires push California to rely on home storage",
     "anchor": "bottom-left",
     "light": false,
-    "scrim": 15,
-    "contrast": 4.8,
+    "scrim": 0,
+    "contrast": 4.51,
     "target": 4.5,
-    "clutter": 0.205,
+    "clutter": 0.2,
     "region_rgb": [
-      163,
-      169,
-      176
+      165,
+      171,
+      178
     ],
     "binding_rgb": [
-      145,
-      151,
-      163
+      144,
+      153,
+      160
     ],
     "title_lines": [
-      "MOSS LANDING",
-      "BURNS AGAIN"
+      "HOMEOWNERS",
+      "BECOME THE GRID"
     ],
-    "subject": 0.224,
-    "ink_subject": 0.147,
-    "spike": 0.532,
+    "subject": 0.253,
+    "ink_subject": 0.174,
+    "spike": 0.567,
     "generated_at": "2026-10-02T10:42:15+00:00"
   }
 }
