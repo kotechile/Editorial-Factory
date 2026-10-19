@@ -223,6 +223,23 @@ one.
   rebinds the module-level `hl.call_gemini` to a 480s socket timeout and keep everything else
   (`normalize_frontmatter`, the access-retry loop, the marker/source/length checks) unchanged; the
   attempt trail then still prints.
+- **The frontier reliably drops two GATED frontmatter facts, and both are silent until verify.sh.** Observed
+  2026-10-19 on a synthesis draft: the rewrite returned a clean body with every `[n]` citation and the
+  `## Sources` list intact, but its frontmatter had **lost the `sources:` anchors** (`synthesis: true`
+  survived alone, which `synthesize_topics.py --check-briefs` reads as an unanchored fusion) and had
+  **re-cut the title to a "The…" headline** (a headline-standard violation the gate then re-cuts a second
+  time at the push). Neither shows up in the accessibility verdict or the attempt line. Check both the
+  moment a `_final.md` lands — restore the two anchor URLs verbatim from the draft's frontmatter, and
+  re-score the title with the artifact's own body (`headline_score.score(t, body=b)`) before accepting
+  any re-cut.
+- **A 600 s socket rebind is not a guarantee either; and a body that passes markers/sources but fails only
+  the Flesch floor is a hand-tune case, not a re-run case.** Observed 2026-10-19: the per-draft driver at
+  600 s produced attempt 1 (markers ok, sources ok, Flesch 48.0 — four points under the floor) and then
+  attempt 2 died on the read timeout, leaving a `_final.md` that exists and fails the gate. The recovery
+  that works is §7 hand-tuning over the frontier's own rewrite — keep every figure, citation and source
+  line, shorten sentences and swap long nouns for short ones — then re-run the accessibility gate to a
+  PASS (that run landed at 62.6) rather than spending another 10-minute generation on a draft that is
+  already structurally sound.
 - **The post-rewrite audit has three failure classes beyond invented numbers, and all three appeared
   in one run (learned 2026-10-13).** (1) **A quantity swap inside a real figure:** Trane's "over 1,000
   tons (3.5 MW) of cooling *capacity*" came back as a chiller "**drawing** 3.5 MW" — the number is
