@@ -1,0 +1,90 @@
+{
+  "slug": "20-percent-of-your-ac-never-arrives",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A matte clay mechanical assembly of a pristine AC condenser connected to a fractured ventilation duct, resting on concrete.",
+      "caption": "Duct leaks dictate the true efficiency of a home HVAC system, regardless of the unit's factory SEER2 rating.",
+      "title": "HVAC Duct Leak Efficiency Penalty",
+      "bytes": 2023264,
+      "sha256": "sha256:913c4c49b9b91ffd053887c61b3a5890"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D render of a mechanical HVAC assembly resting on weathered concrete. Extreme asymmetry, the hero assembly placed off-centre on the right third, surrounded by generous negative space. The assembly consists of three recognisable engineered parts: a pristine square condenser block, a connecting transition manifold, and a fractured, disjointed ventilation duct section featuring a visible structural gap. Constructed from matte muted grey and pale blue polymers with visible moulding seams and deep contact shadows. A single sharp directional key light rakes across the assembly from the left, throwing a long cast shadow over the textured concrete surface. No abstract bare shapes, no text, no embossed lettering.",
+  "negative_prompt": "text, garbled letters, watermarks, typography, logos, UI, plain spheres, simple cubes",
+  "rationale": "The structural reality of factory efficiency being lost in distribution is best represented as a small physical assembly of recognisable parts. A clay render isolates the mechanical relationship between the unit and the leaking delivery system.",
+  "cue": "20% of your home's air conditioning (AC) never arrives",
+  "subject": "a mechanical assembly of a pristine AC condenser connected to a fractured duct segment",
+  "core_thesis": "The true efficiency of a home AC system is dictated by duct leakage and airflow, not the factory SEER2 rating on the quote.",
+  "core_conflict": "Promised factory efficiency rating vs. real-world physical loss in the delivery system",
+  "composition": "extreme asymmetry, hero assembly off-centre on the right",
+  "alt_text": "The 20 Percent Duct Leak. A matte clay mechanical assembly of a pristine AC condenser connected to a fractured ventilation",
+  "caption": "The 20 Percent Duct Leak: Why home ducts waste a fifth of your cooling energy.",
+  "title": "The 20 Percent Duct Leak",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/20-percent-of-your-ac-never-arrives/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1514492,
+  "sha256": "sha256:da69b97925bff834b94e184872ababcce7ca011281229639cee300bf791d6b19",
+  "source_hash": "sha256:c238e8937691025b911fe4ea0273d020",
+  "source_chars": 5167,
+  "task_id": "eb925b9b6f736c4d71575b8eb49ae804",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c00249e38b480e0a7db1a7d481746cf0.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D render of a mechanical HVAC assembly resting on weathered concrete. Extreme asymmetry, the hero assembly placed off-centre on the right third, surrounded by generous negative space. The assembly consists of three recognisable engineered parts: a pristine square condenser block, a connecting transition manifold, and a fractured, disjointed ventilation duct section featuring a visible structural gap. Constructed from matte muted grey and pale blue polymers with visible moulding seams and deep contact shadows. A single sharp directional key light rakes across the assembly from the left, throwing a long cast shadow over the textured concrete surface. No abstract bare shapes, no text, no embossed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-19T19:12:33+00:00",
+  "overlay": {
+    "kicker": "HOME HVAC // DUCT LEAKAGE",
+    "title": "THE 20 PERCENT DUCT LEAK",
+    "hook": "Why home ducts waste a fifth of your cooling energy",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 5.86,
+    "target": 5.5,
+    "clutter": 0.304,
+    "region_rgb": [
+      63,
+      60,
+      52
+    ],
+    "binding_rgb": [
+      120,
+      109,
+      89
+    ],
+    "title_lines": [
+      "THE 20 PERCENT",
+      "DUCT LEAK"
+    ],
+    "subject": 0.221,
+    "ink_subject": 0.103,
+    "spike": 0.69,
+    "generated_at": "2026-10-19T19:12:33+00:00"
+  }
+}

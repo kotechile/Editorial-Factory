@@ -136,6 +136,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-19 | agentic_ai | answer-field-first-costs-38-points | Answer Field First Costs 38.15 Points | https://pressflow.aichieve.net/published/2026-10-19_answer-field-first-costs-38-points.md | reader site only |
 | 2026-10-19 | enterprise_ai_governance | model-retirement-breaks-audit-trail | 2-Week Notice Breaks Your Audit Trail | https://pressflow.aichieve.net/published/2026-10-19_model-retirement-breaks-audit-trail.md | reader site only |
 | 2026-10-19 | home_equity_tco | 3-percent-cap-never-covers-your-addition | 3% Cap Never Covers Your Addition | https://pressflow.aichieve.net/published/2026-10-19_3-percent-cap-never-covers-your-addition.md | reader site only |
+| 2026-10-19 | home_infrastructure_lifecycle_tco | 20-percent-of-your-ac-never-arrives | 20% of Your AC Never Arrives | https://pressflow.aichieve.net/published/2026-10-19_20-percent-of-your-ac-never-arrives.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
