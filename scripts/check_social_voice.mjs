@@ -56,7 +56,13 @@ async function checkArticles(report) {
     // The legacy `<!-- linkedin -->` block is not reader-facing copy and no surface ships it, so
     // the body is everything before it (an artifact written since the channel was removed has no
     // block at all, and splitting on an absent marker returns the whole text).
-    const body = String(file.text).split(/<!--\s*linkedin\s*-->/i)[0];
+    // The generated internal-links block is not authored prose either: its bullets are other
+    // pages' own titles, so a title like "CaseProof: Stop Signing $3M…" trips the advice-after-colon
+    // rule for text the writer never wrote. Strip the whole start/end region (heading included).
+    const body = String(file.text)
+      .split(/<!--\s*linkedin\s*-->/i)[0]
+      .replace(/<!--\s*internal-links[\s\S]*?<!--\s*internal-links:end\s*-->/i, ' ')
+      .replace(/<!--\s*internal-links\s*-->/i, ' ');
     const inspection = inspectLongform(body);
     for (const v of inspection.violations) {
       report.problems.push(`${file.dir}/${file.name}: article body ${v.label} — "${v.match}" … ${v.snippet}`);
