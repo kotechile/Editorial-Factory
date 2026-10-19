@@ -1,6 +1,6 @@
 {
  "_note": "FOLLOW-UP COPY. The canonical decision queue is software-factory-core/context/approval_queue.json, which the PressFlow server fetches from main at runtime (PRESSFLOW_APPROVALS_URL). This copy is only what the Approvals tab shows when that fetch fails, so keep it level with the canonical file.",
- "updated": "2026-10-19T00:40:00Z",
+ "updated": "2026-10-19T00:50:00Z",
  "source": "https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json",
  "items": [
   {
@@ -31,13 +31,13 @@
    "id": "quarterline-leftovers",
    "app": "QuarterLine",
    "kind": "retire",
-   "state": "pending",
+   "state": "resolved",
    "headline": "Delete the last QuarterLine references",
-   "detail": "The product is killed and its pages redirect, but the agent descriptor (ai-plugin.json) still names it and /openapi.json answers 404.",
-   "impact": "Agents and search keep reading a product we no longer sell.",
-   "reply": "@Simon retire quarterline pages",
+   "detail": "Done 2026-10-19: the legacy plugin descriptor was DELETED (it advertised the killed product and an /openapi.json URL that answered 404). /.well-known/mcp.json, generated from the live inventory, is the one agent descriptor; a guard test now fails the build when any /.well-known file names a retired product, slug or tool, and the receipt sender no longer names it either.",
+   "impact": "Closed — no published descriptor or customer email names a product we no longer sell.",
+   "reply": "",
    "opened": "2026-10-15",
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   },
   {
    "id": "duplicate-videos",
