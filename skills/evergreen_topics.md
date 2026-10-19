@@ -50,6 +50,18 @@ single word of prose is drafted:
 - **An `as of` date** for any time-bound figure (a price, a rate, a cap, a standard). An undated
   figure is a news fact wearing an evergreen label, and it will be wrong within a year.
 
+**The de-dup check is per-vertical; the corpus is not (learned 2026-10-19).** `check_dedup` reads this
+vertical's briefs and published articles only, so a topic already published under a *different* vertical
+passes the gate cleanly and ships as a duplicate. Observed: a prompt-caching candidate (mechanics, prices,
+break-even rule) scored 9.0 and cleared every floor on paper while
+`published/2026-10-08_cache-boundary-decides-input-bill.md` (enterprise_ai_finops) already owned that
+thesis in the same corpus — the gate could not see it because the artifact carried another vertical's
+name. Before writing the brief, grep the whole corpus for the candidate's subject tokens
+(`grep -ril "prefix cach\|cache breakpoint" published/ context/recon_proposals/`) and read the nearest
+hit's `one_big_thing:`; a candidate whose mechanism is already argued anywhere in `published/` is refused
+by hand, and the brief's `De-dup:` line should name that cross-vertical artifact as checked-and-dropped
+so the audit shows the check happened.
+
 Beyond the floor, judge the topic yourself on the four axes and write the score into the brief:
 
 | Axis | Question | Weight |

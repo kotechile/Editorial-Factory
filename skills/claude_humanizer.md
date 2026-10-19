@@ -336,6 +336,12 @@ one.
   because it has no knowledge of the brief's figure set. Revert any such number to qualitative
   wording ("takes years") rather than a fabricated precision, and re-run `check_accessibility.py`
   to confirm the gate still passes.
+- **A rewrite can invert a rate into its complement and mislabel the base (learned 2026-10-19).** From a
+  source's "0.148% parse-error rate" the frontier wrote "99.8% of those failing outputs parsed perfectly" —
+  a derived complement (100 − 0.148, padded to 99.8), attached to the wrong base ("of those failing
+  outputs"). Every gate passed it: the arithmetic was near enough and no gate reads the noun. It is the
+  sibling of the interval / difference / ratio classes above. State the source's own rate ("just 0.148% of
+  outputs failed to parse") and diff every complement a rewrite introduces against the verified brief's rows.
 - **Audit names too, not only numbers (learned 2026-10-07).** The same pass must compare every proper
   noun the frontier touched against the brief and the source: a rewrite of a paper-based article
   renamed the cited paper's first author ("Tapio Mraz" for **Oto Mraz**), and a substituted name is
