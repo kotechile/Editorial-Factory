@@ -1,0 +1,93 @@
+{
+  "slug": "your-agent-obeyed-the-data-left",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper collage of a document folder with a hidden red arrow slipping out from underneath",
+      "caption": "The exploit demonstrates that identity controls cannot stop data egress when the communication pathways themselves are compromised.",
+      "title": "Silent Egress Collage",
+      "bytes": 1832566,
+      "sha256": "sha256:79889aea3555166d5f758381bcb047be"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage resting on a real dark wooden table. Three stylized cut-paper object silhouettes: a central locked document folder, a sharp crimson arrow sliding out silently from beneath the folder, and an open gateway shape. Hand-torn rag paper with visible fibre and halftone newsprint texture. Deep physical cast shadows under each overlapping paper layer. One raking directional key light, muted modern editorial palette of charcoal, cream, and deep red, crisp clean edges, generous negative space. Extreme asymmetry with the paper elements positioned off-centre on the right.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, fonts",
+  "rationale": "Paper collage elegantly captures the abstract, systemic nature of a governance policy failure and data exfiltration path, using minimalist silhouettes to represent the bypassed boundaries without resorting to literal or clich\u00e9 server racks.",
+  "cue": "failing on the data path",
+  "subject": "a stylized cut-paper silhouette of a document folder with a hidden egress arrow",
+  "core_thesis": "The September 2026 record shows agent governance failing on the data path, not the actor.",
+  "core_conflict": "Identity-scoped agent permissions versus unmonitored stealth data egress pathways.",
+  "composition": "extreme asymmetry",
+  "alt_text": "The Agentforce Exploit. Cut-paper collage of a document folder with a hidden red arrow slipping out from underneath",
+  "caption": "The Agentforce Exploit: Why identity controls cannot stop silent data egress.",
+  "title": "The Agentforce Exploit",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "paper_collage",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-agent-obeyed-the-data-left/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1359321,
+  "sha256": "sha256:2bc1ba4e64a252e00b5e19e9844ff0df5cf552ea5650342e7c7686f540cfe9f3",
+  "source_hash": "sha256:2233c655dceb60daa57cb30fb30952d5",
+  "source_chars": 7052,
+  "task_id": "9eb08c611853528a3a73bd82881ae193",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1e8028bddc36145a464f46ef2c83f755.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage resting on a real dark wooden table. Three stylized cut-paper object silhouettes: a central locked document folder, a sharp crimson arrow sliding out silently from beneath the folder, and an open gateway shape. Hand-torn rag paper with visible fibre and halftone newsprint texture. Deep physical cast shadows under each overlapping paper layer. One raking directional key light, muted modern editorial palette of charcoal, cream, and deep red, crisp clean edges, generous negative space. Extreme asymmetry with the paper elements positioned off-centre on the right.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-19T11:09:50+00:00",
+  "overlay": {
+    "kicker": "AGENT GOVERNANCE // ZERO-CLICK LEAK",
+    "title": "THE AGENTFORCE EXPLOIT",
+    "hook": "Why identity controls cannot stop silent data egress",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 15.58,
+    "target": 4.5,
+    "clutter": 0.026,
+    "region_rgb": [
+      12,
+      22,
+      24
+    ],
+    "binding_rgb": [
+      13,
+      24,
+      26
+    ],
+    "title_lines": [
+      "THE AGENTFORCE",
+      "EXPLOIT"
+    ],
+    "subject": 0.025,
+    "ink_subject": 0.012,
+    "spike": 0.077,
+    "generated_at": "2026-10-19T11:09:50+00:00"
+  }
+}

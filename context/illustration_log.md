@@ -240,3 +240,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-17 | `prior-disclosure-clock-cuts-penalty` | supplier_risk_reshoring_decision | `document_flatlay` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/prior-disclosure-clock-cuts-penalty/featured.jpg` |
 | 2026-10-19 | `your-tool-surface-is-a-release-surface` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-tool-surface-is-a-release-surface/featured.png` |
 | 2026-10-19 | `your-tool-surface-is-a-release-surface` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-tool-surface-is-a-release-surface/featured.png` |
+| 2026-10-19 | `your-agent-obeyed-the-data-left` | enterprise_ai_governance | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-agent-obeyed-the-data-left/featured.png` |

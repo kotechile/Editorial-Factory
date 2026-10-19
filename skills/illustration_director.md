@@ -280,6 +280,14 @@ image on the next sweep instead of never.
 - kie.ai upstreams fail intermittently with `Internal Error` on an accepted task: the client retries
   the *task* (new task id) and reports each attempt; a persistent failure surfaces, and the article
   still publishes without a header image.
+- **A director refusal is a headerless publish, not a failed publish.** When `validate_brief` refuses
+  three times (`prompt names no a framing rule` is the common one), `publish.py` logs
+  `[image] featured image FAILED` and carries on: the artifact, the row and the CMS post all go live
+  with `featured_media: 0`. Read that line before calling the publish clean, and recover with a
+  pinned treatment — `illustration_creator.py <artifact> --apply --style <treatment> --model <model>`
+  gives the director a catalogue entry that supplies the missing framing rule, then
+  `wp_draft.py --slug <slug> --reimage` uploads and switches the attachment. Retrying unpinned
+  repeats the same refusal and spends director calls, not credits.
 - A **hang is not a fast fail**: when kie.ai stalls on an accepted task instead of returning
   `Internal Error`, the retry loop can block for many minutes and `scripts/publish.py` times out
   *before* it writes `published/`, the log, Supabase or the sitemap — the persistence steps run

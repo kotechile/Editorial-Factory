@@ -128,6 +128,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-17 | personal_microeconomics_tinkering_tax | your-disks-35-dead-by-year-six | Your Disks: 35% Dead by Year Six | https://pressflow.aichieve.net/published/2026-10-17_your-disks-35-dead-by-year-six.md | reader site only |
 | 2026-10-17 | supplier_risk_reshoring_decision | prior-disclosure-clock-cuts-penalty | Your Misclassified Entry Costs 4x Duty | https://pressflow.aichieve.net/published/2026-10-17_prior-disclosure-clock-cuts-penalty.md | reader site only |
 | 2026-10-19 | agentic_ai | your-tool-surface-is-a-release-surface | Your Gateway: 60.5% Injection Risk | https://pressflow.aichieve.net/published/2026-10-19_your-tool-surface-is-a-release-surface.md | reader site only |
+| 2026-10-19 | enterprise_ai_governance | your-agent-obeyed-the-data-left | Silent Egress: Your Agent's 0-Click Leak | https://pressflow.aichieve.net/published/2026-10-19_your-agent-obeyed-the-data-left.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
