@@ -323,6 +323,27 @@ carry this beat: `census.gov`, `taxfoundation.org`, `floridarevenue.com`, `boe.c
 `…/ca_rev_and_tax_code_section_110_1`. A carrying-cost article therefore states the statutory caps and leaves the
 county rate to the reader's own tax bill rather than inventing a national average.
 
+**Hosts probed live 2026-10-19, building a duct-leakage / HVAC-replacement-scope brief.** Carries the figure
+as plain text and fetches first try: `nachi.org/hvac.htm` — the inspection *article*, 29 KB, not the
+life-expectancy chart — which states "duct leakage increases space-conditioning energy use by 15-20% on
+average, even in new construction", the Modera and Jump 1995 Sacramento readings (12% of duct energy lost by
+conduction at the register nearest the furnace, "more than 40%" at the master bedroom), "indoor coil airflow
+must be greater than 350 cfm/ton", and the Manual S limit of 15% above the calculated sensible load;
+`eia.gov/energyexplained/use-of-energy/homes.php` and `…/electricity/prices-and-factors-affecting-prices.php`
+(52% end-use share; 17.30¢ residential, 2025); and `ecfr.gov` 10 CFR 430.32 (13.4 SEER2 split-system air
+conditioners, 14.3 SEER2 / 7.5 HSPF2 split-system heat pumps, manufactured on or after January 1, 2023).
+Unreachable to the verifier on this beat: **every** `energy.gov/energysaver/*` path tried (the DOE consumer
+pages are not fetchable — the working `energy.gov` rows are `/cmei/femp/…` only), `energystar.gov/products/`
+guesses (`heat_pumps_air_source`, `air_conditioners`, `heating_cooling` all fail; only exact slugs such as
+`products/air_source_heat_pumps` fetch), `angi.com`, `homeguide.com`, and `nachi.org/inspecting-hvac-systems.htm`.
+**A colliding reference table can still be rescued by re-phrasing the cell, and a dead chart left alive is a
+trap:** `nachi.org/life-expectancy.htm` fetches, but every integer in its HVAC block (`7 to 15`, `15 to 25`,
+`60 to 100`) first appears in an earlier row (paint, caulking, service panel), so a life-expectancy row
+evidences on the wrong line and no service-life claim can carry a gate — while on the HVAC *article* the cell
+`20% on average — duct leakage increases space-conditioning energy use by 15-20%…` lands on the right sentence
+where `15-20% — …` lands on "15 mil" tape. Probe two or three phrasings with `c.figure_evidence` before
+concluding a host is unusable, and check the whole host's article set rather than one page.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
