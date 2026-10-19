@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T14:16:24+00:00",
+  "generated_at": "2026-10-19T14:16:33+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -67,6 +67,120 @@
     }
   },
   "candidates": [
+    {
+      "site": "giniloh.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "rsu-hold-vs-sell",
+      "title": "RSU Hold vs. Sell & Mega Backdoor Roth Simulator",
+      "url": "https://giniloh.com/calculators/rsu-hold-vs-sell/",
+      "path": "/calculators/rsu-hold-vs-sell/",
+      "sites_live": {
+        "giniloh.com": "/calculators/rsu-hold-vs-sell/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Quantify single-stock employer concentration risk, double-jeopardy exposure, and 2026 $72k Section 415(c) Mega Backdoor Roth asset allocation.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "w2-vs-1099-scorp-calculator",
+      "title": "W-2 vs. 1099 / S-Corp Net Yield Calculator",
+      "url": "https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/",
+      "path": "/calculators/w2-vs-1099-scorp-calculator/",
+      "sites_live": {
+        "giniloh.com": "/calculators/w2-vs-1099-scorp-calculator/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Compare W-2 total compensation against 1099 independent consulting and S-Corp distribution arbitrage under 2026 IRS statutory limits.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "secondary-tender-calculator",
+      "title": "Secondary Tender vs. IPO Horizon Calculator",
+      "url": "https://giniloh.com/calculators/secondary-tender-calculator/",
+      "path": "/calculators/secondary-tender-calculator/",
+      "sites_live": {
+        "giniloh.com": "/calculators/secondary-tender-calculator/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Price a private secondary or tender offer against the IPO you are waiting for: after-tax cash today, risk-adjusted exit proceeds, and the break-even IPO price.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "build-vs-buy",
+      "title": "Build-vs-Buy Amortization Simulator",
+      "url": "https://giniloh.com/calculators/build-vs-buy/",
+      "path": "/calculators/build-vs-buy/",
+      "sites_live": {
+        "giniloh.com": "/calculators/build-vs-buy/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Compare internal tooling against a vendor on loaded engineering time, maintenance, infrastructure and renewal escalation over one discounted horizon.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "gpu-breakeven",
+      "title": "Local Workstation vs. Cloud GPU Break-even",
+      "url": "https://giniloh.com/calculators/gpu-breakeven/",
+      "path": "/calculators/gpu-breakeven/",
+      "sites_live": {
+        "giniloh.com": "/calculators/gpu-breakeven/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Cost per GPU-hour for owned hardware against on-demand cloud rates at your real utilisation, with break-even hours per month.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "rent-vs-buy",
+      "title": "Rent vs. Buy with Opportunity Cost",
+      "url": "https://giniloh.com/calculators/rent-vs-buy/",
+      "path": "/calculators/rent-vs-buy/",
+      "sites_live": {
+        "giniloh.com": "/calculators/rent-vs-buy/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Compare an owner and a renter at the same horizon: equity after selling costs against a portfolio funded by the down payment and monthly difference.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "tool",
@@ -233,7 +347,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Analyze the automation vulnerability of 1,000+ occupations at the task level. Drag sliders to simulate upskilling and see how task-shifting future-proofs your career.",
+      "excerpt": "Find out how much of your job AI can already do \u2014 1,000+ careers, broken down task by task. Then move the sliders and see what changing your week would do.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -519,7 +633,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "For many coffee enthusiasts, the decision to invest in a premium espresso maker machine is clouded by emotion and brand loyalty. A data-driven approach, however, reveals a surprising bottom line. Using the Giniloh Strategic Decision-Intelligence Engine, a detailed cost-per-use analysis of a $3,000 dual-boiler home espresso machine versus daily $6.00 caf\u00e9 lattes yields a clear verdict: buy the machine\u2014but only just. Over three years of five weekly drinks, the home setup costs $5.92 per use, saving a mere $60 compared to the caf\u00e9\u2019s $4,680 total. Hidden expenses like beans, milk, descaling, and maintenance push the total cost of ownership to $4,620, making this a borderline decision. The real value emerges when weekly usage increases, tipping the scales toward significant long-term savings. Before you swipe your card, run your own numbers: the difference between a rational investment and a costly impulse is just one calculation away.",
-      "modified": "2026-07-09T21:19:00",
+      "modified": "2026-10-18T19:04:02",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -538,7 +652,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine your checking account drops to $500 after an unexpected car repair\u2014but within hours, an automatic sweep from your savings restores your floor, no manual intervention required. That\u2019s the power of the Giniloh Frictionless Money Flow Simulator, a hands-on tool that lets you practice real-life financial shocks in a risk-free environment. The emergency expense scenario, a core feature, demonstrates how setting a $1,500 checking floor paired with a $15,000 high-yield savings account triggers an automated rescue when an unplanned bill hits. You can run the simulation yourself using AI chat commands or manual UI configuration, then watch the cyan flow path and audit trail log confirm every transfer. This isn\u2019t static advice\u2014it\u2019s a live, repeatable drill that trains your system to protect against financial shocks and avoid high-interest debt, giving you confidence when real emergencies strike.",
-      "modified": "2026-07-09T17:01:18",
+      "modified": "2026-10-18T19:04:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -557,7 +671,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Let\u2019s cut to the chase: a liquidity sweep isn\u2019t just random market noise\u2014it\u2019s where institutional players deliberately spike prices through stop-loss clusters to grab trapped liquidity. If you\u2019ve ever watched your stop get hit only for the market to reverse immediately, you\u2019ve seen one. Most traders never learn to spot them, let alone simulate scenarios before risking real capital. That\u2019s where this guide changes everything. You\u2019ll not only learn how to identify buy-side and sell-side sweeps using swing highs and lows, but you\u2019ll also get hands-on with the Giniloh Frictionless Money Flow Simulator\u2014a tool that lets you configure accounts, set up automated cash pipelines via natural language CLI, and step through daily clocks to watch sweeps unfold in real time. No more guessing. By the end, you\u2019ll have a repeatable, actionable framework to anticipate liquidity grabs and safeguard your positions.",
-      "modified": "2026-07-09T17:07:31",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -576,7 +690,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine your income suddenly surges to $500 a day, your emergency fund is fully stocked at $15,000, and you carry zero high-interest debt. Where does every extra dollar go? The giniloh Money Flow Simulator answers that question with stunning clarity, turning abstract financial planning into a visual, real-time cascade. By simply setting your income and account ceilings\u2014via an AI chat command or a few clicks\u2014you watch surplus cash automatically bypass saturated reserves and flow into tax-advantaged accounts like your 401k, HSA, and Roth IRA. The true power emerges when these hit their annual limits; then, without any manual intervention, every remaining dollar dynamically overflows into a taxable brokerage account. With an audit trail logging each \u201coverbalance sweep,\u201d this simulation transforms a theoretical pay raise into a specific, actionable roadmap for wealth acceleration. It\u2019s not just a chart\u2014it\u2019s a live demonstration of how to make every surge work harder, before you ever see a real paycheck.",
-      "modified": "2026-07-09T01:34:05",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -614,7 +728,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "For professionals weighing a leap into Nvidia\u2019s RTX PRO lineup\u2014a $12,400 Blackwell 6000 with 98GB VRAM\u2014the sticker shock often overshadows long-term value. But what if a single interactive calculator could reveal whether that investment pays off faster than renting cloud GPUs? Gilinho\u2019s new TCO Analyzer does exactly that, letting you input acquisition cost, power draw, maintenance, and depreciation to compare ownership versus rental across workloads like Llama 3 inference or Blender rendering. Early results show the RTX PRO can slash cost per render hour by 40% over a three-year horizon. Stop guessing and start optimizing your hardware budget. Try the analyzer now to see if RTX PRO is your smartest compute bet.",
-      "modified": "2026-07-05T17:27:26",
+      "modified": "2026-10-18T19:04:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -633,7 +747,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Sarah faced a classic career-versus-home dilemma: a $20,000 salary bump in NYC, but eight months and $24,000 remaining on her Austin lease. With confusing penalty clauses and no clear exit path, she needed hard numbers\u2014not guesswork. Using the Giniloh Lease Break Calculator, she compared three real scenarios: a worst-case $3,500 outlay, a negotiated buyout at $1,650 net, and a best-case where her new employer covered the exit cost. The calculator\u2019s payback math revealed she\u2019d fully recover even the worst penalty in just 2.1 months. Armed with concrete data, Sarah turned a painful lease break into a leverage point\u2014either for a signing bonus or a swift financial recovery. The result? A clear, data-driven path out of a costly commitment, proving that with the right tool, breaking a lease doesn\u2019t have to break your budget.",
-      "modified": "2026-06-28T00:02:04",
+      "modified": "2026-10-18T19:04:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -690,7 +804,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Stop guessing whether an e-bike is worth it\u2014most people overpay for their commute without realizing it. This article uses the Giniloh Decision Intelligence Framework to uncover the true ebike costs and which choice saves real money. Instead of just listing price tags, you\u2019ll learn a simple Cost-Per-Use (CPU) calculation that compares a $2,500 premium e-bike against your current parking, fuel, and rideshare expenses. The result? A commuter who rides three days a week could save $2,875 over three years\u2014dropping their per-trip cost from $15.00 to just $7.90. That\u2019s a clear BUY verdict based on your own numbers. By matching the electric bike cost to your exact lifestyle, you stop overthinking and start saving immediately. Ready to run your own CPU check? The interactive calculator inside does the math for you.",
-      "modified": "2026-06-20T11:03:06",
+      "modified": "2026-10-18T19:04:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -766,7 +880,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine taking control of your money flow without the usual spreadsheet headaches or second-guessing every move. That\u2019s exactly what the Giniloh Money Flow Simulator delivers\u2014a risk-free sandbox where you can test your smart money decisions in real time. Instead of hoping your bills line up, you automate cash flow pipelines that sweep surpluses toward debt, savings, or investments while underbalance pulls instantly prevent overdrafts. No more panic, no more guesswork. Based on the Loh-Friction Philosophy, this tool lets you simulate aggressive paydowns, emergency floors, even corporate treasury sweeps, and watch exactly how your money decisions play out before committing a single dollar. With built-in regulatory guardrails like Roth IRA penalty checks, the model stays realistic. Stop leaving your financial momentum on idle\u2014start testing your strategies today and see your money flow work for you.",
-      "modified": "2026-06-15T00:25:11",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -785,7 +899,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Mastering your money flows is no longer guesswork. The Giniloh Frictionless Money Flow Simulator lets you configure a real-time cash routing engine on an interactive canvas\u2014click any account node to drag sliders for balances, ceiling limits, and safety floors. Its AI Orchestration Chat establishes automated pipelines, then tests them against macroeconomic scenarios like stagflation or a 2008-style market contraction. You can apply conditional market scripting rules that adjust sweeps when inflation rises or buy dips when the S&P 500 drops. The simulator enforces regulatory guardrails\u2014blocking Roth IRA early withdrawals, settlement delays, and pattern-day-trader limits\u2014so every simulation mirrors reality. Start the automated clock or step day-by-day to watch your cash move according to your logic. Whether in Personal or Enterprise mode, this tool transforms abstract financial planning into a concrete, risk-free sandbox. Stop guessing; start controlling where your money flows before it hits the real world.",
-      "modified": "2026-06-10T21:24:19",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -804,7 +918,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the Loh-Friction Philosophy, it eliminates decision fatigue: surpluses automatically sweep toward debt, savings, or investments, while underbalance pulls instantly retrieve funds to prevent overdrafts. No more manual juggling or retrospective panic. You can simulate real-life scenarios\u2014aggressive debt paydown, emergency floor protection, even corporate treasury sweeps\u2014and see exactly how your smart money decisions play out. With built-in regulatory guardrails (like Roth IRA sweep penalties), the model stays realistic. Start testing your strategies today and stop leaving your momentum on idle.",
-      "modified": "2026-07-09T16:36:32",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1536,6 +1650,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-75000-btu-tank-venting-trap",
+      "title": "Your 75,000-Btu Tank's Venting Trap",
+      "url": "https://wellroost.com/your-75000-btu-tank-venting-trap/",
+      "path": "/your-75000-btu-tank-venting-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-75000-btu-tank-venting-trap/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "The cheap, like-for-like swap for gas water heaters above 75,000 British thermal units per hour (Btu/hr) ended on October 6.",
+      "modified": "2026-10-19T12:25:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-blocks-30b-hardening-bill",
       "title": "Your Block's $30B Hardening Bill",
       "url": "https://wellroost.com/your-blocks-30b-hardening-bill/",
@@ -1575,6 +1712,29 @@
       ],
       "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
       "modified": "2026-10-16T01:44:51",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-upgrades-9-silent-reset",
+      "title": "Your Upgrade's $9 Silent Reset",
+      "url": "https://wellroost.com/your-upgrades-9-silent-reset/",
+      "path": "/your-upgrades-9-silent-reset/",
+      "sites_live": {
+        "wellroost.com": "/your-upgrades-9-silent-reset/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Your home upgrade's quoted price is fixed, but the loan behind it resets every month. A quarter-point rate bump adds about $9 to the median payment.",
+      "modified": "2026-10-19T11:40:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2103,7 +2263,7 @@
         "business-automation-operations"
       ],
       "excerpt": "Every year, logistics leaders approve multimillion-dollar robotics deals based on a spreadsheet built by the vendor selling the hardware. But warehouse automation cost is rarely what the quote promises. Hidden maintenance, fully loaded labor, integration fees, and 2026 Section 179 phase-outs can stretch a claimed 14-month payback to 41 months. CaseProof is the buyer-side audit engine that re-runs vendor proposals against your operating reality\u2014normalizing capex, lease, and RaaS bids into one after-tax cash model, attributing every month of payback variance, and flagging unstated lines before you sign. It delivers a payback waterfall, year-by-year cash schedule, ranked confirm-in-writing ledger, and board-ready decision pack in minutes. Before you commit seven figures, audit the math yourself. Launch CaseProof now to see the true warehouse automation cost\u2014for less than ten dollars.",
-      "modified": "2026-10-04T18:30:02",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2369,7 +2529,7 @@
         "business-automation-operations"
       ],
       "excerpt": "European e-invoicing regulations have converted accounts receivable into an uncompromising algorithmic gatekeeper, where a single \u20ac0.01 calculation variance halts cash collection instantly. FacturGate is a deterministic, client-side pre-send validation gate and format converter that intercepts defective invoice payloads, audits them against 223 Schematron business rules and domestic CIUS overlays, balances totals to the exact cent, and emits compliant Factur-X (CII) and UBL 2.1 artifacts before transmissions hit government tax firewalls.",
-      "modified": "2026-10-04T15:06:41",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2692,6 +2852,29 @@
       ],
       "excerpt": "The true cost to hold a dollar of stock runs 20% to 30% a year, yet most models load only the 7.00% bank prime rate.",
       "modified": "2026-10-15T12:33:43",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "inventory-cut-bets-against-prices",
+      "title": "Why Your Inventory Cut Costs 15%",
+      "url": "https://aichieve.net/inventory-cut-bets-against-prices/",
+      "path": "/inventory-cut-bets-against-prices/",
+      "sites_live": {
+        "aichieve.net": "/inventory-cut-bets-against-prices/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your finance team\u2019s push to cut inventory is a bet against prices that TrendForce expects to jump 15% in a single quarter.",
+      "modified": "2026-10-19T12:47:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3059,7 +3242,7 @@
         "business-automation-operations"
       ],
       "excerpt": "Every week, parcel carriers quietly invoice ecommerce brands and 3PLs for phantom dimensional weight, unearned accessorial surcharges, and missed delivery guarantees. By the time accounts payable reviews the billing file, the 21-to-30-day dispute window has already slammed shut. Here is how ParcelProof puts cash back into shippers' accounts by automating carrier invoice reconciliation with deterministic, verifiable proof.",
-      "modified": "2026-10-04T16:45:36",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3473,7 +3656,7 @@
         "business-automation-operations"
       ],
       "excerpt": "When Stripe deposits funds into your bank account, it lands as a single net lump sum\u2014such as $14,250.40\u2014masking gross billings, interchange fees, customer refunds, and dispute reserves. Booking these net deposits directly as sales understates top-line revenue, conceals operating expenses, and violates statutory accounting standards like ASC 606 and IFRS 15. Meet LedgerLink (https://apps.aichieve.net/ledgerlink)\u2014a specialized, deterministic financial reconciliation utility that automatically decomposes netted Stripe payouts into categorized double-entry General Ledger (GL) journal lines. Strict Mathematical Invariant: The engine (stripeRecon.ts) enforces a zero-tolerance invariant where total debits and credits balance down to the exact cent, flagging any variance immediately. Automated GL Categorization: Cleans and sorts transactions into standard double-entry rows including Revenue, Stripe Fees, Refunds, and Chargebacks. Zero-Trust Privacy: Run calculations locally in your browser via JSON exports, or fetch directly from Stripe using read-only restricted keys (rk_\u2026) while blocking master secret keys (sk_\u2026). Accounting Software & Agent Ready: Generates pre-formatted CSV imports for QuickBooks Online and Xero, and exposes the reconcile_stripe_payout tool via WebMCP for autonomous AI accounting agents.",
-      "modified": "2026-10-04T15:07:11",
+      "modified": "2026-10-18T19:04:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3818,6 +4001,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-agent-obeyed-the-data-left",
+      "title": "Silent Egress: Your Agent's 0-Click Leak",
+      "url": "https://aichieve.net/your-agent-obeyed-the-data-left/",
+      "path": "/your-agent-obeyed-the-data-left/",
+      "sites_live": {
+        "aichieve.net": "/your-agent-obeyed-the-data-left/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Zenity Labs pulled a CRM (customer relationship management) database out of Salesforce Agentforce with zero clicks, no login and no stolen password.",
+      "modified": "2026-10-19T11:10:15",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-chip-stopped-deciding",
       "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
       "url": "https://aichieve.net/your-chip-stopped-deciding/",
@@ -3887,6 +4093,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-hidden-quantity-gap",
+      "title": "63.6% OTIF: Your Hidden Quantity Gap",
+      "url": "https://aichieve.net/your-hidden-quantity-gap/",
+      "path": "/your-hidden-quantity-gap/",
+      "sites_live": {
+        "aichieve.net": "/your-hidden-quantity-gap/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The share of purchase orders arriving on time and in full (OTIF) fell to 63.6% in the third quarter, and the loss came from missing units rather than late\u2026",
+      "modified": "2026-10-19T13:12:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-mexico-hedge-renewal-risk",
       "title": "Your Mexico Hedge: A 2027 Renewal Risk",
       "url": "https://aichieve.net/your-mexico-hedge-renewal-risk/",
@@ -3903,6 +4132,29 @@
       ],
       "excerpt": "USTR (the Office of the U.S. Trade Representative) just opened a public docket on whether the trade rules behind your Mexico sourcing hedge will hold.",
       "modified": "2026-10-17T06:42:33",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-tool-surface-is-a-release-surface",
+      "title": "Your Gateway: 60.5% Injection Risk",
+      "url": "https://aichieve.net/your-tool-surface-is-a-release-surface/",
+      "path": "/your-tool-surface-is-a-release-surface/",
+      "sites_live": {
+        "aichieve.net": "/your-tool-surface-is-a-release-surface/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Three new research papers landed within 48 hours, and none of them focus on the model. One ran 11,118 real tools from 251 servers through seven gateways.",
+      "modified": "2026-10-19T10:38:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3931,6 +4183,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1029,
+      "slug": "your-hidden-quantity-gap",
+      "title": "63.6% OTIF: Your Hidden Quantity Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T13:12:04",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1026,
+      "slug": "inventory-cut-bets-against-prices",
+      "title": "Why Your Inventory Cut Costs 15%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T12:47:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1022,
+      "slug": "your-agent-obeyed-the-data-left",
+      "title": "Silent Egress: Your Agent&#8217;s 0-Click Leak",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T11:10:15",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1019,
+      "slug": "your-tool-surface-is-a-release-surface",
+      "title": "Your Gateway: 60.5% Injection Risk",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T10:38:45",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -4949,7 +5257,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-04T18:30:02",
+      "modified": "2026-10-18T19:04:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4963,7 +5271,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-04T16:45:36",
+      "modified": "2026-10-18T19:04:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -4977,7 +5285,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-04T15:06:41",
+      "modified": "2026-10-18T19:04:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -5005,7 +5313,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-04T15:07:11",
+      "modified": "2026-10-18T19:04:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -5104,62 +5412,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T12:33:48",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 397,
-      "slug": "up-ns-rail-merger-clears-summary-denial",
-      "title": "Coast-to-Coast Rail Merger Clears First Big Test",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:48",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 398,
-      "slug": "ai-spend-27t-cost-visibility-mandate",
-      "title": "The $2.7 Trillion AI Bill Just Turned Cost Control Into a Buying Requirement",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:48",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 399,
-      "slug": "maskills-multi-agent-skills-optimization",
-      "title": "Stop Piling Memory Onto AI Agents: Optimize Skills",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:49",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 400,
-      "slug": "tariff-cliff-already-priced-in",
-      "title": "CFOs Are Pricing In the Tariff Cliff",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

@@ -1,6 +1,6 @@
 {
   "slug": "planner-as-router-plan-time-routing",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -38,6 +38,14 @@
     },
     {
       "revision": 5,
+      "alt_text": "Planner-As-Router. An interlocking mechanical connector splitting into two conduit paths on a minimal background.",
+      "caption": "Planner-As-Router: Folding model choice into the plan to cut costs by 44%.",
+      "title": "Planner-As-Router",
+      "bytes": 999149,
+      "sha256": "sha256:1dfc880ec3d9d1814d360ab777f92c68e8918231c9df7316f6d4b77a99b10e9f"
+    },
+    {
+      "revision": 6,
       "alt_text": "Planner-As-Router. An interlocking mechanical connector splitting into two conduit paths on a minimal background.",
       "caption": "Planner-As-Router: Folding model choice into the plan to cut costs by 44%.",
       "title": "Planner-As-Router",

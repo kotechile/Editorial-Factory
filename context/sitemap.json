@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T13:12:05Z",
+  "updated_at": "2026-10-19T17:44:27Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2218,6 +2218,24 @@
       "url": "https://aichieve.net/your-mexico-hedge-renewal-risk/"
     },
     {
+      "slug": "2026-10-19_answer-field-first-costs-38-points",
+      "title": "Answer Field First Costs 38.15 Points",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-19",
+      "public": false
+    },
+    {
       "slug": "2026-10-19_inventory-cut-bets-against-prices",
       "title": "Why Your Inventory Cut Costs 15%",
       "vertical": "meio_working_capital_tco",
@@ -2233,7 +2251,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/inventory-cut-bets-against-prices/"
     },
     {
       "slug": "2026-10-19_your-75000-btu-tank-venting-trap",
@@ -2251,7 +2270,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-75000-btu-tank-venting-trap/"
     },
     {
       "slug": "2026-10-19_your-agent-obeyed-the-data-left",
@@ -2268,7 +2288,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-obeyed-the-data-left/"
     },
     {
       "slug": "2026-10-19_your-hidden-quantity-gap",
@@ -2286,7 +2307,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-hidden-quantity-gap/"
     },
     {
       "slug": "2026-10-19_your-tool-surface-is-a-release-surface",
@@ -2304,7 +2326,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-tool-surface-is-a-release-surface/"
     },
     {
       "slug": "2026-10-19_your-upgrades-9-silent-reset",
@@ -2322,7 +2345,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-upgrades-9-silent-reset/"
     }
   ]
 }

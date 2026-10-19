@@ -133,6 +133,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-19 | home_infrastructure_lifecycle_tco | your-75000-btu-tank-venting-trap | Your 75,000-Btu Tank's Venting Trap | https://pressflow.aichieve.net/published/2026-10-19_your-75000-btu-tank-venting-trap.md | reader site only |
 | 2026-10-19 | meio_working_capital_tco | inventory-cut-bets-against-prices | Why Your Inventory Cut Costs 15% | https://pressflow.aichieve.net/published/2026-10-19_inventory-cut-bets-against-prices.md | reader site only |
 | 2026-10-19 | sales_order_service_level_otif | your-hidden-quantity-gap | 63.6% OTIF: Your Hidden Quantity Gap | https://pressflow.aichieve.net/published/2026-10-19_your-hidden-quantity-gap.md | reader site only |
+| 2026-10-19 | agentic_ai | answer-field-first-costs-38-points | Answer Field First Costs 38.15 Points | https://pressflow.aichieve.net/published/2026-10-19_answer-field-first-costs-38-points.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,7 +1,16 @@
 {
   "slug": "cloud-update-bricked-the-fridge-local-first",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote server module.",
+      "caption": "A failed remote patch highlights the vulnerability of smart appliances dependent on cloud connections.",
+      "title": "Isometric cutaway of bricked smart fridge",
+      "bytes": 1208984,
+      "sha256": "sha256:56fb4325d7b3220a0a6a5aa1c8aa175f"
+    }
+  ],
   "style": "technical_isometric",
   "style_label": "Technical isometric cutaway",
   "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
@@ -15,9 +24,9 @@
   "rationale": "An isometric cutaway perfectly illustrates the structural failure of a smart home appliance. By showing the internal smart module of a refrigerator severed from a remote server node, it visually explains the remote patch bricking the hardware.",
   "cue": "giant paperweight over a network link",
   "subject": "an isometric cutaway of a modern refrigerator's smart control board severed from a remote server module",
-  "alt_text": "Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote server module.",
-  "caption": "A failed remote patch highlights the vulnerability of smart appliances dependent on cloud connections.",
-  "title": "Isometric cutaway of bricked smart fridge",
+  "alt_text": "The Smart Home Cloud Backlash. Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote",
+  "caption": "The Smart Home Cloud Backlash: Why smart home platforms are ditching the cloud.",
+  "title": "The Smart Home Cloud Backlash",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -30,8 +39,8 @@
   "local_path": "context/assets/illustrations/cloud-update-bricked-the-fridge-local-first/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1208984,
-  "sha256": "sha256:56fb4325d7b3220a0a6a5aa1c8aa175f",
+  "bytes": 824886,
+  "sha256": "sha256:3ae84e93f6fe3690c5e387806ce3d9dfffd5ef35687c78e23b795e4ff22ae9b9",
   "source_hash": "sha256:60ddae8225228f50fd03fab1a94b95a4",
   "source_chars": 3812,
   "task_id": "2f9da1126fffcd78be214e6ed83858a3",
@@ -48,5 +57,34 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-03T15:56:17+00:00"
+  "generated_at": "2026-10-03T15:56:17+00:00",
+  "overlay": {
+    "kicker": "SMART HOME // CLOUD VULNERABILITY",
+    "title": "THE SMART HOME CLOUD BACKLASH",
+    "hook": "Why smart home platforms are ditching the cloud",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 10.69,
+    "target": 4.5,
+    "clutter": 0.035,
+    "region_rgb": [
+      231,
+      232,
+      234
+    ],
+    "binding_rgb": [
+      232,
+      232,
+      234
+    ],
+    "title_lines": [
+      "THE SMART HOME",
+      "CLOUD BACKLASH"
+    ],
+    "subject": 0.039,
+    "ink_subject": 0.016,
+    "spike": 0.132,
+    "generated_at": "2026-10-03T15:56:17+00:00"
+  }
 }

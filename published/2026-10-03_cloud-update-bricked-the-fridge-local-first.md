@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/cloud-update-bricked-the-fridge-local-first/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote server module."
-image_caption: "A failed remote patch highlights the vulnerability of smart appliances dependent on cloud connections."
+image_alt: "The Smart Home Cloud Backlash. Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote"
+image_caption: "The Smart Home Cloud Backlash: Why smart home platforms are ditching the cloud."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

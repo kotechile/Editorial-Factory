@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/california-legalizes-plug-in-solar/featured.png"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "A small modular solar panel connected to a standard wall plug on a plain surface."
-image_caption: "California's SB 868 allows residents to plug home solar panels directly into standard wall outlets without utility permission."
+image_alt: "Ca Legalizes Plug-In Solar. A small modular solar panel connected to a standard wall plug on a plain surface."
+image_caption: "Ca Legalizes Plug-In Solar: Renters can use balcony solar without utility permits."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

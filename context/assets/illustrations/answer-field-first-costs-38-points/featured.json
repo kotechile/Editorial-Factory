@@ -1,0 +1,90 @@
+{
+  "slug": "answer-field-first-costs-38-points",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Modular mechanical assembly featuring a heavy metal output casing placed in front of sequential processing modules.",
+      "caption": "When a schema demands the answer field before the reasoning field, the model generates an output without the computational space to process the steps.",
+      "title": "Agentic AI Schema Ordering",
+      "bytes": 2175757,
+      "sha256": "sha256:ea32877eec780c974ad65f3650cf7656"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface. Three sequential precision-engineered processing modules are abruptly blocked by a heavy, latched polished metal output casing placed prematurely at the front of the sequence. Asymmetric off-centre framing, generous negative space on the right. Hard clean edges, one stark directional light throwing long cast shadows across the concrete. Matte muted palette with industrial greys and a single warm copper accent on the blocked modules. No bare shapes, no molded or printed lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, UI elements, labels",
+  "rationale": "The story is about how structural ordering and rigid schema sequences dictate a systemic process. A minimalist component assembly captures this by arranging recognizable engineered modules to show an inverted sequence.",
+  "cue": "put the working field before the answer field",
+  "subject": "an engineered modular assembly with a dominant final output block placed prematurely before sequential processing modules",
+  "core_thesis": "A tool schema dictates token-by-token generation order, and forcing the answer field before the reasoning field causes models to skip the work and lose massive accuracy.",
+  "core_conflict": "Premature output generation versus step-by-step reasoning sequence.",
+  "composition": "asymmetric off-centre framing",
+  "alt_text": "Answer Before Reasoning. Modular mechanical assembly featuring a heavy metal output casing placed in front of sequential",
+  "caption": "Answer Before Reasoning: Why asking for the answer first breaks LLM reasoning.",
+  "title": "Answer Before Reasoning",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/answer-field-first-costs-38-points/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1576691,
+  "sha256": "sha256:73bcabea1a34b10c798addefd24cc7b5a4623367509dead22d4762d7c11c2ed3",
+  "source_hash": "sha256:658a2b29c82f765cc118d93626792f89",
+  "source_chars": 5694,
+  "task_id": "cf479fc2313c073f88c1bd768c6fba4b",
+  "credits": 18.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_5f56901aa748db57811597528fbae7e6.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete surface. Three sequential precision-engineered processing modules are abruptly blocked by a heavy, latched polished metal output casing placed prematurely at the front of the sequence. Asymmetric off-centre framing, generous negative space on the right. Hard clean edges, one stark directional light throwing long cast shadows across the concrete. Matte muted palette with industrial greys and a single warm copper accent on the blocked modules. No bare shapes, no molded or printed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-19T17:44:13+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // SCHEMA FIELD ORDER",
+    "title": "ANSWER BEFORE REASONING",
+    "hook": "Why asking for the answer first breaks LLM reasoning",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 4.64,
+    "target": 4.5,
+    "clutter": 0.076,
+    "region_rgb": [
+      162,
+      162,
+      160
+    ],
+    "binding_rgb": [
+      154,
+      154,
+      152
+    ],
+    "title_lines": [
+      "ANSWER BEFORE",
+      "REASONING"
+    ],
+    "subject": 0.04,
+    "ink_subject": 0.02,
+    "spike": 0.12,
+    "generated_at": "2026-10-19T17:44:13+00:00"
+  }
+}
