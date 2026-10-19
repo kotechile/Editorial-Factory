@@ -243,6 +243,20 @@ one.
   FINAL>)` then reports `lead_ok: False` and the pre-publish gate may re-cut a headline the run believed
   settled. Re-score against the **final** body, not the draft, and restore the title's words in the lead
   sentence (the pipeline's own vocabulary on the same facts), rather than accepting the re-cut.
+- **The rewrite invents provenance inside a first-person cue, and flattens a source's own taxonomy into
+  synonyms — both invisible to every mechanical gate (learned 2026-10-19).** On an order-exception piece
+  the returning body carried "That is the vendor's view, and my own tracking agrees" — a data source the
+  desk does not have, in the exact sentence that reads most human — and the vendor's five named exception
+  types had become "bad prices, wrong amounts, missing core data, limit blocks, delivery rules", which
+  cannot be quoted or checked against the page. Read every first-person claim back against the brief (it
+  must rest on a cited fact or be labelled a reading: "my reading, held loosely"), and restore each source
+  term verbatim beside any gloss. A rewrite that also dropped "I did not read the paper" had removed the
+  hedge that made a second-hand 7.22% honest — hedges are content, not style.
+- **`verify.sh`'s voice check reads the committed `*_draft.md` too, so an imperative in the structural
+  draft fails the repo gate even when the `_final.md` is clean (learned 2026-10-19).** "Treat that as a
+  vendor's claim" in the draft body reddened §9 with 2 problems after the publish had already gone
+  through, and the published artifact was fine. Fix the draft as well as the final (same re-voicing), then
+  re-run `bash scripts/verify.sh` before the commit that carries the run-log row.
 - **A 600 s socket rebind is not a guarantee either; and a body that passes markers/sources but fails only
   the Flesch floor is a hand-tune case, not a re-run case.** Observed 2026-10-19: the per-draft driver at
   600 s produced attempt 1 (markers ok, sources ok, Flesch 48.0 — four points under the floor) and then
