@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T19:12:49Z",
+  "updated_at": "2026-10-19T19:38:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2268,6 +2268,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-19",
+      "public": false
+    },
+    {
+      "slug": "2026-10-19_four-warehouses-halve-stock",
+      "title": "4 Warehouses Halve Stock. Yours Won't",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-19",
       "public": false
     },

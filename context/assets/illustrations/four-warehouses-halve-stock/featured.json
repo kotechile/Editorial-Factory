@@ -1,0 +1,88 @@
+{
+  "slug": "four-warehouses-halve-stock",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Four towering aisles of heavily loaded steel pallet racks converging into a single staging area in a vast warehouse.",
+      "caption": "The theoretical inventory savings of consolidating four warehouses into one are often erased by duplicated internal safety buffers.",
+      "title": "Warehouse-Consolidation-Inventory-Buffers",
+      "bytes": 330577,
+      "sha256": "sha256:c4be4193f95fcee8fef1375b2d4fe6f1"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A vast, atmospheric industrial warehouse staging floor where four towering, heavily loaded aisles of steel pallet racks converge into a single bottlenecked staging area. The racks are burdened with immense, identical blocks of safety stock wrapped in matte polymer. A single strong practical high-bay light source cuts through the crisp atmospheric depth, casting long, heavy shadows across the brushed concrete floor. Restrained teal-and-amber palette, deep industrial contrast, quiet operational tension.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, legible print, people, faces",
+  "rationale": "A cinematic still captures the immense physical scale and weight of duplicated inventory buffers in a warehouse setting, grounding the abstract mathematical pooling law in tangible industrial reality.",
+  "cue": "Fold four equal sites into one",
+  "subject": "four towering aisles of heavily loaded pallet racks converging into a single staging floor",
+  "core_thesis": "The theoretical 15-30% inventory reduction from pooling four warehouses is often erased by demand correlation and duplicated internal service targets.",
+  "core_conflict": "Theoretical square-root pooling law vs real-world duplicated internal buffers and correlated demand.",
+  "composition": "asymmetric wide establishing shot with deep linear perspective",
+  "alt_text": "The Inventory Pooling Myth. Four towering aisles of heavily loaded steel pallet racks converging into a single staging area",
+  "caption": "The Inventory Pooling Myth: Why real networks miss the promised 50% inventory cut.",
+  "title": "The Inventory Pooling Myth",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/four-warehouses-halve-stock/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 191677,
+  "sha256": "sha256:df83277e22c4baa0edd9706cb4ccfce0cab2b03882a2106bce7b0a650c88156c",
+  "source_hash": "sha256:73bb33ca01e8431a7fd988dd1629ff67",
+  "source_chars": 5636,
+  "task_id": "be6a8e78d45ac9693c26edbd8a128f4b",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/be6a8e78d45ac9693c26edbd8a128f4b_1792438691041.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A vast, atmospheric industrial warehouse staging floor where four towering, heavily loaded aisles of steel pallet racks converge into a single bottlenecked staging area. The racks are burdened with immense, identical blocks of safety stock wrapped in matte polymer. A single strong practical high-bay light source cuts through the crisp atmospheric depth, casting long, heavy shadows across the brushed concrete floor. Restrained teal-and-amber palette, deep industrial contrast, quiet operational tension.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-19T19:38:16+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // SAFETY STOCK",
+    "title": "THE INVENTORY POOLING MYTH",
+    "hook": "Why real networks miss the promised 50% inventory cut",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.55,
+    "target": 4.5,
+    "clutter": 0.229,
+    "region_rgb": [
+      41,
+      56,
+      53
+    ],
+    "binding_rgb": [
+      63,
+      78,
+      73
+    ],
+    "title_lines": [
+      "THE INVENTORY",
+      "POOLING MYTH"
+    ],
+    "subject": 0.11,
+    "ink_subject": 0.043,
+    "spike": 0.379,
+    "generated_at": "2026-10-19T19:38:16+00:00"
+  }
+}

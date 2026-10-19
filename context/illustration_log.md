@@ -249,3 +249,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-19 | `model-retirement-breaks-audit-trail` | enterprise_ai_governance | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/model-retirement-breaks-audit-trail/featured.jpg` |
 | 2026-10-19 | `3-percent-cap-never-covers-your-addition` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/3-percent-cap-never-covers-your-addition/featured.jpg` |
 | 2026-10-19 | `20-percent-of-your-ac-never-arrives` | home_infrastructure_lifecycle_tco | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/20-percent-of-your-ac-never-arrives/featured.png` |
+| 2026-10-19 | `four-warehouses-halve-stock` | meio_working_capital_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/four-warehouses-halve-stock/featured.jpg` |
