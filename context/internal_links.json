@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T14:16:33+00:00",
+  "generated_at": "2026-10-19T19:44:05+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -919,6 +919,52 @@
       "category_slugs": [],
       "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the Loh-Friction Philosophy, it eliminates decision fatigue: surpluses automatically sweep toward debt, savings, or investments, while underbalance pulls instantly retrieve funds to prevent overdrafts. No more manual juggling or retrospective panic. You can simulate real-life scenarios\u2014aggressive debt paydown, emergency floor protection, even corporate treasury sweeps\u2014and see exactly how your smart money decisions play out. With built-in regulatory guardrails (like Roth IRA sweep penalties), the model stays realistic. Start testing your strategies today and stop leaving your momentum on idle.",
       "modified": "2026-10-18T19:04:09",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "3-percent-cap-never-covers-your-addition",
+      "title": "3% Cap Never Covers Your Addition",
+      "url": "https://wellroost.com/3-percent-cap-never-covers-your-addition/",
+      "path": "/3-percent-cap-never-covers-your-addition/",
+      "sites_live": {
+        "wellroost.com": "/3-percent-cap-never-covers-your-addition/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Your addition never gets the 3% cap. It lands on the tax roll at full market price the first January 1 after the work is mostly finished.",
+      "modified": "2026-10-19T18:41:41",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "20-percent-of-your-ac-never-arrives",
+      "title": "20% of Your AC Never Arrives",
+      "url": "https://wellroost.com/20-percent-of-your-ac-never-arrives/",
+      "path": "/20-percent-of-your-ac-never-arrives/",
+      "sites_live": {
+        "wellroost.com": "/20-percent-of-your-ac-never-arrives/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Roughly 20% of your home's air conditioning (AC) never arrives in the room it is meant to cool. A new unit is sold on a factory rating, but the hidden air\u2026",
+      "modified": "2026-10-19T19:12:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2110,6 +2156,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "answer-field-first-costs-38-points",
+      "title": "Answer Field First Costs 38.15 Points",
+      "url": "https://aichieve.net/answer-field-first-costs-38-points/",
+      "path": "/answer-field-first-costs-38-points/",
+      "sites_live": {
+        "aichieve.net": "/answer-field-first-costs-38-points/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Put the answer field before the reasoning field in a tool schema, and the model writes the answer first. In one 2024 study, an open model lost 38.15 points\u2026",
+      "modified": "2026-10-19T17:44:27",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "automation-payback-splits-by-sku-geometry",
       "title": "Amazon Builds the Robots; Walmart Builds for What They Can't Lift",
       "url": "https://aichieve.net/automation-payback-splits-by-sku-geometry/",
@@ -2652,6 +2721,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "four-warehouses-halve-stock",
+      "title": "4 Warehouses Halve Stock. Yours Won't",
+      "url": "https://aichieve.net/four-warehouses-halve-stock/",
+      "path": "/four-warehouses-halve-stock/",
+      "sites_live": {
+        "aichieve.net": "/four-warehouses-halve-stock/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The rule of thumb says folding four warehouses into one halves your safety stock. The band that reaches the finance desk says 15% to 30% less inventory.",
+      "modified": "2026-10-19T19:38:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "freight-claim-dies-at-9-months",
       "title": "Your Claim Dies at 9 Months",
       "url": "https://aichieve.net/freight-claim-dies-at-9-months/",
@@ -3013,6 +3105,29 @@
       ],
       "excerpt": "Skills \u2014 portable bundles of workflow instructions \u2014 became an official MCP extension on September 13, standardizing how agents discover, retrieve, and verify\u2026",
       "modified": "2026-10-15T12:33:49",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "model-retirement-breaks-audit-trail",
+      "title": "2-Week Notice Breaks Your Audit Trail",
+      "url": "https://aichieve.net/model-retirement-breaks-audit-trail/",
+      "path": "/model-retirement-breaks-audit-trail/",
+      "sites_live": {
+        "aichieve.net": "/model-retirement-breaks-audit-trail/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "The shortest artificial intelligence (AI) model retirement notice on the market is 2 weeks, and it breaks your audit trail.",
+      "modified": "2026-10-19T18:11:35",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4183,6 +4298,48 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1038,
+      "slug": "four-warehouses-halve-stock",
+      "title": "4 Warehouses Halve Stock. Yours Won&#8217;t",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T19:38:30",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1035,
+      "slug": "model-retirement-breaks-audit-trail",
+      "title": "2-Week Notice Breaks Your Audit Trail",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T18:11:35",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1032,
+      "slug": "answer-field-first-costs-38-points",
+      "title": "Answer Field First Costs 38.15 Points",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T17:44:27",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -5402,20 +5559,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 392,
-      "slug": "reshoring-moved-the-tariff-upstream",
-      "title": "Reshoring Didn&#8217;t Kill Tariff Risk \u2014 It Moved Upstream Into Packaging",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:48",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "aichieve.net",
       "kind": "article",
       "id": 1009,
@@ -5552,34 +5695,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-08T22:27:58",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 394,
-      "slug": "disney-hulu-fourth-hike-subscription-creep",
-      "title": "Disney+ and Hulu Just Raised Prices 13% \u2014 Right After Doubling Profits",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-02T01:58:29",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 396,
-      "slug": "why-70-of-startup-options-go-unexercised",
-      "title": "Why 70% of Startup Options Go Unexercised",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-02T21:50:02",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

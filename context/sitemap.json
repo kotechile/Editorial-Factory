@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T19:38:31Z",
+  "updated_at": "2026-10-19T19:44:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2233,7 +2233,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/20-percent-of-your-ac-never-arrives/"
     },
     {
       "slug": "2026-10-19_3-percent-cap-never-covers-your-addition",
@@ -2251,7 +2252,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/3-percent-cap-never-covers-your-addition/"
     },
     {
       "slug": "2026-10-19_answer-field-first-costs-38-points",
@@ -2269,7 +2271,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/answer-field-first-costs-38-points/"
     },
     {
       "slug": "2026-10-19_four-warehouses-halve-stock",
@@ -2287,7 +2290,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/four-warehouses-halve-stock/"
     },
     {
       "slug": "2026-10-19_inventory-cut-bets-against-prices",
@@ -2324,7 +2328,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/model-retirement-breaks-audit-trail/"
     },
     {
       "slug": "2026-10-19_your-75000-btu-tank-venting-trap",

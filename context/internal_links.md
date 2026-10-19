@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-19T14:16:33+00:00
+# Internal-link candidates — 2026-10-19T19:44:05+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -52,10 +52,12 @@ Category hubs this front serves: —
 - [Total Compensation & Equity Visualizer (tool)](https://giniloh.com/calculators/total-comp/) — —
 - [W-2 vs. 1099 / S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 
-## wellroost.com — 28 live article(s), 8 other target(s)
+## wellroost.com — 30 live article(s), 8 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, lifestyle, smart-home-security, tools-equipment
 
+- [20% of Your AC Never Arrives](https://wellroost.com/20-percent-of-your-ac-never-arrives/) — Energy & Efficiency
+- [3% Cap Never Covers Your Addition](https://wellroost.com/3-percent-cap-never-covers-your-addition/) — Energy & Efficiency
 - [A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying ‘Cloud.](https://wellroost.com/cloud-update-bricked-the-fridge-local-first/) — Smart Home & Security
 - [A Smart Sprinkler Pays Back at Your Top Water Tier, Not the Spec Sheet](https://wellroost.com/smart-irrigation-payback-water-tier/) — Energy & Efficiency
 - [Benefits of Living in the City: 2026 Pros and Cons](https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/) — Lifestyle
@@ -93,14 +95,16 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, lifesty
 - [Smart Home & Security (category)](https://wellroost.com/categories/smart-home-security/) — Smart Home & Security
 - [Tools & Equipment (category)](https://wellroost.com/categories/tools-equipment/) — Tools & Equipment
 
-## aichieve.net — 100 live article(s), 7 other target(s)
+## aichieve.net — 103 live article(s), 7 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
 - [$62M Says You Never Buy Robots](https://aichieve.net/owned-shuttles-or-rented-robots/) — Supply Chain & Operations
 - [$915M Illusion: Your AI Judge Moves](https://aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/) — AI Stack & Tool TCO
 - [1.016M Non-GPUs: Your Chip Stopped Deciding](https://aichieve.net/your-chip-stopped-deciding/) — Major Purchases & Assets
+- [2-Week Notice Breaks Your Audit Trail](https://aichieve.net/model-retirement-breaks-audit-trail/) — Mental Models & Strategy
 - [270 Attacks: Your Green Tests Are Blind](https://aichieve.net/one-skill-too-many-green-test/) — Autonomous & Agentic Workflows
+- [4 Warehouses Halve Stock. Yours Won't](https://aichieve.net/four-warehouses-halve-stock/) — Supply Chain & Operations
 - [49.9% On Time: Shippers Stuck in the Gap](https://aichieve.net/shippers-stuck-in-the-gap/) — Supply Chain & Operations
 - [60% Air Deals: Your Stock Math Breaks](https://aichieve.net/air-freight-wont-price-a-year/) — Supply Chain & Operations
 - [63.6% OTIF: Your Hidden Quantity Gap](https://aichieve.net/your-hidden-quantity-gap/) — Supply Chain & Operations
@@ -115,6 +119,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
 - [Amazon Builds the Robots; Walmart Builds for What They Can't Lift](https://aichieve.net/automation-payback-splits-by-sku-geometry/) — Supply Chain & Operations
 - [An Agent's Logs Aren't Evidence: What to Capture, and How Long to Keep It](https://aichieve.net/agent-audit-trail-not-evidence/) — Mental Models & Strategy
+- [Answer Field First Costs 38.15 Points](https://aichieve.net/answer-field-first-costs-38-points/) — Autonomous & Agentic Workflows
 - [Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure](https://aichieve.net/azure-control-plane-single-point-of-failure/) — Mental Models & Strategy
 - [CFOs Are Pricing In the Tariff Cliff](https://aichieve.net/tariff-cliff-already-priced-in/) — Supply Chain & Operations
 - [CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor’s Spreadsheet:](https://aichieve.net/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/) — Business Automation & Operations
@@ -207,6 +212,9 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1038 `four-warehouses-halve-stock` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1035 `model-retirement-breaks-audit-trail` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1032 `answer-field-first-costs-38-points` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1029 `your-hidden-quantity-gap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1026 `inventory-cut-bets-against-prices` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1022 `your-agent-obeyed-the-data-left` — published in the CMS but absent from the frontend sitemap
@@ -294,7 +302,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #395 `zet-scale-ev-truck-residual-value-risk` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #420 `token-prices-just-halved-the-cfo-still-cant-read-the-bill` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #462 `same-day-race-undoes-route-optimization` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #392 `reshoring-moved-the-tariff-upstream` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1009 `your-disks-35-dead-by-year-six` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1000 `pi-5-price-jump-older-kit-wins` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #994 `your-raise-dies-at-51-5-hours` — published in the CMS but absent from the frontend sitemap
@@ -305,5 +312,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #777 `staggered-lockup-six-selling-decisions` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #782 `post-termination-option-clock-tax` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #602 `split-year-two-clock-seam` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #394 `disney-hulu-fourth-hike-subscription-creep` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #396 `why-70-of-startup-options-go-unexercised` — published in the CMS but absent from the frontend sitemap
