@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T19:44:05Z",
+  "updated_at": "2026-10-19T20:10:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2330,6 +2330,24 @@
       "date": "2026-10-19",
       "public": true,
       "url": "https://aichieve.net/model-retirement-breaks-audit-trail/"
+    },
+    {
+      "slug": "2026-10-19_your-30-exception-bill-is-wrong",
+      "title": "Your $30 Exception Bill Is Wrong",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-19",
+      "public": false
     },
     {
       "slug": "2026-10-19_your-75000-btu-tank-venting-trap",

@@ -250,3 +250,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-19 | `3-percent-cap-never-covers-your-addition` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/3-percent-cap-never-covers-your-addition/featured.jpg` |
 | 2026-10-19 | `20-percent-of-your-ac-never-arrives` | home_infrastructure_lifecycle_tco | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/20-percent-of-your-ac-never-arrives/featured.png` |
 | 2026-10-19 | `four-warehouses-halve-stock` | meio_working_capital_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/four-warehouses-halve-stock/featured.jpg` |
+| 2026-10-19 | `your-30-exception-bill-is-wrong` | sales_order_service_level_otif | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-30-exception-bill-is-wrong/featured.jpg` |

@@ -1,0 +1,88 @@
+{
+  "slug": "your-30-exception-bill-is-wrong",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An annotated time-and-wage ledger lying on top of a vendor invoice on a dark wooden desk.",
+      "caption": "The true cost of an order exception lies in the internal handle time, not a flat vendor fee.",
+      "title": "Order Exception Cost Ledger Flatlay",
+      "bytes": 443123,
+      "sha256": "sha256:4f3f1f498ae7af420d81ec1f4bbbb7f5"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Document still life, overhead flat-lay photograph of heavy matte paper documents on a textured dark wood desk surface. Top-down 90-degree view, 50mm lens with shallow depth of field. Even diffused daylight casting soft shadows. An annotated time-and-wage ledger showing deliberate physical handling sits off-centre, partially covering a discarded, muted vendor invoice. The paper tones are subtle, muted off-whites and greys. Asymmetric framing with generous editorial negative space. No legible text.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, signatures",
+  "rationale": "The story revolves around a financial calculation, a specific cost breakdown, and the contrast between a vendor's claimed invoice and internal wage reality. A document flatlay perfectly captures the forensic accounting and analytical nature of this revelation.",
+  "cue": "Your $30 exception bill is wrong",
+  "subject": "an annotated time-and-wage ledger and a discarded vendor invoice",
+  "core_thesis": "The true cost of an order exception is driven by the internal handle time and wage of the service rep, not an arbitrary flat fee quoted by a vendor.",
+  "core_conflict": "Arbitrary vendor flat-fee claims vs the actual internal labor cost dictated by handle time and wages.",
+  "composition": "asymmetric top-down 90-degree framing with the main ledger off-centre",
+  "alt_text": "The $30 Exception Myth. An annotated time-and-wage ledger lying on top of a vendor invoice on a dark wooden desk.",
+  "caption": "The $30 Exception Myth: How bad vendor math masks the real cost of broken orders.",
+  "title": "The $30 Exception Myth",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-30-exception-bill-is-wrong/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 267579,
+  "sha256": "sha256:9884c9d3808ced95eade9f310816ebaf4c71c26ff4ef54940e01b5732544d907",
+  "source_hash": "sha256:37328d7f2fb9dfdcebb7a54cc096914d",
+  "source_chars": 5070,
+  "task_id": "ecf1b0654ec8470936418065e2d0101f",
+  "credits": 5.0,
+  "cost_ms": 55,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ecf1b0654ec8470936418065e2d0101f_1792440620133.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Document still life, overhead flat-lay photograph of heavy matte paper documents on a textured dark wood desk surface. Top-down 90-degree view, 50mm lens with shallow depth of field. Even diffused daylight casting soft shadows. An annotated time-and-wage ledger showing deliberate physical handling sits off-centre, partially covering a discarded, muted vendor invoice. The paper tones are subtle, muted off-whites and greys. Asymmetric framing with generous editorial negative space. No legible text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-19T20:10:22+00:00",
+  "overlay": {
+    "kicker": "ORDER OPERATIONS // EXCEPTION MATH",
+    "title": "THE $30 EXCEPTION MYTH",
+    "hook": "How bad vendor math masks the real cost of broken orders",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.87,
+    "target": 5.5,
+    "clutter": 0.29,
+    "region_rgb": [
+      58,
+      51,
+      47
+    ],
+    "binding_rgb": [
+      65,
+      56,
+      49
+    ],
+    "title_lines": [
+      "THE $30",
+      "EXCEPTION MYTH"
+    ],
+    "subject": 0.453,
+    "ink_subject": 0.365,
+    "spike": 0.806,
+    "generated_at": "2026-10-19T20:10:22+00:00"
+  }
+}
