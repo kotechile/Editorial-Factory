@@ -255,11 +255,15 @@ piece is public.
 
 Review the article:
 
-- **In the dashboard:** the article library, or Profiles → `editor` → its chat (or the Sessions page), or
+- **In the CMS (the normal place):** the WordPress draft `scripts/wp_draft.py` created for the
+  article's vertical. The article is pushed there automatically, so check it where it will be read.
+- **In the bot:** Profiles → `editor` → its chat (or the Sessions page).
 - **On disk:** `published/YYYY-MM-DD_<slug>.md` (source: `context/drafts/<slug>_final.md`).
 
-  That is the **internal** review copy behind the dashboard login — PressFlow is not a reader
-  surface. The article becomes public when its CMS draft is published there;
+  PressFlow no longer lists or previews articles (owner, 2026-10-18): a finished article goes to the
+  CMS and the reader fronts, and a second copy in the dashboard had no destination. The
+  auth-gated reader page at `/published/<file>.md` still exists for spot checks; PressFlow is not a
+  public reader surface. The article becomes public when its CMS post is published;
   `context/sitemap.json` records each article's real reader URL, and `published_log.md`'s Reader URL
   column is filled in with it at that point.
 
@@ -290,9 +294,11 @@ end-to-end, so you never have to guess:
 - the draft/published frontmatter carries `synthesis: true` plus the `sources:` anchors, and
   `scripts/verify.sh` §8 fails the build if a Synthesis brief never reaches its artifact — so the
   marker cannot silently go missing;
-- on the dashboard's own article page (behind the login), the manifest
+- the auth-gated reader page (`https://pressflow.aichieve.net/published/<file>.md`) shows a
+  **Synthesis** badge naming the anchor count, and the manifest
   `https://pressflow.aichieve.net/api/articles.json` reports `synthesis`, `sources` and
-  `sourceCount` per article, and the page shows a **Synthesis** badge naming the anchor count.
+  `sourceCount` per article. Neither is linked from the dashboard any more — the dashboard's job is
+  the registry, the decisions and the calendar.
   Every article cites multiple sources, so read the badge/flag — not the source count — as the
   fusion marker.
 
@@ -384,11 +390,14 @@ python3 scripts/gsc_feedback.py --export
 
 ## 5. Adding a vertical (config-as-data)
 
-Verticals can be managed interactively via the **PressFlow Web UI (Settings)**, via the **CLI tool**, or synced directly with **Supabase**.
+Verticals can be managed interactively via the **PressFlow Web UI**, via the **CLI tool**, or synced directly with **Supabase**.
 
 ### Option A: Interactively via PressFlow Web UI (Recommended)
-1. Open the PressFlow web dashboard (`http://<vps-or-domain>:3000` or `http://localhost:3000`).
-2. Click **⚙️ Verticals & Radar Settings** &rarr; **+ Add Vertical** (or click ✏️ to edit).
+1. Open the PressFlow web dashboard (`http://<vps-or-domain>:3000` or `http://localhost:3000`). It
+   opens on **⚙️ Verticals** — the registry is the dashboard's home tab.
+2. **+ New Vertical** to add one, ✏️ to edit. The same tab owns the full Supabase round-trip:
+   **↥ Push to Supabase** (registry → `editorial_verticals`), **↧ Pull from Supabase**
+   (Supabase → registry), and the sync-status strip above the cards says which side you are on.
 3. Select your news cadence preset, target reader persona, sources, and angles. Switch the
    **📰 News** / **🌱 Evergreen** pipelines on or off, and if evergreen is on, give it a cadence in
    the 17:30–20:00 UTC band that no other job uses (`scripts/sync_crons.py --check` fails on a

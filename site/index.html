@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PressFlow — Editorial Intelligence &amp; Publishing Engine</title>
-  <meta name="description" content="Editorial Intelligence &amp; Autonomous Publishing Engine: 30-day radar verticals, target personas, GSC opportunity radar, and multi-channel suite.">
+  <meta name="description" content="PressFlow — the editorial operations dashboard: vertical registry with full Supabase sync, the owner decision queue, the forward publishing calendar, and the app promotion to-do.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -528,17 +528,6 @@
       color: #EDEDEF;
     }
 
-    /* Clean Dot-Separated Metadata String */
-    .meta-inline-strip {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
-    }
-
     .meta-dot {
       color: var(--text-dim);
       user-select: none;
@@ -566,18 +555,6 @@
       padding: 1.25rem 1.5rem;
       box-shadow: var(--shadow-card);
       margin-bottom: 1.25rem;
-    }
-
-    /* SEO Architecture Grid */
-    .seo-dual-grid {
-      display: grid;
-      grid-template-columns: 1.25fr 1fr;
-      gap: 1.25rem;
-      margin-bottom: 1.25rem;
-    }
-
-    @media (max-width: 880px) {
-      .seo-dual-grid { grid-template-columns: 1fr; }
     }
 
     .metric-stack {
@@ -689,116 +666,12 @@
       border-color: rgba(255, 255, 255, 0.06);
     }
 
-    /* Article Rendered Prose (Comfortable Reading Density) */
-    .article-prose-container {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 2.25rem 2.5rem;
-      box-shadow: var(--shadow-card);
-      margin-bottom: 1.5rem;
-    }
-
-    .article-rendered-body {
-      max-width: 820px;
-      margin: 0 auto;
-      font-family: var(--font-sans);
-      font-size: 15px;
-      line-height: 1.75;
-      color: var(--text-secondary);
-    }
-
-    .article-rendered-body h1, .article-rendered-body h2, .article-rendered-body h3 {
-      color: var(--text);
-      line-height: 1.3;
-      margin: 2rem 0 0.85rem;
-      letter-spacing: -0.02em;
-    }
-
-    .article-rendered-body h1 { font-size: 1.75rem; font-weight: 800; }
-    .article-rendered-body h2 { font-size: 1.3rem; font-weight: 700; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem; }
-    .article-rendered-body h3 { font-size: 1.1rem; font-weight: 600; }
-
-    .article-rendered-body p { margin-bottom: 1.25rem; line-height: 1.75; }
-    .article-rendered-body strong { color: var(--text); font-weight: 600; }
-
-    .article-rendered-body blockquote {
-      border-left: 3px solid var(--border-strong);
-      background: var(--bg);
-      padding: 0.85rem 1.25rem;
-      margin: 1.5rem 0;
-      border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
-      color: var(--text-secondary);
-      font-style: normal;
-    }
-
-    .article-rendered-body pre {
-      background: #18181B;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-sm);
-      padding: 1rem 1.25rem;
-      overflow-x: auto;
-      margin: 1.25rem 0;
-      font-family: var(--font-mono);
-      font-size: 12.5px;
-      color: #E4E4E7;
-    }
-
-    .article-rendered-body code {
-      font-family: var(--font-mono);
-      font-size: 0.9em;
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
-      padding: 0.15em 0.35em;
-      border-radius: var(--radius-xs);
-      color: var(--text);
-    }
-
-    .article-rendered-body pre code { background: transparent; border: none; padding: 0; color: inherit; }
-
-    [data-theme="dark"] .article-rendered-body pre {
-      background: #0E1015;
-      border-color: rgba(255, 255, 255, 0.08);
-      color: #D4D4D8;
-    }
-    [data-theme="dark"] .article-rendered-body code {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.08);
-      color: #EDEDEF;
-    }
-    [data-theme="dark"] .article-rendered-body blockquote {
-      border-left: 3px solid #3F3F46;
-      background: rgba(255, 255, 255, 0.03);
-      color: #D4D4D8;
-    }
-
     .cite-pill-badge {
       color: var(--blue-text);
       font-weight: 600;
       font-size: 0.82em;
       vertical-align: super;
       font-family: var(--font-mono);
-    }
-
-    /* Markdown Editor */
-    .editor-box {
-      width: 100%;
-      min-height: 520px;
-      padding: 1.15rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      color: var(--text);
-      font-family: var(--font-mono);
-      font-size: 13px;
-      line-height: 1.6;
-      resize: vertical;
-      outline: none;
-      transition: var(--transition);
-    }
-    .editor-box:focus {
-      border-color: var(--border-focus);
-      box-shadow: 0 0 0 1px var(--border-focus);
     }
 
     /* Verticals & Personas Uniform Cards (Notion / Linear Grid) */
@@ -894,35 +767,6 @@
       margin-top: 0.5rem;
       padding-top: 0.65rem;
       border-top: 1px solid var(--border-subtle);
-    }
-
-    /* Multi-Channel Distribution Suite */
-    .suite-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-    }
-    @media (max-width: 900px) { .suite-grid { grid-template-columns: 1fr; } }
-
-    .channel-box-inner {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 1rem;
-      font-size: 12.5px;
-      line-height: 1.6;
-      color: var(--text);
-      white-space: pre-wrap;
-      font-family: var(--font-sans);
-      max-height: 340px;
-      overflow-y: auto;
-      margin: 0.85rem 0 1rem;
-    }
-
-    [data-theme="dark"] .channel-box-inner {
-      background: #0E1015;
-      border-color: rgba(255, 255, 255, 0.08);
-      color: #D4D4D8;
     }
 
     /* Clean Tables */
@@ -1054,6 +898,26 @@
     [data-theme="dark"] .form-textarea,
     [data-theme="dark"] .header-search-input,
     [data-theme="dark"] .tag-input-box,
+    /* Long-form text field — still used by the Growth OS editor in the SEO tab. */
+    .editor-box {
+      width: 100%;
+      min-height: 520px;
+      padding: 1.15rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.6;
+      resize: vertical;
+      outline: none;
+      transition: var(--transition);
+    }
+    .editor-box:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 1px var(--border-focus);
+    }
     [data-theme="dark"] .editor-box {
       background: #0E1015;
       border-color: rgba(255, 255, 255, 0.08);
@@ -1154,42 +1018,8 @@
       border-top: 1px solid var(--border);
     }
 
-    /* Library Interactive Row Item (Linear Style) */
-    .library-item-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      padding: 0.75rem 0.95rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-      transition: var(--transition);
-    }
 
-    .library-item-row:hover {
-      background: var(--bg);
-      border-color: var(--border-strong);
-    }
 
-    [data-theme="dark"] .library-item-row {
-      background: #15171C;
-      border-color: rgba(255, 255, 255, 0.08);
-    }
-    [data-theme="dark"] .library-item-row:hover {
-      background: #1A1D23;
-      border-color: rgba(255, 255, 255, 0.12);
-    }
-
-    .library-item-row .row-delete-btn {
-      opacity: 0;
-      transition: opacity 0.15s ease;
-    }
-    .library-item-row:hover .row-delete-btn {
-      opacity: 1;
-    }
 
     /* Toast */
     .toast {
@@ -1220,9 +1050,67 @@
       color: #18181B;
     }
 
+    /* ── Decisions & forward calendar (2026-10-18) ─────────────────────────
+       One row per decision, so a queue of asks reads as a list rather than a paragraph: the text
+       sits left, the action right, and on a narrow screen the action wraps underneath. */
+    .pf-decision {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 230px;
+      gap: 1rem;
+      padding: 0.95rem 1.15rem;
+      border-bottom: 1px solid var(--border-subtle);
+      align-items: start;
+    }
+    .pf-decision:last-child { border-bottom: none; }
+    .pf-decision:hover { background: var(--bg-card-hover); }
+    @media (max-width: 760px) { .pf-decision { grid-template-columns: 1fr; } }
+    .pf-decision-title { font-weight: 650; font-size: 13.5px; color: var(--text); letter-spacing: -0.01em; }
+    .pf-decision-body { font-size: 12.5px; color: var(--text-secondary); line-height: 1.55; margin-top: 0.2rem; }
+    .pf-decision-impact { font-size: 11.5px; color: var(--text-muted); margin-top: 0.3rem; }
+    .pf-decision-meta { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.35rem; }
+    .pf-decision-action { display: flex; flex-direction: column; gap: 0.4rem; align-items: stretch; }
+    .pf-copy-reply {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-align: left;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.45rem 0.6rem;
+      color: var(--text-secondary);
+      cursor: pointer;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .pf-copy-reply:hover { background: var(--bg-hover); border-color: var(--border-strong); color: var(--text); }
+    .pf-group-title { display: flex; align-items: baseline; gap: 0.5rem; margin: 1.5rem 0 0.6rem; }
+    .pf-group-title h3 { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: 0; }
+    .pf-group-count { font-size: 11.5px; color: var(--text-dim); }
+    .pf-list { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-card); }
+    .pf-cal-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+    @media (max-width: 980px) { .pf-cal-grid { grid-template-columns: 1fr; } }
+    .pf-day { border-bottom: 1px solid var(--border-subtle); }
+    .pf-day:last-child { border-bottom: none; }
+    .pf-day-head { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--bg-subtle); }
+    .pf-day-name { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text); }
+    .pf-day-count { font-size: 11px; color: var(--text-dim); margin-left: auto; }
+    .pf-run { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.4rem 1rem; font-size: 12.5px; }
+    .pf-run + .pf-run { border-top: 1px dashed var(--border-subtle); }
+    .pf-run-time { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-muted); width: 46px; flex: none; }
+    .pf-run-label { color: var(--text); min-width: 0; }
+    .pf-run-domain { font-size: 11px; color: var(--text-dim); margin-left: auto; flex: none; }
+    .pf-run-mode { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; padding: 1px 5px; border-radius: var(--radius-xs); flex: none; }
+    .pf-mode-news { background: var(--blue-soft); color: var(--blue-text); border: 1px solid var(--blue-border); }
+    .pf-mode-evergreen { background: var(--emerald-soft); color: var(--emerald-text); border: 1px solid var(--emerald-border); }
+    .pf-hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.35rem; }
+    .pf-hero-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-md); padding: 1rem 1.15rem; box-shadow: var(--shadow-card); }
+    .pf-hero-when { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+    .pf-hero-what { font-size: 15px; font-weight: 650; color: var(--text); margin-top: 0.2rem; letter-spacing: -0.01em; }
+    .pf-hero-sub { font-size: 11.5px; color: var(--text-muted); margin-top: 0.2rem; }
+    .pf-empty { padding: 2rem 1rem; text-align: center; font-size: 12px; color: var(--text-dim); }
+
     .tab-pane { display: none; }
-    .tab-pane.active { display: block; }
-  </style>
+    .tab-pane.active { display: block; }</style>
 </head>
 <body>
 
@@ -1240,26 +1128,14 @@
       </span>
     </div>
 
-    <!-- Center Search Input -->
+    <!-- Center Search Input: filters the verticals registry, the only long list left here -->
     <div class="header-search">
       <span class="header-search-icon">🔍</span>
-      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search articles, keywords, or verticals (⌘K)...">
+      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search verticals or personas (⌘K)..." autocomplete="off">
     </div>
 
     <!-- Right Header Actions -->
     <div class="header-actions">
-      <button class="btn btn-primary" id="btnGenerateSuite">
-        ⚡ Generate Suite
-      </button>
-
-      <button class="btn btn-secondary" id="btnOpenLibrary">
-        📖 Library (<span id="libraryCount">0</span>)
-      </button>
-
-      <button class="btn btn-secondary" id="btnLoadSample">
-        Load Sample
-      </button>
-
       <button class="icon-btn" id="btnToggleTheme" title="Toggle Light / Dark Theme">
         ☀️
       </button>
@@ -1271,23 +1147,23 @@
 <nav class="nav-tabs-bar">
   <div class="nav-tabs-inner">
     <div class="nav-tabs-list">
-      <button class="nav-tab-btn active" data-tab="tab-workspace" id="tabWorkspaceBtn">
-        ✍️ Workspace
+      <button class="nav-tab-btn active" data-tab="tab-verticals" id="tabVerticalsBtn">
+        ⚙️ Verticals <span class="tab-counter" id="verticalsCount">0</span>
       </button>
-      <button class="nav-tab-btn" data-tab="tab-seo" id="tabSeoBtn">
-        ⚡ SEO Machine <span class="tab-counter" id="seoOpportunitiesCount">12</span>
+      <button class="nav-tab-btn" data-tab="tab-approvals" id="tabApprovalsBtn">
+        ✅ Approvals <span class="tab-counter" id="approvalsCount">0</span>
       </button>
-      <button class="nav-tab-btn" data-tab="tab-suite" id="tabSuiteBtn">
-        🗂️ Multi-Channel
+      <button class="nav-tab-btn" data-tab="tab-calendar" id="tabCalendarBtn">
+        📅 What's Next
       </button>
       <button class="nav-tab-btn" data-tab="tab-distribution" id="tabDistributionBtn">
         📣 App Promotion To-Do <span class="tab-counter" id="distributionCount">0</span>
       </button>
-      <button class="nav-tab-btn" data-tab="tab-verticals" id="tabVerticalsBtn">
-        ⚙️ Verticals <span class="tab-counter" id="verticalsCount">8</span>
+      <button class="nav-tab-btn" data-tab="tab-seo" id="tabSeoBtn">
+        ⚡ SEO Machine <span class="tab-counter" id="seoOpportunitiesCount">0</span>
       </button>
       <button class="nav-tab-btn" data-tab="tab-personas" id="tabPersonasBtn">
-        👥 Personas <span class="tab-counter" id="personasCount">8</span>
+        👥 Personas <span class="tab-counter" id="personasCount">0</span>
       </button>
       <button class="nav-tab-btn" data-tab="tab-fleet" id="tabFleetBtn">
         🛰️ Fleet &amp; Crons
@@ -1296,7 +1172,7 @@
 
     <div style="display: flex; gap: 0.35rem; align-items: center;">
       <button class="btn btn-ghost btn-sm" id="quickFilterBtn" onclick="document.getElementById('tabVerticalsBtn').click()">
-        Verticals (8) ▾
+        Verticals (<span id="quickVerticalCount">0</span>) ▾
       </button>
       <button class="btn btn-ghost btn-sm" onclick="document.getElementById('btnRefreshGsc').click()">
         Refresh Radar ↺
@@ -1306,133 +1182,6 @@
 </nav>
 
 <div class="container">
-
-  <!-- TAB 1: Source Article Workspace -->
-  <div class="tab-pane active" id="tab-workspace">
-    <div class="page-header-row">
-      <div>
-        <span class="section-eyebrow">EDITORIAL PRODUCTION · 30-DAY FRESHNESS</span>
-        <h1 class="page-title" id="currentArticleTitle">
-          Nvidia says its GPUs aren't sold out. Its CFO's $279 billion memory bet says otherwise.
-        </h1>
-      </div>
-
-      <!-- Action Bar: Sleek Segmented Control & Ghost Delete -->
-      <div style="display: flex; gap: 0.65rem; align-items: center;">
-        <div class="segmented-control">
-          <button class="segment-btn active" id="viewRenderedBtn">Preview</button>
-          <button class="segment-btn" id="viewEditBtn">Edit Markdown</button>
-        </div>
-        <button class="btn btn-danger-ghost btn-sm" id="btnDeleteCurrentArticle" title="Delete current draft">
-          🗑️ Delete
-        </button>
-      </div>
-    </div>
-
-    <!-- Clean Dot-Separated Metadata String -->
-    <div class="meta-inline-strip">
-      <span><strong id="currentWordCount" style="color: var(--text);">1,752</strong> words</span>
-      <span class="meta-dot">·</span>
-      <span>~<span id="currentReadTime">8</span> min read</span>
-      <span class="meta-dot">·</span>
-      <span class="meta-tag">#GPUHardware</span>
-      <span class="meta-dot">·</span>
-      <span class="meta-tag">#HBM3e</span>
-      <span class="meta-dot">·</span>
-      <span class="meta-tag">#AIEngineering</span>
-      <span class="meta-dot">·</span>
-      <a href="https://pressflow.aichieve.net/published/2026-09-09_nvidia-279b-memory-bottleneck.md" id="currentArticleLink" class="meta-link" target="_blank">https://pressflow.aichieve.net/published/2026-09-09_nvidia-279b-memory-bottleneck.md</a>
-    </div>
-
-    <!-- Dual SEO Target Architecture Cards (Quiet Linear Styling) -->
-    <div class="seo-dual-grid" id="articleKeywordsCard">
-      <!-- Left Card: Search Query & Clusters -->
-      <div class="editorial-card">
-        <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">Primary &amp; Secondary SEO Architecture</span>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
-          <div>
-            <div class="metric-label">TARGET SEARCH QUERY</div>
-            <div style="font-size: 1.15rem; font-weight: 700; color: var(--text);" id="kwPrimaryText">GPU memory bandwidth</div>
-          </div>
-          <button class="btn btn-secondary btn-sm" id="btnCopyPrimaryKw">📋 Copy Query</button>
-        </div>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem;">
-          <span class="tag-quiet" id="kwIntentBadge">
-            Intent: <strong id="kwIntentVal" style="margin-left: 2px;">INFORMATIONAL</strong>
-          </span>
-          <span class="tag-quiet" id="kwPersonaBadge">
-            Persona: <strong id="kwPersonaVal" style="margin-left: 2px;">infra_engineer</strong>
-          </span>
-          <span class="tag-quiet tag-emerald">
-            ✓ Calibrated
-          </span>
-        </div>
-
-        <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-          <span class="metric-label" style="margin-bottom: 0.35rem; display: block;">Secondary Semantic Clusters</span>
-          <div id="kwSecondaryChips" style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-            <span class="tag-quiet">HBM memory bandwidth (3×)</span>
-            <span class="tag-quiet">AI inference bottleneck (2×)</span>
-            <span class="tag-quiet">Nvidia H100 H200 supply (1×)</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Card: Metrics & Editorial Readiness (Stacked Micro-labels) -->
-      <div class="editorial-card" style="display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-          <span class="metric-label" style="margin-bottom: 0.85rem; display: block;">Search Demand &amp; Difficulty</span>
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-            <div class="metric-stack">
-              <span class="metric-label">ESTIMATED VOLUME</span>
-              <span class="metric-value-lg" id="kwVolVal">3,100 / mo</span>
-            </div>
-            <div class="metric-stack">
-              <span class="metric-label">KEYWORD DIFFICULTY</span>
-              <span class="metric-value-lg" style="color: var(--emerald-text);" id="kwKdVal">33/100</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-bottom-row">
-          <div style="font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 0.4rem;">
-            <span class="status-dot"></span>
-            <span>Editorial Readiness: <strong style="color: var(--text);">4.9/5</strong></span>
-          </div>
-          <span class="tag-quiet tag-emerald">🟢 Frontier Validated</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Article Content Preview Container -->
-    <div class="article-prose-container">
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem; margin-bottom: 1.5rem;">
-        <span class="section-eyebrow" style="margin-bottom:0;">VERIFIED ARTICLE BODY (MARKDOWN)</span>
-        <span class="tag-quiet">Model: Claude 3.7 / Sonnet 5</span>
-      </div>
-
-      <!-- Rendered View -->
-      <div id="renderedArticleContainer" class="article-rendered-body"></div>
-
-      <!-- Markdown Editor View -->
-      <div id="editorArticleContainer" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.4rem;">
-          <div style="display: flex; gap: 0.25rem; flex-wrap: wrap;">
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- lead -->\n')">+ Lead</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tension -->\n')">+ Tension</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tactical-insight -->\n')">+ Tactical</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- nuanced-takeaway -->\n')">+ Takeaway</button>
-            <button class="btn btn-secondary btn-sm" onclick="insertMarker('<!-- tldr -->\n- ')">+ TL;DR</button>
-          </div>
-          <button class="btn btn-primary btn-sm" id="btnSaveDraft">💾 Save Changes</button>
-        </div>
-        <textarea class="editor-box" id="markdownEditor" placeholder="Enter article markdown..."></textarea>
-      </div>
-    </div>
-  </div>
 
   <!-- TAB 2: SEO Content Machine & Growth OS -->
   <div class="tab-pane" id="tab-seo">
@@ -1480,7 +1229,6 @@
       <button class="btn btn-ghost btn-sm" data-sub="sub-dataforseo" id="btnSubDataForSEO">🔍 DataForSEO Explorer</button>
       <button class="btn btn-ghost btn-sm" data-sub="sub-growth-os" id="btnSubGrowthOs">🧠 Growth OS Knowledge</button>
       <button class="btn btn-ghost btn-sm" data-sub="sub-cannibalization" id="btnSubCannibalization">🛡️ Cannibalization Shield</button>
-      <button class="btn btn-ghost btn-sm" data-sub="sub-serp-preview" id="btnSubSerpPreview">🏷️ SERP &amp; Schema</button>
       <button class="btn btn-ghost btn-sm" data-sub="sub-performance" id="btnSubPerformance">📊 Ranking Loop</button>
     </div>
 
@@ -1625,41 +1373,6 @@
       </div>
     </div>
 
-    <!-- SUB-PANE 5: SERP Preview & Schema -->
-    <div class="seo-subpane" id="sub-serp-preview" style="display: none;">
-      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.25rem;">
-        <div class="editorial-card">
-          <span class="metric-label" style="margin-bottom: 0.75rem; display: block;">🌐 Google Search Snippet Preview</span>
-          <div style="background: #ffffff; border: 1px solid #dfe1e5; border-radius: 8px; padding: 1.15rem; font-family: Arial, sans-serif; margin-bottom: 1.25rem;">
-            <div style="font-size: 12px; color: #202124; margin-bottom: 0.25rem;">
-              https://editorialfactory.io/articles/<span id="previewSerpUrl">mcp-server-implementation-python</span>
-            </div>
-            <div style="color: #1a0dab; font-size: 17px; line-height: 1.3; font-weight: 400; margin-bottom: 0.35rem;" id="previewSerpTitle">
-              Mcp Server Implementation Python: Production Architecture
-            </div>
-            <div style="color: #4d5156; font-size: 13px; line-height: 1.5;" id="previewSerpDesc">
-              A practitioner breakdown of mcp server implementation python. Discover real production benchmarks.
-            </div>
-          </div>
-
-          <span class="metric-label" style="margin-bottom: 0.5rem; display: block;">🔗 Suggested Internal Linking Anchors</span>
-          <div id="previewInternalLinksBox" style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem;">
-            <ul style="padding-left: 1.2rem; font-size: 12px;" id="internalLinksUl">
-              <li><code>[anthropic multi agent framework]</code> &rarr; <code>/published/2026-09-07_anthropic-multiagent-turf-war.md</code></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="editorial-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.65rem;">
-            <span class="metric-label">📄 JSON-LD Schema (`@graph`)</span>
-            <button class="btn btn-secondary btn-sm" id="btnCopySchema">📋 Copy Schema</button>
-          </div>
-          <pre class="article-rendered-body pre" id="schemaViewerPre" style="max-height: 380px; font-size: 11.5px; overflow-y: auto;">{}</pre>
-        </div>
-      </div>
-    </div>
-
     <!-- SUB-PANE 6: Performance Loop -->
     <div class="seo-subpane" id="sub-performance" style="display: none;">
       <div class="table-wrapper">
@@ -1683,62 +1396,22 @@
     </div>
   </div>
 
-  <!-- TAB 3: Multi-Channel Suite (Linear Style Matrix) -->
-  <div class="tab-pane" id="tab-suite">
+  <!-- TAB 1: Verticals & Coverage Engines (Uniform Cards) -->
+  <div class="tab-pane active" id="tab-verticals">
     <div class="page-header-row">
       <div>
-        <span class="section-eyebrow">OMNICHANNEL DISTRIBUTION</span>
-        <h2 class="page-title">Multi-Channel Distribution Suite</h2>
-      </div>
-      <button class="btn btn-primary btn-sm" onclick="generateSuite()">⚡ Regenerate All Formats</button>
-    </div>
-
-    <div class="suite-grid">
-      <!-- 2. Twitter / X Card -->
-      <div class="editorial-card">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border-subtle);">
-          <div>
-            <div style="font-weight: 600; font-size: 13.5px; color: var(--text);">📱 X / Twitter Thread Series</div>
-            <div style="font-size: 11px; color: var(--text-dim);">Numbered Tweet Breakdown</div>
-          </div>
-          <span class="tag-quiet">3-4 Tweets</span>
-        </div>
-        <div class="channel-box-inner" id="twitterPreviewBox">Click 'Generate Suite' or load an article to preview thread series...</div>
-        <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-          <button class="btn btn-secondary btn-sm" id="btnCopyTwitter">📋 Copy Thread</button>
-        </div>
-      </div>
-
-      <!-- 3. Substack / Newsletter Card -->
-      <div class="editorial-card">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border-subtle);">
-          <div>
-            <div style="font-weight: 600; font-size: 13.5px; color: var(--text);">📰 Substack / Newsletter Brief</div>
-            <div style="font-size: 11px; color: var(--text-dim);">Executive Digest &amp; Takeaways</div>
-          </div>
-          <span class="tag-quiet">Digest Format</span>
-        </div>
-        <div class="channel-box-inner" id="newsletterPreviewBox">Executive takeaways, TL;DR bullet matrix formatted for newsletters...</div>
-        <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
-          <button class="btn btn-secondary btn-sm" id="btnCopyNewsletter">📋 Copy Newsletter</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- TAB 4: Verticals & Coverage Engines (Uniform Cards) -->
-  <div class="tab-pane" id="tab-verticals">
-    <div class="page-header-row">
-      <div>
-        <span class="section-eyebrow">30-DAY FRESHNESS RADAR</span>
+        <span class="section-eyebrow">EDITORIAL REGISTRY · FULL SUPABASE SYNC</span>
         <h2 class="page-title">Editorial Verticals &amp; Coverage Engines</h2>
       </div>
-      <div style="display: flex; gap: 0.5rem;">
-        <button class="btn btn-secondary btn-sm" id="syncCronBtnVerticals">⚡ Sync Crons</button>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <button class="btn btn-secondary btn-sm" id="btnPullSupabaseVerticals" title="Overwrite this registry from Supabase editorial_verticals">↧ Pull from Supabase</button>
+        <button class="btn btn-secondary btn-sm" id="btnPushSupabaseVerticals" title="Upload this registry to Supabase editorial_verticals">↥ Push to Supabase</button>
+        <button class="btn btn-secondary btn-sm" id="syncCronBtnVerticals" title="One live cron job per pipeline per vertical">⚡ Sync Crons</button>
         <button class="btn btn-primary btn-sm" id="addVerticalTopBtn">+ New Vertical</button>
       </div>
     </div>
+
+    <div id="verticalSyncStatus" style="display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-bottom: 0.9rem;"></div>
 
     <div id="verticalDomainFilters" style="display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
       <span class="section-eyebrow" style="margin: 0;">PUBLISHING TARGET</span>
@@ -1746,6 +1419,67 @@
     </div>
 
     <div class="cards-grid" id="verticalsGrid"></div>
+  </div>
+
+  <!-- TAB 2: Owner decisions & app inventory -->
+  <div class="tab-pane" id="tab-approvals">
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">OWNER DECISIONS · ONE ROW PER ASK</span>
+        <h2 class="page-title">Apps &amp; decisions waiting on you</h2>
+      </div>
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <span class="tag-quiet" id="approvalsOriginBadge">—</span>
+        <button class="btn btn-secondary btn-sm" id="approvalsRefreshBtn">↺ Refresh</button>
+      </div>
+    </div>
+
+    <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 0.5rem; max-width: 78ch;">
+      Simon's sweep writes these decisions as paragraphs. The same asks are below as rows: what it is,
+      what he needs from you, and the exact reply to send. Nothing on this page approves or deletes
+      anything by itself — copy the reply and send it in Slack.
+    </p>
+
+    <div id="approvalsWaitingGroup"></div>
+    <div id="approvalsApprovedGroup"></div>
+    <div id="approvalsInventoryGroup"></div>
+  </div>
+
+  <!-- TAB 3: What's next -->
+  <div class="tab-pane" id="tab-calendar">
+    <div class="page-header-row">
+      <div>
+        <span class="section-eyebrow">FORWARD CALENDAR · UTC</span>
+        <h2 class="page-title">What's next</h2>
+      </div>
+      <div style="display: flex; gap: 0.35rem; align-items: center;">
+        <span class="metric-label" style="margin: 0;">Horizon</span>
+        <button class="btn btn-ghost btn-sm cal-horizon active" data-days="7">7 days</button>
+        <button class="btn btn-ghost btn-sm cal-horizon" data-days="10">10 days</button>
+        <button class="btn btn-ghost btn-sm cal-horizon" data-days="14">14 days</button>
+        <button class="btn btn-secondary btn-sm" id="calendarRefreshBtn" title="Reload">↺</button>
+      </div>
+    </div>
+
+    <div class="pf-hero" id="calendarHero"></div>
+
+    <div class="pf-cal-grid">
+      <div>
+        <div class="pf-group-title">
+          <h3>Articles — upcoming runs</h3>
+          <span class="pf-group-count" id="calendarArticleCount"></span>
+        </div>
+        <div class="pf-list" id="calendarDays"></div>
+      </div>
+      <div>
+        <div class="pf-group-title">
+          <h3>App harvesting — next sweeps</h3>
+          <span class="pf-group-count" id="calendarHarvestCount"></span>
+        </div>
+        <div class="pf-list" id="calendarHarvest"></div>
+        <div style="font-size: 11px; color: var(--text-dim); margin-top: 0.5rem;" id="calendarHarvestNote"></div>
+      </div>
+    </div>
   </div>
 
   <!-- TAB 5: Target Personas Maintenance -->
@@ -1827,38 +1561,18 @@
 
       <div class="editorial-card">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-          <span style="font-weight: 600; font-size: 13px; color: var(--text);">✍️ Claude Stylist Gate</span>
+          <span style="font-weight: 600; font-size: 13px; color: var(--text);">✍️ Frontier Stylist Gate</span>
           <span class="tag-quiet tag-blue">FRONTIER</span>
         </div>
-        <div style="font-size: 11.5px; color: var(--text-dim);">Claude 3.7 / Sonnet 5 via Kie.ai</div>
+        <div style="font-size: 11.5px; color: var(--text-dim);">Final rewrite on a frontier model (Gemini; kie.ai retired its Claude endpoint)</div>
       </div>
 
       <div class="editorial-card">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-          <span style="font-weight: 600; font-size: 13px; color: var(--text);">🚀 Publisher Gate</span>
-          <span class="tag-quiet" style="color: var(--amber-text); background: var(--amber-soft); border-color: var(--amber-border);">GATED</span>
+          <span style="font-weight: 600; font-size: 13px; color: var(--text);">🚀 Publisher</span>
+          <span class="tag-quiet" style="color: var(--amber-text); background: var(--amber-soft); border-color: var(--amber-border);">GATED AT PUSH</span>
         </div>
-        <div style="font-size: 11.5px; color: var(--text-dim);">Gate: @Simon approve</div>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
-      <div class="editorial-card">
-        <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.25rem;">1. Hermes Cron Sync</div>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 0.85rem;">Pushes all 8 verticals directly to VPS hermes cron daemon.</p>
-        <button class="btn btn-secondary btn-sm" id="btnSyncCronsExplicit">⚡ Run sync_crons.py</button>
-      </div>
-
-      <div class="editorial-card">
-        <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.25rem;">2. Supabase Push</div>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 0.85rem;">Uploads all verticals &amp; personas to remote Supabase tables.</p>
-        <button class="btn btn-secondary btn-sm" id="btnPushSupabase">☁️ Push to Supabase</button>
-      </div>
-
-      <div class="editorial-card">
-        <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.25rem;">3. Supabase Pull</div>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 0.85rem;">Fetches remote Supabase records to overwrite local JSON configs.</p>
-        <button class="btn btn-secondary btn-sm" id="btnPullSupabase">📥 Pull from Supabase</button>
+        <div style="font-size: 11.5px; color: var(--text-dim);">Publishes straight to the CMS through scripts/publish_gate.py — a failing article is held as a draft</div>
       </div>
     </div>
 
@@ -1868,30 +1582,12 @@
         <span class="section-eyebrow" style="margin-bottom:0;">LIVE FLEET OPERATIONS LOG</span>
         <button class="btn btn-ghost btn-sm" onclick="document.getElementById('terminalOutputBox').textContent='[PressFlow Console Cleared]\n'">Clear Log</button>
       </div>
-      <div id="terminalOutputBox" style="background:#0B0C0E; border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-sm); padding:1rem; font-family:var(--font-mono); font-size:11.5px; color:#D4D4D8; max-height:220px; overflow-y:auto; white-space:pre-wrap; line-height:1.6;">[PressFlow Fleet Initialized]
-- 8 Verticals Active &amp; Synced
-- 8 Personas Configured
-- GSC Radar: Active (28-day telemetry)
-- Frontier Gate: Pinned to claude-sonnet-5 via Kie.ai
-Ready for commands.</div>
+      <div id="terminalOutputBox" style="background:#0B0C0E; border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-sm); padding:1rem; font-family:var(--font-mono); font-size:11.5px; color:#D4D4D8; max-height:220px; overflow-y:auto; white-space:pre-wrap; line-height:1.6;">[PressFlow ready]
+- Registry: loading…
+- Personas: loading…
+- GSC Radar: loading…
+Waiting for commands.</div>
     </div>
-  </div>
-</div>
-
-<!-- Library Modal (Interactive Rows with Hover Trash, Linear Style) -->
-<div class="modal-backdrop" id="libraryModalBackdrop">
-  <div class="modal">
-    <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center;">
-      <h2>Editorial Drafts &amp; Published Library</h2>
-      <div style="display: flex; align-items: center; gap: 0.5rem;">
-        <button class="btn btn-secondary btn-sm" id="btnSyncAllSupabase" title="Sync all articles to Supabase" style="font-size: 11.5px; padding: 4px 10px; display: flex; align-items: center; gap: 4px;">⚡ Sync Supabase</button>
-        <button class="close-btn" id="closeLibraryModalBtn">&times;</button>
-      </div>
-    </div>
-    <div style="margin-bottom: 1rem;">
-      <input type="text" id="librarySearchInput" class="form-input" placeholder="🔍 Search drafts by title, vertical, or keyword...">
-    </div>
-    <div id="libraryListContainer"></div>
   </div>
 </div>
 
@@ -2087,9 +1783,6 @@ Ready for commands.</div>
 </div>
 
 <script>
-  let allDrafts = [];
-  let currentFile = null;
-  let currentMarkdown = '';
   let allVerticals = [];
   let allPersonas = {};
   let verticalDomainFilter = 'all';
@@ -2139,255 +1832,6 @@ Ready for commands.</div>
   }
 
   // Frontmatter Parser
-  function parseFrontmatterJs(md) {
-    if (!md.startsWith('---')) return {};
-    const match = md.match(/^---\n([\s\S]*?)\n---/);
-    if (!match) return {};
-    const yaml = match[1];
-    const out = {};
-    yaml.split('\n').forEach((line) => {
-      const idx = line.indexOf(':');
-      if (idx !== -1) {
-        const k = line.slice(0, idx).trim();
-        let v = line.slice(idx + 1).trim();
-        if (v.startsWith('"') && v.endsWith('"')) v = v.slice(1, -1);
-        if (v.startsWith("'") && v.endsWith("'")) v = v.slice(1, -1);
-        if (v.startsWith('[') && v.endsWith(']')) {
-          v = v.slice(1, -1).split(',').map((s) => s.trim().replace(/^['"]|['"]$/g, ''));
-        }
-        out[k] = v;
-      }
-    });
-    return out;
-  }
-
-  // Keyword Visualizer Sync
-  function updateKeywordVisualizer(markdown) {
-    const primaryTextEl = document.getElementById('kwPrimaryText');
-    const volValEl = document.getElementById('kwVolVal');
-    const kdValEl = document.getElementById('kwKdVal');
-    const intentValEl = document.getElementById('kwIntentVal');
-    const personaValEl = document.getElementById('kwPersonaVal');
-    const secondaryChipsEl = document.getElementById('kwSecondaryChips');
-
-    if (!primaryTextEl) return;
-    const fm = parseFrontmatterJs(markdown);
-
-    if (fm.primary_keyword) {
-      primaryTextEl.textContent = fm.primary_keyword;
-      volValEl.textContent = fm.search_volume ? `${Number(fm.search_volume).toLocaleString()} / mo` : '3,100 / mo';
-      kdValEl.textContent = fm.keyword_difficulty ? `${fm.keyword_difficulty}/100` : '33/100';
-      intentValEl.textContent = (fm.search_intent || 'INFORMATIONAL').toUpperCase();
-      personaValEl.textContent = fm.target_persona || 'infra_engineer';
-
-      const secKeywords = Array.isArray(fm.secondary_keywords) ? fm.secondary_keywords : [];
-      if (secKeywords.length > 0) {
-        secondaryChipsEl.innerHTML = secKeywords.map((sk) => {
-          const re = new RegExp(sk.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-          const count = (markdown.match(re) || []).length;
-          return `<span class="tag-quiet">${sk} (${count}×)</span>`;
-        }).join('');
-      } else {
-        secondaryChipsEl.innerHTML = '<span style="font-size:11px; color:var(--text-dim);">No secondary keywords defined</span>';
-      }
-    }
-  }
-
-  // Markdown Parser to Clean HTML
-  function parseMarkdownToHtml(md) {
-    let raw = md.replace(/^---\n[\s\S]*?\n---/, '').trim();
-    let gateReportHtml = '';
-    if (raw.includes('<!-- gate-report -->')) {
-      const gparts = raw.split('<!-- gate-report -->');
-      raw = gparts[0];
-      const gateText = gparts[1].replace(/<!--[\s\S]*?-->/g, '').trim();
-      gateReportHtml = `
-        <div style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1.15rem; margin-top: 1.25rem;">
-          <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
-            <span>🛡️</span> Zero-Hallucination Gate Verification Log
-          </div>
-          <div style="white-space: pre-wrap; font-size: 12px; font-family: var(--font-mono); color: var(--text-muted);">${escapeHtml(gateText)}</div>
-        </div>
-      `;
-    }
-
-    const lines = raw.split('\n');
-    let out = [];
-    let inCodeBlock = false;
-    let codeBlockLines = [];
-    let inList = false;
-    let listType = null;
-    let inBlockquote = false;
-    let blockquoteLines = [];
-    let para = [];
-
-    const flushPara = () => {
-      if (para.length) {
-        out.push(`<p>${para.join(' ')}</p>`);
-        para = [];
-      }
-    };
-
-    const flushList = () => {
-      if (inList) {
-        out.push(listType === 'ol' ? '</ol>' : '</ul>');
-        inList = false;
-        listType = null;
-      }
-    };
-
-    const flushBlockquote = () => {
-      if (inBlockquote && blockquoteLines.length) {
-        out.push(`<blockquote>${blockquoteLines.join(' ')}</blockquote>`);
-        blockquoteLines = [];
-        inBlockquote = false;
-      }
-    };
-
-    const inline = (s) => escapeHtml(s)
-      .replace(/`([^`]+)`/g, '<code>$1</code>')
-      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-      .replace(/\[(\d+)\]/g, '<span class="cite-pill-badge">[$1]</span>');
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      const trimmed = line.trim();
-
-      if (trimmed.startsWith('```')) {
-        flushPara();
-        flushList();
-        flushBlockquote();
-        if (inCodeBlock) {
-          out.push(`<pre><code>${escapeHtml(codeBlockLines.join('\n'))}</code></pre>`);
-          codeBlockLines = [];
-          inCodeBlock = false;
-        } else {
-          inCodeBlock = true;
-          codeBlockLines = [];
-        }
-        continue;
-      }
-
-      if (inCodeBlock) {
-        codeBlockLines.push(line);
-        continue;
-      }
-
-      if (/^<!--[\s\S]*?-->$/.test(trimmed)) {
-        flushPara();
-        flushList();
-        flushBlockquote();
-        continue;
-      }
-
-      if (!trimmed) {
-        flushPara();
-        flushList();
-        flushBlockquote();
-        continue;
-      }
-
-      if (trimmed.startsWith('>')) {
-        flushPara();
-        flushList();
-        inBlockquote = true;
-        blockquoteLines.push(inline(trimmed.replace(/^>\s*/, '')));
-        continue;
-      } else if (inBlockquote) {
-        flushBlockquote();
-      }
-
-      if (/^#{1,6}\s/.test(trimmed)) {
-        flushPara();
-        flushList();
-        flushBlockquote();
-        const m = trimmed.match(/^(#{1,6})\s+(.*)/);
-        const lvl = m[1].length;
-        out.push(`<h${lvl}>${inline(m[2])}</h${lvl}>`);
-        continue;
-      }
-
-      if (/^[-*]\s+/.test(trimmed)) {
-        flushPara();
-        flushBlockquote();
-        if (!inList || listType !== 'ul') {
-          flushList();
-          out.push('<ul>');
-          inList = true;
-          listType = 'ul';
-        }
-        out.push(`<li>${inline(trimmed.replace(/^[-*]\s+/, ''))}</li>`);
-        continue;
-      }
-
-      if (/^\d+\.\s+/.test(trimmed)) {
-        flushPara();
-        flushBlockquote();
-        if (!inList || listType !== 'ol') {
-          flushList();
-          out.push('<ol>');
-          inList = true;
-          listType = 'ol';
-        }
-        out.push(`<li>${inline(trimmed.replace(/^\d+\.\s+/, ''))}</li>`);
-        continue;
-      }
-
-      flushList();
-      flushBlockquote();
-      para.push(inline(trimmed));
-    }
-
-    flushPara();
-    flushList();
-    flushBlockquote();
-    if (inCodeBlock && codeBlockLines.length) {
-      out.push(`<pre><code>${escapeHtml(codeBlockLines.join('\n'))}</code></pre>`);
-    }
-
-    if (gateReportHtml) out.push(gateReportHtml);
-
-    return out.join('\n');
-  }
-
-  function syncSerpAndSchemaPreview(markdown) {
-    if (!markdown) return;
-    updateKeywordVisualizer(markdown);
-
-    const fm = parseFrontmatterJs(markdown);
-    const title = fm.title || '';
-    const metaTitle = fm.meta_title || '';
-    const metaDesc = fm.meta_description || '';
-    const slug = fm.slug || '';
-
-    const previewUrlEl = document.getElementById('previewSerpUrl');
-    const previewTitleEl = document.getElementById('previewSerpTitle');
-    const previewDescEl = document.getElementById('previewSerpDesc');
-
-    if (slug && previewUrlEl) {
-      previewUrlEl.textContent = slug.replace(/^\d{4}-\d{2}-\d{2}_/, '');
-    }
-    if (previewTitleEl) previewTitleEl.textContent = metaTitle || title || 'Editorial Factory';
-    if (previewDescEl) previewDescEl.textContent = metaDesc || 'Autonomous Content Intelligence & Editorial Engine.';
-
-    const schemaMatch = markdown.match(new RegExp('<' + '!--\\s*schema\\s*--' + '>[\\s\\S]*?```(?:json)?\\s*(\\{[\\s\\S]+?\\})\\s*```', 'i'));
-    const schemaViewerPre = document.getElementById('schemaViewerPre');
-    if (schemaViewerPre) {
-      if (schemaMatch) {
-        try {
-          const parsed = JSON.parse(schemaMatch[1]);
-          schemaViewerPre.textContent = JSON.stringify(parsed, null, 2);
-        } catch (e) {
-          schemaViewerPre.textContent = schemaMatch[1].trim();
-        }
-      } else {
-        schemaViewerPre.textContent = '{\n  "//": "No custom JSON-LD schema defined for this draft."\n}';
-      }
-    }
-  }
-
   // Navigation Tab Switching
   document.querySelectorAll('.nav-tab-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -2398,262 +1842,9 @@ Ready for commands.</div>
       const pane = document.getElementById(target);
       if (pane) pane.classList.add('active');
       if (target === 'tab-distribution') loadDistribution();
+      if (target === 'tab-approvals') loadApprovals();
+      if (target === 'tab-calendar') loadCalendar();
     });
-  });
-
-  // Segmented Control (Preview vs Edit)
-  const viewRenderedBtn = document.getElementById('viewRenderedBtn');
-  const viewEditBtn = document.getElementById('viewEditBtn');
-  const renderedArticleContainer = document.getElementById('renderedArticleContainer');
-  const editorArticleContainer = document.getElementById('editorArticleContainer');
-  const markdownEditor = document.getElementById('markdownEditor');
-
-  viewRenderedBtn.addEventListener('click', () => {
-    viewRenderedBtn.classList.add('active');
-    viewEditBtn.classList.remove('active');
-    renderedArticleContainer.style.display = 'block';
-    editorArticleContainer.style.display = 'none';
-    currentMarkdown = markdownEditor.value;
-    renderedArticleContainer.innerHTML = parseMarkdownToHtml(currentMarkdown);
-    updateKeywordVisualizer(currentMarkdown);
-  });
-
-  viewEditBtn.addEventListener('click', () => {
-    viewEditBtn.classList.add('active');
-    viewRenderedBtn.classList.remove('active');
-    renderedArticleContainer.style.display = 'none';
-    editorArticleContainer.style.display = 'block';
-  });
-
-  markdownEditor.addEventListener('input', () => {
-    currentMarkdown = markdownEditor.value;
-    updateKeywordVisualizer(currentMarkdown);
-    syncSerpAndSchemaPreview(currentMarkdown);
-  });
-
-  document.getElementById('btnCopyPrimaryKw').addEventListener('click', () => {
-    const kw = document.getElementById('kwPrimaryText').textContent.trim();
-    if (kw) {
-      navigator.clipboard.writeText(kw);
-      showToast(`Copied '${kw}' to clipboard!`);
-    }
-  });
-
-  window.insertMarker = function(marker) {
-    const start = markdownEditor.selectionStart;
-    const end = markdownEditor.selectionEnd;
-    const text = markdownEditor.value;
-    markdownEditor.value = text.substring(0, start) + marker + text.substring(end);
-    markdownEditor.focus();
-    updateKeywordVisualizer(markdownEditor.value);
-  };
-
-  // Load Library & Articles (Interactive Rows)
-  async function loadLibrary(filterQuery = '') {
-    try {
-      const res = await fetch('/api/drafts');
-      allDrafts = await res.json();
-      document.getElementById('libraryCount').textContent = allDrafts.length;
-
-      const container = document.getElementById('libraryListContainer');
-      const filtered = filterQuery
-        ? allDrafts.filter(d => 
-            (d.title || '').toLowerCase().includes(filterQuery.toLowerCase()) ||
-            (d.vertical || '').toLowerCase().includes(filterQuery.toLowerCase()) ||
-            (d.primary_keyword || '').toLowerCase().includes(filterQuery.toLowerCase())
-          )
-        : allDrafts;
-
-      if (!filtered.length) {
-        container.innerHTML = '<div style="text-align:center; padding:2rem; color:var(--text-dim); font-size:12px;">No matching drafts found.</div>';
-        return;
-      }
-
-      // Published first, newest first: `/api/drafts` returns the drafts directory before the
-      // published one, so without this the library showed each story twice, draft before
-      // published, with nothing on the row saying which was which.
-      const ordered = [...filtered].sort((a, b) => {
-        if (a.type !== b.type) return a.type === 'published' ? -1 : 1;
-        return String(b.date || b.file).localeCompare(String(a.date || a.file));
-      });
-
-      container.innerHTML = ordered.map((d) => `
-        <div class="library-item-row" onclick="selectDraft('${d.file}')">
-          <div style="flex: 1;">
-            <div style="font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 0.2rem;">${escapeHtml(d.title)}</div>
-            <div style="font-size: 11.5px; color: var(--text-dim); display: flex; align-items: center; gap: 0.4rem;">
-              <span style="font-size:9.5px; font-weight:700; letter-spacing:.04em; padding:1px 6px; border-radius:999px; ${d.type === 'published' ? 'background: rgba(46,160,67,0.18); color: #3fb950;' : 'background: rgba(140,148,158,0.18); color: var(--text-dim);'}">${d.type === 'published' ? 'PUBLISHED' : 'DRAFT'}</span>
-              <span>${d.vertical}</span>
-              <span class="meta-dot">·</span>
-              <span>${d.wordCount} words</span>
-              <span class="meta-dot">·</span>
-              <span>~${d.readTime} min</span>
-            </div>
-          </div>
-          <div class="row-delete-btn" onclick="event.stopPropagation(); openDeleteModal('draft', '${d.file}', '${d.title.replace(/'/g, "\\'")}')">
-            <button class="btn btn-danger-ghost btn-sm" title="Delete Draft">🗑️</button>
-          </div>
-        </div>
-      `).join('');
-    } catch (e) {
-      console.warn(e);
-    }
-  }
-
-  document.getElementById('librarySearchInput').addEventListener('input', (e) => {
-    loadLibrary(e.target.value.trim());
-  });
-
-  document.getElementById('btnSyncAllSupabase').addEventListener('click', async () => {
-    const btn = document.getElementById('btnSyncAllSupabase');
-    btn.disabled = true;
-    btn.textContent = '⏳ Syncing...';
-    showToast('Syncing all library items to Supabase...');
-    try {
-      const res = await fetch('/api/articles/sync-supabase', { method: 'POST' });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Sync failed');
-      showToast(`Synced ${data.synced}/${data.total} articles to Supabase!`);
-    } catch (e) {
-      showToast('Sync error: ' + e.message, 'error');
-    } finally {
-      btn.disabled = false;
-      btn.textContent = '⚡ Sync Supabase';
-    }
-  });
-
-  document.getElementById('globalSearchInput').addEventListener('input', (e) => {
-    const q = e.target.value.trim();
-    if (q) {
-      document.getElementById('librarySearchInput').value = q;
-      loadLibrary(q);
-      document.getElementById('libraryModalBackdrop').classList.add('active');
-    }
-  });
-
-  window.selectDraft = async function(fileName) {
-    try {
-      const res = await fetch(`/api/drafts/detail?file=${encodeURIComponent(fileName)}`);
-      const data = await res.json();
-      currentFile = data.file;
-      currentMarkdown = data.markdown;
-
-      document.getElementById('currentArticleTitle').textContent = data.title;
-      document.getElementById('currentWordCount').textContent = Number(data.wordCount).toLocaleString();
-      document.getElementById('currentReadTime').textContent = data.readTime;
-      // Canonical public article path is the reader route: /published/<file>.md
-      // (the old `/posts/<slug>` scheme 404s — it made every dashboard-derived
-      // article URL a dead link).
-      document.getElementById('currentArticleLink').textContent = `https://pressflow.aichieve.net/published/${data.file}`;
-      document.getElementById('currentArticleLink').href = `https://pressflow.aichieve.net/published/${data.file}`;
-
-      markdownEditor.value = currentMarkdown;
-      renderedArticleContainer.innerHTML = parseMarkdownToHtml(currentMarkdown);
-      updateKeywordVisualizer(currentMarkdown);
-      syncSerpAndSchemaPreview(currentMarkdown);
-      deriveMultiChannelPreviews(currentMarkdown, data.title, `https://pressflow.aichieve.net/published/${data.file}`);
-
-      document.getElementById('libraryModalBackdrop').classList.remove('active');
-      document.getElementById('tabWorkspaceBtn').click();
-      showToast(`Loaded '${data.title.slice(0, 32)}...'`);
-    } catch (e) {
-      showToast('Error loading draft: ' + e.message, 'error');
-    }
-  };
-
-  function deriveMultiChannelPreviews(md, title, articleUrl) {
-    // 2. Twitter / X Thread
-    const paras = md
-      .replace(/<!--[\s\S]*?-->/g, '')
-      .replace(/^#+.*$/gm, '')
-      .split(/\n\s*\n/)
-      .map((p) => p.trim())
-      .filter((p) => p.length > 60);
-    const tweets = paras.slice(0, 4).map((p, idx) => `${idx + 1}/ ${p.slice(0, 270)}...`);
-    document.getElementById('twitterPreviewBox').textContent = tweets.join('\n\n──────────────\n\n') || `${title}\n\nThread: 1/ Key architecture insights...\n2/ Field benchmarks & costs...\n3/ Takeaways for leaders.`;
-
-    // 2. Substack Newsletter
-    const leadClean = (md.match(/<!-- lead -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
-    const tacticalClean = (md.match(/<!-- tactical-insight -->([\s\S]*?)(?:<!--|$)/) || [])[1] || '';
-    const newsletter = `**Subject:** ${title}\n\n**Executive Digest:**\n${leadClean.trim() || 'A practitioner breakdown of the latest systems & architectural trade-offs.'}\n\n**Key Engineering Realities:**\n${tacticalClean.trim() || '- Unvarnished benchmark results from active production deployments.'}\n\n👉 Full report: ${articleUrl}`;
-    document.getElementById('newsletterPreviewBox').textContent = newsletter;
-
-  }
-
-  document.getElementById('btnOpenLibrary').addEventListener('click', () => {
-    document.getElementById('librarySearchInput').value = '';
-    loadLibrary();
-    document.getElementById('libraryModalBackdrop').classList.add('active');
-  });
-
-  document.getElementById('closeLibraryModalBtn').addEventListener('click', () => {
-    document.getElementById('libraryModalBackdrop').classList.remove('active');
-  });
-
-  document.getElementById('btnSaveDraft').addEventListener('click', async () => {
-    try {
-      const markdown = markdownEditor.value;
-      const res = await fetch('/api/drafts/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ file: currentFile, markdown }),
-      });
-      if (res.ok) {
-        showToast('Draft saved successfully!');
-        syncSerpAndSchemaPreview(markdown);
-        deriveMultiChannelPreviews(markdown, document.getElementById('currentArticleTitle').textContent, document.getElementById('currentArticleLink').href);
-        loadLibrary();
-      } else {
-        showToast('Failed to save draft', 'error');
-      }
-    } catch (e) {
-      showToast(e.message, 'error');
-    }
-  });
-
-  document.getElementById('btnDeleteCurrentArticle').addEventListener('click', () => {
-    if (!currentFile) return;
-    const title = document.getElementById('currentArticleTitle').textContent;
-    openDeleteModal('draft', currentFile, title);
-  });
-
-  async function generateSuite() {
-    const md = markdownEditor.value || currentMarkdown;
-    const articleUrl = document.getElementById('currentArticleLink').href;
-
-    showToast('Extracting multi-channel suite format...');
-    try {
-      const res = await fetch('/api/generate-suite', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ markdown: md, articleUrl }),
-      });
-      const data = await res.json();
-
-      deriveMultiChannelPreviews(md, document.getElementById('currentArticleTitle').textContent, articleUrl);
-      if (data.twitter_thread) {
-        document.getElementById('twitterPreviewBox').textContent = data.twitter_thread.join('\n\n──────────────\n\n');
-      }
-
-      document.getElementById('tabSuiteBtn').click();
-      showToast('Channel copy generated!');
-    } catch (e) {
-      showToast('Error generating suite: ' + e.message, 'error');
-    }
-  }
-
-  document.getElementById('btnGenerateSuite').addEventListener('click', generateSuite);
-
-  document.getElementById('btnCopyTwitter').addEventListener('click', () => {
-    navigator.clipboard.writeText(document.getElementById('twitterPreviewBox').textContent).then(() => showToast('Twitter thread copied!'));
-  });
-
-  document.getElementById('btnCopyNewsletter').addEventListener('click', () => {
-    navigator.clipboard.writeText(document.getElementById('newsletterPreviewBox').textContent).then(() => showToast('Newsletter brief copied!'));
-  });
-
-  document.getElementById('btnLoadSample').addEventListener('click', () => {
-    if (allDrafts.length > 0) selectDraft(allDrafts[0].file);
   });
 
   // Verticals & Personas (Uniform Cards)
@@ -2666,8 +1857,11 @@ Ready for commands.</div>
       verticalDomainsSource = data.domains_source || '';
 
       document.getElementById('verticalsCount').textContent = allVerticals.length;
+      document.getElementById('quickVerticalCount').textContent = allVerticals.length;
       document.getElementById('personasCount').textContent = Object.keys(allPersonas).length;
+      renderVerticalSyncStatus(data);
 
+      logRegistrySummary(data);
       populatePersonaDropdown();
       renderDomainFilters();
       renderVerticals(allVerticals);
@@ -3103,9 +2297,9 @@ Ready for commands.</div>
     const { type, id } = deleteContext;
     try {
       let endpoint = '';
-      if (type === 'draft') endpoint = `/api/drafts/delete?file=${encodeURIComponent(id)}`;
-      else if (type === 'vertical') endpoint = `/api/verticals/delete?id=${encodeURIComponent(id)}`;
+      if (type === 'vertical') endpoint = `/api/verticals/delete?id=${encodeURIComponent(id)}`;
       else if (type === 'persona') endpoint = `/api/personas/delete?id=${encodeURIComponent(id)}`;
+      if (!endpoint) throw new Error(`Unknown delete target: ${type}`);
 
       const res = await fetch(endpoint, { method: 'POST' });
       const data = await res.json();
@@ -3113,24 +2307,9 @@ Ready for commands.</div>
       showToast(`Deleted ${type} successfully!`);
       document.getElementById('deleteModalBackdrop').classList.remove('active');
 
-      if (type === 'draft') {
-        await loadLibrary();
-        if (currentFile === id) {
-          if (allDrafts.length > 0) {
-            selectDraft(allDrafts[0].file);
-          } else {
-            currentFile = null;
-            currentMarkdown = '';
-            document.getElementById('currentArticleTitle').textContent = 'No article selected';
-            document.getElementById('currentWordCount').textContent = '0';
-            document.getElementById('currentReadTime').textContent = '0';
-            document.getElementById('currentArticleLink').textContent = '';
-            markdownEditor.value = '';
-            renderedArticleContainer.innerHTML = '<div style="text-align:center; padding: 3rem; color: var(--text-dim);">No article selected.</div>';
-          }
-        }
-      } else {
+      if (type === 'vertical') {
         loadVerticals();
+        loadCalendar();
       }
     } catch (e) {
       showToast(e.message, 'error');
@@ -3154,38 +2333,6 @@ Ready for commands.</div>
   }
 
   document.getElementById('syncCronBtnVerticals').addEventListener('click', triggerCronSync);
-  document.getElementById('btnSyncCronsExplicit').addEventListener('click', triggerCronSync);
-
-  document.getElementById('btnPushSupabase').addEventListener('click', async () => {
-    showToast('Pushing configuration to Supabase...');
-    logTerminal('Uploading local verticals & personas to Supabase tables...');
-    try {
-      const res = await fetch('/api/verticals/push-supabase', { method: 'POST' });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Failed to push to Supabase');
-      showToast('Pushed configuration to Supabase');
-      logTerminal('✓ Configuration synced to Supabase.');
-    } catch (e) {
-      showToast(e.message, 'error');
-      logTerminal(`❌ Push error: ${e.message}`);
-    }
-  });
-
-  document.getElementById('btnPullSupabase').addEventListener('click', async () => {
-    showToast('Pulling configuration from Supabase...');
-    logTerminal('Fetching remote verticals & personas from Supabase...');
-    try {
-      const res = await fetch('/api/verticals/pull-supabase', { method: 'POST' });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Failed to pull from Supabase');
-      showToast('Pulled configuration from Supabase');
-      logTerminal('✓ Verticals and personas pulled from Supabase.');
-      loadVerticals();
-    } catch (e) {
-      showToast(e.message, 'error');
-      logTerminal(`❌ Pull error: ${e.message}`);
-    }
-  });
 
   // SEO Content Machine
   let allGscOpportunities = [];
@@ -3294,9 +2441,9 @@ Ready for commands.</div>
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to run pipeline');
-      showToast(`SEO article generated and staged!`);
+      showToast('SEO article generated and staged — it publishes through the normal pipeline.');
       logTerminal(`✓ Article generated: ${query}`);
-      await loadLibrary();
+      await loadCalendar();
     } catch (e) {
       showToast(e.message, 'error');
       logTerminal(`❌ SEO Pipeline error: ${e.message}`);
@@ -3523,11 +2670,6 @@ Ready for commands.</div>
     const defaultVert = allGscOpportunities[0] ? allGscOpportunities[0].vertical : 'gpu_hardware';
     runPipelineForQuery(defaultQuery, defaultVert);
   });
-  document.getElementById('btnCopySchema').addEventListener('click', () => {
-    const text = document.getElementById('schemaViewerPre').textContent.trim();
-    navigator.clipboard.writeText(text);
-    showToast('Schema JSON copied to clipboard!');
-  });
 
   // ----------------------------------------------------
   // App Promotion To-Do Queue Client
@@ -3711,6 +2853,304 @@ Ready for commands.</div>
     }
   });
 
+  // ── Verticals: Supabase sync controls ────────────────────────────────────
+  // The owner keeps this registry here and expects it fully mirrored in Supabase, so the two
+  // directions live on the tab that owns the data instead of inside the fleet console.
+  let registrySummaryLogged = false;
+  function logRegistrySummary(data) {
+    if (registrySummaryLogged) return;
+    registrySummaryLogged = true;
+    const box = document.getElementById('terminalOutputBox');
+    const personas = Object.keys(allPersonas || {}).length;
+    if (!box) return;
+    const supabase = data && data.supabase_configured ? 'connected' : 'not configured';
+    box.textContent = `[PressFlow ready]
+- Registry: ${allVerticals.length} verticals · ${personas} personas
+- Supabase: ${supabase}
+- Publishing targets: ${(data && Array.isArray(data.domains) ? data.domains.length : 0)} front(s)
+Waiting for commands.
+`;
+  }
+
+  function renderVerticalSyncStatus(data) {
+    const box = document.getElementById('verticalSyncStatus');
+    if (!box) return;
+    const connected = Boolean(data && data.supabase_configured);
+    const domains = Array.isArray(data && data.domains) ? data.domains : [];
+    box.innerHTML = `
+      <span class="${connected ? 'tag-quiet tag-emerald' : 'tag-quiet tag-rose'}">${connected ? 'Supabase connected' : 'Supabase not configured'}</span>
+      <span class="tag-quiet">${distEsc((data && data.storage_mode) || 'local')}</span>
+      <span class="tag-quiet">${allVerticals.length} vertical${allVerticals.length === 1 ? '' : 's'}</span>
+      <span class="tag-quiet">${domains.length} publishing target${domains.length === 1 ? '' : 's'}</span>
+      <span style="font-size:11px; color:var(--text-dim);">targets read from ${distEsc((data && data.domains_source) || 'registry')}${data && data.domains_error ? ` · ${distEsc(data.domains_error)}` : ''}</span>`;
+  }
+
+  async function runVerticalSupabase(action) {
+    const pulling = action === 'pull';
+    showToast(pulling ? 'Pulling the vertical registry from Supabase…' : 'Pushing the vertical registry to Supabase…');
+    logTerminal(pulling ? 'Fetching editorial_verticals + personas from Supabase…' : 'Uploading verticals & personas to Supabase…');
+    try {
+      const res = await fetch(pulling ? '/api/verticals/pull-supabase' : '/api/verticals/push-supabase', { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      if (data.stdout) logTerminal(String(data.stdout).trim());
+      showToast(pulling ? 'Registry pulled from Supabase' : 'Registry pushed to Supabase');
+      await loadVerticals();
+      await loadCalendar();
+    } catch (err) {
+      showToast(err.message, 'error');
+      logTerminal(`✗ ${action} error: ${err.message}`);
+    }
+  }
+
+  document.getElementById('btnPullSupabaseVerticals').addEventListener('click', () => runVerticalSupabase('pull'));
+  document.getElementById('btnPushSupabaseVerticals').addEventListener('click', () => runVerticalSupabase('push'));
+
+  document.getElementById('globalSearchInput').addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) {
+      renderVerticals(allVerticals);
+      return;
+    }
+    document.getElementById('tabVerticalsBtn').click();
+    renderVerticals(allVerticals.filter((v) => (
+      String(v.id).toLowerCase().includes(q)
+      || String(v.label).toLowerCase().includes(q)
+      || String(v.target_persona || '').toLowerCase().includes(q)
+      || String(v.target_domain || '').toLowerCase().includes(q)
+    )));
+  });
+
+  // ── Approvals: one row per decision ──────────────────────────────────────
+  // The queue is prose in Simon's sweep record. These rows are the same asks: what it is, what he
+  // needs, and the exact reply. Copying a reply is the only action — this dashboard must not
+  // approve, retire or delete anything in the factory on its own.
+  const APPROVAL_KIND_LABEL = {
+    build: 'APP TO BUILD',
+    retire: 'RETIRE',
+    delete: 'DELETE',
+    fix: 'FIX',
+    decision: 'DECISION',
+  };
+
+  function approvalKindClass(kind) {
+    if (kind === 'retire' || kind === 'delete') return 'tag-quiet tag-rose';
+    if (kind === 'build') return 'tag-quiet tag-blue';
+    if (kind === 'fix') return 'tag-quiet';
+    return 'tag-quiet';
+  }
+
+  function daysWaiting(opened) {
+    const stamp = Date.parse(`${opened}T00:00:00Z`);
+    if (!Number.isFinite(stamp)) return '';
+    const days = Math.floor((Date.now() - stamp) / 86400000);
+    if (days <= 0) return 'opened today';
+    return `open ${days} day${days === 1 ? '' : 's'}`;
+  }
+
+  function decisionRow(item) {
+    const kind = APPROVAL_KIND_LABEL[item.kind] || 'DECISION';
+    const reply = String(item.reply || '').trim();
+    const action = reply
+      ? `<button class="pf-copy-reply" data-reply="${distEsc(reply)}" title="Copy this reply">${distEsc(reply)}</button>
+         <div style="font-size:10.5px; color:var(--text-dim); text-align:center;">click to copy the reply</div>`
+      : '<span class="tag-quiet tag-emerald" style="justify-content:center;">No reply needed</span>';
+    return `
+      <div class="pf-decision">
+        <div>
+          <div class="pf-decision-meta">
+            <span class="${approvalKindClass(item.kind)}">${kind}</span>
+            ${item.app ? `<span class="tag-quiet" style="font-weight:600;">${distEsc(item.app)}</span>` : ''}
+            ${item.opened ? `<span style="font-size:11px; color:var(--text-dim);">${daysWaiting(item.opened)}</span>` : ''}
+          </div>
+          <div class="pf-decision-title">${distEsc(item.headline)}</div>
+          <div class="pf-decision-body">${distEsc(item.detail)}</div>
+          ${item.impact ? `<div class="pf-decision-impact">If nothing happens: ${distEsc(item.impact)}</div>` : ''}
+        </div>
+        <div class="pf-decision-action">${action}</div>
+      </div>`;
+  }
+
+  function groupBlock(title, count, rowsHtml, emptyText) {
+    return `
+      <div class="pf-group-title"><h3>${title}</h3><span class="pf-group-count">${count || ''}</span></div>
+      <div class="pf-list">${rowsHtml || `<div class="pf-empty">${emptyText}</div>`}</div>`;
+  }
+
+  function renderApprovals(data) {
+    const badge = document.getElementById('approvalsOriginBadge');
+    const items = Array.isArray(data.items) ? data.items : [];
+    const pending = items.filter((item) => item.state === 'pending');
+    const approved = items.filter((item) => item.state === 'approved');
+    const updated = String(data.updated || '').slice(0, 16).replace('T', ' ');
+    if (data.origin === 'factory-main') {
+      badge.textContent = `live from the factory · ${updated || 'time unknown'}`;
+      badge.className = 'tag-quiet tag-emerald';
+    } else {
+      badge.textContent = `copy in this repo · ${updated || 'date unknown'}${data.fetch_error ? ' · factory unreachable' : ''}`;
+      badge.className = 'tag-quiet';
+    }
+    document.getElementById('approvalsCount').textContent = pending.length;
+
+    document.getElementById('approvalsWaitingGroup').innerHTML = groupBlock(
+      'Waiting on you', `${pending.length} open`, pending.map(decisionRow).join(''),
+      'Nothing is waiting on you.',
+    );
+    document.getElementById('approvalsApprovedGroup').innerHTML = approved.length
+      ? groupBlock('Already approved — in progress', `${approved.length} in flight`, approved.map(decisionRow).join(''), '')
+      : '';
+
+    const apps = Array.isArray(data.apps) ? data.apps : [];
+    const liveCount = apps.filter((app) => app.status === 'live').length;
+    const retiredCount = apps.filter((app) => app.status !== 'live').length;
+    const rows = apps.map((app) => {
+      const live = app.status === 'live';
+      const retireReply = `@Simon retire ${app.name}`;
+      return `
+        <div class="pf-decision">
+          <div>
+            <div class="pf-decision-meta">
+              <span class="${live ? 'tag-quiet tag-emerald' : 'tag-quiet tag-rose'}">${live ? 'LIVE' : distEsc(String(app.status || '').toUpperCase())}</span>
+              <span class="tag-quiet" style="font-weight:600;">${distEsc(app.name)}</span>
+              <span style="font-family:var(--font-mono); font-size:10.5px; color:var(--text-dim);">/${distEsc(app.slug)}</span>
+              ${app.usesLlmPrimitive ? '<span class="tag-quiet">MODEL EXTRACTION</span>' : ''}
+            </div>
+            <div class="pf-decision-body">${distEsc(app.tagline || '')}</div>
+            <div class="pf-decision-impact">${distEsc(app.category || '')}${app.launchedAt ? ` · launched ${distEsc(app.launchedAt)}` : ''}</div>
+          </div>
+          <div class="pf-decision-action">
+            <button class="pf-copy-reply" data-reply="${distEsc(retireReply)}" title="Copy the retire reply">${distEsc(retireReply)}</button>
+            <div style="font-size:10.5px; color:var(--text-dim); text-align:center;">click to copy · retires this app</div>
+          </div>
+        </div>`;
+    }).join('');
+    document.getElementById('approvalsInventoryGroup').innerHTML = groupBlock(
+      'The app inventory',
+      `${liveCount} live · ${retiredCount} retired`,
+      rows,
+      data.apps_error ? `Inventory unavailable — ${distEsc(data.apps_error)}` : 'No apps in the registry.',
+    );
+  }
+
+  async function loadApprovals() {
+    const waiting = document.getElementById('approvalsWaitingGroup');
+    if (!waiting) return;
+    try {
+      const res = await fetch('/api/approvals');
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      renderApprovals(data);
+    } catch (err) {
+      waiting.innerHTML = `<div class="pf-list"><div class="pf-empty">Could not load the decision queue: ${distEsc(err.message)}</div></div>`;
+    }
+  }
+
+  document.getElementById('approvalsRefreshBtn').addEventListener('click', loadApprovals);
+  document.getElementById('tab-approvals').addEventListener('click', async (event) => {
+    const btn = event.target.closest('[data-reply]');
+    if (!btn) return;
+    try {
+      await navigator.clipboard.writeText(btn.getAttribute('data-reply'));
+      showToast(`Copied: ${btn.getAttribute('data-reply')}`);
+    } catch (err) {
+      showToast('Could not copy — select the text instead', 'error');
+    }
+  });
+
+  // ── What's next: article runs and app-harvest sweeps ─────────────────────
+  let calendarHorizonDays = 7;
+
+  function calendarRunRow(run) {
+    const mode = run.mode === 'evergreen'
+      ? '<span class="pf-run-mode pf-mode-evergreen">EVERGREEN</span>'
+      : '<span class="pf-run-mode pf-mode-news">NEWS</span>';
+    return `<div class="pf-run">
+      <span class="pf-run-time">${run.time}</span>
+      ${mode}
+      <span class="pf-run-label">${distEsc(run.label)}</span>
+      <span class="pf-run-domain">${distEsc(run.domain || 'no target')}</span>
+    </div>`;
+  }
+
+  function renderCalendar(data) {
+    const harvest = data.harvest || {};
+    const sweeps = Array.isArray(harvest.sweeps) ? harvest.sweeps : [];
+    const next = data.next_run;
+    const nextSweep = sweeps[0];
+    document.getElementById('calendarHero').innerHTML = `
+      <div class="pf-hero-card">
+        <div class="pf-hero-when">NEXT ARTICLE · ${next ? `${next.weekday} ${next.day} · ${next.time} UTC` : 'nothing scheduled'}</div>
+        <div class="pf-hero-what">${next ? distEsc(next.label) : 'No run in this horizon'}</div>
+        <div class="pf-hero-sub">${next ? `${next.mode === 'evergreen' ? 'Evergreen' : 'News'} pipeline · publishes to ${distEsc(next.domain || 'no destination')}` : ''}</div>
+      </div>
+      <div class="pf-hero-card">
+        <div class="pf-hero-when">NEXT APP HARVEST · ${nextSweep ? `${nextSweep.weekday} ${nextSweep.day} · ${nextSweep.time} UTC` : 'queue empty'}</div>
+        <div class="pf-hero-what">${nextSweep && nextSweep.verticals.length ? nextSweep.verticals.map((v) => distEsc(v.label || v.vertical)).join(' + ') : 'Nothing queued'}</div>
+        <div class="pf-hero-sub">${distEsc(harvest.slot_label || 'no harvest slot configured')}</div>
+      </div>`;
+
+    const days = Array.isArray(data.by_day) ? data.by_day : [];
+    document.getElementById('calendarArticleCount').textContent =
+      `${data.total_runs} run${data.total_runs === 1 ? '' : 's'} · ${data.vertical_count} verticals`;
+    document.getElementById('calendarDays').innerHTML = days.length
+      ? days.map((day) => `
+          <div class="pf-day">
+            <div class="pf-day-head">
+              <span class="pf-day-name">${day.weekday} ${day.day}</span>
+              <span class="pf-day-count">${day.runs.length} run${day.runs.length === 1 ? '' : 's'}</span>
+            </div>
+            ${day.runs.map(calendarRunRow).join('')}
+          </div>`).join('')
+      : '<div class="pf-empty">No scheduled runs in this horizon.</div>';
+
+    document.getElementById('calendarHarvestCount').textContent = harvest.total_queued
+      ? `${harvest.total_queued} vertical${harvest.total_queued === 1 ? '' : 's'} queued`
+      : '';
+    document.getElementById('calendarHarvest').innerHTML = sweeps.length
+      ? sweeps.map((sweep) => `
+          <div class="pf-day">
+            <div class="pf-day-head">
+              <span class="pf-day-name">${sweep.weekday} ${sweep.day}</span>
+              <span class="pf-day-count">${sweep.time} UTC</span>
+            </div>
+            ${sweep.verticals.map((v) => `
+              <div class="pf-run" style="align-items:flex-start;">
+                <span class="pf-run-mode ${v.eligibility === 'A' ? 'pf-mode-evergreen' : 'pf-mode-news'}">${distEsc(v.eligibility || '?')}</span>
+                <span style="min-width:0;">
+                  <span class="pf-run-label">${distEsc(v.label || v.vertical)}</span>
+                  <span style="display:block; font-size:11px; color:var(--text-dim); margin-top:2px;">${distEsc(v.why || '')}</span>
+                </span>
+              </div>`).join('')}
+          </div>`).join('')
+      : `<div class="pf-empty">${harvest.error ? `Could not read the harvest queue: ${distEsc(harvest.error)}` : 'No harvest queue entries.'}</div>`;
+    document.getElementById('calendarHarvestNote').textContent = harvest.source
+      ? `Rotation from ${harvest.source} · as of ${harvest.updated || 'unknown'}. A = buyer with budget; B = consumer willingness-to-pay.`
+      : '';
+  }
+
+  async function loadCalendar() {
+    const list = document.getElementById('calendarDays');
+    if (!list) return;
+    try {
+      const res = await fetch(`/api/calendar?days=${calendarHorizonDays}`);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+      renderCalendar(data);
+    } catch (err) {
+      list.innerHTML = `<div class="pf-empty">Could not load the calendar: ${distEsc(err.message)}</div>`;
+    }
+  }
+
+  document.querySelectorAll('.cal-horizon').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cal-horizon').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      calendarHorizonDays = Number(btn.getAttribute('data-days')) || 7;
+      loadCalendar();
+    });
+  });
+  document.getElementById('calendarRefreshBtn').addEventListener('click', loadCalendar);
+
   // Global Keyboard Shortcuts
   window.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
@@ -3719,15 +3159,14 @@ Ready for commands.</div>
     }
   });
 
-  // Boot
+  // Boot — the verticals registry is the dashboard's home now; articles are published elsewhere
+  // and are not loaded, listed or previewed here.
   (async function boot() {
-    await loadLibrary();
     await loadVerticals();
     await loadGscOpportunities('all');
     loadDistribution();
-    if (allDrafts.length > 0) {
-      selectDraft(allDrafts[0].file);
-    }
+    loadApprovals();
+    loadCalendar();
   })();
 </script>
 

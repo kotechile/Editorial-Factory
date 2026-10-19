@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T18:08:45Z",
+  "updated_at": "2026-10-19T00:00:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2179,7 +2179,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/prior-disclosure-clock-cuts-penalty/"
     },
     {
       "slug": "2026-10-17_your-disks-35-dead-by-year-six",
@@ -2196,7 +2197,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-17",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-disks-35-dead-by-year-six/"
     },
     {
       "slug": "2026-10-17_your-mexico-hedge-renewal-risk",

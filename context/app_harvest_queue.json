@@ -1,0 +1,95 @@
+{
+  "_note": "The app-harvest rotation: which verticals the weekly recon sweep scans next. Derived from software-factory-core/context/vertical_coverage.md (its own ordering rule: any never-scanned vertical first, then least-recently-scanned), two verticals per sweep. `sweeps_per_week` and `slot_cron` mirror the Weekly Market Recon job. Update this file when the ledger changes — the daily sweep writes the ledger, a human or Simon rewrites this list.",
+  "updated": "2026-10-18",
+  "source": "software-factory-core/context/vertical_coverage.md",
+  "slot_cron": "30 14 * * 1",
+  "slot_label": "Weekly Market Recon — Monday 14:30 UTC",
+  "sweeps_per_week": 1,
+  "sweep_size": 2,
+  "queue": [
+    {
+      "vertical": "sales_order_service_level_otif",
+      "label": "Sales Order Service Level, OTIF & ATP Execution",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Retailer OTIF chargebacks are a named P&L line with a real buyer; the product shape is penalty economics, not another KPI dashboard."
+    },
+    {
+      "vertical": "payments_iso20022",
+      "label": "ISO 20022 Payments Migration",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Structured-address cutoff on 2026-11-14 gives a dated trigger; six in-window sources, rejection mechanics already named."
+    },
+    {
+      "vertical": "healthcare_interop",
+      "label": "Healthcare Interop (HL7v2 → FHIR / USCDI v3)",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Probed 2026-09-20 with six in-window sources; still needs a Stage 3 score. Funnel risk is enterprise sales."
+    },
+    {
+      "vertical": "multifamily_ops",
+      "label": "Multifamily Operations — RUBS / Submeter Bill-Back",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Allocations must sum to the invoice exactly, and the decision recurs every month — a clean deterministic engine."
+    },
+    {
+      "vertical": "meio_working_capital_tco",
+      "label": "Multi-Echelon Inventory Optimization & Working Capital TCO",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Safety-stock vs expedited-freight decision; free calculators cover the rate table, not the decision."
+    },
+    {
+      "vertical": "contract_risk_insurance",
+      "label": "Contract Risk & Insurance (ACORD 25 / COI)",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Crowded paid incumbents, no free deterministic tool; scope needs narrowing before a build."
+    },
+    {
+      "vertical": "control_tower_exception_orchestration",
+      "label": "Control Tower Visibility & Exception Orchestration",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Cost-of-late-shipment plus build-vs-buy matrix; needs a dated trigger to score."
+    },
+    {
+      "vertical": "demand_sensing_advanced_sop",
+      "label": "Demand Sensing & Advanced S&OP",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Forecast-accuracy to carrying-cost model; crowded by planning suites, so only a thin deterministic slice is open."
+    },
+    {
+      "vertical": "enterprise_build_vs_buy",
+      "label": "Enterprise Build-vs-Buy & Developer Tooling",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "Strong buyer, thin public tooling: internal-tooling maintenance tax with loaded salaries."
+    },
+    {
+      "vertical": "last_mile_routing_fleet_carbon",
+      "label": "Last-Mile Routing & Fleet Carbon Accounting",
+      "eligibility": "A",
+      "last_scanned": "never",
+      "why": "EV fleet seven-year TCO and scope-3 logistics carbon; sequence after the capex family."
+    },
+    {
+      "vertical": "resilient_home_assets",
+      "label": "Climate Hardening, Insurability & Grid Resilience",
+      "eligibility": "B",
+      "last_scanned": "never",
+      "why": "Consumer willingness-to-pay, but an insurability crisis is a real dated trigger — worth one scan."
+    },
+    {
+      "vertical": "property_loss_insurance_mitigation",
+      "label": "Property Loss, Insurance & Mitigation ROI",
+      "eligibility": "B",
+      "last_scanned": "never",
+      "why": "Only one live pillar and no owning vertical; scan on a renewal-season claim or non-renewal trigger."
+    }
+  ]
+}

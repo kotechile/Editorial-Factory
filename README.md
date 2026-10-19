@@ -134,6 +134,23 @@ scripts/cron-seo-pipeline.sh    # SEO Content Machine
 scripts/verify.sh
 ```
 
+## The PressFlow dashboard
+
+`site/` is the operations dashboard (internal, behind `PRESSFLOW_AUTH_SECRET`). It deliberately
+**does not list, preview or edit articles** any more (owner, 2026-10-18): a finished article is
+pushed to the CMS and read on the reader fronts, so a second copy in the dashboard had no
+destination. What it does hold:
+
+| Tab | What it is |
+|---|---|
+| ⚙️ **Verticals** | the registry that drives both cron fleets, with the full Supabase round-trip on the same tab (`↥ Push`, `↧ Pull`, `⚡ Sync Crons`) and a status strip saying which copy you are looking at |
+| ✅ **Approvals** | Simon's open asks as one row each — what it is, what he needs, and the exact reply to copy — plus the app inventory, where each product carries its own `@Simon retire <app>` reply. The queue is read from `kotechile/factory` (`context/approval_queue.json`) with `context/approvals.json` as the committed fallback, and the tab says which copy is showing |
+| 📅 **What's Next** | the forward calendar in UTC: the next article runs computed from each vertical's `cadence` / `evergreen_cadence`, and the next app-harvest sweeps from `context/app_harvest_queue.json` (two verticals per Monday recon, never-scanned first) |
+| 📣 **App Promotion To-Do** | the software-factory apps' promotion queue (below) |
+| ⚡ **SEO Machine** | GSC demand, DataForSEO, Growth OS, cannibalization and ranking loop |
+| 👥 **Personas** | the reader archetypes the verticals point at |
+| 🛰️ **Fleet & Crons** | cron reconciliation and the operations log |
+
 ## App Promotion To-Do Queue (Applications only) & Removed Article Distribution
 
 The PressFlow dashboard provides an **📣 App Promotion To-Do** list strictly for the software factory's live applications (catalog: `context/promoted_apps.json`). Each app card features recommended subreddits, ready-to-paste Reddit/LinkedIn copy, and a direct web-intent submit link for manual posting.

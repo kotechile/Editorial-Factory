@@ -26,7 +26,9 @@ gates, and every non-deterministic step is gated on retrievable evidence.
   provenance record and what the next article's art director reads.
 - `context/growth_os/` — founder-voice.md, customer-truth.md, performance_learnings.md
 - `scripts/`     — cron triggers, GSC/DataForSEO analyzers, growth_os engine, verify gates
-- `site/`        — PressFlow editorial reader & SEO command center (Coolify-deployable)
+- `site/`        — PressFlow operations dashboard (Coolify-deployable): verticals + Supabase
+  sync, owner decisions/app inventory, forward calendar, app promotion to-do, SEO machine, fleet.
+  It does not list or preview articles — those go to the CMS and the reader fronts.
 - `published/`   — final approved articles (markdown) rendered by the site
 
 ## Non-negotiable editorial rules

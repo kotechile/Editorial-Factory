@@ -687,6 +687,162 @@ async function syncAllArticlesToSupabase() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Owner decisions, the app inventory, and the forward calendar
+//
+// Three things the owner asked this dashboard for: the app decisions Simon raises in prose, as
+// rows he can act on; the app inventory, so retiring one is a named action rather than a
+// paragraph; and what the calendar holds next — which verticals publish, and which are due for an
+// app-harvest sweep. No article is rendered here any more: a finished article goes to the CMS and
+// the reader fronts, and a second copy inside this dashboard was never a destination.
+//
+// Both decision lists are owned by the software factory (`kotechile/factory`), so they are read
+// from that repo's main over HTTPS and cached for ten minutes. A committed fallback copy in this
+// repo (context/approvals.json) keeps the tab honest when the fetch fails — the payload says which
+// copy is showing and when it was checked, so a stale row can never read as live.
+// ─────────────────────────────────────────────────────────────────────────────
+const APPROVALS_FILE = join(ROOT, 'context', 'approvals.json');
+const HARVEST_FILE = join(ROOT, 'context', 'app_harvest_queue.json');
+const FACTORY_APPROVALS_URL = process.env.PRESSFLOW_APPROVALS_URL
+  || 'https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json';
+const FACTORY_REGISTRY_URL = process.env.PRESSFLOW_REGISTRY_URL
+  || 'https://raw.githubusercontent.com/kotechile/factory/main/src/products/registry.ts';
+const FACTORY_FETCH_TTL_MS = 10 * 60 * 1000;
+const factoryCache = new Map();
+
+async function fetchFactoryText(url, key) {
+  const now = Date.now();
+  const hit = factoryCache.get(key);
+  if (hit && hit.data && now - hit.at < FACTORY_FETCH_TTL_MS) return hit;
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 6000);
+    const res = await fetch(url, { signal: controller.signal });
+    clearTimeout(timer);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const entry = { at: now, data: await res.text(), error: null };
+    factoryCache.set(key, entry);
+    return entry;
+  } catch (err) {
+    // One bad request must not blank the tab: keep the last good payload and report the error.
+    const entry = { at: hit ? hit.at : 0, data: hit ? hit.data : null, error: err.message };
+    factoryCache.set(key, entry);
+    return entry;
+  }
+}
+
+// The registry is TypeScript, not JSON: one object literal per product. Parsing five named string
+// fields per block is the whole contract, and a block with no `slug` is skipped rather than guessed
+// at — a wrong row here would tell the owner to retire a product that does not exist.
+function parseProductRegistry(source) {
+  const products = [];
+  for (const block of String(source).split(/\n  \{\n/).slice(1)) {
+    const field = (name) => {
+      const hit = block.match(new RegExp(`\\b${name}:\\s*"([^"]*)"`));
+      return hit ? hit[1] : '';
+    };
+    const slug = field('slug');
+    if (!slug || !/^[a-z0-9-]+$/.test(slug)) continue;
+    products.push({
+      slug,
+      name: field('name') || slug,
+      tagline: field('tagline'),
+      status: field('status') || 'live',
+      launchedAt: field('launchedAt'),
+      category: field('category'),
+      usesLlmPrimitive: /\busesLlmPrimitive:\s*true/.test(block),
+    });
+  }
+  return products;
+}
+
+// A five-field cron parser good enough for a cadence registry (`30 10 * * 1,4`, `0 11 * * 5`,
+// `*/15 * * * *`). It is only ever used to draw the next occurrences; the scheduler itself
+// (scripts/sync_crons.py) remains the authority on what actually runs.
+function expandCronField(field, min, max) {
+  const values = new Set();
+  for (const part of String(field).split(',')) {
+    const [rangePart, stepPart] = part.split('/');
+    const step = stepPart ? Math.max(1, parseInt(stepPart, 10) || 1) : 1;
+    let lo;
+    let hi;
+    if (rangePart === '*') {
+      lo = min;
+      hi = max;
+    } else if (rangePart.includes('-')) {
+      const [a, b] = rangePart.split('-');
+      lo = parseInt(a, 10);
+      hi = parseInt(b, 10);
+    } else {
+      lo = parseInt(rangePart, 10);
+      hi = stepPart ? max : lo;
+    }
+    if (!Number.isFinite(lo) || !Number.isFinite(hi) || lo < min || hi > max || lo > hi) return null;
+    for (let v = lo; v <= hi; v += step) values.add(v);
+  }
+  return values.size ? values : null;
+}
+
+function cronSpec(cron) {
+  const parts = String(cron || '').trim().split(/\s+/);
+  if (parts.length !== 5) return null;
+  const [mi, ho, dom, mon, dow] = parts;
+  const minutes = expandCronField(mi, 0, 59);
+  const hours = expandCronField(ho, 0, 23);
+  const doms = expandCronField(dom, 1, 31);
+  const months = expandCronField(mon, 1, 12);
+  const dowsRaw = expandCronField(dow, 0, 7);
+  if (!minutes || !hours || !doms || !months || !dowsRaw) return null;
+  return {
+    minutes,
+    hours,
+    doms,
+    months,
+    dows: new Set([...dowsRaw].map((d) => (d === 7 ? 0 : d))),
+    domStar: dom === '*',
+    dowStar: dow === '*',
+  };
+}
+
+function nextCronRuns(spec, from, until) {
+  const out = [];
+  if (!spec) return out;
+  const cursor = new Date(Date.UTC(from.getUTCFullYear(), from.getUTCMonth(), from.getUTCDate()));
+  while (cursor <= until) {
+    const month = cursor.getUTCMonth() + 1;
+    const day = cursor.getUTCDate();
+    const weekday = cursor.getUTCDay();
+    const dayMatches = spec.months.has(month) && (
+      spec.domStar && spec.dowStar ? true
+        : spec.domStar ? spec.dows.has(weekday)
+          : spec.dowStar ? spec.doms.has(day)
+            : (spec.doms.has(day) || spec.dows.has(weekday))
+    );
+    if (dayMatches) {
+      for (const hour of [...spec.hours].sort((a, b) => a - b)) {
+        for (const minute of [...spec.minutes].sort((a, b) => a - b)) {
+          const at = new Date(Date.UTC(cursor.getUTCFullYear(), cursor.getUTCMonth(), day, hour, minute));
+          if (at >= from && at <= until) out.push(at);
+        }
+      }
+    }
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+  return out;
+}
+
+const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+function stampUtc(date) {
+  const pad = (n) => String(n).padStart(2, '0');
+  return {
+    iso: date.toISOString(),
+    day: date.toISOString().slice(0, 10),
+    weekday: WEEKDAYS[date.getUTCDay()],
+    time: `${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}`,
+  };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // App Promotion To-Do Queue (software factory apps only; not articles)
 // ─────────────────────────────────────────────────────────────────────────────
 const QUEUE_CONFIG_KEY = 'distribution_queue';
@@ -1710,6 +1866,154 @@ const server = createServer(async (req, res) => {
           return sendJson(res, 200, { status: 'ok', deleted: targetId });
         }
       }
+    }
+
+    // ----------------------------------------------------
+    // API: owner decisions & app inventory
+    //
+    // `origin` is the honest part of this payload: `factory-main` means the rows came from the
+    // software factory's own queue a moment ago, `fallback-copy` means the fetch failed and these
+    // are the rows committed in this repo. The UI renders that difference.
+    // ----------------------------------------------------
+    if (url.pathname === '/api/approvals' && req.method === 'GET') {
+      let local = { items: [] };
+      try {
+        local = JSON.parse(readFileSync(APPROVALS_FILE, 'utf8'));
+      } catch (err) {
+        local = { items: [], error: err.message };
+      }
+
+      const factory = await fetchFactoryText(FACTORY_APPROVALS_URL, 'approvals');
+      let items = [];
+      let updated = '';
+      let origin = 'fallback-copy';
+      let fetchError = factory.error;
+      if (factory.data) {
+        try {
+          const parsed = JSON.parse(factory.data);
+          if (Array.isArray(parsed.items) && parsed.items.length) {
+            items = parsed.items;
+            updated = parsed.updated || '';
+            origin = 'factory-main';
+            fetchError = null;
+          }
+        } catch (err) {
+          fetchError = `factory queue unreadable (${err.message})`;
+        }
+      }
+      if (!items.length) {
+        items = Array.isArray(local.items) ? local.items : [];
+        updated = local.updated || '';
+      }
+
+      const registry = await fetchFactoryText(FACTORY_REGISTRY_URL, 'registry');
+      let apps = [];
+      let appsError = null;
+      if (registry.data) {
+        apps = parseProductRegistry(registry.data);
+        // The inventory is six products; a short parse means the source shape moved, and half a
+        // list would read as "these are all the apps". Say so instead.
+        if (apps.length < 4) appsError = `registry parsed ${apps.length} product(s) — expected the whole inventory`;
+      } else {
+        appsError = `registry unreachable (${registry.error || 'no data'})`;
+      }
+
+      const pending = items.filter((item) => item.state === 'pending');
+      return sendJson(res, 200, {
+        status: 'ok',
+        origin,
+        updated,
+        checked_at: new Date().toISOString(),
+        fetch_error: fetchError,
+        source: FACTORY_APPROVALS_URL,
+        counts: {
+          pending: pending.length,
+          approved: items.filter((item) => item.state === 'approved').length,
+          apps_live: apps.filter((app) => app.status === 'live').length,
+          apps_retired: apps.filter((app) => app.status !== 'live').length,
+        },
+        items,
+        apps,
+        apps_error: appsError,
+      });
+    }
+
+    // ----------------------------------------------------
+    // API: what's next — article runs and app-harvest sweeps
+    // ----------------------------------------------------
+    if (url.pathname === '/api/calendar' && req.method === 'GET') {
+      const horizonDays = Math.min(21, Math.max(3, parseInt(url.searchParams.get('days') || '10', 10) || 10));
+      const now = new Date();
+      const until = new Date(now.getTime() + horizonDays * 24 * 60 * 60 * 1000);
+
+      const registry = await getLocalVerticals();
+      const runs = [];
+      for (const vertical of registry) {
+        const modes = [];
+        if (vertical.news_enabled !== false && vertical.cadence) modes.push({ mode: 'news', cron: vertical.cadence });
+        if (vertical.evergreen_enabled !== false && vertical.evergreen_cadence) modes.push({ mode: 'evergreen', cron: vertical.evergreen_cadence });
+        for (const entry of modes) {
+          const spec = cronSpec(entry.cron);
+          if (!spec) continue;
+          for (const at of nextCronRuns(spec, now, until)) {
+            runs.push({
+              ...stampUtc(at),
+              vertical: vertical.id,
+              label: vertical.label,
+              mode: entry.mode,
+              cron: entry.cron,
+              domain: vertical.target_domain || '',
+            });
+          }
+        }
+      }
+      runs.sort((a, b) => a.iso.localeCompare(b.iso));
+
+      const byDay = [];
+      for (const run of runs) {
+        let bucket = byDay[byDay.length - 1];
+        if (!bucket || bucket.day !== run.day) {
+          bucket = { day: run.day, weekday: run.weekday, runs: [] };
+          byDay.push(bucket);
+        }
+        bucket.runs.push(run);
+      }
+
+      let harvest = { sweeps: [] };
+      try {
+        const queueFile = JSON.parse(readFileSync(HARVEST_FILE, 'utf8'));
+        const spec = cronSpec(queueFile.slot_cron);
+        const slots = spec ? nextCronRuns(spec, now, new Date(now.getTime() + 120 * 24 * 60 * 60 * 1000)) : [];
+        const size = Math.max(1, Number(queueFile.sweep_size) || 2);
+        const queue = Array.isArray(queueFile.queue) ? queueFile.queue : [];
+        const sweeps = slots.slice(0, 6).map((at, index) => ({
+          ...stampUtc(at),
+          verticals: queue.slice(index * size, index * size + size),
+        }));
+        harvest = {
+          updated: queueFile.updated || '',
+          source: queueFile.source || '',
+          slot_label: queueFile.slot_label || '',
+          slot_cron: queueFile.slot_cron || '',
+          sweep_size: size,
+          total_queued: queue.length,
+          uncovered_after: Math.max(0, queue.length - sweeps.length * size),
+          sweeps,
+        };
+      } catch (err) {
+        harvest = { sweeps: [], error: err.message };
+      }
+
+      return sendJson(res, 200, {
+        status: 'ok',
+        now: now.toISOString(),
+        horizon_days: horizonDays,
+        total_runs: runs.length,
+        vertical_count: registry.length,
+        next_run: runs[0] || null,
+        by_day: byDay,
+        harvest,
+      });
     }
 
     // ----------------------------------------------------

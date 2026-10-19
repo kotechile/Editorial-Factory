@@ -102,6 +102,8 @@ try {
     // the list because a removed route must not become a way in — the access check runs first, so
     // it answers 401 like everything else rather than 404-with-no-secret.
     '/api/distribution/tasks': 'a removed admin route',
+    '/api/approvals': 'the owner decision queue',
+    '/api/calendar': 'the forward calendar',
   };
   for (const [path, what] of Object.entries(anon)) {
     const res = await probe(base, path);
