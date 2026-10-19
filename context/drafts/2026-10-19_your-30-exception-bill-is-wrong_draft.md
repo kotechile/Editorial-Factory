@@ -22,7 +22,7 @@ An order that needs a human is expensive. The cost never lands on one line of th
 
 Go Autonomous sells exception automation. It puts the split at 20% to 40% of order volume and 60% to 80% of total order-management cost [1].
 
-Treat that as a vendor's claim. The page shows no sample and no method. The shape of it is still worth sitting with.
+My read: that is a vendor's claim. The page shows no sample and no method. The shape of it is still worth sitting with.
 
 The same page runs a made-up shop at 400 orders a day. A 25% exception rate is 100 exceptions a day. At 45 minutes each, that is 75 hours of rep time before anyone touches freight, credit or the customer [1].
 
