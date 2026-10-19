@@ -268,6 +268,7 @@ one.
   `tee /tmp/loop3.log`, check the `_final.md` mtime/size afterwards, and poll the session
   (`process action=wait`, clamped to ~180 s per call, repeatedly until `exited`) instead of assuming
   the rewrite finished.
+- **A cron session's foreground terminal call is cut at ~420 s whatever timeout is asked for, so launch the driver detached (learned 2026-10-19).** A `terminal(timeout=580)` call running `timeout 540 python3 scripts/loop3_<slug>.py 2>&1 | tee /tmp/loop3.log | tail -30` came back as `timed out after 420.0s`, killed the rewrite mid-generation, left `/tmp/loop3.log` empty and wrote no `_final.md` — the run had to be relaunched from scratch. Start the driver with the tool's `background=true` and `nohup python3 -u <driver> > /tmp/loop3.log 2>&1 &`, then poll (`sleep 45; tail /tmp/loop3.log`) until the `WROTE … final_verdict=` line and the `_final.md` file both exist. Absence of output is never evidence that the rewrite passed.
 - **A rewrite can re-cut a hand-set title past the standard and drop a brief's own qualification (learned
   2026-10-15).** The frontier re-emitted a hand-set 8-word title as an 11-word one ("…: Why 52% of Plans
   Lose to Last Period"), which scores 89 OK — not STRONG — so `publish_gate.title_gate` commissions
