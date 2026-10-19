@@ -1,6 +1,6 @@
 {
   "_note": "FOLLOW-UP COPY. The canonical decision queue is software-factory-core/context/approval_queue.json, which the PressFlow server fetches from main at runtime (PRESSFLOW_APPROVALS_URL). This copy is only what the Approvals tab shows when that fetch fails, so keep it level with the canonical file.",
-  "updated": "2026-10-19T00:58:00Z",
+  "updated": "2026-10-19T22:20:00Z",
   "source": "https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json",
   "items": [
     {
@@ -43,13 +43,14 @@
       "id": "duplicate-videos",
       "app": "Launch videos",
       "kind": "delete",
-      "state": "pending",
-      "headline": "Four duplicate launch-video copies are still public",
-      "detail": "The desk's first cuts sit beside the five videos the product pages embed, so each product has two films online.",
-      "impact": "Viewers and search find two versions of every film.",
-      "reply": "@Simon delete the duplicate launch videos",
+      "state": "resolved",
+      "headline": "Four superseded launch-video copies deleted from the channel",
+      "detail": "Done 2026-10-19 on the owner's instruction: the four superseded uploads the pages no longer embed (LdSoKLTfYjs, V-eli97M0q0, 4cNR2bt3mMg, uodX_D-Gqsw) were deleted via the YouTube API (HTTP 204 each, 0 resolve on re-read). The five embedded ids read public and untouched; all five product pages 200 with their own id; the launch_videos ledger repointed to the survivors (5/5 live, 0 mismatches).",
+      "impact": "Closed — one film per product online and no dead pointers.",
+      "reply": "",
       "opened": "",
-      "updated": "2026-10-18"
+      "updated": "2026-10-19",
+      "closed": "2026-10-19"
     },
     {
       "id": "career-capital-home",
