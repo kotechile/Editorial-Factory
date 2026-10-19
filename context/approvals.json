@@ -1,6 +1,6 @@
 {
  "_note": "FOLLOW-UP COPY. The canonical decision queue is software-factory-core/context/approval_queue.json, which the PressFlow server fetches from main at runtime (PRESSFLOW_APPROVALS_URL). This copy is only what the Approvals tab shows when that fetch fails, so keep it level with the canonical file.",
- "updated": "2026-10-19T00:25:00Z",
+ "updated": "2026-10-19T00:40:00Z",
  "source": "https://raw.githubusercontent.com/kotechile/factory/main/context/approval_queue.json",
  "items": [
   {
@@ -67,13 +67,13 @@
    "id": "ide-header-gap",
    "app": "",
    "kind": "fix",
-   "state": "pending",
+   "state": "resolved",
    "headline": "One-line fix for the IDE header gap and gutter alignment",
-   "detail": "A long file title touches the zero-egress badge (measured 0.0 px), and a wrapped line in the JSON field drifts off its gutter number. Both are shared primitives, so the factory will not touch them without your word.",
-   "impact": "The build gate keeps failing on a cosmetic defect it will not restyle unapproved.",
-   "reply": "@Simon fix the header gap",
+   "detail": "Done 2026-10-19 (owner: `@Simon fix the header gap`): both IDE chrome bars carry `gap-x-3` + `flex-wrap`, `min-w-0`/`truncate` on the title and `shrink-0` on the badge group, and below `sm` the badge prints the claim alone (\"ZERO EGRESS\"). Measured before the fix: the editable bar's badge overran the bar and painted over the file title at 375 px (−34.0 px on all four products). /parcelproof's Recovery-summary badge no longer squeezes to a two-line pill. A new build-time guard in tests/e2e/text-geometry.spec.ts measures the chrome boxes at 1280 px and 375 px and was proven to bite by reverting the components. Gate green end to end (96/96 Playwright, visual-QA 24/24).",
+   "impact": "Closed — the badge never touches the file title at 1280 px or 375 px, and the build fails if it does.",
+   "reply": "",
    "opened": "2026-10-17",
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   },
   {
    "id": "canopyproof",
