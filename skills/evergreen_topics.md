@@ -122,6 +122,8 @@ Then run the gate:
 python3 scripts/evergreen_gate.py --brief context/recon_proposals/YYYY-MM-DD_<vertical>_evergreen_brief.md
 ```
 
+**The verified brief keeps its own filename — a same-day news run usually already owns the plain one (learned 2026-10-19).** Writing the evergreen verification to `YYYY-MM-DD_<vertical>_verified_brief.md` silently overwrites the news track's file for the same vertical and date; `scripts/test_synthesize_topics.py` then fails the build with the news angle brief's `synthesis:` anchors "absent from" the overwritten file, which reads like a broken synthesis rather than a filename collision. Write `YYYY-MM-DD_<vertical>_evergreen_verified_brief.md` (the shape the 2026-10-05 and 2026-10-12 meio runs used), and if the plain file was already clobbered, restore it from git (`git show <commit>:<path> > <path>`) before committing.
+
 It fetches every row, prints the evidence it found for each figure, and writes the
 `<!-- evergreen-gate: -->` marker on pass. **Editing a row after that makes the marker stale, and
 `scripts/verify.sh` reads a stale or missing marker as a build failure** — re-run the gate.
