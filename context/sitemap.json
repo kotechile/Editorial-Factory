@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T18:10:03Z",
+  "updated_at": "2026-10-19T18:41:42Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2216,6 +2216,24 @@
       "date": "2026-10-17",
       "public": true,
       "url": "https://aichieve.net/your-mexico-hedge-renewal-risk/"
+    },
+    {
+      "slug": "2026-10-19_3-percent-cap-never-covers-your-addition",
+      "title": "3% Cap Never Covers Your Addition",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-19",
+      "public": false
     },
     {
       "slug": "2026-10-19_answer-field-first-costs-38-points",

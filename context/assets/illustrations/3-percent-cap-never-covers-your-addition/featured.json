@@ -1,0 +1,88 @@
+{
+  "slug": "3-percent-cap-never-covers-your-addition",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A dark suburban house at dusk attached to a brightly illuminated newly built wing.",
+      "caption": "New home additions land on the tax roll at full market price, bypassing the protection of assessment caps.",
+      "title": "Property Tax Addition Step",
+      "bytes": 309358,
+      "sha256": "sha256:e6cd84329826e83cd47059528d880f44"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph of a residential home at blue hour, asymmetric off-centre composition. The original dark suburban house sits in deep blue ambient shadow on the left, while a newly constructed, modern timber and glass addition on the right wing glows intensely with warm amber interior lighting. 35mm anamorphic wide lens, crisp atmospheric depth, long-exposure calm with no moving figures, deep shadows, clean architectural geometry, premium editorial cover standard.",
+  "negative_prompt": "text, letters, numbers, watermark, UI, typography, garbled, blurred",
+  "rationale": "Architectural night perfectly captures the physical reality of a home addition. By lighting the new wing brightly against the dark original structure, it visually represents the distinct, uncapped 'new value' attaching to the permanent base.",
+  "cue": "enters the roll at full value",
+  "subject": "a newly constructed modern home addition glowing warmly alongside a dark older house",
+  "core_thesis": "Assessment caps limit tax drift on an existing home, but newly built additions are assessed at full market value immediately upon completion.",
+  "core_conflict": "capped historical property base vs uncapped new addition value",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "Additions Bypass The Tax Cap. A dark suburban house at dusk attached to a brightly illuminated newly built wing.",
+  "caption": "Additions Bypass The Tax Cap: New rooms land on the tax roll at full market price.",
+  "title": "Additions Bypass The Tax Cap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/3-percent-cap-never-covers-your-addition/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 162652,
+  "sha256": "sha256:26b133d5fa4d03e1405be0e976c0eb2841b9ce58dd354e8032db46ceb1df929d",
+  "source_hash": "sha256:3abd412edc98d61df9b5c5674cbeb591",
+  "source_chars": 4265,
+  "task_id": "006e7aa8e14e9fb3e447868573f4dfc6",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/006e7aa8e14e9fb3e447868573f4dfc6_1792435284108.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph of a residential home at blue hour, asymmetric off-centre composition. The original dark suburban house sits in deep blue ambient shadow on the left, while a newly constructed, modern timber and glass addition on the right wing glows intensely with warm amber interior lighting. 35mm anamorphic wide lens, crisp atmospheric depth, long-exposure calm with no moving figures, deep shadows, clean architectural geometry, premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-19T18:41:31+00:00",
+  "overlay": {
+    "kicker": "PROPERTY TAX // HOME ADDITIONS",
+    "title": "ADDITIONS BYPASS THE TAX CAP",
+    "hook": "New rooms land on the tax roll at full market price",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.75,
+    "target": 4.5,
+    "clutter": 0.093,
+    "region_rgb": [
+      11,
+      33,
+      47
+    ],
+    "binding_rgb": [
+      16,
+      48,
+      73
+    ],
+    "title_lines": [
+      "ADDITIONS BYPASS",
+      "THE TAX CAP"
+    ],
+    "subject": 0.044,
+    "ink_subject": 0.02,
+    "spike": 0.141,
+    "generated_at": "2026-10-19T18:41:31+00:00"
+  }
+}
