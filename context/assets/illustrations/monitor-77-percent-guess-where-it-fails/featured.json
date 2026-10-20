@@ -1,0 +1,88 @@
+{
+  "slug": "monitor-77-percent-guess-where-it-fails",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An electrical wire with a sensor clamp fraying into a messy tangle in shadow.",
+      "caption": "While a clamp provides exact measurements, software struggles to guess the breakdown of multiple appliances.",
+      "title": "Energy Monitor Clamp and Frayed Wires",
+      "bytes": 255009,
+      "sha256": "sha256:2fce366f870b42bd59e92cb32cf5315f"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "cinematic film still, anamorphic 35mm look, wide establishing composition. Extreme asymmetric depth. Off-centre, a thick industrial electrical wire is tightly gripped by a precise, modern black plastic clamp sensor with a single glowing amber LED. To the right, the wire frays and splinters into a chaotic, messy tangle of thinner wires disappearing into deep shadow. Crisp atmospheric depth, single strong practical utility light casting dramatic shadows, restrained teal-and-amber palette, high-contrast chiaroscuro lighting on brushed copper and textured polymer.",
+  "negative_prompt": "text, typography, watermark, letters, numbers, people, hands, faces",
+  "rationale": "Cinematic still is chosen to dramatize the physical reality of the electrical utility panel and the collapse of certainty. A moody, atmospheric shot of an electrical clamp captures the 'one big thing'\u2014the stark contrast between solid physical measurement and messy inference.",
+  "cue": "A panel monitor measures the circuits it clamps",
+  "subject": "a heavy electrical main wire with a physical clamp sensor, transitioning into a chaotic tangle of thinner wires in shadow",
+  "core_thesis": "Home energy monitors guess wildly at appliance usage when multiple devices run simultaneously, plummeting to 10% precision for hard-to-track loads like dishwashers.",
+  "core_conflict": "Physical measurement certainty (clamp) vs software inference collapse (guessing).",
+  "composition": "extreme asymmetric depth, subject off-centre",
+  "alt_text": "Energy Monitor Blind Spots. An electrical wire with a sensor clamp fraying into a messy tangle in shadow.",
+  "caption": "Energy Monitor Blind Spots: Why appliance breakdowns in your app are often wrong.",
+  "title": "Energy Monitor Blind Spots",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/monitor-77-percent-guess-where-it-fails/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 138256,
+  "sha256": "sha256:e8617911f02c46ab511e000c913c420d225347baaf5e8a4f894c98cedf0b4a49",
+  "source_hash": "sha256:c4271f450e9d6f9ca956ec34120b7c46",
+  "source_chars": 6675,
+  "task_id": "2f0320dfaa8892402954666fedc448c4",
+  "credits": 5.0,
+  "cost_ms": 69,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2f0320dfaa8892402954666fedc448c4_1792523530188.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "cinematic film still, anamorphic 35mm look, wide establishing composition. Extreme asymmetric depth. Off-centre, a thick industrial electrical wire is tightly gripped by a precise, modern black plastic clamp sensor with a single glowing amber LED. To the right, the wire frays and splinters into a chaotic, messy tangle of thinner wires disappearing into deep shadow. Crisp atmospheric depth, single strong practical utility light casting dramatic shadows, restrained teal-and-amber palette, high-contrast chiaroscuro lighting on brushed copper and textured polymer.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-20T19:12:13+00:00",
+  "overlay": {
+    "kicker": "SMART HOME // LOAD DISAGGREGATION",
+    "title": "ENERGY MONITOR BLIND SPOTS",
+    "hook": "Why appliance breakdowns in your app are often wrong",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.13,
+    "target": 4.5,
+    "clutter": 0.18,
+    "region_rgb": [
+      32,
+      40,
+      41
+    ],
+    "binding_rgb": [
+      81,
+      67,
+      64
+    ],
+    "title_lines": [
+      "ENERGY MONITOR",
+      "BLIND SPOTS"
+    ],
+    "subject": 0.077,
+    "ink_subject": 0.042,
+    "spike": 0.218,
+    "generated_at": "2026-10-20T19:12:13+00:00"
+  }
+}
