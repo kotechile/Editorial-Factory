@@ -194,6 +194,7 @@ prints no social copy and reads no social credential.
   permanently deleted, or has a published post edited (debounced 10 min) — before that only a
   transition INTO publish rebuilt, so a removal was silent. Trigger one by hand whenever a CMS change
   must reach readers immediately; `GET /api/v1/deploy` is gone, it is a POST (see `docs/VPS_WIRING.md`).
+- **`publish.py`'s delivery line counts ABSOLUTE hrefs, so a correctly stamped block reads "0 internal link(s)" (learned 2026-10-20).** `scripts/internal_links.py` stamps site-relative paths on purpose, and the push summary's delivery check greps for the front's own absolute URL — so a publish that carried three `## Related reading` links and wrote them back to the Supabase row still printed `0 internal link(s)` beside `3 internal link(s)` in the earlier link note. Do not re-run the push or treat it as a defect: read the rendered page (`curl -sL <front>/<slug>/ | grep -o 'href="/[a-z0-9-]*/"'`) or the CMS REST `content.rendered`, which showed all three paths and the block.
 - **An internal link is "live" only as of the index build, and the artifact's own slug must be excluded.**
   `context/internal_links.json` is built from each frontend's own sitemap + page content (canonical-
   checked; the CMS is not a candidate source) and the generated block stamps site-relative paths, so
