@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T13:13:22Z",
+  "updated_at": "2026-10-20T17:40:18Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2347,7 +2347,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-19",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-30-exception-bill-is-wrong/"
     },
     {
       "slug": "2026-10-19_your-75000-btu-tank-venting-trap",
@@ -2444,6 +2445,23 @@
       "url": "https://wellroost.com/your-upgrades-9-silent-reset/"
     },
     {
+      "slug": "2026-10-20_rerun-diff-measures-gpu",
+      "title": "Your 9% Drop: Not the Model",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-20",
+      "public": false
+    },
+    {
       "slug": "2026-10-20_your-180-day-model-is-already-wrong",
       "title": "Your 180-day model is already wrong",
       "vertical": "nhil_infrastructure_ops",
@@ -2459,7 +2477,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-180-day-model-is-already-wrong/"
     },
     {
       "slug": "2026-10-20_your-24gb-card-is-4gb-short",
@@ -2477,7 +2496,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-24gb-card-is-4gb-short/"
     },
     {
       "slug": "2026-10-20_your-3-0-0-feed-stuck-until-2027",
@@ -2495,7 +2515,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-3-0-0-feed-stuck-until-2027/"
     },
     {
       "slug": "2026-10-20_your-gpu-landlord-80-wont-survive",
@@ -2513,7 +2534,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-gpu-landlord-80-wont-survive/"
     },
     {
       "slug": "2026-10-20_your-locks-blind-90-bet",
@@ -2531,7 +2553,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-locks-blind-90-bet/"
     },
     {
       "slug": "2026-10-20_your-trace-wont-prove-925-points",
@@ -2549,7 +2572,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-trace-wont-prove-925-points/"
     }
   ]
 }

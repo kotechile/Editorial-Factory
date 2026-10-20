@@ -1,0 +1,90 @@
+{
+  "slug": "rerun-diff-measures-gpu",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Identical modular blocks routing into varying output stacks inside a mechanical bay.",
+      "caption": "Unless batch invariance is locked, identical inputs can yield varying outputs based on the processing sequence.",
+      "title": "Batch-Invariance-Hardware-Variance",
+      "bytes": 1614899,
+      "sha256": "sha256:18f300f261e68cc6e0daf7270de1fdb9"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a modular mechanical routing bay resting on a weathered concrete surface. Asymmetric, off-centre layout with generous negative space. Three identical engineered input blocks enter a central latched sorting housing, but are arranged into differing, uneven output stacks on the right. The parts are made of matte muted polymers and brushed steel with visible moulding seams and physical contact shadows. One directional key light rakes across the structured assembly, casting long shadows. Muted modern editorial palette.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, printed words, floating shapes",
+  "rationale": "The story is about structural variance without a literal physical object. A clay render of a small mechanical assembly perfectly captures the abstract concept of inputs being reordered and outputting differently based on the system's arrangement.",
+  "cue": "A score belongs to the run",
+  "subject": "identical modular blocks routing into varying output stacks",
+  "core_thesis": "A score belongs to the run, not to the model, because identical requests yield different answers when hardware setups like batch size or processor count change.",
+  "core_conflict": "Algorithmic consistency vs. hardware processing variance.",
+  "composition": "asymmetric, off-centre layout",
+  "alt_text": "Hardware Noise In LLM Tests. Identical modular blocks routing into varying output stacks inside a mechanical bay.",
+  "caption": "Hardware Noise In LLM Tests: Why fixed models give different answers on busy chips.",
+  "title": "Hardware Noise In LLM Tests",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/rerun-diff-measures-gpu/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1209576,
+  "sha256": "sha256:e0f51ef9cc4b2e6e3934a890ca72290359589b8c205a6c4ca7f177776fd42863",
+  "source_hash": "sha256:4ee457315fd05b5fcc5c9d1927208f41",
+  "source_chars": 5629,
+  "task_id": "e06034912479b3c48b320245ace99a7b",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_72652bffdd673652d439a8b5147a7e43.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a modular mechanical routing bay resting on a weathered concrete surface. Asymmetric, off-centre layout with generous negative space. Three identical engineered input blocks enter a central latched sorting housing, but are arranged into differing, uneven output stacks on the right. The parts are made of matte muted polymers and brushed steel with visible moulding seams and physical contact shadows. One directional key light rakes across the structured assembly, casting long shadows. Muted modern editorial palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-20T17:40:04+00:00",
+  "overlay": {
+    "kicker": "AI EVALUATIONS // HARDWARE NOISE",
+    "title": "HARDWARE NOISE IN LLM TESTS",
+    "hook": "Why fixed models give different answers on busy chips",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.04,
+    "target": 4.5,
+    "clutter": 0.098,
+    "region_rgb": [
+      97,
+      74,
+      49
+    ],
+    "binding_rgb": [
+      103,
+      73,
+      49
+    ],
+    "title_lines": [
+      "HARDWARE NOISE",
+      "IN LLM TESTS"
+    ],
+    "subject": 0.059,
+    "ink_subject": 0.023,
+    "spike": 0.205,
+    "generated_at": "2026-10-20T17:40:04+00:00"
+  }
+}
