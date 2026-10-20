@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T19:44:05+00:00",
+  "generated_at": "2026-10-20T14:17:09+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -1758,6 +1758,29 @@
       ],
       "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
       "modified": "2026-10-16T01:44:51",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-locks-blind-90-bet",
+      "title": "Your Lock's Blind 90% Bet",
+      "url": "https://wellroost.com/your-locks-blind-90-bet/",
+      "path": "/your-locks-blind-90-bet/",
+      "sites_live": {
+        "wellroost.com": "/your-locks-blind-90-bet/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Ring's new smart lock keeps working when your home Wi-Fi dies, because it routes around your router. The deadbolt stays online through Amazon Sidewalk, a web\u2026",
+      "modified": "2026-10-20T12:10:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3936,6 +3959,25 @@
       "site": "aichieve.net",
       "kind": "tool",
       "id": null,
+      "slug": "interactive-assets",
+      "title": "Enterprise Decision Assets",
+      "url": "https://aichieve.net/tools/interactive-assets/",
+      "path": "/tools/interactive-assets/",
+      "sites_live": {
+        "aichieve.net": "/tools/interactive-assets/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Embedded interactive acquisition engines for systemic AI risk, GPU cluster economics, and freight exception recovery.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "tool",
+      "id": null,
       "slug": "master-asset-tco",
       "title": "Master Asset & Software TCO Calculator",
       "url": "https://aichieve.net/tools/master-asset-tco/",
@@ -4093,6 +4135,75 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-3-0-0-feed-stuck-until-2027",
+      "title": "Your 3.0.0 Feed Stuck Until 2027",
+      "url": "https://aichieve.net/your-3-0-0-feed-stuck-until-2027/",
+      "path": "/your-3-0-0-feed-stuck-until-2027/",
+      "sites_live": {
+        "aichieve.net": "/your-3-0-0-feed-stuck-until-2027/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your control tower's 3.0.0 data feed is stuck until 2027. The Digital Container Shipping Association (DCSA) released a new version of its container tracking\u2026",
+      "modified": "2026-10-20T13:13:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-24gb-card-is-4gb-short",
+      "title": "Your 24GB Card Is 4GB Short: The Label Trap",
+      "url": "https://aichieve.net/your-24gb-card-is-4gb-short/",
+      "path": "/your-24gb-card-is-4gb-short/",
+      "sites_live": {
+        "aichieve.net": "/your-24gb-card-is-4gb-short/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Nvidia calls Nemotron 3.5 Bolt its 24-gigabyte (GB) build, but the company's own setup guide requires a 28GB system at minimum.",
+      "modified": "2026-10-20T12:40:16",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-30-exception-bill-is-wrong",
+      "title": "Your $30 Exception Bill Is Wrong",
+      "url": "https://aichieve.net/your-30-exception-bill-is-wrong/",
+      "path": "/your-30-exception-bill-is-wrong/",
+      "sites_live": {
+        "aichieve.net": "/your-30-exception-bill-is-wrong/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your $30 exception bill is wrong, and the math proves it.",
+      "modified": "2026-10-19T20:10:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-32gb-card-gone",
       "title": "Your 32GB Card, Gone: 41% Memory Hike",
       "url": "https://aichieve.net/your-32gb-card-gone/",
@@ -4109,6 +4220,29 @@
       ],
       "excerpt": "Nvidia has reportedly stopped making the only consumer graphics card with 32 gigabytes (GB) of video memory.",
       "modified": "2026-10-15T12:33:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-180-day-model-is-already-wrong",
+      "title": "Your 180-day model is already wrong",
+      "url": "https://aichieve.net/your-180-day-model-is-already-wrong/",
+      "path": "/your-180-day-model-is-already-wrong/",
+      "sites_live": {
+        "aichieve.net": "/your-180-day-model-is-already-wrong/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "The North American Electric Reliability Corporation (NERC) just cleared its first mandatory grid rules for data centers on a final stakeholder ballot.",
+      "modified": "2026-10-20T11:13:05",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4208,6 +4342,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-gpu-landlord-80-wont-survive",
+      "title": "Your GPU Landlord: 80% Won't Survive",
+      "url": "https://aichieve.net/your-gpu-landlord-80-wont-survive/",
+      "path": "/your-gpu-landlord-80-wont-survive/",
+      "sites_live": {
+        "aichieve.net": "/your-gpu-landlord-80-wont-survive/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Your graphics processing unit (GPU) landlord likely will not survive the decade as a standalone firm. Gartner expects more than 80% of neocloud providers\u2026",
+      "modified": "2026-10-20T11:46:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-hidden-quantity-gap",
       "title": "63.6% OTIF: Your Hidden Quantity Gap",
       "url": "https://aichieve.net/your-hidden-quantity-gap/",
@@ -4277,6 +4434,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-trace-wont-prove-925-points",
+      "title": "Your Trace Won't Prove 92.5 Points",
+      "url": "https://aichieve.net/your-trace-wont-prove-925-points/",
+      "path": "/your-trace-wont-prove-925-points/",
+      "sites_live": {
+        "aichieve.net": "/your-trace-wont-prove-925-points/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "A coding agent logs a step as complete when it failed silently, and in 53 to 100 percent of tested cases the model acts on that claim.",
+      "modified": "2026-10-20T10:41:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "zet-scale-ev-truck-residual-value-risk",
       "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn't the Reason",
       "url": "https://aichieve.net/zet-scale-ev-truck-residual-value-risk/",
@@ -4298,6 +4478,90 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1056,
+      "slug": "your-3-0-0-feed-stuck-until-2027",
+      "title": "Your 3.0.0 Feed Stuck Until 2027",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T13:13:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1053,
+      "slug": "your-24gb-card-is-4gb-short",
+      "title": "Your 24GB Card Is 4GB Short: The Label Trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T12:40:16",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1050,
+      "slug": "your-gpu-landlord-80-wont-survive",
+      "title": "Your GPU Landlord: 80% Won&#8217;t Survive",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T11:46:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1047,
+      "slug": "your-180-day-model-is-already-wrong",
+      "title": "Your 180-day model is already wrong",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T11:13:05",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1044,
+      "slug": "your-trace-wont-prove-925-points",
+      "title": "Your Trace Won&#8217;t Prove 92.5 Points",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T10:41:30",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1041,
+      "slug": "your-30-exception-bill-is-wrong",
+      "title": "Your $30 Exception Bill Is Wrong",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-19T20:10:30",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -5471,90 +5735,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-18T19:04:10",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 421,
-      "slug": "goods-tariff-relief-vs-vessel-fee",
-      "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back.",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 422,
-      "slug": "planning-ai-buys-capability-not-autonomy",
-      "title": "Planning AI Buys Capability, Not Autonomy",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 404,
-      "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
-      "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 395,
-      "slug": "zet-scale-ev-truck-residual-value-risk",
-      "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn&#8217;t the Reason",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 420,
-      "slug": "token-prices-just-halved-the-cfo-still-cant-read-the-bill",
-      "title": "Token Prices Just Halved. The CFO Still Can\u2019t Read the Bill.",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 462,
-      "slug": "same-day-race-undoes-route-optimization",
-      "title": "The Same-Day Delivery Race Is Undoing a Decade of Route Optimization",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:48",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

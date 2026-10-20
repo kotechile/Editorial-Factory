@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/heloc-at-8-vs-battery-that-earns/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility meter."
-image_caption: "As HELOC rates cross 8 percent, grid-connected home batteries offer a cash-funded alternative to financed home upgrades."
+image_alt: "Batteries Beat Remodels. Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility"
+image_caption: "Batteries Beat Remodels: Shifting from 8% remodels to grid-paying batteries."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

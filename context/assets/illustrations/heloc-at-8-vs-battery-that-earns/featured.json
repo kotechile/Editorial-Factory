@@ -1,7 +1,16 @@
 {
   "slug": "heloc-at-8-vs-battery-that-earns",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility meter.",
+      "caption": "As HELOC rates cross 8 percent, grid-connected home batteries offer a cash-funded alternative to financed home upgrades.",
+      "title": "Isometric Home Battery Grid Integration",
+      "bytes": 1005179,
+      "sha256": "sha256:d616d3eb2967ee7231f7f232f5540756"
+    }
+  ],
   "style": "technical_isometric",
   "style_label": "Technical isometric cutaway",
   "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
@@ -15,9 +24,9 @@
   "rationale": "An isometric cutaway perfectly illustrates the structural shift in home capital described in the article, contrasting the physical integration of a revenue-earning home battery system with the grid.",
   "cue": "revenue-earning assets like grid-connected batteries",
   "subject": "wall-mounted home battery wired to an electrical panel and utility meter",
-  "alt_text": "Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility meter.",
-  "caption": "As HELOC rates cross 8 percent, grid-connected home batteries offer a cash-funded alternative to financed home upgrades.",
-  "title": "Isometric Home Battery Grid Integration",
+  "alt_text": "Batteries Beat Remodels. Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility",
+  "caption": "Batteries Beat Remodels: Shifting from 8% remodels to grid-paying batteries.",
+  "title": "Batteries Beat Remodels",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -30,8 +39,8 @@
   "local_path": "context/assets/illustrations/heloc-at-8-vs-battery-that-earns/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1005179,
-  "sha256": "sha256:d616d3eb2967ee7231f7f232f5540756",
+  "bytes": 747386,
+  "sha256": "sha256:8399c892fdc00eccbc98e00bc4e1e29ef08c7c08c0f62bfacf837f6371487fb1",
   "source_hash": "sha256:80afdb24ea695f9050efe4c83e054026",
   "source_chars": 4484,
   "task_id": "b745a8b2f67013b588e8937859003240",
@@ -48,5 +57,34 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-03T15:55:40+00:00"
+  "generated_at": "2026-10-03T15:55:40+00:00",
+  "overlay": {
+    "kicker": "HOME EQUITY // GRID BATTERIES",
+    "title": "BATTERIES BEAT REMODELS",
+    "hook": "Shifting from 8% remodels to grid-paying batteries",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 12.96,
+    "target": 4.5,
+    "clutter": 0.118,
+    "region_rgb": [
+      248,
+      252,
+      248
+    ],
+    "binding_rgb": [
+      254,
+      254,
+      254
+    ],
+    "title_lines": [
+      "BATTERIES BEAT",
+      "REMODELS"
+    ],
+    "subject": 0.102,
+    "ink_subject": 0.053,
+    "spike": 0.298,
+    "generated_at": "2026-10-03T15:55:40+00:00"
+  }
 }

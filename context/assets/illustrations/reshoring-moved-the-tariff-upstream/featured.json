@@ -1,6 +1,6 @@
 {
   "slug": "reshoring-moved-the-tariff-upstream",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -62,6 +62,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Tariffs Move Upstream. Towering pallets of industrial plastic resin sacks and packaging molds in a cavernous warehouse at twi",
+      "caption": "Tariffs Move Upstream: New upstream tariffs threaten reshored supply chains.",
+      "title": "Tariffs Move Upstream",
+      "bytes": 150461,
+      "sha256": "sha256:602ce2fbc76e23573d2c76699a6e9a5e47dacc1a8f7bafd795d3dc78ad3aac19"
+    },
+    {
+      "revision": 9,
       "alt_text": "Tariffs Move Upstream. Towering pallets of industrial plastic resin sacks and packaging molds in a cavernous warehouse at twi",
       "caption": "Tariffs Move Upstream: New upstream tariffs threaten reshored supply chains.",
       "title": "Tariffs Move Upstream",

@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/heat-pumps-cheaper-to-run-pricier-to-buy/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Isometric cutaway of a heat pump unit showing internal components and two opposing tracks."
-image_caption: "The math behind a heat pump upgrade hinges on upfront costs rising just as operational savings grow."
+image_alt: "Heat Pump Break-Even Math. Isometric cutaway of a heat pump unit showing internal components and two opposing tracks."
+image_caption: "Heat Pump Break-Even Math: Rising gear costs offset growing utility bill savings."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

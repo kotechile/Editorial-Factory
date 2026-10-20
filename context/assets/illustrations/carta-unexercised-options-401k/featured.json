@@ -1,6 +1,6 @@
 {
   "slug": "carta-unexercised-options-401k",
-  "revision": 10,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -70,6 +70,14 @@
     },
     {
       "revision": 9,
+      "alt_text": "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des",
+      "caption": "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded.",
+      "title": "Why Options Go Unexercised",
+      "bytes": 138291,
+      "sha256": "sha256:b3a4e94b70a4ae7acdbd9a99b0f15362cd07ece28ef4f09cd9c18d1dff508306"
+    },
+    {
+      "revision": 10,
       "alt_text": "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des",
       "caption": "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded.",
       "title": "Why Options Go Unexercised",
