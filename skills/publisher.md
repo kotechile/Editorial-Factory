@@ -83,6 +83,12 @@ would look green while nothing reached a front (verify.sh §8.5 greps for the se
    treatment, the verbatim cue it read, the model, the sha256, the credits). This is persistence,
    not distribution: it is **not** approval-gated, but it is also not a template — the treatment is
    chosen per article and must not repeat the last four (`skills/illustration_director.md`).
+   **Check the alt text for truncation before reporting the image clean (learned 2026-10-20).** The art
+   director's alt text is generated prose and can come back cut mid-phrase ("…a door edge against a dark"),
+   which is a real accessibility defect no gate reads — the publish gate scores the article body, not the
+   media record. Read `alt_text` back off the media id after the push; if it does not end on a sentence,
+   PATCH the media's `alt_text` with a complete sentence and update the sidecar to match, so the CMS and the
+   provenance record agree.
    Idempotent by content (an unchanged article reuses its image; `--force` regenerates), skippable
    with `--no-illustration` or `ILLUSTRATION_ENABLED=false`, and a failure never blocks the
    publish: `scripts/cron-wp-drafts.sh` re-runs it for artifacts still missing an image *before*

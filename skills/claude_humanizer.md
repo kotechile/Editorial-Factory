@@ -280,6 +280,11 @@ one.
   a rewrite expanded PJM to "Pennsylvania-New Jersey-Maryland Interconnection", a name the run never
   fetched; the acronym-first gloss ("PJM (the grid operator for 13 states and Washington, D.C.)")
   satisfies the accessibility gate without asserting an unverified legal name.
+  **A rewrite can also "fix" an acronym flag with a tautology (learned 2026-10-20).** The checker wants
+  the token expanded on first use, and the cheapest way to pass it is to print the brand's own name back
+  at itself — observed as "LG Electronics (LG)" on a smart-home draft, which reads like a typo and teaches
+  the reader nothing. Gloss what the entity *is* ("LG (the electronics maker that builds the cameras)"),
+  or drop the brand for a plain noun phrase — never an echo of the acronym.
 - **Run Loop 3 in the foreground when the run is a cron/one-shot session (learned 2026-10-10).** A
   background `terminal(background=true)` humanize run gets no completion notification in a cron
   context (the session cannot receive async completions), so the per-attempt log — verdict, Flesch,
