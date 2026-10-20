@@ -44,6 +44,7 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_verified_brief.md`:
 ```
 
 ## 5. Gate rules
+- **A vendor's memory or capacity label is not its deployment envelope — verify the table, not the product name (learned 2026-10-20).** A model or box marketed at a round number fits that number only in the vendor's narrowest configuration. Observed: NVIDIA's Nemotron 3.5 Bolt ships as "the 24GB build", its research page sizes the architecture for "a footprint below 24 GB at batch size 1 and 128K context", and the model card's own deployment line reads "RTX discrete GPUs (32GB+ / 48GB+); 28GB and 32GB recipes below" — the label excluded the vision encoder, the speculative drafter and the context cache, so the card the label implied was four gigabytes short of the smallest recipe the vendor publishes. Extract the *envelope* (recipes, supported-hardware list, what the count excludes) beside the headline capacity, and check what hardware the benchmark number ran on: that run's 84 tokens a second came from a 128GB laptop, not the 24GB card the name implies. Apply the same test to any "runs on X GB" claim, to VRAM, and to a model's parameter count.
 - Only **VERIFIED** claims survive into drafting; FLAGGED claims carry their caveat.
 - **REMOVED claims are deleted**, not reworded into plausibility.
 - **Dual-Anchor Gate:** In a synthesis brief, *both* Signal A and Signal B must have at least 2 VERIFIED claims. If either leg fails primary verification, the synthesis is deemed under-sourced; return to the Judge to test a different pair or single signal.

@@ -110,6 +110,14 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > (each rested on the unmeasured page) and adopted a pair the token layer could not see, so answer every seeded
 > candidate in the brief's runner-ups and say why; and a page with no measurement can corroborate a collision
 > (as friction: what the industry ships) but can never serve as a dual-authority anchor alongside a measured leg.
+>
+> **A vertical that has always seeded "no valid pair" can produce candidates the moment its rows span domains (learned
+> 2026-10-20).** `workstation_compute_economics` seeded `candidates=0` on 2026-10-06 and 2026-10-13 — both sweeps were
+> dominated by one vendor's pricing story — and seeded `rows=9 candidates=6` on 2026-10-20 once the window carried a
+> first-party model page, a launch-day retail price list, two independent price trackers (euros and dollars) and a
+> hands-on write-up. The seeded pairs are then *input*: that run the Judge scored all six, adopted a pair the helper
+> ranked third (the envelope needed a dollar-priced pool beside it to become one comparison) and answered the rest in
+> the brief's runner-ups. So a zero-candidate sweep is evidence about the row set's domain mix, not about the vertical.
 
 > **A sweep can legitimately rest on live status pages — date them by observation and put the event date in the claim cell (learned 2026-10-16).**
 > Some verticals' strongest in-window signal is a *state of the world* rather than a dated article: a regulator's project page
