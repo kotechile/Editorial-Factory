@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T18:11:23Z",
+  "updated_at": "2026-10-20T18:39:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2458,6 +2458,24 @@
         "At a glance"
       ],
       "target_persona": "it_ops_leader",
+      "date": "2026-10-20",
+      "public": false
+    },
+    {
+      "slug": "2026-10-20_monolith-split-price-the-premium",
+      "title": "Your Monolith Split: 20% More Cost, 90% Slower Debt",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
       "date": "2026-10-20",
       "public": false
     },
