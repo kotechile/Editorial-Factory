@@ -348,6 +348,26 @@ concluding a host is unusable, and check the whole host's article set rather tha
 
 **The "microservices tax" was wrongly recorded as unfetchable; its anchors were mis-probed (learned 2026-10-20).** The 2026-10-13 brief dropped the vertical's own flagship pillar on the claim that "Segment's first-party post returns a Twilio marketing shell whose prose survives but whose outcome figures do not" — but `segment.com/blog/goodbye-microservices/` retrieves at ~39 KB with every outcome figure as plain text ("consolidate the now over 140 services into a single service", "3 full-time engineers spending most of their time just keeping the system alive", "deploy 140+ services for a change to one of the shared libraries", 32 shared-library fixes before the merge against 46 after). The Prime Video post is genuinely dead (redirects to an Amazon Entertainment landing page with no numeric tokens) and DORA pages are genuinely client-rendered — but that is two anchors, not the beat. The measured pairs that do carry it: `arxiv.org/html/` full texts of the technical-debt migration case study (1902.06282v3 — the debt slope 89.76% smaller after migrating, against overall development cost up "more than 20%") and of the 53-practitioner industry survey (2408.10434v1 — 50.9% incremental migration, 75.5% naming scalability), plus `onetonline.org` for the wage anchor that prices engineers spent on the distributed system. When a candidate is dropped for unreachable anchors, re-probe the *whole* anchor set the next time the pillar comes up rather than inheriting the earlier verdict.
 
+**Hosts probed live 2026-10-20, building a panel-monitor inference-limits brief (the `smart_home_telemetry` evergreen).**
+Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` again, twice over — a NILM benchmark
+paper (2608.18780v2) with both its abstract result ("an average precision of 90% and recall of 96% for two-appliance
+classification, and 77% precision and 80% recall for four appliances on the REDD dataset") *and* its Table III's
+per-appliance collapse (dish washer 0.10 precision / 0.08 recall beside fridge 0.84/0.94), plus a second
+identification paper (2301.03018v2) carrying 88.9% / 80.67% four-class accuracy and its authors' own "for carefully
+chosen values of thresholds" qualifier; `github.com/<owner>/<repo>` (a 53 KB README whose per-appliance table runs
+0.5671 for the microwave to 0.8478 for the washing machine — the cheapest *reproduction* anchor on this beat, and it
+must be labelled measured-but-not-peer-reviewed); `eia.gov/energyexplained/use-of-energy/homes.php` (52% of household
+annual energy use to space heating and air conditioning, 2020); and `standby.lbl.gov` (Berkeley Lab: standby power is
+"5-10% of residential electricity use", typical products "less than 0.5 watts") with `synology.com` product pages for
+a watts spec. **Unreachable to the verifier:** `mdpi.com` and `dl.acm.org` (the MDPI reviews and the NILM-BENCH paper
+are HTTP-blocked — cite the arXiv equivalent or drop the row), `escholarship.org` (answers `fetched` with a
+**zero-length body**, so a preprint-repository page is not a source row), `raspberrypi.com/products/...`, `sense.com`,
+and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github.io` report PDF are `unsupported`).
+**A PDF-only lab result cannot carry a row, and the fetchable summary can contradict it:** the ORNL Yarnell Station
+report measures a 10–30% refrigerant undercharge *lowering* compressor energy, while the fetchable DOE/NREL material
+states charge and airflow faults *raise* energy by 8% and 13% — so check the direction on a page the gate can fetch
+before building a thesis on the direction.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
