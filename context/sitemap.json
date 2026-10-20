@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T19:40:15Z",
+  "updated_at": "2026-10-20T20:11:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2570,6 +2570,24 @@
       "date": "2026-10-20",
       "public": true,
       "url": "https://aichieve.net/your-3-0-0-feed-stuck-until-2027/"
+    },
+    {
+      "slug": "2026-10-20_your-exception-log-owes-5-years",
+      "title": "Your Exception Log Owes 5 Years",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-10-20",
+      "public": false
     },
     {
       "slug": "2026-10-20_your-gpu-landlord-80-wont-survive",

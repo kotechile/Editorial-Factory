@@ -1,0 +1,88 @@
+{
+  "slug": "your-exception-log-owes-5-years",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An overhead flat-lay of overlapping institutional documents and carrier scans resting on a steel desk.",
+      "caption": "A joined exception record takes on the longest legal retention clock of its constituent parts.",
+      "title": "joined-exception-log-retention",
+      "bytes": 240163,
+      "sha256": "sha256:6c11d7f9d693f3e3a448a27103a6142d"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, top-down 90-degree view, 50mm flat field optic with a razor-sharp focal plane. Symmetrical top-down composition of a layered stack of heavy institutional documents on a matte grey steel desk. A thick, embossed customs ledger pins down overlapping translucent carrier scans and temperature logs, one paper slightly out of alignment to look handled. Even diffused daylight from above, muted paper tones, illegible cropped text, tactile paper stock with visible fiber.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, people, hands, faces",
+  "rationale": "The story is entirely about regulatory clocks, document retention rules, and joined records. A flat-lay of layered documents perfectly visualizes the overlapping legal burdens.",
+  "cue": "longest legal clock among those inputs",
+  "subject": "an overlapping stack of heavy institutional documents and carrier scans",
+  "core_thesis": "The retention of a control tower's joined exception log is dictated by the longest legal clock among its inputs, typically the five-year customs rule.",
+  "core_conflict": "Short-term operational data storage versus long-term regulatory compliance clocks.",
+  "composition": "symmetrical top-down overhead flat-lay",
+  "alt_text": "Exception Log Retention. An overhead flat-lay of overlapping institutional documents and carrier scans resting on a steel",
+  "caption": "Exception Log Retention: Why joined records demand a five-year data hold.",
+  "title": "Exception Log Retention",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-exception-log-owes-5-years/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 140136,
+  "sha256": "sha256:4709f0fcd593c0c029ddee62a1305b32b0c64013e948f6cd0f4be838bcc3cb27",
+  "source_hash": "sha256:89a5e85613b47903f60ddbcbd5274728",
+  "source_chars": 5218,
+  "task_id": "7c4d663fbf3546436d7b604fb95b6a7f",
+  "credits": 5.0,
+  "cost_ms": 79,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/7c4d663fbf3546436d7b604fb95b6a7f_1792527029627.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, top-down 90-degree view, 50mm flat field optic with a razor-sharp focal plane. Symmetrical top-down composition of a layered stack of heavy institutional documents on a matte grey steel desk. A thick, embossed customs ledger pins down overlapping translucent carrier scans and temperature logs, one paper slightly out of alignment to look handled. Even diffused daylight from above, muted paper tones, illegible cropped text, tactile paper stock with visible fiber.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-20T20:10:32+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // DATA RETENTION",
+    "title": "EXCEPTION LOG RETENTION",
+    "hook": "Why joined records demand a five-year data hold",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.87,
+    "target": 4.5,
+    "clutter": 0.186,
+    "region_rgb": [
+      101,
+      101,
+      103
+    ],
+    "binding_rgb": [
+      109,
+      109,
+      111
+    ],
+    "title_lines": [
+      "EXCEPTION LOG",
+      "RETENTION"
+    ],
+    "subject": 0.105,
+    "ink_subject": 0.043,
+    "spike": 0.352,
+    "generated_at": "2026-10-20T20:10:32+00:00"
+  }
+}
