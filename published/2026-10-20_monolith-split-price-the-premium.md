@@ -11,6 +11,12 @@ meta_title: "Your Monolith Split: 20% More Cost, 90% Slower Debt"
 meta_title_source: "derived_from_title"
 meta_description: "Splitting your monolith now has a price tag. The split system costs more than 20% extra to build, and it buys technical debt that grows about 90% slower."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/monolith-split-price-the-premium/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "Pricing The Monolith Split. A heavy brushed-steel manifold with a detached titanium module resting on a precision brass"
+image_caption: "Pricing The Monolith Split: Splitting your codebase costs more but slows tech debt."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

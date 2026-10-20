@@ -1,0 +1,88 @@
+{
+  "slug": "monolith-split-price-the-premium",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy brushed-steel manifold with a detached titanium module resting on a precision brass balance scale.",
+      "caption": "Splitting a monolithic system incurs a development cost premium that must be carefully weighed against long-term operational debt.",
+      "title": "Monolith-Split-Cost",
+      "bytes": 265409,
+      "sha256": "sha256:e1eac82c200c35658fdb39af228dc3f6"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph of a heavy, unified brushed-steel industrial manifold with one distinct, highly polished titanium module physically detached from the main housing, resting heavily on a precision brass balance scale. Asymmetric off-centre composition on the right thirds with generous editorial negative space on the left. Shot with a 100mm lens, softbox key light casting a long, deliberate contact shadow across a textured matte slate surface. Clean catalogue clarity, deep material contrast between the dark steel monolith and the bright detached module, modern premium B2B editorial aesthetic.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, people, abstract floating shapes, gradient sweep, text, logos, blueprint, drawing",
+  "rationale": "A studio object treatment isolates the exact economic trade-off at the heart of the story. By presenting a complex mechanical assembly being weighed and divided, it visually captures the heavy, tangible cost of splitting a unified architecture into modular parts.",
+  "cue": "Splitting your monolith now has a price tag",
+  "subject": "a heavy brushed-steel industrial manifold with one detached titanium module resting on a precision scale",
+  "core_thesis": "Splitting a monolithic system into microservices incurs a 20% development cost premium but slows technical debt growth by 90%, making it viable only when the debt savings outweigh the build costs.",
+  "core_conflict": "The high upfront cost and operational overhead of distributed microservices versus the slow-growing technical debt of a monolithic architecture.",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "Pricing The Monolith Split. A heavy brushed-steel manifold with a detached titanium module resting on a precision brass",
+  "caption": "Pricing The Monolith Split: Splitting your codebase costs more but slows tech debt.",
+  "title": "Pricing The Monolith Split",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/monolith-split-price-the-premium/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 162583,
+  "sha256": "sha256:97c2c3936fbf56a7969187699cf6568cb69e877babb8c7bd93a14c2d729fffaf",
+  "source_hash": "sha256:3ec92b4c730a5b2697c81dfc8c3fe076",
+  "source_chars": 4380,
+  "task_id": "ca21e0c8664f2499cd2238bab8d11a8b",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ca21e0c8664f2499cd2238bab8d11a8b_1792521650306.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph of a heavy, unified brushed-steel industrial manifold with one distinct, highly polished titanium module physically detached from the main housing, resting heavily on a precision brass balance scale. Asymmetric off-centre composition on the right thirds with generous editorial negative space on the left. Shot with a 100mm lens, softbox key light casting a long, deliberate contact shadow across a textured matte slate surface. Clean catalogue clarity, deep material contrast between the dark steel monolith and the bright detached module, modern premium B2B editorial aesthetic.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-20T18:40:55+00:00",
+  "overlay": {
+    "kicker": "SOFTWARE ARCHITECTURE // THE MONOLITH",
+    "title": "PRICING THE MONOLITH SPLIT",
+    "hook": "Splitting your codebase costs more but slows tech debt",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 5.16,
+    "target": 4.5,
+    "clutter": 0.025,
+    "region_rgb": [
+      166,
+      166,
+      170
+    ],
+    "binding_rgb": [
+      163,
+      162,
+      167
+    ],
+    "title_lines": [
+      "PRICING THE",
+      "MONOLITH SPLIT"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-20T18:40:55+00:00"
+  }
+}

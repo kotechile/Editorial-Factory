@@ -259,3 +259,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-20 | `your-3-0-0-feed-stuck-until-2027` | control_tower_exception_orchestration | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-3-0-0-feed-stuck-until-2027/featured.png` |
 | 2026-10-20 | `rerun-diff-measures-gpu` | ai_observability_qa | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/rerun-diff-measures-gpu/featured.png` |
 | 2026-10-20 | `enclave-overhead-62-percent-not-4` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/enclave-overhead-62-percent-not-4/featured.png` |
+| 2026-10-20 | `monolith-split-price-the-premium` | enterprise_tech_leadership | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/monolith-split-price-the-premium/featured.jpg` |
