@@ -143,6 +143,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-20 | nhil_infrastructure_ops | your-180-day-model-is-already-wrong | Your 180-day model is already wrong | https://pressflow.aichieve.net/published/2026-10-20_your-180-day-model-is-already-wrong.md | reader site only |
 | 2026-10-20 | enterprise_tech_leadership | your-gpu-landlord-80-wont-survive | Your GPU Landlord: 80% Won't Survive | https://pressflow.aichieve.net/published/2026-10-20_your-gpu-landlord-80-wont-survive.md | reader site only |
 | 2026-10-20 | smart_home_telemetry | your-locks-blind-90-bet | Your Lock's Blind 90% Bet | https://pressflow.aichieve.net/published/2026-10-20_your-locks-blind-90-bet.md | reader site only |
+| 2026-10-20 | workstation_compute_economics | your-24gb-card-is-4gb-short | Your 24GB Card Is 4GB Short: The Label Trap | https://pressflow.aichieve.net/published/2026-10-20_your-24gb-card-is-4gb-short.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,0 +1,88 @@
+{
+  "slug": "your-24gb-card-is-4gb-short",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Massive array of glowing workstation memory modules towering over a single graphics card inside a dark server chassis.",
+      "caption": "As local AI models demand larger memory pools, the workstation bottleneck shifts away from the solitary graphics card.",
+      "title": "workstation-memory-pool-scale",
+      "bytes": 356612,
+      "sha256": "sha256:b743345bcbd192bc4f2e909221d7feab"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "cinematic film still, 35mm anamorphic wide with dramatic falloff. Extreme asymmetry with scale contrast. A massive array of frosted copper workstation memory modules glowing with warm amber light, completely dwarfing a single dark brushed-metal graphics card inside a heavy industrial server chassis. Deep shadows, restrained teal-and-amber palette, crisp atmospheric depth, single strong practical worklight illuminating the vast memory pool. No people facing camera, quiet modern editorial standard.",
+  "negative_prompt": "garbled text, random letters, UI, watermarks, humans, generic stock models, floating shapes",
+  "rationale": "Cinematic still effectively captures the atmospheric tension of enterprise hardware limits, using scale to visually demonstrate the memory pool overtaking the GPU as the dominant resource.",
+  "cue": "The Label Trap",
+  "subject": "massive array of workstation memory modules dwarfing a single graphics card",
+  "core_thesis": "The unit of local AI is now the memory pool rather than the graphics card, as model requirements vastly exceed the 24GB label.",
+  "core_conflict": "Advertised 24GB GPU label vs 128GB actual system memory requirement",
+  "composition": "extreme asymmetry with scale contrast",
+  "alt_text": "NVIDIA's 24Gb Label Trap. Massive array of glowing workstation memory modules towering over a single graphics card inside a",
+  "caption": "NVIDIA's 24Gb Label Trap: Why a 24GB model needs a 28GB system to actually run.",
+  "title": "NVIDIA's 24Gb Label Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-24gb-card-is-4gb-short/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 198237,
+  "sha256": "sha256:e6b2a7ef55bdd068df466bb975755ddddf29b5b962698e3c6ca33c7ef6bdf95d",
+  "source_hash": "sha256:a3088e0933759227e8d5abf70001edbe",
+  "source_chars": 6710,
+  "task_id": "2bcc1ed2cba6c1b83cc2b9f843aa4493",
+  "credits": 5.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2bcc1ed2cba6c1b83cc2b9f843aa4493_1792499994158.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "cinematic film still, 35mm anamorphic wide with dramatic falloff. Extreme asymmetry with scale contrast. A massive array of frosted copper workstation memory modules glowing with warm amber light, completely dwarfing a single dark brushed-metal graphics card inside a heavy industrial server chassis. Deep shadows, restrained teal-and-amber palette, crisp atmospheric depth, single strong practical worklight illuminating the vast memory pool. No people facing camera, quiet modern editorial standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-20T12:39:58+00:00",
+  "overlay": {
+    "kicker": "LOCAL AI // MEMORY LIMITS",
+    "title": "NVIDIA'S 24GB LABEL TRAP",
+    "hook": "Why a 24GB model needs a 28GB system to actually run",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.68,
+    "target": 4.5,
+    "clutter": 0.229,
+    "region_rgb": [
+      46,
+      37,
+      31
+    ],
+    "binding_rgb": [
+      89,
+      70,
+      56
+    ],
+    "title_lines": [
+      "NVIDIA'S 24GB",
+      "LABEL TRAP"
+    ],
+    "subject": 0.164,
+    "ink_subject": 0.09,
+    "spike": 0.462,
+    "generated_at": "2026-10-20T12:39:58+00:00"
+  }
+}

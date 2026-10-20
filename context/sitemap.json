@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T12:10:05Z",
+  "updated_at": "2026-10-20T12:40:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2458,6 +2458,24 @@
         "At a glance"
       ],
       "target_persona": "it_ops_leader",
+      "date": "2026-10-20",
+      "public": false
+    },
+    {
+      "slug": "2026-10-20_your-24gb-card-is-4gb-short",
+      "title": "Your 24GB Card Is 4GB Short: The Label Trap",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-10-20",
       "public": false
     },
