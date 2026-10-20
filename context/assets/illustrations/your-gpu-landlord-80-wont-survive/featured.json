@@ -1,0 +1,88 @@
+{
+  "slug": "your-gpu-landlord-80-wont-survive",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Endless rows of heavy AI server racks compressed by a telephoto lens, casting deep shadows in a massive data center.",
+      "caption": "The massive capital cost of AI infrastructure means renting GPU capacity is fundamentally a credit decision.",
+      "title": "GPU Landlord Balance Sheet Risk",
+      "bytes": 400470,
+      "sha256": "sha256:dfc3ba3368020ff72acb19184a7ab72c"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Telephoto compression, 200mm long-lens view of endless corridors of monolithic AI data center server racks. Stacked overlapping layers of heavy industrial compute infrastructure with crystal-clear telephoto distance clarity. Flat compressed perspective. Sharp directional lighting and deep industrial contrast, casting long shadows that imply looming weight. Cold metallic surfaces, brushed steel, glowing server status lights fading into the distance. Clean high-contrast atmosphere, no people in the foreground, no fog or haze. Asymmetric framing, wide layout with generous editorial negative space on the left.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, printed words",
+  "rationale": "The story turns on the massive $8.5 trillion scale of physical data center builds and the overwhelming debt they represent. A compressed telephoto view of endless server hardware perfectly captures the sheer industrial scale and capital weight of the infrastructure.",
+  "cue": "a credit decision, not a procurement one",
+  "subject": "endless rows of heavy AI server racks",
+  "core_thesis": "A multi-year AI compute commitment is a credit decision, because the massive physical infrastructure builds are fundamentally unprofitable, exposing buyers to the provider's balance sheet.",
+  "core_conflict": "Hyperscale infrastructure capital costs vs. capped market revenue",
+  "composition": "extreme asymmetric telephoto compression",
+  "alt_text": "GPU Landlords Will Fail. Endless rows of heavy AI server racks compressed by a telephoto lens, casting deep shadows in a",
+  "caption": "GPU Landlords Will Fail: Why 80% of neocloud providers won't survive the decade.",
+  "title": "GPU Landlords Will Fail",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-gpu-landlord-80-wont-survive/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 230326,
+  "sha256": "sha256:8156ee25b373ac6f8b6a4924aa74c492012eff94bf53362a52d9328ca8836460",
+  "source_hash": "sha256:92295226a39444a270466d887a80d8ed",
+  "source_chars": 5962,
+  "task_id": "68ef1f162b8fb2f4734a99ab691d3f7a",
+  "credits": 5.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/68ef1f162b8fb2f4734a99ab691d3f7a_1792496760869.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Telephoto compression, 200mm long-lens view of endless corridors of monolithic AI data center server racks. Stacked overlapping layers of heavy industrial compute infrastructure with crystal-clear telephoto distance clarity. Flat compressed perspective. Sharp directional lighting and deep industrial contrast, casting long shadows that imply looming weight. Cold metallic surfaces, brushed steel, glowing server status lights fading into the distance. Clean high-contrast atmosphere, no people in the foreground, no fog or haze. Asymmetric framing, wide layout with generous editorial negative space on the left.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-20T11:46:02+00:00",
+  "overlay": {
+    "kicker": "AI COMPUTE // NEOCLOUD ECONOMICS",
+    "title": "GPU LANDLORDS WILL FAIL",
+    "hook": "Why 80% of neocloud providers won't survive the decade",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.79,
+    "target": 4.5,
+    "clutter": 0.107,
+    "region_rgb": [
+      108,
+      115,
+      123
+    ],
+    "binding_rgb": [
+      120,
+      127,
+      135
+    ],
+    "title_lines": [
+      "GPU LANDLORDS",
+      "WILL FAIL"
+    ],
+    "subject": 0.024,
+    "ink_subject": 0.009,
+    "spike": 0.086,
+    "generated_at": "2026-10-20T11:46:02+00:00"
+  }
+}

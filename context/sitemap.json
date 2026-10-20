@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T11:13:05Z",
+  "updated_at": "2026-10-20T11:46:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2458,6 +2458,24 @@
         "At a glance"
       ],
       "target_persona": "it_ops_leader",
+      "date": "2026-10-20",
+      "public": false
+    },
+    {
+      "slug": "2026-10-20_your-gpu-landlord-80-wont-survive",
+      "title": "Your GPU Landlord: 80% Won't Survive",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
       "date": "2026-10-20",
       "public": false
     },
