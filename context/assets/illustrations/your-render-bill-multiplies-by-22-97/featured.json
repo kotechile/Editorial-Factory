@@ -1,0 +1,90 @@
+{
+  "slug": "your-render-bill-multiplies-by-22-97",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Split view of a sprawling multi-tiered modular rack next to a single dense metallic graphics processing block.",
+      "caption": "The hidden cloud multiplier means a local encode box can pay for itself in under a month of heavy transcoding.",
+      "title": "Render Multiplier Economics",
+      "bytes": 1675087,
+      "sha256": "sha256:aff0e767b15db948348b4fbd21159550"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, split-screen diptych with left-right scenario contrast. Left side: a sprawling, multi-tiered vertical rack of identical interlocking bays and latched inspection covers, representing a six-rung ladder. Right side: a single, dense, sleek graphics processing block with heavy metallic heatsinks and gold connectors. Hard clean edges, one directional light throwing long cast shadows, matte muted palette of industrial grey and anodized black, generous negative space, no text.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, blurry, soft, organic shapes, text, lettering, logos",
+  "rationale": "The story hinges on structural multiplication vs consolidated local hardware; a minimalist component assembly perfectly constructs this mathematical duality without relying on literal datacenters.",
+  "cue": "Render Bill Multiplies by 22.97",
+  "subject": "a sprawling multi-tiered server rack contrasted with a single dense graphics processing block",
+  "core_thesis": "Cloud transcoding bills per output minute scaled by a massive multiplier table, making a local encode box drastically cheaper over time.",
+  "core_conflict": "Escalating cloud render ladder multipliers versus fixed capital hardware efficiency.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The Cloud Transcode Multiplier. Split view of a sprawling multi-tiered modular rack next to a single dense metallic graphics",
+  "caption": "The Cloud Transcode Multiplier: Why render ladders inflate cloud video bills by 11x.",
+  "title": "The Cloud Transcode Multiplier",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-render-bill-multiplies-by-22-97/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1138448,
+  "sha256": "sha256:055fbd650f0293f9e7a3f943134e7d6836cb71c0cdb7bd74db221e19a212f518",
+  "source_hash": "sha256:205a4bd2804645e327e51de44239e993",
+  "source_chars": 7533,
+  "task_id": "84166eacc0c406592fe2416d9bb5d5e7",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0a1722d9d5c3aaa1e3e4b4e0ab8c7ed8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, split-screen diptych with left-right scenario contrast. Left side: a sprawling, multi-tiered vertical rack of identical interlocking bays and latched inspection covers, representing a six-rung ladder. Right side: a single, dense, sleek graphics processing block with heavy metallic heatsinks and gold connectors. Hard clean edges, one directional light throwing long cast shadows, matte muted palette of industrial grey and anodized black, generous negative space, no text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-20T19:40:01+00:00",
+  "overlay": {
+    "kicker": "COMPUTE ECONOMICS // CLOUD TRANSCODING",
+    "title": "THE CLOUD TRANSCODE MULTIPLIER",
+    "hook": "Why render ladders inflate cloud video bills by 11x",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.99,
+    "target": 4.5,
+    "clutter": 0.061,
+    "region_rgb": [
+      116,
+      117,
+      106
+    ],
+    "binding_rgb": [
+      124,
+      124,
+      114
+    ],
+    "title_lines": [
+      "THE CLOUD TRANSCODE",
+      "MULTIPLIER"
+    ],
+    "subject": 0.004,
+    "ink_subject": 0.002,
+    "spike": 0.011,
+    "generated_at": "2026-10-20T19:40:01+00:00"
+  }
+}

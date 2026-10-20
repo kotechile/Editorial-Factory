@@ -261,3 +261,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-20 | `enclave-overhead-62-percent-not-4` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/enclave-overhead-62-percent-not-4/featured.png` |
 | 2026-10-20 | `monolith-split-price-the-premium` | enterprise_tech_leadership | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/monolith-split-price-the-premium/featured.jpg` |
 | 2026-10-20 | `monitor-77-percent-guess-where-it-fails` | smart_home_telemetry | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/monitor-77-percent-guess-where-it-fails/featured.jpg` |
+| 2026-10-20 | `your-render-bill-multiplies-by-22-97` | workstation_compute_economics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-render-bill-multiplies-by-22-97/featured.png` |

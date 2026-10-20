@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T19:12:22Z",
+  "updated_at": "2026-10-20T19:40:15Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2608,6 +2608,24 @@
       "date": "2026-10-20",
       "public": true,
       "url": "https://wellroost.com/your-locks-blind-90-bet/"
+    },
+    {
+      "slug": "2026-10-20_your-render-bill-multiplies-by-22-97",
+      "title": "Your Render Bill Multiplies by 22.97",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-20",
+      "public": false
     },
     {
       "slug": "2026-10-20_your-trace-wont-prove-925-points",

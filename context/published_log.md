@@ -149,6 +149,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-20 | nhil_infrastructure_ops | enclave-overhead-62-percent-not-4 | Enclave overhead: 62.8%, not 4% | https://pressflow.aichieve.net/published/2026-10-20_enclave-overhead-62-percent-not-4.md | reader site only |
 | 2026-10-20 | enterprise_tech_leadership | monolith-split-price-the-premium | Your Monolith Split: 20% More Cost, 90% Slower Debt | https://pressflow.aichieve.net/published/2026-10-20_monolith-split-price-the-premium.md | reader site only |
 | 2026-10-20 | smart_home_telemetry | monitor-77-percent-guess-where-it-fails | Your Monitor's 77% Guess: Where It Fails | https://pressflow.aichieve.net/published/2026-10-20_monitor-77-percent-guess-where-it-fails.md | reader site only |
+| 2026-10-20 | workstation_compute_economics | your-render-bill-multiplies-by-22-97 | Your Render Bill Multiplies by 22.97 | https://pressflow.aichieve.net/published/2026-10-20_your-render-bill-multiplies-by-22-97.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
