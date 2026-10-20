@@ -1,0 +1,90 @@
+{
+  "slug": "your-180-day-model-is-already-wrong",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a server power distribution bay with glowing dynamic routing pathways.",
+      "caption": "Grid rules demand a static snapshot of power models, but modern data center controllers shift loads second by second.",
+      "title": "NERC-Data-Center-Power-Model",
+      "bytes": 2492211,
+      "sha256": "sha256:c59b433977cf8be40a3e91997d61b792"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry, hero subject off-centre in the frame. A high-density server power distribution bay showing fixed rigid hardware rails contrasting with glowing, dynamic routing pathways shifting beneath them. Laid over a real matte blueprint on a textured drafting table. Flat muted grey palette with striking neon amber and teal accent colors representing automated power loads. Thin consistent line weight, recognisable hardware racks, modules, and connectors with visible depth, one directional key light casting long shadows across the paper, generous empty margin.",
+  "negative_prompt": "text, typography, letters, numbers, watermark, signature, UI, gibberish, labels, words",
+  "rationale": "A technical isometric cutaway perfectly illustrates the systemic clash between rigid grid-connection hardware and the fluid, automated software logic shifting power beneath it.",
+  "cue": "dynamic power controllers rewrite those settings all day",
+  "subject": "technical cutaway of a power distribution bay with shifting routing pathways",
+  "core_thesis": "NERC's static 180-day compliance model is instantly obsolete against modern data center controllers that dynamically shift power settings second by second.",
+  "core_conflict": "Static regulatory snapshots versus continuous, dynamic automated power reallocation.",
+  "composition": "extreme asymmetry, hero subject off-centre",
+  "alt_text": "NERC Rules Vs Dynamic Power. Isometric cutaway of a server power distribution bay with glowing dynamic routing pathways.",
+  "caption": "NERC Rules Vs Dynamic Power: New grid rules mandate fixed models for dynamic loads.",
+  "title": "NERC Rules Vs Dynamic Power",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-180-day-model-is-already-wrong/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1952425,
+  "sha256": "sha256:f08bff088ba029ce41f4b5b5fde1b1895ebfe56f18fa8e780ad8db75bce468e1",
+  "source_hash": "sha256:2520df9d742be0f31568bdf65c47451a",
+  "source_chars": 6058,
+  "task_id": "228f3aca0436ef7661c9a1381d5dbd00",
+  "credits": 18.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_a22a7386df39e4d38c38b9f5c2fc32a4.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. Extreme asymmetry, hero subject off-centre in the frame. A high-density server power distribution bay showing fixed rigid hardware rails contrasting with glowing, dynamic routing pathways shifting beneath them. Laid over a real matte blueprint on a textured drafting table. Flat muted grey palette with striking neon amber and teal accent colors representing automated power loads. Thin consistent line weight, recognisable hardware racks, modules, and connectors with visible depth, one directional key light casting long shadows across the paper, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-20T11:12:48+00:00",
+  "overlay": {
+    "kicker": "DATA CENTERS // GRID COMPLIANCE",
+    "title": "NERC RULES VS DYNAMIC POWER",
+    "hook": "New grid rules mandate fixed models for dynamic loads",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 105,
+    "contrast": 4.94,
+    "target": 4.5,
+    "clutter": 0.248,
+    "region_rgb": [
+      131,
+      135,
+      137
+    ],
+    "binding_rgb": [
+      93,
+      92,
+      88
+    ],
+    "title_lines": [
+      "NERC RULES VS",
+      "DYNAMIC POWER"
+    ],
+    "subject": 0.047,
+    "ink_subject": 0.015,
+    "spike": 0.174,
+    "generated_at": "2026-10-20T11:12:48+00:00"
+  }
+}
