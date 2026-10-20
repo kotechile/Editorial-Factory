@@ -1,0 +1,90 @@
+{
+  "slug": "your-trace-wont-prove-925-points",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical assembly with a severed connector displaying a green indicator light.",
+      "caption": "A clean trace certifies internal consistency, not the actual state of the system it names.",
+      "title": "Trace-Claim-Assembly",
+      "bytes": 1832741,
+      "sha256": "sha256:52f176630643db2fff73c90731d53914"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, extreme asymmetry, the hero off-centre and low in frame. The assembly features three recognizable engineered parts: a heavy data processing module, an unlatched inspection gate, and a severed brass linkage connector. Despite the physical disconnection, the isolated module displays a glowing green indicator light. Hard clean edges, one directional key light throwing a long cast shadow across the weathered surface. Matte muted palette, generous negative space. No text, no molded lettering.",
+  "negative_prompt": "garbled text, random letters, UI, watermarks, text, numbers, abstract blobs, plain geometry",
+  "rationale": "The story exposes a structural discrepancy between a system's internal record and its actual state. A minimalist component assembly captures this systemic illusion by showing a severed physical connection that still registers as successful.",
+  "cue": "A trace is a claim about state",
+  "subject": "a modular mechanical assembly with a severed connector displaying a green indicator",
+  "core_thesis": "A clean trace is merely a claim about state, not a photograph of it, meaning models often trust an internal log of success even when the actual step failed quietly.",
+  "core_conflict": "The system's internal success log versus the actual physical state of the environment.",
+  "composition": "extreme asymmetry, the hero off-centre and low in frame",
+  "alt_text": "Why AI Agents Trust Bad Logs. A modular mechanical assembly with a severed connector displaying a green indicator light.",
+  "caption": "Why AI Agents Trust Bad Logs: Models trust flawed records over actual state.",
+  "title": "Why AI Agents Trust Bad Logs",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-trace-wont-prove-925-points/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1338237,
+  "sha256": "sha256:405b3075789b7ee2be1410c7c361e4485799e150cd7e92a5e0934dbd3923b521",
+  "source_hash": "sha256:fb510b62f5023ffcdbaac33afdc26e8d",
+  "source_chars": 6374,
+  "task_id": "5f1fea3ccc3be791960385ccc84ec633",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8c874cbafca2e746dc335010c7844b25.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, extreme asymmetry, the hero off-centre and low in frame. The assembly features three recognizable engineered parts: a heavy data processing module, an unlatched inspection gate, and a severed brass linkage connector. Despite the physical disconnection, the isolated module displays a glowing green indicator light. Hard clean edges, one directional key light throwing a long cast shadow across the weathered surface. Matte muted palette, generous negative space. No text, no molded lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-20T10:41:17+00:00",
+  "overlay": {
+    "kicker": "AI OBSERVABILITY // BROKEN TRACES",
+    "title": "WHY AI AGENTS TRUST BAD LOGS",
+    "hook": "Models trust flawed records over actual state",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.37,
+    "target": 4.5,
+    "clutter": 0.085,
+    "region_rgb": [
+      66,
+      63,
+      55
+    ],
+    "binding_rgb": [
+      80,
+      76,
+      67
+    ],
+    "title_lines": [
+      "WHY AI AGENTS",
+      "TRUST BAD LOGS"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-20T10:41:17+00:00"
+  }
+}

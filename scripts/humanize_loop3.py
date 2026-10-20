@@ -100,6 +100,7 @@ Now rewrite the following draft:"""
 # suggestion: verify.sh §9 fails the build on the article body. (No social variant — the LinkedIn/
 # Reddit channel was removed 2026-10-06.)
 RULES += "\n" + ht.LONGFORM_VOICE_RULES
+RULES += ht.VIBE_COPY_RULES  # the copy contract, read from context/vibe/lexicon.json
 
 def call_gemini(prompt):
     body = {

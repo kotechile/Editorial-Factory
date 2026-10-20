@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T20:10:32Z",
+  "updated_at": "2026-10-20T10:41:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2442,6 +2442,24 @@
       "date": "2026-10-19",
       "public": true,
       "url": "https://wellroost.com/your-upgrades-9-silent-reset/"
+    },
+    {
+      "slug": "2026-10-20_your-trace-wont-prove-925-points",
+      "title": "Your Trace Won't Prove 92.5 Points",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-20",
+      "public": false
     }
   ]
 }

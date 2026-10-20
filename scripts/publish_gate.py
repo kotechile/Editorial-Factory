@@ -43,6 +43,7 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 import check_accessibility as ca  # noqa: E402
+import vibe_lexicon  # noqa: E402
 
 VERIFY_SH = SCRIPTS / "verify.sh"
 VOICE_GATE = SCRIPTS / "check_social_voice.mjs"
@@ -110,6 +111,12 @@ def text_failures(path: pathlib.Path, *, root: pathlib.Path = ROOT) -> list[str]
     for phrase in banned_phrases():
         if phrase in low:
             fails.append(f"banned AI-tell '{phrase}' (verify.sh §2)")
+
+    # The Vibe lexicon (context/vibe/lexicon.json) — the same data the fronts' copy gate reads.
+    # It scores the reader-facing body and grandfathers artifacts dated before `enforced_from`,
+    # so this only ever holds copy written under the standard.
+    vibe_fails, _notes = vibe_lexicon.check(body, path=path)
+    fails += vibe_fails
 
     diag = ca.measure(str(path))
     fails += [f"accessibility: {f}" for f in diag.get("fails", [])]

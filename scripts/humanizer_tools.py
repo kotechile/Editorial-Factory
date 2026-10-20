@@ -152,6 +152,39 @@ ARTICLE VOICE — the long-form body (skills/claude_humanizer.md §3.9; verify.s
 """
 
 
+def _vibe_copy_rules() -> str:
+    """The Vibe Marketing lexicon, rendered for the prompt.
+
+    Read from `context/vibe/lexicon.json` — the same file `publish_gate.vibe_lexicon` enforces — so
+    the generator is never told a different word list than the gate holds it to. A hardcoded list
+    here is how prompts and gates drift apart.
+    """
+    import json as _json
+    import pathlib as _pathlib
+
+    path = _pathlib.Path(__file__).resolve().parent.parent / "context" / "vibe" / "lexicon.json"
+    try:
+        lex = _json.loads(path.read_text())
+    except FileNotFoundError:
+        return ""
+    banned = ", ".join(r.get("label", r["id"]) for r in lex.get("banned", []))
+    openers = "; ".join(r.get("label", r["id"]) for r in lex.get("openers", []))
+    preferred = "; ".join(f"{r['from']} -> {r['to']}" for r in lex.get("preferred", []))
+    exceptions = "; ".join(lex.get("exceptions", [])[:4])
+    return f"""
+VIBE COPY LEXICON (hard — the publish gate holds an article carrying any of these):
+- Banned words and phrases: {banned}.
+- Banned opening lines: {openers}.
+- Preferred vocabulary (positioning copy only): {preferred}.
+- These are NOT violations: {exceptions}.
+- Sentence ceiling 32 words; the first sentence of a section <= 28. Lead with the conclusion or the
+  number — no welcome, no mission statement, no "in today's" frame.
+"""
+
+
+VIBE_COPY_RULES = _vibe_copy_rules()
+
+
 def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     """Build a follow-up prompt telling the frontier model exactly what the gate rejected."""
     notes = []

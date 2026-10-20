@@ -139,6 +139,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-19 | home_infrastructure_lifecycle_tco | 20-percent-of-your-ac-never-arrives | 20% of Your AC Never Arrives | https://pressflow.aichieve.net/published/2026-10-19_20-percent-of-your-ac-never-arrives.md | reader site only |
 | 2026-10-19 | meio_working_capital_tco | four-warehouses-halve-stock | 4 Warehouses Halve Stock. Yours Won't | https://pressflow.aichieve.net/published/2026-10-19_four-warehouses-halve-stock.md | reader site only |
 | 2026-10-19 | sales_order_service_level_otif | your-30-exception-bill-is-wrong | Your $30 Exception Bill Is Wrong | https://pressflow.aichieve.net/published/2026-10-19_your-30-exception-bill-is-wrong.md | reader site only |
+| 2026-10-20 | ai_observability_qa | your-trace-wont-prove-925-points | Your Trace Won't Prove 92.5 Points | https://pressflow.aichieve.net/published/2026-10-20_your-trace-wont-prove-925-points.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
