@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T17:40:18Z",
+  "updated_at": "2026-10-20T18:11:23Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2443,6 +2443,23 @@
       "date": "2026-10-19",
       "public": true,
       "url": "https://wellroost.com/your-upgrades-9-silent-reset/"
+    },
+    {
+      "slug": "2026-10-20_enclave-overhead-62-percent-not-4",
+      "title": "Enclave overhead: 62.8%, not 4%",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-10-20",
+      "public": false
     },
     {
       "slug": "2026-10-20_rerun-diff-measures-gpu",

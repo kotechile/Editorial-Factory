@@ -1,0 +1,90 @@
+{
+  "slug": "enclave-overhead-62-percent-not-4",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular compute hardware bay with a heavily shielded, constricted data conduit in a technical axonometric view.",
+      "caption": "Secure enclave throughput drops are driven by workload shape and I/O bottlenecks, not mathematical compute overhead.",
+      "title": "GPU-Enclave-Throughput-Bottleneck",
+      "bytes": 1990065,
+      "sha256": "sha256:42d43396ffb80a2a0996bd72410ac0f3"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre composition showing a modular compute hardware bay. A heavily shielded, frosted polymer data conduit is visibly constricted, routing into an array of brushed metal processing modules resting on a matte drafting table. Flat muted palette with a single amber accent color highlighting the constricted pathway. Thin consistent line weight, recognisable rack modules and interlocking connectors with physical depth. One directional light throwing a crisp cast shadow, generous empty margin.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, messy lines, text, typography",
+  "rationale": "A technical isometric cutaway perfectly illustrates the structural bottleneck within a compute stack, showing the restricted data path of a secure enclave with precise, engineered clarity.",
+  "cue": "set by workload shape",
+  "subject": "an armored compute module cutaway with a constricted data conduit",
+  "core_thesis": "The throughput cost of a confidential GPU enclave is dictated by workload shape, causing massive performance drops for small batches due to I/O bottlenecks.",
+  "core_conflict": "Data residency security requirements versus raw compute throughput.",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "True GPU Enclave Overhead. A modular compute hardware bay with a heavily shielded, constricted data conduit in a technical",
+  "caption": "True GPU Enclave Overhead: Why confidential GPUs cost you 60% throughput.",
+  "title": "True GPU Enclave Overhead",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/enclave-overhead-62-percent-not-4/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1507005,
+  "sha256": "sha256:07f264e37497cf0823abe239a9f5cb82ffaa5d64bca739b0aa3258c2766f13fa",
+  "source_hash": "sha256:f538c368d19a0f4be3774e2810ff5624",
+  "source_chars": 5861,
+  "task_id": "db4ba4b53845067b8acb171dbc5f9f2a",
+  "credits": 18.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e0ba27f9b78f39cbfc7a1b39ce21df56.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre composition showing a modular compute hardware bay. A heavily shielded, frosted polymer data conduit is visibly constricted, routing into an array of brushed metal processing modules resting on a matte drafting table. Flat muted palette with a single amber accent color highlighting the constricted pathway. Thin consistent line weight, recognisable rack modules and interlocking connectors with physical depth. One directional light throwing a crisp cast shadow, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-20T18:11:08+00:00",
+  "overlay": {
+    "kicker": "CONFIDENTIAL AI // ENCLAVE OVERHEAD",
+    "title": "TRUE GPU ENCLAVE OVERHEAD",
+    "hook": "Why confidential GPUs cost you 60% throughput",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 5.83,
+    "target": 4.5,
+    "clutter": 0.182,
+    "region_rgb": [
+      172,
+      169,
+      159
+    ],
+    "binding_rgb": [
+      176,
+      173,
+      164
+    ],
+    "title_lines": [
+      "TRUE GPU ENCLAVE",
+      "OVERHEAD"
+    ],
+    "subject": 0.079,
+    "ink_subject": 0.03,
+    "spike": 0.275,
+    "generated_at": "2026-10-20T18:11:08+00:00"
+  }
+}

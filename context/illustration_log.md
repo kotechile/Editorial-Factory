@@ -258,3 +258,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-20 | `your-24gb-card-is-4gb-short` | workstation_compute_economics | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-24gb-card-is-4gb-short/featured.jpg` |
 | 2026-10-20 | `your-3-0-0-feed-stuck-until-2027` | control_tower_exception_orchestration | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-3-0-0-feed-stuck-until-2027/featured.png` |
 | 2026-10-20 | `rerun-diff-measures-gpu` | ai_observability_qa | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/rerun-diff-measures-gpu/featured.png` |
+| 2026-10-20 | `enclave-overhead-62-percent-not-4` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/enclave-overhead-62-percent-not-4/featured.png` |
