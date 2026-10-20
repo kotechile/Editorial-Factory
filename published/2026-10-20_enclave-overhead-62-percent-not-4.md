@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/enclave-overhead-62-percent-not-4/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "True GPU Enclave Overhead. A modular compute hardware bay with a heavily shielded, constricted data conduit in a technical"
-image_caption: "True GPU Enclave Overhead: Why confidential GPUs cost you 60% throughput."
+image_alt: "True GPU Enclave Overhead. Four shielded server blades on a plinth, with one lagged copper conduit bending away."
+image_caption: "True GPU Enclave Overhead: Why confidential GPUs cost up to 62.8% throughput."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
