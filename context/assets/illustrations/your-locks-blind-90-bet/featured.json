@@ -1,0 +1,88 @@
+{
+  "slug": "your-locks-blind-90-bet",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Extreme close-up of a brushed-steel smart deadbolt extending from a door edge against a dark blurred background.",
+      "caption": "The definitive test for a modern smart lock is what must remain online for the physical deadbolt to retract.",
+      "title": "Smart-Lock-Network-Dependency",
+      "bytes": 512199,
+      "sha256": "sha256:2de7c2c5ff55a63bd920c57e8180ccda"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens. A heavy, brushed-steel smart deadbolt mechanism extending from a matte black door edge. Razor-sharp focal plane on the textured, machined metal surface of the locking bolt, showing microscopic dust and surface wear. The bolt is illuminated by a single soft directional window light, casting a deep shadow. The background falls away into a heavily blurred, shallow depth of field showing an unlit, dark residential hallway, evoking an internet or power outage. Modern, premium editorial cover standard, quiet confidence, sophisticated cool metallic palette.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, logos, unreadable UI",
+  "rationale": "The story hinges on a single physical action\u2014whether a deadbolt retracts during an outage. An extreme macro photograph of the bolt mechanism emphasizes the physical reality of the lock contrasting with the invisible digital networks it relies on.",
+  "cue": "what has to be alive for the bolt to retract",
+  "subject": "A heavy brushed-steel smart deadbolt extending from a door edge.",
+  "core_thesis": "A 2027 door lock is a choice between four different meanings of local control, ultimately boiling down to what external network must stay alive for the physical bolt to retract.",
+  "core_conflict": "The promise of local hardware autonomy versus the hidden vulnerabilities of hub, cloud, and neighborhood network dependencies.",
+  "composition": "Extreme right-weighted asymmetry with deep background blur",
+  "alt_text": "The Smart Lock Network War. Extreme close-up of a brushed-steel smart deadbolt extending from a door edge against a dark",
+  "caption": "The Smart Lock Network War: Four definitions of local control for your front door.",
+  "title": "The Smart Lock Network War",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-locks-blind-90-bet/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 315088,
+  "sha256": "sha256:28d5380e04188db2a32166b1bc066aac29b9984441919a15b77e7e514dacde49",
+  "source_hash": "sha256:92d841f623330a9648caa233da1e8394",
+  "source_chars": 5486,
+  "task_id": "b096769be163f9a09f970b7b1ab6615e",
+  "credits": 7.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b096769be163f9a09f970b7b1ab6615e_1792498178787.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens. A heavy, brushed-steel smart deadbolt mechanism extending from a matte black door edge. Razor-sharp focal plane on the textured, machined metal surface of the locking bolt, showing microscopic dust and surface wear. The bolt is illuminated by a single soft directional window light, casting a deep shadow. The background falls away into a heavily blurred, shallow depth of field showing an unlit, dark residential hallway, evoking an internet or power outage. Modern, premium editorial cover standard, quiet confidence, sophisticated cool metallic palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-20T12:09:44+00:00",
+  "overlay": {
+    "kicker": "IOT HARDWARE // LOCAL CONTROL",
+    "title": "THE SMART LOCK NETWORK WAR",
+    "hook": "Four definitions of local control for your front door",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.11,
+    "target": 4.5,
+    "clutter": 0.165,
+    "region_rgb": [
+      20,
+      19,
+      21
+    ],
+    "binding_rgb": [
+      33,
+      31,
+      34
+    ],
+    "title_lines": [
+      "THE SMART LOCK",
+      "NETWORK WAR"
+    ],
+    "subject": 0.038,
+    "ink_subject": 0.018,
+    "spike": 0.119,
+    "generated_at": "2026-10-20T12:09:44+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T11:46:24Z",
+  "updated_at": "2026-10-20T12:10:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2476,6 +2476,24 @@
         "At a glance"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-10-20",
+      "public": false
+    },
+    {
+      "slug": "2026-10-20_your-locks-blind-90-bet",
+      "title": "Your Lock's Blind 90% Bet",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-20",
       "public": false
     },

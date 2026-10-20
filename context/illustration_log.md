@@ -254,3 +254,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-20 | `your-trace-wont-prove-925-points` | ai_observability_qa | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-trace-wont-prove-925-points/featured.png` |
 | 2026-10-20 | `your-180-day-model-is-already-wrong` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-180-day-model-is-already-wrong/featured.png` |
 | 2026-10-20 | `your-gpu-landlord-80-wont-survive` | enterprise_tech_leadership | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-gpu-landlord-80-wont-survive/featured.jpg` |
+| 2026-10-20 | `your-locks-blind-90-bet` | smart_home_telemetry | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/your-locks-blind-90-bet/featured.jpg` |
