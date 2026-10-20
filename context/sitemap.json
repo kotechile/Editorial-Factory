@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T12:40:17Z",
+  "updated_at": "2026-10-20T13:13:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2476,6 +2476,24 @@
         "At a glance"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-10-20",
+      "public": false
+    },
+    {
+      "slug": "2026-10-20_your-3-0-0-feed-stuck-until-2027",
+      "title": "Your 3.0.0 Feed Stuck Until 2027",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-10-20",
       "public": false
     },

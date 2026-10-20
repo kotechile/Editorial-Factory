@@ -1,0 +1,90 @@
+{
+  "slug": "your-3-0-0-feed-stuck-until-2027",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three distinct modular mechanical inputs misaligned at a central connection bay on a steel surface.",
+      "caption": "Standardizing data fields does not resolve which system's timestamp holds authority when platforms clash.",
+      "title": "DCSA 3.0.0 Platform Seam Clash",
+      "bytes": 1574398,
+      "sha256": "sha256:92422e66fc44ceccbea37321e8a5d9d5"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface. An asymmetric off-centre composition featuring three distinct interlocking hardware modules, each with a conflicting physical timing indicator, failing to perfectly align with a central routing bay. Hard clean edges, matte muted industrial palette with one amber accent, single directional light throwing a long cast shadow. Generous negative editorial space.",
+  "negative_prompt": "text, letters, numbers, watermarks, typography, labels, garbled text",
+  "rationale": "The component assembly treatment perfectly captures the structural nature of platform integration and data seams. A physical representation of interlocking but misaligned modules conveys the technical barrier of conflicting timestamps.",
+  "cue": "stall has moved to the platform seam",
+  "subject": "three distinct mechanical input modules misaligned at a central connection bay",
+  "core_thesis": "Standardized event names reduce mapping work but fail to resolve which system's timestamp holds authority when supply chain platforms clash.",
+  "core_conflict": "Common data standards vs conflicting authoritative timestamps across siloed platforms.",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "3.0.0 Feed Stuck Until 2027. Three distinct modular mechanical inputs misaligned at a central connection bay on a steel",
+  "caption": "3.0.0 Feed Stuck Until 2027: Common fields do not settle which system's clock wins.",
+  "title": "3.0.0 Feed Stuck Until 2027",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-3-0-0-feed-stuck-until-2027/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1086598,
+  "sha256": "sha256:d65af3eb754bf911181190ce0144029752e04f0f6ab75774e32b1a7495d9a9e6",
+  "source_hash": "sha256:6cab9fc7b955efb7d1c0faa458dff237",
+  "source_chars": 6001,
+  "task_id": "3d730f068218b7abf347fbd57f1e2c5e",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_80ac7b488f35e7498d60b4823f7d35bc.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface. An asymmetric off-centre composition featuring three distinct interlocking hardware modules, each with a conflicting physical timing indicator, failing to perfectly align with a central routing bay. Hard clean edges, matte muted industrial palette with one amber accent, single directional light throwing a long cast shadow. Generous negative editorial space.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-20T13:13:07+00:00",
+  "overlay": {
+    "kicker": "LOGISTICS DATA // THE 3.0.0 DELAY",
+    "title": "3.0.0 FEED STUCK UNTIL 2027",
+    "hook": "Common fields do not settle which system's clock wins",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.52,
+    "target": 4.5,
+    "clutter": 0.094,
+    "region_rgb": [
+      82,
+      82,
+      77
+    ],
+    "binding_rgb": [
+      96,
+      95,
+      90
+    ],
+    "title_lines": [
+      "3.0.0 FEED STUCK",
+      "UNTIL 2027"
+    ],
+    "subject": 0.012,
+    "ink_subject": 0.005,
+    "spike": 0.042,
+    "generated_at": "2026-10-20T13:13:07+00:00"
+  }
+}
