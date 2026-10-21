@@ -1,0 +1,88 @@
+{
+  "slug": "your-seller-wont-stay",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An autonomous warehouse forklift sitting on a concrete floor in a distribution center under atmospheric lighting.",
+      "caption": "As automated forklift prices fall, the startups that build and service them are rapidly being acquired.",
+      "title": "Autonomous-Forklift-Consolidation",
+      "bytes": 309517,
+      "sha256": "sha256:ce5f5192ef4d7ca694e6f3a30e2d8a55"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A sleek, unbranded autonomous warehouse forklift parked on a polished concrete staging floor in a vast, modern distribution center. Single strong practical light source from overhead high-bay LEDs casting deep, sharp contact shadows. Crisp atmospheric depth, restrained teal-and-amber industrial palette. No people facing the camera. The heavy industrial machine sits quietly with a blinking amber status light, capturing a moment of quiet operational tension. Premium editorial cover standard, high-contrast chiaroscuro.",
+  "negative_prompt": "text, typography, letters, words, garbled text, watermarks, UI, people, humans, faces, abstract geometric shapes, fog, blur",
+  "rationale": "A cinematic still places the expensive, heavy physical asset\u2014the $200,000 automated forklift\u2014in its authentic operational environment, highlighting the tangible reality of the machine amidst the abstract corporate consolidation happening behind the scenes.",
+  "cue": "Your Seller Won't Stay",
+  "subject": "an autonomous warehouse forklift on a polished concrete staging floor",
+  "core_thesis": "Warehouse robots are becoming more affordable, but buyers risk losing their original service provider to industry acquisitions.",
+  "core_conflict": "Falling hardware capital costs vs. unstable vendor longevity and service contracts",
+  "composition": "wide asymmetrical framing with the machine in the lower right third",
+  "alt_text": "Cheaper Robots, Fewer Sellers. An autonomous warehouse forklift sitting on a concrete floor in a distribution center under",
+  "caption": "Cheaper Robots, Fewer Sellers: Unit prices fall but buyouts threaten your service deal.",
+  "title": "Cheaper Robots, Fewer Sellers",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-seller-wont-stay/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 175148,
+  "sha256": "sha256:2faaf6585bb524552e45890e7d9ea2cab1a9a24b2fe63867663f6a5176721b99",
+  "source_hash": "sha256:c87bf4c03899626152353004f03aefa8",
+  "source_chars": 5154,
+  "task_id": "de70cf7e9ed136b73abd5e8fbe31a4d7",
+  "credits": 5.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/de70cf7e9ed136b73abd5e8fbe31a4d7_1792586450574.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A sleek, unbranded autonomous warehouse forklift parked on a polished concrete staging floor in a vast, modern distribution center. Single strong practical light source from overhead high-bay LEDs casting deep, sharp contact shadows. Crisp atmospheric depth, restrained teal-and-amber industrial palette. No people facing the camera. The heavy industrial machine sits quietly with a blinking amber status light, capturing a moment of quiet operational tension. Premium editorial cover standard, high-contrast chiaroscuro.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-21T12:40:57+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE ROBOTICS // VENDOR RISK",
+    "title": "CHEAPER ROBOTS, FEWER SELLERS",
+    "hook": "Unit prices fall but buyouts threaten your service deal",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 60,
+    "contrast": 6.06,
+    "target": 5.5,
+    "clutter": 0.267,
+    "region_rgb": [
+      57,
+      81,
+      83
+    ],
+    "binding_rgb": [
+      90,
+      121,
+      126
+    ],
+    "title_lines": [
+      "CHEAPER ROBOTS,",
+      "FEWER SELLERS"
+    ],
+    "subject": 0.24,
+    "ink_subject": 0.143,
+    "spike": 0.626,
+    "generated_at": "2026-10-21T12:40:57+00:00"
+  }
+}

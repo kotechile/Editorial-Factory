@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T12:10:21Z",
+  "updated_at": "2026-10-21T12:41:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2733,6 +2733,24 @@
         "At a glance"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-10-21",
+      "public": false
+    },
+    {
+      "slug": "2026-10-21_your-seller-wont-stay",
+      "title": "$200,000 Robots: Your Seller Won't Stay",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-21",
       "public": false
     }
