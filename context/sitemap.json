@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T19:44:45Z",
+  "updated_at": "2026-10-21T20:08:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2798,6 +2798,24 @@
       "date": "2026-10-21",
       "public": true,
       "url": "https://wellroost.com/your-49-discount-isnt-all-roof/"
+    },
+    {
+      "slug": "2026-10-21_your-5-deductible-risks-your-claim",
+      "title": "Your 5% Deductible Risks Your Claim",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-21",
+      "public": false
     },
     {
       "slug": "2026-10-21_your-68k-tokens-cost-every-step",

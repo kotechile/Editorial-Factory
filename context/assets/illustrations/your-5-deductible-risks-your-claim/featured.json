@@ -1,0 +1,88 @@
+{
+  "slug": "your-5-deductible-risks-your-claim",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An overhead view of a property insurance document pressed under a heavy brass ruler on a dark wooden desk.",
+      "caption": "As home values rise, percentage-based deductibles shift the burden of average claims entirely to the homeowner.",
+      "title": "Insurance Deductible Scaling Math",
+      "bytes": 295207,
+      "sha256": "sha256:ea4a6037ca30a50c8dfa1b71fc3dc347"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of a thick, embossed property insurance contract document resting on a dark walnut desk. A heavy brushed brass architectural scale ruler weighs down the paper, partially obscuring the complex printed columns. Shot with a 50mm flat-field macro lens, razor-sharp focal plane. Asymmetric top-down flatlay composition, placing the document off-centre to the right with generous negative space on the dark wood. Even diffused directional window daylight casting soft shadows, muted tactile paper tones, illegibly cropped text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, ui, legible words",
+  "rationale": "The story centers on the exact printed dollar figures and math hidden in the declarations page of an insurance policy, making a document flatlay the ideal visual metaphor.",
+  "cue": "the exact dollar figure",
+  "subject": "an embossed property insurance contract weighed down by a brass architectural ruler",
+  "core_thesis": "A percentage deductible is charged against the dwelling limit, making it exceed the average claim and deciding the outcome of mid-sized losses.",
+  "core_conflict": "Scaling asset value versus the fixed out-of-pocket risk burden.",
+  "composition": "asymmetric top-down flatlay",
+  "alt_text": "The Percentage Deductible Trap. An overhead view of a property insurance document pressed under a heavy brass ruler on a",
+  "caption": "The Percentage Deductible Trap: How rising home values quietly erase your storm coverage.",
+  "title": "The Percentage Deductible Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-5-deductible-risks-your-claim/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 176101,
+  "sha256": "sha256:e76c5f70e8247132af2ede77c6b6edb3ff56f059797f9c41c9bc23524233b221",
+  "source_hash": "sha256:63a01b27ab78c9e1a86a445bab26b785",
+  "source_chars": 4251,
+  "task_id": "e627d3bb0788f26a4835aa8ed300f4b6",
+  "credits": 5.0,
+  "cost_ms": 56,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e627d3bb0788f26a4835aa8ed300f4b6_1792613292475.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of a thick, embossed property insurance contract document resting on a dark walnut desk. A heavy brushed brass architectural scale ruler weighs down the paper, partially obscuring the complex printed columns. Shot with a 50mm flat-field macro lens, razor-sharp focal plane. Asymmetric top-down flatlay composition, placing the document off-centre to the right with generous negative space on the dark wood. Even diffused directional window daylight casting soft shadows, muted tactile paper tones, illegibly cropped text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-21T20:08:22+00:00",
+  "overlay": {
+    "kicker": "PROPERTY RISK // PERCENT DEDUCTIBLES",
+    "title": "THE PERCENTAGE DEDUCTIBLE TRAP",
+    "hook": "How rising home values quietly erase your storm coverage",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.52,
+    "target": 4.5,
+    "clutter": 0.062,
+    "region_rgb": [
+      41,
+      35,
+      33
+    ],
+    "binding_rgb": [
+      55,
+      45,
+      43
+    ],
+    "title_lines": [
+      "THE PERCENTAGE",
+      "DEDUCTIBLE TRAP"
+    ],
+    "subject": 0.055,
+    "ink_subject": 0.017,
+    "spike": 0.207,
+    "generated_at": "2026-10-21T20:08:22+00:00"
+  }
+}
