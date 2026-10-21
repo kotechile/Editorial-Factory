@@ -252,6 +252,17 @@ one.
   must rest on a cited fact or be labelled a reading: "my reading, held loosely"), and restore each source
   term verbatim beside any gloss. A rewrite that also dropped "I did not read the paper" had removed the
   hedge that made a second-hand 7.22% honest — hedges are content, not style.
+- **The rewrite renames the study's independent variable, and then its result reads as a different study
+  (learned 2026-10-21).** On a two-paper cost synthesis the frontier turned "framework identity explains
+  52.95% of peak-RSS variance against 4.22% for task content" into "setup identity drives 53% … while the
+  task drives 4%", and spoke of "setups" throughout — a generic noun that makes a study *of frameworks*
+  read as a study of arbitrary environments, while rounding figures the numbers bullet still carried
+  exactly. Siblings in the same body: "nearly 39x" became "39 times more" (hedge dropped), a budget of
+  "90% of the pair's combined peak memory demand" became "90% load" (a budget fraction is not a
+  utilisation — different quantity, different meaning), and "95th-percentile allocation latency" became
+  "wait times" (wrong metric). All of it passes Flesch, the acronym check and the citation check. Diff
+  the source's own variable name, every hedge word (`nearly`, `about`, `up to`) and every fraction's
+  *basis* against the verified brief before the push, even when the plainer synonym reads better.
 - **`verify.sh`'s voice check reads the committed `*_draft.md` too, so an imperative in the structural
   draft fails the repo gate even when the `_final.md` is clean (learned 2026-10-19).** "Treat that as a
   vendor's claim" in the draft body reddened §9 with 2 problems after the publish had already gone
