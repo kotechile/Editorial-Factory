@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T18:08:49Z",
+  "updated_at": "2026-10-21T18:41:38Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2704,6 +2704,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-21",
+      "public": false
+    },
+    {
+      "slug": "2026-10-21_cap-your-card-at-80",
+      "title": "Why Your 80% Cap Wins: 22.4% More Tokens",
+      "vertical": "gpu_hardware",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-10-21",
       "public": false
     },

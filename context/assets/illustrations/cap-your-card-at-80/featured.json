@@ -1,0 +1,88 @@
+{
+  "slug": "cap-your-card-at-80",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy brushed-metal GPU compute blade partially pulled from a server rack under dramatic teal and amber lighting.",
+      "caption": "Tuning a precise power cap on existing GPU infrastructure can yield 22.4% more tokens per joule without requiring new hardware.",
+      "title": "GPU Power Capping Strategy",
+      "bytes": 648029,
+      "sha256": "sha256:a92b5cf0d0b20558999fdcafa544ad0a"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Cinematic film still, anamorphic 35mm look. A heavy, brushed-metal GPU compute blade partially extracted from a high-density server rack on a dark data center floor. The massive heat sinks and metallic edges of the hardware are illuminated by a single, striking amber utility light slicing through the deep cool teal ambient shadows, symbolizing a tuned thermal power limit. Crisp atmospheric depth, restrained teal-and-amber palette, visible material weight and intricate mechanical texture on the cooling fins. Extreme asymmetric composition, wide establishing angle, motion implied by the sliding heavy rail, moody high-stakes editorial photography.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, faces, human hands, UI, printed text, logos",
+  "rationale": "A cinematic still captures the physical reality and high-stakes atmosphere of the data center floor. The heavy hardware emphasizes that software power caps directly manipulate massive physical infrastructure.",
+  "cue": "a power cap you tune yourself",
+  "subject": "a heavy brushed-metal GPU compute blade in a high-density server rack",
+  "core_thesis": "Tuning a custom power cap near 80% on existing GPU hardware unlocks significant extra inference capacity without requiring new cards.",
+  "core_conflict": "Fixed data center power budgets versus the massive energy demands of scaling AI inference capacity.",
+  "composition": "extreme asymmetry with hero object on the left",
+  "alt_text": "The 80 Percent Power Cap. A heavy brushed-metal GPU compute blade partially pulled from a server rack under dramatic teal",
+  "caption": "The 80 Percent Power Cap: How a custom limit yields more tokens per joule.",
+  "title": "The 80 Percent Power Cap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/cap-your-card-at-80/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 381261,
+  "sha256": "sha256:ac6434cf49510cd24bdf1167a28339595d4bef169013c896a8390e54872a76ec",
+  "source_hash": "sha256:efe7373bf454784a199733ef3274dfdc",
+  "source_chars": 5785,
+  "task_id": "05107abdbfe545df013ad1b621b2bfbc",
+  "credits": 7.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/05107abdbfe545df013ad1b621b2bfbc_1792608083872.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look. A heavy, brushed-metal GPU compute blade partially extracted from a high-density server rack on a dark data center floor. The massive heat sinks and metallic edges of the hardware are illuminated by a single, striking amber utility light slicing through the deep cool teal ambient shadows, symbolizing a tuned thermal power limit. Crisp atmospheric depth, restrained teal-and-amber palette, visible material weight and intricate mechanical texture on the cooling fins. Extreme asymmetric composition, wide establishing angle, motion implied by the sliding heavy rail, moody high-stakes editorial photography.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-21T18:41:27+00:00",
+  "overlay": {
+    "kicker": "LLM INFERENCE // POWER CAPS",
+    "title": "THE 80 PERCENT POWER CAP",
+    "hook": "How a custom limit yields more tokens per joule",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.27,
+    "target": 4.5,
+    "clutter": 0.149,
+    "region_rgb": [
+      18,
+      23,
+      24
+    ],
+    "binding_rgb": [
+      20,
+      40,
+      41
+    ],
+    "title_lines": [
+      "THE 80 PERCENT",
+      "POWER CAP"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.009,
+    "spike": 0.012,
+    "generated_at": "2026-10-21T18:41:27+00:00"
+  }
+}
