@@ -268,3 +268,7 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-21 | `your-68k-tokens-cost-every-step` | gpu_hardware | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-68k-tokens-cost-every-step/featured.jpg` |
 | 2026-10-21 | `your-platform-23-features-no-stop-rule` | enterprise_build_vs_buy | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-platform-23-features-no-stop-rule/featured.png` |
 | 2026-10-21 | `your-seller-wont-stay` | warehouse_automation_robotics_capex | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-seller-wont-stay/featured.jpg` |
+| 2026-10-21 | `your-49-discount-isnt-all-roof` | property_loss_insurance_mitigation | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-49-discount-isnt-all-roof/featured.jpg` |
+| 2026-10-21 | `your-49-discount-isnt-all-roof` | property_loss_insurance_mitigation | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/your-49-discount-isnt-all-roof/featured.jpg` |
+| 2026-10-21 | `your-49-discount-isnt-all-roof` | property_loss_insurance_mitigation | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-49-discount-isnt-all-roof/featured.jpg` |
+| 2026-10-21 | `your-49-discount-isnt-all-roof` | property_loss_insurance_mitigation | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-49-discount-isnt-all-roof/featured.jpg` |

@@ -1,0 +1,144 @@
+{
+  "slug": "your-49-discount-isnt-all-roof",
+  "revision": 8,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An embossed roofing certificate overlapping a financial ledger on a dark wooden desk viewed from directly above.",
+      "caption": "The true cost of property insurance relies on the intersection of state mitigation mandates and global reinsurance markets.",
+      "title": "Roof-Discount-Reinsurance-Flatlay",
+      "bytes": 314779,
+      "sha256": "sha256:3ddecf6e71386e283927b43ae2a6873a"
+    },
+    {
+      "revision": 2,
+      "style": "document_flatlay",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Overhead flat-lay photograph, 50mm lens, of paper documents on a plain dark walnut desk surface. An embossed structural roofing certificate with a heavy foil seal overlaps a subtly textured financial market ledger. Top-down 90-degree view, single diffused directional daylight throwing soft contact shadows. The documents are slightly out of alignment. Blank, illegibly cropped paper, muted off-white and cream paper tones, heavy tactile parchment texture, quiet confidence, sophisticated color palette.",
+      "task_id": "b1102ba4411840cafe6f107a38377a9d",
+      "sha256": "sha256:c59f730d2c9b701128a76ae723fdacee9d1df2a733748d3736d96ae2a95b331f",
+      "generated_at": "2026-10-21T13:13:52+00:00",
+      "source_hash": "sha256:7dce0a049fbabfe1fad92ccec86f2aba"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Heavy-duty galvanized roofing fastener resting on blurred printed financial documents.",
+      "caption": "The mandated discount for a fortified roof relies on a baseline set by the global reinsurance market.",
+      "title": "Fortified-Roof-Discount-Reinsurance",
+      "bytes": 538397,
+      "sha256": "sha256:cda9fe0651f7d1447bfed3732051232f"
+    },
+    {
+      "revision": 4,
+      "style": "editorial_macro",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A single, heavy-duty galvanized roofing fastener with visible surface texture, metallic scoring, and slight dust, resting off-centre on a stack of matte paper documents filled with faint, out-of-focus columns of actuarial tables. Shallow depth of field with the background falling rapidly away into a soft blur. Soft directional daylight casting a sharp contact shadow, highlighting the brushed metal of the fastener against the muted tones of the printed paper. Premium editorial cover standard.",
+      "task_id": "dd4f1957d1b6707ae9661591b58274fa",
+      "sha256": "sha256:2bed89b0dcdc12c3f698241478103a128f730d2e1f200038b9531344b4451b1a",
+      "generated_at": "2026-10-21T13:16:15+00:00",
+      "source_hash": "sha256:7dce0a049fbabfe1fad92ccec86f2aba"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Galvanized steel hurricane tie bracket on a textured architectural roofing shingle under studio lighting.",
+      "caption": "The state's mandatory FORTIFIED discount ties the value of a stronger roof to a cycle it cannot control.",
+      "title": "Fortified-Roof-Hardware-Studio",
+      "bytes": 303593,
+      "sha256": "sha256:9ffded5423790f7bfb06604e5ab8b042"
+    },
+    {
+      "revision": 6,
+      "style": "studio_object",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Studio product photograph of a heavy-duty galvanized steel hurricane tie bracket resting securely on a textured slate-grey architectural roofing shingle. 85mm lens, catalogue clarity. Softbox key light with visible falloff throwing a long, dramatic cast shadow across the textured surface. Three-quarter angle, generic unbranded object, off-centre composition. Clean studio environment with material weight, muted grey and metallic color palette, quiet confidence, editorial cover standard.",
+      "task_id": "47636840b0ed40d36e3148f28110f060",
+      "sha256": "sha256:b8b9a02bb999c9c83fc9650a89ecaa7a10b9394ec62c7812185d50b11090da2d",
+      "generated_at": "2026-10-21T13:18:02+00:00",
+      "source_hash": "sha256:7dce0a049fbabfe1fad92ccec86f2aba"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Dense, overlapping residential rooftops with fortified shingles under a looming dark sky.",
+      "caption": "The actual dollar savings of a FORTIFIED roof upgrade depend partly on global reinsurance cycles the roof cannot control.",
+      "title": "Fortified Roof Reinsurance Telephoto",
+      "bytes": 420031,
+      "sha256": "sha256:c7fa601d94623fd46dde63d24e24b5c1"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Telephoto compression, 200mm long-lens view. A dense, stacked sea of residential rooflines featuring heavy, textured asphalt shingles and fortified ridge caps. Flat compressed perspective showing overlapping layers of neighborhood rooftops fading into the distance. Sharp directional lighting cutting across the ridges, deep architectural contrast. In the background, a massive, dark, brooding atmospheric sky looms over the houses, representing looming external forces. Crystal-clear telephoto distance clarity, no people in the foreground, highly tactile materials, muted cinematic color palette.",
+  "negative_prompt": "text, typography, watermark, garbled letters, logos, people, blurred foreground",
+  "rationale": "The long lens compression emphasizes the vast scale of residential risk exposure. By stacking overlapping, textured rooflines against a deep atmospheric sky, it visually represents the collision of local infrastructure with massive external forces.",
+  "cue": "a cycle the roof cannot control",
+  "subject": "densely stacked residential rooflines with fortified shingles",
+  "core_thesis": "Louisiana's state-mandated FORTIFIED roof discounts collide with global reinsurance market repricing on January 1, 2027, tying local homeowner savings to uncontrollable global cycles.",
+  "core_conflict": "Local structural resilience upgrades vs. massive global financial reinsurance cycles.",
+  "composition": "wide framing with stacked telephoto compression",
+  "alt_text": "Louisiana Roof Discounts. Dense, overlapping residential rooftops with fortified shingles under a looming dark sky.",
+  "caption": "Louisiana Roof Discounts: Why your premium drop is only partly about the roof.",
+  "title": "Louisiana Roof Discounts",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "long_lens_industry"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-49-discount-isnt-all-roof/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 246275,
+  "sha256": "sha256:b772f80b9b743423bbbb3ff8c653fb210572e43c981bdead116d149bf62be89f",
+  "source_hash": "sha256:7dce0a049fbabfe1fad92ccec86f2aba",
+  "source_chars": 5352,
+  "task_id": "518066fbf7eeba3a06915b8c996a86a7",
+  "credits": 5.0,
+  "cost_ms": 101,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/518066fbf7eeba3a06915b8c996a86a7_1792588874802.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Telephoto compression, 200mm long-lens view. A dense, stacked sea of residential rooflines featuring heavy, textured asphalt shingles and fortified ridge caps. Flat compressed perspective showing overlapping layers of neighborhood rooftops fading into the distance. Sharp directional lighting cutting across the ridges, deep architectural contrast. In the background, a massive, dark, brooding atmospheric sky looms over the houses, representing looming external forces. Crystal-clear telephoto distance clarity, no people in the foreground, highly tactile materials, muted cinematic color palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-21T13:21:16+00:00",
+  "overlay": {
+    "kicker": "PROPERTY INSURANCE // ROOF DISCOUNTS",
+    "title": "LOUISIANA ROOF DISCOUNTS",
+    "hook": "Why your premium drop is only partly about the roof",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.16,
+    "target": 4.5,
+    "clutter": 0.123,
+    "region_rgb": [
+      39,
+      45,
+      51
+    ],
+    "binding_rgb": [
+      58,
+      63,
+      69
+    ],
+    "title_lines": [
+      "LOUISIANA ROOF",
+      "DISCOUNTS"
+    ],
+    "subject": 0.028,
+    "ink_subject": 0.014,
+    "spike": 0.087,
+    "generated_at": "2026-10-21T13:21:16+00:00"
+  }
+}

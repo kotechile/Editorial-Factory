@@ -13,6 +13,12 @@ meta_title: "Your 49% Discount Isn't All Roof"
 meta_title_source: "derived_from_title"
 meta_description: "Louisiana will make standard insurers cut the hurricane part of a bill by up to 49% for a FORTIFIED roof, starting January 1, 2027."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-49-discount-isnt-all-roof/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Louisiana Roof Discounts. Dense, overlapping residential rooftops with fortified shingles under a looming dark sky."
+image_caption: "Louisiana Roof Discounts: Why your premium drop is only partly about the roof."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
