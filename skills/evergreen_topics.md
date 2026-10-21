@@ -392,6 +392,22 @@ report measures a 10–30% refrigerant undercharge *lowering* compressor energy,
 states charge and airflow faults *raise* energy by 8% and 13% — so check the direction on a page the gate can fetch
 before building a thesis on the direction.
 
+**Hosts probed live 2026-10-21, building a CI build-vs-buy / utilisation brief (the `enterprise_build_vs_buy` evergreen).**
+Carries the figure as plain text and fetches first try: `docs.github.com/en/billing/concepts/product-billing/github-actions` (14 KB — the
+whole per-minute rate table as text: Linux 1-core slim `$0.002`, Linux 2-core `$0.006`, arm64 `$0.005`, Windows `$0.010`, macOS `$0.062`;
+storage `$0.25` per GB-month shared against `$0.07` for the Actions cache; and the sentence that makes the built side look costless,
+"GitHub Actions usage is free for self-hosted runners"); `www.digitalocean.com/pricing/droplets` (the full ladder as one text line —
+`2 GiB 2 vCPUs … $0.02679 $ 18.00`, `4 GiB 2 vCPUs … $ 24.00`, `8 GiB 4 vCPUs … $ 48.00`); `docs.gitlab.com/ci/pipelines/compute_minutes/`
+(the cost-factor table — Linux small 1 / medium 2 / large 3 / xlarge 6 / 2xlarge 12, macOS M1 medium 6 and M2 Pro large 12, GPU medium 7,
+Windows medium 1 — plus the page's own formula "job duration / 60 × cost factor"). Fetches, with a matcher trap: `circleci.com/pricing/`
+(~16 KB) states its compute rates only in **credits**, and a cell leading on a credit count evidences on an unrelated table — a row written
+`10 credits per min` resolved to a GPU tier list, while `$0.12 per job run — Docker layer caching uses 200 credits per job run … (equivalent
+to $0.12 per job run)` landed on the right sentence, so lead CircleCI rows on their dollar equivalent (also there: network and storage at
+`420 credits per GB ($0.252/GB)`). `buildkite.com/pricing` fetches at ~20 KB but its per-seat and included-minute figures evidence on the
+trial banner's "30 days" — not usable as a row without re-phrasing. `about.gitlab.com/pricing/ci-cd/` is unreachable; the docs page above
+is the working substitute. A price-class comparison does not need one vendor per row, but it does need each vendor's *unit* recorded, because
+"minute", "credit" and "cost factor" are three different quantities and one article may not compare them as if they were one.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
