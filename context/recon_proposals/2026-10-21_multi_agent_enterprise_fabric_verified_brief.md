@@ -1,0 +1,53 @@
+# Verified Brief: multi_agent_enterprise_fabric — 2026-10-21
+
+**Angle Type:** Synthesis — Signal A (AgentLens, host meter) ⨂ Signal B (CC-Gittins, token meter).
+Every claim below was read out of the primary full text fetched this run
+(https://arxiv.org/html/2610.25231v1, https://arxiv.org/html/2610.26676v1, https://www.mulesoft.com/events).
+No secondary write-up is the source of record for any claim.
+
+| # | Signal Leg | Claim | Status | Source URL | Verbatim |
+|---|------------|-------|--------|-----------|----------|
+| A1 | A | Framework identity explains 52.95% of peak RSS variance; task content explains 4.22% | VERIFIED | https://arxiv.org/abs/2610.25231 | "Framework identity explains 52.95% of peak RSS variance while task content explains only 4.22%" |
+| A2 | A | MetaGPT fires a median of 117.2 execve events per tool call against 3.0 in CAMEL — "a nearly 39x gap" between frameworks doing the same abstract tool-use operation (intermediates: SWE-agent 51.6, SmoLAgents 15.2, AutoGen 10.7) | VERIFIED | https://arxiv.org/abs/2610.25231 | "MetaGPT triggers a median of 117.2 execve events per tool call, compared with 51.6 in SWE-agent, 15.2 in SmoLAgents, 10.7 in AutoGen, and only 3.0 in CAMEL, a nearly 39x gap across frameworks performing the same abstract tool-use operation." |
+| A3 | A | Peak RSS and subprocess count correlate at Spearman ρ=0.13, so no single metric proxies the others | VERIFIED | https://arxiv.org/abs/2610.25231 | "the Spearman correlation between peak RSS and subprocess count is only 0.13, making no single metric a reliable proxy for the others" |
+| A4 | A | MetaGPT also incurs a median of 6,420 page faults and 180.6 context switches per tool call | VERIFIED | https://arxiv.org/abs/2610.25231 | "MetaGPT also incurs a median of 6420 page faults and 180.6 context switches per tool call" |
+| A5 | A | Swarm peaks at roughly 230 concurrent processes per run; OpenHands roughly 150 | VERIFIED | https://arxiv.org/abs/2610.25231 | "Swarm reaches a median peak of approximately 230 concurrent processes per run and OpenHands approximately 150" |
+| A6 | A | Study design: 10 agent frameworks (Agno, AutoGen, CAMEL, CrewAI, LangGraph, MetaGPT, Swarm, PydanticAI, Smolagents, SWE-agent) on 11 matched SWE-rebench tasks; one dedicated Linux host, kernel 6.12.28, cgroup v2, 4-socket Intel Xeon Gold 6448H, 256 logical CPUs, 1.5 TiB RAM; model inference remote (DeepSeek API) so the host bears only orchestration, tool execution, subprocess creation and context-state cost | VERIFIED | https://arxiv.org/abs/2610.25231 | "We study 10 agent frameworks: Agno… SWE-agent (Yang et al., 2024)… we evaluate all frameworks on a matched set of 11 SWE-rebench tasks… a dedicated Linux server running kernel 6.12.28 with cgroup v2 and PSI enabled. The host platform is a 4-socket Intel Xeon Gold 6448H system with 256 logical CPUs and 1.5 TiB of RAM… Model inference is issued through the remote DeepSeek API… so that the host bears only the cost of orchestration, tool execution, subprocess creation, and context-state management." |
+| A7 | A | Co-location replay, three framework pairs, parent budgets of 110%, 100% and 90% of aggregate peak demand: at 90% the framework-aware controller holds the protected worker's P95 allocation latency at 5.7–7.1 ms, where static allocation inflates to 12.1–18.4 ms and an equal split to 10.7–17.0 ms (2.1×–2.6× and 1.8×–2.4× worse) | VERIFIED | https://arxiv.org/abs/2610.25231 | "At 90%, AgentLens keeps the protected worker's P95 latency at 5.7–7.1 ms across the three pairs, while static inflates to 12.1–18.4 ms and equal_split to 10.7–17.0 ms, a 2.1×–2.6× and 1.8×–2.4× regression respectively" |
+| A8 | A | Under the same 90% budget, static allocation fails to complete two to three of every three repetitions because OOM-kill cascades through the context-heavy worker; the framework-aware controller completes all repetitions | VERIFIED | https://arxiv.org/abs/2610.25231 | "static fails to complete two to three of every three repetitions at 90% because OOM-kill cascades through the context-heavy worker, whereas AgentLens completes all repetitions" |
+| A9 | A | The paper's own scale claim in its conclusion: framework-level differences account for an order-of-magnitude greater peak memory variance than task-level differences | VERIFIED | https://arxiv.org/abs/2610.25231 | "Framework-level differences account for an order-of-magnitude greater peak memory variance than task-level differences" |
+| A10 | A | The result is trace-driven replay, not production; the authors name limits: generalization to closed-source frameworks and fully automated fingerprinting | VERIFIED (limit) | https://arxiv.org/abs/2610.25231 | "We evaluate AgentLens via trace-driven replay." / "Limitations remain in generalizing across closed-source frameworks and fully automated fingerprinting." |
+| B1 | B | Assignment search is evaluated on eight quality–cost matrices from workflows with two to five roles and up to 1,681 candidate assignments | VERIFIED | https://arxiv.org/abs/2610.26676 | "We evaluate CC-Gittins on eight quality–cost matrices from workflows with two to five roles and up to 1,681 candidate assignments." |
+| B2 | B | CC-Gittins recovers a substantial fraction of the true Pareto frontier at roughly 10% of exhaustive-evaluation cost, and most of the frontier with few false positives by 30% | VERIFIED | https://arxiv.org/abs/2610.26676 | "Across the eight benchmarks, CC-Gittins recovers a substantial fraction of the true Pareto frontier at roughly 10% of the exhaustive-evaluation cost, and recovers most of the frontier with few false positives by 30%." |
+| B3 | B | On BIRD Dev at 90% lower evaluation cost than exhaustive evaluation: 88.75% mean recall and 100% mean precision over 20 seeds | VERIFIED | https://arxiv.org/abs/2610.26676 | "At 90% lower evaluation cost than exhaustive evaluation, CC-Gittins (ours) recovers most of the BIRD Dev Pareto frontier with no false positives (88.75% mean recall and 100% mean precision over 20 seeds)." |
+| B4 | B | Coverage is uneven and the paper says so: on HotpotQA mean recall is 0.58 at 10% cost and 0.74 at 30% (precision 0.97 / 0.99) | VERIFIED | https://arxiv.org/abs/2610.26676 | "On HotpotQA, mean recall is 0.58 at 10% cost and 0.74 at 30%, despite precision of 0.97 and 0.99, respectively. High precision therefore coexists with incomplete frontier recovery." |
+| B5 | B | The economic coupling the method exploits: assignments that cost more to deploy also cost more to evaluate | VERIFIED | https://arxiv.org/abs/2610.26676 | "It exploits the coupling between evaluation and deployment costs: assignments that cost more to deploy also cost more to evaluate." |
+| B6 | B | What exhaustive evaluation of those matrices costs in API calls: $62.58 (HotpotQA) and $234.34 (MathQA) for complete 10-model × 2-role × 200-question matrices of 20,000 observed cells each; the six SCOPE-derived instances cost $2,067.38 (BIRD Mini Dev), $946.78 (BIRD Dev), $149.24 (Bing Query Logs), $14.84 (Stack Overflow), $80.15 (Restaurant Valid) and $2.55 (Restaurant Test) | VERIFIED | https://arxiv.org/abs/2610.26676 | "The calculated exhaustive API costs are $62.58 and $234.34, respectively." / "Summing the per-entry API costs over each retained configuration–question matrix gives calculated exhaustive API costs of $2,067.38, $946.78, $149.24, $14.84, $80.15, and $2.55 for BIRD Mini Dev, BIRD Dev, Bing Query Logs, Stack Overflow, Restaurant Valid, and Restaurant Test, respectively." |
+| B7 | B | The evaluation is an offline replay of recorded response matrices that makes no new model calls | VERIFIED (limit) | https://arxiv.org/abs/2610.26676 | "The quality–cost experiments replay HotpotQA and MathQA response matrices collected with our workflow evaluation harness and six SCOPE-derived instances… The replay makes no new model API calls." / "The offline replay reveals only purchased observations." |
+| C1 | Friction | MuleSoft's own event calendar frames agent cost as a governance problem: past event "Control AI Costs & Govern Every Agent with MuleSoft Agent Fabric" (October 7, 2026) and upcoming "Beyond the Hype: Controlling AI Spend While Navigating Regulatory Guardrails with Agent Fabric" (November 18, 2026) | VERIFIED | https://www.mulesoft.com/events | "Control AI Costs & Govern Every Agent with MuleSoft Agent Fabric October 7, 2026 Watch On-Demand" / "Beyond the Hype: Controlling AI Spend While Navigating Regulatory Guardrails with Agent Fabric November 18, 2026 Register Now" |
+
+## Gate rulings for the drafter
+
+1. **Two meters, two nouns.** Signal A measures **host resources** (peak RSS, execve, subprocess count, page faults)
+   with inference held off the box. Signal B measures **token-derived API spend** and task quality. Never write one
+   figure as if it priced the other: 52.95% is a share of **peak-memory variance**, not a share of the bill; 90% is a
+   reduction in **evaluation/search cost**, not a reduction in deployment cost.
+2. **The 39x is kernel work per tool call**, between MetaGPT and CAMEL on matched tasks — not "MetaGPT is 39x slower"
+   and not a quality claim.
+3. **"An order of magnitude greater" is the authors' own comparative for framework vs task variance** (A9), and it
+   comes from the same 10-framework, 11-task host. It is not a claim about model choice.
+4. **Recall caveat must survive** (B4): on HotpotQA the search recovers 0.58 of the frontier at 10% of cost and 0.74
+   at 30%. BIRD Dev's 88.75% is one instance at a 90%-lower cost point. Do not present frontier recovery as uniform.
+5. Both results are **lab instruments**: trace-driven replay on one host (A10) and offline replay of already-purchased
+   observations (B7). Say so in the piece; neither is a production measurement.
+6. **No dollar figure may be attached to Signal A.** It reports latency, memory and process counts; it does not
+   price them. The only dollars in the piece are B6's API-evaluation costs and must be labelled as such.
+7. **Framework names are load-bearing** (Agno, AutoGen, CAMEL, CrewAI, LangGraph, MetaGPT, Swarm, PydanticAI,
+   Smolagents, SWE-agent). Misspelling one attributes a measurement to the wrong project.
+8. **The MuleSoft line is a webinar calendar, not a product claim.** Attribute it as the vendor's event framing;
+   do not assert what the sessions said or that any product measures host resources.
+
+## Dual-anchor gate
+Leg A: 10 claims VERIFIED (A1–A9 measured/design, A10 as its stated limit). Leg B: 7 claims VERIFIED (B1–B6 measured,
+B7 as its stated limit). 0 REMOVED, 0 FLAGGED. Dual-anchor gate **PASS** — both legs carry ≥ 2 VERIFIED claims from
+their own primary full text.

@@ -1,0 +1,90 @@
+{
+  "slug": "agent-fleet-two-meters",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A massive engineered base block supporting a tiny upper module on a concrete floor.",
+      "caption": "The choice of agent framework drives underlying host load far more than the task itself.",
+      "title": "Agent Framework Host Load",
+      "bytes": 2153435,
+      "sha256": "sha256:584e2503c3adb1660cba1835326c7286"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render, asymmetric off-centre composition. A modular mechanical assembly resting on a weathered concrete surface. The structure features a massive, complex lower base housing with multiple recessed connection bays and thick structural fins, supporting a disproportionately small, clean top module. Arranged to show the massive underlying weight of the foundation. Matte muted palette of industrial grey and soft teal, visible moulding seams and deep contact shadows. One directional key light raking across the assembly from the left, throwing a long cast shadow into the generous empty margin on the right.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, text, printed lettering",
+  "rationale": "The matte 3D clay render translates abstract software architecture into a physical assembly. A massive, complex base supporting a tiny upper module visually communicates the hidden 39x resource weight of the underlying framework harness.",
+  "cue": "One Meter Nobody Budgets",
+  "subject": "a massive engineered base block supporting a small top module",
+  "core_thesis": "An agent fabric's running cost is determined as much by the underlying framework's system processes as by the model itself, yet only the model meter is measured.",
+  "core_conflict": "Hidden host compute load versus highly visible token model costs.",
+  "composition": "asymmetric, off-centre composition",
+  "alt_text": "The Unbudgeted Host Meter. A massive engineered base block supporting a tiny upper module on a concrete floor.",
+  "caption": "The Unbudgeted Host Meter: The hidden 39x cost gap inside your AI agent framework.",
+  "title": "The Unbudgeted Host Meter",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/agent-fleet-two-meters/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1583892,
+  "sha256": "sha256:ba7f9d858e7e9b9e66180fd744c0f660fbf0fd4a518778017227d4f408ce9c8a",
+  "source_hash": "sha256:98f232424d1638300d18ff8dc70e3855",
+  "source_chars": 6252,
+  "task_id": "90a7abfe3beb6175e46201fe614a1b54",
+  "credits": 18.0,
+  "cost_ms": 44,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e8a61fa144021dacf8c4760380ebfeb9.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render, asymmetric off-centre composition. A modular mechanical assembly resting on a weathered concrete surface. The structure features a massive, complex lower base housing with multiple recessed connection bays and thick structural fins, supporting a disproportionately small, clean top module. Arranged to show the massive underlying weight of the foundation. Matte muted palette of industrial grey and soft teal, visible moulding seams and deep contact shadows. One directional key light raking across the assembly from the left, throwing a long cast shadow into the generous empty margin on the right.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-21T11:12:03+00:00",
+  "overlay": {
+    "kicker": "MULTI-AGENT SYSTEMS // HOST COSTS",
+    "title": "THE UNBUDGETED HOST METER",
+    "hook": "The hidden 39x cost gap inside your AI agent framework",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 75,
+    "contrast": 4.95,
+    "target": 4.5,
+    "clutter": 0.093,
+    "region_rgb": [
+      136,
+      130,
+      111
+    ],
+    "binding_rgb": [
+      126,
+      119,
+      101
+    ],
+    "title_lines": [
+      "THE UNBUDGETED",
+      "HOST METER"
+    ],
+    "subject": 0.083,
+    "ink_subject": 0.056,
+    "spike": 0.193,
+    "generated_at": "2026-10-21T11:12:03+00:00"
+  }
+}
