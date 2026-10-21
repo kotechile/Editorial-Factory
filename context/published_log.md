@@ -156,6 +156,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-21 | gpu_hardware | your-68k-tokens-cost-every-step | Your 68K Tokens Cost Every Step | https://pressflow.aichieve.net/published/2026-10-21_your-68k-tokens-cost-every-step.md | reader site only |
 | 2026-10-21 | enterprise_build_vs_buy | your-platform-23-features-no-stop-rule | Your Platform: 23 Features, No Stop Rule | https://pressflow.aichieve.net/published/2026-10-21_your-platform-23-features-no-stop-rule.md | reader site only |
 | 2026-10-21 | warehouse_automation_robotics_capex | your-seller-wont-stay | $200,000 Robots: Your Seller Won't Stay | https://pressflow.aichieve.net/published/2026-10-21_your-seller-wont-stay.md | reader site only |
+| 2026-10-21 | property_loss_insurance_mitigation | your-49-discount-isnt-all-roof | Your 49% Discount Isn't All Roof | https://pressflow.aichieve.net/published/2026-10-21_your-49-discount-isnt-all-roof.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

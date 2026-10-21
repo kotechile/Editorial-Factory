@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T12:41:09Z",
+  "updated_at": "2026-10-21T13:11:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2697,6 +2697,24 @@
         "At a glance"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-10-21",
+      "public": false
+    },
+    {
+      "slug": "2026-10-21_your-49-discount-isnt-all-roof",
+      "title": "Your 49% Discount Isn't All Roof",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-21",
       "public": false
     },
