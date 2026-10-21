@@ -252,6 +252,7 @@ one.
   must rest on a cited fact or be labelled a reading: "my reading, held loosely"), and restore each source
   term verbatim beside any gloss. A rewrite that also dropped "I did not read the paper" had removed the
   hedge that made a second-hand 7.22% honest — hedges are content, not style.
+- **A share-of-something figure is the first casualty of compaction — audit every `% of <duration or base>` against the brief (learned 2026-10-21).** On a two-paper memory piece the draft stated that inference occupies only 5.6% of the time a session's KV state is retained, which was the *only* evidence that the retained state is idle most of the time; the frontier's PASS rewrite dropped it from the body, the numbers bullet and the catch while keeping every count intact — 121 million calls, 68K tokens, 63%, 13.6% all survived, so a numeric diff saw nothing missing. A count is load-bearing-looking; a share reads like colour, so the model deletes it. Diff every figure whose unit is "% of time / of capacity / of calls" against the verified brief before the push, and if the article's argument rests on one, restore it in all three places it appeared (prose, numbers bullet, catch) rather than once.
 - **The rewrite renames the study's independent variable, and then its result reads as a different study
   (learned 2026-10-21).** On a two-paper cost synthesis the frontier turned "framework identity explains
   52.95% of peak-RSS variance against 4.22% for task content" into "setup identity drives 53% … while the
