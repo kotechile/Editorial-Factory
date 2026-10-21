@@ -1,0 +1,90 @@
+{
+  "slug": "silent-leak-bypasses-your-filter",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of optical processing modules showing an internal light ray diverging before the final gate.",
+      "caption": "Internal agent-to-agent channels leak data at a much higher rate than the final output, requiring security checks at every hop.",
+      "title": "Silent Leak Multi-Agent Routing",
+      "bytes": 1651424,
+      "sha256": "sha256:a18d4e9988216f9114f8cfdd365de500"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre layout with generous negative space. Recognisable hardware modules, optical processing bays, and precise optical glass beam-splitters arranged in a deliberate sequence on a matte brushed steel drafting table. An internal lateral warm amber light ray diverges between the intermediate modules, bypassing the final output gate. Flat muted palette with one warm amber accent colour, thin consistent line weight, visible architectural depth, unlabelled, one directional light casting sharp geometric shadows.",
+  "negative_prompt": "garbled text, random lettering, numbers, UI, watermarks, typography, labels",
+  "rationale": "A technical isometric cutaway elegantly illustrates system architectures and routing topologies. It allows us to visualize the internal 'hops' between processing modules and the lateral data leak bypassing the final filter.",
+  "cue": "the check belongs at each hop",
+  "subject": "isometric technical cutaway of optical processing modules with internal routing rays",
+  "core_thesis": "Multi-agent setups leak private data predominantly in agent-to-agent communication channels rather than the final output, requiring per-hop security checks.",
+  "core_conflict": "Internal channel exposure versus final output filtering",
+  "composition": "asymmetric off-centre layout with generous negative space",
+  "alt_text": "Multi-Agent Data Leaks. Isometric cutaway of optical processing modules showing an internal light ray diverging before the",
+  "caption": "Multi-Agent Data Leaks: Internal messages bypass output filters to leak data.",
+  "title": "Multi-Agent Data Leaks",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/silent-leak-bypasses-your-filter/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1210996,
+  "sha256": "sha256:3e211de939b5a5929e6e962d9fa77ade06c7e977ea564478abed4a358fe3b1ff",
+  "source_hash": "sha256:438ab66f494fabe69f30885680bf03a8",
+  "source_chars": 4876,
+  "task_id": "63154c78ecbd1c1ea6ba72da6d138420",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_da267d74f1f075b3f0beab37314dfc91.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre layout with generous negative space. Recognisable hardware modules, optical processing bays, and precise optical glass beam-splitters arranged in a deliberate sequence on a matte brushed steel drafting table. An internal lateral warm amber light ray diverges between the intermediate modules, bypassing the final output gate. Flat muted palette with one warm amber accent colour, thin consistent line weight, visible architectural depth, unlabelled, one directional light casting sharp geometric shadows.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-21T17:37:36+00:00",
+  "overlay": {
+    "kicker": "MULTI-AGENT AI // INTERNAL LEAKS",
+    "title": "MULTI-AGENT DATA LEAKS",
+    "hook": "Internal messages bypass output filters to leak data",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 10.33,
+    "target": 4.5,
+    "clutter": 0.045,
+    "region_rgb": [
+      227,
+      228,
+      228
+    ],
+    "binding_rgb": [
+      230,
+      228,
+      229
+    ],
+    "title_lines": [
+      "MULTI-AGENT",
+      "DATA LEAKS"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.005,
+    "spike": 0.026,
+    "generated_at": "2026-10-21T17:37:36+00:00"
+  }
+}

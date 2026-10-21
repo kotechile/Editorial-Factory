@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T13:26:47Z",
+  "updated_at": "2026-10-21T17:37:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2707,6 +2707,24 @@
       "date": "2026-10-21",
       "public": true,
       "url": "https://aichieve.net/isolation-isnt-detection/"
+    },
+    {
+      "slug": "2026-10-21_silent-leak-bypasses-your-filter",
+      "title": "Silent Leak: 68.8% Bypasses Your Filter",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-21",
+      "public": false
     },
     {
       "slug": "2026-10-21_your-49-discount-isnt-all-roof",
