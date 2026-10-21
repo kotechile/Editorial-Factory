@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T14:17:09+00:00",
+  "generated_at": "2026-10-21T13:26:47+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -1466,6 +1466,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "monitor-77-percent-guess-where-it-fails",
+      "title": "Your Monitor's 77% Guess: Where It Fails",
+      "url": "https://wellroost.com/monitor-77-percent-guess-where-it-fails/",
+      "path": "/monitor-77-percent-guess-where-it-fails/",
+      "sites_live": {
+        "wellroost.com": "/monitor-77-percent-guess-where-it-fails/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "A 2026 paper on a small home energy monitor shows what happens when it guesses which of four appliances is running from one main meter.",
+      "modified": "2026-10-20T19:12:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
       "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
       "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
@@ -1696,6 +1719,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-49-discount-isnt-all-roof",
+      "title": "Your 49% Discount Isn't All Roof",
+      "url": "https://wellroost.com/your-49-discount-isnt-all-roof/",
+      "path": "/your-49-discount-isnt-all-roof/",
+      "sites_live": {
+        "wellroost.com": "/your-49-discount-isnt-all-roof/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "Louisiana will make standard insurers cut the hurricane part of a bill by up to 49% for a FORTIFIED roof, starting January 1, 2027.",
+      "modified": "2026-10-21T13:22:23",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-75000-btu-tank-venting-trap",
       "title": "Your 75,000-Btu Tank's Venting Trap",
       "url": "https://wellroost.com/your-75000-btu-tank-venting-trap/",
@@ -1896,6 +1942,29 @@
       ],
       "excerpt": "Roughly 70% of agent failures in a live runtime were first caught by a human reading the product, while thousands of tests stayed green.",
       "modified": "2026-10-15T12:33:36",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "agent-fleet-two-meters",
+      "title": "Your Agent Fleet's 39x Gap: One Meter Nobody Budgets",
+      "url": "https://aichieve.net/agent-fleet-two-meters/",
+      "path": "/agent-fleet-two-meters/",
+      "sites_live": {
+        "aichieve.net": "/agent-fleet-two-meters/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Two agent frameworks ran the same eleven coding tasks on the same machine this month. One fired nearly 39x more system process launches per tool call than\u2026",
+      "modified": "2026-10-21T11:12:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2583,6 +2652,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "enclave-overhead-62-percent-not-4",
+      "title": "Enclave overhead: 62.8%, not 4%",
+      "url": "https://aichieve.net/enclave-overhead-62-percent-not-4/",
+      "path": "/enclave-overhead-62-percent-not-4/",
+      "sites_live": {
+        "aichieve.net": "/enclave-overhead-62-percent-not-4/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Enclave overhead is not 4%. On an NVIDIA (the chip maker) H200 card, confidential mode cut token throughput by 35.0% to 62.8%.",
+      "modified": "2026-10-20T18:12:43",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
       "title": "The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision",
       "url": "https://aichieve.net/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/",
@@ -2997,6 +3089,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "isolation-isnt-detection",
+      "title": "Silent Errors Halve Agent Success: 33.6% Noticed at Best",
+      "url": "https://aichieve.net/isolation-isnt-detection/",
+      "path": "/isolation-isnt-detection/",
+      "sites_live": {
+        "aichieve.net": "/isolation-isnt-detection/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Meta's contained agent design bounds failures that announce themselves. A new benchmark finds the failure that halves agent success arrives with no signal at all.",
+      "modified": "2026-10-21T10:43:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "kill-switch-misses-half-your-agents",
       "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
       "url": "https://aichieve.net/kill-switch-misses-half-your-agents/",
@@ -3151,6 +3266,29 @@
       ],
       "excerpt": "The shortest artificial intelligence (AI) model retirement notice on the market is 2 weeks, and it breaks your audit trail.",
       "modified": "2026-10-19T18:11:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "monolith-split-price-the-premium",
+      "title": "Your Monolith Split: 20% More Cost, 90% Slower Debt",
+      "url": "https://aichieve.net/monolith-split-price-the-premium/",
+      "path": "/monolith-split-price-the-premium/",
+      "sites_live": {
+        "aichieve.net": "/monolith-split-price-the-premium/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Splitting your monolith now has a price tag. The split system costs more than 20% extra to build, and it buys technical debt that grows about 90% slower.",
+      "modified": "2026-10-20T18:41:56",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3542,6 +3680,29 @@
       ],
       "excerpt": "Self-healing tools now grade their own work, and the scores clash.",
       "modified": "2026-10-15T12:33:34",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "rerun-diff-measures-gpu",
+      "title": "Your 9% Drop: Not the Model",
+      "url": "https://aichieve.net/rerun-diff-measures-gpu/",
+      "path": "/rerun-diff-measures-gpu/",
+      "sites_live": {
+        "aichieve.net": "/rerun-diff-measures-gpu/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "A giant model read the exact same prompt a thousand times at a fixed zero setting, known as temperature 0, but gave 80 different answers.",
+      "modified": "2026-10-20T17:40:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4227,6 +4388,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-68k-tokens-cost-every-step",
+      "title": "Your 68K Tokens Cost Every Step",
+      "url": "https://aichieve.net/your-68k-tokens-cost-every-step/",
+      "path": "/your-68k-tokens-cost-every-step/",
+      "sites_live": {
+        "aichieve.net": "/your-68k-tokens-cost-every-step/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Four live traces covering more than 121 million model calls show the median research session growing from about 10K to 68K tokens by the 30th call. A separate\u2026",
+      "modified": "2026-10-21T11:40:43",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-180-day-model-is-already-wrong",
       "title": "Your 180-day model is already wrong",
       "url": "https://aichieve.net/your-180-day-model-is-already-wrong/",
@@ -4312,6 +4496,29 @@
       ],
       "excerpt": "Kubernetes patches its three newest minor versions, then drops each one roughly a year after it ships.",
       "modified": "2026-10-15T12:33:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-exception-log-owes-5-years",
+      "title": "Your Exception Log Owes 5 Years",
+      "url": "https://aichieve.net/your-exception-log-owes-5-years/",
+      "path": "/your-exception-log-owes-5-years/",
+      "sites_live": {
+        "aichieve.net": "/your-exception-log-owes-5-years/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A customs record that backs an entry must be kept for five years. Your control tower's exception log probably drops this data too early.",
+      "modified": "2026-10-20T20:11:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4411,6 +4618,75 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-platform-23-features-no-stop-rule",
+      "title": "Your Platform: 23 Features, No Stop Rule",
+      "url": "https://aichieve.net/your-platform-23-features-no-stop-rule/",
+      "path": "/your-platform-23-features-no-stop-rule/",
+      "sites_live": {
+        "aichieve.net": "/your-platform-23-features-no-stop-rule/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "The most common number of features a platform team now owns is 23, up from four a year earlier. In the same fortnight, 51% of chief information officers\u2026",
+      "modified": "2026-10-21T12:10:20",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-render-bill-multiplies-by-22-97",
+      "title": "Your Render Bill Multiplies by 22.97",
+      "url": "https://aichieve.net/your-render-bill-multiplies-by-22-97/",
+      "path": "/your-render-bill-multiplies-by-22-97/",
+      "sites_live": {
+        "aichieve.net": "/your-render-bill-multiplies-by-22-97/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Cloud transcoding bills the render ladder, not the footage: a six-rung ladder bills eleven output minutes per source minute, $4.95 an hour on AWS's basic tier.",
+      "modified": "2026-10-20T19:40:13",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-seller-wont-stay",
+      "title": "$200,000 Robots: Your Seller Won't Stay",
+      "url": "https://aichieve.net/your-seller-wont-stay/",
+      "path": "/your-seller-wont-stay/",
+      "sites_live": {
+        "aichieve.net": "/your-seller-wont-stay/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "An automated forklift costs $100,000 to $200,000 a unit today. Seegrid says the model it is building for warehouses, due in early 2027, will sell for about\u2026",
+      "modified": "2026-10-21T12:41:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-tool-surface-is-a-release-surface",
       "title": "Your Gateway: 60.5% Injection Risk",
       "url": "https://aichieve.net/your-tool-surface-is-a-release-surface/",
@@ -4478,6 +4754,146 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1087,
+      "slug": "your-seller-wont-stay",
+      "title": "$200,000 Robots: Your Seller Won&#8217;t Stay",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T12:41:07",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1084,
+      "slug": "your-platform-23-features-no-stop-rule",
+      "title": "Your Platform: 23 Features, No Stop Rule",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T12:10:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1081,
+      "slug": "your-68k-tokens-cost-every-step",
+      "title": "Your 68K Tokens Cost Every Step",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T11:40:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1078,
+      "slug": "agent-fleet-two-meters",
+      "title": "Your Agent Fleet&#8217;s 39x Gap: One Meter Nobody Budgets",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T11:12:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1074,
+      "slug": "isolation-isnt-detection",
+      "title": "Silent Errors Halve Agent Success: 33.6% Noticed at Best",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T10:43:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1072,
+      "slug": "your-exception-log-owes-5-years",
+      "title": "Your Exception Log Owes 5 Years",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T20:11:09",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1069,
+      "slug": "your-render-bill-multiplies-by-22-97",
+      "title": "Your Render Bill Multiplies by 22.97",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T19:40:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1065,
+      "slug": "monolith-split-price-the-premium",
+      "title": "Your Monolith Split: 20% More Cost, 90% Slower Debt",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T18:41:56",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1062,
+      "slug": "enclave-overhead-62-percent-not-4",
+      "title": "Enclave overhead: 62.8%, not 4%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T18:12:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1059,
+      "slug": "rerun-diff-measures-gpu",
+      "title": "Your 9% Drop: Not the Model",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-20T17:40:18",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -5595,146 +6011,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T12:33:45",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 584,
-      "slug": "agent-failure-topology-not-model",
-      "title": "Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:45",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 586,
-      "slug": "token-price-record-low-budget-overrun",
-      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn&#8217;t.",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 588,
-      "slug": "freight-scale-bet-vs-contract-duration",
-      "title": "The $5.8 Billion Freight Bet Meets a Market That Won&#8217;t Commit",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 529,
-      "slug": "agent-safety-gate-moves-to-verified-state",
-      "title": "The Agent Safety Gate Moves to Verified State",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 501,
-      "slug": "the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost",
-      "title": "The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 514,
-      "slug": "caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors",
-      "title": "CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor\u2019s Spreadsheet:",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-18T19:04:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 511,
-      "slug": "parcelproof-stop-bleeding-28-on-carrier-invoices",
-      "title": "ParcelProof: Stop Bleeding 2\u20138% on Carrier Invoices",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-18T19:04:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 508,
-      "slug": "facturgate-the-deterministic-pre-send-gate-converter-for-european-e",
-      "title": "FacturGate: The Deterministic Pre-Send Gate &#038; Converter for European E-Invoicing (EN 16931)",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-18T19:04:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 484,
-      "slug": "tariff-split-reshoring-heavy-half",
-      "title": "The Tariff Split in Two \u2014 Reshoring Took the Heavy Half",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 498,
-      "slug": "stripe-accounting-software-solving-the-payout-black-box-with",
-      "title": "Stripe Accounting Software: Solving the Payout Black Box with LedgerLink",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-18T19:04:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
