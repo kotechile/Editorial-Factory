@@ -1,0 +1,90 @@
+{
+  "slug": "isolation-isnt-detection",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a multi-stage routing bay where a corrupted module passes an inspection gate.",
+      "caption": "When agents are kept isolated, schema-valid but incorrect data can pass through routing checks undetected.",
+      "title": "Isometric Agent Routing Failure",
+      "bytes": 2304051,
+      "sha256": "sha256:f424ffaa813e421135ae2e7ecf9e7b30"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. An intricate, multi-stage routing bay and processing architecture laid over a weathered plant floor drafting table. The assembly features recognizable hardware racks, isolated processing modules, and data trays. In an asymmetric composition with off-centre focus, a visibly corrupted, misaligned module smoothly passes through a pristine, unlatched inspection gate without triggering an alarm. Flat muted palette with a single bright amber accent colour highlighting the corrupted module. Thin consistent line weight, visible depth to the components rather than abstract boxes. One directional key light throwing sharp shadows, unlabelled, generous empty margin.",
+  "negative_prompt": "text, typography, garbled letters, numbers, watermark, signature, ui elements, labels",
+  "rationale": "The story is about a systemic, architectural software workflow and how data moves through discrete, isolated processing stages. A technical isometric cutaway perfectly visualizes the flow of information through separated modules and the specific failure of a bad piece passing a checkpoint.",
+  "cue": "Silent errors roughly halve task success",
+  "subject": "an isometric cutaway of an intricate, multi-stage routing bay with a corrupted module passing a checkpoint",
+  "core_thesis": "Silent errors in isolated agent architectures pass through undetected, cutting task success by roughly half, requiring state checks at tool boundaries.",
+  "core_conflict": "Isolated architectural containment vs. the propagation of undetected schema-valid bad data.",
+  "composition": "asymmetric composition, off-centre focus on the checkpoint gate",
+  "alt_text": "Silent Errors Halve Success. Isometric cutaway of a multi-stage routing bay where a corrupted module passes an inspection",
+  "caption": "Silent Errors Halve Success: Valid but wrong tool outputs ruin multi-agent workflows.",
+  "title": "Silent Errors Halve Success",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/isolation-isnt-detection/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1808785,
+  "sha256": "sha256:99d2a6a822a5cca973cb1c37766337de254df000c7033237334370fdb03a0279",
+  "source_hash": "sha256:450d3da8abb0c0c3ff093c49868ba661",
+  "source_chars": 6695,
+  "task_id": "35911e1615e8362511988714303a2f49",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_de671bec830f99272d85332f9bc9a82e.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. An intricate, multi-stage routing bay and processing architecture laid over a weathered plant floor drafting table. The assembly features recognizable hardware racks, isolated processing modules, and data trays. In an asymmetric composition with off-centre focus, a visibly corrupted, misaligned module smoothly passes through a pristine, unlatched inspection gate without triggering an alarm. Flat muted palette with a single bright amber accent colour highlighting the corrupted module. Thin consistent line weight, visible depth to the components rather than abstract boxes. One directional key light throwing sharp shadows, unlabelled, generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-21T10:42:23+00:00",
+  "overlay": {
+    "kicker": "AI AGENT DESIGN // SILENT ERRORS",
+    "title": "SILENT ERRORS HALVE SUCCESS",
+    "hook": "Valid but wrong tool outputs ruin multi-agent workflows",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 8.17,
+    "target": 5.5,
+    "clutter": 0.256,
+    "region_rgb": [
+      214,
+      205,
+      187
+    ],
+    "binding_rgb": [
+      212,
+      204,
+      183
+    ],
+    "title_lines": [
+      "SILENT ERRORS",
+      "HALVE SUCCESS"
+    ],
+    "subject": 0.213,
+    "ink_subject": 0.115,
+    "spike": 0.603,
+    "generated_at": "2026-10-21T10:42:23+00:00"
+  }
+}

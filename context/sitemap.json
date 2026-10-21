@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:11:10Z",
+  "updated_at": "2026-10-21T10:40:38Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -19,8 +19,7 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-09-21",
-      "public": true,
-      "url": "https://aichieve.net/mcp-skills-extension/"
+      "public": false
     },
     {
       "slug": "2026-09-24_ai-spend-27t-cost-visibility-mandate",
@@ -31,8 +30,7 @@
       "h2_topics": [],
       "target_persona": "enterprise_cai",
       "date": "2026-09-24",
-      "public": true,
-      "url": "https://aichieve.net/ai-spend-27t-cost-visibility-mandate/"
+      "public": false
     },
     {
       "slug": "2026-09-24_maskills-multi-agent-skills-optimization",
@@ -47,8 +45,7 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-09-24",
-      "public": true,
-      "url": "https://aichieve.net/maskills-multi-agent-skills-optimization/"
+      "public": false
     },
     {
       "slug": "2026-09-24_up-ns-rail-merger-clears-summary-denial",
@@ -59,8 +56,7 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-09-24",
-      "public": true,
-      "url": "https://aichieve.net/up-ns-rail-merger-clears-summary-denial/"
+      "public": false
     },
     {
       "slug": "2026-09-25_ca-fair-plan-rate-hike-hardening-exit",
@@ -103,8 +99,7 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-09-25",
-      "public": true,
-      "url": "https://aichieve.net/zet-scale-ev-truck-residual-value-risk/"
+      "public": false
     },
     {
       "slug": "2026-09-26_disney-hulu-fourth-hike-subscription-creep",
@@ -119,8 +114,7 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/"
+      "public": false
     },
     {
       "slug": "2026-09-26_reshoring-moved-the-tariff-upstream",
@@ -135,8 +129,7 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://aichieve.net/reshoring-moved-the-tariff-upstream/"
+      "public": false
     },
     {
       "slug": "2026-09-26_tariff-cliff-already-priced-in",
@@ -151,8 +144,7 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://aichieve.net/tariff-cliff-already-priced-in/"
+      "public": false
     },
     {
       "slug": "2026-10-01_goods-tariff-relief-vs-vessel-fee",
@@ -163,8 +155,7 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-10-01",
-      "public": true,
-      "url": "https://aichieve.net/goods-tariff-relief-vs-vessel-fee/"
+      "public": false
     },
     {
       "slug": "2026-10-01_planner-as-router-plan-time-routing",
@@ -189,8 +180,7 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-10-01",
-      "public": true,
-      "url": "https://aichieve.net/planning-ai-buys-capability-not-autonomy/"
+      "public": false
     },
     {
       "slug": "2026-10-01_token-prices-halved-cfo-cant-read-bill",
@@ -232,8 +222,7 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-02",
-      "public": true,
-      "url": "https://aichieve.net/same-day-race-undoes-route-optimization/"
+      "public": false
     },
     {
       "slug": "2026-10-03_3d-printing-failed-prints-are-the-cost",
@@ -343,8 +332,7 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-03",
-      "public": true,
-      "url": "https://aichieve.net/tariff-split-reshoring-heavy-half/"
+      "public": false
     },
     {
       "slug": "2026-10-03_total-landed-cost-china-vs-mexico",
@@ -2459,7 +2447,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/enclave-overhead-62-percent-not-4/"
     },
     {
       "slug": "2026-10-20_monitor-77-percent-guess-where-it-fails",
@@ -2477,7 +2466,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/monitor-77-percent-guess-where-it-fails/"
     },
     {
       "slug": "2026-10-20_monolith-split-price-the-premium",
@@ -2495,7 +2485,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/monolith-split-price-the-premium/"
     },
     {
       "slug": "2026-10-20_rerun-diff-measures-gpu",
@@ -2512,7 +2503,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/rerun-diff-measures-gpu/"
     },
     {
       "slug": "2026-10-20_your-180-day-model-is-already-wrong",
@@ -2587,7 +2579,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-exception-log-owes-5-years/"
     },
     {
       "slug": "2026-10-20_your-gpu-landlord-80-wont-survive",
@@ -2643,7 +2636,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-20",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-render-bill-multiplies-by-22-97/"
     },
     {
       "slug": "2026-10-20_your-trace-wont-prove-925-points",
@@ -2663,6 +2657,24 @@
       "date": "2026-10-20",
       "public": true,
       "url": "https://aichieve.net/your-trace-wont-prove-925-points/"
+    },
+    {
+      "slug": "2026-10-21_isolation-isnt-detection",
+      "title": "Silent Errors Halve Agent Success: 33.6% Noticed at Best",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-21",
+      "public": false
     }
   ]
 }
