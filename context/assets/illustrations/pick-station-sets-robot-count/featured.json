@@ -1,0 +1,88 @@
+{
+  "slug": "pick-station-sets-robot-count",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A dense queue of identical automated warehouse robots lined up on a polished concrete facility floor.",
+      "caption": "Adding robots past a station's saturation point simply results in capital standing still in the queue.",
+      "title": "Warehouse Robot Saturation Bottleneck",
+      "bytes": 383487,
+      "sha256": "sha256:33d6348041ca8473f57aa1721be3ec11"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Telephoto compression, 200mm long-lens view of industrial infrastructure. A dense, deep line of identical low-profile warehouse transport robots queued motionless along a polished concrete logistics floor, bottlenecked under high-contrast industrial directional lighting. Stacked overlapping layers of automated machinery stretching into the distance with crystal-clear telephoto distance clarity. Deep shadows, crisp atmospheric depth, no people in the foreground, cool teal and amber palette, editorial cover standard.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, typography, labels",
+  "rationale": "A long-lens compressed view emphasizes the scale and the physical queuing of identical machines, perfectly illustrating the concept of 'capital standing still' when too many robots are deployed.",
+  "cue": "every robot past saturation is capex",
+  "subject": "a dense queue of automated warehouse robots bottlenecked in a logistics facility",
+  "core_thesis": "A fixed robot-to-station ratio fails as catalogue size grows, leading to idle machines and wasted capital once human picker saturation is reached.",
+  "core_conflict": "Capital expenditure on additional robots vs. the fixed throughput limit of human pickers.",
+  "composition": "off-centre telephoto compression with deep layering",
+  "alt_text": "Why Fixed Robot Ratios Fail. A dense queue of identical automated warehouse robots lined up on a polished concrete facility",
+  "caption": "Why Fixed Robot Ratios Fail: How blind fleet scaling wastes capex at the pick station.",
+  "title": "Why Fixed Robot Ratios Fail",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/pick-station-sets-robot-count/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 225847,
+  "sha256": "sha256:06ba149db0fc2609f42ed7bbd4312119f3e178457c2cf18910afe8e1e544c900",
+  "source_hash": "sha256:28aa04da9f5227c672abf571e6d9760a",
+  "source_chars": 5490,
+  "task_id": "b016208bb627409fb75414f191ae2b7c",
+  "credits": 5.0,
+  "cost_ms": 240,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b016208bb627409fb75414f191ae2b7c_1792611865999.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Telephoto compression, 200mm long-lens view of industrial infrastructure. A dense, deep line of identical low-profile warehouse transport robots queued motionless along a polished concrete logistics floor, bottlenecked under high-contrast industrial directional lighting. Stacked overlapping layers of automated machinery stretching into the distance with crystal-clear telephoto distance clarity. Deep shadows, crisp atmospheric depth, no people in the foreground, cool teal and amber palette, editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-21T19:44:35+00:00",
+  "overlay": {
+    "kicker": "LOGISTICS CAPEX // ROBOT RATIOS",
+    "title": "WHY FIXED ROBOT RATIOS FAIL",
+    "hook": "How blind fleet scaling wastes capex at the pick station",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.72,
+    "target": 4.5,
+    "clutter": 0.24,
+    "region_rgb": [
+      80,
+      99,
+      100
+    ],
+    "binding_rgb": [
+      108,
+      132,
+      134
+    ],
+    "title_lines": [
+      "WHY FIXED ROBOT",
+      "RATIOS FAIL"
+    ],
+    "subject": 0.176,
+    "ink_subject": 0.106,
+    "spike": 0.456,
+    "generated_at": "2026-10-21T19:44:35+00:00"
+  }
+}

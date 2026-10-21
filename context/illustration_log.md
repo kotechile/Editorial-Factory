@@ -276,3 +276,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-21 | `agent-writes-stale-basis` | multi_agent_enterprise_fabric | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-writes-stale-basis/featured.png` |
 | 2026-10-21 | `cap-your-card-at-80` | gpu_hardware | `cinematic_still` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/cap-your-card-at-80/featured.jpg` |
 | 2026-10-21 | `your-ci-bill-232-hours` | enterprise_build_vs_buy | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-ci-bill-232-hours/featured.png` |
+| 2026-10-21 | `pick-station-sets-robot-count` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/pick-station-sets-robot-count/featured.jpg` |
