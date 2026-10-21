@@ -265,3 +265,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-20 | `your-exception-log-owes-5-years` | control_tower_exception_orchestration | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-exception-log-owes-5-years/featured.jpg` |
 | 2026-10-21 | `isolation-isnt-detection` | agentic_resilience_failure | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/isolation-isnt-detection/featured.png` |
 | 2026-10-21 | `agent-fleet-two-meters` | multi_agent_enterprise_fabric | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-fleet-two-meters/featured.png` |
+| 2026-10-21 | `your-68k-tokens-cost-every-step` | gpu_hardware | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-68k-tokens-cost-every-step/featured.jpg` |

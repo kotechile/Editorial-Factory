@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T11:12:14Z",
+  "updated_at": "2026-10-21T11:40:44Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2686,6 +2686,24 @@
       "slug": "2026-10-21_isolation-isnt-detection",
       "title": "Silent Errors Halve Agent Success: 33.6% Noticed at Best",
       "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-21",
+      "public": false
+    },
+    {
+      "slug": "2026-10-21_your-68k-tokens-cost-every-step",
+      "title": "Your 68K Tokens Cost Every Step",
+      "vertical": "gpu_hardware",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [

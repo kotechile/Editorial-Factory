@@ -1,0 +1,88 @@
+{
+  "slug": "your-68k-tokens-cost-every-step",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Towering server racks glowing with warm amber light in a dark blue data center hall.",
+      "caption": "The accumulating history of an agent session drives up the energy cost behind every subsequent token.",
+      "title": "Cumulative Cost of Context",
+      "bytes": 339127,
+      "sha256": "sha256:8ede74cb46d892f0331b92d394190a63"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph of a massive, monolithic corridor of high-density server racks at blue hour. Deep blue ambient light fills the cavernous, immaculate data center hall. A towering, asymmetric stack of brushed-metal memory modules and GPU blades dominates the foreground from a low-angle perspective, glowing with intense, warm amber light from within to suggest accumulating thermal energy. Clean geometric lines, no moving figures, extreme depth of field, 35mm anamorphic look, sophisticated color palette, premium editorial cover standard.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, humans, people, abstract shapes",
+  "rationale": "The story is about a massive, structural accumulation of state (memory) driving up energy costs behind the scenes. Architectural night allows us to present data center infrastructure at an imposing scale, with deep blue ambient light contrasting against the warm, intense glow of active servers working through the night.",
+  "cue": "cost per token rises with its own age",
+  "subject": "a massive stack of illuminated server memory modules in a dark data center aisle",
+  "core_thesis": "For an agent, the energy cost behind each output token rises with its own age because it must read the private key-value history of the session on every step.",
+  "core_conflict": "Cumulative memory retention vs energy efficiency in AI inference",
+  "composition": "low-angle perspective emphasizing towering scale",
+  "alt_text": "The Rising Cost Of Tokens. Towering server racks glowing with warm amber light in a dark blue data center hall.",
+  "caption": "The Rising Cost Of Tokens: Why every new output pays for the history it reads.",
+  "title": "The Rising Cost Of Tokens",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-68k-tokens-cost-every-step/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 180260,
+  "sha256": "sha256:66a5a8de0ca1640cb4ac5e162bfa26115bfab184656489d19422cb173a249d7e",
+  "source_hash": "sha256:bcbb808ed873dd3bdcf9e2d534e2defa",
+  "source_chars": 5416,
+  "task_id": "569c33e30fd41de19b33364feed86ed6",
+  "credits": 5.0,
+  "cost_ms": 47,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/569c33e30fd41de19b33364feed86ed6_1792582830243.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph of a massive, monolithic corridor of high-density server racks at blue hour. Deep blue ambient light fills the cavernous, immaculate data center hall. A towering, asymmetric stack of brushed-metal memory modules and GPU blades dominates the foreground from a low-angle perspective, glowing with intense, warm amber light from within to suggest accumulating thermal energy. Clean geometric lines, no moving figures, extreme depth of field, 35mm anamorphic look, sophisticated color palette, premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-21T11:40:34+00:00",
+  "overlay": {
+    "kicker": "LLM HARDWARE // CONTEXT COSTS",
+    "title": "THE RISING COST OF TOKENS",
+    "hook": "Why every new output pays for the history it reads",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 30,
+    "contrast": 4.55,
+    "target": 4.5,
+    "clutter": 0.203,
+    "region_rgb": [
+      70,
+      98,
+      126
+    ],
+    "binding_rgb": [
+      98,
+      125,
+      154
+    ],
+    "title_lines": [
+      "THE RISING COST",
+      "OF TOKENS"
+    ],
+    "subject": 0.061,
+    "ink_subject": 0.027,
+    "spike": 0.199,
+    "generated_at": "2026-10-21T11:40:34+00:00"
+  }
+}
