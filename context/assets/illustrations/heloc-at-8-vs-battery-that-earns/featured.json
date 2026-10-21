@@ -1,6 +1,6 @@
 {
   "slug": "heloc-at-8-vs-battery-that-earns",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Isometric Home Battery Grid Integration",
       "bytes": 1005179,
       "sha256": "sha256:d616d3eb2967ee7231f7f232f5540756"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Batteries Beat Remodels. Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility",
+      "caption": "Batteries Beat Remodels: Shifting from 8% remodels to grid-paying batteries.",
+      "title": "Batteries Beat Remodels",
+      "bytes": 747386,
+      "sha256": "sha256:8399c892fdc00eccbc98e00bc4e1e29ef08c7c08c0f62bfacf837f6371487fb1"
     }
   ],
   "style": "technical_isometric",

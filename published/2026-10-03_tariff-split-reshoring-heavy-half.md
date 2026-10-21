@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "An automated conveyor system splitting cargo into two diverging tracks."
-image_caption: "Supply chains are splitting as goods face differing tariff environments."
+image_alt: "The Tariff Split. An automated conveyor system splitting cargo into two diverging tracks."
+image_caption: "The Tariff Split: Capital flows to protected goods as consumer taxes ease."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

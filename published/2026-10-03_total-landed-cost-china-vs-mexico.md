@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/total-landed-cost-china-vs-mexico/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Isometric technical cutaway showing a shipping container stacked above manufacturing and customs modules."
-image_caption: "The true cost of offshore manufacturing is found by stacking freight, tariffs, and labor into one total landed cost."
+image_alt: "Why Mexico Beats China. Isometric technical cutaway showing a shipping container stacked above manufacturing and customs"
+image_caption: "Why Mexico Beats China: Hidden tariffs and freight flip the manufacturing math."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

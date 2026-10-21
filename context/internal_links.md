@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-21T13:26:47+00:00
+# Internal-link candidates — 2026-10-21T14:17:11+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 

@@ -1,6 +1,6 @@
 {
   "slug": "tariff-split-reshoring-heavy-half",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,14 @@
       "sha256": "sha256:bc38720e693614b3ab227eb6031d3c0b",
       "generated_at": "2026-10-03T13:12:23+00:00",
       "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e"
+    },
+    {
+      "revision": 3,
+      "alt_text": "An automated conveyor system splitting cargo into two diverging tracks.",
+      "caption": "Supply chains are splitting as goods face differing tariff environments.",
+      "title": "Tariff-Split-Isometric-Conveyor",
+      "bytes": 2240630,
+      "sha256": "sha256:f876aa1538a72fe03313f375c5b3d786"
     }
   ],
   "style": "technical_isometric",
@@ -36,9 +44,9 @@
   "rationale": "The article is about a structural split in supply chains\u2014two distinct flows of goods and capital based on tariff treatment. A technical isometric cutaway is perfect for showing this divergence, illustrating a system where flows are routed into two distinct paths: a light consumer goods stream and a heavy industrial/tech stream.",
   "cue": "supply teams adapt now",
   "subject": "an automated sorting conveyor system splitting a stream of cargo crates into two distinct tracks",
-  "alt_text": "An automated conveyor system splitting cargo into two diverging tracks.",
-  "caption": "Supply chains are splitting as goods face differing tariff environments.",
-  "title": "Tariff-Split-Isometric-Conveyor",
+  "alt_text": "The Tariff Split. An automated conveyor system splitting cargo into two diverging tracks.",
+  "caption": "The Tariff Split: Capital flows to protected goods as consumer taxes ease.",
+  "title": "The Tariff Split",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -50,8 +58,8 @@
   "local_path": "context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 2240630,
-  "sha256": "sha256:f876aa1538a72fe03313f375c5b3d786",
+  "bytes": 1802923,
+  "sha256": "sha256:28476195ae9d9e891c660e201f0004296e732fecb29624fc4d43028ab001e994",
   "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e",
   "source_chars": 3707,
   "task_id": "08b4bf67184d5c24c67d7e7c3e6c9c6f",
@@ -68,5 +76,33 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-03T13:22:43+00:00"
+  "generated_at": "2026-10-03T13:22:43+00:00",
+  "overlay": {
+    "kicker": "RESHORING STRATEGY // TARIFF SPLIT",
+    "title": "THE TARIFF SPLIT",
+    "hook": "Capital flows to protected goods as consumer taxes ease",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.68,
+    "target": 5.5,
+    "clutter": 0.281,
+    "region_rgb": [
+      216,
+      217,
+      209
+    ],
+    "binding_rgb": [
+      185,
+      186,
+      178
+    ],
+    "title_lines": [
+      "THE TARIFF SPLIT"
+    ],
+    "subject": 0.224,
+    "ink_subject": 0.135,
+    "spike": 0.58,
+    "generated_at": "2026-10-03T13:22:43+00:00"
+  }
 }
