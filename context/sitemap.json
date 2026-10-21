@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T17:37:52Z",
+  "updated_at": "2026-10-21T18:08:49Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2688,6 +2688,24 @@
       "date": "2026-10-21",
       "public": true,
       "url": "https://aichieve.net/agent-fleet-two-meters/"
+    },
+    {
+      "slug": "2026-10-21_agent-writes-stale-basis",
+      "title": "Your Agent's 84,000-Write Mistake",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-21",
+      "public": false
     },
     {
       "slug": "2026-10-21_isolation-isnt-detection",

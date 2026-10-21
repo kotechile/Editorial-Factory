@@ -1,0 +1,90 @@
+{
+  "slug": "agent-writes-stale-basis",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical inspection gate checking aligned verification pins on a brushed steel surface.",
+      "caption": "Validating specific premises exactly at the moment of commit prevents agents from executing stale, invalid decisions.",
+      "title": "Agent-Premise-Commit-Gate",
+      "bytes": 1666067,
+      "sha256": "sha256:c2489a72ac1244094fdbdb9f52409b39"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical inspection gate on a textured brushed steel surface. An asymmetric off-centre composition with the mechanism positioned to the right, leaving generous negative space on the left. The assembly consists of a central matte polymer module held by a sequence of three precise interlocking inspection pins aligned in a rack rail. Hard clean edges, muted modern industrial palette of charcoal grey and brushed silver. One directional key light from the upper left throwing a long, distinct cast shadow. Generous negative space, no bare geometry, no molded or printed lettering.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, UI elements, human faces, hands, bare abstract cubes",
+  "rationale": "Component assembly perfectly translates abstract software architecture into a tangible structural mechanism. A mechanical gate checking aligned pins embodies the commit-time premise check without relying on lazy software tropes.",
+  "cue": "recheck exactly those at commit",
+  "subject": "a modular mechanical inspection gate checking aligned verification pins",
+  "core_thesis": "A long-running agent commits facts it read minutes ago, so the fix is to record the premises the decision used and recheck exactly those at commit.",
+  "core_conflict": "Stale data writes vs. commit-time premise validation",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "Fixing Stale Agent Writes. A modular mechanical inspection gate checking aligned verification pins on a brushed steel",
+  "caption": "Fixing Stale Agent Writes: Rechecking decision premises stops invalid agent writes.",
+  "title": "Fixing Stale Agent Writes",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/agent-writes-stale-basis/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1139974,
+  "sha256": "sha256:311688a533cc637e837ee5428c99a869a625500e1d11aebe1a7e44cb007867f0",
+  "source_hash": "sha256:499fccf18258ebcc21f0e8b539d20b7c",
+  "source_chars": 5278,
+  "task_id": "5f67a926461b48c91b962f4448ac8af5",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e59db0ef88dd145f8cb4d7d2150672de.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical inspection gate on a textured brushed steel surface. An asymmetric off-centre composition with the mechanism positioned to the right, leaving generous negative space on the left. The assembly consists of a central matte polymer module held by a sequence of three precise interlocking inspection pins aligned in a rack rail. Hard clean edges, muted modern industrial palette of charcoal grey and brushed silver. One directional key light from the upper left throwing a long, distinct cast shadow. Generous negative space, no bare geometry, no molded or printed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-21T18:08:34+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // SHARED STATE",
+    "title": "FIXING STALE AGENT WRITES",
+    "hook": "Rechecking decision premises stops invalid agent writes",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 30,
+    "contrast": 4.7,
+    "target": 4.5,
+    "clutter": 0.118,
+    "region_rgb": [
+      158,
+      158,
+      155
+    ],
+    "binding_rgb": [
+      142,
+      142,
+      142
+    ],
+    "title_lines": [
+      "FIXING STALE",
+      "AGENT WRITES"
+    ],
+    "subject": 0.006,
+    "ink_subject": 0.002,
+    "spike": 0.019,
+    "generated_at": "2026-10-21T18:08:34+00:00"
+  }
+}
