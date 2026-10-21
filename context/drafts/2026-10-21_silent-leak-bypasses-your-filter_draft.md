@@ -60,6 +60,8 @@ The revocation study was run and published by a vendor lab, on its own rig, with
 
 My read is that the lasting claim is narrow. A number measured on the answer channel cannot tell you whether a rule holds anywhere else. The first study's own authors say it: across every model and every field, the messages between agents leaked at least as much as the answer [1].
 
+<!-- tldr -->
+
 ## At a glance
 
 - **The Big Shift:** A test of 4,979 traces shows multi-agent systems pushed private data out of the final answer and into the messages, memory writes and tool calls between agents. Inside channels leak at 68.8% against 27.2% at the output [1].
