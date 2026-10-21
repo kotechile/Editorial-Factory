@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T18:41:38Z",
+  "updated_at": "2026-10-21T19:09:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2799,6 +2799,24 @@
       "date": "2026-10-21",
       "public": true,
       "url": "https://aichieve.net/your-68k-tokens-cost-every-step/"
+    },
+    {
+      "slug": "2026-10-21_your-ci-bill-232-hours",
+      "title": "Your CI Bill: 232 Hours Before You Build",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-21",
+      "public": false
     },
     {
       "slug": "2026-10-21_your-platform-23-features-no-stop-rule",

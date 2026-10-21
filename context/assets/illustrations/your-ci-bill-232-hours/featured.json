@@ -1,0 +1,90 @@
+{
+  "slug": "your-ci-bill-232-hours",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Split-screen mechanical assembly showing a metered server module alongside a dedicated hardware block on a steel bench.",
+      "caption": "The continuous integration bill is a pure utilization test between a metered minute and a dedicated machine.",
+      "title": "CI-Compute-Utilization-Diptych",
+      "bytes": 1906835,
+      "sha256": "sha256:bef08eb2812499715aebf27b0688326d"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render, split-screen diptych with left-right scenario contrast. On the left side, a mechanical compute module integrated with a prominent rotary utility meter and ratcheting gears. On the right side, an identical monolithic server blade block running continuously with heavy heat sinks. Both resting on a weathered brushed steel workbench divided by a strict vertical seam. Matte polymer surfaces with visible moulding seams and deep contact shadows, raking directional light casting long shadows across the divided halves. Muted modern B2B editorial palette, industrial clarity, generous negative space. No text.",
+  "negative_prompt": "text, letters, words, watermark, labels, garbled typography, people, faces, floating objects",
+  "rationale": "The story compares two abstract economic models for the same underlying compute. A matte 3D clay render cleanly distills this structural duality into a physical assembly, using a split-screen to contrast the metered module against the dedicated hardware block.",
+  "cue": "priced two ways",
+  "subject": "split-screen assembly of a metered server module and a dedicated hardware block",
+  "core_thesis": "Hosted build minutes and a rented server are the same compute priced two ways, making the decision a pure utilization test of hardware versus engineer upkeep.",
+  "core_conflict": "Metered per-minute cloud billing versus dedicated rented hardware and its associated human upkeep costs.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The Math Of Self-Hosted CI. Split-screen mechanical assembly showing a metered server module alongside a dedicated hardware",
+  "caption": "The Math Of Self-Hosted CI: Why engineer upkeep breaks the self-hosted build math.",
+  "title": "The Math Of Self-Hosted CI",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-ci-bill-232-hours/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1439853,
+  "sha256": "sha256:310715366949472d45e32757132f7de01c93d49de7dcbc855560bc8d2d00c760",
+  "source_hash": "sha256:7dd1f1da0aae6fd139cbb963aeda933e",
+  "source_chars": 4800,
+  "task_id": "b7233f5679a2f19e11f1ee8c411685f2",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_64fd91b68d9bc81a8046ad007911dcb8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render, split-screen diptych with left-right scenario contrast. On the left side, a mechanical compute module integrated with a prominent rotary utility meter and ratcheting gears. On the right side, an identical monolithic server blade block running continuously with heavy heat sinks. Both resting on a weathered brushed steel workbench divided by a strict vertical seam. Matte polymer surfaces with visible moulding seams and deep contact shadows, raking directional light casting long shadows across the divided halves. Muted modern B2B editorial palette, industrial clarity, generous negative space. No text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-21T19:09:05+00:00",
+  "overlay": {
+    "kicker": "DEV TOOLS // CI RUNNER COSTS",
+    "title": "THE MATH OF SELF-HOSTED CI",
+    "hook": "Why engineer upkeep breaks the self-hosted build math",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.5,
+    "target": 5.5,
+    "clutter": 0.356,
+    "region_rgb": [
+      60,
+      55,
+      46
+    ],
+    "binding_rgb": [
+      99,
+      95,
+      83
+    ],
+    "title_lines": [
+      "THE MATH OF",
+      "SELF-HOSTED CI"
+    ],
+    "subject": 0.22,
+    "ink_subject": 0.1,
+    "spike": 0.699,
+    "generated_at": "2026-10-21T19:09:05+00:00"
+  }
+}
