@@ -1,0 +1,90 @@
+{
+  "slug": "your-platform-23-features-no-stop-rule",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A split layout showing an endlessly expanding rack of metal modules next to a single, locked module bay.",
+      "caption": "Internal platforms rarely face the strict renewal pressures that keep purchased tools in check.",
+      "title": "Platform Feature Sprawl Contrast",
+      "bytes": 1753348,
+      "sha256": "sha256:3072804485940d46876c07c8a1f5549c"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych minimalist studio composition. Left side: an uncontrolled, sprawling, interconnected assembly of multiple brushed steel modules, extended rack rails, and complex branching bays extending off the edge. Right side: a single, neatly contained anodized aluminum module securely closed by a heavy red mechanical locking latch. Both architectural structures resting on a shared weathered concrete surface under one sharp directional key light throwing long cast shadows, matte muted palette, clean hard engineered edges, generous negative space.",
+  "negative_prompt": "text, typography, letters, numbers, watermarks, bare cubes, spheres, abstract geometry",
+  "rationale": "A component assembly perfectly abstracts the 'build vs buy' architecture debate into physical structure. The split-screen diptych visually enforces the contrast between unchecked feature sprawl and a disciplined, capped system.",
+  "cue": "feature list nobody agreed to stop growing",
+  "subject": "split-screen modular hardware assembly contrasting sprawling racks with a locked, capped bay",
+  "core_thesis": "Building internal AI platforms leads to unchecked feature sprawl because they lack the forced renewal and review boundaries of purchased tools.",
+  "core_conflict": "Uncapped internal feature growth versus forced subscription renewal boundaries",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Internal Platform Bloat. A split layout showing an endlessly expanding rack of metal modules next to a single, locked module",
+  "caption": "Internal Platform Bloat: Why custom platforms grow endlessly without stop rules.",
+  "title": "Internal Platform Bloat",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-platform-23-features-no-stop-rule/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1239981,
+  "sha256": "sha256:6f1bcbe0e01b024de0d0cf2907bb9172c0b3114c179873ddf932531f4e5549d5",
+  "source_hash": "sha256:a4e311e0cd4f5e1a1d14e42df6ecac07",
+  "source_chars": 5225,
+  "task_id": "fd12d6b17f1d6725560d6e26fa5ab676",
+  "credits": 18.0,
+  "cost_ms": 55,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_793b082ba97e15ef01208528aa34a169.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen diptych minimalist studio composition. Left side: an uncontrolled, sprawling, interconnected assembly of multiple brushed steel modules, extended rack rails, and complex branching bays extending off the edge. Right side: a single, neatly contained anodized aluminum module securely closed by a heavy red mechanical locking latch. Both architectural structures resting on a shared weathered concrete surface under one sharp directional key light throwing long cast shadows, matte muted palette, clean hard engineered edges, generous negative space.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-21T12:10:08+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE PLATFORMS // FEATURE BLOAT",
+    "title": "INTERNAL PLATFORM BLOAT",
+    "hook": "Why custom platforms grow endlessly without stop rules",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.65,
+    "target": 4.5,
+    "clutter": 0.055,
+    "region_rgb": [
+      125,
+      122,
+      112
+    ],
+    "binding_rgb": [
+      132,
+      129,
+      120
+    ],
+    "title_lines": [
+      "INTERNAL",
+      "PLATFORM BLOAT"
+    ],
+    "subject": 0.022,
+    "ink_subject": 0.01,
+    "spike": 0.069,
+    "generated_at": "2026-10-21T12:10:08+00:00"
+  }
+}
