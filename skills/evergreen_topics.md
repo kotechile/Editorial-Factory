@@ -150,8 +150,19 @@ Lead the cell with the one distinctive figure the source actually states (e.g. `
 eye-check that the *phrase* — not a coincidental single digit — is on the page. A figure that
 verifies this way ships a claim the source never made.
 
-**The gate fetches with a fixed, non-browser user-agent — check fetchability before you write a
-row.** `citation_hub_dossier.fetch_source` sends
+**The `Durability:` field must literally contain "as of" — dating every figure is not enough (learned 2026-10-21).**
+A durability paragraph that names "the 2026 Florida Statutes edition", "the 2025 code edition", a page's own
+"Verified: Oct. 19, 2026" line and "accident year 2023" still reads `FAIL: does not say what the figures are
+true as of` — `evergreen_gate` greps for the phrase, not for dates. Write "§ 627.701 as of the 2026 edition …
+ISO loss data as of accident year 2023", and re-run the gate after the edit (the marker goes stale).
+
+**A mixed ladder is a rewrite trap: only one rung is a percentage (learned 2026-10-21).** Florida's
+"$500, 2 percent, 5 percent, and 10 percent of the policy dwelling limits" came back from Loop 3 as "of $500, 2%,
+5%, or 10% of the home's coverage limit" — four percentages, one of them flat. Read every enumerated ladder in the
+final against the brief's verbatim cell, the same way units are audited.
+
+**The gate fetches with a fixed, non-browser user-agent — check fetchability before you write a row.**
+`citation_hub_dossier.fetch_source` sends
 `Mozilla/5.0 (compatible; EditorialFactorySourceVerifier/1.0)`, and several hosts answer it with
 HTTP 403 even though the page is public in a browser. Observed: the entire Bureau of Labor
 Statistics site (`bls.gov` — OEWS/CES/JOLTS/ECEC), which is otherwise the best measured anchor for
