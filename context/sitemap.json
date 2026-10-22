@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T18:09:41Z",
+  "updated_at": "2026-10-22T18:42:13Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3028,6 +3028,24 @@
       "date": "2026-10-22",
       "public": true,
       "url": "https://aichieve.net/your-agent-team-loses-28-points/"
+    },
+    {
+      "slug": "2026-10-22_your-golden-zone-costs-10-miles",
+      "title": "Your Golden Zone Costs 10 Miles",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-22",
+      "public": false
     },
     {
       "slug": "2026-10-22_your-remodel-loses-to-149-growth",

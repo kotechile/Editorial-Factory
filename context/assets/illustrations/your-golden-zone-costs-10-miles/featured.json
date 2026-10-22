@@ -1,0 +1,88 @@
+{
+  "slug": "your-golden-zone-costs-10-miles",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An expansive warehouse picking aisle stretching into the distance with massive steel racking.",
+      "caption": "The true cost of a prime slot is measured in the miles pickers must walk to bypass oversized inventory.",
+      "title": "golden-zone-10-miles",
+      "bytes": 384110,
+      "sha256": "sha256:58be52b45ef84a44143451088496314c"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. An expansive, deep industrial warehouse picking aisle stretching far into the distance. Massive brushed steel racking dominates the left frame, holding tightly packed shipping cartons and oversized wooden pallets, casting deep shadows. The smooth concrete floor stretches endlessly toward an extreme vanishing point on the right, emphasizing immense physical distance and the grueling scale of travel. Crisp atmospheric depth, restrained teal-and-amber palette, single strong directional high-bay light cutting through crystalline air, no people, motion and scale implied by the sheer length of the architecture.",
+  "negative_prompt": "garbled text, random lettering, watermarks, humans, people, UI, logos",
+  "rationale": "A cinematic still captures the immense physical scale and distance of a warehouse aisle, perfectly illustrating the '10 miles' of walking cost.",
+  "cue": "Your Golden Zone Costs 10 Miles",
+  "subject": "an imposing, deep warehouse picking aisle with vast steel racking stretching into the distance",
+  "core_thesis": "A pick face's days of stock dictates unseen labor costs by forcing pickers to walk further, meaning velocity ranking alone shifts work rather than eliminating it.",
+  "core_conflict": "Bulk replenishment efficiency versus picker travel distance.",
+  "composition": "extreme asymmetrical perspective, vanishing point pushed far right to emphasize the immense length of the aisle",
+  "alt_text": "Pricing The Golden Zone. An expansive warehouse picking aisle stretching into the distance with massive steel racking.",
+  "caption": "Pricing The Golden Zone: Why ranking by pick velocity hides your true labor costs.",
+  "title": "Pricing The Golden Zone",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-golden-zone-costs-10-miles/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 220935,
+  "sha256": "sha256:716e1fd5067bbad40ea896a2632ed4b10b4e21c81c9687fd7530304d35788ea2",
+  "source_hash": "sha256:1d881a45fbe01bb4e961241eff15e6cf",
+  "source_chars": 4990,
+  "task_id": "cc4ff5c24cbd3052d126def4804d5314",
+  "credits": 5.0,
+  "cost_ms": 56,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/cc4ff5c24cbd3052d126def4804d5314_1792694517345.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. An expansive, deep industrial warehouse picking aisle stretching far into the distance. Massive brushed steel racking dominates the left frame, holding tightly packed shipping cartons and oversized wooden pallets, casting deep shadows. The smooth concrete floor stretches endlessly toward an extreme vanishing point on the right, emphasizing immense physical distance and the grueling scale of travel. Crisp atmospheric depth, restrained teal-and-amber palette, single strong directional high-bay light cutting through crystalline air, no people, motion and scale implied by the sheer length of the architecture.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-22T18:42:02+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE SLOTTING // LABOR COSTS",
+    "title": "PRICING THE GOLDEN ZONE",
+    "hook": "Why ranking by pick velocity hides your true labor costs",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 60,
+    "contrast": 6.08,
+    "target": 5.5,
+    "clutter": 0.33,
+    "region_rgb": [
+      66,
+      73,
+      73
+    ],
+    "binding_rgb": [
+      111,
+      118,
+      111
+    ],
+    "title_lines": [
+      "PRICING THE",
+      "GOLDEN ZONE"
+    ],
+    "subject": 0.236,
+    "ink_subject": 0.112,
+    "spike": 0.733,
+    "generated_at": "2026-10-22T18:42:02+00:00"
+  }
+}
