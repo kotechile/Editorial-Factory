@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T06:42:10Z",
+  "updated_at": "2026-10-20T23:12:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -19,8 +19,7 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-09-21",
-      "public": true,
-      "url": "https://giniloh.com/mcp-skills-extension/"
+      "public": false
     },
     {
       "slug": "2026-09-24_ai-spend-27t-cost-visibility-mandate",
@@ -31,8 +30,7 @@
       "h2_topics": [],
       "target_persona": "enterprise_cai",
       "date": "2026-09-24",
-      "public": true,
-      "url": "https://giniloh.com/ai-spend-27t-cost-visibility-mandate/"
+      "public": false
     },
     {
       "slug": "2026-09-24_maskills-multi-agent-skills-optimization",
@@ -47,8 +45,7 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-09-24",
-      "public": true,
-      "url": "https://giniloh.com/maskills-multi-agent-skills-optimization/"
+      "public": false
     },
     {
       "slug": "2026-09-24_up-ns-rail-merger-clears-summary-denial",
@@ -59,8 +56,7 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-09-24",
-      "public": true,
-      "url": "https://giniloh.com/up-ns-rail-merger-clears-summary-denial/"
+      "public": false
     },
     {
       "slug": "2026-09-25_ca-fair-plan-rate-hike-hardening-exit",
@@ -75,8 +71,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-09-25",
-      "public": true,
-      "url": "https://wellroost.com/ca-fair-plan-rate-hike-hardening-exit/"
+      "public": false
     },
     {
       "slug": "2026-09-25_carta-unexercised-options-401k",
@@ -104,8 +99,7 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-09-25",
-      "public": true,
-      "url": "https://giniloh.com/zet-scale-ev-truck-residual-value-risk/"
+      "public": false
     },
     {
       "slug": "2026-09-26_disney-hulu-fourth-hike-subscription-creep",
@@ -120,8 +114,7 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/"
+      "public": false
     },
     {
       "slug": "2026-09-26_reshoring-moved-the-tariff-upstream",
@@ -136,8 +129,7 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://giniloh.com/reshoring-moved-the-tariff-upstream/"
+      "public": false
     },
     {
       "slug": "2026-09-26_tariff-cliff-already-priced-in",
@@ -152,8 +144,7 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://giniloh.com/tariff-cliff-already-priced-in/"
+      "public": false
     },
     {
       "slug": "2026-10-01_goods-tariff-relief-vs-vessel-fee",
@@ -164,8 +155,7 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-10-01",
-      "public": true,
-      "url": "https://giniloh.com/goods-tariff-relief-vs-vessel-fee/"
+      "public": false
     },
     {
       "slug": "2026-10-01_planner-as-router-plan-time-routing",
@@ -190,8 +180,7 @@
       "h2_topics": [],
       "target_persona": "ops_leader",
       "date": "2026-10-01",
-      "public": true,
-      "url": "https://giniloh.com/planning-ai-buys-capability-not-autonomy/"
+      "public": false
     },
     {
       "slug": "2026-10-01_token-prices-halved-cfo-cant-read-bill",
@@ -233,8 +222,7 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-02",
-      "public": true,
-      "url": "https://giniloh.com/same-day-race-undoes-route-optimization/"
+      "public": false
     },
     {
       "slug": "2026-10-03_tariff-split-reshoring-heavy-half",

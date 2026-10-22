@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Standing defect check for the two WordPress CMSes.
 
-Catches, on every run, the two defects that were previously only found by hand:
+Catches, on every run, the defects that were previously only found by hand:
 
   1. a raw vertical id in a live title or slug  — e.g. the published giniloh post titled
      "enterprise_build_vs_buy: The $250k AI Upkeep Tax", which put the vertical id into the H1,
@@ -9,6 +9,12 @@ Catches, on every run, the two defects that were previously only found by hand:
   2. the same article on BOTH sites — the routing table sends each vertical to exactly one CMS,
      so a slug present on both is either a stale manual push or a misroute. It is also the shape
      of a cross-site duplicate-content problem if both are published.
+  3. duplicate slugs on the same site.
+  4. identical article bodies across sites.
+  5. published posts with NO category or left in Uncategorized.
+  6. published posts with NO vertical routing term (except grandfathered hand-era posts #9, #14, #50, #55).
+     Note: On a single-front CMS (wellroost.com), a term-less post is taxonomy hygiene, not
+     routing failure, but flagging it keeps taxonomy consistent across both properties.
 
 Contract (watchdog): print NOTHING and exit 0 when clean; print the findings and exit 1 when a
 defect is found, so the job that runs it reports to Slack instead of staying silent.
@@ -38,6 +44,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITES = {"giniloh.com": "https://cms.giniloh.com", "wellroost.com": "https://cms.wellroost.com"}
 VERTICAL_ID = re.compile(r"^[a-z][a-z0-9]*(_[a-z0-9]+){1,}\s*:")
 BODY_SIMILARITY = 0.60      # identical copies sit at ~1.00; different articles at <0.10
+HAND_ERA_ALLOWLIST = {9, 14, 50, 55}
 
 
 def load_env() -> None:
@@ -74,7 +81,7 @@ def auth_for(site_domain: str) -> str:
 def fetch_posts(site_domain: str, base: str) -> list[dict]:
     request = urllib.request.Request(
         f"{base}/wp-json/wp/v2/posts?status=any&per_page=100&context=edit"
-        f"&_fields=id,slug,status,title,content,link,categories,featured_media",
+        f"&_fields=id,slug,status,title,content,link,categories,featured_media,vertical",
         headers={"Authorization": auth_for(site_domain), "Accept": "application/json"})
     try:
         with urllib.request.urlopen(request, timeout=60) as response:
@@ -125,6 +132,15 @@ def check() -> dict:
                                    f"'{post['slug']}' ({post['link']})")
                 elif default_category and categories == [default_category]:
                     defects.append(f"published post left in Uncategorized — {site_domain} #{post['id']} "
+                                   f"'{post['slug']}' ({post['link']})")
+
+                # Vertical routing taxonomy check. On a multi-tenant CMS (like giniloh.com),
+                # vertical taxonomy terms are load-bearing for frontend routing. On a single-front
+                # CMS (like wellroost.com), a term-less post is hygiene rather than a routing failure.
+                # The 4 hand-era posts (#9, #14, #50, #55) are grandfathered via HAND_ERA_ALLOWLIST.
+                verticals = post.get("vertical") or []
+                if not verticals and post["id"] not in HAND_ERA_ALLOWLIST:
+                    defects.append(f"published post with NO vertical term — {site_domain} #{post['id']} "
                                    f"'{post['slug']}' ({post['link']})")
 
     # Same slug on one site twice (WP allows a draft and a published post to share a slug).

@@ -92,11 +92,27 @@ def fetch(url: str) -> str:
 
 def fetch_sitemap(frontend: str) -> list[str]:
     """Live URLs on the frontend. This is the only trustworthy liveness signal we have."""
-    xml = fetch(f"{frontend.rstrip('/')}/sitemap.xml")
+    root_url = f"{frontend.rstrip('/')}/sitemap.xml"
+    xml = fetch(root_url)
     urls = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", xml)
     if not urls:
         raise RuntimeError(f"{frontend}/sitemap.xml listed no URLs — refusing to build an empty index")
-    return [urllib.parse.urldefrag(u.strip())[0] for u in urls]
+    locs = [urllib.parse.urldefrag(u.strip())[0] for u in urls]
+    # Handle sitemap index files (e.g. sitemap-0.xml in Astro or sub-sitemaps)
+    if "<sitemapindex" in xml or any(u.endswith(".xml") for u in locs):
+        all_urls = []
+        for loc in locs:
+            if loc.endswith(".xml"):
+                try:
+                    sub_xml = fetch(loc)
+                    sub_locs = [urllib.parse.urldefrag(u.strip())[0] for u in re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", sub_xml)]
+                    all_urls.extend(sub_locs)
+                except Exception as exc:
+                    print(f"Warning: could not fetch sub-sitemap {loc}: {exc}", file=sys.stderr)
+            else:
+                all_urls.append(loc)
+        return all_urls
+    return locs
 
 
 def fetch_categories(wp: "wd.WordPress") -> dict[int, str]:
@@ -105,7 +121,7 @@ def fetch_categories(wp: "wd.WordPress") -> dict[int, str]:
 
 
 def fetch_published(wp: "wd.WordPress") -> list[dict]:
-    _, rows = wp._call("GET", "posts?status=publish&per_page=100&_fields=id,slug,title,categories,excerpt,modified")
+    _, rows = wp._call("GET", "posts?status=publish&per_page=100&_fields=id,slug,title,categories,excerpt,modified,vertical")
     return rows or []
 
 
@@ -129,25 +145,73 @@ def build() -> dict:
     not_live: list[dict] = []
     categories_by_site: dict[str, dict[int, str]] = {}
 
+    v_rows = wd.supabase_get("vertical_sites?select=vertical_id,site_domain,cms_base_url,frontend_url") or []
+    v_map = {r["vertical_id"]: r for r in v_rows if r.get("vertical_id")}
+
+    all_frontends = {s[2] for s in sites} | {r["frontend_url"] for r in v_rows if r.get("frontend_url")}
+    sitemaps = {}
+    raw_sitemaps = {}
+    for frontend in sorted(all_frontends):
+        try:
+            urls = fetch_sitemap(frontend)
+            raw_sitemaps[frontend] = urls
+            sitemaps[frontend] = {path_segment(u): u for u in urls}
+        except Exception as exc:
+            print(f"Warning: could not read sitemap for {frontend}: {exc}", file=sys.stderr)
+            raw_sitemaps[frontend] = []
+            sitemaps[frontend] = {}
+
+    # One crawl per distinct CMS endpoint
+    seen_cms: dict[str, tuple[str, str, str]] = {}
     for domain, cms, frontend in sites:
-        user, password = wd.credentials_for(domain)
+        if cms not in seen_cms:
+            seen_cms[cms] = (domain, cms, frontend)
+
+    for default_domain, cms, default_frontend in seen_cms.values():
+        user, password = wd.credentials_for(default_domain)
         wp = wd.WordPress(cms, user, password)
         categories = fetch_categories(wp)
-        categories_by_site[domain] = categories
+        categories_by_site[default_domain] = categories
+
+        try:
+            _, terms_raw = wp._call("GET", "vertical?per_page=100&_fields=id,slug")
+            term_map = {t["id"]: t["slug"] for t in (terms_raw or [])}
+        except Exception:
+            term_map = {}
+
         posts = fetch_published(wp)
-        live_urls = fetch_sitemap(frontend)
-        by_segment = {path_segment(u): u for u in live_urls}
 
         for post in posts:
             slug = (post.get("slug") or "").strip()
-            url = by_segment.get(slug, "")
+            p_verticals = post.get("vertical") or []
+            target_front = default_frontend
+            target_domain = default_domain
+
+            # Test the routed front from vertical_sites first
+            for vid in p_verticals:
+                vslug = term_map.get(vid)
+                if vslug and vslug in v_map:
+                    target_front = v_map[vslug]["frontend_url"]
+                    target_domain = v_map[vslug]["site_domain"]
+                    break
+
+            url = sitemaps.get(target_front, {}).get(slug, "")
+            # If not in target front sitemap, check across all frontend sitemaps (or followed 301)
+            if not url:
+                for f, sm in sitemaps.items():
+                    if slug in sm:
+                        url = sm[slug]
+                        target_front = f
+                        target_domain = urllib.parse.urlparse(f).netloc
+                        break
+
             entry = {
-                "site": domain,
+                "site": target_domain,
                 "kind": "article",
                 "id": post.get("id"),
                 "slug": slug,
                 "title": strip_html((post.get("title") or {}).get("rendered", "")),
-                "url": url or f"{frontend.rstrip('/')}/{slug}/",
+                "url": url or f"{target_front.rstrip('/')}/{slug}/",
                 "categories": [categories.get(int(c), str(c)) for c in (post.get("categories") or [])],
                 "category_ids": [int(c) for c in (post.get("categories") or [])],
                 "excerpt": strip_html((post.get("excerpt") or {}).get("rendered", ""))[:280],
@@ -159,7 +223,10 @@ def build() -> dict:
             else:
                 not_live.append({**entry, "reason": "published in the CMS but absent from the frontend sitemap"})
 
-        # Non-article targets the frontend actually publishes.
+    # Non-article targets the frontends actually publish (calculators, categories).
+    for frontend, live_urls in raw_sitemaps.items():
+        domain = urllib.parse.urlparse(frontend).netloc
+        by_segment = sitemaps.get(frontend, {})
         for url in live_urls:
             path = urllib.parse.urlparse(url).path
             segment = path_segment(url)
