@@ -43,5 +43,5 @@
 ## Gate result
 
 <!-- evergreen-gate:start -->
-<!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=4 hosts=3 decision="sha1:0b448447b0" dedup="matched a prior artifact: 2026-10-15_supply_chain_evergreen_" window_days=180 checked_at=2026-10-22T18:34:10+00:00 -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=4 hosts=3 decision="sha1:0b448447b0" dedup="matched a prior artifact: 2026-10-15_supply_chain_evergreen_" window_days=180 checked_at=2026-10-22T18:47:13+00:00 -->
 <!-- evergreen-gate:end -->

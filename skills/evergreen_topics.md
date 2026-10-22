@@ -422,6 +422,26 @@ is the working substitute. A price-class comparison does not need one vendor per
 **Hosts probed live 2026-10-21, building a fleet-sizing / pick-station-saturation brief (the `warehouse_automation_robotics_capex` evergreen).**
 Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` again — a simulation study's **Table 10 flattens to one text run** ("1K-S-N 44 82 91 97 97 … 10K-M-R 21 41 59 73 83"), so a per-scenario throughput curve is citable row by row, and its prose carries the unit-share figure ("Replenishment operations only consume 20.29 % out of the overall time consumed by the robots"); `mmh.com` article pages (a deployment announcement with "designed to support more than 4,500 lines per hour through 24 picking stations" and a robot count at the site, and the January **2026 Automation Study** with its buyer-priority and adoption percentages as text — the survey is the cheapest measured anchor for what buyers rank); `locusrobotics.com/blog/…` (a vendor ratio page: "a single associate working alongside four Locus robots … 300-400 units per hour"). Fetches but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreachable), `nfpa.org/codes-and-standards` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog guesses (404 shell). Unreachable to the verifier on this beat: `mir-robots.com/products/…`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) — so a facility-readiness angle (sprinkler clearance, charger circuits, floor flatness) cannot get past `osha.gov`/`ecfr.gov` code rows, and was dropped at 7.4 rather than written on general-industry statute. **A four-robot ratio and a 187.5-lines-an-hour design target are not each other's check:** keep the noun attached (per associate vs per station), and treat the vendor's manual baseline ("around 40-60 UPH according to industry data") as a second-hand claim, never as a measured one.
 
+**Hosts probed live 2026-10-22, building a pick-face days-of-supply brief (the `supply_chain` evergreen).**
+Carries the figure as plain text and fetches first try: `mmh.com/article/<slug>` (trade-press article pages, 13–24 KB —
+`best_practices_slot_leadership` holds the pick-versus-replenishment trade as one sentence, "A pick location with one
+week of inventory … pickers have to travel an extra 10 miles in that time … if there is only one hour of inventory in a
+slot, pickers walk inches, but replenishment personnel are swamped", plus the days-of-inventory sizing method, the
+quarterly review cadence and the single-bin limitation that keeps 100% of an item's stock in one face;
+`inside_the_4_walls_finding_hidden_warehouse_savings` holds "walk-time can be 40%+ of the total time picking" and the
+80/20 pick-activity split), `onetonline.org/link/summary/53-7065.00` (stockers and order fillers, "Median wages (2025)
+$17.95 hourly, $37,330 annual"), and `ctl.mit.edu/publications/<slug>` — **a university capstone's publication page
+fetches at only ~2.3 KB yet carries the entire abstract**, including the cost-share premise ("order picking accounts for
+approximately 50% of total warehouse operational costs") and the study's own result ("achieving an estimated 24% reduction
+in travel distance"), which makes it the cheapest *modelled* anchor on a warehouse-labour beat when the peer-reviewed
+version is an unreachable PDF.
+**A trade-press page's date must be read out of the body before the row is written** (learned 2026-10-22): the slotting
+article above is `October 1, 2015` while its sibling 4-walls piece is `September 1, 2025`, and both render in the same
+layout — cite a decade-old practitioner illustration as a mechanic with its date in the sentence, never as a current
+benchmark, and write the year into the brief's own gate rulings. Its `30%` collides with "after 30 years" a few
+paragraphs earlier, so a consultant's 30%-travel-reduction claim rides in prose under the same citation instead of
+carrying a gate row.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
