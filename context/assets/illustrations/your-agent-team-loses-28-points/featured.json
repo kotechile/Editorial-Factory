@@ -1,0 +1,90 @@
+{
+  "slug": "your-agent-team-loses-28-points",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a single processing module beside a massive redundant stack of identical modules.",
+      "caption": "Multi-agent architectures often multiply costs exponentially through redundant parallel processing rather than adding net new capabilities.",
+      "title": "Multi-Agent Cost Multiplier Isometric",
+      "bytes": 2311975,
+      "sha256": "sha256:705d7b4148ca622f78b6763f2a3e2f81"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. extreme asymmetric layout with left-right scenario contrast on a brushed aluminum table. on the left, a single streamlined processing routing module made of polished dark polymer. on the right, a massive, redundant matrix of identical routing trays stacked vertically, tightly interconnected with thick frosted copper tubing that loops back on itself. flat muted palette with bright amber accent colors. thin consistent line weight. one sharp directional light casting a long shadow. generous empty margin.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, labels",
+  "rationale": "A technical isometric cutaway perfectly visualizes the structural inefficiency of multi-agent systems, showing the sheer volume of redundant architecture required compared to a single efficient module.",
+  "cue": "The 188x Bill",
+  "subject": "a single processing module beside a massive redundant stack of identical modules",
+  "core_thesis": "A second agent is not a capability purchase: measured against the same model alone it costs up to 188 times as much for marginal gains.",
+  "core_conflict": "Redundant multi-agent processing vs single efficient stream",
+  "composition": "extreme asymmetric layout with left-right scenario contrast",
+  "alt_text": "The Multi-Agent Penalty: an isometric cutaway of one processing module beside a redundant stack of identical modules.",
+  "caption": "The Multi-Agent Penalty: Multiple agents multiply costs without adding capability.",
+  "title": "The Multi-Agent Penalty",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-agent-team-loses-28-points/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1809392,
+  "sha256": "sha256:2f9b6837e451e1297718941cbac632c4d8f2c17678f761cd207219a369dab146",
+  "source_hash": "sha256:85d914bf27ea17b3f0e65fd6794fe475",
+  "source_chars": 5044,
+  "task_id": "e44568a838527858d8f58c5868ef67a9",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_3cd2aeff7ee871b653d5d1a6272f47a8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. extreme asymmetric layout with left-right scenario contrast on a brushed aluminum table. on the left, a single streamlined processing routing module made of polished dark polymer. on the right, a massive, redundant matrix of identical routing trays stacked vertically, tightly interconnected with thick frosted copper tubing that loops back on itself. flat muted palette with bright amber accent colors. thin consistent line weight. one sharp directional light casting a long shadow. generous empty margin.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-22T10:39:17+00:00",
+  "overlay": {
+    "kicker": "AGENT TEAMS // PERFORMANCE COSTS",
+    "title": "THE MULTI-AGENT PENALTY",
+    "hook": "Multiple agents multiply costs without adding capability",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 5.33,
+    "target": 4.5,
+    "clutter": 0.173,
+    "region_rgb": [
+      183,
+      175,
+      169
+    ],
+    "binding_rgb": [
+      173,
+      164,
+      155
+    ],
+    "title_lines": [
+      "THE MULTI-AGENT",
+      "PENALTY"
+    ],
+    "subject": 0.041,
+    "ink_subject": 0.019,
+    "spike": 0.132,
+    "generated_at": "2026-10-22T10:39:17+00:00"
+  }
+}

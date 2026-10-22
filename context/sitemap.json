@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T01:10:45Z",
+  "updated_at": "2026-10-22T10:39:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2705,7 +2705,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-21",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/agent-writes-stale-basis/"
     },
     {
       "slug": "2026-10-21_cap-your-card-at-80",
@@ -2723,7 +2724,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-21",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/cap-your-card-at-80/"
     },
     {
       "slug": "2026-10-21_isolation-isnt-detection",
@@ -2760,7 +2762,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-21",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/pick-station-sets-robot-count/"
     },
     {
       "slug": "2026-10-21_silent-leak-bypasses-your-filter",
@@ -2778,7 +2781,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-21",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/silent-leak-bypasses-your-filter/"
     },
     {
       "slug": "2026-10-21_your-49-discount-isnt-all-roof",
@@ -2815,7 +2819,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-21",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-5-deductible-risks-your-claim/"
     },
     {
       "slug": "2026-10-21_your-68k-tokens-cost-every-step",
@@ -2852,7 +2857,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-21",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-ci-bill-232-hours/"
     },
     {
       "slug": "2026-10-21_your-platform-23-features-no-stop-rule",
@@ -2907,6 +2913,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-10-22",
+      "public": false
+    },
+    {
+      "slug": "2026-10-22_your-agent-team-loses-28-points",
+      "title": "Your Agent Team Loses 28 Points: The 188x Bill",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-10-22",
       "public": false
     }

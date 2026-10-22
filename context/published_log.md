@@ -164,6 +164,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-21 | warehouse_automation_robotics_capex | pick-station-sets-robot-count | Why Your Robot Ratio Fails: 91% vs 59% | https://pressflow.aichieve.net/published/2026-10-21_pick-station-sets-robot-count.md | reader site only |
 | 2026-10-21 | property_loss_insurance_mitigation | your-5-deductible-risks-your-claim | Your 5% Deductible Risks Your Claim | https://pressflow.aichieve.net/published/2026-10-21_your-5-deductible-risks-your-claim.md | reader site only |
 | 2026-10-22 | enterprise_ai_finops | duet-bills-your-five-hour-window | Every Check Bills Your 5-Hour Window | https://pressflow.aichieve.net/published/2026-10-22_duet-bills-your-five-hour-window.md | reader site only |
+| 2026-10-22 | agentic_ai | your-agent-team-loses-28-points | Your Agent Team Loses 28 Points: The 188x Bill | https://pressflow.aichieve.net/published/2026-10-22_your-agent-team-loses-28-points.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
