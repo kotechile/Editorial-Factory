@@ -326,8 +326,11 @@ one.
 - **The frontier can PASS the floor and still land under target (learned 2026-10-10).** A rewrite that
   exits PASS at Flesch ~50–51 clears the hard gate but sits on the floor, and the persistence pass
   injects the `## Related reading` block *after* the rewrite, which can push the *published* artifact
-  below 50. Hand-tune the `_final.md` toward the 60 target before publishing — split long sentences,
-  swap long generic words, keep each long proper noun to one full mention. Verified path: 50.7 → 61.4
+  below 50. Hand-tune the `_final.md` toward the 60 target before publishing — swap long generic
+  words for everyday ones, keep each long proper noun to one full mention, and only as a last resort
+  split a sentence that is genuinely over-long (30+ words). Do **not** split as the main lever: it
+  buys about two points and costs the rhythm, which is the failure the 2026-10-22 rhythm fix exists
+  to stop. Verified path: 50.7 → 61.4
   on the final, so the published artifact landed at 57.3 instead of under the floor. Facts, `[n]`
   citations, section markers and `## Sources` stay untouched.
 - **A `humanize_one.py` PASS is measured against `MIN_BODY_WORDS` (600), not the house floor (~800) (learned 2026-10-12).** A 1,100-word structural draft came back at 678 words with `verdict=PASS  length=ok`: the script checks accessibility, the source list and the section markers — not the long-form floor, and not §9's observer cue, which the rewrite had also dropped from `<!-- nuanced-takeaway -->`. Treat its PASS as the accessibility verdict only. Before persisting: restore depth from the verified brief (a synthesis that compacts ~40% has usually shed the anchor carrying the collision), re-read each interpreting section for its first-person cue, and re-cut the title if the frontier swapped your `STRONG` headline for its own.
@@ -399,12 +402,12 @@ one.
   21.4 → 39.3 → 45.1 → 45.7 → 44.6 (best 45.7, floor 50) — the frontier cannot lift the score by
   re-voicing because the syllable ratio is set by repeated proper nouns (`Azure OpenAI Service`,
   `Application Gateway`, `ExpressRoute`, `Coordinated Universal Time`) and by average sentence
-  length. Do **not** spend more attempts; hand-tune the finished body: (1) split every sentence
-  over ~20 words into two (average sentence length carries the larger coefficient, 1.015);
-  (2) keep each long proper-noun string to ONE full mention and shorten later ones
+  length. Do **not** spend more attempts; hand-tune the finished body, in this order: (1) swap
+  3-syllable generic words for 1–2-syllable ones (`provider` → `vendor`, `observability` →
+  `monitoring`) and keep each long proper-noun string to ONE full mention, shortening the later ones
   (`Azure OpenAI Service` → `Azure OpenAI`; drop a repeated service list from the numbers bullets);
-  (3) swap 3-syllable generic words for 1–2-syllable ones (`provider` → `vendor`,
-  `observability` → `monitoring`). Verified: 44.6 → 53.1 PASS with facts, `[n]` citations, section
+  (2) only then split a sentence that is genuinely over-long (30+ words) — splitting raises the
+  coefficient-1.015 term but fragments the prose, so it is the last lever, never the first. Verified: 44.6 → 53.1 PASS with facts, `[n]` citations, section
   markers and the `## Sources` list untouched. Re-measure with `check_accessibility.py` after the tune.
 
 ## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
