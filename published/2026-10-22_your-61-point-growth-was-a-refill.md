@@ -13,6 +13,12 @@ meta_title: "Your 6.1-Point Growth Isn't Demand"
 meta_title_source: "derived_from_title"
 meta_description: "Constellation Brands shipped 123.9 million cases of beer last quarter, a 5.5% jump. The volume distributors actually sold to stores fell 0.6%."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-61-point-growth-was-a-refill/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "The Demand Growth Illusion: shrink-wrapped pallets tower on steel racks inside a distributor's warehouse."
+image_caption: "The Demand Growth Illusion: Confusing a distributor stock refill with actual sales."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

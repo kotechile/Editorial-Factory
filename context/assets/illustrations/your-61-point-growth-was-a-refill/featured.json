@@ -1,0 +1,90 @@
+{
+  "slug": "your-61-point-growth-was-a-refill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Towering steel warehouse racks stacked with shrink-wrapped pallets in a massive distribution center.",
+      "caption": "Supply plans that read raw orders often mistake wholesale buffer refills for actual consumer demand growth.",
+      "title": "distributor-buffer-inventory-scale",
+      "bytes": 1253556,
+      "sha256": "sha256:4e2e2d2822c3bc84e63fb0beb56739b7"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story — a port, a refinery, a data centre hall, a rail yard, a skyline of cranes — and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "200mm telephoto compressed photograph of a massive industrial distribution warehouse. Highly asymmetric composition with towering heavy-gauge steel racking dominating the right frame. Stacked overlapping layers of shrink-wrapped wooden pallets and corrugated cardboard boxes receding into the crystal-clear distance. Flat compressed perspective, sharp directional lighting casting deep industrial contrast and heavy shadows. Weathered concrete flooring, brushed metal beams, pristine clear atmosphere with no haze, no people, emphasizing the sheer scale of the inventory buffer.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, people, human figures",
+  "rationale": "Telephoto compression visually stacks the massive volume of warehouse inventory, illustrating the sheer scale of the distributor buffer that obscures true consumer demand.",
+  "cue": "counts buffer motion as demand",
+  "subject": "towering heavy-gauge steel warehouse racks stacked with shrink-wrapped pallets",
+  "core_thesis": "A supply plan built on raw distributor orders double-counts warehouse buffer motion as true consumer demand.",
+  "core_conflict": "True retail consumer pull vs. wholesale buffer stock replenishment.",
+  "composition": "highly asymmetric composition with stacked overlapping layers",
+  "alt_text": "The Demand Growth Illusion: shrink-wrapped pallets tower on steel racks inside a distributor's warehouse.",
+  "caption": "The Demand Growth Illusion: Confusing a distributor stock refill with actual sales.",
+  "title": "The Demand Growth Illusion",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "long_lens_industry"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-61-point-growth-was-a-refill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 757567,
+  "sha256": "sha256:14589061c0de17adf5a63f888edae9ed451d386c49073e40849084654f5437dd",
+  "source_hash": "sha256:d651dae3d7a51b8f1333e0083fbf3b98",
+  "source_chars": 5506,
+  "task_id": "b06c85714bea8ed69edd1e10a4c1d0db",
+  "credits": 7.0,
+  "cost_ms": 66,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b06c85714bea8ed69edd1e10a4c1d0db_1792675045506.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compressed photograph of a massive industrial distribution warehouse. Highly asymmetric composition with towering heavy-gauge steel racking dominating the right frame. Stacked overlapping layers of shrink-wrapped wooden pallets and corrugated cardboard boxes receding into the crystal-clear distance. Flat compressed perspective, sharp directional lighting casting deep industrial contrast and heavy shadows. Weathered concrete flooring, brushed metal beams, pristine clear atmosphere with no haze, no people, emphasizing the sheer scale of the inventory buffer.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-22T13:17:31+00:00",
+  "overlay": {
+    "kicker": "DEMAND PLANNING // INVENTORY BUFFERS",
+    "title": "THE DEMAND GROWTH ILLUSION",
+    "hook": "Confusing a distributor stock refill with actual sales",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 90,
+    "contrast": 6.08,
+    "target": 5.5,
+    "clutter": 0.356,
+    "region_rgb": [
+      93,
+      81,
+      68
+    ],
+    "binding_rgb": [
+      138,
+      138,
+      128
+    ],
+    "title_lines": [
+      "THE DEMAND",
+      "GROWTH ILLUSION"
+    ],
+    "subject": 0.101,
+    "ink_subject": 0.053,
+    "spike": 0.294,
+    "generated_at": "2026-10-22T13:17:31+00:00"
+  }
+}
