@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T14:17:11+00:00",
+  "generated_at": "2026-10-22T01:10:48+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -1719,6 +1719,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-5-deductible-risks-your-claim",
+      "title": "Your 5% Deductible Risks Your Claim",
+      "url": "https://wellroost.com/your-5-deductible-risks-your-claim/",
+      "path": "/your-5-deductible-risks-your-claim/",
+      "sites_live": {
+        "wellroost.com": "/your-5-deductible-risks-your-claim/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "A 5% hurricane deductible on a $400,000 home hits $20,000 before your insurer pays a dime. The average home claim in 2023 landed at just $20,062.",
+      "modified": "2026-10-21T20:08:33",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-49-discount-isnt-all-roof",
       "title": "Your 49% Discount Isn't All Roof",
       "url": "https://wellroost.com/your-49-discount-isnt-all-roof/",
@@ -2133,6 +2156,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "agent-writes-stale-basis",
+      "title": "Your Agent's 84,000-Write Mistake",
+      "url": "https://aichieve.net/agent-writes-stale-basis/",
+      "path": "/agent-writes-stale-basis/",
+      "sites_live": {
+        "aichieve.net": "/agent-writes-stale-basis/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your agent reads a record, thinks for a minute, then writes. The write is the mistake. It ignores everything that changed in that minute.",
+      "modified": "2026-10-21T18:08:48",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "agentic-ai-adoption-soars-but-profits-stall-in-2026",
       "title": "Agentic AI Adoption Soars, But Profits Stall in 2026",
       "url": "https://aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/",
@@ -2402,6 +2448,29 @@
       ],
       "excerpt": "A research team ran the same agent workload through OpenAI, Anthropic, and Google and found that prompt caching cut application programming interface (API)\u2026",
       "modified": "2026-10-15T12:33:42",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "cap-your-card-at-80",
+      "title": "Why Your 80% Cap Wins: 22.4% More Tokens",
+      "url": "https://aichieve.net/cap-your-card-at-80/",
+      "path": "/cap-your-card-at-80/",
+      "sites_live": {
+        "aichieve.net": "/cap-your-card-at-80/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "At 80% of a decode card's uncapped power draw, a 235-billion-parameter model returned 22.4% more tokens per joule and met its latency target on every\u2026",
+      "modified": "2026-10-21T18:41:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3526,6 +3595,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "pick-station-sets-robot-count",
+      "title": "Why Your Robot Ratio Fails: 91% vs 59%",
+      "url": "https://aichieve.net/pick-station-sets-robot-count/",
+      "path": "/pick-station-sets-robot-count/",
+      "sites_live": {
+        "aichieve.net": "/pick-station-sets-robot-count/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A fixed rule of four robots per pick station fails fast as your product catalogue grows. One simulation put four robots per station at 91% of the rate its\u2026",
+      "modified": "2026-10-21T19:44:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
       "title": "Planner-as-Router: Fold the Model Choice Into the Plan",
       "url": "https://aichieve.net/planner-as-router-fold-the-model-choice-into-the-plan/",
@@ -3864,6 +3956,29 @@
       ],
       "excerpt": "Half of the world's container ships missed their August schedules, dropping the global on-time rate to 49.9%.",
       "modified": "2026-10-15T12:33:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "silent-leak-bypasses-your-filter",
+      "title": "Silent Leak: 68.8% Bypasses Your Filter",
+      "url": "https://aichieve.net/silent-leak-bypasses-your-filter/",
+      "path": "/silent-leak-bypasses-your-filter/",
+      "sites_live": {
+        "aichieve.net": "/silent-leak-bypasses-your-filter/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Most multi-agent runs hide a silent data leak. In a new test of 4,979 agent traces, 68.8% pushed private content through the messages the agents sent to each\u2026",
+      "modified": "2026-10-21T17:37:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4480,6 +4595,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-ci-bill-232-hours",
+      "title": "Your CI Bill: 232 Hours Before You Build",
+      "url": "https://aichieve.net/your-ci-bill-232-hours/",
+      "path": "/your-ci-bill-232-hours/",
+      "sites_live": {
+        "aichieve.net": "/your-ci-bill-232-hours/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "The continuous integration (CI) line on your cloud bill looks like compute you could run yourself. The list prices say so: $0.006 a minute for a two-core\u2026",
+      "modified": "2026-10-21T19:09:15",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-cluster-hidden-clock",
       "title": "Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year",
       "url": "https://aichieve.net/your-cluster-hidden-clock/",
@@ -4754,6 +4892,90 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1105,
+      "slug": "duet-bills-your-five-hour-window",
+      "title": "Every Check Bills Your 5-Hour Window",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T01:10:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1102,
+      "slug": "pick-station-sets-robot-count",
+      "title": "Why Your Robot Ratio Fails: 91% vs 59%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T19:44:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1099,
+      "slug": "your-ci-bill-232-hours",
+      "title": "Your CI Bill: 232 Hours Before You Build",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T19:09:15",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1096,
+      "slug": "cap-your-card-at-80",
+      "title": "Why Your 80% Cap Wins: 22.4% More Tokens",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T18:41:38",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1093,
+      "slug": "agent-writes-stale-basis",
+      "title": "Your Agent&#8217;s 84,000-Write Mistake",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T18:08:48",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1090,
+      "slug": "silent-leak-bypasses-your-filter",
+      "title": "Silent Leak: 68.8% Bypasses Your Filter",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-21T17:37:49",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -5945,72 +6167,16 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 563,
-      "slug": "durable-execution-not-a-transaction",
-      "title": "Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts",
+      "id": 1105,
+      "slug": "duet-bills-your-five-hour-window",
+      "title": "Every Check Bills Your 5-Hour Window",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:44",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 566,
-      "slug": "gpu-hour-price-set-by-memory",
-      "title": "The Price of a GPU-Hour Is Now Set by Memory, Not Compute",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:45",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 594,
-      "slug": "forecast-accuracy-is-not-shock-protection",
-      "title": "Forecast Accuracy: A 32% Boost Will Not Stop El Ni\u00f1o",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:45",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 605,
-      "slug": "safety-stock-forecast-error-not-demand-noise",
-      "title": "Safety Stock Sizing: Why Your Buffer Uses the Wrong Number",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:45",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 582,
-      "slug": "warehouse-pick-error-tax-payback",
-      "title": "A 1% Mispick Rate Is a Seven-Figure Line Item",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:45",
+      "modified": "2026-10-22T01:10:44",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -6137,20 +6303,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-10T16:51:58",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 602,
-      "slug": "split-year-two-clock-seam",
-      "title": "The Two Clocks That Decide Your First Year Abroad",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-08T22:27:58",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }
