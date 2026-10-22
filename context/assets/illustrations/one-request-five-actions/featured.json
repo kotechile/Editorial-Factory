@@ -1,0 +1,90 @@
+{
+  "slug": "one-request-five-actions",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical assembly showing one black input block routing into five identical aluminum processing bays.",
+      "caption": "The gap between fixed AI budgets and variable action-metered billing creates a massive blind spot.",
+      "title": "ai-finops-5x-action-metering",
+      "bytes": 2273600,
+      "sha256": "sha256:2ff155d9e0a2b25f4cebd1edbc340cb2"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, extreme asymmetry with right-heavy staggered arrangement. A single matte black input module routes into a staggered array of five identical anodized aluminum processing bays. Hard clean edges, recognizable engineered parts including latched bay covers and interlocking routing tracks. One directional key light throwing a long, sharp cast shadow across the weathered surface. Muted modern editorial palette, generous negative space, no bare shapes, no printed lettering.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, humans, faces",
+  "rationale": "The story is about a hidden structural multiplier (1 to 5 actions) within a software system. Component assembly visually communicates this technical fan-out through a clean, tangible arrangement of engineered parts.",
+  "cue": "a 5x spread on the same work",
+  "subject": "a modular hardware assembly where one input block routes into five identical processing modules",
+  "core_thesis": "The AI bill is driven by unseen actions per request, and vendor examples show a 5x multiplier for the exact same work, creating a massive blind spot for budget planners.",
+  "core_conflict": "Fixed infrastructure budget allocation versus variable run-time action metering.",
+  "composition": "extreme asymmetry with right-heavy staggered arrangement",
+  "alt_text": "The 5X AI Pricing Blind Spot. A modular mechanical assembly showing one black input block routing into five identical",
+  "caption": "The 5X AI Pricing Blind Spot: Metered agent actions create a massive budget blind spot.",
+  "title": "The 5X AI Pricing Blind Spot",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/one-request-five-actions/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1686336,
+  "sha256": "sha256:c0634e018b92495e377bcf7aacd899b7245c71b73f08dd87ae1da686b553088c",
+  "source_hash": "sha256:d2f1bdc529e882f6156638c72db7e88b",
+  "source_chars": 5061,
+  "task_id": "b9cad6634b2234614afe287ee333e535",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_07244b47c3ca173a35c6bdf34cc0d2cd.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a brushed steel surface, extreme asymmetry with right-heavy staggered arrangement. A single matte black input module routes into a staggered array of five identical anodized aluminum processing bays. Hard clean edges, recognizable engineered parts including latched bay covers and interlocking routing tracks. One directional key light throwing a long, sharp cast shadow across the weathered surface. Muted modern editorial palette, generous negative space, no bare shapes, no printed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-22T11:10:09+00:00",
+  "overlay": {
+    "kicker": "AI FINOPS // AGENT PRICING",
+    "title": "THE 5X AI PRICING BLIND SPOT",
+    "hook": "Metered agent actions create a massive budget blind spot",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 90,
+    "contrast": 5.05,
+    "target": 4.5,
+    "clutter": 0.214,
+    "region_rgb": [
+      120,
+      123,
+      129
+    ],
+    "binding_rgb": [
+      151,
+      156,
+      162
+    ],
+    "title_lines": [
+      "THE 5X AI PRICING",
+      "BLIND SPOT"
+    ],
+    "subject": 0.012,
+    "ink_subject": 0.005,
+    "spike": 0.039,
+    "generated_at": "2026-10-22T11:10:09+00:00"
+  }
+}

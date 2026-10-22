@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T10:39:28Z",
+  "updated_at": "2026-10-22T11:10:23Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2901,6 +2901,24 @@
     {
       "slug": "2026-10-22_duet-bills-your-five-hour-window",
       "title": "Every Check Bills Your 5-Hour Window",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-22",
+      "public": false
+    },
+    {
+      "slug": "2026-10-22_one-request-five-actions",
+      "title": "One Request, Five Actions: Your 5x Blind Spot",
       "vertical": "enterprise_ai_finops",
       "primary_keyword": "",
       "secondary_keywords": [],

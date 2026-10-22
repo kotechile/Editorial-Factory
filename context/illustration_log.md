@@ -280,3 +280,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-21 | `your-5-deductible-risks-your-claim` | property_loss_insurance_mitigation | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-5-deductible-risks-your-claim/featured.jpg` |
 | 2026-10-22 | `duet-bills-your-five-hour-window` | enterprise_ai_finops | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/duet-bills-your-five-hour-window/featured.jpg` |
 | 2026-10-22 | `your-agent-team-loses-28-points` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-agent-team-loses-28-points/featured.png` |
+| 2026-10-22 | `one-request-five-actions` | enterprise_ai_finops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/one-request-five-actions/featured.png` |
