@@ -1,0 +1,90 @@
+{
+  "slug": "your-retrieval-misses-57",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Reducing Retrieval Misses. A technical isometric cutaway of a tiered mechanical sorting funnel filtering wide blocks into a narrow brass tray.",
+      "caption": "Reducing Retrieval Misses: How to fix the funnel that feeds memory lookups.",
+      "title": "Retrieval Funnel Isometric Cutaway",
+      "bytes": 1327285,
+      "sha256": "sha256:a786f5fcfbb650520022b814ce922f1e"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre isometric projection of a tiered mechanical sorting funnel assembly resting on a brushed steel drafting table. The top tier features a wide modular rack holding numerous frosted glass blocks, which feed downward through an intricate mid-level filtration grating into a narrow base tray containing a precise row of polished brass modules. Flat muted palette with one amber accent colour, thin consistent line weight, single directional light casting clear shadows, generous empty margin, no abstract geometry without mechanical context.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, typography, text",
+  "rationale": "A technical isometric illustration perfectly captures the systemic nature of the retrieval funnel, showing the structural process of narrowing wide data into precise chunks without resorting to literal software screenshots.",
+  "cue": "because the funnel, not the index",
+  "subject": "a tiered mechanical sorting funnel processing data blocks",
+  "core_thesis": "The lookup process for an AI agent's semantic memory is a multi-stage funnel where retrieving wide and reranking is the most critical step to reduce miss rates.",
+  "core_conflict": "High volume retrieval vs precision ranking costs in semantic memory",
+  "composition": "asymmetric off-centre isometric projection",
+  "alt_text": "Reducing Retrieval Misses. A technical isometric cutaway of a tiered mechanical sorting funnel filtering wide blocks into a narrow brass tray.",
+  "caption": "Reducing Retrieval Misses: How to fix the funnel that feeds memory lookups.",
+  "title": "Reducing Retrieval Misses",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-retrieval-misses-57/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 993515,
+  "sha256": "sha256:f4fffada55fdc4dcc67cbb6eeb2997961b774e4441104db8b387ddb0b7cb21f4",
+  "source_hash": "sha256:03ac2ce4c8827bd317d37e051091e5a6",
+  "source_chars": 4686,
+  "task_id": "1ba3aaf198e7345789c22352541aca06",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ca67d499a2672a0375ef0e8ef3674bbe.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre isometric projection of a tiered mechanical sorting funnel assembly resting on a brushed steel drafting table. The top tier features a wide modular rack holding numerous frosted glass blocks, which feed downward through an intricate mid-level filtration grating into a narrow base tray containing a precise row of polished brass modules. Flat muted palette with one amber accent colour, thin consistent line weight, single directional light casting clear shadows, generous empty margin, no abstract geometry without mechanical context.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-22T17:49:07+00:00",
+  "overlay": {
+    "kicker": "AI MEMORY // RETRIEVAL PIPELINES",
+    "title": "REDUCING RETRIEVAL MISSES",
+    "hook": "How to fix the funnel that feeds agentic memory",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.12,
+    "target": 5.5,
+    "clutter": 0.36,
+    "region_rgb": [
+      227,
+      230,
+      230
+    ],
+    "binding_rgb": [
+      166,
+      180,
+      183
+    ],
+    "title_lines": [
+      "REDUCING",
+      "RETRIEVAL MISSES"
+    ],
+    "subject": 0.25,
+    "ink_subject": 0.151,
+    "spike": 0.646,
+    "generated_at": "2026-10-22T17:49:07+00:00"
+  }
+}

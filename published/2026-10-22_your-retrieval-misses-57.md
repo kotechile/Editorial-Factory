@@ -11,6 +11,12 @@ meta_title: "Your Retrieval Fails at 5.7%"
 meta_title_source: "derived_from_title"
 meta_description: "Anthropic's retrieval test missed the right passage 5.7% of the time when it fetched the 20 best-matching chunks."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-retrieval-misses-57/featured.png"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Reducing Retrieval Misses. A technical isometric cutaway of a tiered mechanical sorting funnel filtering wide blocks into a narrow brass tray."
+image_caption: "Reducing Retrieval Misses: How to fix the funnel that feeds memory lookups."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
