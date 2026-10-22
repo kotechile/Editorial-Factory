@@ -1,6 +1,6 @@
 {
   "slug": "your-130000-cap-costs-the-credit",
-  "revision": 2,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,62 @@
       "title": "Expat Tax Swap Collage",
       "bytes": 2645103,
       "sha256": "sha256:6850a774b96173cd41caeb643c9d7a5a"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2062297,
+      "sha256": "sha256:b22e908f1095bf26895a0544f801f3ac0d1df6fd31516e45452299da89dad96a"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2077558,
+      "sha256": "sha256:641ed19ada2f28087f770d64ae88720271faf5dad8f31596be288a6f23dda501"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2071695,
+      "sha256": "sha256:bedcf2f10d65fdffbb80109eb0fc9baeecbb94fabfe10a99d5973a6c1f55f30b"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2061050,
+      "sha256": "sha256:6f1401872b1e2aca385cdc2eeb7a4200f452757600894f5360cee510b6828bef"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2061050,
+      "sha256": "sha256:6f1401872b1e2aca385cdc2eeb7a4200f452757600894f5360cee510b6828bef"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2082689,
+      "sha256": "sha256:d848c5d445bf58f1a9b92fd2dc21e78d7fd0246ff8ca769750ee8b0a276f75af"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "The $130,000 Expat Tax Trap.",
+      "title": "The $130,000 Expat Tax Trap",
+      "bytes": 2071622,
+      "sha256": "sha256:edc8cd5064e5a825344120e3d3aa7608485c4dc844ea309ec626225f6472551a"
     }
   ],
   "style": "paper_collage",
@@ -27,9 +83,9 @@
   "core_thesis": "The foreign earned income exclusion trades a capped upfront tax break for the permanent loss of uncapped foreign tax credits on that same income.",
   "core_conflict": "Immediate capped tax exclusion versus long-term uncapped tax credit carryforwards.",
   "composition": "wide asymmetric layout with generous negative space",
-  "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
-  "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
-  "title": "The $130,000 Expat Tax Trap",
+  "alt_text": "The $130,000 Trap. Cut-paper silhouettes of an hourglass and a coin layered on a torn paper sheet on a wooden desk.",
+  "caption": "The $130,000 Trap: capping the exclusion also forfeits the foreign tax credit on that slice.",
+  "title": "The $130,000 Trap",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -39,8 +95,8 @@
   "local_path": "context/assets/illustrations/your-130000-cap-costs-the-credit/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 2062297,
-  "sha256": "sha256:b22e908f1095bf26895a0544f801f3ac0d1df6fd31516e45452299da89dad96a",
+  "bytes": 2095481,
+  "sha256": "sha256:ffffe360698ce402bf9f3c46c1177b248d9bbd84f0fbe14314e848fb8de8f5a2",
   "source_hash": "sha256:8c6c35e3e079d75a05a50d6fa389d7c2",
   "source_chars": 4540,
   "task_id": "c81e6a4d5937976dc1e39ff0e0cf3841",
@@ -60,31 +116,29 @@
   "generated_at": "2026-10-22T19:41:04+00:00",
   "overlay": {
     "kicker": "EXPAT TAX // EXCLUSION VS CREDIT",
-    "title": "THE $130,000 EXPAT TAX TRAP",
-    "hook": "How the income exclusion kills your foreign tax credit",
-    "anchor": "top-left",
-    "light": false,
-    "scrim": 105,
-    "contrast": 5.72,
+    "title": "The $130,000 Trap",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 60,
+    "contrast": 5.84,
     "target": 5.5,
-    "clutter": 0.368,
+    "clutter": 0.402,
     "region_rgb": [
-      188,
-      159,
-      125
+      101,
+      73,
+      47
     ],
     "binding_rgb": [
-      156,
-      104,
-      54
+      155,
+      110,
+      69
     ],
     "title_lines": [
-      "THE $130,000",
-      "EXPAT TAX TRAP"
+      "The $130,000 Trap"
     ],
-    "subject": 0.328,
-    "ink_subject": 0.239,
-    "spike": 0.681,
+    "subject": 0.308,
+    "ink_subject": 0.266,
+    "spike": 0.477,
     "generated_at": "2026-10-22T19:41:04+00:00"
   }
 }

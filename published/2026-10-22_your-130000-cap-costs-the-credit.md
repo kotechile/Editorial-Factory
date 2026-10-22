@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-130000-cap-costs-the-credit/featured.png"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off."
-image_caption: "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit."
+image_alt: "The $130,000 Trap. Cut-paper silhouettes of an hourglass and a coin layered on a torn paper sheet on a wooden desk."
+image_caption: "The $130,000 Trap: capping the exclusion also forfeits the foreign tax credit on that slice."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -60,17 +60,6 @@ Some costs stay tied together and never show up in a basic side-by-side view. Pi
 
 The honest limit is that these numbers rely on moving targets. Rates change, money values shift, and the foreign tax on an excluded slice usually needs splitting rather than reading straight off a payslip. Where the two tools come out close, the tiebreaker is usually the paperwork you feel willing to defend years later.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Calculate Your Career Relocation Payback" -> /calculate-your-career-relocation-payback/ [same site (giniloh.com); topical overlap: costs, exact] Link "Calculate Your Career Relocation Payback" in the section where the article touches costs, exact. -->
-<!-- internal-link hint: "Ebike Costs: Per-Use Calculator for Commuters" -> /ebike-costs-per-use-calculator-for-commuters/ [same site (giniloh.com); topical overlap: costs, exact] Link "Ebike Costs: Per-Use Calculator for Commuters" in the section where the article touches costs, exact. -->
-## Related reading
-
-- [Calculate Your Career Relocation Payback](/calculate-your-career-relocation-payback/)
-- [Ebike Costs: Per-Use Calculator for Commuters](/ebike-costs-per-use-calculator-for-commuters/)
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -82,6 +71,17 @@ The honest limit is that these numbers rely on moving targets. Rates change, mon
   - **The stacking route:** The method of excluding up to the cap and crediting the foreign tax on the rest of the pay keeps both tools active.
   - **The revocation clock:** A five-year wait and a formal ruling request stand between a revoked exclusion and a new choice.
 - **The Catch:** The credit needs foreign-source math and separate categories that the exclusion skips entirely, which is why the exclusion is usually the better tool in a low-tax host country.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Calculate Your Career Relocation Payback" -> /calculate-your-career-relocation-payback/ [same site (giniloh.com); topical overlap: costs, exact] Link "Calculate Your Career Relocation Payback" in the section where the article touches costs, exact. -->
+<!-- internal-link hint: "Ebike Costs: Per-Use Calculator for Commuters" -> /ebike-costs-per-use-calculator-for-commuters/ [same site (giniloh.com); topical overlap: costs, exact] Link "Ebike Costs: Per-Use Calculator for Commuters" in the section where the article touches costs, exact. -->
+## Related reading
+
+- [Calculate Your Career Relocation Payback](/calculate-your-career-relocation-payback/)
+- [Ebike Costs: Per-Use Calculator for Commuters](/ebike-costs-per-use-calculator-for-commuters/)
+<!-- internal-links:end -->
 
 ## Sources
 
