@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/why-65-percent-of-stock-records-miss/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "False Stock Records. A precision industrial balance scale out of equilibrium, with a heavy module on one side and an empty"
+image_alt: "False Stock Records. A precision industrial balance scale out of equilibrium, with a heavy polymer module on one side and an empty tray on the other."
 image_caption: "False Stock Records: How false shelf counts ruin perfect supply forecasts."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -92,6 +92,18 @@ That 11% sales lift also came from a single grocery chain running a field test a
 
 A physical count is a snapshot of being right, not a lasting state. Accuracy decays with every single receipt, pick, and return, making the repeated labor cost of counting the true price of the metric. A better record ensures the plan acts on the right stock, but a sensing layer still has to earn its keep by calling what next month will sell.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** My read is that the stock record an S&OP plan builds on is the number nobody audits, and it is wrong at a scale that dwarfs the forecast debate, running about ten to one by product group rather than by site.
+- **Why It Matters:** A plan that orders against a record claiming stock that is not there ties up working cash in a phantom. Fixing those exact overclaimed records lifted store sales 11% in the study that ran the count.
+- **What I'd Watch:**
+  - **Group-first counting:** Assigning physical counts by product group and item speed rather than evenly per site, targeting where the measured error spread actually sits.
+  - **Overclaim bias:** Aiming the count at records that claim more stock exists than the shelf holds, which are the items where the sales gain landed.
+  - **The accuracy floor:** Treating the 95% to 99% record accuracy band as the must-have entry price for a planning upgrade rather than a simple warehouse metric.
+- **The Catch:** The figures come from retail and grocery studies that count records rather than money risk, and a fully correct record still does not answer what future demand will do next.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -104,18 +116,6 @@ A physical count is a snapshot of being right, not a lasting state. Accuracy dec
 - [4 Warehouses Halve Stock. Yours Won't](/four-warehouses-halve-stock/) — more on Supply Chain & Operations
 - [60% Air Deals: Your Stock Math Breaks](/air-freight-wont-price-a-year/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** My read is that the stock record an S&OP plan builds on is the number nobody audits, and it is wrong at a scale that dwarfs the forecast debate, running about ten to one by product group rather than by site.
-- **Why It Matters:** A plan that orders against a record claiming stock that is not there ties up working cash in a phantom. Fixing those exact overclaimed records lifted store sales 11% in the study that ran the count.
-- **What I'd Watch:**
-  - **Group-first counting:** Assigning physical counts by product group and item speed rather than evenly per site, targeting where the measured error spread actually sits.
-  - **Overclaim bias:** Aiming the count at records that claim more stock exists than the shelf holds, which are the items where the sales gain landed.
-  - **The accuracy floor:** Treating the 95% to 99% record accuracy band as the must-have entry price for a planning upgrade rather than a simple warehouse metric.
-- **The Catch:** The figures come from retail and grocery studies that count records rather than money risk, and a fully correct record still does not answer what future demand will do next.
 
 ## Sources
 [1] Raman, DeHoratius & Ton, "Execution: The Missing Link in Retail Operations", California Management Review 43(3), Spring 2001 — https://cmr.berkeley.edu/2001/05/43-3-execution-the-missing-link-in-retail-operations
