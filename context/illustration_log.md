@@ -289,3 +289,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-22 | `review-minute-costs-66-dollars` | enterprise_ai_finops | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/review-minute-costs-66-dollars/featured.png` |
 | 2026-10-22 | `your-golden-zone-costs-10-miles` | supply_chain | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-golden-zone-costs-10-miles/featured.jpg` |
 | 2026-10-22 | `kill-your-deposit-in-3-days` | home_ops_execution | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/kill-your-deposit-in-3-days/featured.jpg` |
+| 2026-10-22 | `your-130000-cap-costs-the-credit` | expat_cross_border_relocation | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-130000-cap-costs-the-credit/featured.png` |

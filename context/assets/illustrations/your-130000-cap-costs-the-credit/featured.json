@@ -1,0 +1,90 @@
+{
+  "slug": "your-130000-cap-costs-the-credit",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+      "caption": "Choosing the foreign earned income exclusion trades long-term credit potential for a capped, immediate break.",
+      "title": "Expat Tax Swap Collage",
+      "bytes": 2645103,
+      "sha256": "sha256:6850a774b96173cd41caeb643c9d7a5a"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage, crisp cut-out object silhouettes. Two intersecting stylized cut-paper silhouettes\u2014an hourglass and a heavy coin\u2014layered deliberately on a real wooden desk. Hand-torn rag paper with visible fibre, physical cast shadows under each layer, one raking directional light. Halftone newsprint texture on the base layer. Muted modern editorial palette of navy, cream, and terracotta. Crisp clean edges, generous negative space on the right, wide asymmetric layout. High texture, tactile physical depth.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermark, UI, words, legible print",
+  "rationale": "The article discusses a purely conceptual tax policy dilemma where no physical facility or machinery exists. An elegant abstract paper silhouette perfectly states the idea of a financial swap over time.",
+  "cue": "swap, not a gift",
+  "subject": "two intersecting cut-paper silhouettes of an hourglass and a heavy coin",
+  "core_thesis": "The foreign earned income exclusion trades a capped upfront tax break for the permanent loss of uncapped foreign tax credits on that same income.",
+  "core_conflict": "Immediate capped tax exclusion versus long-term uncapped tax credit carryforwards.",
+  "composition": "wide asymmetric layout with generous negative space",
+  "alt_text": "The $130,000 Expat Tax Trap. Cut-paper silhouettes of an hourglass and a coin layered on a desk, representing a trade-off.",
+  "caption": "The $130,000 Expat Tax Trap: How the income exclusion kills your foreign tax credit.",
+  "title": "The $130,000 Expat Tax Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-130000-cap-costs-the-credit/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 2062297,
+  "sha256": "sha256:b22e908f1095bf26895a0544f801f3ac0d1df6fd31516e45452299da89dad96a",
+  "source_hash": "sha256:8c6c35e3e079d75a05a50d6fa389d7c2",
+  "source_chars": 4540,
+  "task_id": "c81e6a4d5937976dc1e39ff0e0cf3841",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_88546fa3144f2dbd869e36ea37c6f81d.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage, crisp cut-out object silhouettes. Two intersecting stylized cut-paper silhouettes\u2014an hourglass and a heavy coin\u2014layered deliberately on a real wooden desk. Hand-torn rag paper with visible fibre, physical cast shadows under each layer, one raking directional light. Halftone newsprint texture on the base layer. Muted modern editorial palette of navy, cream, and terracotta. Crisp clean edges, generous negative space on the right, wide asymmetric layout. High texture, tactile physical depth.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-22T19:41:04+00:00",
+  "overlay": {
+    "kicker": "EXPAT TAX // EXCLUSION VS CREDIT",
+    "title": "THE $130,000 EXPAT TAX TRAP",
+    "hook": "How the income exclusion kills your foreign tax credit",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 105,
+    "contrast": 5.72,
+    "target": 5.5,
+    "clutter": 0.368,
+    "region_rgb": [
+      188,
+      159,
+      125
+    ],
+    "binding_rgb": [
+      156,
+      104,
+      54
+    ],
+    "title_lines": [
+      "THE $130,000",
+      "EXPAT TAX TRAP"
+    ],
+    "subject": 0.328,
+    "ink_subject": 0.239,
+    "spike": 0.681,
+    "generated_at": "2026-10-22T19:41:04+00:00"
+  }
+}

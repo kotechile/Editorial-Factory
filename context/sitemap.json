@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T19:10:56Z",
+  "updated_at": "2026-10-22T19:41:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2990,6 +2990,24 @@
       "date": "2026-10-22",
       "public": true,
       "url": "https://aichieve.net/suez-returns-91-surcharge-doesnt/"
+    },
+    {
+      "slug": "2026-10-22_your-130000-cap-costs-the-credit",
+      "title": "Your $130,000 Cap Costs the Credit",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
+      "date": "2026-10-22",
+      "public": false
     },
     {
       "slug": "2026-10-22_your-350000-passport-isnt-europe",

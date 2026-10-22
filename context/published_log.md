@@ -174,6 +174,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-22 | enterprise_ai_finops | review-minute-costs-66-dollars | Your 25-Minute Review Costs $66.67 | https://pressflow.aichieve.net/published/2026-10-22_review-minute-costs-66-dollars.md | reader site only |
 | 2026-10-22 | supply_chain | your-golden-zone-costs-10-miles | Your Golden Zone Costs 10 Miles | https://pressflow.aichieve.net/published/2026-10-22_your-golden-zone-costs-10-miles.md | reader site only |
 | 2026-10-22 | home_ops_execution | kill-your-deposit-in-3-days | 3 Days to Kill Your Deposit | https://pressflow.aichieve.net/published/2026-10-22_kill-your-deposit-in-3-days.md | reader site only |
+| 2026-10-22 | expat_cross_border_relocation | your-130000-cap-costs-the-credit | Your $130,000 Cap Costs the Credit | https://pressflow.aichieve.net/published/2026-10-22_your-130000-cap-costs-the-credit.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
