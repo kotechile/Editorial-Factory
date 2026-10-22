@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T12:08:51Z",
+  "updated_at": "2026-10-22T12:42:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2949,6 +2949,23 @@
         "Related reading"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-10-22",
+      "public": false
+    },
+    {
+      "slug": "2026-10-22_your-350000-passport-isnt-europe",
+      "title": "Your $350,000 Passport Isn't Europe",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
       "date": "2026-10-22",
       "public": false
     },
