@@ -282,3 +282,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-22 | `your-agent-team-loses-28-points` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-agent-team-loses-28-points/featured.png` |
 | 2026-10-22 | `one-request-five-actions` | enterprise_ai_finops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/one-request-five-actions/featured.png` |
 | 2026-10-22 | `suez-returns-91-surcharge-doesnt` | supply_chain | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/suez-returns-91-surcharge-doesnt/featured.jpg` |
+| 2026-10-22 | `your-remodel-loses-to-149-growth` | home_ops_execution | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-remodel-loses-to-149-growth/featured.jpg` |

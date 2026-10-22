@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T11:48:06Z",
+  "updated_at": "2026-10-22T12:08:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2967,6 +2967,24 @@
         "At a glance"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-22",
+      "public": false
+    },
+    {
+      "slug": "2026-10-22_your-remodel-loses-to-149-growth",
+      "title": "Your Remodel Loses to 149% Growth",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-22",
       "public": false
     }

@@ -1,0 +1,88 @@
+{
+  "slug": "your-remodel-loses-to-149-growth",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A leather-bound contractor ledger heavily marked with timeline blocks rests on a wooden desk next to a residential blueprint.",
+      "caption": "The competition for remodeling labor is increasingly lost to multi-month infrastructure contracts.",
+      "title": "remodel-labor-datacenter-ledger",
+      "bytes": 437855,
+      "sha256": "sha256:bca8c44c13955ff437efe11efbcc8a54"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, 50mm macro lens with a sharp focal plane. An asymmetric off-centre top-down flatlay composition. A heavy, worn leather-bound contractor's scheduling ledger sits open on a scarred wooden workbench, its thick tactile rag-paper pages filled with rigid blocked-out timeline bars. Beside it, a small, neglected rolled-up residential blueprint rests in the deep shadows. Soft, diffused directional daylight washes across the desk from a single window, highlighting the matte paper grain and the weathered edges of the leather binder. Quiet, sophisticated editorial palette, muted earth tones, no legible text or printed lettering.",
+  "negative_prompt": "text, letters, words, numbers, watermark, signature, typography, UI, gibberish, garbled lettering",
+  "rationale": "A document flatlay captures the core tension of the 'schedule page of the contract'. A physical calendar ledger blocking out massive time for infrastructure over residential plans illustrates the capacity squeeze perfectly.",
+  "cue": "the schedule page of the contract",
+  "subject": "an electrician's scheduling ledger heavily blocked out next to small residential blueprints",
+  "core_thesis": "The soft patch in the remodeling market is driven by labor capacity being absorbed by massive data center construction, not a lack of residential demand.",
+  "core_conflict": "Residential remodeling timelines vs. data center infrastructure backlogs",
+  "composition": "asymmetric off-centre top-down flatlay",
+  "alt_text": "Losing Crews To Data Centers. A leather-bound contractor ledger heavily marked with timeline blocks rests on a wooden desk",
+  "caption": "Losing Crews To Data Centers: Data center growth is eating up the remodeling calendar.",
+  "title": "Losing Crews To Data Centers",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-remodel-loses-to-149-growth/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 262722,
+  "sha256": "sha256:41665354fc5753612e349c578bfc7d15603de82b2a40dff27868717d1f413559",
+  "source_hash": "sha256:d20b024194785886f5a394a671f025f2",
+  "source_chars": 5404,
+  "task_id": "8df2e85b19b1cbe52b34d2f3186e1b3c",
+  "credits": 5.0,
+  "cost_ms": 29,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/8df2e85b19b1cbe52b34d2f3186e1b3c_1792670919008.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, 50mm macro lens with a sharp focal plane. An asymmetric off-centre top-down flatlay composition. A heavy, worn leather-bound contractor's scheduling ledger sits open on a scarred wooden workbench, its thick tactile rag-paper pages filled with rigid blocked-out timeline bars. Beside it, a small, neglected rolled-up residential blueprint rests in the deep shadows. Soft, diffused directional daylight washes across the desk from a single window, highlighting the matte paper grain and the weathered edges of the leather binder. Quiet, sophisticated editorial palette, muted earth tones, no legible text or printed lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-22T12:08:41+00:00",
+  "overlay": {
+    "kicker": "LABOR SHORTAGE // DATA CENTERS",
+    "title": "LOSING CREWS TO DATA CENTERS",
+    "hook": "Data center growth is eating up the remodeling calendar",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.2,
+    "target": 5.5,
+    "clutter": 0.274,
+    "region_rgb": [
+      44,
+      40,
+      37
+    ],
+    "binding_rgb": [
+      85,
+      55,
+      44
+    ],
+    "title_lines": [
+      "LOSING CREWS",
+      "TO DATA CENTERS"
+    ],
+    "subject": 0.116,
+    "ink_subject": 0.046,
+    "spike": 0.394,
+    "generated_at": "2026-10-22T12:08:41+00:00"
+  }
+}
