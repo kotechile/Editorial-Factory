@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/smart-irrigation-payback-water-tier/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "A smart irrigation control box rests beside a stacked municipal water bill on a clean backdrop."
-image_caption: "The financial return on a smart sprinkler depends more on a utility's top-tier water rates than the manufacturer's savings claims."
+image_alt: "Smart Sprinkler Payback. A smart irrigation control box rests beside a stacked municipal water bill on a clean backdrop."
+image_caption: "Smart Sprinkler Payback: Real savings depend on your top water tier."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

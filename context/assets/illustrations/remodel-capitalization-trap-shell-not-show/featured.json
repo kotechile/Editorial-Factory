@@ -1,7 +1,16 @@
 {
   "slug": "remodel-capitalization-trap-shell-not-show",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
+      "caption": "Exterior replacements like garage doors consistently return more than their cost at resale, outpacing interior remodels.",
+      "title": "High ROI Garage Door Facade",
+      "bytes": 298492,
+      "sha256": "sha256:bce62d57f8d8c39fbe5f4986caca00d5"
+    }
+  ],
   "style": "architectural_night",
   "style_label": "Lit architecture at dusk",
   "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
@@ -15,9 +24,9 @@
   "rationale": "The architectural night treatment perfectly captures the exterior 'shell' of a home\u2014specifically the garage door\u2014highlighting the structure's resilience and curb appeal in a premium, editorial way.",
   "cue": "shell of a house above the show",
   "subject": "a modern residential garage door on a sleek home facade",
-  "alt_text": "Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
-  "caption": "Exterior replacements like garage doors consistently return more than their cost at resale, outpacing interior remodels.",
-  "title": "High ROI Garage Door Facade",
+  "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
+  "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
+  "title": "The Remodeling ROI Trap",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +36,8 @@
   "local_path": "context/assets/illustrations/remodel-capitalization-trap-shell-not-show/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 298492,
-  "sha256": "sha256:bce62d57f8d8c39fbe5f4986caca00d5",
+  "bytes": 160546,
+  "sha256": "sha256:b5e71a6836154305a1978180886107b837a7f779b440d1fd49338c4e2e6762c3",
   "source_hash": "sha256:f53976288b50820fa45a7f8145659645",
   "source_chars": 4327,
   "task_id": "15327b99ad1dec2952e2991bf720ba86",
@@ -43,5 +52,34 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-05T18:39:24+00:00"
+  "generated_at": "2026-10-05T18:39:24+00:00",
+  "overlay": {
+    "kicker": "HOME EQUITY // REMODEL ROI MATH",
+    "title": "THE REMODELING ROI TRAP",
+    "hook": "Why boring exterior swaps outearn major kitchen upgrades",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.39,
+    "target": 4.5,
+    "clutter": 0.103,
+    "region_rgb": [
+      49,
+      70,
+      92
+    ],
+    "binding_rgb": [
+      56,
+      78,
+      102
+    ],
+    "title_lines": [
+      "THE REMODELING",
+      "ROI TRAP"
+    ],
+    "subject": 0.035,
+    "ink_subject": 0.014,
+    "spike": 0.119,
+    "generated_at": "2026-10-05T18:39:24+00:00"
+  }
 }

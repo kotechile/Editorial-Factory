@@ -1,6 +1,6 @@
 {
   "slug": "moss-landing-burns-home-becomes-the-grid",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -44,6 +44,14 @@
     },
     {
       "revision": 6,
+      "alt_text": "Homeowners Become The Grid. Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a",
+      "caption": "Homeowners Become The Grid: Battery fires push California to rely on home storage.",
+      "title": "Homeowners Become The Grid",
+      "bytes": 74092,
+      "sha256": "sha256:30156fe239169730bd0172ecba412a8b98f2ad3a358979d4f11ae9107a9e4fab"
+    },
+    {
+      "revision": 7,
       "alt_text": "Homeowners Become The Grid. Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a",
       "caption": "Homeowners Become The Grid: Battery fires push California to rely on home storage.",
       "title": "Homeowners Become The Grid",

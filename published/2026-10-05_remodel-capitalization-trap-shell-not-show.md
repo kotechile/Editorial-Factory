@@ -12,8 +12,8 @@ meta_description: "Garage doors and front doors recoup more than they cost at re
 image_path: "context/assets/illustrations/remodel-capitalization-trap-shell-not-show/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Modern residential garage door illuminated warmly on a dark sleek home facade at twilight."
-image_caption: "Exterior replacements like garage doors consistently return more than their cost at resale, outpacing interior remodels."
+image_alt: "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight."
+image_caption: "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
