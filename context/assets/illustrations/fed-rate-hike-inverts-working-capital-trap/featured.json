@@ -1,6 +1,6 @@
 {
   "slug": "fed-rate-hike-inverts-working-capital-trap",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -37,6 +37,14 @@
       "title": "Rates Hit Lean Inventories",
       "bytes": 227059,
       "sha256": "sha256:6c0802c5e9807dff1045ba3c0250b3cbc546e32d2f7df1ceafc45f279f7c3cf5"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi",
+      "caption": "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut.",
+      "title": "Rate Hike Meets Zero Slack",
+      "bytes": 243345,
+      "sha256": "sha256:4ec0238768283a1b2e63a8eecf27f33cdfa142e1f2e8f7d7e457ffee113d2f8f"
     }
   ],
   "style": "long_lens_industry",
@@ -65,8 +73,8 @@
   "local_path": "context/assets/illustrations/fed-rate-hike-inverts-working-capital-trap/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 243345,
-  "sha256": "sha256:4ec0238768283a1b2e63a8eecf27f33cdfa142e1f2e8f7d7e457ffee113d2f8f",
+  "bytes": 190700,
+  "sha256": "sha256:cce5dbe5c51a6e640f0f129f1f9f012830f222cd88e45061f4f147cee99aec31",
   "source_hash": "sha256:87fc743c6ae2a776445c2d494a46aeeb",
   "source_chars": 4044,
   "task_id": "a1a7f0ce345ce20380d5c017eb4a489b",
@@ -86,7 +94,29 @@
     "kicker": "INVENTORY // INTEREST RATE SQUEEZE",
     "title": "RATE HIKE MEETS ZERO SLACK",
     "hook": "Rising rates squeeze supply chains with no stock to cut",
-    "anchor": "top-left",
-    "light": false
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.2,
+    "target": 4.5,
+    "clutter": 0.072,
+    "region_rgb": [
+      18,
+      27,
+      30
+    ],
+    "binding_rgb": [
+      26,
+      39,
+      45
+    ],
+    "title_lines": [
+      "RATE HIKE MEETS",
+      "ZERO SLACK"
+    ],
+    "subject": 0.005,
+    "ink_subject": 0.002,
+    "spike": 0.014,
+    "generated_at": "2026-10-09T00:30:53+00:00"
   }
 }

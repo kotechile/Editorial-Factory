@@ -1,7 +1,16 @@
 {
   "slug": "inventory-carrying-cost-rate",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
+      "caption": "When storage, handling, and risk are properly priced, the physical burden of slow-moving items quickly flips from profitable to negative.",
+      "title": "inventory-carrying-cost-macro",
+      "bytes": 745264,
+      "sha256": "sha256:b1ab39bb7e8a26319888ad80fb492945"
+    }
+  ],
   "style": "editorial_macro",
   "style_label": "Editorial macro",
   "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
@@ -15,9 +24,9 @@
   "rationale": "An extreme close-up of a heavy, physical spare part emphasizes the tangible burden of storage and depreciation, contrasting sharply with the abstract financial concept of a loan rate.",
   "cue": "the real math supports",
   "subject": "heavy industrial steel gear resting on a dusty warehouse shelf",
-  "alt_text": "Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
-  "caption": "When storage, handling, and risk are properly priced, the physical burden of slow-moving items quickly flips from profitable to negative.",
-  "title": "inventory-carrying-cost-macro",
+  "alt_text": "The True Cost Of Inventory. Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
+  "caption": "The True Cost Of Inventory: How flawed carrying rates cause you to over-hold stock.",
+  "title": "The True Cost Of Inventory",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +36,8 @@
   "local_path": "context/assets/illustrations/inventory-carrying-cost-rate/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 745264,
-  "sha256": "sha256:b1ab39bb7e8a26319888ad80fb492945",
+  "bytes": 437222,
+  "sha256": "sha256:7b07c17b0ff7de451a44da7bfd091a247c193d03a3cb2490adf43d4ad4f4e69e",
   "source_hash": "sha256:9299bd4406d8ec33d0aea7ddeb2a3818",
   "source_chars": 4189,
   "task_id": "87763880cf90907d2ae48257b9e0d79e",
@@ -43,5 +52,34 @@
       "resolution": "2K"
     }
   },
-  "generated_at": "2026-10-05T19:38:25+00:00"
+  "generated_at": "2026-10-05T19:38:25+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // INVENTORY COSTS",
+    "title": "THE TRUE COST OF INVENTORY",
+    "hook": "How flawed carrying rates cause you to over-hold stock",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.8,
+    "target": 4.5,
+    "clutter": 0.21,
+    "region_rgb": [
+      35,
+      32,
+      31
+    ],
+    "binding_rgb": [
+      71,
+      55,
+      42
+    ],
+    "title_lines": [
+      "THE TRUE COST",
+      "OF INVENTORY"
+    ],
+    "subject": 0.071,
+    "ink_subject": 0.031,
+    "spike": 0.232,
+    "generated_at": "2026-10-05T19:38:25+00:00"
+  }
 }

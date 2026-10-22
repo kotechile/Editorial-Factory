@@ -1,6 +1,6 @@
 {
   "slug": "3d-printing-failed-prints-are-the-cost",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,14 @@
     },
     {
       "revision": 4,
+      "alt_text": "The 3D Printing Failure Rate. A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
+      "caption": "The 3D Printing Failure Rate: The hidden cost of failed prints and wasted filament.",
+      "title": "The 3D Printing Failure Rate",
+      "bytes": 1124805,
+      "sha256": "sha256:6340952148f21d94672360583b8a415170d99e0f496d4c50a0636631e97a1201"
+    },
+    {
+      "revision": 5,
       "alt_text": "The 3D Printing Failure Rate. A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
       "caption": "The 3D Printing Failure Rate: The hidden cost of failed prints and wasted filament.",
       "title": "The 3D Printing Failure Rate",

@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-safety-gate-moves-to-verified-state/featured.png"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "A dark logic board with a glowing amber trace bypassing a relay gate to leave a permanent mark on a storage module."
-image_caption: "AI safety is moving from gating the action to verifying the permanent data left behind."
+image_alt: "Verifying Agent State. A dark logic board with a glowing amber trace bypassing a relay gate to leave a permanent mark on a"
+image_caption: "Verifying Agent State: Why AI safety depends on the data agents leave behind."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

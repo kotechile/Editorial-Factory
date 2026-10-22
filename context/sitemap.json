@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:08:33Z",
+  "updated_at": "2026-10-22T01:10:45Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2891,6 +2891,24 @@
       "date": "2026-10-21",
       "public": true,
       "url": "https://aichieve.net/your-seller-wont-stay/"
+    },
+    {
+      "slug": "2026-10-22_duet-bills-your-five-hour-window",
+      "title": "Every Check Bills Your 5-Hour Window",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-22",
+      "public": false
     }
   ]
 }

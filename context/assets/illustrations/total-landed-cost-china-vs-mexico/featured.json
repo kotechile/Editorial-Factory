@@ -1,6 +1,6 @@
 {
   "slug": "total-landed-cost-china-vs-mexico",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Total Landed Cost Stack Isometric",
       "bytes": 900292,
       "sha256": "sha256:0a9d2da12ae65ffc4428c2ce41a8c294"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Why Mexico Beats China. Isometric technical cutaway showing a shipping container stacked above manufacturing and customs",
+      "caption": "Why Mexico Beats China: Hidden tariffs and freight flip the manufacturing math.",
+      "title": "Why Mexico Beats China",
+      "bytes": 659250,
+      "sha256": "sha256:14b4f261db54c8635ec031b6985942e3ad1ed829637b036b1642236e4ff26279"
     }
   ],
   "style": "technical_isometric",

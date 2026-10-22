@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/inventory-carrying-cost-rate/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up."
-image_caption: "When storage, handling, and risk are properly priced, the physical burden of slow-moving items quickly flips from profitable to negative."
+image_alt: "The True Cost Of Inventory. Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up."
+image_caption: "The True Cost Of Inventory: How flawed carrying rates cause you to over-hold stock."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -1,0 +1,88 @@
+{
+  "slug": "duet-bills-your-five-hour-window",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A precision brass rationing gauge mechanism dividing resources into a central reservoir.",
+      "caption": "Background agent checks drain the same usage limit as manual chats, creating a hidden cost.",
+      "title": "Claude Duet Shared Token Bucket Gauge",
+      "bytes": 282577,
+      "sha256": "sha256:c3b1a4fcb49e8a35f1df5cc28c0c2ce1"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph of a precision brass rationing gauge mechanism dividing fluid or light into a single shared mechanical reservoir. 100mm macro lens, three-quarter angle. Softbox key light with visible falloff throwing a long cast contact shadow across a textured matte polymer surface. Crisp catalogue clarity, no gradient sweep, unbranded, sophisticated color palette, deep editorial negative space on the right.",
+  "negative_prompt": "text, typography, letters, numbers, watermark, UI, gradient sweep, garbled text, labels",
+  "rationale": "The article is about a hidden cost and a shared metering mechanism acting as a budget. A studio product shot of a precision rationing instrument or shared reservoir mechanism captures the tension of shared token consumption with high clarity and material realism.",
+  "cue": "fights its owner for one bucket",
+  "subject": "precision brass rationing gauge with a central mechanical reservoir",
+  "core_thesis": "Claude Duet's background check interval directly consumes the user's finite conversation quota, acting as a hidden budget metered by subscription tier.",
+  "core_conflict": "Proactive automated agent checks vs. finite user chat quotas",
+  "composition": "asymmetric composition, off-centre left thirds, deep negative space",
+  "alt_text": "Metering Claude Duet. A precision brass rationing gauge mechanism dividing resources into a central reservoir.",
+  "caption": "Metering Claude Duet: How proactive agent loops quietly drain your chat limits.",
+  "title": "Metering Claude Duet",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/duet-bills-your-five-hour-window/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 160762,
+  "sha256": "sha256:1ec0303c4429d548b4fca6a419284ed994e6103a9853b3a33093ecb2f0ab9f36",
+  "source_hash": "sha256:bab90a86e4234fa381299933f962ace8",
+  "source_chars": 4771,
+  "task_id": "cb3e75f998a6757ae7bed47a69795866",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/cb3e75f998a6757ae7bed47a69795866_1792631429648.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph of a precision brass rationing gauge mechanism dividing fluid or light into a single shared mechanical reservoir. 100mm macro lens, three-quarter angle. Softbox key light with visible falloff throwing a long cast contact shadow across a textured matte polymer surface. Crisp catalogue clarity, no gradient sweep, unbranded, sophisticated color palette, deep editorial negative space on the right.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-22T01:10:34+00:00",
+  "overlay": {
+    "kicker": "AI FINOPS // CLAUDE DUET BILLING",
+    "title": "METERING CLAUDE DUET",
+    "hook": "How proactive agent loops quietly drain your chat limits",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.19,
+    "target": 4.5,
+    "clutter": 0.111,
+    "region_rgb": [
+      69,
+      70,
+      73
+    ],
+    "binding_rgb": [
+      84,
+      88,
+      91
+    ],
+    "title_lines": [
+      "METERING",
+      "CLAUDE DUET"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-22T01:10:34+00:00"
+  }
+}

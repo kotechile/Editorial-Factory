@@ -278,3 +278,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-21 | `your-ci-bill-232-hours` | enterprise_build_vs_buy | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-ci-bill-232-hours/featured.png` |
 | 2026-10-21 | `pick-station-sets-robot-count` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/pick-station-sets-robot-count/featured.jpg` |
 | 2026-10-21 | `your-5-deductible-risks-your-claim` | property_loss_insurance_mitigation | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-5-deductible-risks-your-claim/featured.jpg` |
+| 2026-10-22 | `duet-bills-your-five-hour-window` | enterprise_ai_finops | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/duet-bills-your-five-hour-window/featured.jpg` |

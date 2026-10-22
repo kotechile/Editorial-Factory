@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 14,
+  "revision": 15,
   "history": [
     {
       "revision": 1,
@@ -113,6 +113,14 @@
       "title": "The AI Agent Audit Trail",
       "bytes": 221367,
       "sha256": "sha256:d4872dcfa84c074e09b833f609f536553ce3c64faf1f2c8670a22962db20265a"
+    },
+    {
+      "revision": 14,
+      "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig",
+      "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
+      "title": "The AI Agent Audit Trail",
+      "bytes": 224747,
+      "sha256": "sha256:d61d91cc45894a417ebc3ba7bf897dcdc83acf1dd5c621f942c0a6969880dc9b"
     }
   ],
   "style": "document_flatlay",
@@ -143,8 +151,8 @@
   "local_path": "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 224747,
-  "sha256": "sha256:d61d91cc45894a417ebc3ba7bf897dcdc83acf1dd5c621f942c0a6969880dc9b",
+  "bytes": 229949,
+  "sha256": "sha256:b0a6feb17d5e9770bf558437a2ead43460044ed4b3aae889218adf06c727e8e2",
   "source_hash": "sha256:c444586232bf864156d0a4b263f3569b",
   "source_chars": 5203,
   "task_id": "a73808a55815b86496bbef15d4d3fb99",
@@ -166,24 +174,27 @@
     "hook": "Building logs that can replay an agent's exact choice",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 45,
-    "contrast": 5.76,
-    "target": 5.5,
-    "clutter": 0.3,
+    "scrim": 0,
+    "contrast": 7.58,
+    "target": 4.5,
+    "clutter": 0.246,
     "region_rgb": [
-      73,
-      58,
-      49
+      47,
+      36,
+      31
     ],
     "binding_rgb": [
-      125,
-      109,
-      94
+      92,
+      70,
+      57
     ],
     "title_lines": [
       "THE AI AGENT",
       "AUDIT TRAIL"
     ],
+    "subject": 0.155,
+    "ink_subject": 0.077,
+    "spike": 0.465,
     "generated_at": "2026-10-09T02:03:49+00:00"
   }
 }
