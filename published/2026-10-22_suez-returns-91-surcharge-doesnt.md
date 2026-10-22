@@ -62,6 +62,18 @@ The arithmetic that makes this vivid is also the soft part. Drewry's $1 million 
 
 One carrier's schedule is not the market. I have MSC's notice and nobody else's, so how far the pattern travels is an open question. A fast fall in base rates next year would also give shippers a reason to raise the add-on in the same talk.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Carriers are moving services back through the Suez Canal, with estimates that transits fully recover during the first quarter of 2027, while a $91 per-TEU surcharge that began on 19 October applies to Asian cargo bound for Mediterranean and Black Sea ports with no end date.
+- **Why It Matters:** The return adds capacity and should push the base rate down. The surcharge sits on top of that rate, is charged by lane rather than by routing, and does not fall with it. A 2027 freight budget built on the direction of spot rates can miss the line that actually grew.
+- **What I'd Watch:** Next year's contract bids, and how they treat the two halves of the price.
+  - **Split line items:** a base rate and a surcharge listed apart, each with its own expiry date.
+  - **Suez insurance cover:** whether cargo cover for Red Sea routings is arranged before a carrier switches a service.
+  - **Carrier followers:** whether other lines publish the same per-TEU charges on the same lanes.
+- **The Catch:** The charge is put down to piracy risk, not to the canal, so a shipper routing round the Cape still pays it. The gap between the canal saving and the surcharge bill also rests on an analyst's slot-cost model and a full-ship maximum.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -74,18 +86,6 @@ One carrier's schedule is not the market. I have MSC's notice and nobody else's,
 - [A Late Container's Bill Carries Two 30-Day Clocks](/demurrage-invoice-30-day-clocks/) — more on Supply Chain & Operations
 - [Nearshoring Doesn't Move the Trade Case](/nearshoring-doesnt-move-the-trade-case/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Carriers are moving services back through the Suez Canal, with estimates that transits fully recover during the first quarter of 2027, while a $91 per-TEU surcharge that began on 19 October applies to Asian cargo bound for Mediterranean and Black Sea ports with no end date.
-- **Why It Matters:** The return adds capacity and should push the base rate down. The surcharge sits on top of that rate, is charged by lane rather than by routing, and does not fall with it. A 2027 freight budget built on the direction of spot rates can miss the line that actually grew.
-- **What I'd Watch:** Next year's contract bids, and how they treat the two halves of the price.
-  - **Split line items:** a base rate and a surcharge listed apart, each with its own expiry date.
-  - **Suez insurance cover:** whether cargo cover for Red Sea routings is arranged before a carrier switches a service.
-  - **Carrier followers:** whether other lines publish the same per-TEU charges on the same lanes.
-- **The Catch:** The charge is put down to piracy risk, not to the canal, so a shipper routing round the Cape still pays it. The gap between the canal saving and the surcharge bill also rests on an analyst's slot-cost model and a full-ship maximum.
 
 ## Sources
 [1] Judah Levine, "Red Sea container traffic set for full return in Q1 — October 20, 2026 Update", Freightos, 2026-10-20 — https://www.freightos.com/freight-resources/red-sea-container-traffic-set-for-full-return-in-q1-october-20-2026-update
