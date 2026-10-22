@@ -152,6 +152,13 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > being discovered at fact-check. Probe every trade-press anchor this way before it enters the signals file;
 > for a filing-backed story, date the *filing* too (SEC full-text search returns `file_date`), because a
 > report is never fresher than the record it reports on.
+> **The seed helper trusts the Date cell you typed, so a date lifted from the search snippet silently
+> makes an out-of-window row admissible.** Observed 2026-10-22: an Eye On Housing post whose search hit
+> read as current was written into the table as `2026-09-23` and seeded without complaint
+> (`rows=9 candidates=0`); its WordPress `date` was **2026-09-02**, eleven days before the window opened.
+> Run the publisher's own date lookup *before* the row is written, not after, and re-seed whenever a row's
+> date changes — the marker records the row count, not the dates, so a corrected date is invisible in
+> `verify.sh §8`.
 
 > **Every URL a downstream artifact cites must appear as a URL in this file (learned 2026-10-08).**
 > `scripts/synthesize_topics.py --check-briefs` (verify.sh §8) extracts *every* `https://` URL from a
