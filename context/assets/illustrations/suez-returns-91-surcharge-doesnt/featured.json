@@ -1,0 +1,88 @@
+{
+  "slug": "suez-returns-91-surcharge-doesnt",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A massive container ship transits a narrow canal beneath a heavy steel toll gantry at twilight.",
+      "caption": "While transits recover and capacity returns, open-ended surcharges attached to the lane remain firmly in place.",
+      "title": "Red Sea Transit Surcharge Gantry",
+      "bytes": 320306,
+      "sha256": "sha256:2ec194eedfca7210fbcb307b98c9a274"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look. A massive unbranded container ship heavily loaded with stacked cargo boxes slowly transits a dark, narrow canal at twilight. Looming above the shipping lane is a heavy, brutalist steel toll gantry casting a long, unyielding shadow across the water and the ship's deck. Restrained teal-and-amber palette, crisp atmospheric depth, single strong practical light source from the gantry illuminating the weathered corrugated containers. Wide establishing composition, motion implied, deep industrial contrast, no people facing camera, premium editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, printed words, typography",
+  "rationale": "A cinematic still captures the immense scale of the freight industry and the atmospheric tension of an unavoidable, persistent toll (the surcharge) overshadowing the returning transit capacity.",
+  "cue": "Suez Returns. Your $91 Surcharge Doesn't.",
+  "subject": "A massive container ship under a heavy steel toll gantry spanning a canal",
+  "core_thesis": "The Red Sea return restores shipping capacity but leaves in place an open-ended, per-TEU lane surcharge that outlasts the canal routing saving.",
+  "core_conflict": "Returning shipping capacity pulling base rates down vs. a persistent, open-ended surcharge inflating the final bill.",
+  "composition": "wide establishing composition with heavy off-center framing",
+  "alt_text": "The Sticky Suez Surcharge. A massive container ship transits a narrow canal beneath a heavy steel toll gantry at twilight.",
+  "caption": "The Sticky Suez Surcharge: Red Sea transits return but your $91 surcharge remains.",
+  "title": "The Sticky Suez Surcharge",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/suez-returns-91-surcharge-doesnt/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 182568,
+  "sha256": "sha256:291a6b8e175dc72744b434a4f34b692d2c8d9c048c122c81a3ca0e0df1514f54",
+  "source_hash": "sha256:84c7fddb0c8ae84b26bffa1827b253f9",
+  "source_chars": 5433,
+  "task_id": "193c266a3106e82631ea2587b3824d98",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/193c266a3106e82631ea2587b3824d98_1792669109352.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look. A massive unbranded container ship heavily loaded with stacked cargo boxes slowly transits a dark, narrow canal at twilight. Looming above the shipping lane is a heavy, brutalist steel toll gantry casting a long, unyielding shadow across the water and the ship's deck. Restrained teal-and-amber palette, crisp atmospheric depth, single strong practical light source from the gantry illuminating the weathered corrugated containers. Wide establishing composition, motion implied, deep industrial contrast, no people facing camera, premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-22T11:38:31+00:00",
+  "overlay": {
+    "kicker": "GLOBAL SHIPPING // RED SEA ROUTING",
+    "title": "THE STICKY SUEZ SURCHARGE",
+    "hook": "Red Sea transits return but your $91 surcharge remains",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.83,
+    "target": 4.5,
+    "clutter": 0.07,
+    "region_rgb": [
+      16,
+      32,
+      33
+    ],
+    "binding_rgb": [
+      19,
+      43,
+      45
+    ],
+    "title_lines": [
+      "THE STICKY SUEZ",
+      "SURCHARGE"
+    ],
+    "subject": 0.028,
+    "ink_subject": 0.013,
+    "spike": 0.089,
+    "generated_at": "2026-10-22T11:38:31+00:00"
+  }
+}
