@@ -1,0 +1,88 @@
+{
+  "slug": "kill-your-deposit-in-3-days",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Overhead flat-lay of a remodeling contract on a wooden kitchen table, focusing on the signature block.",
+      "caption": "Federal law guarantees a three-day cancellation window if the remodel contract is signed at your kitchen table.",
+      "title": "Remodel Deposit Cancellation Contract",
+      "bytes": 566211,
+      "sha256": "sha256:5ddfd9e345e40243b378b0da4a781dac"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of a thick printed remodeling contract resting asymmetrically on a weathered wooden kitchen table. Asymmetric top-down 90-degree view, even diffused daylight illuminating the matte paper stock. The document is slightly out of alignment to look handled, with the bottom page revealing a bold cancellation notice block next to a blank signature line. Muted paper tones, crisp focal plane, generous editorial negative space on the textured wooden surface, sophisticated color palette.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, printed lettering, people, hands, faces",
+  "rationale": "The story revolves entirely around a legal and contractual mechanism\u2014the physical contract, its signature line, and the location where it is signed. Document flatlay perfectly captures this regulatory turning point.",
+  "cue": "signed at the kitchen table",
+  "subject": "remodeling contract on a kitchen table",
+  "core_thesis": "The federal three-day cancellation window for remodeling deposits depends strictly on whether the contract was signed at home or in a showroom.",
+  "core_conflict": "Federal consumer protection versus binding showroom contract.",
+  "composition": "Asymmetric top-down 90-degree flat-lay",
+  "alt_text": "The 3-DAY Deposit Loophole. Overhead flat-lay of a remodeling contract on a wooden kitchen table, focusing on the signature",
+  "caption": "The 3-DAY Deposit Loophole: Your right to cancel a remodel depends on where you sign.",
+  "title": "The 3-DAY Deposit Loophole",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/kill-your-deposit-in-3-days/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 335612,
+  "sha256": "sha256:f2c0a7c786d1a5d1623d556a6893148b88a3f69021e3f4d4ef44f3ed735a1bd6",
+  "source_hash": "sha256:8731094e0787a8b0f4455a334a9f9af4",
+  "source_chars": 6132,
+  "task_id": "594bebf93f4340424cf69cdb0d3044b0",
+  "credits": 5.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/594bebf93f4340424cf69cdb0d3044b0_1792696241149.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of a thick printed remodeling contract resting asymmetrically on a weathered wooden kitchen table. Asymmetric top-down 90-degree view, even diffused daylight illuminating the matte paper stock. The document is slightly out of alignment to look handled, with the bottom page revealing a bold cancellation notice block next to a blank signature line. Muted paper tones, crisp focal plane, generous editorial negative space on the textured wooden surface, sophisticated color palette.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-22T19:10:44+00:00",
+  "overlay": {
+    "kicker": "REMODEL CONTRACTS // CONSUMER RIGHTS",
+    "title": "THE 3-DAY DEPOSIT LOOPHOLE",
+    "hook": "Your right to cancel a remodel depends on where you sign",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.03,
+    "target": 5.5,
+    "clutter": 0.285,
+    "region_rgb": [
+      108,
+      99,
+      89
+    ],
+    "binding_rgb": [
+      172,
+      169,
+      160
+    ],
+    "title_lines": [
+      "THE 3-DAY DEPOSIT",
+      "LOOPHOLE"
+    ],
+    "subject": 0.273,
+    "ink_subject": 0.173,
+    "spike": 0.672,
+    "generated_at": "2026-10-22T19:10:44+00:00"
+  }
+}

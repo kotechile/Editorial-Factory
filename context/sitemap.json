@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T18:42:13Z",
+  "updated_at": "2026-10-22T19:10:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2916,6 +2916,24 @@
       "date": "2026-10-22",
       "public": true,
       "url": "https://aichieve.net/duet-bills-your-five-hour-window/"
+    },
+    {
+      "slug": "2026-10-22_kill-your-deposit-in-3-days",
+      "title": "3 Days to Kill Your Deposit",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-22",
+      "public": false
     },
     {
       "slug": "2026-10-22_one-request-five-actions",
