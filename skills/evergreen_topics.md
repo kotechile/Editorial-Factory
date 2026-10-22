@@ -422,6 +422,29 @@ is the working substitute. A price-class comparison does not need one vendor per
 **Hosts probed live 2026-10-21, building a fleet-sizing / pick-station-saturation brief (the `warehouse_automation_robotics_capex` evergreen).**
 Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` again — a simulation study's **Table 10 flattens to one text run** ("1K-S-N 44 82 91 97 97 … 10K-M-R 21 41 59 73 83"), so a per-scenario throughput curve is citable row by row, and its prose carries the unit-share figure ("Replenishment operations only consume 20.29 % out of the overall time consumed by the robots"); `mmh.com` article pages (a deployment announcement with "designed to support more than 4,500 lines per hour through 24 picking stations" and a robot count at the site, and the January **2026 Automation Study** with its buyer-priority and adoption percentages as text — the survey is the cheapest measured anchor for what buyers rank); `locusrobotics.com/blog/…` (a vendor ratio page: "a single associate working alongside four Locus robots … 300-400 units per hour"). Fetches but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreachable), `nfpa.org/codes-and-standards` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog guesses (404 shell). Unreachable to the verifier on this beat: `mir-robots.com/products/…`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) — so a facility-readiness angle (sprinkler clearance, charger circuits, floor flatness) cannot get past `osha.gov`/`ecfr.gov` code rows, and was dropped at 7.4 rather than written on general-industry statute. **A four-robot ratio and a 187.5-lines-an-hour design target are not each other's check:** keep the noun attached (per associate vs per station), and treat the vendor's manual baseline ("around 40-60 UPH according to industry data") as a second-hand claim, never as a measured one.
 
+**Hosts probed live 2026-10-22, building a remodel-deposit / cancellation-window brief (the `home_ops_execution` evergreen).**
+Carries the figure as plain text and fetches first try: `california.public.law` (**the slug keeps the decimal point —
+`/codes/ca_bus_and_prof_code_section_7159.5`; the underscore form `…_7159_5` is a hard HTTP 404**, which is how a brief's
+first gate run failed), where B&P § 7159.5 prints the downpayment cap ("the downpayment shall not exceed one thousand
+dollars ($1,000) or 10 percent of the contract amount, whichever amount is less") beside (a)(5)'s bar on paying past
+"the value of the work performed or material delivered", and Civil Code § 1689.6 prints the home-solicitation
+cancellation right — **but only in the "third business day" / "fifth business day" word forms, so no cell can lead on a
+digit-free `three business days`** and a digit cell collides with the subsection numbering (skipped, cited in prose);
+`dllr.state.md.us/license/mhic/mhicpre1978.shtml` ("one third of the total contract price at the time of signing" — the
+spelled-out "one third" makes a clean digit-free row); `labor.maryland.gov/license/mhic/mhiccontracts.shtml` (the
+Door-to-Door notice's "fifth business day … or … seventh day if the buyer is at least 65" and the financed-contract
+"within three business days after the date you sign it", plus the 1/3 deposit sentence whose only citable token is
+unusable — `1/3` tokenises to 1 and 3); `malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter142A/Section2` ("in an
+amount in excess of one thousand dollars shall be in writing", and the deposit "greater of one-third … or the actual
+cost of any materials or equipment of a special order"); `ecfr.gov` 16 CFR Part 429 ($25 at the residence / $130
+elsewhere, the fixed-retail-location carve-out, the 10-point bold cancellation notice, "within TEN BUSINESS DAYS", and a
+timeline panel reading "No changes found for this content after 1/03/2017" — a free as-of anchor). **Matcher traps on
+this beat:** the eCFR banner date `10/20/2026` catches any cell leading on `10`, so the refund row must be written
+digit-free (`ten business days — …`); a cell leading on `3` evidences on the statute's `( 3 )` subsection marker; and
+`$25`/`$130` both land on the definition sentence, so they are one row, not two. Unreachable to the verifier: `ftc.gov`
+(both the consumer Cooling-Off page and the business-guidance page), `mass.gov` info pages, and guessed CSLB consumer-guide
+paths (`/Consumers/Consumer_Guides/Home_Improvement_Contracts.aspx` answers a "Page Not Found" shell at HTTP 200).
+
 **Hosts probed live 2026-10-22, building a pick-face days-of-supply brief (the `supply_chain` evergreen).**
 Carries the figure as plain text and fetches first try: `mmh.com/article/<slug>` (trade-press article pages, 13–24 KB —
 `best_practices_slot_leadership` holds the pick-versus-replenishment trade as one sentence, "A pick location with one
