@@ -1,0 +1,90 @@
+{
+  "slug": "review-minute-costs-66-dollars",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A massive modular block dwarfing a thin connector chip in a matte clay mechanical assembly.",
+      "caption": "The token line on an AI bill is falling, but the human review line is not.",
+      "title": "ai-review-cost-imbalance-clay",
+      "bytes": 1938410,
+      "sha256": "sha256:98775aee8770ee089cc9df27cec8fef3"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a small mechanical assembly, asymmetric off-centre framing. A massive, heavy modular block representing human review labor sits squarely on weathered concrete, while a tiny, thin connector chip representing AI token cost is attached to its lower base, highlighting the stark contrast in scale. Matte surfaces with visible moulding seams and deep contact shadows. One directional key light raking from the side to throw a long, heavy shadow across the brushed steel surface. Muted modern editorial palette, no bare shapes, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, plain spheres, wedges",
+  "rationale": "The news is structural and abstract\u2014the reordering of a cost stack where one layer is drastically heavier than the other. A clay render physically models this economic imbalance as a mechanical assembly.",
+  "cue": "a review ceiling in minutes",
+  "subject": "a massive modular block dwarfing a thin connector chip",
+  "core_thesis": "A review minute is priced by the reviewer's wage, not the model's rate card, deciding whether automation beats the manual process.",
+  "core_conflict": "Cheap AI token costs vs expensive human labor review rates",
+  "composition": "asymmetric off-centre framing",
+  "alt_text": "Pricing The Review Minute. A massive modular block dwarfing a thin connector chip in a matte clay mechanical assembly.",
+  "caption": "Pricing The Review Minute: Cheap AI tokens lose to expensive human review time.",
+  "title": "Pricing The Review Minute",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/review-minute-costs-66-dollars/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1473292,
+  "sha256": "sha256:048b1c18a5af26b9e544678e508ebae3e4e1c7812e4b0e71288fae1e6b8ab183",
+  "source_hash": "sha256:b45547eb2f31ab787fd543f7fd014d50",
+  "source_chars": 5686,
+  "task_id": "e6860b2300db6685a20dbc5c35bdb17e",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d3da13b87509635222e0caba7b71ab56.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a small mechanical assembly, asymmetric off-centre framing. A massive, heavy modular block representing human review labor sits squarely on weathered concrete, while a tiny, thin connector chip representing AI token cost is attached to its lower base, highlighting the stark contrast in scale. Matte surfaces with visible moulding seams and deep contact shadows. One directional key light raking from the side to throw a long, heavy shadow across the brushed steel surface. Muted modern editorial palette, no bare shapes, no text.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-22T18:09:28+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // HIDDEN LABOR COSTS",
+    "title": "PRICING THE REVIEW MINUTE",
+    "hook": "Cheap AI tokens lose to expensive human review time",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.14,
+    "target": 4.5,
+    "clutter": 0.167,
+    "region_rgb": [
+      18,
+      27,
+      32
+    ],
+    "binding_rgb": [
+      22,
+      33,
+      39
+    ],
+    "title_lines": [
+      "PRICING THE",
+      "REVIEW MINUTE"
+    ],
+    "subject": 0.149,
+    "ink_subject": 0.112,
+    "spike": 0.294,
+    "generated_at": "2026-10-22T18:09:28+00:00"
+  }
+}

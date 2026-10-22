@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T17:57:21Z",
+  "updated_at": "2026-10-22T18:09:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2935,6 +2935,24 @@
       "date": "2026-10-22",
       "public": true,
       "url": "https://aichieve.net/one-request-five-actions/"
+    },
+    {
+      "slug": "2026-10-22_review-minute-costs-66-dollars",
+      "title": "Your 25-Minute Review Costs $66.67",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-22",
+      "public": false
     },
     {
       "slug": "2026-10-22_suez-returns-91-surcharge-doesnt",

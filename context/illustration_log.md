@@ -286,3 +286,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-22 | `your-350000-passport-isnt-europe` | expat_cross_border_relocation | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/your-350000-passport-isnt-europe/featured.jpg` |
 | 2026-10-22 | `your-61-point-growth-was-a-refill` | demand_sensing_advanced_sop | `long_lens_industry` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/your-61-point-growth-was-a-refill/featured.jpg` |
 | 2026-10-22 | `your-retrieval-misses-57` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-retrieval-misses-57/featured.png` |
+| 2026-10-22 | `review-minute-costs-66-dollars` | enterprise_ai_finops | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/review-minute-costs-66-dollars/featured.png` |

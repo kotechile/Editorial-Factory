@@ -171,6 +171,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-22 | expat_cross_border_relocation | your-350000-passport-isnt-europe | Your $350,000 Passport Isn't Europe | https://pressflow.aichieve.net/published/2026-10-22_your-350000-passport-isnt-europe.md | reader site only |
 | 2026-10-22 | demand_sensing_advanced_sop | your-61-point-growth-was-a-refill | Your 6.1-Point Growth Isn't Demand | https://pressflow.aichieve.net/published/2026-10-22_your-61-point-growth-was-a-refill.md | reader site only |
 | 2026-10-22 | agentic_ai | your-retrieval-misses-57 | Your Retrieval Fails at 5.7% | https://pressflow.aichieve.net/published/2026-10-22_your-retrieval-misses-57.md | reader site only |
+| 2026-10-22 | enterprise_ai_finops | review-minute-costs-66-dollars | Your 25-Minute Review Costs $66.67 | https://pressflow.aichieve.net/published/2026-10-22_review-minute-costs-66-dollars.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
