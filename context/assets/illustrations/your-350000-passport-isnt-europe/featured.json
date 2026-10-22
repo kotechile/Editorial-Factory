@@ -1,6 +1,6 @@
 {
   "slug": "your-350000-passport-isnt-europe",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,11 @@
       "title": "Cash vs Queue",
       "bytes": 852445,
       "sha256": "sha256:3bd87e2cc592dfab4f177f7f80c4a40f"
+    },
+    {
+      "revision": 3,
+      "note": "alt completed after the director's alt came back cut mid-phrase",
+      "alt_text": "The New Passport Market. A gold-foil state seal pressed into crisp banknotes, beside dust-covered archival dossiers bound in twine."
     }
   ],
   "style": "editorial_macro",
@@ -27,8 +32,8 @@
   "core_thesis": "Argentina's immediate cash-for-passport program drastically contrasts with Portugal's decade-long administrative labour queue, representing two entirely different relocation assets.",
   "core_conflict": "Instant financial transaction versus long-term bureaucratic time investment.",
   "composition": "split-screen diptych with left-right scenario contrast",
-  "alt_text": "The New Passport Market. Split screen showing a gold foil seal on crisp currency next to weathered, dust-covered archival",
-  "caption": "The New Passport Market: Cash buys an Argentine passport but Europe costs a decade.",
+  "alt_text": "The New Passport Market. A gold-foil state seal pressed into crisp banknotes, beside dust-covered archival dossiers bound in twine.",
+  "caption": "The New Passport Market: cash buys an Argentine passport; Portugal's route costs a decade of residence.",
   "title": "The New Passport Market",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,

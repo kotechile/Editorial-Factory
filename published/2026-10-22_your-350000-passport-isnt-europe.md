@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-350000-passport-isnt-europe/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "The New Passport Market. Split screen showing a gold foil seal on crisp currency next to weathered, dust-covered archival"
-image_caption: "The New Passport Market: Cash buys an Argentine passport but Europe costs a decade."
+image_alt: "The New Passport Market. A gold-foil state seal pressed into crisp banknotes, beside dust-covered archival dossiers bound in twine."
+image_caption: "The New Passport Market: cash buys an Argentine passport; Portugal's route costs a decade of residence."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
