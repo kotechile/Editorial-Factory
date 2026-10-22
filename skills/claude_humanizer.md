@@ -48,9 +48,11 @@ Introduce supporting context using standardized H2 headers (`## `).
 - Prefer short, single-syllable, visual words that paint a clear picture.
 - Translate domain jargon into plain English or add an immediate short parenthetical gloss.
 
-### 3.6 Paragraph Discipline
-- Keep paragraphs exceptionally brief: **1 to 3 sentences maximum**.
-- One idea per paragraph. If a thought has two parts, split it into two crisp paragraphs.
+### 3.6 Paragraph Discipline & Sentence Rhythm
+- Keep paragraphs brief: **1 to 3 sentences maximum**.
+- One idea per paragraph — but a paragraph may carry that idea across two sentences. Do **not** split a single thought into two paragraphs.
+- Write **connected sentences, ~14-22 words with real variation**. One sentence may hold a cause and its consequence ("X, so Y"; "X: Y").
+- At most **one** sentence of 8 words or fewer per paragraph, and never a run of short declaratives. Never shorten a sentence to move the Flesch score — the lever is plain words, and a choppy body scores the same while reading worse.
 
 ### 3.7 The Exit ("Go Deeper")
 - Conclude cleanly with designated **Go deeper:** references or internal links (`<!-- internal-links -->` and `## Sources`) for readers who want extra nuance without cluttering the main text.

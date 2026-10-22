@@ -25,6 +25,13 @@ import pathlib
 TARGET = 60.0  # advisory: aim here for "plain English" (broader audience)
 FLOOR = 50.0   # hard-fail below this (difficult / specialist reading level)
 
+# Sentence-rhythm floor (advisory). A body of short declaratives scores well on Flesch and reads
+# like a list of one-liners; these thresholds are what the Loop 3 retry prompt uses to ask for
+# joined sentences instead of more splitting.
+RHYTHM_MEAN_MIN = 14.5    # mean words per sentence, below which the body reads as choppy
+RHYTHM_SHORT_MAX = 20.0   # % of sentences at RHYTHM_SHORT_WORDS or fewer
+RHYTHM_SHORT_WORDS = 8
+
 # Acronyms that are universally understood and do not need a definition for a general reader.
 # Everything else, if left undefined at first use, is a FAIL. This is what makes the gate
 # topic-agnostic: any new domain acronym must be spelled out once.
@@ -186,6 +193,24 @@ def check_smart_brevity(raw_text, body_text):
     return warns
 
 
+def rhythm(text):
+    """Sentence rhythm: mean length and the share of very short sentences.
+
+    Advisory only — this is the *other* direction of the readability gate. Flesch rewards shorter
+    sentences, so a pipeline that chases the score ratchets toward staccato and every mechanical
+    check still passes (2026-10-22 audit: published corpus at 14.0 words/sentence with ~18% of
+    sentences at 8 words or fewer, drafts already that short before Loop 3 touched them). The
+    remedy the model is given is to JOIN adjacent short sentences, never to pad them longer.
+    """
+    sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    lens = [len(s.split()) for s in sents]
+    if not lens:
+        return None, None
+    mean = round(sum(lens) / len(lens), 1)
+    short = round(100.0 * sum(1 for x in lens if x <= RHYTHM_SHORT_WORDS) / len(lens), 1)
+    return mean, short
+
+
 def measure(path, target=TARGET, floor=FLOOR):
     """Return a structured diagnosis of the article's accessibility. Safe to call from other
     scripts (the Loop 3 humanizers) so they can read the exact FAIL reasons and retry."""
@@ -214,6 +239,15 @@ def measure(path, target=TARGET, floor=FLOOR):
     sb_warns = check_smart_brevity(raw, text)
     warns.extend(sb_warns)
 
+    # Sentence rhythm (advisory): the direction Flesch alone never measures.
+    mean_len, short_pct = rhythm(text)
+    if mean_len is not None and mean_len < RHYTHM_MEAN_MIN:
+        warns.append(f"rhythm: sentences average {mean_len} words (floor {RHYTHM_MEAN_MIN}) — "
+                     f"join adjacent short sentences")
+    if short_pct is not None and short_pct > RHYTHM_SHORT_MAX:
+        warns.append(f"rhythm: {short_pct}% of sentences are {RHYTHM_SHORT_WORDS} words or fewer "
+                     f"(cap {RHYTHM_SHORT_MAX}%) — the body reads as a run of one-liners")
+
     # Keyword-stuffing guard (topic-agnostic: reads the article's own primary_keyword).
     kw, kw_count = _keyword_density(path, text)
     if kw:
@@ -231,6 +265,7 @@ def measure(path, target=TARGET, floor=FLOOR):
         "file": pathlib.Path(path).name,
         "flesch": score, "target": target, "floor": floor,
         "words": w, "sents": s, "long_word": long_rate,
+        "sentence_mean": mean_len, "short_sent_pct": short_pct,
         "undefined_acronyms": undef, "jargon": jarg,
         "primary_keyword": kw, "keyword_count": kw_count,
         "warnings": warns, "fails": fails,

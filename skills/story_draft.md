@@ -54,9 +54,13 @@ The **TOC is render-time only** — the site derives it from the section heading
   `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. A draft that
   already clears the Flesch floor (~50) and carries a first-person observer cue in every interpreting
   section converges the frontier rewrite in ~2 attempts; a dense draft burns 4–5 attempts and then needs
-  a hand-tune anyway (`skills/claude_humanizer.md` §7–§8). Average sentence length carries the largest
-  Flesch coefficient, so split long sentences and swap long technical words for short everyday ones **at
-  drafting time** — never by dropping a figure, a name or a citation.
+  a hand-tune anyway (`skills/claude_humanizer.md` §7–§8). **Readability is a WORD-CHOICE lever, not a
+  sentence-length one: swap long technical words for everyday ones at drafting time — do NOT split
+  sentences to move the Flesch score.** Splitting buys a couple of points and costs the rhythm: the
+  2026-10-22 audit found drafts arriving at a 14-word average with a fifth of sentences at eight words
+  or fewer, so every pass after it inherited staccato. Write connected sentences of roughly 14–22 words
+  with deliberate variation, let one sentence carry a cause and its consequence, and keep at most one
+  eight-word-or-fewer sentence per paragraph. Never drop a figure, a name or a citation to fit that.
 - **The title's content words must appear verbatim (substring) in the first ~600 words — inflections do not count (learned 2026-10-14).** `headline_score.lead_delivery`/the honesty rule checks each title content word as a plain substring of the opening: a title reading "Why Your Card **Serves** 1.6" scores 100 STRONG standalone but reports `lead_ok: False` when the lead says "**served** about 1.6 requests a second", and the pre-publish gate will then re-cut the headline. Write the lead in the title's own inflection ("one card **serves** about 1.6 requests a second") or check with `python3 -c "import sys,headline_score as hs; print(hs.score('<title>', body=open('<draft>').read()))"` before the accessibility gate. Up to `max(1, len(content_words)//3)` of them may be absent, so one missing word clears — every additional one re-cuts the title.
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
   **A draft must emit `<!-- tldr -->` itself (learned 2026-10-14).** The marker set is gated on the *draft*

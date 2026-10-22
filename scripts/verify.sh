@@ -168,6 +168,14 @@ if ! python3 "$ROOT/scripts/test_article_assets.py" >/dev/null 2>&1; then
   echo "FAIL: article-asset tests — detail:"; python3 "$ROOT/scripts/test_article_assets.py" 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.55b Readability gate contract (hard): the accessibility floor measures reader prose only, and
+#      its sentence-rhythm advisory (mean length / share of <=8-word sentences) must flag a staccato
+#      body, pass a connected one, and never hold a publish. Without this the gate's own thresholds
+#      are unverified, and a future edit can quietly restore "split long sentences" as the remedy.
+if ! python3 "$ROOT/scripts/test_check_accessibility.py" >/dev/null 2>&1; then
+  echo "FAIL: readability gate tests — detail:"; python3 "$ROOT/scripts/test_check_accessibility.py" 2>&1 | tail -8; FAIL=1
+fi
+
 # 8.56 Featured image (hard, hermetic): the header image is art-directed per article
 #      (scripts/illustration_creator.py) — treatment chosen from the text, never repeated
 #      back-to-back, no legible text or brand marks in the prompt, alt/caption within budget — and

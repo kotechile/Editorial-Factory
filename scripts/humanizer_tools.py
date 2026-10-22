@@ -200,7 +200,21 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     if diag["undefined_acronyms"]:
         tip.append("Spell out each listed acronym in full at its first use (e.g. 'Full Name (ACR)').")
     if diag["flesch"] is not None and diag["flesch"] < diag["target"]:
-        tip.append("Raise readability: split long sentences, prefer plain verbs over noun phrases, cut filler clauses.")
+        # Readability is a WORD-CHOICE fix. This tip used to read "split long sentences", which is
+        # how the pipeline manufactured its own staccato: it fires on every attempt landing between
+        # floor and target (19 of the last 24 finals sat at 50-60), and splitting raises the score
+        # with no gain in comprehension. Never ask for a shorter sentence here.
+        tip.append("Raise readability by SWAPPING WORDS, not by cutting sentences: replace long or "
+                   "technical terms with everyday ones (\"set up\" not \"implementation\", \"build\" not "
+                   "\"architect\", \"slows down\" not \"degrades throughput\") and reduce a long proper-noun "
+                   "string to one full mention. Do NOT shorten or split sentences to move this score — "
+                   "the body is written in connected 14-22 word sentences, and short one-liners score "
+                   "the same while reading worse. Where two adjacent sentences are short, join them.")
+    if any("rhythm:" in w for w in diag.get("warnings", [])):
+        tip.append("RHYTHM: the body reads as a run of short declaratives. Join neighbouring short "
+                   "sentences — most naturally by turning a full stop into a colon, a semicolon or a "
+                   "comma plus 'so'/'because' — so a claim and its consequence share one sentence. "
+                   "Do not lengthen a sentence by padding it, and do not delete a fact to do this.")
     if diag["flesch"] is not None and diag["flesch"] < diag["floor"]:
         tip.append("The text is still too dense. READABILITY comes from plain WORDS, not short sentences: "
                    "swap long/technical terms for everyday ones (\"set up\" not \"implementation\", \"build\" not "
