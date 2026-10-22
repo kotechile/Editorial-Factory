@@ -198,7 +198,7 @@ fi
 #      2026-10-10). Two things are checked: the connector still calls the gate (silently un-wiring
 #      it would restore "evaluate inside the run, publish anyway"), and the gate's own suite passes.
 #      These suites are pytest-style, so they run with -m (the standalone ones run directly).
-for suite in scripts/test_publish_gate.py scripts/test_illustration_overlay.py scripts/test_check_accessibility.py; do
+for suite in scripts/test_publish_gate.py scripts/test_vibe_lexicon.py scripts/test_illustration_overlay.py scripts/test_check_accessibility.py; do
   if ! python3 -m pytest "$ROOT/$suite" -q >/dev/null 2>&1; then
     echo "FAIL: $suite — detail:"
     python3 -m pytest "$ROOT/$suite" -q 2>&1 | tail -8
@@ -208,6 +208,44 @@ done
 if ! grep -q "import publish_gate" "$ROOT/scripts/wp_draft.py" \
    || ! grep -q "publish_gate.gate(" "$ROOT/scripts/wp_draft.py"; then
   echo "FAIL: scripts/wp_draft.py no longer gates an article before publishing it (scripts/publish_gate.py)"
+  FAIL=1
+fi
+
+# 8.58 The Vibe lexicon is data the gate reads, so it is checked here like any other wiring: the
+#      publish gate still imports it, the file parses and carries its rules, the three humanizer
+#      prompts still append the rendered contract, and — when the canonical spec is on this host —
+#      the vendored copy is byte-identical. An edit to one copy and not the other is how the
+#      contract silently becomes two contracts; since vibe_lexicon now fails closed, a missing or
+#      partial file would also hold every article at the push.
+VIBE_LEX="$ROOT/context/vibe/lexicon.json"
+if ! grep -q "import vibe_lexicon" "$ROOT/scripts/publish_gate.py" \
+   || ! grep -q "vibe_lexicon.check(" "$ROOT/scripts/publish_gate.py"; then
+  echo "FAIL: scripts/publish_gate.py no longer calls vibe_lexicon (the copy contract is unenforced at the push)"
+  FAIL=1
+fi
+for h in scripts/humanize_one.py scripts/humanize_loop3.py scripts/humanize_path.py; do
+  if ! grep -q "ht.VIBE_COPY_RULES" "$ROOT/$h"; then
+    echo "FAIL: $h no longer appends the copy contract (ht.VIBE_COPY_RULES)"
+    FAIL=1
+  fi
+done
+if [ ! -f "$VIBE_LEX" ]; then
+  echo "FAIL: missing context/vibe/lexicon.json — every article would be held as unscorable"
+  FAIL=1
+elif ! python3 - "$VIBE_LEX" <<'PY'
+import json, sys
+lex = json.load(open(sys.argv[1]))
+missing = [k for k in ("banned", "openers", "enforced_from") if not lex.get(k)]
+if missing:
+    print(f"FAIL: context/vibe/lexicon.json is incomplete (no {', '.join(missing)})")
+    sys.exit(1)
+PY
+then
+  FAIL=1
+fi
+VIBE_CANON="${VIBE_CANONICAL:-/root/vibe-marketing/lexicon.json}"
+if [ -f "$VIBE_CANON" ] && [ -f "$VIBE_LEX" ] && ! cmp -s "$VIBE_CANON" "$VIBE_LEX"; then
+  echo "FAIL: context/vibe/lexicon.json drifts from $VIBE_CANON — copy the spec, never edit the vendored data"
   FAIL=1
 fi
 # The vertical is part of the push, not an operator step afterwards: the destination CMS carries it

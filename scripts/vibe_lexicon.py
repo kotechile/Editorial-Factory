@@ -28,12 +28,12 @@ _DATE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 def _lexicon() -> dict:
     try:
         return json.loads(LEXICON_PATH.read_text())
-    except FileNotFoundError:
+    except (OSError, ValueError):
         return {}
 
 
 def enforced_from() -> str:
-    """The first artifact date the lexicon holds to. Missing lexicon => enforce nothing new."""
+    """The first artifact date the lexicon holds to. A missing lexicon enforces everything."""
     return _lexicon().get("enforced_from", "9999-12-31")
 
 
@@ -93,8 +93,13 @@ def check(text: str, *, path: pathlib.Path | str = "artifact.md") -> tuple[list[
     An artifact dated before `enforced_from` has every hit demoted to a note.
     """
     lex = _lexicon()
+    # Fail closed. A missing or half-written lexicon used to score nothing and pass everything, and
+    # publish_gate drops the notes — so a broken install published unvetted copy silently. An
+    # unscorable article is now a held article.
     if not lex:
-        return [], [f"vibe lexicon missing at {LEXICON_PATH}"]
+        return [f"vibe lexicon missing or unreadable at {LEXICON_PATH} — cannot score the copy, holding it"], []
+    if not lex.get("banned") or not lex.get("openers") or not lex.get("enforced_from"):
+        return [f"vibe lexicon at {LEXICON_PATH} is incomplete (needs banned, openers, enforced_from) — refusing to score copy against a partial rule set"], []
     body = _mask(text, lex.get("exceptions", []))
     date = artifact_date(path, text)
     grandfathered = bool(date and date < enforced_from())

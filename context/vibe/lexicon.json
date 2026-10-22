@@ -92,6 +92,7 @@
     "max_sentence_words": 32,
     "max_first_sentence_words": 28,
     "max_adjective_hits_per_page": 3,
-    "flesch_floor": 50
+    "flesch_floor": 50,
+    "flesch_enforced_by": "Editorial-Factory/scripts/check_accessibility.py scores article bodies; page copy is not scored (the front gate has no readability pass)"
   }
 }
