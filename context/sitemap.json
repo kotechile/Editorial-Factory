@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T12:46:29Z",
+  "updated_at": "2026-10-22T13:10:45Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2966,6 +2966,24 @@
         "At a glance"
       ],
       "target_persona": "cross_border_expat",
+      "date": "2026-10-22",
+      "public": false
+    },
+    {
+      "slug": "2026-10-22_your-61-point-growth-was-a-refill",
+      "title": "Your 6.1-Point Growth Isn't Demand",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-22",
       "public": false
     },
