@@ -87,8 +87,11 @@ would look green while nothing reached a front (verify.sh §8.5 greps for the se
    director's alt text is generated prose and can come back cut mid-phrase ("…a door edge against a dark"),
    which is a real accessibility defect no gate reads — the publish gate scores the article body, not the
    media record. Read `alt_text` back off the media id after the push; if it does not end on a sentence,
-   PATCH the media's `alt_text` with a complete sentence and update the sidecar to match, so the CMS and the
-   provenance record agree.
+   PATCH the media's `alt_text` with a complete sentence and update **all four records that carry it** —
+   the sidecar (`featured.json`), the artifact's `image_alt`, and the Supabase row's
+   `metadata.illustration.alt_text` and `metadata.wordpress.media_alt` (learned 2026-10-22: the row kept
+   the truncated string after the media was fixed, so the CMS and the provenance record disagreed), so the
+   CMS and the provenance record agree.
    Idempotent by content (an unchanged article reuses its image; `--force` regenerates), skippable
    with `--no-illustration` or `ILLUSTRATION_ENABLED=false`, and a failure never blocks the
    publish: `scripts/cron-wp-drafts.sh` re-runs it for artifacts still missing an image *before*
