@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T13:10:45Z",
+  "updated_at": "2026-10-22T17:47:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2914,7 +2914,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/duet-bills-your-five-hour-window/"
     },
     {
       "slug": "2026-10-22_one-request-five-actions",
@@ -2932,7 +2933,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/one-request-five-actions/"
     },
     {
       "slug": "2026-10-22_suez-returns-91-surcharge-doesnt",
@@ -2950,7 +2952,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/suez-returns-91-surcharge-doesnt/"
     },
     {
       "slug": "2026-10-22_your-350000-passport-isnt-europe",
@@ -2967,7 +2970,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-350000-passport-isnt-europe/"
     },
     {
       "slug": "2026-10-22_your-61-point-growth-was-a-refill",
@@ -2985,7 +2989,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-61-point-growth-was-a-refill/"
     },
     {
       "slug": "2026-10-22_your-agent-team-loses-28-points",
@@ -3003,7 +3008,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-team-loses-28-points/"
     },
     {
       "slug": "2026-10-22_your-remodel-loses-to-149-growth",
@@ -3020,6 +3026,25 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-22",
+      "public": true,
+      "url": "https://wellroost.com/your-remodel-loses-to-149-growth/"
+    },
+    {
+      "slug": "2026-10-22_your-retrieval-misses-57",
+      "title": "Your Retrieval Fails at 5.7%",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-10-22",
       "public": false
     }

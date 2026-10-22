@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:10:48+00:00",
+  "generated_at": "2026-10-22T14:16:25+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -368,6 +368,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-350000-passport-isnt-europe",
+      "title": "Your $350,000 Passport Isn't Europe",
+      "url": "https://giniloh.com/your-350000-passport-isnt-europe/",
+      "path": "/your-350000-passport-isnt-europe/",
+      "sites_live": {
+        "giniloh.com": "/your-350000-passport-isnt-europe/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Argentina will now sell you a passport for $350,000. That cash buys a new nationality, but it does not buy you a home in Europe.",
+      "modified": "2026-10-22T12:42:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1857,6 +1876,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-remodel-loses-to-149-growth",
+      "title": "Your Remodel Loses to 149% Growth",
+      "url": "https://wellroost.com/your-remodel-loses-to-149-growth/",
+      "path": "/your-remodel-loses-to-149-growth/",
+      "sites_live": {
+        "wellroost.com": "/your-remodel-loses-to-149-growth/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "The electrician wiring your kitchen and the one wiring a data center are the same person, and this fall, the data center is winning.",
+      "modified": "2026-10-22T12:08:50",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-upgrades-9-silent-reset",
       "title": "Your Upgrade's $9 Silent Reset",
       "url": "https://wellroost.com/your-upgrades-9-silent-reset/",
@@ -2698,6 +2740,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "duet-bills-your-five-hour-window",
+      "title": "Every Check Bills Your 5-Hour Window",
+      "url": "https://aichieve.net/duet-bills-your-five-hour-window/",
+      "path": "/duet-bills-your-five-hour-window/",
+      "sites_live": {
+        "aichieve.net": "/duet-bills-your-five-hour-window/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Anthropic shipped Claude Duet on 21 October, and finance teams should read the billing details twice. Every morning brief and background check drains the\u2026",
+      "modified": "2026-10-22T01:10:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "durable-execution-not-a-transaction",
       "title": "Durable Execution Is Not a Transaction: The Missing State in Agent Tool Contracts",
       "url": "https://aichieve.net/durable-execution-not-a-transaction/",
@@ -3480,6 +3545,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "one-request-five-actions",
+      "title": "One Request, Five Actions: Your 5x Blind Spot",
+      "url": "https://aichieve.net/one-request-five-actions/",
+      "path": "/one-request-five-actions/",
+      "sites_live": {
+        "aichieve.net": "/one-request-five-actions/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Salesforce's published guides price one customer request at a single action in one example and five in another.",
+      "modified": "2026-10-22T11:10:22",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "one-skill-too-many-green-test",
       "title": "270 Attacks: Your Green Tests Are Blind",
       "url": "https://aichieve.net/one-skill-too-many-green-test/",
@@ -4078,6 +4166,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "suez-returns-91-surcharge-doesnt",
+      "title": "Suez Returns. Your $91 Surcharge Doesn't.",
+      "url": "https://aichieve.net/suez-returns-91-surcharge-doesnt/",
+      "path": "/suez-returns-91-surcharge-doesnt/",
+      "sites_live": {
+        "aichieve.net": "/suez-returns-91-surcharge-doesnt/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Suez returns, and your bill doesn't fall with it. Carriers are moving services back through the Red Sea, with estimates that transits fully recover during\u2026",
+      "modified": "2026-10-22T11:38:39",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "tariff-cliff-already-priced-in",
       "title": "CFOs Are Pricing In the Tariff Cliff",
       "url": "https://aichieve.net/tariff-cliff-already-priced-in/",
@@ -4503,6 +4614,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-61-point-growth-was-a-refill",
+      "title": "Your 6.1-Point Growth Isn't Demand",
+      "url": "https://aichieve.net/your-61-point-growth-was-a-refill/",
+      "path": "/your-61-point-growth-was-a-refill/",
+      "sites_live": {
+        "aichieve.net": "/your-61-point-growth-was-a-refill/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Constellation Brands shipped 123.9 million cases of beer last quarter, a 5.5% jump. The volume distributors actually sold to stores fell 0.6%.",
+      "modified": "2026-10-22T13:18:03",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-68k-tokens-cost-every-step",
       "title": "Your 68K Tokens Cost Every Step",
       "url": "https://aichieve.net/your-68k-tokens-cost-every-step/",
@@ -4565,6 +4699,29 @@
       ],
       "excerpt": "Zenity Labs pulled a CRM (customer relationship management) database out of Salesforce Agentforce with zero clicks, no login and no stolen password.",
       "modified": "2026-10-19T11:10:15",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-agent-team-loses-28-points",
+      "title": "Your Agent Team Loses 28 Points: The 188x Bill",
+      "url": "https://aichieve.net/your-agent-team-loses-28-points/",
+      "path": "/your-agent-team-loses-28-points/",
+      "sites_live": {
+        "aichieve.net": "/your-agent-team-loses-28-points/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "An agent team loses 28 points against a single agent doing the exact same job. That same week, a separate test handed over a 188-fold bill for using a team\u2026",
+      "modified": "2026-10-22T10:39:28",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4892,6 +5049,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1119,
+      "slug": "your-61-point-growth-was-a-refill",
+      "title": "Your 6.1-Point Growth Isn&#8217;t Demand",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T13:18:03",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1114,
+      "slug": "suez-returns-91-surcharge-doesnt",
+      "title": "Suez Returns. Your $91 Surcharge Doesn&#8217;t.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T11:38:39",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1111,
+      "slug": "one-request-five-actions",
+      "title": "One Request, Five Actions: Your 5x Blind Spot",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T11:10:22",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1108,
+      "slug": "your-agent-team-loses-28-points",
+      "title": "Your Agent Team Loses 28 Points: The 188x Bill",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T10:39:28",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -6097,86 +6310,16 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 550,
-      "slug": "rack-power-density-ceiling-build-before-you-buy",
-      "title": "The 40 kW Line: Why the AI Rack Is a Building Project",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:43",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 539,
-      "slug": "inventory-carrying-cost-rate",
-      "title": "Inventory Carrying Cost Is 20\u201330% a Year, Not Your 7% Borrowing Rate",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:43",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 568,
-      "slug": "vendor-replacement-ai-ceiling",
-      "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just Won&#8217;t Run It",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:44",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 576,
-      "slug": "agent-tool-count-ceiling",
-      "title": "The Tool-List Budget: How Many Tools One Agent Can Hold",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:44",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 570,
-      "slug": "automation-payback-splits-by-sku-geometry",
-      "title": "Amazon Builds the Robots; Walmart Builds for What They Can&#8217;t Lift",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:44",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "aichieve.net",
       "kind": "article",
-      "id": 1105,
-      "slug": "duet-bills-your-five-hour-window",
-      "title": "Every Check Bills Your 5-Hour Window",
+      "id": 1117,
+      "slug": "your-350000-passport-isnt-europe",
+      "title": "Your $350,000 Passport Isn&#8217;t Europe",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T01:10:44",
+      "modified": "2026-10-22T12:42:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
