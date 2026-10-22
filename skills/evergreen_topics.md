@@ -326,6 +326,23 @@ the plainest statutory statement of the renewal-versus-addition split); `oregon.
 (ORS 308.146(1) — "103 percent of the property's assessed value from the prior year" — and ORS 308.153, new improvements
 at real market value); `california.public.law/codes/ca_rev_and_tax_code_section_<n>` (§ 2192's "12:01 a.m. on the first
 day of January"; § 70(a)'s definition of new construction).
+**Hosts probed live 2026-10-22, building an exclusion-versus-credit brief (the `expat_cross_border_relocation` evergreen).**
+Carries the figure as plain text and fetches first try: `govinfo.gov` U.S. Code HTML pages
+(`/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm`, and
+`…-subpartA-sec904.htm` for § 904) — **the working substitute for a `law.cornell.edu` statute row**, because Cornell's pages
+carry 40–150 KB of amendment-history notes whose stray numbers are the first occurrence of nearly every short token: a
+§ 904(c) row written `10 succeeding taxable years` evidenced on § 904(a)'s "10-percent owned foreign corporation" and a
+§ 911(e)(2) row written `6th taxable year` evidenced on the `(6)` subsection marker, while the same cells on govinfo land
+inside the operative sentence (`$80,000` → the exclusion-amount paragraph, a single-occurrence token); `irs.gov/instructions/i2555`
+(the 2025 Form 2555 instructions — "For 2025, the maximum exclusion amount has increased to $130,000" and the housing limit
+"$39,000 (30% of $130,000)" / "$106.85 per day", a rare enough token to lead on); `irs.gov/instructions/i1116` ("carry back
+1 year and then forward 10 years", and the `$300` / `$600` de minimis election whose own paragraph forfeits that year's
+carryover); `irs.gov/publications/p514` (the ten-year credit-versus-deduction window plus its 2014 amended-return example, a
+clean `2014`-led row). **`irs.gov/publications/p54` fetches but cannot carry a numeric row** — its body opens with
+disaster-extension notices dated 2023–2025, so any small token (`5 years`, `2024-1`) evidences on a notice; carry its
+no-double-benefit, coexistence, revocation and additional-child-credit sentences in prose and in `## Sources`, with the
+verbatims recorded in the `_evergreen_verified_brief.md`.
+
 **A statute's small integers collide with its own subsection numbering**: § 51's "2 percent" cap generates the token `2`
 and evidences on "Section 2 of Article XIIIA", so that claim was quoted in prose with the section cited in Sources
 instead of shipped as a row — the same class as the eCFR banner date. Lead a statute row on a figure the section states
