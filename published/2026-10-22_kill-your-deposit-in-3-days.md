@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/kill-your-deposit-in-3-days/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "The 3-DAY Deposit Loophole. Overhead flat-lay of a remodeling contract on a wooden kitchen table, focusing on the signature"
+image_alt: "The 3-DAY Deposit Loophole. Overhead flat-lay of a remodeling contract on a wooden kitchen table, its signature block and cancellation notice in plain view."
 image_caption: "The 3-DAY Deposit Loophole: Your right to cancel a remodel depends on where you sign."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
