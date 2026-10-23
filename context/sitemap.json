@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:13:21Z",
+  "updated_at": "2026-10-23T10:42:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3136,6 +3136,24 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-22",
+      "public": false
+    },
+    {
+      "slug": "2026-10-23_your-batterys-745-mw-cliff",
+      "title": "Your Battery's 745 MW Cliff",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-23",
       "public": false
     }
   ]

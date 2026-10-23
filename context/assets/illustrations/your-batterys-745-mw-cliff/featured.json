@@ -1,0 +1,88 @@
+{
+  "slug": "your-batterys-745-mw-cliff",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An illuminated house with a sleek wall-mounted home battery stands out against a dark, blacked-out neighborhood at night.",
+      "caption": "Home battery fleets delivered record grid support before the state's aggregator funding season abruptly ended.",
+      "title": "Home Battery Grid Record",
+      "bytes": 328467,
+      "sha256": "sha256:7984fb936c24e04611c1f629b0b11b84"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "35mm anamorphic wide architectural photograph at blue hour. Asymmetric off-centre composition with heavy editorial negative space on the left. A modern suburban house stands out on a completely dark residential street, its glass windows glowing with warm amber light during a neighborhood power outage. On the exterior textured stucco wall, a sleek, brushed-metal home battery unit emits a soft LED status ring. Deep blue ambient light, crisp atmospheric depth, restrained teal-and-amber palette, long-exposure calm with no moving figures. High-contrast, premium editorial cover standard.",
+  "negative_prompt": "text, typography, watermark, garbled letters, logos, labels",
+  "rationale": "The architectural_night treatment perfectly captures the reality of home batteries discharging during a grid event or outage. Showing one illuminated home against a dark neighborhood visually represents the capacity contribution while people sleep.",
+  "cue": "Your Battery's 745 MW Cliff",
+  "subject": "an illuminated suburban house with a glowing wall-mounted home battery during a neighborhood blackout",
+  "core_thesis": "California home batteries delivered a record 745 MW to the grid, but the state program paying for this capacity ends on October 31 with no future funding secured.",
+  "core_conflict": "Record physical hardware performance versus an abrupt financial funding cliff",
+  "composition": "asymmetric off-centre composition with heavy negative space",
+  "alt_text": "The 745 MW Battery Cliff. An illuminated house with a sleek wall-mounted home battery stands out against a dark, blacked-out",
+  "caption": "The 745 MW Battery Cliff: Record home battery pools face a state funding cliff.",
+  "title": "The 745 MW Battery Cliff",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-batterys-745-mw-cliff/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 185579,
+  "sha256": "sha256:58c2910a038a3334c3d380bc8abdf8355053d333b900f7c904e0b0d24b10d987",
+  "source_hash": "sha256:92d59bfe823a9b15eb58717caf48bcbb",
+  "source_chars": 6188,
+  "task_id": "5ed02a78e54dddc60512f5a81f809107",
+  "credits": 5.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/5ed02a78e54dddc60512f5a81f809107_1792752106577.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "35mm anamorphic wide architectural photograph at blue hour. Asymmetric off-centre composition with heavy editorial negative space on the left. A modern suburban house stands out on a completely dark residential street, its glass windows glowing with warm amber light during a neighborhood power outage. On the exterior textured stucco wall, a sleek, brushed-metal home battery unit emits a soft LED status ring. Deep blue ambient light, crisp atmospheric depth, restrained teal-and-amber palette, long-exposure calm with no moving figures. High-contrast, premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-23T10:41:48+00:00",
+  "overlay": {
+    "kicker": "HOME BATTERIES // FUNDING CLIFF",
+    "title": "THE 745 MW BATTERY CLIFF",
+    "hook": "Record home battery pools face a state funding cliff",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.29,
+    "target": 4.5,
+    "clutter": 0.11,
+    "region_rgb": [
+      23,
+      35,
+      38
+    ],
+    "binding_rgb": [
+      20,
+      53,
+      60
+    ],
+    "title_lines": [
+      "THE 745 MW",
+      "BATTERY CLIFF"
+    ],
+    "subject": 0.025,
+    "ink_subject": 0.01,
+    "spike": 0.083,
+    "generated_at": "2026-10-23T10:41:48+00:00"
+  }
+}
