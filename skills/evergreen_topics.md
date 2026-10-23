@@ -492,6 +492,30 @@ carrying a gate row.
 
 **Hosts probed live 2026-10-23, building a certificate-cost / payback brief (the `career_velocity_equity_engineering` evergreen — the beat two earlier runs refused).** Carries the figure as plain text and fetches first try: `cloud.google.com/learn/certification/<slug>` (the exam block as one sentence — "Standard exam information Length: 2 hours Registration fee: $125 … Validity period: 3 years … Renewal exam information Length: 1 hour Registration fee: $75", plus "Recommended experience: 6+ months hands on experience with Google Cloud"); `coursera.org/courseraplus` (the whole plan table as text: "$59 /month … or $399 /year", individual courses "$49 – $79 /month"); `coursera.org/professional-certificates/<slug>` (**the course cards carry per-course hours** — "Course 3, 28 hours" — beside a "3 months at 10 hours a week" design, a programme total in months rather than hours, the "75% of certificate graduates report a positive career outcome" survey line and its 2022 footnote, and the CompTIA A+ preparation sentence); and `onetonline.org/link/summary/<SOC>` for every wage anchor. **Two traps this beat is built on.** (1) *A vendor's own product menu can own the first occurrence of a small fee*: `125` first appears in Google's nav as "transcription across 125 languages" and `99` as "99.999% availability", so a `$125`- or `$99`-led row's evidence window reads as navigation. Lead the Google row on `$75` (the renewal block, which lands cleanly) and carry the exam fee and validity period in prose, verbatim, under that row. (2) *A per-hour figure times a count is a recompute trap for Loop 3, not just a derived percentage*: the rewrite priced "two hours in the chair" at the **systems-administrator** median while calling it the help-desk one ($95 against a true $59), and restated $75 ÷ 3 as the whole cash cost of a $125-plus-renewal credential. Recompute every hours × wage and every per-term amortisation in the final from its two cited endpoints — the digits all being correct is exactly what lets a wrong product through. Also worth knowing: the payback angle was refused on 2026-10-09 and 2026-10-16 because it would have rested on a "certified workers earn X% more" premium that no measured primary states. It clears the floor honestly when the *benefit* leg is a measured occupational gap between two O*NET medians and the only vendor claims are prices and hours — do not resurrect the premium row to make the arithmetic easy.
 
+**Hosts probed live 2026-10-23, building a fridge-efficiency-payback brief (the `consumer_asset_repair_replace_tco` evergreen).**
+Carries the figure as plain text and fetches first try: `energystar.gov/products/refrigerators` (7.6 KB — the whole
+program page as prose: "you can save about $150 over the 12-year lifetime of the product", "an older unit draws about
+20% more energy than a model that has earned the ENERGY STAR", "about 9 percent more energy efficient than models that
+meet the federal minimum", the "$95 per year to run" line for 15-year-old units, the retailer pickup sentence and the
+`Rebate Finder` "our partners sponsor rebates" line — one page can carry four or five honest rows);
+`eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php` (the 2025 class table *and* the state
+spread, "17.30¢ per kWh" residential against 13.63¢ all-customer, "35.72¢ per kWh in Hawaii to 8.20¢ per kWh in North
+Dakota"); `onetonline.org/link/summary/49-9031.00` (home appliance repairers, "Median wages (2025) $24.51 hourly,
+$50,990 annual" — the labour anchor for any repair-cost beat, and the same page's sample job titles license the phrase
+"appliance repair technician"); and `ecfr.gov` 10 CFR 430.32 (96 KB, the class-3 ceiling as text — "Refrigerator-freezers—
+automatic defrost with top-mounted freezer without an automatic icemaker 8.07AV + 233.7" — plus the sentence fixing
+current standards at "on or after September 15, 2014, and before the 2029/2030 compliance dates depending on product
+class", and a banner that prints "up to date as of 10/21/2026"). **Matcher traps on this beat:** a cell leading on
+`20%` evidences on the *coolers* sentence two paragraphs earlier ("ENERGY STAR certified coolers are up to 20% more
+efficient"), so the old-vs-certified claim must ride under a row that already verifies; and a cell leading on the
+compliance date `January 31, 2029` lands in the eCFR's own revision-history block, so date a standards row from the
+prose sentence instead. **A program page can contradict itself across sentences and the arithmetic is what settles
+it:** "$95 per year to run" read as a premium would require a 2,745 kWh refrigerator while the same page's own 20%
+and $150/12-year lines imply a ~549 kWh unit — so the total-cost reading is the coherent one and must be written as a
+FLAGGED reading rather than presented as the page's own statement. And an efficiency row whose parenthetical says the
+badge is worth "about a tenth" of running cost should be recomputed from its own two figures ($12.50 ÷ $74.63 = 16.7%,
+a sixth) — the derived-ratio class no gate reads.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`

@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/why-your-fridge-upgrade-pays-12-50/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Fridge Replacement Math. A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit"
+image_alt: "Fridge Replacement Math. A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit garage."
 image_caption: "Fridge Replacement Math: Why power savings alone cannot justify buying a new fridge."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -71,15 +71,6 @@ Also, the program's page asks owners to hold a fridge at an ambient temperature 
 
 None of these government pages supply an actual repair price, leaving the most critical number blank. That final repair quote belongs entirely to you, and it ultimately decides the question.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade" -> /pi-5-price-jump-older-kit-wins/ [same site (giniloh.com); topical overlap: breaks, upgrade] Link "Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade" in the section where the article touches breaks, upgrade. -->
-## Related reading
-
-- [Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade](/pi-5-price-jump-older-kit-wins/)
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -91,6 +82,15 @@ None of these government pages supply an actual repair price, leaving the most c
   - **The haul-away:** Stores that collect the old unit fold disposal costs into the deal, which changes the true cost of replacing the machine.
   - **The rebate channel:** Partner-sponsored rebates can match the entire twelve-year power saving in a single upfront payment.
 - **The Catch:** The published $95 running cost never clarifies exactly what it measures, local state power rates can swing the actual saving by a factor of four, and the real repair quote appears in no published source.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade" -> /pi-5-price-jump-older-kit-wins/ [same site (giniloh.com); topical overlap: breaks, upgrade] Link "Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade" in the section where the article touches breaks, upgrade. -->
+## Related reading
+
+- [Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade](/pi-5-price-jump-older-kit-wins/)
+<!-- internal-links:end -->
 
 ## Sources
 [1] ENERGY STAR, "Refrigerators" — https://www.energystar.gov/products/refrigerators

@@ -9,6 +9,15 @@
       "title": "Fridge-Efficiency-Repair-Economics",
       "bytes": 310970,
       "sha256": "sha256:679d0fe6b520b2fe09773f3f622b005e"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Fridge Replacement Math. A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit garage.",
+      "caption": "Fridge Replacement Math: Why power savings alone cannot justify buying a new fridge.",
+      "title": "Fridge Replacement Math",
+      "bytes": 0,
+      "sha256": "sha256:6e86792e5c034b72",
+      "note": "alt-text repair only, same image bytes"
     }
   ],
   "style": "cinematic_still",
@@ -27,7 +36,7 @@
   "core_thesis": "The efficiency a new refrigerator buys is a $12.50-a-year saving, less than four hours of a repairer's time, so it can discount a replacement that a failure already justified but never be the reason for one.",
   "core_conflict": "The minimal real-world power savings versus the high upfront capital and labor cost of replacement.",
   "composition": "wide establishing composition, hero object off-centre",
-  "alt_text": "Fridge Replacement Math. A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit",
+  "alt_text": "Fridge Replacement Math. A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit garage.",
   "caption": "Fridge Replacement Math: Why power savings alone cannot justify buying a new fridge.",
   "title": "Fridge Replacement Math",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -84,5 +93,6 @@
     "ink_subject": 0.033,
     "spike": 0.154,
     "generated_at": "2026-10-23T19:44:30+00:00"
-  }
+  },
+  "alt_text_note": "revision 1 shipped truncated mid-phrase; completed and re-PATCHed to media 1160 (2026-10-23)"
 }
