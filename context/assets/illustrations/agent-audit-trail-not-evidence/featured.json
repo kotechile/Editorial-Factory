@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -124,6 +124,14 @@
     },
     {
       "revision": 15,
+      "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig",
+      "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
+      "title": "The AI Agent Audit Trail",
+      "bytes": 229949,
+      "sha256": "sha256:b0a6feb17d5e9770bf558437a2ead43460044ed4b3aae889218adf06c727e8e2"
+    },
+    {
+      "revision": 16,
       "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig",
       "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
       "title": "The AI Agent Audit Trail",

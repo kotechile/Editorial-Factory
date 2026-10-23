@@ -297,3 +297,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-23 | `your-carbon-report-skips-2-lines` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-carbon-report-skips-2-lines/featured.png` |
 | 2026-10-23 | `why-your-swap-died-at-25` | concentrated_equity_portfolio_capital | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-your-swap-died-at-25/featured.jpg` |
 | 2026-10-23 | `your-cheap-part-a-599-bill` | consumer_asset_repair_replace_tco | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cheap-part-a-599-bill/featured.png` |
+| 2026-10-23 | `buying-ai-quality-when-the-score-belongs-to-the-judge` | ai_observability_qa | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.png` |

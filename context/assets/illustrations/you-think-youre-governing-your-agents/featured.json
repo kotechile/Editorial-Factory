@@ -1,6 +1,6 @@
 {
   "slug": "you-think-youre-governing-your-agents",
-  "revision": 15,
+  "revision": 16,
   "history": [
     {
       "revision": 1,
@@ -121,6 +121,14 @@
       "title": "The AI Agent Blind Spot",
       "bytes": 2708220,
       "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c"
+    },
+    {
+      "revision": 15,
+      "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical",
+      "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
+      "title": "The AI Agent Blind Spot",
+      "bytes": 2708220,
+      "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c"
     }
   ],
   "style": "technical_isometric",
@@ -194,6 +202,9 @@
       "THE AI AGENT",
       "BLIND SPOT"
     ],
+    "subject": 0.0,
+    "ink_subject": 0.001,
+    "spike": 0.0,
     "generated_at": "2026-10-09T02:01:28+00:00"
   }
 }

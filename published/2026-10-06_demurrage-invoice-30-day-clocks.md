@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da"
-image_caption: "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes."
+image_alt: "The Demurrage 30-DAY Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da"
+image_caption: "The Demurrage 30-DAY Clocks: Using exact timestamps to win container fee disputes."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -1,6 +1,6 @@
 {
   "slug": "smart-irrigation-payback-water-tier",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "smart-sprinkler-water-bill-studio",
       "bytes": 153595,
       "sha256": "sha256:5becbf765400c8c270e72ef37d54fe27"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Smart Sprinkler Payback. A smart irrigation control box rests beside a stacked municipal water bill on a clean backdrop.",
+      "caption": "Smart Sprinkler Payback: Real savings depend on your top water tier.",
+      "title": "Smart Sprinkler Payback",
+      "bytes": 91290,
+      "sha256": "sha256:c27954d952607e451d45b7a109be9bbb996e9c29c8e16f6f91eb00c9042a7e87"
     }
   ],
   "style": "studio_object",

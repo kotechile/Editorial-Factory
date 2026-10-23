@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T12:49:00Z",
+  "updated_at": "2026-10-23T17:14:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -2933,7 +2933,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/kill-your-deposit-in-3-days/"
     },
     {
       "slug": "2026-10-22_one-request-five-actions",
@@ -2970,7 +2971,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/review-minute-costs-66-dollars/"
     },
     {
       "slug": "2026-10-22_suez-returns-91-surcharge-doesnt",
@@ -3007,7 +3009,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/why-65-percent-of-stock-records-miss/"
     },
     {
       "slug": "2026-10-22_your-130000-cap-costs-the-credit",
@@ -3025,7 +3028,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-130000-cap-costs-the-credit/"
     },
     {
       "slug": "2026-10-22_your-350000-passport-isnt-europe",
@@ -3099,7 +3103,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-golden-zone-costs-10-miles/"
     },
     {
       "slug": "2026-10-22_your-remodel-loses-to-149-growth",
@@ -3136,7 +3141,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-22",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-retrieval-misses-57/"
     },
     {
       "slug": "2026-10-23_why-your-swap-died-at-25",
@@ -3154,7 +3160,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/why-your-swap-died-at-25/"
     },
     {
       "slug": "2026-10-23_your-26-week-cliff-kills-4-years",
@@ -3172,7 +3179,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-26-week-cliff-kills-4-years/"
     },
     {
       "slug": "2026-10-23_your-batterys-745-mw-cliff",
@@ -3190,7 +3198,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-batterys-745-mw-cliff/"
     },
     {
       "slug": "2026-10-23_your-carbon-report-skips-2-lines",
@@ -3208,7 +3217,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-carbon-report-skips-2-lines/"
     },
     {
       "slug": "2026-10-23_your-cheap-part-a-599-bill",
@@ -3226,7 +3236,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-cheap-part-a-599-bill/"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "demurrage-invoice-30-day-clocks",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,14 @@
       "title": "The Demurrage 30-Day Clocks",
       "bytes": 286108,
       "sha256": "sha256:df0f1fd22e1dbcc940272fd8e77de16d5278013a940a97069b954200124bdaa9"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
+      "caption": "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-Day Clocks",
+      "bytes": 286061,
+      "sha256": "sha256:00b6489c07948957f56bd12ae778874796be8e804bd1d75e59e03629f936d226"
     }
   ],
   "style": "document_flatlay",
@@ -77,9 +85,9 @@
   "cue": "settled by records",
   "subject": "shipping invoices under mechanical time stamps",
   "composition": "extreme asymmetry top-down",
-  "alt_text": "The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
-  "caption": "The Demurrage 30-Day Clocks: Using exact timestamps to win container fee disputes.",
-  "title": "The Demurrage 30-Day Clocks",
+  "alt_text": "The Demurrage 30-DAY Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
+  "caption": "The Demurrage 30-DAY Clocks: Using exact timestamps to win container fee disputes.",
+  "title": "The Demurrage 30-DAY Clocks",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -89,8 +97,8 @@
   "local_path": "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 286061,
-  "sha256": "sha256:00b6489c07948957f56bd12ae778874796be8e804bd1d75e59e03629f936d226",
+  "bytes": 224414,
+  "sha256": "sha256:3b2d2f0b46e59d5efc8c973a7a3f2bbd87bab78eefac2430f95f66837818a046",
   "source_hash": "sha256:36efd58a31820761e4c761982e2c3ef8",
   "source_chars": 5385,
   "task_id": "55223c21c0156791afaaac48b15f7c9a",
@@ -110,25 +118,29 @@
     "kicker": "SUPPLY CHAIN // DEMURRAGE BILLS",
     "title": "THE DEMURRAGE 30-DAY CLOCKS",
     "hook": "Using exact timestamps to win container fee disputes",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 15,
-    "contrast": 4.72,
+    "scrim": 0,
+    "contrast": 4.99,
     "target": 4.5,
-    "clutter": 0.181,
+    "clutter": 0.145,
     "region_rgb": [
-      104,
-      95,
-      91
+      84,
+      75,
+      71
     ],
     "binding_rgb": [
-      133,
-      120,
-      114
+      112,
+      99,
+      93
     ],
     "title_lines": [
       "THE DEMURRAGE",
       "30-DAY CLOCKS"
-    ]
+    ],
+    "subject": 0.072,
+    "ink_subject": 0.041,
+    "spike": 0.196,
+    "generated_at": "2026-10-09T00:44:35+00:00"
   }
 }

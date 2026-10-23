@@ -1,6 +1,6 @@
 {
   "slug": "agent-reliability-pass-k-not-one-green-run",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -29,6 +29,14 @@
       "title": "AI Reliability Gate Sequence",
       "bytes": 2018393,
       "sha256": "sha256:84903ccba112b8094a99f1544284db06"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Repeat Trial Gate. A sequential row of three modular inspection gates on a brushed steel surface, with a block passing th",
+      "caption": "The Repeat Trial Gate: Why one successful run is not enough for an AI agent.",
+      "title": "The Repeat Trial Gate",
+      "bytes": 1483762,
+      "sha256": "sha256:6f5a4f2c4eb6916412b79453d6628b2834c4eb182ba48b98d5bd168c9bde1cf9"
     }
   ],
   "style": "clay_render",
@@ -57,8 +65,8 @@
   "local_path": "context/assets/illustrations/agent-reliability-pass-k-not-one-green-run/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1483762,
-  "sha256": "sha256:6f5a4f2c4eb6916412b79453d6628b2834c4eb182ba48b98d5bd168c9bde1cf9",
+  "bytes": 1435885,
+  "sha256": "sha256:172f65c2ed961c7f236ea7b49c1f4e44769d5252d544f766b747e3895fd86090",
   "source_hash": "sha256:13cd6a6e48612b223d307984e0b38fba",
   "source_chars": 4178,
   "task_id": "8a4aa7a1c59bf7402bb5087ace61e9ce",
@@ -80,7 +88,29 @@
     "kicker": "AI AGENTS // RELIABILITY TESTING",
     "title": "THE REPEAT TRIAL GATE",
     "hook": "Why one successful run is not enough for an AI agent",
-    "anchor": "top-left",
-    "light": false
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 105,
+    "contrast": 5.51,
+    "target": 5.5,
+    "clutter": 0.313,
+    "region_rgb": [
+      112,
+      112,
+      112
+    ],
+    "binding_rgb": [
+      162,
+      162,
+      160
+    ],
+    "title_lines": [
+      "THE REPEAT",
+      "TRIAL GATE"
+    ],
+    "subject": 0.1,
+    "ink_subject": 0.035,
+    "spike": 0.361,
+    "generated_at": "2026-10-09T00:40:28+00:00"
   }
 }

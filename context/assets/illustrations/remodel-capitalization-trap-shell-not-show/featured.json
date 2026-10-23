@@ -1,6 +1,6 @@
 {
   "slug": "remodel-capitalization-trap-shell-not-show",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "High ROI Garage Door Facade",
       "bytes": 298492,
       "sha256": "sha256:bce62d57f8d8c39fbe5f4986caca00d5"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
+      "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
+      "title": "The Remodeling ROI Trap",
+      "bytes": 160546,
+      "sha256": "sha256:b5e71a6836154305a1978180886107b837a7f779b440d1fd49338c4e2e6762c3"
     }
   ],
   "style": "architectural_night",

@@ -1,6 +1,6 @@
 {
   "slug": "control-tower-silent-exception",
-  "revision": 14,
+  "revision": 15,
   "history": [
     {
       "revision": 1,
@@ -113,6 +113,14 @@
       "title": "The Fake Carrier Blind Spot",
       "bytes": 166859,
       "sha256": "sha256:9e7f0d33763241c7897d7adb2b2125e05124d42385a4b7b5912cbe283547ca94"
+    },
+    {
+      "revision": 14,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests",
+      "caption": "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 166859,
+      "sha256": "sha256:9e7f0d33763241c7897d7adb2b2125e05124d42385a4b7b5912cbe283547ca94"
     }
   ],
   "style": "cinematic_still",
@@ -143,8 +151,8 @@
   "local_path": "context/assets/illustrations/control-tower-silent-exception/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 166859,
-  "sha256": "sha256:9e7f0d33763241c7897d7adb2b2125e05124d42385a4b7b5912cbe283547ca94",
+  "bytes": 166340,
+  "sha256": "sha256:cc4fd164f53a82a84068d74a2d118aa249a7675a009dca9b5a3f773ca3abb420",
   "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa",
   "source_chars": 4557,
   "task_id": "0b71fa1a26a263eac120a5ed8435cac2",
@@ -164,26 +172,29 @@
     "kicker": "CARGO THEFT // CONTROL TOWERS",
     "title": "THE FAKE CARRIER BLIND SPOT",
     "hook": "Why exception software misses the most expensive thefts",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 6.81,
+    "contrast": 11.46,
     "target": 4.5,
-    "clutter": 0.195,
+    "clutter": 0.099,
     "region_rgb": [
-      34,
-      62,
-      62
+      35,
+      33,
+      25
     ],
     "binding_rgb": [
-      48,
-      88,
-      87
+      43,
+      49,
+      45
     ],
     "title_lines": [
       "THE FAKE CARRIER",
       "BLIND SPOT"
     ],
+    "subject": 0.008,
+    "ink_subject": 0.003,
+    "spike": 0.03,
     "generated_at": "2026-10-09T02:06:43+00:00"
   }
 }

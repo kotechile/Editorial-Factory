@@ -1,6 +1,6 @@
 {
   "slug": "multi-agent-coordination-topology-cost",
-  "revision": 20,
+  "revision": 21,
   "history": [
     {
       "revision": 1,
@@ -158,6 +158,14 @@
     },
     {
       "revision": 19,
+      "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen",
+      "caption": "Pricing Agent Topologies: Coordination mode is your biggest agent budget line.",
+      "title": "Pricing Agent Topologies",
+      "bytes": 1019202,
+      "sha256": "sha256:919480cc55a632279ad02498cb14c68c186386c8b4bccca4fdf731bec8638c98"
+    },
+    {
+      "revision": 20,
       "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen",
       "caption": "Pricing Agent Topologies: Coordination mode is your biggest agent budget line.",
       "title": "Pricing Agent Topologies",

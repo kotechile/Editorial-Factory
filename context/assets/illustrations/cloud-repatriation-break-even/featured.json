@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 14,
+  "revision": 15,
   "history": [
     {
       "revision": 1,
@@ -113,6 +113,14 @@
       "title": "The Cloud Repatriation Math",
       "bytes": 1845476,
       "sha256": "sha256:0ff51821a99e06634da8ab4ad250a698fff934af3e637e9b85c02f6a9b928202"
+    },
+    {
+      "revision": 14,
+      "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block lo",
+      "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
+      "title": "The Cloud Repatriation Math",
+      "bytes": 1845476,
+      "sha256": "sha256:0ff51821a99e06634da8ab4ad250a698fff934af3e637e9b85c02f6a9b928202"
     }
   ],
   "style": "component_assembly",
@@ -143,8 +151,8 @@
   "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.png",
   "ext": "png",
   "content_type": "image/png",
-  "bytes": 1845476,
-  "sha256": "sha256:0ff51821a99e06634da8ab4ad250a698fff934af3e637e9b85c02f6a9b928202",
+  "bytes": 1809528,
+  "sha256": "sha256:697c8e53e9c6a8420520364a96edaae6679f1fa7c70235e3ffba43bfa8c01b17",
   "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd",
   "source_chars": 4169,
   "task_id": "df6cca46e4ba2401e5c606393a8b8e61",
@@ -166,26 +174,29 @@
     "kicker": "INFRASTRUCTURE // CLOUD REPATRIATION",
     "title": "THE CLOUD REPATRIATION MATH",
     "hook": "The math behind moving steady apps to owned gear",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 90,
-    "contrast": 5.63,
+    "scrim": 105,
+    "contrast": 6.09,
     "target": 5.5,
-    "clutter": 0.395,
+    "clutter": 0.321,
     "region_rgb": [
-      86,
-      81,
-      70
+      114,
+      109,
+      97
     ],
     "binding_rgb": [
-      152,
-      144,
-      131
+      157,
+      150,
+      140
     ],
     "title_lines": [
       "THE CLOUD",
       "REPATRIATION MATH"
     ],
+    "subject": 0.12,
+    "ink_subject": 0.038,
+    "spike": 0.449,
     "generated_at": "2026-10-09T02:07:45+00:00"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T14:16:25+00:00",
+  "generated_at": "2026-10-23T14:17:42+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -368,6 +368,82 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-cheap-part-a-599-bill",
+      "title": "Your Cheap Part, a $599 Bill",
+      "url": "https://giniloh.com/your-cheap-part-a-599-bill/",
+      "path": "/your-cheap-part-a-599-bill/",
+      "sites_live": {
+        "giniloh.com": "/your-cheap-part-a-599-bill/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Apple asks $99 to swap a dead Watch battery, but bills $599 for any other service on a cellular Series 12. A new aluminum watch costs $399, so one\u2026",
+      "modified": "2026-10-23T12:45:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "why-your-swap-died-at-25",
+      "title": "Why Your Swap Died at 25%",
+      "url": "https://giniloh.com/why-your-swap-died-at-25/",
+      "path": "/why-your-swap-died-at-25/",
+      "sites_live": {
+        "giniloh.com": "/why-your-swap-died-at-25/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The tax-free swap died on September 28, when the Internal Revenue Service (IRS) ruled that moving low-basis stock into a new fund and passing it to a broker\u2026",
+      "modified": "2026-10-23T12:11:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-26-week-cliff-kills-4-years",
+      "title": "Your 26-Week Cliff Kills 4 Years",
+      "url": "https://giniloh.com/your-26-week-cliff-kills-4-years/",
+      "path": "/your-26-week-cliff-kills-4-years/",
+      "sites_live": {
+        "giniloh.com": "/your-26-week-cliff-kills-4-years/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Oracle added $700 million to a layoff plan on 11 September 2026, and 19 days later ElevenLabs closed a $300 million employee tender that let staff sell\u2026",
+      "modified": "2026-10-23T11:12:45",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-130000-cap-costs-the-credit",
+      "title": "Your $130,000 Cap Costs the Credit",
+      "url": "https://giniloh.com/your-130000-cap-costs-the-credit/",
+      "path": "/your-130000-cap-costs-the-credit/",
+      "sites_live": {
+        "giniloh.com": "/your-130000-cap-costs-the-credit/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Pick the foreign earned income exclusion and you kill the tax credit for foreign taxes paid on that exact slice of pay.",
+      "modified": "2026-10-22T19:44:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1416,6 +1492,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "kill-your-deposit-in-3-days",
+      "title": "3 Days to Kill Your Deposit",
+      "url": "https://wellroost.com/kill-your-deposit-in-3-days/",
+      "path": "/kill-your-deposit-in-3-days/",
+      "sites_live": {
+        "wellroost.com": "/kill-your-deposit-in-3-days/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "Sign a remodel contract at your kitchen table, and federal law gives you three days to cancel and take your deposit back.",
+      "modified": "2026-10-22T19:10:55",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "local-api-isnt-in-the-contract",
       "title": "\u20ac1.2 Billion for Shelly: Your Local API Unwritten",
       "url": "https://wellroost.com/local-api-isnt-in-the-contract/",
@@ -1800,6 +1899,29 @@
       ],
       "excerpt": "The cheap, like-for-like swap for gas water heaters above 75,000 British thermal units per hour (Btu/hr) ended on October 6.",
       "modified": "2026-10-19T12:25:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-batterys-745-mw-cliff",
+      "title": "Your Battery's 745 MW Cliff",
+      "url": "https://wellroost.com/your-batterys-745-mw-cliff/",
+      "path": "/your-batterys-745-mw-cliff/",
+      "sites_live": {
+        "wellroost.com": "/your-batterys-745-mw-cliff/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "On 6 October, home batteries plugged into California's grid pushed a record 745 megawatts (MW) into the evening peak.",
+      "modified": "2026-10-23T10:42:17",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3959,6 +4081,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "review-minute-costs-66-dollars",
+      "title": "Your 25-Minute Review Costs $66.67",
+      "url": "https://aichieve.net/review-minute-costs-66-dollars/",
+      "path": "/review-minute-costs-66-dollars/",
+      "sites_live": {
+        "aichieve.net": "/review-minute-costs-66-dollars/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Eighteen cents of tokens per agreement, then 25 minutes of a senior partner's time at $160 an hour. Your 25-minute review costs $66.67, pushing the total\u2026",
+      "modified": "2026-10-22T18:09:39",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "safety-stock-forecast-error-not-demand-noise",
       "title": "Safety Stock Sizing: Why Your Buffer Uses the Wrong Number",
       "url": "https://aichieve.net/safety-stock-forecast-error-not-demand-noise/",
@@ -4476,6 +4621,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "why-65-percent-of-stock-records-miss",
+      "title": "Your Stock Records Are 65% Wrong",
+      "url": "https://aichieve.net/why-65-percent-of-stock-records-miss/",
+      "path": "/why-65-percent-of-stock-records-miss/",
+      "sites_live": {
+        "aichieve.net": "/why-65-percent-of-stock-records-miss/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "At one large retailer, 65% of stock records failed to match the shelf count, and that gap cut profit by more than ten percent.",
+      "modified": "2026-10-22T20:12:45",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "why-importers-forfeit-duty-refunds",
       "title": "Why Importers Forfeit 99% Duty Refunds",
       "url": "https://aichieve.net/why-importers-forfeit-duty-refunds/",
@@ -4729,6 +4897,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-carbon-report-skips-2-lines",
+      "title": "Your Carbon Report Skips 2 Lines: Trucks Aren't Counted",
+      "url": "https://aichieve.net/your-carbon-report-skips-2-lines/",
+      "path": "/your-carbon-report-skips-2-lines/",
+      "sites_live": {
+        "aichieve.net": "/your-carbon-report-skips-2-lines/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The first carbon report California set for 10 November 2026 counts only a firm's own fuel and power. The state's 2027 plan skips the 2 lines with your trucks.",
+      "modified": "2026-10-23T11:43:57",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-chip-stopped-deciding",
       "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
       "url": "https://aichieve.net/your-chip-stopped-deciding/",
@@ -4837,6 +5028,29 @@
       ],
       "excerpt": "A depot's charging plan is set by amps, circuits and the metered kilowatt-hour, not by the van's spec sheet \u2014 and the federal refueling credit closed on June 30\u2026",
       "modified": "2026-10-16T19:09:17",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-golden-zone-costs-10-miles",
+      "title": "Your Golden Zone Costs 10 Miles",
+      "url": "https://aichieve.net/your-golden-zone-costs-10-miles/",
+      "path": "/your-golden-zone-costs-10-miles/",
+      "sites_live": {
+        "aichieve.net": "/your-golden-zone-costs-10-miles/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The bill for a full week of stock in a prime pick face gets paid twice: the forklift crew makes one drop a week, and the pickers on that aisle walk an extra\u2026",
+      "modified": "2026-10-22T18:42:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4959,6 +5173,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-retrieval-misses-57",
+      "title": "Your Retrieval Fails at 5.7%",
+      "url": "https://aichieve.net/your-retrieval-misses-57/",
+      "path": "/your-retrieval-misses-57/",
+      "sites_live": {
+        "aichieve.net": "/your-retrieval-misses-57/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Anthropic's retrieval test missed the right passage 5.7% of the time when it fetched the 20 best-matching chunks.",
+      "modified": "2026-10-22T17:50:59",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-seller-wont-stay",
       "title": "$200,000 Robots: Your Seller Won't Stay",
       "url": "https://aichieve.net/your-seller-wont-stay/",
@@ -5049,6 +5286,76 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1142,
+      "slug": "your-carbon-report-skips-2-lines",
+      "title": "Your Carbon Report Skips 2 Lines: Trucks Aren&#8217;t Counted",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-23T11:43:57",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1136,
+      "slug": "why-65-percent-of-stock-records-miss",
+      "title": "Your Stock Records Are 65% Wrong",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T20:12:45",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1129,
+      "slug": "your-golden-zone-costs-10-miles",
+      "title": "Your Golden Zone Costs 10 Miles",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T18:42:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1126,
+      "slug": "review-minute-costs-66-dollars",
+      "title": "Your 25-Minute Review Costs $66.67",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T18:09:39",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1122,
+      "slug": "your-retrieval-misses-57",
+      "title": "Your Retrieval Fails at 5.7%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-22T17:50:59",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -6184,128 +6491,58 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 558,
-      "slug": "demurrage-invoice-30-day-clocks",
-      "title": "A Late Container&#8217;s Bill Carries Two 30-Day Clocks",
+      "id": 1148,
+      "slug": "your-cheap-part-a-599-bill",
+      "title": "Your Cheap Part, a $599 Bill",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:41",
+      "modified": "2026-10-23T12:48:25",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 596,
-      "slug": "agent-memory-tiering-l1-l4",
-      "title": "Long Context Is Not Memory: Why AI Agents Need Tiered State",
+      "id": 1146,
+      "slug": "why-your-swap-died-at-25",
+      "title": "Why Your Swap Died at 25%",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:41",
+      "modified": "2026-10-23T12:11:07",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 600,
-      "slug": "fuel-surcharge-peg-mpg-audit",
-      "title": "Your Fuel Surcharge Hides Three Negotiated Numbers",
+      "id": 1139,
+      "slug": "your-26-week-cliff-kills-4-years",
+      "title": "Your 26-Week Cliff Kills 4 Years",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:41",
+      "modified": "2026-10-23T11:12:45",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 549,
-      "slug": "agent-reliability-pass-k-not-one-green-run",
-      "title": "One Green Run Is Not Reliability: Gating Agents on Pass^k",
+      "id": 1132,
+      "slug": "your-130000-cap-costs-the-credit",
+      "title": "Your $130,000 Cap Costs the Credit",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:42",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 533,
-      "slug": "fed-rate-hike-inverts-working-capital-trap",
-      "title": "Higher Rates Meet Historically Lean Inventories",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:42",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 598,
-      "slug": "cache-boundary-decides-input-bill",
-      "title": "Where the Prompt Breaks Decides the AI Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:42",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 572,
-      "slug": "agent-memory-poisoning-write-path",
-      "title": "Agent Memory Poisoning: Guard the Write, Not the Prompt",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:43",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 580,
-      "slug": "sla-credit-is-not-insurance",
-      "title": "Why Cloud Uptime SLAs Are Not Insurance",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:43",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 561,
-      "slug": "retry-is-the-failure-amplifier",
-      "title": "The Retry Is the Bug: An Agent&#8217;s Costliest Failure Mode",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:43",
+      "modified": "2026-10-22T19:44:13",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
