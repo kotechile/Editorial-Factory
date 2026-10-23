@@ -12,7 +12,7 @@ meta_description: "One route in the published last-mile corpus carries 50 stops,
 image_path: "context/assets/illustrations/your-routes-5x-stop-gap/featured.png"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Why Density Beats Routing. Isometric cutaway map of a dense urban district with interconnected routing paths and delivery"
+image_alt: "Why Density Beats Routing. Isometric cutaway map of a dense urban district with interconnected routing paths and delivery nodes."
 image_caption: "Why Density Beats Routing: District borders save more time than routing software."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
