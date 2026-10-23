@@ -60,6 +60,29 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_verified_brief.md`:
 - **Dual-Anchor Gate:** In a synthesis brief, *both* Signal A and Signal B must have at least 2 VERIFIED claims. If either leg fails primary verification, the synthesis is deemed under-sourced; return to the Judge to test a different pair or single signal.
 - ≥ 2 REMOVED → the topic is under-sourced; return to the Judge for a different angle.
 
-## 6. Failure handling
+## 6. The floor is code, at the push (`scripts/source_gate.py`)
+
+The verification above is done by the run, but a run that skips or fumbles it must not be able to
+publish anyway. `scripts/publish_gate.py` therefore calls `scripts/source_gate.py` on the artifact
+immediately before the push, and an article that fails is created as a CMS DRAFT instead of a live
+post (owner, 2026-10-23). What it enforces, mechanically:
+
+1. **Every cited URL resolves** — a 404/410 is a failure. A bot wall (403/429/timeout) is reported as
+   UNVERIFIED, never as wrong: Reuters answers 403 to any scraper while a reader opens it fine.
+2. **The page is the document it is cited as** — the citation's own numbers (a statute section, a
+   report id) or its distinctive words must appear on the page, taken from the URL path when the
+   Sources line is a bare URL. A path that collapsed to the site's root is the classic failure.
+3. **No aggregator, mirror, social post or tertiary wiki** stands in for the origin it repeats
+   (`context/source_quality.json` `blocked_hosts`), and a sources list of press-release wires alone
+   is not corroboration.
+4. **Not one host counted as several** — `min_sources` distinct citations across `min_hosts` hosts.
+5. **Every figure in the body that appears in no cited source is listed** for the reviewer; pass
+   `--strict-figures` to make that list a hold. Derived arithmetic (a spread, a sum, an interval)
+   legitimately never appears in a source, which is why it is a list and not a default hold.
+
+Sources that are only partly checkable (JS shells, paywalls, PDFs with no text layer) are reported
+as UNVERIFIED, not passed — the gate never claims a check it did not run.
+
+## 7. Failure handling
 Log removed-claim patterns (e.g. "aggregator cited a vendor figure without a link") to
 `skills/self_improvement_eval.md` so future scouts prioritize primary sources up front.

@@ -18,8 +18,11 @@ Policy (owner, 2026-10-10): **never publish un-gated text, but try at least one 
 An already-published post is never rewritten or demoted by this gate: rewriting live prose is a
 human decision, so there the gate only reports.
 
-What it cannot do: judge the reporting, the claim quality or the art. Those stay with the run's
-gates (fact_check.md, virality_judge.md, illustration_director.md) and with the owner.
+What it cannot do: judge the reporting or the art. The citation floor is mechanical
+(`scripts/source_gate.py`: reachability, page identity, host tiers, the source/host counts, and the
+list of figures no cited source carries — enforced here since 2026-10-23), but whether a verified
+source actually supports the sentence around it stays with the run's gates (fact_check.md,
+virality_judge.md, illustration_director.md) and with the owner.
 
 CLI:
     python3 scripts/publish_gate.py --slug <slug>            # gate one article
