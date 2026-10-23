@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-batterys-745-mw-cliff/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "The 745 MW Battery Cliff. An illuminated house with a sleek wall-mounted home battery stands out against a dark, blacked-out"
+image_alt: "The 745 MW Battery Cliff. An illuminated house with a sleek wall-mounted home battery stands out against a dark, blacked-out neighborhood."
 image_caption: "The 745 MW Battery Cliff: Record home battery pools face a state funding cliff."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -78,6 +78,18 @@ The safety record quoted for home units belongs to a different group of machines
 
 California proved a pool of home batteries can carry a large grid event, but it left the payment side half-built. That is why the next five weeks matter more than the last five.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Home batteries in California pushed a record 745 MW into the grid on 6 October, but the state program funding these grid events ends on 31 October with no 2027 budget.
+- **Why It Matters:** The state pays the aggregator a set rate per kW of power and leaves the homeowner's cut to a private contract, meaning the record reflects the pool's success rather than the owner's return.
+- **What I'd Watch:**
+  - **The contract split:** The exact share of the $82.80 per kW season rate that reaches the owner, and whether companies disclose it upfront.
+  - **The reserve floor:** Contract terms that cap drain times, hold a minimum battery charge, and carve out local outages.
+  - **The 2027 check:** Whether an early budget fix or a new CPUC rule replaces the current seasonal pool.
+- **The Catch:** The 97% drop in battery failure rates covers large grid sites, not home units, and the homeowner remains the only participant without a guaranteed, public price.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -90,18 +102,6 @@ California proved a pool of home batteries can carry a large grid event, but it 
 - [Your Block's $30B Hardening Bill](/your-blocks-30b-hardening-bill/) — more on Energy & Efficiency
 - [Your EV Is Now a Home Battery](/your-ev-is-now-a-home-battery-behind-a-paywall/) — more on Energy & Efficiency
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Home batteries in California pushed a record 745 MW into the grid on 6 October, but the state program funding these grid events ends on 31 October with no 2027 budget.
-- **Why It Matters:** The state pays the aggregator a set rate per kW of power and leaves the homeowner's cut to a private contract, meaning the record reflects the pool's success rather than the owner's return.
-- **What I'd Watch:**
-  - **The contract split:** The exact share of the $82.80 per kW season rate that reaches the owner, and whether companies disclose it upfront.
-  - **The reserve floor:** Contract terms that cap drain times, hold a minimum battery charge, and carve out local outages.
-  - **The 2027 check:** Whether an early budget fix or a new CPUC rule replaces the current seasonal pool.
-- **The Catch:** The 97% drop in battery failure rates covers large grid sites, not home units, and the homeowner remains the only participant without a guaranteed, public price.
 
 ## Sources
 [1] https://investors.sunrun.com/news-events/press-releases/detail/384/sunrun-leads-record-grid-dispatch-delivering-enough-energy
