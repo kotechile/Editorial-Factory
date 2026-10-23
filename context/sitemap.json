@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T18:41:08Z",
+  "updated_at": "2026-10-23T19:10:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3290,6 +3290,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-23",
+      "public": false
+    },
+    {
+      "slug": "2026-10-23_your-routes-5x-stop-gap",
+      "title": "Your Route's 5x Stop Gap: Density Beats Routing",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-10-23",
       "public": false
     }

@@ -184,6 +184,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-23 | concentrated_equity_portfolio_capital | your-61-day-window-costs-the-position | Your 61-Day Window Costs the Position | https://pressflow.aichieve.net/published/2026-10-23_your-61-day-window-costs-the-position.md | reader site only |
 | 2026-10-23 | resilient_home_assets | your-nonrenewal-isnt-final-count-120-days | Your Nonrenewal Isn't Final: Count 120 Days | https://pressflow.aichieve.net/published/2026-10-23_your-nonrenewal-isnt-final-count-120-days.md | reader site only |
 | 2026-10-23 | career_velocity_equity_engineering | your-125-exam-costs-122-hours | Your $125 Exam Costs 122 Hours | https://pressflow.aichieve.net/published/2026-10-23_your-125-exam-costs-122-hours.md | reader site only |
+| 2026-10-23 | last_mile_routing_fleet_carbon | your-routes-5x-stop-gap | Your Route's 5x Stop Gap: Density Beats Routing | https://pressflow.aichieve.net/published/2026-10-23_your-routes-5x-stop-gap.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,0 +1,90 @@
+{
+  "slug": "your-routes-5x-stop-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway map of a dense urban district with interconnected routing paths and delivery nodes.",
+      "caption": "Network design and district density dictate route efficiency long before software sorts the stops.",
+      "title": "Route Density Isometric",
+      "bytes": 2352585,
+      "sha256": "sha256:a9fd2491070b1ffa44edc20cbb5eb5be"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A dense physical urban district block with extruded city structures and modular street grids, overlaid with a dense web of interconnected routing paths and physical delivery node markers. Flat muted palette with a striking amber accent color on the dense routing cluster. Thin consistent line weight, laid over a matte drafting table surface. Recognizable structural depth, sharp directional light casting deep shadows, extreme asymmetry with the dense cluster positioned on the left third, generous empty margin on the right.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible text, labels, UI",
+  "rationale": "A technical isometric cutaway perfectly captures the structural nature of map borders and route density, contrasting a dense urban cluster with sparse outliers on a physical drafting surface.",
+  "cue": "Density Beats Routing",
+  "subject": "an isometric technical map cutaway of a dense urban delivery district with routing path overlays",
+  "core_thesis": "A routing engine can only reorder the stops it receives; map density and district borders drive real efficiency gains.",
+  "core_conflict": "Algorithmic route optimization vs structural district density and physical map borders",
+  "composition": "extreme asymmetry, weighted left",
+  "alt_text": "Why Density Beats Routing. Isometric cutaway map of a dense urban district with interconnected routing paths and delivery",
+  "caption": "Why Density Beats Routing: District borders save more time than routing software.",
+  "title": "Why Density Beats Routing",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-routes-5x-stop-gap/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1888948,
+  "sha256": "sha256:1e34f4a46efda417cdc4606c37b14cfb3c7b4774ab5d09d2a22fcf0750f48ef7",
+  "source_hash": "sha256:844c065db64a5ee9e85207eca1ce3cff",
+  "source_chars": 5451,
+  "task_id": "3cbc775c1929ff10ba5db48000230127",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_a4740040377882af228b27f2054ec48e.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection. A dense physical urban district block with extruded city structures and modular street grids, overlaid with a dense web of interconnected routing paths and physical delivery node markers. Flat muted palette with a striking amber accent color on the dense routing cluster. Thin consistent line weight, laid over a matte drafting table surface. Recognizable structural depth, sharp directional light casting deep shadows, extreme asymmetry with the dense cluster positioned on the left third, generous empty margin on the right.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-23T19:10:41+00:00",
+  "overlay": {
+    "kicker": "LAST-MILE LOGISTICS // ROUTE DENSITY",
+    "title": "WHY DENSITY BEATS ROUTING",
+    "hook": "District borders save more time than routing software",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 10.04,
+    "target": 4.5,
+    "clutter": 0.132,
+    "region_rgb": [
+      232,
+      227,
+      214
+    ],
+    "binding_rgb": [
+      233,
+      225,
+      206
+    ],
+    "title_lines": [
+      "WHY DENSITY",
+      "BEATS ROUTING"
+    ],
+    "subject": 0.035,
+    "ink_subject": 0.015,
+    "spike": 0.114,
+    "generated_at": "2026-10-23T19:10:41+00:00"
+  }
+}
