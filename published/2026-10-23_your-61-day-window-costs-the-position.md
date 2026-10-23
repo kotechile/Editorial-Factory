@@ -66,14 +66,6 @@ Whether two holdings count as the same stock is settled by the facts of a case, 
 
 The part I keep circling is how lopsided it is. The rule is cheap to satisfy for someone selling anyway and costly for someone who wants to stay, and the twenty-year figure above assumes no future gain ever arrives to soak up the loss.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Calculate Your Career Relocation Payback" -> /calculate-your-career-relocation-payback/ [same site (giniloh.com); topical overlap: costs, loss] Link "Calculate Your Career Relocation Payback" in the section where the article touches costs, loss. -->
-## Related reading
-
-- [Calculate Your Career Relocation Payback](/calculate-your-career-relocation-payback/)
-<!-- internal-links:end -->
 
 <!-- tldr -->
 
@@ -86,6 +78,15 @@ The part I keep circling is how lopsided it is. The rule is cheap to satisfy for
   - **The basis rule:** a voided loss moves into the new lot and is counted when those shares are sold, putting the loss off rather than forfeiting it.
   - **The gains offset:** losses come off realized gains in full, and only the remainder is capped at $3,000 against other income.
 - **The Catch:** the rule's text does not settle how a vesting date counts, and the twenty-year figure above assumes no future gain ever soaks up the loss.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Calculate Your Career Relocation Payback" -> /calculate-your-career-relocation-payback/ [same site (giniloh.com); topical overlap: costs, loss] Link "Calculate Your Career Relocation Payback" in the section where the article touches costs, loss. -->
+## Related reading
+
+- [Calculate Your Career Relocation Payback](/calculate-your-career-relocation-payback/)
+<!-- internal-links:end -->
 
 ## Sources
 [1] eCFR, 26 CFR § 1.1091-1 — Losses from wash sales of stock or securities (title 26 up to date as of 10/21/2026). https://www.ecfr.gov/current/title-26/section-1.1091-1
