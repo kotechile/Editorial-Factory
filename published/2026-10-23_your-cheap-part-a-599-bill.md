@@ -13,6 +13,12 @@ meta_title: "Your Cheap Part, a $599 Bill"
 meta_title_source: "derived_from_title"
 meta_description: "Apple asks $99 to swap a dead Watch battery, but bills $599 for any other service on a cellular Series 12. A new aluminum watch costs $399, so one…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-cheap-part-a-599-bill/featured.png"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A premium white watch case beside a small battery module on brushed steel."
+image_caption: "The Apple Watch Repair Trap: When fixing a watch costs more than buying a new one."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -58,17 +64,6 @@ Insurance flips the math completely, making the usual extended warranty advice l
 
 The final limit here is scope, because chip prices do not actually explain a watch's repair list. They explain the rising cost of the phone or laptop you might buy to replace it instead. Once a brand's spare parts carry the chip market with them, nobody escapes the spot market. Framework passed a supplier increase of "more than double" to its memory buyers this year [5], which is the part that stings for anyone buying modular hardware to dodge these fees.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Beyond the Emergency Fund" -> /beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/ [same site (giniloh.com); topical overlap: bill, watch] Link "Beyond the Emergency Fund" in the section where the article touches bill, watch. -->
-<!-- internal-link hint: "Blueprint Behind Giniloh Money Flow" -> /the-blueprint-behind-giniloh-money-flow/ [same site (giniloh.com); topical overlap: bills, watch] Link "Blueprint Behind Giniloh Money Flow" in the section where the article touches bills, watch. -->
-## Related reading
-
-- [Beyond the Emergency Fund](/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/)
-- [Blueprint Behind Giniloh Money Flow](/the-blueprint-behind-giniloh-money-flow/)
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -80,6 +75,17 @@ The final limit here is scope, because chip prices do not actually explain a wat
   - **Parts stores:** Whether Watch parts join Apple's repair site, which would turn a service fee into a standalone part [1].
   - **The 2027 chip shift:** Factory pivots toward server parts will shrink computer memory stocks next year, keeping replacement device prices high [2].
 - **The Catch:** The $599 fee hits the ceramic case, while aluminum models cost $349 to fix [1][3]. Standard battery swaps stay cheap, and a $4.99 monthly AppleCare+ plan covers bad drops for less than the price of one screen fix [3].
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Beyond the Emergency Fund" -> /beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/ [same site (giniloh.com); topical overlap: bill, watch] Link "Beyond the Emergency Fund" in the section where the article touches bill, watch. -->
+<!-- internal-link hint: "Blueprint Behind Giniloh Money Flow" -> /the-blueprint-behind-giniloh-money-flow/ [same site (giniloh.com); topical overlap: bills, watch] Link "Blueprint Behind Giniloh Money Flow" in the section where the article touches bills, watch. -->
+## Related reading
+
+- [Beyond the Emergency Fund](/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/)
+- [Blueprint Behind Giniloh Money Flow](/the-blueprint-behind-giniloh-money-flow/)
+<!-- internal-links:end -->
 
 ## Sources
 

@@ -1,0 +1,114 @@
+{
+  "slug": "your-cheap-part-a-599-bill",
+  "revision": 5,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A premium white watch case beside a small battery module on brushed steel.",
+      "caption": "The true cost of replacing a failing battery is hidden in the premium materials of the outer shell.",
+      "title": "watch-battery-casing-assembly",
+      "bytes": 1855746,
+      "sha256": "sha256:1cc5e552d7c2ac1425de57b5be8db260"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A premium white watch case beside a small battery module on brushed steel.",
+      "caption": "The Apple Watch Repair Trap: When fixing a watch costs more than buying a new one.",
+      "title": "The Apple Watch Repair Trap",
+      "bytes": 1346603,
+      "sha256": "sha256:eb326098da1e66fd3117ed41c12afc4c0a23a5bde7661ec800f317e30d24538b"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A premium white watch case beside a small battery module on brushed steel.",
+      "caption": "The Apple Watch Repair Trap: When fixing a watch costs more than buying a new one.",
+      "title": "The Apple Watch Repair Trap",
+      "bytes": 1346603,
+      "sha256": "sha256:eb326098da1e66fd3117ed41c12afc4c0a23a5bde7661ec800f317e30d24538b"
+    },
+    {
+      "revision": 4,
+      "alt_text": "A premium white watch case beside a small battery module on brushed steel.",
+      "caption": "The Apple Watch Repair Trap: When fixing a watch costs more than buying a new one.",
+      "title": "The Apple Watch Repair Trap",
+      "bytes": 1346603,
+      "sha256": "sha256:eb326098da1e66fd3117ed41c12afc4c0a23a5bde7661ec800f317e30d24538b"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a modular mechanical assembly on a real brushed steel surface, asymmetrical off-centre layout. Two recognisable engineered parts: an elaborate, premium white ceramic watch casing shell, and a small, utilitarian rectangular battery module unlatched and resting beside it. Hard clean edges, one directional key light throwing a long cast shadow across the weathered steel, matte muted modern palette, generous negative space, no text, no moulded lettering.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, printed labels",
+  "rationale": "This treatment distills the economic trap of the device into its physical reality: two distinct parts (the cheap consumable and the expensive shell) whose artificial pairing dictates the total cost of ownership. Nano Banana constructs this cleanly as a deliberate mechanical arrangement.",
+  "cue": "set by the case you bought",
+  "subject": "a premium ceramic watch casing shell and a basic battery module",
+  "core_thesis": "The cheapest part in a watch is the one that ends its life, and the price of reaching it is set by the case you bought, not by the part that failed.",
+  "core_conflict": "Consumable component replacement cost vs. premium outer casing pricing tiers",
+  "composition": "asymmetrical off-centre layout",
+  "alt_text": "A premium white watch case beside a small battery module on brushed steel.",
+  "caption": "The Apple Watch Repair Trap: When fixing a watch costs more than buying a new one.",
+  "title": "The Apple Watch Repair Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-cheap-part-a-599-bill/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1346603,
+  "sha256": "sha256:eb326098da1e66fd3117ed41c12afc4c0a23a5bde7661ec800f317e30d24538b",
+  "source_hash": "sha256:328fad4aaa76afd71d70f14761b1a116",
+  "source_chars": 5239,
+  "task_id": "dfadea85d3ac1f0fa99584ed50b172b4",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_282cb4e2c61f0ed04f24401948eb8f8b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a modular mechanical assembly on a real brushed steel surface, asymmetrical off-centre layout. Two recognisable engineered parts: an elaborate, premium white ceramic watch casing shell, and a small, utilitarian rectangular battery module unlatched and resting beside it. Hard clean edges, one directional key light throwing a long cast shadow across the weathered steel, matte muted modern palette, generous negative space, no text, no moulded lettering.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-23T12:47:11+00:00",
+  "overlay": {
+    "kicker": "CONSUMER TECH // RIGHT TO REPAIR",
+    "title": "THE APPLE WATCH REPAIR TRAP",
+    "hook": "When fixing a watch costs more than buying a new one",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.02,
+    "target": 4.5,
+    "clutter": 0.124,
+    "region_rgb": [
+      89,
+      85,
+      75
+    ],
+    "binding_rgb": [
+      105,
+      101,
+      90
+    ],
+    "title_lines": [
+      "THE APPLE WATCH",
+      "REPAIR TRAP"
+    ],
+    "subject": 0.045,
+    "ink_subject": 0.018,
+    "spike": 0.154,
+    "generated_at": "2026-10-23T12:47:11+00:00"
+  }
+}

@@ -596,7 +596,7 @@ def sync_to_supabase(data: dict, live_urls: dict):
     # Idempotency: look up an existing row by metadata->>'slug'.
     try:
         req = urllib.request.Request(
-            f"{base}?metadata->>slug=eq.{slug_q}&select=id&limit=1",
+            f"{base}?metadata->>slug=eq.{slug_q}&select=id,metadata&limit=1",
             headers={"apikey": service_key, "Authorization": f"Bearer {service_key}",
                      "Accept": "application/json"},
         )
@@ -613,6 +613,18 @@ def sync_to_supabase(data: dict, live_urls: dict):
             update["updated_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
             if "metadata" not in update:
                 update["metadata"] = metadata
+            else:
+                # MERGE, never replace: this pass builds `metadata` from the artifact alone, while
+                # metadata.wordpress / internal_links are written by the later CMS and link steps.
+                # A wholesale PATCH here silently erased them on every re-sync (observed 2026-10-23:
+                # a published row lost its post_id, media_id and vertical term, so the next push
+                # would have created a duplicate post). Earlier keys win only where this pass has
+                # nothing to say.
+                previous_metadata = existing[0].get("metadata") or {}
+                merged = dict(previous_metadata)
+                merged.update({k: v for k, v in (update.get("metadata") or {}).items()
+                               if v not in (None, "", [], {})})
+                update["metadata"] = merged
             req = urllib.request.Request(
                 f"{base}?id=eq.{rid}",
                 data=json.dumps(update).encode("utf-8"),
