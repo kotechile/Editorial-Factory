@@ -167,6 +167,11 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > cites a record-low figure to CNBC while the signals file only mentions "CNBC" in prose (no URL)
 > reds the build. Write the full `https://` URL of every corroborating source you intend to cite into
 > this file (its own row or a primary-source note), not just the load-bearing anchors.
+> **The file the checker reads is the `_signals.md`, not the `_verified_brief.md`** (learned 2026-10-23):
+> a background URL parked only in the verified brief's table — a prior-year 10-K quoted for one computed
+> comparison, say — passes every other gate and then reds `--check-briefs` on both the draft and the
+> final, after the rewrite has already been paid for. Add such URLs to this file's `## Dated background`
+> list before the fact-check pass, not after Loop 3.
 
 ## 4. Failure handling
 - Zero candidates ≥ 60 → log query syntax to `skills/self_improvement_eval.md`, widen to 45 days,
