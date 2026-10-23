@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T17:14:16Z",
+  "updated_at": "2026-10-23T17:17:21Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3181,6 +3181,24 @@
       "date": "2026-10-23",
       "public": true,
       "url": "https://giniloh.com/your-26-week-cliff-kills-4-years/"
+    },
+    {
+      "slug": "2026-10-23_your-61-day-window-costs-the-position",
+      "title": "Your 61-Day Window Costs the Position",
+      "vertical": "concentrated_equity_portfolio_capital",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "financial_architect",
+      "date": "2026-10-23",
+      "public": false
     },
     {
       "slug": "2026-10-23_your-batterys-745-mw-cliff",

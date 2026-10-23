@@ -181,6 +181,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-23 | last_mile_routing_fleet_carbon | your-carbon-report-skips-2-lines | Your Carbon Report Skips 2 Lines: Trucks Aren't Counted | https://pressflow.aichieve.net/published/2026-10-23_your-carbon-report-skips-2-lines.md | reader site only |
 | 2026-10-23 | concentrated_equity_portfolio_capital | why-your-swap-died-at-25 | Why Your Swap Died at 25% | https://pressflow.aichieve.net/published/2026-10-23_why-your-swap-died-at-25.md | reader site only |
 | 2026-10-23 | consumer_asset_repair_replace_tco | your-cheap-part-a-599-bill | Your Cheap Part, a $599 Bill | https://pressflow.aichieve.net/published/2026-10-23_your-cheap-part-a-599-bill.md | reader site only |
+| 2026-10-23 | concentrated_equity_portfolio_capital | your-61-day-window-costs-the-position | Your 61-Day Window Costs the Position | https://pressflow.aichieve.net/published/2026-10-23_your-61-day-window-costs-the-position.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
