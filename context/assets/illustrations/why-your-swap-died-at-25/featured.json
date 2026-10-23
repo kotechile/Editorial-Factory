@@ -1,0 +1,88 @@
+{
+  "slug": "why-your-swap-died-at-25",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A thick legal dossier bound by a brass padlock on a wooden desk.",
+      "caption": "The IRS ruling leaves a strict seven-year lock as the only route for holders of concentrated equity positions.",
+      "title": "IRS Exchange Fund Ruling Lock",
+      "bytes": 321142,
+      "sha256": "sha256:ef9decf28b4ae4fe12ff3917927c5d82"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of a thick, embossed legal financial dossier resting on a dark walnut desk, bound tightly by a heavy, tarnished brass padlock. Shot with a 50mm lens at f/2.8 for a sharp top-down 90-degree view, focusing on the metallic lock texture while the surrounding muted paper tones fall slightly out of focus. Even diffused daylight from a nearby window casts a soft, long shadow across the plain desk surface. One corner of the document is slightly misaligned, suggesting recent handling. Modern, premium, editorial cover standard.",
+  "negative_prompt": "text, typography, watermark, text, numbers, signature",
+  "rationale": "This story hinges on a regulatory ruling by the IRS and the resulting contractual lock on financial assets. A document flatlay of a heavy financial filing bound by a physical lock perfectly captures the regulatory closure and the 'seven-year lock' constraint.",
+  "cue": "seven-year lock",
+  "subject": "a thick, embossed legal dossier bound by a heavy brass lock",
+  "core_thesis": "The IRS shut down the exchange fund wrapper used to defer taxes on large single-stock positions, effectively locking up concentrated equity under a seven-year rule.",
+  "core_conflict": "Tax deferral via pooled exchange funds versus strict IRS rules enforcing immediate taxation on concentrated single-stock transfers.",
+  "composition": "asymmetric top-down framing with the dossier anchored on the lower right third",
+  "alt_text": "End Of The Tax-Free Swap. A thick legal dossier bound by a brass padlock on a wooden desk.",
+  "caption": "End Of The Tax-Free Swap: How a new IRS ruling ends tax-free stock spreading.",
+  "title": "End Of The Tax-Free Swap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/why-your-swap-died-at-25/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 184861,
+  "sha256": "sha256:381b755c5fac9b265185d6f8b1a0cc542616fe0da41119bc1e6964032d342c18",
+  "source_hash": "sha256:36fefc40a8d5d61d0c38a04dba057448",
+  "source_chars": 4672,
+  "task_id": "bb1f609187a45dbd5939a4042c569935",
+  "credits": 5.0,
+  "cost_ms": 42,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/bb1f609187a45dbd5939a4042c569935_1792757453016.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of a thick, embossed legal financial dossier resting on a dark walnut desk, bound tightly by a heavy, tarnished brass padlock. Shot with a 50mm lens at f/2.8 for a sharp top-down 90-degree view, focusing on the metallic lock texture while the surrounding muted paper tones fall slightly out of focus. Even diffused daylight from a nearby window casts a soft, long shadow across the plain desk surface. One corner of the document is slightly misaligned, suggesting recent handling. Modern, premium, editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-23T12:10:58+00:00",
+  "overlay": {
+    "kicker": "CONCENTRATED EQUITY // SWAP RULING",
+    "title": "END OF THE TAX-FREE SWAP",
+    "hook": "How a new IRS ruling ends tax-free stock spreading",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 105,
+    "contrast": 5.51,
+    "target": 5.5,
+    "clutter": 0.395,
+    "region_rgb": [
+      85,
+      82,
+      83
+    ],
+    "binding_rgb": [
+      164,
+      161,
+      156
+    ],
+    "title_lines": [
+      "END OF THE",
+      "TAX-FREE SWAP"
+    ],
+    "subject": 0.276,
+    "ink_subject": 0.135,
+    "spike": 0.838,
+    "generated_at": "2026-10-23T12:10:58+00:00"
+  }
+}

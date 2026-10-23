@@ -295,3 +295,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-23 | `your-26-week-cliff-kills-4-years` | career_velocity_equity_engineering | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-26-week-cliff-kills-4-years/featured.jpg` |
 | 2026-10-23 | `your-carbon-report-skips-2-lines` | last_mile_routing_fleet_carbon | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-carbon-report-skips-2-lines/featured.jpg` |
 | 2026-10-23 | `your-carbon-report-skips-2-lines` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-carbon-report-skips-2-lines/featured.png` |
+| 2026-10-23 | `why-your-swap-died-at-25` | concentrated_equity_portfolio_capital | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-your-swap-died-at-25/featured.jpg` |
