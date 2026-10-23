@@ -1,0 +1,88 @@
+{
+  "slug": "your-26-week-cliff-kills-4-years",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Heavy steel paper guillotine blade resting on an embossed financial contract folio on a dark desk.",
+      "caption": "The exact wording of an exit package can abruptly cancel years of unvested equity before the vest date arrives.",
+      "title": "severance-equity-cliff-macro",
+      "bytes": 281863,
+      "sha256": "sha256:82fd7568d311690b9d5fafe7b3adabad"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of a heavy, brushed-steel paper guillotine blade resting sharply against a thick, embossed financial contract folio on a dark mahogany desk. 100mm macro lens, one razor-sharp focal plane capturing the crisp metallic edge of the blade and the tactile textured paper stock. Shallow depth of field with the background falling away into deep shadow. Soft directional daylight highlighting the cold industrial steel against the warm, premium paper. Extreme asymmetry, hero object off-centre on the thirds. Clean, sophisticated, editorial cover standard with rich material contrast.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, faces, human hands, ui, messy, cluttered",
+  "rationale": "The story hinges on precise, rigid contract lines cutting off years of equity; an extreme macro of a heavy paper-cutting blade on a financial document physically embodies this abrupt severance.",
+  "cue": "Your 26-Week Cliff",
+  "subject": "heavy steel paper guillotine blade resting on an embossed financial contract folio",
+  "core_thesis": "Unvested equity is highly vulnerable to abrupt severance policies, meaning a single corporate event can wipe out years of earned but unvested compensation.",
+  "core_conflict": "The structural vulnerability of unvested equity versus abrupt severance cutoffs.",
+  "composition": "extreme asymmetry with hero off-centre",
+  "alt_text": "The Cost Of Unvested Stock. Heavy steel paper guillotine blade resting on an embossed financial contract folio on a dark",
+  "caption": "The Cost Of Unvested Stock: Why sudden layoffs erase years of unvested stock grants.",
+  "title": "The Cost Of Unvested Stock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-26-week-cliff-kills-4-years/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 169375,
+  "sha256": "sha256:06ce4cb88454dabd4a9908015606a34477b765e79186befe60343923a59a0276",
+  "source_hash": "sha256:143c5e0e7b4ed4865633cbb8807d452d",
+  "source_chars": 3947,
+  "task_id": "6210ceafd08e7885ede2c29fedab0109",
+  "credits": 5.0,
+  "cost_ms": 60,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/6210ceafd08e7885ede2c29fedab0109_1792753944333.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of a heavy, brushed-steel paper guillotine blade resting sharply against a thick, embossed financial contract folio on a dark mahogany desk. 100mm macro lens, one razor-sharp focal plane capturing the crisp metallic edge of the blade and the tactile textured paper stock. Shallow depth of field with the background falling away into deep shadow. Soft directional daylight highlighting the cold industrial steel against the warm, premium paper. Extreme asymmetry, hero object off-centre on the thirds. Clean, sophisticated, editorial cover standard with rich material contrast.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-23T11:12:27+00:00",
+  "overlay": {
+    "kicker": "TECH EQUITY // VESTING CLIFFS",
+    "title": "THE COST OF UNVESTED STOCK",
+    "hook": "Why sudden layoffs erase years of unvested stock grants",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.86,
+    "target": 5.5,
+    "clutter": 0.276,
+    "region_rgb": [
+      145,
+      139,
+      135
+    ],
+    "binding_rgb": [
+      105,
+      101,
+      98
+    ],
+    "title_lines": [
+      "THE COST OF",
+      "UNVESTED STOCK"
+    ],
+    "subject": 0.076,
+    "ink_subject": 0.048,
+    "spike": 0.184,
+    "generated_at": "2026-10-23T11:12:27+00:00"
+  }
+}

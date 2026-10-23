@@ -292,3 +292,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-22 | `your-130000-cap-costs-the-credit` | expat_cross_border_relocation | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-130000-cap-costs-the-credit/featured.png` |
 | 2026-10-22 | `why-65-percent-of-stock-records-miss` | demand_sensing_advanced_sop | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-65-percent-of-stock-records-miss/featured.jpg` |
 | 2026-10-23 | `your-batterys-745-mw-cliff` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-batterys-745-mw-cliff/featured.jpg` |
+| 2026-10-23 | `your-26-week-cliff-kills-4-years` | career_velocity_equity_engineering | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-26-week-cliff-kills-4-years/featured.jpg` |
