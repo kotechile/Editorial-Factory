@@ -1,0 +1,88 @@
+{
+  "slug": "your-125-exam-costs-122-hours",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A massive stack of heavy timecards next to a single thin paper receipt on a wooden desk.",
+      "caption": "The true cost of a credential is measured in hours, not the nominal exam fee.",
+      "title": "certification-time-cost-flatlay",
+      "bytes": 443906,
+      "sha256": "sha256:a796e00e3bfd492a44b1e48a57ca1040"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, top-down 90-degree view, extreme asymmetric composition. A massive, thick stack of heavy, textured manila timecards sits dominantly on the left, dwarfing a single, thin, semi-translucent paper receipt resting on the right. Muted paper tones, visible tactile paper fibers, resting on a weathered oak desk surface. Even diffused daylight, soft directional cast shadows, no text or legible typography, one timecard slightly out of alignment to look handled. 50mm prime lens, razor-sharp edge-to-edge focus, premium editorial cover standard.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, logos, UI, unreadable text, human hands, people",
+  "rationale": "The story is fundamentally about reading wage tables and uncovering the hidden administrative 'bill' of certification. A document flatlay elegantly contrasts the massive physical weight of time against the flimsy reality of the cash fee.",
+  "cue": "the real bill",
+  "subject": "a massive stack of timecards dwarfing a single thin receipt",
+  "core_thesis": "The true cost of a certificate is the massive time investment required, not the minimal upfront exam fee.",
+  "core_conflict": "Trivial upfront cash fee vs. massive hidden time investment.",
+  "composition": "extreme asymmetry, top-down 90-degree view",
+  "alt_text": "Your Exam Costs 122 Hours. A massive stack of heavy timecards next to a single thin paper receipt on a wooden desk.",
+  "caption": "Your Exam Costs 122 Hours: The real price of a new skill is your unpaid study time.",
+  "title": "Your Exam Costs 122 Hours",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-125-exam-costs-122-hours/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 261754,
+  "sha256": "sha256:58458c1bc03cf76a388711adbe7e78da111eea25be0061c9f856b604cf70bef9",
+  "source_hash": "sha256:ed66adb89e069fa3139f161eec134dfc",
+  "source_chars": 6088,
+  "task_id": "08435d59999a4b0f4180787b31ed14bf",
+  "credits": 5.0,
+  "cost_ms": 50,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/08435d59999a4b0f4180787b31ed14bf_1792780854318.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, top-down 90-degree view, extreme asymmetric composition. A massive, thick stack of heavy, textured manila timecards sits dominantly on the left, dwarfing a single, thin, semi-translucent paper receipt resting on the right. Muted paper tones, visible tactile paper fibers, resting on a weathered oak desk surface. Even diffused daylight, soft directional cast shadows, no text or legible typography, one timecard slightly out of alignment to look handled. 50mm prime lens, razor-sharp edge-to-edge focus, premium editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-23T18:40:56+00:00",
+  "overlay": {
+    "kicker": "IT CERTIFICATES // THE TRUE COST",
+    "title": "YOUR EXAM COSTS 122 HOURS",
+    "hook": "The real price of a new skill is your unpaid study time",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 75,
+    "contrast": 4.71,
+    "target": 4.5,
+    "clutter": 0.154,
+    "region_rgb": [
+      145,
+      130,
+      117
+    ],
+    "binding_rgb": [
+      126,
+      111,
+      104
+    ],
+    "title_lines": [
+      "YOUR EXAM",
+      "COSTS 122 HOURS"
+    ],
+    "subject": 0.124,
+    "ink_subject": 0.07,
+    "spike": 0.342,
+    "generated_at": "2026-10-23T18:40:56+00:00"
+  }
+}

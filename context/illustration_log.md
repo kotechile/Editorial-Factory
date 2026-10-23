@@ -301,3 +301,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-23 | `your-61-day-window-costs-the-position` | concentrated_equity_portfolio_capital | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-61-day-window-costs-the-position/featured.png` |
 | 2026-10-23 | `your-nonrenewal-isnt-final-count-120-days` | resilient_home_assets | `editorial_macro` | flux | 16:9 | 2K | 7 | `context/assets/illustrations/your-nonrenewal-isnt-final-count-120-days/featured.jpg` |
 | 2026-10-23 | `your-nonrenewal-isnt-final-count-120-days` | resilient_home_assets | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-nonrenewal-isnt-final-count-120-days/featured.jpg` |
+| 2026-10-23 | `your-125-exam-costs-122-hours` | career_velocity_equity_engineering | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-125-exam-costs-122-hours/featured.jpg` |
