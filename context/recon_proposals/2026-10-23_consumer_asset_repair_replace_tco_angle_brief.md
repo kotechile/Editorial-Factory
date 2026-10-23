@@ -1,0 +1,32 @@
+# Angle Brief: consumer_asset_repair_replace_tco — 2026-10-23
+**Angle Type:** Synthesis (Cross-Topic Fusion)
+**Winner:** Your repair-or-replace ratio is set by two price lists you never see — the manufacturer's service ladder, which prices the same failure differently by case finish, and the memory market, which reprices the replacement. The part that actually failed barely enters the maths.
+**Scores:** E=8.5 A=9.0 S=8.5 → Composite=8.7
+
+**Signal A (Anchor 1):** iFixit teardown of the Apple Watch Series 12 and Ultra 4, published 2026-10-06 — both score 4 out of 10 for repairability; the battery is reached only by opening the screen; Apple sells no Watch repair parts, service tools or manuals to independent or DIY repairers; ten states have electronics Right to Repair laws covering more than a third of Americans, and iFixit says it believes Apple is out of compliance in all ten. The same post records Apple's out-of-warranty estimator at $99 for a battery repair and $599 for any other service on a Series 12 with GPS and Cellular, against a new aluminum Series 12 at $399 and the titanium model at $699 (https://www.ifixit.com/News/119658/apple-watch-series-12-and-ultra-4-teardown-reveals-a-gap-in-right-to-repair-coverage).
+
+**Signal B (Anchor 2):** TrendForce memory pricing release, 2026-09-30 — conventional DRAM contract prices projected to grow 10–15% quarter over quarter in 4Q26 and NAND Flash 15–20%, with notebook inventories "increasingly reflecting higher component costs in the fourth quarter, weighing on end-market sales", and PC DRAM supply possibly declining in 2027 as capacity shifts to servers (https://www.trendforce.com/presscenter/news/20260930-13258.html).
+
+**Emergent Collision Point:** Neither document looks at a repair decision, and together they explain why the standard rule of thumb (repair if the fix costs less than half a replacement) has stopped describing anything. The numerator — what a repair costs — is a published service ladder priced by case finish and configuration, not a pass-through of the failed part's cost: the watch's wear item is a battery that Apple services for $99, and reaching it means opening the same display that a non-battery repair replaces at several hundred dollars. The denominator — what a replacement costs — is now a commodity bet: TrendForce has memory and storage contract prices up another 10–15% and 15–20% in the quarter that starts next week, and notebook prices carry that into the shelf. So the ratio moves for reasons that have nothing to do with your device's age or condition. The one lever a tinkerer normally holds — substitute a cheap part, or substitute a used device — is the lever each leg removes: the manufacturer sells no part to substitute, and the replacement keeps repricing.
+
+**Hook:** A $99 battery is the part that ends an Apple Watch's life, and the cheapest repair on Apple's own list is also the one that requires opening the most expensive component in the device.
+
+**Tension:** Right to Repair has spent a decade arguing about access, and in ten states it has won the argument on paper. What the last fortnight shows is that access was never the whole price. A parts channel that does not exist cannot discipline a service ladder, and a replacement market repricing upward by double digits a quarter cannot serve as the cheap escape from it. The reader who budgets by the 50% rule is now pricing a ratio whose two halves are set in two places he does not sit.
+
+**Target reader:** systems_tinkerer_pro
+
+**Single claim to defend:** The repair-or-replace decision is no longer a property of the device — it is a property of who owns each price list, and in the same fortnight one list priced the same watch failure differently by case finish while the other raised the price of the machine you would replace it with.
+
+**Runner-ups + why rejected:**
+- **iFixit alone (single signal, 8.3 — N8.0 A9.0 S8.0).** The strongest single story in the window, and the anchor this piece is built on, but on its own it is a compliance complaint about one product. Scored below the synthesis on precedence (margin +0.4 ≥ 0.3).
+- **TrendForce alone (7.75 — N7.0 A9.0 S7.5).** Authority is excellent, novelty is not: memory repricing has anchored two desk pieces in the last ten days (`2026-10-13_your-32gb-card-gone`, `2026-10-20_your-24gb-card-is-4gb-short`), so it cannot carry a piece by itself. Retained here only as the denominator leg.
+- **Consumer Reports ⨂ iFixit — software tethering plus missing parts (8.2 — E8.0 A8.5 S8.0).** A genuinely good pairing on substance (two locks, one door), but it scored under the synthesis gate's margin against the single-signal winner, and CR's post is a policy argument rather than a measured price. Carried in the body as context, not as a leg.
+- **Consumer Reports alone (7.65).** Advocacy position; no measured figure of its own in the window.
+- **iFixit International Repair Day / ChromeOS Flex (5.9).** Real and in-window, but it is a goodwill initiative with no price or failure data — dropped.
+- **Framework's memory-cost updates (out of window, 2026-09-08).** The cleanest illustration that even a repairable-laptop maker passes commodity costs through to parts buyers, but 45 days old — carried as dated background, never as an anchor.
+- **MacRumors ceramic-case repair pricing (out of window, 2026-09-10).** The correction that the $599 fee belongs to the ceramic case while a cellular aluminum model was reported at $349. Used as a caveat on the anchor's price, not as an anchor.
+- **Section 232 appliance tariffs and the 2026 appliance price increases.** Out of window (April–August 2026), and the vertical's appliance angle is already better served by a tariff story than by a repair story this week.
+
+**De-dup (§3.5):** first run for this vertical — `context/published_log.md` carries no `consumer_asset_repair_replace_tco` row, and `grep -rl -iE "right to repair|iFixit" published/` returns nothing, so no prior artifact has argued the Right to Repair thesis. Desk-wide, the memory figure is demoted to a single supporting leg with no argument resting on it alone (it anchored two pieces in ten days), and the article makes no claim that repeats those pieces' grid-cost or VRAM framing.
+
+**Seeder:** rows=4 candidates=0 ("no mechanically valid pair" — this vertical has no registry archetype and the two anchors sit on ifixit.com and trendforce.com with no shared axis tokens). Recorded as input, not a verdict; the pair is asserted on substance under §2.5.

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T12:13:11Z",
+  "updated_at": "2026-10-23T12:45:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3207,6 +3207,24 @@
         "At a glance"
       ],
       "target_persona": "supply_chain_architect",
+      "date": "2026-10-23",
+      "public": false
+    },
+    {
+      "slug": "2026-10-23_your-cheap-part-a-599-bill",
+      "title": "Your Cheap Part, a $599 Bill",
+      "vertical": "consumer_asset_repair_replace_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-23",
       "public": false
     }
