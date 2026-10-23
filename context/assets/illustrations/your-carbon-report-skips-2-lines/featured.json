@@ -1,6 +1,6 @@
 {
   "slug": "your-carbon-report-skips-2-lines",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -9,80 +9,103 @@
       "title": "Fleet-Carbon-Omission",
       "bytes": 377211,
       "sha256": "sha256:dc49c385eeba292c44fb5662958d4abb"
+    },
+    {
+      "revision": 2,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, 35mm anamorphic wide lens with dramatic depth of field. Extreme asymmetric composition. An imposing, unbranded heavy commercial freight truck idling in a vast logistics staging yard at blue hour dawn. The truck commands the right third of the frame, grounded on wet textured asphalt. A single strong practical amber floodlight rakes across the weathered corrugated steel of the trailer and the brushed metal grill, creating deep industrial contrast and crisp atmospheric depth. The left side of the frame is vast, empty editorial negative space in cool teal shadows. Restrained teal-and-amber palette, highly detailed, editorial cover standard.",
+      "task_id": "1fa0440ae9f2821cb7193586d1eb6160",
+      "sha256": "sha256:e481fa03a54cecaf035e317ec9dfa046017d5f6b63809bd3dca38ecc1914a7e2",
+      "generated_at": "2026-10-23T11:40:57+00:00",
+      "source_hash": "sha256:02cfced2735750ddba7ec15e117937ce"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A modular mechanical assembly on concrete with three locked data modules and two visibly empty, disconnected slots.",
+      "caption": "State carbon reporting rules lock in direct fuel and power data while leaving supply chain transport lines optional.",
+      "title": "carbon-report-skipped-transport-lines",
+      "bytes": 2255472,
+      "sha256": "sha256:333f8bcdf9442c3fa7213456963aaeb7"
     }
   ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, 35mm anamorphic wide lens with dramatic depth of field. Extreme asymmetric composition. An imposing, unbranded heavy commercial freight truck idling in a vast logistics staging yard at blue hour dawn. The truck commands the right third of the frame, grounded on wet textured asphalt. A single strong practical amber floodlight rakes across the weathered corrugated steel of the trailer and the brushed metal grill, creating deep industrial contrast and crisp atmospheric depth. The left side of the frame is vast, empty editorial negative space in cool teal shadows. Restrained teal-and-amber palette, highly detailed, editorial cover standard.",
-  "negative_prompt": "text, typography, watermark, garbled letters, logos, people, human face",
-  "rationale": "The headline explicitly names trucks as the omitted entity. A cinematic still of an imposing freight truck captures the immense physical reality of the assets being excluded from the regulatory paperwork.",
-  "cue": "Trucks Aren't Counted",
-  "subject": "an unbranded heavy commercial freight truck in a staging yard",
-  "core_thesis": "The initial 2026 California carbon reporting mandate excludes freight and last-mile trucks, leaving a massive portion of the supply chain unaccounted for.",
-  "core_conflict": "Regulatory mandate vs. optional freight emission reporting",
-  "composition": "extreme asymmetry, hero subject commands the right third",
-  "alt_text": "Uncounted Fleet Emissions. A heavy commercial freight truck parked in a dark logistics yard illuminated by a single amber",
-  "caption": "Uncounted Fleet Emissions: State and federal carbon rules leave out freight fleets.",
-  "title": "Uncounted Fleet Emissions",
+  "prompt": "Matte clay 3D render of a modular regulatory reporting assembly resting on a weathered concrete surface. An engineered mechanical block features three securely locked data modules in muted grey polymer and brushed steel. Two designated transport slots remain distinctly empty and bypassed, featuring disconnected brass connector pins. Asymmetric off-centre framing rule with generous negative space. One directional key light raking across the matte surfaces, creating deep contact shadows and highlighting the moulding seams. Muted modern editorial palette, authentic industrial design elements. No text, no bare geometry.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, lettering, printed words",
+  "rationale": "A clay render allows us to construct the abstract regulatory 'lines' as physical modular slots in an engineered block, highlighting the missing transport data as a structural void.",
+  "cue": "skips the 2 lines",
+  "subject": "modular mechanical assembly with two empty transport slots",
+  "core_thesis": "California's 2026 carbon reporting mandate counts direct fuel and power but leaves supply chain transport lines optional.",
+  "core_conflict": "Mandated direct reporting vs. omitted outsourced freight data",
+  "composition": "asymmetric off-centre framing",
+  "alt_text": "Trucks Off The Carbon Ledger. A matte clay mechanical block on cracked concrete with three sealed data modules and two empty connector slots.",
+  "caption": "Trucks Off The Carbon Ledger: California's first carbon reports leave freight transport a choice.",
+  "title": "Trucks Off The Carbon Ledger",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
-  "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/your-carbon-report-skips-2-lines/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 202441,
-  "sha256": "sha256:e481fa03a54cecaf035e317ec9dfa046017d5f6b63809bd3dca38ecc1914a7e2",
+  "pinned": {
+    "style": "clay_render",
+    "model": "nanobanana"
+  },
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-carbon-report-skips-2-lines/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1744898,
+  "sha256": "sha256:69c38ce6886bcbb1989689d52939b12b618c310615f04dd61953aa608af892e8",
   "source_hash": "sha256:02cfced2735750ddba7ec15e117937ce",
   "source_chars": 4777,
-  "task_id": "1fa0440ae9f2821cb7193586d1eb6160",
-  "credits": 5.0,
-  "cost_ms": 21,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/1fa0440ae9f2821cb7193586d1eb6160_1792755651709.jpg",
+  "task_id": "4a1bf64a298999cf764898b30587f8d6",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b755d29ce22efc3bcb1f1596079581cf.png",
   "provider_request": {
-    "model": "flux-2/pro-text-to-image",
+    "model": "nano-banana-pro",
     "input": {
-      "prompt": "Cinematic film still, 35mm anamorphic wide lens with dramatic depth of field. Extreme asymmetric composition. An imposing, unbranded heavy commercial freight truck idling in a vast logistics staging yard at blue hour dawn. The truck commands the right third of the frame, grounded on wet textured asphalt. A single strong practical amber floodlight rakes across the weathered corrugated steel of the trailer and the brushed metal grill, creating deep industrial contrast and crisp atmospheric depth. The left side of the frame is vast, empty editorial negative space in cool teal shadows. Restrained teal-and-amber palette, highly detailed, editorial cover standard.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "prompt": "Matte clay 3D render of a modular regulatory reporting assembly resting on a weathered concrete surface. An engineered mechanical block features three securely locked data modules in muted grey polymer and brushed steel. Two designated transport slots remain distinctly empty and bypassed, featuring disconnected brass connector pins. Asymmetric off-centre framing rule with generous negative space. One directional key light raking across the matte surfaces, creating deep contact shadows and highlighting the moulding seams. Muted modern editorial palette, authentic industrial design elements. No text, no bare geometry.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "1K"
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
     }
   },
-  "generated_at": "2026-10-23T11:40:57+00:00",
+  "generated_at": "2026-10-23T11:43:13+00:00",
   "overlay": {
-    "kicker": "FLEET EMISSIONS // CARBON REPORTING",
-    "title": "UNCOUNTED FLEET EMISSIONS",
-    "hook": "State and federal carbon rules leave out freight fleets",
-    "anchor": "bottom-left",
-    "light": true,
-    "scrim": 0,
-    "contrast": 6.15,
+    "kicker": "FLEET EMISSIONS // CARBON RULES",
+    "title": "TRUCKS OFF THE CARBON LEDGER",
+    "hook": "New climate rules make fleet emissions optional",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 30,
+    "contrast": 4.75,
     "target": 4.5,
-    "clutter": 0.137,
+    "clutter": 0.201,
     "region_rgb": [
-      17,
-      72,
-      82
+      182,
+      166,
+      137
     ],
     "binding_rgb": [
-      24,
-      97,
-      103
+      159,
+      140,
+      108
     ],
     "title_lines": [
-      "UNCOUNTED",
-      "FLEET EMISSIONS"
+      "TRUCKS OFF THE",
+      "CARBON LEDGER"
     ],
-    "subject": 0.065,
-    "ink_subject": 0.038,
-    "spike": 0.174,
-    "generated_at": "2026-10-23T11:40:57+00:00"
+    "subject": 0.057,
+    "ink_subject": 0.035,
+    "spike": 0.148,
+    "generated_at": "2026-10-23T11:43:13+00:00"
   }
 }

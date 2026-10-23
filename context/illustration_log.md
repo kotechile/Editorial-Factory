@@ -294,3 +294,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-23 | `your-batterys-745-mw-cliff` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-batterys-745-mw-cliff/featured.jpg` |
 | 2026-10-23 | `your-26-week-cliff-kills-4-years` | career_velocity_equity_engineering | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-26-week-cliff-kills-4-years/featured.jpg` |
 | 2026-10-23 | `your-carbon-report-skips-2-lines` | last_mile_routing_fleet_carbon | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-carbon-report-skips-2-lines/featured.jpg` |
+| 2026-10-23 | `your-carbon-report-skips-2-lines` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-carbon-report-skips-2-lines/featured.png` |
