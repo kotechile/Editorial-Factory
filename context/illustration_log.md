@@ -303,3 +303,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-23 | `your-nonrenewal-isnt-final-count-120-days` | resilient_home_assets | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-nonrenewal-isnt-final-count-120-days/featured.jpg` |
 | 2026-10-23 | `your-125-exam-costs-122-hours` | career_velocity_equity_engineering | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-125-exam-costs-122-hours/featured.jpg` |
 | 2026-10-23 | `your-routes-5x-stop-gap` | last_mile_routing_fleet_carbon | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-routes-5x-stop-gap/featured.png` |
+| 2026-10-23 | `why-your-fridge-upgrade-pays-12-50` | consumer_asset_repair_replace_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-your-fridge-upgrade-pays-12-50/featured.jpg` |

@@ -1,0 +1,88 @@
+{
+  "slug": "why-your-fridge-upgrade-pays-12-50",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit garage.",
+      "caption": "The minimal yearly energy savings of a new refrigerator must be weighed against the significant capital and labor costs of replacement.",
+      "title": "Fridge-Efficiency-Repair-Economics",
+      "bytes": 310970,
+      "sha256": "sha256:679d0fe6b520b2fe09773f3f622b005e"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A pristine, modern, brushed-steel residential refrigerator standing partially uncrated on a scuffed concrete garage floor. Next to it, an old, grease-stained refrigerator compressor unit and a heavy canvas repair technician's tool bag. Single strong practical work light casting long, deep shadows. Crisp atmospheric depth, restrained teal-and-amber palette, quiet tension. No people facing camera, motion implied.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermark, signature",
+  "rationale": "Cinematic still sets an authentic, atmospheric scene in a real space, capturing the tension between the pristine new appliance and the reality of the repair labor. The wide anamorphic framing allows for dramatic lighting that highlights the disparity between the promised efficiency and the physical weight of the hardware.",
+  "cue": "Why Your Fridge Upgrade Pays $12.50",
+  "subject": "a new modern refrigerator standing next to an old compressor and a canvas tool bag",
+  "core_thesis": "The efficiency a new refrigerator buys is a $12.50-a-year saving, less than four hours of a repairer's time, so it can discount a replacement that a failure already justified but never be the reason for one.",
+  "core_conflict": "The minimal real-world power savings versus the high upfront capital and labor cost of replacement.",
+  "composition": "wide establishing composition, hero object off-centre",
+  "alt_text": "Fridge Replacement Math. A new brushed-steel refrigerator next to an old compressor and a tool bag in a dramatically lit",
+  "caption": "Fridge Replacement Math: Why power savings alone cannot justify buying a new fridge.",
+  "title": "Fridge Replacement Math",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/why-your-fridge-upgrade-pays-12-50/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 174960,
+  "sha256": "sha256:6e86792e5c034b7281abf3e3af7c940f2327c6a670d80d86a8b2b28565b5bf9b",
+  "source_hash": "sha256:cf09bd7a0c670239e7a3ae9ef3bd2664",
+  "source_chars": 5348,
+  "task_id": "f3af851c2f04548147d903f559081eb9",
+  "credits": 5.0,
+  "cost_ms": 165,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f3af851c2f04548147d903f559081eb9_1792784667031.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look, wide establishing composition. A pristine, modern, brushed-steel residential refrigerator standing partially uncrated on a scuffed concrete garage floor. Next to it, an old, grease-stained refrigerator compressor unit and a heavy canvas repair technician's tool bag. Single strong practical work light casting long, deep shadows. Crisp atmospheric depth, restrained teal-and-amber palette, quiet tension. No people facing camera, motion implied.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-23T19:44:30+00:00",
+  "overlay": {
+    "kicker": "APPLIANCE REPAIR // ENERGY SAVINGS",
+    "title": "FRIDGE REPLACEMENT MATH",
+    "hook": "Why power savings alone cannot justify buying a new fridge",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.46,
+    "target": 4.5,
+    "clutter": 0.185,
+    "region_rgb": [
+      35,
+      41,
+      40
+    ],
+    "binding_rgb": [
+      59,
+      70,
+      66
+    ],
+    "title_lines": [
+      "FRIDGE",
+      "REPLACEMENT MATH"
+    ],
+    "subject": 0.057,
+    "ink_subject": 0.033,
+    "spike": 0.154,
+    "generated_at": "2026-10-23T19:44:30+00:00"
+  }
+}

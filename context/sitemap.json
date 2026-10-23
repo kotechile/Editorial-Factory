@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T19:10:54Z",
+  "updated_at": "2026-10-23T19:44:43Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3143,6 +3143,24 @@
       "date": "2026-10-22",
       "public": true,
       "url": "https://aichieve.net/your-retrieval-misses-57/"
+    },
+    {
+      "slug": "2026-10-23_why-your-fridge-upgrade-pays-12-50",
+      "title": "Why Your Fridge Upgrade Pays $12.50",
+      "vertical": "consumer_asset_repair_replace_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-23",
+      "public": false
     },
     {
       "slug": "2026-10-23_why-your-swap-died-at-25",
