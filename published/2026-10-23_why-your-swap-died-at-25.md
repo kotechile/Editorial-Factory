@@ -63,17 +63,6 @@ The real limits sit elsewhere. The seven-year clock is written into the law, not
 
 I could be wrong about the timing. Treasury may decide the pool version is different enough to leave alone, and then this is a story about a wrapper almost nobody could use.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Calculate Your Career Relocation Payback" -> /calculate-your-career-relocation-payback/ [same site (giniloh.com); topical overlap: moving, taxable] Link "Calculate Your Career Relocation Payback" in the section where the article touches moving, taxable. -->
-<!-- internal-link hint: "Smart Ways to Invest an Extra $500 a Day" -> /smart-ways-to-invest-an-extra-500-a-day/ [same site (giniloh.com); topical overlap: fund, taxable] Link "Smart Ways to Invest an Extra $500 a Day" in the section where the article touches fund, taxable. -->
-## Related reading
-
-- [Calculate Your Career Relocation Payback](/calculate-your-career-relocation-payback/)
-- [Smart Ways to Invest an Extra $500 a Day](/smart-ways-to-invest-an-extra-500-a-day/)
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -85,6 +74,17 @@ I could be wrong about the timing. Treasury may decide the pool version is diffe
   - **A listed-transaction label:** The notice holds open the option of naming one of these trades, which would add reporting duties after the fact [2].
   - **Reach-back:** Guidance could cover trades already done, which is the gap between an old plan and an open bill [2].
 - **The Catch:** The notice does not address plain exchange funds and says so outright, so the "exchange funds are dead" read goes too far [2]. The break is also not free: it carries a seven-year clock and keeps the old cost basis [3][4].
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Calculate Your Career Relocation Payback" -> /calculate-your-career-relocation-payback/ [same site (giniloh.com); topical overlap: moving, taxable] Link "Calculate Your Career Relocation Payback" in the section where the article touches moving, taxable. -->
+<!-- internal-link hint: "Smart Ways to Invest an Extra $500 a Day" -> /smart-ways-to-invest-an-extra-500-a-day/ [same site (giniloh.com); topical overlap: fund, taxable] Link "Smart Ways to Invest an Extra $500 a Day" in the section where the article touches fund, taxable. -->
+## Related reading
+
+- [Calculate Your Career Relocation Payback](/calculate-your-career-relocation-payback/)
+- [Smart Ways to Invest an Extra $500 a Day](/smart-ways-to-invest-an-extra-500-a-day/)
+<!-- internal-links:end -->
 
 ## Sources
 [1] Internal Revenue Service, Rev. Rul. 2026-20 (2026-09-28) — https://www.irs.gov/pub/irs-drop/rr-26-20.pdf
