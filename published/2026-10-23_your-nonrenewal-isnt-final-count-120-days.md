@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Your home insurance nonrenewal letter isn't the final word, and the count is the part that pays. Florida gives an owner 120 days of warning before a policy…"
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-nonrenewal-isnt-final-count-120-days/featured.jpg"
-image_style: "editorial_macro"
+image_style: "studio_object"
 image_model: "flux"
-image_alt: "The Nonrenewal Clock. Heavy textured envelope with a stamped ink postmark resting on a dark desk."
-image_caption: "The Nonrenewal Clock: Late notices extend your coverage at the old price."
+image_alt: "The Nonrenewal Clock. A heavy brass mechanical date stamp resting on textured envelopes on a dark slate surface."
+image_caption: "The Nonrenewal Clock: Late carrier notices buy you time at the old price."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

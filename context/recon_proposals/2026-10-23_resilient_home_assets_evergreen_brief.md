@@ -29,5 +29,5 @@
 ## Gate result
 
 <!-- evergreen-gate:start -->
-<!-- evergreen-gate: helper=evergreen_gate.py rows=4 fetched=4 sources=4 hosts=3 decision="sha1:8dc74be4a7" dedup="matched a prior artifact: 2026-09-25_ca-fair-plan-rate-hike-" window_days=180 checked_at=2026-10-23T18:05:51+00:00 -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=4 fetched=4 sources=4 hosts=3 decision="sha1:8dc74be4a7" dedup="matched a prior artifact: 2026-09-25_ca-fair-plan-rate-hike-" window_days=180 checked_at=2026-10-23T18:18:50+00:00 -->
 <!-- evergreen-gate:end -->

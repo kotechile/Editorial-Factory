@@ -1,6 +1,6 @@
 {
   "slug": "your-nonrenewal-isnt-final-count-120-days",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -9,80 +9,100 @@
       "title": "Nonrenewal Notice Postmark",
       "bytes": 767808,
       "sha256": "sha256:e8b91964f778683e428fe3e7940da0a7"
+    },
+    {
+      "revision": 2,
+      "style": "editorial_macro",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy, textured official paper envelope resting on a dark polished mahogany desk. The focus is locked entirely on a dark, crisp ink postmark stamp pressed deeply into the tactile paper stock. Shallow depth of field, with the left side of the frame and background falling away into rich, soft directional daylight and deep amber shadows. Visible surface texture, paper fibers, and subtle dust motes in the light. Quiet confidence, refined editorial standard, striking material contrast.",
+      "task_id": "0ff4cdffa44f9c79a1cdcd703ddcae8d",
+      "sha256": "sha256:a59b435ce701c3c1c2969d94eb67962daab1d0bc5c0c603163340c8b4fc5caa7",
+      "generated_at": "2026-10-23T18:13:52+00:00",
+      "source_hash": "sha256:1e2eb7ccf995feeb653c05214dcc5147"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A heavy brass mechanical date stamp resting on textured envelopes on a dark slate surface.",
+      "caption": "The strict statutory timeline of a nonrenewal notice hinges entirely on the carrier's postmark date.",
+      "title": "nonrenewal-postmark-clock",
+      "bytes": 312480,
+      "sha256": "sha256:7e2a4dc8a0aa3fb7e055a048fea3534a"
     }
   ],
-  "style": "editorial_macro",
-  "style_label": "Editorial macro",
-  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
-  "resolution": "2K",
-  "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy, textured official paper envelope resting on a dark polished mahogany desk. The focus is locked entirely on a dark, crisp ink postmark stamp pressed deeply into the tactile paper stock. Shallow depth of field, with the left side of the frame and background falling away into rich, soft directional daylight and deep amber shadows. Visible surface texture, paper fibers, and subtle dust motes in the light. Quiet confidence, refined editorial standard, striking material contrast.",
-  "negative_prompt": "garbled text, random lettering, legible words, watermarks, UI, numbers, busy background",
-  "rationale": "The entire story pivots on the physical postmark of a mailed document acting as a legal trigger. An editorial macro of the stamped envelope grounds this abstract legal countdown in a tangible, high-stakes artifact.",
+  "resolution": "1K",
+  "prompt": "Studio product photograph of a heavy, industrial brass mechanical date stamp resting on a stack of thick, textured manila envelopes on a polished dark slate table. Softbox key light from the upper left casting a long, deep contact shadow to the right. Razor-sharp focal plane, 100mm macro lens, rich metallic reflections on the brass dials, catalogue clarity, three-quarter angle, moody atmospheric studio environment with soft dark background falloff, elegant and sophisticated premium editorial aesthetic.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, printed words, gradient sweep, floating elements, empty void",
+  "rationale": "Since the story pivots on the physical postmark and the exact date a letter is sent, elevating a heavy mechanical date stamp to a premium studio object emphasizes the legal weight and tangible reality of this regulatory clock.",
   "cue": "the postmark on the envelope",
-  "subject": "heavy paper envelope with a stamped ink postmark",
-  "core_thesis": "A nonrenewal is a process governed by a strict state-mandated legal clock, and a carrier's missed deadline keeps the old policy running at the old price.",
-  "core_conflict": "Carrier risk offloading versus strict state-mandated consumer notification timelines",
-  "composition": "extreme asymmetry, focal point on the right third",
-  "alt_text": "The Nonrenewal Clock. Heavy textured envelope with a stamped ink postmark resting on a dark desk.",
-  "caption": "The Nonrenewal Clock: Late notices extend your coverage at the old price.",
+  "subject": "a heavy brass mechanical date stamp resting on thick textured envelopes",
+  "core_thesis": "A nonrenewal notice is not an immediate cancellation but a legal countdown triggered by a postmark date.",
+  "core_conflict": "Insurance carrier's exit strategy versus strict statutory notification timelines.",
+  "composition": "asymmetrical composition with extreme negative space on the right",
+  "alt_text": "The Nonrenewal Clock. A heavy brass mechanical date stamp resting on textured envelopes on a dark slate surface.",
+  "caption": "The Nonrenewal Clock: Late carrier notices buy you time at the old price.",
   "title": "The Nonrenewal Clock",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
-  "pinned": {},
+  "pinned": {
+    "style": "studio_object"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/your-nonrenewal-isnt-final-count-120-days/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 471066,
-  "sha256": "sha256:a59b435ce701c3c1c2969d94eb67962daab1d0bc5c0c603163340c8b4fc5caa7",
+  "bytes": 184307,
+  "sha256": "sha256:998f06443eef170c43b7c783535a44dd97ccab792da370959c38943b35838d3d",
   "source_hash": "sha256:1e2eb7ccf995feeb653c05214dcc5147",
   "source_chars": 5141,
-  "task_id": "0ff4cdffa44f9c79a1cdcd703ddcae8d",
-  "credits": 7.0,
-  "cost_ms": 45,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/0ff4cdffa44f9c79a1cdcd703ddcae8d_1792779229869.jpg",
+  "task_id": "f9946ae87770929ce838087ba45bbc69",
+  "credits": 5.0,
+  "cost_ms": 57,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f9946ae87770929ce838087ba45bbc69_1792779350216.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy, textured official paper envelope resting on a dark polished mahogany desk. The focus is locked entirely on a dark, crisp ink postmark stamp pressed deeply into the tactile paper stock. Shallow depth of field, with the left side of the frame and background falling away into rich, soft directional daylight and deep amber shadows. Visible surface texture, paper fibers, and subtle dust motes in the light. Quiet confidence, refined editorial standard, striking material contrast.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "prompt": "Studio product photograph of a heavy, industrial brass mechanical date stamp resting on a stack of thick, textured manila envelopes on a polished dark slate table. Softbox key light from the upper left casting a long, deep contact shadow to the right. Razor-sharp focal plane, 100mm macro lens, rich metallic reflections on the brass dials, catalogue clarity, three-quarter angle, moody atmospheric studio environment with soft dark background falloff, elegant and sophisticated premium editorial aesthetic.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
       "aspect_ratio": "16:9",
-      "resolution": "2K"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-23T18:13:52+00:00",
+  "generated_at": "2026-10-23T18:15:55+00:00",
   "overlay": {
-    "kicker": "PROPERTY INSURANCE // NONRENEWAL LAWS",
+    "kicker": "HOME INSURANCE // NONRENEWAL LAWS",
     "title": "THE NONRENEWAL CLOCK",
-    "hook": "Late notices extend your coverage at the old price",
-    "anchor": "bottom-right",
+    "hook": "Late carrier notices buy you time at the old price",
+    "anchor": "top-right",
     "light": true,
     "scrim": 0,
-    "contrast": 15.98,
+    "contrast": 8.79,
     "target": 4.5,
     "clutter": 0.131,
     "region_rgb": [
-      24,
-      7,
-      3
+      62,
+      61,
+      63
     ],
     "binding_rgb": [
-      37,
-      12,
-      5
+      64,
+      65,
+      69
     ],
     "title_lines": [
       "THE NONRENEWAL",
       "CLOCK"
     ],
-    "subject": 0.048,
-    "ink_subject": 0.021,
-    "spike": 0.156,
-    "generated_at": "2026-10-23T18:13:52+00:00"
+    "subject": 0.044,
+    "ink_subject": 0.026,
+    "spike": 0.117,
+    "generated_at": "2026-10-23T18:15:55+00:00"
   }
 }
