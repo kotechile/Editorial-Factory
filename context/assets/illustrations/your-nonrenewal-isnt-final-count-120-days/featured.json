@@ -1,0 +1,88 @@
+{
+  "slug": "your-nonrenewal-isnt-final-count-120-days",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Heavy textured envelope with a stamped ink postmark resting on a dark desk.",
+      "caption": "The postmark on a nonrenewal letter triggers a strict state-mandated countdown, locking in existing rates if the carrier misses the deadline.",
+      "title": "Nonrenewal Notice Postmark",
+      "bytes": 767808,
+      "sha256": "sha256:e8b91964f778683e428fe3e7940da0a7"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy, textured official paper envelope resting on a dark polished mahogany desk. The focus is locked entirely on a dark, crisp ink postmark stamp pressed deeply into the tactile paper stock. Shallow depth of field, with the left side of the frame and background falling away into rich, soft directional daylight and deep amber shadows. Visible surface texture, paper fibers, and subtle dust motes in the light. Quiet confidence, refined editorial standard, striking material contrast.",
+  "negative_prompt": "garbled text, random lettering, legible words, watermarks, UI, numbers, busy background",
+  "rationale": "The entire story pivots on the physical postmark of a mailed document acting as a legal trigger. An editorial macro of the stamped envelope grounds this abstract legal countdown in a tangible, high-stakes artifact.",
+  "cue": "the postmark on the envelope",
+  "subject": "heavy paper envelope with a stamped ink postmark",
+  "core_thesis": "A nonrenewal is a process governed by a strict state-mandated legal clock, and a carrier's missed deadline keeps the old policy running at the old price.",
+  "core_conflict": "Carrier risk offloading versus strict state-mandated consumer notification timelines",
+  "composition": "extreme asymmetry, focal point on the right third",
+  "alt_text": "The Nonrenewal Clock. Heavy textured envelope with a stamped ink postmark resting on a dark desk.",
+  "caption": "The Nonrenewal Clock: Late notices extend your coverage at the old price.",
+  "title": "The Nonrenewal Clock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-nonrenewal-isnt-final-count-120-days/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 471066,
+  "sha256": "sha256:a59b435ce701c3c1c2969d94eb67962daab1d0bc5c0c603163340c8b4fc5caa7",
+  "source_hash": "sha256:1e2eb7ccf995feeb653c05214dcc5147",
+  "source_chars": 5141,
+  "task_id": "0ff4cdffa44f9c79a1cdcd703ddcae8d",
+  "credits": 7.0,
+  "cost_ms": 45,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0ff4cdffa44f9c79a1cdcd703ddcae8d_1792779229869.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy, textured official paper envelope resting on a dark polished mahogany desk. The focus is locked entirely on a dark, crisp ink postmark stamp pressed deeply into the tactile paper stock. Shallow depth of field, with the left side of the frame and background falling away into rich, soft directional daylight and deep amber shadows. Visible surface texture, paper fibers, and subtle dust motes in the light. Quiet confidence, refined editorial standard, striking material contrast.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "2K"
+    }
+  },
+  "generated_at": "2026-10-23T18:13:52+00:00",
+  "overlay": {
+    "kicker": "PROPERTY INSURANCE // NONRENEWAL LAWS",
+    "title": "THE NONRENEWAL CLOCK",
+    "hook": "Late notices extend your coverage at the old price",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 15.98,
+    "target": 4.5,
+    "clutter": 0.131,
+    "region_rgb": [
+      24,
+      7,
+      3
+    ],
+    "binding_rgb": [
+      37,
+      12,
+      5
+    ],
+    "title_lines": [
+      "THE NONRENEWAL",
+      "CLOCK"
+    ],
+    "subject": 0.048,
+    "ink_subject": 0.021,
+    "spike": 0.156,
+    "generated_at": "2026-10-23T18:13:52+00:00"
+  }
+}

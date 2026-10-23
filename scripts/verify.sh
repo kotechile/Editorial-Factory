@@ -332,6 +332,38 @@ if ! python3 "$ROOT/scripts/evergreen_gate.py" --check-artifacts --no-network; t
   FAIL=1
 fi
 
+# 8.66 Source accuracy floor (hard). Owner, 2026-10-23: a review pass caught articles whose citations
+#      did not support them and dropped them by hand — so the judgement is code now
+#      (scripts/source_gate.py, called by the publish gate, registry in context/source_quality.json).
+#      An article is HELD (created as a CMS draft, never live) when a citation does not resolve, when
+#      the page is not the document it is cited as, when an aggregator/mirror/social/tertiary page
+#      stands in for the origin, when one host is cited as if it were several, or when every citation
+#      is a press-release wire. Grandfathering by date is inside the module (enforced_from). The rules
+#      are pinned offline here — the suite stubs every fetch, so this gate never makes a request.
+if ! python3 "$ROOT/scripts/source_gate.py" --self-test >/dev/null 2>&1; then
+  echo "FAIL: source gate rules — detail:"
+  python3 "$ROOT/scripts/source_gate.py" --self-test 2>&1 | tail -8; FAIL=1
+fi
+if ! grep -q "import source_gate" "$ROOT/scripts/publish_gate.py" \
+   || ! grep -q "source_report(" "$ROOT/scripts/publish_gate.py"; then
+  echo "FAIL: scripts/publish_gate.py no longer calls the source gate (scripts/source_gate.py) — the citation floor would be unenforced at the push"
+  FAIL=1
+fi
+if ! python3 - "$ROOT/context/source_quality.json" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1]))
+missing = [k for k in ("min_sources", "min_hosts", "primary_suffixes", "primary_hosts",
+                       "blocked_hosts", "enforced_from") if k not in d]
+if missing:
+    print("source_quality.json missing:", ", ".join(missing)); sys.exit(1)
+if d["min_sources"] < 2 or d["min_hosts"] < 2:
+    print("the source floor may not be lowered below 2 sources / 2 hosts"); sys.exit(1)
+PY
+then
+  echo "FAIL: context/source_quality.json is incomplete or its floor was lowered"
+  FAIL=1
+fi
+
 # 8.7 Internal links (hard): candidates come from the live corpus and must be same-site, live, never
 #     the article itself, and never a mere domain match — and since the drafting stage cannot know the
 #     live corpus, the block itself is generated and delivered by scripts/internal_links.py (hooked

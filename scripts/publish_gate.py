@@ -134,6 +134,29 @@ def text_failures(path: pathlib.Path, *, root: pathlib.Path = ROOT) -> list[str]
     return fails
 
 
+def source_report(path: pathlib.Path) -> dict | None:
+    """The source-accuracy floor (scripts/source_gate.py), or None when it is switched off.
+
+    Owner, 2026-10-23: a review pass caught articles whose citations did not support them and
+    dropped them by hand; that judgement is now code. A citation that no longer resolves, a page
+    that is not the document it is cited as, an aggregator standing in for the origin it repeats,
+    or one site cited as if it were several — any of those holds the article at the push.
+
+    Grandfathered artifacts (dated before `source_quality.json: enforced_from`) are shape-checked
+    only: they can never be held, so the gate does not spend requests re-fetching a live article's
+    citations every time it is refreshed. `SOURCE_GATE=off|report|enforce` (default enforce).
+    """
+    mode = os.environ.get("SOURCE_GATE", "enforce").lower()
+    if mode == "off":
+        return None
+    import source_gate as sg
+    reg = sg.load_registry()
+    report = sg.gate(path, reg=reg, no_network=not sg.enforced_for(path, reg))
+    if mode == "report":
+        report["hold"] = False
+    return report
+
+
 def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
     """Gate the artifact for `slug`; optionally rewrite it once and re-gate.
 
@@ -169,7 +192,21 @@ def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
         report["title"] = {"error": f"title gate failed: {exc}"}
         headline_failures = [f"headline: the title gate could not run ({exc})"]
 
-    failures = body_failures + headline_failures
+    # The source floor is checked on the same pass. It is NOT rewritable — no amount of prose
+    # polish puts a working citation where a dead or impersonating one stands — so it holds by
+    # itself, exactly like a structurally broken headline.
+    source_failures: list[str] = []
+    try:
+        src = source_report(path)
+        if src is not None:
+            report["source_gate"] = {k: v for k, v in src.items() if k != "sources"}
+            if src.get("hold"):
+                source_failures = [f"sources: {b}" for b in src["blocking"]]
+    except Exception as exc:                           # noqa: BLE001 - report, never swallow
+        report["source_gate"] = {"error": f"the source gate could not run: {exc}"}
+        source_failures = [f"sources: the source gate could not run ({exc})"]
+
+    failures = body_failures + headline_failures + source_failures
     report["failures"] = failures
     if not failures:
         return report
@@ -177,14 +214,14 @@ def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
     if not rewrite:
         return report
 
-    # Only the PROSE earns a Loop 3 rewrite. A held headline does not: rewriting the whole body to
-    # fix a title would spend a frontier call and churn the article for nothing — and, before this,
-    # it also dropped the headline hold from the verdict (the re-gate only re-ran the text checks).
+    # Only the PROSE earns a Loop 3 rewrite. A held headline or a failed citation does not:
+    # rewriting the whole body to fix a title would spend a frontier call for nothing, and no
+    # rewrite can turn a dead or impersonating link into a source of record.
     if not body_failures:
         return report
 
     report["rewrite"] = attempt_rewrite(path)
-    report["failures"] = text_failures(path, root=root) + headline_failures
+    report["failures"] = text_failures(path, root=root) + headline_failures + source_failures
     report["verdict"] = "publish-after-rewrite" if not report["failures"] else "draft"
     return report
 
