@@ -34,6 +34,15 @@ For each claim:
    while the outlook's own heating-oil table gives a **+34%** price change and a +21% expenditure
    change). Quote the table, and write the divergence into the verified brief so the drafter cannot
    pick up the release's number by accident.
+ 5. **A program's own FAQ can contradict itself across sections — record the discrepancy, never reconcile it and never
+ quote the smaller aggregate as a total (learned 2026-10-23).** California's Demand Side Grid Support program page
+ says "up to $26.9 million of DEBA Program funds may be used to support the DSGS Program in the 2026 program season"
+ in one answer and "up to $42.7 million is available to fund Option 3 performance-based capacity payments" in the
+ next — a pool larger than the fund it is said to draw on. Both are the administrator's own words, so neither is
+ wrong to cite; what is wrong is merging them into "$26.9M total". Write the Option 3 figure as the Option 3 pool,
+ carry the DEBA line separately, and put the inconsistency in the brief as a FLAGGED row so the drafter cannot
+ quietly total two numbers the source never totals. The same test catches a statute authorising a program to 2032
+ beside an appropriation that funds one season: cite both, and never report the first as funding.
 
 ## 4. Output — the verified brief
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_verified_brief.md`:
