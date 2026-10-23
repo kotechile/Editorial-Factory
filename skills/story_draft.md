@@ -50,6 +50,12 @@ The **TOC is render-time only** — the site derives it from the section heading
   3. `- **What I'd Watch:** <intro line naming what the writer is watching next, and why>` followed by indented sub-bullets:
      - `  - **<Move Name>:** <1-line plain-English definition explaining what it does and why it works>`
   4. `- **The Catch:** <1-2 sentences detailing the trade-offs, upfront design requirements, security/access controls, and realistic caveats>`
+- **Renaming the slug mid-run orphans the old draft, and the voice gate reads every file in
+  `context/drafts/`.** Changing a working title after the first draft leaves
+  `YYYY-MM-DD_<old-slug>_draft.md` behind beside the new one; `check_social_voice.mjs` walks the
+  directory, `verify.sh` §9 counts its problems against the repo, and any step globbing `*_draft.md`
+  can pick the wrong file. Write the new file, confirm it exists, then delete the superseded path by
+  exact name — never assume a rename removed it.
 - **Pre-tune the draft to the accessibility floor before Loop 3.** Run
   `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. A draft that
   already clears the Flesch floor (~50) and carries a first-person observer cue in every interpreting
