@@ -1,6 +1,6 @@
 {
   "slug": "your-26-week-cliff-kills-4-years",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,11 +9,18 @@
       "title": "severance-equity-cliff-macro",
       "bytes": 281863,
       "sha256": "sha256:82fd7568d311690b9d5fafe7b3adabad"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A brushed-steel paper-trimmer blade rests on a thick embossed contract document on a dark wood desk, its edge poised just above the lettering.",
+      "caption": "The Cost Of Unvested Stock: Why sudden layoffs erase years of unvested stock grants.",
+      "title": "The Cost Of Unvested Stock",
+      "repaired": "alt text truncated mid-phrase by the director; completed by hand 2026-10-23"
     }
   ],
   "style": "editorial_macro",
   "style_label": "Editorial macro",
-  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "style_when": "the story turns on one physical thing — a part, a material, a component, a document — and what that thing costs, contains or crosses a border is the news",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,7 +34,7 @@
   "core_thesis": "Unvested equity is highly vulnerable to abrupt severance policies, meaning a single corporate event can wipe out years of earned but unvested compensation.",
   "core_conflict": "The structural vulnerability of unvested equity versus abrupt severance cutoffs.",
   "composition": "extreme asymmetry with hero off-centre",
-  "alt_text": "The Cost Of Unvested Stock. Heavy steel paper guillotine blade resting on an embossed financial contract folio on a dark",
+  "alt_text": "A brushed-steel paper-trimmer blade rests on a thick embossed contract document on a dark wood desk, its edge poised just above the lettering.",
   "caption": "The Cost Of Unvested Stock: Why sudden layoffs erase years of unvested stock grants.",
   "title": "The Cost Of Unvested Stock",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-26-week-cliff-kills-4-years/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "The Cost Of Unvested Stock. Heavy steel paper guillotine blade resting on an embossed financial contract folio on a dark"
+image_alt: "A brushed-steel paper-trimmer blade rests on a thick embossed contract document on a dark wood desk, its edge poised just above the lettering."
 image_caption: "The Cost Of Unvested Stock: Why sudden layoffs erase years of unvested stock grants."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -63,15 +63,6 @@ Oracle's package lives plainly in the contract and, based on reporting, runs thi
 
 A tender is not a true market either. It features one buyer, one price, and terms the company never publishes. I could be wrong, but the useful read here is narrower than assuming private stock is safe. The price of a grant is an event, the event belongs to the employer, and the only thing you can size in advance is how much unvested pay sits in front of the next one.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "SpaceX's Staggered Lockup" -> /staggered-lockup-six-selling-decisions/ [same site (giniloh.com); topical overlap: million, sell, shares] Link "SpaceX's Staggered Lockup" in the section where the article touches million, sell, shares. -->
-## Related reading
-
-- [SpaceX's Staggered Lockup](/staggered-lockup-six-selling-decisions/)
-<!-- internal-links:end -->
-
 <!-- tldr -->
 ## At a glance
 
@@ -82,6 +73,15 @@ A tender is not a true market either. It features one buyer, one price, and term
   - **Tender rhythm:** A yearly tender turns a single hope for cash into a series of priced windows, each carrying its own value [9][5].
   - **State layoff notices:** Public filings that set a last day weeks ahead, making the vest dates inside that window visible [8].
 - **The Catch:** Forfeiture on a layoff is normal plan design, and a tender is a one-buyer arrangement the company can skip; the comparison here is structural, not a measure of any one person's loss.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "SpaceX's Staggered Lockup" -> /staggered-lockup-six-selling-decisions/ [same site (giniloh.com); topical overlap: million, sell, shares] Link "SpaceX's Staggered Lockup" in the section where the article touches million, sell, shares. -->
+## Related reading
+
+- [SpaceX's Staggered Lockup](/staggered-lockup-six-selling-decisions/)
+<!-- internal-links:end -->
 
 ## Sources
 [1] Oracle Corporation, Form 10-Q for the quarter ended 31 August 2026, filed 11 September 2026 — https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm
