@@ -1,0 +1,90 @@
+{
+  "slug": "7-days-notice-rewrites-your-duty",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A mechanical sliding queue gate shifting beneath a heavy industrial block in matte clay.",
+      "caption": "The date a product is listed now moves faster than a supply chain can adapt, trapping importers in sudden tariff duties.",
+      "title": "Section-338-Tariff-Timeline",
+      "bytes": 1353675,
+      "sha256": "sha256:94a03d2d795b3ec4fdca09e8f5ceb6c5"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a mechanical sliding queue gate shifting beneath a heavy industrial block, resting on weathered concrete. Clean physical arrangement of modular blocks, a latched sorting rail, and a fast-closing gate mechanism. Asymmetric off-centre layout with generous editorial negative space. Matte surfaces with visible moulding seams, muted neutral palette with a single stark warning-orange accent on the sliding gate. One directional key light raking across the assembly, casting deep, long contact shadows.",
+  "negative_prompt": "text, garbled letters, numbers, watermark, UI, plain spheres, simple cubes, floating geometry",
+  "rationale": "The story is about structural, abstract policy shifts (timelines and queues) that outpace physical sourcing. A matte 3D clay render translates this temporal queue into a small mechanical assembly, making the abstract policy tangible.",
+  "cue": "a queue, and a product's place",
+  "subject": "a mechanical sliding queue gate shifting beneath a heavy block",
+  "core_thesis": "The rapid 7-day notice on Section 338 tariffs transforms duty payments from predictable costs into volatile refund claims, outpacing supply chain adaptation.",
+  "core_conflict": "Fast-moving regulatory timelines versus rigid physical supply chain sourcing cycles.",
+  "composition": "asymmetric off-centre layout",
+  "alt_text": "Seven Day Tariff Notices. A mechanical sliding queue gate shifting beneath a heavy industrial block in matte clay.",
+  "caption": "Seven Day Tariff Notices: Rapid duty changes turn supply costs into refund claims.",
+  "title": "Seven Day Tariff Notices",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/7-days-notice-rewrites-your-duty/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 984350,
+  "sha256": "sha256:0e3b547a6f112d3cd2645310e25bbeda6d031a688d65cb3d7815e104aa2283ab",
+  "source_hash": "sha256:936896c77ef7996154d1c82d9556e6c1",
+  "source_chars": 6253,
+  "task_id": "0cec5fdeeb53c034e4bd2d61d7f57561",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_68517ddc7d27900848626604d7f508f2.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a mechanical sliding queue gate shifting beneath a heavy industrial block, resting on weathered concrete. Clean physical arrangement of modular blocks, a latched sorting rail, and a fast-closing gate mechanism. Asymmetric off-centre layout with generous editorial negative space. Matte surfaces with visible moulding seams, muted neutral palette with a single stark warning-orange accent on the sliding gate. One directional key light raking across the assembly, casting deep, long contact shadows.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-24T06:41:25+00:00",
+  "overlay": {
+    "kicker": "SUPPLY RISK // SECTION 338 TARIFFS",
+    "title": "SEVEN DAY TARIFF NOTICES",
+    "hook": "Rapid duty changes turn supply costs into refund claims",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.21,
+    "target": 4.5,
+    "clutter": 0.004,
+    "region_rgb": [
+      188,
+      178,
+      161
+    ],
+    "binding_rgb": [
+      189,
+      177,
+      161
+    ],
+    "title_lines": [
+      "SEVEN DAY",
+      "TARIFF NOTICES"
+    ],
+    "subject": 0.001,
+    "ink_subject": 0.001,
+    "spike": 0.0,
+    "generated_at": "2026-10-24T06:41:25+00:00"
+  }
+}

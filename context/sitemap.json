@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T06:14:25Z",
+  "updated_at": "2026-10-24T06:41:40Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3327,6 +3327,24 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-23",
+      "public": false
+    },
+    {
+      "slug": "2026-10-24_7-days-notice-rewrites-your-duty",
+      "title": "7 Days Notice Rewrites Your Duty",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-24",
       "public": false
     },
     {
