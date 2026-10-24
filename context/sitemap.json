@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T19:45:47Z",
+  "updated_at": "2026-10-24T06:14:25Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3327,6 +3327,23 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-23",
+      "public": false
+    },
+    {
+      "slug": "2026-10-24_your-home-servers-45-day-patch-gap",
+      "title": "Your Home Server's 45-Day Patch Gap",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-24",
       "public": false
     }
   ]

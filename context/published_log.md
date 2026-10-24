@@ -186,6 +186,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-23 | career_velocity_equity_engineering | your-125-exam-costs-122-hours | Your $125 Exam Costs 122 Hours | https://pressflow.aichieve.net/published/2026-10-23_your-125-exam-costs-122-hours.md | reader site only |
 | 2026-10-23 | last_mile_routing_fleet_carbon | your-routes-5x-stop-gap | Your Route's 5x Stop Gap: Density Beats Routing | https://pressflow.aichieve.net/published/2026-10-23_your-routes-5x-stop-gap.md | reader site only |
 | 2026-10-23 | consumer_asset_repair_replace_tco | why-your-fridge-upgrade-pays-12-50 | Why Your Fridge Upgrade Pays $12.50 | https://pressflow.aichieve.net/published/2026-10-23_why-your-fridge-upgrade-pays-12-50.md | reader site only |
+| 2026-10-24 | personal_microeconomics_tinkering_tax | your-home-servers-45-day-patch-gap | Your Home Server's 45-Day Patch Gap | https://pressflow.aichieve.net/published/2026-10-24_your-home-servers-45-day-patch-gap.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,0 +1,90 @@
+{
+  "slug": "your-home-servers-45-day-patch-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An unlatched modular drive bay resting on a brushed steel surface, casting a long shadow.",
+      "caption": "The vulnerability of self-hosting lies in the days between a patch release and its application.",
+      "title": "home-server-patch-gap",
+      "bytes": 1618691,
+      "sha256": "sha256:678d0982f86d29fc0e320c8feb95e302"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered brushed steel surface. Extreme asymmetric off-centre framing. Two recognisable engineered parts: a network storage drive module and an unlatched inspection gate left visibly open. The parts are arranged in a deliberate tiered stack, constructed from matte textured polymer and frosted copper components. One harsh directional key light throws a long, stretching cast shadow across the steel surface, emphasizing the exposed open gate. Muted modern editorial palette, clean hard edges, generous negative space.",
+  "negative_prompt": "garbled text, random lettering, printed words, watermarks, UI, text",
+  "rationale": "The story is about a single failure point\u2014an unapplied patch\u2014in a home storage environment. A component assembly of a modular drive bay with an unlatched gate captures the physical metaphor of an open, vulnerable personal server without resorting to literal hacking cliches.",
+  "cue": "45 days from notice to public exploit",
+  "subject": "an unlatched modular drive bay",
+  "core_thesis": "The real cost of self-hosting is the dangerous 45-day gap between a free patch release and public exploit on an unmaintained home server.",
+  "core_conflict": "Free setup weekend vs the ongoing operational security debt of unpatched software",
+  "composition": "extreme asymmetric off-centre framing",
+  "alt_text": "The Plex Server Patch Gap. An unlatched modular drive bay resting on a brushed steel surface, casting a long shadow.",
+  "caption": "The Plex Server Patch Gap: The hidden cost of ignoring a free security fix.",
+  "title": "The Plex Server Patch Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.png",
+  "local_path": "context/assets/illustrations/your-home-servers-45-day-patch-gap/featured.png",
+  "ext": "png",
+  "content_type": "image/png",
+  "bytes": 1195251,
+  "sha256": "sha256:d77a2c61f30880471c8b8d00d588400379d4ec46ea26839f738d15c3a5953f09",
+  "source_hash": "sha256:30dde6272a7afa5fcff09b8e7566e096",
+  "source_chars": 5454,
+  "task_id": "825f9e3b532a863a01afdc6585a0885f",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_07d5454e93407c2e239874cffab9a0bc.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered brushed steel surface. Extreme asymmetric off-centre framing. Two recognisable engineered parts: a network storage drive module and an unlatched inspection gate left visibly open. The parts are arranged in a deliberate tiered stack, constructed from matte textured polymer and frosted copper components. One harsh directional key light throws a long, stretching cast shadow across the steel surface, emphasizing the exposed open gate. Muted modern editorial palette, clean hard edges, generous negative space.\n\nDo not include: garbled text, random lettering, numbers, watermarks, UI.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-24T06:14:10+00:00",
+  "overlay": {
+    "kicker": "HOME SERVERS // THE PATCH GAP",
+    "title": "THE PLEX SERVER PATCH GAP",
+    "hook": "The hidden cost of ignoring a free security fix",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 9.23,
+    "target": 4.5,
+    "clutter": 0.022,
+    "region_rgb": [
+      221,
+      219,
+      211
+    ],
+    "binding_rgb": [
+      219,
+      217,
+      205
+    ],
+    "title_lines": [
+      "THE PLEX SERVER",
+      "PATCH GAP"
+    ],
+    "subject": 0.004,
+    "ink_subject": 0.002,
+    "spike": 0.011,
+    "generated_at": "2026-10-24T06:14:10+00:00"
+  }
+}

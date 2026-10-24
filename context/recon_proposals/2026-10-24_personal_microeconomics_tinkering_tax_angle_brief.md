@@ -1,0 +1,27 @@
+# Angle Brief: personal_microeconomics_tinkering_tax — 2026-10-24
+
+**Angle Type:** Single-Signal
+**Winner:** Your Media Server's 45-Day Patch Gap — the box you built to stop renting films spent October mining someone else's coin and reselling your home connection, because a free fix sat unapplied.
+**Scores:** N=9.0 A=9.5 S=8.8 → Composite=9.1
+
+**Hook:** Plex posted its security advisory on 2026-09-01 and told every server owner to update. Forty-five days later a public proof of concept landed on 2026-10-16, and Plex now says the flaws "are being actively and widely exploited" — with compromised home servers running cryptocurrency miners and proxy software that "routes other people's traffic through the victim's internet connection" (https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319).
+
+**Tension:** Self-hosting is priced, by everyone who advocates it, in setup hours. The bill that actually arrived this month is priced in **days between the fix and the patch**. Four vulnerabilities (CVE-2026-96652, -96654, -96655, -96656) chain into unauthenticated remote code execution in Plex Media Server before 1.43.3.10861; CISA added all four to its Known Exploited Vulnerabilities catalogue on 2026-10-20 and gave federal agencies until 2026-10-23 for the file-write stage (https://www.cisa.gov/known-exploited-vulnerabilities-catalog). Eight days after Plex's advisory, Shadowserver's daily scan still found over 36,000 internet-exposed instances unpatched. The hobbyist's exposure is not the licence fee he avoided; it is the rebooting, the NAS package manager that lags, the Docker image nobody rebuilt — and the fact that the payoff for not doing it is now a stranger's mining rig on his electricity and his residential IP for sale.
+
+**Target reader:** `systems_tinkerer_pro` — "tinkering tax audits, self-hosting maintenance breakdown".
+
+**Single claim to defend:** For a self-hosted service, patch latency — not hardware, not subscriptions — is the cost line that decides whether the project was worth building, and October 2026 put a price on it: 45 days from vendor advisory to public exploit, one day from exploit to infection.
+
+**Runner-ups + why rejected:**
+
+- **Synthesis attempt 1 — Plex2Shell ⨂ the always-on homelab premise (row 8):** the collision would be that continuous uptime is the feature that makes the box worth running and the property that makes it reachable. Scored E=7.0 A=7.0 S=8.0 → **7.35**. Leg B is an opinion piece with no measurement and no operator data, so the dual-authority axis collapses; below the 8.0 floor and far below the precedence bar (9.4).
+- **Synthesis attempt 2 — Plex2Shell ⨂ residential-proxy market pricing** (your home IP as a priced commodity): rejected before scoring. Every fetchable per-GB pricing page is a proxy vendor's own marketing page or an SEO round-up, with no in-window primary measurement; a leg that cannot be verified cannot anchor a synthesis (`skills/fact_check.md` §5).
+- **Seeded candidates:** `synthesize_topics.py --seed` returned `rows=8 candidates=0` ("no valid pair") — all eight rows sit on the same three domains and share Plex/CVE vocabulary, so the token layer has nothing to collide. That is an input, not a verdict: attempt 1 above is the synthesis the token layer could not see, and it still fails the axes.
+- **The Plex ad-substitution story** (owners reporting ads on "their own" library; resolved on Plex's own forum as the app playing Plex's ad-supported copy of a title rather than the local file): rejected as an anchor. The only dated first-party account is a personal blog, and the forum thread resolves the claim against the sensational reading; it would have been a FLAGGED row at best.
+- **Filament cost (SpoolHound index, 2026-10-18):** dropped. Its own page states PLA at €20.44/kg trimmed mean and €20.24 median, "+4.3%", "+3.5%" and "down 0.8% since base" on the same screen, and it is a 109-day-old aggregator with no methodology audit trail; a self-contradicting index cannot anchor a claim, and the fabrication angle already has a published evergreen (2026-10-03).
+- **Plex Lifetime Pass price rise ($250 → $750 from 2026-07-01):** out of window; carried nowhere.
+- **MinIO's GitHub archive:** the archive date is 2026-04-25, and the in-window item is a third-party "alternatives" post. No fresh event.
+
+**De-dup (§3.5, prior 30 days, this vertical):** nearest neighbours are `2026-10-10_self-hosting-break-even-one-hour-a-year` (prices the *labour hours* of upkeep — no security claim, no shared source), `2026-10-10_home-assistant-cloud-rename-hardware-rent` (a vendor's naming and rent decision), `2026-10-17_pi-5-price-jump-older-kit-wins` (capital prices) and `2026-10-17_your-disks-35-dead-by-year-six` (disk mortality). Distinct thesis and distinct sources in every case; Novelty is not capped. **Cross-vertical neighbour, named deliberately:** `2026-10-14_your-cluster-hidden-clock` (enterprise_build_vs_buy) prices an upstream *release-support calendar* for teams; this reports an exploited vulnerability and the gap between fix and application on home servers. No shared figure, no shared source, and the reader's decision is different (whether to keep the box online at all versus how to staff an upgrade cadence).
+
+**Why not a retread of the desk's own security coverage:** the desk has published nothing on CISA's KEV catalogue, on Plex, or on patch latency (`grep -rlw -i "plex\|jellyfin\|emby" published/` → 0; no published artifact mentions KEV).
