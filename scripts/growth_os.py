@@ -233,7 +233,8 @@ def _slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
 
 
-def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclude_slugs=()):
+def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclude_slugs=(),
+                               category_id=None):
     """Propose internal links from the site's real, live corpus.
 
     Candidates come from context/internal_links.json, whose liveness is decided by each frontend's
@@ -257,7 +258,10 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
     if index:
         routing = _site_for_vertical(vertical) or {}
         destination = routing.get("site_domain")
-        destination_category = routing.get("wp_category_id")
+        # A per-post category override (an editor's taxonomy call) wins over the vertical's
+        # default: the hub a reader is sent to has to be the category the article is filed
+        # under, not the one its vertical usually lands in.
+        destination_category = category_id or routing.get("wp_category_id")
         category_names = ((index.get("categories") or {}).get(destination or "", {}) or {})
         # The category axis matches on the SLUG the destination's own front publishes (the hub URL a
         # reader and the corpus can both verify). The routing row still carries a WordPress category id,

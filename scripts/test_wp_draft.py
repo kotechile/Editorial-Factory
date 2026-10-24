@@ -508,6 +508,13 @@ payload_no_cat, notes_no_cat = wd.build_payload(ROW, no_cat_site)
 check("no routed category => no categories key, so WordPress's default applies",
       "categories" not in payload_no_cat)
 check("...and the operator is told to set one", any("wp_category_id" in n for n in notes_no_cat), notes_no_cat)
+overridden_row = {**ROW, "metadata": {**ROW["metadata"],
+                                     "wordpress": {"post_id": 101, "category_id": 2}}}
+payload_override, notes_override = wd.build_payload(overridden_row, SITE)
+check("a per-post category override beats the vertical's default",
+      payload_override.get("categories") == [2], str(payload_override.get("categories")))
+check("...and the note says it came from the row",
+      any("per-post override" in n for n in notes_override), str(notes_override))
 
 print("\nvertical — the CMS taxonomy term the reader fronts route on")
 # The gap this covers: one CMS can serve several fronts (cms.giniloh.com feeds giniloh.com AND

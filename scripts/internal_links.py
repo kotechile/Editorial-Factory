@@ -311,7 +311,7 @@ def stamp_links(links, renderers, site_domain=None) -> tuple[list[dict], list[st
 # ─────────────────────────────────────────────────────────────────────────────
 
 def resolve_links(topic: str, vertical: str | None, max_links: int = MAX_LINKS,
-                  exclude_slugs=()) -> list[dict]:
+                  exclude_slugs=(), category_id=None) -> list[dict]:
     """Propose links for the destination site of `vertical`, from the live corpus.
 
     The single seam: everything above is pure (no network, no clock) and the regression suite
@@ -319,7 +319,8 @@ def resolve_links(topic: str, vertical: str | None, max_links: int = MAX_LINKS,
     """
     import growth_os as gos
     return gos.generate_internal_link_map(topic, vertical, max_links=max_links,
-                                          exclude_slugs=tuple(exclude_slugs))
+                                          exclude_slugs=tuple(exclude_slugs),
+                                          category_id=category_id)
 
 
 def _links_note(links, vertical, topic) -> str:
@@ -345,7 +346,7 @@ def same_site(url: str, domain: str) -> bool:
 
 def enrich(markdown: str, *, vertical: str | None = None, topic: str | None = None,
            links=None, exclude_slugs=(), max_links: int = MAX_LINKS,
-           site_domain: str | None = None) -> tuple[str, list[str], list[dict]]:
+           site_domain: str | None = None, category_id=None) -> tuple[str, list[str], list[dict]]:
     """Fill the artifact's internal links. Returns (markdown, notes, links_used).
 
     Idempotent: a previously generated block is replaced by the freshly scored one (same delimiters),
@@ -370,7 +371,7 @@ def enrich(markdown: str, *, vertical: str | None = None, topic: str | None = No
                          "link, and guessing one mis-routes content)")
         else:
             links = resolve_links(topic or topic_for(title, body), vertical, max_links,
-                                  exclude_slugs) or []
+                                  exclude_slugs, category_id=category_id) or []
     links = list(links)
     if links:
         links, stamp_notes = stamp_links(links, renderers_for(links), site_domain)
@@ -467,7 +468,9 @@ def ensure_for_row(row: dict, *, persist: bool = True, db=None, links=None,
 
     enriched, notes, used = enrich(
         content, vertical=vertical, topic=topic_from_row(metadata, content), links=links,
-        exclude_slugs=(slug,) if slug else (), max_links=max_links, site_domain=site_domain)
+        exclude_slugs=(slug,) if slug else (), max_links=max_links, site_domain=site_domain,
+        # The post's own category (an editor's override) decides which hub it links to.
+        category_id=(metadata.get("wordpress") or {}).get("category_id"))
 
     if enriched == content:
         notes.append(f"no change: the block already holds {len(existing)} link(s)")

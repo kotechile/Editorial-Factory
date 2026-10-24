@@ -705,10 +705,16 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
     # WordPress's default (Uncategorized) leaves work for the operator and, if missed, a post that
     # never appears on a category page. The id is per-site, so it is routed per vertical in
     # public.vertical_sites (migrations/0004) — never guessed from the vertical name here.
-    category_id = site.get("wp_category_id")
+    # A per-post override recorded by `--category` wins: the vertical routes the SITE, not the
+    # story's desk taxonomy. An insurance nonrenewal piece filed under Energy & Efficiency tells
+    # every reader arriving from that category page that it is about something else.
+    recorded_category = (metadata.get(WORDPRESS) or {}).get("category_id")
+    category_id = recorded_category or site.get("wp_category_id")
     if category_id:
         payload["categories"] = [int(category_id)]
-        notes.append(f"category {int(category_id)} (from {SITES_TABLE}.wp_category_id)")
+        notes.append(f"category {int(category_id)} "
+                     + ("(recorded on the row — per-post override)"
+                        if recorded_category else f"(from {SITES_TABLE}.wp_category_id)"))
     else:
         notes.append(f"no {SITES_TABLE}.wp_category_id for this vertical — WordPress will file the "
                      f"draft under its default category; set one before publishing")
@@ -1695,11 +1701,23 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         # `vertical` is recorded next to it rather than instead of it).
         "vertical": vertical,
         "vertical_term_id": int(vertical_term["id"]) if vertical_term else None,
+        # An editor's per-post taxonomy call survives the push. Without this the record rebuild
+        # dropped `category_id`, and the NEXT --refresh filed the post back under the vertical's
+        # default category (observed 2026-10-24 on the nonrenewal piece: Home Cost Decisions ->
+        # Energy & Efficiency on the following push). Only a DEVIATION is recorded: a category that
+        # matches the vertical default must stay re-routable when the mapping changes.
         "pushed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "pushed_by": "scripts/wp_draft.py",
         "internal_links": internal_link_count(payload["content"], site["site_domain"]),
         "verified": not problems,
     }
+    # Keep a recorded category only when it is a deliberate deviation from the vertical's default.
+    _default_category = site.get("wp_category_id")
+    _chosen = int(payload["categories"][0]) if payload.get("categories") else None
+    _recorded = (metadata.get(WORDPRESS) or {}).get("category_id")
+    if _chosen is not None and (_recorded or
+                                (int(_default_category) if _default_category else None) != _chosen):
+        record["category_id"] = _chosen
     if media:
         # Recorded so the next push reuses this attachment (no duplicate bytes in the library) and
         # so the image can be found again by hand from the Supabase row alone. `media_sha` is the
@@ -1770,6 +1788,62 @@ def retitle_slug(slug: str, *, db=None, title: str | None = None) -> dict:
             "problems": problems}
 
 
+def resolve_category(wp, value) -> dict:
+    """A category on THIS site from an id, a slug or a name — or an explicit failure listing the rest."""
+    text = str(value or "").strip()
+    if not text:
+        raise RuntimeError("--category needs an id, slug or name")
+    if text.isdigit():
+        _, item = wp._call("GET", f"categories/{int(text)}?_fields=id,name,slug")
+        if not item:
+            raise RuntimeError(f"no category {text} on {wp.base}")
+        return item
+    categories = wp.terms("categories") or []
+    for item in categories:
+        if str(item.get("slug")) == text.lower():
+            return item
+    for item in categories:
+        if str(item.get("name") or "").lower() == text.lower():
+            return item
+    raise RuntimeError(f"no category {text!r} on {wp.base} — available: "
+                       + ", ".join(f"{c.get('slug')} ({c.get('id')})" for c in categories))
+
+
+def set_category(slug: str, value, *, db=None, wp_factory=None) -> dict:
+    """Move ONE post to another CMS category and remember the choice on the row.
+
+    The vertical's `wp_category_id` routes a site, not a story's desk taxonomy: an insurance
+    nonrenewal filed under Energy & Efficiency misleads every reader who arrives from that category
+    page. The override is written to `metadata.wordpress.category_id`, which `build_payload` prefers
+    over the vertical default, so a later `--refresh` cannot quietly file it back.
+    """
+    db = db or Supabase(*supabase_config())
+    rows = db.articles(slug=slug)
+    if not rows:
+        raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
+    row = rows[0]
+    metadata = dict(row.get("metadata") or {})
+    vertical = metadata.get("vertical") or (row.get("tags") or [""])[0]
+    site = db.site_for(vertical)
+    user, password = credentials_for(site["site_domain"])
+    wp = (wp_factory or (lambda base, u, p: WordPress(base, u, p)))(
+        site["cms_base_url"], user, password)
+    category = resolve_category(wp, value)
+    post = wp.find_by_slug(slug)
+    if not post:
+        raise RuntimeError(f"{site['site_domain']} holds no post for '{slug}' — push it first")
+    before = (wp.read_back(post["id"]) or {}).get("categories") or []
+    wp._call("POST", f"posts/{int(post['id'])}", {"categories": [int(category["id"])]})
+    after = (wp.read_back(post["id"]) or {}).get("categories") or []
+    record = {**(metadata.get(WORDPRESS) or {}), "category_id": int(category["id"]),
+              "category_name": category.get("name")}
+    db.record_push(row["id"], metadata, record)
+    return {"slug": slug, "site": site["site_domain"], "post_id": post["id"],
+            "category": category, "before": before, "after": after,
+            "problems": [] if [int(c) for c in after] == [int(category["id"])]
+            else [f"sent category {category['id']}, CMS holds {after}"]}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Push generated articles to their vertical's WordPress CMS as live posts (status publish)")
     parser.add_argument("--slug", help="Article slug (metadata->>slug)")
@@ -1792,6 +1866,11 @@ def main() -> int:
                              "(after re-commissioning it with `illustration_creator.py --force`). "
                              "Touches the attachment and the row's image bookkeeping only — no title, "
                              "excerpt, body or status, so a live post is not rewritten")
+    parser.add_argument("--category",
+                        help="With --slug: move the post to this CMS category (id, slug or name) and "
+                             "record it on the row as a per-post override, so a later --refresh keeps "
+                             "it. The vertical's wp_category_id routes the SITE; the story's own "
+                             "taxonomy is an editorial call")
     parser.add_argument("--retitle", action="store_true",
                         help="With --slug: set the post's headline from the row and touch nothing else "
                              "(for a headline change, where --refresh-live would re-derive the whole "
@@ -1845,6 +1924,20 @@ def main() -> int:
         return 0
 
     if args.slug:
+        if args.category:
+            try:
+                result = set_category(args.slug, args.category, db=db)
+            except Exception as exc:                   # rule 6: surface it, never a silent skip
+                print(f"\n  FAILED --category {args.slug}: {exc}", file=sys.stderr)
+                return 1
+            print(f"\n  {result['site']} post {result['post_id']}")
+            print(f"  was : categories {result['before']}")
+            print(f"  now : {result['category']['name']} ({result['category']['id']}), "
+                  f"CMS holds {result['after']}")
+            print("  recorded metadata.wordpress.category_id — a later --refresh keeps it")
+            for problem in result["problems"]:
+                print(f"  ! {problem}", file=sys.stderr)
+            return 1 if result["problems"] else 0
         if args.retitle:
             try:
                 result = retitle_slug(args.slug)
