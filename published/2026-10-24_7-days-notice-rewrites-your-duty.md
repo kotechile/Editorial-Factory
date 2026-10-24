@@ -66,6 +66,18 @@ The second limit is structural. A refund only helps an importer who kept importi
 
 The third limit is the document. Both annexes leave out civil aircraft and aircraft parts, customs writes the rules that settle borderline codes, and neither list is final for longer than the next order [3]. My read is that the safest plan assumes a list that keeps moving and prices the duty as an option rather than a rate.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** On 23 October the White House changed which Canadian goods pay a 50 percent duty, adding cocoa powder, carpets and air conditioners and removing plywood, on seven days' notice [2]. Three days earlier an importer sued over the same seven-day gap in the September round [1].
+- **Why It Matters:** The date a product first hit the list, not the rate, decides whether the duty already paid is a cost or a refund claim, and that date moves far faster than a physical supply chain.
+- **What I'd watch:** How the December reply lands, whether the court certifies the class, and whether the next order repeats the short fuse.
+  - **The 30-day wait:** the law allows a month between naming the goods and collecting the duty, a shield the September and October rounds did not give [4].
+  - **The 30-Day Subclass:** the importers who paid on goods first listed in September, whose refund claim is strongest because their entry dates sit inside the disputed window [1].
+  - **The listing date:** the day a tariff code first appears on a list, which decides refund status rather than the day the goods arrived.
+- **The Catch:** The refund theory is untested, and the government has a solid argument that the clock ran out in July. A firm that moved production to escape the duty keeps the cost and loses the claim.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -78,18 +90,6 @@ The third limit is the document. Both annexes leave out civil aircraft and aircr
 - [A 1% Mispick Rate Is a Seven-Figure Line Item](/warehouse-pick-error-tax-payback/) — more on Supply Chain & Operations
 - [Higher Rates Meet Historically Lean Inventories](/fed-rate-hike-inverts-working-capital-trap/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** On 23 October the White House changed which Canadian goods pay a 50 percent duty, adding cocoa powder, carpets and air conditioners and removing plywood, on seven days' notice [2]. Three days earlier an importer sued over the same seven-day gap in the September round [1].
-- **Why It Matters:** The date a product first hit the list, not the rate, decides whether the duty already paid is a cost or a refund claim, and that date moves far faster than a physical supply chain.
-- **What I'd watch:** How the December reply lands, whether the court certifies the class, and whether the next order repeats the short fuse.
-  - **The 30-day wait:** the law allows a month between naming the goods and collecting the duty, a shield the September and October rounds did not give [4].
-  - **The 30-Day Subclass:** the importers who paid on goods first listed in September, whose refund claim is strongest because their entry dates sit inside the disputed window [1].
-  - **The listing date:** the day a tariff code first appears on a list, which decides refund status rather than the day the goods arrived.
-- **The Catch:** The refund theory is untested, and the government has a solid argument that the clock ran out in July. A firm that moved production to escape the duty keeps the cost and loses the claim.
 
 ## Sources
 
