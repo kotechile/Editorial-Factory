@@ -1,0 +1,112 @@
+{
+  "slug": "your-heated-mat-costs-50-times-the-blower",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A split view showing a rubber heated snow mat on concrete next to a power equipment battery pack.",
+      "caption": "A portable heated mat requires vastly more hardware investment and circuit capacity to cover a driveway than a battery blower.",
+      "title": "Snow Removal Economics: Mat vs Blower",
+      "bytes": 381241,
+      "sha256": "sha256:99e66ca180fdbd1565f52c71e3cc9b25"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych with left-right scenario contrast. Left half: a textured black rubber heated driveway mat lying on cracked concrete at dusk, an illuminated heavy-duty GFCI plug glowing faintly. Right half: a sleek deep pine green and black power equipment battery pack resting on the same concrete surface. 35mm anamorphic wide, cinematic film still, single strong practical light source casting long shadows, crisp atmospheric depth, restrained teal-and-amber palette, bone white and slate grey concrete textures, fine film grain, no text, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements, human faces, hands, glowing brains, light bulbs",
+  "rationale": "The article contrasts two distinct paradigms for snow removal: the expensive, high-capacity electrical footprint of a heated mat versus the dense, low-cost mechanical energy of a battery blower. A split-screen cinematic still allows a side-by-side comparison of the physical footprints on a driveway slab under dramatic dusk lighting.",
+  "cue": "Your Mat Costs 50 Blower Charges",
+  "subject": "A heated driveway mat and a snow blower battery pack",
+  "core_thesis": "A heated snow mat's true cost is measured per square foot of hardware and circuit capacity, making it vastly more expensive than a battery blower for large areas like a driveway.",
+  "core_conflict": "Latent-heat work (melting snow via resistance heating) versus mechanical work (throwing snow via a battery motor) across a fixed area of pavement.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Heated Mats Vs Blowers. A split view showing a rubber heated snow mat on concrete next to a power equipment battery pack.",
+  "caption": "Heated Mats Vs Blowers: The hidden math of heated mats and battery blowers.",
+  "title": "Heated Mats Vs Blowers",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-heated-mat-costs-50-times-the-blower/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395998,
+  "sha256": "sha256:5b6a7493ad2aea5a4d3f463bb32e233c997441790916652480e22d81e79f1a91",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395998,
+    "quality": 80,
+    "sha256": "sha256:5b6a7493ad2aea5a4d3f463bb32e233c997441790916652480e22d81e79f1a91",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:c9322eba4b2bb3d0962f0e8086865415e44bb8e13099a0d7e1b9433e36af6e4e",
+  "render_phash": "8e5fba776e7d2e5f0e7bd85cd074d4648c681a600e741e741659325c5a5f1a63",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split image showing a black mat with a glowing plug on cracked concrete on the left, and a green and black battery pack on cracked concrete on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a mat and a battery pack, which aligns with the article's comparison of heated mats and blower batteries."
+  },
+  "source_hash": "sha256:670c42f10c0e3eaee6b135a41af55d0f",
+  "source_chars": 6849,
+  "task_id": "72a3aeb8d00acb9a9e1325c1b345833b",
+  "credits": 5.0,
+  "cost_ms": 14,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/72a3aeb8d00acb9a9e1325c1b345833b_1792869197550.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Split-screen diptych with left-right scenario contrast. Left half: a textured black rubber heated driveway mat lying on cracked concrete at dusk, an illuminated heavy-duty GFCI plug glowing faintly. Right half: a sleek deep pine green and black power equipment battery pack resting on the same concrete surface. 35mm anamorphic wide, cinematic film still, single strong practical light source casting long shadows, crisp atmospheric depth, restrained teal-and-amber palette, bone white and slate grey concrete textures, fine film grain, no text, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-24T19:13:25+00:00",
+  "overlay": {
+    "kicker": "SNOW REMOVAL // THE REAL COSTS",
+    "title": "HEATED MATS VS BLOWERS",
+    "hook": "The hidden math of heated mats and battery blowers",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.46,
+    "target": 4.5,
+    "clutter": 0.09,
+    "region_rgb": [
+      47,
+      65,
+      70
+    ],
+    "binding_rgb": [
+      58,
+      79,
+      84
+    ],
+    "title_lines": [
+      "HEATED MATS VS",
+      "BLOWERS"
+    ],
+    "subject": 0.055,
+    "ink_subject": 0.018,
+    "spike": 0.203,
+    "generated_at": "2026-10-24T19:13:25+00:00"
+  }
+}

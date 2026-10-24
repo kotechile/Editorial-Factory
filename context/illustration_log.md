@@ -309,3 +309,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-24 | `your-homelab-heat-pays-back-45-cents` | personal_microeconomics_tinkering_tax | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-homelab-heat-pays-back-45-cents/featured.jpg` |
 | 2026-10-24 | `your-tooling-assist-is-dutiable` | supplier_risk_reshoring_decision | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-tooling-assist-is-dutiable/featured.jpg` |
 | 2026-10-24 | `your-1-acre-mowers-04-acre-trap` | yard_robotics | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-1-acre-mowers-04-acre-trap/featured.jpg` |
+| 2026-10-24 | `your-heated-mat-costs-50-times-the-blower` | outdoor_power_equipment | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-heated-mat-costs-50-times-the-blower/featured.jpg` |

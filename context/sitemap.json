@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T18:45:01Z",
+  "updated_at": "2026-10-24T19:13:37Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3364,6 +3364,24 @@
         "By the numbers",
         "What I'd watch:",
         "The catch",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-24",
+      "public": false
+    },
+    {
+      "slug": "2026-10-24_your-heated-mat-costs-50-times-the-blower",
+      "title": "Your Mat Costs 50 Blower Charges",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
         "At a glance"
       ],
       "target_persona": "homeowner_pro",
