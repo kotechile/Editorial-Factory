@@ -1,0 +1,112 @@
+{
+  "slug": "your-homelab-heat-pays-back-45-cents",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An eight-bay storage server on a concrete surface illuminated by warm directional light.",
+      "caption": "An eight-bay homelab storage box turns all its power draw into heat, but the efficiency of modern heat pumps means that warmth is only a partial rebate.",
+      "title": "Homelab Server Waste Heat",
+      "bytes": 298108,
+      "sha256": "sha256:9c9fd742a1fd76522b95548f012b089d"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "studio product photograph of an eight-bay network storage server resting on a concrete garage workbench. The server is matte graphite with brushed steel drive trays. A soft directional warm amber light strikes the server from the left, representing waste heat, casting a long cool shadow across the textured concrete. Three-quarter angle, 85mm lens, shallow depth of field, sharp catalogue clarity, subdued cool ambient room lighting in the background, generous negative space on the left.",
+  "negative_prompt": "text, typography, letters, numbers, watermarks, signature, logos, garbled text",
+  "rationale": "The story centers on a specific piece of consumer/prosumer hardware (an eight-bay storage box) and its direct economic impact in a household setting. A studio object approach highlights the hardware itself as the source of the heat and the cost.",
+  "cue": "An always-on box's waste heat",
+  "subject": "an eight-bay storage server",
+  "core_thesis": "A homelab server's waste heat functions as a partial rebate on its electricity bill, but only during the heating season, and costs extra to cool in summer.",
+  "core_conflict": "The perceived value of 'free' server heat versus the actual efficiency reality of modern home heating and cooling.",
+  "composition": "asymmetric wide framing with the subject off-centre right",
+  "alt_text": "The Waste Heat Rebate. An eight-bay storage server on a concrete surface illuminated by warm directional light.",
+  "caption": "The Waste Heat Rebate: Why a winter server only pays back half its power bill.",
+  "title": "The Waste Heat Rebate",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-homelab-heat-pays-back-45-cents/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 343799,
+  "sha256": "sha256:5784eaf7182c4659371fa3d1bd55b4f672c082f46fb325da0dd0dccb9206df7b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 343799,
+    "quality": 88,
+    "sha256": "sha256:5784eaf7182c4659371fa3d1bd55b4f672c082f46fb325da0dd0dccb9206df7b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:35a587c1ef2597a3b3bcc54c69b8af86ba4ec80793d372c6363806192be9bbf3",
+  "render_phash": "37d937d917f837f837d835ba35b314b33cb37eb6b7bcbdf833bf3bfebffaf0ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An eight-bay storage server sits on a concrete table in a garage-like setting.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows an eight-bay storage server, which is the main subject of the article."
+  },
+  "source_hash": "sha256:281c8fdfbd87ec2a371662c0cc3dac37",
+  "source_chars": 5938,
+  "task_id": "0cd3102260f4ad28e0bf6a4096e84832",
+  "credits": 5.0,
+  "cost_ms": 59,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0cd3102260f4ad28e0bf6a4096e84832_1792863787712.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "studio product photograph of an eight-bay network storage server resting on a concrete garage workbench. The server is matte graphite with brushed steel drive trays. A soft directional warm amber light strikes the server from the left, representing waste heat, casting a long cool shadow across the textured concrete. Three-quarter angle, 85mm lens, shallow depth of field, sharp catalogue clarity, subdued cool ambient room lighting in the background, generous negative space on the left.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-24T17:43:19+00:00",
+  "overlay": {
+    "kicker": "HOMELAB ECONOMICS // WASTE HEAT",
+    "title": "THE WASTE HEAT REBATE",
+    "hook": "Why a winter server only pays back half its power bill",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.79,
+    "target": 4.5,
+    "clutter": 0.152,
+    "region_rgb": [
+      103,
+      109,
+      116
+    ],
+    "binding_rgb": [
+      120,
+      127,
+      135
+    ],
+    "title_lines": [
+      "THE WASTE HEAT",
+      "REBATE"
+    ],
+    "subject": 0.016,
+    "ink_subject": 0.007,
+    "spike": 0.052,
+    "generated_at": "2026-10-24T17:43:19+00:00"
+  }
+}

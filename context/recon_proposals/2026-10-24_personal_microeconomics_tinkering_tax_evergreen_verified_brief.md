@@ -1,0 +1,22 @@
+# Verified Brief: personal_microeconomics_tinkering_tax — 2026-10-24
+**Source brief:** `context/recon_proposals/2026-10-24_personal_microeconomics_tinkering_tax_evergreen_brief.md` (gate PASS, 6/6 rows verified, hosts: eia.gov, ecfr.gov, synology.com)
+**Archetype:** evergreen · **Persona:** systems_tinkerer_pro
+
+| # | Signal Leg | Claim | Status | Source URL | Verbatim |
+|---|---|---|---|---|---|
+| 1 | Electricity price | The 2025 annual average US residential retail price of electricity was 17.30 cents per kilowatthour. | VERIFIED | https://www.eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php | "The annual average retail electricity prices by major types of utility customers in 2025 were: residential 17.30¢ per kWh commercial 13.41¢ per kWh industrial 8.62¢ per kWh" |
+| 2 | Household energy split | Space heating and air conditioning together were 52% of a US household's annual energy consumption in 2020. | VERIFIED | https://www.eia.gov/energyexplained/use-of-energy/homes.php | "more than half—52% in 2020—of a household's annual energy consumption is for just two energy end uses: space heating and air conditioning" |
+| 3 | Heat-pump efficiency standard | Central air conditioners and heat pumps manufactured on or after January 1, 2023 must meet 14.3 SEER2 / 7.5 HSPF2 (split systems). | VERIFIED | https://www.ecfr.gov/current/title-10/chapter-II/subchapter-D/part-430/subpart-C/section-430.32 | "( 5 ) Central air conditioners and central air conditioning heat pumps manufactured on or after January 1, 2023, must have a Seasonal Energy Efficiency Ratio 2 and a Heating Seasonal Performance Factor 2 not less than: … (ii) Split systems—heat pumps 14.3 7.5" |
+| 4 | Single-package standard | Single-package heat pumps must meet 13.4 SEER2 / 6.7 HSPF2. | VERIFIED | same page, paragraph (c)(5)(iv) | "(iv) Single-package units—heat pumps 13.4 6.7" |
+| 5 | Box draw | Synology's DS1823xs+ 8-bay unit consumes 87.93 watts in access mode and 28.37 watts with drives hibernating. | VERIFIED (vendor claim) | https://www.synology.com/en-us/products/DS1823xs+ | "Power Consumption 87.93 watts (Access) 28.37 watts (HDD Hibernation)" |
+| 6 | Heat output | The same spec page publishes 300.23 BTU/hr as the unit's heat output at that draw. | VERIFIED (vendor claim) | same page | "British Thermal Unit 300.23 BTU/hr (Access) 96.87 BTU/hr (HDD Hibernation)" |
+| 7 | Derived — annual energy and cost | 87.93 W × 8,760 h = 770.3 kWh a year; × $0.1730 = $133.26. | DERIVED (no source states it) | — | Recomputed in the brief: 770.27 kWh, $133.26 |
+| 8 | Derived — heat credit | The same 770.3 kWh of heat delivered by a split heat pump at 7.5 HSPF2 (coefficient 7.5 ÷ 3.412 = 2.198) costs 350.4 kWh = $60.62, i.e. a 45.5% credit. Single-package at 6.7 HSPF2 (coefficient 1.964) → 392.3 kWh = $67.86, a 50.9% credit. Resistance heat (coefficient 1.0) → 100%. | DERIVED | — | Must be recomputed in the final from rows 1, 3, 4, 7 |
+| 9 | Derived — cooling penalty | Air conditioning at the 14.3 SEER2 minimum removes 14.3 BTU per watt-hour, so rejecting the same 770.3 kWh of heat takes 183.8 kWh = $31.80, a 23.9% penalty. | DERIVED | — | Recompute: 770.27 × (3.412 ÷ 14.3) = 183.8 kWh |
+
+## Flags for the drafter
+- **Two tables on the eCFR page.** Paragraph (c)(5) is the 2023 SEER2/HSPF2 standard (14.3 / 7.5 split, 13.4 / 6.7 single-package). An earlier table on the same page gives 14 SEER / 8.2 HSPF for the pre-2023 standard — do not mix them, and state that the 7.5 figure is the minimum for equipment made on or after January 1, 2023.
+- **7.5 HSPF2 is a floor, not a typical unit.** A better heat pump (higher HSPF2) has a higher coefficient, so it needs less electricity for the same heat and the credit *falls*. The article must say 45% is the ceiling for a modern heat pump, not a universal figure.
+- **"All of it becomes heat" is arithmetic, not a claim to soften.** 87.93 W × 3.412 BTU per watt-hour = 300.0 BTU/hr, which matches the vendor's own 300.23 BTU/hr line; cite both rows for it.
+- **No price for gas heat was retrievable.** The EIA's natural-gas explainer page carries no figure (checked 2026-10-24), so the piece must not compare a gas furnace numerically. The honest generalisation is arithmetic: the credit equals what the displaced heat costs, so a cheaper fuel gives a smaller credit — no number attached.
+- **Do not restate the earlier article's labour arithmetic.** `2026-10-10_self-hosting-break-even-one-hour-a-year` (this vertical) already priced maintenance hours; this piece is thermal only.

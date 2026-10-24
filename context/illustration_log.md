@@ -306,3 +306,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-23 | `why-your-fridge-upgrade-pays-12-50` | consumer_asset_repair_replace_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-your-fridge-upgrade-pays-12-50/featured.jpg` |
 | 2026-10-24 | `your-home-servers-45-day-patch-gap` | personal_microeconomics_tinkering_tax | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-home-servers-45-day-patch-gap/featured.png` |
 | 2026-10-24 | `7-days-notice-rewrites-your-duty` | supplier_risk_reshoring_decision | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/7-days-notice-rewrites-your-duty/featured.png` |
+| 2026-10-24 | `your-homelab-heat-pays-back-45-cents` | personal_microeconomics_tinkering_tax | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-homelab-heat-pays-back-45-cents/featured.jpg` |

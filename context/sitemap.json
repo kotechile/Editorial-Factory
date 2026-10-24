@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T14:28:04Z",
+  "updated_at": "2026-10-24T17:43:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3370,6 +3370,23 @@
       "date": "2026-10-24",
       "public": true,
       "url": "https://giniloh.com/your-home-servers-45-day-patch-gap/"
+    },
+    {
+      "slug": "2026-10-24_your-homelab-heat-pays-back-45-cents",
+      "title": "Homelab Heat Rebate: 45 Cents, Not Free",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-24",
+      "public": false
     }
   ]
 }
