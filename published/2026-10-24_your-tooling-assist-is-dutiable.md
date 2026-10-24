@@ -11,6 +11,12 @@ meta_title: "Your $1,100 Tool Bills Every Unit"
 meta_title_source: "derived_from_title"
 meta_description: "Your mold stays your property while it sits in a supplier's plant, and customs bills its value onto every unit made with it, because a tool you supply free…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-tooling-assist-is-dutiable/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Duties On Supplied Tooling. Massive steel industrial molds staged on concrete in a factory yard under low sunlight."
+image_caption: "Duties On Supplied Tooling: How customs taxes the molds sitting in a supplier's plant."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -61,18 +67,6 @@ Paying duty on the first shipment is not wrong, but it is cash. Spreading the to
 
 The part I keep circling: the number this piece cannot give you is the rate. It belongs to the tariff line the part enters under, and it is the one input a trade action can change. What holds is the shape of the sum — a tool is dutiable, its shipping is dutiable, and the base you pick decides whether that lands as a small charge on each unit or a large one. Where that moves a sourcing comparison, the arithmetic sits beside our earlier read on [why Mexico beats China on total landed cost](/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/).
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: supply, unit] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches supply, unit. -->
-<!-- internal-link hint: "63.6% OTIF: Your Hidden Quantity Gap" -> /your-hidden-quantity-gap/ [same site (aichieve.net); same category; topical overlap: rather, supply] Link "63.6% OTIF: Your Hidden Quantity Gap" in the section where the article touches rather, supply. -->
-<!-- internal-link hint: "Amazon Builds the Robots; Walmart Builds for What They Can't…" -> /automation-payback-splits-by-sku-geometry/ [same site (aichieve.net); same category; topical overlap: plant, supply] Link "Amazon Builds the Robots; Walmart Builds for What They Can't…" in the section where the article touches plant, supply. -->
-## Related reading
-
-- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
-- [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
-- [Amazon Builds the Robots; Walmart Builds for What They Can't…](/automation-payback-splits-by-sku-geometry/) — more on Supply Chain & Operations
-<!-- internal-links:end -->
 
 <!-- tldr -->
 
@@ -85,6 +79,19 @@ The part I keep circling: the number this piece cannot give you is the rate. It 
   - **The design split:** Work done abroad is an assist, while the same work done here is not [1][2].
   - **The line map:** One tool, one part, one rate, because a company-wide factor was struck down for ignoring that [3].
 - **The Catch:** The simple bases apply only when the whole expected output is for the United States, and the duty rate itself belongs to your tariff line rather than this article.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: supply, unit] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches supply, unit. -->
+<!-- internal-link hint: "63.6% OTIF: Your Hidden Quantity Gap" -> /your-hidden-quantity-gap/ [same site (aichieve.net); same category; topical overlap: rather, supply] Link "63.6% OTIF: Your Hidden Quantity Gap" in the section where the article touches rather, supply. -->
+<!-- internal-link hint: "Amazon Builds the Robots; Walmart Builds for What They Can't…" -> /automation-payback-splits-by-sku-geometry/ [same site (aichieve.net); same category; topical overlap: plant, supply] Link "Amazon Builds the Robots; Walmart Builds for What They Can't…" in the section where the article touches plant, supply. -->
+## Related reading
+
+- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
+- [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
+- [Amazon Builds the Robots; Walmart Builds for What They Can't…](/automation-payback-splits-by-sku-geometry/) — more on Supply Chain & Operations
+<!-- internal-links:end -->
 
 ## Sources
 [1] U.S. Code of Federal Regulations — 19 CFR 152.103, "Transaction value" (§ (a)(1) Example 4 on indirect payments and freight, (a)(3) Examples 1–2 on the tooling assist, (d)(2) on valuing an assist, (e)(1)–(2) on apportionment), eCFR edition up to date as of 2026-10-22 — https://www.ecfr.gov/current/title-19/section-152.103

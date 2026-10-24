@@ -1,0 +1,115 @@
+{
+  "slug": "your-tooling-assist-is-dutiable",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Massive steel industrial molds staged on concrete in a factory yard under low sunlight.",
+      "caption": "The entire cost of a supplied tool and its freight becomes a dutiable asset spread over the imported units it produces.",
+      "title": "Dutiable Tooling Assists",
+      "bytes": 402751,
+      "sha256": "sha256:e3bbb9fc2cf0d40924e49a17783ad859"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A 200mm telephoto long-lens view of massive, heavy industrial steel injection molds and die tooling staged on concrete in a factory loading bay. Off-centre asymmetrical composition. Stacked overlapping layers of industrial structure with crystal-clear telephoto distance clarity and flat compressed perspective. Deep industrial contrast with weathered orange, slate grey, and raw steel tones. Dramatic, low-raking golden-hour sunlight from the left casting deep, long shadows across the textured concrete. Crisp atmospheric clarity, no people in the foreground, no text, no fog.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, signatures, people, faces",
+  "rationale": "The story is about the immense financial weight of capital equipment (tooling/molds) sitting at a supplier's plant. A telephoto long-lens view of heavy industrial molds emphasizes their physical and financial scale within the manufacturing supply chain.",
+  "cue": "The tooling you hand a supplier is a dutiable assist",
+  "subject": "massive steel industrial molds staged in a factory yard",
+  "core_thesis": "Customs bills the value of supplied tooling and its freight across the units it produces, making the tool a dutiable assist.",
+  "core_conflict": "Generalized company-wide tooling cost amortization versus strict line-by-line customs valuation.",
+  "composition": "off-centre asymmetry with extreme telephoto compression",
+  "alt_text": "Duties On Supplied Tooling. Massive steel industrial molds staged on concrete in a factory yard under low sunlight.",
+  "caption": "Duties On Supplied Tooling: How customs taxes the molds sitting in a supplier's plant.",
+  "title": "Duties On Supplied Tooling",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "long_lens_industry",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-tooling-assist-is-dutiable/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 403066,
+  "sha256": "sha256:35b32ff371446bbca48fb6435ba6c4bd7fc6bc3bc7a3ef5d45b446647ecc1787",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403066,
+    "quality": 64,
+    "sha256": "sha256:35b32ff371446bbca48fb6435ba6c4bd7fc6bc3bc7a3ef5d45b446647ecc1787",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9df4a528e0ec2ec8719015960d03b6d1f113fe574a39bc9975cd116d15f86015",
+  "render_phash": "efd2eedd53d9136f0f6d87a726f62eb78af7cbf4cdac79ac1fb883c5c3fe319f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A stack of large, heavy, rusted steel industrial molds or tooling blocks sitting on a concrete surface outdoors.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows industrial molds, which directly relates to the article's focus on tooling and molds."
+  },
+  "source_hash": "sha256:0b3f609186c838374fc0fa03096dba2a",
+  "source_chars": 6942,
+  "task_id": "0a9f8e7eac7d783397f41dbedaf0fe6d",
+  "credits": 5.0,
+  "cost_ms": 47,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0a9f8e7eac7d783397f41dbedaf0fe6d_1792865912012.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A 200mm telephoto long-lens view of massive, heavy industrial steel injection molds and die tooling staged on concrete in a factory loading bay. Off-centre asymmetrical composition. Stacked overlapping layers of industrial structure with crystal-clear telephoto distance clarity and flat compressed perspective. Deep industrial contrast with weathered orange, slate grey, and raw steel tones. Dramatic, low-raking golden-hour sunlight from the left casting deep, long shadows across the textured concrete. Crisp atmospheric clarity, no people in the foreground, no text, no fog.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-24T18:18:47+00:00",
+  "overlay": {
+    "kicker": "CUSTOMS COMPLIANCE // TOOLING DUTIES",
+    "title": "DUTIES ON SUPPLIED TOOLING",
+    "hook": "How customs taxes the molds sitting in a supplier's plant",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.4,
+    "target": 4.5,
+    "clutter": 0.188,
+    "region_rgb": [
+      44,
+      43,
+      43
+    ],
+    "binding_rgb": [
+      68,
+      68,
+      68
+    ],
+    "title_lines": [
+      "DUTIES ON",
+      "SUPPLIED TOOLING"
+    ],
+    "subject": 0.042,
+    "ink_subject": 0.017,
+    "spike": 0.143,
+    "generated_at": "2026-10-24T18:18:47+00:00"
+  }
+}
