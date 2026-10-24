@@ -823,7 +823,9 @@
       ],
       "target_persona": "homeowner_pro",
       "enable_dataforseo": false,
-      "target_domain": "wellroost.com"
+      "target_domain": "wellroost.com",
+      "review_cadence": "0 14 * * 0",
+      "review_enabled": true
     },
     {
       "id": "outdoor_power_equipment",
@@ -850,7 +852,9 @@
       ],
       "target_persona": "homeowner_pro",
       "enable_dataforseo": false,
-      "target_domain": "wellroost.com"
+      "target_domain": "wellroost.com",
+      "review_cadence": "30 14 * * 0",
+      "review_enabled": true
     },
     {
       "id": "home_diagnostics_tech",
@@ -876,7 +880,9 @@
       ],
       "target_persona": "homeowner_pro",
       "enable_dataforseo": false,
-      "target_domain": "wellroost.com"
+      "target_domain": "wellroost.com",
+      "review_cadence": "0 15 * * 0",
+      "review_enabled": true
     }
   ]
 }

@@ -121,6 +121,19 @@ gates, and every non-deterministic step is gated on retrievable evidence.
     `scripts/sync_crons.py`, never left half-configured. A topic whose value expires inside ~90 days
     is news — route it back to Radar.
 
+14. **A third pipeline for buying decisions (reviews and comparisons).** News publishes what
+    happened; evergreen publishes what stays true. Neither can publish a product decision, and the
+    two gates actively refuse one: the news gate dead-ends a review on freshness, and the evergreen
+    gate rewards figures that stay true for a year while a review's load-bearing numbers are prices
+    that expire in weeks. So a vertical may carry a third schedule — a **review** run
+    (`skills/review_comparison.md`) in one of two formats, `quick_review` (one product) or
+    `comparison` (2–4 products). Its floor is code (`scripts/review_gate.py`): every listed price
+    must appear on the page cited, ≥ 3 verified figures on ≥ 2 hosts, a `Price as of` date inside 60
+    days, a verdict that names a product, and **no hands-on claim** — this pipeline has no hardware,
+    so "we tested" fails the gate rather than passing as voice. Modes are per-vertical settings
+    (`review_cadence` / `review_enabled`), reconciled by the same `scripts/sync_crons.py` run, and
+    the peak/slot gates read this cadence key like the other two.
+
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
 The **Claude Stylist & Critic** role is pinned to a frontier Anthropic model served through

@@ -15,8 +15,8 @@ Fails (exit 1) on:
     for it (the push fails closed — see scripts/wp_draft.py resolve_vertical_term)
 
 Reported, not failed (statements about the estate, not defects):
-  - a destination CMS that registers no `vertical` taxonomy at all (cms.wellroost.com today:
-    one front serves that CMS, so a post needs no routing key),
+  - a destination CMS that registers no `vertical` taxonomy at all (a CMS serving exactly one
+    front can route by category alone),
   - a CMS that could not be read (its pushes fail loudly on their own), and
   - a routing row for a vertical this registry does not declare — the table is shared by every
     producer publishing through these CMSes, so it is named rather than failed, which is how a

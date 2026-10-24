@@ -332,6 +332,22 @@ if ! python3 "$ROOT/scripts/evergreen_gate.py" --check-artifacts --no-network; t
   FAIL=1
 fi
 
+# 8.65R Review track (hard). The review fleet publishes buying decisions, so its load-bearing
+#       numbers are prices — the one class of figure that both other gates handle badly. The floor
+#       is scripts/review_gate.py (skills/review_comparison.md): every listed price must appear on
+#       the page cited, >= 3 verified figures on >= 2 hosts, a `Price as of` date inside 60 days,
+#       a verdict that names a product, and NO hands-on claim (this pipeline has no hardware).
+#       Rules pinned offline by --self-test; committed briefs are then checked for a FRESH marker,
+#       so the daily gate makes no outbound request.
+if ! python3 "$ROOT/scripts/review_gate.py" --self-test >/dev/null 2>&1; then
+  echo "FAIL: review gate rules — detail:"
+  python3 "$ROOT/scripts/review_gate.py" --self-test 2>&1 | tail -8; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/review_gate.py" --check-artifacts --no-network; then
+  echo "FAIL: a review brief has no gate marker or a stale one — re-run scripts/review_gate.py --brief <path>"
+  FAIL=1
+fi
+
 # 8.66 Source accuracy floor (hard). Owner, 2026-10-23: a review pass caught articles whose citations
 #      did not support them and dropped them by hand — so the judgement is code now
 #      (scripts/source_gate.py, called by the publish gate, registry in context/source_quality.json).

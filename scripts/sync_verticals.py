@@ -23,11 +23,14 @@ CALENDAR_PATH = os.path.join(REPO, "context", "content_calendar.md")
 # The fleet-mode columns (news vs evergreen) are additive: an existing project's
 # `editorial_verticals` table predates them, and PostgREST rejects the whole upsert on one unknown
 # key. So the mirror degrades loudly instead of failing — see push_to_supabase().
-FLEET_COLUMNS = ("news_enabled", "evergreen_cadence", "evergreen_enabled")
+FLEET_COLUMNS = ("news_enabled", "evergreen_cadence", "evergreen_enabled",
+                 "review_cadence", "review_enabled")
 SCHEMA_ALTER = """alter table editorial_verticals
   add column if not exists news_enabled boolean default true,
   add column if not exists evergreen_cadence text,
-  add column if not exists evergreen_enabled boolean default true;"""
+  add column if not exists evergreen_enabled boolean default true,
+  add column if not exists review_cadence text,
+  add column if not exists review_enabled boolean default true;"""
 ENV_PATH = os.path.join(REPO, ".env")
 
 
@@ -123,27 +126,33 @@ def update_content_calendar(verticals):
     lines = [
         "# Content Calendar",
         "",
-        "Schedules per vertical, for both fleets. The Editor-in-Chief dispatches the Radar Scout on",
-        "the news schedule and the Evergreen Scout on the evergreen schedule; a mode switched off in",
-        "the vertical's settings (`news_enabled` / `evergreen_enabled`) has no job at all —",
-        "`scripts/sync_crons.py` reconciles both fleets from `context/verticals.json`.",
+        "Schedules per vertical, for every fleet. The Editor-in-Chief dispatches the Radar Scout on",
+        "the news schedule, the Evergreen Scout on the evergreen schedule and the Review desk on the",
+        "review schedule; a mode switched off in the vertical's settings (`news_enabled` /",
+        "`evergreen_enabled` / `review_enabled`) has no job at all — `scripts/sync_crons.py`",
+        "reconciles all three fleets from `context/verticals.json`.",
         "",
-        "| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Mode |",
-        "|---|---|---|---|---|---|",
+        "| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Review cadence | Review schedule (UTC) | Mode |",
+        "|---|---|---|---|---|---|---|---|",
     ]
 
     for v in verticals:
         vid = v.get("id", "")
         news = v.get("cadence", "")
         evergreen = v.get("evergreen_cadence", "")
+        review = v.get("review_cadence", "")
         news_on = v.get("news_enabled", True)
         evergreen_on = bool(evergreen) and v.get("evergreen_enabled", True)
-        mode = "+".join(n for n, on in (("news", news_on), ("evergreen", evergreen_on)) if on)
+        review_on = bool(review) and v.get("review_enabled", True)
+        mode = "+".join(n for n, on in (("news", news_on), ("evergreen", evergreen_on),
+                                        ("review", review_on)) if on)
         lines.append(
             f"| {vid} | {news if news_on else '—'} "
             f"| {human_cadence(news) if news_on else 'off'} "
             f"| {evergreen if evergreen_on else '—'} "
             f"| {human_cadence(evergreen) if evergreen_on else 'off'} "
+            f"| {review if review_on else '—'} "
+            f"| {human_cadence(review) if review_on else 'off'} "
             f"| {mode or 'disabled'} |"
         )
 
@@ -176,6 +185,8 @@ def push_to_supabase():
             "news_enabled": v.get("news_enabled", True),
             "evergreen_cadence": v.get("evergreen_cadence") or None,
             "evergreen_enabled": v.get("evergreen_enabled", True),
+            "review_cadence": v.get("review_cadence") or None,
+            "review_enabled": v.get("review_enabled", True),
             "target_persona": v.get("target_persona", "eng_leader"),
             "sources": v.get("sources", []),
             "primary_angles": v.get("primary_angles", []),
@@ -191,7 +202,7 @@ def push_to_supabase():
         print("WARNING: the Supabase 'editorial_verticals' table has no fleet-mode columns, so the "
               "remote mirror cannot store them. Run this in the Supabase SQL editor:\n\n"
               + SCHEMA_ALTER + "\n")
-        print("Retrying without news_enabled / evergreen_cadence / evergreen_enabled ...")
+        print("Retrying without the fleet-mode columns (news / evergreen / review) ...")
         legacy = [{k: val for k, val in r.items() if k not in FLEET_COLUMNS} for r in rows]
         res, err = supabase_request("editorial_verticals", method="POST", data=legacy)
     if err:
@@ -248,6 +259,8 @@ def pull_from_supabase():
             "news_enabled": row.get("news_enabled") if row.get("news_enabled") is not None else True,
             "evergreen_cadence": row.get("evergreen_cadence") or "",
             "evergreen_enabled": row.get("evergreen_enabled") if row.get("evergreen_enabled") is not None else True,
+            "review_cadence": row.get("review_cadence") or "",
+            "review_enabled": row.get("review_enabled") if row.get("review_enabled") is not None else True,
             "sources": row.get("sources") or [],
             "primary_angles": row.get("primary_angles") or [],
             "target_persona": row.get("target_persona", "eng_leader"),
@@ -287,6 +300,8 @@ create table if not exists editorial_verticals (
   news_enabled boolean default true,
   evergreen_cadence text,
   evergreen_enabled boolean default true,
+  review_cadence text,
+  review_enabled boolean default true,
   target_persona text not null,
   sources jsonb default '[]'::jsonb,
   primary_angles jsonb default '[]'::jsonb,

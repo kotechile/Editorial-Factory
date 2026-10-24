@@ -33,8 +33,11 @@ BY_ID = {v["id"]: v for v in REGISTRY}
 def live_entry(vertical, cadence, prompt=None, enabled=True, job_id="j1", fleet="news"):
     """A live-store entry. prompt=None means "in sync with the registry" for that vertical."""
     base = BY_ID.get(vertical, {"id": vertical, "label": vertical})
-    prefix, prompt_fn = (sc.PREFIX, sc.prompt_for) if fleet == "news" else \
-                        (sc.EVERGREEN_PREFIX, sc.evergreen_prompt_for)
+    prefix, prompt_fn = {
+        "news": (sc.PREFIX, sc.prompt_for),
+        "evergreen": (sc.EVERGREEN_PREFIX, sc.evergreen_prompt_for),
+        "review": (sc.REVIEW_PREFIX, sc.review_prompt_for),
+    }[fleet]
     return {
         "id": job_id,
         "name": prefix + vertical,
@@ -54,6 +57,11 @@ def live_evergreen():
             for v in REGISTRY if v.get("evergreen_cadence")]
 
 
+def live_review():
+    return [live_entry(v["id"], v["review_cadence"], fleet="review")
+            for v in REGISTRY if v.get("review_cadence")]
+
+
 def plan_news(live, registry=None):
     return sc.plan(registry or REGISTRY, live)
 
@@ -62,6 +70,12 @@ def plan_evergreen(live, registry=None):
     return sc.plan(registry or REGISTRY, live, prefix=sc.EVERGREEN_PREFIX,
                    cadence_key="evergreen_cadence", enabled_key="evergreen_enabled",
                    prompt_fn=sc.evergreen_prompt_for)
+
+
+def plan_review(live, registry=None):
+    return sc.plan(registry or REGISTRY, live, prefix=sc.REVIEW_PREFIX,
+                   cadence_key="review_cadence", enabled_key="review_enabled",
+                   prompt_fn=sc.review_prompt_for)
 
 
 class PromptTemplate(unittest.TestCase):
@@ -79,7 +93,7 @@ class PromptTemplate(unittest.TestCase):
     def test_instruction_keeps_the_safety_rails(self):
         prompt = sc.prompt_for({"id": "agentic_ai", "label": "Agentic"})
         self.assertIn("NOT approval-gated", prompt)     # site + Supabase persist in the run
-        self.assertIn("There is no social distribution step", prompt)  # channel removed 2026-10-06
+        self.assertIn("no social distribution step", prompt)  # channel removed 2026-10-06
         self.assertIn("never scores", prompt)           # the helper cannot clear the >=8 gate
         self.assertIn("no valid pair", prompt)          # a legitimate outcome, not a failure
         # No gate, and no social copy to surface: the LinkedIn/Reddit channel was removed, so a
@@ -343,6 +357,59 @@ class PeakWindow(unittest.TestCase):
         self.assertEqual(sc.cadence_verdict("0 10 * * 2")[0], "ok")
         self.assertEqual(sc.cadence_verdict("59 3 * * 2")[0], "peak")
         self.assertEqual(sc.cadence_verdict("59 9 * * 2")[0], "peak")
+
+
+class ReviewFleet(unittest.TestCase):
+    """The review fleet is a third independent schedule, reconciled from the same registry."""
+
+    def test_prompt_is_a_review_instruction_not_a_news_or_evergreen_one(self):
+        prompt = sc.review_prompt_for({"id": "yard_robotics", "label": "Yard Robots"})
+        self.assertIn("review_comparison", prompt)
+        self.assertIn("review_gate.py --brief", prompt)
+        self.assertIn("archetype: review", prompt)
+        self.assertNotIn("virality_judge", prompt)      # the news gate would dead-end a review
+        self.assertNotIn("evergreen_gate.py", prompt)   # and so would the durability gate
+        # The gate's hands-on rule has to be in the instruction, not only in the script.
+        self.assertIn("does not handle hardware", prompt)
+        self.assertIn("NOT approval-gated", prompt)
+        self.assertIn("no social distribution step", prompt)
+
+    def test_review_jobs_reconcile_on_their_own_schedule(self):
+        missing, drifted, orphans, paused, stale, disabled = plan_review(live_review())
+        self.assertEqual([missing, drifted, orphans, paused, stale, disabled],
+                         [[], [], [], [], [], []])
+        # A cadence change in the registry reaches the review job (the same drift class the
+        # news fleet has): the reconciler edits it rather than leaving a stale schedule live.
+        drifted_live = [dict(live_entry(v["id"], "0 3 * * 0", fleet="review")) if v["id"] == "yard_robotics"
+                        else live_entry(v["id"], v["review_cadence"], fleet="review")
+                        for v in REGISTRY if v.get("review_cadence")]
+        _m, drifted, _o, _p, _s, _dis = plan_review(drifted_live)
+        self.assertEqual([v["id"] for v, _c, _j in drifted], ["yard_robotics"])
+
+    def test_a_vertical_without_a_review_cadence_is_not_missing_a_job(self):
+        missing, *_ = plan_review([])
+        self.assertEqual([v["id"] for v, _c, _e in missing],
+                         [v["id"] for v in REGISTRY if v.get("review_cadence")])
+
+    def test_review_off_switch_removes_the_job(self):
+        registry = [dict(v, review_enabled=False) if v["id"] == "yard_robotics" else v
+                    for v in REGISTRY]
+        _m, _d, _o, _p, _s, disabled = plan_review(live_review(), registry=registry)
+        self.assertEqual([v["id"] for v, _j in disabled], ["yard_robotics"])
+
+    def test_review_cadence_is_inside_the_peak_gate(self):
+        # Weekday 07:00 is inside the 06:00-10:00 window, which proves the gate reads the review
+        # key at all (a Sunday cadence would pass for the wrong reason — weekends are free).
+        registry = [dict(v, review_cadence="0 7 * * 3") if v["id"] == "yard_robotics" else v
+                    for v in REGISTRY]
+        self.assertEqual([v["id"] for v, _c, _m in sc.peak_violations(registry)], ["yard_robotics"])
+
+    def test_review_cadence_is_inside_the_slot_gate(self):
+        registry = [dict(v, review_cadence=v["cadence"]) if v["id"] == "yard_robotics" else v
+                    for v in REGISTRY]
+        clashes = sc.slot_collisions(registry)
+        self.assertTrue(clashes, "a review run sharing a news slot must be a collision")
+        self.assertIn("Review Pipeline: yard_robotics", str(clashes))
 
 
 if __name__ == "__main__":

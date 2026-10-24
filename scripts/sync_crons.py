@@ -59,6 +59,21 @@ PREFIX = "Full Pipeline: "
 # The registry owns this instruction text too (see plan()'s stale-prompt class).
 EVERGREEN_PREFIX = "Evergreen Pipeline: "
 
+# The review fleet is the third schedule: one `Review Pipeline: <vertical>` job per registry
+# `review_cadence`, producing a buying-decision article (quick review or head-to-head comparison).
+# It exists because neither other gate can score a product claim — the news gate weights Novelty
+# 0.40 and the evergreen gate rewards figures that stay true for a year, while a review's load
+# bearing numbers are prices that expire in weeks. Its floor is scripts/review_gate.py.
+REVIEW_PREFIX = "Review Pipeline: "
+
+# (registry cadence key, job-name prefix) for every fleet. Both the peak gate and the slot gate
+# read this: a cadence the gates cannot see is a cadence that can collide with a live job.
+FLEET_CADENCES = (
+    ("cadence", PREFIX),
+    ("evergreen_cadence", EVERGREEN_PREFIX),
+    ("review_cadence", REVIEW_PREFIX),
+)
+
 # Live jobs deliver to the Slack home channel (#loop-ai) — that is where the
 # @Simon approve gate is read. bot-chat:editor is not wired in this workspace.
 DELIVER = os.environ.get("EDITORIAL_CRON_DELIVER", "slack")
@@ -159,10 +174,10 @@ def cadence_verdict(cadence):
 
 
 def peak_violations(verticals):
-    """Every registry cadence (both fleets) that fires inside a DeepSeek peak window."""
+    """Every registry cadence (all fleets) that fires inside a DeepSeek peak window."""
     out, seen = [], set()
     for v in verticals:
-        for key in ("cadence", "evergreen_cadence"):
+        for key, _prefix in FLEET_CADENCES:
             cadence = v.get(key)
             if not cadence:
                 continue
@@ -268,6 +283,51 @@ def evergreen_prompt_for(v):
     )
 
 
+def review_prompt_for(v):
+    """The review run's instruction: a buying decision, gated on sourced prices.
+
+    Deliberately a third template. The news gate would dead-end a product review on freshness, and
+    the evergreen gate rewards figures that stay true for a year while a review's load-bearing
+    numbers are prices that expire in weeks. The floor here is scripts/review_gate.py: every price
+    must appear on the page cited, prices must be dated, and no hands-on claim is admissible
+    because this pipeline has no hardware.
+    """
+    vid = v["id"]
+    label = v.get("label", vid)
+    return (
+        f"Run the REVIEW pipeline for vertical '{vid}' ({label}) per "
+        f"{WORKDIR}/skills/review_comparison.md (review brief -> review_gate --brief -> fact_check -> "
+        f"story_draft -> claude_humanizer). This is neither the news sweep nor the evergreen track: "
+        f"the subject does not have to be new and does not have to stay true for a year, it has to "
+        f"settle a PURCHASE the persona is facing this season, in one of two formats — "
+        f"`quick_review` (one primary product, ~700-900 words) or `comparison` (2-4 products, never "
+        f"more, ~900-1200 words). Choose the products from the evidence the skill lists (the "
+        f"vertical's primary_angles, the intel feeds' product_evaluations, retailer/manufacturer "
+        f"price pages, owner reports, GSC review/vs queries) — never from a product you invented and "
+        f"never with a price you did not fetch. Write the brief to "
+        f"context/recon_proposals/YYYY-MM-DD_{vid}_review_brief.md, then run "
+        f"`python3 scripts/review_gate.py --brief context/recon_proposals/"
+        f"YYYY-MM-DD_{vid}_review_brief.md` — the gate fetches every cited source, requires each "
+        f"listed price to appear on the page cited, >= 3 verified figures on >= 2 hosts, a "
+        f"`Price as of` date inside 60 days, a verdict that names a product, and NO hands-on claim "
+        f"('we tested' fails: this pipeline does not handle hardware — say what the specs and owner "
+        f"reports show, and say that the unit was not handled). It writes the `<!-- review-gate: -->` "
+        f"marker that scripts/verify.sh reads — re-run it after changing a row. A run where no "
+        f"product set clears the gate returns \"no publish\" and says why; that is a legitimate "
+        f"outcome, never pad it with an unsourced price. Only then does the brief go to fact_check -> "
+        f"story_draft -> claude_humanizer, carrying `archetype: review` and "
+        f"`format: quick_review|comparison` in the frontmatter, the mandatory 'what we did not test' "
+        f"paragraph, and no Review/AggregateRating schema (we cannot rate hardware we did not test). "
+        f"Link the vertical's calculator in the verdict block. When the article clears verification "
+        f"and the frontier rewrite, PERSIST it in the same run — `python3 "
+        f"scripts/publish.py context/drafts/<slug>_final.md` writes published/, the published log, "
+        f"Supabase and the sitemap, then flip the run-log row in context/content_calendar.md. "
+        f"Persistence to the reader site + Supabase is NOT approval-gated, and there is no social "
+        f"distribution step (LinkedIn and Reddit were removed on 2026-10-06). Write artifacts to "
+        f"context/recon_proposals/ and context/drafts/."
+    )
+
+
 def cadence_slots(cadence):
     """[(dow, hour, minute)] for a 5-field cron cadence. [] when it is not a fixed weekly hour
     (expressions like `*/6` or a day/month restriction), which the collision gate cannot judge."""
@@ -301,11 +361,11 @@ def slot_collisions(verticals):
     """
     seen, clashes = {}, []
     for v in verticals:
-        for key in ("cadence", "evergreen_cadence"):
+        for key, prefix in FLEET_CADENCES:
             cadence = v.get(key)
             for dow, hour, minute in cadence_slots(cadence or ""):
                 slot = (dow, hour, minute)
-                who = f"{PREFIX}{v['id']}" if key == "cadence" else f"{EVERGREEN_PREFIX}{v['id']}"
+                who = f"{prefix}{v['id']}"
                 if slot in seen:
                     clashes.append((slot, seen[slot], who))
                 else:
@@ -371,6 +431,7 @@ def run(cmd):
 FLEETS = (
     (PREFIX, "cadence", "news_enabled", prompt_for, "news"),
     (EVERGREEN_PREFIX, "evergreen_cadence", "evergreen_enabled", evergreen_prompt_for, "evergreen"),
+    (REVIEW_PREFIX, "review_cadence", "review_enabled", review_prompt_for, "review"),
 )
 
 
@@ -428,7 +489,7 @@ def main():
     drift = bool(drifted_classes or peaks or clashes)
     if CHECK:
         print("check: " + ("DRIFT" if drift else
-                           f"ok — {len(verticals)} verticals in sync across both fleets "
+                           f"ok — {len(verticals)} verticals in sync across {len(FLEETS)} fleets "
                            f"(cadence + prompt + enabled + off-peak + slots)"))
         return 1 if drift else 0
     if peaks or clashes:

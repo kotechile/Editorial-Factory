@@ -1639,11 +1639,16 @@ Waiting for commands.</div>
             <input type="checkbox" id="verticalEvergreenEnabled" style="width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer;">
             <span style="font-weight: 600;">🌱 Evergreen pipeline</span>
           </label>
+          <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;" for="verticalReviewEnabled">
+            <input type="checkbox" id="verticalReviewEnabled" style="width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer;">
+            <span style="font-weight: 600;">🔍 Review pipeline</span>
+          </label>
         </div>
         <div class="form-help" style="margin-top: 0.35rem;">
           News publishes what happened in the last 30 days. Evergreen publishes useful, durable topics
-          built on 3+ fetched primary sources. A mode switched off has no cron job at all — the next
-          sync removes it, and switching it back on recreates it.
+          built on 3+ fetched primary sources. Review publishes a buying decision (quick review or
+          head-to-head comparison) whose prices are fetched and dated. A mode switched off has no cron
+          job at all — the next sync removes it, and switching it back on recreates it.
         </div>
       </div>
 
@@ -1657,6 +1662,18 @@ Waiting for commands.</div>
           <span class="preset-chip" onclick="setEvergreenPreset('30 18 * * 3')">Wed 18:30</span>
           <span class="preset-chip" onclick="setEvergreenPreset('0 19 * * 4')">Thu 19:00</span>
           <span class="preset-chip" onclick="setEvergreenPreset('30 19 * * 5')">Fri 19:30</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="verticalReviewCadence">Review Cadence (Cron Expression)</label>
+        <input type="text" class="form-input" id="verticalReviewCadence" placeholder="e.g. 0 14 * * 0" value="">
+        <div class="form-help" id="reviewCadenceHumanPreview">Leave blank for no review run.</div>
+        <div class="preset-chips">
+          <span class="preset-chip" onclick="setReviewPreset('0 14 * * 0')">Sun 14:00</span>
+          <span class="preset-chip" onclick="setReviewPreset('30 14 * * 0')">Sun 14:30</span>
+          <span class="preset-chip" onclick="setReviewPreset('0 15 * * 0')">Sun 15:00</span>
+          <span class="preset-chip" onclick="setReviewPreset('30 15 * * 0')">Sun 15:30</span>
         </div>
       </div>
 
@@ -1943,9 +1960,11 @@ Waiting for commands.</div>
       const anglesCount = (v.primary_angles || []).length;
       const newsOn = v.news_enabled !== false;
       const evergreenOn = Boolean(v.evergreen_cadence) && v.evergreen_enabled !== false;
+      const reviewOn = Boolean(v.review_cadence) && v.review_enabled !== false;
       const modeBadges = [
         newsOn ? '<span class="tag-quiet tag-emerald">📰 News</span>' : null,
         evergreenOn ? '<span class="tag-quiet tag-emerald">🌱 Evergreen</span>' : null,
+        reviewOn ? '<span class="tag-quiet tag-emerald">🔍 Review</span>' : null,
       ].filter(Boolean).join(' ') || '<span class="tag-quiet">● Disabled</span>';
 
       return `
@@ -1982,6 +2001,10 @@ Waiting for commands.</div>
               <div class="key-value-row">
                 <span class="key-label">Evergreen Cadence</span>
                 <span class="key-value">${evergreenOn ? describeCron(v.evergreen_cadence) : 'off'}</span>
+              </div>
+              <div class="key-value-row">
+                <span class="key-label">Review Cadence</span>
+                <span class="key-value">${reviewOn ? describeCron(v.review_cadence) : 'off'}</span>
               </div>
             </div>
           </div>
@@ -2189,6 +2212,18 @@ Waiting for commands.</div>
       value ? `Schedule: ${describeCron(value)}` : 'Leave blank for no evergreen run.';
   });
 
+  window.setReviewPreset = (cron) => {
+    document.getElementById('verticalReviewCadence').value = cron;
+    document.getElementById('reviewCadenceHumanPreview').textContent = `Schedule: ${describeCron(cron)}`;
+    document.getElementById('verticalReviewEnabled').checked = true;
+  };
+
+  document.getElementById('verticalReviewCadence').addEventListener('input', (e) => {
+    const value = e.target.value.trim();
+    document.getElementById('reviewCadenceHumanPreview').textContent =
+      value ? `Schedule: ${describeCron(value)}` : 'Leave blank for no review run.';
+  });
+
   document.getElementById('verticalCadence').addEventListener('input', (e) => {
     document.getElementById('cadenceHumanPreview').textContent = `Schedule: ${getHumanCadence(e.target.value)}`;
   });
@@ -2205,6 +2240,9 @@ Waiting for commands.</div>
     document.getElementById('verticalEvergreenCadence').value = '';
     document.getElementById('evergreenCadenceHumanPreview').textContent = 'Leave blank for no evergreen run.';
     document.getElementById('verticalEvergreenEnabled').checked = false;
+    document.getElementById('verticalReviewCadence').value = '';
+    document.getElementById('reviewCadenceHumanPreview').textContent = 'Leave blank for no review run.';
+    document.getElementById('verticalReviewEnabled').checked = false;
     currentSources = ['arxiv', 'hacker_news', 'github_trending'];
     currentAngles = [];
     renderTags('sourcesBox', currentSources, 'removeSource');
@@ -2231,6 +2269,12 @@ Waiting for commands.</div>
       evCadence ? `Schedule: ${describeCron(evCadence)}` : 'Leave blank for no evergreen run.';
     document.getElementById('verticalEvergreenEnabled').checked =
       Boolean(evCadence) && v.evergreen_enabled !== false;
+    const rvCadence = v.review_cadence || '';
+    document.getElementById('verticalReviewCadence').value = rvCadence;
+    document.getElementById('reviewCadenceHumanPreview').textContent =
+      rvCadence ? `Schedule: ${describeCron(rvCadence)}` : 'Leave blank for no review run.';
+    document.getElementById('verticalReviewEnabled').checked =
+      Boolean(rvCadence) && v.review_enabled !== false;
     currentSources = [...(v.sources || [])];
     currentAngles = [...(v.primary_angles || [])];
     renderTags('sourcesBox', currentSources, 'removeSource');
@@ -2254,6 +2298,8 @@ Waiting for commands.</div>
       news_enabled: document.getElementById('verticalNewsEnabled').checked,
       evergreen_cadence: document.getElementById('verticalEvergreenCadence').value.trim(),
       evergreen_enabled: document.getElementById('verticalEvergreenEnabled').checked,
+      review_cadence: document.getElementById('verticalReviewCadence').value.trim(),
+      review_enabled: document.getElementById('verticalReviewEnabled').checked,
       sources: currentSources,
       primary_angles: currentAngles,
       dataforseo_enabled: document.getElementById('verticalDataForSeo').checked,

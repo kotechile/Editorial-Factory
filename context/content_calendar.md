@@ -1,38 +1,46 @@
 # Content Calendar
 
-Schedules per vertical, for both fleets. The Editor-in-Chief dispatches the Radar Scout on
-the news schedule and the Evergreen Scout on the evergreen schedule; a mode switched off in
-the vertical's settings (`news_enabled` / `evergreen_enabled`) has no job at all —
-`scripts/sync_crons.py` reconciles both fleets from `context/verticals.json`.
+Schedules per vertical, for every fleet. The Editor-in-Chief dispatches the Radar Scout on
+the news schedule, the Evergreen Scout on the evergreen schedule and the Review desk on the
+review schedule; a mode switched off in the vertical's settings (`news_enabled` /
+`evergreen_enabled` / `review_enabled`) has no job at all — `scripts/sync_crons.py`
+reconciles all three fleets from `context/verticals.json`.
 
-| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Mode |
-|---|---|---|---|---|---|
-| agentic_ai | 30 10 * * 1,4 | Mon + Thu 10:30 AM UTC | 30 17 * * 1,4 | Mon + Thu 05:30 PM UTC | news+evergreen |
-| ai_observability_qa | 30 10 * * 2 | Tue 10:30 AM UTC | 30 17 * * 2 | Tue 05:30 PM UTC | news+evergreen |
-| agentic_resilience_failure | 30 10 * * 3 | Wed 10:30 AM UTC | 30 17 * * 3 | Wed 05:30 PM UTC | news+evergreen |
-| enterprise_ai_governance | 0 11 * * 1 | Mon 11:00 AM UTC | 0 18 * * 1 | Mon 06:00 PM UTC | news+evergreen |
-| nhil_infrastructure_ops | 0 11 * * 2 | Tue 11:00 AM UTC | 0 18 * * 2 | Tue 06:00 PM UTC | news+evergreen |
-| multi_agent_enterprise_fabric | 0 11 * * 3 | Wed 11:00 AM UTC | 0 18 * * 3 | Wed 06:00 PM UTC | news+evergreen |
-| enterprise_ai_finops | 0 11 * * 4 | Thu 11:00 AM UTC | 0 18 * * 4 | Thu 06:00 PM UTC | news+evergreen |
-| enterprise_tech_leadership | 30 11 * * 2 | Tue 11:30 AM UTC | 30 18 * * 2 | Tue 06:30 PM UTC | news+evergreen |
-| gpu_hardware | 30 11 * * 3 | Wed 11:30 AM UTC | 30 18 * * 3 | Wed 06:30 PM UTC | news+evergreen |
-| supply_chain | 30 11 * * 4 | Thu 11:30 AM UTC | 30 18 * * 4 | Thu 06:30 PM UTC | news+evergreen |
-| home_equity_tco | 30 11 * * 1 | Mon 11:30 AM UTC | 30 18 * * 1 | Mon 06:30 PM UTC | news+evergreen |
-| smart_home_telemetry | 0 12 * * 2 | Tue 12:00 PM UTC | 0 19 * * 2 | Tue 07:00 PM UTC | news+evergreen |
-| home_ops_execution | 0 12 * * 4 | Thu 12:00 PM UTC | 0 19 * * 4 | Thu 07:00 PM UTC | news+evergreen |
-| resilient_home_assets | 30 10 * * 5 | Fri 10:30 AM UTC | 0 18 * * 5 | Fri 06:00 PM UTC | news+evergreen |
-| home_infrastructure_lifecycle_tco | 0 12 * * 1 | Mon 12:00 PM UTC | 0 19 * * 1 | Mon 07:00 PM UTC | news+evergreen |
-| workstation_compute_economics | 30 12 * * 2 | Tue 12:30 PM UTC | 30 19 * * 2 | Tue 07:30 PM UTC | news+evergreen |
-| enterprise_build_vs_buy | 0 12 * * 3 | Wed 12:00 PM UTC | 0 19 * * 3 | Wed 07:00 PM UTC | news+evergreen |
-| expat_cross_border_relocation | 30 12 * * 4 | Thu 12:30 PM UTC | 30 19 * * 4 | Thu 07:30 PM UTC | news+evergreen |
-| career_velocity_equity_engineering | 0 11 * * 5 | Fri 11:00 AM UTC | 30 18 * * 5 | Fri 06:30 PM UTC | news+evergreen |
-| personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM UTC | 30 17 * * 6 | Sat 05:30 PM UTC | news+evergreen |
-| meio_working_capital_tco | 30 12 * * 1 | Mon 12:30 PM UTC | 30 19 * * 1 | Mon 07:30 PM UTC | news+evergreen |
-| control_tower_exception_orchestration | 0 13 * * 2 | Tue 01:00 PM UTC | 0 20 * * 2 | Tue 08:00 PM UTC | news+evergreen |
-| warehouse_automation_robotics_capex | 30 12 * * 3 | Wed 12:30 PM UTC | 30 19 * * 3 | Wed 07:30 PM UTC | news+evergreen |
-| demand_sensing_advanced_sop | 0 13 * * 4 | Thu 01:00 PM UTC | 0 20 * * 4 | Thu 08:00 PM UTC | news+evergreen |
-| last_mile_routing_fleet_carbon | 30 11 * * 5 | Fri 11:30 AM UTC | 0 19 * * 5 | Fri 07:00 PM UTC | news+evergreen |
-| supplier_risk_reshoring_decision | 30 6 * * 6 | Sat 06:30 AM UTC | 0 18 * * 6 | Sat 06:00 PM UTC | news+evergreen |
+| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Review cadence | Review schedule (UTC) | Mode |
+|---|---|---|---|---|---|---|---|
+| agentic_ai | 30 10 * * 1,4 | Mon + Thu 10:30 AM UTC | 30 17 * * 1,4 | Mon + Thu 05:30 PM UTC | — | off | news+evergreen |
+| ai_observability_qa | 30 10 * * 2 | Tue 10:30 AM UTC | 30 17 * * 2 | Tue 05:30 PM UTC | — | off | news+evergreen |
+| agentic_resilience_failure | 30 10 * * 3 | Wed 10:30 AM UTC | 30 17 * * 3 | Wed 05:30 PM UTC | — | off | news+evergreen |
+| enterprise_ai_governance | 0 11 * * 1 | Mon 11:00 AM UTC | 0 18 * * 1 | Mon 06:00 PM UTC | — | off | news+evergreen |
+| nhil_infrastructure_ops | 0 11 * * 2 | Tue 11:00 AM UTC | 0 18 * * 2 | Tue 06:00 PM UTC | — | off | news+evergreen |
+| multi_agent_enterprise_fabric | 0 11 * * 3 | Wed 11:00 AM UTC | 0 18 * * 3 | Wed 06:00 PM UTC | — | off | news+evergreen |
+| enterprise_ai_finops | 0 11 * * 4 | Thu 11:00 AM UTC | 0 18 * * 4 | Thu 06:00 PM UTC | — | off | news+evergreen |
+| enterprise_tech_leadership | 30 11 * * 2 | Tue 11:30 AM UTC | 30 18 * * 2 | Tue 06:30 PM UTC | — | off | news+evergreen |
+| gpu_hardware | 30 11 * * 3 | Wed 11:30 AM UTC | 30 18 * * 3 | Wed 06:30 PM UTC | — | off | news+evergreen |
+| supply_chain | 30 11 * * 4 | Thu 11:30 AM UTC | 30 18 * * 4 | Thu 06:30 PM UTC | — | off | news+evergreen |
+| home_equity_tco | 30 11 * * 1 | Mon 11:30 AM UTC | 30 18 * * 1 | Mon 06:30 PM UTC | — | off | news+evergreen |
+| smart_home_telemetry | 0 12 * * 2 | Tue 12:00 PM UTC | 0 19 * * 2 | Tue 07:00 PM UTC | — | off | news+evergreen |
+| home_ops_execution | 0 12 * * 4 | Thu 12:00 PM UTC | 0 19 * * 4 | Thu 07:00 PM UTC | — | off | news+evergreen |
+| resilient_home_assets | 30 10 * * 5 | Fri 10:30 AM UTC | 0 18 * * 5 | Fri 06:00 PM UTC | — | off | news+evergreen |
+| home_infrastructure_lifecycle_tco | 0 12 * * 1 | Mon 12:00 PM UTC | 0 19 * * 1 | Mon 07:00 PM UTC | — | off | news+evergreen |
+| workstation_compute_economics | 30 12 * * 2 | Tue 12:30 PM UTC | 30 19 * * 2 | Tue 07:30 PM UTC | — | off | news+evergreen |
+| enterprise_build_vs_buy | 0 12 * * 3 | Wed 12:00 PM UTC | 0 19 * * 3 | Wed 07:00 PM UTC | — | off | news+evergreen |
+| expat_cross_border_relocation | 30 12 * * 4 | Thu 12:30 PM UTC | 30 19 * * 4 | Thu 07:30 PM UTC | — | off | news+evergreen |
+| career_velocity_equity_engineering | 0 11 * * 5 | Fri 11:00 AM UTC | 30 18 * * 5 | Fri 06:30 PM UTC | — | off | news+evergreen |
+| personal_microeconomics_tinkering_tax | 0 6 * * 6 | Sat 06:00 AM UTC | 30 17 * * 6 | Sat 05:30 PM UTC | — | off | news+evergreen |
+| meio_working_capital_tco | 30 12 * * 1 | Mon 12:30 PM UTC | 30 19 * * 1 | Mon 07:30 PM UTC | — | off | news+evergreen |
+| control_tower_exception_orchestration | 0 13 * * 2 | Tue 01:00 PM UTC | 0 20 * * 2 | Tue 08:00 PM UTC | — | off | news+evergreen |
+| warehouse_automation_robotics_capex | 30 12 * * 3 | Wed 12:30 PM UTC | 30 19 * * 3 | Wed 07:30 PM UTC | — | off | news+evergreen |
+| demand_sensing_advanced_sop | 0 13 * * 4 | Thu 01:00 PM UTC | 0 20 * * 4 | Thu 08:00 PM UTC | — | off | news+evergreen |
+| last_mile_routing_fleet_carbon | 30 11 * * 5 | Fri 11:30 AM UTC | 0 19 * * 5 | Fri 07:00 PM UTC | — | off | news+evergreen |
+| supplier_risk_reshoring_decision | 30 6 * * 6 | Sat 06:30 AM UTC | 0 18 * * 6 | Sat 06:00 PM UTC | — | off | news+evergreen |
+| concentrated_equity_portfolio_capital | 0 12 * * 5 | Fri 12:00 PM UTC | 0 17 * * 5 | Fri 05:00 PM UTC | — | off | news+evergreen |
+| consumer_asset_repair_replace_tco | 30 12 * * 5 | Fri 12:30 PM UTC | 30 19 * * 5 | Fri 07:30 PM UTC | — | off | news+evergreen |
+| sales_order_service_level_otif | 0 13 * * 1 | Mon 01:00 PM UTC | 0 20 * * 1 | Mon 08:00 PM UTC | — | off | news+evergreen |
+| property_loss_insurance_mitigation | 0 13 * * 3 | Wed 01:00 PM UTC | 0 20 * * 3 | Wed 08:00 PM UTC | — | off | news+evergreen |
+| yard_robotics | 30 10 * * 6 | Sat 10:30 AM UTC | 30 18 * * 6 | Sat 06:30 PM UTC | 0 14 * * 0 | Sun 02:00 PM UTC | news+evergreen+review |
+| outdoor_power_equipment | 0 11 * * 6 | Sat 11:00 AM UTC | 0 19 * * 6 | Sat 07:00 PM UTC | 30 14 * * 0 | Sun 02:30 PM UTC | news+evergreen+review |
+| home_diagnostics_tech | 30 11 * * 6 | Sat 11:30 AM UTC | 30 19 * * 6 | Sat 07:30 PM UTC | 0 15 * * 0 | Sun 03:00 PM UTC | news+evergreen+review |
 
 ## Run log
 | Date | Vertical | Result | Notes |

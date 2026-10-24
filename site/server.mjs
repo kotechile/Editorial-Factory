@@ -388,23 +388,28 @@ async function updateCalendarMarkdown(verticals) {
     const lines = [
       '# Content Calendar',
       '',
-      'Schedules per vertical, for both fleets. The Editor-in-Chief dispatches the Radar Scout on',
-      'the news schedule and the Evergreen Scout on the evergreen schedule; a mode switched off in',
-      'the vertical\'s settings (`news_enabled` / `evergreen_enabled`) has no job at all —',
-      '`scripts/sync_crons.py` reconciles both fleets from `context/verticals.json`.',
+      'Schedules per vertical, for every fleet. The Editor-in-Chief dispatches the Radar Scout on',
+      'the news schedule, the Evergreen Scout on the evergreen schedule and the Review desk on the',
+      'review schedule; a mode switched off in the vertical\'s settings (`news_enabled` /',
+      '`evergreen_enabled` / `review_enabled`) has no job at all — `scripts/sync_crons.py`',
+      'reconciles all three fleets from `context/verticals.json`.',
       '',
-      '| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Mode |',
-      '|---|---|---|---|---|---|',
+      '| Vertical | News cadence | News schedule (UTC) | Evergreen cadence | Evergreen schedule (UTC) | Review cadence | Review schedule (UTC) | Mode |',
+      '|---|---|---|---|---|---|---|---|',
     ];
 
     for (const v of verticals) {
       const newsOn = v.news_enabled !== false;
       const evergreenOn = Boolean(v.evergreen_cadence) && v.evergreen_enabled !== false;
-      const modes = [newsOn ? 'news' : null, evergreenOn ? 'evergreen' : null].filter(Boolean).join('+');
+      const reviewOn = Boolean(v.review_cadence) && v.review_enabled !== false;
+      const modes = [newsOn ? 'news' : null, evergreenOn ? 'evergreen' : null,
+        reviewOn ? 'review' : null].filter(Boolean).join('+');
       lines.push(`| ${v.id} | ${newsOn ? (v.cadence || '30 10 * * 1') : '—'} `
         + `| ${newsOn ? formatHumanCadence(v.cadence) : 'off'} `
         + `| ${evergreenOn ? v.evergreen_cadence : '—'} `
         + `| ${evergreenOn ? formatHumanCadence(v.evergreen_cadence) : 'off'} `
+        + `| ${reviewOn ? v.review_cadence : '—'} `
+        + `| ${reviewOn ? formatHumanCadence(v.review_cadence) : 'off'} `
         + `| ${modes || 'disabled'} |`);
     }
 
@@ -1627,6 +1632,8 @@ const server = createServer(async (req, res) => {
         news_enabled: vertical.news_enabled !== undefined ? Boolean(vertical.news_enabled) : true,
         evergreen_cadence: (vertical.evergreen_cadence || '').trim(),
         evergreen_enabled: vertical.evergreen_enabled !== undefined ? Boolean(vertical.evergreen_enabled) : true,
+        review_cadence: (vertical.review_cadence || '').trim(),
+        review_enabled: vertical.review_enabled !== undefined ? Boolean(vertical.review_enabled) : true,
         target_persona: (vertical.target_persona || 'eng_leader').trim(),
         sources: Array.isArray(vertical.sources) ? vertical.sources : [],
         primary_angles: Array.isArray(vertical.primary_angles) ? vertical.primary_angles : [],
@@ -1719,7 +1726,7 @@ const server = createServer(async (req, res) => {
       if (req.method === 'POST') {
         const body = await parseJsonBody(req);
         const { id, label, cadence, target_persona, sources, primary_angles, enable_dataforseo,
-          news_enabled, evergreen_cadence, evergreen_enabled } = body;
+          news_enabled, evergreen_cadence, evergreen_enabled, review_cadence, review_enabled } = body;
 
         if (!id || !label) {
           return sendJson(res, 400, { error: "Fields 'id' and 'label' are required." });
@@ -1741,6 +1748,9 @@ const server = createServer(async (req, res) => {
           // live fleet (scripts/sync_crons.py --check fails on a collision or a peak window).
           evergreen_cadence: (evergreen_cadence || '').trim(),
           evergreen_enabled: evergreen_enabled !== undefined ? Boolean(evergreen_enabled) : true,
+          // A review run is opt-in too: prices expire, so the mode is chosen per vertical.
+          review_cadence: (review_cadence || '').trim(),
+          review_enabled: review_enabled !== undefined ? Boolean(review_enabled) : true,
           target_persona: (target_persona || 'eng_leader').trim(),
           sources: Array.isArray(sources) ? sources : [],
           primary_angles: Array.isArray(primary_angles) ? primary_angles : [],
@@ -1952,6 +1962,7 @@ const server = createServer(async (req, res) => {
         const modes = [];
         if (vertical.news_enabled !== false && vertical.cadence) modes.push({ mode: 'news', cron: vertical.cadence });
         if (vertical.evergreen_enabled !== false && vertical.evergreen_cadence) modes.push({ mode: 'evergreen', cron: vertical.evergreen_cadence });
+        if (vertical.review_enabled !== false && vertical.review_cadence) modes.push({ mode: 'review', cron: vertical.review_cadence });
         for (const entry of modes) {
           const spec = cronSpec(entry.cron);
           if (!spec) continue;
