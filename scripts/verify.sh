@@ -206,7 +206,7 @@ fi
 #      2026-10-10). Two things are checked: the connector still calls the gate (silently un-wiring
 #      it would restore "evaluate inside the run, publish anyway"), and the gate's own suite passes.
 #      These suites are pytest-style, so they run with -m (the standalone ones run directly).
-for suite in scripts/test_publish_gate.py scripts/test_vibe_lexicon.py scripts/test_illustration_overlay.py scripts/test_check_accessibility.py scripts/test_image_delivery.py scripts/test_render_review.py scripts/test_article_shape.py; do
+for suite in scripts/test_publish_gate.py scripts/test_vibe_lexicon.py scripts/test_illustration_overlay.py scripts/test_check_accessibility.py scripts/test_image_delivery.py scripts/test_render_review.py scripts/test_article_shape.py scripts/test_scene_brief.py; do
   if ! python3 -m pytest "$ROOT/$suite" -q >/dev/null 2>&1; then
     echo "FAIL: $suite — detail:"
     python3 -m pytest "$ROOT/$suite" -q 2>&1 | tail -8

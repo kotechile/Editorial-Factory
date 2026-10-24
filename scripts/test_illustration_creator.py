@@ -85,17 +85,26 @@ Internal variant that must never change the image.
 
 PROMPTS = {
     "editorial_macro": "Extreme close-up macro photograph of translucent plastic resin pellets on a "
-                       "rough surfaced steel plate, 100mm macro lens, one razor-sharp focal plane, "
-                       "shallow depth of field, soft directional daylight, hero object off-centre.",
+                       "rough steel plate on a workshop bench, 100mm macro lens, one razor-sharp "
+                       "focal plane, shallow depth of field, daylight from the left, slate grey and "
+                       "ochre palette, hero object off-centre.",
     "clay_render": "Matte clay 3D render of a small modular assembly: three machined component "
                    "housings with one bay cover unlatched and a connector half-inserted, asymmetric "
-                   "composition off-centre on a weathered concrete surface, single soft key light "
-                   "with gentle contact shadows, matte muted palette.",
+                   "composition off-centre on a weathered concrete floor in a loading bay, single soft "
+                   "key light from above with gentle contact shadows, slate grey and bone white palette.",
     "component_assembly": "Minimalist studio composition of a modular component assembly: one rack "
                           "rail carrying two module bays, an inspection latch left open on the "
-                          "lower bay, laid on brushed steel in low-angle view with the hero off-centre, "
-                          "a single soft key light, hard clean edges, generous negative space, matte "
-                          "muted palette of slate grey and ochre.",
+                          "lower bay, laid on a brushed steel bench in a machine shop, low-angle view with the "
+                          "hero off-centre, a single soft key light from the left, hard clean edges, "
+                          "generous negative space, slate grey and ochre palette.",
+}
+
+
+SUBJECTS = {
+    "clay_render": "a matte clay modular assembly on a loading bay floor",
+    "component_assembly": "a modular rack holding two module bays in a machine shop",
+    "paper_collage": "a stock certificate silhouette on a workshop bench",
+    "architectural_night": "an industrial control building seen across the plant yard",
 }
 
 
@@ -122,6 +131,10 @@ def brief_json(**over) -> str:
     base.update(over)
     if "prompt" not in over and base["style_id"] in PROMPTS:
         base["prompt"] = PROMPTS[base["style_id"]]
+        # The scene gate requires the prompt to depict the brief's own subject, so a fixture that
+        # swaps the treatment swaps the object with it.
+        if "subject" not in over:
+            base["subject"] = SUBJECTS.get(base["style_id"], base["subject"])
     return json.dumps(base)
 
 
@@ -295,9 +308,11 @@ check("...and a stated reason lets the deviation through",
       ic.validate_brief(json.loads(brief_json(
           style_id="clay_render", model="flux",
           model_override_reason="the desk wants soft-body forms in a photographic grade",
+          subject="a matte clay modular assembly on a loading bay floor",
           prompt="Studio photograph of a matte clay modular assembly on a weathered concrete "
-                 "surface, 100mm macro lens with shallow depth of field, single soft key light, "
-                 "asymmetric composition with the hero off-centre, tactile matte texture.")),
+                 "floor in a loading bay, 100mm macro lens with shallow depth of field, a single "
+                 "soft key light from the left, slate grey and bone white palette, asymmetric "
+                 "composition with the hero off-centre, tactile matte texture.")),
           ARTICLE, allowed=ic.allowed_styles([])).model == "flux")
 refuse({"prompt": "A macro close-up of a desk with a sign reading TARIFF RELIEF, 100mm macro lens, "
                   "shallow depth of field."}, "legible text")
@@ -362,27 +377,32 @@ raises("refused: cut-paper collage of torn paper scraps with no symbolic mechani
 check("...but a paper collage depicting a symbolic certificate silhouette is commissionable",
       ic.validate_brief(json.loads(brief_json(
           style_id="paper_collage", model="nanobanana",
+          subject="a stock certificate silhouette beside an hourglass on a workshop bench",
           prompt="Minimalist editorial cut-paper collage featuring the silhouette of a stock certificate "
-                 "and an hourglass, layered hand-torn rag paper with halftone newsprint texture, "
-                 "asymmetric composition with the hero off-centre, single raking light casting deep "
-                 "shadow layers, no legible print.")),
+                 "and an hourglass, assembled on a workshop bench, layered hand-torn rag paper with "
+                 "halftone newsprint texture, asymmetric composition with the hero off-centre, single "
+                 "raking light from the left casting deep shadow layers, bone white and graphite "
+                 "palette, no legible print.")),
           ARTICLE, allowed=ic.allowed_styles([])).style_id == "paper_collage")
 check("...but a primitive shape carried by a named mechanism is commissionable",
       ic.validate_brief(json.loads(brief_json(
           style_id="component_assembly", model="nanobanana",
+          subject="a modular rack holding two module bays in a machine shop",
           prompt="Minimalist studio composition of a modular rack holding two rectangular module "
-                 "bays, an inspection latch left open on brushed steel, low-angle view with the hero "
-                 "off-centre, single soft key light, matte muted palette with tactile grain.")),
+                 "bays, an inspection latch left open on brushed steel, on a machine shop bench, "
+                 "low-angle view with the hero off-centre, single soft key light from the left, "
+                 "slate grey and ochre palette with tactile grain.")),
       ARTICLE, allowed=ic.allowed_styles([])).style_id == "component_assembly")
 # A compositional phrase is not shape-talk: "clean geometry" in a photograph describes how the shot
 # is framed, and refusing it would send a legitimate architectural brief back for no reason.
 check("...and a photographic prompt's compositional 'clean geometry' is not mistaken for the subject",
       ic.validate_brief(json.loads(brief_json(
           style_id="architectural_night", model="flux",
+          subject="an industrial control building seen across the plant yard",
           prompt="Architectural photograph on a 35mm lens of a modern industrial control building at "
-                 "blue hour, lit windows as the only warm light, low-angle view with dramatic scale "
-                 "contrast, long exposure with no moving figures, weathered concrete and brushed "
-                 "steel, clean geometry.")),
+                 "blue hour, seen across the plant yard, lit windows as the only warm light, "
+                 "low-angle view with dramatic scale contrast, long exposure with no moving figures, "
+                 "charcoal and amber palette, weathered concrete and brushed steel, clean geometry.")),
       ARTICLE, allowed=ic.allowed_styles([])).style_id == "architectural_night")
 raises("refused: a retired treatment, naming the one that replaced it",
        lambda: ic.validate_brief(json.loads(brief_json(style_id="minimal_geometry", model="nanobanana")),
@@ -421,7 +441,8 @@ check("...naming the last refusal", "unknown treatment" in exhausted, exhausted[
 
 seen: list = []
 ic.direct(ARTICLE, history=["editorial_macro", "clay_render"],
-          llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana"), calls=seen))
+          llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana",
+                                     subject="a modular rack holding two module bays in a machine shop"), calls=seen))
 check("the director is told which treatments are already used",
       "editorial_macro, clay_render" in seen[0] and "MUST choose one of" in seen[0])
 check("...and a repeat inside the window is not in the allowed set",
@@ -700,7 +721,8 @@ with tempfile.TemporaryDirectory() as tmp:
     root = pathlib.Path(tmp)
     _, _, pinned_meta = ic.ensure_illustration(
         ARTICLE, root=root, client=client(), pinned_style="component_assembly",
-        llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana")))
+        llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana",
+                                     subject="a modular rack holding two module bays in a machine shop")))
     pinned_sidecar = ic.read_sidecar("reshoring-moved-the-tariff-upstream", root)
     check("...and a followed pin is recorded as a pin, not as the director's own choice",
           pinned_sidecar["pinned"] == {"style": "component_assembly"}

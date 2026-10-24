@@ -39,15 +39,15 @@ The test is the vent, not the strap.
 """
 
 PROMPT = ("Extreme close-up macro photograph of a weathered galvanised tie strap crossing a ridge "
-          "tile on a timber deck, 100mm macro lens with a shallow focal plane, hard low-angle "
-          "afternoon light raking across the oxidised metal and matte concrete, asymmetric "
-          "composition with the strap off-centre.")
+          "tile on a roof deck, 100mm macro lens with a shallow focal plane, hard low-angle "
+          "afternoon light raking from the left across the oxidised metal, bone white and slate "
+          "grey palette, asymmetric composition with the strap off-centre.")
 
 BRIEF = {
     "style_id": "editorial_macro", "rationale": "The story turns on one physical joint and the "
     "gap beside it, so a macro of the strap and the unsealed deck carries the thesis.",
     "cue": "an ember enters where the deck was never sealed",
-    "subject": "a weathered tie strap crossing a ridge tile on a timber deck",
+    "subject": "a weathered tie strap crossing a ridge tile on a roof deck",
     "composition": "extreme asymmetry, the strap off-centre and low in frame",
     "model": "flux", "prompt": PROMPT, "negative_prompt": ic.DEFAULT_NEGATIVE,
     "aspect_ratio": "16:9", "resolution": "1K",

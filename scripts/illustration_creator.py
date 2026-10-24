@@ -69,8 +69,10 @@ from dataclasses import asdict, dataclass, field
 
 try:                                        # run as a script (scripts/ on sys.path)
     import image_delivery as delivery
+    import scene_brief
 except ImportError:                         # imported as a package (the test suites)
     from scripts import image_delivery as delivery
+    from scripts import scene_brief
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ASSET_ROOT = ROOT / "context" / "assets" / "illustrations"
@@ -128,7 +130,8 @@ _NO_TEXT_RE = re.compile(r"\b(text|letter|word|caption|typograph|watermark|signa
 # them, which is how kv-cache-is-the-concurrency-ceiling came back as a cube-and-block assembly. Only
 # the legibility/brand set earns that risk, because in-image text ruins a header outright. The
 # director's own negative stays on the brief as provenance and is still checked by validate_brief.
-IMAGE_GUARD = "Do not include: garbled text, random lettering, numbers, watermarks, UI."
+IMAGE_GUARD = ("Do not include: people, faces, hands, garbled text, random lettering, "
+               "numbers, signage, watermarks, UI, logos.")
 
 # Potency vocabulary — what a brief must NAME to be worth an image credit. A floor, not a style test:
 # a prompt that names neither an optic nor a light is a description, not a photograph, and that is
@@ -601,6 +604,13 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
             f"prompt names no {', no '.join(missing)} — {model} reads the prompt literally, so "
             f"{remedy}")
 
+    # Brief the SCENE, never the concept (owner, 2026-10-24): the frame has to be a situation in the
+    # site's own world — a place, light direction, a palette, and the article's own object — not a
+    # category dressed in quality claims ("futuristic, 8k, cinematic masterpiece").
+    vertical = str(split_frontmatter(article_md)[0].get("vertical") or "")
+    problems += scene_brief.problems(prompt, site=scene_brief.site_for_vertical(vertical),
+                                     subject=re.sub(r"\s+", " ", str(raw.get("subject") or "")).strip())
+
     # The layout is mandated, not left to the model: a composition that states no anchoring rule is
     # how two different articles end up with the same centred object on the same sweep.
     composition = re.sub(r"\s+", " ", str(raw.get("composition") or "")).strip()
@@ -755,6 +765,7 @@ def director_prompt(article_md: str, *, history: list[str], allowed: tuple) -> s
     sources = ", ".join(source_names(article_md)) or "(none)"
     # A treatment re-admitted to keep a family available is not the same as an allowed repeat: say
     # so, or the director reads a contradiction between this list and the recent history above it.
+    scene_guidance = scene_brief.guidance(scene_brief.site_for_vertical(fm.get("vertical", "")))
     readmitted = [s for s in allowed if s in set(history[:HISTORY_WINDOW])]
     readmit_line = ("\nNote: " + ", ".join(readmitted) +
                     " appears above as recently used and is re-admitted only so that its model is "
@@ -818,6 +829,20 @@ WRITE THE PROMPT IN THE IDIOM OF THE MODEL THAT WILL RENDER IT — the two famil
 - flux-2 Pro (editorial_macro, cinematic_still, document_flatlay, long_lens_industry, studio_object, architectural_night) stages a PHOTOGRAPH. Name the optic and its falloff, the light in the room, the material of the surface, and place the subject in a real environment.
 - Nano Banana Pro (clay_render, technical_isometric, component_assembly, paper_collage) builds a STRUCTURE. State the parts and how each is arranged, what each is made of, and the light that falls on it — a spatial construction, not a mood paragraph.
 Both must carry a framing rule, and neither may leave an empty sweep under the object: even a studio treatment sits in a material world.
+
+THE SITE'S WORLD — THE PHOTOGRAPH IS TAKEN HERE, NOT IN A STUDIO VOID:
+{scene_guidance}
+
+BRIEF THE SCENE, NEVER THE CONCEPT. "A home battery" is a category, and a category returns a stock
+abstraction (a chrome box, a glowing orb, a handshake). A SITUATION returns a photograph:
+  BAD:  "A home battery for energy independence, futuristic, high-tech, glowing, 8k, cinematic, masterpiece."
+  GOOD: "A wall-mounted home battery in a garage, its status ring lit, beside a coiled charging cable on
+         a concrete floor. 35mm, soft daylight from the left, bone white, graphite and deep pine
+         green, shallow depth of field, fine film grain, no people, no text, no logos."
+Every prompt must carry, explicitly: ONE OBJECT from this article's mechanism, the PLACE it sits in
+(from the site's world above), the LIGHT DIRECTION, a PALETTE of two or three colours, the LENS and
+depth of field, and FILM GRAIN. Quality claims (8k, masterpiece, photorealistic, futuristic,
+high-tech, "concept of") are refused in code: they give the model nothing to depict.
 
 STEP 4: CRAFT A CINEMATIC, HIGH-TEXTURE GENERATION PROMPT
 Write a prompt (15-120 words) with rich sensory and visual details. Aim for clarity, balance, and a visually arresting sense of curiosity that draws readers in:
