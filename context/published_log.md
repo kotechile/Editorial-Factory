@@ -190,6 +190,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-24 | supplier_risk_reshoring_decision | 7-days-notice-rewrites-your-duty | 7 Days Notice Rewrites Your Duty | https://pressflow.aichieve.net/published/2026-10-24_7-days-notice-rewrites-your-duty.md | reader site only |
 | 2026-10-24 | personal_microeconomics_tinkering_tax | your-homelab-heat-pays-back-45-cents | Homelab Heat Rebate: 45 Cents, Not Free | https://pressflow.aichieve.net/published/2026-10-24_your-homelab-heat-pays-back-45-cents.md | reader site only |
 | 2026-10-24 | supplier_risk_reshoring_decision | your-tooling-assist-is-dutiable | Your $1,100 Tool Bills Every Unit | https://pressflow.aichieve.net/published/2026-10-24_your-tooling-assist-is-dutiable.md | reader site only |
+| 2026-10-24 | yard_robotics | your-1-acre-mowers-04-acre-trap | Your 1-Acre Mower's 0.4-Acre Trap | https://pressflow.aichieve.net/published/2026-10-24_your-1-acre-mowers-04-acre-trap.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

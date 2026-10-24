@@ -1,0 +1,116 @@
+{
+  "slug": "your-1-acre-mowers-04-acre-trap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Technical isometric cutaway of a robot mower on a terrain grid showing a reduced usable cutting area.",
+      "caption": "Acreage ratings often represent a best-case scenario that shrinks significantly when applied to real-world lawn complexities.",
+      "title": "Robot Mower Usable Acreage Cutaway",
+      "bytes": 393770,
+      "sha256": "sha256:f5b560bd1c23f757c2e4e86187d3ef95"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A clean technical isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre composition showing a robotic lawn mower chassis on a gridded terrain map, with a large outer theoretical boundary wire and a much smaller highlighted inner usable cutting zone. Constructed from matte grey and olive green polymer blocks and brushed steel rails, resting on a weathered concrete driveway. Flat muted palette with a single bright ochre accent highlighting the small usable area. Thin consistent line weight, visible depth to the hardware modules and terrain grid, one directional light casting long shadows, generous empty margin. No text, no letters.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, typography, signatures, blur, noisy lines",
+  "rationale": "The technical isometric cutaway perfectly visualizes the mathematical reduction from rated capacity to usable capacity by showing layered, shrinking mapped zones.",
+  "cue": "cost per usable acre",
+  "subject": "technical isometric cutaway of a terrain mapping grid and robot mower chassis",
+  "core_thesis": "A robot mower's acreage rating is a theoretical maximum that drastically shrinks on a real lawn, meaning buyers must evaluate cost per usable acre.",
+  "core_conflict": "Theoretical rated capacity vs. actual usable field capacity",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "The Robot Mower Acreage Trap. Technical isometric cutaway of a robot mower on a terrain grid showing a reduced usable cutting area.",
+  "caption": "The Robot Mower Acreage Trap: How real lawns shrink a robot mower's rated capacity.",
+  "title": "The Robot Mower Acreage Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "technical_isometric"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-1-acre-mowers-04-acre-trap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 388664,
+  "sha256": "sha256:54819e66e1e06043eedb4e7d7cec6afd9f7be90ad6ea5df6ac1999c2f943c0cb",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 388664,
+    "quality": 72,
+    "sha256": "sha256:54819e66e1e06043eedb4e7d7cec6afd9f7be90ad6ea5df6ac1999c2f943c0cb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:97a1da01fb964ad6943bb496d1160ae47c06cbf8c51b19381eca3fb089d2e715",
+  "render_phash": "02462390226425e22b6137f035d83f593f9137a83bd22b6537322c591cec39b6",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric illustration of a robotic mower chassis with exposed internal gears and components, positioned on a concrete edge over a gridded background with dashed boundary lines.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a robot mower and mapping grid, which aligns with the article's focus on robot mower acreage ratings and boundaries."
+  },
+  "source_hash": "sha256:3b1b76d15532428325ec532ef960eae9",
+  "source_chars": 5894,
+  "task_id": "8c97c8e2127e7b89e5b4baa536c46db6",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c2fa81c49da3f73a0eae9c2fc21e80e8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A clean technical isometric cutaway illustration, technical drawing style, axonometric projection. An asymmetric off-centre composition showing a robotic lawn mower chassis on a gridded terrain map, with a large outer theoretical boundary wire and a much smaller highlighted inner usable cutting zone. Constructed from matte grey and olive green polymer blocks and brushed steel rails, resting on a weathered concrete driveway. Flat muted palette with a single bright ochre accent highlighting the small usable area. Thin consistent line weight, visible depth to the hardware modules and terrain grid, one directional light casting long shadows, generous empty margin. No text, no letters.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-24T18:44:17+00:00",
+  "overlay": {
+    "kicker": "ROBOT MOWERS // ACREAGE CLAIMS",
+    "title": "THE ROBOT MOWER ACREAGE TRAP",
+    "hook": "How real lawns shrink a robot mower's rated capacity",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 11.32,
+    "target": 4.5,
+    "clutter": 0.049,
+    "region_rgb": [
+      244,
+      239,
+      227
+    ],
+    "binding_rgb": [
+      244,
+      238,
+      226
+    ],
+    "title_lines": [
+      "THE ROBOT MOWER",
+      "ACREAGE TRAP"
+    ],
+    "subject": 0.024,
+    "ink_subject": 0.01,
+    "spike": 0.082,
+    "generated_at": "2026-10-24T18:44:17+00:00"
+  }
+}

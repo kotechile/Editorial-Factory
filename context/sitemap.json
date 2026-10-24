@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T18:24:51Z",
+  "updated_at": "2026-10-24T18:45:01Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3352,6 +3352,23 @@
       "date": "2026-10-24",
       "public": true,
       "url": "https://aichieve.net/7-days-notice-rewrites-your-duty/"
+    },
+    {
+      "slug": "2026-10-24_your-1-acre-mowers-04-acre-trap",
+      "title": "Your 1-Acre Mower's 0.4-Acre Trap",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-24",
+      "public": false
     },
     {
       "slug": "2026-10-24_your-home-servers-45-day-patch-gap",
