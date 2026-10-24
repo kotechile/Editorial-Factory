@@ -94,9 +94,10 @@ DEFAULT_ASPECT = "16:9"
 # The site crops the header two ways — a 7:4 card and a 16:9 masthead — so only a 16:9 master loses
 # nothing in either. 3:2 was allowed here until 2026-10-24 and lost 5% of the width in the card.
 FEATURED_ASPECTS = ("16:9",)
-# The delivery master is 2400x1350 (see scripts/image_delivery.py). A 1K render is 1344px wide and
-# cannot reach the 1600px floor without a visible upscale, so the desk commissions 2K.
-FEATURE_RESOLUTIONS = ("2K",)
+# The render stays at 1K (1344x768) — the owner's call of 2026-10-24: that is what the desk pays for
+# and the look it wants. The delivery master is still 2400x1350 (`scripts/image_delivery.py`), so the
+# 1344px render is upscaled 1.79x on the way out; anything under ~1000px is refused as mush.
+FEATURE_RESOLUTIONS = ("1K",)
 DELIVERY_EXT = "jpg"                 # the delivery master is always JPEG (scripts/image_delivery.py)
 # A treatment may not repeat within the last N illustrations. Deliberately 4 and not 2: at this
 # catalogue size four withheld treatments can never empty the desk (ten treatments, at most four
@@ -228,7 +229,7 @@ class Style:
     craft: str
     keywords: tuple
     model: str
-    resolutions: tuple = ("2K",)          # the delivery master is 2400x1350; 1K cannot reach 1600px
+    resolutions: tuple = ("1K",)          # the render size the desk pays for (1344x768)
 
 
 STYLES: dict[str, Style] = {s.id: s for s in [
@@ -617,7 +618,7 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if aspect not in FEATURED_ASPECTS:
         problems.append(f"aspect_ratio {aspect!r} is not a featured-header shape "
                         f"(one of {', '.join(FEATURED_ASPECTS)})")
-    resolution = str(raw.get("resolution") or "2K").strip().upper()
+    resolution = str(raw.get("resolution") or "1K").strip().upper()
     if resolution not in FEATURE_RESOLUTIONS:
         problems.append(f"resolution {resolution!r} is not one of {', '.join(FEATURE_RESOLUTIONS)}")
 
@@ -910,7 +911,7 @@ arrangement, material, light) — and containing the vocabulary of the treatment
  "negative_prompt": "short; must name garbled text/random lettering/watermarks. Never enumerate subject matter to \
 exclude — the image model reads the negative as tokens to draw",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
- "resolution": "2K — the delivery master is 2400x1350; a 1K render cannot reach the 1600px floor",
+ "resolution": "1K — the desk renders at 1K (1344x768); the delivery master is upscaled from it",
  "alt_text": "40-140 chars, the SUBJECT first, never the headline restated, never 'a render/photo of…'",
  "caption": "one sentence ending in a full stop",
  "title": "3-100 chars, the CMS media-library label",

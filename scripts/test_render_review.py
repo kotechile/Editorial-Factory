@@ -50,7 +50,7 @@ BRIEF = {
     "subject": "a weathered tie strap crossing a ridge tile on a timber deck",
     "composition": "extreme asymmetry, the strap off-centre and low in frame",
     "model": "flux", "prompt": PROMPT, "negative_prompt": ic.DEFAULT_NEGATIVE,
-    "aspect_ratio": "16:9", "resolution": "2K",
+    "aspect_ratio": "16:9", "resolution": "1K",
     "alt_text": "A weathered metal tie strap crossing a ridge tile on a timber roof deck in low sun.",
     "caption": "The strap holds the deck; the vent beside it is what lets the ember in.",
     "title": "Tie strap across a ridge tile",

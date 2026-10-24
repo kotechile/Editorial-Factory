@@ -112,7 +112,7 @@ def brief_json(**over) -> str:
         "prompt": PROMPTS["editorial_macro"],
         "negative_prompt": ic.DEFAULT_NEGATIVE,
         "aspect_ratio": "16:9",
-        "resolution": "2K",
+        "resolution": "1K",
         "alt_text": "Translucent plastic resin pellets resting on a steel plate.",
         "caption": "The duty now lands on the material before it becomes packaging.",
         "title": "Plastic resin pellets",
@@ -307,7 +307,8 @@ refuse({"prompt": "Extreme close-up macro photograph of 塑料 pellets on a stee
                   "lens, shallow depth of field."}, "non-Latin")
 refuse({"negative_prompt": "blurry, low quality"}, "forbid text")
 refuse({"aspect_ratio": "1:1"}, "featured-header shape")
-refuse({"resolution": "4K"}, "is not one of 2K")
+refuse({"resolution": "4K"}, "is not one of 1K")
+refuse({"resolution": "2K"}, "is not one of 1K")
 refuse({"aspect_ratio": "3:2"}, "featured-header shape")
 refuse({"alt_text": "Pellets."}, "alt_text is")
 refuse({"alt_text": "A translucent plastic resin pellet resting on the steel plate of a machine.",

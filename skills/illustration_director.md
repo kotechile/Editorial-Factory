@@ -184,11 +184,13 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
 8. **Alt text is a deliverable**: 40-140 chars, in English, describing the subject, never starting
    "image of"/"photo of", and never the headline restated (it is the only text a screen reader or an
    image search can read). The caption is one quotable sentence. Both are checked by length and shape.
-9. **Featured-header shape and delivery**: `16:9` only, 2K render. The master is 2400x1350, sRGB,
+9. **Featured-header shape and delivery**: `16:9` only, 1K render (1344x768 — the owner's call, so
+   the desk's cost and look stay put). The master is 2400x1350, sRGB,
    progressive JPEG under 400KB, uploaded as `<slug>-featured.jpg`
    (`scripts/image_delivery.py`). The site crops a 7:4 card and a 16:9 masthead from it, so any other
-   master loses content in one of the two; a 1K render (1344px) cannot reach the 1600px floor without
-   a visible upscale, and WordPress only generates its `large` rendition above that floor.
+   master loses content in one of the two. The 1344px render is upscaled 1.79x to the master on the
+   way out (a 1344px upload cannot reach the 1600px floor and WordPress only generates its `large`
+   rendition above it), so keep the frame simple and the type large — an upscaled busy frame shows it.
 10. **The image must describe the topic, and must not be sterile.** A reader who sees only the header,
     before the headline, has to be able to name the article's subject area, and the frame has to sit
     in one of the story's own subject-matter classes: physical components/materials or a supply-chain

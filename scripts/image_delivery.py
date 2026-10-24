@@ -45,7 +45,7 @@ DELIVERY_WIDTH = 2400
 DELIVERY_HEIGHT = 1350
 MIN_WIDTH = 1600
 MAX_BYTES = 400 * 1024
-MIN_SOURCE_WIDTH = 1000          # below this an upscale to 2400 is mush: commission a 2K render
+MIN_SOURCE_WIDTH = 1000          # the desk renders at 1K/1344px; below this an upscale is mush
 DUPLICATE_HAMMING = 12           # 256-bit dHash: the corpus's closest two DIFFERENT headers sit
                                  # 33 bits apart, and a re-encoded copy of one sits at 0-2
 ALT_MIN, ALT_MAX = 40, 140
@@ -169,7 +169,7 @@ def normalize(src, *, size: tuple[int, int] = (DELIVERY_WIDTH, DELIVERY_HEIGHT),
         raise DeliveryError(
             f"render is {source_size[0]}x{source_size[1]} — the delivery master is {size[0]}x{size[1]} "
             f"and a source under {MIN_SOURCE_WIDTH}px cannot reach {MIN_WIDTH}px without visible "
-            f"mush; commission it at 2K")
+            f"mush; re-render it at 1K (1344x768) or larger")
     img = to_srgb(img)
     img, scale = fit_delivery(img, size)
     blob, quality = encode(img, max_bytes=max_bytes)
