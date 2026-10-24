@@ -28,6 +28,8 @@ context/assets/illustrations/**/*.jpg
 context/assets/illustrations/**/*.jpeg
 context/assets/illustrations/**/*.png
 context/assets/illustrations/**/*.webp
+# the delivery audit's fingerprint cache (rebuildable, one line per render)
+context/assets/illustrations/.render_index.json
 context/assets/_review_*
 
 # OS

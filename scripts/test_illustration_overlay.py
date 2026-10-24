@@ -219,10 +219,16 @@ def test_the_composite_records_where_the_type_landed(tmp_path):
     out = tmp_path / "typed.png"
     place = composite(src, out, COPY)
     assert out.exists()
-    assert place["size"] == img.size[:2]        # under 1920px: delivery size untouched
+    # The delivery master, whatever the render was: 16:9, 2400x1350, progressive JPEG under 400KB.
+    assert place["size"] == (2400, 1350), place["size"]
+    assert out.read_bytes()[:3] == b"\xff\xd8\xff"
+    assert out.stat().st_size <= 400 * 1024
+    from PIL import Image
+    with Image.open(out) as written:
+        assert written.info.get("progressive")
     assert place["ink_subject"] < 0.15, place
     assert {"subject", "ink_subject", "spike", "anchor"} <= set(place)
-    assert place["block"][1] < img.size[1]      # the block is on the frame
+    assert place["block"][1] < 1350             # the block is on the frame
 
 
 def test_module_is_importable_from_the_repo_root():
@@ -231,13 +237,15 @@ def test_module_is_importable_from_the_repo_root():
 
 
 def test_alt_clip_breaks_at_a_word_boundary_never_mid_word():
-    """The 125-char cap used to slice '…a massive stack of opaque proc'."""
+    """The cap used to slice '…a massive stack of opaque proc'; it is 140 now, still on a word."""
     raw = ("Cheaper Models Cost More. Modular mechanical assembly showing a small input block "
-           "connected to a massive stack of opaque processing bays.")
+           "connected to a massive stack of opaque processing bays, each one latched shut under "
+           "a hard raking light on a poured concrete floor.")
     clipped = alt_clip(raw)
-    assert len(clipped) <= 125
+    assert len(clipped) <= 140
     assert raw.startswith(clipped)              # a prefix of the original, nothing invented
-    assert raw[len(clipped):len(clipped) + 1] in ("", " ")   # the cut landed on a space
+    # The cut may drop trailing punctuation, but it never lands inside a word.
+    assert not raw[len(clipped):len(clipped) + 1].isalnum()
     assert not clipped.endswith("proc")
 
 

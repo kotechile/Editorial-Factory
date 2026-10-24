@@ -53,8 +53,10 @@ CLI:
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime
 import hashlib
+import io
 import json
 import os
 import pathlib
@@ -64,6 +66,11 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import asdict, dataclass, field
+
+try:                                        # run as a script (scripts/ on sys.path)
+    import image_delivery as delivery
+except ImportError:                         # imported as a package (the test suites)
+    from scripts import image_delivery as delivery
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ASSET_ROOT = ROOT / "context" / "assets" / "illustrations"
@@ -84,8 +91,13 @@ MODEL_ALIASES = {
 GEMINI_MODEL = "gemini-3.1-pro-preview"
 DIRECTOR_MAX_ATTEMPTS = 3
 DEFAULT_ASPECT = "16:9"
-FEATURED_ASPECTS = ("16:9", "3:2")     # a featured image is landscape; a square header crops badly
-FEATURE_RESOLUTIONS = ("1K", "2K")
+# The site crops the header two ways — a 7:4 card and a 16:9 masthead — so only a 16:9 master loses
+# nothing in either. 3:2 was allowed here until 2026-10-24 and lost 5% of the width in the card.
+FEATURED_ASPECTS = ("16:9",)
+# The delivery master is 2400x1350 (see scripts/image_delivery.py). A 1K render is 1344px wide and
+# cannot reach the 1600px floor without a visible upscale, so the desk commissions 2K.
+FEATURE_RESOLUTIONS = ("2K",)
+DELIVERY_EXT = "jpg"                 # the delivery master is always JPEG (scripts/image_delivery.py)
 # A treatment may not repeat within the last N illustrations. Deliberately 4 and not 2: at this
 # catalogue size four withheld treatments can never empty the desk (ten treatments, at most four
 # blocked, six always left), while narrowing the window to 2 would let a treatment come back after
@@ -216,7 +228,7 @@ class Style:
     craft: str
     keywords: tuple
     model: str
-    resolutions: tuple = ("1K", "2K")
+    resolutions: tuple = ("2K",)          # the delivery master is 2400x1350; 1K cannot reach 1600px
 
 
 STYLES: dict[str, Style] = {s.id: s for s in [
@@ -605,14 +617,16 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if aspect not in FEATURED_ASPECTS:
         problems.append(f"aspect_ratio {aspect!r} is not a featured-header shape "
                         f"(one of {', '.join(FEATURED_ASPECTS)})")
-    resolution = str(raw.get("resolution") or "1K").strip().upper()
+    resolution = str(raw.get("resolution") or "2K").strip().upper()
     if resolution not in FEATURE_RESOLUTIONS:
         problems.append(f"resolution {resolution!r} is not one of {', '.join(FEATURE_RESOLUTIONS)}")
 
     alt = re.sub(r"\s+", " ", str(raw.get("alt_text") or "")).strip()
-    if not 20 <= len(alt) <= 125:
-        problems.append(f"alt_text is {len(alt)} chars — the desk writes 125 or fewer so a screen "
-                        f"reader reads it whole")
+    # 40-140 chars, and never the headline restated: alt is the only text a screen reader (and an
+    # image search) can read, so repeating the title wastes the one surface the image owns.
+    article_title = str(split_frontmatter(article_md)[0].get("title") or "")
+    media_title = re.sub(r"\s+", " ", str(raw.get("title") or "")).strip()
+    problems += delivery.alt_problems(alt, media_title, article_title)
     if _ALT_PREFIX_RE.match(alt) or _ALT_MEDIUM_RE.match(alt):
         problems.append("alt_text opens on the medium ('image/photo/render of…') — describe the "
                         "subject instead; a screen reader gains nothing from the medium")
@@ -869,9 +883,13 @@ to draw, so "no abstract cubes" is an instruction to draw abstract cubes.
 - BRAND & PRODUCT INTEGRITY (RECOGNIZED BRAND SUBJECTS & LOGOS): When the article focuses on a real company (e.g. Tesla, Apple, NVIDIA, AWS, Maersk, Boeing, Caterpillar), depicting their recognized brand subjects, authentic products/machinery, and accurate name-brand logos or emblems is FULLY PERMITTED and encouraged, provided their representation is faithful and accurate to the brand's genuine visual identity and design. Avoid isolated gibberish text or distorted lettering. Set "depicts_real_brand": true when a recognized brand subject, vehicle, hardware, or authentic logo is featured in the frame. No recognisable real person, and no human face or hands in frame. No {', '.join(CLICHE_BAN)}.
 - The image is cropped and shown small: one subject, generous breathing room, no small detail \
 that carries the meaning.
-- Alt text describes the subject for a screen reader in <=125 characters, starting with the subject \
-itself (never "image of", never "a clay 3D render of…", never the medium). The caption is one \
-sentence a reader could quote. The credit is e.g. \
+- ACCURACY IS A GATE, NOT AN AMBITION: a second model looks at the finished render and compares it \
+with this article. If a reader who saw only the image could not name the subject of THIS story, or \
+the frame carries legible words or numbers, the render is rejected and you are asked again with the \
+checker's reason. Depict the article's own protagonist and mechanism precisely.
+- Alt text describes the subject for a screen reader in 40-140 characters, starting with the subject \
+itself (never "image of", never "a clay 3D render of…", never the medium) and never restating the \
+headline. The caption is one sentence a reader could quote. The credit is e.g. \
 "Illustration: Editorial-Factory Intelligence Unit".
 
 Return ONLY a JSON object, no markdown fence, with exactly these keys:
@@ -892,8 +910,8 @@ arrangement, material, light) — and containing the vocabulary of the treatment
  "negative_prompt": "short; must name garbled text/random lettering/watermarks. Never enumerate subject matter to \
 exclude — the image model reads the negative as tokens to draw",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
- "resolution": "1K for most stories, 2K only when fine physical detail is the point",
- "alt_text": "<=125 chars, the SUBJECT first — never 'a render/photo of…'",
+ "resolution": "2K — the delivery master is 2400x1350; a 1K render cannot reach the 1600px floor",
+ "alt_text": "40-140 chars, the SUBJECT first, never the headline restated, never 'a render/photo of…'",
  "caption": "one sentence ending in a full stop",
  "title": "3-100 chars, the CMS media-library label",
  "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -928,6 +946,122 @@ def call_gemini(prompt: str, *, model: str = GEMINI_MODEL, key: str | None = Non
     if not text.strip():
         raise IllustrationError(f"art director returned no text: {json.dumps(payload)[:300]}")
     return text
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# the render reviewer — does the PICTURE match the article?
+# ─────────────────────────────────────────────────────────────────────────────
+
+# The director's brief is a judgement about words; only a model that looks at the finished pixels can
+# say whether the frame depicts this story. The complaint that started this (2026-10-24: wellroost
+# headers "not accurate with the text") is exactly the class the brief gate cannot see.
+REVIEW_MODEL = GEMINI_MODEL
+REVIEW_ATTEMPTS = 2
+RENDER_ATTEMPTS = 2          # render + one re-commissioned retry, then publish WITHOUT the header
+_NO_TEXT_VALUES = {"", "none", "no text", "n/a", "na", "nothing", "no legible text", "-"}
+
+
+def call_gemini_vision(image: bytes, prompt: str, *, model: str = REVIEW_MODEL,
+                       key: str | None = None, timeout: int = 120) -> str:
+    """One JSON-mode Gemini call with the image inline. Downscaled: the checker needs the subject,
+    not the grain."""
+    from PIL import Image
+    img = Image.open(io.BytesIO(image)).convert("RGB")
+    if img.width > 1200:
+        img = img.resize((1200, round(img.height * 1200 / img.width)), Image.LANCZOS)
+    buf = io.BytesIO()
+    img.save(buf, format="JPEG", quality=85)
+    url = (f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+           f"?key={key or gemini_key()}")
+    body = {
+        "contents": [{"role": "user", "parts": [
+            {"text": prompt},
+            {"inline_data": {"mime_type": "image/jpeg",
+                             "data": base64.b64encode(buf.getvalue()).decode()}}]}],
+        "generationConfig": {"temperature": 0.1, "maxOutputTokens": 1024,
+                             "responseMimeType": "application/json",
+                             "thinkingConfig": {"thinkingLevel": "low"}},
+    }
+    req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json"}, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            payload = json.loads(response.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as exc:
+        raise IllustrationError(f"render review failed: HTTP {exc.code} — "
+                                f"{exc.read().decode('utf-8', 'replace')[:300]}") from None
+    except Exception as exc:                       # noqa: BLE001
+        raise IllustrationError(f"render review failed: {exc}") from None
+    candidates = payload.get("candidates") or []
+    text = "".join(part.get("text", "") for part in
+                   ((candidates[0].get("content") or {}).get("parts") or [])) if candidates else ""
+    if not text.strip():
+        raise IllustrationError(f"render review returned no text: {json.dumps(payload)[:300]}")
+    return text
+
+
+def review_prompt(article_md: str, brief: Brief) -> str:
+    """What the checker sees: the article's own substance and the frame that was ordered."""
+    fm, body = split_frontmatter(article_md)
+    headings = re.findall(r"^##\s+(.+)$", body, re.M)[:5]
+    numbers = "; ".join(_numbers(article_md)[:8]) or "(none)"
+    return f"""You are the picture desk's checker on an industry-analysis editorial desk. Below is ONE \
+generated header image and the article it has to illustrate.
+
+ARTICLE
+Headline: {fm.get('title', '')}
+One big thing: {fm.get('one_big_thing', '')}
+Section headings: {', '.join(headings) or '(none)'}
+Figures in the piece: {numbers}
+Lead: {article_excerpt(article_md)[:600]}
+
+THE FRAME THE ART DIRECTOR ORDERED
+Treatment: {brief.style.label}
+Subject: {brief.subject}
+Composition: {brief.composition}
+
+Do three things, in this order:
+1. Say literally what is in the frame — one sentence, no interpretation or mood language.
+2. Transcribe every legible word, letter, number, logo or watermark visible in it. Report the \
+strands exactly as they appear; use "" only when there is genuinely nothing readable.
+3. Judge the SUBJECT, not the style: would a reader who saw only this image and then read the \
+headline say "yes, that is what this story is about"? A metaphor passes when the thing depicted is \
+the article's own mechanism, object or protagonist. Fail a frame that shows a different industry, a \
+different protagonist, generic filler, or a scene that contradicts the article's claim.
+
+Return ONLY JSON: {{"depicts": "...", "legible_text": "...", "on_topic": true|false, \
+"confidence": 0.0-1.0, "reason": "one sentence"}}"""
+
+
+def review_render(image: bytes, article_md: str, brief: Brief, *, vision=None) -> dict:
+    """Look at the finished render and say whether it may ship. Never raises on a checker outage."""
+    vision = vision or call_gemini_vision
+    verdict: dict = {}
+    last = ""
+    for attempt in range(1, REVIEW_ATTEMPTS + 1):
+        try:
+            verdict = parse_json_object(vision(image, review_prompt(article_md, brief)))
+            break
+        except IllustrationError as exc:            # transient network/quota or an unparseable answer
+            last = str(exc)
+            verdict = {}
+    if not verdict:
+        return {"ok": True, "skipped": True, "reason": f"render review unavailable ({last}) — "
+                                                       f"the brief gate ran, the picture was not checked"}
+    legible = re.sub(r"\s+", " ", str(verdict.get("legible_text") or "")).strip()
+    has_text = legible.lower().strip(" .;-") not in _NO_TEXT_VALUES
+    on_topic = bool(verdict.get("on_topic"))
+    problems: list[str] = []
+    if not on_topic:
+        problems.append(f"the frame does not depict this article — the checker saw "
+                        f"{str(verdict.get('depicts') or '')[:140]!r}: "
+                        f"{str(verdict.get('reason') or '')[:160]}")
+    if has_text:
+        problems.append(f"the frame carries legible lettering ({legible[:80]!r}) — generated type "
+                        f"reads as rubble and the header must not carry any")
+    return {"ok": not problems, "problems": problems, "depicts": verdict.get("depicts", ""),
+            "legible_text": legible, "on_topic": on_topic,
+            "confidence": verdict.get("confidence"), "reason": verdict.get("reason", "")}
 
 
 def parse_json_object(text: str) -> dict:
@@ -1009,7 +1143,7 @@ def allowed_styles(history: list[str], window: int = HISTORY_WINDOW) -> tuple:
 
 def direct(article_md: str, *, history: list[str] | None = None, llm=None,
            pinned_style: str | None = None, pinned_model: str | None = None,
-           model: str = GEMINI_MODEL, notes: list | None = None) -> Brief:
+           model: str = GEMINI_MODEL, notes: list | None = None, extra: str = "") -> Brief:
     """Ask the art director for a brief, and make it answer again when it breaks a rule.
 
     A rule violation is fed back verbatim rather than being repaired here: this module will not
@@ -1022,7 +1156,9 @@ def direct(article_md: str, *, history: list[str] | None = None, llm=None,
         allowed = (pinned_style,) if pinned_style in STYLES else allowed
     llm = llm or call_gemini
     base = director_prompt(article_md, history=history[:HISTORY_WINDOW + 2], allowed=allowed)
-    feedback = ""
+    feedback = (f"\n\nYOUR PREVIOUS FRAME WAS REJECTED BY THE PICTURE DESK: {extra}\n"
+                f"Commission a DIFFERENT reading that fixes this — a different subject or treatment, "
+                f"not the same scene re-worded.") if extra else ""
     last_error = ""
     for attempt in range(1, DIRECTOR_MAX_ATTEMPTS + 1):
         raw = llm(base + feedback, model=model)
@@ -1039,7 +1175,8 @@ def direct(article_md: str, *, history: list[str] | None = None, llm=None,
             notes.append(f"art director attempt {attempt} refused: {exc}")
             feedback = (f"\n\nYOUR PREVIOUS ANSWER WAS REFUSED: {last_error}\n"
                         f"Answer again with a corrected JSON object. Allowed treatments: "
-                        f"{', '.join(allowed)}.")
+                        f"{', '.join(allowed)}."
+                        + (f"\nThe picture desk's rejection still stands: {extra}" if extra else ""))
     raise BriefError(f"the art director did not produce a commissionable brief in "
                      f"{DIRECTOR_MAX_ATTEMPTS} attempts — last refusal: {last_error}")
 
@@ -1218,22 +1355,35 @@ def read_sidecar(slug: str, root: pathlib.Path | None = None) -> dict | None:
 
 
 def store(slug: str, generation: Generation, brief: Brief, md: str, *,
-          root: pathlib.Path | None = None, now: str | None = None) -> dict:
-    """Write the bytes + the full provenance sidecar. Returns the sidecar as written."""
+          root: pathlib.Path | None = None, now: str | None = None,
+          review: dict | None = None) -> dict:
+    """Write the bytes + the full provenance sidecar. Returns the sidecar as written.
+
+    The render is converted HERE, once: cropped to 16:9, sized to 2400x1350, sRGB, progressive JPEG
+    under 400KB (`scripts/image_delivery.py`). Everything downstream — the overlay, the CMS upload,
+    the audit — treats this file as the delivery master, so the standard cannot be applied
+    differently by whichever step happens to save last.
+    """
     directory = asset_dir(slug, root)
     directory.mkdir(parents=True, exist_ok=True)
     previous = read_sidecar(slug, root) or {}
-    filename = f"featured.{generation.ext}"
-    (directory / filename).write_bytes(generation.image)
+    normalized = delivery.normalize(generation.image)
+    filename = f"featured.{DELIVERY_EXT}"
+    (directory / filename).write_bytes(normalized.blob)
+    # The pristine render, kept for a free re-type (`illustration_overlay.py`). Written here so the
+    # overlay never has to copy a typed image back over its own base.
+    (directory / f"featured.base.{DELIVERY_EXT}").write_bytes(normalized.blob)
+    keep = {filename, "featured.json", f"featured.base.{DELIVERY_EXT}"}
     for stale in directory.glob("featured.*"):                 # an earlier generation in another format
-        if stale.name not in (filename, "featured.json"):
+        if stale.name not in keep:
             stale.unlink()
+    render = delivery.fingerprint(normalized.blob)
     revision = int(previous.get("revision") or 0) + 1
     history = list(previous.get("history") or [])
     if previous.get("revision"):
         history.append({k: previous.get(k) for k in
                         ("revision", "style", "model", "prompt", "task_id", "sha256",
-                         "generated_at", "source_hash")})
+                         "generated_at", "source_hash", "render_sha256")})
     record = {
         "slug": slug, "revision": revision, "history": history,
         "style": brief.style_id, "style_label": brief.style.label,
@@ -1250,9 +1400,14 @@ def store(slug: str, generation: Generation, brief: Brief, md: str, *,
         "pinned": brief.pinned or {},
         "file": filename,
         "local_path": str((directory / filename).relative_to(root or ROOT)),
-        "ext": generation.ext, "content_type": generation.content_type,
-        "bytes": len(generation.image),
-        "sha256": "sha256:" + hashlib.sha256(generation.image).hexdigest()[:32],
+        "ext": DELIVERY_EXT, "content_type": "image/jpeg",
+        "bytes": normalized.bytes,
+        "sha256": normalized.sha256[:39],
+        "delivery": normalized.info(),
+        # Uniqueness is checked on the PRISTINE render: the typed file differs by its lettering even
+        # when two posts got the same picture, so a hash of the staged bytes cannot see a repeat.
+        "render_sha256": render["sha256"], "render_phash": render["phash"],
+        "review": review or {},
         "source_hash": source_hash(md),
         "source_chars": len(article_core_text(md)),
         "task_id": generation.task_id, "credits": generation.credits,
@@ -1321,7 +1476,10 @@ def supabase_metadata(record: dict) -> dict:
         "prompt", "negative_prompt", "rationale", "cue", "subject", "composition", "alt_text",
         "caption", "title",
         "credit", "local_path", "ext", "content_type", "bytes", "sha256", "source_hash",
-        "task_id", "credits", "generated_at", "revision", "director", "director_attempts")}
+        "task_id", "credits", "generated_at", "revision", "director", "director_attempts",
+        # The delivery standard's numbers and the picture-desk verdict travel with the row, so the
+        # push and any later audit see what was actually produced, not just where it sits.
+        "delivery", "review", "render_sha256", "render_phash")}
 
 
 def _kv(key: str, value) -> str:
@@ -1397,6 +1555,15 @@ def check_artifact(md: str, *, root: pathlib.Path | None = None,
                             ("image_path", "local_path")):
         if fm.get(key) and sidecar.get(field_name) and fm[key] != sidecar[field_name]:
             problems.append(f"frontmatter {key} != sidecar {field_name}")
+    # The delivery standard is gated only for images generated under it: the corpus published before
+    # 2026-10-24 is grandfathered (161 of 182 are under 1600px wide) and must not turn the build red.
+    if sidecar.get("delivery"):
+        staged = asset_dir(slug, root) / str(sidecar.get("file") or "featured.jpg")
+        if staged.is_file():
+            problems += delivery.check_file(staged)
+        problems += delivery.alt_problems(str(sidecar.get("alt_text") or ""),
+                                          str(sidecar.get("title") or ""),
+                                          str(fm.get("title") or ""))
     return problems
 
 
@@ -1407,7 +1574,8 @@ def check_artifact(md: str, *, root: pathlib.Path | None = None,
 def ensure_illustration(md: str, *, root: pathlib.Path | None = None, slug: str | None = None,
                         client=None, llm=None, force: bool = False, pinned_style: str | None = None,
                         pinned_model: str | None = None, notes: list | None = None,
-                        ledger: pathlib.Path | None = None) -> tuple[str, list[str], dict | None]:
+                        ledger: pathlib.Path | None = None, vision=None,
+                        ) -> tuple[str, list[str], dict | None]:
     """(markdown, notes, illustration metadata). Commissions one image if the artifact needs one.
 
     Idempotency is by content: an artifact whose frontmatter already carries image fields AND whose
@@ -1448,10 +1616,48 @@ def ensure_illustration(md: str, *, root: pathlib.Path | None = None, slug: str 
     notes.append(f"direction: {brief.style_id} ({brief.style.label}) on {brief.model_id} — "
                  f"cue {brief.cue[:60]!r}; allowed were {', '.join(allowed_styles(history))}")
 
-    gen = (client or KieClient()).generate(brief, notes=notes)
-    record = store(slug, gen, brief, md, root=root)
+    gen = None
+    review: dict = {}
+    accepted = False
+    for attempt in range(1, RENDER_ATTEMPTS + 1):
+        gen = (client or KieClient()).generate(brief, notes=notes)
+        review = review_render(gen.image, md, brief, vision=vision)
+        if review.get("ok"):
+            duplicate = delivery.find_duplicate(gen.image, slug, root=root)
+            if duplicate:
+                review = {"ok": False, "depicts": duplicate["slug"], "problems": [
+                    f"the same picture already runs on '{duplicate['slug']}' "
+                    f"({duplicate['kind']}, dHash distance {duplicate['distance']}) — no two posts "
+                    f"share a header, a repeat is a templating tell"]}
+        if review.get("ok"):
+            accepted = True
+            break
+        reasons = "; ".join(review.get("problems") or [str(review.get("reason") or "")])
+        notes.append(f"render {attempt}/{RENDER_ATTEMPTS} rejected: {reasons}")
+        if attempt < RENDER_ATTEMPTS:
+            # A rejected PICTURE means the reading is wrong, not that the same words need re-rolling:
+            # the director answers again with the checker's verdict in front of it.
+            brief = direct(md, history=history, llm=llm, pinned_style=pinned_style,
+                           pinned_model=pinned_model, notes=notes, extra=reasons)
+            brief.pinned = {k: v for k, v in
+                            (("style", pinned_style), ("model", pinned_model)) if v}
+            notes.append(f"re-commissioned after the rejection: {brief.style_id} on {brief.model_id}")
+    if not accepted:
+        raise IllustrationError(
+            "every render failed the picture-desk review — publishing WITHOUT a header rather than "
+            "shipping an image that does not match the article; the sweep retries. Last rejection: "
+            + "; ".join(review.get("problems") or [str(review.get("reason") or "")]))
+    assert gen is not None
+    if review.get("skipped"):
+        notes.append(f"render review skipped: {review.get('reason')}")
+    elif review.get("depicts"):
+        notes.append(f"picture desk: {str(review['depicts'])[:120]!r} "
+                     f"(on topic, confidence {review.get('confidence')})")
+    record = store(slug, gen, brief, md, root=root, review=review)
     append_ledger(record, md=md, root=root)
+    delivery_info = record.get("delivery") or {}
     notes.append(f"generated {record['sha256']} ({record['bytes'] // 1024} KB, {record['ext']}, "
+                 f"{delivery_info.get('width')}x{delivery_info.get('height')}, "
                  f"{gen.credits:g} credits, task {gen.task_id}) -> {record['local_path']}")
     return _write_frontmatter(md, frontmatter_fields(record)), notes, supabase_metadata(record)
 

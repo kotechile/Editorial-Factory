@@ -57,7 +57,11 @@ FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
 SAFE_W, SAFE_H = 0.54, 0.50          # the scrim box, as a fraction of the frame
-MAX_WIDTH = 1920                     # delivery size; WordPress rescales anything above 2560
+# The delivery master: 2400x1350, 16:9, JPEG under 400KB (scripts/image_delivery.py). It was 1920px
+# with a bare q90 until 2026-10-24 — under the 1600px floor the CMS can forget its `large` rendition
+# and serve the original, and q90 at 1920 routinely ran over the 400KB budget.
+MAX_WIDTH = ic.delivery.DELIVERY_WIDTH
+DELIVERY_SIZE = (ic.delivery.DELIVERY_WIDTH, ic.delivery.DELIVERY_HEIGHT)
 SWITCH_MARGIN = 0.90                 # leave the top-left default only if a spot is 10% freer
 MIN_GAIN = 0.02                      # ...and only if it removes this much of the type's subject coverage
 SUBJECT_FLOOR = 0.22                 # type this far onto the artwork is on the subject, not near it
@@ -139,11 +143,13 @@ def source_spelling(word: str, source: str) -> str | None:
     return None
 
 
-def alt_clip(text: str, limit: int = 125) -> str:
+def alt_clip(text: str, limit: int = 140) -> str:
     """Trim reader-facing alt text to `limit` chars on a WORD boundary.
 
     A hard slice cut the string mid-word ("…a massive stack of opaque proc"), which is what a screen
-    reader then announces; the cap stays, the half word does not.
+    reader then announces; the cap stays, the half word does not. The cap is 140 (it was 125) to match
+    the owner's 40-140 standard, and `alt_clip` is still a CEILING — `image_delivery.alt_problems`
+    checks the 40-char floor at the push.
     """
     text = str(text or "").strip()
     if len(text) <= limit:
@@ -562,21 +568,21 @@ def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict,
             d.text((x, ly), line, font=font, fill=(*rgb, alpha))
             ly += int(font.size * 1.18)
     out = Image.alpha_composite(base, overlay).convert("RGB")
-    # Delivery size, not render size. Above 2560px WordPress silently rescales the upload (so the
-    # CMS can never serve the staged bytes and the desk's own read-back fails) — and a 5MB header is
-    # a page-weight problem on its own. The type is drawn first, so everything scales together.
-    if out.width > MAX_WIDTH:
-        out = out.resize((MAX_WIDTH, round(out.height * MAX_WIDTH / out.width)), Image.LANCZOS)
-    if out_path.suffix.lower() in (".jpg", ".jpeg"):
-        out.save(out_path, quality=90, optimize=True, progressive=True)
-    else:
-        out.save(out_path, optimize=True)
+    # Delivery master, not render size: 16:9, 2400x1350, and a progressive JPEG stepped down in
+    # quality until it fits 400KB. Above 2560px WordPress silently rescales the upload (so the CMS can
+    # never serve the staged bytes and the desk's own read-back fails), and a 5MB header is a
+    # page-weight problem on its own. The type is drawn first, so everything scales together.
+    if out.size != DELIVERY_SIZE:
+        out = ic.delivery.fit_delivery(out, DELIVERY_SIZE)[0]
+    blob, quality = ic.delivery.encode(out)
+    out_path.write_bytes(blob)
     t_lines = next(l for k, l, _f, _r in spans if k == "title")
     f_t = next(f for k, _l, f, _r in spans if k == "title")
     return {**p, "light": light_ink, "ink": ink, "scrim": scrim, "scrim_tone": tone,
             "region_rgb": mean_rgb, "binding_rgb": binding, "clutter": round(clutter, 3),
             "contrast": round(contrast, 2), "target": round(target, 2),
-            "title_lines": t_lines, "title_px": f_t.size, "size": out.size, "block": [x, y, total]}
+            "title_lines": t_lines, "title_px": f_t.size, "size": out.size, "block": [x, y, total],
+            "quality": quality, "bytes": len(blob)}
 
 
 def _layout(probe, copy: dict, h: int, column: int):
@@ -633,21 +639,46 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
         return {"slug": slug, "copy": copy}
     side = json.loads(side_path.read_text())
     img = ROOT / side["local_path"]
-    clean_img = base_path(img)
+    # The standard's filename and format are fixed: <slug>-featured.jpg is what the CMS library and
+    # the plate lookup key expect, so the staged file is JPEG whatever the render arrived as.
+    dest = img.parent / f"featured.{ic.DELIVERY_EXT}"
+    clean_img = dest.parent / f"featured.base.{ic.DELIVERY_EXT}"
     # Is the staged image a NEW render, or the copy this step already composited? The base must be
     # refreshed when the render changed, or a regeneration is silently discarded and the type lands
     # on the previous artwork. `generated_at` is the creator's stamp for the render itself.
     prev = side.get("overlay") or {}
     regenerated = prev.get("generated_at") != side.get("generated_at")
     if regenerated or not clean_img.exists():
-        for stale in img.parent.glob(f"{img.stem}.base.*"):    # a regeneration may change the suffix
+        for stale in img.parent.glob("featured.base.*"):    # a regeneration may change the suffix
             stale.unlink()
         shutil.copy2(img, clean_img)
-    placement = composite(clean_img, img, copy, anchor)
-    blob = img.read_bytes()
+    # A legacy master (1344x768, or a PNG) is converted once, BEFORE the type is set, so the layout is
+    # chosen against the pixels the reader will actually get.
+    from PIL import Image
+    with Image.open(clean_img) as probe:
+        conforms = (clean_img.suffix.lower() == ".jpg"
+                    and probe.size == DELIVERY_SIZE and probe.format == "JPEG")
+    if not conforms:
+        normalized = ic.delivery.normalize(clean_img)
+        clean_img.write_bytes(normalized.blob)
+    placement = composite(clean_img, dest, copy, anchor)
+    if dest != img and img.exists():
+        img.unlink()                                       # the old .png/.jpeg is now a duplicate
+    blob = dest.read_bytes()
     side.setdefault("history", []).append(
         {k: side.get(k) for k in ("revision", "alt_text", "caption", "title", "bytes", "sha256")})
     side["revision"] = int(side.get("revision") or 1) + 1
+    side["file"] = dest.name
+    side["local_path"] = str(dest.relative_to(ROOT))
+    side["ext"] = ic.DELIVERY_EXT
+    side["content_type"] = "image/jpeg"
+    width, height = placement["size"]
+    side["delivery"] = {"standard": ic.delivery.STANDARD_VERSION, "format": "JPEG",
+                        "progressive": True, "color_space": "sRGB",
+                        "width": width, "height": height, "aspect": round(width / height, 4),
+                        "bytes": len(blob), "quality": placement.get("quality"),
+                        "sha256": "sha256:" + hashlib.sha256(blob).hexdigest(),
+                        "filename_rule": "<slug>-featured.jpg"}
     side["bytes"] = len(blob)
     side["sha256"] = "sha256:" + hashlib.sha256(blob).hexdigest()
     side["overlay"] = {**copy, **{k: placement[k] for k in
@@ -662,7 +693,7 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
     prev_head, sep, rest = raw_alt.partition(". ")
     if rest and prev_head.strip().lower() == head.strip().lower():
         raw_alt = rest.strip()          # the alt already carries a head (possibly cased differently)
-    side["alt_text"] = alt_clip(f"{head}. {raw_alt}")
+    side["alt_text"] = alt_clip(f"{head}. {raw_alt}", 140)
     side["caption"] = (f"{head}: {copy['hook']}." if copy.get("hook") else head + ".")[:200]
     side["title"] = head[:100]
     side_path.write_text(json.dumps(side, indent=2) + "\n")
@@ -670,6 +701,7 @@ def apply_to_slug(slug: str, *, article_md: str | None = None, llm=None, dry_run
         art.write_text(ic._write_frontmatter(art.read_text(), ic.frontmatter_fields(side)))
     return {"slug": slug, "copy": copy, "placement": placement,
             "bytes": len(blob), "revision": side["revision"], "local_path": side["local_path"],
+            "alt_problems": ic.delivery.alt_problems(side["alt_text"], side["title"]),
             "base": str(clean_img.relative_to(ROOT))}
 
 

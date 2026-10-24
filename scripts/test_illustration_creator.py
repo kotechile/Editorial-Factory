@@ -112,7 +112,7 @@ def brief_json(**over) -> str:
         "prompt": PROMPTS["editorial_macro"],
         "negative_prompt": ic.DEFAULT_NEGATIVE,
         "aspect_ratio": "16:9",
-        "resolution": "1K",
+        "resolution": "2K",
         "alt_text": "Translucent plastic resin pellets resting on a steel plate.",
         "caption": "The duty now lands on the material before it becomes packaging.",
         "title": "Plastic resin pellets",
@@ -144,8 +144,31 @@ def sequence_llm(*payloads: str, calls: list | None = None):
     return call
 
 
-PNG = b"\x89PNG\r\n\x1a\n" + b"0" * 64
-JPEG = b"\xff\xd8\xff" + b"0" * 64
+def _real_image(fmt: str, size: tuple = (1920, 1080), colour: tuple = (120, 90, 60)) -> bytes:
+    """A genuine image, because `store()` now normalises the render into the delivery master."""
+    import io as _io
+
+    from PIL import Image
+    img = Image.new("RGB", size, colour)
+    for x in range(0, size[0], 40):                 # some structure, so a hash/quality means something
+        img.paste((90 + x % 60, 70, 50), (x, 0, x + 20, size[1]))
+    buf = _io.BytesIO()
+    img.save(buf, format=fmt)
+    return buf.getvalue()
+
+
+PNG = _real_image("PNG")
+JPEG = _real_image("JPEG")
+
+
+def _vision_ok(image, prompt, **kwargs) -> str:
+    """The picture-desk checker, stubbed: a green verdict with no network."""
+    return json.dumps({"depicts": "a modular rack of inspection bays on brushed steel",
+                       "legible_text": "", "on_topic": True, "confidence": 0.9,
+                       "reason": "the frame shows the article's own mechanism"})
+
+
+ic.call_gemini_vision = _vision_ok
 
 
 class StubTransport:
@@ -284,8 +307,12 @@ refuse({"prompt": "Extreme close-up macro photograph of 塑料 pellets on a stee
                   "lens, shallow depth of field."}, "non-Latin")
 refuse({"negative_prompt": "blurry, low quality"}, "forbid text")
 refuse({"aspect_ratio": "1:1"}, "featured-header shape")
-refuse({"resolution": "4K"}, "is not one of 1K, 2K")
+refuse({"resolution": "4K"}, "is not one of 2K")
+refuse({"aspect_ratio": "3:2"}, "featured-header shape")
 refuse({"alt_text": "Pellets."}, "alt_text is")
+refuse({"alt_text": "A translucent plastic resin pellet resting on the steel plate of a machine.",
+        "title": "A translucent plastic resin pellet resting on the steel plate of a machine"},
+       "repeats the title")
 refuse({"alt_text": "Photo of translucent plastic resin pellets on a steel plate and a thumb."},
        "opens on the medium")
 refuse({"alt_text": "A matte clay 3D render showing plastic pellets on a steel plate."},
@@ -547,13 +574,16 @@ with tempfile.TemporaryDirectory() as tmp:
     record = ic.store("my-slug", gen, macro, ARTICLE, root=root, now="2026-10-01T12:00:00+00:00")
     image_path = root / record["local_path"]
     sidecar = ic.read_sidecar("my-slug", root)
-    check("the image lands beside its sidecar", image_path.exists() and image_path.name == "featured.png")
+    check("the image lands beside its sidecar, as the delivery JPEG",
+          image_path.exists() and image_path.name == "featured.jpg")
     check("the sidecar carries the brief, the task and the spend",
           sidecar["style"] == "editorial_macro" and sidecar["task_id"] == "task1"
           and sidecar["credits"] == 7.0 and sidecar["prompt"] == macro.prompt)
     check("...the sha256 of the bytes and of the article text it read",
           sidecar["sha256"].startswith("sha256:") and sidecar["source_hash"] == ic.source_hash(ARTICLE)
-          and sidecar["bytes"] == len(PNG))
+          and sidecar["bytes"] == len(image_path.read_bytes())
+          and sidecar["delivery"]["width"] == 2400 and sidecar["delivery"]["height"] == 1350
+          and sidecar["bytes"] <= 400 * 1024)
     check("...and the pinned/attempt provenance the operator may need",
           "director_attempts" in sidecar and sidecar["pinned"] == {})
     ic.append_ledger(record, md=ARTICLE, root=root)
@@ -572,7 +602,7 @@ with tempfile.TemporaryDirectory() as tmp:
                           .generate(macro), macro, ARTICLE, root=root)
     leftovers = sorted(p.name for p in image_path.parent.iterdir())
     check("a re-generation in another format does not leave two featured files",
-          leftovers == ["featured.jpg", "featured.json"], str(leftovers))
+          leftovers == ["featured.base.jpg", "featured.jpg", "featured.json"], str(leftovers))
     ic.append_ledger(jpg_record, md=ARTICLE, root=root)
     check("...and the ledger gains a row for the new revision",
           (root / "context" / "illustration_log.md").read_text().count("`my-slug`") == 2)
@@ -591,7 +621,7 @@ with tempfile.TemporaryDirectory() as tmp:
                                                     llm=stub_llm(brief_json()))
     check("...so the image is filed under the slug the CMS push looks for",
           dated_meta["local_path"] ==
-          "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.png"
+          "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.jpg"
           and (root / dated_meta["local_path"]).is_file(), dated_meta["local_path"])
     check("...and the artifact records that same path",
           ic.split_frontmatter(dated_md)[0]["image_path"] == dated_meta["local_path"],

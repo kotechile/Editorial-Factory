@@ -81,6 +81,11 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+try:                                        # run as a script (scripts/ on sys.path)
+    import image_delivery as delivery
+except ImportError:                         # imported as a package (the test suites)
+    from scripts import image_delivery as delivery
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES_TABLE = "articles"
 SITES_TABLE = "vertical_sites"
@@ -1045,7 +1050,8 @@ class WordPress:
         """One attachment by id, or None when the CMS no longer holds it (deleted in wp-admin)."""
         try:
             _, item = self._call("GET", f"media/{int(media_id)}?_fields=id,slug,source_url,alt_text,"
-                                        f"caption,title,post,media_type,mime_type")
+                                        f"caption,title,post,media_type,mime_type,width,height,"
+                                        f"media_details")
         except RuntimeError as exc:
             if "HTTP 404" in str(exc) or "rest_post_invalid_id" in str(exc):
                 return None
@@ -1156,6 +1162,49 @@ def media_meta(record: dict, slug: str) -> dict:
             "description": description}
 
 
+def rendition_problems(item: dict) -> list[str]:
+    """`large` must exist, or the front end silently ships the original.
+
+    WordPress only generates a rendition when the upload is wider than it, so a 1344px render can
+    come back with no `large` at all — which is exactly the state the 1600px floor exists to prevent.
+    """
+    item = item or {}
+    details = item.get("media_details") or {}
+    if not details:
+        return []                    # the CMS did not report its renditions: nothing to judge
+    sizes = details.get("sizes") or {}
+    problems: list[str] = []
+    if not sizes.get("large"):
+        problems.append(f"media {item.get('id')} has no `large` rendition "
+                        f"(sizes: {', '.join(sorted(sizes)) or 'none'}) — the front end would serve "
+                        f"the full-size original")
+    width = details.get("width") or item.get("width")
+    if width and int(width) < delivery.MIN_WIDTH:
+        problems.append(f"media {item.get('id')} is {width}px wide, under the "
+                        f"{delivery.MIN_WIDTH}px floor")
+    return problems
+
+
+def delivery_gate(record: dict, path: pathlib.Path, notes: list) -> list[str]:
+    """Rule failures for a staged file, split by whether the image was made under the standard.
+
+    An image generated after 2026-10-24 that breaks a rule is a defect in the pipeline: refuse the
+    upload so it is fixed at the source. A pre-standard asset is grandfathered — reported, pushed.
+    """
+    problems = delivery.check_file(path)
+    problems += delivery.alt_problems(str(record.get("alt_text") or ""),
+                                      str(record.get("title") or ""))
+    if not problems:
+        return []
+    if record.get("delivery"):
+        raise RuntimeError(
+            f"the staged featured image does not meet the delivery standard: "
+            f"{'; '.join(problems)}. It was generated under the standard, so it must be fixed "
+            f"(re-run `python3 scripts/illustration_overlay.py --slug <slug>`) rather than uploaded")
+    notes.append(f"featured image: pre-standard asset pushed as-is ({'; '.join(problems)})")
+    return problems
+
+
 def ensure_featured_media(wp, slug: str, record: dict, notes: list, *, path=None,
                           recorded_id=None) -> dict | None:
     """Upload or re-find the article's featured image and make sure the CMS carries its metadata.
@@ -1172,7 +1221,9 @@ def ensure_featured_media(wp, slug: str, record: dict, notes: list, *, path=None
                      f"— run `python3 scripts/illustration_creator.py <artifact> --apply` on this host; "
                      f"pushing the draft without one")
         return None
-    filename = f"{slug}-featured{path.suffix.lower()}"
+    delivery_gate(record, path, notes)
+    filename = (delivery.media_filename(slug) if path.suffix.lower() in (".jpg", ".jpeg")
+                else f"{slug.lower()}-featured{path.suffix.lower()}")
     media_slug = pathlib.Path(filename).stem
     meta = media_meta(record, slug)
 
@@ -1206,6 +1257,12 @@ def ensure_featured_media(wp, slug: str, record: dict, notes: list, *, path=None
     if stale:
         item = {**item, **(wp.update_media(item.get("id"), stale) or {})}
         action += f" + set {', '.join(sorted(stale))}"
+    renditions = rendition_problems(item)
+    if renditions:
+        if record.get("delivery"):
+            raise RuntimeError(f"the CMS did not produce the renditions the header needs: "
+                               f"{'; '.join(renditions)}")
+        notes.append("featured image: " + "; ".join(renditions))
     notes.append(f"featured image {action}: media {item.get('id')} ({filename}, "
                  f"{path.stat().st_size // 1024} KB, {path.stat().st_size} bytes)")
     return item
@@ -1323,7 +1380,12 @@ def reimage_by_slug(slug: str, *, db=None, wp_factory=None, verify: bool = True,
     previous_id = (metadata.get(WORDPRESS) or {}).get("media_id")
     previous = wp.media(previous_id) if previous_id else wp.find_media(f"{slug}-featured")
     meta = media_meta(illustration, slug)
-    filename = f"{slug}-featured{path.suffix.lower()}"
+    gate: list[str] = []
+    delivery_gate(illustration, path, gate)
+    for note in gate:
+        print(f"  note: {note}", file=sys.stderr)
+    filename = (delivery.media_filename(slug) if path.suffix.lower() in (".jpg", ".jpeg")
+                else f"{slug.lower()}-featured{path.suffix.lower()}")
     fresh = wp.upload_media(filename, path.read_bytes(), MEDIA_TYPES[path.suffix.lower()], meta)
     fresh_id: str = str(fresh.get("id") or "") if fresh else ""
     if not fresh_id:
@@ -1374,6 +1436,7 @@ def reimage_by_slug(slug: str, *, db=None, wp_factory=None, verify: bool = True,
             problems.append(f"the post's status changed: was {existing.get('status')!r}, now "
                             f"{stored.get('status')!r}")
         problems += media_problems(meta, wp.media(fresh_id) or {})
+        problems += rendition_problems(wp.media(fresh_id) or {})
         served, note = _served_bytes(fresh.get("source_url"))
         if served is not None:
             local = hashlib.sha256(path.read_bytes()).hexdigest()

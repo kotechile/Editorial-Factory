@@ -117,6 +117,8 @@ python3 scripts/illustration_creator.py context/drafts/X_final.md --apply --styl
 python3 scripts/illustration_creator.py context/drafts/X_final.md --dry-run
 # fill in images for articles that don't have one yet (bounded per run; skips unchanged texts)
 python3 scripts/illustration_creator.py --backfill --limit 2
+# the delivery standard across the whole corpus: aspect, width, weight, format, alt, duplicates
+python3 scripts/image_delivery.py --audit
 ```
 
 Cost: measured ≈5–7 kie.ai credits per Flux-2 Pro image and ≈18 per Nano Banana Pro image (the desk

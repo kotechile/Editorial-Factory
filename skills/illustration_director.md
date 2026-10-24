@@ -24,7 +24,7 @@ Core principles:
 - **Conceptual & Symbolic Visual Storytelling**: Use evocative metaphors, atmospheric elements, striking color palettes, and minimalistic yet impactful compositions. Embody tensions through visual symbolism (e.g. an optical glass prism splitting directional light across dark obsidian, monolithic stone slabs in delicate equilibrium, architectural corridors divided by razor-thin blades of light).
 - **Visually Arresting Sense of Curiosity**: Create clarity, balance, and intrigue. The image should feel modern, premium, and editorial (like Medium.com feature spreads, The Atlantic, Wired, Bloomberg Businessweek).
 - **Refined Aesthetics & Lighting**: Ultra-high quality, crisp directional lighting (chiaroscuro, golden hour, blue hour), soft gradients, tactile textures, and generous negative space. Zero in-image text, logos, or human faces.
-- **Landscape Composition**: Keep the landscape header format (`16:9` or `3:2`) for CMS featured headers, composed with asymmetrical balance and deliberate breathing room.
+- **Landscape Composition**: Keep the landscape header format (`16:9` only — the card crops 7:4 and the masthead 16:9 from it) for CMS featured headers, composed with asymmetrical balance and deliberate breathing room.
 
 1. **Anchor on the Core Thesis ('One Big Thing') & Extract the Governing Conflict**:
    - The hero subject MUST visually embody `one_big_thing` — the single non-negotiable revelation and central assertion of the article.
@@ -181,10 +181,14 @@ process diagrams and conceptual models — with a mechanism in the frame, never 
    treatments were used back to back in the first ten illustrations). When the window would leave a
    family with no treatment at all, its oldest blocked member is re-admitted and the director is told
    it is a re-admission, not an invitation to repeat.
-8. **Alt text is a deliverable**: ≤125 chars, in English, describing the subject, never starting
-   "image of"/"photo of". The caption is one quotable sentence. Both are checked by length and shape.
-9. **Featured-header shape**: `16:9` or `3:2`, 1K by default, 2K only where fine physical detail is
-   the point.
+8. **Alt text is a deliverable**: 40-140 chars, in English, describing the subject, never starting
+   "image of"/"photo of", and never the headline restated (it is the only text a screen reader or an
+   image search can read). The caption is one quotable sentence. Both are checked by length and shape.
+9. **Featured-header shape and delivery**: `16:9` only, 2K render. The master is 2400x1350, sRGB,
+   progressive JPEG under 400KB, uploaded as `<slug>-featured.jpg`
+   (`scripts/image_delivery.py`). The site crops a 7:4 card and a 16:9 masthead from it, so any other
+   master loses content in one of the two; a 1K render (1344px) cannot reach the 1600px floor without
+   a visible upscale, and WordPress only generates its `large` rendition above that floor.
 10. **The image must describe the topic, and must not be sterile.** A reader who sees only the header,
     before the headline, has to be able to name the article's subject area, and the frame has to sit
     in one of the story's own subject-matter classes: physical components/materials or a supply-chain
