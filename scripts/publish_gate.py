@@ -124,6 +124,12 @@ def text_failures(path: pathlib.Path, *, root: pathlib.Path = ROOT) -> list[str]
     diag = ca.measure(str(path))
     fails += [f"accessibility: {f}" for f in diag.get("fails", [])]
 
+    # The desk's article-shape standard (context/article_shape.json): no figure restated across
+    # three body sections, and at least one inline link to the decision the piece is about. Both
+    # are shapes rather than subjects, so the rule applies to every vertical and category.
+    import article_shape as ash
+    fails += ash.failures(path, registry=ash._registry())
+
     try:
         rel = str(path.relative_to(root))
     except ValueError:

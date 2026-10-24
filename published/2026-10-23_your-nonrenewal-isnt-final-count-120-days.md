@@ -52,7 +52,7 @@ I read the three state laws as one question, and the question is a date. The rat
 - **The reason line:** Florida and Washington demand the reason itself, and California the exact reasons [1][2][4]. A letter that gives none is not the document the state requires.
 - **The address block:** California makes the carrier print the state insurance office's web address, phone number and Los Angeles street address [2]. That is the state writing its own complaint desk into the carrier's letter.
 - **The fast lane:** A missed payment is the one exit that skips the long clock, at ten days in Florida and Washington [1][4]. Every other exit secures weeks.
-- **The split offer:** California separates a renewal offer from an exit, and one or the other must arrive at least 45 days before the end date [2]. A letter that meets that clock can still miss the 75-day window.
+- **The split offer:** California separates a renewal offer from an exit, and one or the other must arrive at least 45 days before the end date [2]. A letter that meets that clock can still miss the nonrenewal window.
 
 <!-- nuanced-takeaway -->
 

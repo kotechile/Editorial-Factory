@@ -119,6 +119,10 @@ python3 scripts/illustration_creator.py context/drafts/X_final.md --dry-run
 python3 scripts/illustration_creator.py --backfill --limit 2
 # the delivery standard across the whole corpus: aspect, width, weight, format, alt, duplicates
 python3 scripts/image_delivery.py --audit
+# the article-shape standard: figure repetition, the closing decision link, opening advisories
+python3 scripts/article_shape.py --report published/*.md
+# file a post under the category a reader would look in (recorded per post; survives --refresh)
+python3 scripts/wp_draft.py --slug <slug> --category home-cost-decisions
 ```
 
 Cost: measured ≈5–7 kie.ai credits per Flux-2 Pro image and ≈18 per Nano Banana Pro image (the desk

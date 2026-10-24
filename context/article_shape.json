@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "enforced_from": "2026-10-24",
+  "why": "Reader-side review of a live article, 2026-10-24: three statutory clocks in the opening before the stakes, the same six figures repeated across two sections, and no tie to a decision the reader could act on. These are shapes, not subjects, so the standard applies to every vertical and category.",
+  "max_body_sections_per_figure": 2,
+  "min_body_inline_links": 1,
+  "advisory": {
+    "max_figures_in_first_sentence": 1,
+    "require_why_clause": true,
+    "suggest_table_at_shared_figures": 3
+  }
+}

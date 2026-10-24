@@ -51,6 +51,20 @@ SMART BREVITY STYLING PRINCIPLES:
    - Never output dense blocks of text.
    - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats pairing the figure with a concise 2–4 word metric title (e.g., `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). The words following the bold lead MUST NOT begin with conversational or background narrative filler ("Diesel fuel started the year...", "The leap in the..."). Instead, structure as `- **<Figure> — <Metric Title>:** <Clear explanation> [Citation]`.
    - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
+4b. SHAPE RULES (gate-enforced by scripts/article_shape.py — these hold a publish):
+   - THE OPENING STATES THE STAKES FIRST. Sentence 1 carries at most ONE figure and names WHY the
+     change is happening (because / after / driven by / following / amid) before any mechanism,
+     statute, tier or threshold. Detail in the first sentence is what makes a reader leave.
+   - A FIGURE IS STATED ONCE. It may appear in the lead (or the numbers section) and again in `At a
+     glance`; a third section repeating it is scroll friction and fails the gate. Do not write a
+     numbers list and then a watch list that restates the same figures — write the numbers once.
+   - COMPARISON BELONGS IN A TABLE. Three or more comparable items measured on two or more
+     attributes (states, tiers, sizes, terms, scenarios) go in ONE markdown pipe table with a row per
+     item and a column per attribute, not in two prose lists.
+   - CLOSE ON A DECISION. The last section ends on the choice the reader can act on and carries ONE
+     inline markdown link to the desk's own page that runs that math (`[anchor](/slug/)`). The
+     generated Related-reading block does not satisfy this.
+
 5. STRONG, SIMPLE DICTION:
    - Strip out passive verbs, weak adverbs ("basically", "materially", "fundamentally"), and bloated "10-dollar" corporate jargon.
    - Prefer short, single-syllable, visual words that paint a clear picture.
