@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T18:19:37Z",
+  "updated_at": "2026-10-24T18:24:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3386,7 +3386,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-homelab-heat-pays-back-45-cents/"
     },
     {
       "slug": "2026-10-24_your-tooling-assist-is-dutiable",
@@ -3404,7 +3405,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-tooling-assist-is-dutiable/"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T14:16:08+00:00",
+  "generated_at": "2026-10-24T18:24:51+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -47,10 +47,13 @@
     "wellroost.com": {
       "4": "Energy & Efficiency",
       "2": "Home Cost Decisions",
+      "26": "Home Diagnostic Tools",
       "15": "Lifestyle",
+      "24": "Outdoor Power & Snow Equipment",
       "5": "Smart Home & Security",
       "3": "Tools & Equipment",
-      "1": "Uncategorized"
+      "1": "Uncategorized",
+      "22": "Yard Robots & Automation"
     },
     "aichieve.net": {
       "7": "AI Stack & Tool TCO",
@@ -71,7 +74,7 @@
       "kind": "tool",
       "id": null,
       "slug": "rsu-hold-vs-sell",
-      "title": "RSU Hold vs. Sell & Mega Backdoor Roth Simulator",
+      "title": "RSU Hold vs Sell Calculator with Concentration Risk",
       "url": "https://giniloh.com/calculators/rsu-hold-vs-sell/",
       "path": "/calculators/rsu-hold-vs-sell/",
       "sites_live": {
@@ -80,7 +83,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Quantify single-stock employer concentration risk, double-jeopardy exposure, and 2026 $72k Section 415(c) Mega Backdoor Roth asset allocation.",
+      "excerpt": "Model RSU sell-and-diversify against holding concentrated stock, with ordinary income at vest, capital gains at exit, concentration risk and the break-even company growth rate.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -90,7 +93,7 @@
       "kind": "tool",
       "id": null,
       "slug": "w2-vs-1099-scorp-calculator",
-      "title": "W-2 vs. 1099 / S-Corp Net Yield Calculator",
+      "title": "W-2 vs 1099 vs S-Corp Net Yield Calculator",
       "url": "https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/",
       "path": "/calculators/w2-vs-1099-scorp-calculator/",
       "sites_live": {
@@ -99,7 +102,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Compare W-2 total compensation against 1099 independent consulting and S-Corp distribution arbitrage under 2026 IRS statutory limits.",
+      "excerpt": "Compare a W-2 package against 1099 contracting and the S-corp election after federal taxes, payroll tax, retirement capacity, compliance cost and hours worked.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -109,7 +112,7 @@
       "kind": "tool",
       "id": null,
       "slug": "secondary-tender-calculator",
-      "title": "Secondary Tender vs. IPO Horizon Calculator",
+      "title": "Secondary Tender vs IPO Calculator for Startup Equity",
       "url": "https://giniloh.com/calculators/secondary-tender-calculator/",
       "path": "/calculators/secondary-tender-calculator/",
       "sites_live": {
@@ -118,7 +121,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Price a private secondary or tender offer against the IPO you are waiting for: after-tax cash today, risk-adjusted exit proceeds, and the break-even IPO price.",
+      "excerpt": "Price a secondary tender offer against waiting for an IPO on an after-tax, risk-adjusted basis, including exercise cost, QSBS limits and the break-even exit price.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -128,7 +131,7 @@
       "kind": "tool",
       "id": null,
       "slug": "build-vs-buy",
-      "title": "Build-vs-Buy Amortization Simulator",
+      "title": "Build vs Buy Software Amortization Calculator",
       "url": "https://giniloh.com/calculators/build-vs-buy/",
       "path": "/calculators/build-vs-buy/",
       "sites_live": {
@@ -137,7 +140,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Compare internal tooling against a vendor on loaded engineering time, maintenance, infrastructure and renewal escalation over one discounted horizon.",
+      "excerpt": "Compare internal tooling against a vendor on loaded engineering time, permanent maintenance, infrastructure and renewal escalation, discounted over the same horizon.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -147,7 +150,7 @@
       "kind": "tool",
       "id": null,
       "slug": "gpu-breakeven",
-      "title": "Local Workstation vs. Cloud GPU Break-even",
+      "title": "Local GPU vs Cloud Break-even Calculator",
       "url": "https://giniloh.com/calculators/gpu-breakeven/",
       "path": "/calculators/gpu-breakeven/",
       "sites_live": {
@@ -156,7 +159,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Cost per GPU-hour for owned hardware against on-demand cloud rates at your real utilisation, with break-even hours per month.",
+      "excerpt": "Compare a local GPU workstation against a cloud hourly rate on cost per GPU-hour, including power, residual value, maintenance and the utilisation you actually run.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -166,7 +169,7 @@
       "kind": "tool",
       "id": null,
       "slug": "rent-vs-buy",
-      "title": "Rent vs. Buy with Opportunity Cost",
+      "title": "Rent vs Buy Calculator with Opportunity Cost",
       "url": "https://giniloh.com/calculators/rent-vs-buy/",
       "path": "/calculators/rent-vs-buy/",
       "sites_live": {
@@ -175,7 +178,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Compare an owner and a renter at the same horizon: equity after selling costs against a portfolio funded by the down payment and monthly difference.",
+      "excerpt": "Compare renting and investing against buying and selling over a fixed horizon, with mortgage amortization, taxes, maintenance, appreciation and selling costs.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -374,6 +377,25 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
+      "slug": "your-homelab-heat-pays-back-45-cents",
+      "title": "Homelab Heat Rebate: 45 Cents, Not Free",
+      "url": "https://giniloh.com/your-homelab-heat-pays-back-45-cents/",
+      "path": "/your-homelab-heat-pays-back-45-cents/",
+      "sites_live": {
+        "giniloh.com": "/your-homelab-heat-pays-back-45-cents/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your homelab's waste heat pays back about 45 cents on the dollar, and only while the house is being heated. An eight-bay storage box drawing 87.93 watts runs\u2026",
+      "modified": "2026-10-24T17:43:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-home-servers-45-day-patch-gap",
       "title": "Your Home Server's 45-Day Patch Gap",
       "url": "https://giniloh.com/your-home-servers-45-day-patch-gap/",
@@ -461,7 +483,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Apple asks $99 to swap a dead Watch battery, but bills $599 for any other service on a cellular Series 12. A new aluminum watch costs $399, so one\u2026",
-      "modified": "2026-10-23T12:45:26",
+      "modified": "2026-10-23T12:48:25",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1966,11 +1988,11 @@
         "wellroost.com": "/your-nonrenewal-isnt-final-count-120-days/"
       },
       "categories": [
-        "Home Cost Decisions"
+        "Energy & Efficiency"
       ],
       "category_ids": [],
       "category_slugs": [
-        "home-cost-decisions"
+        "energy-efficiency"
       ],
       "excerpt": "Your home insurance nonrenewal letter isn't the final word, and the count is the part that pays. Florida gives an owner 120 days of warning before a policy\u2026",
       "modified": "2026-10-23T18:16:14",
@@ -4488,7 +4510,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Model a local GPU workstation or cluster against rented capacity \u2014 hardware, TDP load, persistent storage, depreciation, and the utilization floor at which owning stops paying.",
+      "excerpt": "Model a local GPU cluster against rented capacity: street hardware pricing, enterprise software licences, TDP load, persistent storage, and the utilization floor where owning stops paying.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -5271,6 +5293,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-tooling-assist-is-dutiable",
+      "title": "Your $1,100 Tool Bills Every Unit",
+      "url": "https://aichieve.net/your-tooling-assist-is-dutiable/",
+      "path": "/your-tooling-assist-is-dutiable/",
+      "sites_live": {
+        "aichieve.net": "/your-tooling-assist-is-dutiable/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your mold stays your property while it sits in a supplier's plant, and customs bills its value onto every unit made with it, because a tool you supply free\u2026",
+      "modified": "2026-10-24T18:13:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-trace-wont-prove-925-points",
       "title": "Your Trace Won't Prove 92.5 Points",
       "url": "https://aichieve.net/your-trace-wont-prove-925-points/",
@@ -5315,6 +5360,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1172,
+      "slug": "your-tooling-assist-is-dutiable",
+      "title": "Your $1,100 Tool Bills Every Unit",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-24T18:19:04",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -6450,34 +6509,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 778,
-      "slug": "diesel-620-electric-freight-certificate-gap",
-      "title": "Diesel Hits $6.20: Why Shippers Still Pay Extra for Electric Freight",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:39",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 547,
-      "slug": "control-tower-silent-exception",
-      "title": "Will Your Control Tower Auto-Resolve the Theft It Can&#8217;t See?",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:39",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 55,
@@ -6530,6 +6561,20 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-09-07T13:34:30",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1169,
+      "slug": "your-homelab-heat-pays-back-45-cents",
+      "title": "Homelab Heat Rebate: 45 Cents, Not Free",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-24T17:43:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
