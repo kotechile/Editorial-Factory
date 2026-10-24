@@ -1,0 +1,120 @@
+{
+  "slug": "your-250-imager-needs-15-degrees",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A suburban house exterior at dusk with warm interior light contrasting against the cool twilight.",
+      "caption": "A thermal imager only yields defensible results when the indoor-outdoor temperature gap reaches at least 15 degrees.",
+      "title": "Thermal-Imager-Temperature-Gap",
+      "bytes": 247655,
+      "sha256": "sha256:4fac4c4f58ed68c2a4abc69594925fe9"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Thermal Camera Limits. A suburban house exterior at dusk with warm interior light contrasting against the cool twilight.",
+      "caption": "Thermal Camera Limits: Why your thermal camera cannot find leaks on its own.",
+      "title": "Thermal Camera Limits",
+      "bytes": 304137,
+      "sha256": "sha256:e0b824ad7ddd3f55ff727d46c2318f30b0db75fe4b5ba3ed86b8d2006f121fa6"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph of a modern suburban house exterior at blue hour, extreme asymmetric wide framing with the house positioned on the lower right thirds. Captured with a 35mm anamorphic wide lens. Deep blue ambient twilight contrasts sharply with warm amber light spilling from a single interior window onto textured stucco and frosted asphalt shingles. A heavy-duty workman's site lamp casts a stark directional beam across the driveway concrete, highlighting the crisp, cold atmospheric depth. No moving figures, generous dark sky negative space, clean geometry, quiet residential stillness.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, text, watermarks, logos, people, daytime, bright sun",
+  "rationale": "This architectural night treatment captures the specific environmental condition\u2014a cold evening\u2014required to create the 15-degree temperature gap necessary for a thermal scan to function correctly.",
+  "cue": "Your $250 Imager Needs 15 Degrees",
+  "subject": "a modern suburban house exterior at dusk",
+  "core_thesis": "A thermal imager requires a strict 15-to-20 degree indoor-outdoor temperature gap to function as a pointer, while actual leakage is measured by a blower door.",
+  "core_conflict": "The narrow environmental window required for a diagnostic tool versus the homeowner's expectation of an instant answer.",
+  "composition": "extreme asymmetric wide framing",
+  "alt_text": "Thermal Camera Limits. A suburban house exterior at dusk with warm interior light contrasting against the cool twilight.",
+  "caption": "Thermal Camera Limits: Why your thermal camera cannot find leaks on its own.",
+  "title": "Thermal Camera Limits",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-250-imager-needs-15-degrees/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 304137,
+  "sha256": "sha256:e0b824ad7ddd3f55ff727d46c2318f30b0db75fe4b5ba3ed86b8d2006f121fa6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 304137,
+    "quality": 88,
+    "sha256": "sha256:e0b824ad7ddd3f55ff727d46c2318f30b0db75fe4b5ba3ed86b8d2006f121fa6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:03384b5bb16709ceeb461d7f6d8c706eea8d80b7c36ac89bf9f7c52ec520d894",
+  "render_phash": "003f007f007f00b600fe06590697061f087f387f307f386f007f0fff21ff200f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A single-story house with a lit window and a work light on a tripod illuminating the driveway at dusk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a house exterior, which relates to the article's focus on home energy audits and thermal imaging."
+  },
+  "source_hash": "sha256:4849a0da43af3413ddcfb54a3cdd3cd2",
+  "source_chars": 4983,
+  "task_id": "63fe3de66a6e4ca1e05dfedf2a437851",
+  "credits": 5.0,
+  "cost_ms": 110,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/63fe3de66a6e4ca1e05dfedf2a437851_1792870867671.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph of a modern suburban house exterior at blue hour, extreme asymmetric wide framing with the house positioned on the lower right thirds. Captured with a 35mm anamorphic wide lens. Deep blue ambient twilight contrasts sharply with warm amber light spilling from a single interior window onto textured stucco and frosted asphalt shingles. A heavy-duty workman's site lamp casts a stark directional beam across the driveway concrete, highlighting the crisp, cold atmospheric depth. No moving figures, generous dark sky negative space, clean geometry, quiet residential stillness.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-24T19:42:21+00:00",
+  "overlay": {
+    "kicker": "HOME DIAGNOSTICS // THERMAL CAMERAS",
+    "title": "THERMAL CAMERA LIMITS",
+    "hook": "Why your thermal camera cannot find leaks on its own",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.49,
+    "target": 4.5,
+    "clutter": 0.062,
+    "region_rgb": [
+      12,
+      44,
+      73
+    ],
+    "binding_rgb": [
+      15,
+      56,
+      88
+    ],
+    "title_lines": [
+      "THERMAL",
+      "CAMERA LIMITS"
+    ],
+    "subject": 0.083,
+    "ink_subject": 0.057,
+    "spike": 0.186,
+    "generated_at": "2026-10-24T19:42:21+00:00"
+  }
+}

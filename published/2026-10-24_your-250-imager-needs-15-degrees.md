@@ -7,6 +7,12 @@ date: 2026-10-24
 slug: your-250-imager-needs-15-degrees
 archetype: evergreen
 evergreen: true
+image_path: "context/assets/illustrations/your-250-imager-needs-15-degrees/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "Thermal Camera Limits. A suburban house exterior at dusk with warm interior light contrasting against the cool twilight."
+image_caption: "Thermal Camera Limits: Why your thermal camera cannot find leaks on its own."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 meta_title: "Your $250 Imager Needs 15 Degrees"
 meta_title_source: "derived_from_title"
 meta_description: "The $250 imager a federal building-science guide points homeowners to does not see through a wall; it reads the heat of the wall's own surface, which is why…"
