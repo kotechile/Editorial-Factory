@@ -1,6 +1,6 @@
 {
   "slug": "ai-spend-27t-cost-visibility-mandate",
-  "revision": 21,
+  "revision": 22,
   "history": [
     {
       "revision": 1,
@@ -167,6 +167,14 @@
       "title": "The AI Cost Control Mandate",
       "bytes": 3136116,
       "sha256": "sha256:d83c20f212122a0d87f48ccc5db62780482d03c97ce93864627339403b5944ed"
+    },
+    {
+      "revision": 21,
+      "alt_text": "The AI Cost Control Mandate. Isometric technical cutaway of an AI processing stack with precision metering gates embedded in",
+      "caption": "The AI Cost Control Mandate: Buyers demand built-in tracking for every AI purchase.",
+      "title": "The AI Cost Control Mandate",
+      "bytes": 3136116,
+      "sha256": "sha256:d83c20f212122a0d87f48ccc5db62780482d03c97ce93864627339403b5944ed"
     }
   ],
   "style": "technical_isometric",
@@ -193,12 +201,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 3136116,
-  "sha256": "sha256:d83c20f212122a0d87f48ccc5db62780482d03c97ce93864627339403b5944ed",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/ai-spend-27t-cost-visibility-mandate/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407810,
+  "sha256": "sha256:00ab9a08f84271a1985c9c0c006e2a036ce4af67282035e96ec84376c73a281a",
   "source_hash": "sha256:b9d3d8b22114be96abe7544306a10aa9",
   "source_chars": 4783,
   "task_id": "fcd2b7327862ea73e6e193acfd866c9d",
@@ -220,29 +228,42 @@
     "kicker": "ENTERPRISE AI // COST MANAGEMENT",
     "title": "THE AI COST CONTROL MANDATE",
     "hook": "Buyers demand built-in tracking for every AI purchase",
-    "anchor": "top-right",
+    "anchor": "bottom-left",
     "light": false,
     "scrim": 0,
-    "contrast": 10.06,
+    "contrast": 10.16,
     "target": 4.5,
-    "clutter": 0.103,
+    "clutter": 0.166,
     "region_rgb": [
-      241,
-      231,
+      239,
+      230,
       214
     ],
     "binding_rgb": [
-      236,
-      224,
-      210
+      238,
+      225,
+      208
     ],
     "title_lines": [
       "THE AI COST",
       "CONTROL MANDATE"
     ],
-    "subject": 0.041,
-    "ink_subject": 0.018,
-    "spike": 0.132,
+    "subject": 0.109,
+    "ink_subject": 0.039,
+    "spike": 0.387,
     "generated_at": "2026-10-10T15:50:26+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407810,
+    "quality": 76,
+    "sha256": "sha256:00ab9a08f84271a1985c9c0c006e2a036ce4af67282035e96ec84376c73a281a",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

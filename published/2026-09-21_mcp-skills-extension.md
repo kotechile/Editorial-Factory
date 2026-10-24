@@ -10,7 +10,7 @@ vertical: agentic_ai
 persona: ai_architect
 date: 2026-09-21
 slug: mcp-skills-extension
-image_path: "context/assets/illustrations/mcp-skills-extension/featured.png"
+image_path: "context/assets/illustrations/mcp-skills-extension/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
 image_alt: "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes."

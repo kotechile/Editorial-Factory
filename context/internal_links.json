@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T14:17:42+00:00",
+  "generated_at": "2026-10-24T14:16:08+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -20,7 +20,6 @@
     "wellroost.com": [
       "energy-efficiency",
       "home-cost-decisions",
-      "lifestyle",
       "smart-home-security",
       "tools-equipment"
     ],
@@ -368,6 +367,82 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-home-servers-45-day-patch-gap",
+      "title": "Your Home Server's 45-Day Patch Gap",
+      "url": "https://giniloh.com/your-home-servers-45-day-patch-gap/",
+      "path": "/your-home-servers-45-day-patch-gap/",
+      "sites_live": {
+        "giniloh.com": "/your-home-servers-45-day-patch-gap/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Plex told home server owners to update on 2026-09-01. Public attack code for the same flaws landed 45 days later, on 2026-10-16.",
+      "modified": "2026-10-24T06:14:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "why-your-fridge-upgrade-pays-12-50",
+      "title": "Why Your Fridge Upgrade Pays $12.50",
+      "url": "https://giniloh.com/why-your-fridge-upgrade-pays-12-50/",
+      "path": "/why-your-fridge-upgrade-pays-12-50/",
+      "sites_live": {
+        "giniloh.com": "/why-your-fridge-upgrade-pays-12-50/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A new fridge carries a federal label promising about $150 in savings over twelve years, which breaks down to $12.50 a year.",
+      "modified": "2026-10-23T19:44:42",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-125-exam-costs-122-hours",
+      "title": "Your $125 Exam Costs 122 Hours",
+      "url": "https://giniloh.com/your-125-exam-costs-122-hours/",
+      "path": "/your-125-exam-costs-122-hours/",
+      "sites_live": {
+        "giniloh.com": "/your-125-exam-costs-122-hours/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The $125 exam fee is the smallest cost on the bill, because the real price of a new skill is your time. Six courses in Google's Information Technology (IT)\u2026",
+      "modified": "2026-10-23T18:41:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-61-day-window-costs-the-position",
+      "title": "Your 61-Day Window Costs the Position",
+      "url": "https://giniloh.com/your-61-day-window-costs-the-position/",
+      "path": "/your-61-day-window-costs-the-position/",
+      "sites_live": {
+        "giniloh.com": "/your-61-day-window-costs-the-position/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The 61-day window behind your loss harvest costs the position, not just the trade. The rule reaches back 30 days before the sale, so a purchase you made last\u2026",
+      "modified": "2026-10-23T17:17:19",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1113,29 +1188,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
-      "title": "Benefits of Living in the City: 2026 Pros and Cons",
-      "url": "https://wellroost.com/benefits-of-living-in-the-city-2026-pros-and-cons/",
-      "path": "/benefits-of-living-in-the-city-2026-pros-and-cons/",
-      "sites_live": {
-        "wellroost.com": "/benefits-of-living-in-the-city-2026-pros-and-cons/"
-      },
-      "categories": [
-        "Lifestyle"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "lifestyle"
-      ],
-      "excerpt": "The benefits of living in the city have never been more nuanced\u2014or more decisive\u2014for mid-career professionals. In 2025, with hybrid work reshaping where talent lives, the urban advantage remains powerful: denser job markets, higher earning potential, walkable transit, world-class culture, and diverse networks. Yet smaller spaces, noise, and costs demand honest math. Our guide cuts through outdated advice with 2024\u20132025 data, a side-by-side urban-suburban-rural comparison, and an interactive cost-of-living calculator. You'll also find a personalized decision framework scoring your priorities\u2014career, space, schools, budget\u2014plus real personas from remote workers to growing families. The pros and cons of city living are not abstract. Run the numbers, take the quiz, and decide before your next lease or offer expires. This is your 2025 reality check.",
-      "modified": "2026-09-15T02:00:20",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid",
       "title": "Borrow at 8% to remodel, or let your battery earn on the grid",
       "url": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
@@ -1300,29 +1352,6 @@
         "home-cost-decisions"
       ],
       "excerpt": "Make smart, data-driven financial choices for your property. From navigating first-time homeowner expenses and mapping out long-term maintenance costs to weighing the ROI of \"repair vs. replace\" and \"buy vs. upgrade,\" this section breaks down the true cost of homeownership so you can invest your budget wisely.",
-      "modified": "",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "category",
-      "id": null,
-      "slug": "lifestyle",
-      "title": "Lifestyle",
-      "url": "https://wellroost.com/categories/lifestyle/",
-      "path": "/categories/lifestyle/",
-      "sites_live": {
-        "wellroost.com": "/categories/lifestyle/"
-      },
-      "categories": [
-        "Lifestyle"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "lifestyle"
-      ],
-      "excerpt": "Discover ideas and perspectives on creating a life that fits your circumstances, culture, aspirations, and worldview\u2014including the social, economic, and environmental factors that influence how we live.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -1607,29 +1636,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
-      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
-      "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
-      "path": "/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
-      "sites_live": {
-        "wellroost.com": "/ny-heat-pump-rebate-double-payouts-for-sealed-homes/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
-      "modified": "2026-09-13T00:39:31",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "panel-upgrade-80-percent-test",
       "title": "Your Panel Doesn't Need More Amps: The 80% Test",
       "url": "https://wellroost.com/panel-upgrade-80-percent-test/",
@@ -1722,29 +1728,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
-      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
-      "url": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
-      "path": "/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
-      "sites_live": {
-        "wellroost.com": "/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
-      "modified": "2026-09-07T13:34:30",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
       "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
       "url": "https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
@@ -1761,29 +1744,6 @@
       ],
       "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
       "modified": "2026-10-20T21:45:30",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
-      "title": "Emporia Vue: How to Cut Energy Bills",
-      "url": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
-      "path": "/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
-      "sites_live": {
-        "wellroost.com": "/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/"
-      },
-      "categories": [
-        "Smart Home & Security"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "smart-home-security"
-      ],
-      "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the panel and placing CT clamps to handling 240V double-pole circuits and knowing when to call an electrician. Then we walk through the Emporia app: account setup, Wi-Fi pairing, naming circuits, tariffs, real-time and historical graphs, solar/net metering, notifications, and data export. We also test accuracy, latency, connectivity, and firmware quirks, compare Vue generations and Sense, and share real kWh case studies with payback math. Electricity prices keep climbing; every month without circuit-level visibility is money left on the table. Try the app\u2019s demo mode today\u2014then decide if Vue 3 belongs in your panel.",
-      "modified": "2026-09-16T01:44:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1998,6 +1958,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-nonrenewal-isnt-final-count-120-days",
+      "title": "Your Nonrenewal Isn't Final: Count 120 Days",
+      "url": "https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/",
+      "path": "/your-nonrenewal-isnt-final-count-120-days/",
+      "sites_live": {
+        "wellroost.com": "/your-nonrenewal-isnt-final-count-120-days/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "Your home insurance nonrenewal letter isn't the final word, and the count is the part that pays. Florida gives an owner 120 days of warning before a policy\u2026",
+      "modified": "2026-10-23T18:16:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-remodel-loses-to-149-growth",
       "title": "Your Remodel Loses to 149% Growth",
       "url": "https://wellroost.com/your-remodel-loses-to-149-growth/",
@@ -2037,6 +2020,29 @@
       ],
       "excerpt": "Your home upgrade's quoted price is fixed, but the loan behind it resets every month. A quarter-point rate bump adds about $9 to the median payment.",
       "modified": "2026-10-19T11:40:33",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "7-days-notice-rewrites-your-duty",
+      "title": "7 Days Notice Rewrites Your Duty",
+      "url": "https://aichieve.net/7-days-notice-rewrites-your-duty/",
+      "path": "/7-days-notice-rewrites-your-duty/",
+      "sites_live": {
+        "aichieve.net": "/7-days-notice-rewrites-your-duty/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "7 days' notice now rewrites which Canadian goods carry a 50 percent duty, and Friday's order moved the line both ways at once.",
+      "modified": "2026-10-24T06:41:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5196,6 +5202,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-routes-5x-stop-gap",
+      "title": "Your Route's 5x Stop Gap: Density Beats Routing",
+      "url": "https://aichieve.net/your-routes-5x-stop-gap/",
+      "path": "/your-routes-5x-stop-gap/",
+      "sites_live": {
+        "aichieve.net": "/your-routes-5x-stop-gap/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "One route in the published last-mile corpus carries 50 stops, another 250. The 5x spread is a district decision, and the measured density lever is worth 35.8% of\u2026",
+      "modified": "2026-10-23T19:10:53",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-seller-wont-stay",
       "title": "$200,000 Robots: Your Seller Won't Stay",
       "url": "https://aichieve.net/your-seller-wont-stay/",
@@ -5286,6 +5315,34 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1167,
+      "slug": "7-days-notice-rewrites-your-duty",
+      "title": "7 Days Notice Rewrites Your Duty",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-24T06:41:40",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1158,
+      "slug": "your-routes-5x-stop-gap",
+      "title": "Your Route&#8217;s 5x Stop Gap: Density Beats Routing",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-23T19:10:53",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -6421,72 +6478,114 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "wellroost.com",
       "kind": "article",
-      "id": 531,
-      "slug": "you-think-youre-governing-your-agents",
-      "title": "You Think You&#8217;re Governing Your AI Agents. The Data Says You&#8217;re Not.",
+      "id": 55,
+      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
+      "title": "Emporia Vue: How to Cut Energy Bills",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:39",
+      "modified": "2026-09-16T01:44:14",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "wellroost.com",
       "kind": "article",
-      "id": 784,
-      "slug": "last-mile-carbon-number-is-a-rate-table",
-      "title": "Your Last-Mile Carbon Number Is a Rate Table",
+      "id": 50,
+      "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
+      "title": "Benefits of Living in the City: 2026 Pros and Cons",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-09-15T02:00:20",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "wellroost.com",
       "kind": "article",
-      "id": 543,
-      "slug": "azure-control-plane-single-point-of-failure",
-      "title": "Azure&#8217;s Bad 40 Hours: The Control Plane Is the Single Point of Failure",
+      "id": 14,
+      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
+      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-09-13T00:39:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "wellroost.com",
       "kind": "article",
-      "id": 545,
-      "slug": "local-ai-payback-cloud-gpu-spread",
-      "title": "Local AI Payback: Your Rig Just Tripled as Cloud GPUs Split Three Ways",
+      "id": 9,
+      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
+      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-09-07T13:34:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 556,
-      "slug": "fine-tune-vs-rent-by-token",
-      "title": "Fine-Tune or Rent: The Denominator Decides Your Break-Even",
+      "id": 1164,
+      "slug": "your-home-servers-45-day-patch-gap",
+      "title": "Your Home Server&#8217;s 45-Day Patch Gap",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-10-24T06:14:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1161,
+      "slug": "why-your-fridge-upgrade-pays-12-50",
+      "title": "Why Your Fridge Upgrade Pays $12.50",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-23T19:44:42",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1155,
+      "slug": "your-125-exam-costs-122-hours",
+      "title": "Your $125 Exam Costs 122 Hours",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-23T18:41:07",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1152,
+      "slug": "your-61-day-window-costs-the-position",
+      "title": "Your 61-Day Window Costs the Position",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-23T17:17:19",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -6669,20 +6768,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-10T18:25:35",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 782,
-      "slug": "post-termination-option-clock-tax",
-      "title": "Options Trap: Your 26% AMT Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T16:51:58",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

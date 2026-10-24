@@ -1,6 +1,6 @@
 {
   "slug": "mcp-skills-extension",
-  "revision": 19,
+  "revision": 20,
   "history": [
     {
       "revision": 1,
@@ -147,6 +147,14 @@
       "title": "The MCP Skills Extension",
       "bytes": 1726354,
       "sha256": "sha256:5289ff17377d974b1df19ec59482f8c1a47147df673947a4a351d9113c6c95c3"
+    },
+    {
+      "revision": 19,
+      "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+      "title": "The MCP Skills Extension",
+      "bytes": 1726354,
+      "sha256": "sha256:5289ff17377d974b1df19ec59482f8c1a47147df673947a4a351d9113c6c95c3"
     }
   ],
   "style": "paper_collage",
@@ -173,12 +181,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/mcp-skills-extension/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1726354,
-  "sha256": "sha256:5289ff17377d974b1df19ec59482f8c1a47147df673947a4a351d9113c6c95c3",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/mcp-skills-extension/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395619,
+  "sha256": "sha256:fdff947344c38f129059645e8ead466dde44792da919431aea41deeb32aeb0e7",
   "source_hash": "sha256:91577c57e1dca7fb93371f9433e06c77",
   "source_chars": 4130,
   "task_id": "62ca9d88bc1fe8992614d5d5046e25bd",
@@ -200,29 +208,42 @@
     "kicker": "AGENT ARCHITECTURE // MCP SKILLS",
     "title": "THE MCP SKILLS EXTENSION",
     "hook": "Standardizing how agents discover and retrieve workflows",
-    "anchor": "top-right",
+    "anchor": "top-left",
     "light": false,
     "scrim": 0,
-    "contrast": 9.76,
-    "target": 4.5,
-    "clutter": 0.195,
+    "contrast": 10.39,
+    "target": 5.5,
+    "clutter": 0.282,
     "region_rgb": [
       230,
-      226,
-      212
+      227,
+      218
     ],
     "binding_rgb": [
-      228,
-      222,
-      210
+      233,
+      229,
+      218
     ],
     "title_lines": [
       "THE MCP SKILLS",
       "EXTENSION"
     ],
-    "subject": 0.102,
-    "ink_subject": 0.057,
-    "spike": 0.286,
+    "subject": 0.144,
+    "ink_subject": 0.054,
+    "spike": 0.505,
     "generated_at": "2026-10-10T15:51:54+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395619,
+    "quality": 64,
+    "sha256": "sha256:fdff947344c38f129059645e8ead466dde44792da919431aea41deeb32aeb0e7",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }
