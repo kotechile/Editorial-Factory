@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T17:43:31Z",
+  "updated_at": "2026-10-24T18:13:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3385,6 +3385,24 @@
         "At a glance"
       ],
       "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-24",
+      "public": false
+    },
+    {
+      "slug": "2026-10-24_your-tooling-assist-is-dutiable",
+      "title": "Your $1,100 Tool Bills Every Unit",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-24",
       "public": false
     }
