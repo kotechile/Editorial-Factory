@@ -37,7 +37,7 @@ FIXTURE_LINKS = [{
     "kind": "article", "category": "Money & Wealth", "relevance_score": 12,
     "why": "same site (giniloh.com); same category", "suggested_placement": "Link it in the lead.",
 }]
-il.resolve_links = lambda topic, vertical, max_links=3, exclude_slugs=(): list(FIXTURE_LINKS)
+il.resolve_links = lambda topic, vertical, max_links=3, exclude_slugs=(), category_id=None: list(FIXTURE_LINKS)
 
 PASS, FAIL = [], []
 
