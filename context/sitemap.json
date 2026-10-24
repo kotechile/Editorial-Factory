@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T06:42:36Z",
+  "updated_at": "2026-10-24T14:28:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3160,7 +3160,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/why-your-fridge-upgrade-pays-12-50/"
     },
     {
       "slug": "2026-10-23_why-your-swap-died-at-25",
@@ -3197,7 +3198,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-125-exam-costs-122-hours/"
     },
     {
       "slug": "2026-10-23_your-26-week-cliff-kills-4-years",
@@ -3234,7 +3236,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-61-day-window-costs-the-position/"
     },
     {
       "slug": "2026-10-23_your-batterys-745-mw-cliff",
@@ -3309,7 +3312,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/"
     },
     {
       "slug": "2026-10-23_your-routes-5x-stop-gap",
@@ -3327,7 +3331,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-routes-5x-stop-gap/"
     },
     {
       "slug": "2026-10-24_7-days-notice-rewrites-your-duty",
@@ -3345,7 +3350,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/7-days-notice-rewrites-your-duty/"
     },
     {
       "slug": "2026-10-24_your-home-servers-45-day-patch-gap",
@@ -3362,7 +3368,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-home-servers-45-day-patch-gap/"
     }
   ]
 }
