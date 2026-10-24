@@ -192,6 +192,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-24 | supplier_risk_reshoring_decision | your-tooling-assist-is-dutiable | Your $1,100 Tool Bills Every Unit | https://pressflow.aichieve.net/published/2026-10-24_your-tooling-assist-is-dutiable.md | reader site only |
 | 2026-10-24 | yard_robotics | your-1-acre-mowers-04-acre-trap | Your 1-Acre Mower's 0.4-Acre Trap | https://pressflow.aichieve.net/published/2026-10-24_your-1-acre-mowers-04-acre-trap.md | reader site only |
 | 2026-10-24 | outdoor_power_equipment | your-heated-mat-costs-50-times-the-blower | Your Mat Costs 50 Blower Charges | https://pressflow.aichieve.net/published/2026-10-24_your-heated-mat-costs-50-times-the-blower.md | reader site only |
+| 2026-10-24 | home_diagnostics_tech | your-250-imager-needs-15-degrees | Your $250 Imager Needs 15 Degrees | https://pressflow.aichieve.net/published/2026-10-24_your-250-imager-needs-15-degrees.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
