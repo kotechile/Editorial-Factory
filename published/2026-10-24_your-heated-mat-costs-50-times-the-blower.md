@@ -60,15 +60,6 @@ I would not talk anyone out of a mat where the requirement is a bare, dry thresh
 
 Three constraints sit on the numbers here. The prices are list prices as of October 24, 2026, and mat vendors discount seasonally. The rate is the 2025 annual U.S. residential average, and the same page shows a 4.4-fold spread across states, from 35.72 cents in Hawaii to 8.20 cents in North Dakota, so the same storm bill runs nearer $14.93 in Hawaii [6]. The melt arithmetic also uses the mat's best case of 2 inches an hour, and a slower melt stretches the energized hours and the bill with them. This desk has no hardware and tested nothing, so every figure above comes from a manufacturer's published page or the U.S. Energy Information Administration (EIA), refigured where it is a ratio.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Home Cost Decisions" -> /categories/home-cost-decisions/ [same site (wellroost.com); topical overlap: cost, costs] Link "Home Cost Decisions" in the section where the article touches cost, costs. -->
-## Related reading
-
-- [Home Cost Decisions](/categories/home-cost-decisions/) — more on Home Cost Decisions
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -80,6 +71,15 @@ Three constraints sit on the numbers here. The prices are list prices as of Octo
   - **Amps per plug:** a 13-amp cap per power unit works out at about 45 square feet of mat on one 120-volt circuit.
   - **Melt rate:** the published ceiling of 2 inches an hour is the best case, and slower melts run the meter longer.
 - **The Catch:** prices are list prices as of October 24, 2026, the rate is the 2025 U.S. residential average of 17.30 cents with a 4.4-fold state spread, and nothing here was tested on hardware.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Home Cost Decisions" -> /categories/home-cost-decisions/ [same site (wellroost.com); topical overlap: cost, costs] Link "Home Cost Decisions" in the section where the article touches cost, costs. -->
+## Related reading
+
+- [Home Cost Decisions](/categories/home-cost-decisions/) — more on Home Cost Decisions
+<!-- internal-links:end -->
 
 ## Sources
 
