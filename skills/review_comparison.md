@@ -133,7 +133,10 @@ the lawn is split across more than three zones.
 ```
 
 The `Figure` cell must be a string that literally appears on the cited page — that is what the gate
-checks.
+checks. **It must also contain a numeral.** `citation_hub_dossier.figure_patterns()` returns no pattern
+at all for a phrase with no digits, so a row whose Figure is a quotation ("the only difference being run
+time") is reported `figure_absent` however many times the page is re-fetched. Cite a numeric substring
+from the same sentence ("two 10-Ah batteries") and put the wording in the `Measured` cell.
 
 ## 7. After the gate
 
@@ -169,3 +172,14 @@ checks.
 - **A price that only exists on a marketplace listing with no stable URL.** Use the manufacturer or a
   major retailer page; a listing that disappears takes the citation with it.
 - **A verdict that names no product** ("it depends") — the gate rejects it, and so should you.
+- **A Figure cell with no numeral** — permanently unverifiable (see §6): the gate reports
+  `figure_absent` on a page that plainly contains the text, and re-running never fixes it.
+- **A passing frontier rewrite that has lost gated content.** On a 1,047-word comparison the rewrite
+  returned PASS and had still dropped the mandatory "what we did not test" paragraph, one of the two
+  verdict-block links, and a whole premium sentence (leaving a source uncited), and had flattened a
+  conditional ("if both run-time claims describe the same job") into an assertion. A shrink to ~75% of
+  the draft is the cue to audit line by line against the verified brief, not just to read the verdict.
+- **`humanize_one.py` timing out on attempt 2.** Its `call_gemini` carries a 240 s socket timeout, which a
+  1,000-word rewrite with thinking exceeds; drive the draft from a per-draft script that rebinds the
+  module-level `call_gemini` to 900 s (`claude_humanizer.md` §7) instead of re-running the stock script
+  and losing the attempt trail.
