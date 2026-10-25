@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T18:24:51+00:00",
+  "generated_at": "2026-10-25T14:16:41+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -20,8 +20,11 @@
     "wellroost.com": [
       "energy-efficiency",
       "home-cost-decisions",
+      "home-diagnostics-tools",
+      "outdoor-power-equipment",
       "smart-home-security",
-      "tools-equipment"
+      "tools-equipment",
+      "yard-robotics"
     ],
     "aichieve.net": [
       "ai-stack-tool-tco",
@@ -53,7 +56,10 @@
       "5": "Smart Home & Security",
       "3": "Tools & Equipment",
       "1": "Uncategorized",
-      "22": "Yard Robots & Automation"
+      "22": "Yard Robots & Automation",
+      "hub:home-diagnostics-tools": "Home Diagnostic Tools",
+      "hub:outdoor-power-equipment": "Outdoor Power & Snow Equipment",
+      "hub:yard-robotics": "Yard Robots & Automation"
     },
     "aichieve.net": {
       "7": "AI Stack & Tool TCO",
@@ -173,7 +179,8 @@
       "url": "https://giniloh.com/calculators/rent-vs-buy/",
       "path": "/calculators/rent-vs-buy/",
       "sites_live": {
-        "giniloh.com": "/calculators/rent-vs-buy/"
+        "giniloh.com": "/calculators/rent-vs-buy/",
+        "wellroost.com": "/calculators/rent-vs-buy/"
       },
       "categories": [],
       "category_ids": [],
@@ -1233,6 +1240,101 @@
       "site": "wellroost.com",
       "kind": "tool",
       "id": null,
+      "slug": "capital-sinking-fund",
+      "title": "Capital Sinking Fund Calculator",
+      "url": "https://wellroost.com/calculators/capital-sinking-fund/",
+      "path": "/calculators/capital-sinking-fund/",
+      "sites_live": {
+        "wellroost.com": "/calculators/capital-sinking-fund/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Every system in the house, its wear-out window, and the monthly contribution that funds replacements before they fail.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "claim-or-self-pay",
+      "title": "Claim or Self-Pay Calculator",
+      "url": "https://wellroost.com/calculators/claim-or-self-pay/",
+      "path": "/calculators/claim-or-self-pay/",
+      "sites_live": {
+        "wellroost.com": "/calculators/claim-or-self-pay/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The five-year premium penalty of one claim, priced, against the repair you would otherwise absorb.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "down-payment",
+      "title": "Down Payment and PMI Calculator",
+      "url": "https://wellroost.com/calculators/down-payment/",
+      "path": "/calculators/down-payment/",
+      "sites_live": {
+        "wellroost.com": "/calculators/down-payment/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Cash retained against mortgage insurance paid, with the month the premium cancels itself and the assistance arithmetic.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "heloc-arm-stress",
+      "title": "HELOC and ARM Stress Test",
+      "url": "https://wellroost.com/calculators/heloc-arm-stress/",
+      "path": "/calculators/heloc-arm-stress/",
+      "sites_live": {
+        "wellroost.com": "/calculators/heloc-arm-stress/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "What a floating balance costs at the next four rate steps, and how much movement exhausts your cushion.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "insurance-coverage-gap",
+      "title": "Insurance Coverage Gap Calculator",
+      "url": "https://wellroost.com/calculators/insurance-coverage-gap/",
+      "path": "/calculators/insurance-coverage-gap/",
+      "sites_live": {
+        "wellroost.com": "/calculators/insurance-coverage-gap/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Percentage deductibles and actual-cash-value roofs translated into the cash you need on the day of a loss.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
       "slug": "move-or-improve",
       "title": "Should You Renovate or Move? | Move or Improve Calculator",
       "url": "https://wellroost.com/calculators/move-or-improve/",
@@ -1244,6 +1346,44 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Find out whether renovating your home or selling and buying a new one builds more equity over 5 years. Professional-grade side-by-side net equity projection.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "property-tax-appeal",
+      "title": "Property Tax Appeal Calculator",
+      "url": "https://wellroost.com/calculators/property-tax-appeal/",
+      "path": "/calculators/property-tax-appeal/",
+      "sites_live": {
+        "wellroost.com": "/calculators/property-tax-appeal/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The market value your assessment implies, tested against your own comps, with the filing priced.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "recast-vs-refinance",
+      "title": "Recast vs Refinance Calculator",
+      "url": "https://wellroost.com/calculators/recast-vs-refinance/",
+      "path": "/calculators/recast-vs-refinance/",
+      "sites_live": {
+        "wellroost.com": "/calculators/recast-vs-refinance/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A lump sum against a legacy note rate: what it buys in monthly relief, and what a refinance would cost instead.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -1282,6 +1422,102 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Model remodel ROI, ARV, energy incentives, ADU income, and renovation-loan leverage in a multi-engine home upgrade analytics platform.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "rent-vs-buy",
+      "title": "Rent vs Buy Calculator",
+      "url": "https://wellroost.com/calculators/rent-vs-buy/",
+      "path": "/calculators/rent-vs-buy/",
+      "sites_live": {
+        "giniloh.com": "/calculators/rent-vs-buy/",
+        "wellroost.com": "/calculators/rent-vs-buy/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Outflow parity: both paths start with the same cash, and the cheaper one invests the difference.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "seller-concession",
+      "title": "Seller Concession Calculator",
+      "url": "https://wellroost.com/calculators/seller-concession/",
+      "path": "/calculators/seller-concession/",
+      "sites_live": {
+        "wellroost.com": "/calculators/seller-concession/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "One credit, three destinations: price reduction, permanent points, or a 2-1 temporary buydown.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "tou-ev-arbitrage",
+      "title": "Time-of-Use Calculator",
+      "url": "https://wellroost.com/calculators/tou-ev-arbitrage/",
+      "path": "/calculators/tou-ev-arbitrage/",
+      "sites_live": {
+        "wellroost.com": "/calculators/tou-ev-arbitrage/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your flat rate against a time-of-use tariff, with the peak share at which the switch stops paying.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "true-cost-of-ownership",
+      "title": "True Cost of Ownership",
+      "url": "https://wellroost.com/calculators/true-cost-of-ownership/",
+      "path": "/calculators/true-cost-of-ownership/",
+      "sites_live": {
+        "wellroost.com": "/calculators/true-cost-of-ownership/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Principal, interest, the reassessed tax, the indexed premium, HOA exposure and a reserve line \u2014 five rows, not one number.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "tool",
+      "id": null,
+      "slug": "unpermitted-work",
+      "title": "Unpermitted Work Calculator",
+      "url": "https://wellroost.com/calculators/unpermitted-work/",
+      "path": "/calculators/unpermitted-work/",
+      "sites_live": {
+        "wellroost.com": "/calculators/unpermitted-work/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Permit now, regularize later, or sell as-is: the three costs, including the square footage an appraiser will not count.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -1382,6 +1618,52 @@
       "site": "wellroost.com",
       "kind": "category",
       "id": null,
+      "slug": "home-diagnostics-tools",
+      "title": "Home Diagnostic Tools",
+      "url": "https://wellroost.com/categories/home-diagnostics-tools/",
+      "path": "/categories/home-diagnostics-tools/",
+      "sites_live": {
+        "wellroost.com": "/categories/home-diagnostics-tools/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "Thermal imagers, moisture meters, borescopes, and acoustic leak detectors that pay for themselves in one prevented call-out. What each instrument actually finds, and where a $90 tool beats a $900 one.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "outdoor-power-equipment",
+      "title": "Outdoor Power & Snow Equipment",
+      "url": "https://wellroost.com/categories/outdoor-power-equipment/",
+      "path": "/categories/outdoor-power-equipment/",
+      "sites_live": {
+        "wellroost.com": "/categories/outdoor-power-equipment/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "Two-stage battery snow blowers, heated driveway mats, cordless mowers, and pressure washers rated by torque, runtime, and five-year ownership cost, including what the fourth tool on a shared battery platform really costs.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
       "slug": "smart-home-security",
       "title": "Smart Home & Security",
       "url": "https://wellroost.com/categories/smart-home-security/",
@@ -1420,6 +1702,29 @@
         "tools-equipment"
       ],
       "excerpt": "Gear up with the right equipment for every maintenance and DIY project. Find objective evaluations of power tools, lawn equipment, snow blowers, and essential DIY gear, with a dedicated focus on choosing the right battery ecosystems to power your garage or workshop efficiently.",
+      "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "category",
+      "id": null,
+      "slug": "yard-robotics",
+      "title": "Yard Robots & Automation",
+      "url": "https://wellroost.com/categories/yard-robotics/",
+      "path": "/categories/yard-robotics/",
+      "sites_live": {
+        "wellroost.com": "/categories/yard-robotics/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Robotic mowers, autonomous snow blowers, and modular yard robots compared by navigation tech (LiDAR vs RTK vs vision), slope limits, and payback against a landscaping or plowing contract.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -1750,6 +2055,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "snow-robot-stops-at-6000-ft2-it-docks",
+      "title": "Snow Robot Stops at 6,000 ft\u00b2: It Docks",
+      "url": "https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/",
+      "path": "/snow-robot-stops-at-6000-ft2-it-docks/",
+      "sites_live": {
+        "wellroost.com": "/snow-robot-stops-at-6000-ft2-it-docks/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "The Yarbo Y40 Core with the Snow Blower Module Gen 2 is listed at $5,599 as of 2026-10-25, and the number that decides the purchase sits one line under the\u2026",
+      "modified": "2026-10-25T14:14:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
       "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
       "url": "https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
@@ -1819,6 +2147,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-1-acre-mowers-04-acre-trap",
+      "title": "Your 1-Acre Mower's 0.4-Acre Trap",
+      "url": "https://wellroost.com/your-1-acre-mowers-04-acre-trap/",
+      "path": "/your-1-acre-mowers-04-acre-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-1-acre-mowers-04-acre-trap/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "A robot mower's one-acre claim shrinks fast on a real lawn, because the makers build that number on a best-case pattern and a full day of running.",
+      "modified": "2026-10-24T18:45:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-5-deductible-risks-your-claim",
       "title": "Your 5% Deductible Risks Your Claim",
       "url": "https://wellroost.com/your-5-deductible-risks-your-claim/",
@@ -1858,6 +2209,29 @@
       ],
       "excerpt": "Louisiana will make standard insurers cut the hurricane part of a bill by up to 49% for a FORTIFIED roof, starting January 1, 2027.",
       "modified": "2026-10-21T13:22:23",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-250-imager-needs-15-degrees",
+      "title": "Your $250 Imager Needs 15 Degrees",
+      "url": "https://wellroost.com/your-250-imager-needs-15-degrees/",
+      "path": "/your-250-imager-needs-15-degrees/",
+      "sites_live": {
+        "wellroost.com": "/your-250-imager-needs-15-degrees/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "The $250 imager a federal building-science guide points homeowners to does not see through a wall; it reads the heat of the wall's own surface, which is why\u2026",
+      "modified": "2026-10-24T19:43:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1957,6 +2331,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-heated-mat-costs-50-times-the-blower",
+      "title": "Your Mat Costs 50 Blower Charges",
+      "url": "https://wellroost.com/your-heated-mat-costs-50-times-the-blower/",
+      "path": "/your-heated-mat-costs-50-times-the-blower/",
+      "sites_live": {
+        "wellroost.com": "/your-heated-mat-costs-50-times-the-blower/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "The pitch for a heated snow mat is its running cost, quoted by HeatTrak as about $0.18 an hour. My read is that the hourly figure, and the $1.80 it becomes\u2026",
+      "modified": "2026-10-24T19:13:37",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-locks-blind-90-bet",
       "title": "Your Lock's Blind 90% Bet",
       "url": "https://wellroost.com/your-locks-blind-90-bet/",
@@ -1988,14 +2385,14 @@
         "wellroost.com": "/your-nonrenewal-isnt-final-count-120-days/"
       },
       "categories": [
-        "Energy & Efficiency"
+        "Home Cost Decisions"
       ],
       "category_ids": [],
       "category_slugs": [
-        "energy-efficiency"
+        "home-cost-decisions"
       ],
-      "excerpt": "Your home insurance nonrenewal letter isn't the final word, and the count is the part that pays. Florida gives an owner 120 days of warning before a policy\u2026",
-      "modified": "2026-10-23T18:16:14",
+      "excerpt": "Carriers are leaving whole regions rather than individual houses, as reinsurance costs and redrawn wildfire and hurricane maps reset what they will cover.",
+      "modified": "2026-10-24T14:50:51",
       "live": true,
       "source": "frontend-sitemap"
     },

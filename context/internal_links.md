@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-24T18:24:51+00:00
+# Internal-link candidates — 2026-10-25T14:16:41+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -55,16 +55,16 @@ Category hubs this front serves: —
 - [Lease Break Penalty & Offset Estimator (tool)](https://giniloh.com/calculators/lease-break/) — —
 - [Local GPU vs Cloud Break-even Calculator (tool)](https://giniloh.com/calculators/gpu-breakeven/) — —
 - [RSU Hold vs Sell Calculator with Concentration Risk (tool)](https://giniloh.com/calculators/rsu-hold-vs-sell/) — —
-- [Rent vs Buy Calculator with Opportunity Cost (tool)](https://giniloh.com/calculators/rent-vs-buy/) — —
+- [Rent vs Buy Calculator with Opportunity Cost (tool)](https://giniloh.com/calculators/rent-vs-buy/) — — — also served by wellroost.com/calculators/rent-vs-buy/
 - [Secondary Tender vs IPO Calculator for Startup Equity (tool)](https://giniloh.com/calculators/secondary-tender-calculator/) — —
 - [Tech Repair vs. Replace Optimizer (tool)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Tinkering Tax vs. SaaS Upgrade Calculator (tool)](https://giniloh.com/calculators/no-code-terminator/) — —
 - [Total Compensation & Equity Visualizer (tool)](https://giniloh.com/calculators/total-comp/) — —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 
-## wellroost.com — 34 live article(s), 7 other target(s)
+## wellroost.com — 38 live article(s), 22 other target(s)
 
-Category hubs this front serves: energy-efficiency, home-cost-decisions, smart-home-security, tools-equipment
+Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
 - [20% of Your AC Never Arrives](https://wellroost.com/20-percent-of-your-ac-never-arrives/) — Energy & Efficiency
 - [3 Days to Kill Your Deposit](https://wellroost.com/kill-your-deposit-in-3-days/) — Tools & Equipment
@@ -78,12 +78,15 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, smart-h
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
 - [Retainage Trap: 5 Percent, Not 15](https://wellroost.com/hold-back-capped-at-5-percent/) — Tools & Equipment
+- [Snow Robot Stops at 6,000 ft²: It Docks](https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/) — Yard Robots & Automation
 - [The Hidden Lien Clock Behind Your Remodel Payments](https://wellroost.com/mechanics-lien-clock-payment-release/) — Tools & Equipment
 - [The Remodel That Pays You Back Isn’t the One You Want](https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/) — Energy & Efficiency
 - [The local-first smart home cost squeeze: Cloud and hardware prices rise](https://wellroost.com/local-first-smart-home-cost-squeeze/) — Smart Home & Security
 - [Water Damage: Your $15,400 Silent Loss](https://wellroost.com/silent-15400-home-loss/) — Energy & Efficiency
 - [Water Leak Monitors: The Flow Rate That Decides If It Pays](https://wellroost.com/water-leak-monitor-rate-threshold/) — Smart Home & Security
 - [Windows: 13% Is the Best Case, Not Average](https://wellroost.com/windows-13-percent-best-case/) — Energy & Efficiency
+- [Your $250 Imager Needs 15 Degrees](https://wellroost.com/your-250-imager-needs-15-degrees/) — Home Diagnostic Tools
+- [Your 1-Acre Mower's 0.4-Acre Trap](https://wellroost.com/your-1-acre-mowers-04-acre-trap/) — Yard Robots & Automation
 - [Your 49% Discount Isn't All Roof](https://wellroost.com/your-49-discount-isnt-all-roof/) — Home Cost Decisions
 - [Your 5% Deductible Risks Your Claim](https://wellroost.com/your-5-deductible-risks-your-claim/) — Home Cost Decisions
 - [Your 75,000-Btu Tank's Venting Trap](https://wellroost.com/your-75000-btu-tank-venting-trap/) — Energy & Efficiency
@@ -93,20 +96,36 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, smart-h
 - [Your EV Is Now a Home Battery — Behind a Paywall](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
+- [Your Mat Costs 50 Blower Charges](https://wellroost.com/your-heated-mat-costs-50-times-the-blower/) — Outdoor Power & Snow Equipment
 - [Your Monitor's 77% Guess: Where It Fails](https://wellroost.com/monitor-77-percent-guess-where-it-fails/) — Smart Home & Security
-- [Your Nonrenewal Isn't Final: Count 120 Days](https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/) — Energy & Efficiency
+- [Your Nonrenewal Isn't Final: Count 120 Days](https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/) — Home Cost Decisions
 - [Your Panel Doesn't Need More Amps: The 80% Test](https://wellroost.com/panel-upgrade-80-percent-test/) — Smart Home & Security
 - [Your Remodel Loses to 149% Growth](https://wellroost.com/your-remodel-loses-to-149-growth/) — Tools & Equipment
 - [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
 - [Your Upgrade's $9 Silent Reset](https://wellroost.com/your-upgrades-9-silent-reset/) — Energy & Efficiency
 - [€1.2 Billion for Shelly: Your Local API Unwritten](https://wellroost.com/local-api-isnt-in-the-contract/) — Smart Home & Security
+- [Capital Sinking Fund Calculator (tool)](https://wellroost.com/calculators/capital-sinking-fund/) — —
+- [Claim or Self-Pay Calculator (tool)](https://wellroost.com/calculators/claim-or-self-pay/) — —
+- [Down Payment and PMI Calculator (tool)](https://wellroost.com/calculators/down-payment/) — —
 - [Energy & Efficiency (category)](https://wellroost.com/categories/energy-efficiency/) — Energy & Efficiency
+- [HELOC and ARM Stress Test (tool)](https://wellroost.com/calculators/heloc-arm-stress/) — —
 - [Home Cost Decisions (category)](https://wellroost.com/categories/home-cost-decisions/) — Home Cost Decisions
+- [Home Diagnostic Tools (category)](https://wellroost.com/categories/home-diagnostics-tools/) — Home Diagnostic Tools
+- [Insurance Coverage Gap Calculator (tool)](https://wellroost.com/calculators/insurance-coverage-gap/) — —
+- [Outdoor Power & Snow Equipment (category)](https://wellroost.com/categories/outdoor-power-equipment/) — Outdoor Power & Snow Equipment
+- [Property Tax Appeal Calculator (tool)](https://wellroost.com/calculators/property-tax-appeal/) — —
+- [Recast vs Refinance Calculator (tool)](https://wellroost.com/calculators/recast-vs-refinance/) — —
 - [Remodeling ROI Calculator (tool)](https://wellroost.com/calculators/remodeling-roi/) — —
 - [Remodelytics | Home Upgrade ROI Calculator (tool)](https://wellroost.com/calculators/remodelytics/) — —
+- [Rent vs Buy Calculator (tool)](https://wellroost.com/calculators/rent-vs-buy/) — — — also served by giniloh.com/calculators/rent-vs-buy/
+- [Seller Concession Calculator (tool)](https://wellroost.com/calculators/seller-concession/) — —
 - [Should You Renovate or Move? | Move or Improve Calculator (tool)](https://wellroost.com/calculators/move-or-improve/) — —
 - [Smart Home & Security (category)](https://wellroost.com/categories/smart-home-security/) — Smart Home & Security
+- [Time-of-Use Calculator (tool)](https://wellroost.com/calculators/tou-ev-arbitrage/) — —
 - [Tools & Equipment (category)](https://wellroost.com/categories/tools-equipment/) — Tools & Equipment
+- [True Cost of Ownership (tool)](https://wellroost.com/calculators/true-cost-of-ownership/) — —
+- [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
+- [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
 ## aichieve.net — 137 live article(s), 8 other target(s)
 

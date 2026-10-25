@@ -12,7 +12,7 @@
     },
     {
       "revision": 2,
-      "alt_text": "Yarbo Y40 Core Economics. A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage",
+      "alt_text": "A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage floor.",
       "caption": "Yarbo Y40 Core Economics: The $5,599 snow bot only pays off if it mows your lawn.",
       "title": "Yarbo Y40 Core Economics",
       "bytes": 406113,
@@ -21,7 +21,7 @@
   ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point — with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -35,7 +35,7 @@
   "core_thesis": "Yarbo prices the Y40 snow setup as a modular platform, where the base unit requires the summer mower module to justify the high entry cost.",
   "core_conflict": "High entry capital cost versus multi-season modular utility.",
   "composition": "asymmetrical deconstructed layout",
-  "alt_text": "Yarbo Y40 Core Economics. A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage",
+  "alt_text": "A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage floor.",
   "caption": "Yarbo Y40 Core Economics: The $5,599 snow bot only pays off if it mows your lawn.",
   "title": "Yarbo Y40 Core Economics",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -118,5 +118,6 @@
     "ink_subject": 0.015,
     "spike": 0.107,
     "generated_at": "2026-10-25T14:13:21+00:00"
-  }
+  },
+  "alt_text_source": "hand-corrected 2026-10-25: the director's revision-2 alt was cut mid-phrase"
 }
