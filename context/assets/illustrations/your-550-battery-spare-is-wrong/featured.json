@@ -1,0 +1,112 @@
+{
+  "slug": "your-550-battery-spare-is-wrong",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy-duty outdoor power equipment battery pack sitting on a plywood workbench.",
+      "caption": "The massive price gap between a bundled capacity upgrade and a standalone spare makes buying an extra battery a poor investment.",
+      "title": "snow-blower-battery-pricing",
+      "bytes": 385157,
+      "sha256": "sha256:c583cf77b2f4f99c33f18f8505772736"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph of a heavy-duty outdoor power equipment battery pack resting on a textured plywood garage workbench. 85mm lens, three-quarter angle, hero object positioned off-centre on the right with generous editorial negative space on the left. A single softbox key light from the upper left casts a long, deep contact shadow across the wood grain, with a prominent rim highlight on the battery's matte polymer casing and brushed steel heat fins. Bone white, charcoal, and deep pine green palette, catalogue clarity, fine film grain, no gradient sweep, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI, people",
+  "rationale": "A studio product shot isolates the standalone battery pack, framing it as the central purchasable item whose exorbitant price tag drives the story's economic revelation.",
+  "cue": "Your $550 Battery Spare Is Wrong",
+  "subject": "a heavy-duty outdoor power equipment battery pack",
+  "core_thesis": "EGO's larger snow blower kit offers the cheapest battery upgrade in its class, making the $550 standalone spare battery a massive financial mistake.",
+  "core_conflict": "The extreme price discrepancy between a bundled battery capacity upgrade and purchasing a standalone spare.",
+  "composition": "extreme asymmetry with hero off-centre",
+  "alt_text": "The $550 Battery Mistake. A heavy-duty outdoor power equipment battery pack sitting on a plywood workbench.",
+  "caption": "The $550 Battery Mistake: Buying the bigger kit beats paying for a spare battery.",
+  "title": "The $550 Battery Mistake",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-550-battery-spare-is-wrong/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 393930,
+  "sha256": "sha256:fd4cf8291cd3aadf499ca390f4b8610b5aa4a9a4a4472206421c3c4dadbeb36c",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 393930,
+    "quality": 84,
+    "sha256": "sha256:fd4cf8291cd3aadf499ca390f4b8610b5aa4a9a4a4472206421c3c4dadbeb36c",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:5f6727be9c9942983bfb9527b0dc87cdb8860e3c1aafdcf6f93b1b953de2272b",
+  "render_phash": "77c63fce3fce3fe23fc53fb57fb77f934da10da90de11ff93f9d367f35ff27eb",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A heavy-duty battery pack sits on a wooden workbench under studio lighting.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a large battery pack, which aligns with the article's focus on outdoor power equipment batteries."
+  },
+  "source_hash": "sha256:c1b08befaea139153d2104f2d653b143",
+  "source_chars": 4662,
+  "task_id": "a29d161be3c7cf675572ba878d107e94",
+  "credits": 5.0,
+  "cost_ms": 60,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a29d161be3c7cf675572ba878d107e94_1792940235702.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph of a heavy-duty outdoor power equipment battery pack resting on a textured plywood garage workbench. 85mm lens, three-quarter angle, hero object positioned off-centre on the right with generous editorial negative space on the left. A single softbox key light from the upper left casts a long, deep contact shadow across the wood grain, with a prominent rim highlight on the battery's matte polymer casing and brushed steel heat fins. Bone white, charcoal, and deep pine green palette, catalogue clarity, fine film grain, no gradient sweep, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-25T14:57:26+00:00",
+  "overlay": {
+    "kicker": "POWER EQUIPMENT // BATTERY PRICING",
+    "title": "THE $550 BATTERY MISTAKE",
+    "hook": "Buying the bigger kit beats paying for a spare battery",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 90,
+    "contrast": 5.53,
+    "target": 5.5,
+    "clutter": 0.262,
+    "region_rgb": [
+      160,
+      158,
+      155
+    ],
+    "binding_rgb": [
+      127,
+      120,
+      112
+    ],
+    "title_lines": [
+      "THE $550",
+      "BATTERY MISTAKE"
+    ],
+    "subject": 0.025,
+    "ink_subject": 0.011,
+    "spike": 0.08,
+    "generated_at": "2026-10-25T14:57:26+00:00"
+  }
+}

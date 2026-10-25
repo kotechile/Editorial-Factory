@@ -1,6 +1,6 @@
 {
   "slug": "carta-unexercised-options-401k",
-  "revision": 15,
+  "revision": 16,
   "history": [
     {
       "revision": 1,
@@ -115,6 +115,14 @@
       "title": "Why Options Go Unexercised",
       "bytes": 138291,
       "sha256": "sha256:b3a4e94b70a4ae7acdbd9a99b0f15362cd07ece28ef4f09cd9c18d1dff508306"
+    },
+    {
+      "revision": 15,
+      "alt_text": "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des",
+      "caption": "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded.",
+      "title": "Why Options Go Unexercised",
+      "bytes": 138291,
+      "sha256": "sha256:b3a4e94b70a4ae7acdbd9a99b0f15362cd07ece28ef4f09cd9c18d1dff508306"
     }
   ],
   "style": "editorial_macro",
@@ -142,8 +150,8 @@
   "local_path": "context/assets/illustrations/carta-unexercised-options-401k/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 138291,
-  "sha256": "sha256:b3a4e94b70a4ae7acdbd9a99b0f15362cd07ece28ef4f09cd9c18d1dff508306",
+  "bytes": 277317,
+  "sha256": "sha256:8ff3b18b63de5f06d6c526cac24e923c81eaaacd2f311b9c2f990b37d9c33547",
   "source_hash": "sha256:2564557c08d6487255b621f42cc83608",
   "source_chars": 4416,
   "task_id": "4e71492ebe2fe9dc6af3da6d5cd35d5f",
@@ -166,7 +174,7 @@
     "anchor": "bottom-right",
     "light": true,
     "scrim": 0,
-    "contrast": 13.17,
+    "contrast": 13.21,
     "target": 4.5,
     "clutter": 0.106,
     "region_rgb": [
@@ -175,9 +183,9 @@
       16
     ],
     "binding_rgb": [
-      49,
-      34,
-      27
+      51,
+      33,
+      23
     ],
     "title_lines": [
       "WHY OPTIONS GO",
@@ -187,5 +195,18 @@
     "ink_subject": 0.001,
     "spike": 0.0,
     "generated_at": "2026-10-08T22:23:25+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 277317,
+    "quality": 88,
+    "sha256": "sha256:8ff3b18b63de5f06d6c526cac24e923c81eaaacd2f311b9c2f990b37d9c33547",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

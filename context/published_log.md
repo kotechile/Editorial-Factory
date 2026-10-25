@@ -194,6 +194,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-24 | outdoor_power_equipment | your-heated-mat-costs-50-times-the-blower | Your Mat Costs 50 Blower Charges | https://pressflow.aichieve.net/published/2026-10-24_your-heated-mat-costs-50-times-the-blower.md | reader site only |
 | 2026-10-24 | home_diagnostics_tech | your-250-imager-needs-15-degrees | Your $250 Imager Needs 15 Degrees | https://pressflow.aichieve.net/published/2026-10-24_your-250-imager-needs-15-degrees.md | reader site only |
 | 2026-10-25 | yard_robotics | snow-robot-stops-at-6000-ft2-it-docks | Snow Robot Stops at 6,000 ft²: It Docks | https://pressflow.aichieve.net/published/2026-10-25_snow-robot-stops-at-6000-ft2-it-docks.md | reader site only |
+| 2026-10-25 | outdoor_power_equipment | your-550-battery-spare-is-wrong | Your $550 Battery Spare Is Wrong | https://pressflow.aichieve.net/published/2026-10-25_your-550-battery-spare-is-wrong.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

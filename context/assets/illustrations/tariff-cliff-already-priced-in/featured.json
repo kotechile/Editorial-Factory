@@ -1,6 +1,6 @@
 {
   "slug": "tariff-cliff-already-priced-in",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -99,6 +99,14 @@
       "title": "Pricing In The Tariff Cliff",
       "bytes": 135319,
       "sha256": "sha256:440d24fd098c5bd96af4800fd84c8d12360eaa9013dcdcf82a943f08bb132b10"
+    },
+    {
+      "revision": 13,
+      "alt_text": "Pricing In The Tariff Cliff. Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn light",
+      "caption": "Pricing In The Tariff Cliff: CFOs hoard tariff refunds ahead of a looming snap-back.",
+      "title": "Pricing In The Tariff Cliff",
+      "bytes": 135319,
+      "sha256": "sha256:440d24fd098c5bd96af4800fd84c8d12360eaa9013dcdcf82a943f08bb132b10"
     }
   ],
   "style": "cinematic_still",
@@ -126,8 +134,8 @@
   "local_path": "context/assets/illustrations/tariff-cliff-already-priced-in/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 135319,
-  "sha256": "sha256:440d24fd098c5bd96af4800fd84c8d12360eaa9013dcdcf82a943f08bb132b10",
+  "bytes": 283018,
+  "sha256": "sha256:61e043d21115b48433321fffa3d95aac7ca2a588f78226463ee6701403edfcf6",
   "source_hash": "sha256:385c2c3f7bcae7e8bb3d5546336786cc",
   "source_chars": 4366,
   "task_id": "679b3cd0de8ca9843b521d2a97ca681c",
@@ -150,26 +158,39 @@
     "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 8.04,
+    "contrast": 7.86,
     "target": 4.5,
-    "clutter": 0.22,
+    "clutter": 0.225,
     "region_rgb": [
       36,
       47,
       48
     ],
     "binding_rgb": [
-      66,
-      72,
-      72
+      81,
+      70,
+      66
     ],
     "title_lines": [
       "PRICING IN THE",
       "TARIFF CLIFF"
     ],
-    "subject": 0.132,
+    "subject": 0.133,
     "ink_subject": 0.047,
-    "spike": 0.471,
+    "spike": 0.476,
     "generated_at": "2026-10-08T22:18:33+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 283018,
+    "quality": 88,
+    "sha256": "sha256:61e043d21115b48433321fffa3d95aac7ca2a588f78226463ee6701403edfcf6",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "planner-as-router-plan-time-routing",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -91,6 +91,14 @@
       "title": "Planner-As-Router",
       "bytes": 999149,
       "sha256": "sha256:1dfc880ec3d9d1814d360ab777f92c68e8918231c9df7316f6d4b77a99b10e9f"
+    },
+    {
+      "revision": 12,
+      "alt_text": "Planner-As-Router. An interlocking mechanical connector splitting into two conduit paths on a minimal background.",
+      "caption": "Planner-As-Router: Folding model choice into the plan to cut costs by 44%.",
+      "title": "Planner-As-Router",
+      "bytes": 999149,
+      "sha256": "sha256:1dfc880ec3d9d1814d360ab777f92c68e8918231c9df7316f6d4b77a99b10e9f"
     }
   ],
   "style": "component_assembly",
@@ -114,12 +122,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/planner-as-router-plan-time-routing/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 999149,
-  "sha256": "sha256:1dfc880ec3d9d1814d360ab777f92c68e8918231c9df7316f6d4b77a99b10e9f",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/planner-as-router-plan-time-routing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 285734,
+  "sha256": "sha256:4af92e7880f4de409b71b3da9dd0368b3396dcda2c39bcad5e327b889163aa7c",
   "source_hash": "sha256:4ccb1ed6216de84da95f42687fabd2b3",
   "source_chars": 3996,
   "task_id": "34cddf82e6ceaae851e2eb460c19631f",
@@ -141,21 +149,21 @@
     "kicker": "AGENTIC AI // COST OPTIMIZATION",
     "title": "PLANNER-AS-ROUTER",
     "hook": "Folding model choice into the plan to cut costs by 44%",
-    "anchor": "top-left",
+    "anchor": "top-right",
     "light": false,
     "scrim": 0,
-    "contrast": 10.44,
+    "contrast": 10.57,
     "target": 4.5,
     "clutter": 0.009,
     "region_rgb": [
-      231,
-      231,
-      226
+      233,
+      232,
+      228
     ],
     "binding_rgb": [
-      233,
-      229,
-      226
+      232,
+      231,
+      227
     ],
     "title_lines": [
       "PLANNER-AS-ROUTER"
@@ -164,5 +172,18 @@
     "ink_subject": 0.0,
     "spike": 0.0,
     "generated_at": "2026-10-01T22:08:40+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 285734,
+    "quality": 88,
+    "sha256": "sha256:4af92e7880f4de409b71b3da9dd0368b3396dcda2c39bcad5e327b889163aa7c",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

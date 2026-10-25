@@ -1,6 +1,6 @@
 {
   "slug": "goods-tariff-relief-vs-vessel-fee",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -89,6 +89,14 @@
       "title": "New Ship Fees Erase Tariff Cuts",
       "bytes": 223466,
       "sha256": "sha256:e07fe73828a878eb026ea7e9b1b7c13e9a0fce21e7bb1489a55d088b59ba881d"
+    },
+    {
+      "revision": 12,
+      "alt_text": "New Ship Fees Erase Tariff Cuts. Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and crane",
+      "caption": "New Ship Fees Erase Tariff Cuts: How a flat vessel fee wipes out goods tariff relief.",
+      "title": "New Ship Fees Erase Tariff Cuts",
+      "bytes": 223466,
+      "sha256": "sha256:e07fe73828a878eb026ea7e9b1b7c13e9a0fce21e7bb1489a55d088b59ba881d"
     }
   ],
   "style": "long_lens_industry",
@@ -116,8 +124,8 @@
   "local_path": "context/assets/illustrations/goods-tariff-relief-vs-vessel-fee/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 223466,
-  "sha256": "sha256:e07fe73828a878eb026ea7e9b1b7c13e9a0fce21e7bb1489a55d088b59ba881d",
+  "bytes": 385856,
+  "sha256": "sha256:63c84e7719af2d5389f5ac9cecf63586d66605f1dc79efc47691530bacda10ce",
   "source_hash": "sha256:64afea2b37b7b60c41f96997291330c6",
   "source_chars": 4026,
   "task_id": "bc009468ce8125898f03f84394c780ee",
@@ -140,7 +148,7 @@
     "anchor": "bottom-left",
     "light": true,
     "scrim": 75,
-    "contrast": 4.69,
+    "contrast": 4.68,
     "target": 4.5,
     "clutter": 0.238,
     "region_rgb": [
@@ -149,17 +157,30 @@
       132
     ],
     "binding_rgb": [
-      130,
-      153,
-      167
+      144,
+      150,
+      162
     ],
     "title_lines": [
       "NEW SHIP FEES",
       "ERASE TARIFF CUTS"
     ],
-    "subject": 0.081,
-    "ink_subject": 0.043,
-    "spike": 0.235,
+    "subject": 0.082,
+    "ink_subject": 0.044,
+    "spike": 0.236,
     "generated_at": "2026-10-01T14:13:25+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 385856,
+    "quality": 84,
+    "sha256": "sha256:63c84e7719af2d5389f5ac9cecf63586d66605f1dc79efc47691530bacda10ce",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

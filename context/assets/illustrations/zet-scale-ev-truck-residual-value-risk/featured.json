@@ -1,6 +1,6 @@
 {
   "slug": "zet-scale-ev-truck-residual-value-risk",
-  "revision": 15,
+  "revision": 16,
   "history": [
     {
       "revision": 1,
@@ -115,6 +115,14 @@
       "title": "The 2500 Electric Truck Deal",
       "bytes": 128144,
       "sha256": "sha256:1e6304b34c3b4f1b32c33c98de82c01bf7801ed5d64224a30fc26c47e0af4c7d"
+    },
+    {
+      "revision": 15,
+      "alt_text": "The 2500 Electric Truck Deal. A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a h",
+      "caption": "The 2500 Electric Truck Deal: How a new lease model unlocked a massive EV truck order.",
+      "title": "The 2500 Electric Truck Deal",
+      "bytes": 128144,
+      "sha256": "sha256:1e6304b34c3b4f1b32c33c98de82c01bf7801ed5d64224a30fc26c47e0af4c7d"
     }
   ],
   "style": "cinematic_still",
@@ -142,8 +150,8 @@
   "local_path": "context/assets/illustrations/zet-scale-ev-truck-residual-value-risk/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 128144,
-  "sha256": "sha256:1e6304b34c3b4f1b32c33c98de82c01bf7801ed5d64224a30fc26c47e0af4c7d",
+  "bytes": 256877,
+  "sha256": "sha256:1e77b03fb6485b0204a7f01b9f6f356b31887c150d9bad612de2120b96dce263",
   "source_hash": "sha256:9aa9b280e14f3fc3c7822e59e74535b2",
   "source_chars": 4573,
   "task_id": "4c0ffb685c2e2aee4a816c67b19e5158",
@@ -166,26 +174,39 @@
     "anchor": "top-left",
     "light": false,
     "scrim": 15,
-    "contrast": 4.63,
+    "contrast": 4.65,
     "target": 4.5,
-    "clutter": 0.148,
+    "clutter": 0.149,
     "region_rgb": [
-      161,
-      172,
+      163,
+      173,
       166
     ],
     "binding_rgb": [
-      131,
+      133,
       152,
-      147
+      148
     ],
     "title_lines": [
       "THE 2500 ELECTRIC",
       "TRUCK DEAL"
     ],
-    "subject": 0.062,
-    "ink_subject": 0.027,
-    "spike": 0.204,
+    "subject": 0.083,
+    "ink_subject": 0.04,
+    "spike": 0.254,
     "generated_at": "2026-10-03T00:08:44+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 256877,
+    "quality": 88,
+    "sha256": "sha256:1e77b03fb6485b0204a7f01b9f6f356b31887c150d9bad612de2120b96dce263",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

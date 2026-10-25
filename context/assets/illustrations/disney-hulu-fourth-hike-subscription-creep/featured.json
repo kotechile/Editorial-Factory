@@ -1,6 +1,6 @@
 {
   "slug": "disney-hulu-fourth-hike-subscription-creep",
-  "revision": 17,
+  "revision": 18,
   "history": [
     {
       "revision": 1,
@@ -137,6 +137,14 @@
       "title": "Disney Plus Price Hike",
       "bytes": 149148,
       "sha256": "sha256:15199e9e52290e1ffb862ee131bc074bf4ce4c03bc6fa3fde5a0a23ec5e68ede"
+    },
+    {
+      "revision": 17,
+      "alt_text": "Disney Plus Price Hike. An amended billing statement and rate notice resting slightly out of alignment on a plain desk surfac",
+      "caption": "Disney Plus Price Hike: Streaming costs rise three times faster than inflation.",
+      "title": "Disney Plus Price Hike",
+      "bytes": 149148,
+      "sha256": "sha256:15199e9e52290e1ffb862ee131bc074bf4ce4c03bc6fa3fde5a0a23ec5e68ede"
     }
   ],
   "style": "document_flatlay",
@@ -164,8 +172,8 @@
   "local_path": "context/assets/illustrations/disney-hulu-fourth-hike-subscription-creep/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 149148,
-  "sha256": "sha256:15199e9e52290e1ffb862ee131bc074bf4ce4c03bc6fa3fde5a0a23ec5e68ede",
+  "bytes": 314880,
+  "sha256": "sha256:ba104b0778b79892f934e040c2004530b87fcfe443edeeab993595f671147ec1",
   "source_hash": "sha256:a079e5a91a3e4390d4f502aeaa258c34",
   "source_chars": 6864,
   "task_id": "570f9881af6c966a0511715d49a9dcf5",
@@ -188,26 +196,39 @@
     "anchor": "bottom-left",
     "light": false,
     "scrim": 30,
-    "contrast": 4.64,
+    "contrast": 4.65,
     "target": 4.5,
     "clutter": 0.175,
     "region_rgb": [
-      159,
+      160,
       158,
-      151
+      153
     ],
     "binding_rgb": [
-      143,
-      140,
-      131
+      144,
+      141,
+      132
     ],
     "title_lines": [
       "DISNEY PLUS",
       "PRICE HIKE"
     ],
-    "subject": 0.185,
-    "ink_subject": 0.103,
-    "spike": 0.514,
+    "subject": 0.18,
+    "ink_subject": 0.1,
+    "spike": 0.501,
     "generated_at": "2026-10-02T01:58:17+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 314880,
+    "quality": 88,
+    "sha256": "sha256:ba104b0778b79892f934e040c2004530b87fcfe443edeeab993595f671147ec1",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

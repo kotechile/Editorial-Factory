@@ -1,6 +1,6 @@
 {
   "slug": "maskills-multi-agent-skills-optimization",
-  "revision": 19,
+  "revision": 20,
   "history": [
     {
       "revision": 1,
@@ -149,6 +149,14 @@
       "title": "Optimize Skills Not Memory",
       "bytes": 933115,
       "sha256": "sha256:be2f2d1e0264d65167f6c4c46edf42c69975a09804599b3702cf6cd56eda75ce"
+    },
+    {
+      "revision": 19,
+      "alt_text": "Optimize Skills Not Memory. Brushed titanium server blade locking into a precision inspection gate bay against a charcoal bac",
+      "caption": "Optimize Skills Not Memory: Why agents need optimized skills instead of more memory.",
+      "title": "Optimize Skills Not Memory",
+      "bytes": 933115,
+      "sha256": "sha256:be2f2d1e0264d65167f6c4c46edf42c69975a09804599b3702cf6cd56eda75ce"
     }
   ],
   "style": "component_assembly",
@@ -172,12 +180,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/maskills-multi-agent-skills-optimization/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 933115,
-  "sha256": "sha256:be2f2d1e0264d65167f6c4c46edf42c69975a09804599b3702cf6cd56eda75ce",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/maskills-multi-agent-skills-optimization/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 317831,
+  "sha256": "sha256:877038c0d1d9847d9bcb3a7bc45012f2c2beb7cffe8a3a5a14f25dd1e3f20b78",
   "source_hash": "sha256:5d3705b94bc2c0ec8fb0d1cf17716ee5",
   "source_chars": 4672,
   "task_id": "4b1c30514321325dadbfd2827d7ef036",
@@ -199,29 +207,42 @@
     "kicker": "AGENTIC AI // SKILL OPTIMIZATION",
     "title": "OPTIMIZE SKILLS NOT MEMORY",
     "hook": "Why agents need optimized skills instead of more memory",
-    "anchor": "top-left",
-    "light": false,
-    "scrim": 45,
-    "contrast": 4.78,
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 60,
+    "contrast": 5.02,
     "target": 4.5,
-    "clutter": 0.038,
+    "clutter": 0.053,
     "region_rgb": [
-      142,
-      139,
-      132
+      127,
+      124,
+      117
     ],
     "binding_rgb": [
-      138,
       135,
-      128
+      132,
+      125
     ],
     "title_lines": [
       "OPTIMIZE SKILLS",
       "NOT MEMORY"
     ],
-    "subject": 0.007,
-    "ink_subject": 0.002,
-    "spike": 0.023,
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
     "generated_at": "2026-10-08T22:19:30+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 317831,
+    "quality": 88,
+    "sha256": "sha256:877038c0d1d9847d9bcb3a7bc45012f2c2beb7cffe8a3a5a14f25dd1e3f20b78",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

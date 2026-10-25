@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T14:13:47Z",
+  "updated_at": "2026-10-25T14:57:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3368,7 +3368,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-1-acre-mowers-04-acre-trap/"
     },
     {
       "slug": "2026-10-24_your-250-imager-needs-15-degrees",
@@ -3386,7 +3387,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-250-imager-needs-15-degrees/"
     },
     {
       "slug": "2026-10-24_your-heated-mat-costs-50-times-the-blower",
@@ -3404,7 +3406,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-24",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-heated-mat-costs-50-times-the-blower/"
     },
     {
       "slug": "2026-10-24_your-home-servers-45-day-patch-gap",
@@ -3474,6 +3477,27 @@
         "The catch",
         "Verdict",
         "What we did not test",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-25",
+      "public": true,
+      "url": "https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/"
+    },
+    {
+      "slug": "2026-10-25_your-550-battery-spare-is-wrong",
+      "title": "Your $550 Battery Spare Is Wrong",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Verdict",
+        "What we did not test",
+        "Related reading",
         "At a glance"
       ],
       "target_persona": "homeowner_pro",
