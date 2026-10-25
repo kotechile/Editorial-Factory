@@ -126,6 +126,28 @@ def price_number(value: str) -> int | None:
     return int(digits) if digits else None
 
 
+# A listed price and the page that carries it have to be compared in whatever form each was
+# written. The pattern used to guard the price check matched whole dollars only, so a consumer
+# price written with cents ("$49.97") could never be backed by the page that prints it — the
+# gate reported "not backed by any verified evidence row" for a correctly sourced row.
+_MONEY = re.compile(r"\$?\d[\d,]*(?:\.\d{1,2})?")
+
+
+def price_keys(value: str) -> set[int]:
+    """Every numeric form of a price, for matching a listed price against a fetched page.
+
+    `$49.97` and `49.97` both key on 4997; a price ending in .00 also keys on its whole-dollar
+    form, so a page that drops the cents still backs a listed `$49.00`.
+    """
+    digits = price_number(value)
+    if digits is None:
+        return set()
+    keys = {digits}
+    if re.search(r"\.\d{2}\s*$", (value or "").strip()):
+        keys.add(digits // 100)
+    return keys
+
+
 def parse_date(value: str) -> date | None:
     m = re.search(r"(\d{4})-(\d{2})-(\d{2})", value or "")
     if not m:
@@ -243,13 +265,15 @@ def gate(text: str, fetch, no_network: bool = False, today: date | None = None) 
     # gate exists for.
     if verified:
         verified_text = " ".join(f"{r.get('figure','')} {r.get('evidence','')}" for r in verified)
-        verified_nums = {price_number(m) for m in re.findall(r"\$?\d[\d,]{1,}", verified_text)}
+        verified_nums: set[int] = set()
+        for token in _MONEY.findall(verified_text):
+            verified_nums |= price_keys(token)
         for row in products:
-            price = price_number(row["price"])
-            if price and price not in verified_nums:
+            keys = price_keys(row["price"])
+            if keys and not (keys & verified_nums):
                 report["errors"].append(
-                    f"price ${price:,} for {row['product']!r} is not backed by any verified "
-                    f"evidence row — cite the page that shows that price")
+                    f"price ${price_number(row['price']):,} for {row['product']!r} is not backed "
+                    f"by any verified evidence row — cite the page that shows that price")
 
     # --- no hands-on claim --------------------------------------------------------------
     hit = HANDS_ON.search(text)
@@ -384,6 +408,7 @@ def self_test() -> int:
         "https://example.org/mower": "The Luba 2 AWD lists at $1,599 with a 1.5 acre rating.",
         "https://example.net/blower": "Two-stage 56V snow blower MSRP $1,299, 21-inch auger.",
         "https://example.com/bench": "Runtime measured at 62 minutes per 7.5Ah pack; weight 38 lb.",
+        "https://example.org/meter": "The pin meter lists at $34.98 and senses to a 0.38 inch depth.",
     }
 
     def fetch(url):
@@ -446,6 +471,17 @@ def self_test() -> int:
     eg.check_dedup = lambda value: (True, "stubbed for the fixture")
     try:
         case("clean comparison passes", brief(), True)
+        case("a cents price is backed by the page that prints it", brief(
+            products=[
+                ("Luba 2 AWD", "$1,599", "https://example.org/mower", "1.5 acre rating"),
+                ("Pin meter", "$34.98", "https://example.org/meter", "3/8 inch depth"),
+            ],
+            price_rows=[
+                ("1", "Mammotion spec page", "https://example.org/mower", "2026-10-20", "$1,599", ""),
+                ("2", "Meter product page", "https://example.org/meter", "2026-10-20", "$34.98", ""),
+                ("3", "Runtime bench", "https://example.com/bench", "2026-10-20", "62 minutes", ""),
+            ],
+        ), True)
         case("hands-on claim fails", brief(extra="\nWe tested the unit for three weeks.\n"), False,
              "hands-on claim")
         case("comparison with one product fails", brief(products=[
