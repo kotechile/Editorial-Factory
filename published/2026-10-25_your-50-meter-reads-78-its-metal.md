@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-50-meter-reads-78-its-metal/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Why Moisture Meters Lie. A handheld diagnostic meter resting on a cross-section of drywall that reveals a hidden steel corner bead beneath"
-image_caption: "Why Moisture Meters Lie: How hidden metal triggers false readings on dry walls."
+image_alt: "A handheld diagnostic meter resting on a cross-section of drywall that reveals a hidden steel corner bead beneath the painted surface."
+image_caption: "Why Moisture Meters Lie: how hidden metal triggers false readings on dry walls."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -81,15 +81,6 @@ The trap is shared by all three tools. Metal inside the wall easily throws off a
 
 This review draws from four makers' spec sheets, one building expert's field report, and three store price pages. I did not handle the tools for this report and read no physical walls. For the final choice underneath, whether the wall repair or the tool is the better spend this season, the desk's [ownership cost model](/calculators/true-cost-of-ownership/) prices the whole job, and the [home diagnostics hub](/categories/home-diagnostics-tools/) carries the rest of the beat.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Hidden Lien Clock Behind Your Remodel Payments" -> /mechanics-lien-clock-payment-release/ [same site (wellroost.com); topical overlap: behind, hidden] Link "Hidden Lien Clock Behind Your Remodel Payments" in the section where the article touches behind, hidden. -->
-## Related reading
-
-- [Hidden Lien Clock Behind Your Remodel Payments](/mechanics-lien-clock-payment-release/) — more on Tools & Equipment
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -101,6 +92,15 @@ This review draws from four makers' spec sheets, one building expert's field rep
   - **Sensing depth:** 0.75 inches on the pad against 0.38 inches on the pins, which decides exactly what the wave reaches.
   - **Wall backing:** Hidden steel edges, metal studs, and foil backing all distort a pinless reading.
 - **The Catch:** None of the three retail tools carries a true drywall scale, so a high reading is just a sign to look closer, never a hard water level to quote.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Hidden Lien Clock Behind Your Remodel Payments" -> /mechanics-lien-clock-payment-release/ [same site (wellroost.com); topical overlap: behind, hidden] Link "Hidden Lien Clock Behind Your Remodel Payments" in the section where the article touches behind, hidden. -->
+## Related reading
+
+- [Hidden Lien Clock Behind Your Remodel Payments](/mechanics-lien-clock-payment-release/) — more on Tools & Equipment
+<!-- internal-links:end -->
 
 ## Sources
 

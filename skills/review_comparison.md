@@ -179,6 +179,22 @@ from the same sentence ("two 10-Ah batteries") and put the wording in the `Measu
   verdict-block links, and a whole premium sentence (leaving a source uncited), and had flattened a
   conditional ("if both run-time claims describe the same job") into an assertion. A shrink to ~75% of
   the draft is the cue to audit line by line against the verified brief, not just to read the verdict.
+- **A consumer price with cents used to be unprovable, and the error blames the brief.** The price
+  check matched evidence tokens with a whole-dollar pattern that stops at the decimal point, so
+  `$49.97` could never equal anything the page printed and all three rows failed as "not backed by
+  any verified evidence row" while every fetch was clean. `review_gate.price_keys()` is now
+  cents-aware (and accepts the whole-dollar form for a page that drops the cents), pinned by the
+  self-test case "a cents price is backed by the page that prints it". If a row that plainly prints
+  the price still fails, check the gate is the current one before rewriting the brief.
+- **The composed media alt is clipped at a fixed length by the publish pass.** The director's own
+  alt is a complete sentence in the sidecar's `history`, but the string that reaches `image_alt`,
+  the WordPress media item and the row's `metadata` arrives cut mid-phrase ("…hidden steel corner
+  bead beneath"). Read the alt end to end after every push, PATCH the media item, and reconcile the
+  sidecar, the artifact and the row — the truncation is silent on every surface.
+- **A headline that cites a price needs that price in the lead's FIRST paragraph.** `lead_ok` reads
+  only the opening paragraph, so a title reading "$49.97" over a lead that spends its first paragraph
+  on the incident reports `lead_ok: False`, and the pre-publish gate may then re-cut the title. Put
+  the price in paragraph one, or title the piece on the figure the incident itself carries.
 - **`humanize_one.py` timing out on attempt 2.** Its `call_gemini` carries a 240 s socket timeout, which a
   1,000-word rewrite with thinking exceeds; drive the draft from a per-draft script that rebinds the
   module-level `call_gemini` to 900 s (`claude_humanizer.md` §7) instead of re-running the stock script
