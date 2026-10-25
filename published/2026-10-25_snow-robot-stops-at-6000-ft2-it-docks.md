@@ -12,6 +12,12 @@ meta_title: "Snow Robot Stops at 6,000 ft²: It Docks"
 meta_title_source: "derived_from_title"
 meta_description: "The Yarbo Y40 Core with the Snow Blower Module Gen 2 is listed at $5,599 as of 2026-10-25, and the number that decides the purchase sits one line under the…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/snow-robot-stops-at-6000-ft2-it-docks/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Yarbo Y40 Core Economics. A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage"
+image_caption: "Yarbo Y40 Core Economics: The $5,599 snow bot only pays off if it mows your lawn."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

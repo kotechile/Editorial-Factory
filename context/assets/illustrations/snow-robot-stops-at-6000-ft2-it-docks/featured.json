@@ -1,0 +1,122 @@
+{
+  "slug": "snow-robot-stops-at-6000-ft2-it-docks",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage floor.",
+      "caption": "The true cost of the modular platform depends heavily on the additional multi-season attachments required to make the core base unit pay off.",
+      "title": "Modular Yard Robotics Platform Assembly",
+      "bytes": 392453,
+      "sha256": "sha256:f45bb3e1a5204fe80be06538f411109d"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Yarbo Y40 Core Economics. A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage",
+      "caption": "Yarbo Y40 Core Economics: The $5,599 snow bot only pays off if it mows your lawn.",
+      "title": "Yarbo Y40 Core Economics",
+      "bytes": 406113,
+      "sha256": "sha256:59e88eb0e33a428b97196a12ab05b495e533b2aece9b5d7f6e72cec05e166ef2"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular robotic assembly resting on a weathered concrete garage floor. Three recognizable engineered parts arranged in an asymmetrical deconstructed layout: a heavy central robotic base module, an unlatched snow auger bay, and an adjacent lawn mower deck. Hard clean edges, brushed steel and deep pine green matte polymer surfaces. One directional key light from the left throwing long cast shadows, generous negative space, matte muted palette, no text, no molded lettering.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, numbers",
+  "rationale": "The narrative hinges entirely on the modularity of the robotic platform and the financial necessity of swapping attachments on a single base core. A component assembly perfectly deconstructs this physical and economic relationship.",
+  "cue": "modular platform, not a snow blower",
+  "subject": "a modular robotic base unit unlatched from a snow auger module and a mower deck",
+  "core_thesis": "Yarbo prices the Y40 snow setup as a modular platform, where the base unit requires the summer mower module to justify the high entry cost.",
+  "core_conflict": "High entry capital cost versus multi-season modular utility.",
+  "composition": "asymmetrical deconstructed layout",
+  "alt_text": "Yarbo Y40 Core Economics. A modular robotic base unit separated from a snow auger module and a mower deck, arranged on a concrete garage",
+  "caption": "Yarbo Y40 Core Economics: The $5,599 snow bot only pays off if it mows your lawn.",
+  "title": "Yarbo Y40 Core Economics",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/snow-robot-stops-at-6000-ft2-it-docks/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406113,
+  "sha256": "sha256:59e88eb0e33a428b97196a12ab05b495e533b2aece9b5d7f6e72cec05e166ef2",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406113,
+    "quality": 76,
+    "sha256": "sha256:59e88eb0e33a428b97196a12ab05b495e533b2aece9b5d7f6e72cec05e166ef2",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e9824409573061528a28330d7beb232f67bba7a76874c5c290dcfe0473b7fffa",
+  "render_phash": "05bf057f013f00f700df7f6b5b39cf91cb94c9947f130ba901b89073919061f0",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A green and silver robotic base unit sits on a concrete floor next to a detached snow blower module and a detached lawn mower module.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a modular robotic base with snow blower and mower attachments, matching the article's focus on the Yarbo modular platform."
+  },
+  "source_hash": "sha256:b53f9b869c23368134692471245c17e4",
+  "source_chars": 4209,
+  "task_id": "1422929c995e5dc2734e060a35f2b698",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b71c3fb34c255fc0b9210420d10db50b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular robotic assembly resting on a weathered concrete garage floor. Three recognizable engineered parts arranged in an asymmetrical deconstructed layout: a heavy central robotic base module, an unlatched snow auger bay, and an adjacent lawn mower deck. Hard clean edges, brushed steel and deep pine green matte polymer surfaces. One directional key light from the left throwing long cast shadows, generous negative space, matte muted palette, no text, no molded lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-25T14:13:21+00:00",
+  "overlay": {
+    "kicker": "AUTONOMOUS YARD TECH // YARBO Y40",
+    "title": "YARBO Y40 CORE ECONOMICS",
+    "hook": "The $5,599 snow bot only pays off if it mows your lawn",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.85,
+    "target": 4.5,
+    "clutter": 0.135,
+    "region_rgb": [
+      91,
+      92,
+      86
+    ],
+    "binding_rgb": [
+      109,
+      110,
+      104
+    ],
+    "title_lines": [
+      "YARBO Y40 CORE",
+      "ECONOMICS"
+    ],
+    "subject": 0.033,
+    "ink_subject": 0.015,
+    "spike": 0.107,
+    "generated_at": "2026-10-25T14:13:21+00:00"
+  }
+}
