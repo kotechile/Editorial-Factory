@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T14:57:46Z",
+  "updated_at": "2026-10-25T15:17:18Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3483,6 +3483,24 @@
       "date": "2026-10-25",
       "public": true,
       "url": "https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/"
+    },
+    {
+      "slug": "2026-10-25_your-50-meter-reads-78-its-metal",
+      "title": "Why Your $49.97 Meter Reads 78%",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-25",
+      "public": false
     },
     {
       "slug": "2026-10-25_your-550-battery-spare-is-wrong",

@@ -1,0 +1,114 @@
+{
+  "slug": "your-50-meter-reads-78-its-metal",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A handheld diagnostic meter resting on a cross-section of drywall that reveals a hidden steel corner bead beneath the painted surface.",
+      "caption": "Pinless meters penetrate up to three-quarters of an inch, often bouncing signals off hidden steel corner edges rather than reading the drywall itself.",
+      "title": "Moisture Meter Depth Cutaway",
+      "bytes": 374870,
+      "sha256": "sha256:8aeda5f0ef0ee45246a0cf6d5cfe08df"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A clean technical isometric cutaway illustration of a handheld diagnostic meter resting on a section of drywall. The drywall is sectioned to reveal a concealed brushed steel corner bead beneath the painted surface. Arranged in an asymmetrical isometric projection, hero object placed in the lower right quadrant. Flat muted slate grey and bone white palette with one rust accent colour, thin consistent line weight, laid over a weathered concrete workbench surface. Recognisable engineered housing and layered wall material with visible structural depth. One directional light throwing a crisp cast shadow, generous empty margin, no unlabelled text, no bare shapes.",
+  "negative_prompt": "garbled text, random lettering, typography, UI elements, watermarks",
+  "rationale": "A technical isometric cutaway perfectly explains the hidden mechanics of the story, visually separating the surface drywall from the concealed steel edge that causes the false reading.",
+  "cue": "reads a relative index through about three-quarters of an inch",
+  "subject": "a handheld diagnostic meter resting on a cross-section of drywall that reveals a hidden steel corner bead",
+  "core_thesis": "A pinless moisture meter's reading is distorted by its penetration depth, picking up hidden steel backing instead of the drywall's true moisture.",
+  "core_conflict": "Surface material reading versus hidden structural interference.",
+  "composition": "asymmetrical isometric projection, hero object placed in the lower right quadrant",
+  "alt_text": "Why Moisture Meters Lie. A handheld diagnostic meter resting on a cross-section of drywall that reveals a hidden steel corner bead beneath",
+  "caption": "Why Moisture Meters Lie: How hidden metal triggers false readings on dry walls.",
+  "title": "Why Moisture Meters Lie",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-50-meter-reads-78-its-metal/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395187,
+  "sha256": "sha256:63d76da3fc18a0901bed541989f0dae8ddb21c63f4e77bea0118912f8f5f76f2",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395187,
+    "quality": 76,
+    "sha256": "sha256:63d76da3fc18a0901bed541989f0dae8ddb21c63f4e77bea0118912f8f5f76f2",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d2b7d364c3d117490be84ef03ea6197452368ad26cfb9210ef6984b09239c910",
+  "render_phash": "0148009041303211121b0c2eccd6c8e3d971ecda26e4cb3141b380cf935e0f3c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A handheld meter rests on a square section of layered material with a peeled-back top layer revealing a metal strip.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a meter on drywall with a hidden metal edge, matching the article's lead."
+  },
+  "source_hash": "sha256:b27c8956ae09488f35afb15603bb2803",
+  "source_chars": 6829,
+  "task_id": "089fb940ac7d596e72614f643f98aea6",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_7b9ee74e31de422191163a33263a6399.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A clean technical isometric cutaway illustration of a handheld diagnostic meter resting on a section of drywall. The drywall is sectioned to reveal a concealed brushed steel corner bead beneath the painted surface. Arranged in an asymmetrical isometric projection, hero object placed in the lower right quadrant. Flat muted slate grey and bone white palette with one rust accent colour, thin consistent line weight, laid over a weathered concrete workbench surface. Recognisable engineered housing and layered wall material with visible structural depth. One directional light throwing a crisp cast shadow, generous empty margin, no unlabelled text, no bare shapes.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-25T15:17:05+00:00",
+  "overlay": {
+    "kicker": "TOOL TECH // MOISTURE METER FLAWS",
+    "title": "WHY MOISTURE METERS LIE",
+    "hook": "How hidden metal triggers false readings on dry walls",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 5.8,
+    "target": 4.5,
+    "clutter": 0.1,
+    "region_rgb": [
+      184,
+      182,
+      170
+    ],
+    "binding_rgb": [
+      175,
+      173,
+      160
+    ],
+    "title_lines": [
+      "WHY MOISTURE",
+      "METERS LIE"
+    ],
+    "subject": 0.043,
+    "ink_subject": 0.028,
+    "spike": 0.103,
+    "generated_at": "2026-10-25T15:17:05+00:00"
+  }
+}

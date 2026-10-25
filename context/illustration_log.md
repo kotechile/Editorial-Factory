@@ -313,3 +313,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-24 | `your-250-imager-needs-15-degrees` | home_diagnostics_tech | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-250-imager-needs-15-degrees/featured.jpg` |
 | 2026-10-25 | `snow-robot-stops-at-6000-ft2-it-docks` | yard_robotics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/snow-robot-stops-at-6000-ft2-it-docks/featured.jpg` |
 | 2026-10-25 | `your-550-battery-spare-is-wrong` | outdoor_power_equipment | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-550-battery-spare-is-wrong/featured.jpg` |
+| 2026-10-25 | `your-50-meter-reads-78-its-metal` | home_diagnostics_tech | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-50-meter-reads-78-its-metal/featured.jpg` |

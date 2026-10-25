@@ -8,6 +8,12 @@ one_big_thing: "A moisture meter's number is only as good as its scale and its d
 date: 2026-10-25
 slug: your-50-meter-reads-78-its-metal
 price_as_of: "2026-10-25"
+image_path: "context/assets/illustrations/your-50-meter-reads-78-its-metal/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Why Moisture Meters Lie. A handheld diagnostic meter resting on a cross-section of drywall that reveals a hidden steel corner bead beneath"
+image_caption: "Why Moisture Meters Lie: How hidden metal triggers false readings on dry walls."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
