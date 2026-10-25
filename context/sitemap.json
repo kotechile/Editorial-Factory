@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T19:42:37Z",
+  "updated_at": "2026-10-25T14:12:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3460,6 +3460,25 @@
       "date": "2026-10-24",
       "public": true,
       "url": "https://aichieve.net/your-tooling-assist-is-dutiable/"
+    },
+    {
+      "slug": "2026-10-25_snow-robot-stops-at-6000-ft2-it-docks",
+      "title": "Snow Robot Stops at 6,000 ft\u00b2: It Docks",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Verdict",
+        "What we did not test",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-25",
+      "public": false
     }
   ]
 }
