@@ -144,6 +144,21 @@ checks.
   calculator is the bottom.
 - Persist with `python3 scripts/publish.py context/drafts/<slug>_final.md`; the CMS draft, the
   category (`wp_category_id` from `vertical_sites`) and the `vertical` term are part of the push.
+- **A finished persist is not a finished publication: check the header image and the reader page.**
+  `publish.py` completes and pushes the post live even when the illustration director refuses every
+  render ("publishing WITHOUT a header"), so a live review can carry no image at all. Recover by
+  running `scripts/illustration_creator.py <published artifact> --apply`, then attaching it with
+  `scripts/wp_draft.py --slug <slug> --refresh-live` — `publish.py` has no `--refresh-live` flag and a
+  routine re-push deliberately skips a live post.
+- **The reader front is a static build, so media attached after the first push needs a rebuild.** A
+  page built before its featured media existed renders with no hero, and the related-post cards can
+  make it look like another article's image. Push an empty
+  `ci: re-trigger frontend build for <slug>` commit to `kotechile/wellroost` and re-fetch the live URL
+  before reporting — a CMS read-back proves the post, never the page.
+- **Read the alt text end to end; the director's alt has come back cut mid-phrase.** The same string is
+  stored in four places (`context/assets/illustrations/<slug>/featured.json`, the artifact's
+  `image_alt`, the WP media item, and the row's `metadata.illustration.alt_text` /
+  `metadata.wordpress.media_alt`); fix all of them or the CMS and the database disagree.
 - Flip the run-log row in `context/content_calendar.md`.
 
 ## 8. Failure modes seen in this class
