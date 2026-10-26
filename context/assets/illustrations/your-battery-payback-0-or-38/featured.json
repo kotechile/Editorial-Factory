@@ -1,0 +1,120 @@
+{
+  "slug": "your-battery-payback-0-or-38",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A split-screen view of two identical modern home batteries on a garage wall, one actively glowing and the other shadowed in darkness.",
+      "caption": "Identical battery hardware yields vastly different returns depending on the homeowner's retail power contract.",
+      "title": "Home Battery Payback Duality",
+      "bytes": 350898,
+      "sha256": "sha256:4287b2667608e372e5eb781734ab0218"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The Battery Payback Gap. A split-screen view of two identical modern home batteries on a garage wall, one actively glowing and the other",
+      "caption": "The Battery Payback Gap: Why identical batteries yield vastly different returns.",
+      "title": "The Battery Payback Gap",
+      "bytes": 389198,
+      "sha256": "sha256:a7e62039af9465814086c3037a1709df9eccef6e72e3157a108f9f5cbf624bcd"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, split-screen diptych with left-right scenario contrast. Two identical modern wall-mounted home batteries on a concrete garage utility wall. On the left, the battery is illuminated by a warm, active amber status ring under directional soft daylight from the left. On the right, the exact same battery sits dormant and shadowed. 35mm anamorphic wide, crisp atmospheric depth, bone white, graphite, and deep pine green palette, tactile brushed steel and rough concrete materials, no people, no text, no logos.",
+  "negative_prompt": "text, garbled letters, numbers, watermark, logos, people, face, UI",
+  "rationale": "A cinematic still with a split-screen diptych perfectly captures the article's core duality: identical hardware yielding entirely different realities based on invisible contractual lines.",
+  "cue": "The battery and roof match",
+  "subject": "Two identical wall-mounted home batteries on a garage utility wall",
+  "core_thesis": "A home battery's payback is entirely dictated by the retail contract's peak-to-off-peak price gap, not the hardware itself.",
+  "core_conflict": "Hardware capability vs. Retail contract pricing structure",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The Battery Payback Gap. A split-screen view of two identical modern home batteries on a garage wall, one actively glowing and the other",
+  "caption": "The Battery Payback Gap: Why identical batteries yield vastly different returns.",
+  "title": "The Battery Payback Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-battery-payback-0-or-38/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389198,
+  "sha256": "sha256:a7e62039af9465814086c3037a1709df9eccef6e72e3157a108f9f5cbf624bcd",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389198,
+    "quality": 84,
+    "sha256": "sha256:a7e62039af9465814086c3037a1709df9eccef6e72e3157a108f9f5cbf624bcd",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a736b970454b1c4e86a92b991464a63abf5f819e6722a072e0142ba61cf153ca",
+  "render_phash": "fedfff1fff1fff3f7f3fbc0c9c0c0c0c0c0c0c0c0c8c34b81c989d9f559f9d9f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen image showing two identical rectangular devices with circular centers mounted on concrete walls, one illuminated and one dark.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows two home batteries in contrasting states, which aligns with the article's focus on differing battery payback scenarios."
+  },
+  "source_hash": "sha256:2af8377969ef56c60f2180f9b67af080",
+  "source_chars": 6466,
+  "task_id": "c921baceb04bb4a630509ae40b74e727",
+  "credits": 5.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c921baceb04bb4a630509ae40b74e727_1793040054807.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, split-screen diptych with left-right scenario contrast. Two identical modern wall-mounted home batteries on a concrete garage utility wall. On the left, the battery is illuminated by a warm, active amber status ring under directional soft daylight from the left. On the right, the exact same battery sits dormant and shadowed. 35mm anamorphic wide, crisp atmospheric depth, bone white, graphite, and deep pine green palette, tactile brushed steel and rough concrete materials, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T18:41:02+00:00",
+  "overlay": {
+    "kicker": "RETAIL POWER // BATTERY ECONOMICS",
+    "title": "THE BATTERY PAYBACK GAP",
+    "hook": "Why identical batteries yield vastly different returns",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.23,
+    "target": 4.5,
+    "clutter": 0.119,
+    "region_rgb": [
+      46,
+      50,
+      54
+    ],
+    "binding_rgb": [
+      65,
+      70,
+      74
+    ],
+    "title_lines": [
+      "THE BATTERY",
+      "PAYBACK GAP"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.005,
+    "spike": 0.024,
+    "generated_at": "2026-10-26T18:41:02+00:00"
+  }
+}

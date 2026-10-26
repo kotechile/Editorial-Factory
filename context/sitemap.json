@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T18:21:07Z",
+  "updated_at": "2026-10-26T18:43:07Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3615,6 +3615,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-10-26",
+      "public": false
+    },
+    {
+      "slug": "2026-10-26_your-battery-payback-0-or-38",
+      "title": "Your Battery's Payback Gap: 0\u00a2 to 38.1\u00a2",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-26",
       "public": false
     },
