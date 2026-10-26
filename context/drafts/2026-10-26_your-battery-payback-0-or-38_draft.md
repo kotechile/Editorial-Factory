@@ -49,7 +49,7 @@ My read: the useful question is no longer which battery. It is which bill. Every
 
 ## The catch
 
-A battery is two products on one invoice. The first is the spread trade, and its value is the gap. The second is backup power, and none of these numbers measure it. A household that loses the grid twice a winter may be entirely rational to buy a battery that never pays back on the spread alone. That is the honest counterargument to everything above, and it is why this piece prices only the first product: that is the one the payback line claims to measure.
+A battery is two products on one invoice. The first is the spread trade, and its value is the gap. The second is backup power, and none of these numbers measure it. My read: a household that loses the grid twice a winter may be entirely rational to buy a battery that never pays back on the spread alone. That is the honest counterargument to everything above, and it is why this piece prices only the first product: that is the one the payback line claims to measure.
 
 The figures are narrower than they look. Two utilities and four plans are not a national survey; they are the schedules I could fetch and read in full. The battery here is a 5 kWh unit, and a larger one earns more per cycle without changing the threshold per dollar.
 

@@ -11,6 +11,12 @@ meta_title: "Your Tank's Class Costs $55"
 meta_title_source: "derived_from_title"
 meta_description: "Your tank's class sets the bill more than its fuel does. A 50-gallon gas water heater sold today can meet its federal energy floor at a score of 0.56, and…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/you-are-pricing-the-fuel-not-the-tank/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "Three residential water heaters — two storage tanks and a taller heat pump unit — standing in a dim garage, lit by amber status lights."
+image_caption: "Three water heaters at three efficiency classes: what the federal floor says each one costs to run."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

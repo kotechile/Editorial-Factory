@@ -1,0 +1,112 @@
+{
+  "slug": "you-are-pricing-the-fuel-not-the-tank",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three water heater tanks standing in a dark residential garage lit by status lights.",
+      "caption": "Federal efficiency floors dictate a water heater's operational cost far more than the raw price of its fuel.",
+      "title": "Water Heater Efficiency Classes",
+      "bytes": 261247,
+      "sha256": "sha256:a8e57953f3e405dbaa5c6db543012270"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph of a modern utility corner in a residential garage at blue hour. Three distinct residential water heater tanks stand side-by-side on a concrete floor: a gas tank with venting, a standard electric cylinder, and a taller heat pump unit with a top condenser. Deep blue ambient light filtering through a frosted garage window, contrasting with warm amber LED status rings on the units. Low-angle wide shot with heavy editorial negative space on the left. Slate grey, bone white, and ochre palette. Brushed steel and painted metal textures. 35mm lens, long-exposure calm, crisp clean geometry.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements, people, faces",
+  "rationale": "The article contrasts the operational costs of three different residential water heating systems running in the background. 'Architectural night' captures the quiet, continuous background operation of home infrastructure at dusk, emphasizing the 'always-on' nature of water heating in a real-world residential setting.",
+  "cue": "class sets the bill",
+  "subject": "three distinct utility water heaters in a garage",
+  "core_thesis": "A water heater's operating cost is determined by its required federal efficiency class, not just the fuel it uses, with significant price differences across classes.",
+  "core_conflict": "The tension between the physical efficiency physics (gas vs heat pump vs standard electric) and the hidden regulatory floor driving lifecycle costs.",
+  "composition": "low-angle wide shot with heavy editorial negative space",
+  "alt_text": "Three residential water heaters \u2014 two storage tanks and a taller heat pump unit \u2014 standing in a dim garage, lit by amber status lights.",
+  "caption": "Three water heaters at three efficiency classes: what the federal floor says each one costs to run.",
+  "title": "The Cost Of Your Tank'S Class",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/you-are-pricing-the-fuel-not-the-tank/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 310245,
+  "sha256": "sha256:89264a43114958cc665c30e4b6cff78c80852b297021db89104454612d73e133",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 310245,
+    "quality": 88,
+    "sha256": "sha256:89264a43114958cc665c30e4b6cff78c80852b297021db89104454612d73e133",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3323b69577eea52b4be661fa965513176bb9751889a91f93c2de984b12ab8eec",
+  "render_phash": "3483780b7c2b3cb73cbd18b718b7185718573a573a57025701f700ff00ff00ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Three water heaters of different designs stand in a dimly lit room with a large window.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows three distinct water heaters, which aligns with the article's discussion of different types of water heaters."
+  },
+  "source_hash": "sha256:814415110236ebff83222f6e19bd5210",
+  "source_chars": 5301,
+  "task_id": "e392d0fd99c54345923ff5c7e27ec304",
+  "credits": 5.0,
+  "cost_ms": 47,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e392d0fd99c54345923ff5c7e27ec304_1793042347163.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph of a modern utility corner in a residential garage at blue hour. Three distinct residential water heater tanks stand side-by-side on a concrete floor: a gas tank with venting, a standard electric cylinder, and a taller heat pump unit with a top condenser. Deep blue ambient light filtering through a frosted garage window, contrasting with warm amber LED status rings on the units. Low-angle wide shot with heavy editorial negative space on the left. Slate grey, bone white, and ochre palette. Brushed steel and painted metal textures. 35mm lens, long-exposure calm, crisp clean geometry.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T19:19:18+00:00",
+  "overlay": {
+    "kicker": "HOME ENERGY // WATER HEATERS",
+    "title": "THE COST OF YOUR TANK'S CLASS",
+    "hook": "Federal rules set your hot water bill more than fuel does",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.78,
+    "target": 4.5,
+    "clutter": 0.162,
+    "region_rgb": [
+      57,
+      60,
+      72
+    ],
+    "binding_rgb": [
+      81,
+      81,
+      89
+    ],
+    "title_lines": [
+      "THE COST OF YOUR",
+      "TANK'S CLASS"
+    ],
+    "subject": 0.1,
+    "ink_subject": 0.047,
+    "spike": 0.311,
+    "generated_at": "2026-10-26T19:19:18+00:00"
+  }
+}
