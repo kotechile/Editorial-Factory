@@ -325,3 +325,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-26 | `your-tool-boundary-costs-3-engineers` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-tool-boundary-costs-3-engineers/featured.jpg` |
 | 2026-10-26 | `your-ai-fine-is-3-percent` | enterprise_ai_governance | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ai-fine-is-3-percent/featured.jpg` |
 | 2026-10-26 | `your-battery-payback-0-or-38` | home_equity_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-battery-payback-0-or-38/featured.jpg` |
+| 2026-10-26 | `your-battery-payback-0-or-38` | home_equity_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-battery-payback-0-or-38/featured.jpg` |

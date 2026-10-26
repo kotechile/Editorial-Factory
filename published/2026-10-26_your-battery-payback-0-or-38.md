@@ -10,8 +10,8 @@ evergreen: true
 image_path: "context/assets/illustrations/your-battery-payback-0-or-38/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Battery Payback Gap. A split-screen view of two identical modern home batteries on a garage wall, one actively glowing and the other"
-image_caption: "The Battery Payback Gap: Why identical batteries yield vastly different returns."
+image_alt: "The Battery Payback Gap. A modern wall-mounted home battery glowing softly in a dimly lit residential garage."
+image_caption: "The Battery Payback Gap: How retail contracts dictate battery returns."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 meta_title: "Your Battery's Payback Gap: 0¢ to 38.1¢"
 meta_title_source: "derived_from_title"
@@ -20,9 +20,11 @@ meta_description_source: "derived_from_lead"
 ---
 
 <!-- lead -->
-Two homes on the exact same street face a battery payback gap of 38.1¢ per unit of power because of how their bills are built. San Diego Gas & Electric (SDG&E) prints both prices on a single page for its home storage plan [1]. A household buying power right from the utility pays 34.5¢ in super off-peak hours and 72.6¢ during the evening rush [1]. 
+Two homes on the exact same street face a battery payback gap of 38.1¢ per unit of power because of how their bills are built. San Diego Gas & Electric (SDG&E) prints both prices on a single page for its home storage plan [1]. 
 
-A neighbor using a community choice aggregator (CCA) pays just 25.6¢ across all three periods for delivery [1]. The gap between their cheapest and most costly hour is exactly 0¢. The battery and roof match, but the price gap the homeowner buys does not.
+A household buying power right from the utility pays 34.5¢ in super off-peak hours and 72.6¢ during the evening rush [1]. A neighbor using a community choice aggregator (CCA) pays just 25.6¢ across all three periods for delivery [1]. The gap between their cheapest and most costly hour is exactly 0¢. 
+
+The battery and roof match, but the price gap the homeowner buys does not.
 
 <!-- tension -->
 
@@ -30,35 +32,36 @@ A neighbor using a community choice aggregator (CCA) pays just 25.6¢ across all
 
 A battery does not earn a flat rate. It earns the gap between two hours, and whoever writes the bill sets that gap. In most of the country, one company sells both the power and the wires, so it prices the two hours far apart on purpose. 
 
-When an aggregator supplies the power, the utility sells only the wires, and wire costs barely move from one hour to the next. The gap a battery harvests changes sharply based on the specific rate schedule [1].
+When an aggregator supplies the power, the utility sells only the wires, and wire costs barely move from one hour to the next. Look at the second San Diego plan, which covers two periods. 
 
-| Plan Type | Off-Peak Price | On-Peak Price | Usable Gap |
-| :--- | :--- | :--- | :--- |
-| Bundled two-period | 31.0¢ | 58.9¢ | 27.9¢ |
-| CCA two-period | 22.3¢ | 23.0¢ | 0.7¢ |
-| Electric vehicle delivery | 4.7¢ | 31.8¢ | 27.1¢ |
+A delivery-only customer sees 22.3¢ off-peak against 23.0¢ on-peak, which is a tiny 0.7¢ gap [1]. The bundled version of that exact same plan charges 31.0¢ against 58.9¢, opening a 27.9¢ spread [1]. One plan yields two contracts, and the spread is forty times wider on one side of the page.
 
-One plan yields two contracts, and the spread is forty times wider on one side of the page. The rule is not the same everywhere, which is why buyers must read the real schedule instead of a sales flyer. 
+The rule is not the same everywhere, which is why buyers must read the real schedule instead of a sales flyer. On the electric car plan, super off-peak delivery drops to 4.7¢ while on-peak stays at 31.8¢, giving even a delivery-only home 27.1¢ of room [1]. That setup survives the split between power and wires. 
 
-National averages hide this truth entirely. A payback model built on an average describes a fake house. Seasons matter just as much as the map, because the gap a battery harvests can fall by half outside of the summer peak. 
+What does not survive the split is a schedule built on a flat wires charge. National averages hide this truth entirely. The U.S. Energy Information Administration (EIA) puts the 2025 average home price at 17.30¢ per unit, but state averages swing from 35.72¢ in Hawaii to 8.20¢ in North Dakota [3]. 
+
+A payback model built on an average describes a house that does not exist. Seasons matter just as much as the map. Consolidated Edison (Con Edison) charges $0.2786 from 8 a.m. to midnight between June and September, against $0.0522 off-peak [2]. 
+
+In the other eight months, the peak price drops to $0.1711, so the gap a battery harvests falls from 22.64¢ to 11.89¢ [2]. The same hardware earns about half as much for two-thirds of the year. 
 
 My read: the useful question is no longer which battery you buy, but which bill you pay. Every payback line in a quote is a bet on a schedule the salesperson has usually never seen.
 
 ## By the numbers
 
-- **22.64¢ — Con Edison summer gap:** Consolidated Edison (Con Edison) sets a $0.2786 peak price against $0.0522 off-peak, narrowing the gap to 11.89¢ outside June through September [2].
-- **17.30¢ — National average price:** the U.S. Energy Information Administration (EIA) puts the 2025 average home price here, but state averages swing wildly from 35.72¢ in Hawaii to 8.20¢ in North Dakota [3].
+- **38.1¢ — Bundled on-peak gap:** the storage plan prices 34.5¢ in super off-peak hours and 72.6¢ on-peak for a customer who buys power from the utility [1].
+- **0¢ — Delivery-only gap:** the exact same plan charges a CCA customer who buys delivery only 25.6¢ across every period [1].
+- **22.64¢ — Con Edison summer gap:** the $0.2786 peak price sits against $0.0522 off-peak, narrowing to 11.89¢ outside June through September [2].
 - **6.09¢ — Payback threshold:** with 5.0 kilowatt-hours (kWh) of usable storage at 90% round-trip efficiency, each cent of gap is worth $16.43 a year, meaning $1,000 of installed cost needs 6.09¢ to break even inside ten years [4].
 
 <!-- tactical-insight -->
 
 ## What I'd watch:
 
-- **The dual prices:** Both utilities print rates by period, and finding the true value takes one simple math step. At a near-zero gap, a standard home battery cycling daily collects just $11.50 a year before any loss [1][4].
-- **The supply line:** San Diego notes plainly that a CCA customer must also pay for power generation at prices set by the aggregator [1]. The utility prints half the gap, while the other half requires pulling a second schedule entirely.
-- **The peak window:** Con Edison runs its peak pricing 16 hours a day in summer [2]. A small battery can only shift the load it covers inside that window, making one cycle a day a guess rather than a promise.
+- **The dual prices:** Both utilities print rates by period, and finding the true value takes one simple math step. At a 0.7¢ gap, a 5 kWh battery cycling daily collects just $11.50 a year before any loss [1][4].
+- **The supply line:** San Diego notes plainly that a CCA customer must also pay for electric generation at prices set by the aggregator [1]. The utility prints half the gap, while the other half requires pulling a second schedule entirely.
+- **The peak window:** Con Edison runs its peak pricing sixteen hours a day in summer [2]. A small battery can only shift the load it covers inside that window, making one cycle a day a guess rather than a promise.
 - **The fixed charges:** Con Edison adds a $21.00 monthly customer charge on top of prices that leave out extra fees [2]. San Diego leaves out a base services charge that began in October 2025 [1].
-- **The loss term:** Enphase lists round-trip limits for its hardware [4]. A tenth of the harvested gap is lost moving power in and out of the cells, keeping the true threshold higher than the math suggests.
+- **The loss term:** Enphase lists 90% round-trip efficiency for its 5 kWh home battery [4]. A tenth of the harvested gap is lost moving power in and out of the cells, keeping the true threshold above 5.5¢.
 
 <!-- nuanced-takeaway -->
 
@@ -66,11 +69,11 @@ My read: the useful question is no longer which battery you buy, but which bill 
 
 A battery acts as two products sold on a single bill. The first is the spread trade, and its value is the gap. The second is backup power, and none of these numbers measure that safety. 
 
-A household losing the grid twice a winter may wisely buy a battery that never pays back on the spread alone. That is the honest counter to everything above, and it explains why this piece prices only the first product. The spread is the only product the payback line claims to measure.
+My read: a household losing the grid twice a winter may wisely buy a battery that never pays back on the spread alone. That is the honest counter to everything above, and it explains why this piece prices only the first product. The spread is the only product the payback line claims to measure.
 
-The numbers are narrower than they look. Two utilities and four plans are not a national survey, but simply the schedules I could pull and read in full. A larger battery earns more per cycle without changing the payback threshold per dollar. 
+The numbers are narrower than they look. Two utilities and four plans are not a national survey; they are simply the schedules I could pull and read in full. The battery here is a 5 kWh unit, and a larger one earns more per cycle without changing the threshold per dollar. 
 
-Rates move constantly, too. San Diego changed its rates in August 2026, and Con Edison splits summer from the other eight months [1][2]. A reader in two years will find different cents in the same columns and the same math to do.
+Rates move constantly, too. San Diego updated its numbers in August 2026, and Con Edison splits summer from the other eight months [1][2]. A reader in two years will find different cents in the same columns and the same math to do.
 
 What does not move is the core structure. Wherever an aggregator supplies the power, it arrives on two bills, and a flat wires charge leaves almost nothing to harvest. Before signing a contract built on a generic guess, pull your own utility schedule and [compare it with the same battery across five states](/battery-payback-five-state-gap/).
 
@@ -98,7 +101,6 @@ What does not move is the core structure. Wherever an aggregator supplies the po
   - **The supply line:** the aggregator's separate schedule that provides the missing half of the gap when the utility table covers delivery only.
   - **The season:** the shift in rates between summer and winter months, setting the true yearly figure that repays capital.
 - **The Catch:** The spread trade is only one of the two things a battery sells, and backup power has real value that no gap measures.
-
 
 ## Sources
 
