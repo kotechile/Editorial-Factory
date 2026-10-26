@@ -1,0 +1,117 @@
+{
+  "slug": "your-tool-boundary-costs-3-engineers",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical assembly unlatching into separate components on a brushed steel surface.",
+      "caption": "A service boundary introduces maintenance overhead that must be justified by independent scaling needs.",
+      "title": "Service Boundary Component Assembly",
+      "bytes": 258354,
+      "sha256": "sha256:791ab1ca0320629a8c330fcd279820f6"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a modular mechanical server bay assembly unlatching into separate components on a brushed steel workbench in a clean control room, one directional key light throwing a long cast shadow from the left, extreme asymmetry with negative space, matte muted palette of slate grey, bone white, and cobalt, hard clean edges, recognisable engineered parts including a latch, a rack rail, and an inspection gate, no lettering",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, lettering, logos",
+  "rationale": "Component assembly perfectly captures the structural, architectural nature of defining service boundaries. The modular pieces represent the microservices, and their physical connection illustrates the wiring and maintenance overhead discussed in the article.",
+  "cue": "A service boundary is a purchase",
+  "subject": "a modular mechanical server bay unlatching into separate components",
+  "core_thesis": "A service boundary must buy an independent scaling profile or change cadence to justify the engineering overhead it creates.",
+  "core_conflict": "Microservice isolation overhead vs monolithic efficiency.",
+  "composition": "extreme asymmetry with negative space",
+  "alt_text": "The Tool Boundary Tax. A modular mechanical assembly unlatching into separate components on a brushed steel surface.",
+  "caption": "The Tool Boundary Tax: Unearned service boundaries drain engineering time.",
+  "title": "The Tool Boundary Tax",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-tool-boundary-costs-3-engineers/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 303330,
+  "sha256": "sha256:fb5c3e2c6c105fffca4f1608adabef2cdb7a14e244ec0a02cb422740eb89a333",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 303330,
+    "quality": 88,
+    "sha256": "sha256:fb5c3e2c6c105fffca4f1608adabef2cdb7a14e244ec0a02cb422740eb89a333",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:700e8d924f2da2d8f1f686c67844e7bd95ac6cd25e7d0cac8282cf667079b4d8",
+  "render_phash": "df09ff1bff1bff03ff10ff07df011f0079a0f338c79fe48f7ce701bfc1fff87f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A disassembled mechanical server chassis or rack component rests on a metal table in a room with control panels.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows modular server components, which aligns with the article's focus on service boundaries and microservices architecture."
+  },
+  "source_hash": "sha256:1824fc8e86586d732f01bfb32fe3084d",
+  "source_chars": 5300,
+  "task_id": "c30122409cb5c0c50fdb5ea86d2255fe",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_aac3ba5d5e6e31811f416e7cff46ed01.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a modular mechanical server bay assembly unlatching into separate components on a brushed steel workbench in a clean control room, one directional key light throwing a long cast shadow from the left, extreme asymmetry with negative space, matte muted palette of slate grey, bone white, and cobalt, hard clean edges, recognisable engineered parts including a latch, a rack rail, and an inspection gate, no lettering\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-26T17:51:30+00:00",
+  "overlay": {
+    "kicker": "AGENT RUNTIMES // TOOL BOUNDARIES",
+    "title": "THE TOOL BOUNDARY TAX",
+    "hook": "Unearned service boundaries drain engineering time",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.37,
+    "target": 4.5,
+    "clutter": 0.096,
+    "region_rgb": [
+      73,
+      83,
+      85
+    ],
+    "binding_rgb": [
+      87,
+      99,
+      99
+    ],
+    "title_lines": [
+      "THE TOOL",
+      "BOUNDARY TAX"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-26T17:51:30+00:00"
+  }
+}

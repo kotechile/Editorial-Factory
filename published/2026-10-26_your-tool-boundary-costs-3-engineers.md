@@ -11,6 +11,12 @@ meta_title: "Your Tool Boundary Costs 3 Engineers"
 meta_title_source: "derived_from_title"
 meta_description: "Segment spent 3 full-time engineers keeping its service estate alive, then folded more than 140 services into one and shipped 46 shared-library improvements…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-tool-boundary-costs-3-engineers/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "The Tool Boundary Tax. A modular mechanical assembly unlatching into separate components on a brushed steel surface."
+image_caption: "The Tool Boundary Tax: Unearned service boundaries drain engineering time."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

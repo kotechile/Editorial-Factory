@@ -322,3 +322,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-26 | `your-repair-budget-buys-7-5-percent-less` | home_infrastructure_lifecycle_tco | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-repair-budget-buys-7-5-percent-less/featured.jpg` |
 | 2026-10-26 | `your-49-cut-was-actually-9` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-49-cut-was-actually-9/featured.jpg` |
 | 2026-10-26 | `33-of-your-shrink-isnt-theft` | sales_order_service_level_otif | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/33-of-your-shrink-isnt-theft/featured.jpg` |
+| 2026-10-26 | `your-tool-boundary-costs-3-engineers` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-tool-boundary-costs-3-engineers/featured.jpg` |
