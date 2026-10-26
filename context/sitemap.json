@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T15:18:19Z",
+  "updated_at": "2026-10-26T10:46:08Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3520,6 +3520,24 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-25",
+      "public": false
+    },
+    {
+      "slug": "2026-10-26_your-agent-contract-gap-63-unmet",
+      "title": "Your Agent's Contract Gap: 63% Unmet",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-26",
       "public": false
     }
   ]

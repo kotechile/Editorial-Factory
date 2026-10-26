@@ -1,0 +1,133 @@
+{
+  "slug": "your-agent-contract-gap-63-unmet",
+  "revision": 4,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A small mechanical assembly with a solid perimeter and an unlatched internal gate resting on a steel desk.",
+      "caption": "Agents often operate within secure sandboxes while lacking the internal checks required to validate their outputs.",
+      "title": "Agent Contract Gap Boundary Assembly",
+      "bytes": 282431,
+      "sha256": "sha256:442701be7b49f292af711d4c178e300c"
+    },
+    {
+      "revision": 2,
+      "style": "clay_render",
+      "model": "nano-banana-pro",
+      "prompt": "Matte clay 3D render of a modular mechanical assembly resting on a brushed steel desk in a control room. The assembly consists of a thick, solid slate grey perimeter housing enclosing a weathered orange internal inspection gate that is visibly unlatched and left open. Extreme asymmetry, off-centre on the right third, generous negative space on the left. Bone white and slate grey matte surfaces with moulding seams and contact shadows. One directional key light from the left throwing long cast shadows across the textured steel surface. No bare shapes, no text, no molded lettering.",
+      "task_id": "c4154be65d59fba90d4fad04672be536",
+      "sha256": "sha256:906627161ee1a47009d73f55ac08902c77aa1cb8f16d6ddb9da8a02e286d8cc8",
+      "generated_at": "2026-10-26T10:43:45+00:00",
+      "source_hash": "sha256:d68d310cd759ea688af6a2dc3f1c663b",
+      "render_sha256": "sha256:b36dd6c2f49c5e350c667fb036a92a999b0b218cff9879159900aecaeac9cbd9"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Modular containment block with an unlatched inspection gate resting on a metal workbench.",
+      "caption": "The call-site boundary represents a critical failure point even inside a secure sandbox.",
+      "title": "Agentic AI Contract Gap",
+      "bytes": 293847,
+      "sha256": "sha256:6e878f4c2bfbab0b19844d5aa898d532"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a modular containment block featuring a tightly sealed housing alongside an unlatched, open inspection gate. Clean physical arrangement, asymmetric off-centre placement with generous negative space. Matte surfaces with molding seams and contact shadows, resting on a brushed steel workbench in a server room. One directional key light raking across the components, throwing a long cast shadow. Muted palette of slate grey, cobalt, and oxidised red. No bare geometry.",
+  "negative_prompt": "garbled text, random lettering, watermarks, text, numbers, ui, logos",
+  "rationale": "The concept of two different boundaries\u2014one secure, one leaking\u2014is structurally abstract. A matte clay 3D render of a modular block with an open inspection gate physicalizes this software vulnerability.",
+  "cue": "This contract gap sits inside the sandbox",
+  "subject": "A modular containment block with an unlatched inspection gate",
+  "core_thesis": "A sandbox restricts reach, but the call-site boundary fails to enforce rules on model replies, causing a massive trust leak.",
+  "core_conflict": "Perimeter containment versus internal execution validation.",
+  "composition": "asymmetric off-centre placement",
+  "alt_text": "The Agent Contract Gap. Modular containment block with an unlatched inspection gate resting on a metal workbench.",
+  "caption": "The Agent Contract Gap: Why sandboxes miss trust leaks at the call site.",
+  "title": "The Agent Contract Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-agent-contract-gap-63-unmet/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 335223,
+  "sha256": "sha256:27b0ecfeda34b55ab5716025cff0f877532c5845884a06b68513ddfa42169ecb",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 335223,
+    "quality": 88,
+    "sha256": "sha256:27b0ecfeda34b55ab5716025cff0f877532c5845884a06b68513ddfa42169ecb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e26377eb979dcf2aded62ca83b81e4eb3040e50370f77aab10c811efd39f6526",
+  "render_phash": "daccdacc5acc58604066c3d013813990338119d07350f870d06085111137912f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two small, box-like containers sit on a metal surface, one closed and one with its door open revealing a ribbed interior.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The open container metaphorically represents the 'contract gap' and 'unlatched inspection gate' mentioned in the prompt."
+  },
+  "source_hash": "sha256:0bde45ee900e1c2d74e294c9688b1e7c",
+  "source_chars": 5370,
+  "task_id": "f60376eff5ea4cf3c96cea7dd3f94f1f",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1d610c99049077c41156580defd7749e.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a modular containment block featuring a tightly sealed housing alongside an unlatched, open inspection gate. Clean physical arrangement, asymmetric off-centre placement with generous negative space. Matte surfaces with molding seams and contact shadows, resting on a brushed steel workbench in a server room. One directional key light raking across the components, throwing a long cast shadow. Muted palette of slate grey, cobalt, and oxidised red. No bare geometry.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-26T10:45:55+00:00",
+  "overlay": {
+    "kicker": "AGENT SECURITY // CONTRACT GAPS",
+    "title": "THE AGENT CONTRACT GAP",
+    "hook": "Why sandboxes miss trust leaks at the call site",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.74,
+    "target": 4.5,
+    "clutter": 0.233,
+    "region_rgb": [
+      85,
+      97,
+      107
+    ],
+    "binding_rgb": [
+      117,
+      129,
+      143
+    ],
+    "title_lines": [
+      "THE AGENT",
+      "CONTRACT GAP"
+    ],
+    "subject": 0.072,
+    "ink_subject": 0.038,
+    "spike": 0.208,
+    "generated_at": "2026-10-26T10:45:55+00:00"
+  }
+}
