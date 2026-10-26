@@ -314,6 +314,8 @@ image on the next sweep instead of never.
   is missing from this host — it pushes the draft without the image and says so, rather than
   silently shipping a headerless post.
 
+**A validator that requires more than the director's own example asks for refuses every brief, and no retry fixes it (learned 2026-10-26).** Six refusals across two runs (three in the persistence pass, three pinned to a style) read as three different prompt-shape complaints — "no framing rule", "names no place in the site's world", "does not say which way the light comes from" — but they were one defect: `validate_brief` requires the **`prompt` string** to carry a place from the site's world, a light direction, two or three palette colours, the material and the framing rule, while the JSON example in `director_prompt` asked the `prompt` field only for optic/light/material "in the model's family idiom" (framing lived in the separate `composition` key). Sampling temperature cannot satisfy a contradiction between the example and the check. Before spending a second retry on a prompt-shape refusal, read the failing patterns in `validate_brief` against the example block in `director_prompt`: when the example under-specifies, patch the example (all five requirements named in the one string) and the next attempt commissions. Recovery order for a post already live with `featured_media: 0` is unchanged — `illustration_creator.py <artifact> --apply --style <pinned> --model <pinned>`, read the pixels with vision, then `wp_draft.py --slug <slug> --reimage`.
+
 ## 7. Self-healing
 When a generated header fails a rule that is not yet pinned by `scripts/test_illustration_creator.py`
 (a new class of unusable prompt, a new metadata defect), add the rule to `validate_brief` and the
