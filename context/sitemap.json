@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:23:35Z",
+  "updated_at": "2026-10-26T11:40:39Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3555,6 +3555,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-26",
+      "public": false
+    },
+    {
+      "slug": "2026-10-26_your-next-bedroom-417500",
+      "title": "Your Next Bedroom Costs $417,500",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-26",
       "public": false
     }

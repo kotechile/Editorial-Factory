@@ -1,0 +1,112 @@
+{
+  "slug": "your-next-bedroom-417500",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A freshly framed residential accessory dwelling unit glows warmly from a work light at dusk behind a darkened main house.",
+      "caption": "With the existing housing market frozen by high rates, adding an accessory dwelling unit is becoming the most viable path to a new bedroom.",
+      "title": "ADU Construction at Dusk",
+      "bytes": 388583,
+      "sha256": "sha256:003dbe7aea95241b3186d177c1eeec4f"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph at blue hour. A newly framed timber accessory dwelling unit (ADU) stands in a residential backyard, glowing from a single warm amber workman's site lamp inside the unfinished drywall. In the foreground, the dark stucco wall and asphalt shingle roofline of the established main house sit in deep shadow. Slate gray and deep pine green ambient twilight contrasts with the bone white and rust tones of the raw construction. 35mm anamorphic wide lens, long-exposure calm, deep shadows, crisp crystalline air. No people, no text, no vehicles.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, faces, messy construction debris, UI overlays",
+  "rationale": "The architectural_night treatment perfectly captures the physical reality of residential capacity expansion. The illuminated, unfinished ADU at blue hour emphasizes the 'build' side of the conflict while the darkened main house represents the stuck, existing market.",
+  "cue": "your next bedroom costs $417,500",
+  "subject": "newly framed accessory dwelling unit illuminated at dusk",
+  "core_thesis": "The high cost and frozen market for buying a larger home make building an accessory dwelling unit (ADU) the most viable financial choice for a family needing an extra bedroom.",
+  "core_conflict": "Frozen, expensive buy-side housing market vs. newly financeable, legally permitted build-side ADU additions",
+  "composition": "extreme asymmetry with glowing hero object off-center",
+  "alt_text": "Building Your Next Bedroom. A freshly framed residential accessory dwelling unit glows warmly from a work light at dusk behind a darkened",
+  "caption": "Building Your Next Bedroom: Why building an ADU beats buying in a frozen market.",
+  "title": "Building Your Next Bedroom",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-next-bedroom-417500/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406725,
+  "sha256": "sha256:ab65ad52a049a170d820327a8300f3337ce7e42ee762c1155cfae52ae024ca68",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406725,
+    "quality": 84,
+    "sha256": "sha256:ab65ad52a049a170d820327a8300f3337ce7e42ee762c1155cfae52ae024ca68",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:1b221527124c982f351b388b5f708f961a222fa55bffe36871a88c0b49236361",
+  "render_phash": "04db6cdecceeabdc837464cd23cf00efa06fe367236f217f01ff116f8b6d03c4",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A partially constructed wooden frame building sits next to a finished house at dusk, with interior lights illuminating the framing.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows an accessory dwelling unit under construction, which matches the article's focus on building ADUs."
+  },
+  "source_hash": "sha256:f5f846e3fbe2f030ec5003fe02afe95c",
+  "source_chars": 5994,
+  "task_id": "0cb6924e36277c5ef25e904f70b7b3b3",
+  "credits": 5.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0cb6924e36277c5ef25e904f70b7b3b3_1793014812168.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph at blue hour. A newly framed timber accessory dwelling unit (ADU) stands in a residential backyard, glowing from a single warm amber workman's site lamp inside the unfinished drywall. In the foreground, the dark stucco wall and asphalt shingle roofline of the established main house sit in deep shadow. Slate gray and deep pine green ambient twilight contrasts with the bone white and rust tones of the raw construction. 35mm anamorphic wide lens, long-exposure calm, deep shadows, crisp crystalline air. No people, no text, no vehicles.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T11:40:21+00:00",
+  "overlay": {
+    "kicker": "HOUSING ECONOMICS // ADU BUILDING",
+    "title": "BUILDING YOUR NEXT BEDROOM",
+    "hook": "Why building an ADU beats buying in a frozen market",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.99,
+    "target": 4.5,
+    "clutter": 0.131,
+    "region_rgb": [
+      17,
+      16,
+      18
+    ],
+    "binding_rgb": [
+      25,
+      26,
+      30
+    ],
+    "title_lines": [
+      "BUILDING YOUR",
+      "NEXT BEDROOM"
+    ],
+    "subject": 0.118,
+    "ink_subject": 0.055,
+    "spike": 0.367,
+    "generated_at": "2026-10-26T11:40:21+00:00"
+  }
+}

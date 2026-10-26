@@ -318,3 +318,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-26 | `your-agent-contract-gap-63-unmet` | agentic_ai | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-agent-contract-gap-63-unmet/featured.jpg` |
 | 2026-10-26 | `agent-identity-missed-the-real-breach` | enterprise_ai_governance | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/agent-identity-missed-the-real-breach/featured.jpg` |
 | 2026-10-26 | `agent-identity-missed-the-real-breach` | enterprise_ai_governance | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-identity-missed-the-real-breach/featured.jpg` |
+| 2026-10-26 | `your-next-bedroom-417500` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-next-bedroom-417500/featured.jpg` |
