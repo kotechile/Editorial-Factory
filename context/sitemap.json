@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T19:43:47Z",
+  "updated_at": "2026-10-26T20:09:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3616,6 +3616,24 @@
       "date": "2026-10-26",
       "public": true,
       "url": "https://aichieve.net/your-49-cut-was-actually-9/"
+    },
+    {
+      "slug": "2026-10-26_your-98-fill-rate-18-dont-ship",
+      "title": "Ops leaders: Why 98% line fill ships 18% short",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-26",
+      "public": false
     },
     {
       "slug": "2026-10-26_your-agent-contract-gap-63-unmet",

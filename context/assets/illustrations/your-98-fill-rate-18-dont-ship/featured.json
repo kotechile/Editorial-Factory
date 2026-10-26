@@ -1,0 +1,114 @@
+{
+  "slug": "your-98-fill-rate-18-dont-ship",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A ten-compartment industrial order routing tray with one empty slot in an isometric technical drawing.",
+      "caption": "A high line-fill rate masks the reality of complete-order failures when a single missing SKU delays a multi-line basket.",
+      "title": "Isometric-Order-Tray-Shortage",
+      "bytes": 372933,
+      "sha256": "sha256:770e77034c863a07347f97f924fb2a8c"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. Laid over a concrete grey plant floor, a galvanised steel and polymer ten-compartment industrial order routing tray. Nine slots hold identical cobalt mechanical modules, while one slot remains conspicuously empty with a safety yellow warning accent. Thin consistent line weight, one directional light from the top left throwing a sharp cast shadow, flat muted palette, visible depth, unlabelled, generous empty margin, extreme asymmetry.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, labels, numbers, abstract boxes, messy lines, people",
+  "rationale": "A technical isometric cutaway perfectly captures the mathematical and structural nature of a multi-line order basket, visually explaining how one missing component invalidates the entire assembly.",
+  "cue": "raised to the power of the lines",
+  "subject": "a ten-compartment order routing tray with one missing module",
+  "core_thesis": "Order fill is roughly line fill raised to the power of the lines on the order, meaning a single missing SKU fails the entire multi-line shipment despite high overall stock metrics.",
+  "core_conflict": "Per-line stock metric optimism versus exponential complete-order failure math.",
+  "composition": "extreme asymmetry",
+  "alt_text": "The Math Of Short Orders. A ten-compartment industrial order routing tray with one empty slot in an isometric technical drawing.",
+  "caption": "The Math Of Short Orders: Why high line fill still leaves your orders short.",
+  "title": "The Math Of Short Orders",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-98-fill-rate-18-dont-ship/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 409082,
+  "sha256": "sha256:f55a4f8683e0755364209a55a3dc752c00ac6cd08474926a44766856b34d4fe3",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 409082,
+    "quality": 84,
+    "sha256": "sha256:f55a4f8683e0755364209a55a3dc752c00ac6cd08474926a44766856b34d4fe3",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9210b0ec303e693adfc2f07ae40949df0d5fa6272623da3feffd31bba07d92e2",
+  "render_phash": "08f34073c21b714f20269c0b8811e4a461a0b990db18ee247c42b88159002600",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric view of a conveyor or rack holding several bins containing mechanical components, with one empty bin highlighted in yellow.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a missing item in a batch, which aligns with the article's theme of incomplete orders."
+  },
+  "source_hash": "sha256:e8dc2c3cddd66eb465b00672e7d8ffcf",
+  "source_chars": 5561,
+  "task_id": "f628f1671af9b1d6b45e877a014b9aa2",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_09d1aecbea14b4695a5ce5d94a929601.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection. Laid over a concrete grey plant floor, a galvanised steel and polymer ten-compartment industrial order routing tray. Nine slots hold identical cobalt mechanical modules, while one slot remains conspicuously empty with a safety yellow warning accent. Thin consistent line weight, one directional light from the top left throwing a sharp cast shadow, flat muted palette, visible depth, unlabelled, generous empty margin, extreme asymmetry.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-26T20:09:15+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE OPS // ORDER FILL MATH",
+    "title": "THE MATH OF SHORT ORDERS",
+    "hook": "Why high line fill still leaves your orders short",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.4,
+    "target": 4.5,
+    "clutter": 0.068,
+    "region_rgb": [
+      179,
+      180,
+      175
+    ],
+    "binding_rgb": [
+      181,
+      182,
+      176
+    ],
+    "title_lines": [
+      "THE MATH OF",
+      "SHORT ORDERS"
+    ],
+    "subject": 0.042,
+    "ink_subject": 0.017,
+    "spike": 0.141,
+    "generated_at": "2026-10-26T20:09:15+00:00"
+  }
+}

@@ -207,6 +207,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-26 | home_equity_tco | your-battery-payback-0-or-38 | Your Battery's Payback Gap: 0¢ to 38.1¢ | https://pressflow.aichieve.net/published/2026-10-26_your-battery-payback-0-or-38.md | reader site only |
 | 2026-10-26 | home_infrastructure_lifecycle_tco | you-are-pricing-the-fuel-not-the-tank | Your Tank's Class Costs $55 | https://pressflow.aichieve.net/published/2026-10-26_you-are-pricing-the-fuel-not-the-tank.md | reader site only |
 | 2026-10-26 | meio_working_capital_tco | your-15-air-rule-195-break-even | Your $15 Air Rule, $195 Break-Even | https://pressflow.aichieve.net/published/2026-10-26_your-15-air-rule-195-break-even.md | reader site only |
+| 2026-10-26 | sales_order_service_level_otif | your-98-fill-rate-18-dont-ship | Ops leaders: Why 98% line fill ships 18% short | https://pressflow.aichieve.net/published/2026-10-26_your-98-fill-rate-18-dont-ship.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
