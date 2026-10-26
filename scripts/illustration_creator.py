@@ -936,7 +936,10 @@ Return ONLY a JSON object, no markdown fence, with exactly these keys:
  "model_override_reason": "required only if you deviate from the catalogue model, else omit",
  "prompt": "the generation prompt, 15-120 words, English, in the idiom of the model's family — \
 flux stages a photograph (optic, light, material, environment), nano builds a structure (parts, \
-arrangement, material, light) — and containing the vocabulary of the treatment you chose",
+arrangement, material, light) — and containing the vocabulary of the treatment you chose. It MUST \
+name, all in that one string: the place (one of this site's world places above), the object, which \
+way the light comes from, two or three palette colours, the material, and the framing rule you put \
+in `composition` — a prompt missing any of those is refused before an image is generated",
  "negative_prompt": "short; must name garbled text/random lettering/watermarks. Never enumerate subject matter to \
 exclude — the image model reads the negative as tokens to draw",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
