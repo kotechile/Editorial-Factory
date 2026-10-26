@@ -1,0 +1,116 @@
+{
+  "slug": "33-of-your-shrink-isnt-theft",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An industrial shipping crate and detached scanner module arranged on a concrete loading bay floor.",
+      "caption": "The gap between physical goods receiving and digital order management accounts for a third of retail shrink.",
+      "title": "Supply Chain Shrink Gap",
+      "bytes": 353127,
+      "sha256": "sha256:2b71f94c26bcbe0718f108b4b4cb4701"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render, asymmetric off-centre layout. An engineered modular shipping crate and a detached electronic receiving scanner module separated by a wide physical gap, resting on a weathered concrete floor in a warehouse loading bay. Matte muted polymer and brushed steel materials with moulding seams and deep contact shadows, slate grey and safety yellow palette. One directional key light raking across the parts throwing long cast shadows. Generous negative space, clear physical arrangement of recognizable engineered parts, no text, no embossed lettering, no bare geometry.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, words, logos, people, floating objects",
+  "rationale": "Clay render perfectly abstracts the structural disconnect between physical receiving and digital systems. By constructing this as a physical assembly of a crate and disconnected ledger module in a loading bay, we visualize the systemic gap without relying on literal stock photography.",
+  "cue": "33% of your shrink isn't theft",
+  "subject": "an industrial shipping crate and detached scanner module on a loading bay floor",
+  "core_thesis": "A third of retail loss occurs during supply chain receiving, yet software budgets fund order promises rather than verifying physical receipts.",
+  "core_conflict": "Funding the promise of delivery vs securing the proof of physical receipt.",
+  "composition": "asymmetric off-centre layout",
+  "alt_text": "Supply Chain Shrink. An industrial shipping crate and detached scanner module arranged on a concrete loading bay floor.",
+  "caption": "Supply Chain Shrink: A third of retail loss sits on the receiving dock.",
+  "title": "Supply Chain Shrink",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/33-of-your-shrink-isnt-theft/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 392049,
+  "sha256": "sha256:4f48d5a1529e01b40614b19fa3a957e7121160b8aa76eee45f9d5fd2f1d0a5a5",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 392049,
+    "quality": 88,
+    "sha256": "sha256:4f48d5a1529e01b40614b19fa3a957e7121160b8aa76eee45f9d5fd2f1d0a5a5",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3784b9941d6105f5bc76d070bbb6a4584973add171b5f83f8ec82b42dedd458c",
+  "render_phash": "3aab38aaf93bccfa69f929ff69136900e0a0e8b2697081780cb86d06a530c371",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A grey and yellow shipping crate sits on a cracked concrete floor next to a handheld scanner device.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a shipping crate and scanner, which relates to the supply chain and receiving dock themes in the article."
+  },
+  "source_hash": "sha256:fa88da91f6611e9204c03d432d05de0a",
+  "source_chars": 6517,
+  "task_id": "130ef949469c8b5c24f793a6e7106038",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f0b2ffd126c8297fafde418d4f1a1862.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render, asymmetric off-centre layout. An engineered modular shipping crate and a detached electronic receiving scanner module separated by a wide physical gap, resting on a weathered concrete floor in a warehouse loading bay. Matte muted polymer and brushed steel materials with moulding seams and deep contact shadows, slate grey and safety yellow palette. One directional key light raking across the parts throwing long cast shadows. Generous negative space, clear physical arrangement of recognizable engineered parts, no text, no embossed lettering, no bare geometry.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-26T13:16:06+00:00",
+  "overlay": {
+    "kicker": "RETAIL SHRINK // SUPPLY CHAIN",
+    "title": "SUPPLY CHAIN SHRINK",
+    "hook": "A third of retail loss sits on the receiving dock",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.48,
+    "target": 4.5,
+    "clutter": 0.136,
+    "region_rgb": [
+      48,
+      47,
+      43
+    ],
+    "binding_rgb": [
+      57,
+      61,
+      62
+    ],
+    "title_lines": [
+      "SUPPLY CHAIN",
+      "SHRINK"
+    ],
+    "subject": 0.088,
+    "ink_subject": 0.042,
+    "spike": 0.271,
+    "generated_at": "2026-10-26T13:16:06+00:00"
+  }
+}

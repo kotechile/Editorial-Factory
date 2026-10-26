@@ -13,6 +13,12 @@ meta_title: "33% of Your Shrink Isn't Theft"
 meta_title_source: "derived_from_title"
 meta_description: "33% of your shrink isn't theft, and that number now sits on the receiving dock instead of the front door. The study behind it comes after fielding across…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/33-of-your-shrink-isnt-theft/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "Supply Chain Shrink. An industrial shipping crate and detached scanner module arranged on a concrete loading bay floor."
+image_caption: "Supply Chain Shrink: A third of retail loss sits on the receiving dock."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
