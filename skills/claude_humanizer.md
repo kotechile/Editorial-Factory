@@ -418,6 +418,26 @@ one.
   coefficient-1.015 term but fragments the prose, so it is the last lever, never the first. Verified: 44.6 → 53.1 PASS with facts, `[n]` citations, section
   markers and the `## Sources` list untouched. Re-measure with `check_accessibility.py` after the tune.
 
+- **A role label in front of a headline scores 100 standalone and fails the push (learned 2026-10-26).**
+  The rewrite likes to prefix a title with the reader's role — `"Homeowners: Your Next Bedroom Costs
+  $417,500"` — which passes every mechanical rule and reports 100 STRONG from `headline_score.py "<title>"`.
+  Scored with the body it reads `lead_ok: False` ("absent from the lead: next, costs"), because the label
+  ate the room the core clause needed, so the pre-publish gate re-cuts the title a second time and the
+  six-surface headline trap opens. Always score the frontier's re-cut WITH the body
+  (`hs.artifact_title(path)` → `hs.score(t, body=b, keyword=k)`) before adopting it, and when `lead_ok`
+  is False restore the hand-set title that scored 100 with `lead_ok: True` (`skills/story_draft.md`
+  §3). The colon form is not a house headline: `story_draft.md` wants the core ≤ 6 words *before* any
+  colon, and a role noun is filler in that position.
+- **Recover a truncated `alt_text` from the sidecar's own revision history (learned 2026-10-26).** When
+  the art director returns alt text cut mid-phrase, the complete sentence is usually already in
+  `context/assets/illustrations/<slug>/featured.json` under `history[0].alt_text` — the same image's
+  first-pass wording. PATCH `wp-json/wp/v2/media/<id>` with that sentence plus the caption, read it back,
+  then reconcile the sidecar's top-level `alt_text`, the artifact's `image_alt` and the row's
+  `metadata.illustration.alt_text` / `metadata.wordpress.media_alt` in one follow-up commit. Editing a
+  published artifact after the persistence pass is safe for frontmatter-only fields (`sitemap.json`
+  carries titles and state, not image copy) — re-run `scripts/sitemap_sync.py --check` and
+  `bash scripts/verify.sh` to confirm.
+
 ## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
 
 The gate in §5 checks for Smart Brevity & AI-tells. It does NOT check whether a general reader can follow the
