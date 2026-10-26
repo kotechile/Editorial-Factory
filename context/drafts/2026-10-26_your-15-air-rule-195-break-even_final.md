@@ -10,7 +10,7 @@ evergreen: true
 ---
 
 <!-- lead -->
-Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time, and that gap is the whole decision. A flight pays for itself across a month of sea transit once the cargo is worth near $195 a kilo. Take one 2026 rate table's own two ends, $4.50 a kilo by air against $0.50 by sea [2], apply a 25% carrying rate [3][4], and a $4.00 premium buys back this much cover:
+Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time, and that gap is the whole decision. A flight pays for itself across a month of sea transit once the cargo is worth near $195 a kilo. Take the cheapest pairing one 2026 rate table prints, $4.50 a kilo by air against $0.50 for a full container load by sea [2], apply a 25% carrying rate [3][4], and the resulting $4.00 premium buys back this much cover:
 
 | Cargo value | Days of cover the $4.00 premium buys |
 | :--- | :--- |
@@ -26,7 +26,7 @@ Two tests share one name, and they measure different things. The first is a frei
 
 The second tests time, and one freight guide prints it in full: carrying cost equals cargo value times the annual carrying rate times the extra days, over 365, with 20% to 30% for the rate [3]. Hold a kilo of $17.50 cargo for 30 days at 25% and the carrying cost comes to 36 cents.
 
-Then the same page sets its $15 to $20 rule under that formula [3], and the two do not meet. My read is that the page is describing two different purchases, one measuring freight against value and the other pricing a day of stock. The premium in the same publishers' own rate tables runs $2.70 to $7.30 a kilo [1][2]. For the rule to hold, the carrying rate would have to reach eleven times the top of the band that page tells you to load [3][4].
+Then the same page sets its $15 to $20 rule under that formula [3], and the two do not meet. My read is that the page is describing two different purchases, one measuring freight against value and the other pricing a day of stock. The rate tables in circulation put the premium between $2.70 and $7.30 a kilo [1][2]. For the rule to hold, the carrying rate would have to reach nine times the top of the band that page tells you to load [3][4].
 
 A rate that high is less an error than an admission. Below about $195 a kilo, what the flight buys is margin: stock that sells sooner, a promo that ships on time, a line that does not stop. That is a real buy and it deserves its own budget line, but it is not a 20% to 30% charge on the balance sheet. Treating it as one is how teams end up flying goods that should float, or holding four months of cover to dodge the premium.
 
@@ -79,7 +79,7 @@ What the figures settle is where to look, and the part I keep circling is that t
 ## Gate report
 Hand reconciliation of the Loop 3 pass (attempt 1 PASS at 718 words, 61% of the 1,173-word draft — the shrink tripwire), against `2026-10-26_meio_working_capital_tco_evergreen_verified_brief.md`:
 - restored the 100/100 title (the rewrite re-cut it to a 9-word "Ops Leaders: …" with no hook) and rewrote the lead so the title's own words and the $4.00 premium are in paragraph one;
-- restored the 10% floor of the freight-to-value range, the three rate inputs behind the 36-cent figure, and the "eleven times the top of the band" comparison the rewrite had flattened to "impossible";
+- restored the 10% floor of the freight-to-value range, the three rate inputs behind the 36-cent figure, and the "nine times the top of the band" comparison the rewrite had flattened to "impossible";
 - restored the 14-day and 40-day gap arithmetic ($417 and $146 a kilo), which the rewrite dropped entirely;
 - restored the 28% year-on-year rise on the spot figure and the rule that a monthly average belongs in a policy nowhere;
 - restored a complete closing sentence carrying the inline link (the rewrite left "…by running [the case …]", a fragment that also read as an instruction);
