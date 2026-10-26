@@ -1,0 +1,112 @@
+{
+  "slug": "your-ai-fine-is-3-percent",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A thick blank paper dossier and a heavy copper balance weight on a brushed steel control room desk.",
+      "caption": "AI Act compliance exposure is determined by balance sheet arithmetic rather than a fixed regulatory cap.",
+      "title": "AI Act Balance Sheet Arithmetic",
+      "bytes": 400443,
+      "sha256": "sha256:1fda3cc8652475c84c93ec7e49379ea6"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, 50mm standard lens, razor-sharp edge-to-edge focus. An asymmetrical top-down composition of a thick, completely blank compliance dossier made of tactile bone white paper stock, resting heavily on a slate grey brushed steel desk in a control room. Beside the dossier sits a single heavy copper balance weight, emphasizing physical mass. Even diffused daylight from the left, softbox key light casting long contact shadows. Slate grey, bone white, and copper palette. Fine film grain, completely blank paper, no text, no letters, no numbers, no logos, no people.",
+  "negative_prompt": "text, letters, words, numbers, watermarks, UI, typography, garbled text, logos",
+  "rationale": "A regulatory and financial compliance story is best told through the document flatlay treatment. The dossier and heavy balance weight ground the abstract arithmetic in physical, tactile reality without relying on text.",
+  "cue": "arithmetic on the balance sheet",
+  "subject": "a thick blank compliance dossier and a heavy copper balance weight",
+  "core_thesis": "The \u20ac35 million AI Act fine is a floor, not a ceiling; for large enterprise deployers, exposure is an arithmetic 3% of balance sheet revenue.",
+  "core_conflict": "Fixed regulatory caps versus proportional balance sheet exposure at scale.",
+  "composition": "asymmetrical top-down composition",
+  "alt_text": "EU AI Act Penalties. A thick blank paper dossier and a heavy copper balance weight on a brushed steel control room desk.",
+  "caption": "EU AI Act Penalties: Why AI Act exposure is tied to your balance sheet.",
+  "title": "EU AI Act Penalties",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-ai-fine-is-3-percent/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 390640,
+  "sha256": "sha256:c80cdc24130fb00cdcdf2386f6ed8ccb856b13d463c0a761172aa0e1b3b1b7ab",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 390640,
+    "quality": 84,
+    "sha256": "sha256:c80cdc24130fb00cdcdf2386f6ed8ccb856b13d463c0a761172aa0e1b3b1b7ab",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:cea1eaeeae640a11b129177e415d71e6293c7200875eee9b8dc97d4966855d74",
+  "render_phash": "fffffc9ff9dbf9d9f9d9f9d9f1d9f9d9d9d9f8d9bcd918d93cdd21d97de9ffe9",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A stack of blank white paper or folders next to a small, square copper object with a cylindrical top on a gray surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a blank dossier and a weight, which loosely connects to the article's themes of compliance and financial balance."
+  },
+  "source_hash": "sha256:5ad28ec8c864ba5d937144bdcb0e85cf",
+  "source_chars": 6226,
+  "task_id": "36d25c4a970395ea15625c2671c38518",
+  "credits": 5.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/36d25c4a970395ea15625c2671c38518_1793038844810.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, 50mm standard lens, razor-sharp edge-to-edge focus. An asymmetrical top-down composition of a thick, completely blank compliance dossier made of tactile bone white paper stock, resting heavily on a slate grey brushed steel desk in a control room. Beside the dossier sits a single heavy copper balance weight, emphasizing physical mass. Even diffused daylight from the left, softbox key light casting long contact shadows. Slate grey, bone white, and copper palette. Fine film grain, completely blank paper, no text, no letters, no numbers, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T18:20:52+00:00",
+  "overlay": {
+    "kicker": "EU AI ACT // PENALTY TIERS",
+    "title": "EU AI ACT PENALTIES",
+    "hook": "Why AI Act exposure is tied to your balance sheet",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 75,
+    "contrast": 5.55,
+    "target": 5.5,
+    "clutter": 0.258,
+    "region_rgb": [
+      120,
+      121,
+      121
+    ],
+    "binding_rgb": [
+      131,
+      135,
+      136
+    ],
+    "title_lines": [
+      "EU AI ACT",
+      "PENALTIES"
+    ],
+    "subject": 0.212,
+    "ink_subject": 0.059,
+    "spike": 0.821,
+    "generated_at": "2026-10-26T18:20:52+00:00"
+  }
+}

@@ -203,6 +203,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-26 | meio_working_capital_tco | your-49-cut-was-actually-9 | Your 49% Cut Was Actually 9% | https://pressflow.aichieve.net/published/2026-10-26_your-49-cut-was-actually-9.md | reader site only |
 | 2026-10-26 | sales_order_service_level_otif | 33-of-your-shrink-isnt-theft | 33% of Your Shrink Isn't Theft | https://pressflow.aichieve.net/published/2026-10-26_33-of-your-shrink-isnt-theft.md | reader site only |
 | 2026-10-26 | agentic_ai | your-tool-boundary-costs-3-engineers | Your Tool Boundary Costs 3 Engineers | https://pressflow.aichieve.net/published/2026-10-26_your-tool-boundary-costs-3-engineers.md | reader site only |
+| 2026-10-26 | enterprise_ai_governance | your-ai-fine-is-3-percent | Your AI Fine: 3%, Not 35 Million | https://pressflow.aichieve.net/published/2026-10-26_your-ai-fine-is-3-percent.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

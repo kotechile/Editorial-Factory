@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T17:46:41Z",
+  "updated_at": "2026-10-26T18:21:07Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3599,6 +3599,24 @@
       "date": "2026-10-26",
       "public": true,
       "url": "https://aichieve.net/your-agent-contract-gap-63-unmet/"
+    },
+    {
+      "slug": "2026-10-26_your-ai-fine-is-3-percent",
+      "title": "Your AI Fine: 3%, Not 35 Million",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-26",
+      "public": false
     },
     {
       "slug": "2026-10-26_your-next-bedroom-417500",
