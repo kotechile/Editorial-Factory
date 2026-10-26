@@ -66,19 +66,6 @@ The authors also ran the work with model-based agents before people checked each
 
 Two limits sit on the other side. Some of these gaps are accepted risk rather than oversight, since a team may know a call site is weak and ship it anyway. A code check can be wrong too, turning away good replies or letting bad ones past. What the window does not hold is any measure showing that a sandbox closes the call-site gap. The honest claim is that these are two controls at two boundaries, not that the newer one fails. Where that points is the step rather than the model, which is the case made in [Your Agent's Next Step](/gate-the-step-not-the-model/).
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Retry Is the Bug: An Agent's Costliest Failure Mode" -> /retry-is-the-failure-amplifier/ [same site (aichieve.net); same category; topical overlap: agent, agent's, study] Link "Retry Is the Bug: An Agent's Costliest Failure Mode" in the section where the article touches agent, agent's, study. -->
-<!-- internal-link hint: "Your Agent's Next Step" -> /gate-the-step-not-the-model/ [same site (aichieve.net); same category; topical overlap: agent, agent's, study] Link "Your Agent's Next Step" in the section where the article touches agent, agent's, study. -->
-<!-- internal-link hint: "68 Loops Your Runtime Never Stopped" -> /agent-loop-bound-not-a-budget/ [same site (aichieve.net); same category; topical overlap: agent, found] Link "68 Loops Your Runtime Never Stopped" in the section where the article touches agent, found. -->
-## Related reading
-
-- [Agent Memory Poisoning](/agent-memory-poisoning-write-path/) — more on Autonomous & Agentic Workflows
-- [Retry Is the Bug: An Agent's Costliest Failure Mode](/retry-is-the-failure-amplifier/) — more on Autonomous & Agentic Workflows
-- [Your Agent's 84,000-Write Mistake](/agent-writes-stale-basis/) — more on Autonomous & Agentic Workflows
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -91,6 +78,19 @@ Two limits sit on the other side. Some of these gaps are accepted risk rather th
   - **Chained skills:** Sequences where every part passed a single-skill scan and the whole chain still reaches an unsafe step.
 - **The Catch:** The 63% comes from an audit of open-source code against a drawn-up reference, some gaps are deliberate, and no vendor has published what a sandbox does to this number.
 
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Retry Is the Bug: An Agent's Costliest Failure Mode" -> /retry-is-the-failure-amplifier/ [same site (aichieve.net); same category; topical overlap: agent, agent's, study] Link "Retry Is the Bug: An Agent's Costliest Failure Mode" in the section where the article touches agent, agent's, study. -->
+<!-- internal-link hint: "Your Agent's Next Step" -> /gate-the-step-not-the-model/ [same site (aichieve.net); same category; topical overlap: agent, agent's, study] Link "Your Agent's Next Step" in the section where the article touches agent, agent's, study. -->
+<!-- internal-link hint: "68 Loops Your Runtime Never Stopped" -> /agent-loop-bound-not-a-budget/ [same site (aichieve.net); same category; topical overlap: agent, found] Link "68 Loops Your Runtime Never Stopped" in the section where the article touches agent, found. -->
+## Related reading
+
+- [Agent Memory Poisoning](/agent-memory-poisoning-write-path/) — more on Autonomous & Agentic Workflows
+- [Retry Is the Bug: An Agent's Costliest Failure Mode](/retry-is-the-failure-amplifier/) — more on Autonomous & Agentic Workflows
+- [Your Agent's 84,000-Write Mistake](/agent-writes-stale-basis/) — more on Autonomous & Agentic Workflows
+<!-- internal-links:end -->
 
 ## Sources
 
