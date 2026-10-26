@@ -1,0 +1,112 @@
+{
+  "slug": "your-15-air-rule-195-break-even",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An intermodal gantry crane hoists a shipping container in a vast terminal yard under sharp lighting.",
+      "caption": "The true carrying cost of a 30-day sea gap fundamentally shifts the break-even point for expedited freight.",
+      "title": "Sea-Gap-Carrying-Cost",
+      "bytes": 376473,
+      "sha256": "sha256:30a207418f7d2d3c01a49f5ff5188543"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Telephoto compression, 200mm long-lens view of a massive intermodal gantry crane hoisting a corrugated steel shipping container over an endless container terminal yard. Extreme asymmetry, the hero off-centre and low in frame. Stacked overlapping layers of oxidised red and bone white containers against slate grey asphalt. Crystal-clear telephoto distance clarity, flat compressed perspective, sharp directional lighting from the left casting deep shadows, industrial contrast, no people, no fog or haze.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, faces, blur, soft focus",
+  "rationale": "Telephoto compression captures the immense physical scale of supply chain trade-offs. By stacking rows of shipping infrastructure, it visualizes the heavy capital tied up in the '30-day sea gap'.",
+  "cue": "a 30-day sea gap",
+  "subject": "an intermodal gantry crane and stacked shipping containers",
+  "core_thesis": "The true break-even for air freight is determined by comparing the air premium against the daily carrying cost of holding that cargo over a sea transit gap.",
+  "core_conflict": "Time savings via expedited air freight versus the capital carrying cost of delayed sea freight.",
+  "composition": "extreme asymmetry, the hero off-centre and low in frame",
+  "alt_text": "The $195 Air Freight Break-Even. An intermodal gantry crane hoists a shipping container in a vast terminal yard under sharp lighting.",
+  "caption": "The $195 Air Freight Break-Even: Why the $15 air freight rule is an 11-fold error.",
+  "title": "The $195 Air Freight Break-Even",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-15-air-rule-195-break-even/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 394405,
+  "sha256": "sha256:220c57d254df63c1426f2c8c0b4b0c27c417f03ba7c9fccf95531b4a4e1bcd49",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394405,
+    "quality": 76,
+    "sha256": "sha256:220c57d254df63c1426f2c8c0b4b0c27c417f03ba7c9fccf95531b4a4e1bcd49",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:36625f282fe0a659135950b31bc59e37e9b1356e75eb18c7432b9fa6623f8f38",
+  "render_phash": "073f075f3535cb1b851a384a3b4938897196e19bf0dd82dcc2d4c6c483c603a3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A crane lifting a red shipping container in a large yard filled with stacked containers.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows shipping containers, which relates to the article's focus on freight and cargo logistics."
+  },
+  "source_hash": "sha256:26833c53d8393b1938182789f4f4a84f",
+  "source_chars": 6123,
+  "task_id": "f86b58331868ac33a514c8158be350e5",
+  "credits": 5.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f86b58331868ac33a514c8158be350e5_1793044311522.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Telephoto compression, 200mm long-lens view of a massive intermodal gantry crane hoisting a corrugated steel shipping container over an endless container terminal yard. Extreme asymmetry, the hero off-centre and low in frame. Stacked overlapping layers of oxidised red and bone white containers against slate grey asphalt. Crystal-clear telephoto distance clarity, flat compressed perspective, sharp directional lighting from the left casting deep shadows, industrial contrast, no people, no fog or haze.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T19:52:00+00:00",
+  "overlay": {
+    "kicker": "FREIGHT LOGISTICS // CARRYING COST",
+    "title": "THE $195 AIR FREIGHT BREAK-EVEN",
+    "hook": "Why the $15 air freight rule is an 11-fold error",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 5.83,
+    "target": 5.5,
+    "clutter": 0.333,
+    "region_rgb": [
+      58,
+      53,
+      52
+    ],
+    "binding_rgb": [
+      114,
+      111,
+      104
+    ],
+    "title_lines": [
+      "THE $195 AIR FREIGHT",
+      "BREAK-EVEN"
+    ],
+    "subject": 0.096,
+    "ink_subject": 0.044,
+    "spike": 0.303,
+    "generated_at": "2026-10-26T19:52:00+00:00"
+  }
+}

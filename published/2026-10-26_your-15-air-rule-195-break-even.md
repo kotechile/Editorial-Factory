@@ -11,10 +11,16 @@ meta_title: "Your $15 Air Rule, $195 Break-Even"
 meta_title_source: "derived_from_title"
 meta_description: "Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-15-air-rule-195-break-even/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "The $195 Air Freight Break-Even. An intermodal gantry crane hoists a shipping container in a vast terminal yard under sharp lighting."
+image_caption: "The $195 Air Freight Break-Even: Why the $15 air freight rule is an 11-fold error."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time, and that gap is the whole decision. A flight pays for itself across a month of sea transit once the cargo is worth near $195 a kilo. Take the cheapest pairing one 2026 rate table prints, $4.50 a kilo by air against $0.50 for a full container load by sea [2], apply a 25% carrying rate [3][4], and the resulting $4.00 premium buys back this much cover:
+Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time, and that gap is the whole decision. A flight pays for itself across a month of sea transit once the cargo is worth near $195 a kilo. Take one 2026 rate table's own two ends, $4.50 a kilo by air against $0.50 by sea [2], apply a 25% carrying rate [3][4], and a $4.00 premium buys back this much cover:
 
 | Cargo value | Days of cover the $4.00 premium buys |
 | :--- | :--- |

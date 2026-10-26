@@ -546,6 +546,42 @@ edit) generated on its first attempt — so a single refusal loop is not evidenc
 
 **Hosts probed live 2026-10-24, building a snow-clearing cost-per-square-foot brief (the `outdoor_power_equipment` evergreen — the vertical's first artifact of any kind).** Carries the figure as plain text and fetches first try: `egopowerplus.com/two-stage-snow-blower-snt2400` (the product page's Tech Specs as one run — "Throws snow up to 50 feet Clears up to an 18-car driveway with 8 inches of snow on a single charge when used with the two recommended 7.5Ah ARC Lithium™ batteries 24-inch clearing width/20 inch intake height", plus the 56 V platform and the SNT2400/2405/2406/2406-4 pack configurations — but no price anywhere, the configuration table reads "Coming Soon"); `heattrak.com` (the driveway-mat page's Sizing-and-Amps block is a goldmine: 24"×10' = 5.8 A at 120 V, 24"×20' = 11.7 A, i.e. ~35 W/sq ft on both; the same page prints "Sale price $ 1,075.00 USD"; the FAQs page carries "$0.18 per hour … $1.80 for ten hours", "up to 2 inches per hour", the 13-amps-per-power-unit cap, the 5–6 year lifespan and the "lay as a track for one tire" positioning; the home page carries the walkway mat at $229.99); `warmlyyours.com/en-US/snow-melting` (87 KB with the whole FAQ: "at 50 W/sq ft, every 100 sq ft draws 5 kW, or $1.00 per energized hour at an illustrative $0.20/kWh", the 400 sq ft = 20 kW = $4.00/hour = $24.00-for-six-hours worked example, "Typical driveways: 400–800 sq. ft.", "Professional installation … between $10 and $25 per square foot, including materials and labor", and "designed to melt 1\" - 3\" of snow per hour"); `snowjoe.com/collections/snow-blowers` (the 11-inch 10-amp corded shovel at $124.99, the 24 V 4.0 Ah pack at $89.97 and the shovel bundle at $199.99, all as text in the listing); `eia.gov` energy-explained for the 2025 class table. **Matcher traps on this beat:** HeatTrak's page header prints the phone number "+1 (888) 586-4904", so *any* cell leading on a bare `1` matches the phone — the $1,075 driveway-mat price cannot carry a gate row in any phrasing and rides in prose under a row on the same page; WarmlyYours' navigation ("10+ bars", "25 people found this helpful") catches cells leading on `$10`, `$25` or `25`, so its install range is prose too; and a cell leading on `50` matches a customer review ("6 50ft snow mats"), so the design-density row must lead on the worked example's `$1.00 per energized hour` instead. Fetched but carries no row: `toro.com`, `husqvarna.com` and `greenworkstools.com` collection pages are navigation plus client-rendered product grids (15–159 numeric tokens, none of them a spec or a price); guessed `heattrak.com/pages/energy-cost-calculator` and every guessed `heattrak.com/products/<slug>` return 404 — resolve the real product slugs from the home page first. A vendor's runtime/cost claim is frequently a *per-unit* figure with no configuration named: HeatTrak's "$0.18 per hour" implies 1.04 kWh/hour, i.e. about 30 sq ft of mat, so it describes a walkway set and may never be scaled to a driveway without recomputing.
 
+**Plan which section owns each figure before drafting — `article_shape` allows a figure in at most two body
+sections, and the lead counts as one (learned 2026-10-26).** A series that appears in the lead, again in
+`By the numbers` and again in `At a glance` is HELD at the push ("figure $195 money is restated in 3
+sections"), and a run that discovers this after the frontier pass pays for two more gate cycles. The shape
+that clears it on a cost piece: put the multi-row series in a small table inside the **lead** (a table is
+one statement of each figure, and it sets the stakes where the reader arrives), keep the single derived
+break-even with its formula in `By the numbers`, and write `At a glance` **figure-free** — the four-part
+TLDR does not need a number to satisfy its schema. Run `article_shape.py --check` on the draft, not only on
+the final.
+
+**When a premium or a spread is read off two published bands, name which ends you took and say why that
+pairing is the conservative one (learned 2026-10-26).** "$4.50 a kilo by air against $0.50 by sea" is
+reproducible only if the reader knows those are the cheapest air rate and the dearest container rate on
+one table's list, i.e. the *smallest* premium the source supports — which is also the honest way to argue a
+break-even, because a bigger premium only raises it. A number assembled from two bands without naming the
+ends reads as a midpoint, and a critic can rebuild it from the other ends and get a different answer.
+
+**A "N times" claim has to say which constant it is a multiple of (learned 2026-10-26).** The same derived
+rate reads as **eleven times** the 25% midpoint and **nine times** the 30% top of the 20–30% band, and both
+sentences look right. Write the one you computed, name the constant in the same clause, and re-check it
+after every rewrite — the frontier pass's favourite way to handle an awkward multiple is to delete it and
+write "impossible", which passes Flesch, the figure diff and the voice gate while removing the only number
+that made the argument arithmetic.
+
+**The art director's refusals rotate validation reasons across attempts on the same artifact, so one failure
+is not a verdict on the treatment (learned 2026-10-26).** A single article was refused in sequence for
+legible lettering in the render, then for "prompt does not say which way the light comes from", then for a
+missing framing rule — three different complaints from the same director on the same text — and the fourth
+commission landed with no style pin and no prompt edit. A persistence pass that refuses all its attempts
+publishes a post with `featured_media: 0`; re-commission `illustration_creator.py <artifact> --apply` up to
+three times, read the pixels with vision before the upload, then attach with `wp_draft.py --slug … --reimage`
+and read `featured_media` back. Expect the reader front to have built the page before the media existed:
+probe the URL for `wp-content/uploads` references, and when there are none, push the empty
+`ci: re-trigger frontend build for <slug>` commit rather than re-publishing.
+
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`

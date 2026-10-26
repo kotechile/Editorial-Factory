@@ -327,3 +327,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-26 | `your-battery-payback-0-or-38` | home_equity_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-battery-payback-0-or-38/featured.jpg` |
 | 2026-10-26 | `your-battery-payback-0-or-38` | home_equity_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-battery-payback-0-or-38/featured.jpg` |
 | 2026-10-26 | `you-are-pricing-the-fuel-not-the-tank` | home_infrastructure_lifecycle_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/you-are-pricing-the-fuel-not-the-tank/featured.jpg` |
+| 2026-10-26 | `your-15-air-rule-195-break-even` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-15-air-rule-195-break-even/featured.jpg` |
