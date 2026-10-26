@@ -201,6 +201,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-26 | home_equity_tco | your-next-bedroom-417500 | Your Next Bedroom Costs $417,500 | https://pressflow.aichieve.net/published/2026-10-26_your-next-bedroom-417500.md | reader site only |
 | 2026-10-26 | home_infrastructure_lifecycle_tco | your-repair-budget-buys-7-5-percent-less | Your Repair Budget's 7.5% Squeeze | https://pressflow.aichieve.net/published/2026-10-26_your-repair-budget-buys-7-5-percent-less.md | reader site only |
 | 2026-10-26 | meio_working_capital_tco | your-49-cut-was-actually-9 | Your 49% Cut Was Actually 9% | https://pressflow.aichieve.net/published/2026-10-26_your-49-cut-was-actually-9.md | reader site only |
+| 2026-10-26 | sales_order_service_level_otif | 33-of-your-shrink-isnt-theft | 33% of Your Shrink Isn't Theft | https://pressflow.aichieve.net/published/2026-10-26_33-of-your-shrink-isnt-theft.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

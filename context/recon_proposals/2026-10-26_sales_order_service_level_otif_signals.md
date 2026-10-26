@@ -1,0 +1,48 @@
+# Signals: sales_order_service_level_otif — 2026-10-26
+**Window:** 2026-09-26 → 2026-10-26
+**Queries run:** 24 (5 Supply Chain Intel MCP pulls via `scripts/supply_chain_intel_client.py --recent 30 --vertical sales_order_service_level_otif --format signals`, returning 10 items of which 8 were off-axis — tariffs, procurement, packaging, cold-chain corridors — and 2 on-axis; 11 date-agnostic web fan-outs across the vertical's five primary angles; 8 direct fetches to date and read every candidate primary at source)
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | IHL/Sensormatic *Beyond Shrink*: external theft is the largest single loss source but a minority of loss dollars | https://www.sensormatic.com/resources/pr/2026/beyond-shrink-report-press-release | 2026-10-22 | External theft including organised retail crime is 25% of total loss and the remainder — 75% — originates in stores' own operations, across store theft, supply chain, returns/reverse logistics, e-commerce fulfillment and administration | Loss accounting; where the service-level failure actually costs money | 92 |
+| 2 | *Beyond Shrink*: the supply-chain block is a third of total retail loss | https://www.sensormatic.com/resources/pr/2026/beyond-shrink-report-press-release | 2026-10-22 | Supplier fraud, warehouse/sales-area shrink and goods-receiving loss "together account for 33% of retailers' total losses" — the study names goods-receiving loss as a distinct component | The in-full half of OTIF booked in dollars instead of a percentage | 90 |
+| 3 | *Beyond Shrink*: an administrative process error costs about what employee theft costs | https://www.sensormatic.com/resources/pr/2026/beyond-shrink-report-press-release | 2026-10-22 | Administrative process errors cost an average of $103.40 per incident against $107.00 for the average cost of employee theft | Per-incident cost of the paperwork class an order desk actually fixes | 82 |
+| 4 | *Beyond Shrink*: every loss vector is rising, returns included | https://www.sensormatic.com/resources/pr/2026/beyond-shrink-report-press-release | 2026-10-22 | 54% of retailers report an increase in each loss area tracked; return fraud increased for 68% of retailers against 69% reporting increased shoplifting | Why the receiving dock's error rate is not a legacy problem | 76 |
+| 5 | *Beyond Shrink*: only the heaviest loss-prevention spenders report net declines | https://www.sensormatic.com/resources/pr/2026/beyond-shrink-report-press-release | 2026-10-22 | Average loss-prevention budget is about 1.2% of sales, and retailers spending above 2% of sales were the only cohort reporting more declines than increases across loss vectors | The budget line that has to move, and by how much it is short | 78 |
+| 6 | IHL 2026 Order Management Systems Market Study: order-management spend nearly doubles while on-premise falls | https://www.ihlservices.com/product/2026-order-management-systems-market-study/ | 2026-10-21 | Worldwide OMS software spend projected from $2.2 billion in 2024 to $4.3 billion by 2029; SaaS/cloud $1.4 billion to $4.0 billion; on-premise software $416 million to $180 million with on-premise maintenance $358 million to $170 million | Where the money is going: the promise layer, not the receipt record | 88 |
+| 7 | IHL OMS study: eighteen vendors, AI operational intelligence leads the trends | https://www.ihlservices.com/product/2026-order-management-systems-market-study/ | 2026-10-21 | The 2026 vendor evaluation covers 18 enterprise OMS vendors and names five market trends, "led by AI-driven operational intelligence" | The pitch every ops leader is being sold this quarter | 72 |
+| 8 | *Beyond Shrink* methodology: 1,421 retailers, revenue-weighted, calibrated against POS | https://www.ihlservices.com/product/beyond-shrink-2026-global-total-retail-loss-wp102026/ | 2026-10-21 | Fielded across 1,421 retailers in 12 countries, results weighted by company revenue and calibrated against IHL retail sales and POS data by country and region; spoilage and overstock sit outside the survey by agreed scope | Sample and scope for the loss legs — and the reason the study cannot be read as an inventory-distortion number | 74 |
+| 9 | Retailer deduction mechanics differ by retailer and by case | https://www.spscommerce.com/community/articles/retailer-deductions-in-q4-how-walmart-and-kroger-compare | 2026-10-13 | Walmart's OTIF goals are 90% on-time for prepaid and 98% for collect-ready, with a 95% in-full goal, fining 3% of the cost of goods on non-compliant cases; Kroger charges 3% of the invoiced amount on a late supplier-caused PO but owes no late-arrival fees at 93% on-time over four weeks; Target sets a 95% fill rate with a 5% cost-of-goods penalty | The billing side of the same missing case (vendor-published estimate; corroboration only) | 70 |
+| 10 | Shoppers abandon a retailer after a handful of bad delivery experiences | https://www.supplychaindive.com/spons/how-shoppers-define-delivery-success-and-what-theyll-do-if-you-fall-shor/833675/ | 2026-10-26 | 64% of online shoppers say four or fewer failed deliveries would make them stop ordering from a retailer entirely; measures cumulative tolerance rather than a single-event response | Why the consumer end of the service level is unforgiving (sponsored content; corroboration only) | 64 |
+
+## Candidate Synthesis Pairs
+
+
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=10 candidates=0 heuristic=- window=2026-09-26..2026-10-26 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+_No mechanically valid pair. That is a legitimate answer, not a failure: the Judge may still find a synthesis this token layer cannot see._
+<!-- synthesis-seed:end -->
+
+## Dating note
+
+Rows 1–5 come from one press release dated **2026-10-22** on Sensormatic Solutions' own media centre (the research partner's publication of the joint study). Rows 6–8 are IHL Group's own product pages, last updated **2026-10-21**; the underlying study is dated **October 2026** in IHL's research index. Row 9 carries the publisher's own "Last Updated October 13, 2026". Row 10 is a sponsor-content item published **2026-10-26** and is admissible only as corroboration, never as an anchor.
+
+**Sample-size discrepancy to resolve at fact-check.** IHL's product page and research index state the study was fielded across **1,421 retailers in 12 countries**; the distribution release carried on the wire services describes the same study as "based on the input of **915 retail decision-makers** across regions." Both are the publishers' own words. Record the discrepancy and prefer IHL's own product page (the study's own methodology statement, revenue-weighted and POS-calibrated) if a sample is printed at all.
+
+**Standing scope caveat.** *Beyond Shrink* measures **Total Retail Loss**, which its methodology explicitly excludes spoilage and overstock from ("broader inventory distortion elements … sit outside this survey by agreed scope"). No figure from this study may be compared with, or substituted for, an inventory-distortion, out-of-stock-rate or fill-rate figure, and its $99.56 billion prior shrink-index context figure is store-level shrink only.
+
+**Dropped at Stage 1.** Supply Chain Dive's Walmart fiscal-2026 supplier-standard violation count (754 cases, down 35%) reads as fresh but is dated **2026-08-12**, outside the window — carried as background only. The IHL/Blue Yonder 2023 inventory-distortion study ($1.77 trillion) is three years old and is repeatedly re-surfaced by SEO pages as a 2026 number; it is dropped, not softened. The Supply Chain Intel feed's two on-axis items (shopper delivery tolerance; the CIPS Q3 procurement price survey with no percentage disclosed) yielded one corroboration row and one nothing-citable row.
+
+## Dated background
+
+- IHL Group research index (last updated 2026-10-21), used for study dates and the OMS market figures: https://www.ihlservices.com/news/ihl-research-findings
+- Sensormatic Solutions distribution release of the joint study, 2026-10-22: https://www.sensormatic.com/resources/pr/2026/beyond-shrink-report-press-release
+- IHL Group *Beyond Shrink: The 2026 Global Total Retail Loss Study* product page (fielding, weighting, scope): https://www.ihlservices.com/product/beyond-shrink-2026-global-total-retail-loss-wp102026/
+- IHL Group 2026 Order Management Systems Market Study product page (spend forecast, vendor set, trends): https://www.ihlservices.com/product/2026-order-management-systems-market-study/
+- SPS Commerce, "Retailer Deductions in Q4: How Walmart and Kroger Compare", last updated 2026-10-13 (vendor estimate; not an independent study): https://www.spscommerce.com/community/articles/retailer-deductions-in-q4-how-walmart-and-kroger-compare
+- Supply Chain Dive sponsored content, "How shoppers define delivery success", 2026-10-26: https://www.supplychaindive.com/spons/how-shoppers-define-delivery-success-and-what-theyll-do-if-you-fall-shor/833675/
+- Supply Chain Dive, "Walmart flags fewer supplier standard violations" (754 cases in fiscal 2026, down 35%), 2026-08-12 — out of window, background only: https://www.supplychaindive.com/news/walmart-on-time-in-full-87-suppliers/550083/
