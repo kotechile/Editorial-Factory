@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T19:24:45Z",
+  "updated_at": "2026-10-26T19:43:47Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3577,6 +3577,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-26",
+      "public": false
+    },
+    {
+      "slug": "2026-10-26_your-15-air-rule-195-break-even",
+      "title": "Your $15 Air Rule, $195 Break-Even",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-26",
       "public": false
     },
