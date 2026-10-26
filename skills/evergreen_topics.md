@@ -516,6 +516,34 @@ FLAGGED reading rather than presented as the page's own statement. And an effici
 badge is worth "about a tenth" of running cost should be recomputed from its own two figures ($12.50 ÷ $74.63 = 16.7%,
 a sixth) — the derived-ratio class no gate reads.
 
+**Hosts probed live 2026-10-26, building a tariff-spread / battery-payback brief (the `home_equity_tco` evergreen).**
+Carries the figure as plain text and fetches first try: `sdge.com/residential/pricing-plans/about-our-pricing-plans/whenmatters`
+(the whole residential plan page at ~33 KB, and it is the single best anchor this desk has found for a *rate-design*
+claim because it prints **both customer classes side by side for the same plan and the same effective date** —
+`TOU-ELEC` at "25.6¢ 25.6¢ 25.6¢" for a CCA delivery-only customer against "34.5¢ 38.9¢ 72.6¢" bundled, `TOU-DR2` at
+"22.3¢ 23.0¢" against "31.0¢ 58.9¢", and `EV-TOU-5` at "4.7¢ 31.8¢ 31.8¢" against "13.1¢ 49.6¢ 80.2¢", every table
+footed with "Prices effective August 1, 2026" and the sentence that makes the thesis legal — "Prices shown are SDG&E
+delivery charges only. CCA customers must also pay for electric generation at prices determined by the CCA"); `coned.com/en/accounts-billing/your-bill/time-of-use`
+(~10 KB, the residential TOU block as one run — "June 1 to Sept 30 $0.2786 per KWhr $0.0522 per kWhr All other months
+$0.1711 per KWhr $0.0522 per kWhr", the "$21.00" monthly customer charge, and the page's own "these rates do not
+include various surcharges" caveat); `enphase.com/store/storage/iq-battery-5p` (product spec: "5.0 kWh" usable, "DC
+round-trip efficiency: 96% AC round-trip efficiency: 90%" — the loss term any arbitrage arithmetic must subtract, and
+a vendor claim row); `eia.gov` energy-explained electricity prices (2025 class table, 17.30¢ residential).
+**The structural finding worth reusing:** in an aggregator state the utility's TOU table is *delivery only*, so its
+peak-to-off-peak gap can collapse to 0¢ (TOU-ELEC, flat 25.6¢) or 0.7¢ (TOU-DR2) while the bundled twin of the same
+plan spreads 38.1¢ or 27.9¢ — but the EV plan keeps a 27.1¢ delivery gap because super off-peak delivery is priced at
+4.7¢, so "CCA means no arbitrage" is false and the article must print the plan, not the customer class, as the unit.
+**Unreachable to the verifier on this beat:** every `pge.com` and `sce.com` rate page tried (a tariff PDF reads
+`unsupported`, the HTML plan pages `unreachable`), `energy.gov/energysaver/*` heat-pump pages, `neep.org` (the
+cold-climate product list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` — which is why the
+heat-pump-COP candidate was dropped at 7.3 (its load-bearing figure is temperature-specific COP and no fetchable page
+states one) while the tariff-spread candidate cleared at 8.8 on four hosts.
+**A refusal on the light-direction cue can clear on a plain re-run, so retry before pinning a style** (learned 2026-10-26):
+`illustration_creator.py --apply` failed three attempts with "prompt does not say which way the light comes from" on a
+prompt whose own text reads "warm raking ochre directional light", and the second `--apply` (same style, no pin, no
+edit) generated on its first attempt — so a single refusal loop is not evidence the treatment is unusable, and pinning
+`--style` or hand-writing a prompt on the strength of it costs credits for nothing.
+
 **Hosts probed live 2026-10-24, building a snow-clearing cost-per-square-foot brief (the `outdoor_power_equipment` evergreen — the vertical's first artifact of any kind).** Carries the figure as plain text and fetches first try: `egopowerplus.com/two-stage-snow-blower-snt2400` (the product page's Tech Specs as one run — "Throws snow up to 50 feet Clears up to an 18-car driveway with 8 inches of snow on a single charge when used with the two recommended 7.5Ah ARC Lithium™ batteries 24-inch clearing width/20 inch intake height", plus the 56 V platform and the SNT2400/2405/2406/2406-4 pack configurations — but no price anywhere, the configuration table reads "Coming Soon"); `heattrak.com` (the driveway-mat page's Sizing-and-Amps block is a goldmine: 24"×10' = 5.8 A at 120 V, 24"×20' = 11.7 A, i.e. ~35 W/sq ft on both; the same page prints "Sale price $ 1,075.00 USD"; the FAQs page carries "$0.18 per hour … $1.80 for ten hours", "up to 2 inches per hour", the 13-amps-per-power-unit cap, the 5–6 year lifespan and the "lay as a track for one tire" positioning; the home page carries the walkway mat at $229.99); `warmlyyours.com/en-US/snow-melting` (87 KB with the whole FAQ: "at 50 W/sq ft, every 100 sq ft draws 5 kW, or $1.00 per energized hour at an illustrative $0.20/kWh", the 400 sq ft = 20 kW = $4.00/hour = $24.00-for-six-hours worked example, "Typical driveways: 400–800 sq. ft.", "Professional installation … between $10 and $25 per square foot, including materials and labor", and "designed to melt 1\" - 3\" of snow per hour"); `snowjoe.com/collections/snow-blowers` (the 11-inch 10-amp corded shovel at $124.99, the 24 V 4.0 Ah pack at $89.97 and the shovel bundle at $199.99, all as text in the listing); `eia.gov` energy-explained for the 2025 class table. **Matcher traps on this beat:** HeatTrak's page header prints the phone number "+1 (888) 586-4904", so *any* cell leading on a bare `1` matches the phone — the $1,075 driveway-mat price cannot carry a gate row in any phrasing and rides in prose under a row on the same page; WarmlyYours' navigation ("10+ bars", "25 people found this helpful") catches cells leading on `$10`, `$25` or `25`, so its install range is prose too; and a cell leading on `50` matches a customer review ("6 50ft snow mats"), so the design-density row must lead on the worked example's `$1.00 per energized hour` instead. Fetched but carries no row: `toro.com`, `husqvarna.com` and `greenworkstools.com` collection pages are navigation plus client-rendered product grids (15–159 numeric tokens, none of them a spec or a price); guessed `heattrak.com/pages/energy-cost-calculator` and every guessed `heattrak.com/products/<slug>` return 404 — resolve the real product slugs from the home page first. A vendor's runtime/cost claim is frequently a *per-unit* figure with no configuration named: HeatTrak's "$0.18 per hour" implies 1.04 kWh/hour, i.e. about 30 sq ft of mat, so it describes a walkway set and may never be scaled to a driveway without recomputing.
 
 ## 5. Handoff
