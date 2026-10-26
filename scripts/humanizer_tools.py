@@ -229,8 +229,9 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
                    "than twice in prose.")
     if any("Smart Brevity: header > 6 words" in w for w in diag.get("warnings", [])):
         tip.append("SMART BREVITY HEADERS: Shorten H2/H3 section headers to 6 words or fewer.")
-    if any("Smart Brevity:" in w and "paragraph(s) > 3 sentences" in w for w in diag.get("warnings", [])):
-        tip.append("SMART BREVITY PARAGRAPHS: Keep every paragraph to 1-3 sentences maximum. Split monolithic blocks.")
+    if any("Smart Brevity:" in w and "paragraph(s) > 6 sentences" in w for w in diag.get("warnings", [])):
+        tip.append("SMART BREVITY PARAGRAPHS: Keep every paragraph to 3-5 sentences, never more than 6. "
+                   "Split a monolithic block at its second idea; never chop a paragraph into one-liners.")
     if any("no bold context signposts found" in w for w in diag.get("warnings", [])):
         tip.append("SMART BREVITY SIGNPOSTS: Include bolded context guide words (e.g. **Why it matters:**, **The big picture:**, **Where this bites:** / **What I'd watch:**, **The catch:**).")
     if tip:

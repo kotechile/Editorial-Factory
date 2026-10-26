@@ -67,6 +67,13 @@ The **TOC is render-time only** — the site derives it from the section heading
   or fewer, so every pass after it inherited staccato. Write connected sentences of roughly 14–22 words
   with deliberate variation, let one sentence carry a cause and its consequence, and keep at most one
   eight-word-or-fewer sentence per paragraph. Never drop a figure, a name or a citation to fit that.
+  **Paragraphs run 3–5 sentences and never more than 6** (owner decision 2026-10-26; the old 1–3 cap
+  measured 3.6 sentences a paragraph on published work and was the thing flattening the argument).
+  Depth comes from sentences per paragraph, not from longer sentences: the same piece at 26.8 words
+  a sentence scored 51.9 and read thinner than the 17.8-word version at 5-sentence paragraphs.
+  **Gloss every specialist term in place while drafting** — the gate's jargon list is nearly empty,
+  so nothing downstream catches "call site", "ratchet", "Btu" or "goods-receiving"; the fix has to
+  happen on the way in (`executive-editor` skill carries the standard and the term table).
 - **The title's content words must appear verbatim (substring) in the first ~600 words — inflections do not count (learned 2026-10-14).** `headline_score.lead_delivery`/the honesty rule checks each title content word as a plain substring of the opening: a title reading "Why Your Card **Serves** 1.6" scores 100 STRONG standalone but reports `lead_ok: False` when the lead says "**served** about 1.6 requests a second", and the pre-publish gate will then re-cut the headline. Write the lead in the title's own inflection ("one card **serves** about 1.6 requests a second") or check with `python3 -c "import sys,headline_score as hs; print(hs.score('<title>', body=open('<draft>').read()))"` before the accessibility gate. Up to `max(1, len(content_words)//3)` of them may be absent, so one missing word clears — every additional one re-cuts the title.
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
   **A draft must emit `<!-- tldr -->` itself (learned 2026-10-14).** The marker set is gated on the *draft*

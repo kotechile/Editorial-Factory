@@ -39,7 +39,7 @@ SMART BREVITY STYLING PRINCIPLES:
    - Strip out passive verbs, weak adverbs ("basically", "materially", "fundamentally"), and bloated "10-dollar" corporate jargon.
    - Prefer short, single-syllable, visual words that paint a clear picture.
 6. PARAGRAPH DISCIPLINE & SENTENCE RHYTHM:
-   - Keep paragraphs brief: 1 to 3 sentences maximum. A paragraph may hold one idea across two sentences; do not split a single thought into two paragraphs.
+   - Keep paragraphs to 3-5 sentences, never more than 6. Depth comes from sentences per paragraph, not from longer sentences: one idea may run to five sentences, but never split a single thought across two paragraphs.
    - Write CONNECTED sentences, roughly 14-22 words with real variation. One sentence may carry a cause and its consequence ("X, so Y" / "X: Y"), which is what keeps the prose from reading like a list.
    - At most ONE sentence of 8 words or fewer per paragraph, and never a run of short declaratives. A claim and the consequence that follows it belong in the same sentence unless each needs its own emphasis.
    - Never shorten a sentence to raise the Flesch score: the lever is plain WORDS. Shortening scores the same and reads worse.

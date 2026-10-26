@@ -49,7 +49,9 @@ Introduce supporting context using standardized H2 headers (`## `).
 - Translate domain jargon into plain English or add an immediate short parenthetical gloss.
 
 ### 3.6 Paragraph Discipline & Sentence Rhythm
-- Keep paragraphs brief: **1 to 3 sentences maximum**.
+- Keep paragraphs **3 to 5 sentences, never more than 6**. Depth comes from sentences per
+  paragraph, not from longer sentences: the same piece at 26.8 words/sentence scored 51.9 and read
+  thinner than the 17.8-word version at 5-sentence paragraphs (owner decision 2026-10-26).
 - One idea per paragraph — but a paragraph may carry that idea across two sentences. Do **not** split a single thought into two paragraphs.
 - Write **connected sentences, ~14-22 words with real variation**. One sentence may hold a cause and its consequence ("X, so Y"; "X: Y").
 - At most **one** sentence of 8 words or fewer per paragraph, and never a run of short declaratives. Never shorten a sentence to move the Flesch score — the lever is plain words, and a choppy body scores the same while reading worse.
@@ -170,7 +172,7 @@ retries per section).
 | `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; lacks an honest limitation / counter-argument (**The catch:** or **Between the lines:**). |
 | `<!-- tldr -->` | lacks the 4-part schema (**The Big Shift**, **Why It Matters**, **What I'd Watch** with sub-bullet definitions, **The Catch**); fails to explain what the article is about; reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |
 
-After every section passes, run ONE final **whole-piece pass**: coherence, cadence, paragraph discipline (max 3 sentences per paragraph), and confirm no AI-tell or empty transition remains anywhere.
+After every section passes, run ONE final **whole-piece pass**: coherence, cadence, paragraph discipline (3-5 sentences, never more than 6), and confirm no AI-tell or empty transition remains anywhere.
 
 ---
 

@@ -147,7 +147,10 @@ def jargon_hits(text):
 def check_smart_brevity(raw_text, body_text):
     """Diagnose Smart Brevity compliance (advisory):
     1. H2/H3 headers target <= 6 words.
-    2. Paragraph sentence count: max 3 sentences per paragraph.
+    2. Paragraph sentence count: 3-5 sentences per paragraph, warn above 6.
+       (Owner decision 2026-10-26: the old 1-3 cap was producing choppy, shallow prose —
+       relaxing the paragraph to 3-6 sentences while keeping sentences at 15-19 words
+       measured +20% length, +6 Flesch points on the same article.)
     3. Standardized context signposts: **Why it matters:**, **The big picture:**, etc.
     """
     warns = []
@@ -171,10 +174,10 @@ def check_smart_brevity(raw_text, body_text):
         if p.startswith("#") or p.startswith("-") or p.startswith("*") or p.startswith(">") or p.startswith("```"):
             continue
         sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", p) if s.strip()]
-        if len(sents) > 3:
+        if len(sents) > 6:
             long_paras += 1
     if long_paras > 0:
-        warns.append(f"Smart Brevity: {long_paras} paragraph(s) > 3 sentences (aim for 1-3 max)")
+        warns.append(f"Smart Brevity: {long_paras} paragraph(s) > 6 sentences (aim for 3-5, max 6)")
 
     # 3. Context signposts & By the numbers
     signpost_patterns = [
