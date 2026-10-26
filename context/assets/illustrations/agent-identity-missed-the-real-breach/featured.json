@@ -1,0 +1,112 @@
+{
+  "slug": "agent-identity-missed-the-real-breach",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A brass key left in the lock of a brushed steel server rack in a dark data hall.",
+      "caption": "The most critical breaches stem from valid keys left exposed, bypassing complex identity layers entirely.",
+      "title": "Agent Identity Exposed Key",
+      "bytes": 296478,
+      "sha256": "sha256:b4b37c26e501dc9030d00f68061600ab"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A cinematic film still of a heavy brass physical key left inserted into the lock of a brushed steel server rack in a dark data hall. 35mm anamorphic lens, extreme asymmetric off-centre framing. A single strong practical light source casting harsh directional light from the left, highlighting the brass key against the deep slate grey and cobalt rack. Crisp atmospheric depth, restrained teal-and-amber palette, shallow depth of field, no people, motion implied rather than shown, fine film grain.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, UI, text, people, faces, hands, labels",
+  "rationale": "A cinematic still grounds the abstract cybersecurity concept of an exposed static key in a physical data environment, emphasizing the real vulnerability over theoretical software layers.",
+  "cue": "a key left outside the door",
+  "subject": "a physical key left in a server rack lock",
+  "core_thesis": "AI agent breaches are caused by exposed static keys and poor network egress controls, not a lack of dynamic agent identity layers.",
+  "core_conflict": "Selling complex agent identity layers versus the reality of valid keys left exposed in public repositories.",
+  "composition": "extreme asymmetric off-centre framing",
+  "alt_text": "The Agent Identity Myth. A brass key left in the lock of a brushed steel server rack in a dark data hall.",
+  "caption": "The Agent Identity Myth: Why identity layers cannot stop agents with stolen keys.",
+  "title": "The Agent Identity Myth",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-identity-missed-the-real-breach/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 340265,
+  "sha256": "sha256:a8cf6f6fc09be57eb03a87221732047a8e018697f8f7d804caee9d68401b0e43",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 340265,
+    "quality": 88,
+    "sha256": "sha256:a8cf6f6fc09be57eb03a87221732047a8e018697f8f7d804caee9d68401b0e43",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:c989f327e900378d6e0620de37a3e5716d1cf8d50b0b7e10a293b07f98e5beed",
+  "render_phash": "5b0f924fc24de33fe27fe22fe34f6b6b6f4b6a5e2a4f234f224e220e224f224f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A brass key is inserted into the lock of a dark metal server rack door.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a physical key in a server rack, which metaphorically aligns with the article's focus on key hygiene and access controls."
+  },
+  "source_hash": "sha256:f7724f6473a08746c1767ad4779f3093",
+  "source_chars": 6175,
+  "task_id": "16835511025ebac3e9f0c4aeccb5285b",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/16835511025ebac3e9f0c4aeccb5285b_1793013100475.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A cinematic film still of a heavy brass physical key left inserted into the lock of a brushed steel server rack in a dark data hall. 35mm anamorphic lens, extreme asymmetric off-centre framing. A single strong practical light source casting harsh directional light from the left, highlighting the brass key against the deep slate grey and cobalt rack. Crisp atmospheric depth, restrained teal-and-amber palette, shallow depth of field, no people, motion implied rather than shown, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T11:11:48+00:00",
+  "overlay": {
+    "kicker": "AI AGENTS // KEY EXPOSURE",
+    "title": "THE AGENT IDENTITY MYTH",
+    "hook": "Why identity layers cannot stop agents with stolen keys",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.65,
+    "target": 4.5,
+    "clutter": 0.053,
+    "region_rgb": [
+      16,
+      21,
+      23
+    ],
+    "binding_rgb": [
+      20,
+      30,
+      32
+    ],
+    "title_lines": [
+      "THE AGENT",
+      "IDENTITY MYTH"
+    ],
+    "subject": 0.008,
+    "ink_subject": 0.003,
+    "spike": 0.028,
+    "generated_at": "2026-10-26T11:11:48+00:00"
+  }
+}

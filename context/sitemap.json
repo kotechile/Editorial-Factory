@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T10:57:58Z",
+  "updated_at": "2026-10-26T11:12:35Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3520,6 +3520,24 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-25",
+      "public": false
+    },
+    {
+      "slug": "2026-10-26_agent-identity-missed-the-real-breach",
+      "title": "Agent Identity: The Wrong Layer",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-26",
       "public": false
     },
     {
