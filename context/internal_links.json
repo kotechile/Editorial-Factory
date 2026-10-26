@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:16:41+00:00",
+  "generated_at": "2026-10-26T14:16:11+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -223,7 +223,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Model the compounding differences between standard cost-of-living raises and strategic career hopping over a 10-year horizon.",
+      "excerpt": "A 3% raise and a move for 15% are the same decision, repeated. This runs both over ten years, including the equity you give up by leaving.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -252,7 +252,7 @@
       "kind": "tool",
       "id": null,
       "slug": "money-flow",
-      "title": "Automated Income Waterfall Simulator",
+      "title": "Where Each Paycheck Goes: Money Flow Simulator",
       "url": "https://giniloh.com/calculators/money-flow/",
       "path": "/calculators/money-flow/",
       "sites_live": {
@@ -261,7 +261,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Visualize automated account routing: from checking, through retirement matches, HSAs, and index fund allocation.",
+      "excerpt": "Route each paycheck across savings, retirement match, tax-sheltered accounts and index funds, then see what the order is worth over ten years.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -290,7 +290,7 @@
       "kind": "tool",
       "id": null,
       "slug": "coffee-arbitrage",
-      "title": "Home Espresso Cost-per-Use Calculator",
+      "title": "Espresso Cost per Cup: Machine vs. Caf\u00e9",
       "url": "https://giniloh.com/calculators/coffee-arbitrage/",
       "path": "/calculators/coffee-arbitrage/",
       "sites_live": {
@@ -299,7 +299,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Determine if investing in a premium home espresso setup beats your daily caf\u00e9 runs. Real-time cost-per-use calculator.",
+      "excerpt": "A $3,000 machine is cheap at four shots a day and expensive at four a month. Enter your real habit and see the cost per cup.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -309,7 +309,7 @@
       "kind": "tool",
       "id": null,
       "slug": "tech-debt-repair",
-      "title": "Tech Repair vs. Replace Optimizer",
+      "title": "Repair or Replace a Laptop or Phone",
       "url": "https://giniloh.com/calculators/tech-debt-repair/",
       "path": "/calculators/tech-debt-repair/",
       "sites_live": {
@@ -318,7 +318,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Calculate if repairing an old laptop or phone is a smart fix or a financial liability. Uses the adapted consumer 1,500 index rule.",
+      "excerpt": "A repair that buys two more years is cheap; one that buys six months is not. Compare the quote with a replacement, per year of use.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -328,7 +328,7 @@
       "kind": "tool",
       "id": null,
       "slug": "no-code-terminator",
-      "title": "Tinkering Tax vs. SaaS Upgrade Calculator",
+      "title": "Spreadsheet vs. Real Software: Workaround Cost",
       "url": "https://giniloh.com/calculators/no-code-terminator/",
       "path": "/calculators/no-code-terminator/",
       "sites_live": {
@@ -337,7 +337,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Calculate the hidden tinkering tax of manual workarounds and sheets vs upgrading to HubSpot CRM. Focus optimization calculator.",
+      "excerpt": "Rebuilding the same automation every month is a cost even when nobody invoices it. Price the hours against the software that replaces them.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -1963,6 +1963,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
+      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
+      "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+      "path": "/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
+      "sites_live": {
+        "wellroost.com": "/ny-heat-pump-rebate-double-payouts-for-sealed-homes/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
+      "modified": "2026-09-13T00:39:31",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "panel-upgrade-80-percent-test",
       "title": "Your Panel Doesn't Need More Amps: The 80% Test",
       "url": "https://wellroost.com/panel-upgrade-80-percent-test/",
@@ -2078,6 +2101,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
+      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
+      "url": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+      "path": "/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
+      "sites_live": {
+        "wellroost.com": "/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
+      "modified": "2026-09-07T13:34:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
       "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
       "url": "https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
@@ -2094,6 +2140,29 @@
       ],
       "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
       "modified": "2026-10-20T21:45:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
+      "title": "Emporia Vue: How to Cut Energy Bills",
+      "url": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+      "path": "/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
+      "sites_live": {
+        "wellroost.com": "/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the panel and placing CT clamps to handling 240V double-pole circuits and knowing when to call an electrician. Then we walk through the Emporia app: account setup, Wi-Fi pairing, naming circuits, tariffs, real-time and historical graphs, solar/net metering, notifications, and data export. We also test accuracy, latency, connectivity, and firmware quirks, compare Vue generations and Sense, and share real kWh case studies with payback math. Electricity prices keep climbing; every month without circuit-level visibility is money left on the table. Try the app\u2019s demo mode today\u2014then decide if Vue 3 belongs in your panel.",
+      "modified": "2026-09-16T01:44:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2216,6 +2285,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-50-meter-reads-78-its-metal",
+      "title": "Why Your $49.97 Meter Reads 78%",
+      "url": "https://wellroost.com/your-50-meter-reads-78-its-metal/",
+      "path": "/your-50-meter-reads-78-its-metal/",
+      "sites_live": {
+        "wellroost.com": "/your-50-meter-reads-78-its-metal/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "A homeowner's pinless meter flashed a 78% reading on a dry wall because the tool picked up a steel corner edge hidden behind the paint.",
+      "modified": "2026-10-25T15:17:18",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-250-imager-needs-15-degrees",
       "title": "Your $250 Imager Needs 15 Degrees",
       "url": "https://wellroost.com/your-250-imager-needs-15-degrees/",
@@ -2232,6 +2324,29 @@
       ],
       "excerpt": "The $250 imager a federal building-science guide points homeowners to does not see through a wall; it reads the heat of the wall's own surface, which is why\u2026",
       "modified": "2026-10-24T19:43:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-550-battery-spare-is-wrong",
+      "title": "Your $550 Battery Spare Is Wrong",
+      "url": "https://wellroost.com/your-550-battery-spare-is-wrong/",
+      "path": "/your-550-battery-spare-is-wrong/",
+      "sites_live": {
+        "wellroost.com": "/your-550-battery-spare-is-wrong/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "Buying a spare snow blower battery is a $549 mistake, driven by how makers price their packed kits. EGO (the outdoor power equipment brand) sells its 24-inch\u2026",
+      "modified": "2026-10-25T14:57:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2377,6 +2492,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-next-bedroom-417500",
+      "title": "Your Next Bedroom Costs $417,500",
+      "url": "https://wellroost.com/your-next-bedroom-417500/",
+      "path": "/your-next-bedroom-417500/",
+      "sites_live": {
+        "wellroost.com": "/your-next-bedroom-417500/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Driven by a frozen market, your next bedroom costs $417,500 if you buy it rather than build it. Pending home sales fell 7.3% in September from August and\u2026",
+      "modified": "2026-10-26T11:40:37",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-nonrenewal-isnt-final-count-120-days",
       "title": "Your Nonrenewal Isn't Final: Count 120 Days",
       "url": "https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/",
@@ -2423,6 +2561,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-repair-budget-buys-7-5-percent-less",
+      "title": "Your Repair Budget's 7.5% Squeeze",
+      "url": "https://wellroost.com/your-repair-budget-buys-7-5-percent-less/",
+      "path": "/your-repair-budget-buys-7-5-percent-less/",
+      "sites_live": {
+        "wellroost.com": "/your-repair-budget-buys-7-5-percent-less/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Spending on home repairs is set to grow 1.5 percent while the goods behind those jobs are up 9.7 percent, so your repair budget's reach shrinks: it buys\u2026",
+      "modified": "2026-10-26T12:19:51",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-upgrades-9-silent-reset",
       "title": "Your Upgrade's $9 Silent Reset",
       "url": "https://wellroost.com/your-upgrades-9-silent-reset/",
@@ -2462,6 +2623,29 @@
       ],
       "excerpt": "7 days' notice now rewrites which Canadian goods carry a 50 percent duty, and Friday's order moved the line both ways at once.",
       "modified": "2026-10-24T06:41:40",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "33-of-your-shrink-isnt-theft",
+      "title": "33% of Your Shrink Isn't Theft",
+      "url": "https://aichieve.net/33-of-your-shrink-isnt-theft/",
+      "path": "/33-of-your-shrink-isnt-theft/",
+      "sites_live": {
+        "aichieve.net": "/33-of-your-shrink-isnt-theft/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "33% of your shrink isn't theft, and that number now sits on the receiving dock instead of the front door. The study behind it comes after fielding across\u2026",
+      "modified": "2026-10-26T13:16:58",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2577,6 +2761,29 @@
       ],
       "excerpt": "Two agent frameworks ran the same eleven coding tasks on the same machine this month. One fired nearly 39x more system process launches per tool call than\u2026",
       "modified": "2026-10-21T11:12:13",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "agent-identity-missed-the-real-breach",
+      "title": "Agent Identity: The Wrong Layer",
+      "url": "https://aichieve.net/agent-identity-missed-the-real-breach/",
+      "path": "/agent-identity-missed-the-real-breach/",
+      "sites_live": {
+        "aichieve.net": "/agent-identity-missed-the-real-breach/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "On 15 October India's cyber agency put out a Critical alert saying AI agents had read live business records at Indian companies, and that not one of those\u2026",
+      "modified": "2026-10-26T11:17:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5207,6 +5414,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-49-cut-was-actually-9",
+      "title": "Your 49% Cut Was Actually 9%",
+      "url": "https://aichieve.net/your-49-cut-was-actually-9/",
+      "path": "/your-49-cut-was-actually-9/",
+      "sites_live": {
+        "aichieve.net": "/your-49-cut-was-actually-9/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A Hydro Flask owner's inventory cut was reported as 49%. Its filing says $48.6 million, or 9.2%, and the quarter's margin gain came mostly from a tariff refund.",
+      "modified": "2026-10-26T12:51:10",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-61-point-growth-was-a-refill",
       "title": "Your 6.1-Point Growth Isn't Demand",
       "url": "https://aichieve.net/your-61-point-growth-was-a-refill/",
@@ -5269,6 +5499,29 @@
       ],
       "excerpt": "The North American Electric Reliability Corporation (NERC) just cleared its first mandatory grid rules for data centers on a final stakeholder ballot.",
       "modified": "2026-10-20T11:13:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-agent-contract-gap-63-unmet",
+      "title": "Your Agent's Contract Gap: 63% Unmet",
+      "url": "https://aichieve.net/your-agent-contract-gap-63-unmet/",
+      "path": "/your-agent-contract-gap-63-unmet/",
+      "sites_live": {
+        "aichieve.net": "/your-agent-contract-gap-63-unmet/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Amid a vendor push to lock down AI workloads, 63% of the rules an agent depends on go unmet at the call site. This contract gap sits inside the sandbox\u2026",
+      "modified": "2026-10-26T10:47:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5705,7 +5958,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your mold stays your property while it sits in a supplier's plant, and customs bills its value onto every unit made with it, because a tool you supply free\u2026",
-      "modified": "2026-10-24T18:13:21",
+      "modified": "2026-10-24T18:19:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5757,6 +6010,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1187,
+      "slug": "33-of-your-shrink-isnt-theft",
+      "title": "33% of Your Shrink Isn&#8217;t Theft",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-26T13:16:58",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1183,
+      "slug": "your-49-cut-was-actually-9",
+      "title": "Your 49% Cut Was Actually 9%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-26T12:51:10",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1180,
+      "slug": "agent-identity-missed-the-real-breach",
+      "title": "Agent Identity: The Wrong Layer",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-26T11:17:18",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1176,
+      "slug": "your-agent-contract-gap-63-unmet",
+      "title": "Your Agent&#8217;s Contract Gap: 63% Unmet",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-26T10:47:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -6864,62 +7173,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 537,
-      "slug": "agent-audit-trail-not-evidence",
-      "title": "An Agent&#8217;s Logs Aren&#8217;t Evidence: What to Capture, and How Long to Keep It",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T01:57:19",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 541,
-      "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-      "title": "$915M Illusion: Your AI Judge Moves",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:38",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 554,
-      "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
-      "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T01:54:19",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 55,
-      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
-      "title": "Emporia Vue: How to Cut Energy Bills",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-09-16T01:44:14",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -6930,34 +7183,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-09-15T02:00:20",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 14,
-      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
-      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-09-13T00:39:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 9,
-      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
-      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-09-07T13:34:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7196,20 +7421,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-10T18:25:28",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 777,
-      "slug": "staggered-lockup-six-selling-decisions",
-      "title": "SpaceX&#8217;s Staggered Lockup: Six Windows, Not One",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T18:25:35",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

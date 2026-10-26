@@ -12,7 +12,7 @@ meta_title: "Token Prices Just Halved. The CFO Still Can't Read the Bill."
 meta_title_source: derived_from_title
 meta_description: "OpenAI and Anthropic slashed frontier Artificial Intelligence (AI) token prices on September 22."
 meta_description_source: derived_from_lead
-image_path: "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.png"
+image_path: "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
 image_alt: "The Unexplainable AI Bill. Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop."

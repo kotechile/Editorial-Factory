@@ -1,6 +1,6 @@
 {
   "slug": "ai-spend-27t-cost-visibility-mandate",
-  "revision": 23,
+  "revision": 24,
   "history": [
     {
       "revision": 1,
@@ -178,6 +178,14 @@
     },
     {
       "revision": 22,
+      "alt_text": "The AI Cost Control Mandate. Isometric technical cutaway of an AI processing stack with precision metering gates embedded in",
+      "caption": "The AI Cost Control Mandate: Buyers demand built-in tracking for every AI purchase.",
+      "title": "The AI Cost Control Mandate",
+      "bytes": 407810,
+      "sha256": "sha256:00ab9a08f84271a1985c9c0c006e2a036ce4af67282035e96ec84376c73a281a"
+    },
+    {
+      "revision": 23,
       "alt_text": "The AI Cost Control Mandate. Isometric technical cutaway of an AI processing stack with precision metering gates embedded in",
       "caption": "The AI Cost Control Mandate: Buyers demand built-in tracking for every AI purchase.",
       "title": "The AI Cost Control Mandate",

@@ -1,6 +1,6 @@
 {
   "slug": "token-prices-halved-cfo-cant-read-bill",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -83,6 +83,14 @@
       "title": "The Unexplainable AI Bill",
       "bytes": 805735,
       "sha256": "sha256:d15f4cc5b20e44c8b52cda9d1c8bdbf6a878fe86f07d8bb75475f41246f3e8bb"
+    },
+    {
+      "revision": 11,
+      "alt_text": "The Unexplainable AI Bill. Opaque modular server housing with a heavily padlocked cover on a neutral seamless backdrop.",
+      "caption": "The Unexplainable AI Bill: Price cuts cannot fix an unexplainable enterprise AI bill.",
+      "title": "The Unexplainable AI Bill",
+      "bytes": 805735,
+      "sha256": "sha256:d15f4cc5b20e44c8b52cda9d1c8bdbf6a878fe86f07d8bb75475f41246f3e8bb"
     }
   ],
   "style": "clay_render",
@@ -106,12 +114,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 805735,
-  "sha256": "sha256:d15f4cc5b20e44c8b52cda9d1c8bdbf6a878fe86f07d8bb75475f41246f3e8bb",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/token-prices-halved-cfo-cant-read-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 233615,
+  "sha256": "sha256:d3563ccb8264564b49e40ef8e09b56961d1dd7f8e51a60664cedcfa37d473cf7",
   "source_hash": "sha256:badc2990c8fe46a450e4f54cc1146075",
   "source_chars": 6822,
   "task_id": "12c3440324ca4bb328efce0b99b900a2",
@@ -133,29 +141,42 @@
     "kicker": "ENTERPRISE AI // FINOPS BILLING",
     "title": "THE UNEXPLAINABLE AI BILL",
     "hook": "Price cuts cannot fix an unexplainable enterprise AI bill",
-    "anchor": "top-left",
+    "anchor": "top-right",
     "light": false,
     "scrim": 60,
-    "contrast": 4.88,
+    "contrast": 4.61,
     "target": 4.5,
-    "clutter": 0.052,
+    "clutter": 0.163,
     "region_rgb": [
+      135,
       132,
-      130,
-      125
+      127
     ],
     "binding_rgb": [
-      129,
-      128,
-      123
+      125,
+      122,
+      117
     ],
     "title_lines": [
       "THE UNEXPLAINABLE",
       "AI BILL"
     ],
-    "subject": 0.055,
-    "ink_subject": 0.022,
-    "spike": 0.19,
+    "subject": 0.108,
+    "ink_subject": 0.061,
+    "spike": 0.298,
     "generated_at": "2026-10-02T14:23:53+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 233615,
+    "quality": 88,
+    "sha256": "sha256:d3563ccb8264564b49e40ef8e09b56961d1dd7f8e51a60664cedcfa37d473cf7",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

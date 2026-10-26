@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-25T14:16:41+00:00
+# Internal-link candidates — 2026-10-26T14:16:11+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -46,23 +46,23 @@ Category hubs this front serves: —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
 - [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — —
 - [AI Career Radar (tool)](https://giniloh.com/calculators/career-ai-resilience/) — —
-- [Automated Income Waterfall Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 - [Build vs Buy Software Amortization Calculator (tool)](https://giniloh.com/calculators/build-vs-buy/) — —
+- [Espresso Cost per Cup: Machine vs. Café (tool)](https://giniloh.com/calculators/coffee-arbitrage/) — —
 - [Expat Financial & International Tax Evaluator (tool)](https://giniloh.com/calculators/expat-evaluator/) — —
 - [Geographic Relocation & Tax Adjustment Modeler (tool)](https://giniloh.com/calculators/relocation-cost/) — —
-- [Home Espresso Cost-per-Use Calculator (tool)](https://giniloh.com/calculators/coffee-arbitrage/) — —
 - [Job-Hop vs. Retention Compensation Calculator (tool)](https://giniloh.com/calculators/raise-velocity/) — —
 - [Lease Break Penalty & Offset Estimator (tool)](https://giniloh.com/calculators/lease-break/) — —
 - [Local GPU vs Cloud Break-even Calculator (tool)](https://giniloh.com/calculators/gpu-breakeven/) — —
 - [RSU Hold vs Sell Calculator with Concentration Risk (tool)](https://giniloh.com/calculators/rsu-hold-vs-sell/) — —
 - [Rent vs Buy Calculator with Opportunity Cost (tool)](https://giniloh.com/calculators/rent-vs-buy/) — — — also served by wellroost.com/calculators/rent-vs-buy/
+- [Repair or Replace a Laptop or Phone (tool)](https://giniloh.com/calculators/tech-debt-repair/) — —
 - [Secondary Tender vs IPO Calculator for Startup Equity (tool)](https://giniloh.com/calculators/secondary-tender-calculator/) — —
-- [Tech Repair vs. Replace Optimizer (tool)](https://giniloh.com/calculators/tech-debt-repair/) — —
-- [Tinkering Tax vs. SaaS Upgrade Calculator (tool)](https://giniloh.com/calculators/no-code-terminator/) — —
+- [Spreadsheet vs. Real Software: Workaround Cost (tool)](https://giniloh.com/calculators/no-code-terminator/) — —
 - [Total Compensation & Equity Visualizer (tool)](https://giniloh.com/calculators/total-comp/) — —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
+- [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 38 live article(s), 22 other target(s)
+## wellroost.com — 45 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -75,17 +75,22 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy](https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/) — Energy & Efficiency
 - [California Legalizes Plug-In Home Solar Panels](https://wellroost.com/california-legalizes-plug-in-home-solar-panels/) — Energy & Efficiency
 - [Cheap Gas, $20,000 Pipe: The Winter Heat Trap](https://wellroost.com/cheapest-fuel-priciest-pipe/) — Energy & Efficiency
+- [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
+- [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Retainage Trap: 5 Percent, Not 15](https://wellroost.com/hold-back-capped-at-5-percent/) — Tools & Equipment
 - [Snow Robot Stops at 6,000 ft²: It Docks](https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/) — Yard Robots & Automation
+- [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
 - [The Hidden Lien Clock Behind Your Remodel Payments](https://wellroost.com/mechanics-lien-clock-payment-release/) — Tools & Equipment
 - [The Remodel That Pays You Back Isn’t the One You Want](https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/) — Energy & Efficiency
 - [The local-first smart home cost squeeze: Cloud and hardware prices rise](https://wellroost.com/local-first-smart-home-cost-squeeze/) — Smart Home & Security
 - [Water Damage: Your $15,400 Silent Loss](https://wellroost.com/silent-15400-home-loss/) — Energy & Efficiency
 - [Water Leak Monitors: The Flow Rate That Decides If It Pays](https://wellroost.com/water-leak-monitor-rate-threshold/) — Smart Home & Security
+- [Why Your $49.97 Meter Reads 78%](https://wellroost.com/your-50-meter-reads-78-its-metal/) — Home Diagnostic Tools
 - [Windows: 13% Is the Best Case, Not Average](https://wellroost.com/windows-13-percent-best-case/) — Energy & Efficiency
 - [Your $250 Imager Needs 15 Degrees](https://wellroost.com/your-250-imager-needs-15-degrees/) — Home Diagnostic Tools
+- [Your $550 Battery Spare Is Wrong](https://wellroost.com/your-550-battery-spare-is-wrong/) — Outdoor Power & Snow Equipment
 - [Your 1-Acre Mower's 0.4-Acre Trap](https://wellroost.com/your-1-acre-mowers-04-acre-trap/) — Yard Robots & Automation
 - [Your 49% Discount Isn't All Roof](https://wellroost.com/your-49-discount-isnt-all-roof/) — Home Cost Decisions
 - [Your 5% Deductible Risks Your Claim](https://wellroost.com/your-5-deductible-risks-your-claim/) — Home Cost Decisions
@@ -98,9 +103,11 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
 - [Your Mat Costs 50 Blower Charges](https://wellroost.com/your-heated-mat-costs-50-times-the-blower/) — Outdoor Power & Snow Equipment
 - [Your Monitor's 77% Guess: Where It Fails](https://wellroost.com/monitor-77-percent-guess-where-it-fails/) — Smart Home & Security
+- [Your Next Bedroom Costs $417,500](https://wellroost.com/your-next-bedroom-417500/) — Energy & Efficiency
 - [Your Nonrenewal Isn't Final: Count 120 Days](https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/) — Home Cost Decisions
 - [Your Panel Doesn't Need More Amps: The 80% Test](https://wellroost.com/panel-upgrade-80-percent-test/) — Smart Home & Security
 - [Your Remodel Loses to 149% Growth](https://wellroost.com/your-remodel-loses-to-149-growth/) — Tools & Equipment
+- [Your Repair Budget's 7.5% Squeeze](https://wellroost.com/your-repair-budget-buys-7-5-percent-less/) — Energy & Efficiency
 - [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
 - [Your Upgrade's $9 Silent Reset](https://wellroost.com/your-upgrades-9-silent-reset/) — Energy & Efficiency
 - [€1.2 Billion for Shelly: Your Local API Unwritten](https://wellroost.com/local-api-isnt-in-the-contract/) — Smart Home & Security
@@ -127,7 +134,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 137 live article(s), 8 other target(s)
+## aichieve.net — 141 live article(s), 8 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -137,6 +144,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [1.016M Non-GPUs: Your Chip Stopped Deciding](https://aichieve.net/your-chip-stopped-deciding/) — Major Purchases & Assets
 - [2-Week Notice Breaks Your Audit Trail](https://aichieve.net/model-retirement-breaks-audit-trail/) — Mental Models & Strategy
 - [270 Attacks: Your Green Tests Are Blind](https://aichieve.net/one-skill-too-many-green-test/) — Autonomous & Agentic Workflows
+- [33% of Your Shrink Isn't Theft](https://aichieve.net/33-of-your-shrink-isnt-theft/) — Supply Chain & Operations
 - [4 Warehouses Halve Stock. Yours Won't](https://aichieve.net/four-warehouses-halve-stock/) — Supply Chain & Operations
 - [49.9% On Time: Shippers Stuck in the Gap](https://aichieve.net/shippers-stuck-in-the-gap/) — Supply Chain & Operations
 - [60% Air Deals: Your Stock Math Breaks](https://aichieve.net/air-freight-wont-price-a-year/) — Supply Chain & Operations
@@ -148,6 +156,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [A Late Container's Bill Carries Two 30-Day Clocks](https://aichieve.net/demurrage-invoice-30-day-clocks/) — Supply Chain & Operations
 - [AI Coding Seats: The 75-Point Gap](https://aichieve.net/ai-coding-seats-measure-or-renew/) — Mental Models & Strategy
 - [AWS Cannot Restore Bahrain: 144 Services Lost](https://aichieve.net/aws-cannot-restore-bahrain/) — Mental Models & Strategy
+- [Agent Identity: The Wrong Layer](https://aichieve.net/agent-identity-missed-the-real-breach/) — Mental Models & Strategy
 - [Agent Memory Poisoning: Guard the Write, Not the Prompt](https://aichieve.net/agent-memory-poisoning-write-path/) — Autonomous & Agentic Workflows
 - [Agent Timeouts: Pick 0.1%, Not a Round Number](https://aichieve.net/agent-timeout-false-alarm-budget/) — Autonomous & Agentic Workflows
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](https://aichieve.net/agentic-ai-adoption-soars-but-profits-stall-in-2026/) — AI Stack & Tool TCO
@@ -234,6 +243,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your 25-Minute Review Costs $66.67](https://aichieve.net/review-minute-costs-66-dollars/) — AI Stack & Tool TCO
 - [Your 3.0.0 Feed Stuck Until 2027](https://aichieve.net/your-3-0-0-feed-stuck-until-2027/) — Supply Chain & Operations
 - [Your 32GB Card, Gone: 41% Memory Hike](https://aichieve.net/your-32gb-card-gone/) — Major Purchases & Assets
+- [Your 49% Cut Was Actually 9%](https://aichieve.net/your-49-cut-was-actually-9/) — Supply Chain & Operations
 - [Your 6.1-Point Growth Isn't Demand](https://aichieve.net/your-61-point-growth-was-a-refill/) — Supply Chain & Operations
 - [Your 68K Tokens Cost Every Step](https://aichieve.net/your-68k-tokens-cost-every-step/) — Major Purchases & Assets
 - [Your 9% Drop: Not the Model](https://aichieve.net/rerun-diff-measures-gpu/) — AI Stack & Tool TCO
@@ -242,6 +252,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Agent Fleet's 39x Gap: One Meter Nobody Budgets](https://aichieve.net/agent-fleet-two-meters/) — Autonomous & Agentic Workflows
 - [Your Agent Team Loses 28 Points: The 188x Bill](https://aichieve.net/your-agent-team-loses-28-points/) — Autonomous & Agentic Workflows
 - [Your Agent's 84,000-Write Mistake](https://aichieve.net/agent-writes-stale-basis/) — Autonomous & Agentic Workflows
+- [Your Agent's Contract Gap: 63% Unmet](https://aichieve.net/your-agent-contract-gap-63-unmet/) — Autonomous & Agentic Workflows
 - [Your Agent's Next Step: 11-14x Likelier to Fail](https://aichieve.net/gate-the-step-not-the-model/) — Autonomous & Agentic Workflows
 - [Your CI Bill: 232 Hours Before You Build](https://aichieve.net/your-ci-bill-232-hours/) — AI Stack & Tool TCO
 - [Your Carbon Report Skips 2 Lines: Trucks Aren't Counted](https://aichieve.net/your-carbon-report-skips-2-lines/) — Supply Chain & Operations
@@ -279,6 +290,10 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1187 `33-of-your-shrink-isnt-theft` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1183 `your-49-cut-was-actually-9` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1180 `agent-identity-missed-the-real-breach` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1176 `your-agent-contract-gap-63-unmet` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1172 `your-tooling-assist-is-dutiable` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1167 `7-days-notice-rewrites-your-duty` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1158 `your-routes-5x-stop-gap` — published in the CMS but absent from the frontend sitemap
@@ -358,13 +373,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #810 `why-importers-forfeit-duty-refunds` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #795 `nearshoring-doesnt-move-the-trade-case` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #578 `kv-cache-is-the-concurrency-ceiling` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #537 `agent-audit-trail-not-evidence` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #541 `buying-ai-quality-when-the-score-belongs-to-the-judge` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #554 `the-cloud-bill-break-even-when-renting-servers-stops-paying` — published in the CMS but absent from the frontend sitemap
-- wellroost.com #55 `unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
-- wellroost.com #14 `ny-heat-pump-rebate-double-payouts-for-sealed-homes` — published in the CMS but absent from the frontend sitemap
-- wellroost.com #9 `swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1161 `why-your-fridge-upgrade-pays-12-50` — published in the CMS but absent from the frontend sitemap
@@ -382,4 +391,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #968 `three-forms-cost-more-than-tax` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #807 `self-hosting-break-even-one-hour-a-year` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #793 `home-assistant-cloud-rename-hardware-rent` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #777 `staggered-lockup-six-selling-decisions` — published in the CMS but absent from the frontend sitemap

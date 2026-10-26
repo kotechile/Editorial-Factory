@@ -1,6 +1,6 @@
 {
   "slug": "planning-ai-buys-capability-not-autonomy",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -83,6 +83,14 @@
       "title": "AI Won'T Run Supply Chains",
       "bytes": 248475,
       "sha256": "sha256:6ed41dd3933d0f2646eb37d352d0efb1cb02dfc9912fa3da038f10e370c0e175"
+    },
+    {
+      "revision": 11,
+      "alt_text": "AI Won'T Run Supply Chains. An industrial control building illuminated at dusk with warm light from windows.",
+      "caption": "AI Won'T Run Supply Chains: Millions spent on tech but humans still make the calls.",
+      "title": "AI Won'T Run Supply Chains",
+      "bytes": 248475,
+      "sha256": "sha256:6ed41dd3933d0f2646eb37d352d0efb1cb02dfc9912fa3da038f10e370c0e175"
     }
   ],
   "style": "architectural_night",
@@ -110,8 +118,8 @@
   "local_path": "context/assets/illustrations/planning-ai-buys-capability-not-autonomy/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 248475,
-  "sha256": "sha256:6ed41dd3933d0f2646eb37d352d0efb1cb02dfc9912fa3da038f10e370c0e175",
+  "bytes": 402916,
+  "sha256": "sha256:a4cc81ae1124a58ec4b7297b7de524bd4345572290a11a2ab55938a68b59f48b",
   "source_hash": "sha256:26f499300d9683416436f0af34d946fd",
   "source_chars": 4339,
   "task_id": "1841661b8b219ba9b7a45968da53e096",
@@ -131,29 +139,42 @@
     "kicker": "SUPPLY CHAIN PLANNING AI",
     "title": "AI WON'T RUN SUPPLY CHAINS",
     "hook": "Millions spent on tech but humans still make the calls",
-    "anchor": "top-right",
+    "anchor": "bottom-right",
     "light": true,
-    "scrim": 30,
-    "contrast": 4.86,
-    "target": 4.5,
-    "clutter": 0.18,
+    "scrim": 60,
+    "contrast": 5.73,
+    "target": 5.5,
+    "clutter": 0.262,
     "region_rgb": [
-      19,
-      107,
-      168
+      85,
+      87,
+      92
     ],
     "binding_rgb": [
-      19,
-      122,
-      189
+      139,
+      118,
+      89
     ],
     "title_lines": [
       "AI WON'T RUN",
       "SUPPLY CHAINS"
     ],
-    "subject": 0.133,
-    "ink_subject": 0.073,
-    "spike": 0.373,
+    "subject": 0.137,
+    "ink_subject": 0.083,
+    "spike": 0.351,
     "generated_at": "2026-10-01T14:22:28+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402916,
+    "quality": 84,
+    "sha256": "sha256:a4cc81ae1124a58ec4b7297b7de524bd4345572290a11a2ab55938a68b59f48b",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

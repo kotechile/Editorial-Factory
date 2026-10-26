@@ -1,6 +1,6 @@
 {
   "slug": "same-day-race-undoes-route-optimization",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -95,6 +95,14 @@
       "title": "Undoing Route Optimization",
       "bytes": 797996,
       "sha256": "sha256:01c279af66d3f71a6967c56882cbc186c9c7b764c0c8f0fa45845e520942c650"
+    },
+    {
+      "revision": 12,
+      "alt_text": "Undoing Route Optimization. A modular mechanical routing block pulling apart into separate disconnected tracks.",
+      "caption": "Undoing Route Optimization: Fast shipping undoes a decade of last-mile route gains.",
+      "title": "Undoing Route Optimization",
+      "bytes": 797996,
+      "sha256": "sha256:01c279af66d3f71a6967c56882cbc186c9c7b764c0c8f0fa45845e520942c650"
     }
   ],
   "style": "clay_render",
@@ -121,12 +129,12 @@
     "style": "clay_render",
     "model": "nanobanana"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/same-day-race-undoes-route-optimization/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 797996,
-  "sha256": "sha256:01c279af66d3f71a6967c56882cbc186c9c7b764c0c8f0fa45845e520942c650",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/same-day-race-undoes-route-optimization/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 260892,
+  "sha256": "sha256:99f25ca3a3cc03ad0c066c9b05764bfc8725d82098cbbb00be5ce61409e2ecb7",
   "source_hash": "sha256:ac255d48b8cd5be1050dea3ae7c57338",
   "source_chars": 3918,
   "task_id": "a6e0694e28659e2c292e29dabe86a917",
@@ -148,29 +156,42 @@
     "kicker": "LAST-MILE LOGISTICS // SAME-DAY DELIVERY",
     "title": "UNDOING ROUTE OPTIMIZATION",
     "hook": "Fast shipping undoes a decade of last-mile route gains",
-    "anchor": "top-right",
-    "light": false,
+    "anchor": "top-left",
+    "light": true,
     "scrim": 60,
-    "contrast": 4.94,
+    "contrast": 4.59,
     "target": 4.5,
-    "clutter": 0.102,
+    "clutter": 0.11,
     "region_rgb": [
-      148,
-      145,
-      138
+      131,
+      127,
+      117
     ],
     "binding_rgb": [
-      132,
-      129,
-      122
+      143,
+      140,
+      133
     ],
     "title_lines": [
       "UNDOING ROUTE",
       "OPTIMIZATION"
     ],
-    "subject": 0.013,
-    "ink_subject": 0.005,
-    "spike": 0.042,
+    "subject": 0.09,
+    "ink_subject": 0.065,
+    "spike": 0.193,
     "generated_at": "2026-10-03T14:57:48+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 260892,
+    "quality": 88,
+    "sha256": "sha256:99f25ca3a3cc03ad0c066c9b05764bfc8725d82098cbbb00be5ce61409e2ecb7",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

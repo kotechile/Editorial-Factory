@@ -1,6 +1,6 @@
 {
   "slug": "moss-landing-burns-home-becomes-the-grid",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -65,6 +65,14 @@
       "title": "Homeowners Become The Grid",
       "bytes": 74092,
       "sha256": "sha256:30156fe239169730bd0172ecba412a8b98f2ad3a358979d4f11ae9107a9e4fab"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Homeowners Become The Grid. Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a",
+      "caption": "Homeowners Become The Grid: Battery fires push California to rely on home storage.",
+      "title": "Homeowners Become The Grid",
+      "bytes": 74092,
+      "sha256": "sha256:30156fe239169730bd0172ecba412a8b98f2ad3a358979d4f11ae9107a9e4fab"
     }
   ],
   "style": "studio_object",
@@ -92,8 +100,8 @@
   "local_path": "context/assets/illustrations/moss-landing-burns-home-becomes-the-grid/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 74092,
-  "sha256": "sha256:30156fe239169730bd0172ecba412a8b98f2ad3a358979d4f11ae9107a9e4fab",
+  "bytes": 148628,
+  "sha256": "sha256:2fc5a9de4394b1d28f861b7e3696d3531307d044a85b5cb4642e64a50efc53b2",
   "source_hash": "sha256:d26dac9bb46ea837a49f67a991f2189f",
   "source_chars": 4166,
   "task_id": "f2826fb1829fcb3059ffbeea91bb5c67",
@@ -118,10 +126,10 @@
     "scrim": 0,
     "contrast": 4.51,
     "target": 4.5,
-    "clutter": 0.2,
+    "clutter": 0.201,
     "region_rgb": [
-      165,
-      171,
+      166,
+      172,
       178
     ],
     "binding_rgb": [
@@ -133,9 +141,22 @@
       "HOMEOWNERS",
       "BECOME THE GRID"
     ],
-    "subject": 0.253,
-    "ink_subject": 0.174,
-    "spike": 0.567,
+    "subject": 0.254,
+    "ink_subject": 0.177,
+    "spike": 0.559,
     "generated_at": "2026-10-02T10:42:15+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 148628,
+    "quality": 88,
+    "sha256": "sha256:2fc5a9de4394b1d28f861b7e3696d3531307d044a85b5cb4642e64a50efc53b2",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }
