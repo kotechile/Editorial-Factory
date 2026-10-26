@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T18:44:42Z",
+  "updated_at": "2026-10-26T19:15:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3561,6 +3561,24 @@
       "date": "2026-10-26",
       "public": true,
       "url": "https://aichieve.net/agent-identity-missed-the-real-breach/"
+    },
+    {
+      "slug": "2026-10-26_you-are-pricing-the-fuel-not-the-tank",
+      "title": "Your Tank's Class Costs $55",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-26",
+      "public": false
     },
     {
       "slug": "2026-10-26_your-49-cut-was-actually-9",

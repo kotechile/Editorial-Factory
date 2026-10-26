@@ -205,6 +205,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-26 | agentic_ai | your-tool-boundary-costs-3-engineers | Your Tool Boundary Costs 3 Engineers | https://pressflow.aichieve.net/published/2026-10-26_your-tool-boundary-costs-3-engineers.md | reader site only |
 | 2026-10-26 | enterprise_ai_governance | your-ai-fine-is-3-percent | Your AI Fine: 3%, Not 35 Million | https://pressflow.aichieve.net/published/2026-10-26_your-ai-fine-is-3-percent.md | reader site only |
 | 2026-10-26 | home_equity_tco | your-battery-payback-0-or-38 | Your Battery's Payback Gap: 0¢ to 38.1¢ | https://pressflow.aichieve.net/published/2026-10-26_your-battery-payback-0-or-38.md | reader site only |
+| 2026-10-26 | home_infrastructure_lifecycle_tco | you-are-pricing-the-fuel-not-the-tank | Your Tank's Class Costs $55 | https://pressflow.aichieve.net/published/2026-10-26_you-are-pricing-the-fuel-not-the-tank.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
