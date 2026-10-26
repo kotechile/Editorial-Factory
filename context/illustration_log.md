@@ -320,3 +320,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-26 | `agent-identity-missed-the-real-breach` | enterprise_ai_governance | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/agent-identity-missed-the-real-breach/featured.jpg` |
 | 2026-10-26 | `your-next-bedroom-417500` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-next-bedroom-417500/featured.jpg` |
 | 2026-10-26 | `your-repair-budget-buys-7-5-percent-less` | home_infrastructure_lifecycle_tco | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-repair-budget-buys-7-5-percent-less/featured.jpg` |
+| 2026-10-26 | `your-49-cut-was-actually-9` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-49-cut-was-actually-9/featured.jpg` |

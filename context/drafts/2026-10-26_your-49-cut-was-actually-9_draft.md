@@ -53,8 +53,10 @@ The first thing I would ask for is the spending log, because a plan to put 83% t
 
 - **Where the last phase lands:** The company was told in August 2026 that it could file its third set of claims, and it has not been paid on them yet [2]. The $80.5 million is an estimate, so the share headed for the stock mix is not fixed.
 - **The bin count, not the dollar count:** Fastenal ended the quarter with 143,878 weighed vending and scanner sites, up 7.4%, and signings up 6.2% on a daily-sales basis [3]. A rhythm that refills 143,878 sites is a skill; a year-end mix reset is an event.
-- **The receivable line in the next filing:** Receivables at Fastenal grew three times faster than stock, and management tied it to the big accounts driving the growth [3]. That is a price cut wearing a sales win's clothes.
+- **The receivable line in the next filing:** Receivables at Fastenal grew about six times faster than stock, and management tied it to the big accounts driving the growth [3]. That is a price cut wearing a sales win's clothes.
 - **Whether the refund goes back to margin next quarter:** A credit against cost of goods sold lifts the gross margin line, and the next phase of claims will do the same. The mix question is whether the stock that stays sells faster than the stock that left.
+
+<!-- nuanced-takeaway -->
 
 ## The catch
 

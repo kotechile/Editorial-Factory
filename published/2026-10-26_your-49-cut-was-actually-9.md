@@ -11,10 +11,16 @@ sources:
   - https://investor.fastenal.com/news/news-details/2026/Fastenal-Company-Reports-2026-Third-Quarter-Earnings/default.aspx
 meta_title: "Your 49% Cut Was Actually 9%"
 meta_description: "A Hydro Flask owner's inventory cut was reported as 49%. Its filing says $48.6 million, or 9.2%, and the quarter's margin gain came mostly from a tariff refund."
+image_path: "context/assets/illustrations/your-49-cut-was-actually-9/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Towering steel storage racks and rows of inventory bins, compressed through a telephoto lens in a warehouse aisle."
+image_caption: "The inventory gain that lasts is the one that changes how often a bin refills."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Helen of Troy's reported inventory drop was actually 9% following a tariff refund that skewed the public math [1][4]. The company behind Hydro Flask and Osprey was celebrated this week for a 49% cut, but its own filed results show a $48.6 million drop in stock. The firm also booked a $26.9 million refund that was almost entirely spent before the quarter closed [1].
+Helen of Troy's inventory cut was reported as 49% this week and is actually 9% in its own filing [1][4]. The company behind Hydro Flask and Osprey took stock down by $48.6 million, from $528.9 million to $480.3 million, so the round number in the headline was the dollar figure rather than a percentage. The same quarter booked a $26.9 million tariff refund that was almost entirely spent before it closed [1].
 
 <!-- tension -->
 
@@ -49,7 +55,7 @@ I've been watching the spending log, because a plan to put 83% to 88% of a refun
 
 - **Where the last phase lands:** The company learned in August 2026 that it could file its third set of claims, and it has not been paid on them yet [2]. The $80.5 million is an estimate, so the share headed for the stock mix is not fixed.
 - **The bin count, not the dollar count:** Fastenal ended the quarter with 143,878 weighted vending and scanner sites, up 7.4% [3]. A rhythm that refills 143,878 sites is a skill, while a year-end mix reset is an event.
-- **The receivable line next filing:** Receivables at Fastenal grew three times faster than stock, driven by big accounts [3]. That is a price cut wearing a sales win's clothes.
+- **The receivable line next filing:** Receivables at Fastenal grew about six times faster than stock, driven by big accounts [3]. That is a price cut wearing a sales win's clothes.
 - **Whether the refund goes back to margin:** A credit against cost of goods sold lifts the gross margin line, and the next phase of claims will do the same.
 
 <!-- nuanced-takeaway -->
@@ -71,8 +77,8 @@ There is a harder limit under both. Tariff refunds come once, and the firms trea
 ## Related reading
 
 - [4 Warehouses Halve Stock. Yours Won't](/four-warehouses-halve-stock/) — more on Supply Chain & Operations
-- [60% Air Deals: Your Stock Math Breaks](/air-freight-wont-price-a-year/) — more on Supply Chain & Operations
-- [CFOs Are Pricing In the Tariff Cliff](/tariff-cliff-already-priced-in/) — more on Supply Chain & Operations
+- [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing…](/inventory-carrying-cost-rate/) — more on Supply Chain & Operations
+- [Safety Stock Sizing](/safety-stock-forecast-error-not-demand-noise/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
 <!-- tldr -->

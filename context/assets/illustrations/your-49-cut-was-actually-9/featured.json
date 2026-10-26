@@ -1,0 +1,115 @@
+{
+  "slug": "your-49-cut-was-actually-9",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Towering steel storage racks and inventory bins compressed through a telephoto lens in a massive warehouse aisle.",
+      "caption": "True inventory efficiency is measured by the physical rhythm of refilling bins, not a year-end dollar mix reset.",
+      "title": "Warehouse Inventory Bins Telephoto",
+      "bytes": 372381,
+      "sha256": "sha256:1d7065380c3c511eb892c4cf3b909b5d"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A compressed 200mm telephoto view down a cavernous warehouse aisle, stacked overlapping layers of heavy steel storage racks and galvanized inventory bins receding into crystal-clear distance. Sharp directional sunlight from the left cuts across the brushed steel and safety yellow beams, casting deep shadows and highlighting the sheer physical volume of stock. Graphite and steel blue ambient shadows, deep industrial contrast, flat compressed perspective, no people, no fog, no haze, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, people, humans, faces",
+  "rationale": "Long-lens industry compression captures the massive physical scale of real inventory operations, contrasting the sheer volume of physical bins against abstract accounting numbers.",
+  "cue": "how often a bin refills",
+  "subject": "towering steel storage racks and galvanized inventory bins",
+  "core_thesis": "A tariff refund booked as a credit is a margin event, whereas true working-capital gains stem from the operational rhythm of refilling physical inventory bins.",
+  "core_conflict": "Accounting illusion (one-off margin credit) vs. physical operational reality (sustainable inventory flow)",
+  "composition": "extreme asymmetry with stacked layers compressing into the distance",
+  "alt_text": "Towering steel storage racks and rows of inventory bins, compressed through a telephoto lens in a warehouse aisle.",
+  "caption": "The inventory gain that lasts is the one that changes how often a bin refills.",
+  "title": "Helen Of Troy'S Inventory",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "long_lens_industry",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-49-cut-was-actually-9/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 400483,
+  "sha256": "sha256:5dedd90975683c1d7a024ed4c88151d5fc8bad6258aaf539b84d9f470ae9860c",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 400483,
+    "quality": 76,
+    "sha256": "sha256:5dedd90975683c1d7a024ed4c88151d5fc8bad6258aaf539b84d9f470ae9860c",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3e70c3f3b2904c96cbc6556456b5210bdc94599261afb9b196f0a017a070ed8a",
+  "render_phash": "fa59bed2bf539ec71e0f1f8e5e9c3f831f8f17091704079303dc03cf07cd26da",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An aisle in a warehouse lined with tall metal shelving units holding metal bins.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows inventory bins, which relates to the article's focus on inventory cuts and margins."
+  },
+  "source_hash": "sha256:84c1437b2543c76bc4f94ae566ddf37f",
+  "source_chars": 5361,
+  "task_id": "673a7d6dccab3e936b2d0ba6efeadd08",
+  "credits": 5.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/673a7d6dccab3e936b2d0ba6efeadd08_1793018948917.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A compressed 200mm telephoto view down a cavernous warehouse aisle, stacked overlapping layers of heavy steel storage racks and galvanized inventory bins receding into crystal-clear distance. Sharp directional sunlight from the left cuts across the brushed steel and safety yellow beams, casting deep shadows and highlighting the sheer physical volume of stock. Graphite and steel blue ambient shadows, deep industrial contrast, flat compressed perspective, no people, no fog, no haze, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T12:49:18+00:00",
+  "overlay": {
+    "kicker": "WORKING CAPITAL // INVENTORY MATH",
+    "title": "HELEN OF TROY'S INVENTORY",
+    "hook": "How a tariff refund masked the real working capital gain",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.16,
+    "target": 4.5,
+    "clutter": 0.131,
+    "region_rgb": [
+      37,
+      38,
+      38
+    ],
+    "binding_rgb": [
+      45,
+      57,
+      69
+    ],
+    "title_lines": [
+      "HELEN OF TROY'S",
+      "INVENTORY"
+    ],
+    "subject": 0.021,
+    "ink_subject": 0.009,
+    "spike": 0.071,
+    "generated_at": "2026-10-26T12:49:18+00:00"
+  }
+}
