@@ -12,8 +12,8 @@ sources:
 image_path: "context/assets/illustrations/your-agent-contract-gap-63-unmet/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "The Agent Contract Gap. A small mechanical assembly with a solid perimeter and an unlatched internal gate resting on a steel desk."
-image_caption: "The Agent Contract Gap: Why 63% of agent call rules are unmet by code."
+image_alt: "The Agent Contract Gap. Modular containment block with an unlatched inspection gate resting on a metal workbench."
+image_caption: "The Agent Contract Gap: Why sandboxes miss trust leaks at the call site."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

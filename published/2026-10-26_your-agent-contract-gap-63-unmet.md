@@ -11,7 +11,7 @@ sources:
   - https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/
 meta_title: "Your Agent's Contract Gap: 63% Unmet"
 meta_title_source: "derived_from_title"
-meta_description: "A study of 496 call sites in 40 open-source agent systems found 63% of the rules those calls depend on unmet. Only 5.3% of sites met their whole contract."
+meta_description: "Amid a vendor push to lock down AI workloads, 63% of the rules an agent depends on go unmet at the call site. This contract gap sits inside the sandbox…"
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-agent-contract-gap-63-unmet/featured.jpg"
 image_style: "clay_render"
@@ -30,17 +30,17 @@ Amid a vendor push to lock down AI workloads, 63% of the rules an agent depends 
 
 Two controls landed in the same month, and they answer entirely different questions. A sandbox dictates what the workload can reach, while a contract sets what the code will accept from a model reply before acting.
 
-The recent study is blunt about that second boundary. Most of a prompt's promise is just a polite request that a model can ignore, and injected text can easily overwrite it. The clearest case is the Gemini command-line tool, which asks a model if a tool call breaks a rule but then allows the call if the reply is empty, fails to parse, or drops the request. Five of its six exit paths let the call through [1].
+The recent study is blunt about that second boundary. Code enforces 78% of the rules these systems need. But 67% of the rules written into a prompt are only asked of the model, never checked [1]. Most of a prompt's promise is a polite request a model can ignore, and injected text can overwrite it. The clearest case is the Gemini command-line tool, which asks a model if a tool call breaks a rule but then allows the call if the reply is empty, fails to parse, or the request fails. Five of its six exit paths let the call through [1].
 
 My read is that this represents the normal shape of the problem rather than one vendor's bug. A check exists, so the call site looks guarded in review, yet the code never actually enforces the answer.
 
-What Microsoft and Nvidia shipped this month is real, but it sits somewhere else entirely. Microsoft Execution Containers (MXC) carry a written policy outside the workload, ensuring the agent cannot widen its own access [3]. Nvidia's OpenShell checks policy on every system call inside the kernel and keeps real credentials out of the sandbox [4]. 
+What Microsoft and Nvidia shipped this month is real, but it sits somewhere else entirely. Microsoft Execution Containers (MXC) carry a written policy outside the workload, ensuring the agent cannot widen its own access [3]. Nvidia's OpenShell checks policy on every file access, system call and network connection inside the kernel, and keeps real credentials out of the sandbox [4].
 
 Both validate Microsoft's core claim: an agent cannot be its own security authority [3].
 
 ## By the numbers
 
-- **63% — Rules left unmet:** Across 496 sites in 40 systems, 63% of the rules each call site depends on went unmet, checked against 17,428 human judgments [1].
+- **63% — Rules left unmet:** Across 496 sites in 40 systems, 63% of the rules each call site depends on went unmet, with the work checked step by step in 17,428 human judgments [1].
 - **5.3% — Whole contracts met:** Only 5.3% of call sites meet the whole contract their checks exist to serve, despite 82% checking state before and after a call [1].
 - **73% — Blind model replies:** Programs or other models read 73% of the replies that drive a decision, meaning no human user sees them first [1].
 - **1.50 ms — Fast code checks:** Checking an action against live state took 1.50 milliseconds at zero tokens, against 17.73 seconds for a model judge [2]. One bad call costs a median of 22,400 tokens to repair [2].
@@ -60,13 +60,11 @@ I keep coming back to the mismatch between what teams buy and what they measure.
 
 ## The catch
 
-I could be wrong about the exact size of the prize, because the study reads code rather than live failures. Its baseline compares the code against a contract that a separate agent drew from a plain description of each unit's job. Three reviewers then corrected that yardstick, meaning a stricter reviewer would lift the figure while a looser one would cut it. 
+I could be wrong about the exact size of the prize, because the study reads code rather than live failures. Its 63% compares the code against a contract that a separate agent drew from a plain description of each unit's job. Three reviewers then corrected that yardstick, meaning a stricter reviewer would lift the figure while a looser one would cut it. 
 
 The authors also ran the work with model-based agents before people checked each step, so the method carries part of the weakness it names.
 
-Two limits sit on the other side. Some of these gaps represent accepted risk rather than oversight, since a team may know a call site is weak and ship it anyway. 
-
-The honest claim is that these are two controls at two boundaries, not that the newer sandbox fails. To secure the boundary the sandbox misses, architects must weigh how strictly they gate [Your Agent's Next Step](/gate-the-step-not-the-model/) before the code executes it.
+Two limits sit on the other side. Some of these gaps are accepted risk rather than oversight, since a team may know a call site is weak and ship it anyway. A code check can be wrong too, turning away good replies or letting bad ones past. What the window does not hold is any measure showing that a sandbox closes the call-site gap. The honest claim is that these are two controls at two boundaries, not that the newer one fails. Where that points is the step rather than the model, which is the case made in [Your Agent's Next Step](/gate-the-step-not-the-model/).
 
 <!-- internal-links -->
 
@@ -76,9 +74,9 @@ The honest claim is that these are two controls at two boundaries, not that the 
 <!-- internal-link hint: "68 Loops Your Runtime Never Stopped" -> /agent-loop-bound-not-a-budget/ [same site (aichieve.net); same category; topical overlap: agent, found] Link "68 Loops Your Runtime Never Stopped" in the section where the article touches agent, found. -->
 ## Related reading
 
+- [Agent Memory Poisoning](/agent-memory-poisoning-write-path/) — more on Autonomous & Agentic Workflows
 - [Retry Is the Bug: An Agent's Costliest Failure Mode](/retry-is-the-failure-amplifier/) — more on Autonomous & Agentic Workflows
-- [Your Agent's Next Step](/gate-the-step-not-the-model/) — more on Autonomous & Agentic Workflows
-- [68 Loops Your Runtime Never Stopped](/agent-loop-bound-not-a-budget/) — more on Autonomous & Agentic Workflows
+- [Your Agent's 84,000-Write Mistake](/agent-writes-stale-basis/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
 
 <!-- tldr -->
