@@ -628,7 +628,11 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     if aspect not in FEATURED_ASPECTS:
         problems.append(f"aspect_ratio {aspect!r} is not a featured-header shape "
                         f"(one of {', '.join(FEATURED_ASPECTS)})")
-    resolution = str(raw.get("resolution") or "1K").strip().upper()
+    _res_raw = str(raw.get("resolution") or "1K").strip().upper()
+    # The model sometimes echoes prose into this field ("1K — the desk renders at 1K …"), so take
+    # the leading token: a resolution is a code, not a sentence.
+    _res_match = re.match(r"(\d+K)", _res_raw)
+    resolution = _res_match.group(1) if _res_match else _res_raw
     if resolution not in FEATURE_RESOLUTIONS:
         problems.append(f"resolution {resolution!r} is not one of {', '.join(FEATURE_RESOLUTIONS)}")
 
@@ -936,7 +940,7 @@ arrangement, material, light) — and containing the vocabulary of the treatment
  "negative_prompt": "short; must name garbled text/random lettering/watermarks. Never enumerate subject matter to \
 exclude — the image model reads the negative as tokens to draw",
  "aspect_ratio": "{FEATURED_ASPECTS[0]}",
- "resolution": "1K — the desk renders at 1K (1344x768); the delivery master is upscaled from it",
+ "resolution": "1K",
  "alt_text": "40-140 chars, the SUBJECT first, never the headline restated, never 'a render/photo of…'",
  "caption": "one sentence ending in a full stop",
  "title": "3-100 chars, the CMS media-library label",

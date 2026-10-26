@@ -1,0 +1,112 @@
+{
+  "slug": "your-repair-budget-buys-7-5-percent-less",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A cleanly severed heavy-gauge residential copper electrical cable resting on a weathered concrete floor in sharp macro focus.",
+      "caption": "The rising wholesale cost of essential materials like copper wire means the same repair budget buys fewer replacements.",
+      "title": "Copper-Material-Cost-Squeeze",
+      "bytes": 345971,
+      "sha256": "sha256:3b71dc801da494b520be261e38454403"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An extreme close-up editorial macro photograph of a cleanly severed heavy-gauge residential copper electrical cable resting asymmetrically on a dusty, weathered concrete basement floor. 100mm macro lens, razor-sharp focal plane on the exposed, bright copper strands. Shallow depth of field, with the background falling away into soft slate grey shadows. Strong, soft directional daylight raking in from the upper left, catching the metallic sheen of the copper and the matte texture of the concrete. Fine film grain, moody editorial atmosphere, muted bone white and slate grey surroundings with the rich rust-copper standing out. No people, no text.",
+  "negative_prompt": "text, letters, garbled numbers, watermark, logos, typography, people, faces, hands",
+  "rationale": "The editorial macro treatment isolates a specific, tangible physical material\u2014the copper cable driving a 23 percent cost increase\u2014forcing the reader to confront the literal substance of the economic squeeze.",
+  "cue": "copper wire and cable",
+  "subject": "a cleanly severed heavy-gauge residential copper electrical cable",
+  "core_thesis": "Rising costs of home repair materials, particularly copper and steel, are outpacing overall spending growth, fundamentally shrinking the purchasing power of a homeowner's maintenance budget.",
+  "core_conflict": "Rising material input costs versus flat retail spending and stagnant remodel permits.",
+  "composition": "extreme close-up macro, hero object asymmetrically on the right third",
+  "alt_text": "A cleanly severed heavy-gauge residential copper electrical cable resting on a weathered concrete floor in sharp macro focus.",
+  "caption": "The Repair Budget Squeeze: Why your maintenance dollars buy 7.5 percent less work.",
+  "title": "The Repair Budget Squeeze",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-repair-budget-buys-7-5-percent-less/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389191,
+  "sha256": "sha256:415c18e1adcf46a30fbc510f3deb61fd80b2cb841614ef5f51711dd67446919d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389191,
+    "quality": 88,
+    "sha256": "sha256:415c18e1adcf46a30fbc510f3deb61fd80b2cb841614ef5f51711dd67446919d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:92bf2253bc688f48a8ee4a5c0caa589d554ba0c537265795236feec2067e1777",
+  "render_phash": "7e1bc2f33fc560fa7f0d1efc05fdccce64ceba494e0c03c101f0803c800cd000",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A close-up of a severed electrical cable with exposed copper wire strands resting on a textured surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows copper wire, which is directly mentioned in the article as a key material driving up home repair costs."
+  },
+  "source_hash": "sha256:08953e0e6639c784b3e30a871b9e65f8",
+  "source_chars": 5224,
+  "task_id": "0420f97605f0d5ea594afaf3d1d91227",
+  "credits": 5.0,
+  "cost_ms": 53,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0420f97605f0d5ea594afaf3d1d91227_1793017115052.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "An extreme close-up editorial macro photograph of a cleanly severed heavy-gauge residential copper electrical cable resting asymmetrically on a dusty, weathered concrete basement floor. 100mm macro lens, razor-sharp focal plane on the exposed, bright copper strands. Shallow depth of field, with the background falling away into soft slate grey shadows. Strong, soft directional daylight raking in from the upper left, catching the metallic sheen of the copper and the matte texture of the concrete. Fine film grain, moody editorial atmosphere, muted bone white and slate grey surroundings with the rich rust-copper standing out. No people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-26T12:19:01+00:00",
+  "overlay": {
+    "kicker": "HOME REPAIRS // INFLATION SQUEEZE",
+    "title": "THE REPAIR BUDGET SQUEEZE",
+    "hook": "Why your maintenance dollars buy 7.5 percent less work",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.68,
+    "target": 4.5,
+    "clutter": 0.094,
+    "region_rgb": [
+      46,
+      45,
+      42
+    ],
+    "binding_rgb": [
+      60,
+      59,
+      54
+    ],
+    "title_lines": [
+      "THE REPAIR",
+      "BUDGET SQUEEZE"
+    ],
+    "subject": 0.003,
+    "ink_subject": 0.002,
+    "spike": 0.007,
+    "generated_at": "2026-10-26T12:19:01+00:00"
+  }
+}

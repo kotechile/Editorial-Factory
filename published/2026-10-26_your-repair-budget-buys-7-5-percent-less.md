@@ -13,6 +13,12 @@ meta_title: "Your Repair Budget's 7.5% Squeeze"
 meta_title_source: "derived_from_title"
 meta_description: "Spending on home repairs is set to grow 1.5 percent while the goods behind those jobs are up 9.7 percent, so your repair budget's reach shrinks: it buys…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-repair-budget-buys-7-5-percent-less/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "A cleanly severed heavy-gauge residential copper electrical cable resting on a weathered concrete floor in sharp macro focus."
+image_caption: "The Repair Budget Squeeze: Why your maintenance dollars buy 7.5 percent less work."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
