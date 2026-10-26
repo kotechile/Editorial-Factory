@@ -224,6 +224,16 @@ Three refused briefs in a row raise `BriefError` (with the last refusal quoted) 
 repaired here: the treatment choice is the product, so a refusal is fed back to the director and
 answered again — the module never picks for it.
 
+**A `--dry-run` that produces a commissionable brief does not shorten `--apply` (learned 2026-10-26).**
+`--dry-run` and `--apply` each call the director afresh, so a passing dry-run brief cannot be reused:
+`--apply` on the very next command re-rolled and was refused three times on the light clause. Two
+consequences for the recovery step: budget the retry as its own director calls (each attempt is 3 LLM
+calls and **no image credits**, so a refusal costs nothing), and when the same clause keeps failing,
+pin a treatment whose prompt anchors a named place and a light direction (`--style long_lens_industry`
+names a warehouse aisle and "sharp directional lighting from the left" by construction). Publishing
+without a header is not the fallback — the post goes live with `featured_media: 0`, which reads as a
+broken page on every front until `wp_draft --reimage` after a successful `--apply`.
+
 ## 4. Where things live
 - Image: `context/assets/illustrations/<slug>/featured.<jpg|png|webp>` — **not committed**; the CMS
   media library is its canonical home and this file is the upload's source.
