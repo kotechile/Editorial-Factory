@@ -13,7 +13,7 @@
   ],
   "style": "architectural_night",
   "style_label": "Lit architecture at dusk",
-  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "style_when": "the story is about change after hours — automation displacing shifts, a market open all night, capacity running while people sleep",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,7 +27,7 @@
   "core_thesis": "The high cost and frozen market for buying a larger home make building an accessory dwelling unit (ADU) the most viable financial choice for a family needing an extra bedroom.",
   "core_conflict": "Frozen, expensive buy-side housing market vs. newly financeable, legally permitted build-side ADU additions",
   "composition": "extreme asymmetry with glowing hero object off-center",
-  "alt_text": "Building Your Next Bedroom. A freshly framed residential accessory dwelling unit glows warmly from a work light at dusk behind a darkened",
+  "alt_text": "A freshly framed residential accessory dwelling unit glows warmly from a work light at dusk behind a darkened main house.",
   "caption": "Building Your Next Bedroom: Why building an ADU beats buying in a frozen market.",
   "title": "Building Your Next Bedroom",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -108,5 +108,6 @@
     "ink_subject": 0.055,
     "spike": 0.367,
     "generated_at": "2026-10-26T11:40:21+00:00"
-  }
+  },
+  "alt_text_note": "Restored to a complete sentence after the director returned a string cut mid-phrase; the complete wording is the director's own revision-1 alt_text for the same image."
 }

@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-next-bedroom-417500/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Building Your Next Bedroom. A freshly framed residential accessory dwelling unit glows warmly from a work light at dusk behind a darkened"
+image_alt: "A freshly framed residential accessory dwelling unit glows warmly from a work light at dusk behind a darkened main house."
 image_caption: "Building Your Next Bedroom: Why building an ADU beats buying in a frozen market."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
