@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T13:13:24Z",
+  "updated_at": "2026-10-26T17:43:53Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3500,7 +3500,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-25",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-50-meter-reads-78-its-metal/"
     },
     {
       "slug": "2026-10-25_your-550-battery-spare-is-wrong",
@@ -3520,7 +3521,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-25",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-550-battery-spare-is-wrong/"
     },
     {
       "slug": "2026-10-26_33-of-your-shrink-isnt-theft",
@@ -3538,7 +3540,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/33-of-your-shrink-isnt-theft/"
     },
     {
       "slug": "2026-10-26_agent-identity-missed-the-real-breach",
@@ -3556,7 +3559,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/agent-identity-missed-the-real-breach/"
     },
     {
       "slug": "2026-10-26_your-49-cut-was-actually-9",
@@ -3574,7 +3578,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-49-cut-was-actually-9/"
     },
     {
       "slug": "2026-10-26_your-agent-contract-gap-63-unmet",
@@ -3592,7 +3597,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-contract-gap-63-unmet/"
     },
     {
       "slug": "2026-10-26_your-next-bedroom-417500",
@@ -3610,7 +3616,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-next-bedroom-417500/"
     },
     {
       "slug": "2026-10-26_your-repair-budget-buys-7-5-percent-less",
@@ -3628,7 +3635,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-repair-budget-buys-7-5-percent-less/"
     }
   ]
 }
