@@ -199,6 +199,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-26 | agentic_ai | your-agent-contract-gap-63-unmet | Your Agent's Contract Gap: 63% Unmet | https://pressflow.aichieve.net/published/2026-10-26_your-agent-contract-gap-63-unmet.md | reader site only |
 | 2026-10-26 | enterprise_ai_governance | agent-identity-missed-the-real-breach | Agent Identity: The Wrong Layer | https://pressflow.aichieve.net/published/2026-10-26_agent-identity-missed-the-real-breach.md | reader site only |
 | 2026-10-26 | home_equity_tco | your-next-bedroom-417500 | Your Next Bedroom Costs $417,500 | https://pressflow.aichieve.net/published/2026-10-26_your-next-bedroom-417500.md | reader site only |
+| 2026-10-26 | home_infrastructure_lifecycle_tco | your-repair-budget-buys-7-5-percent-less | Your Repair Budget's 7.5% Squeeze | https://pressflow.aichieve.net/published/2026-10-26_your-repair-budget-buys-7-5-percent-less.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:40:39Z",
+  "updated_at": "2026-10-26T12:15:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3562,6 +3562,24 @@
       "slug": "2026-10-26_your-next-bedroom-417500",
       "title": "Your Next Bedroom Costs $417,500",
       "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-26",
+      "public": false
+    },
+    {
+      "slug": "2026-10-26_your-repair-budget-buys-7-5-percent-less",
+      "title": "Your Repair Budget's 7.5% Squeeze",
+      "vertical": "home_infrastructure_lifecycle_tco",
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [
