@@ -581,6 +581,30 @@ and read `featured_media` back. Expect the reader front to have built the page b
 probe the URL for `wp-content/uploads` references, and when there are none, push the empty
 `ci: re-trigger frontend build for <slug>` commit rather than re-publishing.
 
+**Hosts probed live 2026-10-26, building an order-fill / line-fill brief (the `sales_order_service_level_otif`
+evergreen).** Carries the figure as plain text and fetches first try: `inventoros.com/blog/order-fill-rate`
+(the compounding ladder as one run — "1-line order: 0.98 = 98.0% … 5-line order: 0.98^5 = 90.4% … 10-line
+order: 0.98^10 = 81.7% … 20-line order: 0.98^20 = 66.8%", plus the line that makes the story legal,
+"Customers don't experience a '94% line fill.' They experience a box that's missing the one thing they were
+waiting on"); `fcbco.com/blog/use-initial-order-fill-rate-to-measure-customer-service` (a consultancy's client
+numbers with no date anywhere on the page — 88.5% initial order fill at a 2.25-line basket, 76.5% against an
+inferred 90% at 3.0 lines, and "10-15 full percentage points below the item fill rate", so cite it as undated
+and read the gap as the measured counterpart to the model); `benchmarkingsuccess.com/understanding-fill-rate-kpis-line-fill-rate`
+(March 2018: 96% line fill against ~82% order fill, and "7,500 perfectly filled lines" of 10,000 = 75% — an
+illustration of a mechanic, never a current benchmark); `dclcorp.com/blog/fulfillment/fill-rate` (the 92-98%
+"healthy fill rate" band, defined on an order-level formula). Fails or cannot carry a row on this beat:
+`netsuite.com` resource articles (403 to the verifier), guessed `lokad.com` and `inflowinventory.com` safety-stock
+slugs (404), and `itl.nist.gov`'s normal-distribution page (fetches at 8.5 KB but prints no z-value a service-level
+row could lead on) — so the textbook 95%→99% service-factor ladder cannot carry a gate, and that candidate was
+dropped at 7.6.
+
+**A frontier rewrite can promote a minority rate into the majority (learned 2026-10-26).** The order-fill rewrite
+opened "Ten-line orders routinely arrive short" on an 18.3% miss rate, and the same pass turned a model into a law
+in the TL;DR ("guarantees an 18.3% failure rate"). Both figures were right and every gate passed: `article_shape`
+counts figures, the accessibility floor counts syllables, `source_gate` checks that a cited page carries the number.
+After every rewrite, read each rate's *direction and size* against the brief — "routinely", "most", "always",
+"guarantees" — and re-voice to the measured share ("one in five") before the push.
+
 
 ## 5. Handoff
 
