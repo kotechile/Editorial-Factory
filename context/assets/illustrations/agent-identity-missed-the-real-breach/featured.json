@@ -1,6 +1,6 @@
 {
   "slug": "agent-identity-missed-the-real-breach",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -9,38 +9,60 @@
       "title": "Agent Identity Exposed Key",
       "bytes": 296478,
       "sha256": "sha256:b4b37c26e501dc9030d00f68061600ab"
+    },
+    {
+      "revision": 2,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "A cinematic film still of a heavy brass physical key left inserted into the lock of a brushed steel server rack in a dark data hall. 35mm anamorphic lens, extreme asymmetric off-centre framing. A single strong practical light source casting harsh directional light from the left, highlighting the brass key against the deep slate grey and cobalt rack. Crisp atmospheric depth, restrained teal-and-amber palette, shallow depth of field, no people, motion implied rather than shown, fine film grain.",
+      "task_id": "16835511025ebac3e9f0c4aeccb5285b",
+      "sha256": "sha256:a8cf6f6fc09be57eb03a87221732047a8e018697f8f7d804caee9d68401b0e43",
+      "generated_at": "2026-10-26T11:11:48+00:00",
+      "source_hash": "sha256:f7724f6473a08746c1767ad4779f3093",
+      "render_sha256": "sha256:c989f327e900378d6e0620de37a3e5716d1cf8d50b0b7e10a293b07f98e5beed"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A cut-paper collage of an unattended brass key resting on a stack of documents with a dark shadow reaching for it.",
+      "caption": "Current AI agent governance tools often fail to protect against unregistered agents exploiting abandoned static keys.",
+      "title": "Agent Identity and Exposed Keys Paper Collage",
+      "bytes": 408247,
+      "sha256": "sha256:fca4b839f76dfbd714f1677bf878e2d3"
     }
   ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "A cinematic film still of a heavy brass physical key left inserted into the lock of a brushed steel server rack in a dark data hall. 35mm anamorphic lens, extreme asymmetric off-centre framing. A single strong practical light source casting harsh directional light from the left, highlighting the brass key against the deep slate grey and cobalt rack. Crisp atmospheric depth, restrained teal-and-amber palette, shallow depth of field, no people, motion implied rather than shown, fine film grain.",
-  "negative_prompt": "garbled text, random letters, numbers, watermarks, UI, text, people, faces, hands, labels",
-  "rationale": "A cinematic still grounds the abstract cybersecurity concept of an exposed static key in a physical data environment, emphasizing the real vulnerability over theoretical software layers.",
-  "cue": "a key left outside the door",
-  "subject": "a physical key left in a server rack lock",
-  "core_thesis": "AI agent breaches are caused by exposed static keys and poor network egress controls, not a lack of dynamic agent identity layers.",
-  "core_conflict": "Selling complex agent identity layers versus the reality of valid keys left exposed in public repositories.",
-  "composition": "extreme asymmetric off-centre framing",
-  "alt_text": "The Agent Identity Myth. A brass key left in the lock of a brushed steel server rack in a dark data hall.",
-  "caption": "The Agent Identity Myth: Why identity layers cannot stop agents with stolen keys.",
+  "prompt": "Minimalist editorial cut-paper collage. Three stylized cut-paper object silhouettes: a heavy brass-colored key lying unattended atop a layered stack of server log documents, with an anonymous dark shadow silhouette reaching for the key from the edge. Framing rule: extreme asymmetry, hero objects off-centre on the right thirds, generous empty margin on the left. Materials: hand-torn rag paper with visible fibre, halftone newsprint textures on the documents, crisp clean edges, physical cast shadows under each layer. Arranged flat on a brushed steel workbench in a control room. Lighting: one raking directional spotlight casting long shadows. Palette: graphite, steel blue, brass, and bone white. Muted modern editorial palette.",
+  "negative_prompt": "text, letters, numbers, watermarks, garbled typography, messy edges, 3d renders",
+  "rationale": "A paper collage elegantly abstracts the conceptual policy dilemma of identity versus static credentials. By layering the silhouettes of a dropped key and a shadow, it captures the vulnerability of exposed credentials without resorting to literal server racks.",
+  "cue": "a key someone left in a public repo",
+  "subject": "a stylized cut-paper silhouette of an unattended key on a stack of log documents",
+  "core_thesis": "The current market fix for AI agent governance relies on issuing identities, but real intrusions happen via unregistered agents finding exposed static keys, making key hygiene and network egress the true necessary controls.",
+  "core_conflict": "Vendor-sold identity layers vs. the fundamental vulnerability of exposed static credentials in public repositories.",
+  "composition": "extreme asymmetry with the key resting off-centre on the right thirds",
+  "alt_text": "The Agent Identity Myth. A cut-paper collage of an unattended brass key resting on a stack of documents with a dark shadow reaching for it.",
+  "caption": "The Agent Identity Myth: The real fix for unauthorized AI agent intrusions.",
   "title": "The Agent Identity Myth",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
-  "pinned": {},
+  "pinned": {
+    "style": "paper_collage",
+    "model": "nanobanana"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/agent-identity-missed-the-real-breach/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 340265,
-  "sha256": "sha256:a8cf6f6fc09be57eb03a87221732047a8e018697f8f7d804caee9d68401b0e43",
+  "bytes": 399177,
+  "sha256": "sha256:fd45fc6fa1ed29ee48fed1155aedd87a3187dc3ef91881cbd4e9fb1c5df6fbf7",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,64 +71,66 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 340265,
-    "quality": 88,
-    "sha256": "sha256:a8cf6f6fc09be57eb03a87221732047a8e018697f8f7d804caee9d68401b0e43",
+    "bytes": 399177,
+    "quality": 80,
+    "sha256": "sha256:fd45fc6fa1ed29ee48fed1155aedd87a3187dc3ef91881cbd4e9fb1c5df6fbf7",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:c989f327e900378d6e0620de37a3e5716d1cf8d50b0b7e10a293b07f98e5beed",
-  "render_phash": "5b0f924fc24de33fe27fe22fe34f6b6b6f4b6a5e2a4f234f224e220e224f224f",
+  "render_sha256": "sha256:c2d909bf993d1a927a5bf54b1ffba0c49a4789796832196e2fa2d53ff225619c",
+  "render_phash": "00030007001b0049004600f700ed00f700d3005f005b004f0069006b003f007f",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "A brass key is inserted into the lock of a dark metal server rack door.",
+    "depicts": "A paper collage showing a hand silhouette reaching for a key resting on a stack of papers.",
     "legible_text": "",
     "on_topic": true,
-    "confidence": 0.6,
-    "reason": "The image shows a physical key in a server rack, which metaphorically aligns with the article's focus on key hygiene and access controls."
+    "confidence": 0.7,
+    "reason": "The image shows a key and documents, which relates to the article's focus on key hygiene and log retention."
   },
   "source_hash": "sha256:f7724f6473a08746c1767ad4779f3093",
   "source_chars": 6175,
-  "task_id": "16835511025ebac3e9f0c4aeccb5285b",
-  "credits": 5.0,
-  "cost_ms": 20,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/16835511025ebac3e9f0c4aeccb5285b_1793013100475.jpg",
+  "task_id": "31e5311cc75c840eea29ea54481feadc",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6224d0e6028e1b6104a3fff478121969.png",
   "provider_request": {
-    "model": "flux-2/pro-text-to-image",
+    "model": "nano-banana-pro",
     "input": {
-      "prompt": "A cinematic film still of a heavy brass physical key left inserted into the lock of a brushed steel server rack in a dark data hall. 35mm anamorphic lens, extreme asymmetric off-centre framing. A single strong practical light source casting harsh directional light from the left, highlighting the brass key against the deep slate grey and cobalt rack. Crisp atmospheric depth, restrained teal-and-amber palette, shallow depth of field, no people, motion implied rather than shown, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Minimalist editorial cut-paper collage. Three stylized cut-paper object silhouettes: a heavy brass-colored key lying unattended atop a layered stack of server log documents, with an anonymous dark shadow silhouette reaching for the key from the edge. Framing rule: extreme asymmetry, hero objects off-centre on the right thirds, generous empty margin on the left. Materials: hand-torn rag paper with visible fibre, halftone newsprint textures on the documents, crisp clean edges, physical cast shadows under each layer. Arranged flat on a brushed steel workbench in a control room. Lighting: one raking directional spotlight casting long shadows. Palette: graphite, steel blue, brass, and bone white. Muted modern editorial palette.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
-      "resolution": "1K"
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
     }
   },
-  "generated_at": "2026-10-26T11:11:48+00:00",
+  "generated_at": "2026-10-26T11:16:40+00:00",
   "overlay": {
-    "kicker": "AI AGENTS // KEY EXPOSURE",
+    "kicker": "AI SECURITY // AGENT IDENTITY",
     "title": "THE AGENT IDENTITY MYTH",
-    "hook": "Why identity layers cannot stop agents with stolen keys",
+    "hook": "The real fix for unauthorized AI agent intrusions",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 14.65,
+    "scrim": 90,
+    "contrast": 4.97,
     "target": 4.5,
-    "clutter": 0.053,
+    "clutter": 0.238,
     "region_rgb": [
-      16,
-      21,
-      23
+      120,
+      123,
+      128
     ],
     "binding_rgb": [
-      20,
-      30,
-      32
+      155,
+      158,
+      163
     ],
     "title_lines": [
       "THE AGENT",
       "IDENTITY MYTH"
     ],
-    "subject": 0.008,
-    "ink_subject": 0.003,
-    "spike": 0.028,
-    "generated_at": "2026-10-26T11:11:48+00:00"
+    "subject": 0.109,
+    "ink_subject": 0.054,
+    "spike": 0.33,
+    "generated_at": "2026-10-26T11:16:40+00:00"
   }
 }
