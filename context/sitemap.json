@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T17:43:53Z",
+  "updated_at": "2026-10-26T17:46:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3637,6 +3637,24 @@
       "date": "2026-10-26",
       "public": true,
       "url": "https://wellroost.com/your-repair-budget-buys-7-5-percent-less/"
+    },
+    {
+      "slug": "2026-10-26_your-tool-boundary-costs-3-engineers",
+      "title": "Your Tool Boundary Costs 3 Engineers",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "What I'd watch:",
+        "By the numbers",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-26",
+      "public": false
     }
   ]
 }
