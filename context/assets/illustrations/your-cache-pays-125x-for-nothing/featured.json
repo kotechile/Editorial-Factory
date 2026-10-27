@@ -1,0 +1,114 @@
+{
+  "slug": "your-cache-pays-125x-for-nothing",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An unlatched cobalt polymer bay cover misaligned on a graphite rack rail inside a server room.",
+      "caption": "A disconnected cache read-path fails silently at the call site, incurring write costs with no reuse.",
+      "title": "ai-prompt-cache-silent-fault-assembly",
+      "bytes": 372919,
+      "sha256": "sha256:f9aab2f7de290d8f5807670c19e33178"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme asymmetry. A modular mechanical assembly resting on a brushed steel shelf in a server room. The structure features a graphite rack rail and a cobalt polymer bay cover that is physically unlatched and misaligned from the main block, exposing a safety yellow inspection latch. Clean engineered edges, one harsh directional light from the top left throwing a long, hard cast shadow across the matte muted surfaces. Generous negative space, shallow depth of field, fine film grain. No bare spheres or cubes, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, generic abstract shapes",
+  "rationale": "Component assembly perfectly captures the structural nature of a silent fault at a call site. The unlatched module physically represents the disconnected cache read-path that fails without throwing a system-wide error.",
+  "cue": "a silent fault at a call site",
+  "subject": "an unlatched and misaligned modular bay cover on a rack rail",
+  "core_thesis": "A prompt-cache mistake is a silent fault at a call site, decidable against the vendor's offered feature on a date, and invisible to both the trace and the bill.",
+  "core_conflict": "Write-path cache premium vs read-path silent failure",
+  "composition": "extreme asymmetry",
+  "alt_text": "Silent Prompt Cache Faults. An unlatched cobalt polymer bay cover misaligned on a graphite rack rail inside a server room.",
+  "caption": "Silent Prompt Cache Faults: Paying for prompt cache writes that are never read back.",
+  "title": "Silent Prompt Cache Faults",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-cache-pays-125x-for-nothing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 386801,
+  "sha256": "sha256:f18d3b8aa2e9e2f8967f796bba497f3877339b9bf929d5c3dac87cf6027715d3",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 386801,
+    "quality": 80,
+    "sha256": "sha256:f18d3b8aa2e9e2f8967f796bba497f3877339b9bf929d5c3dac87cf6027715d3",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:63337dff79b446dec3963d3b5751f8e1189a6bad91c8fa49f84e7a3bb51fb211",
+  "render_phash": "0ecd0ecd0acd19cd186509ef412f0e5f124d1d373d878c9f0cfa0be20e0a1cc6",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A blue modular component with a yellow latch is partially detached and misaligned from a server chassis on a metal rack shelf.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a misaligned server component, which serves as a reasonable metaphor for a silent cache fault in a computing system."
+  },
+  "source_hash": "sha256:a05f802d615ab2becefbb054ed0f5c00",
+  "source_chars": 6178,
+  "task_id": "f8b79accb20ab6ce25c9443aab8fa7b2",
+  "credits": 18.0,
+  "cost_ms": 52,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_35107e412c13a09fceaf2138a4276558.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Extreme asymmetry. A modular mechanical assembly resting on a brushed steel shelf in a server room. The structure features a graphite rack rail and a cobalt polymer bay cover that is physically unlatched and misaligned from the main block, exposing a safety yellow inspection latch. Clean engineered edges, one harsh directional light from the top left throwing a long, hard cast shadow across the matte muted surfaces. Generous negative space, shallow depth of field, fine film grain. No bare spheres or cubes, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-27T10:42:20+00:00",
+  "overlay": {
+    "kicker": "LLM OPERATIONS // SILENT CACHE FAULTS",
+    "title": "SILENT PROMPT CACHE FAULTS",
+    "hook": "Paying for prompt cache writes that are never read back",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.97,
+    "target": 4.5,
+    "clutter": 0.178,
+    "region_rgb": [
+      10,
+      16,
+      15
+    ],
+    "binding_rgb": [
+      19,
+      28,
+      27
+    ],
+    "title_lines": [
+      "SILENT PROMPT",
+      "CACHE FAULTS"
+    ],
+    "subject": 0.083,
+    "ink_subject": 0.052,
+    "spike": 0.207,
+    "generated_at": "2026-10-27T10:42:20+00:00"
+  }
+}

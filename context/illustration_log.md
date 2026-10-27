@@ -329,3 +329,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-26 | `you-are-pricing-the-fuel-not-the-tank` | home_infrastructure_lifecycle_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/you-are-pricing-the-fuel-not-the-tank/featured.jpg` |
 | 2026-10-26 | `your-15-air-rule-195-break-even` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-15-air-rule-195-break-even/featured.jpg` |
 | 2026-10-26 | `your-98-fill-rate-18-dont-ship` | sales_order_service_level_otif | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-98-fill-rate-18-dont-ship/featured.jpg` |
+| 2026-10-27 | `your-cache-pays-125x-for-nothing` | ai_observability_qa | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cache-pays-125x-for-nothing/featured.jpg` |

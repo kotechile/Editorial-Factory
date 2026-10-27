@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T04:55:24Z",
+  "updated_at": "2026-10-27T10:42:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3744,6 +3744,24 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-26",
+      "public": false
+    },
+    {
+      "slug": "2026-10-27_your-cache-pays-125x-for-nothing",
+      "title": "Your Cache Pays 1.25x for Nothing",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-27",
       "public": false
     }
   ]
