@@ -13,6 +13,12 @@ meta_title: "Your 60% Fast Lane Is Blind"
 meta_title_source: "derived_from_title"
 meta_description: "Roughly 60 to 70 percent of Ørsted's firewall changes take a pre-approved fast lane that never reaches the change board."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-60-fast-lane-is-blind/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A clay render of two grey cases with yellow trim linked by a curved channel on a concrete slab, one case held back at a junction."
+image_caption: "The fast lane and the case held at the junction: why judging changes by type leaves a network blind."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -78,6 +84,18 @@ Where I've landed is that the paper offers facts about a design, not a live netw
 
 A trusted-source policy is still a list written by someone guessing what a type means. The real gain over a change board is that the guess gets checked against the effect rather than the request. It is not a sure thing, and the board's refusal to be optional is what keeps the rest honest while the pipeline speeds up.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Ørsted pushes roughly 60 to 70 percent of its firewall changes through a pre-approved lane that skips the change board. In the same window, a paper measured why a lane cleared by request type is the wrong place for the call. Attack success only falls from 47.0 percent to 2.7 percent when the check sits at the effect crossing into production.
+- **Why It Matters:** agents are taking over the change queue itself, with risk-tiered rules and repair jobs that restore settings on their own [3]. If the band is approved by type, the type becomes the target, and most of your change volume gets cleared before anyone sees the facts.
+- **What I'd Watch:** whether the vendors selling tiered setups print an error rate, and whether operators who copy the hold-and-decide pattern treat the waiting effects as a new record.
+  - **Holding an effect:** pausing one action while the agent keeps working, then releasing or stopping it based on the trace.
+  - **Trusted-source policy:** a short list of which sources may cause which effects, settled at the boundary rather than left to a model.
+  - **The join:** the link between a change, the request that allowed it, and the person or model behind it.
+- **The Catch:** the 47.0 to 2.7 percent result comes from a test on three agent models, not a live network. Checking at the boundary also needs a place to hold effects and someone to keep the policy current.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -90,18 +108,6 @@ A trusted-source policy is still a list written by someone guessing what a type 
 - [Agentic AI Adoption Soars, But Profits Stall in 2026](/agentic-ai-adoption-soars-but-profits-stall-in-2026/)
 - [Multi Agent Orchestration](/multi-agent-orchestration-building-the-one-person-enterprise/)
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Ørsted pushes roughly 60 to 70 percent of its firewall changes through a pre-approved lane that skips the change board. In the same window, a paper measured why a lane cleared by request type is the wrong place for the call. Attack success only falls from 47.0 percent to 2.7 percent when the check sits at the effect crossing into production.
-- **Why It Matters:** agents are taking over the change queue itself, with risk-tiered rules and repair jobs that restore settings on their own [3]. If the band is approved by type, the type becomes the target, and most of your change volume gets cleared before anyone sees the facts.
-- **What I'd Watch:** whether the vendors selling tiered setups print an error rate, and whether operators who copy the hold-and-decide pattern treat the waiting effects as a new record.
-  - **Holding an effect:** pausing one action while the agent keeps working, then releasing or stopping it based on the trace.
-  - **Trusted-source policy:** a short list of which sources may cause which effects, settled at the boundary rather than left to a model.
-  - **The join:** the link between a change, the request that allowed it, and the person or model behind it.
-- **The Catch:** the 47.0 to 2.7 percent result comes from a test on three agent models, not a live network. Checking at the boundary also needs a place to hold effects and someone to keep the policy current.
 
 ## Sources
 

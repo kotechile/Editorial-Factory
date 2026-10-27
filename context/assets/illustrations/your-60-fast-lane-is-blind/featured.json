@@ -1,0 +1,114 @@
+{
+  "slug": "your-60-fast-lane-is-blind",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular routing block with a bypass channel circumventing an inspection gate on a concrete surface.",
+      "caption": "When a fast lane skips the change board, the final security check shifts to the execution boundary.",
+      "title": "fast-lane-boundary-monitor",
+      "bytes": 355372,
+      "sha256": "sha256:3f20c71dbac52b734b1037ce5a794aba"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a modular block assembly resting on a weathered concrete surface in a control room. The physical arrangement features a wide smooth bypass channel routing around a central closed inspection gate, before terminating at a secondary latched cover at the execution boundary. Made of matte polymer and brushed steel, with visible moulding seams and deep contact shadows. Extreme asymmetry, placing the boundary latch off-centre to the right. One strong directional key light from the left raking across the parts. Slate grey, safety yellow, and bone white palette. Unlabelled, no text, generous empty margin.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI elements, human hands, face, people",
+  "rationale": "A structural change in routing policies is best depicted as a physical assembly of recognisable parts. The matte clay 3D render translates the abstract 'fast lane' and 'boundary monitor' into a tangible mechanical routing layout.",
+  "cue": "holds back the unclear effects for a decision",
+  "subject": "a modular routing block with a bypass channel and boundary latch",
+  "core_thesis": "Roughly 60 to 70% of firewall changes take a pre-approved fast lane that never reaches the change board, making the execution boundary the true safety control.",
+  "core_conflict": "Speed of pre-approved categorisation vs the delayed visibility of actual network effects.",
+  "composition": "extreme asymmetry",
+  "alt_text": "A clay render of two grey cases with yellow trim linked by a curved channel on a concrete slab, one case held back at a junction.",
+  "caption": "The fast lane and the case held at the junction: why judging changes by type leaves a network blind.",
+  "title": "Ørsted'S Firewall Fast Lane",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-60-fast-lane-is-blind/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401792,
+  "sha256": "sha256:5a216f93c83941b7b8e86110887d67fa1323befc0db7f354552f71f695617609",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401792,
+    "quality": 84,
+    "sha256": "sha256:5a216f93c83941b7b8e86110887d67fa1323befc0db7f354552f71f695617609",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b4248b76b1223ad31afa9bb40f74a6a16837dd84c49b3f82435a995b1018f4c1",
+  "render_phash": "ffc0ffc03ec0d3e0f18ee1c3d163ab0bae5394938173c1d3600830712d83298e",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A grey and yellow modular block structure with a curved track or channel connecting two main components on a textured surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a modular routing block with a bypass channel, which aligns with the requested subject and metaphorically represents the 'fast lane' concept in the article."
+  },
+  "source_hash": "sha256:a4fa31b1af56dfa07c1b42e41a11cdee",
+  "source_chars": 6419,
+  "task_id": "aa0ac967e3cb8ee49ad1143d629a7acd",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_db6a777a6e213a244410a7d3a1fc4049.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a modular block assembly resting on a weathered concrete surface in a control room. The physical arrangement features a wide smooth bypass channel routing around a central closed inspection gate, before terminating at a secondary latched cover at the execution boundary. Made of matte polymer and brushed steel, with visible moulding seams and deep contact shadows. Extreme asymmetry, placing the boundary latch off-centre to the right. One strong directional key light from the left raking across the parts. Slate grey, safety yellow, and bone white palette. Unlabelled, no text, generous empty margin.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-27T11:16:24+00:00",
+  "overlay": {
+    "kicker": "NETWORK SECURITY // CHANGE BOARDS",
+    "title": "ØRSTED'S FIREWALL FAST LANE",
+    "hook": "Why judging requests by type leaves networks blind",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.93,
+    "target": 4.5,
+    "clutter": 0.073,
+    "region_rgb": [
+      22,
+      22,
+      16
+    ],
+    "binding_rgb": [
+      27,
+      27,
+      19
+    ],
+    "title_lines": [
+      "ØRSTED'S FIREWALL",
+      "FAST LANE"
+    ],
+    "subject": 0.047,
+    "ink_subject": 0.022,
+    "spike": 0.145,
+    "generated_at": "2026-10-27T11:16:24+00:00"
+  }
+}
