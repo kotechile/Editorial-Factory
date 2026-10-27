@@ -1,0 +1,112 @@
+{
+  "slug": "two-sparks-cost-3048-more-cable",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A thick data cable plugged into a metal server port under low lighting.",
+      "caption": "The physical interconnect dictates whether a dual-node setup performs as a single large machine or two bottlenecked computers.",
+      "title": "nvidia-cable-bottleneck",
+      "bytes": 240637,
+      "sha256": "sha256:a173347a9e6a0c7414d7bc465c363d88"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy data interconnect cable securely plugged into a server port inside a dim data hall. Extreme asymmetry off-centre on the thirds, the background falling away into deep shadow. Shallow depth of field, visible surface texture on the polymer cable sheathing and brushed steel chassis. Soft directional overhead rack light from the left. Slate grey, cobalt, and graphite palette. Fine film grain, cinematic contrast, premium editorial cover standard.",
+  "negative_prompt": "text, letters, numbers, watermarks, garbled typography, people, faces",
+  "rationale": "The narrative turns entirely on the physical limitation and cost of a single component: the interconnect cable. An extreme macro photograph emphasizes this exact hardware link that forms the expensive bottleneck.",
+  "cue": "The 25 GB/s Cable",
+  "subject": "a heavy data interconnect cable plugged into a server port",
+  "core_thesis": "Pooling two 64GB units via cable costs $3,048 more than a single 128GB unit and creates a severe 25 GB/s interconnect bottleneck.",
+  "core_conflict": "Hardware pooling capacity versus network interconnect bandwidth bottleneck.",
+  "composition": "extreme asymmetry off-centre on the thirds",
+  "alt_text": "The $3,048 Bottleneck. A thick data cable plugged into a metal server port under low lighting.",
+  "caption": "The $3,048 Bottleneck: Why linking two 64GB Nvidia Sparks costs more for less.",
+  "title": "The $3,048 Bottleneck",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/two-sparks-cost-3048-more-cable/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 291366,
+  "sha256": "sha256:b100b5bd71b3a2f88dce7d808e27a465ba7ba46e6d63a1945b97008d5fe00ea1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 291366,
+    "quality": 88,
+    "sha256": "sha256:b100b5bd71b3a2f88dce7d808e27a465ba7ba46e6d63a1945b97008d5fe00ea1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:879bb9ffca8e5e17d8d9a93871d572d07a897f003e2c12731a1c623a69b50672",
+  "render_phash": "c56738d101b970ad03fd00f9067d0c651db5199802c9c1e4c3648cc23342cc0b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A close-up of a grey network cable plugged into a port on a server rack, with other blue cables visible in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a data cable plugged into a server, which aligns with the article's focus on a high-speed data interconnect cable."
+  },
+  "source_hash": "sha256:e347a2f1da22c1e982bad8cdc2a43b27",
+  "source_chars": 6811,
+  "task_id": "40d6a604528b5edbfaac88e2381a145e",
+  "credits": 5.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/40d6a604528b5edbfaac88e2381a145e_1793105078168.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A heavy data interconnect cable securely plugged into a server port inside a dim data hall. Extreme asymmetry off-centre on the thirds, the background falling away into deep shadow. Shallow depth of field, visible surface texture on the polymer cable sheathing and brushed steel chassis. Soft directional overhead rack light from the left. Slate grey, cobalt, and graphite palette. Fine film grain, cinematic contrast, premium editorial cover standard.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-27T12:44:45+00:00",
+  "overlay": {
+    "kicker": "WORKSTATION ECONOMICS // MEMORY LINKS",
+    "title": "THE $3,048 BOTTLENECK",
+    "hook": "Why linking two 64GB Nvidia Sparks costs more for less",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.93,
+    "target": 4.5,
+    "clutter": 0.16,
+    "region_rgb": [
+      28,
+      33,
+      38
+    ],
+    "binding_rgb": [
+      48,
+      51,
+      56
+    ],
+    "title_lines": [
+      "THE $3,048",
+      "BOTTLENECK"
+    ],
+    "subject": 0.021,
+    "ink_subject": 0.01,
+    "spike": 0.064,
+    "generated_at": "2026-10-27T12:44:45+00:00"
+  }
+}

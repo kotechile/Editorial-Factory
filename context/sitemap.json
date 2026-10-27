@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T12:14:40Z",
+  "updated_at": "2026-10-27T12:44:58Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3744,6 +3744,24 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-26",
+      "public": false
+    },
+    {
+      "slug": "2026-10-27_two-sparks-cost-3048-more-cable",
+      "title": "Two Sparks Cost $3,048 More: The 25 GB/s Cable",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-27",
       "public": false
     },
     {

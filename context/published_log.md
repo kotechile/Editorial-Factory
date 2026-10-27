@@ -212,6 +212,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-27 | nhil_infrastructure_ops | your-60-fast-lane-is-blind | Your 60% Fast Lane Is Blind | https://pressflow.aichieve.net/published/2026-10-27_your-60-fast-lane-is-blind.md | reader site only |
 | 2026-10-27 | enterprise_tech_leadership | your-15-percent-raise-is-a-price-hike | Your 15% Raise: A Memory Price Hike | https://pressflow.aichieve.net/published/2026-10-27_your-15-percent-raise-is-a-price-hike.md | reader site only |
 | 2026-10-27 | smart_home_telemetry | your-hubs-4292-project-blind-spot | Your Hub's 4,292-Project Blind Spot | https://pressflow.aichieve.net/published/2026-10-27_your-hubs-4292-project-blind-spot.md | reader site only |
+| 2026-10-27 | workstation_compute_economics | two-sparks-cost-3048-more-cable | Two Sparks Cost $3,048 More: The 25 GB/s Cable | https://pressflow.aichieve.net/published/2026-10-27_two-sparks-cost-3048-more-cable.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

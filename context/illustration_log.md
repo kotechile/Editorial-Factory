@@ -333,3 +333,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-27 | `your-60-fast-lane-is-blind` | nhil_infrastructure_ops | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-60-fast-lane-is-blind/featured.jpg` |
 | 2026-10-27 | `your-15-percent-raise-is-a-price-hike` | enterprise_tech_leadership | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-15-percent-raise-is-a-price-hike/featured.jpg` |
 | 2026-10-27 | `your-hubs-4292-project-blind-spot` | smart_home_telemetry | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-hubs-4292-project-blind-spot/featured.jpg` |
+| 2026-10-27 | `two-sparks-cost-3048-more-cable` | workstation_compute_economics | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/two-sparks-cost-3048-more-cable/featured.jpg` |
