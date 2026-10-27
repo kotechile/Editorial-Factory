@@ -1,0 +1,114 @@
+{
+  "slug": "your-green-passes-hide-31-wrong",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A brushed steel inspection gate mechanism allowing a flawed polymer module to pass through a green sensor ring.",
+      "caption": "Test suites often act as a formality rather than a strict gate, waving through flawed patches with a passing grade.",
+      "title": "Faulty Inspection Gate Assembly",
+      "bytes": 392623,
+      "sha256": "sha256:961e3f2b714cc0501c4cbd57c0cfb288"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete plant floor, wide asymmetrical framing with generous negative space. An unlatched inspection gate mechanism in brushed steel and graphite, allowing a visibly flawed, jagged polymer module to pass through a glowing green sensor ring. One strong directional light throwing a long cast shadow from the left, matte muted palette of graphite, weathered orange, and safety yellow, hard clean edges, no lettering or text.",
+  "negative_prompt": "text, letters, typography, watermark, signature, garbled text, random lettering",
+  "rationale": "A component assembly perfectly visualizes the 'strict gate' versus 'formality' concept, showing a physical inspection checkpoint that is failing to stop a defective module.",
+  "cue": "gate reporting a number it never earned",
+  "subject": "a modular mechanical inspection gate passing a flawed component",
+  "core_thesis": "Test suites for AI coding agents are granting passes to defective code, functioning as a mere formality rather than a strict gate.",
+  "core_conflict": "Appearance of success (green pass rate) versus actual code functionality (undetected defects).",
+  "composition": "wide asymmetrical framing with generous negative space",
+  "alt_text": "False Green Checks. A brushed steel inspection gate mechanism allowing a flawed polymer module to pass through a green sensor ring.",
+  "caption": "False Green Checks: Why passing tests hide broken AI-generated code.",
+  "title": "False Green Checks",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-green-passes-hide-31-wrong/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 398370,
+  "sha256": "sha256:033d55f8f77e12f66a1e8c58a689efe5120eb7880df2f6820a083a791f8b557f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 398370,
+    "quality": 80,
+    "sha256": "sha256:033d55f8f77e12f66a1e8c58a689efe5120eb7880df2f6820a083a791f8b557f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:4e56806e5d241198e961cff87de38c88434bf09f3358482fbc17d401004631d3",
+  "render_phash": "2a0069fee87fce7fce7fde7f4e5f585ff43bfe06e1c0f9b0f8d8fc1cfee0fff0",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metallic structure with an open door reveals a glowing green circular opening through which a jagged, dark object is passing, casting a long shadow on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a flawed object passing through a green-lit gate, matching the article's metaphor of a test suite passing wrong code."
+  },
+  "source_hash": "sha256:384c65a831cbcc1130b862eb8a823b41",
+  "source_chars": 6785,
+  "task_id": "4bf94e291cfe6f8cdbbd50646964e518",
+  "credits": 18.0,
+  "cost_ms": 210,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_36bd0202bea7f4d420c938fd6ad72b6a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete plant floor, wide asymmetrical framing with generous negative space. An unlatched inspection gate mechanism in brushed steel and graphite, allowing a visibly flawed, jagged polymer module to pass through a glowing green sensor ring. One strong directional light throwing a long cast shadow from the left, matte muted palette of graphite, weathered orange, and safety yellow, hard clean edges, no lettering or text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-27T17:47:53+00:00",
+  "overlay": {
+    "kicker": "AI OBSERVABILITY // BENCHMARK FLAWS",
+    "title": "FALSE GREEN CHECKS",
+    "hook": "Why passing tests hide broken AI-generated code",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.69,
+    "target": 4.5,
+    "clutter": 0.166,
+    "region_rgb": [
+      44,
+      45,
+      40
+    ],
+    "binding_rgb": [
+      67,
+      66,
+      61
+    ],
+    "title_lines": [
+      "FALSE GREEN",
+      "CHECKS"
+    ],
+    "subject": 0.069,
+    "ink_subject": 0.041,
+    "spike": 0.181,
+    "generated_at": "2026-10-27T17:47:53+00:00"
+  }
+}

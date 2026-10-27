@@ -1,6 +1,6 @@
 {
   "slug": "3d-printing-failed-prints-are-the-cost",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -57,6 +57,14 @@
       "title": "The 3D Printing Failure Rate",
       "bytes": 1124805,
       "sha256": "sha256:6340952148f21d94672360583b8a415170d99e0f496d4c50a0636631e97a1201"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The 3D Printing Failure Rate. A partially formed mechanical bracket tangled in plastic extrusion on a neutral surface.",
+      "caption": "The 3D Printing Failure Rate: The hidden cost of failed prints and wasted filament.",
+      "title": "The 3D Printing Failure Rate",
+      "bytes": 1124805,
+      "sha256": "sha256:6340952148f21d94672360583b8a415170d99e0f496d4c50a0636631e97a1201"
     }
   ],
   "style": "component_assembly",
@@ -83,12 +91,12 @@
     "style": "component_assembly",
     "model": "nanobanana"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/3d-printing-failed-prints-are-the-cost/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1124805,
-  "sha256": "sha256:6340952148f21d94672360583b8a415170d99e0f496d4c50a0636631e97a1201",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/3d-printing-failed-prints-are-the-cost/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 325277,
+  "sha256": "sha256:272c188129905fe9e2abb20c2a1ea20638918100248fe47e32fd3d2045c401d9",
   "source_hash": "sha256:366609961d40b4b04fb423cbc9b70ab4",
   "source_chars": 3800,
   "task_id": "6d5886686daaba2049b0f2e399841249",
@@ -110,21 +118,21 @@
     "kicker": "3D PRINTING // THE HIDDEN COSTS",
     "title": "THE 3D PRINTING FAILURE RATE",
     "hook": "The hidden cost of failed prints and wasted filament",
-    "anchor": "top-left",
+    "anchor": "top-right",
     "light": false,
     "scrim": 0,
-    "contrast": 8.21,
+    "contrast": 6.73,
     "target": 4.5,
-    "clutter": 0.015,
+    "clutter": 0.06,
     "region_rgb": [
-      208,
-      206,
-      203
+      197,
+      195,
+      191
     ],
     "binding_rgb": [
-      208,
-      204,
-      203
+      190,
+      185,
+      182
     ],
     "title_lines": [
       "THE 3D PRINTING",
@@ -134,5 +142,18 @@
     "ink_subject": 0.0,
     "spike": 0.0,
     "generated_at": "2026-10-03T17:50:01+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 325277,
+    "quality": 88,
+    "sha256": "sha256:272c188129905fe9e2abb20c2a1ea20638918100248fe47e32fd3d2045c401d9",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

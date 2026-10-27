@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T13:12:01Z",
+  "updated_at": "2026-10-27T17:48:07Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3578,7 +3578,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/you-are-pricing-the-fuel-not-the-tank/"
     },
     {
       "slug": "2026-10-26_your-15-air-rule-195-break-even",
@@ -3596,7 +3597,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-15-air-rule-195-break-even/"
     },
     {
       "slug": "2026-10-26_your-49-cut-was-actually-9",
@@ -3633,7 +3635,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-98-fill-rate-18-dont-ship/"
     },
     {
       "slug": "2026-10-26_your-agent-contract-gap-63-unmet",
@@ -3670,7 +3673,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-ai-fine-is-3-percent/"
     },
     {
       "slug": "2026-10-26_your-battery-payback-0-or-38",
@@ -3688,7 +3692,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-battery-payback-0-or-38/"
     },
     {
       "slug": "2026-10-26_your-next-bedroom-417500",
@@ -3744,7 +3749,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-tool-boundary-costs-3-engineers/"
     },
     {
       "slug": "2026-10-27_two-sparks-cost-3048-more-cable",
@@ -3762,7 +3768,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/two-sparks-cost-3048-more-cable/"
     },
     {
       "slug": "2026-10-27_your-15-percent-raise-is-a-price-hike",
@@ -3780,7 +3787,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-15-percent-raise-is-a-price-hike/"
     },
     {
       "slug": "2026-10-27_your-60-fast-lane-is-blind",
@@ -3798,11 +3806,31 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-60-fast-lane-is-blind/"
     },
     {
       "slug": "2026-10-27_your-cache-pays-125x-for-nothing",
       "title": "Your Cache Pays 1.25x for Nothing",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-10-27",
+      "public": true,
+      "url": "https://aichieve.net/your-cache-pays-125x-for-nothing/"
+    },
+    {
+      "slug": "2026-10-27_your-green-passes-hide-31-wrong",
+      "title": "Your Green Suite Certifies 31.08% Wrong",
       "vertical": "ai_observability_qa",
       "primary_keyword": "",
       "secondary_keywords": [],
@@ -3834,7 +3862,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-hubs-4292-project-blind-spot/"
     },
     {
       "slug": "2026-10-27_your-miss-costs-9x-the-chargeback",
@@ -3852,7 +3881,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-miss-costs-9x-the-chargeback/"
     }
   ]
 }

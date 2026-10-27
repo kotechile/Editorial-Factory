@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T14:16:11+00:00",
+  "generated_at": "2026-10-27T14:16:47+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2216,6 +2216,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "you-are-pricing-the-fuel-not-the-tank",
+      "title": "Your Tank's Class Costs $55",
+      "url": "https://wellroost.com/you-are-pricing-the-fuel-not-the-tank/",
+      "path": "/you-are-pricing-the-fuel-not-the-tank/",
+      "sites_live": {
+        "wellroost.com": "/you-are-pricing-the-fuel-not-the-tank/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Your tank's class sets the bill more than its fuel does, because what decides the running cost is the efficiency standard the unit must meet.",
+      "modified": "2026-10-27T04:55:03",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-1-acre-mowers-04-acre-trap",
       "title": "Your 1-Acre Mower's 0.4-Acre Trap",
       "url": "https://wellroost.com/your-1-acre-mowers-04-acre-trap/",
@@ -2377,6 +2400,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-battery-payback-0-or-38",
+      "title": "Your Battery's Payback Gap: 0\u00a2 to 38.1\u00a2",
+      "url": "https://wellroost.com/your-battery-payback-0-or-38/",
+      "path": "/your-battery-payback-0-or-38/",
+      "sites_live": {
+        "wellroost.com": "/your-battery-payback-0-or-38/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Two homes on the same street can face a payback gap of 38.1\u00a2 per unit of power, and the reason is how their bills are built.",
+      "modified": "2026-10-27T04:55:42",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-batterys-745-mw-cliff",
       "title": "Your Battery's 745 MW Cliff",
       "url": "https://wellroost.com/your-batterys-745-mw-cliff/",
@@ -2462,6 +2508,29 @@
       ],
       "excerpt": "The pitch for a heated snow mat is its running cost, quoted by HeatTrak as about $0.18 an hour. My read is that the hourly figure, and the $1.80 it becomes\u2026",
       "modified": "2026-10-24T19:13:37",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-hubs-4292-project-blind-spot",
+      "title": "Your Hub's 4,292-Project Blind Spot",
+      "url": "https://wellroost.com/your-hubs-4292-project-blind-spot/",
+      "path": "/your-hubs-4292-project-blind-spot/",
+      "sites_live": {
+        "wellroost.com": "/your-hubs-4292-project-blind-spot/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "This November your Home Assistant hub adds 4,292 unaudited projects to a menu it now owns, and the blind spot is written into the release notes.",
+      "modified": "2026-10-27T12:14:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2644,8 +2713,8 @@
       "category_slugs": [
         "supply-chain-operations"
       ],
-      "excerpt": "33% of your shrink isn't theft, and that number now sits on the receiving dock instead of the front door. The study behind it comes after fielding across\u2026",
-      "modified": "2026-10-26T13:16:58",
+      "excerpt": "33% of your shrink isn't theft, and that money now sits on the receiving dock instead of the front door. Shrink is the trade word for stock that is lost\u2026",
+      "modified": "2026-10-27T04:55:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5161,6 +5230,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "two-sparks-cost-3048-more-cable",
+      "title": "Two Sparks Cost $3,048 More: The 25 GB/s Cable",
+      "url": "https://aichieve.net/two-sparks-cost-3048-more-cable/",
+      "path": "/two-sparks-cost-3048-more-cable/",
+      "sites_live": {
+        "aichieve.net": "/two-sparks-cost-3048-more-cable/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Two small Sparks and one cable now hold the 128 gigabytes (GB) of memory Nvidia's $6,950 desk machine holds, for $9,998, and the cable is the part nobody\u2026",
+      "modified": "2026-10-27T12:44:57",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "up-ns-rail-merger-clears-summary-denial",
       "title": "Coast-to-Coast Rail Merger Clears First Big Test",
       "url": "https://aichieve.net/up-ns-rail-merger-clears-summary-denial/",
@@ -5345,6 +5437,52 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-15-air-rule-195-break-even",
+      "title": "Your $15 Air Rule, $195 Break-Even",
+      "url": "https://aichieve.net/your-15-air-rule-195-break-even/",
+      "path": "/your-15-air-rule-195-break-even/",
+      "sites_live": {
+        "aichieve.net": "/your-15-air-rule-195-break-even/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time\u2026",
+      "modified": "2026-10-26T19:52:25",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-15-percent-raise-is-a-price-hike",
+      "title": "Your 15% Raise: A Memory Price Hike",
+      "url": "https://aichieve.net/your-15-percent-raise-is-a-price-hike/",
+      "path": "/your-15-percent-raise-is-a-price-hike/",
+      "sites_live": {
+        "aichieve.net": "/your-15-percent-raise-is-a-price-hike/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Global tech budgets will grow next year mostly because memory costs more than doubled, leaving teams with more money that buys less raw compute.",
+      "modified": "2026-10-27T11:45:20",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-24gb-card-is-4gb-short",
       "title": "Your 24GB Card Is 4GB Short: The Label Trap",
       "url": "https://aichieve.net/your-24gb-card-is-4gb-short/",
@@ -5437,6 +5575,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-60-fast-lane-is-blind",
+      "title": "Your 60% Fast Lane Is Blind",
+      "url": "https://aichieve.net/your-60-fast-lane-is-blind/",
+      "path": "/your-60-fast-lane-is-blind/",
+      "sites_live": {
+        "aichieve.net": "/your-60-fast-lane-is-blind/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Roughly 60 to 70 percent of \u00d8rsted's firewall changes take a pre-approved fast lane that never reaches the change board.",
+      "modified": "2026-10-27T11:18:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-61-point-growth-was-a-refill",
       "title": "Your 6.1-Point Growth Isn't Demand",
       "url": "https://aichieve.net/your-61-point-growth-was-a-refill/",
@@ -5476,6 +5637,29 @@
       ],
       "excerpt": "Four live traces covering more than 121 million model calls show the median research session growing from about 10K to 68K tokens by the 30th call. A separate\u2026",
       "modified": "2026-10-21T11:40:43",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-98-fill-rate-18-dont-ship",
+      "title": "Ops leaders: Why 98% line fill ships 18% short",
+      "url": "https://aichieve.net/your-98-fill-rate-18-dont-ship/",
+      "path": "/your-98-fill-rate-18-dont-ship/",
+      "sites_live": {
+        "aichieve.net": "/your-98-fill-rate-18-dont-ship/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "One in five ten-line orders ships short, even though the desk's line fill reads 98%. At 98% per-line stock, 18.3% of ten-line baskets fail to ship complete\u2026",
+      "modified": "2026-10-26T20:09:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5568,6 +5752,52 @@
       ],
       "excerpt": "An agent team loses 28 points against a single agent doing the exact same job. That same week, a separate test handed over a 188-fold bill for using a team\u2026",
       "modified": "2026-10-22T10:39:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-ai-fine-is-3-percent",
+      "title": "Your AI Fine: 3%, Not 35 Million",
+      "url": "https://aichieve.net/your-ai-fine-is-3-percent/",
+      "path": "/your-ai-fine-is-3-percent/",
+      "sites_live": {
+        "aichieve.net": "/your-ai-fine-is-3-percent/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Take a European firm with \u20ac2 billion of sales whose loan-approval agent cannot explain a weekend of rejected files.",
+      "modified": "2026-10-27T04:55:38",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-cache-pays-125x-for-nothing",
+      "title": "Your Cache Pays 1.25x for Nothing",
+      "url": "https://aichieve.net/your-cache-pays-125x-for-nothing/",
+      "path": "/your-cache-pays-125x-for-nothing/",
+      "sites_live": {
+        "aichieve.net": "/your-cache-pays-125x-for-nothing/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your agent's cache pays 1.25 times the input price to write a prefix for five minutes, and a tenth of that price to read it back.",
+      "modified": "2026-10-27T10:42:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5805,6 +6035,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-miss-costs-9x-the-chargeback",
+      "title": "Your Miss Costs 9x the Chargeback",
+      "url": "https://aichieve.net/your-miss-costs-9x-the-chargeback/",
+      "path": "/your-miss-costs-9x-the-chargeback/",
+      "sites_live": {
+        "aichieve.net": "/your-miss-costs-9x-the-chargeback/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute.",
+      "modified": "2026-10-27T13:20:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-platform-23-features-no-stop-rule",
       "title": "Your Platform: 23 Features, No Stop Rule",
       "url": "https://aichieve.net/your-platform-23-features-no-stop-rule/",
@@ -5920,6 +6173,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-tool-boundary-costs-3-engineers",
+      "title": "Your Tool Boundary Costs 3 Engineers",
+      "url": "https://aichieve.net/your-tool-boundary-costs-3-engineers/",
+      "path": "/your-tool-boundary-costs-3-engineers/",
+      "sites_live": {
+        "aichieve.net": "/your-tool-boundary-costs-3-engineers/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Segment spent 3 full-time engineers just keeping its software alive. Then it folded more than 140 separate services into one, and shipped 46 improvements to\u2026",
+      "modified": "2026-10-27T04:55:47",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-tool-surface-is-a-release-surface",
       "title": "Your Gateway: 60.5% Injection Risk",
       "url": "https://aichieve.net/your-tool-surface-is-a-release-surface/",
@@ -6013,6 +6289,132 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 1219,
+      "slug": "your-miss-costs-9x-the-chargeback",
+      "title": "Your Miss Costs 9x the Chargeback",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T13:20:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1217,
+      "slug": "two-sparks-cost-3048-more-cable",
+      "title": "Two Sparks Cost $3,048 More: The 25 GB/s Cable",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T12:44:57",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1214,
+      "slug": "your-15-percent-raise-is-a-price-hike",
+      "title": "Your 15% Raise: A Memory Price Hike",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T11:45:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1210,
+      "slug": "your-60-fast-lane-is-blind",
+      "title": "Your 60% Fast Lane Is Blind",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T11:18:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1208,
+      "slug": "your-cache-pays-125x-for-nothing",
+      "title": "Your Cache Pays 1.25x for Nothing",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T10:42:31",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1202,
+      "slug": "your-98-fill-rate-18-dont-ship",
+      "title": "Ops leaders: Why 98% line fill ships 18% short",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-26T20:09:31",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1196,
+      "slug": "your-15-air-rule-195-break-even",
+      "title": "Your $15 Air Rule, $195 Break-Even",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-26T19:52:25",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1194,
+      "slug": "your-ai-fine-is-3-percent",
+      "title": "Your AI Fine: 3%, Not 35 Million",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T04:55:38",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1190,
+      "slug": "your-tool-boundary-costs-3-engineers",
+      "title": "Your Tool Boundary Costs 3 Engineers",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T04:55:47",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 1187,
       "slug": "33-of-your-shrink-isnt-theft",
       "title": "33% of Your Shrink Isn&#8217;t Theft",
@@ -6020,7 +6422,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-26T13:16:58",
+      "modified": "2026-10-27T04:55:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7075,104 +7477,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 830,
-      "slug": "agent-timeout-false-alarm-budget",
-      "title": "Agent Timeouts: Pick 0.1%, Not a Round Number",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:37",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 827,
-      "slug": "air-freight-wont-price-a-year",
-      "title": "60% Air Deals: Your Stock Math Breaks",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:37",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 825,
-      "slug": "kill-switch-misses-half-your-agents",
-      "title": "Kill Switch Misses Half Your Agents: 12 Vendors Agree",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:37",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 821,
-      "slug": "one-skill-too-many-green-test",
-      "title": "270 Attacks: Your Green Tests Are Blind",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:38",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 810,
-      "slug": "why-importers-forfeit-duty-refunds",
-      "title": "Why Importers Forfeit 99% Duty Refunds",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:38",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 795,
-      "slug": "nearshoring-doesnt-move-the-trade-case",
-      "title": "Nearshoring Doesn&#8217;t Move the Trade Case",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:38",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 578,
-      "slug": "kv-cache-is-the-concurrency-ceiling",
-      "title": "Your GPU Runs Out of Cache Before It Runs Out of Math",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T01:57:54",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -7393,34 +7697,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T19:44:40",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 807,
-      "slug": "self-hosting-break-even-one-hour-a-year",
-      "title": "Self-Hosting Break-Even: 1.26 Hours a Year",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T18:25:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 793,
-      "slug": "home-assistant-cloud-rename-hardware-rent",
-      "title": "Why Home Assistant Renamed Its Cloud",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-10T18:25:28",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

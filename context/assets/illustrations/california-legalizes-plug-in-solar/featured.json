@@ -1,6 +1,6 @@
 {
   "slug": "california-legalizes-plug-in-solar",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -49,6 +49,14 @@
       "title": "Ca Legalizes Plug-In Solar",
       "bytes": 986924,
       "sha256": "sha256:edbf1e3db3d35fb502f5c741063a49293322ee8887c1ae0ccf6669a4c97108ca"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Ca Legalizes Plug-In Solar. A small modular solar panel connected to a standard wall plug on a plain surface.",
+      "caption": "Ca Legalizes Plug-In Solar: Renters can use balcony solar without utility permits.",
+      "title": "Ca Legalizes Plug-In Solar",
+      "bytes": 986924,
+      "sha256": "sha256:edbf1e3db3d35fb502f5c741063a49293322ee8887c1ae0ccf6669a4c97108ca"
     }
   ],
   "style": "component_assembly",
@@ -75,12 +83,12 @@
     "style": "component_assembly",
     "model": "nanobanana"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/california-legalizes-plug-in-solar/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 986924,
-  "sha256": "sha256:edbf1e3db3d35fb502f5c741063a49293322ee8887c1ae0ccf6669a4c97108ca",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/california-legalizes-plug-in-solar/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 286669,
+  "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113",
   "source_hash": "sha256:3843cd50fe13fd709f0a8768b8486c8a",
   "source_chars": 3798,
   "task_id": "877eb61be57ce0ec1c9d7a2bc9fe6bf4",
@@ -102,29 +110,42 @@
     "kicker": "HOME ENERGY // PLUG-IN SOLAR",
     "title": "CA LEGALIZES PLUG-IN SOLAR",
     "hook": "Renters can use balcony solar without utility permits",
-    "anchor": "bottom-left",
+    "anchor": "top-right",
     "light": false,
-    "scrim": 45,
-    "contrast": 4.88,
+    "scrim": 30,
+    "contrast": 4.59,
     "target": 4.5,
-    "clutter": 0.034,
+    "clutter": 0.049,
     "region_rgb": [
-      145,
-      141,
-      134
+      149,
+      146,
+      139
     ],
     "binding_rgb": [
-      140,
-      137,
-      130
+      142,
+      139,
+      132
     ],
     "title_lines": [
       "CA LEGALIZES",
       "PLUG-IN SOLAR"
     ],
-    "subject": 0.006,
-    "ink_subject": 0.002,
-    "spike": 0.023,
+    "subject": 0.024,
+    "ink_subject": 0.012,
+    "spike": 0.071,
     "generated_at": "2026-10-03T16:24:59+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 286669,
+    "quality": 88,
+    "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }
