@@ -1,6 +1,6 @@
 {
   "slug": "2000-fine-tunes-one-card-55-throughput",
-  "revision": 2,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -9,38 +9,78 @@
       "title": "server-memory-bottleneck-macro",
       "bytes": 349607,
       "sha256": "sha256:30d93a07b3d74774e9a6dcdf6cc32947"
+    },
+    {
+      "revision": 2,
+      "style": "editorial_macro",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Editorial macro photograph of a high-density server RAM module with exposed cobalt memory chips resting on a brushed steel workbench in a dimly lit server room. Extreme asymmetry, hero object on the right third with generous negative space on the left. A single directional key light from the left casts a long sharp shadow across the steel surface, highlighting the intricate silicon and fiberglass textures. Slate grey, cobalt, and bone white palette. 100mm macro lens, razor-sharp focal plane on the memory chips, soft atmospheric depth of field blurring the background server racks, fine film grain, no text.",
+      "task_id": "e3c70f5933d03d800d3055409e44fcfe",
+      "sha256": "sha256:edd668e4c3e68bdeaac66149846fd210969ac8e0b3fc319e7c6fc16f0c4a5037",
+      "generated_at": "2026-10-27T19:45:01+00:00",
+      "source_hash": "sha256:e8600f2394dc5040cfc9b9a66d56caf7",
+      "render_sha256": "sha256:c8d6448fe197ddf87e83a7b126ab74c7516ee2e6038b57e65f0d1976ce900ba3"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A heavy brushed steel modular base block fitted with numerous tiny copper plug-in modules on a concrete surface.",
+      "caption": "A single heavy base model can support thousands of lightweight fine-tuned adapters, shifting the hardware bottleneck to system memory.",
+      "title": "LoRA Adapter Component Assembly",
+      "bytes": 390043,
+      "sha256": "sha256:3889ce362b90a88e9abe6855c7a43f05"
+    },
+    {
+      "revision": 4,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete floor in a data hall context. Extreme asymmetry with negative space. A massive brushed steel modular base block, fitted with a dense, interlocking grid of hundreds of tiny, identical copper plug-in modules bolted to its surface. Clean hard edges, matte muted palette of concrete grey, brushed steel, and copper. One strong directional key light from the left throwing a long, distinct cast shadow across the textured concrete. No bare shapes, no text.",
+      "task_id": "7f4210ba56716d616ac759a59c0c4963",
+      "sha256": "sha256:5ae82a6ac6d043781c8f551a757b62f7883b11fdd02aa71d45f1c512fce167aa",
+      "generated_at": "2026-10-27T19:50:42+00:00",
+      "source_hash": "sha256:e8600f2394dc5040cfc9b9a66d56caf7",
+      "render_sha256": "sha256:61619e14f617b3c71a81f94fad24eabd8162d01b66ad53adedf209e6c85dfa5d"
+    },
+    {
+      "revision": 5,
+      "alt_text": "An enterprise graphics card and a dense stack of server memory sticks on a brushed steel bench.",
+      "caption": "When multiple fine-tunes share a single base model, system memory quickly becomes the primary hardware bottleneck.",
+      "title": "gpu-memory-bottleneck-hardware",
+      "bytes": 309934,
+      "sha256": "sha256:198f87e6dad9005ad2650b47afa3b400"
     }
   ],
-  "style": "editorial_macro",
-  "style_label": "Editorial macro",
-  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Editorial macro photograph of a high-density server RAM module with exposed cobalt memory chips resting on a brushed steel workbench in a dimly lit server room. Extreme asymmetry, hero object on the right third with generous negative space on the left. A single directional key light from the left casts a long sharp shadow across the steel surface, highlighting the intricate silicon and fiberglass textures. Slate grey, cobalt, and bone white palette. 100mm macro lens, razor-sharp focal plane on the memory chips, soft atmospheric depth of field blurring the background server racks, fine film grain, no text.",
-  "negative_prompt": "garbled text, random lettering, watermarks, UI, printed words, logos, people, abstract bare shapes",
-  "rationale": "Editorial macro focuses tightly on the physical RAM module, reflecting the article's core realization that a single hardware component\u2014host memory\u2014is the true bottleneck and purchase priority for scaling fine-tunes.",
-  "cue": "onto system memory",
-  "subject": "a high-density server RAM module resting on brushed steel",
-  "core_thesis": "A single GPU can run thousands of fine-tuned adapters because they share base weights, shifting the local deployment bottleneck from graphics cards to system memory.",
-  "core_conflict": "GPU compute capacity versus system RAM catalog constraints",
-  "composition": "extreme asymmetry, hero object on the right third",
-  "alt_text": "The Cost Of 2000 Fine-Tunes. A high-density server RAM module resting on a brushed steel surface in a server room.",
-  "caption": "The Cost Of 2000 Fine-Tunes: Why stacking RAM beats buying another GPU for local AI.",
-  "title": "The Cost Of 2000 Fine-Tunes",
+  "prompt": "Studio product photograph of a massive enterprise graphics processing unit resting beside a tightly packed, towering row of high-capacity server memory sticks on a brushed steel assembly line bench in a server room. Extreme asymmetry with the memory modules dominating the foreground. Single directional softbox key light from the left throwing a long cast shadow. Graphite, copper, and deep pine green palette. Exposed copper connectors, frosted polymer heat sinks, catalogue clarity, shallow depth of field, 85mm lens, no gradient sweep, no printed lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, abstract cubes, floating geometry, generic people, gradients",
+  "rationale": "The article focuses on a physical hardware purchasing decision\u2014buying RAM instead of another GPU. A studio product shot directly addresses this hardware reality.",
+  "cue": "buying decision off the graphics card",
+  "subject": "an enterprise graphics card beside a stack of server memory sticks",
+  "core_thesis": "Running thousands of LoRA adapters on a single GPU shifts the enterprise hardware bottleneck from video memory to host system RAM.",
+  "core_conflict": "Capital allocation for AI hardware (buying more GPUs) vs. the actual physical limit (system memory bandwidth).",
+  "composition": "extreme asymmetry with the memory modules dominating the foreground",
+  "alt_text": "An enterprise graphics card standing beside a dense rack of server memory modules on a brushed steel bench in a server room.",
+  "caption": "The Hardware Shift: 2,000 fine-tunes share one card, and the budget moves from GPU to RAM.",
+  "title": "2,000 Fine-Tunes On One GPU",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
-  "pinned": {},
+  "pinned": {
+    "model": "flux"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/2000-fine-tunes-one-card-55-throughput/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 398039,
-  "sha256": "sha256:edd668e4c3e68bdeaac66149846fd210969ac8e0b3fc319e7c6fc16f0c4a5037",
+  "bytes": 341308,
+  "sha256": "sha256:109c7d9e9026618716cea0c4546d67146787b0b4ace5aade1c80184420b9909a",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,64 +89,64 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 398039,
+    "bytes": 341308,
     "quality": 88,
-    "sha256": "sha256:edd668e4c3e68bdeaac66149846fd210969ac8e0b3fc319e7c6fc16f0c4a5037",
+    "sha256": "sha256:109c7d9e9026618716cea0c4546d67146787b0b4ace5aade1c80184420b9909a",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:c8d6448fe197ddf87e83a7b126ab74c7516ee2e6038b57e65f0d1976ce900ba3",
-  "render_phash": "3b993f992b9929059d99384f3e4f3a5f3e5f3e6f2e6f026f006f006e1a661e7e",
+  "render_sha256": "sha256:4efbf9a24e7b5a6b5c9f4af333b89a36b3b4e4a695f4910e74256598e09c59c0",
+  "render_phash": "3a8c3ce73cec36af3fb6ce2fcd1fcd37ce3e1e3f3679381a3e383f993fe71edf",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "A computer RAM module rests on a metallic surface with server racks blurred in the background.",
+    "depicts": "A large stack of server memory modules and a graphics card on a metal surface.",
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.7,
-    "reason": "The image shows a RAM module, which relates to the article's mention of host memory being the next purchase for multi-model local deployment."
+    "reason": "The image shows server memory and a graphics card, which aligns with the article's focus on hardware for multi-model local deployment."
   },
   "source_hash": "sha256:e8600f2394dc5040cfc9b9a66d56caf7",
   "source_chars": 6481,
-  "task_id": "e3c70f5933d03d800d3055409e44fcfe",
+  "task_id": "f806c19c318d4e3cc109a1ec634ac0b6",
   "credits": 5.0,
-  "cost_ms": 52,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/e3c70f5933d03d800d3055409e44fcfe_1793130284403.jpg",
+  "cost_ms": 120,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f806c19c318d4e3cc109a1ec634ac0b6_1793131056998.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Editorial macro photograph of a high-density server RAM module with exposed cobalt memory chips resting on a brushed steel workbench in a dimly lit server room. Extreme asymmetry, hero object on the right third with generous negative space on the left. A single directional key light from the left casts a long sharp shadow across the steel surface, highlighting the intricate silicon and fiberglass textures. Slate grey, cobalt, and bone white palette. 100mm macro lens, razor-sharp focal plane on the memory chips, soft atmospheric depth of field blurring the background server racks, fine film grain, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Studio product photograph of a massive enterprise graphics processing unit resting beside a tightly packed, towering row of high-capacity server memory sticks on a brushed steel assembly line bench in a server room. Extreme asymmetry with the memory modules dominating the foreground. Single directional softbox key light from the left throwing a long cast shadow. Graphite, copper, and deep pine green palette. Exposed copper connectors, frosted polymer heat sinks, catalogue clarity, shallow depth of field, 85mm lens, no gradient sweep, no printed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-27T19:45:01+00:00",
+  "generated_at": "2026-10-27T19:57:47+00:00",
   "overlay": {
-    "kicker": "AI HARDWARE // LORA ADAPTER SCALING",
-    "title": "THE COST OF 2000 FINE-TUNES",
-    "hook": "Why stacking RAM beats buying another GPU for local AI",
-    "anchor": "top-right",
+    "kicker": "LOCAL COMPUTE // LORA SCALING",
+    "title": "2,000 FINE-TUNES ON ONE GPU",
+    "hook": "Shared weights move the hardware budget from GPU to RAM",
+    "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 12.65,
-    "target": 4.5,
-    "clutter": 0.086,
+    "scrim": 30,
+    "contrast": 5.77,
+    "target": 5.5,
+    "clutter": 0.26,
     "region_rgb": [
-      27,
-      28,
-      31
+      73,
+      76,
+      73
     ],
     "binding_rgb": [
-      37,
-      41,
-      44
+      103,
+      104,
+      108
     ],
     "title_lines": [
-      "THE COST OF 2000",
-      "FINE-TUNES"
+      "2,000 FINE-TUNES",
+      "ON ONE GPU"
     ],
-    "subject": 0.026,
-    "ink_subject": 0.012,
-    "spike": 0.084,
-    "generated_at": "2026-10-27T19:45:01+00:00"
+    "subject": 0.052,
+    "ink_subject": 0.026,
+    "spike": 0.157,
+    "generated_at": "2026-10-27T19:57:47+00:00"
   }
 }

@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Running 2,000 fine-tunes on one graphics card costs just 5.5% of peak throughput, because every adapter shares the same heavy base weights."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/2000-fine-tunes-one-card-55-throughput/featured.jpg"
-image_style: "editorial_macro"
+image_style: "studio_object"
 image_model: "flux"
-image_alt: "The Cost Of 2000 Fine-Tunes. A high-density server RAM module resting on a brushed steel surface in a server room."
-image_caption: "The Cost Of 2000 Fine-Tunes: Why stacking RAM beats buying another GPU for local AI."
+image_alt: "An enterprise graphics card standing beside a dense rack of server memory modules on a brushed steel bench in a server room."
+image_caption: "The Hardware Shift: 2,000 fine-tunes share one card, and the budget moves from GPU to RAM."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
