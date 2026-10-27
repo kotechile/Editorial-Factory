@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-hubs-4292-project-blind-spot/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "Home Assistant'S Blind Spot. A modern home automation hub glowing faintly next to a tall stack of unmarked raw file folders on a workbench"
-image_caption: "Home Assistant'S Blind Spot: The core platform now owns a catalog it refuses to audit."
+image_alt: "A modern home automation hub glowing faintly next to a tall stack of unmarked raw file folders on a workbench in a garage."
+image_caption: "The move to bring community add-ons into the core platform leaves homeowners solely responsible for auditing thousands of projects."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
