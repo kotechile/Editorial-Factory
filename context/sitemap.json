@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T17:48:07Z",
+  "updated_at": "2026-10-27T18:11:36Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3827,6 +3827,24 @@
       "date": "2026-10-27",
       "public": true,
       "url": "https://aichieve.net/your-cache-pays-125x-for-nothing/"
+    },
+    {
+      "slug": "2026-10-27_your-gpu-break-even-is-37-percent-busy",
+      "title": "Your GPU Break-Even Is 37% Busy",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-10-27",
+      "public": false
     },
     {
       "slug": "2026-10-27_your-green-passes-hide-31-wrong",
