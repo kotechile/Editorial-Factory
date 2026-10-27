@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T18:11:36Z",
+  "updated_at": "2026-10-27T18:43:48Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3882,6 +3882,24 @@
       "date": "2026-10-27",
       "public": true,
       "url": "https://wellroost.com/your-hubs-4292-project-blind-spot/"
+    },
+    {
+      "slug": "2026-10-27_your-label-bills-2500-series",
+      "title": "Your Label's Bill: 2,500 Series",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-27",
+      "public": false
     },
     {
       "slug": "2026-10-27_your-miss-costs-9x-the-chargeback",

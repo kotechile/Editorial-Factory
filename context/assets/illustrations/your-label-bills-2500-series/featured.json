@@ -1,0 +1,114 @@
+{
+  "slug": "your-label-bills-2500-series",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A physical assembly where a single block splits into hundreds of smaller modules on a concrete surface.",
+      "caption": "When a label takes values from customer data, one metric can multiply into thousands of billable series.",
+      "title": "Metric Fan-out Assembly",
+      "bytes": 387259,
+      "sha256": "sha256:74b71e8977faa7ff7ef1802373e40f91"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "matte clay 3D render of a mechanical assembly on a textured concrete surface in a data hall. extreme asymmetry with the single source block off-centre. A single, solid graphite modular block on the left feeds through a central connector into a dense, overwhelming array of hundreds of smaller, identical cobalt blue modules spreading out to the right. matte surfaces with moulding seams and contact shadows resting on weathered concrete, one directional key light raking across them from the left throwing long shadows, muted slate grey and cobalt palette. no plain spheres or wedges standing in for the subject, no text and no moulded or embossed lettering.",
+  "negative_prompt": "garbled text, random letters, UI, watermarks, plain spheres, plain wedges",
+  "rationale": "The story is about a structural, abstract shift\u2014a single input fanning out into an unmanageable multitude of outputs (time series). A clay render allows us to build a physical assembly that states this multiplication clearly, without relying on literal server racks or confusing software UI.",
+  "cue": "turns one metric into thousands",
+  "subject": "a single modular block feeding into a massive array of smaller identical modules",
+  "core_thesis": "A single metric can explode into thousands of billable time series when labels use open-ended customer data, drastically increasing monitoring costs.",
+  "core_conflict": "Granular observability detail for developers vs. exponential billing scale for the business.",
+  "composition": "extreme asymmetry with the single source block off-centre",
+  "alt_text": "The Cost Of Metric Labels. A physical assembly where a single block splits into hundreds of smaller modules on a concrete surface.",
+  "caption": "The Cost Of Metric Labels: How high-cardinality data silently inflates your bill.",
+  "title": "The Cost Of Metric Labels",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-label-bills-2500-series/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399334,
+  "sha256": "sha256:329309396ea5087d8c4ab6810b6a68a70ddc49b6d77e4b128f3efe94691b8600",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399334,
+    "quality": 80,
+    "sha256": "sha256:329309396ea5087d8c4ab6810b6a68a70ddc49b6d77e4b128f3efe94691b8600",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:616b23e22bb1ff91afa073fb336afc391cc5f3eb90c0fa687392c1d1bb9fa7c9",
+  "render_phash": "dfcddb72df30ce0e4c97c3b107bc339cf8ecc05ed0fcf0686179ffbffb7ef95c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A large grey block-like structure connected to a cluster of smaller blue blocks on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a single source feeding into many smaller units, matching the article's concept of one metric turning into many series."
+  },
+  "source_hash": "sha256:0b1c5acc1725f4dacc1115c365b594db",
+  "source_chars": 4981,
+  "task_id": "02ce3cc48c8833fdb938892a5348371f",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0377a03e09023e73e2c9880fd824ce45.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "matte clay 3D render of a mechanical assembly on a textured concrete surface in a data hall. extreme asymmetry with the single source block off-centre. A single, solid graphite modular block on the left feeds through a central connector into a dense, overwhelming array of hundreds of smaller, identical cobalt blue modules spreading out to the right. matte surfaces with moulding seams and contact shadows resting on weathered concrete, one directional key light raking across them from the left throwing long shadows, muted slate grey and cobalt palette. no plain spheres or wedges standing in for the subject, no text and no moulded or embossed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-27T18:43:38+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE TECH // METRIC COSTS",
+    "title": "THE COST OF METRIC LABELS",
+    "hook": "How high-cardinality data silently inflates your bill",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.73,
+    "target": 4.5,
+    "clutter": 0.152,
+    "region_rgb": [
+      31,
+      31,
+      30
+    ],
+    "binding_rgb": [
+      58,
+      51,
+      43
+    ],
+    "title_lines": [
+      "THE COST OF",
+      "METRIC LABELS"
+    ],
+    "subject": 0.044,
+    "ink_subject": 0.02,
+    "spike": 0.14,
+    "generated_at": "2026-10-27T18:43:38+00:00"
+  }
+}
