@@ -11,6 +11,12 @@ meta_title: "Why Your ETA Misses 27 Hours"
 meta_title_source: "derived_from_title"
 meta_description: "Because distance makes guessing harder, an estimated time of arrival (ETA) misses the mark by roughly 27 hours on average for trips longer than a week."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-eta-misses-27-hours/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "An adjustable mechanical rail with a yellow sliding bracket clamped to it, resting on a steel console in a control room."
+image_caption: "The Math Of ETA Prediction: Why ETA alerts must scale with remaining transit time."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

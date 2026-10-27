@@ -1,0 +1,114 @@
+{
+  "slug": "your-eta-misses-27-hours",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An adjustable mechanical track with an expanding sliding bracket resting on a brushed steel console.",
+      "caption": "ETA error grows proportionally with distance, requiring dynamic alert windows rather than fixed time thresholds.",
+      "title": "Dynamic ETA Alert Bracket",
+      "bytes": 393827,
+      "sha256": "sha256:3dd98396e2788caccd9404cf9a11b0ab"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D render of an adjustable mechanical track with an expanding sliding bracket, positioned with extreme asymmetry, assembly off-centre right. The interlocking parts are constructed from matte graphite and safety yellow moulded polymer, featuring visible moulding seams and crisp mechanical edges. The structure is laid out on a weathered brushed steel console in an industrial control room. A single directional key light from the left rakes across the matte surfaces, casting long, sharp contact shadows against the metal. Bone white accents, deliberate spatial construction, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, plain void background, typography, labels",
+  "rationale": "A clay render distills the abstract mathematical concept of an expanding error margin into a tangible, physical assembly. It avoids literal ship clich\u00e9s while perfectly capturing the systemic shift in how control towers should measure variance.",
+  "cue": "share of the voyage",
+  "subject": "an adjustable mechanical track with an expanding sliding bracket",
+  "core_thesis": "Arrival-prediction error scales as a share of the remaining voyage, requiring alert windows to be dynamic percentages rather than fixed flat hours.",
+  "core_conflict": "Static flat-hour alert rules versus the escalating mathematical reality of prediction error over long transit distances.",
+  "composition": "extreme asymmetry, assembly off-centre right",
+  "alt_text": "An adjustable mechanical rail with a yellow sliding bracket clamped to it, resting on a steel console in a control room.",
+  "caption": "The Math Of ETA Prediction: Why ETA alerts must scale with remaining transit time.",
+  "title": "The Math Of ETA Prediction",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-eta-misses-27-hours/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401003,
+  "sha256": "sha256:02815a809e09b9229adb1c05b78775030ba69342dfb4cc7c83e2c39ca0ae3467",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401003,
+    "quality": 84,
+    "sha256": "sha256:02815a809e09b9229adb1c05b78775030ba69342dfb4cc7c83e2c39ca0ae3467",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:652e46b28e792c1fe70763b5595724b73b1f8c80df3f2c63d860d02459b8d126",
+  "render_phash": "e270cc60d801e896c1820b81cfa53dc2f1c0cde079d6782631e63f86f806c006",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A mechanical track with yellow and white sliding brackets sits on a scratched metal surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows an adjustable mechanical track, which serves as a metaphor for the expanding arrival-prediction error discussed in the article."
+  },
+  "source_hash": "sha256:b511bdcd277f5782b1cd241e05ae4424",
+  "source_chars": 5530,
+  "task_id": "ca517494cda317bcb04edec38fbe6d75",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f762365092dffd8db92fd8733f6dda77.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D render of an adjustable mechanical track with an expanding sliding bracket, positioned with extreme asymmetry, assembly off-centre right. The interlocking parts are constructed from matte graphite and safety yellow moulded polymer, featuring visible moulding seams and crisp mechanical edges. The structure is laid out on a weathered brushed steel console in an industrial control room. A single directional key light from the left rakes across the matte surfaces, casting long, sharp contact shadows against the metal. Bone white accents, deliberate spatial construction, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-27T20:15:18+00:00",
+  "overlay": {
+    "kicker": "LOGISTICS // ETA PREDICTION ERROR",
+    "title": "THE MATH OF ETA PREDICTION",
+    "hook": "Why ETA alerts must scale with remaining transit time",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.72,
+    "target": 4.5,
+    "clutter": 0.162,
+    "region_rgb": [
+      76,
+      71,
+      60
+    ],
+    "binding_rgb": [
+      99,
+      92,
+      76
+    ],
+    "title_lines": [
+      "THE MATH OF ETA",
+      "PREDICTION"
+    ],
+    "subject": 0.064,
+    "ink_subject": 0.024,
+    "spike": 0.225,
+    "generated_at": "2026-10-27T20:15:18+00:00"
+  }
+}
