@@ -546,6 +546,30 @@ edit) generated on its first attempt — so a single refusal loop is not evidenc
 
 **Hosts probed live 2026-10-24, building a snow-clearing cost-per-square-foot brief (the `outdoor_power_equipment` evergreen — the vertical's first artifact of any kind).** Carries the figure as plain text and fetches first try: `egopowerplus.com/two-stage-snow-blower-snt2400` (the product page's Tech Specs as one run — "Throws snow up to 50 feet Clears up to an 18-car driveway with 8 inches of snow on a single charge when used with the two recommended 7.5Ah ARC Lithium™ batteries 24-inch clearing width/20 inch intake height", plus the 56 V platform and the SNT2400/2405/2406/2406-4 pack configurations — but no price anywhere, the configuration table reads "Coming Soon"); `heattrak.com` (the driveway-mat page's Sizing-and-Amps block is a goldmine: 24"×10' = 5.8 A at 120 V, 24"×20' = 11.7 A, i.e. ~35 W/sq ft on both; the same page prints "Sale price $ 1,075.00 USD"; the FAQs page carries "$0.18 per hour … $1.80 for ten hours", "up to 2 inches per hour", the 13-amps-per-power-unit cap, the 5–6 year lifespan and the "lay as a track for one tire" positioning; the home page carries the walkway mat at $229.99); `warmlyyours.com/en-US/snow-melting` (87 KB with the whole FAQ: "at 50 W/sq ft, every 100 sq ft draws 5 kW, or $1.00 per energized hour at an illustrative $0.20/kWh", the 400 sq ft = 20 kW = $4.00/hour = $24.00-for-six-hours worked example, "Typical driveways: 400–800 sq. ft.", "Professional installation … between $10 and $25 per square foot, including materials and labor", and "designed to melt 1\" - 3\" of snow per hour"); `snowjoe.com/collections/snow-blowers` (the 11-inch 10-amp corded shovel at $124.99, the 24 V 4.0 Ah pack at $89.97 and the shovel bundle at $199.99, all as text in the listing); `eia.gov` energy-explained for the 2025 class table. **Matcher traps on this beat:** HeatTrak's page header prints the phone number "+1 (888) 586-4904", so *any* cell leading on a bare `1` matches the phone — the $1,075 driveway-mat price cannot carry a gate row in any phrasing and rides in prose under a row on the same page; WarmlyYours' navigation ("10+ bars", "25 people found this helpful") catches cells leading on `$10`, `$25` or `25`, so its install range is prose too; and a cell leading on `50` matches a customer review ("6 50ft snow mats"), so the design-density row must lead on the worked example's `$1.00 per energized hour` instead. Fetched but carries no row: `toro.com`, `husqvarna.com` and `greenworkstools.com` collection pages are navigation plus client-rendered product grids (15–159 numeric tokens, none of them a spec or a price); guessed `heattrak.com/pages/energy-cost-calculator` and every guessed `heattrak.com/products/<slug>` return 404 — resolve the real product slugs from the home page first. A vendor's runtime/cost claim is frequently a *per-unit* figure with no configuration named: HeatTrak's "$0.18 per hour" implies 1.04 kWh/hour, i.e. about 30 sq ft of mat, so it describes a walkway set and may never be scaled to a driveway without recomputing.
 
+**Hosts probed live 2026-10-27, building a zero-cloud camera-archive sizing brief (the `smart_home_telemetry` evergreen).**
+Carries the figure as plain text and fetches first try: `reolink.com/product/<model>/` — a camera product page prints
+its whole spec table as text, including the line an archive calculation turns on ("Code Rate Mainstream: 4096Kbps -
+8192Kbps (default: 6144Kbps) Substream: 64Kbps - 512Kbps (default: 256Kbps)", "Video Resolution 3840x2160 (8.0
+Megapixels) at 25 frames/sec", the frame-rate defaults, and the microSD capacity table "48.5hours 128GB 97.1hours
+256GB 194.2hours 512GB", which is a free cross-check on the bitrate arithmetic — 512 GB ÷ 194.2 h = 2.636 GB/h = 63.3
+GB/day, about 5% under the 66.36 GB/day the code rate implies, so an honest body writes a budget band and says why);
+`docs.frigate.video` (three pages, 9–41 KB, numbers in prose — camera setup's "The default frame rate of 5fps is
+correct for almost all cameras", its recording-feed advice "I recommend setting this feed in your camera's firmware to
+15 fps", and recording's "3 days … 7 days … 30 days" retention ladder); `synology.com/en-us/products/<model>` (the
+Surveillance Station block — "Default Licenses 2 (Additional cameras require purchase of licenses)", "4K: 17 channels,
+170 FPS" H.264 against "4K: 20 channels, 200 FPS" H.265, and the vendor's own test caveat "fully populated with drives …
+under a continuous recording setup").
+**Two traps this beat is built on.** (1) *A recommendation is not a disk lever:* Frigate's 15 fps advice is about
+playback and bandwidth — its own page says so — so an article that presents it as a storage tip ships a claim no
+source makes; the code rate is the disk lever and the frame rate is the recorder's decode ceiling. (2) *A recorder's
+ceiling is published as total frames at a resolution, never as a camera count:* divide it and name the divisor
+(170 ÷ 25 = 6.8 cameras at 4K H.264), and say whose software the ceiling belongs to — it is that box's own recorder app
+under the vendor's test conditions, not a benchmark of the pipeline the reader will run.
+**`source_gate` and the evergreen gate send different user-agents:** `reolink.com` answers the source gate **403**, so a
+citation the gate verified reads UNVERIFIED-at-the-push (a note by design, never a hold) — expect it and say so in the
+run log. `help.ui.com`'s UniFi VLAN articles are unreachable to the verifier, so a bare IoT-VLAN privacy piece has no
+numeric primary and dies near 6.7; the archive arithmetic is the half of that angle that can be sourced.
+
 **Plan which section owns each figure before drafting — `article_shape` allows a figure in at most two body
 sections, and the lead counts as one (learned 2026-10-26).** A series that appears in the lead, again in
 `By the numbers` and again in `At a glance` is HELD at the push ("figure $195 money is restated in 3
