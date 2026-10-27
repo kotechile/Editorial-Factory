@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/two-sparks-cost-3048-more-cable/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "The $3,048 Bottleneck. A thick data cable plugged into a metal server port under low lighting."
+image_alt: "A thick data cable plugged into a metal server port under low lighting."
 image_caption: "The $3,048 Bottleneck: Why linking two 64GB Nvidia Sparks costs more for less."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

@@ -27,7 +27,7 @@
   "core_thesis": "Pooling two 64GB units via cable costs $3,048 more than a single 128GB unit and creates a severe 25 GB/s interconnect bottleneck.",
   "core_conflict": "Hardware pooling capacity versus network interconnect bandwidth bottleneck.",
   "composition": "extreme asymmetry off-centre on the thirds",
-  "alt_text": "The $3,048 Bottleneck. A thick data cable plugged into a metal server port under low lighting.",
+  "alt_text": "A thick data cable plugged into a metal server port under low lighting.",
   "caption": "The $3,048 Bottleneck: Why linking two 64GB Nvidia Sparks costs more for less.",
   "title": "The $3,048 Bottleneck",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
