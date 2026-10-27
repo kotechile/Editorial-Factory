@@ -217,6 +217,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-27 | ai_observability_qa | your-green-passes-hide-31-wrong | Your Green Suite Certifies 31.08% Wrong | https://pressflow.aichieve.net/published/2026-10-27_your-green-passes-hide-31-wrong.md | reader site only |
 | 2026-10-27 | nhil_infrastructure_ops | your-gpu-break-even-is-37-percent-busy | Your GPU Break-Even Is 37% Busy | https://pressflow.aichieve.net/published/2026-10-27_your-gpu-break-even-is-37-percent-busy.md | reader site only |
 | 2026-10-27 | enterprise_tech_leadership | your-label-bills-2500-series | Your Label's Bill: 2,500 Series | https://pressflow.aichieve.net/published/2026-10-27_your-label-bills-2500-series.md | reader site only |
+| 2026-10-27 | smart_home_telemetry | your-camera-eats-66-gb-daily | Your Camera Eats 66 GB: The Hidden Cost | https://pressflow.aichieve.net/published/2026-10-27_your-camera-eats-66-gb-daily.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
