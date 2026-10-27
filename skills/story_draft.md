@@ -25,10 +25,15 @@ The **TOC is render-time only** — the site derives it from the section heading
   (the generated Related-reading block does not count), so a draft that leaves linking entirely to the
   persistence pass is HELD AS A DRAFT at the push — and the pre-publish gate's single rewrite then
   supplies the link by invention: observed 2026-10-27, `/workstation-compute-economics/local-llm-hardware-sizing/`
-  inside a second-person sentence, a URL no front serves. Pick a candidate the index marks `live` on the
-  destination front, justify it on the destination's own category hub or ≥ 2 shared subject tokens, write it
-  site-relative (`/slug/`), `curl -s -o /dev/null -w '%{http_code}'` it, and keep the sentence an
-  observation. The `<!-- internal-links -->` block stays the persistence pass's job; this is the one body link.
+  inside a second-person sentence, a URL no front serves. Pick a candidate the index marks `live` on
+  the destination front, justify it on the destination's own category hub or ≥ 2 shared subject tokens,
+  write it as a **markdown link with anchor text** — `[Planning tools buy capability, not autonomy](/planning-ai-buys-capability-not-autonomy/)`,
+  site-relative — and `curl -s -o /dev/null -w '%{http_code}'` it, keeping the sentence an
+  observation. **A bare parenthetical path (`(/some-slug/)`) does not count:** `article_shape._LINK_RE`
+  only matches `[text](/path)`, so a draft written that way passes a human read, passes
+  `check_accessibility`, passes `check_social_voice`, and then `publish_gate` holds the push with
+  "the body carries no inline internal link" (learned 2026-10-27). The `<!-- internal-links -->` block
+  stays the persistence pass's job; this is the one body link.
 - One length: the long-form draft. Do NOT write a LinkedIn/social variant — that channel was
   removed on 2026-10-06 (`skills/publisher.md` §3).
 - **SEO frontmatter is optional to author and never invented:** if the brief carries a keyword set, write `meta_title` (≤60 chars) and `meta_description` (140–160 chars) grounded in the article's own headline and lead; if you have neither, omit the keys. The persistence pass derives both from your headline and lead paragraph (`scripts/article_assets.py`) so the CMS excerpt and the frontends' `<meta name="description">` are never empty — do not pad them with claims the article does not make.
