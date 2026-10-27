@@ -1,0 +1,112 @@
+{
+  "slug": "your-hubs-4292-project-blind-spot",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modern home automation hub glowing faintly next to a tall stack of unmarked raw file folders on a workbench in a garage.",
+      "caption": "The move to bring community add-ons into the core platform leaves homeowners solely responsible for auditing thousands of projects.",
+      "title": "Home Assistant Security Blind Spot",
+      "bytes": 376580,
+      "sha256": "sha256:083c6ba6f9a3e161c978424402658bd3"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A modern, sleek home automation hub glowing faintly on a painted wood workbench in a dimly lit garage, placed next to a tall, slightly precarious stack of unmarked raw file folders. 35mm lens, extreme asymmetry with hero subject off-centre right. Softbox key light from the left throwing a long cast shadow, dark graphite, deep pine green, and off-white. Shallow depth of field, fine film grain, moody cinematic atmosphere, no people, no text, no logos.",
+  "negative_prompt": "text, letters, numbers, watermarks, garbled text, logos, ui, people",
+  "rationale": "The story revolves around a specific piece of consumer-accessible tech\u2014the Home Assistant hub or 'box' running the platform\u2014and a specific menu update. A studio object approach allows us to focus on the hub itself, portraying it with a sense of quiet tension and unvetted risk.",
+  "cue": "the owner is now the reviewer",
+  "subject": "a sleek home automation hub sitting next to an unmarked, slightly chaotic stack of raw file folders",
+  "core_thesis": "Home Assistant integrated a massive community catalog into its core platform, shifting the responsibility of reviewing third-party add-ons entirely to the homeowner.",
+  "core_conflict": "Platform centralization vs. homeowner security burden",
+  "composition": "extreme asymmetry with hero subject off-centre",
+  "alt_text": "Home Assistant'S Blind Spot. A modern home automation hub glowing faintly next to a tall stack of unmarked raw file folders on a workbench",
+  "caption": "Home Assistant'S Blind Spot: The core platform now owns a catalog it refuses to audit.",
+  "title": "Home Assistant'S Blind Spot",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-hubs-4292-project-blind-spot/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 392706,
+  "sha256": "sha256:abcbc42ae48d50f7bb0759887086ee5fc9ea52ba51a3e138aba490eae9ff3cfb",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 392706,
+    "quality": 84,
+    "sha256": "sha256:abcbc42ae48d50f7bb0759887086ee5fc9ea52ba51a3e138aba490eae9ff3cfb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0fc54f0e3e34fcbf2704ea884cec549e9f7298fa0dd7979b60c39950f8c1f135",
+  "render_phash": "fdffdef95ae853bb13ce33fe3333133f137f3173311373c0779c70053621461d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A black electronic hub device sits on a wooden table next to a standing file folder containing papers.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a hub and files, matching the article's focus on a home hub and a catalog of projects."
+  },
+  "source_hash": "sha256:3ed43206107b54b262806c1c26fd1af1",
+  "source_chars": 6215,
+  "task_id": "1668e46e72f17bd9e04880fc9b104fc8",
+  "credits": 5.0,
+  "cost_ms": 48,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1668e46e72f17bd9e04880fc9b104fc8_1793103258096.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A modern, sleek home automation hub glowing faintly on a painted wood workbench in a dimly lit garage, placed next to a tall, slightly precarious stack of unmarked raw file folders. 35mm lens, extreme asymmetry with hero subject off-centre right. Softbox key light from the left throwing a long cast shadow, dark graphite, deep pine green, and off-white. Shallow depth of field, fine film grain, moody cinematic atmosphere, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-27T12:14:27+00:00",
+  "overlay": {
+    "kicker": "HOME ASSISTANT // ADD-ON SECURITY",
+    "title": "HOME ASSISTANT'S BLIND SPOT",
+    "hook": "The core platform now owns a catalog it refuses to audit",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.18,
+    "target": 4.5,
+    "clutter": 0.066,
+    "region_rgb": [
+      26,
+      34,
+      33
+    ],
+    "binding_rgb": [
+      36,
+      45,
+      44
+    ],
+    "title_lines": [
+      "HOME ASSISTANT'S",
+      "BLIND SPOT"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-27T12:14:27+00:00"
+  }
+}
