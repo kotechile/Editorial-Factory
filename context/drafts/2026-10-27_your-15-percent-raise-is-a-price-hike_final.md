@@ -9,6 +9,12 @@ synthesis: true
 sources:
   - https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-says-44-percent-of-ceos-struggle-to-demonstrate-ai-financial-returns-as-technology-becomes-central-to-growth
   - https://www.gartner.com/en/newsroom/press-releases/2026-10-21-gartner-forecasts-worldwide-it-spending-to-grow-15-percent-in-2027-totaling-7-point-35-trillion
+image_path: "context/assets/illustrations/your-15-percent-raise-is-a-price-hike/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "The Memory Price Hike. A high-density server rack with prominent memory modules illuminated by amber light in a dark data center."
+image_caption: "The Memory Price Hike: Why your next tech budget raise buys less raw compute."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

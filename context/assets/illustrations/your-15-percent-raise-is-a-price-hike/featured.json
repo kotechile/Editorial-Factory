@@ -1,0 +1,112 @@
+{
+  "slug": "your-15-percent-raise-is-a-price-hike",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A high-density server rack with prominent memory modules illuminated by amber light in a dark data center.",
+      "caption": "Rising memory costs are driving budget increases, shifting the focus to unit cost.",
+      "title": "Memflation Server Rack",
+      "bytes": 295887,
+      "sha256": "sha256:3a8bdc99de2e490d3d7364fedd350a24"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "cinematic still, anamorphic 35mm look, wide establishing composition. extreme asymmetry with hero subject off-centre. A high-density server rack row in a vast data center hall, focusing on exposed, heavily finned memory modules gleaming on a server blade. crisp atmospheric depth, single strong practical amber worklight raking across brushed steel and textured polymer surfaces, casting deep shadows. slate grey, graphite, and oxidised red palette. shallow depth of field, fine film grain, no people.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI, numbers",
+  "rationale": "Cinematic still places the abstract economic tension (memflation) into a tangible, high-stakes physical environment (the data center). The dramatic lighting on the memory modules emphasizes their outsized role in driving budget increases.",
+  "cue": "a memory price hike",
+  "subject": "high-density server rack with prominent memory modules",
+  "core_thesis": "The 2027 tech budget growth is driven by memory price hikes, not increased capacity, making unit cost the critical metric.",
+  "core_conflict": "Rising memory hardware costs versus stagnant or unproven AI returns.",
+  "composition": "extreme asymmetry with hero subject off-centre",
+  "alt_text": "The Memory Price Hike. A high-density server rack with prominent memory modules illuminated by amber light in a dark data center.",
+  "caption": "The Memory Price Hike: Why your next tech budget raise buys less raw compute.",
+  "title": "The Memory Price Hike",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-15-percent-raise-is-a-price-hike/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 337209,
+  "sha256": "sha256:9d7dae3e0f92035b75aaac93d173ffee60ba191c7a83f139bef4dd3eebe05d45",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 337209,
+    "quality": 88,
+    "sha256": "sha256:9d7dae3e0f92035b75aaac93d173ffee60ba191c7a83f139bef4dd3eebe05d45",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:4374d281801900024fba27fc24d0243cc4ea4a4d1cb8c60f96d75cc4208d5bed",
+  "render_phash": "213b233c32341373207820782078007800f80070007820701078227022722246",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A row of server racks in a data center, with one rack illuminated by an overhead light.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows server racks, which relates to the article's focus on tech spending and data center systems."
+  },
+  "source_hash": "sha256:bd9252b3bb0c7bafd0b7f02ce356509e",
+  "source_chars": 4693,
+  "task_id": "324e52993ed4f71eaefcd9a0034fc0e6",
+  "credits": 5.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/324e52993ed4f71eaefcd9a0034fc0e6_1793101497001.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "cinematic still, anamorphic 35mm look, wide establishing composition. extreme asymmetry with hero subject off-centre. A high-density server rack row in a vast data center hall, focusing on exposed, heavily finned memory modules gleaming on a server blade. crisp atmospheric depth, single strong practical amber worklight raking across brushed steel and textured polymer surfaces, casting deep shadows. slate grey, graphite, and oxidised red palette. shallow depth of field, fine film grain, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-27T11:45:06+00:00",
+  "overlay": {
+    "kicker": "TECH SPENDING // MEMORY INFLATION",
+    "title": "THE MEMORY PRICE HIKE",
+    "hook": "Why your next tech budget raise buys less raw compute",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.32,
+    "target": 4.5,
+    "clutter": 0.069,
+    "region_rgb": [
+      48,
+      51,
+      52
+    ],
+    "binding_rgb": [
+      52,
+      63,
+      69
+    ],
+    "title_lines": [
+      "THE MEMORY",
+      "PRICE HIKE"
+    ],
+    "subject": 0.003,
+    "ink_subject": 0.001,
+    "spike": 0.011,
+    "generated_at": "2026-10-27T11:45:06+00:00"
+  }
+}
