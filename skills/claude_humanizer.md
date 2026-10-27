@@ -451,7 +451,12 @@ one.
   100 STRONG standalone but breaks the core-length rule, so read `core_words` — not only `score` and `lead_ok` — when auditing a
   re-cut. Same run, same class: 39-of-43 became "matched hosting everything", the 1.25×/0.1× bullet was swapped for a "0.1× base"
   metric that dropped the write premium the headline leans on, and "actuates" became "handling" — four figures softened in one
-  PASS, all of them load-bearing.
+  PASS, all of them load-bearing. **The same pass softens the headline's own figure in the lead, which unsets `lead_ok` at
+  the same time (learned 2026-10-27, `your-green-passes-hide-31-wrong`):** the title kept "31.08%" while the lead said "nearly
+  a third", so `lead_delivery` (which compares digit cores) reported the promise unmet *and* the article's opening lost its
+  number — restore the figure from the verified brief rather than re-cutting the title, and expect the sibling swaps
+  ("32.67%" → "a similar share", "4%" → "missing nearly all", "76% vs 53%" → "far more often") in the same rewrite, because
+  one vague quantifier arrives with the others.
 
 ## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
 
