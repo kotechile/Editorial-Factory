@@ -441,6 +441,18 @@ one.
   carries titles and state, not image copy) — re-run `scripts/sitemap_sync.py --check` and
   `bash scripts/verify.sh` to confirm.
 
+- **A rewrite can replace a specific count with a vaguer quantifier, and every gate passes it (learned 2026-10-27).** On the
+  prompt-cache mis-integration piece the frontier PASSed at Flesch 52.6 with "dozens of prompt-caching pull requests across
+  open-source agent systems" for the draft's **120 across 10 systems**, and "dozens of finds across hundreds of projects" for
+  **32 in 571**. Nothing is wrong — there is no number to be wrong — so Flesch, the acronym check, the `[n]` check and
+  `article_shape` all pass a body whose evidence has been rounded into vagueness. Diff every "dozens / hundreds / many / a few /
+  several" in the final against the draft and restore any count the draft carried; a study's sample size is the claim, not
+  colour. The same pass re-cut a **6-word title into 7** by inserting a noun ("Your **Prompt** Cache Pays…"), which reports
+  100 STRONG standalone but breaks the core-length rule, so read `core_words` — not only `score` and `lead_ok` — when auditing a
+  re-cut. Same run, same class: 39-of-43 became "matched hosting everything", the 1.25×/0.1× bullet was swapped for a "0.1× base"
+  metric that dropped the write premium the headline leans on, and "actuates" became "handling" — four figures softened in one
+  PASS, all of them load-bearing.
+
 ## 8. Accessibility gate (topic-agnostic — applies to EVERY topic)
 
 The gate in §5 checks for Smart Brevity & AI-tells. It does NOT check whether a general reader can follow the
