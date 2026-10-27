@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T12:44:58Z",
+  "updated_at": "2026-10-27T13:12:01Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3833,6 +3833,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-10-27",
+      "public": false
+    },
+    {
+      "slug": "2026-10-27_your-miss-costs-9x-the-chargeback",
+      "title": "Your Miss Costs 9x the Chargeback",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-10-27",
       "public": false
     }
