@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-15-percent-raise-is-a-price-hike/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Memory Price Hike. A high-density server rack with prominent memory modules illuminated by amber light in a dark data center."
+image_alt: "A high-density server rack with prominent memory modules illuminated by amber light in a dark data center."
 image_caption: "The Memory Price Hike: Why your next tech budget raise buys less raw compute."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
