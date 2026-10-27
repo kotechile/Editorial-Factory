@@ -339,3 +339,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-27 | `your-gpu-break-even-is-37-percent-busy` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-gpu-break-even-is-37-percent-busy/featured.jpg` |
 | 2026-10-27 | `your-label-bills-2500-series` | enterprise_tech_leadership | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-label-bills-2500-series/featured.jpg` |
 | 2026-10-27 | `your-camera-eats-66-gb-daily` | smart_home_telemetry | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-camera-eats-66-gb-daily/featured.jpg` |
+| 2026-10-27 | `2000-fine-tunes-one-card-55-throughput` | workstation_compute_economics | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/2000-fine-tunes-one-card-55-throughput/featured.jpg` |
