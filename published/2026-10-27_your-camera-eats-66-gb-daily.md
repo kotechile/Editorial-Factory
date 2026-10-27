@@ -11,6 +11,12 @@ meta_title: "Your Camera Eats 66 GB: The Hidden Cost"
 meta_title_source: "derived_from_title"
 meta_description: "Dropping a cloud plan moves the true cost of a camera straight to a hard drive in your closet, because the camera ships writing 6,144 kilobits a second for a…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-camera-eats-66-gb-daily/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "A heavy multi-bay video recorder sits on a plywood shelf in a dimly lit utility closet."
+image_caption: "Moving security footage off the cloud turns a subscription into a disk purchase."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

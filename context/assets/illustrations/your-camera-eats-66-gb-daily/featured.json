@@ -1,0 +1,112 @@
+{
+ "slug": "your-camera-eats-66-gb-daily",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "A heavy multi-bay video recorder sits on a plywood shelf in a dimly lit utility closet.",
+   "caption": "Moving security footage off the cloud turns a subscription into a disk purchase.",
+   "title": "local-camera-storage-volume",
+   "bytes": 382083,
+   "sha256": "sha256:cbb403f78ad014054b975715ed2fb9cd"
+  }
+ ],
+ "style": "cinematic_still",
+ "style_label": "Cinematic still",
+ "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Cinematic film still, anamorphic 35mm lens, extreme asymmetry with heavy framing. A brushed steel multi-bay video recorder sits heavily on a plywood shelf inside a residential utility closet. A single warm directional light from the left casts deep shadows across the graphite and bone white hardware, contrasting with olive shadows in the background. Crisp atmospheric depth, fine film grain, shallow depth of field, no people, no text, no logos.",
+ "negative_prompt": "text, letters, numbers, watermarks, typography, logos, UI, words",
+ "rationale": "A cinematic still captures the physical reality and environmental tension of enterprise-grade storage sitting quietly in a normal residential home, illustrating the hidden hardware burden.",
+ "cue": "Your Camera Eats 66 GB",
+ "subject": "a multi-bay video recorder on a shelf",
+ "core_thesis": "Dropping a cloud subscription shifts the cost of a 4K camera directly to massive local hard drives needed to store 66 gigabytes a day.",
+ "core_conflict": "The appeal of subscription-free camera ownership versus the physical hardware burden of continuous high-bitrate local video storage.",
+ "composition": "extreme asymmetry with heavy framing",
+ "alt_text": "A heavy multi-bay video recorder sits on a plywood shelf in a dimly lit utility closet.",
+ "caption": "Moving security footage off the cloud turns a subscription into a disk purchase.",
+ "title": "The 66 GB Camera Cost",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "gemini-3.1-pro-preview",
+ "director_attempts": 3,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-camera-eats-66-gb-daily/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 390204,
+ "sha256": "sha256:4a95d23e52c7682af4a567f4c60a9055f932a7495c7a4a116fbe6f20941ee765",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 390204,
+  "quality": 84,
+  "sha256": "sha256:4a95d23e52c7682af4a567f4c60a9055f932a7495c7a4a116fbe6f20941ee765",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:c503b69c845f1407c573ab9a9e4a5e2a4f7020c219ac31c7c4d1e84d7bd74697",
+ "render_phash": "a439b1f9b389bc19a3f9a6f9a3f9a3b9e3f9c3f99bf98ff986f9b07bae39a305",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A large, multi-bay electronic device resembling a video recorder or server sits on a wooden shelf inside a cabinet or closet.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.6,
+  "reason": "The image shows a multi-bay recorder on a shelf, which aligns with the article's focus on local storage and hard drives in a closet."
+ },
+ "source_hash": "sha256:e2c0e1e59e18b6a9e35ab99e50112e81",
+ "source_chars": 6244,
+ "task_id": "6ee6b346a20cbcabfcbbf01721e896fc",
+ "credits": 5.0,
+ "cost_ms": 20,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/6ee6b346a20cbcabfcbbf01721e896fc_1793128741923.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "Cinematic film still, anamorphic 35mm lens, extreme asymmetry with heavy framing. A brushed steel multi-bay video recorder sits heavily on a plywood shelf inside a residential utility closet. A single warm directional light from the left casts deep shadows across the graphite and bone white hardware, contrasting with olive shadows in the background. Crisp atmospheric depth, fine film grain, shallow depth of field, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-10-27T19:19:09+00:00",
+ "overlay": {
+  "kicker": "SMART HOME // CAMERA STORAGE",
+  "title": "THE 66 GB CAMERA COST",
+  "hook": "The hidden disk cost of ditching cloud subscriptions",
+  "anchor": "bottom-right",
+  "light": true,
+  "scrim": 0,
+  "contrast": 6.78,
+  "target": 4.5,
+  "clutter": 0.213,
+  "region_rgb": [
+   54,
+   55,
+   42
+  ],
+  "binding_rgb": [
+   84,
+   83,
+   55
+  ],
+  "title_lines": [
+   "THE 66 GB",
+   "CAMERA COST"
+  ],
+  "subject": 0.042,
+  "ink_subject": 0.021,
+  "spike": 0.128,
+  "generated_at": "2026-10-27T19:19:09+00:00"
+ }
+}
