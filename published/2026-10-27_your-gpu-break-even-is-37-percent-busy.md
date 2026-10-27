@@ -11,6 +11,12 @@ meta_title: "Your GPU Break-Even Is 37% Busy"
 meta_title_source: "derived_from_title"
 meta_description: "One H100 card, one eight-billion-parameter model, and an output rate that moved by 22.8 times when only the shape of the work changed."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-gpu-break-even-is-37-percent-busy/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric cutaway of a dual-bay GPU module: graphite slabs pile into one bay while a rail of cobalt plates leaves the other."
+image_caption: "37% Busy: the share of the month a rented GPU must run at its tested rate to beat the hosted token price."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

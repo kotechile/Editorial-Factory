@@ -1,0 +1,153 @@
+{
+  "slug": "your-gpu-break-even-is-37-percent-busy",
+  "revision": 7,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a dual-bay GPU module showing congested data blocks on one side and fast-flowing thin plates on the other.",
+      "caption": "Workload shape dictates GPU throughput, altering output rates on identical hardware by over 20 times.",
+      "title": "GPU Workload Throughput Analysis",
+      "bytes": 381109,
+      "sha256": "sha256:643c7510abe3823fa9df8de8867ca801"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your GPU Break-Even Point. Isometric cutaway of a dual-bay GPU module showing congested data blocks on one side and fast-flowing thin",
+      "caption": "Your GPU Break-Even Point: How workload shape decides the buy-versus-rent call.",
+      "title": "Your GPU Break-Even Point",
+      "bytes": 394786,
+      "sha256": "sha256:de4ea66915cafcaaba54e8885f85bbb41adebb69192d0ff68ed362e19e6cd6fb"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Your GPU Break-Even Point. Isometric cutaway of a dual-bay GPU module showing congested data blocks on one side and fast-flowing thin",
+      "caption": "Your GPU Break-Even Point: The shape of the work sets the bill.",
+      "title": "Your GPU Break-Even Point",
+      "bytes": 392637,
+      "sha256": "sha256:a32c7fad28281b0ff34426c1d9008461574c796a7291e8d9cf1c9dad75fbfe65"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Your GPU Break-Even Point. Isometric cutaway of a dual-bay GPU module showing congested data blocks on one side and fast-flowing thin",
+      "caption": "Your GPU Break-Even Point: The shape of the work sets the bill.",
+      "title": "Your GPU Break-Even Point",
+      "bytes": 405733,
+      "sha256": "sha256:edf75a1def4d5cf5d27db049dfd35730b597a541a5104d978d3f3a1e7a9a67d5"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Break-Even: 37% Busy. Your GPU Break-Even Point. Isometric cutaway of a dual-bay GPU module showing congested data blocks on one side and",
+      "caption": "Break-Even: 37% Busy: The shape of the work sets the bill.",
+      "title": "Break-Even: 37% Busy",
+      "bytes": 391495,
+      "sha256": "sha256:7e6412bb4cbe3d8318a412a4c8a197104467ee607a9b7302b759cdce548b66f2"
+    },
+    {
+      "revision": 6,
+      "alt_text": "37% Busy. Break-Even: 37% Busy. Your GPU Break-Even Point. Isometric cutaway of a dual-bay GPU module showing congested data blocks on one",
+      "caption": "37% Busy: Why workload shape sets the bill.",
+      "title": "37% Busy",
+      "bytes": 404061,
+      "sha256": "sha256:bc4f48b96100d994babcbe01bdb44eb7b4d4c87282451dc3ef2f89b083425557"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection with asymmetrical layout. A dual-bay high-density GPU processing module resting on a concrete data hall floor. The assembly features two identical processing blocks made of brushed steel and slate grey polymer. The left bay's input tray is congested with thick, stacked graphite blocks; the right bay's output tray streams thin, evenly spaced cobalt data plates. Thin consistent line weight, flat muted palette of slate grey, graphite, and cobalt accent. Recognizable hardware racks, memory modules, connectors, and perforated metal cooling fins. One directional light throwing a long cast shadow, generous empty margin.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, abstract shapes, people",
+  "rationale": "A technical isometric cutaway perfectly illustrates the structural and mechanical nature of workload throughput, visualizing how identical hardware processes different data shapes at drastically different rates.",
+  "cue": "the shape of the work",
+  "subject": "a dual-bay GPU processing module with contrasting data flow trays",
+  "core_thesis": "The true cost of enterprise GPU compute is dictated by workload shape and utilization duty cycle, not just hardware list prices.",
+  "core_conflict": "High-throughput chat workloads versus memory-bound code workloads bottlenecking identical hardware.",
+  "composition": "axonometric projection with asymmetrical layout",
+  "alt_text": "Isometric cutaway of a dual-bay GPU module: graphite slabs pile into one bay while a rail of cobalt plates leaves the other.",
+  "caption": "37% Busy: the share of the month a rented GPU must run at its tested rate to beat the hosted token price.",
+  "title": "37% Busy",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-gpu-break-even-is-37-percent-busy/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401473,
+  "sha256": "sha256:16aa5b44d6876b7b1bdf4df3448cdb702b91af666a7397a68637f162ee7d9184",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401473,
+    "quality": 84,
+    "sha256": "sha256:16aa5b44d6876b7b1bdf4df3448cdb702b91af666a7397a68637f162ee7d9184",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:51a787197e8e67d4df7eb53ea88ab8e49553f0dced9ca2643d85fb3c5bb87e0f",
+  "render_phash": "16482e305d707a697eb16c6976696569ef30cc38ccbced9cf398e49c780e9916",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric illustration of two connected computer server units with exposed internal components and conveyor belts carrying items.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows computer hardware processing units, which relates to the article's focus on GPUs and processing workloads."
+  },
+  "source_hash": "sha256:29c2e12bc8bf0a532c8fd72a49617dfa",
+  "source_chars": 5685,
+  "task_id": "376996f46b5eee072b0b438df08ffc78",
+  "credits": 18.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8aa96b629a84536c03473387370a71e9.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection with asymmetrical layout. A dual-bay high-density GPU processing module resting on a concrete data hall floor. The assembly features two identical processing blocks made of brushed steel and slate grey polymer. The left bay's input tray is congested with thick, stacked graphite blocks; the right bay's output tray streams thin, evenly spaced cobalt data plates. Thin consistent line weight, flat muted palette of slate grey, graphite, and cobalt accent. Recognizable hardware racks, memory modules, connectors, and perforated metal cooling fins. One directional light throwing a long cast shadow, generous empty margin.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-27T18:14:02+00:00",
+  "overlay": {
+    "kicker": "GPU ECONOMICS",
+    "title": "37% Busy",
+    "hook": "Shape sets the bill",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 90,
+    "contrast": 5.78,
+    "target": 5.5,
+    "clutter": 0.485,
+    "region_rgb": [
+      213,
+      215,
+      218
+    ],
+    "binding_rgb": [
+      117,
+      129,
+      145
+    ],
+    "title_lines": [
+      "37% Busy"
+    ],
+    "subject": 0.226,
+    "ink_subject": 0.103,
+    "spike": 0.717,
+    "generated_at": "2026-10-27T18:14:02+00:00"
+  }
+}
