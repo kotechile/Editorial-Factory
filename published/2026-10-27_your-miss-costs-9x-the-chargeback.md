@@ -13,6 +13,12 @@ meta_title: "Your Miss Costs 9x the Chargeback"
 meta_title_source: "derived_from_title"
 meta_description: "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-miss-costs-9x-the-chargeback/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "A towering wall of stacked warehouse pallets in a dim rack aisle, where only a single yellow wire-mesh container in the foreground is lit."
+image_caption: "The 9x cost of a late delivery: a control tower watches the lit pallet, not the dark rack behind it."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

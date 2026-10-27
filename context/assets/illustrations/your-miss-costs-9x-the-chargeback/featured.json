@@ -1,0 +1,123 @@
+{
+  "slug": "your-miss-costs-9x-the-chargeback",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A towering wall of stacked warehouse pallets where only a single pallet is illuminated, leaving the rest in deep shadow.",
+      "caption": "Exception software catches the immediate chargeback, but misses the vast downstream cost of a delivery failure.",
+      "title": "Supply Chain Hidden Scorecard Costs",
+      "bytes": 369128,
+      "sha256": "sha256:ffb65bdfb4b46b4d4d1ece3a4a2a2fec"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A towering wall of stacked warehouse pallets in a dim rack aisle, where only a single yellow wire-mesh container in the foreground is lit.",
+      "caption": "The 9x cost of a late delivery: a control tower watches the lit pallet, not the dark rack behind it.",
+      "title": "A towering wall of stacked warehouse pallets in a dim rack aisle, where only a single yellow wire-mesh container in the foreground is lit.",
+      "bytes": null,
+      "sha256": null,
+      "note": "alt_text completed by the 2026-10-27 run (the director returned it cut mid-phrase)"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression of a massive towering warehouse aisle filled with stacked shrink-wrapped freight pallets. Extreme asymmetry with telephoto compression. Sharp directional lighting from the left illuminates only a single safety yellow pallet in the foreground on the concrete grey loading bay, while the vast, overwhelming mountain of slate grey inventory behind it looms in deep industrial contrast and heavy shadow. Flat compressed perspective, stacked overlapping layers of structure, crystal-clear distance clarity, fine film grain, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, faces, blur, text, UI, logos",
+  "rationale": "The compressed telephoto perspective of massive industrial scale perfectly visualizes the overwhelming, hidden 90% cost of a delivery miss towering over the tiny visible fraction.",
+  "cue": "measuring the cheapest tenth of the loss",
+  "subject": "a towering wall of stacked warehouse freight pallets",
+  "core_thesis": "Roughly nine-tenths of the cost of a late delivery is decided after the fact in a retailer's supplier scorecard, dwarfing the immediate chargeback measured by exception software.",
+  "core_conflict": "Visible exception chargebacks vs. massive hidden downstream scorecard penalties.",
+  "composition": "extreme asymmetry with telephoto compression",
+  "alt_text": "A towering wall of stacked warehouse pallets in a dim rack aisle, where only a single yellow wire-mesh container in the foreground is lit.",
+  "caption": "The 9x cost of a late delivery: a control tower watches the lit pallet, not the dark rack behind it.",
+  "title": "The 9X Cost Of A Late Delivery",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "long_lens_industry"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-miss-costs-9x-the-chargeback/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401746,
+  "sha256": "sha256:5851aa5df9a7e7bbe388fb54e0cfd87b82483850f2de763238f3dc9698d7b46f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401746,
+    "quality": 80,
+    "sha256": "sha256:5851aa5df9a7e7bbe388fb54e0cfd87b82483850f2de763238f3dc9698d7b46f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:2565f0116bd399be4a5015fb1340aa4a6ff71f2e69522b0ce6220c77dfdfd64f",
+  "render_phash": "3c9b3d9f3b1d369e3dbb3f9b2f1b1f3b3b3f6b3b683b3c9b24db2cb93cbf389b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A large warehouse aisle with tall racks filled with shrink-wrapped pallets, and a single yellow wire mesh container sitting on the floor in a patch of light.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows warehouse freight, which relates to the article's focus on supply chain, deliveries, and inventory costs."
+  },
+  "source_hash": "sha256:f704663169d57767f496ef5c5cc1359c",
+  "source_chars": 6904,
+  "task_id": "ea7a39169ba78919b2e7a28cbd4983c2",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ea7a39169ba78919b2e7a28cbd4983c2_1793107098616.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression of a massive towering warehouse aisle filled with stacked shrink-wrapped freight pallets. Extreme asymmetry with telephoto compression. Sharp directional lighting from the left illuminates only a single safety yellow pallet in the foreground on the concrete grey loading bay, while the vast, overwhelming mountain of slate grey inventory behind it looms in deep industrial contrast and heavy shadow. Flat compressed perspective, stacked overlapping layers of structure, crystal-clear distance clarity, fine film grain, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-27T13:18:30+00:00",
+  "overlay": {
+    "kicker": "RETAIL LOGISTICS // DELIVERY MISSES",
+    "title": "THE 9X COST OF A LATE DELIVERY",
+    "hook": "Control towers miss nine-tenths of late delivery losses",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.52,
+    "target": 4.5,
+    "clutter": 0.223,
+    "region_rgb": [
+      46,
+      46,
+      46
+    ],
+    "binding_rgb": [
+      59,
+      60,
+      62
+    ],
+    "title_lines": [
+      "THE 9X COST OF A",
+      "LATE DELIVERY"
+    ],
+    "subject": 0.122,
+    "ink_subject": 0.046,
+    "spike": 0.423,
+    "generated_at": "2026-10-27T13:18:30+00:00"
+  }
+}
