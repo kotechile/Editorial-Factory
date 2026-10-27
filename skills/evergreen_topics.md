@@ -654,6 +654,24 @@ evergreen: true
 
 **The art director's alt text is generated under a 125-character clip while the delivery standard wants 40–140, so a truncated alt blocks `--reimage` and has to be retyped (learned 2026-10-27).** The sidecar's `alt_text` arrived as "...fast-flowing thin" (no closing clause), and `wp_draft.py --reimage` refused the upload with "alt_text is 151 chars — the desk writes 40-140": a hand edit that keeps the sentence whole *and* inside the band, applied to the sidecar **and** the artifact's `image_alt`/`image_caption` before the upload, is the only path — patching the media record afterwards leaves the sidecar and the row disagreeing.
 
+**A rewrite can delete one rung of a numbered ladder and leave the headline without a warrant (learned 2026-10-27).**
+On the `your-eta-misses-27-hours` evergreen a four-band error ladder (2.21 / 6.89 / 11.97 / 26.92 hours by voyage
+length) came back from Loop 3 as three bands: the long-leg rung was cut, and it was the only place the lead's "27
+hours" — and the title's own figure — was sourced. Flesch, the figure diff and the voice gate all passed a body that
+no longer earned its headline. Check every enumerated series item against the verified brief item by item (not just
+that the series still exists), then re-read the lead: a headline whose only warrant sat in the missing rung reads
+perfectly and is unsupported.
+
+**The art director refuses an industrial vertical's brief that names no place, and the front then builds the page
+without the image (learned 2026-10-27).** The persistence pass refused all three briefs ("prompt names no place in
+aichieve.net's world — say WHERE the photograph is taken, one of: data hall, rack row, control room, plant floor,
+container terminal…"; "alt_text opens on the medium"), so the post went live with `featured_media: 0`. A plain
+`illustration_creator.py published/<artifact> --apply` with no style pin landed on its second attempt; the sidecar
+alt arrived as the overlay copy and was retyped to a 120-character sentence in the sidecar **and** the artifact
+before `wp_draft --reimage`. The reader page then served 0 `wp-content/uploads` references because it had built
+while the media was absent — an empty `ci: re-trigger frontend build for <slug>` commit to the front repo is the
+fix, not another publish.
+
 **The frontier rewrite invents internal links — strip any link whose path is not in the corpus before the push (learned 2026-10-24).** Loop 3 closed a catch section with `to [calculate your true operating cost](/homelab-true-cost-calculator/)`, a page that has never existed. `article_shape` counts *any* markdown link under its inline-link rule, so an invented path satisfies the shape gate while 404-ing a reader, and no gate fetches body links (`source_gate` checks the `## Sources` citations only). After every rewrite, list the body's links (`grep -o '](\([^)]*\))'`) and delete every site-relative path that is absent from `context/internal_links.json` — then re-run the accessibility and voice gates, because the edit changes the body.
 
 **A `giniloh.com` evergreen can hold at the CMS draft gate with "no inline internal link" — the index, not the article, is the defect (learned 2026-10-24).** `article_shape` requires one inline internal link in the body, while `growth_os.generate_internal_link_map` qualifies a candidate only on same-vertical (+3), same-category (+3) or two shared subject tokens: `context/internal_links.json` carries no `vertical` and no `categories` for the pages each front serves, so the same-vertical axis can never fire and a homelab article scored **0 of 239** candidates even though this vertical's own prior evergreen sat in the list (best overlap one token, `homelab`). `publish.py` then creates the post as a draft (the gate working as designed) and the run logs a "published" summary that is half true. The honest unblock is one hand-placed inline link to a *live page of the same vertical* (probe it with `citation_hub_dossier.fetch_source` first — HTTP 200, never another site, never the article itself), then re-run `publish.py`: the same slug updates the existing post and flips it to publish. Record the index gap as an open engine item every time rather than treating the hand link as a fix — and never fill the gap with a page that shares one incidental token, which is exactly what the scorer's floor exists to refuse.
