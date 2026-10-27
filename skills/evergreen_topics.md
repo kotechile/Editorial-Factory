@@ -606,6 +606,12 @@ After every rewrite, read each rate's *direction and size* against the brief —
 "guarantees" — and re-voice to the measured share ("one in five") before the push.
 
 
+**A rewrite can strip the title's own figure out of `By the numbers` by replacing the bullet's lead with a label (learned 2026-10-27).** On the label-cardinality evergreen the numbers section opened `- **2,500 series — One metric, three labels:**`, and the frontier pass rewrote the bold lead to `- **3 labels — The math effect:**` — the bullet still multiplied 5 × 10 × 50 in its body, but the figure the title cites no longer had a row, so `headline_score` dropped to 84/100 (`a number anchors it` still passed on the body; the lead check failed). Read the first cell of every numbers bullet against the title's figure after a rewrite, not just the figures inside the bullet text. Sibling in the same run: the title itself was re-cut to a 7-word "…The 2,500-Series Trap" variant scoring 84 with `lead_ok: False`, and the hand-set 100/100 title was restored — so score the **rewrite's** title against the **final** body before accepting it either way.
+
+**The observer cue is matched literally, so "My reading, held loosely" is not one (learned 2026-10-27).** `site/social_voice.mjs` accepts `my read|my take|my sense|my view` or a first-person verb, and the `<!-- nuanced-takeaway -->` section of that run opened "My reading, held loosely:", which the gate read as *no cue* and failed `verify.sh` §9 on both the draft and the final. Write "My read, held loosely:" — one word — and fix it in the **draft** as well, because the checker walks `context/drafts/` and the draft alone can red the repo.
+
+**`datadoghq.com/pricing` fetches with every figure as text, but its markup puts numeric junk ahead of its own FAQ prose (learned 2026-10-27).** An SVG `width="16" height="15"` and a `0%…100%` progress string sit earlier in the document than the sentences a row would quote, so a cell leading on `100 custom metrics per host` evidences on navigation while `$ 0.10 Per ingested or scanned GB` lands cleanly. Lead any Datadog row on the ingest or forwarding rate and carry the custom-metrics allotment, its "counted hourly and averaged monthly across your entire account" clause and the $15/$18 per-host prices in prose under that citation, recording in the verified brief that they were read by eye.
+
 ## 5. Handoff
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
