@@ -44,6 +44,8 @@ For each claim:
  quietly total two numbers the source never totals. The same test catches a statute authorising a program to 2032
  beside an appropriation that funds one season: cite both, and never report the first as funding.
 
+5. **A .gov page can be stale in one language and current in another — check the alternate locale before trusting either (learned 2026-10-28).** FEMA's English NFIP reauthorization page still read that Congress "must now reauthorize the NFIP by no later than 11:59 p.m. on Sept. 30, 2026", while the Spanish version of the same page, the CRS product and NAR's FAQ all gave Dec. 11, 2026 under P.L. 119-103 signed Sept. 2, 2026. Neither page is wrong to cite — they are the same page at two vintages — but a run that reads only the English one builds a deadline story on a date that has already passed. When a statutory or authorization date is load-bearing, read the page's other locale (`/es/…`), the enforcing agency's product, and one trade record, and put the divergence in the brief as a FLAGGED row so the drafter never prints the superseded date.
+
 ## 4. Output — the verified brief
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_verified_brief.md`:
 ```markdown
