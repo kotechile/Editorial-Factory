@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T11:21:23Z",
+  "updated_at": "2026-10-28T11:44:43Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3973,6 +3973,24 @@
       "date": "2026-10-27",
       "public": true,
       "url": "https://aichieve.net/your-miss-costs-9x-the-chargeback/"
+    },
+    {
+      "slug": "2026-10-28_your-480gb-card-wont-skip-the-memory-queue",
+      "title": "480GB Won't Skip Your Memory Queue",
+      "vertical": "gpu_hardware",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-28",
+      "public": false
     },
     {
       "slug": "2026-10-28_your-60-drop-isnt-the-model",
