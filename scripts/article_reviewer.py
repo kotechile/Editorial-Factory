@@ -352,8 +352,10 @@ def review(draft_path: pathlib.Path, *, brief_path: pathlib.Path | None = None,
             break
         text, notes = sanitize(raw)
         if keep_attempts:
-            (draft_path.parent / f"{draft_path.name.replace('_draft.md', '')}_attempt{attempt}.md"
-             ).write_text(text, encoding="utf-8")
+            # Next to the report, not next to the draft: `context/drafts/` is walked by the voice
+            # gate, and a rejected attempt is by definition a body that may fail it.
+            reviews.mkdir(parents=True, exist_ok=True)
+            (reviews / f"{stem}_attempt{attempt}.md").write_text(text, encoding="utf-8")
         result = ra.audit(draft, text, brief)
         acc = accessibility(text)
         result["accessibility"] = {"verdict": acc.get("verdict"), "flesch": acc.get("flesch")}
