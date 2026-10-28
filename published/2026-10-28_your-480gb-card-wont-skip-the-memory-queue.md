@@ -56,6 +56,18 @@ The card is not on sale. Intel is sampling the hardware with no price and no shi
 
 Where I've landed: the business case looks narrower than the launch text. The D270 does not cut the memory bill, because no price has been published for the card or its memory, and every memory type TrendForce tracks is rising [2][4]. What it does instead is turn a bandwidth budget into a capacity and power budget, which suits long-prompt agent work on air-cooled racks and fits badly any service whose users sit waiting on output tokens.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Intel's D270 sells memory capacity instead of bandwidth, putting up to 480 GB of low-power memory on partner cards in a 350-watt slot, and markets the result as inference without HBM [1][2].
+- **Why It Matters:** The HBM it avoids is now a sold-ahead product, with more than half of the supplier's 2027 and 2028 output signed and an 80% margin on the quarter [3]. The swap changes which queue a buyer joins rather than what memory costs.
+- **What I'd Watch:** How much of the workload is prompt processing, and whether the rack can take the power.
+  - **Prompt share:** The time spent reading prompts and building the cache, where extra compute and extra capacity both help [2][5].
+  - **Output speed:** The time spent producing tokens, set by memory bandwidth, where this card trails HBM parts by well over half [2].
+  - **Supply terms:** Whether low-power server memory gets contracted the way HBM now is, which decides whether the cheaper option stays available [3].
+- **The Catch:** No price, no ship date, sampling only, and a cost case the analyst says depends heavily on DRAM pricing [2].
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -68,18 +80,6 @@ Where I've landed: the business case looks narrower than the launch text. The D2
 - [Two Sparks Cost $3,048 More](/two-sparks-cost-3048-more-cable/) — more on Major Purchases & Assets
 - [Fine-Tune or Rent: The Denominator Decides Your Break-Even](/fine-tune-vs-rent-by-token/) — more on Major Purchases & Assets
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Intel's D270 sells memory capacity instead of bandwidth, putting up to 480 GB of low-power memory on partner cards in a 350-watt slot, and markets the result as inference without HBM [1][2].
-- **Why It Matters:** The HBM it avoids is now a sold-ahead product, with more than half of the supplier's 2027 and 2028 output signed and an 80% margin on the quarter [3]. The swap changes which queue a buyer joins rather than what memory costs.
-- **What I'd Watch:** How much of the workload is prompt processing, and whether the rack can take the power.
-  - **Prompt share:** The time spent reading prompts and building the cache, where extra compute and extra capacity both help [2][5].
-  - **Output speed:** The time spent producing tokens, set by memory bandwidth, where this card trails HBM parts by well over half [2].
-  - **Supply terms:** Whether low-power server memory gets contracted the way HBM now is, which decides whether the cheaper option stays available [3].
-- **The Catch:** No price, no ship date, sampling only, and a cost case the analyst says depends heavily on DRAM pricing [2].
 
 ## Sources
 
