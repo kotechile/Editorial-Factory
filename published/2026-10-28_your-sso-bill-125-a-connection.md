@@ -62,18 +62,7 @@ The vendor's own comparison line deserves the same doubt. WorkOS places a "vs $1
 
 The prices here are list prices read on 2026-10-28, leaving out short promotions, so the lasting claim is the shape. A per-seat gate rises with headcount, a per-connection price does not, and WorkOS cuts the connection unit only as connection count grows [1]. The rate will expire. Which side of the crossing a team sits on will not.
 
-<!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "One Request, Five Actions" -> /one-request-five-actions/ [same site (aichieve.net); same category; topical overlap: single] Link "One Request, Five Actions" in the section where the article touches single. -->
-<!-- internal-link hint: "$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…" -> /ai-spend-27t-cost-visibility-mandate/ [same site (aichieve.net); same category; topical overlap: bill] Link "$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…" in the section where the article touches bill. -->
-<!-- internal-link hint: "$250k AI Upkeep Tax" -> /enterprisebuildvsbuy-the-250k-ai-upkeep-tax/ [same site (aichieve.net); same category; topical overlap: bill] Link "$250k AI Upkeep Tax" in the section where the article touches bill. -->
-## Related reading
-
-- [One Request, Five Actions](/one-request-five-actions/)
-- [$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…](/ai-spend-27t-cost-visibility-mandate/)
-- [$250k AI Upkeep Tax](/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/)
-<!-- internal-links:end -->
 
 <!-- tldr -->
 
@@ -86,6 +75,19 @@ The prices here are list prices read on 2026-10-28, leaving out short promotions
   - **Tier gating:** sign-on sold only in the next plan up, priced per seat, climbing with headcount.
   - **Flat plan fees:** sign-on folded into one monthly plan, hidden in a line nobody calls identity.
 - **The Catch:** A tier upgrade bundles more than sign-on, so the gap is a ceiling on what the feature costs, and only the published shapes can be computed.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "One Request, Five Actions" -> /one-request-five-actions/ [same site (aichieve.net); same category; topical overlap: single] Link "One Request, Five Actions" in the section where the article touches single. -->
+<!-- internal-link hint: "$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…" -> /ai-spend-27t-cost-visibility-mandate/ [same site (aichieve.net); same category; topical overlap: bill] Link "$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…" in the section where the article touches bill. -->
+<!-- internal-link hint: "$250k AI Upkeep Tax" -> /enterprisebuildvsbuy-the-250k-ai-upkeep-tax/ [same site (aichieve.net); same category; topical overlap: bill] Link "$250k AI Upkeep Tax" in the section where the article touches bill. -->
+## Related reading
+
+- [One Request, Five Actions](/one-request-five-actions/)
+- [$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…](/ai-spend-27t-cost-visibility-mandate/)
+- [$250k AI Upkeep Tax](/enterprisebuildvsbuy-the-250k-ai-upkeep-tax/)
+<!-- internal-links:end -->
 
 ## Sources
 [1] WorkOS, "Pricing" (Enterprise SSO, Directory Sync and Audit Logs; connection bands and the end-user pricing FAQ) — retrieved 2026-10-28. https://workos.com/pricing
