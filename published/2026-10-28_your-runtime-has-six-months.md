@@ -61,6 +61,18 @@ Anthropic spends its closing section arguing against the obvious read of its own
 
 My read is that the post is a warning dressed as a diary. The build was partly research, because the lab says it does this work in part to test what its models can do [2]. That is not a budget line most leaders can copy, so the two notices describe one decision from opposite ends. The honest form of it is not build or buy. It is which layer you are buying, and whether you can make a successor before the seller stops.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Deno's team joined Cloudflare on 2026-10-09, with Deno Deploy closing after six months and the runtime patched for one more year. Four days later, Anthropic said it had replaced git in five months because agent-written code pushed merges past 30,000 a day.
+- **Why It Matters:** A vendor now competes at the layer above the tool it sells you. A purchase can be solid and still have a short future, and a custom build can be justified while remaining the wrong choice for anyone outside that scale.
+- **What I'd Watch:** How the two halves of a renewal conversation line up, since the vendor owns the roadmap and the buyer owns whether a stand-in exists.
+  - **Layer margin:** Whether the seller's profit sits above or below the thing being bought, which predicts what gets given away and what gets charged for.
+  - **Exit freshness:** Whether the runtime is open source and self-hostable today, which decides if a shutdown is an inconvenience or a rebuild.
+  - **Replacement capacity:** How many people and months a stand-in would take, measured against the length of the notice.
+- **The Catch:** Anthropic says its system suits only enormous repos, that building one per company would waste engineering effort, and that its token budget is unlike any other business. The build marks a ceiling, not a recipe.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -73,18 +85,6 @@ My read is that the post is a warning dressed as a diary. The build was partly r
 - [OpenAI just made the agent loop a commodity](/openai-just-made-the-agent-loop-a-commodity/)
 - [$915M Illusion: Your AI Judge Moves](/buying-ai-quality-when-the-score-belongs-to-the-judge/)
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Deno's team joined Cloudflare on 2026-10-09, with Deno Deploy closing after six months and the runtime patched for one more year. Four days later, Anthropic said it had replaced git in five months because agent-written code pushed merges past 30,000 a day.
-- **Why It Matters:** A vendor now competes at the layer above the tool it sells you. A purchase can be solid and still have a short future, and a custom build can be justified while remaining the wrong choice for anyone outside that scale.
-- **What I'd Watch:** How the two halves of a renewal conversation line up, since the vendor owns the roadmap and the buyer owns whether a stand-in exists.
-  - **Layer margin:** Whether the seller's profit sits above or below the thing being bought, which predicts what gets given away and what gets charged for.
-  - **Exit freshness:** Whether the runtime is open source and self-hostable today, which decides if a shutdown is an inconvenience or a rebuild.
-  - **Replacement capacity:** How many people and months a stand-in would take, measured against the length of the notice.
-- **The Catch:** Anthropic says its system suits only enormous repos, that building one per company would waste engineering effort, and that its token budget is unlike any other business. The build marks a ceiling, not a recipe.
 
 ## Sources
 
