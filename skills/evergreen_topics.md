@@ -198,6 +198,23 @@ run). Prefer a stable EIA prose page for the same figure — `eia.gov/energyexpl
 carries the annual average price by customer class in plain text and retrieves every time — and treat any
 `fetched` body under ~400 characters as unreachable until you eyeball it.
 
+**`flsenate.gov` statute pages belong to the same retryable class — re-run the gate before editing a row
+(learned 2026-10-28).** On the public-adjuster fee brief, three of four rows citing Fla. Stat. § 626.854
+returned `figure_absent` in the first gate run (`20 percent`, `10 days`, `60 days`), while the identical
+cells verified through `c.figure_evidence(...)` seconds later and every one of those phrases is plainly in
+the 25 KB body the fetch returns. A second run of the same command PASSed with all seven rows verified.
+So a first-run absence on a state-legislature host is a retry, not a verdict on the evidence, and the cheap
+check is to probe the cell directly (`python3 -c "import sys;sys.path.insert(0,'scripts');import
+citation_hub_dossier as c;print(c.figure_evidence('<cell>', c.fetch_source('<url>')['text']))"`) before
+touching a row that is already right.
+
+**Do not count a reader page's images through the verifier's plain-text extraction (learned 2026-10-28).**
+`citation_hub_dossier.fetch_source` returns tag-stripped text, so `wp-content/uploads` appears **zero**
+times on a page that serves its header perfectly — the `<img src>` lives in an attribute the extractor
+removes. `curl` the page and grep the raw HTML for `<slug>-featured` and the `og:image` tag (and probe the
+exact `-1024x576` derivative URL the page requests) before reporting an image-delivery defect; a
+zero-uploads reading from the verifier proves nothing about the front.
+
 **Hosts probed live 2026-10-10, building a wage-and-price audit from retrievable rows.** Works, with the
 figure as plain text: `onetonline.org` (median wage by occupation, hourly **and** annual — the measured
 wage anchor that `bls.gov`'s 403 refuses), `eia.gov` energy-explained, `synology.com` product spec pages
