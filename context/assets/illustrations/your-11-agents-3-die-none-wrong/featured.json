@@ -1,0 +1,114 @@
+{
+  "slug": "your-11-agents-3-die-none-wrong",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular proxy routing bay on a concrete floor with multiple inputs converging into one.",
+      "caption": "Centralized rate limiting prevents agent fleets from collapsing under shared queue exhaustion.",
+      "title": "Proxy Gate Component Assembly",
+      "bytes": 358740,
+      "sha256": "sha256:e0e93a441a0e4fb3672fa318e906fd60"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular routing proxy bay on a weathered concrete plant floor, extreme asymmetry with the hero assembly off-centre. A brushed steel module with multiple input ports converging into a single outgoing fiber optic connection, representing a centralized queue gate. Hard clean edges, one directional light throwing a long cast shadow from the left, matte muted palette of graphite, slate grey, and cobalt. Recognisable engineered parts including a rack rail and an inspection gate, generous negative space, no text, no molded, engraved or printed lettering, no plain shapes.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, printed words, numbers",
+  "rationale": "The article is about a structural, systemic software shift\u2014moving from decentralized retries to a centralized rate-limiting gate. A component assembly of a modular proxy bay managing multiple inputs beautifully visualizes this architectural constraint without relying on literal text.",
+  "cue": "one gate in front of that key",
+  "subject": "a modular routing proxy bay",
+  "core_thesis": "An agent fleet fails as a queue under latency load, requiring a centralized gate before the shared key rather than individual agent retries.",
+  "core_conflict": "Uncoordinated parallel agent requests vs shared capacity limits and queueing exhaustion.",
+  "composition": "extreme asymmetry with the hero assembly off-centre",
+  "alt_text": "The Shared Key Bottleneck. A modular proxy routing bay on a concrete floor with multiple inputs converging into one.",
+  "caption": "The Shared Key Bottleneck: Why parallel agents fail without a centralized queue.",
+  "title": "The Shared Key Bottleneck",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-11-agents-3-die-none-wrong/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 397881,
+  "sha256": "sha256:04d9dec70c7aeb8f56951a13d18d677ed9de7321e12c43b7447ee62dd9a84b06",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 397881,
+    "quality": 80,
+    "sha256": "sha256:04d9dec70c7aeb8f56951a13d18d677ed9de7321e12c43b7447ee62dd9a84b06",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:966245843dd14b2bf9a96beed9de03e2b103e2f3cf46462dba72c0fa460a20e3",
+  "render_phash": "13ff13ff33ff3bff29ff29ff287f287f69dfa81fb00fde0fcb17dcf7338799f3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metal box with three modules and cables converging into a single glowing blue connector on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a modular routing proxy bay, which aligns with the article's focus on a central gate managing agent requests."
+  },
+  "source_hash": "sha256:752531e0907ffd44908e4bec4f14fd75",
+  "source_chars": 5974,
+  "task_id": "3eda54a01b3b92352d1ebd131a6195a4",
+  "credits": 18.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_2976701d826bfd985da63e23d8a62d47.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular routing proxy bay on a weathered concrete plant floor, extreme asymmetry with the hero assembly off-centre. A brushed steel module with multiple input ports converging into a single outgoing fiber optic connection, representing a centralized queue gate. Hard clean edges, one directional light throwing a long cast shadow from the left, matte muted palette of graphite, slate grey, and cobalt. Recognisable engineered parts including a rack rail and an inspection gate, generous negative space, no text, no molded, engraved or printed lettering, no plain shapes.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-28T17:51:27+00:00",
+  "overlay": {
+    "kicker": "AGENT FLEETS // RATE LIMITING",
+    "title": "THE SHARED KEY BOTTLENECK",
+    "hook": "Why parallel agents fail without a centralized queue",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.79,
+    "target": 4.5,
+    "clutter": 0.184,
+    "region_rgb": [
+      91,
+      100,
+      109
+    ],
+    "binding_rgb": [
+      119,
+      128,
+      137
+    ],
+    "title_lines": [
+      "THE SHARED KEY",
+      "BOTTLENECK"
+    ],
+    "subject": 0.061,
+    "ink_subject": 0.031,
+    "spike": 0.182,
+    "generated_at": "2026-10-28T17:51:27+00:00"
+  }
+}

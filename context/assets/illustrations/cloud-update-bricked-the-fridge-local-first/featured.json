@@ -1,6 +1,6 @@
 {
   "slug": "cloud-update-bricked-the-fridge-local-first",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -49,6 +49,14 @@
       "title": "The Smart Home Cloud Backlash",
       "bytes": 824886,
       "sha256": "sha256:3ae84e93f6fe3690c5e387806ce3d9dfffd5ef35687c78e23b795e4ff22ae9b9"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Smart Home Cloud Backlash. Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote",
+      "caption": "The Smart Home Cloud Backlash: Why smart home platforms are ditching the cloud.",
+      "title": "The Smart Home Cloud Backlash",
+      "bytes": 824886,
+      "sha256": "sha256:3ae84e93f6fe3690c5e387806ce3d9dfffd5ef35687c78e23b795e4ff22ae9b9"
     }
   ],
   "style": "technical_isometric",
@@ -75,12 +83,12 @@
     "style": "technical_isometric",
     "model": "nanobanana"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/cloud-update-bricked-the-fridge-local-first/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 824886,
-  "sha256": "sha256:3ae84e93f6fe3690c5e387806ce3d9dfffd5ef35687c78e23b795e4ff22ae9b9",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/cloud-update-bricked-the-fridge-local-first/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 342393,
+  "sha256": "sha256:591ab9ecf0d0a77539730e09c1cbf858493f64abb8f592f382d9ec046036ac18",
   "source_hash": "sha256:60ddae8225228f50fd03fab1a94b95a4",
   "source_chars": 3812,
   "task_id": "2f9da1126fffcd78be214e6ed83858a3",
@@ -102,19 +110,19 @@
     "kicker": "SMART HOME // CLOUD VULNERABILITY",
     "title": "THE SMART HOME CLOUD BACKLASH",
     "hook": "Why smart home platforms are ditching the cloud",
-    "anchor": "bottom-right",
+    "anchor": "top-right",
     "light": false,
     "scrim": 0,
-    "contrast": 10.69,
+    "contrast": 10.66,
     "target": 4.5,
-    "clutter": 0.035,
+    "clutter": 0.142,
     "region_rgb": [
-      231,
-      232,
-      234
+      226,
+      228,
+      231
     ],
     "binding_rgb": [
-      232,
+      231,
       232,
       234
     ],
@@ -122,9 +130,22 @@
       "THE SMART HOME",
       "CLOUD BACKLASH"
     ],
-    "subject": 0.039,
-    "ink_subject": 0.016,
-    "spike": 0.132,
+    "subject": 0.063,
+    "ink_subject": 0.036,
+    "spike": 0.172,
     "generated_at": "2026-10-03T15:56:17+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 342393,
+    "quality": 88,
+    "sha256": "sha256:591ab9ecf0d0a77539730e09c1cbf858493f64abb8f592f382d9ec046036ac18",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

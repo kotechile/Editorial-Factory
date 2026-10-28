@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T13:15:59Z",
+  "updated_at": "2026-10-28T17:51:49Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3768,7 +3768,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/2000-fine-tunes-one-card-55-throughput/"
     },
     {
       "slug": "2026-10-27_two-sparks-cost-3048-more-cable",
@@ -3862,7 +3863,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-camera-eats-66-gb-daily/"
     },
     {
       "slug": "2026-10-27_your-eta-misses-27-hours",
@@ -3880,7 +3882,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-eta-misses-27-hours/"
     },
     {
       "slug": "2026-10-27_your-gpu-break-even-is-37-percent-busy",
@@ -3898,7 +3901,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-gpu-break-even-is-37-percent-busy/"
     },
     {
       "slug": "2026-10-27_your-green-passes-hide-31-wrong",
@@ -3916,7 +3920,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-green-passes-hide-31-wrong/"
     },
     {
       "slug": "2026-10-27_your-hubs-4292-project-blind-spot",
@@ -3953,7 +3958,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-27",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-label-bills-2500-series/"
     },
     {
       "slug": "2026-10-27_your-miss-costs-9x-the-chargeback",
@@ -3990,6 +3996,25 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-28",
+      "public": true,
+      "url": "https://aichieve.net/100000-totes-skip-the-cost/"
+    },
+    {
+      "slug": "2026-10-28_your-11-agents-3-die-none-wrong",
+      "title": "Your 11 Agents: 3 Die, None Wrong",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-28",
       "public": false
     },
     {
@@ -4008,7 +4033,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-480gb-card-wont-skip-the-memory-queue/"
     },
     {
       "slug": "2026-10-28_your-60-drop-isnt-the-model",
@@ -4026,7 +4052,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-60-drop-isnt-the-model/"
     },
     {
       "slug": "2026-10-28_your-90-restart-monitor-proves-nothing",
@@ -4044,7 +4071,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-90-restart-monitor-proves-nothing/"
     },
     {
       "slug": "2026-10-28_your-flood-gap-has-44-days",
@@ -4062,7 +4090,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-flood-gap-has-44-days/"
     },
     {
       "slug": "2026-10-28_your-runtime-has-six-months",
@@ -4080,7 +4109,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-runtime-has-six-months/"
     }
   ]
 }

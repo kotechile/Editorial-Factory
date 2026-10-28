@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T14:16:47+00:00",
+  "generated_at": "2026-10-28T14:16:51+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2469,6 +2469,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-camera-eats-66-gb-daily",
+      "title": "Your Camera Eats 66 GB: The Hidden Cost",
+      "url": "https://wellroost.com/your-camera-eats-66-gb-daily/",
+      "path": "/your-camera-eats-66-gb-daily/",
+      "sites_live": {
+        "wellroost.com": "/your-camera-eats-66-gb-daily/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Dropping a cloud plan moves the true cost of a camera straight to a hard drive in your closet, because the camera ships writing 6,144 kilobits a second for a\u2026",
+      "modified": "2026-10-27T19:21:10",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
       "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
       "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
@@ -2485,6 +2508,29 @@
       ],
       "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
       "modified": "2026-10-16T01:44:51",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-flood-gap-has-44-days",
+      "title": "Your Flood Gap Has 44 Days",
+      "url": "https://wellroost.com/your-flood-gap-has-44-days/",
+      "path": "/your-flood-gap-has-44-days/",
+      "sites_live": {
+        "wellroost.com": "/your-flood-gap-has-44-days/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "The window to close your flood gap has 44 days in it. A federal flood policy does not start for 30 days, so the last day to buy one that is in force before\u2026",
+      "modified": "2026-10-28T13:52:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2738,6 +2784,52 @@
       ],
       "excerpt": "Your 100-case eval prints one number. If it prints a bar at all, it calls that bar 95%.",
       "modified": "2026-10-15T12:33:34",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "2000-fine-tunes-one-card-55-throughput",
+      "title": "2,000 Fine-Tunes Cost You 5.5% Throughput",
+      "url": "https://aichieve.net/2000-fine-tunes-one-card-55-throughput/",
+      "path": "/2000-fine-tunes-one-card-55-throughput/",
+      "sites_live": {
+        "aichieve.net": "/2000-fine-tunes-one-card-55-throughput/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Running 2,000 fine-tunes on one graphics card costs just 5.5% of peak throughput, because every adapter shares the same heavy base weights.",
+      "modified": "2026-10-27T20:01:34",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "100000-totes-skip-the-cost",
+      "title": "Your 100,000 Totes Skip the Cost",
+      "url": "https://aichieve.net/100000-totes-skip-the-cost/",
+      "path": "/100000-totes-skip-the-cost/",
+      "sites_live": {
+        "aichieve.net": "/100000-totes-skip-the-cost/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "GXO Logistics (GXO), the world's largest pure-play contract logistics provider, says its humanoid robots have moved more than 100,000 totes at one Georgia\u2026",
+      "modified": "2026-10-28T13:51:56",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5575,6 +5667,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-60-drop-isnt-the-model",
+      "title": "Your 60% Drop Isn't the Model",
+      "url": "https://aichieve.net/your-60-drop-isnt-the-model/",
+      "path": "/your-60-drop-isnt-the-model/",
+      "sites_live": {
+        "aichieve.net": "/your-60-drop-isnt-the-model/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your agent's task score drops 60% when its tools break the way the Model Context Protocol (MCP) ecosystem says they fail, from 8.08 out of 10 to 3.23.",
+      "modified": "2026-10-28T11:21:22",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-60-fast-lane-is-blind",
       "title": "Your 60% Fast Lane Is Blind",
       "url": "https://aichieve.net/your-60-fast-lane-is-blind/",
@@ -5644,6 +5759,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-90-restart-monitor-proves-nothing",
+      "title": "Your 90% Restart Monitor Proves Nothing",
+      "url": "https://aichieve.net/your-90-restart-monitor-proves-nothing/",
+      "path": "/your-90-restart-monitor-proves-nothing/",
+      "sites_live": {
+        "aichieve.net": "/your-90-restart-monitor-proves-nothing/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Every restart monitor ships with one number on the box, and for your stack it is the wrong number. A monitor that sorts failing runs at 90% accuracy sounds\u2026",
+      "modified": "2026-10-28T10:57:22",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-98-fill-rate-18-dont-ship",
       "title": "Ops leaders: Why 98% line fill ships 18% short",
       "url": "https://aichieve.net/your-98-fill-rate-18-dont-ship/",
@@ -5683,6 +5821,29 @@
       ],
       "excerpt": "The North American Electric Reliability Corporation (NERC) just cleared its first mandatory grid rules for data centers on a final stakeholder ballot.",
       "modified": "2026-10-20T11:13:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-480gb-card-wont-skip-the-memory-queue",
+      "title": "480GB Won't Skip Your Memory Queue",
+      "url": "https://aichieve.net/your-480gb-card-wont-skip-the-memory-queue/",
+      "path": "/your-480gb-card-wont-skip-the-memory-queue/",
+      "sites_live": {
+        "aichieve.net": "/your-480gb-card-wont-skip-the-memory-queue/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Intel's new inference card is advertised with up to 480 GB (gigabytes) of memory on partner cards and no high bandwidth memory (HBM) at all.",
+      "modified": "2026-10-28T11:44:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5897,6 +6058,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-eta-misses-27-hours",
+      "title": "Why Your ETA Misses 27 Hours",
+      "url": "https://aichieve.net/your-eta-misses-27-hours/",
+      "path": "/your-eta-misses-27-hours/",
+      "sites_live": {
+        "aichieve.net": "/your-eta-misses-27-hours/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Because distance makes guessing harder, an estimated time of arrival (ETA) misses the mark by roughly 27 hours on average for trips longer than a week.",
+      "modified": "2026-10-27T20:15:49",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-exception-log-owes-5-years",
       "title": "Your Exception Log Owes 5 Years",
       "url": "https://aichieve.net/your-exception-log-owes-5-years/",
@@ -5966,6 +6150,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-gpu-break-even-is-37-percent-busy",
+      "title": "Your GPU Break-Even Is 37% Busy",
+      "url": "https://aichieve.net/your-gpu-break-even-is-37-percent-busy/",
+      "path": "/your-gpu-break-even-is-37-percent-busy/",
+      "sites_live": {
+        "aichieve.net": "/your-gpu-break-even-is-37-percent-busy/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "One H100 card, one eight-billion-parameter model, and an output rate that moved by 22.8 times when only the shape of the work changed.",
+      "modified": "2026-10-27T18:17:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-gpu-landlord-80-wont-survive",
       "title": "Your GPU Landlord: 80% Won't Survive",
       "url": "https://aichieve.net/your-gpu-landlord-80-wont-survive/",
@@ -5989,6 +6196,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-green-passes-hide-31-wrong",
+      "title": "Your Green Suite Certifies 31.08% Wrong",
+      "url": "https://aichieve.net/your-green-passes-hide-31-wrong/",
+      "path": "/your-green-passes-hide-31-wrong/",
+      "sites_live": {
+        "aichieve.net": "/your-green-passes-hide-31-wrong/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your test suite certifies wrong code and hides it behind a green check because the tests cannot tell a real fix from a broken one.",
+      "modified": "2026-10-27T17:48:06",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-hidden-quantity-gap",
       "title": "63.6% OTIF: Your Hidden Quantity Gap",
       "url": "https://aichieve.net/your-hidden-quantity-gap/",
@@ -6005,6 +6235,29 @@
       ],
       "excerpt": "The share of purchase orders arriving on time and in full (OTIF) fell to 63.6% in the third quarter, and the loss came from missing units rather than late\u2026",
       "modified": "2026-10-19T13:12:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-label-bills-2500-series",
+      "title": "Your Label's Bill: 2,500 Series",
+      "url": "https://aichieve.net/your-label-bills-2500-series/",
+      "path": "/your-label-bills-2500-series/",
+      "sites_live": {
+        "aichieve.net": "/your-label-bills-2500-series/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "One line of measuring code can turn a single metric into 2,500 billable series, and that count is the part of the bill nobody budgets for.",
+      "modified": "2026-10-27T18:43:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6150,6 +6403,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-runtime-has-six-months",
+      "title": "Your Runtime: The 6-Month Exit Gap",
+      "url": "https://aichieve.net/your-runtime-has-six-months/",
+      "path": "/your-runtime-has-six-months/",
+      "sites_live": {
+        "aichieve.net": "/your-runtime-has-six-months/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your hosted runtime has six months to leave. Deno Deploy runs until about April 2027 and then shuts down, while the runtime itself gets one more year of\u2026",
+      "modified": "2026-10-28T13:43:25",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-seller-wont-stay",
       "title": "$200,000 Robots: Your Seller Won't Stay",
       "url": "https://aichieve.net/your-seller-wont-stay/",
@@ -6286,6 +6562,146 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1248,
+      "slug": "100000-totes-skip-the-cost",
+      "title": "Your 100,000 Totes Skip the Cost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T13:51:56",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1246,
+      "slug": "your-runtime-has-six-months",
+      "title": "Your Runtime: The 6-Month Exit Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T13:43:25",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1244,
+      "slug": "your-480gb-card-wont-skip-the-memory-queue",
+      "title": "480GB Won&#8217;t Skip Your Memory Queue",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T11:44:42",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1242,
+      "slug": "your-60-drop-isnt-the-model",
+      "title": "Your 60% Drop Isn&#8217;t the Model",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T11:21:22",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1239,
+      "slug": "your-90-restart-monitor-proves-nothing",
+      "title": "Your 90% Restart Monitor Proves Nothing",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T10:57:22",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1236,
+      "slug": "your-eta-misses-27-hours",
+      "title": "Why Your ETA Misses 27 Hours",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T20:15:49",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1232,
+      "slug": "2000-fine-tunes-one-card-55-throughput",
+      "title": "2,000 Fine-Tunes Cost You 5.5% Throughput",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T20:01:34",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1229,
+      "slug": "your-label-bills-2500-series",
+      "title": "Your Label&#8217;s Bill: 2,500 Series",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T18:43:48",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1225,
+      "slug": "your-gpu-break-even-is-37-percent-busy",
+      "title": "Your GPU Break-Even Is 37% Busy",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T18:17:30",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1223,
+      "slug": "your-green-passes-hide-31-wrong",
+      "title": "Your Green Suite Certifies 31.08% Wrong",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-27T17:48:06",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -7333,146 +7749,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T12:33:33",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 852,
-      "slug": "ai-coding-seats-measure-or-renew",
-      "title": "AI Coding Seats: The 75-Point Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:33",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 850,
-      "slug": "remediator-recovers-46-percent",
-      "title": "Your Remediator Recovers 46.67%: The Silent Regression",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:34",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 848,
-      "slug": "100-case-eval-925-coverage",
-      "title": "Your 100-Case Eval: 92.5% Coverage, Not 95%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:34",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 846,
-      "slug": "shippers-stuck-in-the-gap",
-      "title": "49.9% On Time: Shippers Stuck in the Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:35",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 843,
-      "slug": "your-32gb-card-gone",
-      "title": "Your 32GB Card, Gone: 41% Memory Hike",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:35",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 841,
-      "slug": "aws-cannot-restore-bahrain",
-      "title": "AWS Cannot Restore Bahrain: 144 Services Lost",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:35",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 839,
-      "slug": "rack-ride-through-two-second-duty",
-      "title": "Right Locally, Wrong by 3.8 GW",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:36",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 835,
-      "slug": "agent-failures-tests-stayed-green",
-      "title": "70% of Agent Failures: Your Tests Stayed Green",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:36",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 834,
-      "slug": "slow-movers-hold-your-stock",
-      "title": "Ops Leaders: Why 60.7% of Stock Hides Costs",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:36",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 832,
-      "slug": "ai-incident-clock-4-hours-not-15-days",
-      "title": "Your AI Incident Clock: 4 Hours, Not 15 Days",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:36",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
