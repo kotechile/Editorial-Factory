@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T12:19:47Z",
+  "updated_at": "2026-10-28T12:48:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3973,6 +3973,24 @@
       "date": "2026-10-27",
       "public": true,
       "url": "https://aichieve.net/your-miss-costs-9x-the-chargeback/"
+    },
+    {
+      "slug": "2026-10-28_100000-totes-skip-the-cost",
+      "title": "Your 100,000 Totes Skip the Cost",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture",
+        "By the numbers",
+        "What I'd watch",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-28",
+      "public": false
     },
     {
       "slug": "2026-10-28_your-480gb-card-wont-skip-the-memory-queue",
