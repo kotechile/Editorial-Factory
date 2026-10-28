@@ -324,6 +324,15 @@ one.
   "wait times" (wrong metric). All of it passes Flesch, the acronym check and the citation check. Diff
   the source's own variable name, every hedge word (`nearly`, `about`, `up to`) and every fraction's
   *basis* against the verified brief before the push, even when the plainer synonym reads better.
+- **The reviewer lifts Flesch by genericising the industry's own nouns and by inflating the numbers section, and its audit is numeric so both survive (learned 2026-10-28).**
+  On a warehouse-automation synthesis `article_reviewer.py` returned three candidates with every figure, citation and source line
+  intact; the best (hard=0, Flesch 61.1) had rewritten *warehouse* as "shed", *humanoid* as "walking machine", *downtime* as
+  "stops", the payback as "a return on machines" and a contract as "a pact", and had grown `By the numbers` from 4 bullets to 7 by
+  promoting prose figures into it. `review_audit` compares numbers, not nouns, and carries no bullet-count rule, so a
+  vocabularised candidate can score hard=0 — the soft vocabulary lever the accessibility floor rewards is exactly what costs the
+  piece its domain. Keep the attempt that is clean on figures, then repair in ONE pass: restore each source's own noun, demote the
+  extra bullets back into prose (the figures stay in the body, so the ledger is unchanged), and re-run `review_audit` — a hand
+  repair passes. Count the bullets against the 2-4 rule yourself; the audit will not.
 - **`verify.sh`'s voice check reads the committed `*_draft.md` too, so an imperative in the structural
   draft fails the repo gate even when the `_final.md` is clean (learned 2026-10-19).** "Treat that as a
   vendor's claim" in the draft body reddened §9 with 2 problems after the publish had already gone
