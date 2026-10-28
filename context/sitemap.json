@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T18:00:58Z",
+  "updated_at": "2026-10-28T18:11:03Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4055,6 +4055,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-60-drop-isnt-the-model/"
+    },
+    {
+      "slug": "2026-10-28_your-783-silent-cap-breach",
+      "title": "Your 78.3% Silent Cap Breach",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-28",
+      "public": false
     },
     {
       "slug": "2026-10-28_your-90-restart-monitor-proves-nothing",
