@@ -225,6 +225,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-28 | gpu_hardware | your-480gb-card-wont-skip-the-memory-queue | 480GB Won't Skip Your Memory Queue | https://pressflow.aichieve.net/published/2026-10-28_your-480gb-card-wont-skip-the-memory-queue.md | reader site only |
 | 2026-10-28 | enterprise_build_vs_buy | your-runtime-has-six-months | Your Runtime: The 6-Month Exit Gap | https://pressflow.aichieve.net/published/2026-10-28_your-runtime-has-six-months.md | reader site only |
 | 2026-10-28 | warehouse_automation_robotics_capex | 100000-totes-skip-the-cost | Your 100,000 Totes Skip the Cost | https://pressflow.aichieve.net/published/2026-10-28_100000-totes-skip-the-cost.md | reader site only |
+| 2026-10-28 | property_loss_insurance_mitigation | your-flood-gap-has-44-days | Your Flood Gap Has 44 Days | https://pressflow.aichieve.net/published/2026-10-28_your-flood-gap-has-44-days.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

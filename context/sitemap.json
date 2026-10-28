@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T12:48:46Z",
+  "updated_at": "2026-10-28T13:15:59Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4043,6 +4043,24 @@
         "Related reading"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-10-28",
+      "public": false
+    },
+    {
+      "slug": "2026-10-28_your-flood-gap-has-44-days",
+      "title": "Your Flood Gap Has 44 Days",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-28",
       "public": false
     },
