@@ -29,7 +29,8 @@ output is published articles instead of micro-SaaS products.
 [Story Drafter]        structure: collision lead → systemic tension → dual-anchor stats → tactics
         │
         ▼
-[Claude Stylist]       Loop 3 — frontier rewrite + critic read-back until human-voice gate passes
+[Reviewer]             Loop 3 — reads the whole draft, rewrites it whole, and is held unless the
+                       audit proves it kept every figure and made the prose better (review_audit.py)
         │
         ▼
 [Publisher]            persist → published/ + Supabase + sitemap + CMS draft (no gate)
@@ -53,7 +54,7 @@ output is published articles instead of micro-SaaS products.
      [LLM / Agent]       ──> Drafts post + meta title/description + JSON-LD schema (@Article/@FAQPage)
            │
            ▼
- [Frontier Humanizer]    ──> Loop 3 human-voice rewrite preserving SEO schema & internal links
+ [Reviewer]              ──> Loop 3 human-voice rewrite, audited: facts kept, prose measured
            │
            ▼
     [Approval Gate]      ──> Human checks voice, adds contrarian founder take, hits publish

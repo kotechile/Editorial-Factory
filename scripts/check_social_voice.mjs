@@ -107,6 +107,17 @@ const LONGFORM_SELF_TEST = [
     expectMissingCues: [],
   },
   {
+    name: 'article body, first person in a verb the old cue list never had',
+    markdown: '<!-- lead -->\nA tariff truce was extended [1].\n\n'
+      + '<!-- tension -->\nWashington carved out $60 billion of goods [2]. '
+      + 'What I find limiting about the relief is how little it covers.\n\n'
+      + '<!-- tactical-insight -->\n**Where this bites:**\n\n'
+      + '- I have read three versions of the carve-out list this week.\n\n'
+      + '<!-- nuanced-takeaway -->\nThe honest limit I keep in view is that no date is attached.\n',
+    expectOk: true,
+    expectMissingCues: [],
+  },
+  {
     name: 'article body, no cue in the tactical section',
     markdown: '<!-- lead -->\nA tariff truce was extended [1].\n\n'
       + '<!-- tension -->\nI keep coming back to the refund numbers [2].\n\n'

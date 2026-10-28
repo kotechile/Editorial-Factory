@@ -4,7 +4,10 @@ the frontier model and re-prompts (up to MAX_ATTEMPTS).
 
 Import with:  import humanizer_tools as ht   (scripts/ is on sys.path when these run).
 """
+from __future__ import annotations
+
 import json
+import os
 import pathlib
 import re
 import urllib.request
@@ -16,8 +19,13 @@ MIN_BODY_WORDS = 600  # body word floor: below this the frontier over-compacted;
 
 
 def _key():
-    KEY = None
-    for envf in ["/root/.hermes/profiles/stylist/.env", "/root/.hermes/.env"]:
+    """The frontier's API key: the environment first, then the stylist profile's env file.
+
+    Resolved at call time, not at import, so the offline half of the pipeline (the review audit and
+    its tests) can import this module without a key present.
+    """
+    KEY = os.environ.get("GOOGLE_API_KEY") or None
+    for envf in ([] if KEY else ["/root/.hermes/profiles/stylist/.env", "/root/.hermes/.env"]):
         p = pathlib.Path(envf)
         if p.exists():
             for line in p.read_text().splitlines():
@@ -26,19 +34,21 @@ def _key():
                     break
         if KEY:
             break
-    assert KEY, "GOOGLE_API_KEY not found"
+    assert KEY, "GOOGLE_API_KEY not found (env or ~/.hermes/profiles/stylist/.env)"
     return KEY
 
 
-URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={_key()}"
+def endpoint(model=MODEL):
+    """The generateContent URL for `model` — built per call so import needs no key."""
+    return f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={_key()}"
 
 
-def call_gemini(prompt, max_tokens=MAX_TOKENS, temperature=0.7, timeout=240):
+def call_gemini(prompt, max_tokens=MAX_TOKENS, temperature=0.7, timeout=240, model=MODEL):
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature},
     }
-    req = urllib.request.Request(URL, data=json.dumps(body).encode(),
+    req = urllib.request.Request(endpoint(model), data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         j = json.loads(r.read().decode())

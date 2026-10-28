@@ -156,23 +156,78 @@ carries an authority construction, or when an interpreting section has no observ
 
 ---
 
-## 5. Per-section iteration & Section Gates
-Do NOT rewrite the whole piece and re-read it blindly. Iterate **section by section**, and only
-re-iterate a section that fails its own gate. Order matters: **Lead first** — it decides whether
-anyone reads on, so give it an extra check.
+## 5. The reviewer stage — read the whole article, write the whole article, prove it
 
-For each section, check its gate; if it fails, rewrite that section only and re-check (max 2
-retries per section).
+Loop 3 is **one reader, one rewrite, one measured comparison**. It is not a section-by-section
+polish: a section call cannot write the join before it, notice that the same definition appeared
+three sections ago, or decide that a section only re-says the lead. Cohesion needs one pass holding
+the whole document.
 
-| Marker | Gate — it fails if… |
-|---|---|
-| `<!-- lead -->` | not a concrete incident/stat in sentence 1; contains throat-clearing, introductory preamble, or opens like a definition / "the world is changing". **Highest priority.** |
-| `<!-- tension -->` | vague "the industry is evolving"; lacks a context signpost (**The big picture:** or **Why it matters:**); lacks a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats; doesn't name what shifted and who it hurts/helps. |
-| `<!-- tactical-insight -->` | generic advice ("invest in AI"); not structured with clean bullets and bold lead-ins for 3+ moves; not specific and doable for the target persona. |
-| `<!-- nuanced-takeaway -->` | a hollow hedge or a cheerlead; lacks an honest limitation / counter-argument (**The catch:** or **Between the lines:**). |
-| `<!-- tldr -->` | lacks the 4-part schema (**The Big Shift**, **Why It Matters**, **What I'd Watch** with sub-bullet definitions, **The Catch**); fails to explain what the article is about; reads like a prose paragraph; OR merely compresses buzzwords without plain-English definitions. |
+Run it with `scripts/article_reviewer.py` (it replaces the hand-driven `humanize_path.py` /
+`humanize_one.py` invocation for new runs):
 
-After every section passes, run ONE final **whole-piece pass**: coherence, cadence, paragraph discipline (3-5 sentences, never more than 6), and confirm no AI-tell or empty transition remains anywhere.
+```bash
+python3 scripts/article_reviewer.py --draft context/drafts/<date>_<slug>_draft.md            # review → _final.md + _review.md
+python3 scripts/article_reviewer.py --draft <path> --dry-run                                  # print the prompt, no call
+python3 scripts/article_reviewer.py --audit --draft <path> --out <path>                       # audit an existing pair, no LLM
+```
+
+### 5.1 What the stage does
+
+1. **Builds the ledger** from the draft (and the brief that produced it, found by the URLs they
+   share — never by vertical, which matches a same-day brief on another story):
+   every measured figure *with the sentence it sits in*, the `[n]` citations, the quoted source
+   strings, and the `## Sources` lines.
+2. **Asks for a reading first.** The model states the through-line and the shape the story wants in
+   a `<!-- review-note -->` block. That block is stripped into `_review.md`; it never reaches a
+   reader. A pass that cannot say what the piece argues in one sentence cannot make it read as a whole.
+3. **Writes the whole article** under an ordered contract: **accuracy → cohesion → voice → shape**.
+   The ledger is spelled out in the prompt as `figure — "the draft sentence"`, because a specific
+   do-not-lose list holds where a generic "preserve all facts" does not.
+4. **Audits the result** with `scripts/review_audit.py` (below) and retries on the exact failures —
+   the missing figure with its draft sentence, the measured rhythm delta, the repeated phrases.
+   Up to `--attempts` candidates, **best kept**, not last.
+5. **Holds instead of shipping.** A candidate that drops a load-bearing figure, that loses an
+   observer cue or the accessibility floor, or that makes the prose worse than its own draft exits 1.
+   Held text and every report land in `context/drafts/reviews/` (`<slug>_held.md`,
+   `<slug>_review.md`) — never as the `<slug>_final.md` a publisher reads, and never inside
+   `context/drafts/` itself, because the voice gate walks that directory and a deliberately
+   unfinished body would redden the repo build.
+
+### 5.2 The audit is the gate, not a report
+
+`scripts/review_audit.py` compares the rewrite to the draft. **Hard failures** (the run is held):
+a figure lost (with the sentence it came from), a figure that is in neither the draft nor the
+brief, a `[n]` citation dropped or invented, a quoted string altered, a source line altered or
+dropped, a section marker dropped, a body under the word floor, leaked deliberation, or a
+self-graded `## Gate report`.
+
+**Flow regressions** (also a hold): sentence-length spread falling below 85% of the draft's, rhythm
+health falling, filler or hedge density rising, repetition rising, the through-line restated in more
+than two sections, a boilerplate observer cue, two sections opening with the same words, or more
+than 20% of paragraphs being all short declaratives.
+
+Measured on the desk's own 216 draft/final pairs, this is what the old pass was doing: rhythm
+spread **8.1 → 6.3** words (fell in 159/216), filler density **0.75 → 1.19** per 1,000 words (rose
+in 108/216), a figure lost in **128** articles, and the same four observer cues in 29–56 articles
+each. The gate exists because none of that was visible to `check_accessibility.py`, which gates
+Flesch and acronyms and can only advise on the *mean* sentence length — a body of uniformly
+15-word sentences satisfies it.
+
+### 5.3 Rhythm is the signal, not the average
+
+"How does it read" has one honest mechanical proxy: the *distribution* of sentence lengths, not its
+mean. `rhythm_health()` scores spread, centre (13–24 words) and tail (few sentences past 40 words)
+together, so a run-on beside three short sentences does not score as "varied". The target is the
+draft's own spread or wider — never a template. Sentences may run long and connected; one short
+sentence per paragraph gives the beat. Do not shorten sentences to lift Flesch; the lever is words.
+
+### 5.4 Section gates still apply — as a reading, not a checklist
+The per-section questions are still the right ones to ask *while* writing (does the lead carry the
+concrete thing in sentence 1; does the tension name what shifted and who it hurts; does the
+tactical section report instead of prescribing; is the catch honest; does the glance card explain
+the piece). But they are answered by the stage that wrote the piece, and the mechanical answer that
+counts is the audit's — the old table above was a self-assessment the model could always pass.
 
 ---
 
@@ -379,14 +434,19 @@ one.
   the base it is charged on (ordinary income vs capital gain vs the net investment income tax vs state) and
   put the base in the metric title itself ("Top long-term rate").
 - **A rewrite can replace the whole `By the numbers` series with a peripheral bullet, and can restate two parallel legal regimes as additive ones (learned 2026-10-26).** On the AI Act penalty-band evergreen the frontier PASSed at 61% of the draft and deleted all three band bullets (3%, 7%, the €500 million crossing point) that were the article's reason to exist, keeping a privacy bullet and inventing a new home for a log bullet — a numbers section can be replaced wholesale, not merely thinned, and the headline's own figures then have no row. The same pass wrote that watchdogs can "stack AI Act penalties on top of privacy fines" where the source says the AI Act "shall not affect" the privacy regulation: two regimes that run in parallel and price one failure twice do not add, so "stack", "on top of" and any sum is a claim the statute does not make. Read the numbers section against the verified brief bullet by bullet (not just the prose), and rewrite every additive word that touches two separate regimes into "read under both, never added".
-- **Post-rewrite figure audit (mandatory):** after the frontier passes the ACCESS gate, scan the
-  body for NEW specific numbers (dollar amounts, payback periods, time spans, counts) that are
-  NOT in the verified brief or the source list. The frontier has inserted unsourced figures
-  (observed: a fixed-machine payback rendered as "five years" when the brief carried no payback
-  number) that pass Flesch/acronym/length checks cleanly — the retry loop cannot catch them
-  because it has no knowledge of the brief's figure set. Revert any such number to qualitative
-  wording ("takes years") rather than a fabricated precision, and re-run `check_accessibility.py`
-  to confirm the gate still passes.
+- **The figure audit is now the stage's own gate, not a hand check.** `scripts/article_reviewer.py`
+  builds the ledger (every measured figure with the sentence it sits in, the `[n]` citations, the
+  quoted strings, the `## Sources` lines) and `scripts/review_audit.py` compares the rewrite to the
+  draft: a lost figure, an invented figure, a dropped or invented citation, an altered quote or
+  source line all fail the run and are held, with the missing figure and its draft sentence fed back
+  for the retry. Run `python3 scripts/review_audit.py --draft <draft> --final <final>` on any pair,
+  including an already-published artifact, to see the diff.
+- **What the numeric audit still cannot see — audit these by meaning.** The gate compares numbers,
+  not nouns: a right figure with the wrong unit ("3.5 MW of cooling *capacity*" → a chiller
+  "*drawing*" 3.5 MW), the wrong base (37% applied to a long-term gain), a share relabelled as an
+  absolute, a comparison promoted to an effect size, a modal peak read as a mean, an interval whose
+  endpoints are both right and whose subtraction is wrong. Those classes stay manual — diff them
+  against the verified brief before the push, exactly as the entries below describe.
 - **A rewrite can invert a rate into its complement and mislabel the base (learned 2026-10-19).** From a
   source's "0.148% parse-error rate" the frontier wrote "99.8% of those failing outputs parsed perfectly" —
   a derived complement (100 − 0.148, padded to 99.8), attached to the wrong base ("of those failing

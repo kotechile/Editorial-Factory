@@ -22,7 +22,13 @@ export const VOICE_ENFORCED_FROM = '2026-09-26';
 
 /** At least one of these must appear in every interpreting article section. */
 export const OBSERVER_CUES = [
-  { label: 'first-person observation', re: /\bI(?:'ve| have|'m| am|'d| would| keep| kept| think| thought| read| watched| noticed| pulled| see| saw| hear| heard)\b/i },
+  // Any first-person verb, not a closed list. The old list (I've/I have/I keep/I read/…) failed
+  // genuine observer prose: a rewrite that opened the catch with "What I find limiting about the
+  // tolerance is…" was reported as having no cue at all, so a writer following the rule ("say it in
+  // your own words") was gated on the gate's vocabulary rather than on their sentence. A standalone
+  // "I" followed by a verb is the rule; the labelled-opinion and attention families below still
+  // catch the forms that carry no verb ("My read:", "What I'm watching").
+  { label: 'first-person observation', re: /\bI(?:'ve|'m|'d|'ll)\b|\bI\s+[a-z']/i },
   { label: 'labelled opinion', re: /\b(?:my read|my take|my sense|my view|where I(?:'ve| have) landed|what I take from|I could be wrong)\b/i },
   {
     label: 'attention, not instruction',

@@ -176,6 +176,18 @@ if ! python3 "$ROOT/scripts/test_check_accessibility.py" >/dev/null 2>&1; then
   echo "FAIL: readability gate tests — detail:"; python3 "$ROOT/scripts/test_check_accessibility.py" 2>&1 | tail -8; FAIL=1
 fi
 
+# 8.55c Review-audit contract (hard): Loop 3 replaces a whole article with one model call, so the
+#      comparison between the draft and the rewrite is the only thing standing between a dropped
+#      figure and a published one. `scripts/review_audit.py` performs it (figures with their own
+#      sentence, citations, quotes, source lines; rhythm variance, filler, repetition, restatement)
+#      and `scripts/article_reviewer.py` runs it as the stage's gate. The suite pins direction on
+#      real artifacts that failed — the 22.5%/10.9% share pair, the 13.41 cents / 22,269 tokens
+#      losses, the flattened rhythm, the self-graded gate report — and pins the negative cases, so a
+#      legitimate rounding is never called a loss and a faithful rewrite is never held.
+if ! python3 "$ROOT/scripts/test_review_audit.py" -q >/dev/null 2>&1; then
+  echo "FAIL: review-audit tests — detail:"; python3 "$ROOT/scripts/test_review_audit.py" -q 2>&1 | tail -8; FAIL=1
+fi
+
 # 8.56 Featured image (hard, hermetic): the header image is art-directed per article
 #      (scripts/illustration_creator.py) — treatment chosen from the text, never repeated
 #      back-to-back, no legible text or brand marks in the prompt, alt/caption within budget — and
