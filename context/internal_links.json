@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T19:22:51+00:00",
+  "generated_at": "2026-10-28T19:52:52+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -6058,6 +6058,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-charger-gap-buys-16-robots",
+      "title": "Your Charger Gap Buys 16 Robots",
+      "url": "https://aichieve.net/your-charger-gap-buys-16-robots/",
+      "path": "/your-charger-gap-buys-16-robots/",
+      "sites_live": {
+        "aichieve.net": "/your-charger-gap-buys-16-robots/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The machine on the quote works 6 hours 45 minutes at maximum payload, while a normal shift runs eight hours. The 75 minutes in between are where capital\u2026",
+      "modified": "2026-10-28T19:47:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-chip-stopped-deciding",
       "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
       "url": "https://aichieve.net/your-chip-stopped-deciding/",
@@ -6654,6 +6677,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1265,
+      "slug": "your-charger-gap-buys-16-robots",
+      "title": "Your Charger Gap Buys 16 Robots",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T19:47:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -7827,20 +7864,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T12:33:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 863,
-      "slug": "your-chip-stopped-deciding",
-      "title": "1.016M Non-GPUs: Your Chip Stopped Deciding",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

@@ -9,11 +9,17 @@
       "title": "Robot Fleet Telephoto Warehouse",
       "bytes": 288693,
       "sha256": "sha256:b285458934c941876ef7ce9288b197ab"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a telephoto lens.",
+      "caption": "A docked robot charges while the rest of the fleet waits in the aisle.",
+      "reason": "alt was the overlay copy, clipped at 125 chars (desk defect class); retyped to a complete 40-140 char sentence read off the rendered frame"
     }
   ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
-  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "style_when": "scale is the story — a port, a refinery, a data centre hall, a rail yard, a skyline of cranes — and the reader needs to feel how big it is",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,8 +33,8 @@
   "core_thesis": "Ignoring battery recovery time when sizing a robot fleet results in purchasing excess capacity, whereas a simple route charger eliminates this costly penalty.",
   "core_conflict": "Capital expenditure on redundant robots vs. the minor operational cost of an accessible charging station.",
   "composition": "asymmetric off-centre composition",
-  "alt_text": "The Cost Of Charger Gaps. A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a",
-  "caption": "The Cost Of Charger Gaps: How battery limits secretly inflate your robot fleet size.",
+  "alt_text": "A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a telephoto lens.",
+  "caption": "A docked robot charges while the rest of the fleet waits in the aisle.",
   "title": "The Cost Of Charger Gaps",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,

@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-charger-gap-buys-16-robots/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "The Cost Of Charger Gaps. A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a"
-image_caption: "The Cost Of Charger Gaps: How battery limits secretly inflate your robot fleet size."
+image_alt: "A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a telephoto lens."
+image_caption: "A docked robot charges while the rest of the fleet waits in the aisle."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -68,19 +68,6 @@ Two costs sit outside the sum. A charger on the route needs its own circuit and 
 
 The sizing rule that sits upstream is in [the pick-station model](/pick-station-sets-robot-count/), the other half of this equation. That piece sets how many robots a station can keep busy, while this one sets how many are free to be kept busy.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Amazon Builds the Robots; Walmart Builds for What They Can't…" -> /automation-payback-splits-by-sku-geometry/ [same site (aichieve.net); same category; topical overlap: robots, runs] Link "Amazon Builds the Robots; Walmart Builds for What They Can't…" in the section where the article touches robots, runs. -->
-<!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: robots] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches robots. -->
-<!-- internal-link hint: "$62M Says You Never Buy Robots" -> /owned-shuttles-or-rented-robots/ [same site (aichieve.net); same category; topical overlap: robots] Link "$62M Says You Never Buy Robots" in the section where the article touches robots. -->
-## Related reading
-
-- [Amazon Builds the Robots; Walmart Builds for What They Can't…](/automation-payback-splits-by-sku-geometry/) — more on Supply Chain & Operations
-- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
-- [$62M Says You Never Buy Robots](/owned-shuttles-or-rented-robots/) — more on Supply Chain & Operations
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -93,6 +80,19 @@ The sizing rule that sits upstream is in [the pick-station model](/pick-station-
   - **Cycle rating:** the pack's rated full-charge count, the one published number that puts the asset's life on a calendar.
   - **Recovery policy:** whether charging is prioritised or dedicated, and where chargers sit relative to the robots' normal paths.
 - **The Catch:** the fleet penalty comes from a queueing model whose settings are not yours. The cycle rating has no published depth, and a charger on the route is still site work with a circuit to install.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Amazon Builds the Robots; Walmart Builds for What They Can't…" -> /automation-payback-splits-by-sku-geometry/ [same site (aichieve.net); same category; topical overlap: robots, runs] Link "Amazon Builds the Robots; Walmart Builds for What They Can't…" in the section where the article touches robots, runs. -->
+<!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: robots] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches robots. -->
+<!-- internal-link hint: "$62M Says You Never Buy Robots" -> /owned-shuttles-or-rented-robots/ [same site (aichieve.net); same category; topical overlap: robots] Link "$62M Says You Never Buy Robots" in the section where the article touches robots. -->
+## Related reading
+
+- [Amazon Builds the Robots; Walmart Builds for What They Can't…](/automation-payback-splits-by-sku-geometry/) — more on Supply Chain & Operations
+- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
+- [$62M Says You Never Buy Robots](/owned-shuttles-or-rented-robots/) — more on Supply Chain & Operations
+<!-- internal-links:end -->
 
 ## Sources
 

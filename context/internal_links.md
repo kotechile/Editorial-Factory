@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-28T19:22:51+00:00
+# Internal-link candidates — 2026-10-28T19:52:52+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -139,7 +139,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 164 live article(s), 8 other target(s)
+## aichieve.net — 165 live article(s), 8 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -277,6 +277,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your CI Bill: 232 Hours Before You Build](https://aichieve.net/your-ci-bill-232-hours/) — AI Stack & Tool TCO
 - [Your Cache Pays 1.25x for Nothing](https://aichieve.net/your-cache-pays-125x-for-nothing/) — AI Stack & Tool TCO
 - [Your Carbon Report Skips 2 Lines: Trucks Aren't Counted](https://aichieve.net/your-carbon-report-skips-2-lines/) — Supply Chain & Operations
+- [Your Charger Gap Buys 16 Robots](https://aichieve.net/your-charger-gap-buys-16-robots/) — Supply Chain & Operations
 - [Your Cheaper Model: 57% Pricier Tasks](https://aichieve.net/cheaper-model-pricier-task/) — AI Stack & Tool TCO
 - [Your Claim Dies at 9 Months](https://aichieve.net/freight-claim-dies-at-9-months/) — Supply Chain & Operations
 - [Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year](https://aichieve.net/your-cluster-hidden-clock/) — AI Stack & Tool TCO
@@ -318,6 +319,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1265 `your-charger-gap-buys-16-robots` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1262 `your-sso-bill-125-a-connection` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1259 `your-32-cards-spend-90-percent-talking` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1255 `your-783-silent-cap-breach` — published in the CMS but absent from the frontend sitemap
@@ -402,7 +404,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #871 `gate-the-step-not-the-model` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #867 `owned-shuttles-or-rented-robots` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #866 `flat-price-was-the-hedge` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #863 `your-chip-stopped-deciding` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap
