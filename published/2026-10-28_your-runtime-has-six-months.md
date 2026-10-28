@@ -13,6 +13,12 @@ meta_title: "Your Runtime: The 6-Month Exit Gap"
 meta_title_source: "derived_from_title"
 meta_description: "Your hosted runtime has six months to leave. Deno Deploy runs until about April 2027 and then shuts down, while the runtime itself gets one more year of…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-runtime-has-six-months/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall."
+image_caption: "The Runtime Exit Gap: Cloudflare gave it away. Anthropic rebuilt it."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

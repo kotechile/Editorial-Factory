@@ -1,0 +1,155 @@
+{
+  "slug": "your-runtime-has-six-months",
+  "revision": 7,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+      "caption": "The gap between a vendor's exit date and the time required to build a successor defines the modern infrastructure decision.",
+      "title": "Build Versus Buy Infrastructure Scale",
+      "bytes": 404393,
+      "sha256": "sha256:bd30de893503bb4402e94256f2fcd8a8"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+      "caption": "The Runtime Exit Gap: The real cost of replacing your developer tooling.",
+      "title": "The Runtime Exit Gap",
+      "bytes": 396482,
+      "sha256": "sha256:7d9f7104832e561b34624dfd497fc7307f3163ba60c39c642b4d01a67c53a417"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+      "caption": "The Runtime Exit Gap: The real cost of replacing your developer tooling.",
+      "title": "The Runtime Exit Gap",
+      "bytes": 406995,
+      "sha256": "sha256:0f3b6a948f8646dd1714159c646d99f85e0e43af8cf9071daf40b06c7a63066b"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+      "caption": "The Runtime Exit Gap: The real cost of replacing your developer tooling.",
+      "title": "The Runtime Exit Gap",
+      "bytes": 396711,
+      "sha256": "sha256:1f0e951884a46bf5d5ddf4cd1d559a82dcf884b964a36285ec995bdbabab759c"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+      "caption": "The Runtime Exit Gap: The real cost of replacing your developer tooling.",
+      "title": "The Runtime Exit Gap",
+      "bytes": 395314,
+      "sha256": "sha256:8f355b181d8e055e51371de480ac7172832218cce1d527b60d6c1f29e0208630"
+    },
+    {
+      "revision": 6,
+      "alt_text": "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+      "caption": "The Runtime Exit Gap: The real cost of replacing your developer tooling.",
+      "title": "The Runtime Exit Gap",
+      "bytes": 396482,
+      "sha256": "sha256:7d9f7104832e561b34624dfd497fc7307f3163ba60c39c642b4d01a67c53a417"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A 200mm telephoto compression view of a vast data hall, captured as a split-screen diptych with left-right scenario contrast. On the left, standardized cloud server racks; on the right, high-density custom compute arrays. Constructed with galvanised steel, perforated metal, and glass. Sharp directional lighting from the right illuminates the aisles, casting deep industrial contrast. Steel blue, charcoal, and cobalt palette. Flat compressed perspective, stacked overlapping layers of structure with crystal-clear distance clarity, no people, no fog.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, numbers, people",
+  "rationale": "The story involves massive scale\u201430,000 merges a day and 600 PB of traffic\u2014making a compressed telephoto view of a data hall the ideal choice. The split-screen duality perfectly captures the build-versus-buy contrast.",
+  "cue": "the build-versus-buy line",
+  "subject": "standard cloud server racks and custom high-density compute arrays",
+  "core_thesis": "October 2026 drew the build-versus-buy line for developer tooling at the layer, not the licence, forcing engineering leaders to decide between vendor dependency and custom scale.",
+  "core_conflict": "Standardized vendor cloud hosting versus the massive engineering cost of building and maintaining custom infrastructure.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The Runtime Exit Gap. A split-screen view of standard cloud server racks and custom high-density compute arrays in a vast data hall.",
+  "caption": "The Runtime Exit Gap: Cloudflare gave it away. Anthropic rebuilt it.",
+  "title": "The Runtime Exit Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "long_lens_industry",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-runtime-has-six-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 394882,
+  "sha256": "sha256:afed7577218eed9c929b13421ca913a425502eaa87a200299b0f6e69f1538b18",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394882,
+    "quality": 64,
+    "sha256": "sha256:afed7577218eed9c929b13421ca913a425502eaa87a200299b0f6e69f1538b18",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ebb60889b3925053694da52912bee7ff6be009bb648ea95f8817dc30b000730e",
+  "render_phash": "791929320d3645a3465a435c439e03bc039f41f601ee017e413e037a0159415c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split view showing two different styles of server racks in a data center aisle.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows server infrastructure, which relates to the article's focus on cloud platforms and developer tooling."
+  },
+  "source_hash": "sha256:49c6ccc29ad13ac7cbba1b28be312b09",
+  "source_chars": 5929,
+  "task_id": "f8afea948c87845a96fa8ed02929f9a8",
+  "credits": 5.0,
+  "cost_ms": 47,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f8afea948c87845a96fa8ed02929f9a8_1793194929579.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A 200mm telephoto compression view of a vast data hall, captured as a split-screen diptych with left-right scenario contrast. On the left, standardized cloud server racks; on the right, high-density custom compute arrays. Constructed with galvanised steel, perforated metal, and glass. Sharp directional lighting from the right illuminates the aisles, casting deep industrial contrast. Steel blue, charcoal, and cobalt palette. Flat compressed perspective, stacked overlapping layers of structure with crystal-clear distance clarity, no people, no fog.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-28T13:42:21+00:00",
+  "overlay": {
+    "kicker": "DEV TOOLS // BUILD VERSUS BUY",
+    "title": "THE RUNTIME EXIT GAP",
+    "hook": "Cloudflare gave it away. Anthropic rebuilt it.",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 105,
+    "contrast": 6.0,
+    "target": 5.5,
+    "clutter": 0.35,
+    "region_rgb": [
+      74,
+      98,
+      124
+    ],
+    "binding_rgb": [
+      120,
+      157,
+      186
+    ],
+    "title_lines": [
+      "THE RUNTIME",
+      "EXIT GAP"
+    ],
+    "subject": 0.29,
+    "ink_subject": 0.174,
+    "spike": 0.755,
+    "generated_at": "2026-10-28T13:42:21+00:00"
+  }
+}
