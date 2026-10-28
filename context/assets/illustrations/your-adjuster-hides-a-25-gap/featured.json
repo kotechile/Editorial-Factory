@@ -1,0 +1,112 @@
+{
+ "slug": "your-adjuster-hides-a-25-gap",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Overlapping blank contract documents with a chunk cut out, resting on a grey tile surface.",
+   "caption": "The mathematical structure of a public adjuster's contract means a slice of the entire settlement is taken before the homeowner sees the benefit.",
+   "title": "Adjuster-Fee-Gap-Contract",
+   "bytes": 372114,
+   "sha256": "sha256:830880c0ab490f1157a032be16293f8c"
+  }
+ ],
+ "style": "document_flatlay",
+ "style_label": "Document still life",
+ "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Overhead flat-lay photograph, 35mm lens top-down 90-degree view. Overlapping blank embossed contract documents with a precise geometric gap cut from the top page, resting on a slate grey tile kitchen counter. Soft diffused window daylight from the left casts subtle drop shadows across the thick textured cotton paper. The cut-out exposes a contrasting layer beneath. Extreme asymmetry top-down 90-degree view, with the papers positioned off-center. Slate grey, bone white, rust. Fine film grain, authentic material textures, no people.",
+ "negative_prompt": "text, garbled letters, typography, numbers, watermark, logos, writing, signature, printed words",
+ "rationale": "The document flatlay elegantly captures the contractual and mathematical nature of the story. Using a physical cut-out in the paper visually represents the hidden slice taken from the whole without relying on forbidden text.",
+ "cue": "a share of the insurer's check",
+ "subject": "overlapping blank contract documents with a geometric gap cut from the top page",
+ "core_thesis": "A public adjuster's fee is taken from the entire insurance check rather than just the added value, meaning a 20 percent fee requires a 25 percent increase just to break even.",
+ "core_conflict": "The hidden mathematical burden of the adjuster's contract versus the homeowner's net recovery.",
+ "composition": "extreme asymmetry top-down 90-degree view",
+ "alt_text": "Blank embossed contract sheets with a rectangular section cut away, stacked on a grey tiled counter in raking window light.",
+ "caption": "Your Adjuster Hides a 25% Gap: the fee comes out of the whole settlement, so the offer must grow 25 percent before it pays for itself.",
+ "title": "Public Adjuster Fee Math",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "gemini-3.1-pro-preview",
+ "director_attempts": 2,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-adjuster-hides-a-25-gap/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 402115,
+ "sha256": "sha256:705580da2c73c000b78aafb79042ec9d0c018c0ab32ae25890db8d7f4b2e8f70",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 402115,
+  "quality": 80,
+  "sha256": "sha256:705580da2c73c000b78aafb79042ec9d0c018c0ab32ae25890db8d7f4b2e8f70",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:fbbd83ff387781aa05dfbfc8deeffb8ca920a10f74ff4091e861d2efa5579504",
+ "render_phash": "87ff87ff83df267f24ff01df02df03cf034f016f016f006f01cf021f00be00be",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A stack of blank, rectangular paper or cardstock sheets, some white and some reddish-brown, with a rectangular cutout near the top of the uppermost white sheet, resting on a tiled surface.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.7,
+  "reason": "The image shows documents with a gap, matching the requested treatment and metaphorically aligning with the headline about a gap in a contract."
+ },
+ "source_hash": "sha256:0677936727f116d2a661971a78fcecf8",
+ "source_chars": 5409,
+ "task_id": "e3a3f8411b277ae31fe1a78afe1702fb",
+ "credits": 5.0,
+ "cost_ms": 21,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/e3a3f8411b277ae31fe1a78afe1702fb_1793219013494.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "Overhead flat-lay photograph, 35mm lens top-down 90-degree view. Overlapping blank embossed contract documents with a precise geometric gap cut from the top page, resting on a slate grey tile kitchen counter. Soft diffused window daylight from the left casts subtle drop shadows across the thick textured cotton paper. The cut-out exposes a contrasting layer beneath. Extreme asymmetry top-down 90-degree view, with the papers positioned off-center. Slate grey, bone white, rust. Fine film grain, authentic material textures, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-10-28T20:23:46+00:00",
+ "overlay": {
+  "kicker": "PROPERTY LOSS // ADJUSTER FEES",
+  "title": "PUBLIC ADJUSTER FEE MATH",
+  "hook": "Why a 20 percent fee needs a 25 percent settlement bump",
+  "anchor": "top-right",
+  "light": true,
+  "scrim": 0,
+  "contrast": 7.0,
+  "target": 5.5,
+  "clutter": 0.279,
+  "region_rgb": [
+   66,
+   72,
+   69
+  ],
+  "binding_rgb": [
+   75,
+   81,
+   79
+  ],
+  "title_lines": [
+   "PUBLIC ADJUSTER",
+   "FEE MATH"
+  ],
+  "subject": 0.219,
+  "ink_subject": 0.094,
+  "spike": 0.719,
+  "generated_at": "2026-10-28T20:23:46+00:00"
+ }
+}

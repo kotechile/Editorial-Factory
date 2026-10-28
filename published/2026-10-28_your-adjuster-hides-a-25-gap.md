@@ -11,6 +11,12 @@ meta_title: "Your Adjuster Hides a 25% Gap"
 meta_title_source: "derived_from_title"
 meta_description: "A public adjuster's fee comes from the insurer's whole check, not from the extra dollars the adjuster wins. So a 20 percent deal only breaks even when the…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-adjuster-hides-a-25-gap/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Blank embossed contract sheets with a rectangular section cut away, stacked on a grey tiled counter in raking window light."
+image_caption: "Your Adjuster Hides a 25% Gap: the fee comes out of the whole settlement, so the offer must grow 25 percent before it pays for itself."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
