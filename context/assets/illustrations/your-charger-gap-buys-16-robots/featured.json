@@ -1,0 +1,112 @@
+{
+  "slug": "your-charger-gap-buys-16-robots",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a telephoto lens.",
+      "caption": "Failing to account for mid-shift charging gaps forces operations to over-provision their robotic fleets.",
+      "title": "Robot Fleet Telephoto Warehouse",
+      "bytes": 288693,
+      "sha256": "sha256:b285458934c941876ef7ce9288b197ab"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A vast warehouse aisle with a fleet of flat industrial autonomous mobile robots, heavily compressed by a 200mm telephoto lens. Asymmetric off-centre composition with the lead robot docked at a charging station. Sharp directional key light from the left casting deep industrial contrast and long shadows. Safety yellow, concrete grey, and charcoal palette. Brushed steel chassis and concrete flooring, crystal-clear telephoto distance clarity, flat compressed perspective, no people in the foreground, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI elements, people, blur, haze",
+  "rationale": "The story revolves around fleet scale and the compounding cost of buying unnecessary robots to cover a charging deficit. A telephoto industry shot compresses a long line of machines, visually capturing the burden of excess fleet sizing against the warehouse architecture.",
+  "cue": "Your Charger Gap Buys 16 Robots",
+  "subject": "a fleet of industrial autonomous mobile robots",
+  "core_thesis": "Ignoring battery recovery time when sizing a robot fleet results in purchasing excess capacity, whereas a simple route charger eliminates this costly penalty.",
+  "core_conflict": "Capital expenditure on redundant robots vs. the minor operational cost of an accessible charging station.",
+  "composition": "asymmetric off-centre composition",
+  "alt_text": "The Cost Of Charger Gaps. A long line of flat industrial autonomous mobile robots parked in a vast warehouse aisle, compressed by a",
+  "caption": "The Cost Of Charger Gaps: How battery limits secretly inflate your robot fleet size.",
+  "title": "The Cost Of Charger Gaps",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-charger-gap-buys-16-robots/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 335944,
+  "sha256": "sha256:34babdc59d2e556e7b7e49f8b6378c0a9d5dfefd2a17d20d63d4cf6816bf4a16",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 335944,
+    "quality": 88,
+    "sha256": "sha256:34babdc59d2e556e7b7e49f8b6378c0a9d5dfefd2a17d20d63d4cf6816bf4a16",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:85c9c5e50527047033c01483a624a1dd84e09594511ba5610ed294a221676ba1",
+  "render_phash": "24d720f78076807c917d50bd68ed62bf01bf617101a9076b1f4f1ecd17df0fff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A flat, rectangular autonomous mobile robot is connected to a charging station in a warehouse aisle, with other similar robots visible in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows an industrial robot at a charging station, which aligns with the article's focus on robot fleets and charging gaps."
+  },
+  "source_hash": "sha256:20fe704a35316a641939053f98f4d3d8",
+  "source_chars": 6951,
+  "task_id": "c970f3e95b10cecfd1a7a0fa9a9e5c9f",
+  "credits": 5.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c970f3e95b10cecfd1a7a0fa9a9e5c9f_1793216822034.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A vast warehouse aisle with a fleet of flat industrial autonomous mobile robots, heavily compressed by a 200mm telephoto lens. Asymmetric off-centre composition with the lead robot docked at a charging station. Sharp directional key light from the left casting deep industrial contrast and long shadows. Safety yellow, concrete grey, and charcoal palette. Brushed steel chassis and concrete flooring, crystal-clear telephoto distance clarity, flat compressed perspective, no people in the foreground, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-28T19:47:11+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE ROBOTICS // FLEET CAPEX",
+    "title": "THE COST OF CHARGER GAPS",
+    "hook": "How battery limits secretly inflate your robot fleet size",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 60,
+    "contrast": 5.57,
+    "target": 5.5,
+    "clutter": 0.334,
+    "region_rgb": [
+      65,
+      67,
+      66
+    ],
+    "binding_rgb": [
+      119,
+      124,
+      127
+    ],
+    "title_lines": [
+      "THE COST OF",
+      "CHARGER GAPS"
+    ],
+    "subject": 0.122,
+    "ink_subject": 0.063,
+    "spike": 0.355,
+    "generated_at": "2026-10-28T19:47:11+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T19:22:51Z",
+  "updated_at": "2026-10-28T19:47:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4112,6 +4112,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-90-restart-monitor-proves-nothing/"
+    },
+    {
+      "slug": "2026-10-28_your-charger-gap-buys-16-robots",
+      "title": "Your Charger Gap Buys 16 Robots",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-28",
+      "public": false
     },
     {
       "slug": "2026-10-28_your-flood-gap-has-44-days",

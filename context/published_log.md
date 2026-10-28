@@ -230,6 +230,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-28 | multi_agent_enterprise_fabric | your-783-silent-cap-breach | Your 78.3% Silent Cap Breach | https://pressflow.aichieve.net/published/2026-10-28_your-783-silent-cap-breach.md | reader site only |
 | 2026-10-28 | gpu_hardware | your-32-cards-spend-90-percent-talking | Your 32 Cards Spend 90% Talking: Why Wide Splits Stall | https://pressflow.aichieve.net/published/2026-10-28_your-32-cards-spend-90-percent-talking.md | reader site only |
 | 2026-10-28 | enterprise_build_vs_buy | your-sso-bill-125-a-connection | Your SSO Bill: $125 a Connection, $7.75 a Seat | https://pressflow.aichieve.net/published/2026-10-28_your-sso-bill-125-a-connection.md | reader site only |
+| 2026-10-28 | warehouse_automation_robotics_capex | your-charger-gap-buys-16-robots | Your Charger Gap Buys 16 Robots | https://pressflow.aichieve.net/published/2026-10-28_your-charger-gap-buys-16-robots.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
