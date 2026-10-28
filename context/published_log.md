@@ -223,6 +223,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-28 | agentic_resilience_failure | your-90-restart-monitor-proves-nothing | Your 90% Restart Monitor Proves Nothing | https://pressflow.aichieve.net/published/2026-10-28_your-90-restart-monitor-proves-nothing.md | reader site only |
 | 2026-10-28 | multi_agent_enterprise_fabric | your-60-drop-isnt-the-model | Your 60% Drop Isn't the Model | https://pressflow.aichieve.net/published/2026-10-28_your-60-drop-isnt-the-model.md | reader site only |
 | 2026-10-28 | gpu_hardware | your-480gb-card-wont-skip-the-memory-queue | 480GB Won't Skip Your Memory Queue | https://pressflow.aichieve.net/published/2026-10-28_your-480gb-card-wont-skip-the-memory-queue.md | reader site only |
+| 2026-10-28 | enterprise_build_vs_buy | your-runtime-has-six-months | Your Runtime: The 6-Month Exit Gap | https://pressflow.aichieve.net/published/2026-10-28_your-runtime-has-six-months.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

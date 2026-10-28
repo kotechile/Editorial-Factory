@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T11:47:30Z",
+  "updated_at": "2026-10-28T12:18:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4025,6 +4025,24 @@
         "Related reading"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-10-28",
+      "public": false
+    },
+    {
+      "slug": "2026-10-28_your-runtime-has-six-months",
+      "title": "Your Runtime: The 6-Month Exit Gap",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
       "date": "2026-10-28",
       "public": false
     }
