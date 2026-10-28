@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T19:22:33Z",
+  "updated_at": "2026-10-28T19:22:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4034,7 +4034,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-32-cards-spend-90-percent-talking/"
     },
     {
       "slug": "2026-10-28_your-480gb-card-wont-skip-the-memory-queue",
@@ -4090,7 +4091,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-783-silent-cap-breach/"
     },
     {
       "slug": "2026-10-28_your-90-restart-monitor-proves-nothing",
@@ -4165,7 +4167,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-sso-bill-125-a-connection/"
     }
   ]
 }

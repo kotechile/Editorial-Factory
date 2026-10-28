@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-28T18:00:57+00:00
+# Internal-link candidates — 2026-10-28T19:22:51+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -139,7 +139,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 161 live article(s), 8 other target(s)
+## aichieve.net — 164 live article(s), 8 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -256,12 +256,14 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your 24GB Card Is 4GB Short: The Label Trap](https://aichieve.net/your-24gb-card-is-4gb-short/) — Major Purchases & Assets
 - [Your 25-Minute Review Costs $66.67](https://aichieve.net/review-minute-costs-66-dollars/) — AI Stack & Tool TCO
 - [Your 3.0.0 Feed Stuck Until 2027](https://aichieve.net/your-3-0-0-feed-stuck-until-2027/) — Supply Chain & Operations
+- [Your 32 Cards Spend 90% Talking: Why Wide Splits Stall](https://aichieve.net/your-32-cards-spend-90-percent-talking/) — Major Purchases & Assets
 - [Your 32GB Card, Gone: 41% Memory Hike](https://aichieve.net/your-32gb-card-gone/) — Major Purchases & Assets
 - [Your 49% Cut Was Actually 9%](https://aichieve.net/your-49-cut-was-actually-9/) — Supply Chain & Operations
 - [Your 6.1-Point Growth Isn't Demand](https://aichieve.net/your-61-point-growth-was-a-refill/) — Supply Chain & Operations
 - [Your 60% Drop Isn't the Model](https://aichieve.net/your-60-drop-isnt-the-model/) — Autonomous & Agentic Workflows
 - [Your 60% Fast Lane Is Blind](https://aichieve.net/your-60-fast-lane-is-blind/) — AI Stack & Tool TCO
 - [Your 68K Tokens Cost Every Step](https://aichieve.net/your-68k-tokens-cost-every-step/) — Major Purchases & Assets
+- [Your 78.3% Silent Cap Breach](https://aichieve.net/your-783-silent-cap-breach/) — Autonomous & Agentic Workflows
 - [Your 9% Drop: Not the Model](https://aichieve.net/rerun-diff-measures-gpu/) — AI Stack & Tool TCO
 - [Your 90% Restart Monitor Proves Nothing](https://aichieve.net/your-90-restart-monitor-proves-nothing/) — Autonomous & Agentic Workflows
 - [Your AI Fine: 3%, Not 35 Million](https://aichieve.net/your-ai-fine-is-3-percent/) — Mental Models & Strategy
@@ -301,6 +303,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Retrieval Fails at 5.7%](https://aichieve.net/your-retrieval-misses-57/) — Autonomous & Agentic Workflows
 - [Your Route's 5x Stop Gap: Density Beats Routing](https://aichieve.net/your-routes-5x-stop-gap/) — Supply Chain & Operations
 - [Your Runtime: The 6-Month Exit Gap](https://aichieve.net/your-runtime-has-six-months/) — AI Stack & Tool TCO
+- [Your SSO Bill: $125 a Connection, $7.75 a Seat](https://aichieve.net/your-sso-bill-125-a-connection/) — AI Stack & Tool TCO
 - [Your Stock Records Are 65% Wrong](https://aichieve.net/why-65-percent-of-stock-records-miss/) — Supply Chain & Operations
 - [Your Tool Boundary Costs 3 Engineers](https://aichieve.net/your-tool-boundary-costs-3-engineers/) — Autonomous & Agentic Workflows
 - [Your Trace Won't Prove 92.5 Points](https://aichieve.net/your-trace-wont-prove-925-points/) — AI Stack & Tool TCO
@@ -315,6 +318,9 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1262 `your-sso-bill-125-a-connection` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1259 `your-32-cards-spend-90-percent-talking` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1255 `your-783-silent-cap-breach` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1253 `your-11-agents-3-die-none-wrong` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1248 `100000-totes-skip-the-cost` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1246 `your-runtime-has-six-months` — published in the CMS but absent from the frontend sitemap
@@ -397,9 +403,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #867 `owned-shuttles-or-rented-robots` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #866 `flat-price-was-the-hedge` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #863 `your-chip-stopped-deciding` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #861 `stale-grants-travel-the-graph` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #859 `retry-permission-leaves-the-caller` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #856 `hour-14-recovery-wall` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap

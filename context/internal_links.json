@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T18:00:57+00:00",
+  "generated_at": "2026-10-28T19:22:51+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -5644,6 +5644,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-32-cards-spend-90-percent-talking",
+      "title": "Your 32 Cards Spend 90% Talking: Why Wide Splits Stall",
+      "url": "https://aichieve.net/your-32-cards-spend-90-percent-talking/",
+      "path": "/your-32-cards-spend-90-percent-talking/",
+      "sites_live": {
+        "aichieve.net": "/your-32-cards-spend-90-percent-talking/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "In a 32-card budget, the wide tensor-parallel layout took 3.68 to 4.35 times the run time of a layout that kept the split narrow.",
+      "modified": "2026-10-28T18:41:46",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-32gb-card-gone",
       "title": "Your 32GB Card, Gone: 41% Memory Hike",
       "url": "https://aichieve.net/your-32gb-card-gone/",
@@ -5867,6 +5890,29 @@
       ],
       "excerpt": "Intel's new inference card is advertised with up to 480 GB (gigabytes) of memory on partner cards and no high bandwidth memory (HBM) at all.",
       "modified": "2026-10-28T11:44:42",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-783-silent-cap-breach",
+      "title": "Your 78.3% Silent Cap Breach",
+      "url": "https://aichieve.net/your-783-silent-cap-breach/",
+      "path": "/your-783-silent-cap-breach/",
+      "sites_live": {
+        "aichieve.net": "/your-783-silent-cap-breach/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Agent fabrics break their shared spend caps from inside the rules, because each agent only checks the limit it was handed: the study logged cap breaches in\u2026",
+      "modified": "2026-10-28T18:20:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6472,6 +6518,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-sso-bill-125-a-connection",
+      "title": "Your SSO Bill: $125 a Connection, $7.75 a Seat",
+      "url": "https://aichieve.net/your-sso-bill-125-a-connection/",
+      "path": "/your-sso-bill-125-a-connection/",
+      "sites_live": {
+        "aichieve.net": "/your-sso-bill-125-a-connection/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your single sign-on (SSO) bill arrives in three units for one feature, because vendors priced the handshake three ways. The unit sets the number.",
+      "modified": "2026-10-28T19:13:02",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-tool-boundary-costs-3-engineers",
       "title": "Your Tool Boundary Costs 3 Engineers",
       "url": "https://aichieve.net/your-tool-boundary-costs-3-engineers/",
@@ -6585,6 +6654,48 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1262,
+      "slug": "your-sso-bill-125-a-connection",
+      "title": "Your SSO Bill: $125 a Connection, $7.75 a Seat",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T19:13:02",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1259,
+      "slug": "your-32-cards-spend-90-percent-talking",
+      "title": "Your 32 Cards Spend 90% Talking: Why Wide Splits Stall",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T18:41:46",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1255,
+      "slug": "your-783-silent-cap-breach",
+      "title": "Your 78.3% Silent Cap Breach",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T18:20:10",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -7730,48 +7841,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T12:33:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 861,
-      "slug": "stale-grants-travel-the-graph",
-      "title": "Your Agent Fabric&#8217;s 52.2% Blind Spot",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 859,
-      "slug": "retry-permission-leaves-the-caller",
-      "title": "Retry Budgets Fail: Agents Retry 60 of 80 Anyway",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 856,
-      "slug": "hour-14-recovery-wall",
-      "title": "Dock Overtime: Your Real 14-Hour Cost",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
