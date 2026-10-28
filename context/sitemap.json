@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T11:02:34Z",
+  "updated_at": "2026-10-28T11:21:23Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3973,6 +3973,24 @@
       "date": "2026-10-27",
       "public": true,
       "url": "https://aichieve.net/your-miss-costs-9x-the-chargeback/"
+    },
+    {
+      "slug": "2026-10-28_your-60-drop-isnt-the-model",
+      "title": "Your 60% Drop Isn't the Model",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-28",
+      "public": false
     },
     {
       "slug": "2026-10-28_your-90-restart-monitor-proves-nothing",
