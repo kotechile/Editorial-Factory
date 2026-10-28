@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T14:16:51+00:00",
+  "generated_at": "2026-10-28T18:00:57+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -5529,6 +5529,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-11-agents-3-die-none-wrong",
+      "title": "Your 11 Agents: 3 Die, None Wrong",
+      "url": "https://aichieve.net/your-11-agents-3-die-none-wrong/",
+      "path": "/your-11-agents-3-die-none-wrong/",
+      "sites_live": {
+        "aichieve.net": "/your-11-agents-3-die-none-wrong/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "On 15 April 2026, eleven coding agents ran at once against one shared key, and three of them died before they finished.",
+      "modified": "2026-10-28T17:51:47",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-15-air-rule-195-break-even",
       "title": "Your $15 Air Rule, $195 Break-Even",
       "url": "https://aichieve.net/your-15-air-rule-195-break-even/",
@@ -6562,6 +6585,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1253,
+      "slug": "your-11-agents-3-die-none-wrong",
+      "title": "Your 11 Agents: 3 Die, None Wrong",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-28T17:51:47",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -7730,20 +7767,6 @@
       "id": 856,
       "slug": "hour-14-recovery-wall",
       "title": "Dock Overtime: Your Real 14-Hour Cost",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:33",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 854,
-      "slug": "build-wait-payback-threshold",
-      "title": "Silent Build Wait: 90 Seconds, Not 11 Minutes",
       "url": "",
       "categories": [],
       "category_ids": [],

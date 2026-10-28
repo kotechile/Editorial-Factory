@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-28T14:16:51+00:00
+# Internal-link candidates — 2026-10-28T18:00:57+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -139,7 +139,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 160 live article(s), 8 other target(s)
+## aichieve.net — 161 live article(s), 8 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -250,6 +250,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your $30 Exception Bill Is Wrong](https://aichieve.net/your-30-exception-bill-is-wrong/) — Supply Chain & Operations
 - [Your 100,000 Totes Skip the Cost](https://aichieve.net/100000-totes-skip-the-cost/) — Supply Chain & Operations
 - [Your 100-Case Eval: 92.5% Coverage, Not 95%](https://aichieve.net/100-case-eval-925-coverage/) — AI Stack & Tool TCO
+- [Your 11 Agents: 3 Die, None Wrong](https://aichieve.net/your-11-agents-3-die-none-wrong/) — Autonomous & Agentic Workflows
 - [Your 15% Raise: A Memory Price Hike](https://aichieve.net/your-15-percent-raise-is-a-price-hike/) — Mental Models & Strategy
 - [Your 180-day model is already wrong](https://aichieve.net/your-180-day-model-is-already-wrong/) — AI Stack & Tool TCO
 - [Your 24GB Card Is 4GB Short: The Label Trap](https://aichieve.net/your-24gb-card-is-4gb-short/) — Major Purchases & Assets
@@ -314,6 +315,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1253 `your-11-agents-3-die-none-wrong` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1248 `100000-totes-skip-the-cost` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1246 `your-runtime-has-six-months` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1244 `your-480gb-card-wont-skip-the-memory-queue` — published in the CMS but absent from the frontend sitemap
@@ -398,7 +400,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #861 `stale-grants-travel-the-graph` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #859 `retry-permission-leaves-the-caller` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #856 `hour-14-recovery-wall` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #854 `build-wait-payback-threshold` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T17:51:49Z",
+  "updated_at": "2026-10-28T18:00:58Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4010,12 +4010,13 @@
         "By the numbers",
         "What I'd watch:",
         "The catch",
-        "Related reading",
-        "At a glance"
+        "At a glance",
+        "Related reading"
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-11-agents-3-die-none-wrong/"
     },
     {
       "slug": "2026-10-28_your-480gb-card-wont-skip-the-memory-queue",

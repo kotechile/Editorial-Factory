@@ -62,6 +62,18 @@ The evidence points heavily toward a fleet-level gate, but it remains a single p
 
 My read is that the gate is a heavy lift. It takes far more work than a local semaphore, and it adds a shared point of failure unless the proxy is fully redundant. Fairness pays a price too. Serving newest-first keeps uptime high and starves the long job, making the shed rule a product decision rather than a simple toggle [3]. These limits date fast, so the lasting part is the math and the placement, not the numbers.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Agent fleets are failing as queues rather than as errors. Eleven unmanaged agents on one key lost three runs and about 135,000 tokens on a day the vendor had room to spare, because the shared key was the bottleneck.
+- **Why It Matters:** Each run reports on itself, so the number deciding whether it ends lives in nobody's dashboard. That turns a capacity problem into a stream of retries, and retries spend the identical quota the fleet is already short of.
+- **What I'd Watch:** Where the limit sits, and whether the service enforcing it can see every agent.
+  - **One gate, one owner:** A shared proxy that admits work, tracks the vendor's rate-limit state, and runs retries in strict order.
+  - **In-flight count:** Arrival rate multiplied by latency, worked out from your own logs, is the parallel run count the pool requires.
+  - **Shed rule:** Which requests get refused first decides who pays for the overload.
+- **The Catch:** The evidence is a single preprint with a promising but unrepeated result, the gate adds a hop and a shared point of failure, and its own test says retry handling matters more than the worker cap most teams would build first.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -74,18 +86,6 @@ My read is that the gate is a heavy lift. It takes far more work than a local se
 - [Agent Memory Poisoning](/agent-memory-poisoning-write-path/) — more on Autonomous & Agentic Workflows
 - [Long Context Is Not Memory](/agent-memory-tiering-l1-l4/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Agent fleets are failing as queues rather than as errors. Eleven unmanaged agents on one key lost three runs and about 135,000 tokens on a day the vendor had room to spare, because the shared key was the bottleneck.
-- **Why It Matters:** Each run reports on itself, so the number deciding whether it ends lives in nobody's dashboard. That turns a capacity problem into a stream of retries, and retries spend the identical quota the fleet is already short of.
-- **What I'd Watch:** Where the limit sits, and whether the service enforcing it can see every agent.
-  - **One gate, one owner:** A shared proxy that admits work, tracks the vendor's rate-limit state, and runs retries in strict order.
-  - **In-flight count:** Arrival rate multiplied by latency, worked out from your own logs, is the parallel run count the pool requires.
-  - **Shed rule:** Which requests get refused first decides who pays for the overload.
-- **The Catch:** The evidence is a single preprint with a promising but unrepeated result, the gate adds a hop and a shared point of failure, and its own test says retry handling matters more than the worker cap most teams would build first.
 
 ## Sources
 
