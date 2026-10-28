@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T18:23:44Z",
+  "updated_at": "2026-10-28T18:41:48Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4017,6 +4017,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-11-agents-3-die-none-wrong/"
+    },
+    {
+      "slug": "2026-10-28_your-32-cards-spend-90-percent-talking",
+      "title": "Your 32 Cards Spend 90% Talking: Why Wide Splits Stall",
+      "vertical": "gpu_hardware",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-28",
+      "public": false
     },
     {
       "slug": "2026-10-28_your-480gb-card-wont-skip-the-memory-queue",

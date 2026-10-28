@@ -1,0 +1,114 @@
+{
+  "slug": "your-32-cards-spend-90-percent-talking",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric technical drawing of server racks with a data pathway bottleneck.",
+      "caption": "When a model is split across nodes, the slower interconnect speeds cause GPUs to spend most of their time waiting for data.",
+      "title": "GPU Routing Bottleneck Isometric",
+      "bytes": 388711,
+      "sha256": "sha256:bf1de89c09d10581041edfa33612892a"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection off-centre, showing a server room rack row layout. The assembly features modular server chassis, GPU trays, and rigid connector pathways. A dense cluster of blades is linked by thick, smooth conduits, but forces data through a single narrow, restricted cable bridge to a secondary rack. Flat muted palette with cobalt and safety yellow accents. Thin consistent line weight, laid over a plain concrete grey plant floor. Recognisable hardware with racks, modules, trays, and connectors with visible depth. One directional light throwing a long cast shadow, generous empty margin, no unlabelled bare abstract boxes, no text.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, signature, messy linework",
+  "rationale": "The article explains a structural routing and bandwidth bottleneck within a multi-GPU architecture. A technical isometric cutaway perfectly illustrates the architectural divide between the fast local NVLink cluster and the slower cross-node PCIe boundary.",
+  "cue": "Why Wide Splits Stall",
+  "subject": "isometric cutaway of server racks highlighting a routing bottleneck",
+  "core_thesis": "Past the node boundary, tensor parallelism stalls because GPUs spend over 90% of runtime swapping small decode-phase messages instead of computing.",
+  "core_conflict": "Compute capacity vs. interconnect latency (NVLink vs PCIe bandwidth bottleneck)",
+  "composition": "axonometric projection off-centre",
+  "alt_text": "Why Wide GPU Splits Stall. Isometric technical drawing of server racks with a data pathway bottleneck.",
+  "caption": "Why Wide GPU Splits Stall: How network latency chokes throughput past the node edge.",
+  "title": "Why Wide GPU Splits Stall",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-32-cards-spend-90-percent-talking/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 403978,
+  "sha256": "sha256:1025fda86d11ec08a8f58f30a439b09582956c1c5fa773eb09876cb9b2bac720",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403978,
+    "quality": 64,
+    "sha256": "sha256:1025fda86d11ec08a8f58f30a439b09582956c1c5fa773eb09876cb9b2bac720",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:220fa58eb963db343be8d8de277e29fa5489c99ef7876d3f28a61c899859fa2b",
+  "render_phash": "2095d06c6858b430f26c2c4c959c6e18973cdb3a6f1c330c19260f249619ca12",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric illustration of server racks connected by blue and yellow cables.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows server hardware and networking, which relates to the article's focus on computing nodes and data transfer bottlenecks."
+  },
+  "source_hash": "sha256:be290fff0a492f02f5eefac5daf8d103",
+  "source_chars": 5873,
+  "task_id": "0d09eba2bf876c15ee77d90c05261267",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_277051affc4bc43af55e76c69b2642fa.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "clean isometric cutaway illustration, technical drawing style, axonometric projection off-centre, showing a server room rack row layout. The assembly features modular server chassis, GPU trays, and rigid connector pathways. A dense cluster of blades is linked by thick, smooth conduits, but forces data through a single narrow, restricted cable bridge to a secondary rack. Flat muted palette with cobalt and safety yellow accents. Thin consistent line weight, laid over a plain concrete grey plant floor. Recognisable hardware with racks, modules, trays, and connectors with visible depth. One directional light throwing a long cast shadow, generous empty margin, no unlabelled bare abstract boxes, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-28T18:41:29+00:00",
+  "overlay": {
+    "kicker": "GPU CLUSTERS // TENSOR PARALLELISM",
+    "title": "WHY WIDE GPU SPLITS STALL",
+    "hook": "How network latency chokes throughput past the node edge",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 90,
+    "contrast": 5.95,
+    "target": 5.5,
+    "clutter": 0.29,
+    "region_rgb": [
+      176,
+      177,
+      172
+    ],
+    "binding_rgb": [
+      131,
+      131,
+      129
+    ],
+    "title_lines": [
+      "WHY WIDE GPU",
+      "SPLITS STALL"
+    ],
+    "subject": 0.235,
+    "ink_subject": 0.134,
+    "spike": 0.639,
+    "generated_at": "2026-10-28T18:41:29+00:00"
+  }
+}
