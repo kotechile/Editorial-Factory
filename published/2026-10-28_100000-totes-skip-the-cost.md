@@ -13,6 +13,12 @@ meta_title: "Your 100,000 Totes Skip the Cost"
 meta_title_source: "derived_from_title"
 meta_description: "GXO Logistics (GXO), the world's largest pure-play contract logistics provider, says its humanoid robots have moved more than 100,000 totes at one Georgia…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/100000-totes-skip-the-cost/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "Vendors Own The ROI Math. An automated warehouse storage aisle illuminated by amber shuttle lights at twilight."
+image_caption: "Vendors Own The ROI Math: Automation sellers now dictate your payback calculations."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

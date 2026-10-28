@@ -345,3 +345,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-27 | `your-eta-misses-27-hours` | control_tower_exception_orchestration | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-eta-misses-27-hours/featured.jpg` |
 | 2026-10-28 | `your-90-restart-monitor-proves-nothing` | agentic_resilience_failure | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-90-restart-monitor-proves-nothing/featured.jpg` |
 | 2026-10-28 | `your-runtime-has-six-months` | enterprise_build_vs_buy | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-runtime-has-six-months/featured.jpg` |
+| 2026-10-28 | `100000-totes-skip-the-cost` | warehouse_automation_robotics_capex | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/100000-totes-skip-the-cost/featured.jpg` |
+| 2026-10-28 | `your-flood-gap-has-44-days` | property_loss_insurance_mitigation | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-flood-gap-has-44-days/featured.jpg` |

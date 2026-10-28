@@ -13,6 +13,12 @@ meta_title: "Your Flood Gap Has 44 Days"
 meta_title_source: "derived_from_title"
 meta_description: "The window to close your flood gap has 44 days in it. A federal flood policy does not start for 30 days, so the last day to buy one that is in force before…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-flood-gap-has-44-days/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "The 44 Day Flood Gap. Close-up of a textured home insurance policy document on a timber surface."
+image_caption: "The 44 Day Flood Gap: The last useful flood-policy date is Nov. 11."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

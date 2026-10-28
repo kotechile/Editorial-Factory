@@ -1,0 +1,123 @@
+{
+  "slug": "your-flood-gap-has-44-days",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Close-up of a textured home insurance policy document on a timber surface.",
+      "caption": "The crucial details of property coverage often come down to the fine print separating wind from water.",
+      "title": "insurance-policy-macro-document",
+      "bytes": 179594,
+      "sha256": "sha256:a2024c703840679b0cce1a1ac46a7e40"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The 44 Day Flood Gap. Close-up of a textured home insurance policy document on a timber surface.",
+      "caption": "The 44 Day Flood Gap: You have 44 days before federal flood policies lapse.",
+      "title": "The 44 Day Flood Gap",
+      "bytes": 218159,
+      "sha256": "sha256:5a9493f7f516be4e36abfac2c79dee772eb8d2c91a1425a3c92488650a0208bd"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of a thick paper home insurance policy document resting on a timber counter in a kitchen. 100mm macro lens, one razor-sharp focal plane, shallow depth of field. Extreme asymmetry, the document commands the frame off-centre with the background falling away. Soft directional window light from the left highlights the visible paper texture and dust. Bone white, slate grey, and deep pine green. No text, no logos.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, people, faces",
+  "rationale": "The story revolves around the literal text and strict boundaries of an insurance contract. An extreme macro shot of a policy document emphasizes the granular, high-stakes nature of these agreements.",
+  "cue": "Two October storms split one bill into wind",
+  "subject": "a thick paper home insurance policy document",
+  "core_thesis": "A looming expiration of federal flood insurance highlights the dangerous coverage gap between standard wind policies and separate water damage policies.",
+  "core_conflict": "Standard homeowner policies covering wind versus the urgent, time-delayed necessity of federal flood policies covering water.",
+  "composition": "extreme asymmetry",
+  "alt_text": "The 44 Day Flood Gap. Close-up of a textured home insurance policy document on a timber surface.",
+  "caption": "The 44 Day Flood Gap: The last useful flood-policy date is Nov. 11.",
+  "title": "The 44 Day Flood Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "editorial_macro",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-flood-gap-has-44-days/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 215843,
+  "sha256": "sha256:1ab8fd353417b19d19037fa35546f4608f8f8b3a604fc743ca941aa463aa6933",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 215843,
+    "quality": 88,
+    "sha256": "sha256:1ab8fd353417b19d19037fa35546f4608f8f8b3a604fc743ca941aa463aa6933",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a9cefd8c8bd6fcd8ae1ed8bc9e8c8313ee3246a4e63b5ded97490d559b014725",
+  "render_phash": "bb48bb48db5ccf9fff80c804c3ff40c404383e0cf3437f307f8cffc7e9f1f3f8",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A thick stack of white paper or a bound document resting on a wooden surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a thick document, which aligns with the concept of an insurance policy mentioned in the article."
+  },
+  "source_hash": "sha256:b05b695b852245647b2a5e6d717c80cb",
+  "source_chars": 4338,
+  "task_id": "36262ce54091971395e9a9995e3502ff",
+  "credits": 5.0,
+  "cost_ms": 48,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/36262ce54091971395e9a9995e3502ff_1793195470466.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of a thick paper home insurance policy document resting on a timber counter in a kitchen. 100mm macro lens, one razor-sharp focal plane, shallow depth of field. Extreme asymmetry, the document commands the frame off-centre with the background falling away. Soft directional window light from the left highlights the visible paper texture and dust. Bone white, slate grey, and deep pine green. No text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-28T13:51:22+00:00",
+  "overlay": {
+    "kicker": "FLOOD INSURANCE // COVERAGE WINDOW",
+    "title": "THE 44 DAY FLOOD GAP",
+    "hook": "The last useful flood-policy date is Nov. 11",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 90,
+    "contrast": 5.92,
+    "target": 5.5,
+    "clutter": 0.268,
+    "region_rgb": [
+      163,
+      151,
+      137
+    ],
+    "binding_rgb": [
+      146,
+      128,
+      104
+    ],
+    "title_lines": [
+      "THE 44 DAY",
+      "FLOOD GAP"
+    ],
+    "subject": 0.05,
+    "ink_subject": 0.013,
+    "spike": 0.198,
+    "generated_at": "2026-10-28T13:51:22+00:00"
+  }
+}

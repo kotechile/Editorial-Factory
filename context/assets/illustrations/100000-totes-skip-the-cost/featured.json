@@ -1,0 +1,115 @@
+{
+  "slug": "100000-totes-skip-the-cost",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An automated warehouse storage aisle illuminated by amber shuttle lights at twilight.",
+      "caption": "Operators are increasingly relying on vendor-supplied metrics to justify warehouse automation investments.",
+      "title": "Warehouse Automation Aisle at Twilight",
+      "bytes": 366578,
+      "sha256": "sha256:9e19ef627818d75c2a7fa3e8cdf6250f"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An architectural photograph of a towering automated warehouse aisle with robotic shuttle storage at blue hour. 35mm anamorphic wide, extreme asymmetry with heavy editorial framing, the massive steel storage grid commands the right side. Deep blue ambient light fills the dark warehouse aisle, contrasting with warm amber status lights on the moving robotic shuttles. Clean geometry, deep industrial contrast, galvanized steel and graphite materials. No moving figures, long-exposure calm, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements, people",
+  "rationale": "The article is about the systemic shift in how warehouse automation capacity is sold and measured, often operating around the clock under robotics-as-a-service models. Architectural night captures this automated capacity running without human labor, emphasizing the scale of the investment and the twilight opacity of the vendor's financial models.",
+  "cue": "100,000 Totes",
+  "subject": "an automated warehouse storage aisle with robotic shuttles at twilight",
+  "core_thesis": "The inputs to a warehouse automation business case now come from the vendor selling the system, so operators can only defend the loaded cost per unit of work and peak volume share.",
+  "core_conflict": "Vendor-supplied payback models vs operator-measured cost per unit of work.",
+  "composition": "extreme asymmetry with heavy editorial framing",
+  "alt_text": "Vendors Own The ROI Math. An automated warehouse storage aisle illuminated by amber shuttle lights at twilight.",
+  "caption": "Vendors Own The ROI Math: Automation sellers now dictate your payback calculations.",
+  "title": "Vendors Own The ROI Math",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "architectural_night",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/100000-totes-skip-the-cost/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 378493,
+  "sha256": "sha256:05123bf3a4b45ba76f0a551f9174f9fdb74e68b590a770c98dc95a0a00966ff9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 378493,
+    "quality": 84,
+    "sha256": "sha256:05123bf3a4b45ba76f0a551f9174f9fdb74e68b590a770c98dc95a0a00966ff9",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6509158853d51510b3b6291f0b8f0b7fe0e2d7ca2a362a05ad280dcdcaad1089",
+  "render_phash": "0bb2056f26de06dd057f25dd259f053f04ba03df05b9266c273f47bf87cf45e7",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark, multi-level automated warehouse storage aisle with robotic shuttles moving along tracks.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows an automated warehouse setting, which aligns with the article's focus on warehouse automation and robotic systems."
+  },
+  "source_hash": "sha256:db69a41da4cda3a75bb39fc026570f3f",
+  "source_chars": 6973,
+  "task_id": "e879c605e09881363837de902b72d42b",
+  "credits": 5.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e879c605e09881363837de902b72d42b_1793195182763.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "An architectural photograph of a towering automated warehouse aisle with robotic shuttle storage at blue hour. 35mm anamorphic wide, extreme asymmetry with heavy editorial framing, the massive steel storage grid commands the right side. Deep blue ambient light fills the dark warehouse aisle, contrasting with warm amber status lights on the moving robotic shuttles. Clean geometry, deep industrial contrast, galvanized steel and graphite materials. No moving figures, long-exposure calm, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-28T13:46:47+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE ROBOTICS // VENDOR ROI",
+    "title": "VENDORS OWN THE ROI MATH",
+    "hook": "Automation sellers now dictate your payback calculations",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 15.24,
+    "target": 4.5,
+    "clutter": 0.04,
+    "region_rgb": [
+      11,
+      19,
+      25
+    ],
+    "binding_rgb": [
+      20,
+      25,
+      31
+    ],
+    "title_lines": [
+      "VENDORS OWN",
+      "THE ROI MATH"
+    ],
+    "subject": 0.018,
+    "ink_subject": 0.009,
+    "spike": 0.054,
+    "generated_at": "2026-10-28T13:46:47+00:00"
+  }
+}
