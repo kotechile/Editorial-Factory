@@ -634,6 +634,18 @@ After every rewrite, read each rate's *direction and size* against the brief —
 
 **The observer cue is matched literally, so "My reading, held loosely" is not one (learned 2026-10-27).** `site/social_voice.mjs` accepts `my read|my take|my sense|my view` or a first-person verb, and the `<!-- nuanced-takeaway -->` section of that run opened "My reading, held loosely:", which the gate read as *no cue* and failed `verify.sh` §9 on both the draft and the final. Write "My read, held loosely:" — one word — and fix it in the **draft** as well, because the checker walks `context/drafts/` and the draft alone can red the repo.
 
+**`humanize_path.py` leaves a self-graded `## Gate report` that `review_audit.py` hard-fails (learned 2026-10-28).**
+Every Loop 3 prompt (`humanize_path.py`, `humanize_one.py`, `humanize_loop3.py`) asks the model to append a
+`## Gate report` with per-section PASS lines. `publish.py` strips it from the reader body, but `review_audit.py`
+treats it as "the model grading itself" and returns **FAIL** on the draft-vs-final pair, so a run that audits
+before stripping it sees a hold that has nothing to do with the prose. Strip
+`re.sub(r"\n##\s*Gate report[\s\S]*$", "", text)` from the `_final.md` first, then run the audit, shape,
+accessibility, voice and source gates — and expect the audit's only remaining note to be the rhythm advisory.
+Same run, two smaller traps: `headline_score.py` takes the *title* as a positional argument (or `--slug`), so
+passing an artifact path scores the filename and reports a 73-char headline that does not exist; and the
+accessibility acronym gate reads unit tokens too (`KB`, `MB`, `TB/s`, `GB/s`), so the **draft** has to spell each
+one out at first use — the rewrite will re-expand some (`PCIe`) and leave others bare if the draft did.
+
 **`datadoghq.com/pricing` fetches with every figure as text, but its markup puts numeric junk ahead of its own FAQ prose (learned 2026-10-27).** An SVG `width="16" height="15"` and a `0%…100%` progress string sit earlier in the document than the sentences a row would quote, so a cell leading on `100 custom metrics per host` evidences on navigation while `$ 0.10 Per ingested or scanned GB` lands cleanly. Lead any Datadog row on the ingest or forwarding rate and carry the custom-metrics allotment, its "counted hourly and averaged monthly across your entire account" clause and the $15/$18 per-host prices in prose under that citation, recording in the verified brief that they were read by eye.
 
 ## 5. Handoff
