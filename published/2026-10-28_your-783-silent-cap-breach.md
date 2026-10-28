@@ -11,6 +11,12 @@ meta_title: "Your 78.3% Silent Cap Breach"
 meta_title_source: "derived_from_title"
 meta_description: "Agent fabrics break their shared spend caps from inside the rules, because each agent only checks the limit it was handed: the study logged cap breaches in…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-783-silent-cap-breach/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "A central brushed steel routing bay in a dark data hall, with glowing yellow cables bypassing the terminal."
+image_caption: "Silent Spend Cap Breaches: how agent fabrics break shared spending limits inside the rules."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -78,18 +84,6 @@ There is a real risk of reading the bank rule as a design spec. The 15 percent l
 
 My read: the cheap half is scope on the handoff, because its repair test fell to zero. The dear half is the ledger that can say no, which forces the question a sibling piece takes up — how long a granted right stays usable after the step that justified it ([Your Agent Fabric's 52.2% Blind Spot](/stale-grants-travel-the-graph/)).
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Agent's Contract Gap" -> /your-agent-contract-gap-63-unmet/ [same site (aichieve.net); same category; topical overlap: agent, inside, rules] Link "Your Agent's Contract Gap" in the section where the article touches agent, inside, rules. -->
-<!-- internal-link hint: "Planner-as-Router: Fold the Model Choice Into the Plan" -> /planner-as-router-fold-the-model-choice-into-the-plan/ [same site (aichieve.net); same category; topical overlap: agent, shared] Link "Planner-as-Router: Fold the Model Choice Into the Plan" in the section where the article touches agent, shared. -->
-<!-- internal-link hint: "Silent Errors Halve Agent Success" -> /isolation-isnt-detection/ [same site (aichieve.net); same category; topical overlap: agent, silent] Link "Silent Errors Halve Agent Success" in the section where the article touches agent, silent. -->
-## Related reading
-
-- [Your Agent's Contract Gap](/your-agent-contract-gap-63-unmet/) — more on Autonomous & Agentic Workflows
-- [Planner-as-Router: Fold the Model Choice Into the Plan](/planner-as-router-fold-the-model-choice-into-the-plan/) — more on Autonomous & Agentic Workflows
-- [Silent Errors Halve Agent Success](/isolation-isnt-detection/) — more on Autonomous & Agentic Workflows
-<!-- internal-links:end -->
 
 <!-- tldr -->
 
@@ -102,6 +96,19 @@ My read: the cheap half is scope on the handoff, because its repair test fell to
   - **Scope on the handoff:** The caller's verified rights travelling with the request, so the answering agent tests them instead of assuming.
   - **Audit by citation:** Findings that name the step they came from, which is what makes a repair checkable later.
 - **The Catch:** The evidence comes from small test worlds with tiny repair samples, and a cap that turns work down trades a quiet overrun for a loud refusal.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Your Agent's Contract Gap" -> /your-agent-contract-gap-63-unmet/ [same site (aichieve.net); same category; topical overlap: agent, inside, rules] Link "Your Agent's Contract Gap" in the section where the article touches agent, inside, rules. -->
+<!-- internal-link hint: "Planner-as-Router: Fold the Model Choice Into the Plan" -> /planner-as-router-fold-the-model-choice-into-the-plan/ [same site (aichieve.net); same category; topical overlap: agent, shared] Link "Planner-as-Router: Fold the Model Choice Into the Plan" in the section where the article touches agent, shared. -->
+<!-- internal-link hint: "Silent Errors Halve Agent Success" -> /isolation-isnt-detection/ [same site (aichieve.net); same category; topical overlap: agent, silent] Link "Silent Errors Halve Agent Success" in the section where the article touches agent, silent. -->
+## Related reading
+
+- [Your Agent's Contract Gap](/your-agent-contract-gap-63-unmet/) — more on Autonomous & Agentic Workflows
+- [Planner-as-Router: Fold the Model Choice Into the Plan](/planner-as-router-fold-the-model-choice-into-the-plan/) — more on Autonomous & Agentic Workflows
+- [Silent Errors Halve Agent Success](/isolation-isnt-detection/) — more on Autonomous & Agentic Workflows
+<!-- internal-links:end -->
 
 ## Sources
 

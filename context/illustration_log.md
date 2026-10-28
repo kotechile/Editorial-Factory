@@ -348,3 +348,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-28 | `100000-totes-skip-the-cost` | warehouse_automation_robotics_capex | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/100000-totes-skip-the-cost/featured.jpg` |
 | 2026-10-28 | `your-flood-gap-has-44-days` | property_loss_insurance_mitigation | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-flood-gap-has-44-days/featured.jpg` |
 | 2026-10-28 | `your-11-agents-3-die-none-wrong` | agentic_resilience_failure | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-11-agents-3-die-none-wrong/featured.jpg` |
+| 2026-10-28 | `your-783-silent-cap-breach` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-783-silent-cap-breach/featured.jpg` |

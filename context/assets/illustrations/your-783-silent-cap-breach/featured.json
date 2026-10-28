@@ -1,0 +1,114 @@
+{
+  "slug": "your-783-silent-cap-breach",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A central brushed steel routing bay in a dark data hall, with multiple glowing yellow fiber-optic cables bypassing the main terminal.",
+      "caption": "Without a central ledger, independent agents in a fabric can silently breach aggregate limits.",
+      "title": "Multi-Agent Cap Breach",
+      "bytes": 352126,
+      "sha256": "sha256:297f1b4d8e9bc90257f3cf8416348274"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, extreme asymmetric wide composition of a massive brushed steel central routing bay in a vast data hall. Multiple independent glass fiber-optic cable streams glow intensely, bypassing the main terminal core. Anamorphic 35mm lens with shallow depth of field, crisp atmospheric depth. A single directional key light from the left casts deep shadows and highlights the slate grey, graphite, and safety yellow palette. Fine film grain, authentic industrial textures, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, UI, people, cartoon, illustration",
+  "rationale": "The cinematic still captures the systemic scale and tension of an enterprise AI fabric, using the physical environment of a data hall and the glow of bypassed routing pathways to represent the silent cap breach without resorting to literal software interfaces.",
+  "cue": "Your 78.3% Silent Cap Breach",
+  "subject": "a central brushed steel routing bay overflowing with independent cable streams",
+  "core_thesis": "An enterprise agent fabric breaks its own caps from inside the rules because each agent stays under its own approval limit while the sum goes over.",
+  "core_conflict": "Local agent permissions versus global aggregate spend limits.",
+  "composition": "extreme asymmetric wide composition",
+  "alt_text": "A central brushed steel routing bay in a dark data hall, with glowing yellow cables bypassing the terminal.",
+  "caption": "Silent Spend Cap Breaches: how agent fabrics break shared spending limits inside the rules.",
+  "title": "Silent Spend Cap Breaches",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "cinematic_still"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-783-silent-cap-breach/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401348,
+  "sha256": "sha256:73c26c22261e6f1b3d26fc3cf958b79ac97e322fcf1a622a7ac2898356e32049",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401348,
+    "quality": 88,
+    "sha256": "sha256:73c26c22261e6f1b3d26fc3cf958b79ac97e322fcf1a622a7ac2898356e32049",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ff84ef8e360c556f1976d801609766e64e3435b6f02f35e9af98b78ebfe2e215",
+  "render_phash": "0b37823ce12c7b3e3f3f1bbd0aff02ff03bf06ff05fd82bf00ff807d82798b1d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A server rack in a data center with numerous cables plugged into network switches.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a routing bay with cables, which serves as a reasonable metaphor for an enterprise agent fabric and data routing discussed in the article."
+  },
+  "source_hash": "sha256:e87c1c7c6e61bd8f11b5e58ffc3edccc",
+  "source_chars": 5282,
+  "task_id": "e13f8d14fe36d1f86139a33899e04afb",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e13f8d14fe36d1f86139a33899e04afb_1793211384450.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, extreme asymmetric wide composition of a massive brushed steel central routing bay in a vast data hall. Multiple independent glass fiber-optic cable streams glow intensely, bypassing the main terminal core. Anamorphic 35mm lens with shallow depth of field, crisp atmospheric depth. A single directional key light from the left casts deep shadows and highlights the slate grey, graphite, and safety yellow palette. Fine film grain, authentic industrial textures, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-28T18:16:40+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // AGENT SPEND CAPS",
+    "title": "SILENT SPEND CAP BREACHES",
+    "hook": "How agent fabrics silently break shared spending limits",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.01,
+    "target": 4.5,
+    "clutter": 0.147,
+    "region_rgb": [
+      34,
+      37,
+      40
+    ],
+    "binding_rgb": [
+      46,
+      51,
+      55
+    ],
+    "title_lines": [
+      "SILENT SPEND",
+      "CAP BREACHES"
+    ],
+    "subject": 0.057,
+    "ink_subject": 0.02,
+    "spike": 0.207,
+    "generated_at": "2026-10-28T18:16:40+00:00"
+  }
+}
