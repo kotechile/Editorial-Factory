@@ -650,6 +650,29 @@ one out at first use — the rewrite will re-expand some (`PCIe`) and leave othe
 
 ## 5. Handoff
 
+**The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
+artefact loses the argument with the CMS.** `publish.py` stamps the block before `<!-- tldr -->` while building
+the article's own asset copy, then re-stamps it before `## Sources` for the CMS push — so the published body a
+reader sees carries Related reading just above `Sources`, while `published/<slug>.md` carries it above
+`At a glance`, and a re-run of `publish.py` sees the slug already published and does not repair it (learned
+2026-10-28). After the push, move the block in the artefact to just before `## Sources`, then re-run
+`article_shape.py`, `check_accessibility.py` and `publish_gate.py --file` on it — a block that sits inside the
+body also lowers the artefact's Flesch by roughly five points, so re-measure rather than assume the `_final.md`
+verdict still holds. Same run: `sitemap_sync.py` reads "public" from `context/internal_links.json`, which is
+built from each front's own sitemap, so a fresh article stays `"public": false` until
+`build_internal_link_index.py` is re-run *after* the front's sitemap has picked the page up — probe
+`https://<front>/sitemap-0.xml` for the slug first, then rebuild the index and re-sync the sitemap.
+
+**`article_reviewer.py` can spend all three attempts on the same catch-section cue (third run in a week), so
+plan the hand repair rather than a re-generation (2026-10-28).** Every candidate opened `<!-- nuanced-takeaway -->`
+with "My reading, held loosely", which `site/social_voice.mjs` cannot read (`\bmy read\b`), and the attempts
+also unwrapped the authored inline link to a bare parenthetical path and flattened the tactical bullets into
+prose. The working sequence on a held run: keep the attempt with the fewest hard failures, then in ONE pass fix
+the cue to an accepted form, re-wrap the link as `[text](/path)`, restore the bullet structure and the
+figure-free TL;DR sub-bullets, cut any hedge word the audit counted (`appears`, `likely`, `may`), and close
+with `review_audit.py` — a hand-edited final passes that audit, because it compares figures, citations, quotes
+and source lines rather than authorship.
+
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
 → `scripts/publish.py`. The article keeps the house schema (section markers, `## Sources`, the
 LinkedIn variant) and adds two frontmatter flags so the reader surfaces and the audit can tell it
