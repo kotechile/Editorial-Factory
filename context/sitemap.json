@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T18:41:48Z",
+  "updated_at": "2026-10-28T19:13:06Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4148,6 +4148,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-runtime-has-six-months/"
+    },
+    {
+      "slug": "2026-10-28_your-sso-bill-125-a-connection",
+      "title": "Your SSO Bill: $125 a Connection, $7.75 a Seat",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-10-28",
+      "public": false
     }
   ]
 }

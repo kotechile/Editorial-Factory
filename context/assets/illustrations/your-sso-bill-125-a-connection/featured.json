@@ -1,0 +1,114 @@
+{
+  "slug": "your-sso-bill-125-a-connection",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A central blue connector block surrounded by three different mechanical gating modules on a steel surface.",
+      "caption": "Single sign-on features are increasingly gated behind three incompatible pricing models.",
+      "title": "SSO Pricing Units Modular Assembly",
+      "bytes": 397784,
+      "sha256": "sha256:a5a9b89aa931acd1563f63989183ebe6"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "matte clay 3D render of a small mechanical assembly on a weathered brushed steel plant floor. A central interlocking cobalt connector block is surrounded by three incompatible modular gating units in graphite and safety yellow. The parts include a latched cover, a rack rail, and an inspection bay module, set in an asymmetrical arrangement of three distinct gating modules. Matte surfaces with molding seams and contact shadows, one directional key light raking across them throwing long cast shadows, muted matte palette. Strictly unlabelled, no text, no molded or embossed lettering.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, printed lettering, embossed text, typography, labels, documents, paper",
+  "rationale": "The article describes a structural, abstract market dynamic where a single technical feature is divided into three distinct units. A clay render of a central connector interacting with three incompatible gates translates this pricing structure into physical assembly.",
+  "cue": "One sign-on feature is sold in three units",
+  "subject": "a central connector block gated by three incompatible modular units",
+  "core_thesis": "One sign-on feature is sold in three incompatible units, meaning the unit printed on the quote dictates the final enterprise bill.",
+  "core_conflict": "Standardized feature utility versus fractured, incompatible vendor pricing models.",
+  "composition": "asymmetrical arrangement of three distinct gating modules",
+  "alt_text": "The Three Prices Of SSO. A central blue connector block surrounded by three different mechanical gating modules on a steel surface.",
+  "caption": "The Three Prices Of SSO: Why vendors sell one sign-on feature in three units.",
+  "title": "The Three Prices Of SSO",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-sso-bill-125-a-connection/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399863,
+  "sha256": "sha256:ab2d3118a2f85e74178c9d6c3256a95e7a43ad81ce8787a5df8f6c70e19464ed",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399863,
+    "quality": 84,
+    "sha256": "sha256:ab2d3118a2f85e74178c9d6c3256a95e7a43ad81ce8787a5df8f6c70e19464ed",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:262e43f2d1007147949e66d5f7c7a46473d1b047130c9f06e6556c1208951bb1",
+  "render_phash": "27884fb81d6e37ef26cf6ccf7c9d3d8bb909bf08de78de7ffcef78ff6cff7dff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A central blue block surrounded by four different modular units on a gray surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a central connector with incompatible modules, matching the metaphor of different SSO pricing units."
+  },
+  "source_hash": "sha256:fdc31419bc425629792751eeb855bf0f",
+  "source_chars": 5212,
+  "task_id": "2c37932e25268296c312db787100ec3b",
+  "credits": 18.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_364e975c171ff9c2220322390f393069.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "matte clay 3D render of a small mechanical assembly on a weathered brushed steel plant floor. A central interlocking cobalt connector block is surrounded by three incompatible modular gating units in graphite and safety yellow. The parts include a latched cover, a rack rail, and an inspection bay module, set in an asymmetrical arrangement of three distinct gating modules. Matte surfaces with molding seams and contact shadows, one directional key light raking across them throwing long cast shadows, muted matte palette. Strictly unlabelled, no text, no molded or embossed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-28T19:12:42+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE IDENTITY // SSO PRICING",
+    "title": "THE THREE PRICES OF SSO",
+    "hook": "Why vendors sell one sign-on feature in three units",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.71,
+    "target": 4.5,
+    "clutter": 0.141,
+    "region_rgb": [
+      96,
+      92,
+      84
+    ],
+    "binding_rgb": [
+      116,
+      112,
+      103
+    ],
+    "title_lines": [
+      "THE THREE",
+      "PRICES OF SSO"
+    ],
+    "subject": 0.036,
+    "ink_subject": 0.02,
+    "spike": 0.103,
+    "generated_at": "2026-10-28T19:12:42+00:00"
+  }
+}

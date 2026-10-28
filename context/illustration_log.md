@@ -350,3 +350,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-28 | `your-11-agents-3-die-none-wrong` | agentic_resilience_failure | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-11-agents-3-die-none-wrong/featured.jpg` |
 | 2026-10-28 | `your-783-silent-cap-breach` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-783-silent-cap-breach/featured.jpg` |
 | 2026-10-28 | `your-32-cards-spend-90-percent-talking` | gpu_hardware | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-32-cards-spend-90-percent-talking/featured.jpg` |
+| 2026-10-28 | `your-sso-bill-125-a-connection` | enterprise_build_vs_buy | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-sso-bill-125-a-connection/featured.jpg` |
