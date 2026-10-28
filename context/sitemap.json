@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T10:46:32Z",
+  "updated_at": "2026-10-28T11:02:34Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3985,8 +3985,8 @@
         "By the numbers",
         "What I'd watch:",
         "The catch",
-        "Related reading",
-        "At a glance"
+        "At a glance",
+        "Related reading"
       ],
       "target_persona": "infra_engineer",
       "date": "2026-10-28",

@@ -343,3 +343,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-27 | `2000-fine-tunes-one-card-55-throughput` | workstation_compute_economics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/2000-fine-tunes-one-card-55-throughput/featured.jpg` |
 | 2026-10-27 | `2000-fine-tunes-one-card-55-throughput` | workstation_compute_economics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/2000-fine-tunes-one-card-55-throughput/featured.jpg` |
 | 2026-10-27 | `your-eta-misses-27-hours` | control_tower_exception_orchestration | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-eta-misses-27-hours/featured.jpg` |
+| 2026-10-28 | `your-90-restart-monitor-proves-nothing` | agentic_resilience_failure | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-90-restart-monitor-proves-nothing/featured.jpg` |

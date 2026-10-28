@@ -1,0 +1,117 @@
+{
+  "slug": "your-90-restart-monitor-proves-nothing",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Isometric cutaway of a server routing module showing a severed and rerouted data pipeline.",
+      "caption": "The true cost of a restart is the next run's chance of finishing with the remaining resources.",
+      "title": "Agent Restart Routing Isometric Cutaway",
+      "bytes": 393277,
+      "sha256": "sha256:62d7c629772ba86120be0262e79fd86a"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works — money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection of a server routing bay in a data hall. Extreme asymmetry, the hero off-centre on the right with generous empty margin on the left. The modular assembly features recognizable aluminum rack modules, glass routing trays, and cobalt cable sheathing arranged in a tiered stack, showing a rigid data pipeline deliberately severed and rerouted into a secondary weathered orange checkpoint tray. Flat muted slate grey palette with weathered orange and cobalt accents, thin consistent line weight, laid over a concrete grey surface. One directional light throwing a long cast shadow.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, labels, UI, people",
+  "rationale": "The article breaks down the hidden mechanics and metrics of agent restarts. A technical isometric cutaway perfectly captures this systemic, architectural dissection of a software stack's routing and checkpointing logic.",
+  "cue": "Whether to restart a failing agent run is a purchase",
+  "subject": "A technical isometric cutaway of a server routing bay showing a diverted processing pipeline",
+  "core_thesis": "Restart monitors measure accuracy but fail to calculate the true transactional cost of aborting an agent run, which is the subsequent run's chance of finishing with the remaining resources.",
+  "core_conflict": "Monitor accuracy claims versus the true economic cost of reversing and restarting a software run.",
+  "composition": "extreme asymmetry, the hero off-centre on the right",
+  "alt_text": "Isometric cutaway of a server rack whose blue cables route into a wooden crate on a concrete floor.",
+  "caption": "The pipeline leaves the rack for a crate: the branch a restart discards.",
+  "title": "The Restart Accuracy Myth",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "technical_isometric",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-90-restart-monitor-proves-nothing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395813,
+  "sha256": "sha256:3452eeec3e8b72ccddaaad4c65584403bc57620425f2b01e6de6b28d6685903f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395813,
+    "quality": 80,
+    "sha256": "sha256:3452eeec3e8b72ccddaaad4c65584403bc57620425f2b01e6de6b28d6685903f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:be4e7714497f3aa49512008966168f31533af5ea9c5759549249172366c44e18",
+  "render_phash": "04990418047d045b46bea86d046e0b3417300ef02d312e6227400bf80c700c23",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric view of a server rack on the right side with blue cables routing into an orange crate, casting a shadow on a plain gray background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a server routing bay with a diverted pipeline, which serves as a metaphor for restarting or redirecting a failing agent run as discussed in the article."
+  },
+  "source_hash": "sha256:20a36f0bc2f4cc140a4c40d685474f96",
+  "source_chars": 4954,
+  "task_id": "5c46beb8ace121453da57214d80152e3",
+  "credits": 18.0,
+  "cost_ms": 32,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0dbf64db24b461e1809277e232e61e9b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration, technical drawing style, axonometric projection of a server routing bay in a data hall. Extreme asymmetry, the hero off-centre on the right with generous empty margin on the left. The modular assembly features recognizable aluminum rack modules, glass routing trays, and cobalt cable sheathing arranged in a tiered stack, showing a rigid data pipeline deliberately severed and rerouted into a secondary weathered orange checkpoint tray. Flat muted slate grey palette with weathered orange and cobalt accents, thin consistent line weight, laid over a concrete grey surface. One directional light throwing a long cast shadow.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-28T10:56:06+00:00",
+  "overlay": {
+    "kicker": "AI AGENT RECOVERY // RESTART METRICS",
+    "title": "THE RESTART ACCURACY MYTH",
+    "hook": "Why accuracy scores mask the real cost of agent restarts",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 30,
+    "contrast": 4.77,
+    "target": 4.5,
+    "clutter": 0.008,
+    "region_rgb": [
+      136,
+      147,
+      149
+    ],
+    "binding_rgb": [
+      134,
+      145,
+      147
+    ],
+    "title_lines": [
+      "THE RESTART",
+      "ACCURACY MYTH"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-28T10:56:06+00:00"
+  }
+}

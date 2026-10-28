@@ -9,6 +9,12 @@ meta_title: "Your 90% Restart Monitor Proves Nothing"
 meta_title_source: "derived_from_title"
 meta_description: "Every restart monitor ships with one number on the box, and for your stack it is the wrong number. A monitor that sorts failing runs at 90% accuracy sounds…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-90-restart-monitor-proves-nothing/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric cutaway of a server rack whose blue cables route into a wooden crate on a concrete floor."
+image_caption: "The pipeline leaves the rack for a crate: the branch a restart discards."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -50,6 +56,18 @@ The monitor study covers 19 issues from one repository, one harness and five tri
 
 A 42.29-point loss on a second model is a warning about moving a cutoff, not a forecast for your traffic [1]. I could be wrong, but the zero of 103 reads to me as evidence that never settled the sign [1]. It is not a finding that restarting never helps, which the authors decline to claim [1].
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** The restart decision now has arithmetic, and it does not run on accuracy. A 90% monitor can lose five points or gain thirty-five, on what the next run can still win.
+- **Why It Matters:** Recovery is sold as a feature, with abort and commit on every call, while the only measured study prices the second checkpoint at worse than useless. Teams buy the tool and inherit a choice they cannot value.
+- **What I'd Watch:**
+  - **Decision numbers on the feature:** whether a vendor can show, from a customer's own traces, what a restart earned against carrying on, rather than how well its monitor sorted failures.
+  - **Tests with room to recover:** a set full of failures proves nothing if no run could have finished after a restart, which is what happened to one group here.
+  - **Self-recovery rates:** just over half the errors in the intervention study cleared on their own, so a restart rule fires mostly on errors that were about to fix themselves.
+- **The Catch:** Nineteen chosen issues and twelve pilot tasks are direction, not fit to your traffic. The audit leaves the sign of a restart's value unproven at these sizes.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -62,18 +80,6 @@ A 42.29-point loss on a second model is a warning about moving a cutoff, not a f
 - [Agent Timeouts: Pick 0.1%, Not a Round Number](/agent-timeout-false-alarm-budget/) — more on Autonomous & Agentic Workflows
 - [Your Agent's Next Step](/gate-the-step-not-the-model/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** The restart decision now has arithmetic, and it does not run on accuracy. A 90% monitor can lose five points or gain thirty-five, on what the next run can still win.
-- **Why It Matters:** Recovery is sold as a feature, with abort and commit on every call, while the only measured study prices the second checkpoint at worse than useless. Teams buy the tool and inherit a choice they cannot value.
-- **What I'd Watch:**
-  - **Decision numbers on the feature:** whether a vendor can show, from a customer's own traces, what a restart earned against carrying on, rather than how well its monitor sorted failures.
-  - **Tests with room to recover:** a set full of failures proves nothing if no run could have finished after a restart, which is what happened to one group here.
-  - **Self-recovery rates:** just over half the errors in the intervention study cleared on their own, so a restart rule fires mostly on errors that were about to fix themselves.
-- **The Catch:** Nineteen chosen issues and twelve pilot tasks are direction, not fit to your traffic. The audit leaves the sign of a restart's value unproven at these sizes.
 
 ## Sources
 
