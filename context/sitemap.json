@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T20:14:16Z",
+  "updated_at": "2026-10-28T10:46:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -3973,6 +3973,24 @@
       "date": "2026-10-27",
       "public": true,
       "url": "https://aichieve.net/your-miss-costs-9x-the-chargeback/"
+    },
+    {
+      "slug": "2026-10-28_your-90-restart-monitor-proves-nothing",
+      "title": "Your 90% Restart Monitor Proves Nothing",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-10-28",
+      "public": false
     }
   ]
 }
