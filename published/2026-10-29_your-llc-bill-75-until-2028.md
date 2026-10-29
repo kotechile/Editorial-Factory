@@ -13,6 +13,12 @@ meta_title: "Your LLC Bill: 75% Until 2028"
 meta_title_source: "derived_from_title"
 meta_description: "A UK resident who owns a US limited liability company (LLC) can be taxed twice on the same profits, and the government's own papers put the effective rate as…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-llc-bill-75-until-2028/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "75 Percent LLC Tax Until 2028. A towering skyline of stacked tax ledgers and filing boxes on a desk, compressed by a telephoto lens."
+image_caption: "75 Percent LLC Tax Until 2028: UK relief for double-taxed US LLC owners delayed to 2028."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

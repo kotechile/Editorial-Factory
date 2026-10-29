@@ -1,0 +1,133 @@
+{
+  "slug": "your-llc-bill-75-until-2028",
+  "revision": 4,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A mechanical balance scale made of matte clay is heavily tipped to one side by two stacked financial ledgers on a wooden desk.",
+      "caption": "The structural mismatch between UK and US tax systems creates a heavily stacked effective rate for LLC members.",
+      "title": "UK US LLC Double Tax Balance",
+      "bytes": 349839,
+      "sha256": "sha256:35aef41364557b1de153877ed6341d32"
+    },
+    {
+      "revision": 2,
+      "style": "clay_render",
+      "model": "nano-banana-pro",
+      "prompt": "A matte clay 3D render of a heavy mechanical brass balance scale resting on a warm oak study desk, heavily tipped to the right in an extreme asymmetrical layout. The right pan holds two thick, disproportionately large financial ledger books stacked tightly together, while the left pan is completely empty. Three recognisable engineered parts: the precision central pivot housing, the cantilevered beam, and the weighing pans. Matte surfaces with visible moulding seams and deep contact shadows, lit by one directional key light raking across them from the left. Bone white, slate grey, and ochre palette. No text, no moulded or embossed lettering.",
+      "task_id": "e9c70a20f0d0bdb0fdfa1e7231b5a95a",
+      "sha256": "sha256:5536cfbd34cdcb50f591b99f7f72d04ec0ff2e178cdbb7f5db79d44ec87fbea9",
+      "generated_at": "2026-10-29T12:53:45+00:00",
+      "source_hash": "sha256:8c02b1f56740bf31714798ca3b962e40",
+      "render_sha256": "sha256:513bb11c90881db231322378f85616a3abb7ba3f7da1cc1ba8b072f1706cd1ca"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A towering skyline of stacked tax ledgers and filing boxes on a desk, compressed by a telephoto lens.",
+      "caption": "The UK's refusal to treat US LLCs as see-through entities stacks tax liabilities to an effective rate of 75%.",
+      "title": "Stacked US-UK LLC Tax Liabilities",
+      "bytes": 370209,
+      "sha256": "sha256:55505d344f4aaca0a9ae8e290d6999b8"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Telephoto compression, 200mm long-lens view of a massive skyline of stacked leather-bound tax ledgers and heavy cardboard filing boxes sitting on a vast home office desk. Extreme asymmetry with heavy off-centre framing, the imposing stacks rising like industrial monoliths against a deep slate grey background. Flat compressed perspective, sharp directional light from the left throwing deep industrial contrast and heavy cast shadows across textured paper stock and worn leather. Bone white, charcoal, and rust palette. Crystal-clear telephoto distance clarity, fine film grain, no text.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermark, signature",
+  "rationale": "The story is about a massive, stacked burden\u2014double taxation piling up to an oppressive 75% rate. 'long_lens_industry' captures the scale and weight of this systemic issue by presenting an imposing, compressed vista of stacked bureaucratic structures.",
+  "cue": "taxed twice on the same profits",
+  "subject": "a massive skyline of stacked tax ledgers and filing boxes",
+  "core_thesis": "UK residents with US LLCs face a double-taxation trap with effective rates up to 75% until a delayed credit system begins in 2028.",
+  "core_conflict": "Opaque UK tax treatment vs see-through US tax treatment of LLC profits.",
+  "composition": "extreme asymmetry with heavy off-centre framing",
+  "alt_text": "75 Percent LLC Tax Until 2028. A towering skyline of stacked tax ledgers and filing boxes on a desk, compressed by a telephoto lens.",
+  "caption": "75 Percent LLC Tax Until 2028: UK relief for double-taxed US LLC owners delayed to 2028.",
+  "title": "75 Percent LLC Tax Until 2028",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "long_lens_industry"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-llc-bill-75-until-2028/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408346,
+  "sha256": "sha256:511a7263ab5441ee54548e463d0c977bf1e94cb21ea9884ca1db85a4098caf85",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408346,
+    "quality": 84,
+    "sha256": "sha256:511a7263ab5441ee54548e463d0c977bf1e94cb21ea9884ca1db85a4098caf85",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:79718cdc05f3c80c83c511c37eade0cd598963f585ef71d89c9b97aacf02a299",
+  "render_phash": "7fff7dffec333eb93698249c3c9c25dc2dbe393fc967cc678c7ecc7ecf77f090",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A large pile of old books and ledgers stacked on a wooden desk against a dark wall.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows ledgers and books which loosely relates to taxes and accounting."
+  },
+  "source_hash": "sha256:8c02b1f56740bf31714798ca3b962e40",
+  "source_chars": 6330,
+  "task_id": "bc146956d060a4fb3ce8c86ea17a4ec9",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/bc146956d060a4fb3ce8c86ea17a4ec9_1793278526860.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Telephoto compression, 200mm long-lens view of a massive skyline of stacked leather-bound tax ledgers and heavy cardboard filing boxes sitting on a vast home office desk. Extreme asymmetry with heavy off-centre framing, the imposing stacks rising like industrial monoliths against a deep slate grey background. Flat compressed perspective, sharp directional light from the left throwing deep industrial contrast and heavy cast shadows across textured paper stock and worn leather. Bone white, charcoal, and rust palette. Crystal-clear telephoto distance clarity, fine film grain, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-29T12:55:35+00:00",
+  "overlay": {
+    "kicker": "US LLCS // UK DOUBLE TAXATION",
+    "title": "75 PERCENT LLC TAX UNTIL 2028",
+    "hook": "UK relief for double-taxed US LLC owners delayed to 2028",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.7,
+    "target": 4.5,
+    "clutter": 0.162,
+    "region_rgb": [
+      49,
+      49,
+      50
+    ],
+    "binding_rgb": [
+      63,
+      66,
+      71
+    ],
+    "title_lines": [
+      "75 PERCENT LLC",
+      "TAX UNTIL 2028"
+    ],
+    "subject": 0.113,
+    "ink_subject": 0.064,
+    "spike": 0.307,
+    "generated_at": "2026-10-29T12:55:35+00:00"
+  }
+}
