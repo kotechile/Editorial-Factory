@@ -359,3 +359,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-29 | `second-backyard-home-1000-deposit` | home_ops_execution | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/second-backyard-home-1000-deposit/featured.jpg` |
 | 2026-10-29 | `your-llc-bill-75-until-2028` | expat_cross_border_relocation | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-llc-bill-75-until-2028/featured.jpg` |
 | 2026-10-29 | `your-llc-bill-75-until-2028` | expat_cross_border_relocation | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-llc-bill-75-until-2028/featured.jpg` |
+| 2026-10-29 | `promo-spike-is-a-loan` | demand_sensing_advanced_sop | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/promo-spike-is-a-loan/featured.jpg` |

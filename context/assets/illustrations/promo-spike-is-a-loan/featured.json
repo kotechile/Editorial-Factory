@@ -1,0 +1,112 @@
+{
+  "slug": "promo-spike-is-a-loan",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An imbalanced stack of blank shipping boxes leaning heavily to one side on a steel warehouse floor.",
+      "caption": "When supply chain models confuse promotional pull-forward with true demand, the resulting inventory imbalance carries a heavy margin cost.",
+      "title": "Borrowed Demand Inventory Imbalance",
+      "bytes": 346259,
+      "sha256": "sha256:db10329b414b945daddac8f1bd33e435"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An imbalanced, towering stack of blank cardboard shipping boxes leaning precariously to the left, standing on a brushed steel warehouse loading bay floor. 100mm studio product photograph, extreme asymmetry with heavy editorial negative space on the right. Softbox key light from the left casting a long, dark contact shadow across the textured steel surface. Slate grey, bone white, and weathered orange palette. Shallow depth of field, fine film grain, catalogue clarity, no people, no text.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, people, faces",
+  "rationale": "The story revolves around the misinterpretation of physical inventory demand (retail goods/boxes) and the economic cost of that misinterpretation. A studio object approach allows for a highly controlled, dramatic representation of an imbalanced inventory stack, symbolizing the 'borrowed' demand and the precarious nature of the forecast.",
+  "cue": "A promo lends units from nearby weeks",
+  "subject": "An imbalanced, towering stack of blank cardboard shipping boxes leaning precariously",
+  "core_thesis": "Promotional demand spikes borrow sales from adjacent periods while standing price cuts erode margin, yet standard forecasting models dangerously treat both as true underlying demand, leading to costly inventory and factory overreactions.",
+  "core_conflict": "Phantom demand signals vs. true baseline consumption, and the margin cost of misinterpreting promotional pull-forward as organic growth.",
+  "composition": "extreme asymmetry with heavy editorial negative space",
+  "alt_text": "The Cost Of Borrowed Demand. An imbalanced stack of blank shipping boxes leaning heavily to one side on a steel warehouse floor.",
+  "caption": "The Cost Of Borrowed Demand: False demand signals derail fourth-quarter margin plans.",
+  "title": "The Cost Of Borrowed Demand",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/promo-spike-is-a-loan/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 381510,
+  "sha256": "sha256:4fb887ed6022490120aadb8b43fc7e2763869c41519135d9cffa1525b7f3f5ae",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 381510,
+    "quality": 84,
+    "sha256": "sha256:4fb887ed6022490120aadb8b43fc7e2763869c41519135d9cffa1525b7f3f5ae",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:79d8489226ca4c48dce0960ef193370be2b259d4e4feb03f93681ab96c29e59a",
+  "render_phash": "03ff33ff33ff39ff19ff19ff39bf29ff39ff19ff197f19e319c7191f187f30ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A stack of five cardboard shipping boxes leaning to the left on a grey surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows shipping boxes, which relates to the article's focus on retail sales and inventory."
+  },
+  "source_hash": "sha256:82b5f2f2a927386ccc9b43d8728f49ea",
+  "source_chars": 5892,
+  "task_id": "916d44888be8ed80388448a4a1d765fe",
+  "credits": 5.0,
+  "cost_ms": 31,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/916d44888be8ed80388448a4a1d765fe_1793279633636.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "An imbalanced, towering stack of blank cardboard shipping boxes leaning precariously to the left, standing on a brushed steel warehouse loading bay floor. 100mm studio product photograph, extreme asymmetry with heavy editorial negative space on the right. Softbox key light from the left casting a long, dark contact shadow across the textured steel surface. Slate grey, bone white, and weathered orange palette. Shallow depth of field, fine film grain, catalogue clarity, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-29T13:14:06+00:00",
+  "overlay": {
+    "kicker": "DEMAND PLANNING // PROMO SPIKES",
+    "title": "THE COST OF BORROWED DEMAND",
+    "hook": "False demand signals derail fourth-quarter margin plans",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 75,
+    "contrast": 4.99,
+    "target": 4.5,
+    "clutter": 0.249,
+    "region_rgb": [
+      104,
+      108,
+      112
+    ],
+    "binding_rgb": [
+      140,
+      144,
+      147
+    ],
+    "title_lines": [
+      "THE COST OF",
+      "BORROWED DEMAND"
+    ],
+    "subject": 0.038,
+    "ink_subject": 0.016,
+    "spike": 0.127,
+    "generated_at": "2026-10-29T13:14:06+00:00"
+  }
+}
