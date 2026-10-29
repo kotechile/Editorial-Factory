@@ -62,6 +62,18 @@ The practical shape is less stark than the worst-case fear. Most freight moves w
 
 The filing clock still rules the claim itself. A shipper with the right counterparty and the wrong paperwork loses on rules rather than on cover [see the freight claim filing window](/freight-claim-dies-at-9-months/).
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** The federal numbers shippers quote at each other measure public harm, broker honesty and household cargo. None of them measures cover for general freight.
+- **Why It Matters:** A shipper who reads a carrier's record as proof the load is safe relies on a paper written for the highway public. The loss then lands on a contract clause and an insurance schedule instead.
+- **What I'd Watch:** Whether cargo limits start appearing on the insurance paper rather than being assumed from the public record, and how the broker bond section reads after its next update.
+  - **Public liability:** The schedule that pays people and property harmed by a truck on the road, priced by hazard class.
+  - **Broker security:** The bond that pays carriers and shippers when a middleman keeps freight money it collected.
+  - **Cargo liability:** The separate cover that pays for the goods themselves, forced by federal rule only for household moves.
+- **The Catch:** Nothing here prices a cargo policy or measures how often carriers carry one. The household amounts are a regulated floor, not a market benchmark, so readers finish the arithmetic with their own contracts.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -74,18 +86,6 @@ The filing clock still rules the claim itself. A shipper with the right counterp
 - [Your $15 Air Rule, $195 Break-Even](/your-15-air-rule-195-break-even/) — more on Supply Chain & Operations
 - [Your Claim Dies at 9 Months](/freight-claim-dies-at-9-months/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** The federal numbers shippers quote at each other measure public harm, broker honesty and household cargo. None of them measures cover for general freight.
-- **Why It Matters:** A shipper who reads a carrier's record as proof the load is safe relies on a paper written for the highway public. The loss then lands on a contract clause and an insurance schedule instead.
-- **What I'd Watch:** Whether cargo limits start appearing on the insurance paper rather than being assumed from the public record, and how the broker bond section reads after its next update.
-  - **Public liability:** The schedule that pays people and property harmed by a truck on the road, priced by hazard class.
-  - **Broker security:** The bond that pays carriers and shippers when a middleman keeps freight money it collected.
-  - **Cargo liability:** The separate cover that pays for the goods themselves, forced by federal rule only for household moves.
-- **The Catch:** Nothing here prices a cargo policy or measures how often carriers carry one. The household amounts are a regulated floor, not a market benchmark, so readers finish the arithmetic with their own contracts.
 
 ## Sources
 [1] eCFR — 49 CFR 387.9, "Financial responsibility, minimum levels", Table 1 "Schedule of Limits—Public Liability" (title 49, current as of 10/27/2026) — https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-A/section-387.9
