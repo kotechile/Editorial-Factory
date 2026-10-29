@@ -60,6 +60,18 @@ The borders themselves are academic hand-me-downs. Researchers tuned them to spl
 
 The final warning is strictly about the sources. Two of the five pages sell forecasting tools, so their numbers show exactly what their writers want a planner to try [4][5]. What a team actually controls is the record behind the reorder point, which has to be right before any rule runs on it. The desk's own [inventory record accuracy calculator](/tools/inventory-record-accuracy/) is the primary check for that.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Demand planners are moving from trying to forecast every SKU better to deciding which SKUs can be forecast at all. The main tool is two ratios: how often an item sells, and how much each sale size shifts.
+- **Why It Matters:** Every accuracy goal, planner override and sensing licence tied to an unscorable item is spent on a number that will never move. The stock rule that would have covered that item goes unpriced.
+- **What I'd Watch:** how quickly the segment pass reaches the budget talk, and what it changes when it does.
+  - **Cell counts:** the share of a catalog landing in each of the four demand patterns, because it sets the limit on accuracy work.
+  - **Metric swap:** moving sparse items off percent error and onto absolute error or fill rate.
+  - **Service pricing:** costing the service goal per item on the sparse tail instead of applying one broad number to everything.
+- **The Catch:** the printed borders were tuned for a narrow model test and assume sales habits stay put, so the first pass is a starting map rather than a final ruling.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -72,18 +84,6 @@ The final warning is strictly about the sources. Two of the five pages sell fore
 - [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
 - [Dock Overtime: Your Real 14-Hour Cost](/hour-14-recovery-wall/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Demand planners are moving from trying to forecast every SKU better to deciding which SKUs can be forecast at all. The main tool is two ratios: how often an item sells, and how much each sale size shifts.
-- **Why It Matters:** Every accuracy goal, planner override and sensing licence tied to an unscorable item is spent on a number that will never move. The stock rule that would have covered that item goes unpriced.
-- **What I'd Watch:** how quickly the segment pass reaches the budget talk, and what it changes when it does.
-  - **Cell counts:** the share of a catalog landing in each of the four demand patterns, because it sets the limit on accuracy work.
-  - **Metric swap:** moving sparse items off percent error and onto absolute error or fill rate.
-  - **Service pricing:** costing the service goal per item on the sparse tail instead of applying one broad number to everything.
-- **The Catch:** the printed borders were tuned for a narrow model test and assume sales habits stay put, so the first pass is a starting map rather than a final ruling.
 
 ## Sources
 [1] Wang, Kang & Petropoulos — "Combining Probabilistic Forecasts of Intermittent Demand", arXiv:2304.03092v4 — https://arxiv.org/html/2304.03092v4
