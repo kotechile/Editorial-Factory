@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T20:28:39Z",
+  "updated_at": "2026-10-29T10:46:08Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4206,6 +4206,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-sso-bill-125-a-connection/"
+    },
+    {
+      "slug": "2026-10-29_your-compaction-trap-87-forgeries-survive",
+      "title": "Your Compaction Trap: 87% of Forgeries Survive",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-10-29",
+      "public": false
     }
   ]
 }

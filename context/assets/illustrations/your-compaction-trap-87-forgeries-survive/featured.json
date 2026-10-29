@@ -1,0 +1,114 @@
+{
+  "slug": "your-compaction-trap-87-forgeries-survive",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular deep green block with distinct channels being compressed into a flat white slab on a steel surface.",
+      "caption": "When agents flatten structured protocol data into plain text, the boundaries that guarantee consent are lost.",
+      "title": "Compaction Structural Loss",
+      "bytes": 260493,
+      "sha256": "sha256:cb4e1be1a3ff5372fe67f4ae92859fbe"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a modular mechanical assembly on a brushed steel surface in a control room, extreme asymmetry with heavy negative space left. A precision-machined, deep pine green modular block with distinct separated internal channels is shown being mechanically compressed into a flat, generic bone white slab with no delineations. hard clean edges, one stark directional light from the top right throwing a long cast shadow. graphite and slate grey background. matte muted palette, no text, no molded lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, printed words, numbers",
+  "rationale": "The article is about a structural, architectural flaw in how data is formatted and stored (typed states vs plain text strings). A modular component assembly effectively illustrates structure and the loss of boundaries through physical arrangement.",
+  "cue": "Consent is a property of the harness's data model",
+  "subject": "a modular structural casing being compressed into a flat unmarked plate",
+  "core_thesis": "Consent relies on typed structure because flattened text labels are easily forged during memory compaction.",
+  "core_conflict": "structural role boundaries vs flattened text representation",
+  "composition": "extreme asymmetry with heavy negative space left",
+  "alt_text": "The Compaction Vulnerability. A modular deep green block with distinct channels being compressed into a flat white slab on a steel surface.",
+  "caption": "The Compaction Vulnerability: How memory compaction turns fakes into user commands.",
+  "title": "The Compaction Vulnerability",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-compaction-trap-87-forgeries-survive/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 308952,
+  "sha256": "sha256:fde25843c96e77a47ce437c7b7e50b65a72b9d4e2631b475e66bf5aea00bb95b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 308952,
+    "quality": 88,
+    "sha256": "sha256:fde25843c96e77a47ce437c7b7e50b65a72b9d4e2631b475e66bf5aea00bb95b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:180d172261d386643ddfb9ef4c185659b4e14ce81428fbf8d3615449556559e8",
+  "render_phash": "0ff10fc10fc10ff10ff90ff90ff10ff10bf10ff10f980e290ce00ef81e791e00",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A green, modular structural component sits on a white base beneath a metal press mechanism, positioned on the right side of the frame against a dark grey paneled background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a modular component in a press, which aligns with the article's theme of compaction and the art director's request."
+  },
+  "source_hash": "sha256:eaf9c74335f6ee0d58fcc417690127cc",
+  "source_chars": 5470,
+  "task_id": "89ec25f1a50029f229776976e79381d4",
+  "credits": 18.0,
+  "cost_ms": 37,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ae4d9cba9933c15848af7103a91158ab.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a modular mechanical assembly on a brushed steel surface in a control room, extreme asymmetry with heavy negative space left. A precision-machined, deep pine green modular block with distinct separated internal channels is shown being mechanically compressed into a flat, generic bone white slab with no delineations. hard clean edges, one stark directional light from the top right throwing a long cast shadow. graphite and slate grey background. matte muted palette, no text, no molded lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-29T10:42:54+00:00",
+  "overlay": {
+    "kicker": "AGENT SECURITY // HISTORY COMPACTION",
+    "title": "THE COMPACTION VULNERABILITY",
+    "hook": "How memory compaction turns fakes into user commands",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.59,
+    "target": 4.5,
+    "clutter": 0.055,
+    "region_rgb": [
+      84,
+      87,
+      89
+    ],
+    "binding_rgb": [
+      93,
+      94,
+      98
+    ],
+    "title_lines": [
+      "THE COMPACTION",
+      "VULNERABILITY"
+    ],
+    "subject": 0.002,
+    "ink_subject": 0.003,
+    "spike": 0.0,
+    "generated_at": "2026-10-29T10:42:54+00:00"
+  }
+}
