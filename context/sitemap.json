@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T18:47:28Z",
+  "updated_at": "2026-10-29T19:12:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4207,6 +4207,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-sso-bill-125-a-connection/"
+    },
+    {
+      "slug": "2026-10-29_11-degrees-kills-the-compressor-quote",
+      "title": "11 Degrees Kills the Compressor Quote",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-29",
+      "public": false
     },
     {
       "slug": "2026-10-29_half-your-tokens-5-of-bill",

@@ -1,0 +1,112 @@
+{
+  "slug": "11-degrees-kills-the-compressor-quote",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A frosted copper cooling coil and brass expansion valve shown in extreme close-up.",
+      "caption": "Measuring the temperature drop directly at the indoor coil reveals whether a system needs a simple metering repair or a full compressor replacement.",
+      "title": "HVAC Coil Temperature Split",
+      "bytes": 283517,
+      "sha256": "sha256:1ee6c7323ce21efaa1be6ea71e5f3fa8"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A frosted copper cooling coil line and brushed brass expansion valve inside a dim residential utility closet. Extreme asymmetry, hero object off-centre on the thirds with the background falling away into deep shadow. Soft directional amber worklight from the left catching condensation and metallic edges. Visible surface texture, moisture droplets, and frost on the copper surface. Palette of rust, slate grey, and bone white. Cinematic editorial cover standard, shallow depth of field, fine film grain.",
+  "negative_prompt": "garbled text, random letters, numbers, UI, watermarks, people, faces, empty void",
+  "rationale": "The story hinges entirely on the physical state of a specific component\u2014the cooling coil and its metering valve. An extreme macro shot focuses the reader on the exact physical spot where the critical diagnostic reading must be taken.",
+  "cue": "11 Degrees Kills the Compressor Quote",
+  "subject": "frosted copper cooling coil and brass expansion valve",
+  "core_thesis": "The temperature split measured directly at the cooling coil is the definitive reading that separates a minor airflow repair from an expensive compressor replacement.",
+  "core_conflict": "Precise component-level diagnostics versus expensive system-wide misdiagnostics.",
+  "composition": "extreme asymmetry, hero object off-centre",
+  "alt_text": "The 11 Degree Compressor Quote. A frosted copper cooling coil and brass expansion valve shown in extreme close-up.",
+  "caption": "The 11 Degree Compressor Quote: One wrong reading turns a cheap fix into a massive bill.",
+  "title": "The 11 Degree Compressor Quote",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/11-degrees-kills-the-compressor-quote/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 335936,
+  "sha256": "sha256:492a78e8c5d647cef35bd9840c8041a3d9d5917bb3f07a9eb33fc59e7a5f52fe",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 335936,
+    "quality": 88,
+    "sha256": "sha256:492a78e8c5d647cef35bd9840c8041a3d9d5917bb3f07a9eb33fc59e7a5f52fe",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:748fdfe706c5c972676a87fc38d97ceba4c34c8aa5283b110cfcf1a694cde886",
+  "render_phash": "faeffa987ac77caf7c381c2f1e6b1f9b06de09b3087320750f7d03f9027d1979",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A close-up view of a copper pipe with a section covered in white frost, connected to a brass valve, with other pipes visible in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a frosted cooling coil and valve, which directly relates to the article's focus on HVAC systems, cooling coils, and temperature splits."
+  },
+  "source_hash": "sha256:f29fc10589e3c0779f3d0133eb0e8adb",
+  "source_chars": 5148,
+  "task_id": "e19b3f3dbc87897d05732d70d6432216",
+  "credits": 5.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e19b3f3dbc87897d05732d70d6432216_1793301116653.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A frosted copper cooling coil line and brushed brass expansion valve inside a dim residential utility closet. Extreme asymmetry, hero object off-centre on the thirds with the background falling away into deep shadow. Soft directional amber worklight from the left catching condensation and metallic edges. Visible surface texture, moisture droplets, and frost on the copper surface. Palette of rust, slate grey, and bone white. Cinematic editorial cover standard, shallow depth of field, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-29T19:12:06+00:00",
+  "overlay": {
+    "kicker": "HVAC REPAIR // TEMPERATURE SPLITS",
+    "title": "THE 11 DEGREE COMPRESSOR QUOTE",
+    "hook": "One wrong reading turns a cheap fix into a massive bill",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.5,
+    "target": 4.5,
+    "clutter": 0.183,
+    "region_rgb": [
+      35,
+      28,
+      25
+    ],
+    "binding_rgb": [
+      60,
+      35,
+      28
+    ],
+    "title_lines": [
+      "THE 11 DEGREE",
+      "COMPRESSOR QUOTE"
+    ],
+    "subject": 0.085,
+    "ink_subject": 0.045,
+    "spike": 0.243,
+    "generated_at": "2026-10-29T19:12:06+00:00"
+  }
+}
