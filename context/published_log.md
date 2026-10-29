@@ -242,6 +242,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-29 | enterprise_ai_finops | your-chargeback-misses-40-of-the-bill | Your AI Bill's Hidden 40% Gap | https://pressflow.aichieve.net/published/2026-10-29_your-chargeback-misses-40-of-the-bill.md | reader site only |
 | 2026-10-29 | supply_chain | your-carriers-750000-doesnt-cover-cargo | Your Carrier's $750,000 Doesn't Cover Cargo | https://pressflow.aichieve.net/published/2026-10-29_your-carriers-750000-doesnt-cover-cargo.md | reader site only |
 | 2026-10-29 | home_ops_execution | 11-degrees-kills-the-compressor-quote | 11 Degrees Kills the Compressor Quote | https://pressflow.aichieve.net/published/2026-10-29_11-degrees-kills-the-compressor-quote.md | reader site only |
+| 2026-10-29 | expat_cross_border_relocation | one-rate-overruns-your-cap-5934 | One Rate Overruns Your Cap $5,934 | https://pressflow.aichieve.net/published/2026-10-29_one-rate-overruns-your-cap-5934.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

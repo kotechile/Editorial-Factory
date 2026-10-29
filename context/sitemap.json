@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T19:13:46Z",
+  "updated_at": "2026-10-29T19:47:50Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4243,6 +4243,24 @@
       "date": "2026-10-29",
       "public": true,
       "url": "https://aichieve.net/half-your-tokens-5-of-bill/"
+    },
+    {
+      "slug": "2026-10-29_one-rate-overruns-your-cap-5934",
+      "title": "One Rate Overruns Your Cap $5,934",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
+      "date": "2026-10-29",
+      "public": false
     },
     {
       "slug": "2026-10-29_parcel-fuel-percentage-weekly-january",

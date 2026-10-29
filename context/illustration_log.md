@@ -364,3 +364,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-29 | `your-chargeback-misses-40-of-the-bill` | enterprise_ai_finops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-chargeback-misses-40-of-the-bill/featured.jpg` |
 | 2026-10-29 | `your-carriers-750000-doesnt-cover-cargo` | supply_chain | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-carriers-750000-doesnt-cover-cargo/featured.jpg` |
 | 2026-10-29 | `11-degrees-kills-the-compressor-quote` | home_ops_execution | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/11-degrees-kills-the-compressor-quote/featured.jpg` |
+| 2026-10-29 | `one-rate-overruns-your-cap-5934` | expat_cross_border_relocation | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/one-rate-overruns-your-cap-5934/featured.jpg` |

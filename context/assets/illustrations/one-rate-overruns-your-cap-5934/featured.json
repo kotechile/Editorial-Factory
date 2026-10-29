@@ -1,0 +1,114 @@
+{
+  "slug": "one-rate-overruns-your-cap-5934",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A mechanical slider gauge where a graphite block overshoots a white threshold limit on an oak desk.",
+      "caption": "Exchange rates can push a static foreign salary over the fixed tax exclusion limit.",
+      "title": "Tax Cap Slider Gauge",
+      "bytes": 381801,
+      "sha256": "sha256:dbc5a2f7669f796f5551295d9064bb8f"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a mechanical slider gauge on a warm oak desk surface. A graphite grey sliding block is pushed aggressively past a rigid bone white threshold marker. Three recognisable engineered parts: a track, a slider block, and a bolted limit line. One directional light from the top left casting long hard contact shadows. Clean physical arrangement, extreme asymmetry with the gauge pushed right, matte muted palette of graphite, bone white, and ochre. No text, no numbers, no embossed lettering, generous negative space.",
+  "negative_prompt": "garbled text, random lettering, numbers, UI, symbols, watermarks, letters, typography",
+  "rationale": "The news is structural and abstract: a flat amount of money being pushed past a rigid cap by an external force (exchange rates). A clay render of a mechanical threshold being overrun captures this without risking generated numbers or text on documents.",
+  "cue": "One Rate Overruns Your Cap",
+  "subject": "a mechanical slider gauge with a block pushed past a limit line",
+  "core_thesis": "Exchange rate fluctuations dictate whether a static foreign salary exceeds the fixed US dollar tax exclusion cap.",
+  "core_conflict": "Fixed US dollar tax caps versus fluctuating foreign currency exchange rates.",
+  "composition": "extreme asymmetry with the gauge pushed right",
+  "alt_text": "Exchange Rates And Expat Tax. A mechanical slider gauge where a graphite block overshoots a white threshold limit on an oak desk.",
+  "caption": "Exchange Rates And Expat Tax: How currency shifts silently alter your tax exclusion cap.",
+  "title": "Exchange Rates And Expat Tax",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/one-rate-overruns-your-cap-5934/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 385412,
+  "sha256": "sha256:88e58a72e1334d11e8b6488470f73af706b797ba772da8a27806bb91e30fcbf1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 385412,
+    "quality": 84,
+    "sha256": "sha256:88e58a72e1334d11e8b6488470f73af706b797ba772da8a27806bb91e30fcbf1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a4cd4873b159b52e773de514290acd985bdcfda129dc982f09949fe572c22883",
+  "render_phash": "fb7deff9fffbefdbed9b7fb2fff3ff70fe78f9f0f35bf69cfe3cf6f2f9e2fdc5",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A grey rectangular block sits on a track mechanism with a white rail and a tan base, positioned near a vertical white bracket with screws.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a block on a slider gauge, which metaphorically represents a limit or cap being reached, aligning with the article's theme of overrunning a cap."
+  },
+  "source_hash": "sha256:e4f20aca546439ecfce8f01a6c541190",
+  "source_chars": 4140,
+  "task_id": "3cba84f0b72415f49388384cfe263720",
+  "credits": 18.0,
+  "cost_ms": 43,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_50dc4933801819b46c40589ec19ae90a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a mechanical slider gauge on a warm oak desk surface. A graphite grey sliding block is pushed aggressively past a rigid bone white threshold marker. Three recognisable engineered parts: a track, a slider block, and a bolted limit line. One directional light from the top left casting long hard contact shadows. Clean physical arrangement, extreme asymmetry with the gauge pushed right, matte muted palette of graphite, bone white, and ochre. No text, no numbers, no embossed lettering, generous negative space.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-29T19:47:21+00:00",
+  "overlay": {
+    "kicker": "EXPAT FINANCE // EXCHANGE RATES",
+    "title": "EXCHANGE RATES AND EXPAT TAX",
+    "hook": "How currency shifts silently alter your tax exclusion cap",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 15,
+    "contrast": 4.81,
+    "target": 4.5,
+    "clutter": 0.073,
+    "region_rgb": [
+      187,
+      157,
+      120
+    ],
+    "binding_rgb": [
+      164,
+      149,
+      128
+    ],
+    "title_lines": [
+      "EXCHANGE RATES",
+      "AND EXPAT TAX"
+    ],
+    "subject": 0.009,
+    "ink_subject": 0.004,
+    "spike": 0.029,
+    "generated_at": "2026-10-29T19:47:21+00:00"
+  }
+}
