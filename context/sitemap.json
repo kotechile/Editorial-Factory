@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T10:57:53Z",
+  "updated_at": "2026-10-29T11:25:29Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4206,6 +4206,24 @@
       "date": "2026-10-28",
       "public": true,
       "url": "https://aichieve.net/your-sso-bill-125-a-connection/"
+    },
+    {
+      "slug": "2026-10-29_half-your-tokens-5-of-bill",
+      "title": "Half Your Tokens: 5% of Your Bill",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-10-29",
+      "public": false
     },
     {
       "slug": "2026-10-29_your-compaction-trap-87-forgeries-survive",
