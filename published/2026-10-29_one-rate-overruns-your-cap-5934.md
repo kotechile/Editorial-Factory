@@ -55,6 +55,18 @@ The printed IRS averages give a single number for the year, but they do not gran
 
 These tax caps also reset each year, so the dollar figure that makes your math work belongs strictly to last year's return [6][7]. A rate change moves your tax base rather than your real buying power, so a filer who swaps money cheaply still spends at local prices. My read, held loosely — the habit that matters is settling the method once, noting the rate used, and keeping it. [The expat tax and relocation model](/calculators/expat-evaluator/) runs both rates side by side, and the gap shows what your paperwork must defend.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Pay from abroad arrives in foreign money while US tax limits rely on dollars, so exchange rates frame your tax cap before any real tax rules kick in.
+- **Why It Matters:** A flat euro salary can eat up or blow past the whole tax break without changing by a single cent, making your first rate choice the biggest filing step.
+- **What I'd Watch:** The places where your chosen math shows up on the tax form.
+  - **The refund rule:** A tax refund locks in the rate from the first payment day, dragging old rates into new filings.
+  - **The three doors:** Taxes paid late, paid early, or priced in fast-inflating money fall back to different rate rules.
+  - **The choice:** Picking the payment-day rate ties up your future returns until the IRS lets you change it back.
+- **The Catch:** Printed yearly averages do not clear flat math for lump-sum bonuses, and a stronger paper rate does nothing to buy you more goods abroad.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -67,18 +79,6 @@ These tax caps also reset each year, so the dollar figure that makes your math w
 - [Your Swap Died at 25%](/why-your-swap-died-at-25/)
 - [RSU Hold vs Sell Calculator with Concentration Risk](/calculators/rsu-hold-vs-sell/)
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Pay from abroad arrives in foreign money while US tax limits rely on dollars, so exchange rates frame your tax cap before any real tax rules kick in.
-- **Why It Matters:** A flat euro salary can eat up or blow past the whole tax break without changing by a single cent, making your first rate choice the biggest filing step.
-- **What I'd Watch:** The places where your chosen math shows up on the tax form.
-  - **The refund rule:** A tax refund locks in the rate from the first payment day, dragging old rates into new filings.
-  - **The three doors:** Taxes paid late, paid early, or priced in fast-inflating money fall back to different rate rules.
-  - **The choice:** Picking the payment-day rate ties up your future returns until the IRS lets you change it back.
-- **The Catch:** Printed yearly averages do not clear flat math for lump-sum bonuses, and a stronger paper rate does nothing to buy you more goods abroad.
 
 ## Sources
 [1] Internal Revenue Service, "Foreign currency and currency exchange rates" — https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates
