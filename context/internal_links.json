@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T18:12:30+00:00",
+  "generated_at": "2026-10-29T18:41:04+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -6287,6 +6287,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-chargeback-misses-40-of-the-bill",
+      "title": "Your AI Bill's Hidden 40% Gap",
+      "url": "https://aichieve.net/your-chargeback-misses-40-of-the-bill/",
+      "path": "/your-chargeback-misses-40-of-the-bill/",
+      "sites_live": {
+        "aichieve.net": "/your-chargeback-misses-40-of-the-bill/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your AI bill's hidden gap is 40 to 60 percent of the total cost, because the invoice stops at the key rather than the team that spent the money.",
+      "modified": "2026-10-29T18:24:36",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-charger-gap-buys-16-robots",
       "title": "Your Charger Gap Buys 16 Robots",
       "url": "https://aichieve.net/your-charger-gap-buys-16-robots/",
@@ -6952,6 +6975,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1287,
+      "slug": "your-chargeback-misses-40-of-the-bill",
+      "title": "Your AI Bill&#8217;s Hidden 40% Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-29T18:29:18",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -8111,20 +8148,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T13:18:27",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 880,
-      "slug": "wage-floor-sets-robot-payback",
-      "title": "Warehouse Payback: $17.00, Not $17.95",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

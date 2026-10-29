@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T18:24:38Z",
+  "updated_at": "2026-10-29T18:41:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4300,7 +4300,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-chargeback-misses-40-of-the-bill/"
     },
     {
       "slug": "2026-10-29_your-compaction-trap-87-forgeries-survive",

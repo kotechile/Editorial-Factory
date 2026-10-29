@@ -11,6 +11,12 @@ meta_title: "Your AI Bill's Hidden 40% Gap"
 meta_title_source: "derived_from_title"
 meta_description: "Your AI bill's hidden gap is 40 to 60 percent of the total cost, because the invoice stops at the key rather than the team that spent the money."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-chargeback-misses-40-of-the-bill/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "A tiered server stack on a control-room desk, with a small module lifted off its top."
+image_caption: "The AI Chargeback Gap: the harness around a model call carries spend the token invoice never shows."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

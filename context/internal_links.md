@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-29T18:12:30+00:00
+# Internal-link candidates — 2026-10-29T18:41:04+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -142,7 +142,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 170 live article(s), 13 other target(s)
+## aichieve.net — 171 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -272,6 +272,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your 8% Charge Shifts Every Week](https://aichieve.net/parcel-fuel-percentage-weekly-january/) — Supply Chain & Operations
 - [Your 9% Drop: Not the Model](https://aichieve.net/rerun-diff-measures-gpu/) — AI Stack & Tool TCO
 - [Your 90% Restart Monitor Proves Nothing](https://aichieve.net/your-90-restart-monitor-proves-nothing/) — Autonomous & Agentic Workflows
+- [Your AI Bill's Hidden 40% Gap](https://aichieve.net/your-chargeback-misses-40-of-the-bill/) — AI Stack & Tool TCO
 - [Your AI Fine: 3%, Not 35 Million](https://aichieve.net/your-ai-fine-is-3-percent/) — Mental Models & Strategy
 - [Your AI Incident Clock: 4 Hours, Not 15 Days](https://aichieve.net/ai-incident-clock-4-hours-not-15-days/) — Mental Models & Strategy
 - [Your Agent Fabric's 52.2% Blind Spot](https://aichieve.net/stale-grants-travel-the-graph/) — Autonomous & Agentic Workflows
@@ -332,6 +333,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1287 `your-chargeback-misses-40-of-the-bill` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1285 `your-sandbox-boot-tax-110x-then-nothing` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1281 `promo-spike-is-a-loan` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1275 `parcel-fuel-percentage-weekly-january` — published in the CMS but absent from the frontend sitemap
@@ -415,7 +417,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #962 `cheaper-model-pricier-task` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #961 `agent-loop-bound-not-a-budget` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #958 `holiday-forecasts-miss-what-shoppers-count` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #880 `wage-floor-sets-robot-payback` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1278 `your-llc-bill-75-until-2028` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
