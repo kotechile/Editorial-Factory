@@ -63,6 +63,18 @@ The floor deserves the same caution. The 125 milliseconds is the goal Firecracke
 
 None of those sources gives a break-even count: dividing a boot by actions hands you a tax per action. The count where a warm pool wins depends on how often runs arrive and what the idle room would cost instead. This remains a choice per service, and it moves when run length does.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The Big Shift:** Sandbox-backed agent runtimes start a fresh box per tool job, so a setup cost that used to be paid once is paid on every run. Keeping boundaries alive and starting them on demand are two ways of paying it.
+- **Why It Matters:** A boot split across a few actions is a heavy tax on every turn, while the same boot across a long run disappears. A choice made on vendor ranks instead of run length puts the cost on the wrong side of the fleet.
+- **What I'd Watch:** whether teams price the boot against the run it lands in, and whether the fix they pick hides the cost or merely moves it.
+  - **The division:** boot time over actions per run, the only figure that says whether warmth is worth paying for.
+  - **The horn:** a warm pool pays memory, a fresh start pays delay, and a metered block of boxes puts the first one on an invoice.
+  - **The overlap:** building the sandbox while the model is still writing, the one option that shortens the tail instead of shifting it.
+- **The Catch:** the headline spread comes from a vendor preprint that ranks its own product first, the boot figures are goals rather than outside tests, and no source states the action count at which a warm pool wins.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -75,18 +87,6 @@ None of those sources gives a break-even count: dividing a boot by actions hands
 - [Your 90% Restart Monitor Proves Nothing](/your-90-restart-monitor-proves-nothing/) — more on Autonomous & Agentic Workflows
 - [Your Agent's Contract Gap](/your-agent-contract-gap-63-unmet/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The Big Shift:** Sandbox-backed agent runtimes start a fresh box per tool job, so a setup cost that used to be paid once is paid on every run. Keeping boundaries alive and starting them on demand are two ways of paying it.
-- **Why It Matters:** A boot split across a few actions is a heavy tax on every turn, while the same boot across a long run disappears. A choice made on vendor ranks instead of run length puts the cost on the wrong side of the fleet.
-- **What I'd Watch:** whether teams price the boot against the run it lands in, and whether the fix they pick hides the cost or merely moves it.
-  - **The division:** boot time over actions per run, the only figure that says whether warmth is worth paying for.
-  - **The horn:** a warm pool pays memory, a fresh start pays delay, and a metered block of boxes puts the first one on an invoice.
-  - **The overlap:** building the sandbox while the model is still writing, the one option that shortens the tail instead of shifting it.
-- **The Catch:** the headline spread comes from a vendor preprint that ranks its own product first, the boot figures are goals rather than outside tests, and no source states the action count at which a warm pool wins.
 
 ## Sources
 [1] Graviet, Pešut, Dagelić, Jukic and Burazin (all affiliated with Daytona), "The Rollout Infrastructure Tax in Coding-Agent Reinforcement Learning," arXiv:2607.01415v1, 1 July 2026, preprint submitted to ACM SoCC 2026. https://arxiv.org/html/2607.01415v1
