@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T12:06:05Z",
+  "updated_at": "2026-10-29T12:22:53Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4240,6 +4240,24 @@
         "At a glance"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-10-29",
+      "public": false
+    },
+    {
+      "slug": "2026-10-29_second-backyard-home-1000-deposit",
+      "title": "Your Two Backyard Homes, $1,000 Risk",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-10-29",
       "public": false
     },
