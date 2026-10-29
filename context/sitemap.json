@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T11:25:29Z",
+  "updated_at": "2026-10-29T11:51:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4222,6 +4222,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-10-29",
+      "public": false
+    },
+    {
+      "slug": "2026-10-29_parcel-fuel-percentage-weekly-january",
+      "title": "Your 8% Charge Shifts Every Week",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-10-29",
       "public": false
     },

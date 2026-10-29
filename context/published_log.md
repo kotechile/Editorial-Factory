@@ -234,6 +234,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-28 | property_loss_insurance_mitigation | your-adjuster-hides-a-25-gap | Your Adjuster Hides a 25% Gap | https://pressflow.aichieve.net/published/2026-10-28_your-adjuster-hides-a-25-gap.md | reader site only |
 | 2026-10-29 | agentic_ai | your-compaction-trap-87-forgeries-survive | Your Compaction Trap: 87% of Forgeries Survive | https://pressflow.aichieve.net/published/2026-10-29_your-compaction-trap-87-forgeries-survive.md | reader site only |
 | 2026-10-29 | enterprise_ai_finops | half-your-tokens-5-of-bill | Half Your Tokens: 5% of Your Bill | https://pressflow.aichieve.net/published/2026-10-29_half-your-tokens-5-of-bill.md | reader site only |
+| 2026-10-29 | supply_chain | parcel-fuel-percentage-weekly-january | Your 8% Charge Shifts Every Week | https://pressflow.aichieve.net/published/2026-10-29_parcel-fuel-percentage-weekly-january.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
