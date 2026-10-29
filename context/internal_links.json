@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:17:39+00:00",
+  "generated_at": "2026-10-29T18:12:30+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -681,6 +681,462 @@
       "category_slugs": [],
       "excerpt": "Moving abroad adds three required US forms, and missing just one costs $10,000. Not one of these forms bills you for tax.",
       "modified": "2026-10-15T19:44:40",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "self-hosting-break-even-one-hour-a-year",
+      "title": "Self-Hosting Break-Even: 1.26 Hours a Year",
+      "url": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/",
+      "path": "/self-hosting-break-even-one-hour-a-year/",
+      "sites_live": {
+        "giniloh.com": "/self-hosting-break-even-one-hour-a-year/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "An hour of network admin work was worth $47.66 at the 2025 median wage. A year of managed email costs $60.",
+      "modified": "2026-10-10T18:25:31",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "home-assistant-cloud-rename-hardware-rent",
+      "title": "Why Home Assistant Renamed Its Cloud",
+      "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/",
+      "path": "/home-assistant-cloud-rename-hardware-rent/",
+      "sites_live": {
+        "giniloh.com": "/home-assistant-cloud-rename-hardware-rent/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The maker of Home Assistant announced a rename of its paid remote service, effective December 2. Home Assistant Cloud becomes Home Assistant Link.",
+      "modified": "2026-10-10T18:25:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "staggered-lockup-six-selling-decisions",
+      "title": "SpaceX's Staggered Lockup: Six Windows, Not One",
+      "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/",
+      "path": "/staggered-lockup-six-selling-decisions/",
+      "sites_live": {
+        "giniloh.com": "/staggered-lockup-six-selling-decisions/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "SpaceX workers get their next chance to sell today as 328.4 million shares \u2014 about 7% of the locked stock \u2014 open for trading.",
+      "modified": "2026-10-10T18:25:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "post-termination-option-clock-tax",
+      "title": "Options Trap: Your 26% AMT Bill",
+      "url": "https://giniloh.com/post-termination-option-clock-tax/",
+      "path": "/post-termination-option-clock-tax/",
+      "sites_live": {
+        "giniloh.com": "/post-termination-option-clock-tax/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Three months after a job ends, an incentive stock option loses its tax status \u2014 the alternative minimum tax on the exercise spread can outweigh the strike.",
+      "modified": "2026-10-10T16:51:58",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "split-year-two-clock-seam",
+      "title": "The Two Clocks That Decide Your First Year Abroad",
+      "url": "https://giniloh.com/split-year-two-clock-seam/",
+      "path": "/split-year-two-clock-seam/",
+      "sites_live": {
+        "giniloh.com": "/split-year-two-clock-seam/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Two clocks dictate the true cost of moving abroad, and they rarely sync up: the US demands 330 full days overseas within a 12-month window to shield your\u2026",
+      "modified": "2026-10-08T22:27:58",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "disney-hulu-fourth-hike-subscription-creep",
+      "title": "Disney+ and Hulu Just Raised Prices 13% \u2014 Right After Doubling Profits",
+      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/",
+      "path": "/disney-hulu-fourth-hike-subscription-creep/",
+      "sites_live": {
+        "giniloh.com": "/disney-hulu-fourth-hike-subscription-creep/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent to $21.49 a month. This marks the fourth price hike in four years.",
+      "modified": "2026-10-02T01:58:29",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "why-70-of-startup-options-go-unexercised",
+      "title": "Why 70% of Startup Options Go Unexercised",
+      "url": "https://giniloh.com/why-70-of-startup-options-go-unexercised/",
+      "path": "/why-70-of-startup-options-go-unexercised/",
+      "sites_live": {
+        "giniloh.com": "/why-70-of-startup-options-go-unexercised/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "More than 70% of vested startup stock options are never exercised, according to new data from Carta published Sept. 10.",
+      "modified": "2026-10-02T21:50:02",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "expats-evaluating-the-true-value-of-a-job-driven-move-overseas",
+      "title": "Expats: Evaluating the True Value of a Job-Driven Move overseas",
+      "url": "https://giniloh.com/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+      "path": "/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/",
+      "sites_live": {
+        "giniloh.com": "/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "For mid-career professionals, moving abroad is no longer a simple salary comparison. Expats must weigh a U.S. $200K tech salary against a \u20ac130K European offer, then factor in lower healthcare, education, and daily costs alongside dual-country taxation expats face, visa rules, and hidden relocation expenses. This guide cuts through the noise with a practical framework for expats Costa Rica, expats Germany, and other markets, helping you answer the critical question: is relocating for a job worth it? You will learn how to calculate true net cash flow, anticipate cross-border tax liabilities, and score cities on livability, career momentum, partner employment, schools, and community. The Expat Financial & International Tax Evaluator turns guesswork into a clear, personalized decision. Before you accept the offer, run the numbers, test the lifestyle trade-offs, and protect your long-term wealth. Your next move deserves evidence, not hope.",
+      "modified": "2026-09-14T01:16:38",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "is-a-3000-espresso-maker-machine-worth-it",
+      "title": "Is a $3,000 Espresso Maker Machine Worth It?",
+      "url": "https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/",
+      "path": "/is-a-3000-espresso-maker-machine-worth-it/",
+      "sites_live": {
+        "giniloh.com": "/is-a-3000-espresso-maker-machine-worth-it/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "For many coffee enthusiasts, the decision to invest in a premium espresso maker machine is clouded by emotion and brand loyalty. A data-driven approach, however, reveals a surprising bottom line. Using the Giniloh Strategic Decision-Intelligence Engine, a detailed cost-per-use analysis of a $3,000 dual-boiler home espresso machine versus daily $6.00 caf\u00e9 lattes yields a clear verdict: buy the machine\u2014but only just. Over three years of five weekly drinks, the home setup costs $5.92 per use, saving a mere $60 compared to the caf\u00e9\u2019s $4,680 total. Hidden expenses like beans, milk, descaling, and maintenance push the total cost of ownership to $4,620, making this a borderline decision. The real value emerges when weekly usage increases, tipping the scales toward significant long-term savings. Before you swipe your card, run your own numbers: the difference between a rational investment and a costly impulse is just one calculation away.",
+      "modified": "2026-10-18T19:04:02",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "beyond-the-emergency-fund-how-to-build-a-frictionless-wealth",
+      "title": "Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System",
+      "url": "https://giniloh.com/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+      "path": "/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/",
+      "sites_live": {
+        "giniloh.com": "/beyond-the-emergency-fund-how-to-build-a-frictionless-wealth/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Imagine your checking account drops to $500 after an unexpected car repair\u2014but within hours, an automatic sweep from your savings restores your floor, no manual intervention required. That\u2019s the power of the Giniloh Frictionless Money Flow Simulator, a hands-on tool that lets you practice real-life financial shocks in a risk-free environment. The emergency expense scenario, a core feature, demonstrates how setting a $1,500 checking floor paired with a $15,000 high-yield savings account triggers an automated rescue when an unplanned bill hits. You can run the simulation yourself using AI chat commands or manual UI configuration, then watch the cyan flow path and audit trail log confirm every transfer. This isn\u2019t static advice\u2014it\u2019s a live, repeatable drill that trains your system to protect against financial shocks and avoid high-interest debt, giving you confidence when real emergencies strike.",
+      "modified": "2026-10-18T19:04:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "simulate-a-frictionless-liquidity-sweep-in-giniloh",
+      "title": "Simulate a Frictionless Liquidity Sweep in Giniloh",
+      "url": "https://giniloh.com/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+      "path": "/simulate-a-frictionless-liquidity-sweep-in-giniloh/",
+      "sites_live": {
+        "giniloh.com": "/simulate-a-frictionless-liquidity-sweep-in-giniloh/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Let\u2019s cut to the chase: a liquidity sweep isn\u2019t just random market noise\u2014it\u2019s where institutional players deliberately spike prices through stop-loss clusters to grab trapped liquidity. If you\u2019ve ever watched your stop get hit only for the market to reverse immediately, you\u2019ve seen one. Most traders never learn to spot them, let alone simulate scenarios before risking real capital. That\u2019s where this guide changes everything. You\u2019ll not only learn how to identify buy-side and sell-side sweeps using swing highs and lows, but you\u2019ll also get hands-on with the Giniloh Frictionless Money Flow Simulator\u2014a tool that lets you configure accounts, set up automated cash pipelines via natural language CLI, and step through daily clocks to watch sweeps unfold in real time. No more guessing. By the end, you\u2019ll have a repeatable, actionable framework to anticipate liquidity grabs and safeguard your positions.",
+      "modified": "2026-10-18T19:04:09",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "smart-ways-to-invest-an-extra-500-a-day",
+      "title": "Smart Ways to Invest an Extra $500 a Day",
+      "url": "https://giniloh.com/smart-ways-to-invest-an-extra-500-a-day/",
+      "path": "/smart-ways-to-invest-an-extra-500-a-day/",
+      "sites_live": {
+        "giniloh.com": "/smart-ways-to-invest-an-extra-500-a-day/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Imagine your income suddenly surges to $500 a day, your emergency fund is fully stocked at $15,000, and you carry zero high-interest debt. Where does every extra dollar go? The giniloh Money Flow Simulator answers that question with stunning clarity, turning abstract financial planning into a visual, real-time cascade. By simply setting your income and account ceilings\u2014via an AI chat command or a few clicks\u2014you watch surplus cash automatically bypass saturated reserves and flow into tax-advantaged accounts like your 401k, HSA, and Roth IRA. The true power emerges when these hit their annual limits; then, without any manual intervention, every remaining dollar dynamically overflows into a taxable brokerage account. With an audit trail logging each \u201coverbalance sweep,\u201d this simulation transforms a theoretical pay raise into a specific, actionable roadmap for wealth acceleration. It\u2019s not just a chart\u2014it\u2019s a live demonstration of how to make every surge work harder, before you ever see a real paycheck.",
+      "modified": "2026-10-18T19:04:09",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "best-ai-proof-jobs-in-a-changing-market",
+      "title": "Best AI Proof Jobs in a Changing Market",
+      "url": "https://giniloh.com/best-ai-proof-jobs-in-a-changing-market/",
+      "path": "/best-ai-proof-jobs-in-a-changing-market/",
+      "sites_live": {
+        "giniloh.com": "/best-ai-proof-jobs-in-a-changing-market/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Worried robots are coming for your paycheck? You\u2019re not alone\u2014but the real story is far more hopeful. This guide cuts through the scare headlines to reveal exactly where smart, sustainable career opportunities exist right now. We\u2019ve curated a list of true ai proof jobs\u2014roles in healthcare, skilled trades, and cybersecurity that not only survive automation but thrive because of human judgment and empathy. You\u2019ll get specific, money-making data on projected growth (the BLS says wind turbine technicians, for instance, will grow 44% by 2032), real salary ranges from active job listings, and a simple self-assessment quiz to identify your own most resilient path. Plus, we name companies hiring today and the niche job boards they use. Stop worrying and start planning\u2014your secure career is closer than you think.",
+      "modified": "2026-07-08T22:53:39",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check",
+      "title": "NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?",
+      "url": "https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+      "path": "/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/",
+      "sites_live": {
+        "giniloh.com": "/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "For professionals weighing a leap into Nvidia\u2019s RTX PRO lineup\u2014a $12,400 Blackwell 6000 with 98GB VRAM\u2014the sticker shock often overshadows long-term value. But what if a single interactive calculator could reveal whether that investment pays off faster than renting cloud GPUs? Gilinho\u2019s new TCO Analyzer does exactly that, letting you input acquisition cost, power draw, maintenance, and depreciation to compare ownership versus rental across workloads like Llama 3 inference or Blender rendering. Early results show the RTX PRO can slash cost per render hour by 40% over a three-year horizon. Stop guessing and start optimizing your hardware budget. Try the analyzer now to see if RTX PRO is your smartest compute bet.",
+      "modified": "2026-10-18T19:04:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "lease-break-calculator-save-1850-in-3-steps",
+      "title": "Lease Break Calculator: Save $1,850 in 3 Steps",
+      "url": "https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/",
+      "path": "/lease-break-calculator-save-1850-in-3-steps/",
+      "sites_live": {
+        "giniloh.com": "/lease-break-calculator-save-1850-in-3-steps/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Sarah faced a classic career-versus-home dilemma: a $20,000 salary bump in NYC, but eight months and $24,000 remaining on her Austin lease. With confusing penalty clauses and no clear exit path, she needed hard numbers\u2014not guesswork. Using the Giniloh Lease Break Calculator, she compared three real scenarios: a worst-case $3,500 outlay, a negotiated buyout at $1,650 net, and a best-case where her new employer covered the exit cost. The calculator\u2019s payback math revealed she\u2019d fully recover even the worst penalty in just 2.1 months. Armed with concrete data, Sarah turned a painful lease break into a leverage point\u2014either for a signing bonus or a swift financial recovery. The result? A clear, data-driven path out of a costly commitment, proving that with the right tool, breaking a lease doesn\u2019t have to break your budget.",
+      "modified": "2026-10-18T19:04:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "zapier-notion-integration-calculate-your-tinkering-tax",
+      "title": "Zapier Notion Integration: Calculate Your Tinkering Tax",
+      "url": "https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/",
+      "path": "/zapier-notion-integration-calculate-your-tinkering-tax/",
+      "sites_live": {
+        "giniloh.com": "/zapier-notion-integration-calculate-your-tinkering-tax/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "E-commerce teams relying on a zapier notion integration to sync customer data and orders often face a hidden cost far exceeding any subscription fee. When broken integrations, duplicated records, and sync timeouts consume 12 hours of an operations manager\u2019s time each month at $85 per hour, the monthly tinkering tax hits $1,020. That\u2019s $36,720 over three years\u2014more than double the $18,000 premium for upgrading to a unified centralized CRM like HubSpot. By plugging these real-world figures into Giniloh\u2019s No-Code Workaround Terminator calculator, you can see the exact net savings\u2014$18,720 in this scenario\u2014and reclaim stress-free operations. Stop guessing whether your workflow is worth it; the data reveals the smarter move.",
+      "modified": "2026-06-26T16:54:15",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "replace-laptop-screen-let-this-decision-engine-do-the-math",
+      "title": "Replace Laptop Screen? Let This Decision Engine Do the Math",
+      "url": "https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+      "path": "/replace-laptop-screen-let-this-decision-engine-do-the-math/",
+      "sites_live": {
+        "giniloh.com": "/replace-laptop-screen-let-this-decision-engine-do-the-math/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Is a cracked laptop screen forcing you to shell out hundreds for a repair? Before you rush to replace laptop screen, stop and calculate whether it's actually worth it. Most repair guides only show you how, not if you should. That's where the Giniloh Strategic Decision-Intelligence Engine changes the game. Instead of guessing, use the Consumer 1,500 Rule: multiply your laptop's age by the repair quote. If the result exceeds 1,500, it's smarter to buy new laptop than patch old hardware. A 4-year-old device with a $450 repair gives you an asset tech debt index of 1,800\u2014a clear \"replace\" verdict. This data-driven approach saves you from pouring money into outdated machines. Learn the exact steps to perform the calculation, get a definitive answer, and stop wasting funds on uneconomical fixes. The math doesn't lie\u2014your wallet will thank you.",
+      "modified": "2026-06-26T00:56:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "ebike-costs-per-use-calculator-for-commuters",
+      "title": "Ebike Costs: Per-Use Calculator for Commuters",
+      "url": "https://giniloh.com/ebike-costs-per-use-calculator-for-commuters/",
+      "path": "/ebike-costs-per-use-calculator-for-commuters/",
+      "sites_live": {
+        "giniloh.com": "/ebike-costs-per-use-calculator-for-commuters/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Stop guessing whether an e-bike is worth it\u2014most people overpay for their commute without realizing it. This article uses the Giniloh Decision Intelligence Framework to uncover the true ebike costs and which choice saves real money. Instead of just listing price tags, you\u2019ll learn a simple Cost-Per-Use (CPU) calculation that compares a $2,500 premium e-bike against your current parking, fuel, and rideshare expenses. The result? A commuter who rides three days a week could save $2,875 over three years\u2014dropping their per-trip cost from $15.00 to just $7.90. That\u2019s a clear BUY verdict based on your own numbers. By matching the electric bike cost to your exact lifestyle, you stop overthinking and start saving immediately. Ready to run your own CPU check? The interactive calculator inside does the math for you.",
+      "modified": "2026-10-18T19:04:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "jobs-switch-calculator-step-by-step-profit-guide",
+      "title": "Jobs Switch Calculator: Step-by-Step Profit Guide",
+      "url": "https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/",
+      "path": "/jobs-switch-calculator-step-by-step-profit-guide/",
+      "sites_live": {
+        "giniloh.com": "/jobs-switch-calculator-step-by-step-profit-guide/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Are you considering a jobs switch but worried about forfeiting years of unvested 401(k) matches? The Gilinoh Raise & Job-Hop Velocity Calculator exposes the hidden financial trade-offs most professionals overlook. In a realistic scenario, a mid-career engineer earning $120,000 receives a 12% raise offer\u2014yet loses over $21,000 in unvested employer matches, creating a $4,000 switching deficit in year three. This tool transforms abstract risk into concrete numbers, showing exactly how to negotiate a signing bonus of at least $15,000 to break even. Stop leaving money behind. Use the calculator\u2019s step-by-step walkthrough to compare stay-versus-switch trajectories, identify negotiation levers, and ensure your next move actually pays off.",
+      "modified": "2026-06-20T00:52:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "calculate-your-career-relocation-payback",
+      "title": "Calculate Your Career Relocation Payback",
+      "url": "https://giniloh.com/calculate-your-career-relocation-payback/",
+      "path": "/calculate-your-career-relocation-payback/",
+      "sites_live": {
+        "giniloh.com": "/calculate-your-career-relocation-payback/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Moving for a career relocation is one of the most consequential financial decisions a professional can make\u2014yet most job offers gloss over the hidden costs that can turn a salary bump into a net loss. A new interactive tool, the Giniloh Career Relocation Cost & Payback Calculator, changes that by delivering hard numbers instead of guesswork. In a real-world case study\u2014a software engineer leapfrogging from Maryland to California for a $25,000 raise\u2014the calculator reveals a net upfront cost of $6,065 driven by lease penalties and an overlooked state-tax drag on employer reimbursements. More importantly, it pinpoints the exact break-even point: just 5.0 months, after which the move becomes pure profit. By modeling taxable transit benefits, AB 692 exclusions, and monthly take-home gains, this calculator transforms career relocation from a leap of faith into a data-backed strategy. Don\u2019t sign that offer without knowing your actual payback timeline.",
+      "modified": "2026-08-12T00:47:00",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "negotiate-job-offer-with-giniloh-visualizer",
+      "title": "Negotiate Job Offer with Giniloh Visualizer",
+      "url": "https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/",
+      "path": "/negotiate-job-offer-with-giniloh-visualizer/",
+      "sites_live": {
+        "giniloh.com": "/negotiate-job-offer-with-giniloh-visualizer/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Most candidates fixate on base salary when they negotiate a job offer\u2014but that leaves money on the table. The Giniloh Total Compensation Visualizer transforms the process. You input specific numbers for salary, equity, bonuses, and benefits, then instantly see how different scenarios affect your net worth. Simulate asking for higher salary versus more equity and compare long-term outcomes. This visual representation gives you objective data to justify counteroffers with confidence. Don't accept a deal that undervalues your skills. Before your next call, prepare a TCV visualization to highlight gaps and trade-offs. Discover a step-by-step method to quantitatively compare offers and turn a stressful conversation into a strategic advantage. Learn how to use this tool to negotiate a job offer that reflects your total value and secure the package you deserve.",
+      "modified": "2026-07-09T17:12:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "the-blueprint-behind-giniloh-money-flow",
+      "title": "The Blueprint Behind Giniloh Money Flow",
+      "url": "https://giniloh.com/the-blueprint-behind-giniloh-money-flow/",
+      "path": "/the-blueprint-behind-giniloh-money-flow/",
+      "sites_live": {
+        "giniloh.com": "/the-blueprint-behind-giniloh-money-flow/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Imagine taking control of your money flow without the usual spreadsheet headaches or second-guessing every move. That\u2019s exactly what the Giniloh Money Flow Simulator delivers\u2014a risk-free sandbox where you can test your smart money decisions in real time. Instead of hoping your bills line up, you automate cash flow pipelines that sweep surpluses toward debt, savings, or investments while underbalance pulls instantly prevent overdrafts. No more panic, no more guesswork. Based on the Loh-Friction Philosophy, this tool lets you simulate aggressive paydowns, emergency floors, even corporate treasury sweeps, and watch exactly how your money decisions play out before committing a single dollar. With built-in regulatory guardrails like Roth IRA penalty checks, the model stays realistic. Stop leaving your financial momentum on idle\u2014start testing your strategies today and see your money flow work for you.",
+      "modified": "2026-10-18T19:04:09",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless",
+      "title": "Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows",
+      "url": "https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+      "path": "/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/",
+      "sites_live": {
+        "giniloh.com": "/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Mastering your money flows is no longer guesswork. The Giniloh Frictionless Money Flow Simulator lets you configure a real-time cash routing engine on an interactive canvas\u2014click any account node to drag sliders for balances, ceiling limits, and safety floors. Its AI Orchestration Chat establishes automated pipelines, then tests them against macroeconomic scenarios like stagflation or a 2008-style market contraction. You can apply conditional market scripting rules that adjust sweeps when inflation rises or buy dips when the S&P 500 drops. The simulator enforces regulatory guardrails\u2014blocking Roth IRA early withdrawals, settlement delays, and pattern-day-trader limits\u2014so every simulation mirrors reality. Start the automated clock or step day-by-day to watch your cash move according to your logic. Whether in Personal or Enterprise mode, this tool transforms abstract financial planning into a concrete, risk-free sandbox. Stop guessing; start controlling where your money flows before it hits the real world.",
+      "modified": "2026-10-18T19:04:09",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "the-giniloh-money-flow-simulator-explained",
+      "title": "How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)",
+      "url": "https://giniloh.com/the-giniloh-money-flow-simulator-explained/",
+      "path": "/the-giniloh-money-flow-simulator-explained/",
+      "sites_live": {
+        "giniloh.com": "/the-giniloh-money-flow-simulator-explained/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the Loh-Friction Philosophy, it eliminates decision fatigue: surpluses automatically sweep toward debt, savings, or investments, while underbalance pulls instantly retrieve funds to prevent overdrafts. No more manual juggling or retrospective panic. You can simulate real-life scenarios\u2014aggressive debt paydown, emergency floor protection, even corporate treasury sweeps\u2014and see exactly how your smart money decisions play out. With built-in regulatory guardrails (like Roth IRA sweep penalties), the model stays realistic. Start testing your strategies today and stop leaving your momentum on idle.",
+      "modified": "2026-10-18T19:04:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6314,6 +6770,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-sandbox-boot-tax-110x-then-nothing",
+      "title": "Your Sandbox Boot Tax: 110x, Then Nothing",
+      "url": "https://aichieve.net/your-sandbox-boot-tax-110x-then-nothing/",
+      "path": "/your-sandbox-boot-tax-110x-then-nothing/",
+      "sites_live": {
+        "aichieve.net": "/your-sandbox-boot-tax-110x-then-nothing/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your sandbox boot is a tax you pay on every run. Four kinds of sandbox \u2014 plain containers, hosted sandboxes, Kubernetes-run containers and cloud servers\u2026",
+      "modified": "2026-10-29T17:52:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-seller-wont-stay",
       "title": "$200,000 Robots: Your Seller Won't Stay",
       "url": "https://aichieve.net/your-seller-wont-stay/",
@@ -6473,6 +6952,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1285,
+      "slug": "your-sandbox-boot-tax-110x-then-nothing",
+      "title": "Your Sandbox Boot Tax: 110x, Then Nothing",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-29T17:52:12",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -7632,20 +8125,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-15T12:33:30",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 878,
-      "slug": "your-cluster-hidden-clock",
-      "title": "Your Cluster&#8217;s Hidden Clock: 3 Minor Versions, 1 Year",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T12:33:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

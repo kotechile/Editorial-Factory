@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T17:52:14Z",
+  "updated_at": "2026-10-29T18:12:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -119,7 +119,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-09-26",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/"
     },
     {
       "slug": "2026-09-26_reshoring-moved-the-tariff-upstream",
@@ -1079,7 +1080,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-08",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/split-year-two-clock-seam/"
     },
     {
       "slug": "2026-10-08_token-price-record-low-budget-overrun",
@@ -1173,7 +1175,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/post-termination-option-clock-tax/"
     },
     {
       "slug": "2026-10-09_staggered-lockup-six-selling-decisions",
@@ -1191,7 +1194,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/"
     },
     {
       "slug": "2026-10-09_your-ev-is-now-a-home-battery-behind-a-paywall",
@@ -1228,7 +1232,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-10",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/"
     },
     {
       "slug": "2026-10-10_nearshoring-doesnt-move-the-trade-case",
@@ -1265,7 +1270,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-10",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/"
     },
     {
       "slug": "2026-10-10_why-importers-forfeit-duty-refunds",
@@ -4327,12 +4333,13 @@
         "By the numbers",
         "What I'd watch:",
         "The catch",
-        "Related reading",
-        "At a glance"
+        "At a glance",
+        "Related reading"
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-sandbox-boot-tax-110x-then-nothing/"
     }
   ]
 }
