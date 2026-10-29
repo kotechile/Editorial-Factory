@@ -92,6 +92,15 @@ would look green while nothing reached a front (verify.sh §8.5 greps for the se
    `metadata.illustration.alt_text` and `metadata.wordpress.media_alt` (learned 2026-10-22: the row kept
    the truncated string after the media was fixed, so the CMS and the provenance record disagreed), so the
    CMS and the provenance record agree.
+   **Read the `[image]` notes at the TOP of the publish log, not the tail (learned 2026-10-29).** The
+   persistence pass never blocks a publish on the image, so a failed commission reads as
+   `featured image FAILED: … — publishing without one` and the run's summary still ends green; on the
+   2026-10-29 `demand_sensing_advanced_sop` run the tail of the log showed no image line at all and the
+   article went live with `featured_media: 0`. After every publish, prove the visual from the filesystem
+   rather than the log — `python3 scripts/illustration_creator.py published/<file>.md --check` must not
+   answer "no illustration" — then recover in two steps, never by re-running `publish.py`:
+   `illustration_creator.py <artifact> --apply`, then `wp_draft.py --slug <slug> --reimage`, and read
+   `featured_media` back from `?context=edit` (the reimage line's "NOT yet switched" lags the switch).
    Idempotent by content (an unchanged article reuses its image; `--force` regenerates), skippable
    with `--no-illustration` or `ILLUSTRATION_ENABLED=false`, and a failure never blocks the
    publish: `scripts/cron-wp-drafts.sh` re-runs it for artifacts still missing an image *before*
