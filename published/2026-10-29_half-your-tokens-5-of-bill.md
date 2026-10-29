@@ -13,6 +13,12 @@ meta_title: "Half Your Tokens: 5% of Your Bill"
 meta_title_source: "derived_from_title"
 meta_description: "Forrester expects open-weight artificial intelligence (AI) models to carry half of enterprise AI tokens next year."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/half-your-tokens-5-of-bill/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "A brass jeweler's loupe rests on a worn green leather ledger in a dim room, lit from a window at the left."
+image_caption: "The Token Spend Trap: Why token volume detaches from enterprise AI costs."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

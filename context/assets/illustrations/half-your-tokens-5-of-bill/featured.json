@@ -1,0 +1,114 @@
+{
+  "slug": "half-your-tokens-5-of-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A brass jeweler's loupe resting on a textured leather ledger in a shadowy setting.",
+      "caption": "When the payback clock is tied to the model bill rather than the business outcome, teams risk optimizing for the wrong metric.",
+      "title": "AI Payback Ledger",
+      "bytes": 319072,
+      "sha256": "sha256:926fbc566657c9756ab720af40a3ecbb"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of a brass jeweler's loupe resting on a textured, heavy leather ledger in a dimly lit control room. 100mm macro lens, one razor-sharp focal plane. Shallow depth of field, visible surface texture and dust. Soft directional window light from the left side raking across the brushed brass and deep pine green leather. The loupe and ledger sit off-centre on the thirds, extreme asymmetry with macro focus, the background falling away into graphite shadows. Fine film grain, moody cinematic atmosphere, no people, no legible text.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermark, people, faces, hands",
+  "rationale": "The story revolves around a single, specific miscalculation: reading the wrong line item on a bill. An extreme close-up of a ledger or invoice under scrutiny perfectly captures the idea of measuring the smallest part and calling it the total.",
+  "cue": "the smallest part and calls it the total",
+  "subject": "a heavy leather ledger scrutinized by a brass jeweler's loupe",
+  "core_thesis": "The six-month AI payback test is being run on token spend rather than business outcome, creating a false metric that passes on cheap routing but fails to measure real ROI.",
+  "core_conflict": "Measuring token spend vs. measuring actual business process outcome.",
+  "composition": "extreme asymmetry with macro focus",
+  "alt_text": "A brass jeweler's loupe rests on a worn green leather ledger in a dim room, lit from a window at the left.",
+  "caption": "The Token Spend Trap: Why token volume detaches from enterprise AI costs.",
+  "title": "The Token Spend Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "editorial_macro"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/half-your-tokens-5-of-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 360898,
+  "sha256": "sha256:eacee306c8c5eb5ecf7fcb033d6617aa832ea85df1799db69ac5adefc0329ace",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 360898,
+    "quality": 88,
+    "sha256": "sha256:eacee306c8c5eb5ecf7fcb033d6617aa832ea85df1799db69ac5adefc0329ace",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:1ab364a66f96c03e8c3896fca65181f512c4db737d3ac42284d7f69dc2000f3f",
+  "render_phash": "ecc2fecff3c9bd8f6f872d2d3399c6931ed31ed3c3f6d03edd03c851e0b6f823",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A brass jeweler's loupe rests on a worn, dark green leather-bound book or ledger.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a ledger and a loupe, which metaphorically relates to the article's focus on financial scrutiny and bills."
+  },
+  "source_hash": "sha256:182218ad7347461d8df0cda41d64f70d",
+  "source_chars": 6387,
+  "task_id": "1858efadcb9f67baa8ec6cd06a4e7c06",
+  "credits": 5.0,
+  "cost_ms": 127,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1858efadcb9f67baa8ec6cd06a4e7c06_1793273869345.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of a brass jeweler's loupe resting on a textured, heavy leather ledger in a dimly lit control room. 100mm macro lens, one razor-sharp focal plane. Shallow depth of field, visible surface texture and dust. Soft directional window light from the left side raking across the brushed brass and deep pine green leather. The loupe and ledger sit off-centre on the thirds, extreme asymmetry with macro focus, the background falling away into graphite shadows. Fine film grain, moody cinematic atmosphere, no people, no legible text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-29T11:38:00+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI // FINOPS TRAP",
+    "title": "THE TOKEN SPEND TRAP",
+    "hook": "Why token volume detaches from enterprise AI costs",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.31,
+    "target": 4.5,
+    "clutter": 0.114,
+    "region_rgb": [
+      27,
+      32,
+      30
+    ],
+    "binding_rgb": [
+      48,
+      49,
+      44
+    ],
+    "title_lines": [
+      "THE TOKEN",
+      "SPEND TRAP"
+    ],
+    "subject": 0.014,
+    "ink_subject": 0.006,
+    "spike": 0.046,
+    "generated_at": "2026-10-29T11:38:00+00:00"
+  }
+}

@@ -354,3 +354,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-28 | `your-charger-gap-buys-16-robots` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-charger-gap-buys-16-robots/featured.jpg` |
 | 2026-10-28 | `your-adjuster-hides-a-25-gap` | property_loss_insurance_mitigation | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-adjuster-hides-a-25-gap/featured.jpg` |
 | 2026-10-29 | `your-compaction-trap-87-forgeries-survive` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-compaction-trap-87-forgeries-survive/featured.jpg` |
+| 2026-10-29 | `half-your-tokens-5-of-bill` | enterprise_ai_finops | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/half-your-tokens-5-of-bill/featured.jpg` |
