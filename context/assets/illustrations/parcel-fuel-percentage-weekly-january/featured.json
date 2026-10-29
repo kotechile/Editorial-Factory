@@ -1,0 +1,117 @@
+{
+  "slug": "parcel-fuel-percentage-weekly-january",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular mechanical shipping block interlocked with a sliding gauge on a steel rail, resting on a concrete surface.",
+      "caption": "The shift from a fixed logistics base rate to a weekly floating fuel surcharge transfers pricing risk directly to shippers.",
+      "title": "USPS Floating Fuel Charge Mechanism",
+      "bytes": 379299,
+      "sha256": "sha256:573697773781dbec38aa567da4e4de04"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete warehouse floor. A matte clay shipping block interlocking with an adjustable mechanical dial sliding along a brushed steel rail. Extreme asymmetric composition, off-centre on the right thirds, generous negative space. One directional key light from the left throwing a long, hard cast shadow. Matte surfaces, visible moulding seams, and deep contact shadows. Slate grey, safety yellow, and weathered orange palette.",
+  "negative_prompt": "garbled text, random lettering, numbers, UI, watermarks, embossed text, printed words, typography",
+  "rationale": "A matte 3D render perfectly captures the structural shift from a fixed operational cost to a sliding, floating mechanism without relying on literal or generic stock photos of delivery vans.",
+  "cue": "swaps a flat 8% charge",
+  "subject": "a modular mechanical assembly of a shipping block and a sliding gauge on a rail",
+  "core_thesis": "USPS is transferring pricing risk to shippers by replacing a fixed 8% base postage charge with a weekly floating fuel surcharge.",
+  "core_conflict": "Predictable, fixed budget numbers versus a volatile, floating weekly fuel percentage that shifts cost risk onto buyers.",
+  "composition": "extreme asymmetric composition, off-centre on the right thirds",
+  "alt_text": "A matte clay parcel block locked against a sliding gauge on a steel rail in a bare warehouse.",
+  "caption": "USPS Shifts To Fuel Surcharge: Weekly rate resets transfer pricing risk to shippers.",
+  "title": "USPS Shifts To Fuel Surcharge",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "clay_render",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/parcel-fuel-percentage-weekly-january/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395829,
+  "sha256": "sha256:acfffc8c75bafa17361b464643e8d1d92c3692a6c5f566b6ed8357cbbc58261a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395829,
+    "quality": 80,
+    "sha256": "sha256:acfffc8c75bafa17361b464643e8d1d92c3692a6c5f566b6ed8357cbbc58261a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ae8f65a58e5c7d0400172aa6d83dfba7c58a7d3758f408157799a410b9a326fb",
+  "render_phash": "7c6b7c08dffffcff4067804f01b7019205910fb03f87e00f44ed079f0707299f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A grey block and an orange mechanical device with a dial sit on a metal rail on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a sliding gauge and block, which serves as a metaphor for a shifting charge."
+  },
+  "source_hash": "sha256:d94e469c75c26b04b19e90c78e1d6163",
+  "source_chars": 5737,
+  "task_id": "ce87e1fa30d5446093ff3c87a6ab4952",
+  "credits": 18.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_9dfe6cdb9d556b6d908172c1faf4c9ab.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly on a weathered concrete warehouse floor. A matte clay shipping block interlocking with an adjustable mechanical dial sliding along a brushed steel rail. Extreme asymmetric composition, off-centre on the right thirds, generous negative space. One directional key light from the left throwing a long, hard cast shadow. Matte surfaces, visible moulding seams, and deep contact shadows. Slate grey, safety yellow, and weathered orange palette.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-29T11:54:48+00:00",
+  "overlay": {
+    "kicker": "PARCEL LOGISTICS // FUEL SURCHARGES",
+    "title": "USPS SHIFTS TO FUEL SURCHARGE",
+    "hook": "Weekly rate resets transfer pricing risk to shippers",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.62,
+    "target": 4.5,
+    "clutter": 0.16,
+    "region_rgb": [
+      79,
+      75,
+      67
+    ],
+    "binding_rgb": [
+      98,
+      93,
+      87
+    ],
+    "title_lines": [
+      "USPS SHIFTS TO",
+      "FUEL SURCHARGE"
+    ],
+    "subject": 0.12,
+    "ink_subject": 0.073,
+    "spike": 0.306,
+    "generated_at": "2026-10-29T11:54:48+00:00"
+  }
+}

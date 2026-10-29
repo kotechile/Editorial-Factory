@@ -13,6 +13,12 @@ meta_title: "Your 8% Charge Shifts Every Week"
 meta_title_source: "derived_from_title"
 meta_description: "Your 8 per cent charge on base postage shifts every week starting in January. The United States Postal Service (USPS) is replacing it with a fuel surcharge…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/parcel-fuel-percentage-weekly-january/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A matte clay parcel block locked against a sliding gauge on a steel rail in a bare warehouse."
+image_caption: "USPS Shifts To Fuel Surcharge: Weekly rate resets transfer pricing risk to shippers."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
