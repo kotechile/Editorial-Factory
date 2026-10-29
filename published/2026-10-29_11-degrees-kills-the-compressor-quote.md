@@ -61,19 +61,6 @@ One summer reading is just a quick look at one afternoon's heat load. That is ex
 
 Where I have landed is that the split is a sorting tool rather than a final ruling. It narrows eight suspects down to two or three, and it makes a compressor pitch something you can check. The case for a new compressor needs a set of numbers read together, spanning airflow, gas charge, and the split across the coil. An owner must demand that the reading came from the right place, and that the airflow and charge numbers exist at all. The same caution applies to the tools themselves: [a thermal image is a pointer, not an answer](/your-250-imager-needs-15-degrees/), and a reading taken at a distance deserves the same suspicion.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Tools & Equipment" -> /categories/tools-equipment/ [same site (wellroost.com); same category; the article's own category hub (Tools & Equipment)] Link "Tools & Equipment" in the section where the article touches this topic. -->
-<!-- internal-link hint: "3 Days to Kill Your Deposit" -> /kill-your-deposit-in-3-days/ [same site (wellroost.com); same category] Link "3 Days to Kill Your Deposit" in the section where the article touches this topic. -->
-<!-- internal-link hint: "Retainage Trap: 5 Percent, Not 15" -> /hold-back-capped-at-5-percent/ [same site (wellroost.com); same category] Link "Retainage Trap: 5 Percent, Not 15" in the section where the article touches this topic. -->
-## Related reading
-
-- [Tools & Equipment](/categories/tools-equipment/) — more on Tools & Equipment
-- [3 Days to Kill Your Deposit](/kill-your-deposit-in-3-days/) — more on Tools & Equipment
-- [Retainage Trap: 5 Percent, Not 15](/hold-back-capped-at-5-percent/) — more on Tools & Equipment
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
