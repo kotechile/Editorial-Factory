@@ -667,6 +667,24 @@ one out at first use — the rewrite will re-expand some (`PCIe`) and leave othe
 
 **`datadoghq.com/pricing` fetches with every figure as text, but its markup puts numeric junk ahead of its own FAQ prose (learned 2026-10-27).** An SVG `width="16" height="15"` and a `0%…100%` progress string sit earlier in the document than the sentences a row would quote, so a cell leading on `100 custom metrics per host` evidences on navigation while `$ 0.10 Per ingested or scanned GB` lands cleanly. Lead any Datadog row on the ingest or forwarding rate and carry the custom-metrics allotment, its "counted hourly and averaged monthly across your entire account" clause and the $15/$18 per-host prices in prose under that citation, recording in the verified brief that they were read by eye.
 
+**The reviewer rewrites the title's own noun out of the lead, and `lead_ok` is the only instrument that
+notices (learned 2026-10-29).** On the sandbox-boot evergreen a hand-set 100 STRONG headline
+("Your Sandbox Boot Tax: 110x, Then Nothing") came back with the lead opening "Your code boundary
+charges a tax" — the article's own subject noun gone from sentence 1 while `headline_score` still read
+100 standalone, and `lead_ok` flipped to False naming both `boot` and `nothing` as absent. The same pass
+dropped the headline's second clause altogether ("fades into background noise"), so the title promised a
+disappearance the body no longer described. Re-score with `hs.score(title, body=<the FINAL>)` and restore
+the title's exact nouns plus the warrant sentence from the verified brief; do not accept a re-cut title
+whose hook the lead no longer earns.
+
+**Fixing `rhythm health` by splitting sentences drops the `sd` the audit actually compares, so tune both
+at once (learned 2026-10-29).** On the same article `review_audit` first read `rhythm health 0.832 ->
+0.294` (one 43-word sentence in the tail), and the split that fixed health took `sd` to 7.7 — under the
+85% floor the flattened-rhythm advisory reads, so the two advisories swapped places across three editing
+passes. The shape that clears both: keep one connected 33–36-word sentence, add three or four genuinely
+short ones (4–7 words) at section openers, and leave the numbers bullets long; that landed
+`sd 10.2 -> 10.9` (better than the draft) with health above the draft's, Flesch 63.8 and every gate green.
+
 ## 5. Handoff
 
 **The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
