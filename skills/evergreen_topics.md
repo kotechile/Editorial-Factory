@@ -320,6 +320,17 @@ one a workstation payback needs); and NVIDIA's workstation product pages under
 tokens are cache/GC timers, not build times), and `dora.dev/research/…` (3 KB landing pages; the report
 itself is a PDF).
 
+**A consultancy "worked scenario" is not a citation when its own page says the figures are hypothetical (learned 2026-10-29).**
+On the demand-pattern evergreen the best-looking row for the policy leg was a consultancy's Croston case study:
+3,200 spare-part SKUs, 58% intermittent, a reorder point of 11 units from a 4-week lead time. The page's own
+preamble reads *"The company and every figure in it are hypothetical, chosen to show how the calculations fit
+together; they are not results from a real client"*, and the same item is given a **second, different** reorder
+point (16 units, from a different formula) further down the page. Both figures verify against the page, so the
+gate would have passed a row that contradicts itself. The rule: before a row is written, read the page for a
+hypothetical disclaimer and for a second mention of the same quantity — a source that supplies two answers to
+its own question is replaced with one that states a rule (`toolsgroup.com`'s service-level sentence carried that
+leg instead), and a worked example may be cited only for arithmetic the article performs visibly.
+
 **A row's `measured`/`vendor claim` cell is a claim too — check it on the page that row cites (learned
 2026-10-13).** The gate verifies the figure, never the provenance gloss: a row inherited NVIDIA's
 "preliminary product specifications, subject to change" footnote from the RTX PRO 5500 page onto the RTX
