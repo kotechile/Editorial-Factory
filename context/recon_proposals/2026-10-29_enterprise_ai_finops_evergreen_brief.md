@@ -1,0 +1,36 @@
+# Evergreen Brief: enterprise_ai_finops — 2026-10-29
+**Archetype:** evergreen
+**Vertical:** enterprise_ai_finops
+**Persona:** enterprise_cai
+**Decision the reader is facing:** Whether to move AI spend from one central budget line to per-business-unit chargeback this quarter, and what has to exist before the first chargeback number is defensible — because the model provider's invoice stops at the API key, project or workspace, so a cost centre has to be created at request time rather than read off the bill.
+**Durability:** The mechanism is structural, not a news fact: no model provider bills by business unit, cost centre or application, and the retrieval/orchestration harness a production feature depends on never appears on the token invoice at all — so allocation has always to be built by the buyer, and holds for as long as providers bill per token. The survey percentages are dated as of the September 2026 State of Tokenomics survey and the State of FinOps 2026 (retrieved 2026-10-29), the practitioner bands as of the FinOps Foundation's October 2026 tokenomics working-group paper, and the two list prices as of 2026-10-29; what expires is the percentage table and the rate card, not the method.
+**De-dup:** `2026-09-24_ai-spend-27t-cost-visibility-mandate` is this vertical's nearest prior artifact (published 35 days ago): it argues cost control became a *buying requirement* — buyers now demand vendors embed usage tracking — and never builds the buyer-side allocation map. The three prior evergreen pieces price lines above this one: `2026-10-08_cache-boundary-decides-input-bill` (input tokens), `2026-10-15_cheaper-model-pricier-task` (output and reasoning tokens) and `2026-10-22_review-minute-costs-66-dollars` (the labour line). Today's news piece `2026-10-29_half-your-tokens-5-of-bill` forecasts token *composition* (open-weight share of tokens against spend) and puts the payback clock on a process change; it shares no figure and no decision with this brief. Cross-vertical check: `grep -ril "chargeback\|showback\|attribut" published/` returns nine artifacts; the two nearest are `2026-10-21_agent-fleet-two-meters` (multi_agent_enterprise_fabric — the harness is the second meter an architect must instrument when sizing a fleet, not where a finance owner allocates spend) and `2026-10-27_your-miss-costs-9x-the-chargeback` (control_tower_exception_orchestration — a retailer's supplier deduction), both checked and dropped as retreads.
+**Thesis:** A provider invoice stops at the API key, so an AI chargeback is not a report you run at month end but an identifier you create before the request — and because the harness that makes a feature work never appears on that invoice, a chargeback built from tokens alone bills each business unit for less than half of what it actually consumes.
+
+**Lead:** The vertical's own `primary_angles` row "token cost attribution by business unit", evidenced by the FinOps Foundation's October 2026 tokenomics working-group paper ("Tokenomics: Managing AI Value in SaaS Model Token Costs"), which states the mechanism in one sentence — a provider invoice breaks down "at most by API key, project, or workspace, with no concept of business unit, cost center, or application" — and by the Foundation's own crawl/walk/run maturity ladder (Visibility: account-level spend → workload-level attribution → request-level with unit metrics; Allocation: none → showback to teams → chargeback with team budgets), plus the September 2026 State of Tokenomics survey finding that buyers' most common request to providers is more granular data (23 percent) rather than a lower price (4 percent).
+
+| # | Source | URL | Retrieved | Figure/claim it supports | Vendor claim or measured? |
+|---|---|---|---|---|---|
+| 1 | FinOps Foundation — State of FinOps 2026, cited in "Tokenomics: Managing AI Value in SaaS Model Token Costs" | https://www.finops.org/wg/token-economics-saas | 2026-10-29 | 98 percent — 98 percent of respondents manage AI spend, up from 31 percent two years earlier | measured (survey, as cited by the Foundation) |
+| 2 | FinOps Foundation — September 2026 State of Tokenomics survey, same paper | https://www.finops.org/wg/token-economics-saas | 2026-10-29 | 23 percent — the most common request to model and token providers was more transparency and granular data (23 percent), against 4 percent asking for lower prices | measured (survey, as cited) |
+| 3 | FinOps Foundation — tokenomics working-group paper, "The Cost beyond the Model Call" | https://www.finops.org/wg/token-economics-saas | 2026-10-29 | 40 to 60 percent — in production retrieval-augmented and agentic architectures the surrounding infrastructure often represents 40 to 60 percent of total feature spend | estimate (working-group framing, not a measurement) |
+| 4 | FinOps Foundation — tokenomics working-group paper, "Budgeting and Forecasting" | https://www.finops.org/wg/token-economics-saas | 2026-10-29 | 30 to 60 days — instrument each application and measure for 30 to 60 days before setting budgets at 110 to 120 percent of baseline with alerts at 80 and 100 percent | practitioner guidance, not a measurement |
+| 5 | Datadog — logs pricing page (list price) | https://www.datadoghq.com/pricing/ | 2026-10-29 | $ 0.10 Per ingested or scanned GB, per month — the observability leg of the harness is metered too | vendor claim (list price) |
+| 6 | AWS — Billing and Cost Management User Guide, "Organizing and tracking costs using AWS cost allocation tags" | https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html | 2026-10-29 | 24 hours — all tags can take up to 24 hours to appear in the Billing and Cost Management console | vendor documentation (platform behaviour) |
+
+## Candidate topics considered
+| Topic | Usefulness | Durability | Evidence | Actionability | Composite | Verdict |
+|---|---|---|---|---|---|---|
+| The provider invoice stops at the API key — what a defensible AI chargeback has to be built from (two streams, a baseline window, showback before chargeback) | 9 | 9 | 9 | 9 | 9.0 | **winner** |
+| Budget the AI line from a 30–60 day measured baseline instead of a vendor forecast | 7 | 9 | 8 | 9 | 8.1 | dropped — this is one rule inside the winner, not a thesis of its own |
+| The harness, not the model call, is half of what an AI feature costs | 6 | 9 | 8 | 5 | 7.1 | dropped — a single statistic with no decision attached for a finance owner (and `2026-10-21_agent-fleet-two-meters` already argues the two-meter problem for architects) |
+| Showback versus chargeback: which maturity rung a company should be on | 7 | 9 | 6 | 6 | 7.1 | dropped — same spine as the winner, and the distinguishing evidence (the crawl/walk/run ladder) is one table, so it cannot carry three independent rows |
+
+## Gate result
+<!-- written by scripts/evergreen_gate.py — do not hand-edit; re-run the gate if you edit a row -->
+
+## Gate result
+
+<!-- evergreen-gate:start -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=3 hosts=3 decision="sha1:3221f971ba" dedup="matched a prior artifact: 2026-09-24_ai-spend-27t-cost-visib" window_days=180 checked_at=2026-10-29T18:04:26+00:00 -->
+<!-- evergreen-gate:end -->
