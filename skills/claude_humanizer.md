@@ -45,8 +45,14 @@ Introduce supporting context using standardized H2 headers (`## `).
 
 ### 3.5 Strong, Simple Diction
 - Strip out passive verbs, weak adverbs (e.g., "basically", "materially", "extremely"), and bloated "10-dollar" corporate jargon.
-- Prefer short, single-syllable, visual words that paint a clear picture.
+- Prefer short, single-syllable, visual words that paint a clear picture — **for description, never for mechanism.** A named method, metric or error outranks any picture of it: "Croston's two-part rate estimate, trimmed by the SBA bias factor" beats "a two-parameter rate estimate with the fix at half the smoothing constant", and "point-forecast accuracy" beats "an accuracy goal can grab".
 - Translate domain jargon into plain English or add an immediate short parenthetical gloss.
+- **Diction standard (owner, 2026-10-29) — the plain-English over-correction is what makes a piece unreadable, and no gate sees it:**
+  - **No invented metaphor, slang or shorthand for a standard term.** Banned in practice: "grab", "grip", "hand-me-downs", "the segment pass", "the budget talk", "the desk's own", "quote the sample, not the slogan". Use the industry noun — *catalog segmentation audit*, *software renewal review*, *budget cycle*, *our <tool name>*.
+  - **Lock the taxonomy once you name it.** When the piece introduces a classification grid (smooth, erratic, intermittent, lumpy), those four words name those four cells for the rest of the article. "Sparse", "hard groups" or "unscorable" may appear only with the cell they map to.
+  - **Name the authority in the prose.** A citation hidden behind "a forecasting expert" or "a later paper" reads as hedging: write the name the footnote carries (Kourentzes, Makridakis, Syntetos and Boylan).
+  - **Never explain arithmetic to an executive.** "28,903 minus 1,994" is a defect; state the residue with its share — "the other 26,909, about 93%".
+  - **A tool link is a prerequisite, not a plug.** Close on the operational condition: "that baseline is worth measuring before any algorithm is tuned, and our <tool> reports the gap", never "the desk's own calculator".
 
 ### 3.6 Paragraph Discipline & Sentence Rhythm
 - Keep paragraphs **3 to 5 sentences, never more than 6**. Depth comes from sentences per

@@ -13,7 +13,7 @@ evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity
 | **By the numbers** | Mandatory quantitative data section (**By the numbers:**) highlighting 2–4 verified figures, percentages, benchmarks, or cost changes in clean, bolded scannable bullets. In synthesis articles, bullets must represent verifiable data from **both** underlying anchors. |
 | **Tactical insight** | What the people closest to the story are doing, what the consequences land on, and the next signals to watch — reported, never prescribed (`persona:` from `context/personas.json`). Signpost it **Where this bites:** / **What I'd watch:** and bulletize 3+ points. Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
 | **Nuanced takeaway** | The honest limitation or counter-argument (**The catch / Between the lines**). Ends on substance, not a cheerlead. |
-| **TL;DR (At a Glance)** | 4-part Smart Brevity breakdown (**The Big Shift / What Happened**, **Why It Matters**, **What I'd Watch**, **The Catch / Fine Print**). Must clearly explain what the article is about in sentence 1, articulate the systemic stakes, name what the writer is watching next with plain-English definitions in sub-bullets, and state the trade-offs/caveats. **Long-form only.** |
+| **TL;DR (At a Glance)** | A **≤50-word** box, three lines: **The shift / The number / The risk**. It states what changed, the figure that proves it and the one caveat — it never re-lists the tactical section's watch items (owner standard 2026-10-29: a recap the reader just read is scroll friction, not emphasis). **Long-form only.** |
 
 The **TOC is render-time only** — the site derives it from the section headings. Never write a
 "Table of Contents" into the article body.
@@ -58,18 +58,31 @@ The **TOC is render-time only** — the site derives it from the section heading
   matching `_signals.md`. This flag is what marks the article as a fusion on the dashboard's own
   surfaces (`/api/articles.json`, the article page badge) — an unflagged synthesis publishes as a
   single-signal story.
-- **At a Glance (TL;DR) Schema:** The `<!-- tldr -->` section must be a complete executive briefing that explains what the article is about in ~30 seconds using this exact 4-part plain-English structure:
-  1. `- **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in clear, contextual terms>`
-  2. `- **Why It Matters:** <1-2 sentences stating the systemic, financial, or architectural stakes for the reader>`
-  3. `- **What I'd Watch:** <intro line naming what the writer is watching next, and why>` followed by indented sub-bullets:
-     - `  - **<Move Name>:** <1-line plain-English definition explaining what it does and why it works>`
-  4. `- **The Catch:** <1-2 sentences detailing the trade-offs, upfront design requirements, security/access controls, and realistic caveats>`
+- **At a Glance (TL;DR) Schema — a 50-word box, not a second summary (owner standard 2026-10-29):**
+  1. `**The shift:** <what changed, in one sentence>`
+  2. `**The number:** <the one figure that proves it — and that the body already states>`
+  3. `**The risk:** <the single caveat a reader must carry away>`
+  Under 50 words total, no bullet list mirroring **What I'd watch**, and no figure the body does not carry. The old 4-part breakdown (Big Shift / Why It Matters / What I'd Watch + sub-bullets / The Catch) is retired: it duplicated the tactical section and every watch item arrived twice on one page.
 - **Renaming the slug mid-run orphans the old draft, and the voice gate reads every file in
   `context/drafts/`.** Changing a working title after the first draft leaves
   `YYYY-MM-DD_<old-slug>_draft.md` behind beside the new one; `check_social_voice.mjs` walks the
   directory, `verify.sh` §9 counts its problems against the repo, and any step globbing `*_draft.md`
   can pick the wrong file. Write the new file, confirm it exists, then delete the superseded path by
   exact name — never assume a rename removed it.
+- **Diction standard (owner, 2026-10-29) — the failure the recaps fix cannot see.** A draft can clear
+  Flesch 50, both gates and the citation floor and still be hard to read, because the damage is in the
+  nouns: a method described as a riddle, a standard term swapped for a metaphor, a taxonomy renamed
+  mid-piece. Five rules, and the full wording lives in `skills/claude_humanizer.md` §3.5:
+  (1) **name the method and its purpose** — "Croston's method, trimmed by the SBA bias factor", never
+  "a two-parameter estimate with the fix at half the smoothing constant"; (2) **use the exact error and
+  policy nouns** — *point-forecast accuracy*, *percentage error (MAPE)*, *upward bias*, *fill rate
+  target*, never "an accuracy goal can grab" or "that grip is weak"; (3) **lock the taxonomy** — once the
+  piece names its grid (smooth, erratic, intermittent, lumpy), those words name those cells for the rest
+  of the article, and any other noun says which cell it maps to; (4) **no invented slang** ("the segment
+  pass", "the budget talk", "the desk's own") and **no arithmetic narration** ("28,903 minus 1,994" →
+  "the other 26,909, about 93%"); (5) **name the authorities in the prose** (Kourentzes, Makridakis,
+  Syntetos and Boylan), never "a forecasting expert" or "a later paper". Applies to drafts written from
+  this date; published articles are grandfathered.
 - **Pre-tune the draft to the accessibility floor before Loop 3.** Run
   `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. A draft that
   already clears the Flesch floor (~50) and carries a first-person observer cue in every interpreting
@@ -151,13 +164,9 @@ slug: <slug>
 
 ## At a glance
 
-- **The Big Shift:** <1-2 sentences explaining what happened and what the article is about in plain English>
-- **Why It Matters:** <1-2 sentences articulating the economic/operational impact>
-- **The Winning Moves:** <what the writer is watching next, and why> (or **What I'd Watch:**)
-  - **<Move 1>:** <plain English definition of what it does and why>
-  - **<Move 2>:** <plain English definition of what it does and why>
-  - **<Move 3>:** <plain English definition of what it does and why>
-- **The Fine Print:** <practical caveats, trade-offs, and realistic constraints> (or **The Catch:**)
+**The shift:** <what changed — one sentence, under 50 words for the whole box>
+**The number:** <the figure that proves it, already stated in the body>
+**The risk:** <the one caveat that matters>
 
 ## Sources
 [1] ...  [2] ...
