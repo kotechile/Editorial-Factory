@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T12:22:53Z",
+  "updated_at": "2026-10-29T12:50:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4276,6 +4276,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-10-29",
+      "public": false
+    },
+    {
+      "slug": "2026-10-29_your-llc-bill-75-until-2028",
+      "title": "Your LLC Bill: 75% Until 2028",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
       "date": "2026-10-29",
       "public": false
     }
