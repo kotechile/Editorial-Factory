@@ -1,0 +1,120 @@
+{
+  "slug": "second-backyard-home-1000-deposit",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two foundation layouts marked by stakes and trenches in a residential backyard at twilight, illuminated by a site lamp.",
+      "caption": "The new state mandate guarantees the right to build two detached backyard cottages, but strict deposit limits leave builders carrying the upfront financial risk.",
+      "title": "Dual Backyard Home Foundations",
+      "bytes": 392169,
+      "sha256": "sha256:275172b086aa9cda9a5f07c32ca3adb4"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Two foundation layouts marked by wooden stakes and shallow trenches in a residential backyard at dusk, lit by one site lamp.",
+      "caption": "Two detached backyard homes can be approved by right in California from January 1; the $1,000 down-payment cap is unchanged.",
+      "title": "Two Cottages, One $1,000 Deposit",
+      "bytes": 385471,
+      "sha256": "sha256:47a28a55d31ee194c76ca87074bb9b47c822932371c0836ab6556b5a865a66c3"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A cinematic film still of two distinct foundation layouts marked by wooden stakes and shallow utility trenches in a dirt backyard behind a suburban house. Wide establishing frame with extreme asymmetry, anamorphic 35mm look. A single warm workman's site lamp casts long directional shadows across the raw earth and concrete formwork from the left. Deep pine green, ochre dirt, and bone white accents. Crisp atmospheric depth, restrained teal-and-amber palette, blue-hour twilight sky, no people facing camera, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, signature",
+  "rationale": "The article is about the physical reality of building two detached backyard homes and the financial risk involved on a residential lot. A cinematic still captures the material presence of this new dual-cottage mandate in a residential setting, highlighting the groundwork and the tension of an unfinished, high-risk project.",
+  "cue": "two detached backyard homes",
+  "subject": "two distinct foundation layouts marked by wooden stakes and utility trenches in a suburban backyard",
+  "core_thesis": "A California rule requiring cities to approve two detached backyard homes limits upfront deposits to $1,000 and restricts progress payments to completed work, emphasizing the draw schedule over the permit for financial protection.",
+  "core_conflict": "State-mandated housing expansion via detached backyard cottages vs. strict financial deposit limits that expose builders to upfront risk.",
+  "composition": "wide establishing frame with extreme asymmetry",
+  "alt_text": "Two foundation layouts marked by wooden stakes and shallow trenches in a residential backyard at dusk, lit by one site lamp.",
+  "caption": "Two detached backyard homes can be approved by right in California from January 1; the $1,000 down-payment cap is unchanged.",
+  "title": "Two Cottages, One $1,000 Deposit",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/second-backyard-home-1000-deposit/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 385365,
+  "sha256": "sha256:1a6bccfc9efadbf8ca8f18a06106a0c1cb4922da3af327792a09901a69ed47d9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 385365,
+    "quality": 72,
+    "sha256": "sha256:1a6bccfc9efadbf8ca8f18a06106a0c1cb4922da3af327792a09901a69ed47d9",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0edab287d7d5efb1d71703968b71499bc5ec555b33884156261ad7e0460c1177",
+  "render_phash": "00ff007f0d1f6e8f33193731107f0eff0efb02ff14ef00cf039f073719460233",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two rectangular foundation outlines marked by wooden stakes and concrete forms in a residential backyard at dusk, illuminated by a work light.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows two foundation layouts in a backyard, matching the article's focus on building two backyard homes."
+  },
+  "source_hash": "sha256:59b9dded71a3b77b09118792c698fcc4",
+  "source_chars": 5026,
+  "task_id": "c1c4ab5cce99261ff645c30d386324c9",
+  "credits": 5.0,
+  "cost_ms": 42,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c1c4ab5cce99261ff645c30d386324c9_1793276667709.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A cinematic film still of two distinct foundation layouts marked by wooden stakes and shallow utility trenches in a dirt backyard behind a suburban house. Wide establishing frame with extreme asymmetry, anamorphic 35mm look. A single warm workman's site lamp casts long directional shadows across the raw earth and concrete formwork from the left. Deep pine green, ochre dirt, and bone white accents. Crisp atmospheric depth, restrained teal-and-amber palette, blue-hour twilight sky, no people facing camera, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-29T12:24:39+00:00",
+  "overlay": {
+    "kicker": "CALIFORNIA HOUSING // ADU PAYMENT RULE",
+    "title": "TWO COTTAGES, ONE $1,000 DEPOSIT",
+    "hook": "The permit rule changed. The payment rule did not.",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.6,
+    "target": 4.5,
+    "clutter": 0.084,
+    "region_rgb": [
+      19,
+      30,
+      33
+    ],
+    "binding_rgb": [
+      34,
+      42,
+      45
+    ],
+    "title_lines": [
+      "TWO COTTAGES,",
+      "ONE $1,000 DEPOSIT"
+    ],
+    "subject": 0.045,
+    "ink_subject": 0.022,
+    "spike": 0.136,
+    "generated_at": "2026-10-29T12:24:39+00:00"
+  }
+}

@@ -356,3 +356,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-29 | `your-compaction-trap-87-forgeries-survive` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-compaction-trap-87-forgeries-survive/featured.jpg` |
 | 2026-10-29 | `half-your-tokens-5-of-bill` | enterprise_ai_finops | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/half-your-tokens-5-of-bill/featured.jpg` |
 | 2026-10-29 | `parcel-fuel-percentage-weekly-january` | supply_chain | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/parcel-fuel-percentage-weekly-january/featured.jpg` |
+| 2026-10-29 | `second-backyard-home-1000-deposit` | home_ops_execution | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/second-backyard-home-1000-deposit/featured.jpg` |

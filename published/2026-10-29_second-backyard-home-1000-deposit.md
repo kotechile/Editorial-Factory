@@ -13,6 +13,12 @@ meta_title: "Your Two Backyard Homes, $1,000 Risk"
 meta_title_source: "derived_from_title"
 meta_description: "Starting early next year, a city must approve your second backyard home. The state will require cities to clear two separate cottages on a single lot…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/second-backyard-home-1000-deposit/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Two foundation layouts marked by wooden stakes and shallow trenches in a residential backyard at dusk, lit by one site lamp."
+image_caption: "Two detached backyard homes can be approved by right in California from January 1; the $1,000 down-payment cap is unchanged."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
