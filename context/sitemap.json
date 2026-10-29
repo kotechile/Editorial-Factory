@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T18:41:05Z",
+  "updated_at": "2026-10-29T18:47:08Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4283,6 +4283,24 @@
       "date": "2026-10-29",
       "public": true,
       "url": "https://wellroost.com/second-backyard-home-1000-deposit/"
+    },
+    {
+      "slug": "2026-10-29_your-carriers-750000-doesnt-cover-cargo",
+      "title": "Your Carrier's $750,000 Doesn't Cover Cargo",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-10-29",
+      "public": false
     },
     {
       "slug": "2026-10-29_your-chargeback-misses-40-of-the-bill",

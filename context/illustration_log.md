@@ -362,3 +362,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-29 | `promo-spike-is-a-loan` | demand_sensing_advanced_sop | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/promo-spike-is-a-loan/featured.jpg` |
 | 2026-10-29 | `your-sandbox-boot-tax-110x-then-nothing` | agentic_ai | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-sandbox-boot-tax-110x-then-nothing/featured.jpg` |
 | 2026-10-29 | `your-chargeback-misses-40-of-the-bill` | enterprise_ai_finops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-chargeback-misses-40-of-the-bill/featured.jpg` |
+| 2026-10-29 | `your-carriers-750000-doesnt-cover-cargo` | supply_chain | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-carriers-750000-doesnt-cover-cargo/featured.jpg` |

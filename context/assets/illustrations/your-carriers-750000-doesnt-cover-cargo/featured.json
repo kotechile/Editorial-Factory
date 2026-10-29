@@ -1,0 +1,112 @@
+{
+  "slug": "your-carriers-750000-doesnt-cover-cargo",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A solitary pallet of wrapped freight sits alone on a massive concrete loading bay under dim twilight.",
+      "caption": "Federal public-liability minimums cover highway crashes, leaving general freight cargo completely exposed by default.",
+      "title": "Vulnerable Cargo on Loading Bay",
+      "bytes": 333740,
+      "sha256": "sha256:7af32841934562e6d5ed292d33043809"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A solitary, partially unwrapped wooden pallet of industrial freight sitting vulnerable on a vast, shadowy concrete loading bay. extreme asymmetry with heavy editorial negative space, the pallet placed off-center on the lower right. Cinematic film still, anamorphic 35mm wide lens with crisp atmospheric depth. A single directional warm amber worklight from the left casting a long shadow across the textured concrete, contrasted against deep blue-hour twilight ambient light. Charcoal, slate grey, and weathered orange palette. No text, no numbers, no labels, no people.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, typography, fonts, logos, people, human figures",
+  "rationale": "A cinematic still of an isolated, vulnerable pallet on a vast loading bay captures the physical reality of unprotected cargo without relying on risky document renders that previously generated garbled text.",
+  "cue": "not your missing pallets",
+  "subject": "a solitary, vulnerable pallet of freight on a concrete loading bay",
+  "core_thesis": "Shippers mistakenly believe a $750,000 federal minimum protects their freight, but it only covers public harm, leaving general cargo fully exposed.",
+  "core_conflict": "Public safety liability vs. private cargo vulnerability",
+  "composition": "extreme asymmetry with heavy editorial negative space",
+  "alt_text": "The $750K Freight Myth. A solitary pallet of wrapped freight sits alone on a massive concrete loading bay under dim twilight.",
+  "caption": "The $750K Freight Myth: Federal liability limits do not cover damaged freight.",
+  "title": "The $750K Freight Myth",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-carriers-750000-doesnt-cover-cargo/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 379490,
+  "sha256": "sha256:d286b4043429e4eb5b0679a09698e47fd21b98741d14b87159c663e3a89e6c3f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 379490,
+    "quality": 88,
+    "sha256": "sha256:d286b4043429e4eb5b0679a09698e47fd21b98741d14b87159c663e3a89e6c3f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d902becd109c0ccaae47e7169a5477d47903d7f45d3662c194aa8dfa1c34c3d3",
+  "render_phash": "bc5f5c1f507f203f038f01cf0cb31fdf0f7f017301f300e01073009f00cf0037",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A single pallet of freight wrapped in plastic sits on a concrete surface illuminated by a standalone light fixture.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a solitary pallet of cargo, which aligns with the article's focus on freight and cargo protection."
+  },
+  "source_hash": "sha256:076ac1c93e0e30dcd5c01806631ff4ec",
+  "source_chars": 5816,
+  "task_id": "71347fb7e726ccf6914dbbfd378583e6",
+  "credits": 5.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/71347fb7e726ccf6914dbbfd378583e6_1793299592580.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A solitary, partially unwrapped wooden pallet of industrial freight sitting vulnerable on a vast, shadowy concrete loading bay. extreme asymmetry with heavy editorial negative space, the pallet placed off-center on the lower right. Cinematic film still, anamorphic 35mm wide lens with crisp atmospheric depth. A single directional warm amber worklight from the left casting a long shadow across the textured concrete, contrasted against deep blue-hour twilight ambient light. Charcoal, slate grey, and weathered orange palette. No text, no numbers, no labels, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-29T18:46:41+00:00",
+  "overlay": {
+    "kicker": "FREIGHT RISK // CARRIER LIABILITY",
+    "title": "THE $750K FREIGHT MYTH",
+    "hook": "Federal liability limits do not cover damaged freight",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.81,
+    "target": 4.5,
+    "clutter": 0.142,
+    "region_rgb": [
+      28,
+      40,
+      53
+    ],
+    "binding_rgb": [
+      30,
+      47,
+      63
+    ],
+    "title_lines": [
+      "THE $750K",
+      "FREIGHT MYTH"
+    ],
+    "subject": 0.076,
+    "ink_subject": 0.059,
+    "spike": 0.145,
+    "generated_at": "2026-10-29T18:46:41+00:00"
+  }
+}
