@@ -83,6 +83,18 @@ post (owner, 2026-10-23). What it enforces, mechanically:
    `--strict-figures` to make that list a hold. Derived arithmetic (a spread, a sum, an interval)
    legitimately never appears in a source, which is why it is a list and not a default hold.
 
+**A 404 is not always a dead citation either — some hosts answer the desk's User-Agent with 404 while serving the page to a browser (learned 2026-10-29).** `about.usps.com` returned **404** for three of
+its own newsroom releases to the gate's `Python-urllib` User-Agent and **200** to a Chrome User-Agent,
+and the gate's status-only rule held the article as a DRAFT for citations a reader opens fine. The
+distinction that matters is the one the gate already makes for 403s: a *reader-openable* page is not a
+broken one. `source_gate.fetch` now retries a 404/410/451 once with `BROWSER_UA` and, when the retry
+serves, classifies the page as ok with the retry recorded in the report (`— bot-walled, not dead`); a
+genuinely dead path stays 404 under both User-Agents and is still held, and `--self-test` still pins
+all five hold classes. Two consequences when a `.com` subdomain of a government agency is cited:
+`about.usps.com` never matches the `.gov` primary-suffix rule, so it must be listed in
+`context/source_quality.json` `primary_hosts` (done for `usps.com` / `ups.com`) or every such citation
+reads "no PRIMARY host".
+
 Sources that are only partly checkable (JS shells, paywalls, PDFs with no text layer) are reported
 as UNVERIFIED, not passed — the gate never claims a check it did not run.
 

@@ -41,7 +41,9 @@
     "microsoft.com",
     "nvidia.com",
     "amazon.com",
-    "apple.com"
+    "apple.com",
+    "usps.com",
+    "ups.com"
   ],
   "press_release_hosts": [
     "prnewswire.com",

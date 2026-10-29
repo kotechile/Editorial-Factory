@@ -233,10 +233,14 @@ def identity_check(url: str, label: str, page: str) -> tuple[bool | None, str]:
 
 # ───────────────────────────── fetching ─────────────────────────────
 
-def fetch(url: str, timeout: int = FETCH_TIMEOUT) -> dict:
-    """Retrieve one cited source. Never raises — a failure is a result, not an exception."""
+BROWSER_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/124.0.0.0 Safari/537.36")
+
+
+def _fetch_once(url: str, ua: str, timeout: int) -> dict:
+    """One retrieval with one User-Agent. Never raises — a failure is a result, not an exception."""
     req = urllib.request.Request(
-        url, headers={"User-Agent": USER_AGENT,
+        url, headers={"User-Agent": ua,
                       "Accept": "text/html,application/xhtml+xml,application/pdf,*/*;q=0.8"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -258,6 +262,27 @@ def fetch(url: str, timeout: int = FETCH_TIMEOUT) -> dict:
         text = _html_text(raw.decode("utf-8", "replace"))
     return {"status": "ok", "http": str(status), "reason": "", "text": text,
             "final_url": final_url, "bytes": len(raw)}
+
+
+def fetch(url: str, timeout: int = FETCH_TIMEOUT) -> dict:
+    """Retrieve one cited source, retrying a 404/410 once as a browser would.
+
+    Some hosts answer the desk's own User-Agent with a 404 while serving the very same page to a
+    browser (observed 2026-10-29 on about.usps.com: three agency releases, all 404 to the gate and
+    all 200 to a Chrome User-Agent). A citation a reader can open is not a dead citation, and the
+    404 is not distinguishable from a real one by status alone — so the retry decides it. A genuine
+    404 stays 404 under both User-Agents and is still held. The retry is reported, never silent.
+    """
+    res = _fetch_once(url, USER_AGENT, timeout)
+    if res.get("status") != "ok" and str(res.get("http")) in ("404", "410", "451"):
+        browser = _fetch_once(url, BROWSER_UA, timeout)
+        if browser.get("status") == "ok":
+            browser["via"] = "browser-ua-retry"
+            browser["note"] = (f"HTTP {res.get('http')} to the desk User-Agent, 200 to a browser "
+                               f"User-Agent — bot-walled, not dead")
+            return browser
+        return browser
+    return res
 
 
 def _html_text(body: str) -> str:
@@ -444,6 +469,8 @@ def _live_checks(sources: list[dict], fetch_fn) -> None:
         ok, why = identity_check(s["url"], s["label"], s["text"])
         s["identity"] = ok
         s["check"] = why
+        if res.get("note"):
+            s["check"] = f"{why} | {res['note']}" if why else res["note"]
         s["status"] = "ok"
 
     with ThreadPoolExecutor(max_workers=4) as pool:
