@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T13:12:54Z",
+  "updated_at": "2026-10-29T17:52:14Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -119,8 +119,7 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-09-26",
-      "public": true,
-      "url": "https://giniloh.com/disney-hulu-fourth-hike-subscription-creep/"
+      "public": false
     },
     {
       "slug": "2026-09-26_reshoring-moved-the-tariff-upstream",
@@ -1080,8 +1079,7 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-08",
-      "public": true,
-      "url": "https://giniloh.com/split-year-two-clock-seam/"
+      "public": false
     },
     {
       "slug": "2026-10-08_token-price-record-low-budget-overrun",
@@ -1175,8 +1173,7 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
-      "public": true,
-      "url": "https://giniloh.com/post-termination-option-clock-tax/"
+      "public": false
     },
     {
       "slug": "2026-10-09_staggered-lockup-six-selling-decisions",
@@ -1194,8 +1191,7 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-09",
-      "public": true,
-      "url": "https://giniloh.com/staggered-lockup-six-selling-decisions/"
+      "public": false
     },
     {
       "slug": "2026-10-09_your-ev-is-now-a-home-battery-behind-a-paywall",
@@ -1232,8 +1228,7 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-10",
-      "public": true,
-      "url": "https://giniloh.com/home-assistant-cloud-rename-hardware-rent/"
+      "public": false
     },
     {
       "slug": "2026-10-10_nearshoring-doesnt-move-the-trade-case",
@@ -1270,8 +1265,7 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-10",
-      "public": true,
-      "url": "https://giniloh.com/self-hosting-break-even-one-hour-a-year/"
+      "public": false
     },
     {
       "slug": "2026-10-10_why-importers-forfeit-duty-refunds",
@@ -4129,7 +4123,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-28",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-adjuster-hides-a-25-gap/"
     },
     {
       "slug": "2026-10-28_your-charger-gap-buys-16-robots",
@@ -4223,7 +4218,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/half-your-tokens-5-of-bill/"
     },
     {
       "slug": "2026-10-29_parcel-fuel-percentage-weekly-january",
@@ -4241,7 +4237,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/parcel-fuel-percentage-weekly-january/"
     },
     {
       "slug": "2026-10-29_promo-spike-is-a-loan",
@@ -4259,7 +4256,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/promo-spike-is-a-loan/"
     },
     {
       "slug": "2026-10-29_second-backyard-home-1000-deposit",
@@ -4277,7 +4275,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/second-backyard-home-1000-deposit/"
     },
     {
       "slug": "2026-10-29_your-compaction-trap-87-forgeries-survive",
@@ -4295,7 +4294,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-compaction-trap-87-forgeries-survive/"
     },
     {
       "slug": "2026-10-29_your-llc-bill-75-until-2028",
@@ -4312,6 +4312,25 @@
         "At a glance"
       ],
       "target_persona": "cross_border_expat",
+      "date": "2026-10-29",
+      "public": true,
+      "url": "https://giniloh.com/your-llc-bill-75-until-2028/"
+    },
+    {
+      "slug": "2026-10-29_your-sandbox-boot-tax-110x-then-nothing",
+      "title": "Your Sandbox Boot Tax: 110x, Then Nothing",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-10-29",
       "public": false
     }

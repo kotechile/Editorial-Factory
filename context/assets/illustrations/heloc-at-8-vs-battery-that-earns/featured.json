@@ -1,6 +1,6 @@
 {
   "slug": "heloc-at-8-vs-battery-that-earns",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -41,6 +41,14 @@
       "title": "Batteries Beat Remodels",
       "bytes": 747386,
       "sha256": "sha256:8399c892fdc00eccbc98e00bc4e1e29ef08c7c08c0f62bfacf837f6371487fb1"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Batteries Beat Remodels. Isometric diagram of a wall-mounted home battery unit wired to an electrical panel and utility",
+      "caption": "Batteries Beat Remodels: Shifting from 8% remodels to grid-paying batteries.",
+      "title": "Batteries Beat Remodels",
+      "bytes": 747386,
+      "sha256": "sha256:8399c892fdc00eccbc98e00bc4e1e29ef08c7c08c0f62bfacf837f6371487fb1"
     }
   ],
   "style": "technical_isometric",
@@ -67,12 +75,12 @@
     "style": "technical_isometric",
     "model": "nanobanana"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/heloc-at-8-vs-battery-that-earns/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 747386,
-  "sha256": "sha256:8399c892fdc00eccbc98e00bc4e1e29ef08c7c08c0f62bfacf837f6371487fb1",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/heloc-at-8-vs-battery-that-earns/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 348439,
+  "sha256": "sha256:fb88dcc2ccbfffd79fc043e09e409475d467666fec1f8e3f17763c439893702c",
   "source_hash": "sha256:80afdb24ea695f9050efe4c83e054026",
   "source_chars": 4484,
   "task_id": "b745a8b2f67013b588e8937859003240",
@@ -94,29 +102,42 @@
     "kicker": "HOME EQUITY // GRID BATTERIES",
     "title": "BATTERIES BEAT REMODELS",
     "hook": "Shifting from 8% remodels to grid-paying batteries",
-    "anchor": "bottom-right",
+    "anchor": "top-left",
     "light": false,
     "scrim": 0,
-    "contrast": 12.96,
+    "contrast": 8.95,
     "target": 4.5,
-    "clutter": 0.118,
+    "clutter": 0.208,
     "region_rgb": [
-      248,
-      252,
-      248
+      241,
+      238,
+      232
     ],
     "binding_rgb": [
-      254,
-      254,
-      254
+      221,
+      213,
+      194
     ],
     "title_lines": [
       "BATTERIES BEAT",
       "REMODELS"
     ],
-    "subject": 0.102,
-    "ink_subject": 0.053,
-    "spike": 0.298,
+    "subject": 0.159,
+    "ink_subject": 0.092,
+    "spike": 0.427,
     "generated_at": "2026-10-03T15:55:40+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 348439,
+    "quality": 88,
+    "sha256": "sha256:fb88dcc2ccbfffd79fc043e09e409475d467666fec1f8e3f17763c439893702c",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

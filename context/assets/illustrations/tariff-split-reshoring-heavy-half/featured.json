@@ -1,6 +1,6 @@
 {
   "slug": "tariff-split-reshoring-heavy-half",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -53,6 +53,14 @@
       "title": "The Tariff Split",
       "bytes": 1802923,
       "sha256": "sha256:28476195ae9d9e891c660e201f0004296e732fecb29624fc4d43028ab001e994"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Tariff Split. An automated conveyor system splitting cargo into two diverging tracks.",
+      "caption": "The Tariff Split: Capital flows to protected goods as consumer taxes ease.",
+      "title": "The Tariff Split",
+      "bytes": 1802923,
+      "sha256": "sha256:28476195ae9d9e891c660e201f0004296e732fecb29624fc4d43028ab001e994"
     }
   ],
   "style": "technical_isometric",
@@ -78,12 +86,12 @@
   "pinned": {
     "style": "technical_isometric"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1802923,
-  "sha256": "sha256:28476195ae9d9e891c660e201f0004296e732fecb29624fc4d43028ab001e994",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406068,
+  "sha256": "sha256:f2109b8f343c6fbff127fb8bab83828df745bb6e86840fce087276a9f583aaea",
   "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e",
   "source_chars": 3707,
   "task_id": "08b4bf67184d5c24c67d7e7c3e6c9c6f",
@@ -105,28 +113,41 @@
     "kicker": "RESHORING STRATEGY // TARIFF SPLIT",
     "title": "THE TARIFF SPLIT",
     "hook": "Capital flows to protected goods as consumer taxes ease",
-    "anchor": "bottom-left",
+    "anchor": "top-right",
     "light": false,
-    "scrim": 0,
-    "contrast": 6.68,
+    "scrim": 45,
+    "contrast": 5.66,
     "target": 5.5,
-    "clutter": 0.281,
+    "clutter": 0.381,
     "region_rgb": [
-      216,
       217,
-      209
+      218,
+      213
     ],
     "binding_rgb": [
-      185,
-      186,
-      178
+      161,
+      151,
+      141
     ],
     "title_lines": [
       "THE TARIFF SPLIT"
     ],
-    "subject": 0.224,
-    "ink_subject": 0.135,
-    "spike": 0.58,
+    "subject": 0.178,
+    "ink_subject": 0.089,
+    "spike": 0.532,
     "generated_at": "2026-10-03T13:22:43+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406068,
+    "quality": 56,
+    "sha256": "sha256:f2109b8f343c6fbff127fb8bab83828df745bb6e86840fce087276a9f583aaea",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

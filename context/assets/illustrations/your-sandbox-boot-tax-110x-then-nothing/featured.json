@@ -1,0 +1,114 @@
+{
+  "slug": "your-sandbox-boot-tax-110x-then-nothing",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A steel modular block resting across multiple parallel copper blades on a concrete surface.",
+      "caption": "A fixed boot delay is heavily felt on short runs, but vanishes when amortized over many actions.",
+      "title": "Sandbox Boot Amortization Assembly",
+      "bytes": 374044,
+      "sha256": "sha256:21e10d674941b9bf9d9d8938bb3ac5f6"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "minimalist studio composition of a modular mechanical assembly on a textured concrete surface in a data hall, extreme asymmetry with generous negative space. A heavy, brushed steel modular processing block resting on and distributing across a rack of thin, delicate parallel copper connection blades. One directional light from the left throwing long cast shadows. Matte muted palette of brushed steel, copper, and concrete grey. Hard clean edges, no bare shapes, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, logos",
+  "rationale": "The article's core thesis is an arithmetic relationship concerning infrastructure\u2014dividing a fixed cost across discrete actions. 'component_assembly' allows for a clean, structural representation of a single unit dividing into many, embodying the fixed boot tax distribution.",
+  "cue": "A boot divided by six actions",
+  "subject": "a heavy modular processing block distributing weight across a rack of parallel connection blades",
+  "core_thesis": "A sandbox boot delay is a fixed cost whose impact diminishes as it is divided across more actions in a run.",
+  "core_conflict": "Fixed startup delay versus cumulative runtime efficiency",
+  "composition": "extreme asymmetry with generous negative space",
+  "alt_text": "Measuring The Sandbox Boot Tax. A steel modular block resting across multiple parallel copper blades on a concrete surface.",
+  "caption": "Measuring The Sandbox Boot Tax: Why container startup delays tax your agentic workflows.",
+  "title": "Measuring The Sandbox Boot Tax",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-sandbox-boot-tax-110x-then-nothing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 394845,
+  "sha256": "sha256:5e1cc8251717048ffef7c593d8daff83d58886191cb04fca9bf16371612f9f44",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394845,
+    "quality": 84,
+    "sha256": "sha256:5e1cc8251717048ffef7c593d8daff83d58886191cb04fca9bf16371612f9f44",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:429b39ada058ddcb16ab58a61b5f79ecc9ff6b757d2189156ee6152b0069449a",
+  "render_phash": "8b6b8b4b894b83fb06feedbb64ff7c7ffc7f7c07f941dc01f38173f803f8018f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metallic, block-like component with fins and connectors sits on a copper-colored, finned base on a concrete floor, casting a long shadow.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a modular processing block distributing weight across parallel blades, matching the requested metaphor for the article's technical subject."
+  },
+  "source_hash": "sha256:93ce0b6bae6ff13947755a6ff4c4247c",
+  "source_chars": 5441,
+  "task_id": "da354d03b4df7cc335d31d0c8f3d60cd",
+  "credits": 18.0,
+  "cost_ms": 40,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d3f21fb4795fb8f51110dfb42a336e70.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "minimalist studio composition of a modular mechanical assembly on a textured concrete surface in a data hall, extreme asymmetry with generous negative space. A heavy, brushed steel modular processing block resting on and distributing across a rack of thin, delicate parallel copper connection blades. One directional light from the left throwing long cast shadows. Matte muted palette of brushed steel, copper, and concrete grey. Hard clean edges, no bare shapes, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-29T17:51:51+00:00",
+  "overlay": {
+    "kicker": "AGENT INFRASTRUCTURE // SANDBOX BOOTS",
+    "title": "MEASURING THE SANDBOX BOOT TAX",
+    "hook": "Why container startup delays tax your agentic workflows",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.07,
+    "target": 4.5,
+    "clutter": 0.176,
+    "region_rgb": [
+      75,
+      78,
+      84
+    ],
+    "binding_rgb": [
+      96,
+      101,
+      107
+    ],
+    "title_lines": [
+      "MEASURING THE",
+      "SANDBOX BOOT TAX"
+    ],
+    "subject": 0.105,
+    "ink_subject": 0.061,
+    "spike": 0.28,
+    "generated_at": "2026-10-29T17:51:51+00:00"
+  }
+}

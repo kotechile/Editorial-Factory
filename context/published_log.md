@@ -238,6 +238,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-29 | home_ops_execution | second-backyard-home-1000-deposit | Your Two Backyard Homes, $1,000 Risk | https://pressflow.aichieve.net/published/2026-10-29_second-backyard-home-1000-deposit.md | reader site only |
 | 2026-10-29 | expat_cross_border_relocation | your-llc-bill-75-until-2028 | Your LLC Bill: 75% Until 2028 | https://pressflow.aichieve.net/published/2026-10-29_your-llc-bill-75-until-2028.md | reader site only |
 | 2026-10-29 | demand_sensing_advanced_sop | promo-spike-is-a-loan | Your 158% Spike Costs Q4 | https://pressflow.aichieve.net/published/2026-10-29_promo-spike-is-a-loan.md | reader site only |
+| 2026-10-29 | agentic_ai | your-sandbox-boot-tax-110x-then-nothing | Your Sandbox Boot Tax: 110x, Then Nothing | https://pressflow.aichieve.net/published/2026-10-29_your-sandbox-boot-tax-110x-then-nothing.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
