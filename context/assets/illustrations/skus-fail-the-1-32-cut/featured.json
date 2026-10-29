@@ -1,0 +1,114 @@
+{
+  "slug": "skus-fail-the-1-32-cut",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A four-quadrant modular sorting tray with irregular metal parts resting on a concrete surface.",
+      "caption": "Forecasting tools often fail on lumpy SKUs, making buffer stock a more reliable strategy than pursuing impossible accuracy.",
+      "title": "SKU-Demand-Grid-Assembly",
+      "bytes": 381841,
+      "sha256": "sha256:d1ba87c1b1d356e1a1c684f598b1b8d3"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist composition of a four-quadrant modular sorting tray assembly resting on a weathered concrete plant floor, extreme asymmetry with generous negative space. The tray is constructed from brushed galvanised steel, divided into a precise grid. One quadrant holds uniform steel blocks, while the others contain scattered, lumpy irregular components. One directional light from the left throwing a long cast shadow. Matte muted palette of graphite, safety yellow, and steel blue. Hard clean edges, no text, no lettering.",
+  "negative_prompt": "text, garbled letters, numbers, watermarks, humans, people, abstract shapes",
+  "rationale": "Component assembly perfectly captures the rigid, structural nature of a four-quadrant classification grid without resorting to literal charts. It translates a systemic sorting rule into a tangible mechanical object.",
+  "cue": "fail the 1.32 cut",
+  "subject": "a four-quadrant modular sorting tray with irregular metal parts",
+  "core_thesis": "Score every SKU on its average demand interval and squared coefficient of variation to identify lumpy items that require buffer stock rather than forecast accuracy.",
+  "core_conflict": "Mathematical forecasting models vs real-world lumpy demand that breaks statistical predictability.",
+  "composition": "extreme asymmetry with generous negative space",
+  "alt_text": "Your SKUs Fail The 1.32 Cut. A four-quadrant modular sorting tray with irregular metal parts resting on a concrete surface.",
+  "caption": "Your SKUs Fail The 1.32 Cut: The limits of demand sensing for unpredictable items.",
+  "title": "Your SKUs Fail The 1.32 Cut",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/skus-fail-the-1-32-cut/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404095,
+  "sha256": "sha256:75fe4deb5cfec40376ddd1fe4e3eb0f9adc41f6e808d60d5f261dc935397c72d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404095,
+    "quality": 64,
+    "sha256": "sha256:75fe4deb5cfec40376ddd1fe4e3eb0f9adc41f6e808d60d5f261dc935397c72d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0991b0087ec12a0dfb14005b0b3a964856189c08ebfe60228c83f544194b9f1e",
+  "render_phash": "c72f9f2f3f377ec7ffa3ff43fcd9ff907f0c7f087f187b89b9c073e27364c324",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A four-quadrant metal sorting tray containing various irregular metal parts sits on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a four-quadrant sorting tray with parts, which aligns with the article's discussion of categorizing SKUs into four groups (smooth, erratic, intermittent, lumpy)."
+  },
+  "source_hash": "sha256:e75f0ef173e4067c1797e0d28599b38d",
+  "source_chars": 5342,
+  "task_id": "b2f6655dcedcd0f6c3cf0f27c95f3c50",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e8f28d91e69da9f6404f131ba9889741.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist composition of a four-quadrant modular sorting tray assembly resting on a weathered concrete plant floor, extreme asymmetry with generous negative space. The tray is constructed from brushed galvanised steel, divided into a precise grid. One quadrant holds uniform steel blocks, while the others contain scattered, lumpy irregular components. One directional light from the left throwing a long cast shadow. Matte muted palette of graphite, safety yellow, and steel blue. Hard clean edges, no text, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-29T20:29:24+00:00",
+  "overlay": {
+    "kicker": "DEMAND SENSING // SKU FORECASTING",
+    "title": "YOUR SKUS FAIL THE 1.32 CUT",
+    "hook": "The limits of demand sensing for unpredictable items",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.48,
+    "target": 4.5,
+    "clutter": 0.151,
+    "region_rgb": [
+      77,
+      74,
+      69
+    ],
+    "binding_rgb": [
+      95,
+      96,
+      90
+    ],
+    "title_lines": [
+      "YOUR SKUS FAIL",
+      "THE 1.32 CUT"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-29T20:29:24+00:00"
+  }
+}
