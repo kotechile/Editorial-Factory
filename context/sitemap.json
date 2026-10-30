@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T12:49:44Z",
+  "updated_at": "2026-10-30T17:16:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4223,7 +4223,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/11-degrees-kills-the-compressor-quote/"
     },
     {
       "slug": "2026-10-29_half-your-tokens-5-of-bill",
@@ -4260,7 +4261,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/one-rate-overruns-your-cap-5934/"
     },
     {
       "slug": "2026-10-29_parcel-fuel-percentage-weekly-january",
@@ -4335,7 +4337,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/skus-fail-the-1-32-cut/"
     },
     {
       "slug": "2026-10-29_your-carriers-750000-doesnt-cover-cargo",
@@ -4353,7 +4356,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-29",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-carriers-750000-doesnt-cover-cargo/"
     },
     {
       "slug": "2026-10-29_your-chargeback-misses-40-of-the-bill",
@@ -4447,7 +4451,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/85-percent-of-batteries-cant-save-you/"
     },
     {
       "slug": "2026-10-30_why-one-share-outvotes-5300-staff",
@@ -4465,7 +4470,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/why-one-share-outvotes-5300-staff/"
     },
     {
       "slug": "2026-10-30_your-buyback-gap-39-8b-to-zero",
@@ -4482,7 +4488,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-buyback-gap-39-8b-to-zero/"
     },
     {
       "slug": "2026-10-30_your-screen-gap-999-vs-99",
@@ -4499,6 +4506,25 @@
         "Related reading"
       ],
       "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-30",
+      "public": true,
+      "url": "https://giniloh.com/your-screen-gap-999-vs-99/"
+    },
+    {
+      "slug": "2026-10-30_your-stock-gift-26180-never-taxed",
+      "title": "Your Stock Gift: $26,180 You Never Pay",
+      "vertical": "concentrated_equity_portfolio_capital",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "financial_architect",
       "date": "2026-10-30",
       "public": false
     }

@@ -1,0 +1,112 @@
+{
+  "slug": "your-stock-gift-26180-never-taxed",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An open heavy leather ledger and a cream stock certificate resting on a warm oak desk under a single brass lamp.",
+      "caption": "Transferring long-term shares directly to a charity locks in the full market value deduction without triggering capital gains tax.",
+      "title": "employer-stock-charitable-gift-tax-ledger",
+      "bytes": 152767,
+      "sha256": "sha256:eb29999c1c64f0dc065c712a853a7512"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm. Extreme asymmetric layout with heavy editorial negative space on the right. In a quiet study, an open heavy leather ledger and a cream embossed stock certificate rest on a warm oak desk. A single practical brass desk lamp from the left casts a strong directional amber light across the textured thick paper stock and leather. Deep shadows, restrained slate grey, cream, and warm oak palette, crisp atmospheric depth. No people, no text.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, people, figures, face, hands",
+  "rationale": "A cinematic still elevates the bureaucratic reality of tax codes into a scene of quiet, high-stakes financial architecture. The heavy ledger and stock certificate physically manifest the value and permanence of 'capital gain property'.",
+  "cue": "leave your account as a charitable gift",
+  "subject": "an open heavy leather ledger and an embossed stock certificate",
+  "core_thesis": "Donating employer stock held over a year shields the embedded gains from taxes, provided the donor navigates the statutory 30 percent deduction ceiling.",
+  "core_conflict": "Embedded unrealized capital gains versus statutory deduction limits and holding periods.",
+  "composition": "extreme asymmetric layout",
+  "alt_text": "Gifting Appreciated Stock. An open heavy leather ledger and a cream stock certificate resting on a warm oak desk under a single brass lamp.",
+  "caption": "Gifting Appreciated Stock: Bypass capital gains tax by donating older shares.",
+  "title": "Gifting Appreciated Stock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-stock-gift-26180-never-taxed/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 204173,
+  "sha256": "sha256:d418b693718f9b32eefa4f80cb298a24f178ac64b791cfe68430c4ee1832f9fc",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 204173,
+    "quality": 88,
+    "sha256": "sha256:d418b693718f9b32eefa4f80cb298a24f178ac64b791cfe68430c4ee1832f9fc",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:42c302c3bf89217e27c7f51f4d80dcced9d73483f08f48c15d18ee63db072062",
+  "render_phash": "0000000000000000000080000d803d803b81600134813c012c00800000000800",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An open book with a certificate-like page and another certificate document on a desk under a lamp.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows financial documents which relates to the article's topic of stock gifts."
+  },
+  "source_hash": "sha256:0226add1f2d687780eaaaf67365d9d88",
+  "source_chars": 4618,
+  "task_id": "b32d37db9a955eca457902414ba8d627",
+  "credits": 5.0,
+  "cost_ms": 60,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b32d37db9a955eca457902414ba8d627_1793380558710.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm. Extreme asymmetric layout with heavy editorial negative space on the right. In a quiet study, an open heavy leather ledger and a cream embossed stock certificate rest on a warm oak desk. A single practical brass desk lamp from the left casts a strong directional amber light across the textured thick paper stock and leather. Deep shadows, restrained slate grey, cream, and warm oak palette, crisp atmospheric depth. No people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T17:16:08+00:00",
+  "overlay": {
+    "kicker": "EMPLOYER STOCK // CHARITABLE GIFTS",
+    "title": "GIFTING APPRECIATED STOCK",
+    "hook": "Bypass capital gains tax by donating older shares",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 30,
+    "contrast": 4.58,
+    "target": 4.5,
+    "clutter": 0.084,
+    "region_rgb": [
+      103,
+      112,
+      114
+    ],
+    "binding_rgb": [
+      113,
+      123,
+      125
+    ],
+    "title_lines": [
+      "GIFTING",
+      "APPRECIATED STOCK"
+    ],
+    "subject": 0.0,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-10-30T17:16:08+00:00"
+  }
+}
