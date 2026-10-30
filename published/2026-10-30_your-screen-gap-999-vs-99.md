@@ -69,6 +69,14 @@ What I find hard to square is that the Duo really did get easier to fix. iFixit 
 
 Apple also publishes prices rather than failure rates. A plan that looks cheap against that long tail can still be a losing purchase for a careful owner, and someone who never cracks a screen keeps every dollar of the charge. The argument here is about how the risk is priced, never about how often it lands.
 
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** Apple's insured repair fees are flat across five iPhones while its cash fees run from $89 to $1,499, so the plan carries the risk the parts list prices.
+**The number:** $999 on a $1,999 phone, against $99 with cover.
+**The risk:** the prices are undated, and third-party shops set their own.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -77,14 +85,6 @@ Apple also publishes prices rather than failure rates. A plan that looks cheap a
 
 - [Your Cheap Part, a $599 Bill](/your-cheap-part-a-599-bill/)
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** Apple's insured repair fees are flat across five iPhones while its cash fees run from $89 to $1,499, so the plan carries the risk the parts list prices.
-**The number:** $999 on a $1,999 phone, against $99 with cover.
-**The risk:** the prices are undated, and third-party shops set their own.
 
 ## Sources
 [1] Apple, "Apple Service and Repair for iPhone" — estimated service cost, out-of-warranty view, iPhone Duo and comparators, read 2026-10-30: https://support.apple.com/iphone/repair?services=service
