@@ -52,6 +52,8 @@ The next caveat is the list of excluded trades. Section 1202 leaves out service 
 
 The last is that an election is not free. It turns a maybe into a tax bill at grant, and if the shares are later lost while still unvested the rule treats that as a sale at a loss equal to what was paid [2]. A loss is not a refund, and the tax already paid on that grant does not come back on its own.
 
+<!-- tldr -->
+
 ## At a glance
 
 **The shift:** Section 1202 pays a part exclusion at three years for shares issued after July 4, 2025, where it once paid only the full one at five.
