@@ -1,0 +1,112 @@
+{
+  "slug": "your-ink-plan-bills-20-cents",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A close-up of a printed paper page next to an ink tank reservoir on a wooden desk.",
+      "caption": "The true cost of printing hinges on the model you choose, where an upfront hardware purchase can eliminate steep subscription overages.",
+      "title": "Ink Tank vs Subscription Overage Cost",
+      "bytes": 178003,
+      "sha256": "sha256:08b11b1cf00962b7ddf7bbd99d90d504"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A crisp, heavy stock printed paper document resting on a home office desk beside a translucent, partially filled ink tank reservoir. Extreme asymmetry with hero subject off-centre on the right, the background falling away. Visible paper grain texture and subtle dust motes. Soft directional daylight from the left. Bone white, charcoal, and warm oak palette. No people, no legible text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, numbers, people, hands",
+  "rationale": "The story revolves around the literal cost of a single physical unit\u2014a printed page\u2014and the ink that produces it. Editorial macro emphasizes the stark physical reality of the page and the ink cost, drawing attention to the specific physical artifact that carries the economic weight.",
+  "cue": "price of a printed page",
+  "subject": "a crisp printed page resting beside an open ink tank reservoir",
+  "core_thesis": "The cost of printing a page is determined by subscription quotas and overage fees, where a refillable ink tank printer breaks even against high-volume plans within three years.",
+  "core_conflict": "subscription overage fees versus upfront capital hardware costs",
+  "composition": "extreme asymmetry with hero subject off-centre on the right",
+  "alt_text": "The True Price Of Printer Ink. A close-up of a printed paper page next to an ink tank reservoir on a wooden desk.",
+  "caption": "The True Price Of Printer Ink: How subscription tiers hide the true cost of printing.",
+  "title": "The True Price Of Printer Ink",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-ink-plan-bills-20-cents/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 231437,
+  "sha256": "sha256:95f58f56a48728fc38ec03b55db385cfa5fb1d927e2e20dc9f842e7ef87b94b8",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 231437,
+    "quality": 88,
+    "sha256": "sha256:95f58f56a48728fc38ec03b55db385cfa5fb1d927e2e20dc9f842e7ef87b94b8",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:7129116a343ef5c4b2192292449174df98033efc0d9eced17c64b668fac160af",
+  "render_phash": "ff7bfffffff3ffe3ff4df3ed43ed1ffd0ff9053901d9808f907fc1e3ce1df801",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A blank piece of white paper lies on a wooden surface next to a clear, empty ink tank reservoir.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a page and an ink tank, which relates to the article's focus on printing costs and ink plans."
+  },
+  "source_hash": "sha256:dcee0fb5b88e4a0d23e40b2c0e2405e3",
+  "source_chars": 4266,
+  "task_id": "b03dc7189e126d1231cfeb0ad44a1409",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b03dc7189e126d1231cfeb0ad44a1409_1793389437850.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "extreme close-up macro photograph, 100mm macro lens, one razor-sharp focal plane. A crisp, heavy stock printed paper document resting on a home office desk beside a translucent, partially filled ink tank reservoir. Extreme asymmetry with hero subject off-centre on the right, the background falling away. Visible paper grain texture and subtle dust motes. Soft directional daylight from the left. Bone white, charcoal, and warm oak palette. No people, no legible text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T19:44:10+00:00",
+  "overlay": {
+    "kicker": "CONSUMER HARDWARE // INK PRICING",
+    "title": "THE TRUE PRICE OF PRINTER INK",
+    "hook": "How subscription tiers hide the true cost of printing",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 90,
+    "contrast": 5.72,
+    "target": 5.5,
+    "clutter": 0.267,
+    "region_rgb": [
+      121,
+      108,
+      95
+    ],
+    "binding_rgb": [
+      156,
+      140,
+      125
+    ],
+    "title_lines": [
+      "THE TRUE PRICE",
+      "OF PRINTER INK"
+    ],
+    "subject": 0.085,
+    "ink_subject": 0.045,
+    "spike": 0.248,
+    "generated_at": "2026-10-30T19:44:10+00:00"
+  }
+}
