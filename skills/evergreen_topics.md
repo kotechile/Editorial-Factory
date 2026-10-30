@@ -720,6 +720,27 @@ the whole article turns on is one paragraph away:** `§ 170(b)(1)(H)` defines "c
 computed without regard to **any net operating loss carryback** — a capital-loss carryback is *not* excluded, so "a loss
 carryback" is a claim the statute does not make.
 
+**Hosts probed live 2026-10-30, building an ink-plan / cost-per-page brief (the `consumer_asset_repair_replace_tco` evergreen).**
+Carries the figure as plain text and fetches first try: `hp.com/us-en/printers/instant-ink.html` (18.5 KB — the
+whole market decision on one page: five monthly tiers with caps and fees ("10 pages per month $1.99/mo … 700 pages
+per month $32.99/mo"), the yearly ladder ("8400 pages per year $355.99/y"), the no-subscription option ("20-Page
+Set $5.49 75-Page Set $19.99"), the overage sentence ("Buy extra sets of 10–15 pages for just $2 each"), the
+rollover ceiling ("3x the number of pages in your plan (Example: 150 pages if on the 50-page plan)") and the
+yearly plan's "unused pages do not roll over"); `epson.com` product pages (the ET-2800's "Our Price: $239.99 After
+21% savings: $189.99" with the promo window in the same block, "Replacement Ink Yield ISO Pages: T522 — Black:
+4,500, Color: 7,500", the extended-service-plan prices $46/$80, and footnote 4 "Based on average monthly document
+print volumes of about 125 pages") and the bottle page (`…/Ink/Ink-Bottles/…/p/T522120-S`, "Our Price: $17.99").
+Fails or cannot carry a row: `hp.com/us-en/shop/…` product and category paths (unreachable), `brother-usa.com`,
+`usa.canon.com`, `lexmark.com`, and `epson.com/For-Home/Ink/Ink-Bottles/c/h1` (fetches, but it is a filter shell
+whose only numbers are price-band facets).
+**Two traps specific to this beat.** (1) *A yield quoted as a comma-grouped page count cannot carry a gate row* —
+`4,500` tokenises to `4` and `500`, and the first `4` on an Epson page sits in its own product copy, so lead the
+yield row on the page's monthly-volume footnote (`125 pages`) and let 4,500/7,500 ride inside that row's prose.
+(2) *A model code is an acronym to the accessibility gate* — `ET-2800` hard-failed `ET` and `ISO` hard-failed
+undefined; the fix that keeps the prose readable is to drop the model code from the body (the Sources line still
+carries it) and to gloss the standard as "a standard text pattern" rather than expanding "International
+Organization for Standardization" mid-sentence.
+
 ## 5. Handoff
 
 **The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
