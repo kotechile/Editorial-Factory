@@ -13,6 +13,12 @@ meta_title: "Why One Share Outvotes 5,300 Staff"
 meta_title_source: "derived_from_title"
 meta_description: "Anthropic filed papers on 26 October for its initial public offering (IPO). Those papers build a separate share class for its 5,300 staff that holds no claim…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/why-one-share-outvotes-5300-staff/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "A brass voting seal rests on one bone-white certificate beside a tall stack of grey equity papers on a warm oak desk, lit from the left."
+image_caption: "Anthropic Equity Split: Why one founder share outvotes the entire staff."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -58,14 +64,6 @@ I could be wrong, but two limits matter here. The filing is a draft. The price r
 
 Where I've landed is that the offer question has changed shape. It used to be what the stock is worth. At these companies it is who else decides what it is worth, and how often they have decided.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your IPO Payday: A 47.7% Tax Bill" -> /your-ipo-payday-tax-bill/ [same site (giniloh.com); topical overlap: initial, offering, public] Link "Your IPO Payday: A 47.7% Tax Bill" in the section where the article touches initial, offering, public. -->
-## Related reading
-
-- [Your IPO Payday: A 47.7% Tax Bill](/your-ipo-payday-tax-bill/)
-<!-- internal-links:end -->
 
 <!-- tldr -->
 
@@ -74,6 +72,15 @@ Where I've landed is that the offer question has changed shape. It used to be wh
 **The shift:** Anthropic's filing gives staff shares that carry the money but no control, plus a voting share that carries no money.
 **The number:** 50.1% of the vote sits in one Class F share held by the co-founders' company.
 **The risk:** the price of that stock, and any tender that would set one, is a board call.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Your IPO Payday: A 47.7% Tax Bill" -> /your-ipo-payday-tax-bill/ [same site (giniloh.com); topical overlap: initial, offering, public] Link "Your IPO Payday: A 47.7% Tax Bill" in the section where the article touches initial, offering, public. -->
+## Related reading
+
+- [Your IPO Payday: A 47.7% Tax Bill](/your-ipo-payday-tax-bill/)
+<!-- internal-links:end -->
 
 ## Sources
 [1] Anthropic, PBC, Form S-1 registration statement filed 26 October 2026 — https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm

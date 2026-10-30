@@ -1,0 +1,112 @@
+{
+  "slug": "why-one-share-outvotes-5300-staff",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy brass voting seal sitting on a single corporate document beside a tall stack of blank papers on a wooden desk.",
+      "caption": "Anthropic's share structure separates the financial value of employee equity from the voting power that controls it.",
+      "title": "Anthropic Class F Share Structure",
+      "bytes": 389398,
+      "sha256": "sha256:16e0e6893849c2811d5b15233fa66506"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of a warm oak desk in a study. A single heavy polished brass voting seal rests on a solitary bone-white stock certificate, placed far apart from a thick, slightly messy stack of graphite-coloured employee equity papers. 35mm anamorphic lens, top-down 90-degree view, sharp focal plane on the brass seal. Soft diffused daylight streaming from the left window, casting subtle contact shadows. Bone white, graphite, brass, and warm oak palette. Heavy tactile paper stock and polished metal textures. Asymmetric flat-lay composition, muted tones, fine film grain, no people.",
+  "negative_prompt": "garbled text, random lettering, words, numbers, typography, watermarks, UI, people, face, hands",
+  "rationale": "A document flatlay perfectly captures the contractual and regulatory nature of an IPO filing and share class structuring. The visual weight of a single heavy brass seal against a stack of regular paper symbolizes the disproportionate voting power.",
+  "cue": "Why One Share Outvotes 5,300 Staff",
+  "subject": "a heavy brass voting seal on a single corporate document next to a tall stack of standard papers",
+  "core_thesis": "Anthropic's IPO filing separates employee equity from voting control, placing absolute pricing and voting power in a single founder share.",
+  "core_conflict": "Employee financial equity versus founder absolute voting control.",
+  "composition": "asymmetric flat-lay composition",
+  "alt_text": "A brass voting seal rests on one bone-white certificate beside a tall stack of grey equity papers on a warm oak desk, lit from the left.",
+  "caption": "Anthropic Equity Split: Why one founder share outvotes the entire staff.",
+  "title": "Anthropic Equity Split",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/why-one-share-outvotes-5300-staff/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391254,
+  "sha256": "sha256:19deea0cf1e8956b67df6bf416acd9a71e0504ddf3f8ab9e83a4d221a358993f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391254,
+    "quality": 80,
+    "sha256": "sha256:19deea0cf1e8956b67df6bf416acd9a71e0504ddf3f8ab9e83a4d221a358993f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a1aac6302ccfa8f709a7976419b08cec2fba4303c3d9876eed71aa3708ab0062",
+  "render_phash": "a7f3ae7d4e6dda6db86d2c7d5c6d14650675027d024d026d064d0c6d19f3081d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A stack of grey papers next to a single white paper with a brass seal on it, resting on a wooden surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a single document with a seal next to a stack of papers, which metaphorically represents the article's theme of one share having more power than many."
+  },
+  "source_hash": "sha256:a233ac578a29ad16c683664c9303bc25",
+  "source_chars": 6452,
+  "task_id": "664fdf7c0f563b6d41095fa89d8d9d21",
+  "credits": 5.0,
+  "cost_ms": 61,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/664fdf7c0f563b6d41095fa89d8d9d21_1793358821154.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of a warm oak desk in a study. A single heavy polished brass voting seal rests on a solitary bone-white stock certificate, placed far apart from a thick, slightly messy stack of graphite-coloured employee equity papers. 35mm anamorphic lens, top-down 90-degree view, sharp focal plane on the brass seal. Soft diffused daylight streaming from the left window, casting subtle contact shadows. Bone white, graphite, brass, and warm oak palette. Heavy tactile paper stock and polished metal textures. Asymmetric flat-lay composition, muted tones, fine film grain, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T11:13:54+00:00",
+  "overlay": {
+    "kicker": "STARTUP EQUITY // VOTING CONTROL",
+    "title": "ANTHROPIC EQUITY SPLIT",
+    "hook": "Why one founder share outvotes the entire staff",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.74,
+    "target": 4.5,
+    "clutter": 0.153,
+    "region_rgb": [
+      70,
+      56,
+      49
+    ],
+    "binding_rgb": [
+      82,
+      82,
+      82
+    ],
+    "title_lines": [
+      "ANTHROPIC",
+      "EQUITY SPLIT"
+    ],
+    "subject": 0.084,
+    "ink_subject": 0.035,
+    "spike": 0.281,
+    "generated_at": "2026-10-30T11:13:54+00:00"
+  }
+}
