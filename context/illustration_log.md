@@ -366,3 +366,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-29 | `11-degrees-kills-the-compressor-quote` | home_ops_execution | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/11-degrees-kills-the-compressor-quote/featured.jpg` |
 | 2026-10-29 | `one-rate-overruns-your-cap-5934` | expat_cross_border_relocation | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/one-rate-overruns-your-cap-5934/featured.jpg` |
 | 2026-10-29 | `skus-fail-the-1-32-cut` | demand_sensing_advanced_sop | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/skus-fail-the-1-32-cut/featured.jpg` |
+| 2026-10-30 | `85-percent-of-batteries-cant-save-you` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/85-percent-of-batteries-cant-save-you/featured.jpg` |

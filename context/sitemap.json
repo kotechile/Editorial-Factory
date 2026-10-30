@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T23:03:13Z",
+  "updated_at": "2026-10-30T10:56:02Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4430,6 +4430,24 @@
       "date": "2026-10-29",
       "public": true,
       "url": "https://aichieve.net/your-sandbox-boot-tax-110x-then-nothing/"
+    },
+    {
+      "slug": "2026-10-30_85-percent-of-batteries-cant-save-you",
+      "title": "Your Battery Gap Is 85%",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-10-30",
+      "public": false
     }
   ]
 }

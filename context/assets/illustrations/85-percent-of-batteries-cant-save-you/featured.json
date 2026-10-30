@@ -1,0 +1,112 @@
+{
+  "slug": "85-percent-of-batteries-cant-save-you",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modern wall-mounted home battery glowing warmly on a dark concrete garage wall at night.",
+      "caption": "During utility shutoffs, homes must rely on localized residential backup storage to keep the lights on.",
+      "title": "Home Battery Garage Night",
+      "bytes": 266711,
+      "sha256": "sha256:e933857764bdbeb734a999c732f4a1ab"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph at blue hour, 35mm anamorphic wide, of a modern wall-mounted home battery and inverter system on a textured concrete garage utility wall. The battery's status ring emits a warm amber glow, providing the only light in the deep blue ambient darkness of a neighborhood power shutoff. Asymmetric framing with the hero unit off-center on the left, leaving generous negative space in the shadowed garage interior on the right. Bone white, charcoal, and slate gray palette with the warm amber contrast. Long-exposure calm, crisp atmospheric depth, no moving figures, fine film grain, no text or logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, typography, people, daylight, bright sun",
+  "rationale": "This treatment highlights the critical moment of a blackout after hours, emphasizing the localized resilience of a home battery system glowing warmly against the deep blue ambient light of a dark garage.",
+  "cue": "grid's side of the meter",
+  "subject": "A glowing wall-mounted home battery and inverter unit on a garage wall",
+  "core_thesis": "The state's massive battery fleet is trapped on the utility side of the meter, leaving homes vulnerable to blackouts unless they have their own localized storage.",
+  "core_conflict": "Utility-scale grid storage vs. localized residential power resilience during intentional blackouts.",
+  "composition": "asymmetric framing with hero off-center",
+  "alt_text": "The 85 Percent Battery Gap. A modern wall-mounted home battery glowing warmly on a dark concrete garage wall at night.",
+  "caption": "The 85 Percent Battery Gap: Utility storage cannot save homes from wildfire cuts.",
+  "title": "The 85 Percent Battery Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/85-percent-of-batteries-cant-save-you/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 308395,
+  "sha256": "sha256:402529fd7774bf4ced38661aba9525b15a8042bae2621efbc01c4b787fe6c4ae",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 308395,
+    "quality": 88,
+    "sha256": "sha256:402529fd7774bf4ced38661aba9525b15a8042bae2621efbc01c4b787fe6c4ae",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:c9f94add63f52ee34ce7f5a9f14b8e796cff36a526bf44dcfd83c21258d2b299",
+  "render_phash": "03e106e8066e0669276b276b2663266b266b266b266d076e076e036f036b0364",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A white square unit with a glowing circle and a smaller dark unit mounted on a concrete wall next to a dark opening.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a home battery setup, which relates to the article's focus on household battery capacity."
+  },
+  "source_hash": "sha256:a63e43421924e8483330ea4fe5510acf",
+  "source_chars": 4536,
+  "task_id": "3f50e625fbb4ddcb42e8820dee3debee",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3f50e625fbb4ddcb42e8820dee3debee_1793357731431.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph at blue hour, 35mm anamorphic wide, of a modern wall-mounted home battery and inverter system on a textured concrete garage utility wall. The battery's status ring emits a warm amber glow, providing the only light in the deep blue ambient darkness of a neighborhood power shutoff. Asymmetric framing with the hero unit off-center on the left, leaving generous negative space in the shadowed garage interior on the right. Bone white, charcoal, and slate gray palette with the warm amber contrast. Long-exposure calm, crisp atmospheric depth, no moving figures, fine film grain, no text or logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T10:55:44+00:00",
+  "overlay": {
+    "kicker": "GRID STORAGE // WILDFIRE OUTAGES",
+    "title": "THE 85 PERCENT BATTERY GAP",
+    "hook": "Utility storage cannot save homes from wildfire cuts",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.43,
+    "target": 4.5,
+    "clutter": 0.117,
+    "region_rgb": [
+      67,
+      84,
+      102
+    ],
+    "binding_rgb": [
+      85,
+      97,
+      113
+    ],
+    "title_lines": [
+      "THE 85 PERCENT",
+      "BATTERY GAP"
+    ],
+    "subject": 0.048,
+    "ink_subject": 0.02,
+    "spike": 0.159,
+    "generated_at": "2026-10-30T10:55:44+00:00"
+  }
+}
