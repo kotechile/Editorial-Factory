@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:44:26Z",
+  "updated_at": "2026-10-30T19:50:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4470,7 +4470,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/class-4-rates-the-shingle-not-your-roof/"
     },
     {
       "slug": "2026-10-30_why-one-share-outvotes-5300-staff",
@@ -4507,7 +4508,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-3-year-rung-costs-15-9/"
     },
     {
       "slug": "2026-10-30_your-buyback-gap-39-8b-to-zero",
@@ -4543,7 +4545,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-ink-plan-bills-20-cents/"
     },
     {
       "slug": "2026-10-30_your-screen-gap-999-vs-99",
@@ -4580,7 +4583,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-stock-gift-26180-never-taxed/"
     },
     {
       "slug": "2026-10-30_your-truck-mile-costs-2-2-driver-minutes",
@@ -4598,7 +4602,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-10-30",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T14:17:31+00:00",
+  "generated_at": "2026-10-30T19:50:51+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,63 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-ink-plan-bills-20-cents",
+      "title": "Your Overage Page Costs $0.20",
+      "url": "https://giniloh.com/your-ink-plan-bills-20-cents/",
+      "path": "/your-ink-plan-bills-20-cents/",
+      "sites_live": {
+        "giniloh.com": "/your-ink-plan-bills-20-cents/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Hewlett-Packard (HP) bills the overage page, the one you print past your plan's cap, at $0.20 because the subscription stops paying once you top its monthly\u2026",
+      "modified": "2026-10-30T19:44:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-3-year-rung-costs-15-9",
+      "title": "Your 3-Year Rung Costs 15.9%",
+      "url": "https://giniloh.com/your-3-year-rung-costs-15-9/",
+      "path": "/your-3-year-rung-costs-15-9/",
+      "sites_live": {
+        "giniloh.com": "/your-3-year-rung-costs-15-9/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The fast rung of the new federal exclusion costs 15.9 percent of the gain, because the taxed half is charged at a higher rate than an ordinary long-term gain.",
+      "modified": "2026-10-30T18:51:49",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-stock-gift-26180-never-taxed",
+      "title": "Your Stock Gift: $26,180 You Never Pay",
+      "url": "https://giniloh.com/your-stock-gift-26180-never-taxed/",
+      "path": "/your-stock-gift-26180-never-taxed/",
+      "sites_live": {
+        "giniloh.com": "/your-stock-gift-26180-never-taxed/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The shares you have held for more than a year can leave your account as a charitable gift at their full market price.",
+      "modified": "2026-10-30T17:16:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1890,6 +1947,29 @@
       ],
       "excerpt": "Gas is the cheapest heat this winter at $640, while heating oil runs $2,115. California just started paying homeowners to quit the gas line that makes it possible.",
       "modified": "2026-10-16T01:44:50",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "class-4-rates-the-shingle-not-your-roof",
+      "title": "Your Class 4 Roof: Ten Times Riskier",
+      "url": "https://wellroost.com/class-4-rates-the-shingle-not-your-roof/",
+      "path": "/class-4-rates-the-shingle-not-your-roof/",
+      "sites_live": {
+        "wellroost.com": "/class-4-rates-the-shingle-not-your-roof/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "After two seasons of small hail, an aged roof is up to ten times more likely to be damaged by the next big stone than a new one, because every test behind\u2026",
+      "modified": "2026-10-30T18:15:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6470,7 +6550,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your AI bill's hidden gap is 40 to 60 percent of the total cost, because the invoice stops at the key rather than the team that spent the money.",
-      "modified": "2026-10-29T18:24:36",
+      "modified": "2026-10-29T18:29:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7122,6 +7202,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-truck-mile-costs-2-2-driver-minutes",
+      "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
+      "url": "https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/",
+      "path": "/your-truck-mile-costs-2-2-driver-minutes/",
+      "sites_live": {
+        "aichieve.net": "/your-truck-mile-costs-2-2-driver-minutes/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A delivery truck's mile costs $0.79 of diesel at this week's national price, because the stop-and-go duty rather than the engine sets what a route burns, and\u2026",
+      "modified": "2026-10-30T19:14:29",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "zet-scale-ev-truck-residual-value-risk",
       "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn't the Reason",
       "url": "https://aichieve.net/zet-scale-ev-truck-residual-value-risk/",
@@ -7143,6 +7246,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1316,
+      "slug": "your-truck-mile-costs-2-2-driver-minutes",
+      "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T19:14:29",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -8250,34 +8367,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 997,
-      "slug": "your-fleets-charger-gap",
-      "title": "Your Fleet&#8217;s Charger Gap: 7.2 kW a Port",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-16T19:09:17",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 991,
-      "slug": "nyc-buys-night-deliveries-8-diesel-bills-you",
-      "title": "NYC Buys Night Deliveries: $8 Diesel Bills You",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-16T11:45:41",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -8288,6 +8377,48 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-09-15T02:00:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1319,
+      "slug": "your-ink-plan-bills-20-cents",
+      "title": "Your Overage Page Costs $0.20",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T19:44:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1312,
+      "slug": "your-3-year-rung-costs-15-9",
+      "title": "Your 3-Year Rung Costs 15.9%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T18:51:49",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1310,
+      "slug": "your-stock-gift-26180-never-taxed",
+      "title": "Your Stock Gift: $26,180 You Never Pay",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T17:16:24",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8526,34 +8657,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-17T06:15:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 994,
-      "slug": "your-raise-dies-at-51-5-hours",
-      "title": "Your Raise Dies at 51.5 Hours",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-16T18:42:03",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 988,
-      "slug": "your-ipo-payday-tax-bill",
-      "title": "Your IPO Payday: A 47.7% Tax Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-16T11:10:20",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

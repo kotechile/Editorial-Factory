@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-10-30T14:17:31+00:00
+# Internal-link candidates — 2026-10-30T19:50:51+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 44 live article(s), 16 other target(s)
+## giniloh.com — 47 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -40,6 +40,7 @@ Category hubs this front serves: —
 - [Your $130,000 Cap Costs the Credit](https://giniloh.com/your-130000-cap-costs-the-credit/) — —
 - [Your $350,000 Passport Isn't Europe](https://giniloh.com/your-350000-passport-isnt-europe/) — —
 - [Your 26-Week Cliff Kills 4 Years](https://giniloh.com/your-26-week-cliff-kills-4-years/) — —
+- [Your 3-Year Rung Costs 15.9%](https://giniloh.com/your-3-year-rung-costs-15-9/) — —
 - [Your 61-Day Window Costs the Position](https://giniloh.com/your-61-day-window-costs-the-position/) — —
 - [Your Buyback Gap: $39.8B to $0](https://giniloh.com/your-buyback-gap-39-8b-to-zero/) — —
 - [Your Cheap Part, a $599 Bill](https://giniloh.com/your-cheap-part-a-599-bill/) — —
@@ -47,8 +48,10 @@ Category hubs this front serves: —
 - [Your Home Server's 45-Day Patch Gap](https://giniloh.com/your-home-servers-45-day-patch-gap/) — —
 - [Your IPO Payday: A 47.7% Tax Bill](https://giniloh.com/your-ipo-payday-tax-bill/) — —
 - [Your LLC Bill: 75% Until 2028](https://giniloh.com/your-llc-bill-75-until-2028/) — —
+- [Your Overage Page Costs $0.20](https://giniloh.com/your-ink-plan-bills-20-cents/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
 - [Your Screen Gap: $999 vs $99](https://giniloh.com/your-screen-gap-999-vs-99/) — —
+- [Your Stock Gift: $26,180 You Never Pay](https://giniloh.com/your-stock-gift-26180-never-taxed/) — —
 - [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — —
 - [AI Career Radar (tool)](https://giniloh.com/calculators/career-ai-resilience/) — —
 - [Build vs Buy Software Amortization Calculator (tool)](https://giniloh.com/calculators/build-vs-buy/) — —
@@ -67,7 +70,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 54 live article(s), 22 other target(s)
+## wellroost.com — 55 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -108,6 +111,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Battery's Payback Gap: 0¢ to 38.1¢](https://wellroost.com/your-battery-payback-0-or-38/) — Energy & Efficiency
 - [Your Block's $30B Hardening Bill](https://wellroost.com/your-blocks-30b-hardening-bill/) — Energy & Efficiency
 - [Your Camera Eats 66 GB: The Hidden Cost](https://wellroost.com/your-camera-eats-66-gb-daily/) — Smart Home & Security
+- [Your Class 4 Roof: Ten Times Riskier](https://wellroost.com/class-4-rates-the-shingle-not-your-roof/) — Energy & Efficiency
 - [Your EV Is Now a Home Battery — Behind a Paywall](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
 - [Your Flood Gap Has 44 Days](https://wellroost.com/your-flood-gap-has-44-days/) — Home Cost Decisions
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
@@ -148,7 +152,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 173 live article(s), 13 other target(s)
+## aichieve.net — 174 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -325,6 +329,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Stock Records Are 65% Wrong](https://aichieve.net/why-65-percent-of-stock-records-miss/) — Supply Chain & Operations
 - [Your Tool Boundary Costs 3 Engineers](https://aichieve.net/your-tool-boundary-costs-3-engineers/) — Autonomous & Agentic Workflows
 - [Your Trace Won't Prove 92.5 Points](https://aichieve.net/your-trace-wont-prove-925-points/) — AI Stack & Tool TCO
+- [Your Truck Mile Costs 2.2 Driver-Minutes](https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/) — Supply Chain & Operations
 - [AI Stack & Tool TCO (category)](https://aichieve.net/categories/ai-stack-tool-tco/) — Ai Stack Tool Tco
 - [Agentic Workflow Breakeven Calculator (tool)](https://aichieve.net/tools/agentic-workflow-breakeven/) — —
 - [Artificial Intelligence & Future of Work (category)](https://aichieve.net/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence Future Of Work
@@ -341,6 +346,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1316 `your-truck-mile-costs-2-2-driver-minutes` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1297 `skus-fail-the-1-32-cut` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1291 `your-carriers-750000-doesnt-cover-cargo` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1287 `your-chargeback-misses-40-of-the-bill` — published in the CMS but absent from the frontend sitemap
@@ -420,9 +426,10 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1019 `your-tool-surface-is-a-release-surface` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1012 `prior-disclosure-clock-cuts-penalty` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1003 `your-mexico-hedge-renewal-risk` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #997 `your-fleets-charger-gap` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #991 `nyc-buys-night-deliveries-8-diesel-bills-you` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1319 `your-ink-plan-bills-20-cents` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1312 `your-3-year-rung-costs-15-9` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1310 `your-stock-gift-26180-never-taxed` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1307 `your-screen-gap-999-vs-99` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1304 `your-buyback-gap-39-8b-to-zero` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1300 `why-one-share-outvotes-5300-staff` — published in the CMS but absent from the frontend sitemap
@@ -440,5 +447,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1117 `your-350000-passport-isnt-europe` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1009 `your-disks-35-dead-by-year-six` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1000 `pi-5-price-jump-older-kit-wins` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #994 `your-raise-dies-at-51-5-hours` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #988 `your-ipo-payday-tax-bill` — published in the CMS but absent from the frontend sitemap
