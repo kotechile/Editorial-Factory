@@ -11,6 +11,12 @@ meta_title: "Your Class 4 Roof: Ten Times Riskier"
 meta_title_source: "derived_from_title"
 meta_description: "After two seasons of small hail, an aged roof is up to ten times more likely to be damaged by the next big stone than a new one, because every test behind…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/class-4-rates-the-shingle-not-your-roof/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "The Class 4 Roof Illusion. A split-screen comparison of a brand-new asphalt roof shingle and a severely weathered, cracked shingle resting"
+image_caption: "The Class 4 Roof Illusion: Why small hail makes your aged roof ten times riskier."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

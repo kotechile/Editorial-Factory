@@ -1,0 +1,112 @@
+{
+  "slug": "class-4-rates-the-shingle-not-your-roof",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A split-screen comparison of a brand-new asphalt roof shingle and a severely weathered, cracked shingle resting on a concrete floor.",
+      "caption": "Class 4 impact ratings test fresh shingles, but real-world weathering makes panels significantly more vulnerable to hail.",
+      "title": "shingle-weathering-class4-comparison",
+      "bytes": 391186,
+      "sha256": "sha256:410e266bad6d3365a2513eff0d0c4905"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "split-screen diptych with left-right scenario contrast. Studio product photograph of a heavy asphalt roof shingle resting on a weathered concrete floor in a garage. The left half shows a pristine, brand-new charcoal shingle with perfect tactile granule texture; the right half shows a heavily weathered, slate grey shingle with exposed fiberglass, micro-cracks, and stripped granules. 85mm lens, shallow depth of field, fine film grain. A single directional key light from the left casts a long, distinct shadow across the concrete. Palette of bone white, slate grey, and charcoal. Catalogue clarity, no text, no printed lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, hands, plain studio background, empty gradient void",
+  "rationale": "A studio object approach applied as a split-screen allows a highly controlled, tactile comparison between a fresh roofing product (what the label tests) and an aged product (the real-world reality), focusing on the material degradation.",
+  "cue": "aged panels far more fragile",
+  "subject": "a pristine asphalt shingle contrasted with a heavily weathered shingle",
+  "core_thesis": "The Class 4 impact rating evaluates only pristine new shingles, obscuring the severe vulnerability of aged, weather-worn roofing to hail damage.",
+  "core_conflict": "Fresh lab-tested resilience vs. real-world weathered material degradation.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The Class 4 Roof Illusion. A split-screen comparison of a brand-new asphalt roof shingle and a severely weathered, cracked shingle resting",
+  "caption": "The Class 4 Roof Illusion: Why small hail makes your aged roof ten times riskier.",
+  "title": "The Class 4 Roof Illusion",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/class-4-rates-the-shingle-not-your-roof/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395605,
+  "sha256": "sha256:5513e9750ecedf55c99c1e77d8430b21d80f409b2fd2929f5feb36863d6ca15d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395605,
+    "quality": 76,
+    "sha256": "sha256:5513e9750ecedf55c99c1e77d8430b21d80f409b2fd2929f5feb36863d6ca15d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:7d0b7b9d0ae2825962855152926a2a74cd0987f7b489e3cf26ab5af664a1dc68",
+  "render_phash": "7fdffdae79bffcffdc2f7a01fe78ec4c788c1e79073303e304658467c0a62056",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen image showing a new, intact piece of roofing material on the left and a damaged, weathered piece of roofing material on the right, both resting on a cracked concrete surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image directly illustrates the article's focus on comparing new versus aged and damaged roofing shingles."
+  },
+  "source_hash": "sha256:907514491d7c18937923b2da660e6fad",
+  "source_chars": 3800,
+  "task_id": "7dc5a3df33b6d105fd35f59c9d9132d2",
+  "credits": 5.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/7dc5a3df33b6d105fd35f59c9d9132d2_1793384085411.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "split-screen diptych with left-right scenario contrast. Studio product photograph of a heavy asphalt roof shingle resting on a weathered concrete floor in a garage. The left half shows a pristine, brand-new charcoal shingle with perfect tactile granule texture; the right half shows a heavily weathered, slate grey shingle with exposed fiberglass, micro-cracks, and stripped granules. 85mm lens, shallow depth of field, fine film grain. A single directional key light from the left casts a long, distinct shadow across the concrete. Palette of bone white, slate grey, and charcoal. Catalogue clarity, no text, no printed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T18:14:55+00:00",
+  "overlay": {
+    "kicker": "PROPERTY RISK // ROOF WEATHERING",
+    "title": "THE CLASS 4 ROOF ILLUSION",
+    "hook": "Why small hail makes your aged roof ten times riskier",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 105,
+    "contrast": 5.51,
+    "target": 5.5,
+    "clutter": 0.289,
+    "region_rgb": [
+      154,
+      151,
+      147
+    ],
+    "binding_rgb": [
+      108,
+      107,
+      105
+    ],
+    "title_lines": [
+      "THE CLASS 4",
+      "ROOF ILLUSION"
+    ],
+    "subject": 0.081,
+    "ink_subject": 0.035,
+    "spike": 0.265,
+    "generated_at": "2026-10-30T18:14:55+00:00"
+  }
+}

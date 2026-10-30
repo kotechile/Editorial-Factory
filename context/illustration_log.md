@@ -371,3 +371,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-30 | `your-buyback-gap-39-8b-to-zero` | concentrated_equity_portfolio_capital | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-buyback-gap-39-8b-to-zero/featured.jpg` |
 | 2026-10-30 | `your-screen-gap-999-vs-99` | consumer_asset_repair_replace_tco | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-screen-gap-999-vs-99/featured.jpg` |
 | 2026-10-30 | `your-stock-gift-26180-never-taxed` | concentrated_equity_portfolio_capital | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-stock-gift-26180-never-taxed/featured.jpg` |
+| 2026-10-30 | `class-4-rates-the-shingle-not-your-roof` | resilient_home_assets | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/class-4-rates-the-shingle-not-your-roof/featured.jpg` |
