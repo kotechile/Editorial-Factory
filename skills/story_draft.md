@@ -102,6 +102,19 @@ The **TOC is render-time only** — the site derives it from the section heading
   so nothing downstream catches "call site", "ratchet", "Btu" or "goods-receiving"; the fix has to
   happen on the way in (`executive-editor` skill carries the standard and the term table).
 - **The title's content words must appear verbatim (substring) in the first ~600 words — inflections do not count (learned 2026-10-14).** `headline_score.lead_delivery`/the honesty rule checks each title content word as a plain substring of the opening: a title reading "Why Your Card **Serves** 1.6" scores 100 STRONG standalone but reports `lead_ok: False` when the lead says "**served** about 1.6 requests a second", and the pre-publish gate will then re-cut the headline. Write the lead in the title's own inflection ("one card **serves** about 1.6 requests a second") or check with `python3 -c "import sys,headline_score as hs; print(hs.score('<title>', body=open('<draft>').read()))"` before the accessibility gate. Up to `max(1, len(content_words)//3)` of them may be absent, so one missing word clears — every additional one re-cuts the title.
+- **Budget every figure across sections while drafting — `article_shape` allows one money figure in at
+  most two of the five sections, and the headline's own figures must sit in the lead (learned 2026-10-30).**
+  A title that names two figures forces both into the lead, so a third mention anywhere (a numbers bullet,
+  the catch) reds the shape gate with "restated in 3 sections", and the first build of an iPhone
+  fee-schedule piece failed it on three figures at once ($999 in lead + numbers + catch, $99 in lead +
+  tension + numbers, $1,499 in tension + numbers + catch). The repair is not to weaken the lead: give each
+  numbers bullet a *different* figure from the same source (the `$99` insured fee moved to the lead and the
+  bullet took the `$19` cover-layer fee instead) and refer to a figure already spent by name, not by number,
+  in later sections. Map the figures to sections before writing, not after the gate.
+- **Observer cues need a first-person verb, not a first-person pronoun (learned 2026-10-30).**
+  `check_social_voice.mjs` matches `I` followed by a verb, plus its labelled-opinion and attention families,
+  so "What gives me pause is…" and "The strongest objection is…" both fail while reading exactly like a
+  cue. Write "What I find hard to square is…" or "The part I keep circling is…".
 - Use the section markers below **verbatim** — the Stylist iterates per section and `verify.sh` checks them.
   **A draft must emit `<!-- tldr -->` itself (learned 2026-10-14).** The marker set is gated on the *draft*
   file as well as the `_final.md`, and the Loop 3 rewrite adds the `<!-- tldr -->` marker it needs on the way out —
