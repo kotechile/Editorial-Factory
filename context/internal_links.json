@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T18:41:04+00:00",
+  "generated_at": "2026-10-30T14:17:31+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,82 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-screen-gap-999-vs-99",
+      "title": "Your Screen Gap: $999 vs $99",
+      "url": "https://giniloh.com/your-screen-gap-999-vs-99/",
+      "path": "/your-screen-gap-999-vs-99/",
+      "sites_live": {
+        "giniloh.com": "/your-screen-gap-999-vs-99/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Apple charges $999 to fix the inner screen on the iPhone Duo, because that display is a glued stack of layers rather than a part a shop can lift out and swap.",
+      "modified": "2026-10-30T12:49:09",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-buyback-gap-39-8b-to-zero",
+      "title": "Your Buyback Gap: $39.8B to $0",
+      "url": "https://giniloh.com/your-buyback-gap-39-8b-to-zero/",
+      "path": "/your-buyback-gap-39-8b-to-zero/",
+      "sites_live": {
+        "giniloh.com": "/your-buyback-gap-39-8b-to-zero/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Alphabet spent $51.4 billion on equipment last quarter, mostly to buy computing power for artificial intelligence.",
+      "modified": "2026-10-30T12:21:11",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "why-one-share-outvotes-5300-staff",
+      "title": "Why One Share Outvotes 5,300 Staff",
+      "url": "https://giniloh.com/why-one-share-outvotes-5300-staff/",
+      "path": "/why-one-share-outvotes-5300-staff/",
+      "sites_live": {
+        "giniloh.com": "/why-one-share-outvotes-5300-staff/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Anthropic filed papers on 26 October for its initial public offering (IPO). Those papers build a separate share class for its 5,300 staff that holds no claim\u2026",
+      "modified": "2026-10-30T11:14:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "one-rate-overruns-your-cap-5934",
+      "title": "One Rate Overruns Your Cap $5,934",
+      "url": "https://giniloh.com/one-rate-overruns-your-cap-5934/",
+      "path": "/one-rate-overruns-your-cap-5934/",
+      "sites_live": {
+        "giniloh.com": "/one-rate-overruns-your-cap-5934/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your \u20ac115,000 salary sits $203 under the $130,000 foreign earned income exclusion at the whole-year exchange rate the Internal Revenue Service (IRS) printed\u2026",
+      "modified": "2026-10-29T19:47:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1167,6 +1243,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "11-degrees-kills-the-compressor-quote",
+      "title": "11 Degrees Kills the Compressor Quote",
+      "url": "https://wellroost.com/11-degrees-kills-the-compressor-quote/",
+      "path": "/11-degrees-kills-the-compressor-quote/",
+      "sites_live": {
+        "wellroost.com": "/11-degrees-kills-the-compressor-quote/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "The coil was giving up just 11 degrees when a tech called the compressor dead and quoted $7,500 for a full swap.",
+      "modified": "2026-10-29T19:13:29",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "20-percent-of-your-ac-never-arrives",
       "title": "20% of Your AC Never Arrives",
       "url": "https://wellroost.com/20-percent-of-your-ac-never-arrives/",
@@ -1183,6 +1282,29 @@
       ],
       "excerpt": "Roughly 20% of your home's air conditioning (AC) never arrives in the room it is meant to cool. A new unit is sold on a factory rating, but the hidden air\u2026",
       "modified": "2026-10-19T19:12:48",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "85-percent-of-batteries-cant-save-you",
+      "title": "Your Battery Gap Is 85%",
+      "url": "https://wellroost.com/85-percent-of-batteries-cant-save-you/",
+      "path": "/85-percent-of-batteries-cant-save-you/",
+      "sites_live": {
+        "wellroost.com": "/85-percent-of-batteries-cant-save-you/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "On the morning of 14 October, Pacific Gas and Electric (PG&E) added 25,000 homes to a wildfire shutoff list and took 7,300 off it.",
+      "modified": "2026-10-30T10:56:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5146,6 +5268,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "skus-fail-the-1-32-cut",
+      "title": "Your SKUs Fail The 1.32 Cut",
+      "url": "https://aichieve.net/skus-fail-the-1-32-cut/",
+      "path": "/skus-fail-the-1-32-cut/",
+      "sites_live": {
+        "aichieve.net": "/skus-fail-the-1-32-cut/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Most of your stock-keeping units (SKUs) fail the 1.32 cut, because real sales happen less often than a planner expects.",
+      "modified": "2026-10-29T23:10:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "sla-credit-is-not-insurance",
       "title": "Why Cloud Uptime SLAs Are Not Insurance",
       "url": "https://aichieve.net/sla-credit-is-not-insurance/",
@@ -6287,6 +6432,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-carriers-750000-doesnt-cover-cargo",
+      "title": "Your Carrier's $750,000 Doesn't Cover Cargo",
+      "url": "https://aichieve.net/your-carriers-750000-doesnt-cover-cargo/",
+      "path": "/your-carriers-750000-doesnt-cover-cargo/",
+      "sites_live": {
+        "aichieve.net": "/your-carriers-750000-doesnt-cover-cargo/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Shippers count on a $750,000 federal filing to protect their freight, but that required minimum only pays for public harm.",
+      "modified": "2026-10-29T18:47:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-chargeback-misses-40-of-the-bill",
       "title": "Your AI Bill's Hidden 40% Gap",
       "url": "https://aichieve.net/your-chargeback-misses-40-of-the-bill/",
@@ -6975,6 +7143,34 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1297,
+      "slug": "skus-fail-the-1-32-cut",
+      "title": "Your SKUs Fail The 1.32 Cut",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-29T23:10:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1291,
+      "slug": "your-carriers-750000-doesnt-cover-cargo",
+      "title": "Your Carrier&#8217;s $750,000 Doesn&#8217;t Cover Cargo",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-29T18:47:05",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -8082,76 +8278,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 970,
-      "slug": "forecast-value-added-lose-to-last-period",
-      "title": "Forecast Value Added: 52% Lose to Last Period",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T20:11:03",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 966,
-      "slug": "freight-claim-dies-at-9-months",
-      "title": "Your Claim Dies at 9 Months",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T18:41:54",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 962,
-      "slug": "cheaper-model-pricier-task",
-      "title": "Your Cheaper Model: 57% Pricier Tasks",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T18:13:20",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 961,
-      "slug": "agent-loop-bound-not-a-budget",
-      "title": "68 Loops Your Runtime Never Stopped",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T17:39:22",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 958,
-      "slug": "holiday-forecasts-miss-what-shoppers-count",
-      "title": "Why 6.7% Holiday Growth Misses Units",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T13:18:27",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -8162,6 +8288,62 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-09-15T02:00:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1307,
+      "slug": "your-screen-gap-999-vs-99",
+      "title": "Your Screen Gap: $999 vs $99",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T12:49:09",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1304,
+      "slug": "your-buyback-gap-39-8b-to-zero",
+      "title": "Your Buyback Gap: $39.8B to $0",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T12:21:11",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1300,
+      "slug": "why-one-share-outvotes-5300-staff",
+      "title": "Why One Share Outvotes 5,300 Staff",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-30T11:14:35",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1294,
+      "slug": "one-rate-overruns-your-cap-5934",
+      "title": "One Rate Overruns Your Cap $5,934",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-29T19:47:44",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8372,20 +8554,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-16T11:10:20",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 968,
-      "slug": "three-forms-cost-more-than-tax",
-      "title": "Moving Abroad: Why Missed US Forms Cost $10,000 Each",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-15T19:44:40",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

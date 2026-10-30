@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 17,
+  "revision": 18,
   "history": [
     {
       "revision": 1,
@@ -137,6 +137,14 @@
       "title": "The AI Agent Audit Trail",
       "bytes": 229949,
       "sha256": "sha256:b0a6feb17d5e9770bf558437a2ead43460044ed4b3aae889218adf06c727e8e2"
+    },
+    {
+      "revision": 17,
+      "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig",
+      "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
+      "title": "The AI Agent Audit Trail",
+      "bytes": 229949,
+      "sha256": "sha256:b0a6feb17d5e9770bf558437a2ead43460044ed4b3aae889218adf06c727e8e2"
     }
   ],
   "style": "document_flatlay",
@@ -167,8 +175,8 @@
   "local_path": "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 229949,
-  "sha256": "sha256:b0a6feb17d5e9770bf558437a2ead43460044ed4b3aae889218adf06c727e8e2",
+  "bytes": 396577,
+  "sha256": "sha256:2a2b4d55f1cf901bc8276c8134e0c290ca4f06eafd8fcc385b25ef24853863e9",
   "source_hash": "sha256:c444586232bf864156d0a4b263f3569b",
   "source_chars": 5203,
   "task_id": "a73808a55815b86496bbef15d4d3fb99",
@@ -191,26 +199,39 @@
     "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 7.58,
-    "target": 4.5,
-    "clutter": 0.246,
+    "contrast": 7.02,
+    "target": 5.5,
+    "clutter": 0.251,
     "region_rgb": [
-      47,
-      36,
-      31
+      48,
+      37,
+      32
     ],
     "binding_rgb": [
-      92,
-      70,
-      57
+      94,
+      76,
+      62
     ],
     "title_lines": [
       "THE AI AGENT",
       "AUDIT TRAIL"
     ],
-    "subject": 0.155,
-    "ink_subject": 0.077,
-    "spike": 0.465,
+    "subject": 0.156,
+    "ink_subject": 0.079,
+    "spike": 0.464,
     "generated_at": "2026-10-09T02:03:49+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 396577,
+    "quality": 84,
+    "sha256": "sha256:2a2b4d55f1cf901bc8276c8134e0c290ca4f06eafd8fcc385b25ef24853863e9",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

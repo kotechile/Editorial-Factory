@@ -1,6 +1,6 @@
 {
   "slug": "agent-safety-gate-moves-to-verified-state",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -20,6 +20,14 @@
     },
     {
       "revision": 3,
+      "alt_text": "Verifying Agent State. A dark logic board with a glowing amber trace bypassing a relay gate to leave a permanent mark on a",
+      "caption": "Verifying Agent State: Why AI safety depends on the data agents leave behind.",
+      "title": "Verifying Agent State",
+      "bytes": 2485436,
+      "sha256": "sha256:c394b0218e2ab018c194768d3b0c9f56170c20ba8e42f1a45413a503e81869b1"
+    },
+    {
+      "revision": 4,
       "alt_text": "Verifying Agent State. A dark logic board with a glowing amber trace bypassing a relay gate to leave a permanent mark on a",
       "caption": "Verifying Agent State: Why AI safety depends on the data agents leave behind.",
       "title": "Verifying Agent State",
@@ -48,12 +56,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/agent-safety-gate-moves-to-verified-state/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 2485436,
-  "sha256": "sha256:c394b0218e2ab018c194768d3b0c9f56170c20ba8e42f1a45413a503e81869b1",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-safety-gate-moves-to-verified-state/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404333,
+  "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114",
   "source_hash": "sha256:959f8c8a8a4fef90d3f11e9b1edf708c",
   "source_chars": 3465,
   "task_id": "5c0a58b64620c6a1b8346d34b99bb059",
@@ -73,29 +81,42 @@
     "kicker": "AI AGENT SAFETY // PERSISTENT STATE",
     "title": "VERIFYING AGENT STATE",
     "hook": "Why AI safety depends on the data agents leave behind",
-    "anchor": "bottom-right",
+    "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 15.29,
-    "target": 4.5,
-    "clutter": 0.105,
+    "contrast": 6.73,
+    "target": 5.5,
+    "clutter": 0.331,
     "region_rgb": [
-      13,
-      12,
-      12
+      54,
+      38,
+      22
     ],
     "binding_rgb": [
-      25,
-      24,
-      23
+      129,
+      64,
+      34
     ],
     "title_lines": [
       "VERIFYING AGENT",
       "STATE"
     ],
-    "subject": 0.007,
-    "ink_subject": 0.005,
-    "spike": 0.014,
+    "subject": 0.22,
+    "ink_subject": 0.107,
+    "spike": 0.671,
     "generated_at": "2026-10-05T10:40:51+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404333,
+    "quality": 84,
+    "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

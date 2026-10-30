@@ -1,6 +1,6 @@
 {
   "slug": "heat-pumps-cheaper-to-run-pricier-to-buy",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -52,6 +52,14 @@
     },
     {
       "revision": 7,
+      "alt_text": "Heat Pump Break-Even Math. Isometric cutaway of a heat pump unit showing internal components and two opposing tracks.",
+      "caption": "Heat Pump Break-Even Math: Rising gear costs offset growing utility bill savings.",
+      "title": "Heat Pump Break-Even Math",
+      "bytes": 381560,
+      "sha256": "sha256:9b1b3c3a499374f4790e69f387262bf36f3bc78067933b6abaf0bdafac0fb635"
+    },
+    {
+      "revision": 8,
       "alt_text": "Heat Pump Break-Even Math. Isometric cutaway of a heat pump unit showing internal components and two opposing tracks.",
       "caption": "Heat Pump Break-Even Math: Rising gear costs offset growing utility bill savings.",
       "title": "Heat Pump Break-Even Math",

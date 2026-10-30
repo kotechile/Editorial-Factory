@@ -1,6 +1,6 @@
 {
   "slug": "total-landed-cost-china-vs-mexico",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -33,6 +33,14 @@
       "title": "Why Mexico Beats China",
       "bytes": 659250,
       "sha256": "sha256:14b4f261db54c8635ec031b6985942e3ad1ed829637b036b1642236e4ff26279"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Why Mexico Beats China. Isometric technical cutaway showing a shipping container stacked above manufacturing and customs",
+      "caption": "Why Mexico Beats China: Hidden tariffs and freight flip the manufacturing math.",
+      "title": "Why Mexico Beats China",
+      "bytes": 659250,
+      "sha256": "sha256:14b4f261db54c8635ec031b6985942e3ad1ed829637b036b1642236e4ff26279"
     }
   ],
   "style": "technical_isometric",
@@ -58,12 +66,12 @@
   "pinned": {
     "style": "technical_isometric"
   },
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/total-landed-cost-china-vs-mexico/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 659250,
-  "sha256": "sha256:14b4f261db54c8635ec031b6985942e3ad1ed829637b036b1642236e4ff26279",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/total-landed-cost-china-vs-mexico/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 324341,
+  "sha256": "sha256:553adde331252a96680180fa08cc156e9cc8bf076a33400fc548ba771abe349a",
   "source_hash": "sha256:75d3e3bef6ce0908c69e3fe0fa4bcb5a",
   "source_chars": 3988,
   "task_id": "63b6b492cd81e7e54b3359f57009d266",
@@ -85,29 +93,42 @@
     "kicker": "SUPPLY CHAIN // TOTAL LANDED COST",
     "title": "WHY MEXICO BEATS CHINA",
     "hook": "Hidden tariffs and freight flip the manufacturing math",
-    "anchor": "bottom-left",
+    "anchor": "bottom-right",
     "light": false,
-    "scrim": 60,
-    "contrast": 5.82,
+    "scrim": 0,
+    "contrast": 12.85,
     "target": 5.5,
-    "clutter": 0.438,
+    "clutter": 0.383,
     "region_rgb": [
-      227,
-      228,
-      228
+      234,
+      235,
+      235
     ],
     "binding_rgb": [
-      136,
-      151,
-      154
+      253,
+      253,
+      253
     ],
     "title_lines": [
       "WHY MEXICO",
       "BEATS CHINA"
     ],
-    "subject": 0.215,
-    "ink_subject": 0.075,
-    "spike": 0.777,
+    "subject": 0.28,
+    "ink_subject": 0.159,
+    "spike": 0.763,
     "generated_at": "2026-10-04T20:41:07+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 324341,
+    "quality": 88,
+    "sha256": "sha256:553adde331252a96680180fa08cc156e9cc8bf076a33400fc548ba771abe349a",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

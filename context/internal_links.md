@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-10-29T18:41:04+00:00
+# Internal-link candidates — 2026-10-30T14:17:31+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 40 live article(s), 16 other target(s)
+## giniloh.com — 44 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -20,6 +20,7 @@ Category hubs this front serves: —
 - [Moving Abroad: Why Missed US Forms Cost $10,000 Each](https://giniloh.com/three-forms-cost-more-than-tax/) — —
 - [NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?](https://giniloh.com/nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check/) — —
 - [Negotiate Job Offer with Giniloh Visualizer](https://giniloh.com/negotiate-job-offer-with-giniloh-visualizer/) — —
+- [One Rate Overruns Your Cap $5,934](https://giniloh.com/one-rate-overruns-your-cap-5934/) — —
 - [Options Trap: Your 26% AMT Bill](https://giniloh.com/post-termination-option-clock-tax/) — —
 - [Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade](https://giniloh.com/pi-5-price-jump-older-kit-wins/) — —
 - [Replace Laptop Screen? Let This Decision Engine Do the Math](https://giniloh.com/replace-laptop-screen-let-this-decision-engine-do-the-math/) — —
@@ -32,6 +33,7 @@ Category hubs this front serves: —
 - [Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows](https://giniloh.com/how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless/) — —
 - [Why 70% of Startup Options Go Unexercised](https://giniloh.com/why-70-of-startup-options-go-unexercised/) — —
 - [Why Home Assistant Renamed Its Cloud](https://giniloh.com/home-assistant-cloud-rename-hardware-rent/) — —
+- [Why One Share Outvotes 5,300 Staff](https://giniloh.com/why-one-share-outvotes-5300-staff/) — —
 - [Why Your Fridge Upgrade Pays $12.50](https://giniloh.com/why-your-fridge-upgrade-pays-12-50/) — —
 - [Why Your Swap Died at 25%](https://giniloh.com/why-your-swap-died-at-25/) — —
 - [Your $125 Exam Costs 122 Hours](https://giniloh.com/your-125-exam-costs-122-hours/) — —
@@ -39,12 +41,14 @@ Category hubs this front serves: —
 - [Your $350,000 Passport Isn't Europe](https://giniloh.com/your-350000-passport-isnt-europe/) — —
 - [Your 26-Week Cliff Kills 4 Years](https://giniloh.com/your-26-week-cliff-kills-4-years/) — —
 - [Your 61-Day Window Costs the Position](https://giniloh.com/your-61-day-window-costs-the-position/) — —
+- [Your Buyback Gap: $39.8B to $0](https://giniloh.com/your-buyback-gap-39-8b-to-zero/) — —
 - [Your Cheap Part, a $599 Bill](https://giniloh.com/your-cheap-part-a-599-bill/) — —
 - [Your Disks: 35% Dead by Year Six](https://giniloh.com/your-disks-35-dead-by-year-six/) — —
 - [Your Home Server's 45-Day Patch Gap](https://giniloh.com/your-home-servers-45-day-patch-gap/) — —
 - [Your IPO Payday: A 47.7% Tax Bill](https://giniloh.com/your-ipo-payday-tax-bill/) — —
 - [Your LLC Bill: 75% Until 2028](https://giniloh.com/your-llc-bill-75-until-2028/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
+- [Your Screen Gap: $999 vs $99](https://giniloh.com/your-screen-gap-999-vs-99/) — —
 - [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — —
 - [AI Career Radar (tool)](https://giniloh.com/calculators/career-ai-resilience/) — —
 - [Build vs Buy Software Amortization Calculator (tool)](https://giniloh.com/calculators/build-vs-buy/) — —
@@ -63,10 +67,11 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 52 live article(s), 22 other target(s)
+## wellroost.com — 54 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
+- [11 Degrees Kills the Compressor Quote](https://wellroost.com/11-degrees-kills-the-compressor-quote/) — Home Diagnostic Tools
 - [20% of Your AC Never Arrives](https://wellroost.com/20-percent-of-your-ac-never-arrives/) — Energy & Efficiency
 - [3 Days to Kill Your Deposit](https://wellroost.com/kill-your-deposit-in-3-days/) — Tools & Equipment
 - [3% Cap Never Covers Your Addition](https://wellroost.com/3-percent-cap-never-covers-your-addition/) — Energy & Efficiency
@@ -97,6 +102,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your 5% Deductible Risks Your Claim](https://wellroost.com/your-5-deductible-risks-your-claim/) — Home Cost Decisions
 - [Your 75,000-Btu Tank's Venting Trap](https://wellroost.com/your-75000-btu-tank-venting-trap/) — Energy & Efficiency
 - [Your Adjuster Hides a 25% Gap](https://wellroost.com/your-adjuster-hides-a-25-gap/) — Home Cost Decisions
+- [Your Battery Gap Is 85%](https://wellroost.com/85-percent-of-batteries-cant-save-you/) — Energy & Efficiency
 - [Your Battery Payback: A 5-State Gap](https://wellroost.com/battery-payback-five-state-gap/) — Energy & Efficiency
 - [Your Battery's 745 MW Cliff](https://wellroost.com/your-batterys-745-mw-cliff/) — Energy & Efficiency
 - [Your Battery's Payback Gap: 0¢ to 38.1¢](https://wellroost.com/your-battery-payback-0-or-38/) — Energy & Efficiency
@@ -142,7 +148,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 171 live article(s), 13 other target(s)
+## aichieve.net — 173 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -284,6 +290,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your CI Bill: 232 Hours Before You Build](https://aichieve.net/your-ci-bill-232-hours/) — AI Stack & Tool TCO
 - [Your Cache Pays 1.25x for Nothing](https://aichieve.net/your-cache-pays-125x-for-nothing/) — AI Stack & Tool TCO
 - [Your Carbon Report Skips 2 Lines: Trucks Aren't Counted](https://aichieve.net/your-carbon-report-skips-2-lines/) — Supply Chain & Operations
+- [Your Carrier's $750,000 Doesn't Cover Cargo](https://aichieve.net/your-carriers-750000-doesnt-cover-cargo/) — Supply Chain & Operations
 - [Your Charger Gap Buys 16 Robots](https://aichieve.net/your-charger-gap-buys-16-robots/) — Supply Chain & Operations
 - [Your Cheaper Model: 57% Pricier Tasks](https://aichieve.net/cheaper-model-pricier-task/) — AI Stack & Tool TCO
 - [Your Claim Dies at 9 Months](https://aichieve.net/freight-claim-dies-at-9-months/) — Supply Chain & Operations
@@ -312,6 +319,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Retrieval Fails at 5.7%](https://aichieve.net/your-retrieval-misses-57/) — Autonomous & Agentic Workflows
 - [Your Route's 5x Stop Gap: Density Beats Routing](https://aichieve.net/your-routes-5x-stop-gap/) — Supply Chain & Operations
 - [Your Runtime: The 6-Month Exit Gap](https://aichieve.net/your-runtime-has-six-months/) — AI Stack & Tool TCO
+- [Your SKUs Fail The 1.32 Cut](https://aichieve.net/skus-fail-the-1-32-cut/) — Supply Chain & Operations
 - [Your SSO Bill: $125 a Connection, $7.75 a Seat](https://aichieve.net/your-sso-bill-125-a-connection/) — AI Stack & Tool TCO
 - [Your Sandbox Boot Tax: 110x, Then Nothing](https://aichieve.net/your-sandbox-boot-tax-110x-then-nothing/) — Autonomous & Agentic Workflows
 - [Your Stock Records Are 65% Wrong](https://aichieve.net/why-65-percent-of-stock-records-miss/) — Supply Chain & Operations
@@ -333,6 +341,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1297 `skus-fail-the-1-32-cut` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1291 `your-carriers-750000-doesnt-cover-cargo` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1287 `your-chargeback-misses-40-of-the-bill` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1285 `your-sandbox-boot-tax-110x-then-nothing` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1281 `promo-spike-is-a-loan` — published in the CMS but absent from the frontend sitemap
@@ -412,12 +422,11 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1003 `your-mexico-hedge-renewal-risk` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #997 `your-fleets-charger-gap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #991 `nyc-buys-night-deliveries-8-diesel-bills-you` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #970 `forecast-value-added-lose-to-last-period` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #966 `freight-claim-dies-at-9-months` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #962 `cheaper-model-pricier-task` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #961 `agent-loop-bound-not-a-budget` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #958 `holiday-forecasts-miss-what-shoppers-count` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1307 `your-screen-gap-999-vs-99` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1304 `your-buyback-gap-39-8b-to-zero` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1300 `why-one-share-outvotes-5300-staff` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1294 `one-rate-overruns-your-cap-5934` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1278 `your-llc-bill-75-until-2028` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap
@@ -433,4 +442,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1000 `pi-5-price-jump-older-kit-wins` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #994 `your-raise-dies-at-51-5-hours` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #988 `your-ipo-payday-tax-bill` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #968 `three-forms-cost-more-than-tax` — published in the CMS but absent from the frontend sitemap
