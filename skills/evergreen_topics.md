@@ -696,6 +696,26 @@ passes. The shape that clears both: keep one connected 33–36-word sentence, ad
 short ones (4–7 words) at section openers, and leave the numbers bullets long; that landed
 `sd 10.2 -> 10.9` (better than the draft) with health above the draft's, Flesch 63.8 and every gate green.
 
+**A regulation can still be quoting the code as it was thirty years ago — cite the statute for what the limit is now (learned 2026-10-30).**
+Building the charitable-gift evergreen, `26 CFR § 1.170A-8(a)(1)` fetched cleanly (46 KB) and states the 20-/30-/50-percent
+ladder, but the same sentence calls `§ 170(b)(1)(C)` "the unlimited charitable contributions deduction" — a pre-1986 usage.
+The regulation is right for the ladder and for its own worked example (Example 5: $6,000 allowed against a $20,000
+contribution base, i.e. 30 percent), and wrong as a description of the current subsection, so the article cites the
+regulation only for arithmetic and the statute for the rule. Read any regulation's cross-axis references against the
+current code before quoting one as the rule.
+The hosts that carry this beat, all fetched first try: `irs.gov/publications/p526` (195 KB — "Amount of deduction—general rule
+… you can generally use the FMV", the 50%-limit election's worked example that drops a $28,000 basis-$22,000 gift to
+$22,000, the 150%-overstatement / 20% penalty block, the $500 Form 8283 threshold and "Also use Section A to report
+contributions of publicly traded securities"); `ecfr.gov/current/title-26/section-1.170A-8`; `law.cornell.edu/uscode/text/26/170`
+(199 KB); `irs.gov/individuals/net-investment-income-tax` (the 3.8 percent surtax and the $250,000 joint threshold);
+`irs.gov/taxtopics/tc409` (the 20 percent top long-term rate). **A matcher trap on that statute:** a cell leading on
+`30 percent of the taxpayer's contribution base` evidences on `§ 170(b)(1)(B)(i)` — the 30 percent cap for *other*
+contributions — not on `(C)(i)`, the capital-gain-property cap; `5 succeeding taxable years` lands one line above the
+`(C)` heading and is the cleaner row, so put the capital-gain cap in prose under the statute citation. **And the definition
+the whole article turns on is one paragraph away:** `§ 170(b)(1)(H)` defines "contribution base" as adjusted gross income
+computed without regard to **any net operating loss carryback** — a capital-loss carryback is *not* excluded, so "a loss
+carryback" is a claim the statute does not make.
+
 ## 5. Handoff
 
 **The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
