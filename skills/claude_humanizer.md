@@ -458,6 +458,15 @@ one.
   source line all fail the run and are held, with the missing figure and its draft sentence fed back
   for the retry. Run `python3 scripts/review_audit.py --draft <draft> --final <final>` on any pair,
   including an already-published artifact, to see the diff.
+- **A year-to-date figure restated as a quarterly one is invisible to every gate (learned 2026-10-30).**
+  On a cash-flow synthesis the rewrite wrote "In those three months it raised $42.9 billion of common stock"
+  for figures the filing reports for nine months (the quarter's own common-stock proceeds were $12.4 billion,
+  and preferred stock was $0 that quarter), because a cash-flow statement prints the quarterly and YTD columns
+  side by side. `review_audit` compares numbers and both are real, so the ledger passes a period swap; Flesch,
+  the voice gate and the citation check pass it too. Read the column header, not only the digits: for any filing
+  with YTD and quarterly columns, say which one each figure comes from, and treat a sentence that mixes them
+  (a quarterly cash figure beside a nine-month buyback) as a rewrite defect even when every number exists on
+  the page.
 - **What the numeric audit still cannot see — audit these by meaning.** The gate compares numbers,
   not nouns: a right figure with the wrong unit ("3.5 MW of cooling *capacity*" → a chiller
   "*drawing*" 3.5 MW), the wrong base (37% applied to a long-term gain), a share relabelled as an
