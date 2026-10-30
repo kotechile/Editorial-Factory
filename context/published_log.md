@@ -246,6 +246,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-29 | demand_sensing_advanced_sop | skus-fail-the-1-32-cut | Your SKUs Fail The 1.32 Cut | https://pressflow.aichieve.net/published/2026-10-29_skus-fail-the-1-32-cut.md | reader site only |
 | 2026-10-30 | resilient_home_assets | 85-percent-of-batteries-cant-save-you | Your Battery Gap Is 85% | https://pressflow.aichieve.net/published/2026-10-30_85-percent-of-batteries-cant-save-you.md | reader site only |
 | 2026-10-30 | career_velocity_equity_engineering | why-one-share-outvotes-5300-staff | Why One Share Outvotes 5,300 Staff | https://pressflow.aichieve.net/published/2026-10-30_why-one-share-outvotes-5300-staff.md | reader site only |
+| 2026-10-30 | concentrated_equity_portfolio_capital | your-buyback-gap-39-8b-to-zero | Your Buyback Gap: $39.8B to $0 | https://pressflow.aichieve.net/published/2026-10-30_your-buyback-gap-39-8b-to-zero.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

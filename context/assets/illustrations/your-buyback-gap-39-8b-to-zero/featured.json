@@ -1,0 +1,114 @@
+{
+  "slug": "your-buyback-gap-39-8b-to-zero",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A cut-paper silhouette of a stock certificate with a missing central piece, layered on a wooden desk.",
+      "caption": "The shift of tech capital toward AI infrastructure leaves a prominent gap in traditional share buybacks.",
+      "title": "Buyback-Gap-Paper-Collage",
+      "bytes": 404447,
+      "sha256": "sha256:7ba9cb5ae1683091f8df6a73d46483bb"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage on a warm oak home office desk. Two stylized cut-paper object silhouettes: a bone white stock certificate with a prominent clean void cut from its center, layered over a graphite data-rack silhouette. Hand-torn rag paper with visible fibre, physical cast shadows under each crisp layer, one raking directional light from the left. Muted modern editorial palette of bone white, graphite, and ochre. Extreme asymmetry, crisp clean edges, generous negative space, no bare geometry, no text, no legible print.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, 3d render, people",
+  "rationale": "The article explores a conceptual financial dilemma\u2014the 'buyback gap' and capital reallocation\u2014which is perfectly captured by an abstract, high-contrast paper collage emphasizing the missing equity piece.",
+  "cue": "buyback gap is the trade",
+  "subject": "cut-paper silhouette of a stock certificate with a central void",
+  "core_thesis": "The corporate buyer that historically absorbed employee stock grants has stopped bidding, leaving a visible gap in the de-risking trade.",
+  "core_conflict": "Massive capital expenditure on AI computing equipment vs. traditional share buybacks for equity holders.",
+  "composition": "extreme asymmetry",
+  "alt_text": "The Missing Buyback Bid. A cut-paper silhouette of a stock certificate with a missing central piece, layered on a wooden desk.",
+  "caption": "The Missing Buyback Bid: Massive AI spending breaks the de-risking trade for RSUs.",
+  "title": "The Missing Buyback Bid",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-buyback-gap-39-8b-to-zero/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408387,
+  "sha256": "sha256:1206950737ac705c630952f6c2d7fbd761bf4f33db5eaa4b3784a51a131b15cc",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408387,
+    "quality": 76,
+    "sha256": "sha256:1206950737ac705c630952f6c2d7fbd761bf4f33db5eaa4b3784a51a131b15cc",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:2be2f6542d381eb6d4ba9ff31bc61b311e69a3de5a3b61bf2923dbb6260f7578",
+  "render_phash": "4e7f4f9f498f0da71c7319330b270b66036611660c460645068d03cd00de0036",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A paper collage featuring a white rectangular frame with a central cutout overlapping a dark grey shape with a similar cutout, resting on a larger piece of textured white paper on a wooden surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a paper cutout resembling a certificate with a void, which loosely aligns with the concept of a 'buyback gap' and missing shares."
+  },
+  "source_hash": "sha256:a4ea133bab0799117f2fd05cbd6d1a41",
+  "source_chars": 5610,
+  "task_id": "335647f073aafc3d87b9da6b04a160a0",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d5f92714deec3204a0e56ebca1b75108.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage on a warm oak home office desk. Two stylized cut-paper object silhouettes: a bone white stock certificate with a prominent clean void cut from its center, layered over a graphite data-rack silhouette. Hand-torn rag paper with visible fibre, physical cast shadows under each crisp layer, one raking directional light from the left. Muted modern editorial palette of bone white, graphite, and ochre. Extreme asymmetry, crisp clean edges, generous negative space, no bare geometry, no text, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-30T12:20:50+00:00",
+  "overlay": {
+    "kicker": "TECH EQUITY // BUYBACK HALTS",
+    "title": "THE MISSING BUYBACK BID",
+    "hook": "Massive AI spending breaks the de-risking trade for RSUs",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 6.01,
+    "target": 5.5,
+    "clutter": 0.345,
+    "region_rgb": [
+      163,
+      153,
+      136
+    ],
+    "binding_rgb": [
+      116,
+      104,
+      88
+    ],
+    "title_lines": [
+      "THE MISSING",
+      "BUYBACK BID"
+    ],
+    "subject": 0.1,
+    "ink_subject": 0.049,
+    "spike": 0.302,
+    "generated_at": "2026-10-30T12:20:50+00:00"
+  }
+}

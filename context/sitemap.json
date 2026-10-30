@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T11:21:41Z",
+  "updated_at": "2026-10-30T12:21:13Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4464,6 +4464,23 @@
         "Related reading"
       ],
       "target_persona": "equity_career_strategist",
+      "date": "2026-10-30",
+      "public": false
+    },
+    {
+      "slug": "2026-10-30_your-buyback-gap-39-8b-to-zero",
+      "title": "Your Buyback Gap: $39.8B to $0",
+      "vertical": "concentrated_equity_portfolio_capital",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "financial_architect",
       "date": "2026-10-30",
       "public": false
     }
