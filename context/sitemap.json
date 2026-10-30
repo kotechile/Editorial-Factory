@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:03:36Z",
+  "updated_at": "2026-10-30T19:14:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4561,6 +4561,24 @@
         "At a glance"
       ],
       "target_persona": "financial_architect",
+      "date": "2026-10-30",
+      "public": false
+    },
+    {
+      "slug": "2026-10-30_your-truck-mile-costs-2-2-driver-minutes",
+      "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-10-30",
       "public": false
     }

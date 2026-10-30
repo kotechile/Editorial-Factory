@@ -373,3 +373,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-30 | `your-stock-gift-26180-never-taxed` | concentrated_equity_portfolio_capital | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-stock-gift-26180-never-taxed/featured.jpg` |
 | 2026-10-30 | `class-4-rates-the-shingle-not-your-roof` | resilient_home_assets | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/class-4-rates-the-shingle-not-your-roof/featured.jpg` |
 | 2026-10-30 | `your-3-year-rung-costs-15-9` | career_velocity_equity_engineering | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-3-year-rung-costs-15-9/featured.jpg` |
+| 2026-10-30 | `your-truck-mile-costs-2-2-driver-minutes` | last_mile_routing_fleet_carbon | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-truck-mile-costs-2-2-driver-minutes/featured.jpg` |

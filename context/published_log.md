@@ -251,6 +251,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-30 | concentrated_equity_portfolio_capital | your-stock-gift-26180-never-taxed | Your Stock Gift: $26,180 You Never Pay | https://pressflow.aichieve.net/published/2026-10-30_your-stock-gift-26180-never-taxed.md | reader site only |
 | 2026-10-30 | resilient_home_assets | class-4-rates-the-shingle-not-your-roof | Your Class 4 Roof: Ten Times Riskier | https://pressflow.aichieve.net/published/2026-10-30_class-4-rates-the-shingle-not-your-roof.md | reader site only |
 | 2026-10-30 | career_velocity_equity_engineering | your-3-year-rung-costs-15-9 | Your 3-Year Rung Costs 15.9% | https://pressflow.aichieve.net/published/2026-10-30_your-3-year-rung-costs-15-9.md | reader site only |
+| 2026-10-30 | last_mile_routing_fleet_carbon | your-truck-mile-costs-2-2-driver-minutes | Your Truck Mile Costs 2.2 Driver-Minutes | https://pressflow.aichieve.net/published/2026-10-30_your-truck-mile-costs-2-2-driver-minutes.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

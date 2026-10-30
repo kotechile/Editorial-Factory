@@ -39,6 +39,8 @@ At this week's prices the two lines convert cleanly. The U.S. Energy Information
 
 My read is that three things decide whether a miles-saved pitch survives contact with these tables.
 
+None of this prices a software licence, and that is the point: the lines below are what a case has to be built in before a licence quote means anything. A vendor quoting miles saved is quoting the small line [3][4][6].
+
 - **The currency of the claim:** a ten-mile cut on a hundred-mile day is about $7.9 of diesel, the same money as 22 driver-minutes, so a planner has to know which line a vendor is quoting [3][4][6].
 - **The stop rate:** at 22 stops in a paid hour the median wage spreads $0.98 of pay across each stop, and at 18 stops the same hour puts $1.20 on each one, the one line an optimizer can shorten without buying fuel [6].
 - **The plan's own basis:** a case built on the van's 18.5 figure instead of the truck's 7.1928 understates fuel by 2.6 times, the direction that makes a weak project look funded [1][2].

@@ -1,0 +1,112 @@
+{
+  "slug": "your-truck-mile-costs-2-2-driver-minutes",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modern delivery truck parked at a commercial loading bay illuminated by warm light at twilight.",
+      "caption": "Routing changes that add minutes to save miles often lose money on driver wages.",
+      "title": "delivery-truck-loading-bay-dusk",
+      "bytes": 354261,
+      "sha256": "sha256:5f381afd008389ff41177c1741d13c4d"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph of a modern commercial delivery truck parked at a concrete loading bay at blue hour. Wide off-centre asymmetric framing. Long-exposure calm with no moving figures, deep blue ambient twilight contrasting with a single directional warm amber key light from the right side spilling from the open bay door onto the asphalt. Clean geometry, deep pine green and slate grey palette, brushed steel and weathered concrete materials. 35mm lens, crisp atmospheric depth, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, people, faces, UI, logos, gibberish",
+  "rationale": "An architectural night shot of a loading bay captures the quiet scale of last-mile logistics, where the physical reality of the truck grounds the economic math of routes and driver time.",
+  "cue": "stops per paid hour rather than in miles saved",
+  "subject": "a delivery truck parked at a concrete loading bay under twilight",
+  "core_thesis": "A delivery truck's mile costs the same as 2.2 minutes of driver pay, meaning route optimization must prioritize stops per paid hour over miles saved to avoid losing money.",
+  "core_conflict": "Fuel savings per mile versus driver wage costs per minute in last-mile delivery routes.",
+  "composition": "wide off-centre asymmetric framing",
+  "alt_text": "The Cost Of A Truck Mile. A modern delivery truck parked at a commercial loading bay illuminated by warm light at twilight.",
+  "caption": "The Cost Of A Truck Mile: The trade-off between driver wages and diesel fuel costs.",
+  "title": "The Cost Of A Truck Mile",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-truck-mile-costs-2-2-driver-minutes/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395567,
+  "sha256": "sha256:c4c9dd1f89a8dd66cde6d21dd17f68cb7178d2b329592c30997ba2ac1f3b0760",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395567,
+    "quality": 88,
+    "sha256": "sha256:c4c9dd1f89a8dd66cde6d21dd17f68cb7178d2b329592c30997ba2ac1f3b0760",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:fed9dd276bce687d0e5f6180af3b491299ce8031205fce83c373fb247282cda6",
+  "render_phash": "00d801bc07ef007c226518f53c076987690762076589610f3b07600700872007",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A green delivery truck is parked at a concrete loading dock under twilight conditions.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a delivery truck, which aligns with the article's focus on delivery truck costs."
+  },
+  "source_hash": "sha256:eb9abaeecdf05c5a571f38c10454064e",
+  "source_chars": 4369,
+  "task_id": "47d6ebfb62bbe80482a6ea67987b17cf",
+  "credits": 5.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/47d6ebfb62bbe80482a6ea67987b17cf_1793387645993.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph of a modern commercial delivery truck parked at a concrete loading bay at blue hour. Wide off-centre asymmetric framing. Long-exposure calm with no moving figures, deep blue ambient twilight contrasting with a single directional warm amber key light from the right side spilling from the open bay door onto the asphalt. Clean geometry, deep pine green and slate grey palette, brushed steel and weathered concrete materials. 35mm lens, crisp atmospheric depth, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T19:14:14+00:00",
+  "overlay": {
+    "kicker": "FLEET LOGISTICS // ROUTING COSTS",
+    "title": "THE COST OF A TRUCK MILE",
+    "hook": "The trade-off between driver wages and diesel fuel costs",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.76,
+    "target": 4.5,
+    "clutter": 0.211,
+    "region_rgb": [
+      27,
+      60,
+      81
+    ],
+    "binding_rgb": [
+      64,
+      95,
+      124
+    ],
+    "title_lines": [
+      "THE COST OF A",
+      "TRUCK MILE"
+    ],
+    "subject": 0.109,
+    "ink_subject": 0.068,
+    "spike": 0.271,
+    "generated_at": "2026-10-30T19:14:14+00:00"
+  }
+}
