@@ -71,6 +71,14 @@ The wage line is a median too, and health benefits, overtime and route incentive
 
 What the rate cannot say is whether the minutes freed are spent well. A plan that saves miles without shortening the paid day saves nothing but the pump, and [the district's own density](/your-routes-5x-stop-gap/) does more to the paid day than the sequence does.
 
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** Federal tables let a route's miles be priced against a driver's minutes.
+**The number:** 2.2 driver-minutes buys the diesel in one truck-mile.
+**The risk:** Both are averages, and a plan that saves miles without shortening the paid day saves only fuel.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -83,14 +91,6 @@ What the rate cannot say is whether the minutes freed are spent well. A plan tha
 - [Sticker Price Lies](/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — more on Supply Chain & Operations
 - [Your Fuel Surcharge Hides Three Negotiated Numbers](/fuel-surcharge-peg-mpg-audit/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** Federal tables let a route's miles be priced against a driver's minutes.
-**The number:** 2.2 driver-minutes buys the diesel in one truck-mile.
-**The risk:** Both are averages, and a plan that saves miles without shortening the paid day saves only fuel.
 
 ## Sources
 [1] U.S. Department of Energy, Alternative Fuels Data Center — "Average Fuel Economy by Major Vehicle Category" (delivery truck 7.1928 miles per gasoline gallon equivalent; light truck/van 18.5; Class 8 truck 6.3048; refuse truck 5.2392; source line: Federal Highway Administration, Highway Statistics 2024, Table VM-1) — https://afdc.energy.gov/data/10310
