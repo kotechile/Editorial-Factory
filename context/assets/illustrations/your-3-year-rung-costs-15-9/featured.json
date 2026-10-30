@@ -1,0 +1,112 @@
+{
+ "slug": "your-3-year-rung-costs-15-9",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Blank paper documents under a brass weight on an oak desk, viewed from directly above.",
+   "caption": "The fast rung of the new federal exclusion requires a 30-day election to start the clock upon transfer.",
+   "title": "section-1202-30-day-election-flatlay",
+   "bytes": 374232,
+   "sha256": "sha256:9096a85c3218be201311192a125b15c7"
+  }
+ ],
+ "style": "document_flatlay",
+ "style_label": "Document still life",
+ "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Overhead flat-lay photograph of blank, heavy bone white paper stock documents on a warm oak study desk, a solid brass paperweight resting on one corner. 35mm anamorphic lens, top-down 90-degree view, asymmetric top-down composition with the hero documents offset to the right. Soft window daylight coming from the left casting subtle shadows across the slate grey and bone white palette. Shallow depth of field, fine film grain, mute paper tones, completely blank pages, no text, no printed lettering.",
+ "negative_prompt": "text, typography, letters, numbers, garbled text, random lettering, watermarks, UI, printed words, logos, writing",
+ "rationale": "The story centers on a regulatory filing, a tax code change, and a 30-day election window, making an editorial document flatlay the most direct and evocative conceptual match.",
+ "cue": "30-day election put the whole grant on one clock",
+ "subject": "blank heavy paper documents under a brass weight",
+ "core_thesis": "The 2025 section 1202 rewrite offers a partial tax exclusion at three years but taxes the remaining half at up to 28 percent, requiring a strict 30-day election.",
+ "core_conflict": "Fast liquidity at three years versus a high early-rung tax rate and strict gross-assets eligibility window.",
+ "composition": "asymmetric top-down composition",
+ "alt_text": "Blank paper documents under a brass weight on an oak desk, viewed from directly above.",
+ "caption": "The New 3-Year Tax Rung: Why the shorter hold for a partial tax break costs 15.9%.",
+ "title": "The New 3-Year Tax Rung",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "gemini-3.1-pro-preview",
+ "director_attempts": 3,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-3-year-rung-costs-15-9/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 401068,
+ "sha256": "sha256:dfdfb61e6f7a366c8f448a1604c7b4bfd4b8829853e01f73e9c3d8bb137cc1f3",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 401068,
+  "quality": 84,
+  "sha256": "sha256:dfdfb61e6f7a366c8f448a1604c7b4bfd4b8829853e01f73e9c3d8bb137cc1f3",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:3e38d9a793cd7669aff57768823a4a7f96dea46b9416f8d77c466f20e1fceca6",
+ "render_phash": "c727ea66201e8dbe0f9a07de07f604f685be85b605b604b604b605f609fc04c6",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A stack of blank white papers on a wooden surface with a brass paperweight on top.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.6,
+  "reason": "The image shows documents, which loosely relates to tax filings and regulations mentioned in the article."
+ },
+ "source_hash": "sha256:6253859b0292090f89d4cf9d48cff2a7",
+ "source_chars": 4536,
+ "task_id": "9790e3abc6feaeaffee58ce1c4cf317a",
+ "credits": 5.0,
+ "cost_ms": 128,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/9790e3abc6feaeaffee58ce1c4cf317a_1793386123202.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "Overhead flat-lay photograph of blank, heavy bone white paper stock documents on a warm oak study desk, a solid brass paperweight resting on one corner. 35mm anamorphic lens, top-down 90-degree view, asymmetric top-down composition with the hero documents offset to the right. Soft window daylight coming from the left casting subtle shadows across the slate grey and bone white palette. Shallow depth of field, fine film grain, mute paper tones, completely blank pages, no text, no printed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-10-30T18:48:55+00:00",
+ "overlay": {
+  "kicker": "STARTUP EQUITY // SECTION 1202 RULES",
+  "title": "THE NEW 3-YEAR TAX RUNG",
+  "hook": "Why the shorter hold for a partial tax break costs 15.9%",
+  "anchor": "top-left",
+  "light": true,
+  "scrim": 120,
+  "contrast": 6.11,
+  "target": 5.5,
+  "clutter": 0.328,
+  "region_rgb": [
+   127,
+   118,
+   105
+  ],
+  "binding_rgb": [
+   166,
+   168,
+   155
+  ],
+  "title_lines": [
+   "THE NEW 3-YEAR",
+   "TAX RUNG"
+  ],
+  "subject": 0.275,
+  "ink_subject": 0.183,
+  "spike": 0.646,
+  "generated_at": "2026-10-30T18:48:55+00:00"
+ }
+}

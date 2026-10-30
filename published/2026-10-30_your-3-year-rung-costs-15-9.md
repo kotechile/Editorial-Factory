@@ -11,6 +11,12 @@ meta_title: "Your 3-Year Rung Costs 15.9%"
 meta_title_source: "derived_from_title"
 meta_description: "The fast rung of the new federal exclusion costs 15.9 percent of the gain, because the taxed half is charged at a higher rate than an ordinary long-term gain."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-3-year-rung-costs-15-9/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Blank paper documents under a brass weight on an oak desk, viewed from directly above."
+image_caption: "The New 3-Year Tax Rung: Why the shorter hold for a partial tax break costs 15.9%."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
