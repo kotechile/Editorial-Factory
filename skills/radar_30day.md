@@ -173,6 +173,18 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
 > final, after the rewrite has already been paid for. Add such URLs to this file's `## Dated background`
 > list before the fact-check pass, not after Loop 3.
 
+> **A press release dated inside the window that reports a report dated outside it is not an in-window
+> signal (learned 2026-10-30).** Radar already dates a trade hit from the publisher's own date field, but
+> the vendor-PR wrapper is a second date that looks fresher than the evidence. Observed on the
+> `last_mile_routing_fleet_carbon` sweep: a 2026-10-06 logistics-provider release announced a research
+> study's findings (54% of fleets past pilot, 76% reporting operating-cost savings) and read as a fresh
+> October signal, while the study's own cover page says **"Report published September 22, 2026"** — 38 days
+> before the run, and the retailer disclosure behind the only other leg (a two-site yard-switcher pilot
+> reported 2026-10-14) was an undated FY26 CSR report. Two in-window write-ups, zero in-window anchors.
+> Open the study PDF's own cover or copyright page and read `published`/`Revised` before the row is
+> written; when the underlying document is dated outside the window the row belongs in
+> `## Dated background`, and a write-up of an undated disclosure cannot stand in for an event.
+
 ## 4. Failure handling
 - Zero candidates ≥ 60 → log query syntax to `skills/self_improvement_eval.md`, widen to 45 days,
   re-run once. If still empty, return "no publish" — never pad.

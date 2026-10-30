@@ -81,7 +81,18 @@ verdict line in the matching `content_calendar.md` run-log rows, and `context/pu
   weekly slot has a window that has *barely advanced*, so same-thesis follow-ups dominate. If every
   candidate is a retread and nothing fresh clears the window, return **"no publish"** — do not pad a
   near-8 composite by rating a retread's novelty high.
-- Anchor-freshness rule: a candidate whose load-bearing claim/figure is dated OUTSIDE the 30-day window
+- **De-dup must include the SIBLING verticals that publish to the same reader front (learned 2026-10-30).**
+  §3.5 as written compares this vertical's own artifacts, and the desk-wide figure rule demotes a *figure*
+  another vertical anchored — but neither catches an *event* claimed by a sibling vertical days earlier on
+  the same domain. Observed on the `last_mile_routing_fleet_carbon` run: the window's only hard in-window
+  event (USPS's new weekly fuel surcharge, 2026-10-26) had been published 2026-10-29 as
+  `parcel-fuel-percentage-weekly-january` by `supply_chain`, which routes to the same `aichieve.net` front —
+  so the strongest candidate would have been the second article on one announcement, in front of one reader,
+  inside three days. Before scoring, grep the run-log rows for the **last 7 days across every vertical whose
+  `target_domain` equals this one's** (`context/vertical_sites.json` / `verticals.json`), not just
+  `published/` for this vertical, and read the winner line of each. A sibling's event is a retread here even
+  when this vertical has never touched it.
+- **Anchor-freshness rule: a candidate whose load-bearing claim/figure is dated OUTSIDE the 30-day window
   is dropped by the radar at Stage 1; if it still surfaces here, do not let its authority/shareability
   carry it past the freshness gate.
 - **De-dup is per-vertical, but the DESK is shared — demote a figure another vertical already anchored
