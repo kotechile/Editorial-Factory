@@ -1,0 +1,112 @@
+{
+  "slug": "your-screen-gap-999-vs-99",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Close-up of a foldable smartphone screen edge showing bonded glass layers on a concrete surface.",
+      "caption": "The physical complexity of a foldable inner display dictates its repair economics.",
+      "title": "bonded-screen-macro",
+      "bytes": 221728,
+      "sha256": "sha256:cabcde099f6a6930f46d0cd56deb2cd4"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of the edge of a premium foldable smartphone screen, revealing tightly bonded layers of optical glass and polymer, resting on a graphite and clay concrete workbench. 100mm macro lens, one razor-sharp focal plane. Soft directional daylight from the left casting a gentle contact shadow. Off-centre asymmetry with the device edge positioned on the right third, the bone white background falling away into smooth shallow depth of field. Visible surface texture, fine dust on the brushed metal frame, muted sophisticated editorial palette.",
+  "negative_prompt": "text, letters, numbers, watermarks, typography, logos, UI, garbled writing",
+  "rationale": "An editorial macro perfectly captures the microscopic complexity of the bonded screen stack, emphasizing the physical reason the repair is so costly when uninsured.",
+  "cue": "a glued stack of layers",
+  "subject": "the edge of a foldable smartphone screen revealing tightly bonded layers",
+  "core_thesis": "Apple's extended plan is the only place a phone's repair risk is actually priced, bridging the gap between a $999 cash repair and a $99 insured fee.",
+  "core_conflict": "Extortionate uninsured parts cost vs heavily subsidized insured plan coverage",
+  "composition": "off-centre asymmetry",
+  "alt_text": "The iPhone Duo Screen Gap. Close-up of a foldable smartphone screen edge showing bonded glass layers on a concrete surface.",
+  "caption": "The iPhone Duo Screen Gap: Where Apple actually prices the risk of a foldable screen.",
+  "title": "The iPhone Duo Screen Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-screen-gap-999-vs-99/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 269234,
+  "sha256": "sha256:24f55ebd14327aa0e32fb187a4318d198ea7644761e19c1a1103b663b5f6bb1b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 269234,
+    "quality": 88,
+    "sha256": "sha256:24f55ebd14327aa0e32fb187a4318d198ea7644761e19c1a1103b663b5f6bb1b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:c0dd2d12c07858a3e716fc80915fb31d2088b721d45acc064d0a228362150d68",
+  "render_phash": "ffeefffccff0cce030e071e014e016e009f20cf8070e09c381f0c03c802fd023",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A close-up view of the corner of a smartphone resting on a textured surface, showing the edge of the screen and a clear protective case.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows the edge of a smartphone screen, which relates to the article's focus on screen repair costs and layered displays."
+  },
+  "source_hash": "sha256:c4529f1f23886f22bffe75f72e176098",
+  "source_chars": 4740,
+  "task_id": "335de4b07f84307e96256323cf6f498b",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/335de4b07f84307e96256323cf6f498b_1793364513440.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of the edge of a premium foldable smartphone screen, revealing tightly bonded layers of optical glass and polymer, resting on a graphite and clay concrete workbench. 100mm macro lens, one razor-sharp focal plane. Soft directional daylight from the left casting a gentle contact shadow. Off-centre asymmetry with the device edge positioned on the right third, the bone white background falling away into smooth shallow depth of field. Visible surface texture, fine dust on the brushed metal frame, muted sophisticated editorial palette.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-30T12:48:45+00:00",
+  "overlay": {
+    "kicker": "FOLDABLE PHONES // REPAIR RISK",
+    "title": "THE IPHONE DUO SCREEN GAP",
+    "hook": "Where Apple actually prices the risk of a foldable screen",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 7.19,
+    "target": 4.5,
+    "clutter": 0.07,
+    "region_rgb": [
+      199,
+      197,
+      196
+    ],
+    "binding_rgb": [
+      193,
+      192,
+      190
+    ],
+    "title_lines": [
+      "THE IPHONE DUO",
+      "SCREEN GAP"
+    ],
+    "subject": 0.014,
+    "ink_subject": 0.004,
+    "spike": 0.052,
+    "generated_at": "2026-10-30T12:48:45+00:00"
+  }
+}

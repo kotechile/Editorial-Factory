@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T12:21:13Z",
+  "updated_at": "2026-10-30T12:49:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4481,6 +4481,24 @@
         "At a glance"
       ],
       "target_persona": "financial_architect",
+      "date": "2026-10-30",
+      "public": false
+    },
+    {
+      "slug": "2026-10-30_your-screen-gap-999-vs-99",
+      "title": "Your Screen Gap: $999 vs $99",
+      "vertical": "consumer_asset_repair_replace_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-30",
       "public": false
     }
