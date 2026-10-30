@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/85-percent-of-batteries-cant-save-you/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "The 85 Percent Battery Gap. A modern wall-mounted home battery glowing warmly on a dark concrete garage wall at night."
-image_caption: "The 85 Percent Battery Gap: Utility storage cannot save homes from wildfire cuts."
+image_alt: "A wall-mounted home battery with a glowing light ring on a concrete garage wall, beside a small black control box."
+image_caption: "The 85 percent battery gap: grid storage cannot keep a house lit through a wildfire shutoff."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
