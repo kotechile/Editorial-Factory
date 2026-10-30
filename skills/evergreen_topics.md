@@ -600,6 +600,8 @@ citation the gate verified reads UNVERIFIED-at-the-push (a note by design, never
 run log. `help.ui.com`'s UniFi VLAN articles are unreachable to the verifier, so a bare IoT-VLAN privacy piece has no
 numeric primary and dies near 6.7; the archive arithmetic is the half of that angle that can be sourced.
 
+**The frontier rewrite turns a comparison into an absolute and restores the retired TL;DR box — check both by hand before the push (learned 2026-10-30).** On the Class 4 hail piece the Loop 3 output rendered IBHS's "became up to ten times more susceptible to damage from later large hail … compared to new shingles" as "an aging roof breaks up to ten times faster" — a different, unsupported claim — and moved "two seasons" to "two years". The same pass discarded the 2026-10-29 three-line `At a glance` (shift / number / risk, under 50 words) and rebuilt the retired four-part box with a nested **What I'd Watch** list, the second run in three days to do so. Read every comparative ("faster", "weaker", "riskier"), every `up to`, and the box schema in the rewrite itself, because Flesch, the figure diff and the voice gate all pass a piece that overstates its own finding.
+
 **Plan which section owns each figure before drafting — `article_shape` allows a figure in at most two body
 sections, and the lead counts as one (learned 2026-10-26).** A series that appears in the lead, again in
 `By the numbers` and again in `At a glance` is HELD at the push ("figure $195 money is restated in 3
