@@ -10,6 +10,12 @@ date: 2026-10-31
 slug: your-zone-deferral-is-worth-115-percent
 meta_title: "Your Zone Saves 1.15%: The Hidden Cost"
 meta_description: "A foreign-trade zone sold on duty delay returns 1.15 percent of the duty at bank prime, so the money sits in the tariff lines your parts cross."
+image_path: "context/assets/illustrations/your-zone-deferral-is-worth-115-percent/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Two cobalt component blocks sliding into a brushed steel housing on a concrete warehouse floor."
+image_caption: "The zone charges duty on the parts' value, and the line you elect sets the rate."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -58,6 +64,15 @@ The math also leaves out what a zone costs to run: activation, a stock control a
 
 One more limit applies to the clock. A delay only counts if the duty is paid in the end, and goods that leave the zone for export pay nothing at all. My read, held loosely: an FTZ pays off where the parts cross several lines and the finished good sits on a cheaper one. Everyone else is simply buying a calendar. Where that gap already sits in your model, our [Total Delivered Cost calculator](/tools/total-delivered-cost/) carries the duty line through the waterfall.
 
+
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** An FTZ moves the duty question off the border and onto your bill of materials.
+- **The number:** A 60-day delay is worth just 1.15 percent of the duty at bank prime.
+- **The risk:** Where parts and finished goods share a tariff line, the zone saves only the calendar.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -70,14 +85,6 @@ One more limit applies to the clock. A delay only counts if the duty is paid in 
 - [Importers Forfeit 99% Duty Refunds](/why-importers-forfeit-duty-refunds/) — more on Supply Chain & Operations
 - [Your $15 Air Rule, $195 Break-Even](/your-15-air-rule-195-break-even/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** An FTZ moves the duty question off the border and onto your bill of materials.
-- **The number:** A 60-day delay is worth just 1.15 percent of the duty at bank prime.
-- **The risk:** Where parts and finished goods share a tariff line, the zone saves only the calendar.
 
 ## Sources
 

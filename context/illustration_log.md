@@ -381,3 +381,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-31 | `why-37667-snow-throwers-failed-winter` | outdoor_power_equipment | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/why-37667-snow-throwers-failed-winter/featured.jpg` |
 | 2026-10-31 | `4726-boilers-51825-silent-alarms` | home_diagnostics_tech | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/4726-boilers-51825-silent-alarms/featured.jpg` |
 | 2026-10-31 | `your-standby-bill-hides-62-watts` | personal_microeconomics_tinkering_tax | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-standby-bill-hides-62-watts/featured.jpg` |
+| 2026-10-31 | `your-zone-deferral-is-worth-115-percent` | supplier_risk_reshoring_decision | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-zone-deferral-is-worth-115-percent/featured.jpg` |

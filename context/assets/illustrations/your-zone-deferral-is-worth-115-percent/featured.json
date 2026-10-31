@@ -1,0 +1,120 @@
+{
+ "slug": "your-zone-deferral-is-worth-115-percent",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Two distinct component modules sliding into a single brushed steel housing on a concrete floor.",
+   "caption": "The true value of a foreign-trade zone lies in the tariff gap between imported parts and finished goods.",
+   "title": "FTZ Tariff Line Arbitrage",
+   "bytes": 397768,
+   "sha256": "sha256:ad8d23f229f3f62dd16fd283739326c9"
+  },
+  {
+   "revision": 2,
+   "alt_text": "Two cobalt component blocks sliding into a brushed steel housing on a concrete warehouse floor.",
+   "caption": "The zone charges duty on the parts' value, and the line you elect sets the rate.",
+   "note": "alt retyped by hand: the generated one opened on the overlay headline"
+  }
+ ],
+ "style": "component_assembly",
+ "style_label": "Modular component assembly",
+ "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered concrete warehouse aisle floor. Extreme asymmetry framing. Three recognisable engineered parts: two distinct cobalt component modules sliding into a single brushed steel housing, illustrating parts merging. Slate grey, cobalt, and brushed steel palette. One directional key light from the left throwing a long cast shadow. Hard clean edges, matte muted palette, generous negative space. Unlabelled, no text, no molded lettering, no numbers.",
+ "negative_prompt": "garbled text, random lettering, watermarks, numbers, text, labels, ui, alphabets, words",
+ "rationale": "A modular component assembly perfectly abstracts the regulatory shift of parts merging into a finished good, highlighting the structural change in tariff lines without relying on literal paperwork that triggers text generation.",
+ "cue": "cross several tariff lines",
+ "subject": "two distinct component modules sliding into a single housing",
+ "core_thesis": "A foreign-trade zone does not cut duty; it changes the value the duty is charged on and the line it is charged at, making tariff arbitrage the real benefit.",
+ "core_conflict": "The illusion of duty delay savings versus the reality of tariff line arbitrage and the cost of capital.",
+ "composition": "extreme asymmetry",
+ "alt_text": "Two cobalt component blocks sliding into a brushed steel housing on a concrete warehouse floor.",
+ "caption": "The zone charges duty on the parts' value, and the line you elect sets the rate.",
+ "title": "Two parts, one housing",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "gemini-3.1-pro-preview",
+ "director_attempts": 2,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-zone-deferral-is-worth-115-percent/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 403894,
+ "sha256": "sha256:21e46a5ad4889731c76a972c151edc8255ccd49057e5795bbb3641503ec80396",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 403894,
+  "quality": 84,
+  "sha256": "sha256:21e46a5ad4889731c76a972c151edc8255ccd49057e5795bbb3641503ec80396",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:764b73e3e2760c3b0aa25182c1c90e4d431b7dab42c0aeac42a81054504e96bf",
+ "render_phash": "7bff008f0000000000000141089f20f021e030c207e01f81f80b80e402402cc8",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "Two blue rectangular components partially inserted into a long, rectangular metal housing resting on a concrete floor.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.7,
+  "reason": "The image shows component assembly, which metaphorically relates to the article's discussion of parts crossing tariff lines in a foreign-trade zone."
+ },
+ "source_hash": "sha256:d58294b4da808e4cfe32fe5f6575a854",
+ "source_chars": 4705,
+ "task_id": "4aae357274975908d1d37c98b73401c0",
+ "credits": 18.0,
+ "cost_ms": 25,
+ "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d2151393d65bf34aadfa3033b00a44ed.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered concrete warehouse aisle floor. Extreme asymmetry framing. Three recognisable engineered parts: two distinct cobalt component modules sliding into a single brushed steel housing, illustrating parts merging. Slate grey, cobalt, and brushed steel palette. One directional key light from the left throwing a long cast shadow. Hard clean edges, matte muted palette, generous negative space. Unlabelled, no text, no molded lettering, no numbers.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-10-31T18:15:31+00:00",
+ "overlay": {
+  "kicker": "SUPPLY CHAIN // FOREIGN-TRADE ZONES",
+  "title": "THE REAL VALUE OF AN FTZ",
+  "hook": "Why duty delays save less than choosing tariff lines",
+  "anchor": "top-left",
+  "light": true,
+  "scrim": 75,
+  "contrast": 4.67,
+  "target": 4.5,
+  "clutter": 0.208,
+  "region_rgb": [
+   121,
+   121,
+   116
+  ],
+  "binding_rgb": [
+   151,
+   150,
+   145
+  ],
+  "title_lines": [
+   "THE REAL VALUE",
+   "OF AN FTZ"
+  ],
+  "subject": 0.048,
+  "ink_subject": 0.018,
+  "spike": 0.171,
+  "generated_at": "2026-10-31T18:15:31+00:00"
+ }
+}
