@@ -258,6 +258,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-31 | yard_robotics | your-mower-needs-4-approvals | Why Your Mower Needs 4 Approvals | https://pressflow.aichieve.net/published/2026-10-31_your-mower-needs-4-approvals.md | reader site only |
 | 2026-10-31 | outdoor_power_equipment | why-37667-snow-throwers-failed-winter | Why 37,667 Snow Throwers Failed Winter | https://pressflow.aichieve.net/published/2026-10-31_why-37667-snow-throwers-failed-winter.md | reader site only |
 | 2026-10-31 | home_diagnostics_tech | 4726-boilers-51825-silent-alarms | 4,726 Boilers, 51,825 Silent Alarms | https://pressflow.aichieve.net/published/2026-10-31_4726-boilers-51825-silent-alarms.md | reader site only |
+| 2026-10-31 | personal_microeconomics_tinkering_tax | your-standby-bill-hides-62-watts | Your Standby Bill Hides 62 Watts | https://pressflow.aichieve.net/published/2026-10-31_your-standby-bill-hides-62-watts.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

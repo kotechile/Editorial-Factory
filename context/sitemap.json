@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T17:48:17Z",
+  "updated_at": "2026-10-31T17:49:34Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4697,6 +4697,24 @@
       "date": "2026-10-31",
       "public": true,
       "url": "https://wellroost.com/your-mower-needs-4-approvals/"
+    },
+    {
+      "slug": "2026-10-31_your-standby-bill-hides-62-watts",
+      "title": "Your Standby Bill Hides 62 Watts",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-31",
+      "public": false
     }
   ]
 }

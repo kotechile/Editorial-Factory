@@ -1,0 +1,114 @@
+{
+  "slug": "your-standby-bill-hides-62-watts",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy-duty power meter block and a tiny standard wall adapter rendered in matte clay on a concrete surface.",
+      "caption": "Hunting down tiny half-watt wall adapters ignores the heavy standby loads hiding in larger household gear.",
+      "title": "Standby-Power-Vampires",
+      "bytes": 389160,
+      "sha256": "sha256:7c1dad2788de6117065084b0cd1d4b7d"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a heavy-duty power meter block bridging a thick conduit cable, dwarfing a tiny standard wall adapter placed beside it, extreme asymmetry with heavy off-centre weighting. The modular electrical assembly rests on a weathered concrete floor in a garage. One strong directional key light raking from the right throws long cast shadows across the concrete. Matte surfaces with visible moulding seams, rendered in graphite, bone white, and a subtle accent of rust. Generous negative space, no legible text, no embossed lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, plain spheres, simple cubes, floating geometric shapes, glossy reflections",
+  "rationale": "The clay render allows us to abstract the concept of standby load size into a physical, architectural assembly of recognizable electrical parts\u2014a massive meter block and a tiny adapter\u2014without getting bogged down in literal brand specifics or cluttered environments.",
+  "cue": "Your standby bill hides about 62 watts",
+  "subject": "a heavy-duty power meter block dwarfing a tiny standard wall adapter",
+  "core_thesis": "The continuous standby power load in households is driven by large appliances drawing heavy watts, making the traditional advice of unplugging tiny half-watt chargers economically pointless.",
+  "core_conflict": "trivial perceived savings vs hidden high-wattage appliance loads",
+  "composition": "extreme asymmetry with heavy off-centre weighting",
+  "alt_text": "The 62 Watt Standby Load. A heavy-duty power meter block and a tiny standard wall adapter rendered in matte clay on a concrete surface.",
+  "caption": "The 62 Watt Standby Load: The hidden appliances driving your idle electricity bill.",
+  "title": "The 62 Watt Standby Load",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-standby-bill-hides-62-watts/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391034,
+  "sha256": "sha256:c0955796db46f932a304bcc174e8699fa17204664b70d647a0f5a1dd0ba9bf75",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391034,
+    "quality": 80,
+    "sha256": "sha256:c0955796db46f932a304bcc174e8699fa17204664b70d647a0f5a1dd0ba9bf75",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6c528ab01438361b6b7bb7f4b1a758057644ac650552d52d0f05457ad2bcaa70",
+  "render_phash": "0ffb3ef7c79e833a0d9e4dbe6b6c7becb4ed9be856f0cea0cd8ccf0c4e231c57",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A large, blocky power meter device with thick braided cables sits on a cracked surface next to a small standard wall adapter.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a power meter and a wall adapter, which relates to the article's focus on measuring standby power draw."
+  },
+  "source_hash": "sha256:e70e96510f500232684dda5e910de6c8",
+  "source_chars": 4635,
+  "task_id": "1cd7566022abd8f08a673221a843cca5",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b880ca3e272ffed5726e0ec88d17897d.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a heavy-duty power meter block bridging a thick conduit cable, dwarfing a tiny standard wall adapter placed beside it, extreme asymmetry with heavy off-centre weighting. The modular electrical assembly rests on a weathered concrete floor in a garage. One strong directional key light raking from the right throws long cast shadows across the concrete. Matte surfaces with visible moulding seams, rendered in graphite, bone white, and a subtle accent of rust. Generous negative space, no legible text, no embossed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-31T17:49:15+00:00",
+  "overlay": {
+    "kicker": "HOME ENERGY // VAMPIRE POWER",
+    "title": "THE 62 WATT STANDBY LOAD",
+    "hook": "The hidden appliances driving your idle electricity bill",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 105,
+    "contrast": 5.6,
+    "target": 5.5,
+    "clutter": 0.316,
+    "region_rgb": [
+      109,
+      102,
+      91
+    ],
+    "binding_rgb": [
+      170,
+      158,
+      142
+    ],
+    "title_lines": [
+      "THE 62 WATT",
+      "STANDBY LOAD"
+    ],
+    "subject": 0.134,
+    "ink_subject": 0.082,
+    "spike": 0.341,
+    "generated_at": "2026-10-31T17:49:15+00:00"
+  }
+}
