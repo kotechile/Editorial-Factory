@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T10:48:26Z",
+  "updated_at": "2026-10-31T11:12:58Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4619,6 +4619,24 @@
         "At a glance"
       ],
       "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-31",
+      "public": false
+    },
+    {
+      "slug": "2026-10-31_why-37667-snow-throwers-failed-winter",
+      "title": "Why 37,667 Snow Throwers Failed Winter",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
       "date": "2026-10-31",
       "public": false
     },
