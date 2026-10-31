@@ -1,0 +1,367 @@
+{
+ "decided": "2026-10-31",
+ "decided_by": "owner (approved in session)",
+ "note": "no artifact/row existed for these posts, so the kind was proposed from title+date and approved as a batch; scripts/backfill_kind_tags.py --overrides applies it",
+ "posts": [
+  {
+   "site": "giniloh.com",
+   "slug": "the-agentic-rag-trap",
+   "date": "2026-10-30",
+   "kind": "evergreen",
+   "reason": "architecture trap explainer",
+   "title": "The Agentic RAG trap"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
+   "date": "2026-10-10",
+   "kind": "evergreen",
+   "reason": "break-even math",
+   "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "token-price-record-low-budget-overrun",
+   "date": "2026-10-08",
+   "kind": "news",
+   "reason": "record-price market moment",
+   "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn\u2019t."
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost",
+   "date": "2026-10-04",
+   "kind": "evergreen",
+   "reason": "landed-cost method",
+   "title": "The Sticker Price Lies: Why Mexico Beats China on Total Landed Cost"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors",
+   "date": "2026-10-04",
+   "kind": "evergreen",
+   "reason": "buy-advisory",
+   "title": "CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor\u2019s Spreadsheet:"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "parcelproof-stop-bleeding-28-on-carrier-invoices",
+   "date": "2026-10-04",
+   "kind": "evergreen",
+   "reason": "audit method",
+   "title": "ParcelProof: Stop Bleeding 2\u20138% on Carrier Invoices"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "facturgate-the-deterministic-pre-send-gate-converter-for-european-e",
+   "date": "2026-10-04",
+   "kind": "evergreen",
+   "reason": "standard/method explainer",
+   "title": "FacturGate: The Deterministic Pre-Send Gate & Converter for European E-Invoicing (EN 16931)"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "stripe-accounting-software-solving-the-payout-black-box-with",
+   "date": "2026-10-03",
+   "kind": "evergreen",
+   "reason": "software explainer",
+   "title": "Stripe Accounting Software: Solving the Payout Black Box with LedgerLink"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "goods-tariff-relief-vs-vessel-fee",
+   "date": "2026-10-03",
+   "kind": "news",
+   "reason": "policy event",
+   "title": "Washington Cuts the Tariff on the Goods. The Fee on the Ship Is About to Snap Back."
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "planner-as-router-fold-the-model-choice-into-the-plan",
+   "date": "2026-10-02",
+   "kind": "evergreen",
+   "reason": "architecture",
+   "title": "Planner-as-Router: Fold the Model Choice Into the Plan"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "token-prices-just-halved-the-cfo-still-cant-read-the-bill",
+   "date": "2026-10-02",
+   "kind": "news",
+   "reason": "market moment",
+   "title": "Token Prices Just Halved. The CFO Still Can\u2019t Read the Bill."
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "why-70-of-startup-options-go-unexercised",
+   "date": "2026-10-02",
+   "kind": "evergreen",
+   "reason": "durable finding",
+   "title": "Why 70% of Startup Options Go Unexercised"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "enterprisebuildvsbuy-the-250k-ai-upkeep-tax",
+   "date": "2026-09-26",
+   "kind": "evergreen",
+   "reason": "cost framework",
+   "title": "The $250k AI Upkeep Tax: Why Build-vs-Buy Is an Engineer-Years Decision"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "multi-agent-orchestration-building-the-one-person-enterprise",
+   "date": "2026-09-24",
+   "kind": "evergreen",
+   "reason": "architecture",
+   "title": "Multi Agent Orchestration: Building the One-Person Enterprise"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "agentic-ai-adoption-soars-but-profits-stall-in-2026",
+   "date": "2026-09-19",
+   "kind": "news",
+   "reason": "report of the moment",
+   "title": "Agentic AI Adoption Soars, But Profits Stall in 2026"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "openai-just-made-the-agent-loop-a-commodity",
+   "date": "2026-09-19",
+   "kind": "news",
+   "reason": "launch",
+   "title": "OpenAI just made the agent loop a commodity"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "openais-custom-chip-beats-nvidia-on-power-2",
+   "date": "2026-09-18",
+   "kind": "news",
+   "reason": "launch",
+   "title": "OpenAI\u2019s custom chip beats Nvidia on power"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "nvidia-says-its-gpus-arent-sold-out-its-cfos-279-billion-memory-bet",
+   "date": "2026-09-17",
+   "kind": "news",
+   "reason": "market claim",
+   "title": "Nvidia says its GPUs aren\u2019t sold out. Its CFO\u2019s $279 billion memory bet says otherwise."
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "expats-evaluating-the-true-value-of-a-job-driven-move-overseas",
+   "date": "2026-09-14",
+   "kind": "evergreen",
+   "reason": "decision framework",
+   "title": "Expats: Evaluating the True Value of a Job-Driven Move overseas"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "is-a-3000-espresso-maker-machine-worth-it",
+   "date": "2026-07-09",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Is a $3,000 Espresso Maker Machine Worth It?"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "beyond-the-emergency-fund-how-to-build-a-frictionless-wealth",
+   "date": "2026-07-09",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Beyond the Emergency Fund: How to Build a Frictionless Wealth-Protection System"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "simulate-a-frictionless-liquidity-sweep-in-giniloh",
+   "date": "2026-07-09",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Simulate a Frictionless Liquidity Sweep in Giniloh"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "smart-ways-to-invest-an-extra-500-a-day",
+   "date": "2026-07-09",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Smart Ways to Invest an Extra $500 a Day"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "best-ai-proof-jobs-in-a-changing-market",
+   "date": "2026-07-08",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Best AI Proof Jobs in a Changing Market"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "nvidia-rtx-pro-groundbreaking-performance-but-does-the-math-check",
+   "date": "2026-07-05",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "NVIDIA RTX PRO: Groundbreaking Performance, But Does the Math Check Out?"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "lease-break-calculator-save-1850-in-3-steps",
+   "date": "2026-06-28",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Lease Break Calculator: Save $1,850 in 3 Steps"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "zapier-notion-integration-calculate-your-tinkering-tax",
+   "date": "2026-06-26",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Zapier Notion Integration: Calculate Your Tinkering Tax"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "replace-laptop-screen-let-this-decision-engine-do-the-math",
+   "date": "2026-06-26",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Replace Laptop Screen? Let This Decision Engine Do the Math"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "self-hosted-ai-when-to-buy-vs-rent-gpus",
+   "date": "2026-06-24",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Self-Hosted AI: When to Buy vs Rent GPUs"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "ebike-costs-per-use-calculator-for-commuters",
+   "date": "2026-06-20",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Ebike Costs: Per-Use Calculator for Commuters"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "jobs-switch-calculator-step-by-step-profit-guide",
+   "date": "2026-06-19",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Jobs Switch Calculator: Step-by-Step Profit Guide"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "calculate-your-career-relocation-payback",
+   "date": "2026-06-18",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Calculate Your Career Relocation Payback"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "negotiate-job-offer-with-giniloh-visualizer",
+   "date": "2026-06-17",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Negotiate Job Offer with Giniloh Visualizer"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "the-blueprint-behind-giniloh-money-flow",
+   "date": "2026-06-14",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "The Blueprint Behind Giniloh Money Flow"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "how-to-use-giniloh-to-simulate-automate-and-backtest-frictionless",
+   "date": "2026-06-10",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "Using Giniloh to Simulate, Automate, and Backtest Frictionless Money Flows"
+  },
+  {
+   "site": "giniloh.com",
+   "slug": "the-giniloh-money-flow-simulator-explained",
+   "date": "2026-06-05",
+   "kind": "evergreen",
+   "reason": "SEO/how-to or calculator page (back catalogue)",
+   "title": "How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
+   "date": "2026-10-05",
+   "kind": "evergreen",
+   "reason": "decision framework",
+   "title": "The Remodel That Pays You Back Isn\u2019t the One You Want"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy",
+   "date": "2026-10-05",
+   "kind": "news",
+   "reason": "price change",
+   "title": "Heat Pumps Just Got Cheaper to Run \u2014 and Pricier to Buy"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid",
+   "date": "2026-10-04",
+   "kind": "evergreen",
+   "reason": "rate-vs-yield math",
+   "title": "Borrow at 8% to remodel, or let your battery earn on the grid"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "california-legalizes-plug-in-home-solar-panels",
+   "date": "2026-10-04",
+   "kind": "news",
+   "reason": "policy event",
+   "title": "California Legalizes Plug-In Home Solar Panels"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy",
+   "date": "2026-10-03",
+   "kind": "news",
+   "reason": "rate change, dated",
+   "title": "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
+   "date": "2026-09-16",
+   "kind": "evergreen",
+   "reason": "how-to guide",
+   "title": "Emporia Vue: How to Cut Energy Bills"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
+   "date": "2026-09-15",
+   "kind": "evergreen",
+   "reason": "durable explainer",
+   "title": "Benefits of Living in the City: 2026 Pros and Cons"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
+   "date": "2026-09-12",
+   "kind": "news",
+   "reason": "rebate change",
+   "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes"
+  },
+  {
+   "site": "wellroost.com",
+   "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
+   "date": "2026-09-07",
+   "kind": "news",
+   "reason": "credit ended",
+   "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died"
+  }
+ ]
+}

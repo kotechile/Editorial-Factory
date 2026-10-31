@@ -33,6 +33,7 @@ same app password; the `vertical` vocabulary is not, and is not touched here).
 from __future__ import annotations
 
 import argparse
+import json
 import pathlib
 import re
 import sys
@@ -81,6 +82,26 @@ def kind_map(root: pathlib.Path) -> tuple[dict[str, tuple[str, str]], list[str]]
     return mapping, unclassified
 
 
+def load_overrides(path: str) -> dict[str, tuple[str, str]]:
+    """{slug: (kind, how)} from a decisions file — kinds an owner approved, not inferred ones.
+
+    Some live posts have no artifact and no row anywhere (a hand-made CMS post, a push from another
+    producer), so nothing on disk can classify them. Rather than guess, the proposal is reviewed and
+    recorded once in `context/kind_decisions.json`; this makes that decision applyable and, above
+    all, re-runnable — running the backfill again must not silently drop a decided tag.
+    """
+    data = json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
+    posts = data.get("posts") if isinstance(data, dict) else data
+    out: dict[str, tuple[str, str]] = {}
+    for row in posts or []:
+        slug = str((row or {}).get("slug") or "").strip()
+        kind = str((row or {}).get("kind") or "").strip().lower()
+        if not slug or kind not in wd.KINDS:
+            raise SystemExit(f"FAIL: {path}: bad row {row!r} (kind must be one of {', '.join(wd.KINDS)})")
+        out[slug] = (kind, f"decided: {data.get('decided', 'no date')} — {row.get('reason') or ''}".strip())
+    return out
+
+
 def destinations(db) -> dict[str, str]:
     """{cms_base_url: a site_domain on that CMS} — one credential scope per CMS, never a guess."""
     _, rows = db._call("GET", f"{wd.SITES_TABLE}?select=cms_base_url,site_domain,active")
@@ -120,11 +141,18 @@ def main() -> int:
                         help="Only the N newest live posts per site — a small inspectable batch")
     parser.add_argument("--site", default=None,
                         help="Only this front domain (giniloh.com, wellroost.com)")
+    parser.add_argument("--overrides", default=None,
+                        help="A decisions file (context/kind_decisions.json) whose kinds beat the "
+                             "inferred ones — for posts that have no artifact at all")
     args = parser.parse_args()
 
     root = pathlib.Path(__file__).resolve().parent.parent
     wd.load_env()
     mapping, unclassified = kind_map(root)
+    if args.overrides:
+        decided = load_overrides(args.overrides)
+        mapping.update(decided)
+        print(f"overrides: {len(decided)} decided kind(s) from {args.overrides}")
     counts = {k: sum(1 for v in mapping.values() if v[0] == k) for k in wd.KINDS}
     print(f"artifacts classified: {len(mapping)} "
           + ", ".join(f"{k} {n}" for k, n in counts.items()))
