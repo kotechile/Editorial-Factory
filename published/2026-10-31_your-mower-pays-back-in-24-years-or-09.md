@@ -72,6 +72,15 @@ There is also a hardware cost the service contract avoids: blade sets, and in ti
 
 Scope is the final limit. The one-acre machines in this class are being priced against a bill for a quarter of their rated area, so the northern payback figures are the cautious end of the range rather than a national number [1][4]. On a lot that is sloped, gated or cut into zones, the machine may not cover the area at all.
 
+
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** Payback claims now rest on the exact weeks a region's grass grows, not on a twelve-month contract.
+**The number:** 2.8× separates the shortest and longest U.S. mowing seasons.
+**The risk:** Published visit prices assume a quarter-acre lot, so a larger yard moves the answer more than the machine does.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -84,14 +93,6 @@ Scope is the final limit. The one-acre machines in this class are being priced a
 - [Emporia Vue: How to Cut Energy Bills](/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — more on Smart Home & Security
 - [Your Class 4 Roof: Ten Times Riskier](/class-4-rates-the-shingle-not-your-roof/) — more on Energy & Efficiency
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** Payback claims now rest on the exact weeks a region's grass grows, not on a twelve-month contract.
-**The number:** 2.8× separates the shortest and longest U.S. mowing seasons.
-**The risk:** Published visit prices assume a quarter-acre lot, so a larger yard moves the answer more than the machine does.
 
 ## Sources
 
