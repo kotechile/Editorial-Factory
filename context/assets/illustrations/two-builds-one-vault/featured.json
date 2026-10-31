@@ -1,0 +1,114 @@
+{
+  "slug": "two-builds-one-vault",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical modular server drive caddies side-by-side on a wooden bench, one open and the other sealed with a brass lock.",
+      "caption": "When a vendor splits a single repository into two shipping builds, a self-hosted server becomes an ongoing audit of which features made the cut.",
+      "title": "Bitwarden dual build license split",
+      "bytes": 348040,
+      "sha256": "sha256:aa2b9bfe87e87537c8cfd1424828604b"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a home office workbench. A split-screen diptych with left-right scenario contrast: two identical brushed metal server drive caddies side-by-side. The left caddy is open and unlatched; the right caddy is sealed shut with an integrated heavy brass lock mechanism. Clean hard edges on weathered painted wood, single directional light throwing long cast shadows from the left. Matte muted palette of slate grey, bone white, and warm brass. Generous negative space.",
+  "negative_prompt": "text, letters, numbers, watermarks, gibberish, ui, labels, glowing, neon, spheres, cubes, loose scraps",
+  "rationale": "The story is about a structural change in how software is packaged and licensed (two builds from one source, one locked down). Component assembly perfectly captures this systemic, modular shift by showing two identical server parts with different access states on a physical workbench.",
+  "cue": "2 Builds, 1 Vault",
+  "subject": "two identical modular server drive caddies side-by-side, one locked with a brass mechanism",
+  "core_thesis": "The free self-hosted build is now a shipping decision the vendor owns, so the cost of a license split lands as an audit of every device you enrolled rather than as a price you can see coming.",
+  "core_conflict": "Open-source self-hosting promise vs. vendor-controlled feature gating and licensing splits",
+  "composition": "split-screen diptych left-right contrast",
+  "alt_text": "The BITWARDEN LICENSE Split. Two identical modular server drive caddies side-by-side on a wooden bench, one open and the other sealed with",
+  "caption": "The BITWARDEN LICENSE Split: How a dual-build release tests the self-hosting promise.",
+  "title": "The BITWARDEN LICENSE Split",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/two-builds-one-vault/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 387476,
+  "sha256": "sha256:bafe7130ff821fe0313606f8da526d0e0295566ee0628646967712653fd50014",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 387476,
+    "quality": 84,
+    "sha256": "sha256:bafe7130ff821fe0313606f8da526d0e0295566ee0628646967712653fd50014",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:4c8e04f4d2c90c5716b7b12a8f9eb33c1ceb0704f9ad7248aeaa35ab766cff91",
+  "render_phash": "09046931cac8e2737a7cfe7e687f6a766e6e6a6458692d29078f47a201910988",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen image showing a metal device open on the left and closed with a brass padlock on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image metaphorically represents the article's theme of two versions of a vault, one being locked or restricted by a license."
+  },
+  "source_hash": "sha256:3a10e3e03c64238d6d8ea4ebe602ba98",
+  "source_chars": 4833,
+  "task_id": "a6203e98a9d615e05abef748245ef51c",
+  "credits": 18.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b0ae5f84f549b5a3e132cbf550677b9b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a home office workbench. A split-screen diptych with left-right scenario contrast: two identical brushed metal server drive caddies side-by-side. The left caddy is open and unlatched; the right caddy is sealed shut with an integrated heavy brass lock mechanism. Clean hard edges on weathered painted wood, single directional light throwing long cast shadows from the left. Matte muted palette of slate grey, bone white, and warm brass. Generous negative space.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-31T06:14:38+00:00",
+  "overlay": {
+    "kicker": "SELF-HOSTING // APP STORE LICENSING",
+    "title": "THE BITWARDEN LICENSE SPLIT",
+    "hook": "How a dual-build release tests the self-hosting promise",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 30,
+    "contrast": 5.66,
+    "target": 5.5,
+    "clutter": 0.367,
+    "region_rgb": [
+      89,
+      97,
+      97
+    ],
+    "binding_rgb": [
+      105,
+      106,
+      98
+    ],
+    "title_lines": [
+      "THE BITWARDEN",
+      "LICENSE SPLIT"
+    ],
+    "subject": 0.233,
+    "ink_subject": 0.084,
+    "spike": 0.829,
+    "generated_at": "2026-10-31T06:14:38+00:00"
+  }
+}

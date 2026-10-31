@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:50:51Z",
+  "updated_at": "2026-10-31T06:14:55Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4604,6 +4604,23 @@
       "date": "2026-10-30",
       "public": true,
       "url": "https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/"
+    },
+    {
+      "slug": "2026-10-31_two-builds-one-vault",
+      "title": "2 Builds, 1 Vault: The License Trap",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-10-31",
+      "public": false
     }
   ]
 }

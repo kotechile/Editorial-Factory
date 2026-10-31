@@ -375,3 +375,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-30 | `your-3-year-rung-costs-15-9` | career_velocity_equity_engineering | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-3-year-rung-costs-15-9/featured.jpg` |
 | 2026-10-30 | `your-truck-mile-costs-2-2-driver-minutes` | last_mile_routing_fleet_carbon | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-truck-mile-costs-2-2-driver-minutes/featured.jpg` |
 | 2026-10-30 | `your-ink-plan-bills-20-cents` | consumer_asset_repair_replace_tco | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ink-plan-bills-20-cents/featured.jpg` |
+| 2026-10-31 | `two-builds-one-vault` | personal_microeconomics_tinkering_tax | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/two-builds-one-vault/featured.jpg` |
