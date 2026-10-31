@@ -1,0 +1,120 @@
+{
+  "slug": "your-radon-test-39-isnt-a-pass",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A small cylindrical radon test canister sitting on a textured concrete basement floor in dramatic lighting.",
+      "caption": "A short-term radon test captures a single snapshot of an ever-shifting tug of war between soil gas and fresh air.",
+      "title": "Radon Test Canister Macro",
+      "bytes": 262012,
+      "sha256": "sha256:a0f82f4482c52e925b19f03c1afd8c56"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Reading Your Radon Test. A small cylindrical radon test canister sitting on a textured concrete basement floor in dramatic lighting.",
+      "caption": "Reading Your Radon Test: Why a 3.9 reading is not an automatic pass.",
+      "title": "Reading Your Radon Test",
+      "bytes": 311218,
+      "sha256": "sha256:696203e2194aa8dbaf401e83b6af91e05b58c87c84bc943c79c04c9021f0be93"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of a small cylindrical radon test canister resting on a weathered concrete floor in a dimly lit basement. 100mm macro lens, shallow depth of field with one razor-sharp focal plane. A single key light from above right casts long shadows. The palette features slate grey, charcoal, and ochre. Visible dust and texture on the concrete surface. Extreme asymmetry with the hero object on the lower right third, the background falling away into soft darkness. No text, no numbers, no logos.",
+  "negative_prompt": "text, numbers, letters, garbled typography, watermarks, UI, generic office, people",
+  "rationale": "Editorial macro perfectly isolates the physical test artifact against its raw environment, emphasizing that the measurement is grounded in the physical reality of the basement space.",
+  "cue": "A radon reading is a protocol artifact",
+  "subject": "a small cylindrical radon test canister on a concrete floor",
+  "core_thesis": "A radon reading is a protocol artifact, not a verdict on the house, dependent entirely on proper sealing and test placement.",
+  "core_conflict": "A snapshot borderline test reading versus the long-term reality of soil gas fluctuation.",
+  "composition": "extreme asymmetry with hero on lower right third",
+  "alt_text": "Reading Your Radon Test. A small cylindrical radon test canister sitting on a textured concrete basement floor in dramatic lighting.",
+  "caption": "Reading Your Radon Test: Why a 3.9 reading is not an automatic pass.",
+  "title": "Reading Your Radon Test",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-radon-test-39-isnt-a-pass/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 311218,
+  "sha256": "sha256:696203e2194aa8dbaf401e83b6af91e05b58c87c84bc943c79c04c9021f0be93",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 311218,
+    "quality": 88,
+    "sha256": "sha256:696203e2194aa8dbaf401e83b6af91e05b58c87c84bc943c79c04c9021f0be93",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b05ea2d21caa81fb84d55856e8fab2622c41568063cb6d61d6c060d44926f1f4",
+  "render_phash": "f310e710e210fd0006df0007007200720bb21620d6202666cfc40f0b3c24f8d2",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small, white cylindrical canister with a grey lid sits on a cracked concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows a radon test canister on a concrete floor, which directly relates to the article's topic of radon testing."
+  },
+  "source_hash": "sha256:adad19280f96cb75d28dcba942cc50ad",
+  "source_chars": 4199,
+  "task_id": "1901db4ad654c4bafb8435ecfc8c806a",
+  "credits": 5.0,
+  "cost_ms": 14,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1901db4ad654c4bafb8435ecfc8c806a_1793475544215.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of a small cylindrical radon test canister resting on a weathered concrete floor in a dimly lit basement. 100mm macro lens, shallow depth of field with one razor-sharp focal plane. A single key light from above right casts long shadows. The palette features slate grey, charcoal, and ochre. Visible dust and texture on the concrete surface. Extreme asymmetry with the hero object on the lower right third, the background falling away into soft darkness. No text, no numbers, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-31T19:39:13+00:00",
+  "overlay": {
+    "kicker": "INDOOR AIR QUALITY // RADON TESTS",
+    "title": "READING YOUR RADON TEST",
+    "hook": "Why a 3.9 reading is not an automatic pass",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.55,
+    "target": 4.5,
+    "clutter": 0.229,
+    "region_rgb": [
+      29,
+      28,
+      27
+    ],
+    "binding_rgb": [
+      67,
+      67,
+      65
+    ],
+    "title_lines": [
+      "READING YOUR",
+      "RADON TEST"
+    ],
+    "subject": 0.037,
+    "ink_subject": 0.02,
+    "spike": 0.103,
+    "generated_at": "2026-10-31T19:39:13+00:00"
+  }
+}

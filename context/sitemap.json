@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T19:20:09Z",
+  "updated_at": "2026-10-31T19:39:42Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4734,6 +4734,24 @@
       "date": "2026-10-31",
       "public": true,
       "url": "https://wellroost.com/your-pack-delivers-half-at-18c/"
+    },
+    {
+      "slug": "2026-10-31_your-radon-test-39-isnt-a-pass",
+      "title": "Your Radon Test: 3.9 Isn't a Pass",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-31",
+      "public": false
     },
     {
       "slug": "2026-10-31_your-standby-bill-hides-62-watts",
