@@ -15,7 +15,7 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Bitwarden's next release ships two builds of the same vault, and the version you install from an app store is no longer the free one. A notice posted on 9 October 2026 states the store apps "will be the commercially licensed builds" [1], because, in its words, nobody can expect enterprise or government users to fetch that version from GitHub. Anyone who wants only the General Public License version 3 (GPLv3) build must side-load it. The notice adds that those users "will not have access to any features that they pay for that is commercially licensed" [1]. The paid license covers named parts of the code, granting use "for the sole purposes of internal development and internal testing, and only in a non-production environment" [2].
+Bitwarden's next release ships two builds of the same vault, and the version you install from an app store is no longer the open-source one. A notice posted on 9 October 2026 states the store apps "will be the commercially licensed builds" [1], because, in its words, nobody can expect enterprise or government users to fetch that version from GitHub. Anyone who wants only the General Public License version 3 (GPLv3) build must side-load it. The notice adds that those users "will not have access to any features that they pay for that is commercially licensed" [1]. The paid license covers named parts of the code, granting use "for the sole purposes of internal development and internal testing, and only in a non-production environment" [2].
 
 That non-production clause demands attention. The notice is five lines of routine admin, yet the file it points to is written for people who build against the code, not for someone running a vault on a spare computer.
 
@@ -33,7 +33,7 @@ The same thread says it outright: "some future components will be published unde
 
 - **2 builds per release:** the vendor builds a GPLv3 copy and a paid copy of the same apps, and until now the stores received the GPLv3 one [1][3].
 - **Clause 2.1 limits production:** the Bitwarden License allows its Commercial Modules only for internal development and testing, in a non-production environment [2].
-- **60 days for a license refresh:** a business running its own server gets 60 days from its renewal date to refresh the license file before the server shuts down [4].
+- **60 days for a license refresh:** a business running its own server gets 60 days from its renewal date to refresh the license file before the server disables the organization [4].
 
 <!-- tactical-insight -->
 
