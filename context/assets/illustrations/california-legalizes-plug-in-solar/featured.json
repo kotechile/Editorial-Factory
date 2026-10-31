@@ -1,6 +1,6 @@
 {
   "slug": "california-legalizes-plug-in-solar",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -76,6 +76,14 @@
     },
     {
       "revision": 10,
+      "alt_text": "Ca Legalizes Plug-In Solar. A small modular solar panel connected to a standard wall plug on a plain surface.",
+      "caption": "Ca Legalizes Plug-In Solar: Renters can use balcony solar without utility permits.",
+      "title": "Ca Legalizes Plug-In Solar",
+      "bytes": 286669,
+      "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113"
+    },
+    {
+      "revision": 11,
       "alt_text": "Ca Legalizes Plug-In Solar. A small modular solar panel connected to a standard wall plug on a plain surface.",
       "caption": "Ca Legalizes Plug-In Solar: Renters can use balcony solar without utility permits.",
       "title": "Ca Legalizes Plug-In Solar",

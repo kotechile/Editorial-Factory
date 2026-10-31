@@ -1,6 +1,6 @@
 {
   "slug": "multi-agent-coordination-topology-cost",
-  "revision": 21,
+  "revision": 22,
   "history": [
     {
       "revision": 1,
@@ -171,6 +171,14 @@
       "title": "Pricing Agent Topologies",
       "bytes": 1019202,
       "sha256": "sha256:919480cc55a632279ad02498cb14c68c186386c8b4bccca4fdf731bec8638c98"
+    },
+    {
+      "revision": 21,
+      "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen",
+      "caption": "Pricing Agent Topologies: Coordination mode is your biggest agent budget line.",
+      "title": "Pricing Agent Topologies",
+      "bytes": 1019202,
+      "sha256": "sha256:919480cc55a632279ad02498cb14c68c186386c8b4bccca4fdf731bec8638c98"
     }
   ],
   "style": "clay_render",
@@ -197,12 +205,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1019202,
-  "sha256": "sha256:919480cc55a632279ad02498cb14c68c186386c8b4bccca4fdf731bec8638c98",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 359940,
+  "sha256": "sha256:4d41b8343976e7bad6b2114256591b5e7e5cf04b9a56b6efdae0febca671d5a0",
   "source_hash": "sha256:30717e6ccd83aad0c700a41dbb2fe977",
   "source_chars": 4204,
   "task_id": "c30cf4e1e6b9af959989ede46bfb0296",
@@ -224,29 +232,42 @@
     "kicker": "MULTI-AGENT SYSTEMS // COST CONTROL",
     "title": "PRICING AGENT TOPOLOGIES",
     "hook": "Coordination mode is your biggest agent budget line",
-    "anchor": "bottom-left",
+    "anchor": "top-left",
     "light": false,
     "scrim": 0,
-    "contrast": 9.1,
+    "contrast": 9.2,
     "target": 4.5,
-    "clutter": 0.04,
+    "clutter": 0.048,
     "region_rgb": [
       216,
       216,
       206
     ],
     "binding_rgb": [
-      216,
-      216,
-      204
+      217,
+      217,
+      207
     ],
     "title_lines": [
       "PRICING AGENT",
       "TOPOLOGIES"
     ],
-    "subject": 0.027,
-    "ink_subject": 0.008,
-    "spike": 0.107,
+    "subject": 0.035,
+    "ink_subject": 0.011,
+    "spike": 0.13,
     "generated_at": "2026-10-09T02:02:39+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 359940,
+    "quality": 88,
+    "sha256": "sha256:4d41b8343976e7bad6b2114256591b5e7e5cf04b9a56b6efdae0febca671d5a0",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

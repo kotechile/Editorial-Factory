@@ -1,6 +1,6 @@
 {
   "slug": "cloud-update-bricked-the-fridge-local-first",
-  "revision": 10,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -68,6 +68,14 @@
     },
     {
       "revision": 9,
+      "alt_text": "The Smart Home Cloud Backlash. Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote",
+      "caption": "The Smart Home Cloud Backlash: Why smart home platforms are ditching the cloud.",
+      "title": "The Smart Home Cloud Backlash",
+      "bytes": 342393,
+      "sha256": "sha256:591ab9ecf0d0a77539730e09c1cbf858493f64abb8f592f382d9ec046036ac18"
+    },
+    {
+      "revision": 10,
       "alt_text": "The Smart Home Cloud Backlash. Isometric cutaway of a refrigerator's internal smart control board disconnected from a remote",
       "caption": "The Smart Home Cloud Backlash: Why smart home platforms are ditching the cloud.",
       "title": "The Smart Home Cloud Backlash",

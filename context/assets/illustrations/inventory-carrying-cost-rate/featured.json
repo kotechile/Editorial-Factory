@@ -1,6 +1,6 @@
 {
   "slug": "inventory-carrying-cost-rate",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -20,6 +20,14 @@
     },
     {
       "revision": 3,
+      "alt_text": "The True Cost Of Inventory. Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
+      "caption": "The True Cost Of Inventory: How flawed carrying rates cause you to over-hold stock.",
+      "title": "The True Cost Of Inventory",
+      "bytes": 437222,
+      "sha256": "sha256:7b07c17b0ff7de451a44da7bfd091a247c193d03a3cb2490adf43d4ad4f4e69e"
+    },
+    {
+      "revision": 4,
       "alt_text": "The True Cost Of Inventory. Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
       "caption": "The True Cost Of Inventory: How flawed carrying rates cause you to over-hold stock.",
       "title": "The True Cost Of Inventory",
@@ -52,8 +60,8 @@
   "local_path": "context/assets/illustrations/inventory-carrying-cost-rate/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 437222,
-  "sha256": "sha256:7b07c17b0ff7de451a44da7bfd091a247c193d03a3cb2490adf43d4ad4f4e69e",
+  "bytes": 402658,
+  "sha256": "sha256:afc5353f17d258da33dde8ad3866c87732f6d886ca9c0934f0c73bd94f1a25b7",
   "source_hash": "sha256:9299bd4406d8ec33d0aea7ddeb2a3818",
   "source_chars": 4189,
   "task_id": "87763880cf90907d2ae48257b9e0d79e",
@@ -76,26 +84,39 @@
     "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 9.8,
+    "contrast": 9.69,
     "target": 4.5,
     "clutter": 0.21,
     "region_rgb": [
       35,
-      32,
+      33,
       31
     ],
     "binding_rgb": [
-      71,
-      55,
-      42
+      62,
+      58,
+      57
     ],
     "title_lines": [
       "THE TRUE COST",
       "OF INVENTORY"
     ],
-    "subject": 0.071,
-    "ink_subject": 0.031,
-    "spike": 0.232,
+    "subject": 0.068,
+    "ink_subject": 0.028,
+    "spike": 0.229,
     "generated_at": "2026-10-05T19:38:25+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402658,
+    "quality": 84,
+    "sha256": "sha256:afc5353f17d258da33dde8ad3866c87732f6d886ca9c0934f0c73bd94f1a25b7",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "you-think-youre-governing-your-agents",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -129,6 +129,14 @@
       "title": "The AI Agent Blind Spot",
       "bytes": 2708220,
       "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c"
+    },
+    {
+      "revision": 16,
+      "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical",
+      "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
+      "title": "The AI Agent Blind Spot",
+      "bytes": 2708220,
+      "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c"
     }
   ],
   "style": "technical_isometric",
@@ -155,12 +163,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/you-think-youre-governing-your-agents/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 2708220,
-  "sha256": "sha256:53d462d9503e93df990c865d68e2b4c55c8f00ceeb2892579ed31a1179f33c1c",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/you-think-youre-governing-your-agents/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389544,
+  "sha256": "sha256:9e6e5c2f43e4970ddc8edc0fa477c71a719eb0149642011201af9422cb3e83c7",
   "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5",
   "source_chars": 3529,
   "task_id": "d9147037e31b0fcdb488d0747aa95800",
@@ -182,29 +190,42 @@
     "kicker": "AI GOVERNANCE // MACHINE IDENTITIES",
     "title": "THE AI AGENT BLIND SPOT",
     "hook": "How stolen machine identities expose the enterprise",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 7.87,
+    "contrast": 8.95,
     "target": 4.5,
-    "clutter": 0.03,
+    "clutter": 0.036,
     "region_rgb": [
-      65,
-      67,
-      72
+      56,
+      59,
+      66
     ],
     "binding_rgb": [
-      71,
-      72,
-      77
+      61,
+      64,
+      71
     ],
     "title_lines": [
       "THE AI AGENT",
       "BLIND SPOT"
     ],
-    "subject": 0.0,
-    "ink_subject": 0.001,
-    "spike": 0.0,
+    "subject": 0.03,
+    "ink_subject": 0.005,
+    "spike": 0.131,
     "generated_at": "2026-10-09T02:01:28+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389544,
+    "quality": 80,
+    "sha256": "sha256:9e6e5c2f43e4970ddc8edc0fa477c71a719eb0149642011201af9422cb3e83c7",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

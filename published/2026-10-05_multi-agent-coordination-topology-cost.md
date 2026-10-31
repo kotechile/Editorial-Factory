@@ -9,7 +9,7 @@ archetype: evergreen
 evergreen: true
 meta_title: "Multi-Agent Coordination: Pick the Topology That Pays"
 meta_description: "Anthropic's agent swarm beat a single model by 90.2% and used about 15 times the tokens. The coordination mode, not the model, is the real budget line."
-image_path: "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.png"
+image_path: "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
 image_alt: "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen"

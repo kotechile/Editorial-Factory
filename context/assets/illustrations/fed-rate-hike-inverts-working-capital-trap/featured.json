@@ -1,6 +1,6 @@
 {
   "slug": "fed-rate-hike-inverts-working-capital-trap",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,14 @@
       "title": "Rate Hike Meets Zero Slack",
       "bytes": 190700,
       "sha256": "sha256:cce5dbe5c51a6e640f0f129f1f9f012830f222cd88e45061f4f147cee99aec31"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi",
+      "caption": "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut.",
+      "title": "Rate Hike Meets Zero Slack",
+      "bytes": 190700,
+      "sha256": "sha256:cce5dbe5c51a6e640f0f129f1f9f012830f222cd88e45061f4f147cee99aec31"
     }
   ],
   "style": "long_lens_industry",
@@ -89,8 +97,8 @@
   "local_path": "context/assets/illustrations/fed-rate-hike-inverts-working-capital-trap/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 190700,
-  "sha256": "sha256:cce5dbe5c51a6e640f0f129f1f9f012830f222cd88e45061f4f147cee99aec31",
+  "bytes": 381536,
+  "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8",
   "source_hash": "sha256:87fc743c6ae2a776445c2d494a46aeeb",
   "source_chars": 4044,
   "task_id": "a1a7f0ce345ce20380d5c017eb4a489b",
@@ -113,18 +121,18 @@
     "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 13.2,
+    "contrast": 13.13,
     "target": 4.5,
     "clutter": 0.072,
     "region_rgb": [
       18,
-      27,
-      30
+      28,
+      31
     ],
     "binding_rgb": [
-      26,
-      39,
-      45
+      25,
+      40,
+      43
     ],
     "title_lines": [
       "RATE HIKE MEETS",
@@ -132,7 +140,20 @@
     ],
     "subject": 0.005,
     "ink_subject": 0.002,
-    "spike": 0.014,
+    "spike": 0.016,
     "generated_at": "2026-10-09T00:30:53+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 381536,
+    "quality": 88,
+    "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T19:50:51+00:00",
+  "generated_at": "2026-10-31T14:17:21+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "two-builds-one-vault",
+      "title": "2 Builds, 1 Vault: The License Trap",
+      "url": "https://giniloh.com/two-builds-one-vault/",
+      "path": "/two-builds-one-vault/",
+      "sites_live": {
+        "giniloh.com": "/two-builds-one-vault/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Bitwarden's next release ships two builds of the same vault, and the version you install from an app store is no longer the free one.",
+      "modified": "2026-10-31T06:23:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1362,6 +1381,29 @@
       ],
       "excerpt": "On the morning of 14 October, Pacific Gas and Electric (PG&E) added 25,000 homes to a wildfire shutoff list and took 7,300 off it.",
       "modified": "2026-10-30T10:56:00",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "4726-boilers-51825-silent-alarms",
+      "title": "4,726 Boilers, 51,825 Silent Alarms",
+      "url": "https://wellroost.com/4726-boilers-51825-silent-alarms/",
+      "path": "/4726-boilers-51825-silent-alarms/",
+      "sites_live": {
+        "wellroost.com": "/4726-boilers-51825-silent-alarms/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "On 2026-10-29, the Consumer Product Safety Commission (CPSC) recalled 4,726 gas boilers because a cracked part inside the cabinet can let unburned gas\u2026",
+      "modified": "2026-10-31T11:45:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2437,6 +2479,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "why-37667-snow-throwers-failed-winter",
+      "title": "Why 37,667 Snow Throwers Failed Winter",
+      "url": "https://wellroost.com/why-37667-snow-throwers-failed-winter/",
+      "path": "/why-37667-snow-throwers-failed-winter/",
+      "sites_live": {
+        "wellroost.com": "/why-37667-snow-throwers-failed-winter/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "The outdoor power maker STIHL (of Virginia Beach) put a number on winter on 2026-10-21. Its first snow thrower, the company said, is rated for use in outdoor\u2026",
+      "modified": "2026-10-31T11:23:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "windows-13-percent-best-case",
       "title": "Windows: 13% Is the Best Case, Not Average",
       "url": "https://wellroost.com/windows-13-percent-best-case/",
@@ -2867,6 +2932,29 @@
       ],
       "excerpt": "Ring's new smart lock keeps working when your home Wi-Fi dies, because it routes around your router. The deadbolt stays online through Amazon Sidewalk, a web\u2026",
       "modified": "2026-10-20T12:10:04",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-mower-needs-4-approvals",
+      "title": "Why Your Mower Needs 4 Approvals",
+      "url": "https://wellroost.com/your-mower-needs-4-approvals/",
+      "path": "/your-mower-needs-4-approvals/",
+      "sites_live": {
+        "wellroost.com": "/your-mower-needs-4-approvals/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Four robot mower models hold the only federal approval granted to a consumer yard machine for the 2027 American market, and all four belong to one company.",
+      "modified": "2026-10-31T10:46:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5532,6 +5620,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "the-agentic-rag-trap",
+      "title": "The Agentic RAG trap",
+      "url": "https://aichieve.net/the-agentic-rag-trap/",
+      "path": "/the-agentic-rag-trap/",
+      "sites_live": {
+        "aichieve.net": "/the-agentic-rag-trap/"
+      },
+      "categories": [
+        "Artificial Intelligence & Future of Work"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "artificial-intelligence-future-of-work"
+      ],
+      "excerpt": "RAG agentic AI is rapidly becoming the cornerstone of reliable enterprise AI. As large language models power everything from customer support to strategic analysis, the risk of hallucination and outdated information looms large. Retrieval-Augmented Generation (RAG) solves this by grounding LLMs in real-time, authoritative data\u2014and when combined with agentic workflows, it unlocks autonomous systems that can reason, act, and adapt with unprecedented accuracy. For mid-career professionals, mastering RAG agentic AI isn't just a technical skill; it's a strategic advantage. This article breaks down how RAG works, why it's essential for agentic workflows, and how you can implement it to reduce errors, accelerate decision-making, and future-proof your career. With AI adoption accelerating, the window to gain expertise is narrowing. Discover the practical frameworks and actionable insights that will position you as a leader in the next wave of AI-driven innovation.",
+      "modified": "2026-10-31T04:39:25",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "the-cloud-bill-break-even-when-renting-servers-stops-paying",
       "title": "The Cloud Bill Break-Even: When Renting Servers Stops Paying",
       "url": "https://aichieve.net/the-cloud-bill-break-even-when-renting-servers-stops-paying/",
@@ -6880,6 +6991,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-machine-duty-180-days-still-unpriced",
+      "title": "Your Machine Duty: 180 Days, Still Unpriced",
+      "url": "https://aichieve.net/your-machine-duty-180-days-still-unpriced/",
+      "path": "/your-machine-duty-180-days-still-unpriced/",
+      "sites_live": {
+        "aichieve.net": "/your-machine-duty-180-days-still-unpriced/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The duty on the robots and machine tools a reshoring project buys was neither set nor dropped this week. It went to trade talks after a Commerce Department\u2026",
+      "modified": "2026-10-31T06:44:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-mexico-hedge-renewal-risk",
       "title": "Your Mexico Hedge: A 2027 Renewal Risk",
       "url": "https://aichieve.net/your-mexico-hedge-renewal-risk/",
@@ -7249,6 +7383,34 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 1359,
+      "slug": "your-machine-duty-180-days-still-unpriced",
+      "title": "Your Machine Duty: 180 Days, Still Unpriced",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-31T06:44:32",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1325,
+      "slug": "the-agentic-rag-trap",
+      "title": "The Agentic RAG trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-31T04:39:25",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 1316,
       "slug": "your-truck-mile-costs-2-2-driver-minutes",
       "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
@@ -7256,7 +7418,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T19:14:29",
+      "modified": "2026-10-31T04:34:59",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7270,7 +7432,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T23:10:21",
+      "modified": "2026-10-31T04:48:06",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7284,7 +7446,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T18:47:05",
+      "modified": "2026-10-31T04:48:07",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7298,7 +7460,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T18:29:18",
+      "modified": "2026-10-31T04:48:07",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7312,7 +7474,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T17:52:12",
+      "modified": "2026-10-31T04:48:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7326,7 +7488,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T13:14:31",
+      "modified": "2026-10-31T04:48:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7340,7 +7502,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T11:55:42",
+      "modified": "2026-10-31T04:48:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7354,7 +7516,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T11:40:10",
+      "modified": "2026-10-31T04:48:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7368,7 +7530,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T10:58:05",
+      "modified": "2026-10-31T04:48:09",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7382,7 +7544,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T19:47:24",
+      "modified": "2026-10-31T04:48:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7396,7 +7558,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T19:13:02",
+      "modified": "2026-10-31T04:48:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7410,7 +7572,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T18:41:46",
+      "modified": "2026-10-31T04:48:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7424,7 +7586,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T18:20:10",
+      "modified": "2026-10-31T04:48:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7438,7 +7600,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T17:51:47",
+      "modified": "2026-10-31T04:48:11",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7452,7 +7614,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T13:51:56",
+      "modified": "2026-10-31T04:48:11",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7466,7 +7628,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T13:43:25",
+      "modified": "2026-10-31T04:48:11",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7480,7 +7642,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T11:44:42",
+      "modified": "2026-10-31T04:48:12",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7494,7 +7656,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T11:21:22",
+      "modified": "2026-10-31T04:48:12",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7508,7 +7670,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-28T10:57:22",
+      "modified": "2026-10-31T04:48:12",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7522,7 +7684,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T20:15:49",
+      "modified": "2026-10-31T04:48:12",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7536,7 +7698,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T20:01:34",
+      "modified": "2026-10-31T04:48:13",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7550,7 +7712,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T18:43:48",
+      "modified": "2026-10-31T04:48:13",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7564,7 +7726,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T18:17:30",
+      "modified": "2026-10-31T04:48:13",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7578,7 +7740,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T17:48:06",
+      "modified": "2026-10-31T04:48:13",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7592,7 +7754,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T13:20:01",
+      "modified": "2026-10-31T04:48:14",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7606,7 +7768,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T12:44:57",
+      "modified": "2026-10-31T04:48:14",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7620,7 +7782,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T11:45:20",
+      "modified": "2026-10-31T04:48:14",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7634,7 +7796,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T11:18:14",
+      "modified": "2026-10-31T04:48:14",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7648,7 +7810,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T10:42:31",
+      "modified": "2026-10-31T04:48:15",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7662,7 +7824,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-26T20:09:31",
+      "modified": "2026-10-31T04:48:15",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7676,7 +7838,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-26T19:52:25",
+      "modified": "2026-10-31T04:48:15",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7690,7 +7852,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T04:55:38",
+      "modified": "2026-10-31T04:48:16",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7704,7 +7866,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T04:55:47",
+      "modified": "2026-10-31T04:48:16",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7718,7 +7880,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-27T04:55:33",
+      "modified": "2026-10-31T04:48:16",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7732,7 +7894,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-26T12:51:10",
+      "modified": "2026-10-31T04:48:16",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7746,7 +7908,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-26T11:17:18",
+      "modified": "2026-10-31T04:48:17",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7760,7 +7922,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-26T10:47:44",
+      "modified": "2026-10-31T04:48:17",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7774,7 +7936,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-24T18:19:04",
+      "modified": "2026-10-31T04:48:17",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7788,7 +7950,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-24T06:41:40",
+      "modified": "2026-10-31T04:48:18",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7802,7 +7964,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T19:10:53",
+      "modified": "2026-10-31T04:48:19",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7816,7 +7978,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T11:43:57",
+      "modified": "2026-10-31T04:48:21",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7830,7 +7992,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T20:12:45",
+      "modified": "2026-10-31T04:48:22",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7844,7 +8006,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T18:42:13",
+      "modified": "2026-10-31T04:48:22",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7858,7 +8020,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T18:09:39",
+      "modified": "2026-10-31T04:48:22",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7872,7 +8034,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T17:50:59",
+      "modified": "2026-10-31T04:48:23",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7886,7 +8048,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T13:18:03",
+      "modified": "2026-10-31T04:48:23",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7900,7 +8062,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T11:38:39",
+      "modified": "2026-10-31T04:48:24",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7914,7 +8076,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T11:10:22",
+      "modified": "2026-10-31T04:48:24",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7928,7 +8090,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T10:39:28",
+      "modified": "2026-10-31T04:48:24",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7942,7 +8104,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T01:10:44",
+      "modified": "2026-10-31T04:48:24",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7956,7 +8118,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T19:44:44",
+      "modified": "2026-10-31T04:48:25",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7970,7 +8132,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T19:09:15",
+      "modified": "2026-10-31T04:48:25",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7984,7 +8146,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T18:41:38",
+      "modified": "2026-10-31T04:48:25",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -7998,7 +8160,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T18:08:48",
+      "modified": "2026-10-31T04:48:25",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8012,7 +8174,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T17:37:49",
+      "modified": "2026-10-31T04:48:26",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8026,7 +8188,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T12:41:07",
+      "modified": "2026-10-31T04:48:26",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8040,7 +8202,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T12:10:20",
+      "modified": "2026-10-31T04:48:26",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8054,7 +8216,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T11:40:43",
+      "modified": "2026-10-31T04:48:27",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8068,7 +8230,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T11:12:13",
+      "modified": "2026-10-31T04:48:27",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8082,7 +8244,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-21T10:43:01",
+      "modified": "2026-10-31T04:48:27",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8096,7 +8258,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T20:11:09",
+      "modified": "2026-10-31T04:48:28",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8110,7 +8272,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T19:40:13",
+      "modified": "2026-10-31T04:48:28",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8124,7 +8286,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T18:41:56",
+      "modified": "2026-10-31T04:48:28",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8138,7 +8300,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T18:12:43",
+      "modified": "2026-10-31T04:48:29",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8152,7 +8314,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T17:40:18",
+      "modified": "2026-10-31T04:48:29",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8166,7 +8328,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T13:13:21",
+      "modified": "2026-10-31T04:48:29",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8180,7 +8342,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T12:40:16",
+      "modified": "2026-10-31T04:48:29",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8194,7 +8356,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T11:46:24",
+      "modified": "2026-10-31T04:48:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8208,7 +8370,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T11:13:05",
+      "modified": "2026-10-31T04:48:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8222,7 +8384,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-20T10:41:30",
+      "modified": "2026-10-31T04:48:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8236,7 +8398,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T20:10:30",
+      "modified": "2026-10-31T04:48:30",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8250,7 +8412,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T19:38:30",
+      "modified": "2026-10-31T04:48:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8264,7 +8426,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T18:11:35",
+      "modified": "2026-10-31T04:48:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8278,7 +8440,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T17:44:27",
+      "modified": "2026-10-31T04:48:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8292,7 +8454,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T13:12:04",
+      "modified": "2026-10-31T04:48:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8306,7 +8468,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T12:47:13",
+      "modified": "2026-10-31T04:48:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8320,7 +8482,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T11:10:15",
+      "modified": "2026-10-31T04:48:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8334,7 +8496,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-19T10:38:45",
+      "modified": "2026-10-31T04:48:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8348,21 +8510,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-17T18:08:43",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1003,
-      "slug": "your-mexico-hedge-renewal-risk",
-      "title": "Your Mexico Hedge: A 2027 Renewal Risk",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-17T06:42:33",
+      "modified": "2026-10-31T04:48:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8376,7 +8524,21 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-09-15T02:00:20",
+      "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1356,
+      "slug": "two-builds-one-vault",
+      "title": "2 Builds, 1 Vault: The License Trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-31T06:23:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8390,7 +8552,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T19:44:24",
+      "modified": "2026-10-31T04:34:59",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8404,7 +8566,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T18:51:49",
+      "modified": "2026-10-31T04:35:00",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8418,7 +8580,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T17:16:24",
+      "modified": "2026-10-31T04:35:00",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8432,7 +8594,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T12:49:09",
+      "modified": "2026-10-31T04:48:05",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8446,7 +8608,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T12:21:11",
+      "modified": "2026-10-31T04:48:06",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8460,7 +8622,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-30T11:14:35",
+      "modified": "2026-10-31T04:48:06",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8474,7 +8636,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T19:47:44",
+      "modified": "2026-10-31T04:48:07",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8488,7 +8650,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-29T12:58:08",
+      "modified": "2026-10-31T04:48:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8502,7 +8664,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-24T17:43:30",
+      "modified": "2026-10-31T04:48:17",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8516,7 +8678,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-24T06:14:24",
+      "modified": "2026-10-31T04:48:18",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8530,7 +8692,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T19:44:42",
+      "modified": "2026-10-31T04:48:18",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8544,7 +8706,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T18:41:07",
+      "modified": "2026-10-31T04:48:19",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8558,7 +8720,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T17:17:19",
+      "modified": "2026-10-31T04:48:20",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8572,7 +8734,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T12:48:25",
+      "modified": "2026-10-31T04:48:21",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8586,7 +8748,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T12:11:07",
+      "modified": "2026-10-31T04:48:21",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8600,7 +8762,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-23T11:12:45",
+      "modified": "2026-10-31T04:48:21",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8614,7 +8776,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T19:44:13",
+      "modified": "2026-10-31T04:48:22",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8628,35 +8790,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-22T12:42:08",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1009,
-      "slug": "your-disks-35-dead-by-year-six",
-      "title": "Your Disks: 35% Dead by Year Six",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-17T17:39:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1000,
-      "slug": "pi-5-price-jump-older-kit-wins",
-      "title": "Pi 5 Jumps $12.50: Older Kit Is Your Cheap Upgrade",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-17T06:15:32",
+      "modified": "2026-10-31T04:48:23",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

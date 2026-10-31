@@ -1,6 +1,6 @@
 {
   "slug": "remodel-capitalization-trap-shell-not-show",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -12,6 +12,14 @@
     },
     {
       "revision": 2,
+      "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
+      "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
+      "title": "The Remodeling ROI Trap",
+      "bytes": 160546,
+      "sha256": "sha256:b5e71a6836154305a1978180886107b837a7f779b440d1fd49338c4e2e6762c3"
+    },
+    {
+      "revision": 3,
       "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
       "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
       "title": "The Remodeling ROI Trap",
@@ -44,8 +52,8 @@
   "local_path": "context/assets/illustrations/remodel-capitalization-trap-shell-not-show/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 160546,
-  "sha256": "sha256:b5e71a6836154305a1978180886107b837a7f779b440d1fd49338c4e2e6762c3",
+  "bytes": 340719,
+  "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c",
   "source_hash": "sha256:f53976288b50820fa45a7f8145659645",
   "source_chars": 4327,
   "task_id": "15327b99ad1dec2952e2991bf720ba86",
@@ -70,24 +78,37 @@
     "scrim": 0,
     "contrast": 7.39,
     "target": 4.5,
-    "clutter": 0.103,
+    "clutter": 0.104,
     "region_rgb": [
-      49,
+      50,
       70,
-      92
+      91
     ],
     "binding_rgb": [
-      56,
+      61,
       78,
-      102
+      94
     ],
     "title_lines": [
       "THE REMODELING",
       "ROI TRAP"
     ],
-    "subject": 0.035,
-    "ink_subject": 0.014,
-    "spike": 0.119,
+    "subject": 0.041,
+    "ink_subject": 0.018,
+    "spike": 0.129,
     "generated_at": "2026-10-05T18:39:24+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 340719,
+    "quality": 88,
+    "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

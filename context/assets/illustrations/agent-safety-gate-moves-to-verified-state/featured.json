@@ -1,6 +1,6 @@
 {
   "slug": "agent-safety-gate-moves-to-verified-state",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -33,6 +33,14 @@
       "title": "Verifying Agent State",
       "bytes": 2485436,
       "sha256": "sha256:c394b0218e2ab018c194768d3b0c9f56170c20ba8e42f1a45413a503e81869b1"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Verifying Agent State. A dark logic board with a glowing amber trace bypassing a relay gate to leave a permanent mark on a",
+      "caption": "Verifying Agent State: Why AI safety depends on the data agents leave behind.",
+      "title": "Verifying Agent State",
+      "bytes": 404333,
+      "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114"
     }
   ],
   "style": "editorial_macro",
