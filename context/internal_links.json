@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T14:17:21+00:00",
+  "generated_at": "2026-10-31T19:20:08+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -384,6 +384,25 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
+      "slug": "your-standby-bill-hides-62-watts",
+      "title": "Your Standby Bill Hides 62 Watts",
+      "url": "https://giniloh.com/your-standby-bill-hides-62-watts/",
+      "path": "/your-standby-bill-hides-62-watts/",
+      "sites_live": {
+        "giniloh.com": "/your-standby-bill-hides-62-watts/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your standby bill hides about 62 watts of constant draw because the energy moved out of your wall chargers and into larger appliances.",
+      "modified": "2026-10-31T17:49:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
       "slug": "two-builds-one-vault",
       "title": "2 Builds, 1 Vault: The License Trap",
       "url": "https://giniloh.com/two-builds-one-vault/",
@@ -471,7 +490,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Apple charges $999 to fix the inner screen on the iPhone Duo, because that display is a glued stack of layers rather than a part a shop can lift out and swap.",
-      "modified": "2026-10-30T12:49:09",
+      "modified": "2026-10-31T04:48:05",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -490,7 +509,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Alphabet spent $51.4 billion on equipment last quarter, mostly to buy computing power for artificial intelligence.",
-      "modified": "2026-10-30T12:21:11",
+      "modified": "2026-10-31T04:48:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -509,7 +528,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Anthropic filed papers on 26 October for its initial public offering (IPO). Those papers build a separate share class for its 5,300 staff that holds no claim\u2026",
-      "modified": "2026-10-30T11:14:35",
+      "modified": "2026-10-31T04:48:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -528,7 +547,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Your \u20ac115,000 salary sits $203 under the $130,000 foreign earned income exclusion at the whole-year exchange rate the Internal Revenue Service (IRS) printed\u2026",
-      "modified": "2026-10-29T19:47:44",
+      "modified": "2026-10-31T04:48:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1334,7 +1353,7 @@
         "home-diagnostics-tools"
       ],
       "excerpt": "The coil was giving up just 11 degrees when a tech called the compressor dead and quoted $7,500 for a full swap.",
-      "modified": "2026-10-29T19:13:29",
+      "modified": "2026-10-31T04:35:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1380,7 +1399,7 @@
         "energy-efficiency"
       ],
       "excerpt": "On the morning of 14 October, Pacific Gas and Electric (PG&E) added 25,000 homes to a wildfire shutoff list and took 7,300 off it.",
-      "modified": "2026-10-30T10:56:00",
+      "modified": "2026-10-31T04:35:05",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2962,6 +2981,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-mower-pays-back-in-24-years-or-09",
+      "title": "Your Mower's 2.4-Year Payback Trap",
+      "url": "https://wellroost.com/your-mower-pays-back-in-24-years-or-09/",
+      "path": "/your-mower-pays-back-in-24-years-or-09/",
+      "sites_live": {
+        "wellroost.com": "/your-mower-pays-back-in-24-years-or-09/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "A robot mower's payback is a regional number. The same machine is a 2.4-year payback against a 24-week Northeast mowing season and under one in the Southeast.",
+      "modified": "2026-10-31T18:45:18",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-next-bedroom-417500",
       "title": "Your Next Bedroom Costs $417,500",
       "url": "https://wellroost.com/your-next-bedroom-417500/",
@@ -3001,6 +3043,29 @@
       ],
       "excerpt": "Carriers are leaving whole regions rather than individual houses, as reinsurance costs and redrawn wildfire and hurricane maps reset what they will cover.",
       "modified": "2026-10-24T14:50:51",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-pack-delivers-half-at-18c",
+      "title": "Your Pack Halves at -18\u00b0C",
+      "url": "https://wellroost.com/your-pack-delivers-half-at-18c/",
+      "path": "/your-pack-delivers-half-at-18c/",
+      "sites_live": {
+        "wellroost.com": "/your-pack-delivers-half-at-18c/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "Your pack delivers about half its rated capacity at -18\u00b0C, and the shortfall comes from the cold cells rather than the machine.",
+      "modified": "2026-10-31T19:16:56",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5451,7 +5516,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Most of your stock-keeping units (SKUs) fail the 1.32 cut, because real sales happen less often than a planner expects.",
-      "modified": "2026-10-29T23:10:21",
+      "modified": "2026-10-31T04:48:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6224,7 +6289,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "In a 32-card budget, the wide tensor-parallel layout took 3.68 to 4.35 times the run time of a layout that kept the split narrow.",
-      "modified": "2026-10-28T18:41:46",
+      "modified": "2026-10-31T04:48:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6477,7 +6542,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Agent fabrics break their shared spend caps from inside the rules, because each agent only checks the limit it was handed: the study logged cap breaches in\u2026",
-      "modified": "2026-10-28T18:20:10",
+      "modified": "2026-10-31T04:48:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6638,7 +6703,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Shippers count on a $750,000 federal filing to protect their freight, but that required minimum only pays for public harm.",
-      "modified": "2026-10-29T18:47:05",
+      "modified": "2026-10-31T04:48:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6684,7 +6749,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The machine on the quote works 6 hours 45 minutes at maximum payload, while a normal shift runs eight hours. The 75 minutes in between are where capital\u2026",
-      "modified": "2026-10-28T19:47:24",
+      "modified": "2026-10-31T04:48:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7236,7 +7301,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your single sign-on (SSO) bill arrives in three units for one feature, because vendors priced the handshake three ways. The unit sets the number.",
-      "modified": "2026-10-28T19:13:02",
+      "modified": "2026-10-31T04:48:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7359,6 +7424,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-zone-deferral-is-worth-115-percent",
+      "title": "Your Zone Saves 1.15%: The Hidden Cost",
+      "url": "https://aichieve.net/your-zone-deferral-is-worth-115-percent/",
+      "path": "/your-zone-deferral-is-worth-115-percent/",
+      "sites_live": {
+        "aichieve.net": "/your-zone-deferral-is-worth-115-percent/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A foreign-trade zone sold on duty delay returns 1.15 percent of the duty at bank prime, so the money sits in the tariff lines your parts cross.",
+      "modified": "2026-10-31T18:17:00",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "zet-scale-ev-truck-residual-value-risk",
       "title": "Electric Trucks Just Doubled Overnight \u2014 and the Battery Wasn't the Reason",
       "url": "https://aichieve.net/zet-scale-ev-truck-residual-value-risk/",
@@ -7380,6 +7468,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1365,
+      "slug": "your-zone-deferral-is-worth-115-percent",
+      "title": "Your Zone Saves 1.15%: The Hidden Cost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-31T18:17:00",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -8487,34 +8589,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1019,
-      "slug": "your-tool-surface-is-a-release-surface",
-      "title": "Your Gateway: 60.5% Injection Risk",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1012,
-      "slug": "prior-disclosure-clock-cuts-penalty",
-      "title": "Your Misclassified Entry Costs 4x Duty",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:33",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -8525,6 +8599,20 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1363,
+      "slug": "your-standby-bill-hides-62-watts",
+      "title": "Your Standby Bill Hides 62 Watts",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-10-31T17:49:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

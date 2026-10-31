@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T19:16:58Z",
+  "updated_at": "2026-10-31T19:20:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4714,7 +4714,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-mower-pays-back-in-24-years-or-09/"
     },
     {
       "slug": "2026-10-31_your-pack-delivers-half-at-18c",
@@ -4731,7 +4732,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-pack-delivers-half-at-18c/"
     },
     {
       "slug": "2026-10-31_your-standby-bill-hides-62-watts",
@@ -4749,7 +4751,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-standby-bill-hides-62-watts/"
     },
     {
       "slug": "2026-10-31_your-zone-deferral-is-worth-115-percent",
@@ -4767,7 +4770,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-zone-deferral-is-worth-115-percent/"
     }
   ]
 }

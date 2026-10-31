@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-10-31T14:17:21+00:00
+# Internal-link candidates — 2026-10-31T19:20:08+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 48 live article(s), 16 other target(s)
+## giniloh.com — 49 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -52,6 +52,7 @@ Category hubs this front serves: —
 - [Your Overage Page Costs $0.20](https://giniloh.com/your-ink-plan-bills-20-cents/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
 - [Your Screen Gap: $999 vs $99](https://giniloh.com/your-screen-gap-999-vs-99/) — —
+- [Your Standby Bill Hides 62 Watts](https://giniloh.com/your-standby-bill-hides-62-watts/) — —
 - [Your Stock Gift: $26,180 You Never Pay](https://giniloh.com/your-stock-gift-26180-never-taxed/) — —
 - [Zapier Notion Integration: Calculate Your Tinkering Tax](https://giniloh.com/zapier-notion-integration-calculate-your-tinkering-tax/) — —
 - [AI Career Radar (tool)](https://giniloh.com/calculators/career-ai-resilience/) — —
@@ -71,7 +72,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 58 live article(s), 22 other target(s)
+## wellroost.com — 60 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -123,8 +124,10 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
 - [Your Mat Costs 50 Blower Charges](https://wellroost.com/your-heated-mat-costs-50-times-the-blower/) — Outdoor Power & Snow Equipment
 - [Your Monitor's 77% Guess: Where It Fails](https://wellroost.com/monitor-77-percent-guess-where-it-fails/) — Smart Home & Security
+- [Your Mower's 2.4-Year Payback Trap](https://wellroost.com/your-mower-pays-back-in-24-years-or-09/) — Yard Robots & Automation
 - [Your Next Bedroom Costs $417,500](https://wellroost.com/your-next-bedroom-417500/) — Energy & Efficiency
 - [Your Nonrenewal Isn't Final: Count 120 Days](https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/) — Home Cost Decisions
+- [Your Pack Halves at -18°C](https://wellroost.com/your-pack-delivers-half-at-18c/) — Outdoor Power & Snow Equipment
 - [Your Panel Doesn't Need More Amps: The 80% Test](https://wellroost.com/panel-upgrade-80-percent-test/) — Smart Home & Security
 - [Your Remodel Loses to 149% Growth](https://wellroost.com/your-remodel-loses-to-149-growth/) — Tools & Equipment
 - [Your Repair Budget's 7.5% Squeeze](https://wellroost.com/your-repair-budget-buys-7-5-percent-less/) — Energy & Efficiency
@@ -156,7 +159,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 176 live article(s), 13 other target(s)
+## aichieve.net — 177 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -336,6 +339,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Tool Boundary Costs 3 Engineers](https://aichieve.net/your-tool-boundary-costs-3-engineers/) — Autonomous & Agentic Workflows
 - [Your Trace Won't Prove 92.5 Points](https://aichieve.net/your-trace-wont-prove-925-points/) — AI Stack & Tool TCO
 - [Your Truck Mile Costs 2.2 Driver-Minutes](https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/) — Supply Chain & Operations
+- [Your Zone Saves 1.15%: The Hidden Cost](https://aichieve.net/your-zone-deferral-is-worth-115-percent/) — Supply Chain & Operations
 - [AI Stack & Tool TCO (category)](https://aichieve.net/categories/ai-stack-tool-tco/) — Ai Stack Tool Tco
 - [Agentic Workflow Breakeven Calculator (tool)](https://aichieve.net/tools/agentic-workflow-breakeven/) — —
 - [Artificial Intelligence & Future of Work (category)](https://aichieve.net/categories/artificial-intelligence-future-of-work/) — Artificial Intelligence Future Of Work
@@ -352,6 +356,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1365 `your-zone-deferral-is-worth-115-percent` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1359 `your-machine-duty-180-days-still-unpriced` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1325 `the-agentic-rag-trap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1316 `your-truck-mile-costs-2-2-driver-minutes` — published in the CMS but absent from the frontend sitemap
@@ -431,9 +436,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1029 `your-hidden-quantity-gap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1026 `inventory-cut-bets-against-prices` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1022 `your-agent-obeyed-the-data-left` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1019 `your-tool-surface-is-a-release-surface` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1012 `prior-disclosure-clock-cuts-penalty` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1363 `your-standby-bill-hides-62-watts` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1356 `two-builds-one-vault` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1319 `your-ink-plan-bills-20-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1312 `your-3-year-rung-costs-15-9` — published in the CMS but absent from the frontend sitemap

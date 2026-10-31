@@ -62,12 +62,6 @@ The climate band is extreme climates, which includes heat, and it is predictive 
 
 My view is that the two things worth keeping apart are the temporary half and the permanent damage. A pack charged below freezing suffers permanent degradation, and nothing on the charger tells you it happened [3].
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: none — no live page on this site scored for this topic -->
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -75,6 +69,13 @@ My view is that the two things worth keeping apart are the temporary half and th
 - **The shift:** winter run time is a pack-temperature problem before it is a capacity problem.
 - **The number:** a pack rated at 100 percent in mild air gives about 50 percent at -18°C (0°F).
 - **The risk:** charging a frozen pack plates lithium on the anode, and the charger shows nothing wrong.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: none — no live page on this site scored for this topic -->
+<!-- internal-links:end -->
+
 
 ## Sources
 
