@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-mower-needs-4-approvals/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The FCC Mower Blockade. A solitary robotic lawn mower parked on a residential concrete driveway bathed in early morning light."
-image_caption: "The FCC Mower Blockade: How federal security rules gave one brand a US monopoly."
+image_alt: "A robotic lawn mower parked on a residential concrete driveway in early morning light."
+image_caption: "Four robot mower models have cleared the US approval gate, and all four belong to one company."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

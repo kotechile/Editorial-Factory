@@ -27,9 +27,9 @@
   "core_thesis": "In the US, consumer choice for robot mowers next year is dictated by a slow federal regulatory approval queue, leaving only one brand currently cleared for sale.",
   "core_conflict": "Regulatory bottlenecks restricting market availability versus consumer demand for automated yard machines.",
   "composition": "extreme asymmetry",
-  "alt_text": "The FCC Mower Blockade. A solitary robotic lawn mower parked on a residential concrete driveway bathed in early morning light.",
-  "caption": "The FCC Mower Blockade: How federal security rules gave one brand a US monopoly.",
-  "title": "The FCC Mower Blockade",
+  "alt_text": "A robotic lawn mower parked on a residential concrete driveway in early morning light.",
+  "caption": "Four robot mower models have cleared the US approval gate, and all four belong to one company.",
+  "title": "FOUR MOWERS CLEARED THE GATE",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -39,8 +39,8 @@
   "local_path": "context/assets/illustrations/your-mower-needs-4-approvals/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 308806,
-  "sha256": "sha256:2e5e41f9ce1eacd29d2a7337c90a5d3ae2e6329536d4ebd445881a25df0c79ad",
+  "bytes": 311479,
+  "sha256": "sha256:0a17231392ba54126f7add4d73e1246185828c12c86f0af91340f3f7d0664713",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -108,5 +108,7 @@
     "ink_subject": 0.002,
     "spike": 0.0,
     "generated_at": "2026-10-31T10:43:37+00:00"
-  }
+  },
+  "kicker": "ROBOT MOWERS // US MARKET APPROVALS",
+  "hook": "One brand holds the only four US approvals."
 }
