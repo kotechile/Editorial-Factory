@@ -35,7 +35,7 @@ slug: "YYYY-MM-DD_<slug>"
 - `## By the numbers`: Mandatory quantitative H2 section with 2–4 bolded metric bullets pairing figures with concise 2–4 word metric titles before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). No conversational filler lead-ins.
 - `<!-- tactical-insight -->`: Descriptive `## What I'd watch:` or `## Where the money flows` H2 header + 3 actionable, sequential takeaways addressing secondary keyword clusters.
 - `<!-- nuanced-takeaway -->`: `## The catch` H2 header + the honest catch, limitation, or counter-argument.
-- `<!-- tldr -->`: `## At a glance` H2 header + 4-part structured breakdown (**The Big Shift**, **Why It Matters**, **The Winning Moves** / **What I'd Watch** with sub-bullet definitions, and **The Fine Print** in plain English), distinctly separated from "The catch".
+- `<!-- tldr -->`: `## At a glance` H2 header + a three-line box (**The shift**, **The number**, **The risk**, under 50 words, no sub-bullets and no recap of the tactical section), distinctly separated from "The catch".
 
 ### C. Citations
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.

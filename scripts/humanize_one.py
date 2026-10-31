@@ -30,7 +30,7 @@ SMART BREVITY STYLING PRINCIPLES:
      - `## By the numbers` (MANDATORY quantitative section presenting 2–4 verified figures/percentages in bold bullets pairing the figure with a concise metric title)
      - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
      - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; followed on a new paragraph)
-     - `## At a glance` (in <!-- tldr -->, clearly separating the 4-part Smart Brevity executive summary with its own distinct H2 header so it is NEVER embedded under "The catch")
+     - `## At a glance` (in <!-- tldr -->, a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
    - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats pairing the figure with a concise 2–4 word metric title (e.g., `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). The words following the bold lead MUST NOT begin with conversational or background narrative filler ("Diesel fuel started the year...", "The leap in the..."). Instead, structure as `- **<Figure> — <Metric Title>:** <Clear explanation> [Citation]`.
@@ -73,13 +73,12 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
 - PRESERVE the `## Related reading` section exactly as written — its anchor texts and URLs are verified internal links to live pages on the same site. Never rewrite, drop, merge, or invent one, and never add a link that is not already there.
-- Format the TL;DR as the structured <!-- tldr --> field opening with an H2 header '## At a glance', strictly following this 4-part Smart Brevity schema (serves as a 30-second executive summary explaining what the article is about, distinctly separated from the preceding body):
+- Format the TL;DR as the structured <!-- tldr --> field opening with an H2 header '## At a glance', strictly following this 3-LINE schema (owner standard 2026-10-29; the four-part Big Shift / Why It Matters / What I'd Watch / Catch recap is RETIRED — rebuilding it is a rewrite defect):
   ## At a glance
-  1) "- **The Big Shift:** <1-2 plain-English sentences explaining directly what happened and what the article is about>"
-  2) "- **Why It Matters:** <1-2 sentences stating the economic, architectural, or industry impact and who is affected>"
-  3) "- **The Winning Moves:** <what the writer is watching next, and why it matters>" (or "- **What I'd Watch:**") followed by indented sub-bullets:
-     "  - **<Move Name>:** <1-line plain-English definition explaining what it does and why>"
-  4) "- **The Fine Print:** <upfront design needs, security/access controls, and realistic trade-offs/caveats>" (or "- **The Catch:**")
+  - "**The shift:** <one sentence: what changed>"
+  - "**The number:** <the one figure that proves it and that the body already states>"
+  - "**The risk:** <the single caveat a reader must carry away>"
+  Under 50 words total, no sub-bullets, no list mirroring "What I'd watch".
   Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC.
 
 SECTION GATES (each section must pass its own gate):
@@ -87,7 +86,7 @@ SECTION GATES (each section must pass its own gate):
 - <!-- tension -->: frames the shift with '## The big picture:' H2; includes a mandatory '## By the numbers' section with 2–4 bold bulleted stats; names who it hurts/helps.
 - <!-- tactical-insight -->: what the people closest to the story are doing and what the writer expects next, structured with clean bullets and bold lead-ins for 3+ items; observations, never instructions to the reader.
 - <!-- nuanced-takeaway -->: honest limitation / counter-argument with '## The catch' H2 header.
-- <!-- tldr -->: opens with '## At a glance' H2 header; follows the 4-part schema (**The Big Shift**, **Why It Matters**, **The Winning Moves** / **What I'd Watch** with indented sub-bullet definitions, **The Fine Print** / **The Catch**); clearly explains what the article is about in plain, accessible English without unexplained buzzwords.
+- <!-- tldr -->: opens with '## At a glance' H2 header; follows the three-line schema (**The shift**, **The number**, **The risk**) under 50 words with no sub-bullets and no recap of the tactical section; plain, accessible English without unexplained buzzwords.
 
 ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):
 - Every acronym is expanded at its FIRST use in the body (either "Full Name (ACR)" or "ACR (...plain meaning)"). Zero undefined acronyms at the end. Never reuse an acronym bare after introducing it.

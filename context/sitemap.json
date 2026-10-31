@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T11:47:35Z",
+  "updated_at": "2026-10-31T17:48:17Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4620,7 +4620,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/4726-boilers-51825-silent-alarms/"
     },
     {
       "slug": "2026-10-31_two-builds-one-vault",
@@ -4637,7 +4638,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/two-builds-one-vault/"
     },
     {
       "slug": "2026-10-31_why-37667-snow-throwers-failed-winter",
@@ -4655,7 +4657,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/why-37667-snow-throwers-failed-winter/"
     },
     {
       "slug": "2026-10-31_your-machine-duty-180-days-still-unpriced",
@@ -4673,7 +4676,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-machine-duty-180-days-still-unpriced/"
     },
     {
       "slug": "2026-10-31_your-mower-needs-4-approvals",
@@ -4691,7 +4695,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-mower-needs-4-approvals/"
     }
   ]
 }

@@ -32,16 +32,16 @@ Introduce supporting context using standardized H2 headers (`## `).
 - **`## By the numbers`** — **MANDATORY H2.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). Never begin bullet explanations with conversational or background narrative ("Diesel fuel started the year...", "The leap in the..."). State the clean metric title directly so automated SVG charts display meaningful, unclipped labels.
 - **`## What I'd watch:`** / **`## Where the money flows`** — Introduce the concrete consequences and the next signals to watch (in `<!-- tactical-insight -->`). Observations, never instructions to the reader (§3.9).
 - **`## The catch`** — State the honest limitation, tradeoff, or counter-argument (in `<!-- nuanced-takeaway -->`). Followed on a new paragraph by the honest limitation.
-- **`## At a glance`** — Mandatory H2 opening the `<!-- tldr -->` executive summary, clearly separating the 4-part Smart Brevity breakdown so it is NEVER embedded under "The catch".
+- **`## At a glance`** — Mandatory H2 opening the `<!-- tldr -->` executive summary, separated so it is NEVER embedded under "The catch".
 
 ### 3.4 Scannability & Bullets
 - **Never output monolithic walls of text.**
 - Any sequence of **three or more** data points, stats, tactical moves, or arguments MUST be broken down into clean, bulleted lists with bold lead-ins (e.g., `- **Audit bandwidth:** Ask vendors for...`).
-- **At a Glance / TL;DR 4-Part Smart Brevity Schema:** The `<!-- tldr -->` block must serve as a 30-second executive summary that clearly explains what the article is about, following this structure in plain English:
-  1. `- **The Big Shift:**` (or **The Core Story:**) — 1-2 direct sentences explaining the event, breakthrough, or baseline problem and what the article is about.
-  2. `- **Why It Matters:**` — 1-2 sentences delivering the economic, architectural, or industry stakes and who is affected.
-  3. `- **What I'd Watch:**` — An intro sentence naming what the writer is watching next, followed by indented sub-bullets (`  - **<Thing to watch>:** <1-line plain English definition of what it is and why it matters>`). **The Winning Moves:** / **The Playbook:** are retired (§3.9).
-  4. `- **The Catch:**` (or **The Fine Print:**) — 1-2 sentences stating the upfront design needs, security/access controls, and realistic trade-offs.
+- **At a Glance / TL;DR 3-line schema (owner standard 2026-10-29 — the four-part box is RETIRED):** The `<!-- tldr -->` block is a box under 50 words, three lines, in plain English:
+  1. `- **The shift:**` — one sentence: what changed.
+  2. `- **The number:**` — the one figure that proves it, and that the body already states.
+  3. `- **The risk:**` — the single caveat a reader must carry away.
+  No sub-bullets, and nothing that mirrors **What I'd watch**: the four-part recap (Big Shift / Why It Matters / What I'd Watch / The Catch) duplicated the tactical section, and a rewrite that rebuilds it is a defect, not a stylistic choice.
 
 ### 3.5 Strong, Simple Diction
 - Strip out passive verbs, weak adverbs (e.g., "basically", "materially", "extremely"), and bloated "10-dollar" corporate jargon.
@@ -239,7 +239,7 @@ counts is the audit's — the old table above was a self-assessment the model co
 
 ## 6. Output
 `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form) with the per-section gate
-report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (following the 4-part Big Shift / Why It Matters / What I'd Watch / Catch schema) — never write a
+report. Keep the **TL;DR as the structured `<!-- tldr -->` field** (the three-line shift / number / risk box under 50 words per §3.4 — the four-part Big Shift / Why It Matters / What I'd Watch / Catch schema is retired) — never write a
 prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only** — do not compose
 one.
 
