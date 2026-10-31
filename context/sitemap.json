@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T18:34:30Z",
+  "updated_at": "2026-10-31T18:45:19Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4697,6 +4697,24 @@
       "date": "2026-10-31",
       "public": true,
       "url": "https://wellroost.com/your-mower-needs-4-approvals/"
+    },
+    {
+      "slug": "2026-10-31_your-mower-pays-back-in-24-years-or-09",
+      "title": "Your Mower's 2.4-Year Payback Trap",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch:",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-31",
+      "public": false
     },
     {
       "slug": "2026-10-31_your-standby-bill-hides-62-watts",

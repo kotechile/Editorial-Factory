@@ -1,0 +1,112 @@
+{
+  "slug": "your-mower-pays-back-in-24-years-or-09",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A robot lawn mower docked on a concrete driveway outside a home at dusk.",
+      "caption": "The true cost of a yard robot depends on how many weeks it operates each year.",
+      "title": "robot-mower-regional-payback-night",
+      "bytes": 262255,
+      "sha256": "sha256:b3f0355bfa44f5cc8c5bceebe5230ca5"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural night, anamorphic 35mm photograph. An unbranded modern robot lawn mower docked quietly on a concrete driveway beside a garage at blue hour. The mower sits in extreme asymmetry with heavy negative space, its status ring emitting a soft glow. Lit windows provide the only warm light against deep blue ambient dusk. Slate grey concrete, deep pine green shadows, and off-white stucco. Long-exposure calm, crisp atmospheric depth, no moving figures, no text, no logos, no printed lettering.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, numbers, labels, logos, people",
+  "rationale": "Architectural night captures the quiet downtime of the machine, emphasizing the seasonal and daily calendar that dictates its true economic value to the homeowner.",
+  "cue": "set by the length of your mowing season",
+  "subject": "an unbranded robot lawn mower docked on a concrete driveway",
+  "core_thesis": "A robot mower's payback period is dictated by the regional length of the mowing season rather than its upfront price.",
+  "core_conflict": "Fixed capital cost versus highly variable regional seasonal utility.",
+  "composition": "extreme asymmetry with heavy negative space",
+  "alt_text": "The Robot Mower Payback Trap. A robot lawn mower docked on a concrete driveway outside a home at dusk.",
+  "caption": "The Robot Mower Payback Trap: Why your robot's payback depends on local mowing seasons.",
+  "title": "The Robot Mower Payback Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mower-pays-back-in-24-years-or-09/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 319124,
+  "sha256": "sha256:f68b738b6b93029f2d6c93bd956d5b431464aab86d348b13efb5f79a20177f7d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 319124,
+    "quality": 88,
+    "sha256": "sha256:f68b738b6b93029f2d6c93bd956d5b431464aab86d348b13efb5f79a20177f7d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3e6a7f1bfa028b1fe99daade587d69dc433d8bf4a3e3da1fa71bb88ac36fc182",
+  "render_phash": "01be06cc08de00df05c709e70957240f249f24bf0256009c037b007b00df071f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A white robot lawn mower sits on a paved driveway in front of a modern, white, flat-roofed house with illuminated windows at dusk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a robot lawn mower, which is the main subject of the article."
+  },
+  "source_hash": "sha256:fdef137bb21fbac8e3c341bc435f1970",
+  "source_chars": 4850,
+  "task_id": "b98b186b0ca38426066809081ec1962c",
+  "credits": 5.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b98b186b0ca38426066809081ec1962c_1793472289950.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural night, anamorphic 35mm photograph. An unbranded modern robot lawn mower docked quietly on a concrete driveway beside a garage at blue hour. The mower sits in extreme asymmetry with heavy negative space, its status ring emitting a soft glow. Lit windows provide the only warm light against deep blue ambient dusk. Slate grey concrete, deep pine green shadows, and off-white stucco. Long-exposure calm, crisp atmospheric depth, no moving figures, no text, no logos, no printed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-31T18:45:01+00:00",
+  "overlay": {
+    "kicker": "LAWN ROBOTICS // PAYBACK MATH",
+    "title": "THE ROBOT MOWER PAYBACK TRAP",
+    "hook": "Why your robot's payback depends on local mowing seasons",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 10.54,
+    "target": 4.5,
+    "clutter": 0.111,
+    "region_rgb": [
+      21,
+      42,
+      64
+    ],
+    "binding_rgb": [
+      28,
+      55,
+      82
+    ],
+    "title_lines": [
+      "THE ROBOT MOWER",
+      "PAYBACK TRAP"
+    ],
+    "subject": 0.017,
+    "ink_subject": 0.008,
+    "spike": 0.056,
+    "generated_at": "2026-10-31T18:45:01+00:00"
+  }
+}
