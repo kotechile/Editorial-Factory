@@ -628,6 +628,8 @@ after every rewrite — the frontier pass's favourite way to handle an awkward m
 write "impossible", which passes Flesch, the figure diff and the voice gate while removing the only number
 that made the argument arithmetic.
 
+**The in-push art director can refuse all three briefs without failing the publish, and `--reimage` reports the switch backwards (learned 2026-10-31).** On the FTZ evergreen `publish.py` printed "published live" with no image line at all, and the post read back `featured_media: 0`; the three refusals (a brief naming no framing rule, then a render carrying legible lettering) were only visible by re-running `illustration_creator.py <artifact> --apply`, whose second round landed on `component_assembly`/nano-banana-pro. `wp_draft.py --slug <slug> --reimage` then printed "uploaded: media N — featured_media NOT yet switched" while the post **did** switch: read the post's `featured_media` back over REST rather than trusting that line, and check the media record's own `alt_text` (the sidecar edit lands there). The reader front had already built the page before any media existed, so the hero was missing (0 `wp-content/uploads`, `og:image` = the default share image) until `giniloh_coolify_redeploy_all()` inside the CMS container queued the fronts — expect the forced redeploy on every first publish of a late-illustrated article, not only when the illustration pass is skipped outright.
+
 **The art director's refusals rotate validation reasons across attempts on the same artifact, so one failure
 is not a verdict on the treatment (learned 2026-10-26).** A single article was refused in sequence for
 legible lettering in the render, then for "prompt does not say which way the light comes from", then for a
