@@ -1,0 +1,112 @@
+{
+  "slug": "4726-boilers-51825-silent-alarms",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A disassembled carbon monoxide alarm revealing its internal sensor on a concrete surface.",
+      "caption": "A carbon monoxide alarm is a measuring instrument with a limited lifespan, not a permanent home fixture.",
+      "title": "Disassembled Carbon Monoxide Alarm Sensor",
+      "bytes": 271832,
+      "sha256": "sha256:c610ebc3a76f284d85a56da5f42aff86"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph of a disassembled carbon monoxide alarm showing its internal sensor board, resting on a textured concrete workbench in a utility closet. 100mm macro lens, shallow depth of field, one razor-sharp focal plane on the sensor component. Soft directional daylight from the left casting a long contact shadow. Extreme asymmetry with the hero object off-centre on the right thirds, background falling away. Bone white, charcoal, and brushed steel palette, visible dust and surface texture, fine film grain, muted modern editorial aesthetic, no people, no text.",
+  "negative_prompt": "garbled text, random letters, UI, watermark, logos, typography",
+  "rationale": "The story revolves around a specific physical component\u2014the sensor inside a CO alarm\u2014and its failure despite the siren working. Editorial macro focuses intimately on this device, highlighting its physical reality as a limited-life instrument rather than a permanent fixture.",
+  "cue": "limited-life measuring instrument",
+  "subject": "a disassembled carbon monoxide alarm showing its internal sensor",
+  "core_thesis": "A carbon monoxide alarm is a limited-life measuring instrument whose sensor fails before its electronics do, leaving consumers with a false sense of security when recalling dangerous gas boilers.",
+  "core_conflict": "Electronic longevity vs sensor decay (the test button proves the siren, not the sensor).",
+  "composition": "extreme asymmetry with the hero object off-centre on the right thirds",
+  "alt_text": "Leaking Boilers And Dead Alarms. A disassembled carbon monoxide alarm revealing its internal sensor on a concrete surface.",
+  "caption": "Leaking Boilers And Dead Alarms: A boiler recall relies on sensors that may never trigger.",
+  "title": "Leaking Boilers And Dead Alarms",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/4726-boilers-51825-silent-alarms/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 325371,
+  "sha256": "sha256:f6dd3cc2446030a971e3f299467deb1891201150ef39499fb409e68b8509a0b1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 325371,
+    "quality": 88,
+    "sha256": "sha256:f6dd3cc2446030a971e3f299467deb1891201150ef39499fb409e68b8509a0b1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ad769ac13e00d8c3f89433d0ab4e1b10b7cbbd76590b1ffa3bb0693d842fef31",
+  "render_phash": "fffcffdcff9efe167c33fe5bc253fe733ef329e30db500ecc07c1c1f1b00071c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A disassembled white plastic device with an exposed circuit board resting on a concrete surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows the internal components of an alarm, which aligns with the article's focus on carbon monoxide alarms and their sensors."
+  },
+  "source_hash": "sha256:bfad37c28903866f1cfcfba3cdc15565",
+  "source_chars": 4709,
+  "task_id": "1a65054bbcdcf76f7ad97be0b7aaa11d",
+  "credits": 5.0,
+  "cost_ms": 14,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1a65054bbcdcf76f7ad97be0b7aaa11d_1793446948052.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph of a disassembled carbon monoxide alarm showing its internal sensor board, resting on a textured concrete workbench in a utility closet. 100mm macro lens, shallow depth of field, one razor-sharp focal plane on the sensor component. Soft directional daylight from the left casting a long contact shadow. Extreme asymmetry with the hero object off-centre on the right thirds, background falling away. Bone white, charcoal, and brushed steel palette, visible dust and surface texture, fine film grain, muted modern editorial aesthetic, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-31T11:42:36+00:00",
+  "overlay": {
+    "kicker": "HOME SAFETY // SENSOR FAILURES",
+    "title": "LEAKING BOILERS AND DEAD ALARMS",
+    "hook": "A boiler recall relies on sensors that may never trigger",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.07,
+    "target": 4.5,
+    "clutter": 0.152,
+    "region_rgb": [
+      85,
+      78,
+      68
+    ],
+    "binding_rgb": [
+      109,
+      99,
+      87
+    ],
+    "title_lines": [
+      "LEAKING BOILERS",
+      "AND DEAD ALARMS"
+    ],
+    "subject": 0.098,
+    "ink_subject": 0.044,
+    "spike": 0.313,
+    "generated_at": "2026-10-31T11:42:36+00:00"
+  }
+}
