@@ -751,6 +751,40 @@ Organization for Standardization" mid-sentence.
 **Two traps on this beat, both the nav-digit class.** A cell leading on `5,000 sq ft` evidences on a `4.7/5` review rating elsewhere on the pricing page, and `$30 starting price` evidences on a testimonial's "30 min" — so the quarter-acre scope rides in prose under another row rather than carrying its own. **And the per-month average is a different URL and a different basket:** `/pricing` says "The average homeowner spends $150-$200 per month on professional lawn care services", an annualised full-service figure that includes fertilization and leaf removal, so it is citable as the wrong-denominator warning and never as a mowing bill. The reusable frame this beat produced: express payback as machine price ÷ (season weeks × the quoted per-visit price) from the source's own regional table, because a monthly average spread over twelve months is a calendar error no gate reads.
 Still unreachable: every guessed `husqvarna.com` installation/EPOS/buying-guide path (404), `navimow.segway.com/pages/faq` and `mammotion.com/pages/support` (unreachable) — so an installation audit (gate width, dock clearance, power run) cannot be built from vendor HTML, and its requirement numbers sit in PDF manuals the fetch path cannot read. **A candidate dropped for missing evidence is worth re-probing when the beat returns:** this topic scored 6.7 and was dropped on 2026-10-24 for want of a fetchable contract price, and one marketplace page supplied it three days later.
 
+**Hosts probed live 2026-10-31, building a radon sampling-protocol brief (the `home_diagnostics_tech` evergreen).**
+Carries the figure as plain text and fetches first try: `epa.gov/radon/health-risk-radon` (the 21,000-deaths estimate
+with its 2,900 never-smoker share and its own "8,000 to 45,000" uncertainty range, plus the 1.3 pCi/L table row where a
+never-smoker reads a 2-in-1,000 lifetime risk against 20 in 1,000 for a smoker), `epa.gov/radon/radon-publications`
+(the 4 pCi/L fix line and the 2–4 pCi/L "consider fixing" band, with the becquerel equivalents), `health.ny.gov/environmental/radon/`
+(the $12.25 state kit, the 24-hour sealed-house instruction, the five-year / two-year-with-a-system interval, and
+"radon levels in most homes can be reduced to 2 pCi/L or below"), `health.ny.gov/environmental/radon/mitigation.htm`
+(the mechanism row — "once windows, doors and vents are closed, radon concentrations most often return to previous
+values within about 12 hours" — plus the two- to seven-day post-install measurement, the 12-hour precondition and the
+30-day / 24-hour retest clock), `health.state.mn.us/.../radon/index.html` and `…/radon/mitigation.html` (the 4 pCi/L
+action level restated, the 2–4 band, and "inexpensive mitigation rates (less than $1,000) … often too good to be true"),
+and `lung.org/clean-air/indoor-air/indoor-air-pollutants/radon` (two-to-seven-day short test, "lowest level regularly
+used", three-month long test, the retest ladder). **Three traps this beat sets.** (1) *The precondition is not one number:*
+New York's consumer page says sealed 24 hours before and during, the Lung Association's kit guidance starts closed-house
+conditions at least 12 hours prior, and New York's mitigation page uses 12 hours for a post-install test — so the article
+must say the laboratory's instruction sets the clock and that 24 hours satisfies every version, never average the two.
+(2) *A cost band can be typographically broken on the page itself:* the ALA prints "The cost can range from $1,00 -
+$2,500 or more", so no dollar range for mitigation is citable; carry the state quote floor and send the reader for three
+bids. (3) *The state pages answer the source gate's UA 403 while the evergreen gate's fetcher reads them*, so those
+citations read UNVERIFIED-at-the-push by design — say so in the run log rather than replacing a correct citation.
+Refused on evidence, not taste: the $80 borescope against a stud-bay opening (7.1 on a re-probe — Bob Vila now fetches
+for drywall pricing, but no fetchable primary states a camera's minimum hole diameter and every borescope vendor listing
+is unreachable), and outlet/circuit analyzers for a bootleg ground (7.0 — InterNACHI tester articles 404 to the fetch,
+the NEC is not on eCFR, NFPA is paywalled, so a safety claim would carry no gate row).
+
+**A generated Related-reading link justified on function words survives every gate and has to be removed twice (learned 2026-10-31).**
+The radon evergreen's block scored 1 of 337 candidates and stamped `/snow-robot-stops-at-6000-ft2-it-docks/` on the two
+tokens `line, sits` — `growth_os.generate_internal_link_map`'s `MIN_OVERLAP_TOKENS` bar is met by two incidental words,
+which rule 12 forbids. Editing the artifact and the Supabase row is **not** enough: `scripts/wp_draft.py --slug … --refresh-live`
+re-derives the body and re-stamps the same block. The working sequence is to read the block's own `why` line before the
+push, and when it names only function words: strip it from the artifact and the row, then update the live post's body over
+REST (`POST /wp-json/wp/v2/posts/<id>` with `content`, app password from `wp_draft.credentials_for` after `load_env()`),
+then force the front's redeploy — and record the re-stamp behaviour as an engine item, because the next sync restores it.
+
 ## 5. Handoff
 
 **The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the

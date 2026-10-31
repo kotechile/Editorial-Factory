@@ -62,10 +62,7 @@ The last thing worth sitting with is what a sloppy test buys. A reading taken wi
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Snow Robot Stops at 6,000 ft²" -> /snow-robot-stops-at-6000-ft2-it-docks/ [same site (wellroost.com); topical overlap: line, sits] Link "Snow Robot Stops at 6,000 ft²" in the section where the article touches line, sits. -->
-## Related reading
-
-- [Snow Robot Stops at 6,000 ft²](/snow-robot-stops-at-6000-ft2-it-docks/) — more on Yard Robots & Automation
+<!-- internal-link hint: none — no live page on this site earned a link; the nearest candidate shared only incidental words (the desk refuses a link justified by one word) -->
 <!-- internal-links:end -->
 
 <!-- tldr -->
