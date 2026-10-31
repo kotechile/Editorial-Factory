@@ -14,6 +14,12 @@ meta_title: "Your Machine Duty: 180 Days, Still Unpriced"
 meta_title_source: "derived_from_title"
 meta_description: "The duty on the robots and machine tools a reshoring project buys was neither set nor dropped this week. It went to trade talks after a Commerce Department…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-machine-duty-180-days-still-unpriced/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Unpriced Machine Duties. An industrial robotic joint assembly with an empty inspection bay resting on a concrete floor."
+image_caption: "Unpriced Machine Duties: A 180-day tariff delay leaves reshoring costs unpriced."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

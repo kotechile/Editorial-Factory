@@ -1,0 +1,116 @@
+{
+  "slug": "your-machine-duty-180-days-still-unpriced",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An industrial robotic joint assembly with an empty inspection bay resting on a concrete floor.",
+      "caption": "A 180-day review period leaves a critical capital cost variable completely unpriced for planners buying reshoring machinery.",
+      "title": "Unpriced-Machine-Duty-Assembly",
+      "bytes": 378707,
+      "sha256": "sha256:691ea11d30293495f46ac0c6276bf7e5"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered concrete plant floor. Extreme asymmetrical layout with generous negative space. An industrial robotic arm joint and a precision brushed steel housing featuring an unlatched inspection cover that exposes a deliberately empty modular bay. Hard clean edges on weathered concrete, safety yellow accents against concrete grey and slate grey. One sharp directional light from the top left throwing a long cast shadow across the matte muted palette. Recognisable engineered parts, no bare geometry, no molded or printed lettering.",
+  "negative_prompt": "garbled text, random lettering, typography, watermarks, UI elements, human face, people",
+  "rationale": "The story is about a single missing variable\u2014an unpriced duty rate\u2014in a structural calculation. Component assembly perfectly captures this by depicting a physical mechanism with a deliberately empty bay, representing the unresolved capital line.",
+  "cue": "the one input with no rate",
+  "subject": "an industrial robotic arm joint assembly with an empty modular bay",
+  "core_thesis": "The tariff duty on reshoring machinery has been deferred for 180 days rather than settled, leaving the capital cost line in total cost models completely unpriced.",
+  "core_conflict": "Capital planning requirement vs. unresolved regulatory uncertainty",
+  "composition": "extreme asymmetrical layout with generous negative space",
+  "alt_text": "Unpriced Machine Duties. An industrial robotic joint assembly with an empty inspection bay resting on a concrete floor.",
+  "caption": "Unpriced Machine Duties: A 180-day tariff delay leaves reshoring costs unpriced.",
+  "title": "Unpriced Machine Duties",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-machine-duty-180-days-still-unpriced/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 402344,
+  "sha256": "sha256:2a8de66b91fdb8f6ffbeec0ce525b701377b0011c79a92833c401dc5cd03c152",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402344,
+    "quality": 76,
+    "sha256": "sha256:2a8de66b91fdb8f6ffbeec0ce525b701377b0011c79a92833c401dc5cd03c152",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:23eb3f6800515b3762902ba082e04a593f7abad09e029fb91505d0c0be237253",
+  "render_phash": "007d00f801dae07a781b1e8b07c109a001cb058b31c748c78199818984068886",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A yellow industrial robotic arm base with a silver metal box attached, featuring an open, empty compartment, casting a long shadow on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a robotic arm component with an empty bay, which aligns with the article's focus on unpriced machine duties and missing capital inputs."
+  },
+  "source_hash": "sha256:6d135aacca62aa416983aac4d3a474b3",
+  "source_chars": 4471,
+  "task_id": "ee731e415e36d94a5038c1ab22ae1bc8",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1bbf8e4e39870e5ea0090cf8af672f68.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist studio composition of a modular mechanical assembly resting on a weathered concrete plant floor. Extreme asymmetrical layout with generous negative space. An industrial robotic arm joint and a precision brushed steel housing featuring an unlatched inspection cover that exposes a deliberately empty modular bay. Hard clean edges on weathered concrete, safety yellow accents against concrete grey and slate grey. One sharp directional light from the top left throwing a long cast shadow across the matte muted palette. Recognisable engineered parts, no bare geometry, no molded or printed lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-10-31T06:44:10+00:00",
+  "overlay": {
+    "kicker": "RESHORING COSTS // MACHINERY TARIFFS",
+    "title": "UNPRICED MACHINE DUTIES",
+    "hook": "A 180-day tariff delay leaves reshoring costs unpriced",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.56,
+    "target": 4.5,
+    "clutter": 0.161,
+    "region_rgb": [
+      94,
+      108,
+      112
+    ],
+    "binding_rgb": [
+      118,
+      133,
+      136
+    ],
+    "title_lines": [
+      "UNPRICED",
+      "MACHINE DUTIES"
+    ],
+    "subject": 0.007,
+    "ink_subject": 0.004,
+    "spike": 0.019,
+    "generated_at": "2026-10-31T06:44:10+00:00"
+  }
+}
