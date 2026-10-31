@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/4726-boilers-51825-silent-alarms/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Leaking Boilers And Dead Alarms. A disassembled carbon monoxide alarm revealing its internal sensor on a concrete surface."
-image_caption: "Leaking Boilers And Dead Alarms: A boiler recall relies on sensors that may never trigger."
+image_alt: "A disassembled white carbon monoxide alarm, its circuit board and sensor exposed, on a concrete workbench."
+image_caption: "The sensor inside a combination smoke and carbon monoxide alarm is a limited-life part."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -64,13 +64,6 @@ The documented fault in both warnings is smoke and fire, not CO. CPSC writes tha
 The scale of the problem is softer than it looks. The estimate that 36.4 to 50 percent of homes had a CO alarm rests on surveys from 2011 and 2009 inside a lab report published in March 2014 [7]. I could be wrong, but the honest read is a slow measurement gap rather than a fresh collapse.
 
 A certified alarm is no absolute guarantee either. Chamber tests by the agency found units firing outside the required time windows in some cases. That is a gap a standard tries to limit rather than remove [7]. The recall and the warnings describe the tails, and the tails are where the deaths sit.
-
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: none — no live page on this site scored for this topic -->
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -78,6 +71,12 @@ A certified alarm is no absolute guarantee either. Chamber tests by the agency f
 **The shift:** A safety agency leaned on home alarms to cover a boiler it could not fix that day, while warning that 51,825 of those alarms may never sound.
 **The number:** 4,726 boilers recalled on 2026-10-29, with 34 cracked dishes known by 2026-10-16.
 **The risk:** The monthly test button checks the siren, not the sensor, and the sensor is the part with an expiry.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: none — no live page on this site scored for this topic -->
+<!-- internal-links:end -->
 
 ## Sources
 [1] U.S. Consumer Product Safety Commission, "NTI and HTP Brand Gas Boilers Recalled Due to Risk of Serious Injury or Death from Fire, Carbon Monoxide (CO) Poisoning and Impact Hazards," recall dated 2026-10-29 — https://www.cpsc.gov/Recalls/2027/NTI-and-HTP-Brand-Gas-Boilers-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-Carbon-Monoxide-CO-Poisoning-and-Impact-Hazards-Manufactured-by-Ariston-formerly-NTI-Boilers

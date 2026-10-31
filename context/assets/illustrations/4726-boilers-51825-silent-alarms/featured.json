@@ -1,6 +1,6 @@
 {
   "slug": "4726-boilers-51825-silent-alarms",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Disassembled Carbon Monoxide Alarm Sensor",
       "bytes": 271832,
       "sha256": "sha256:c610ebc3a76f284d85a56da5f42aff86"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Leaking Boilers And Dead Alarms. A disassembled carbon monoxide alarm revealing its internal sensor on a concrete surface.",
+      "caption": "Leaking Boilers And Dead Alarms: A boiler recall relies on sensors that may never trigger.",
+      "title": "Leaking Boilers And Dead Alarms",
+      "bytes": 325371,
+      "sha256": "sha256:f6dd3cc2446030a971e3f299467deb1891201150ef39499fb409e68b8509a0b1"
     }
   ],
   "style": "editorial_macro",
@@ -27,9 +35,9 @@
   "core_thesis": "A carbon monoxide alarm is a limited-life measuring instrument whose sensor fails before its electronics do, leaving consumers with a false sense of security when recalling dangerous gas boilers.",
   "core_conflict": "Electronic longevity vs sensor decay (the test button proves the siren, not the sensor).",
   "composition": "extreme asymmetry with the hero object off-centre on the right thirds",
-  "alt_text": "Leaking Boilers And Dead Alarms. A disassembled carbon monoxide alarm revealing its internal sensor on a concrete surface.",
-  "caption": "Leaking Boilers And Dead Alarms: A boiler recall relies on sensors that may never trigger.",
-  "title": "Leaking Boilers And Dead Alarms",
+  "alt_text": "A disassembled white carbon monoxide alarm, its circuit board and sensor exposed, on a concrete workbench.",
+  "caption": "The sensor inside a combination smoke and carbon monoxide alarm is a limited-life part.",
+  "title": "4,726 Boilers, 51,825 Alarms",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/4726-boilers-51825-silent-alarms/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 325371,
-  "sha256": "sha256:f6dd3cc2446030a971e3f299467deb1891201150ef39499fb409e68b8509a0b1",
+  "bytes": 321979,
+  "sha256": "sha256:7ce8399033d491ff2230ae871177000f687c0a404d4f6b1083e0b40a7aff50e1",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,9 +57,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 325371,
+    "bytes": 321979,
     "quality": 88,
-    "sha256": "sha256:f6dd3cc2446030a971e3f299467deb1891201150ef39499fb409e68b8509a0b1",
+    "sha256": "sha256:7ce8399033d491ff2230ae871177000f687c0a404d4f6b1083e0b40a7aff50e1",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:ad769ac13e00d8c3f89433d0ab4e1b10b7cbbd76590b1ffa3bb0693d842fef31",
@@ -81,32 +89,33 @@
   },
   "generated_at": "2026-10-31T11:42:36+00:00",
   "overlay": {
-    "kicker": "HOME SAFETY // SENSOR FAILURES",
-    "title": "LEAKING BOILERS AND DEAD ALARMS",
-    "hook": "A boiler recall relies on sensors that may never trigger",
+    "kicker": "HOME SAFETY // RECALL WATCH",
+    "title": "4,726 BOILERS, 51,825 ALARMS",
+    "hook": "A recall leaned on alarms the same day it warned about them",
     "anchor": "top-left",
     "light": true,
     "scrim": 0,
-    "contrast": 5.07,
+    "contrast": 5.1,
     "target": 4.5,
-    "clutter": 0.152,
+    "clutter": 0.153,
     "region_rgb": [
       85,
       78,
-      68
+      67
     ],
     "binding_rgb": [
-      109,
+      107,
       99,
-      87
+      88
     ],
     "title_lines": [
-      "LEAKING BOILERS",
-      "AND DEAD ALARMS"
+      "4,726 BOILERS,",
+      "51,825 ALARMS"
     ],
-    "subject": 0.098,
-    "ink_subject": 0.044,
-    "spike": 0.313,
+    "subject": 0.089,
+    "ink_subject": 0.035,
+    "spike": 0.305,
     "generated_at": "2026-10-31T11:42:36+00:00"
-  }
+  },
+  "hook": "A recall leaned on alarms the same day it warned about them"
 }
