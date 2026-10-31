@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-standby-bill-hides-62-watts/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "The 62 Watt Standby Load. A heavy-duty power meter block and a tiny standard wall adapter rendered in matte clay on a concrete surface."
+image_alt: "The 62 Watt Standby Load. A heavy molded plug and braided cord beside a small wall adapter, rendered in matte clay on cracked concrete."
 image_caption: "The 62 Watt Standby Load: The hidden appliances driving your idle electricity bill."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
