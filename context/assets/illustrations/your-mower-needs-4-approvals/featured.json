@@ -1,0 +1,112 @@
+{
+  "slug": "your-mower-needs-4-approvals",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A solitary robotic lawn mower parked on a residential concrete driveway bathed in early morning light.",
+      "caption": "Only one consumer yard brand currently holds federal approval for the 2027 US market.",
+      "title": "robot-mower-fcc-approval-queue",
+      "bytes": 270871,
+      "sha256": "sha256:c37292fc8d1a428a9238e5d003354d84"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still of a modern robotic lawn mower resting alone on a concrete driveway. Extreme asymmetry, hero object commanding the right side of the frame with generous negative space. Anamorphic 35mm lens, shallow depth of field. Soft dawn sunlight raking from the left, casting a long shadow. The mower features matte polymers and brushed steel accents on the weathered concrete. Palette of deep pine green, slate grey, and bone white. Crisp atmospheric depth, restrained teal-and-amber undertones, fine film grain, quiet residential morning, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, typography, UI, watermarks, logos, people, human face, hands",
+  "rationale": "A cinematic still captures the quiet, solitary reality of the regulatory bottleneck in the physical environment where the machine operates. The driveway setting grounds the abstract regulatory story in the tangible world of the homeowner.",
+  "cue": "a queue rather than by a price war",
+  "subject": "a modern robotic lawn mower",
+  "core_thesis": "In the US, consumer choice for robot mowers next year is dictated by a slow federal regulatory approval queue, leaving only one brand currently cleared for sale.",
+  "core_conflict": "Regulatory bottlenecks restricting market availability versus consumer demand for automated yard machines.",
+  "composition": "extreme asymmetry",
+  "alt_text": "The FCC Mower Blockade. A solitary robotic lawn mower parked on a residential concrete driveway bathed in early morning light.",
+  "caption": "The FCC Mower Blockade: How federal security rules gave one brand a US monopoly.",
+  "title": "The FCC Mower Blockade",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mower-needs-4-approvals/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 308806,
+  "sha256": "sha256:2e5e41f9ce1eacd29d2a7337c90a5d3ae2e6329536d4ebd445881a25df0c79ad",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 308806,
+    "quality": 88,
+    "sha256": "sha256:2e5e41f9ce1eacd29d2a7337c90a5d3ae2e6329536d4ebd445881a25df0c79ad",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d2d1cabc39b5dd62db08b53da28f23fc20fe6ec005fcb43b5cb330097f5306c7",
+  "render_phash": "47cf0f6f0dce0593279b231905d701e702f90d7600ed00d801f403ff01ff01ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A robotic lawn mower sits on a paved driveway in a suburban neighborhood.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a robotic lawn mower, which is the main subject of the article."
+  },
+  "source_hash": "sha256:2131d4e2a27dcb2beef1ffca9f32e7fe",
+  "source_chars": 4810,
+  "task_id": "2c7dcea4440842b1757f560d6f9bf556",
+  "credits": 5.0,
+  "cost_ms": 14,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2c7dcea4440842b1757f560d6f9bf556_1793443404285.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still of a modern robotic lawn mower resting alone on a concrete driveway. Extreme asymmetry, hero object commanding the right side of the frame with generous negative space. Anamorphic 35mm lens, shallow depth of field. Soft dawn sunlight raking from the left, casting a long shadow. The mower features matte polymers and brushed steel accents on the weathered concrete. Palette of deep pine green, slate grey, and bone white. Crisp atmospheric depth, restrained teal-and-amber undertones, fine film grain, quiet residential morning, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-31T10:43:37+00:00",
+  "overlay": {
+    "kicker": "ROBOT MOWERS // US MARKET APPROVALS",
+    "title": "THE FCC MOWER BLOCKADE",
+    "hook": "How federal security rules gave one brand a US monopoly",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.57,
+    "target": 4.5,
+    "clutter": 0.166,
+    "region_rgb": [
+      110,
+      109,
+      100
+    ],
+    "binding_rgb": [
+      136,
+      130,
+      118
+    ],
+    "title_lines": [
+      "THE FCC MOWER",
+      "BLOCKADE"
+    ],
+    "subject": 0.001,
+    "ink_subject": 0.002,
+    "spike": 0.0,
+    "generated_at": "2026-10-31T10:43:37+00:00"
+  }
+}

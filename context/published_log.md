@@ -255,6 +255,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-30 | consumer_asset_repair_replace_tco | your-ink-plan-bills-20-cents | Your Overage Page Costs $0.20 | https://pressflow.aichieve.net/published/2026-10-30_your-ink-plan-bills-20-cents.md | reader site only |
 | 2026-10-31 | personal_microeconomics_tinkering_tax | two-builds-one-vault | 2 Builds, 1 Vault: The License Trap | https://pressflow.aichieve.net/published/2026-10-31_two-builds-one-vault.md | reader site only |
 | 2026-10-31 | supplier_risk_reshoring_decision | your-machine-duty-180-days-still-unpriced | Your Machine Duty: 180 Days, Still Unpriced | https://pressflow.aichieve.net/published/2026-10-31_your-machine-duty-180-days-still-unpriced.md | reader site only |
+| 2026-10-31 | yard_robotics | your-mower-needs-4-approvals | Why Your Mower Needs 4 Approvals | https://pressflow.aichieve.net/published/2026-10-31_your-mower-needs-4-approvals.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

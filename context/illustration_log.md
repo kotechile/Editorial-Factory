@@ -377,3 +377,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-30 | `your-ink-plan-bills-20-cents` | consumer_asset_repair_replace_tco | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ink-plan-bills-20-cents/featured.jpg` |
 | 2026-10-31 | `two-builds-one-vault` | personal_microeconomics_tinkering_tax | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/two-builds-one-vault/featured.jpg` |
 | 2026-10-31 | `your-machine-duty-180-days-still-unpriced` | supplier_risk_reshoring_decision | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-machine-duty-180-days-still-unpriced/featured.jpg` |
+| 2026-10-31 | `your-mower-needs-4-approvals` | yard_robotics | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mower-needs-4-approvals/featured.jpg` |
