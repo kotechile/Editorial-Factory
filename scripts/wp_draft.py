@@ -90,6 +90,16 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES_TABLE = "articles"
 SITES_TABLE = "vertical_sites"
 VERTICAL_TAXONOMY = "vertical"  # the CMS taxonomy whose term names the article's vertical
+# The article's KIND — news or evergreen (or a review) — carried as a WordPress TAG. The vertical
+# says WHERE a post belongs; the kind says WHAT it is, and the two are answered by separate fleets
+# (scripts/sync_crons.py runs a news job and an evergreen job per vertical) so a reader, a filter
+# or a future "latest news" block can tell a 30-day story from a durable one. post_tag is the right
+# home for it: WordPress registers it on every install, its REST endpoint is `tags`, and a tag is a
+# classification label rather than a routing key — the closed routing vocabulary is `vertical`.
+KIND_TAXONOMY = "post_tag"
+KIND_REST_BASE = "tags"                    # fallback when the destination does not report rest_base
+KINDS = ("news", "evergreen", "review")    # closed vocabulary: the three fleets that generate articles
+KIND_LABELS = {"news": "News", "evergreen": "Evergreen", "review": "Review"}
 EXCERPT_TARGET = 165          # characters, before the word-boundary trim
 LINK_LINKS_MAX = 3            # reader-facing internal links per article (internal_links.MAX_LINKS)
 LIVE_POST_NOTE = "live post kept published"    # upsert()'s action for an already-published post
@@ -663,9 +673,68 @@ def resolve_vertical_term(wp, vertical: str, site_domain: str) -> tuple[dict | N
     return term, ""
 
 
+def kind_for_row(metadata: dict) -> str:
+    """The article's kind, from what the row already says about it — never guessed from the subject.
+
+    Producers record it differently: the evergreen and review prompts require `archetype:` in the
+    artifact frontmatter (scripts/publish.py stores it as metadata.kind when present), and a news
+    run sets nothing at all. So read the explicit field first, then the older marker, and return ""
+    when neither is there — a wrong `news` tag on a durable piece is a classification defect and
+    worse than an absent tag, which the guard (scripts/backfill_kind_tags.py) reports by name.
+    """
+    for key in ("kind", "archetype"):
+        value = str((metadata or {}).get(key) or "").strip().lower()
+        if value in KINDS:
+            return value
+    if (metadata or {}).get("evergreen") in (True, "true", "True"):
+        return "evergreen"
+    return ""
+
+
+def resolve_kind_term(wp, kind: str) -> tuple[dict | None, str]:
+    """(term, note) — the destination's tag for this article's kind, created if it is missing.
+
+    Unlike `vertical` (whose vocabulary is closed by a mu-plugin and created by an administrator),
+    `post_tag` is an ordinary taxonomy that the app password may write to: the two/three terms are
+    the same closed set on every destination, so the push creates the one it needs rather than
+    failing a publish over a missing label. The id is per-site — resolved by slug on THIS CMS and
+    never copied from the other one.
+
+    Outcomes:
+      * taxonomy registered, term present -> (term, "") and the payload carries its id;
+      * taxonomy registered, term absent   -> create it, then (term, note) saying it was created;
+      * taxonomy not registered at all     -> (None, note). A CMS with no tags cannot carry one;
+        that is reported, not invented, and the post publishes without it.
+    """
+    slug = (kind or "").strip().lower()
+    if slug not in KINDS:
+        raise RuntimeError(
+            f"'{kind}' is not an article kind — the vocabulary is {', '.join(KINDS)}. A tag invented "
+            f"here would look like a classification and mean nothing; fix the row (or pass --kind)")
+    definition = (wp.taxonomies() or {}).get(KIND_TAXONOMY)
+    if not definition:
+        return None, (f"this CMS registers no '{KIND_TAXONOMY}' taxonomy — the kind '{slug}' cannot "
+                      f"be sent (nothing sent for it)")
+    rest_base = definition.get("rest_base") or KIND_REST_BASE
+    term = wp.term_by_slug(rest_base, slug)
+    if term:
+        return term, ""
+    _, created = wp._call("POST", rest_base, {"slug": slug, "name": KIND_LABELS.get(slug, slug.title())})
+    created = created or {}
+    if str(created.get("slug") or "") != slug or not created.get("id"):
+        raise RuntimeError(
+            f"could not create the '{slug}' tag on this CMS (WordPress answered "
+            f"{json.dumps(created)[:200]}) — the article would publish with no kind, so this push is "
+            f"refused rather than half-labelled")
+    return ({"id": created["id"], "slug": created.get("slug"), "name": created.get("name")},
+            f"created the '{slug}' tag on this CMS (term {created['id']}) — the closed vocabulary "
+            f"needs it once per destination")
+
+
 def build_payload(row: dict, site: dict, publisher_name: str | None = None,
                   author_name: str | None = None,
-                  vertical_term: dict | None = None) -> tuple[dict, list[str]]:
+                  vertical_term: dict | None = None,
+                  kind_term: dict | None = None) -> tuple[dict, list[str]]:
     """The exact WordPress post payload, plus a list of mapping notes for the operator."""
     metadata = row.get("metadata") or {}
     notes: list[str] = []
@@ -725,6 +794,15 @@ def build_payload(row: dict, site: dict, publisher_name: str | None = None,
         payload[VERTICAL_TAXONOMY] = [term_id]
         notes.append(f"{VERTICAL_TAXONOMY} taxonomy: term {term_id} "
                      f"('{vertical_term.get('slug') or vertical_term.get('name')}')")
+    # The kind tag (news / evergreen / review) — the same shape as the vertical: resolved on the
+    # destination, sent as the taxonomy's own REST field, and read back. `tags` REPLACES the post's
+    # tag set rather than merging, which is why only this one term is ever sent: a post the desk
+    # publishes carries exactly one kind.
+    if kind_term:
+        tag_id = int(kind_term["id"])
+        payload[KIND_REST_BASE] = [tag_id]
+        notes.append(f"{KIND_TAXONOMY} tag: term {tag_id} "
+                     f"('{kind_term.get('slug') or kind_term.get('name')}' is the article's kind)")
     # A previous push recorded the featured image's attachment id. Sending it keeps a --refresh or a
     # dry run honest about what the post will carry; push_one replaces it with the id it resolves.
     recorded_media = (metadata.get(WORDPRESS) or {}).get("media_id")
@@ -875,6 +953,20 @@ def delivery_problems(payload: dict, post: dict, site_domain: str | None = None)
             problems.append(f"{VERTICAL_TAXONOMY}: sent term(s) {list(sent_vertical)}, CMS holds "
                             f"{stored_vertical!r} — the post carries no vertical on the CMS, so no "
                             f"front routes a reader to it")
+
+    # A post whose kind tag was dropped looks exactly like one that never had a kind: the vertical
+    # still routes it and it reads perfectly, but every news/evergreen listing silently omits it.
+    sent_tags = payload.get(KIND_REST_BASE)
+    if sent_tags:
+        stored_tags = post.get("tags")
+        try:
+            same = (sorted(int(t) for t in (stored_tags or []))
+                    == sorted(int(t) for t in sent_tags))
+        except (TypeError, ValueError):
+            same = False
+        if not same:
+            problems.append(f"{KIND_REST_BASE}: sent tag(s) {list(sent_tags)}, CMS holds "
+                            f"{stored_tags!r} — the article carries no kind on the CMS")
     return problems
 
 
@@ -885,10 +977,12 @@ def verification_summary(payload: dict, post: dict, site_domain: str | None = No
     links = f", {internal_link_count(content, site_domain)} internal link(s)" if site_domain else ""
     vertical = (f", vertical term {', '.join(str(v) for v in payload[VERTICAL_TAXONOMY])}"
                 if payload.get(VERTICAL_TAXONOMY) else "")
+    kind = (f", kind tag {', '.join(str(t) for t in payload[KIND_REST_BASE])}"
+            if payload.get(KIND_REST_BASE) else "")
     return (f"title, {len(_plain_text(payload.get('excerpt')))}-char excerpt, "
             f"{len(_ld_blocks(content))} JSON-LD block(s), "
             f"{len(re.findall(r'<svg', content, re.I))} inline SVG(s), "
-            f"{len(content)} chars of body{links}{vertical}{featured}")
+            f"{len(content)} chars of body{links}{vertical}{kind}{featured}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1479,7 +1573,8 @@ def _served_bytes(url: str | None) -> tuple[bytes | None, str]:
 
 def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None = None,
              author_name: str | None = None, wp_factory=None, verify: bool = True,
-             live_ok: bool = False, vertical_override: str | None = None) -> dict:
+             live_ok: bool = False, vertical_override: str | None = None,
+             kind_override: str | None = None) -> dict:
     metadata = row.get("metadata") or {}
     row_vertical = (metadata.get("vertical") or (row.get("tags") or [""])[0])
     vertical = vertical_override or row_vertical
@@ -1525,6 +1620,28 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         vertical_term, vertical_note = resolve_vertical_term(wp, vertical, site["site_domain"])
         if vertical_note:
             vertical_notes.append(vertical_note)
+
+    # ── the kind, tagged on the destination ─────────────────────────────────────────────────────
+    # news / evergreen / review, as a WordPress tag. Unlike the vertical this is not required for
+    # reach — a post without it still routes and still renders — so the failure is quiet, which is
+    # exactly why it is resolved here, sent with the post and asserted on the read-back.
+    kind = (kind_override or kind_for_row(metadata) or "").strip().lower()
+    if kind_override and kind_override != kind_for_row(metadata):
+        print(f"  note    : tagging this article '{kind}' (--kind); the row says "
+              f"'{kind_for_row(metadata) or 'nothing'}'", file=sys.stderr)
+    kind_term: dict | None = None
+    kind_notes: list[str] = []
+    if not kind:
+        kind_notes.append("no kind recorded for this row (metadata.kind / archetype is absent) — "
+                          "nothing sent for it; pass --kind news|evergreen|review, and "
+                          "scripts/backfill_kind_tags.py tags the live archive from the artifacts")
+    elif dry_run:
+        kind_notes.append(f"kind '{kind}' — its tag on {site['site_domain']} is resolved at push "
+                          f"time (created there if absent); a dry run does not contact the CMS")
+    else:
+        kind_term, kind_note = resolve_kind_term(wp, kind)
+        if kind_note:
+            kind_notes.append(kind_note)
 
     # Internal links first: they are part of the body that goes to the CMS, and the row this run
     # pushes is the one the next run reads (scripts/internal_links.py). Best-effort — an article
@@ -1593,7 +1710,7 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
             print(f"! the pre-publish gate could not run ({exc}) — holding this article as a DRAFT "
                   f"rather than publishing un-evaluated text", file=sys.stderr)
 
-    payload, notes = build_payload(row, site, publisher_name, author_name, vertical_term)
+    payload, notes = build_payload(row, site, publisher_name, author_name, vertical_term, kind_term)
     if gate_status:
         payload["status"] = gate_status              # the gate's decision, not the default
     if payload.get(VERTICAL_TAXONOMY) and payload["status"] == "publish":
@@ -1602,13 +1719,15 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         # an operator watching one request per article would otherwise read two writes as a retry.
         notes.append(f"published in two calls: WordPress attaches the {VERTICAL_TAXONOMY} term after "
                      f"the status filter, so a one-shot publish would be held as a draft")
-    notes = vertical_notes + links_notes + gate_notes + notes
+    notes = vertical_notes + kind_notes + links_notes + gate_notes + notes
 
     print(f"\n  article : {payload['title']}")
     print(f"  slug    : {payload['slug']}   (idempotency key)")
     print(f"  vertical: {vertical}  ->  {site['site_domain']}  ({site['cms_base_url']})"
           + (f"  |  {VERTICAL_TAXONOMY} term {vertical_term['id']}" if vertical_term
-             else f"  |  no {VERTICAL_TAXONOMY} term sent"))
+             else f"  |  no {VERTICAL_TAXONOMY} term sent")
+          + (f"  |  kind '{kind}' (tag {kind_term['id']})" if kind_term
+             else f"  |  kind '{kind}' (no tag sent)" if kind else "  |  no kind recorded"))
     print(f"  excerpt : {len(payload['excerpt'])} chars | {payload['excerpt'][:72]}…")
     print(f"  content : {len(payload['content'])} chars HTML | status={payload['status']}")
     for note in notes:
@@ -1701,6 +1820,10 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
         # `vertical` is recorded next to it rather than instead of it).
         "vertical": vertical,
         "vertical_term_id": int(vertical_term["id"]) if vertical_term else None,
+        # The kind the CMS accepted, so an audit can tell a post that carries its news/evergreen tag
+        # from one that was pushed before kinds existed (both render the same on a reader page).
+        "kind": kind or None,
+        "kind_term_id": int(kind_term["id"]) if kind_term else None,
         # An editor's per-post taxonomy call survives the push. Without this the record rebuild
         # dropped `category_id`, and the NEXT --refresh filed the post back under the vertical's
         # default category (observed 2026-10-24 on the nonrenewal piece: Home Cost Decisions ->
@@ -1744,7 +1867,8 @@ def push_one(row: dict, db, *, dry_run: bool = False, publisher_name: str | None
 def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None = None,
                  author_name: str | None = None, wp_factory=None, db=None,
                  verify: bool = True, live_ok: bool = False,
-                 vertical_override: str | None = None) -> dict:
+                 vertical_override: str | None = None,
+                 kind_override: str | None = None) -> dict:
     """Push one article by its Supabase slug. The single entry point used by both this CLI and
     scripts/publish.py, so the in-run hook and a manual re-run share one code path."""
     db = db or Supabase(*supabase_config())
@@ -1753,7 +1877,7 @@ def push_by_slug(slug: str, *, dry_run: bool = False, publisher_name: str | None
         raise RuntimeError(f"no row in public.{ARTICLES_TABLE} with metadata.slug '{slug}'")
     return push_one(rows[0], db, dry_run=dry_run, publisher_name=publisher_name,
                     author_name=author_name, wp_factory=wp_factory, verify=verify, live_ok=live_ok,
-                    vertical_override=vertical_override)
+                    vertical_override=vertical_override, kind_override=kind_override)
 
 
 def retitle_slug(slug: str, *, db=None, title: str | None = None) -> dict:
@@ -1889,6 +2013,12 @@ def main() -> int:
                              "(public.vertical_sites) and the CMS taxonomy term the reader fronts "
                              "route on, so an unknown one fails loudly rather than defaulting. "
                              "Single-article runs only (--slug/--reimage)")
+    parser.add_argument("--kind", default=None, choices=list(KINDS),
+                        help="With --slug: tag the post as this article kind (news / evergreen / "
+                             "review) instead of the one metadata.kind on the row declares. The tag "
+                             "is the reader-facing classification; the vertical stays the routing. "
+                             "Single-article runs only — one article's kind must not become "
+                             "another's")
     parser.add_argument("--reconcile-media", action="store_true",
                         help="Reconcile existing posts that have no featured image attached in the CMS "
                              "yet, but now have a staged or recorded illustration ready")
@@ -1901,6 +2031,9 @@ def main() -> int:
         # routing decision must not become another's. Single-article runs only.
         parser.error("--vertical names one vertical for one article — use it with --slug, "
                      "not with --all/--refresh/--reconcile-media")
+    if args.kind and not args.slug:
+        parser.error("--kind names one kind for one article — use it with --slug, not with "
+                     "--all/--refresh/--reconcile-media")
 
     limit = args.limit if args.limit is not None else (None if (args.refresh or args.reconcile_media) else 1)
     db = Supabase(*supabase_config())
@@ -1955,7 +2088,8 @@ def main() -> int:
             result = push_by_slug(args.slug, dry_run=args.dry_run, publisher_name=args.publisher_name,
                                   author_name=args.author_name, db=db, verify=not args.no_verify,
                                   live_ok=args.refresh_live,
-                                  vertical_override=args.vertical_override)
+                                  vertical_override=args.vertical_override,
+                                  kind_override=args.kind)
         except Exception as exc:                       # rule 6: surface it, never a silent skip
             print(f"\n  FAILED {args.slug}: {exc}", file=sys.stderr)
             return 1

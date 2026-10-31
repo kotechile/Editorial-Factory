@@ -83,6 +83,11 @@ class StubWP(BaseHTTPRequestHandler):
         31: {"id": 31, "slug": "supplier_risk_reshoring_decision",
              "name": "supplier_risk_reshoring_decision"},
     }
+    # post_tag: where the article KIND (news / evergreen / review) is carried. Empty by default so a
+    # test can pin the create-on-demand path; `tag_assignment = False` models a CMS that drops the
+    # field on save (the read-back's job to catch, exactly as for vertical).
+    tag_terms: dict[str, dict] = {}
+    tag_assignment = True
 
     def log_message(self, *args):                 # keep the test output readable
         pass
@@ -143,6 +148,16 @@ class StubWP(BaseHTTPRequestHandler):
             if StubWP.vertical_taxonomy:
                 found["vertical"] = {"rest_base": "vertical"}
             return self._send(200, found)
+        if self.path.startswith("/wp-json/wp/v2/tags"):
+            terms = sorted(StubWP.tag_terms.values(), key=lambda t: t["id"])
+            if "slug=" in self.path:
+                wanted = self.path.split("slug=")[1].split("&")[0]
+                terms = [t for t in terms if t["slug"] == wanted]
+            fields = self.path.split("_fields=")[1] if "_fields=" in self.path else ""
+            if fields:
+                keep = [f for f in fields.split(",") if f]
+                terms = [{k: v for k, v in t.items() if k in keep} for t in terms]
+            return self._send(200, terms)
         if self.path.startswith("/wp-json/wp/v2/vertical"):
             if not StubWP.vertical_taxonomy:
                 return self._send(404, {"code": "rest_no_route",
@@ -237,6 +252,8 @@ class StubWP(BaseHTTPRequestHandler):
         StubWP.requests.append(("POST", self.path, body))
         if not StubWP.vertical_assignment:
             body.pop("vertical", None)       # a CMS that accepts the taxonomy field and drops it
+        if not StubWP.tag_assignment:
+            body.pop("tags", None)           # same shape of gap, one taxonomy over
         if StubWP.vertical_guard and body.get("status") == "publish":
             # The destination decides a post's status inside wp_insert_post_data, and its vertical
             # guard holds a publish it cannot see a vertical FOR as a draft. WordPress runs that
@@ -252,6 +269,15 @@ class StubWP(BaseHTTPRequestHandler):
         if StubWP.sanitize:
             body["content"] = re.sub(r"<script[^>]*>.*?</script>", "", body.get("content") or "", flags=re.S)
             body["content"] = re.sub(r"<svg\b.*?</svg>", "", body["content"], flags=re.S | re.I)
+        if self.path == "/wp-json/wp/v2/tags":
+            # post_tag is writable with the same app password the push holds (unlike `vertical`);
+            # WordPress answers 201 with the created term.
+            if str(body.get("slug") or "") in {t["slug"] for t in StubWP.tag_terms.values()}:
+                return self._send(400, {"code": "term_exists", "message": "A term with the name provided already exists."})
+            term = {"id": 900 + len(StubWP.tag_terms) + 1, "slug": body.get("slug"),
+                    "name": body.get("name") or body.get("slug"), "taxonomy": "post_tag"}
+            StubWP.tag_terms[str(term["id"])] = term
+            return self._send(201, term)
         if self.path == "/wp-json/wp/v2/posts":
             post_id = str(100 + len(StubWP.posts) + 1)
             post = {"id": post_id, "slug": body["slug"], "status": body["status"],
@@ -531,6 +557,45 @@ check("...and reported in the notes", any("vertical taxonomy: term 31" in n for 
 check("no term resolved => nothing is sent for it (never a guessed id)",
       "vertical" not in wd.build_payload(ROW, SITE)[0])
 
+print("\nkind — the news / evergreen / review tag on the CMS post")
+# The vertical decides WHERE a post goes; the kind says WHAT it is, and a post without it still
+# routes and still renders — so nothing downstream would notice it missing. Sent as the post_tag
+# taxonomy's own REST field (`tags`), resolved or created per destination, and read back.
+KIND_TERM = {"id": 61, "slug": "evergreen", "name": "Evergreen"}
+payload_with_kind, notes_with_kind = wd.build_payload(ROW, SITE, kind_term=KIND_TERM)
+check("a resolved kind is sent as the destination's tag taxonomy field",
+      payload_with_kind.get("tags") == [61], str(payload_with_kind.get("tags")))
+check("...and reported in the notes", any("post_tag tag: term 61" in n for n in notes_with_kind),
+      str(notes_with_kind))
+check("no kind resolved => nothing is sent for it (never a guessed tag)",
+      "tags" not in wd.build_payload(ROW, SITE)[0])
+check("the verification reads the tag back, not assumes it",
+      any("tags" in p for p in wd.delivery_problems(
+          payload_with_kind,
+          {"id": 101, "status": "publish", "title": {"raw": payload_with_kind["title"]},
+           "excerpt": {"raw": payload_with_kind["excerpt"]},
+           "content": {"raw": payload_with_kind["content"]}, "tags": []})),
+      "a dropped tag was not reported")
+check("...and passes when the CMS holds it",
+      not [p for p in wd.delivery_problems(
+          payload_with_kind,
+          {"id": 101, "status": "publish", "title": {"raw": payload_with_kind["title"]},
+           "excerpt": {"raw": payload_with_kind["excerpt"]},
+           "content": {"raw": payload_with_kind["content"]}, "tags": [61]}) if "tags" in p])
+
+print("\nkind — where the row's kind comes from")
+check("metadata.kind is the first source", wd.kind_for_row({"kind": "news"}) == "news")
+check("...then the evergreen fleet's archetype marker",
+      wd.kind_for_row({"archetype": "evergreen"}) == "evergreen")
+check("...then archetype: review", wd.kind_for_row({"archetype": "review"}) == "review")
+check("an unknown marker is not coerced into a kind",
+      wd.kind_for_row({"archetype": "citation_hub", "kind": "feature"}) == "",
+      wd.kind_for_row({"archetype": "citation_hub"}))
+check("a row with no marker sends nothing (reported, never guessed)",
+      wd.kind_for_row({}) == "")
+raises("a kind outside the closed vocabulary is refused, not written as a tag",
+       lambda: wd.resolve_kind_term(None, "trending"), "not an article kind")
+
 check("the verification reads the vertical back, not assumes it",
       any("vertical" in p for p in wd.delivery_problems(
           payload_with_vertical,
@@ -617,6 +682,35 @@ try:
               if m == "POST" and path.startswith("/wp-json/wp/v2/posts")]
     check("...while a destination with no vertical taxonomy publishes in one call",
           len(writes) == 1 and writes[0].get("status") == "publish", str(writes)[:160])
+
+    # The kind tag, end to end: a row that declares its kind gets the tag created on the destination
+    # (post_tag is writable with the same app password) and the tag carried on the post.
+    StubWP.posts, StubWP.requests, StubWP.tag_terms = {}, [], {}
+    StubWP.vertical_taxonomy, StubWP.vertical_guard, StubWP.tag_assignment = True, True, True
+    kind_row = {**ROW, "metadata": {**ROW["metadata"], "kind": "evergreen"}}
+    kgdb = FakeDB()
+    wd.push_one(kind_row, kgdb, wp_factory=lambda b, u, p: wpq)
+    creates = [b for m, path, b in StubWP.requests
+               if m == "POST" and path == "/wp-json/wp/v2/tags"]
+    check("a kind with no term on the destination is created there, once",
+          [c.get("slug") for c in creates] == ["evergreen"], str(creates)[:200])
+    kpost = StubWP.posts[list(StubWP.posts)[-1]]
+    check("...and the post is tagged with it", kpost.get("tags") == [901], str(kpost.get("tags")))
+    check("...and the row records the kind beside the vertical",
+          kgdb.recorded[-1]["record"].get("kind") == "evergreen"
+          and kgdb.recorded[-1]["record"].get("kind_term_id") == 901,
+          json.dumps(kgdb.recorded[-1]["record"])[:200])
+    checked = wd.delivery_problems(wd.build_payload(kind_row, SITE, kind_term={
+        "id": 901, "slug": "evergreen"})[0], wpq.read_back(kpost["id"]))
+    check("...and the read-back accepts it", not [p for p in checked if "tags" in p], str(checked)[:200])
+
+    StubWP.tag_terms, StubWP.tag_assignment = {}, False
+    StubWP.posts, StubWP.requests = {}, []
+    dropped = wd.push_one(kind_row, FakeDB(), wp_factory=lambda b, u, p: wpq)
+    check("a CMS that drops the tag on save is caught by the read-back",
+          any("tags" in p for p in dropped.get("problems") or []),
+          str(dropped.get("problems"))[:200])
+    StubWP.tag_assignment = True
     StubWP.vertical_taxonomy, StubWP.vertical_guard = True, False
 finally:
     gserver.shutdown()

@@ -142,7 +142,8 @@ from the same sentence ("two 10-Ah batteries") and put the wording in the `Measu
 
 - Draft with `skills/story_draft.md` (the shape rules in `context/article_shape.json` apply fleet-wide:
   one figure stated once, a decision link at the close, no figure repeated across sections).
-- Frontmatter carries `archetype: review` and `format: quick_review|comparison`.
+- Frontmatter carries `kind: review`, `archetype: review` and `format: quick_review|comparison`.
+  `kind` is the tag the push puts on the CMS post (`scripts/wp_draft.py resolve_kind_term`).
 - Link the vertical's calculator in the verdict block — the review is the top of that funnel, the
   calculator is the bottom.
 - Persist with `python3 scripts/publish.py context/drafts/<slug>_final.md`; the CMS draft, the

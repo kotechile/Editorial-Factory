@@ -129,6 +129,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 ---
 title: <short punchy initial headline>
 vertical: <id>
+kind: news            # news | evergreen | review — what the CMS push TAGS the post with
 persona: <id from context/personas.json>
 one_big_thing: "<single most important takeaway or decision>"
 date: YYYY-MM-DD

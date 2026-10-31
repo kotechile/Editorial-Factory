@@ -772,9 +772,14 @@ LinkedIn variant) and adds two frontmatter flags so the reader surfaces and the 
 apart from a news piece:
 
 ```yaml
+kind: evergreen
 archetype: evergreen
 evergreen: true
 ```
+
+`kind` is the one the reader-facing tag is built from (`scripts/wp_draft.py resolve_kind_term`
+creates the `evergreen` tag on the destination if it is absent); `archetype`/`evergreen` stay as the
+internal markers the gates read. The news fleet writes `kind: news`, the review fleet `kind: review`.
 
 **The rewrite can keep a figure in the TL;DR after deleting the body sentence that established it — an unsupported claim in the summary, invisible to every gate (learned 2026-10-24).** On the snow-mat evergreen the frontier pass cut 1,181 words to 814 and, in the process, dropped the $21,500 capital calculation, the $1,075 mat price and the tire-track positioning from the body — while the `## At a glance` block it kept still said "$21,500". `article_shape` counts a figure once per section, the accessibility floor reads word lengths, `source_gate` only checks that some cited page carries the number, and the voice check reads tone, so nothing flags a summary claim whose warrant is gone. After every rewrite, read the TL;DR and check each of its figures against the rebuilt body, not against the draft. The same run's pass also invented a trend in the lead ("Homeowners are changing how they clear snow"), renamed "embedded system" to "poured system", turned a 13-amp power-unit cap into a "standard plug" limit and reported a 14.5-cent charge as "pennies" — so diff the body's nouns and its named actor against the verified brief, not only its digits.
 

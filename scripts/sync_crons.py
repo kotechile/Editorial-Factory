@@ -236,7 +236,9 @@ def prompt_for(v):
         f"published log, Supabase and the sitemap, then flip the run-log row in "
         f"context/content_calendar.md. Persistence to the reader site (giniloh.com / wellroost.com, "
         f"via the CMS) + Supabase is NOT approval-gated, and the CMS draft push is part of the same "
-        f"pass. There is no social distribution step: the LinkedIn and Reddit channels were removed "
+        f"pass. The draft must carry `kind: news` in its frontmatter — the push tags the CMS post "
+        f"with it, so a news piece is filterable as news rather than mistaken for a durable one. "
+        f"There is no social distribution step: the LinkedIn and Reddit channels were removed "
         f"by the owner on 2026-10-06, so write no LinkedIn/Reddit copy and queue nothing. Write "
         f"artifacts to context/recon_proposals/ and context/drafts/."
     )
@@ -277,9 +279,9 @@ def evergreen_prompt_for(v):
         f"Supabase and the sitemap, then flip the run-log row in context/content_calendar.md. "
         f"Persistence to the reader site + Supabase is NOT approval-gated, and there is no social "
         f"distribution step (the LinkedIn and Reddit channels were removed by the owner on "
-        f"2026-10-06). The draft must carry `archetype: evergreen` and "
-        f"`evergreen: true` in its frontmatter. Write artifacts to context/recon_proposals/ and "
-        f"context/drafts/."
+        f"2026-10-06). The draft must carry `kind: evergreen`, `archetype: evergreen` and "
+        f"`evergreen: true` in its frontmatter — `kind` is the tag the push puts on the CMS post. "
+        f"Write artifacts to context/recon_proposals/ and context/drafts/."
     )
 
 
@@ -315,7 +317,7 @@ def review_prompt_for(v):
         f"marker that scripts/verify.sh reads — re-run it after changing a row. A run where no "
         f"product set clears the gate returns \"no publish\" and says why; that is a legitimate "
         f"outcome, never pad it with an unsourced price. Only then does the brief go to fact_check -> "
-        f"story_draft -> claude_humanizer, carrying `archetype: review` and "
+        f"story_draft -> claude_humanizer, carrying `kind: review`, `archetype: review` and "
         f"`format: quick_review|comparison` in the frontmatter, the mandatory 'what we did not test' "
         f"paragraph, and no Review/AggregateRating schema (we cannot rate hardware we did not test). "
         f"Link the vertical's calculator in the verdict block. When the article clears verification "

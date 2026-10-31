@@ -270,6 +270,45 @@ def apply_internal_links(content: str, enabled: bool = True) -> tuple[str, list[
                          f"`python3 scripts/internal_links.py <artifact> --apply`"]
 
 
+KINDS = ("news", "evergreen", "review")
+
+
+def derive_kind(frontmatter: dict, news_brief: bool = False) -> str:
+    """The article's kind — `news`, `evergreen` or `review` ("" when the artifact does not say).
+
+    ONE rule, shared by the persistence pass and scripts/backfill_kind_tags.py, because a row and the
+    live post it produced must agree:
+
+      1. an explicit `kind:` (what the three fleet prompts require from 2026-10-31 on);
+      2. `archetype: evergreen|review` — the marker those two fleets always required;
+      3. `evergreen: true`, the older flag beside it;
+      4. `news_brief=True` — the caller found the news fleet's own brief for this date and vertical
+         (`context/recon_proposals/<date>_<vertical>_signals.md`). Only the news fleet writes a
+         `_signals.md`; the other two write `_evergreen_brief.md` / `_review_brief.md`.
+
+    Nothing else is inferred. An artifact carrying none of these returns "" and goes up untagged with
+    the push reporting it: the tag is a classification someone may filter on, so a wrong one is worse
+    than an absent one.
+    """
+    explicit = str(frontmatter.get("kind") or "").strip().lower()
+    if explicit in KINDS:
+        return explicit
+    archetype = str(frontmatter.get("archetype") or "").strip().lower()
+    if archetype in KINDS:
+        return archetype
+    if str(frontmatter.get("evergreen") or "").strip().lower() in ("true", "1", "yes"):
+        return "evergreen"
+    return "news" if news_brief else ""
+
+
+def news_brief_exists(date_str: str, vertical: str) -> bool:
+    """Did the news fleet write its own brief for this date+vertical? Its only marker."""
+    if not date_str or not vertical:
+        return False
+    return os.path.exists(os.path.join(REPO_ROOT, "context", "recon_proposals",
+                                       f"{date_str}_{vertical}_signals.md"))
+
+
 def parse_draft(file_path: str, illustrate: bool = True, pinned_style: str | None = None,
                 pinned_model: str | None = None, links: bool = True):
     with open(file_path, "r", encoding="utf-8") as f:
@@ -408,6 +447,10 @@ def parse_draft(file_path: str, illustrate: bool = True, pinned_style: str | Non
         "title": title,
         "slug": slug,
         "vertical": vertical,
+        # news / evergreen / review, from the artifact's own frontmatter. It is what the CMS push
+        # tags the post with (scripts/wp_draft.py resolve_kind_term) and what the row's metadata
+        # declares, so an audit can classify the archive without re-reading 200 artifacts.
+        "kind": derive_kind(frontmatter, news_brief=news_brief_exists(date_str, vertical)),
         "persona": persona,
         "date": date_str,
         "status": status,
@@ -541,6 +584,10 @@ def sync_to_supabase(data: dict, live_urls: dict):
         "article_url": (data.get("article_url") or live_urls.get("article_url", "")) or None,
         "promo_url": (data.get("promo_url") or live_urls.get("promo_url", "")) or None,
     }
+    # The kind is only written when the artifact declared one — an absent key is a gap the push
+    # reports, while `kind: null` reads as a classification that was made and came out empty.
+    if data.get("kind"):
+        metadata["kind"] = data["kind"]
     if clean_seo:
         metadata["seo"] = clean_seo
     # The featured image's brief (scripts/illustration_creator.py): the CMS push reads the staged
