@@ -1,0 +1,115 @@
+{
+  "slug": "why-37667-snow-throwers-failed-winter",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy-duty black power cord with a cracked outer jacket resting on a concrete floor.",
+      "caption": "The market rates battery packs for extreme cold, but the physical power cord remains an unrated failure point.",
+      "title": "Cracked power cord on concrete",
+      "bytes": 392549,
+      "sha256": "sha256:d680df9f7bfcbac13653bebf7814db73"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A studio product photograph of a heavy-duty black polymer power cord with a visibly cracked outer jacket, resting coiled on a textured slate grey concrete garage floor. Asymmetric composition with the damaged cord positioned off-centre. Single directional softbox key light from the left throwing a long cast contact shadow across the surface. Charcoal, slate grey, and bone white palette. Shallow depth of field, catalogue clarity, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, text, numbers, logos, typography, printed words",
+  "rationale": "The story centers on a specific, purchasable physical product component that failed\u2014a power cord. The studio object treatment allows for a clear, clinical examination of this failure point in a grounded environment.",
+  "cue": "cord breaks in the cold",
+  "subject": "a thick black power cord with a cracked outer jacket",
+  "core_thesis": "While the industry boasts extreme cold ratings for battery packs, it neglects the power cord, resulting in a massive recall of corded snow throwers that break in the freezing temperatures.",
+  "core_conflict": "Rated battery specifications versus unrated, failing physical power cords in extreme cold.",
+  "composition": "Asymmetric composition",
+  "alt_text": "A coiled black power cord with a cracked jacket exposing bare copper wire on a concrete floor.",
+  "caption": "The part of a winter machine that carries no cold rating, photographed on a concrete driveway.",
+  "title": "Why Snow Throwers Fail In Cold",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "studio_object",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/why-37667-snow-throwers-failed-winter/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 371372,
+  "sha256": "sha256:d90ddf5e84d8c9b577767f748b46b76ec776be3b7ac7359695a67e0f4b00afab",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 371372,
+    "quality": 80,
+    "sha256": "sha256:d90ddf5e84d8c9b577767f748b46b76ec776be3b7ac7359695a67e0f4b00afab",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9df6c67005e6adfd5de79cb3be3a345eeeefc34edc742fcf520ed49e3d112a37",
+  "render_phash": "ff22fff0fff3fff8fe2f7925fbc3f67158736f83304f8c0783e3c032f00ef004",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A coiled black power cord with a cracked and broken outer jacket exposing the inner wires, resting on a concrete surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a cracked power cord, which directly relates to the article's mention of corded snow throwers being recalled because their cords break in the cold."
+  },
+  "source_hash": "sha256:22d9ceb00cbc157c00fe956e7f5e93d0",
+  "source_chars": 4413,
+  "task_id": "4c8b07d5a6a0d6895203a4e77b93ac40",
+  "credits": 5.0,
+  "cost_ms": 144,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4c8b07d5a6a0d6895203a4e77b93ac40_1793445749184.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A studio product photograph of a heavy-duty black polymer power cord with a visibly cracked outer jacket, resting coiled on a textured slate grey concrete garage floor. Asymmetric composition with the damaged cord positioned off-centre. Single directional softbox key light from the left throwing a long cast contact shadow across the surface. Charcoal, slate grey, and bone white palette. Shallow depth of field, catalogue clarity, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-31T11:22:41+00:00",
+  "overlay": {
+    "kicker": "OUTDOOR POWER // COLD WEATHER SPECS",
+    "title": "WHY SNOW THROWERS FAIL IN COLD",
+    "hook": "Extreme cold exposes a missing spec in winter equipment",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.94,
+    "target": 4.5,
+    "clutter": 0.179,
+    "region_rgb": [
+      52,
+      54,
+      55
+    ],
+    "binding_rgb": [
+      79,
+      80,
+      84
+    ],
+    "title_lines": [
+      "WHY SNOW THROWERS",
+      "FAIL IN COLD"
+    ],
+    "subject": 0.016,
+    "ink_subject": 0.006,
+    "spike": 0.053,
+    "generated_at": "2026-10-31T11:22:41+00:00"
+  }
+}

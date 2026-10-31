@@ -14,6 +14,12 @@ meta_title: "Why 37,667 Snow Throwers Failed Winter"
 meta_title_source: "derived_from_title"
 meta_description: "The outdoor power maker STIHL (of Virginia Beach) put a number on winter on 2026-10-21. Its first snow thrower, the company said, is rated for use in outdoor…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/why-37667-snow-throwers-failed-winter/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "A coiled black power cord with a cracked jacket exposing bare copper wire on a concrete floor."
+image_caption: "The part of a winter machine that carries no cold rating, photographed on a concrete driveway."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -55,6 +61,16 @@ Both records are thin in the same spot. STIHL's -4°F is a maker's claim tied to
 
 I could be wrong about where this lands, but the rate argues for calm. Nineteen cord reports against 37,667 units is a small share, and a report is not a failure count. What the week does settle is narrower: the part of an electric snow machine built for cold is the part with a spec, and the part without one is the part that reached a safety agency.
 
+
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** Snow gear now prints a cold rating; corded machines are recalled for cords that fail in it.
+**The number:** 37,667 throwers pulled in Canada, five days after a rival's -4°F rating.
+**The risk:** The rating covers a tool-and-pack pair with no stated test.
+
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -67,14 +83,6 @@ I could be wrong about where this lands, but the rate argues for calm. Nineteen 
 - [Your Mat Costs 50 Blower Charges](/your-heated-mat-costs-50-times-the-blower/) — more on Outdoor Power & Snow Equipment
 - [Outdoor Power & Snow Equipment](/categories/outdoor-power-equipment/) — more on Outdoor Power & Snow Equipment
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** Snow gear now prints a cold rating; corded machines are recalled for cords that fail in it.
-**The number:** 37,667 throwers pulled in Canada, five days after a rival's -4°F rating.
-**The risk:** The rating covers a tool-and-pack pair with no stated test.
 
 ## Sources
 
