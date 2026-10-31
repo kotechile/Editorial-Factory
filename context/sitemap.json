@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T18:51:30Z",
+  "updated_at": "2026-10-31T19:16:58Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4711,6 +4711,23 @@
         "The catch:",
         "At a glance",
         "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-10-31",
+      "public": false
+    },
+    {
+      "slug": "2026-10-31_your-pack-delivers-half-at-18c",
+      "title": "Your Pack Halves at -18\u00b0C",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance"
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",

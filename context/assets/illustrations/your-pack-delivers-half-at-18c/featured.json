@@ -1,0 +1,120 @@
+{
+  "slug": "your-pack-delivers-half-at-18c",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heavy-duty snow blower battery pack with visible frost on a concrete garage floor under harsh directional light.",
+      "caption": "A battery pack left in an unheated garage loses half its capacity to the cold before the snow blower even starts.",
+      "title": "snow-blower-battery-cold-capacity",
+      "bytes": 317424,
+      "sha256": "sha256:09766c1533a9fd0e874051bfe063d01e"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A frost-covered snow blower battery pack beside a second pack on a cracked concrete garage floor.",
+      "caption": "The Winter Battery Penalty: Why cold air cuts your snow blower capacity in half.",
+      "title": "The Winter Battery Penalty",
+      "bytes": 362281,
+      "sha256": "sha256:87515acd90a6d208ebf38b3cebef6823881e3dc13607226dc36fdb6711f65bd8"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm look. A heavy-duty snow blower battery pack covered in light frost resting on a weathered concrete floor in an unheated garage, next to a matte graphite charger. Extreme asymmetry with the hero object commanding the lower third. Crisp atmospheric depth with a restrained teal-and-amber palette, bone white, slate grey, and deep pine green. A single strong practical light source from the left casts deep contact shadows, highlighting the textured matte polymers of the pack against the freezing environment. Shallow depth of field, fine film grain, no text, no logos.",
+  "negative_prompt": "text, letters, numbers, watermark, garbled text, logos, UI, people",
+  "rationale": "A cinematic still perfectly captures the environmental tension of an unheated garage in winter, emphasizing the freezing atmosphere that cripples the battery's chemical capacity.",
+  "cue": "Your Pack Halves at -18\u00b0C",
+  "subject": "a heavy-duty snow blower battery pack covered in light frost on a concrete garage floor",
+  "core_thesis": "A snow blower pack delivers about half its rated capacity at -18\u00b0C, making winter runtime a temperature problem before it is a capacity problem.",
+  "core_conflict": "Cold chemistry vs rated capacity",
+  "composition": "extreme asymmetry with the hero object commanding the lower third",
+  "alt_text": "The Winter Battery Penalty. A frost-covered snow blower battery pack beside a second pack on a cracked concrete garage floor.",
+  "caption": "The Winter Battery Penalty: Why cold air cuts your snow blower capacity in half.",
+  "title": "The Winter Battery Penalty",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-pack-delivers-half-at-18c/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 362281,
+  "sha256": "sha256:87515acd90a6d208ebf38b3cebef6823881e3dc13607226dc36fdb6711f65bd8",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 362281,
+    "quality": 88,
+    "sha256": "sha256:87515acd90a6d208ebf38b3cebef6823881e3dc13607226dc36fdb6711f65bd8",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:374a074f03986e89647f3e9bc3e98d4db3728b3b2fdf8f1b68d8b61b7257e3fd",
+  "render_phash": "fc5efc766c5ffcefcc6f8c7b10bf09ff37993799b438371fbc011e7827e160e3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A black rectangular battery pack with frost on it sits on a concrete floor next to a charger.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows a frosted battery pack, which aligns with the article's focus on cold weather effects on snow blower batteries."
+  },
+  "source_hash": "sha256:3eaeaf65945873209728c322d921bb9f",
+  "source_chars": 4265,
+  "task_id": "6396ec77e211f2d8961b41db89038d45",
+  "credits": 5.0,
+  "cost_ms": 111,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/6396ec77e211f2d8961b41db89038d45_1793474149823.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm look. A heavy-duty snow blower battery pack covered in light frost resting on a weathered concrete floor in an unheated garage, next to a matte graphite charger. Extreme asymmetry with the hero object commanding the lower third. Crisp atmospheric depth with a restrained teal-and-amber palette, bone white, slate grey, and deep pine green. A single strong practical light source from the left casts deep contact shadows, highlighting the textured matte polymers of the pack against the freezing environment. Shallow depth of field, fine film grain, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-10-31T19:15:59+00:00",
+  "overlay": {
+    "kicker": "OUTDOOR POWER // WINTER BATTERIES",
+    "title": "THE WINTER BATTERY PENALTY",
+    "hook": "Why cold air cuts your snow blower capacity in half",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 7.01,
+    "target": 4.5,
+    "clutter": 0.148,
+    "region_rgb": [
+      46,
+      59,
+      59
+    ],
+    "binding_rgb": [
+      70,
+      82,
+      80
+    ],
+    "title_lines": [
+      "THE WINTER",
+      "BATTERY PENALTY"
+    ],
+    "subject": 0.004,
+    "ink_subject": 0.002,
+    "spike": 0.011,
+    "generated_at": "2026-10-31T19:15:59+00:00"
+  }
+}
