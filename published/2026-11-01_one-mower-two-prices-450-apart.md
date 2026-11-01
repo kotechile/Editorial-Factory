@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/one-mower-two-prices-450-apart/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Kress Mower'S $450 Price Gap. Two identical robotic lawn mower chassis modules rendered in matte clay, with one elevated on a mounting"
-image_caption: "Kress Mower'S $450 Price Gap: How to secure the lowest price on your half-acre robot."
+image_alt: "Two clay-rendered robotic mower chassis on a steel bench, one raised on a plinth, standing in for one model sold at two prices."
+image_caption: "The Kress KR172 price gap: one robot mower listed at two prices on the maker's own site."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
