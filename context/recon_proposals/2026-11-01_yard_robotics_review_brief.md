@@ -85,5 +85,5 @@
 ## Gate result
 
 <!-- review-gate:start -->
-<!-- review-gate: helper=review_gate.py format=comparison rows=22 products=3 fetched=22 hosts=5 price_as_of=2026-11-01 checked_at=2026-11-01T14:06:30+00:00 -->
+<!-- review-gate: helper=review_gate.py format=comparison rows=22 products=3 fetched=22 hosts=5 price_as_of=2026-11-01 checked_at=2026-11-01T14:33:58+00:00 -->
 <!-- review-gate:end -->
