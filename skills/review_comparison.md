@@ -178,6 +178,9 @@ from the same sentence ("two 10-Ah batteries") and put the wording in the `Measu
 
 ## 8. Failure modes seen in this class
 
+- **A brief that quotes the banned hands-on phrases to forbid them fails its own gate (learned 2026-11-01, twice: the pressure-washer and borescope briefs).** Writing "no 'we tested', no 'in our tests'" into the honesty ruling puts the literal phrase in the file `HANDS_ON` scans, and the gate reports a claim the brief was prohibiting. Word the ruling as conduct — "no first-person testing voice; nothing may claim the desk tried or held the unit" — and never reproduce the phrase pattern, even inside quotation marks.
+- **A review's gate PASS at ~64% of the draft is a stripped article, not a tighter one (learned 2026-11-01, `your-149-99-scope-blinds-at-3-94`).** A 1,193-word draft came back at 768 words with Flesch 55.1 and `review_audit` PASS after the top price table, the verdict-by-situation table, the `## What we did not test` section and the vertical-hub link were all deleted, the lead lost the price its headline cites, the numbers bullets lost the price arithmetic, and one bullet asserted "none of these models can navigate a long duct run" when a camera in the table carries a 9.8 ft snake. Treat any review final under ~85% of the draft as a rebuild: keep the draft's skeleton, fold in only the rewrite's plainer sentences, then grep for the price table header, the situation table header, `/calculators/`, `/categories/`, `What we did not test` and the lead's own figures before re-running the gates.
+
 - **`article_reviewer.py` returns `ACCEPT  hard=0` on a review draft that has lost the two structures
   only this track requires (learned 2026-11-01, `one-mower-two-prices-450-apart`).** `review_audit`
   compares figures, citations, quotes and source lines; it does not know that a review must carry the
