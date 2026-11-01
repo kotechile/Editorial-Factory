@@ -223,6 +223,17 @@ from the same sentence ("two 10-Ah batteries") and put the wording in the `Measu
   only the opening paragraph, so a title reading "$49.97" over a lead that spends its first paragraph
   on the incident reports `lead_ok: False`, and the pre-publish gate may then re-cut the title. Put
   the price in paragraph one, or title the piece on the figure the incident itself carries.
+- **A brief that quotes the banned hands-on phrases fails the gate on its own honesty ruling.** The
+  `HANDS_ON` regex matches `hands-on` and `we tested` anywhere, including inside a ruling that forbids
+  them ("No hands-on language: no 'we tested', no 'our unit'"). A brief can therefore be fully sourced
+  and still FAIL on the sentence documenting the rule. Write the ruling as behaviour — "the article
+  must not imply use: no first-person claim that a unit was run, measured or tried" — never as a list of
+  the forbidden strings.
+- **A storefront that splits its price glyphs makes the literal price match the wrong card.** The
+  Greenworks product pages render "Sale price $ 349 . .99", so a brief row whose Figure is `$349.99`
+  matches a *related-product* card elsewhere on the page instead of the product's own price block, and
+  the citation silently points at a different SKU. Quote the SKU-and-discount line ("SKU 5128802 …
+  SAVE $150.00 (30%)") as the row's figure, and keep the price cell for the price table only.
 - **`humanize_one.py` timing out on attempt 2.** Its `call_gemini` carries a 240 s socket timeout, which a
   1,000-word rewrite with thinking exceeds; drive the draft from a per-draft script that rebinds the
   module-level `call_gemini` to 900 s (`claude_humanizer.md` §7) instead of re-running the stock script
