@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T14:13:46Z",
+  "updated_at": "2026-11-01T14:25:34Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4750,7 +4750,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-10-31",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-radon-test-39-isnt-a-pass/"
     },
     {
       "slug": "2026-10-31_your-standby-bill-hides-62-watts",
@@ -4806,7 +4807,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-01",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/one-mower-two-prices-450-apart/"
     }
   ]
 }

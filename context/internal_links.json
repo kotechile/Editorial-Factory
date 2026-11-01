@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T19:20:08+00:00",
+  "generated_at": "2026-11-01T14:19:08+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -356,7 +356,7 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Find out how much of your job AI can already do \u2014 1,000+ careers, broken down task by task. Then move the sliders and see what changing your week would do.",
+      "excerpt": "Find out how much of your job AI can already do \u2014 1,000+ careers, broken down task by task. Then hand tasks over and watch your week change.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -433,7 +433,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Hewlett-Packard (HP) bills the overage page, the one you print past your plan's cap, at $0.20 because the subscription stops paying once you top its monthly\u2026",
-      "modified": "2026-10-30T19:44:24",
+      "modified": "2026-10-31T04:34:59",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -452,7 +452,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The fast rung of the new federal exclusion costs 15.9 percent of the gain, because the taxed half is charged at a higher rate than an ordinary long-term gain.",
-      "modified": "2026-10-30T18:51:49",
+      "modified": "2026-10-31T04:35:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -471,7 +471,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The shares you have held for more than a year can leave your account as a charitable gift at their full market price.",
-      "modified": "2026-10-30T17:16:24",
+      "modified": "2026-10-31T04:35:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -566,7 +566,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "A UK resident who owns a US limited liability company (LLC) can be taxed twice on the same profits, and the government's own papers put the effective rate as\u2026",
-      "modified": "2026-10-29T12:58:08",
+      "modified": "2026-10-31T04:48:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -585,7 +585,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Your homelab's waste heat pays back about 45 cents on the dollar, and only while the house is being heated. An eight-bay storage box drawing 87.93 watts runs\u2026",
-      "modified": "2026-10-24T17:43:30",
+      "modified": "2026-10-31T04:48:17",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -604,7 +604,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Plex told home server owners to update on 2026-09-01. Public attack code for the same flaws landed 45 days later, on 2026-10-16.",
-      "modified": "2026-10-24T06:14:24",
+      "modified": "2026-10-31T04:48:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -623,7 +623,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "A new fridge carries a federal label promising about $150 in savings over twelve years, which breaks down to $12.50 a year.",
-      "modified": "2026-10-23T19:44:42",
+      "modified": "2026-10-31T04:48:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -642,7 +642,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The $125 exam fee is the smallest cost on the bill, because the real price of a new skill is your time. Six courses in Google's Information Technology (IT)\u2026",
-      "modified": "2026-10-23T18:41:07",
+      "modified": "2026-10-31T04:48:19",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -661,7 +661,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The 61-day window behind your loss harvest costs the position, not just the trade. The rule reaches back 30 days before the sale, so a purchase you made last\u2026",
-      "modified": "2026-10-23T17:17:19",
+      "modified": "2026-10-31T04:48:20",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -680,7 +680,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Apple asks $99 to swap a dead Watch battery, but bills $599 for any other service on a cellular Series 12. A new aluminum watch costs $399, so one\u2026",
-      "modified": "2026-10-23T12:48:25",
+      "modified": "2026-10-31T04:48:21",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -699,7 +699,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The tax-free swap died on September 28, when the Internal Revenue Service (IRS) ruled that moving low-basis stock into a new fund and passing it to a broker\u2026",
-      "modified": "2026-10-23T12:11:07",
+      "modified": "2026-10-31T04:48:21",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -718,7 +718,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Oracle added $700 million to a layoff plan on 11 September 2026, and 19 days later ElevenLabs closed a $300 million employee tender that let staff sell\u2026",
-      "modified": "2026-10-23T11:12:45",
+      "modified": "2026-10-31T04:48:21",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -737,7 +737,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Pick the foreign earned income exclusion and you kill the tax credit for foreign taxes paid on that exact slice of pay.",
-      "modified": "2026-10-22T19:44:13",
+      "modified": "2026-10-31T04:48:22",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -756,7 +756,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Argentina will now sell you a passport for $350,000. That cash buys a new nationality, but it does not buy you a home in Europe.",
-      "modified": "2026-10-22T12:42:08",
+      "modified": "2026-10-31T04:48:23",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -775,7 +775,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "35% of your hard drives are dead by year six. That is Backblaze's own finding from the fleet it runs, and it should decide your next homelab purchase.",
-      "modified": "2026-10-17T17:39:09",
+      "modified": "2026-10-31T04:48:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -794,7 +794,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The 2GB Raspberry Pi 5 jumps to $77.50 today, a $12.50 rise that breaks the cheap math of running an always-on box at home.",
-      "modified": "2026-10-17T06:15:32",
+      "modified": "2026-10-31T04:48:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -813,7 +813,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Your raise dies at about 51.5 hours a week. That is when the median computer and information systems manager, at $175,140 a year, drops back to the $65.38\u2026",
-      "modified": "2026-10-16T18:42:03",
+      "modified": "2026-10-31T04:48:34",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -832,7 +832,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Your equity payday at an initial public offering (IPO) is mostly a tax bill. One filing this month put a 47.7% number on it.",
-      "modified": "2026-10-16T11:10:20",
+      "modified": "2026-10-31T04:48:34",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -851,7 +851,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Moving abroad adds three required US forms, and missing just one costs $10,000. Not one of these forms bills you for tax.",
-      "modified": "2026-10-15T19:44:40",
+      "modified": "2026-10-31T04:48:35",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -870,7 +870,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "An hour of network admin work was worth $47.66 at the 2025 median wage. A year of managed email costs $60.",
-      "modified": "2026-10-10T18:25:31",
+      "modified": "2026-10-31T04:48:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -889,7 +889,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "The maker of Home Assistant announced a rename of its paid remote service, effective December 2. Home Assistant Cloud becomes Home Assistant Link.",
-      "modified": "2026-10-10T18:25:28",
+      "modified": "2026-10-31T04:48:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -908,7 +908,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "SpaceX workers get their next chance to sell today as 328.4 million shares \u2014 about 7% of the locked stock \u2014 open for trading.",
-      "modified": "2026-10-10T18:25:35",
+      "modified": "2026-10-31T04:48:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -927,7 +927,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Three months after a job ends, an incentive stock option loses its tax status \u2014 the alternative minimum tax on the exercise spread can outweigh the strike.",
-      "modified": "2026-10-10T16:51:58",
+      "modified": "2026-10-31T04:48:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -946,7 +946,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Two clocks dictate the true cost of moving abroad, and they rarely sync up: the US demands 330 full days overseas within a 12-month window to shield your\u2026",
-      "modified": "2026-10-08T22:27:58",
+      "modified": "2026-10-31T04:48:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -965,7 +965,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "On Sept. 23, Disney+ and Hulu pushed their ad-free streaming plans up 13 percent to $21.49 a month. This marks the fourth price hike in four years.",
-      "modified": "2026-10-02T01:58:29",
+      "modified": "2026-10-31T04:48:54",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -984,7 +984,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "More than 70% of vested startup stock options are never exercised, according to new data from Carta published Sept. 10.",
-      "modified": "2026-10-02T21:50:02",
+      "modified": "2026-10-31T05:02:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1003,7 +1003,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "For mid-career professionals, moving abroad is no longer a simple salary comparison. Expats must weigh a U.S. $200K tech salary against a \u20ac130K European offer, then factor in lower healthcare, education, and daily costs alongside dual-country taxation expats face, visa rules, and hidden relocation expenses. This guide cuts through the noise with a practical framework for expats Costa Rica, expats Germany, and other markets, helping you answer the critical question: is relocating for a job worth it? You will learn how to calculate true net cash flow, anticipate cross-border tax liabilities, and score cities on livability, career momentum, partner employment, schools, and community. The Expat Financial & International Tax Evaluator turns guesswork into a clear, personalized decision. Before you accept the offer, run the numbers, test the lifestyle trade-offs, and protect your long-term wealth. Your next move deserves evidence, not hope.",
-      "modified": "2026-09-14T01:16:38",
+      "modified": "2026-10-31T05:02:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1022,7 +1022,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "For many coffee enthusiasts, the decision to invest in a premium espresso maker machine is clouded by emotion and brand loyalty. A data-driven approach, however, reveals a surprising bottom line. Using the Giniloh Strategic Decision-Intelligence Engine, a detailed cost-per-use analysis of a $3,000 dual-boiler home espresso machine versus daily $6.00 caf\u00e9 lattes yields a clear verdict: buy the machine\u2014but only just. Over three years of five weekly drinks, the home setup costs $5.92 per use, saving a mere $60 compared to the caf\u00e9\u2019s $4,680 total. Hidden expenses like beans, milk, descaling, and maintenance push the total cost of ownership to $4,620, making this a borderline decision. The real value emerges when weekly usage increases, tipping the scales toward significant long-term savings. Before you swipe your card, run your own numbers: the difference between a rational investment and a costly impulse is just one calculation away.",
-      "modified": "2026-10-18T19:04:02",
+      "modified": "2026-10-31T05:02:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1041,7 +1041,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine your checking account drops to $500 after an unexpected car repair\u2014but within hours, an automatic sweep from your savings restores your floor, no manual intervention required. That\u2019s the power of the Giniloh Frictionless Money Flow Simulator, a hands-on tool that lets you practice real-life financial shocks in a risk-free environment. The emergency expense scenario, a core feature, demonstrates how setting a $1,500 checking floor paired with a $15,000 high-yield savings account triggers an automated rescue when an unplanned bill hits. You can run the simulation yourself using AI chat commands or manual UI configuration, then watch the cyan flow path and audit trail log confirm every transfer. This isn\u2019t static advice\u2014it\u2019s a live, repeatable drill that trains your system to protect against financial shocks and avoid high-interest debt, giving you confidence when real emergencies strike.",
-      "modified": "2026-10-18T19:04:08",
+      "modified": "2026-10-31T05:02:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1060,7 +1060,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Let\u2019s cut to the chase: a liquidity sweep isn\u2019t just random market noise\u2014it\u2019s where institutional players deliberately spike prices through stop-loss clusters to grab trapped liquidity. If you\u2019ve ever watched your stop get hit only for the market to reverse immediately, you\u2019ve seen one. Most traders never learn to spot them, let alone simulate scenarios before risking real capital. That\u2019s where this guide changes everything. You\u2019ll not only learn how to identify buy-side and sell-side sweeps using swing highs and lows, but you\u2019ll also get hands-on with the Giniloh Frictionless Money Flow Simulator\u2014a tool that lets you configure accounts, set up automated cash pipelines via natural language CLI, and step through daily clocks to watch sweeps unfold in real time. No more guessing. By the end, you\u2019ll have a repeatable, actionable framework to anticipate liquidity grabs and safeguard your positions.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1079,7 +1079,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine your income suddenly surges to $500 a day, your emergency fund is fully stocked at $15,000, and you carry zero high-interest debt. Where does every extra dollar go? The giniloh Money Flow Simulator answers that question with stunning clarity, turning abstract financial planning into a visual, real-time cascade. By simply setting your income and account ceilings\u2014via an AI chat command or a few clicks\u2014you watch surplus cash automatically bypass saturated reserves and flow into tax-advantaged accounts like your 401k, HSA, and Roth IRA. The true power emerges when these hit their annual limits; then, without any manual intervention, every remaining dollar dynamically overflows into a taxable brokerage account. With an audit trail logging each \u201coverbalance sweep,\u201d this simulation transforms a theoretical pay raise into a specific, actionable roadmap for wealth acceleration. It\u2019s not just a chart\u2014it\u2019s a live demonstration of how to make every surge work harder, before you ever see a real paycheck.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1098,7 +1098,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Worried robots are coming for your paycheck? You\u2019re not alone\u2014but the real story is far more hopeful. This guide cuts through the scare headlines to reveal exactly where smart, sustainable career opportunities exist right now. We\u2019ve curated a list of true ai proof jobs\u2014roles in healthcare, skilled trades, and cybersecurity that not only survive automation but thrive because of human judgment and empathy. You\u2019ll get specific, money-making data on projected growth (the BLS says wind turbine technicians, for instance, will grow 44% by 2032), real salary ranges from active job listings, and a simple self-assessment quiz to identify your own most resilient path. Plus, we name companies hiring today and the niche job boards they use. Stop worrying and start planning\u2014your secure career is closer than you think.",
-      "modified": "2026-07-08T22:53:39",
+      "modified": "2026-10-31T05:02:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1117,7 +1117,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "For professionals weighing a leap into Nvidia\u2019s RTX PRO lineup\u2014a $12,400 Blackwell 6000 with 98GB VRAM\u2014the sticker shock often overshadows long-term value. But what if a single interactive calculator could reveal whether that investment pays off faster than renting cloud GPUs? Gilinho\u2019s new TCO Analyzer does exactly that, letting you input acquisition cost, power draw, maintenance, and depreciation to compare ownership versus rental across workloads like Llama 3 inference or Blender rendering. Early results show the RTX PRO can slash cost per render hour by 40% over a three-year horizon. Stop guessing and start optimizing your hardware budget. Try the analyzer now to see if RTX PRO is your smartest compute bet.",
-      "modified": "2026-10-18T19:04:08",
+      "modified": "2026-10-31T05:02:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1136,7 +1136,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Sarah faced a classic career-versus-home dilemma: a $20,000 salary bump in NYC, but eight months and $24,000 remaining on her Austin lease. With confusing penalty clauses and no clear exit path, she needed hard numbers\u2014not guesswork. Using the Giniloh Lease Break Calculator, she compared three real scenarios: a worst-case $3,500 outlay, a negotiated buyout at $1,650 net, and a best-case where her new employer covered the exit cost. The calculator\u2019s payback math revealed she\u2019d fully recover even the worst penalty in just 2.1 months. Armed with concrete data, Sarah turned a painful lease break into a leverage point\u2014either for a signing bonus or a swift financial recovery. The result? A clear, data-driven path out of a costly commitment, proving that with the right tool, breaking a lease doesn\u2019t have to break your budget.",
-      "modified": "2026-10-18T19:04:08",
+      "modified": "2026-10-31T05:02:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1155,7 +1155,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "E-commerce teams relying on a zapier notion integration to sync customer data and orders often face a hidden cost far exceeding any subscription fee. When broken integrations, duplicated records, and sync timeouts consume 12 hours of an operations manager\u2019s time each month at $85 per hour, the monthly tinkering tax hits $1,020. That\u2019s $36,720 over three years\u2014more than double the $18,000 premium for upgrading to a unified centralized CRM like HubSpot. By plugging these real-world figures into Giniloh\u2019s No-Code Workaround Terminator calculator, you can see the exact net savings\u2014$18,720 in this scenario\u2014and reclaim stress-free operations. Stop guessing whether your workflow is worth it; the data reveals the smarter move.",
-      "modified": "2026-06-26T16:54:15",
+      "modified": "2026-10-31T05:02:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1174,7 +1174,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Is a cracked laptop screen forcing you to shell out hundreds for a repair? Before you rush to replace laptop screen, stop and calculate whether it's actually worth it. Most repair guides only show you how, not if you should. That's where the Giniloh Strategic Decision-Intelligence Engine changes the game. Instead of guessing, use the Consumer 1,500 Rule: multiply your laptop's age by the repair quote. If the result exceeds 1,500, it's smarter to buy new laptop than patch old hardware. A 4-year-old device with a $450 repair gives you an asset tech debt index of 1,800\u2014a clear \"replace\" verdict. This data-driven approach saves you from pouring money into outdated machines. Learn the exact steps to perform the calculation, get a definitive answer, and stop wasting funds on uneconomical fixes. The math doesn't lie\u2014your wallet will thank you.",
-      "modified": "2026-06-26T00:56:32",
+      "modified": "2026-10-31T05:02:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1193,7 +1193,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Stop guessing whether an e-bike is worth it\u2014most people overpay for their commute without realizing it. This article uses the Giniloh Decision Intelligence Framework to uncover the true ebike costs and which choice saves real money. Instead of just listing price tags, you\u2019ll learn a simple Cost-Per-Use (CPU) calculation that compares a $2,500 premium e-bike against your current parking, fuel, and rideshare expenses. The result? A commuter who rides three days a week could save $2,875 over three years\u2014dropping their per-trip cost from $15.00 to just $7.90. That\u2019s a clear BUY verdict based on your own numbers. By matching the electric bike cost to your exact lifestyle, you stop overthinking and start saving immediately. Ready to run your own CPU check? The interactive calculator inside does the math for you.",
-      "modified": "2026-10-18T19:04:07",
+      "modified": "2026-10-31T05:02:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1212,7 +1212,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Are you considering a jobs switch but worried about forfeiting years of unvested 401(k) matches? The Gilinoh Raise & Job-Hop Velocity Calculator exposes the hidden financial trade-offs most professionals overlook. In a realistic scenario, a mid-career engineer earning $120,000 receives a 12% raise offer\u2014yet loses over $21,000 in unvested employer matches, creating a $4,000 switching deficit in year three. This tool transforms abstract risk into concrete numbers, showing exactly how to negotiate a signing bonus of at least $15,000 to break even. Stop leaving money behind. Use the calculator\u2019s step-by-step walkthrough to compare stay-versus-switch trajectories, identify negotiation levers, and ensure your next move actually pays off.",
-      "modified": "2026-06-20T00:52:04",
+      "modified": "2026-10-31T05:02:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1231,7 +1231,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Moving for a career relocation is one of the most consequential financial decisions a professional can make\u2014yet most job offers gloss over the hidden costs that can turn a salary bump into a net loss. A new interactive tool, the Giniloh Career Relocation Cost & Payback Calculator, changes that by delivering hard numbers instead of guesswork. In a real-world case study\u2014a software engineer leapfrogging from Maryland to California for a $25,000 raise\u2014the calculator reveals a net upfront cost of $6,065 driven by lease penalties and an overlooked state-tax drag on employer reimbursements. More importantly, it pinpoints the exact break-even point: just 5.0 months, after which the move becomes pure profit. By modeling taxable transit benefits, AB 692 exclusions, and monthly take-home gains, this calculator transforms career relocation from a leap of faith into a data-backed strategy. Don\u2019t sign that offer without knowing your actual payback timeline.",
-      "modified": "2026-08-12T00:47:00",
+      "modified": "2026-10-31T05:02:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1250,7 +1250,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Most candidates fixate on base salary when they negotiate a job offer\u2014but that leaves money on the table. The Giniloh Total Compensation Visualizer transforms the process. You input specific numbers for salary, equity, bonuses, and benefits, then instantly see how different scenarios affect your net worth. Simulate asking for higher salary versus more equity and compare long-term outcomes. This visual representation gives you objective data to justify counteroffers with confidence. Don't accept a deal that undervalues your skills. Before your next call, prepare a TCV visualization to highlight gaps and trade-offs. Discover a step-by-step method to quantitatively compare offers and turn a stressful conversation into a strategic advantage. Learn how to use this tool to negotiate a job offer that reflects your total value and secure the package you deserve.",
-      "modified": "2026-07-09T17:12:12",
+      "modified": "2026-10-31T05:02:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1269,7 +1269,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine taking control of your money flow without the usual spreadsheet headaches or second-guessing every move. That\u2019s exactly what the Giniloh Money Flow Simulator delivers\u2014a risk-free sandbox where you can test your smart money decisions in real time. Instead of hoping your bills line up, you automate cash flow pipelines that sweep surpluses toward debt, savings, or investments while underbalance pulls instantly prevent overdrafts. No more panic, no more guesswork. Based on the Loh-Friction Philosophy, this tool lets you simulate aggressive paydowns, emergency floors, even corporate treasury sweeps, and watch exactly how your money decisions play out before committing a single dollar. With built-in regulatory guardrails like Roth IRA penalty checks, the model stays realistic. Stop leaving your financial momentum on idle\u2014start testing your strategies today and see your money flow work for you.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1288,7 +1288,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Mastering your money flows is no longer guesswork. The Giniloh Frictionless Money Flow Simulator lets you configure a real-time cash routing engine on an interactive canvas\u2014click any account node to drag sliders for balances, ceiling limits, and safety floors. Its AI Orchestration Chat establishes automated pipelines, then tests them against macroeconomic scenarios like stagflation or a 2008-style market contraction. You can apply conditional market scripting rules that adjust sweeps when inflation rises or buy dips when the S&P 500 drops. The simulator enforces regulatory guardrails\u2014blocking Roth IRA early withdrawals, settlement delays, and pattern-day-trader limits\u2014so every simulation mirrors reality. Start the automated clock or step day-by-day to watch your cash move according to your logic. Whether in Personal or Enterprise mode, this tool transforms abstract financial planning into a concrete, risk-free sandbox. Stop guessing; start controlling where your money flows before it hits the real world.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1307,7 +1307,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Imagine taking control of your money flow without the usual stress of spreadsheets or guesswork. Our Frictionless Money Flow Simulator changes everything by letting you visualize and test automated cash flow pipelines in real time\u2014before you commit a single dollar. Based on the Loh-Friction Philosophy, it eliminates decision fatigue: surpluses automatically sweep toward debt, savings, or investments, while underbalance pulls instantly retrieve funds to prevent overdrafts. No more manual juggling or retrospective panic. You can simulate real-life scenarios\u2014aggressive debt paydown, emergency floor protection, even corporate treasury sweeps\u2014and see exactly how your smart money decisions play out. With built-in regulatory guardrails (like Roth IRA sweep penalties), the model stays realistic. Start testing your strategies today and stop leaving your momentum on idle.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:54",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1330,7 +1330,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Your addition never gets the 3% cap. It lands on the tax roll at full market price the first January 1 after the work is mostly finished.",
-      "modified": "2026-10-19T18:41:41",
+      "modified": "2026-10-31T04:49:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1376,7 +1376,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Roughly 20% of your home's air conditioning (AC) never arrives in the room it is meant to cool. A new unit is sold on a factory rating, but the hidden air\u2026",
-      "modified": "2026-10-19T19:12:48",
+      "modified": "2026-10-31T04:49:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1445,7 +1445,7 @@
         "energy-efficiency"
       ],
       "excerpt": "The average American home buys 899 kilowatt-hours (kWh) of power a month. Most buyers use that huge yearly total to size a backup battery.",
-      "modified": "2026-10-16T01:44:51",
+      "modified": "2026-10-31T04:49:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1468,7 +1468,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Two-thirds of U.S. homeowners lost power in 2026, yet home battery sales are set to shrink 4% and five states take 88% of them. Where the payback now comes from.",
-      "modified": "2026-10-16T01:44:50",
+      "modified": "2026-10-31T04:49:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1491,7 +1491,7 @@
         "energy-efficiency"
       ],
       "excerpt": "The average Home Equity Line of Credit (HELOC) just hit 8.194%.",
-      "modified": "2026-10-20T21:45:29",
+      "modified": "2026-10-31T05:02:57",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1800,7 +1800,7 @@
         "energy-efficiency"
       ],
       "excerpt": "California\u2019s last-resort insurer\u2014the Fair Access to Insurance Requirements (FAIR) Plan\u2014raises rates by an average of 29.1% on October 15, 2026.",
-      "modified": "2026-10-20T21:45:18",
+      "modified": "2026-10-31T05:02:59",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1823,7 +1823,7 @@
         "energy-efficiency"
       ],
       "excerpt": "California just made it legal to plug a solar panel straight into a normal wall outlet. On Sept. 30, 2026, Gov. Gavin Newsom signed Senate Bill 868 (SB 868).",
-      "modified": "2026-10-20T21:45:30",
+      "modified": "2026-10-31T05:02:58",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2007,7 +2007,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Gas is the cheapest heat this winter at $640, while heating oil runs $2,115. California just started paying homeowners to quit the gas line that makes it possible.",
-      "modified": "2026-10-16T01:44:50",
+      "modified": "2026-10-31T04:49:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2030,7 +2030,7 @@
         "energy-efficiency"
       ],
       "excerpt": "After two seasons of small hail, an aged roof is up to ten times more likely to be damaged by the next big stone than a new one, because every test behind\u2026",
-      "modified": "2026-10-30T18:15:16",
+      "modified": "2026-10-31T04:35:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2053,7 +2053,7 @@
         "smart-home-security"
       ],
       "excerpt": "A software patch sent through the Samsung SmartThings network broke fridges on Sept. 22.",
-      "modified": "2026-10-16T01:44:52",
+      "modified": "2026-10-31T04:49:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2076,7 +2076,7 @@
         "energy-efficiency"
       ],
       "excerpt": "A new study shows heat pumps can save Maryland oil and propane users up to $1,600 a year, just as Heating, Ventilation, and Air Conditioning (HVAC) makers\u2026",
-      "modified": "2026-10-16T01:44:52",
+      "modified": "2026-10-31T04:49:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2099,7 +2099,7 @@
         "energy-efficiency"
       ],
       "excerpt": "A new study shows heat pumps can save Maryland oil and propane users up to $1,600 a year, just as Heating, Ventilation, and Air Conditioning (HVAC) makers raise equipment prices again [1][3]. The two numbers a homeowner needs to plan a system switch are moving in opposite ways at the exact same time.",
-      "modified": "2026-10-20T21:45:30",
+      "modified": "2026-10-31T05:02:57",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2122,7 +2122,7 @@
         "tools-equipment"
       ],
       "excerpt": "Retainage is the cash a contract lets an owner hold back. A remodel deal can name 15 percent. The states that write the rule down cap it at 5%.",
-      "modified": "2026-10-16T01:44:49",
+      "modified": "2026-10-31T04:49:11",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2145,7 +2145,7 @@
         "tools-equipment"
       ],
       "excerpt": "Sign a remodel contract at your kitchen table, and federal law gives you three days to cancel and take your deposit back.",
-      "modified": "2026-10-22T19:10:55",
+      "modified": "2026-10-31T04:49:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2168,7 +2168,7 @@
         "smart-home-security"
       ],
       "excerpt": "Shelly Group agreed to a \u20ac1.2 billion buyout on 24 September.",
-      "modified": "2026-10-16T01:44:49",
+      "modified": "2026-10-31T04:49:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2191,7 +2191,7 @@
         "smart-home-security"
       ],
       "excerpt": "Both ways to run a smart home got more expensive in the same week.",
-      "modified": "2026-10-16T01:44:52",
+      "modified": "2026-10-31T04:49:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2214,7 +2214,7 @@
         "tools-equipment"
       ],
       "excerpt": "A California homeowner has exactly 15 days after a remodel ends to file one form: a Notice of Completion.",
-      "modified": "2026-10-16T01:44:51",
+      "modified": "2026-10-31T04:49:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2237,7 +2237,7 @@
         "smart-home-security"
       ],
       "excerpt": "A 2026 paper on a small home energy monitor shows what happens when it guesses which of four appliances is running from one main meter.",
-      "modified": "2026-10-20T19:12:21",
+      "modified": "2026-10-31T04:49:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2260,7 +2260,30 @@
         "energy-efficiency"
       ],
       "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
-      "modified": "2026-09-13T00:39:31",
+      "modified": "2026-10-31T05:03:03",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "one-mower-two-prices-450-apart",
+      "title": "Your Half-Acre Mower's $450 Gap",
+      "url": "https://wellroost.com/one-mower-two-prices-450-apart/",
+      "path": "/one-mower-two-prices-450-apart/",
+      "sites_live": {
+        "wellroost.com": "/one-mower-two-prices-450-apart/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "The Kress KR172 lists at $1,699.99 through a dealer sale that ends on 31 December 2026, and $450 less on the model page that sells the same mower.",
+      "modified": "2026-11-01T14:13:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2283,7 +2306,7 @@
         "smart-home-security"
       ],
       "excerpt": "A homeowner recently bypassed a seven-month wait and an $11,200 quote to upgrade a 200-amp panel to 400 amps. They installed a $4,200 smart subpanel instead.",
-      "modified": "2026-10-16T01:44:49",
+      "modified": "2026-10-31T04:49:11",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2306,7 +2329,7 @@
         "energy-efficiency"
       ],
       "excerpt": "A replacement-cost roof claim arrives in two pieces, and the withheld second check is the money many owners leave on the table.",
-      "modified": "2026-10-16T18:17:11",
+      "modified": "2026-10-31T04:49:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2329,7 +2352,7 @@
         "tools-equipment"
       ],
       "excerpt": "Starting early next year, a city must approve your second backyard home. The state will require cities to clear two separate cottages on a single lot\u2026",
-      "modified": "2026-10-29T12:27:07",
+      "modified": "2026-10-31T04:35:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2352,7 +2375,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Water damage and freezing hits 1.50% of insured homes a year at an average $15,400 a claim, while the parts that cause it carry published service lives.",
-      "modified": "2026-10-16T01:44:50",
+      "modified": "2026-10-31T04:49:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2375,7 +2398,7 @@
         "energy-efficiency"
       ],
       "excerpt": "A smart sprinkler box claims to save \\\"up to 15,000 gallons\\\" of water a year. Yet a U.S.",
-      "modified": "2026-10-16T01:44:51",
+      "modified": "2026-10-31T04:49:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2398,7 +2421,7 @@
         "yard-robotics"
       ],
       "excerpt": "The Yarbo Y40 Core with the Snow Blower Module Gen 2 is listed at $5,599 as of 2026-10-25, and the number that decides the purchase sits one line under the\u2026",
-      "modified": "2026-10-25T14:14:08",
+      "modified": "2026-10-31T04:49:01",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2421,7 +2444,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
-      "modified": "2026-09-07T13:34:30",
+      "modified": "2026-10-31T05:03:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2444,7 +2467,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
-      "modified": "2026-10-20T21:45:30",
+      "modified": "2026-10-31T05:02:55",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2467,7 +2490,7 @@
         "smart-home-security"
       ],
       "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the panel and placing CT clamps to handling 240V double-pole circuits and knowing when to call an electrician. Then we walk through the Emporia app: account setup, Wi-Fi pairing, naming circuits, tariffs, real-time and historical graphs, solar/net metering, notifications, and data export. We also test accuracy, latency, connectivity, and firmware quirks, compare Vue generations and Sense, and share real kWh case studies with payback math. Electricity prices keep climbing; every month without circuit-level visibility is money left on the table. Try the app\u2019s demo mode today\u2014then decide if Vue 3 belongs in your panel.",
-      "modified": "2026-09-16T01:44:14",
+      "modified": "2026-10-31T05:03:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2490,7 +2513,7 @@
         "smart-home-security"
       ],
       "excerpt": "A tiny hole in a slab leaks about 0.08 gallons a minute, putting roughly 115 gallons a day into the dirt.",
-      "modified": "2026-10-16T01:44:52",
+      "modified": "2026-10-31T04:49:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2536,7 +2559,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Windows: the 13 percent saving on a replacement label is the best case, not an average.",
-      "modified": "2026-10-16T01:44:50",
+      "modified": "2026-10-31T04:49:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2559,7 +2582,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Your tank's class sets the bill more than its fuel does, because what decides the running cost is the efficiency standard the unit must meet.",
-      "modified": "2026-10-27T04:55:03",
+      "modified": "2026-10-31T04:48:57",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2582,7 +2605,7 @@
         "yard-robotics"
       ],
       "excerpt": "A robot mower's one-acre claim shrinks fast on a real lawn, because the makers build that number on a best-case pattern and a full day of running.",
-      "modified": "2026-10-24T18:45:01",
+      "modified": "2026-10-31T04:49:03",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2605,7 +2628,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "A 5% hurricane deductible on a $400,000 home hits $20,000 before your insurer pays a dime. The average home claim in 2023 landed at just $20,062.",
-      "modified": "2026-10-21T20:08:33",
+      "modified": "2026-10-31T04:49:05",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2628,7 +2651,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "Louisiana will make standard insurers cut the hurricane part of a bill by up to 49% for a FORTIFIED roof, starting January 1, 2027.",
-      "modified": "2026-10-21T13:22:23",
+      "modified": "2026-10-31T04:49:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2651,7 +2674,7 @@
         "home-diagnostics-tools"
       ],
       "excerpt": "A homeowner's pinless meter flashed a 78% reading on a dry wall because the tool picked up a steel corner edge hidden behind the paint.",
-      "modified": "2026-10-25T15:17:18",
+      "modified": "2026-10-31T04:49:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2674,7 +2697,7 @@
         "home-diagnostics-tools"
       ],
       "excerpt": "The $250 imager a federal building-science guide points homeowners to does not see through a wall; it reads the heat of the wall's own surface, which is why\u2026",
-      "modified": "2026-10-24T19:43:04",
+      "modified": "2026-10-31T04:49:02",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2697,7 +2720,7 @@
         "outdoor-power-equipment"
       ],
       "excerpt": "Buying a spare snow blower battery is a $549 mistake, driven by how makers price their packed kits. EGO (the outdoor power equipment brand) sells its 24-inch\u2026",
-      "modified": "2026-10-25T14:57:45",
+      "modified": "2026-10-31T04:49:01",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2720,7 +2743,7 @@
         "energy-efficiency"
       ],
       "excerpt": "The cheap, like-for-like swap for gas water heaters above 75,000 British thermal units per hour (Btu/hr) ended on October 6.",
-      "modified": "2026-10-19T12:25:21",
+      "modified": "2026-10-31T04:49:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2743,7 +2766,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "A public adjuster's fee comes from the insurer's whole check, not from the extra dollars the adjuster wins. So a 20 percent deal only breaks even when the\u2026",
-      "modified": "2026-10-28T20:25:34",
+      "modified": "2026-10-31T04:35:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2766,7 +2789,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Two homes on the same street can face a payback gap of 38.1\u00a2 per unit of power, and the reason is how their bills are built.",
-      "modified": "2026-10-27T04:55:42",
+      "modified": "2026-10-31T04:48:58",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2789,7 +2812,7 @@
         "energy-efficiency"
       ],
       "excerpt": "On 6 October, home batteries plugged into California's grid pushed a record 745 megawatts (MW) into the evening peak.",
-      "modified": "2026-10-23T10:42:17",
+      "modified": "2026-10-31T04:49:04",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2812,7 +2835,7 @@
         "energy-efficiency"
       ],
       "excerpt": "California's own fire review says home hardening is the lagging half of wildfire risk. Closing that gap will cost $30 billion or more.",
-      "modified": "2026-10-16T10:40:31",
+      "modified": "2026-10-31T04:49:11",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2835,7 +2858,7 @@
         "smart-home-security"
       ],
       "excerpt": "Dropping a cloud plan moves the true cost of a camera straight to a hard drive in your closet, because the camera ships writing 6,144 kilobits a second for a\u2026",
-      "modified": "2026-10-27T19:21:10",
+      "modified": "2026-10-31T04:48:57",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2858,7 +2881,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
-      "modified": "2026-10-16T01:44:51",
+      "modified": "2026-10-31T04:49:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2881,7 +2904,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "The window to close your flood gap has 44 days in it. A federal flood policy does not start for 30 days, so the last day to buy one that is in force before\u2026",
-      "modified": "2026-10-28T13:52:00",
+      "modified": "2026-10-31T04:48:56",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2904,7 +2927,7 @@
         "outdoor-power-equipment"
       ],
       "excerpt": "The pitch for a heated snow mat is its running cost, quoted by HeatTrak as about $0.18 an hour. My read is that the hourly figure, and the $1.80 it becomes\u2026",
-      "modified": "2026-10-24T19:13:37",
+      "modified": "2026-10-31T04:49:02",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2927,7 +2950,7 @@
         "smart-home-security"
       ],
       "excerpt": "This November your Home Assistant hub adds 4,292 unaudited projects to a menu it now owns, and the blind spot is written into the release notes.",
-      "modified": "2026-10-27T12:14:39",
+      "modified": "2026-10-31T04:48:57",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2950,7 +2973,7 @@
         "smart-home-security"
       ],
       "excerpt": "Ring's new smart lock keeps working when your home Wi-Fi dies, because it routes around your router. The deadbolt stays online through Amazon Sidewalk, a web\u2026",
-      "modified": "2026-10-20T12:10:04",
+      "modified": "2026-10-31T04:49:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3019,7 +3042,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Driven by a frozen market, your next bedroom costs $417,500 if you buy it rather than build it. Pending home sales fell 7.3% in September from August and\u2026",
-      "modified": "2026-10-26T11:40:37",
+      "modified": "2026-10-31T04:48:59",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3042,7 +3065,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "Carriers are leaving whole regions rather than individual houses, as reinsurance costs and redrawn wildfire and hurricane maps reset what they will cover.",
-      "modified": "2026-10-24T14:50:51",
+      "modified": "2026-10-31T04:49:03",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3073,6 +3096,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-radon-test-39-isnt-a-pass",
+      "title": "Your Radon Test: 3.9 Isn't a Pass",
+      "url": "https://wellroost.com/your-radon-test-39-isnt-a-pass/",
+      "path": "/your-radon-test-39-isnt-a-pass/",
+      "sites_live": {
+        "wellroost.com": "/your-radon-test-39-isnt-a-pass/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "A radon kit that returns 3.9 picocuries per liter is not a pass: the fix line is 4, the 2-to-4 band means consider fixing, and the reading only counts if the house\u2026",
+      "modified": "2026-10-31T19:41:23",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-remodel-loses-to-149-growth",
       "title": "Your Remodel Loses to 149% Growth",
       "url": "https://wellroost.com/your-remodel-loses-to-149-growth/",
@@ -3088,7 +3134,7 @@
         "tools-equipment"
       ],
       "excerpt": "The electrician wiring your kitchen and the one wiring a data center are the same person, and this fall, the data center is winning.",
-      "modified": "2026-10-22T12:08:50",
+      "modified": "2026-10-31T04:49:05",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3111,7 +3157,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Spending on home repairs is set to grow 1.5 percent while the goods behind those jobs are up 9.7 percent, so your repair budget's reach shrinks: it buys\u2026",
-      "modified": "2026-10-26T12:19:51",
+      "modified": "2026-10-31T04:48:58",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3134,7 +3180,7 @@
         "energy-efficiency"
       ],
       "excerpt": "Your home upgrade's quoted price is fixed, but the loan behind it resets every month. A quarter-point rate bump adds about $9 to the median payment.",
-      "modified": "2026-10-19T11:40:33",
+      "modified": "2026-10-31T04:49:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3157,7 +3203,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "7 days' notice now rewrites which Canadian goods carry a 50 percent duty, and Friday's order moved the line both ways at once.",
-      "modified": "2026-10-24T06:41:40",
+      "modified": "2026-10-31T04:48:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3180,7 +3226,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "33% of your shrink isn't theft, and that money now sits on the receiving dock instead of the front door. Shrink is the trade word for stock that is lost\u2026",
-      "modified": "2026-10-27T04:55:33",
+      "modified": "2026-10-31T04:48:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3203,7 +3249,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your 100-case eval prints one number. If it prints a bar at all, it calls that bar 95%.",
-      "modified": "2026-10-15T12:33:34",
+      "modified": "2026-10-31T04:48:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3226,7 +3272,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Running 2,000 fine-tunes on one graphics card costs just 5.5% of peak throughput, because every adapter shares the same heavy base weights.",
-      "modified": "2026-10-27T20:01:34",
+      "modified": "2026-10-31T04:48:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3249,7 +3295,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "GXO Logistics (GXO), the world's largest pure-play contract logistics provider, says its humanoid robots have moved more than 100,000 totes at one Georgia\u2026",
-      "modified": "2026-10-28T13:51:56",
+      "modified": "2026-10-31T04:48:11",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3272,7 +3318,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "An agent's log is only proof if it can replay the exact choice.",
-      "modified": "2026-10-10T01:57:19",
+      "modified": "2026-10-31T04:48:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3295,7 +3341,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "When an agent stack fails, the common reflex is to buy a bigger model. Two new papers point to a different fix: the shape of the system.",
-      "modified": "2026-10-15T12:33:45",
+      "modified": "2026-10-31T04:48:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3318,7 +3364,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Roughly 70% of agent failures in a live runtime were first caught by a human reading the product, while thousands of tests stayed green.",
-      "modified": "2026-10-15T12:33:36",
+      "modified": "2026-10-31T04:48:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3341,7 +3387,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Two agent frameworks ran the same eleven coding tasks on the same machine this month. One fired nearly 39x more system process launches per tool call than\u2026",
-      "modified": "2026-10-21T11:12:13",
+      "modified": "2026-10-31T04:48:27",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3364,7 +3410,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "On 15 October India's cyber agency put out a Critical alert saying AI agents had read live business records at Indian companies, and that not one of those\u2026",
-      "modified": "2026-10-26T11:17:18",
+      "modified": "2026-10-31T04:48:17",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3387,7 +3433,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "A scan of 6,549 agent repositories found 68 loops that nothing in the code stopped. A reviewer checked every one by hand and confirmed a 91.9% precision rate.",
-      "modified": "2026-10-15T17:39:22",
+      "modified": "2026-10-31T04:48:36",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3410,7 +3456,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "One simple text file is enough to take over a coding agent's memory.",
-      "modified": "2026-10-15T12:33:43",
+      "modified": "2026-10-31T04:48:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3433,7 +3479,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "When Chroma engineers tested 18 large language models (LLM) across eight lengths, scores dropped as the prompts grew \u2014 even on simple tasks.",
-      "modified": "2026-10-15T12:33:41",
+      "modified": "2026-10-31T04:48:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3456,7 +3502,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "The best tool-using Artificial Intelligence (AI) agents fail more than half the time, but normal testing hides the flaws.",
-      "modified": "2026-10-15T12:33:42",
+      "modified": "2026-10-31T04:48:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3479,7 +3525,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "An \\\"approved\\\" AI action no longer means a safe result. Say an agent changes a bill to pay it.",
-      "modified": "2026-10-15T12:33:46",
+      "modified": "2026-10-31T04:48:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3502,7 +3548,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Amazon sets a call timeout from an accepted false-timeout rate of 0.1%, then reads the downstream p99.9. Most agent stacks pick one round number instead.",
-      "modified": "2026-10-15T12:33:37",
+      "modified": "2026-10-31T04:48:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3525,7 +3571,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Giving one AI agent a massive tool list crashes its accuracy to roughly one pick in seven.",
-      "modified": "2026-10-15T12:33:44",
+      "modified": "2026-10-31T04:48:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3548,7 +3594,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Your agent reads a record, thinks for a minute, then writes. The write is the mistake. It ignores everything that changed in that minute.",
-      "modified": "2026-10-21T18:08:48",
+      "modified": "2026-10-31T04:48:25",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3571,7 +3617,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Forty percent of billion-dollar companies now deploy AI agents across their operations\u2014up from just 27 percent a year ago. That's not incremental growth. That's a strategic inflection point, and IT leaders who treat agentic AI adoption as a wait-and-see proposition are already behind. Agentic AI is defined as autonomous software systems that perceive their environment, make decisions, and execute multi-step tasks with minimal human intervention\u2014distinct from generative AI's content creation and traditional automation's rigid rule-following. The enterprises pulling ahead aren't just experimenting. They're delegating routine workflows to agents while repositioning human talent toward judgment, oversight, and strategy. The payoff is measurable: operational efficiency gains, faster cycle times, and workforce augmentation that multiplies output without proportional headcount growth. But scaling requires more than procurement\u2014it demands governance frameworks, security protocols, and a phased roadmap that moves from pilot to production without exposing the enterprise to runaway autonomy or compliance failure. The adoption window is narrowing. Competitors are already building the playbooks, and the gap between early movers and laggards compounds quarterly.",
-      "modified": "2026-10-15T12:33:50",
+      "modified": "2026-10-31T05:02:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3594,7 +3640,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Two random trials of AI coding seats sit about 75 points apart. In one, GitHub measured a group finishing a task 55.8% faster with its Copilot assistant.",
-      "modified": "2026-10-15T12:33:33",
+      "modified": "2026-10-31T04:48:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3617,7 +3663,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "The AI Act's 15-day serious-incident report is the vendor's filing and starts in December 2027. The clocks an enterprise has to meet are 72, 24 and 4 hours.",
-      "modified": "2026-10-15T12:33:36",
+      "modified": "2026-10-31T04:48:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3640,7 +3686,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Worldwide spending on Artificial Intelligence (AI) will hit $2.7 trillion this year, growing 49.5%.",
-      "modified": "2026-10-15T12:33:48",
+      "modified": "2026-10-31T04:48:55",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3663,7 +3709,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "60% of new air capacity deals now run three months or less, as warehousing capacity contracts at its fastest rate since March 2022.",
-      "modified": "2026-10-15T12:33:37",
+      "modified": "2026-10-31T04:48:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3686,7 +3732,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Put the answer field before the reasoning field in a tool schema, and the model writes the answer first. In one 2024 study, an open model lost 38.15 points\u2026",
-      "modified": "2026-10-19T17:44:27",
+      "modified": "2026-10-31T04:48:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3709,7 +3755,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear that runs its shipping network.",
-      "modified": "2026-10-15T12:33:44",
+      "modified": "2026-10-31T04:48:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3732,7 +3778,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Amazon Web Services (AWS) cannot give customers their data back from its Middle East (Bahrain) region.",
-      "modified": "2026-10-15T12:33:35",
+      "modified": "2026-10-31T04:48:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3755,7 +3801,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "At 10:03 Coordinated Universal Time (UTC) on 29 September 2026, Azure OpenAI Service broke in Sweden Central. It stayed down for six hours.",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-10-31T04:48:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3778,7 +3824,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "An outside lab ran a standard graphics test on two work chips, where a 32-core chip finished in five and a half minutes and a 64-core chip took exactly four\u2026",
-      "modified": "2026-10-15T12:33:33",
+      "modified": "2026-10-31T04:48:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3801,7 +3847,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "In AI, the test is another black box that moves every time you update its prompt \u2014 and Dynatrace paid $915 million for the most widely used one.",
-      "modified": "2026-10-15T12:33:38",
+      "modified": "2026-10-31T04:48:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3824,7 +3870,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "A research team ran the same agent workload through OpenAI, Anthropic, and Google and found that prompt caching cut application programming interface (API)\u2026",
-      "modified": "2026-10-15T12:33:42",
+      "modified": "2026-10-31T04:48:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3847,7 +3893,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "At 80% of a decode card's uncapped power draw, a 235-billion-parameter model returned 22.4% more tokens per joule and met its latency target on every\u2026",
-      "modified": "2026-10-21T18:41:38",
+      "modified": "2026-10-31T04:48:25",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3870,7 +3916,7 @@
         "business-automation-operations"
       ],
       "excerpt": "Every year, logistics leaders approve multimillion-dollar robotics deals based on a spreadsheet built by the vendor selling the hardware. But warehouse automation cost is rarely what the quote promises. Hidden maintenance, fully loaded labor, integration fees, and 2026 Section 179 phase-outs can stretch a claimed 14-month payback to 41 months. CaseProof is the buyer-side audit engine that re-runs vendor proposals against your operating reality\u2014normalizing capex, lease, and RaaS bids into one after-tax cash model, attributing every month of payback variance, and flagging unstated lines before you sign. It delivers a payback waterfall, year-by-year cash schedule, ranked confirm-in-writing ledger, and board-ready decision pack in minutes. Before you commit seven figures, audit the math yourself. Launch CaseProof now to see the true warehouse automation cost\u2014for less than ten dollars.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3998,7 +4044,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "A language model priced 50% cheaper per token turned out 57% pricier per finished task. OckBench is a token test from researchers at Georgia Tech, the\u2026",
-      "modified": "2026-10-15T18:13:20",
+      "modified": "2026-10-31T04:48:36",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4021,7 +4067,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A load stolen by a fake carrier never shows up as a late load.",
-      "modified": "2026-10-15T12:33:39",
+      "modified": "2026-10-31T04:48:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4044,7 +4090,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A late fee for a delayed shipping container \u2014 demurrage, in trade terms \u2014 now carries two strict 30-day clocks.",
-      "modified": "2026-10-15T12:33:41",
+      "modified": "2026-10-31T04:48:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4067,7 +4113,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "U.S. on-highway diesel fell to $6.199 a gallon the week of Oct. 5, dropping 33 cents in two weeks.",
-      "modified": "2026-10-15T12:33:39",
+      "modified": "2026-10-31T04:48:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4090,7 +4136,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Anthropic shipped Claude Duet on 21 October, and finance teams should read the billing details twice. Every morning brief and background check drains the\u2026",
-      "modified": "2026-10-22T01:10:44",
+      "modified": "2026-10-31T04:48:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4113,7 +4159,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely knows if it can undo a mistake.",
-      "modified": "2026-10-15T12:33:44",
+      "modified": "2026-10-31T04:48:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4136,7 +4182,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Enclave overhead is not 4%. On an NVIDIA (the chip maker) H200 card, confidential mode cut token throughput by 35.0% to 62.8%.",
-      "modified": "2026-10-20T18:12:43",
+      "modified": "2026-10-31T04:48:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4159,7 +4205,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "The enterprise build-vs-buy decision is no longer about initial sticker price\u2014it is about the compounding, long-term cost of ownership. While rapid prototyping makes custom tools appear cheap, they carry steep financial and operational risks. The Hidden Cost of Building: A homegrown tool averages $375,000 in upfront engineering payroll before it even works, plus a permanent $125k\u2013$250k annual maintenance bill. The Risk of Buying: Vendor pricing is highly volatile, with over 76% of SaaS buyers facing unexpected costs and rapid price shifts after signing. The Strategic Playbook: Evaluate both paths in total engineer-years, restrict internal builds strictly to core strategic advantages, and mandate a reversibility test before committing.",
-      "modified": "2026-10-15T12:33:49",
+      "modified": "2026-10-31T05:02:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4182,7 +4228,7 @@
         "business-automation-operations"
       ],
       "excerpt": "European e-invoicing regulations have converted accounts receivable into an uncompromising algorithmic gatekeeper, where a single \u20ac0.01 calculation variance halts cash collection instantly. FacturGate is a deterministic, client-side pre-send validation gate and format converter that intercepts defective invoice payloads, audits them against 223 Schematron business rules and domestic CIUS overlays, balances totals to the exact cent, and emits compliant Factur-X (CII) and UBL 2.1 artifacts before transmissions hit government tax firewalls.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4205,7 +4251,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The Federal Reserve raised its main interest rate by a quarter point to a range of 3-3/4 to 4 percent, its first hike in three years.",
-      "modified": "2026-10-15T12:33:42",
+      "modified": "2026-10-31T04:48:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4228,7 +4274,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Hugging Face's guide says you can fine-tune a 33-billion-parameter model on one 24-gigabyte graphics card.",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-10-31T04:48:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4251,7 +4297,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Atlassian raised cloud prices for Jira and Confluence by 3% to 10% on 13 October.",
-      "modified": "2026-10-15T12:33:31",
+      "modified": "2026-10-31T04:48:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4274,7 +4320,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15 of 15 live rollouts, cutting errors by 32% on average.",
-      "modified": "2026-10-15T12:33:45",
+      "modified": "2026-10-31T04:48:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4297,7 +4343,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "In a study of more than 300,000 forecasts, 52% lose to a random walk\u2014the plainest test there is, which simply carries last period's value forward unchanged.",
-      "modified": "2026-10-15T20:11:03",
+      "modified": "2026-10-31T04:48:35",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4320,7 +4366,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The rule of thumb says folding four warehouses into one halves your safety stock. The band that reaches the finance desk says 15% to 30% less inventory.",
-      "modified": "2026-10-19T19:38:30",
+      "modified": "2026-10-31T04:48:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4343,7 +4389,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your freight claim dies at 9 months, and the quick note your dock writes on a delivery receipt does not count as a real claim.",
-      "modified": "2026-10-15T18:41:54",
+      "modified": "2026-10-31T04:48:35",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4366,7 +4412,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "C.H. Robinson is spending $5.8 billion to build the densest freight network in North America.",
-      "modified": "2026-10-15T12:33:46",
+      "modified": "2026-10-31T04:48:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4389,7 +4435,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The price of diesel does not set your freight fuel bill.",
-      "modified": "2026-10-15T12:33:41",
+      "modified": "2026-10-31T04:48:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4412,7 +4458,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "One wrong step does not stay one mistake. In a study of 2,518 agent runs, a single wrong step made the next step roughly 11 to 14 times likelier to fail.",
-      "modified": "2026-10-15T12:33:31",
+      "modified": "2026-10-31T04:48:37",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4435,7 +4481,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "On Sept. 27, the U.S.-China Board of Trade recommended cutting tariffs on $30 billion of everyday goods in each direction.",
-      "modified": "2026-10-15T12:33:47",
+      "modified": "2026-10-31T05:02:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4458,7 +4504,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Cloud provider Nebius raised its hourly rate for an Nvidia H100 chip from $3.85 to $4.50 on October 1, 2026, while pushing the newer B200 to $8.50.",
-      "modified": "2026-10-15T12:33:45",
+      "modified": "2026-10-31T04:48:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4481,7 +4527,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Forrester expects open-weight artificial intelligence (AI) models to carry half of enterprise AI tokens next year.",
-      "modified": "2026-10-29T11:40:10",
+      "modified": "2026-10-31T04:48:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4504,7 +4550,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "U.S. shoppers will spend a record $275.1 billion online this holiday, Adobe Analytics forecasts \u2014 6.7% growth on last year, and $95.8 billion of it in October alone.",
-      "modified": "2026-10-15T13:18:27",
+      "modified": "2026-10-31T04:48:36",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4527,7 +4573,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Two hours before a delayed container clears the gate, the driver's day is already spent.",
-      "modified": "2026-10-15T12:33:33",
+      "modified": "2026-10-31T04:48:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4550,7 +4596,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The true cost to hold a dollar of stock runs 20% to 30% a year, yet most models load only the 7.00% bank prime rate.",
-      "modified": "2026-10-15T12:33:43",
+      "modified": "2026-10-31T04:48:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4573,7 +4619,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your finance team\u2019s push to cut inventory is a bet against prices that TrendForce expects to jump 15% in a single quarter.",
-      "modified": "2026-10-19T12:47:13",
+      "modified": "2026-10-31T04:48:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4596,7 +4642,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Meta's contained agent design bounds failures that announce themselves. A new benchmark finds the failure that halves agent success arrives with no signal at all.",
-      "modified": "2026-10-21T10:43:01",
+      "modified": "2026-10-31T04:48:27",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4619,7 +4665,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "One in three firms watched staff skip the AI approval queue as too slow. The fix that shipped in September misses half the agents it was built to stop.",
-      "modified": "2026-10-15T12:33:37",
+      "modified": "2026-10-31T04:48:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4642,7 +4688,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "A graphics processing unit (GPU) serving a 7-billion-parameter model at 16-bit precision holds about 14GB of weights in memory before it answers a single\u2026",
-      "modified": "2026-10-10T01:57:54",
+      "modified": "2026-10-31T04:48:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4665,7 +4711,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A last-mile carbon claim is activity times a published factor, and two federal agencies publish two different grid factors for the same kilowatt-hour.",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-10-31T04:48:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4688,7 +4734,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "The graphics processing unit (GPU) that local artificial intelligence (AI) teams actually buy just shot up in price.",
-      "modified": "2026-10-15T12:33:40",
+      "modified": "2026-10-31T04:48:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4711,7 +4757,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Drop one hard check from an Artificial Intelligence (AI) agent's learning loop, and its test score crashes from 17.2 to 6.6.",
-      "modified": "2026-10-15T12:33:49",
+      "modified": "2026-10-31T04:48:55",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4734,7 +4780,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Skills \u2014 portable bundles of workflow instructions \u2014 became an official MCP extension on September 13, standardizing how agents discover, retrieve, and verify\u2026",
-      "modified": "2026-10-15T12:33:49",
+      "modified": "2026-10-31T04:48:56",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4757,7 +4803,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "The shortest artificial intelligence (AI) model retirement notice on the market is 2 weeks, and it breaks your audit trail.",
-      "modified": "2026-10-19T18:11:35",
+      "modified": "2026-10-31T04:48:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4780,7 +4826,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Splitting your monolith now has a price tag. The split system costs more than 20% extra to build, and it buys technical debt that grows about 90% slower.",
-      "modified": "2026-10-20T18:41:56",
+      "modified": "2026-10-31T04:48:28",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4803,7 +4849,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Team agents are defined as multiple AI systems working in concert\u2014each with specialized skills\u2014to execute complex business tasks that once required entire departments. For founders and executives, this changes everything. Sam Altman predicts the first one-person billion-dollar company is coming; team agents are how it happens. You no longer need to hire a full staff to build agentic workflows that automate research, content production, customer support, and operations. With an agentic AI builder, you can deploy a coordinated team of AI specialists in hours, not months\u2014slashing overhead while scaling output. The next Creator Bootcamp starts in 3 days. If you're ready to replace your salary or build something far bigger, this is your window. Don't wait while competitors move first.",
-      "modified": "2026-10-15T12:33:50",
+      "modified": "2026-10-31T05:02:45",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4826,7 +4872,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S.",
-      "modified": "2026-10-15T12:33:38",
+      "modified": "2026-10-31T04:48:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4849,7 +4895,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Nvidia agreed to buy $279 billion in parts this quarter.",
-      "modified": "2026-09-17T02:10:24",
+      "modified": "2026-10-31T05:02:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4872,7 +4918,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "New York City (NYC) buys night deliveries now \u2014 up to 14 businesses will share more than half a million dollars to move freight into the 7 p.m. to 6 a.m.",
-      "modified": "2026-10-16T11:45:41",
+      "modified": "2026-10-31T04:48:34",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4895,7 +4941,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "One paused approval answered by two workers can fire two payments.",
-      "modified": "2026-10-14T18:15:14",
+      "modified": "2026-10-31T04:48:37",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4918,7 +4964,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Salesforce's published guides price one customer request at a single action in one example and five in another.",
-      "modified": "2026-10-22T11:10:22",
+      "modified": "2026-10-31T04:48:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4941,7 +4987,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Two research groups, a day apart, ran 6,368 coding-agent runs and 270 attack cases and found the same blind spot.",
-      "modified": "2026-10-15T12:33:38",
+      "modified": "2026-10-31T04:48:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4964,7 +5010,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Agentic AI projects are autonomous systems that perceive, reason, plan, call tools, and execute multi-step work with minimal human intervention. On September 10, OpenAI moved the hardest part\u2014the agent loop\u2014into its Agents API public beta, handling model calls, MCP servers, sessions, memory, sub-agents, and crash recovery at no extra loop fee. The payoff: teams stop rebuilding fragile orchestration and start shipping. Yet managed plumbing is not a defense. Runaway agents have burned $4,200 in 45 minutes. Function tools still need app-side user checks and business rules. A resumed session does not prove a file survived or an action completed. Before your next build, audit permission boundaries, verify outcomes in your source-of-truth database, and choose the right sandbox mode: none, hosted, or self-hosted. The loop is free; the mistakes are not.",
-      "modified": "2026-10-15T12:33:50",
+      "modified": "2026-10-31T05:02:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4987,7 +5033,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "OpenAI\u2019s new custom AI inference chip, Jalape\u00f1o, outperformed Nvidia's GB300 on the InferenceX test, delivering 1.5 to 1.9 times more work per watt while using under 550 watts. Designed solely to run models rather than train them, Jalape\u00f1o highlights a broader industry shift toward prioritizing energy efficiency and custom silicon over peak speed.",
-      "modified": "2026-09-18T00:49:05",
+      "modified": "2026-10-31T05:02:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5010,7 +5056,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Tractor Supply just spent more than $200 million to own an 865,000-square-foot automated warehouse in Idaho.",
-      "modified": "2026-10-15T12:33:31",
+      "modified": "2026-10-31T04:48:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5033,7 +5079,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your 8 per cent charge on base postage shifts every week starting in January. The United States Postal Service (USPS) is replacing it with a fuel surcharge\u2026",
-      "modified": "2026-10-29T11:55:42",
+      "modified": "2026-10-31T04:48:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5056,7 +5102,7 @@
         "business-automation-operations"
       ],
       "excerpt": "Every week, parcel carriers quietly invoice ecommerce brands and 3PLs for phantom dimensional weight, unearned accessorial surcharges, and missed delivery guarantees. By the time accounts payable reviews the billing file, the 21-to-30-day dispute window has already slammed shut. Here is how ParcelProof puts cash back into shippers' accounts by automating carrier invoice reconciliation with deterministic, verifiable proof.",
-      "modified": "2026-10-18T19:04:09",
+      "modified": "2026-10-31T05:02:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5079,7 +5125,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A fixed rule of four robots per pick station fails fast as your product catalogue grows. One simulation put four robots per station at 91% of the rate its\u2026",
-      "modified": "2026-10-21T19:44:44",
+      "modified": "2026-10-31T04:48:25",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5102,7 +5148,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "On Sept. 26, three researchers shared a new system called Planner-as-Router (PaR) that cuts AI agent costs by 44 percent.",
-      "modified": "2026-10-15T12:33:47",
+      "modified": "2026-10-31T05:02:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5125,7 +5171,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "By 2030, just 5% of firms with supply chain software will let it make 10% of choices on its own.",
-      "modified": "2026-10-15T12:33:47",
+      "modified": "2026-10-31T04:48:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5148,7 +5194,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "One graphics processing unit (GPU) serves about 1.6 requests a second when it runs a 13-billion-parameter model by itself.",
-      "modified": "2026-10-15T12:33:31",
+      "modified": "2026-10-31T04:48:37",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5171,7 +5217,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your misclassified entry costs up to 4x the duty you underpaid, and the bill does not stop at the border. Duty is the tax charged when goods enter the\u2026",
-      "modified": "2026-10-17T18:08:43",
+      "modified": "2026-10-31T04:48:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5194,7 +5240,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Toys sold 158% above a normal September day during Amazon's two-day Prime Big Deal Days on 6\u20137 October, and discounts across U.S. online retail peaked at 20%\u2026",
-      "modified": "2026-10-29T13:14:31",
+      "modified": "2026-10-31T04:48:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5217,7 +5263,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Data centers now report peak rack power of 30 kilowatts (kW) or more. Dense artificial intelligence (AI) racks push past 100 kW.",
-      "modified": "2026-10-15T12:33:43",
+      "modified": "2026-10-31T04:48:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5240,7 +5286,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "On July 22, a power line in northern Virginia failed and cleared exactly as it should.",
-      "modified": "2026-10-15T12:33:36",
+      "modified": "2026-10-31T04:48:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5263,7 +5309,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Self-healing tools now grade their own work, and the scores clash.",
-      "modified": "2026-10-15T12:33:34",
+      "modified": "2026-10-31T04:48:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5286,7 +5332,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "A giant model read the exact same prompt a thousand times at a fixed zero setting, known as temperature 0, but gave 80 different answers.",
-      "modified": "2026-10-20T17:40:18",
+      "modified": "2026-10-31T04:48:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5309,7 +5355,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Coca-Cola just pledged $10 billion for U.S. plants by 2030, which its Chief Financial Officer (CFO) calls a growth plan rather than a tariff shield.",
-      "modified": "2026-10-15T12:33:48",
+      "modified": "2026-10-31T04:48:54",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5332,7 +5378,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "A corrupted value sent a ledger agent into 15,000 retries and a $50,000 bill. A 25,930-episode study shows the same retry duplicates payments while the agent\u2026",
-      "modified": "2026-10-15T12:33:43",
+      "modified": "2026-10-31T04:48:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5355,7 +5401,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Uber cut the worst retry storm its network can produce from 25 hops to three by taking the decision to retry away from the caller.",
-      "modified": "2026-10-15T12:33:32",
+      "modified": "2026-10-31T04:48:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5378,7 +5424,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Eighteen cents of tokens per agreement, then 25 minutes of a senior partner's time at $160 an hour. Your 25-minute review costs $66.67, pushing the total\u2026",
-      "modified": "2026-10-22T18:09:39",
+      "modified": "2026-10-31T04:48:22",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5401,7 +5447,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Feed a safety-stock formula the standard spread of demand, and it builds a much bigger buffer than the forecast actually needs.",
-      "modified": "2026-10-15T12:33:45",
+      "modified": "2026-10-31T04:48:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5424,7 +5470,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "On Sept. 30, Amazon and the United States Postal Service (USPS) turned on a quiet test to speed up local shipping.",
-      "modified": "2026-10-15T12:33:48",
+      "modified": "2026-10-31T04:48:54",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5447,7 +5493,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "For AI developers and deep learning engineers, the decision to invest in a self-hosted AI rig versus renting cloud GPU compute has never been more critical\u2014or more confusing. With rising electricity costs and fluctuating cloud rates, the wrong choice can drain your budget by thousands. The Giniloh GPU Cost Calculator cuts through the noise by delivering a precise break-even analysis based on your actual workload. Using a real-world scenario\u2014a $3,500 local build versus $1.80 per hour cloud GPU\u2014the calculator reveals that most moderate users (12 weekly compute hours) are better off outsourcing. The local rig\u2019s true cost-per-use climbs to $2.60 an hour when factoring in electricity and maintenance, overshadowing the cloud\u2019s $1.80. This data-driven verdict empowers you to avoid costly hardware mistakes and optimize your AI budget without sacrificing performance or control.",
-      "modified": "2026-06-30T23:24:38",
+      "modified": "2026-10-31T05:02:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5470,7 +5516,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Half of the world's container ships missed their August schedules, dropping the global on-time rate to 49.9%.",
-      "modified": "2026-10-15T12:33:35",
+      "modified": "2026-10-31T04:48:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5493,7 +5539,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Most multi-agent runs hide a silent data leak. In a new test of 4,979 agent traces, 68.8% pushed private content through the messages the agents sent to each\u2026",
-      "modified": "2026-10-21T17:37:49",
+      "modified": "2026-10-31T04:48:26",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5539,7 +5585,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Amazon hands back 10% of the monthly bill when a cloud region drops below 99.99% uptime, but it takes a full month below 95% to see a 100% credit.",
-      "modified": "2026-10-15T12:33:43",
+      "modified": "2026-10-31T04:48:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5562,7 +5608,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The two slowest classes of stock-keeping units (SKUs) are 67.76% of the items on file in one warehouse study.",
-      "modified": "2026-10-15T12:33:36",
+      "modified": "2026-10-31T04:48:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5585,7 +5631,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Two measurements landed a day apart: one left 13 capability-steps reachable after their last justified use, the other lifted disclosure to an agent the\u2026",
-      "modified": "2026-10-15T12:33:32",
+      "modified": "2026-10-31T04:48:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5608,7 +5654,7 @@
         "business-automation-operations"
       ],
       "excerpt": "When Stripe deposits funds into your bank account, it lands as a single net lump sum\u2014such as $14,250.40\u2014masking gross billings, interchange fees, customer refunds, and dispute reserves. Booking these net deposits directly as sales understates top-line revenue, conceals operating expenses, and violates statutory accounting standards like ASC 606 and IFRS 15. Meet LedgerLink (https://apps.aichieve.net/ledgerlink)\u2014a specialized, deterministic financial reconciliation utility that automatically decomposes netted Stripe payouts into categorized double-entry General Ledger (GL) journal lines. Strict Mathematical Invariant: The engine (stripeRecon.ts) enforces a zero-tolerance invariant where total debits and credits balance down to the exact cent, flagging any variance immediately. Automated GL Categorization: Cleans and sorts transactions into standard double-entry rows including Revenue, Stripe Fees, Refunds, and Chargebacks. Zero-Trust Privacy: Run calculations locally in your browser via JSON exports, or fetch directly from Stripe using read-only restricted keys (rk_\u2026) while blocking master secret keys (sk_\u2026). Accounting Software & Agent Ready: Generates pre-formatted CSV imports for QuickBooks Online and Xero, and exposes the reconcile_stripe_payout tool via WebMCP for autonomous AI accounting agents.",
-      "modified": "2026-10-18T19:04:10",
+      "modified": "2026-10-31T05:02:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5631,7 +5677,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Suez returns, and your bill doesn't fall with it. Carriers are moving services back through the Red Sea, with estimates that transits fully recover during\u2026",
-      "modified": "2026-10-22T11:38:39",
+      "modified": "2026-10-31T04:48:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5654,7 +5700,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Washington just pushed the United States\u2013China tariff truce to Jan. 10, 2027, and American companies are not buying the calm.",
-      "modified": "2026-10-15T12:33:49",
+      "modified": "2026-10-31T04:48:55",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5677,7 +5723,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "On September 28, Washington advised cutting trade taxes on $60 billion of basic goods like toys and home items.",
-      "modified": "2026-10-15T12:33:46",
+      "modified": "2026-10-31T04:48:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5723,7 +5769,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "37signals cut its cloud bill from $3.2 million to $1.3 million a year by moving seven apps off Amazon and onto its own gear.",
-      "modified": "2026-10-10T01:54:19",
+      "modified": "2026-10-31T05:02:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5746,7 +5792,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A product that costs $100 at a factory in China lands in the US at $136. The same item built for $108 in Mexico lands at just $110.",
-      "modified": "2026-10-15T12:33:46",
+      "modified": "2026-10-31T05:02:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5769,7 +5815,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Silicon Data's token-price index just printed $0.96 per million tokens \u2014 the first reading under a dollar and the cheapest rate on record.",
-      "modified": "2026-10-15T12:33:46",
+      "modified": "2026-10-31T05:02:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5792,7 +5838,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "OpenAI and Anthropic slashed frontier Artificial Intelligence (AI) token prices on September 22.",
-      "modified": "2026-10-15T12:33:47",
+      "modified": "2026-10-31T05:02:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5967,7 +6013,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Two small Sparks and one cable now hold the 128 gigabytes (GB) of memory Nvidia's $6,950 desk machine holds, for $9,998, and the cable is the part nobody\u2026",
-      "modified": "2026-10-27T12:44:57",
+      "modified": "2026-10-31T04:48:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5990,7 +6036,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "On Sept. 18, the Surface Transportation Board (STB) unanimously refused to block the proposed Union Pacific (UP) and Norfolk Southern (NS) merger.",
-      "modified": "2026-10-15T12:33:48",
+      "modified": "2026-10-31T04:48:55",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6013,7 +6059,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Developers are rushing to write software that replaces paid tools, but barely half trust artificial intelligence (AI) to do the heavy lifting.",
-      "modified": "2026-10-15T12:33:44",
+      "modified": "2026-10-31T04:48:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6036,7 +6082,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "New York's minimum wage reaches $17.00 an hour on January 1, 2027, in the city, on Long Island and in Westchester County.",
-      "modified": "2026-10-15T12:33:30",
+      "modified": "2026-10-31T04:48:36",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6059,7 +6105,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A single wrong pick looks like a rounding error until a team prices the annual leak.",
-      "modified": "2026-10-15T12:33:45",
+      "modified": "2026-10-31T04:48:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6082,7 +6128,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "At one large retailer, 65% of stock records failed to match the shelf count, and that gap cut profit by more than ten percent.",
-      "modified": "2026-10-22T20:12:45",
+      "modified": "2026-10-31T04:48:22",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6105,7 +6151,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Drawback refunds up to 99% of the duty paid on imports that are later exported or destroyed. That one rule changes the math of moving a factory.",
-      "modified": "2026-10-15T12:33:38",
+      "modified": "2026-10-31T04:48:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6128,7 +6174,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Stolen machine identities just became the top way hackers break into companies.",
-      "modified": "2026-10-15T12:33:39",
+      "modified": "2026-10-31T04:48:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6151,7 +6197,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your control tower's 3.0.0 data feed is stuck until 2027. The Digital Container Shipping Association (DCSA) released a new version of its container tracking\u2026",
-      "modified": "2026-10-20T13:13:21",
+      "modified": "2026-10-31T04:48:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6174,7 +6220,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "On 15 April 2026, eleven coding agents ran at once against one shared key, and three of them died before they finished.",
-      "modified": "2026-10-28T17:51:47",
+      "modified": "2026-10-31T04:48:11",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6197,7 +6243,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your $15 to $20 air rule sits an order of magnitude below the break-even because it measures freight against cargo value while the bill is a cost of time\u2026",
-      "modified": "2026-10-26T19:52:25",
+      "modified": "2026-10-31T04:48:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6220,7 +6266,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Global tech budgets will grow next year mostly because memory costs more than doubled, leaving teams with more money that buys less raw compute.",
-      "modified": "2026-10-27T11:45:20",
+      "modified": "2026-10-31T04:48:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6243,7 +6289,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Nvidia calls Nemotron 3.5 Bolt its 24-gigabyte (GB) build, but the company's own setup guide requires a 28GB system at minimum.",
-      "modified": "2026-10-20T12:40:16",
+      "modified": "2026-10-31T04:48:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6266,7 +6312,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your $30 exception bill is wrong, and the math proves it.",
-      "modified": "2026-10-19T20:10:30",
+      "modified": "2026-10-31T04:48:30",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6312,7 +6358,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Nvidia has reportedly stopped making the only consumer graphics card with 32 gigabytes (GB) of video memory.",
-      "modified": "2026-10-15T12:33:35",
+      "modified": "2026-10-31T04:48:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6335,7 +6381,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A Hydro Flask owner's inventory cut was reported as 49%. Its filing says $48.6 million, or 9.2%, and the quarter's margin gain came mostly from a tariff refund.",
-      "modified": "2026-10-26T12:51:10",
+      "modified": "2026-10-31T04:48:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6358,7 +6404,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Your agent's task score drops 60% when its tools break the way the Model Context Protocol (MCP) ecosystem says they fail, from 8.08 out of 10 to 3.23.",
-      "modified": "2026-10-28T11:21:22",
+      "modified": "2026-10-31T04:48:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6381,7 +6427,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Roughly 60 to 70 percent of \u00d8rsted's firewall changes take a pre-approved fast lane that never reaches the change board.",
-      "modified": "2026-10-27T11:18:14",
+      "modified": "2026-10-31T04:48:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6404,7 +6450,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Constellation Brands shipped 123.9 million cases of beer last quarter, a 5.5% jump. The volume distributors actually sold to stores fell 0.6%.",
-      "modified": "2026-10-22T13:18:03",
+      "modified": "2026-10-31T04:48:23",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6427,7 +6473,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Four live traces covering more than 121 million model calls show the median research session growing from about 10K to 68K tokens by the 30th call. A separate\u2026",
-      "modified": "2026-10-21T11:40:43",
+      "modified": "2026-10-31T04:48:27",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6450,7 +6496,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Every restart monitor ships with one number on the box, and for your stack it is the wrong number. A monitor that sorts failing runs at 90% accuracy sounds\u2026",
-      "modified": "2026-10-28T10:57:22",
+      "modified": "2026-10-31T04:48:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6473,7 +6519,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "One in five ten-line orders ships short, even though the desk's line fill reads 98%. At 98% per-line stock, 18.3% of ten-line baskets fail to ship complete\u2026",
-      "modified": "2026-10-26T20:09:31",
+      "modified": "2026-10-31T04:48:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6496,7 +6542,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "The North American Electric Reliability Corporation (NERC) just cleared its first mandatory grid rules for data centers on a final stakeholder ballot.",
-      "modified": "2026-10-20T11:13:05",
+      "modified": "2026-10-31T04:48:30",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6519,7 +6565,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Intel's new inference card is advertised with up to 480 GB (gigabytes) of memory on partner cards and no high bandwidth memory (HBM) at all.",
-      "modified": "2026-10-28T11:44:42",
+      "modified": "2026-10-31T04:48:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6565,7 +6611,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Amid a vendor push to lock down AI workloads, 63% of the rules an agent depends on go unmet at the call site. This contract gap sits inside the sandbox\u2026",
-      "modified": "2026-10-26T10:47:44",
+      "modified": "2026-10-31T04:48:17",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6588,7 +6634,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Zenity Labs pulled a CRM (customer relationship management) database out of Salesforce Agentforce with zero clicks, no login and no stolen password.",
-      "modified": "2026-10-19T11:10:15",
+      "modified": "2026-10-31T04:48:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6611,7 +6657,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "An agent team loses 28 points against a single agent doing the exact same job. That same week, a separate test handed over a 188-fold bill for using a team\u2026",
-      "modified": "2026-10-22T10:39:28",
+      "modified": "2026-10-31T04:48:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6634,7 +6680,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Take a European firm with \u20ac2 billion of sales whose loan-approval agent cannot explain a weekend of rejected files.",
-      "modified": "2026-10-27T04:55:38",
+      "modified": "2026-10-31T04:48:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6657,7 +6703,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your agent's cache pays 1.25 times the input price to write a prefix for five minutes, and a tenth of that price to read it back.",
-      "modified": "2026-10-27T10:42:31",
+      "modified": "2026-10-31T04:48:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6680,7 +6726,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The first carbon report California set for 10 November 2026 counts only a firm's own fuel and power. The state's 2027 plan skips the 2 lines with your trucks.",
-      "modified": "2026-10-23T11:43:57",
+      "modified": "2026-10-31T04:48:21",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6726,7 +6772,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your AI bill's hidden gap is 40 to 60 percent of the total cost, because the invoice stops at the key rather than the team that spent the money.",
-      "modified": "2026-10-29T18:29:18",
+      "modified": "2026-10-31T04:48:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6772,7 +6818,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Non-GPUs overtook GPUs in China for the first time in the first half of 2026: 1.016 million chips built for specific jobs against 991,000 graphics processing\u2026",
-      "modified": "2026-10-15T12:33:32",
+      "modified": "2026-10-31T04:48:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6795,7 +6841,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "The continuous integration (CI) line on your cloud bill looks like compute you could run yourself. The list prices say so: $0.006 a minute for a two-core\u2026",
-      "modified": "2026-10-21T19:09:15",
+      "modified": "2026-10-31T04:48:25",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6818,7 +6864,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Kubernetes patches its three newest minor versions, then drops each one roughly a year after it ships.",
-      "modified": "2026-10-15T12:33:08",
+      "modified": "2026-10-31T04:48:37",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6841,7 +6887,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Driven by the need to shrink long chat logs, five popular open-source coding tools turn at least 87% of forged text into real user commands.",
-      "modified": "2026-10-29T10:58:05",
+      "modified": "2026-10-31T04:48:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6864,7 +6910,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Because distance makes guessing harder, an estimated time of arrival (ETA) misses the mark by roughly 27 hours on average for trips longer than a week.",
-      "modified": "2026-10-27T20:15:49",
+      "modified": "2026-10-31T04:48:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6887,7 +6933,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A customs record that backs an entry must be kept for five years. Your control tower's exception log probably drops this data too early.",
-      "modified": "2026-10-20T20:11:09",
+      "modified": "2026-10-31T04:48:28",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6910,7 +6956,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A depot's charging plan is set by amps, circuits and the metered kilowatt-hour, not by the van's spec sheet \u2014 and the federal refueling credit closed on June 30\u2026",
-      "modified": "2026-10-16T19:09:17",
+      "modified": "2026-10-31T04:48:34",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6933,7 +6979,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The bill for a full week of stock in a prime pick face gets paid twice: the forklift crew makes one drop a week, and the pickers on that aisle walk an extra\u2026",
-      "modified": "2026-10-22T18:42:13",
+      "modified": "2026-10-31T04:48:22",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6956,7 +7002,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "One H100 card, one eight-billion-parameter model, and an output rate that moved by 22.8 times when only the shape of the work changed.",
-      "modified": "2026-10-27T18:17:30",
+      "modified": "2026-10-31T04:48:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6979,7 +7025,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "Your graphics processing unit (GPU) landlord likely will not survive the decade as a standalone firm. Gartner expects more than 80% of neocloud providers\u2026",
-      "modified": "2026-10-20T11:46:24",
+      "modified": "2026-10-31T04:48:30",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7002,7 +7048,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your test suite certifies wrong code and hides it behind a green check because the tests cannot tell a real fix from a broken one.",
-      "modified": "2026-10-27T17:48:06",
+      "modified": "2026-10-31T04:48:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7025,7 +7071,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The share of purchase orders arriving on time and in full (OTIF) fell to 63.6% in the third quarter, and the loss came from missing units rather than late\u2026",
-      "modified": "2026-10-19T13:12:04",
+      "modified": "2026-10-31T04:48:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7048,7 +7094,7 @@
         "mental-models-strategy"
       ],
       "excerpt": "One line of measuring code can turn a single metric into 2,500 billable series, and that count is the part of the bill nobody budgets for.",
-      "modified": "2026-10-27T18:43:48",
+      "modified": "2026-10-31T04:48:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7094,7 +7140,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "USTR (the Office of the U.S. Trade Representative) just opened a public docket on whether the trade rules behind your Mexico sourcing hedge will hold.",
-      "modified": "2026-10-17T06:42:33",
+      "modified": "2026-10-31T04:48:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7117,7 +7163,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute.",
-      "modified": "2026-10-27T13:20:01",
+      "modified": "2026-10-31T04:48:14",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7140,7 +7186,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "The most common number of features a platform team now owns is 23, up from four a year earlier. In the same fortnight, 51% of chief information officers\u2026",
-      "modified": "2026-10-21T12:10:20",
+      "modified": "2026-10-31T04:48:26",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7163,7 +7209,7 @@
         "major-purchases-assets"
       ],
       "excerpt": "Cloud transcoding bills the render ladder, not the footage: a six-rung ladder bills eleven output minutes per source minute, $4.95 an hour on AWS's basic tier.",
-      "modified": "2026-10-20T19:40:13",
+      "modified": "2026-10-31T04:48:28",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7186,7 +7232,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Anthropic's retrieval test missed the right passage 5.7% of the time when it fetched the 20 best-matching chunks.",
-      "modified": "2026-10-22T17:50:59",
+      "modified": "2026-10-31T04:48:23",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7209,7 +7255,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "One route in the published last-mile corpus carries 50 stops, another 250. The 5x spread is a district decision, and the measured density lever is worth 35.8% of\u2026",
-      "modified": "2026-10-23T19:10:53",
+      "modified": "2026-10-31T04:48:19",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7232,7 +7278,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Your hosted runtime has six months to leave. Deno Deploy runs until about April 2027 and then shuts down, while the runtime itself gets one more year of\u2026",
-      "modified": "2026-10-28T13:43:25",
+      "modified": "2026-10-31T04:48:11",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7255,7 +7301,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Your sandbox boot is a tax you pay on every run. Four kinds of sandbox \u2014 plain containers, hosted sandboxes, Kubernetes-run containers and cloud servers\u2026",
-      "modified": "2026-10-29T17:52:12",
+      "modified": "2026-10-31T04:48:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7278,7 +7324,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "An automated forklift costs $100,000 to $200,000 a unit today. Seegrid says the model it is building for warehouses, due in early 2027, will sell for about\u2026",
-      "modified": "2026-10-21T12:41:07",
+      "modified": "2026-10-31T04:48:26",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7324,7 +7370,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Segment spent 3 full-time engineers just keeping its software alive. Then it folded more than 140 separate services into one, and shipped 46 improvements to\u2026",
-      "modified": "2026-10-27T04:55:47",
+      "modified": "2026-10-31T04:48:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7347,7 +7393,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Three new research papers landed within 48 hours, and none of them focus on the model. One ran 11,118 real tools from 251 servers through seven gateways.",
-      "modified": "2026-10-19T10:38:45",
+      "modified": "2026-10-31T04:48:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7370,7 +7416,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Your mold stays your property while it sits in a supplier's plant, and customs bills its value onto every unit made with it, because a tool you supply free\u2026",
-      "modified": "2026-10-24T18:19:04",
+      "modified": "2026-10-31T04:48:17",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7393,7 +7439,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "A coding agent logs a step as complete when it failed silently, and in 53 to 100 percent of tested cases the model acts on that claim.",
-      "modified": "2026-10-20T10:41:30",
+      "modified": "2026-10-31T04:48:30",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7416,7 +7462,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A delivery truck's mile costs $0.79 of diesel at this week's national price, because the stop-and-go duty rather than the engine sets what a route burns, and\u2026",
-      "modified": "2026-10-30T19:14:29",
+      "modified": "2026-10-31T04:34:59",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7462,7 +7508,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "Top brands like Microsoft, PepsiCo, Ikea, and Red Bull just ordered 2,500 heavy-duty electric trucks.",
-      "modified": "2026-10-15T12:33:47",
+      "modified": "2026-10-31T04:48:54",
       "live": true,
       "source": "frontend-sitemap"
     }

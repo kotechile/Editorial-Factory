@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-10-31T19:20:08+00:00
+# Internal-link candidates — 2026-11-01T14:19:08+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -72,7 +72,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 60 live article(s), 22 other target(s)
+## wellroost.com — 62 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -119,6 +119,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Class 4 Roof: Ten Times Riskier](https://wellroost.com/class-4-rates-the-shingle-not-your-roof/) — Energy & Efficiency
 - [Your EV Is Now a Home Battery — Behind a Paywall](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
 - [Your Flood Gap Has 44 Days](https://wellroost.com/your-flood-gap-has-44-days/) — Home Cost Decisions
+- [Your Half-Acre Mower's $450 Gap](https://wellroost.com/one-mower-two-prices-450-apart/) — Yard Robots & Automation
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
 - [Your Hub's 4,292-Project Blind Spot](https://wellroost.com/your-hubs-4292-project-blind-spot/) — Smart Home & Security
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
@@ -129,6 +130,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Nonrenewal Isn't Final: Count 120 Days](https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/) — Home Cost Decisions
 - [Your Pack Halves at -18°C](https://wellroost.com/your-pack-delivers-half-at-18c/) — Outdoor Power & Snow Equipment
 - [Your Panel Doesn't Need More Amps: The 80% Test](https://wellroost.com/panel-upgrade-80-percent-test/) — Smart Home & Security
+- [Your Radon Test: 3.9 Isn't a Pass](https://wellroost.com/your-radon-test-39-isnt-a-pass/) — Home Diagnostic Tools
 - [Your Remodel Loses to 149% Growth](https://wellroost.com/your-remodel-loses-to-149-growth/) — Tools & Equipment
 - [Your Repair Budget's 7.5% Squeeze](https://wellroost.com/your-repair-budget-buys-7-5-percent-less/) — Energy & Efficiency
 - [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
