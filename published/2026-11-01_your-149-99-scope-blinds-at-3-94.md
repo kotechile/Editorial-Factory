@@ -14,8 +14,8 @@ meta_description: "Three inspection cameras, one wall cavity. The spec that deci
 image_path: "context/assets/illustrations/your-149-99-scope-blinds-at-3-94/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Wall Camera Focus Limits. An armored inspection camera snake entering a cutout in a drywall wall, its glowing tip illuminating the dark"
-image_caption: "Wall Camera Focus Limits: The hidden spec that dictates if your wall camera works."
+image_alt: "An armored inspection camera probe enters a broken drywall cutout, its glowing tip lighting the dark cavity behind the wall."
+image_caption: "Wall Camera Focus Limits: the distance a probe can hold focus decides what you see inside a wall."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -72,6 +72,8 @@ My view is that the winner is narrower than the price table makes it look. The T
 
 The shared trap is the patch, not the camera. A professional charges at least $75 for small holes up to four inches, so a quarter-inch hole and a three-eighths hole cost the same to close [6]. Both land in the same band. What changes is whether you were allowed to make the hole in the first place, and no focus range or articulation angle answers that for you.
 
+## What we did not test
+
 This comparison is built from three manufacturers' specification tables, three price pages and one published repair-cost guide. The cameras were not handled for this article, no wall was opened for it, and no independent measured test of any of the three is cited here. For the spend that sits behind the choice, the desk's [ownership cost model](/calculators/true-cost-of-ownership/) prices the repair and the tool together, and the [home diagnostics hub](/categories/home-diagnostics-tools/) carries the rest of the beat.
 
 <!-- tldr -->
@@ -83,16 +85,7 @@ This comparison is built from three manufacturers' specification tables, three p
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "4,726 Boilers, 51,825 Silent Alarms" -> /4726-boilers-51825-silent-alarms/ [same site (wellroost.com); topical overlap: because, inside] Link "4,726 Boilers, 51,825 Silent Alarms" in the section where the article touches because, inside. -->
-<!-- internal-link hint: "Your $49.97 Meter Reads 78%" -> /your-50-meter-reads-78-its-metal/ [same site (wellroost.com); topical overlap: because, wall] Link "Your $49.97 Meter Reads 78%" in the section where the article touches because, wall. -->
-<!-- internal-link hint: "Your Camera Eats 66 GB" -> /your-camera-eats-66-gb-daily/ [same site (wellroost.com); topical overlap: because, camera] Link "Your Camera Eats 66 GB" in the section where the article touches because, camera. -->
-## Related reading
-
-- [4,726 Boilers, 51,825 Silent Alarms](/4726-boilers-51825-silent-alarms/) — more on Home Diagnostic Tools
-- [Your $49.97 Meter Reads 78%](/your-50-meter-reads-78-its-metal/) — more on Home Diagnostic Tools
-- [Your Camera Eats 66 GB](/your-camera-eats-66-gb-daily/) — more on Smart Home & Security
-<!-- internal-links:end -->
+<!-- internal links: the generator scored 3 candidates on function words (because) only, so no block is emitted; the body carries the calculator and hub links -->
 
 ## Sources
 

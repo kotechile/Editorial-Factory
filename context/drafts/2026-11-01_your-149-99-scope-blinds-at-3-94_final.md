@@ -72,6 +72,8 @@ My view is that the winner is narrower than the price table makes it look. The T
 
 The shared trap is the patch, not the camera. A professional charges at least $75 for small holes up to four inches, so a quarter-inch hole and a three-eighths hole cost the same to close [6]. Both land in the same band. What changes is whether you were allowed to make the hole in the first place, and no focus range or articulation angle answers that for you.
 
+## What we did not test
+
 This comparison is built from three manufacturers' specification tables, three price pages and one published repair-cost guide. The cameras were not handled for this article, no wall was opened for it, and no independent measured test of any of the three is cited here. For the spend that sits behind the choice, the desk's [ownership cost model](/calculators/true-cost-of-ownership/) prices the repair and the tool together, and the [home diagnostics hub](/categories/home-diagnostics-tools/) carries the rest of the beat.
 
 <!-- tldr -->
