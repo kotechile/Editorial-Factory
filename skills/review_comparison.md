@@ -163,10 +163,37 @@ from the same sentence ("two 10-Ah batteries") and put the wording in the `Measu
   stored in four places (`context/assets/illustrations/<slug>/featured.json`, the artifact's
   `image_alt`, the WP media item, and the row's `metadata.illustration.alt_text` /
   `metadata.wordpress.media_alt`); fix all of them or the CMS and the database disagree.
+- **A re-render after a hand fix rewrites the sidecar alt from the overlay copy, silently undoing it
+  (learned 2026-11-01, `one-mower-two-prices-450-apart`).** The alt was corrected in the sidecar to a
+  complete 127-character sentence, then a second `illustration_creator.py --apply --force` was run to
+  improve the composition — and the director's own overlay-derived string (`Kress Mower'S $450 Price
+  Gap. … elevated on a mounting`) went back into `featured.json`, was uploaded with the next
+  `wp_draft --reimage`, and landed in the media item and the row while the artifact kept the good
+  sentence. Set the alt in the sidecar **after** the last render of the run, never before it, and read
+  the media record back after every `--reimage`; when the four surfaces disagree, PATCH the media item
+  and the row's metadata rather than re-uploading (a re-upload deletes the previous attachment and
+  forces another front rebuild). The static front also keeps serving the old `alt` attribute until the
+  build is re-triggered, so re-check the reader page's `alt=` after any alt change.
 - Flip the run-log row in `context/content_calendar.md`.
 
 ## 8. Failure modes seen in this class
 
+- **`article_reviewer.py` returns `ACCEPT  hard=0` on a review draft that has lost the two structures
+  only this track requires (learned 2026-11-01, `one-mower-two-prices-450-apart`).** `review_audit`
+  compares figures, citations, quotes and source lines; it does not know that a review must carry the
+  `## What we did not test` section, the verdict-by-situation table, or the calculator and hub links in
+  the verdict block. The pass returned ACCEPT and had deleted all four — the section, the table, both
+  verdict links and the earned inline internal link — so the artifact would have published with no
+  honesty paragraph and `article_shape` would have held it for "no inline internal link". After every
+  Loop 3 on a review draft, grep the final for `What we did not test`, for `/calculators/`, for
+  `/categories/`, and for the situation table's header row before re-running the gates: they are the
+  review's own furniture, and no audit defends them.
+- **A price printed across a tag boundary verifies only as its whole-dollar token (learned 2026-11-01).**
+  Kress renders the KR172's sale price as `Only $1,699 .99` in the fetched text, so a Figure cell of
+  `$1,699.99` reports `figure_absent` on a page that plainly prints the price. Cite the token that
+  survives the markup (`$1,699`), put the exact displayed string in the `Measured` cell, and keep the
+  product table's price as `$1,699.99` — `review_gate.price_keys()` already accepts the whole-dollar
+  form for a page that drops the cents.
 - **A comparison where all four "differences" are the same spec restated** — the reader learns nothing.
   Pick axes that change the buy.
 - **The vendor's marketing page cited as the independent measurement.** Fetch it and label it.
