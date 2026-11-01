@@ -263,6 +263,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-10-31 | yard_robotics | your-mower-pays-back-in-24-years-or-09 | Your Mower's 2.4-Year Payback Trap | https://pressflow.aichieve.net/published/2026-10-31_your-mower-pays-back-in-24-years-or-09.md | reader site only |
 | 2026-10-31 | outdoor_power_equipment | your-pack-delivers-half-at-18c | Your Pack Halves at -18°C | https://pressflow.aichieve.net/published/2026-10-31_your-pack-delivers-half-at-18c.md | reader site only |
 | 2026-10-31 | home_diagnostics_tech | your-radon-test-39-isnt-a-pass | Your Radon Test: 3.9 Isn't a Pass | https://pressflow.aichieve.net/published/2026-10-31_your-radon-test-39-isnt-a-pass.md | reader site only |
+| 2026-11-01 | yard_robotics | one-mower-two-prices-450-apart | Your Half-Acre Mower's $450 Gap | https://pressflow.aichieve.net/published/2026-11-01_one-mower-two-prices-450-apart.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

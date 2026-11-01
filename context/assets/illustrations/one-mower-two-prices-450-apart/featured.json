@@ -1,0 +1,112 @@
+{
+  "slug": "one-mower-two-prices-450-apart",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical robotic lawn mowers displayed side-by-side under contrasting lighting conditions.",
+      "caption": "The same robotic mower can carry vastly different price tags depending on where a buyer starts the conversation.",
+      "title": "Kress KR172 Price Gap",
+      "bytes": 271752,
+      "sha256": "sha256:8f4487bac184633233919fed11f22c42"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych with left-right scenario contrast. On both sides, an identical modern robotic lawn mower with sleek graphite and deep pine green housing resting on a brushed steel workbench in a dimly lit garage. Left side: illuminated by a soft, warm bone white spotlight from above left, casting a short shadow. Right side: illuminated by a harsh, cool blue-white spotlight from above right, casting a long shadow. Studio product photograph, 50mm lens, shallow depth of field, catalogue clarity, fine film grain, no text, no logos.",
+  "negative_prompt": "text, garbled text, random letters, numbers, UI, watermarks, people, human face, hands",
+  "rationale": "The story revolves around a specific consumer product (the Kress KR172 robot mower) and its pricing. A studio product shot emphasizes the physical machine being sold while allowing a split-screen or dual presentation to highlight the identical hardware carrying different price tags.",
+  "cue": "one machine, $450 apart",
+  "subject": "Two identical robotic mowers side-by-side",
+  "core_thesis": "Kress lists the exact same half-acre robot mower at two widely different prices depending on whether the customer looks at the model page or the dealer sale page.",
+  "core_conflict": "Price disparity vs product identity: identical hardware presented with two distinct valuations to steer buyer negotiation.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "The Kress Kr172 Price Gap. Two identical robotic lawn mowers displayed side-by-side under contrasting lighting conditions.",
+  "caption": "The Kress Kr172 Price Gap: One mower lists at two different prices on the same site.",
+  "title": "The Kress Kr172 Price Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/one-mower-two-prices-450-apart/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 317032,
+  "sha256": "sha256:19cddd386d8bd8f524184fdff39d9eee5a61c25524c03196b8f4813ed5a60813",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 317032,
+    "quality": 88,
+    "sha256": "sha256:19cddd386d8bd8f524184fdff39d9eee5a61c25524c03196b8f4813ed5a60813",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d36890693c2c8b6bbdfd6ffeccfd08cf29d8e2687406a6fb8ac9a6597013750c",
+  "render_phash": "f7817e817e817e813e833e837e871e8b1a83786578e17f011e1f0e970e830e83",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen image showing two robotic lawnmowers on tables under different lighting conditions.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The image shows robotic mowers, which aligns with the article's focus on a specific robot mower model."
+  },
+  "source_hash": "sha256:6d60f327aff2a7d885c8e95b78994abb",
+  "source_chars": 4696,
+  "task_id": "b3127d45fc844001e43825519267133a",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b3127d45fc844001e43825519267133a_1793542400332.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Split-screen diptych with left-right scenario contrast. On both sides, an identical modern robotic lawn mower with sleek graphite and deep pine green housing resting on a brushed steel workbench in a dimly lit garage. Left side: illuminated by a soft, warm bone white spotlight from above left, casting a short shadow. Right side: illuminated by a harsh, cool blue-white spotlight from above right, casting a long shadow. Studio product photograph, 50mm lens, shallow depth of field, catalogue clarity, fine film grain, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-01T14:13:31+00:00",
+  "overlay": {
+    "kicker": "ROBOT MOWERS // RETAIL PRICING",
+    "title": "THE KRESS KR172 PRICE GAP",
+    "hook": "One mower lists at two different prices on the same site",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.51,
+    "target": 4.5,
+    "clutter": 0.153,
+    "region_rgb": [
+      29,
+      27,
+      22
+    ],
+    "binding_rgb": [
+      55,
+      46,
+      31
+    ],
+    "title_lines": [
+      "THE KRESS KR172",
+      "PRICE GAP"
+    ],
+    "subject": 0.038,
+    "ink_subject": 0.024,
+    "spike": 0.093,
+    "generated_at": "2026-11-01T14:13:31+00:00"
+  }
+}

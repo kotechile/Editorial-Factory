@@ -385,3 +385,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-10-31 | `your-mower-pays-back-in-24-years-or-09` | yard_robotics | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mower-pays-back-in-24-years-or-09/featured.jpg` |
 | 2026-10-31 | `your-pack-delivers-half-at-18c` | outdoor_power_equipment | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-pack-delivers-half-at-18c/featured.jpg` |
 | 2026-10-31 | `your-radon-test-39-isnt-a-pass` | home_diagnostics_tech | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-radon-test-39-isnt-a-pass/featured.jpg` |
+| 2026-11-01 | `one-mower-two-prices-450-apart` | yard_robotics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/one-mower-two-prices-450-apart/featured.jpg` |
