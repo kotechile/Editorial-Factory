@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-3000-psi-washers-11-gpm-trap/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "The 3000-Psi Washer Trap. A brushed steel pump manifold with two distinct brass nozzle channels resting on a concrete floor."
-image_caption: "The 3000-Psi Washer Trap: Higher PSI ratings often hide lower water flow."
+image_alt: "A brushed steel manifold with one wide brass nozzle and one narrow tip on a concrete floor."
+image_caption: "A pressure washer's peak pressure and peak flow sit at opposite ends of one setting."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -76,11 +76,7 @@ This review is built from three maker product pages, one rival's spec page and o
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Water Leak Monitors" -> /water-leak-monitor-rate-threshold/ [same site (wellroost.com); topical overlap: gallons, minute] Link "Water Leak Monitors" in the section where the article touches gallons, minute. -->
-## Related reading
-
-- [Water Leak Monitors](/water-leak-monitor-rate-threshold/) — more on Smart Home & Security
+<!-- internal-links:start — no live page on this site scored for this topic; the body's own links carry it -->
 <!-- internal-links:end -->
 
 <!-- tldr -->
