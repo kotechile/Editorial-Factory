@@ -1,0 +1,112 @@
+{
+  "slug": "your-149-99-scope-blinds-at-3-94",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An armored inspection camera snake entering a cutout in a drywall wall, its glowing tip illuminating the dark cavity.",
+      "caption": "A borescope is only as useful as the distance its lens can hold focus inside a dark wall bay.",
+      "title": "Borescope Focus Range",
+      "bytes": 229738,
+      "sha256": "sha256:2b744857bb30ea8ce404cf28bdcc6557"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, extreme asymmetry with heavy negative space. An armored snake inspection camera with a glowing LED tip entering a rough cutout in bone white drywall, revealing the dark timber studs inside the wall cavity of a residential utility closet. 35mm anamorphic wide lens, shallow depth of field focusing sharply on the camera head while the deep wall bay falls into blurry darkness. Lit by a single harsh worklight from the left casting long shadows on the slate grey and ochre surfaces, crisp atmospheric depth, fine film grain, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI, people, humans",
+  "rationale": "A cinematic still captures the physical reality and tension of probing a dark, enclosed space, emphasizing the deep shadow of the wall cavity that the camera struggles to bring into focus.",
+  "cue": "blinds past 3.94",
+  "subject": "armored snake inspection camera with glowing LED tip entering a drywall hole",
+  "core_thesis": "The specification that decides whether a wall camera is any use is the far edge of its focus range, not its megapixel count.",
+  "core_conflict": "The physical depth of a standard wall bay versus the limited focal range of an inspection camera.",
+  "composition": "extreme asymmetry with heavy negative space",
+  "alt_text": "Wall Camera Focus Limits. An armored inspection camera snake entering a cutout in a drywall wall, its glowing tip illuminating the dark",
+  "caption": "Wall Camera Focus Limits: The hidden spec that dictates if your wall camera works.",
+  "title": "Wall Camera Focus Limits",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "gemini-3.1-pro-preview",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-149-99-scope-blinds-at-3-94/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 282283,
+  "sha256": "sha256:e0bbe4ca9d2ebd1b6fa55de2627f851e65811c7c11467f23c9222034dcd873d0",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 282283,
+    "quality": 88,
+    "sha256": "sha256:e0bbe4ca9d2ebd1b6fa55de2627f851e65811c7c11467f23c9222034dcd873d0",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6a13af65d22842d165dd38ef818ceae7dc253d057e4bf6ef8058d555f9864bc2",
+  "render_phash": "877c078c4f8c9f8816aa1eba2fa207a006b01fb017a0072417c41edc1f1e1ffb",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metallic, segmented tool with a glowing tip extends through a jagged hole in a white wall into a dark space, illuminated by a desk lamp on the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The image shows an inspection camera entering a wall cavity, which directly illustrates the article's subject matter."
+  },
+  "source_hash": "sha256:2602887304d83e744bd7ff18a8ecfc72",
+  "source_chars": 5851,
+  "task_id": "7d7093b3ddf3c9b99a9f029eb7450057",
+  "credits": 5.0,
+  "cost_ms": 237,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/7d7093b3ddf3c9b99a9f029eb7450057_1793546551798.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, extreme asymmetry with heavy negative space. An armored snake inspection camera with a glowing LED tip entering a rough cutout in bone white drywall, revealing the dark timber studs inside the wall cavity of a residential utility closet. 35mm anamorphic wide lens, shallow depth of field focusing sharply on the camera head while the deep wall bay falls into blurry darkness. Lit by a single harsh worklight from the left casting long shadows on the slate grey and ochre surfaces, crisp atmospheric depth, fine film grain, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-01T15:22:42+00:00",
+  "overlay": {
+    "kicker": "INSPECTION CAMERAS // FOCUS LIMITS",
+    "title": "WALL CAMERA FOCUS LIMITS",
+    "hook": "The hidden spec that dictates if your wall camera works",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 14.98,
+    "target": 4.5,
+    "clutter": 0.076,
+    "region_rgb": [
+      19,
+      18,
+      17
+    ],
+    "binding_rgb": [
+      29,
+      26,
+      19
+    ],
+    "title_lines": [
+      "WALL CAMERA",
+      "FOCUS LIMITS"
+    ],
+    "subject": 0.003,
+    "ink_subject": 0.001,
+    "spike": 0.009,
+    "generated_at": "2026-11-01T15:22:42+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T14:55:43Z",
+  "updated_at": "2026-11-01T15:23:00Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4809,6 +4809,24 @@
       "date": "2026-11-01",
       "public": true,
       "url": "https://wellroost.com/one-mower-two-prices-450-apart/"
+    },
+    {
+      "slug": "2026-11-01_your-149-99-scope-blinds-at-3-94",
+      "title": "Your $149.99 Scope Blinds Past 3.94",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-01",
+      "public": false
     },
     {
       "slug": "2026-11-01_your-3000-psi-washers-11-gpm-trap",
