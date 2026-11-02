@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-192-sessions-stall-the-model-not-the-tools/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Queue Caps Sessions Not Calls. Overloaded compute cabinet in a data hall rack row, model-writer blade glowing hot while tool blades stay"
+image_alt: "Overloaded compute cabinet in a data hall, its model-writer blade glowing hot while the tool blades stay cool."
 image_caption: "Queue Caps Sessions Not Calls: At 192 sessions, the model stalls while tools barely slow."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -66,6 +66,17 @@ The live numbers deserve the same care. PackServe's shares come from one operato
 
 The last caveat is the one that changes the plan. PASTE's authors ran a test that doubled tool speed while leaving the model's queue alone, and under load the faster tools handed back more work for the model to absorb [1]. Tool-side delay is easier to attack, and attacking it with no cap on sessions just moves the queue onto the engine. The tool side is where the time is; the session cap is what makes buying it worth anything.
 
+
+
+<!-- tldr -->
+
+## At a glance
+**The shift:** Long sessions sharing a cached prefix, not single calls, now decide throughput.
+
+**The number:** Packing them while keeping prefix reuse cut a live scheduler's boxes by 34.7%.
+
+**The risk:** The gains need control of the call path; faster tools alone just move the queue.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -78,15 +89,6 @@ The last caveat is the one that changes the plan. PASTE's authors ran a test tha
 - [Your 60% Drop Isn't the Model](/your-60-drop-isnt-the-model/) — more on Autonomous & Agentic Workflows
 - [Your Gateway: 60.5% Injection Risk](/your-tool-surface-is-a-release-surface/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-**The shift:** Long sessions sharing a cached prefix, not single calls, now decide throughput.
-
-**The number:** Packing them while keeping prefix reuse cut a live scheduler's boxes by 34.7%.
-
-**The risk:** The gains need control of the call path; faster tools alone just move the queue.
 
 ## Sources
 [1] Sui, Zhao, Ma, He, Wang and Xu, "PASTE: Parallelizing Tool Execution and LLM Generation for Low-Latency Agent Serving," arXiv:2603.18897v3, 16 June 2026. https://arxiv.org/html/2603.18897v3
