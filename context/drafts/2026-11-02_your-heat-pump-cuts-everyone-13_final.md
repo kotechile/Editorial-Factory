@@ -29,7 +29,7 @@ The bill driving the purchase keeps climbing. The average monthly electric bill 
 
 ## The big picture:
 
-Most American grids are built for a summer afternoon, not a January night. In the Southwest, the Upper Midwest, and the Northeast, demand peaks in July, so the plants and wires that carry it sit half-idle all winter. That spare room is the winter headroom the model uses. [1]
+Most American grids are built for a summer afternoon, not a January night. In the Southwest, the Upper Midwest, and the Northeast, demand peaks in July, so the plants and wires that carry it sit half-idle all winter. That spare room is the winter headroom the model uses, and by RMI's count it holds 86 million more homes than the 23 million that have a heat pump today. [1]
 
 Heat pumps fill that room with new use and no new power plant. The grid's fixed cost then spreads across more units of power, which lowers the average price. What strikes me is how old the pattern is: from 1980 to 2000, demand rose more than 70% while inflation-adjusted rates fell about 26%, as the grid was used 18% more efficiently. [1]
 
