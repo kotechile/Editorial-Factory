@@ -390,3 +390,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-01 | `your-3000-psi-washers-11-gpm-trap` | outdoor_power_equipment | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-3000-psi-washers-11-gpm-trap/featured.jpg` |
 | 2026-11-01 | `your-149-99-scope-blinds-at-3-94` | home_diagnostics_tech | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-149-99-scope-blinds-at-3-94/featured.jpg` |
 | 2026-11-02 | `your-trace-fails-as-an-alarm` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-trace-fails-as-an-alarm/featured.jpg` |
+| 2026-11-02 | `your-gateway-was-malicious-for-104-minutes` | enterprise_ai_governance | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-gateway-was-malicious-for-104-minutes/featured.jpg` |

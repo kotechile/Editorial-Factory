@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T11:10:38Z",
+  "updated_at": "2026-11-02T11:21:40Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4844,6 +4844,24 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-01",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_your-gateway-was-malicious-for-104-minutes",
+      "title": "Your Gateway's 104-Minute Trap",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-02",
       "public": false
     },
     {

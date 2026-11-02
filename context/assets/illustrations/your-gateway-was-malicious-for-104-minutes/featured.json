@@ -1,0 +1,114 @@
+{
+  "slug": "your-gateway-was-malicious-for-104-minutes",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper gateway module with a keyhole and one key half-inserted under a watchful lens silhouette on a steel server-room table.",
+      "caption": "A watched gateway that holds every model key becomes the single point a compromised build can exploit.",
+      "title": "Watched Gateway Keyhole Trap Collage",
+      "bytes": 380225,
+      "sha256": "sha256:785e2591caa126d009b346c8070c718b"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A minimalist editorial cut-paper collage on a brushed steel table inside a server room. Two paper silhouettes: a rack-mounted gateway module with a keyhole cutout and one paper key turned halfway in the socket; beside it, a paper watchful lens disc with a circular cutout. Hand-torn rag paper with visible fibre, physical cast shadows under each layer. One raking light from the left throws long shadows. Palette: graphite, safety yellow, bone white. Asymmetric off-center composition with the gateway module right of frame and generous negative space left. No legible print.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The article is a conceptual governance and software-supply-chain dilemma with no physical machine to photograph; paper collage lets the image state the paradox of a single watched gateway holding both the keys and the view without falling into datacenter stock. It sits on a server-room table to ground it in the site's industrial world.",
+  "cue": "read the keys the box exists to hold",
+  "subject": "a cut-paper rack-mounted gateway module with a keyhole and a key half-inserted, layered under a watchful lens silhouette",
+  "core_thesis": "Federal guidance now tells firms to run every agent call through one watched gateway, which puts both the watching and the model keys in a single box\u2014and five days later the most widely used open-source gateway shipped a booby-trapped build that read those keys, making how the gateway was built a governance question.",
+  "core_conflict": "centralized oversight vs compromised supply chain\u2014the one gateway that holds all model keys and monitoring sightlines is also the one path a malicious build can exploit",
+  "composition": "asymmetric off-center composition with the gateway module right of frame and generous negative space left",
+  "alt_text": "Cut-paper server rack panel with a key turned in its keyhole, beside a torn paper lens disc on a steel table.",
+  "caption": "LiteLLM's 104-Minute Trap: Model keys sat inside a poisoned build for 104 minutes.",
+  "title": "LiteLLM's 104-Minute Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-gateway-was-malicious-for-104-minutes/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 382092,
+  "sha256": "sha256:ad6e38599b30907aa4a1ef2d00762b3f994b68200a669d1be9493989ea90da64",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 382092,
+    "quality": 84,
+    "sha256": "sha256:ad6e38599b30907aa4a1ef2d00762b3f994b68200a669d1be9493989ea90da64",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b5345107c9112b81f976f4a768bcae0635d43e3b43350f3b1d4aa2c4b1601822",
+  "render_phash": "6166614666646164656465646476413621b421b201ea0f543a3c2f7800c20008",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark grey cut-paper cutout shaped like a rack-mounted panel with slot openings stands upright on a light grey surface, a yellow paper key overlapping its center, with a dark grey paper disc bearing a white ring standing to its right, all in front of an out-of-focus server-room aisle of racks with green indicator lights.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The cut-paper gateway module with a key and a watchful lens silhouette directly stages the article's mechanism \u2014 a watched gateway holding the model keys that a compromised build read \u2014 rather than a generic or unrelated scene."
+  },
+  "source_hash": "sha256:12b9376ae6f64a591e9fc7d1ff3ac0e6",
+  "source_chars": 6782,
+  "task_id": "34d1e4743f3e61f8ff922023fdac8372",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_529876fe42825f986d966216883330a3.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A minimalist editorial cut-paper collage on a brushed steel table inside a server room. Two paper silhouettes: a rack-mounted gateway module with a keyhole cutout and one paper key turned halfway in the socket; beside it, a paper watchful lens disc with a circular cutout. Hand-torn rag paper with visible fibre, physical cast shadows under each layer. One raking light from the left throws long shadows. Palette: graphite, safety yellow, bone white. Asymmetric off-center composition with the gateway module right of frame and generous negative space left. No legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-02T11:19:27+00:00",
+  "overlay": {
+    "kicker": "AI GATEWAY SUPPLY CHAIN ATTACK",
+    "title": "LITELLM'S 104-MINUTE TRAP",
+    "hook": "Model keys sat inside a poisoned build for 104 minutes",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 75,
+    "contrast": 4.51,
+    "target": 4.5,
+    "clutter": 0.208,
+    "region_rgb": [
+      123,
+      130,
+      134
+    ],
+    "binding_rgb": [
+      147,
+      154,
+      160
+    ],
+    "title_lines": [
+      "LITELLM'S",
+      "104-MINUTE TRAP"
+    ],
+    "subject": 0.066,
+    "ink_subject": 0.017,
+    "spike": 0.26,
+    "generated_at": "2026-11-02T11:19:27+00:00"
+  }
+}
