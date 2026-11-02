@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T12:40:22Z",
+  "updated_at": "2026-11-02T13:00:35Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4897,6 +4897,24 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-02",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_your-inventory-bill-is-24-percent-prepaid",
+      "title": "Your Inventory Bill Is 24% Prepaid",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-02",
       "public": false
     },
