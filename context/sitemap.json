@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T15:28:57Z",
+  "updated_at": "2026-11-02T11:09:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4844,6 +4844,24 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-01",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_your-trace-fails-as-an-alarm",
+      "title": "Your Trace Fails as an Alarm: 26.25% Profile",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-02",
       "public": false
     }
   ]
