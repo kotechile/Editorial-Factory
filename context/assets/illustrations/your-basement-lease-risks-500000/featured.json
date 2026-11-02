@@ -1,0 +1,112 @@
+{
+  "slug": "your-basement-lease-risks-500000",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Basement apartment side door with brass key in deadbolt, concrete steps, warm lamplight against blue dusk",
+      "caption": "A rented basement conversion turns the side door into the start of a tax clock that can unwind a home-sale exclusion.",
+      "title": "Your Basement Lease Risks $500,000 \u2014 Basement Side Door",
+      "bytes": 349495,
+      "sha256": "sha256:bd600139291d0370c0c72bd94906782b"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "35mm anamorphic wide photograph from the driveway, off-centre composition. A basement apartment side door in a painted wood frame is the hero, set into a brick house at blue hour; a brass key in the deadbolt catches a single warm wall lamp from the left, while cool dusk fill comes from the right. Concrete steps descend toward the door, deep shadow on the right third, bone white, graphite, ochre palette, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, labels, signs, numbers, UI",
+  "rationale": "Cinematic still holds the decisive moment when a home improvement becomes a rental business asset, setting the scene at the actual threshold\u2014blue-hour driveway, single practical lamp. It avoids document text and puts the home-equity tax tension into an environmental photograph from wellroost's world.",
+  "cue": "tenancy starts a clock",
+  "subject": "Basement apartment side door with a brass key in the deadbolt",
+  "core_thesis": "A rented basement conversion is a business asset that yields a small annual depreciation write-off but triggers tax recapture and risks the $500,000 home-sale exclusion once tenancy lasts beyond three years.",
+  "core_conflict": "small annual depreciation benefit versus long-term capital gains tax and exclusion loss",
+  "composition": "extreme asymmetry, door on left third, deep shadow right",
+  "alt_text": "Basement Lease Risks $500,000. Basement apartment side door with brass key in deadbolt, concrete steps, warm lamplight against blue dusk",
+  "caption": "Basement Lease Risks $500,000: The lease can erase your $500,000 home-sale exclusion.",
+  "title": "Basement Lease Risks $500,000",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-basement-lease-risks-500000/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401300,
+  "sha256": "sha256:24b7abae47f2363b6feca348f16fbf413e49dc6f71f11f8719006cb07eb247f2",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401300,
+    "quality": 84,
+    "sha256": "sha256:24b7abae47f2363b6feca348f16fbf413e49dc6f71f11f8719006cb07eb247f2",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f0162d6dea3c3dd80c4528a7d2fb8bdd10f577708e90bf4b72de26b278b34bb5",
+  "render_phash": "037f279f098f199f019f219f219f21bf21bf01bf21bf0dff01bf49bf03bf03bf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A closed white door with a key hanging in its lock, set into a brick wall on concrete steps, lit by a small wall lantern on the left, with the right half of the frame falling into dark shadow.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The image shows a basement apartment's own side door with a key in the deadbolt, which is literally the rented conversion and the tenancy that starts the article's exclusion clock, so the subject matches the story's mechanism rather than generic filler."
+  },
+  "source_hash": "sha256:86e3604aeb75b60c4ae827a1062e9324",
+  "source_chars": 4649,
+  "task_id": "6f991f7576bd85de2504dc8a6c7591cd",
+  "credits": 5.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/6f991f7576bd85de2504dc8a6c7591cd_1793645219697.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "35mm anamorphic wide photograph from the driveway, off-centre composition. A basement apartment side door in a painted wood frame is the hero, set into a brick house at blue hour; a brass key in the deadbolt catches a single warm wall lamp from the left, while cool dusk fill comes from the right. Concrete steps descend toward the door, deep shadow on the right third, bone white, graphite, ochre palette, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-02T18:47:05+00:00",
+  "overlay": {
+    "kicker": "REAL ESTATE // BASEMENT RENTAL TAX",
+    "title": "BASEMENT LEASE RISKS $500,000",
+    "hook": "The lease can erase your $500,000 home-sale exclusion",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.68,
+    "target": 4.5,
+    "clutter": 0.071,
+    "region_rgb": [
+      20,
+      32,
+      38
+    ],
+    "binding_rgb": [
+      23,
+      43,
+      50
+    ],
+    "title_lines": [
+      "BASEMENT LEASE",
+      "RISKS $500,000"
+    ],
+    "subject": 0.016,
+    "ink_subject": 0.006,
+    "spike": 0.055,
+    "generated_at": "2026-11-02T18:47:05+00:00"
+  }
+}
