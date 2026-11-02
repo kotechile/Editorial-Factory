@@ -1,0 +1,116 @@
+{
+ "slug": "your-inventory-bill-is-24-percent-prepaid",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Isometric cutaway of twin warehouse inventory bays: one funded by customer prepayments, one by borrowed cash",
+   "caption": "The same inventory build appears twice in isometric cutaway: prepaid on the left, borrowed on the right.",
+   "title": "Prepaid vs Borrowed Inventory Build Cutaway",
+   "bytes": 406859,
+   "sha256": "sha256:05c8caf8f11f58c288318a3114035d3c"
+  }
+ ],
+ "style": "technical_isometric",
+ "style_label": "Technical isometric cutaway",
+ "style_when": "the article explains how a system, process or stack actually works — money flows, supply chains, pipelines, an agent assembly line",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Split-screen technical isometric cutaway of a warehouse aisle split by a central concrete spine. Left bay: three pallets of safety-yellow track shoes and grey engine blocks on galvanized steel racking beside a cobalt-blue prepayment tray holding blank advance slips. Right bay: identical pallets under a cast-iron debt clamp and rate gear. Thin consistent line weight, muted graphite and concrete tones with cobalt accent; raking light from upper left; corrugated steel and concrete floor; generous empty margin; no text, no labels.",
+ "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, UI",
+ "rationale": "The story is an abstract working-capital mechanism, not a single machine or facility, so a technical isometric cutaway can diagram the funding split with physical engineering detail. It allows identical inventory to be shown twice with different financing hardware, matching the contrast in the article.",
+ "cue": "customer advance is inventory finance at zero",
+ "subject": "twin warehouse inventory bays of identical heavy equipment components, one funded by customer prepayment slips and one under a debt clamp and rate gear",
+ "core_thesis": "The same physical inventory build carries a different cash cost depending on who funds it: customer advances finance at zero, while a self-funded build costs the policy rate.",
+ "core_conflict": "Prepaid customer advances vs self-funded/borrowed inventory carrying cost, producing opposite cash-flow statements for identical stock.",
+ "composition": "split-screen diptych with left-right scenario contrast",
+ "alt_text": "Isometric twin warehouse bays holding the same stock, one paid for by customer advances and one by borrowed money.",
+ "caption": "Your Inventory Bill Is 24% Prepaid: Who funds the stock decides the cash flow.",
+ "title": "Your Inventory Bill Is 24% Prepaid",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 2,
+ "pinned": {
+  "style": "technical_isometric"
+ },
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-inventory-bill-is-24-percent-prepaid/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 401568,
+ "sha256": "sha256:5d6acf8dd86f08c330ee195aac76219999444e51bb3fcd6c7dddef0498d0065c",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 401568,
+  "quality": 56,
+  "sha256": "sha256:5d6acf8dd86f08c330ee195aac76219999444e51bb3fcd6c7dddef0498d0065c",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:33da1b41ec3b4e82ad15325784185e72a65e7e2405e204cfb20d8260e5625b26",
+ "render_phash": "d9849dc687d6857299529966b172f9649966b162db64c234a73acb2c65193332",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "An isometric cutaway of two identical warehouse bays divided by a concrete pillar, each with pallet racking holding engine blocks, stacks of yellow parts boxes, and wooden pallets, where the left bay has blank white paperwork slips on the floor (one in a blue tray) and the right bay has a metal C-clamp and a toothed gear sitting on the top shelf.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.82,
+  "reason": "The diptych shows the article's actual mechanism — the same physical stock in two bays, one carrying customer prepayment slips (advance-funded inventory) and one under a clamp and rate gear (debt/carry-cost-funded inventory) — rather than a generic warehouse."
+ },
+ "source_hash": "sha256:49b92f11eca41f950d8b1ab6ca7398d0",
+ "source_chars": 4514,
+ "task_id": "820437a8a5d8743dd4dde5f1bb59e6c0",
+ "credits": 18.0,
+ "cost_ms": 53,
+ "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_977d1f64e96689a65d702a41e22ff7f6.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "Split-screen technical isometric cutaway of a warehouse aisle split by a central concrete spine. Left bay: three pallets of safety-yellow track shoes and grey engine blocks on galvanized steel racking beside a cobalt-blue prepayment tray holding blank advance slips. Right bay: identical pallets under a cast-iron debt clamp and rate gear. Thin consistent line weight, muted graphite and concrete tones with cobalt accent; raking light from upper left; corrugated steel and concrete floor; generous empty margin; no text, no labels.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-11-02T13:18:14+00:00",
+ "overlay": {
+  "kicker": "WORKING CAPITAL // PREPAID INVENTORY",
+  "title": "YOUR INVENTORY BILL IS 24% PREPAID",
+  "hook": "Who funds the stock decides the cash flow",
+  "anchor": "top-left",
+  "light": false,
+  "scrim": 75,
+  "contrast": 5.86,
+  "target": 5.5,
+  "clutter": 0.281,
+  "region_rgb": [
+   185,
+   184,
+   184
+  ],
+  "binding_rgb": [
+   140,
+   139,
+   145
+  ],
+  "title_lines": [
+   "YOUR INVENTORY",
+   "BILL IS 24% PREPAID"
+  ],
+  "subject": 0.143,
+  "ink_subject": 0.08,
+  "spike": 0.394,
+  "generated_at": "2026-11-02T13:18:14+00:00"
+ }
+}

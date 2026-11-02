@@ -14,10 +14,16 @@ meta_title: "Your Inventory Bill Is 24% Prepaid"
 meta_title_source: "derived_from_title"
 meta_description: "Caterpillar put $4.1 billion of cash into stock in the first nine months of 2026, twice the drain of a year earlier."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-inventory-bill-is-24-percent-prepaid/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric twin warehouse bays holding the same stock, one paid for by customer advances and one by borrowed money."
+image_caption: "Your Inventory Bill Is 24% Prepaid: Who funds the stock decides the cash flow."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Caterpillar put $4.1 billion of cash into stock in the first nine months of 2026, twice the drain of a year earlier. Its cash from operations still rose 30%, because buyers had already paid for 24% of the stock on its books [1]. Those advances on machines that had not shipped added $4.0 billion, against $1,649 million a year earlier [1]. Tractor Supply added 11.2% to its stock in the same stretch with no such line behind it, and its cash from operations fell by a third [2]. The same build landed on opposite sides of the cash figures, and the difference is the part of your inventory bill that is already prepaid.
+Caterpillar put $4.1 billion of cash into stock in the first nine months of 2026, twice the drain of a year earlier. Its cash from operations still rose 30%, because buyers had already put up $4.0 billion of what the build absorbed [1]. The advance balance covered 24% of the stock on its books. Those advances on machines that had not shipped added $4.0 billion, against $1,649 million a year earlier [1]. Tractor Supply added 11.2% to its stock in the same stretch with no such line behind it, and its cash from operations fell by a third [2]. The same build landed on opposite sides of the cash figures, and the difference is the part of your inventory bill that is already prepaid.
 
 <!-- tension -->
 
@@ -33,25 +39,8 @@ Tractor Supply's build had no buyer standing behind it. Its stock rose 11.2% whi
 
 - **162 days vs 129 — stock on hand:** Caterpillar's $22,214 million of stock against nine-month cost of sales is 162 days of goods, and Tractor Supply's $3,618.8 million against its own cost line is 129 days, both worked out from the closing balances [1][2].
 - **$5,329 million — customer advances:** Caterpillar's money paid before shipment, up from $3,314 million at the start of the year, with $4,002 million arriving on the cash-flow line against $1,649 million [1].
-- **30% up, 33% down — cash from operations:** The company's nine-month figure rose to $10,593 million from $8,148 million while Tractor Supply's fell to $882.6 million from $1,310.4 million [1][2].
-- **3.75% to 4% — policy rate:** the range the Federal Reserve held on Oct. 28, on a 10–2 vote, with two members wanting a quarter-point rise [3].
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
-  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Your Inventory Bill Is 24% Prepaid</text>
-  <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
-  <!-- Row 1 -->
-  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">cash from operations</text>
-  <rect x="240" y="70" width="300" height="18" rx="4" fill="#1e293b"/>
-  <rect x="240" y="70" width="90" height="18" rx="4" fill="#818cf8"/>
-  <text x="340" y="84" fill="#f1f5f9" font-size="13" font-weight="600">30%</text>
-  <text x="394" y="84" fill="#64748b" font-size="11">([1] [2])</text>
-  <!-- Row 2 -->
-  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">policy rate</text>
-  <rect x="240" y="118" width="300" height="18" rx="4" fill="#1e293b"/>
-  <rect x="240" y="118" width="11" height="18" rx="4" fill="#818cf8"/>
-  <text x="261" y="132" fill="#f1f5f9" font-size="13" font-weight="600">3.8%</text>
-  <text x="315" y="132" fill="#64748b" font-size="11">([3])</text>
-</svg>
+- **$10,593 million — cash from operations:** Caterpillar's nine-month figure rose 30% from $8,148 million, while Tractor Supply's fell 33%, to $882.6 million from $1,310.4 million [1][2].
+- **3-3/4 to 4 percent — policy rate:** the range the Federal Reserve held on Oct. 28, on a 10–2 vote, with two members wanting a quarter-point rise [3].
 
 <!-- tactical-insight -->
 
@@ -65,7 +54,7 @@ The third is payables, the other zero-cost source in the chain. Tractor Supply's
 
 ## The catch
 
-This is a contrast between two firms, not a market study. An equipment maker can book advances because it sells years before it builds, while a retailer sells at the counter and cannot take a deposit on a bag of feed. So 24% describes Caterpillar's business model, not a target another firm can copy. My view is that the share still matters, because the other choice is your own cash, and the price of your own cash is published every six weeks.
+This is a contrast between two firms, not a market study. An equipment maker can book advances because it sells years before it builds, while a retailer sells at the counter and cannot take a deposit on a bag of feed. So 24% describes Caterpillar's business model, not a target another firm can copy. My view is that the share still matters, because the other choice is your own cash, and the price of your own cash is set at every policy meeting.
 
 An advance is not free, because it carries a ship date. The buyer has paid for a machine that must be shipped, so the cash behind the build is a promise to finish it. If demand softens, the firm holding the deposits must ship into the weaker market. Caterpillar's quarter shows the other side of the same margin: $128 million of tariff refunds lifted operating profit while material costs including tariffs still ran through the factory [1].
 

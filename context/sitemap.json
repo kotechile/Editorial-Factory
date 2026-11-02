@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T13:00:35Z",
+  "updated_at": "2026-11-02T13:28:43Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4861,6 +4861,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-02",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_kroger-direct-buy-retires-its-own-fine",
+      "title": "Kroger's Lane Kills Your 3% Fee",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-02",
       "public": false
     },

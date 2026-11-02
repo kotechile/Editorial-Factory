@@ -13,7 +13,7 @@ sources:
 ---
 
 <!-- lead -->
-Caterpillar put $4.1 billion of cash into stock in the first nine months of 2026, twice the drain of a year earlier. Its cash from operations still rose 30%, because buyers had already paid for 24% of the stock on its books [1]. Those advances on machines that had not shipped added $4.0 billion, against $1,649 million a year earlier [1]. Tractor Supply added 11.2% to its stock in the same stretch with no such line behind it, and its cash from operations fell by a third [2]. The same build landed on opposite sides of the cash figures, and the difference is the part of your inventory bill that is already prepaid.
+Caterpillar put $4.1 billion of cash into stock in the first nine months of 2026, twice the drain of a year earlier. Its cash from operations still rose 30%, because buyers had already put up $4.0 billion of what the build absorbed [1]. The advance balance covered 24% of the stock on its books. Those advances on machines that had not shipped added $4.0 billion, against $1,649 million a year earlier [1]. Tractor Supply added 11.2% to its stock in the same stretch with no such line behind it, and its cash from operations fell by a third [2]. The same build landed on opposite sides of the cash figures, and the difference is the part of your inventory bill that is already prepaid.
 
 <!-- tension -->
 
@@ -29,8 +29,8 @@ Tractor Supply's build had no buyer standing behind it. Its stock rose 11.2% whi
 
 - **162 days vs 129 — stock on hand:** Caterpillar's $22,214 million of stock against nine-month cost of sales is 162 days of goods, and Tractor Supply's $3,618.8 million against its own cost line is 129 days, both worked out from the closing balances [1][2].
 - **$5,329 million — customer advances:** Caterpillar's money paid before shipment, up from $3,314 million at the start of the year, with $4,002 million arriving on the cash-flow line against $1,649 million [1].
-- **30% up, 33% down — cash from operations:** The company's nine-month figure rose to $10,593 million from $8,148 million while Tractor Supply's fell to $882.6 million from $1,310.4 million [1][2].
-- **3.75% to 4% — policy rate:** the range the Federal Reserve held on Oct. 28, on a 10–2 vote, with two members wanting a quarter-point rise [3].
+- **$10,593 million — cash from operations:** Caterpillar's nine-month figure rose 30% from $8,148 million, while Tractor Supply's fell 33%, to $882.6 million from $1,310.4 million [1][2].
+- **3-3/4 to 4 percent — policy rate:** the range the Federal Reserve held on Oct. 28, on a 10–2 vote, with two members wanting a quarter-point rise [3].
 
 <!-- tactical-insight -->
 
@@ -44,7 +44,7 @@ The third is payables, the other zero-cost source in the chain. Tractor Supply's
 
 ## The catch
 
-This is a contrast between two firms, not a market study. An equipment maker can book advances because it sells years before it builds, while a retailer sells at the counter and cannot take a deposit on a bag of feed. So 24% describes Caterpillar's business model, not a target another firm can copy. My view is that the share still matters, because the other choice is your own cash, and the price of your own cash is published every six weeks.
+This is a contrast between two firms, not a market study. An equipment maker can book advances because it sells years before it builds, while a retailer sells at the counter and cannot take a deposit on a bag of feed. So 24% describes Caterpillar's business model, not a target another firm can copy. My view is that the share still matters, because the other choice is your own cash, and the price of your own cash is set at every policy meeting.
 
 An advance is not free, because it carries a ship date. The buyer has paid for a machine that must be shipped, so the cash behind the build is a promise to finish it. If demand softens, the firm holding the deposits must ship into the weaker market. Caterpillar's quarter shows the other side of the same margin: $128 million of tariff refunds lifted operating profit while material costs including tariffs still ran through the factory [1].
 
