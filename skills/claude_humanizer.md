@@ -401,6 +401,18 @@ one.
   `tee /tmp/loop3.log`, check the `_final.md` mtime/size afterwards, and poll the session
   (`process action=wait`, clamped to ~180 s per call, repeatedly until `exited`) instead of assuming
   the rewrite finished.
+- **A rewrite can invent a first-person test the desk never ran, to satisfy the observer-cue matcher (learned 2026-11-02).**
+  On the replenishment-frequency evergreen the held candidate opened the tension section "I ran the same halving
+  against a four-week supplier and the cut came out near 5.1%, not 30%" — a hands-on claim this desk cannot make, and
+  `review_audit`, the Flesch floor and the voice gate all passed it because the sentence is well formed and carries
+  exactly the cue the gate wants. Read every first-person sentence in a rewrite as a **claim**, not a cue: a computed
+  number belongs in the impersonal ("run the same halving against a four-week supplier and the cut lands near 4.3%"),
+  and a rewrite that needs a cue in a section it cannot honestly observe gets an attention cue ("I keep coming back to
+  how few teams rerun it"), not a fabricated experiment. Same run, one sibling: a held attempt also promoted a 5.1%
+  rung into the lead alongside the brief's 4.3% at 35 days, two different lead times on one ladder — re-read every
+  enumerated rung against the brief's own table, because an extra rung that is arithmetically right still contradicts
+  the ladder the brief verified.
+
 - **A cron session's foreground terminal call is cut at ~420 s whatever timeout is asked for, so launch the driver detached (learned 2026-10-19).** A `terminal(timeout=580)` call running `timeout 540 python3 scripts/loop3_<slug>.py 2>&1 | tee /tmp/loop3.log | tail -30` came back as `timed out after 420.0s`, killed the rewrite mid-generation, left `/tmp/loop3.log` empty and wrote no `_final.md` — the run had to be relaunched from scratch. Start the driver with the tool's `background=true` and `nohup python3 -u <driver> > /tmp/loop3.log 2>&1 &`, then poll (`sleep 45; tail /tmp/loop3.log`) until the `WROTE … final_verdict=` line and the `_final.md` file both exist. Absence of output is never evidence that the rewrite passed.
 - **A rewrite can re-cut a hand-set title past the standard and drop a brief's own qualification (learned
   2026-10-15).** The frontier re-emitted a hand-set 8-word title as an 11-word one ("…: Why 52% of Plans

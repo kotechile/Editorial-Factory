@@ -785,6 +785,25 @@ push, and when it names only function words: strip it from the artifact and the 
 REST (`POST /wp-json/wp/v2/posts/<id>` with `content`, app password from `wp_draft.credentials_for` after `load_env()`),
 then force the front's redeploy — and record the re-stamp behaviour as an engine item, because the next sync restores it.
 
+**Hosts probed live 2026-11-02, building a replenishment-frequency / cycle-stock brief (the `meio_working_capital_tco` evergreen).**
+Carries the figure as plain text and fetches first try: `blog.arkieva.com/replenishment-frequency` (the arithmetic
+that makes the topic — "New SS = (1/√2) * Original SS = 0.707 * Original SS", its 30% and 41% results, and the
+assumption printed in the same paragraph, "if the lead time is halved (which is what happens when replenishment
+frequency is doubled)"; its shelf example then defines the lead time AS the interval — "the maximum delay time
+between replenishments is 1 day; hence, the lead time is also 1 day"); `netstock.com`'s safety-stock guide (the
+review-period model SS = z·σ·√(T + L), a worked `1.65 × 25 × √(7 + 14) ≈ 165 units`, and the definition of cycle
+stock); `abcsupplychain.com` (the review period listed first among the factors that make lead time uncertain, a
+35-day-against-40-day worked case landing 427 pieces and a 1,578-unit reorder point, and the one-line rule "always
+use the same time unit for lead time and demand"); `usersolutions.com` (104 units at a fixed 10-day lead against 506
+once σ_L = 3 days enters it); and `onetonline.org/link/summary/43-5071.00` (shipping, receiving and inventory clerks,
+"Median wages (2025) $21.76 hourly, $45,260 annual"). **The trap this beat builds on:** the practitioner claim
+"doubling replenishment frequency cuts safety stock 30%" is arithmetically correct and contextually narrow — the
+page's next example sets the lead time equal to the replenishment interval, so 30% is the T + L formula at L = 0
+(1 − √0.5 = 29.3%). Read the assumption sentence inside the page that prints the formula before the figure is used
+as a general rule, and compute the honest number at the reader's own lead time: 1 − √((T/2 + L)/(T + L)), which is
+13.4% at a one-week supplier, 4.3% at 35 days and 2.0% on a 90-day clock. The gain that does scale with order
+frequency is cycle stock (half the order quantity), not the buffer.
+
 ## 5. Handoff
 
 **The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
