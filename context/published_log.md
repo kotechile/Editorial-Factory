@@ -275,6 +275,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-02 | agentic_ai | your-192-sessions-stall-the-model-not-the-tools | Your Queue Caps the Wrong Unit: 192 Sessions | https://pressflow.aichieve.net/published/2026-11-02_your-192-sessions-stall-the-model-not-the-tools.md | reader site only |
 | 2026-11-02 | enterprise_ai_governance | your-90-day-key-is-two-live-keys | Your 90-Day Key: Still Live | https://pressflow.aichieve.net/published/2026-11-02_your-90-day-key-is-two-live-keys.md | reader site only |
 | 2026-11-02 | home_equity_tco | your-basement-lease-risks-500000 | Your Basement Lease Risks $500,000 | https://pressflow.aichieve.net/published/2026-11-02_your-basement-lease-risks-500000.md | reader site only |
+| 2026-11-02 | home_infrastructure_lifecycle_tco | your-septic-interval-is-18-months | Your Septic Interval: 18 Months, Not 5 Years | https://pressflow.aichieve.net/published/2026-11-02_your-septic-interval-is-18-months.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

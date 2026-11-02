@@ -1,0 +1,114 @@
+{
+  "slug": "your-septic-interval-is-18-months",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Septic tank cutaway with a clear measuring tube showing sludge and scum depths against an outlet tee.",
+      "caption": "A cutaway septic tank and measuring tube make the case that pumping dates follow measured sludge and scum, not a calendar.",
+      "title": "Septic tank measured interval cutaway",
+      "bytes": 379535,
+      "sha256": "sha256:7d17b9dea0e742a4499c9abd684aef85"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Technical isometric cutaway illustration of a 1,000-gallon septic tank resting on a plywood drafting table in a basement, axonometric projection. A clear measuring tube is inserted through an open access riser, showing a dark sludge layer at the base, a lighter scum layer at the top, and an outlet tee near mid-height with two small depth marks. Flat muted palette of bone white, graphite, and rust; thin consistent line weight; one hard directional key light from upper left raking across the table. Orthographic projection with uniform focus across the drawing surface and subtle film grain over the paper. Asymmetric framing with the tank off-centre left and the measuring tube as a vertical accent right, generous empty margin, unlabelled, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos",
+  "rationale": "This topic is a systemic operational explanation\u2014how the tank's layered solids and measured depth govern the interval. A clean isometric cutaway shows the hidden mechanism and the measuring act without resorting to a literal photo of a yard or a generic buried box.",
+  "cue": "the one a pumper measures and writes down",
+  "subject": "An unbranded septic tank cutaway with a clear measuring tube registering sludge and scum depths against the outlet tee",
+  "core_thesis": "The septic pump-out interval is math on the tank's solids allowance and the household's measured build-up, not the three-to-five-year calendar every page repeats.",
+  "core_conflict": "Scheduled calendar trust vs measured sludge and scum fill rate",
+  "composition": "Asymmetric axonometric off-centre left, measuring tube as vertical accent right, generous empty margin top-right",
+  "alt_text": "Your Septic Interval Is 18 Months. Septic tank cutaway with a clear measuring tube showing sludge and scum depths against an outlet tee.",
+  "caption": "Your Septic Interval Is 18 Months: four people fill a tank's solids allowance in 18 months.",
+  "title": "Your Septic Interval Is 18 Months",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-septic-interval-is-18-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 396817,
+  "sha256": "sha256:9148fe22d07b0da86eeec1013c283ad47d7432a5e8c2409606b9d09b4f5566a1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 396817,
+    "quality": 76,
+    "sha256": "sha256:9148fe22d07b0da86eeec1013c283ad47d7432a5e8c2409606b9d09b4f5566a1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:22d7a6dcf6310f445a3f6ec557caf2ebd837e4218ee98ee4c24f9425531f8fe7",
+  "render_phash": "e520fd22ec22c6c2cfc2ce42c572e922c9228c328c32ae69961a8812a2f292d2",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric cutaway illustration of a white cylindrical septic tank on a wooden table, its cut-open side revealing a dark sludge layer at the bottom under a lighter crusted scum layer, with a red-brown outlet tee and a vertical clear tube inside the tank and a second clear measuring tube with a few tick marks standing free at the right, against a plain wall with empty space at the upper right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.92,
+    "reason": "The frame shows the article's actual object and mechanism \u2014 a septic tank's sludge and scum layers read against a measuring tube and outlet tee \u2014 which is exactly the solids-allowance math the headline's interval claim rests on."
+  },
+  "source_hash": "sha256:31f3185c7dac2874cc34188959bb5142",
+  "source_chars": 5327,
+  "task_id": "2a73c5deb9c18838edf80841a9e81e85",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6b676967e6ef0eff22958743234ba4a8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Technical isometric cutaway illustration of a 1,000-gallon septic tank resting on a plywood drafting table in a basement, axonometric projection. A clear measuring tube is inserted through an open access riser, showing a dark sludge layer at the base, a lighter scum layer at the top, and an outlet tee near mid-height with two small depth marks. Flat muted palette of bone white, graphite, and rust; thin consistent line weight; one hard directional key light from upper left raking across the table. Orthographic projection with uniform focus across the drawing surface and subtle film grain over the paper. Asymmetric framing with the tank off-centre left and the measuring tube as a vertical accent right, generous empty margin, unlabelled, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-02T19:27:29+00:00",
+  "overlay": {
+    "kicker": "HOME WASTEWATER // PUMP-OUT MATH",
+    "title": "YOUR SEPTIC INTERVAL IS 18 MONTHS",
+    "hook": "four people fill a tank's solids allowance in 18 months",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 8.08,
+    "target": 4.5,
+    "clutter": 0.224,
+    "region_rgb": [
+      234,
+      228,
+      214
+    ],
+    "binding_rgb": [
+      210,
+      203,
+      184
+    ],
+    "title_lines": [
+      "YOUR SEPTIC INTERVAL",
+      "IS 18 MONTHS"
+    ],
+    "subject": 0.202,
+    "ink_subject": 0.129,
+    "spike": 0.495,
+    "generated_at": "2026-11-02T19:27:29+00:00"
+  }
+}

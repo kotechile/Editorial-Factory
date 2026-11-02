@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:48:03Z",
+  "updated_at": "2026-11-02T19:28:14Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4996,6 +4996,24 @@
       "date": "2026-11-02",
       "public": true,
       "url": "https://aichieve.net/your-inventory-bill-is-24-percent-prepaid/"
+    },
+    {
+      "slug": "2026-11-02_your-septic-interval-is-18-months",
+      "title": "Your Septic Interval: 18 Months, Not 5 Years",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-02",
+      "public": false
     },
     {
       "slug": "2026-11-02_your-trace-fails-as-an-alarm",

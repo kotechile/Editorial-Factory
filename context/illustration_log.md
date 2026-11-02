@@ -398,3 +398,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-02 | `your-192-sessions-stall-the-model-not-the-tools` | agentic_ai | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-192-sessions-stall-the-model-not-the-tools/featured.jpg` |
 | 2026-11-02 | `your-90-day-key-is-two-live-keys` | enterprise_ai_governance | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-90-day-key-is-two-live-keys/featured.jpg` |
 | 2026-11-02 | `your-basement-lease-risks-500000` | home_equity_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-basement-lease-risks-500000/featured.jpg` |
+| 2026-11-02 | `your-septic-interval-is-18-months` | home_infrastructure_lifecycle_tco | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-septic-interval-is-18-months/featured.jpg` |
