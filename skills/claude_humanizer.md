@@ -255,6 +255,7 @@ one.
   the `title:` line (restore the scored headline), every numeral in `By the numbers` (restore a dropped
   bullet, not just the prose), any hedged quantifier that replaced a figure, and any appended
   self-graded `## Gate report` (strip it before the gates).
+- **A 20,000-token output budget is not always enough for a ~850-word rewrite on a thinking model (learned 2026-11-02).** `humanizer_tools.MAX_TOKENS` (the module default) produced `ERROR rewrite attempt 1: frontier output truncated (finish_reason=length)` on an 853-word draft, and `humanize_single_draft` treats that exception as fatal (`break`), so the run wrote no `_final.md` at all. Rebinding only the socket timeout is not enough: pass `max_tokens=32000` from the per-draft driver (`ht.call_frontier(prompt, max_tokens=32000, timeout=900)`); the same draft then passed attempt 1 at Flesch 53.4 in about four minutes.
 - **Use the frontier the `stylist` profile is configured to** — do not hard-code a provider. Read the
   profile's `model.default`/`provider` (current live: `deepseek-v4-pro` / `deepseek`, `base_url: ''`).
   The rewrite must run on that frontier. Never substitute a non-frontier model.
