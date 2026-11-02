@@ -1,6 +1,6 @@
 {
   "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -131,6 +131,14 @@
       "title": "Shifting AI Judge Calibration Mechanism",
       "bytes": 2079918,
       "sha256": "sha256:e66059078f0a4da0ddcf9eeac464aa62"
+    },
+    {
+      "revision": 16,
+      "alt_text": "The 915 Million Dollar Judge. Isometric cutaway of a complex optical calibration mechanism with shifting lenses on a",
+      "caption": "The 915 Million Dollar Judge: Why AI quality scores are an expensive illusion.",
+      "title": "The 915 Million Dollar Judge",
+      "bytes": 1565728,
+      "sha256": "sha256:ccca1213ccb674538e37174ffe727eadb025444d5e17388cf4a726abcbdb782a"
     }
   ],
   "style": "technical_isometric",
@@ -157,12 +165,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1565728,
-  "sha256": "sha256:ccca1213ccb674538e37174ffe727eadb025444d5e17388cf4a726abcbdb782a",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 403344,
+  "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f",
   "source_hash": "sha256:81d7da4344ab0b556c51ece31168a1a9",
   "source_chars": 5204,
   "task_id": "4472ea7a1f15b265688e1bff4aa22834",
@@ -184,29 +192,42 @@
     "kicker": "AI OBSERVABILITY // LLM JUDGES",
     "title": "THE 915 MILLION DOLLAR JUDGE",
     "hook": "Why AI quality scores are an expensive illusion",
-    "anchor": "bottom-left",
+    "anchor": "top-right",
     "light": false,
-    "scrim": 30,
-    "contrast": 4.52,
+    "scrim": 15,
+    "contrast": 4.55,
     "target": 4.5,
-    "clutter": 0.147,
+    "clutter": 0.182,
     "region_rgb": [
-      132,
-      144,
-      145
+      146,
+      154,
+      150
     ],
     "binding_rgb": [
-      127,
-      141,
-      144
+      132,
+      149,
+      156
     ],
     "title_lines": [
       "THE 915 MILLION",
       "DOLLAR JUDGE"
     ],
-    "subject": 0.132,
-    "ink_subject": 0.04,
-    "spike": 0.497,
+    "subject": 0.133,
+    "ink_subject": 0.054,
+    "spike": 0.45,
     "generated_at": "2026-10-23T14:16:58+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403344,
+    "quality": 80,
+    "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

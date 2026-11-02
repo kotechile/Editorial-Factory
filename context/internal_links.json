@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T14:19:08+00:00",
+  "generated_at": "2026-11-02T14:19:20+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2130,6 +2130,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "insurance-beats-property-tax-14",
+      "title": "Insurance Bill Beats Property Tax 14%",
+      "url": "https://wellroost.com/insurance-beats-property-tax-14/",
+      "path": "/insurance-beats-property-tax-14/",
+      "sites_live": {
+        "wellroost.com": "/insurance-beats-property-tax-14/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Home insurance now beats the property-tax bill in two-thirds of U.S. counties, by 14% on average, according to a Bloomberg Intelligence study published on\u2026",
+      "modified": "2026-11-02T12:23:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "kill-your-deposit-in-3-days",
       "title": "3 Days to Kill Your Deposit",
       "url": "https://wellroost.com/kill-your-deposit-in-3-days/",
@@ -2283,7 +2306,7 @@
         "yard-robotics"
       ],
       "excerpt": "The Kress KR172 lists at $1,699.99 through a dealer sale that ends on 31 December 2026, and $450 less on the model page that sells the same mower.",
-      "modified": "2026-11-01T14:13:45",
+      "modified": "2026-11-01T14:19:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2682,6 +2705,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-149-99-scope-blinds-at-3-94",
+      "title": "Your $149.99 Scope Blinds Past 3.94",
+      "url": "https://wellroost.com/your-149-99-scope-blinds-at-3-94/",
+      "path": "/your-149-99-scope-blinds-at-3-94/",
+      "sites_live": {
+        "wellroost.com": "/your-149-99-scope-blinds-at-3-94/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "Three inspection cameras, one wall cavity. The spec that decides which one shows you anything is the far edge of its focus range, not the megapixel count.",
+      "modified": "2026-11-01T15:25:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-250-imager-needs-15-degrees",
       "title": "Your $250 Imager Needs 15 Degrees",
       "url": "https://wellroost.com/your-250-imager-needs-15-degrees/",
@@ -2721,6 +2767,29 @@
       ],
       "excerpt": "Buying a spare snow blower battery is a $549 mistake, driven by how makers price their packed kits. EGO (the outdoor power equipment brand) sells its 24-inch\u2026",
       "modified": "2026-10-31T04:49:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-3000-psi-washers-11-gpm-trap",
+      "title": "Your 3,000-PSI Washer's 1.1 GPM Trap",
+      "url": "https://wellroost.com/your-3000-psi-washers-11-gpm-trap/",
+      "path": "/your-3000-psi-washers-11-gpm-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-3000-psi-washers-11-gpm-trap/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "Greenworks sells its 3,000-PSI pressure washer with two numbers that never meet: 3,000 pounds per square inch (PSI) at 1.1 gallons per minute (GPM), and 2.0\u2026",
+      "modified": "2026-11-01T14:51:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2905,6 +2974,29 @@
       ],
       "excerpt": "The window to close your flood gap has 44 days in it. A federal flood policy does not start for 30 days, so the last day to buy one that is in force before\u2026",
       "modified": "2026-10-31T04:48:56",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-heat-pump-cuts-everyone-13",
+      "title": "Your Heat Pump Cuts Everyone 13%",
+      "url": "https://wellroost.com/your-heat-pump-cuts-everyone-13/",
+      "path": "/your-heat-pump-cuts-everyone-13/",
+      "sites_live": {
+        "wellroost.com": "/your-heat-pump-cuts-everyone-13/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Your heat pump cuts home electric rates by 13% in states where the grid peaks in summer, because it fills winter headroom that would otherwise sit idle.",
+      "modified": "2026-11-02T12:38:28",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4673,6 +4765,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "kroger-direct-buy-retires-its-own-fine",
+      "title": "Kroger's Lane Kills Your 3% Fee",
+      "url": "https://aichieve.net/kroger-direct-buy-retires-its-own-fine/",
+      "path": "/kroger-direct-buy-retires-its-own-fine/",
+      "sites_live": {
+        "aichieve.net": "/kroger-direct-buy-retires-its-own-fine/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Kroger is moving roughly a tenth of its buying straight to growers by 2029, and the 3% late fee that has kept its suppliers honest since the on-time bar rose\u2026",
+      "modified": "2026-11-02T13:31:56",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "kv-cache-is-the-concurrency-ceiling",
       "title": "Your GPU Runs Out of Cache Before It Runs Out of Math",
       "url": "https://aichieve.net/kv-cache-is-the-concurrency-ceiling/",
@@ -5632,6 +5747,29 @@
       ],
       "excerpt": "Two measurements landed a day apart: one left 13 capability-steps reachable after their last justified use, the other lifted disclosure to an agent the\u2026",
       "modified": "2026-10-31T04:48:38",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "stop-blaming-demand-planning-for-stockouts",
+      "title": "Stop Blaming Demand Planning for Stockouts",
+      "url": "https://aichieve.net/stop-blaming-demand-planning-for-stockouts/",
+      "path": "/stop-blaming-demand-planning-for-stockouts/",
+      "sites_live": {
+        "aichieve.net": "/stop-blaming-demand-planning-for-stockouts/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The Friday illusion: Your supply chain team celebrates a 96% Case Fill Rate at 5:00 p.m.\u2014only for your retail buyers to hit you with heavy compliance chargebacks by 9:00 a.m. Monday. Why it matters: A single missing promotional SKU turns a respectable 97% Case Fill Rate into a 0% Order Fill Rate, triggering automated On-Time In-Full (OTIF) penalties. Yet most leadership teams misdiagnose these cuts because standard ERP reporting hides factory bottlenecks made two to eight weeks upstream.",
+      "modified": "2026-11-01T21:27:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6964,6 +7102,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-gateway-was-malicious-for-104-minutes",
+      "title": "Your Gateway's 104-Minute Trap",
+      "url": "https://aichieve.net/your-gateway-was-malicious-for-104-minutes/",
+      "path": "/your-gateway-was-malicious-for-104-minutes/",
+      "sites_live": {
+        "aichieve.net": "/your-gateway-was-malicious-for-104-minutes/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "For 104 minutes on 21 October, the Python Package Index served a booby-trapped build of LiteLLM, the open-source gateway many firms place between agents and\u2026",
+      "modified": "2026-11-02T11:21:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-golden-zone-costs-10-miles",
       "title": "Your Golden Zone Costs 10 Miles",
       "url": "https://aichieve.net/your-golden-zone-costs-10-miles/",
@@ -7072,6 +7233,29 @@
       ],
       "excerpt": "The share of purchase orders arriving on time and in full (OTIF) fell to 63.6% in the third quarter, and the loss came from missing units rather than late\u2026",
       "modified": "2026-10-31T04:48:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-inventory-bill-is-24-percent-prepaid",
+      "title": "Your Inventory Bill Is 24% Prepaid",
+      "url": "https://aichieve.net/your-inventory-bill-is-24-percent-prepaid/",
+      "path": "/your-inventory-bill-is-24-percent-prepaid/",
+      "sites_live": {
+        "aichieve.net": "/your-inventory-bill-is-24-percent-prepaid/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Caterpillar put $4.1 billion of cash into stock in the first nine months of 2026, twice the drain of a year earlier.",
+      "modified": "2026-11-02T13:29:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7424,6 +7608,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-trace-fails-as-an-alarm",
+      "title": "Your Trace Fails as an Alarm: 26.25% Profile",
+      "url": "https://aichieve.net/your-trace-fails-as-an-alarm/",
+      "path": "/your-trace-fails-as-an-alarm/",
+      "sites_live": {
+        "aichieve.net": "/your-trace-fails-as-an-alarm/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Two papers posted on 30 October measured the same record from opposite ends, and both say the tool log you keep is not the security proof you think it is.",
+      "modified": "2026-11-02T11:09:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-trace-wont-prove-925-points",
       "title": "Your Trace Won't Prove 92.5 Points",
       "url": "https://aichieve.net/your-trace-wont-prove-925-points/",
@@ -7514,6 +7721,76 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1385,
+      "slug": "kroger-direct-buy-retires-its-own-fine",
+      "title": "Kroger&#8217;s Lane Kills Your 3% Fee",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T13:31:56",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1381,
+      "slug": "your-inventory-bill-is-24-percent-prepaid",
+      "title": "Your Inventory Bill Is 24% Prepaid",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T13:29:06",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1378,
+      "slug": "your-gateway-was-malicious-for-104-minutes",
+      "title": "Your Gateway&#8217;s 104-Minute Trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T11:21:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1376,
+      "slug": "your-trace-fails-as-an-alarm",
+      "title": "Your Trace Fails as an Alarm: 26.25% Profile",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T11:09:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1370,
+      "slug": "stop-blaming-demand-planning-for-stockouts",
+      "title": "Stop Blaming Demand Planning for Stockouts",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-01T21:27:40",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -8561,76 +8838,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1035,
-      "slug": "model-retirement-breaks-audit-trail",
-      "title": "2-Week Notice Breaks Your Audit Trail",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1032,
-      "slug": "answer-field-first-costs-38-points",
-      "title": "Answer Field First Costs 38.15 Points",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1029,
-      "slug": "your-hidden-quantity-gap",
-      "title": "63.6% OTIF: Your Hidden Quantity Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1026,
-      "slug": "inventory-cut-bets-against-prices",
-      "title": "Why Your Inventory Cut Costs 15%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1022,
-      "slug": "your-agent-obeyed-the-data-left",
-      "title": "Silent Egress: Your Agent&#8217;s 0-Click Leak",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:32",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

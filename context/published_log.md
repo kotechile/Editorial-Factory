@@ -272,6 +272,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-02 | home_infrastructure_lifecycle_tco | your-heat-pump-cuts-everyone-13 | Your Heat Pump Cuts Everyone 13% | https://pressflow.aichieve.net/published/2026-11-02_your-heat-pump-cuts-everyone-13.md | reader site only |
 | 2026-11-02 | meio_working_capital_tco | your-inventory-bill-is-24-percent-prepaid | Your Inventory Bill Is 24% Prepaid | https://pressflow.aichieve.net/published/2026-11-02_your-inventory-bill-is-24-percent-prepaid.md | reader site only |
 | 2026-11-02 | sales_order_service_level_otif | kroger-direct-buy-retires-its-own-fine | Kroger's Lane Kills Your 3% Fee | https://pressflow.aichieve.net/published/2026-11-02_kroger-direct-buy-retires-its-own-fine.md | reader site only |
+| 2026-11-02 | agentic_ai | your-192-sessions-stall-the-model-not-the-tools | Your Queue Caps the Wrong Unit: 192 Sessions | https://pressflow.aichieve.net/published/2026-11-02_your-192-sessions-stall-the-model-not-the-tools.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

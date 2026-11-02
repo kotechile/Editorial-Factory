@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T13:28:43Z",
+  "updated_at": "2026-11-02T17:50:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4826,7 +4826,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-01",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-149-99-scope-blinds-at-3-94/"
     },
     {
       "slug": "2026-11-01_your-3000-psi-washers-11-gpm-trap",
@@ -4844,7 +4845,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-01",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-3000-psi-washers-11-gpm-trap/"
     },
     {
       "slug": "2026-11-02_insurance-beats-property-tax-14",
@@ -4862,7 +4864,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/insurance-beats-property-tax-14/"
     },
     {
       "slug": "2026-11-02_kroger-direct-buy-retires-its-own-fine",
@@ -4879,6 +4882,25 @@
         "Related reading"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-11-02",
+      "public": true,
+      "url": "https://aichieve.net/kroger-direct-buy-retires-its-own-fine/"
+    },
+    {
+      "slug": "2026-11-02_your-192-sessions-stall-the-model-not-the-tools",
+      "title": "Your Queue Caps the Wrong Unit: 192 Sessions",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-02",
       "public": false
     },
@@ -4898,7 +4920,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-gateway-was-malicious-for-104-minutes/"
     },
     {
       "slug": "2026-11-02_your-heat-pump-cuts-everyone-13",
@@ -4916,7 +4939,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-heat-pump-cuts-everyone-13/"
     },
     {
       "slug": "2026-11-02_your-inventory-bill-is-24-percent-prepaid",
@@ -4934,7 +4958,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-inventory-bill-is-24-percent-prepaid/"
     },
     {
       "slug": "2026-11-02_your-trace-fails-as-an-alarm",
@@ -4952,7 +4977,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-trace-fails-as-an-alarm/"
     }
   ]
 }

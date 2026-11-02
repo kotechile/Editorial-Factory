@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. "
+image_alt: "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even."
 image_caption: "The Local AI Break-Even: Rented token prices decide if local hardware pays off."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

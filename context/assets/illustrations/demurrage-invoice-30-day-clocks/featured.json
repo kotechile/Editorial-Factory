@@ -1,6 +1,6 @@
 {
   "slug": "demurrage-invoice-30-day-clocks",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -69,6 +69,14 @@
       "title": "The Demurrage 30-Day Clocks",
       "bytes": 286061,
       "sha256": "sha256:00b6489c07948957f56bd12ae778874796be8e804bd1d75e59e03629f936d226"
+    },
+    {
+      "revision": 9,
+      "alt_text": "The Demurrage 30-DAY Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
+      "caption": "The Demurrage 30-DAY Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-DAY Clocks",
+      "bytes": 224414,
+      "sha256": "sha256:3b2d2f0b46e59d5efc8c973a7a3f2bbd87bab78eefac2430f95f66837818a046"
     }
   ],
   "style": "document_flatlay",
@@ -97,8 +105,8 @@
   "local_path": "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 224414,
-  "sha256": "sha256:3b2d2f0b46e59d5efc8c973a7a3f2bbd87bab78eefac2430f95f66837818a046",
+  "bytes": 404630,
+  "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd",
   "source_hash": "sha256:36efd58a31820761e4c761982e2c3ef8",
   "source_chars": 5385,
   "task_id": "55223c21c0156791afaaac48b15f7c9a",
@@ -121,26 +129,39 @@
     "anchor": "bottom-left",
     "light": true,
     "scrim": 0,
-    "contrast": 4.99,
+    "contrast": 4.95,
     "target": 4.5,
-    "clutter": 0.145,
+    "clutter": 0.146,
     "region_rgb": [
-      84,
-      75,
-      71
+      85,
+      76,
+      72
     ],
     "binding_rgb": [
-      112,
-      99,
-      93
+      111,
+      100,
+      94
     ],
     "title_lines": [
       "THE DEMURRAGE",
       "30-DAY CLOCKS"
     ],
-    "subject": 0.072,
-    "ink_subject": 0.041,
-    "spike": 0.196,
+    "subject": 0.067,
+    "ink_subject": 0.037,
+    "spike": 0.184,
     "generated_at": "2026-10-09T00:44:35+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404630,
+    "quality": 84,
+    "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

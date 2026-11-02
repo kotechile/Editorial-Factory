@@ -1,6 +1,6 @@
 {
   "slug": "fine-tune-vs-rent-by-token",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,14 @@
       "title": "The Local AI Break-Even",
       "bytes": 660439,
       "sha256": "sha256:cbb2ef93a65c8066116a0ec4f0af7a2e2b686ff5059b584f4da8d12ef6d828fb"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. ",
+      "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+      "title": "The Local AI Break-Even",
+      "bytes": 660538,
+      "sha256": "sha256:11552e90aeac095a094103e3fed654d5d2f94ba833cde4db0bde45a12896918a"
     }
   ],
   "style": "editorial_macro",
@@ -77,7 +85,7 @@
   "cue": "hard power limit",
   "subject": "heavy-duty braided power cable locking into a brushed aluminum heat-sink",
   "composition": "extreme asymmetry off-centre on the thirds",
-  "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. ",
+  "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even.",
   "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
   "title": "The Local AI Break-Even",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -89,8 +97,8 @@
   "local_path": "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 660538,
-  "sha256": "sha256:11552e90aeac095a094103e3fed654d5d2f94ba833cde4db0bde45a12896918a",
+  "bytes": 393986,
+  "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e",
   "source_hash": "sha256:631e76fd0eb04a89c3150a7d11aad7d2",
   "source_chars": 4600,
   "task_id": "317eeb60939ed7d08ae4cff111170f77",
@@ -110,25 +118,42 @@
     "kicker": "LOCAL AI // COMPUTE ECONOMICS",
     "title": "THE LOCAL AI BREAK-EVEN",
     "hook": "Rented token prices decide if local hardware pays off",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 75,
-    "contrast": 5.93,
+    "scrim": 30,
+    "contrast": 5.96,
     "target": 5.5,
-    "clutter": 0.434,
+    "clutter": 0.29,
     "region_rgb": [
-      80,
-      76,
-      72
+      66,
+      63,
+      60
     ],
     "binding_rgb": [
-      147,
-      140,
-      134
+      106,
+      101,
+      98
     ],
     "title_lines": [
       "THE LOCAL AI",
       "BREAK-EVEN"
-    ]
+    ],
+    "subject": 0.099,
+    "ink_subject": 0.047,
+    "spike": 0.304,
+    "generated_at": "2026-10-09T00:43:04+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 393986,
+    "quality": 72,
+    "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

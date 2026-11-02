@@ -1,0 +1,112 @@
+{
+  "slug": "your-192-sessions-stall-the-model-not-the-tools",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Overloaded compute cabinet in a data hall rack row, model-writer blade glowing hot while tool blades stay cool, queue cables bunched.",
+      "caption": "A session-packed cabinet stalls on the write path while its tool modules idle, illustrating why queue caps must target sessions per box.",
+      "title": "Session Packed Cabinet Bottleneck",
+      "bytes": 381473,
+      "sha256": "sha256:947f3de06fd00212c59b3cd100d38efe"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression down a data hall rack row, one high-density compute cabinet off-centre lower-left with its session slots packed to the rail; its model-writer blade glows amber under a hard top light while adjacent tool blades stay cool blue, braided fibre queue cables bunch at the front like stalled traffic. Low raking light from the left across brushed steel and graphite, cobalt and safety yellow accents, deep contact shadows, extreme asymmetric composition, no people, no text, no logos, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, UI labels",
+  "rationale": "The story is about scale and capacity\u2014sessions per box on a live serving cluster\u2014so a compressed telephoto view of a data hall rack row makes the bottleneck legible as physical infrastructure rather than a literal screenshot. The treatment is allowed and appropriate after recent work.",
+  "cue": "sessions per box against a cache budget",
+  "subject": "one high-density compute cabinet whose session slots are packed to the rail, its model-writer blade glowing hot while adjacent tool blades remain cool",
+  "core_thesis": "An agent runtime's room is consumed by whole sessions rather than single calls, so the cap that matters is sessions per box against a cache budget, and exceeding it taxes the model's writing time while tools remain comparatively idle.",
+  "core_conflict": "Write-path persistence versus tool-idle slack under a cache budget; over-admitting sessions throttles model decode while tool execution stays underutilised.",
+  "composition": "Extreme asymmetry; overloaded cabinet lower-left third, empty breathing room right, telephoto flattening the row",
+  "alt_text": "Queue Caps Sessions Not Calls. Overloaded compute cabinet in a data hall rack row, model-writer blade glowing hot while tool blades stay",
+  "caption": "Queue Caps Sessions Not Calls: At 192 sessions, the model stalls while tools barely slow.",
+  "title": "Queue Caps Sessions Not Calls",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-192-sessions-stall-the-model-not-the-tools/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 394540,
+  "sha256": "sha256:4a632bd027e9d669d775b2a203068750f9d145e1d4039dacb21f2284d7c48f76",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394540,
+    "quality": 84,
+    "sha256": "sha256:4a632bd027e9d669d775b2a203068750f9d145e1d4039dacb21f2284d7c48f76",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b20e124b8ace01696a5571d8f41f0b5d5a26630227b2715b35889852d2466f5a",
+  "render_phash": "128f5887548f52874e8f468f420f408f468f42cf498f4c875a8f128702070207",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A close-up of a server cabinet in the left foreground packed with rows of vertical drive and compute modules, with a band of drive bays lit orange-yellow and lower bays lit blue, and a coiled bundle of thick cables looped in front of it, while a data-center aisle with more cabinets recedes out of focus to the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "It shows the physical 'box' whose slots are packed and one hot zone against cooler neighbors, which is the article's mechanism of capping sessions per cabinet and the strain landing on the model-writing unit, though it stops short of distinguishing tool blades from a writer blade and reads partly as generic data-center imagery."
+  },
+  "source_hash": "sha256:6de5c872fa2b448251354fe288339a8c",
+  "source_chars": 5079,
+  "task_id": "03c753fc37aa1db9120b25123a377d2b",
+  "credits": 5.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/03c753fc37aa1db9120b25123a377d2b_1793641778099.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression down a data hall rack row, one high-density compute cabinet off-centre lower-left with its session slots packed to the rail; its model-writer blade glows amber under a hard top light while adjacent tool blades stay cool blue, braided fibre queue cables bunch at the front like stalled traffic. Low raking light from the left across brushed steel and graphite, cobalt and safety yellow accents, deep contact shadows, extreme asymmetric composition, no people, no text, no logos, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-02T17:49:48+00:00",
+  "overlay": {
+    "kicker": "AGENT RUNTIMES // SESSION QUEUES",
+    "title": "QUEUE CAPS SESSIONS NOT CALLS",
+    "hook": "At 192 sessions, the model stalls while tools barely slow",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.25,
+    "target": 4.5,
+    "clutter": 0.149,
+    "region_rgb": [
+      37,
+      44,
+      53
+    ],
+    "binding_rgb": [
+      48,
+      63,
+      82
+    ],
+    "title_lines": [
+      "QUEUE CAPS",
+      "SESSIONS NOT CALLS"
+    ],
+    "subject": 0.047,
+    "ink_subject": 0.022,
+    "spike": 0.145,
+    "generated_at": "2026-11-02T17:49:48+00:00"
+  }
+}
