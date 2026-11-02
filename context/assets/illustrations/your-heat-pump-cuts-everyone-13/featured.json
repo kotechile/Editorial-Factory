@@ -1,0 +1,112 @@
+{
+  "slug": "your-heat-pump-cuts-everyone-13",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Split-screen suburban house at dusk contrasting an all-electric heat pump with a hybrid heat pump and gas vent.",
+      "caption": "A split-screen suburban house at dusk contrasts an all-electric heat pump with a hybrid gas-furnace setup, visualizing the sizing choice that changes the grid-wide rate cut.",
+      "title": "Heat Pump Rate Cut Split-Screen Dusk",
+      "bytes": 356487,
+      "sha256": "sha256:9cc3ebde7ba4bb8b1d2726af7f763dcd"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours — automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural photograph at blue hour, 35mm lens with shallow depth of field, split-screen diptych: left half shows a modern suburban house exterior with a large all-electric heat pump condenser on a concrete driveway, no gas pipe; right half shows the same house with a smaller hybrid heat pump condenser beside a gas furnace vent. Warm amber light glows from house windows, deep blue ambient twilight from the left, bone white stucco and charcoal roof, galvanised steel units. Fine film grain, wide 16:9, generous negative space, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, unreadable labels, UI elements",
+  "rationale": "Architectural night suits the story's focus on after-hours capacity — heat pumps filling winter headroom while the grid would otherwise sit idle. The blue-hour home exterior with lit windows and a split-screen contrast between all-electric and hybrid configurations makes the sizing trade-off legible in a single frame.",
+  "cue": "fills winter headroom that would otherwise sit idle",
+  "subject": "a split-screen suburban house at dusk with an all-electric heat pump condenser on the left and a hybrid heat pump with gas furnace vent on the right",
+  "core_thesis": "A heat pump's largest verified money effect is a shared system-wide rate cut, and the all-electric versus hybrid sizing choice decides how large that cut is.",
+  "core_conflict": "Private equipment cost versus shared grid benefit; all-electric full-load units limit how many homes can convert inside winter headroom, while hybrid partial-load units spread the rate cut across more meters.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Split-screen of one house at dusk: an all-electric heat pump on the left, a hybrid unit with a gas furnace vent on the right.",
+  "caption": "Your Heat Pump Cuts Everyone 13%: A 13% rate cut shared by every customer, not just you.",
+  "title": "Your Heat Pump Cuts Everyone 13%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-heat-pump-cuts-everyone-13/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 402858,
+  "sha256": "sha256:8e9b812ff79907bc52d098fb24139de5cab790c50e7a38ccd00e333962570500",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402858,
+    "quality": 84,
+    "sha256": "sha256:8e9b812ff79907bc52d098fb24139de5cab790c50e7a38ccd00e333962570500",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:8bd33167a6eea7dcac1a3cba41d0a88183e4adbe87e2c68637655901144f91f6",
+  "render_phash": "1e1f1e1f3e1f3e5f3e5f3e3e613105852d951999098e0e071f0f0f87478331b0",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two side-by-side identical exterior views of a white single-story house at dusk with lit windows and a concrete pad, the left panel showing two flat-topped outdoor condenser cabinets side by side and the right panel showing one condenser plus a second unit with a vertical duct and a floor-level duct run.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The diptych shows the article's actual protagonists — an all-electric condenser pair on one side and a heat pump with ducted/vented equipment on the other — so a reader would recognize the all-electric versus hybrid heat-pump choice the story hinges on, though the split reads as two similar units rather than an obviously labeled scenario contrast."
+  },
+  "source_hash": "sha256:e8a8e22ca4ad39ccb2ce6e13575df528",
+  "source_chars": 4657,
+  "task_id": "75711428ba70947db9c3ad4409204300",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/75711428ba70947db9c3ad4409204300_1793622205429.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural photograph at blue hour, 35mm lens with shallow depth of field, split-screen diptych: left half shows a modern suburban house exterior with a large all-electric heat pump condenser on a concrete driveway, no gas pipe; right half shows the same house with a smaller hybrid heat pump condenser beside a gas furnace vent. Warm amber light glows from house windows, deep blue ambient twilight from the left, bone white stucco and charcoal roof, galvanised steel units. Fine film grain, wide 16:9, generous negative space, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-02T12:23:36+00:00",
+  "overlay": {
+    "kicker": "HEAT PUMPS // WINTER HEADROOM",
+    "title": "YOUR HEAT PUMP CUTS EVERYONE 13%",
+    "hook": "A 13% rate cut shared by every customer, not just you",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 45,
+    "contrast": 4.79,
+    "target": 4.5,
+    "clutter": 0.134,
+    "region_rgb": [
+      50,
+      114,
+      148
+    ],
+    "binding_rgb": [
+      70,
+      133,
+      168
+    ],
+    "title_lines": [
+      "YOUR HEAT PUMP",
+      "CUTS EVERYONE 13%"
+    ],
+    "subject": 0.076,
+    "ink_subject": 0.047,
+    "spike": 0.192,
+    "generated_at": "2026-11-02T12:23:36+00:00"
+  }
+}

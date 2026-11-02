@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T12:05:20Z",
+  "updated_at": "2026-11-02T12:27:40Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4879,6 +4879,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-02",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_your-heat-pump-cuts-everyone-13",
+      "title": "Your Heat Pump Cuts Everyone 13%",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-02",
       "public": false
     },
