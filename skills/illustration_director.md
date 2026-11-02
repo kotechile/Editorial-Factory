@@ -304,6 +304,17 @@ image on the next sweep instead of never.
   gives the director a catalogue entry that supplies the missing framing rule, then
   `wp_draft.py --slug <slug> --reimage` uploads and switches the attachment. Retrying unpinned
   repeats the same refusal and spends director calls, not credits.
+- **The same headerless publish comes from a TRUNCATED director call, and that one must NOT be pinned.**
+  Observed 2026-11-02: `[image] featured image FAILED: art director call failed: frontier output
+  truncated (finish_reason=length); raise max_tokens` — the call died, not the brief, so the post went
+  live with `featured_media: 0` while every other surface read clean. A plain
+  `illustration_creator.py <artifact> --apply` then commissioned on the first director attempt
+  (paper_collage on nano-banana-pro); pinning a style is wrong here, because the failure was a token
+  budget, not a prompt shape. Attach with `wp_draft --slug … --reimage`, then **rebuild the front**:
+  the build that ran at publish time carried no image, so the reader page keeps `og:image` on
+  `/default-share-image.png` and renders zero `<img>` even after `featured_media` is switched.
+  `giniloh_coolify_redeploy_all()` inside the CMS container rebuilt all three fronts (aichieve took
+  about two minutes) and the page then served the hero, its `-1024x576` derivative and a real `og:image`.
 - A **hang is not a fast fail**: when kie.ai stalls on an accepted task instead of returning
   `Internal Error`, the retry loop can block for many minutes and `scripts/publish.py` times out
   *before* it writes `published/`, the log, Supabase or the sitemap — the persistence steps run
