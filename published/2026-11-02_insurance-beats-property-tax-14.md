@@ -14,6 +14,12 @@ meta_title: "Insurance Bill Beats Property Tax 14%"
 meta_title_source: "derived_from_title"
 meta_description: "Home insurance now beats the property-tax bill in two-thirds of U.S. counties, by 14% on average, according to a Bloomberg Intelligence study published on…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/insurance-beats-property-tax-14/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "Insurance Tops Property Tax 14%. Fixed cast-iron insurance housing pressing on a sliding bone-white tax-relief bracket on a garage wall."
+image_caption: "Insurance Tops Property Tax 14%: Voters can cut the property tax, not the insurance premium."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

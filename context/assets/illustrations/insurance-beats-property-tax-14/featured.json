@@ -1,0 +1,116 @@
+{
+  "slug": "insurance-beats-property-tax-14",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Fixed cast-iron insurance housing pressing on a sliding bone-white tax-relief bracket on a garage wall.",
+      "caption": "A wall-mounted mechanical comparison shows the fixed insurance premium pressing down on the sliding property-tax relief bracket.",
+      "title": "Garage insurance-premium block over sliding tax-relief bracket",
+      "bytes": 383889,
+      "sha256": "sha256:117e703912c65ae17e18443a1408bc0f"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a garage wall above a concrete floor, a matte clay 3D assembly of two stacked modular housings: a large dark rust-finished cast-iron insurance-premium block bolted immovably to a galvanised steel backplate, its lower edge pressing down on a smaller bone-white tax-relief slider bracket that can shift sideways along a steel rail; a short steel lever at right disengages the lower bracket while the upper block stays fixed. Light from left, graphite, bone white, rust. Extreme asymmetric off-centre composition. Weathered concrete below, no text, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numerals",
+  "rationale": "Clay render lets the desk state the structural mismatch as a small physical assembly on a real home surface: one element fixed and weighty, the other shiftable but smaller, avoiding stock office or datacenter cliches.",
+  "cue": "Insurance Bill Beats Property Tax 14%",
+  "subject": "a fixed cast-iron insurance-premium housing pressing down on a sliding bone-white property-tax relief bracket mounted on a garage wall",
+  "core_thesis": "Home insurance premiums now exceed property tax bills by 14% in most counties, but ballot relief moves only the tax levy while the risk-driven premium stays fixed.",
+  "core_conflict": "movable property-tax relief versus fixed risk-priced insurance premium",
+  "composition": "extreme asymmetric off-centre composition with generous breathing room",
+  "alt_text": "Insurance Tops Property Tax 14%. Fixed cast-iron insurance housing pressing on a sliding bone-white tax-relief bracket on a garage wall.",
+  "caption": "Insurance Tops Property Tax 14%: Voters can cut the property tax, not the insurance premium.",
+  "title": "Insurance Tops Property Tax 14%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/insurance-beats-property-tax-14/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408236,
+  "sha256": "sha256:33fbb6fc4e17cc2f1f547a6ba2f562568d9fbe616fad5250cf5a19fc27004b7f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408236,
+    "quality": 68,
+    "sha256": "sha256:33fbb6fc4e17cc2f1f547a6ba2f562568d9fbe616fad5250cf5a19fc27004b7f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:5e42a17ad759ed2a5cf5fa483f16cb76a0436729120a463fdb0c181113a95c70",
+  "render_phash": "147f147f439f6f8f7c4f784f784f781f782f7c7f7c2f75037c167006e1cd49ec",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A rusty cast-iron box housing with a short metal lever on its right side, bolted to a galvanised steel plate on a stained concrete wall, resting on a bone-white bracket that slides along two metal rails projecting from beneath it, with a bare concrete floor below.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The frame shows exactly the ordered mechanism \u2014 a heavy ferrous housing bearing down on a sliding pale bracket \u2014 which reads as the insurance premium pressing on the property-tax relief lever, though the hardware is generic enough that it needs the headline to be pinned to insurance and taxes, and it carries none of the article's figures."
+  },
+  "source_hash": "sha256:edc85bf8852a7bc14f3a3293e2c4b710",
+  "source_chars": 4145,
+  "task_id": "53ca03262633c135e021bc569e1698ac",
+  "credits": 18.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0f86dc093787d4a829647a1d66cd91a7.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a garage wall above a concrete floor, a matte clay 3D assembly of two stacked modular housings: a large dark rust-finished cast-iron insurance-premium block bolted immovably to a galvanised steel backplate, its lower edge pressing down on a smaller bone-white tax-relief slider bracket that can shift sideways along a steel rail; a short steel lever at right disengages the lower bracket while the upper block stays fixed. Light from left, graphite, bone white, rust. Extreme asymmetric off-centre composition. Weathered concrete below, no text, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-02T12:21:20+00:00",
+  "overlay": {
+    "kicker": "HOME INSURANCE VS PROPERTY TAX",
+    "title": "INSURANCE TOPS PROPERTY TAX 14%",
+    "hook": "Voters can cut the property tax, not the insurance premium",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 90,
+    "contrast": 4.88,
+    "target": 4.5,
+    "clutter": 0.239,
+    "region_rgb": [
+      141,
+      124,
+      102
+    ],
+    "binding_rgb": [
+      171,
+      157,
+      131
+    ],
+    "title_lines": [
+      "INSURANCE TOPS",
+      "PROPERTY TAX 14%"
+    ],
+    "subject": 0.112,
+    "ink_subject": 0.068,
+    "spike": 0.29,
+    "generated_at": "2026-11-02T12:21:20+00:00"
+  }
+}
