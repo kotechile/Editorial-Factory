@@ -291,8 +291,8 @@ image on the next sweep instead of never.
 - Idempotency is by content, not by presence: an unchanged article is never re-generated (the
   sidecar's `source_hash` matches), a rewritten article is (its text changed). `--force` overrides.
 - Missing key → explicit error naming `KIE_API_KEY` (the kie.ai gateway key; an `sk-ant-…` Anthropic
-  key authenticates the Claude API but not `api.kie.ai`). Missing `GOOGLE_API_KEY` → explicit error
-  naming the director model. Neither ever yields a placeholder image.
+  key authenticates the Claude API but not `api.kie.ai`). Missing `DEEPSEEK_API_KEY` → explicit error
+  naming the director model (`deepseek-v4-pro`). Neither ever yields a placeholder image.
 - kie.ai upstreams fail intermittently with `Internal Error` on an accepted task: the client retries
   the *task* (new task id) and reports each attempt; a persistent failure surfaces, and the article
   still publishes without a header image.

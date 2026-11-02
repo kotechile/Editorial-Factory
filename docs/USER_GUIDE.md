@@ -76,7 +76,7 @@ The full instructions live in `skills/*.md` (the SOPs) and the personas in `.age
 
 Every article gets one 16:9 header image, and it is a **decision about that story**, not a template:
 
-- A frontier **art director** (`scripts/illustration_creator.py`, running on Gemini 3.1 Pro) reads the
+- A frontier **art director** (`scripts/illustration_creator.py`, running on DeepSeek Pro — `deepseek-v4-pro`) reads the
   article's own title, thesis, lead, section headings, numbers section and source list, and picks a
   **treatment** from a catalogue of ten: editorial macro, cinematic still, document flat-lay, matte 3D
   render, technical isometric cutaway, modular component assembly, paper collage, compressed telephoto
@@ -129,7 +129,8 @@ Cost: measured ≈5–7 kie.ai credits per Flux-2 Pro image and ≈18 per Nano B
 holds a shared credit balance; `curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization:
 Bearer $KIE_API_KEY"`). Nothing is re-generated while the article's text is unchanged. Switch the
 whole step off with `--no-illustration` / `ILLUSTRATION_ENABLED=false`. Requires `KIE_API_KEY` (the
-kie.ai gateway key — **not** an `sk-ant-…` Anthropic key) and `GOOGLE_API_KEY` (the Loop 3 key).
+kie.ai gateway key — **not** an `sk-ant-…` Anthropic key) and `DEEPSEEK_API_KEY` (the Loop 3 /
+frontier key; the render reviewer uses the same key with `deepseek-flash`).
 
 ### Article anatomy
 

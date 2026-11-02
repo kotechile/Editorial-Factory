@@ -68,9 +68,11 @@ import urllib.request
 from dataclasses import asdict, dataclass, field
 
 try:                                        # run as a script (scripts/ on sys.path)
+    import frontier_llm
     import image_delivery as delivery
     import scene_brief
 except ImportError:                         # imported as a package (the test suites)
+    from scripts import frontier_llm
     from scripts import image_delivery as delivery
     from scripts import scene_brief
 
@@ -90,7 +92,8 @@ MODEL_ALIASES = {
     "nanobanana": "nanobanana", "nano-banana-pro": "nanobanana", "nano": "nanobanana",
     "nano-banana": "nanobanana",
 }
-GEMINI_MODEL = "gemini-3.1-pro-preview"
+FRONTIER_MODEL = frontier_llm.TEXT_MODEL          # deepseek-v4-pro (the art director's brief)
+GEMINI_MODEL = FRONTIER_MODEL                      # legacy alias kept for tests/drivers
 DIRECTOR_MAX_ATTEMPTS = 3
 DEFAULT_ASPECT = "16:9"
 # The site crops the header two ways — a 7:4 card and a 16:9 masthead — so only a 16:9 master loses
@@ -747,11 +750,12 @@ def kie_api_key() -> str:
 
 
 def gemini_key() -> str:
-    key = (_lookup("GOOGLE_API_KEY") or [""])[0]
-    if not key:
-        raise IllustrationError("no GOOGLE_API_KEY — the art director runs on Gemini "
-                                f"({GEMINI_MODEL}); the Loop 3 stylist uses the same key")
-    return key
+    """Legacy name: the frontier's key is DeepSeek's now (the Gemini path was retired 2026-11-02)."""
+    try:
+        return frontier_llm.key()
+    except Exception as exc:  # noqa: BLE001 — one explicit failure, never a placeholder brief
+        raise IllustrationError(f"no DEEPSEEK_API_KEY — the art director runs on "
+                                f"{FRONTIER_MODEL}; the Loop 3 stylist uses the same key ({exc})") from None
 
 
 def director_prompt(article_md: str, *, history: list[str], allowed: tuple) -> str:
@@ -953,32 +957,15 @@ exclude — the image model reads the negative as tokens to draw",
 
 def call_gemini(prompt: str, *, model: str = GEMINI_MODEL, key: str | None = None,
                 timeout: int = 180) -> str:
-    """One JSON-mode Gemini call. Thinking is dialled down: this is a brief, not an essay."""
-    key = key or gemini_key()
-    url = (f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-           f"?key={key}")
-    body = {
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 8192,
-                             "responseMimeType": "application/json",
-                             "thinkingConfig": {"thinkingLevel": "low"}},
-    }
-    req = urllib.request.Request(url, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"}, method="POST")
+    """One JSON-mode frontier call (DeepSeek `deepseek-v4-pro`; name kept for existing drivers).
+
+    `key` is accepted for backwards compatibility and ignored — `frontier_llm` resolves the key.
+    """
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            payload = json.loads(response.read().decode("utf-8", "replace"))
-    except urllib.error.HTTPError as exc:
-        raise IllustrationError(f"art director call failed: HTTP {exc.code} — "
-                                f"{exc.read().decode('utf-8', 'replace')[:300]}") from None
+        return frontier_llm.chat(prompt, model=model, max_tokens=8192, temperature=0.9,
+                                 timeout=timeout, json_mode=True)
     except Exception as exc:                       # noqa: BLE001 — surface, never swallow (rule 6)
         raise IllustrationError(f"art director call failed: {exc}") from None
-    candidates = payload.get("candidates") or []
-    text = "".join(part.get("text", "") for part in
-                   ((candidates[0].get("content") or {}).get("parts") or [])) if candidates else ""
-    if not text.strip():
-        raise IllustrationError(f"art director returned no text: {json.dumps(payload)[:300]}")
-    return text
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -988,7 +975,7 @@ def call_gemini(prompt: str, *, model: str = GEMINI_MODEL, key: str | None = Non
 # The director's brief is a judgement about words; only a model that looks at the finished pixels can
 # say whether the frame depicts this story. The complaint that started this (2026-10-24: wellroost
 # headers "not accurate with the text") is exactly the class the brief gate cannot see.
-REVIEW_MODEL = GEMINI_MODEL
+REVIEW_MODEL = frontier_llm.VISION_MODEL   # deepseek-flash: pro is text-only and blanks on images
 REVIEW_ATTEMPTS = 2
 RENDER_ATTEMPTS = 2          # render + one re-commissioned retry, then publish WITHOUT the header
 _NO_TEXT_VALUES = {"", "none", "no text", "n/a", "na", "nothing", "no legible text", "-"}
@@ -996,41 +983,16 @@ _NO_TEXT_VALUES = {"", "none", "no text", "n/a", "na", "nothing", "no legible te
 
 def call_gemini_vision(image: bytes, prompt: str, *, model: str = REVIEW_MODEL,
                        key: str | None = None, timeout: int = 120) -> str:
-    """One JSON-mode Gemini call with the image inline. Downscaled: the checker needs the subject,
-    not the grain."""
-    from PIL import Image
-    img = Image.open(io.BytesIO(image)).convert("RGB")
-    if img.width > 1200:
-        img = img.resize((1200, round(img.height * 1200 / img.width)), Image.LANCZOS)
-    buf = io.BytesIO()
-    img.save(buf, format="JPEG", quality=85)
-    url = (f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-           f"?key={key or gemini_key()}")
-    body = {
-        "contents": [{"role": "user", "parts": [
-            {"text": prompt},
-            {"inline_data": {"mime_type": "image/jpeg",
-                             "data": base64.b64encode(buf.getvalue()).decode()}}]}],
-        "generationConfig": {"temperature": 0.1, "maxOutputTokens": 1024,
-                             "responseMimeType": "application/json",
-                             "thinkingConfig": {"thinkingLevel": "low"}},
-    }
-    req = urllib.request.Request(url, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"}, method="POST")
+    """One JSON-mode vision call with the image inline (DeepSeek `deepseek-flash`; name kept).
+
+    `key` is accepted for backwards compatibility and ignored — `frontier_llm` resolves the key.
+    The image is downscaled: the checker needs the subject, not the grain.
+    """
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            payload = json.loads(response.read().decode("utf-8", "replace"))
-    except urllib.error.HTTPError as exc:
-        raise IllustrationError(f"render review failed: HTTP {exc.code} — "
-                                f"{exc.read().decode('utf-8', 'replace')[:300]}") from None
+        return frontier_llm.vision(image, prompt, model=model, max_tokens=1024,
+                                   temperature=0.1, timeout=timeout, json_mode=True)
     except Exception as exc:                       # noqa: BLE001
         raise IllustrationError(f"render review failed: {exc}") from None
-    candidates = payload.get("candidates") or []
-    text = "".join(part.get("text", "") for part in
-                   ((candidates[0].get("content") or {}).get("parts") or [])) if candidates else ""
-    if not text.strip():
-        raise IllustrationError(f"render review returned no text: {json.dumps(payload)[:300]}")
-    return text
 
 
 def review_prompt(article_md: str, brief: Brief) -> str:

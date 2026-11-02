@@ -11,15 +11,8 @@ out = ROOT / "context/drafts/2026-10-27_your-eta-misses-27-hours_final.md"
 
 
 def call_gemini_long(prompt):
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": 20000, "temperature": 0.7},
-    }
-    req = urllib.request.Request(hl.URL, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=900) as r:
-        j = json.loads(r.read().decode())
-    return j["candidates"][0]["content"]["parts"][0]["text"]
+    """DeepSeek frontier with this draft's wider socket timeout (was a Gemini rebind)."""
+    return hl.call_frontier(prompt, timeout=900)
 
 
 hl.call_gemini = call_gemini_long

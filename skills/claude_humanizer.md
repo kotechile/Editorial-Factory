@@ -4,8 +4,10 @@
 The last pass before approval. Apply **Smart Brevity** principles to strip every AI-tell, craft punchy
 and scannable copy, inject cadence and a genuine human voice, and iterate until every section passes
 its own gate. **Frontier model only.** The frontier is whatever the `stylist` profile is configured
-to (see §7). Current live config: `gemini-3.1-pro-preview` (`provider: gemini`). Restore Claude/kie.ai
-only when a valid key exists — never downgrade to a non-frontier model.
+to (see §7). Current live config: `deepseek-v4-pro` (`provider: deepseek`), reached through
+`scripts/frontier_llm.py`. Gemini 3.1 Pro was retired 2026-11-02 (owner cost directive — the Google
+bill); Claude/kie.ai is only usable again when a valid key exists — never downgrade to a
+non-frontier model.
 
 ## 2. Required Inputs
 To apply Smart Brevity effectively, the styling pass consumes:
@@ -245,10 +247,10 @@ one.
 
 ## 7. Failure handling
 - **Use the frontier the `stylist` profile is configured to** — do not hard-code a provider. Read the
-  profile's `model.default`/`provider` (current live: `gemini-3.1-pro-preview` / `gemini`, `base_url: ''`).
+  profile's `model.default`/`provider` (current live: `deepseek-v4-pro` / `deepseek`, `base_url: ''`).
   The rewrite must run on that frontier. Never substitute a non-frontier model.
 - **Pre-flight before the rewrite:** verify the configured frontier is reachable (e.g. a 1-token
-  `generateContent` ping to the profile's provider). If the frontier is unavailable **and** it is the
+  chat-completions ping on the profile's provider). If the frontier is unavailable **and** it is the
   only viable frontier, hold the verified draft at Loop 3 with an explicit upstream-status note — a
   verified draft is never wasted; it finalizes when the frontier recovers. Do not silently fake a rewrite.
 - **Do NOT gate the pipeline at start on the frontier.** rada sweep → judge → verify → draft all run on
@@ -258,7 +260,8 @@ one.
 - **kie.ai / Claude note (historical):** when the frontier was Claude via kie.ai, routing was
   `provider: anthropic` + `base_url: https://api.kie.ai/claude` (non-streaming only, `model.streaming: false`,
   alias model IDs like `claude-sonnet-5`). That key is currently **auth-rejected (HTTP 401)** — do not use it.
-  The working frontier is Gemini until a valid Anthropic/kie.ai key is restored. `api.kie.ai` is whitelisted
+  The frontier has been `deepseek-v4-pro` since 2026-11-02 (Gemini 3.1 Pro, the previous frontier, was
+  retired for cost — it billed Google directly). `api.kie.ai` is whitelisted
   in `_anthropic_base_url_override_ok` (runtime_provider.py) if it is re-enabled.
 - **`humanize_loop3.humanize_all()` is month-locked — do not call it per-draft.** Its loop globs
   `DRAFTS.glob("2026-09-*.md")` (a hard-coded September). Hand it a draft dated on/after 2026-10-01
@@ -267,24 +270,26 @@ one.
   `python3 -c "import sys,pathlib; sys.path.insert(0,'scripts'); import humanize_loop3 as hl;
   hl.humanize_single_draft(pathlib.Path('<slug>_draft.md').read_text(), pathlib.Path('<slug>_final.md'))"`.
   Always confirm the `_final.md` file now exists — never trust the script's own summary.
-- **Output-token budget (thinking models):** the frontier is a *thinking* model, and its internal
-  reasoning tokens (`thoughtsTokenCount`, typically ~6,400 for a full rewrite) are counted **against**
-  `maxOutputTokens`. A too-small budget makes the model think hard and then truncate the article
-  (`finishReason: MAX_TOKENS`, partial output, missing `## Sources`/gate report). Keep
-  `maxOutputTokens` **≥ 20,000** — verify with `finishReason: STOP` and `sources_check=ok`.
+- **Output-token budget (thinking models):** the frontier is a *thinking* model, and DeepSeek bills its
+  internal reasoning tokens inside `completion_tokens` — i.e. **against** `max_tokens`. A too-small
+  budget makes the model think hard and then truncate the article (`finish_reason: length`, partial
+  output, missing `## Sources`/gate report); `frontier_llm.chat` now raises on that instead of returning
+  half a draft. Keep `max_tokens` **≥ 20,000** (the module default) — verified 2026-11-02 on a 1,483-word
+  draft: 1,072 body words, all markers, `## Sources` and the gate report intact in one attempt.
 - **Socket timeout (thinking models):** the rewrite can take well over 30s wall-clock because the
-  model reasons for seconds before emitting its first token. Any `generateContent` call in a humanizer
-  script MUST use a socket timeout ≥ 240s (as `humanizer_tools.call_gemini` does). A 30s timeout
+  model reasons for seconds before emitting its first token (a 1,072-word rewrite took ~162s on
+  `deepseek-v4-pro`). Any frontier call in a humanizer
+  script MUST use a socket timeout ≥ 240s (as `humanizer_tools.call_frontier` does). A 30s timeout
   aborts the full rewrite mid-generation with `The read operation timed out` and, worse,
   `humanize_loop3.py`'s `humanize_all()` still prints `WROTE` unconditionally after the loop even
   though the final file was never written — do not trust that message; verify the `_final.md` file
   exists before reporting success. (Fixed in humanize_loop3.py 2026-09-23.)
 - **240s is the floor for the socket timeout, not the ceiling (learned 2026-10-13).** A ~2,000-word
-  synthesis draft on `gemini-3.1-pro-preview` aborted on its very first attempt with
+  synthesis draft on the old Gemini frontier aborted on its very first attempt with
   `ERROR rewrite attempt 1: The read operation timed out`; `humanize_single_draft()` treats that
   exception as fatal (`break`), so Loop 3 writes no `_final.md` at all. Note that
-  `humanize_loop3.call_gemini` carries its **own** hard-coded `timeout=240` in the module — extending
-  `humanizer_tools.call_gemini` does nothing for it. Drive the run from a small per-draft script that
+  `humanize_loop3.call_frontier` carries its **own** default `timeout=240` in the module — extending
+  `humanizer_tools.call_frontier` does nothing for it. Drive the run from a small per-draft script that
   rebinds the module-level `hl.call_gemini` to a 480s socket timeout and keep everything else
   (`normalize_frontmatter`, the access-retry loop, the marker/source/length checks) unchanged; the
   attempt trail then still prints.

@@ -16,8 +16,8 @@ social distribution gate — the LinkedIn/Reddit channel was removed by the owne
 3. Receive the Judge's ranked shortlist and select the single strongest candidate (score ≥ 8),
    prioritizing high-scoring multi-topic syntheses over single-source summaries.
 4. Dispatch `verifier` → `drafter` → `stylist` in order, passing forward the brief each time.
-5. Enforce the frontier gate: if `stylist` reports the Claude rewrite could not run (missing
-   `ANTHROPIC_API_KEY`), halt and surface the error — do not ship a non-frontier rewrite.
+5. Enforce the frontier gate: if `stylist` reports the frontier rewrite could not run (missing
+   `DEEPSEEK_API_KEY`), halt and surface the error — do not ship a non-frontier rewrite.
 6. As soon as `stylist` reports the rewrite passed, dispatch `publisher` to **persist** the article
    (`scripts/publish.py <final draft>`): `published/`, `published_log.md`, Supabase, sitemap and the
    run-log row, and creates the CMS draft. That step is **not** gated — do not wait for approval
@@ -37,4 +37,4 @@ social distribution gate — the LinkedIn/Reddit channel was removed by the owne
 - Never write LinkedIn/Reddit copy or queue a social post — that channel was removed by the owner
   (2026-10-06). Persisting to the reader site + Supabase + the CMS draft is not gated and must not
   wait for anything.
-- Never run the Claude gate on a non-frontier model to "keep things moving".
+- Never run the frontier gate on a non-frontier model to "keep things moving".

@@ -2,6 +2,10 @@
 rewrite fails the topic-agnostic accessibility gate, feeds the exact FAIL reasons back to
 the frontier model and re-prompts (up to MAX_ATTEMPTS).
 
+Transport lives in `frontier_llm` (DeepSeek `deepseek-v4-pro` since 2026-11-02 — the Gemini
+generateContent path was retired with it). `call_gemini` is kept as the historical name because
+per-draft drivers rebind it; it now calls the DeepSeek frontier and still takes `timeout=`.
+
 Import with:  import humanizer_tools as ht   (scripts/ is on sys.path when these run).
 """
 from __future__ import annotations
@@ -12,9 +16,11 @@ import pathlib
 import re
 import urllib.request
 
-MODEL = "gemini-3.1-pro-preview"
+import frontier_llm
+
+MODEL = frontier_llm.TEXT_MODEL
 MAX_ATTEMPTS = 5  # how many times to re-prompt the model before holding at Loop 3
-MAX_TOKENS = 20000  # thinking-model budget: reasoning tokens count against this, so keep high
+MAX_TOKENS = frontier_llm.MAX_TOKENS  # reasoning tokens count against this, so keep high
 MIN_BODY_WORDS = 600  # body word floor: below this the frontier over-compacted; restore depth from the brief
 
 
@@ -24,35 +30,22 @@ def _key():
     Resolved at call time, not at import, so the offline half of the pipeline (the review audit and
     its tests) can import this module without a key present.
     """
-    KEY = os.environ.get("GOOGLE_API_KEY") or None
-    for envf in ([] if KEY else ["/root/.hermes/profiles/stylist/.env", "/root/.hermes/.env"]):
-        p = pathlib.Path(envf)
-        if p.exists():
-            for line in p.read_text().splitlines():
-                if line.startswith("GOOGLE_API_KEY="):
-                    KEY = line.split("=", 1)[1].strip().strip('"').strip("'")
-                    break
-        if KEY:
-            break
-    assert KEY, "GOOGLE_API_KEY not found (env or ~/.hermes/profiles/stylist/.env)"
-    return KEY
+    return frontier_llm.key()
 
 
 def endpoint(model=MODEL):
-    """The generateContent URL for `model` — built per call so import needs no key."""
-    return f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={_key()}"
+    """The frontier's chat-completions URL — built per call so import needs no key."""
+    return frontier_llm.BASE_URL
 
 
-def call_gemini(prompt, max_tokens=MAX_TOKENS, temperature=0.7, timeout=240, model=MODEL):
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature},
-    }
-    req = urllib.request.Request(endpoint(model), data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        j = json.loads(r.read().decode())
-    return j["candidates"][0]["content"]["parts"][0]["text"].strip()
+def call_frontier(prompt, max_tokens=MAX_TOKENS, temperature=0.7, timeout=240, model=MODEL):
+    return frontier_llm.chat(prompt, model=model, max_tokens=max_tokens,
+                             temperature=temperature, timeout=timeout)
+
+
+# Historical name: every per-draft Loop 3 driver rebinds `ht.call_gemini` / `hl.call_gemini` to
+# widen the socket timeout, so the name and signature must stay.
+call_gemini = call_frontier
 
 
 def measure(path):

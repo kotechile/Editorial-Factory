@@ -136,12 +136,19 @@ gates, and every non-deterministic step is gated on retrievable evidence.
 
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
-The **Claude Stylist & Critic** role is pinned to a frontier Anthropic model served through
-**kie.ai** (`https://api.kie.ai/claude`, model `claude-sonnet-5`), which requires
-`ANTHROPIC_API_KEY=Bearer <kie key>` plus a `model.base_url` override on the stylist profile.
-Without it, the pipeline halts at the frontier gate rather than substituting a non-frontier model.
+The **Claude Stylist & Critic** role (`.agents/claude_stylist.md`) is the frontier pass. Since
+**2026-11-02** the frontier is **`deepseek-v4-pro`** on the configured DeepSeek provider (owner cost
+directive — Google Gemini 3.1 Pro billing retired). The `stylist` profile carries
+`provider: deepseek` / `model: deepseek-v4-pro` / `base_url: ''` plus a `deepseek-pro` alias; the
+kie.ai Claude aliases remain available but are not the frontier. Without a working frontier the
+pipeline halts at the frontier gate rather than substituting a non-frontier model.
 
-The **Art Director** (`scripts/illustration_creator.py`) runs on `gemini-3.1-pro-preview` via
-`GOOGLE_API_KEY` (the Loop 3 key) and generates through the same kie.ai gateway with `KIE_API_KEY`
+The pipeline reaches the frontier through one module, `scripts/frontier_llm.py`
+(`TEXT_MODEL = deepseek-v4-pro`). Every Loop 3 driver, `article_reviewer.py` and the art director
+go through it, so a provider change is made there and in the `stylist` profile only.
+
+The **Art Director** (`scripts/illustration_creator.py`) runs its brief on `deepseek-v4-pro` and its
+render review on `deepseek-flash` (DeepSeek's vision model; `deepseek-v4-pro` is text-only), both
+via `DEEPSEEK_API_KEY`. Images still generate through the kie.ai gateway with `KIE_API_KEY`
 (two image models: `flux-2/pro-text-to-image`, `nano-banana-pro`). A missing key is an explicit
 error, never a placeholder image.

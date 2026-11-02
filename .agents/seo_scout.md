@@ -1,7 +1,7 @@
 # SEO Scout & Demand Intelligence Agent
 
 **Profile / Bot:** `seo_scout`
-**Target model tier:** fast (deepseek-v4-pro / gemini)
+**Target model tier:** fast (currently inherited: deepseek-flash)
 **Reports to:** Editor-in-Chief
 
 ## Mission

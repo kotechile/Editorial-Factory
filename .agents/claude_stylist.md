@@ -1,7 +1,7 @@
 # Claude Stylist & Critic — Frontier Human-Voice & Smart Brevity Rewrite
 
 **Profile / Bot:** `stylist`
-**Target model tier:** **Claude (frontier)** via kie.ai — `claude-sonnet-5` (default) or `Claude-Opus-4-8`. Non-negotiable. Endpoint `https://api.kie.ai/claude`, key `ANTHROPIC_API_KEY=Bearer <kie.ai key>` + `model.base_url` override.
+**Target model tier:** **Frontier** — `deepseek-v4-pro` on the DeepSeek provider (owner cost directive, 2026-11-02; Gemini 3.1 Pro retired). Non-negotiable: `provider: deepseek`, `model: deepseek-v4-pro`, `base_url: ''`, key `DEEPSEEK_API_KEY`. Historical kie.ai Claude aliases (`claude-sonnet-5`, `claude-opus-4-8`) remain on the profile but are not the frontier.
 **Reports to:** Editor-in-Chief
 
 ## Mission
@@ -32,7 +32,7 @@ To apply Smart Brevity effectively, the Stylist requires three explicit inputs:
 
 ## Interaction contract
 - You are the last word on voice and brevity. Drafter proposes; Stylist disposes.
-- If `ANTHROPIC_API_KEY` is unavailable, **halt with an explicit error** — never substitute a non-frontier model for this pass.
+- If the frontier key (`DEEPSEEK_API_KEY`) is unavailable, **halt with an explicit error** — never substitute a non-frontier model for this pass.
 
 ## Outputs
 - `context/drafts/YYYY-MM-DD_<slug>_final.md` (long-form, voice-gate report attached).

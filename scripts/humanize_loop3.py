@@ -1,30 +1,19 @@
 #!/usr/bin/env python3
-"""Editorial-factory Loop 3: frontier humanizer on Gemini for the restored drafts.
+"""Editorial-factory Loop 3: frontier humanizer on DeepSeek for the restored drafts.
 
-Writes context/drafts/YYYY-MM-DD_<slug>_final.md per skills/claude_humanizer.md §5:
-long-form, all section markers, ## Sources verbatim, + a Gate report. No social variant (the
-LinkedIn/Reddit channel was removed 2026-10-06).
+The frontier was Gemini 3.1 Pro until 2026-11-02; it is now `deepseek-v4-pro` through the shared
+`frontier_llm` transport (Google billing retired). Writes context/drafts/YYYY-MM-DD_<slug>_final.md
+per skills/claude_humanizer.md §5: long-form, all section markers, ## Sources verbatim, + a Gate
+report. No social variant (the LinkedIn/Reddit channel was removed 2026-10-06).
 """
 import json, os, re, sys, urllib.request, urllib.parse, pathlib
 import humanizer_tools as ht  # retry loop + accessibility feedback
+import frontier_llm
 
 ROOT = pathlib.Path("/root/editorial-factory")
 DRAFTS = ROOT / "context/drafts"
-KEY = None
-for envf in ["/root/.hermes/profiles/stylist/.env", "/root/.hermes/.env"]:
-    p = pathlib.Path(envf)
-    if p.exists():
-        for line in p.read_text().splitlines():
-            if line.startswith("GOOGLE_API_KEY="):
-                v = line.split("=", 1)[1].strip().strip('"').strip("'")
-                KEY = v
-                break
-    if KEY:
-        break
-assert KEY, "GOOGLE_API_KEY not found"
 
-MODEL = "gemini-3.1-pro-preview"
-URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={KEY}"
+MODEL = frontier_llm.TEXT_MODEL
 
 RULES = """You are the Frontier Humanizer & Stylist (Loop 3 — final rewrite) for an editorial pipeline. Rewrite the given story draft in a genuine, punchy human voice applying the SMART BREVITY system.
 
@@ -118,19 +107,12 @@ Now rewrite the following draft:"""
 RULES += "\n" + ht.LONGFORM_VOICE_RULES
 RULES += ht.VIBE_COPY_RULES  # the copy contract, read from context/vibe/lexicon.json
 
-def call_gemini(prompt):
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": 20000, "temperature": 0.7},
-    }
-    req = urllib.request.Request(URL, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"})
-    # Thinking models (gemini-3.1-pro-preview) burn seconds on reasoning before the first
-    # token; a 30s socket timeout aborts a full rewrite mid-generation. Match humanizer_tools.
-    with urllib.request.urlopen(req, timeout=240) as r:
-        j = json.loads(r.read().decode())
-    txt = j["candidates"][0]["content"]["parts"][0]["text"]
-    return txt
+def call_frontier(prompt, timeout=240):
+    """The frontier rewrite. Kept as `call_gemini` below because per-draft drivers rebind that name."""
+    return ht.call_frontier(prompt, timeout=timeout)
+
+
+call_gemini = call_frontier  # historical name; drivers do `hl.call_gemini = ...`
 
 def extract_sources(draft):
     m = re.search(r"## Sources\s*\n(.*?)(?=\n<!-- linkedin -->|\n## Gate report|\Z)", draft, re.S)

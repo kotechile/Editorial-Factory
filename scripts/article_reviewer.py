@@ -52,11 +52,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import humanizer_tools as ht  # noqa: E402  (frontmatter repair, keyword, provider key)
 import review_audit as ra  # noqa: E402
 
-MODEL = "gemini-3.1-pro-preview"
+MODEL = ht.MODEL  # deepseek-v4-pro (frontier_llm.TEXT_MODEL); the Gemini path was retired 2026-11-02
 MAX_TOKENS = 32000
 TIMEOUT = 900
 ATTEMPTS = 3
-GEMINI = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
 MARKERS = ("<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
            "<!-- nuanced-takeaway -->", "<!-- tldr -->")
@@ -69,24 +68,9 @@ SKELETON = ("## The big picture:", "## By the numbers", "## What I'd watch:", "#
 
 def call_model(prompt: str, *, model: str = MODEL, timeout: int = TIMEOUT,
                max_tokens: int = MAX_TOKENS, temperature: float = 0.7) -> str:
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature},
-    }
-    url = GEMINI.format(model=model, key=ht._key())
-    req = urllib.request.Request(url, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        payload = json.loads(r.read().decode())
-    cand = (payload.get("candidates") or [{}])[0]
-    finish = cand.get("finishReason", "")
-    parts = (cand.get("content") or {}).get("parts") or []
-    text = "".join(p.get("text", "") for p in parts).strip()
-    if finish == "MAX_TOKENS" and "## Sources" not in text:
-        raise RuntimeError(f"truncated rewrite (finishReason={finish}); raise max_tokens")
-    if not text:
-        raise RuntimeError(f"empty rewrite (finishReason={finish})")
-    return text
+    import frontier_llm
+    return frontier_llm.chat(prompt, model=model, max_tokens=max_tokens,
+                             temperature=temperature, timeout=timeout)
 
 
 # -------------------------------------------------------------------------------------- the brief
