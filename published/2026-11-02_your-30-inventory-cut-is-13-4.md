@@ -12,6 +12,12 @@ meta_title: "Double Orders, Cut 13.4%: Not 30%"
 meta_title_source: "derived_from_title"
 meta_description: "The slide says double your orders and the safety stock cut is 30%. The math is sound only because the source page says the step out loud: doubling the…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-30-inventory-cut-is-13-4/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A two-rail order-cadence mechanism with a fast upper carriage and a fixed lower lead-time stop in a loading bay."
+image_caption: "Double Orders Cut 13.4% Not 30%: Halving the review interval is not a 30% safety stock cut."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -60,6 +66,14 @@ There is also a unit trap inside the math, and it matters for planners copying t
 
 I used to think the arithmetic was the hard part. The harder part is quoting a model without carrying its assumptions into the room. Ordering more often is a cadence call, and its size depends on the clock the part is on. That is a smaller claim, and a defensible one.
 
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** Ordering more often shortens the order interval, not the supplier's clock.
+**The number:** The buffer saving is a square-root effect, so it shrinks as the lead time grows.
+**The risk:** Cycle stock is the saving that scales, and one more order can spend it.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -72,14 +86,6 @@ I used to think the arithmetic was the hard part. The harder part is quoting a m
 - [Ops leaders: Why 98% line fill ships 18% short](/your-98-fill-rate-18-dont-ship/) — more on Supply Chain & Operations
 - [Safety Stock Sizing](/safety-stock-forecast-error-not-demand-noise/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** Ordering more often shortens the order interval, not the supplier's clock.
-**The number:** The buffer saving is a square-root effect, so it shrinks as the lead time grows.
-**The risk:** Cycle stock is the saving that scales, and one more order can spend it.
 
 ## Sources
 

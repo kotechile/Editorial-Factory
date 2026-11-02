@@ -1,0 +1,112 @@
+{
+  "slug": "your-cheapest-part-needs-four-sigma",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Warehouse racking with overstuffed polymer bins beside nearly empty bins, lit by raking sunlight, illustrating safety stock imbalance.",
+      "caption": "A single fill-rate target leaves some bins overflowing while the cheapest line-stopping parts sit critically under-stocked.",
+      "title": "Unequal safety stock on warehouse racking",
+      "bytes": 381100,
+      "sha256": "sha256:f436b58182440e0a6aa342f853e6b0c4"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression of a warehouse aisle: floor-to-ceiling racking in corrugated steel, some polymer bins bulging with parts while adjacent bins sit nearly empty, low raking daylight from the right cutting long shadows across concrete, graphite, cobalt blue and safety yellow accents, deep industrial contrast, asymmetric vertical layers stacked by lens compression, no people, no text, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos, UI",
+  "rationale": "This is a systemic inventory-buffer misallocation story best shown through physical racking scale. Telephoto compression stacks the racking layers to reveal the uneven stocking without abstract shapes, and the warehouse aisle fits the publication's industrial world.",
+  "cue": "a blanket 98% keeps about 2.5 times the buffer",
+  "subject": "warehouse racking bins unequally stocked, some overflowing, others near-empty",
+  "core_thesis": "A blanket 98% fill target over-funds margin-rich items by about 2.5 times their defensible buffer while holding barely half the buffer a cheap line-stopping part justifies.",
+  "core_conflict": "uniform service-level target vs item-specific miss/carry cost ratio",
+  "composition": "asymmetric vertical racking layers compressed by telephoto, hero off-center",
+  "alt_text": "98% Fill Target Hides Four Sigma. Warehouse racking with overstuffed polymer bins beside nearly empty bins, lit by raking sunlight",
+  "caption": "98% Fill Target Hides Four Sigma: One target buys too little for the part that stops a line.",
+  "title": "98% Fill Target Hides Four Sigma",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-cheapest-part-needs-four-sigma/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 402202,
+  "sha256": "sha256:cba9397027a111328894feb6e8391fad34bbc6fb0505f3c0d3ab227087e07c33",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402202,
+    "quality": 72,
+    "sha256": "sha256:cba9397027a111328894feb6e8391fad34bbc6fb0505f3c0d3ab227087e07c33",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f3bccbb439221cffbb75c323e6eec14c8ba1238fbd45d14d517857a7190f1f00",
+  "render_phash": "09dfc1fc219c519e18bf40dc50fd90fe927e62588a7f183f345a485c901e90ae",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A long, telephoto-compressed aisle between tall orange-and-grey steel racking units filled with blue plastic bins of small metal hardware, with yellow protective posts at the rack bases and daylight falling in bands down the concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "It shows warehouse racking bins of small parts with visibly uneven fill levels, which is the physical form of the buffer and fill-target mechanism the article argues about, though the stocking variance is subtle rather than dramatically lopsided."
+  },
+  "source_hash": "sha256:22d922c6c85801aec60b5657d8ebb412",
+  "source_chars": 4831,
+  "task_id": "ccb45489bf5b6de7089e2ad3a4457b86",
+  "credits": 5.0,
+  "cost_ms": 75,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ccb45489bf5b6de7089e2ad3a4457b86_1793650580197.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression of a warehouse aisle: floor-to-ceiling racking in corrugated steel, some polymer bins bulging with parts while adjacent bins sit nearly empty, low raking daylight from the right cutting long shadows across concrete, graphite, cobalt blue and safety yellow accents, deep industrial contrast, asymmetric vertical layers stacked by lens compression, no people, no text, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-02T20:16:27+00:00",
+  "overlay": {
+    "kicker": "FILL TARGET // SAFETY STOCK",
+    "title": "98% FILL TARGET HIDES FOUR SIGMA",
+    "hook": "One target buys too little for the part that stops a line",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.54,
+    "target": 4.5,
+    "clutter": 0.145,
+    "region_rgb": [
+      40,
+      40,
+      41
+    ],
+    "binding_rgb": [
+      61,
+      59,
+      64
+    ],
+    "title_lines": [
+      "98% FILL TARGET",
+      "HIDES FOUR SIGMA"
+    ],
+    "subject": 0.056,
+    "ink_subject": 0.021,
+    "spike": 0.193,
+    "generated_at": "2026-11-02T20:16:27+00:00"
+  }
+}

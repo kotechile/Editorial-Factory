@@ -277,6 +277,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-02 | home_equity_tco | your-basement-lease-risks-500000 | Your Basement Lease Risks $500,000 | https://pressflow.aichieve.net/published/2026-11-02_your-basement-lease-risks-500000.md | reader site only |
 | 2026-11-02 | home_infrastructure_lifecycle_tco | your-septic-interval-is-18-months | Your Septic Interval: 18 Months, Not 5 Years | https://pressflow.aichieve.net/published/2026-11-02_your-septic-interval-is-18-months.md | reader site only |
 | 2026-11-02 | meio_working_capital_tco | your-30-inventory-cut-is-13-4 | Double Orders, Cut 13.4%: Not 30% | https://pressflow.aichieve.net/published/2026-11-02_your-30-inventory-cut-is-13-4.md | reader site only |
+| 2026-11-02 | sales_order_service_level_otif | your-cheapest-part-needs-four-sigma | Your 98% Target Hides Four Sigma | https://pressflow.aichieve.net/published/2026-11-02_your-cheapest-part-needs-four-sigma.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

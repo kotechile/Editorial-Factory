@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T19:49:48Z",
+  "updated_at": "2026-11-02T20:17:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4915,8 +4915,8 @@
         "By the numbers",
         "What I'd watch:",
         "The catch",
-        "Related reading",
-        "At a glance"
+        "At a glance",
+        "Related reading"
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-02",
@@ -4955,6 +4955,24 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-02",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_your-cheapest-part-needs-four-sigma",
+      "title": "Your 98% Target Hides Four Sigma",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-02",
       "public": false
     },

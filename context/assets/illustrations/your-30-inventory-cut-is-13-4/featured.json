@@ -1,0 +1,114 @@
+{
+ "slug": "your-30-inventory-cut-is-13-4",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "A two-rail order-cadence mechanism with a fast upper carriage and a fixed lower lead-time stop in a loading bay.",
+   "caption": "The order carriage moves faster along the upper rail, but the lower supplier stop never shortens.",
+   "title": "Double Orders Frequency Mechanism",
+   "bytes": 391504,
+   "sha256": "sha256:25973a9d535ce9d1d6e4fd931370275e"
+  }
+ ],
+ "style": "clay_render",
+ "style_label": "Matte 3D render",
+ "style_when": "the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "On a concrete loading-bay floor, a brushed-steel wall mount holds two parallel rails, upper rail carrying a graphite safety-yellow latching carriage at short intervals, lower rail holding a fixed cast-iron stop block; a wedge-shaped aluminum buffer sits between them. Key light rakes from the left across the matte surfaces, casting long contact shadows on the concrete. Palette graphite, safety yellow, bone white. Extreme asymmetry with the mechanism off-centre, generous negative space to the right.",
+ "negative_prompt": "garbled text, random lettering, watermarks, logo",
+ "rationale": "Clay render turns the arithmetic into a tangible mechanism without falling back to spreadsheet or datacenter clichés; the two-rail assembly makes the order interval versus fixed lead time tension legible, and the shrinking wedge physicalizes the safety-stock buffer.",
+ "cue": "Double Orders, Cut 13.4%: Not 30%",
+ "subject": "a two-rail order-cadence mechanism with a fast upper carriage and a fixed lower lead-time stop",
+ "core_thesis": "Doubling replenishment frequency halves the order interval but not supplier lead time, so the safety-stock cut shrinks from 29.3% at zero lead time to 13.4% at one week and 2.0% on a 90-day import, while cycle stock halves with order quantity.",
+ "core_conflict": "Order-cadence gains versus fixed supplier lead time and per-order transaction cost.",
+ "composition": "extreme asymmetry with the mechanism off-centre and generous negative space to the right",
+ "alt_text": "A two-rail order-cadence mechanism with a fast upper carriage and a fixed lower lead-time stop in a loading bay.",
+ "caption": "Double Orders Cut 13.4% Not 30%: Halving the review interval is not a 30% safety stock cut.",
+ "title": "Double Orders Cut 13.4% Not 30%",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 3,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-30-inventory-cut-is-13-4/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 408158,
+ "sha256": "sha256:1443796837ce22e0d1f7cdb007fbbd04c0ce9d64af796c2343741fbe710f8455",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 408158,
+  "quality": 60,
+  "sha256": "sha256:1443796837ce22e0d1f7cdb007fbbd04c0ce9d64af796c2343741fbe710f8455",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:ef9736210b3bf54df5b60bccb2ce82043276ccbfc137eda806dba990aa3e309f",
+ "render_phash": "3d3c2d181a74b236e436e678d678ac3aac1acc6dc42084f3c471f2f1c0d5ca93",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "Two parallel metal linear guide rails run diagonally across a pale concrete surface; a yellow and black bearing carriage rides the upper rail near a mounted metal bracket, while a dark grey block sits as a fixed stop on the lower rail, with the right two-thirds of the frame left as empty floor.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.72,
+  "reason": "The frame delivers the commissioned two-rail cadence mechanism — a moving carriage on one rail and a fixed stop on the other — which reads directly as the article's order-interval versus fixed lead-time mechanism rather than generic or off-industry filler."
+ },
+ "source_hash": "sha256:c83bcf1d52193b62747ea693e6f5c9a8",
+ "source_chars": 5349,
+ "task_id": "12bd4ec386759bd3250cb63c2804f81a",
+ "credits": 18.0,
+ "cost_ms": 23,
+ "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_878c49d8adf946fed313932ca275b0d6.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "On a concrete loading-bay floor, a brushed-steel wall mount holds two parallel rails, upper rail carrying a graphite safety-yellow latching carriage at short intervals, lower rail holding a fixed cast-iron stop block; a wedge-shaped aluminum buffer sits between them. Key light rakes from the left across the matte surfaces, casting long contact shadows on the concrete. Palette graphite, safety yellow, bone white. Extreme asymmetry with the mechanism off-centre, generous negative space to the right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-11-02T20:01:53+00:00",
+ "overlay": {
+  "kicker": "SAFETY STOCK MATH // WORKING CAPITAL",
+  "title": "DOUBLE ORDERS CUT 13.4% NOT 30%",
+  "hook": "Halving the review interval is not a 30% safety stock cut",
+  "anchor": "top-right",
+  "light": false,
+  "scrim": 0,
+  "contrast": 6.05,
+  "target": 4.5,
+  "clutter": 0.058,
+  "region_rgb": [
+   192,
+   184,
+   166
+  ],
+  "binding_rgb": [
+   183,
+   176,
+   158
+  ],
+  "title_lines": [
+   "DOUBLE ORDERS",
+   "CUT 13.4% NOT 30%"
+  ],
+  "subject": 0.001,
+  "ink_subject": 0.001,
+  "spike": 0.0,
+  "generated_at": "2026-11-02T20:01:53+00:00"
+ }
+}
