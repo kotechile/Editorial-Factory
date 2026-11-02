@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-cheapest-part-needs-four-sigma/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "98% Fill Target Hides Four Sigma. Warehouse racking with overstuffed polymer bins beside nearly empty bins, lit by raking sunlight"
+image_alt: "Steel racking in a warehouse aisle, blue parts bins on two levels either side, raking daylight down the centre and yellow post guards"
 image_caption: "98% Fill Target Hides Four Sigma: One target buys too little for the part that stops a line."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -64,17 +64,6 @@ The model also assumes demand that behaves roughly normally, which is generous w
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Stop Blaming Demand Planning for Stockouts" -> /stop-blaming-demand-planning-for-stockouts/ [same site (aichieve.net); same category; topical overlap: fill, hides] Link "Stop Blaming Demand Planning for Stockouts" in the section where the article touches fill, hides. -->
-<!-- internal-link hint: "49.9% On Time: Shippers Stuck in the Gap" -> /shippers-stuck-in-the-gap/ [same site (aichieve.net); same category; topical overlap: time] Link "49.9% On Time: Shippers Stuck in the Gap" in the section where the article touches time. -->
-<!-- internal-link hint: "63.6% OTIF: Your Hidden Quantity Gap" -> /your-hidden-quantity-gap/ [same site (aichieve.net); same category; topical overlap: time] Link "63.6% OTIF: Your Hidden Quantity Gap" in the section where the article touches time. -->
-## Related reading
-
-- [Stop Blaming Demand Planning for Stockouts](/stop-blaming-demand-planning-for-stockouts/) — more on Supply Chain & Operations
-- [49.9% On Time: Shippers Stuck in the Gap](/shippers-stuck-in-the-gap/) — more on Supply Chain & Operations
-- [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -82,6 +71,17 @@ The model also assumes demand that behaves roughly normally, which is generous w
 **The shift:** Targets are derived per item from the two error costs instead of copied from one customer clause.
 **The number:** 2.5 times the buffer a 12%-margin item can pay for.
 **The risk:** A contract floor still binds, and the cheap part that stops a line needs a supply-mode change.
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: "Stop Blaming Demand Planning for Stockouts" -> /stop-blaming-demand-planning-for-stockouts/ [same site (aichieve.net); same category; topical overlap: fill, hides] Link "Stop Blaming Demand Planning for Stockouts" in the section where the article touches fill, hides. -->
+<!-- internal-link hint: "4 Warehouses Halve Stock. Yours Won't" -> /four-warehouses-halve-stock/ [same site (aichieve.net); same category; topical overlap: safety stock, inventory, fill rate] Link "4 Warehouses Halve Stock. Yours Won't" where the article touches safety stock. -->
+<!-- internal-link hint: "63.6% OTIF: Your Hidden Quantity Gap" -> /your-hidden-quantity-gap/ [same site (aichieve.net); same vertical; same category; topical overlap: OTIF, shortage, fill] Link "63.6% OTIF: Your Hidden Quantity Gap" where the article touches the service score. -->
+## Related reading
+
+- [Stop Blaming Demand Planning for Stockouts](/stop-blaming-demand-planning-for-stockouts/) — more on Supply Chain & Operations
+- [4 Warehouses Halve Stock. Yours Won't](/four-warehouses-halve-stock/) — more on Supply Chain & Operations
+- [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
+<!-- internal-links:end -->
 
 ## Sources
 [1] NIST/SEMATECH e-Handbook of Statistical Methods, § 1.3.6.7.1, Cumulative Distribution Function of the Standard Normal Distribution: https://itl.nist.gov/div898/handbook/eda/section3/eda3671.htm

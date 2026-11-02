@@ -4,7 +4,7 @@
   "history": [
     {
       "revision": 1,
-      "alt_text": "Warehouse racking with overstuffed polymer bins beside nearly empty bins, lit by raking sunlight, illustrating safety stock imbalance.",
+      "alt_text": "Steel racking in a warehouse aisle, blue parts bins on two levels either side, raking daylight down the centre and yellow post guards",
       "caption": "A single fill-rate target leaves some bins overflowing while the cheapest line-stopping parts sit critically under-stocked.",
       "title": "Unequal safety stock on warehouse racking",
       "bytes": 381100,
@@ -27,7 +27,7 @@
   "core_thesis": "A blanket 98% fill target over-funds margin-rich items by about 2.5 times their defensible buffer while holding barely half the buffer a cheap line-stopping part justifies.",
   "core_conflict": "uniform service-level target vs item-specific miss/carry cost ratio",
   "composition": "asymmetric vertical racking layers compressed by telephoto, hero off-center",
-  "alt_text": "98% Fill Target Hides Four Sigma. Warehouse racking with overstuffed polymer bins beside nearly empty bins, lit by raking sunlight",
+  "alt_text": "Steel racking in a warehouse aisle, blue parts bins on two levels either side, raking daylight down the centre and yellow post guards",
   "caption": "98% Fill Target Hides Four Sigma: One target buys too little for the part that stops a line.",
   "title": "98% Fill Target Hides Four Sigma",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
