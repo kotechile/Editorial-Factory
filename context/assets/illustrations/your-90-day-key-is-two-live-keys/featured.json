@@ -13,7 +13,7 @@
   ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point — with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -27,7 +27,7 @@
   "core_thesis": "A machine key's exposure is its validity window, not its rotation schedule: the platforms that issue one already default to about an hour, so the number to put in policy is a maximum lifetime in hours, and a rotation that does not delete the replaced key leaves two live keys instead of one.",
   "core_conflict": "calendar-based rotation vs actual revocation; a new key does not kill the old one",
   "composition": "asymmetric with hero pair off-centre left, generous negative space right, long cast shadow",
-  "alt_text": "Your 90-DAY Key Is Still Live. Two metal service-key cartridges, one seated in a live slot and one removed, next to an hourglass on a",
+  "alt_text": "Two metal service-key cartridges at a server rack, one seated in a live slot and another set down beside a brass hourglass.",
   "caption": "Your 90-DAY Key Is Still Live: A 90-day rotation that skips deletion leaves two live keys.",
   "title": "Your 90-DAY Key Is Still Live",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.9,
-    "reason": "The frame shows exactly the ordered hero pair \u2014 one key cartridge still seated in the rack and its identical twin pulled out onto the ledge, with an hourglass standing in for the validity window \u2014 which is the article's own mechanism of deleting the replaced key rather than just rotating it."
+    "reason": "The frame shows exactly the ordered hero pair — one key cartridge still seated in the rack and its identical twin pulled out onto the ledge, with an hourglass standing in for the validity window — which is the article's own mechanism of deleting the replaced key rather than just rotating it."
   },
   "source_hash": "sha256:a3969395c726c1b18d8aa407da490857",
   "source_chars": 4668,

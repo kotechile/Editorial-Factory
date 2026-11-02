@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-90-day-key-is-two-live-keys/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "Your 90-DAY Key Is Still Live. Two metal service-key cartridges, one seated in a live slot and one removed, next to an hourglass on a"
+image_alt: "Two metal service-key cartridges at a server rack, one seated in a live slot and another set down beside a brass hourglass."
 image_caption: "Your 90-DAY Key Is Still Live: A 90-day rotation that skips deletion leaves two live keys."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -28,24 +28,24 @@ Google's guide for swapping service keys says replace them at least every 90 day
 
 ## The big picture:
 
-The platforms that issue machine keys have already voted, and they voted for hours. A Kubernetes bound token, a short-lived credential tied to a running pod, lives one hour unless you change it, and the node's background worker (kubelet) renews it before it lapses [1]. An assumed Amazon Web Services (AWS) role, a temporary identity a caller steps into, runs from a 15-minute floor to a one-hour standard, and can reach 12 hours [2]. Google caps short-lived tokens at an hour out of the box, and raising that cap to 12 hours takes a company-level policy [4].
+The systems that issue machine keys have already voted, and they voted for hours. A Kubernetes bound token, a short-lived token tied to a running pod, lives one hour unless you change it, and the node's background worker (kubelet) renews it before it lapses [1]. An assumed Amazon Web Services (AWS) role, a temporary identity a caller steps into, runs from a 15-minute floor to a one-hour standard, and can reach 12 hours [2]. Google caps short-lived tokens at an hour out of the box, and raising that cap to 12 hours takes a company-level policy [4].
 
 The old-style static key, one you paste and keep, is the odd one out. It sits outside the short-lived credential system, so nothing renews it, and the vendor's fallback advice is a 90-day swap [3]. Against a one-hour token, 90 days is 2,160 hours, which is 2,160 times the window (90 × 24 = 2,160). That gap is not a rounding difference between vendors. It is the gap between a key that dies with the job and one that outlives the quarter it was issued in.
 
-A reviewer reading a person's login uses a third ladder. The federal sign-in standard caps a user session at no more than 24 hours at its second assurance level, with an hour of idle time ending it, and cuts that to 12 hours with 15 minutes idle at the third [6]. That standard covers people, not agents, and nothing in it sets a rule for machines. My read is that it still shows where a reviewer's instinct sits: a day is the outside of a session, and a quarter is not.
+A reviewer reading a person's login uses a third ladder. The federal sign-in standard caps a user session at no more than 24 hours at its second security level, with an hour of idle time ending it, and cuts that to 12 hours with 15 minutes idle at the third [6]. That standard covers people, not agents, and nothing in it sets a rule for machines. My read is that it still shows where a reviewer's instinct sits: a day is the outside of a session, and a quarter is not.
 
 ## By the numbers
 
 - **90 days — Rotation by calendar:** the vendor's standing advice for service keys, and the period most control docs copy into policy [3]. The same page ends its swap steps by removing the replaced key, which is the step that starts the clock [3].
-- **1 hour — Bound-token standard:** a Kubernetes TokenRequest token (a short-lived pod credential) expires with its pod or after a set lifespan that is an hour unless changed. The node worker renews it before it lapses, and the docs' own example asks for 3,607 seconds [1].
+- **1 hour — Bound-token standard:** a Kubernetes TokenRequest token (a short-lived pod credential) expires with its pod or after a set life that is an hour unless changed. The node worker renews it before it lapses, and the docs' own example asks for 3,607 seconds [1].
 - **12 hours — Role ceiling:** the top of an assumed role's login, against a 15-minute floor [2], and the most a short-lived Google token can reach, through a company policy rather than a request setting [4].
-- **24 hours — Human login ladder:** the outside of a login window at the standard's second assurance level, cut to 12 hours with a 15-minute idle limit at the third [6].
+- **24 hours — Human login ladder:** the outside of a login window at the standard's middle level, cut to 12 hours with a 15-minute idle limit at the third [6].
 
 <!-- tactical-insight -->
 
 ## What I'd watch:
 
-- **Cancelling a key looks different on each platform.** A bound token cannot be cancelled on its own: the docs say to expire one by removing the pod it is tied to [1]. A response plan that says "revoke the token" names a control that platform does not offer.
+- **Cancelling a key works differently on each system.** A bound token cannot be cancelled on its own: the docs say to expire one by removing the pod it is tied to [1]. A response plan that says "revoke the token" names a control that system does not offer.
 - **The legacy pool is where old keys still live.** Tokens created automatically before the switch to bound tokens are cut off only after a year of disuse, not a year of age [1]. One in daily use never ages out, so the count of old tokens stored as Kubernetes Secrets (the cluster objects that hold credentials) still mounted across clusters is the number worth reporting.
 - **The exception list is the policy.** Short-lived tokens are the default, so a longer window becomes a decision someone signs. Google makes 12 hours a company-level setting rather than a request value [4], and the role ceiling is a role setting, not something a caller asks for [2]. My sense is that a register of those exceptions will age better than the policy text above it.
 - **The direction of travel removes the key rather than shortens it.** The same vendor advises avoiding service keys wherever a stronger method exists [5], which matters when you buy: a platform that takes only a pasted key will hold that exception for years.
@@ -58,26 +58,22 @@ None of this is free. A job that cannot create its own key, or a vendor that tak
 
 What I find hard to square is that the long key usually survives because nobody built the thing that renews it, not because anyone judged the risk acceptable. So the control is honestly reported as two numbers: the ceiling for the agents you can automate, and the count of exceptions you cannot. A policy with one number and no exception count describes a rule, not a state.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your 68K Tokens Cost Every Step" -> /your-68k-tokens-cost-every-step/ [same site (aichieve.net); topical overlap: every, live, step] Link "Your 68K Tokens Cost Every Step" in the section where the article touches every, live, step. -->
-<!-- internal-link hint: "Agent Identity: The Wrong Layer" -> /agent-identity-missed-the-real-breach/ [same site (aichieve.net); same category; topical overlap: live] Link "Agent Identity: The Wrong Layer" in the section where the article touches live. -->
-<!-- internal-link hint: "Azure's Bad 40 Hours" -> /azure-control-plane-single-point-of-failure/ [same site (aichieve.net); same category; topical overlap: service] Link "Azure's Bad 40 Hours" in the section where the article touches service. -->
-## Related reading
-
-- [Your 68K Tokens Cost Every Step](/your-68k-tokens-cost-every-step/) — more on Major Purchases & Assets
-- [Agent Identity: The Wrong Layer](/agent-identity-missed-the-real-breach/) — more on Mental Models & Strategy
-- [Azure's Bad 40 Hours](/azure-control-plane-single-point-of-failure/) — more on Mental Models & Strategy
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
 
 **The shift:** machine keys now default to roughly an hour, leaving the static key as the last long-lived item in the stack.
-**The number:** one hour — a bound token's default lifespan.
+**The number:** one hour — a bound token's default life.
 **The risk:** a swap that spares the old key doubles your risk.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+## Related reading
+
+- [An Agent's Logs Aren't Evidence](/agent-audit-trail-not-evidence/) — what an action record has to hold, and how long to keep it
+- [Kill Switch Misses Half Your Agents](/kill-switch-misses-half-your-agents/) — what containment can do when a key cannot be revoked
+<!-- internal-links:end -->
 
 ## Sources
 
