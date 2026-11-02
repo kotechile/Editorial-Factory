@@ -1,0 +1,114 @@
+{
+  "slug": "your-90-day-key-is-two-live-keys",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two metal service-key cartridges, one seated in a live slot and one removed, next to an hourglass on a server-room ledge.",
+      "caption": "A rotation that leaves the old key in place creates two live credentials, so exposure is measured in hours, not the calendar.",
+      "title": "Two live keys in a rack slot",
+      "bytes": 357494,
+      "sha256": "sha256:673a80f16189c9ff6061030fa9cc4f63"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Inside a server room rack row, a modular mechanical assembly on a brushed steel shelf: a vertical rack rail with two keyed slot sockets; an aluminum keyed credential cartridge fully seated in the upper socket with a small cobalt status tab; an identical un-seated cartridge lies on the concrete ledge below, angled; a small brass hourglass with dark sand mid-flow stands beside it. Hard directional light from upper left rakes across brushed steel and concrete, throwing long cast shadows to the right. Palette graphite, cobalt, safety yellow. Asymmetric composition with the live cartridge off-centre left and generous negative space right. No text, no logos, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, text overlays",
+  "rationale": "The story is a single rule about credential lifecycle, so a restrained modular assembly of two keyed cartridges and an hourglass states the mechanism without a stock photo. It uses component_assembly's single directional light and negative space to make the two-live-keys failure legible.",
+  "cue": "two live keys instead of one",
+  "subject": "two identical metal service-key cartridges, one inserted live in a rack slot and one removed on the ledge",
+  "core_thesis": "A machine key's exposure is its validity window, not its rotation schedule: the platforms that issue one already default to about an hour, so the number to put in policy is a maximum lifetime in hours, and a rotation that does not delete the replaced key leaves two live keys instead of one.",
+  "core_conflict": "calendar-based rotation vs actual revocation; a new key does not kill the old one",
+  "composition": "asymmetric with hero pair off-centre left, generous negative space right, long cast shadow",
+  "alt_text": "Your 90-DAY Key Is Still Live. Two metal service-key cartridges, one seated in a live slot and one removed, next to an hourglass on a",
+  "caption": "Your 90-DAY Key Is Still Live: A 90-day rotation that skips deletion leaves two live keys.",
+  "title": "Your 90-DAY Key Is Still Live",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-90-day-key-is-two-live-keys/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395675,
+  "sha256": "sha256:c344349cdd47db49212775e204e990f68c8d65f5ae79b5b132ce862aaf235bd1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395675,
+    "quality": 84,
+    "sha256": "sha256:c344349cdd47db49212775e204e990f68c8d65f5ae79b5b132ce862aaf235bd1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:46c1d6983ea5fca8288a4c946338bc0206ac1a334a236c54dbe71aabfc9651c7",
+  "render_phash": "99d198d59ad796cb98ce88d819b31b270a671ccf58d818dc35a47587e31fe73f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A server rack rail with a rectangular metal cartridge inserted into a slot, a second identical cartridge lying on the concrete ledge below it on the left, and a small brass hourglass standing on the ledge between them, with a long shadow cast to the right across the floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame shows exactly the ordered hero pair \u2014 one key cartridge still seated in the rack and its identical twin pulled out onto the ledge, with an hourglass standing in for the validity window \u2014 which is the article's own mechanism of deleting the replaced key rather than just rotating it."
+  },
+  "source_hash": "sha256:a3969395c726c1b18d8aa407da490857",
+  "source_chars": 4668,
+  "task_id": "17d9f13d93cd92bff7e416fad4b74362",
+  "credits": 18.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_4bf9c58030744f3a375ae4ed1a9a73c4.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Inside a server room rack row, a modular mechanical assembly on a brushed steel shelf: a vertical rack rail with two keyed slot sockets; an aluminum keyed credential cartridge fully seated in the upper socket with a small cobalt status tab; an identical un-seated cartridge lies on the concrete ledge below, angled; a small brass hourglass with dark sand mid-flow stands beside it. Hard directional light from upper left rakes across brushed steel and concrete, throwing long cast shadows to the right. Palette graphite, cobalt, safety yellow. Asymmetric composition with the live cartridge off-centre left and generous negative space right. No text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-02T18:16:15+00:00",
+  "overlay": {
+    "kicker": "MACHINE KEYS // EXPOSURE WINDOW",
+    "title": "YOUR 90-DAY KEY IS STILL LIVE",
+    "hook": "A 90-day rotation that skips deletion leaves two live keys",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 75,
+    "contrast": 6.03,
+    "target": 5.5,
+    "clutter": 0.401,
+    "region_rgb": [
+      58,
+      56,
+      51
+    ],
+    "binding_rgb": [
+      129,
+      126,
+      119
+    ],
+    "title_lines": [
+      "YOUR 90-DAY KEY",
+      "IS STILL LIVE"
+    ],
+    "subject": 0.125,
+    "ink_subject": 0.081,
+    "spike": 0.299,
+    "generated_at": "2026-11-02T18:16:15+00:00"
+  }
+}

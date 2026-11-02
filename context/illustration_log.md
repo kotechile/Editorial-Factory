@@ -396,3 +396,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-02 | `your-inventory-bill-is-24-percent-prepaid` | meio_working_capital_tco | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-inventory-bill-is-24-percent-prepaid/featured.jpg` |
 | 2026-11-02 | `kroger-direct-buy-retires-its-own-fine` | sales_order_service_level_otif | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/kroger-direct-buy-retires-its-own-fine/featured.jpg` |
 | 2026-11-02 | `your-192-sessions-stall-the-model-not-the-tools` | agentic_ai | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-192-sessions-stall-the-model-not-the-tools/featured.jpg` |
+| 2026-11-02 | `your-90-day-key-is-two-live-keys` | enterprise_ai_governance | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-90-day-key-is-two-live-keys/featured.jpg` |
