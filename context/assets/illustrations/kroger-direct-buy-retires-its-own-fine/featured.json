@@ -1,0 +1,114 @@
+{
+  "slug": "kroger-direct-buy-retires-its-own-fine",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A supplier lane check-in kiosk with a dark red fee light and a yellow routing slip in a loading bay.",
+      "caption": "A dark fee light on a supplier check-in kiosk marks the lane where Kroger no longer deducts a 3% fee.",
+      "title": "Kroger Lane Check-In Kiosk Dark Fee Light",
+      "bytes": 192420,
+      "sha256": "sha256:8a8b3ee1f413625fdcc4bc060c58d185"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph in a loading bay: a stainless-steel supplier lane check-in kiosk on a small steel pedestal, its red fee indicator light dark, a yellow routing slip half-inserted into a receipt slot. Softbox key light from the left rakes across brushed steel and concrete floor, casting one long contact shadow to the right; 85mm lens, shallow depth of field, graphite, safety yellow, bone white. Extreme asymmetric composition, kiosk off-centre on right third, generous negative space left, no text, no people.",
+  "negative_prompt": "garbled text, random lettering, readable numbers, watermarks, logos, legible text",
+  "rationale": "This story turns on a physical compliance meter being dropped, and a studio product shot isolates that check-in kiosk with a dark fee light on a real loading dock surface, using directional light and contact shadow to make the absence of the fee tangible.",
+  "cue": "Kroger's Lane Kills Your 3% Fee",
+  "subject": "a supplier lane check-in kiosk with a dark red fee indicator light, a yellow routing slip half-inserted, on a steel pedestal in a loading bay",
+  "core_thesis": "Kroger's supplier fines only apply to lanes a supplier books and bills, so direct sourcing onto Kroger-managed lanes drops the fee meter that once measured supplier performance.",
+  "core_conflict": "supplier-managed inbound lanes with enforceable invoice deductions vs Kroger-managed direct-sourcing lanes where the fee schedule has nothing to attach to, leaving the scorecard empty while the service promise remains.",
+  "composition": "extreme asymmetric composition, hero object off-centre on the right third, long cast shadow to the left, generous negative space",
+  "alt_text": "Kroger'S Lane Kills Your 3% Fee. A supplier lane check-in kiosk with a dark red fee light and a yellow routing slip in a loading bay.",
+  "caption": "Kroger'S Lane Kills Your 3% Fee: On Kroger-managed lanes, the 3% supplier late fee doesn't.",
+  "title": "Kroger'S Lane Kills Your 3% Fee",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "studio_object"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/kroger-direct-buy-retires-its-own-fine/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 239395,
+  "sha256": "sha256:555a065bb04d475f07fddcb71ea5ae6b7e69b2658e9c839d971a8b51a067a25d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 239395,
+    "quality": 88,
+    "sha256": "sha256:555a065bb04d475f07fddcb71ea5ae6b7e69b2658e9c839d971a8b51a067a25d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:44a12416caeebce1cf36288a55eb4f3bf079adac66a991f1219c64e748ca678a",
+  "render_phash": "8007800b801980198019c019c019801900993b993fdb1bdb3fcb3e4b12cf188f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A brushed-steel box with a domed red indicator light mounted on its upper face and a yellow printed slip with a barcode partly fed out of a slot below, standing on a short steel pedestal bolted to a concrete loading-bay floor, with the left two-thirds of the frame empty grey floor and wall.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "It shows the article's own mechanism \u2014 a lane check-in point wired to a fee light and a routing slip \u2014 rather than a generic warehouse or a different industry, though nothing in the frame signals Kroger or groceries specifically."
+  },
+  "source_hash": "sha256:6112e32fdc34f801617ff66796777484",
+  "source_chars": 5264,
+  "task_id": "e0f4cf5bd554d6a23001aa957478e4a6",
+  "credits": 5.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e0f4cf5bd554d6a23001aa957478e4a6_1793626236173.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph in a loading bay: a stainless-steel supplier lane check-in kiosk on a small steel pedestal, its red fee indicator light dark, a yellow routing slip half-inserted into a receipt slot. Softbox key light from the left rakes across brushed steel and concrete floor, casting one long contact shadow to the right; 85mm lens, shallow depth of field, graphite, safety yellow, bone white. Extreme asymmetric composition, kiosk off-centre on right third, generous negative space left, no text, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-02T13:30:43+00:00",
+  "overlay": {
+    "kicker": "KROGER DIRECT SOURCING // 3% LATE FEE",
+    "title": "KROGER'S LANE KILLS YOUR 3% FEE",
+    "hook": "On Kroger-managed lanes, the 3% supplier late fee doesn't",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 30,
+    "contrast": 4.88,
+    "target": 4.5,
+    "clutter": 0.056,
+    "region_rgb": [
+      107,
+      109,
+      111
+    ],
+    "binding_rgb": [
+      116,
+      117,
+      119
+    ],
+    "title_lines": [
+      "KROGER'S LANE",
+      "KILLS YOUR 3% FEE"
+    ],
+    "subject": 0.019,
+    "ink_subject": 0.008,
+    "spike": 0.065,
+    "generated_at": "2026-11-02T13:30:43+00:00"
+  }
+}

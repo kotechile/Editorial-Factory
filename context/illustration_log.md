@@ -394,3 +394,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-02 | `insurance-beats-property-tax-14` | home_equity_tco | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/insurance-beats-property-tax-14/featured.jpg` |
 | 2026-11-02 | `your-heat-pump-cuts-everyone-13` | home_infrastructure_lifecycle_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-heat-pump-cuts-everyone-13/featured.jpg` |
 | 2026-11-02 | `your-inventory-bill-is-24-percent-prepaid` | meio_working_capital_tco | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-inventory-bill-is-24-percent-prepaid/featured.jpg` |
+| 2026-11-02 | `kroger-direct-buy-retires-its-own-fine` | sales_order_service_level_otif | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/kroger-direct-buy-retires-its-own-fine/featured.jpg` |
