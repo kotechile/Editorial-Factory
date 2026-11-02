@@ -17,7 +17,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-trace-fails-as-an-alarm/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Trace Logs Fail As Security Alarms. Server rack with transparent trace cassettes under a beam-splitter prism in a dim server room, raking"
+image_alt: "An open server rack of transparent trace cassettes sits under a beam-splitter prism in a dim server room."
 image_caption: "Trace Logs Fail As Security Alarms: your trace store is a profile, and the alarm fails."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -79,6 +79,16 @@ The privacy figure comes from a fake test set, and fake profiles are easier to t
 
 I may be over-reading how fast the join risk arrives, because the standard itself makes the session id conditional. The page attaches it only when a request is part of a session, which leaves cross-session linking to whatever the transport and the operator keep [4]. Both papers are also unreviewed, and an alarm at 7.6% still catches some attacks. The finding is that the number is never reported, not that detection is worthless [2].
 
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** The tool-call trace is being written into standards and kept as a security asset, while two October papers measure it as a user profile and a weak alarm.
+
+**The number:** 26.25% of user traits recovered from traces alone, against a 7.6% alarm hit rate at a 2% attack rate.
+
+**The risk:** Keeping call inputs and results without a scrub and link policy leaves a personal-data store inside your logging stack.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -91,16 +101,6 @@ I may be over-reading how fast the join risk arrives, because the standard itsel
 - [Answer Field First Costs 38.15 Points](/answer-field-first-costs-38-points/) — more on Autonomous & Agentic Workflows
 - [Durable Execution Is Not a Transaction](/durable-execution-not-a-transaction/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** The tool-call trace is being written into standards and kept as a security asset, while two October papers measure it as a user profile and a weak alarm.
-
-**The number:** 26.25% of user traits recovered from traces alone, against a 7.6% alarm hit rate at a 2% attack rate.
-
-**The risk:** Keeping call inputs and results without a scrub and link policy leaves a personal-data store inside your logging stack.
 
 ## Sources
 
