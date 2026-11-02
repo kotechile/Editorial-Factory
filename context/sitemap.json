@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T11:21:40Z",
+  "updated_at": "2026-11-02T12:05:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4844,6 +4844,24 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-01",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_insurance-beats-property-tax-14",
+      "title": "Insurance Bill Beats Property Tax 14%",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-02",
       "public": false
     },
     {

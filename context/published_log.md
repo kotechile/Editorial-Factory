@@ -268,6 +268,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-01 | home_diagnostics_tech | your-149-99-scope-blinds-at-3-94 | Your $149.99 Scope Blinds Past 3.94 | https://pressflow.aichieve.net/published/2026-11-01_your-149-99-scope-blinds-at-3-94.md | reader site only |
 | 2026-11-02 | agentic_ai | your-trace-fails-as-an-alarm | Your Trace Fails as an Alarm: 26.25% Profile | https://pressflow.aichieve.net/published/2026-11-02_your-trace-fails-as-an-alarm.md | reader site only |
 | 2026-11-02 | enterprise_ai_governance | your-gateway-was-malicious-for-104-minutes | Your Gateway's 104-Minute Trap | https://pressflow.aichieve.net/published/2026-11-02_your-gateway-was-malicious-for-104-minutes.md | reader site only |
+| 2026-11-02 | home_equity_tco | insurance-beats-property-tax-14 | Insurance Bill Beats Property Tax 14% | https://pressflow.aichieve.net/published/2026-11-02_insurance-beats-property-tax-14.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
