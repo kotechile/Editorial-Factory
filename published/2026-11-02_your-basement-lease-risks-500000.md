@@ -13,7 +13,7 @@ meta_description: "A $60,000 conversion writes off $2,182 a year, is taxed back 
 image_path: "context/assets/illustrations/your-basement-lease-risks-500000/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Basement Lease Risks $500,000. Basement apartment side door with brass key in deadbolt, concrete steps, warm lamplight against blue dusk"
+image_alt: "A basement apartment side door with a brass key in the deadbolt, concrete steps, and warm lamplight against a blue dusk."
 image_caption: "Basement Lease Risks $500,000: The lease can erase your $500,000 home-sale exclusion."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
