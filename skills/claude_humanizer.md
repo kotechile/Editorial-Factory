@@ -246,6 +246,15 @@ prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only**
 one.
 
 ## 7. Failure handling
+- **A PASS is not a preservation check: the rewrite re-derives the title from `slug:` and may deflate a
+  verified figure (learned 2026-11-02).** A synthesis draft PASSed attempt 1 at Flesch 50.7 from a
+  1,261-word draft (98% of it, so no shrink tripwire) and still replaced a 100/100 hand-scored title
+  with a 68-WEAK one built from the slug, softened "about 23 million weekly downloads" to "tens of
+  millions" in two paragraphs, and deleted the numbers bullet that carried the headline's own figure
+  along with both of its timestamps. After every rewrite, diff four things against the `_draft.md`:
+  the `title:` line (restore the scored headline), every numeral in `By the numbers` (restore a dropped
+  bullet, not just the prose), any hedged quantifier that replaced a figure, and any appended
+  self-graded `## Gate report` (strip it before the gates).
 - **Use the frontier the `stylist` profile is configured to** — do not hard-code a provider. Read the
   profile's `model.default`/`provider` (current live: `deepseek-v4-pro` / `deepseek`, `base_url: ''`).
   The rewrite must run on that frontier. Never substitute a non-frontier model.
