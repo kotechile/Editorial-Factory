@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T19:28:14Z",
+  "updated_at": "2026-11-02T19:49:48Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4901,6 +4901,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-02",
+      "public": false
+    },
+    {
+      "slug": "2026-11-02_your-30-inventory-cut-is-13-4",
+      "title": "Double Orders, Cut 13.4%: Not 30%",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-02",
       "public": false
     },
