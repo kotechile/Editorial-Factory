@@ -1,0 +1,132 @@
+{
+  "slug": "your-plant-was-1n-and-blind",
+  "revision": 4,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Open industrial circuit-breaker module with twin PLC control boxes wired to the live-side busbar above the open contacts.",
+      "caption": "A substation breaker with open isolation jaws and two control modules connected to the live side shows why the plant could not see itself.",
+      "title": "1N blind breaker upstream sensing PLC pair",
+      "bytes": 367411,
+      "sha256": "sha256:a1481d0cd40d892232e452883bf07041"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Open circuit-breaker module with two control boxes wired to a live copper busbar and an open contact block on concrete.",
+      "caption": "Your Plant Was 1N And Blind: site can't prove what happened when its backup is blind.",
+      "title": "Your Plant Was 1N And Blind",
+      "bytes": 406382,
+      "sha256": "sha256:8ecd00c0aa3a546496b5cd18a88cd3cc64d11806360a5b8f28cca9c8a211f45a"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Open breaker module with two control boxes wired to a live busbar, one contact block open.",
+      "caption": "Your Plant Was 1N And Blind: the site cannot prove what happened when its backup is blind.",
+      "title": "Your Plant Was 1N And Blind",
+      "bytes": 407113,
+      "sha256": "sha256:0ea34045e0aa0acbd7b9c54ba276e44a5f090bd388fc5cc41ae072176804de87"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist modular mechanical assembly on a concrete substation plant floor: a heavy three-pole industrial circuit-breaker module with visibly open isolation jaws and a steel lockout hasp over the open handle, beside two identical matte black PLC control modules; both signal cables route to a single voltage tap on the still-live copper busbar above the open jaws, while the downstream busbar below is dark and disconnected. Hard raking key light from upper left across brushed steel and concrete, palette graphite, safety yellow, oxidised red, long cast contact shadows, generous negative space, extreme asymmetry with the breaker module left and the two PLC boxes right, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible signage, captions, embossed or printed lettering",
+  "rationale": "The story turns on a physical electrical configuration: an open breaker, an upstream voltage tap, and twin controllers reading the wrong node. A modular mechanical assembly can state the incorrect sensing topology with exact parts and restraint, avoiding a stock datacenter photo.",
+  "cue": "Your Plant Was 1N and Blind",
+  "subject": "An open industrial breaker module with two PLC control boxes wired to the live-side busbar above the open contacts.",
+  "core_thesis": "A backup power system is only as independent as the evidence feeding it: when the generator start signal and the grid's post-event record are both read upstream of the device that isolates them, neither the site nor the utility can prove what happened.",
+  "core_conflict": "A redundant 2N electrical path versus single-point voltage sensing upstream of the isolation breaker, so two controllers and the grid recorder share one blind observation.",
+  "composition": "Extreme asymmetry, breaker module on the left third, two PLC boxes on the right, open contact gap at centre.",
+  "alt_text": "Your Plant Was 1N And Blind. Open breaker module with two control boxes wired to a live busbar, one contact block open.",
+  "caption": "Your Plant Was 1N And Blind: the site cannot prove what happened when its backup is blind.",
+  "title": "Your Plant Was 1N And Blind",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-plant-was-1n-and-blind/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407113,
+  "sha256": "sha256:0ea34045e0aa0acbd7b9c54ba276e44a5f090bd388fc5cc41ae072176804de87",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407113,
+    "quality": 80,
+    "sha256": "sha256:0ea34045e0aa0acbd7b9c54ba276e44a5f090bd388fc5cc41ae072176804de87",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:979c47bbebb2e69d3494d474994fd8c17ce56197a9ecffc2a584ac675946efc4",
+  "render_phash": "471f8bbe92f9334e331b679954d8c1f1e3c0b3998109d1cdd8d9241179807840",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A large grey metal breaker module with three open copper contact stubs sits on a concrete surface at left, connected by a copper busbar descending from above, while two black box-like controllers connected by grey cables rest to its right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The frame shows exactly the article's mechanism \u2014 an open breaker with its contacts exposed and two PLC controllers tapped off the live-side busbar \u2014 so a reader would recognise the story of a plant that cannot verify its own isolation."
+  },
+  "source_hash": "sha256:ba68c5dcf14c8588cf65c263ebd02f05",
+  "source_chars": 5701,
+  "task_id": "d091f86584016fb9009dc88853eaa7b8",
+  "credits": 18.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f1749fb96537970326a45566269efd63.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist modular mechanical assembly on a concrete substation plant floor: a heavy three-pole industrial circuit-breaker module with visibly open isolation jaws and a steel lockout hasp over the open handle, beside two identical matte black PLC control modules; both signal cables route to a single voltage tap on the still-live copper busbar above the open jaws, while the downstream busbar below is dark and disconnected. Hard raking key light from upper left across brushed steel and concrete, palette graphite, safety yellow, oxidised red, long cast contact shadows, generous negative space, extreme asymmetry with the breaker module left and the two PLC boxes right, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-03T11:37:14+00:00",
+  "overlay": {
+    "kicker": "DATA CENTRE POWER // GENERATOR START BLINDNESS",
+    "title": "YOUR PLANT WAS 1N AND BLIND",
+    "hook": "the site cannot prove what happened when its backup is blind",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 135,
+    "contrast": 5.77,
+    "target": 5.5,
+    "clutter": 0.538,
+    "region_rgb": [
+      136,
+      131,
+      123
+    ],
+    "binding_rgb": [
+      199,
+      195,
+      183
+    ],
+    "title_lines": [
+      "YOUR PLANT WAS",
+      "1N AND BLIND"
+    ],
+    "subject": 0.192,
+    "ink_subject": 0.153,
+    "spike": 0.347,
+    "generated_at": "2026-11-03T11:37:14+00:00"
+  }
+}

@@ -402,3 +402,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-02 | `your-30-inventory-cut-is-13-4` | meio_working_capital_tco | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-30-inventory-cut-is-13-4/featured.jpg` |
 | 2026-11-02 | `your-cheapest-part-needs-four-sigma` | sales_order_service_level_otif | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-cheapest-part-needs-four-sigma/featured.jpg` |
 | 2026-11-03 | `your-grader-adds-22-points` | ai_observability_qa | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-grader-adds-22-points/featured.jpg` |
+| 2026-11-03 | `your-plant-was-1n-and-blind` | nhil_infrastructure_ops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-plant-was-1n-and-blind/featured.jpg` |
