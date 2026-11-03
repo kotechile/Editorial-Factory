@@ -1,0 +1,112 @@
+{
+ "slug": "your-ai-roi-28-rising-28-stalled",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "A glass prism on a data hall floor splits one warm beam into a lit rack aisle and a dark one.",
+   "caption": "A single return figure splits into opposite readings depending on whether the aisle behind it is lit by data readiness or dark with unprepared infrastructure.",
+   "title": "Beam-splitter 28 both ways data hall",
+   "bytes": 354926,
+   "sha256": "sha256:6fb48f40cb35049a4e00f5e431c1e7e8"
+  }
+ ],
+ "style": "cinematic_still",
+ "style_label": "Cinematic still",
+ "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Anamorphic 35mm cinematic split-screen diptych inside a data hall. A polished optical beam-splitter prism sits at the vertical seam on the concrete floor. A single warm beam enters from below and splits: left beam rises toward a fully populated rack row bathed in warm amber worklights; right beam flattens toward dim, partially empty racks in cold cobalt shadow. Brushed steel racks, graphite asphalt, bone white light. Shallow depth of field, teal-and-amber palette, film grain, no people, no text, no logos.",
+ "negative_prompt": "garbled text, random lettering, watermarks",
+ "rationale": "The article's governing tension is an interpretive divergence around a single number, not a physical machine; a cinematic split-screen still can stage two opposite readings in one data-hall environment with a beam-splitter as symbolic optical physics, preserving scale and editorial weight.",
+ "cue": "28% and read it in opposite directions",
+ "subject": "a polished optical beam-splitter prism splitting one warm light beam into two divergent rays across a data hall",
+ "core_thesis": "The same 28% enterprise AI return is a definition, not a fact: the real split (81% vs 12%) sits in data readiness, and per-unit cost remains untracked by most enterprises.",
+ "core_conflict": "same headline ROI number vs opposite boardroom interpretations, driven by the data-readiness gulf and absent per-unit cost tracking",
+ "composition": "split-screen diptych with left-right scenario contrast; prism centered on vertical seam, beams diverging asymmetrically into bright and dark rack rows",
+ "alt_text": "A glass prism on a data hall floor splits one warm beam into a lit rack aisle and a dark one.",
+ "caption": "AI ROI Trap 28% Both Ways: same 28%, read as stalled or rising.",
+ "title": "AI ROI Trap 28% Both Ways",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-ai-roi-28-rising-28-stalled/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 387930,
+ "sha256": "sha256:01fd5783f355a06b47c1bd5f583dc327bcd82a7f8c3a5f0b54bf1dd0497ace79",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 387930,
+  "quality": 84,
+  "sha256": "sha256:01fd5783f355a06b47c1bd5f583dc327bcd82a7f8c3a5f0b54bf1dd0497ace79",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:abe74ebd6faac33c84a538be60e88458642d5963371ded548e463ce765738e0a",
+ "render_phash": "396719f51ded0dfd4cfd45fd45ed42ed41fd41fd01ff01ff01ff01ff01ff01ff",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A glass prism stands at the center of a data hall floor between two rows of server racks, with a warm light beam entering from the upper left and a horizontal beam crossing the prism toward the right side of the frame.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.72,
+  "reason": "The prism splitting one beam into divergent rays in a data hall is a working metaphor for the article's core claim that the same 28% figure is being read two opposite ways in enterprise AI, though the image itself carries no numbers or readiness contrast."
+ },
+ "source_hash": "sha256:1284e8622a709a5175a1829a81a9f165",
+ "source_chars": 4747,
+ "task_id": "fbe773e6c3ec5c53f913f6a593c478f0",
+ "credits": 5.0,
+ "cost_ms": 59,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/fbe773e6c3ec5c53f913f6a593c478f0_1793706918611.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "Anamorphic 35mm cinematic split-screen diptych inside a data hall. A polished optical beam-splitter prism sits at the vertical seam on the concrete floor. A single warm beam enters from below and splits: left beam rises toward a fully populated rack row bathed in warm amber worklights; right beam flattens toward dim, partially empty racks in cold cobalt shadow. Brushed steel racks, graphite asphalt, bone white light. Shallow depth of field, teal-and-amber palette, film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-03T11:55:24+00:00",
+ "overlay": {
+  "kicker": "ENTERPRISE AI ROI SURVEY DIVIDE",
+  "title": "AI ROI TRAP 28% BOTH WAYS",
+  "hook": "same 28%, read as stalled or rising",
+  "anchor": "bottom-right",
+  "light": true,
+  "scrim": 45,
+  "contrast": 4.9,
+  "target": 4.5,
+  "clutter": 0.215,
+  "region_rgb": [
+   69,
+   96,
+   100
+  ],
+  "binding_rgb": [
+   102,
+   130,
+   131
+  ],
+  "title_lines": [
+   "AI ROI TRAP 28%",
+   "BOTH WAYS"
+  ],
+  "subject": 0.069,
+  "ink_subject": 0.035,
+  "spike": 0.206,
+  "generated_at": "2026-11-03T11:55:24+00:00"
+ }
+}

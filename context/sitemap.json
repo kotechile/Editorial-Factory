@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T11:17:47Z",
+  "updated_at": "2026-11-03T11:58:48Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5069,6 +5069,24 @@
       "date": "2026-11-02",
       "public": true,
       "url": "https://aichieve.net/your-trace-fails-as-an-alarm/"
+    },
+    {
+      "slug": "2026-11-03_your-ai-roi-28-rising-28-stalled",
+      "title": "Your AI ROI Trap: 28% Both Ways",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The 28% measures two different things",
+        "By the numbers",
+        "Where the number stops being useful",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-03",
+      "public": false
     },
     {
       "slug": "2026-11-03_your-grader-adds-22-points",
