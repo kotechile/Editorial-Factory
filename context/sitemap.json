@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T18:18:54Z",
+  "updated_at": "2026-11-03T18:44:57Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5229,6 +5229,24 @@
       "date": "2026-11-03",
       "public": true,
       "url": "https://aichieve.net/your-plant-was-1n-and-blind/"
+    },
+    {
+      "slug": "2026-11-03_your-pool-becomes-2000-connections",
+      "title": "Your Pool Becomes 2,000: A Memory Trap",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Memory sets the ceiling",
+        "By the numbers",
+        "Where the pool bites",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-03",
+      "public": false
     }
   ]
 }
