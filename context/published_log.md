@@ -287,6 +287,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-03 | ai_observability_qa | your-dedupe-cut-f1-by-74 | Your Dedupe Pass Costs 7.4 F1 | https://pressflow.aichieve.net/published/2026-11-03_your-dedupe-cut-f1-by-74.md | reader site only |
 | 2026-11-03 | nhil_infrastructure_ops | your-backup-66-mw-permit-trap | Your Backup's 6.6 MW Permit Trap | https://pressflow.aichieve.net/published/2026-11-03_your-backup-66-mw-permit-trap.md | reader site only |
 | 2026-11-03 | enterprise_tech_leadership | your-pool-becomes-2000-connections | Your Pool Becomes 2,000: A Memory Trap | https://pressflow.aichieve.net/published/2026-11-03_your-pool-becomes-2000-connections.md | reader site only |
+| 2026-11-03 | smart_home_telemetry | your-zigbee-hub-32-device-ceiling | Your Zigbee Hub's Silent 32-Device Cap | https://pressflow.aichieve.net/published/2026-11-03_your-zigbee-hub-32-device-ceiling.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

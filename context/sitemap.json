@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T18:55:59Z",
+  "updated_at": "2026-11-03T19:19:47Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5245,6 +5245,24 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-03",
+      "public": false
+    },
+    {
+      "slug": "2026-11-03_your-zigbee-hub-32-device-ceiling",
+      "title": "Your Zigbee Hub's Silent 32-Device Cap",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The ceiling is a table",
+        "By the numbers",
+        "Where the next router goes",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-03",
       "public": false
     }
