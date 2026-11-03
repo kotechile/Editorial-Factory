@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T19:23:52Z",
+  "updated_at": "2026-11-03T20:18:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5151,6 +5151,24 @@
         "At a glance"
       ],
       "target_persona": "it_ops_leader",
+      "date": "2026-11-03",
+      "public": false
+    },
+    {
+      "slug": "2026-11-03_your-cold-chain-blind-spot",
+      "title": "Your Cold Chain Blind Spot: 45 Minutes",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "One peak hides the damage",
+        "By the numbers",
+        "Where the budget goes",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-11-03",
       "public": false
     },

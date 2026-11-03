@@ -1,0 +1,114 @@
+{
+  "slug": "your-cold-chain-blind-spot",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf.",
+      "caption": "A cold-chain data logger\u2019s time-window modules show why a cumulative heat budget, not a peak reading, decides the exception.",
+      "title": "Cold-chain logger time-window clay assembly",
+      "bytes": 348361,
+      "sha256": "sha256:ec0015fc637ff943c86bd1564ed0164f"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D assembly on a weathered concrete shelf inside a control room: a matte polymer cold-chain data logger module with a coiled thermocouple cable sits at the right third, alongside three rectangular time-window blocks of ascending length, the shortest at left, the middle block pulled slightly forward. The blocks are bone white and the logger graphite with a safety-yellow band. A single key light from upper left rakes across, long contact shadows to the right, extreme asymmetry, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, blurry labels, distorted lettering",
+  "rationale": "The story is about the architecture of logging cadence and window, not a single physical facility, so a matte clay assembly lets the mechanism be stated as an engineered object without a sterile product shot. It also rotates away from the recent cinematic and telephoto treatments while staying within the publication's constructed-image vocabulary.",
+  "cue": "a cumulative heat budget, not a peak reading",
+  "subject": "a cold-chain data logger slotted into a modular housing with three time-window blocks and a coiled thermocouple cable",
+  "core_thesis": "A cold-chain excursion is decided by a cumulative heat budget, not a peak reading, so the logging cadence and the window are the architecture, and an alert on the first setpoint breach measures the wrong thing.",
+  "core_conflict": "The arithmetic of mean kinetic temperature versus a telemetry cadence that can either capture or hide a 45-minute excursion.",
+  "composition": "extreme asymmetry with the logger on the right third and a receding line of duration modules to the left",
+  "alt_text": "Cold Chain'S 45-Minute Blind Spot. Cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf.",
+  "caption": "Cold Chain'S 45-Minute Blind Spot: A 45-minute excursion hides inside your logging interval.",
+  "title": "Cold Chain'S 45-Minute Blind Spot",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-cold-chain-blind-spot/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 398144,
+  "sha256": "sha256:0ea012f91a3540a459268010fb3af8821f8cc73de67be733832f5b3bc47dc733",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 398144,
+    "quality": 88,
+    "sha256": "sha256:0ea012f91a3540a459268010fb3af8821f8cc73de67be733832f5b3bc47dc733",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:753875b4ea740d69f6a2f2a50889b9fc2edf9106b2df245c649ed0ee43c6873d",
+  "render_phash": "cebfc6fcf65eb87fbd3ff30f89cf0f3a653b66c80c7204c0307084132783a7b0",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark rectangular instrument with a yellow band around it and a white coiled cable lies on a cracked concrete ledge beside three pale rectangular blocks, with a row of grey electrical cabinet panels receding in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The frame centers a cold-chain data logger with its coiled thermocouple cable next to distinct block modules that stand in for the duration windows, which is the article's own object and mechanism rather than generic filler."
+  },
+  "source_hash": "sha256:393d7d00b51dc675d839aee2001f229d",
+  "source_chars": 4525,
+  "task_id": "ccf392286c2e9a20418cb7832ec21d7e",
+  "credits": 18.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1ea6e13ed7188a46e7698b0e4fe6f801.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D assembly on a weathered concrete shelf inside a control room: a matte polymer cold-chain data logger module with a coiled thermocouple cable sits at the right third, alongside three rectangular time-window blocks of ascending length, the shortest at left, the middle block pulled slightly forward. The blocks are bone white and the logger graphite with a safety-yellow band. A single key light from upper left rakes across, long contact shadows to the right, extreme asymmetry, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-03T20:18:00+00:00",
+  "overlay": {
+    "kicker": "COLD CHAIN // CUMULATIVE HEAT BUDGET",
+    "title": "COLD CHAIN'S 45-MINUTE BLIND SPOT",
+    "hook": "A 45-minute excursion hides inside your logging interval",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.76,
+    "target": 4.5,
+    "clutter": 0.224,
+    "region_rgb": [
+      30,
+      27,
+      19
+    ],
+    "binding_rgb": [
+      44,
+      39,
+      33
+    ],
+    "title_lines": [
+      "COLD CHAIN'S",
+      "45-MINUTE BLIND SPOT"
+    ],
+    "subject": 0.055,
+    "ink_subject": 0.022,
+    "spike": 0.189,
+    "generated_at": "2026-11-03T20:18:00+00:00"
+  }
+}

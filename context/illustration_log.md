@@ -411,3 +411,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-03 | `your-backup-66-mw-permit-trap` | nhil_infrastructure_ops | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-backup-66-mw-permit-trap/featured.jpg` |
 | 2026-11-03 | `your-pool-becomes-2000-connections` | enterprise_tech_leadership | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-pool-becomes-2000-connections/featured.jpg` |
 | 2026-11-03 | `your-zigbee-hub-32-device-ceiling` | smart_home_telemetry | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-zigbee-hub-32-device-ceiling/featured.jpg` |
+| 2026-11-03 | `your-cold-chain-blind-spot` | control_tower_exception_orchestration | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cold-chain-blind-spot/featured.jpg` |
