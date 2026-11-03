@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-zigbee-hub-32-device-ceiling/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "Zigbee Hub'S Silent 32-Device Cap. Brushed-steel coordinator rail with 32 child sockets, one occupied by a router module branching 15"
+image_alt: "A wall-mounted power strip in a utility corner, one module plugged in, coiled network cables hanging beneath."
 image_caption: "Zigbee Hub'S Silent 32-Device Cap: A firmware child table caps the network, not radio range."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -61,6 +61,15 @@ A full table and a noisy link look the same from the sofa. Both show up as a dev
 
 I would not call these ceilings promises. A mesh that stalls at 40 devices has likely run out of table, and the answer is a mains-powered router. A mesh that stalls at 12 has a noise problem, and the answer is a cable and a channel change. Same symptom, different repair.
 
+
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** A Zigbee hub's device limit is a firmware child table, not radio range.
+**The number:** 32 direct children, plus 15 for each mains-powered router.
+**The risk:** Capacity is not coverage, and a full table looks exactly like a noisy link.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -73,14 +82,6 @@ I would not call these ceilings promises. A mesh that stalls at 40 devices has l
 - [Your Hub's 4,292-Project Blind Spot](/your-hubs-4292-project-blind-spot/) — more on Smart Home & Security
 - [Smart Home & Security](/categories/smart-home-security/) — more on Smart Home & Security
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** A Zigbee hub's device limit is a firmware child table, not radio range.
-**The number:** 32 direct children, plus 15 for each mains-powered router.
-**The risk:** Capacity is not coverage, and a full table looks exactly like a noisy link.
 
 ## Sources
 
