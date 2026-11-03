@@ -902,3 +902,31 @@ Ghost / Reddit) waits for the founder's `@Simon approve` gate, exactly as the ne
   already ran.
 - **The topic is really news** (value expires in < 90 days) → hand it to the news track; do not
   smuggle it here, where the freshness gate cannot see it.
+
+**Hosts probed live 2026-11-03, building a behind-the-meter permit-ladder brief (the `nhil_infrastructure_ops` evergreen).**
+A federal-regulation beat can be built entirely on §-level pages, and the *page shape* decides whether a
+statutory figure survives the matcher. Carries the figure as plain text and fetches first try:
+`law.cornell.edu/cfr/text/40/<section>` (Cornell's e-CFR mirror of 40 CFR 98.2 — 18 KB with (a)(3)(i)-(iii)
+contiguous, so `30 mmBtu/hr` lands on the heat-input condition and `25,000 metric tons` on the emissions
+condition; **the same rows on `ecfr.gov/.../part-98/subpart-A` evidence on the amendment-timeline dates**);
+`ecfr.gov/current/title-40/chapter-I/subchapter-C/part-<n>/section-<n>` (**the per-section URL, not the part
+or subpart page** — the subpart page's own banner ("up to date as of 10/30/2026") and amendment timeline
+catch any cell leading on a small integer, while § 70.2's per-section page lands `100 tpy` inside the
+definition sentence); `ecfr.gov` subpart pages are still right for *tables* (Part 98 Table C-1's
+`53.06` kg CO2/mmBtu row, Part 60 Subpart KKKK Table 1's `42 ppm … 290 ng/J of useful output (2.3 lb/MWh)`
+and Subpart JJJJ Table 1's `82 ppmvd / 1.0 g/HP-hr` row all flatten to one text run); `eia.gov/tools/faqs/faq.php?id=74&t=11`
+(0.81 lb CO2/kWh U.S. average and 0.96 lb for gas-fired generation, 2023 data, with the whole per-fuel table
+as prose); `epa.gov/ghgreporting/what-ghgrp` (the 25,000-tonne exclusion sentence — a second host for the same
+threshold). **Two conversion traps this beat is built on.** (1) *A ppm limit is not a tonnage*: converting
+42 ppm at 15% O2 to lb/MMBtu needs the F-factor and the O2 correction, so the article cites the rule's own
+`2.3 lb/MWh` parenthetical and divides from that — never derive the rate the regulation already prints.
+(2) *Facility-level tests are conjunctions*: § 98.2(a)(3) needs the 30 mmBtu/hr heat input **and** the
+25,000 t, so the binding number for a gas plant is the tonnage (6.6 MW flat at 8,120 Btu/kWh), not the
+heat-input tripwire (3.7 MW) — an article that quotes only the smaller one overstates the obligation by
+half. Unreachable or unusable on this beat: `ferc.gov` (every news/report path tried, unreachable),
+`emp.lbl.gov` (the interconnection-queue data, unreachable — so no queue-duration figure can carry a row),
+`eia.gov/electricity/generator-costs/` (fetches 8.6 KB of navigation and no $/kW table), and `energy.gov/energysaver`
+(404s, as recorded 2026-10-19). **An illustration failure class to expect on permit topics:** the art director
+refuses a brief whose subject is "a block" or "a threshold" (bare geometry), and the working treatment is the
+physical plant itself — a row of modular generator sets with guard rails, which passed the picture desk on the
+first retry after three refusals.

@@ -1,0 +1,113 @@
+{
+ "slug": "your-backup-66-mw-permit-trap",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Gas engine generators lined inside a power hall, a yellow threshold line separating the nearest unit from the rest.",
+   "caption": "A gas generator crosses a painted threshold line in a plant hall, visualising the moment a behind-the-meter backup becomes a regulated major source.",
+   "title": "Gas engine hall threshold line",
+   "bytes": 397730,
+   "sha256": "sha256:0202d92f8007b3059f2779ed03d84d46"
+  }
+ ],
+ "style": "long_lens_industry",
+ "style_label": "Compressed telephoto industry",
+ "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "200mm telephoto compression inside a gas engine power hall on a plant floor; three modular gas engine generators receding in a row, the nearest unit just beyond a painted safety-yellow threshold line on polished concrete; hard directional light from the right rakes across brushed steel and cast iron, deep charcoal shadows, graphite and steel blue with safety-yellow accent; crisp industrial air, fine film grain; asymmetrical framing with hero unit off-centre left, threshold line cutting diagonally; no people, no text, no logos.",
+ "negative_prompt": "garbled text, random lettering, watermarks, logos",
+ "rationale": "This is a systemic, operational story about regulatory thresholds and plant scale, not a single purchasable object. Long telephoto compression conveys the scale of the gas plant while making the threshold line a hard physical boundary across the floor. It avoids the sterile datacenter or abstract regulatory trope and grounds the invisible 6.6/8.5/19.9 MW lines in a real industrial environment.",
+ "cue": "Your Backup's 6.6 MW Permit Trap",
+ "subject": "Modular gas engine generators lined inside a power hall, with the nearest unit just beyond a painted yellow threshold line on polished concrete.",
+ "core_thesis": "Going behind the meter changes a site's regulatory identity rather than its supply: a gas plant crosses mandatory greenhouse-gas reporting at 6.6 MW running flat, the Title V major-source line at 8.5 MW, and PSD for carbon at 19.9 MW.",
+ "core_conflict": "Backup gas generation versus regulatory major-source status, where operational thresholds silently convert a standby asset into a heavily permitted power station.",
+ "composition": "Extreme asymmetry with repetitive generator modules receding into compressed telephoto distance, threshold line slicing diagonally across frame",
+ "alt_text": "Your Backup'S 6.6 MW Permit Trap. Gas engine generators lined inside a power hall, a yellow threshold line separating the nearest unit from",
+ "caption": "Behind the meter, a backup fleet becomes a reported source.",
+ "title": "Your Backup'S 6.6 MW Permit Trap",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-backup-66-mw-permit-trap/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 382495,
+ "sha256": "sha256:51afd7dc11fc999afb31819ff1ff4f00a9e566e54c008c642385c739a0c05b01",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 382495,
+  "quality": 72,
+  "sha256": "sha256:51afd7dc11fc999afb31819ff1ff4f00a9e566e54c008c642385c739a0c05b01",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:45e010dea1c2917a11d78a418d1a789c7e7ee152f106be4b55c5ff661fd8e960",
+ "render_phash": "73103741374107413143199338d7b867d267d3273127f10f3077017703771831",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A row of large gray modular gas engine generator sets with yellow guard rails and a large flywheel on the nearest unit, sitting on polished concrete inside an industrial power hall, with yellow painted threshold lines on the floor in the foreground and the modules receding toward the right rear.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.83,
+  "reason": "The frame shows exactly the article's object \u2014 modular gas engine generator units behind a painted yellow threshold line \u2014 which literalizes the permit-threshold mechanism the headline and lead describe."
+ },
+ "source_hash": "sha256:92c195a173c73cd9bcd4545921438a1f",
+ "source_chars": 5630,
+ "task_id": "410b89abb5d0879fea80617e09e04415",
+ "credits": 5.0,
+ "cost_ms": 42,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/410b89abb5d0879fea80617e09e04415_1793730032484.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "200mm telephoto compression inside a gas engine power hall on a plant floor; three modular gas engine generators receding in a row, the nearest unit just beyond a painted safety-yellow threshold line on polished concrete; hard directional light from the right rakes across brushed steel and cast iron, deep charcoal shadows, graphite and steel blue with safety-yellow accent; crisp industrial air, fine film grain; asymmetrical framing with hero unit off-centre left, threshold line cutting diagonally; no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-03T18:20:41+00:00",
+ "overlay": {
+  "kicker": "BEHIND-THE-METER GAS // AIR PERMITS",
+  "title": "YOUR BACKUP'S 6.6 MW PERMIT TRAP",
+  "hook": "Behind the meter, 6.6 MW of gas triggers federal reporting",
+  "anchor": "top-left",
+  "light": true,
+  "scrim": 0,
+  "contrast": 6.39,
+  "target": 5.5,
+  "clutter": 0.277,
+  "region_rgb": [
+   52,
+   54,
+   54
+  ],
+  "binding_rgb": [
+   81,
+   86,
+   92
+  ],
+  "title_lines": [
+   "YOUR BACKUP'S 6.6",
+   "MW PERMIT TRAP"
+  ],
+  "subject": 0.16,
+  "ink_subject": 0.09,
+  "spike": 0.442,
+  "generated_at": "2026-11-03T18:20:41+00:00"
+ },
+ "alt": "Three large gas engine generator sets stand in a row inside a power hall, ringed by yellow guard rails."
+}

@@ -10,6 +10,12 @@ date: 2026-11-03
 slug: your-backup-66-mw-permit-trap
 meta_title: "Your Backup's 6.6 MW Permit Trap"
 meta_description: "Go behind the meter and the plant stops being backup: a gas engine crosses federal greenhouse-gas reporting at 6.6 MW, Title V at 8.5 MW and PSD at 19.9 MW."
+image_path: "context/assets/illustrations/your-backup-66-mw-permit-trap/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "Three large gas engine generator sets stand in a row inside a power hall, ringed by yellow guard rails."
+image_caption: "Behind the meter, a backup fleet becomes a reported source."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
