@@ -5,7 +5,7 @@
     {
       "revision": 1,
       "alt_text": "Cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf.",
-      "caption": "A cold-chain data logger\u2019s time-window modules show why a cumulative heat budget, not a peak reading, decides the exception.",
+      "caption": "A cold-chain data logger’s time-window modules show why a cumulative heat budget, not a peak reading, decides the exception.",
       "title": "Cold-chain logger time-window clay assembly",
       "bytes": 348361,
       "sha256": "sha256:ec0015fc637ff943c86bd1564ed0164f"
@@ -13,7 +13,7 @@
   ],
   "style": "clay_render",
   "style_label": "Matte 3D render",
-  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "style_when": "the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -27,8 +27,8 @@
   "core_thesis": "A cold-chain excursion is decided by a cumulative heat budget, not a peak reading, so the logging cadence and the window are the architecture, and an alert on the first setpoint breach measures the wrong thing.",
   "core_conflict": "The arithmetic of mean kinetic temperature versus a telemetry cadence that can either capture or hide a 45-minute excursion.",
   "composition": "extreme asymmetry with the logger on the right third and a receding line of duration modules to the left",
-  "alt_text": "Cold Chain'S 45-Minute Blind Spot. Cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf.",
-  "caption": "Cold Chain'S 45-Minute Blind Spot: A 45-minute excursion hides inside your logging interval.",
+  "alt_text": "A cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf.",
+  "caption": "A cold-chain logger's three time windows sit beside the device whose logging interval decides what gets recorded.",
   "title": "Cold Chain'S 45-Minute Blind Spot",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,

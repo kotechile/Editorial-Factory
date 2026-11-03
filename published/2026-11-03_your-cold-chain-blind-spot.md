@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-cold-chain-blind-spot/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Cold Chain'S 45-Minute Blind Spot. Cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf."
-image_caption: "Cold Chain'S 45-Minute Blind Spot: A 45-minute excursion hides inside your logging interval."
+image_alt: "A cold-chain data logger with three time-window modules and a coiled sensor cable on a control-room shelf."
+image_caption: "A cold-chain logger's three time windows sit beside the device whose logging interval decides what gets recorded."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -59,6 +59,14 @@ One caveat on sourcing: both chapters are sold as document files this desk's ver
 
 The record that answers a claim is the same exception log this desk has priced for its retention ([Your exception log owes 5 years](/your-exception-log-owes-5-years/)). A budget summed over a window nobody kept is a number with no defence behind it.
 
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** cold-chain exception logic moves from paging on a temperature-limit breach to summing a heat budget over the standard's window.
+**The number:** 9.85°C, the mean kinetic temperature of readings that average 9.0°C.
+**The risk:** a cadence coarser than the excursion erases the evidence a release depends on.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -71,14 +79,6 @@ The record that answers a claim is the same exception log this desk has priced f
 - [Stop Blaming Demand Planning for Stockouts](/stop-blaming-demand-planning-for-stockouts/) — more on Supply Chain & Operations
 - [Warehouse Payback: $17.00, Not $17.95](/wage-floor-sets-robot-payback/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** cold-chain exception logic moves from paging on a temperature-limit breach to summing a heat budget over the standard's window.
-**The number:** 9.85°C, the mean kinetic temperature of readings that average 9.0°C.
-**The risk:** a cadence coarser than the excursion erases the evidence a release depends on.
 
 ## Sources
 
