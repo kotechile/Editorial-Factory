@@ -179,5 +179,40 @@ def test_figure_load_is_advisory_and_never_holds_a_publish(tmp_path):
     assert diag["verdict"] == "PASS"
 
 
+# --- the numbers block: kept, but small ------------------------------------------------------
+# Relaxing the block to "optional" removed it from the page and the owner noticed immediately
+# (2026-11-03). It stays a house section; what it may not be is a four-bullet recap of the body.
+
+def test_missing_numbers_block_is_reported(tmp_path):
+    diag = ca.measure(_write(tmp_path, "nb.md", MEANING_FIRST))
+    assert any("missing the '## By the numbers' block" in w for w in diag["warnings"]), diag["warnings"]
+
+
+def test_a_three_bullet_numbers_block_clears_the_warning(tmp_path):
+    body = MEANING_FIRST + """
+## By the numbers
+
+- **62 to 123 watts — The band:** Five to ten percent of a year of use [1].
+- **$93 to $187 — What it costs:** The same band at the 2025 rate [1][7].
+- **$1.56 — One watt, one year:** The lab's rule re-priced [2].
+"""
+    diag = ca.measure(_write(tmp_path, "nb3.md", body))
+    assert not any("By the numbers" in w for w in diag["warnings"]), diag["warnings"]
+
+
+def test_a_five_bullet_numbers_block_is_reported(tmp_path):
+    body = MEANING_FIRST + """
+## By the numbers
+
+- **62 watts — a:** x [1].
+- **123 watts — b:** y [1].
+- **$93 — c:** z [1].
+- **$187 — d:** w [1].
+- **$1.56 — e:** v [2].
+"""
+    diag = ca.measure(_write(tmp_path, "nb5.md", body))
+    assert any("carries 5 bullets" in w for w in diag["warnings"]), diag["warnings"]
+
+
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q"]))

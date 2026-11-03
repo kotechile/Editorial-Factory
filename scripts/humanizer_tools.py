@@ -245,9 +245,10 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
         tip.append("SECTION HEADERS: give each of the five marked sections its own H2. Write the "
                    "header in this article's own words (what the section actually argues) — the fixed "
                    "house labels are no longer required.")
-    if any("no figures at all" in w for w in diag.get("warnings", [])):
-        tip.append("FIGURES: carry the verified figures inside the sentences that use them. A bullet "
-                   "table of stats is one option, not a requirement.")
+    if any("missing the '## By the numbers' block" in w for w in diag.get("warnings", [])):
+        tip.append("NUMBERS BLOCK: keep the '## By the numbers' section — 2-3 bold bullets, each "
+                   "`- **<figure> — <short label>:** <one plain sentence> [n]`, carrying the figures "
+                   "the prose does not state again. Do not pad it back into a four-bullet recap.")
     if tip:
         notes.append("HOW: " + " ".join(tip))
     if extra:

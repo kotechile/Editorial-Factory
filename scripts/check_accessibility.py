@@ -205,14 +205,18 @@ def check_smart_brevity(raw_text, body_text):
         warns.append("Smart Brevity: no section headers found — give each section an H2, in words "
                      "this article would use")
 
-    # The figures block is earned, not mandatory: an article that carries its numbers inside the
-    # sentences that use them does not need a bullet table repeating them.
+    # The figures block stays a house section (owner, 2026-11-03: relaxing it to optional removed it
+    # from the page and the reader lost the block he scans). Small, though: 2-3 bullets carrying the
+    # figures the prose does not state again — never the old 4-bullet recap of the body.
     if not re.search(r"(?:##\s*By the numbers|\*\*By the numbers:\*\*)", raw_text, re.I):
-        body_figures = len(re.findall(r"(?:\$\s?\d|\b\d[\d,\.]*\s?(?:percent|%|watts?|kWh|hours?|days?))",
-                                      raw_text))
-        if body_figures < 2:
-            warns.append("Smart Brevity: no figures at all — the piece needs either a numbers block "
-                         "or its figures inside the prose that uses them")
+        warns.append("Smart Brevity: missing the '## By the numbers' block — 2-3 bullets, the figures "
+                     "the prose does not restate")
+    else:
+        block = re.search(r"##\s*By the numbers(.*?)(?=\n#{1,3}\s|\Z)", raw_text, re.I | re.S)
+        bullets = len(re.findall(r"^\s*[-*]\s", block.group(1), re.M)) if block else 0
+        if bullets > 3:
+            warns.append(f"Smart Brevity: the numbers block carries {bullets} bullets (keep 2-3 — the "
+                         f"prose already states the rest)")
 
     return warns
 

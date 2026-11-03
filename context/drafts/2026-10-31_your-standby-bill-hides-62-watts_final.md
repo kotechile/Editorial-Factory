@@ -33,11 +33,17 @@ Since 2008, a power supply sold in the United States has been capped at half a w
 
 What is left is the gear nobody unplugs, starting with the set-top box, the receiver and the chest freezer in the basement. Each of those can draw whole watts while it waits [5]. The adapter rule does not reach any of them, because it was written for the plug rather than the box. What strikes me about the guides is how every one still sends you round the room unplugging chargers. The devices that actually hold the load are the ones that have been warm for years.
 
+## By the numbers
+
+- **62 to 123 watts — The always-on band:** Five to ten percent of a 10,791 kilowatt-hour year, held flat through every hour of it [1][6].
+- **$93 to $187 — What the band costs:** The same range priced at the 2025 average of 17.30 cents a kilowatt-hour [1][7].
+- **$1.56 — One watt, one year:** The lab's 9-kilowatt-hour rule re-priced at today's rate, against the $1.20 it assumed at 13 cents [2][7].
+
 <!-- tactical-insight -->
 
 ## What the hour is worth
 
-At the 2025 average rate of 17.30 cents a kilowatt-hour, the band costs $93 to $187 a year for power nobody switched on [1][7]. The lab's own rule for a single watt comes to $1.56 at that rate [2][7], and an informed, aggressive pass cuts standby by about 20 percent [3]. That cut returns $18.67 to $37.34 in the first year.
+That band is real money for a year of power nobody switched on [1][7]. An informed, aggressive pass cuts standby by about 20 percent [3], which returns $18.67 to $37.34 in the first year.
 
 I keep coming back to what that saving buys. At the 2025 median wage for network administrators, $47.66 an hour [8], the search costs more than the $18.67 to $37.34 the whole audit returns in year one. It earns its keep only when the loads you find are large. That is the trade every guide leaves unpriced. A 10-watt box held all year is 87.6 kilowatt-hours and about $15.15 [7], so a handful of those, found in minutes, outweighs every charger in the house.
 

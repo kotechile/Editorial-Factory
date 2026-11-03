@@ -60,7 +60,7 @@ Introduce supporting context using standardized H2 headers (`## `).
   - **A tool link is a prerequisite, not a plug.** Close on the operational condition: "that baseline is worth measuring before any algorithm is tuned, and our <tool> reports the gap", never "the desk's own calculator".
 
 ### 3.6 Paragraph Discipline & Sentence Rhythm
-- **Story first, then scannability (owner, 2026-11-03).** The reader is following an argument, not scanning a deck. Bullets are for a real list of comparable items; a section of three bullets is usually three sentences that were afraid to be one paragraph. Section headers say what the section argues, in this article's words — not "The big picture:" on every piece. A "By the numbers" block is optional and never restates figures the prose already carries.
+- **Story first, then scannability (owner, 2026-11-03).** The reader is following an argument, not scanning a deck. Bullets are for a real list of comparable items; a section of three bullets is usually three sentences that were afraid to be one paragraph. Section headers say what the section argues, in this article's words — not "The big picture:" on every piece. The "By the numbers" block stays (it is the part of the page a reader scans), but it is 2–3 bullets of figures the prose does not restate — not the old four-bullet recap.
 - Keep paragraphs **3 to 5 sentences, never more than 6**. Depth comes from sentences per
   paragraph, not from longer sentences: the same piece at 26.8 words/sentence scored 51.9 and read
   thinner than the 17.8-word version at 5-sentence paragraphs (owner decision 2026-10-26).

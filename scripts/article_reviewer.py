@@ -177,8 +177,8 @@ PRIORITIES, in this order. A lower one never buys the higher one.
    product or system name; rephrase to drop the all-caps token instead.
 5. SHAPE. The five marked sections, in this order, each with an H2 on its own line and a blank line
    either side: {', '.join(SKELETON)}. Those are the fallback headings — prefer a header in this
-   article's own words that says what the section argues, and keep any numbers block only where the
-   piece is genuinely a table of figures. The tactical section reports what the people closest to
+   article's own words that says what the section argues, and keep the numbers block at 2–3 bullets of
+   figures the prose does not restate. The tactical section reports what the people closest to
    the story are doing and what answers the open question next — never a playbook for the reader,
    and never a bullet list where three sentences would read better.
 

@@ -27,7 +27,7 @@ SMART BREVITY STYLING PRINCIPLES:
    - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators.
    - FORMATTING REQUIREMENT: Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. NEVER place body prose or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
      - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift; followed on a new paragraph by a single direct sentence)
-     - `## By the numbers` (OPTIONAL: use it only when the piece is genuinely a table of numbers — 2–3 bullets, never more, and never a block that repeats figures the prose already carries)
+     - `## By the numbers` (REQUIRED section, but small: 2–3 bold bullets (`- **<figure> — <label>:** <one plain sentence> [n]`) carrying the figures the prose does not state again. Never a four-bullet recap of the body.)
      - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
      - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; followed on a new paragraph)
      - `## At a glance` (in <!-- tldr -->, a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
