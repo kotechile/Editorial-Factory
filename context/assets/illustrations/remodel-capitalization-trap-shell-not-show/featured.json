@@ -1,6 +1,6 @@
 {
   "slug": "remodel-capitalization-trap-shell-not-show",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,14 @@
     },
     {
       "revision": 4,
+      "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
+      "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
+      "title": "The Remodeling ROI Trap",
+      "bytes": 340719,
+      "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c"
+    },
+    {
+      "revision": 5,
       "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
       "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
       "title": "The Remodeling ROI Trap",

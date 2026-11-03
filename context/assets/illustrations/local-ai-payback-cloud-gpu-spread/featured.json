@@ -1,6 +1,6 @@
 {
   "slug": "local-ai-payback-cloud-gpu-spread",
-  "revision": 10,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -79,6 +79,14 @@
       "title": "AI Compute Break-Even Split",
       "bytes": 1931847,
       "sha256": "sha256:fe5e3b72cb71f7cb11106fb8db8719e8"
+    },
+    {
+      "revision": 10,
+      "alt_text": "The New Build-Vs-Rent Math. A heavy brushed-aluminum structural housing sitting unlatched beside a three-way routing manifold",
+      "caption": "The New Build-Vs-Rent Math: Local GPU costs soar as cloud rental prices split.",
+      "title": "The New Build-Vs-Rent Math",
+      "bytes": 1478853,
+      "sha256": "sha256:e64d34eb8e642ae2598a7720278252eee97bbe3318ff5753c1904948766b8648"
     }
   ],
   "style": "component_assembly",
@@ -105,12 +113,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1478853,
-  "sha256": "sha256:e64d34eb8e642ae2598a7720278252eee97bbe3318ff5753c1904948766b8648",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 387060,
+  "sha256": "sha256:c65f7f6adb3fa65227abe47d83d9d0d6e6e5bf7f24f2f7a24dc8a8a35917b3e4",
   "source_hash": "sha256:8c8392064556ded9b22eb938bb5b56a8",
   "source_chars": 4906,
   "task_id": "543d62446f507b89dbdbb34516fe632b",
@@ -132,25 +140,42 @@
     "kicker": "LOCAL AI // BUILD VS RENT MATH",
     "title": "THE NEW BUILD-VS-RENT MATH",
     "hook": "Local GPU costs soar as cloud rental prices split",
-    "anchor": "top-right",
+    "anchor": "bottom-right",
     "light": true,
     "scrim": 0,
-    "contrast": 10.26,
+    "contrast": 4.78,
     "target": 4.5,
-    "clutter": 0.075,
+    "clutter": 0.12,
     "region_rgb": [
-      58,
-      54,
-      47
+      92,
+      85,
+      77
     ],
     "binding_rgb": [
-      69,
-      64,
-      58
+      112,
+      103,
+      94
     ],
     "title_lines": [
       "THE NEW",
       "BUILD-VS-RENT MATH"
-    ]
+    ],
+    "subject": 0.028,
+    "ink_subject": 0.013,
+    "spike": 0.087,
+    "generated_at": "2026-10-09T01:23:43+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 387060,
+    "quality": 80,
+    "sha256": "sha256:c65f7f6adb3fa65227abe47d83d9d0d6e6e5bf7f24f2f7a24dc8a8a35917b3e4",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

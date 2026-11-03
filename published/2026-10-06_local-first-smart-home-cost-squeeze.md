@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/local-first-smart-home-cost-squeeze/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "The Local-First Smart Home Cost. Split-screen diptych of a matte white smart home hub and a raw silicon compute board on dark"
-image_caption: "The Local-First Smart Home Cost: Both ways to run a smart home got more expensive in the."
+image_alt: "Smart Home Costs Rise Both Ways. The Local-First Smart Home Cost. Split-screen diptych of a matte white smart home hub and a raw silicon"
+image_caption: "Smart Home Costs Rise Both Ways: Cloud paywalls and AI memory costs hit in one week."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

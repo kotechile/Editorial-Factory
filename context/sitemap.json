@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T13:33:10Z",
+  "updated_at": "2026-11-03T17:46:35Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4902,7 +4902,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-192-sessions-stall-the-model-not-the-tools/"
     },
     {
       "slug": "2026-11-02_your-30-inventory-cut-is-13-4",
@@ -4920,7 +4921,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-30-inventory-cut-is-13-4/"
     },
     {
       "slug": "2026-11-02_your-90-day-key-is-two-live-keys",
@@ -4938,7 +4940,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-90-day-key-is-two-live-keys/"
     },
     {
       "slug": "2026-11-02_your-basement-lease-risks-500000",
@@ -4956,7 +4959,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-basement-lease-risks-500000/"
     },
     {
       "slug": "2026-11-02_your-cheapest-part-needs-four-sigma",
@@ -4974,7 +4978,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-cheapest-part-needs-four-sigma/"
     },
     {
       "slug": "2026-11-02_your-gateway-was-malicious-for-104-minutes",
@@ -5049,7 +5054,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-02",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-septic-interval-is-18-months/"
     },
     {
       "slug": "2026-11-02_your-trace-fails-as-an-alarm",
@@ -5086,7 +5092,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-128gb-laptop-2319-memory-bill/"
     },
     {
       "slug": "2026-11-03_your-9-day-notice-9-day-queue",
@@ -5106,7 +5113,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-9-day-notice-9-day-queue/"
     },
     {
       "slug": "2026-11-03_your-ai-roi-28-rising-28-stalled",
@@ -5123,6 +5131,25 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-03",
+      "public": true,
+      "url": "https://aichieve.net/your-ai-roi-28-rising-28-stalled/"
+    },
+    {
+      "slug": "2026-11-03_your-dedupe-cut-f1-by-74",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The generator hears the ask",
+        "By the numbers",
+        "What the large sets varied",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
       "date": "2026-11-03",
       "public": false
     },
@@ -5142,7 +5169,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-grader-adds-22-points/"
     },
     {
       "slug": "2026-11-03_your-leak-alert-24-hours-at-best",
@@ -5160,7 +5188,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-leak-alert-24-hours-at-best/"
     },
     {
       "slug": "2026-11-03_your-plant-was-1n-and-blind",
@@ -5178,7 +5207,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-plant-was-1n-and-blind/"
     }
   ]
 }

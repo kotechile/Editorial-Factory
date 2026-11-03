@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:19:20+00:00",
+  "generated_at": "2026-11-03T14:19:53+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -394,8 +394,8 @@
       "categories": [],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Your standby bill hides about 62 watts of constant draw because the energy moved out of your wall chargers and into larger appliances.",
-      "modified": "2026-10-31T17:49:32",
+      "excerpt": "Your standby bill hides about 62 watts because the appliances that never turn off, not the chargers you were told to unplug, carry the load.",
+      "modified": "2026-11-03T02:32:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2843,6 +2843,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-basement-lease-risks-500000",
+      "title": "Your Basement Lease Risks $500,000",
+      "url": "https://wellroost.com/your-basement-lease-risks-500000/",
+      "path": "/your-basement-lease-risks-500000/",
+      "sites_live": {
+        "wellroost.com": "/your-basement-lease-risks-500000/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "A $60,000 conversion writes off $2,182 a year, is taxed back at up to 25 percent when the house sells, and risks a $500,000 exclusion once the lease runs long.",
+      "modified": "2026-11-02T18:48:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-battery-payback-0-or-38",
       "title": "Your Battery's Payback Gap: 0\u00a2 to 38.1\u00a2",
       "url": "https://wellroost.com/your-battery-payback-0-or-38/",
@@ -3050,6 +3073,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-leak-alert-24-hours-at-best",
+      "title": "Your Leak Alert: A 24-Hour Gap",
+      "url": "https://wellroost.com/your-leak-alert-24-hours-at-best/",
+      "path": "/your-leak-alert-24-hours-at-best/",
+      "sites_live": {
+        "wellroost.com": "/your-leak-alert-24-hours-at-best/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Brownsville Public Utilities Board (BPUB) turned on water-leak alerts on 1 November, but the warning can repeat only once every 24 hours at best.",
+      "modified": "2026-11-03T12:52:40",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-locks-blind-90-bet",
       "title": "Your Lock's Blind 90% Bet",
       "url": "https://wellroost.com/your-locks-blind-90-bet/",
@@ -3250,6 +3296,29 @@
       ],
       "excerpt": "Spending on home repairs is set to grow 1.5 percent while the goods behind those jobs are up 9.7 percent, so your repair budget's reach shrinks: it buys\u2026",
       "modified": "2026-10-31T04:48:58",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-septic-interval-is-18-months",
+      "title": "Your Septic Interval: 18 Months, Not 5 Years",
+      "url": "https://wellroost.com/your-septic-interval-is-18-months/",
+      "path": "/your-septic-interval-is-18-months/",
+      "sites_live": {
+        "wellroost.com": "/your-septic-interval-is-18-months/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "A 1,000-gallon septic tank gives up about 300 gallons to sludge and scum before solids leave for the drainfield, and on Penn State Extension's per-adult\u2026",
+      "modified": "2026-11-02T19:28:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4091,7 +4160,7 @@
       ],
       "category_ids": [],
       "category_slugs": [],
-      "excerpt": "Field-tested implementation blueprints for embedding AI and automation into client delivery, lead generation, and back-office operations without bloated software overhead.",
+      "excerpt": "Implementation blueprints for embedding AI and automation into enterprise workflows, data pipelines, and back-office operations without bloated software overhead.",
       "modified": "",
       "live": true,
       "source": "frontend-sitemap"
@@ -5768,8 +5837,8 @@
       "category_slugs": [
         "supply-chain-operations"
       ],
-      "excerpt": "The Friday illusion: Your supply chain team celebrates a 96% Case Fill Rate at 5:00 p.m.\u2014only for your retail buyers to hit you with heavy compliance chargebacks by 9:00 a.m. Monday. Why it matters: A single missing promotional SKU turns a respectable 97% Case Fill Rate into a 0% Order Fill Rate, triggering automated On-Time In-Full (OTIF) penalties. Yet most leadership teams misdiagnose these cuts because standard ERP reporting hides factory bottlenecks made two to eight weeks upstream.",
-      "modified": "2026-11-01T21:27:40",
+      "excerpt": "A single missing promotional SKU turns a respectable 97% Case Fill Rate into a 0% Order Fill Rate, triggering automated On-Time In-Full (OTIF) penalties. Yet most leadership teams misdiagnose these cuts because standard ERP reporting hides factory bottlenecks made two to eight weeks upstream.",
+      "modified": "2026-11-02T23:17:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6343,6 +6412,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-9-day-notice-9-day-queue",
+      "title": "Your 9-Day Notice, 9-Day Queue",
+      "url": "https://aichieve.net/your-9-day-notice-9-day-queue/",
+      "path": "/your-9-day-notice-9-day-queue/",
+      "sites_live": {
+        "aichieve.net": "/your-9-day-notice-9-day-queue/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A 250-person watchmen dispute at eight Los Angeles and Long Beach gates arrived with nine days of notice, in front of a rail queue already nine days deep.",
+      "modified": "2026-11-03T13:32:47",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-11-agents-3-die-none-wrong",
       "title": "Your 11 Agents: 3 Die, None Wrong",
       "url": "https://aichieve.net/your-11-agents-3-die-none-wrong/",
@@ -6451,6 +6543,29 @@
       ],
       "excerpt": "Your $30 exception bill is wrong, and the math proves it.",
       "modified": "2026-10-31T04:48:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-30-inventory-cut-is-13-4",
+      "title": "Double Orders, Cut 13.4%: Not 30%",
+      "url": "https://aichieve.net/your-30-inventory-cut-is-13-4/",
+      "path": "/your-30-inventory-cut-is-13-4/",
+      "sites_live": {
+        "aichieve.net": "/your-30-inventory-cut-is-13-4/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The slide says double your orders and the safety stock cut is 30%. The math is sound only because the source page says the step out loud: doubling the\u2026",
+      "modified": "2026-11-02T20:03:26",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6619,6 +6734,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-90-day-key-is-two-live-keys",
+      "title": "Your 90-Day Key: Still Live",
+      "url": "https://aichieve.net/your-90-day-key-is-two-live-keys/",
+      "path": "/your-90-day-key-is-two-live-keys/",
+      "sites_live": {
+        "aichieve.net": "/your-90-day-key-is-two-live-keys/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Google's guide for swapping service keys says replace them at least every 90 days, then names the step most teams skip: remove the old one.",
+      "modified": "2026-11-02T18:23:31",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-90-restart-monitor-proves-nothing",
       "title": "Your 90% Restart Monitor Proves Nothing",
       "url": "https://aichieve.net/your-90-restart-monitor-proves-nothing/",
@@ -6665,6 +6803,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-128gb-laptop-2319-memory-bill",
+      "title": "Your 128GB Laptop: A $2,319 Memory Bill",
+      "url": "https://aichieve.net/your-128gb-laptop-2319-memory-bill/",
+      "path": "/your-128gb-laptop-2319-memory-bill/",
+      "sites_live": {
+        "aichieve.net": "/your-128gb-laptop-2319-memory-bill/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Nvidia's 16 October laptop launch has a hidden price ladder, because a year of memory shortage pushed the average desktop memory price up 88%.",
+      "modified": "2026-11-03T13:00:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-180-day-model-is-already-wrong",
       "title": "Your 180-day model is already wrong",
       "url": "https://aichieve.net/your-180-day-model-is-already-wrong/",
@@ -6681,6 +6842,29 @@
       ],
       "excerpt": "The North American Electric Reliability Corporation (NERC) just cleared its first mandatory grid rules for data centers on a final stakeholder ballot.",
       "modified": "2026-10-31T04:48:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-192-sessions-stall-the-model-not-the-tools",
+      "title": "Your Queue Caps the Wrong Unit: 192 Sessions",
+      "url": "https://aichieve.net/your-192-sessions-stall-the-model-not-the-tools/",
+      "path": "/your-192-sessions-stall-the-model-not-the-tools/",
+      "sites_live": {
+        "aichieve.net": "/your-192-sessions-stall-the-model-not-the-tools/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "At 192 sessions running at once, the model stalls: its writing time stretches more than seventeen-fold, while the tools barely slow.",
+      "modified": "2026-11-02T17:50:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6826,6 +7010,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-ai-roi-28-rising-28-stalled",
+      "title": "Your AI ROI Trap: 28% Both Ways",
+      "url": "https://aichieve.net/your-ai-roi-28-rising-28-stalled/",
+      "path": "/your-ai-roi-28-rising-28-stalled/",
+      "sites_live": {
+        "aichieve.net": "/your-ai-roi-28-rising-28-stalled/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Two surveys of enterprise AI, published a day apart after a year of rising spend, found the same number and read it in opposite ways.",
+      "modified": "2026-11-03T11:56:22",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-cache-pays-125x-for-nothing",
       "title": "Your Cache Pays 1.25x for Nothing",
       "url": "https://aichieve.net/your-cache-pays-125x-for-nothing/",
@@ -6934,6 +7141,29 @@
       ],
       "excerpt": "The machine on the quote works 6 hours 45 minutes at maximum payload, while a normal shift runs eight hours. The 75 minutes in between are where capital\u2026",
       "modified": "2026-10-31T04:48:10",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-cheapest-part-needs-four-sigma",
+      "title": "Your 98% Target Hides Four Sigma",
+      "url": "https://aichieve.net/your-cheapest-part-needs-four-sigma/",
+      "path": "/your-cheapest-part-needs-four-sigma/",
+      "sites_live": {
+        "aichieve.net": "/your-cheapest-part-needs-four-sigma/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A bracket carrying a 12% margin and a 45-day lead time gets held to a 98% fill target, and its own arithmetic returns 0.83.",
+      "modified": "2026-11-02T20:18:20",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7194,6 +7424,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-grader-adds-22-points",
+      "title": "Your Grader Adds 22 Silent Points",
+      "url": "https://aichieve.net/your-grader-adds-22-points/",
+      "path": "/your-grader-adds-22-points/",
+      "sites_live": {
+        "aichieve.net": "/your-grader-adds-22-points/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "One benchmark asked a vision-language model whether a metal part was defective. The model answered, \\\"The object is a nail.\\\" The official scorer marked that\u2026",
+      "modified": "2026-11-03T11:18:11",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-green-passes-hide-31-wrong",
       "title": "Your Green Suite Certifies 31.08% Wrong",
       "url": "https://aichieve.net/your-green-passes-hide-31-wrong/",
@@ -7348,6 +7601,29 @@
       ],
       "excerpt": "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute.",
       "modified": "2026-10-31T04:48:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-plant-was-1n-and-blind",
+      "title": "Your Plant Was 1N and Blind",
+      "url": "https://aichieve.net/your-plant-was-1n-and-blind/",
+      "path": "/your-plant-was-1n-and-blind/",
+      "sites_live": {
+        "aichieve.net": "/your-plant-was-1n-and-blind/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "At 06:53 London time on 20 October, a Google Cloud data centre lost one of its two power feeds and did nothing about it.",
+      "modified": "2026-11-03T11:38:42",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7724,6 +8000,132 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 1425,
+      "slug": "your-9-day-notice-9-day-queue",
+      "title": "Your 9-Day Notice, 9-Day Queue",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-03T13:32:47",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1423,
+      "slug": "your-128gb-laptop-2319-memory-bill",
+      "title": "Your 128GB Laptop: A $2,319 Memory Bill",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-03T13:00:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1420,
+      "slug": "your-ai-roi-28-rising-28-stalled",
+      "title": "Your AI ROI Trap: 28% Both Ways",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-03T11:56:22",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1415,
+      "slug": "your-plant-was-1n-and-blind",
+      "title": "Your Plant Was 1N and Blind",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-03T11:38:42",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1413,
+      "slug": "your-grader-adds-22-points",
+      "title": "Your Grader Adds 22 Silent Points",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-03T11:18:11",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1400,
+      "slug": "your-cheapest-part-needs-four-sigma",
+      "title": "Your 98% Target Hides Four Sigma",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T20:18:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1396,
+      "slug": "your-30-inventory-cut-is-13-4",
+      "title": "Double Orders, Cut 13.4%: Not 30%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T20:03:26",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1393,
+      "slug": "your-90-day-key-is-two-live-keys",
+      "title": "Your 90-Day Key: Still Live",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T18:23:31",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1390,
+      "slug": "your-192-sessions-stall-the-model-not-the-tools",
+      "title": "Your Queue Caps the Wrong Unit: 192 Sessions",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-02T17:50:39",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 1385,
       "slug": "kroger-direct-buy-retires-its-own-fine",
       "title": "Kroger&#8217;s Lane Kills Your 3% Fee",
@@ -7787,7 +8189,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-01T21:27:40",
+      "modified": "2026-11-02T23:17:40",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -8716,132 +9118,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1062,
-      "slug": "enclave-overhead-62-percent-not-4",
-      "title": "Enclave overhead: 62.8%, not 4%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:29",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1059,
-      "slug": "rerun-diff-measures-gpu",
-      "title": "Your 9% Drop: Not the Model",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:29",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1056,
-      "slug": "your-3-0-0-feed-stuck-until-2027",
-      "title": "Your 3.0.0 Feed Stuck Until 2027",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:29",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1053,
-      "slug": "your-24gb-card-is-4gb-short",
-      "title": "Your 24GB Card Is 4GB Short: The Label Trap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:29",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1050,
-      "slug": "your-gpu-landlord-80-wont-survive",
-      "title": "Your GPU Landlord: 80% Won&#8217;t Survive",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:30",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1047,
-      "slug": "your-180-day-model-is-already-wrong",
-      "title": "Your 180-day model is already wrong",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:30",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1044,
-      "slug": "your-trace-wont-prove-925-points",
-      "title": "Your Trace Won&#8217;t Prove 92.5 Points",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:30",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1041,
-      "slug": "your-30-exception-bill-is-wrong",
-      "title": "Your $30 Exception Bill Is Wrong",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:30",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1038,
-      "slug": "four-warehouses-halve-stock",
-      "title": "4 Warehouses Halve Stock. Yours Won&#8217;t",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -8865,7 +9141,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-10-31T17:49:32",
+      "modified": "2026-11-03T02:32:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

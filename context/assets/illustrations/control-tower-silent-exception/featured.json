@@ -1,6 +1,6 @@
 {
   "slug": "control-tower-silent-exception",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -129,6 +129,14 @@
       "title": "The Fake Carrier Blind Spot",
       "bytes": 166340,
       "sha256": "sha256:cc4fd164f53a82a84068d74a2d118aa249a7675a009dca9b5a3f773ca3abb420"
+    },
+    {
+      "revision": 16,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests",
+      "caption": "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 335866,
+      "sha256": "sha256:93bbb07195281886623a35dd6996db8a072039531c5902759c5f090d783f7194"
     }
   ],
   "style": "cinematic_still",
