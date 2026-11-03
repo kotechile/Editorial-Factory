@@ -785,6 +785,28 @@ push, and when it names only function words: strip it from the artifact and the 
 REST (`POST /wp-json/wp/v2/posts/<id>` with `content`, app password from `wp_draft.credentials_for` after `load_env()`),
 then force the front's redeploy — and record the re-stamp behaviour as an engine item, because the next sync restores it.
 
+**Hosts probed live 2026-11-03, building a connection-pool / `work_mem` memory-ceiling brief (the `enterprise_tech_leadership` evergreen).**
+Carries the figure as plain text and fetches first try: `postgresql.org/docs/current/runtime-config-connection.html` ("The default is
+typically 100 connections") and `…/runtime-config-resource.html` ("The default value is four megabytes ( 4MB )", beside "the total
+memory used could be many times the value of work_mem"); `cloud.google.com/sql/docs/postgres/quotas` (the backend-connection
+ceiling as one sentence — "the sum of the values for max_connections … autovacuum_max_workers … and max_worker_processes. The sum
+cannot exceed 262142"); `cloud.google.com/sql/docs/postgres/managed-connection-pooling` (the pooler ladder — one pooler per 4 vCPUs,
+"if max_pool_size is set to 50 on an instance running 2 connection poolers (8 vCPUs), then each connection pooler can open up to 50
+server connections … up to 100 server connections across the instance", plus `max_client_connections`' 5,000 default); and
+`pgbouncer.org/config.html` (`default_pool_size` "per user/database pair" = 100, and `pool_mode` session as the default).
+**Two traps on this beat.** (1) `wiki.postgresql.org/wiki/Number_Of_Database_Connections` fetches at 8.5 KB with the whole
+`(core_count * 2) + effective_spindle_count` rule and its O(N^2) scaling note, but its only numeric token is `2`, which first
+matches its own **contents list** ("1 Summary 2 The Need for an External Pool"), so the rule can ride in prose and Sources but cannot
+carry a gate row — same nav-digit class as arXiv `abs` pages. (2) A pooler's documented default evidences on the *preceding*
+parameter's `Default: 100` (PgBouncer prints `max_client_conn`'s default directly above `default_pool_size`), so quote the sentence
+the row is about and read the excerpt before trusting it.
+**A reader front whose build predates the post is the fastest explanation for a persistent 404** (learned 2026-11-03): the aichieve
+container was named `…-20261103T183041` while the CMS post was created at 18:44:56, so no rebuild was ever going to contain it —
+`docker ps | grep <front-uuid>` gives the build timestamp in the container name, and a forced Coolify deploy from inside the
+WordPress container (`POST https://coolify.giniloh.com/api/v1/deploy?uuid=<front-uuid>&force=true`, token read out of
+`wp-config.php` as `force_deploy_wr.sh` does) served the page at 200 in about three minutes. Check the timestamp before re-pushing
+the front repo.
+
 **Hosts probed live 2026-11-02, building a replenishment-frequency / cycle-stock brief (the `meio_working_capital_tco` evergreen).**
 Carries the figure as plain text and fetches first try: `blog.arkieva.com/replenishment-frequency` (the arithmetic
 that makes the topic — "New SS = (1/√2) * Original SS = 0.707 * Original SS", its 30% and 41% results, and the
