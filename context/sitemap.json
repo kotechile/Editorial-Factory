@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T11:58:48Z",
+  "updated_at": "2026-11-03T12:36:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5103,6 +5103,24 @@
         "At a glance"
       ],
       "target_persona": "evals_infra_eng",
+      "date": "2026-11-03",
+      "public": false
+    },
+    {
+      "slug": "2026-11-03_your-leak-alert-24-hours-at-best",
+      "title": "Your Leak Alert: A 24-Hour Gap",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "A fast meter, a scheduled alert",
+        "By the numbers",
+        "Where the clock gets set",
+        "The trade for a shorter wait",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-03",
       "public": false
     },
