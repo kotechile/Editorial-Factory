@@ -1,0 +1,116 @@
+{
+  "slug": "your-grader-adds-22-points",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Eval pipeline assembly: central model module flanked by two inspection gates, one unlatched and one mis-seated, on a control-room workbench",
+      "caption": "A model\u2019s published score hinges on two unowned conversion joints outside the model, shown here as an unseated inspection latch and an open verification cover on a control-room workbench.",
+      "title": "Eval pipeline renderer parser gate clay assembly",
+      "bytes": 396413,
+      "sha256": "sha256:c85ae915936ec1871b8e4750b6e3d518"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay render of a small mechanical eval pipeline assembly resting on a weathered concrete control-room workbench before a blurred data hall rack row. Three recognisable engineered parts in deliberate arrangement: a central graphite model module with cooling fins seated in a brushed aluminium rail, an input-side renderer inspection gate with an optical glass readback head, and an output-side parser snap-latch connector with cover unlatched and a visible gap where the sensor head does not fully seat. One hard raking key light from the left throws long contact shadows over moulding seams; palette graphite, bone white, safety yellow. Extreme asymmetry, assembly on left third, generous negative space to the right; no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, labels, engravings",
+  "rationale": "The story is structural and abstract: two unowned joints outside the model determine the score, but there is no literal facility to photograph. A matte clay mechanical assembly makes the renderer and parser tangible as inspection gates with a visible gap and open cover, avoiding the sterile datacenter trope while giving the failure a tactile, mechanistic truth.",
+  "cue": "both fail quietly",
+  "subject": "A small mechanical eval pipeline assembly with a central model module flanked by renderer and parser inspection gates, one unseated and one open.",
+  "core_thesis": "An eval score is made twice outside the model\u2014once when a renderer turns the run into the text a judge reads and once when a parser turns the reply into a verdict\u2014and because both fail quietly at exactly the inputs where the model is weakest, a score is only worth trusting when the pipeline reports what it rendered, what it parsed and how often the fallback fired.",
+  "core_conflict": "Two unowned external conversion steps\u2014renderer and parser\u2014silently add or drop points on the same stored outputs, while the model in the middle remains the only part anyone measures.",
+  "composition": "Extreme asymmetry, assembly on left third, generous negative space to the right",
+  "alt_text": "Two matte clay modules meet on a cracked concrete floor, a yellow connector latch hanging open between them, in a dim server room.",
+  "caption": "Your Grader Adds 22 Silent Points: Scores shift by up to 22 points before anyone sees them.",
+  "title": "Your Grader Adds 22 Silent Points",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-grader-adds-22-points/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406739,
+  "sha256": "sha256:ca08c1b115bf56edafc38a720bb8ddad66735e1e562ffa1e4c1ba443532a520a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406739,
+    "quality": 84,
+    "sha256": "sha256:ca08c1b115bf56edafc38a720bb8ddad66735e1e562ffa1e4c1ba443532a520a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:cece480444f3e8578393d57034ab7462a0d5823405d55a2040b59e84ef84216d",
+  "render_phash": "4e5e5e5062074e1f44ff24df3c37bc139c155c26dc16ec4fd6239b16599c4cbb",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small matte 3D-rendered mechanical assembly resting on a cracked concrete surface \u2014 a grey finned box module with a white cylindrical barrel-shaped component on a bracket to its left, and a yellow plug/socket housing with an unlatched hinged flap open to its right \u2014 with blurred server racks behind.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The depicted object is literally a compact pipeline assembly with a central module flanked by two inspection gates, one of which is visibly open/unseated, matching the article's rendered-parsed eval pipeline mechanism rather than a different industry or generic filler."
+  },
+  "source_hash": "sha256:db8a5ea12cd559c255dcb9d3dabe6c9b",
+  "source_chars": 6928,
+  "task_id": "f9830337110828063444ebbd28505f37",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ff24fa87d37dca4e7b7f065ea1336eeb.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay render of a small mechanical eval pipeline assembly resting on a weathered concrete control-room workbench before a blurred data hall rack row. Three recognisable engineered parts in deliberate arrangement: a central graphite model module with cooling fins seated in a brushed aluminium rail, an input-side renderer inspection gate with an optical glass readback head, and an output-side parser snap-latch connector with cover unlatched and a visible gap where the sensor head does not fully seat. One hard raking key light from the left throws long contact shadows over moulding seams; palette graphite, bone white, safety yellow. Extreme asymmetry, assembly on left third, generous negative space to the right; no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-03T11:16:48+00:00",
+  "overlay": {
+    "kicker": "BENCHMARK SCORING // SILENT PIPELINE FAILURES",
+    "title": "YOUR GRADER ADDS 22 SILENT POINTS",
+    "hook": "Scores shift by up to 22 points before anyone sees them",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 4.71,
+    "target": 4.5,
+    "clutter": 0.198,
+    "region_rgb": [
+      173,
+      168,
+      156
+    ],
+    "binding_rgb": [
+      159,
+      155,
+      144
+    ],
+    "title_lines": [
+      "YOUR GRADER ADDS",
+      "22 SILENT POINTS"
+    ],
+    "subject": 0.064,
+    "ink_subject": 0.026,
+    "spike": 0.218,
+    "generated_at": "2026-11-03T11:16:48+00:00"
+  }
+}

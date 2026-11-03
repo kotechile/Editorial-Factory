@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:20:59Z",
+  "updated_at": "2026-11-03T11:17:47Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -4760,10 +4760,10 @@
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [
-        "The big picture:",
+        "The chargers stopped being the story",
         "By the numbers",
-        "What I'd watch:",
-        "The catch",
+        "What the hour is worth",
+        "What the estimate cannot carry",
         "Related reading",
         "At a glance"
       ],
@@ -5069,6 +5069,42 @@
       "date": "2026-11-02",
       "public": true,
       "url": "https://aichieve.net/your-trace-fails-as-an-alarm/"
+    },
+    {
+      "slug": "2026-11-03_your-grader-adds-22-points",
+      "title": "Your Grader Adds 22 Silent Points",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Made outside the model, twice",
+        "By the numbers",
+        "Where the pipeline leaks",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-11-03",
+      "public": false
+    },
+    {
+      "slug": "2026-11-03_your-plant-was-1n-and-blind",
+      "title": "Your Plant Was 1N and Blind",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The plant could not see itself",
+        "By the numbers",
+        "Where the second opinion comes from",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-03",
+      "public": false
     }
   ]
 }

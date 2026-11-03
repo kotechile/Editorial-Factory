@@ -278,6 +278,8 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-02 | home_infrastructure_lifecycle_tco | your-septic-interval-is-18-months | Your Septic Interval: 18 Months, Not 5 Years | https://pressflow.aichieve.net/published/2026-11-02_your-septic-interval-is-18-months.md | reader site only |
 | 2026-11-02 | meio_working_capital_tco | your-30-inventory-cut-is-13-4 | Double Orders, Cut 13.4%: Not 30% | https://pressflow.aichieve.net/published/2026-11-02_your-30-inventory-cut-is-13-4.md | reader site only |
 | 2026-11-02 | sales_order_service_level_otif | your-cheapest-part-needs-four-sigma | Your 98% Target Hides Four Sigma | https://pressflow.aichieve.net/published/2026-11-02_your-cheapest-part-needs-four-sigma.md | reader site only |
+| 2026-11-03 | ai_observability_qa | your-grader-adds-22-points | Your Grader Adds 22 Silent Points | https://pressflow.aichieve.net/published/2026-11-03_your-grader-adds-22-points.md | reader site only |
+| 2026-11-03 | nhil_infrastructure_ops | your-plant-was-1n-and-blind | Your Plant Was 1N and Blind | https://pressflow.aichieve.net/published/2026-11-03_your-plant-was-1n-and-blind.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
