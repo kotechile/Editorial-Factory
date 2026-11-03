@@ -1,0 +1,116 @@
+{
+  "slug": "your-leak-alert-24-hours-at-best",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Water meter housing with fixed interval cam and owner-run sensor module on a concrete garage floor, split-screen.",
+      "caption": "A fixed utility meter schedule and an owner-adjustable sensor sit side by side, making the twenty-four-hour alert gap visible as machinery.",
+      "title": "Leak Alert Schedule vs Owner Sensor Assembly",
+      "bytes": 404139,
+      "sha256": "sha256:5bc123ee30bde14be6102ba1e2cc200c"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D split-screen diptych on a textured concrete garage floor, a vertical seam separating left and right. Left half: a cylindrical water-meter housing with a fixed rotary cam wheel cut with twenty-four detents and one locked latch position. Right half: a small owner-run sensor module with an adjustable threshold lever and a short antenna nub. A galvanised steel pipe stub links the halves across the seam. Hard directional key light from the left rakes the assembly, throwing long contact shadows. Palette: bone white, graphite, deep pine green. No text, no numbers.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, UI",
+  "rationale": "The story is a structural contrast between two control regimes\u2014a fixed utility cadence and an owner-adjustable sensor\u2014with no single purchasable object carrying the whole thesis. A matte clay 3D mechanical assembly makes the two cadences legible as physical parts, and the split-screen framing enforces the duality.",
+  "cue": "a notification schedule, not a detector",
+  "subject": "a split-screen matte clay assembly of a utility water-meter housing with fixed 24-hour cam and an owner-run sensor module with adjustable threshold lever",
+  "core_thesis": "A utility's smart-meter leak alert is a notification schedule, not a detector: the cadence belongs to the utility, and only an owner-run sensor lets you choose the interval and threshold that match what a leak costs.",
+  "core_conflict": "The utility's fixed 24-hour-to-biweekly alert cadence leaves homeowners exposed for up to two weeks, while an owner-run sensor can be tuned to the precise interval and threshold a hidden slab leak actually demands.",
+  "composition": "split-screen diptych, left-right scenario contrast: fixed utility interval cam vs owner-adjustable threshold sensor",
+  "alt_text": "BPUB Leak Alert 24-Hour Gap. Water meter housing with fixed interval cam and owner-run sensor module on a concrete garage floor",
+  "caption": "BPUB Leak Alert 24-Hour Gap: A 24-hour alert cadence the utility sets, not the owner.",
+  "title": "BPUB Leak Alert 24-Hour Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-leak-alert-24-hours-at-best/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 398870,
+  "sha256": "sha256:5d00339ff8996b5dd897c825ce1805b279ea085704cd5df7bc47f769fc808a1f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 398870,
+    "quality": 64,
+    "sha256": "sha256:5d00339ff8996b5dd897c825ce1805b279ea085704cd5df7bc47f769fc808a1f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:7a7fa901eda64257426085e642812acda90d8027c0466941a20d89cd63106558",
+  "render_phash": "133e217f4d328737275b035b5bd189999b999f09cb99e73933660d2bcd33db26",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two matte clay objects on a concrete slab joined by a short metal pipe fitting: on the left a cream-coloured cylindrical meter housing with a recessed slotted dial face and a protruding tab, and on the right a green rectangular box topped with a small metal lever and a short nub.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The frame's meter housing paired with a lever-adjustable module mirrors the article's contrast between the utility's fixed water-meter alert interval and an owner-run sensor with adjustable threshold, though the '24-hour cam' and dial numeracy are only implied rather than legible."
+  },
+  "source_hash": "sha256:1c64998516c90d2b9e739e9411773466",
+  "source_chars": 5799,
+  "task_id": "a2434af1155a7043e2add2dd13818794",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b4bad1023c600e6ffee4928dcf53cf30.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D split-screen diptych on a textured concrete garage floor, a vertical seam separating left and right. Left half: a cylindrical water-meter housing with a fixed rotary cam wheel cut with twenty-four detents and one locked latch position. Right half: a small owner-run sensor module with an adjustable threshold lever and a short antenna nub. A galvanised steel pipe stub links the halves across the seam. Hard directional key light from the left rakes the assembly, throwing long contact shadows. Palette: bone white, graphite, deep pine green. No text, no numbers.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-03T12:49:32+00:00",
+  "overlay": {
+    "kicker": "UTILITY SMART METER ALERT CADENCE",
+    "title": "BPUB LEAK ALERT 24-HOUR GAP",
+    "hook": "A 24-hour alert cadence the utility sets, not the owner",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 60,
+    "contrast": 4.74,
+    "target": 4.5,
+    "clutter": 0.21,
+    "region_rgb": [
+      169,
+      153,
+      126
+    ],
+    "binding_rgb": [
+      140,
+      123,
+      97
+    ],
+    "title_lines": [
+      "BPUB LEAK ALERT",
+      "24-HOUR GAP"
+    ],
+    "subject": 0.046,
+    "ink_subject": 0.018,
+    "spike": 0.156,
+    "generated_at": "2026-11-03T12:49:32+00:00"
+  }
+}

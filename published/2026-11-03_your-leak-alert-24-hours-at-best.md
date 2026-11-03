@@ -14,6 +14,12 @@ meta_title: "Your Leak Alert: A 24-Hour Gap"
 meta_title_source: "derived_from_title"
 meta_description: "Brownsville Public Utilities Board (BPUB) turned on water-leak alerts on 1 November, but the warning can repeat only once every 24 hours at best."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-leak-alert-24-hours-at-best/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "BPUB Leak Alert 24-Hour Gap. Water meter housing with fixed interval cam and owner-run sensor module on a concrete garage floor"
+image_caption: "BPUB Leak Alert 24-Hour Gap: A 24-hour alert cadence the utility sets, not the owner."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -61,6 +67,14 @@ The owner-run option is also younger than the pitch suggests. LoRaWAN arrived in
 
 What I keep circling is the wording on the utility's own page. "Real-time" and "daily" sit one line apart, and both are true of different parts of the same system [3]. The meter is fast; the message is scheduled. That is not a scandal, and it is not a reason to refuse the free alert. It is a reason to read the schedule before treating the alert as the plan.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** Brownsville's new leak alerts repeat daily at best, while Home Assistant added support for long-range, batteryless sensors where leaks start.
+- **The number:** 24 hours is the fastest repeat BPUB quotes; weekly at low flow [1].
+- **The risk:** The free alert runs on the utility's clock, not yours.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -73,14 +87,6 @@ What I keep circling is the wording on the utility's own page. "Real-time" and "
 - [Water Leak Monitors](/water-leak-monitor-rate-threshold/) — more on Smart Home & Security
 - [Your Hub's 4,292-Project Blind Spot](/your-hubs-4292-project-blind-spot/) — more on Smart Home & Security
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** Brownsville's new leak alerts repeat daily at best, while Home Assistant added support for long-range, batteryless sensors where leaks start.
-- **The number:** 24 hours is the fastest repeat BPUB quotes; weekly at low flow [1].
-- **The risk:** The free alert runs on the utility's clock, not yours.
 
 ## Sources
 [1] KRGV, "New Brownsville PUB program will notify customers of water leaks" (2026-10-20): https://www.krgv.com/news/new-brownsville-pub-program-will-notify-customers-of-water-leaks

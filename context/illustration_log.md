@@ -404,3 +404,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-03 | `your-grader-adds-22-points` | ai_observability_qa | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-grader-adds-22-points/featured.jpg` |
 | 2026-11-03 | `your-plant-was-1n-and-blind` | nhil_infrastructure_ops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-plant-was-1n-and-blind/featured.jpg` |
 | 2026-11-03 | `your-ai-roi-28-rising-28-stalled` | enterprise_tech_leadership | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ai-roi-28-rising-28-stalled/featured.jpg` |
+| 2026-11-03 | `your-leak-alert-24-hours-at-best` | smart_home_telemetry | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-leak-alert-24-hours-at-best/featured.jpg` |
