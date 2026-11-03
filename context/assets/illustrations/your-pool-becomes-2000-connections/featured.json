@@ -1,112 +1,112 @@
 {
-  "slug": "your-pool-becomes-2000-connections",
-  "revision": 2,
-  "history": [
-    {
-      "revision": 1,
-      "alt_text": "Overloaded patch panel spilling copper cables onto a concrete floor in a server room",
-      "caption": "A single patch panel overflows with database connection cables, visualizing how a default pool setting multiplies across pods until memory runs out.",
-      "title": "Database Connection Pool Overflow Patch Bay",
-      "bytes": 402963,
-      "sha256": "sha256:c24930d45349237e9363723672668165"
-    }
-  ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
-  "model_note": "",
-  "aspect_ratio": "16:9",
-  "resolution": "1K",
-  "prompt": "A low-angle cinematic still inside a server room: an industrial patch panel mounted on the right third of the frame, overloaded with hundreds of identical copper-sheathed cables, many pulled from their ports and spilling onto the concrete floor. A single warm work lamp from the left rakes across the panel, creating deep shadows and highlighting the tangled overflow. Graphite and bone white with copper accents. 35mm anamorphic lens, shallow depth of field, fine film grain, extreme asymmetry with negative space left. No people, no text, no logos.",
-  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI elements",
-  "rationale": "Cinematic still captures the decisive moment of overflow in a real server environment, grounding the abstract connection multiplication in physical cables and a patch panel without resorting to a literal server rack of memory blades.",
-  "cue": "Your Pool Becomes 2,000: A Memory Trap",
-  "subject": "an industrial patch panel with hundreds of identical cables plugged in, many spilling out of the panel onto the floor",
-  "core_thesis": "A database connection is a server process holding a per-sort memory budget, and because each pod opens its own pool, a default copied from a library multiplies by pod count and exhausts the database memory after deploy.",
-  "core_conflict": "connection pool multiplication vs finite server memory budget",
-  "composition": "extreme asymmetry with the overflowing patch panel on the right third, leaving negative space to the left; low-angle establishing shot",
-  "alt_text": "Pool Defaults Multiply By Pods. Overloaded patch panel spilling copper cables onto a concrete floor in a server room",
-  "caption": "Pool Defaults Multiply By Pods: One pool per pod turns a setting into a memory drain.",
-  "title": "Pool Defaults Multiply By Pods",
-  "credit": "Illustration: Editorial-Factory Intelligence Unit",
-  "depicts_real_brand": false,
-  "director": "deepseek-v4-pro",
-  "director_attempts": 2,
-  "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/your-pool-becomes-2000-connections/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 385648,
-  "sha256": "sha256:537a087cf26bc36d8403c44e5aceea180b6e6f36cc2dfbc4afac85bd2cf2513c",
-  "delivery": {
-    "standard": "2026-10-24",
-    "format": "JPEG",
-    "progressive": true,
-    "color_space": "sRGB",
-    "width": 2400,
-    "height": 1350,
-    "aspect": 1.7778,
-    "bytes": 385648,
-    "quality": 76,
-    "sha256": "sha256:537a087cf26bc36d8403c44e5aceea180b6e6f36cc2dfbc4afac85bd2cf2513c",
-    "filename_rule": "<slug>-featured.jpg"
-  },
-  "render_sha256": "sha256:0ffa394ab80e40032d75e1cfdd8a4806b81f3e76444e7ce604f374a45bcb437c",
-  "render_phash": "444c3e5c3e361e6c1e7c0e740c7e047e047f00fa047e0fbf059b018f003d383e",
-  "review": {
-    "ok": true,
-    "problems": [],
-    "depicts": "A server rack with many copper-colored cables plugged into patch panels spills out and coils on a concrete floor, with a desk lamp glowing on the left.",
-    "legible_text": "",
-    "on_topic": true,
-    "confidence": 0.84,
-    "reason": "The overflowing patch panel directly visualizes the article's mechanism of multiplying connections and pool overload, even though it is a network rather than database rack."
-  },
-  "source_hash": "sha256:6ff65d944a467614666a36a0449303a1",
-  "source_chars": 5170,
-  "task_id": "ce9c1c2bfd3c400cc3010ab9cac107fb",
-  "credits": 5.0,
-  "cost_ms": 50,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/ce9c1c2bfd3c400cc3010ab9cac107fb_1793731455622.jpg",
-  "provider_request": {
-    "model": "flux-2/pro-text-to-image",
-    "input": {
-      "prompt": "A low-angle cinematic still inside a server room: an industrial patch panel mounted on the right third of the frame, overloaded with hundreds of identical copper-sheathed cables, many pulled from their ports and spilling onto the concrete floor. A single warm work lamp from the left rakes across the panel, creating deep shadows and highlighting the tangled overflow. Graphite and bone white with copper accents. 35mm anamorphic lens, shallow depth of field, fine film grain, extreme asymmetry with negative space left. No people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
-      "aspect_ratio": "16:9",
-      "resolution": "1K"
-    }
-  },
-  "generated_at": "2026-11-03T18:44:23+00:00",
-  "overlay": {
-    "kicker": "DATABASE CONNECTION POOLS // MEMORY LIMIT",
-    "title": "POOL DEFAULTS MULTIPLY BY PODS",
-    "hook": "One pool per pod turns a setting into a memory drain",
-    "anchor": "bottom-left",
-    "light": true,
-    "scrim": 0,
-    "contrast": 5.55,
-    "target": 4.5,
-    "clutter": 0.214,
-    "region_rgb": [
-      72,
-      72,
-      68
-    ],
-    "binding_rgb": [
-      95,
-      95,
-      87
-    ],
-    "title_lines": [
-      "POOL DEFAULTS",
-      "MULTIPLY BY PODS"
-    ],
-    "subject": 0.222,
-    "ink_subject": 0.132,
-    "spike": 0.582,
-    "generated_at": "2026-11-03T18:44:23+00:00"
+ "slug": "your-pool-becomes-2000-connections",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Overloaded patch panel spilling copper cables onto a concrete floor in a server room",
+   "caption": "A single patch panel overflows with database connection cables, visualizing how a default pool setting multiplies across pods until memory runs out.",
+   "title": "Database Connection Pool Overflow Patch Bay",
+   "bytes": 402963,
+   "sha256": "sha256:c24930d45349237e9363723672668165"
   }
+ ],
+ "style": "cinematic_still",
+ "style_label": "Cinematic still",
+ "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "A low-angle cinematic still inside a server room: an industrial patch panel mounted on the right third of the frame, overloaded with hundreds of identical copper-sheathed cables, many pulled from their ports and spilling onto the concrete floor. A single warm work lamp from the left rakes across the panel, creating deep shadows and highlighting the tangled overflow. Graphite and bone white with copper accents. 35mm anamorphic lens, shallow depth of field, fine film grain, extreme asymmetry with negative space left. No people, no text, no logos.",
+ "negative_prompt": "garbled text, random lettering, watermarks, logos, UI elements",
+ "rationale": "Cinematic still captures the decisive moment of overflow in a real server environment, grounding the abstract connection multiplication in physical cables and a patch panel without resorting to a literal server rack of memory blades.",
+ "cue": "Your Pool Becomes 2,000: A Memory Trap",
+ "subject": "an industrial patch panel with hundreds of identical cables plugged in, many spilling out of the panel onto the floor",
+ "core_thesis": "A database connection is a server process holding a per-sort memory budget, and because each pod opens its own pool, a default copied from a library multiplies by pod count and exhausts the database memory after deploy.",
+ "core_conflict": "connection pool multiplication vs finite server memory budget",
+ "composition": "extreme asymmetry with the overflowing patch panel on the right third, leaving negative space to the left; low-angle establishing shot",
+ "alt_text": "Overloaded patch panel spilling copper cables onto a concrete floor in a server room",
+ "caption": "Pool Defaults Multiply By Pods: One pool per pod turns a setting into a memory drain.",
+ "title": "Pool Defaults Multiply By Pods",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 2,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-pool-becomes-2000-connections/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 385648,
+ "sha256": "sha256:537a087cf26bc36d8403c44e5aceea180b6e6f36cc2dfbc4afac85bd2cf2513c",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 385648,
+  "quality": 76,
+  "sha256": "sha256:537a087cf26bc36d8403c44e5aceea180b6e6f36cc2dfbc4afac85bd2cf2513c",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:0ffa394ab80e40032d75e1cfdd8a4806b81f3e76444e7ce604f374a45bcb437c",
+ "render_phash": "444c3e5c3e361e6c1e7c0e740c7e047e047f00fa047e0fbf059b018f003d383e",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A server rack with many copper-colored cables plugged into patch panels spills out and coils on a concrete floor, with a desk lamp glowing on the left.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.84,
+  "reason": "The overflowing patch panel directly visualizes the article's mechanism of multiplying connections and pool overload, even though it is a network rather than database rack."
+ },
+ "source_hash": "sha256:6ff65d944a467614666a36a0449303a1",
+ "source_chars": 5170,
+ "task_id": "ce9c1c2bfd3c400cc3010ab9cac107fb",
+ "credits": 5.0,
+ "cost_ms": 50,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/ce9c1c2bfd3c400cc3010ab9cac107fb_1793731455622.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "A low-angle cinematic still inside a server room: an industrial patch panel mounted on the right third of the frame, overloaded with hundreds of identical copper-sheathed cables, many pulled from their ports and spilling onto the concrete floor. A single warm work lamp from the left rakes across the panel, creating deep shadows and highlighting the tangled overflow. Graphite and bone white with copper accents. 35mm anamorphic lens, shallow depth of field, fine film grain, extreme asymmetry with negative space left. No people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-03T18:44:23+00:00",
+ "overlay": {
+  "kicker": "DATABASE CONNECTION POOLS // MEMORY LIMIT",
+  "title": "POOL DEFAULTS MULTIPLY BY PODS",
+  "hook": "One pool per pod turns a setting into a memory drain",
+  "anchor": "bottom-left",
+  "light": true,
+  "scrim": 0,
+  "contrast": 5.55,
+  "target": 4.5,
+  "clutter": 0.214,
+  "region_rgb": [
+   72,
+   72,
+   68
+  ],
+  "binding_rgb": [
+   95,
+   95,
+   87
+  ],
+  "title_lines": [
+   "POOL DEFAULTS",
+   "MULTIPLY BY PODS"
+  ],
+  "subject": 0.222,
+  "ink_subject": 0.132,
+  "spike": 0.582,
+  "generated_at": "2026-11-03T18:44:23+00:00"
+ }
 }

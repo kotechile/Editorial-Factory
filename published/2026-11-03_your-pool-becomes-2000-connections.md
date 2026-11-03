@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-pool-becomes-2000-connections/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Pool Defaults Multiply By Pods. Overloaded patch panel spilling copper cables onto a concrete floor in a server room"
+image_alt: "Overloaded patch panel spilling copper cables onto a concrete floor in a server room"
 image_caption: "Pool Defaults Multiply By Pods: One pool per pod turns a setting into a memory drain."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -57,18 +57,7 @@ Lowering the room per sort is not a cap either. It limits each sort, not the tot
 
 My read, held loosely: the defaults are the least durable part of this piece, since vendors re-tune them and hardware moves. What lasts is the math, and the habit of costing a connection against memory instead of counting it as a handle. The same shape shows up on the serving side, where [a graphics card runs out of cache before it runs out of math](/kv-cache-is-the-concurrency-ceiling/). The real decision is to budget the resource the work actually eats before a framework default makes that call.
 
-<!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your 15% Raise: A Memory Price Hike" -> /your-15-percent-raise-is-a-price-hike/ [same site (aichieve.net); same category; topical overlap: because, memory] Link "Your 15% Raise: A Memory Price Hike" in the section where the article touches because, memory. -->
-<!-- internal-link hint: "Silent Egress: Your Agent's 0-Click Leak" -> /your-agent-obeyed-the-data-left/ [same site (aichieve.net); same category; topical overlap: database] Link "Silent Egress: Your Agent's 0-Click Leak" in the section where the article touches database. -->
-<!-- internal-link hint: "Your 90-Day Key: Still Live" -> /your-90-day-key-is-two-live-keys/ [same site (aichieve.net); same category; topical overlap: every] Link "Your 90-Day Key: Still Live" in the section where the article touches every. -->
-## Related reading
-
-- [Your 15% Raise: A Memory Price Hike](/your-15-percent-raise-is-a-price-hike/) — more on Mental Models & Strategy
-- [Silent Egress: Your Agent's 0-Click Leak](/your-agent-obeyed-the-data-left/) — more on Mental Models & Strategy
-- [Your 90-Day Key: Still Live](/your-90-day-key-is-two-live-keys/) — more on Mental Models & Strategy
-<!-- internal-links:end -->
 
 <!-- tldr -->
 
@@ -77,6 +66,12 @@ My read, held loosely: the defaults are the least durable part of this piece, si
 - **The shift:** A connection is a process with a memory budget; pool size times pod count sets the ceiling.
 - **The number:** 2,000 connections from one copied pool setting [1].
 - **The risk:** The pooling mode that makes sharing work breaks session state an app may depend on.
+
+## Related reading
+
+- [Your 15% Raise: A Memory Price Hike](/your-15-percent-raise-is-a-price-hike/) — more on Mental Models & Strategy
+- [Silent Egress: Your Agent's 0-Click Leak](/your-agent-obeyed-the-data-left/) — more on Mental Models & Strategy
+- [Your 90-Day Key: Still Live](/your-90-day-key-is-two-live-keys/) — more on Mental Models & Strategy
 
 ## Sources
 
