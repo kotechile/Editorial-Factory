@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T12:39:46Z",
+  "updated_at": "2026-11-03T13:00:27Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5069,6 +5069,24 @@
       "date": "2026-11-02",
       "public": true,
       "url": "https://aichieve.net/your-trace-fails-as-an-alarm/"
+    },
+    {
+      "slug": "2026-11-03_your-128gb-laptop-2319-memory-bill",
+      "title": "Your 128GB Laptop: A $2,319 Memory Bill",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The price list hides two ladders",
+        "What the gigabyte is worth",
+        "By the numbers",
+        "The trade the ladder hides",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-03",
+      "public": false
     },
     {
       "slug": "2026-11-03_your-ai-roi-28-rising-28-stalled",

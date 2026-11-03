@@ -1,11 +1,11 @@
 ---
-title: "Your 128GB Rung Eats $2,319 of Memory"
+title: "Your 128GB Laptop: A $2,319 Memory Bill"
 vertical: workstation_compute_economics
 kind: news
 persona: infra_engineer
 one_big_thing: "Nvidia's laptop launch is two ladders stacked: below 48GB the chip is cut, and above it the price is a memory purchase against an index that rose 13.3% in thirty days — so the chip rung is the decision and the memory rung is a commodity you can price every morning."
 date: 2026-11-03
-slug: your-128gb-rung-eats-2319-of-memory
+slug: your-128gb-laptop-2319-memory-bill
 synthesis: true
 sources:
   - https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs
@@ -16,7 +16,7 @@ sources:
 
 <!-- lead -->
 
-On 31 October the median desktop DDR5 kit asked $18.12 a gigabyte, so 128GB of parts now costs $2,319 — after a year in which the memory shortage took that index up 88% [1]. The cheapest laptop Nvidia shipped on 16 October with that much unified memory costs $5,109 [2][3]. The two numbers are the same purchase read from opposite ends.
+On 31 October the median desktop DDR5 kit asked $18.12 a gigabyte, so 128GB of memory now carries a $2,319 bill in parts — after a year in which the shortage took that index up 88% [1]. The cheapest laptop Nvidia shipped on 16 October with that much unified memory costs $5,109 [2][3]. The two numbers are the same purchase read from opposite ends.
 
 <!-- tension -->
 
@@ -32,9 +32,9 @@ My read starts with the label. Nvidia's release names one local model for day on
 
 ## What the gigabyte is worth
 
-Memory is the one line in a local box that reprices while you own it. The index behind the first number reads 211 desktop DDR5 kits daily, reports the median and the mean, and publishes the thirty-day move: 13.3% higher on 31 October than on 1 October [1]. Nine of the last eleven monthly readings were rises. The two declines, in May and June, were each followed by four straight increases [1].
+My read starts with the one line in a local box that reprices while you own it. The index behind the first number reads 211 desktop DDR5 kits daily, reports the median and the mean, and publishes the thirty-day move: 13.3% higher on 31 October than on 1 October [1]. Nine of the last eleven monthly readings were rises. The two declines, in May and June, were each followed by four straight increases [1].
 
-That matters to a buying decision because the ladder sells two things at once. The chip rung is fixed at purchase and cannot be changed later by any firmware update or add-in card. The memory rung is a commodity with a public quote, and 64GB of it costs $1,160 as two retail kits at today's median [1]. A buyer who pays for the top step is buying the chip they needed plus memory at whatever the maker set before this month's move.
+That matters to a buying decision because the ladder sells two things at once. The chip rung is fixed at purchase and cannot be changed later by any firmware revision or add-in card. The memory rung is a commodity with a public quote, and 64GB of it costs $1,160 as two retail kits at today's median [1]. A buyer who pays for the top step is buying the chip they needed plus memory at whatever the maker set before this month's move.
 
 The priced alternative has its own clock. An H100 rents for a median $3.84 an hour across 39 providers, up 14% in four weeks and 29% in a year, while a three-year reservation runs about 48% below on-demand [4]. An H200, with 141GB, lists at $5.40 an hour on the dedicated clouds [4]. For a workload that peaks for a few weeks a year, the peak is the part to rent, and [the hourly price of memory is what moves that number](/gpu-hour-price-set-by-memory/).
 

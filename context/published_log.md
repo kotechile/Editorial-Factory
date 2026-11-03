@@ -282,6 +282,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-03 | nhil_infrastructure_ops | your-plant-was-1n-and-blind | Your Plant Was 1N and Blind | https://pressflow.aichieve.net/published/2026-11-03_your-plant-was-1n-and-blind.md | reader site only |
 | 2026-11-03 | enterprise_tech_leadership | your-ai-roi-28-rising-28-stalled | Your AI ROI Trap: 28% Both Ways | https://pressflow.aichieve.net/published/2026-11-03_your-ai-roi-28-rising-28-stalled.md | reader site only |
 | 2026-11-03 | smart_home_telemetry | your-leak-alert-24-hours-at-best | Your Leak Alert: A 24-Hour Gap | https://pressflow.aichieve.net/published/2026-11-03_your-leak-alert-24-hours-at-best.md | reader site only |
+| 2026-11-03 | workstation_compute_economics | your-128gb-laptop-2319-memory-bill | Your 128GB Laptop: A $2,319 Memory Bill | https://pressflow.aichieve.net/published/2026-11-03_your-128gb-laptop-2319-memory-bill.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,0 +1,112 @@
+{
+  "slug": "your-128gb-laptop-2319-memory-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An unbranded laptop half-open beside ascending DDR5 memory modules on a steel workbench, lit from left.",
+      "caption": "The top configuration is a memory purchase priced by the gigabyte, stacked against a fixed chip decision.",
+      "title": "Laptop Memory Price Ladder",
+      "bytes": 308958,
+      "sha256": "sha256:e66570c37f6294b1c780fd1a7ecf5664"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a brushed-steel workbench in a machine shop, an unbranded thin 16-inch laptop sits half-open at three-quarter angle, its display reflecting a single softbox key light from the left. To its right, five bare DDR5 memory modules are stacked as ascending steps, like a price ladder. Long contact shadows stretch right across graphite and slate grey steel, with one safety-yellow PCB edge accent. 85mm lens, shallow depth of field, fine film grain, asymmetric composition hero off-centre left and negative space right.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, UI, logos",
+  "rationale": "The story is about a purchasable laptop and its memory bill, so a studio product shot keeps the hero object tangible and legible. A single directional light and raised memory-rung stack communicate the price-ladder mechanism without generic datacenter imagery.",
+  "cue": "Your 128GB Laptop: A $2,319 Memory Bill",
+  "subject": "unbranded thin laptop with half-raised display beside a stepped row of DDR5 memory modules as price-ladder rungs on a brushed-steel workbench",
+  "core_thesis": "Nvidia's laptop launch is two ladders stacked: below 48GB the chip is cut, and above it the price is a memory purchase against an index that rose 13.3% in thirty days.",
+  "core_conflict": "Fixed silicon decision at purchase versus daily-quoted DDR5 commodity memory price, with the entry chip rung cut and the top rung a $2,319 memory bill.",
+  "composition": "asymmetric composition with hero laptop off-centre left, memory-rung stack rising toward upper-right, generous negative space right",
+  "alt_text": "NVIDIA 128Gb Laptop Memory Bill. An unbranded laptop half-open beside ascending DDR5 memory modules on a steel workbench, lit from left.",
+  "caption": "NVIDIA 128Gb Laptop Memory Bill: What a daily memory quote does to a top config's price.",
+  "title": "NVIDIA 128Gb Laptop Memory Bill",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-128gb-laptop-2319-memory-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 348150,
+  "sha256": "sha256:5b305c4d55de2888385d13631ca2162afeeae5cb20cd411de325ceb20ab4aff6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 348150,
+    "quality": 88,
+    "sha256": "sha256:5b305c4d55de2888385d13631ca2162afeeae5cb20cd411de325ceb20ab4aff6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:26ae08240478877fbe33d6f896d35ff12e166b89d1e121cc87a3cb47891afddb",
+  "render_phash": "b93bd33b7d39763a833f4d3f0d3fff3eb3a4ce70fb98fb0cff98f746fdc7fdcc",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An unbranded silver laptop with its display raised at a partial angle sits on a scratched brushed-metal workbench, with four upright DDR5 memory modules arranged in a stepped row to the right of the keyboard and blurred industrial machinery in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The frame shows the article's own two objects and mechanism \u2014 the laptop whose configuration is being priced and the memory modules standing as the ladder rungs of the memory-cost index \u2014 so a reader would recognise the subject of the headline."
+  },
+  "source_hash": "sha256:26de2ec1a25610dfa5ecb2978200dd46",
+  "source_chars": 4699,
+  "task_id": "d4592c008edbbdcf786303877f1d7291",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d4592c008edbbdcf786303877f1d7291_1793710735678.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "On a brushed-steel workbench in a machine shop, an unbranded thin 16-inch laptop sits half-open at three-quarter angle, its display reflecting a single softbox key light from the left. To its right, five bare DDR5 memory modules are stacked as ascending steps, like a price ladder. Long contact shadows stretch right across graphite and slate grey steel, with one safety-yellow PCB edge accent. 85mm lens, shallow depth of field, fine film grain, asymmetric composition hero off-centre left and negative space right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-03T12:59:05+00:00",
+  "overlay": {
+    "kicker": "NVIDIA LAPTOP // MEMORY PRICE",
+    "title": "NVIDIA 128GB LAPTOP MEMORY BILL",
+    "hook": "What a daily memory quote does to a top config's price",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.7,
+    "target": 4.5,
+    "clutter": 0.118,
+    "region_rgb": [
+      80,
+      82,
+      84
+    ],
+    "binding_rgb": [
+      90,
+      93,
+      98
+    ],
+    "title_lines": [
+      "NVIDIA 128GB LAPTOP",
+      "MEMORY BILL"
+    ],
+    "subject": 0.044,
+    "ink_subject": 0.019,
+    "spike": 0.148,
+    "generated_at": "2026-11-03T12:59:05+00:00"
+  }
+}
