@@ -39,6 +39,16 @@ Vertical-specific sources/angles come from `context/verticals.json` — never in
 > Fetched abstracts are the primary record; a publisher's own index page
 > (e.g. `uber.com/us/en/blog/engineering`) is what dates a first-party post whose page carries no
 > visible date in the extract.
+>
+> **`arxiv.org/html/<id>v1` is readable with a plain fetch, and it is where an anchor's own numbers live
+> (learned 2026-11-03).** The boilerplate note above is about the agent's web tools; a direct
+> `urllib.request` GET on `https://arxiv.org/html/<id>v1` (Chrome User-Agent, then strip tags) returns the
+> full paper text, which is the only way to verify figures an abstract rounds. On the 2026-11-03
+> `ai_observability_qa` run the abstract gave "18 of 19" while the body's Table II showed P1 stopping 11,
+> P2 refusing dispatch in 4 more and P3 stopping the remaining 3; the same paper's limitations section
+> disclosed a second 9.5-point finding that would have been merged with the first if the abstract were
+> the record. Fetch the HTML for every paper that becomes an anchor and write the body's own per-section
+> counts into the claim cell.
 
 > **Backend note (learned 2026-09-07):** the search backend may silently ignore `after:` / `since:`
 > date filters, returning an empty result set even on a healthy source (observed: a nearshoring

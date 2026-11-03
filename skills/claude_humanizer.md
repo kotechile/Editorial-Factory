@@ -250,6 +250,7 @@ prose "in conclusion / key takeaways" paragraph. The **TOC is render-time only**
 one.
 
 ## 7. Failure handling
+- **`article_reviewer.py` inserts a `<!-- numbers -->` marker the house set does not use, and removing it is the writer's job (learned 2026-11-03).** The five gated markers are `lead`, `tension`, `tactical-insight`, `nuanced-takeaway`, `tldr`; a `<!-- numbers -->` line above `## By the numbers` is harmless to `verify.sh` (it checks presence, not the set) but it splits the marker set the Stylist and the shape reader iterate on, so the numbers block then counts inside `<!-- tension -->`. Delete it in the same hand-repair pass that restores `lead_ok` — the same run also lost "adds" and "silent" from the lead and used the jargon token "SELECT" ("selected"), so re-score the title against the FINAL body and re-run `check_accessibility` before the gates.
 - **A PASS is not a preservation check: the rewrite re-derives the title from `slug:` and may deflate a
   verified figure (learned 2026-11-02).** A synthesis draft PASSed attempt 1 at Flesch 50.7 from a
   1,261-word draft (98% of it, so no shrink tripwire) and still replaced a 100/100 hand-scored title
