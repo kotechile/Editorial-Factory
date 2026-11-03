@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T18:08:51Z",
+  "updated_at": "2026-11-03T18:18:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5134,6 +5134,25 @@
       "date": "2026-11-03",
       "public": true,
       "url": "https://aichieve.net/your-ai-roi-28-rising-28-stalled/"
+    },
+    {
+      "slug": "2026-11-03_your-backup-66-mw-permit-trap",
+      "title": "Your Backup's 6.6 MW Permit Trap",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Three lines decide the permit",
+        "The hours you trade",
+        "By the numbers",
+        "What the ladder pushes operators toward",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-03",
+      "public": false
     },
     {
       "slug": "2026-11-03_your-dedupe-cut-f1-by-74",
