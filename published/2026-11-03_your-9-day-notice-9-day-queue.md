@@ -12,6 +12,12 @@ sources:
   - https://www.freightwaves.com/news/backlog-grows-as-35000-containers-await-rail-service-at-la-long-beach
 meta_title: Your 9-Day Notice, 9-Day Queue
 meta_description: A 250-person watchmen dispute at eight Los Angeles and Long Beach gates arrived with nine days of notice, in front of a rail queue already nine days deep.
+image_path: "context/assets/illustrations/your-9-day-notice-9-day-queue/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A rail well car carrying a container stopped behind a lowered gate boom at a terminal."
+image_caption: "A loaded container sits on a rail car behind a lowered gate barrier at a marine terminal."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -64,6 +70,15 @@ Both ports also moved record volumes in September without the congestion that br
 
 What I cannot verify from outside is what happens to event feeds during a gate stop. A control tower built on carrier events records a gate-in when a truck enters and a gate-out when it leaves, and a closed gate produces neither. Silence is the one input most exception rules were never written to escalate on, which is why the depth of the queue matters more than the countdown. That is the decision point I'd want to nail down before the deadline. A stoppage that produces no events still starts the billing clocks. [The two 30-day clocks on a late container's bill](/demurrage-invoice-30-day-clocks/) decide whether the charge that lands a month from now stands at all.
 
+
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** A gate dispute at Los Angeles and Long Beach now lands in front of a rail queue already nine days deep.
+- **The number:** 10,562 rail-bound containers were nine days old on 26 October, the original notice window [4].
+- **The risk:** A nine-day warning cannot move a box stuck in a seven-day-plus rail cycle.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -76,14 +91,6 @@ What I cannot verify from outside is what happens to event feeds during a gate s
 - [Coast-to-Coast Rail Merger Clears First Big Test](/up-ns-rail-merger-clears-summary-denial/) — more on Supply Chain & Operations
 - [Dock Overtime: Your Real 14-Hour Cost](/hour-14-recovery-wall/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** A gate dispute at Los Angeles and Long Beach now lands in front of a rail queue already nine days deep.
-- **The number:** 10,562 rail-bound containers were nine days old on 26 October, the original notice window [4].
-- **The risk:** A nine-day warning cannot move a box stuck in a seven-day-plus rail cycle.
 
 ## Sources
 

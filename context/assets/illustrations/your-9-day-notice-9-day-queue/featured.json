@@ -1,0 +1,116 @@
+{
+  "slug": "your-9-day-notice-9-day-queue",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Rail well car carrying a shipping container halted before a lowered terminal gate boom with a blank paper notice clipped to the gate post.",
+      "caption": "A nine-day notice meets a rail queue already nine days deep: the container sits behind the gate the notice cannot move.",
+      "title": "Nine-Day Notice, Nine-Day Queue Clay Diorama",
+      "bytes": 280277,
+      "sha256": "sha256:268283f284502390f1821701cac89250"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D diorama on a weathered concrete container-terminal floor: a corrugated steel shipping container rests on an intermodal rail well car, stopped on a short section of rail track, with a lowered yellow-and-black striped gate boom crossing the track just ahead of it and a blank paper notice clipped to the gate post. One hard directional key light rakes from the left, casting long contact shadows across the concrete. Bone white, graphite, safety yellow. Extreme asymmetry: the railcar sits off-centre left, the gate boom enters from right, generous empty right margin. Visible clay seams, matte muted surfaces, no text, no logos, no people.",
+  "negative_prompt": "garbled text, random letters, watermarks, legible words",
+  "rationale": "The story is structural and systemic: a timed notice colliding with an already-deep rail queue. A clay render can state that collision as a physical assembly of recognizable engineered parts\u2014railcar, container, gate, notice\u2014without literal stock or abstract shapes.",
+  "cue": "a nine-day notice cannot move a rail-destined box",
+  "subject": "A corrugated steel shipping container on an intermodal rail well car, stalled before a lowered terminal gate boom with a blank paper notice clipped to the gate post.",
+  "core_thesis": "A strike warning is only worth the retrieval cycle it has to work through: a nine-day notice cannot move a rail-destined box that was already nine days old when the notice arrived.",
+  "core_conflict": "notice lead time versus rail-destined container dwell and retrieval cycle at a shared terminal gate",
+  "composition": "Extreme asymmetry with the stalled railcar off-centre left and the gate boom entering from right, generous negative space.",
+  "alt_text": "A rail well car carrying a container stopped behind a lowered gate boom at a terminal.",
+  "caption": "A loaded container sits on a rail car behind a lowered gate barrier at a marine terminal.",
+  "title": "LA-LB Strike Notice, 9-DAY Queue",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-9-day-notice-9-day-queue/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 334010,
+  "sha256": "sha256:b0d6806449215687046fadfb6049b9d200cd95f30c88e98146328cb4178a1bf6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 334010,
+    "quality": 88,
+    "sha256": "sha256:b0d6806449215687046fadfb6049b9d200cd95f30c88e98146328cb4178a1bf6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:adf70c9c88b43b9a22f854aabad2e205aabbdc10f3a7271c9f19bc0a41d0fab8",
+  "render_phash": "42803e0078206a206e4069a06f21cf11d9048944894801118620c8c0c100e600",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A beige corrugated steel shipping container sits loaded on an intermodal rail well car on a short section of track set atop a concrete slab, with a yellow-and-black striped barrier and a low post holding a blank white paper notice standing beside the rails.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The frame shows the article's own mechanism \u2014 a rail-destined container stalled at a barrier with a notice posted against it \u2014 which a reader would connect to a notice-versus-queue story, though the gate boom is rendered as a striped barrier block rather than a lowered boom."
+  },
+  "source_hash": "sha256:bdacab30a97bb2eee0a1d8c221beaca1",
+  "source_chars": 4513,
+  "task_id": "05c490019d3012f4c2acd19c133a5a13",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6fe6c401c677082992e5a274247e47c8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D diorama on a weathered concrete container-terminal floor: a corrugated steel shipping container rests on an intermodal rail well car, stopped on a short section of rail track, with a lowered yellow-and-black striped gate boom crossing the track just ahead of it and a blank paper notice clipped to the gate post. One hard directional key light rakes from the left, casting long contact shadows across the concrete. Bone white, graphite, safety yellow. Extreme asymmetry: the railcar sits off-centre left, the gate boom enters from right, generous empty right margin. Visible clay seams, matte muted surfaces, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-03T13:30:17+00:00",
+  "overlay": {
+    "kicker": "WATCHMEN STRIKE // LA-LB RAIL QUEUE",
+    "title": "LA-LB STRIKE NOTICE, 9-DAY QUEUE",
+    "hook": "A nine-day notice can't move boxes already nine days deep",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 8.93,
+    "target": 4.5,
+    "clutter": 0.06,
+    "region_rgb": [
+      218,
+      212,
+      193
+    ],
+    "binding_rgb": [
+      220,
+      213,
+      195
+    ],
+    "title_lines": [
+      "LA-LB STRIKE",
+      "NOTICE, 9-DAY QUEUE"
+    ],
+    "subject": 0.016,
+    "ink_subject": 0.006,
+    "spike": 0.054,
+    "generated_at": "2026-11-03T13:30:17+00:00"
+  }
+}
