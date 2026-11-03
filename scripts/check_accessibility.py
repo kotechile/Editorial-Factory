@@ -32,6 +32,14 @@ RHYTHM_MEAN_MIN = 14.5    # mean words per sentence, below which the body reads 
 RHYTHM_SHORT_MAX = 20.0   # % of sentences at RHYTHM_SHORT_WORDS or fewer
 RHYTHM_SHORT_WORDS = 8
 
+# Figure load (advisory). A piece can clear Flesch 60 and still be unreadable because every prose
+# sentence is a step in a chain of arithmetic: measured on the 269 published artifacts, the median
+# share of prose sentences carrying a figure was 41%, and 95 of them sat above 45% (worst: 89%).
+# That is the "the numbers are right but the text does not flow" failure the owner reports, and
+# Flesch cannot see it: numbers are short, low-syllable words, so a derivation dump SCORES WELL.
+# Prose only — the "By the numbers" bullets are where figures belong and are excluded.
+FIGURE_DENSITY_MAX = 45.0  # % of prose sentences carrying a figure
+
 # Acronyms that are universally understood and do not need a definition for a general reader.
 # Everything else, if left undefined at first use, is a FAIL. This is what makes the gate
 # topic-agnostic: any new domain acronym must be spelled out once.
@@ -179,19 +187,32 @@ def check_smart_brevity(raw_text, body_text):
     if long_paras > 0:
         warns.append(f"Smart Brevity: {long_paras} paragraph(s) > 6 sentences (aim for 3-5, max 6)")
 
-    # 3. Context signposts & By the numbers
+    # 3. Section headers, and the figures block. The old rule demanded the four fixed signposts
+    #    ("The big picture:", "By the numbers", "What I'd watch:", "The catch") on every article, and
+    #    a mandatory bold-stat block on every article. That is what made the corpus read like a deck:
+    #    owner, 2026-11-03 — "less smart brevity in favour of an interesting, easy to read story".
+    #    A section header is now any H2 the article writes for itself; the markers, not the words,
+    #    are what the pipeline needs.
     signpost_patterns = [
-        r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*", r"##\s*The big picture:?", r"##\s*By the numbers:?", r"##\s*The catch:?",
+        r"^##\s+\S",                                                   # any H2, narrative included
+        r"\*\*Why it matters:\*\*", r"\*\*The big picture:\*\*", r"\*\*By the numbers:\*\*",
         r"\*\*Where this bites:\*\*", r"\*\*What I(?:'d| would) watch:\*\*",
-        r"\*\*The catch:\*\*",
-        r"\*\*Between the lines:\*\*", r"\*\*Yes, but:\*\*", r"\*\*Go deeper:\*\*", r"\*\*What's next:\*\*"
+        r"\*\*The catch:\*\*", r"\*\*Between the lines:\*\*", r"\*\*Yes, but:\*\*",
+        r"\*\*Go deeper:\*\*", r"\*\*What's next:\*\*",
     ]
-    has_signposts = any(re.search(pat, raw_text, re.I) for pat in signpost_patterns)
+    has_signposts = any(re.search(pat, raw_text, re.I | re.M) for pat in signpost_patterns)
     if not has_signposts:
-        warns.append("Smart Brevity: no bold context signposts found (**Why it matters:**, **The big picture:**, etc.)")
+        warns.append("Smart Brevity: no section headers found — give each section an H2, in words "
+                     "this article would use")
 
+    # The figures block is earned, not mandatory: an article that carries its numbers inside the
+    # sentences that use them does not need a bullet table repeating them.
     if not re.search(r"(?:##\s*By the numbers|\*\*By the numbers:\*\*)", raw_text, re.I):
-        warns.append("Smart Brevity: missing mandatory '**By the numbers:**' section with bulleted stats")
+        body_figures = len(re.findall(r"(?:\$\s?\d|\b\d[\d,\.]*\s?(?:percent|%|watts?|kWh|hours?|days?))",
+                                      raw_text))
+        if body_figures < 2:
+            warns.append("Smart Brevity: no figures at all — the piece needs either a numbers block "
+                         "or its figures inside the prose that uses them")
 
     return warns
 
@@ -212,6 +233,26 @@ def rhythm(text):
     mean = round(sum(lens) / len(lens), 1)
     short = round(100.0 * sum(1 for x in lens if x <= RHYTHM_SHORT_WORDS) / len(lens), 1)
     return mean, short
+
+
+def figure_load(text):
+    """Share of PROSE sentences that carry a figure, and the prose sentence count.
+
+    Prose = paragraphs that are not a bullet, heading, quote, table or image. The mandatory
+    "By the numbers" block is bullets, so it is not counted — figures belong there. What this
+    measures is the rest: paragraphs whose every sentence is another step of a derivation.
+    Returns (pct, n) or (None, 0) when the body has no prose.
+    """
+    sents = []
+    for para in re.split(r"\n\s*\n", text):
+        p = para.strip()
+        if not p or p[0] in "#-*>|!":
+            continue
+        sents += [s.strip() for s in re.split(r"(?<=[.!?])\s+", p) if len(s.split()) > 3]
+    if not sents:
+        return None, 0
+    carrying = sum(1 for s in sents if re.search(r"\d", s))
+    return round(100.0 * carrying / len(sents), 1), len(sents)
 
 
 def measure(path, target=TARGET, floor=FLOOR):
@@ -251,6 +292,14 @@ def measure(path, target=TARGET, floor=FLOOR):
         warns.append(f"rhythm: {short_pct}% of sentences are {RHYTHM_SHORT_WORDS} words or fewer "
                      f"(cap {RHYTHM_SHORT_MAX}%) — the body reads as a run of one-liners")
 
+    # Figure load (advisory): the same failure in the other direction. Flesch rewards digits, so a
+    # derivation chain scores well while reading like a worksheet — the arithmetic is right and the
+    # reader stops following. The remedy is a sentence without a number, not a smaller figure.
+    fig_pct, fig_n = figure_load(text)
+    if fig_pct is not None and fig_pct > FIGURE_DENSITY_MAX:
+        warns.append(f"figure load: {fig_pct}% of prose sentences carry a figure "
+                     f"(cap {FIGURE_DENSITY_MAX}%) — give the meaning its own sentence without a number")
+
     # Keyword-stuffing guard (topic-agnostic: reads the article's own primary_keyword).
     kw, kw_count = _keyword_density(path, text)
     if kw:
@@ -269,6 +318,7 @@ def measure(path, target=TARGET, floor=FLOOR):
         "flesch": score, "target": target, "floor": floor,
         "words": w, "sents": s, "long_word": long_rate,
         "sentence_mean": mean_len, "short_sent_pct": short_pct,
+        "figure_pct": fig_pct, "figure_sents": fig_n,
         "undefined_acronyms": undef, "jargon": jarg,
         "primary_keyword": kw, "keyword_count": kw_count,
         "warnings": warns, "fails": fails,

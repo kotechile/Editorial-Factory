@@ -62,6 +62,9 @@ MARKERS = ("<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
 
 SKELETON = ("## The big picture:", "## By the numbers", "## What I'd watch:", "## The catch",
             "## At a glance")
+# The five marked sections must survive a rewrite; their HEADINGS need not. The fixed labels above are
+# the house fallback — an article that writes its own headers is not a lost skeleton (owner, 2026-11-03:
+# "less smart brevity in favour of an interesting, easy to read story").
 
 
 # --------------------------------------------------------------------------------------- the call
@@ -172,9 +175,12 @@ PRIORITIES, in this order. A lower one never buys the higher one.
    clipping sentences. Expand every acronym once, at its first use in the body — "Automatic
    Identification System (AIS)" or "AIS (the ship-tracking signal)". Never invent an expansion for a
    product or system name; rephrase to drop the all-caps token instead.
-5. SHAPE. The house skeleton, in this order, on its own lines with a blank line either side:
-   {', '.join(SKELETON)}. "What I'd watch" reports what the people closest to the story are doing
-   and what answers the open question next — never a playbook for the reader.
+5. SHAPE. The five marked sections, in this order, each with an H2 on its own line and a blank line
+   either side: {', '.join(SKELETON)}. Those are the fallback headings — prefer a header in this
+   article's own words that says what the section argues, and keep any numbers block only where the
+   piece is genuinely a table of figures. The tactical section reports what the people closest to
+   the story are doing and what answers the open question next — never a playbook for the reader,
+   and never a bullet list where three sentences would read better.
 
 DO NOT LOSE — the measured facts of this draft. Each line is a figure and the sentence it came from;
 every one must still be made, in your own words:

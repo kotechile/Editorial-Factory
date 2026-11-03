@@ -116,5 +116,68 @@ def test_rhythm_is_advisory_and_never_holds_a_publish(tmp_path):
     assert diag["verdict"] == "PASS"
 
 
+# --- figure load: the failure Flesch rewards ------------------------------------------------
+# Digits are short, low-syllable words, so a paragraph that walks the reader through a derivation
+# scores WELL on Flesch while reading like a worksheet. Measured on the published corpus, the
+# median share of prose sentences carrying a figure was 41% and 95 of 269 sat above 45%. These
+# fixtures pin the measure: a derivation chain trips it, a body where the meaning gets its own
+# sentence does not, the "By the numbers" bullets are never counted, and it stays advisory.
+
+DERIVATION = """---
+title: Standby draw
+---
+
+The household bought 10,791 kilowatt-hours in 2022. Five percent of that is 540 kilowatt-hours.
+Holding one watt for a year takes 8.76 kilowatt-hours. Divide 540 by 8.76 and the answer is
+61.6 watts. Forty chargers at 0.5 watts draw 20 watts. That is a third of 540 kilowatt-hours.
+The high end is 1,079 kilowatt-hours, which is 123 watts of continuous draw all year long.
+"""
+
+MEANING_FIRST = """---
+title: Standby draw
+---
+
+The household bought 10,791 kilowatt-hours in 2022, and the idle share of that is a steady draw
+of about 62 watts running every hour of the year. Picture one old bulb left on in an empty room,
+because that is the size of the thing nobody switched on. The obvious culprits, the wall
+chargers, were capped at half a watt each in 2008. Forty of them now add up to a fraction of
+the load the lab measures, so the hunt has to go where the whole watts are. That is the set-top
+box, the receiver, and the old chest freezer in the basement. None of them is on a guide's list
+of things to unplug. All of them are warm to the touch long after the room has gone dark.
+"""
+
+
+def test_derivation_chain_trips_the_figure_advisory(tmp_path):
+    diag = ca.measure(_write(tmp_path, "d.md", DERIVATION))
+    assert any("figure load:" in w for w in diag["warnings"]), diag["warnings"]
+    assert diag["figure_pct"] > ca.FIGURE_DENSITY_MAX
+
+
+def test_meaning_first_prose_does_not_trip_the_figure_advisory(tmp_path):
+    diag = ca.measure(_write(tmp_path, "m.md", MEANING_FIRST))
+    assert not any("figure load:" in w for w in diag["warnings"]), diag["warnings"]
+    assert diag["figure_pct"] <= ca.FIGURE_DENSITY_MAX
+
+
+def test_numbers_bullets_are_not_counted_as_prose(tmp_path):
+    """The mandated 'By the numbers' block is where figures belong; counting it would flag every
+    article that has one."""
+    bullets = MEANING_FIRST + """
+## By the numbers
+
+- **62 to 123 watts — Always-on load:** The lab's share works out to a steady draw.
+- **$93 to $187 — Annual cost:** The same band priced at the 2025 average rate.
+- **$1.56 — One watt a year:** The lab's own rule, re-priced at today's rate.
+"""
+    diag = ca.measure(_write(tmp_path, "b2.md", bullets))
+    assert diag["figure_pct"] == ca.measure(_write(tmp_path, "m2.md", MEANING_FIRST))["figure_pct"]
+
+
+def test_figure_load_is_advisory_and_never_holds_a_publish(tmp_path):
+    diag = ca.measure(_write(tmp_path, "d2.md", DERIVATION))
+    assert not [f for f in diag["fails"] if "figure" in f]
+    assert diag["verdict"] == "PASS"
+
+
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q"]))

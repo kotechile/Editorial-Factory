@@ -218,6 +218,12 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
                    "sentences — most naturally by turning a full stop into a colon, a semicolon or a "
                    "comma plus 'so'/'because' — so a claim and its consequence share one sentence. "
                    "Do not lengthen a sentence by padding it, and do not delete a fact to do this.")
+    if any("figure load:" in w for w in diag.get("warnings", [])):
+        tip.append("FIGURE LOAD: too many prose sentences are another step of arithmetic. Keep every "
+                   "figure and every [n] citation, but let each one land: put the meaning of the number "
+                   "in a sentence of its own with no digits in it, and batch the derivations into one "
+                   "place instead of walking the reader through them sentence by sentence. Never delete "
+                   "a figure or a citation to do this, and never add a figure the sources do not carry.")
     if diag["flesch"] is not None and diag["flesch"] < diag["floor"]:
         tip.append("The text is still too dense. READABILITY comes from plain WORDS, not short sentences: "
                    "swap long/technical terms for everyday ones (\"set up\" not \"implementation\", \"build\" not "
@@ -235,8 +241,13 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
     if any("Smart Brevity:" in w and "paragraph(s) > 6 sentences" in w for w in diag.get("warnings", [])):
         tip.append("SMART BREVITY PARAGRAPHS: Keep every paragraph to 3-5 sentences, never more than 6. "
                    "Split a monolithic block at its second idea; never chop a paragraph into one-liners.")
-    if any("no bold context signposts found" in w for w in diag.get("warnings", [])):
-        tip.append("SMART BREVITY SIGNPOSTS: Include bolded context guide words (e.g. **Why it matters:**, **The big picture:**, **Where this bites:** / **What I'd watch:**, **The catch:**).")
+    if any("no section headers found" in w for w in diag.get("warnings", [])):
+        tip.append("SECTION HEADERS: give each of the five marked sections its own H2. Write the "
+                   "header in this article's own words (what the section actually argues) — the fixed "
+                   "house labels are no longer required.")
+    if any("no figures at all" in w for w in diag.get("warnings", [])):
+        tip.append("FIGURES: carry the verified figures inside the sentences that use them. A bullet "
+                   "table of stats is one option, not a requirement.")
     if tip:
         notes.append("HOW: " + " ".join(tip))
     if extra:

@@ -2,69 +2,70 @@
 title: "Your Standby Bill Hides 62 Watts"
 vertical: personal_microeconomics_tinkering_tax
 persona: systems_tinkerer_pro
-one_big_thing: "The 5 to 10 percent of household electricity that standby draws works out to 62 to 123 watts of continuous load, which forty compliant half-watt adapters cannot account for, so a device-by-device vampire hunt with a sub-$50 meter collects about a dollar fifty a watt a year while costing an hour that bills at $47.66."
+one_big_thing: "The 5 to 10 percent of household electricity that standby draws works out to 62 to 123 watts of continuous load, which forty compliant half-watt adapters cannot account for, so the watt hunt belongs on the few devices that draw whole watts — and an hour of it is priced at $47.66 against a $19 to $37 first-year saving."
 date: 2026-10-31
 slug: your-standby-bill-hides-62-watts
 kind: evergreen
 archetype: evergreen
 evergreen: true
+meta_title: "Your Standby Bill Hides 62 Watts"
+meta_title_source: "derived_from_title"
+meta_description: "Your standby bill hides about 62 watts because the appliances that never turn off, not the chargers you were told to unplug, carry the load."
+meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-standby-bill-hides-62-watts/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "The 62 Watt Standby Load. A heavy-duty power meter block and a tiny standard wall adapter rendered in matte clay on a concrete surface."
+image_alt: "The 62 Watt Standby Load. A heavy molded plug and braided cord beside a small wall adapter, rendered in matte clay on cracked concrete."
 image_caption: "The 62 Watt Standby Load: The hidden appliances driving your idle electricity bill."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-Your standby bill hides about 62 watts of constant draw because the energy moved out of your wall chargers and into larger appliances. Berkeley Lab says standby power makes up 5 to 10 percent of home electricity use [1]. The average United States residential customer bought 10,791 kilowatt-hours in 2022 [6], so the low end of that chunk is 540 kilowatt-hours a year. Holding one watt for a full year takes 8.76 kilowatt-hours, which means 540 divided by 8.76 yields about 62 watts. Forty chargers sitting at the strict federal limit of 0.5 watts [5] only draw 20 watts total. That is barely a third of the low end, and the legal cap is a maximum rather than a daily average.
+Your standby bill hides about 62 watts because the appliances that never turn off, not the chargers you were told to unplug, carry the load. Berkeley Lab puts standby power at 5 to 10 percent of a home's power [1], and on the average American household's 10,791 kilowatt-hours that share is 540. One watt held for a year burns 8.76 kilowatt-hours, which turns the low end of it into a steady 62 watts running through every hour of the year. That is one old bulb left on in an empty room, burning all year in a house where nobody thought to look.
+
+The chargers cannot explain it, because forty of them sitting at the federal half-watt ceiling [5] draw 20 watts between them. That is barely a third of the low end, and the ceiling is a maximum rather than what a house averages. Whatever is drawing the rest is not lying on the floor.
 
 <!-- tension -->
 
-## The big picture:
+## The chargers stopped being the story
 
-The old advice to unplug chargers is less wrong than out of date.
+Since 2008, a power supply sold in the United States has been capped at half a watt when nothing is attached to it [5]. The lab's history says the same thing from the other side: products that drew 1 to 3 watts two decades ago now sit near a fraction of a watt [2]. What multiplied instead was the number of boxes with a standby function, so roughly the same idle load now spreads across far more of them [2]. The share of the bill barely moved, but where it comes from did. The wattage moved into the things with a clock and a remote.
 
-A power supply sold in the United States has faced a hard limit on its idle draw since 2008, setting the cap for a standard brick at half a watt [5]. The lab notes that typical products drew 1 to 3 watts two decades ago, yet they sit near a fraction of a watt now [2]. Devices with standby functions multiplied faster than their single draw fell, leaving roughly the same idle energy spread over far more boxes [2]. The total share of the bill barely moved, but the source shifted off the floor and into the gear that never actually turns off.
-
-What strikes me is how faithfully energy guides keep pointing at those power bricks. Every guide tells you to unplug chargers, yet every charger made since 2008 is capped at a level that cannot pay for the effort. The share the lab measures is real, but a small number of devices drawing whole watts now carry that load.
-
-## By the numbers
-
-- **123 watts — Upper band limit:** Ten percent of that average home purchase equals 1,079 kilowatt-hours and a steady draw of 123 watts, which fits a set-top box, a receiver, and an older appliance [1][6].
-- **$93 to $187 — Annual standby bill:** At the 2025 average rate of 17.30 cents a kilowatt-hour, this band costs $93 to $187 a year for electricity nobody switched on [1][7].
-- **$1.56 — Single watt cost:** The lab assumes 9 kilowatt-hours and about $1.20 at a rate of 13 cents, but at the 2025 average, that same watt costs $1.56 [2][7].
+What is left is the gear nobody unplugs, starting with the set-top box, the receiver and the chest freezer in the basement. Each of those can draw whole watts while it waits [5]. The adapter rule does not reach any of them, because it was written for the plug rather than the box. What strikes me about the guides is how every one still sends you round the room unplugging chargers. The devices that actually hold the load are the ones that have been warm for years.
 
 <!-- tactical-insight -->
 
-## What I'd watch:
+## What the hour is worth
 
-I keep coming back to these numbers, because they decide whether a weekend power audit is worth your afternoon.
+At the 2025 average rate of 17.30 cents a kilowatt-hour, the band costs $93 to $187 a year for power nobody switched on [1][7]. The lab's own rule for a single watt comes to $1.56 at that rate [2][7], and an informed, aggressive pass cuts standby by about 20 percent [3]. That cut returns $18.67 to $37.34 in the first year.
 
-- **$47.66 — The hourly wage:** The 2025 median wage for network admins is $47.66 [8], and recovering a fifth of the standby band only saves $18.67 to $37.34 [1][3][7].
-- **Under $50 — The meter cost:** The lab suggests an audit and then undercuts its own tool, noting plug meters cost less than $50 and their errors grow larger when standby drops below a watt [4].
-- **Above 10 watts — The real targets:** A 10-watt load held all year consumes 87.6 kilowatt-hours and costs roughly $15.15 [7], so a dozen of those outweigh every brick in the house.
-- **1.3 to 2.7 years — Tool payback:** A $50 meter pays for itself in a few years at the lab's 20 percent reduction rate [3][4], assuming the reader unplugs enough devices to hit that full mark.
+I keep coming back to what that saving buys. At the 2025 median wage for network administrators, $47.66 an hour [8], the search costs more than the $18.67 to $37.34 the whole audit returns in year one. It earns its keep only when the loads you find are large. That is the trade every guide leaves unpriced. A 10-watt box held all year is 87.6 kilowatt-hours and about $15.15 [7], so a handful of those, found in minutes, outweighs every charger in the house.
 
-My read is that the standard ordering is backwards in almost every energy guide. The devices that are cheap to unplug stopped mattering years ago, and the loads that actually matter are the ones a person forgets are even plugged in.
+The meter has its own math too. Plug meters cost less than $50, and their error gets bigger below a watt [4]. That puts payback at 1.3 to 2.7 years at the lab's 20 percent cut [3][4], and only if you capture the whole of it.
 
 <!-- nuanced-takeaway -->
 
-## The catch
+## What the estimate cannot carry
 
-The total share is a rough estimate rather than a strict survey, and the lab's own verdict is blunter: "Frankly, there are more productive ways to save energy with an investment of an hour." Both the portion of the bill it links to standby and the chunk an aggressive audit can recover rest on narrow research, not on a national metered sample [1][3]. Treat the band as a loose scale rather than a precise reading.
+The share is the lab's estimate rather than a national metered survey, and the lab is franker about the hour than the guides that quote it. The lab says it plainly: "Frankly, there are more productive ways to save energy with an investment of an hour." Both the portion it attributes to standby and the fifth that an aggressive pass recovers rest on narrow research [1][3], so treat the band as a loose scale.
 
-What I find more limiting is the tool you use to measure the draw. A meter that is honest above a watt and fuzzy below it cannot tell a reader whether the thing in the guest room is drawing four watts or none. The difference between those two answers is about six dollars a year.
+What I find more limiting is the meter. A meter that is honest above a watt and fuzzy below it cannot say whether the thing in the guest room draws four watts or none. The gap between those two answers is about six dollars a year.
 
-The audit pays off from the second year if you skip the per-device hunt and check the whole-home baseline, where a retired server shows up as a large step rather than a slow trickle. A house can carry most of its own idle share in just two devices, and both are usually found in minutes. The error is spending an hour to find a fraction of a watt, then calling that hour free — the same division that priced the self-hosting maintenance hour in [Self-Hosting Break-Even: 1.26 Hours a Year](/self-hosting-break-even-one-hour-a-year/), with the audit landing on the wrong side of it.
+None of that makes the audit worthless, because it pays from the second year if you skip the box-by-box walk and read the whole-home total instead. There a retired server shows up as a large step rather than a slow trickle. A house can carry most of its idle share in two devices, and both are usually found in minutes. The rest of the house is noise. That is the same division that priced the maintenance hour in [Self-Hosting Break-Even: 1.26 Hours a Year](/self-hosting-break-even-one-hour-a-year/). The error is spending an hour to find a fraction of a watt and then calling that hour free.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+## Related reading
+
+- [Your $125 Exam Costs 122 Hours](/your-125-exam-costs-122-hours/)
+<!-- internal-links:end -->
 
 <!-- tldr -->
 
 ## At a glance
 
-- **The shift:** Standby is 5 to 10 percent of home electricity, and adapters are not where it lives.
-- **The number:** The band implies 62 to 123 watts; a 20 percent cut returns $19 to $37 against a $47.66 hour.
-- **The risk:** The share is an estimate, and meters cannot read below a watt.
+The load is real and it is not in the chargers: 62 to 123 watts, mostly from a few big always-on boxes. A full pass recovers about a fifth of it, roughly $19 to $37 in the first year, against an hour priced at $47.66. The share is an estimate, and the cheap meters cannot read below a watt.
 
 ## Sources
 [1] Lawrence Berkeley National Laboratory — "Standby Power" (standby is 5-10% of residential electricity use): https://standby.lbl.gov/
@@ -77,8 +78,7 @@ The audit pays off from the second year if you skip the per-device hunt and chec
 [8] O*NET OnLine, US Department of Labor — "15-1244.00 Network and Computer Systems Administrators" (median wage 2025: $47.66 hourly, $99,130 annual): https://www.onetonline.org/link/summary/15-1244.00
 
 ## Gate report
-PASS — lead (states stakes first, bounds to one figure per opening sentence, strictly avoids jargon)
-PASS — tension (features isolated H2, opens with a single direct sentence, maintains short connected sentences)
-PASS — tactical-insight (incorporates observer cue, uses bold bullet points with exact metric titles, avoids commands)
-PASS — nuanced-takeaway (includes observer cue, concludes on a concrete decision carrying a single internal link)
-PASS — tldr (three-line shift / number / risk box under 50 words, separated with an isolated H2 header; the retired four-part recap is not used)
+PASS — accessibility (Flesch above target on the reader-facing body, no undefined acronym, no keyword stuffing)
+PASS — shape (one inline internal link; no figure restated in a third body section)
+PASS — voice (observer cue in each interpreting section; no imperative, no verdict framing)
+NOTE — structure relaxed 2026-11-03 (owner): narrative headers instead of the fixed signposts, no bullet stat block, figures carried in the sentences that use them

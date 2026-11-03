@@ -28,17 +28,18 @@ SMART BREVITY STYLING PRINCIPLES:
    - Title: Start from the draft title and polish/refine for punchy clarity and SEO resonance without clickbait fluff or cryptic jargon. When frontmatter defines `primary_keyword:`, the `title:` and `meta_title:` MUST explicitly contain the primary keyword (preserving proper/canonical casing, e.g. "<Keyword>: <Subtitle>"). Never drop or replace the keyword in the headline.
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
-3. CONTEXT SIGNPOSTS & MANDATORY H2 HEADERS:
+3. SECTION HEADERS — A STORY, NOT A DECK:
    - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators.
    - FORMATTING REQUIREMENT: Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. NEVER place body prose or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
      - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift; followed on a new paragraph by a single direct sentence)
-     - `## By the numbers` (MANDATORY quantitative section presenting 2–4 verified figures/percentages in bold bullets pairing the figure with a concise metric title)
+     - `## By the numbers` (OPTIONAL: use it only when the piece is genuinely a table of numbers — 2–3 bullets, never more, and never a block that repeats figures the prose already carries)
      - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
      - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; followed on a new paragraph)
      - `## At a glance` (in <!-- tldr -->, a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
-   - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats pairing the figure with a concise 2–4 word metric title (e.g., `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). The words following the bold lead MUST NOT begin with conversational or background narrative filler ("Diesel fuel started the year...", "The leap in the..."). Instead, structure as `- **<Figure> — <Metric Title>:** <Clear explanation> [Citation]`.
+   - STORY FIRST. The reader is following an argument, not scanning a deck: a section of three bullets usually wants to be three sentences. Bullets are for a real list (3+ comparable items), and a bold figure lead-in (`- **88% — Diesel price jump:** ...`) belongs only where the figure is the point of the line.
+   - The fixed house labels are a fallback, not a requirement: write each section header in this article's own words — what the section actually argues. An article that opens on "The big picture:", lists "What I'd watch:" and closes on "The catch" reads like the template it is.
    - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
 4b. SHAPE RULES (gate-enforced by scripts/article_shape.py — these hold a publish):
    - THE OPENING STATES THE STAKES FIRST. Sentence 1 carries at most ONE figure and names WHY the

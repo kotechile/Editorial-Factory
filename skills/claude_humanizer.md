@@ -54,14 +54,18 @@ Introduce supporting context using standardized H2 headers (`## `).
   - **Lock the taxonomy once you name it.** When the piece introduces a classification grid (smooth, erratic, intermittent, lumpy), those four words name those four cells for the rest of the article. "Sparse", "hard groups" or "unscorable" may appear only with the cell they map to.
   - **Name the authority in the prose.** A citation hidden behind "a forecasting expert" or "a later paper" reads as hedging: write the name the footnote carries (Kourentzes, Makridakis, Syntetos and Boylan).
   - **Never explain arithmetic to an executive.** "28,903 minus 1,994" is a defect; state the residue with its share — "the other 26,909, about 93%".
+  - **Every figure carries its relationship, and a wage that stands in for the reader's own hour is stated as an assumption (owner, 2026-11-03).** Two failures, one cause — a number arrives with no job to do:
+    - *A bare figure in a chain.* "Holding one watt for a year takes 8.76 kWh, which means 540 divided by 8.76 yields about 62 watts" walks the reader through the division. State the result and what it is like ("a steady 62 watts, the draw of one old bulb left on"), keep the inputs where a checker can find them, and put the derivation in one place.
+    - *A dangling occupation's wage.* Pricing the reader's time at somebody else's median — a network administrator's $47.66 in a piece about a household's standby draw — reads as an unrelated fact unless the sentence says it is a stand-in: "If your hour is worth what the work pays, the 2025 median wage for network administrators is $47.66… and the saving is $18.67 to $37.34". When the wage prices a third party's *paid* work (a repairer, a driver, a paralegal), the relationship is self-evident and no clause is needed. The wider rule: no figure enters the body unless the sentence around it says what it is being measured against.
   - **A tool link is a prerequisite, not a plug.** Close on the operational condition: "that baseline is worth measuring before any algorithm is tuned, and our <tool> reports the gap", never "the desk's own calculator".
 
 ### 3.6 Paragraph Discipline & Sentence Rhythm
+- **Story first, then scannability (owner, 2026-11-03).** The reader is following an argument, not scanning a deck. Bullets are for a real list of comparable items; a section of three bullets is usually three sentences that were afraid to be one paragraph. Section headers say what the section argues, in this article's words — not "The big picture:" on every piece. A "By the numbers" block is optional and never restates figures the prose already carries.
 - Keep paragraphs **3 to 5 sentences, never more than 6**. Depth comes from sentences per
   paragraph, not from longer sentences: the same piece at 26.8 words/sentence scored 51.9 and read
   thinner than the 17.8-word version at 5-sentence paragraphs (owner decision 2026-10-26).
 - One idea per paragraph — but a paragraph may carry that idea across two sentences. Do **not** split a single thought into two paragraphs.
-- Write **connected sentences, ~14-22 words with real variation**. One sentence may hold a cause and its consequence ("X, so Y"; "X: Y").
+- Write **connected sentences, ~15-26 words with real variation**. One sentence may hold a cause and its consequence ("X, so Y"; "X: Y").
 - At most **one** sentence of 8 words or fewer per paragraph, and never a run of short declaratives. Never shorten a sentence to move the Flesch score — the lever is plain words, and a choppy body scores the same while reading worse.
 
 ### 3.7 The Exit ("Go Deeper")

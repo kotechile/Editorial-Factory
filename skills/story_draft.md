@@ -9,11 +9,19 @@ evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity
 |---|---|
 | **Title** | A headline that earns the click, scored by `scripts/headline_score.py` (owner's standard, 2026-10-10) and gated at the push — **for articles from 2026-10-10 on: earlier headlines are grandfathered and only reported, never re-cut** (`ENFORCED_FROM`). **Core headline ≤ 6 words** before any colon/dash subtitle, whole title ≤ 10 words and ≤ 60 characters, **never open on "The/A/An"**, front-load the strongest noun or the most concrete benefit, carry a hook (a curiosity gap or loss aversion — the mistake, the trap, the silent cost — or invert the conventional wisdom), anchor on a figure the article itself states (never invented), and call the reader out ("your/you", or a named role/subject: CFO, shipper, homeowner, SpaceX). The strongest headlines in the corpus read *"California FAIR Plan Premiums Jump 29.1%"*, *"Why 70% of Startup Options Go Unexercised"*, *"Nearshoring Doesn't Move the Trade Case"*; the weak ones are 11–17 words, open on "The", and state a fact with no reason to open it. No bait-and-switch: the article must satisfy the title in its first paragraph. When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword. For **Synthesis articles**, the collision thesis goes in the subtitle, not by stacking both clauses into the headline. |
 | **Lead** | A concrete incident or figure from the evidence delivering the core news in sentence 1. For **Synthesis articles**, write a **Collision Lead**: bridge the two underlying developments in the first 1–2 sentences (e.g., *"As frontier model inference prices plunge past 80% cuts, enterprise engineering teams are quietly turning their backs on off-the-shelf SaaS to build bespoke in-house software."*). Not a definition, not a "world is changing" opener. |
-| **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed (**Why it matters / The big picture**). In a synthesis piece, explain the friction point where Trend A radically alters the economics, reliability, or feasibility of Trend B. |
-| **By the numbers** | Mandatory quantitative data section (**By the numbers:**) highlighting 2–4 verified figures, percentages, benchmarks, or cost changes in clean, bolded scannable bullets. In synthesis articles, bullets must represent verifiable data from **both** underlying anchors. |
-| **Tactical insight** | What the people closest to the story are doing, what the consequences land on, and the next signals to watch — reported, never prescribed (`persona:` from `context/personas.json`). Signpost it **Where this bites:** / **What I'd watch:** and bulletize 3+ points. Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
+| **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed. Give the section its own H2 that says what it argues; "The big picture:" is the fallback label, not the required one (owner, 2026-11-03). In a synthesis piece, explain the friction point where Trend A radically alters the economics, reliability, or feasibility of Trend B. |
+| **By the numbers** | **Earned, not mandatory** (owner, 2026-11-03). When the piece is genuinely built on a table of figures, give it 2–3 bold bullets — never four restating the prose. When the figures belong in the sentences that use them, write no block at all: a numbers section repeating the body is the deck smell that made these pieces read as worksheets. In synthesis articles the figures must still come from **both** underlying anchors. |
+| **Tactical insight** | What the people closest to the story are doing, what the consequences land on, and the next signals to watch — reported, never prescribed (`persona:` from `context/personas.json`). Write it as prose; bullets only for a real list of comparable items. Header in this article's own words ("Where this bites:" / "What I'd watch:" are fallbacks). Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
 | **Nuanced takeaway** | The honest limitation or counter-argument (**The catch / Between the lines**). Ends on substance, not a cheerlead. |
 | **TL;DR (At a Glance)** | A **≤50-word** box, three lines: **The shift / The number / The risk**. It states what changed, the figure that proves it and the one caveat — it never re-lists the tactical section's watch items (owner standard 2026-10-29: a recap the reader just read is scroll friction, not emphasis). **Long-form only.** |
+
+**Story first (owner, 2026-11-03).** The house structure is five marked sections, not five labels.
+A reader should be able to follow one argument from the first sentence to the last; the markers,
+the fixed signposts and the stat block are machinery, and machinery that shows is the defect. Three
+consequences: (1) **a section may be three connected sentences** where a bullet list would have been
+— bullets are for a real list, not the default shape of a section; (2) **the header says what the
+section argues**, in this article's words; (3) **the numbers live where they are used** — a figure
+block is a choice you earn, not a checkbox, and it may not repeat what the prose already says.
 
 The **TOC is render-time only** — the site derives it from the section headings. Never write a
 "Table of Contents" into the article body.
@@ -83,6 +91,16 @@ The **TOC is render-time only** — the site derives it from the section heading
   "the other 26,909, about 93%"); (5) **name the authorities in the prose** (Kourentzes, Makridakis,
   Syntetos and Boylan), never "a forecasting expert" or "a later paper". Applies to drafts written from
   this date; published articles are grandfathered.
+- **Budget the figure load, not only the figure count (owner, 2026-11-03).** A piece can clear Flesch
+  60 and still read as a worksheet, because a digit is a short, easy word: measured across the 269
+  published artifacts, the median share of *prose* sentences carrying a figure was 41% and 95 sat
+  above 45% (the worst at 89%). `check_accessibility.figure_load` now reports it as an advisory above
+  45%. Two drafting consequences: (1) each paragraph carries one figure plus a sentence with no
+  digits that says what it means — the reader needs the meaning, not the next step of the division;
+  (2) **a figure must say what it is measured against in the same sentence.** A wage that stands in
+  for the reader's own hour ("if your hour is worth what the work pays…") is an assumption and must
+  be written as one; a wage that prices a third party's paid work is self-evident and needs no
+  clause. Full wording in `skills/claude_humanizer.md` §3.5. Applies to drafts from this date.
 - **Pre-tune the draft to the accessibility floor before Loop 3.** Run
   `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. A draft that
   already clears the Flesch floor (~50) and carries a first-person observer cue in every interpreting

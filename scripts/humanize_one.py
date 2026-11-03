@@ -23,17 +23,18 @@ SMART BREVITY STYLING PRINCIPLES:
      first paragraph. Anything over 10 words is not a headline — cut it, do not soften it.
 2. THE LEDE (First Sentence):
    - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
-3. CONTEXT SIGNPOSTS & MANDATORY H2 HEADERS:
+3. SECTION HEADERS — A STORY, NOT A DECK:
    - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators.
    - FORMATTING REQUIREMENT: Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. NEVER place body prose or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
      - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift; followed on a new paragraph by a single direct sentence)
-     - `## By the numbers` (MANDATORY quantitative section presenting 2–4 verified figures/percentages in bold bullets pairing the figure with a concise metric title)
+     - `## By the numbers` (OPTIONAL: use it only when the piece is genuinely a table of numbers — 2–3 bullets, never more, and never a block that repeats figures the prose already carries)
      - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
      - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; followed on a new paragraph)
      - `## At a glance` (in <!-- tldr -->, a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
-   - Every article MUST feature a dedicated **By the numbers:** quantitative section with 2–4 bold bulleted stats pairing the figure with a concise 2–4 word metric title (e.g., `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). The words following the bold lead MUST NOT begin with conversational or background narrative filler ("Diesel fuel started the year...", "The leap in the..."). Instead, structure as `- **<Figure> — <Metric Title>:** <Clear explanation> [Citation]`.
+   - STORY FIRST. The reader is following an argument, not scanning a deck: a section of three bullets usually wants to be three sentences. Bullets are for a real list (3+ comparable items), and a bold figure lead-in (`- **88% — Diesel price jump:** ...`) belongs only where the figure is the point of the line.
+   - The fixed house labels are a fallback, not a requirement: write each section header in this article's own words — what the section actually argues. An article that opens on "The big picture:", lists "What I'd watch:" and closes on "The catch" reads like the template it is.
    - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
 4b. SHAPE RULES (gate-enforced by scripts/article_shape.py — these hold a publish):
    - THE OPENING STATES THE STAKES FIRST. Sentence 1 carries at most ONE figure and names WHY the
@@ -83,7 +84,7 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 
 SECTION GATES (each section must pass its own gate):
 - <!-- lead -->: delivers the core news/stat immediately in sentence 1; no throat-clearing or preamble. HIGHEST PRIORITY.
-- <!-- tension -->: frames the shift with '## The big picture:' H2; includes a mandatory '## By the numbers' section with 2–4 bold bulleted stats; names who it hurts/helps.
+- <!-- tension -->: the section that says what changed and who it lands on. Give it an H2 in this article's own words (the house label '## The big picture:' is a fallback). A '## By the numbers' block is optional — carry the figures in the sentences that use them unless the piece is genuinely a table of numbers.
 - <!-- tactical-insight -->: what the people closest to the story are doing and what the writer expects next, structured with clean bullets and bold lead-ins for 3+ items; observations, never instructions to the reader.
 - <!-- nuanced-takeaway -->: honest limitation / counter-argument with '## The catch' H2 header.
 - <!-- tldr -->: opens with '## At a glance' H2 header; follows the three-line schema (**The shift**, **The number**, **The risk**) under 50 words with no sub-bullets and no recap of the tactical section; plain, accessible English without unexplained buzzwords.
