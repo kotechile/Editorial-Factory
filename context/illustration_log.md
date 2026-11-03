@@ -407,3 +407,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-03 | `your-leak-alert-24-hours-at-best` | smart_home_telemetry | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-leak-alert-24-hours-at-best/featured.jpg` |
 | 2026-11-03 | `your-128gb-laptop-2319-memory-bill` | workstation_compute_economics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-128gb-laptop-2319-memory-bill/featured.jpg` |
 | 2026-11-03 | `your-9-day-notice-9-day-queue` | control_tower_exception_orchestration | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-9-day-notice-9-day-queue/featured.jpg` |
+| 2026-11-03 | `your-dedupe-cut-f1-by-74` | ai_observability_qa | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-dedupe-cut-f1-by-74/featured.jpg` |

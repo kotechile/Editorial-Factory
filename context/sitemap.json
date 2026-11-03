@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T17:46:35Z",
+  "updated_at": "2026-11-03T18:08:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5146,12 +5146,13 @@
         "By the numbers",
         "What the large sets varied",
         "The catch",
-        "Related reading",
-        "At a glance"
+        "At a glance",
+        "Related reading"
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-dedupe-cut-f1-by-74/"
     },
     {
       "slug": "2026-11-03_your-grader-adds-22-points",

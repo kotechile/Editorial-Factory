@@ -12,6 +12,12 @@ meta_title: "Your Dedupe Pass Costs 7.4 F1"
 meta_title_source: "derived_from_title"
 meta_description: "One line in the prompt decides how varied your test set turns out. Because the batch size sits in the prompt, a team can widen its cases this afternoon."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-dedupe-cut-f1-by-74/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter gate beside one ray path"
+image_caption: "A single prompt beam splits into parallel test-case beams through angled lenses, while a dark filter gate intervenes on one path."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -52,6 +58,15 @@ Two limits matter. The measured leg is sorting requirement text across four smal
 
 The second limit changes how you report the suite, because a diversity score barely moves when copies are added — what you want from a measure of breadth, not from a count of cases. I keep wanting the report to show the effective count beside the row count, and to re-test the setup by whether it still separates a broken build from a working one.
 
+
+<!-- tldr -->
+
+## At a glance
+
+**The shift:** Synthetic test sets are being deduped to look varied when their breadth is set by the prompt.
+**The number:** 7.4 points of F1 lost to a pass that raised every diversity score.
+**The risk:** A diversity score stays flat under copies, so it cannot stand in for a case count.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -64,14 +79,6 @@ The second limit changes how you report the suite, because a diversity score bar
 - [$915M Illusion: Your AI Judge Moves](/buying-ai-quality-when-the-score-belongs-to-the-judge/)
 - [One Green Run Is Not Reliability](/agent-reliability-pass-k-not-one-green-run/)
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-**The shift:** Synthetic test sets are being deduped to look varied when their breadth is set by the prompt.
-**The number:** 7.4 points of F1 lost to a pass that raised every diversity score.
-**The risk:** A diversity score stays flat under copies, so it cannot stand in for a case count.
 
 ## Sources
 

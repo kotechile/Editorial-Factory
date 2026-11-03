@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:19:53+00:00",
+  "generated_at": "2026-11-03T17:57:34+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -7263,6 +7263,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-dedupe-cut-f1-by-74",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "url": "https://aichieve.net/your-dedupe-cut-f1-by-74/",
+      "path": "/your-dedupe-cut-f1-by-74/",
+      "sites_live": {
+        "aichieve.net": "/your-dedupe-cut-f1-by-74/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "One line in the prompt decides how varied your test set turns out. Because the batch size sits in the prompt, a team can widen its cases this afternoon.",
+      "modified": "2026-11-03T17:46:34",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-eta-misses-27-hours",
       "title": "Why Your ETA Misses 27 Hours",
       "url": "https://aichieve.net/your-eta-misses-27-hours/",
@@ -7997,6 +8020,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1428,
+      "slug": "your-dedupe-cut-f1-by-74",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-03T17:55:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -9095,20 +9132,6 @@
       "id": 1069,
       "slug": "your-render-bill-multiplies-by-22-97",
       "title": "Your Render Bill Multiplies by 22.97",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:28",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1065,
-      "slug": "monolith-split-price-the-premium",
-      "title": "Your Monolith Split: 20% More Cost, 90% Slower Debt",
       "url": "",
       "categories": [],
       "category_ids": [],

@@ -1,0 +1,146 @@
+{
+  "slug": "your-dedupe-cut-f1-by-74",
+  "revision": 6,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter gate beside one ray path",
+      "caption": "A single prompt beam splits into parallel test-case beams through angled lenses, while a dark filter gate intervenes on one path.",
+      "title": "Prompt-axis beam-splitter with dedupe filter gate",
+      "bytes": 387362,
+      "sha256": "sha256:791608e5b7d0e2b7cfd34bd81ebffcf4"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your Dedupe Pass Costs 7.4 F1. Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter",
+      "caption": "Your Dedupe Pass Costs 7.4 F1: The batch size in your prompt outweighs your dedupe pass.",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "bytes": 402637,
+      "sha256": "sha256:c891ed2d4b7c8ae428c40f96782a3183ef9058917adaf515b010e81da2a3e9c0"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Your Dedupe Pass Costs 7.4 F1. Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter",
+      "caption": "Your Dedupe Pass Costs 7.4 F1: One prompt, twenty cases.",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "bytes": 400780,
+      "sha256": "sha256:8a9c7448feae0c8abe9cd90271d6c74e06a817cdef91a55c704a10c065dbfa1b"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Your Dedupe Pass Costs 7.4 F1. Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter",
+      "caption": "Your Dedupe Pass Costs 7.4 F1: One prompt, twenty cases.",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "bytes": 384442,
+      "sha256": "sha256:219b421837bd64a1259c504b2d1c91c55496e5fee44586942c13260b7a340557"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Your Dedupe Pass Costs 7.4 F1. Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter",
+      "caption": "Your Dedupe Pass Costs 7.4 F1: One prompt, twenty cases.",
+      "title": "Your Dedupe Pass Costs 7.4 F1",
+      "bytes": 396618,
+      "sha256": "sha256:fe3a6599db52ed39d58628e25ad7a915bfe0ba027233675defabcb863abb9743"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration on a control room drafting table. A single warm input beam enters a faceted optical prism, splitting into eight parallel beams that pass through differently angled glass lenses and land on eight textured modular test-case trays; a dark filter gate hovers beside one ray path, leaving the others untouched. Brushed steel base, optical glass, concrete table. Graphite, cobalt, bone white. One directional key light from upper left raking across the assembly, thin consistent line weight, flat muted palette, asymmetric composition with prism off-centre, generous empty margin, no text, no labels, no lettering, no UI.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, UI, labels, captions, typography",
+  "rationale": "The story explains a system-level mechanism\u2014how prompt axes expand diversity before a filter gate degrades it. An isometric cutaway of an optical beam-splitter array renders that mechanism as coordinated processing modules without falling back on datacenter clich\u00e9s or forbidden plumbing metaphors.",
+  "cue": "asking one prompt for twenty cases",
+  "subject": "a faceted optical beam-splitter prism splitting one warm input beam into parallel test-case beams, each passing through a differently angled lens onto a textured modular tray, with a dark filter gate beside one ray path",
+  "core_thesis": "A synthetic suite's breadth is set by the axes written into its prompt, not by how many cases you request or how hard you dedupe.",
+  "core_conflict": "Prompt-axis expansion versus post-hoc similarity filtering: filtering improves diversity metrics but degrades classifier F1.",
+  "composition": "asymmetric isometric layout with the prism off-centre and the filter gate on the far right",
+  "alt_text": "Precision optical beam-splitter array splitting one warm beam into parallel test-case beams, a dark filter gate beside one ray path",
+  "caption": "A single prompt beam splits into parallel test-case beams through angled lenses, while a dark filter gate intervenes on one path.",
+  "title": "Your Dedupe Pass Costs 7.4 F1",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-dedupe-cut-f1-by-74/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 393651,
+  "sha256": "sha256:dbdb0c469db147862bf57c519452013e961cf31dd2a85f2744cd40a72fe81aad",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 393651,
+    "quality": 80,
+    "sha256": "sha256:dbdb0c469db147862bf57c519452013e961cf31dd2a85f2744cd40a72fe81aad",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6f8e25f7cc3fdc600432e4712e097eb37ed4f416e725a8c7925c416584a04ab4",
+  "render_phash": "02900580d3085a483860b5c266c963d0a324d26948926cb2666273e271a26932",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric cutaway drawing of a bench-like table holding a faceted glass cube prism on the left, into which a single warm orange beam enters; from the prism several pale thin beams fan out across a gridded surface, each passing through a small upright lens of differing angle and landing on a square modular tray filled with textured grey, white or blue material, with a dark rectangular frame standing beside one of the beam paths on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The beam-splitter fanning one input into many parallel angled paths ending on separate trays is the article's own mechanism for one prompt widening into varied test cases, and the dark gate beside one ray stands for the dedupe filter that cuts F1."
+  },
+  "source_hash": "sha256:4ec6f2c0d4af89aaf68e4b8c758bfb5d",
+  "source_chars": 4508,
+  "task_id": "06ace4e5d3a472ef636005e93d1ac40f",
+  "credits": 18.0,
+  "cost_ms": 37,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e07a304c4a3e5fbe8fd66e94edb0974b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration on a control room drafting table. A single warm input beam enters a faceted optical prism, splitting into eight parallel beams that pass through differently angled glass lenses and land on eight textured modular test-case trays; a dark filter gate hovers beside one ray path, leaving the others untouched. Brushed steel base, optical glass, concrete table. Graphite, cobalt, bone white. One directional key light from upper left raking across the assembly, thin consistent line weight, flat muted palette, asymmetric composition with prism off-centre, generous empty margin, no text, no labels, no lettering, no UI.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-03T17:53:05+00:00",
+  "overlay": {
+    "kicker": "AI OBSERVABILITY // PROMPT BATCH SIZE",
+    "title": "Your Dedupe Pass Costs 7.4 F1",
+    "hook": "",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 0,
+    "contrast": 9.73,
+    "target": 4.5,
+    "clutter": 0.122,
+    "region_rgb": [
+      227,
+      225,
+      215
+    ],
+    "binding_rgb": [
+      223,
+      223,
+      211
+    ],
+    "title_lines": [
+      "Your Dedupe Pass",
+      "Costs 7.4 F1"
+    ],
+    "subject": 0.07,
+    "ink_subject": 0.038,
+    "spike": 0.195,
+    "generated_at": "2026-11-03T17:53:05+00:00"
+  }
+}

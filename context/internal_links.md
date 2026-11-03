@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-11-03T14:19:53+00:00
+# Internal-link candidates — 2026-11-03T17:57:34+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -168,7 +168,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 191 live article(s), 13 other target(s)
+## aichieve.net — 192 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -325,6 +325,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Claim Dies at 9 Months](https://aichieve.net/freight-claim-dies-at-9-months/) — Supply Chain & Operations
 - [Your Cluster's Hidden Clock: 3 Minor Versions, 1 Year](https://aichieve.net/your-cluster-hidden-clock/) — AI Stack & Tool TCO
 - [Your Compaction Trap: 87% of Forgeries Survive](https://aichieve.net/your-compaction-trap-87-forgeries-survive/) — Autonomous & Agentic Workflows
+- [Your Dedupe Pass Costs 7.4 F1](https://aichieve.net/your-dedupe-cut-f1-by-74/) — AI Stack & Tool TCO
 - [Your Exception Log Owes 5 Years](https://aichieve.net/your-exception-log-owes-5-years/) — Supply Chain & Operations
 - [Your Fleet's Charger Gap: 7.2 kW a Port](https://aichieve.net/your-fleets-charger-gap/) — Supply Chain & Operations
 - [Your Fuel Surcharge Hides Three Negotiated Numbers](https://aichieve.net/fuel-surcharge-peg-mpg-audit/) — Supply Chain & Operations
@@ -379,6 +380,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1428 `your-dedupe-cut-f1-by-74` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1425 `your-9-day-notice-9-day-queue` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1423 `your-128gb-laptop-2319-memory-bill` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1420 `your-ai-roi-28-rising-28-stalled` — published in the CMS but absent from the frontend sitemap
@@ -458,7 +460,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1074 `isolation-isnt-detection` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1072 `your-exception-log-owes-5-years` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1069 `your-render-bill-multiplies-by-22-97` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1065 `monolith-split-price-the-premium` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1363 `your-standby-bill-hides-62-watts` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1356 `two-builds-one-vault` — published in the CMS but absent from the frontend sitemap
