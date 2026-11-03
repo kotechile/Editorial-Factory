@@ -116,9 +116,13 @@ The **TOC is render-time only** — the site derives it from the section heading
   measured 3.6 sentences a paragraph on published work and was the thing flattening the argument).
   Depth comes from sentences per paragraph, not from longer sentences: the same piece at 26.8 words
   a sentence scored 51.9 and read thinner than the 17.8-word version at 5-sentence paragraphs.
-  **Gloss every specialist term in place while drafting** — the gate's jargon list is nearly empty,
-  so nothing downstream catches "call site", "ratchet", "Btu" or "goods-receiving"; the fix has to
-  happen on the way in (`executive-editor` skill carries the standard and the term table).
+  **Gloss every specialist term in place while drafting** — `skills/executive-editor.md` carries the
+  standard and the term table, and `scripts/check_accessibility.py` hard-fails at publish on an
+  unglossed term from that table (F1, dedupe, classifier, test set, synthetic data, embedding,
+  cosine similarity, KV cache, fine-tuning, precision/recall, p50–p99) plus the metric shorthand the
+  ALL-CAPS acronym rule cannot see. Terms outside the table still have to be glossed on the way in —
+  nothing downstream catches "call site", "ratchet", "Btu" or "goods-receiving". The gloss goes at
+  first use, inside that sentence; a glossary at the end does not count.
 - **The title's content words must appear verbatim (substring) in the first ~600 words — inflections do not count (learned 2026-10-14).** `headline_score.lead_delivery`/the honesty rule checks each title content word as a plain substring of the opening: a title reading "Why Your Card **Serves** 1.6" scores 100 STRONG standalone but reports `lead_ok: False` when the lead says "**served** about 1.6 requests a second", and the pre-publish gate will then re-cut the headline. Write the lead in the title's own inflection ("one card **serves** about 1.6 requests a second") or check with `python3 -c "import sys,headline_score as hs; print(hs.score('<title>', body=open('<draft>').read()))"` before the accessibility gate. Up to `max(1, len(content_words)//3)` of them may be absent, so one missing word clears — every additional one re-cuts the title.
 - **Budget every figure across sections while drafting — `article_shape` allows one money figure in at
   most two of the five sections, and the headline's own figures must sit in the lead (learned 2026-10-30).**

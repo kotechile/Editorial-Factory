@@ -202,6 +202,16 @@ def retry_prompt(base_prompt, prev_text, diag, extra: str | list[str] = ""):
         tip.append("SEO KEYWORD IN TITLE: The frontmatter 'title:' MUST explicitly contain the exact or naturalized 'primary_keyword' (e.g. '<Keyword>: <Subtitle>'). Never omit the target search term from the headline.")
     if diag["undefined_acronyms"]:
         tip.append("Spell out each listed acronym in full at its first use (e.g. 'Full Name (ACR)').")
+    if diag.get("unglossed_terms"):
+        # A metric shorthand has no expansion to spell out ("F1" is not an acronym), so the tip asks for
+        # a definition of what it measures. Observed 2026-11-03: an article whose whole argument rode on
+        # "F1" published with the term undefined while every gate read green.
+        tip.append("UNGLOSSED TERMS (" + ", ".join(diag["unglossed_terms"]) + "): explain each at its "
+                   "FIRST use, in that same sentence, with an em-dash clause or a parenthetical that says "
+                   "what it MEASURES or DOES — \"F1 — a single score that balances catching real cases "
+                   "against raising false alarms\", \"p95 (the slowest 5% of requests)\". There is no "
+                   "expansion to spell out. No glossary at the end, no second definition, and never invent "
+                   "one the source does not support.")
     if diag["flesch"] is not None and diag["flesch"] < diag["target"]:
         # Readability is a WORD-CHOICE fix. This tip used to read "split long sentences", which is
         # how the pipeline manufactured its own staccato: it fires on every attempt landing between

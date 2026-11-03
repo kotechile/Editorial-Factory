@@ -216,3 +216,75 @@ def test_a_five_bullet_numbers_block_is_reported(tmp_path):
 
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q"]))
+
+
+# --- specialist shorthand: the class the ALL-CAPS rule cannot see -------------------------
+# Observed 2026-11-03 on /your-dedupe-cut-f1-by-74/: the headline and the whole argument ride on
+# "F1", and the body also uses "dedupe pass", "classifier", "test set" and "synthetic" sets. Every
+# gate passed it — Flesch 61, no undefined acronyms (one capital plus a digit is not an acronym),
+# and the jargon list is finance/trade only. These fixtures pin the replacement.
+
+F1_ARTICLE = """---
+title: Your Dedupe Pass Costs 7.4 F1
+---
+
+The study watched a security task's blended F1 climb from 0.325 to 0.763 in one afternoon.
+
+The dedupe pass then stripped the most alike fifth of the set, and every diversity score rose.
+"""
+
+F1_GLOSSED = """---
+title: Your Dedupe Pass Costs 7.4 F1
+---
+
+The study watched a security task's blended F1 — a single score that balances catching real cases
+against raising false alarms — climb from 0.325 to 0.763 in one afternoon.
+
+The dedupe pass, which removes near-copies before the model ever trains on them, then stripped the
+most alike fifth of the set, and every diversity score rose.
+"""
+
+
+def test_an_unglossed_metric_shorthand_fails_the_gate(tmp_path):
+    """'F1' is invisible to the acronym rule; without a gloss it must hold the publish."""
+    diag = ca.measure(_write(tmp_path, "f1.md", F1_ARTICLE))
+    assert "F1" in diag["unglossed_terms"]
+    assert any("unglossed specialist term" in f for f in diag["fails"]), diag["fails"]
+    assert diag["verdict"] == "FAIL"
+
+
+def test_a_gloss_at_first_use_clears_it(tmp_path):
+    diag = ca.measure(_write(tmp_path, "f1g.md", F1_GLOSSED))
+    assert diag["unglossed_terms"] == []
+    assert not [f for f in diag["fails"] if "unglossed" in f]
+
+
+def test_only_the_first_use_needs_the_gloss(tmp_path):
+    """Once explained, later bare uses are correct prose, not a defect."""
+    body = F1_GLOSSED.replace(
+        "every diversity score rose.",
+        "every diversity score rose. F1 still fell, by 7.4 points, in nine of twelve setups.")
+    diag = ca.measure(_write(tmp_path, "f1later.md", body))
+    assert diag["unglossed_terms"] == []
+
+
+def test_a_heading_is_not_a_gloss(tmp_path):
+    """A term explained only in an H2 has not been explained where the reader met it."""
+    body = F1_ARTICLE.replace("The dedupe pass then stripped",
+                              "## The dedupe trap\n\nThe dedupe pass then stripped")
+    diag = ca.measure(_write(tmp_path, "h.md", body))
+    assert "dedupe" in diag["unglossed_terms"]
+
+
+def test_a_term_only_in_the_title_is_not_policed(tmp_path):
+    """The gate reads the body: a headline has nowhere to hang a gloss."""
+    body = "---\ntitle: An F1 headline with no body mention\n---\n\nThe set got wider and the score fell.\n"
+    diag = ca.measure(_write(tmp_path, "t.md", body))
+    assert diag["unglossed_terms"] == []
+
+
+def test_ordinary_english_words_are_not_gated(tmp_path):
+    """'Recall' alone is everyday English (a product recall); only the precision/recall pair is."""
+    body = "---\ntitle: A recall notice\n---\n\nThe car maker issued a recall for 12,000 vehicles after the pump failed.\n"
+    diag = ca.measure(_write(tmp_path, "r.md", body))
+    assert diag["unglossed_terms"] == []

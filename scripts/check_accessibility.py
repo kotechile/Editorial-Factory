@@ -72,6 +72,76 @@ GATING = sorted({
 })
 
 
+# ── specialist shorthand and metric terms (HARD fail) ────────────────────────────────────────
+# The acronym rule above sees only ALL-CAPS tokens, so a reader-hostile token like "F1", "p95" or
+# "R@10" is invisible to it: one capital letter and a digit is not a word the regex can call an
+# acronym, and it is not expanded anywhere either. Observed 2026-11-03 on
+# your-dedupe-cut-f1-by-74: the title and body both lean on "F1" and "dedupe pass", neither is
+# explained, and every gate passed — Flesch 61, no undefined acronyms, jargon list silent.
+#
+# Membership rule: a term earns a place here only when a general reader cannot follow the sentence
+# without knowing it AND the word has no ordinary-English reading that would make a gloss noise.
+# "recall", "token" and "latency" fail the second test (product recall, token gesture, latency is
+# everyday), so they stay advisory rather than holding a publish.
+SPECIALIST = {
+    "F1": r"\bF-?1\b",
+    "dedupe": r"\bdedup(?:e|es|ed|ing|lication)\b",
+    "classifier": r"\bclassifiers?\b",
+    "test set": r"\b(?:test|evaluation|eval)\s+sets?\b",
+    "synthetic data": r"\bsynthetic\s+(?:data|sets?)\b",
+    "cosine similarity": r"\bcosine similarity\b",
+    "embedding": r"\bembeddings?\b",
+    "KV cache": r"\bKV[-\s]cache\b",
+    "fine-tuning": r"\bfine-?tun(?:e|es|ed|ing)\b",
+    "precision/recall": r"\bprecision\b[^.]{0,40}\brecall\b|\brecall\b[^.]{0,40}\bprecision\b",
+    "percentile": r"\bp(?:50|75|90|95|99|999)\b",
+}
+
+# What counts as an explanation attached to a term. Deliberately STRUCTURAL, not a vocabulary of
+# definitional verbs: "F1 — a single score that balances…" and "dedupe, which removes near-copies
+# before the model sees them" both carry a clause a reader can use, and neither is going to contain
+# the word "means". A parenthetical, an em-dash clause or a comma appositive of four words or more is
+# the gloss; anything shorter is a label, not an explanation.
+_GLOSS_AFTER = (
+    re.compile(r"\((?:[^()]{15,})\)"),
+    re.compile(r"[—–]\s*[^—–.;]{20,}"),
+    re.compile(r",\s*(?:a|an|the|which|or)\s+[^.;:—–]{25,}"),
+)
+
+
+def _prose_sentences(text):
+    """Reader-facing sentences with headings removed.
+
+    A heading is not a place a gloss can live ("## The dedupe trap"), so a term whose first
+    appearance is in an H2 must still be explained in the prose underneath it.
+    """
+    prose = "\n".join(l for l in text.splitlines() if not l.lstrip().startswith("#"))
+    return [x.strip() for x in re.split(r"(?<=[.!?])\s+", prose) if x.strip()]
+
+
+def is_glossed(pattern, sentences):
+    """True when the FIRST use of the term sits in a sentence that explains it.
+
+    Only the first use is judged, and only its OWN sentence: once a reader has the explanation,
+    later bare uses are the point of having explained it. A next-sentence fallback was tried and
+    removed — it passed "…a dedupe pass: every diversity score rose" because the FOLLOWING sentence
+    happened to contain an unrelated em-dash clause.
+    """
+    rx = re.compile(pattern, re.I)
+    for sentence in sentences:
+        m = rx.search(sentence)
+        if not m:
+            continue
+        return any(g.search(sentence[m.end():]) for g in _GLOSS_AFTER)
+    return True  # term absent from the body
+
+
+def unglossed_terms(text):
+    """Specialist terms used without a plain-English explanation at first use."""
+    sentences = _prose_sentences(text)
+    return sorted(t for t, pat in SPECIALIST.items() if not is_glossed(pat, sentences))
+
+
 def body_of(path):
     t = pathlib.Path(path).read_text()
     t = re.sub(r"^---\n.*?\n---\n", "", t, flags=re.S)          # frontmatter
@@ -266,6 +336,7 @@ def measure(path, target=TARGET, floor=FLOOR):
     text = body_of(path)
     score, w, s, long_rate = flesch(text)
     undef = undefined_acronyms(text)
+    unglossed = unglossed_terms(text)
     jarg = jargon_hits(text)
 
     fails, warns = [], []
@@ -280,6 +351,11 @@ def measure(path, target=TARGET, floor=FLOOR):
             warns.append(f"long-word rate {long_rate}% > 35% (plain-english pass recommended)")
     if undef:
         fails.append("undefined acronym(s): " + ", ".join(undef))
+    if unglossed:
+        # Hard fail, not advisory: a reader who does not know the term cannot read the sentence. The
+        # message names the fix so the Loop 3 retry prompt hands it straight back to the model.
+        fails.append("unglossed specialist term(s): " + ", ".join(unglossed)
+                     + " — explain each in plain words at first use (em-dash clause or parenthesis)")
     if jarg:
         warns.append("jargon to gloss/replace: " + ", ".join(jarg))
 
@@ -323,7 +399,7 @@ def measure(path, target=TARGET, floor=FLOOR):
         "words": w, "sents": s, "long_word": long_rate,
         "sentence_mean": mean_len, "short_sent_pct": short_pct,
         "figure_pct": fig_pct, "figure_sents": fig_n,
-        "undefined_acronyms": undef, "jargon": jarg,
+        "undefined_acronyms": undef, "unglossed_terms": unglossed, "jargon": jarg,
         "primary_keyword": kw, "keyword_count": kw_count,
         "warnings": warns, "fails": fails,
         "verdict": "PASS" if not fails else "FAIL",
@@ -394,6 +470,8 @@ def check(path, target=TARGET, floor=FLOOR):
     print(f"   Flesch={m['flesch']} (target {m['target']}, floor {m['floor']})  words={m['words']}  sents={m['sents']}  long-word={m['long_word']}%")
     if m["undefined_acronyms"]:
         print(f"   undefined acronyms: {', '.join(m['undefined_acronyms'])}")
+    if m["unglossed_terms"]:
+        print(f"   unglossed terms: {', '.join(m['unglossed_terms'])}")
     if m["jargon"]:
         print(f"   jargon (advisory): {', '.join(m['jargon'])}")
     for wmsg in m["warnings"]:
@@ -435,6 +513,8 @@ def _render(m):
              f"   Flesch={m['flesch']} (target {m['target']}, floor {m['floor']})  words={m['words']}  sents={m['sents']}  long-word={m['long_word']}%"]
     if m["undefined_acronyms"]:
         lines.append(f"   undefined acronyms: {', '.join(m['undefined_acronyms'])}")
+    if m["unglossed_terms"]:
+        lines.append(f"   unglossed terms: {', '.join(m['unglossed_terms'])}")
     if m["jargon"]:
         lines.append(f"   jargon (advisory): {', '.join(m['jargon'])}")
     for wmsg in m["warnings"]:

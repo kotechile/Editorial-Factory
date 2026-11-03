@@ -91,6 +91,8 @@ SECTION GATES (each section must pass its own gate):
 
 ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):
 - Every acronym is expanded at its FIRST use in the body (either "Full Name (ACR)" or "ACR (...plain meaning)"). Zero undefined acronyms at the end. Never reuse an acronym bare after introducing it.
+- Explain every specialist term or metric shorthand at its FIRST use, in that same sentence, with an em-dash clause or a parenthetical: "F1 — a single score that balances catching real cases against raising false alarms", "p95 (the slowest 5% of requests)". Metric shorthand cannot be spelled out like an acronym, so say what it MEASURES. The gate hard-fails on unglossed F1, dedupe, classifier, test set, synthetic data, cosine similarity, embedding, KV cache, fine-tuning, precision/recall and p50/p95/p99.
+- Never park those definitions in a glossary at the end, never define the same term twice, and never invent a definition the source does not support — use the plain words the source itself used.
 - Translate every specialist term for a general reader: use the source's plain phrase or add a short gloss.
 - If the story hinges on a process a general reader may not know, add ONE half-sentence explaining what it is before relying on it.
 - Target Flesch Reading Ease >= 60 on the body (hard floor >= 50). READABILITY comes from plain WORDS, not short sentences: replace long/technical words with everyday ones. Write connected, natural sentences of ~14-20 words with variation — do NOT fragment into choppy one-liners.
