@@ -19,8 +19,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-128gb-laptop-2319-memory-bill/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "NVIDIA 128Gb Laptop Memory Bill. An unbranded laptop half-open beside ascending DDR5 memory modules on a steel workbench, lit from left."
-image_caption: "NVIDIA 128Gb Laptop Memory Bill: What a daily memory quote does to a top config's price."
+image_alt: "A thin unbranded laptop sits open on a steel bench beside four desktop memory modules."
+image_caption: "An open laptop and four memory modules: what a daily memory quote does to a top configuration's price."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
