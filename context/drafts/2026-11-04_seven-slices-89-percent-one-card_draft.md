@@ -37,6 +37,7 @@ Teams close to this stop reading the profile table and change one axis at a time
 
 Separation is the other half of the choice. Sharing one memory space pays while jobs do not collide, and costs when they do. Splitting the hardware removes that clash, then charges for it in fixed sizes, because a job whose needs fall between two profiles wastes the gap [2]. What I'm watching next is the copy anomaly: the paper calls its flat copy rate "likely a bug", so a driver release could retire that row [1].
 
+<!-- nuanced-takeaway -->
 ## The catch
 
 I could be wrong to lead with memory speed, and the same paper says why. Its language model case scaled almost perfectly with core count, so that test is core-bound, and short prompts on an 8-bit model will see the seventh rather than the eighth [1]. The rule binds on long-context decoding, where each token reads a cache the slice can barely feed — the same ceiling one layer up, where [a card runs out of cache before it runs out of math](/kv-cache-is-the-concurrency-ceiling/), the running state a model keeps for each open chat (its KV cache).

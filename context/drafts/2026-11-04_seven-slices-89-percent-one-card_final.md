@@ -11,8 +11,8 @@ slug: seven-slices-89-percent-one-card
 image_path: "context/assets/illustrations/seven-slices-89-percent-one-card/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Seven Slices Won'T Buy 89%. GPU accelerator card split into seven tenant bays with unequal memory and compute partitions on a steel bench."
-image_caption: "Seven Slices Won'T Buy 89%: Meter MIG tenants by memory bandwidth, not core count."
+image_alt: "A matte clay render of a graphics card on a steel bench, split into seven bays by brass dividers, one bay left open."
+image_caption: "Seven slices of one card: multi-instance GPU tenants are metered by memory, not by cores."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
