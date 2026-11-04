@@ -10,6 +10,12 @@ archetype: evergreen
 evergreen: true
 meta_title: "Your Robot Budget's 39-Year Gap"
 meta_description: "One automation approval, two write-off schedules: the machines can go in a single year while the building work runs 39 years, and the split decides the first-year number."
+image_path: "context/assets/illustrations/your-robot-budget-39-year-gap/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Split warehouse cutaway with goods-to-person robots, steel deck, and an adjoining structural extension divided by a vertical seam."
+image_caption: "The same robot budget splits into short-lived machines and long-lived building shell, and the drawings decide which line gets the fast write-off."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -62,6 +68,14 @@ The allowance also carries a date. Public Law 119-21 restored the full first-yea
 
 One more limit is worth carrying. A write-off cuts taxable income, so its value depends on income that exists. A loss year defers the benefit rather than creating it, and the election to expense is limited to what the business earns [3]. The cash a write-off returns is real, but it is a share of a cost already paid. Whether these machines should be owned at all is a separate argument, and [the own-versus-rent arithmetic](/owned-shuttles-or-rented-robots/) is where that one starts.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** one automation budget, two assets — machines on a one-year schedule, building work on a 39-year one.
+- **The number:** about $682,000 of first-year write-off on a $700,000 building line.
+- **The risk:** what the spend is for decides the class, and the drawings decide that.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -75,18 +89,9 @@ One more limit is worth carrying. A write-off cuts taxable income, so its value 
 - [Your Robot Ratio Fails](/pick-station-sets-robot-count/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** one automation budget, two assets — machines on a one-year schedule, building work on a 39-year one.
-- **The number:** about $682,000 of first-year write-off on a $700,000 building line.
-- **The risk:** what the spend is for decides the class, and the drawings decide that.
-
 ## Sources
 
 [1] 26 U.S.C. § 168 — Cornell Legal Information Institute — https://www.law.cornell.edu/uscode/text/26/168
 [2] Internal Revenue Service, Publication 946 (2025), How To Depreciate Property — https://www.irs.gov/publications/p946
 [3] 26 U.S.C. § 179 — Cornell Legal Information Institute — https://www.law.cornell.edu/uscode/text/26/179
-[4] 26 C.F.R. § 1.168(k)-2, additional first year depreciation deduction — https://www.ecfr.gov/current/title-26/section-1.168(k)-2
-[5] 26 C.F.R. § 1.167(a)-11, depreciation based on class lives — https://www.ecfr.gov/current/title-26/section-1.167(a)-11
+[4] 26 C.F.R. § 1.168(k)-2, additional first year depreciation deduction — https://www.ecfr.gov/current/title-26/section-1.168%28k%29-2

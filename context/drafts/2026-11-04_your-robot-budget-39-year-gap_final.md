@@ -75,5 +75,4 @@ One more limit is worth carrying. A write-off cuts taxable income, so its value 
 [1] 26 U.S.C. § 168 — Cornell Legal Information Institute — https://www.law.cornell.edu/uscode/text/26/168
 [2] Internal Revenue Service, Publication 946 (2025), How To Depreciate Property — https://www.irs.gov/publications/p946
 [3] 26 U.S.C. § 179 — Cornell Legal Information Institute — https://www.law.cornell.edu/uscode/text/26/179
-[4] 26 C.F.R. § 1.168(k)-2, additional first year depreciation deduction — https://www.ecfr.gov/current/title-26/section-1.168(k)-2
-[5] 26 C.F.R. § 1.167(a)-11, depreciation based on class lives — https://www.ecfr.gov/current/title-26/section-1.167(a)-11
+[4] 26 C.F.R. § 1.168(k)-2, additional first year depreciation deduction — https://www.ecfr.gov/current/title-26/section-1.168%28k%29-2

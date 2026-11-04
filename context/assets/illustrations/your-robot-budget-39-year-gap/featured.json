@@ -1,0 +1,114 @@
+{
+  "slug": "your-robot-budget-39-year-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Split warehouse cutaway with goods-to-person robots, steel deck, and an adjoining structural extension divided by a vertical seam.",
+      "caption": "The same robot budget splits into short-lived machines and long-lived building shell, and the drawings decide which line gets the fast write-off.",
+      "title": "Warehouse Automation Budget 39-Year Gap Cutaway",
+      "bytes": 372514,
+      "sha256": "sha256:fd2ff627a85b012b963188a6f535c26c"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a warehouse aisle concrete floor, a clean isometric cutaway model of an automation project stands. Left side: existing concrete shell with a goods-to-person robot grid, a steel mezzanine deck, and a yellow robot shuttle on rails. Right side: an adjoining structural steel extension with a freshly poured slab and exposed frame columns. A vertical seam splits the two halves. One directional light from upper left rakes across brushed steel and concrete, graphite and concrete grey with safety yellow accents, thin consistent line weight, axonometric projection, 35mm lens with shallow depth of field on the foreground model, fine film grain, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible labels",
+  "rationale": "The story is a systems-level tax classification with physical warehouse-technical substance. An axonometric cutaway can show the same project split between interior work and building shell clearly, avoiding a literal document photo or macro that would erase the operational environment.",
+  "cue": "Two schedules, one invoice",
+  "subject": "A split warehouse-automation cutaway showing a goods-to-person robot grid and steel deck inside an existing shell, separated from an adjoining structural steel extension and new slab.",
+  "core_thesis": "An automation budget is two assets wearing one invoice: machines and interior work can be written off in the year they are ready for their specific use, while money spent on enlarging the building or its internal frame is 39-year property, and that split decides the first-year number.",
+  "core_conflict": "Short-lived movable automation and 15-year interior fit-out versus 39-year structural shell; classification at the drawing stage determines whether a line item gets immediate expensing or decades of slow depreciation.",
+  "composition": "split-screen diptych with left-right scenario contrast, vertical seam",
+  "alt_text": "Split warehouse cutaway with goods-to-person robots, steel deck, and an adjoining structural extension divided by a vertical seam.",
+  "caption": "The same robot budget splits into short-lived machines and long-lived building shell, and the drawings decide which line gets the fast write-off.",
+  "title": "Your Robot Budget'S 39-Year Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-robot-budget-39-year-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 402462,
+  "sha256": "sha256:7cf136ece97707c60fa2503a5b6c8ef33283d83a333cedfb96db92019e88fe4d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402462,
+    "quality": 76,
+    "sha256": "sha256:7cf136ece97707c60fa2503a5b6c8ef33283d83a333cedfb96db92019e88fe4d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e001bef7c2beca9aa539b49a651c1a38fd2f7ac360c0b3d122c5a7d3b379eff8",
+  "render_phash": "717f39bf3b5f3eaf1da3392b35d335ab31d331a319e31cc31e87098b0d87070f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric cutaway of a concrete-floored industrial building split by a vertical seam, with the left half showing a maze of steel racking, conveyor rails, gray bins and two yellow robot carriers, and the right half showing the same footprint as a bare structural steel frame with empty poured slab floors and orange guardrails.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.87,
+    "reason": "The diptych literally separates the fitted robot automation equipment from the bare structural steel and new slab, which is the article's mechanism of two assets under one invoice with different write-off schedules."
+  },
+  "source_hash": "sha256:d4686b60ae2d528ef45b719f03e08b1b",
+  "source_chars": 5516,
+  "task_id": "38b59fccd25ffd27d328ffd4597eb1fb",
+  "credits": 18.0,
+  "cost_ms": 76,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1793822607988-jazgfrtygu.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a warehouse aisle concrete floor, a clean isometric cutaway model of an automation project stands. Left side: existing concrete shell with a goods-to-person robot grid, a steel mezzanine deck, and a yellow robot shuttle on rails. Right side: an adjoining structural steel extension with a freshly poured slab and exposed frame columns. A vertical seam splits the two halves. One directional light from upper left rakes across brushed steel and concrete, graphite and concrete grey with safety yellow accents, thin consistent line weight, axonometric projection, 35mm lens with shallow depth of field on the foreground model, fine film grain, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T20:03:33+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE ROBOTICS CAPEX // 39-YEAR WRITE-OFF",
+    "title": "YOUR ROBOT BUDGET'S 39-YEAR GAP",
+    "hook": "One invoice, two schedules, a $682,000 first-year gap",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.7,
+    "target": 4.5,
+    "clutter": 0.145,
+    "region_rgb": [
+      93,
+      93,
+      88
+    ],
+    "binding_rgb": [
+      112,
+      113,
+      107
+    ],
+    "title_lines": [
+      "YOUR ROBOT",
+      "BUDGET'S 39-YEAR GAP"
+    ],
+    "subject": 0.097,
+    "ink_subject": 0.049,
+    "spike": 0.288,
+    "generated_at": "2026-11-04T20:03:33+00:00"
+  }
+}
