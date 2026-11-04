@@ -300,6 +300,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-04 | gpu_hardware | seven-slices-89-percent-one-card | Seven Slices Won't Buy 89% | https://pressflow.aichieve.net/published/2026-11-04_seven-slices-89-percent-one-card.md | reader site only |
 | 2026-11-04 | enterprise_build_vs_buy | your-support-bill-an-engineer-at-190k | Cloud Support Costs: An Engineer at $190K | https://pressflow.aichieve.net/published/2026-11-04_your-support-bill-an-engineer-at-190k.md | reader site only |
 | 2026-11-04 | warehouse_automation_robotics_capex | your-robot-budget-39-year-gap | Your Robot Budget's 39-Year Gap | https://pressflow.aichieve.net/published/2026-11-04_your-robot-budget-39-year-gap.md | reader site only |
+| 2026-11-04 | property_loss_insurance_mitigation | your-70-limits-12-5-gap | Your 70% Limit's 12.5% Gap | https://pressflow.aichieve.net/published/2026-11-04_your-70-limits-12-5-gap.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

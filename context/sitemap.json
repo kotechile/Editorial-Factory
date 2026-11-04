@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T19:56:37Z",
+  "updated_at": "2026-11-04T20:18:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5400,6 +5400,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://wellroost.com/your-43-cut-hides-751000-hikes/"
+    },
+    {
+      "slug": "2026-11-04_your-70-limits-12-5-gap",
+      "title": "Your 70% Limit's 12.5% Gap",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The line is a moving target",
+        "By the numbers",
+        "Where the trade looks first",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-04",
+      "public": false
     },
     {
       "slug": "2026-11-04_your-agent-deletes-ask-nobody",

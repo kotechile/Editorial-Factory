@@ -424,3 +424,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-04 | `seven-slices-89-percent-one-card` | gpu_hardware | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/seven-slices-89-percent-one-card/featured.jpg` |
 | 2026-11-04 | `your-support-bill-an-engineer-at-190k` | enterprise_build_vs_buy | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-support-bill-an-engineer-at-190k/featured.jpg` |
 | 2026-11-04 | `your-robot-budget-39-year-gap` | warehouse_automation_robotics_capex | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-robot-budget-39-year-gap/featured.jpg` |
+| 2026-11-04 | `your-70-limits-12-5-gap` | property_loss_insurance_mitigation | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-70-limits-12-5-gap/featured.jpg` |

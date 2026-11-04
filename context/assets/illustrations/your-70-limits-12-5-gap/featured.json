@@ -1,0 +1,114 @@
+{
+  "slug": "your-70-limits-12-5-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Roof eave assembly with a 12.5 percent rafter gap in an attic",
+      "caption": "A deliberately short rafter in an attic assembly makes visible the 12.5 percent coverage gap below the 80 percent insurance-to-value line.",
+      "title": "70 Percent Limit's 12.5 Percent Gap Attic Assembly",
+      "bytes": 380206,
+      "sha256": "sha256:f6dd5c1da8ad8e0fc3868c29b5059376"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An attic roof eave assembly on a plywood workbench: two pine rafters, galvanized steel connector plates, and a rafter tail deliberately cut short so a 12.5 percent gap opens against the top plate. A single key light from the left rakes low across wood grain and brushed steel, casting one long contact shadow; bone white, graphite, deep pine green; 100mm macro lens, shallow depth of field, hard clean edges, extreme asymmetry with the gap off-centre on the left third, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "This is a single numerical rule with a measured shortfall, best expressed as a precise modular assembly of real building parts. Component assembly uses hard clean edges, one directional key light, and generous negative space to make the structural gap legible at small card size.",
+  "cue": "a 12.5 percent gap",
+  "subject": "a residential roof eave assembly with a rafter intentionally short by 12.5 percent against the top plate",
+  "core_thesis": "Below the 80 percent insurance-to-value line, a homeowners policy pays the greater of actual cash value and the limit-to-threshold ratio, so a 70 percent limit sets a 12.5 percent partial-loss gap and a $180,000 total-loss ceiling.",
+  "core_conflict": "A static declarations-page limit versus moving replacement cost, where the ratio-driven payout gap grows with the size of the loss rather than arriving as a flat penalty.",
+  "composition": "extreme asymmetry with the gap off-centre on the left third",
+  "alt_text": "70% Limit'S 12.5% Gap. Roof eave assembly with a 12.5 percent rafter gap in an attic",
+  "caption": "70% Limit'S 12.5% Gap: The 80% line prorates repairs, not just total losses.",
+  "title": "70% Limit'S 12.5% Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-70-limits-12-5-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 393008,
+  "sha256": "sha256:543301b39cc8b2d0f1174ba04249d0b60c049d67c6953eccf47c5d16bc061329",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 393008,
+    "quality": 80,
+    "sha256": "sha256:543301b39cc8b2d0f1174ba04249d0b60c049d67c6953eccf47c5d16bc061329",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:5f8117813686cf0822c722bc4f652880a6c3353c5b2dbebf05f62335a9a574c7",
+  "render_phash": "6b9c631c665e6edc1cc12c976e8f63c767014e666e732ce38cf9e7b0b1fcac3f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Close-up of pressure-treated lumber members joined with galvanized metal connector plates, with two angled rafter ends stopping short of one another above a horizontal plate, leaving a visible gap offset toward the left third of the frame.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame renders the article's core mechanism \u2014 a structural shortfall between what is required and what is supplied \u2014 as a rafter ending short of its plate, though a reader might read it only as generic framing carpentry rather than insurance-to-value."
+  },
+  "source_hash": "sha256:81d253f4138026e63d5137f898c873fa",
+  "source_chars": 4990,
+  "task_id": "5d441afde6c4bed20671f295e876f623",
+  "credits": 18.0,
+  "cost_ms": 107,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1793823397970-nriksq2j69c.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "An attic roof eave assembly on a plywood workbench: two pine rafters, galvanized steel connector plates, and a rafter tail deliberately cut short so a 12.5 percent gap opens against the top plate. A single key light from the left rakes low across wood grain and brushed steel, casting one long contact shadow; bone white, graphite, deep pine green; 100mm macro lens, shallow depth of field, hard clean edges, extreme asymmetry with the gap off-centre on the left third, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T20:16:45+00:00",
+  "overlay": {
+    "kicker": "HOMEOWNERS UNDERINSURANCE // 80% RULE",
+    "title": "70% LIMIT'S 12.5% GAP",
+    "hook": "The 80% line prorates repairs, not just total losses",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 60,
+    "contrast": 6.0,
+    "target": 5.5,
+    "clutter": 0.352,
+    "region_rgb": [
+      58,
+      61,
+      52
+    ],
+    "binding_rgb": [
+      121,
+      117,
+      108
+    ],
+    "title_lines": [
+      "70% LIMIT'S 12.5%",
+      "GAP"
+    ],
+    "subject": 0.048,
+    "ink_subject": 0.023,
+    "spike": 0.149,
+    "generated_at": "2026-11-04T20:16:45+00:00"
+  }
+}
