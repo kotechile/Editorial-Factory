@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T00:38:17Z",
+  "updated_at": "2026-11-04T11:12:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5282,6 +5282,24 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-03",
+      "public": false
+    },
+    {
+      "slug": "2026-11-04_your-10-minute-spike-bills-an-hour",
+      "title": "Your 10-Minute Spike Bills an Hour",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The loop that outlives its trigger",
+        "By the numbers",
+        "What the operators are already doing",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-04",
       "public": false
     }
   ]

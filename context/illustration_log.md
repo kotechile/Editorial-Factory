@@ -413,3 +413,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-03 | `your-zigbee-hub-32-device-ceiling` | smart_home_telemetry | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-zigbee-hub-32-device-ceiling/featured.jpg` |
 | 2026-11-03 | `your-cold-chain-blind-spot` | control_tower_exception_orchestration | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cold-chain-blind-spot/featured.jpg` |
 | 2026-11-04 | `your-cold-chain-blind-spot` | control_tower_exception_orchestration | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cold-chain-blind-spot/featured.jpg` |
+| 2026-11-04 | `your-10-minute-spike-bills-an-hour` | agentic_resilience_failure | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-10-minute-spike-bills-an-hour/featured.jpg` |

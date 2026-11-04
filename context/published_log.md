@@ -289,6 +289,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-03 | enterprise_tech_leadership | your-pool-becomes-2000-connections | Your Pool Becomes 2,000: A Memory Trap | https://pressflow.aichieve.net/published/2026-11-03_your-pool-becomes-2000-connections.md | reader site only |
 | 2026-11-03 | smart_home_telemetry | your-zigbee-hub-32-device-ceiling | Your Zigbee Hub's Silent 32-Device Cap | https://pressflow.aichieve.net/published/2026-11-03_your-zigbee-hub-32-device-ceiling.md | reader site only |
 | 2026-11-03 | control_tower_exception_orchestration | your-cold-chain-blind-spot | Your Cold Chain Blind Spot: 45 Minutes | https://pressflow.aichieve.net/published/2026-11-03_your-cold-chain-blind-spot.md | reader site only |
+| 2026-11-04 | agentic_resilience_failure | your-10-minute-spike-bills-an-hour | Your 10-Minute Spike Bills an Hour | https://pressflow.aichieve.net/published/2026-11-04_your-10-minute-spike-bills-an-hour.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,0 +1,114 @@
+{
+  "slug": "your-10-minute-spike-bills-an-hour",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Paper loop of interlocking rectangular session tokens, one yellow token reattaching, representing cache eviction and recompute.",
+      "caption": "A paper loop of interlocking session tokens shows how burst-created sessions keep each other alive after the traffic spike ends.",
+      "title": "Self-Reinforcing Session Loop Paper Collage",
+      "bytes": 405834,
+      "sha256": "sha256:d84af427d6d27c068e63505baeb3b6d5"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a steel workbench in a control room, a paper collage assembly: a continuous loop made of many identical rectangular session tokens cut from hand-torn graphite and bone-white rag paper, interlocked edge-to-edge, with one safety-yellow token detached and reattaching to the loop. One raking light from the left casts long sharp shadows. Extreme asymmetry, the loop off-center, generous negative space. No text or lettering.",
+  "negative_prompt": "garbled text, random lettering, watermark, signature, numbers, UI elements",
+  "rationale": "The article is a purely conceptual software-system failure with no physical facility or machine as the protagonist. Paper collage allows an elegant abstract silhouette of a self-perpetuating loop that states the core mechanism without literal datacenter clich\u00e9s, and it has not been used recently.",
+  "cue": "the sessions the surge created keep each other alive",
+  "subject": "a paper loop of interlocking rectangular session tokens, with one token reattaching",
+  "core_thesis": "A short traffic surge can leave an agent-serving engine slower at the same load because burst-created sessions keep each other alive through cache eviction and recompute, so recovery depends on the state left behind rather than current load.",
+  "core_conflict": "Self-reinforcing session retention from the surge versus limited cache capacity, where the working set crosses a cliff and triggers repeated recompute loops that outlast the triggering burst.",
+  "composition": "extreme asymmetry with the loop off-center and generous negative space",
+  "alt_text": "Your 10-Minute Spike Bills An Hour. Paper loop of interlocking rectangular session tokens, one yellow token reattaching, representing cache",
+  "caption": "Your 10-Minute Spike Bills An Hour: A ten-minute surge cut goodput 88% for later sessions.",
+  "title": "Your 10-Minute Spike Bills An Hour",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-10-minute-spike-bills-an-hour/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389637,
+  "sha256": "sha256:5cd44c5cedb0251a642fb86264134806b270aed066dab8816ce275f4e447c2be",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389637,
+    "quality": 76,
+    "sha256": "sha256:5cd44c5cedb0251a642fb86264134806b270aed066dab8816ce275f4e447c2be",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ec1bf85204276eb5ba6ff3ce59ec2715d811110dd8739e7438ce5d086bc48e98",
+  "render_phash": "7cd5d6e99dde25e78f791dde33af372f333d966b96e3cb71e339e699f3ede175",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A ring of torn rectangular paper scraps in alternating dark gray and light beige lies on a scratched metal workbench in a dim workshop, with one bright yellow paper card standing upright and tucked into the ring at the lower right, and milling/metering equipment blurred in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame realizes the ordered metaphor of a closed loop of interlocking session tokens with one token reattaching, which maps onto the article's self-sustaining session loop, though the surge-versus-recovery claim itself is only implied by the ring's closure rather than shown."
+  },
+  "source_hash": "sha256:62a7ef974fdeffbbca8e3681bed14e8e",
+  "source_chars": 6954,
+  "task_id": "6b1b58d70e849eb7fe156a98ed1280c5",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6e9dad6330046b6e7b780230ab3c4a81.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a steel workbench in a control room, a paper collage assembly: a continuous loop made of many identical rectangular session tokens cut from hand-torn graphite and bone-white rag paper, interlocked edge-to-edge, with one safety-yellow token detached and reattaching to the loop. One raking light from the left casts long sharp shadows. Extreme asymmetry, the loop off-center, generous negative space. No text or lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T11:11:13+00:00",
+  "overlay": {
+    "kicker": "AGENTIC SERVING // PREFIX CACHE FAILURE",
+    "title": "YOUR 10-MINUTE SPIKE BILLS AN HOUR",
+    "hook": "A ten-minute surge cut goodput 88% for later sessions",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.64,
+    "target": 4.5,
+    "clutter": 0.248,
+    "region_rgb": [
+      30,
+      30,
+      23
+    ],
+    "binding_rgb": [
+      41,
+      41,
+      33
+    ],
+    "title_lines": [
+      "YOUR 10-MINUTE",
+      "SPIKE BILLS AN HOUR"
+    ],
+    "subject": 0.091,
+    "ink_subject": 0.043,
+    "spike": 0.28,
+    "generated_at": "2026-11-04T11:11:13+00:00"
+  }
+}
