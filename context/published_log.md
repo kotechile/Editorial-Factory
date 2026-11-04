@@ -292,6 +292,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-04 | agentic_resilience_failure | your-10-minute-spike-bills-an-hour | Your 10-Minute Spike Bills an Hour | https://pressflow.aichieve.net/published/2026-11-04_your-10-minute-spike-bills-an-hour.md | reader site only |
 | 2026-11-04 | multi_agent_enterprise_fabric | your-agent-deletes-ask-nobody | 60.7% of Agent Deletes Ask Nobody | https://pressflow.aichieve.net/published/2026-11-04_your-agent-deletes-ask-nobody.md | reader site only |
 | 2026-11-04 | gpu_hardware | 18x-lpddr-isnt-18tbs | 18x LPDDR Isn't 18 TB/s | https://pressflow.aichieve.net/published/2026-11-04_18x-lpddr-isnt-18tbs.md | reader site only |
+| 2026-11-04 | enterprise_build_vs_buy | your-2-silent-agent-hooks | Your 2 Silent Agent Hooks | https://pressflow.aichieve.net/published/2026-11-04_your-2-silent-agent-hooks.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
