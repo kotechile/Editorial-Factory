@@ -4,8 +4,8 @@
   "history": [
     {
       "revision": 1,
-      "alt_text": "Roof eave assembly with a 12.5 percent rafter gap in an attic",
-      "caption": "A deliberately short rafter in an attic assembly makes visible the 12.5 percent coverage gap below the 80 percent insurance-to-value line.",
+      "alt_text": "Two pine rafters on a weathered workbench, one cut short so a gap opens against the wall plate.",
+      "caption": "A rafter cut short of its plate: below the 80 percent line, the policy prorates the repair, not only the total loss.",
       "title": "70 Percent Limit's 12.5 Percent Gap Attic Assembly",
       "bytes": 380206,
       "sha256": "sha256:f6dd5c1da8ad8e0fc3868c29b5059376"
@@ -13,7 +13,7 @@
   ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point — with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -27,8 +27,8 @@
   "core_thesis": "Below the 80 percent insurance-to-value line, a homeowners policy pays the greater of actual cash value and the limit-to-threshold ratio, so a 70 percent limit sets a 12.5 percent partial-loss gap and a $180,000 total-loss ceiling.",
   "core_conflict": "A static declarations-page limit versus moving replacement cost, where the ratio-driven payout gap grows with the size of the loss rather than arriving as a flat penalty.",
   "composition": "extreme asymmetry with the gap off-centre on the left third",
-  "alt_text": "70% Limit'S 12.5% Gap. Roof eave assembly with a 12.5 percent rafter gap in an attic",
-  "caption": "70% Limit'S 12.5% Gap: The 80% line prorates repairs, not just total losses.",
+  "alt_text": "Two pine rafters on a weathered workbench, one cut short so a gap opens against the wall plate.",
+  "caption": "A rafter cut short of its plate: below the 80 percent line, the policy prorates the repair, not only the total loss.",
   "title": "70% Limit'S 12.5% Gap",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.62,
-    "reason": "The frame renders the article's core mechanism \u2014 a structural shortfall between what is required and what is supplied \u2014 as a rafter ending short of its plate, though a reader might read it only as generic framing carpentry rather than insurance-to-value."
+    "reason": "The frame renders the article's core mechanism — a structural shortfall between what is required and what is supplied — as a rafter ending short of its plate, though a reader might read it only as generic framing carpentry rather than insurance-to-value."
   },
   "source_hash": "sha256:81d253f4138026e63d5137f898c873fa",
   "source_chars": 4990,

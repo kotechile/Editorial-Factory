@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T20:18:04Z",
+  "updated_at": "2026-11-04T20:21:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5342,7 +5342,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/seven-slices-89-percent-one-card/"
     },
     {
       "slug": "2026-11-04_your-10-minute-spike-bills-an-hour",
@@ -5412,12 +5413,13 @@
         "By the numbers",
         "Where the trade looks first",
         "The catch",
-        "Related reading",
-        "At a glance"
+        "At a glance",
+        "Related reading"
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-70-limits-12-5-gap/"
     },
     {
       "slug": "2026-11-04_your-agent-deletes-ask-nobody",
@@ -5454,7 +5456,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-robot-budget-39-year-gap/"
     },
     {
       "slug": "2026-11-04_your-router-breaks-275-constraints",
@@ -5491,7 +5494,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-support-bill-an-engineer-at-190k/"
     },
     {
       "slug": "2026-11-04_your-undo-is-14-6x-cheaper",
