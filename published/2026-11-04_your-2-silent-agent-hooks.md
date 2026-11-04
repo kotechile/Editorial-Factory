@@ -8,8 +8,14 @@ date: 2026-11-04
 slug: your-2-silent-agent-hooks
 meta_title: "Your 2 Silent Agent Hooks"
 meta_title_source: "derived_from_title"
-meta_description: "On 24 October, one signed-in Mac opened Postman 12.33.4 and the app quietly changed two coding agents. It added a Postman plugin to Codex and another to…"
+meta_description: "Postman's desktop update installed plugins into two coding agents and wrote a startup hook, 19 days after the vendor began licensing agents as seats."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-2-silent-agent-hooks/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A grey clay-rendered server chassis with an open side panel and a plugin cartridge half-inserted, on a concrete floor before a rack row."
+image_caption: "An unbranded chassis with a plugin cartridge half-inserted: the client plants its plugin where the agent reads its instructions."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

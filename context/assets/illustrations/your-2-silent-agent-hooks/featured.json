@@ -1,0 +1,114 @@
+{
+  "slug": "your-2-silent-agent-hooks",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An unbranded developer workstation chassis with a plugin cartridge half-inserted into an agent bay on a concrete floor.",
+      "caption": "A plugin cartridge slides into an unlisted agent slot on a developer workstation, silently expanding the cost beyond the purchased seat count.",
+      "title": "Silent agent hook in developer workstation",
+      "bytes": 385133,
+      "sha256": "sha256:4a42a77e51bbe336e63891435f832f4c"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay model of an unbranded developer workstation chassis on a weathered concrete floor in a dark server room. The chassis is an open clamshell with a slotted modular agent bay; a bone white plugin cartridge with two copper contact pins is half-inserted into the left slot; a second empty steel slot sits to its right, and a latched graphite cover hangs ajar. Low raking light from the left casts long contact shadows, extreme asymmetry with the assembly off-centre left and generous empty right margin, matte graphite, bone white, and copper palette, no text, no labels, no screen characters.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, labels, screen characters, numbers",
+  "rationale": "The story is structural and abstract: a desktop app modifies agent settings, creating a gap between seats and agents. A matte clay 3D render lets us state that mechanism as a small mechanical assembly — a plugin entering a workstation bay — without falling into generic screenshots or datacenter clichés.",
+  "cue": "the app quietly changed two coding agents",
+  "subject": "an unbranded developer workstation chassis with a plugin cartridge entering a modular agent bay",
+  "core_thesis": "A desktop developer tool now installs itself into the coding agents on a workstation, so the real cost of buying it is counted in agent settings your inventory does not list and priced in agents your seat count does not cover.",
+  "core_conflict": "The published per-user seat license collides with the actual agent count silently added to each developer's workstation, so purchasing and inventory no longer describe the same fleet.",
+  "composition": "extreme asymmetry, hero assembly off-centre left, empty right side for editorial negative space",
+  "alt_text": "A grey clay-rendered server chassis with an open side panel and a plugin cartridge half-inserted, on a concrete floor before a rack row.",
+  "caption": "An unbranded chassis with a plugin cartridge half-inserted: the client plants its plugin where the agent reads its instructions.",
+  "title": "Postman Hooks Your Coding Agents",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-2-silent-agent-hooks/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407104,
+  "sha256": "sha256:1394403ce201217e5ba8bfaf2ad0672e337d4bedc96fffb7713723b4815c0fe1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407104,
+    "quality": 80,
+    "sha256": "sha256:1394403ce201217e5ba8bfaf2ad0672e337d4bedc96fffb7713723b4815c0fe1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ad0c8b90f2f6dfa635ff040961a0e4da03dd2505a7c03ad4a6ea12005fe5af69",
+  "render_phash": "a826902cdd26f0ae8c3e931e131e4b4bc30bcce9fc63e1e9c1f10137002f087f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A matte-rendered, doorless grey box-chassis sits slightly left of centre on a cracked concrete floor, with a pale plug-like cartridge carrying two copper pins slid into a slot on its open left side, a hinged lid leaning against its right flank, and dark server racks standing in the dim background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The cartridge entering a modular bay is the article's own mechanism — a plugin being installed into an agent slot on a workstation — so the metaphor lands, though the unbranded clay-like chassis reads somewhat generically as hardware rather than specifically as coding agents."
+  },
+  "source_hash": "sha256:1416114c327b0248ef01b1e1d16bf909",
+  "source_chars": 5207,
+  "task_id": "8591aff37be909f2beff9e4283bde0f5",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_3c901c1f39ef5bbac72031ebae50241e.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay model of an unbranded developer workstation chassis on a weathered concrete floor in a dark server room. The chassis is an open clamshell with a slotted modular agent bay; a bone white plugin cartridge with two copper contact pins is half-inserted into the left slot; a second empty steel slot sits to its right, and a latched graphite cover hangs ajar. Low raking light from the left casts long contact shadows, extreme asymmetry with the assembly off-centre left and generous empty right margin, matte graphite, bone white, and copper palette, no text, no labels, no screen characters.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T12:28:03+00:00",
+  "overlay": {
+    "kicker": "API TOOLING // SILENT AGENT HOOKS",
+    "title": "POSTMAN HOOKS YOUR CODING AGENTS",
+    "hook": "Your API client now plants hooks in coding agents",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 17.04,
+    "target": 4.5,
+    "clutter": 0.1,
+    "region_rgb": [
+      9,
+      8,
+      4
+    ],
+    "binding_rgb": [
+      10,
+      11,
+      5
+    ],
+    "title_lines": [
+      "POSTMAN HOOKS",
+      "YOUR CODING AGENTS"
+    ],
+    "subject": 0.042,
+    "ink_subject": 0.018,
+    "spike": 0.137,
+    "generated_at": "2026-11-04T12:28:03+00:00"
+  }
+}

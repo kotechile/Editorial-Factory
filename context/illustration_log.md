@@ -416,3 +416,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-04 | `your-10-minute-spike-bills-an-hour` | agentic_resilience_failure | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-10-minute-spike-bills-an-hour/featured.jpg` |
 | 2026-11-04 | `your-agent-deletes-ask-nobody` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-agent-deletes-ask-nobody/featured.jpg` |
 | 2026-11-04 | `18x-lpddr-isnt-18tbs` | gpu_hardware | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/18x-lpddr-isnt-18tbs/featured.jpg` |
+| 2026-11-04 | `your-2-silent-agent-hooks` | enterprise_build_vs_buy | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-2-silent-agent-hooks/featured.jpg` |
