@@ -1,112 +1,112 @@
 {
-  "slug": "your-router-breaks-275-constraints",
-  "revision": 2,
-  "history": [
-    {
-      "revision": 1,
-      "alt_text": "Optical beam-splitter prism splitting light into parallel deterministic beams in a data hall",
-      "caption": "A deterministic routing path, written as code, sends parallel beams straight through the request flow while the model-chosen branch fades into shadow.",
-      "title": "Deterministic Routing Prism",
-      "bytes": 176806,
-      "sha256": "sha256:04a7b662f2fd7777cf3ceb6ef1aab1ab"
-    }
-  ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
-  "model_note": "",
-  "aspect_ratio": "16:9",
-  "resolution": "1K",
-  "prompt": "In a data hall, a heavy optical beam-splitter prism on a brushed steel pedestal sits on charcoal concrete, off-center left. A single cold white beam enters from the left and splits into three straight cobalt-blue parallel beams that follow recessed floor rails toward a rack row, while a dim scattered branch bends right and fades into shadow. Shallow depth of field, 35mm anamorphic wide with dramatic falloff, deep shadows, rim highlights on steel edges, graphite and cobalt palette, no people, no text, no logos. Extreme asymmetry, negative space upper right.",
-  "negative_prompt": "garbled text, random lettering, watermarks",
-  "rationale": "Cinematic still captures one decisive moment of controlled routing inside an enterprise data hall with strong practical light and atmospheric depth. The optical beam-splitter uses the vertical's allowed optical/photonic vocabulary to avoid a literal datacenter clich\u00e9, and the fixed parallel beams versus a fading offshoot visually embodies the code-versus-model conflict.",
-  "cue": "breaks 275 planning rules on the TravelPlanner test",
-  "subject": "An optical beam-splitter prism on a brushed steel pedestal, splitting a single light path into three straight deterministic beams across a data hall floor.",
-  "core_thesis": "An agent fabric's reliability is set by how much of the request path is code rather than by the model in it: a written blueprint beat the strongest agent baseline 35.56% to 18.00% on the same model with 96% fewer broken constraints.",
-  "core_conflict": "Deterministic code-owned step sequencing versus model-chosen branching that multiplies broken constraints and inconsistent routing.",
-  "composition": "Extreme asymmetry: prism placed on left third, beams running horizontally to right, racks receding in background with shallow depth of field.",
-  "alt_text": "Your Router Breaks 275 Rules. Optical beam-splitter prism splitting light into parallel deterministic beams in a data hall",
-  "caption": "Your Router Breaks 275 Rules: Same model breaks 11 rules when code owns step order.",
-  "title": "Your Router Breaks 275 Rules",
-  "credit": "Illustration: Editorial-Factory Intelligence Unit",
-  "depicts_real_brand": false,
-  "director": "deepseek-v4-pro",
-  "director_attempts": 2,
-  "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/your-router-breaks-275-constraints/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 232442,
-  "sha256": "sha256:66857d49d0578a2cfc72746bffb0689735a643a35fedc9f771670c07e879f8df",
-  "delivery": {
-    "standard": "2026-10-24",
-    "format": "JPEG",
-    "progressive": true,
-    "color_space": "sRGB",
-    "width": 2400,
-    "height": 1350,
-    "aspect": 1.7778,
-    "bytes": 232442,
-    "quality": 88,
-    "sha256": "sha256:66857d49d0578a2cfc72746bffb0689735a643a35fedc9f771670c07e879f8df",
-    "filename_rule": "<slug>-featured.jpg"
-  },
-  "render_sha256": "sha256:328a6f25ad29a308082d4185ecb37c9ab38dda3f47f9d44625193011afce0aa4",
-  "render_phash": "2d7e2b7e29462fce29c667c6fbfe070e27ae2c6f099f083f0a6f2cdf4cbf087f",
-  "review": {
-    "ok": true,
-    "problems": [],
-    "depicts": "A metal prism mounted on a square pedestal on a data-center floor takes a white horizontal beam from the left and emits three blue horizontal beams to the right, with server racks behind and a curved light tube at right.",
-    "legible_text": "",
-    "on_topic": true,
-    "confidence": 0.88,
-    "reason": "The beam-splitter acts as the router splitting a request path into straight deterministic branches, which matches the article's core mechanism."
-  },
-  "source_hash": "sha256:4250c7a8986311104225ddafb89d5b15",
-  "source_chars": 4326,
-  "task_id": "b1df815341fcb7e41b63962549796da0",
-  "credits": 5.0,
-  "cost_ms": 15,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/b1df815341fcb7e41b63962549796da0_1793815931464.jpg",
-  "provider_request": {
-    "model": "flux-2/pro-text-to-image",
-    "input": {
-      "prompt": "In a data hall, a heavy optical beam-splitter prism on a brushed steel pedestal sits on charcoal concrete, off-center left. A single cold white beam enters from the left and splits into three straight cobalt-blue parallel beams that follow recessed floor rails toward a rack row, while a dim scattered branch bends right and fades into shadow. Shallow depth of field, 35mm anamorphic wide with dramatic falloff, deep shadows, rim highlights on steel edges, graphite and cobalt palette, no people, no text, no logos. Extreme asymmetry, negative space upper right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
-      "aspect_ratio": "16:9",
-      "resolution": "1K"
-    }
-  },
-  "generated_at": "2026-11-04T18:12:22+00:00",
-  "overlay": {
-    "kicker": "AGENT ROUTING // RELIABILITY GAP",
-    "title": "YOUR ROUTER BREAKS 275 RULES",
-    "hook": "Same model breaks 11 rules when code owns step order",
-    "anchor": "top-right",
-    "light": true,
-    "scrim": 0,
-    "contrast": 14.94,
-    "target": 4.5,
-    "clutter": 0.049,
-    "region_rgb": [
-      18,
-      21,
-      23
-    ],
-    "binding_rgb": [
-      23,
-      27,
-      30
-    ],
-    "title_lines": [
-      "YOUR ROUTER",
-      "BREAKS 275 RULES"
-    ],
-    "subject": 0.002,
-    "ink_subject": 0.002,
-    "spike": 0.0,
-    "generated_at": "2026-11-04T18:12:22+00:00"
+ "slug": "your-router-breaks-275-constraints",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Optical beam-splitter prism splitting light into parallel deterministic beams in a data hall",
+   "caption": "A deterministic routing path, written as code, sends parallel beams straight through the request flow while the model-chosen branch fades into shadow.",
+   "title": "Deterministic Routing Prism",
+   "bytes": 176806,
+   "sha256": "sha256:04a7b662f2fd7777cf3ceb6ef1aab1ab"
   }
+ ],
+ "style": "cinematic_still",
+ "style_label": "Cinematic still",
+ "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "In a data hall, a heavy optical beam-splitter prism on a brushed steel pedestal sits on charcoal concrete, off-center left. A single cold white beam enters from the left and splits into three straight cobalt-blue parallel beams that follow recessed floor rails toward a rack row, while a dim scattered branch bends right and fades into shadow. Shallow depth of field, 35mm anamorphic wide with dramatic falloff, deep shadows, rim highlights on steel edges, graphite and cobalt palette, no people, no text, no logos. Extreme asymmetry, negative space upper right.",
+ "negative_prompt": "garbled text, random lettering, watermarks",
+ "rationale": "Cinematic still captures one decisive moment of controlled routing inside an enterprise data hall with strong practical light and atmospheric depth. The optical beam-splitter uses the vertical's allowed optical/photonic vocabulary to avoid a literal datacenter clich\u00e9, and the fixed parallel beams versus a fading offshoot visually embodies the code-versus-model conflict.",
+ "cue": "breaks 275 planning rules on the TravelPlanner test",
+ "subject": "An optical beam-splitter prism on a brushed steel pedestal, splitting a single light path into three straight deterministic beams across a data hall floor.",
+ "core_thesis": "An agent fabric's reliability is set by how much of the request path is code rather than by the model in it: a written blueprint beat the strongest agent baseline 35.56% to 18.00% on the same model with 96% fewer broken constraints.",
+ "core_conflict": "Deterministic code-owned step sequencing versus model-chosen branching that multiplies broken constraints and inconsistent routing.",
+ "composition": "Extreme asymmetry: prism placed on left third, beams running horizontally to right, racks receding in background with shallow depth of field.",
+ "alt_text": "A steel prism on a pedestal in a dark data hall, one beam of light fanning into three parallel paths.",
+ "caption": "One beam, split into parallel paths: a written procedure decides the route, and the model only fills one step.",
+ "title": "Your Router Breaks 275 Rules",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 2,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-router-breaks-275-constraints/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 232442,
+ "sha256": "sha256:66857d49d0578a2cfc72746bffb0689735a643a35fedc9f771670c07e879f8df",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 232442,
+  "quality": 88,
+  "sha256": "sha256:66857d49d0578a2cfc72746bffb0689735a643a35fedc9f771670c07e879f8df",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:328a6f25ad29a308082d4185ecb37c9ab38dda3f47f9d44625193011afce0aa4",
+ "render_phash": "2d7e2b7e29462fce29c667c6fbfe070e27ae2c6f099f083f0a6f2cdf4cbf087f",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A metal prism mounted on a square pedestal on a data-center floor takes a white horizontal beam from the left and emits three blue horizontal beams to the right, with server racks behind and a curved light tube at right.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.88,
+  "reason": "The beam-splitter acts as the router splitting a request path into straight deterministic branches, which matches the article's core mechanism."
+ },
+ "source_hash": "sha256:4250c7a8986311104225ddafb89d5b15",
+ "source_chars": 4326,
+ "task_id": "b1df815341fcb7e41b63962549796da0",
+ "credits": 5.0,
+ "cost_ms": 15,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/b1df815341fcb7e41b63962549796da0_1793815931464.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "In a data hall, a heavy optical beam-splitter prism on a brushed steel pedestal sits on charcoal concrete, off-center left. A single cold white beam enters from the left and splits into three straight cobalt-blue parallel beams that follow recessed floor rails toward a rack row, while a dim scattered branch bends right and fades into shadow. Shallow depth of field, 35mm anamorphic wide with dramatic falloff, deep shadows, rim highlights on steel edges, graphite and cobalt palette, no people, no text, no logos. Extreme asymmetry, negative space upper right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-04T18:12:22+00:00",
+ "overlay": {
+  "kicker": "AGENT ROUTING // RELIABILITY GAP",
+  "title": "YOUR ROUTER BREAKS 275 RULES",
+  "hook": "Same model breaks 11 rules when code owns step order",
+  "anchor": "top-right",
+  "light": true,
+  "scrim": 0,
+  "contrast": 14.94,
+  "target": 4.5,
+  "clutter": 0.049,
+  "region_rgb": [
+   18,
+   21,
+   23
+  ],
+  "binding_rgb": [
+   23,
+   27,
+   30
+  ],
+  "title_lines": [
+   "YOUR ROUTER",
+   "BREAKS 275 RULES"
+  ],
+  "subject": 0.002,
+  "ink_subject": 0.002,
+  "spike": 0.0,
+  "generated_at": "2026-11-04T18:12:22+00:00"
+ }
 }

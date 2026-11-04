@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-router-breaks-275-constraints/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Your Router Breaks 275 Rules. Optical beam-splitter prism splitting light into parallel deterministic beams in a data hall"
-image_caption: "Your Router Breaks 275 Rules: Same model breaks 11 rules when code owns step order."
+image_alt: "A steel prism on a pedestal in a dark data hall, one beam of light fanning into three parallel paths."
+image_caption: "One beam, split into parallel paths: a written procedure decides the route, and the model only fills one step."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -54,6 +54,15 @@ The batch result has the same edge. Splitting the work adds a set cost in extra 
 
 What I keep circling is that a split of the same work is not a wide fan-out: a fan-out sends several branches out and multiplies the context each one carries, while a split divides that context. One buys reach, the other buys room under load, and a fabric that confuses them buys the wrong one.
 
+
+
+<!-- tldr -->
+## At a glance
+
+**The shift:** Fabric teams are moving the order of steps out of the model and into code, leaving the model one narrow job.
+**The number:** 35.56% of tasks passed on the blueprint, against 18.00% for the strongest agent baseline.
+**The risk:** The gain fades where the steps cannot be known in advance.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -66,13 +75,6 @@ What I keep circling is that a split of the same work is not a wide fan-out: a f
 - [60.7% of Agent Deletes Ask Nobody](/your-agent-deletes-ask-nobody/) — more on Autonomous & Agentic Workflows
 - [Answer Field First Costs 38.15 Points](/answer-field-first-costs-38-points/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-## At a glance
-
-**The shift:** Fabric teams are moving the order of steps out of the model and into code, leaving the model one narrow job.
-**The number:** 35.56% of tasks passed on the blueprint, against 18.00% for the strongest agent baseline.
-**The risk:** The gain fades where the steps cannot be known in advance.
 
 ## Sources
 [1] Libin Qiu, Yuhang Ye, Zhirong Gao et al., "Blueprint First, Model Second: A Framework for Deterministic LLM Workflow" (arXiv:2508.02721v2, revised 16 June 2026) — https://arxiv.org/html/2508.02721v2
