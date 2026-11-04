@@ -1,0 +1,112 @@
+{
+ "slug": "your-agent-deletes-ask-nobody",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Empty control room approval-gate panel with three rows of toggle switches all off, dark server racks behind.",
+   "caption": "Three banks of industrial approval toggles sit in the off position in an unstaffed control room while an agent deletion runs.",
+   "title": "Three Off Approval Toggle Banks in Control Room",
+   "bytes": 297187,
+   "sha256": "sha256:c181f5d070523551ca2e1190ecf26eba"
+  }
+ ],
+ "style": "cinematic_still",
+ "style_label": "Cinematic still",
+ "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "In a control room, an unstaffed brushed-steel approval-gate panel carrying three separate banks of industrial toggle switches, every switch thrown to the off position, is mounted on a charcoal rack. A single overhead practical lamp from the left rakes across the metal, throwing deep shadows and a long cast shadow onto the concrete floor. Graphite, charcoal and safety yellow palette, 35mm anamorphic wide, shallow depth of field, fine film grain, extreme asymmetry with the panel off-center right and dark rack rows receding left, no people, no text, no logos.",
+ "negative_prompt": "garbled text, random lettering, watermarks",
+ "rationale": "Cinematic still captures the decisive empty control room where an agent deletion executes with no human present; the three off switch banks directly embody the three defaults, and the wide establishing frame gives environmental weight to an otherwise abstract software failure.",
+ "cue": "all three are off",
+ "subject": "three separate banks of industrial toggle switches on a brushed-steel approval-gate panel, all thrown to the off position in an empty control room.",
+ "core_thesis": "A fabric's human approval is a default in three places\u2014skill package, tool tag, and host prompt setting\u2014and measured defaults show none of them fires.",
+ "core_conflict": "Protocol-level recommendation versus app-level default: hosts and servers both point at each other, leaving destructive agent actions unapproved.",
+ "composition": "extreme asymmetry with the approval-gate panel off-center right, dark rack rows receding left, generous negative space.",
+ "alt_text": "Three banks of lever switches on a brushed-steel panel, all thrown down, in an empty dark control room.",
+ "caption": "Three banks of approval toggles sit off in an unstaffed control room while an agent deletion runs.",
+ "title": "60.7% Of Agent Deletes Ask Nobody",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-agent-deletes-ask-nobody/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 348924,
+ "sha256": "sha256:b4c358b6b67c0d5ad68f7a2942727338df1dde713cb52df2b01f7017931d7c5c",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 348924,
+  "quality": 88,
+  "sha256": "sha256:b4c358b6b67c0d5ad68f7a2942727338df1dde713cb52df2b01f7017931d7c5c",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:0080ca866ccbd66d53bf371854717527094d70e7256bc5dbc4eede5e1d0c30cd",
+ "render_phash": "ad737747773f6d3f6d2f773b673b653f673d753f1d3b2d3f7f1f07cf003f1c0c",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A dim industrial control room with a brushed-metal panel mounted off-center right, holding three lever switches all thrown to the down position, dark equipment racks receding to the left, and a single overhead lamp casting a light patch on the concrete floor.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.72,
+  "reason": "The three-thrown-switches panel is a direct visual stand-in for the article's three off-by-default approval gates, so a reader would connect the image to the headline's claim that every approval default fails."
+ },
+ "source_hash": "sha256:20934e3aea0b06a895ae2228cc874bcf",
+ "source_chars": 6454,
+ "task_id": "10607b00b887ee64e9e592720c539d40",
+ "credits": 5.0,
+ "cost_ms": 172,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/10607b00b887ee64e9e592720c539d40_1793791040288.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "In a control room, an unstaffed brushed-steel approval-gate panel carrying three separate banks of industrial toggle switches, every switch thrown to the off position, is mounted on a charcoal rack. A single overhead practical lamp from the left rakes across the metal, throwing deep shadows and a long cast shadow onto the concrete floor. Graphite, charcoal and safety yellow palette, 35mm anamorphic wide, shallow depth of field, fine film grain, extreme asymmetry with the panel off-center right and dark rack rows receding left, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-04T11:17:25+00:00",
+ "overlay": {
+  "kicker": "AGENT DELETES // APPROVAL DEFAULTS",
+  "title": "60.7% OF AGENT DELETES ASK NOBODY",
+  "hook": "The approval step is three defaults, and all three are off",
+  "anchor": "top-left",
+  "light": true,
+  "scrim": 0,
+  "contrast": 11.08,
+  "target": 4.5,
+  "clutter": 0.078,
+  "region_rgb": [
+   36,
+   37,
+   36
+  ],
+  "binding_rgb": [
+   50,
+   50,
+   48
+  ],
+  "title_lines": [
+   "60.7% OF AGENT",
+   "DELETES ASK NOBODY"
+  ],
+  "subject": 0.001,
+  "ink_subject": 0.001,
+  "spike": 0.0,
+  "generated_at": "2026-11-04T11:17:25+00:00"
+ }
+}

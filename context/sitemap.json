@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T11:12:20Z",
+  "updated_at": "2026-11-04T11:18:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5299,6 +5299,24 @@
         "At a glance"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-11-04",
+      "public": false
+    },
+    {
+      "slug": "2026-11-04_your-agent-deletes-ask-nobody",
+      "title": "60.7% of Agent Deletes Ask Nobody",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Two parties, no owner",
+        "By the numbers",
+        "Where this gets decided",
+        "What the numbers do not cover",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-04",
       "public": false
     }
