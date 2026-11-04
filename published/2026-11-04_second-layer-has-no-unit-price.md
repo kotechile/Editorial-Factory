@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/second-layer-has-no-unit-price/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Walmart'S $6B, Same 25 Buildings. Warehouse automation floor with building-scale robotic arms, mobile robots, and a corrugated case"
-image_caption: "Walmart'S $6B, Same 25 Buildings: Walmart's $6B deal prices a building, not a robot."
+image_alt: "Split isometric cutaway of a warehouse: robotic arms over a conveyor on the left, a fleet of mobile robots carrying totes on the right."
+image_caption: "The building-scale cell and the mobile fleet meet at one case on the conveyor."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
