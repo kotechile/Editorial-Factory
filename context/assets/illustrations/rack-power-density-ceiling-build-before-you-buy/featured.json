@@ -1,7 +1,16 @@
 {
   "slug": "rack-power-density-ceiling-build-before-you-buy",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction.",
+      "caption": "Deploying modern AI hardware requires massive facility upgrades, turning a server deployment into a major infrastructure project.",
+      "title": "AI Rack Infrastructure Construction",
+      "bytes": 372540,
+      "sha256": "sha256:76f643ca5343cfb0946fdc92b7d03c5b"
+    }
+  ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
   "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
@@ -15,9 +24,9 @@
   "rationale": "A cinematic still captures the raw, industrial scale and physical reality of the infrastructure required to support modern AI hardware, visually anchoring the transition from simple hardware to heavy construction.",
   "cue": "a big building job",
   "subject": "massive cooling pipes and copper power conduits in a data center under construction",
-  "alt_text": "Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction.",
-  "caption": "Deploying modern AI hardware requires massive facility upgrades, turning a server deployment into a major infrastructure project.",
-  "title": "AI Rack Infrastructure Construction",
+  "alt_text": "The 40 kW Line. Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction.",
+  "caption": "The 40 kW Line: The build precedes the servers once racks pass 40 kW.",
+  "title": "The 40 kW Line",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +36,8 @@
   "local_path": "context/assets/illustrations/rack-power-density-ceiling-build-before-you-buy/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 372540,
-  "sha256": "sha256:76f643ca5343cfb0946fdc92b7d03c5b",
+  "bytes": 389040,
+  "sha256": "sha256:6f393257d8020017bcdf485b1f21515d8baf9eecd175adbf9863148b60af1994",
   "source_hash": "sha256:2ae4c7858836559bd8bfa785840c6095",
   "source_chars": 4599,
   "task_id": "a246f038881d662db2eaecaf799cfa72",
@@ -43,5 +52,46 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-06T18:12:27+00:00"
+  "generated_at": "2026-10-06T18:12:27+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389040,
+    "quality": 84,
+    "sha256": "sha256:6f393257d8020017bcdf485b1f21515d8baf9eecd175adbf9863148b60af1994",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "AI RACK POWER // COOLING LIMIT",
+    "title": "THE 40 KW LINE",
+    "hook": "The build precedes the servers once racks pass 40 kW",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.64,
+    "target": 4.5,
+    "clutter": 0.229,
+    "region_rgb": [
+      52,
+      52,
+      45
+    ],
+    "binding_rgb": [
+      91,
+      82,
+      65
+    ],
+    "title_lines": [
+      "THE 40 KW LINE"
+    ],
+    "subject": 0.18,
+    "ink_subject": 0.106,
+    "spike": 0.478,
+    "generated_at": "2026-10-06T18:12:27+00:00"
+  }
 }

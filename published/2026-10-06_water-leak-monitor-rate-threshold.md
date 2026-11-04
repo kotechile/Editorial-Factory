@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/water-leak-monitor-rate-threshold/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "An inline water flow sensor module attached to a section of copper tubing against a smooth grey gradient."
-image_caption: "A monitor's value lies in its ability to flag flow rates that exceed a household's normal baseline."
+image_alt: "Water Leak Monitor Flow Rate. An inline water flow sensor module attached to a section of copper tubing against a smooth grey gradient."
+image_caption: "Water Leak Monitor Flow Rate: Your night-flow threshold decides if it pays."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/rack-power-density-ceiling-build-before-you-buy/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction."
-image_caption: "Deploying modern AI hardware requires massive facility upgrades, turning a server deployment into a major infrastructure project."
+image_alt: "The 40 kW Line. Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction."
+image_caption: "The 40 kW Line: The build precedes the servers once racks pass 40 kW."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

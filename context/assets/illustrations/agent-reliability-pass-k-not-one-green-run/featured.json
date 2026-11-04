@@ -1,6 +1,6 @@
 {
   "slug": "agent-reliability-pass-k-not-one-green-run",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -48,6 +48,14 @@
     },
     {
       "revision": 6,
+      "alt_text": "The Repeat Trial Gate. A sequential row of three modular inspection gates on a brushed steel surface, with a block passing th",
+      "caption": "The Repeat Trial Gate: Why one successful run is not enough for an AI agent.",
+      "title": "The Repeat Trial Gate",
+      "bytes": 404638,
+      "sha256": "sha256:f4aef30b1b55e315548944f713fea5a0fde472ea2a3bfb060d1a9d08b4248594"
+    },
+    {
+      "revision": 7,
       "alt_text": "The Repeat Trial Gate. A sequential row of three modular inspection gates on a brushed steel surface, with a block passing th",
       "caption": "The Repeat Trial Gate: Why one successful run is not enough for an AI agent.",
       "title": "The Repeat Trial Gate",
