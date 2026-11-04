@@ -8,8 +8,8 @@ date: 2026-11-04
 slug: your-10-minute-spike-bills-an-hour
 meta_title: "Your 10-Minute Spike Bills an Hour"
 meta_description: "A ten-minute surge left an agent-serving engine at a fifth of its throughput an hour later, at a request rate it had served all morning."
-image_alt: "Your 10-Minute Spike Bills An Hour. Paper loop of interlocking rectangular session tokens, one yellow token reattaching, representing cache"
-image_caption: "Your 10-Minute Spike Bills An Hour: A ten-minute surge cut goodput 88% for later sessions."
+image_alt: "Torn paper strips form a loop on a scratched steel workbench, one yellow strip lifting at the break."
+image_caption: "A paper loop of session tokens on a workbench, the break marked by one yellow strip."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 image_path: "context/assets/illustrations/your-10-minute-spike-bills-an-hour/featured.jpg"
 image_style: "paper_collage"

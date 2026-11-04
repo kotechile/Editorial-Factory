@@ -9,6 +9,12 @@
       "title": "Self-Reinforcing Session Loop Paper Collage",
       "bytes": 405834,
       "sha256": "sha256:d84af427d6d27c068e63505baeb3b6d5"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Torn paper strips form a loop on a scratched steel workbench, one yellow strip lifting at the break.",
+      "caption": "A paper loop of session tokens on a workbench, the break marked by one yellow strip.",
+      "note": "alt restored to a complete sentence after the director's overlay-copy alt arrived truncated"
     }
   ],
   "style": "paper_collage",
@@ -27,8 +33,8 @@
   "core_thesis": "A short traffic surge can leave an agent-serving engine slower at the same load because burst-created sessions keep each other alive through cache eviction and recompute, so recovery depends on the state left behind rather than current load.",
   "core_conflict": "Self-reinforcing session retention from the surge versus limited cache capacity, where the working set crosses a cliff and triggers repeated recompute loops that outlast the triggering burst.",
   "composition": "extreme asymmetry with the loop off-center and generous negative space",
-  "alt_text": "Your 10-Minute Spike Bills An Hour. Paper loop of interlocking rectangular session tokens, one yellow token reattaching, representing cache",
-  "caption": "Your 10-Minute Spike Bills An Hour: A ten-minute surge cut goodput 88% for later sessions.",
+  "alt_text": "Torn paper strips form a loop on a scratched steel workbench, one yellow strip lifting at the break.",
+  "caption": "A paper loop of session tokens on a workbench, the break marked by one yellow strip.",
   "title": "Your 10-Minute Spike Bills An Hour",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
