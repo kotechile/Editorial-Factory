@@ -4,8 +4,8 @@
   "history": [
     {
       "revision": 1,
-      "alt_text": "Cut-paper layered transaction ledger with four color-coded action-class tabs and a red rewind arrow on a control room desk.",
-      "caption": "A cut-paper ledger with four action-class tabs and a rewind arrow captures the per-tool undo decision that makes agent recovery 14.6 times cheaper.",
+      "alt_text": "A red cut-paper arrow curls back over a blank notebook page, beside four tabs and a stack of torn paper slips.",
+      "caption": "The rewind arrow over committed work: four action classes, one page, and an undo that costs less than a replay.",
       "title": "Agent Undo Classes Cut-Paper Ledger",
       "bytes": 356707,
       "sha256": "sha256:79f18b763d0ab24c803a15b3b1c320a7"
@@ -27,8 +27,8 @@
   "core_thesis": "An agent's recovery cost is determined by the class of every action it already committed\u2014idempotent, reversible, compensable or irreversible\u2014and choosing the wrong undo path can waste 11.41 finished acts per run instead of 0.78.",
   "core_conflict": "Write-path persistence and action classification versus recovery cost, where a misordered irreversible or compensable step makes undo 14.6x more expensive.",
   "composition": "Asymmetric composition, hero collage off-centre right on the thirds with generous negative space left.",
-  "alt_text": "Your Undo Is 14.6X Cheaper. Cut-paper layered transaction ledger with four color-coded action-class tabs and a red rewind arrow on a",
-  "caption": "Your Undo Is 14.6X Cheaper: Unwinding beats replay 14.6x at same answer quality.",
+  "alt_text": "A red cut-paper arrow curls back over a blank notebook page, beside four tabs and a stack of torn paper slips.",
+  "caption": "The rewind arrow over committed work: four action classes, one page, and an undo that costs less than a replay.",
   "title": "Your Undo Is 14.6X Cheaper",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,

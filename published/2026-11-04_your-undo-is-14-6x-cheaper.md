@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-undo-is-14-6x-cheaper/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Your Undo Is 14.6X Cheaper. Cut-paper layered transaction ledger with four color-coded action-class tabs and a red rewind arrow on a"
-image_caption: "Your Undo Is 14.6X Cheaper: Unwinding beats replay 14.6x at same answer quality."
+image_alt: "A red cut-paper arrow curls back over a blank notebook page, beside four tabs and a stack of torn paper slips."
+image_caption: "The rewind arrow over committed work: four action classes, one page, and an undo that costs less than a replay."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
