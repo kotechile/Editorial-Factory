@@ -13,7 +13,7 @@
   ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point — with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -27,8 +27,8 @@
   "core_thesis": "Microsoft's Maia 300 and Qualcomm's high bandwidth compute answer the same memory-bound inference problem in opposite directions, with headline numbers measured on incompatible bases, leaving tokens-per-watt the missing comparable.",
   "core_conflict": "Stacked HBM4 bandwidth versus low-power LPDDR proximity, with neither vendor publishing a directly comparable tokens-per-watt figure.",
   "composition": "split-screen diptych with left-right scenario contrast",
-  "alt_text": "18X LPDDR Isn'T 18 Tb/S. Two unbranded accelerator cards side by side: dense HBM4 stacks versus low-profile LPDDR-on-die, on brushed steel",
-  "caption": "18X LPDDR Isn'T 18 Tb/S: Tokens per watt is the missing purchase unit.",
+  "alt_text": "Two unbranded accelerator cards side by side: dense HBM4 stacks versus low-profile LPDDR-on-die, on brushed steel in a server room.",
+  "caption": "The two memory architectures face off on the bench, but the comparable tokens-per-watt figure remains unpublished.",
   "title": "18X LPDDR Isn'T 18 Tb/S",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.83,
-    "reason": "The frame shows exactly the two opposed accelerator architectures the article compares \u2014 dense stacked HBM-style memory versus a low-profile LPDDR-style card \u2014 so a reader would recognize the story's subject, though no labels identify which is which."
+    "reason": "The frame shows exactly the two opposed accelerator architectures the article compares — dense stacked HBM-style memory versus a low-profile LPDDR-style card — so a reader would recognize the story's subject, though no labels identify which is which."
   },
   "source_hash": "sha256:c8ae0bf13b1f2f6b5565a0fe4fb0a79f",
   "source_chars": 5275,

@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/18x-lpddr-isnt-18tbs/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "18X LPDDR Isn'T 18 Tb/S. Two unbranded accelerator cards side by side: dense HBM4 stacks versus low-profile LPDDR-on-die, on brushed steel"
-image_caption: "18X LPDDR Isn'T 18 Tb/S: Tokens per watt is the missing purchase unit."
+image_alt: "Two unbranded accelerator cards side by side: dense HBM4 stacks versus low-profile LPDDR-on-die, on brushed steel in a server room."
+image_caption: "The two memory architectures face off on the bench, but the comparable tokens-per-watt figure remains unpublished."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -60,6 +60,13 @@ The tidy story is that these figures are marketing and a buyer should ignore the
 
 The same caveat runs the other way. The Microsoft tokens-per-megawatt claim is a forecast for a part that ships in 2027, against a base it declines to name, and no outside test of either part is public [2]. Two vendors can tell the truth and still leave a buyer with nothing to put in a spreadsheet. That is the real state of this market for AI serving this quarter.
 
+<!-- tldr -->
+## At a glance
+
+**The shift:** The two escapes from the memory wall landed three weeks apart, and one is a speed while the other is a multiple against a different memory.
+**The number:** 18.0 TB/s of HBM4 on Maia 300 against 18x LPDDR on the Qualcomm lab chip — two different quantities, not a ranking.
+**The risk:** No outside tokens-per-watt result exists for either part, so the only usable test in 2027 is your own workload.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -72,13 +79,6 @@ The same caveat runs the other way. The Microsoft tokens-per-megawatt claim is a
 - [480GB Won't Skip Your Memory Queue](/your-480gb-card-wont-skip-the-memory-queue/) — more on Major Purchases & Assets
 - [1.016M Non-GPUs: Your Chip Stopped Deciding](/your-chip-stopped-deciding/) — more on Major Purchases & Assets
 <!-- internal-links:end -->
-
-<!-- tldr -->
-## At a glance
-
-**The shift:** The two escapes from the memory wall landed three weeks apart, and one is a speed while the other is a multiple against a different memory.
-**The number:** 18.0 TB/s of HBM4 on Maia 300 against 18x LPDDR on the Qualcomm lab chip — two different quantities, not a ranking.
-**The risk:** No outside tokens-per-watt result exists for either part, so the only usable test in 2027 is your own workload.
 
 ## Sources
 
