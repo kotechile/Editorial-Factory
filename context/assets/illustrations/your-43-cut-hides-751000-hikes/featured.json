@@ -1,0 +1,116 @@
+{
+  "slug": "your-43-cut-hides-751000-hikes",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Roof-deck inspection gate with one latched condition bay and one empty age slot on an attic floor, beside a blank rate-schedule rack rail.",
+      "caption": "A roof-deck inspection gate latches only on condition while the age slot and rate-schedule rack remain empty.",
+      "title": "Roof condition gate and hidden rate hikes",
+      "bytes": 395247,
+      "sha256": "sha256:3a66e9b4e5c74c657815d4cc19caf2a7"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point — with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a dusty attic floor, a modular roof inspection gate stands off-centre right: one latched asphalt-shingle condition bay, an empty age slot, and a blank galvanized steel rate-schedule rack rail. A single hard raking key light from the left throws long cast shadows. Palette bone white, graphite, rust. Brushed steel, asphalt shingle, weathered timber. Extreme asymmetry with generous negative space left, hard clean edges, matte muted palette, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, embossed words, printed numbers, UI, logos",
+  "rationale": "component_assembly fits because the story is a policy mechanism rather than a physical facility; a small modular inspection gate states the new condition-only roof rule, the empty slot the missing credit, and the rack of shingle samples the unequal filings.",
+  "cue": "Your 4.3% Cut Hides 751,000 Hikes",
+  "subject": "a modular roof-deck inspection gate with one latched condition bay and one empty age slot beside a blank rate-schedule rack rail on an attic floor",
+  "core_thesis": "A published 4.3% filing average hides 751,000 individual State Farm hikes, while the age-vs-condition roof rule leaves the credit for a new roof with no published amount.",
+  "core_conflict": "The aggregate unweighted filing average obscures individual renewal increases, and the age-vs-condition rule shifts the barrier without a published dollar figure.",
+  "composition": "extreme asymmetry, assembly off-centre right with generous negative space left",
+  "alt_text": "A steel-framed inspection gate on an attic floor, one bay faced in worn shingles and the other left open.",
+  "caption": "One bay carries the shingles; the other carries nothing.",
+  "title": "Texas's 4.3% Cut Hides 751,000 Hikes",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "component_assembly"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-43-cut-hides-751000-hikes/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 397579,
+  "sha256": "sha256:2b55b74b0838ad31244003c708486dd2933fe56ed660351ca3531f79f7adc021",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 397579,
+    "quality": 64,
+    "sha256": "sha256:2b55b74b0838ad31244003c708486dd2933fe56ed660351ca3531f79f7adc021",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:18deca8a3e9d7aa77308b413f30080ca26c873abcf9297fe29b4850fc9205d7f",
+  "render_phash": "1fa61fc6138f2f472cc72c472e472c672e672c672ec70cc7a7a501e1023e410f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metal-framed modular assembly stands on a dusty attic floor against a white gable wall, with one hinged panel fronted in grey asphalt shingles and fitted with a metal latch, an open empty bay beside it, and a further blank galvanized panel standing open to the right, with exposed roof framing and scattered boards behind.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The shingled condition panel, empty age slot and blank rate-schedule plate are the article's own roofing-and-rate mechanism rendered as an object, though the abstraction means it reads as a roof-condition scene rather than the specific 4.3% filing story."
+  },
+  "source_hash": "sha256:cc391f1d0747af899b3457b1b44d4810",
+  "source_chars": 4670,
+  "task_id": "d979bd386aab0d6a4e00b8ef23a0c5a5",
+  "credits": 18.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_07f9d31f04ca466d2bc66a22887a9833.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a dusty attic floor, a modular roof inspection gate stands off-centre right: one latched asphalt-shingle condition bay, an empty age slot, and a blank galvanized steel rate-schedule rack rail. A single hard raking key light from the left throws long cast shadows. Palette bone white, graphite, rust. Brushed steel, asphalt shingle, weathered timber. Extreme asymmetry with generous negative space left, hard clean edges, matte muted palette, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T13:29:39+00:00",
+  "overlay": {
+    "kicker": "TEXAS HOME INSURANCE RATE HIKES",
+    "title": "TEXAS 4.3% CUT HIDES 751,000 HIKES",
+    "hook": "751,000 State Farm Lloyds policies going up at renewal",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 0,
+    "contrast": 6.05,
+    "target": 5.5,
+    "clutter": 0.374,
+    "region_rgb": [
+      216,
+      210,
+      201
+    ],
+    "binding_rgb": [
+      205,
+      170,
+      140
+    ],
+    "title_lines": [
+      "TEXAS 4.3% CUT",
+      "HIDES 751,000 HIKES"
+    ],
+    "subject": 0.09,
+    "ink_subject": 0.039,
+    "spike": 0.296,
+    "generated_at": "2026-11-04T13:29:39+00:00"
+  }
+}

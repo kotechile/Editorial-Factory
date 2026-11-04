@@ -14,6 +14,12 @@ meta_title: "Your 4.3% Cut Hides 751,000 Hikes"
 meta_title_source: "derived_from_title"
 meta_description: "The Texas Department of Insurance (TDI) announced a 4.3% average home rate cut on 8 October, but 751,000 State Farm Lloyds policies are going up at renewal…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-43-cut-hides-751000-hikes/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A steel-framed inspection gate on an attic floor, one bay faced in worn shingles and the other left open."
+image_caption: "One bay carries the shingles; the other carries nothing."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
