@@ -83,6 +83,8 @@ post (owner, 2026-10-23). What it enforces, mechanically:
    `--strict-figures` to make that list a hold. Derived arithmetic (a spread, a sum, an interval)
    legitimately never appears in a source, which is why it is a list and not a default hold.
 
+**A Sources-line URL containing a parenthesis is truncated at the `)` and then 404s, so the whole article is held as a draft (learned 2026-11-04).** On the warehouse-capex evergreen the two `ecfr.gov` citations of 26 C.F.R. § 1.168(k)-2 and § 1.167(a)-11 read `…/section-1.168(k` and `…/section-1.167(a` in the gate's own message: the extraction stops at the first closing parenthesis, so a page that fetches fine through `citation_hub_dossier` (254 KB) is reported as "does not resolve (HTTP 404 Not Found)" and `publish_gate` creates the post as a DRAFT. Percent-encode the parentheses — `https://www.ecfr.gov/current/title-26/section-1.168%28k%29-2` answers 200 with the identical body and survives the parser — then PATCH the row's `content` and republish with `wp_draft.py --slug … --refresh-live`; do not re-run `publish.py`, which re-commissions the header image. Probe a statutorily-numbered citation with parentheses through `source_gate.fetch` before it goes into `## Sources`, and prefer a percent-encoded form for any CFR/statute section whose identifier carries `( )`.
+
 **A 404 is not always a dead citation either — some hosts answer the desk's User-Agent with 404 while serving the page to a browser (learned 2026-10-29).** `about.usps.com` returned **404** for three of
 its own newsroom releases to the gate's `Python-urllib` User-Agent and **200** to a Chrome User-Agent,
 and the gate's status-only rule held the article as a DRAFT for citations a reader opens fine. The
