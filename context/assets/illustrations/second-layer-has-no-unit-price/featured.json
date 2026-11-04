@@ -1,0 +1,114 @@
+{
+  "slug": "second-layer-has-no-unit-price",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Warehouse automation floor with building-scale robotic arms, mobile robots, and a corrugated case crossing a conveyor.",
+      "caption": "The building-scale automation layer and the mobile robot fleet meet at the only unit that matters: one case on the conveyor.",
+      "title": "Walmart 6B Same 25 Buildings Automation Cost per Case Moved",
+      "bytes": 375334,
+      "sha256": "sha256:1da0e4e754a1e9a77a22dcf9d8d31bd9"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen isometric technical cutaway of a warehouse aisle: left half shows a building-scale automation cell with high-density pallet racking and a row of industrial robotic arms reaching toward a conveyor; right half shows a fleet of small autonomous mobile robots carrying totes along floor paths. A single corrugated cardboard case rides the central conveyor crossing the seam. Brushed steel gantries and aluminium rails sit on a polished concrete floor; palette graphite, safety yellow, bone white. A single raking key light from the upper left throws long sharp shadows to the lower right, with cool white quality. Three-quarter isometric view, unlabelled, generous negative space, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements",
+  "rationale": "The story is a structural, numerical mismatch rather than a single physical product; an isometric cutaway can lay out the two pricing layers and the missing unit (the case moved) as a readable mechanical diagram without defaulting to a stock datacenter or generic robot shot.",
+  "cue": "$6 Billion, Same 25 Buildings",
+  "subject": "a technical isometric cutaway of a warehouse automation floor with building-scale robotic arms, a fleet of mobile robots, and a corrugated case moving on a conveyor",
+  "core_thesis": "Walmart's roughly $6 billion commitment is priced per building while the industry's order index is priced per machine and excludes mobile robots, so neither number lets an operator underwrite a system against the only unit that matters: cost per case moved.",
+  "core_conflict": "Building-level capex versus machine-level order index, with mobile robots omitted and no per-case handling cost disclosed.",
+  "composition": "split-screen diptych with left-right scenario contrast, three-quarter isometric view",
+  "alt_text": "Walmart'S $6B, Same 25 Buildings. Warehouse automation floor with building-scale robotic arms, mobile robots, and a corrugated case",
+  "caption": "Walmart'S $6B, Same 25 Buildings: Walmart's $6B deal prices a building, not a robot.",
+  "title": "Walmart'S $6B, Same 25 Buildings",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/second-layer-has-no-unit-price/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399449,
+  "sha256": "sha256:afb6244de9bd36813f000de8e80c21a142347bb53e4eff5f72d59e70b3e04981",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399449,
+    "quality": 76,
+    "sha256": "sha256:afb6244de9bd36813f000de8e80c21a142347bb53e4eff5f72d59e70b3e04981",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3c69f9f339f18a087df60ae632b06df3c31ec3808f3c027d87555c09bd0f37f0",
+  "render_phash": "08c889879180905f014f84489a5286528c149874904d793db363336e4e66adcf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric cutaway view of a warehouse floor showing a tall pallet-rack structure stacked with cartons, a conveyor line fed by four yellow-and-grey articulated robotic arms (one holding a cardboard case), an overhead gantry rail, and a fleet of small white-and-yellow mobile robots carrying grey bins on a marked floor, split down the middle by a vertical line into two near-identical halves.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.86,
+    "reason": "It shows warehouse automation assets \u2014 robotic arms, mobile robots and a case on a conveyor \u2014 matching the story's subject of distribution-centre automation spend, though it does not itself express the per-building vs. per-machine vs. per-case cost argument."
+  },
+  "source_hash": "sha256:1e5688be624de43b6d8a843e578dfbbf",
+  "source_chars": 4754,
+  "task_id": "e336a7c558fed2a8cd0e46bcb12977ee",
+  "credits": 18.0,
+  "cost_ms": 34,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1015b776bac941439fa75608a5511eb1.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen isometric technical cutaway of a warehouse aisle: left half shows a building-scale automation cell with high-density pallet racking and a row of industrial robotic arms reaching toward a conveyor; right half shows a fleet of small autonomous mobile robots carrying totes along floor paths. A single corrugated cardboard case rides the central conveyor crossing the seam. Brushed steel gantries and aluminium rails sit on a polished concrete floor; palette graphite, safety yellow, bone white. A single raking key light from the upper left throws long sharp shadows to the lower right, with cool white quality. Three-quarter isometric view, unlabelled, generous negative space, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T12:56:45+00:00",
+  "overlay": {
+    "kicker": "WALMART WAREHOUSE ROBOTICS // CAPEX",
+    "title": "WALMART'S $6B, SAME 25 BUILDINGS",
+    "hook": "Walmart's $6B deal prices a building, not a robot",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 30,
+    "contrast": 5.84,
+    "target": 5.5,
+    "clutter": 0.31,
+    "region_rgb": [
+      201,
+      209,
+      216
+    ],
+    "binding_rgb": [
+      147,
+      164,
+      182
+    ],
+    "title_lines": [
+      "WALMART'S $6B,",
+      "SAME 25 BUILDINGS"
+    ],
+    "subject": 0.072,
+    "ink_subject": 0.038,
+    "spike": 0.207,
+    "generated_at": "2026-11-04T12:56:45+00:00"
+  }
+}
