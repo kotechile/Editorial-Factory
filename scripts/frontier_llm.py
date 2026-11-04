@@ -93,8 +93,17 @@ def _text(payload: dict) -> str:
 
 
 def chat(prompt: str, *, model: str = TEXT_MODEL, max_tokens: int = MAX_TOKENS,
-         temperature: float = 0.7, timeout: int = 240, json_mode: bool = False) -> str:
-    """One frontier completion. `json_mode` asks for a bare JSON object."""
+         temperature: float = 0.7, timeout: int = 240, json_mode: bool = False,
+         thinking: bool | None = None) -> str:
+    """One frontier completion. `json_mode` asks for a bare JSON object.
+
+    `thinking=False` turns the model's reasoning pass off for this call. The reasoning tokens are
+    billed inside `max_tokens` and are unbounded in practice: a full Loop 3 rewrite prompt
+    (humanizer RULES + a ~1,200-word draft) burned 8,000, then 20,000, then 32,000 completion
+    tokens entirely on reasoning and returned an empty `content` with `finish_reason=length`
+    (2026-11-04). The same call with `thinking={"type": "disabled"}` answers normally, so a caller
+    that needs the text back from a long structured prompt passes `thinking=False`.
+    """
     body = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
@@ -102,6 +111,8 @@ def chat(prompt: str, *, model: str = TEXT_MODEL, max_tokens: int = MAX_TOKENS,
         "temperature": temperature,
         "stream": False,
     }
+    if thinking is False:
+        body["thinking"] = {"type": "disabled"}
     if json_mode:
         body["response_format"] = {"type": "json_object"}
     return _text(_post(body, timeout))
