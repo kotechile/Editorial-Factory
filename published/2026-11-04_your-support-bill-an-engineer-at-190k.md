@@ -13,8 +13,8 @@ slug: your-support-bill-an-engineer-at-190k
 image_path: "context/assets/illustrations/your-support-bill-an-engineer-at-190k/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "Support Costs An Engineer At $190K. Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text."
-image_caption: "Support Costs An Engineer At $190K: At $190K monthly cloud spend, support equals an engineer."
+image_alt: "Support Costs An Engineer At $190K. Two blank cards on a brushed steel desk, one with a hand-drawn rising staircase and one with a flat"
+image_caption: "Support Costs An Engineer At $190K: Support now costs a full-time engineer."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

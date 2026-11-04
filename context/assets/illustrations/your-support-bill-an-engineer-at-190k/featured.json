@@ -1,6 +1,6 @@
 {
   "slug": "your-support-bill-an-engineer-at-190k",
-  "revision": 3,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,22 @@
       "title": "Support Costs An Engineer At $190K",
       "bytes": 409489,
       "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Support Costs An Engineer At $190K. Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text.",
+      "caption": "Support Costs An Engineer At $190K: At $190K monthly cloud spend, support equals an engineer.",
+      "title": "Support Costs An Engineer At $190K",
+      "bytes": 409489,
+      "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Two blank cards on a brushed steel desk, one with a hand-drawn rising staircase and one with a flat line.",
+      "caption": "Two price cards, one decision: the share-based support ladder climbs with the bill while a flat fee does not.",
+      "title": "Support Costs An Engineer At $190K",
+      "bytes": 406491,
+      "sha256": "sha256:a1743e30165bf70fd2900c38b60b93911c41ef4bdf019a61ba9a3122a4a2ecc7"
     }
   ],
   "style": "document_flatlay",
@@ -35,8 +51,8 @@
   "core_thesis": "Cloud support is sold either as a share of the monthly bill on a published ladder or as a flat fee, so the buy side's support line crosses a full-time engineer's monthly wage at roughly $190,000 of cloud spend while a flat plan stays at $999.",
   "core_conflict": "A percentage-of-spend ladder that escalates with the bill versus a flat fee that buys a queue slot rather than a guaranteed response clock.",
   "composition": "top-down split-screen diptych, left card staircase line, right card flat line, slightly off-axis",
-  "alt_text": "Support Costs An Engineer At $190K. Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text.",
-  "caption": "Support Costs An Engineer At $190K: At $190K monthly cloud spend, support equals an engineer.",
+  "alt_text": "Support Costs An Engineer At $190K. Two blank cards on a brushed steel desk, one with a hand-drawn rising staircase and one with a flat",
+  "caption": "Support Costs An Engineer At $190K: Support now costs a full-time engineer.",
   "title": "Support Costs An Engineer At $190K",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -47,8 +63,8 @@
   "local_path": "context/assets/illustrations/your-support-bill-an-engineer-at-190k/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 409489,
-  "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148",
+  "bytes": 406491,
+  "sha256": "sha256:a1743e30165bf70fd2900c38b60b93911c41ef4bdf019a61ba9a3122a4a2ecc7",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -57,9 +73,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 409489,
+    "bytes": 406491,
     "quality": 88,
-    "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148",
+    "sha256": "sha256:a1743e30165bf70fd2900c38b60b93911c41ef4bdf019a61ba9a3122a4a2ecc7",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:202ac8e60f19121bebde69295306a60a4dd01624caf30b8bd2f0607bb3a8167f",
@@ -91,13 +107,13 @@
   "overlay": {
     "kicker": "CLOUD SUPPORT PRICING // BUY VS BUILD",
     "title": "SUPPORT COSTS AN ENGINEER AT $190K",
-    "hook": "At $190K monthly cloud spend, support equals an engineer",
+    "hook": "Support now costs a full-time engineer",
     "anchor": "top-right",
     "light": false,
     "scrim": 105,
     "contrast": 5.73,
     "target": 5.5,
-    "clutter": 0.267,
+    "clutter": 0.266,
     "region_rgb": [
       148,
       154,
@@ -112,8 +128,8 @@
       "SUPPORT COSTS AN",
       "ENGINEER AT $190K"
     ],
-    "subject": 0.086,
-    "ink_subject": 0.049,
+    "subject": 0.084,
+    "ink_subject": 0.046,
     "spike": 0.236,
     "generated_at": "2026-11-04T19:17:15+00:00"
   }
