@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T17:48:06Z",
+  "updated_at": "2026-11-04T18:12:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5401,6 +5401,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://aichieve.net/your-agent-deletes-ask-nobody/"
+    },
+    {
+      "slug": "2026-11-04_your-router-breaks-275-constraints",
+      "title": "Your Router Breaks 275 Rules",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The model answers one bounded question",
+        "By the numbers",
+        "Where the cut pays",
+        "Where the gain fades",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-04",
+      "public": false
     },
     {
       "slug": "2026-11-04_your-undo-is-14-6x-cheaper",
