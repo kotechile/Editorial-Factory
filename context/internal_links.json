@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T14:21:06+00:00",
+  "generated_at": "2026-11-04T18:30:40+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -7485,7 +7485,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "One line in the prompt decides how varied your test set turns out. Because the batch size sits in the prompt, a team can widen its cases this afternoon.",
-      "modified": "2026-11-03T17:46:34",
+      "modified": "2026-11-03T19:51:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7953,6 +7953,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-router-breaks-275-constraints",
+      "title": "Your Router Breaks 275 Rules",
+      "url": "https://aichieve.net/your-router-breaks-275-constraints/",
+      "path": "/your-router-breaks-275-constraints/",
+      "sites_live": {
+        "aichieve.net": "/your-router-breaks-275-constraints/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A router that lets the model choose each step breaks 275 planning rules on the TravelPlanner test. The same work run as written code breaks 11.",
+      "modified": "2026-11-04T18:12:50",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-routes-5x-stop-gap",
       "title": "Your Route's 5x Stop Gap: Density Beats Routing",
       "url": "https://aichieve.net/your-routes-5x-stop-gap/",
@@ -8206,6 +8229,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-undo-is-14-6x-cheaper",
+      "title": "Your Undo Is 14.6x Cheaper",
+      "url": "https://aichieve.net/your-undo-is-14-6x-cheaper/",
+      "path": "/your-undo-is-14-6x-cheaper/",
+      "sites_live": {
+        "aichieve.net": "/your-undo-is-14-6x-cheaper/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Replaying a failed agent task throws away 11.41 finished acts per run; unwinding to the first conflict costs 0.78, 14.6 times less at equal answers.",
+      "modified": "2026-11-04T17:48:29",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-zone-deferral-is-worth-115-percent",
       "title": "Your Zone Saves 1.15%: The Hidden Cost",
       "url": "https://aichieve.net/your-zone-deferral-is-worth-115-percent/",
@@ -8250,6 +8296,34 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1466,
+      "slug": "your-router-breaks-275-constraints",
+      "title": "Your Router Breaks 275 Rules",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-04T18:12:50",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1462,
+      "slug": "your-undo-is-14-6x-cheaper",
+      "title": "Your Undo Is 14.6x Cheaper",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-04T17:48:29",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -9334,34 +9408,6 @@
       "id": 1099,
       "slug": "your-ci-bill-232-hours",
       "title": "Your CI Bill: 232 Hours Before You Build",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:25",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1096,
-      "slug": "cap-your-card-at-80",
-      "title": "Why Your 80% Cap Wins: 22.4% More Tokens",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:25",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1093,
-      "slug": "agent-writes-stale-basis",
-      "title": "Your Agent&#8217;s 84,000-Write Mistake",
       "url": "",
       "categories": [],
       "category_ids": [],

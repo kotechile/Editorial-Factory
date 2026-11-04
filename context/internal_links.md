@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-11-04T14:21:06+00:00
+# Internal-link candidates — 2026-11-04T18:30:40+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -170,7 +170,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 200 live article(s), 13 other target(s)
+## aichieve.net — 202 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -364,6 +364,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Render Bill Multiplies by 22.97](https://aichieve.net/your-render-bill-multiplies-by-22-97/) — Major Purchases & Assets
 - [Your Retrieval Fails at 5.7%](https://aichieve.net/your-retrieval-misses-57/) — Autonomous & Agentic Workflows
 - [Your Route's 5x Stop Gap: Density Beats Routing](https://aichieve.net/your-routes-5x-stop-gap/) — Supply Chain & Operations
+- [Your Router Breaks 275 Rules](https://aichieve.net/your-router-breaks-275-constraints/) — Autonomous & Agentic Workflows
 - [Your Runtime: The 6-Month Exit Gap](https://aichieve.net/your-runtime-has-six-months/) — AI Stack & Tool TCO
 - [Your SKUs Fail The 1.32 Cut](https://aichieve.net/skus-fail-the-1-32-cut/) — Supply Chain & Operations
 - [Your SSO Bill: $125 a Connection, $7.75 a Seat](https://aichieve.net/your-sso-bill-125-a-connection/) — AI Stack & Tool TCO
@@ -373,6 +374,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Trace Fails as an Alarm: 26.25% Profile](https://aichieve.net/your-trace-fails-as-an-alarm/) — Autonomous & Agentic Workflows
 - [Your Trace Won't Prove 92.5 Points](https://aichieve.net/your-trace-wont-prove-925-points/) — AI Stack & Tool TCO
 - [Your Truck Mile Costs 2.2 Driver-Minutes](https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/) — Supply Chain & Operations
+- [Your Undo Is 14.6x Cheaper](https://aichieve.net/your-undo-is-14-6x-cheaper/) — Autonomous & Agentic Workflows
 - [Your Zone Saves 1.15%: The Hidden Cost](https://aichieve.net/your-zone-deferral-is-worth-115-percent/) — Supply Chain & Operations
 - [AI Stack & Tool TCO (category)](https://aichieve.net/categories/ai-stack-tool-tco/) — Ai Stack Tool Tco
 - [Agentic Workflow Breakeven Calculator (tool)](https://aichieve.net/tools/agentic-workflow-breakeven/) — —
@@ -390,6 +392,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1466 `your-router-breaks-275-constraints` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1462 `your-undo-is-14-6x-cheaper` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1459 `second-layer-has-no-unit-price` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1454 `your-2-silent-agent-hooks` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1452 `18x-lpddr-isnt-18tbs` — published in the CMS but absent from the frontend sitemap
@@ -468,8 +472,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1105 `duet-bills-your-five-hour-window` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1102 `pick-station-sets-robot-count` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1099 `your-ci-bill-232-hours` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1096 `cap-your-card-at-80` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1093 `agent-writes-stale-basis` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1363 `your-standby-bill-hides-62-watts` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1356 `two-builds-one-vault` — published in the CMS but absent from the frontend sitemap
