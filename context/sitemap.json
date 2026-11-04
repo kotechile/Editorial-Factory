@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T18:48:42Z",
+  "updated_at": "2026-11-04T19:12:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5438,6 +5438,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://aichieve.net/your-router-breaks-275-constraints/"
+    },
+    {
+      "slug": "2026-11-04_your-support-bill-an-engineer-at-190k",
+      "title": "Cloud Support Costs: An Engineer at $190K",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Two price cards, one decision",
+        "By the numbers",
+        "What the fee actually buys",
+        "The catch is what you compare",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-04",
+      "public": false
     },
     {
       "slug": "2026-11-04_your-undo-is-14-6x-cheaper",
