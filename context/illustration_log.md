@@ -419,3 +419,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-04 | `your-2-silent-agent-hooks` | enterprise_build_vs_buy | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-2-silent-agent-hooks/featured.jpg` |
 | 2026-11-04 | `second-layer-has-no-unit-price` | warehouse_automation_robotics_capex | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/second-layer-has-no-unit-price/featured.jpg` |
 | 2026-11-04 | `your-43-cut-hides-751000-hikes` | property_loss_insurance_mitigation | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-43-cut-hides-751000-hikes/featured.jpg` |
+| 2026-11-04 | `your-undo-is-14-6x-cheaper` | agentic_resilience_failure | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-undo-is-14-6x-cheaper/featured.jpg` |

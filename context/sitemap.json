@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T13:34:20Z",
+  "updated_at": "2026-11-04T17:43:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5152,7 +5152,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-backup-66-mw-permit-trap/"
     },
     {
       "slug": "2026-11-03_your-cold-chain-blind-spot",
@@ -5170,7 +5171,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-cold-chain-blind-spot/"
     },
     {
       "slug": "2026-11-03_your-dedupe-cut-f1-by-74",
@@ -5264,7 +5266,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-pool-becomes-2000-connections/"
     },
     {
       "slug": "2026-11-03_your-zigbee-hub-32-device-ceiling",
@@ -5282,7 +5285,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-03",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-zigbee-hub-32-device-ceiling/"
     },
     {
       "slug": "2026-11-04_18x-lpddr-isnt-18tbs",
@@ -5300,7 +5304,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/18x-lpddr-isnt-18tbs/"
     },
     {
       "slug": "2026-11-04_second-layer-has-no-unit-price",
@@ -5318,7 +5323,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/second-layer-has-no-unit-price/"
     },
     {
       "slug": "2026-11-04_your-10-minute-spike-bills-an-hour",
@@ -5336,7 +5342,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-10-minute-spike-bills-an-hour/"
     },
     {
       "slug": "2026-11-04_your-2-silent-agent-hooks",
@@ -5354,7 +5361,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-2-silent-agent-hooks/"
     },
     {
       "slug": "2026-11-04_your-43-cut-hides-751000-hikes",
@@ -5372,7 +5380,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-43-cut-hides-751000-hikes/"
     },
     {
       "slug": "2026-11-04_your-agent-deletes-ask-nobody",
@@ -5389,6 +5398,25 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-04",
+      "public": true,
+      "url": "https://aichieve.net/your-agent-deletes-ask-nobody/"
+    },
+    {
+      "slug": "2026-11-04_your-undo-is-14-6x-cheaper",
+      "title": "Your Undo Is 14.6x Cheaper",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Undo has four classes",
+        "By the numbers",
+        "Where the cost moves",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-11-04",
       "public": false
     }

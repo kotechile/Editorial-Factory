@@ -1,0 +1,114 @@
+{
+  "slug": "your-undo-is-14-6x-cheaper",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper layered transaction ledger with four color-coded action-class tabs and a red rewind arrow on a control room desk.",
+      "caption": "A cut-paper ledger with four action-class tabs and a rewind arrow captures the per-tool undo decision that makes agent recovery 14.6 times cheaper.",
+      "title": "Agent Undo Classes Cut-Paper Ledger",
+      "bytes": 356707,
+      "sha256": "sha256:79f18b763d0ab24c803a15b3b1c320a7"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a control room console desk, a minimalist cut-paper collage layers a large open transaction ledger with four distinct section tabs colored bone white, graphite, and safety yellow, a red rewind arrow curving back over a small stack of paper action cards, and hand-torn rag paper with visible fibre casting physical shadows under each layer. One raking key light comes from upper left across the matte steel desk. Asymmetric composition, hero collage off-centre right on the thirds with generous negative space left. Palette: bone white, graphite, safety yellow, single red accent. No text, no legible print.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible print, UI elements",
+  "rationale": "This is a purely conceptual synthesis about agent recovery classes and cost tradeoffs, with no single physical machine to photograph. An editorial paper collage can condense the four-class taxonomy and the undo mechanism into a clear symbolic still life without resorting to generic tech imagery.",
+  "cue": "undo is a design decision made per tool",
+  "subject": "A cut-paper layered open transaction ledger with four color-coded action-class tabs and a rewind arrow, on a control room console desk.",
+  "core_thesis": "An agent's recovery cost is determined by the class of every action it already committed\u2014idempotent, reversible, compensable or irreversible\u2014and choosing the wrong undo path can waste 11.41 finished acts per run instead of 0.78.",
+  "core_conflict": "Write-path persistence and action classification versus recovery cost, where a misordered irreversible or compensable step makes undo 14.6x more expensive.",
+  "composition": "Asymmetric composition, hero collage off-centre right on the thirds with generous negative space left.",
+  "alt_text": "Your Undo Is 14.6X Cheaper. Cut-paper layered transaction ledger with four color-coded action-class tabs and a red rewind arrow on a",
+  "caption": "Your Undo Is 14.6X Cheaper: Unwinding beats replay 14.6x at same answer quality.",
+  "title": "Your Undo Is 14.6X Cheaper",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-undo-is-14-6x-cheaper/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 394183,
+  "sha256": "sha256:6c95804863cd584215eb91b13afa34cd424996afa30b13ab3ac228a25fd54f3a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394183,
+    "quality": 84,
+    "sha256": "sha256:6c95804863cd584215eb91b13afa34cd424996afa30b13ab3ac228a25fd54f3a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:2e722e31300f2cb7c63a767dec1ab60f8af15e595aae780944bf8a68a820e50a",
+  "render_phash": "3fff3fff1f271e2d0e1d064d06cd06b5009500d50055004d004d01cd01b301bc",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An open blank paper notebook lying on a smooth grey surface, with a red cut-paper arrow curving back on itself over the right page, several small yellow, dark grey and white paper scraps stacked near the spine, and three torn paper tabs in white, grey and yellow rising above the top edge.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.65,
+    "reason": "The open ledger with a red rewind arrow reads as the article's own mechanism \u2014 rolling an agent's committed actions back to a checkpoint \u2014 though the four colour-coded action-class tabs and the console desk are only weakly present, leaving the specific four-class distinction unshown."
+  },
+  "source_hash": "sha256:4500fa509d9b1ae6da60872eecf4d8b0",
+  "source_chars": 6097,
+  "task_id": "f17427f1c87869103532de179884b934",
+  "credits": 18.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_3344d3ed287ac34bc808d5d638bd9122.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a control room console desk, a minimalist cut-paper collage layers a large open transaction ledger with four distinct section tabs colored bone white, graphite, and safety yellow, a red rewind arrow curving back over a small stack of paper action cards, and hand-torn rag paper with visible fibre casting physical shadows under each layer. One raking key light comes from upper left across the matte steel desk. Asymmetric composition, hero collage off-centre right on the thirds with generous negative space left. Palette: bone white, graphite, safety yellow, single red accent. No text, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T17:42:21+00:00",
+  "overlay": {
+    "kicker": "AGENT RECOVERY // ACTION CLASSES",
+    "title": "YOUR UNDO IS 14.6X CHEAPER",
+    "hook": "Unwinding beats replay 14.6x at same answer quality",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.27,
+    "target": 4.5,
+    "clutter": 0.17,
+    "region_rgb": [
+      83,
+      82,
+      77
+    ],
+    "binding_rgb": [
+      99,
+      98,
+      93
+    ],
+    "title_lines": [
+      "YOUR UNDO IS",
+      "14.6X CHEAPER"
+    ],
+    "subject": 0.029,
+    "ink_subject": 0.01,
+    "spike": 0.104,
+    "generated_at": "2026-11-04T17:42:21+00:00"
+  }
+}
