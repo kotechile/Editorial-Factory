@@ -1,0 +1,114 @@
+{
+  "slug": "18x-lpddr-isnt-18tbs",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two unbranded accelerator cards side by side: dense HBM4 stacks versus low-profile LPDDR-on-die, on brushed steel in a server room.",
+      "caption": "The two memory architectures face off on the bench, but the comparable tokens-per-watt figure remains unpublished.",
+      "title": "HBM4 vs LPDDR memory architectures on the bench",
+      "bytes": 361919,
+      "sha256": "sha256:101c123c582b84d26d28777ea9e86cf6"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych on a brushed steel workbench in a server room. Left half: an unbranded accelerator card with eight vertical HBM4 memory stacks densely packed around a central chiplet. Right half: another unbranded accelerator card with low-profile LPDDR dies bonded directly on a compute die. A single high raking key light from the left casts long contact shadows across the brushed steel, graphite and slate blue with cobalt accent. Hard clean edges, modular inspection gate between the two cards, generous negative space, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numbers, logos",
+  "rationale": "The story is a hardware architecture contrast between two memory schemes; component_assembly's clean modular construction keeps both rival physical layouts legible in one frame without falling into a literal datacenter haze. The split-screen diptych composition directly satisfies the required dual-scenario treatment for contrasting paradigms.",
+  "cue": "18x LPDDR Isn't 18 TB/s",
+  "subject": "two unbranded accelerator cards: dense HBM4 stacks versus low-profile LPDDR-on-die",
+  "core_thesis": "Microsoft's Maia 300 and Qualcomm's high bandwidth compute answer the same memory-bound inference problem in opposite directions, with headline numbers measured on incompatible bases, leaving tokens-per-watt the missing comparable.",
+  "core_conflict": "Stacked HBM4 bandwidth versus low-power LPDDR proximity, with neither vendor publishing a directly comparable tokens-per-watt figure.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "18X LPDDR Isn'T 18 Tb/S. Two unbranded accelerator cards side by side: dense HBM4 stacks versus low-profile LPDDR-on-die, on brushed steel",
+  "caption": "18X LPDDR Isn'T 18 Tb/S: Tokens per watt is the missing purchase unit.",
+  "title": "18X LPDDR Isn'T 18 Tb/S",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/18x-lpddr-isnt-18tbs/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 393863,
+  "sha256": "sha256:67f8c97f7c50ae79772b8375fc7995a8940d557dcd87ae177391aa7ec4552cfb",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 393863,
+    "quality": 80,
+    "sha256": "sha256:67f8c97f7c50ae79772b8375fc7995a8940d557dcd87ae177391aa7ec4552cfb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:417b8895f346790bad8b49a0ff97ac05b1ece5f725cfe9a1f56eb76ac7d8b494",
+  "render_phash": "25a725a464a60cdc0f8f0b0f472fc92ec96cb1c939d31167316321310173017f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen diptych showing two unbranded circuit-board accelerator cards on a brushed metal table against a dark server-rack background: on the left a card with a central die flanked by tall stacked memory modules, and on the right a lower-profile card with a die and flat black covers, separated by a vertical seam with a mirrored metal bracket between them.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.83,
+    "reason": "The frame shows exactly the two opposed accelerator architectures the article compares \u2014 dense stacked HBM-style memory versus a low-profile LPDDR-style card \u2014 so a reader would recognize the story's subject, though no labels identify which is which."
+  },
+  "source_hash": "sha256:c8ae0bf13b1f2f6b5565a0fe4fb0a79f",
+  "source_chars": 5275,
+  "task_id": "ea0059c5a0dcd4ce556d74da9e0e3788",
+  "credits": 18.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_a5fd0cda4c665a5eebb18b46deca3508.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen diptych on a brushed steel workbench in a server room. Left half: an unbranded accelerator card with eight vertical HBM4 memory stacks densely packed around a central chiplet. Right half: another unbranded accelerator card with low-profile LPDDR dies bonded directly on a compute die. A single high raking key light from the left casts long contact shadows across the brushed steel, graphite and slate blue with cobalt accent. Hard clean edges, modular inspection gate between the two cards, generous negative space, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T11:51:57+00:00",
+  "overlay": {
+    "kicker": "AI HARDWARE // MEMORY BANDWIDTH",
+    "title": "18X LPDDR ISN'T 18 TB/S",
+    "hook": "Tokens per watt is the missing purchase unit",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.97,
+    "target": 5.5,
+    "clutter": 0.328,
+    "region_rgb": [
+      27,
+      34,
+      41
+    ],
+    "binding_rgb": [
+      49,
+      58,
+      67
+    ],
+    "title_lines": [
+      "18X LPDDR ISN'T",
+      "18 TB/S"
+    ],
+    "subject": 0.164,
+    "ink_subject": 0.08,
+    "spike": 0.499,
+    "generated_at": "2026-11-04T11:51:57+00:00"
+  }
+}
