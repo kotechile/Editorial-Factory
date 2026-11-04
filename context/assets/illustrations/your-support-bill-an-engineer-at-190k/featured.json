@@ -1,0 +1,120 @@
+{
+  "slug": "your-support-bill-an-engineer-at-190k",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text.",
+      "caption": "The share-based support plan climbs with cloud spend while the flat plan stays level, as shown by two unlabelled pricing cards.",
+      "title": "Support pricing ladder vs flat fee cards",
+      "bytes": 341285,
+      "sha256": "sha256:0d4dc741c9b55be908827725aa05b714"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Support Costs An Engineer At $190K. Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text.",
+      "caption": "Support Costs An Engineer At $190K: At $190K monthly cloud spend, support equals an engineer.",
+      "title": "Support Costs An Engineer At $190K",
+      "bytes": 409489,
+      "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead 90-degree flat-lay photograph on a brushed steel control-room desk. Left card is bone-white paper with an unlabelled hand-drawn staircase line in graphite climbing steeply upward; right card is bone-white paper with a flat horizontal graphite line. Between them lies a small brass clock face with no numerals and a blank paper queue ticket stub, one corner of the right card slightly askew. Even diffused daylight from above, muted palette of graphite, bone white, and deep cobalt. 50mm lens, shallow depth of field falling away at edges, fine film grain, no text, no numbers, no logos, split-screen diptych composition with left-right contrast.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, UI elements",
+  "rationale": "The story is explicitly about two price cards and one decision, so an overhead document still life at a control-room desk grounds the pricing comparison in a real enterprise environment while avoiding the datacenter clich\u00e9. Even diffused light and muted paper tones keep the focus on the two line shapes.",
+  "cue": "Two price cards, one decision",
+  "subject": "two pricing-plan cards showing a staircase cost ladder and a flat fee line",
+  "core_thesis": "Cloud support is sold either as a share of the monthly bill on a published ladder or as a flat fee, so the buy side's support line crosses a full-time engineer's monthly wage at roughly $190,000 of cloud spend while a flat plan stays at $999.",
+  "core_conflict": "A percentage-of-spend ladder that escalates with the bill versus a flat fee that buys a queue slot rather than a guaranteed response clock.",
+  "composition": "top-down split-screen diptych, left card staircase line, right card flat line, slightly off-axis",
+  "alt_text": "Support Costs An Engineer At $190K. Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text.",
+  "caption": "Support Costs An Engineer At $190K: At $190K monthly cloud spend, support equals an engineer.",
+  "title": "Support Costs An Engineer At $190K",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-support-bill-an-engineer-at-190k/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 409489,
+  "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 409489,
+    "quality": 88,
+    "sha256": "sha256:69331d2c8ce61707d7168a88a14906f718fcfad8ee127c54094edb62ed5e5148",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:202ac8e60f19121bebde69295306a60a4dd01624caf30b8bd2f0607bb3a8167f",
+  "render_phash": "fe00f800f63c063c0e3c1e2c163c363c26200700071817182718fa00e100e200",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Top-down view of a gray surface holding two blank white cards \u2014 a tall one at left with a pencil-drawn rising staircase line, a wide one at upper right with a single straight horizontal pencil line \u2014 plus a small gold circular disc with a stem and a small white perforated ticket stub below.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The frame literally stages the article's two pricing mechanisms, a stepped cost ladder versus a flat fee line, so a reader would recognize the support-pricing comparison, though the cards carry no numbers."
+  },
+  "source_hash": "sha256:9167a9022eb5183c3614182937cdcb55",
+  "source_chars": 5403,
+  "task_id": "0bee375799dc95ca85badfa375ccef09",
+  "credits": 5.0,
+  "cost_ms": 49,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0bee375799dc95ca85badfa375ccef09_1793819828292.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead 90-degree flat-lay photograph on a brushed steel control-room desk. Left card is bone-white paper with an unlabelled hand-drawn staircase line in graphite climbing steeply upward; right card is bone-white paper with a flat horizontal graphite line. Between them lies a small brass clock face with no numerals and a blank paper queue ticket stub, one corner of the right card slightly askew. Even diffused daylight from above, muted palette of graphite, bone white, and deep cobalt. 50mm lens, shallow depth of field falling away at edges, fine film grain, no text, no numbers, no logos, split-screen diptych composition with left-right contrast.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-04T19:17:15+00:00",
+  "overlay": {
+    "kicker": "CLOUD SUPPORT PRICING // BUY VS BUILD",
+    "title": "SUPPORT COSTS AN ENGINEER AT $190K",
+    "hook": "At $190K monthly cloud spend, support equals an engineer",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 105,
+    "contrast": 5.73,
+    "target": 5.5,
+    "clutter": 0.267,
+    "region_rgb": [
+      148,
+      154,
+      160
+    ],
+    "binding_rgb": [
+      106,
+      114,
+      125
+    ],
+    "title_lines": [
+      "SUPPORT COSTS AN",
+      "ENGINEER AT $190K"
+    ],
+    "subject": 0.086,
+    "ink_subject": 0.049,
+    "spike": 0.236,
+    "generated_at": "2026-11-04T19:17:15+00:00"
+  }
+}

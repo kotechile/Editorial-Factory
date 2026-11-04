@@ -10,6 +10,12 @@ meta_title: "Cloud Support Costs: An Engineer at $190K"
 meta_description: "Cloud support is priced as a share of the bill or as a flat fee. At about $190,000 a month of spend the share-based version costs more than a full-time engineer."
 date: 2026-11-04
 slug: your-support-bill-an-engineer-at-190k
+image_path: "context/assets/illustrations/your-support-bill-an-engineer-at-190k/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Support Costs An Engineer At $190K. Two pricing-plan cards on a steel desk: one with a staircase line, one with a flat line, no text."
+image_caption: "Support Costs An Engineer At $190K: At $190K monthly cloud spend, support equals an engineer."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -51,6 +57,14 @@ There is a second catch, and it cuts against the flat side. You cannot buy Digit
 
 Where I have landed is that the support line belongs in the same sheet as the build. I have priced compute on this beat and stopped at the invoice, the way [a CI minute gets priced against a rented server](/your-ci-bill-232-hours/) and then never against the fee that answers the pager; that fee is the one line which grows without anyone approving it. What I am watching next is whether the middle of the market keeps copying the ladder, since every provider that adopts it turns a support budget into a share of someone else's growth.
 
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** support is sold as a share of your bill or as a flat fee, and the two buy different service levels.
+- **The number:** the share-based ladders reach one engineer's monthly wage at about $190,000 a month of cloud spend.
+- **The risk:** the fee grows with the bill it is meant to protect, and a flat plan buys a queue rather than a clock.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -64,14 +78,6 @@ Where I have landed is that the support line belongs in the same sheet as the bu
 - [Cloud Uptime SLAs Are Not Insurance](/sla-credit-is-not-insurance/)
 <!-- internal-links:end -->
 
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** support is sold as a share of your bill or as a flat fee, and the two buy different service levels.
-- **The number:** the share-based ladders reach one engineer's monthly wage at about $190,000 a month of cloud spend.
-- **The risk:** the fee grows with the bill it is meant to protect, and a flat plan buys a queue rather than a clock.
-
 ## Sources
 
 [1] AWS, "AWS Support Plan Pricing" — https://aws.amazon.com/premiumsupport/pricing/
@@ -79,11 +85,3 @@ Where I have landed is that the support line belongs in the same sheet as the bu
 [3] DigitalOcean, "Support Plans" (documentation) — https://docs.digitalocean.com/support/support-plans/
 [4] Microsoft Azure, "Compare support plans" — https://azure.microsoft.com/en-us/support/plans/
 [5] O*NET OnLine, "Software Developers (15-1252.00)" — https://www.onetonline.org/link/summary/15-1252.00
-
-## Gate report
-
-lead — PASS — Opens with the core stake (support cost exceeding an engineer's salary at $190K monthly spend) in one sentence with a clear causal frame.
-tension — PASS — Two pricing models contrasted clearly; first-person observer cue present ("What I keep coming back to"); no jargon; scannable short paragraphs.
-tactical-insight — PASS — Reports what each plan buys (response times vs. queue placement); observer cue present ("My read is"); no imperative language; plain-English glosses for P1.
-nuanced-takeaway — PASS — Honest limitation stated (flat plans not portable across vendors); observer cue present ("Where I have landed"); closes with a decision frame and internal link.
-tldr — PASS — Three-line structured summary under 50 words; shift, number, and risk all stated; no duplication of tactical section.
