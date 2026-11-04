@@ -1,0 +1,53 @@
+# Verified Brief: warehouse_automation_robotics_capex — 2026-11-04
+
+Evergreen track (no 30-day window, no virality judge). Companion to
+`2026-11-04_warehouse_automation_robotics_capex_evergreen_brief.md` (gate PASS, 6 rows, 3 hosts:
+law.cornell.edu, irs.gov, ecfr.gov). Every figure below was fetched on 2026-11-04 with the verifier's
+own user-agent (`EditorialFactorySourceVerifier/1.0`) and read inside its own sentence, not merely
+matched. The subject is a statute, so the "signal leg" is the code section, and the vintage of every
+dollar figure is stated because the dollar figures re-index annually while the class lives do not.
+
+| # | Signal Leg | Claim | Status | Source URL | Verbatim |
+|---|------------|-------|--------|-----------|----------|
+| C1 | The allowance for equipment | Qualified property takes an additional first-year allowance equal to 100 percent of its adjusted basis in the year it is placed in service | VERIFIED | https://www.law.cornell.edu/uscode/text/26/168 | "the depreciation deduction provided by section 167(a) for the taxable year in which such property is placed in service shall include an allowance equal to 100 percent of the adjusted basis of the qualified property" — 26 U.S.C. § 168(k)(1)(A) |
+| C2 | The allowance's date and provenance | The 100 percent allowance was reinstated by Public Law 119-21 for certain qualified property acquired and placed in service after January 19, 2025 | VERIFIED | https://www.irs.gov/publications/p946 | "P.L. 119-21, commonly known as the One Big Beautiful Bill Act, reinstated the 100% special depreciation allowance for certain qualified property acquired and placed in service after January 19, 2025" (Publication 946, 2025, "What's New for 2025") |
+| C3 | The long schedule | Nonresidential real property is recovered over 39 years, and real property uses the mid-month convention | VERIFIED | https://www.law.cornell.edu/uscode/text/26/168 | "Nonresidential real property 39 years." (§ 168(c) table); "In the case of— (A) nonresidential real property … the applicable convention is the mid-month convention." (§ 168(d)(2)) |
+| C4 | The middle schedule | Qualified improvement property is in the 15-year class, uses the straight-line method, and excludes improvements attributable to an enlargement of the building, an elevator or escalator, or the building's internal structural framework | VERIFIED | https://www.law.cornell.edu/uscode/text/26/168 | "The term 'qualified improvement property' means any improvement made by the taxpayer to an interior portion of a building which is nonresidential real property if such improvement is placed in service after the date such building was first placed in service." / "Such term shall not include any improvement for which the expenditure is attributable to— (i) the enlargement of the building, (ii) any elevator or escalator, or (iii) the internal structural framework of the building." (§ 168(e)(6)); "any qualified improvement property" in the 15-year list (§ 168(e)(3)(E)(vii)); "Qualified improvement property described in subsection (e)(6)" among the straight-line classes (§ 168(b)(3)(G)) |
+| C5 | What qualifies for the allowance | The property must have a recovery period of 20 years or less and its original use must begin with the taxpayer | VERIFIED | https://www.ecfr.gov/current/title-26/section-1.168(k)-2 | "MACRS property, as defined in § 1.168(b)-1(a)(2), that has a recovery period of 20 years or less" (26 C.F.R. § 1.168(k)-2(b)(2)(i)(A)); statute: "the original use of which begins with the taxpayer" (§ 168(k)(2)(A)(ii)) |
+| C6 | The fourth-quarter switch | If more than 40 percent of the year's aggregate bases are placed in service in the last three months, the mid-quarter convention applies | VERIFIED | https://www.law.cornell.edu/uscode/text/26/168 | "if during any taxable year— (i) the aggregate bases of property to which this section applies placed in service during the last 3 months of the taxable year, exceed (ii) 40 percent of the aggregate bases of property to which this section applies placed in service during such taxable year, the applicable convention" is the mid-quarter convention (§ 168(d)(3)(A)) |
+| C7 | The expensing cap | The section 179 election is capped at $2,500,000 and reduced by cost above $4,000,000 | VERIFIED | https://www.law.cornell.edu/uscode/text/26/179 | "The aggregate cost which may be taken into account under subsection (a) for any taxable year shall not exceed $2,500,000." / "reduced (but not below zero) by the amount by which the cost of section 179 property placed in service during such taxable year exceeds $4,000,000" (§ 179(b)(1), (b)(2)) |
+| C8 | The expensing floor | The section 179 deduction cannot exceed the taxpayer's taxable income from the active conduct of a trade or business, and the excess carries forward | VERIFIED | https://www.law.cornell.edu/uscode/text/26/179 | "shall not exceed the aggregate amount of taxable income of the taxpayer for such taxable year which is derived from the active conduct by the taxpayer of any trade or business during such taxable year" (§ 179(b)(3)(A)); carryover at (b)(3)(B) |
+| C9 | The date that decides the year | Property is placed in service when it is ready and available for its specific use, not when it is delivered | VERIFIED (prose only) | https://www.irs.gov/publications/p946 | "You place property in service when it is ready and available for a specific use… Example 1. You bought a machine for your business. The machine was delivered last year. However, it was not installed and operational until this year. It is considered placed in service this year." |
+| C10 | The regulation's own wording for the same date | Property is first placed in service when it is in a condition or state of readiness and availability for a specifically assigned function | VERIFIED (prose only) | https://www.ecfr.gov/current/title-26/section-1.167(a)-11 | "Property is first placed in service when first placed in a condition or state of readiness and availability for a specifically assigned function, whether in a trade or business, in the production of income, in a tax-exempt activity, or in a personal activity." |
+| F1 | The mezzanine is a fact, not a rule | Whether a given mezzanine, slab or panel upgrade is 15-year qualified improvement property or 39-year nonresidential real property turns on § 168(e)(6)(B): an enlargement, an elevator or escalator, or the internal structural framework takes it out of the 15-year class. The article must quote the test and must NOT classify a specific building's mezzanine | FLAGGED — write the test, never a verdict | https://www.law.cornell.edu/uscode/text/26/168 | § 168(e)(6)(B)(i)–(iii) as quoted in C4 |
+| F2 | "Phase-out" is two different things | An app landing page on aichieve.net markets "2026 Section 179 phase-outs", which conflates the dollar cap that reduces above $4,000,000 of cost with a phasedown of the 100 percent allowance. The allowance was reinstated at 100 percent by P.L. 119-21; the thing that phases out is the section 179 cap as spending rises. The article must keep the two mechanisms separate | FLAGGED — separate the mechanisms in prose | https://www.irs.gov/publications/p946 | "the maximum section 179 expense deduction is $2,500,000. This limit is reduced by the amount by which the cost of section 179 property placed in service during the tax year exceeds $4,000,000" |
+| F3 | A used fleet is not qualified property | Because § 168(k)(2)(A)(ii) requires that original use begin with the taxpayer, a purchased used machine does not take the 100 percent allowance and falls back on the section 179 cap and on the class life. This brief states the rule only — it asserts no price for used robots, and the draft must not either | FLAGGED — rule only, no used-equipment price | https://www.law.cornell.edu/uscode/text/26/168 | "the original use of which begins with the taxpayer" |
+| F4 | The 40 percent test is not the first question | If the 100 percent allowance is taken, the year-one deduction is the whole basis and the convention barely matters; the mid-quarter test binds the property you elect out on, the property that is not qualified property, and the used machines. The draft must not present the 40 percent rule as a reason the allowance shrinks | FLAGGED — order the mechanisms correctly | https://www.law.cornell.edu/uscode/text/26/168 | "the aggregate bases of property to which this section applies placed in service during the last 3 months … exceed … 40 percent" |
+| F5 | Federal only | Every figure here is federal. State treatment — addback of the federal allowance, state expensing caps — is outside this brief and must be flagged as outside it if the draft mentions states at all | FLAGGED — federal only | https://www.law.cornell.edu/uscode/text/26/168 | n/a |
+
+## Authorised arithmetic (the only derived figures the draft/article may state)
+
+- $700,000 ÷ 39 years = **$17,948.72 a year**, written "about $17,950 a year". The first year is less
+  than that, because the mid-month convention allows only the months the building work was in service —
+  the article states the annual figure and says the first year is prorated; it must not quote a
+  prorated figure this brief has not fixed.
+- $700,000 − $17,948.72 = **$682,051.28**, written "about $682,000", as the year-one difference between
+  the same $700,000 taken as 15-year improvement property and as 39-year real property.
+- $700,000 ÷ $17,948.72 = **39.0**, written "thirty-nine times".
+- A $2,400,000 budget split $1,700,000 machines / $700,000 building work: **$2,400,000** of first-year
+  deduction if the whole building line clears the interior test; **$1,717,951** if it is 39-year property
+  ($1,700,000 + $17,948.72), written "about $1,718,000".
+- **$2,500,000** and **$4,000,000** as the section 179 cap and the point at which the cap starts to
+  reduce — stated as the cap, never as a total the reader can spend.
+
+Nothing else may be computed. No robot price, no lease rate, no payback period, no state rate, and no
+used-equipment discount appears in any verified source, so none may appear in the article.
+
+## Removed / refused
+
+- A "typical 14-month payback" figure that appears on the CaseProof landing page is vendor marketing for
+  a product, not a measured distribution; removed.
+- Any statement that a specific building's mezzanine is 15-year or 39-year property: the code states a
+  test, not an answer for a building this desk has not seen. Refused, per F1.
+- Any "after-tax payback" number: computing one needs a marginal rate that no verified source here
+  supplies. The article discusses timing and classification, never a tax rate.

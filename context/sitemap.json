@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T19:29:11Z",
+  "updated_at": "2026-11-04T19:45:59Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5419,6 +5419,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://aichieve.net/your-agent-deletes-ask-nobody/"
+    },
+    {
+      "slug": "2026-11-04_your-robot-budget-39-year-gap",
+      "title": "Your Robot Budget's 39-Year Gap",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Two schedules, one invoice",
+        "Where the split is decided",
+        "By the numbers",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-04",
+      "public": false
     },
     {
       "slug": "2026-11-04_your-router-breaks-275-constraints",
