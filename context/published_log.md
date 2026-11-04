@@ -297,6 +297,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-04 | property_loss_insurance_mitigation | your-43-cut-hides-751000-hikes | Your 4.3% Cut Hides 751,000 Hikes | https://pressflow.aichieve.net/published/2026-11-04_your-43-cut-hides-751000-hikes.md | reader site only |
 | 2026-11-04 | agentic_resilience_failure | your-undo-is-14-6x-cheaper | Your Undo Is 14.6x Cheaper | https://pressflow.aichieve.net/published/2026-11-04_your-undo-is-14-6x-cheaper.md | reader site only |
 | 2026-11-04 | multi_agent_enterprise_fabric | your-router-breaks-275-constraints | Your Router Breaks 275 Rules | https://pressflow.aichieve.net/published/2026-11-04_your-router-breaks-275-constraints.md | reader site only |
+| 2026-11-04 | gpu_hardware | seven-slices-89-percent-one-card | Seven Slices Won't Buy 89% | https://pressflow.aichieve.net/published/2026-11-04_seven-slices-89-percent-one-card.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

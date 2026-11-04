@@ -1,0 +1,114 @@
+{
+  "slug": "seven-slices-89-percent-one-card",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "GPU accelerator card split into seven tenant bays with unequal memory and compute partitions on a steel bench.",
+      "caption": "Seven tenant bays on one card show memory bandwidth metered in eighths while compute cores are divided in sevenths.",
+      "title": "MIG memory metering clay render",
+      "bytes": 331010,
+      "sha256": "sha256:ef6199c592cd006f8c1bf6403febf090"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Arrange a matte clay 3D render of a single GPU accelerator card split into seven tenant bays by thin brass dividers on a brushed steel workbench in a server room. Each bay holds one narrow HBM memory stack in deep pine green and a wider compute core cluster in graphite, but the seven memory stacks are visibly smaller than the compute clusters, with one bay open to show the mismatch. A single key light from the upper left rakes across, casting long dark shadows to the right. Palette: graphite, deep pine green, safety yellow accent. Asymmetric composition, hero card off-centre left with generous negative space right. No text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible symbols",
+  "rationale": "Clay render lets the structural mismatch of memory eighths versus compute sevenths be stated as a physical assembly of recognizable GPU parts, avoiding generic datacenter stock and literal plumbing; the matte treatment matches the publication's constructed-architecture rotation.",
+  "cue": "metered by the memory fraction, not the compute fraction",
+  "subject": "a single GPU accelerator card split into seven tenant bays with unequal memory and compute partitions on a brushed steel workbench",
+  "core_thesis": "A Multi-Instance GPU profile is metered by memory fraction, not compute fraction, so seven 1g slices book 89% of one card's memory bandwidth but only 85% of its cores, never seven cards.",
+  "core_conflict": "Memory bandwidth allocated in eighths versus compute cores allocated in sevenths creates a structural bottleneck where tenants overbook bandwidth while underusing cores.",
+  "composition": "asymmetric composition with hero card off-centre left and generous negative space right",
+  "alt_text": "Seven Slices Won'T Buy 89%. GPU accelerator card split into seven tenant bays with unequal memory and compute partitions on a steel bench.",
+  "caption": "Seven Slices Won'T Buy 89%: Meter MIG tenants by memory bandwidth, not core count.",
+  "title": "Seven Slices Won'T Buy 89%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/seven-slices-89-percent-one-card/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 379339,
+  "sha256": "sha256:7cda51e08160dc35d8f72911a6a0c1d5b60548f914fb41689cc6fd7025dda29b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 379339,
+    "quality": 88,
+    "sha256": "sha256:7cda51e08160dc35d8f72911a6a0c1d5b60548f914fb41689cc6fd7025dda29b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:aeed6580ddc2c4d19a76ebd12dbaa7c53e1172caf896a1c6d59ce28924b7eb53",
+  "render_phash": "358e9c3fb1ff877f3f3f77bfdedf8bcfefc7bfc7ff85ff1dec7760fe63fc67f8",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A matte 3D render of a single rectangular accelerator-like card lying on a brushed metal bench, its surface divided by thin gold ridges into seven narrow bays holding green and grey slabs of slightly differing widths, with an unfilled recessed compartment at the near end, set against dark server racks edged with yellow-and-black hazard tape and a broad empty bench area to the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The image shows exactly one card partitioned into seven bays rather than seven separate cards, which is the article's mechanism (one GPU carved into MIG slices), though the bays read as near-equal widths and the card is stylised enough that the 'unequal memory and compute' point is not legible."
+  },
+  "source_hash": "sha256:024a1dbeddba116710949c6e1343e316",
+  "source_chars": 4301,
+  "task_id": "fdcb0213a78d54b8d82ac3d1ea7d116d",
+  "credits": 18.0,
+  "cost_ms": 81,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1793818053727-1zvutr2ypxx.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Arrange a matte clay 3D render of a single GPU accelerator card split into seven tenant bays by thin brass dividers on a brushed steel workbench in a server room. Each bay holds one narrow HBM memory stack in deep pine green and a wider compute core cluster in graphite, but the seven memory stacks are visibly smaller than the compute clusters, with one bay open to show the mismatch. A single key light from the upper left rakes across, casting long dark shadows to the right. Palette: graphite, deep pine green, safety yellow accent. Asymmetric composition, hero card off-centre left with generous negative space right. No text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-04T18:47:40+00:00",
+  "overlay": {
+    "kicker": "GPU HARDWARE // MIG MEMORY METERING",
+    "title": "SEVEN SLICES WON'T BUY 89%",
+    "hook": "Meter MIG tenants by memory bandwidth, not core count",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.81,
+    "target": 4.5,
+    "clutter": 0.148,
+    "region_rgb": [
+      39,
+      41,
+      38
+    ],
+    "binding_rgb": [
+      58,
+      58,
+      58
+    ],
+    "title_lines": [
+      "SEVEN SLICES",
+      "WON'T BUY 89%"
+    ],
+    "subject": 0.044,
+    "ink_subject": 0.025,
+    "spike": 0.121,
+    "generated_at": "2026-11-04T18:47:40+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T18:27:01Z",
+  "updated_at": "2026-11-04T18:48:42Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5327,6 +5327,24 @@
       "url": "https://aichieve.net/second-layer-has-no-unit-price/"
     },
     {
+      "slug": "2026-11-04_seven-slices-89-percent-one-card",
+      "title": "Seven Slices Won't Buy 89%",
+      "vertical": "gpu_hardware",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "A slice is not a seventh",
+        "By the numbers",
+        "What operators test instead",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-04",
+      "public": false
+    },
+    {
       "slug": "2026-11-04_your-10-minute-spike-bills-an-hour",
       "title": "Your 10-Minute Spike Bills an Hour",
       "vertical": "agentic_resilience_failure",
@@ -5418,7 +5436,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-router-breaks-275-constraints/"
     },
     {
       "slug": "2026-11-04_your-undo-is-14-6x-cheaper",
@@ -5436,7 +5455,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-04",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-undo-is-14-6x-cheaper/"
     }
   ]
 }
