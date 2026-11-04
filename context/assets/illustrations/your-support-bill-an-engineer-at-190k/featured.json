@@ -1,6 +1,6 @@
 {
   "slug": "your-support-bill-an-engineer-at-190k",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -30,6 +30,14 @@
       "revision": 4,
       "alt_text": "Two blank cards on a brushed steel desk, one with a hand-drawn rising staircase and one with a flat line.",
       "caption": "Two price cards, one decision: the share-based support ladder climbs with the bill while a flat fee does not.",
+      "title": "Support Costs An Engineer At $190K",
+      "bytes": 406491,
+      "sha256": "sha256:a1743e30165bf70fd2900c38b60b93911c41ef4bdf019a61ba9a3122a4a2ecc7"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Support Costs An Engineer At $190K. Two blank cards on a brushed steel desk, one with a hand-drawn rising staircase and one with a flat",
+      "caption": "Support Costs An Engineer At $190K: Support now costs a full-time engineer.",
       "title": "Support Costs An Engineer At $190K",
       "bytes": 406491,
       "sha256": "sha256:a1743e30165bf70fd2900c38b60b93911c41ef4bdf019a61ba9a3122a4a2ecc7"

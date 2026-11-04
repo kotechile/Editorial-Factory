@@ -7,7 +7,7 @@ evergreen: true
 persona: eng_leader
 one_big_thing: "Support is sold either as a share of your monthly bill with a published ladder or as a flat fee that ignores the bill, so the buy side's support line is a cost curve that reaches one full-time engineer's monthly wage at roughly $190,000 a month of cloud spend — while a flat plan stays at $999 and buys a place in a queue instead of a clock."
 meta_title: "Cloud Support Costs: An Engineer at $190K"
-meta_description: "Cloud support is priced as a share of the bill or as a flat fee. At about $190,000 a month of spend the share-based version costs more than a full-time engineer."
+meta_description: "Cloud support is priced as a share of the bill or as a flat fee. At about $190,000 a month of spend, the share-based version costs a full engineer-month."
 date: 2026-11-04
 slug: your-support-bill-an-engineer-at-190k
 image_path: "context/assets/illustrations/your-support-bill-an-engineer-at-190k/featured.jpg"
