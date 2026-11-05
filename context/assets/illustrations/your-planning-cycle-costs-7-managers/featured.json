@@ -1,0 +1,116 @@
+{
+  "slug": "your-planning-cycle-costs-7-managers",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Thin copper licence cartridge beneath seven steel hour-plates in a cast-iron magazine on a machine-shop bench.",
+      "caption": "The licence is the smallest line; the recurring hours it must remove tower above it as seven machined plates.",
+      "title": "S&OP cycle cost as seven steel hour-plates under a licence cartridge",
+      "bytes": 373448,
+      "sha256": "sha256:1e21e21acb5b1b609c012787b85d6e75"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D render of a small mechanical assembly on a machine-shop bench. A vertical cast-iron magazine at the right holds seven tall rectangular steel hour-plates stacked edge-on; a slim copper licence cartridge is slotted into the magazine floor beneath the bottom plate, visually tiny against the stack. A sprung steel depth gauge presses down from the top, its probe touching the top plate. One directional key light rakes from the left across the assembly, throwing long contact shadows on weathered concrete. Palette: graphite, copper, bone white. Framing: extreme asymmetry, small licence cartridge bottom-left against towering seven-plate stack right. No text, no logos, no lettering.",
+  "negative_prompt": "unreadable text, random lettering, watermarks, numbers, labels, embossed type",
+  "rationale": "Clay render fits because the story is a cost-structure abstraction with no single purchasable product or facility to photograph. The mechanical assembly states the disproportion between a slim licence cartridge and seven manager-hour plates, and the matte material world keeps it editorial rather than literal clip art.",
+  "cue": "Your Planning Cycle Costs 7 Managers",
+  "subject": "a slim copper licence cartridge in the bottom bay of a cast-iron magazine beneath seven machined steel hour-plates",
+  "core_thesis": "The licence is the smallest line in a sales and operations planning programme: the cycle that runs it costs $250,000 to $750,000 a year, so a module pays only by removing hours from that line, and the review features that sell it add hours back.",
+  "core_conflict": "The tiny per-seat licence fee versus the massive recurring labour cost of the S&OP cycle, with review features adding hours instead of removing them.",
+  "composition": "extreme asymmetry, small licence cartridge bottom-left against towering seven-plate stack right",
+  "alt_text": "A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine.",
+  "caption": "The planning cycle, not the licence, is the stack that has to be paid off every year.",
+  "title": "Planning Cycle Costs 7 Managers",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-planning-cycle-costs-7-managers/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 390270,
+  "sha256": "sha256:31761c6924f06ad08276ede7262876d232369876c3ecbb8dd25c988af9afb05a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 390270,
+    "quality": 84,
+    "sha256": "sha256:31761c6924f06ad08276ede7262876d232369876c3ecbb8dd25c988af9afb05a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:44e789a7816143cc1f18a17f05ea8e79425ff5fd8df85bf1860995bb8be8443e",
+  "render_phash": "2c66a44eb61624b614b6f11efc1f7f1f079e94de7cdb3c199f91478021c38840",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A blocky grey cast-iron magazine stands on a concrete-like surface, holding a stack of seven pale rectangular plates above a single copper-coloured cylindrical cartridge seated in the bottom bay, with a curved spring-loaded arm descending onto the top plate.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "It renders the article's own mechanism as ordered \u2014 a small licence cartridge in the bottom bay dwarfed by seven hour-plates standing for the seven managers' cycle cost \u2014 so a reader would connect the frame to the headline's claim that the licence is the cheapest line beneath the labour it must offset."
+  },
+  "source_hash": "sha256:e767a6ec76e78cfe1ba11014421fc31e",
+  "source_chars": 5070,
+  "task_id": "da25b8f07063c84a2c359adf37b04854",
+  "credits": 18.0,
+  "cost_ms": 33,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6d6d000343c5b64641b808ddb36a4ad4.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D render of a small mechanical assembly on a machine-shop bench. A vertical cast-iron magazine at the right holds seven tall rectangular steel hour-plates stacked edge-on; a slim copper licence cartridge is slotted into the magazine floor beneath the bottom plate, visually tiny against the stack. A sprung steel depth gauge presses down from the top, its probe touching the top plate. One directional key light rakes from the left across the assembly, throwing long contact shadows on weathered concrete. Palette: graphite, copper, bone white. Framing: extreme asymmetry, small licence cartridge bottom-left against towering seven-plate stack right. No text, no logos, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-05T20:33:46+00:00",
+  "overlay": {
+    "kicker": "S&OP OPERATING COST // LABOR EQUIVALENT",
+    "title": "PLANNING CYCLE COSTS 7 MANAGERS",
+    "hook": "The annual S&OP cycle, not the licence, costs 7 managers",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 8.68,
+    "target": 4.5,
+    "clutter": 0.04,
+    "region_rgb": [
+      60,
+      60,
+      57
+    ],
+    "binding_rgb": [
+      67,
+      66,
+      62
+    ],
+    "title_lines": [
+      "PLANNING CYCLE",
+      "COSTS 7 MANAGERS"
+    ],
+    "subject": 0.01,
+    "ink_subject": 0.004,
+    "spike": 0.032,
+    "generated_at": "2026-11-05T20:33:46+00:00"
+  }
+}

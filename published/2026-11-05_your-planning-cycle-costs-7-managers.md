@@ -12,6 +12,12 @@ meta_title: "Your Planning Cycle Costs 7 Managers"
 meta_title_source: "derived_from_title"
 meta_description: "A planning module reaches the budget as one line: a price per user, per month. The sales and operations planning (S&OP) cycle it has to run inside costs…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-planning-cycle-costs-7-managers/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine."
+image_caption: "The planning cycle, not the licence, is the stack that has to be paid off every year."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -62,14 +68,12 @@ None of this says S&OP is not worth running. It says the line that decides the b
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Sticker Price Lies" -> /the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/ [same site (aichieve.net); same category; topical overlap: costs, price] Link "Sticker Price Lies" in the section where the article touches costs, price. -->
-<!-- internal-link hint: "Your Truck Mile Costs 2.2 Driver-Minutes" -> /your-truck-mile-costs-2-2-driver-minutes/ [same site (aichieve.net); same category; topical overlap: costs, price] Link "Your Truck Mile Costs 2.2 Driver-Minutes" in the section where the article touches costs, price. -->
-<!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: costs] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches costs. -->
+<!-- internal-link hint: curated by hand for this run — every target is a live page on aichieve.net in this vertical's own category hub (supply-chain-operations), and each shares at least two subject tokens with this piece (planning, forecast, planning software / planner). -->
 ## Related reading
 
-- [Sticker Price Lies](/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — more on Supply Chain & Operations
-- [Your Truck Mile Costs 2.2 Driver-Minutes](/your-truck-mile-costs-2-2-driver-minutes/) — more on Supply Chain & Operations
-- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
+- [Your SKUs Fail the 1.32 Cut](/skus-fail-the-1-32-cut/) — which series deserve an accuracy target at all
+- [Planning AI Buys Capability, Not Autonomy](/planning-ai-buys-capability-not-autonomy/) — what a planning tool actually replaces
+- [Your Silent 2.1-Year Contract](/your-10-5-cut-locks-2-1-years/) — the licence term against the bench that runs it
 <!-- internal-links:end -->
 
 <!-- tldr -->
