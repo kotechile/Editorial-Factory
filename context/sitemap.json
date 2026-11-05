@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T11:43:02Z",
+  "updated_at": "2026-11-05T11:50:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5531,6 +5531,24 @@
         "Related reading"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_your-port-clears-35688-boxes-dont",
+      "title": "Your Port Clears, 35,688 Boxes Don't",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The constraint moved inland",
+        "By the numbers",
+        "What the rail side is doing",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-05",
       "public": false
     },

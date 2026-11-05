@@ -1,0 +1,112 @@
+{
+  "slug": "your-port-clears-35688-boxes-dont",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An empty intermodal well car under floodlights in a container terminal, stacks of shipping containers waiting behind it.",
+      "caption": "An empty intermodal well car sits under amber floodlights as stacks of import containers wait behind it, capturing the railcar shortage that has moved the port constraint inland.",
+      "title": "Intermodal railcar shortage at LA-LB container terminal",
+      "bytes": 406985,
+      "sha256": "sha256:c853292a6223e0a79ceb0e347b936940"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "At a container terminal quay at blue hour, a single empty intermodal well car sits on a rail siding in the lower-left third, its corrugated steel deck reflecting a warm sodium floodlight from the right. Behind it, towering stacks of shipping containers recede in the upper-right, their weathered metal surfaces catching the same amber light under a deep blue dusk. 35mm anamorphic wide with dramatic falloff, shallow depth of field, extreme asymmetric framing, graphite, steel blue, amber, asphalt and galvanised steel, fine film grain, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "Architectural night captures the after-hours terminal as a lit industrial landscape, letting long exposure and warm floodlights isolate the single empty railcar against a field of waiting containers. It makes the railcar shortage physically legible without people or text, fitting the operational tension of the article.",
+  "cue": "the rail leg is now the only part",
+  "subject": "an empty intermodal well car",
+  "core_thesis": "The constraint at the two busiest US ports has shifted from berth capacity to railcar supply, leaving import containers stranded on terminals waiting for trains.",
+  "core_conflict": "Berth capacity vs railcar supply: water-side metrics read clear while rail dwell times stretch and inland warehouse demand keeps pulling freight away from the water.",
+  "composition": "extreme asymmetric framing with the empty railcar off-centre lower-left and the container stacks receding upper-right",
+  "alt_text": "Port Clears, 35,688 Boxes Don'T. An empty intermodal well car under floodlights in a container terminal, stacks of shipping containers",
+  "caption": "Port Clears, 35,688 Boxes Don'T: Rail-bound boxes wait twice as long as truck boxes.",
+  "title": "Port Clears, 35,688 Boxes Don'T",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-port-clears-35688-boxes-dont/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 383740,
+  "sha256": "sha256:e69821d333eaf5a2569d7d68b9616dbc1a297cf0b50017e7fb5f2cc2daf4d33a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 383740,
+    "quality": 80,
+    "sha256": "sha256:e69821d333eaf5a2569d7d68b9616dbc1a297cf0b50017e7fb5f2cc2daf4d33a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:1927729ff399e57ea34faaa39ca3a9a11792993c97c373b8e52ee31272d9ba5d",
+  "render_phash": "00ff00ff0f9b390b124b024d261c005c165d166e3866158e3015006d02db0195",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An empty flat railcar sits on tracks in the lower-left foreground, with a tall wall of stacked shipping containers running along the right side of the frame beneath a dusk sky and a lit lamp post.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The empty railcar in front of stacked import containers is literally the article's subject \u2014 boxes waiting because railcar supply, not berth capacity, is the bottleneck."
+  },
+  "source_hash": "sha256:17dd2324a44427e6e63f8b3c0de69add",
+  "source_chars": 5619,
+  "task_id": "300831fdad722eab3afb195842967a99",
+  "credits": 5.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/300831fdad722eab3afb195842967a99_1793879309738.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "At a container terminal quay at blue hour, a single empty intermodal well car sits on a rail siding in the lower-left third, its corrugated steel deck reflecting a warm sodium floodlight from the right. Behind it, towering stacks of shipping containers recede in the upper-right, their weathered metal surfaces catching the same amber light under a deep blue dusk. 35mm anamorphic wide with dramatic falloff, shallow depth of field, extreme asymmetric framing, graphite, steel blue, amber, asphalt and galvanised steel, fine film grain, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-05T11:48:38+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN // RAILCAR SHORTAGE",
+    "title": "PORT CLEARS, 35,688 BOXES DON'T",
+    "hook": "Rail-bound boxes wait twice as long as truck boxes",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.65,
+    "target": 4.5,
+    "clutter": 0.064,
+    "region_rgb": [
+      20,
+      31,
+      39
+    ],
+    "binding_rgb": [
+      28,
+      42,
+      53
+    ],
+    "title_lines": [
+      "PORT CLEARS,",
+      "35,688 BOXES DON'T"
+    ],
+    "subject": 0.019,
+    "ink_subject": 0.008,
+    "spike": 0.064,
+    "generated_at": "2026-11-05T11:48:38+00:00"
+  }
+}
