@@ -1,0 +1,112 @@
+{
+  "slug": "your-signed-tool-still-leaks-3-of-3",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A fiber-optic cable carrying a warm data stream passes through a locked steel security gate in a dark data hall.",
+      "caption": "A permitted fiber-optic cable threads through a locked steel gate, showing how an allowed address can still carry leaked data.",
+      "title": "Signed MCP Tool Data Through Allowed Gate",
+      "bytes": 326908,
+      "sha256": "sha256:735b1ca3c906640f7226bfd112668394"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Wide 35mm anamorphic photograph inside a dark data hall. A brushed steel security gate blocks a rack aisle; one fiber-optic cable carrying a warm white data stream passes through a narrow vertical slot into an allowed server bay. A blank yellow plastic permit tag hangs from the latch. Hard directional light from high left rakes across the perforated metal gate, long shadows; graphite, steel blue and amber. Asymmetric composition, hero gate off-centre right, generous negative space left, shallow depth of field, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible words",
+  "rationale": "This is a systemic software security story, not a single artifact, so cinematic_still frames the checkpoint as a decisive moment in the data hall. The steel gate and fiber cable make the allowed-address trust line tangible while the hard directional light gives it editorial weight.",
+  "cue": "the data each call carries",
+  "subject": "a permitted fiber-optic cable passing through a locked steel security gate in a data hall",
+  "core_thesis": "The MCP trust line is the data each call carries, not the publisher's signature or the list of allowed addresses, and holding that line costs less than resetting the tool between calls.",
+  "core_conflict": "signature and destination allowlist authorization versus call-carried data persistence",
+  "composition": "extreme asymmetry, gate off-centre right with generous negative space left",
+  "alt_text": "Signed MCP Tools Leak Private Data. A fiber-optic cable carrying a warm data stream passes through a locked steel security gate in a dark",
+  "caption": "Signed MCP Tools Leak Private Data: The trust line is the data each call carries.",
+  "title": "Signed MCP Tools Leak Private Data",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-signed-tool-still-leaks-3-of-3/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 381070,
+  "sha256": "sha256:d7c656a2560b616e9dca50f7f08b0eb195960669fc6d33a05981915b2e859c2d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 381070,
+    "quality": 88,
+    "sha256": "sha256:d7c656a2560b616e9dca50f7f08b0eb195960669fc6d33a05981915b2e859c2d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:548351043ea7e1f0809708fd6883f6698d028306183d50fee257158818ab691c",
+  "render_phash": "b90c9b3f633f1b3f5b1f331f1b1f131f0b1e0b1f0b1f1b1e0b3e073f133f0fbb",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark data-hall aisle lined with server cabinets receding to the left, while in the right foreground a warm-glowing cable arcs out of a port on a perforated metal server panel and hangs past a small blank amber tag.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.74,
+    "reason": "The frame shows an authorized, tagged connection inside a data hall \u2014 the article's own object, a permitted path still carrying data outward \u2014 rather than an unrelated industry or generic filler."
+  },
+  "source_hash": "sha256:68523ce1e725cc9f630f0a643ba6468e",
+  "source_chars": 5617,
+  "task_id": "70105167c6549f689cb99abfd919666c",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/70105167c6549f689cb99abfd919666c_1793876126576.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Wide 35mm anamorphic photograph inside a dark data hall. A brushed steel security gate blocks a rack aisle; one fiber-optic cable carrying a warm white data stream passes through a narrow vertical slot into an allowed server bay. A blank yellow plastic permit tag hangs from the latch. Hard directional light from high left rakes across the perforated metal gate, long shadows; graphite, steel blue and amber. Asymmetric composition, hero gate off-centre right, generous negative space left, shallow depth of field, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-05T10:55:36+00:00",
+  "overlay": {
+    "kicker": "MCP SECURITY // SIGNED TOOL LEAK",
+    "title": "SIGNED MCP TOOLS LEAK PRIVATE DATA",
+    "hook": "The trust line is the data each call carries",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 12.33,
+    "target": 4.5,
+    "clutter": 0.13,
+    "region_rgb": [
+      32,
+      36,
+      40
+    ],
+    "binding_rgb": [
+      38,
+      43,
+      47
+    ],
+    "title_lines": [
+      "SIGNED MCP TOOLS",
+      "LEAK PRIVATE DATA"
+    ],
+    "subject": 0.044,
+    "ink_subject": 0.025,
+    "spike": 0.117,
+    "generated_at": "2026-11-05T10:55:36+00:00"
+  }
+}

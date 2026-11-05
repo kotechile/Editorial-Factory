@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T20:21:41Z",
+  "updated_at": "2026-11-05T10:57:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5515,6 +5515,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://aichieve.net/your-undo-is-14-6x-cheaper/"
+    },
+    {
+      "slug": "2026-11-05_your-signed-tool-still-leaks-3-of-3",
+      "title": "Your Signed MCP Tool Still Leaks: 3 of 3",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The protocol guards the install",
+        "By the numbers",
+        "The fork caps the data",
+        "What the proof does not cover",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-05",
+      "public": false
     }
   ]
 }
