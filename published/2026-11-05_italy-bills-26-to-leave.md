@@ -61,12 +61,6 @@ The revenue is the tell. The technical report puts the potential take at €13.4
 
 I could be wrong, but a tax built to raise this little is not a revenue measure. It reads as a statement about which departures a government thinks it can afford, made as the countries selling residence discover that buyers also leave. The draft also leaves its sharpest question open: nothing published says whether a departing flat-tax resident is caught at all, and the French template it follows has never had to answer that either [8]. Until the December vote, the honest version is that one large European destination has decided a departure should cost something — not that the cost is settled.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: none — no live page on this site scored for this topic -->
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -74,6 +68,12 @@ I could be wrong, but a tax built to raise this little is not a revenue measure.
 **The shift:** A country that sells residence is now pricing the exit.
 **The number:** 1,331 names on the US list for the third quarter.
 **The risk:** It is a draft bill, and deferral costs 50% up front.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+<!-- internal-link hint: none — no live page on this site scored for this topic -->
+<!-- internal-links:end -->
 
 ## Sources
 
