@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-port-clears-35688-boxes-dont/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Port Clears, 35,688 Boxes Don'T. An empty intermodal well car under floodlights in a container terminal, stacks of shipping containers"
-image_caption: "Port Clears, 35,688 Boxes Don'T: Rail-bound boxes wait twice as long as truck boxes."
+image_alt: "An empty intermodal railcar waits under floodlights as stacks of import containers stand behind it."
+image_caption: "An empty intermodal well car under amber floodlights, with stacks of import containers waiting behind it."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
