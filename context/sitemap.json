@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T19:57:56Z",
+  "updated_at": "2026-11-05T20:21:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5641,6 +5641,24 @@
         "Related reading"
       ],
       "target_persona": "cross_border_expat",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_your-planning-cycle-costs-7-managers",
+      "title": "Your Planning Cycle Costs 7 Managers",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The cheapest line to sign",
+        "By the numbers",
+        "Buyers ask the hours question",
+        "The estimates wobble",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-05",
       "public": false
     },
