@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T18:14:55Z",
+  "updated_at": "2026-11-05T18:47:36Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5662,6 +5662,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_your-trailers-last-foot-costs-2500",
+      "title": "Your Trailer's Last Foot Costs 2,500",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "The big picture:",
+        "By the numbers",
+        "What I'd watch:",
+        "The catch",
+        "At a glance",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-05",
       "public": false
     }
