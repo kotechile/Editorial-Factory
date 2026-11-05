@@ -1,0 +1,114 @@
+{
+  "slug": "your-99-cent-resolution-bills-the-handoff",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff gate, raked by a single key light.",
+      "caption": "A single incoming request rail feeds three differently gated billing counters, each defining a resolution unit by whether it counts a human handoff.",
+      "title": "Three billing definitions on one rail",
+      "bytes": 375114,
+      "sha256": "sha256:e0672d29e834525442b792d37177bc03"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a brushed-steel workbench in a machine shop, a compact matte clay metering assembly: three graphite tally-register modules in a row on a cast aluminum baseplate. A single flanged input rail enters from the left and splits into three short branch lanes, each leading to one module. The first module has an open safety-yellow gate that also counts a side handoff chute; the second has a one-way ratchet gate blocking the side chute; the third has no gate, a flat pass-through slot. Tiny blank count dials, moulding seams, and contact shadows. One directional key light rakes from the upper left, throwing long cast shadows. Bone white, graphite, safety yellow. Asymmetric off-centre composition, wide 16:9.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, blurry low-quality",
+  "rationale": "The story is structurally abstract\u2014three vendors rewrite the unit definition on a pricing page\u2014so a small physical assembly of gated counters states the metering logic directly without falling into datacenter or macro clich\u00e9s. Clay render allows legible mechanical distinctions while obeying the no-text, no-plumbing domain rules.",
+  "cue": "the unit belongs to the vendor",
+  "subject": "three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff gate",
+  "core_thesis": "AI vendors moved from selling seats to selling units, and each writes the unit's own definition on its pricing page, so the definition sentence is the term to negotiate, not the rate.",
+  "core_conflict": "Vendor-defined resolution units vs the buyer's actual cost per handled customer request, where agent failure and handoff rates remain unmeasured.",
+  "composition": "asymmetric off-centre composition with generous negative space on the right",
+  "alt_text": "Your $0.99 Resolution Bills The. Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff",
+  "caption": "Your $0.99 Resolution Bills The: Intercom charges $0.99 when its AI agent closes a.",
+  "title": "Your $0.99 Resolution Bills The",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407420,
+  "sha256": "sha256:d6f817ed73954936c8fd34b796d27ca3e14249cd4b9a0aeb949832091551660c",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407420,
+    "quality": 84,
+    "sha256": "sha256:d6f817ed73954936c8fd34b796d27ca3e14249cd4b9a0aeb949832091551660c",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:899cc000883b2669a55d7cabcc321e06c460f8935707e908031db1b5120943bf",
+  "render_phash": "9f0e0dc20e781f9e7f7f3d777567d9b3df9b7659667c0f669fb38f93878ea7cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Three dark grey rectangular mechanical modules with yellow levers are mounted on a rectangular metal baseplate sitting on a scratched metal workbench, with a curved off-white piece extending to the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "The three mechanical gate modules with distinct levers serve as a direct physical metaphor for the article's three vendors and their differing handoff unit definitions."
+  },
+  "source_hash": "sha256:cb3490f31e89bab0d541328f3f6eb1e0",
+  "source_chars": 5008,
+  "task_id": "6e7789c4256cfacb3bf697e4839ffdf6",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c60cd2cb3cc619f0fd4dc9eb66688621.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a brushed-steel workbench in a machine shop, a compact matte clay metering assembly: three graphite tally-register modules in a row on a cast aluminum baseplate. A single flanged input rail enters from the left and splits into three short branch lanes, each leading to one module. The first module has an open safety-yellow gate that also counts a side handoff chute; the second has a one-way ratchet gate blocking the side chute; the third has no gate, a flat pass-through slot. Tiny blank count dials, moulding seams, and contact shadows. One directional key light rakes from the upper left, throwing long cast shadows. Bone white, graphite, safety yellow. Asymmetric off-centre composition, wide 16:9.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-05T18:13:21+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR $0.99 RESOLUTION BILLS THE",
+    "hook": "Intercom charges $0.99 when its AI agent closes a",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 9.07,
+    "target": 5.5,
+    "clutter": 0.258,
+    "region_rgb": [
+      31,
+      30,
+      27
+    ],
+    "binding_rgb": [
+      64,
+      63,
+      61
+    ],
+    "title_lines": [
+      "YOUR $0.99",
+      "RESOLUTION BILLS THE"
+    ],
+    "subject": 0.064,
+    "ink_subject": 0.035,
+    "spike": 0.182,
+    "generated_at": "2026-11-05T18:13:21+00:00"
+  }
+}

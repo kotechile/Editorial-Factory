@@ -1,6 +1,6 @@
 {
   "slug": "demurrage-invoice-30-day-clocks",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -88,6 +88,14 @@
     },
     {
       "revision": 11,
+      "alt_text": "The Demurrage 30-DAY Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
+      "caption": "The Demurrage 30-DAY Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-DAY Clocks",
+      "bytes": 404630,
+      "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd"
+    },
+    {
+      "revision": 12,
       "alt_text": "The Demurrage 30-DAY Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
       "caption": "The Demurrage 30-DAY Clocks: Using exact timestamps to win container fee disputes.",
       "title": "The Demurrage 30-DAY Clocks",

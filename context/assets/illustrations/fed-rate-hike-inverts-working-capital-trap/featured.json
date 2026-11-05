@@ -1,6 +1,6 @@
 {
   "slug": "fed-rate-hike-inverts-working-capital-trap",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -88,6 +88,14 @@
     },
     {
       "revision": 11,
+      "alt_text": "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi",
+      "caption": "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut.",
+      "title": "Rate Hike Meets Zero Slack",
+      "bytes": 381536,
+      "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8"
+    },
+    {
+      "revision": 12,
       "alt_text": "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi",
       "caption": "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut.",
       "title": "Rate Hike Meets Zero Slack",

@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-tool-count-ceiling/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight."
-image_caption: "Restricting an agent to a targeted shortlist of tools proves far more reliable than exposing it to an unfiltered registry."
+image_alt: "The Tool-List Budget. A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight."
+image_caption: "The Tool-List Budget: More tools crash agent accuracy to one pick in seven."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

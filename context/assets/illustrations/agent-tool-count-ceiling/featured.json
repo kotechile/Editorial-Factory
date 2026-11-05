@@ -1,6 +1,6 @@
 {
   "slug": "agent-tool-count-ceiling",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:ca595a0586edf3e7c338170ad9482305",
       "generated_at": "2026-10-07T18:08:26+00:00",
       "source_hash": "sha256:d4b1fb9cb7519696ef839ee41f951329"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight.",
+      "caption": "Restricting an agent to a targeted shortlist of tools proves far more reliable than exposing it to an unfiltered registry.",
+      "title": "Agent Tool Context Data Hall",
+      "bytes": 342957,
+      "sha256": "sha256:3c07adc6ddb76c116073d910200d9286"
     }
   ],
   "style": "architectural_night",
@@ -26,9 +34,9 @@
   "rationale": "The architectural_night treatment perfectly captures the scale and systemic nature of enterprise compute infrastructure. By contrasting a massive dark facility with a single illuminated focal point, it visually communicates the core thesis of restricting a massive catalogue down to a functional, highly targeted shortlist.",
   "cue": "architectural budget, not a convenience",
   "subject": "a single warmly lit server bay and doorway standing before a massive hall of dark, dormant server racks",
-  "alt_text": "A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight.",
-  "caption": "Restricting an agent to a targeted shortlist of tools proves far more reliable than exposing it to an unfiltered registry.",
-  "title": "Agent Tool Context Data Hall",
+  "alt_text": "The Tool-List Budget. A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight.",
+  "caption": "The Tool-List Budget: More tools crash agent accuracy to one pick in seven.",
+  "title": "The Tool-List Budget",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +46,8 @@
   "local_path": "context/assets/illustrations/agent-tool-count-ceiling/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 342957,
-  "sha256": "sha256:3c07adc6ddb76c116073d910200d9286",
+  "bytes": 353472,
+  "sha256": "sha256:96f75282fbd9e3d72cc19501ff32773ed2a9dcf2cad83ae285905c7310d650a4",
   "source_hash": "sha256:d4b1fb9cb7519696ef839ee41f951329",
   "source_chars": 4531,
   "task_id": "0d682209656c1b6f4a4d22e20292b16e",
@@ -54,5 +62,47 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:42:09+00:00"
+  "generated_at": "2026-10-08T22:42:09+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 353472,
+    "quality": 88,
+    "sha256": "sha256:96f75282fbd9e3d72cc19501ff32773ed2a9dcf2cad83ae285905c7310d650a4",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "AI AGENT TOOL-SELECTION LIMITS",
+    "title": "THE TOOL-LIST BUDGET",
+    "hook": "More tools crash agent accuracy to one pick in seven",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.1,
+    "target": 4.5,
+    "clutter": 0.088,
+    "region_rgb": [
+      9,
+      24,
+      41
+    ],
+    "binding_rgb": [
+      9,
+      39,
+      67
+    ],
+    "title_lines": [
+      "THE TOOL-LIST",
+      "BUDGET"
+    ],
+    "subject": 0.042,
+    "ink_subject": 0.019,
+    "spike": 0.135,
+    "generated_at": "2026-10-08T22:42:09+00:00"
+  }
 }

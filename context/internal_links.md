@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-04T20:21:41+00:00
+# Internal-link candidates — 2026-11-05T14:20:11+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 49 live article(s), 16 other target(s)
+## giniloh.com — 50 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -16,6 +16,7 @@ Category hubs this front serves: —
 - [Homelab Heat Rebate: 45 Cents, Not Free](https://giniloh.com/your-homelab-heat-pays-back-45-cents/) — —
 - [How to Build a Frictionless Wealth Waterfall (And Stop Stressing Over Money)](https://giniloh.com/the-giniloh-money-flow-simulator-explained/) — —
 - [Is a $3,000 Espresso Maker Machine Worth It?](https://giniloh.com/is-a-3000-espresso-maker-machine-worth-it/) — —
+- [Italy Bills 26% to Leave](https://giniloh.com/italy-bills-26-to-leave/) — —
 - [Jobs Switch Calculator: Step-by-Step Profit Guide](https://giniloh.com/jobs-switch-calculator-step-by-step-profit-guide/) — —
 - [Lease Break Calculator: Save $1,850 in 3 Steps](https://giniloh.com/lease-break-calculator-save-1850-in-3-steps/) — —
 - [Moving Abroad: Why Missed US Forms Cost $10,000 Each](https://giniloh.com/three-forms-cost-more-than-tax/) — —
@@ -72,7 +73,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 72 live article(s), 22 other target(s)
+## wellroost.com — 73 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -88,6 +89,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [California Legalizes Plug-In Home Solar Panels](https://wellroost.com/california-legalizes-plug-in-home-solar-panels/) — Energy & Efficiency
 - [Cheap Gas, $20,000 Pipe: The Winter Heat Trap](https://wellroost.com/cheapest-fuel-priciest-pipe/) — Energy & Efficiency
 - [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
+- [Fewer Liens, 46% More Failures: Your Bid](https://wellroost.com/fewer-liens-46-more-bankruptcies/) — Tools & Equipment
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
 - [Insurance Bill Beats Property Tax 14%](https://wellroost.com/insurance-beats-property-tax-14/) — Energy & Efficiency
@@ -171,7 +173,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 205 live article(s), 13 other target(s)
+## aichieve.net — 209 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -289,6 +291,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [You Think You're Governing Your AI Agents. The Data Says You're Not.](https://aichieve.net/you-think-youre-governing-your-agents/) — Mental Models & Strategy
 - [Your $1,100 Tool Bills Every Unit](https://aichieve.net/your-tooling-assist-is-dutiable/) — Supply Chain & Operations
 - [Your $15 Air Rule, $195 Break-Even](https://aichieve.net/your-15-air-rule-195-break-even/) — Supply Chain & Operations
+- [Your $200 Cap Still Buys 2.85x](https://aichieve.net/your-200-cap-still-buys-2-85x/) — AI Stack & Tool TCO
 - [Your $30 Exception Bill Is Wrong](https://aichieve.net/your-30-exception-bill-is-wrong/) — Supply Chain & Operations
 - [Your 10-Minute Spike Bills an Hour](https://aichieve.net/your-10-minute-spike-bills-an-hour/) — Autonomous & Agentic Workflows
 - [Your 100,000 Totes Skip the Cost](https://aichieve.net/100000-totes-skip-the-cost/) — Supply Chain & Operations
@@ -362,6 +365,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Plant Was 1N and Blind](https://aichieve.net/your-plant-was-1n-and-blind/) — AI Stack & Tool TCO
 - [Your Platform: 23 Features, No Stop Rule](https://aichieve.net/your-platform-23-features-no-stop-rule/) — AI Stack & Tool TCO
 - [Your Pool Becomes 2,000: A Memory Trap](https://aichieve.net/your-pool-becomes-2000-connections/) — Mental Models & Strategy
+- [Your Port Clears, 35,688 Boxes Don't](https://aichieve.net/your-port-clears-35688-boxes-dont/) — Supply Chain & Operations
 - [Your Queue Caps the Wrong Unit: 192 Sessions](https://aichieve.net/your-192-sessions-stall-the-model-not-the-tools/) — Autonomous & Agentic Workflows
 - [Your Remediator Recovers 46.67%: The Silent Regression](https://aichieve.net/remediator-recovers-46-percent/) — AI Stack & Tool TCO
 - [Your Render Bill Multiplies by 22.97](https://aichieve.net/your-render-bill-multiplies-by-22-97/) — Major Purchases & Assets
@@ -373,6 +377,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your SKUs Fail The 1.32 Cut](https://aichieve.net/skus-fail-the-1-32-cut/) — Supply Chain & Operations
 - [Your SSO Bill: $125 a Connection, $7.75 a Seat](https://aichieve.net/your-sso-bill-125-a-connection/) — AI Stack & Tool TCO
 - [Your Sandbox Boot Tax: 110x, Then Nothing](https://aichieve.net/your-sandbox-boot-tax-110x-then-nothing/) — Autonomous & Agentic Workflows
+- [Your Signed MCP Tool Still Leaks: 3 of 3](https://aichieve.net/your-signed-tool-still-leaks-3-of-3/) — Autonomous & Agentic Workflows
+- [Your Silent 2.1-Year Contract](https://aichieve.net/your-10-5-cut-locks-2-1-years/) — Supply Chain & Operations
 - [Your Stock Records Are 65% Wrong](https://aichieve.net/why-65-percent-of-stock-records-miss/) — Supply Chain & Operations
 - [Your Tool Boundary Costs 3 Engineers](https://aichieve.net/your-tool-boundary-costs-3-engineers/) — Autonomous & Agentic Workflows
 - [Your Trace Fails as an Alarm: 26.25% Profile](https://aichieve.net/your-trace-fails-as-an-alarm/) — Autonomous & Agentic Workflows
@@ -396,6 +402,10 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1492 `your-10-5-cut-locks-2-1-years` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1486 `your-port-clears-35688-boxes-dont` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1482 `your-200-cap-still-buys-2-85x` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1480 `your-signed-tool-still-leaks-3-of-3` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1476 `your-robot-budget-39-year-gap` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1471 `your-support-bill-an-engineer-at-190k` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1469 `seven-slices-89-percent-one-card` — published in the CMS but absent from the frontend sitemap
@@ -472,11 +482,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1129 `your-golden-zone-costs-10-miles` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1126 `review-minute-costs-66-dollars` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1122 `your-retrieval-misses-57` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1119 `your-61-point-growth-was-a-refill` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1114 `suez-returns-91-surcharge-doesnt` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1111 `one-request-five-actions` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1108 `your-agent-team-loses-28-points` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1489 `italy-bills-26-to-leave` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1363 `your-standby-bill-hides-62-watts` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1356 `two-builds-one-vault` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1319 `your-ink-plan-bills-20-cents` — published in the CMS but absent from the frontend sitemap
@@ -496,4 +503,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1146 `why-your-swap-died-at-25` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1139 `your-26-week-cliff-kills-4-years` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1132 `your-130000-cap-costs-the-credit` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1117 `your-350000-passport-isnt-europe` — published in the CMS but absent from the frontend sitemap

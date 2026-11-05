@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T17:53:38Z",
+  "updated_at": "2026-11-05T18:14:55Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5590,6 +5590,24 @@
       "date": "2026-11-05",
       "public": true,
       "url": "https://aichieve.net/your-200-cap-still-buys-2-85x/"
+    },
+    {
+      "slug": "2026-11-05_your-99-cent-resolution-bills-the-handoff",
+      "title": "Your $0.99 Resolution Bills the Handoff",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Why the price tells you nothing",
+        "By the numbers",
+        "What buyers are doing now",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-05",
+      "public": false
     },
     {
       "slug": "2026-11-05_your-port-clears-35688-boxes-dont",

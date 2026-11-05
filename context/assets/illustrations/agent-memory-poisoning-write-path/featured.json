@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-poisoning-write-path",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -51,6 +51,14 @@
       "sha256": "sha256:6dadbde1ca4383f16d541e59f216405a",
       "generated_at": "2026-10-08T23:59:23+00:00",
       "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Agent Memory Poisoning: Guard the write path \u2014 not the prompt. Monolithic vault divided by a razor-thin blade of light.",
+      "caption": "Agent memory poisoning: Guard the write path \u2014 not the prompt.",
+      "title": "Agent Memory Poisoning \u2014 Editorial Header",
+      "bytes": 234700,
+      "sha256": "sha256:9f710b410a919519850a5dcaa0bf82853d6b92d222a7393553578ce7a534c557"
     }
   ],
   "style": "cinematic_still",
@@ -67,9 +75,9 @@
   "cue": "boundary \u2014 validate every write",
   "subject": "an architectural vault entrance divided by a razor-thin blade of light",
   "composition": "extreme asymmetric wide framing",
-  "alt_text": "Agent Memory Poisoning: Guard the write path \u2014 not the prompt. Monolithic vault divided by a razor-thin blade of light.",
-  "caption": "Agent memory poisoning: Guard the write path \u2014 not the prompt.",
-  "title": "Agent Memory Poisoning \u2014 Editorial Header",
+  "alt_text": "Agent Memory Poisoning. Agent Memory Poisoning: Guard the write path \u2014 not the prompt. Monolithic vault divided by a razor-thin blade of",
+  "caption": "Agent Memory Poisoning: One text file can take over a coding agent's memory.",
+  "title": "Agent Memory Poisoning",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -81,8 +89,8 @@
   "local_path": "context/assets/illustrations/agent-memory-poisoning-write-path/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 234700,
-  "sha256": "sha256:9f710b410a919519850a5dcaa0bf82853d6b92d222a7393553578ce7a534c557",
+  "bytes": 369746,
+  "sha256": "sha256:977d5478cd482691f3192572c9f9947b622b21941697804dc1ca43a587df60fb",
   "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a",
   "source_chars": 4115,
   "task_id": "bcadc055212c2b9e83d010aeb3a865f2",
@@ -97,5 +105,47 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T00:01:30+00:00"
+  "generated_at": "2026-10-09T00:01:30+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 369746,
+    "quality": 88,
+    "sha256": "sha256:977d5478cd482691f3192572c9f9947b622b21941697804dc1ca43a587df60fb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "AGENTIC MEMORY // POISONING",
+    "title": "AGENT MEMORY POISONING",
+    "hook": "One text file can take over a coding agent's memory",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 6.52,
+    "target": 4.5,
+    "clutter": 0.158,
+    "region_rgb": [
+      55,
+      64,
+      65
+    ],
+    "binding_rgb": [
+      76,
+      86,
+      87
+    ],
+    "title_lines": [
+      "AGENT MEMORY",
+      "POISONING"
+    ],
+    "subject": 0.163,
+    "ink_subject": 0.081,
+    "spike": 0.487,
+    "generated_at": "2026-10-09T00:01:30+00:00"
+  }
 }

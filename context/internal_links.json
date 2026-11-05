@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T20:21:41+00:00",
+  "generated_at": "2026-11-05T14:20:11+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "italy-bills-26-to-leave",
+      "title": "Italy Bills 26% to Leave",
+      "url": "https://giniloh.com/italy-bills-26-to-leave/",
+      "path": "/italy-bills-26-to-leave/",
+      "sites_live": {
+        "giniloh.com": "/italy-bills-26-to-leave/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Italy bills 26% to leave. Article 17 of the budget bill sent to parliament on 30 October would tax the unsold gains of anyone who moves out after six of the\u2026",
+      "modified": "2026-11-05T12:59:52",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2054,6 +2073,29 @@
       ],
       "excerpt": "A software patch sent through the Samsung SmartThings network broke fridges on Sept. 22.",
       "modified": "2026-10-31T04:49:16",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "fewer-liens-46-more-bankruptcies",
+      "title": "Fewer Liens, 46% More Failures: Your Bid",
+      "url": "https://wellroost.com/fewer-liens-46-more-bankruptcies/",
+      "path": "/fewer-liens-46-more-bankruptcies/",
+      "sites_live": {
+        "wellroost.com": "/fewer-liens-46-more-bankruptcies/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "The national mechanic's lien index fell to 47 in the third quarter, matching its 2022 low, after remodeling spending dropped 13.0 percent in a single month.",
+      "modified": "2026-11-05T12:50:21",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6596,6 +6638,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-10-5-cut-locks-2-1-years",
+      "title": "Your Silent 2.1-Year Contract",
+      "url": "https://aichieve.net/your-10-5-cut-locks-2-1-years/",
+      "path": "/your-10-5-cut-locks-2-1-years/",
+      "sites_live": {
+        "aichieve.net": "/your-10-5-cut-locks-2-1-years/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Almost half of the supply chain leaders Gartner surveyed have cut an average of 10.5% of their headcount in two years, and 66% of them say the cut fell on\u2026",
+      "modified": "2026-11-05T13:22:20",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-10-minute-spike-bills-an-hour",
       "title": "Your 10-Minute Spike Bills an Hour",
       "url": "https://aichieve.net/your-10-minute-spike-bills-an-hour/",
@@ -7049,6 +7114,29 @@
       ],
       "excerpt": "At 192 sessions running at once, the model stalls: its writing time stretches more than seventeen-fold, while the tools barely slow.",
       "modified": "2026-11-02T17:50:39",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-200-cap-still-buys-2-85x",
+      "title": "Your $200 Cap Still Buys 2.85x",
+      "url": "https://aichieve.net/your-200-cap-still-buys-2-85x/",
+      "path": "/your-200-cap-still-buys-2-85x/",
+      "sites_live": {
+        "aichieve.net": "/your-200-cap-still-buys-2-85x/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Apple cut its daily AI budget from $300 to $200 while the price of the tokens behind it fell 77%, so the cut bought 2.85 times as many tokens as the old cap did in\u2026",
+      "modified": "2026-11-05T11:42:36",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7953,6 +8041,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-port-clears-35688-boxes-dont",
+      "title": "Your Port Clears, 35,688 Boxes Don't",
+      "url": "https://aichieve.net/your-port-clears-35688-boxes-dont/",
+      "path": "/your-port-clears-35688-boxes-dont/",
+      "sites_live": {
+        "aichieve.net": "/your-port-clears-35688-boxes-dont/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "On the last Monday in October, 35,688 import containers sat on the terminals at Los Angeles and Long Beach waiting for a train, because the railcars that\u2026",
+      "modified": "2026-11-05T11:50:20",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-render-bill-multiplies-by-22-97",
       "title": "Your Render Bill Multiplies by 22.97",
       "url": "https://aichieve.net/your-render-bill-multiplies-by-22-97/",
@@ -8130,6 +8241,29 @@
       ],
       "excerpt": "An automated forklift costs $100,000 to $200,000 a unit today. Seegrid says the model it is building for warehouses, due in early 2027, will sell for about\u2026",
       "modified": "2026-10-31T04:48:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-signed-tool-still-leaks-3-of-3",
+      "title": "Your Signed MCP Tool Still Leaks: 3 of 3",
+      "url": "https://aichieve.net/your-signed-tool-still-leaks-3-of-3/",
+      "path": "/your-signed-tool-still-leaks-3-of-3/",
+      "sites_live": {
+        "aichieve.net": "/your-signed-tool-still-leaks-3-of-3/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A correctly signed Model Context Protocol (MCP) tool still leaks private data through an allowed address in 3 of 3 trials, after the signature check and the\u2026",
+      "modified": "2026-11-05T10:57:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8388,6 +8522,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1492,
+      "slug": "your-10-5-cut-locks-2-1-years",
+      "title": "Your Silent 2.1-Year Contract",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T13:22:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1486,
+      "slug": "your-port-clears-35688-boxes-dont",
+      "title": "Your Port Clears, 35,688 Boxes Don&#8217;t",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T11:50:20",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1482,
+      "slug": "your-200-cap-still-buys-2-85x",
+      "title": "Your $200 Cap Still Buys 2.85x",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T11:42:36",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1480,
+      "slug": "your-signed-tool-still-leaks-3-of-3",
+      "title": "Your Signed MCP Tool Still Leaks: 3 of 3",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T10:57:31",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -9453,62 +9643,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1119,
-      "slug": "your-61-point-growth-was-a-refill",
-      "title": "Your 6.1-Point Growth Isn&#8217;t Demand",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:23",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1114,
-      "slug": "suez-returns-91-surcharge-doesnt",
-      "title": "Suez Returns. Your $91 Surcharge Doesn&#8217;t.",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:24",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1111,
-      "slug": "one-request-five-actions",
-      "title": "One Request, Five Actions: Your 5x Blind Spot",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:24",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1108,
-      "slug": "your-agent-team-loses-28-points",
-      "title": "Your Agent Team Loses 28 Points: The 188x Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:24",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -9519,6 +9653,20 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1489,
+      "slug": "italy-bills-26-to-leave",
+      "title": "Italy Bills 26% to Leave",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T12:59:52",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -9785,20 +9933,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:22",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1117,
-      "slug": "your-350000-passport-isnt-europe",
-      "title": "Your $350,000 Passport Isn&#8217;t Europe",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:23",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

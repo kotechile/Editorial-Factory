@@ -1,6 +1,6 @@
 {
   "slug": "fine-tune-vs-rent-by-token",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -80,6 +80,14 @@
     },
     {
       "revision": 10,
+      "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even.",
+      "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+      "title": "The Local AI Break-Even",
+      "bytes": 393986,
+      "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e"
+    },
+    {
+      "revision": 11,
       "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even.",
       "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
       "title": "The Local AI Break-Even",
