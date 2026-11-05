@@ -431,3 +431,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-05 | `fewer-liens-46-more-bankruptcies` | home_ops_execution | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/fewer-liens-46-more-bankruptcies/featured.jpg` |
 | 2026-11-05 | `italy-bills-26-to-leave` | expat_cross_border_relocation | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/italy-bills-26-to-leave/featured.jpg` |
 | 2026-11-05 | `your-10-5-cut-locks-2-1-years` | demand_sensing_advanced_sop | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-10-5-cut-locks-2-1-years/featured.jpg` |
+| 2026-11-05 | `your-task-protocol-costs-643-lines` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-task-protocol-costs-643-lines/featured.jpg` |

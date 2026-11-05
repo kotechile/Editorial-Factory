@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T13:25:44Z",
+  "updated_at": "2026-11-05T17:50:57Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5616,6 +5616,24 @@
         "By the numbers",
         "The fork caps the data",
         "What the proof does not cover",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_your-task-protocol-costs-643-lines",
+      "title": "Your Task Protocol Costs 643 Lines",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Three places to keep the fact",
+        "By the numbers",
+        "Where the hop owners land",
+        "The catch",
         "Related reading",
         "At a glance"
       ],
