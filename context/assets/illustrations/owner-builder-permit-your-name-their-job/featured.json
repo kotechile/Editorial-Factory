@@ -1,0 +1,114 @@
+{
+  "slug": "owner-builder-permit-your-name-their-job",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper owner-builder permit, dark house silhouette, and hourglass on a kitchen table.",
+      "caption": "A layered cut-paper still life places an owner-builder permit, a house silhouette, and a draining hourglass on a kitchen table to show the legal role and the resale clock.",
+      "title": "Owner-Builder Permit Resale Clock Collage",
+      "bytes": 347306,
+      "sha256": "sha256:7014a4d8399e1db0d0cedc4955c5f6fe"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Build a minimalist editorial paper collage on a real kitchen table. Arrange three cut-paper elements: a cream owner-builder permit with an empty signature line, a dark charcoal house silhouette, and a small brass hourglass with sand half gone. The permit lies slightly off-centre left on the table, the house silhouette stands behind right, and the hourglass sits beside the permit's signature line, casting a soft long shadow to the left. Use hand-torn rag paper with visible fibre, matte muted palette of bone white, charcoal, and rust, raking window light from the right. Asymmetric layered composition, generous negative space, no legible print, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numbers, logos, UI",
+  "rationale": "The story is a regulatory trap about a signed document and a time window, not a physical facility or machine. Cut-paper collage lets the permit, house, and hourglass speak as one symbolic assembly without relying on legible text or photographic stock.",
+  "cue": "the watching, the hiring and the insurance",
+  "subject": "a cut-paper owner-builder permit with an empty signature line, dark house silhouette, and an hourglass on a kitchen table",
+  "core_thesis": "An owner-builder permit doesn't discount a fee; it shifts the general contractor's legal watching, hiring, and insurance onto the homeowner, and any resale within the exemption window becomes evidence of unlicensed building.",
+  "core_conflict": "Homeowner's signed permit and short-term need to sell versus the state's statutory presumption that a quick resale proves unlicensed construction.",
+  "composition": "asymmetric layered flat-lay with the permit and hourglass on the left thirds, house silhouette rising behind at right, generous negative space",
+  "alt_text": "Owner-Builder Permit Trap. Cut-paper owner-builder permit, dark house silhouette, and hourglass on a kitchen table.",
+  "caption": "Owner-Builder Permit Trap: One signature can make you an unlicensed builder of record.",
+  "title": "Owner-Builder Permit Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/owner-builder-permit-your-name-their-job/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 387660,
+  "sha256": "sha256:3c108d076531ede60bdfede7f27fc73fe64463f4164a7ccb9b3a881e8a0c30ec",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 387660,
+    "quality": 84,
+    "sha256": "sha256:3c108d076531ede60bdfede7f27fc73fe64463f4164a7ccb9b3a881e8a0c30ec",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:21807e0f8cc249df4c41a2172374914e19cb370e77aa2e19fddaae89fee76a2b",
+  "render_phash": "042f04ff046704cd048300e32061076141656161e17181f94be107e500e52027",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A blank cream deckle-edged paper card rests on layered torn paper sheets of cream, red-brown and dark grey on a scratched wooden table, with a small brass hourglass standing to its left and a dark grey cut-paper house silhouette standing upright behind the card at right, against a pale wall and window frame.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The blank paper with an empty signature line, the house silhouette and the hourglass stage exactly the article's mechanism \u2014 a permit you sign as owner starting a ticking resale window \u2014 with no text needed to identify it."
+  },
+  "source_hash": "sha256:f648f90d22a70b77726e13ba1ac0e1ac",
+  "source_chars": 4316,
+  "task_id": "165a697b27296cdaf4126c93ce2b1b6e",
+  "credits": 18.0,
+  "cost_ms": 65,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ee42405b5c5efe16aedd845b9516ec5c.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Build a minimalist editorial paper collage on a real kitchen table. Arrange three cut-paper elements: a cream owner-builder permit with an empty signature line, a dark charcoal house silhouette, and a small brass hourglass with sand half gone. The permit lies slightly off-centre left on the table, the house silhouette stands behind right, and the hourglass sits beside the permit's signature line, casting a soft long shadow to the left. Use hand-torn rag paper with visible fibre, matte muted palette of bone white, charcoal, and rust, raking window light from the right. Asymmetric layered composition, generous negative space, no legible print, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-05T19:18:14+00:00",
+  "overlay": {
+    "kicker": "OWNER-BUILDER PERMITS // LICENSING LAW",
+    "title": "OWNER-BUILDER PERMIT TRAP",
+    "hook": "One signature can make you an unlicensed builder of record",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 5.63,
+    "target": 4.5,
+    "clutter": 0.162,
+    "region_rgb": [
+      94,
+      83,
+      69
+    ],
+    "binding_rgb": [
+      120,
+      87,
+      56
+    ],
+    "title_lines": [
+      "OWNER-BUILDER",
+      "PERMIT TRAP"
+    ],
+    "subject": 0.032,
+    "ink_subject": 0.01,
+    "spike": 0.12,
+    "generated_at": "2026-11-05T19:18:14+00:00"
+  }
+}

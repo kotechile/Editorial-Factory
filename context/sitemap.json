@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T18:53:18Z",
+  "updated_at": "2026-11-05T19:19:27Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5552,6 +5552,23 @@
       "date": "2026-11-05",
       "public": true,
       "url": "https://giniloh.com/italy-bills-26-to-leave/"
+    },
+    {
+      "slug": "2026-11-05_owner-builder-permit-your-name-their-job",
+      "title": "Your 12-Month Owner-Builder Trap",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "What the signature transfers",
+        "By the numbers",
+        "Where the resale window bites",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-05",
+      "public": false
     },
     {
       "slug": "2026-11-05_your-10-5-cut-locks-2-1-years",

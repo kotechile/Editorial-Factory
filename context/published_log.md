@@ -310,6 +310,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-05 | agentic_ai | your-task-protocol-costs-643-lines | Your Task Protocol Costs 643 Lines | https://pressflow.aichieve.net/published/2026-11-05_your-task-protocol-costs-643-lines.md | reader site only |
 | 2026-11-05 | enterprise_ai_finops | your-99-cent-resolution-bills-the-handoff | Your $0.99 Resolution Bills the Handoff | https://pressflow.aichieve.net/published/2026-11-05_your-99-cent-resolution-bills-the-handoff.md | reader site only |
 | 2026-11-05 | supply_chain | your-trailers-last-foot-costs-2500 | Your Trailer's Last Foot Costs 2,500 | https://pressflow.aichieve.net/published/2026-11-05_your-trailers-last-foot-costs-2500.md | reader site only |
+| 2026-11-05 | home_ops_execution | owner-builder-permit-your-name-their-job | Your 12-Month Owner-Builder Trap | https://pressflow.aichieve.net/published/2026-11-05_owner-builder-permit-your-name-their-job.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
