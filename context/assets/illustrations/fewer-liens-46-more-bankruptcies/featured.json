@@ -1,0 +1,116 @@
+{
+  "slug": "fewer-liens-46-more-bankruptcies",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three brushed-aluminum modules sit on a steel rail, the last one unlatched and slid back from the others.",
+      "caption": "A staged payment assembly on a garage bench shows the cash gap between draws when the final release is pulled back.",
+      "title": "Contract cash terms payment draw assembly",
+      "bytes": 391187,
+      "sha256": "sha256:0e34d13c23be6b49e6096d0691ce030f"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "In a garage on a weathered concrete workbench, a modular payment-stage assembly sits off-centre left: three brushed-aluminum stage housings on a parallel steel rail, the first two latched, the third unlatched and slid back to expose an empty slot; a loose steel tension spring rests in the vacant bay. Hard directional light rakes from the upper right across the brushed metal, casting long contact shadows. Palette: bone white, graphite, rust. Matte muted surfaces, clean edges, no text, no lettering. Extreme asymmetry with negative space on the right.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story is a contractual and cash-flow structural shift about staged payments and the gap between completed work and released funds. A modular mechanical assembly physically stages the draw schedule without relying on paper text, which fits the component_assembly treatment's restrained, constructed vocabulary.",
+  "cue": "read the contract's cash terms rather than its price",
+  "subject": "Three interlocking brushed-aluminum payment-stage modules on a steel rail, the last module unlatched and pulled back, with a loose steel spring in the gap.",
+  "core_thesis": "A falling mechanic's-lien count measures how many jobs reach completion, not whether the trades are being paid, so a homeowner in a shrinking remodel market must read a bidder's contract cash terms rather than its price.",
+  "core_conflict": "The lien index declines because fewer projects reach lien-triggering stages, masking contractor cash distress and rising small-business failures; the deposit becomes working capital for the last job.",
+  "composition": "Extreme asymmetry with hero assembly anchored off-centre left and empty garage bench negative space on the right.",
+  "alt_text": "Three brushed-aluminum modules sit on a steel rail, the last one unlatched and slid back from the others.",
+  "caption": "Three payment-stage modules on a rail, one unlatched: the draw that never arrives.",
+  "title": "Fewer Liens, 46% More Failures",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/fewer-liens-46-more-bankruptcies/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 380605,
+  "sha256": "sha256:16a2fb3822a8e49647e9f62b2f4b26658d1e323019422a3d19ef64f23093bc88",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 380605,
+    "quality": 76,
+    "sha256": "sha256:16a2fb3822a8e49647e9f62b2f4b26658d1e323019422a3d19ef64f23093bc88",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:48ddc9e8b7a5be2208baba2ecaa80085437ad1e32e227987cdf55eee1dfad22d",
+  "render_phash": "c9ced1c2a0c104c109c116692669266d2e658674d54ee706670f470f26cf66cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Three brushed-metal box modules sit in a row on two parallel steel rails running diagonally across a concrete floor, with the rightmost module separated from the others by a gap in which a coiled steel spring is exposed.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The three sequenced modules read as the payment stages on a draw schedule, and the unlatched, pulled-back final module with the spring in the gap illustrates where money stops between draws, matching the article's own mechanism rather than a different industry."
+  },
+  "source_hash": "sha256:fee697a1adccf9ca8bd7a2cb1ff1cdae",
+  "source_chars": 4608,
+  "task_id": "c72079091d25d3bebd60599a80a6d25e",
+  "credits": 18.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f597f7ca849d9f6beb8b1c2ba9d4605a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "In a garage on a weathered concrete workbench, a modular payment-stage assembly sits off-centre left: three brushed-aluminum stage housings on a parallel steel rail, the first two latched, the third unlatched and slid back to expose an empty slot; a loose steel tension spring rests in the vacant bay. Hard directional light rakes from the upper right across the brushed metal, casting long contact shadows. Palette: bone white, graphite, rust. Matte muted surfaces, clean edges, no text, no lettering. Extreme asymmetry with negative space on the right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-05T12:48:05+00:00",
+  "overlay": {
+    "kicker": "HOME REMODELING // LIEN INDEX",
+    "title": "FEWER LIENS, 46% MORE FAILURES",
+    "hook": "Fewer liens hide a 46% jump in contractor failures",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.6,
+    "target": 4.5,
+    "clutter": 0.17,
+    "region_rgb": [
+      32,
+      28,
+      20
+    ],
+    "binding_rgb": [
+      37,
+      35,
+      23
+    ],
+    "title_lines": [
+      "FEWER LIENS, 46%",
+      "MORE FAILURES"
+    ],
+    "subject": 0.008,
+    "ink_subject": 0.009,
+    "spike": 0.006,
+    "generated_at": "2026-11-05T12:48:05+00:00"
+  }
+}

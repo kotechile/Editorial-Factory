@@ -14,6 +14,12 @@ meta_title: "Fewer Liens, 46% More Failures: Your Bid"
 meta_title_source: "derived_from_title"
 meta_description: "The national mechanic's lien index fell to 47 in the third quarter, matching its 2022 low, after remodeling spending dropped 13.0 percent in a single month."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/fewer-liens-46-more-bankruptcies/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Three brushed-aluminum modules sit on a steel rail, the last one unlatched and slid back from the others."
+image_caption: "Three payment-stage modules on a rail, one unlatched: the draw that never arrives."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -34,24 +40,8 @@ The spending data picks one. Home building ran at $848.8 billion in September, d
 
 - **18.0% — Remodeling's annual drop:** improvement spending in September, on top of the one-month fall, was down 18.0 percent over the year [2].
 - **276 and 2,442 — Small-business reorganizations:** Subchapter V elections ran 38 percent above September 2025 for the month, and reached 2,442 in the first nine months of 2026, up from 1,672 [5].
-- **16% — Lien index, year over year:** the third-quarter reading came in ten percent below the prior quarter and 16 percent below a year ago, the weakest since 2022 [4].
+- **47 — Lien index in Q3:** ten percent below the prior quarter and 16 percent below a year ago, the weakest reading since 2022 [4].
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
-  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Fewer Liens, 46% More Failures: Your Bid</text>
-  <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
-  <!-- Row 1 -->
-  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">Remodeling&#x27;s annual drop</text>
-  <rect x="240" y="70" width="300" height="18" rx="4" fill="#1e293b"/>
-  <rect x="240" y="70" width="54" height="18" rx="4" fill="#818cf8"/>
-  <text x="304" y="84" fill="#f1f5f9" font-size="13" font-weight="600">18%</text>
-  <text x="358" y="84" fill="#64748b" font-size="11">([2])</text>
-  <!-- Row 2 -->
-  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">Lien index, year over year</text>
-  <rect x="240" y="118" width="300" height="18" rx="4" fill="#1e293b"/>
-  <rect x="240" y="118" width="48" height="18" rx="4" fill="#818cf8"/>
-  <text x="298" y="132" fill="#f1f5f9" font-size="13" font-weight="600">16%</text>
-  <text x="352" y="132" fill="#64748b" font-size="11">([4])</text>
-</svg>
 
 <!-- tactical-insight -->
 
