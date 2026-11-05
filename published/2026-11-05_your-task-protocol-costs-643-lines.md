@@ -57,6 +57,15 @@ The comparison is one team's build of one task. Two of its four agents call a la
 
 What I find hard to square is how cleanly the numbers read as a verdict when they are really a price list. Paying 643 lines and three times the steps is cheap if the other path is a life cycle your callers will lean on for years, and it is dear if you only needed a question answered two calls ago. The choice is not which protocol is better. It is how long the fact has to live.
 
+
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** MCP dropped the session and now round-trips a question inside a tool call, so asking back no longer needs a task.
+- **The number:** 643 — the extra lines the task version of one hop needed.
+- **The risk:** Without a handle's expiry and per-call check, the cheaper wire quietly turns state into a password.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -69,14 +78,6 @@ What I find hard to square is how cleanly the numbers read as a verdict when the
 - [Your Undo Is 14.6x Cheaper](/your-undo-is-14-6x-cheaper/) — more on Autonomous & Agentic Workflows
 - [60.7% of Agent Deletes Ask Nobody](/your-agent-deletes-ask-nobody/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** MCP dropped the session and now round-trips a question inside a tool call, so asking back no longer needs a task.
-- **The number:** 643 — the extra lines the task version of one hop needed.
-- **The risk:** Without a handle's expiry and per-call check, the cheaper wire quietly turns state into a password.
 
 ## Sources
 
