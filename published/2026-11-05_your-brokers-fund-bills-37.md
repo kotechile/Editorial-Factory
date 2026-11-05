@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-brokers-fund-bills-37/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "Your Broker'S Fund Bills 37%. Transparent acrylic cover over a stack of metal plates and a brass gear on a home-office workbench."
-image_caption: "Your Broker'S Fund Bills 37%: The wrapper, not the fund, decides your tax rate."
+image_alt: "Transparent acrylic cover over a stack of metal plates and a brass gear on a home-office workbench."
+image_caption: "The wrapper, not the fund, determines how a U.S. taxpayer's foreign index gain is sliced and billed."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -67,19 +67,6 @@ Two limits on the argument, and the first is what I had to check twice. A fund t
 
 The question I would run before the sale year is whether the wrapper or the election timing changes the default bill. That is what the [expat financial and international tax evaluator](/calculators/expat-evaluator/) is built to model.
 
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Swap Died at 25%" -> /why-your-swap-died-at-25/ [same site (giniloh.com); topical overlap: broker, fund] Link "Your Swap Died at 25%" in the section where the article touches broker, fund. -->
-<!-- internal-link hint: "Your Overage Page Costs $0.20" -> /your-ink-plan-bills-20-cents/ [same site (giniloh.com); topical overlap: because, bills] Link "Your Overage Page Costs $0.20" in the section where the article touches because, bills. -->
-<!-- internal-link hint: "Your Screen Gap: $999 vs $99" -> /your-screen-gap-999-vs-99/ [same site (giniloh.com); topical overlap: because, rather] Link "Your Screen Gap: $999 vs $99" in the section where the article touches because, rather. -->
-## Related reading
-
-- [Your Swap Died at 25%](/why-your-swap-died-at-25/)
-- [Your Overage Page Costs $0.20](/your-ink-plan-bills-20-cents/)
-- [Your Screen Gap: $999 vs $99](/your-screen-gap-999-vs-99/)
-<!-- internal-links:end -->
-
 <!-- tldr -->
 
 ## At a glance
@@ -87,6 +74,16 @@ The question I would run before the sale year is whether the wrapper or the elec
 **The shift:** The wrapper, not the fund, decides whether the US taxes a gain at capital-gains rates.
 **The number:** 37% is the top rate each slice is taxed at, before interest.
 **The risk:** The $25,000 reporting exemption ends in the year of the sale.
+
+<!-- internal-links -->
+
+<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+## Related reading
+
+- [Money & Wealth](/articles/money-wealth/)
+- [Your $130,000 Cap Costs the Credit](/your-130000-cap-costs-the-credit/)
+- [Italy Bills 26% to Leave](/italy-bills-26-to-leave/)
+<!-- internal-links:end -->
 
 ## Sources
 
