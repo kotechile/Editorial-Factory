@@ -108,6 +108,14 @@ would look green while nothing reached a front (verify.sh §8.5 greps for the se
    carries it — the attachment is uploaded, captioned (alt text/caption/credit) and set as the
    post's `featured_media`, with `metadata.wordpress.media_id`/`media_url`/`media_alt` recorded so
    the next push reuses it instead of duplicating the bytes.
+   **The `--reimage` recovery can leave the row's `metadata` holding four keys (learned 2026-11-05).**
+   On the trailer-payload evergreen the row came back from the recovery carrying only `seo`, `kind`,
+   `illustration` and `wordpress`, while every neighbouring live row also carried `slug`, `vertical`,
+   `status`, `headline`, `sources`, `targets`, `live_urls`, `promo_url` and `internal_links`. Read the
+   whole `metadata` object back after any `--reimage` (not just the fields the push reports), diff its
+   key set against a sibling live row, and restore the missing keys with one read-modify-write PATCH —
+   a row that disagrees with its neighbours is how a dashboard entry loses its vertical and its link
+   list while the CMS post stays perfect.
 6. **A regenerated visual has to reach the ROW, not just the artifact file.** The connector pushes
    the Supabase row's `content`, and `wp_draft.py --refresh` re-derives the body from that same row —
    so a chart rewritten in `published/<file>.md` (a new `chart_generator.py` revision, or
