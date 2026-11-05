@@ -12,6 +12,12 @@ meta_title: "Your Trailer's Last Foot Costs 2,500"
 meta_title_source: "derived_from_title"
 meta_description: "A tractor-trailer can cross a scale at the 80,000-pound cap and still fail federal weight law, because the binding limit is a distance between axle groups."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-trailers-last-foot-costs-2500/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "A five-axle tractor-trailer straddles a weighbridge while its drive and trailer tandems are measured for legal axle spacing."
+image_caption: "A five-axle rig straddles a scale where one missing foot of wheelbase costs 2,500 pounds of legal payload."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -66,15 +72,15 @@ The practical version is smaller than a compliance program. One distance, from t
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your ETA Misses 27 Hours" -> /your-eta-misses-27-hours/ [same site (aichieve.net); same category; topical overlap: because, distance] Link "Your ETA Misses 27 Hours" in the section where the article touches because, distance. -->
-<!-- internal-link hint: "Your SKUs Fail The 1.32 Cut" -> /skus-fail-the-1-32-cut/ [same site (aichieve.net); same category; topical overlap: because, fail] Link "Your SKUs Fail The 1.32 Cut" in the section where the article touches because, fail. -->
-<!-- internal-link hint: "Your Truck Mile Costs 2.2 Driver-Minutes" -> /your-truck-mile-costs-2-2-driver-minutes/ [same site (aichieve.net); same category; topical overlap: because, costs] Link "Your Truck Mile Costs 2.2 Driver-Minutes" in the section where the article touches because, costs. -->
+<!-- internal-links:start — curated by the 2026-11-05 run from live supply_chain pages on aichieve.net; the generator's picks were justified on the function word 'because' and were replaced -->
+<!-- internal-link hint: "Your Truck Mile Costs 2.2 Driver-Minutes" -> /your-truck-mile-costs-2-2-driver-minutes/ [same site (aichieve.net); same vertical; shared subject: freight / carrier load] -->
+<!-- internal-link hint: "Your Carrier's $750,000 Doesn't Cover Cargo" -> /your-carriers-750000-doesnt-cover-cargo/ [same site (aichieve.net); same vertical; shared subject: freight / carrier load] -->
+<!-- internal-link hint: "Your Claim Dies at 9 Months" -> /freight-claim-dies-at-9-months/ [same site (aichieve.net); same vertical; shared subject: freight / carrier load] -->
 ## Related reading
 
-- [Your ETA Misses 27 Hours](/your-eta-misses-27-hours/) — more on Supply Chain & Operations
-- [Your SKUs Fail The 1.32 Cut](/skus-fail-the-1-32-cut/) — more on Supply Chain & Operations
 - [Your Truck Mile Costs 2.2 Driver-Minutes](/your-truck-mile-costs-2-2-driver-minutes/) — more on Supply Chain & Operations
+- [Your Carrier's $750,000 Doesn't Cover Cargo](/your-carriers-750000-doesnt-cover-cargo/) — more on Supply Chain & Operations
+- [Your Claim Dies at 9 Months](/freight-claim-dies-at-9-months/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
 ## Sources

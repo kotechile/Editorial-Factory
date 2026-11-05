@@ -1,0 +1,112 @@
+{
+ "slug": "your-trailers-last-foot-costs-2500",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Five-axle tractor-trailer straddling a weighbridge, its drive and trailer tandems cast in raking sunlight, measuring the legal axle spacing.",
+   "caption": "A five-axle rig straddles a scale where one missing foot of wheelbase costs 2,500 pounds of legal payload.",
+   "title": "Trailer-bridge weighbridge five-axle rig",
+   "bytes": 354347,
+   "sha256": "sha256:4b9c628c2678e628b25d4d291d584962"
+  }
+ ],
+ "style": "long_lens_industry",
+ "style_label": "Compressed telephoto industry",
+ "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "200mm telephoto compression of an unbranded five-axle tractor-trailer straddling a weighbridge at a container terminal loading bay. Low late-afternoon sun rakes from the left, casting long shadows of the twin axles and trailer bridge across asphalt and steel scale plates. Charcoal, safety yellow, and weathered orange palette; galvanized steel, concrete, and asphalt textures. Extreme asymmetric framing: the rear trailer tandem sits on the right third, the drive tandem in the middle distance, empty scale readout blurred at far left. Crystal-clear air, no fog, no people, no text.",
+ "negative_prompt": "garbled text, random lettering, watermarks, logos, readable numbers",
+ "rationale": "The story is about scale, measurement, and the physical distance across a heavy freight truck. A compressed telephoto view makes the axle spacing and weighbridge legible while conveying industrial scale and the precision of the bridge formula.",
+ "cue": "one foot of wheelbase is worth 2,500 pounds of freight",
+ "subject": "a five-axle tractor-trailer straddling a weighbridge, its drive and trailer tandems aligned on the scale platform",
+ "core_thesis": "A five-axle trailer loaded to exactly 80,000 pounds can still violate federal bridge formula because the 35-foot trailer bridge is one foot short of 36, and that missing foot costs 2,500 pounds of legal payload.",
+ "core_conflict": "Legal weight capacity versus wheelbase spacing: the bridge formula turns a tape measure into a load limit, where one foot of spacing becomes 2,500 pounds of freight.",
+ "composition": "Extreme asymmetric framing: rear trailer tandem on the right third, drive tandem in the middle distance, generous negative space above and left",
+ "alt_text": "A five-axle tractor-trailer straddles a weighbridge while its drive and trailer tandems are measured for legal axle spacing.",
+ "caption": "A five-axle rig straddles a scale where one missing foot of wheelbase costs 2,500 pounds of legal payload.",
+ "title": "Trailer'S Last Foot Costs 2500 Lbs",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-trailers-last-foot-costs-2500/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 391876,
+ "sha256": "sha256:77c34e41bacbade7f7de3d9216975fd70acb1498f5ef2c4d8796fa15815e36d0",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 391876,
+  "quality": 88,
+  "sha256": "sha256:77c34e41bacbade7f7de3d9216975fd70acb1498f5ef2c4d8796fa15815e36d0",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:0b2fe9d5b7f9fd334819a539afe55ef74698303c4a7618d433d75e6104af4516",
+ "render_phash": "c7fec5b6e5e74dfb4dec4d2d4cad4eed4eed67ade4ec337f30cf36733b19398c",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A five-axle tractor-trailer with a red cab and silver box trailer sits on a concrete weighbridge platform, its three-axle trailer bogie filling the right side of the frame while a tall orange post holding a dark rectangular display screen stands at the left.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.9,
+  "reason": "The image shows the article's exact protagonist and mechanism \u2014 a five-axle rig with its tandem/bogie axles positioned on a weighbridge \u2014 so a reader would connect it directly to a story about axle spacing and scale weight limits."
+ },
+ "source_hash": "sha256:fcbf906b2628ff7e212bf0c8348e5e20",
+ "source_chars": 5231,
+ "task_id": "95a9d29a4bd66a9eafba35be4a16f068",
+ "credits": 5.0,
+ "cost_ms": 20,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/95a9d29a4bd66a9eafba35be4a16f068_1793904525666.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "200mm telephoto compression of an unbranded five-axle tractor-trailer straddling a weighbridge at a container terminal loading bay. Low late-afternoon sun rakes from the left, casting long shadows of the twin axles and trailer bridge across asphalt and steel scale plates. Charcoal, safety yellow, and weathered orange palette; galvanized steel, concrete, and asphalt textures. Extreme asymmetric framing: the rear trailer tandem sits on the right third, the drive tandem in the middle distance, empty scale readout blurred at far left. Crystal-clear air, no fog, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-05T18:48:52+00:00",
+ "overlay": {
+  "kicker": "FREIGHT WEIGHT LAW // BRIDGE FORMULA",
+  "title": "TRAILER'S LAST FOOT COSTS 2500 LBS",
+  "hook": "A foot of wheelbase is worth 2,500 pounds of freight",
+  "anchor": "bottom-left",
+  "light": true,
+  "scrim": 120,
+  "contrast": 5.95,
+  "target": 5.5,
+  "clutter": 0.342,
+  "region_rgb": [
+   125,
+   116,
+   109
+  ],
+  "binding_rgb": [
+   188,
+   167,
+   146
+  ],
+  "title_lines": [
+   "TRAILER'S LAST FOOT",
+   "COSTS 2500 LBS"
+  ],
+  "subject": 0.037,
+  "ink_subject": 0.015,
+  "spike": 0.126,
+  "generated_at": "2026-11-05T18:48:52+00:00"
+ }
+}
