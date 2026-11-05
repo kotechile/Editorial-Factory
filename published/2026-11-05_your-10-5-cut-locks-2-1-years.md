@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-10-5-cut-locks-2-1-years/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "S&Op Software'S 2.1-Year Job Cut. Empty junior planner chair at a dark console in a supply chain control room with glowing forecasting"
-image_caption: "S&Op Software'S 2.1-Year Job Cut: Entry-level planners who overrule forecasts are cut first."
+image_alt: "An empty mesh office chair at a dark planning desk, its monitors still glowing with a forecast nobody reviewed."
+image_caption: "Your Silent 2.1-Year Contract: the bench that learns to overrule the model is cut first."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
