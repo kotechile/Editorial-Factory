@@ -305,6 +305,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-05 | enterprise_ai_finops | your-200-cap-still-buys-2-85x | Your $200 Cap Still Buys 2.85x | https://pressflow.aichieve.net/published/2026-11-05_your-200-cap-still-buys-2-85x.md | reader site only |
 | 2026-11-05 | supply_chain | your-port-clears-35688-boxes-dont | Your Port Clears, 35,688 Boxes Don't | https://pressflow.aichieve.net/published/2026-11-05_your-port-clears-35688-boxes-dont.md | reader site only |
 | 2026-11-05 | home_ops_execution | fewer-liens-46-more-bankruptcies | Fewer Liens, 46% More Failures: Your Bid | https://pressflow.aichieve.net/published/2026-11-05_fewer-liens-46-more-bankruptcies.md | reader site only |
+| 2026-11-05 | expat_cross_border_relocation | italy-bills-26-to-leave | Italy Bills 26% to Leave | https://pressflow.aichieve.net/published/2026-11-05_italy-bills-26-to-leave.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

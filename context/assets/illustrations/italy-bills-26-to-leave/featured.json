@@ -1,0 +1,112 @@
+{
+  "slug": "italy-bills-26-to-leave",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Blank tax assessment with embossed revenue seal beside closed passport and blank ledger on an oak desk.",
+      "caption": "A departure dossier gains an exit-price column: an official Italian tax form, a passport, and an unmarked ledger on a desk.",
+      "title": "Italy Exit Tax Departure Dossier",
+      "bytes": 386170,
+      "sha256": "sha256:3f3ac0466da5f82bd064d494c1e662e7"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead 50mm lens, top-down 90-degree flat-lay on a warm oak desk: a blank cream tax assessment form with an embossed notary seal and a red circular ink stamp, one corner lifted, a dark leather passport closed beside it, and an unmarked ledger opened to faint ruled columns. Hard 45-degree afternoon daylight from the left rakes across paper grain and leather. Bone white, graphite, rust. Shallow focus falloff at edges, fine film grain, symmetrical overhead flat-lay with one document rotated off-axis.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The article is a regulatory and contractual filing story; a document flat-lay directly captures the new levy as a piece of paper on a desk, with the tactile weight of official forms and a passport \u2014 no stock laptop or datacenter trope.",
+  "cue": "Italy bills 26% to leave",
+  "subject": "a blank tax assessment with an embossed revenue seal and a red circular stamp beside a closed passport and an open blank ledger",
+  "core_thesis": "Italy's draft 2027 budget imposes a 26% exit tax on unrealized gains for residents leaving after six of ten years with at least \u20ac800,000 in holdings, making the exit price as crucial as the entry price.",
+  "core_conflict": "voluntary relocation amnesty versus departure lock-in tax; the state's claim on accumulated but unrealized wealth collides with the taxpayer's cross-border mobility",
+  "composition": "symmetrical top-down overhead flat-lay with one document rotated off-axis and generous negative space",
+  "alt_text": "Italy Bills 26% To Leave. Blank tax assessment with embossed revenue seal beside closed passport and blank ledger on an oak desk.",
+  "caption": "Italy Bills 26% To Leave: Cross-border plans now need an exit price.",
+  "title": "Italy Bills 26% To Leave",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/italy-bills-26-to-leave/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 405900,
+  "sha256": "sha256:f1b08d7601c553705176a0e253d2c68b60696e70c3eeaa8a1fe3e8e6878a0768",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 405900,
+    "quality": 84,
+    "sha256": "sha256:f1b08d7601c553705176a0e253d2c68b60696e70c3eeaa8a1fe3e8e6878a0768",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:386a1c1a1b8d4aef750a4a441f5f6488c195689a13b3830880fb6bcdfa765578",
+  "render_phash": "cfcf33773af53ab83abc3abe3aba7ab87abc7bbc3b3c1b380b384a39227901f3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A top-down flat-lay on a wood-grain surface showing an open blank grid-ruled ledger at left, a blank cream document in the centre bearing a red circular stamp near its folded top corner and an embossed seal near the bottom, and a closed dark-brown passport-style booklet at right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "A blank assessment form with a revenue stamp beside a passport and ledger is the exit-tax paperwork the article describes, though nothing marks it specifically as Italy's 26% levy."
+  },
+  "source_hash": "sha256:4aa0dafc9f6b1ea79449ebba3f58b05b",
+  "source_chars": 5802,
+  "task_id": "2fa213d0ce6984436babbbd0b27975a8",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2fa213d0ce6984436babbbd0b27975a8_1793883516598.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead 50mm lens, top-down 90-degree flat-lay on a warm oak desk: a blank cream tax assessment form with an embossed notary seal and a red circular ink stamp, one corner lifted, a dark leather passport closed beside it, and an unmarked ledger opened to faint ruled columns. Hard 45-degree afternoon daylight from the left rakes across paper grain and leather. Bone white, graphite, rust. Shallow focus falloff at edges, fine film grain, symmetrical overhead flat-lay with one document rotated off-axis.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-05T12:58:46+00:00",
+  "overlay": {
+    "kicker": "ITALY EXIT TAX // WEALTH MOBILITY",
+    "title": "ITALY BILLS 26% TO LEAVE",
+    "hook": "Cross-border plans now need an exit price",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 150,
+    "contrast": 5.97,
+    "target": 5.5,
+    "clutter": 0.508,
+    "region_rgb": [
+      121,
+      101,
+      87
+    ],
+    "binding_rgb": [
+      219,
+      219,
+      211
+    ],
+    "title_lines": [
+      "ITALY BILLS 26%",
+      "TO LEAVE"
+    ],
+    "subject": 0.361,
+    "ink_subject": 0.264,
+    "spike": 0.745,
+    "generated_at": "2026-11-05T12:58:46+00:00"
+  }
+}

@@ -43,7 +43,7 @@ If nothing is sold inside the window the charge falls away. So does it on death,
 
 What I'm watching next is the committee stage. The bill went in on 30 October and parliament usually passes a budget by the end of December, so article 17 can still be amended, narrowed or dropped. An adviser quoted by the migration press has already called for it to be withdrawn [8]. A relocation model that prices the entry regime and the years of residence but stops at the move out is missing a column, and the [expat financial and international tax evaluator](/calculators/expat-evaluator/) is the version of that model that now has to carry one.
 
-On the American side the number to watch is the year's last list. Three quarters have run 4,573 names, against 4,888 for the whole of 2025, so a quiet fourth quarter leaves the year flat and a busy one puts it above last year [1][9][10]. That gap matters. A country that prices exit is usually described as losing people, and the quarterly data has never backed so simple a story.
+On the American side the number to watch is the year's last list. Three quarters have run 4,573 names, against 4,888 for the whole of 2025, so a quiet fourth quarter leaves the year flat and a busy one puts it above last year [1][2][9][10][11][12][13]. That gap matters. A country that prices exit is usually described as losing people, and the quarterly data has never backed so simple a story.
 
 <!-- nuanced-takeaway -->
 

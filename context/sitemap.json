@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T12:51:41Z",
+  "updated_at": "2026-11-05T12:59:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5531,6 +5531,23 @@
         "At a glance"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_italy-bills-26-to-leave",
+      "title": "Italy Bills 26% to Leave",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "A bidding war becomes a lock-in",
+        "By the numbers",
+        "What I'd watch before December",
+        "The catch",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
       "date": "2026-11-05",
       "public": false
     },
