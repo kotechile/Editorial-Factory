@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T13:02:05Z",
+  "updated_at": "2026-11-05T13:22:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5548,6 +5548,24 @@
         "At a glance"
       ],
       "target_persona": "cross_border_expat",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_your-10-5-cut-locks-2-1-years",
+      "title": "Your Silent 2.1-Year Contract",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Two lines on one budget",
+        "By the numbers",
+        "What the seat line hides",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-05",
       "public": false
     },

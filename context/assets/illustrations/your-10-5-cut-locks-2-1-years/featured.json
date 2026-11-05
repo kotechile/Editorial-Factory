@@ -1,0 +1,112 @@
+{
+  "slug": "your-10-5-cut-locks-2-1-years",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Empty junior planner chair at a dark console in a supply chain control room with glowing forecasting screens",
+      "caption": "The workstation that taught junior planners when to overrule the forecast is empty while the software-fueled consoles keep glowing.",
+      "title": "Empty bench in the forecast control room",
+      "bytes": 325781,
+      "sha256": "sha256:a95bba3b9c5b8b9cd0aacc40bed844eb"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An empty junior planner chair sits at a dark workstation in a supply chain control room; a single overhead pendant lamp casts warm light from the left while cool cobalt monitor glow fills the right. Rows of forecasting consoles stretch back with amber status lights and brushed steel desk surfaces under concrete ceiling tray. Anamorphic 35mm wide frame, shallow depth-of-field, restrained teal-and-amber palette, extreme asymmetry with the empty chair low-left and glowing console stack right, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI text, illegible numbers",
+  "rationale": "Cinematic still suits a decisive place-and-shift story: the empty control-room seat is a scene, not an object study, and the anamorphic frame captures the tension between the absent junior bench and the persistent forecast screens. It avoids macro/product abstraction and places systemic abandonment in a physical operations environment.",
+  "cue": "the same bench that learns when to overrule the forecast",
+  "subject": "empty junior planner chair at a dark workstation among lit forecasting consoles",
+  "core_thesis": "Planning software is being funded out of the planner payroll, and the entry-level bench cut first is the same bench that learns when to overrule the forecast \u2014 so a 2.1-year deal outlives the judgment it depends on.",
+  "core_conflict": "Subscription backlog growth versus payroll-driven entry-level headcount cuts, leaving software without the human judgment that must overrule forecasts.",
+  "composition": "extreme asymmetry, empty chair low-left, glowing console stack right, generous negative space above",
+  "alt_text": "S&Op Software'S 2.1-Year Job Cut. Empty junior planner chair at a dark console in a supply chain control room with glowing forecasting",
+  "caption": "S&Op Software'S 2.1-Year Job Cut: Entry-level planners who overrule forecasts are cut first.",
+  "title": "S&Op Software'S 2.1-Year Job Cut",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-10-5-cut-locks-2-1-years/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 383730,
+  "sha256": "sha256:843c70e0a95c9931d00b1289cbc5c35e02fff89468ceaae71e08b9f6b5d06a2a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 383730,
+    "quality": 88,
+    "sha256": "sha256:843c70e0a95c9931d00b1289cbc5c35e02fff89468ceaae71e08b9f6b5d06a2a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:140abea243292b691fb9084e9ec57233d2d428677a3f2ee046ad23b6185e60a8",
+  "render_phash": "1180010e0426042e19c4098b65af65fa61374013730330e064fc471e4c472033",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark office workstation with an empty mesh-backed chair at low-left, a desk with keyboard, mouse, mug, and papers, and a row of glowing monitors displaying charts and planning dashboards to the right under a hanging lamp.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.86,
+    "reason": "The empty junior-planner-style chair beside lit forecasting consoles directly visualizes the article's mechanism of cutting the entry-level planning bench while software-funded planning work continues."
+  },
+  "source_hash": "sha256:3233b0af116a414f407619fcbe251188",
+  "source_chars": 5753,
+  "task_id": "3c96631c06eb38c9ef4fce9ec5888f8f",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3c96631c06eb38c9ef4fce9ec5888f8f_1793884849515.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "An empty junior planner chair sits at a dark workstation in a supply chain control room; a single overhead pendant lamp casts warm light from the left while cool cobalt monitor glow fills the right. Rows of forecasting consoles stretch back with amber status lights and brushed steel desk surfaces under concrete ceiling tray. Anamorphic 35mm wide frame, shallow depth-of-field, restrained teal-and-amber palette, extreme asymmetry with the empty chair low-left and glowing console stack right, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-05T13:20:57+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN PLANNING // ENTRY-LEVEL CUTS",
+    "title": "S&OP SOFTWARE'S 2.1-YEAR JOB CUT",
+    "hook": "Entry-level planners who overrule forecasts are cut first",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 0,
+    "contrast": 11.8,
+    "target": 4.5,
+    "clutter": 0.143,
+    "region_rgb": [
+      28,
+      39,
+      37
+    ],
+    "binding_rgb": [
+      28,
+      49,
+      50
+    ],
+    "title_lines": [
+      "S&OP SOFTWARE'S",
+      "2.1-YEAR JOB CUT"
+    ],
+    "subject": 0.036,
+    "ink_subject": 0.019,
+    "spike": 0.103,
+    "generated_at": "2026-11-05T13:20:57+00:00"
+  }
+}
