@@ -1,0 +1,114 @@
+{
+  "slug": "your-brokers-fund-bills-37",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Transparent acrylic cover over a stack of metal plates and a brass gear on a home-office workbench.",
+      "caption": "The wrapper, not the fund, determines how a U.S. taxpayer's foreign index gain is sliced and billed.",
+      "title": "PFIC Wrapper Assembly",
+      "bytes": 398894,
+      "sha256": "sha256:843dd006292991602900b4cf18987686"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a matte charcoal workbench in a home office, a mechanical tax-wrapper assembly sits off-centre left: a transparent hinged acrylic cover is half-open over a stack of thin graphite metal gain plates, compressed by a brass rack-and-pinion mechanism; a small brass escapement gear rests against the stack. Key light from the left rakes across, throwing a long cast shadow to the right. Palette: bone white, graphite, ochre brass. Brushed steel, acrylic, brass materials. Extreme asymmetry, generous negative space, no text, no numbers, no lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numbers, symbols, UI, labels, embossed text, moulded lettering",
+  "rationale": "Component assembly suits the story because the core insight is structural: a wrapper enclosing a fund that gets sliced into annual tax layers. A constructed mechanical assembly can show that mechanism without text or literal documents, avoiding the legibility risk of document-based treatments.",
+  "cue": "the wrapper matters more than the fund",
+  "subject": "A transparent hinged acrylic wrapper over a stack of thin metal gain plates with a brass rack-and-pinion and escapement gear",
+  "core_thesis": "A local index fund in a host country is a passive foreign investment company to the US, and the default rule spreads the whole gain across the holding period at each year's top ordinary rate plus interest, so the wrapper matters more than the fund.",
+  "core_conflict": "The tax code treats a passive foreign fund as a company and taxes its gains at top ordinary rates with interest over the holding period, conflicting with the investor's expectation of capital-gains treatment.",
+  "composition": "extreme asymmetry, hero object off-centre left with long cast shadow to the right and generous negative space",
+  "alt_text": "Your Broker'S Fund Bills 37%. Transparent acrylic cover over a stack of metal plates and a brass gear on a home-office workbench.",
+  "caption": "Your Broker'S Fund Bills 37%: The wrapper, not the fund, decides your tax rate.",
+  "title": "Your Broker'S Fund Bills 37%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-brokers-fund-bills-37/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399353,
+  "sha256": "sha256:5d14d33ddb5cd99f8a021ecbc2f4d32881abef1792291462fa733bca8dd1c2ae",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399353,
+    "quality": 84,
+    "sha256": "sha256:5d14d33ddb5cd99f8a021ecbc2f4d32881abef1792291462fa733bca8dd1c2ae",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:12362ce51658ae627059c17b46c057904152d1ff132fde4bf1edaaf607aa6154",
+  "render_phash": "bacdc6cd9e4c9e6c26ff2cff1cff78ff78ff7c7f3c1f188f8c1b463e637ef0fd",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small metal device sits on a grey surface with its clear hinged acrylic lid propped open, revealing a stack of thin dark plates held between two toothed brass gears, with a round engraved brass gear wheel on the near side and two pale ceramic planters in the blurred background behind a long shadow falling to the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame literally renders the article's core distinction \u2014 a transparent acrylic wrapper clamped over a stack of gain plates driven by gears \u2014 so the wrapper-over-contents mechanism reads as the story's subject, though it carries no financial or tax-specific markings."
+  },
+  "source_hash": "sha256:a9796cd9b8ed0f2472c15d71d635aa0e",
+  "source_chars": 5083,
+  "task_id": "3339a25ff5e3a0a5405cc36933869af6",
+  "credits": 18.0,
+  "cost_ms": 45,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_1f37b76669cc45aae167024e3579be55.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a matte charcoal workbench in a home office, a mechanical tax-wrapper assembly sits off-centre left: a transparent hinged acrylic cover is half-open over a stack of thin graphite metal gain plates, compressed by a brass rack-and-pinion mechanism; a small brass escapement gear rests against the stack. Key light from the left rakes across, throwing a long cast shadow to the right. Palette: bone white, graphite, ochre brass. Brushed steel, acrylic, brass materials. Extreme asymmetry, generous negative space, no text, no numbers, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-05T19:49:20+00:00",
+  "overlay": {
+    "kicker": "EXPAT TAX // LOCAL FUND TRAP",
+    "title": "YOUR BROKER'S FUND BILLS 37%",
+    "hook": "The wrapper, not the fund, decides your tax rate",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 15,
+    "contrast": 4.9,
+    "target": 4.5,
+    "clutter": 0.173,
+    "region_rgb": [
+      79,
+      83,
+      85
+    ],
+    "binding_rgb": [
+      104,
+      110,
+      110
+    ],
+    "title_lines": [
+      "YOUR BROKER'S",
+      "FUND BILLS 37%"
+    ],
+    "subject": 0.101,
+    "ink_subject": 0.066,
+    "spike": 0.238,
+    "generated_at": "2026-11-05T19:49:20+00:00"
+  }
+}

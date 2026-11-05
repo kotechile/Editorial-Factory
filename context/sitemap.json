@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T19:19:27Z",
+  "updated_at": "2026-11-05T19:50:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5623,6 +5623,24 @@
         "At a glance"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-05_your-brokers-fund-bills-37",
+      "title": "Your Broker's Fund Bills 37%",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Why the wrapper stays invisible",
+        "By the numbers",
+        "One route keeps the gains rate",
+        "The exemption is smaller",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "cross_border_expat",
       "date": "2026-11-05",
       "public": false
     },

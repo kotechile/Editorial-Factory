@@ -435,3 +435,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-05 | `your-99-cent-resolution-bills-the-handoff` | enterprise_ai_finops | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg` |
 | 2026-11-05 | `your-trailers-last-foot-costs-2500` | supply_chain | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-trailers-last-foot-costs-2500/featured.jpg` |
 | 2026-11-05 | `owner-builder-permit-your-name-their-job` | home_ops_execution | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/owner-builder-permit-your-name-their-job/featured.jpg` |
+| 2026-11-05 | `your-brokers-fund-bills-37` | expat_cross_border_relocation | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-brokers-fund-bills-37/featured.jpg` |
