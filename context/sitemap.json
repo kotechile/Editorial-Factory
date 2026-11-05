@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T11:50:22Z",
+  "updated_at": "2026-11-05T12:42:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5515,6 +5515,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://aichieve.net/your-undo-is-14-6x-cheaper/"
+    },
+    {
+      "slug": "2026-11-05_fewer-liens-46-more-bankruptcies",
+      "title": "Fewer Liens, 46% More Failures: Your Bid",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Why a falling lien count lies",
+        "By the numbers",
+        "Where the money stops between draws",
+        "The catch",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-05",
+      "public": false
     },
     {
       "slug": "2026-11-05_your-200-cap-still-buys-2-85x",
