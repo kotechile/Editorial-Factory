@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T11:01:10Z",
+  "updated_at": "2026-11-05T11:27:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5515,6 +5515,24 @@
       "date": "2026-11-04",
       "public": true,
       "url": "https://aichieve.net/your-undo-is-14-6x-cheaper/"
+    },
+    {
+      "slug": "2026-11-05_your-200-cap-still-buys-2-85x",
+      "title": "Your $200 Cap Still Buys 2.85x",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "Why a dollar cap leaks",
+        "By the numbers",
+        "What the operators did next",
+        "Where this breaks",
+        "Related reading",
+        "At a glance"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-05",
+      "public": false
     },
     {
       "slug": "2026-11-05_your-signed-tool-still-leaks-3-of-3",
