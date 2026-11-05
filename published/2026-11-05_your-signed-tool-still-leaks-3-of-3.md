@@ -17,7 +17,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-signed-tool-still-leaks-3-of-3/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Signed MCP Tools Leak Private Data. A fiber-optic cable carrying a warm data stream passes through a locked steel security gate in a dark"
+image_alt: "A fiber-optic cable carrying a warm data stream passes through a locked steel security gate in a dark data hall."
 image_caption: "Signed MCP Tools Leak Private Data: The trust line is the data each call carries."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

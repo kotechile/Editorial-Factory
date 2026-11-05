@@ -27,7 +27,7 @@
   "core_thesis": "The MCP trust line is the data each call carries, not the publisher's signature or the list of allowed addresses, and holding that line costs less than resetting the tool between calls.",
   "core_conflict": "signature and destination allowlist authorization versus call-carried data persistence",
   "composition": "extreme asymmetry, gate off-centre right with generous negative space left",
-  "alt_text": "Signed MCP Tools Leak Private Data. A fiber-optic cable carrying a warm data stream passes through a locked steel security gate in a dark",
+  "alt_text": "A fiber-optic cable carrying a warm data stream passes through a locked steel security gate in a dark data hall.",
   "caption": "Signed MCP Tools Leak Private Data: The trust line is the data each call carries.",
   "title": "Signed MCP Tools Leak Private Data",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
