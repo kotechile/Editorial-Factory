@@ -1,0 +1,114 @@
+{
+  "slug": "your-200-cap-still-buys-2-85x",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A single GPU accelerator blade pulled from a data-hall rack row, low raking sun from the left.",
+      "caption": "A single GPU blade pulled from its bay in a data hall catches low sun while thousands of identical compute modules recede behind it.",
+      "title": "Telephoto data-hall GPU blade row",
+      "bytes": 369586,
+      "sha256": "sha256:8ea1646cd98fa64f79676b850992136e"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression down a data hall rack row; a single GPU accelerator blade is pulled partway out of its brushed-steel bay at lower-right third, copper heat fins catching a low raking shaft of late-day sun from the left with hard directional falloff, while identical racks recede into deep charcoal shadow. Palette graphite, cobalt, bone white; brushed steel, copper heat pipes, perforated metal. Extreme asymmetry, long-lens stacked layers, crisp high-contrast air, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI labels, illegible characters",
+  "rationale": "This story is about scale and a cost collapse across compute supply: a compressed 200mm long-lens view of a data hall communicates the industrial abundance of token-generating hardware, while the single pulled blade foregrounds the price/capacity mechanism without lapsing into a generic datacenter wide shot.",
+  "cue": "Your $200 Cap Still Buys 2.85x",
+  "subject": "a single GPU accelerator blade pulled partway from a brushed-steel rack bay",
+  "core_thesis": "A daily dollar budget is written in the one input whose price is falling fastest, so Apple's cut from $300 to $200 still raises the tokens each engineer can buy by about 2.85 times.",
+  "core_conflict": "fixed-dollar caps versus rapidly falling token unit prices; a tighter ceiling can still loosen effective token supply.",
+  "composition": "extreme asymmetry with 200mm telephoto compression; one lit blade at lower-right third, rows receding left",
+  "alt_text": "A single graphics accelerator blade pulled from a data-hall rack row, low raking sun from the left.",
+  "caption": "A graphics accelerator blade pulled from its bay in a data hall, the compute row receding behind it.",
+  "title": "Apple AI Budget Cut Buys 2.85X",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "long_lens_industry"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-200-cap-still-buys-2-85x/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 387426,
+  "sha256": "sha256:24a7cdc9505ca1daf2654035a893d1e44960ea8fcf91dd2d17eb3bca67163c47",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 387426,
+    "quality": 84,
+    "sha256": "sha256:24a7cdc9505ca1daf2654035a893d1e44960ea8fcf91dd2d17eb3bca67163c47",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:7cb03d1152577e631a1add32ed35b409aa7729b64381ff343e999830df804f24",
+  "render_phash": "f09ccc92cfbec1be40ba00be08be8a76887ec49cc496c49ee48be494e49ce0b4",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A single GPU accelerator blade with a copper heat-pipe shroud sits partway out of a brushed-steel server rack bay on the right, with parallel rows of perforated rack panels receding into soft focus to the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.83,
+    "reason": "The article's mechanism is the price of AI compute, and a partly withdrawn accelerator blade in a rack is the literal hardware that sets that token price, so a reader would connect the frame to the story."
+  },
+  "source_hash": "sha256:215c365e34c3c5c07035d62d76444687",
+  "source_chars": 4610,
+  "task_id": "574aa3317d104f287bfdcffe523808e2",
+  "credits": 5.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/574aa3317d104f287bfdcffe523808e2_1793878774018.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression down a data hall rack row; a single GPU accelerator blade is pulled partway out of its brushed-steel bay at lower-right third, copper heat fins catching a low raking shaft of late-day sun from the left with hard directional falloff, while identical racks recede into deep charcoal shadow. Palette graphite, cobalt, bone white; brushed steel, copper heat pipes, perforated metal. Extreme asymmetry, long-lens stacked layers, crisp high-contrast air, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-05T11:39:42+00:00",
+  "overlay": {
+    "kicker": "APPLE AI BUDGET // TOKEN PRICE DROP",
+    "title": "APPLE AI BUDGET CUT BUYS 2.85X",
+    "hook": "New $200 cap buys 2.85x more tokens as prices fell",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 0,
+    "contrast": 13.54,
+    "target": 4.5,
+    "clutter": 0.181,
+    "region_rgb": [
+      23,
+      29,
+      32
+    ],
+    "binding_rgb": [
+      29,
+      36,
+      42
+    ],
+    "title_lines": [
+      "APPLE AI BUDGET",
+      "CUT BUYS 2.85X"
+    ],
+    "subject": 0.101,
+    "ink_subject": 0.047,
+    "spike": 0.314,
+    "generated_at": "2026-11-05T11:39:42+00:00"
+  }
+}

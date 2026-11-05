@@ -12,6 +12,12 @@ sources:
   - https://www.macrumors.com/2026/11/04/apple-reducing-employee-ai-spending/
 meta_title: "Your $200 Cap Still Buys 2.85x"
 meta_description: "Apple cut its daily AI budget from $300 to $200 while the price of the tokens behind it fell 77%, so the cut bought 2.85 times as many tokens as the old cap did in May."
+image_path: "context/assets/illustrations/your-200-cap-still-buys-2-85x/featured.jpg"
+image_style: "long_lens_industry"
+image_model: "flux"
+image_alt: "A single graphics accelerator blade pulled from a data-hall rack row, low raking sun from the left."
+image_caption: "A graphics accelerator blade pulled from its bay in a data hall, the compute row receding behind it."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -48,6 +54,13 @@ Revolut's figures carry their own caveats. Its 60% coding-time and 70% lead-time
 
 The price index is the weakest link. It is a reported figure whose model mix and list-or-blended status are not disclosed, so I read the 2.85 as a direction, not a number [18]. Cutting the cost of supply is not cheap: it needs chips, serving engineers and rule work that a mid-size firm cannot staff. That is why the cap outlives its usefulness in the org chart.
 
+<!-- tldr -->
+## At a glance
+
+**The shift:** Apple cut its daily AI budget while the price of tokens fell 77%, so the new cap admits more work than the old one.
+**The number:** $200 buys about 2.85 times the tokens $300 bought in May.
+**The risk:** If the cap was never binding, the saving is small and the unmeasured loss is the work engineers stop handing over.
+
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
@@ -60,13 +73,6 @@ The price index is the weakest link. It is a reported figure whose model mix and
 - [One Green Run Is Not Reliability](/agent-reliability-pass-k-not-one-green-run/)
 - [$2.7 Trillion AI Bill Just Turned Cost Control Into a Buying…](/ai-spend-27t-cost-visibility-mandate/)
 <!-- internal-links:end -->
-
-<!-- tldr -->
-## At a glance
-
-**The shift:** Apple cut its daily AI budget while the price of tokens fell 77%, so the new cap admits more work than the old one.
-**The number:** $200 buys about 2.85 times the tokens $300 bought in May.
-**The risk:** If the cap was never binding, the saving is small and the unmeasured loss is the work engineers stop handing over.
 
 ## Sources
 

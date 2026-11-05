@@ -426,3 +426,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-04 | `your-robot-budget-39-year-gap` | warehouse_automation_robotics_capex | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-robot-budget-39-year-gap/featured.jpg` |
 | 2026-11-04 | `your-70-limits-12-5-gap` | property_loss_insurance_mitigation | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-70-limits-12-5-gap/featured.jpg` |
 | 2026-11-05 | `your-signed-tool-still-leaks-3-of-3` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-signed-tool-still-leaks-3-of-3/featured.jpg` |
+| 2026-11-05 | `your-200-cap-still-buys-2-85x` | enterprise_ai_finops | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-200-cap-still-buys-2-85x/featured.jpg` |
