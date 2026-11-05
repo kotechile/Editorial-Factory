@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T17:53:01Z",
+  "updated_at": "2026-11-05T17:53:38Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5532,7 +5532,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/fewer-liens-46-more-bankruptcies/"
     },
     {
       "slug": "2026-11-05_italy-bills-26-to-leave",
@@ -5549,7 +5550,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/italy-bills-26-to-leave/"
     },
     {
       "slug": "2026-11-05_your-10-5-cut-locks-2-1-years",
@@ -5567,7 +5569,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-10-5-cut-locks-2-1-years/"
     },
     {
       "slug": "2026-11-05_your-200-cap-still-buys-2-85x",
@@ -5585,7 +5588,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-200-cap-still-buys-2-85x/"
     },
     {
       "slug": "2026-11-05_your-port-clears-35688-boxes-dont",
@@ -5603,7 +5607,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-port-clears-35688-boxes-dont/"
     },
     {
       "slug": "2026-11-05_your-signed-tool-still-leaks-3-of-3",
@@ -5621,7 +5626,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-signed-tool-still-leaks-3-of-3/"
     },
     {
       "slug": "2026-11-05_your-task-protocol-costs-643-lines",
