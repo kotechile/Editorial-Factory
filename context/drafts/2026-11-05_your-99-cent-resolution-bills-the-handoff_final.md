@@ -11,8 +11,8 @@ slug: your-99-cent-resolution-bills-the-handoff
 image_path: "context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Your $0.99 Resolution Bills The. Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff"
-image_caption: "Your $0.99 Resolution Bills The: Intercom charges $0.99 when its AI agent closes a."
+image_alt: "Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff gate, raked by a single key light."
+image_caption: "A single incoming request rail feeds three differently gated billing counters, each defining a resolution unit by whether it counts a human handoff."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
