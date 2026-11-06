@@ -13,8 +13,8 @@ meta_description: "The federal record behind a carrier's carbon number is built 
 image_path: "context/assets/illustrations/carbon-data-stops-at-6-minutes/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Carbon Data Stops At 6 Minutes. Unbranded last-mile delivery truck with engine off, parked alone in a loading bay under a single amber"
-image_caption: "Carbon Data Stops At 6 Minutes: The federal log behind a carrier's carbon number is built for hours, not per-stop fuel."
+image_alt: "Unbranded last-mile delivery truck with engine off, parked alone in a loading bay under a single amber light, long shadows across concrete."
+image_caption: "The federal log behind a carrier's carbon number is built for hours, not per-stop fuel."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -75,15 +75,15 @@ The practical version is one line in the next carrier review. A contract that ca
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Last-Mile Carbon Number Is a Rate Table" -> /last-mile-carbon-number-is-a-rate-table/ [same site (aichieve.net); same category; topical overlap: carbon, federal, last-mile] Link "Your Last-Mile Carbon Number Is a Rate Table" in the section where the article touches carbon, federal, last-mile. -->
-<!-- internal-link hint: "Your 25-Minute Review Costs $66.67" -> /review-minute-costs-66-dollars/ [same site (aichieve.net); topical overlap: minutes, time, total] Link "Your 25-Minute Review Costs $66.67" in the section where the article touches minutes, time, total. -->
-<!-- internal-link hint: "49.9% On Time: Shippers Stuck in the Gap" -> /shippers-stuck-in-the-gap/ [same site (aichieve.net); same category; topical overlap: time] Link "49.9% On Time: Shippers Stuck in the Gap" in the section where the article touches time. -->
+<!-- internal-links:start - curated by the 2026-11-06 run from live last_mile_routing_fleet_carbon pages on aichieve.net; the generator's two weaker picks were justified on the single incidental token 'time' and were replaced -->
+<!-- internal-link hint: "Your Last-Mile Carbon Number Is a Rate Table" -> /last-mile-carbon-number-is-a-rate-table/ [same site (aichieve.net); same vertical; same category; shared subject: carbon / last mile / emission factor] -->
+<!-- internal-link hint: "Your Route's 5x Stop Gap" -> /your-routes-5x-stop-gap/ [same site (aichieve.net); same vertical; shared subject: route / stops / delivery density] -->
+<!-- internal-link hint: "Your Carbon Report Skips 2 Lines" -> /your-carbon-report-skips-2-lines/ [same site (aichieve.net); same vertical; shared subject: carbon report / transport line] -->
 ## Related reading
 
-- [Your Last-Mile Carbon Number Is a Rate Table](/last-mile-carbon-number-is-a-rate-table/) — more on Supply Chain & Operations
-- [Your 25-Minute Review Costs $66.67](/review-minute-costs-66-dollars/)
-- [49.9% On Time: Shippers Stuck in the Gap](/shippers-stuck-in-the-gap/) — more on Supply Chain & Operations
+- [Your Last-Mile Carbon Number Is a Rate Table](/last-mile-carbon-number-is-a-rate-table/) - more on Supply Chain and Operations
+- [Your Route's 5x Stop Gap](/your-routes-5x-stop-gap/)
+- [Your Carbon Report Skips 2 Lines](/your-carbon-report-skips-2-lines/)
 <!-- internal-links:end -->
 
 ## Sources
