@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T11:24:56Z",
+  "updated_at": "2026-11-06T17:12:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5568,7 +5568,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/owner-builder-permit-your-name-their-job/"
     },
     {
       "slug": "2026-11-05_your-10-5-cut-locks-2-1-years",
@@ -5624,7 +5625,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-99-cent-resolution-bills-the-handoff/"
     },
     {
       "slug": "2026-11-05_your-brokers-fund-bills-37",
@@ -5642,7 +5644,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-brokers-fund-bills-37/"
     },
     {
       "slug": "2026-11-05_your-planning-cycle-costs-7-managers",
@@ -5660,7 +5663,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-planning-cycle-costs-7-managers/"
     },
     {
       "slug": "2026-11-05_your-port-clears-35688-boxes-dont",
@@ -5716,7 +5720,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-task-protocol-costs-643-lines/"
     },
     {
       "slug": "2026-11-05_your-trailers-last-foot-costs-2500",
@@ -5734,7 +5739,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-05",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-trailers-last-foot-costs-2500/"
     },
     {
       "slug": "2026-11-06_your-connection-slips-six-months",
@@ -5751,6 +5757,25 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-06",
+      "public": true,
+      "url": "https://wellroost.com/your-connection-slips-six-months/"
+    },
+    {
+      "slug": "2026-11-06_your-espp-clock-is-18-months-not-12",
+      "title": "Your ESPP Clock: 18 Months, Not 12",
+      "vertical": "concentrated_equity_portfolio_capital",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Two clocks, one start date",
+        "By the numbers",
+        "The form that settles it",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "financial_architect",
       "date": "2026-11-06",
       "public": false
     },
@@ -5770,7 +5795,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-11-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-grant-grew-25-4-directors-grew-3-9/"
     }
   ]
 }

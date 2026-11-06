@@ -315,6 +315,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-05 | demand_sensing_advanced_sop | your-planning-cycle-costs-7-managers | Your Planning Cycle Costs 7 Managers | https://pressflow.aichieve.net/published/2026-11-05_your-planning-cycle-costs-7-managers.md | reader site only |
 | 2026-11-06 | resilient_home_assets | your-connection-slips-six-months | 25,000 Hookups Stuck Six Months | https://pressflow.aichieve.net/published/2026-11-06_your-connection-slips-six-months.md | reader site only |
 | 2026-11-06 | career_velocity_equity_engineering | your-grant-grew-25-4-directors-grew-3-9 | Your Grant Grew 25.4%: It Stops at Director | https://pressflow.aichieve.net/published/2026-11-06_your-grant-grew-25-4-directors-grew-3-9.md | reader site only |
+| 2026-11-06 | concentrated_equity_portfolio_capital | your-espp-clock-is-18-months-not-12 | Your ESPP Clock: 18 Months, Not 12 | https://pressflow.aichieve.net/published/2026-11-06_your-espp-clock-is-18-months-not-12.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
