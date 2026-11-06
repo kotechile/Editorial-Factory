@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-planning-cycle-costs-7-managers/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine."
-image_caption: "The planning cycle, not the licence, is the stack that has to be paid off every year."
+image_alt: "Planning Cycle Costs 7 Managers. A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine."
+image_caption: "Planning Cycle Costs 7 Managers: The annual S&OP cycle, not the licence, costs 7 managers."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

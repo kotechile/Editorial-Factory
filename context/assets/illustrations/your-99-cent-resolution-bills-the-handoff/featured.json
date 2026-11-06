@@ -1,6 +1,6 @@
 {
   "slug": "your-99-cent-resolution-bills-the-handoff",
-  "revision": 2,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,30 @@
       "title": "Three billing definitions on one rail",
       "bytes": 375114,
       "sha256": "sha256:e0672d29e834525442b792d37177bc03"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff gate, raked by a single key light.",
+      "caption": "A single incoming request rail feeds three differently gated billing counters, each defining a resolution unit by whether it counts a human handoff.",
+      "title": "Your $0.99 Resolution Bills The",
+      "bytes": 407420,
+      "sha256": "sha256:d6f817ed73954936c8fd34b796d27ca3e14249cd4b9a0aeb949832091551660c"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the real term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 389112,
+      "sha256": "sha256:6b7a58086c99d88975e7f18f75447499a76e4ea317445ef397d4b631bed7e152"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the real term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 393573,
+      "sha256": "sha256:09c1760602cfb039a0f17eab98e067267da8343845a4cb3befddc94941851f4d"
     }
   ],
   "style": "clay_render",
@@ -27,9 +51,9 @@
   "core_thesis": "AI vendors moved from selling seats to selling units, and each writes the unit's own definition on its pricing page, so the definition sentence is the term to negotiate, not the rate.",
   "core_conflict": "Vendor-defined resolution units vs the buyer's actual cost per handled customer request, where agent failure and handoff rates remain unmeasured.",
   "composition": "asymmetric off-centre composition with generous negative space on the right",
-  "alt_text": "Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff gate, raked by a single key light.",
-  "caption": "A single incoming request rail feeds three differently gated billing counters, each defining a resolution unit by whether it counts a human handoff.",
-  "title": "Your $0.99 Resolution Bills The",
+  "alt_text": "Your $0.99 Resolution Bills The Handoff. Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different",
+  "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the real term to negotiate.",
+  "title": "Your $0.99 Resolution Bills The Handoff",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "deepseek-v4-pro",
@@ -39,8 +63,8 @@
   "local_path": "context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 407420,
-  "sha256": "sha256:d6f817ed73954936c8fd34b796d27ca3e14249cd4b9a0aeb949832091551660c",
+  "bytes": 389829,
+  "sha256": "sha256:79fa77a19acb52bd9322fd181508b3a9e990dd00e319bfeb02ac6f7133a4cc4b",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,9 +73,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 407420,
-    "quality": 84,
-    "sha256": "sha256:d6f817ed73954936c8fd34b796d27ca3e14249cd4b9a0aeb949832091551660c",
+    "bytes": 389829,
+    "quality": 80,
+    "sha256": "sha256:79fa77a19acb52bd9322fd181508b3a9e990dd00e319bfeb02ac6f7133a4cc4b",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:899cc000883b2669a55d7cabcc321e06c460f8935707e908031db1b5120943bf",
@@ -83,32 +107,33 @@
   },
   "generated_at": "2026-11-05T18:13:21+00:00",
   "overlay": {
-    "kicker": "",
-    "title": "YOUR $0.99 RESOLUTION BILLS THE",
-    "hook": "Intercom charges $0.99 when its AI agent closes a",
-    "anchor": "top-right",
+    "kicker": "AI SUPPORT PRICING // RESOLUTION DEFINITIONS",
+    "title": "YOUR $0.99 RESOLUTION BILLS THE HANDOFF",
+    "hook": "One request, four prices, and the definition sentence is the real term to negotiate",
+    "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 9.07,
+    "scrim": 120,
+    "contrast": 5.8,
     "target": 5.5,
-    "clutter": 0.258,
+    "clutter": 0.288,
     "region_rgb": [
-      31,
-      30,
-      27
+      69,
+      67,
+      61
     ],
     "binding_rgb": [
-      64,
-      63,
-      61
+      105,
+      103,
+      106
     ],
     "title_lines": [
       "YOUR $0.99",
-      "RESOLUTION BILLS THE"
+      "RESOLUTION BILLS",
+      "THE HANDOFF"
     ],
-    "subject": 0.064,
-    "ink_subject": 0.035,
-    "spike": 0.182,
+    "subject": 0.077,
+    "ink_subject": 0.043,
+    "spike": 0.212,
     "generated_at": "2026-11-05T18:13:21+00:00"
   }
 }

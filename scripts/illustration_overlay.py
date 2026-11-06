@@ -68,7 +68,17 @@ SUBJECT_FLOOR = 0.22                 # type this far onto the artwork is on the 
 SUBJECT_TIGHT = 0.35                 # no spot in the frame is free — the render needs re-commissioning
 GRID_X, GRID_Y = 7, 5                # candidate origins swept across the frame for the real footprint
 PANEL_WEIGHT = 0.25                  # the feathered scrim panel is scored at this weight vs the ink
-KICKER_MAX, TITLE_MAX, HOOK_MAX = 46, 34, 58
+SCRIM_FLOOR = 120                    # every header carries at least a faint tint behind the type
+# Owner, 2026-11-06: "also add a subtle transparent background color to the overlay text (to
+# improve contrast)". The scrim used to be derived by luminance alone, so a frame whose pixels
+# already contrasted set the panel near zero and the type sat straight on a busy bench. The
+# floor is a wash, not a card: it fades out down the block and at its right edge, and it is
+# about 23% mean alpha over the letters.
+KICKER_MAX, TITLE_MAX, HOOK_MAX = 46, 46, 88
+# 34 chars cut "YOUR $0.99 RESOLUTION BILLS THE HANDOFF" to "...BILLS THE" and left the
+# hook mid-clause ("...closes a"): the overlay read as clipped type on a live page (owner,
+# 2026-11-06). The title now gets three lines and the hook two, and `clean()` refuses to end
+# on a function word, so a line is either complete or re-asked.
 KICKER_PT, TITLE_PT, HOOK_PT = 0.029, 0.086, 0.036    # of the frame height
 # (kicker, title, hook) rgb, for a dark frame and for a light one. The scrim strength is not a
 # constant: it is derived per image by `_choose_ink`, from the pixels under the type.
@@ -114,8 +124,44 @@ def copy_prompt(article_md: str) -> str:
         body=ic.article_core_text(article_md)[:2500])
 
 
+# A line may not end on one of these: the reader sees a sentence that stops mid-thought, which is
+# exactly what "YOUR $0.99 RESOLUTION BILLS THE" looked like on the live page.
+_DANGLING = frozenset("""a an the of to in on at for from with by and or but nor so yet if when while
+that this these those its it is are was were be been being as than then into over under about after
+before across per via your our their his her my we you they who which what how why not no""".split())
+
+
+def _drop_dangling(text: str) -> str:
+    """Trim whole words off the end until the line stops on a carrying word."""
+    words = text.split()
+    while words and words[-1].strip(".,;:—–-").lower() in _DANGLING:
+        words.pop()
+    return " ".join(words).rstrip(" ,;:—–-")
+
+
+def copy_problems(copy: dict) -> list[str]:
+    """Lines that will read as cut type. Called before the composite and after every generation."""
+    problems = []
+    for key, limit in (("kicker", KICKER_MAX), ("title", TITLE_MAX), ("hook", HOOK_MAX)):
+        text = str(copy.get(key) or "").strip()
+        if not text:
+            if key != "hook":
+                problems.append(f"{key} is empty")
+            continue
+        if len(text) > limit:
+            problems.append(f"{key} is {len(text)} chars (limit {limit}) — it will be cut")
+        if text.split()[-1].strip(".,;:—–-").lower() in _DANGLING:
+            problems.append(f"{key} ends on a function word (\"{text[-28:]}\") — the phrase is "
+                            f"incomplete")
+    return problems
+
+
 def clean(copy: dict) -> dict:
-    """The copy as it will be set: collapsed whitespace, limits enforced by trimming on a word."""
+    """The copy as it will be set: collapsed whitespace, limits enforced, no dangling word.
+
+    A line that overruns its budget is trimmed on a word boundary and then walked back past any
+    function word it lands on, so the frame never carries a fragment like '...BILLS THE'.
+    """
     out: dict[str, str] = {}
     for key, limit in (("kicker", KICKER_MAX), ("title", TITLE_MAX), ("hook", HOOK_MAX)):
         text = re.sub(r"\s+", " ", str(copy.get(key) or "")).strip().strip('"').rstrip(".")
@@ -124,7 +170,7 @@ def clean(copy: dict) -> dict:
         if len(text) > limit:
             cut = text[:limit]
             text = cut[:cut.rfind(" ")].strip() if " " in cut else cut
-        out[key] = text
+        out[key] = _drop_dangling(text)
     return out
 
 
@@ -190,7 +236,26 @@ def write_copy(article_md: str, llm=None) -> dict:
     """The three lines, from the director model. Falls back to the article's own fields."""
     call = llm or (lambda prompt: ic.call_gemini(prompt))
     try:
-        return clean(ic.parse_json_object(call(copy_prompt(article_md))))
+        prompt = copy_prompt(article_md)
+        copy = clean(ic.parse_json_object(call(prompt)))
+        problems = copy_problems(copy)
+        if problems:
+            # One corrective ask, on the same article: a shorter, complete phrase — never a longer
+            # limit, because the limit is what the frame can hold.
+            try:
+                retry = prompt + ("\n\nTHE PREVIOUS ATTEMPT WAS REJECTED: "
+                                  + "; ".join(problems)
+                                  + ". Return shorter COMPLETE phrases — a line must never stop on "
+                                    "\"the\", \"of\", \"and\", \"when\" or any other joining word, "
+                                    "and must fit the character counts above.")
+                copy = clean(ic.parse_json_object(call(retry)))
+            except Exception:                       # noqa: BLE001 - keep the first attempt
+                pass
+        if copy_problems(copy):
+            fm, _ = ic.split_frontmatter(article_md)
+            own = (fm.get("meta_title") or fm.get("title") or "").split(":")[0].strip()
+            copy["title"] = _drop_dangling(own.upper()[:TITLE_MAX].rsplit(" ", 1)[0] or own.upper())
+        return copy
     except Exception:                               # noqa: BLE001 - never lose the image over copy
         fm, _ = ic.split_frontmatter(article_md)
         title = (fm.get("meta_title") or fm.get("title") or "").strip()
@@ -532,13 +597,23 @@ def composite(img_path: pathlib.Path, out_path: pathlib.Path, copy: dict,
     # a short line must not pay for the empty column beside it, and the block must land where the
     # subject is not. `plan` gets the line boxes relative to the origin, its own size and the gutter.
     p = plan(base, anchor, rects=ink, box=(column + pad, total), pad=pad)
-    x, y = p["x"], p["y"]
+    # Never let the block run off the frame: the widest set line plus the gutter is the hard right
+    # edge, whatever the placement search preferred.
+    widest = max((r[2] for r in ink), default=0)
+    x = min(p["x"], max(pad, w - pad - widest))
+    # …nor off the bottom: a three-line title plus a two-line hook is taller than the old two-line
+    # block, and the placement search can still answer with a bottom corner (the hook was cut by
+    # the frame edge on the 99-cent page, 2026-11-06).
+    y = min(max(pad, p["y"]), max(pad, h - pad - total))
     spans = [[k, l, f, y + rel] for k, l, f, rel in spans]
     top, cursor = y, y + total
     block_box = (max(0, x - pad // 2), max(0, top - int(h * 0.012)),
                  min(w, x + column + pad // 2), min(h, cursor + int(h * 0.012)))
     mean_rgb = _region_rgb(base, block_box)
     ink, tone, scrim, contrast, target, light_ink, binding, clutter = _choose_ink(base, block_box)
+    # A faint panel is always present, even where the pixels already pass: contrast under the type
+    # is the reader's guarantee, not a value that only appears on a difficult frame.
+    scrim = max(int(scrim), SCRIM_FLOOR)
 
     overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
@@ -596,11 +671,11 @@ def _layout(probe, copy: dict, h: int, column: int):
     if copy.get("kicker"):
         blocks.append(("kicker", [copy["kicker"]],
                        _fit(probe, copy["kicker"], FONT_BOLD, int(h * KICKER_PT), column)))
-    f_t, t_lines = _fit_wrapped(probe, copy["title"], FONT_BOLD, int(h * TITLE_PT), column, 2)
+    f_t, t_lines = _fit_wrapped(probe, copy["title"], FONT_BOLD, int(h * TITLE_PT), column, 3)
     blocks.append(("title", t_lines, f_t))
     if copy.get("hook"):
-        blocks.append(("hook", [copy["hook"]],
-                       _fit(probe, copy["hook"], FONT_REG, int(h * HOOK_PT), column)))
+        f_h, h_lines = _fit_wrapped(probe, copy["hook"], FONT_REG, int(h * HOOK_PT), column, 2)
+        blocks.append(("hook", h_lines, f_h))
     # Block extents, so the ink is chosen against the pixels the type really covers — and so a
     # bottom anchor cannot push the last line off the frame.
     spans, rects, cursor = [], [], 0

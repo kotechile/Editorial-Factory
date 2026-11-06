@@ -516,6 +516,63 @@ def _alias_model(value: str) -> str:
     return key
 
 
+# Words a scene needs but the article need not use: they describe the frame, not the story.
+_SCENE_STOP = frozenset("""with from that this these those into onto over under beside behind across
+against between through during before after while when where which what whose their there here
+scene frame image photograph photo render shot view close wide light shadow colour color palette
+surface texture material background foreground composition angle frame camera lens focus depth
+field grade grain tone warm cool dark bright soft hard simple small large""".split())
+
+
+_APPARATUS = frozenset("""assembly module modules cartridge cartridges mechanism apparatus rig
+bracket brackets fixture jig manifold gauge dial register tally spindle clamp housing plate plates
+stack stacker rail rails drum canister canisters cassette insert vial core unit""".split())
+_REAL_PLACES = frozenset("""bay desk room floor aisle dock yard warehouse office plant counter bench
+shop shelf line hub depot terminal site store kitchen garage hall studio""".split())
+
+
+def subject_recognisable(subject: str, article_md: str) -> list[str]:
+    """The NAME TEST — is the frame's subject something the reader can name?
+
+    Owner, 2026-11-06: the headers came back as "a lathe with unknown object on top" and "an object
+    totally unrecognizable". Both subjects were invented instruments — "a compact matte clay metering
+    assembly", "a copper licence cartridge slotted under seven steel hour-plates" — that share no noun
+    with the story they illustrate and name no real place, so a reader sees hardware that has nothing
+    to do with the piece.
+
+    The check refuses exactly that class and nothing else: a subject anchored in the article's own
+    vocabulary passes, and so does one set in a real place a reader knows (a loading bay, a support
+    desk, a planning room) — the scene is then anchored even where the nouns are the frame's.
+    """
+    if not subject:
+        return []
+    fm, _body = split_frontmatter(article_md)
+    source = " ".join(str(fm.get(k) or "") for k in ("title", "meta_title", "one_big_thing",
+                                                     "primary_keyword"))
+    source += " " + article_core_text(article_md)[:1400]
+
+    def stems(text: str) -> set[str]:
+        # Compare on a singular stem: the article says "plastics", the frame says "plastic pellets".
+        out = set()
+        for w in re.findall(r"[A-Za-z][A-Za-z'-]{3,}", text.lower()):
+            if w in _SCENE_STOP:
+                continue
+            out.add(w[:-1] if w.endswith("s") and len(w) > 4 else w)
+        return out
+
+    subject_words = stems(subject)
+    if subject_words & stems(source):
+        return []                                    # anchored in the story's own nouns
+    if subject_words & _REAL_PLACES:
+        return []                                    # a place a reader can name
+    if subject_words & _APPARATUS:
+        return [f"the frame's subject ({subject[:90]!r}) is an invented instrument: it shares no "
+                f"word with the article and names no real place, so the reader sees unrelated "
+                f"hardware. Use the story's own artefact, or set it in a place a reader knows (a "
+                f"support desk, a planning room, a loading bay, an invoice on a desk)"]
+    return []
+
+
 def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: str | None = None,
                    pinned_model: str | None = None) -> Brief:
     """Turn the director's JSON into a Brief, refusing anything this desk will not commission.
@@ -611,6 +668,8 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
     # site's own world — a place, light direction, a palette, and the article's own object — not a
     # category dressed in quality claims ("futuristic, 8k, cinematic masterpiece").
     vertical = str(split_frontmatter(article_md)[0].get("vertical") or "")
+    subject_text = re.sub(r"\s+", " ", str(raw.get("subject") or "")).strip()
+    problems += subject_recognisable(subject_text, article_md)
     problems += scene_brief.problems(prompt, site=scene_brief.site_for_vertical(vertical),
                                      subject=re.sub(r"\s+", " ", str(raw.get("subject") or "")).strip())
 
@@ -816,6 +875,25 @@ Identify the central tension, turning point, or real-world stake. What is the co
 
 STEP 2: SELECT AN EVOCATIVE HERO OBJECT OR SCENE (CONCEPTUAL & SYMBOLIC STORYTELLING)
 Choose a tangible, storytelling hero object or an authentic narrative scene that powerfully represents that main idea without being literal or pedestrian.
+
+THE NAME TEST — the reader must be able to say what is in the frame, in three words, without reading
+the headline (owner, 2026-11-06: "the picture is a lathe with unknown object on top", "an object
+totally unrecognizable"). So:
+  * If the story is about a CHARGE, A PRICE, A PROCESS, A CONTRACT, A PROTOCOL OR A POLICY, the hero
+is the place and the artefact where that decision is actually made, named in the article: a support
+desk with a live inbox wall, a planning room with its demand chart on the wall, an invoice and a
+laptop on a desk, a rate card on a bench. Those are things a reader recognises at a glance.
+  * DO NOT INVENT AN APPARATUS to stand for the idea. A "matte clay metering assembly with three
+tally-register modules", a "copper licence cartridge under seven hour-plates", a machined bracket on
+a workbench with nothing to do with the story — that is a prop the reader has never seen, cannot
+name, and will read as unrelated hardware. Constructed treatments (clay_render, technical_isometric,
+component_assembly) are for a story whose subject really is a machine, a plant or a component.
+  * The test is mechanical as well as editorial: the `subject` you return must use at least one
+content word the article itself uses. If it shares none, the frame is invented and will be refused.
+  * A desk, an inbox or a planning wall is depicted with NO legible lettering: blank paper, dark
+glass, screens turned away or out of focus, a headset on the desk. Never ask for a readable screen,
+a form with words on it, a sign or a printed figure — generated lettering is refused, and the cover
+type carries the words.
 Where applicable, embody the core conflict through physical tension: a central object or mechanism being squeezed, compressed, balancing, or under load from competing forces; or an evocative, atmospheric environment capturing the inflection point.
 (State this in your `object_or_scene` field).
 - CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES GROUNDED IN THE ARTICLE'S VERTICAL:

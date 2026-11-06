@@ -1,6 +1,6 @@
 {
   "slug": "your-planning-cycle-costs-7-managers",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "S&OP cycle cost as seven steel hour-plates under a licence cartridge",
       "bytes": 373448,
       "sha256": "sha256:1e21e21acb5b1b609c012787b85d6e75"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine.",
+      "caption": "The planning cycle, not the licence, is the stack that has to be paid off every year.",
+      "title": "Planning Cycle Costs 7 Managers",
+      "bytes": 390270,
+      "sha256": "sha256:31761c6924f06ad08276ede7262876d232369876c3ecbb8dd25c988af9afb05a"
     }
   ],
   "style": "clay_render",
@@ -27,8 +35,8 @@
   "core_thesis": "The licence is the smallest line in a sales and operations planning programme: the cycle that runs it costs $250,000 to $750,000 a year, so a module pays only by removing hours from that line, and the review features that sell it add hours back.",
   "core_conflict": "The tiny per-seat licence fee versus the massive recurring labour cost of the S&OP cycle, with review features adding hours instead of removing them.",
   "composition": "extreme asymmetry, small licence cartridge bottom-left against towering seven-plate stack right",
-  "alt_text": "A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine.",
-  "caption": "The planning cycle, not the licence, is the stack that has to be paid off every year.",
+  "alt_text": "Planning Cycle Costs 7 Managers. A thin copper licence cartridge sits beneath seven pale steel hour-plates stacked in a cast-iron magazine.",
+  "caption": "Planning Cycle Costs 7 Managers: The annual S&OP cycle, not the licence, costs 7 managers.",
   "title": "Planning Cycle Costs 7 Managers",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -41,8 +49,8 @@
   "local_path": "context/assets/illustrations/your-planning-cycle-costs-7-managers/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 390270,
-  "sha256": "sha256:31761c6924f06ad08276ede7262876d232369876c3ecbb8dd25c988af9afb05a",
+  "bytes": 390559,
+  "sha256": "sha256:a96bbc69dcbd8da179a5a71ce4a587976a6070bba2cabc45a0d77d034d3fbcf6",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -51,9 +59,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 390270,
+    "bytes": 390559,
     "quality": 84,
-    "sha256": "sha256:31761c6924f06ad08276ede7262876d232369876c3ecbb8dd25c988af9afb05a",
+    "sha256": "sha256:a96bbc69dcbd8da179a5a71ce4a587976a6070bba2cabc45a0d77d034d3fbcf6",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:44e789a7816143cc1f18a17f05ea8e79425ff5fd8df85bf1860995bb8be8443e",
@@ -90,27 +98,28 @@
     "hook": "The annual S&OP cycle, not the licence, costs 7 managers",
     "anchor": "top-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 8.68,
+    "scrim": 120,
+    "contrast": 8.21,
     "target": 4.5,
-    "clutter": 0.04,
+    "clutter": 0.182,
     "region_rgb": [
-      60,
-      60,
-      57
-    ],
-    "binding_rgb": [
-      67,
+      66,
       66,
       62
     ],
+    "binding_rgb": [
+      69,
+      70,
+      65
+    ],
     "title_lines": [
       "PLANNING CYCLE",
-      "COSTS 7 MANAGERS"
+      "COSTS 7",
+      "MANAGERS"
     ],
-    "subject": 0.01,
-    "ink_subject": 0.004,
-    "spike": 0.032,
+    "subject": 0.072,
+    "ink_subject": 0.036,
+    "spike": 0.217,
     "generated_at": "2026-11-05T20:33:46+00:00"
   }
 }
