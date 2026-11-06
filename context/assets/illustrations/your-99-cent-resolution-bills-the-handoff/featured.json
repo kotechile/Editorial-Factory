@@ -1,6 +1,6 @@
 {
   "slug": "your-99-cent-resolution-bills-the-handoff",
-  "revision": 5,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -33,38 +33,59 @@
       "title": "Your $0.99 Resolution Bills The Handoff",
       "bytes": 393573,
       "sha256": "sha256:09c1760602cfb039a0f17eab98e067267da8343845a4cb3befddc94941851f4d"
+    },
+    {
+      "revision": 5,
+      "style": "clay_render",
+      "model": "nano-banana-pro",
+      "prompt": "On a brushed-steel workbench in a machine shop, a compact matte clay metering assembly: three graphite tally-register modules in a row on a cast aluminum baseplate. A single flanged input rail enters from the left and splits into three short branch lanes, each leading to one module. The first module has an open safety-yellow gate that also counts a side handoff chute; the second has a one-way ratchet gate blocking the side chute; the third has no gate, a flat pass-through slot. Tiny blank count dials, moulding seams, and contact shadows. One directional key light rakes from the upper left, throwing long cast shadows. Bone white, graphite, safety yellow. Asymmetric off-centre composition, wide 16:9.",
+      "task_id": "6e7789c4256cfacb3bf697e4839ffdf6",
+      "sha256": "sha256:79fa77a19acb52bd9322fd181508b3a9e990dd00e319bfeb02ac6f7133a4cc4b",
+      "generated_at": "2026-11-05T18:13:21+00:00",
+      "source_hash": "sha256:cb3490f31e89bab0d541328f3f6eb1e0",
+      "render_sha256": "sha256:899cc000883b2669a55d7cabcc321e06c460f8935707e908031db1b5120943bf"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Three turnstile gates in a data hall corridor, each with a mechanical metering register and a latch set at a different angle.",
+      "caption": "The handoff points where three vendors' pricing definitions meter the same customer request differently.",
+      "title": "Three metering gates for divergent unit definitions",
+      "bytes": 354541,
+      "sha256": "sha256:fe491c9a6a0c483ef90061023eed62eb"
     }
   ],
-  "style": "clay_render",
-  "style_label": "Matte 3D render",
-  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
-  "model": "nano-banana-pro",
-  "model_key": "nanobanana",
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "On a brushed-steel workbench in a machine shop, a compact matte clay metering assembly: three graphite tally-register modules in a row on a cast aluminum baseplate. A single flanged input rail enters from the left and splits into three short branch lanes, each leading to one module. The first module has an open safety-yellow gate that also counts a side handoff chute; the second has a one-way ratchet gate blocking the side chute; the third has no gate, a flat pass-through slot. Tiny blank count dials, moulding seams, and contact shadows. One directional key light rakes from the upper left, throwing long cast shadows. Bone white, graphite, safety yellow. Asymmetric off-centre composition, wide 16:9.",
-  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, blurry low-quality",
-  "rationale": "The story is structurally abstract\u2014three vendors rewrite the unit definition on a pricing page\u2014so a small physical assembly of gated counters states the metering logic directly without falling into datacenter or macro clich\u00e9s. Clay render allows legible mechanical distinctions while obeying the no-text, no-plumbing domain rules.",
-  "cue": "the unit belongs to the vendor",
-  "subject": "three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different handoff gate",
-  "core_thesis": "AI vendors moved from selling seats to selling units, and each writes the unit's own definition on its pricing page, so the definition sentence is the term to negotiate, not the rate.",
-  "core_conflict": "Vendor-defined resolution units vs the buyer's actual cost per handled customer request, where agent failure and handoff rates remain unmeasured.",
-  "composition": "asymmetric off-centre composition with generous negative space on the right",
-  "alt_text": "Your $0.99 Resolution Bills The Handoff. Three adjacent mechanical tally-register gate modules on a steel baseplate, each with a different",
-  "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the real term to negotiate.",
+  "prompt": "200mm telephoto compression in a data hall corridor: three brushed-steel turnstile gates recede diagonally, each gate fitted with a different mechanical metering register and a latch set at a different handoff angle. Hard directional light rakes from the left across the steel, throwing long shadows on the concrete floor; graphite, safety yellow, bone white. Perforated metal rear wall, fine film grain, no people, no text, no logos. Extreme asymmetric framing with the nearest gate off-centre right.",
+  "negative_prompt": "garbled text, random lettering, watermarks, distorted characters",
+  "rationale": "The article is about three vendors' metering definitions colliding at the handoff. A compressed telephoto row of turnstile gates in a data hall gives the scale and repetitive industrial rhythm of pricing machinery, while each gate's metering register shows a different billable event, avoiding a sterile spreadsheet or product shot.",
+  "cue": "bills the handoff",
+  "subject": "three turnstile gates in a data hall corridor, each with a different mechanical metering register and a latch at a different handoff position",
+  "core_thesis": "AI vendors moved from selling seats to selling units, and each writes the unit's own definition on its pricing page, so one handled customer request is priced from $0.20 to $2.00 and the definition sentence is the term to negotiate, not the rate.",
+  "core_conflict": "Vendor-written unit definitions versus the buyer's cost per resolved task; handoffs to a human, silent customers, and same-day returns each bill differently under Intercom, Zendesk, and Salesforce wording.",
+  "composition": "extreme asymmetric framing with the nearest gate off-centre right and three gates receding diagonally in compressed telephoto layers",
+  "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+  "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
   "title": "Your $0.99 Resolution Bills The Handoff",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "deepseek-v4-pro",
   "director_attempts": 1,
-  "pinned": {},
+  "pinned": {
+    "style": "long_lens_industry"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 389829,
-  "sha256": "sha256:79fa77a19acb52bd9322fd181508b3a9e990dd00e319bfeb02ac6f7133a4cc4b",
+  "bytes": 392943,
+  "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -73,67 +94,65 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 389829,
-    "quality": 80,
-    "sha256": "sha256:79fa77a19acb52bd9322fd181508b3a9e990dd00e319bfeb02ac6f7133a4cc4b",
+    "bytes": 392943,
+    "quality": 88,
+    "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:899cc000883b2669a55d7cabcc321e06c460f8935707e908031db1b5120943bf",
-  "render_phash": "9f0e0dc20e781f9e7f7f3d777567d9b3df9b7659667c0f669fb38f93878ea7cf",
+  "render_sha256": "sha256:9159c9de3837a53eb73dbea2ea7a506824691af110b74f298664adbb7244277d",
+  "render_phash": "108d138d10cd1b0d1f6d19ed13ed174d174d174d27cd27ac43cdc06dcc3d83dd",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "Three dark grey rectangular mechanical modules with yellow levers are mounted on a rectangular metal baseplate sitting on a scratched metal workbench, with a curved off-white piece extending to the left.",
+    "depicts": "Three stainless-steel tripod turnstile gates with yellow arms stand in a concrete corridor, the nearest one large and off-centre right with a small dial-type device mounted on its top rail, the other two receding toward a perforated metal wall in the background.",
     "legible_text": "",
     "on_topic": true,
-    "confidence": 0.95,
-    "reason": "The three mechanical gate modules with distinct levers serve as a direct physical metaphor for the article's three vendors and their differing handoff unit definitions."
+    "confidence": 0.55,
+    "reason": "The three metering turnstiles with unequal registers and latches stand in for the three vendors' differing unit definitions and handoff points, so the mechanism maps to the story, though the setting reads as generic access control."
   },
   "source_hash": "sha256:cb3490f31e89bab0d541328f3f6eb1e0",
   "source_chars": 5008,
-  "task_id": "6e7789c4256cfacb3bf697e4839ffdf6",
-  "credits": 18.0,
-  "cost_ms": 23,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c60cd2cb3cc619f0fd4dc9eb66688621.png",
+  "task_id": "4f452b097016d44d1a1ee5d21b5868a3",
+  "credits": 5.0,
+  "cost_ms": 29,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4f452b097016d44d1a1ee5d21b5868a3_1793949692827.jpg",
   "provider_request": {
-    "model": "nano-banana-pro",
+    "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "On a brushed-steel workbench in a machine shop, a compact matte clay metering assembly: three graphite tally-register modules in a row on a cast aluminum baseplate. A single flanged input rail enters from the left and splits into three short branch lanes, each leading to one module. The first module has an open safety-yellow gate that also counts a side handoff chute; the second has a one-way ratchet gate blocking the side chute; the third has no gate, a flat pass-through slot. Tiny blank count dials, moulding seams, and contact shadows. One directional key light rakes from the upper left, throwing long cast shadows. Bone white, graphite, safety yellow. Asymmetric off-centre composition, wide 16:9.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "200mm telephoto compression in a data hall corridor: three brushed-steel turnstile gates recede diagonally, each gate fitted with a different mechanical metering register and a latch set at a different handoff angle. Hard directional light rakes from the left across the steel, throwing long shadows on the concrete floor; graphite, safety yellow, bone white. Perforated metal rear wall, fine film grain, no people, no text, no logos. Extreme asymmetric framing with the nearest gate off-centre right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
-      "image_input": [],
-      "output_format": "png"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-11-05T18:13:21+00:00",
+  "generated_at": "2026-11-06T07:21:44+00:00",
   "overlay": {
-    "kicker": "AI SUPPORT PRICING // RESOLUTION DEFINITIONS",
+    "kicker": "AI SUPPORT PRICING // HANDOFF BILLING",
     "title": "YOUR $0.99 RESOLUTION BILLS THE HANDOFF",
-    "hook": "One request, four prices, and the definition sentence is the real term to negotiate",
-    "anchor": "bottom-right",
+    "hook": "One request, four prices, and the definition sentence is the term to negotiate",
+    "anchor": "top-right",
     "light": true,
     "scrim": 120,
-    "contrast": 5.8,
+    "contrast": 6.05,
     "target": 5.5,
-    "clutter": 0.288,
+    "clutter": 0.269,
     "region_rgb": [
-      69,
-      67,
-      61
+      106,
+      101,
+      93
     ],
     "binding_rgb": [
-      105,
-      103,
-      106
+      148,
+      136,
+      114
     ],
     "title_lines": [
       "YOUR $0.99",
       "RESOLUTION BILLS",
       "THE HANDOFF"
     ],
-    "subject": 0.077,
-    "ink_subject": 0.043,
-    "spike": 0.212,
-    "generated_at": "2026-11-05T18:13:21+00:00"
+    "subject": 0.168,
+    "ink_subject": 0.105,
+    "spike": 0.42,
+    "generated_at": "2026-11-06T07:21:44+00:00"
   }
 }

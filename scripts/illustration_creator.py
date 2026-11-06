@@ -620,9 +620,14 @@ def validate_brief(raw: dict, article_md: str, *, allowed: tuple, pinned_style: 
         problems.append(f"prompt is {len(prompt.split())} words — the desk writes 15-120")
     if _NON_ENGLISH_RE.search(prompt):
         problems.append("prompt contains non-Latin script — kie.ai's image models take English prompts")
-    if _TEXT_REQUEST_RE.search(prompt):
-        problems.append("prompt asks for legible text/numbers — generated lettering is unreadable rubble; "
-                        "depict the mechanism instead")
+    if _TEXT_REQUEST_RE.search(prompt) and model != "nanobanana":
+        # Owner, 2026-11-06: nano-banana sets short text correctly, flux turns it into rubble. So a
+        # screen or a printed figure is allowed — on the model that can draw it — and refused on the
+        # one that cannot, with the remedy named.
+        problems.append("prompt asks for legible text/numbers and this treatment renders on flux, "
+                        "which turns lettering into rubble — either depict the mechanism instead, or "
+                        "choose a constructed treatment (clay_render, technical_isometric, "
+                        "component_assembly), which renders on nano-banana and can set short text")
     cliche = _CLICHE_RE.search(prompt)
     if cliche:
         problems.append(f"prompt reaches for the stock-photo cliché {cliche.group(0)!r} — depict a "
@@ -890,10 +895,11 @@ name, and will read as unrelated hardware. Constructed treatments (clay_render, 
 component_assembly) are for a story whose subject really is a machine, a plant or a component.
   * The test is mechanical as well as editorial: the `subject` you return must use at least one
 content word the article itself uses. If it shares none, the frame is invented and will be refused.
-  * A desk, an inbox or a planning wall is depicted with NO legible lettering: blank paper, dark
-glass, screens turned away or out of focus, a headset on the desk. Never ask for a readable screen,
-a form with words on it, a sign or a printed figure — generated lettering is refused, and the cover
-type carries the words.
+  * A desk, an inbox or a planning wall may carry short LEGIBLE text — a screen with three words, a
+form's heading — ONLY when the treatment renders on nano-banana (clay_render, technical_isometric,
+component_assembly), which sets short text correctly; flux renders lettering as rubble and the brief
+is refused. Keep any such text to a few words, never a paragraph, and never a figure the reader is
+meant to use.
 Where applicable, embody the core conflict through physical tension: a central object or mechanism being squeezed, compressed, balancing, or under load from competing forces; or an evocative, atmospheric environment capturing the inflection point.
 (State this in your `object_or_scene` field).
 - CHOOSE STORYTELLING OBJECTS & ATMOSPHERIC SCENES GROUNDED IN THE ARTICLE'S VERTICAL:
@@ -1186,7 +1192,21 @@ def style_history(ledger: pathlib.Path | None = None, limit: int = 12,
     return styles
 
 
-def allowed_styles(history: list[str], window: int = HISTORY_WINDOW) -> tuple:
+# Verticals where the apparatus IS the story: a machine, a device or a component can honestly be
+# the hero. Every other vertical gets a photograph of the world the decision happens in (owner,
+# 2026-11-06: "keep constructed treatments only for hardware verticals" — the invented clay
+# instruments were unreadable on a pricing or planning story).
+HARDWARE_VERTICALS = frozenset({
+    "gpu_hardware", "warehouse_automation_robotics_capex", "yard_robotics",
+    "outdoor_power_equipment", "consumer_asset_repair_replace_tco", "home_diagnostics_tech",
+    "smart_home_telemetry", "workstation_compute_economics",
+    "home_infrastructure_lifecycle_tco", "nhil_infrastructure_ops",
+})
+CONSTRUCTED_STYLES = frozenset({"clay_render", "technical_isometric", "component_assembly"})
+
+
+def allowed_styles(history: list[str], window: int = HISTORY_WINDOW,
+                   vertical: str | None = None) -> tuple:
     """The catalogue minus the treatments used in the last `window` illustrations.
 
     Two guards, both learned from the desk's own ledger:
@@ -1209,6 +1229,10 @@ def allowed_styles(history: list[str], window: int = HISTORY_WINDOW) -> tuple:
                 if STYLES.get(used) and STYLES[used].model == family and used not in allowed:
                     allowed.append(used)
                     break
+    if vertical and vertical not in HARDWARE_VERTICALS:
+        # A photographic brief for a story whose subject is a charge, a process or a contract: the
+        # constructed treatments invent an instrument the reader has seen nowhere (2026-11-06).
+        allowed = [s for s in allowed if s not in CONSTRUCTED_STYLES]
     if len(allowed) < 3:                           # a tiny catalogue must not deadlock the desk
         return tuple(STYLES)
     return tuple(s for s in STYLES if s in allowed)   # catalogue order: the menu stays stable
@@ -1224,7 +1248,8 @@ def direct(article_md: str, *, history: list[str] | None = None, llm=None,
     """
     notes = notes if notes is not None else []
     history = style_history() if history is None else history
-    allowed = allowed_styles(history)
+    vertical = str(split_frontmatter(article_md)[0].get("vertical") or "").strip()
+    allowed = allowed_styles(history, vertical=vertical)
     if pinned_style:
         allowed = (pinned_style,) if pinned_style in STYLES else allowed
     llm = llm or call_gemini

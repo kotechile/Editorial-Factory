@@ -92,6 +92,10 @@ PROMPTS = {
                    "housings with one bay cover unlatched and a connector half-inserted, asymmetric "
                    "composition off-centre on a weathered concrete floor in a loading bay, single soft "
                    "key light from above with gentle contact shadows, slate grey and bone white palette.",
+    "cinematic_still": "Cinematic film still, anamorphic 35mm, of a packaging line at dusk in a "
+                       "distribution hall: stacked blank cardboard cartons on a weathered pallet, one gantry in the "
+                       "background, rim light from the right, slate grey and sodium orange palette, "
+                       "the hero pallet off-centre and low in frame, establishing the whole hall.",
     "component_assembly": "Minimalist studio composition of a modular component assembly: one rack "
                           "rail carrying two module bays, an inspection latch left open on the "
                           "lower bay, laid on a brushed steel bench in a machine shop, low-angle view with the "
@@ -101,6 +105,7 @@ PROMPTS = {
 
 
 SUBJECTS = {
+    "cinematic_still": "a pallet of blank cartons in a distribution hall",
     "clay_render": "a matte clay modular assembly on a loading bay floor",
     "component_assembly": "a modular rack holding two module bays in a machine shop",
     "paper_collage": "a stock certificate silhouette on a workshop bench",
@@ -441,8 +446,7 @@ check("...naming the last refusal", "unknown treatment" in exhausted, exhausted[
 
 seen: list = []
 ic.direct(ARTICLE, history=["editorial_macro", "clay_render"],
-          llm=stub_llm(brief_json(style_id="component_assembly", model="nanobanana",
-                                     subject="a modular rack holding two module bays in a machine shop"), calls=seen))
+          llm=stub_llm(brief_json(style_id="cinematic_still", model="flux"), calls=seen))
 check("the director is told which treatments are already used",
       "editorial_macro, clay_render" in seen[0] and "MUST choose one of" in seen[0])
 check("...and a repeat inside the window is not in the allowed set",
