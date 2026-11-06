@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-claim-owes-60-day-interest/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Florida 60-DAY Storm-Claim Interest Clock. Two cut-paper clock faces beside blank insurance claim papers and a torn envelope on a kitchen"
-image_caption: "Florida 60-DAY Storm-Claim Interest Clock: Late payments earn interest back to notice date, so the dated paper trail recovers money."
+image_alt: "Two cut-paper clock faces beside blank insurance claim papers and a torn envelope on a kitchen table."
+image_caption: "Florida's 60-day claim clock: late payments earn interest back to the notice date, so the dated paper trail is what recovers money."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
