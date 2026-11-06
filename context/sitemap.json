@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T18:16:45Z",
+  "updated_at": "2026-11-06T19:01:34Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5815,6 +5815,24 @@
       "date": "2026-11-06",
       "public": true,
       "url": "https://giniloh.com/your-grant-grew-25-4-directors-grew-3-9/"
+    },
+    {
+      "slug": "2026-11-06_your-iso-ceiling-fixed-at-vesting",
+      "title": "Your ISO Ceiling: $100,000, Dead Before Exercise",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the calendar decides it",
+        "By the numbers",
+        "The order that protects the label",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "equity_career_strategist",
+      "date": "2026-11-06",
+      "public": false
     }
   ]
 }
