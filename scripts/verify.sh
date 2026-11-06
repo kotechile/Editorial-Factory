@@ -316,6 +316,28 @@ fi
 HEADLINE_AUDIT="$(python3 "$ROOT/scripts/headline_score.py" --all 2>&1 || true)"
 echo "  headlines: ${HEADLINE_AUDIT%%$'\n'*}"
 
+# 8.59 The reader-side critic (hard wiring; advisory corpus read-out). Owner, 2026-11-06: the pieces
+#      were "hard to read" with every other gate green — riddle syntax, a timeline explained twice,
+#      bullets carrying two statistics, a closing that named a rule the body never introduced, and an
+#      executive summary at the foot of the page. scripts/readability_critic.py holds the deterministic
+#      half at the push (structure / bullets / citations) and reports the prose half. Assert the wiring,
+#      because a refactor that drops the call restores exactly the shape he reported.
+if ! grep -q "readability_critic" "$ROOT/scripts/publish_gate.py"; then
+  echo "FAIL: scripts/publish_gate.py no longer runs the reader-side critic (scripts/readability_critic.py)"
+  FAIL=1
+fi
+if [ ! -f "$ROOT/context/readability_critic.json" ]; then
+  echo "FAIL: missing context/readability_critic.json — the critic's rules would fall back to defaults"
+  FAIL=1
+fi
+if ! python3 -m pytest "$ROOT/scripts/test_readability_critic.py" -q >/dev/null 2>&1; then
+  echo "FAIL: reader-side critic tests — detail:"
+  python3 -m pytest "$ROOT/scripts/test_readability_critic.py" -q 2>&1 | tail -8
+  FAIL=1
+fi
+CRITIC_AUDIT="$(python3 "$ROOT/scripts/readability_critic.py" --report "$ROOT"/published/*.md 2>&1 || true)"
+echo "  critic: $(printf '%s\n' "$CRITIC_AUDIT" | grep -c '^\[FAIL' || true) held-shape artifact(s), $(printf '%s\n' "$CRITIC_AUDIT" | grep -c '        ~' || true) prose advisory(ies) (grandfathered ones are reported, not held)"
+
 # 8.6 Pre-flight data gate (hard): a citation hub may only be drafted on metrics whose headline
 #     figure was actually retrieved from the cited primary source. Hermetic run (--no-network):
 #     the live audit of the shipped dossiers is a separate, deliberate step —

@@ -243,10 +243,19 @@ check("...and the gap is stated instead of an empty heading",
 
 NO_MARKER = ARTIFACT.replace("<!-- internal-links -->\n", "")
 PLACED, place_notes, _ = il.enrich(NO_MARKER, vertical="agentic_ai", links=links)
-check("a marker the artifact lacks is inserted before <!-- tldr --> (not after the LinkedIn variant)",
-      PLACED.index("<!-- internal-links -->") < PLACED.index("<!-- tldr -->")
+check("a marker the artifact lacks is inserted above the footer, never under the lede",
+      PLACED.index("<!-- internal-links -->") < PLACED.index("<!-- linkedin -->")
+      and PLACED.index("<!-- internal-links -->") > PLACED.index("<!-- tldr -->")
       and "Related reading" in PLACED, str(place_notes))
 check("...and the insertion is reported", any("inserted" in n for n in place_notes), str(place_notes))
+
+WITH_SOURCES = NO_MARKER + "\n## Sources\n\n1. Port notice — https://a.com/notice\n"
+SOURCED, sourced_notes, _ = il.enrich(WITH_SOURCES, vertical="agentic_ai", links=links)
+check("the footer anchor is `## Sources` on the current article shape (At a glance now sits under "
+      "the lede, so keying the block on <!-- tldr --> would put Related reading above the summary)",
+      SOURCED.index("<!-- internal-links -->") < SOURCED.index("## Sources")
+      and SOURCED.index("<!-- internal-links -->") > SOURCED.index("<!-- tldr -->"),
+      str(sourced_notes))
 
 OFF_SITE, off_notes, off_used = il.enrich(ARTIFACT, vertical="agentic_ai", site_domain="a.com", links=links + [
     {"anchor_text": "Wrong site", "url": "https://b.com/other-site-routing/", "kind": "article",

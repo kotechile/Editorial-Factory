@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "enforced_from": "2026-11-06",
+  "why": "Owner report 2026-11-06: the article writer is producing hard-to-read pieces. Four classes hold a publish because they are deterministic (an executive summary at the foot of the page, a bullet carrying two statistics, two citations in one sentence, a run-on source list). The prose classes (read-twice, timeline repetition, cold closing concept) are reported to the rewrite and the reviewer and never hold: they are heuristics over grammar, and a heuristic that cannot see paraphrase must not reject an article.",
+  "hold": ["structure", "bullets", "citations"],
+  "at_a_glance_max_words": 50,
+  "bullet_max_words": 25,
+  "max_citations_per_sentence": 1
+}

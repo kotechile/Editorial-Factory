@@ -302,6 +302,13 @@ slug: "{slug}"
 <!-- lead -->
 Most of what gets written about {kw_prose} oversimplifies it. The people who actually deal with it report a very different picture [1].
 
+<!-- tldr -->
+## At a glance
+
+- **The shift:** {kw_prose} is being sold on a demo that production rarely reproduces.
+- **The number:** 41% accuracy in unconstrained field setups against 93% in bounded ones [2].
+- **The risk:** the failure mode costs more than the fix, and it compounds where nobody measures [3].
+
 <!-- tension -->
 ## Why the Pitch Keeps Outrunning the Reality
 
@@ -311,10 +318,11 @@ The field data backs this up: {primary_anecdote['details']} [2]. Most people ass
 
 {quote_text}
 
-**By the numbers:**
-- **41% vs. 93% accuracy:** Real-world field audits show unconstrained configurations suffer high failure rates, while strictly bounded setups reach enterprise reliability [2].
-- **40%+ cost reduction:** Filtering baseline transactions deterministically eliminates model overhead on majority traffic [1].
-- **3 core guardrails:** Bounding failure modes upfront prevents cascading downtime across dependent systems [3].
+## By the numbers
+
+- **41% accuracy, unconstrained:** The hit rate field audits find where nothing bounds the failure mode [2].
+- **93% accuracy, bounded:** The rate reported for setups that cap retries, memory and spend up front [2].
+- **40% lower cost:** The saving from filtering baseline traffic deterministically instead of calling a model [1].
 
 <!-- tactical-insight -->
 ## Where The Guardrails Actually Hold
@@ -329,16 +337,6 @@ What strikes me is how consistent the pattern is: the same three structural cont
 ## The Hidden Cost Nobody Budgets For
 
 The catch I keep coming back to: closing this gap takes upfront investment in measurement and discipline, not just intent. Teams looking for a zero-effort shortcut will find that the real answers still demand domain-specific rigor.
-
-<!-- tldr -->
-## Key Takeaways
-
-- **The Reality Check:** The gap between vendor promises and production reality is the real cost center that catches engineering teams off guard.
-- **What I'd Watch:** Whether teams shipping reliable systems hold their architectural boundaries:
-  - **Hard Limits Up Front:** whether the expensive failure mode is bounded before it happens — retries, memory, runaway spend [1].
-  - **Field Data Over Demos:** whether validation runs against real case history rather than benchmark demos [2].
-  - **Deterministic Action Gates:** whether an agent can take an external action without a strict checking function [3].
-- **The Fine Print:** Closing this gap requires upfront investment in telemetry and access control; metrics and ROI depend entirely on your workload and traffic mix.
 
 {related_block}
 
@@ -457,7 +455,10 @@ def build_citation_hub_draft(keyword_data, cannibalization, internal_links, grow
     # Quantitative Bullets
     by_the_numbers = []
     for dp in dossier[:4]:
-        by_the_numbers.append(f"- **{dp['headline_figure']} {dp['metric_name'].lower()}:** {dp['vendor_claim']} — field audits reveal {dp['field_reality'].lower()} [{dossier.index(dp) + 1}]")
+        # One metric per bullet, one sentence, under 25 words (scripts/readability_critic.py holds
+        # this at the push). The vendor's claim against the field figure is the table's job above;
+        # the bullet carries the audited reading alone.
+        by_the_numbers.append(f"- **{dp['headline_figure']} {dp['metric_name'].lower()}:** Field audits put the real figure at {dp['field_reality'].lower()} [{dossier.index(dp) + 1}]")
     btn_block = "\n".join(by_the_numbers)
 
     md = f"""---
@@ -477,6 +478,13 @@ slug: "{slug}"
 <!-- lead -->
 Most conversations around {kw_prose} rely on vendor pitch decks and synthetic benchmark scores. In real enterprise production, engineering telemetry shows a starkly different baseline [1].
 
+<!-- tldr -->
+## At a glance
+
+- **The shift:** {kw_prose} is now budgeted on vendor benchmarks rather than on production telemetry.
+- **The number:** The audited gap between the two, metric by metric, sits in the table below [1].
+- **The risk:** teams that budget on the demo pay for the compounding costs nobody measured.
+
 <!-- tension -->
 ## Why the Pitch Keeps Outrunning the Reality
 
@@ -486,7 +494,8 @@ The field data confirms this pattern: {primary_anecdote['details']} [2]. The par
 
 {quote_text}
 
-**By the numbers:**
+## By the numbers
+
 {btn_block}
 
 <!-- tactical-insight -->
@@ -510,17 +519,6 @@ What strikes me is how consistent the pattern is: setups that hold enforce expli
 ## The Hidden Cost Behind the Metric
 
 The catch I keep coming back to is sample bias in vendor evaluations. Benchmark tests optimize for narrow tasks with predefined constraints. In messy enterprise environments, the real cost centers are data hygiene, security boundary checks, and ongoing audit infrastructure.
-
-<!-- tldr -->
-## Key Takeaways
-
-- **The Big Shift:** Production telemetry across {kw_prose} demonstrates that real-world completion and cost dynamics diverge dramatically from vendor benchmark demos.
-- **Why It Matters:** Teams budgeting based on synthetic benchmarks face unexpected compounding token costs and unbudgeted human verification overhead.
-- **What I'd Watch:** Key architectural controls that prevent production failure:
-  - **Telemetry Over Demos:** measuring success by fully resolved business units rather than intermediate sandbox scores [1].
-  - **Deterministic Gate Checks:** bounding recursive retries and tool timeouts before deploying agents to production [3].
-  - **Unit Economics Tracking:** monitoring total workflow cost per resolution rather than raw token pricing [2].
-- **The Catch:** Establishing rigorous telemetry requires upfront infrastructure and domain-specific validation gates; zero-effort shortcuts do not hold in production.
 
 {related_block}
 

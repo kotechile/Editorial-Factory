@@ -37,7 +37,10 @@ Rules that decide whether the reader gets a useful link or a broken one:
     replaces it exactly instead of stacking a second list, and a link that has since gone stale (its
     target dropped out of the sitemap) is removed rather than left rotting in the post.
   * placement: the block belongs under the marker; when the marker is missing it is inserted before
-    `<!-- tldr -->`, else `<!-- linkedin -->`, else `## Sources`, else at the end of the body.
+    `## Sources` (the footer block), else before `<!-- schema -->`, else `<!-- linkedin -->`, else at
+    the end of the body. It must NOT key on `<!-- tldr -->`: since 2026-11-06 the executive summary
+    sits immediately under the lede, so anchoring there would put Related reading between the lede and
+    the summary on every new article.
 
 CLI:
   python3 scripts/internal_links.py context/drafts/foo_final.md            # report, write nothing
@@ -194,12 +197,16 @@ def _next_boundary(text: str, start: int) -> int:
 
 
 def _insertion_point(body: str) -> tuple[int, str]:
-    """Where the marker goes when the artifact has none. Order matters: the block must sit before
-    `<!-- linkedin -->`, because everything after that marker is the internal social variant."""
-    for pattern, label in ((r"^[ \t]*<!--\s*tldr\s*-->", "before <!-- tldr -->"),
-                           (r"^[ \t]*<!--\s*linkedin\s*-->", "before <!-- linkedin -->"),
-                           (r"^[ \t]*<!--\s*schema\s*-->", "before <!-- schema -->"),
-                           (r"^##\s+Sources\s*$", "before ## Sources")):
+    """Where the marker goes when the artifact has none.
+
+    `## Sources` comes first: the Related-reading list is footer material and belongs directly above
+    the source list on every article shape. `<!-- tldr -->` is deliberately NOT a candidate — the
+    executive summary now sits under the lede (2026-11-06), and anchoring the block there would push
+    the summary off the top of every new piece.
+    """
+    for pattern, label in ((r"^[ \t]*<!--\s*linkedin\s*-->", "before <!-- linkedin -->"),
+                           (r"^##\s+Sources\s*$", "before ## Sources"),
+                           (r"^[ \t]*<!--\s*schema\s*-->", "before <!-- schema -->")):
         match = re.search(pattern, body, re.M)
         if match:
             return match.start(), label

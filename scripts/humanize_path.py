@@ -26,16 +26,23 @@ SMART BREVITY STYLING PRINCIPLES:
 3. SECTION HEADERS — A STORY, NOT A DECK:
    - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators.
    - FORMATTING REQUIREMENT: Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. NEVER place body prose or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
-     - `## The big picture:` (in <!-- tension -->, introducing the broader industry or structural shift; followed on a new paragraph by a single direct sentence)
-     - `## By the numbers` (REQUIRED section, but small: 2–3 bold bullets (`- **<figure> — <label>:** <one plain sentence> [n]`) carrying the figures the prose does not state again. Never a four-bullet recap of the body.)
+   - THE ORDER IS PART OF THE CONTRACT (owner, 2026-11-06): `<!-- lead -->` → `<!-- tldr -->` → `<!-- tension -->` → `<!-- tactical-insight -->` → `<!-- nuanced-takeaway -->`. If the draft you were handed carries the summary at the foot of the piece, MOVE IT — the executive summary is the second thing the reader sees.
+     - `## At a glance` (in <!-- tldr -->, DIRECTLY under the lede: a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
+     - `## The big picture:` (in <!-- tension -->, the timeline stated ONCE in strict order — initial event → initial deadline → current extension — then the broader structural shift; followed on a new paragraph by a single direct sentence)
+     - `## By the numbers` (REQUIRED section, but small, and placed AFTER the mechanism is explained: 2–3 bold bullets, ONE metric per bullet, one sentence, 25 words or fewer — `- **85% of Long Beach cargo:** one clause saying what it counts [3]`. Never a four-bullet recap, never two statistics in one lead-in.)
      - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
-     - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; followed on a new paragraph)
-     - `## At a glance` (in <!-- tldr -->, a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
+     - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; self-contained — no rule or concept that appears for the first time in the closing paragraph; followed on a new paragraph)
 4. SCANNABILITY & BULLETS:
    - Never output dense blocks of text.
    - STORY FIRST. The reader is following an argument, not scanning a deck: a section of three bullets usually wants to be three sentences. Bullets are for a real list (3+ comparable items), and a bold figure lead-in (`- **88% — Diesel price jump:** ...`) belongs only where the figure is the point of the line.
    - The fixed house labels are a fallback, not a requirement: write each section header in this article's own words — what the section actually argues. An article that opens on "The big picture:", lists "What I'd watch:" and closes on "The catch" reads like the template it is.
    - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
+4a. READABILITY LAW (owner, 2026-11-06 — the desk's critic checks these, and three of them hold the push):
+   - NO RIDDLE SYNTAX. Never trade clarity for a clever parallel or an abstract noun chain: "a gate is one shared function rather than a share of one" and "deeper into its stay than the window is long" are banned. Write subject -> active verb -> concrete object, with the consequence in the same sentence: "A walkout by 2% of the workforce still freezes 100% of the cargo at those eight terminals, because you cannot run a terminal with a closed gate." Three prepositional phrases in a row ("the fee on the rate for the box in the yard at the gate") is the signature of the defect.
+   - STATE THE TIMELINE ONCE, in paragraph 2: initial event -> initial deadline -> current extension. After that refer to the operational window ("the 12-day window"), never re-explain the calendar, and never open a paragraph on a relative day ("At 5 p.m. on Wednesday") before the calendar date is established.
+   - KEEP DOMAIN TERMS EXACT and gloss them in place: terminal dwell time is how long an import box sits on the dock, never "a round-trip retrieval cycle". Use the source's own method name, not a picture of it.
+   - NO COLD CONCEPT IN THE CLOSING: the last paragraph may not introduce a rule, a billing mechanism or a technical concept the body never explained; if it must, carry a 5-10 word inline bridge ("under federal demurrage billing rules, the two 30-day dispute clocks...").
+   - ONE CITATION TAG PER SENTENCE (consolidate to the most primary source) and `## Sources` as a vertical list ("1. <publisher> - <url>"), never a run-on paragraph.
 5. STRONG, SIMPLE DICTION:
    - Strip out passive verbs, weak adverbs ("basically", "materially", "fundamentally"), and bloated "10-dollar" corporate jargon.
    - Prefer short, single-syllable, visual words that paint a clear picture.
@@ -85,7 +92,7 @@ ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary
 - NEVER invent an expansion for a proper noun or system name (e.g. CRAB, DeltaBox). If a name has no known full form, do not fabricate one to satisfy the acronym rule — rephrase to drop the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB"). A fabricated acronym expansion is a hallucination and a hard failure.
 
 OUTPUT FORMAT (strict):
-1) The full rewritten article, beginning with the frontmatter, then each section in order with its marker, then "## Sources" (the original source list VERBATIM). Write nothing after that but the `## Gate report` — the social variant was removed with the LinkedIn/Reddit channel (2026-10-06).
+1) The full rewritten article, beginning with the frontmatter, then the sections IN THIS ORDER with their markers — <!-- lead -->, <!-- tldr --> (## At a glance, directly under the lede), <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway --> — then "## Sources" (the original source list VERBATIM, as a vertical list, one entry per line). Write nothing after that but the `## Gate report` — the social variant was removed with the LinkedIn/Reddit channel (2026-10-06).
 2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason verifying plain-English clarity and scannability>" or "FAIL — <reason>".
 
 Now rewrite the following draft:"""

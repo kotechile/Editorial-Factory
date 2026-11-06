@@ -218,3 +218,95 @@ def test_banned_list_comes_from_verify_sh():
     """One source of truth: the list is parsed out of the repo's own gate, not duplicated here."""
     phrases = pg.banned_phrases()
     assert "game-changing" in phrases and "delve into" in phrases
+
+
+# ─────────────────── the reader-side critic is wired into the push (owner, 2026-11-06) ───────────────────
+# The pieces the owner called hard to read cleared every other gate, so the shape checks live in
+# scripts/readability_critic.py and are re-run here. These two cases pin the wiring in both directions:
+# a summary at the foot of the page does not publish, and the same copy with the summary under the lede
+# does. The house fixture above is dated before the standard, so it is grandfathered and unaffected.
+NEW_SHAPE = """---
+title: "Battery Sizing For The Loads You Own"
+persona: pro_homeowner
+date: 2026-11-06
+---
+
+<!-- lead -->
+A home battery is sized against the critical loads it must carry, and that list is much shorter than a year of your bill [1]. The installer who quotes the year has answered a question you did not ask.
+
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** Installers size the bank against annual use, not against the outage.
+- **The number:** Three days is the outage the critical-load list has to carry.
+- **The risk:** a year of consumption oversizes the bank and hides the loads that matter.
+
+<!-- tension -->
+
+## The number everyone uses
+
+The installer quotes a year of consumption, and the outage it has to ride through lasts about three days [1]. The list of loads you cannot lose is short, and sizing against the year buries it under a figure nobody can check.
+
+<!-- tactical-insight -->
+
+## What I'd watch
+
+The installers closest to this quote a critical-load list before they quote a bank size. I keep coming back to how rarely the list is written down, and [the sizing planner](/battery-sizing-planner/) is where that arithmetic gets done in public.
+
+<!-- nuanced-takeaway -->
+
+## The catch
+
+A three-day outage is an assumption, and a longer one changes the answer [2]. My reading is that the assumption is worth stating out loud.
+
+## Sources
+
+1. U.S. Energy Information Administration FAQ — https://www.eia.gov/tools/faqs/
+2. Federal Emergency Management Agency, Power Outages — https://www.ready.gov/power-outages
+"""
+
+
+def new_shape(**overrides) -> str:
+    text = NEW_SHAPE
+    for key, value in overrides.items():
+        text = text.replace(value[0], value[1])
+    return text
+
+
+def test_the_summary_under_the_lede_publishes(repo):
+    path = write(repo, name="2026-11-06_battery-sizing.md", text=NEW_SHAPE)
+    assert pg.text_failures(path) == []
+
+
+def test_a_summary_at_the_foot_of_the_piece_holds_the_push(repo):
+    # The exact shape the owner reported: everything present, the executive summary last.
+    text = NEW_SHAPE
+    glance = text[text.index("<!-- tldr -->"):text.index("<!-- tension -->")]
+    foot = text.replace(glance, "")
+    foot = foot.replace("<!-- nuanced-takeaway -->", glance + "<!-- nuanced-takeaway -->")
+    path = write(repo, name="2026-11-06_battery-sizing-foot.md", text=foot)
+    failures = pg.text_failures(path)
+    assert any("critic:" in f and ("immediately under the lede" in f or "out of order" in f)
+               for f in failures), failures
+
+
+def test_a_two_statistic_bullet_holds_the_push(repo):
+    text = NEW_SHAPE.replace(
+        "- **The number:** Three days is the outage the critical-load list has to carry.",
+        "- **The number — 3 days at 41% of annual use:** the outage the critical-load list has to carry.")
+    path = write(repo, name="2026-11-06_battery-sizing-bullet.md", text=text)
+    failures = pg.text_failures(path)
+    assert any("one metric per bullet" in f for f in failures), failures
+
+
+def test_the_gate_reports_the_prose_findings_without_holding_them(repo, monkeypatch):
+    # A read-twice sentence is advisory: it goes to the rewrite, never to the verdict.
+    text = NEW_SHAPE.replace(
+        "The list of loads you cannot lose is short,",
+        "A gate is one shared function rather than a share of one, and the list of loads you cannot lose is short,")
+    path = write(repo, name="2026-11-06_battery-sizing-prose.md", text=text)
+    assert pg.text_failures(path) == []
+    import readability_critic as critic
+    notes = critic.advisories(path)
+    assert any("read_twice" in n for n in notes), notes

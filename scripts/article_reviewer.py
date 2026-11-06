@@ -60,11 +60,13 @@ ATTEMPTS = 3
 MARKERS = ("<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
            "<!-- nuanced-takeaway -->", "<!-- tldr -->")
 
-SKELETON = ("## The big picture:", "## By the numbers", "## What I'd watch:", "## The catch",
-            "## At a glance")
+SKELETON = ("## At a glance", "## The big picture:", "## By the numbers", "## What I'd watch:",
+            "## The catch")
 # The five marked sections must survive a rewrite; their HEADINGS need not. The fixed labels above are
 # the house fallback — an article that writes its own headers is not a lost skeleton (owner, 2026-11-03:
-# "less smart brevity in favour of an interesting, easy to read story").
+# "less smart brevity in favour of an interesting, easy to read story"). The ORDER is the contract
+# (owner, 2026-11-06): the executive summary is the second block, directly under the lede, because a
+# recap at the foot of the page is scroll friction rather than emphasis.
 
 
 # --------------------------------------------------------------------------------------- the call
@@ -175,12 +177,42 @@ PRIORITIES, in this order. A lower one never buys the higher one.
    clipping sentences. Expand every acronym once, at its first use in the body — "Automatic
    Identification System (AIS)" or "AIS (the ship-tracking signal)". Never invent an expansion for a
    product or system name; rephrase to drop the all-caps token instead.
-5. SHAPE. The five marked sections, in this order, each with an H2 on its own line and a blank line
-   either side: {', '.join(SKELETON)}. Those are the fallback headings — prefer a header in this
-   article's own words that says what the section argues, and keep the numbers block at 2–3 bullets of
-   figures the prose does not restate. The tactical section reports what the people closest to
-   the story are doing and what answers the open question next — never a playbook for the reader,
-   and never a bullet list where three sentences would read better.
+5. SHAPE. The five marked sections, in **this order**, each with an H2 on its own line and a blank
+   line either side: {', '.join(SKELETON)}. The executive summary is the SECOND thing the reader
+   sees — `<!-- lead -->` then `<!-- tldr -->` then the chronology — so a draft that carries the
+   summary at the foot of the piece must be reordered, not copied. `## At a glance` is exactly three
+   labelled lines, under 50 words for the whole box: `- **The shift:** <one sentence: what changed>`,
+   `- **The number:** <the one figure that proves it>`, `- **The risk:** <the one operational
+   consequence>`. The three labels are checked mechanically; a box of three free-form bullets, or a
+   box that re-lists the tactical section, is not the schema. Those are the fallback headings —
+   prefer a header in this article's own words that says what the section argues, and keep the numbers
+   block at 2–3 bullets of figures the prose does not restate, placed after the mechanism is explained.
+   The tactical section reports what the people closest to the story are doing and what answers the
+   open question next — never a playbook for the reader, and never a bullet list where three sentences
+   would read better.
+
+6. READABILITY LAW (owner, 2026-11-06 — the last four runs passed every other gate and were still
+   called hard to read, so these are graded, not suggested):
+   * **No riddle syntax.** Never trade clarity for a clever parallel or an abstract noun chain.
+     Banned: "a gate is one shared function rather than a share of one", "the notice runs deeper into
+     its stay than the window is long". Required: subject → active verb → concrete object, with the
+     consequence in the same sentence — "A walkout by 2% of the workforce still freezes 100% of the
+     cargo at those eight terminals, because you cannot run a terminal with a closed gate." Three
+     prepositional phrases in a row ("the fee on the rate for the box in the yard at the gate") is the
+     mechanical signature of the defect; split it into two facts.
+   * **State the timeline once**, in paragraph 2, in strict order: initial event → initial deadline →
+     current extension. After that refer to the operational window ("the 12-day window", "before
+     Wednesday's deadline"). Never re-explain the dates in a later section, and never open a paragraph
+     on a relative day ("At 5 p.m. on Wednesday…") before the calendar date is established.
+   * **Domain terms stay exact**, glossed in place with a short appositive. Never redefine a standard
+     metric to fit a metaphor: *terminal dwell time* is how long an import box sits on the dock, not
+     "a round-trip retrieval cycle". Use the source's own method name, not a picture of it.
+   * **No cold concept in the closing.** The last paragraph may not introduce a rule, billing
+     mechanism or technical concept the body has not explained. If it must, carry a 5–10-word inline
+     bridge ("under federal demurrage billing rules, the two 30-day dispute clocks…").
+   * **One citation tag per sentence**, consolidated to the most primary source; `## Sources` stays a
+     vertical list. **One metric per bullet**, one sentence, 25 words or fewer, in At a glance and By
+     the numbers.
 
 DO NOT LOSE — the measured facts of this draft. Each line is a figure and the sentence it came from;
 every one must still be made, in your own words:
@@ -222,13 +254,14 @@ SHAPE: <section: what it does> ; <section: what it does> ; …
 BEFORE YOU RETURN — the desk's build runs these checks mechanically, and a run that fails one is
 held instead of published, so satisfy them deliberately rather than hoping:
 
-  1. The five section markers are present, in order, each with its house H2.
+  1. The five section markers are present, **in this order** — lead, tldr (At a glance, directly under
+     the lede), tension (chronology), tactical-insight, nuanced-takeaway — each with its house H2.
   2. **Each interpreting section — tension, the tactical section and the catch — contains at least
      one first-person sentence.** This is checked by a regex for "I" / "my", not by intent: write
      the observation plainly ("I read the table twice before believing it", "My reading is that the
      floor matters more than the model", "What I am watching is the December numbers"). One per
      section, in your own words, and no borrowed phrasing.
-  3. `## Sources` is copied verbatim, character for character.
+  3. `## Sources` is copied verbatim, character for character, as a vertical list.
   4. The body reads at Flesch ease 50 or better (aim 60): everyday words, sentences averaging 17-22
      words, no more than one sentence in eight under nine words. A choppy body fails as surely as a
      dense one — rhythm is a spread, not a short average. Long words are what sink the score: keep
@@ -236,6 +269,12 @@ held instead of published, so satisfy them deliberately rather than hoping:
   5. The body contains none of these filler adverbs: really, actually, clearly, simply, essentially,
      basically, fundamentally, ultimately, notably, importantly. They are counted per 1,000 words,
      so three of them is a regression.
+  6. The critic's four checks pass: `## At a glance` is the second block, carries the three labels
+     (The shift / The number / The risk) and stays under 50 words; every bullet in At a glance and By
+     the numbers is one sentence, under 25 words, carrying **one** metric; every sentence carries **at
+     most one** `[n]` tag; no sentence stacks three prepositional phrases or uses an abstract
+     comparison ("more X than Y is Z"); the dates are explained once, in the chronology; and the
+     closing paragraph introduces no concept the body has not already explained.
 
 THE DRAFT TO REWRITE:
 
@@ -357,6 +396,18 @@ def review(draft_path: pathlib.Path, *, brief_path: pathlib.Path | None = None,
             result["hard"].append(f"accessibility gate: {fail}{hint}")
         result["ok"] = not result["hard"]
         result["score"] = ra.score(result)
+        # The reader-side critic (scripts/readability_critic.py, owner 2026-11-06): the structural,
+        # bullet and citation rules are deterministic and a candidate that breaks one cannot publish —
+        # but the publish gate is the single enforcement point (it holds the push and rewrites once),
+        # so here they are recorded and fed back rather than turning a good rewrite into a no-file
+        # hold. The prose findings (read-twice, timeline, closing) are guidance for the next attempt.
+        import readability_critic as critic_gate
+        critic = critic_gate.findings(text)
+        result["critic"] = {"fails": critic["fails"], "advisories": critic["advisories"]}
+        if critic["fails"]:
+            print(f"  attempt {attempt}: critic would hold the push — "
+                  f"{len(critic['fails'])} structural/bullet/citation defect(s); fixing in the "
+                  f"next attempt")
         trail.append({
             "attempt": attempt,
             "ok": result["ok"],
@@ -368,6 +419,8 @@ def review(draft_path: pathlib.Path, *, brief_path: pathlib.Path | None = None,
             "words": result["flow"]["words"],
             "flesch": acc.get("flesch"),
             "score": result["score"],
+            "critic_fails": len(critic["fails"]),
+            "critic_advisories": len(critic["advisories"]),
         })
         print(f"  attempt {attempt}: {'ACCEPT' if result['ok'] and not result['regressions'] else 'reject'}"
               f"  hard={len(result['hard'])} regressions={len(result['regressions'])}"
@@ -385,9 +438,13 @@ def review(draft_path: pathlib.Path, *, brief_path: pathlib.Path | None = None,
             + f"\n\n(in progress — attempt {attempt} of {attempts})\n", encoding="utf-8")
         if result["ok"] and not result["regressions"]:
             break
-        prompt = build_prompt(draft, led, draft_flow,
-                              feedback=ra.feedback(result) + [f"- FIX  {r}" for r in result["regressions"]],
-                              brief=brief)
+        prompt = build_prompt(
+            draft, led, draft_flow,
+            feedback=(ra.feedback(result)
+                      + [f"- FIX  {r}" for r in result["regressions"]]
+                      + [f"- FIX (critic)  {f}" for f in critic["fails"]]
+                      + [f"- CONSIDER (critic)  {a}" for a in critic["advisories"]]),
+            brief=brief)
 
     assert best is not None, "no candidate to write"
     accepted = best["result"]["ok"] and not best["result"]["regressions"]
@@ -420,6 +477,9 @@ def render_report(draft_path: pathlib.Path, out_path: pathlib.Path, best: dict,
         f"- figures in the ledger: {r['ledger']['figures']} · citations: "
         f"{r['ledger']['citations']} · quotes: {r['ledger']['quotes']} · sources: "
         f"{r['ledger']['sources']}",
+        f"- reader-side critic: {len(r.get('critic', {}).get('fails', []))} holding defect(s), "
+        f"{len(r.get('critic', {}).get('advisories', []))} prose advisory(ies) "
+        f"(scripts/readability_critic.py)",
         "",
         "## The reviewer's reading",
         "",

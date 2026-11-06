@@ -29,16 +29,19 @@ To apply Smart Brevity effectively, the styling pass consumes:
 
 ### 3.3 Context Signposts & Mandatory H2 Headers
 Introduce supporting context using standardized H2 headers (`## `).
-**Formatting requirement:** Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. Never place body text or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
-- **`## The big picture:`** — Frame the broader industry or structural shift (in `<!-- tension -->`). Followed on a new paragraph by a single direct, declarative sentence.
-- **`## By the numbers`** — **MANDATORY H2.** Lead into 2–4 quantitative or benchmark figures, formatted as clean scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). Never begin bullet explanations with conversational or background narrative ("Diesel fuel started the year...", "The leap in the..."). State the clean metric title directly so automated SVG charts display meaningful, unclipped labels.
-- **`## What I'd watch:`** / **`## Where the money flows`** — Introduce the concrete consequences and the next signals to watch (in `<!-- tactical-insight -->`). Observations, never instructions to the reader (§3.9).
-- **`## The catch`** — State the honest limitation, tradeoff, or counter-argument (in `<!-- nuanced-takeaway -->`). Followed on a new paragraph by the honest limitation.
-- **`## At a glance`** — Mandatory H2 opening the `<!-- tldr -->` executive summary, separated so it is NEVER embedded under "The catch".
+**Formatting requirement:** Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. Never place body text or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line.
+**The order is part of the contract** (owner, 2026-11-06; `scripts/readability_critic.py` holds it): the executive summary primes the reader **immediately under the lede**, before any context:
+- `<!-- lead -->` → `<!-- tldr -->` → `<!-- tension -->` → `<!-- tactical-insight -->` → `<!-- nuanced-takeaway -->`. A rewrite that moves `## At a glance` back to the foot of the piece is a defect, not a preference.
+- **`## At a glance`** — **MANDATORY H2 and the second thing the reader sees**, directly after the lede: the three-line shift / number / risk box, 50 words or fewer, never embedded under "The catch" and never after the source list.
+- **`## The big picture:`** (a fallback label; prefer the article's own words) — frame the timeline once, in strict order (**initial event → initial deadline → current extension**), then the broader structural shift (in `<!-- tension -->`), followed on a new paragraph by a single direct, declarative sentence.
+- **`## By the numbers`** — **MANDATORY H2**, placed **after the mechanism has been explained**, never before the reader knows what is being counted. 2–3 bullets, **one metric per bullet, one sentence, 25 words or fewer**: `- **85% of Long Beach cargo:** The volume handled by the eight terminals where 250 watchmen could walk out [3].` Never begin bullet explanations with conversational or background narrative, and never pack a share, a headcount and a comparison into one line — that is the form the reader has to re-read.
+- **`## What I'd watch:`** / **`## Where the money flows`** — the operational caveats and the next signals to watch (in `<!-- tactical-insight -->`). Observations, never instructions to the reader (§3.9).
+- **`## The catch`** — the honest limitation, tradeoff, or counter-argument (in `<!-- nuanced-takeaway -->`), **self-contained**: no regulatory rule, billing mechanism or concept that appears for the first time in the final paragraph. If one is unavoidable, carry a 5–10-word inline bridge in the same sentence (§3.11 D).
 
 ### 3.4 Scannability & Bullets
 - **Never output monolithic walls of text.**
 - Any sequence of **three or more** data points, stats, tactical moves, or arguments MUST be broken down into clean, bulleted lists with bold lead-ins (e.g., `- **Audit bandwidth:** Ask vendors for...`).
+- **One metric per bullet, one sentence, 25 words or fewer** in `At a glance` and `By the numbers`. Bold the anchor figure and its noun, colon, one clause: `- **85% of Long Beach cargo:** The volume handled by the eight terminals where 250 watchmen could walk out [3].` The two-statistic line (`- 85% — Long Beach cargo behind eight gates: the 250 watchmen … are about 2% of the ILWU workforce [3].`) is the defect this rule exists to stop: a reader has to unpack a share, a headcount and a comparison from one lead-in. `scripts/readability_critic.py` counts the words and the figures and holds the push.
 - **At a Glance / TL;DR 3-line schema (owner standard 2026-10-29 — the four-part box is RETIRED):** The `<!-- tldr -->` block is a box under 50 words, three lines, in plain English:
   1. `- **The shift:**` — one sentence: what changed.
   2. `- **The number:**` — the one figure that proves it, and that the body already states.
@@ -136,6 +139,50 @@ accessibility floor. Re-voice, never re-report.
 
 `scripts/verify.sh` §9 gates both voices: it fails the build when an artifact dated on/after the cutover
 carries an authority construction, or when an interpreting section has no observer cue.
+
+### 3.10 The readability law — every sentence parses on the first read (owner, 2026-11-06)
+
+Measured on the 2026-11-05 run: Flesch 55, every citation resolving, `article_shape` ok — and the
+owner's verdict was still that the text is hard to read. The cause was grammar, not vocabulary:
+riddle syntax, a timeline explained three times, bullets carrying two statistics, and a closing that
+named a rule the body never introduced. `scripts/readability_critic.py` now runs these four checks
+automatically; the first three below are what the rewrite must actively fix.
+
+**A. Ban riddle syntax and abstract wordplay.** Never sacrifice clarity for a clever parallel or an
+abstract noun chain. Banned: *"a gate is one shared function rather than a share of one"*, *"the
+notice runs deeper into its stay than the window is long"*. Required: **subject → active verb →
+concrete object**, consequence in the same sentence — *"A walkout by 2% of the workforce still freezes
+100% of the cargo at those eight terminals, because you cannot run a terminal with a closed gate."*
+Three prepositional phrases in a row (*"the fee on the rate for the box in the yard at the gate"*) is
+the mechanical signature: split it into two facts.
+
+**B. Chronological deduplication.** The timeline is established **once**, in paragraph 2, in strict
+order: **initial event → initial deadline → current extension**. After that, refer only to the
+operational window (*"the 12-day window"*, *"before Wednesday's deadline"*) — never re-explain the
+calendar in a later section. Never open a paragraph on a relative day (*"At 5 p.m. on Wednesday…"*)
+before the calendar date has been established above it.
+
+**C. Strict domain terminology.** Define jargon inline with a brief appositive, and never redefine a
+standard metric to fit a metaphor. *Terminal dwell time* is the time an import box sits on the dock
+waiting to depart — not "a round-trip retrieval cycle". Use the source's own method name
+(**Croston's method, trimmed by the SBA bias factor**), not a picture of it.
+
+**D. No cold late-stage concepts.** The closing paragraph may not introduce an unexplained
+regulatory rule, billing mechanism or technical concept. If it must reference one — *"the two 30-day
+clocks on a late container's bill"* — carry a **5–10-word inline bridge**: *"under federal demurrage
+billing rules, the two 30-day dispute clocks…"*. An internal cross-link in the closing gets the same
+treatment: say what the linked thing is before linking it.
+
+**E. Citation hygiene — one tag per sentence.** Preferred: convert `[1][4]` into clean inline links
+anchored to the publication (*"according to the [ports' daily rail reports](url)"*). If bracketed
+tags are kept: **at most one per sentence**, consolidated to the most primary source, and the
+`## Sources` footer as a **vertical list** (`1. <publisher> — <url>` per line), never a run-on
+paragraph.
+
+**F. Structure: the summary goes under the lede.** `<!-- tldr -->` is the second block in the
+document, immediately after the lede, before the chronology. If the draft you were handed has it at
+the foot of the piece, move it — that is a required part of this rewrite, and a rewrite that leaves
+it there is held at the push.
 
 ---
 

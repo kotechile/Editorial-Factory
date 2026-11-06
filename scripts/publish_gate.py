@@ -130,6 +130,14 @@ def text_failures(path: pathlib.Path, *, root: pathlib.Path = ROOT) -> list[str]
     import article_shape as ash
     fails += ash.failures(path, registry=ash._registry())
 
+    # The reader-side critic (context/readability_critic.json, owner 2026-11-06): the executive
+    # summary sits under the lede, one metric per bullet, one citation tag per sentence, and a
+    # vertical source list. Deterministic shapes, so they hold a push. Its prose findings (the
+    # read-twice test, a timeline stated twice, a cold closing concept) are heuristics and are
+    # reported through `critic_notes` for the rewrite — never used to reject an article.
+    import readability_critic as critic
+    fails += [f"critic: {failure}" for failure in critic.failures(path)]
+
     try:
         rel = str(path.relative_to(root))
     except ValueError:
@@ -217,6 +225,11 @@ def gate(slug: str, *, rewrite: bool = True, root: pathlib.Path = ROOT) -> dict:
 
     failures = body_failures + headline_failures + source_failures
     report["failures"] = failures
+    try:
+        import readability_critic as critic
+        report["critic_notes"] = critic.advisories(path)
+    except Exception as exc:                           # noqa: BLE001 - report, never swallow
+        report["critic_notes"] = [f"the critic could not run: {exc}"]
     if not failures:
         return report
     report["verdict"] = "draft"
@@ -609,10 +622,14 @@ def _print(report: dict, slug: str | None = None) -> None:
         rw = report.get("rewrite")
         if rw:
             print(f"  (cleared by one rewrite — Flesch now {rw.get('flesch_after')})")
+        for note in report.get("critic_notes", []):
+            print(f"  ~ {note}")
         return
     print(f"gate: {report['verdict'].upper()} {report.get('artifact') or ''}")
     for f in report.get("failures", []):
         print(f"  - {f}")
+    for note in report.get("critic_notes", []):
+        print(f"  ~ {note}")
     rw = report.get("rewrite")
     if rw:
         print(f"  rewrite attempted: {rw['command']} (exit {rw.get('exit_code')}), "

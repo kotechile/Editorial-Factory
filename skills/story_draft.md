@@ -5,15 +5,21 @@ Assemble the verified brief into an authoritative structural draft using **only*
 evidence set. No new facts. Provide clear inputs for the Stylist's Smart Brevity rewrite.
 
 ## 2. The house structure
-| Section | Rule |
-|---|---|
-| **Title** | A headline that earns the click, scored by `scripts/headline_score.py` (owner's standard, 2026-10-10) and gated at the push — **for articles from 2026-10-10 on: earlier headlines are grandfathered and only reported, never re-cut** (`ENFORCED_FROM`). **Core headline ≤ 6 words** before any colon/dash subtitle, whole title ≤ 10 words and ≤ 60 characters, **never open on "The/A/An"**, front-load the strongest noun or the most concrete benefit, carry a hook (a curiosity gap or loss aversion — the mistake, the trap, the silent cost — or invert the conventional wisdom), anchor on a figure the article itself states (never invented), and call the reader out ("your/you", or a named role/subject: CFO, shipper, homeowner, SpaceX). The strongest headlines in the corpus read *"California FAIR Plan Premiums Jump 29.1%"*, *"Why 70% of Startup Options Go Unexercised"*, *"Nearshoring Doesn't Move the Trade Case"*; the weak ones are 11–17 words, open on "The", and state a fact with no reason to open it. No bait-and-switch: the article must satisfy the title in its first paragraph. When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword. For **Synthesis articles**, the collision thesis goes in the subtitle, not by stacking both clauses into the headline. |
-| **Lead** | A concrete incident or figure from the evidence delivering the core news in sentence 1. For **Synthesis articles**, write a **Collision Lead**: bridge the two underlying developments in the first 1–2 sentences (e.g., *"As frontier model inference prices plunge past 80% cuts, enterprise engineering teams are quietly turning their backs on off-the-shelf SaaS to build bespoke in-house software."*). Not a definition, not a "world is changing" opener. |
-| **Tension** | The systemic reason this is happening now — who it hurts, who it helps, what changed. Give the section its own H2 that says what it argues; "The big picture:" is the fallback label, not the required one (owner, 2026-11-03). In a synthesis piece, explain the friction point where Trend A radically alters the economics, reliability, or feasibility of Trend B. |
-| **By the numbers** | **Kept, but small** (owner, 2026-11-03: the block is what a reader scans; removing it loses the page). Give it its own `## By the numbers` H2 and 2–3 bold bullets — `- **<figure> — <label>:** <one plain sentence> [n]` — carrying the figures the prose does not state again. Four bullets restating the body is the deck smell; zero bullets is a hole readers noticed immediately. In synthesis articles the figures must still come from **both** underlying anchors. |
-| **Tactical insight** | What the people closest to the story are doing, what the consequences land on, and the next signals to watch — reported, never prescribed (`persona:` from `context/personas.json`). Write it as prose; bullets only for a real list of comparable items. Header in this article's own words ("Where this bites:" / "What I'd watch:" are fallbacks). Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
-| **Nuanced takeaway** | The honest limitation or counter-argument (**The catch / Between the lines**). Ends on substance, not a cheerlead. |
-| **TL;DR (At a Glance)** | A **≤50-word** box, three lines: **The shift / The number / The risk**. It states what changed, the figure that proves it and the one caveat — it never re-lists the tactical section's watch items (owner standard 2026-10-29: a recap the reader just read is scroll friction, not emphasis). **Long-form only.** |
+
+The order below **is** the contract (`scripts/readability_critic.py` holds it at the push): the
+executive summary primes the reader at the top instead of repeating itself at the bottom. A piece
+whose parts are all present but in the old order (summary last) fails the gate.
+
+| # | Section | Rule |
+|---|---|---|
+| 1 | **Title** | A headline that earns the click, scored by `scripts/headline_score.py` (owner's standard, 2026-10-10) and gated at the push — **for articles from 2026-10-10 on: earlier headlines are grandfathered and only reported, never re-cut** (`ENFORCED_FROM`). **Core headline ≤ 6 words** before any colon/dash subtitle, whole title ≤ 10 words and ≤ 60 characters, **never open on "The/A/An"**, front-load the strongest noun or the most concrete benefit, carry a hook (a curiosity gap or loss aversion — the mistake, the trap, the silent cost — or invert the conventional wisdom), anchor on a figure the article itself states (never invented), and call the reader out ("your/you", or a named role/subject: CFO, shipper, homeowner, SpaceX). The strongest headlines in the corpus read *"California FAIR Plan Premiums Jump 29.1%"*, *"Why 70% of Startup Options Go Unexercised"*, *"Nearshoring Doesn't Move the Trade Case"*; the weak ones are 11–17 words, open on "The", and state a fact with no reason to open it. No bait-and-switch: the article must satisfy the title in its first paragraph. When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword. For **Synthesis articles**, the collision thesis goes in the subtitle, not by stacking both clauses into the headline. |
+| 2 | **Lede (paragraph 1)** | The core thesis **and its operational impact** in plain, concrete English, in the first sentence. A concrete incident or figure from the evidence delivers the news; the same paragraph says what it changes for the reader. Not a definition, not a "world is changing" opener, no heading before it. For **Synthesis articles**, write a **Collision Lead**: bridge the two underlying developments in the first 1–2 sentences (e.g., *"As frontier model inference prices plunge past 80% cuts, enterprise engineering teams are quietly turning their backs on off-the-shelf SaaS to build bespoke in-house software."*). |
+| 3 | **At a Glance** (`<!-- tldr -->`) | **Immediately below the lede**, never at the foot of the piece. `## At a glance` + three lines, **≤50 words total**: `- **The shift:**` (one sentence — what changed), `- **The number:**` (the one figure that proves the thesis and that the body already states), `- **The risk:**` (the single operational consequence). It primes the reader; it never re-lists the watch items below. |
+| 4 | **Chronological context** (`<!-- tension -->`) | Paragraph 2 states the timeline **once**, in strict chronological order — **initial event → initial deadline → current extension** — then the mechanism (the systemic reason it is happening now, who it hurts and who it helps). An H2 in this article's own words; "The big picture:" is the fallback label, not the required one (owner, 2026-11-03). In a synthesis piece, explain the friction point where Trend A alters the economics, reliability or feasibility of Trend B. |
+| 5 | **By the numbers** | **Kept, but small** (owner, 2026-11-03: the block is what a reader scans; removing it loses the page). `## By the numbers` H2 with **2–3 bold bullets**, placed **after the mechanism has been explained** — never before the reader knows what is being counted. One metric per bullet, one sentence, **25 words or fewer**, formatted `- **<figure> <noun phrase>:** <one plain clause> [n]` (see §3.5). In synthesis articles the figures must still come from **both** underlying anchors. |
+| 6 | **What to watch** (`<!-- tactical-insight -->`) | Operational caveats and forward-looking triggers: what the people closest to the story are doing, what the consequences land on, which signal answers the open question next — reported, never prescribed (`persona:` from `context/personas.json`). Write it as prose; bullets only for a real list of comparable items. Header in this article's own words ("Where this bites:" / "What I'd watch:" are fallbacks). Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
+| 7 | **The catch** (`<!-- nuanced-takeaway -->`) | The honest limitation or counter-argument, **self-contained**: the final sentence may not introduce a regulatory rule, a billing mechanism, an internal cross-link or a technical concept the piece has not already explained. If it has to name one, give it a 5–10-word inline bridge in the same sentence (*"under federal demurrage billing rules, the two 30-day dispute clocks…"*). Ends on substance, not a cheerlead. |
+| 8 | **Related reading & Sources** | Footer, generated at persistence (`<!-- internal-links -->`, `## Related reading`) and copied verbatim (`## Sources`). Render sources as a **vertical list** (`1. <publisher> — <url>` per line), never one run-on paragraph. |
 
 **Story first (owner, 2026-11-03).** The house structure is five marked sections, not five labels.
 A reader should be able to follow one argument from the first sentence to the last; the markers,
@@ -47,7 +53,7 @@ The **TOC is render-time only** — the site derives it from the section heading
 - **SEO frontmatter is optional to author and never invented:** if the brief carries a keyword set, write `meta_title` (≤60 chars) and `meta_description` (140–160 chars) grounded in the article's own headline and lead; if you have neither, omit the keys. The persistence pass derives both from your headline and lead paragraph (`scripts/article_assets.py`) so the CMS excerpt and the frontends' `<meta name="description">` are never empty — do not pad them with claims the article does not make.
 - Any claim not in the brief is written as `[NEEDS-SOURCE]` and returned to the verifier — never filled with invention.
 - Match the target reader's level from `context/personas.json` for the vertical (`persona:` in frontmatter).
-- **Mandatory 'By the numbers:' section:** Every story must include a bolded `**By the numbers:**` section containing 2–4 scannable bullets with bold lead-ins pairing the figure with a concise 2–4 word metric title before an em-dash or colon (e.g. `- **88% — Diesel price jump:** ...` or `- **21% to 29.5% — UPS fuel fee:** ...`). Never start bullet explanations with narrative filler ("Diesel fuel started the year...", "The leap in the..."). This delivers load-bearing data cleanly and ensures automated SVG charts display meaningful, untruncated labels.
+- **`## By the numbers` is mandatory and small:** 2–3 scannable bullets, placed after the mechanism, each in the §3.5 shape — `- **<the anchor figure and its noun>:** <one clause that says what it counts> [n]` (e.g. `- **85% of Long Beach cargo:** The volume handled by the eight terminals where 250 watchmen could walk out [3].`). Never start a bullet with narrative filler ("Diesel fuel started the year…", "The leap in the…"), never put two statistics in one bullet, never a bullet over 25 words. The lead-in's bold text is what an automated SVG chart prints as its axis label, which is why it must be one metric.
 - **Observer voice (gated):** the body is a comment on the news, not a verdict and not a playbook:
   each interpreting section (`<!-- tension -->`, `<!-- tactical-insight -->`, `<!-- nuanced-takeaway -->`)
   carries a first-person observer cue, opinion is labelled as opinion, and the tactical section reports
@@ -66,7 +72,7 @@ The **TOC is render-time only** — the site derives it from the section heading
   matching `_signals.md`. This flag is what marks the article as a fusion on the dashboard's own
   surfaces (`/api/articles.json`, the article page badge) — an unflagged synthesis publishes as a
   single-signal story.
-- **At a Glance (TL;DR) Schema — a 50-word box, not a second summary (owner standard 2026-10-29):**
+- **At a Glance (TL;DR) Schema — a 50-word box under the lede, not a second summary (owner standard 2026-10-29; position 2026-11-06):**
   1. `**The shift:** <what changed, in one sentence>`
   2. `**The number:** <the one figure that proves it — and that the body already states>`
   3. `**The risk:** <the single caveat a reader must carry away>`
@@ -101,8 +107,13 @@ The **TOC is render-time only** — the site derives it from the section heading
   for the reader's own hour ("if your hour is worth what the work pays…") is an assumption and must
   be written as one; a wage that prices a third party's paid work is self-evident and needs no
   clause. Full wording in `skills/claude_humanizer.md` §3.5. Applies to drafts from this date.
-- **Pre-tune the draft to the accessibility floor before Loop 3.** Run
-  `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. A draft that
+- **Pre-tune the draft before Loop 3 — both gates, not just accessibility.** Run
+  `python3 scripts/readability_critic.py --check <draft>` **and**
+  `python3 scripts/check_accessibility.py <draft>` on the structural draft you just wrote. The critic
+  holds the deterministic half at the push (At a glance under the lede, one metric per bullet, one
+  citation tag per sentence, `## Sources` as a vertical list) and prints the prose advisories
+  (read-twice, repeated dates, cold closing) — fix them now, because the reviewer's rewrite is graded
+  against the same checks. A draft that
   already clears the Flesch floor (~50) and carries a first-person observer cue in every interpreting
   section converges the frontier rewrite in ~2 attempts; a dense draft burns 4–5 attempts and then needs
   a hand-tune anyway (`skills/claude_humanizer.md` §7–§8). **Readability is a WORD-CHOICE lever, not a
@@ -145,8 +156,68 @@ The **TOC is render-time only** — the site derives it from the section heading
   `<!-- nuanced-takeaway -->` and `<!-- tldr -->`; check them with
   `grep -o '<!-- [a-z-]* -->' <draft>` before running the accessibility gate, not after the push.
 
+### 3.5 Readability law (owner, 2026-11-06) — every sentence parses on the first read
+
+A draft can clear Flesch 60, keep every citation and still be hard to read, because the damage is in
+the grammar and the arithmetic of the argument, not in the word length. Four rules, all of them
+checked by `scripts/readability_critic.py` (structure/bullets/citations hold the push; the prose
+findings go back through the rewrite):
+
+**A. Never trade clarity for a clever parallel.** Abstract symmetry is banned — a sentence whose
+appeal is its shape rather than its meaning. Banned in practice: *"a gate is one shared function
+rather than a share of one"*, *"the notice runs deeper into its stay than the window is long"*, *"a
+price is what you pay, a cost is what you keep"*. Required: **subject → active verb → concrete
+object**, with the consequence in the same sentence. *"A walkout by 2% of the workforce still freezes
+100% of the cargo at those eight terminals, because you cannot run a terminal with a closed gate."*
+If a sentence has three prepositional phrases in a row (*"the fee on the rate for the box in the yard
+at the gate"*), it is a riddle: rewrite it as two short facts.
+
+**B. State the timeline once, then speak in windows.** The dates, the extension and the countdown
+math belong in one place — paragraph 2 — in strict order: **initial event → initial deadline →
+current extension**. After that, refer to the operational window (*"the 12-day window"*, *"before
+Wednesday's deadline"*) and never re-explain the calendar. Never open a paragraph on an ambiguous
+relative day (*"At 5 p.m. on Wednesday…"*) before the calendar date has been established somewhere
+above it.
+
+**C. Keep domain terms exact, and gloss them in place.** Industry jargon gets a short appositive at
+first use, and a standard metric is never redefined to fit a metaphor. *Terminal dwell time* is the
+time an import box sits on the dock waiting to depart — never "a round-trip retrieval cycle". *Point-
+forecast accuracy* stays point-forecast accuracy. If the source names the method, use the source's
+name (**Croston's method, trimmed by the SBA bias factor**), not a picture of it.
+
+**D. No cold concept in the closing.** Never introduce an unexplained regulatory rule, billing
+mechanism or technical concept in the final paragraph. If the closing sentence has to reference one
+— an external rule (*"the two 30-day clocks on a late container's bill"*) or an internal cross-link —
+carry a **5–10-word inline bridge** in the same sentence: *"under federal demurrage billing rules,
+the two 30-day dispute clocks…"*. The same rule applies to any term the body introduced only in
+passing.
+
+**Citation hygiene — one tag per sentence, linked where the reader will look.** Preferred (digital
+readability): convert bracketed footnotes into clean inline links anchored to the publication or the
+document — *"according to the [ports' daily rail reports](url)"* — with the `## Sources` list kept as
+the record. If the schema requires bracketed tags: **at most one `[n]` per sentence**, consolidated
+to the most primary source for that claim, and the `## Sources` footer as a **vertical list**
+(`1. <publisher> — <url>` on its own line), never one run-on paragraph. Two tags on one sentence is a
+gate failure; three is a research note.
+
+**Bullets — one metric each.** In `At a glance` and `By the numbers`, every bullet is **one sentence,
+25 words or fewer, one statistic**: `- **85% of Long Beach cargo:** The volume handled by the eight
+terminals where 250 watchmen could walk out [3].` Never the old packed form (`- 85% — Long Beach
+cargo behind eight gates: the 250 watchmen who could walk out are about 2% of the ILWU workforce
+[3].`), which asks one line to carry a share, a headcount and a comparison at once.
+
+**The four checks before you hand the draft over** (the same ones the critic runs):
+
+1. **Read-twice test** — flag and rewrite any sentence with three prepositional phrases in a row, or
+   an abstract comparison of the shape "more X than Y is Z".
+2. **Timeline audit** — count every calendar date. If the same date or date pair is explained more
+   than once, strip the repeats and use the window.
+3. **Bullet density** — every bullet in `At a glance` and `By the numbers` is a single sentence under
+   25 words, carrying one metric.
+4. **Closing hook audit** — the final paragraph contains no undefined noun and no orphan reference.
+
 ## 4. Output schema
-`context/drafts/YYYY-MM-DD_<slug>_draft.md`:
+`context/drafts/YYYY-MM-DD_<slug>_draft.md` — the order below is the gate's order:
 ```markdown
 ---
 title: <short punchy initial headline>
@@ -168,44 +239,45 @@ slug: <slug>
 ---
 
 <!-- lead -->
-<concrete incident/stat — core news delivered immediately in sentence 1, hook first, no heading>
-
-<!-- tension -->
-
-## The big picture:
-
-<the systemic shift / why now>
-
-## By the numbers
-
-- **<Stat 1> — <Metric Title>:** <concrete context and citation [1]>
-- **<Stat 2> — <Metric Title>:** <concrete context and citation [2]>
-- **<Stat 3> — <Metric Title>:** <concrete context and citation [3]>
-
-<!-- tactical-insight -->
-
-## What I'd watch:
-
-<the doable moves — structured cleanly for the persona>
-- **<Move 1>:** ...
-- **<Move 2>:** ...
-
-<!-- nuanced-takeaway -->
-
-## The catch
-
-<the honest limitation / counter-argument>
+<core thesis AND its operational impact in sentence 1 — concrete, plain, no heading>
 
 <!-- tldr -->
 
 ## At a glance
 
-**The shift:** <what changed — one sentence, under 50 words for the whole box>
-**The number:** <the figure that proves it, already stated in the body>
-**The risk:** <the one caveat that matters>
+- **The shift:** <one sentence: what changed>
+- **The number:** <the one figure that proves it, already stated in the body>
+- **The risk:** <the one operational consequence>
+<!-- the whole box is 50 words or fewer -->
+
+<!-- tension -->
+
+## <a header that says what this section argues>
+
+<paragraph 2: the timeline ONCE — initial event → initial deadline → current extension — then the
+mechanism: why now, who it hurts, who it helps>
+
+## By the numbers
+
+- **<figure> <noun phrase>:** <one clause saying what it counts> [1]
+- **<figure> <noun phrase>:** <one clause saying what it counts> [2]
+
+<!-- tactical-insight -->
+
+## <what to watch>
+
+<the operational caveats and the forward triggers — reported, never prescribed>
+
+<!-- nuanced-takeaway -->
+
+## The catch
+
+<the honest limitation / counter-argument — self-contained, no cold concept in the last sentence>
 
 ## Sources
-[1] ...  [2] ...
+
+1. <publisher/author, "title", date> — <url>
+2. <publisher/author, "title", date> — <url>
 ```
 
 ## 5. Failure handling
