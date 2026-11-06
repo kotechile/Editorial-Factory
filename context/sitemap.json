@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:16:54Z",
+  "updated_at": "2026-11-06T19:23:01Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5741,6 +5741,24 @@
       "date": "2026-11-05",
       "public": true,
       "url": "https://aichieve.net/your-trailers-last-foot-costs-2500/"
+    },
+    {
+      "slug": "2026-11-06_carbon-data-stops-at-6-minutes",
+      "title": "Carbon Data Stops at 6 Minutes",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The file is built for hours",
+        "By the numbers",
+        "What I'd watch",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-11-06",
+      "public": false
     },
     {
       "slug": "2026-11-06_your-claim-owes-60-day-interest",

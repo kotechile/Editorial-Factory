@@ -1,0 +1,113 @@
+{
+  "slug": "carbon-data-stops-at-6-minutes",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Unbranded last-mile delivery truck with engine off, parked alone in a loading bay under a single amber light, long shadows across concrete.",
+      "caption": "A parked last-mile truck under a single yard light captures the gap between a fuel total and the six-minute slices in a federal ELD file.",
+      "title": "Last-Mile Truck at Loading Bay \u2014 Carbon Data Gap",
+      "bytes": 385683,
+      "sha256": "sha256:f6ee9b6bb659806d5046bbf1a1eea8b0"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "35mm anamorphic wide photograph, shallow depth of field, fine film grain. A lone unbranded last-mile delivery truck with engine off and dark instrument cluster, parked at a loading bay, off-centre right in an asymmetric low-angle frame. A single amber overhead yard light from the left carves long shadows across a wet concrete apron; behind it a galvanised steel dock door, graphite and bone white with a safety-yellow bollard at the frame edge. No driver, no people, no logos, no text. Deep blue-hour darkness outside, chiaroscuro.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible signage",
+  "rationale": "Cinematic still captures the decisive operational gap: a truck at rest between logged events, the environment carrying the weight of invisible stops rather than a sterile abstraction. The wide anamorphic frame and single practical light give editorial tension without falling into datacenter or form clich\u00e9s.",
+  "cue": "Carbon Data Stops at 6 Minutes",
+  "subject": "an unbranded last-mile delivery truck with engine off and dark instrument cluster, parked at a loading bay",
+  "core_thesis": "A last-mile carbon number is a fuel total multiplied by a published factor, but the federal ELD file resolves engine time to six-minute slices, whole miles, and positions only at logged events, so the yearly total can be sound while every stop-level split is a model.",
+  "core_conflict": "Sound annual fuel total vs coarse six-minute event logging that erases stop-level delivery resolution.",
+  "composition": "asymmetric low-angle 16:9 framing, truck off-centre right with deep loading-bay perspective receding left",
+  "alt_text": "Carbon Data Stops At 6 Minutes. Unbranded last-mile delivery truck with engine off, parked alone in a loading bay under a single amber",
+  "caption": "Carbon Data Stops At 6 Minutes: The federal log behind a carrier's carbon number is built for hours, not per-stop fuel.",
+  "title": "Carbon Data Stops At 6 Minutes",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/carbon-data-stops-at-6-minutes/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 405216,
+  "sha256": "sha256:c8fb652a4500b8cdaf53075c2f81f20472319f6fc9eaed0277e6d1e9536d8bd4",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 405216,
+    "quality": 80,
+    "sha256": "sha256:c8fb652a4500b8cdaf53075c2f81f20472319f6fc9eaed0277e6d1e9536d8bd4",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:690b5213ad8a3371594b0790b4579b5b3435e529983d33ee266146fefcbe0be7",
+  "render_phash": "019f061f081f1817180f190f10271933999390d706710331138b083f043f041f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A white cab-over box truck with no company markings parked on wet asphalt in front of a corrugated metal warehouse wall at night, with two roll-up loading doors and a wall-mounted lamp illuminating the bay behind it.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The frame shows the article's own protagonist \u2014 an unbranded last-mile delivery truck parked at a loading bay \u2014 which is the vehicle whose six-minute federal activity record the carbon number is built from, though the image itself carries no hint of the data or carbon mechanism."
+  },
+  "source_hash": "sha256:7f650ddb981a5c1820dc8b1358a9a52a",
+  "source_chars": 4468,
+  "task_id": "dc763f9ba6592e48021632ca0d71ff22",
+  "credits": 5.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/dc763f9ba6592e48021632ca0d71ff22_1793992940715.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "35mm anamorphic wide photograph, shallow depth of field, fine film grain. A lone unbranded last-mile delivery truck with engine off and dark instrument cluster, parked at a loading bay, off-centre right in an asymmetric low-angle frame. A single amber overhead yard light from the left carves long shadows across a wet concrete apron; behind it a galvanised steel dock door, graphite and bone white with a safety-yellow bollard at the frame edge. No driver, no people, no logos, no text. Deep blue-hour darkness outside, chiaroscuro.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-06T19:22:27+00:00",
+  "overlay": {
+    "kicker": "LAST-MILE CARBON // ELD DATA LIMITS",
+    "title": "CARBON DATA STOPS AT 6 MINUTES",
+    "hook": "The federal log behind a carrier's carbon number is built for hours, not per-stop fuel",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 11.26,
+    "target": 4.5,
+    "clutter": 0.109,
+    "region_rgb": [
+      29,
+      40,
+      49
+    ],
+    "binding_rgb": [
+      34,
+      51,
+      61
+    ],
+    "title_lines": [
+      "CARBON DATA",
+      "STOPS AT 6",
+      "MINUTES"
+    ],
+    "subject": 0.056,
+    "ink_subject": 0.014,
+    "spike": 0.094,
+    "generated_at": "2026-11-06T19:22:27+00:00"
+  }
+}
