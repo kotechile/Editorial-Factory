@@ -1,6 +1,6 @@
 {
   "slug": "your-99-cent-resolution-bills-the-handoff",
-  "revision": 7,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -52,6 +52,30 @@
       "title": "Three metering gates for divergent unit definitions",
       "bytes": 354541,
       "sha256": "sha256:fe491c9a6a0c483ef90061023eed62eb"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 392943,
+      "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 392943,
+      "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 392943,
+      "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea"
     }
   ],
   "style": "long_lens_industry",
@@ -84,8 +108,8 @@
   "local_path": "context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 392943,
-  "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea",
+  "bytes": 396135,
+  "sha256": "sha256:15adf658cfb778e2d4bc6074e3698637cb019a28d4183bfed83b6b180c5ec182",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -94,9 +118,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 392943,
+    "bytes": 396135,
     "quality": 88,
-    "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea",
+    "sha256": "sha256:15adf658cfb778e2d4bc6074e3698637cb019a28d4183bfed83b6b180c5ec182",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:9159c9de3837a53eb73dbea2ea7a506824691af110b74f298664adbb7244277d",
@@ -129,30 +153,30 @@
     "kicker": "AI SUPPORT PRICING // HANDOFF BILLING",
     "title": "YOUR $0.99 RESOLUTION BILLS THE HANDOFF",
     "hook": "One request, four prices, and the definition sentence is the term to negotiate",
-    "anchor": "top-right",
+    "anchor": "bottom-right",
     "light": true,
     "scrim": 120,
-    "contrast": 6.05,
+    "contrast": 6.2,
     "target": 5.5,
-    "clutter": 0.269,
+    "clutter": 0.321,
     "region_rgb": [
-      106,
-      101,
-      93
+      92,
+      88,
+      83
     ],
     "binding_rgb": [
-      148,
-      136,
-      114
+      138,
+      134,
+      131
     ],
     "title_lines": [
       "YOUR $0.99",
       "RESOLUTION BILLS",
       "THE HANDOFF"
     ],
-    "subject": 0.168,
-    "ink_subject": 0.105,
-    "spike": 0.42,
+    "subject": 0.206,
+    "ink_subject": 0.152,
+    "spike": 0.423,
     "generated_at": "2026-11-06T07:21:44+00:00"
   }
 }

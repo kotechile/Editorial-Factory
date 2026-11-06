@@ -525,7 +525,24 @@ def plan(img, anchor: str | None = None, rects=None, box=None, pad: int = 0) -> 
     scored = {}
     for spot in sorted(spots):
         scored[spot] = _spot_cost(smap, rects, (w, h), spot, bw, bh, pad)
-    best = min(scored, key=lambda s: scored[s][0])
+
+    # The type does not sit in the middle of the frame (owner, 2026-11-06): a centred block reads as
+    # a caption over the subject, and on the turnstile header the emptiest area WAS the centre. The
+    # block is scored everywhere, then chosen from the outer region only — left or right third, top
+    # or bottom band — unless nothing outside the band exists, in which case the plain score stands.
+    def _central(spot) -> bool:
+        # Measured on the INK, not the nominal box: the box carries empty space to the right of the
+        # shorter lines, so a box-centre test called a visibly centred block "top-right" (2026-11-06).
+        xs0 = [spot[0] + r[0] for r in rects]
+        xs1 = [spot[0] + r[2] for r in rects]
+        cx = (min(xs0) + max(xs1)) / 2
+        # Horizontal only: a top-placed block that spans the middle of the frame still reads as a
+        # centred caption (the turnstile header did exactly that).
+        return 0.38 * w <= cx <= 0.62 * w
+
+    outer = {spot: c for spot, c in scored.items() if not _central(spot)}
+    candidates = outer or scored
+    best = min(candidates, key=lambda s: candidates[s][0])
     # The owner's design anchors inset in the top-left, so it keeps its place unless another spot is
     # MEANINGFULLY freer — `SWITCH_MARGIN` on the ratio, which stops a coin-flip between two empty
     # spots from drifting the design, plus `MIN_GAIN` on the absolute, which stops a clean frame
