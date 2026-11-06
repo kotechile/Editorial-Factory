@@ -76,12 +76,14 @@ None of this says S&OP is not worth running. It says the line that decides the b
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: curated by hand for this run — every target is a live page on aichieve.net in this vertical's own category hub (supply-chain-operations), and each shares at least two subject tokens with this piece (planning, forecast, planning software / planner). -->
+<!-- internal-link hint: "Sticker Price Lies" -> /the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/ [same site (aichieve.net); same category; topical overlap: costs, price] Link "Sticker Price Lies" in the section where the article touches costs, price. -->
+<!-- internal-link hint: "Your Truck Mile Costs 2.2 Driver-Minutes" -> /your-truck-mile-costs-2-2-driver-minutes/ [same site (aichieve.net); same category; topical overlap: costs, price] Link "Your Truck Mile Costs 2.2 Driver-Minutes" in the section where the article touches costs, price. -->
+<!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: costs] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches costs. -->
 ## Related reading
 
-- [Your SKUs Fail the 1.32 Cut](/skus-fail-the-1-32-cut/) — which series deserve an accuracy target at all
-- [Planning AI Buys Capability, Not Autonomy](/planning-ai-buys-capability-not-autonomy/) — what a planning tool actually replaces
-- [Your Silent 2.1-Year Contract](/your-10-5-cut-locks-2-1-years/) — the licence term against the bench that runs it
+- [Sticker Price Lies](/the-sticker-price-lies-why-mexico-beats-china-on-total-landed-cost/) — more on Supply Chain & Operations
+- [Your Truck Mile Costs 2.2 Driver-Minutes](/your-truck-mile-costs-2-2-driver-minutes/) — more on Supply Chain & Operations
+- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
 ## Sources
