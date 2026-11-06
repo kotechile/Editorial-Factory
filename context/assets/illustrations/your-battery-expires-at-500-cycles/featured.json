@@ -4,7 +4,7 @@
   "history": [
     {
       "revision": 1,
-      "alt_text": "Unbranded smartphone battery beside a mechanical cycle counter on a weathered concrete workbench",
+      "alt_text": "Unbranded smartphone battery beside a mechanical counter on a weathered concrete workbench.",
       "caption": "The battery's published cycle count, embodied by a mechanical counter with a reset lever, frames the swap as a consumable parts decision.",
       "title": "Battery Cycle Counter on Workbench",
       "bytes": 373947,
@@ -13,7 +13,7 @@
   ],
   "style": "clay_render",
   "style_label": "Matte 3D render",
-  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "style_when": "the news is structural and abstract — a stack reordered, a layer added, a flow rerouted — and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -24,7 +24,7 @@
   "rationale": "The story turns on a numerical rating (cycle count) governing a physical part's lifespan; a matte clay render can construct the battery and counting mechanism as a tangible assembly without relying on legible text, avoiding the previous rejection's illegible lettering and ambiguous power-bank look.",
   "cue": "the swap that resets the counter",
   "subject": "an unbranded smartphone battery beside a mechanical cycle counter with a reset lever",
-  "core_thesis": "A phone battery's service life is published as a full-charge-cycle count\u2014500 for older iPhones, 1000 from the 15, and 800 as the EU minimum\u2014making the battery a $47-$99 parts decision, not a handset replacement.",
+  "core_thesis": "A phone battery's service life is published as a full-charge-cycle count—500 for older iPhones, 1000 from the 15, and 800 as the EU minimum—making the battery a $47-$99 parts decision, not a handset replacement.",
   "core_conflict": "Published cycle-count ratings (500/1000/800) collide with real-world capacity fade and warranty timing, forcing owners to weigh a cheap battery swap against replacing an otherwise functional handset.",
   "composition": "asymmetric off-centre composition with the battery at the left third and the counter at the right, generous negative space, 16:9",
   "alt_text": "Your Battery Dies At 500 Cycles. Unbranded smartphone battery beside a mechanical cycle counter on a weathered concrete workbench",

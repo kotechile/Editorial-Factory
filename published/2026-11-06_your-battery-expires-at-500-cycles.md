@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-battery-expires-at-500-cycles/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Your Battery Dies At 500 Cycles. Unbranded smartphone battery beside a mechanical cycle counter on a weathered concrete workbench"
-image_caption: "Your Battery Dies At 500 Cycles: A phone battery dies on a published cycle count, not a calendar date."
+image_alt: "Unbranded smartphone battery beside a mechanical counter on a weathered concrete workbench."
+image_caption: "The battery's published cycle count, embodied by a mechanical counter with a reset lever, frames the swap as a consumable parts decision."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
