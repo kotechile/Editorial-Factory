@@ -217,7 +217,11 @@ def bullets_findings(text: str, reg: dict) -> list[str]:
                 fails.append(f"{label} bullet carries more than one sentence: "
                              f"\"{_short(line)}\"")
             lead, _ = _bullet_lead_and_body(raw)
-            figures = re.findall(r"\d[\d,\.]*\s*(?:%|percent|x\b|bn\b|m\b|k\b)?", lead)
+            # A range ("8% to 25%", "1.8-2.0 points") is one metric; two separate readings are two.
+            single = re.sub(r"\d[\d,\.]*\s*(?:%|percent|x\b|bn\b|m\b|k\b)?\s*(?:to|-|–|—)\s*"
+                            r"\d[\d,\.]*\s*(?:%|percent|x\b|bn\b|m\b|k\b)?", "NUM", lead,
+                            flags=re.I)
+            figures = re.findall(r"\d[\d,\.]*\s*(?:%|percent|x\b|bn\b|m\b|k\b)?", single)
             if len(figures) > 1:
                 fails.append(f"{label} bullet packs {len(figures)} figures into one lead-in "
                              f"(one metric per bullet): \"{_short(lead or line)}\"")
@@ -259,10 +263,18 @@ def read_twice_findings(text: str) -> list[str]:
     out: list[str] = []
     breakers = {",", ";", ":", "—", "–", "and", "but", "not", "or", "yet", "so"}
     for sentence in sentences(text):
-        words = re.findall(r"[A-Za-z][A-Za-z'-]*|[,;:—–]", sentence)
+        # "per cent" is the British spelling of a percentage, not a prepositional phrase
+        # ("at about 15 per cent of the one-off" is two phrases, not four).
+        sentence = re.sub(r"\bper\s+cent\b", "percent", sentence, flags=re.I)
+        # Numbers count as words: dropping them compresses the distance between two phrases
+        # ("at about 15 percent of" would read as three adjacent prepositions otherwise).
+        words = re.findall(r"[A-Za-z][A-Za-z'-]*|\d[\d.,]*|[,;:—–]", sentence)
         groups: list[list[int]] = []
         for i, word in enumerate(words):
             if word.lower() not in _PREPS:
+                continue
+            # "at about", "from about": the qualifier belongs to the phrase before it.
+            if word.lower() == "about" and i and words[i - 1].lower() in _PREPS:
                 continue
             if groups:
                 prev = groups[-1][-1]

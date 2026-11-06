@@ -21,7 +21,15 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-A planning module reaches the budget as one line: a price per user, per month. The sales and operations planning (S&OP) cycle it has to run inside costs $250,000 to $750,000 a year, which is the pay of 2.3 to 7 supply chain managers at the 2025 median wage [1][3]. The software sits inside that yearly bill; it does not replace it. A tool that cannot shorten the cycle is a purchase on top of a program nobody priced.
+A planning module reaches the budget as one line: a price per user, per month. The sales and operations planning (S&OP) cycle it has to run inside costs $250,000 to $750,000 a year [1]. That is the pay of 2.3 to 7 supply chain managers at the 2025 median wage [3]. The software sits inside that yearly bill; it does not replace it, and a tool that cannot shorten the cycle is a purchase on top of a program nobody priced.
+
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** Planning approvals still price the licence, not the annual cycle that runs the plan.
+- **The number:** 2.3 to 7 supply chain managers a year at the 2025 median wage.
+- **The risk:** Every review feature that justifies the module adds standing attendee hours.
 
 <!-- tension -->
 
@@ -29,17 +37,17 @@ A planning module reaches the budget as one line: a price per user, per month. T
 
 The Institute of Business Forecasting (IBF) splits an S&OP build into four parts, and only two of them happen once [1]. Acquisition covers the system work, data pulls, dashboards and baseline, at $50,000 to $300,000. The build itself — people's time, a full-time coordinator or project manager, outside advice and training — runs $250,000 to $400,000. Together these come to $300,000 to $700,000 before the first meeting.
 
-Then there is the part that never stops. The yearly operating line pays for the monthly cycle and its reviews, an S&OP champion or lead, and a share of systems spend, and IBF puts it at $250,000 to $750,000 [1]. The same page allows improvement work at about 15 per cent of the one-off [1]. That last line is the one most business cases leave out.
+Then there is the part that never stops. The yearly operating line pays for the monthly cycle and its reviews, an S&OP champion or lead, and a share of systems spend, and IBF puts it at $250,000 to $750,000 [1]. The same page allows improvement work at about 15 per cent of the one-off. That last line is the one most business cases leave out.
 
-Priced in people, the Labor Department's 2025 wage data puts the median supply chain manager at $51.55 an hour, or $107,230 a year [3]. That puts the low end of the annual operating line at 2.33 managers and the high end at 6.99 [1][3]. The comparison is wages only, with no benefits load, so the real headcount equivalent sits lower rather than higher.
+Priced in people, the Labor Department's 2025 wage data puts the median supply chain manager at $51.55 an hour, or $107,230 a year [3]. That puts the low end of the annual operating line at 2.33 managers and the high end at 6.99 [1]. The comparison is wages only, with no benefits load, so the real headcount equivalent sits lower rather than higher.
 
 The timing makes the math harder. IBF allows four to six months of design and pilot work before the first review, and only 5 per cent to 10 per cent of the benefit lands at go-live [1]. The yearly bill starts in month one; the payback waits until somewhere in year two — the part I keep circling.
 
 ## By the numbers
 
-- **15.4 months — Break-even from kickoff:** the point when the program has repaid its one-off build [1].
-- **8% to 25% — Licence share of the bill:** 25 planning seats at $210.00 a month is $63,000 a year, against a cycle that already counts its systems spend [4][1].
-- **2.4% — Mature-process gain:** IBF's average for a process at the third of four maturity levels, split 1.8% operational and 0.6% revenue, with a 9% to 14% stock cut beside it [1].
+- **15.4 months:** The break-even point from kickoff, when the program repays its one-off build [1].
+- **8% to 25% of the bill:** The licence's share, 25 seats at $210 a month against a cycle already counting systems spend [4].
+- **2.4% gain:** IBF's average for a process at its third maturity level, split 1.8% operational and 0.6% revenue [1].
 
 <!-- tactical-insight -->
 
@@ -57,7 +65,7 @@ The features that close a planning deal are review steps by another name. A scen
 
 ## The estimates wobble
 
-These are a trade body's estimates from 2021, with no sample size and no method note attached. One line of the breakdown does not even reconcile with its own percentage rule. I read them as a shape rather than a market price: the yearly line runs from about a third of the one-off to two and a half times it, and it repeats.
+These are a trade body's estimates from 2021, with no sample size and no method note attached. One line of the breakdown does not even reconcile with its own percentage rule. I would not price a budget from them. The yearly line runs from about a third of the one-off to two and a half times it, and it repeats.
 
 The benefit side is thinner than the cost side. The page that says a 15 per cent gain in accuracy brings a 3 per cent pre-tax gain never says what the 3 per cent is measured against [2]. The one checkable figure is $1.52 million per point of under-forecast — planning below what customers then order — at a $1 billion business [2].
 
@@ -75,14 +83,6 @@ None of this says S&OP is not worth running. It says the line that decides the b
 - [Planning AI Buys Capability, Not Autonomy](/planning-ai-buys-capability-not-autonomy/) — what a planning tool actually replaces
 - [Your Silent 2.1-Year Contract](/your-10-5-cut-locks-2-1-years/) — the licence term against the bench that runs it
 <!-- internal-links:end -->
-
-<!-- tldr -->
-
-## At a glance
-
-- **The shift:** Planning approvals still price the licence, not the annual cycle that runs the plan.
-- **The number:** 2.3 to 7 supply chain managers a year at the 2025 median wage.
-- **The risk:** Every review feature that justifies the module adds standing attendee hours.
 
 ## Sources
 [1] Jain, "The Real Cost & ROI Of Implementing S&OP", Institute of Business Forecasting & Planning (Demand Planning blog), 9 July 2021 — https://demand-planning.com/2021/07/09/the-real-cost-roi-of-implementing-sop
