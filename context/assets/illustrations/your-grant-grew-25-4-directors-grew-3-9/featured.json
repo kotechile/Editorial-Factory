@@ -1,0 +1,113 @@
+{
+  "slug": "your-grant-grew-25-4-directors-grew-3-9",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Closed stock certificate folio with embossed red wax seal on dark walnut desk, blank vellum paper visible at edge.",
+      "caption": "A closed stock certificate folio with a red wax seal sits blank on a walnut desk, the unpublished equity grant line left unwritten.",
+      "title": "Blank Stock Certificate Folio with Wax Seal",
+      "bytes": 205006,
+      "sha256": "sha256:8a83a52ae772159d7ae88f25c79e1b45"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A blank ivory vellum stock certificate folio with an embossed red wax seal and a brass hinge clasp rests closed on a dark walnut desk, positioned off-centre on the thirds. 100mm macro lens at a razor-sharp focal plane, soft directional window light from the left rakes across the leather spine, leaving deep contact shadow. Palette bone white, charcoal graphite, brick red. Extreme close-up, shallow depth of field, fine film grain. No text, no lettering, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible characters, embossed printed lettering",
+  "rationale": "The story turns on the physical stock certificate and award paperwork itself\u2014the artifact that carries the undisclosed equity grant term. A macro photograph isolates the blank, sealed folio and makes the absence of the published line tangible without relying on legible text, which the prior frame failed.",
+  "cue": "the one the paperwork never publishes",
+  "subject": "a blank ivory vellum stock certificate folio with an embossed red wax seal and brass clasp",
+  "core_thesis": "Equity grants are growing fastest one level below senior and have stopped growing at the top, while exit offers are still priced in weeks of base pay \u2014 so the largest line in a senior package is the one the paperwork never publishes.",
+  "core_conflict": "Fast-growing equity grants below director level collide with flat-to-shrinking director-level grants and cash severance caps, leaving the largest compensation component unprinted in the offer paperwork.",
+  "composition": "extreme close-up, hero object off-centre on the thirds, shallow depth of field",
+  "alt_text": "A sealed stock certificate folio with a red wax seal and a brass clasp rests on a dark walnut desk.",
+  "caption": "Your Grant Grew 25.4%, It Stops At Director: Grant growth is fastest one level below director, but it stops at the director line.",
+  "title": "Your Grant Grew 25.4%, It Stops At Director",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-grant-grew-25-4-directors-grew-3-9/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 267444,
+  "sha256": "sha256:4404de5b6e65fe01a285f5e54759fc7bbca64f275295d5dea0aeedb24c4e1272",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 267444,
+    "quality": 88,
+    "sha256": "sha256:4404de5b6e65fe01a285f5e54759fc7bbca64f275295d5dea0aeedb24c4e1272",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b4d95312ecd8f463decf9ec728f293ed9b57d65cbda1240b43fc21b968966d60",
+  "render_phash": "fcbcf0cc87f71df20e7d8b3e84d7c2cfc2cfe87b65eef73cf8e0fb82fc0bfc07",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A closed ivory-covered folio with a dark textured spine, a red wax seal embossed with an emblem, and a brass clasp rests on a wooden surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "A sealed blank stock-certificate folio signals equity paperwork, matching the article's subject of equity grants and unpublished offer terms, though it does not depict the pay-level comparison itself."
+  },
+  "source_hash": "sha256:1e60ed0b74614ffc5fc36bcefe4f2d25",
+  "source_chars": 5072,
+  "task_id": "6b912d4201ecb83fe0ec780f462c374f",
+  "credits": 5.0,
+  "cost_ms": 60,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/6b912d4201ecb83fe0ec780f462c374f_1793964214448.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A blank ivory vellum stock certificate folio with an embossed red wax seal and a brass hinge clasp rests closed on a dark walnut desk, positioned off-centre on the thirds. 100mm macro lens at a razor-sharp focal plane, soft directional window light from the left rakes across the leather spine, leaving deep contact shadow. Palette bone white, charcoal graphite, brick red. Extreme close-up, shallow depth of field, fine film grain. No text, no lettering, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-06T11:23:43+00:00",
+  "overlay": {
+    "kicker": "CAREER VELOCITY // EQUITY GRANTS",
+    "title": "YOUR GRANT GREW 25.4%, IT STOPS AT DIRECTOR",
+    "hook": "Grant growth is fastest one level below director, but it stops at the director line",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.9,
+    "target": 5.5,
+    "clutter": 0.392,
+    "region_rgb": [
+      79,
+      77,
+      79
+    ],
+    "binding_rgb": [
+      119,
+      118,
+      123
+    ],
+    "title_lines": [
+      "YOUR GRANT GREW",
+      "25.4%, IT STOPS AT",
+      "DIRECTOR"
+    ],
+    "subject": 0.158,
+    "ink_subject": 0.064,
+    "spike": 0.243,
+    "generated_at": "2026-11-06T11:23:43+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T11:21:10Z",
+  "updated_at": "2026-11-06T11:24:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5751,6 +5751,24 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-06",
+      "public": false
+    },
+    {
+      "slug": "2026-11-06_your-grant-grew-25-4-directors-grew-3-9",
+      "title": "Your Grant Grew 25.4%: It Stops at Director",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Two pay mixes, one offer email",
+        "By the numbers",
+        "What the offer letter leaves out",
+        "Where the comparison slips",
+        "Related reading"
+      ],
+      "target_persona": "equity_career_strategist",
       "date": "2026-11-06",
       "public": false
     }
