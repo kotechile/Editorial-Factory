@@ -1,6 +1,6 @@
 {
   "slug": "moss-landing-burns-home-becomes-the-grid",
-  "revision": 19,
+  "revision": 20,
   "history": [
     {
       "revision": 1,
@@ -145,6 +145,14 @@
       "title": "Homeowners Become The Grid",
       "bytes": 148628,
       "sha256": "sha256:2fc5a9de4394b1d28f861b7e3696d3531307d044a85b5cb4642e64a50efc53b2"
+    },
+    {
+      "revision": 19,
+      "alt_text": "Homeowners Become The Grid. Moss Landing Burns Again. A generic, unbranded wall-mounted residential battery unit on a",
+      "caption": "Homeowners Become The Grid: Battery fires push California to rely on home storage.",
+      "title": "Homeowners Become The Grid",
+      "bytes": 148628,
+      "sha256": "sha256:2fc5a9de4394b1d28f861b7e3696d3531307d044a85b5cb4642e64a50efc53b2"
     }
   ],
   "style": "studio_object",
@@ -172,8 +180,8 @@
   "local_path": "context/assets/illustrations/moss-landing-burns-home-becomes-the-grid/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 148628,
-  "sha256": "sha256:2fc5a9de4394b1d28f861b7e3696d3531307d044a85b5cb4642e64a50efc53b2",
+  "bytes": 156474,
+  "sha256": "sha256:25f91300e4ed56397b817380f7941cf367b2698d70119e0c1217c72683f73041",
   "source_hash": "sha256:d26dac9bb46ea837a49f67a991f2189f",
   "source_chars": 4166,
   "task_id": "f2826fb1829fcb3059ffbeea91bb5c67",
@@ -193,29 +201,30 @@
     "kicker": "GRID STORAGE // HOME BATTERIES",
     "title": "HOMEOWNERS BECOME THE GRID",
     "hook": "Battery fires push California to rely on home storage",
-    "anchor": "bottom-left",
+    "anchor": "top-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 4.51,
+    "scrim": 120,
+    "contrast": 4.83,
     "target": 4.5,
-    "clutter": 0.201,
+    "clutter": 0.166,
     "region_rgb": [
-      166,
-      172,
-      178
+      179,
+      184,
+      191
     ],
     "binding_rgb": [
-      144,
-      153,
-      160
+      151,
+      158,
+      166
     ],
     "title_lines": [
       "HOMEOWNERS",
-      "BECOME THE GRID"
+      "BECOME THE",
+      "GRID"
     ],
-    "subject": 0.254,
-    "ink_subject": 0.177,
-    "spike": 0.559,
+    "subject": 0.145,
+    "ink_subject": 0.063,
+    "spike": 0.285,
     "generated_at": "2026-10-02T10:42:15+00:00"
   },
   "delivery": {
@@ -226,9 +235,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 148628,
+    "bytes": 156474,
     "quality": 88,
-    "sha256": "sha256:2fc5a9de4394b1d28f861b7e3696d3531307d044a85b5cb4642e64a50efc53b2",
+    "sha256": "sha256:25f91300e4ed56397b817380f7941cf367b2698d70119e0c1217c72683f73041",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

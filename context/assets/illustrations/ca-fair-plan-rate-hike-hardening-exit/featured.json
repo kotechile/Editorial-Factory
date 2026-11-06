@@ -1,6 +1,6 @@
 {
   "slug": "ca-fair-plan-rate-hike-hardening-exit",
-  "revision": 27,
+  "revision": 28,
   "history": [
     {
       "revision": 1,
@@ -211,6 +211,14 @@
       "title": "Escaping The FAIR Plan",
       "bytes": 330130,
       "sha256": "sha256:ff6abd5cb1040138a9dbc4a6d1a8328ca7e59368031c5052e875fada28dd8c17"
+    },
+    {
+      "revision": 27,
+      "alt_text": "Escaping The FAIR Plan. Overhead view of heavy paper documents beneath a housing blueprint and a square of metal vent mesh on",
+      "caption": "Escaping The FAIR Plan: Hardening your home to escape the 29.1% premium increase.",
+      "title": "Escaping The FAIR Plan",
+      "bytes": 330130,
+      "sha256": "sha256:ff6abd5cb1040138a9dbc4a6d1a8328ca7e59368031c5052e875fada28dd8c17"
     }
   ],
   "style": "document_flatlay",
@@ -238,8 +246,8 @@
   "local_path": "context/assets/illustrations/ca-fair-plan-rate-hike-hardening-exit/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 330130,
-  "sha256": "sha256:ff6abd5cb1040138a9dbc4a6d1a8328ca7e59368031c5052e875fada28dd8c17",
+  "bytes": 348086,
+  "sha256": "sha256:fea485996922845bce19a2f411935b82ab35b42b6794c10ed503b04997192f6e",
   "source_hash": "sha256:7caaad8ca01b944dd5c570a4331f4625",
   "source_chars": 4501,
   "task_id": "e1965ed3d44f83d9e194cade4cb3c4a1",
@@ -259,29 +267,29 @@
     "kicker": "CALIFORNIA PROPERTY // FAIR PLAN",
     "title": "ESCAPING THE FAIR PLAN",
     "hook": "Hardening your home to escape the 29.1% premium increase",
-    "anchor": "bottom-right",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 75,
-    "contrast": 5.88,
+    "scrim": 135,
+    "contrast": 6.07,
     "target": 5.5,
-    "clutter": 0.303,
+    "clutter": 0.489,
     "region_rgb": [
-      74,
-      74,
-      75
+      87,
+      88,
+      90
     ],
     "binding_rgb": [
-      127,
-      129,
-      128
+      188,
+      189,
+      184
     ],
     "title_lines": [
       "ESCAPING THE",
       "FAIR PLAN"
     ],
-    "subject": 0.222,
-    "ink_subject": 0.164,
-    "spike": 0.456,
+    "subject": 0.227,
+    "ink_subject": 0.101,
+    "spike": 0.62,
     "generated_at": "2026-10-08T22:22:17+00:00"
   },
   "delivery": {
@@ -292,9 +300,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 330130,
+    "bytes": 348086,
     "quality": 88,
-    "sha256": "sha256:ff6abd5cb1040138a9dbc4a6d1a8328ca7e59368031c5052e875fada28dd8c17",
+    "sha256": "sha256:fea485996922845bce19a2f411935b82ab35b42b6794c10ed503b04997192f6e",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

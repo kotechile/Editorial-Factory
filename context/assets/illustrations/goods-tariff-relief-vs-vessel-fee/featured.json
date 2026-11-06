@@ -1,6 +1,6 @@
 {
   "slug": "goods-tariff-relief-vs-vessel-fee",
-  "revision": 23,
+  "revision": 24,
   "history": [
     {
       "revision": 1,
@@ -177,6 +177,14 @@
       "title": "New Ship Fees Erase Tariff Cuts",
       "bytes": 385856,
       "sha256": "sha256:63c84e7719af2d5389f5ac9cecf63586d66605f1dc79efc47691530bacda10ce"
+    },
+    {
+      "revision": 23,
+      "alt_text": "New Ship Fees Erase Tariff Cuts. Washington Cuts The Tariff On The. A telephoto view of stacked shipping containers and crane",
+      "caption": "New Ship Fees Erase Tariff Cuts: How a flat vessel fee wipes out goods tariff relief.",
+      "title": "New Ship Fees Erase Tariff Cuts",
+      "bytes": 385856,
+      "sha256": "sha256:63c84e7719af2d5389f5ac9cecf63586d66605f1dc79efc47691530bacda10ce"
     }
   ],
   "style": "long_lens_industry",
@@ -204,8 +212,8 @@
   "local_path": "context/assets/illustrations/goods-tariff-relief-vs-vessel-fee/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 385856,
-  "sha256": "sha256:63c84e7719af2d5389f5ac9cecf63586d66605f1dc79efc47691530bacda10ce",
+  "bytes": 389556,
+  "sha256": "sha256:50824d18164ec7cbae5446f71732f72ec34922d8cf502c8d71f1e5eebfcaedbc",
   "source_hash": "sha256:64afea2b37b7b60c41f96997291330c6",
   "source_chars": 4026,
   "task_id": "bc009468ce8125898f03f84394c780ee",
@@ -225,29 +233,30 @@
     "kicker": "US-CHINA TRADE // SHIPPING FEES",
     "title": "NEW SHIP FEES ERASE TARIFF CUTS",
     "hook": "How a flat vessel fee wipes out goods tariff relief",
-    "anchor": "bottom-left",
-    "light": true,
-    "scrim": 75,
-    "contrast": 4.68,
-    "target": 4.5,
-    "clutter": 0.238,
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.64,
+    "target": 5.5,
+    "clutter": 0.264,
     "region_rgb": [
-      101,
-      118,
-      132
+      162,
+      176,
+      185
     ],
     "binding_rgb": [
-      144,
-      150,
-      162
+      121,
+      137,
+      150
     ],
     "title_lines": [
       "NEW SHIP FEES",
-      "ERASE TARIFF CUTS"
+      "ERASE TARIFF",
+      "CUTS"
     ],
-    "subject": 0.082,
-    "ink_subject": 0.044,
-    "spike": 0.236,
+    "subject": 0.159,
+    "ink_subject": 0.061,
+    "spike": 0.158,
     "generated_at": "2026-10-01T14:13:25+00:00"
   },
   "delivery": {
@@ -258,9 +267,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 385856,
+    "bytes": 389556,
     "quality": 84,
-    "sha256": "sha256:63c84e7719af2d5389f5ac9cecf63586d66605f1dc79efc47691530bacda10ce",
+    "sha256": "sha256:50824d18164ec7cbae5446f71732f72ec34922d8cf502c8d71f1e5eebfcaedbc",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

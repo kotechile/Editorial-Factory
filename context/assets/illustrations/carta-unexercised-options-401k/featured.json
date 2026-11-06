@@ -1,6 +1,6 @@
 {
   "slug": "carta-unexercised-options-401k",
-  "revision": 26,
+  "revision": 27,
   "history": [
     {
       "revision": 1,
@@ -203,6 +203,14 @@
       "title": "Why Options Go Unexercised",
       "bytes": 277317,
       "sha256": "sha256:8ff3b18b63de5f06d6c526cac24e923c81eaaacd2f311b9c2f990b37d9c33547"
+    },
+    {
+      "revision": 26,
+      "alt_text": "Why Options Go Unexercised. Vesting documents and a stock-certificate folio under soft directional light on a dark wooden des",
+      "caption": "Why Options Go Unexercised: How a missing 401(k) leaves paper wealth stranded.",
+      "title": "Why Options Go Unexercised",
+      "bytes": 277317,
+      "sha256": "sha256:8ff3b18b63de5f06d6c526cac24e923c81eaaacd2f311b9c2f990b37d9c33547"
     }
   ],
   "style": "editorial_macro",
@@ -230,8 +238,8 @@
   "local_path": "context/assets/illustrations/carta-unexercised-options-401k/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 277317,
-  "sha256": "sha256:8ff3b18b63de5f06d6c526cac24e923c81eaaacd2f311b9c2f990b37d9c33547",
+  "bytes": 278817,
+  "sha256": "sha256:0afff71ac5288f7770ac3c7475b5e2b29a310467ce1989e08451f0060e283dc7",
   "source_hash": "sha256:2564557c08d6487255b621f42cc83608",
   "source_chars": 4416,
   "task_id": "4e71492ebe2fe9dc6af3da6d5cd35d5f",
@@ -253,25 +261,25 @@
     "hook": "How a missing 401(k) leaves paper wealth stranded",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 13.21,
+    "scrim": 120,
+    "contrast": 13.75,
     "target": 4.5,
-    "clutter": 0.106,
+    "clutter": 0.097,
     "region_rgb": [
-      30,
-      21,
-      16
+      23,
+      17,
+      13
     ],
     "binding_rgb": [
-      51,
-      33,
-      23
+      44,
+      31,
+      25
     ],
     "title_lines": [
       "WHY OPTIONS GO",
       "UNEXERCISED"
     ],
-    "subject": 0.001,
+    "subject": 0.053,
     "ink_subject": 0.001,
     "spike": 0.0,
     "generated_at": "2026-10-08T22:23:25+00:00"
@@ -284,9 +292,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 277317,
+    "bytes": 278817,
     "quality": 88,
-    "sha256": "sha256:8ff3b18b63de5f06d6c526cac24e923c81eaaacd2f311b9c2f990b37d9c33547",
+    "sha256": "sha256:0afff71ac5288f7770ac3c7475b5e2b29a310467ce1989e08451f0060e283dc7",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

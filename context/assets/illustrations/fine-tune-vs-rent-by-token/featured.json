@@ -1,6 +1,6 @@
 {
   "slug": "fine-tune-vs-rent-by-token",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -93,6 +93,14 @@
       "title": "The Local AI Break-Even",
       "bytes": 393986,
       "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e"
+    },
+    {
+      "revision": 12,
+      "alt_text": "The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even. The Local AI Break-Even.",
+      "caption": "The Local AI Break-Even: Rented token prices decide if local hardware pays off.",
+      "title": "The Local AI Break-Even",
+      "bytes": 393986,
+      "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e"
     }
   ],
   "style": "editorial_macro",
@@ -121,8 +129,8 @@
   "local_path": "context/assets/illustrations/fine-tune-vs-rent-by-token/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 393986,
-  "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e",
+  "bytes": 392828,
+  "sha256": "sha256:c68facc03c72dbf04314161cdcbe73ff73468580ae3fac49ca076326a8458f5d",
   "source_hash": "sha256:631e76fd0eb04a89c3150a7d11aad7d2",
   "source_chars": 4600,
   "task_id": "317eeb60939ed7d08ae4cff111170f77",
@@ -144,7 +152,7 @@
     "hook": "Rented token prices decide if local hardware pays off",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 30,
+    "scrim": 120,
     "contrast": 5.96,
     "target": 5.5,
     "clutter": 0.29,
@@ -162,9 +170,9 @@
       "THE LOCAL AI",
       "BREAK-EVEN"
     ],
-    "subject": 0.099,
-    "ink_subject": 0.047,
-    "spike": 0.304,
+    "subject": 0.121,
+    "ink_subject": 0.029,
+    "spike": 0.216,
     "generated_at": "2026-10-09T00:43:04+00:00"
   },
   "delivery": {
@@ -175,9 +183,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 393986,
+    "bytes": 392828,
     "quality": 72,
-    "sha256": "sha256:2828408f797f71bfdb7b4a6b951555e7933fefbd2e419533a20489ac63e7fe1e",
+    "sha256": "sha256:c68facc03c72dbf04314161cdcbe73ff73468580ae3fac49ca076326a8458f5d",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

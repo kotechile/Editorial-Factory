@@ -1,6 +1,6 @@
 {
   "slug": "heat-pumps-cheaper-to-run-pricier-to-buy",
-  "revision": 14,
+  "revision": 15,
   "history": [
     {
       "revision": 1,
@@ -105,6 +105,14 @@
       "title": "Heat Pump Break-Even Math",
       "bytes": 381560,
       "sha256": "sha256:9b1b3c3a499374f4790e69f387262bf36f3bc78067933b6abaf0bdafac0fb635"
+    },
+    {
+      "revision": 14,
+      "alt_text": "Heat Pump Break-Even Math. Isometric cutaway of a heat pump unit showing internal components and two opposing tracks.",
+      "caption": "Heat Pump Break-Even Math: Rising gear costs offset growing utility bill savings.",
+      "title": "Heat Pump Break-Even Math",
+      "bytes": 381560,
+      "sha256": "sha256:9b1b3c3a499374f4790e69f387262bf36f3bc78067933b6abaf0bdafac0fb635"
     }
   ],
   "style": "technical_isometric",
@@ -135,8 +143,8 @@
   "local_path": "context/assets/illustrations/heat-pumps-cheaper-to-run-pricier-to-buy/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 381560,
-  "sha256": "sha256:9b1b3c3a499374f4790e69f387262bf36f3bc78067933b6abaf0bdafac0fb635",
+  "bytes": 382513,
+  "sha256": "sha256:96de4539423686a20624e5c57828f2bc67e81184d2986ad46ce769c829403132",
   "source_hash": "sha256:b0a77e15529ac83612543873d446e41f",
   "source_chars": 4842,
   "task_id": "05bef0dad41cc79387902b4cd3f327b0",
@@ -160,27 +168,28 @@
     "hook": "Rising gear costs offset growing utility bill savings",
     "anchor": "top-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 10.58,
-    "target": 4.5,
-    "clutter": 0.175,
+    "scrim": 120,
+    "contrast": 10.41,
+    "target": 5.5,
+    "clutter": 0.255,
     "region_rgb": [
-      246,
-      245,
-      243
+      236,
+      235,
+      231
     ],
     "binding_rgb": [
       235,
-      231,
-      219
+      229,
+      215
     ],
     "title_lines": [
       "HEAT PUMP",
-      "BREAK-EVEN MATH"
+      "BREAK-EVEN",
+      "MATH"
     ],
-    "subject": 0.181,
-    "ink_subject": 0.083,
-    "spike": 0.573,
+    "subject": 0.133,
+    "ink_subject": 0.05,
+    "spike": 0.402,
     "generated_at": "2026-10-03T16:23:26+00:00"
   },
   "delivery": {
@@ -191,9 +200,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 381560,
+    "bytes": 382513,
     "quality": 88,
-    "sha256": "sha256:9b1b3c3a499374f4790e69f387262bf36f3bc78067933b6abaf0bdafac0fb635",
+    "sha256": "sha256:96de4539423686a20624e5c57828f2bc67e81184d2986ad46ce769c829403132",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "azure-control-plane-single-point-of-failure",
-  "revision": 15,
+  "revision": 16,
   "history": [
     {
       "revision": 1,
@@ -119,6 +119,14 @@
       "title": "Azure Control Plane Failure",
       "bytes": 384060,
       "sha256": "sha256:650c4eff4a58a12d931c29660e43be38886463abe96bac65adda1003a6fd2a31"
+    },
+    {
+      "revision": 15,
+      "alt_text": "Azure Control Plane Failure. Multiple brightly lit architectural corridors converging into a single dark, shadow-cast stone m",
+      "caption": "Azure Control Plane Failure: Multi-region setups don't fix shared control plane flaws.",
+      "title": "Azure Control Plane Failure",
+      "bytes": 384060,
+      "sha256": "sha256:650c4eff4a58a12d931c29660e43be38886463abe96bac65adda1003a6fd2a31"
     }
   ],
   "style": "cinematic_still",
@@ -149,8 +157,8 @@
   "local_path": "context/assets/illustrations/azure-control-plane-single-point-of-failure/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 384060,
-  "sha256": "sha256:650c4eff4a58a12d931c29660e43be38886463abe96bac65adda1003a6fd2a31",
+  "bytes": 380002,
+  "sha256": "sha256:102e55b602c7dff3ccaec1f6aed952333a71cfb29f74b2201b66ea18e770e470",
   "source_hash": "sha256:e3c8b2ea037bdb85bc873a17d681f24c",
   "source_chars": 4298,
   "task_id": "60d4aec5adce421d8b0fafb450d66806",
@@ -172,27 +180,27 @@
     "hook": "Multi-region setups don't fix shared control plane flaws",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 10.54,
-    "target": 4.5,
-    "clutter": 0.149,
+    "scrim": 120,
+    "contrast": 5.63,
+    "target": 5.5,
+    "clutter": 0.29,
     "region_rgb": [
-      36,
-      38,
-      37
+      51,
+      52,
+      49
     ],
     "binding_rgb": [
-      50,
-      54,
-      55
+      101,
+      93,
+      74
     ],
     "title_lines": [
       "AZURE CONTROL",
       "PLANE FAILURE"
     ],
-    "subject": 0.041,
-    "ink_subject": 0.019,
-    "spike": 0.127,
+    "subject": 0.055,
+    "ink_subject": 0.012,
+    "spike": 0.115,
     "generated_at": "2026-10-09T01:32:31+00:00"
   },
   "delivery": {
@@ -203,9 +211,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 384060,
+    "bytes": 380002,
     "quality": 84,
-    "sha256": "sha256:650c4eff4a58a12d931c29660e43be38886463abe96bac65adda1003a6fd2a31",
+    "sha256": "sha256:102e55b602c7dff3ccaec1f6aed952333a71cfb29f74b2201b66ea18e770e470",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

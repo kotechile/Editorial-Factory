@@ -1,6 +1,6 @@
 {
   "slug": "california-legalizes-plug-in-solar",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -121,6 +121,14 @@
       "title": "Ca Legalizes Plug-In Solar",
       "bytes": 286669,
       "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113"
+    },
+    {
+      "revision": 16,
+      "alt_text": "Ca Legalizes Plug-In Solar. A small modular solar panel connected to a standard wall plug on a plain surface.",
+      "caption": "Ca Legalizes Plug-In Solar: Renters can use balcony solar without utility permits.",
+      "title": "Ca Legalizes Plug-In Solar",
+      "bytes": 286669,
+      "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113"
     }
   ],
   "style": "component_assembly",
@@ -151,8 +159,8 @@
   "local_path": "context/assets/illustrations/california-legalizes-plug-in-solar/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 286669,
-  "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113",
+  "bytes": 287913,
+  "sha256": "sha256:edb657875363b35c4250f868ea9796914b00439d2e183b1b06191790531d7d80",
   "source_hash": "sha256:3843cd50fe13fd709f0a8768b8486c8a",
   "source_chars": 3798,
   "task_id": "877eb61be57ce0ec1c9d7a2bc9fe6bf4",
@@ -176,27 +184,27 @@
     "hook": "Renters can use balcony solar without utility permits",
     "anchor": "top-right",
     "light": false,
-    "scrim": 30,
-    "contrast": 4.59,
+    "scrim": 120,
+    "contrast": 4.53,
     "target": 4.5,
-    "clutter": 0.049,
+    "clutter": 0.068,
     "region_rgb": [
-      149,
-      146,
-      139
+      148,
+      144,
+      137
     ],
     "binding_rgb": [
-      142,
-      139,
-      132
+      141,
+      138,
+      131
     ],
     "title_lines": [
       "CA LEGALIZES",
       "PLUG-IN SOLAR"
     ],
-    "subject": 0.024,
-    "ink_subject": 0.012,
-    "spike": 0.071,
+    "subject": 0.013,
+    "ink_subject": 0.005,
+    "spike": 0.024,
     "generated_at": "2026-10-03T16:24:59+00:00"
   },
   "delivery": {
@@ -207,9 +215,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 286669,
+    "bytes": 287913,
     "quality": 88,
-    "sha256": "sha256:6736e129f55b8151b177709b837a51102d6beb9146c4802b7034dd3b6f868113",
+    "sha256": "sha256:edb657875363b35c4250f868ea9796914b00439d2e183b1b06191790531d7d80",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

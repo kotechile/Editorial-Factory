@@ -12,6 +12,12 @@ meta_title: "Your ESPP Clock: 18 Months, Not 12"
 meta_title_source: "derived_from_title"
 meta_description: "Your company's employee stock purchase plan (ESPP) sells you stock at 85 cents on the dollar, and the summary says hold a year for the tax break."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-espp-clock-is-18-months-not-12/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Your ESPP Clock. A brass ratchet wheel, hinged latch and short rack rail on a steel plate on a home-office desk."
+image_caption: "Your ESPP Clock: Your company's employee stock purchase plan (ESPP) sells you stock at 85 cents."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

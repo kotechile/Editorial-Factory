@@ -1,6 +1,6 @@
 {
   "slug": "total-landed-cost-china-vs-mexico",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -81,6 +81,14 @@
       "title": "Why Mexico Beats China",
       "bytes": 324341,
       "sha256": "sha256:553adde331252a96680180fa08cc156e9cc8bf076a33400fc548ba771abe349a"
+    },
+    {
+      "revision": 11,
+      "alt_text": "Why Mexico Beats China. Isometric technical cutaway showing a shipping container stacked above manufacturing and customs",
+      "caption": "Why Mexico Beats China: Hidden tariffs and freight flip the manufacturing math.",
+      "title": "Why Mexico Beats China",
+      "bytes": 324341,
+      "sha256": "sha256:553adde331252a96680180fa08cc156e9cc8bf076a33400fc548ba771abe349a"
     }
   ],
   "style": "technical_isometric",
@@ -110,8 +118,8 @@
   "local_path": "context/assets/illustrations/total-landed-cost-china-vs-mexico/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 324341,
-  "sha256": "sha256:553adde331252a96680180fa08cc156e9cc8bf076a33400fc548ba771abe349a",
+  "bytes": 327339,
+  "sha256": "sha256:da8590a0b2405248894a09c259906ca889c342e2ca99506a959c285c3fcb4d05",
   "source_hash": "sha256:75d3e3bef6ce0908c69e3fe0fa4bcb5a",
   "source_chars": 3988,
   "task_id": "63b6b492cd81e7e54b3359f57009d266",
@@ -133,29 +141,29 @@
     "kicker": "SUPPLY CHAIN // TOTAL LANDED COST",
     "title": "WHY MEXICO BEATS CHINA",
     "hook": "Hidden tariffs and freight flip the manufacturing math",
-    "anchor": "bottom-right",
+    "anchor": "top-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 12.85,
+    "scrim": 135,
+    "contrast": 6.1,
     "target": 5.5,
-    "clutter": 0.383,
+    "clutter": 0.575,
     "region_rgb": [
-      234,
-      235,
-      235
+      213,
+      213,
+      213
     ],
     "binding_rgb": [
-      253,
-      253,
-      253
+      87,
+      90,
+      95
     ],
     "title_lines": [
       "WHY MEXICO",
       "BEATS CHINA"
     ],
-    "subject": 0.28,
-    "ink_subject": 0.159,
-    "spike": 0.763,
+    "subject": 0.187,
+    "ink_subject": 0.078,
+    "spike": 0.548,
     "generated_at": "2026-10-04T20:41:07+00:00"
   },
   "delivery": {
@@ -166,9 +174,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 324341,
+    "bytes": 327339,
     "quality": 88,
-    "sha256": "sha256:553adde331252a96680180fa08cc156e9cc8bf076a33400fc548ba771abe349a",
+    "sha256": "sha256:da8590a0b2405248894a09c259906ca889c342e2ca99506a959c285c3fcb4d05",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

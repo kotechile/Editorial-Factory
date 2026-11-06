@@ -1,6 +1,6 @@
 {
   "slug": "reshoring-moved-the-tariff-upstream",
-  "revision": 25,
+  "revision": 26,
   "history": [
     {
       "revision": 1,
@@ -195,6 +195,14 @@
       "title": "Tariffs Move Upstream",
       "bytes": 298767,
       "sha256": "sha256:d443a798f957886d46e7e6a9b885388de19a861038002487559e91a32ae6561e"
+    },
+    {
+      "revision": 25,
+      "alt_text": "Tariffs Move Upstream. Towering pallets of industrial plastic resin sacks and packaging molds in a cavernous warehouse at twi",
+      "caption": "Tariffs Move Upstream: New upstream tariffs threaten reshored supply chains.",
+      "title": "Tariffs Move Upstream",
+      "bytes": 298767,
+      "sha256": "sha256:d443a798f957886d46e7e6a9b885388de19a861038002487559e91a32ae6561e"
     }
   ],
   "style": "cinematic_still",
@@ -222,8 +230,8 @@
   "local_path": "context/assets/illustrations/reshoring-moved-the-tariff-upstream/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 298767,
-  "sha256": "sha256:d443a798f957886d46e7e6a9b885388de19a861038002487559e91a32ae6561e",
+  "bytes": 299005,
+  "sha256": "sha256:f6ce9e38efde58915d2b0bd023196a7afcda446e5df912d7d2accabd49683c30",
   "source_hash": "sha256:d88a5d5ce11be511d34a3d634c688a81",
   "source_chars": 4853,
   "task_id": "ac442f85f689b83cc940ff378ee254d8",
@@ -245,27 +253,27 @@
     "hook": "New upstream tariffs threaten reshored supply chains",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 12.31,
+    "scrim": 120,
+    "contrast": 11.61,
     "target": 4.5,
-    "clutter": 0.086,
+    "clutter": 0.094,
     "region_rgb": [
-      28,
-      32,
-      32
+      31,
+      36,
+      35
     ],
     "binding_rgb": [
-      42,
-      43,
-      37
+      35,
+      49,
+      52
     ],
     "title_lines": [
       "TARIFFS MOVE",
       "UPSTREAM"
     ],
-    "subject": 0.02,
-    "ink_subject": 0.009,
-    "spike": 0.065,
+    "subject": 0.047,
+    "ink_subject": 0.006,
+    "spike": 0.048,
     "generated_at": "2026-10-08T22:23:53+00:00"
   },
   "delivery": {
@@ -276,9 +284,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 298767,
+    "bytes": 299005,
     "quality": 88,
-    "sha256": "sha256:d443a798f957886d46e7e6a9b885388de19a861038002487559e91a32ae6561e",
+    "sha256": "sha256:f6ce9e38efde58915d2b0bd023196a7afcda446e5df912d7d2accabd49683c30",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

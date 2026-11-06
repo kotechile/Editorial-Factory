@@ -1,6 +1,6 @@
 {
   "slug": "fed-rate-hike-inverts-working-capital-trap",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -101,6 +101,14 @@
       "title": "Rate Hike Meets Zero Slack",
       "bytes": 381536,
       "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8"
+    },
+    {
+      "revision": 13,
+      "alt_text": "Rate Hike Meets Zero Slack. Rates Hit Lean Inventories. A vast, nearly empty industrial staging yard with sparse cargo recedi",
+      "caption": "Rate Hike Meets Zero Slack: Rising rates squeeze supply chains with no stock to cut.",
+      "title": "Rate Hike Meets Zero Slack",
+      "bytes": 381536,
+      "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8"
     }
   ],
   "style": "long_lens_industry",
@@ -129,8 +137,8 @@
   "local_path": "context/assets/illustrations/fed-rate-hike-inverts-working-capital-trap/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 381536,
-  "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8",
+  "bytes": 381086,
+  "sha256": "sha256:f29b009a4b102ec71b814d25e599a1ad3a854268b847e40709defb7e82f417ef",
   "source_hash": "sha256:87fc743c6ae2a776445c2d494a46aeeb",
   "source_chars": 4044,
   "task_id": "a1a7f0ce345ce20380d5c017eb4a489b",
@@ -150,29 +158,29 @@
     "kicker": "INVENTORY // INTEREST RATE SQUEEZE",
     "title": "RATE HIKE MEETS ZERO SLACK",
     "hook": "Rising rates squeeze supply chains with no stock to cut",
-    "anchor": "bottom-left",
+    "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 13.13,
+    "scrim": 120,
+    "contrast": 9.68,
     "target": 4.5,
-    "clutter": 0.072,
+    "clutter": 0.095,
     "region_rgb": [
-      18,
-      28,
-      31
+      33,
+      47,
+      50
     ],
     "binding_rgb": [
-      25,
-      40,
-      43
+      43,
+      62,
+      66
     ],
     "title_lines": [
       "RATE HIKE MEETS",
       "ZERO SLACK"
     ],
-    "subject": 0.005,
-    "ink_subject": 0.002,
-    "spike": 0.016,
+    "subject": 0.051,
+    "ink_subject": 0.007,
+    "spike": 0.05,
     "generated_at": "2026-10-09T00:30:53+00:00"
   },
   "delivery": {
@@ -183,9 +191,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 381536,
+    "bytes": 381086,
     "quality": 88,
-    "sha256": "sha256:a06b82baba07755b4e609c4b56434ee48f65727c037d0a28e8faa42fe3c9d2b8",
+    "sha256": "sha256:f29b009a4b102ec71b814d25e599a1ad3a854268b847e40709defb7e82f417ef",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

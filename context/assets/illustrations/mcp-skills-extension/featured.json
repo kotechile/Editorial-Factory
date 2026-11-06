@@ -1,6 +1,6 @@
 {
   "slug": "mcp-skills-extension",
-  "revision": 31,
+  "revision": 32,
   "history": [
     {
       "revision": 1,
@@ -243,6 +243,14 @@
       "title": "The MCP Skills Extension",
       "bytes": 395619,
       "sha256": "sha256:fdff947344c38f129059645e8ead466dde44792da919431aea41deeb32aeb0e7"
+    },
+    {
+      "revision": 31,
+      "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+      "title": "The MCP Skills Extension",
+      "bytes": 395619,
+      "sha256": "sha256:fdff947344c38f129059645e8ead466dde44792da919431aea41deeb32aeb0e7"
     }
   ],
   "style": "paper_collage",
@@ -273,8 +281,8 @@
   "local_path": "context/assets/illustrations/mcp-skills-extension/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 395619,
-  "sha256": "sha256:fdff947344c38f129059645e8ead466dde44792da919431aea41deeb32aeb0e7",
+  "bytes": 392677,
+  "sha256": "sha256:192f62cb3741dbac36b5846d29e22ba1523864ffd3b412574bd0a4cc0140dd98",
   "source_hash": "sha256:91577c57e1dca7fb93371f9433e06c77",
   "source_chars": 4130,
   "task_id": "62ca9d88bc1fe8992614d5d5046e25bd",
@@ -298,27 +306,27 @@
     "hook": "Standardizing how agents discover and retrieve workflows",
     "anchor": "top-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 10.39,
+    "scrim": 120,
+    "contrast": 5.68,
     "target": 5.5,
-    "clutter": 0.282,
+    "clutter": 0.344,
     "region_rgb": [
-      230,
-      227,
-      218
+      221,
+      220,
+      212
     ],
     "binding_rgb": [
-      233,
-      229,
-      218
+      148,
+      162,
+      165
     ],
     "title_lines": [
       "THE MCP SKILLS",
       "EXTENSION"
     ],
-    "subject": 0.144,
-    "ink_subject": 0.054,
-    "spike": 0.505,
+    "subject": 0.11,
+    "ink_subject": 0.038,
+    "spike": 0.297,
     "generated_at": "2026-10-10T15:51:54+00:00"
   },
   "delivery": {
@@ -329,9 +337,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 395619,
+    "bytes": 392677,
     "quality": 64,
-    "sha256": "sha256:fdff947344c38f129059645e8ead466dde44792da919431aea41deeb32aeb0e7",
+    "sha256": "sha256:192f62cb3741dbac36b5846d29e22ba1523864ffd3b412574bd0a4cc0140dd98",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

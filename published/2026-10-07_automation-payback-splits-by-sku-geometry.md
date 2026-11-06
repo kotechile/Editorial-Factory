@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Cavernous warehouse interior contrasting dense automated steel racking with open floor staging for bulky freight."
-image_caption: "Automation payback models are splitting based on the physical dimensions of the goods being moved."
+image_alt: "Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense automated steel racking with open floor staging"
+image_caption: "Amazon Builds The Robots; Walmart Builds: Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -1,6 +1,6 @@
 {
   "slug": "disney-hulu-fourth-hike-subscription-creep",
-  "revision": 28,
+  "revision": 29,
   "history": [
     {
       "revision": 1,
@@ -225,6 +225,14 @@
       "title": "Disney Plus Price Hike",
       "bytes": 314880,
       "sha256": "sha256:ba104b0778b79892f934e040c2004530b87fcfe443edeeab993595f671147ec1"
+    },
+    {
+      "revision": 28,
+      "alt_text": "Disney Plus Price Hike. An amended billing statement and rate notice resting slightly out of alignment on a plain desk surfac",
+      "caption": "Disney Plus Price Hike: Streaming costs rise three times faster than inflation.",
+      "title": "Disney Plus Price Hike",
+      "bytes": 314880,
+      "sha256": "sha256:ba104b0778b79892f934e040c2004530b87fcfe443edeeab993595f671147ec1"
     }
   ],
   "style": "document_flatlay",
@@ -252,8 +260,8 @@
   "local_path": "context/assets/illustrations/disney-hulu-fourth-hike-subscription-creep/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 314880,
-  "sha256": "sha256:ba104b0778b79892f934e040c2004530b87fcfe443edeeab993595f671147ec1",
+  "bytes": 317804,
+  "sha256": "sha256:9956a4451610a8f600730f89df8bf74defc48df228a29eace6a8c05a6c074100",
   "source_hash": "sha256:a079e5a91a3e4390d4f502aeaa258c34",
   "source_chars": 6864,
   "task_id": "570f9881af6c966a0511715d49a9dcf5",
@@ -275,27 +283,27 @@
     "hook": "Streaming costs rise three times faster than inflation",
     "anchor": "bottom-left",
     "light": false,
-    "scrim": 30,
-    "contrast": 4.65,
+    "scrim": 120,
+    "contrast": 4.86,
     "target": 4.5,
-    "clutter": 0.175,
+    "clutter": 0.139,
     "region_rgb": [
-      160,
-      158,
-      153
+      177,
+      177,
+      175
     ],
     "binding_rgb": [
-      144,
-      141,
-      132
+      160,
+      158,
+      146
     ],
     "title_lines": [
       "DISNEY PLUS",
       "PRICE HIKE"
     ],
-    "subject": 0.18,
-    "ink_subject": 0.1,
-    "spike": 0.501,
+    "subject": 0.121,
+    "ink_subject": 0.063,
+    "spike": 0.215,
     "generated_at": "2026-10-02T01:58:17+00:00"
   },
   "delivery": {
@@ -306,9 +314,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 314880,
+    "bytes": 317804,
     "quality": 88,
-    "sha256": "sha256:ba104b0778b79892f934e040c2004530b87fcfe443edeeab993595f671147ec1",
+    "sha256": "sha256:9956a4451610a8f600730f89df8bf74defc48df228a29eace6a8c05a6c074100",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

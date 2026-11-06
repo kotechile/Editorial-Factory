@@ -1,6 +1,6 @@
 {
   "slug": "you-think-youre-governing-your-agents",
-  "revision": 21,
+  "revision": 22,
   "history": [
     {
       "revision": 1,
@@ -169,6 +169,14 @@
       "title": "The AI Agent Blind Spot",
       "bytes": 389544,
       "sha256": "sha256:9e6e5c2f43e4970ddc8edc0fa477c71a719eb0149642011201af9422cb3e83c7"
+    },
+    {
+      "revision": 21,
+      "alt_text": "The AI Agent Blind Spot. The AI Agent Blind Spot. The AI Agent Blind Spot. Technical isometric cutaway of a precision optical",
+      "caption": "The AI Agent Blind Spot: How stolen machine identities expose the enterprise.",
+      "title": "The AI Agent Blind Spot",
+      "bytes": 389544,
+      "sha256": "sha256:9e6e5c2f43e4970ddc8edc0fa477c71a719eb0149642011201af9422cb3e83c7"
     }
   ],
   "style": "technical_isometric",
@@ -199,8 +207,8 @@
   "local_path": "context/assets/illustrations/you-think-youre-governing-your-agents/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 389544,
-  "sha256": "sha256:9e6e5c2f43e4970ddc8edc0fa477c71a719eb0149642011201af9422cb3e83c7",
+  "bytes": 384329,
+  "sha256": "sha256:7ff7c92fe1059dac33bdf037afc0434bc4a0acbdd3d28f2a39e28ad57b4bf9e1",
   "source_hash": "sha256:e2f03e9e49781317784974c546ad91c5",
   "source_chars": 3529,
   "task_id": "d9147037e31b0fcdb488d0747aa95800",
@@ -224,13 +232,13 @@
     "hook": "How stolen machine identities expose the enterprise",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
+    "scrim": 120,
     "contrast": 8.95,
     "target": 4.5,
-    "clutter": 0.036,
+    "clutter": 0.049,
     "region_rgb": [
       56,
-      59,
+      58,
       66
     ],
     "binding_rgb": [
@@ -242,9 +250,9 @@
       "THE AI AGENT",
       "BLIND SPOT"
     ],
-    "subject": 0.03,
-    "ink_subject": 0.005,
-    "spike": 0.131,
+    "subject": 0.024,
+    "ink_subject": 0.004,
+    "spike": 0.081,
     "generated_at": "2026-10-09T02:01:28+00:00"
   },
   "delivery": {
@@ -255,9 +263,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 389544,
+    "bytes": 384329,
     "quality": 80,
-    "sha256": "sha256:9e6e5c2f43e4970ddc8edc0fa477c71a719eb0149642011201af9422cb3e83c7",
+    "sha256": "sha256:7ff7c92fe1059dac33bdf037afc0434bc4a0acbdd3d28f2a39e28ad57b4bf9e1",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

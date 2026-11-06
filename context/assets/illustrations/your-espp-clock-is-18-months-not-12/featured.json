@@ -1,0 +1,116 @@
+{
+  "slug": "your-espp-clock-is-18-months-not-12",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A brass ratchet wheel, hinged latch and short rack rail on a steel plate on a home-office desk.",
+      "caption": "The later of two statutory periods is the one that sets the date.",
+      "title": "Brass ratchet, latch and rail on a desk",
+      "bytes": 367688,
+      "sha256": "sha256:c2ce5a2ac5a4da5e133005a9126c2488"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Modular component assembly on a brushed steel plate set on a home-office desk: a brass ratchet wheel, a hinged latch and a short rack rail arranged in one deliberate line, the latch resting open against a stop. Three-quarter view, hard single key light from the upper left, matte brass and graphite steel texture, bone white paper shim under the plate, asymmetric framing with generous negative space to the right.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos, human hands",
+  "rationale": "The article is a rule \u2014 the later of two clocks \u2014 with no scene to photograph, so the frame is a real assembly: a ratchet wheel, a latch and a rail that state a mechanism stopping short of its stop.",
+  "cue": "hold a year for the tax break",
+  "subject": "A modular brass timing assembly with a ratchet wheel, a hinged latch and a short rack rail on a home-office desk",
+  "core_thesis": "The tax break on discounted employer stock arrives on the later of two statutory clocks, so the wait is longer and the prize smaller than the plan summary says.",
+  "core_conflict": "Two timing periods, one of which silently binds later than the date everyone quotes.",
+  "composition": "asymmetric three-quarter framing, the assembly left of centre with negative space to the right",
+  "alt_text": "Your ESPP Clock. A brass ratchet wheel, hinged latch and short rack rail on a steel plate on a home-office desk.",
+  "caption": "Your ESPP Clock: Your company's employee stock purchase plan (ESPP) sells you stock at 85 cents.",
+  "title": "Your ESPP Clock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-espp-clock-is-18-months-not-12/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395204,
+  "sha256": "sha256:a1a2bce3988fb7906cd0cbe1fccdac51a7478715252a40ae2399ee009152fbca",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395204,
+    "quality": 84,
+    "sha256": "sha256:a1a2bce3988fb7906cd0cbe1fccdac51a7478715252a40ae2399ee009152fbca",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:503b7ec0b0af9b61d44ef0efdd0af5c363033d6d04b1d676415172abd039b54d",
+  "render_phash": "c13b09f8283ec04f069013183a186c30c420a440c48049806300360014000800",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small brass ratchet wheel, a hinged metal latch arm and a short toothed rack rail sit mounted on a brushed steel plate resting on a wooden desk, with notebooks and two pens blurred in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame shows a benchtop timing-and-latch mechanism that reads as a clock/ratchet metaphor for the article's two-clock holding-period mechanism, though nothing in it names ESPP, taxes or the 18-month rule, so the link is metaphorical rather than literal."
+  },
+  "source_hash": "sha256:b585582bb00fbbef8a882277d63a2e8a",
+  "source_chars": 5147,
+  "task_id": "ed9c295be01fc0dccfd00df122085067",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d885aebfdba94a96b11618c21cbefdf8.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Modular component assembly on a brushed steel plate set on a home-office desk: a brass ratchet wheel, a hinged latch and a short rack rail arranged in one deliberate line, the latch resting open against a stop. Three-quarter view, hard single key light from the upper left, matte brass and graphite steel texture, bone white paper shim under the plate, asymmetric framing with generous negative space to the right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-06T17:49:18+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR ESPP CLOCK",
+    "hook": "Your company's employee stock purchase plan (ESPP) sells you stock at 85 cents",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.85,
+    "target": 4.5,
+    "clutter": 0.142,
+    "region_rgb": [
+      198,
+      156,
+      106
+    ],
+    "binding_rgb": [
+      187,
+      135,
+      77
+    ],
+    "title_lines": [
+      "YOUR ESPP",
+      "CLOCK"
+    ],
+    "subject": 0.074,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-11-06T17:49:18+00:00"
+  }
+}

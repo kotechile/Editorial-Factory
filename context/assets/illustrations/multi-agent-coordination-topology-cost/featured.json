@@ -1,6 +1,6 @@
 {
   "slug": "multi-agent-coordination-topology-cost",
-  "revision": 26,
+  "revision": 27,
   "history": [
     {
       "revision": 1,
@@ -211,6 +211,14 @@
       "title": "Pricing Agent Topologies",
       "bytes": 359940,
       "sha256": "sha256:4d41b8343976e7bad6b2114256591b5e7e5cf04b9a56b6efdae0febca671d5a0"
+    },
+    {
+      "revision": 26,
+      "alt_text": "Pricing Agent Topologies. Pricing Agent Topologies. Pricing Agent Topologies. A modular clay routing assembly splitting a cen",
+      "caption": "Pricing Agent Topologies: Coordination mode is your biggest agent budget line.",
+      "title": "Pricing Agent Topologies",
+      "bytes": 359940,
+      "sha256": "sha256:4d41b8343976e7bad6b2114256591b5e7e5cf04b9a56b6efdae0febca671d5a0"
     }
   ],
   "style": "clay_render",
@@ -241,8 +249,8 @@
   "local_path": "context/assets/illustrations/multi-agent-coordination-topology-cost/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 359940,
-  "sha256": "sha256:4d41b8343976e7bad6b2114256591b5e7e5cf04b9a56b6efdae0febca671d5a0",
+  "bytes": 361605,
+  "sha256": "sha256:c8ec9da0b9ed8390d842d959e1f4d6e9c0af1ca6f96f9d344b1b2def86325df6",
   "source_hash": "sha256:30717e6ccd83aad0c700a41dbb2fe977",
   "source_chars": 4204,
   "task_id": "c30cf4e1e6b9af959989ede46bfb0296",
@@ -266,27 +274,27 @@
     "hook": "Coordination mode is your biggest agent budget line",
     "anchor": "top-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 9.2,
+    "scrim": 120,
+    "contrast": 9.12,
     "target": 4.5,
-    "clutter": 0.048,
+    "clutter": 0.207,
     "region_rgb": [
-      216,
-      216,
-      206
+      211,
+      211,
+      202
     ],
     "binding_rgb": [
-      217,
-      217,
-      207
+      216,
+      216,
+      208
     ],
     "title_lines": [
       "PRICING AGENT",
       "TOPOLOGIES"
     ],
-    "subject": 0.035,
-    "ink_subject": 0.011,
-    "spike": 0.13,
+    "subject": 0.032,
+    "ink_subject": 0.009,
+    "spike": 0.122,
     "generated_at": "2026-10-09T02:02:39+00:00"
   },
   "delivery": {
@@ -297,9 +305,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 359940,
+    "bytes": 361605,
     "quality": 88,
-    "sha256": "sha256:4d41b8343976e7bad6b2114256591b5e7e5cf04b9a56b6efdae0febca671d5a0",
+    "sha256": "sha256:c8ec9da0b9ed8390d842d959e1f4d6e9c0af1ca6f96f9d344b1b2def86325df6",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

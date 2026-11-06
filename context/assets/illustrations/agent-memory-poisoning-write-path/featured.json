@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-poisoning-write-path",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -59,6 +59,14 @@
       "title": "Agent Memory Poisoning \u2014 Editorial Header",
       "bytes": 234700,
       "sha256": "sha256:9f710b410a919519850a5dcaa0bf82853d6b92d222a7393553578ce7a534c557"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Agent Memory Poisoning. Agent Memory Poisoning: Guard the write path \u2014 not the prompt. Monolithic vault divided by a razor-thin blade of",
+      "caption": "Agent Memory Poisoning: One text file can take over a coding agent's memory.",
+      "title": "Agent Memory Poisoning",
+      "bytes": 369746,
+      "sha256": "sha256:977d5478cd482691f3192572c9f9947b622b21941697804dc1ca43a587df60fb"
     }
   ],
   "style": "cinematic_still",
@@ -89,8 +97,8 @@
   "local_path": "context/assets/illustrations/agent-memory-poisoning-write-path/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 369746,
-  "sha256": "sha256:977d5478cd482691f3192572c9f9947b622b21941697804dc1ca43a587df60fb",
+  "bytes": 373929,
+  "sha256": "sha256:2eeb65ea8c5283fd40cb95c407b8fe2984c42ea3ce39b352c7a5dcc63a7a3b8c",
   "source_hash": "sha256:9b20255f9fbe0fde845f3af71aa4e04a",
   "source_chars": 4115,
   "task_id": "bcadc055212c2b9e83d010aeb3a865f2",
@@ -114,38 +122,38 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 369746,
+    "bytes": 373929,
     "quality": 88,
-    "sha256": "sha256:977d5478cd482691f3192572c9f9947b622b21941697804dc1ca43a587df60fb",
+    "sha256": "sha256:2eeb65ea8c5283fd40cb95c407b8fe2984c42ea3ce39b352c7a5dcc63a7a3b8c",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
     "kicker": "AGENTIC MEMORY // POISONING",
     "title": "AGENT MEMORY POISONING",
     "hook": "One text file can take over a coding agent's memory",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 6.52,
+    "scrim": 120,
+    "contrast": 6.04,
     "target": 4.5,
-    "clutter": 0.158,
+    "clutter": 0.143,
     "region_rgb": [
-      55,
-      64,
-      65
+      62,
+      71,
+      71
     ],
     "binding_rgb": [
-      76,
-      86,
-      87
+      81,
+      91,
+      92
     ],
     "title_lines": [
       "AGENT MEMORY",
       "POISONING"
     ],
-    "subject": 0.163,
-    "ink_subject": 0.081,
-    "spike": 0.487,
+    "subject": 0.095,
+    "ink_subject": 0.037,
+    "spike": 0.232,
     "generated_at": "2026-10-09T00:01:30+00:00"
   }
 }

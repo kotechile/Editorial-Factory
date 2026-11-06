@@ -1,6 +1,6 @@
 {
   "slug": "demurrage-invoice-30-day-clocks",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -101,6 +101,14 @@
       "title": "The Demurrage 30-DAY Clocks",
       "bytes": 404630,
       "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd"
+    },
+    {
+      "revision": 13,
+      "alt_text": "The Demurrage 30-DAY Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The Demurrage 30-Day Clocks. The 30-Da",
+      "caption": "The Demurrage 30-DAY Clocks: Using exact timestamps to win container fee disputes.",
+      "title": "The Demurrage 30-DAY Clocks",
+      "bytes": 404630,
+      "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd"
     }
   ],
   "style": "document_flatlay",
@@ -129,8 +137,8 @@
   "local_path": "context/assets/illustrations/demurrage-invoice-30-day-clocks/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 404630,
-  "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd",
+  "bytes": 404652,
+  "sha256": "sha256:6041cf3d7e4b4ffa0cf99fd1da80d8a26a046de89ca064712b4442c4856a12c3",
   "source_hash": "sha256:36efd58a31820761e4c761982e2c3ef8",
   "source_chars": 5385,
   "task_id": "55223c21c0156791afaaac48b15f7c9a",
@@ -152,27 +160,27 @@
     "hook": "Using exact timestamps to win container fee disputes",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 4.95,
+    "scrim": 120,
+    "contrast": 4.77,
     "target": 4.5,
-    "clutter": 0.146,
+    "clutter": 0.15,
     "region_rgb": [
-      85,
-      76,
-      72
+      90,
+      81,
+      77
     ],
     "binding_rgb": [
-      111,
-      100,
-      94
+      115,
+      102,
+      96
     ],
     "title_lines": [
       "THE DEMURRAGE",
       "30-DAY CLOCKS"
     ],
-    "subject": 0.067,
-    "ink_subject": 0.037,
-    "spike": 0.184,
+    "subject": 0.057,
+    "ink_subject": 0.012,
+    "spike": 0.059,
     "generated_at": "2026-10-09T00:44:35+00:00"
   },
   "delivery": {
@@ -183,9 +191,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 404630,
+    "bytes": 404652,
     "quality": 84,
-    "sha256": "sha256:a363f61f3f6e4a4bb5cf70c61bafd3fb4a6331e5c88e9a058330622af6fedfcd",
+    "sha256": "sha256:6041cf3d7e4b4ffa0cf99fd1da80d8a26a046de89ca064712b4442c4856a12c3",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

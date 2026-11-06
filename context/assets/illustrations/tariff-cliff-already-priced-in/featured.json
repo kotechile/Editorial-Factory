@@ -1,6 +1,6 @@
 {
   "slug": "tariff-cliff-already-priced-in",
-  "revision": 24,
+  "revision": 25,
   "history": [
     {
       "revision": 1,
@@ -187,6 +187,14 @@
       "title": "Pricing In The Tariff Cliff",
       "bytes": 283018,
       "sha256": "sha256:61e043d21115b48433321fffa3d95aac7ca2a588f78226463ee6701403edfcf6"
+    },
+    {
+      "revision": 24,
+      "alt_text": "Pricing In The Tariff Cliff. Tall stacks of intermodal shipping containers rest quietly in a misty rail yard under dawn light",
+      "caption": "Pricing In The Tariff Cliff: CFOs hoard tariff refunds ahead of a looming snap-back.",
+      "title": "Pricing In The Tariff Cliff",
+      "bytes": 283018,
+      "sha256": "sha256:61e043d21115b48433321fffa3d95aac7ca2a588f78226463ee6701403edfcf6"
     }
   ],
   "style": "cinematic_still",
@@ -214,8 +222,8 @@
   "local_path": "context/assets/illustrations/tariff-cliff-already-priced-in/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 283018,
-  "sha256": "sha256:61e043d21115b48433321fffa3d95aac7ca2a588f78226463ee6701403edfcf6",
+  "bytes": 283842,
+  "sha256": "sha256:98d18c8d4cb402a729b1ce8248e6eba44bea1b7ca007e6fbc939773374facab5",
   "source_hash": "sha256:385c2c3f7bcae7e8bb3d5546336786cc",
   "source_chars": 4366,
   "task_id": "679b3cd0de8ca9843b521d2a97ca681c",
@@ -237,27 +245,27 @@
     "hook": "CFOs hoard tariff refunds ahead of a looming snap-back",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 7.86,
-    "target": 4.5,
-    "clutter": 0.225,
+    "scrim": 120,
+    "contrast": 5.89,
+    "target": 5.5,
+    "clutter": 0.274,
     "region_rgb": [
-      36,
-      47,
-      48
+      43,
+      52,
+      52
     ],
     "binding_rgb": [
-      81,
-      70,
-      66
+      105,
+      95,
+      85
     ],
     "title_lines": [
       "PRICING IN THE",
       "TARIFF CLIFF"
     ],
-    "subject": 0.133,
-    "ink_subject": 0.047,
-    "spike": 0.476,
+    "subject": 0.12,
+    "ink_subject": 0.029,
+    "spike": 0.272,
     "generated_at": "2026-10-08T22:18:33+00:00"
   },
   "delivery": {
@@ -268,9 +276,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 283018,
+    "bytes": 283842,
     "quality": 88,
-    "sha256": "sha256:61e043d21115b48433321fffa3d95aac7ca2a588f78226463ee6701403edfcf6",
+    "sha256": "sha256:98d18c8d4cb402a729b1ce8248e6eba44bea1b7ca007e6fbc939773374facab5",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

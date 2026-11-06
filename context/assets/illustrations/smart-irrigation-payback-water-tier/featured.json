@@ -1,6 +1,6 @@
 {
   "slug": "smart-irrigation-payback-water-tier",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -57,6 +57,14 @@
       "title": "Smart Sprinkler Payback",
       "bytes": 181690,
       "sha256": "sha256:72089ac25858c45d4166acf2ca62fe1e213b928f5e7c3db5cd2e4cd8eac322d9"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Smart Sprinkler Payback. A smart irrigation control box rests beside a stacked municipal water bill on a clean backdrop.",
+      "caption": "Smart Sprinkler Payback: Real savings depend on your top water tier.",
+      "title": "Smart Sprinkler Payback",
+      "bytes": 181690,
+      "sha256": "sha256:72089ac25858c45d4166acf2ca62fe1e213b928f5e7c3db5cd2e4cd8eac322d9"
     }
   ],
   "style": "studio_object",
@@ -84,8 +92,8 @@
   "local_path": "context/assets/illustrations/smart-irrigation-payback-water-tier/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 181690,
-  "sha256": "sha256:72089ac25858c45d4166acf2ca62fe1e213b928f5e7c3db5cd2e4cd8eac322d9",
+  "bytes": 187377,
+  "sha256": "sha256:e72023ca9ae42086cc37de264f5844a7c18077164b432405a25f5de132599eb9",
   "source_hash": "sha256:d18b86461ad4dd172fa238a444c7f25b",
   "source_chars": 3803,
   "task_id": "9ac429f7faa088ea59e8c269e2cb1b2a",
@@ -105,29 +113,30 @@
     "kicker": "SMART IRRIGATION // PAYBACK MATH",
     "title": "SMART SPRINKLER PAYBACK",
     "hook": "Real savings depend on your top water tier",
-    "anchor": "bottom-right",
+    "anchor": "bottom-left",
     "light": false,
-    "scrim": 0,
-    "contrast": 5.13,
+    "scrim": 120,
+    "contrast": 5.19,
     "target": 4.5,
-    "clutter": 0.068,
+    "clutter": 0.164,
     "region_rgb": [
+      169,
       170,
-      171,
-      175
+      173
     ],
     "binding_rgb": [
-      161,
       162,
-      166
+      163,
+      167
     ],
     "title_lines": [
-      "SMART SPRINKLER",
+      "SMART",
+      "SPRINKLER",
       "PAYBACK"
     ],
-    "subject": 0.035,
-    "ink_subject": 0.016,
-    "spike": 0.112,
+    "subject": 0.106,
+    "ink_subject": 0.033,
+    "spike": 0.22,
     "generated_at": "2026-10-05T19:08:43+00:00"
   },
   "delivery": {
@@ -138,9 +147,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 181690,
+    "bytes": 187377,
     "quality": 88,
-    "sha256": "sha256:72089ac25858c45d4166acf2ca62fe1e213b928f5e7c3db5cd2e4cd8eac322d9",
+    "sha256": "sha256:e72023ca9ae42086cc37de264f5844a7c18077164b432405a25f5de132599eb9",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

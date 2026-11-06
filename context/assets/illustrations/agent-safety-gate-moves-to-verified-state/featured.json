@@ -1,6 +1,6 @@
 {
   "slug": "agent-safety-gate-moves-to-verified-state",
-  "revision": 10,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -73,6 +73,14 @@
       "title": "Verifying Agent State",
       "bytes": 404333,
       "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114"
+    },
+    {
+      "revision": 10,
+      "alt_text": "Verifying Agent State. A dark logic board with a glowing amber trace bypassing a relay gate to leave a permanent mark on a",
+      "caption": "Verifying Agent State: Why AI safety depends on the data agents leave behind.",
+      "title": "Verifying Agent State",
+      "bytes": 404333,
+      "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114"
     }
   ],
   "style": "editorial_macro",
@@ -100,8 +108,8 @@
   "local_path": "context/assets/illustrations/agent-safety-gate-moves-to-verified-state/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 404333,
-  "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114",
+  "bytes": 405250,
+  "sha256": "sha256:4af4351240c2b2ddb954a528c446d29dfee4ab1fc9692eed3d8dde466f9cb4f0",
   "source_hash": "sha256:959f8c8a8a4fef90d3f11e9b1edf708c",
   "source_chars": 3465,
   "task_id": "5c0a58b64620c6a1b8346d34b99bb059",
@@ -121,29 +129,29 @@
     "kicker": "AI AGENT SAFETY // PERSISTENT STATE",
     "title": "VERIFYING AGENT STATE",
     "hook": "Why AI safety depends on the data agents leave behind",
-    "anchor": "bottom-left",
+    "anchor": "top-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 6.73,
+    "scrim": 120,
+    "contrast": 6.32,
     "target": 5.5,
-    "clutter": 0.331,
+    "clutter": 0.467,
     "region_rgb": [
-      54,
-      38,
-      22
+      90,
+      89,
+      87
     ],
     "binding_rgb": [
-      129,
-      64,
-      34
+      164,
+      163,
+      161
     ],
     "title_lines": [
       "VERIFYING AGENT",
       "STATE"
     ],
-    "subject": 0.22,
-    "ink_subject": 0.107,
-    "spike": 0.671,
+    "subject": 0.217,
+    "ink_subject": 0.09,
+    "spike": 0.361,
     "generated_at": "2026-10-05T10:40:51+00:00"
   },
   "delivery": {
@@ -154,9 +162,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 404333,
+    "bytes": 405250,
     "quality": 84,
-    "sha256": "sha256:b5357d92c9a3afbf9bda85b70167b28755b2facf21a3633a098fa34f79358114",
+    "sha256": "sha256:4af4351240c2b2ddb954a528c446d29dfee4ab1fc9692eed3d8dde466f9cb4f0",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

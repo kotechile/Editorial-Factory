@@ -1,6 +1,6 @@
 {
   "slug": "automation-payback-splits-by-sku-geometry",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:4337ef8e97a50baee6f5a72c1ae85e93",
       "generated_at": "2026-10-07T12:37:29+00:00",
       "source_hash": "sha256:8f2cc9b640f4d1df3c57118faace609d"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Cavernous warehouse interior contrasting dense automated steel racking with open floor staging for bulky freight.",
+      "caption": "Automation payback models are splitting based on the physical dimensions of the goods being moved.",
+      "title": "Warehouse Scale Division SKU Geometry",
+      "bytes": 293552,
+      "sha256": "sha256:2efaa27b59a267483cf58fec394c91cb"
     }
   ],
   "style": "long_lens_industry",
@@ -26,9 +34,9 @@
   "rationale": "The article contrasts two distinct physical scales of warehouse operations: dense robotic automation for small goods versus expansive real estate for bulky items. A long_lens_industry treatment captures this massive scale and the architectural division within a modern logistics hub.",
   "cue": "SKU geometry",
   "subject": "a massive industrial warehouse interior showing contrasting zones",
-  "alt_text": "Cavernous warehouse interior contrasting dense automated steel racking with open floor staging for bulky freight.",
-  "caption": "Automation payback models are splitting based on the physical dimensions of the goods being moved.",
-  "title": "Warehouse Scale Division SKU Geometry",
+  "alt_text": "Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense automated steel racking with open floor staging",
+  "caption": "Amazon Builds The Robots; Walmart Builds: Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear.",
+  "title": "Amazon Builds The Robots; Walmart Builds",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -38,8 +46,8 @@
   "local_path": "context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 293552,
-  "sha256": "sha256:2efaa27b59a267483cf58fec394c91cb",
+  "bytes": 372038,
+  "sha256": "sha256:edbc583fc95f74bfeec5a24194203341f275a95b749947b4403107e8d06f0be5",
   "source_hash": "sha256:8f2cc9b640f4d1df3c57118faace609d",
   "source_chars": 3821,
   "task_id": "c2b0d4bf2eb9435d16f161ce41f81fbd",
@@ -54,5 +62,48 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:43:30+00:00"
+  "generated_at": "2026-10-08T22:43:30+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 372038,
+    "quality": 88,
+    "sha256": "sha256:edbc583fc95f74bfeec5a24194203341f275a95b749947b4403107e8d06f0be5",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "",
+    "title": "AMAZON BUILDS THE ROBOTS; WALMART BUILDS",
+    "hook": "Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.55,
+    "target": 4.5,
+    "clutter": 0.166,
+    "region_rgb": [
+      117,
+      131,
+      126
+    ],
+    "binding_rgb": [
+      141,
+      156,
+      151
+    ],
+    "title_lines": [
+      "AMAZON BUILDS",
+      "THE ROBOTS;",
+      "WALMART BUILDS"
+    ],
+    "subject": 0.069,
+    "ink_subject": 0.009,
+    "spike": 0.057,
+    "generated_at": "2026-10-08T22:43:30+00:00"
+  }
 }

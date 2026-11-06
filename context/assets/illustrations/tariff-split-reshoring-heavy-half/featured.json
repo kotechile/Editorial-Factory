@@ -1,6 +1,6 @@
 {
   "slug": "tariff-split-reshoring-heavy-half",
-  "revision": 14,
+  "revision": 15,
   "history": [
     {
       "revision": 1,
@@ -109,6 +109,14 @@
       "title": "The Tariff Split",
       "bytes": 406068,
       "sha256": "sha256:f2109b8f343c6fbff127fb8bab83828df745bb6e86840fce087276a9f583aaea"
+    },
+    {
+      "revision": 14,
+      "alt_text": "The Tariff Split. An automated conveyor system splitting cargo into two diverging tracks.",
+      "caption": "The Tariff Split: Capital flows to protected goods as consumer taxes ease.",
+      "title": "The Tariff Split",
+      "bytes": 406068,
+      "sha256": "sha256:f2109b8f343c6fbff127fb8bab83828df745bb6e86840fce087276a9f583aaea"
     }
   ],
   "style": "technical_isometric",
@@ -138,8 +146,8 @@
   "local_path": "context/assets/illustrations/tariff-split-reshoring-heavy-half/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 406068,
-  "sha256": "sha256:f2109b8f343c6fbff127fb8bab83828df745bb6e86840fce087276a9f583aaea",
+  "bytes": 402746,
+  "sha256": "sha256:b06ee42b145bc772f0ff8549b129e7a84a031bbdf1fdc1d062d9b52177aa98d5",
   "source_hash": "sha256:7f8b33f8b02205ebfc6bc29b8450b46e",
   "source_chars": 3707,
   "task_id": "08b4bf67184d5c24c67d7e7c3e6c9c6f",
@@ -163,26 +171,26 @@
     "hook": "Capital flows to protected goods as consumer taxes ease",
     "anchor": "top-right",
     "light": false,
-    "scrim": 45,
-    "contrast": 5.66,
+    "scrim": 120,
+    "contrast": 5.58,
     "target": 5.5,
-    "clutter": 0.381,
+    "clutter": 0.456,
     "region_rgb": [
-      217,
-      218,
-      213
+      188,
+      192,
+      189
     ],
     "binding_rgb": [
-      161,
-      151,
-      141
+      102,
+      126,
+      136
     ],
     "title_lines": [
       "THE TARIFF SPLIT"
     ],
-    "subject": 0.178,
-    "ink_subject": 0.089,
-    "spike": 0.532,
+    "subject": 0.252,
+    "ink_subject": 0.074,
+    "spike": 0.391,
     "generated_at": "2026-10-03T13:22:43+00:00"
   },
   "delivery": {
@@ -193,9 +201,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 406068,
+    "bytes": 402746,
     "quality": 56,
-    "sha256": "sha256:f2109b8f343c6fbff127fb8bab83828df745bb6e86840fce087276a9f583aaea",
+    "sha256": "sha256:b06ee42b145bc772f0ff8549b129e7a84a031bbdf1fdc1d062d9b52177aa98d5",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

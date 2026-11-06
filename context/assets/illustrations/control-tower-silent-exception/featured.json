@@ -1,6 +1,6 @@
 {
   "slug": "control-tower-silent-exception",
-  "revision": 19,
+  "revision": 20,
   "history": [
     {
       "revision": 1,
@@ -153,6 +153,14 @@
       "title": "The Fake Carrier Blind Spot",
       "bytes": 335866,
       "sha256": "sha256:93bbb07195281886623a35dd6996db8a072039531c5902759c5f090d783f7194"
+    },
+    {
+      "revision": 19,
+      "alt_text": "The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. The Fake Carrier Blind Spot. A heavy steel manifest clipboard rests",
+      "caption": "The Fake Carrier Blind Spot: Why exception software misses the most expensive thefts.",
+      "title": "The Fake Carrier Blind Spot",
+      "bytes": 335866,
+      "sha256": "sha256:93bbb07195281886623a35dd6996db8a072039531c5902759c5f090d783f7194"
     }
   ],
   "style": "cinematic_still",
@@ -183,8 +191,8 @@
   "local_path": "context/assets/illustrations/control-tower-silent-exception/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 335866,
-  "sha256": "sha256:93bbb07195281886623a35dd6996db8a072039531c5902759c5f090d783f7194",
+  "bytes": 343181,
+  "sha256": "sha256:3e42fb758a150f3069b70b2386aa51f1f3e21cbda05d2a46b526143ae245f1bb",
   "source_hash": "sha256:854c3403e5a0dabeab129a60464bdafa",
   "source_chars": 4557,
   "task_id": "0b71fa1a26a263eac120a5ed8435cac2",
@@ -206,27 +214,28 @@
     "hook": "Why exception software misses the most expensive thefts",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 11.5,
+    "scrim": 120,
+    "contrast": 10.53,
     "target": 4.5,
-    "clutter": 0.099,
+    "clutter": 0.137,
     "region_rgb": [
-      34,
-      33,
-      25
+      29,
+      39,
+      36
     ],
     "binding_rgb": [
-      51,
-      47,
-      38
+      27,
+      58,
+      61
     ],
     "title_lines": [
-      "THE FAKE CARRIER",
-      "BLIND SPOT"
+      "THE FAKE",
+      "CARRIER BLIND",
+      "SPOT"
     ],
-    "subject": 0.008,
-    "ink_subject": 0.003,
-    "spike": 0.028,
+    "subject": 0.056,
+    "ink_subject": 0.008,
+    "spike": 0.066,
     "generated_at": "2026-10-09T02:06:43+00:00"
   },
   "delivery": {
@@ -237,9 +246,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 335866,
+    "bytes": 343181,
     "quality": 88,
-    "sha256": "sha256:93bbb07195281886623a35dd6996db8a072039531c5902759c5f090d783f7194",
+    "sha256": "sha256:3e42fb758a150f3069b70b2386aa51f1f3e21cbda05d2a46b526143ae245f1bb",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "rack-power-density-ceiling-build-before-you-buy",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -12,6 +12,14 @@
     },
     {
       "revision": 2,
+      "alt_text": "The 40 kW Line. Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction.",
+      "caption": "The 40 kW Line: The build precedes the servers once racks pass 40 kW.",
+      "title": "The 40 kW Line",
+      "bytes": 389040,
+      "sha256": "sha256:6f393257d8020017bcdf485b1f21515d8baf9eecd175adbf9863148b60af1994"
+    },
+    {
+      "revision": 3,
       "alt_text": "The 40 kW Line. Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction.",
       "caption": "The 40 kW Line: The build precedes the servers once racks pass 40 kW.",
       "title": "The 40 kW Line",
@@ -44,8 +52,8 @@
   "local_path": "context/assets/illustrations/rack-power-density-ceiling-build-before-you-buy/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 389040,
-  "sha256": "sha256:6f393257d8020017bcdf485b1f21515d8baf9eecd175adbf9863148b60af1994",
+  "bytes": 394672,
+  "sha256": "sha256:3c6780c11f4bee577156c04e6c7ba33a37ab96c920781a06ace805dd62e06346",
   "source_hash": "sha256:2ae4c7858836559bd8bfa785840c6095",
   "source_chars": 4599,
   "task_id": "a246f038881d662db2eaecaf799cfa72",
@@ -69,37 +77,37 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 389040,
+    "bytes": 394672,
     "quality": 84,
-    "sha256": "sha256:6f393257d8020017bcdf485b1f21515d8baf9eecd175adbf9863148b60af1994",
+    "sha256": "sha256:3c6780c11f4bee577156c04e6c7ba33a37ab96c920781a06ace805dd62e06346",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
     "kicker": "AI RACK POWER // COOLING LIMIT",
     "title": "THE 40 KW LINE",
     "hook": "The build precedes the servers once racks pass 40 kW",
-    "anchor": "top-right",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 6.64,
-    "target": 4.5,
-    "clutter": 0.229,
+    "scrim": 120,
+    "contrast": 5.72,
+    "target": 5.5,
+    "clutter": 0.295,
     "region_rgb": [
-      52,
-      52,
-      45
+      56,
+      59,
+      55
     ],
     "binding_rgb": [
-      91,
-      82,
-      65
+      116,
+      103,
+      87
     ],
     "title_lines": [
       "THE 40 KW LINE"
     ],
-    "subject": 0.18,
-    "ink_subject": 0.106,
-    "spike": 0.478,
+    "subject": 0.201,
+    "ink_subject": 0.055,
+    "spike": 0.376,
     "generated_at": "2026-10-06T18:12:27+00:00"
   }
 }

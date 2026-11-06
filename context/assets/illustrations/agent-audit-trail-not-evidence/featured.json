@@ -1,6 +1,6 @@
 {
   "slug": "agent-audit-trail-not-evidence",
-  "revision": 23,
+  "revision": 24,
   "history": [
     {
       "revision": 1,
@@ -185,6 +185,14 @@
       "title": "The AI Agent Audit Trail",
       "bytes": 396577,
       "sha256": "sha256:2a2b4d55f1cf901bc8276c8134e0c290ca4f06eafd8fcc385b25ef24853863e9"
+    },
+    {
+      "revision": 23,
+      "alt_text": "The AI Agent Audit Trail. The AI Agent Audit Trail. The AI Agent Audit Trail. An open forensic audit ledger with a brass alig",
+      "caption": "The AI Agent Audit Trail: Building logs that can replay an agent's exact choice.",
+      "title": "The AI Agent Audit Trail",
+      "bytes": 396577,
+      "sha256": "sha256:2a2b4d55f1cf901bc8276c8134e0c290ca4f06eafd8fcc385b25ef24853863e9"
     }
   ],
   "style": "document_flatlay",
@@ -215,8 +223,8 @@
   "local_path": "context/assets/illustrations/agent-audit-trail-not-evidence/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 396577,
-  "sha256": "sha256:2a2b4d55f1cf901bc8276c8134e0c290ca4f06eafd8fcc385b25ef24853863e9",
+  "bytes": 395081,
+  "sha256": "sha256:42d60a178f37a937edc7db3c5d66dad8b35680b1f19cbe71d04851d4ea82503e",
   "source_hash": "sha256:c444586232bf864156d0a4b263f3569b",
   "source_chars": 5203,
   "task_id": "a73808a55815b86496bbef15d4d3fb99",
@@ -238,27 +246,27 @@
     "hook": "Building logs that can replay an agent's exact choice",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 7.02,
+    "scrim": 120,
+    "contrast": 5.58,
     "target": 5.5,
-    "clutter": 0.251,
+    "clutter": 0.292,
     "region_rgb": [
-      48,
-      37,
-      32
+      58,
+      46,
+      39
     ],
     "binding_rgb": [
-      94,
-      76,
-      62
+      119,
+      96,
+      78
     ],
     "title_lines": [
       "THE AI AGENT",
       "AUDIT TRAIL"
     ],
-    "subject": 0.156,
-    "ink_subject": 0.079,
-    "spike": 0.464,
+    "subject": 0.178,
+    "ink_subject": 0.065,
+    "spike": 0.356,
     "generated_at": "2026-10-09T02:03:49+00:00"
   },
   "delivery": {
@@ -269,9 +277,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 396577,
+    "bytes": 395081,
     "quality": 84,
-    "sha256": "sha256:2a2b4d55f1cf901bc8276c8134e0c290ca4f06eafd8fcc385b25ef24853863e9",
+    "sha256": "sha256:42d60a178f37a937edc7db3c5d66dad8b35680b1f19cbe71d04851d4ea82503e",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

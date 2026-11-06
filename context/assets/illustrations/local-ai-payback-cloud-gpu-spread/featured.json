@@ -1,6 +1,6 @@
 {
   "slug": "local-ai-payback-cloud-gpu-spread",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -103,6 +103,14 @@
       "title": "The New Build-Vs-Rent Math",
       "bytes": 387060,
       "sha256": "sha256:c65f7f6adb3fa65227abe47d83d9d0d6e6e5bf7f24f2f7a24dc8a8a35917b3e4"
+    },
+    {
+      "revision": 13,
+      "alt_text": "The New Build-Vs-Rent Math. A heavy brushed-aluminum structural housing sitting unlatched beside a three-way routing manifold",
+      "caption": "The New Build-Vs-Rent Math: Local GPU costs soar as cloud rental prices split.",
+      "title": "The New Build-Vs-Rent Math",
+      "bytes": 387060,
+      "sha256": "sha256:c65f7f6adb3fa65227abe47d83d9d0d6e6e5bf7f24f2f7a24dc8a8a35917b3e4"
     }
   ],
   "style": "component_assembly",
@@ -133,8 +141,8 @@
   "local_path": "context/assets/illustrations/local-ai-payback-cloud-gpu-spread/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 387060,
-  "sha256": "sha256:c65f7f6adb3fa65227abe47d83d9d0d6e6e5bf7f24f2f7a24dc8a8a35917b3e4",
+  "bytes": 408522,
+  "sha256": "sha256:1895f6f490de8fce3ea45412f6f60922c0d87cd9d4ddce54fa9b1a33d0dabb96",
   "source_hash": "sha256:8c8392064556ded9b22eb938bb5b56a8",
   "source_chars": 4906,
   "task_id": "543d62446f507b89dbdbb34516fe632b",
@@ -158,27 +166,28 @@
     "hook": "Local GPU costs soar as cloud rental prices split",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 4.78,
+    "scrim": 120,
+    "contrast": 4.7,
     "target": 4.5,
-    "clutter": 0.12,
+    "clutter": 0.121,
     "region_rgb": [
-      92,
-      85,
-      77
+      100,
+      91,
+      82
     ],
     "binding_rgb": [
-      112,
-      103,
-      94
+      120,
+      111,
+      102
     ],
     "title_lines": [
       "THE NEW",
-      "BUILD-VS-RENT MATH"
+      "BUILD-VS-RENT",
+      "MATH"
     ],
-    "subject": 0.028,
-    "ink_subject": 0.013,
-    "spike": 0.087,
+    "subject": 0.074,
+    "ink_subject": 0.009,
+    "spike": 0.049,
     "generated_at": "2026-10-09T01:23:43+00:00"
   },
   "delivery": {
@@ -189,9 +198,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 387060,
-    "quality": 80,
-    "sha256": "sha256:c65f7f6adb3fa65227abe47d83d9d0d6e6e5bf7f24f2f7a24dc8a8a35917b3e4",
+    "bytes": 408522,
+    "quality": 84,
+    "sha256": "sha256:1895f6f490de8fce3ea45412f6f60922c0d87cd9d4ddce54fa9b1a33d0dabb96",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

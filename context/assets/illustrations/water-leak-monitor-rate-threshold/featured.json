@@ -1,6 +1,6 @@
 {
   "slug": "water-leak-monitor-rate-threshold",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -12,6 +12,14 @@
     },
     {
       "revision": 2,
+      "alt_text": "Water Leak Monitor Flow Rate. An inline water flow sensor module attached to a section of copper tubing against a smooth grey gradient.",
+      "caption": "Water Leak Monitor Flow Rate: Your night-flow threshold decides if it pays.",
+      "title": "Water Leak Monitor Flow Rate",
+      "bytes": 154715,
+      "sha256": "sha256:237d3f964b7cfb817344af979b2cbf08907743b54d484fa1abb971e396bfe012"
+    },
+    {
+      "revision": 3,
       "alt_text": "Water Leak Monitor Flow Rate. An inline water flow sensor module attached to a section of copper tubing against a smooth grey gradient.",
       "caption": "Water Leak Monitor Flow Rate: Your night-flow threshold decides if it pays.",
       "title": "Water Leak Monitor Flow Rate",
@@ -44,8 +52,8 @@
   "local_path": "context/assets/illustrations/water-leak-monitor-rate-threshold/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 154715,
-  "sha256": "sha256:237d3f964b7cfb817344af979b2cbf08907743b54d484fa1abb971e396bfe012",
+  "bytes": 166336,
+  "sha256": "sha256:211bded819e300c49a6e891ea111a31f7571baf0916e416853af86b7c460e476",
   "source_hash": "sha256:17b46abfdf0c4549211b7b9563c988ac",
   "source_chars": 4237,
   "task_id": "5001764c20c3bcdb228991c0bc0d7332",
@@ -69,9 +77,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 154715,
+    "bytes": 166336,
     "quality": 88,
-    "sha256": "sha256:237d3f964b7cfb817344af979b2cbf08907743b54d484fa1abb971e396bfe012",
+    "sha256": "sha256:211bded819e300c49a6e891ea111a31f7571baf0916e416853af86b7c460e476",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
@@ -80,27 +88,28 @@
     "hook": "Your night-flow threshold decides if it pays",
     "anchor": "bottom-right",
     "light": false,
-    "scrim": 0,
-    "contrast": 6.36,
+    "scrim": 120,
+    "contrast": 6.88,
     "target": 4.5,
-    "clutter": 0.085,
+    "clutter": 0.087,
     "region_rgb": [
-      189,
-      192,
-      199
+      198,
+      200,
+      205
     ],
     "binding_rgb": [
-      177,
-      181,
-      190
+      185,
+      188,
+      195
     ],
     "title_lines": [
       "WATER LEAK",
-      "MONITOR FLOW RATE"
+      "MONITOR FLOW",
+      "RATE"
     ],
-    "subject": 0.015,
-    "ink_subject": 0.005,
-    "spike": 0.056,
+    "subject": 0.067,
+    "ink_subject": 0.022,
+    "spike": 0.133,
     "generated_at": "2026-10-06T19:09:22+00:00"
   }
 }

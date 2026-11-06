@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T14:20:11+00:00",
+  "generated_at": "2026-11-06T14:18:51+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,44 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-grant-grew-25-4-directors-grew-3-9",
+      "title": "Your Grant Grew 25.4%: It Stops at Director",
+      "url": "https://giniloh.com/your-grant-grew-25-4-directors-grew-3-9/",
+      "path": "/your-grant-grew-25-4-directors-grew-3-9/",
+      "sites_live": {
+        "giniloh.com": "/your-grant-grew-25-4-directors-grew-3-9/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your grant one level below director grew 25.4% since the start of 2024, and it stops at the director line: the same measure there rose 3.9%, and above\u2026",
+      "modified": "2026-11-06T11:24:55",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-brokers-fund-bills-37",
+      "title": "Your Broker's Fund Bills 37%",
+      "url": "https://giniloh.com/your-brokers-fund-bills-37/",
+      "path": "/your-brokers-fund-bills-37/",
+      "sites_live": {
+        "giniloh.com": "/your-brokers-fund-bills-37/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your broker in Lisbon, Dublin or Amsterdam sells you the country's own index fund, and the United States does not see an index fund, because it taxes the\u2026",
+      "modified": "2026-11-05T19:52:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2356,6 +2394,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "owner-builder-permit-your-name-their-job",
+      "title": "Your 12-Month Owner-Builder Trap",
+      "url": "https://wellroost.com/owner-builder-permit-your-name-their-job/",
+      "path": "/owner-builder-permit-your-name-their-job/",
+      "sites_live": {
+        "wellroost.com": "/owner-builder-permit-your-name-their-job/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "A contractor who offers to take the permit fee off a bid is usually offering more: a form you sign as owner-builder, which puts the builder's job in your\u2026",
+      "modified": "2026-11-05T19:19:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "panel-upgrade-80-percent-test",
       "title": "Your Panel Doesn't Need More Amps: The 80% Test",
       "url": "https://wellroost.com/panel-upgrade-80-percent-test/",
@@ -3039,6 +3100,29 @@
       ],
       "excerpt": "Dropping a cloud plan moves the true cost of a camera straight to a hard drive in your closet, because the camera ships writing 6,144 kilobits a second for a\u2026",
       "modified": "2026-10-31T04:48:57",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-connection-slips-six-months",
+      "title": "25,000 Hookups Stuck Six Months",
+      "url": "https://wellroost.com/your-connection-slips-six-months/",
+      "path": "/your-connection-slips-six-months/",
+      "sites_live": {
+        "wellroost.com": "/your-connection-slips-six-months/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "In October, Pacific Gas and Electric (PG&E) warned about 25,000 prospective hookups that they could be stuck as long as six months past the date they were\u2026",
+      "modified": "2026-11-06T11:22:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6017,8 +6101,8 @@
       "category_slugs": [
         "supply-chain-operations"
       ],
-      "excerpt": "A single missing promotional SKU turns a respectable 97% Case Fill Rate into a 0% Order Fill Rate, triggering automated On-Time In-Full (OTIF) penalties. Yet most leadership teams misdiagnose these cuts because standard ERP reporting hides factory bottlenecks made two to eight weeks upstream.",
-      "modified": "2026-11-02T23:17:40",
+      "excerpt": "A 97% Case Fill Rate looks green on a Friday dashboard, yet a single missing SKU still turns Order Fill Rate to 0% and triggers Monday retail chargebacks. Instead of blaming Demand Planning, here is how to uncover the hidden ERP leaks\u2014from overwritten rejection codes to winner-take-all attribution rules\u2014that quietly drain 6% to 10% of annual revenue, and how to fix them without a multi-year overhaul.",
+      "modified": "2026-11-06T01:28:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7052,6 +7136,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-99-cent-resolution-bills-the-handoff",
+      "title": "Your $0.99 Resolution Bills the Handoff",
+      "url": "https://aichieve.net/your-99-cent-resolution-bills-the-handoff/",
+      "path": "/your-99-cent-resolution-bills-the-handoff/",
+      "sites_live": {
+        "aichieve.net": "/your-99-cent-resolution-bills-the-handoff/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Intercom charges $0.99 when its AI agent closes a question, and it bills that resolution even when the handoff goes to a person.",
+      "modified": "2026-11-06T07:49:40",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-128gb-laptop-2319-memory-bill",
       "title": "Your 128GB Laptop: A $2,319 Memory Bill",
       "url": "https://aichieve.net/your-128gb-laptop-2319-memory-bill/",
@@ -7972,6 +8079,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-planning-cycle-costs-7-managers",
+      "title": "Your Planning Cycle Costs 7 Managers",
+      "url": "https://aichieve.net/your-planning-cycle-costs-7-managers/",
+      "path": "/your-planning-cycle-costs-7-managers/",
+      "sites_live": {
+        "aichieve.net": "/your-planning-cycle-costs-7-managers/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A planning module reaches the budget as one line: a price per user, per month. The sales and operations planning (S&OP) cycle it has to run inside costs\u2026",
+      "modified": "2026-11-06T07:59:46",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-plant-was-1n-and-blind",
       "title": "Your Plant Was 1N and Blind",
       "url": "https://aichieve.net/your-plant-was-1n-and-blind/",
@@ -8317,6 +8447,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-task-protocol-costs-643-lines",
+      "title": "Your Task Protocol Costs 643 Lines",
+      "url": "https://aichieve.net/your-task-protocol-costs-643-lines/",
+      "path": "/your-task-protocol-costs-643-lines/",
+      "sites_live": {
+        "aichieve.net": "/your-task-protocol-costs-643-lines/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Building the same agent hand-off as a task protocol instead of a tool call cost 643 extra lines of code, three times the coordination steps, and a 37-state machine.",
+      "modified": "2026-11-05T17:50:56",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-tool-boundary-costs-3-engineers",
       "title": "Your Tool Boundary Costs 3 Engineers",
       "url": "https://aichieve.net/your-tool-boundary-costs-3-engineers/",
@@ -8432,6 +8585,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-trailers-last-foot-costs-2500",
+      "title": "Your Trailer's Last Foot Costs 2,500",
+      "url": "https://aichieve.net/your-trailers-last-foot-costs-2500/",
+      "path": "/your-trailers-last-foot-costs-2500/",
+      "sites_live": {
+        "aichieve.net": "/your-trailers-last-foot-costs-2500/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A tractor-trailer can cross a scale at the 80,000-pound cap and still fail federal weight law, because the binding limit is a distance between axle groups.",
+      "modified": "2026-11-05T18:51:13",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-truck-mile-costs-2-2-driver-minutes",
       "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
       "url": "https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/",
@@ -8522,6 +8698,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1508,
+      "slug": "your-planning-cycle-costs-7-managers",
+      "title": "Your Planning Cycle Costs 7 Managers",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T07:59:46",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1500,
+      "slug": "your-trailers-last-foot-costs-2500",
+      "title": "Your Trailer&#8217;s Last Foot Costs 2,500",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T18:51:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1498,
+      "slug": "your-99-cent-resolution-bills-the-handoff",
+      "title": "Your $0.99 Resolution Bills the Handoff",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T07:49:40",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1495,
+      "slug": "your-task-protocol-costs-643-lines",
+      "title": "Your Task Protocol Costs 643 Lines",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T17:50:56",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -8966,7 +9198,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-02T23:17:40",
+      "modified": "2026-11-06T01:28:47",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -9587,62 +9819,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1136,
-      "slug": "why-65-percent-of-stock-records-miss",
-      "title": "Your Stock Records Are 65% Wrong",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:22",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1129,
-      "slug": "your-golden-zone-costs-10-miles",
-      "title": "Your Golden Zone Costs 10 Miles",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:22",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1126,
-      "slug": "review-minute-costs-66-dollars",
-      "title": "Your 25-Minute Review Costs $66.67",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:22",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1122,
-      "slug": "your-retrieval-misses-57",
-      "title": "Your Retrieval Fails at 5.7%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:23",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -9653,6 +9829,34 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1527,
+      "slug": "your-grant-grew-25-4-directors-grew-3-9",
+      "title": "Your Grant Grew 25.4%: It Stops at Director",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T11:24:55",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1505,
+      "slug": "your-brokers-fund-bills-37",
+      "title": "Your Broker&#8217;s Fund Bills 37%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-05T19:52:39",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -9905,34 +10109,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:21",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1139,
-      "slug": "your-26-week-cliff-kills-4-years",
-      "title": "Your 26-Week Cliff Kills 4 Years",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:21",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1132,
-      "slug": "your-130000-cap-costs-the-credit",
-      "title": "Your $130,000 Cap Costs the Credit",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:22",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

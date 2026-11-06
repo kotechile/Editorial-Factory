@@ -1,6 +1,6 @@
 {
   "slug": "agent-tool-count-ceiling",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -19,6 +19,14 @@
       "title": "Agent Tool Context Data Hall",
       "bytes": 342957,
       "sha256": "sha256:3c07adc6ddb76c116073d910200d9286"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The Tool-List Budget. A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight.",
+      "caption": "The Tool-List Budget: More tools crash agent accuracy to one pick in seven.",
+      "title": "The Tool-List Budget",
+      "bytes": 353472,
+      "sha256": "sha256:96f75282fbd9e3d72cc19501ff32773ed2a9dcf2cad83ae285905c7310d650a4"
     }
   ],
   "style": "architectural_night",
@@ -46,8 +54,8 @@
   "local_path": "context/assets/illustrations/agent-tool-count-ceiling/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 353472,
-  "sha256": "sha256:96f75282fbd9e3d72cc19501ff32773ed2a9dcf2cad83ae285905c7310d650a4",
+  "bytes": 363326,
+  "sha256": "sha256:a0ef5e87ac4311bf264923aba81bda06b12da639460da3f475b7820f70b43e61",
   "source_hash": "sha256:d4b1fb9cb7519696ef839ee41f951329",
   "source_chars": 4531,
   "task_id": "0d682209656c1b6f4a4d22e20292b16e",
@@ -71,38 +79,38 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 353472,
+    "bytes": 363326,
     "quality": 88,
-    "sha256": "sha256:96f75282fbd9e3d72cc19501ff32773ed2a9dcf2cad83ae285905c7310d650a4",
+    "sha256": "sha256:a0ef5e87ac4311bf264923aba81bda06b12da639460da3f475b7820f70b43e61",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
     "kicker": "AI AGENT TOOL-SELECTION LIMITS",
     "title": "THE TOOL-LIST BUDGET",
     "hook": "More tools crash agent accuracy to one pick in seven",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 13.1,
+    "scrim": 120,
+    "contrast": 5.87,
     "target": 4.5,
-    "clutter": 0.088,
+    "clutter": 0.176,
     "region_rgb": [
-      9,
-      24,
-      41
+      38,
+      66,
+      104
     ],
     "binding_rgb": [
-      9,
-      39,
-      67
+      49,
+      93,
+      142
     ],
     "title_lines": [
       "THE TOOL-LIST",
       "BUDGET"
     ],
-    "subject": 0.042,
-    "ink_subject": 0.019,
-    "spike": 0.135,
+    "subject": 0.085,
+    "ink_subject": 0.021,
+    "spike": 0.216,
     "generated_at": "2026-10-08T22:42:09+00:00"
   }
 }

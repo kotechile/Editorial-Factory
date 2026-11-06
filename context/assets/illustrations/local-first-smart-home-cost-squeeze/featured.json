@@ -1,6 +1,6 @@
 {
   "slug": "local-first-smart-home-cost-squeeze",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -43,6 +43,14 @@
       "title": "Smart Home Costs Rise Both Ways",
       "bytes": 380317,
       "sha256": "sha256:d791f1601b70fd3051898c79650ef8ee807865504101a37a20b124f60c7a76c7"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Smart Home Costs Rise Both Ways. The Local-First Smart Home Cost. Split-screen diptych of a matte white smart home hub and a raw silicon",
+      "caption": "Smart Home Costs Rise Both Ways: Cloud paywalls and AI memory costs hit in one week.",
+      "title": "Smart Home Costs Rise Both Ways",
+      "bytes": 380317,
+      "sha256": "sha256:d791f1601b70fd3051898c79650ef8ee807865504101a37a20b124f60c7a76c7"
     }
   ],
   "style": "studio_object",
@@ -73,8 +81,8 @@
   "local_path": "context/assets/illustrations/local-first-smart-home-cost-squeeze/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 380317,
-  "sha256": "sha256:d791f1601b70fd3051898c79650ef8ee807865504101a37a20b124f60c7a76c7",
+  "bytes": 401712,
+  "sha256": "sha256:09749defeb519cf79df12eaa57cba14d3657cfdf3b7dac66fce6874fe3489abc",
   "source_hash": "sha256:6fab92195dae90bca31ba8fc3153eb90",
   "source_chars": 4594,
   "task_id": "88bb606b75f37f3440162be66084f8bc",
@@ -96,27 +104,28 @@
     "hook": "Cloud paywalls and AI memory costs hit in one week",
     "anchor": "top-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 6.72,
+    "scrim": 120,
+    "contrast": 5.05,
     "target": 4.5,
-    "clutter": 0.169,
+    "clutter": 0.215,
     "region_rgb": [
-      56,
-      55,
-      60
+      69,
+      71,
+      74
     ],
     "binding_rgb": [
-      81,
-      82,
-      87
+      98,
+      101,
+      106
     ],
     "title_lines": [
-      "SMART HOME COSTS",
-      "RISE BOTH WAYS"
+      "SMART HOME",
+      "COSTS RISE BOTH",
+      "WAYS"
     ],
-    "subject": 0.042,
-    "ink_subject": 0.024,
-    "spike": 0.115,
+    "subject": 0.194,
+    "ink_subject": 0.04,
+    "spike": 0.204,
     "generated_at": "2026-10-10T16:12:41+00:00"
   },
   "delivery": {
@@ -127,9 +136,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 380317,
-    "quality": 64,
-    "sha256": "sha256:d791f1601b70fd3051898c79650ef8ee807865504101a37a20b124f60c7a76c7",
+    "bytes": 401712,
+    "quality": 68,
+    "sha256": "sha256:09749defeb519cf79df12eaa57cba14d3657cfdf3b7dac66fce6874fe3489abc",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

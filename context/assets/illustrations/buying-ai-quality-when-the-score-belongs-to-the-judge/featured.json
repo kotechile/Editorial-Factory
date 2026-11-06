@@ -1,6 +1,6 @@
 {
   "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-  "revision": 20,
+  "revision": 21,
   "history": [
     {
       "revision": 1,
@@ -163,6 +163,14 @@
       "title": "The 915 Million Dollar Judge",
       "bytes": 403344,
       "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f"
+    },
+    {
+      "revision": 20,
+      "alt_text": "The 915 Million Dollar Judge. Isometric cutaway of a complex optical calibration mechanism with shifting lenses on a",
+      "caption": "The 915 Million Dollar Judge: Why AI quality scores are an expensive illusion.",
+      "title": "The 915 Million Dollar Judge",
+      "bytes": 403344,
+      "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f"
     }
   ],
   "style": "technical_isometric",
@@ -193,8 +201,8 @@
   "local_path": "context/assets/illustrations/buying-ai-quality-when-the-score-belongs-to-the-judge/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 403344,
-  "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f",
+  "bytes": 403283,
+  "sha256": "sha256:3c43a0af25c63cdd5c979ef2d678ebbdc36199ea803d19140d6980fa952ffcba",
   "source_hash": "sha256:81d7da4344ab0b556c51ece31168a1a9",
   "source_chars": 5204,
   "task_id": "4472ea7a1f15b265688e1bff4aa22834",
@@ -216,19 +224,19 @@
     "kicker": "AI OBSERVABILITY // LLM JUDGES",
     "title": "THE 915 MILLION DOLLAR JUDGE",
     "hook": "Why AI quality scores are an expensive illusion",
-    "anchor": "top-right",
+    "anchor": "top-left",
     "light": false,
-    "scrim": 15,
-    "contrast": 4.55,
+    "scrim": 120,
+    "contrast": 4.53,
     "target": 4.5,
-    "clutter": 0.182,
+    "clutter": 0.178,
     "region_rgb": [
-      146,
-      154,
-      150
+      144,
+      152,
+      148
     ],
     "binding_rgb": [
-      132,
+      130,
       149,
       156
     ],
@@ -236,9 +244,9 @@
       "THE 915 MILLION",
       "DOLLAR JUDGE"
     ],
-    "subject": 0.133,
-    "ink_subject": 0.054,
-    "spike": 0.45,
+    "subject": 0.134,
+    "ink_subject": 0.04,
+    "spike": 0.285,
     "generated_at": "2026-10-23T14:16:58+00:00"
   },
   "delivery": {
@@ -249,9 +257,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 403344,
+    "bytes": 403283,
     "quality": 80,
-    "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f",
+    "sha256": "sha256:3c43a0af25c63cdd5c979ef2d678ebbdc36199ea803d19140d6980fa952ffcba",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 19,
+  "revision": 20,
   "history": [
     {
       "revision": 1,
@@ -153,6 +153,14 @@
       "title": "The Cloud Repatriation Math",
       "bytes": 400544,
       "sha256": "sha256:cc40b708f613919a99429a765ecbaff8cf5e5b55a54acccaa806d67cdbc681bb"
+    },
+    {
+      "revision": 19,
+      "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block lo",
+      "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
+      "title": "The Cloud Repatriation Math",
+      "bytes": 400544,
+      "sha256": "sha256:cc40b708f613919a99429a765ecbaff8cf5e5b55a54acccaa806d67cdbc681bb"
     }
   ],
   "style": "component_assembly",
@@ -183,8 +191,8 @@
   "local_path": "context/assets/illustrations/cloud-repatriation-break-even/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 400544,
-  "sha256": "sha256:cc40b708f613919a99429a765ecbaff8cf5e5b55a54acccaa806d67cdbc681bb",
+  "bytes": 404397,
+  "sha256": "sha256:23eb9a00e7aee7d681a983357403d854297ae62251acd8e8bebeff10c411886d",
   "source_hash": "sha256:5ecae2727d05b042297fff1996bd08cd",
   "source_chars": 4169,
   "task_id": "df6cca46e4ba2401e5c606393a8b8e61",
@@ -209,26 +217,27 @@
     "anchor": "top-left",
     "light": true,
     "scrim": 120,
-    "contrast": 6.31,
+    "contrast": 6.41,
     "target": 5.5,
-    "clutter": 0.282,
+    "clutter": 0.387,
     "region_rgb": [
-      130,
-      123,
-      111
+      114,
+      108,
+      96
     ],
     "binding_rgb": [
-      168,
-      162,
-      150
+      167,
+      161,
+      149
     ],
     "title_lines": [
       "THE CLOUD",
-      "REPATRIATION MATH"
+      "REPATRIATION",
+      "MATH"
     ],
-    "subject": 0.122,
-    "ink_subject": 0.058,
-    "spike": 0.379,
+    "subject": 0.13,
+    "ink_subject": 0.04,
+    "spike": 0.149,
     "generated_at": "2026-10-09T02:07:45+00:00"
   },
   "delivery": {
@@ -239,9 +248,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 400544,
+    "bytes": 404397,
     "quality": 64,
-    "sha256": "sha256:cc40b708f613919a99429a765ecbaff8cf5e5b55a54acccaa806d67cdbc681bb",
+    "sha256": "sha256:23eb9a00e7aee7d681a983357403d854297ae62251acd8e8bebeff10c411886d",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

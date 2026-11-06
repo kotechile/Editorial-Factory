@@ -1,6 +1,6 @@
 {
   "slug": "up-ns-rail-merger-clears-summary-denial",
-  "revision": 29,
+  "revision": 30,
   "history": [
     {
       "revision": 1,
@@ -227,6 +227,14 @@
       "title": "UP-NS Rail Merger Advances",
       "bytes": 406539,
       "sha256": "sha256:c4287c6f9f2e632efb5c4c4df2198e57cbfc9a6f0016638ee7fa6fcd8ec82dc3"
+    },
+    {
+      "revision": 29,
+      "alt_text": "UP-NS Rail Merger Advances. Intermodal freight trains and shipping containers receding into the distance at a massive rail ya",
+      "caption": "UP-NS Rail Merger Advances: Shippers must map route exposure before Nov 18.",
+      "title": "UP-NS Rail Merger Advances",
+      "bytes": 406539,
+      "sha256": "sha256:c4287c6f9f2e632efb5c4c4df2198e57cbfc9a6f0016638ee7fa6fcd8ec82dc3"
     }
   ],
   "style": "long_lens_industry",
@@ -254,8 +262,8 @@
   "local_path": "context/assets/illustrations/up-ns-rail-merger-clears-summary-denial/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 406539,
-  "sha256": "sha256:c4287c6f9f2e632efb5c4c4df2198e57cbfc9a6f0016638ee7fa6fcd8ec82dc3",
+  "bytes": 398462,
+  "sha256": "sha256:e9a7c3d425ad949ac9de35bc9c112a3868483705032e2932882ca3f733fbbfff",
   "source_hash": "sha256:03821bdbb1e4457cdae0422b0393f0c5",
   "source_chars": 4604,
   "task_id": "afcd2a22daedbb81ce92ddeec2ac8146",
@@ -277,27 +285,28 @@
     "hook": "Shippers must map route exposure before Nov 18",
     "anchor": "top-right",
     "light": false,
-    "scrim": 0,
-    "contrast": 8.17,
+    "scrim": 120,
+    "contrast": 4.85,
     "target": 4.5,
-    "clutter": 0.056,
+    "clutter": 0.228,
     "region_rgb": [
-      210,
-      214,
-      217
+      187,
+      193,
+      198
     ],
     "binding_rgb": [
-      201,
-      205,
-      208
+      150,
+      159,
+      164
     ],
     "title_lines": [
       "UP-NS RAIL",
-      "MERGER ADVANCES"
+      "MERGER",
+      "ADVANCES"
     ],
-    "subject": 0.077,
-    "ink_subject": 0.053,
-    "spike": 0.173,
+    "subject": 0.062,
+    "ink_subject": 0.015,
+    "spike": 0.051,
     "generated_at": "2026-10-08T22:21:23+00:00"
   },
   "delivery": {
@@ -308,9 +317,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 406539,
+    "bytes": 398462,
     "quality": 68,
-    "sha256": "sha256:c4287c6f9f2e632efb5c4c4df2198e57cbfc9a6f0016638ee7fa6fcd8ec82dc3",
+    "sha256": "sha256:e9a7c3d425ad949ac9de35bc9c112a3868483705032e2932882ca3f733fbbfff",
     "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/durable-execution-not-a-transaction/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "A dark logic board bypassed by a glowing amber fiber optic relay in a moody, hazy data vault."
-image_caption: "AI agents and their tool contracts currently lack a shared mechanism to track data footprints, leaving a dangerous gap in execution safety."
+image_alt: "Durable Execution Is Not A Transaction. A dark logic board bypassed by a glowing amber fiber optic relay in a moody, hazy data vault."
+image_caption: "Durable Execution Is Not A Transaction: Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

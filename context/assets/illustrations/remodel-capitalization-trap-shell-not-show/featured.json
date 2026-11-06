@@ -1,6 +1,6 @@
 {
   "slug": "remodel-capitalization-trap-shell-not-show",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -57,6 +57,14 @@
       "title": "The Remodeling ROI Trap",
       "bytes": 340719,
       "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The Remodeling ROI Trap. Modern residential garage door illuminated warmly on a dark sleek home facade at twilight.",
+      "caption": "The Remodeling ROI Trap: Why boring exterior swaps outearn major kitchen upgrades.",
+      "title": "The Remodeling ROI Trap",
+      "bytes": 340719,
+      "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c"
     }
   ],
   "style": "architectural_night",
@@ -84,8 +92,8 @@
   "local_path": "context/assets/illustrations/remodel-capitalization-trap-shell-not-show/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 340719,
-  "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c",
+  "bytes": 344304,
+  "sha256": "sha256:49dd33eda4dee84881da831b1fcbf485ad3dea97df87c5f9dbac0029c92054d4",
   "source_hash": "sha256:f53976288b50820fa45a7f8145659645",
   "source_chars": 4327,
   "task_id": "15327b99ad1dec2952e2991bf720ba86",
@@ -107,27 +115,27 @@
     "hook": "Why boring exterior swaps outearn major kitchen upgrades",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 7.39,
+    "scrim": 120,
+    "contrast": 7.09,
     "target": 4.5,
-    "clutter": 0.104,
+    "clutter": 0.124,
     "region_rgb": [
-      50,
-      70,
-      91
+      54,
+      69,
+      86
     ],
     "binding_rgb": [
-      61,
-      78,
-      94
+      67,
+      80,
+      96
     ],
     "title_lines": [
       "THE REMODELING",
       "ROI TRAP"
     ],
-    "subject": 0.041,
-    "ink_subject": 0.018,
-    "spike": 0.129,
+    "subject": 0.074,
+    "ink_subject": 0.017,
+    "spike": 0.126,
     "generated_at": "2026-10-05T18:39:24+00:00"
   },
   "delivery": {
@@ -138,9 +146,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 340719,
+    "bytes": 344304,
     "quality": 88,
-    "sha256": "sha256:a2783d6760ac46f85cc2a17b2cbb75eebe89216b795b83b4c4e413af7ff0715c",
+    "sha256": "sha256:49dd33eda4dee84881da831b1fcbf485ad3dea97df87c5f9dbac0029c92054d4",
     "filename_rule": "<slug>-featured.jpg"
   }
 }
