@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:26:00Z",
+  "updated_at": "2026-11-06T11:01:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5734,6 +5734,24 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-05",
+      "public": false
+    },
+    {
+      "slug": "2026-11-06_your-connection-slips-six-months",
+      "title": "25,000 Hookups Stuck Six Months",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "A liability bill hits your panel",
+        "By the numbers",
+        "Where this bites a renovation",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-06",
       "public": false
     }
   ]
