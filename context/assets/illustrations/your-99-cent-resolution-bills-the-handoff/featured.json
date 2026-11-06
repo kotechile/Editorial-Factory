@@ -1,6 +1,6 @@
 {
   "slug": "your-99-cent-resolution-bills-the-handoff",
-  "revision": 10,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -76,6 +76,30 @@
       "title": "Your $0.99 Resolution Bills The Handoff",
       "bytes": 392943,
       "sha256": "sha256:0e3b7b381f0268fe432e83e228f83332328ceb4571bfe726835f8f880b36a2ea"
+    },
+    {
+      "revision": 10,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 396135,
+      "sha256": "sha256:15adf658cfb778e2d4bc6074e3698637cb019a28d4183bfed83b6b180c5ec182"
+    },
+    {
+      "revision": 11,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 389148,
+      "sha256": "sha256:55436f20ea7bf55a8a758fc49b0992a056771feac21ec84d653a3288ed5c17c5"
+    },
+    {
+      "revision": 12,
+      "alt_text": "Your $0.99 Resolution Bills The Handoff. Three turnstile gates in a data hall corridor, each with a mechanical metering register and a",
+      "caption": "Your $0.99 Resolution Bills The Handoff: One request, four prices, and the definition sentence is the term to negotiate.",
+      "title": "Your $0.99 Resolution Bills The Handoff",
+      "bytes": 390609,
+      "sha256": "sha256:6e92b28c814841173fa61e4ddd74c38e3548f4f85b10bc4e29ff3dfb052fa41f"
     }
   ],
   "style": "long_lens_industry",
@@ -108,8 +132,8 @@
   "local_path": "context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 396135,
-  "sha256": "sha256:15adf658cfb778e2d4bc6074e3698637cb019a28d4183bfed83b6b180c5ec182",
+  "bytes": 405012,
+  "sha256": "sha256:ac8ebf21fcfcc8cbbdab58d04b6f399b17e5f3cad3afc78cfdea510e3210520b",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -118,9 +142,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 396135,
+    "bytes": 405012,
     "quality": 88,
-    "sha256": "sha256:15adf658cfb778e2d4bc6074e3698637cb019a28d4183bfed83b6b180c5ec182",
+    "sha256": "sha256:ac8ebf21fcfcc8cbbdab58d04b6f399b17e5f3cad3afc78cfdea510e3210520b",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:9159c9de3837a53eb73dbea2ea7a506824691af110b74f298664adbb7244277d",
@@ -156,27 +180,27 @@
     "anchor": "bottom-right",
     "light": true,
     "scrim": 120,
-    "contrast": 6.2,
+    "contrast": 5.73,
     "target": 5.5,
-    "clutter": 0.321,
+    "clutter": 0.409,
     "region_rgb": [
-      92,
-      88,
-      83
+      98,
+      95,
+      92
     ],
     "binding_rgb": [
-      138,
-      134,
-      131
+      161,
+      156,
+      152
     ],
     "title_lines": [
       "YOUR $0.99",
       "RESOLUTION BILLS",
       "THE HANDOFF"
     ],
-    "subject": 0.206,
-    "ink_subject": 0.152,
-    "spike": 0.423,
+    "subject": 0.337,
+    "ink_subject": 0.158,
+    "spike": 0.396,
     "generated_at": "2026-11-06T07:21:44+00:00"
   }
 }

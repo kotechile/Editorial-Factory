@@ -56,7 +56,10 @@ _spec.loader.exec_module(ic)
 FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 FONT_REG = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
-SAFE_W, SAFE_H = 0.54, 0.50          # the scrim box, as a fraction of the frame
+SAFE_W, SAFE_H = 0.54, 0.50
+COLUMN_W = 0.44                      # the type measure: narrower than the safe box, so a
+#   quiet strip exists beside it for the block to sit in (owner, 2026-11-06: place the
+#   overlay where there is less detail, not over the subject)          # the scrim box, as a fraction of the frame
 # The delivery master: 2400x1350, 16:9, JPEG under 400KB (scripts/image_delivery.py). It was 1920px
 # with a bare q90 until 2026-10-24 — under the 1600px floor the CMS can forget its `large` rendition
 # and serve the original, and q90 at 1920 routinely ran over the 400KB budget.
@@ -68,6 +71,7 @@ SUBJECT_FLOOR = 0.22                 # type this far onto the artwork is on the 
 SUBJECT_TIGHT = 0.35                 # no spot in the frame is free — the render needs re-commissioning
 GRID_X, GRID_Y = 7, 5                # candidate origins swept across the frame for the real footprint
 PANEL_WEIGHT = 0.25                  # the feathered scrim panel is scored at this weight vs the ink
+DETAIL_WEIGHT = 0.55                 # how much a busy background costs the type block
 SCRIM_FLOOR = 120                    # every header carries at least a faint tint behind the type
 # Owner, 2026-11-06: "also add a subtle transparent background color to the overlay text (to
 # improve contrast)". The scrim used to be derived by luminance alone, so a frame whose pixels
@@ -293,7 +297,7 @@ def _subject_map(img, n: int = 192):
     off that spot.
     """
     import numpy as np
-    from PIL import ImageFilter
+    from PIL import Image, ImageFilter
     w, h = img.size
     nh = max(8, int(round(n * h / w)))
     small = img.convert("RGB").resize((n, nh), 1)
@@ -337,7 +341,59 @@ def _subject_map(img, n: int = 192):
     blurred = np.asarray(small.filter(ImageFilter.GaussianBlur(max(2, n // 22))), dtype=np.float32)
     coarse = spread(np.linalg.norm(a - blurred, axis=2), 18.0) * 0.6
 
-    return np.maximum(np.maximum(dominant, border), coarse)
+    # A LIT GROUND IS NOT A SUBJECT. The colour and border cues answer "how far is this from the
+    # background colour", so a smooth white wall against a dark floor scored as a subject and the
+    # type was pushed onto the busy middle of the frame (2026-11-06: the turnstile header). Weight
+    # those two cues by local texture: a region with detail is an object, a smooth one is a surface.
+    grey = np.asarray(small.convert("L"), dtype=np.float32) / 255.0
+    gy, gx = np.gradient(grey)
+    texture = np.hypot(gx, gy)
+    texture = np.asarray(Image.fromarray((np.clip(texture * 6.0, 0, 1) * 255).astype(np.uint8))
+                         .filter(ImageFilter.GaussianBlur(max(1, n // 64))), dtype=np.float32) / 255.0
+    texture = np.clip(texture / (float(np.percentile(texture, 97)) or 1.0), 0.0, 1.0)
+    weight = 0.25 + 0.75 * texture
+
+    return np.maximum(np.maximum(dominant * weight, border * weight), coarse)
+
+
+def _detail_map(img, n: int = 256):
+    """How busy each cell is — gradient magnitude, blurred, 0-1.
+
+    The subject map answers "is this the object"; it does not answer "is this detailed". A
+    perforated metal wall behind the type is background by colour and full of detail by eye, and
+    type laid over it is unreadable (owner, 2026-11-06: place the overlay "where there is less detail
+    in the image"). This map is that second question, kept at a higher resolution than the subject
+    map so fine texture survives.
+    """
+    import numpy as np
+    from PIL import Image, ImageFilter
+    w, h = img.size
+    nh = max(8, int(round(n * h / w)))
+    grey = img.convert("L").resize((n, nh), 1)
+    a = np.asarray(grey, dtype=np.float32) / 255.0
+    gy, gx = np.gradient(a)
+    mag = np.hypot(gx, gy)
+    # Blur so one hard edge is not a detail region, then normalise against the frame's own ceiling.
+    packed = Image.fromarray((np.clip(mag * 4.0, 0.0, 1.0) * 255).astype(np.uint8))
+    smooth = np.asarray(packed.filter(ImageFilter.GaussianBlur(1.6)), dtype=np.float32) / 255.0
+    hi = float(np.percentile(smooth, 97)) or 1.0
+    return np.clip(smooth / hi, 0.0, 1.0)
+
+
+def _detail_cost(dmap, rects, size, spot) -> float:
+    """Mean detail under the type, 0-1."""
+    w, h = size
+    sh, sw = dmap.shape
+    vals = []
+    for r in rects:
+        x0 = max(0, int((spot[0] + r[0]) / w * sw))
+        x1 = min(sw, max(x0 + 1, int((spot[0] + r[2]) / w * sw)))
+        y0 = max(0, int((spot[1] + r[1]) / h * sh))
+        y1 = min(sh, max(y0 + 1, int((spot[1] + r[3]) / h * sh)))
+        patch = dmap[y0:y1, x0:x1]
+        if patch.size:
+            vals.append(float(patch.mean()))
+    return sum(vals) / len(vals) if vals else 0.0
 
 
 def _patches(smap, rects, size):
@@ -522,27 +578,20 @@ def plan(img, anchor: str | None = None, rects=None, box=None, pad: int = 0) -> 
         return {"anchor": anchor, "x": spot[0], "y": spot[1], "forced": True,
                 "subject": round(cost, 3), "ink_subject": round(pooled, 3), "spike": round(spike, 3)}
 
+    dmap = _detail_map(img)
     scored = {}
     for spot in sorted(spots):
-        scored[spot] = _spot_cost(smap, rects, (w, h), spot, bw, bh, pad)
+        cost, pooled, spike = _spot_cost(smap, rects, (w, h), spot, bw, bh, pad)
+        # The type goes where the frame is QUIET, not merely where it is background: 0.55 of a
+        # detailed-but-neutral wall is enough to lose the block (owner, 2026-11-06).
+        scored[spot] = (cost + DETAIL_WEIGHT * _detail_cost(dmap, rects, (w, h), spot),
+                        pooled, spike)
 
     # The type does not sit in the middle of the frame (owner, 2026-11-06): a centred block reads as
     # a caption over the subject, and on the turnstile header the emptiest area WAS the centre. The
     # block is scored everywhere, then chosen from the outer region only — left or right third, top
     # or bottom band — unless nothing outside the band exists, in which case the plain score stands.
-    def _central(spot) -> bool:
-        # Measured on the INK, not the nominal box: the box carries empty space to the right of the
-        # shorter lines, so a box-centre test called a visibly centred block "top-right" (2026-11-06).
-        xs0 = [spot[0] + r[0] for r in rects]
-        xs1 = [spot[0] + r[2] for r in rects]
-        cx = (min(xs0) + max(xs1)) / 2
-        # Horizontal only: a top-placed block that spans the middle of the frame still reads as a
-        # centred caption (the turnstile header did exactly that).
-        return 0.38 * w <= cx <= 0.62 * w
-
-    outer = {spot: c for spot, c in scored.items() if not _central(spot)}
-    candidates = outer or scored
-    best = min(candidates, key=lambda s: candidates[s][0])
+    best = min(scored, key=lambda s: scored[s][0])
     # The owner's design anchors inset in the top-left, so it keeps its place unless another spot is
     # MEANINGFULLY freer — `SWITCH_MARGIN` on the ratio, which stops a coin-flip between two empty
     # spots from drifting the design, plus `MIN_GAIN` on the absolute, which stops a clean frame
