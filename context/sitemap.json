@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:01:34Z",
+  "updated_at": "2026-11-06T19:16:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5758,7 +5758,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-06",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-claim-owes-60-day-interest/"
     },
     {
       "slug": "2026-11-06_your-connection-slips-six-months",
@@ -5795,7 +5796,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-11-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-espp-clock-is-18-months-not-12/"
     },
     {
       "slug": "2026-11-06_your-grant-grew-25-4-directors-grew-3-9",
@@ -5832,7 +5834,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-11-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-iso-ceiling-fixed-at-vesting/"
     }
   ]
 }

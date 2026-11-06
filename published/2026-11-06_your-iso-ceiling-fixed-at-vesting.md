@@ -12,6 +12,12 @@ meta_title: "Your ISO Ceiling: $100,000, Dead Before Exercise"
 meta_title_source: "derived_from_title"
 meta_description: "Your incentive stock option (ISO) cap is $100,000 of stock per calendar year, and the calendar that decides the cap is set long before you sign an exercise…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-iso-ceiling-fixed-at-vesting/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric cutaway of a steel filing cabinet with a brass date wheel and paper option certificates in trays, one stack split by a red tag."
+image_caption: "The $100,000 ceiling is set at vesting, so an acceleration can cost ISO status before the exercise."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

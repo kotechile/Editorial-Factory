@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T14:18:51+00:00",
+  "generated_at": "2026-11-06T19:16:54+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,44 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-iso-ceiling-fixed-at-vesting",
+      "title": "Your ISO Ceiling: $100,000, Dead Before Exercise",
+      "url": "https://giniloh.com/your-iso-ceiling-fixed-at-vesting/",
+      "path": "/your-iso-ceiling-fixed-at-vesting/",
+      "sites_live": {
+        "giniloh.com": "/your-iso-ceiling-fixed-at-vesting/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your incentive stock option (ISO) cap is $100,000 of stock per calendar year, and the calendar that decides the cap is set long before you sign an exercise\u2026",
+      "modified": "2026-11-06T19:01:33",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-espp-clock-is-18-months-not-12",
+      "title": "Your ESPP Clock: 18 Months, Not 12",
+      "url": "https://giniloh.com/your-espp-clock-is-18-months-not-12/",
+      "path": "/your-espp-clock-is-18-months-not-12/",
+      "sites_live": {
+        "giniloh.com": "/your-espp-clock-is-18-months-not-12/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your company's employee stock purchase plan (ESPP) sells you stock at 85 cents on the dollar, and the summary says hold a year for the tax break.",
+      "modified": "2026-11-06T17:51:03",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3100,6 +3138,29 @@
       ],
       "excerpt": "Dropping a cloud plan moves the true cost of a camera straight to a hard drive in your closet, because the camera ships writing 6,144 kilobits a second for a\u2026",
       "modified": "2026-10-31T04:48:57",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-claim-owes-60-day-interest",
+      "title": "60-Day Claim Interest You Never Ask",
+      "url": "https://wellroost.com/your-claim-owes-60-day-interest/",
+      "path": "/your-claim-owes-60-day-interest/",
+      "sites_live": {
+        "wellroost.com": "/your-claim-owes-60-day-interest/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Late storm-claim payments in Florida earn interest back to the day the insurer heard about the loss. State law gives a property insurer 60 days to pay or\u2026",
+      "modified": "2026-11-06T18:18:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9805,20 +9866,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1142,
-      "slug": "your-carbon-report-skips-2-lines",
-      "title": "Your Carbon Report Skips 2 Lines: Trucks Aren&#8217;t Counted",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:21",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -9829,6 +9876,34 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1532,
+      "slug": "your-iso-ceiling-fixed-at-vesting",
+      "title": "Your ISO Ceiling: $100,000, Dead Before Exercise",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T19:13:46",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1529,
+      "slug": "your-espp-clock-is-18-months-not-12",
+      "title": "Your ESPP Clock: 18 Months, Not 12",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T17:51:03",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -10090,20 +10165,6 @@
       "id": 1148,
       "slug": "your-cheap-part-a-599-bill",
       "title": "Your Cheap Part, a $599 Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:21",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1146,
-      "slug": "why-your-swap-died-at-25",
-      "title": "Why Your Swap Died at 25%",
       "url": "",
       "categories": [],
       "category_ids": [],

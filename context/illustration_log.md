@@ -443,3 +443,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-06 | `your-grant-grew-25-4-directors-grew-3-9` | career_velocity_equity_engineering | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-grant-grew-25-4-directors-grew-3-9/featured.jpg` |
 | 2026-11-06 | `your-espp-clock-is-18-months-not-12` | concentrated_equity_portfolio_capital | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-espp-clock-is-18-months-not-12/featured.jpg` |
 | 2026-11-06 | `your-claim-owes-60-day-interest` | resilient_home_assets | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-claim-owes-60-day-interest/featured.jpg` |
+| 2026-11-06 | `your-iso-ceiling-fixed-at-vesting` | career_velocity_equity_engineering | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-iso-ceiling-fixed-at-vesting/featured.jpg` |

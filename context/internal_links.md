@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-06T14:18:51+00:00
+# Internal-link candidates — 2026-11-06T19:16:54+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 52 live article(s), 16 other target(s)
+## giniloh.com — 54 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -48,9 +48,11 @@ Category hubs this front serves: —
 - [Your Buyback Gap: $39.8B to $0](https://giniloh.com/your-buyback-gap-39-8b-to-zero/) — —
 - [Your Cheap Part, a $599 Bill](https://giniloh.com/your-cheap-part-a-599-bill/) — —
 - [Your Disks: 35% Dead by Year Six](https://giniloh.com/your-disks-35-dead-by-year-six/) — —
+- [Your ESPP Clock: 18 Months, Not 12](https://giniloh.com/your-espp-clock-is-18-months-not-12/) — —
 - [Your Grant Grew 25.4%: It Stops at Director](https://giniloh.com/your-grant-grew-25-4-directors-grew-3-9/) — —
 - [Your Home Server's 45-Day Patch Gap](https://giniloh.com/your-home-servers-45-day-patch-gap/) — —
 - [Your IPO Payday: A 47.7% Tax Bill](https://giniloh.com/your-ipo-payday-tax-bill/) — —
+- [Your ISO Ceiling: $100,000, Dead Before Exercise](https://giniloh.com/your-iso-ceiling-fixed-at-vesting/) — —
 - [Your LLC Bill: 75% Until 2028](https://giniloh.com/your-llc-bill-75-until-2028/) — —
 - [Your Overage Page Costs $0.20](https://giniloh.com/your-ink-plan-bills-20-cents/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
@@ -75,7 +77,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 75 live article(s), 22 other target(s)
+## wellroost.com — 76 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -85,6 +87,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [3 Days to Kill Your Deposit](https://wellroost.com/kill-your-deposit-in-3-days/) — Tools & Equipment
 - [3% Cap Never Covers Your Addition](https://wellroost.com/3-percent-cap-never-covers-your-addition/) — Energy & Efficiency
 - [4,726 Boilers, 51,825 Silent Alarms](https://wellroost.com/4726-boilers-51825-silent-alarms/) — Home Diagnostic Tools
+- [60-Day Claim Interest You Never Ask](https://wellroost.com/your-claim-owes-60-day-interest/) — Energy & Efficiency
 - [A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying ‘Cloud.](https://wellroost.com/cloud-update-bricked-the-fridge-local-first/) — Smart Home & Security
 - [A Smart Sprinkler Pays Back at Your Top Water Tier, Not the Spec Sheet](https://wellroost.com/smart-irrigation-payback-water-tier/) — Energy & Efficiency
 - [Borrow at 8% to remodel, or let your battery earn on the grid](https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/) — Energy & Efficiency
@@ -489,8 +492,9 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1172 `your-tooling-assist-is-dutiable` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1167 `7-days-notice-rewrites-your-duty` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1158 `your-routes-5x-stop-gap` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1142 `your-carbon-report-skips-2-lines` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1532 `your-iso-ceiling-fixed-at-vesting` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1529 `your-espp-clock-is-18-months-not-12` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1527 `your-grant-grew-25-4-directors-grew-3-9` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1505 `your-brokers-fund-bills-37` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1489 `italy-bills-26-to-leave` — published in the CMS but absent from the frontend sitemap
@@ -510,4 +514,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1155 `your-125-exam-costs-122-hours` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1152 `your-61-day-window-costs-the-position` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1148 `your-cheap-part-a-599-bill` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1146 `why-your-swap-died-at-25` — published in the CMS but absent from the frontend sitemap

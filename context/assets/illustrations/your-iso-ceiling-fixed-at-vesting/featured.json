@@ -1,0 +1,117 @@
+{
+ "slug": "your-iso-ceiling-fixed-at-vesting",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Low steel filing cabinet with brass date wheel and paper certificate trays on an oak desk.",
+   "caption": "A modular steel filing cabinet sorts paper option grants by the calendar year each slice first becomes buyable, with a rust-red divider marking the $100,000 ceiling.",
+   "title": "Calendar-indexed option grant cabinet cutaway",
+   "bytes": 362555,
+   "sha256": "sha256:13a9461d2ce26ce28e8021bc5a469fc1"
+  }
+ ],
+ "style": "technical_isometric",
+ "style_label": "Technical isometric cutaway",
+ "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "On a home office desk of warm oak, a clean isometric cutaway illustration of a low modular steel filing cabinet with four open-fronted tray compartments in a vertical stack. A brass date wheel with twelve raised pegs sits on the cabinet's top left, its pointer aimed at the third tray. Each tray holds a neat stack of cream paper certificates; the third tray's stack is split by a thin rust-red brass partition, one certificate caught mid-gap. Bone white, graphite and rust red. Hard raking key light from upper left, long contact shadows to the right, technical drawing style, thin line weight, axonometric projection, unlabelled, asymmetric composition with empty margin on the right, no people, no text, no numbers.",
+ "negative_prompt": "garbled text, random letters, numbers, watermarks",
+ "rationale": "The technical isometric render draws the regulatory calendar-year sorting logic as a legible axonometric office mechanism, matching the career/compensation world and avoiding a generic document flatlay.",
+ "cue": "the calendar that decides the cap",
+ "subject": "a low steel filing cabinet with a brass calendar date wheel and paper option certificate trays",
+ "core_thesis": "The calendar year each option slice first becomes buyable, valued at the grant-date share price, determines whether it remains an ISO, so vesting and acceleration clauses set the $100,000 cap before exercise.",
+ "core_conflict": "calendar-year grant value vs the $100,000 ISO ceiling",
+ "composition": "asymmetric isometric cutaway, subject left, empty margin right",
+ "alt_text": "Isometric cutaway of a steel filing cabinet with a brass date wheel and paper option certificates in trays, one stack split by a red tag.",
+ "caption": "The $100,000 ceiling is set at vesting, so an acceleration can cost ISO status before the exercise.",
+ "title": "Your ISO Ceiling: $100,000, Dead Before Exercise",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {
+  "style": "technical_isometric"
+ },
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-iso-ceiling-fixed-at-vesting/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 401514,
+ "sha256": "sha256:e3aefcbd6afb24f16f15c04a87bd392315bf62e662374ecf02b3e8bb10386e0a",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 401514,
+  "quality": 76,
+  "sha256": "sha256:e3aefcbd6afb24f16f15c04a87bd392315bf62e662374ecf02b3e8bb10386e0a",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:82bab038ae4ef0856ad616d9c082486800fe7fa1addf241e16aeb562a1f2eb47",
+ "render_phash": "2021340160117200a4809482cc89c688c448c328d3146310f290f9941b922792",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "An isometric cutaway of a small white and red filing cabinet on a wooden surface, featuring a brass peg wheel on top and three open drawers filled with stacks of bordered paper, positioned on the left side of the frame.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.95,
+  "reason": "The image explicitly visualizes the ordered metaphor of a calendar wheel and option certificate trays, directly illustrating the article's mechanism of calendar-year-based ISO limits."
+ },
+ "source_hash": "sha256:d912afc10e2b0cc812cd7b3269bedcfe",
+ "source_chars": 5314,
+ "task_id": "3e6940e96b5721244999d3860d192b0a",
+ "credits": 18.0,
+ "cost_ms": 32,
+ "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_93e1352d9638b9f6421ae8bcb765105f.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "On a home office desk of warm oak, a clean isometric cutaway illustration of a low modular steel filing cabinet with four open-fronted tray compartments in a vertical stack. A brass date wheel with twelve raised pegs sits on the cabinet's top left, its pointer aimed at the third tray. Each tray holds a neat stack of cream paper certificates; the third tray's stack is split by a thin rust-red brass partition, one certificate caught mid-gap. Bone white, graphite and rust red. Hard raking key light from upper left, long contact shadows to the right, technical drawing style, thin line weight, axonometric projection, unlabelled, asymmetric composition with empty margin on the right, no people, no text, no numbers.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-11-06T19:12:30+00:00",
+ "overlay": {
+  "kicker": "EQUITY COMPENSATION // $100K CAP",
+  "title": "YOUR $100K ISO CAP DIES BEFORE EXERCISE",
+  "hook": "The $100K cap is set at vesting, so an acceleration can kill ISO status before exercise",
+  "anchor": "top-right",
+  "light": false,
+  "scrim": 120,
+  "contrast": 11.78,
+  "target": 4.5,
+  "clutter": 0.006,
+  "region_rgb": [
+   248,
+   244,
+   237
+  ],
+  "binding_rgb": [
+   246,
+   243,
+   234
+  ],
+  "title_lines": [
+   "YOUR $100K ISO",
+   "CAP DIES BEFORE",
+   "EXERCISE"
+  ],
+  "subject": 0.008,
+  "ink_subject": 0.0,
+  "spike": 0.0,
+  "generated_at": "2026-11-06T19:12:30+00:00"
+ }
+}
