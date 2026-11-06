@@ -1,0 +1,115 @@
+{
+  "slug": "your-battery-expires-at-500-cycles",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Unbranded smartphone battery beside a mechanical cycle counter on a weathered concrete workbench",
+      "caption": "The battery's published cycle count, embodied by a mechanical counter with a reset lever, frames the swap as a consumable parts decision.",
+      "title": "Battery Cycle Counter on Workbench",
+      "bytes": 373947,
+      "sha256": "sha256:665db74419f4e88333ae1266010f3f09"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D render of a flat rectangular unbranded smartphone battery with rounded corners, two gold contact pads, and a thin ribbon cable, resting on a weathered concrete workbench at the left third. Beside it on the right stands a mechanical cycle counter module: a cylindrical tally drum with notched ridges and a small latching reset lever, mounted on a brushed steel bracket. One directional key light from the left rakes across the matte surfaces, throwing long contact shadows to the right. Palette: bone white, graphite, olive. Asymmetric off-centre composition with generous negative space. No text, no logos, no digits.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible text, blurry text, embossed text, printed numbers, digits, UI elements",
+  "rationale": "The story turns on a numerical rating (cycle count) governing a physical part's lifespan; a matte clay render can construct the battery and counting mechanism as a tangible assembly without relying on legible text, avoiding the previous rejection's illegible lettering and ambiguous power-bank look.",
+  "cue": "the swap that resets the counter",
+  "subject": "an unbranded smartphone battery beside a mechanical cycle counter with a reset lever",
+  "core_thesis": "A phone battery's service life is published as a full-charge-cycle count\u2014500 for older iPhones, 1000 from the 15, and 800 as the EU minimum\u2014making the battery a $47-$99 parts decision, not a handset replacement.",
+  "core_conflict": "Published cycle-count ratings (500/1000/800) collide with real-world capacity fade and warranty timing, forcing owners to weigh a cheap battery swap against replacing an otherwise functional handset.",
+  "composition": "asymmetric off-centre composition with the battery at the left third and the counter at the right, generous negative space, 16:9",
+  "alt_text": "Your Battery Dies At 500 Cycles. Unbranded smartphone battery beside a mechanical cycle counter on a weathered concrete workbench",
+  "caption": "Your Battery Dies At 500 Cycles: A phone battery dies on a published cycle count, not a calendar date.",
+  "title": "Your Battery Dies At 500 Cycles",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-battery-expires-at-500-cycles/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 405988,
+  "sha256": "sha256:85def371837993d87c07e7ba3592d5c3f3a2b5ab527894338195b18ac4d85e05",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 405988,
+    "quality": 76,
+    "sha256": "sha256:85def371837993d87c07e7ba3592d5c3f3a2b5ab527894338195b18ac4d85e05",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6cf9e766c95f3e5084d1d722d93119ffd6f1d83e6f3d55d3e888f4698677aa92",
+  "render_phash": "ee39be731f21f9e6f9a5d9389d262f172f8d2d879cf3907930bcd69eef8afd8c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A matte 3D render shows an unbranded rectangular smartphone battery with a connector cable lying on a textured concrete surface beside a small mechanical cycle counter mounted on a metal bracket.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.96,
+    "reason": "The image directly depicts the article's subject: a phone battery paired with a mechanical cycle counter, matching the headline and the battery-cycle mechanism."
+  },
+  "source_hash": "sha256:c5a84f44bbfb4c763fd3378af0ea85b9",
+  "source_chars": 4908,
+  "task_id": "e6ad6a064e7a9eaf55e1b082c4582fac",
+  "credits": 18.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_4ac26fe5dba706b4a2a88c1c1b69cfe1.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D render of a flat rectangular unbranded smartphone battery with rounded corners, two gold contact pads, and a thin ribbon cable, resting on a weathered concrete workbench at the left third. Beside it on the right stands a mechanical cycle counter module: a cylindrical tally drum with notched ridges and a small latching reset lever, mounted on a brushed steel bracket. One directional key light from the left rakes across the matte surfaces, throwing long contact shadows to the right. Palette: bone white, graphite, olive. Asymmetric off-centre composition with generous negative space. No text, no logos, no digits.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-06T19:45:28+00:00",
+  "overlay": {
+    "kicker": "CONSUMER TECH // BATTERY CYCLES",
+    "title": "YOUR BATTERY DIES AT 500 CYCLES",
+    "hook": "A phone battery dies on a published cycle count, not a calendar date",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.8,
+    "target": 4.5,
+    "clutter": 0.146,
+    "region_rgb": [
+      125,
+      110,
+      88
+    ],
+    "binding_rgb": [
+      137,
+      125,
+      103
+    ],
+    "title_lines": [
+      "YOUR BATTERY",
+      "DIES AT 500",
+      "CYCLES"
+    ],
+    "subject": 0.166,
+    "ink_subject": 0.024,
+    "spike": 0.181,
+    "generated_at": "2026-11-06T19:45:28+00:00"
+  }
+}

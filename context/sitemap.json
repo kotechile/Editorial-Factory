@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:32:57Z",
+  "updated_at": "2026-11-06T19:46:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5757,6 +5757,23 @@
         "Related reading"
       ],
       "target_persona": "supply_chain_architect",
+      "date": "2026-11-06",
+      "public": false
+    },
+    {
+      "slug": "2026-11-06_your-battery-expires-at-500-cycles",
+      "title": "Your Battery Dies at 500 Cycles",
+      "vertical": "consumer_asset_repair_replace_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the counter beats the calendar",
+        "By the numbers",
+        "What the swap actually buys",
+        "The catch"
+      ],
+      "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-06",
       "public": false
     },
