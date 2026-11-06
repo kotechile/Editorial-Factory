@@ -14,6 +14,12 @@ meta_title: "25,000 Hookups Stuck Six Months"
 meta_title_source: "derived_from_title"
 meta_description: "In October, Pacific Gas and Electric (PG&E) warned about 25,000 prospective hookups that they could be stuck as long as six months past the date they were…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-connection-slips-six-months/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "Utility meter with a red lockout tag on a house wall at dusk, a home battery visible in the open garage"
+image_caption: "A tagged meter and a waiting home battery: after the wildfire bill died, the connection became the slowest step."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -55,15 +61,12 @@ The bit that stuck with me is that the letters are a risk warning, not a list of
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Battery Gap Is 85%" -> /85-percent-of-batteries-cant-save-you/ [same site (wellroost.com); same category; topical overlap: electric, october, pacific] Link "Your Battery Gap Is 85%" in the section where the article touches electric, october, pacific. -->
-<!-- internal-link hint: "California FAIR Plan Premiums Jump 29.1% Oct 15" -> /california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/ [same site (wellroost.com); same category; topical overlap: october] Link "California FAIR Plan Premiums Jump 29.1% Oct 15" in the section where the article touches october. -->
-<!-- internal-link hint: "Swapping your gas furnace for a heat pump tax credit 2026 just…" -> /swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/ [same site (wellroost.com); same category; topical overlap: electric] Link "Swapping your gas furnace for a heat pump tax credit 2026 just…" in the section where the article touches electric. -->
+<!-- internal-links:start — curated for rule 12: same vertical, same category, two shared subject tokens each -->
 ## Related reading
 
-- [Your Battery Gap Is 85%](/85-percent-of-batteries-cant-save-you/) — more on Energy & Efficiency
-- [California FAIR Plan Premiums Jump 29.1% Oct 15](/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/) — more on Energy & Efficiency
-- [Swapping your gas furnace for a heat pump tax credit 2026 just…](/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — more on Energy & Efficiency
+- [Your Battery Gap Is 85%](/85-percent-of-batteries-cant-save-you/) — battery, outage and grid: why most storage sits on the wrong side of the meter
+- [Your Home Backup Battery Is Sized Against the Wrong Number](/backup-battery-sizing-critical-loads/) — backup, critical loads and the panel that has to carry them
+- [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](/heat-pumps-cheaper-to-run-pricier-to-buy/) — heat pumps, equipment price and the service that feeds them
 <!-- internal-links:end -->
 
 ## Sources

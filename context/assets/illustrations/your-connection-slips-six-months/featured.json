@@ -1,0 +1,113 @@
+{
+  "slug": "your-connection-slips-six-months",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Utility meter with red lockout tag beside a dark home battery at dusk",
+      "caption": "A red lockout tag on the utility meter marks the stalled connection date that delays a home battery from powering the house.",
+      "title": "PG&E hookup delay meter lockout at dusk",
+      "bytes": 373921,
+      "sha256": "sha256:1fa0cd23b9168d91a7353ffa8c329927"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On the exterior wall beside the driveway of a suburban house at blue hour, an electric utility meter socket off-center left with a bright red plastic lockout tag inserted in the meter ring, its display dark; an open garage door to the right reveals a wall-mounted home battery with a small amber status light glowing but no power. Deep pine green front door, bone white siding, graphite concrete driveway. Cool blue ambient light from the left, warm light spilling from the garage door, 35mm lens f/8, long exposure, clean geometry, extreme asymmetry, no people, no text, no logos, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, readable text",
+  "rationale": "Architectural night keeps the story in the real home environment and uses the recognizable lockout tag on the meter as the physical artifact of the delayed hookup; it contrasts the dark meter with the glowing but unpowered battery to show the utility schedule as the bottleneck.",
+  "cue": "the application has become the slowest step",
+  "subject": "an electric utility meter socket with a bright red plastic lockout tag inserted in the meter ring, its display dark, beside an open garage revealing a wall-mounted home battery with a small amber status light glowing but no power",
+  "core_thesis": "The utility's interconnection schedule, not the battery, roof, or panel, is now the long-lead item in a household hardening plan.",
+  "core_conflict": "Utility budget deferral and wildfire liability exposure versus homeowners' need for timely grid interconnection to activate resilience investments.",
+  "composition": "extreme asymmetry with meter off-center left and warm garage interior on right",
+  "alt_text": "Utility meter with a red lockout tag on a house wall at dusk, a home battery visible in the open garage",
+  "caption": "A tagged meter and a waiting home battery: after the wildfire bill died, the connection became the slowest step.",
+  "title": "25,000 Hookups Stuck Six Months",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-connection-slips-six-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 398742,
+  "sha256": "sha256:e6cdbe0811baba393e47e89c83d4e57a9c5fa2869c5c5df35aa6339fb00504de",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 398742,
+    "quality": 84,
+    "sha256": "sha256:e6cdbe0811baba393e47e89c83d4e57a9c5fa2869c5c5df35aa6339fb00504de",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e7a5391d538fab659b5f108acdbb30a5add3e5e567aa830e9c8e16b62787e40e",
+  "render_phash": "c1ff607f3163397b32573d530d530c57044f0347016701630172c60f004f00cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A house exterior with white horizontal siding, a green door at left, an electric meter with a red tag mounted on the wall, and an open garage at right revealing a wall-mounted home battery with a small amber light.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.92,
+    "reason": "The locked-out meter and dark home battery directly depict the stalled utility interconnection and household hardening subject of the article."
+  },
+  "source_hash": "sha256:f408f441fadcda7ec257ee71fbc03862",
+  "source_chars": 4639,
+  "task_id": "69973b621ca9aeb8d377fec31b4bdab6",
+  "credits": 5.0,
+  "cost_ms": 171,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/69973b621ca9aeb8d377fec31b4bdab6_1793963666303.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "On the exterior wall beside the driveway of a suburban house at blue hour, an electric utility meter socket off-center left with a bright red plastic lockout tag inserted in the meter ring, its display dark; an open garage door to the right reveals a wall-mounted home battery with a small amber status light glowing but no power. Deep pine green front door, bone white siding, graphite concrete driveway. Cool blue ambient light from the left, warm light spilling from the garage door, 35mm lens f/8, long exposure, clean geometry, extreme asymmetry, no people, no text, no logos, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-06T11:14:41+00:00",
+  "overlay": {
+    "kicker": "UTILITY HOOKUP DELAYS // WILDFIRE LIABILITY",
+    "title": "25,000 HOOKUPS STUCK SIX MONTHS",
+    "hook": "After the wildfire bill died, the meter became the slowest step in home hardening",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.3,
+    "target": 5.5,
+    "clutter": 0.344,
+    "region_rgb": [
+      89,
+      130,
+      164
+    ],
+    "binding_rgb": [
+      119,
+      168,
+      211
+    ],
+    "title_lines": [
+      "25,000 HOOKUPS",
+      "STUCK SIX",
+      "MONTHS"
+    ],
+    "subject": 0.238,
+    "ink_subject": 0.135,
+    "spike": 0.352,
+    "generated_at": "2026-11-06T11:14:41+00:00"
+  }
+}

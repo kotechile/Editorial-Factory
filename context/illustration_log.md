@@ -439,3 +439,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-05 | `your-planning-cycle-costs-7-managers` | demand_sensing_advanced_sop | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-planning-cycle-costs-7-managers/featured.jpg` |
 | 2026-11-06 | `your-99-cent-resolution-bills-the-handoff` | enterprise_ai_finops | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-99-cent-resolution-bills-the-handoff/featured.jpg` |
 | 2026-11-06 | `your-planning-cycle-costs-7-managers` | demand_sensing_advanced_sop | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-planning-cycle-costs-7-managers/featured.jpg` |
+| 2026-11-06 | `your-connection-slips-six-months` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-connection-slips-six-months/featured.jpg` |
