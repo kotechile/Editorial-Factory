@@ -826,6 +826,32 @@ as a general rule, and compute the honest number at the reader's own lead time: 
 13.4% at a one-week supplier, 4.3% at 35 days and 2.0% on a 90-day clock. The gain that does scale with order
 frequency is cycle stock (half the order quantity), not the buffer.
 
+**Hosts probed live 2026-11-06, building a claim-clock / statutory-interest brief (the `resilient_home_assets`
+evergreen).** The Florida Senate's statute pages and the Washington code pages both carry their section text as
+plain text, and the figure matcher tolerates a year navigator but not a hyphenated section number:
+`flsenate.gov/Laws/Statutes/<year>/<section>` — the page's 1998–2027 session list is four-digit, so `(?<![\d.])`
+excludes it and `7 calendar days`, `30 days`, `60 days` and `55.03` all land in the operative sentence (§ 627.70131:
+the seven-day acknowledgment, the 30-day inspection with the adjuster's name and license number, and the (7)(a)
+pay-or-deny clock with interest at the § 55.03 rate accruing from notice, not waivable); § 55.03's `400 basis points`
+and § 627.70132's `18 months` supplemental bar verify cleanly too. **On `app.leg.wa.gov/WAC/default.aspx?cite=<section>`
+it is the section number in the page's own title bar that poisons short digits** — `30` in "284-30-380" matches before
+the "within 30 calendar days … accepted or denied" sentence, so that rule rides in prose and the row leads on
+`three business days` from WAC 284-30-330(15) instead. Unreachable to the verifier on this beat:
+`tdi.texas.gov/pubs/consumer/…` and `tdi.texas.gov/consumer/…`, `insurance.wa.gov/after-disaster-or-emergency`,
+`iii.org/fact-statistic/facts-statistics-water-damage` and `iii.org/article/…`, `content.naic.org`,
+`myfloridacfo.com/division/consumers/…`, `law.justia.com`, and `adjustersinternational.com` — which is why an
+ordinance-or-law candidate and a sump-runtime candidate were dropped (7.7–8.0) rather than written on carrier
+explainers. **A statute pair is a legitimate 2-host floor, but say so in the run log:** four pages of one legislature
+are one source wearing a costume, whereas Florida's and Washington's code books are different sources; a third host
+(a state regulator's consumer guide) is worth probing on the next pass.
+**`illustration_overlay.py` resets the sidecar's `alt_text`/`caption` to the composited overlay copy (and rewrites the
+artifact's `image_alt`), so an alt reconciled before an overlay re-composite is undone (learned 2026-11-06).** On this
+run the media record shipped with the headline glued to a truncated clause ("… on a kitchen"); the working order is
+re-composite first, then reconcile the sidecar, the artifact, the media record over REST and the row's
+`metadata.illustration.alt_text` / `metadata.wordpress.media_alt` in one pass, then `wp_draft.py --slug … --reimage`.
+Its own auto placement also ran the type block under an envelope, and `--anchor bottom-left` re-composited from the
+retained `featured.base.jpg` for zero credits.
+
 ## 5. Handoff
 
 **The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
