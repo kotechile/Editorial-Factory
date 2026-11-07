@@ -155,6 +155,35 @@ ARTICLE VOICE — the long-form body (skills/claude_humanizer.md §3.9; verify.s
 """
 
 
+DICTION_STRUCTURE_RULES = """
+DICTION AND STRUCTURE — the reader must never translate your nouns (skills/story_draft.md §3.6;
+scripts/readability_critic.py HOLDS a push on jargon, enumeration, matrix and sources):
+- NAME THE THING, NEVER A METAPHOR FOR IT. Banned outright: "the fact" where state is meant (write
+  SESSION STATE, EXECUTION STATE or CONTEXT PAYLOAD), "hop owner(s)" (write SYSTEMS ARCHITECT, SERVICE
+  OWNER, CALLING AGENT), "the wire" (write THE PROTOCOL LAYER or THE CONNECTION), "the line moved/sits"
+  (name the revision, e.g. "THE JULY 2026 MCP REVISION"). The same pass kills "this one", "that move",
+  "the middle option": name the noun again.
+- GROUND EVERY ENTITY AT FIRST MENTION, with a 5-10 word functional anchor, where it first appears and
+  not in a glossary: "Google's Agent-to-Agent (A2A) protocol gives the receiving agent a lasting task
+  object", "the line-count tool (cloc)". This covers alphanumeric tokens (A2A, F1, p95) and lowercase
+  tool names, not only ALL-CAPS abbreviations.
+- ENUMERATE WHAT A HEADING PROMISES. A heading carrying a count ("Three Ways to Manage Agent State")
+  labels every item in order — "1. **In-call round trips.**", "2. **Server-issued state handles.**",
+  "3. **Full task protocols.**" — BEFORE analysing any of them.
+- TABULATE WHAT YOU COMPARE. Two or more options weighed across three or more variables get a Markdown
+  matrix, one row per option: | Pattern | State location | Overhead | Primary failure mode | Best for |.
+  Three or more "A against B" figure comparisons left in prose is a gate failure.
+- ONE IDEA PER CLAUSE, 22 WORDS A SENTENCE ON AVERAGE. If a sentence contrasts two protocols AND
+  explains a failure mode, split it — but never chop a sentence that already parses; the remedy for a
+  dense body is a plain-word swap plus splitting only the sentences over 28 words.
+- `## Sources` IS A LIST ON THE PAGE. Every entry carries a list marker ("- [1] Author, \"Title\" —
+  url"), one per line; consecutive "[1] ..." lines render as one paragraph in the CMS.
+- The 'At a glance' box is three lines: "**The shift:**", "**The numbers:**", "**The architectural
+  rule:**" (when to use option A rather than B). It sits directly under the lede and never repeats the
+  subtitle's numbers verbatim.
+"""
+
+
 def _vibe_copy_rules() -> str:
     """The Vibe Marketing lexicon, rendered for the prompt.
 

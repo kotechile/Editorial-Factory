@@ -203,7 +203,13 @@ def _used_as_word(acr, text):
 
 def undefined_acronyms(text):
     bad = set()
+    # Mixed letter+digit tokens (A2A, M2M) are invisible to an all-caps regex, and one of them — the
+    # Agent-to-Agent protocol — shipped unexpanded through every gate on 2026-11-07 while the piece
+    # read it as a bare "A2A" from the second section on. Only the letter-digit-letter shape is taken
+    # (A2A), never a product code (H100, A100, GPT4): a part number is not an abbreviation and
+    # demanding an expansion for it holds legitimate hardware copy.
     cands = re.findall(r"\b([A-Z][A-Z&]{1,7})\b", text)
+    cands += re.findall(r"\b([A-Z]+[0-9]+[A-Z]+)\b", text)
     roman = re.compile(r"^[IVXLCDM]+$")  # Phase II / Phase III / etc. — ordinals, not acronyms
     for acr in set(cands):
         if len(acr) < 2:

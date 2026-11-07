@@ -184,6 +184,28 @@ document, immediately after the lede, before the chronology. If the draft you we
 the foot of the piece, move it — that is a required part of this rewrite, and a rewrite that leaves
 it there is held at the push.
 
+**G. Diction: name the thing, never a metaphor for it (owner, 2026-11-07).** A rewrite that invents a
+poetic noun for a concrete one is unreadable no matter how well it scores. Banned (hard fail in
+`scripts/readability_critic.py`): *"the fact"* where **state** is meant — write *session state*,
+*execution state*, *context payload*; *"hop owners"* — write *systems architects*, *service owners*,
+*calling agents*; *"the wire"* — write *the protocol layer*, *the connection*; *"the line moved/sits"*
+— name the revision (*the July 2026 MCP revision*). The same pass must also kill the elliptical
+reference: *"this one"*, *"that move"*, *"the middle option"* name their noun again.
+
+**H. Ground every entity at first mention.** Expand every protocol, framework, benchmark and tool once,
+with a 5–10 word functional anchor, where it first appears: *"Google's Agent-to-Agent (A2A)
+protocol"*, *"the line-count tool (cloc)"*. This covers alphanumeric tokens (A2A, F1, p95) and
+lowercase tool names, not only ALL-CAPS abbreviations. Never leave a bare acronym in the lede and
+explain it three sections later.
+
+**I. Enumerate what a heading promises, and tabulate what you compare.** A heading carrying a count
+(*"Three Ways to Manage Agent State"*) gets every item labelled in order — `1. **In-call round
+trips.**`, `2. **Server-issued state handles.**`, `3. **Full task protocols.**` — before any analysis;
+a body that opens on "the middle option" is held. Two or more options weighed across three or more
+variables get a **Markdown matrix** (`| Pattern | State location | Overhead | Primary failure mode |
+Best for |`), not three paragraphs of "against". And every `## Sources` entry carries a list marker
+(`- [1] …`), because consecutive `[1] …` lines render as one paragraph on the page.
+
 ---
 
 ## 4. Negative constraints (apply verbatim, no exceptions)

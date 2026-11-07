@@ -214,6 +214,30 @@ PRIORITIES, in this order. A lower one never buys the higher one.
      vertical list. **One metric per bullet**, one sentence, 25 words or fewer, in At a glance and By
      the numbers.
 
+7. DICTION AND STRUCTURE (owner, 2026-11-07 — held by `scripts/readability_critic.py`, on a live
+   dispatch that passed every other gate and was still called hard to read):
+   * **Name the thing, never a metaphor for it.** Banned outright: "the fact" where state is meant
+     (write *session state*, *execution state*, *context payload*), "hop owner(s)" (write *systems
+     architect*, *service owner*, *calling agent*), "the wire" (write *the protocol layer*), "the line
+     moved/sits" (name the revision). Also kill the elliptical reference: "this one", "that move",
+     "the middle option" name their noun again.
+   * **Ground every entity at first mention**, with a 5–10 word functional anchor, where it appears:
+     "Google's Agent-to-Agent (A2A) protocol gives the receiving agent a lasting task object", "the
+     line-count tool (cloc)". This covers alphanumeric tokens (A2A, F1, p95) and lowercase tool names,
+     not only ALL-CAPS abbreviations.
+   * **Enumerate what a heading promises.** A heading carrying a count ("Three Ways to Manage Agent
+     State") labels every item in order — "1. **In-call round trips.**", "2. **Server-issued state
+     handles.**", "3. **Full task protocols.**" — before any analysis of them.
+   * **Tabulate what you compare.** Two or more options weighed across three or more variables get a
+     Markdown matrix, one row per option: | Pattern | State location | Overhead | Primary failure mode
+     | Best for |. Three or more "A against B" figure comparisons left in prose is a gate failure.
+   * **One idea per clause, 22 words a sentence on average.** Split a sentence that contrasts two
+     things AND explains a failure mode; never chop one that already parses.
+   * **`## Sources` carries list markers** ("- [1] Author, \"Title\" — url", one per line), because
+     consecutive "[1] ..." lines render as a single paragraph on the page.
+   * The glance box's three labels are "**The shift:**", "**The numbers:**", "**The architectural
+     rule:**" (when to use option A rather than B); "The risk:" is the accepted older wording.
+
 DO NOT LOSE — the measured facts of this draft. Each line is a figure and the sentence it came from;
 every one must still be made, in your own words:
 {figure_block}

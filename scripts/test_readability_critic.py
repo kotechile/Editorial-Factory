@@ -239,11 +239,141 @@ def test_artifacts_before_the_standard_are_never_held():
 
 
 def test_the_gate_reads_only_the_holding_classes():
-    report = rc.findings(article(BAD))
+    text = article(BAD)
+    report = rc.findings(text)
     assert report["fails"]
-    assert all(f.split(":")[0] in {"structure", "bullets", "citations"} for f in report["fails"])
+    assert all(f.split(":")[0] in rc._registry()["hold"] for f in report["fails"])
+    applied = rc.failures_for_text(text)
+    assert applied, "a 2026-11-06 piece is held on the classes that had landed"
+    assert all(f.split(":")[0] in report["enforced"] for f in applied), applied
     assert any("read_twice" in a or "timeline" in a or "closing" in a
                for a in report["advisories"])
+
+
+# ---------------------------------------------------------- jargon: no private shorthand nouns
+
+def test_a_private_shorthand_noun_fails():
+    text = article(GOOD).replace(
+        "the terminal operators asked for an extension",
+        "the agency keeps the fact in the yard and the terminal operators asked for an extension")
+    reg = rc._registry()
+    found = rc.jargon_findings(text, reg)
+    assert any("the fact" in f for f in found), found
+    assert any("jargon:" in f for f in rc.failures_for_text(article(GOOD, date="2026-11-07")
+                                                            .replace(
+        "the terminal operators asked for an extension",
+        "the agency keeps the fact in the yard and the terminal operators asked for an extension")))
+
+
+def test_the_ordinary_idiom_the_fact_that_is_not_shorthand():
+    text = article(GOOD).replace(
+        "Shippers with holiday inventory booked through Long Beach are already rerouting",
+        "Despite the fact that holiday inventory is booked through Long Beach, shippers are already rerouting")
+    assert rc.jargon_findings(text, rc._registry()) == []
+
+
+def test_role_and_layer_shorthand_fail():
+    reg = rc._registry()
+    for phrase, label in (("so the hop owner can price it", "hop owner"),
+                          ("and the state rides the wire", "the wire"),
+                          ("then the line moved in the revision", "the line")):
+        text = article(GOOD).replace("The risk is real without being certain.",
+                                    f"{phrase.capitalize()}. The risk is real without being certain.")
+        assert any(label in f for f in rc.jargon_findings(text, reg)), (phrase,
+                                                                       rc.jargon_findings(text, reg))
+
+
+# ---------------------------------------------------------------- enumeration: counted headings
+
+def test_a_heading_promising_three_items_needs_three_labelled_items():
+    text = article(GOOD).replace(
+        "## What the Shippers Watch\n\nShippers",
+        "## Three Places the Cargo Waits\n\nShippers")
+    found = rc.enumeration_findings(text, rc._registry())
+    assert any("promises 3 items" in f for f in found), found
+
+
+def test_a_numbered_list_satisfies_the_enumeration_rule():
+    text = article(GOOD).replace(
+        "## What the Shippers Watch\n\nShippers",
+        "## Three Places the Cargo Waits\n\n"
+        "1. **The gate.** Nothing enters the terminal without an inspection slot.\n"
+        "2. **The rail ramp.** Inland boxes wait for a train that is already full.\n"
+        "3. **The yard.** Chassis sit where the last driver left them.\n\nShippers")
+    assert rc.enumeration_findings(text, rc._registry()) == []
+
+
+def test_a_heading_that_names_a_date_is_not_an_enumeration():
+    # "2 November Set The Clock" promises nothing; the count rule needs a plural noun.
+    assert rc.enumeration_findings(article(GOOD), rc._registry()) == []
+
+
+# --------------------------------------------------------------------- matrix: 3+ comparisons
+
+def test_three_prose_comparisons_without_a_table_fail():
+    text = article(GOOD).replace(
+        "The risk is real without being certain.",
+        "The gate version needs 1,898 lines against 1,255, six steps against two, and ten parts "
+        "against four [1]. The risk is real without being certain.")
+    found = rc.matrix_findings(text, rc._registry())
+    assert any("comparison" in f for f in found), found
+
+
+def test_a_table_satisfies_the_matrix_rule():
+    text = article(GOOD).replace(
+        "The risk is real without being certain.",
+        "The gate version needs 1,898 lines against 1,255, six steps against two, and ten parts "
+        "against four [1].\n\n"
+        "| Pattern | Overhead | Failure mode |\n| :--- | :--- | :--- |\n"
+        "| Tool call | 1,255 lines | forgets |\n| Task | 1,898 lines | unhandled states |\n\n"
+        "The risk is real without being certain.")
+    assert rc.matrix_findings(text, rc._registry()) == []
+
+
+# --------------------------------------------------------------- sources: a list on the page
+
+def test_source_lines_without_a_list_marker_fail():
+    text = article(GOOD).replace(
+        "1. Port of Long Beach daily rail report — https://example.gov/rail\n"
+        "2. ILWU Local 13 notice — https://example.org/notice\n"
+        "3. Journal of Commerce terminal report — https://example.net/terminals",
+        "[1] Port of Long Beach daily rail report — https://example.gov/rail\n"
+        "[2] ILWU Local 13 notice — https://example.org/notice\n"
+        "[3] Journal of Commerce terminal report — https://example.net/terminals")
+    found = rc.sources_findings(text, rc._registry())
+    assert any("no list marker" in f for f in found), found
+
+
+def test_a_marked_source_list_passes():
+    assert rc.sources_findings(article(GOOD), rc._registry()) == []
+
+
+# ------------------------------------------------------------- density + dangling (advisory)
+
+def test_dense_prose_is_reported_but_never_holds():
+    dense = ("The commission reviewed the terminal schedule and the inland rail plan that the "
+             "operators submitted before the notice arrived, and it found that neither document "
+             "described the contingency the employers had promised in the previous round. ") * 4
+    assert rc.density_findings(dense, rc._registry()), "a body of long sentences is reported"
+    assert "density" not in rc._registry()["hold"], "density is advisory and can never hold"
+
+
+def test_a_dangling_reference_is_advisory_only():
+    text = article(GOOD).replace(
+        "The risk is real without being certain.",
+        "That is the middle option, and the risk is real without being certain.")
+    report = rc.findings(text)
+    assert any("middle option" in a for a in report["advisories"]), report["advisories"]
+    assert not any(f.startswith("dangling:") for f in rc.failures_for_text(text))
+
+
+def test_a_rule_landing_later_never_holds_an_earlier_piece():
+    text = article(GOOD).replace(
+        "The risk is real without being certain.",
+        "The agency keeps the fact in the yard. The risk is real without being certain.")
+    old = text.replace("date: 2026-11-06", "date: 2026-11-05")
+    assert rc.jargon_findings(old, rc._registry()), "the shape is still reported"
+    assert rc.failures_for_text(old) == []
 
 
 if __name__ == "__main__":

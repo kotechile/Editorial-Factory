@@ -288,3 +288,27 @@ def test_ordinary_english_words_are_not_gated(tmp_path):
     body = "---\ntitle: A recall notice\n---\n\nThe car maker issued a recall for 12,000 vehicles after the pump failed.\n"
     diag = ca.measure(_write(tmp_path, "r.md", body))
     assert diag["unglossed_terms"] == []
+
+
+def test_a_letter_digit_acronym_must_be_expanded(tmp_path):
+    """A2A shipped bare through every gate on 2026-11-07: an all-caps regex cannot see it."""
+    body = ("---\ntitle: A hand-off cost\n---\n\nA2A gives the receiving agent a lasting task "
+            "object, so the call can ask a question back.\n")
+    diag = ca.measure(_write(tmp_path, "a2a.md", body))
+    assert "A2A" in diag["undefined_acronyms"], diag["undefined_acronyms"]
+    assert diag["verdict"] == "FAIL"
+
+
+def test_an_expanded_letter_digit_acronym_passes(tmp_path):
+    body = ("---\ntitle: A hand-off cost\n---\n\nGoogle's Agent-to-Agent (A2A) protocol gives the "
+            "receiving agent a lasting task object.\n")
+    diag = ca.measure(_write(tmp_path, "a2a2.md", body))
+    assert diag["undefined_acronyms"] == []
+
+
+def test_a_product_code_is_not_an_unexpanded_acronym(tmp_path):
+    """H100 is a part number, not an abbreviation — demanding a gloss would hold hardware copy."""
+    body = ("---\ntitle: A card cost\n---\n\nThe H100 draws 700 watts and the A100 draws 400 in "
+            "the same rack.\n")
+    diag = ca.measure(_write(tmp_path, "gpu.md", body))
+    assert diag["undefined_acronyms"] == []

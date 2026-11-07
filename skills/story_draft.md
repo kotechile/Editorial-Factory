@@ -14,12 +14,12 @@ whose parts are all present but in the old order (summary last) fails the gate.
 |---|---|---|
 | 1 | **Title** | A headline that earns the click, scored by `scripts/headline_score.py` (owner's standard, 2026-10-10) and gated at the push — **for articles from 2026-10-10 on: earlier headlines are grandfathered and only reported, never re-cut** (`ENFORCED_FROM`). **Core headline ≤ 6 words** before any colon/dash subtitle, whole title ≤ 10 words and ≤ 60 characters, **never open on "The/A/An"**, front-load the strongest noun or the most concrete benefit, carry a hook (a curiosity gap or loss aversion — the mistake, the trap, the silent cost — or invert the conventional wisdom), anchor on a figure the article itself states (never invented), and call the reader out ("your/you", or a named role/subject: CFO, shipper, homeowner, SpaceX). The strongest headlines in the corpus read *"California FAIR Plan Premiums Jump 29.1%"*, *"Why 70% of Startup Options Go Unexercised"*, *"Nearshoring Doesn't Move the Trade Case"*; the weak ones are 11–17 words, open on "The", and state a fact with no reason to open it. No bait-and-switch: the article must satisfy the title in its first paragraph. When drafting for an SEO keyword (`primary_keyword:` in frontmatter), the title MUST contain the target keyword. For **Synthesis articles**, the collision thesis goes in the subtitle, not by stacking both clauses into the headline. |
 | 2 | **Lede (paragraph 1)** | The core thesis **and its operational impact** in plain, concrete English, in the first sentence. A concrete incident or figure from the evidence delivers the news; the same paragraph says what it changes for the reader. Not a definition, not a "world is changing" opener, no heading before it. For **Synthesis articles**, write a **Collision Lead**: bridge the two underlying developments in the first 1–2 sentences (e.g., *"As frontier model inference prices plunge past 80% cuts, enterprise engineering teams are quietly turning their backs on off-the-shelf SaaS to build bespoke in-house software."*). |
-| 3 | **At a Glance** (`<!-- tldr -->`) | **Immediately below the lede**, never at the foot of the piece. `## At a glance` + three lines, **≤50 words total**: `- **The shift:**` (one sentence — what changed), `- **The number:**` (the one figure that proves the thesis and that the body already states), `- **The risk:**` (the single operational consequence). It primes the reader; it never re-lists the watch items below. |
+| 3 | **At a Glance** (`<!-- tldr -->`) | **Immediately below the lede**, never at the foot of the piece. `## At a glance` + three lines, **≤50 words total**: `- **The shift:**` (one sentence — what changed), `- **The numbers:**` (the one figure that proves the thesis and that the body already states), `- **The architectural rule:**` (the single operational consequence — when to use option A rather than B; `The risk:` is the accepted older wording). It primes the reader; it never re-lists the watch items below, and it never repeats the subtitle verbatim — the lede and the box must each advance the argument. |
 | 4 | **Chronological context** (`<!-- tension -->`) | Paragraph 2 states the timeline **once**, in strict chronological order — **initial event → initial deadline → current extension** — then the mechanism (the systemic reason it is happening now, who it hurts and who it helps). An H2 in this article's own words; "The big picture:" is the fallback label, not the required one (owner, 2026-11-03). In a synthesis piece, explain the friction point where Trend A alters the economics, reliability or feasibility of Trend B. |
 | 5 | **By the numbers** | **Kept, but small** (owner, 2026-11-03: the block is what a reader scans; removing it loses the page). `## By the numbers` H2 with **2–3 bold bullets**, placed **after the mechanism has been explained** — never before the reader knows what is being counted. One metric per bullet, one sentence, **25 words or fewer**, formatted `- **<figure> <noun phrase>:** <one plain clause> [n]` (see §3.5). In synthesis articles the figures must still come from **both** underlying anchors. |
 | 6 | **What to watch** (`<!-- tactical-insight -->`) | Operational caveats and forward-looking triggers: what the people closest to the story are doing, what the consequences land on, which signal answers the open question next — reported, never prescribed (`persona:` from `context/personas.json`). Write it as prose; bullets only for a real list of comparable items. Header in this article's own words ("Where this bites:" / "What I'd watch:" are fallbacks). Never instruct the reader (`skills/claude_humanizer.md` §3.9). |
 | 7 | **The catch** (`<!-- nuanced-takeaway -->`) | The honest limitation or counter-argument, **self-contained**: the final sentence may not introduce a regulatory rule, a billing mechanism, an internal cross-link or a technical concept the piece has not already explained. If it has to name one, give it a 5–10-word inline bridge in the same sentence (*"under federal demurrage billing rules, the two 30-day dispute clocks…"*). Ends on substance, not a cheerlead. |
-| 8 | **Related reading & Sources** | Footer, generated at persistence (`<!-- internal-links -->`, `## Related reading`) and copied verbatim (`## Sources`). Render sources as a **vertical list** (`1. <publisher> — <url>` per line), never one run-on paragraph. |
+| 8 | **Related reading & Sources** | Footer, generated at persistence (`<!-- internal-links -->`, `## Related reading`) and copied verbatim (`## Sources`). Render sources as a **vertical list with a list marker** (`- [1] <author>, "<title>" — <url>`, one per line), never one run-on paragraph — consecutive `[1] …` lines carry no marker and the CMS renders them as a single block of text (§3.6 F). |
 
 **Story first (owner, 2026-11-03).** The house structure is five marked sections, not five labels.
 A reader should be able to follow one argument from the first sentence to the last; the markers,
@@ -215,6 +215,53 @@ cargo behind eight gates: the 250 watchmen who could walk out are about 2% of th
 3. **Bullet density** — every bullet in `At a glance` and `By the numbers` is a single sentence under
    25 words, carrying one metric.
 4. **Closing hook audit** — the final paragraph contains no undefined noun and no orphan reference.
+
+### 3.6 Diction and structure law (owner, 2026-11-07) — the reader must not translate your nouns
+
+Measured on the live dispatch `your-task-protocol-costs-643-lines`: Flesch 57.8, every citation
+resolving, `article_shape` ok — and the owner's verdict was still that the piece is hard to read and
+"the image is not describing the content". The cause was vocabulary and shape, not rhythm: a state
+variable called *"the fact"*, maintainers called *"hop owners"*, a revision announced as *"the line
+moved"*, a heading promising three options that never numbered them, a source block that renders as
+one paragraph. `scripts/readability_critic.py` now holds all five (`jargon`, `enumeration`, `matrix`,
+`sources` — enforced from 2026-11-07).
+
+**A. Name the thing, never a metaphor for it.** If the sentence is about state, say *session state*,
+*execution state* or *context payload*; about people, say *systems architects*, *service owners* or
+*calling agents*; about a boundary, say *the protocol layer*; about a spec change, name the revision
+(*the July 2026 MCP revision*). Banned (hard fail): "the fact" where state is meant, "hop owners", "the
+wire", "the line moved/moves/sits". The test is lookup, not taste: a reader who does not know the
+writer's shorthand must still be able to follow the sentence.
+
+**B. Ground every entity at first mention.** Every protocol, framework, benchmark, tool or metric is
+spelled out once, with a 5–10 word functional anchor, at the point it first appears — not in a
+glossary, not in the Sources: *"Google's Agent-to-Agent (A2A) protocol gives the receiving agent a
+persistent task object"*, *"the line-count tool (cloc)"*. The rule covers alphanumeric tokens
+(**A2A**, F1, p95) and lowercase tool names, not only ALL-CAPS abbreviations, and it is the same rule
+in both directions (`Expanded Name (ACR)` or `ACR — a phrase that says what it is`). Later uses stay
+bare; a dangling *"this one"*, *"that move"* or *"the middle option"* names the noun again.
+
+**C. Enumerate what the heading promises.** A heading carrying a count — *"Three Ways to Manage Agent
+State"*, *"Two Clocks"* — labels **every** item, in order, at the top of the section: `1. **In-call
+round trips.**`, `2. **Server-issued state handles.**`, `3. **Full task protocols.**` Only then does the
+prose analyse them. A body that opens on *"the middle option"* while items one and three are never
+named is a gate failure, and the reader is the one who pays for it. The count must be a real count: a
+heading naming a date or a figure ("2 November Set The Clock", "37 States") promises nothing.
+
+**D. Compare in a table, not in a paragraph.** When a piece weighs two or more protocols,
+architectures, tools or options across three or more variables (cost, step count, state location,
+failure mode, best fit), emit a Markdown matrix **before or inside the synthesis section**, one row per
+option, one column per variable. Three or more figure-against-figure comparisons in prose with no table
+is a gate failure: `| Pattern | State location | Overhead | Primary failure mode | Best for |`.
+
+**E. One architectural idea per clause; 22 words a sentence on average.** If a sentence contrasts two
+protocols *and* explains a failure mode, split it into two sentences. The average, not each sentence,
+is the target — the fix for a dense body is a plain-word swap and splitting only the sentences over
+28 words, never a wholesale chop (`skills/claude_humanizer.md` §3.6).
+
+**F. Sources are a list on the page, not in the source.** Every `## Sources` entry carries a list
+marker (`- [1] Author, "Title" — url`, one per line). Consecutive `[1] …` lines look like separate
+entries in the artifact and render as **one paragraph** in the CMS, which is what the reader gets.
 
 ## 4. Output schema
 `context/drafts/YYYY-MM-DD_<slug>_draft.md` — the order below is the gate's order:
