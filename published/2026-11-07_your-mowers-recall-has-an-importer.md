@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-mowers-recall-has-an-importer/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "The Importer, Not The Brand, Answers Recalls. Walk-behind mower deck with lifted blank badge plate and disconnected GFCI cord on a garage"
-image_caption: "The Importer, Not The Brand, Answers Recalls: The importer behind the label—not the brand—decides repair, refund, or trash."
+image_alt: "A walk-behind mower deck with its badge plate lifted open and a coiled power cord on a concrete garage floor."
+image_caption: "A blank badge plate and a power cord: the two parts that decide who answers for a failed machine."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
