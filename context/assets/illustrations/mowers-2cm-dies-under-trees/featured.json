@@ -1,6 +1,6 @@
 {
   "slug": "mowers-2cm-dies-under-trees",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Wire-free mower accuracy under canopy",
       "bytes": 350513,
       "sha256": "sha256:efdfe722838d8a1a7172e57c34a685d1"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Mower'S 2 Cm Dies Under Trees. Wire-free robotic mower on a residential driveway under conifer canopy and open sky, split-screen contrast",
+      "caption": "Mower'S 2 Cm Dies Under Trees: The 2 cm claim is correction data, not hardware \u2014 under trees it falls to metres.",
+      "title": "Mower'S 2 Cm Dies Under Trees",
+      "bytes": 398990,
+      "sha256": "sha256:da144cd2aa9ae37964c7ef49a04a8f1f8d1abf4e950a5be7559c8ccc641c03bd"
     }
   ],
   "style": "cinematic_still",

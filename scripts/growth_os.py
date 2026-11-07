@@ -50,7 +50,8 @@ GENERIC = {"just", "more", "most", "than", "then", "there", "these", "they", "th
            "show", "shows", "shown", "look", "looks", "looking", "put", "putting", "turn", "turns",
            "call", "calls", "called", "given", "let", "lets", "tell", "told", "ask", "asked", "seem",
            "seems", "become", "becomes", "became", "holding", "hold", "held", "stand", "standing",
-           "stay", "stays"}
+           "stay", "stays", "because", "since", "though", "although", "unless", "whether",
+           "dies", "die", "died", "kills", "killed"}
 STOPWORDS = STOPWORDS | GENERIC
 
 # How many distinct subject tokens a candidate must share before a mere topical match is treated as

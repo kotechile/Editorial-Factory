@@ -72,13 +72,9 @@ Continuous canopy over the cutting area is where the promise fails. A north-faci
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your 1-Acre Mower's 0.4-Acre Trap" -> /your-1-acre-mowers-04-acre-trap/ [same site (wellroost.com); topical overlap: because, mower's] Link "Your 1-Acre Mower's 0.4-Acre Trap" in the section where the article touches because, mower's. -->
-<!-- internal-link hint: "Your Lock's Blind 90% Bet" -> /your-locks-blind-90-bet/ [same site (wellroost.com); topical overlap: because, dies] Link "Your Lock's Blind 90% Bet" in the section where the article touches because, dies. -->
 <!-- internal-link hint: "Your Mower's 2.4-Year Payback Trap" -> /your-mower-pays-back-in-24-years-or-09/ [same site (wellroost.com); topical overlap: machine, mower's] Link "Your Mower's 2.4-Year Payback Trap" in the section where the article touches machine, mower's. -->
 ## Related reading
 
-- [Your 1-Acre Mower's 0.4-Acre Trap](/your-1-acre-mowers-04-acre-trap/) — more on Yard Robots & Automation
-- [Your Lock's Blind 90% Bet](/your-locks-blind-90-bet/) — more on Smart Home & Security
 - [Your Mower's 2.4-Year Payback Trap](/your-mower-pays-back-in-24-years-or-09/) — more on Yard Robots & Automation
 <!-- internal-links:end -->
 
