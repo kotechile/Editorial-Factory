@@ -452,3 +452,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-07 | `europes-53-duty-rewrites-mower-prices` | yard_robotics | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/europes-53-duty-rewrites-mower-prices/featured.jpg` |
 | 2026-11-07 | `your-mowers-recall-has-an-importer` | outdoor_power_equipment | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-mowers-recall-has-an-importer/featured.jpg` |
 | 2026-11-07 | `your-512x384-cameras-10x-illusion` | home_diagnostics_tech | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-512x384-cameras-10x-illusion/featured.jpg` |
+| 2026-11-07 | `your-annual-plan-is-a-10-month-loan` | personal_microeconomics_tinkering_tax | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-annual-plan-is-a-10-month-loan/featured.jpg` |

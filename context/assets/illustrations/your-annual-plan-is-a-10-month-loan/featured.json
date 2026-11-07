@@ -1,0 +1,117 @@
+{
+  "slug": "your-annual-plan-is-a-10-month-loan",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Matte clay rack of twelve bays with one brass annual-charge block latched at the near end and eleven empty slots.",
+      "caption": "A clay commitment ladder: one annual charge latched into the first of twelve monthly bays, eleven left with nothing to audit.",
+      "title": "Your Renewal Hides A 10-Month Cost",
+      "bytes": 387431,
+      "sha256": "sha256:d6fd07aa204da20bc6f9697352703ca1"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D mechanical assembly on a weathered concrete workbench: a commitment-ladder rack of twelve machined bays, one loaded annual-charge block with a latched cover, eleven empty zero-month slots, and a brass break-even flag at the tenth bay. Bone white, graphite, and rust palette; one directional key light from the left raking across brushed steel and matte polymer, throwing a long cast shadow to the right; extreme asymmetric framing with the rack off-centre; 100mm macro focal plane, shallow depth of field, fine film grain. No text, no lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, numbers",
+  "rationale": "The story is a structural, abstract pricing mechanism \u2014 an annual plan as a loan, a break-even month, and an invisible annual charge. Clay_render can state the idea as a small physical assembly of recognisable engineered parts, making the commitment ladder and zero-month slots tangible without a literal photograph.",
+  "cue": "An annual plan is a loan, not a discount",
+  "subject": "a matte clay mechanical commitment-ladder rack with one loaded annual-charge module and eleven empty monthly slots on a workbench",
+  "core_thesis": "An annual plan is a loan, not a discount: the annual price divided by the monthly price gives the break-even month, and an annual charge is invisible to a monthly audit.",
+  "core_conflict": "A monthly subscription-waste audit versus a once-a-year prepaid charge, where longer-term commitment rungs trade deeper discounts for later break-even months.",
+  "composition": "extreme asymmetric framing with the rack off-centre and a long cast shadow running left",
+  "alt_text": "Matte clay rack of twelve bays with one brass annual-charge block latched at the near end and eleven empty slots.",
+  "caption": "A clay commitment ladder: one annual charge latched into the first of twelve monthly bays, eleven left with nothing to audit.",
+  "title": "Your Renewal Hides A 10-Month Cost",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "clay_render"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-annual-plan-is-a-10-month-loan/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 397642,
+  "sha256": "sha256:c630b9d92f09527d6b26a425015ab20ec61557bfdfc09425fc29862f6dfa8703",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 397642,
+    "quality": 76,
+    "sha256": "sha256:c630b9d92f09527d6b26a425015ab20ec61557bfdfc09425fc29862f6dfa8703",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:1fc638e19e8896a202ffa37a7f4e484f44f63a586265827529cc81b2e156dd2e",
+  "render_phash": "002e107e007f06ab035707b66abf697cb1f993a5da877b1f7a4f30e731770673",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A long segmented matte-grey rack of recessed rectangular slots rests diagonally on a concrete-like surface, with a single brown clay module clipped into the near end slot and a small blank flag planted in one slot further along.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The loaded annual-charge module set among empty monthly slots is the article's own mechanism \u2014 a prepay ladder where one periodic charge sits invisible next to the monthly rungs \u2014 rather than a foreign industry or generic filler."
+  },
+  "source_hash": "sha256:5710a414ffe3a3c90bd9d86ff0633b12",
+  "source_chars": 6528,
+  "task_id": "999a3f7d29a36878b145e208aaac45cf",
+  "credits": 18.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b43891a339a3f805288bd757baaffd87.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D mechanical assembly on a weathered concrete workbench: a commitment-ladder rack of twelve machined bays, one loaded annual-charge block with a latched cover, eleven empty zero-month slots, and a brass break-even flag at the tenth bay. Bone white, graphite, and rust palette; one directional key light from the left raking across brushed steel and matte polymer, throwing a long cast shadow to the right; extreme asymmetric framing with the rack off-centre; 100mm macro focal plane, shallow depth of field, fine film grain. No text, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-07T17:56:02+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR RENEWAL HIDES A 10-MONTH COST",
+    "hook": "Your next renewal hides a 10-month cost in the cheaper of the two prices printed",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.2,
+    "target": 5.5,
+    "clutter": 0.469,
+    "region_rgb": [
+      110,
+      97,
+      79
+    ],
+    "binding_rgb": [
+      180,
+      163,
+      143
+    ],
+    "title_lines": [
+      "YOUR RENEWAL",
+      "HIDES A",
+      "10-MONTH COST"
+    ],
+    "subject": 0.231,
+    "ink_subject": 0.078,
+    "spike": 0.332,
+    "generated_at": "2026-11-07T17:56:02+00:00"
+  }
+}

@@ -12,6 +12,12 @@ meta_title: "Your Renewal Hides a 10-Month Cost"
 meta_title_source: "derived_from_title"
 meta_description: "Your next renewal hides a 10-month cost in the cheaper of the two prices printed on it, because vendors now sell two- and three-year prepay rungs alongside…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-annual-plan-is-a-10-month-loan/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "Matte clay rack of twelve bays with one brass annual-charge block latched at the near end and eleven empty slots."
+image_caption: "A clay commitment ladder: one annual charge latched into the first of twelve monthly bays, eleven left with nothing to audit."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
