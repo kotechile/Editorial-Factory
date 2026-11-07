@@ -17,7 +17,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-512x384-cameras-10x-illusion/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Thermal Camera 10X Resolution Illusion. Bare microbolometer detector array inside an opened thermal camera on a garage workbench, gold wire"
+image_alt: "Bare thermal detector array with gold bond wires on strand board, an opened camera shell behind it."
 image_caption: "Thermal Camera 10X Resolution Illusion: The advertised 512×384 is drawn, not measured; the detector grid is the real resolution."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
