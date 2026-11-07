@@ -13,8 +13,8 @@ meta_description: "A robot mower's 2 cm claim is correction data, not hardware: 
 image_path: "context/assets/illustrations/mowers-2cm-dies-under-trees/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Mower'S 2 Cm Dies Under Trees. Wire-free robotic mower on a residential driveway under conifer canopy and open sky, split-screen contrast"
-image_caption: "Mower'S 2 Cm Dies Under Trees: The 2 cm claim is correction data, not hardware — under trees it falls to metres."
+image_alt: "Wire-free robotic mower on a residential driveway under conifer canopy and open sky, split-screen contrast."
+image_caption: "The same wire-free mower holds centimetre accuracy under open sky and loses the fix to metres beneath dense conifer canopy."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
