@@ -71,14 +71,10 @@ No source publishes the share of residential slab locates that come back wrong, 
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Water Leak Monitors" -> /water-leak-monitor-rate-threshold/ [same site (wellroost.com); topical overlap: leak, slab, water] Link "Water Leak Monitors" in the section where the article touches leak, slab, water. -->
-<!-- internal-link hint: "Emporia Vue: How to Cut Energy Bills" -> /unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/ [same site (wellroost.com); topical overlap: every, meter] Link "Emporia Vue: How to Cut Energy Bills" in the section where the article touches every, meter. -->
-<!-- internal-link hint: "Your Hub's 4,292-Project Blind Spot" -> /your-hubs-4292-project-blind-spot/ [same site (wellroost.com); topical overlap: blind, spot] Link "Your Hub's 4,292-Project Blind Spot" in the section where the article touches blind, spot. -->
+<!-- internal-link hint: "Water Leak Monitors" -> /water-leak-monitor-rate-threshold/ [same site (wellroost.com); same category hub; topical overlap: leak, slab, water] -->
 ## Related reading
 
 - [Water Leak Monitors](/water-leak-monitor-rate-threshold/) — more on Smart Home & Security
-- [Emporia Vue: How to Cut Energy Bills](/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — more on Smart Home & Security
-- [Your Hub's 4,292-Project Blind Spot](/your-hubs-4292-project-blind-spot/) — more on Smart Home & Security
 <!-- internal-links:end -->
 
 ## Sources
