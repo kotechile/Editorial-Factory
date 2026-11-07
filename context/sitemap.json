@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T11:50:36Z",
+  "updated_at": "2026-11-07T17:45:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5909,7 +5909,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/europes-53-duty-rewrites-mower-prices/"
     },
     {
       "slug": "2026-11-07_your-512x384-cameras-10x-illusion",
@@ -5926,6 +5927,25 @@
         "Related reading"
       ],
       "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": true,
+      "url": "https://wellroost.com/your-512x384-cameras-10x-illusion/"
+    },
+    {
+      "slug": "2026-11-07_your-annual-plan-is-a-10-month-loan",
+      "title": "Your Renewal Hides a 10-Month Cost",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The charge that lands once",
+        "By the numbers",
+        "What the ladder tells you",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-07",
       "public": false
     },
@@ -5964,7 +5984,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-mowers-recall-has-an-importer/"
     }
   ]
 }
