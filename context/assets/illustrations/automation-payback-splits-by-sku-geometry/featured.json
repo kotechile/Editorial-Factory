@@ -1,6 +1,6 @@
 {
   "slug": "automation-payback-splits-by-sku-geometry",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -19,6 +19,14 @@
       "title": "Warehouse Scale Division SKU Geometry",
       "bytes": 293552,
       "sha256": "sha256:2efaa27b59a267483cf58fec394c91cb"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense automated steel racking with open floor staging",
+      "caption": "Amazon Builds The Robots; Walmart Builds: Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear.",
+      "title": "Amazon Builds The Robots; Walmart Builds",
+      "bytes": 372038,
+      "sha256": "sha256:edbc583fc95f74bfeec5a24194203341f275a95b749947b4403107e8d06f0be5"
     }
   ],
   "style": "long_lens_industry",
@@ -34,9 +42,9 @@
   "rationale": "The article contrasts two distinct physical scales of warehouse operations: dense robotic automation for small goods versus expansive real estate for bulky items. A long_lens_industry treatment captures this massive scale and the architectural division within a modern logistics hub.",
   "cue": "SKU geometry",
   "subject": "a massive industrial warehouse interior showing contrasting zones",
-  "alt_text": "Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense automated steel racking with open floor staging",
-  "caption": "Amazon Builds The Robots; Walmart Builds: Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear.",
-  "title": "Amazon Builds The Robots; Walmart Builds",
+  "alt_text": "Amazon Builds Robots; Walmart Builds For Bulk. Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense",
+  "caption": "Amazon Builds Robots; Walmart Builds For Bulk: Capex payback splits by SKU geometry, not one blended automation ROI.",
+  "title": "Amazon Builds Robots; Walmart Builds For Bulk",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -46,8 +54,8 @@
   "local_path": "context/assets/illustrations/automation-payback-splits-by-sku-geometry/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 372038,
-  "sha256": "sha256:edbc583fc95f74bfeec5a24194203341f275a95b749947b4403107e8d06f0be5",
+  "bytes": 377917,
+  "sha256": "sha256:da678ecc976712dcc4570d88793d0155d0768825168b4d928c31bb465fcb6681",
   "source_hash": "sha256:8f2cc9b640f4d1df3c57118faace609d",
   "source_chars": 3821,
   "task_id": "c2b0d4bf2eb9435d16f161ce41f81fbd",
@@ -71,39 +79,39 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 372038,
+    "bytes": 377917,
     "quality": 88,
-    "sha256": "sha256:edbc583fc95f74bfeec5a24194203341f275a95b749947b4403107e8d06f0be5",
+    "sha256": "sha256:da678ecc976712dcc4570d88793d0155d0768825168b4d928c31bb465fcb6681",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
-    "kicker": "",
-    "title": "AMAZON BUILDS THE ROBOTS; WALMART BUILDS",
-    "hook": "Amazon announced a $100 million plant in Indiana on Sept. 24 to build the gear",
+    "kicker": "ROBOTICS CAPEX // SKU GEOMETRY",
+    "title": "AMAZON BUILDS ROBOTS; WALMART BUILDS FOR BULK",
+    "hook": "Capex payback splits by SKU geometry, not one blended automation ROI",
     "anchor": "bottom-right",
-    "light": true,
+    "light": false,
     "scrim": 120,
-    "contrast": 4.55,
+    "contrast": 4.94,
     "target": 4.5,
-    "clutter": 0.166,
+    "clutter": 0.177,
     "region_rgb": [
-      117,
-      131,
-      126
+      119,
+      133,
+      128
     ],
     "binding_rgb": [
-      141,
-      156,
-      151
+      97,
+      110,
+      103
     ],
     "title_lines": [
       "AMAZON BUILDS",
-      "THE ROBOTS;",
-      "WALMART BUILDS"
+      "ROBOTS; WALMART",
+      "BUILDS FOR BULK"
     ],
-    "subject": 0.069,
-    "ink_subject": 0.009,
-    "spike": 0.057,
+    "subject": 0.083,
+    "ink_subject": 0.01,
+    "spike": 0.074,
     "generated_at": "2026-10-08T22:43:30+00:00"
   }
 }

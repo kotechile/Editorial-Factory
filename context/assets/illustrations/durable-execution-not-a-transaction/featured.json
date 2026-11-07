@@ -1,6 +1,6 @@
 {
   "slug": "durable-execution-not-a-transaction",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Agent Missing State Footprint Bypass",
       "bytes": 328524,
       "sha256": "sha256:65c93896d8748d26e01f600bb9bf3f5d"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Durable Execution Is Not A Transaction. A dark logic board bypassed by a glowing amber fiber optic relay in a moody, hazy data vault.",
+      "caption": "Durable Execution Is Not A Transaction: Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely.",
+      "title": "Durable Execution Is Not A Transaction",
+      "bytes": 375859,
+      "sha256": "sha256:f8dd2695f4922132e20698bed68147444d2ca1be887e2588eb2789572b638f63"
     }
   ],
   "style": "cinematic_still",
@@ -24,9 +32,9 @@
   "rationale": "The article describes a systemic blind spot in how AI agents execute commands. A cinematic still of a bypassed logic board provides a moody, physical metaphor for commands executing without passing through a proper state-tracking mechanism.",
   "cue": "the missing artifact is the task's state footprint",
   "subject": "a dark logic board bypassed by a glowing fiber optic relay",
-  "alt_text": "Durable Execution Is Not A Transaction. A dark logic board bypassed by a glowing amber fiber optic relay in a moody, hazy data vault.",
-  "caption": "Durable Execution Is Not A Transaction: Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely.",
-  "title": "Durable Execution Is Not A Transaction",
+  "alt_text": "Missing State In MCP Tool Contracts. Durable Execution Is Not A Transaction. A dark logic board bypassed by a glowing amber fiber optic",
+  "caption": "Missing State In MCP Tool Contracts: An AI agent rarely knows if it can undo a mistake across 98,291 MCP tools.",
+  "title": "Missing State In MCP Tool Contracts",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -36,8 +44,8 @@
   "local_path": "context/assets/illustrations/durable-execution-not-a-transaction/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 375859,
-  "sha256": "sha256:f8dd2695f4922132e20698bed68147444d2ca1be887e2588eb2789572b638f63",
+  "bytes": 384566,
+  "sha256": "sha256:ca003a56d7a1eb66a7fd96fd005ae8a322252c49340ce99ba6e8446238c59aa2",
   "source_hash": "sha256:5e66f9b6e3fe087593b9cefb121bd2ce",
   "source_chars": 4802,
   "task_id": "4777cc4f0a9bf4a2b87ecd5d7db5fa4c",
@@ -61,39 +69,39 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 375859,
+    "bytes": 384566,
     "quality": 88,
-    "sha256": "sha256:f8dd2695f4922132e20698bed68147444d2ca1be887e2588eb2789572b638f63",
+    "sha256": "sha256:ca003a56d7a1eb66a7fd96fd005ae8a322252c49340ce99ba6e8446238c59aa2",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
-    "kicker": "",
-    "title": "DURABLE EXECUTION IS NOT A TRANSACTION",
-    "hook": "Across 98,291 tools built for the Model Context Protocol (MCP), an AI agent rarely",
+    "kicker": "AGENT TOOL CONTRACTS // MISSING STATE",
+    "title": "MISSING STATE IN MCP TOOL CONTRACTS",
+    "hook": "An AI agent rarely knows if it can undo a mistake across 98,291 MCP tools",
     "anchor": "top-right",
     "light": true,
     "scrim": 120,
-    "contrast": 5.63,
+    "contrast": 5.58,
     "target": 4.5,
-    "clutter": 0.236,
+    "clutter": 0.242,
     "region_rgb": [
-      68,
-      78,
-      75
+      67,
+      77,
+      74
     ],
     "binding_rgb": [
       79,
-      97,
-      97
+      98,
+      96
     ],
     "title_lines": [
-      "DURABLE",
-      "EXECUTION IS NOT",
-      "A TRANSACTION"
+      "MISSING STATE IN",
+      "MCP TOOL",
+      "CONTRACTS"
     ],
-    "subject": 0.194,
-    "ink_subject": 0.094,
-    "spike": 0.233,
+    "subject": 0.236,
+    "ink_subject": 0.115,
+    "spike": 0.277,
     "generated_at": "2026-10-07T11:09:05+00:00"
   }
 }

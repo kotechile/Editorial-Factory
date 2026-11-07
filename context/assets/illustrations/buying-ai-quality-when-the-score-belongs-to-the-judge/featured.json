@@ -1,6 +1,6 @@
 {
   "slug": "buying-ai-quality-when-the-score-belongs-to-the-judge",
-  "revision": 21,
+  "revision": 22,
   "history": [
     {
       "revision": 1,
@@ -171,6 +171,14 @@
       "title": "The 915 Million Dollar Judge",
       "bytes": 403344,
       "sha256": "sha256:7e57c27c1417acf0b3374144d8873f1d43b22150eb58d5af5930edec50f8160f"
+    },
+    {
+      "revision": 21,
+      "alt_text": "The 915 Million Dollar Judge. Isometric cutaway of a complex optical calibration mechanism with shifting lenses on a",
+      "caption": "The 915 Million Dollar Judge: Why AI quality scores are an expensive illusion.",
+      "title": "The 915 Million Dollar Judge",
+      "bytes": 403283,
+      "sha256": "sha256:3c43a0af25c63cdd5c979ef2d678ebbdc36199ea803d19140d6980fa952ffcba"
     }
   ],
   "style": "technical_isometric",

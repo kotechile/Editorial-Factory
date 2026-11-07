@@ -1,6 +1,6 @@
 {
   "slug": "rack-power-density-ceiling-build-before-you-buy",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -25,6 +25,14 @@
       "title": "The 40 kW Line",
       "bytes": 389040,
       "sha256": "sha256:6f393257d8020017bcdf485b1f21515d8baf9eecd175adbf9863148b60af1994"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The 40 kW Line. Heavy liquid cooling pipes and massive copper power conduits installed in a dark data center aisle under construction.",
+      "caption": "The 40 kW Line: The build precedes the servers once racks pass 40 kW.",
+      "title": "The 40 kW Line",
+      "bytes": 394672,
+      "sha256": "sha256:3c6780c11f4bee577156c04e6c7ba33a37ab96c920781a06ace805dd62e06346"
     }
   ],
   "style": "cinematic_still",

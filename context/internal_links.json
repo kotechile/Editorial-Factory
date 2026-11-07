@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T06:49:16+00:00",
+  "generated_at": "2026-11-07T14:20:37+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2194,6 +2194,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "europes-53-duty-rewrites-mower-prices",
+      "title": "Europe's Duty Leaves a 53.3% Gap",
+      "url": "https://wellroost.com/europes-53-duty-rewrites-mower-prices/",
+      "path": "/europes-53-duty-rewrites-mower-prices/",
+      "sites_live": {
+        "wellroost.com": "/europes-53-duty-rewrites-mower-prices/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Europe's proposed duty on Chinese-built robot mowers runs from 45.6 to 53.3 percent, and it splits next season's prices by factory rather than by brand.",
+      "modified": "2026-11-07T10:51:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "fewer-liens-46-more-bankruptcies",
       "title": "Fewer Liens, 46% More Failures: Your Bid",
       "url": "https://wellroost.com/fewer-liens-46-more-bankruptcies/",
@@ -2976,6 +2999,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-512x384-cameras-10x-illusion",
+      "title": "Your 512\u00d7384 Camera's 10x Illusion",
+      "url": "https://wellroost.com/your-512x384-cameras-10x-illusion/",
+      "path": "/your-512x384-cameras-10x-illusion/",
+      "sites_live": {
+        "wellroost.com": "/your-512x384-cameras-10x-illusion/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "A homeowner stands in a bedroom that runs colder than the rest of the house, holding two spec sheets for cameras that both claim to show why.",
+      "modified": "2026-11-07T11:49:45",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-550-battery-spare-is-wrong",
       "title": "Your $550 Battery Spare Is Wrong",
       "url": "https://wellroost.com/your-550-battery-spare-is-wrong/",
@@ -3429,6 +3475,29 @@
       ],
       "excerpt": "A robot mower's payback is a regional number. The same machine is a 2.4-year payback against a 24-week Northeast mowing season and under one in the Southeast.",
       "modified": "2026-10-31T18:45:18",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-mowers-recall-has-an-importer",
+      "title": "Your License Won't Recall Your Mower",
+      "url": "https://wellroost.com/your-mowers-recall-has-an-importer/",
+      "path": "/your-mowers-recall-has-an-importer/",
+      "sites_live": {
+        "wellroost.com": "/your-mowers-recall-has-an-importer/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "Two outdoor machines failed this autumn and got opposite answers. About 42,860 walk-behind trimmer mowers from DR (imported by Generac Power Systems) were\u2026",
+      "modified": "2026-11-07T11:30:25",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8607,7 +8676,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Building the same agent hand-off as a task protocol instead of a tool call cost 643 extra lines of code, three times the coordination steps, and a 37-state machine.",
-      "modified": "2026-11-05T17:50:56",
+      "modified": "2026-11-07T01:18:20",
       "live": true,
       "source": "frontend-sitemap"
     },

@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-11-07T06:49:16+00:00
+# Internal-link candidates — 2026-11-07T14:20:37+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -79,7 +79,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 76 live article(s), 22 other target(s)
+## wellroost.com — 79 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -97,6 +97,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [California Legalizes Plug-In Home Solar Panels](https://wellroost.com/california-legalizes-plug-in-home-solar-panels/) — Energy & Efficiency
 - [Cheap Gas, $20,000 Pipe: The Winter Heat Trap](https://wellroost.com/cheapest-fuel-priciest-pipe/) — Energy & Efficiency
 - [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
+- [Europe's Duty Leaves a 53.3% Gap](https://wellroost.com/europes-53-duty-rewrites-mower-prices/) — Yard Robots & Automation
 - [Fewer Liens, 46% More Failures: Your Bid](https://wellroost.com/fewer-liens-46-more-bankruptcies/) — Tools & Equipment
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
@@ -123,6 +124,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your 4.3% Cut Hides 751,000 Hikes](https://wellroost.com/your-43-cut-hides-751000-hikes/) — Home Cost Decisions
 - [Your 49% Discount Isn't All Roof](https://wellroost.com/your-49-discount-isnt-all-roof/) — Home Cost Decisions
 - [Your 5% Deductible Risks Your Claim](https://wellroost.com/your-5-deductible-risks-your-claim/) — Home Cost Decisions
+- [Your 512×384 Camera's 10x Illusion](https://wellroost.com/your-512x384-cameras-10x-illusion/) — Home Diagnostic Tools
 - [Your 70% Limit's 12.5% Gap](https://wellroost.com/your-70-limits-12-5-gap/) — Home Cost Decisions
 - [Your 75,000-Btu Tank's Venting Trap](https://wellroost.com/your-75000-btu-tank-venting-trap/) — Energy & Efficiency
 - [Your Adjuster Hides a 25% Gap](https://wellroost.com/your-adjuster-hides-a-25-gap/) — Home Cost Decisions
@@ -141,6 +143,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
 - [Your Hub's 4,292-Project Blind Spot](https://wellroost.com/your-hubs-4292-project-blind-spot/) — Smart Home & Security
 - [Your Leak Alert: A 24-Hour Gap](https://wellroost.com/your-leak-alert-24-hours-at-best/) — Smart Home & Security
+- [Your License Won't Recall Your Mower](https://wellroost.com/your-mowers-recall-has-an-importer/) — Outdoor Power & Snow Equipment
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
 - [Your Mat Costs 50 Blower Charges](https://wellroost.com/your-heated-mat-costs-50-times-the-blower/) — Outdoor Power & Snow Equipment
 - [Your Monitor's 77% Guess: Where It Fails](https://wellroost.com/monitor-77-percent-guess-where-it-fails/) — Smart Home & Security

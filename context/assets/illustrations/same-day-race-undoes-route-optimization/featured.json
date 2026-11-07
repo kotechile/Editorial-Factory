@@ -1,6 +1,6 @@
 {
   "slug": "same-day-race-undoes-route-optimization",
-  "revision": 23,
+  "revision": 24,
   "history": [
     {
       "revision": 1,
@@ -183,6 +183,14 @@
       "title": "Undoing Route Optimization",
       "bytes": 260892,
       "sha256": "sha256:99f25ca3a3cc03ad0c066c9b05764bfc8725d82098cbbb00be5ce61409e2ecb7"
+    },
+    {
+      "revision": 23,
+      "alt_text": "Undoing Route Optimization. A modular mechanical routing block pulling apart into separate disconnected tracks.",
+      "caption": "Undoing Route Optimization: Fast shipping undoes a decade of last-mile route gains.",
+      "title": "Undoing Route Optimization",
+      "bytes": 263166,
+      "sha256": "sha256:f14be078a5e30d6fa4ef414826e94655db1a060ec5317e5ef7034ebc32e8b8d6"
     }
   ],
   "style": "clay_render",
