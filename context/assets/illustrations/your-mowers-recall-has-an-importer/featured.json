@@ -1,0 +1,115 @@
+{
+  "slug": "your-mowers-recall-has-an-importer",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Walk-behind mower deck with lifted blank badge plate and disconnected GFCI cord on a garage floor.",
+      "caption": "A walk-behind mower deck shows a blank nameplate and a severed GFCI cord, visualising the split between a brand badge and the importer who must answer a recall.",
+      "title": "Recalled mower deck with lifted badge and severed GFCI cord",
+      "bytes": 393454,
+      "sha256": "sha256:1ec3a73bddf37ac5ff3125daa778a8e8"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A three-part modular assembly on a garage concrete floor: a cast-aluminum walk-behind mower deck with its top cowling and blank grey badge plate lifted and propped open on a small brass hinge, an empty nameplate recess exposed, and a heavy-duty orange extension cord with a large yellow GFCI plug disconnected and lying beside it. Single hard directional key light from the left rakes across the concrete, throwing long shadows. Palette: graphite, rust, bone white. Matte painted steel and weathered concrete texture, hard clean edges, generous negative space on the right, extreme asymmetric three-quarter view. No text, no garbled lettering, no watermarks, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, embossed wording, moulded letters, numbers",
+  "rationale": "The recall gate and the split between badge and importer are a single rule-level shift, so a restrained modular assembly of recognizable mower hardware states it precisely without text. It keeps the frame in the home garage world while avoiding the previous lettering rejection.",
+  "cue": "the importer behind the label",
+  "subject": "a walk-behind mower deck with its blank brand badge plate lifted away and a severed GFCI-equipped power cord on a garage concrete floor",
+  "core_thesis": "What decides whether a defective outdoor machine gets repaired, refunded or thrown away is the importer behind the label, not the brand on it.",
+  "core_conflict": "Brand badge versus importer liability: the licensed name on the machine remains, but the responsible US entity may not stock parts or answer a recall.",
+  "composition": "extreme asymmetric three-quarter view with open negative space on the right",
+  "alt_text": "The Importer, Not The Brand, Answers Recalls. Walk-behind mower deck with lifted blank badge plate and disconnected GFCI cord on a garage",
+  "caption": "The Importer, Not The Brand, Answers Recalls: The importer behind the label\u2014not the brand\u2014decides repair, refund, or trash.",
+  "title": "The Importer, Not The Brand, Answers Recalls",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mowers-recall-has-an-importer/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404400,
+  "sha256": "sha256:7fc49cf7807df07cffe4cd9a585cafbd36762e82500721a0a0c81251ba57838e",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404400,
+    "quality": 68,
+    "sha256": "sha256:7fc49cf7807df07cffe4cd9a585cafbd36762e82500721a0a0c81251ba57838e",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f4f88308f637dd0ebaefdc4705a8843b1879a4209593c190f6477cdd8ae6487a",
+  "render_phash": "0207248326876663072127802582218691a690c6584358c184823c823c222922",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metal walk-behind mower deck lying on its side with a hinged, blank white cover plate lifted open beside it, and a coiled orange extension cord with a yellow GFCI plug resting on a stained concrete floor, with empty floor space at right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The frame shows the article's own object and mechanism \u2014 a walk-behind mower deck with its blank badge plate removed, plus a severed cord matching the recall and 'license/badge' framing \u2014 so the headline reads as consistent with the image."
+  },
+  "source_hash": "sha256:8a6c1d0354dc47daa68b80a15b1ba410",
+  "source_chars": 5591,
+  "task_id": "f2bad72dc74053fc5785e4e5229c1773",
+  "credits": 18.0,
+  "cost_ms": 95,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_a63083eb0dc73229ed1642c5bed9537d.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A three-part modular assembly on a garage concrete floor: a cast-aluminum walk-behind mower deck with its top cowling and blank grey badge plate lifted and propped open on a small brass hinge, an empty nameplate recess exposed, and a heavy-duty orange extension cord with a large yellow GFCI plug disconnected and lying beside it. Single hard directional key light from the left rakes across the concrete, throwing long shadows. Palette: graphite, rust, bone white. Matte painted steel and weathered concrete texture, hard clean edges, generous negative space on the right, extreme asymmetric three-quarter view. No text, no garbled lettering, no watermarks, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-07T11:29:01+00:00",
+  "overlay": {
+    "kicker": "MOWER RECALLS // IMPORTER ACCOUNTABILITY",
+    "title": "THE IMPORTER, NOT THE BRAND, ANSWERS RECALLS",
+    "hook": "The importer behind the label\u2014not the brand\u2014decides repair, refund, or trash",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.81,
+    "target": 5.5,
+    "clutter": 0.272,
+    "region_rgb": [
+      148,
+      134,
+      115
+    ],
+    "binding_rgb": [
+      110,
+      98,
+      84
+    ],
+    "title_lines": [
+      "THE IMPORTER,",
+      "NOT THE BRAND,",
+      "ANSWERS RECALLS"
+    ],
+    "subject": 0.227,
+    "ink_subject": 0.057,
+    "spike": 0.307,
+    "generated_at": "2026-11-07T11:29:01+00:00"
+  }
+}

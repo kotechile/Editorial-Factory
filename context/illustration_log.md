@@ -450,3 +450,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-07 | `your-cheap-board-costs-385` | personal_microeconomics_tinkering_tax | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cheap-board-costs-385/featured.jpg` |
 | 2026-11-07 | `51-test-traps-your-plant` | supplier_risk_reshoring_decision | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/51-test-traps-your-plant/featured.jpg` |
 | 2026-11-07 | `europes-53-duty-rewrites-mower-prices` | yard_robotics | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/europes-53-duty-rewrites-mower-prices/featured.jpg` |
+| 2026-11-07 | `your-mowers-recall-has-an-importer` | outdoor_power_equipment | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-mowers-recall-has-an-importer/featured.jpg` |

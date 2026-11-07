@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T10:52:48Z",
+  "updated_at": "2026-11-07T11:30:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5929,6 +5929,24 @@
       "date": "2026-11-07",
       "public": true,
       "url": "https://giniloh.com/your-cheap-board-costs-385/"
+    },
+    {
+      "slug": "2026-11-07_your-mowers-recall-has-an-importer",
+      "title": "Your License Won't Recall Your Mower",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The badge left the factory first",
+        "By the numbers",
+        "Who answers in year three",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": false
     }
   ]
 }
