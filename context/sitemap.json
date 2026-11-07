@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T06:45:30Z",
+  "updated_at": "2026-11-07T06:49:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5758,7 +5758,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-11-06",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/carbon-data-stops-at-6-minutes/"
     },
     {
       "slug": "2026-11-06_your-battery-expires-at-500-cycles",
@@ -5775,7 +5776,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-06",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-battery-expires-at-500-cycles/"
     },
     {
       "slug": "2026-11-06_your-claim-owes-60-day-interest",
@@ -5888,7 +5890,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/51-test-traps-your-plant/"
     },
     {
       "slug": "2026-11-07_your-cheap-board-costs-385",
@@ -5906,7 +5909,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-cheap-board-costs-385/"
     }
   ]
 }

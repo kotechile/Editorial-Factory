@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T19:16:54+00:00",
+  "generated_at": "2026-11-07T06:49:16+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,44 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-cheap-board-costs-385",
+      "title": "Your Cheap Board Now Costs $385",
+      "url": "https://giniloh.com/your-cheap-board-costs-385/",
+      "path": "/your-cheap-board-costs-385/",
+      "sites_live": {
+        "giniloh.com": "/your-cheap-board-costs-385/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "The 16-gigabyte Raspberry Pi 5, long the cheap board for a home server, now costs $385 after its maker ran short of the memory chips the board needs.",
+      "modified": "2026-11-07T06:34:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-battery-expires-at-500-cycles",
+      "title": "Your Battery Dies at 500 Cycles",
+      "url": "https://giniloh.com/your-battery-expires-at-500-cycles/",
+      "path": "/your-battery-expires-at-500-cycles/",
+      "sites_live": {
+        "giniloh.com": "/your-battery-expires-at-500-cycles/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your phone battery dies on a published cycle count, not a calendar date. Apple rates the battery in an iPhone 14, and every model before it, for 500 full\u2026",
+      "modified": "2026-11-06T19:46:19",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3674,6 +3712,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "51-test-traps-your-plant",
+      "title": "51% Test Traps Your Plant",
+      "url": "https://aichieve.net/51-test-traps-your-plant/",
+      "path": "/51-test-traps-your-plant/",
+      "sites_live": {
+        "aichieve.net": "/51-test-traps-your-plant/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A customs rule published on 6 November decides, from 5 January, who may file an import entry, and it tests the filer's ownership rather than its conduct.",
+      "modified": "2026-11-07T06:46:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "100-case-eval-925-coverage",
       "title": "Your 100-Case Eval: 92.5% Coverage, Not 95%",
       "url": "https://aichieve.net/100-case-eval-925-coverage/",
@@ -4334,6 +4395,29 @@
       ],
       "excerpt": "At 80% of a decode card's uncapped power draw, a 235-billion-parameter model returned 22.4% more tokens per joule and met its latency target on every\u2026",
       "modified": "2026-10-31T04:48:25",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "carbon-data-stops-at-6-minutes",
+      "title": "Carbon Data Stops at 6 Minutes",
+      "url": "https://aichieve.net/carbon-data-stops-at-6-minutes/",
+      "path": "/carbon-data-stops-at-6-minutes/",
+      "sites_live": {
+        "aichieve.net": "/carbon-data-stops-at-6-minutes/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The federal record behind a carrier's carbon number is built to prove a driver's hours, and its six-minute resolution decides what a per-stop figure can mean.",
+      "modified": "2026-11-06T19:23:40",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8762,6 +8846,34 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 1549,
+      "slug": "51-test-traps-your-plant",
+      "title": "51% Test Traps Your Plant",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-07T06:46:05",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1536,
+      "slug": "carbon-data-stops-at-6-minutes",
+      "title": "Carbon Data Stops at 6 Minutes",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T19:23:40",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 1508,
       "slug": "your-planning-cycle-costs-7-managers",
       "title": "Your Planning Cycle Costs 7 Managers",
@@ -8811,7 +8923,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-05T17:50:56",
+      "modified": "2026-11-07T01:18:20",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -9852,20 +9964,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1158,
-      "slug": "your-routes-5x-stop-gap",
-      "title": "Your Route&#8217;s 5x Stop Gap: Density Beats Routing",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:19",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -9876,6 +9974,34 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1545,
+      "slug": "your-cheap-board-costs-385",
+      "title": "Your Cheap Board Now Costs $385",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-07T06:34:08",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1540,
+      "slug": "your-battery-expires-at-500-cycles",
+      "title": "Your Battery Dies at 500 Cycles",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-06T19:46:19",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -10128,48 +10254,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:18",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1155,
-      "slug": "your-125-exam-costs-122-hours",
-      "title": "Your $125 Exam Costs 122 Hours",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:19",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1152,
-      "slug": "your-61-day-window-costs-the-position",
-      "title": "Your 61-Day Window Costs the Position",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:20",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1148,
-      "slug": "your-cheap-part-a-599-bill",
-      "title": "Your Cheap Part, a $599 Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:21",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

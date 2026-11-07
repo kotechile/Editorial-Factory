@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-06T19:16:54+00:00
+# Internal-link candidates — 2026-11-07T06:49:16+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 54 live article(s), 16 other target(s)
+## giniloh.com — 56 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -44,8 +44,10 @@ Category hubs this front serves: —
 - [Your 26-Week Cliff Kills 4 Years](https://giniloh.com/your-26-week-cliff-kills-4-years/) — —
 - [Your 3-Year Rung Costs 15.9%](https://giniloh.com/your-3-year-rung-costs-15-9/) — —
 - [Your 61-Day Window Costs the Position](https://giniloh.com/your-61-day-window-costs-the-position/) — —
+- [Your Battery Dies at 500 Cycles](https://giniloh.com/your-battery-expires-at-500-cycles/) — —
 - [Your Broker's Fund Bills 37%](https://giniloh.com/your-brokers-fund-bills-37/) — —
 - [Your Buyback Gap: $39.8B to $0](https://giniloh.com/your-buyback-gap-39-8b-to-zero/) — —
+- [Your Cheap Board Now Costs $385](https://giniloh.com/your-cheap-board-costs-385/) — —
 - [Your Cheap Part, a $599 Bill](https://giniloh.com/your-cheap-part-a-599-bill/) — —
 - [Your Disks: 35% Dead by Year Six](https://giniloh.com/your-disks-35-dead-by-year-six/) — —
 - [Your ESPP Clock: 18 Months, Not 12](https://giniloh.com/your-espp-clock-is-18-months-not-12/) — —
@@ -180,7 +182,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 213 live article(s), 13 other target(s)
+## aichieve.net — 215 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -197,6 +199,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [4 Warehouses Halve Stock. Yours Won't](https://aichieve.net/four-warehouses-halve-stock/) — Supply Chain & Operations
 - [480GB Won't Skip Your Memory Queue](https://aichieve.net/your-480gb-card-wont-skip-the-memory-queue/) — Major Purchases & Assets
 - [49.9% On Time: Shippers Stuck in the Gap](https://aichieve.net/shippers-stuck-in-the-gap/) — Supply Chain & Operations
+- [51% Test Traps Your Plant](https://aichieve.net/51-test-traps-your-plant/) — Supply Chain & Operations
 - [60% Air Deals: Your Stock Math Breaks](https://aichieve.net/air-freight-wont-price-a-year/) — Supply Chain & Operations
 - [60.7% of Agent Deletes Ask Nobody](https://aichieve.net/your-agent-deletes-ask-nobody/) — Autonomous & Agentic Workflows
 - [63.6% OTIF: Your Hidden Quantity Gap](https://aichieve.net/your-hidden-quantity-gap/) — Supply Chain & Operations
@@ -216,6 +219,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Answer Field First Costs 38.15 Points](https://aichieve.net/answer-field-first-costs-38-points/) — Autonomous & Agentic Workflows
 - [Azure's Bad 40 Hours: The Control Plane Is the Single Point of Failure](https://aichieve.net/azure-control-plane-single-point-of-failure/) — Mental Models & Strategy
 - [CFOs Are Pricing In the Tariff Cliff](https://aichieve.net/tariff-cliff-already-priced-in/) — Supply Chain & Operations
+- [Carbon Data Stops at 6 Minutes](https://aichieve.net/carbon-data-stops-at-6-minutes/) — Supply Chain & Operations
 - [CaseProof: Stop Signing $3M Warehouse Automation Deals on a Vendor’s Spreadsheet:](https://aichieve.net/caseproof-stop-signing-3m-warehouse-automation-deals-on-a-vendors/) — Business Automation & Operations
 - [Cloud Support Costs: An Engineer at $190K](https://aichieve.net/your-support-bill-an-engineer-at-190k/) — AI Stack & Tool TCO
 - [Coast-to-Coast Rail Merger Clears First Big Test](https://aichieve.net/up-ns-rail-merger-clears-summary-denial/) — Supply Chain & Operations
@@ -413,6 +417,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1549 `51-test-traps-your-plant` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1536 `carbon-data-stops-at-6-minutes` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1508 `your-planning-cycle-costs-7-managers` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1500 `your-trailers-last-foot-costs-2500` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1498 `your-99-cent-resolution-bills-the-handoff` — published in the CMS but absent from the frontend sitemap
@@ -491,8 +497,9 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1176 `your-agent-contract-gap-63-unmet` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1172 `your-tooling-assist-is-dutiable` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1167 `7-days-notice-rewrites-your-duty` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1158 `your-routes-5x-stop-gap` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1545 `your-cheap-board-costs-385` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1540 `your-battery-expires-at-500-cycles` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1532 `your-iso-ceiling-fixed-at-vesting` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1529 `your-espp-clock-is-18-months-not-12` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1527 `your-grant-grew-25-4-directors-grew-3-9` — published in the CMS but absent from the frontend sitemap
@@ -511,6 +518,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1161 `why-your-fridge-upgrade-pays-12-50` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1155 `your-125-exam-costs-122-hours` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1152 `your-61-day-window-costs-the-position` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1148 `your-cheap-part-a-599-bill` — published in the CMS but absent from the frontend sitemap
