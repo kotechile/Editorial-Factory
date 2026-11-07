@@ -1,0 +1,112 @@
+{
+  "slug": "51-test-traps-your-plant",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Manufacturing plant on fenced U.S. land under hard sunlight with a chain-link boundary",
+      "caption": "A plant's own land becomes the test for filing its own import entries from 5 January 2027.",
+      "title": "Plant on Owned Land Under the 51% Test",
+      "bytes": 390564,
+      "sha256": "sha256:31176cee59f22987e7a56d5ffbbc0d21"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A compressed 200mm telephoto view of an unbranded U.S. manufacturing plant on a large owned parcel, its corrugated steel loading bay off-centre right, a chain-link fence running diagonally across the foreground marking the property line, hard raking late-afternoon sunlight from the left, deep shadows, slate grey, bone white, deep pine green, weathered concrete, galvanised steel, packed dirt, extreme asymmetric composition, no people, no text, no signage, crystal-clear telephoto distance clarity, flat compressed perspective.",
+  "negative_prompt": "garbled text, random lettering, watermarks, signage, numbers",
+  "rationale": "Long-lens telephoto compression conveys the scale of the land asset that now determines customs status, showing the plant and its owned ground as one economic unit. The story is about physical infrastructure and ownership of land, not a single document or product, so a wide infrastructure view fits better than a close-up or studio shot.",
+  "cue": "directly owns a significant amount of U.S. land",
+  "subject": "an unbranded U.S. manufacturing plant on a deeded parcel of land bounded by a chain-link fence",
+  "core_thesis": "From 5 January 2027, a company may file its own import entries only if at least 51% of its owners are U.S. citizens or green-card holders, or if it directly owns a significant amount of U.S. land free of debt.",
+  "core_conflict": "Ownership test vs land asset \u2014 a foreign-owned plant can lose importer-of-record status if it leases its U.S. facility, while owning the ground beneath it free of debt lets it pass despite failing the 51% ownership threshold.",
+  "composition": "extreme asymmetry with the plant off-centre right and the fenced land stretching away left, flat telephoto compression",
+  "alt_text": "51% Test Traps Your Plant. Manufacturing plant on fenced U.S. land under hard sunlight with a chain-link boundary",
+  "caption": "51% Test Traps Your Plant: A customs rule decides who may file an import entry by ownership, not conduct.",
+  "title": "51% Test Traps Your Plant",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/51-test-traps-your-plant/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 397797,
+  "sha256": "sha256:471d611debd7b1819eed7360fc47493269c275fafca0507bf149d8be953987a7",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 397797,
+    "quality": 72,
+    "sha256": "sha256:471d611debd7b1819eed7360fc47493269c275fafca0507bf149d8be953987a7",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:396c8962a731416ec9a469e9952eb463be975a15817eaa85004a0a042be240bc",
+  "render_phash": "0d0c060c0c0f08f81c831c0d19ad1d1ebe1ea08f000e1ac0001f006864028801",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A large industrial warehouse building with grey and white corrugated metal walls and a green band, seen at an angle from behind a chain-link fence, with a concrete apron and bare dirt ground in the foreground.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame shows an unbranded U.S. manufacturing plant on fenced, deeded land exactly as ordered, matching the article's subject of ownership-tested importer status tied to plant and land, though nothing visual signals the 51% ownership test itself."
+  },
+  "source_hash": "sha256:5e9cb790c6302a67af9e2bbe5f332493",
+  "source_chars": 4857,
+  "task_id": "2d8440e7a27ea17f5a00874b666b2c8a",
+  "credits": 5.0,
+  "cost_ms": 43,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2d8440e7a27ea17f5a00874b666b2c8a_1794033878955.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A compressed 200mm telephoto view of an unbranded U.S. manufacturing plant on a large owned parcel, its corrugated steel loading bay off-centre right, a chain-link fence running diagonally across the foreground marking the property line, hard raking late-afternoon sunlight from the left, deep shadows, slate grey, bone white, deep pine green, weathered concrete, galvanised steel, packed dirt, extreme asymmetric composition, no people, no text, no signage, crystal-clear telephoto distance clarity, flat compressed perspective.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-07T06:44:44+00:00",
+  "overlay": {
+    "kicker": "CUSTOMS OWNERSHIP TEST // RESHORING LIABILITY",
+    "title": "51% TEST TRAPS YOUR PLANT",
+    "hook": "A customs rule decides who may file an import entry by ownership, not conduct",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.57,
+    "target": 5.5,
+    "clutter": 0.262,
+    "region_rgb": [
+      73,
+      76,
+      79
+    ],
+    "binding_rgb": [
+      84,
+      83,
+      88
+    ],
+    "title_lines": [
+      "51% TEST TRAPS",
+      "YOUR PLANT"
+    ],
+    "subject": 0.122,
+    "ink_subject": 0.027,
+    "spike": 0.37,
+    "generated_at": "2026-11-07T06:44:44+00:00"
+  }
+}
