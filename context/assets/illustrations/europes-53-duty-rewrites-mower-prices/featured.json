@@ -1,0 +1,113 @@
+{
+  "slug": "europes-53-duty-rewrites-mower-prices",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical unbranded robot mowers on a driveway, separated by a painted boundary line under warm and cool light.",
+      "caption": "The same robot mower can carry two different prices depending on which side of a painted customs line it rolled from.",
+      "title": "Duty Split Robot Mower Driveway",
+      "bytes": 335236,
+      "sha256": "sha256:d8e41e7301a1d6fe0d862db70a7e77af"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Wide cinematic split-screen diptych on a residential driveway at blue hour. Left half: an unbranded robot mower parked in warm amber garage light, dust on its black composite deck, a coiled charging cable on concrete. Right half: an identical robot mower across a painted yellow boundary line under cool slate-blue shadow, a folded customs form on the ground beside it. 35mm anamorphic wide, dramatic falloff, shallow depth of field, charcoal and bone white with deep pine green trim, concrete and painted steel, light from left in warm half and cool ambient from right, subtle film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI, people, hands, faces",
+  "rationale": "Cinematic still captures the decisive moment of a price split in a real home setting rather than a sterile studio. The split-screen diptych makes the two price paths legible at a glance, preserving the article's core factory-versus-brand tension.",
+  "cue": "two near-identical machines on two different price paths",
+  "subject": "two identical unbranded robot mowers on a concrete driveway, separated by a painted customs boundary line",
+  "core_thesis": "A proposed 45.6% to 53.3% duty on Chinese-built robot mowers turns customs origin into the price variable, splitting otherwise identical machines onto two different price paths.",
+  "core_conflict": "Customs origin versus shelf price: the same badge can sell at two different prices depending on which factory bolted the frame together, and the only readable clue is the price itself.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Europe'S Duty Leaves A 53.3% Gap. Two identical unbranded robot mowers on a driveway, separated by a painted boundary line under warm and",
+  "caption": "Europe'S Duty Leaves A 53.3% Gap: Europe's proposed duty on Chinese-built robot mowers runs from 45.6 to 53.3 percent.",
+  "title": "Europe'S Duty Leaves A 53.3% Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/europes-53-duty-rewrites-mower-prices/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 375600,
+  "sha256": "sha256:249119aabfc6316a4f289f44e050a09b37bc6660ab32c3e454c25be69d153877",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 375600,
+    "quality": 88,
+    "sha256": "sha256:249119aabfc6316a4f289f44e050a09b37bc6660ab32c3e454c25be69d153877",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:fe4a455955bb747d21393cb4d98343b2b19f9efc6c5070d97740e4cf2c86a444",
+  "render_phash": "03f001f8019f0307030fc3178a7941e861f861f171b1c1b382c305870387078f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen view shows two identical dark robot lawn mowers on concrete, the left one near an open garage with a coiled cord, and the right one beside a yellow painted line with a white document on the ground.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "It shows two near-identical robot mowers divided by a customs-style boundary, matching the article's factory-origin price split."
+  },
+  "source_hash": "sha256:f2f3af9d8707b6ed738e15baeb239020",
+  "source_chars": 4621,
+  "task_id": "8b791a0865b767b8c10d528a09e43498",
+  "credits": 5.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/8b791a0865b767b8c10d528a09e43498_1794048420221.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Wide cinematic split-screen diptych on a residential driveway at blue hour. Left half: an unbranded robot mower parked in warm amber garage light, dust on its black composite deck, a coiled charging cable on concrete. Right half: an identical robot mower across a painted yellow boundary line under cool slate-blue shadow, a folded customs form on the ground beside it. 35mm anamorphic wide, dramatic falloff, shallow depth of field, charcoal and bone white with deep pine green trim, concrete and painted steel, light from left in warm half and cool ambient from right, subtle film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-07T10:47:09+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "EUROPE'S DUTY LEAVES A 53.3% GAP",
+    "hook": "Europe's proposed duty on Chinese-built robot mowers runs from 45.6 to 53.3 percent",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.65,
+    "target": 4.5,
+    "clutter": 0.245,
+    "region_rgb": [
+      81,
+      88,
+      94
+    ],
+    "binding_rgb": [
+      112,
+      113,
+      118
+    ],
+    "title_lines": [
+      "EUROPE'S DUTY",
+      "LEAVES A 53.3%",
+      "GAP"
+    ],
+    "subject": 0.179,
+    "ink_subject": 0.06,
+    "spike": 0.314,
+    "generated_at": "2026-11-07T10:47:09+00:00"
+  }
+}

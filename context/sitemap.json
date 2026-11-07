@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T06:49:16Z",
+  "updated_at": "2026-11-07T10:48:49Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5892,6 +5892,24 @@
       "date": "2026-11-07",
       "public": true,
       "url": "https://aichieve.net/51-test-traps-your-plant/"
+    },
+    {
+      "slug": "2026-11-07_europes-53-duty-rewrites-mower-prices",
+      "title": "Europe's Duty Leaves a 53.3% Gap",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the factory beats the model",
+        "By the numbers",
+        "Where the calendar does the negotiating",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": false
     },
     {
       "slug": "2026-11-07_your-cheap-board-costs-385",
