@@ -329,6 +329,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-07 | supplier_risk_reshoring_decision | your-peso-upside-is-priced | Your Peso Upside Is Billed: 2.28% | https://pressflow.aichieve.net/published/2026-11-07_your-peso-upside-is-priced.md | reader site only |
 | 2026-11-07 | yard_robotics | mowers-2cm-dies-under-trees | Mower's 2 cm Dies Under Trees | https://pressflow.aichieve.net/published/2026-11-07_mowers-2cm-dies-under-trees.md | reader site only |
 | 2026-11-07 | outdoor_power_equipment | your-mowers-145-minute-charge-trap | Your Mower's 145-Minute Charge Trap | https://pressflow.aichieve.net/published/2026-11-07_your-mowers-145-minute-charge-trap.md | reader site only |
+| 2026-11-07 | home_diagnostics_tech | slab-leak-listener-misses-one-in-six | Your Slab Leak: 15% Blind Spot | https://pressflow.aichieve.net/published/2026-11-07_slab-leak-listener-misses-one-in-six.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T19:21:06Z",
+  "updated_at": "2026-11-07T19:43:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5924,6 +5924,24 @@
         "By the numbers",
         "What the sellers already concede",
         "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": false
+    },
+    {
+      "slug": "2026-11-07_slab-leak-listener-misses-one-in-six",
+      "title": "Your Slab Leak: 15% Blind Spot",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why a quiet floor is not a clean pipe",
+        "By the numbers",
+        "The cheap tests come first",
+        "The honest limit of a listening fee",
         "Related reading"
       ],
       "target_persona": "homeowner_pro",
