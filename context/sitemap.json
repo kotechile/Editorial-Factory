@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T06:23:06Z",
+  "updated_at": "2026-11-07T06:45:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5871,6 +5871,24 @@
       "date": "2026-11-06",
       "public": true,
       "url": "https://giniloh.com/your-iso-ceiling-fixed-at-vesting/"
+    },
+    {
+      "slug": "2026-11-07_51-test-traps-your-plant",
+      "title": "51% Test Traps Your Plant",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Who may file",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-07",
+      "public": false
     },
     {
       "slug": "2026-11-07_your-cheap-board-costs-385",

@@ -1,0 +1,117 @@
+{
+  "slug": "your-cheap-board-costs-385",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Single-board computer with vacant memory socket beside a household address-check gate on a workbench.",
+      "caption": "An isometric audit bay pairs a household address-check gate with a single-board computer's empty memory slot, pricing what was once free.",
+      "title": "Cheap Board Audit Bay",
+      "bytes": 368857,
+      "sha256": "sha256:c77865a6ee81eb88a3f0304979218f4c"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works — money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen isometric cutaway laid on a timber workbench. Left: a small household address-check gate of brushed steel with a hinged barred slot and six blank card trays, one blocked by a brass latch. Right: an unbranded matte green single-board computer with a row of four memory sockets, two populated DIMMs and one empty socket under a small inspection arm. A single key light from the upper left rakes across the metal edges, casting long shadows. Palette: ochre, charcoal, bone white. Generous margin, split-screen diptych with left-right contrast, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible words, numbers, UI, typography",
+  "rationale": "Technical isometric fits because the article explains how two informal allowances—an unenforced household rule and unused memory headroom—get formally priced as check and capacity lines. The cutaway style can show both mechanisms in one clear schematic without defaulting to a literal datacenter or product shot.",
+  "cue": "a check line and a capacity line",
+  "subject": "split-screen isometric audit bay with a household address-check gate and a single-board computer memory socket with a vacant headroom slot",
+  "core_thesis": "The informal halves of a cheap stack—unenforced household rules and unused memory headroom—are now being priced, adding both a check line and a capacity line to the audit.",
+  "core_conflict": "free informal allowances versus newly itemized invoices; household membership verification versus memory capacity shortfall.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "A single-board computer with a vacant memory socket beside a household address-check gate on a workbench.",
+  "caption": "A household address-check gate beside a single-board computer's vacant memory socket: the two things that used to be free.",
+  "title": "Your Cheap Board Now Costs $385",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "technical_isometric"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-cheap-board-costs-385/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408553,
+  "sha256": "sha256:4f163fdf71b9e9553b4ec2a68024f7da9853786bd4a772e25afbe82947a832a9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408553,
+    "quality": 76,
+    "sha256": "sha256:4f163fdf71b9e9553b4ec2a68024f7da9853786bd4a772e25afbe82947a832a9",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:bd10b4e5f30efbd842a9a9a23d8dbd7e6fdf52cf12e738630494e017d91291f1",
+  "render_phash": "712f7d2dcd1f36326773cb6393e66dce0b5e967d64385b5856392c93384e702c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen isometric diptych on a wooden surface: on the left a metal drawer-and-lid unit, like a mailbox or filing cabinet, with five rectangular drawers pulled open and a brass padlock on one of them; on the right a green circuit board with two memory modules seated in a pair of long slots, a third empty slot between them, and a small articulated arm standing beside the modules.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The right half literally shows a single-board computer's memory sockets with two modules fitted and one vacant headroom slot, which is the article's own mechanism for the priced capacity line, and the left half reads as the household audit/drawer-check gate, though the drawer unit alone is generic enough that the Pi-specific claim rests mostly on the board side."
+  },
+  "source_hash": "sha256:bc98a87734849400777b0ce58881a7e5",
+  "source_chars": 5192,
+  "task_id": "09796ae12c9d8f675a2dfa085e77f1ff",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8f08aab252f8c6eb59c1fcbd3ea8dc8e.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen isometric cutaway laid on a timber workbench. Left: a small household address-check gate of brushed steel with a hinged barred slot and six blank card trays, one blocked by a brass latch. Right: an unbranded matte green single-board computer with a row of four memory sockets, two populated DIMMs and one empty socket under a small inspection arm. A single key light from the upper left rakes across the metal edges, casting long shadows. Palette: ochre, charcoal, bone white. Generous margin, split-screen diptych with left-right contrast, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-07T06:31:40+00:00",
+  "overlay": {
+    "kicker": "RASPBERRY PI // MEMORY SHORTAGE",
+    "title": "YOUR CHEAP BOARD NOW COSTS $385",
+    "hook": "The 16GB Raspberry Pi 5, long the cheap home-server pick, now costs $385",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.52,
+    "target": 5.5,
+    "clutter": 0.318,
+    "region_rgb": [
+      83,
+      78,
+      63
+    ],
+    "binding_rgb": [
+      114,
+      130,
+      94
+    ],
+    "title_lines": [
+      "YOUR CHEAP",
+      "BOARD NOW",
+      "COSTS $385"
+    ],
+    "subject": 0.198,
+    "ink_subject": 0.061,
+    "spike": 0.265,
+    "generated_at": "2026-11-07T06:31:40+00:00"
+  }
+}

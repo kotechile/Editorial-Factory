@@ -14,6 +14,12 @@ meta_title: "Your Cheap Board Now Costs $385"
 meta_title_source: "derived_from_title"
 meta_description: "The 16-gigabyte Raspberry Pi 5, long the cheap board for a home server, now costs $385 after its maker ran short of the memory chips the board needs."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-cheap-board-costs-385/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "A single-board computer with a vacant memory socket beside a household address-check gate on a workbench."
+image_caption: "A household address-check gate beside a single-board computer's vacant memory socket: the two things that used to be free."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

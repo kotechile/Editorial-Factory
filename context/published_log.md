@@ -321,6 +321,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-06 | last_mile_routing_fleet_carbon | carbon-data-stops-at-6-minutes | Carbon Data Stops at 6 Minutes | https://pressflow.aichieve.net/published/2026-11-06_carbon-data-stops-at-6-minutes.md | reader site only |
 | 2026-11-06 | consumer_asset_repair_replace_tco | your-battery-expires-at-500-cycles | Your Battery Dies at 500 Cycles | https://pressflow.aichieve.net/published/2026-11-06_your-battery-expires-at-500-cycles.md | reader site only |
 | 2026-11-07 | personal_microeconomics_tinkering_tax | your-cheap-board-costs-385 | Your Cheap Board Now Costs $385 | https://pressflow.aichieve.net/published/2026-11-07_your-cheap-board-costs-385.md | reader site only |
+| 2026-11-07 | supplier_risk_reshoring_decision | 51-test-traps-your-plant | 51% Test Traps Your Plant | https://pressflow.aichieve.net/published/2026-11-07_51-test-traps-your-plant.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -447,3 +447,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-06 | `carbon-data-stops-at-6-minutes` | last_mile_routing_fleet_carbon | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/carbon-data-stops-at-6-minutes/featured.jpg` |
 | 2026-11-06 | `your-battery-expires-at-500-cycles` | consumer_asset_repair_replace_tco | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-battery-expires-at-500-cycles/featured.jpg` |
 | 2026-11-07 | `your-task-protocol-costs-643-lines` | agentic_ai | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-task-protocol-costs-643-lines/featured.jpg` |
+| 2026-11-07 | `your-cheap-board-costs-385` | personal_microeconomics_tinkering_tax | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-cheap-board-costs-385/featured.jpg` |
+| 2026-11-07 | `51-test-traps-your-plant` | supplier_risk_reshoring_decision | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/51-test-traps-your-plant/featured.jpg` |
