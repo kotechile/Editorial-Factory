@@ -1,0 +1,113 @@
+{
+  "slug": "your-512x384-cameras-10x-illusion",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Bare microbolometer detector array inside an opened thermal camera on a garage workbench, gold wire bonds visible.",
+      "caption": "A thermal camera's actual measured resolution lives in this tiny detector array, not in the upscaled pixel count printed on the box.",
+      "title": "Thermal Camera Detector Array vs Upscaled Resolution",
+      "bytes": 325478,
+      "sha256": "sha256:b8adbffe3cca743b2e77ef2fa0a441e5"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme macro photograph on a garage workbench: a bare square microbolometer detector array exposes its fine gold grid and bond wires at lower left, the black thermal-camera housing shell folded open behind it and a blurred blank spec sheet under a corner. Hard raking daylight from the upper left glances across the sensor face, revealing tiny measured pixels. Palette of bone white, graphite, and slate grey, with textured particle-board plywood beneath. 100mm macro lens at f/2.8, razor-thin focal plane on the sensor, background falling away. Extreme asymmetry, sensor lower-left on a rule-of-thirds intersection, generous negative space top-right. Fine film grain, no people, no legible lettering.",
+  "negative_prompt": "garbled text, random letters, watermarks, logo, UI, legible words, numbers, captions, labels, typography",
+  "rationale": "Editorial macro locks the eye on the exact component where the deception lives: the tiny detector array versus the box's inflated resolution. A raking macro shot turns an abstract spec dispute into a tactile piece of hardware.",
+  "cue": "detector row in its spec table counts measured ones",
+  "subject": "a bare microbolometer detector array in an opened thermal camera",
+  "core_thesis": "The resolution on a thermal camera's box counts drawn pixels; the detector row in its spec table counts measured ones, and only the second number says what the camera can see.",
+  "core_conflict": "marketed interpolated resolution vs native detector pixel count \u2014 upscaled 512\u00d7384 imagery masquerading as measured detail while the true 256\u00d7192 array remains the only real temperature data",
+  "composition": "extreme asymmetry, detector chip lower-left on a rule-of-thirds intersection, trailing ribbon cable receding toward top-right",
+  "alt_text": "Thermal Camera 10X Resolution Illusion. Bare microbolometer detector array inside an opened thermal camera on a garage workbench, gold wire",
+  "caption": "Thermal Camera 10X Resolution Illusion: The advertised 512\u00d7384 is drawn, not measured; the detector grid is the real resolution.",
+  "title": "Thermal Camera 10X Resolution Illusion",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-512x384-cameras-10x-illusion/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 397568,
+  "sha256": "sha256:6a4077c9ccf692218008f72081fef01d77d5865339d197d5a747c3b5ebaf6380",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 397568,
+    "quality": 88,
+    "sha256": "sha256:6a4077c9ccf692218008f72081fef01d77d5865339d197d5a747c3b5ebaf6380",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6c92d5ce86ebb381380213ee22f6fa695ffee6a39655f7293aca69caf3a7ae9e",
+  "render_phash": "b86c693f793f7b277b2de713e78ff060d061924560d3d84fcb5d4e7b28e9b7d1",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A bare ceramic-packaged chip with a central square die and gold-plated contact traces lies on a strand-board surface in the lower-left, with an empty black plastic camera-like housing behind and to the left and a white sheet of paper extending toward the upper right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.55,
+    "reason": "The frame shows the article's core object \u2014 a bare chip die standing in for the detector array whose measured pixels are the story \u2014 though it reads more as a generic processor package than a microbolometer and lacks the ordered ribbon cable."
+  },
+  "source_hash": "sha256:fd75862208910e3df6e63ca29377f77b",
+  "source_chars": 5428,
+  "task_id": "74ac0cc27603783cf24f081a2e645fa6",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/74ac0cc27603783cf24f081a2e645fa6_1794052124786.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme macro photograph on a garage workbench: a bare square microbolometer detector array exposes its fine gold grid and bond wires at lower left, the black thermal-camera housing shell folded open behind it and a blurred blank spec sheet under a corner. Hard raking daylight from the upper left glances across the sensor face, revealing tiny measured pixels. Palette of bone white, graphite, and slate grey, with textured particle-board plywood beneath. 100mm macro lens at f/2.8, razor-thin focal plane on the sensor, background falling away. Extreme asymmetry, sensor lower-left on a rule-of-thirds intersection, generous negative space top-right. Fine film grain, no people, no legible lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-07T11:48:52+00:00",
+  "overlay": {
+    "kicker": "THERMAL CAMERA SPECS // RESOLUTION ILLUSION",
+    "title": "THERMAL CAMERA 10X RESOLUTION ILLUSION",
+    "hook": "The advertised 512\u00d7384 is drawn, not measured; the detector grid is the real resolution",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.92,
+    "target": 5.5,
+    "clutter": 0.462,
+    "region_rgb": [
+      66,
+      62,
+      58
+    ],
+    "binding_rgb": [
+      167,
+      152,
+      133
+    ],
+    "title_lines": [
+      "THERMAL CAMERA",
+      "10X RESOLUTION",
+      "ILLUSION"
+    ],
+    "subject": 0.22,
+    "ink_subject": 0.071,
+    "spike": 0.235,
+    "generated_at": "2026-11-07T11:48:52+00:00"
+  }
+}

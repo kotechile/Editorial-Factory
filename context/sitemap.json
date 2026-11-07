@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T11:34:40Z",
+  "updated_at": "2026-11-07T11:49:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5904,6 +5904,24 @@
         "Why the factory beats the model",
         "By the numbers",
         "Where the calendar does the negotiating",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": false
+    },
+    {
+      "slug": "2026-11-07_your-512x384-cameras-10x-illusion",
+      "title": "Your 512\u00d7384 Camera's 10x Illusion",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the pixel count comes from",
+        "By the numbers",
+        "Three questions before you buy",
         "The catch",
         "Related reading"
       ],

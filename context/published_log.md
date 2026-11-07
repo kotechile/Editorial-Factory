@@ -324,6 +324,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-07 | supplier_risk_reshoring_decision | 51-test-traps-your-plant | 51% Test Traps Your Plant | https://pressflow.aichieve.net/published/2026-11-07_51-test-traps-your-plant.md | reader site only |
 | 2026-11-07 | yard_robotics | europes-53-duty-rewrites-mower-prices | Europe's Duty Leaves a 53.3% Gap | https://pressflow.aichieve.net/published/2026-11-07_europes-53-duty-rewrites-mower-prices.md | reader site only |
 | 2026-11-07 | outdoor_power_equipment | your-mowers-recall-has-an-importer | Your License Won't Recall Your Mower | https://pressflow.aichieve.net/published/2026-11-07_your-mowers-recall-has-an-importer.md | reader site only |
+| 2026-11-07 | home_diagnostics_tech | your-512x384-cameras-10x-illusion | Your 512×384 Camera's 10x Illusion | https://pressflow.aichieve.net/published/2026-11-07_your-512x384-cameras-10x-illusion.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
