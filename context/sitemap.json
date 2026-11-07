@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T17:45:41Z",
+  "updated_at": "2026-11-07T18:18:15Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5986,6 +5986,24 @@
       "date": "2026-11-07",
       "public": true,
       "url": "https://wellroost.com/your-mowers-recall-has-an-importer/"
+    },
+    {
+      "slug": "2026-11-07_your-peso-upside-is-priced",
+      "title": "Your Peso Upside Is Billed: 2.28%",
+      "vertical": "supplier_risk_reshoring_decision",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the forward price comes from",
+        "By the numbers",
+        "Where the currency actually bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-07",
+      "public": false
     }
   ]
 }
