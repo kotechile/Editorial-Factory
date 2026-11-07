@@ -103,3 +103,11 @@ as UNVERIFIED, not passed — the gate never claims a check it did not run.
 ## 7. Failure handling
 Log removed-claim patterns (e.g. "aggregator cited a vendor figure without a link") to
 `skills/self_improvement_eval.md` so future scouts prioritize primary sources up front.
+
+**A PDF from an investor-relations host can answer 403 to the gate's fetcher while a direct read returns the whole
+document (learned 2026-11-07).** `husqvarnagroup.com/sites/husqvarna/files/pr/<id>.pdf` was blocked for
+`source_gate` (HTTP 403 → UNVERIFIED, a note) and downloaded cleanly to `curl` + `pdftotext`, which is where the
+quarter's SEK 935m and SEK 305m figures were quoted from. Consequences: a figure taken from such a host will sit on
+the gate's "appears in no cited source" list every run, and the note must be read as a fetch wall, never as a
+sourcing defect. Verify the number against the PDF text out of band and say so in the run log rather than swapping
+in a secondary write-up that the gate can fetch — the primary is still the record of authority.

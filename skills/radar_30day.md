@@ -220,3 +220,12 @@ Write `context/recon_proposals/YYYY-MM-DD_<vertical>_signals.md`:
   Q1 2026 and the release was 28 April 2026 → out of window; it was carried as dated background,
   not an anchor. Apply the same check to a "new" annual report whose underlying data predates the
   window.
+
+- **A vendor's promotional page keeps rendering long after its offer expired, and it is the freshest-looking
+  number in the sweep (learned 2026-11-07).** Cub Cadet's "2026 Ultimate Sales Event" page still listed
+  $300, $400, $600, $800 and $1,000 off the current zero-turn ladder and was the obvious "this month's
+  discount" figure for an outdoor-power run — while the page's own disclaimer, at the foot, gave the offer
+  window as **4/2/2026 – 5/13/2026**, six months dead. A search hit, a live URL and a rendered price ladder
+  are not a current price. Before a promotion enters the signals file, read the disclaimer in the page body
+  (not the banner) for the offer dates; a page whose disclaimer has expired goes to `## Dated background` at
+  most, and is never a row. The same test applies to a retailer's "sale ends" copy on a cached category page.
