@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T18:18:15Z",
+  "updated_at": "2026-11-07T18:57:43Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5911,6 +5911,24 @@
       "date": "2026-11-07",
       "public": true,
       "url": "https://wellroost.com/europes-53-duty-rewrites-mower-prices/"
+    },
+    {
+      "slug": "2026-11-07_mowers-2cm-dies-under-trees",
+      "title": "Mower's 2 cm Dies Under Trees",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Accuracy is a correction service",
+        "By the numbers",
+        "What the sellers already concede",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": false
     },
     {
       "slug": "2026-11-07_your-512x384-cameras-10x-illusion",

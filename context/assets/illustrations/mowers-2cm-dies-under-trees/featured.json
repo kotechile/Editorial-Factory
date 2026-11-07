@@ -1,0 +1,113 @@
+{
+  "slug": "mowers-2cm-dies-under-trees",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Wire-free robotic mower on a residential driveway under conifer canopy and open sky, split-screen contrast",
+      "caption": "The same wire-free mower holds centimetre accuracy under open sky and loses the fix to metres beneath dense conifer canopy.",
+      "title": "Wire-free mower accuracy under canopy",
+      "bytes": 350513,
+      "sha256": "sha256:efdfe722838d8a1a7172e57c34a685d1"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych with left-right scenario contrast on a residential driveway. Left half: a wire-free robotic mower sits on sunlit concrete under open sky, a small mast-mounted reference-station antenna beside it casting a long shadow. Right half: the same mower under dense conifer canopy, deep green shadows, no mast visible. 35mm anamorphic wide with dramatic falloff, raking afternoon light from the left, deep pine green, graphite, bone white, concrete and galvanised steel, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "Cinematic still captures the decisive moment and place of the accuracy failure, while the split-screen diptych renders the two correction scenarios\u2014open sky versus closed canopy\u2014as a single dramatic contrast. The treatment's anamorphic wide framing and atmospheric depth give the residential yard the editorial weight this story needs.",
+  "cue": "under closed canopy the fix collapses to metres",
+  "subject": "the unbranded wire-free robotic mower under conifer canopy beside a reference-station mast",
+  "core_thesis": "A wire-free mower's centimetre accuracy is correction data, not hardware, and under closed canopy the fix collapses to metres unless a reference station with a 135-degree sky cone and power maintains it.",
+  "core_conflict": "The cloud correction route rated 1\u20136 cm needs cell coverage, while a reference station rated 1\u20132 cm needs a mast and open sky; dense tree canopy degrades the fix to metres, making sky view and cell coverage the real constraints.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Mower'S 2 Cm Dies Under Trees. Wire-free robotic mower on a residential driveway under conifer canopy and open sky, split-screen contrast",
+  "caption": "Mower'S 2 Cm Dies Under Trees: The 2 cm claim is correction data, not hardware \u2014 under trees it falls to metres.",
+  "title": "Mower'S 2 Cm Dies Under Trees",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/mowers-2cm-dies-under-trees/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 398990,
+  "sha256": "sha256:da144cd2aa9ae37964c7ef49a04a8f1f8d1abf4e950a5be7559c8ccc641c03bd",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 398990,
+    "quality": 84,
+    "sha256": "sha256:da144cd2aa9ae37964c7ef49a04a8f1f8d1abf4e950a5be7559c8ccc641c03bd",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f2b6d7cdf8e69432378b66503d7a3dcfb0aa1dfd58625fd060c30e2e32319106",
+  "render_phash": "bd93b9a29996cb856b83cbca93c935b0a58de19771ab71a93d98b7841b8f4d9e",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen diptych: on the left, a grey and white wheeled robotic mower sits on a paved driveway beside a tall thin mast topped with a small rectangular unit, with a house roof and shrubs in the background; on the right, a similar mower sits on a paved surface in deep shade beneath overhanging conifer branches, with dark foliage behind it.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The diptych shows the article's exact mechanism \u2014 the same unbranded wire-free mower in an open-sky scenario with a reference-station mast versus under closed conifer canopy \u2014 so a reader would recognize the story's protagonist and its accuracy trade-off."
+  },
+  "source_hash": "sha256:b67b47576a73b327956017a6719292b1",
+  "source_chars": 4754,
+  "task_id": "f6708b7028f4184b9443d11e6ae1630c",
+  "credits": 5.0,
+  "cost_ms": 62,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f6708b7028f4184b9443d11e6ae1630c_1794077821078.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Split-screen diptych with left-right scenario contrast on a residential driveway. Left half: a wire-free robotic mower sits on sunlit concrete under open sky, a small mast-mounted reference-station antenna beside it casting a long shadow. Right half: the same mower under dense conifer canopy, deep green shadows, no mast visible. 35mm anamorphic wide with dramatic falloff, raking afternoon light from the left, deep pine green, graphite, bone white, concrete and galvanised steel, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-07T18:57:10+00:00",
+  "overlay": {
+    "kicker": "ROBOT MOWERS // RTK ACCURACY",
+    "title": "MOWER'S 2 CM DIES UNDER TREES",
+    "hook": "The 2 cm claim is correction data, not hardware \u2014 under trees it falls to metres",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 10.84,
+    "target": 4.5,
+    "clutter": 0.206,
+    "region_rgb": [
+      22,
+      30,
+      24
+    ],
+    "binding_rgb": [
+      41,
+      55,
+      40
+    ],
+    "title_lines": [
+      "MOWER'S 2 CM",
+      "DIES UNDER",
+      "TREES"
+    ],
+    "subject": 0.128,
+    "ink_subject": 0.017,
+    "spike": 0.16,
+    "generated_at": "2026-11-07T18:57:10+00:00"
+  }
+}

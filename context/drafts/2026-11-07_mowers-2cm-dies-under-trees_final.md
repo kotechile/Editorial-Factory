@@ -10,6 +10,12 @@ date: 2026-11-07
 slug: mowers-2cm-dies-under-trees
 meta_title: "Mower's 2 cm Dies Under Trees"
 meta_description: "A robot mower's 2 cm claim is correction data, not hardware: the cloud route needs cell coverage, a station needs a 135-degree sky cone, and canopy takes the rest."
+image_path: "context/assets/illustrations/mowers-2cm-dies-under-trees/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Mower'S 2 Cm Dies Under Trees. Wire-free robotic mower on a residential driveway under conifer canopy and open sky, split-screen contrast"
+image_caption: "Mower'S 2 Cm Dies Under Trees: The 2 cm claim is correction data, not hardware — under trees it falls to metres."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

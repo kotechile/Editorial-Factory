@@ -455,3 +455,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-07 | `your-annual-plan-is-a-10-month-loan` | personal_microeconomics_tinkering_tax | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-annual-plan-is-a-10-month-loan/featured.jpg` |
 | 2026-11-07 | `your-peso-upside-is-priced` | supplier_risk_reshoring_decision | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-peso-upside-is-priced/featured.jpg` |
 | 2026-11-07 | `your-peso-upside-is-priced` | supplier_risk_reshoring_decision | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-peso-upside-is-priced/featured.jpg` |
+| 2026-11-07 | `mowers-2cm-dies-under-trees` | yard_robotics | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/mowers-2cm-dies-under-trees/featured.jpg` |
