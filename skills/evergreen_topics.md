@@ -1024,3 +1024,31 @@ interface rather than the vehicle.
 **The frontier rewrite can invert an election-timing rule while every gate passes (learned 2026-11-05).** Loop 3 turned "mark-to-market can be chosen in any year; the qualified-elect election must be made in the first year" into "the mark-to-market choice is made on the return for the year of purchase, so a decision left until the following spring is already late" — the practical advice of the piece, reversed. No gate reads a `must be made by` clause: `source_gate` checks that the cited page carries the *figure*, `publish_gate` reads markers and prose shape, `review_audit` compares figures and quotes. On any piece whose actionability is a deadline or an election window, check each timing sentence against the source's own verb before the push, and prefer quoting the source's sentence in the verified brief so the rewrite has a string to preserve.
 
 **A Loop 3 rewrite can fail the Flesch floor on every attempt while the hand draft clears it, so budget the repair rather than the re-run (learned 2026-11-06).** On the `carbon-data-stops-at-6-minutes` evergreen the draft passed at Flesch 52.6, and the frontier pass then returned three failures in a row — 44.9, 47.4 and 49.0, each `length=ok` — because the rewrite compressed short declarative sentences into longer nominal ones; a fourth attempt would have produced the same class. The working sequence is to keep the attempt with the fewest defects (here attempt 3), then repair by hand in one pass: cut the `## Gate report`, restore the hand-scored title, re-split the long sentences, and **rebuild the `By the numbers` block, which is where the rewrite drops the title's own figure** — attempt 3 had replaced the 0.1-hour engine grain with the 10% odometer row, so an article titled on six minutes carried no six-minute bullet. Two siblings in the same pass, neither visible to a gate: the lead's "six minutes" had been re-cited to the agency page that states only the device's purpose (the figure lives in Appendix A), and the tactical section had lost the 10,001-pound procurement item to a generic "export over dashboard" bullet. `review_audit` compares figures and citations rather than authorship, so a hand-repaired final still passes; the repair cost one editing pass, a re-run costs nine minutes and lands in the same place.
+
+**Hosts probed live 2026-11-07, building a currency-in-the-landed-cost brief (the `supplier_risk_reshoring_decision` evergreen).**
+Carries the figure as plain text and fetches first try: `federalreserve.gov/releases/h10/current/` (the weekly foreign-exchange
+release — "Release Date: November 2, 2026 … MEXICO PESO 18.5922 18.6381 18.6730 18.7911 18.7942", i.e. a **measured spot rate for
+any currency on a dated row**, which is the cheapest FX anchor the desk has, and the peso cell lands cleanly on its own row);
+`federalreserve.gov/releases/h15/` (the same page the FTZ brief uses, for the dollar leg of the differential);
+`ecfr.gov/current/title-19/section-159.34` (Customs' certified-rate conversion order; its own amendment note "T.D. 81-117, 46 FR
+24944, May 4, 1981" is a clean `1981`-led durability row). **Unreachable to the verifier:** every Banco de México path tried
+(`banxico.org.mx` home = a 1,368-character nav shell, `tipcamb/main.do` = 607 characters, `monetary-policy/index.html` and the
+policy-announcement index = `unreachable`, `tipcamb/tipCamMIAction.do` = 1,588 characters with no rate), so a peso policy rate
+rides on a data aggregator (`countryeconomy.com/key-rates/mexico`, which prints the cut in one sentence: "lowered its interest
+rates by 0.25 percentage points, from 6.5% to an annual rate of 6.25%") and the article must attribute the rate to the central
+bank, with the fetch wall recorded in the verified brief. `cbp.gov/trade/programs-administration/currency-exchange-rates` is
+unreachable too, so the published quarterly rate table itself cannot be a row.
+
+**Three traps from the same run.**
+(1) *A hand-edit that removes a figure must be applied to the draft as well*: `review_audit` compares the pair and reported
+`FAIL figure lost: 15` when an unsourced "5 to 15 percent" band was cut from the `_final.md` only — the fix is the same
+replacement in both files, then re-run the audit. (2) *The art director's render review can be silently absent*: a pass logged
+`render review skipped: render review unavailable (frontier returned no text (finish_reason=length)) — the brief gate ran, the
+picture was not checked`, and the image that landed carried legible model lettering ("CUSTOMS CERTIFICADO" on a document
+flat-lay plus an official-looking seal) — read the pixels with vision on every render whose review line says "not checked", and
+a documentary treatment (flat-lay, forms, notices) is the one that reliably paints type. (3) *On the aichieve front a finished
+deployment is not a rebuilt page*: the auto-deploy commit from `publish.py` queued nothing (the last app-18 row still sat at the
+18:43 build), an explicit `queue_application_deployment(application:$a, deployment_uuid:…, force_rebuild:false)` returned
+`finished` in under a minute with the page still serving zero `wp-content/uploads`, and the same call with `force_rebuild:true`
+(deployment `5a837a3d…`) served the hero — probe the live page for `wp-content/uploads` and escalate straight to
+`force_rebuild:true` rather than re-pushing an empty commit.
