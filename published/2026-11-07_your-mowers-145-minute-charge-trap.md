@@ -12,6 +12,12 @@ meta_title: "Your Mower's 145-Minute Charge Trap"
 meta_title_source: "derived_from_title"
 meta_description: "A homeowner in the mower aisle is deciding whether a second battery earns its place, and the answer is not printed on the pack."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-mowers-145-minute-charge-trap/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit."
+image_caption: "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

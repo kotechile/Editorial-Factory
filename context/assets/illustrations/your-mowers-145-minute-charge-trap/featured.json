@@ -1,0 +1,152 @@
+{
+  "slug": "your-mowers-145-minute-charge-trap",
+  "revision": 6,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit.",
+      "caption": "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run.",
+      "title": "Rapid vs Standard Charger for a Cordless Mower Battery Pack",
+      "bytes": 394272,
+      "sha256": "sha256:698e127fb55a417e5751716372641010"
+    },
+    {
+      "revision": 2,
+      "alt_text": "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit.",
+      "caption": "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run.",
+      "title": "Your Mower'S 145-Minute Charge Trap",
+      "bytes": 407373,
+      "sha256": "sha256:11043b68c4a28b05c2004905fbeb1c66cac931f0f94a80e711630020adba9465"
+    },
+    {
+      "revision": 3,
+      "alt_text": "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit.",
+      "caption": "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run.",
+      "title": "Your Mower'S 145-Minute Charge Trap",
+      "bytes": 404274,
+      "sha256": "sha256:0d057d0e2c0b38aa0de1d27009144c56b60eebf875696049f99dd411aeb1088a"
+    },
+    {
+      "revision": 4,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "On a garage workbench of weathered plywood, an isometric cutaway of a cordless mower battery pack and two charging docks: left half shows the pack seated in a rapid charger with a large aluminium heat sink and bright indicator bar; right half shows the same pack seated in a standard charger with a smaller heat sink and dim indicator bar. Split-screen diptych with left-right scenario contrast. Thin consistent line weight, flat muted palette of bone white, graphite and deep pine green, one directional light from the upper left, hard contact shadows, no text, no logos, generous empty margin.",
+      "task_id": "1fc65b7c7e12b8407f15fc64ca9ca832",
+      "sha256": "sha256:f62e6f8a41645b0af93b3c51e54c06ba40a03db683cabe1f2bbbe57efc93be86",
+      "generated_at": "2026-11-07T19:24:47+00:00",
+      "source_hash": "sha256:709f49eab139e9f6d6a1da1fe8d4c5ee",
+      "render_sha256": "sha256:54fa6c594ed3d843a064062508b2825b0b3a3cb340cc3ea314ea69d8c74fa005",
+      "alt_text": "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit.",
+      "caption": "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run."
+    },
+    {
+      "revision": 5,
+      "alt_text": "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit.",
+      "caption": "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run.",
+      "title": "Mower Battery on Rapid Charger Macro",
+      "bytes": 263287,
+      "sha256": "sha256:25503970bb6cf28ca746c6ad1f924ff0"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme macro photograph, 100mm macro lens at f/2.8, in a residential garage. A cordless mower battery pack sits on a rapid charger base on a concrete workbench, amber charge indicator glowing, metal contacts engaged. Low raking window light from the left casts a long shadow to the right. Palette: bone white, graphite, deep pine green. Extreme asymmetry, battery off-centre lower right, upper left falling into darkness. Shallow depth of field, fine film grain, no text, no logos, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI, numbers",
+  "rationale": "This story turns on one physical object\u2014the battery pack and charger pairing\u2014and the charge-time economics are legible in its material details. A macro lens reveals the contacts, amber indicator, and concrete surface while isolating the exact mechanism that decides whether a spare pack is worth buying.",
+  "cue": "the charger sets the pace",
+  "subject": "a cordless mower battery pack seated on a rapid charger base in a garage",
+  "core_thesis": "A cordless mower's spare battery only earns its place if the charger refills it inside the mower's run time.",
+  "core_conflict": "rapid charger 60-minute refill versus standard charger 145-minute refill for the same 7.5 amp-hour pack",
+  "composition": "extreme asymmetry, battery off-centre lower right, upper left falling into darkness",
+  "alt_text": "An unbranded cordless mower battery pack docked on a rapid charger in a workshop, its amber charge indicator lit.",
+  "caption": "Your Mower's 145-Minute Charge Trap: a spare battery earns its place only if the charger refills it inside the run.",
+  "title": "Your Mower'S 145-Minute Charge Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "editorial_macro"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mowers-145-minute-charge-trap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 337546,
+  "sha256": "sha256:fc28163ca9236381e8373d44c1b97ccced0fee08056bbf32523ee52fd4af9924",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 337546,
+    "quality": 88,
+    "sha256": "sha256:fc28163ca9236381e8373d44c1b97ccced0fee08056bbf32523ee52fd4af9924",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:318098be7945a639e9c01a811a0f970138b136defe616d763c5cf6c738a053d1",
+  "render_phash": "ff4137c33e2f3a6d3a669a62346a447049710c7836780f7803e210f9443f2002",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A rectangular battery pack with a grey body and orange indicator bars sits docked on a green-and-black charger base resting on a dusty wooden surface, with the left side of the frame falling into shadow.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame shows exactly the article's mechanism \u2014 a battery pack seated on a charger base \u2014 so the charge-time premise is immediately legible to a reader."
+  },
+  "source_hash": "sha256:709f49eab139e9f6d6a1da1fe8d4c5ee",
+  "source_chars": 5068,
+  "task_id": "e434c7372a8f85df319072283b777fb0",
+  "credits": 5.0,
+  "cost_ms": 109,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e434c7372a8f85df319072283b777fb0_1794079872796.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme macro photograph, 100mm macro lens at f/2.8, in a residential garage. A cordless mower battery pack sits on a rapid charger base on a concrete workbench, amber charge indicator glowing, metal contacts engaged. Low raking window light from the left casts a long shadow to the right. Palette: bone white, graphite, deep pine green. Extreme asymmetry, battery off-centre lower right, upper left falling into darkness. Shallow depth of field, fine film grain, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-07T19:31:19+00:00",
+  "overlay": {
+    "kicker": "CORDLESS MOWERS // SPARE BATTERY CHARGE TIME",
+    "title": "YOUR MOWER'S 145-MINUTE CHARGE TRAP",
+    "hook": "A second battery earns its place only if the charger refills it inside the run",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 14.36,
+    "target": 5.5,
+    "clutter": 0.256,
+    "region_rgb": [
+      25,
+      30,
+      31
+    ],
+    "binding_rgb": [
+      27,
+      31,
+      30
+    ],
+    "title_lines": [
+      "YOUR MOWER'S",
+      "145-MINUTE",
+      "CHARGE TRAP"
+    ],
+    "subject": 0.121,
+    "ink_subject": 0.029,
+    "spike": 0.339,
+    "generated_at": "2026-11-07T19:31:19+00:00"
+  }
+}
