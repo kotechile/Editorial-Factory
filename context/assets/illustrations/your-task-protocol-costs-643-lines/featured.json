@@ -1,6 +1,6 @@
 {
   "slug": "your-task-protocol-costs-643-lines",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,57 @@
       "title": "Task Protocol State Selector Cutaway",
       "bytes": 408083,
       "sha256": "sha256:26dde4a372e252a612f72bfdafeda3a2"
+    },
+    {
+      "revision": 2,
+      "style": "technical_isometric",
+      "model": "nano-banana-pro",
+      "prompt": "Clean technical isometric cutaway on a weathered concrete plant floor. A rack-mounted task object module sits off-centre, built from brushed steel, graphite anodised aluminium, and safety yellow polymer; a central latching connector feeds three parallel copper contact routes\u2014one dead-ended, one with a stored handle token, one entering a covered 37-position state selector track with interlocking cards. A single directional light rakes from the upper left across the assembly, casting long contact shadows. Deep pine green, slate grey, and safety yellow palette. No text, no logos, no legible lettering. Asymmetric axonometric cutaway with the task object off-centre and generous empty margin.",
+      "task_id": "8579d755c6f324a34df618f5998637fb",
+      "sha256": "sha256:7d5c8455074b05ce67d5bf9bd1a5a71aa4a44e9faf3280173e34935082a48082",
+      "generated_at": "2026-11-05T17:49:45+00:00",
+      "source_hash": "sha256:6a6cbad4cea375c6872851e43c5874a7",
+      "render_sha256": "sha256:722bbb731f5d5097a465a2b4acecc5abef632aeae109f26c8a4bbd8efd5cae61"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Two industrial robot arms transfer a sealed tote directly while a long loop of gated check stations curves behind them.",
+      "caption": "A single agent hand-off shown as a direct robot-arm transfer and a longer gated state-machine loop illustrates why task protocols cost 643 extra lines.",
+      "title": "Direct Handoff vs 37-State Task Loop",
+      "bytes": 326929,
+      "sha256": "sha256:d85032f2f447a3454a64c8d4696880f4"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Your Task Protocol Costs 643 Lines. Two industrial robot arms transfer a sealed tote directly while a long loop of gated check stations",
+      "caption": "Your Task Protocol Costs 643 Lines: Worth buying only when the work must outlive the call.",
+      "title": "Your Task Protocol Costs 643 Lines",
+      "bytes": 383726,
+      "sha256": "sha256:1b76b9f922d8131a8516d1c6ece752f495bf866ebbacd747b7ed285c3c4bdbff"
+    },
+    {
+      "revision": 5,
+      "alt_text": "Two robot arms pass a sealed tote while a loop of gated check stations curves behind.",
+      "caption": "The same hand-off, carried two ways: a direct pass or a long chain of gated stations.",
+      "title": "Task Protocol Costs 643 Lines",
+      "bytes": 365496,
+      "sha256": "sha256:960f53faa71076e8cd04bc1df5a1227e4e52a1d7bfe972f38195fa22ead60af0"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Your Task Protocol Costs 643 Lines. Two robot arms pass a sealed tote while a loop of gated check stations curves behind.",
+      "caption": "Your Task Protocol Costs 643 Lines: Building the same agent hand-off as a task protocol instead of a tool call cost 643.",
+      "title": "Your Task Protocol Costs 643 Lines",
+      "bytes": 382209,
+      "sha256": "sha256:8f486711cd92554f73e804e604931a1b745867a84b2676d30063d56c457119e6"
+    },
+    {
+      "revision": 7,
+      "alt_text": "Two robot arms pass a sealed tote while a loop of gated check stations curves behind.",
+      "caption": "Task Protocol Costs 643 Lines.",
+      "title": "Task Protocol Costs 643 Lines",
+      "bytes": 365496,
+      "sha256": "sha256:960f53faa71076e8cd04bc1df5a1227e4e52a1d7bfe972f38195fa22ead60af0"
     }
   ],
   "style": "technical_isometric",
@@ -19,17 +70,17 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Clean technical isometric cutaway on a weathered concrete plant floor. A rack-mounted task object module sits off-centre, built from brushed steel, graphite anodised aluminium, and safety yellow polymer; a central latching connector feeds three parallel copper contact routes\u2014one dead-ended, one with a stored handle token, one entering a covered 37-position state selector track with interlocking cards. A single directional light rakes from the upper left across the assembly, casting long contact shadows. Deep pine green, slate grey, and safety yellow palette. No text, no logos, no legible lettering. Asymmetric axonometric cutaway with the task object off-centre and generous empty margin.",
-  "negative_prompt": "garbled text, random lettering, watermarks, UI labels, numbers",
-  "rationale": "The article is a technical architecture explanation of how state is owned between calls; a constructed isometric cutaway can show the task object, handle path, and state matrix as engineered hardware without slipping into generic datacenter photography or plumbing.",
-  "cue": "a 37-state machine",
-  "subject": "a rack-mounted task object module with a 37-position state selector track and latching connector rails",
-  "core_thesis": "An agent-to-agent hop that stores its state in a task object the protocol owns costs a measured 643 extra lines, six coordination steps, and a 37-state machine with 11 flaws, so the task protocol is worth buying only when work must outlive the call.",
-  "core_conflict": "Stateless tool-call simplicity versus task-protocol durability: the task keeps the fact between calls but adds a 37-state machine, six coordination steps, and attack surface.",
-  "composition": "asymmetric axonometric cutaway with the task object off-centre and generous empty margin",
-  "alt_text": "Your Task Protocol Costs 643 Lines. Rack-mounted task object module with a 37-position state selector track and latching connector rails.",
-  "caption": "Your Task Protocol Costs 643 Lines: The bill for state that outlives the call.",
-  "title": "Your Task Protocol Costs 643 Lines",
+  "prompt": "Clean isometric cutaway illustration on a plant floor. Two industrial robot arms at a transfer station, one passing a sealed polymer tote directly to the other, while a long curving line of gated check stations stretches behind them as the same tote's alternate route. Single key light from upper left rakes across brushed steel arms, graphite concrete floor, safety yellow gate frames, bone white tote. Thin consistent line weight, flat muted palette with one accent colour, generous empty margin, asymmetric axonometric composition.",
+  "negative_prompt": "garbled text, random lettering, watermarks, signatures",
+  "rationale": "This story explains how a systemic hand-off works and what the state machine costs, so a technical isometric cutaway can diagram the direct path and the gated loop as recognizable industrial hardware on a plant floor, avoiding generic datacenter or abstract props.",
+  "cue": "six coordination steps against two",
+  "subject": "two industrial robot arms at a transfer station passing a sealed tote directly, with a long loop of gated check stations curved behind them as the tote's alternate route",
+  "core_thesis": "An agent-to-agent hop keeps its state in one of three places, and choosing a task protocol costs 643 extra lines, six coordination steps against two, and a 37-state machine with 11 flaws a compliant attacker can use, so it is worth buying only when the work must outlive the call.",
+  "core_conflict": "Direct, stateless tool-call handoff versus a stateful task protocol that survives restarts but adds code, coordination steps, and a larger attack surface.",
+  "composition": "asymmetric axonometric cutaway with generous empty margin and the direct transfer station offset left, the gated loop receding to the right",
+  "alt_text": "Task Protocol Costs 643 Lines. Two robot arms pass a sealed tote while a loop of gated check stations curves behind.",
+  "caption": "The same hand-off, carried two ways: a direct pass, or a long chain of gated stations.",
+  "title": "Task Protocol Costs 643 Lines",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "deepseek-v4-pro",
@@ -39,8 +90,8 @@
   "local_path": "context/assets/illustrations/your-task-protocol-costs-643-lines/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 383236,
-  "sha256": "sha256:7d5c8455074b05ce67d5bf9bd1a5a71aa4a44e9faf3280173e34935082a48082",
+  "bytes": 365496,
+  "sha256": "sha256:960f53faa71076e8cd04bc1df5a1227e4e52a1d7bfe972f38195fa22ead60af0",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,66 +100,65 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 383236,
-    "quality": 64,
-    "sha256": "sha256:7d5c8455074b05ce67d5bf9bd1a5a71aa4a44e9faf3280173e34935082a48082",
+    "bytes": 365496,
+    "quality": 88,
+    "sha256": "sha256:960f53faa71076e8cd04bc1df5a1227e4e52a1d7bfe972f38195fa22ead60af0",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:722bbb731f5d5097a465a2b4acecc5abef632aeae109f26c8a4bbd8efd5cae61",
-  "render_phash": "cfdc0cdc3bdd326d663dcfb9366d34ca692993a4a54e9ea72f0fd60e9c0caa28",
+  "render_sha256": "sha256:65479a6e85670499c0d5e3eb1682c1a7399d22025bdaecb2590199180198e8a1",
+  "render_phash": "016200f223f10de20d925a825e525d52bb5233d2b1421a604d4c26980b200540",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "An isometric cutaway of a metal rack-mounted module with yellow handles, copper busbars, and a long slotted track holding small circuit-like components, set into a concrete floor.",
+    "depicts": "An isometric cutaway shows two industrial robotic arms on a concrete platform passing a white tote with an orange label directly between them, while a yellow-fenced conveyor loop with gated check stations curves behind and to the right.",
     "legible_text": "",
     "on_topic": true,
-    "confidence": 0.72,
-    "reason": "The frame shows the ordered metaphorical task-object module with connector rails and a selector-like track, matching the article's mechanism of a protocol-owned task state machine."
+    "confidence": 0.86,
+    "reason": "The image visualizes an agent-to-agent handoff as a direct tote transfer versus a longer gated check-station loop, matching the article's comparison of a simple tool call with a costly task-protocol route."
   },
-  "source_hash": "sha256:6a6cbad4cea375c6872851e43c5874a7",
-  "source_chars": 5753,
-  "task_id": "8579d755c6f324a34df618f5998637fb",
+  "source_hash": "sha256:72a07e8d613b78d859d89859a9dd7f10",
+  "source_chars": 6536,
+  "task_id": "3e8ae64a580c26d35b20f5e68600e8ac",
   "credits": 18.0,
-  "cost_ms": 31,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c83b0a1420c5ece0082a21413159684f.png",
+  "cost_ms": 75,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1794013741415-1beel3qu6rv.png",
   "provider_request": {
     "model": "nano-banana-pro",
     "input": {
-      "prompt": "Clean technical isometric cutaway on a weathered concrete plant floor. A rack-mounted task object module sits off-centre, built from brushed steel, graphite anodised aluminium, and safety yellow polymer; a central latching connector feeds three parallel copper contact routes\u2014one dead-ended, one with a stored handle token, one entering a covered 37-position state selector track with interlocking cards. A single directional light rakes from the upper left across the assembly, casting long contact shadows. Deep pine green, slate grey, and safety yellow palette. No text, no logos, no legible lettering. Asymmetric axonometric cutaway with the task object off-centre and generous empty margin.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Clean isometric cutaway illustration on a plant floor. Two industrial robot arms at a transfer station, one passing a sealed polymer tote directly to the other, while a long curving line of gated check stations stretches behind them as the same tote's alternate route. Single key light from upper left rakes across brushed steel arms, graphite concrete floor, safety yellow gate frames, bone white tote. Thin consistent line weight, flat muted palette with one accent colour, generous empty margin, asymmetric axonometric composition.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
       "resolution": "1K",
       "image_input": [],
       "output_format": "png"
     }
   },
-  "generated_at": "2026-11-05T17:49:45+00:00",
+  "generated_at": "2026-11-07T01:09:10+00:00",
   "overlay": {
-    "kicker": "AGENTIC AI // TASK PROTOCOL STATE",
-    "title": "YOUR TASK PROTOCOL COSTS 643 LINES",
-    "hook": "The bill for state that outlives the call",
+    "kicker": "AGENT-TO-AGENT TASK PROTOCOLS",
+    "title": "Task Protocol Costs 643 Lines",
     "anchor": "top-left",
-    "light": true,
-    "scrim": 45,
-    "contrast": 4.81,
+    "light": false,
+    "scrim": 120,
+    "contrast": 9.9,
     "target": 4.5,
-    "clutter": 0.136,
+    "clutter": 0.149,
     "region_rgb": [
-      103,
-      112,
-      100
+      221,
+      219,
+      213
     ],
     "binding_rgb": [
-      119,
-      129,
-      121
+      225,
+      224,
+      220
     ],
     "title_lines": [
-      "YOUR TASK PROTOCOL",
-      "COSTS 643 LINES"
+      "Task Protocol",
+      "Costs 643 Lines"
     ],
-    "subject": 0.019,
-    "ink_subject": 0.008,
-    "spike": 0.062,
-    "generated_at": "2026-11-05T17:49:45+00:00"
+    "subject": 0.069,
+    "ink_subject": 0.02,
+    "spike": 0.217,
+    "generated_at": "2026-11-07T01:09:10+00:00"
   }
 }

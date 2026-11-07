@@ -177,7 +177,8 @@ def section_map(text: str) -> dict[str, str]:
 
 
 def sentences(text: str) -> list[str]:
-    prose = "\n".join(line for line in text.splitlines() if not line.lstrip().startswith("#"))
+    prose = "\n".join(line for line in text.splitlines()
+                      if not line.lstrip().startswith("#") and not line.lstrip().startswith("|"))
     flat = re.sub(r"\s+", " ", re.sub(r"<!--.*?-->", "", prose)).strip()
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+", flat) if s.strip()]
 
@@ -291,7 +292,7 @@ def citation_findings(text: str, reg: dict) -> list[str]:
     if len(block) < 2:
         return fails
     footer = block[1]
-    entries = len(re.findall(r"^[ \t]*(?:\[\d+\]|\d+[.)])\s+\S", footer, re.M))
+    entries = len(re.findall(r"^[ \t]*(?:[-*]\s+)?(?:\[\d+\]|\d+[.)])\s+\S", footer, re.M))
     if entries < 2 and len(_CITE_RE.findall(footer)) >= 2:
         fails.append("`## Sources` is a run-on paragraph — render it as a vertical list "
                      "(`1. <name> — <url>` on its own line)")

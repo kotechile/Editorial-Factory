@@ -159,7 +159,11 @@ def body_of(path):
 
 
 def flesch(text):
+    # A table row is data, not a sentence: leaving the pipes in the split counted an 80-word table as
+    # one long sentence and dragged a well-written piece under the floor.
+    text = "\n".join(l for l in text.splitlines() if not l.lstrip().startswith("|"))
     sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+
     words = re.findall(r"[A-Za-z][A-Za-z'\-]*", text)
     if not words:
         return None, 0, 0, 0

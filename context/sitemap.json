@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:46:20Z",
+  "updated_at": "2026-11-07T01:06:44Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5711,11 +5711,11 @@
       "primary_keyword": "",
       "secondary_keywords": [],
       "h2_topics": [
-        "Three places to keep the fact",
-        "By the numbers",
-        "Where the hop owners land",
-        "The catch",
         "At a glance",
+        "Three Ways to Manage Agent State",
+        "By the numbers",
+        "How Each Pattern Fails in Production",
+        "The catch",
         "Related reading"
       ],
       "target_persona": "ai_architect",
