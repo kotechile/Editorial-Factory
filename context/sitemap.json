@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T19:00:10Z",
+  "updated_at": "2026-11-07T19:21:06Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5985,6 +5985,24 @@
       "date": "2026-11-07",
       "public": true,
       "url": "https://giniloh.com/your-cheap-board-costs-385/"
+    },
+    {
+      "slug": "2026-11-07_your-mowers-145-minute-charge-trap",
+      "title": "Your Mower's 145-Minute Charge Trap",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The charger sets the pace",
+        "By the numbers",
+        "Where the two-battery loop closes",
+        "The \"up to\" gap",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-07",
+      "public": false
     },
     {
       "slug": "2026-11-07_your-mowers-recall-has-an-importer",
