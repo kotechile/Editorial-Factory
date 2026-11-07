@@ -63,6 +63,15 @@ Answers: *which of these, for which yard/house/budget, today.*
 
 Never more than four products. A five-way is a catalogue, and the gate rejects it.
 
+**Diction and structure — every vertical, held at the push (owner, 2026-11-07; `skills/story_draft.md`
+§3.6):** name the product, part or metric rather than a metaphor for it, and lock the name the source
+uses; expand every protocol, standard, benchmark and tool at first mention with a 5–10 word anchor,
+including alphanumeric tokens (IPX5, A2A) and lowercase tool names; number every item a heading promises
+before comparing any of them; and because a review compares options across variables, emit the
+**comparison table** (`| Unit | Price | Claimed | Measured | Fails at |`) rather than leaving three
+"A against B" figures in prose — `readability_critic` classes `jargon`, `enumeration`, `matrix` and
+`sources` hold the push on every track, not only news.
+
 ## 4. The Review Gate (hard)
 
 Mechanical floor, enforced by `scripts/review_gate.py`. A `PASS` is required before prose:

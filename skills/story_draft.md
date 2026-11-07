@@ -216,7 +216,7 @@ cargo behind eight gates: the 250 watchmen who could walk out are about 2% of th
    25 words, carrying one metric.
 4. **Closing hook audit** — the final paragraph contains no undefined noun and no orphan reference.
 
-### 3.6 Diction and structure law (owner, 2026-11-07) — the reader must not translate your nouns
+### 3.6 Diction and structure law (owner, 2026-11-07, every vertical) — the reader must not translate your nouns
 
 Measured on the live dispatch `your-task-protocol-costs-643-lines`: Flesch 57.8, every citation
 resolving, `article_shape` ok — and the owner's verdict was still that the piece is hard to read and

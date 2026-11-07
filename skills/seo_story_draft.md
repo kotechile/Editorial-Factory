@@ -37,6 +37,15 @@ slug: "YYYY-MM-DD_<slug>"
 - `<!-- nuanced-takeaway -->`: `## The catch` H2 header + the honest catch, limitation, or counter-argument.
 - `<!-- tldr -->`: `## At a glance` H2 header + a three-line box (**The shift**, **The number**, **The risk**, under 50 words, no sub-bullets and no recap of the tactical section), placed **immediately under the lede** — the executive summary primes the reader (owner 2026-11-06; `scripts/readability_critic.py` holds the order at the push).
 
+**Diction and structure — applies to EVERY vertical and every track (owner, 2026-11-07):** the same
+standard as `skills/story_draft.md` §3.6, held at the push by `scripts/readability_critic.py`. Name the
+thing rather than a metaphor for it (no "the fact" for state, "hop owners", "the wire", "the line moved");
+expand every protocol, framework, tool and metric at first mention with a 5–10 word anchor, including
+alphanumeric tokens (A2A) and lowercase tool names (cloc); number every item a heading promises before
+analysing them; render two or more options across three or more variables as a Markdown comparison table;
+and give each `## Sources` entry a list marker (`- [1] …`), because consecutive `[n]` lines render as one
+paragraph on the page.
+
 ### C. Citations
 - `## Sources`: Verifiable citations `[1]`, `[2]`, `[3]`.
 

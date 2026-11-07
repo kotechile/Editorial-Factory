@@ -1,8 +1,16 @@
 {
   "version": 2,
   "enforced_from": "2026-11-06",
-  "why": "Owner report 2026-11-06: the article writer is producing hard-to-read pieces. Four classes hold a publish because they are deterministic (an executive summary at the foot of the page, a bullet carrying two statistics, two citations in one sentence, a run-on source list). The prose classes (read-twice, timeline repetition, cold closing concept) are reported to the rewrite and the reviewer and never hold: they are heuristics over grammar, and a heuristic that cannot see paraphrase must not reject an article. Owner directive 2026-11-07 added the diction and structure classes he named on a live dispatch: private shorthand nouns ('the fact', 'hop owner', 'the wire'), a heading that promises a count without labelling its items, a multi-variable comparison left in prose with no table, and a Sources block whose entries carry no list marker (so the CMS renders one paragraph).",
-  "hold": ["structure", "bullets", "citations", "jargon", "enumeration", "matrix", "sources"],
+  "why": "Owner report 2026-11-06: the article writer is producing hard-to-read pieces. Four classes hold a publish because they are deterministic (an executive summary at the foot of the page, a bullet carrying two statistics, two citations in one sentence, a run-on source list). The prose classes (read-twice, timeline repetition, cold closing concept) are reported to the rewrite and the reviewer and never hold: they are heuristics over grammar, and a heuristic that cannot see paraphrase must not reject an article. Owner directive 2026-11-07 added the diction and structure classes he named on a live dispatch: private shorthand nouns ('the fact', 'hop owner', 'the wire'), a heading that promises a count without labelling its items, a multi-variable comparison left in prose with no table, and a Sources block whose entries carry no list marker (so the CMS renders one paragraph). Scope: EVERY vertical and every track (news, evergreen, review, SEO) \u2014 the checks read the text, never the vertical, and the drafting prompts of all four tracks carry the same rules (skills/story_draft.md \u00a73.6, skills/seo_story_draft.md \u00a72B, skills/review_comparison.md, skills/claude_humanizer.md \u00a73.10, .agents/story_drafter.md, .agents/claude_stylist.md). Owner instruction 2026-11-07: apply to all FUTURE generations, never retrofit the archive.",
+  "hold": [
+    "structure",
+    "bullets",
+    "citations",
+    "jargon",
+    "enumeration",
+    "matrix",
+    "sources"
+  ],
   "class_enforced_from": {
     "structure": "2026-11-06",
     "bullets": "2026-11-06",
@@ -22,27 +30,39 @@
   "max_citations_per_sentence": 1,
   "sentence_mean_max": 22,
   "matrix_min_comparisons": 3,
-  "at_a_glance_labels": [["The shift"], ["The number", "The numbers"], ["The risk", "The architectural rule"]],
+  "at_a_glance_labels": [
+    [
+      "The shift"
+    ],
+    [
+      "The number",
+      "The numbers"
+    ],
+    [
+      "The risk",
+      "The architectural rule"
+    ]
+  ],
   "banned_nouns": [
     {
       "label": "the fact",
       "pattern": "\\bthe fact\\b(?!\\s+that)",
-      "remedy": "name the state — session state, execution state or context payload"
+      "remedy": "name the state \u2014 session state, execution state or context payload"
     },
     {
       "label": "hop owner",
       "pattern": "\\bhop[- ]owners?\\b",
-      "remedy": "name the role — systems architect, service owner or calling agent"
+      "remedy": "name the role \u2014 systems architect, service owner or calling agent"
     },
     {
       "label": "the wire",
       "pattern": "(?<!bank )\\bthe wire\\b(?!\\s+(?:transfer|fraud|fee|room|tap))",
-      "remedy": "name the layer — the protocol layer, the connection or the request"
+      "remedy": "name the layer \u2014 the protocol layer, the connection or the request"
     },
     {
       "label": "the line",
       "pattern": "\\bthe line\\s+(?:has\\s+)?(?:moved|moves|shifted|sits)\\b",
-      "remedy": "name the revision that moved — the July 2026 MCP revision"
+      "remedy": "name the revision that moved \u2014 the July 2026 MCP revision"
     }
   ]
 }
