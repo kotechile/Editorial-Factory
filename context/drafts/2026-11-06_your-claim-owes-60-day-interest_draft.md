@@ -30,7 +30,7 @@ The calendar starts with the storm, not with the first phone call. Under Florida
 
 The carrier's clocks start when the claim arrives, and they run much shorter. The insurer must confirm the message, look into the loss once a proof of loss is filed, send someone out if the house needs looking at, and then pay or refuse the claim [1]. The payment deadline is the one with teeth: money that arrives late pays interest from the day the insurer first had notice, and the policy cannot waive that [3]. No clause in a homeowner's contract can write the clock out of the law.
 
-That design is deliberate. A legislature that wanted to ban slow payment would have simply banned it; Florida instead put a price on delay, and the price moves every quarter with interest rates [5]. The interest is meant to pay back the household carrying a hotel bill and a mortgage at the same time. That household is usually the last one to ask for the line.
+That design is deliberate. A legislature that wanted to ban slow payment would have simply banned it; Florida instead put a price on delay, and the price moves every quarter with interest rates [5]. The interest is meant to pay back the household carrying a hotel bill and a mortgage at the same time. That household is usually the last one to ask for the line. What I keep circling is how lopsided the two sets of clocks are: the owner gets a year to notice a defect, and the carrier gets a payment deadline it has to beat.
 
 ## By the numbers
 
@@ -43,6 +43,8 @@ That design is deliberate. A legislature that wanted to ban slow payment would h
 ## What the carrier owes on paper
 
 The paper is the part a homeowner can actually push. In Florida the confirmation of a claim message is due inside seven calendar days, and if it is not in writing it has to be noted and dated in the claim file, a record the owner can later ask to see [1]. A visit to the house has its own thirty-day limit, and the person who makes it must hand over a document with his or her name and state adjuster license number [2]. With that number an owner can check who is actually pricing the loss.
+
+What I keep coming back to is how much of that paperwork exists to be read later rather than acted on in the moment.
 
 One more document matters, and almost nobody asks for it. The insurer's own adjuster writes a detailed estimate early on, and a copy of it must reach the owner inside seven days of it being written [1]. That figure is what the whole claim will be argued against. The law puts it in the owner's hands long before a settlement is offered. It also pairs with the second cheque in a replacement-cost claim, the money held back until the work is [done](/roof-claim-hidden-second-check-12-months/).
 

@@ -35,7 +35,7 @@ The base matters too. An entry mower from one Chinese brand is listed at $899 ag
 
 The incumbent's problem is that it asks for cover while giving up the price it wants covered. Husqvarna's chief executive told Reuters the firm lost more of its European share in units than in value [2]. It held its ground with traditional dealers but faced much tougher competition in shops and online [2]. Mower assembly has already shifted from Newton Aycliffe in Britain to Czechia, which cost around 50 roles [2]. The quarter behind that call was poor, with organic sales down 5 percent and an operating loss of 334 million krona [4]. The group's own note said robot mowing faced swollen dealer stock in Europe [4].
 
-Country of origin is not printed on the carton, and a dealer quoting a price in November is quoting a machine already in the channel. The same badge can cover both cases. A model name tells a buyer nothing about which side of the line the unit came from, and neither does the spec sheet. The only readable clue is the price itself, which is why two dealers can quote figures that look like a mistake.
+Country of origin is not printed on the carton, and a dealer quoting a price in November is quoting a machine already in the channel. The same badge can cover both cases. A model name tells a buyer nothing about which side of the line the unit came from, and neither does the spec sheet. The only readable clue is the price itself, which is why two dealers can quote figures that look like a mistake. What I find hardest to square is a company asking for protection on the models it still builds in the country its own complaint names.
 
 ## By the numbers
 

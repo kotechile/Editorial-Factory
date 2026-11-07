@@ -1,0 +1,141 @@
+{
+  "slug": "your-peso-upside-is-priced",
+  "revision": 5,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Peso invoice, forward contract, and Customs quarterly rate notice on a steel control-room desk.",
+      "caption": "A twelve-month forward already bills the peso slide many Mexico cases count as upside, while Customs duty converts on its own certified quarterly rate.",
+      "title": "Peso Forward and Customs Rate Notice Flatlay",
+      "bytes": 348993,
+      "sha256": "sha256:0a0bb0618d91b931b6cfbe3f9af1e46c"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your Peso Upside Is Billed At 2.28%. Peso invoice, forward contract, and Customs quarterly rate notice on a steel control-room desk.",
+      "caption": "Your Peso Upside Is Billed At 2.28%: A twelve-month forward already prices the peso slide; Customs uses its quarterly rate.",
+      "title": "Your Peso Upside Is Billed At 2.28%",
+      "bytes": 394443,
+      "sha256": "sha256:54e56d7e9f76073d1aa4647edf3a99ad666134f6e9ae5dfe4f629f9ac985fa54"
+    },
+    {
+      "revision": 3,
+      "style": "document_flatlay",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Overhead flat-lay photograph on a steel control-room desk, 50mm flat-field lens: a peso-denominated supplier invoice, a twelve-month forward contract, and a Customs-certified quarterly rate notice overlap slightly, one corner turned. Diffused daylight falls from the upper left, raking across paper fibres and brushed steel, with fine film grain and shallow depth at the edges. Muted palette of bone white, charcoal grey and faded cobalt. Top-down 90-degree view, one document slightly out of alignment, generous negative space, no legible text or numerals.",
+      "task_id": "0031d5a5e7cb9dbf00215c55b779bae2",
+      "sha256": "sha256:54e56d7e9f76073d1aa4647edf3a99ad666134f6e9ae5dfe4f629f9ac985fa54",
+      "generated_at": "2026-11-07T18:28:20+00:00",
+      "source_hash": "sha256:478d954c0a5f7179492ed6490e39bdca",
+      "render_sha256": "sha256:fd681400ccee3fcc2dd54b8f49b026dedb23937c33099aa05219c4c88c6d2619"
+    },
+    {
+      "revision": 4,
+      "alt_text": "A peso forward contract binder with three blank brass rate tabs sits on a brushed steel desk under left softbox light.",
+      "caption": "A forward contract binder with three rate tabs isolates the spot, twelve-month forward, and Customs quarterly duty rate that govern a peso invoice.",
+      "title": "Peso Forward Contract Binder Studio Shot",
+      "bytes": 283967,
+      "sha256": "sha256:bec5a37836c6e317e81bc2cbc7188e5e"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A peso forward contract binder with three blank brass rate tabs sits on a brushed steel desk in a control room, shot with a 100mm macro lens at three-quarter angle, narrow depth of field. A softbox key light from the left rakes across graphite leather and bone-white paper, casting a long contact shadow onto concrete grey steel. Palette graphite, bone white, steel blue. The binder sits off-centre on the right third with generous left negative space. Deep shadows, fine film grain, no legible text, no logos.",
+  "negative_prompt": "garbled text, random letters, watermarks, UI",
+  "rationale": "Studio object isolates the physical contract instrument at the center of the story, letting the three rate tabs embody the spot/forward/duty split without the distraction of a market scene. The treatment's hard directional light and contact shadow give the institutional contract tangible weight.",
+  "cue": "a twelve-month forward prices the peso 2.28 percent weaker",
+  "subject": "a peso forward contract binder with three blank brass rate tabs on a brushed steel desk in a control room",
+  "core_thesis": "The 2.28% peso slide a Mexico case counts as upside is already priced into a twelve-month forward, while duty on a peso invoice is converted at a separate Customs quarterly rate.",
+  "core_conflict": "Budgeting at spot versus the forward rate, and duty conversion at a third quarterly rate that does not move with the daily market.",
+  "composition": "Extreme asymmetric framing with the binder on the right third, generous left negative space, long cast shadow to the lower left",
+  "alt_text": "A closed black leather binder with brass tab plates on a brushed steel desk, blurred trading screens behind it.",
+  "caption": "Peso Upside Billed At 2.28%: The peso slide is already billed in the forward, and duty converts at a separate Customs rate.",
+  "title": "Peso Upside Billed At 2.28%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "studio_object"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-peso-upside-is-priced/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 325878,
+  "sha256": "sha256:a93ccf2e6a1dcafcf82c3a6b3893c285c6feb01635c81446f04ad52a79b8702b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 325878,
+    "quality": 88,
+    "sha256": "sha256:a93ccf2e6a1dcafcf82c3a6b3893c285c6feb01635c81446f04ad52a79b8702b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0694d8cabc4a606d1f213dd449a4a8e5d1465bd2151ed99b5b1f7dbe50ad1f1e",
+  "render_phash": "efc2ee26ee6cee6c6bbbe783e33d273ff678de746e77073707fce6f8e47fe661",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A closed black leather binder with brass tab plates and clips rests on a gray brushed-steel surface, with a long cast shadow to the lower left and blurred monitors in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The frame shows the peso forward contract binder with blank brass rate tabs on a desk in a control room, which is the article's own instrument rather than a generic or contradictory scene, though the blank tabs and unlabelled pages carry none of the peso/forward figures."
+  },
+  "source_hash": "sha256:478d954c0a5f7179492ed6490e39bdca",
+  "source_chars": 4901,
+  "task_id": "4d4ff2235fc15f1b777aaa349623a4ee",
+  "credits": 5.0,
+  "cost_ms": 53,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4d4ff2235fc15f1b777aaa349623a4ee_1794076764903.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A peso forward contract binder with three blank brass rate tabs sits on a brushed steel desk in a control room, shot with a 100mm macro lens at three-quarter angle, narrow depth of field. A softbox key light from the left rakes across graphite leather and bone-white paper, casting a long contact shadow onto concrete grey steel. Palette graphite, bone white, steel blue. The binder sits off-centre on the right third with generous left negative space. Deep shadows, fine film grain, no legible text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-07T18:39:31+00:00",
+  "overlay": {
+    "kicker": "PESO FORWARD COST // CUSTOMS DUTY RATE",
+    "title": "PESO UPSIDE BILLED AT 2.28%",
+    "hook": "The peso slide is already billed in the forward, and duty uses a separate Customs rate",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.62,
+    "target": 4.5,
+    "clutter": 0.242,
+    "region_rgb": [
+      141,
+      143,
+      144
+    ],
+    "binding_rgb": [
+      108,
+      112,
+      115
+    ],
+    "title_lines": [
+      "PESO UPSIDE",
+      "BILLED AT 2.28%"
+    ],
+    "subject": 0.113,
+    "ink_subject": 0.031,
+    "spike": 0.221,
+    "generated_at": "2026-11-07T18:39:31+00:00"
+  }
+}

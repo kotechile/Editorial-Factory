@@ -10,6 +10,12 @@ date: 2026-11-07
 slug: your-peso-upside-is-priced
 meta_title: "Your Peso Upside Is Billed at 2.28%"
 meta_description: "A twelve-month peso forward already bills the slide a Mexico case counts as upside, and Customs converts the duty on a peso invoice at a separate quarterly rate."
+image_path: "context/assets/illustrations/your-peso-upside-is-priced/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "A closed black leather binder with brass tab plates on a brushed steel desk, blurred trading screens behind it."
+image_caption: "Peso Upside Billed At 2.28%: The peso slide is already billed in the forward, and duty converts at a separate Customs rate."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -66,14 +72,14 @@ The limit is the arithmetic itself. A bank quotes a little worse than the rate t
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "7 Days Notice Rewrites Your Duty" -> /7-days-notice-rewrites-your-duty/ [same site (aichieve.net); same category; topical overlap: percent] Link "7 Days Notice Rewrites Your Duty" in the section where the article touches percent. -->
-<!-- internal-link hint: "A 1% Mispick Rate Is a Seven-Figure Line Item" -> /warehouse-pick-error-tax-payback/ [same site (aichieve.net); same category; topical overlap: prices] Link "A 1% Mispick Rate Is a Seven-Figure Line Item" in the section where the article touches prices. -->
-<!-- internal-link hint: "Dock Overtime: Your Real 14-Hour Cost" -> /hour-14-recovery-wall/ [same site (aichieve.net); same category; topical overlap: already] Link "Dock Overtime: Your Real 14-Hour Cost" in the section where the article touches already. -->
+<!-- internal-link hint: "7 Days Notice Rewrites Your Duty" -> /7-days-notice-rewrites-your-duty/ [same site (aichieve.net); same category; curated — shared subject tokens: duty, customs] -->
+<!-- internal-link hint: "Why Importers Forfeit 99% Duty Refunds" -> /why-importers-forfeit-duty-refunds/ [same site (aichieve.net); same category; curated — shared subject tokens: duty, customs] -->
+<!-- internal-link hint: "Your Zone Saves 1.15%: The Hidden Cost" -> /your-zone-deferral-is-worth-115-percent/ [same site (aichieve.net); same category; curated — shared subject tokens: duty, rate] -->
 ## Related reading
 
 - [7 Days Notice Rewrites Your Duty](/7-days-notice-rewrites-your-duty/) — more on Supply Chain & Operations
-- [A 1% Mispick Rate Is a Seven-Figure Line Item](/warehouse-pick-error-tax-payback/) — more on Supply Chain & Operations
-- [Dock Overtime: Your Real 14-Hour Cost](/hour-14-recovery-wall/) — more on Supply Chain & Operations
+- [Why Importers Forfeit 99% Duty Refunds](/why-importers-forfeit-duty-refunds/) — more on Supply Chain & Operations
+- [Your Zone Saves 1.15%: The Hidden Cost](/your-zone-deferral-is-worth-115-percent/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
 ## Sources
