@@ -1052,3 +1052,53 @@ deployment is not a rebuilt page*: the auto-deploy commit from `publish.py` queu
 `finished` in under a minute with the page still serving zero `wp-content/uploads`, and the same call with `force_rebuild:true`
 (deployment `5a837a3d…`) served the hero — probe the live page for `wp-content/uploads` and escalate straight to
 `force_rebuild:true` rather than re-pushing an empty commit.
+
+**Hosts probed live 2026-11-07, building a robot-mower accuracy / RTK-correction-path brief (the `yard_robotics`
+evergreen).** Two earlier runs dropped this beat at 6.6 on the claim "vendors publish slope and area, never
+canopy performance" — the drop was mis-scoped: the *prerequisites* are published by the maker and the canopy
+degradation is measured in the survey literature. Carries the figure as plain text and fetches first try:
+`husqvarna.com/us/discover/epos` (13.6 KB — "Reference station must have clear 135-degree view of sky in all
+upper directions", the FAQ's "(135-degree cone) and access to a power outlet", and the sentence that a moved
+station forces the map to be re-created); `husqvarna.com/uk/support/install-virtual-boundaries-with-husqvarna-epos-two-installation-options-ka-70323`
+("at least 2 metres (6.5 feet) high" — lead the cell on `6.5 feet`, because a bare `2` first matches
+"two installation options" in the same paragraph — plus the coverage list whose USA entry reads "limited
+availability by region", a qualification with no numeric token that rides in prose); `husqvarna.com/id/learn-and-discover/husqvarna-epos`
+(one table carries the whole accuracy ladder — cloud "Accuracy typically 1–6 cm", RS 4G "range up to 25 km" and
+"1–2 cm (within 10 km range)", RS5 "range up to 500 m"; three rows can ride on this one page); `pmc.ncbi.nlm.nih.gov`
+(**a working full-text publisher mirror** — PMC11479190 fetches at 59 KB with the abstract's result and the body's
+sentences as text: "an RMSE of 2.03 m and MAE of 1.63 m", "In total, 84 test points", and the critical honest
+qualifier "no Fixed solutions were achieved, with almost all epochs recorded as DGPS solutions (97% of 2670
+solutions—30 per point)");
+
+**A mower vendor's product page is fetchable where its manuals are not** (same run): `kress.com/en-us/kress-rtk%E2%81%BF-%C2%BD-acre-robotic-lawn-mower-kr172`
+(7.1 KB — the feature block's own admission "Dead reckoning for mowing even undershade (weak satellite signal)",
+beside "no perimeter wire installation" and a `0.7 acre` / `0.5 acre` cutting-every-72h-versus-48h pair);
+`navimow.segway.com` (19 KB — "Network RTK access is included at no extra cost, required cellular data are
+provided free of charge", the "Check Network RTK Coverage / Enter your postcode" box and a notify-when-available
+form, which is the cheapest proof that *coverage*, not hardware, is the constraint); and a dealer listing
+(`smartyardnw.com/product/husqvarna-epos-reference-station-2-4`, 5.9 KB — "$ 899.99 Original price was: $899.99.
+$ 799.99 Current price is: $799.99"). Still PDF-only and therefore unusable: the installation manuals behind
+dock clearance and gate width, so angle #5 keeps failing on its own numbers while the *sky-and-signal* half of
+the same audit is fully citable.
+
+**`article_reviewer.py` can hold every attempt on rhythm while the draft was already the better text** (learned
+2026-11-07): three attempts on a 823-word evergreen were all rejected — attempt 1 `hard=1` / rhythm 6.6,
+attempt 2 `hard=0` but sentence spread flattened from sd 8.6 to 4.9 (health 0.736 → 0.372), attempt 3 `hard=1`
+again — because the reviewer compacts connected sentences faster than it can re-vary them. The repair that
+converged was the documented one applied to the *clean* candidate: take the `hard=0` body, delete the
+`<!-- by-the-numbers -->` marker it inserts (outside the house set, and it swallows the numbers block into
+`<!-- tension -->` when the sections are split), restore the headline's own figure to the first bullet (the
+rewrite had demoted `2.03 m` to a sample clause and led on `84 points`), and rebuild rhythm with **plain-word
+swaps rather than merges** — merging to lift sd overshoots Flesch (mean 26.2 words, Flesch 42.4), splitting
+undershoots rhythm; the workable band on this body was mean 18.5 / sd 6.3 / Flesch 55.3, reached by shortening
+words ("horizontal error" → "error", "comparatively favourable" → "fairly good", "photographs" → "shows the
+dealer") and leaving the sentence count alone.
+
+**The internal-link scorer used to justify a pick on function words, and the fix belongs in `growth_os.GENERIC`**
+(learned 2026-11-07): a mower article's generated Related-reading block stamped a door-lock piece on the shared
+tokens "because, dies" — the same incidental-token class logged as open by five earlier wellroost runs. Adding
+the conjunctions (`because, since, though, although, unless, whether`) and the verb family (`dies, die, died,
+kills, killed`) to `growth_os.GENERIC` dropped that pick and left one justified link (same front, same category
+hub, shared tokens "machine, mower's"); `test_internal_links.py` passed 90/90 afterwards. Fixing a stanza of
+stopwords is cheaper than curating three articles a week by hand, and `wp_draft.py --slug … --refresh-live`
+updates the live body after a re-link (the `publish.py` push alone skips a post that is already published).
