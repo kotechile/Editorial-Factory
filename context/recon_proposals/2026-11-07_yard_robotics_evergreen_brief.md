@@ -42,5 +42,5 @@ Notes recorded by eye during the fetch, so the audit shows the checks happened:
 ## Gate result
 
 <!-- evergreen-gate:start -->
-<!-- evergreen-gate: helper=evergreen_gate.py rows=7 fetched=7 sources=6 hosts=4 decision="sha1:694a8c0256" dedup="matched a prior artifact: 2026-11-01_one-mower-two-prices-45" window_days=180 checked_at=2026-11-07T18:34:32+00:00 -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=7 fetched=7 sources=6 hosts=4 decision="sha1:694a8c0256" dedup="matched a prior artifact: 2026-11-01_one-mower-two-prices-45" window_days=180 checked_at=2026-11-07T19:03:48+00:00 -->
 <!-- evergreen-gate:end -->
