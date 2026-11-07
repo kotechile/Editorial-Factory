@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/europes-53-duty-rewrites-mower-prices/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Europe'S Duty Leaves A 53.3% Gap. Two identical unbranded robot mowers on a driveway, separated by a painted boundary line under warm and"
-image_caption: "Europe'S Duty Leaves A 53.3% Gap: Europe's proposed duty on Chinese-built robot mowers runs from 45.6 to 53.3 percent."
+image_alt: "Two identical unbranded robot mowers on a driveway, split by a painted line between warm and cool light."
+image_caption: "The same robot mower can carry two different prices depending on which side of a customs line it rolled from."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
