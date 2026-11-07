@@ -43,11 +43,11 @@ I read the three documents in one sitting, and the difference between them is no
 
 The price of the task protocol is counted, not estimated. The same hop as a task protocol took 1,898 lines against 1,255, counted by the line-count tool (cloc) over Python and Java [1]. The authors put that at about 51% more code [1]. The handshake grew from four parts to ten, and one interaction from two steps to six [1]. The Purdue University team that turned the A2A spec into a state machine before attacking it counted 37 states and 76 transitions [2].
 
-| Pattern | State location | Overhead and complexity | Primary failure mode | Best for |
+| Pattern | State location | Overhead | Failure mode | Best for |
 | :--- | :--- | :--- | :--- | :--- |
-| **In-call round trips (MCP, MRTR)** | Client, inside the open call | 1,255 lines, 4 parts, 2 steps | A dropped connection loses the in-flight prompt | Synchronous questions, plus one mid-call clarification |
-| **Server-issued state handle** | Server store, behind an opaque token | Cheap per call; plus an auth check and a lifetime to manage | Token expires under a paused run, or is read as a permission | Multi-turn sessions inside 24 hours |
-| **Task protocol (A2A)** | Protocol layer, a 37-state lifecycle | 1,898 lines, 10 parts, 6 steps | Unhandled state transitions; identity lost between delegated hops | Async jobs that survive a restart or wait on a person |
+| **In-call round trip (MCP)** | Client, inside the call | 1,255 lines, 4 parts, 2 steps | Dropped connection loses the prompt | Synchronous questions |
+| **State handle (MCP)** | Server store, behind a token | Cheap per call, plus a lifetime | Token expires, or is read as a permission | Sessions under 24 hours |
+| **Task protocol (A2A)** | Protocol layer, 37 states | 1,898 lines, 10 parts, 6 steps | Unhandled states, lost identity | Jobs that outlive the call |
 
 That table is the whole argument in one screen. The overhead column is what you pay up front, and the failure column is what you are still debugging at two in the morning.
 
