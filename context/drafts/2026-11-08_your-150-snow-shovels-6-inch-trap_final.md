@@ -9,6 +9,12 @@ one_big_thing: "The Toro Power Shovel 38361 and the Snow Joe SJ627E publish the 
 date: 2026-11-08
 slug: your-150-snow-shovels-6-inch-trap
 price_as_of: "2026-11-08"
+image_path: "context/assets/illustrations/your-150-snow-shovels-6-inch-trap/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Your $150 Snow Shovel'S 6-Inch Trap. Snow-covered driveway split-screen: narrow double-pass track with ridge left, wide single-pass track"
+image_caption: "Your $150 Snow Shovel'S 6-Inch Trap: Depth of cut, not clearing width, decides how many passes your driveway takes."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

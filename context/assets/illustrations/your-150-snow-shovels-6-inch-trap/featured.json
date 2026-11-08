@@ -1,0 +1,113 @@
+{
+  "slug": "your-150-snow-shovels-6-inch-trap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Snow-covered driveway split-screen: narrow double-pass track with ridge left, wide single-pass track right.",
+      "caption": "A 10-inch storm turns a 6-inch intake into two passes and a 13-inch intake into one, and the driveway shows the difference.",
+      "title": "Snow depth pass contrast on driveway",
+      "bytes": 388356,
+      "sha256": "sha256:51416573ca2d1242a6a724cdadf6d81c"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A split-screen diptych of a snow-covered residential driveway at dawn. Left half: a narrow electric snow shovel with a shallow intake plows a 10-inch snow layer, leaving a central uncleared ridge behind it, requiring a second pass. Right half: a wider electric snow thrower with a deep intake clears the same snow in one clean pass down to the asphalt. Low raking morning light from the left, bone white snow, graphite asphalt, slate grey shadows. 35mm anamorphic wide, shallow depth of field, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos, brand names",
+  "rationale": "The story turns on a decisive physical moment on a driveway\u2014the difference between one pass and two\u2014best held as a cinematic wide establishing composition. A split-screen diptych directly visualizes the two contrasting intake depths and pass counts without resorting to product labels.",
+  "cue": "6 inches of intake against 13",
+  "subject": "two contrasting snow-cleared tracks on a residential driveway with an unbranded electric snow thrower in each half",
+  "core_thesis": "A 10-inch storm demands two passes from a 6-inch intake shovel and one from a 13-inch intake, so depth of cut, not clearing width, determines driveway walking.",
+  "core_conflict": "The cheaper 12-inch machine's 6-inch depth forces a second pass in any real storm versus the dearer 22-inch machine's 13-inch single pass, multiplying walking 3.4x.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "A snow-covered driveway shows a narrow double-pass track with a ridge left behind, beside a wide single-pass track.",
+  "caption": "Depth of cut, not clearing width, decides how many passes a driveway takes.",
+  "title": "Your $150 Snow Shovel's 6-Inch Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-150-snow-shovels-6-inch-trap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 403951,
+  "sha256": "sha256:205bf158e65cc991a6329ad995c95e4845eda8a42de8eb399116d7b954685ac7",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403951,
+    "quality": 84,
+    "sha256": "sha256:205bf158e65cc991a6329ad995c95e4845eda8a42de8eb399116d7b954685ac7",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9d378a3da6f800e3940a9d73fba4f39c5d2cb9695afee2698b6db02e6d587947",
+  "render_phash": "0ec3c6caec7896b136b17730b27130f1e47064fc60dce4d464d460d661b263a2",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A two-panel split image of a snow-covered residential driveway, with a narrow walk-behind electric snow shovel leaving a single narrow cleared strip in the left panel and a wider two-stage electric snow thrower clearing the full width of a wide strip in the right panel, both photographed from behind the machine.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.93,
+    "reason": "The diptych shows exactly the article's mechanism \u2014 a narrow-cut machine leaving a thin single pass against a wide-cut machine clearing the driveway in one go \u2014 so a reader would recognize the intake-width-versus-passes story."
+  },
+  "source_hash": "sha256:0d4e7600bf9b44a88545b874a526b4e3",
+  "source_chars": 6405,
+  "task_id": "16158595ba7b187b8e28b1d61439fb06",
+  "credits": 5.0,
+  "cost_ms": 27,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/16158595ba7b187b8e28b1d61439fb06_1794149936286.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A split-screen diptych of a snow-covered residential driveway at dawn. Left half: a narrow electric snow shovel with a shallow intake plows a 10-inch snow layer, leaving a central uncleared ridge behind it, requiring a second pass. Right half: a wider electric snow thrower with a deep intake clears the same snow in one clean pass down to the asphalt. Low raking morning light from the left, bone white snow, graphite asphalt, slate grey shadows. 35mm anamorphic wide, shallow depth of field, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-08T14:59:03+00:00",
+  "overlay": {
+    "kicker": "CORDED SNOW BLOWERS // INTAKE DEPTH",
+    "title": "YOUR $150 SNOW SHOVEL'S 6-INCH TRAP",
+    "hook": "Depth of cut, not clearing width, decides how many passes your driveway takes",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.71,
+    "target": 4.5,
+    "clutter": 0.243,
+    "region_rgb": [
+      166,
+      172,
+      179
+    ],
+    "binding_rgb": [
+      127,
+      144,
+      160
+    ],
+    "title_lines": [
+      "YOUR $150 SNOW",
+      "SHOVEL'S 6-INCH",
+      "TRAP"
+    ],
+    "subject": 0.185,
+    "ink_subject": 0.047,
+    "spike": 0.236,
+    "generated_at": "2026-11-08T14:59:03+00:00"
+  }
+}
