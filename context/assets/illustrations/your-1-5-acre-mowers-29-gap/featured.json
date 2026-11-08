@@ -1,0 +1,113 @@
+{
+  "slug": "your-1-5-acre-mowers-29-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two robotic lawnmowers on a driveway, the larger with a small battery, the smaller with a large battery.",
+      "caption": "The larger-rated mower carries the smaller battery, while the smaller-rated mower cuts more grass per charge.",
+      "title": "Mower Badge Versus Battery on Driveway",
+      "bytes": 382766,
+      "sha256": "sha256:0905839eb51f66c475cb4b20b92a5abe"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A studio product photograph on a concrete driveway, split-screen diptych with left-right scenario contrast; left half: a larger unbranded robotic lawnmower with a small removable battery pack, right half: a smaller unbranded robotic lawnmower with a larger removable battery pack, clean vertical seam between halves. Single directional softbox key light from the left, low and raking, long cast shadows, matte polymer and brushed metal bodies, 50mm lens, shallow depth of field, fine film grain, palette bone white, graphite, deep pine green, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, numbers, UI",
+  "rationale": "A studio product shot is apt for a purchasable product comparison; the split-screen diptych visually contrasts the two mowers' rated size against their per-charge battery capacity, the core gap of the article. The concrete driveway grounds it in the site's residential world.",
+  "cue": "Your 1.5-Acre Mower's 29% Gap",
+  "subject": "Two robotic lawnmowers on a driveway, one larger with a small battery pack and one smaller with a larger battery pack",
+  "core_thesis": "The acreage badge on a robot mower is a daily work rate, not per-charge cut, so same-price machines can differ by 29% in actual area cut between charges.",
+  "core_conflict": "Rated area badge vs actual per-charge battery capacity and cut.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Your 1.5-Acre Mower'S 29% Gap. Two robotic lawnmowers on a driveway, the larger with a small battery, the smaller with a large battery.",
+  "caption": "Your 1.5-Acre Mower'S 29% Gap: A 1.5-acre badge hides a 29% gap in what same-price mowers cut per charge.",
+  "title": "Your 1.5-Acre Mower'S 29% Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-1-5-acre-mowers-29-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408047,
+  "sha256": "sha256:b0538e8d8cc2a4c3c87f9daa4d1bf0681547ebf661493edf2999df2a174dd432",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408047,
+    "quality": 84,
+    "sha256": "sha256:b0538e8d8cc2a4c3c87f9daa4d1bf0681547ebf661493edf2999df2a174dd432",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ded74ef90b8a6ba4fd3d58bec88bec1b300e56359e5a5ee59da06727d38baa51",
+  "render_phash": "b0ff06fff71ffef119ff30796e78c870dcdcc0dcf2603c795d1e1f6e9e79ad63",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen diptych of two robotic lawn mowers photographed on a concrete driveway, the left one larger with a small green battery pack strapped on top, the right one slightly smaller with a larger black battery pack mounted on its flank.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The frame shows exactly the article's protagonists \u2014 two robotic mowers of differing size and battery capacity \u2014 matching the acreage-badge-versus-battery-per-charge mechanism rather than substituting a generic or wrong-industry scene."
+  },
+  "source_hash": "sha256:82fe20c7889ac9c55a9e2fc24d14de22",
+  "source_chars": 6963,
+  "task_id": "4f67426d0a5ddb1f29786db57f5062a5",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4f67426d0a5ddb1f29786db57f5062a5_1794149700034.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A studio product photograph on a concrete driveway, split-screen diptych with left-right scenario contrast; left half: a larger unbranded robotic lawnmower with a small removable battery pack, right half: a smaller unbranded robotic lawnmower with a larger removable battery pack, clean vertical seam between halves. Single directional softbox key light from the left, low and raking, long cast shadows, matte polymer and brushed metal bodies, 50mm lens, shallow depth of field, fine film grain, palette bone white, graphite, deep pine green, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-08T14:55:05+00:00",
+  "overlay": {
+    "kicker": "ROBOT MOWERS // ACREAGE BADGE",
+    "title": "YOUR 1.5-ACRE MOWER'S 29% GAP",
+    "hook": "A 1.5-acre badge hides a 29% gap in what same-price mowers cut per charge",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 135,
+    "contrast": 5.65,
+    "target": 5.5,
+    "clutter": 0.484,
+    "region_rgb": [
+      152,
+      143,
+      133
+    ],
+    "binding_rgb": [
+      212,
+      196,
+      180
+    ],
+    "title_lines": [
+      "YOUR 1.5-ACRE",
+      "MOWER'S 29%",
+      "GAP"
+    ],
+    "subject": 0.255,
+    "ink_subject": 0.1,
+    "spike": 0.386,
+    "generated_at": "2026-11-08T14:55:05+00:00"
+  }
+}

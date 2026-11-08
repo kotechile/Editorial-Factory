@@ -9,6 +9,12 @@ one_big_thing: "At the same $2,799.00 the mower rated for 1.5 acres covers 0.30 
 date: 2026-11-08
 slug: your-1-5-acre-mowers-29-gap
 price_as_of: "2026-11-08"
+image_path: "context/assets/illustrations/your-1-5-acre-mowers-29-gap/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "Your 1.5-Acre Mower'S 29% Gap. Two robotic lawnmowers on a driveway, the larger with a small battery, the smaller with a large battery."
+image_caption: "Your 1.5-Acre Mower'S 29% Gap: A 1.5-acre badge hides a 29% gap in what same-price mowers cut per charge."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

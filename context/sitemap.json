@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T19:47:01Z",
+  "updated_at": "2026-11-08T14:56:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -5928,7 +5928,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/mowers-2cm-dies-under-trees/"
     },
     {
       "slug": "2026-11-07_slab-leak-listener-misses-one-in-six",
@@ -5946,7 +5947,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/slab-leak-listener-misses-one-in-six/"
     },
     {
       "slug": "2026-11-07_your-512x384-cameras-10x-illusion",
@@ -5983,7 +5985,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-annual-plan-is-a-10-month-loan/"
     },
     {
       "slug": "2026-11-07_your-cheap-board-costs-385",
@@ -6020,7 +6023,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-07",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-mowers-145-minute-charge-trap/"
     },
     {
       "slug": "2026-11-07_your-mowers-recall-has-an-importer",
@@ -6057,6 +6061,25 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-07",
+      "public": true,
+      "url": "https://aichieve.net/your-peso-upside-is-priced/"
+    },
+    {
+      "slug": "2026-11-08_your-1-5-acre-mowers-29-gap",
+      "title": "Your 1.5-Acre Mower's 29% Gap",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The badge is a work rate",
+        "By the numbers",
+        "The hidden costs off the sticker",
+        "What we did not test",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-08",
       "public": false
     }
   ]

@@ -459,3 +459,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-07 | `your-mowers-145-minute-charge-trap` | outdoor_power_equipment | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-mowers-145-minute-charge-trap/featured.jpg` |
 | 2026-11-07 | `your-mowers-145-minute-charge-trap` | outdoor_power_equipment | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mowers-145-minute-charge-trap/featured.jpg` |
 | 2026-11-07 | `slab-leak-listener-misses-one-in-six` | home_diagnostics_tech | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/slab-leak-listener-misses-one-in-six/featured.jpg` |
+| 2026-11-08 | `your-1-5-acre-mowers-29-gap` | yard_robotics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-1-5-acre-mowers-29-gap/featured.jpg` |

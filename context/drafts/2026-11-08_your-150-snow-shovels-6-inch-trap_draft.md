@@ -24,7 +24,7 @@ A two-car driveway in the second week of November comes down to what the hardwar
 <!-- tension -->
 ## Why depth sets the walk
 
-Both pages make the same shape of claim. Toro's bullet says the shovel suits small driveways that hold up to four cars, then adds "and up to 6-in of snow at a time" [1]. Snow Joe writes that the thrower cuts a path 22 inches wide by 13 inches deep in a single pass [2]. Neither sentence is false; they answer different questions, and only one of them is the question a February morning asks.
+Both pages make the same shape of claim. Toro's bullet says the shovel suits small driveways that hold up to four cars, then adds "and up to 6-in of snow at a time" [1]. Snow Joe writes that the thrower cuts a path 22 inches wide by 13 inches deep in a single pass [2]. Neither sentence is false; they answer different questions, and my read is that only one of them is the question a February morning asks.
 
 | Unit | Price, 2026-11-08 | Source |
 |---|---|---|
@@ -55,7 +55,7 @@ Popular Mechanics states the consequence as a class limit, noting that corded ma
 
 The shovel is not a worse machine. It is a machine for a different shape of job, and the shape is narrow. A 12-inch cut fits between deck railings and along a front walk, its 20 feet of throw is longer than most of those spaces run, and its 7.5-amp motor leaves half the outlet free for the lights on the same circuit [1]. What I keep circling is how much of that fits under the same four-car headline the thrower's maker claims territory in.
 
-The thrower wins wherever the snow lands somewhere you have to drive out of. Its 13-inch intake clears a plow pile in one pass, and 840 pounds a minute is the rated figure for the class Popular Mechanics says is capped by the outlet [2]. The price of that is the draw, since it wants an outlet with nothing else running and copper thick enough to carry the full load to wherever the snow is.
+The thrower wins wherever the snow lands on the apron between the car and the street. Its 13-inch intake clears a plow pile in one pass, and 840 pounds a minute is the rated figure for the class Popular Mechanics says is capped by the outlet [2]. The price of that is the draw, since it wants an outlet with nothing else running and copper thick enough to carry the full load to wherever the snow is.
 
 The cord is the part buyers budget for last and makers budget for first. Snow Joe publishes the requirement on the 18-inch model in the same family: a maximum length of 100 feet, a minimum of 12 gauge at that length, and 14 gauge at 25 feet [4]. That model is listed as sold out and is not a purchase option here, but the row belongs to a 15-amp machine and reads as the maker's own answer. Popular Mechanics makes the same point from the other side, noting that a power cord "substantially reduces their range" [3].
 
