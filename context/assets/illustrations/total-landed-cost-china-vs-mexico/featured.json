@@ -1,6 +1,6 @@
 {
   "slug": "total-landed-cost-china-vs-mexico",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -92,6 +92,14 @@
     },
     {
       "revision": 12,
+      "alt_text": "Why Mexico Beats China. Isometric technical cutaway showing a shipping container stacked above manufacturing and customs",
+      "caption": "Why Mexico Beats China: Hidden tariffs and freight flip the manufacturing math.",
+      "title": "Why Mexico Beats China",
+      "bytes": 327339,
+      "sha256": "sha256:da8590a0b2405248894a09c259906ca889c342e2ca99506a959c285c3fcb4d05"
+    },
+    {
+      "revision": 13,
       "alt_text": "Why Mexico Beats China. Isometric technical cutaway showing a shipping container stacked above manufacturing and customs",
       "caption": "Why Mexico Beats China: Hidden tariffs and freight flip the manufacturing math.",
       "title": "Why Mexico Beats China",

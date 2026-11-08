@@ -1,6 +1,6 @@
 {
   "slug": "tariff-split-reshoring-heavy-half",
-  "revision": 16,
+  "revision": 17,
   "history": [
     {
       "revision": 1,
@@ -120,6 +120,14 @@
     },
     {
       "revision": 15,
+      "alt_text": "The Tariff Split. An automated conveyor system splitting cargo into two diverging tracks.",
+      "caption": "The Tariff Split: Capital flows to protected goods as consumer taxes ease.",
+      "title": "The Tariff Split",
+      "bytes": 402746,
+      "sha256": "sha256:b06ee42b145bc772f0ff8549b129e7a84a031bbdf1fdc1d062d9b52177aa98d5"
+    },
+    {
+      "revision": 16,
       "alt_text": "The Tariff Split. An automated conveyor system splitting cargo into two diverging tracks.",
       "caption": "The Tariff Split: Capital flows to protected goods as consumer taxes ease.",
       "title": "The Tariff Split",

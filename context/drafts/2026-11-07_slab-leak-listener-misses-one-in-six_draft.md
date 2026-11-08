@@ -41,7 +41,7 @@ The public water benchmark makes the same point from the other side. Its referen
 
 ## The order the tests belong in
 
-The cheapest test costs nothing except two hours of patience. Read the meter, use no water for two hours, then read it again; a dial that moved means water is escaping somewhere [1]. A family of four that burns more than 12,000 gallons in a winter month gets the same answer faster [1].
+What I keep coming back to is the order of the tests, not their accuracy. The cheapest test costs nothing except two hours of patience. Read the meter, use no water for two hours, then read it again; a dial that moved means water is escaping somewhere [1]. A family of four that burns more than 12,000 gallons in a winter month gets the same answer faster [1].
 
 The second test is the one that tells a listener where to point. Pressure testing on the supply side runs $100 to $250 and confirms whether a pressurized line is losing water at all [6]. That distinction matters more than it sounds. A drain leak flows only while someone is using water, and the listening gear hunts a hiss that exists all the time, so a drain problem shows up under a hydrostatic test and shows up as nothing to a microphone at two in the afternoon.
 

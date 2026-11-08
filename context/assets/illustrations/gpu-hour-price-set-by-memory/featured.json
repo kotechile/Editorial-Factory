@@ -1,7 +1,16 @@
 {
   "slug": "gpu-hour-price-set-by-memory",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A modular hardware assembly featuring massive memory modules flanking a central processing core.",
+      "caption": "The rising cost of high-bandwidth memory has fundamentally altered the economics of AI compute.",
+      "title": "GPU-Memory-Assembly",
+      "bytes": 1316955,
+      "sha256": "sha256:ca41e3cb7cfa2a0474c15c5c08e14d8c"
+    }
+  ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
   "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
@@ -15,20 +24,20 @@
   "rationale": "Component assembly perfectly captures the modular relationship between memory and compute, isolating the physical hardware shift in a sleek, architectural way.",
   "cue": "the cost lives in the memory",
   "subject": "A modular hardware assembly with massive memory modules flanking a central processor.",
-  "alt_text": "A modular hardware assembly featuring massive memory modules flanking a central processing core.",
-  "caption": "The rising cost of high-bandwidth memory has fundamentally altered the economics of AI compute.",
-  "title": "GPU-Memory-Assembly",
+  "alt_text": "GPU-Hour Price Now Set By Memory, Not Compute. A modular hardware assembly featuring massive memory modules flanking a central processing",
+  "caption": "GPU-Hour Price Now Set By Memory, Not Compute: Memory, not compute, now sets the price of rented AI compute.",
+  "title": "GPU-Hour Price Now Set By Memory, Not Compute",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/gpu-hour-price-set-by-memory/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1316955,
-  "sha256": "sha256:ca41e3cb7cfa2a0474c15c5c08e14d8c",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/gpu-hour-price-set-by-memory/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 285893,
+  "sha256": "sha256:39e08469ba4221a301ca66ecb39788f9a6555bdb50cc53a1db81aa6f2c011e56",
   "source_hash": "sha256:c963d03ba83c0730e4a34ca96f25a2ff",
   "source_chars": 4409,
   "task_id": "da24fbc16da11bf2b64930de50b69edb",
@@ -45,5 +54,48 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-07T11:36:36+00:00"
+  "generated_at": "2026-10-07T11:36:36+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 285893,
+    "quality": 88,
+    "sha256": "sha256:39e08469ba4221a301ca66ecb39788f9a6555bdb50cc53a1db81aa6f2c011e56",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "GPU RENTAL PRICING // MEMORY BOTTLENECK",
+    "title": "GPU-HOUR PRICE NOW SET BY MEMORY, NOT COMPUTE",
+    "hook": "Memory, not compute, now sets the price of rented AI compute",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 8.73,
+    "target": 4.5,
+    "clutter": 0.06,
+    "region_rgb": [
+      212,
+      211,
+      207
+    ],
+    "binding_rgb": [
+      212,
+      211,
+      207
+    ],
+    "title_lines": [
+      "GPU-HOUR PRICE",
+      "NOW SET BY MEMORY,",
+      "NOT COMPUTE"
+    ],
+    "subject": 0.007,
+    "ink_subject": 0.003,
+    "spike": 0.02,
+    "generated_at": "2026-10-07T11:36:36+00:00"
+  }
 }

@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-07T14:20:37+00:00
+# Internal-link candidates — 2026-11-08T14:19:54+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 56 live article(s), 16 other target(s)
+## giniloh.com — 57 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -58,6 +58,7 @@ Category hubs this front serves: —
 - [Your LLC Bill: 75% Until 2028](https://giniloh.com/your-llc-bill-75-until-2028/) — —
 - [Your Overage Page Costs $0.20](https://giniloh.com/your-ink-plan-bills-20-cents/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
+- [Your Renewal Hides a 10-Month Cost](https://giniloh.com/your-annual-plan-is-a-10-month-loan/) — —
 - [Your Screen Gap: $999 vs $99](https://giniloh.com/your-screen-gap-999-vs-99/) — —
 - [Your Standby Bill Hides 62 Watts](https://giniloh.com/your-standby-bill-hides-62-watts/) — —
 - [Your Stock Gift: $26,180 You Never Pay](https://giniloh.com/your-stock-gift-26180-never-taxed/) — —
@@ -79,7 +80,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 79 live article(s), 22 other target(s)
+## wellroost.com — 82 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -102,6 +103,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
 - [Insurance Bill Beats Property Tax 14%](https://wellroost.com/insurance-beats-property-tax-14/) — Energy & Efficiency
+- [Mower's 2 cm Dies Under Trees](https://wellroost.com/mowers-2cm-dies-under-trees/) — Yard Robots & Automation
 - [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Retainage Trap: 5 Percent, Not 15](https://wellroost.com/hold-back-capped-at-5-percent/) — Tools & Equipment
 - [Snow Robot Stops at 6,000 ft²: It Docks](https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/) — Yard Robots & Automation
@@ -147,6 +149,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
 - [Your Mat Costs 50 Blower Charges](https://wellroost.com/your-heated-mat-costs-50-times-the-blower/) — Outdoor Power & Snow Equipment
 - [Your Monitor's 77% Guess: Where It Fails](https://wellroost.com/monitor-77-percent-guess-where-it-fails/) — Smart Home & Security
+- [Your Mower's 145-Minute Charge Trap](https://wellroost.com/your-mowers-145-minute-charge-trap/) — Outdoor Power & Snow Equipment
 - [Your Mower's 2.4-Year Payback Trap](https://wellroost.com/your-mower-pays-back-in-24-years-or-09/) — Yard Robots & Automation
 - [Your Next Bedroom Costs $417,500](https://wellroost.com/your-next-bedroom-417500/) — Energy & Efficiency
 - [Your Nonrenewal Isn't Final: Count 120 Days](https://wellroost.com/your-nonrenewal-isnt-final-count-120-days/) — Home Cost Decisions
@@ -157,6 +160,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Repair Budget's 7.5% Squeeze](https://wellroost.com/your-repair-budget-buys-7-5-percent-less/) — Energy & Efficiency
 - [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
 - [Your Septic Interval: 18 Months, Not 5 Years](https://wellroost.com/your-septic-interval-is-18-months/) — Energy & Efficiency
+- [Your Slab Leak: 15% Blind Spot](https://wellroost.com/slab-leak-listener-misses-one-in-six/) — Home Diagnostic Tools
 - [Your Tank's Class Costs $55](https://wellroost.com/you-are-pricing-the-fuel-not-the-tank/) — Energy & Efficiency
 - [Your Two Backyard Homes, $1,000 Risk](https://wellroost.com/second-backyard-home-1000-deposit/) — Tools & Equipment
 - [Your Upgrade's $9 Silent Reset](https://wellroost.com/your-upgrades-9-silent-reset/) — Energy & Efficiency
@@ -185,7 +189,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 215 live article(s), 13 other target(s)
+## aichieve.net — 216 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -377,6 +381,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Miss Costs 9x the Chargeback](https://aichieve.net/your-miss-costs-9x-the-chargeback/) — Supply Chain & Operations
 - [Your Monolith Split: 20% More Cost, 90% Slower Debt](https://aichieve.net/monolith-split-price-the-premium/) — Mental Models & Strategy
 - [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://aichieve.net/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows
+- [Your Peso Upside Is Billed: 2.28%](https://aichieve.net/your-peso-upside-is-priced/) — Supply Chain & Operations
 - [Your Planning Cycle Costs 7 Managers](https://aichieve.net/your-planning-cycle-costs-7-managers/) — Supply Chain & Operations
 - [Your Plant Was 1N and Blind](https://aichieve.net/your-plant-was-1n-and-blind/) — AI Stack & Tool TCO
 - [Your Platform: 23 Features, No Stop Rule](https://aichieve.net/your-platform-23-features-no-stop-rule/) — AI Stack & Tool TCO
@@ -420,6 +425,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1555 `your-peso-upside-is-priced` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1549 `51-test-traps-your-plant` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1536 `carbon-data-stops-at-6-minutes` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1508 `your-planning-cycle-costs-7-managers` — published in the CMS but absent from the frontend sitemap
@@ -501,6 +507,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1172 `your-tooling-assist-is-dutiable` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1167 `7-days-notice-rewrites-your-duty` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1552 `your-annual-plan-is-a-10-month-loan` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1545 `your-cheap-board-costs-385` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1540 `your-battery-expires-at-500-cycles` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1532 `your-iso-ceiling-fixed-at-vesting` — published in the CMS but absent from the frontend sitemap
@@ -519,5 +526,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1294 `one-rate-overruns-your-cap-5934` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1278 `your-llc-bill-75-until-2028` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1169 `your-homelab-heat-pays-back-45-cents` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1164 `your-home-servers-45-day-patch-gap` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1161 `why-your-fridge-upgrade-pays-12-50` — published in the CMS but absent from the frontend sitemap

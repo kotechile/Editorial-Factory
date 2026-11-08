@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T14:20:37+00:00",
+  "generated_at": "2026-11-08T14:19:54+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -384,6 +384,25 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
+      "slug": "your-annual-plan-is-a-10-month-loan",
+      "title": "Your Renewal Hides a 10-Month Cost",
+      "url": "https://giniloh.com/your-annual-plan-is-a-10-month-loan/",
+      "path": "/your-annual-plan-is-a-10-month-loan/",
+      "sites_live": {
+        "giniloh.com": "/your-annual-plan-is-a-10-month-loan/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your next renewal hides a 10-month cost in the cheaper of the two prices printed on it, because vendors now sell two- and three-year prepay rungs alongside\u2026",
+      "modified": "2026-11-07T17:57:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-cheap-board-costs-385",
       "title": "Your Cheap Board Now Costs $385",
       "url": "https://giniloh.com/your-cheap-board-costs-385/",
@@ -433,7 +452,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Your incentive stock option (ISO) cap is $100,000 of stock per calendar year, and the calendar that decides the cap is set long before you sign an exercise\u2026",
-      "modified": "2026-11-06T19:01:33",
+      "modified": "2026-11-06T19:13:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2447,6 +2466,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "mowers-2cm-dies-under-trees",
+      "title": "Mower's 2 cm Dies Under Trees",
+      "url": "https://wellroost.com/mowers-2cm-dies-under-trees/",
+      "path": "/mowers-2cm-dies-under-trees/",
+      "sites_live": {
+        "wellroost.com": "/mowers-2cm-dies-under-trees/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "A robot mower's 2 cm claim is correction data, not hardware: the cloud route needs cell coverage, a station needs a 135-degree sky cone, and canopy takes the rest.",
+      "modified": "2026-11-07T19:02:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
       "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
       "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
@@ -2601,6 +2643,29 @@
       ],
       "excerpt": "Water damage and freezing hits 1.50% of insured homes a year at an average $15,400 a claim, while the parts that cause it carry published service lives.",
       "modified": "2026-10-31T04:49:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "slab-leak-listener-misses-one-in-six",
+      "title": "Your Slab Leak: 15% Blind Spot",
+      "url": "https://wellroost.com/slab-leak-listener-misses-one-in-six/",
+      "path": "/slab-leak-listener-misses-one-in-six/",
+      "sites_live": {
+        "wellroost.com": "/slab-leak-listener-misses-one-in-six/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "The meter is still turning late at night with every tap and appliance off, and the bill has climbed for two months because water is leaking under the slab.",
+      "modified": "2026-11-07T19:46:53",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3475,6 +3540,29 @@
       ],
       "excerpt": "A robot mower's payback is a regional number. The same machine is a 2.4-year payback against a 24-week Northeast mowing season and under one in the Southeast.",
       "modified": "2026-10-31T18:45:18",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-mowers-145-minute-charge-trap",
+      "title": "Your Mower's 145-Minute Charge Trap",
+      "url": "https://wellroost.com/your-mowers-145-minute-charge-trap/",
+      "path": "/your-mowers-145-minute-charge-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-mowers-145-minute-charge-trap/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "A homeowner in the mower aisle is deciding whether a second battery earns its place, and the answer is not printed on the pack.",
+      "modified": "2026-11-07T19:32:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8293,6 +8381,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-peso-upside-is-priced",
+      "title": "Your Peso Upside Is Billed: 2.28%",
+      "url": "https://aichieve.net/your-peso-upside-is-priced/",
+      "path": "/your-peso-upside-is-priced/",
+      "sites_live": {
+        "aichieve.net": "/your-peso-upside-is-priced/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A twelve-month peso forward already bills the slide a Mexico case counts as upside, and Customs converts the duty on a peso invoice at a separate quarterly rate.",
+      "modified": "2026-11-07T18:41:16",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-planning-cycle-costs-7-managers",
       "title": "Your Planning Cycle Costs 7 Managers",
       "url": "https://aichieve.net/your-planning-cycle-costs-7-managers/",
@@ -8912,6 +9023,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1555,
+      "slug": "your-peso-upside-is-priced",
+      "title": "Your Peso Upside Is Billed: 2.28%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-07T18:52:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10049,6 +10174,20 @@
     {
       "site": "aichieve.net",
       "kind": "article",
+      "id": 1552,
+      "slug": "your-annual-plan-is-a-10-month-loan",
+      "title": "Your Renewal Hides a 10-Month Cost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-07T17:57:35",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
       "id": 1545,
       "slug": "your-cheap-board-costs-385",
       "title": "Your Cheap Board Now Costs $385",
@@ -10295,34 +10434,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:17",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1164,
-      "slug": "your-home-servers-45-day-patch-gap",
-      "title": "Your Home Server&#8217;s 45-Day Patch Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:18",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1161,
-      "slug": "why-your-fridge-upgrade-pays-12-50",
-      "title": "Why Your Fridge Upgrade Pays $12.50",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:18",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

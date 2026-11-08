@@ -1,6 +1,6 @@
 {
   "slug": "inventory-carrying-cost-rate",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -76,6 +76,14 @@
     },
     {
       "revision": 10,
+      "alt_text": "The True Cost Of Inventory. Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
+      "caption": "The True Cost Of Inventory: How flawed carrying rates cause you to over-hold stock.",
+      "title": "The True Cost Of Inventory",
+      "bytes": 401914,
+      "sha256": "sha256:bb642a38ff0bc887c84970bd43567d922cf7eb468907a8598a2c72404fcca16d"
+    },
+    {
+      "revision": 11,
       "alt_text": "The True Cost Of Inventory. Heavy machined steel industrial gear resting on a dusty warehouse shelf in extreme close-up.",
       "caption": "The True Cost Of Inventory: How flawed carrying rates cause you to over-hold stock.",
       "title": "The True Cost Of Inventory",

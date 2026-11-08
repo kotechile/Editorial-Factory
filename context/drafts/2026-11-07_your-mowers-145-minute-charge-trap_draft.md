@@ -26,7 +26,7 @@ EGO (the battery mower brand) publishes an hour of cutting for its 7.5 amp-hour 
 
 ## The charger sets the pace
 
-A pack stores energy and a charger moves it, so the charger's wattage sets the pace. EGO's 7.5 amp-hour pack holds 420 watt-hours [7]. Its 550-watt rapid charger could move that energy in about 46 minutes of perfect conversion, against the hour EGO publishes [6]. Battery University puts cell charge efficiency near 99 percent, so the lost time sits in the charger's own ceiling and in the slow finish of a full fill [8]. A third charger in the same line, the 320-watt unit, needs 100 minutes for the same pack [7].
+The part I keep circling is that the charger, rather than the pack, sets the pace. A pack stores energy and a charger moves it, so the charger's wattage sets the pace. EGO's 7.5 amp-hour pack holds 420 watt-hours [7]. Its 550-watt rapid charger could move that energy in about 46 minutes of perfect conversion, against the hour EGO publishes [6]. Battery University puts cell charge efficiency near 99 percent, so the lost time sits in the charger's own ceiling and in the slow finish of a full fill [8]. A third charger in the same line, the 320-watt unit, needs 100 minutes for the same pack [7].
 
 The lot sets the other half of the ratio, and it is dull in the way good purchase math is dull. A 21-inch deck is 1.75 feet wide, and at 2 miles an hour the mower sweeps 176 feet a minute [4]. That covers 308 square feet before overlap. Knock off 15 percent for the strip each pass cuts twice, and a quarter acre of 10,890 square feet takes about 42 minutes. The slowest self-propel setting of 0.9 miles an hour needs 92 minutes for the same ground, and the fastest 3.1 miles an hour about 27 [5].
 
@@ -42,7 +42,7 @@ Put both halves together and the duty cycle falls out. An hour of cutting buys a
 
 ## What a rotation needs
 
-The people selling these machines treat the charger as an accessory and the pack as the upgrade, and that order is backwards for anyone cutting more than one charge of grass. A rotation needs the refill to finish inside the run, which is why one spare closes the loop on the rapid charger and not on the standard one. The same clock runs across the rest of this desk's [outdoor power and snow equipment](/categories/outdoor-power-equipment/) coverage, from snow blowers to trimmers, because every one of those machines pairs a pack with a charger.
+My read on the accessory list is that it sells the upgrade in the wrong order. The people selling these machines treat the charger as an accessory and the pack as the upgrade, and that order is backwards for anyone cutting more than one charge of grass. A rotation needs the refill to finish inside the run, which is why one spare closes the loop on the rapid charger and not on the standard one. The same clock runs across the rest of this desk's [outdoor power and snow equipment](/categories/outdoor-power-equipment/) coverage, from snow blowers to trimmers, because every one of those machines pairs a pack with a charger.
 
 The measured band leaves less room than the box suggests. Consumer Reports' testers found two-thirds of the electric walk-behinds they rated could clear a quarter acre on one charge [2]. That is the same quarter acre the deck math puts at 42 minutes on a two-mile-an-hour pass. Anyone whose lot runs past it has two honest routes: a wider deck that finishes inside one charge, or a rapid charger that finishes the refill inside one run.
 
