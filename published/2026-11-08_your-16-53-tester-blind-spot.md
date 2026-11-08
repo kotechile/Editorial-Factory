@@ -11,6 +11,12 @@ slug: your-16-53-tester-blind-spot
 price_as_of: "2026-11-08"
 meta_title: "Your $16.53 Tester's Blind Spot"
 meta_description: "Three outlet testers, one bootleg ground. The $16.53 lamp tester lights a correct pattern on a live yoke, and the load-test analyzer makes no false-ground call."
+image_path: "context/assets/illustrations/your-16-53-tester-blind-spot/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "A white duplex outlet on a stained concrete floor, with a copper jumper wire linking its neutral screw to its ground screw."
+image_caption: "A bootleg ground: the jumper ties the neutral and ground screws together, so a lamp tester reads the outlet as correct."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -89,12 +95,10 @@ The RT210 remains the sweep tool in all four cases. The [imager piece on what co
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Your 512×384 Camera's 10x Illusion" -> /your-512x384-cameras-10x-illusion/ [same site (wellroost.com); topical overlap: bedroom, house] Link "Your 512×384 Camera's 10x Illusion" in the section where the article touches bedroom, house. -->
-<!-- internal-link hint: "Your Hub's 4,292-Project Blind Spot" -> /your-hubs-4292-project-blind-spot/ [same site (wellroost.com); topical overlap: blind, spot] Link "Your Hub's 4,292-Project Blind Spot" in the section where the article touches blind, spot. -->
 <!-- internal-link hint: "Your Slab Leak: 15% Blind Spot" -> /slab-leak-listener-misses-one-in-six/ [same site (wellroost.com); topical overlap: blind, spot] Link "Your Slab Leak: 15% Blind Spot" in the section where the article touches blind, spot. -->
 ## Related reading
 
 - [Your 512×384 Camera's 10x Illusion](/your-512x384-cameras-10x-illusion/) — more on Home Diagnostic Tools
-- [Your Hub's 4,292-Project Blind Spot](/your-hubs-4292-project-blind-spot/) — more on Smart Home & Security
 - [Your Slab Leak: 15% Blind Spot](/slab-leak-listener-misses-one-in-six/) — more on Home Diagnostic Tools
 <!-- internal-links:end -->
 

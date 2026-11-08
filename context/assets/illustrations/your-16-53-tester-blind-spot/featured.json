@@ -1,0 +1,115 @@
+{
+ "slug": "your-16-53-tester-blind-spot",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Three-lamp outlet tester and wall outlet with jumper wire between neutral and ground terminals on a garage workbench.",
+   "caption": "A cutaway of a residential outlet shows the jumper between neutral and ground that a lamp tester reads as correct wiring.",
+   "title": "Outlet Tester Bootleg Ground Cutaway",
+   "bytes": 390483,
+   "sha256": "sha256:594c1ae52a5f5c182dfdd5f0a5866856"
+  }
+ ],
+ "style": "technical_isometric",
+ "style_label": "Technical isometric cutaway",
+ "style_when": "the article explains how a system, process or stack actually works — money flows, supply chains, pipelines, an agent assembly line",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "A technical isometric cutaway of a residential duplex outlet, its neutral silver screw and ground green screw connected by a bare copper jumper wire; a three-prong plug tester inserted in the face, three small circular indicator openings unlit. The cutaway rests on a weathered concrete workbench in a garage, one hard directional key light from the upper left raking across, palette bone white, graphite, rust. Extreme off-center framing with the outlet on the lower right third and generous empty margin. No text, no labels, no markings.",
+ "negative_prompt": "garbled text, random lettering, watermarks, labels, markings, UI",
+ "rationale": "The story explains how a hidden jumper defeats a lamp tester, so a cutaway isometric shows the concealed wiring fault and the tester's blind spot in one legible diagram without relying on photographic realism.",
+ "cue": "reads that outlet as correct wiring",
+ "subject": "a three-lamp outlet tester with visible jumper bridging neutral and ground terminals on a wall outlet",
+ "core_thesis": "A three-lamp outlet tester cannot detect a bootleg ground because a jumper between neutral and ground makes both slots read the same voltage.",
+ "core_conflict": "surface voltage pattern versus load-test measurement; lamp patterns see only slot-to-slot equality, not the missing safety path.",
+ "composition": "extreme off-center lower right third with generous negative space",
+ "alt_text": "A white duplex outlet on a stained concrete floor, with a copper jumper wire linking its neutral screw to its ground screw.",
+ "caption": "A bootleg ground: the jumper ties the neutral and ground screws together, so a lamp tester reads the outlet as correct.",
+ "title": "The $16.53 Tester'S Blind Spot",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 3,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-16-53-tester-blind-spot/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 408585,
+ "sha256": "sha256:b0fcab9b630f12a7d718c45c990a4e9efdfbce03731e077c3213b621ce94012c",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 408585,
+  "quality": 68,
+  "sha256": "sha256:b0fcab9b630f12a7d718c45c990a4e9efdfbce03731e077c3213b621ce94012c",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:1b629a357c095a2e38091224bc4d9d4fd88c7e435b20add4e09364b663c7813c",
+ "render_phash": "021688140037c03600b603b71fb99f36df47cc4f99673b37db3afb38f3b9f5ac",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A white duplex wall receptacle lying on a concrete floor with a grey cord plugged into its top half, and a short bare copper wire jumpering the brass neutral terminal screw to the green ground screw on the side yoke.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.66,
+  "reason": "The frame shows the actual mechanism the headline hinges on — a bootleg ground where a jumper ties neutral to ground — though the three-lamp tester named as the protagonist is absent, leaving only the outlet and the jumper."
+ },
+ "source_hash": "sha256:132f16dabb68641861967e4e92bd84ac",
+ "source_chars": 5639,
+ "task_id": "1607a924d93ca730ab6b0f17fb8d6845",
+ "credits": 18.0,
+ "cost_ms": 30,
+ "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_e2ce285befe87c021434d76a9fc71c5a.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "A technical isometric cutaway of a residential duplex outlet, its neutral silver screw and ground green screw connected by a bare copper jumper wire; a three-prong plug tester inserted in the face, three small circular indicator openings unlit. The cutaway rests on a weathered concrete workbench in a garage, one hard directional key light from the upper left raking across, palette bone white, graphite, rust. Extreme off-center framing with the outlet on the lower right third and generous empty margin. No text, no labels, no markings.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-11-08T15:27:16+00:00",
+ "overlay": {
+  "kicker": "OUTLET TESTER // BOOTLEG GROUND",
+  "title": "THE $16.53 TESTER'S BLIND SPOT",
+  "hook": "A lamp tester can't see a bootleg ground, so a bedroom outlet may still be a lie",
+  "anchor": "top-left",
+  "light": true,
+  "scrim": 120,
+  "contrast": 5.67,
+  "target": 5.5,
+  "clutter": 0.497,
+  "region_rgb": [
+   114,
+   103,
+   87
+  ],
+  "binding_rgb": [
+   189,
+   174,
+   155
+  ],
+  "title_lines": [
+   "THE $16.53",
+   "TESTER'S BLIND",
+   "SPOT"
+  ],
+  "subject": 0.206,
+  "ink_subject": 0.076,
+  "spike": 0.168,
+  "generated_at": "2026-11-08T15:27:16+00:00"
+ }
+}
