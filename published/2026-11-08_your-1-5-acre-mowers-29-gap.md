@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-1-5-acre-mowers-29-gap/featured.jpg"
 image_style: "studio_object"
 image_model: "flux"
-image_alt: "Your 1.5-Acre Mower'S 29% Gap. Two robotic lawnmowers on a driveway, the larger with a small battery, the smaller with a large battery."
-image_caption: "Your 1.5-Acre Mower'S 29% Gap: A 1.5-acre badge hides a 29% gap in what same-price mowers cut per charge."
+image_alt: "Two unbranded robot mowers on a concrete driveway: the larger-rated one carries a small battery pack, the smaller-rated one a large pack."
+image_caption: "The 1.5-acre-rated mower carries the smaller pack; the smaller-rated machine cuts more grass per charge."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

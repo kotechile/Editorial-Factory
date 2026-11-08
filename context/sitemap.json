@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T14:56:28Z",
+  "updated_at": "2026-11-08T15:00:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6075,6 +6075,25 @@
         "The badge is a work rate",
         "By the numbers",
         "The hidden costs off the sticker",
+        "What we did not test",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-08",
+      "public": false
+    },
+    {
+      "slug": "2026-11-08_your-150-snow-shovels-6-inch-trap",
+      "title": "Your $150 Snow Shovel's 6-Inch Trap",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Depth sets the walk",
+        "By the numbers",
+        "Where each machine wins",
+        "The catch",
         "What we did not test",
         "Related reading"
       ],
