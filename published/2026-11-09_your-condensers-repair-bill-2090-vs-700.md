@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-condensers-repair-bill-2090-vs-700/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "2090 Vs 700 Condenser Repair Bill. Condenser unit split-screen with old R-410A and new R-454B refrigerant cylinders on driveway"
-image_caption: "2090 Vs 700 Condenser Repair Bill: The gas on the bid, not the efficiency rating, decides the next decade's cost."
+image_alt: "Two isometric cutaway views of residential air conditioner condensers on concrete pads, each showing its copper coil and expansion valves beside a refrigerant cylinder."
+image_caption: "The gas named on the bid, not the efficiency rating beside it, sets what the next decade of that system costs."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -69,15 +69,12 @@ A household with a working system has nothing to decide until that system fails.
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "California Legalizes Plug-In Home Solar Panels" -> /california-legalizes-plug-in-home-solar-panels/ [same site (wellroost.com); same category; topical overlap: bill] Link "California Legalizes Plug-In Home Solar Panels" in the section where the article touches bill. -->
-<!-- internal-link hint: "Heat Pumps Just Got Cheaper to Run" -> /heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/ [same site (wellroost.com); same category; topical overlap: prices] Link "Heat Pumps Just Got Cheaper to Run" in the section where the article touches prices. -->
-<!-- internal-link hint: "Insurance Bill Beats Property Tax 14%" -> /insurance-beats-property-tax-14/ [same site (wellroost.com); same category; topical overlap: bill] Link "Insurance Bill Beats Property Tax 14%" in the section where the article touches bill. -->
+<!-- internal-links:start — curated for this article (rule 12: at least two shared subject tokens per link) -->
 ## Related reading
 
-- [California Legalizes Plug-In Home Solar Panels](/california-legalizes-plug-in-home-solar-panels/) — more on Energy & Efficiency
-- [Heat Pumps Just Got Cheaper to Run](/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — more on Energy & Efficiency
-- [Insurance Bill Beats Property Tax 14%](/insurance-beats-property-tax-14/) — more on Energy & Efficiency
+- [20% of Your AC Never Arrives](/20-percent-of-your-ac-never-arrives/) — the factory efficiency rating measured against the ducts that deliver it
+- [Your Tank's Class Costs $55](/you-are-pricing-the-fuel-not-the-tank/) — the equipment class, not the fuel, sets the running bill
+- [Heat Pumps Just Got Cheaper to Run](/heat-pumps-cheaper-to-run-pricier-to-buy/) — running cost measured against equipment-price inflation
 <!-- internal-links:end -->
 
 ## Sources
