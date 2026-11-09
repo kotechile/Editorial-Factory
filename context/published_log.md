@@ -334,6 +334,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-08 | outdoor_power_equipment | your-150-snow-shovels-6-inch-trap | Your $150 Snow Shovel's 6-Inch Trap | https://pressflow.aichieve.net/published/2026-11-08_your-150-snow-shovels-6-inch-trap.md | reader site only |
 | 2026-11-08 | home_diagnostics_tech | your-16-53-tester-blind-spot | Your $16.53 Tester's Blind Spot | https://pressflow.aichieve.net/published/2026-11-08_your-16-53-tester-blind-spot.md | reader site only |
 | 2026-11-09 | agentic_ai | your-413-files-cost-four-badges | Your 413 Files Cost Four Badges | https://pressflow.aichieve.net/published/2026-11-09_your-413-files-cost-four-badges.md | reader site only |
+| 2026-11-09 | enterprise_ai_governance | your-detector-misses-22-of-60 | Your Detector's 22-of-60 Gap | https://pressflow.aichieve.net/published/2026-11-09_your-detector-misses-22-of-60.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

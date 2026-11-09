@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T10:51:39Z",
+  "updated_at": "2026-11-09T11:14:55Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6136,6 +6136,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-09",
+      "public": false
+    },
+    {
+      "slug": "2026-11-09_your-detector-misses-22-of-60",
+      "title": "Your Detector's 22-of-60 Gap",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the session became the unit",
+        "By the numbers",
+        "What buyers are asking now",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "enterprise_cai",
       "date": "2026-11-09",
       "public": false
     }
