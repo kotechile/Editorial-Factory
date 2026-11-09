@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T18:16:27Z",
+  "updated_at": "2026-11-09T18:47:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6254,6 +6254,24 @@
       "date": "2026-11-09",
       "public": true,
       "url": "https://wellroost.com/your-oil-heat-619-one-day-of-relief/"
+    },
+    {
+      "slug": "2026-11-09_your-pmi-ends-at-78-not-todays-value",
+      "title": "Your PMI Ends at 78%: Not Your Equity",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Two clocks on one loan",
+        "By the numbers",
+        "What the gap costs",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-09",
+      "public": false
     },
     {
       "slug": "2026-11-09_your-stock-is-the-cheaper-memory",
