@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T13:55:00Z",
+  "updated_at": "2026-11-09T17:47:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6080,7 +6080,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-08",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-1-5-acre-mowers-29-gap/"
     },
     {
       "slug": "2026-11-08_your-150-snow-shovels-6-inch-trap",
@@ -6099,7 +6100,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-08",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-150-snow-shovels-6-inch-trap/"
     },
     {
       "slug": "2026-11-08_your-16-53-tester-blind-spot",
@@ -6119,7 +6121,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-08",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-16-53-tester-blind-spot/"
     },
     {
       "slug": "2026-11-09_your-413-files-cost-four-badges",
@@ -6132,6 +6135,25 @@
         "Only the reader changed",
         "By the numbers",
         "Where this lands",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-09",
+      "public": true,
+      "url": "https://aichieve.net/your-413-files-cost-four-badges/"
+    },
+    {
+      "slug": "2026-11-09_your-agent-recovers-8-of-crashes",
+      "title": "Your Agent Recovers 8% of Crashes",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "What a resume actually restores",
+        "By the numbers",
+        "Where runtime teams are going",
         "The catch",
         "Related reading"
       ],
@@ -6155,7 +6177,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-detector-misses-22-of-60/"
     },
     {
       "slug": "2026-11-09_your-equity-stuck-at-7-18",
@@ -6173,7 +6196,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-equity-stuck-at-7-18/"
     },
     {
       "slug": "2026-11-09_your-fill-rate-is-a-pallet-price",
@@ -6191,7 +6215,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-fill-rate-is-a-pallet-price/"
     },
     {
       "slug": "2026-11-09_your-oil-heat-619-one-day-of-relief",
@@ -6209,7 +6234,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-oil-heat-619-one-day-of-relief/"
     },
     {
       "slug": "2026-11-09_your-stock-is-the-cheaper-memory",
@@ -6227,7 +6253,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-stock-is-the-cheaper-memory/"
     }
   ]
 }

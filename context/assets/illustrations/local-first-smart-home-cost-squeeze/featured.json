@@ -1,6 +1,6 @@
 {
   "slug": "local-first-smart-home-cost-squeeze",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -62,6 +62,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Smart Home Costs Rise Both Ways. The Local-First Smart Home Cost. Split-screen diptych of a matte white smart home hub and a raw silicon",
+      "caption": "Smart Home Costs Rise Both Ways: Cloud paywalls and AI memory costs hit in one week.",
+      "title": "Smart Home Costs Rise Both Ways",
+      "bytes": 401712,
+      "sha256": "sha256:09749defeb519cf79df12eaa57cba14d3657cfdf3b7dac66fce6874fe3489abc"
+    },
+    {
+      "revision": 9,
       "alt_text": "Smart Home Costs Rise Both Ways. The Local-First Smart Home Cost. Split-screen diptych of a matte white smart home hub and a raw silicon",
       "caption": "Smart Home Costs Rise Both Ways: Cloud paywalls and AI memory costs hit in one week.",
       "title": "Smart Home Costs Rise Both Ways",

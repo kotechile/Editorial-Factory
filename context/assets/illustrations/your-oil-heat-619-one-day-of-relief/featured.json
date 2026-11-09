@@ -1,0 +1,123 @@
+{
+  "slug": "your-oil-heat-619-one-day-of-relief",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A residential heating-oil tank with analog gauge beside a heat-pump condenser unit on a concrete basement floor, split-screen.",
+      "caption": "The choice between a record-priced heating oil tank and a heat pump whose install parts just got 3\u201315% dearer.",
+      "title": "Oil tank vs heat pump split-screen clay render",
+      "bytes": 392104,
+      "sha256": "sha256:e7964570859afea6b3cb94559a07dbd9"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your $6.19 Oil Heat. A residential heating-oil tank with analog gauge beside a heat-pump condenser unit on a concrete basement floor",
+      "caption": "Your $6.19 Oil Heat: Heating oil sold for $6.19 a gallon in the week of October 19, up from $3.53 a year.",
+      "title": "Your $6.19 Oil Heat",
+      "bytes": 392248,
+      "sha256": "sha256:370007ee673195f280937415dddb275323eb376ae3429420061bfaeeed708fbe"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of two small mechanical assemblies side by side on a concrete basement floor: left, a rounded steel heating-oil tank with a fill pipe and analog pressure dial (no markings); right, a rectangular heat-pump condenser unit with louvered grille and coiled copper lineset. Split-screen diptych with left-right contrast. A single hard directional key light from the left rakes across both assemblies, casting long contact shadows. Muted palette of slate grey, rust, and deep pine green. Matte surfaces with moulding seams. No text, no logos, no lettering, no numbers.",
+  "negative_prompt": "garbled text, random lettering, watermarks, embossed lettering, printed markings, UI elements",
+  "rationale": "The story is a structural policy and cost dilemma\u2014staying on expensive oil versus paying more to leave it. A matte 3D clay render with two recognizable household heating components in a split-screen diptych states the contrast without legible text, avoiding the lettering that failed the previous frame.",
+  "cue": "Heating oil hit $6.19 a gallon",
+  "subject": "A residential heating-oil tank with analog gauge beside a heat-pump condenser unit on a concrete basement floor",
+  "core_thesis": "Heating oil hit $6.19 a gallon in October while the federal reserve release covers about a day of demand and install materials rose 3-15% \u2014 the fuel is a record and the exit from it got dearer.",
+  "core_conflict": "The federal reserve loan of 315,000 barrels is tiny against a daily burn of 262,000 barrels, while the cost of staying on oil is at a record and the cost of switching to a heat pump also jumped 3-15%.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Clay-render diptych of a heating-oil tank with a pressure gauge beside a heat-pump condenser on cracked concrete.",
+  "caption": "A clay diorama splits the decision in two: the oil tank on the left, the heat-pump condenser a household would need to leave it on the right.",
+  "title": "The $6.19 Oil Heat Reserve Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-oil-heat-619-one-day-of-relief/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399762,
+  "sha256": "sha256:5c3cead1cc37f76e1ae1f593c9ff7e228b21da9ec4a0ecd4bd315e46c613ddce",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399762,
+    "quality": 80,
+    "sha256": "sha256:5c3cead1cc37f76e1ae1f593c9ff7e228b21da9ec4a0ecd4bd315e46c613ddce",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:09ef4c7b594ec318ffd36f63f36fed82b4f050b4767a395b3c7f634ae3ab575b",
+  "render_phash": "1a4ce1f001802f0f687bec5eec4cd86cd66cde6fda7cfa7cf87d9c4d6e7f7e7f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen image with a grey-green horizontal heating-oil tank topped by a round analog gauge and a bent fill pipe on the left, and a grey-green heat-pump condenser cabinet with a louvered grille and coiled copper tubing on the right, both sitting on a cracked concrete floor under hard light.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.87,
+    "reason": "The diptych literally stages the article's subject \u2014 the oil tank in the $6.19-a-gallon heating story set against the heat-pump alternative whose installation costs are rising \u2014 rather than a stand-in from another industry."
+  },
+  "source_hash": "sha256:09484d4185767540221c12035b0586d4",
+  "source_chars": 4770,
+  "task_id": "133336d5a7df358e02fa859c65b0840c",
+  "credits": 18.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_bc4c27bb3a038f542582a1e32b5d1179.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of two small mechanical assemblies side by side on a concrete basement floor: left, a rounded steel heating-oil tank with a fill pipe and analog pressure dial (no markings); right, a rectangular heat-pump condenser unit with louvered grille and coiled copper lineset. Split-screen diptych with left-right contrast. A single hard directional key light from the left rakes across both assemblies, casting long contact shadows. Muted palette of slate grey, rust, and deep pine green. Matte surfaces with moulding seams. No text, no logos, no lettering, no numbers.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-09T13:02:32+00:00",
+  "overlay": {
+    "kicker": "HOME HEATING OIL // RESERVE TRAP",
+    "title": "THE $6.19 OIL HEAT RESERVE TRAP",
+    "hook": "the federal answer is one day of oil while the exit to heat pumps got 3-15% dearer",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.03,
+    "target": 5.5,
+    "clutter": 0.359,
+    "region_rgb": [
+      84,
+      81,
+      76
+    ],
+    "binding_rgb": [
+      120,
+      128,
+      131
+    ],
+    "title_lines": [
+      "THE $6.19 OIL",
+      "HEAT RESERVE",
+      "TRAP"
+    ],
+    "subject": 0.278,
+    "ink_subject": 0.107,
+    "spike": 0.335,
+    "generated_at": "2026-11-09T13:02:32+00:00"
+  }
+}

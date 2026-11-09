@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:19:54+00:00",
+  "generated_at": "2026-11-09T14:22:05+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2880,6 +2880,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-1-5-acre-mowers-29-gap",
+      "title": "Your 1.5-Acre Mower's 29% Gap",
+      "url": "https://wellroost.com/your-1-5-acre-mowers-29-gap/",
+      "path": "/your-1-5-acre-mowers-29-gap/",
+      "sites_live": {
+        "wellroost.com": "/your-1-5-acre-mowers-29-gap/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Your mower's acreage badge hides a 29% gap in what two same-price machines cut per charge: one is rated for 1.5 acres, the other for 0.75, and the smaller\u2026",
+      "modified": "2026-11-08T14:56:27",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-1-acre-mowers-04-acre-trap",
       "title": "Your 1-Acre Mower's 0.4-Acre Trap",
       "url": "https://wellroost.com/your-1-acre-mowers-04-acre-trap/",
@@ -2919,6 +2942,29 @@
       ],
       "excerpt": "A 5% hurricane deductible on a $400,000 home hits $20,000 before your insurer pays a dime. The average home claim in 2023 landed at just $20,062.",
       "modified": "2026-10-31T04:49:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-16-53-tester-blind-spot",
+      "title": "Your $16.53 Tester's Blind Spot",
+      "url": "https://wellroost.com/your-16-53-tester-blind-spot/",
+      "path": "/your-16-53-tester-blind-spot/",
+      "sites_live": {
+        "wellroost.com": "/your-16-53-tester-blind-spot/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "Three outlet testers, one bootleg ground. The $16.53 lamp tester lights a correct pattern on a live yoke, and the load-test analyzer makes no false-ground call.",
+      "modified": "2026-11-08T15:30:20",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3034,6 +3080,29 @@
       ],
       "excerpt": "Three inspection cameras, one wall cavity. The spec that decides which one shows you anything is the far edge of its focus range, not the megapixel count.",
       "modified": "2026-11-01T15:25:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-150-snow-shovels-6-inch-trap",
+      "title": "Your $150 Snow Shovel's 6-Inch Trap",
+      "url": "https://wellroost.com/your-150-snow-shovels-6-inch-trap/",
+      "path": "/your-150-snow-shovels-6-inch-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-150-snow-shovels-6-inch-trap/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "A two-car driveway in the second week of November comes down to what the hardware store has on the shelf, and this year that shelf holds a 12-inch machine\u2026",
+      "modified": "2026-11-08T15:00:22",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3340,6 +3409,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-equity-stuck-at-7-18",
+      "title": "Your Equity Stuck at 7.18%",
+      "url": "https://wellroost.com/your-equity-stuck-at-7-18/",
+      "path": "/your-equity-stuck-at-7-18/",
+      "sites_live": {
+        "wellroost.com": "/your-equity-stuck-at-7-18/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "The record $13.2 trillion of accessible home equity moves when mortgage rates move, not when a homeowner decides anything.",
+      "modified": "2026-11-09T12:11:40",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
       "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
       "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
@@ -3632,6 +3724,29 @@
       ],
       "excerpt": "Carriers are leaving whole regions rather than individual houses, as reinsurance costs and redrawn wildfire and hurricane maps reset what they will cover.",
       "modified": "2026-10-31T04:49:03",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-oil-heat-619-one-day-of-relief",
+      "title": "Your $6.19 Oil Heat: The Reserve Trap",
+      "url": "https://wellroost.com/your-oil-heat-619-one-day-of-relief/",
+      "path": "/your-oil-heat-619-one-day-of-relief/",
+      "sites_live": {
+        "wellroost.com": "/your-oil-heat-619-one-day-of-relief/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Heating oil sold for $6.19 a gallon in the week of October 19, up from $3.53 a year earlier. The federal answer to that price is 315,000 barrels lent from\u2026",
+      "modified": "2026-11-09T13:08:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7553,6 +7668,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-413-files-cost-four-badges",
+      "title": "Your 413 Files Cost Four Badges",
+      "url": "https://aichieve.net/your-413-files-cost-four-badges/",
+      "path": "/your-413-files-cost-four-badges/",
+      "sites_live": {
+        "aichieve.net": "/your-413-files-cost-four-badges/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Claude Sonnet 3.7 wrote 413 memory files during a single game run and earned one badge; Claude Fable 5 wrote nine and earned four.",
+      "modified": "2026-11-09T10:50:37",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-480gb-card-wont-skip-the-memory-queue",
       "title": "480GB Won't Skip Your Memory Queue",
       "url": "https://aichieve.net/your-480gb-card-wont-skip-the-memory-queue/",
@@ -8036,6 +8174,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-detector-misses-22-of-60",
+      "title": "Your Detector's 22-of-60 Gap",
+      "url": "https://aichieve.net/your-detector-misses-22-of-60/",
+      "path": "/your-detector-misses-22-of-60/",
+      "sites_live": {
+        "aichieve.net": "/your-detector-misses-22-of-60/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "A detector that reads one run, however much of that run it reads, misses 22 of 60 agent runs that broke a rule your policy would name.",
+      "modified": "2026-11-09T11:40:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-eta-misses-27-hours",
       "title": "Why Your ETA Misses 27 Hours",
       "url": "https://aichieve.net/your-eta-misses-27-hours/",
@@ -8075,6 +8236,29 @@
       ],
       "excerpt": "A customs record that backs an entry must be kept for five years. Your control tower's exception log probably drops this data too early.",
       "modified": "2026-10-31T04:48:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-fill-rate-is-a-pallet-price",
+      "title": "$3.79 Gap Decides Your Fill Rate",
+      "url": "https://aichieve.net/your-fill-rate-is-a-pallet-price/",
+      "path": "/your-fill-rate-is-a-pallet-price/",
+      "sites_live": {
+        "aichieve.net": "/your-fill-rate-is-a-pallet-price/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Storage space has split into two prices, and the $3.79-a-pallet gap now sets the fill rate \u2014 the share of order lines a site can ship complete.",
+      "modified": "2026-11-09T13:54:59",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8396,7 +8580,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A twelve-month peso forward already bills the slide a Mexico case counts as upside, and Customs converts the duty on a peso invoice at a separate quarterly rate.",
-      "modified": "2026-11-07T18:41:16",
+      "modified": "2026-11-07T18:52:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8749,6 +8933,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-stock-is-the-cheaper-memory",
+      "title": "Your Stock Is the Cheaper Memory: 5% vs 20%",
+      "url": "https://aichieve.net/your-stock-is-the-cheaper-memory/",
+      "path": "/your-stock-is-the-cheaper-memory/",
+      "sites_live": {
+        "aichieve.net": "/your-stock-is-the-cheaper-memory/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Apple closed its fiscal year holding $14.5 billion of stock, two and a half times what it held a year earlier, and added $32.7 billion of purchase\u2026",
+      "modified": "2026-11-09T13:16:45",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-support-bill-an-engineer-at-190k",
       "title": "Cloud Support Costs: An Engineer at $190K",
       "url": "https://aichieve.net/your-support-bill-an-engineer-at-190k/",
@@ -9023,6 +9230,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1571,
+      "slug": "your-fill-rate-is-a-pallet-price",
+      "title": "$3.79 Gap Decides Your Fill Rate",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-09T13:54:59",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1567,
+      "slug": "your-stock-is-the-cheaper-memory",
+      "title": "Your Stock Is the Cheaper Memory: 5% vs 20%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-09T13:16:45",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1562,
+      "slug": "your-detector-misses-22-of-60",
+      "title": "Your Detector&#8217;s 22-of-60 Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-09T11:40:08",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1560,
+      "slug": "your-413-files-cost-four-badges",
+      "title": "Your 413 Files Cost Four Badges",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-09T10:50:37",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10116,48 +10379,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1176,
-      "slug": "your-agent-contract-gap-63-unmet",
-      "title": "Your Agent&#8217;s Contract Gap: 63% Unmet",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:17",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1172,
-      "slug": "your-tooling-assist-is-dutiable",
-      "title": "Your $1,100 Tool Bills Every Unit",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:17",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1167,
-      "slug": "7-days-notice-rewrites-your-duty",
-      "title": "7 Days Notice Rewrites Your Duty",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:18",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -10420,20 +10641,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:08",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1169,
-      "slug": "your-homelab-heat-pays-back-45-cents",
-      "title": "Homelab Heat Rebate: 45 Cents, Not Free",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:17",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

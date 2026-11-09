@@ -1,6 +1,6 @@
 {
   "slug": "mcp-skills-extension",
-  "revision": 34,
+  "revision": 35,
   "history": [
     {
       "revision": 1,
@@ -262,6 +262,14 @@
     },
     {
       "revision": 33,
+      "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
+      "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
+      "title": "The MCP Skills Extension",
+      "bytes": 392677,
+      "sha256": "sha256:192f62cb3741dbac36b5846d29e22ba1523864ffd3b412574bd0a4cc0140dd98"
+    },
+    {
+      "revision": 34,
       "alt_text": "The MCP Skills Extension. Cut-paper collage showing two distinct shapes separating, representing tools and processes.",
       "caption": "The MCP Skills Extension: Standardizing how agents discover and retrieve workflows.",
       "title": "The MCP Skills Extension",

@@ -271,6 +271,16 @@ light ink) or darkest (for dark ink) pixel the text block actually covers, raise
 clears a WCAG contrast target. The clean render is kept beside the composited one as
 `featured.base.<ext>`, so the step is idempotent and the copy is reused on a re-run. A header is only
 finished when the type reads: this is what makes a deliberately conceptual image describable.
+
+**Never move or delete `featured.jpg` to force a new overlay copy — it destroys the clean base.** The
+overlay reuses the copy stored in the sidecar's `overlay` key, so the only way to change the wording is
+to remove that key; and when the staged file is absent while `regenerated` is true, the script unlinks
+`featured.base.*` and then fails on the missing source, leaving neither the base nor a composite. To
+re-copy in place: `cp featured.base.jpg featured.jpg`, drop the `overlay` key from `featured.json`, and
+run the overlay. A first commission whose render carries a real brand mark (a `LENNOX` wordmark on a
+generic condenser in a story that is not about Lennox) or claim-shaped type the article qualifies is
+fixed by **re-commissioning** (`illustration_creator.py <artifact> --force --apply`, sidecar moved
+aside if it reports "text unchanged"), never by re-compositing the same pixels.
 A *regenerated* image needs the last command: the CMS push is idempotent by the media slug
 (`<slug>-featured`), so an ordinary push reuses the attachment it recorded and only refreshes its
 alt/caption — the new reading would sit on this host while the reader kept seeing the old one. The

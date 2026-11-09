@@ -1,6 +1,6 @@
 {
   "slug": "cloud-repatriation-break-even",
-  "revision": 22,
+  "revision": 23,
   "history": [
     {
       "revision": 1,
@@ -172,6 +172,14 @@
     },
     {
       "revision": 21,
+      "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block lo",
+      "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
+      "title": "The Cloud Repatriation Math",
+      "bytes": 404397,
+      "sha256": "sha256:23eb9a00e7aee7d681a983357403d854297ae62251acd8e8bebeff10c411886d"
+    },
+    {
+      "revision": 22,
       "alt_text": "The Cloud Repatriation Math. The Cloud Repatriation Math. The Cloud Repatriation Math. A heavy brushed-steel modular block lo",
       "caption": "The Cloud Repatriation Math: The math behind moving steady apps to owned gear.",
       "title": "The Cloud Repatriation Math",

@@ -14,8 +14,8 @@ meta_description: "A corrupted value sent a ledger agent into 15,000 retries and
 image_path: "context/assets/illustrations/retry-is-the-failure-amplifier/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "A modern data center building at dusk with a repeating grid of warm glowing windows."
-image_caption: "Unmonitored agent retries can trigger endless compute loops, racking up massive cloud bills overnight."
+image_alt: "The Retry Is The Bug. A modern data center building at dusk with a repeating grid of warm glowing windows."
+image_caption: "The Retry Is The Bug: How a single retry loop cost $50,000 and duplicated payments while reporting success."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

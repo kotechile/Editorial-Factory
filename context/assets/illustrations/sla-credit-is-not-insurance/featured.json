@@ -1,6 +1,6 @@
 {
   "slug": "sla-credit-is-not-insurance",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,14 @@
       "sha256": "sha256:77e46180145385f1e1b1452013678fbf",
       "generated_at": "2026-10-08T22:40:39+00:00",
       "source_hash": "sha256:7d2dd267832971fa2f48850752bdb49b"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise data hall.",
+      "caption": "The gap between a vendor's bill credit and a buyer's actual financial exposure turns redundancy into a critical design choice.",
+      "title": "Data Center Outage SLA",
+      "bytes": 443213,
+      "sha256": "sha256:1af48e696aea5de471fdb010802ca56e"
     }
   ],
   "style": "cinematic_still",
@@ -37,9 +45,9 @@
   "cue": "a nine-hour break",
   "subject": "A single darkened server rack in a massive illuminated data hall",
   "composition": "Asymmetric wide shot with deep perspective",
-  "alt_text": "Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise data hall.",
-  "caption": "The gap between a vendor's bill credit and a buyer's actual financial exposure turns redundancy into a critical design choice.",
-  "title": "Data Center Outage SLA",
+  "alt_text": "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise",
+  "caption": "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses.",
+  "title": "Cloud Uptime SLAs Are Not Insurance",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -49,8 +57,8 @@
   "local_path": "context/assets/illustrations/sla-credit-is-not-insurance/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 443213,
-  "sha256": "sha256:1af48e696aea5de471fdb010802ca56e",
+  "bytes": 407618,
+  "sha256": "sha256:ce3a5663723436a569721fcf5ff8d1f30439edfa421a31e01246ddd7017a2529",
   "source_hash": "sha256:7d2dd267832971fa2f48850752bdb49b",
   "source_chars": 4387,
   "task_id": "d8c1cf85cf12b6fa7ba215d961bf1997",
@@ -65,5 +73,48 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:08:44+00:00"
+  "generated_at": "2026-10-08T23:08:44+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407618,
+    "quality": 80,
+    "sha256": "sha256:ce3a5663723436a569721fcf5ff8d1f30439edfa421a31e01246ddd7017a2529",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "CLOUD UPTIME // CREDIT LADDER",
+    "title": "CLOUD UPTIME SLAS ARE NOT INSURANCE",
+    "hook": "Uptime credits are capped refunds, not insurance for actual outage losses",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.9,
+    "target": 5.5,
+    "clutter": 0.294,
+    "region_rgb": [
+      32,
+      43,
+      46
+    ],
+    "binding_rgb": [
+      72,
+      83,
+      79
+    ],
+    "title_lines": [
+      "CLOUD UPTIME",
+      "SLAS ARE NOT",
+      "INSURANCE"
+    ],
+    "subject": 0.145,
+    "ink_subject": 0.03,
+    "spike": 0.364,
+    "generated_at": "2026-10-08T23:08:44+00:00"
+  }
 }

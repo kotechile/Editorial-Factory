@@ -1,6 +1,6 @@
 {
   "slug": "retry-is-the-failure-amplifier",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:72d9132829bf2130b82f3380f9359e82",
       "generated_at": "2026-10-07T10:37:30+00:00",
       "source_hash": "sha256:711349d9b45925cf5622e074272bdefc"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A modern data center building at dusk with a repeating grid of warm glowing windows.",
+      "caption": "Unmonitored agent retries can trigger endless compute loops, racking up massive cloud bills overnight.",
+      "title": "Runaway Agent Compute Facility",
+      "bytes": 424020,
+      "sha256": "sha256:6d385be0f8fff4dc8909c6cc24dea1fb"
     }
   ],
   "style": "architectural_night",
@@ -27,9 +35,9 @@
   "cue": "making 15,000 calls",
   "subject": "a modern data center exterior at dusk",
   "composition": "asymmetric wide architectural framing",
-  "alt_text": "A modern data center building at dusk with a repeating grid of warm glowing windows.",
-  "caption": "Unmonitored agent retries can trigger endless compute loops, racking up massive cloud bills overnight.",
-  "title": "Runaway Agent Compute Facility",
+  "alt_text": "The Retry Is The Bug. A modern data center building at dusk with a repeating grid of warm glowing windows.",
+  "caption": "The Retry Is The Bug: How a single retry loop cost $50,000 and duplicated payments while reporting success.",
+  "title": "The Retry Is The Bug",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/retry-is-the-failure-amplifier/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 424020,
-  "sha256": "sha256:6d385be0f8fff4dc8909c6cc24dea1fb",
+  "bytes": 379130,
+  "sha256": "sha256:65eff02463a1ec70ccf98a6b8cbe5c2fc5a9057993d8a3130310179123e8497d",
   "source_hash": "sha256:711349d9b45925cf5622e074272bdefc",
   "source_chars": 3935,
   "task_id": "779d495b2dde430570574a74d5da5f51",
@@ -55,5 +63,47 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T23:12:28+00:00"
+  "generated_at": "2026-10-08T23:12:28+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 379130,
+    "quality": 80,
+    "sha256": "sha256:65eff02463a1ec70ccf98a6b8cbe5c2fc5a9057993d8a3130310179123e8497d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "AGENTIC LEDGER RETRY // DUPLICATE PAYMENTS",
+    "title": "THE RETRY IS THE BUG",
+    "hook": "How a single retry loop cost $50,000 and duplicated payments while reporting success",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.54,
+    "target": 4.5,
+    "clutter": 0.164,
+    "region_rgb": [
+      50,
+      117,
+      150
+    ],
+    "binding_rgb": [
+      74,
+      139,
+      171
+    ],
+    "title_lines": [
+      "THE RETRY IS THE",
+      "BUG"
+    ],
+    "subject": 0.146,
+    "ink_subject": 0.078,
+    "spike": 0.269,
+    "generated_at": "2026-10-08T23:12:28+00:00"
+  }
 }

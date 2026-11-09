@@ -1,6 +1,6 @@
 {
   "slug": "gpu-hour-price-set-by-memory",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "GPU-Memory-Assembly",
       "bytes": 1316955,
       "sha256": "sha256:ca41e3cb7cfa2a0474c15c5c08e14d8c"
+    },
+    {
+      "revision": 2,
+      "alt_text": "GPU-Hour Price Now Set By Memory, Not Compute. A modular hardware assembly featuring massive memory modules flanking a central processing",
+      "caption": "GPU-Hour Price Now Set By Memory, Not Compute: Memory, not compute, now sets the price of rented AI compute.",
+      "title": "GPU-Hour Price Now Set By Memory, Not Compute",
+      "bytes": 285893,
+      "sha256": "sha256:39e08469ba4221a301ca66ecb39788f9a6555bdb50cc53a1db81aa6f2c011e56"
     }
   ],
   "style": "component_assembly",

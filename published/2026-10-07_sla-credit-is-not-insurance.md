@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/sla-credit-is-not-insurance/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise data hall."
-image_caption: "The gap between a vendor's bill credit and a buyer's actual financial exposure turns redundancy into a critical design choice."
+image_alt: "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise"
+image_caption: "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

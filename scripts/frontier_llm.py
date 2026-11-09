@@ -27,7 +27,7 @@ import urllib.request
 TEXT_MODEL = "deepseek-v4-pro"
 VISION_MODEL = "deepseek-flash"
 BASE_URL = "https://api.deepseek.com/v1/chat/completions"
-MAX_TOKENS = 20000
+MAX_TOKENS = 32000   # 20k truncated thinking-model rewrites outright (finish_reason=length)
 VISION_MAX_TOKENS = 1024
 
 _ENV_FILES = (

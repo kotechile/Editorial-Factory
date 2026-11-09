@@ -1,0 +1,46 @@
+# Review report — 2026-11-09_your-oil-heat-619-one-day-of-relief_final.md
+
+- verdict: **HELD — do not publish**
+- draft: `2026-11-09_your-oil-heat-619-one-day-of-relief_draft.md` · attempt kept: 1 of 2
+- figures in the ledger: 24 · citations: 5 · quotes: 1 · sources: 5
+- reader-side critic: 0 holding defect(s), 1 prose advisory(ies) (scripts/readability_critic.py)
+
+## The reviewer's reading
+
+THROUGH-LINE: The record $6.19 heating-oil price meets a federal reserve loan equal to about one day of demand, while the heat-pump exit also got more expensive, leaving the household choice between fuel volatility and a costlier switch.
+SHAPE: Lead: sets the price record and the two pressures on the household; At a glance: names the shift, the proof number, and the operational risk; Why the cheap answer got dearer: explains the forecast-to-market gap, the distillate bind, the reserve loan terms, and the rising cost of switching; By the numbers: isolates the seasonal burn and the household base; What I'd watch: tests the reserve against daily demand and reads the replacement market; The catch: reverses the price risk, carries the agency warning, and names the missing installed-cost figure.
+
+## What the rewrite did to the prose
+
+| metric | draft | final |
+|---|---|---|
+| words | 757 | 679 |
+| sentence length mean | 18.3 | 17.5 |
+| sentence length spread (sd) | 8.5 | 7.2 |
+| rhythm health (0-1) | 0.977 | 0.897 |
+| short sentences (<=8 words) | 11.8% | 12.1% |
+| filler per 1,000 words | 2.64 | 0.0 |
+| hedge per 1,000 words | 0.0 | 0.0 |
+| abstraction per 1,000 words | 0.0 | 0.0 |
+| repeated 5-grams | 0 | 0 |
+| sentences repeated verbatim | 0 | 0 |
+| Flesch reading ease | — | 54.2 (PASS) |
+| sections restating the through-line | 2 | 1 |
+| staccato paragraphs | 0.0% | 0.0% |
+
+## Flow regressions against the draft
+
+- rhythm flattened: sentence-length sd 8.5 -> 7.2 (kept 85% of the draft's variance)
+- rhythm health fell 0.977 -> 0.897 (mean 18.3 -> 17.5 words, sd 8.5 -> 7.2) — vary sentence length and break any run-on past 40 words
+
+## Advisories
+
+- rhythm flattened: sentence-length sd 8.5 -> 7.2 (kept 85% of the draft's variance)
+- rhythm health fell 0.977 -> 0.897 (mean 18.3 -> 17.5 words, sd 8.5 -> 7.2) — vary sentence length and break any run-on past 40 words
+
+## Attempt trail
+
+```
+{"attempt": 1, "ok": true, "hard": 0, "regressions": 2, "rhythm_sd": [8.5, 7.2], "rhythm_health": [0.977, 0.897], "filler": [2.64, 0.0], "words": 679, "flesch": 54.2, "score": [true, 0, 2.0], "critic_fails": 0, "critic_advisories": 1}
+{"attempt": 2, "error": "frontier returned no text (finish_reason=length)"}
+```
