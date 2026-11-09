@@ -10,6 +10,12 @@ date: 2026-11-09
 slug: your-pmi-ends-at-78-not-todays-value
 meta_title: "Your PMI Ends at 78%: Not Your Equity"
 meta_description: "Private mortgage insurance ends on a calendar set by the loan you signed: 80 percent of the original price on request, 78 percent on the schedule."
+image_path: "context/assets/illustrations/your-pmi-ends-at-78-not-todays-value/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "PMI Ends At 78% Not Your Equity. An open grey closing folder on a kitchen table with a blank schedule page, a red pencil, brass clips and a"
+image_caption: "PMI Ends At 78% Not Your Equity: The 78% stop is read off the schedule; extra principal only buys the request date."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

@@ -1,0 +1,112 @@
+{
+  "slug": "your-pmi-ends-at-78-not-todays-value",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An open grey closing folder on a kitchen table with a blank schedule page, a red pencil, brass clips and a house key.",
+      "caption": "The closing folder holds the amortization schedule that sets both dates: the line a borrower can ask about, and the line the servicer must act on.",
+      "title": "PMI Two Clocks Flatlay",
+      "bytes": 360990,
+      "sha256": "sha256:fe1f970fc8b81d69ea99dea1cd7f6794"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Top-down 90-degree flat-lay photograph on a painted timber kitchen table: an open mortgage closing folder holding a single blank amortization schedule page, a sharpened red pencil lying across it, two small brass paper clips set at different depths along the page, and a brass house key resting beside the folder. Soft window light from the left rakes across the paper grain and casts long contact shadows; palette of bone white, graphite and ochre on matte paper and warm oak. 35mm lens, shallow depth of field at the page edge, asymmetric composition with the folder off-centre, generous negative space, no logos.",
+  "negative_prompt": "garbled lettering, random words, watermarks, readable print, logos",
+  "rationale": "The story is a regulatory and contractual trap: the PMI end dates live in the original loan paperwork, not in the homeowner's current equity statement. A document flat-lay makes the closing file and amortization schedule the hero, and the split-screen makes the request-vs-automatic contrast immediate.",
+  "cue": "Your PMI Ends at 78%: Not Your Equity",
+  "subject": "an open mortgage closing folder holding a blank amortization schedule page, a red pencil, two brass paper clips and a house key on a kitchen table",
+  "core_thesis": "Private mortgage insurance ends on dates set in federal law and computed from the loan a household signed\u2014a request at 80 percent of the original price, an automatic stop at 78 percent read off the original schedule, and a 180-month backstop\u2014so extra principal buys the request date and never the automatic one.",
+  "core_conflict": "homeowner's faster equity build versus the fixed 78% automatic cancellation date locked to the original loan schedule",
+  "composition": "asymmetric top-down, the folder off-centre and low in frame, generous negative space",
+  "alt_text": "PMI Ends At 78% Not Your Equity. An open grey closing folder on a kitchen table with a blank schedule page, a red pencil, brass clips and a",
+  "caption": "PMI Ends At 78% Not Your Equity: The 78% stop is read off the schedule; extra principal only buys the request date.",
+  "title": "PMI Ends At 78% Not Your Equity",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-pmi-ends-at-78-not-todays-value/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407236,
+  "sha256": "sha256:98e88f7af14fdf25b3b0a32aaec68f500d922f7c1e2ae4539f2482d1b0c01d9d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407236,
+    "quality": 80,
+    "sha256": "sha256:98e88f7af14fdf25b3b0a32aaec68f500d922f7c1e2ae4539f2482d1b0c01d9d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:daf45d0ef4c9c4c322fb5f433e89f43aa343e01073b9da105edb1aeab820c8f6",
+  "render_phash": "0fff0ffb1b3f3b3f3b6f13391b390078223d333b313b30bb30bb127bf2070007",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An open gray folder with a blank white page, a red pencil lying diagonally across it, three brass paper clips clipped to the page edge, a small brass house, and a brass key on a wooden table.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.88,
+    "reason": "The frame shows mortgage-closing paperwork with a blank amortization-style page, pencil, clips, and house key, matching the article's mortgage-document mechanism rather than a different subject."
+  },
+  "source_hash": "sha256:135a6cff3c04522e5563b61c78cda088",
+  "source_chars": 5128,
+  "task_id": "c525ea0caac7446f4464101dfcb5371e",
+  "credits": 5.0,
+  "cost_ms": 170,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c525ea0caac7446f4464101dfcb5371e_1794251850088.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Top-down 90-degree flat-lay photograph on a painted timber kitchen table: an open mortgage closing folder holding a single blank amortization schedule page, a sharpened red pencil lying across it, two small brass paper clips set at different depths along the page, and a brass house key resting beside the folder. Soft window light from the left rakes across the paper grain and casts long contact shadows; palette of bone white, graphite and ochre on matte paper and warm oak. 35mm lens, shallow depth of field at the page edge, asymmetric composition with the folder off-centre, generous negative space, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-09T19:17:38+00:00",
+  "overlay": {
+    "kicker": "MORTGAGE INSURANCE // PMI CANCELLATION",
+    "title": "PMI ENDS AT 78% NOT YOUR EQUITY",
+    "hook": "The 78% stop is read off the schedule; extra principal only buys the request date",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.11,
+    "target": 5.5,
+    "clutter": 0.35,
+    "region_rgb": [
+      89,
+      83,
+      75
+    ],
+    "binding_rgb": [
+      138,
+      136,
+      137
+    ],
+    "title_lines": [
+      "PMI ENDS AT 78%",
+      "NOT YOUR EQUITY"
+    ],
+    "subject": 0.231,
+    "ink_subject": 0.133,
+    "spike": 0.337,
+    "generated_at": "2026-11-09T19:17:38+00:00"
+  }
+}
