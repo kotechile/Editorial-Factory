@@ -13,7 +13,7 @@
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,7 +27,7 @@
   "core_thesis": "What a crashed agent resumes from is the state its tools actually touched, not the transcript, so the runtime must sort turns by their OS effects and pay the write only where state changed.",
   "core_conflict": "chat-only recovery restores almost nothing on shell-heavy tasks, while full state saves every turn are 3.78x slower across many sandboxes sharing one host",
   "composition": "extreme asymmetry with the drive bay off-centre right and the rack row receding into darkness on the left",
-  "alt_text": "Your Agent Recovers 8% Of Crashes. Disk drive bay pulled from server rack glows amber in dark data-hall aisle.",
+  "alt_text": "A hot-swap drive bay pulled halfway out of a server rack, its status light glowing amber in a dark data hall.",
   "caption": "Your Agent Recovers 8% Of Crashes: Chat-only resume keeps the model's words, not the files or jobs its tools changed.",
   "title": "Your Agent Recovers 8% Of Crashes",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.72,
-    "reason": "The frame shows server storage hardware \u2014 the disk whose snapshots the article measures \u2014 matching the story's disk-snapshot mechanism rather than an unrelated industry, though it illustrates the disk only and not the agent or the resume process."
+    "reason": "The frame shows server storage hardware — the disk whose snapshots the article measures — matching the story's disk-snapshot mechanism rather than an unrelated industry, though it illustrates the disk only and not the agent or the resume process."
   },
   "source_hash": "sha256:d0752ea1a797d213197654ba2db683f1",
   "source_chars": 5638,

@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-agent-recovers-8-of-crashes/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Your Agent Recovers 8% Of Crashes. Disk drive bay pulled from server rack glows amber in dark data-hall aisle."
+image_alt: "A hot-swap drive bay pulled halfway out of a server rack, its status light glowing amber in a dark data hall."
 image_caption: "Your Agent Recovers 8% Of Crashes: Chat-only resume keeps the model's words, not the files or jobs its tools changed."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

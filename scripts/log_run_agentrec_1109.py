@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+"""Append the 2026-11-09 agentic_ai EVERGREEN run-log row to context/content_calendar.md."""
+import pathlib
+
+ROW = (
+    "| 2026-11-09 | agentic_ai | published to aichieve.net + Supabase (EVERGREEN track — reader/DB surface is not approval-gated) | "
+    "Evergreen run (Mon 17:30 UTC slot, registry `evergreen_cadence` `30 17 * * 1,4`). NOT a news sweep: no 30-day window, "
+    "no virality Judge, no `synthesize_topics.py --seed`. Lead: the `ai_architect` persona's own `wants` (\"state recovery patterns\"), "
+    "the vertical's `primary_angles` (distributed microservices architecture, deterministic RPC boundaries) and founder-voice §3's "
+    "checkpointing pillar; `gsc_analyzer.py --vertical agentic_ai` has **0** striking-distance queries (2026-11-02 export — bonus signal "
+    "only, never a veto). Winner: **your-agent-recovers-8-of-crashes**, published as \"Your Agent Recovers 8% of Crashes\" "
+    "(composite 9.0 — U9 / D9 / E9 / A9): a crashed agent resumes from the state its tools actually touched, not from the transcript. "
+    "Chat-history-only recovery restored **8–13%** of Terminal-Bench tasks, a filesystem snapshot **28–42%**, and capturing process "
+    "state **100%**; every-turn full checkpointing cost up to **3.78x** at 96 co-located sandboxes per host (3.06x at 64) from storage "
+    "contention, while **up to 87%** of turns change no durable state and can skip the write; overlapping the write with the model wait "
+    "held p95 exposed delay to **0.44%** of task time at 64 sandboxes; a diff-based write takes **14 ms** and a rollback **5 ms** against "
+    "hundreds of ms to seconds for a full copy; and a durable journal is capped at **51,200 events or 50 MB** (warn 10,240 / 10 MB), which "
+    "is why state lives outside the journal. **Evergreen gate PASS on the first run** — 7/7 rows VERIFIED, 4 distinct sources on 2 hosts "
+    "(arxiv.org ×3, docs.temporal.io), marker rows=7 fetched=7 sources=4 hosts=2, checked_at 2026-11-09T17:34:59+00:00. "
+    "**De-dup, hand-read:** `2026-10-07_durable-execution-not-a-transaction` (multi_agent_enterprise_fabric) is the nearest artifact by "
+    "mechanism — it argues the journal records that a step ran but not what state it touched and asks for declared effect semantics in the "
+    "MCP contract; this piece measures what a resume actually restores and what the save costs at density, which decides the runtime's "
+    "snapshot substrate and cadence rather than the contract's metadata. Also distinguished: `2026-10-29_your-sandbox-boot-tax-110x-then-nothing` "
+    "(provisioning vs persisting) and the 2026-11-05 A2A-task brief (where a hop's state lives, not how a run survives a process death). "
+    "Candidates dropped with reasons: instruction-density ceiling (8.1 — same context-budget mechanism as `2026-10-07_agent-tool-count-ceiling`); "
+    "per-server MCP topology (7.2 — retread of `2026-10-26_your-tool-boundary-costs-3-engineers`); live vector-tier re-embedding (7.1 — no "
+    "fetchable measured anchor). Facts → `2026-11-09_agentic_ai_evergreen_verified_brief.md`: 7 claims, 7 VERIFIED, 0 FLAGGED, 0 REMOVED, "
+    "with provenance rulings (3.78x is density-specific and FullCkpt is fine on file-dominated work; 8–13% is the shell-heavy number; "
+    "AgentRewind is UCAS/Tsinghua/CAS, not \"Tsinghua\" alone; Temporal's numbers are documentation, not a benchmark). "
+    "Draft 887 words, `check_accessibility` PASS (Flesch 59.0), `readability_critic` ok, `article_shape` ok, voice clean. "
+    "**Frontier pass** `humanize_path.py` on deepseek-v4-pro: the driver wrote one `_final.md` and was cut off by the harness's "
+    "call-time limit before it could grade/retry, so the run graded that artifact itself — `check_accessibility` PASS (Flesch 59.6, 890 "
+    "words, floor 50), `readability_critic` ok, `article_shape` ok, `check_social_voice` clean for this artifact, `headline_score` 84 OK "
+    "with `lead_ok` true (\"Your Agent Recovers 8% of Crashes\" — 6 core words, 33 chars). **Four defects found and fixed by hand, none of "
+    "which the gates could see as written:** (1) it attributed AgentRewind to \"Tsinghua\" alone (the first author is at UCAS) — corrected; "
+    "(2) its p95 gloss said \"the slowest 5% of turns\" without explaining the term `percentile`, which `check_accessibility` hard-fails — "
+    "rewritten as \"the point where the slowest 5% of turns begin\"; (3) the closing referred to \"those workloads\" with no antecedent — "
+    "named the command-line agents; (4) it wrote \"split the problem into two cheaper parts: make the save rare\" — the voice gate reads an "
+    "imperative as reader advice — re-voiced as \"a save that is rare, and a save that is small\". "
+    "`source_gate.py --file` **PASS** (4 sources / 2 hosts, 11 figures checked, 0 not found; docs.temporal.io classified unclassified-but-allowed). "
+    "PUBLISHED 2026-11-09 → `published/2026-11-09_your-agent-recovers-8-of-crashes.md` (`kind: evergreen`, `archetype: evergreen`, "
+    "`evergreen: true`); Supabase article id **250cc8c9-cbd4-4e05-a564-965d0654251d**. WordPress post **1574** on cms.giniloh.com "
+    "(status **publish** through the two-call vertical-term sequence, category 9 \"Autonomous & Agentic Workflows\", vertical term **14** → "
+    "aichieve.net, **kind tag 44 `evergreen`**, featured media **1573**, 7,572-char body, **4 site-relative hrefs** — the earned "
+    "`/durable-execution-not-a-transaction/` plus three Related-reading links) read back over REST with an app password (`?context=edit`); "
+    "the summary's \"0 internal link(s)\" line is the documented relative-path false alarm. Featured image: `cinematic_still` on "
+    "flux-2/pro-text-to-image (5 credits, 2,400×1,350, sha256 `864b43fa…`) — a hot-swap drive bay pulled halfway out of a rack, amber "
+    "status LED, dark data-hall aisle; one art-director refusal (alt 161 chars) before acceptance, and a vision read of the staged file "
+    "shows no brand mark and no in-render lettering (house overlay only). **Alt defect found and fixed:** the director glued the overlay "
+    "headline to the front of the alt (\"Your Agent Recovers 8% Of Crashes. Disk drive bay …\"), so it was rewritten as the 111-character "
+    "sentence \"A hot-swap drive bay pulled halfway out of a server rack, its status light glowing amber in a dark data hall.\" and reconciled across the sidecar "
+    "`featured.json`, the artifact's `image_alt`, media 1573 (PATCH, read back) and the row's `metadata.illustration.alt_text` / "
+    "`metadata.wordpress.media_alt`. Reader surface: the fresh URL answered **404** for ~6 minutes while sibling articles served 200, then "
+    "**HTTP 200** with its own `<h1>`, a self-canonical, the hero as `og:image` and all four hrefs; because the live HTML still carried the "
+    "pre-patch alt string from the earlier build, app **18** was force-redeployed (`queue_application_deployment`, uuid "
+    "`80291c99-8e74-4274-831e-71872a8645f7`) so the served alt matches the media record. "
+    "**Open items, reported not hand-fixed:** (a) `docs.temporal.io` is unregistered in `context/source_quality.json`, classified "
+    "unclassified-but-allowed; (b) the generated Related-reading block admits incidental tokens again (\"Tool-List Budget\" justified on "
+    "agent/crashes) — the shared `internal_links.py` scorer, not this run's code; (c) `context/drafts/2026-11-08_your-16-53-tester-blind-spot_draft.md` "
+    "still fails the repo-wide voice gate (two missing observer cues) though its final is published — pre-existing, not this run's artifact. "
+    "No social distribution and no LinkedIn/Reddit copy (channel removed 2026-10-06). |\n"
+)
+
+p = pathlib.Path("/root/editorial-factory/context/content_calendar.md")
+t = p.read_text()
+if "your-agent-recovers-8-of-crashes" in t:
+    raise SystemExit("row already present")
+if not t.endswith("\n"):
+    t += "\n"
+p.write_text(t + ROW)
+print("appended", len(ROW), "chars")
