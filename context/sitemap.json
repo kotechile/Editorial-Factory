@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T15:30:25Z",
+  "updated_at": "2026-11-09T10:50:38Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6119,6 +6119,24 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-08",
+      "public": false
+    },
+    {
+      "slug": "2026-11-09_your-413-files-cost-four-badges",
+      "title": "Your 413 Files Cost Four Badges",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Only the reader changed",
+        "By the numbers",
+        "Where this lands",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-09",
       "public": false
     }
   ]

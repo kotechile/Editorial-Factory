@@ -1,0 +1,115 @@
+{
+  "slug": "your-413-files-cost-four-badges",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Hundreds of paper file folders piled beside two slim folders with four badges on a drafting table, split-screen.",
+      "caption": "A split-screen paper collage contrasts a bloated memory store of hundreds of folders earning one badge with a lean two-folder store earning four, on a data-hall drafting table.",
+      "title": "Model-version memory stores as folders and badges",
+      "bytes": 374056,
+      "sha256": "sha256:20493e2c89d6f6da60058c4d101c9aa4"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych paper collage on a worn drafting table at the edge of a data hall: left panel, a massive asymmetric heap of hundreds of hand-torn manila file folders in bone white and graphite, topped by one tarnished cobalt enamel badge; right panel, two neat manila folders holding a small stack of blank paper file cards, with four bright cobalt enamel badges in a tidy row. Rag paper with visible fibre, physical cast shadows falling right, one raking key light from the upper left. Palette: bone white, graphite, cobalt. Split-screen diptych, alternating asymmetry between panels, no legible text, no numerals.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible words, numerals, UI elements",
+  "rationale": "Paper collage suits a purely conceptual AI memory-store economics without defaulting to a generic datacenter shot. Hand-torn folders and enamel badges make the model-version mismatch legible, and a split-screen diptych directly captures the two-generation contrast.",
+  "cue": "A memory store belongs to a model version",
+  "subject": "two paper-craft memory stores\u2014hundreds of manila file folders with one badge versus two slim folders with four badges\u2014on a drafting table in a data hall",
+  "core_thesis": "A memory store belongs to a model version: the history length at which written state beats re-reading is set by the reader, so a folder and a write rule tuned on one model are mispriced after an upgrade.",
+  "core_conflict": "Write-path overproduction versus reader capacity: one model over-writes hundreds of files for one badge while a later model curates a few files for four badges, and the crossover depends on the reader\u2019s hold on the log.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Your 413 Files Cost Four Badges. Hundreds of paper file folders piled beside two slim folders with four badges on a drafting table",
+  "caption": "Your 413 Files Cost Four Badges: A memory store belongs to a model version; the four badges are the cost of the mismatch.",
+  "title": "Your 413 Files Cost Four Badges",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-413-files-cost-four-badges/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 405250,
+  "sha256": "sha256:7d965e5d64d06dd95c30c3298d34fa7459e9b29bfe1b525a1dab1c0d080fb9c0",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 405250,
+    "quality": 84,
+    "sha256": "sha256:7d965e5d64d06dd95c30c3298d34fa7459e9b29bfe1b525a1dab1c0d080fb9c0",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d94d5a17d62277d34e95921f427afc9e5ed4501875b9e729ac1e6c7f7a2fe21e",
+  "render_phash": "974fc6473b1a3b1d2f0f2f3f2f3f371b2f275d25752d298539030987ce4ec861",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen view of two drafting tables in front of server racks: on the left, a messy pile of torn and intact paper sheets with one blue badge on top; on the right, two neat manila folders beside a small stack of cards with four blue badges arranged in a row below them.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "The image directly contrasts hundreds of messy memory files earning one badge with two slim folders earning four, matching the article's central comparison."
+  },
+  "source_hash": "sha256:571a8f1163dee18ba2e512c83eb7f7e4",
+  "source_chars": 5408,
+  "task_id": "5ce88fce5b5196f41c54ec1f323f11d9",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_357a9adca140c9da9263bc522f49ca22.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen diptych paper collage on a worn drafting table at the edge of a data hall: left panel, a massive asymmetric heap of hundreds of hand-torn manila file folders in bone white and graphite, topped by one tarnished cobalt enamel badge; right panel, two neat manila folders holding a small stack of blank paper file cards, with four bright cobalt enamel badges in a tidy row. Rag paper with visible fibre, physical cast shadows falling right, one raking key light from the upper left. Palette: bone white, graphite, cobalt. Split-screen diptych, alternating asymmetry between panels, no legible text, no numerals.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-09T10:49:00+00:00",
+  "overlay": {
+    "kicker": "AGENTIC MEMORY // VERSION MISMATCH",
+    "title": "YOUR 413 FILES COST FOUR BADGES",
+    "hook": "A memory store belongs to a model version; the four badges are the cost of the mismatch",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 180,
+    "contrast": 6.49,
+    "target": 5.5,
+    "clutter": 0.698,
+    "region_rgb": [
+      94,
+      95,
+      90
+    ],
+    "binding_rgb": [
+      4,
+      9,
+      12
+    ],
+    "title_lines": [
+      "YOUR 413 FILES",
+      "COST FOUR",
+      "BADGES"
+    ],
+    "subject": 0.298,
+    "ink_subject": 0.125,
+    "spike": 0.486,
+    "generated_at": "2026-11-09T10:49:00+00:00"
+  }
+}

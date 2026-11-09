@@ -462,3 +462,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-08 | `your-1-5-acre-mowers-29-gap` | yard_robotics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-1-5-acre-mowers-29-gap/featured.jpg` |
 | 2026-11-08 | `your-150-snow-shovels-6-inch-trap` | outdoor_power_equipment | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-150-snow-shovels-6-inch-trap/featured.jpg` |
 | 2026-11-08 | `your-16-53-tester-blind-spot` | home_diagnostics_tech | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-16-53-tester-blind-spot/featured.jpg` |
+| 2026-11-09 | `your-413-files-cost-four-badges` | agentic_ai | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-413-files-cost-four-badges/featured.jpg` |
