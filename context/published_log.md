@@ -342,6 +342,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-09 | agentic_ai | your-agent-recovers-8-of-crashes | Your Agent Recovers 8% of Crashes | https://pressflow.aichieve.net/published/2026-11-09_your-agent-recovers-8-of-crashes.md | reader site only |
 | 2026-11-09 | enterprise_ai_governance | your-index-is-the-boundary | 92% Trap: Your Index Is a Copy | https://pressflow.aichieve.net/published/2026-11-09_your-index-is-the-boundary.md | reader site only |
 | 2026-11-09 | home_equity_tco | your-pmi-ends-at-78-not-todays-value | Your PMI Ends at 78%: Not Your Equity | https://pressflow.aichieve.net/published/2026-11-09_your-pmi-ends-at-78-not-todays-value.md | reader site only |
+| 2026-11-09 | home_infrastructure_lifecycle_tco | your-condensers-repair-bill-2090-vs-700 | 2,090 vs 700: Your Condenser's Repair Bill | https://pressflow.aichieve.net/published/2026-11-09_your-condensers-repair-bill-2090-vs-700.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

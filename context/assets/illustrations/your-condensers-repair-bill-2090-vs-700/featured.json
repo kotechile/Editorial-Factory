@@ -1,0 +1,115 @@
+{
+  "slug": "your-condensers-repair-bill-2090-vs-700",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Condenser unit split-screen with old R-410A and new R-454B refrigerant cylinders on driveway",
+      "caption": "A split-screen isometric cutaway contrasts the old R-410A condenser repair path with the new R-454B replacement on a residential driveway.",
+      "title": "R-410A vs R-454B Condenser Repair Decision",
+      "bytes": 346760,
+      "sha256": "sha256:e54dcbc10b8bdebc27debc3d9d364397"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration of a residential air conditioner condenser unit on a concrete driveway pad, split-screen diptych left-right: left half older R-410A system with a large grey refrigerant gas cylinder and copper coil, right half newer R-454B system with a smaller cylinder and updated coil; steel cabinet cut away to show compressor, copper line sets, and connection valves, flat muted palette of bone white, graphite, and copper, one directional key light from the left raking across the concrete, matte surfaces, clean thin line weight, unlabelled, generous empty margin.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, unreadable labels",
+  "rationale": "Technical isometric cutaway suits a story explaining a regulatory and mechanical shift, showing the inside of the condenser where the refrigerant decision lives. The split-screen diptych contrasts old and new refrigerant pathways cleanly and is not in the last four treatments.",
+  "cue": "the gas is the one that decides",
+  "subject": "a residential condenser unit split-screen with old R-410A and new R-454B refrigerant gas cylinders, compressor and copper line sets on a driveway",
+  "core_thesis": "The refrigerant inside the condenser, not the efficiency rating, decides the repair because R-410A's 2,090 GWP exceeds the 700 ceiling and its national allowance halves in 2029.",
+  "core_conflict": "Regulatory phase-down of high-GWP R-410A versus the practical repair economics of existing residential condensers still using that gas.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "2090 Vs 700 Condenser Repair Bill. Condenser unit split-screen with old R-410A and new R-454B refrigerant cylinders on driveway",
+  "caption": "2090 Vs 700 Condenser Repair Bill: The gas on the bid, not the efficiency rating, decides the next decade's cost.",
+  "title": "2090 Vs 700 Condenser Repair Bill",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-condensers-repair-bill-2090-vs-700/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 405896,
+  "sha256": "sha256:ed39fd9416ba33dcaaab9dbc877d1d6547d3f8d81d7f821079990934ebe3a50c",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 405896,
+    "quality": 88,
+    "sha256": "sha256:ed39fd9416ba33dcaaab9dbc877d1d6547d3f8d81d7f821079990934ebe3a50c",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:793f49b14e476d150fdd66715108dd2049005ac5805c3f85bf3124ec12e48856",
+  "render_phash": "01205118312460706870f060e070e8f0e8f0c8f0e8f2b07cf87c7879b1180504",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two side-by-side isometric cutaway views of residential outdoor condenser units, each showing the top fan grille, wrapped copper coil, internal compressor, and small gas cylinder connected by copper piping, both resting on concrete pads.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The frame depicts the article's own protagonist \u2014 a residential condenser cutaway paired with a refrigerant cylinder in an old-versus-new diptych \u2014 though no labels identify the two gases, so the 2,090-vs-700 contrast is only implied."
+  },
+  "source_hash": "sha256:94b86eb96812730d291d3ef3b02dde2d",
+  "source_chars": 5192,
+  "task_id": "8e3563207b7e280840de0d07082b8ac4",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0aebb0444dd9eaea5dd5a7beb57d7c71.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration of a residential air conditioner condenser unit on a concrete driveway pad, split-screen diptych left-right: left half older R-410A system with a large grey refrigerant gas cylinder and copper coil, right half newer R-454B system with a smaller cylinder and updated coil; steel cabinet cut away to show compressor, copper line sets, and connection valves, flat muted palette of bone white, graphite, and copper, one directional key light from the left raking across the concrete, matte surfaces, clean thin line weight, unlabelled, generous empty margin.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-09T19:23:06+00:00",
+  "overlay": {
+    "kicker": "CONDENSER REPAIR // REFRIGERANT PHASEDOWN",
+    "title": "2090 VS 700 CONDENSER REPAIR BILL",
+    "hook": "The gas on the bid, not the efficiency rating, decides the next decade's cost",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.59,
+    "target": 5.5,
+    "clutter": 0.49,
+    "region_rgb": [
+      209,
+      206,
+      201
+    ],
+    "binding_rgb": [
+      135,
+      104,
+      86
+    ],
+    "title_lines": [
+      "2090 VS 700",
+      "CONDENSER",
+      "REPAIR BILL"
+    ],
+    "subject": 0.324,
+    "ink_subject": 0.131,
+    "spike": 0.619,
+    "generated_at": "2026-11-09T19:23:06+00:00"
+  }
+}
