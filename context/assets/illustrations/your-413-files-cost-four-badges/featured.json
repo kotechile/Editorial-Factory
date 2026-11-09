@@ -1,6 +1,6 @@
 {
   "slug": "your-413-files-cost-four-badges",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,11 +9,20 @@
       "title": "Model-version memory stores as folders and badges",
       "bytes": 374056,
       "sha256": "sha256:20493e2c89d6f6da60058c4d101c9aa4"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A torn heap of paper sheets beside two slim folders and four enamel badges on drafting tables in front of server racks",
+      "caption": "Two memory stores side by side: a heap of torn files that earned one badge, and two slim folders that earned four.",
+      "title": "Your 413 Files Cost Four Badges",
+      "bytes": 405250,
+      "sha256": "sha256:7d965e5d64d06dd95c30c3298d34fa7459e9b29bfe1b525a1dab1c0d080fb9c0",
+      "note": "alt retyped from overlay copy to a descriptive sentence (40-140 chars)"
     }
   ],
   "style": "paper_collage",
   "style_label": "Editorial paper collage",
-  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure — use cinematic still or telephoto industry instead",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -23,12 +32,12 @@
   "negative_prompt": "garbled text, random lettering, watermarks, illegible words, numerals, UI elements",
   "rationale": "Paper collage suits a purely conceptual AI memory-store economics without defaulting to a generic datacenter shot. Hand-torn folders and enamel badges make the model-version mismatch legible, and a split-screen diptych directly captures the two-generation contrast.",
   "cue": "A memory store belongs to a model version",
-  "subject": "two paper-craft memory stores\u2014hundreds of manila file folders with one badge versus two slim folders with four badges\u2014on a drafting table in a data hall",
+  "subject": "two paper-craft memory stores—hundreds of manila file folders with one badge versus two slim folders with four badges—on a drafting table in a data hall",
   "core_thesis": "A memory store belongs to a model version: the history length at which written state beats re-reading is set by the reader, so a folder and a write rule tuned on one model are mispriced after an upgrade.",
-  "core_conflict": "Write-path overproduction versus reader capacity: one model over-writes hundreds of files for one badge while a later model curates a few files for four badges, and the crossover depends on the reader\u2019s hold on the log.",
+  "core_conflict": "Write-path overproduction versus reader capacity: one model over-writes hundreds of files for one badge while a later model curates a few files for four badges, and the crossover depends on the reader’s hold on the log.",
   "composition": "split-screen diptych with left-right scenario contrast",
-  "alt_text": "Your 413 Files Cost Four Badges. Hundreds of paper file folders piled beside two slim folders with four badges on a drafting table",
-  "caption": "Your 413 Files Cost Four Badges: A memory store belongs to a model version; the four badges are the cost of the mismatch.",
+  "alt_text": "A torn heap of paper sheets beside two slim folders and four enamel badges on drafting tables in front of server racks",
+  "caption": "Two memory stores side by side: a heap of torn files that earned one badge, and two slim folders that earned four.",
   "title": "Your 413 Files Cost Four Badges",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,

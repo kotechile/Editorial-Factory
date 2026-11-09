@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-413-files-cost-four-badges/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Your 413 Files Cost Four Badges. Hundreds of paper file folders piled beside two slim folders with four badges on a drafting table"
-image_caption: "Your 413 Files Cost Four Badges: A memory store belongs to a model version; the four badges are the cost of the mismatch."
+image_alt: "A torn heap of paper sheets beside two slim folders and four enamel badges on drafting tables in front of server racks"
+image_caption: "Two memory stores side by side: a heap of torn files that earned one badge, and two slim folders that earned four."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
