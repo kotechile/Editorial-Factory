@@ -14,6 +14,12 @@ meta_title: "Your Equity Stuck at 7.18%"
 meta_title_source: "derived_from_title"
 meta_description: "The record $13.2 trillion of accessible home equity moves when mortgage rates move, not when a homeowner decides anything."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-equity-stuck-at-7-18/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A brushed-steel lock latch and its open inspection hatch set in a weathered white wall, one leaf swung wide."
+image_caption: "Home Equity Stuck At 7.18%: The record $13.2T home equity moves when rates move, not when a homeowner decides."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

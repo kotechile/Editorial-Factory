@@ -1,0 +1,116 @@
+{
+  "slug": "your-equity-stuck-at-7-18",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A garage-wall modular steel lock-latch and open inspection gate with an interlocking bay rail under left-sided directional light.",
+      "caption": "The image shows a latched modular gate on a garage wall, where the rate benchmark, not the equity pile, decides what a homeowner can reach.",
+      "title": "Locked Equity Rate Latch Assembly",
+      "bytes": 350493,
+      "sha256": "sha256:24c2d1c04a307b62788bff60aea9aad9"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A left-lit modular lock-latch assembly on a garage wall: two interlocking brushed-steel latch plates, one latched shut across a vertical seam, one hinged inspection gate swung partway open beside a recessed connected bay rail. Deep graphite and ochre against bone-white painted drywall, hard clean edges, one directional light from the left throwing long cast shadows across brushed steel and weathered concrete. Asymmetric two-thirds framing, lock-latch off-centre left, generous negative space to right, no text, no logos.",
+  "negative_prompt": "garbled text, random letters, watermarks, labels, embossed lettering, printed numbers",
+  "rationale": "The story turns on a single benchmark gate and a reclassification rule, not a physical product, so a restrained modular assembly of latch, gate, and bay captures the locking mechanism without overstating a real facility. Component assembly also keeps the required home-site material world and one-directional light.",
+  "cue": "Your Equity Stuck at 7.18%",
+  "subject": "a lock-latch assembly and open inspection gate on a garage wall",
+  "core_thesis": "The record $11.6 trillion of accessible home equity becomes locked when the floating mortgage benchmark moves to 7.18%, leaving only homeowners priced at or above market able to tap equity without penalty.",
+  "core_conflict": "A cheap fixed first-mortgage lock versus a floating market benchmark that reclassifies equity as locked without any change to the house.",
+  "composition": "asymmetric two-thirds rule with lock-latch off-centre left",
+  "alt_text": "A brushed-steel lock latch and its open inspection hatch set in a weathered white wall, one leaf swung wide.",
+  "caption": "Home Equity Stuck At 7.18%: The record $13.2T home equity moves when rates move, not when a homeowner decides.",
+  "title": "Home Equity Stuck At 7.18%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-equity-stuck-at-7-18/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 392448,
+  "sha256": "sha256:1852e271b02a3cb0833f27d0b042a54b27feeb9e37c64b4f15d3c1b0d3b80a0d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 392448,
+    "quality": 84,
+    "sha256": "sha256:1852e271b02a3cb0833f27d0b042a54b27feeb9e37c64b4f15d3c1b0d3b80a0d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:8500944e813c2ee21ebc3facc1116effcd0224029d615933bbedfc4065065d15",
+  "render_phash": "10031003300350434613d693ce93cc97d497cc977c977c177c4f784f590f101f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A brushed-metal lock-latch plate and a small hinged inspection-hatch door mounted in an opening on a painted, weathered white wall, with a vertical seam running down the wall to the left of the hardware.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The latch-and-open-hatch assembly is the article's own lock-in mechanism made literal \u2014 locked equity with a small reachable opening \u2014 rather than a different industry or protagonist, though it is a generic hardware metaphor rather than a housing-finance object."
+  },
+  "source_hash": "sha256:40557bd1de1d62be25ff1bca4dd0ac32",
+  "source_chars": 5216,
+  "task_id": "389dfb25656fadbd372971b580f90325",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8859e77e154a3aa12a3db3b79260ebfc.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A left-lit modular lock-latch assembly on a garage wall: two interlocking brushed-steel latch plates, one latched shut across a vertical seam, one hinged inspection gate swung partway open beside a recessed connected bay rail. Deep graphite and ochre against bone-white painted drywall, hard clean edges, one directional light from the left throwing long cast shadows across brushed steel and weathered concrete. Asymmetric two-thirds framing, lock-latch off-centre left, generous negative space to right, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-09T12:09:51+00:00",
+  "overlay": {
+    "kicker": "HOME EQUITY // RATE BENCHMARK",
+    "title": "HOME EQUITY STUCK AT 7.18%",
+    "hook": "The record $13.2T home equity moves when rates move, not when a homeowner decides",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 7.28,
+    "target": 5.5,
+    "clutter": 0.348,
+    "region_rgb": [
+      203,
+      200,
+      193
+    ],
+    "binding_rgb": [
+      196,
+      193,
+      186
+    ],
+    "title_lines": [
+      "HOME EQUITY",
+      "STUCK AT 7.18%"
+    ],
+    "subject": 0.105,
+    "ink_subject": 0.028,
+    "spike": 0.211,
+    "generated_at": "2026-11-09T12:09:51+00:00"
+  }
+}
