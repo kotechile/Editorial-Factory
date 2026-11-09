@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T11:15:24Z",
+  "updated_at": "2026-11-09T12:00:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6154,6 +6154,24 @@
         "Related reading"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-09",
+      "public": false
+    },
+    {
+      "slug": "2026-11-09_your-equity-stuck-at-7-18",
+      "title": "Your Equity Stuck at 7.18%",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The benchmark moved, not the lock",
+        "By the numbers",
+        "Where the borrowing decision splits",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-09",
       "public": false
     }
