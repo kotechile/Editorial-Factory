@@ -14,6 +14,12 @@ meta_title: "Your Detector's 22-of-60 Gap"
 meta_title_source: "derived_from_title"
 meta_description: "A detector that reads one run, however much of that run it reads, misses 22 of 60 agent runs that broke a rule your policy would name."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-detector-misses-22-of-60/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Two rack-mounted monitors in a dark server control room, one displaying a single green trace and the other dark."
+image_caption: "A single glowing trace on a monitoring console leaves its comparison channel dark, making the detector's 22-of-60 gap visible."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -50,25 +56,9 @@ What I find hard to square is how the two artifacts describe different problems 
 ## By the numbers
 
 - **55% of security decision-makers:** Respondents who say they lack the technical ability to detect or contain a compromised agent at machine speed [4].
-- **0% step-by-step blocking:** Paired-case violations caught by eight of the nine judges, judging one step at a time [3].
+- **Eight of nine judges, no catch:** They blocked none of the 30 paired cases when judging one step at a time [3].
 - **Six guardrails, zero comparisons:** None of the agent guardrails the paper surveyed compares two runs [3].
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 172" style="background:#0f172a; border-radius:8px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; margin:16px 0; max-width:100%; height:auto;">
-  <text x="20" y="36" fill="#f8fafc" font-size="16" font-weight="600">Your Detector&#x27;s 22-of-60 Gap</text>
-  <text x="20" y="52" fill="#94a3b8" font-size="12">Figures as stated in this article&#x27;s own numbers section (verified figures, %)</text>
-  <!-- Row 1 -->
-  <text x="20" y="84" fill="#e2e8f0" font-size="13" font-weight="500">Of security decision makers</text>
-  <rect x="240" y="70" width="300" height="18" rx="4" fill="#1e293b"/>
-  <rect x="240" y="70" width="165" height="18" rx="4" fill="#818cf8"/>
-  <text x="415" y="84" fill="#f1f5f9" font-size="13" font-weight="600">55%</text>
-  <text x="469" y="84" fill="#64748b" font-size="11">([4])</text>
-  <!-- Row 2 -->
-  <text x="20" y="132" fill="#e2e8f0" font-size="13" font-weight="500">Step by step blocking</text>
-  <rect x="240" y="118" width="300" height="18" rx="4" fill="#1e293b"/>
-  <rect x="240" y="118" width="4" height="18" rx="4" fill="#818cf8"/>
-  <text x="254" y="132" fill="#f1f5f9" font-size="13" font-weight="600">0%</text>
-  <text x="308" y="132" fill="#64748b" font-size="11">([3])</text>
-</svg>
 
 <!-- tactical-insight -->
 

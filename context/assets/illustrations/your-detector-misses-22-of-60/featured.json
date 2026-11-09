@@ -1,0 +1,115 @@
+{
+  "slug": "your-detector-misses-22-of-60",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two rack-mounted monitors in a dark server control room, one displaying a single green trace and the other dark.",
+      "caption": "A single glowing trace on a monitoring console leaves its comparison channel dark, making the detector's 22-of-60 gap visible.",
+      "title": "One-Trace-Wide Detection Gap",
+      "bytes": 292272,
+      "sha256": "sha256:99088466d74682441789b3436bf83af4"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "35mm anamorphic cinematic still of a dark server control room at night: two matching rack-mounted monitoring consoles on a brushed-steel desk, the right one displays a single luminous green trace on black glass, the left one stays dark; behind them a data hall of server racks recedes in shadow. A single amber worklamp from the left rakes across the desk, graphite, charcoal and deep pine green palette, deep shadows, fine film grain, no people, no readable text, no logos. Extreme asymmetry with the lit monitor off-centre on the right third and the dark monitor on the left, wide negative space between.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, UI, numbers",
+  "rationale": "cinematic_still captures the decisive operational moment—an empty control room where the monitoring gap is physically legible as a single lit trace on a dark comparator—and gives the story the wide, atmospheric B2B editorial coverage the desk needs without defaulting to abstract datacenter clichés.",
+  "cue": "one trace wide",
+  "subject": "a server control room with a lit waveform monitor showing one green trace and a dark comparison monitor beside it",
+  "core_thesis": "Session-level detection remains one trace wide because enterprise policy violations—purpose, consent, delegation—are relational across runs, so any monitor reading a single run misses 22 of 60 bad runs without false alarms.",
+  "core_conflict": "single-trace monitoring versus cross-run relational policy enforcement at machine speed",
+  "composition": "extreme asymmetry with the lit monitor off-centre on the right third and the dark monitor on the left, wide negative space between",
+  "alt_text": "Two rack-mounted monitors in a dark server control room, one displaying a single green trace and the other dark.",
+  "caption": "A single glowing trace on a monitoring console leaves its comparison channel dark, making the detector's 22-of-60 gap visible.",
+  "title": "Your Detector'S 22-OF-60 Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "cinematic_still"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-detector-misses-22-of-60/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 351435,
+  "sha256": "sha256:fd2e90e54c032785138f55a42c55894d08db7df34cfc2a03d1f0aaec4530b035",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 351435,
+    "quality": 88,
+    "sha256": "sha256:fd2e90e54c032785138f55a42c55894d08db7df34cfc2a03d1f0aaec4530b035",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:8b95d178d6da0fb6176012f9ae7531cb875af7b387f9b5de6e07513ba6a02f05",
+  "render_phash": "8cce8cce933262ba62aa923e91369136d17690fd38fd78fe20dd00dd40fd00ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark server-room aisle with a desk lamp on the left of a table holding two boxed monitors, the left one black and unlit and the right one displaying a green waveform on a black screen.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The lit monitor shows a single green trace with a dark, blank comparison monitor beside it, which visually matches the article's core claim that detection is only one trace wide and nothing compares two runs — though the readout is a generic waveform rather than an agent-run detector, so the mapping is metaphorical rather than literal."
+  },
+  "source_hash": "sha256:da106c4df5965759aa728dcdba983707",
+  "source_chars": 7339,
+  "task_id": "c68e916db48294c4e9ce0c6fecf18678",
+  "credits": 5.0,
+  "cost_ms": 54,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c68e916db48294c4e9ce0c6fecf18678_1794224178299.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "35mm anamorphic cinematic still of a dark server control room at night: two matching rack-mounted monitoring consoles on a brushed-steel desk, the right one displays a single luminous green trace on black glass, the left one stays dark; behind them a data hall of server racks recedes in shadow. A single amber worklamp from the left rakes across the desk, graphite, charcoal and deep pine green palette, deep shadows, fine film grain, no people, no readable text, no logos. Extreme asymmetry with the lit monitor off-centre on the right third and the dark monitor on the left, wide negative space between.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-09T11:36:25+00:00",
+  "overlay": {
+    "kicker": "AI AGENT GOVERNANCE // SESSION DETECTION GAP",
+    "title": "YOUR DETECTOR'S 22-OF-60 GAP",
+    "hook": "One-run monitors miss 22 of 60 agent runs that broke a policy-named rule",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 13.61,
+    "target": 4.5,
+    "clutter": 0.184,
+    "region_rgb": [
+      27,
+      32,
+      34
+    ],
+    "binding_rgb": [
+      28,
+      36,
+      39
+    ],
+    "title_lines": [
+      "YOUR",
+      "DETECTOR'S",
+      "22-OF-60 GAP"
+    ],
+    "subject": 0.141,
+    "ink_subject": 0.032,
+    "spike": 0.195,
+    "generated_at": "2026-11-09T11:36:25+00:00"
+  }
+}

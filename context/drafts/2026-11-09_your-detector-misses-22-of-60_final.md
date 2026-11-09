@@ -46,7 +46,7 @@ What I find hard to square is how the two artifacts describe different problems 
 ## By the numbers
 
 - **55% of security decision-makers:** Respondents who say they lack the technical ability to detect or contain a compromised agent at machine speed [4].
-- **0% step-by-step blocking:** Paired-case violations caught by eight of the nine judges, judging one step at a time [3].
+- **Eight of nine judges, no catch:** They blocked none of the 30 paired cases when judging one step at a time [3].
 - **Six guardrails, zero comparisons:** None of the agent guardrails the paper surveyed compares two runs [3].
 
 <!-- tactical-insight -->
