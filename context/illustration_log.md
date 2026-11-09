@@ -467,3 +467,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-09 | `your-equity-stuck-at-7-18` | home_equity_tco | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-equity-stuck-at-7-18/featured.jpg` |
 | 2026-11-09 | `your-oil-heat-619-one-day-of-relief` | home_infrastructure_lifecycle_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-oil-heat-619-one-day-of-relief/featured.jpg` |
 | 2026-11-09 | `your-stock-is-the-cheaper-memory` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-stock-is-the-cheaper-memory/featured.jpg` |
+| 2026-11-09 | `your-fill-rate-is-a-pallet-price` | sales_order_service_level_otif | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-fill-rate-is-a-pallet-price/featured.jpg` |

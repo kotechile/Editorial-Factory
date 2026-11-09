@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T13:15:20Z",
+  "updated_at": "2026-11-09T13:55:00Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6172,6 +6172,24 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-09",
+      "public": false
+    },
+    {
+      "slug": "2026-11-09_your-fill-rate-is-a-pallet-price",
+      "title": "$3.79 Gap Decides Your Fill Rate",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Committed space is the scarce kind",
+        "By the numbers",
+        "Where the local market sits",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-09",
       "public": false
     },

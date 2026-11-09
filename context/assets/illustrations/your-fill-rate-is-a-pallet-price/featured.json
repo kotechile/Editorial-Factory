@@ -1,0 +1,113 @@
+{
+  "slug": "your-fill-rate-is-a-pallet-price",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Wooden warehouse pallet on concrete floor with blank slate and amber tags representing split pallet prices",
+      "caption": "A studio product shot of a pallet with blank price tags conveys the widening spread in pallet-position costs without a single number.",
+      "title": "Pallet price gap studio shot",
+      "bytes": 276843,
+      "sha256": "sha256:c0bebfed7d931b31f1c2970afb0bf5f4"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy — an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product shot of a single wooden warehouse pallet resting on a concrete studio floor in a warehouse aisle, three-quarter angle. Softbox key light from the left with visible falloff casts a long shadow across the textured concrete. Two blank color-coded tags—one cool slate, one warm amber—tied to opposite pallet corners, no text, no lettering, no numbers. Palette: graphite, slate, amber. 85mm lens, shallow depth of field, fine film grain, no people, no logos. Extreme asymmetry, pallet off-center left.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story is about the price of a physical pallet position and the market gap, making a product shot of the pallet with two blank price tags the most direct, non-literal representation that avoids legible text while still using the article's own vocabulary.",
+  "cue": "$3.79 Gap Decides Your Fill Rate",
+  "subject": "a wooden warehouse pallet on a concrete studio floor with two blank color-coded tags representing the split in pallet-position prices",
+  "core_thesis": "The cost of holding stock has hit a four-year high while pallet-position prices vary widely across markets, so the fill rate a shipper can afford is determined by which site it commits to and for how long, not by safety-stock size.",
+  "core_conflict": "Rising storage costs and a widening gap between cheap and expensive warehouse markets force a tradeoff between committed space and affordable service levels.",
+  "composition": "extreme asymmetry, pallet off-center left, two tags create a diagonal from lower-left to upper-right",
+  "alt_text": "A single wooden pallet on a concrete warehouse floor, with one slate tag and one amber tag tied to opposite corners.",
+  "caption": "$3.79 Gap Decides Your Fill Rate: Storage space has split into two prices, and the $3.79 gap now sets your fill rate.",
+  "title": "$3.79 Gap Decides Your Fill Rate",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-fill-rate-is-a-pallet-price/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 333348,
+  "sha256": "sha256:027ac38ccd115a54a2d0249d9a2af57198df7aa3ae0adaf767d41a3b2257a592",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 333348,
+    "quality": 88,
+    "sha256": "sha256:027ac38ccd115a54a2d0249d9a2af57198df7aa3ae0adaf767d41a3b2257a592",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a5dc044b65487accd01ff2ba9979e309384fca6647c0559f5aef7a2fcf85b72f",
+  "render_phash": "f07ef176f8f6e0fe60f730ff00ff0edfdbdfc707e40ffc3ffc7fe0fff0fff0ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A wooden pallet sits on a concrete floor inside a blurred, empty warehouse-like space, with a small dark-gray tag hanging from its left side and two orange tags attached near its front and right rear corners.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.92,
+    "reason": "The image shows the article’s central object, a warehouse pallet position, with color-coded tags suggesting split pricing, so it directly illustrates the storage-cost and pallet-position story."
+  },
+  "source_hash": "sha256:e650bb0bce477b64dc14f1b7c7a79e78",
+  "source_chars": 5712,
+  "task_id": "2366935df33311b9190ad20d1711b01d",
+  "credits": 5.0,
+  "cost_ms": 100,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2366935df33311b9190ad20d1711b01d_1794232399666.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product shot of a single wooden warehouse pallet resting on a concrete studio floor in a warehouse aisle, three-quarter angle. Softbox key light from the left with visible falloff casts a long shadow across the textured concrete. Two blank color-coded tags—one cool slate, one warm amber—tied to opposite pallet corners, no text, no lettering, no numbers. Palette: graphite, slate, amber. 85mm lens, shallow depth of field, fine film grain, no people, no logos. Extreme asymmetry, pallet off-center left.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-09T13:53:27+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE PRICE GAP // FILL RATE",
+    "title": "$3.79 GAP DECIDES YOUR FILL RATE",
+    "hook": "Storage space has split into two prices, and the $3.79 gap now sets your fill rate",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.88,
+    "target": 4.5,
+    "clutter": 0.223,
+    "region_rgb": [
+      58,
+      62,
+      63
+    ],
+    "binding_rgb": [
+      88,
+      91,
+      96
+    ],
+    "title_lines": [
+      "$3.79 GAP",
+      "DECIDES YOUR",
+      "FILL RATE"
+    ],
+    "subject": 0.078,
+    "ink_subject": 0.009,
+    "spike": 0.066,
+    "generated_at": "2026-11-09T13:53:27+00:00"
+  }
+}
