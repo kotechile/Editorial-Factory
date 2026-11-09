@@ -1,0 +1,115 @@
+{
+  "slug": "your-index-is-the-boundary",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical index card drawers with a translucent filter sheet over one on a data hall table.",
+      "caption": "A retrieval index is cast as a duplicate index drawer, with a filter sheet showing the after-the-fact check that cannot undo the copy.",
+      "title": "Duplicate Index Drawers with Filter Sheet",
+      "bytes": 356077,
+      "sha256": "sha256:c47027b45de63757039fbe08bd3f763c"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A cut-paper editorial collage on a real brushed-steel table inside a data hall. Two identical index card drawers, cut from slate-grey and bone-white card, are layered with a translucent cobalt filter sheet over the nearer drawer; the far drawer sits right of centre with deep cast shadows. One raking light from the upper left crosses the table, leaving long shadows and generous negative space. Hard clean edges, visible paper fibre, no legible print. Extreme asymmetry with duplicate index drawer right third, filter sheet crossing diagonally from lower left.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, numbers, illegible print",
+  "rationale": "Paper collage can state the conceptual duplication of a retrieval index as a second copy without inventing a literal machine, and the layered filter sheet makes the after-the-fact access check visible as a surface layer over the duplicated index.",
+  "cue": "Your Index Is a Copy",
+  "subject": "two identical cut-paper index card drawers with a translucent filter sheet over one",
+  "core_thesis": "A retrieval index is a second copy of the corpus, not a filtered view of it.",
+  "core_conflict": "the write-path persistence of duplicated indexes versus after-the-fact query filters that cannot undo retrieval exposure",
+  "composition": "extreme asymmetry: duplicate index drawer right third, filter sheet crossing diagonally from lower left",
+  "alt_text": "Your Vector Index Is A Second Copy. Two identical index card drawers with a translucent filter sheet over one on a data hall table.",
+  "caption": "Your Vector Index Is A Second Copy: Embeddings invert 92% of a 32-token chunk, so the index is the access boundary.",
+  "title": "Your Vector Index Is A Second Copy",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-index-is-the-boundary/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 383028,
+  "sha256": "sha256:79c4c315cd2d2002445bf90c7f7848e68ab2147cba5fb49c1d8671a828a1058d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 383028,
+    "quality": 84,
+    "sha256": "sha256:79c4c315cd2d2002445bf90c7f7848e68ab2147cba5fb49c1d8671a828a1058d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:5e376191e6160bd2503b6b4315da911cf3d13e8c3c2a2570b7b24a52d4ee2669",
+  "render_phash": "9fa04fa0871486c4c1b40d381c5c7a7634f139b1989b1ccd009d213161e971b9",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two identical light-gray card-stock index card drawers sit on a brushed metal table, one at center-right and one at lower center partially covered, with a translucent blue sheet lying diagonally across the table from the lower left over the nearer drawer, against a background of dark server racks.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The duplicated index drawers literalize the article's core claim that a retrieval index is a second copy of the corpus, and the translucent sheet over one drawer stands in for the query filter that the piece says is not the access boundary."
+  },
+  "source_hash": "sha256:bcd00ec4634919cd92072b2f905d59e9",
+  "source_chars": 5038,
+  "task_id": "c627d8e533fcf3c48295c7eb8cf52bac",
+  "credits": 18.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_5edfebe81826dbb4a9ecb63393962ae0.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A cut-paper editorial collage on a real brushed-steel table inside a data hall. Two identical index card drawers, cut from slate-grey and bone-white card, are layered with a translucent cobalt filter sheet over the nearer drawer; the far drawer sits right of centre with deep cast shadows. One raking light from the upper left crosses the table, leaving long shadows and generous negative space. Hard clean edges, visible paper fibre, no legible print. Extreme asymmetry with duplicate index drawer right third, filter sheet crossing diagonally from lower left.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-09T18:18:28+00:00",
+  "overlay": {
+    "kicker": "AI GOVERNANCE // VECTOR INDEX ACCESS",
+    "title": "YOUR VECTOR INDEX IS A SECOND COPY",
+    "hook": "Embeddings invert 92% of a 32-token chunk, so the index is the access boundary",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.03,
+    "target": 5.5,
+    "clutter": 0.345,
+    "region_rgb": [
+      31,
+      49,
+      77
+    ],
+    "binding_rgb": [
+      75,
+      91,
+      106
+    ],
+    "title_lines": [
+      "YOUR VECTOR",
+      "INDEX IS A",
+      "SECOND COPY"
+    ],
+    "subject": 0.221,
+    "ink_subject": 0.087,
+    "spike": 0.404,
+    "generated_at": "2026-11-09T18:18:28+00:00"
+  }
+}

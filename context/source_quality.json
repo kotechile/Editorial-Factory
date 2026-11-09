@@ -23,6 +23,7 @@
     "bls.gov",
     "caiso.com",
     "courtlistener.com",
+    "docs.pinecone.io",
     "doi.org",
     "ec.europa.eu",
     "ecfr.gov",
@@ -55,6 +56,7 @@
     "pepsico.com",
     "pjm.com",
     "postman.com",
+    "qdrant.tech",
     "salesforce.com",
     "science.org",
     "sos.state.tx.us",
@@ -62,6 +64,7 @@
     "supremecourt.gov",
     "ups.com",
     "usps.com",
+    "weaviate.io",
     "zendesk.com",
     "zigbee2mqtt.io"
   ],

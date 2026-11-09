@@ -469,3 +469,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-09 | `your-stock-is-the-cheaper-memory` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-stock-is-the-cheaper-memory/featured.jpg` |
 | 2026-11-09 | `your-fill-rate-is-a-pallet-price` | sales_order_service_level_otif | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-fill-rate-is-a-pallet-price/featured.jpg` |
 | 2026-11-09 | `your-agent-recovers-8-of-crashes` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-agent-recovers-8-of-crashes/featured.jpg` |
+| 2026-11-09 | `your-index-is-the-boundary` | enterprise_ai_governance | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-index-is-the-boundary/featured.jpg` |

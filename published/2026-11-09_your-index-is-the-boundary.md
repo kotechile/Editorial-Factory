@@ -10,6 +10,12 @@ date: 2026-11-09
 slug: your-index-is-the-boundary
 meta_title: "92% Trap: Your Index Is a Copy"
 meta_description: "An embedding is not a fingerprint: 92% of a 32-token chunk comes back from its vector alone, so the index, not the query filter, is the access boundary."
+image_path: "context/assets/illustrations/your-index-is-the-boundary/featured.jpg"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Your Vector Index Is A Second Copy. Two identical index card drawers with a translucent filter sheet over one on a data hall table."
+image_caption: "Your Vector Index Is A Second Copy: Embeddings invert 92% of a 32-token chunk, so the index is the access boundary."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -54,14 +60,14 @@ The harder limit is identity, because a split can only exclude a caller the stor
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Gateway's 104-Minute Trap" -> /your-gateway-was-malicious-for-104-minutes/ [same site (aichieve.net); same category; topical overlap: index, trap] Link "Your Gateway's 104-Minute Trap" in the section where the article touches index, trap. -->
-<!-- internal-link hint: "Your Pool Becomes 2,000" -> /your-pool-becomes-2000-connections/ [same site (aichieve.net); same category; topical overlap: copy, trap] Link "Your Pool Becomes 2,000" in the section where the article touches copy, trap. -->
-<!-- internal-link hint: "Your AI ROI Trap: 28% Both Ways" -> /your-ai-roi-28-rising-28-stalled/ [same site (aichieve.net); same category; topical overlap: trap] Link "Your AI ROI Trap: 28% Both Ways" in the section where the article touches trap. -->
+<!-- internal-link hint: "An Agent's Logs Aren't Evidence" -> /agent-audit-trail-not-evidence/ [same site (aichieve.net); same vertical (enterprise_ai_governance); topical overlap: audit record, identity, credential] Link "An Agent's Logs Aren't Evidence" where the article touches the action record. -->
+<!-- internal-link hint: "Agent Identity: The Wrong Layer" -> /agent-identity-missed-the-real-breach/ [same site (aichieve.net); same vertical (enterprise_ai_governance); topical overlap: audit record, identity, credential] Link "Agent Identity: The Wrong Layer" where the article touches which identity layer. -->
+<!-- internal-link hint: "Your 90-Day Key: Still Live" -> /your-90-day-key-is-two-live-keys/ [same site (aichieve.net); same vertical (enterprise_ai_governance); topical overlap: audit record, identity, credential] Link "Your 90-Day Key: Still Live" where the article touches credential lifetime. -->
 ## Related reading
 
-- [Your Gateway's 104-Minute Trap](/your-gateway-was-malicious-for-104-minutes/) — more on Mental Models & Strategy
-- [Your Pool Becomes 2,000](/your-pool-becomes-2000-connections/) — more on Mental Models & Strategy
-- [Your AI ROI Trap: 28% Both Ways](/your-ai-roi-28-rising-28-stalled/) — more on Mental Models & Strategy
+- [An Agent's Logs Aren't Evidence](/agent-audit-trail-not-evidence/) — more on Mental Models & Strategy
+- [Agent Identity: The Wrong Layer](/agent-identity-missed-the-real-breach/) — more on Mental Models & Strategy
+- [Your 90-Day Key: Still Live](/your-90-day-key-is-two-live-keys/) — more on Mental Models & Strategy
 <!-- internal-links:end -->
 
 ## Sources
