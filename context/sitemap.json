@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T17:47:46Z",
+  "updated_at": "2026-11-09T18:16:27Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6217,6 +6217,24 @@
       "date": "2026-11-09",
       "public": true,
       "url": "https://aichieve.net/your-fill-rate-is-a-pallet-price/"
+    },
+    {
+      "slug": "2026-11-09_your-index-is-the-boundary",
+      "title": "92% Trap: Your Index Is a Copy",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the copy gets made",
+        "By the numbers",
+        "How the vendors tier isolation",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-09",
+      "public": false
     },
     {
       "slug": "2026-11-09_your-oil-heat-619-one-day-of-relief",
