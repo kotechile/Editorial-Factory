@@ -1,0 +1,113 @@
+{
+ "slug": "your-stock-is-the-cheaper-memory",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Rows of sealed memory chip trays stacked on pallet racks inside a warehouse aisle.",
+   "caption": "Pallet racks of sealed memory in a warehouse aisle: at a 20% quarterly repricing, the stock on the floor is the cheaper supply.",
+   "title": "Semiconductor component warehouse stock under raking light",
+   "bytes": 390649,
+   "sha256": "sha256:809766708910f7284ce973bd79772021"
+  }
+ ],
+ "style": "long_lens_industry",
+ "style_label": "Compressed telephoto industry",
+ "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "A semiconductor component warehouse aisle at late afternoon, 200mm telephoto compression, stacked pallet racks of sealed black memory-chip trays stretching into flat compressed distance. Hard low raking sunlight from the left through high clerestory windows, casting deep diagonal shadows across a concrete floor. Palette graphite, safety yellow, bone white. Materials brushed aluminum rack rails, black anti-static polymer trays, weathered concrete. Asymmetric composition with the first rack off-centre and rows receding to the right, no people, no text, no logos. Deep industrial contrast, crystal-clear air, 16:9.",
+ "negative_prompt": "garbled text, random lettering, watermarks, illegible labels",
+ "rationale": "The story is about the scale of inventory and purchase commitments colliding with quarterly price increases; telephoto compression makes the accumulated stock and future obligations feel physical and immense, not like a product still life.",
+ "cue": "Your Stock Is the Cheaper Memory: 5% vs 20%",
+ "subject": "rows of sealed memory stock trays on pallet racks stretching into compressed distance",
+ "core_thesis": "When a purchased input reprices faster each quarter than stock costs to hold, the buffer becomes a priced hedge and the decision shifts from safety stock to committed days of supply.",
+ "core_conflict": "quarterly component price acceleration versus the 5-7.5% quarterly cost of holding stock",
+ "composition": "asymmetric long-lens compression with the first rack off-centre and rows receding to the right",
+ "alt_text": "Rows of sealed memory chip trays stacked on pallet racks inside a warehouse aisle.",
+ "caption": "Pallet racks of sealed memory in a warehouse aisle: at a 20% quarterly repricing, the stock on the floor is the cheaper supply.",
+ "title": "Your Stock Is The Cheaper Memory",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 2,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-stock-is-the-cheaper-memory/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 407452,
+ "sha256": "sha256:472c13bdc3c546a95aa3d5d8515b5eb35046428f8796b64fafadb6d14d2a8fda",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 407452,
+  "quality": 76,
+  "sha256": "sha256:472c13bdc3c546a95aa3d5d8515b5eb35046428f8796b64fafadb6d14d2a8fda",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:0f387741fcdbad2111e6f06dcc53efa16973419eec1f0b7573108493b014a199",
+ "render_phash": "72ae7a1e7c1e7a5f7e4e7e476cc77e476e477ac77a4e68277b276b77720f6385",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "Rows of metal pallet racks stacked with black trays of small dark rectangular components stand on a concrete warehouse floor beneath ceiling lights, with the nearest rack left of centre and further rows extending to the right.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.9,
+  "reason": "The image shows warehouse-held component stock on pallets, which directly matches the article\u2019s subject of inventory and purchased component buffers."
+ },
+ "source_hash": "sha256:dbed661eade46a7c09ec4ba74ebe1557",
+ "source_chars": 4991,
+ "task_id": "6e2d2eebd7c5573ce69104fd584fc073",
+ "credits": 5.0,
+ "cost_ms": 120,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/6e2d2eebd7c5573ce69104fd584fc073_1794229997026.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "A semiconductor component warehouse aisle at late afternoon, 200mm telephoto compression, stacked pallet racks of sealed black memory-chip trays stretching into flat compressed distance. Hard low raking sunlight from the left through high clerestory windows, casting deep diagonal shadows across a concrete floor. Palette graphite, safety yellow, bone white. Materials brushed aluminum rack rails, black anti-static polymer trays, weathered concrete. Asymmetric composition with the first rack off-centre and rows receding to the right, no people, no text, no logos. Deep industrial contrast, crystal-clear air, 16:9.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-09T13:13:25+00:00",
+ "overlay": {
+  "kicker": "DRAM PRICE INFLATION // INVENTORY HEDGE",
+  "title": "YOUR STOCK IS THE CHEAPER MEMORY",
+  "hook": "When DRAM reprices faster than stock costs, the buffer becomes a priced hedge",
+  "anchor": "top-right",
+  "light": true,
+  "scrim": 120,
+  "contrast": 5.53,
+  "target": 5.5,
+  "clutter": 0.382,
+  "region_rgb": [
+   72,
+   72,
+   69
+  ],
+  "binding_rgb": [
+   135,
+   134,
+   129
+  ],
+  "title_lines": [
+   "YOUR STOCK IS",
+   "THE CHEAPER",
+   "MEMORY"
+  ],
+  "subject": 0.259,
+  "ink_subject": 0.041,
+  "spike": 0.223,
+  "generated_at": "2026-11-09T13:13:25+00:00"
+ }
+}

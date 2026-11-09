@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T12:00:56Z",
+  "updated_at": "2026-11-09T13:15:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6172,6 +6172,42 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-09",
+      "public": false
+    },
+    {
+      "slug": "2026-11-09_your-oil-heat-619-one-day-of-relief",
+      "title": "Your $6.19 Oil Heat: The Reserve Trap",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the cheap answer got dearer",
+        "By the numbers",
+        "What I'd watch",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-09",
+      "public": false
+    },
+    {
+      "slug": "2026-11-09_your-stock-is-the-cheaper-memory",
+      "title": "Your Stock Is the Cheaper Memory: 5% vs 20%",
+      "vertical": "meio_working_capital_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The ladder ran out of room",
+        "By the numbers",
+        "When the hedge stops paying",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-09",
       "public": false
     }

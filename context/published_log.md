@@ -336,6 +336,8 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-09 | agentic_ai | your-413-files-cost-four-badges | Your 413 Files Cost Four Badges | https://pressflow.aichieve.net/published/2026-11-09_your-413-files-cost-four-badges.md | reader site only |
 | 2026-11-09 | enterprise_ai_governance | your-detector-misses-22-of-60 | Your Detector's 22-of-60 Gap | https://pressflow.aichieve.net/published/2026-11-09_your-detector-misses-22-of-60.md | reader site only |
 | 2026-11-09 | home_equity_tco | your-equity-stuck-at-7-18 | Your Equity Stuck at 7.18% | https://pressflow.aichieve.net/published/2026-11-09_your-equity-stuck-at-7-18.md | reader site only |
+| 2026-11-09 | home_infrastructure_lifecycle_tco | your-oil-heat-619-one-day-of-relief | Your $6.19 Oil Heat: The Reserve Trap | https://pressflow.aichieve.net/published/2026-11-09_your-oil-heat-619-one-day-of-relief.md | reader site only |
+| 2026-11-09 | meio_working_capital_tco | your-stock-is-the-cheaper-memory | Your Stock Is the Cheaper Memory: 5% vs 20% | https://pressflow.aichieve.net/published/2026-11-09_your-stock-is-the-cheaper-memory.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
