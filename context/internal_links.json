@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T14:21:28+00:00",
+  "generated_at": "2026-11-10T19:19:32+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -3616,6 +3616,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-meter-bills-from-hourly-rows",
+      "title": "Your Meter Bills From Hourly Rows",
+      "url": "https://wellroost.com/your-meter-bills-from-hourly-rows/",
+      "path": "/your-meter-bills-from-hourly-rows/",
+      "sites_live": {
+        "wellroost.com": "/your-meter-bills-from-hourly-rows/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Your meter bills from hourly rows you can already download, so the free file settles seasonal cost while a panel clamp only adds sample rate and circuit names.",
+      "modified": "2026-11-10T19:16:23",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-mower-needs-4-approvals",
       "title": "Why Your Mower Needs 4 Approvals",
       "url": "https://wellroost.com/your-mower-needs-4-approvals/",
@@ -5423,6 +5446,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "how-to-fix-case-fill-rate-8-days-before-the-order-is-cut",
+      "title": "How to Fix Case Fill Rate 8 Days Before the Order Is Cut",
+      "url": "https://aichieve.net/how-to-fix-case-fill-rate-8-days-before-the-order-is-cut/",
+      "path": "/how-to-fix-case-fill-rate-8-days-before-the-order-is-cut/",
+      "sites_live": {
+        "aichieve.net": "/how-to-fix-case-fill-rate-8-days-before-the-order-is-cut/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Most Case Fill Rate (CFR) reviews operate like a coroner\u2019s office: we wait for the order to die at Post Goods Issue, stamp a generic reason code on the toe tag, and spend next month debating who killed it. What makes this ritual so expensive isn't just that the recorded reason code is usually wrong\u2014it\u2019s that your ERP and planning systems already knew the order was doomed 8 to 30 days before the truck left the dock.",
+      "modified": "2026-11-10T19:08:16",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "inventory-carrying-cost-rate",
       "title": "Inventory Carrying Cost Is 20\u201330% a Year, Not Your 7% Borrowing Rate",
       "url": "https://aichieve.net/inventory-carrying-cost-rate/",
@@ -7162,6 +7208,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-5-gate-breaks-at-261",
+      "title": "Your 5% Gate Breaks at 26.1%",
+      "url": "https://aichieve.net/your-5-gate-breaks-at-261/",
+      "path": "/your-5-gate-breaks-at-261/",
+      "sites_live": {
+        "aichieve.net": "/your-5-gate-breaks-at-261/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "A 5% gate is a promise about one look at the data. Check a running eval after every case and the same gate found a winner 26.1% of the time on identical arms.",
+      "modified": "2026-11-10T17:56:43",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-9-day-notice-9-day-queue",
       "title": "Your 9-Day Notice, 9-Day Queue",
       "url": "https://aichieve.net/your-9-day-notice-9-day-queue/",
@@ -7408,6 +7477,29 @@
       ],
       "excerpt": "Nvidia has reportedly stopped making the only consumer graphics card with 32 gigabytes (GB) of video memory.",
       "modified": "2026-10-31T04:48:40",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-47-day-certificate-trap",
+      "title": "Your 47-Day Certificate Trap",
+      "url": "https://aichieve.net/your-47-day-certificate-trap/",
+      "path": "/your-47-day-certificate-trap/",
+      "sites_live": {
+        "aichieve.net": "/your-47-day-certificate-trap/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "The trap in a 47-day certificate is not the shorter life. It is the renewal rate that life demands of an enclave nobody can visit.",
+      "modified": "2026-11-10T18:15:26",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8657,6 +8749,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-pager-caps-at-2-incidents",
+      "title": "Your Pager Caps at 2 Incidents a Shift",
+      "url": "https://aichieve.net/your-pager-caps-at-2-incidents/",
+      "path": "/your-pager-caps-at-2-incidents/",
+      "sites_live": {
+        "aichieve.net": "/your-pager-caps-at-2-incidents/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Two incidents per 12-hour shift is the published ceiling for on-call, and at six engineer-hours each it decides how many services one team can own.",
+      "modified": "2026-11-10T18:49:02",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-peso-upside-is-priced",
       "title": "Your Peso Upside Is Billed: 2.28%",
       "url": "https://aichieve.net/your-peso-upside-is-priced/",
@@ -9322,6 +9437,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1592,
+      "slug": "how-to-fix-case-fill-rate-8-days-before-the-order-is-cut",
+      "title": "How to Fix Case Fill Rate 8 Days Before the Order Is Cut",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-10T19:18:07",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1587,
+      "slug": "your-pager-caps-at-2-incidents",
+      "title": "Your Pager Caps at 2 Incidents a Shift",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-10T18:49:02",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1584,
+      "slug": "your-47-day-certificate-trap",
+      "title": "Your 47-Day Certificate Trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-10T18:15:26",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1581,
+      "slug": "your-5-gate-breaks-at-261",
+      "title": "Your 5% Gate Breaks at 26.1%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-10T17:56:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10411,62 +10582,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:15",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1196,
-      "slug": "your-15-air-rule-195-break-even",
-      "title": "Your $15 Air Rule, $195 Break-Even",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:15",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1194,
-      "slug": "your-ai-fine-is-3-percent",
-      "title": "Your AI Fine: 3%, Not 35 Million",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:16",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1190,
-      "slug": "your-tool-boundary-costs-3-engineers",
-      "title": "Your Tool Boundary Costs 3 Engineers",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:16",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1187,
-      "slug": "33-of-your-shrink-isnt-theft",
-      "title": "33% of Your Shrink Isn&#8217;t Theft",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:16",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

@@ -13,7 +13,7 @@ meta_description: "Your meter bills from hourly rows you can already download, s
 image_path: "context/assets/illustrations/your-meter-bills-from-hourly-rows/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Your Meter Bills From Hourly Rows. Unmarked smart utility meter on a garage wall with a detached clamp current transformer on the concrete"
+image_alt: "A wall-mounted utility meter with a sealed glass dome and a detached current clamp on the concrete floor below."
 image_caption: "Your Meter Bills From Hourly Rows: Your free hourly file settles seasonal cost while a panel clamp only adds circuit names."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

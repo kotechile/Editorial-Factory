@@ -27,7 +27,7 @@
   "core_thesis": "The advanced meter on the wall already logs the house hour by hour and hands that record back at least once a day, so the free file settles seasonal cost while the only things a panel clamp adds are a finer sample rate and the name of the circuit.",
   "core_conflict": "The free utility meter file answers cost and trend questions at hourly resolution but cannot identify which circuit drew power; a panel clamp provides that circuit-level granularity, forcing owners to choose between free coarse data and purchased fine-grained monitoring.",
   "composition": "extreme asymmetry with meter upper-left and clamp lower-right, raking light diagonal",
-  "alt_text": "Your Meter Bills From Hourly Rows. Unmarked smart utility meter on a garage wall with a detached clamp current transformer on the concrete",
+  "alt_text": "A wall-mounted utility meter with a sealed glass dome and a detached current clamp on the concrete floor below.",
   "caption": "Your Meter Bills From Hourly Rows: Your free hourly file settles seasonal cost while a panel clamp only adds circuit names.",
   "title": "Your Meter Bills From Hourly Rows",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

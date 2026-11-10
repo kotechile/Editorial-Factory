@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T19:16:24Z",
+  "updated_at": "2026-11-10T19:19:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6330,7 +6330,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-10",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-47-day-certificate-trap/"
     },
     {
       "slug": "2026-11-10_your-5-gate-breaks-at-261",
@@ -6348,7 +6349,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-10",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-5-gate-breaks-at-261/"
     },
     {
       "slug": "2026-11-10_your-meter-bills-from-hourly-rows",
@@ -6366,7 +6368,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-10",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-meter-bills-from-hourly-rows/"
     },
     {
       "slug": "2026-11-10_your-pager-caps-at-2-incidents",
@@ -6384,7 +6387,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-10",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-pager-caps-at-2-incidents/"
     }
   ]
 }

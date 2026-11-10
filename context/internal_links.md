@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-11-10T14:21:28+00:00
+# Internal-link candidates — 2026-11-10T19:19:32+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -80,7 +80,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 89 live article(s), 22 other target(s)
+## wellroost.com — 90 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -154,6 +154,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your License Won't Recall Your Mower](https://wellroost.com/your-mowers-recall-has-an-importer/) — Outdoor Power & Snow Equipment
 - [Your Lock's Blind 90% Bet](https://wellroost.com/your-locks-blind-90-bet/) — Smart Home & Security
 - [Your Mat Costs 50 Blower Charges](https://wellroost.com/your-heated-mat-costs-50-times-the-blower/) — Outdoor Power & Snow Equipment
+- [Your Meter Bills From Hourly Rows](https://wellroost.com/your-meter-bills-from-hourly-rows/) — Smart Home & Security
 - [Your Monitor's 77% Guess: Where It Fails](https://wellroost.com/monitor-77-percent-guess-where-it-fails/) — Smart Home & Security
 - [Your Mower's 145-Minute Charge Trap](https://wellroost.com/your-mowers-145-minute-charge-trap/) — Outdoor Power & Snow Equipment
 - [Your Mower's 2.4-Year Payback Trap](https://wellroost.com/your-mower-pays-back-in-24-years-or-09/) — Yard Robots & Automation
@@ -196,7 +197,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 222 live article(s), 13 other target(s)
+## aichieve.net — 226 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -252,6 +253,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Forecast Value Added: 52% Lose to Last Period](https://aichieve.net/forecast-value-added-lose-to-last-period/) — Supply Chain & Operations
 - [Half Your Tokens: 5% of Your Bill](https://aichieve.net/half-your-tokens-5-of-bill/) — AI Stack & Tool TCO
 - [Higher Rates Meet Historically Lean Inventories](https://aichieve.net/fed-rate-hike-inverts-working-capital-trap/) — Supply Chain & Operations
+- [How to Fix Case Fill Rate 8 Days Before the Order Is Cut](https://aichieve.net/how-to-fix-case-fill-rate-8-days-before-the-order-is-cut/) — Supply Chain & Operations
 - [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing Rate](https://aichieve.net/inventory-carrying-cost-rate/) — Supply Chain & Operations
 - [Kill Switch Misses Half Your Agents: 12 Vendors Agree](https://aichieve.net/kill-switch-misses-half-your-agents/) — Mental Models & Strategy
 - [Kroger's Lane Kills Your 3% Fee](https://aichieve.net/kroger-direct-buy-retires-its-own-fine/) — Supply Chain & Operations
@@ -336,7 +338,9 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your 32 Cards Spend 90% Talking: Why Wide Splits Stall](https://aichieve.net/your-32-cards-spend-90-percent-talking/) — Major Purchases & Assets
 - [Your 32GB Card, Gone: 41% Memory Hike](https://aichieve.net/your-32gb-card-gone/) — Major Purchases & Assets
 - [Your 413 Files Cost Four Badges](https://aichieve.net/your-413-files-cost-four-badges/) — Autonomous & Agentic Workflows
+- [Your 47-Day Certificate Trap](https://aichieve.net/your-47-day-certificate-trap/) — AI Stack & Tool TCO
 - [Your 49% Cut Was Actually 9%](https://aichieve.net/your-49-cut-was-actually-9/) — Supply Chain & Operations
+- [Your 5% Gate Breaks at 26.1%](https://aichieve.net/your-5-gate-breaks-at-261/) — AI Stack & Tool TCO
 - [Your 6.1-Point Growth Isn't Demand](https://aichieve.net/your-61-point-growth-was-a-refill/) — Supply Chain & Operations
 - [Your 60% Drop Isn't the Model](https://aichieve.net/your-60-drop-isnt-the-model/) — Autonomous & Agentic Workflows
 - [Your 60% Fast Lane Is Blind](https://aichieve.net/your-60-fast-lane-is-blind/) — AI Stack & Tool TCO
@@ -393,6 +397,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Miss Costs 9x the Chargeback](https://aichieve.net/your-miss-costs-9x-the-chargeback/) — Supply Chain & Operations
 - [Your Monolith Split: 20% More Cost, 90% Slower Debt](https://aichieve.net/monolith-split-price-the-premium/) — Mental Models & Strategy
 - [Your Multi-Agent Failure Has a Shape: Read the Topology Before You Swap the Model](https://aichieve.net/agent-failure-topology-not-model/) — Autonomous & Agentic Workflows
+- [Your Pager Caps at 2 Incidents a Shift](https://aichieve.net/your-pager-caps-at-2-incidents/) — Mental Models & Strategy
 - [Your Peso Upside Is Billed: 2.28%](https://aichieve.net/your-peso-upside-is-priced/) — Supply Chain & Operations
 - [Your Planning Cycle Costs 7 Managers](https://aichieve.net/your-planning-cycle-costs-7-managers/) — Supply Chain & Operations
 - [Your Plant Was 1N and Blind](https://aichieve.net/your-plant-was-1n-and-blind/) — AI Stack & Tool TCO
@@ -438,6 +443,10 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1592 `how-to-fix-case-fill-rate-8-days-before-the-order-is-cut` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1587 `your-pager-caps-at-2-incidents` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1584 `your-47-day-certificate-trap` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1581 `your-5-gate-breaks-at-261` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1576 `your-index-is-the-boundary` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1574 `your-agent-recovers-8-of-crashes` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1571 `your-fill-rate-is-a-pallet-price` — published in the CMS but absent from the frontend sitemap
@@ -516,10 +525,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1210 `your-60-fast-lane-is-blind` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1208 `your-cache-pays-125x-for-nothing` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1202 `your-98-fill-rate-18-dont-ship` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1196 `your-15-air-rule-195-break-even` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1194 `your-ai-fine-is-3-percent` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1190 `your-tool-boundary-costs-3-engineers` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1187 `33-of-your-shrink-isnt-theft` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1552 `your-annual-plan-is-a-10-month-loan` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1545 `your-cheap-board-costs-385` — published in the CMS but absent from the frontend sitemap

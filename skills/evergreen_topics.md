@@ -933,6 +933,8 @@ figure-free TL;DR sub-bullets, cut any hedge word the audit counted (`appears`, 
 with `review_audit.py` — a hand-edited final passes that audit, because it compares figures, citations, quotes
 and source lines rather than authorship.
 
+**An ACCEPTED rewrite can still re-cut both H2s into the fallback labels, so read every heading before the push (learned 2026-11-10).** On the meter-archive evergreen the reviewer's accepted body was the draft in substance, yet it had replaced "A meter built to settle bills" and "What the free file settles" with "The big picture: a meter built to settle bills" and "What I'd watch: the free file settles season against season" — the two generic signposts the structure rules name as fallbacks, both now over the six-word header limit. `review_audit` compares figures and citations, and `article_shape` reads markers, so neither sees a heading; `check_accessibility` only warns. Restore the article's own heading wording after acceptance and re-run the gates.
+
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
 → `scripts/publish.py`. The article keeps the house schema (section markers, `## Sources`, the
 LinkedIn variant) and adds two frontmatter flags so the reader surfaces and the audit can tell it
