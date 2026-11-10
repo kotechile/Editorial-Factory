@@ -1,0 +1,109 @@
+{
+  "slug": "your-15-day-entry-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Weathered shipping container isolated behind chain-link customs hold fence at a container terminal under low golden-hour light.",
+      "caption": "A single unentered container waits in the port director's custody while the rest of the stack moves.",
+      "title": "Container in Customs Hold Under Golden Light",
+      "bytes": 409048,
+      "sha256": "sha256:3745e0f1081c816b8af8e5a187d54139"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression, asymmetric off-centre composition: one isolated weathered shipping container behind a chain-link customs hold fence on a container terminal quay, lower-left, the main stack receding right. Low raking golden-hour sunlight from the left cuts hard shadows across corrugated steel and asphalt, palette graphite, safety yellow and weathered orange. Crisp high contrast, stacked gantry cranes silhouetted behind, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible numbers",
+  "rationale": "Scale makes the custody consequence physical: telephoto compression stacks the port's throughput against the one container pulled out of flow, and long-lens clarity shows the terminal as the clock-owning environment.",
+  "cue": "an entry gap nobody computed",
+  "subject": "a weathered shipping container isolated behind a chain-link customs hold fence at a container terminal",
+  "core_thesis": "An import shipment runs on customs deadlines the control tower does not own, so the escalation rule has to be computed from the entry's own timestamps, not from the carrier milestone feed.",
+  "core_conflict": "Carrier milestone feed vs. customs entry deadlines (security filing, 15-day entry, general-order, liquidation, protest) where a missed entry removes freight from the commercial chain into port custody.",
+  "composition": "200mm telephoto compression, asymmetric off-centre composition with the isolated container lower-left, stacked terminal receding right",
+  "alt_text": "15-DAY Entry Gap Then Custody. Weathered shipping container isolated behind chain-link customs hold fence at a container terminal under low",
+  "caption": "15-DAY Entry Gap Then Custody: Miss the 15-day entry deadline and the freight enters Customs custody, risk and expense.",
+  "title": "15-DAY Entry Gap Then Custody",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-15-day-entry-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 388212,
+  "sha256": "sha256:443f77dbc4443b30c269b63f235137612aa4963160c48a86f5f84dc8ab69bd08",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 388212,
+    "quality": 56,
+    "sha256": "sha256:443f77dbc4443b30c269b63f235137612aa4963160c48a86f5f84dc8ab69bd08",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ab38f490a9989a577844434c12a6b487ad8d7632d4c13657124b45442910e0be",
+  "render_phash": "0c5f0c170dcd6ccc2c560c560c546454625c62dc62dd63e9630f001f003f00ff",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier output truncated (finish_reason=length); raise max_tokens) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:559600db0476fb62e768b53254e05815",
+  "source_chars": 5488,
+  "task_id": "3b0ec99893f7a8ec8e34aec01847be50",
+  "credits": 5.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3b0ec99893f7a8ec8e34aec01847be50_1794341397629.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression, asymmetric off-centre composition: one isolated weathered shipping container behind a chain-link customs hold fence on a container terminal quay, lower-left, the main stack receding right. Low raking golden-hour sunlight from the left cuts hard shadows across corrugated steel and asphalt, palette graphite, safety yellow and weathered orange. Crisp high contrast, stacked gantry cranes silhouetted behind, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-10T20:10:18+00:00",
+  "overlay": {
+    "kicker": "IMPORT COMPLIANCE // 15-DAY ENTRY GAP",
+    "title": "15-DAY ENTRY GAP THEN CUSTODY",
+    "hook": "Miss the 15-day entry deadline and the freight enters Customs custody, risk and expense",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 7.52,
+    "target": 4.5,
+    "clutter": 0.182,
+    "region_rgb": [
+      64,
+      57,
+      46
+    ],
+    "binding_rgb": [
+      89,
+      72,
+      56
+    ],
+    "title_lines": [
+      "15-DAY ENTRY",
+      "GAP THEN",
+      "CUSTODY"
+    ],
+    "subject": 0.097,
+    "ink_subject": 0.014,
+    "spike": 0.085,
+    "generated_at": "2026-11-10T20:10:18+00:00"
+  }
+}

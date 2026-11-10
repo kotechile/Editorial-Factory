@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T19:39:24Z",
+  "updated_at": "2026-11-10T20:11:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6313,6 +6313,24 @@
       "date": "2026-11-09",
       "public": true,
       "url": "https://aichieve.net/your-stock-is-the-cheaper-memory/"
+    },
+    {
+      "slug": "2026-11-10_your-15-day-entry-gap",
+      "title": "Your 15-Day Entry Gap: Then Custody",
+      "vertical": "control_tower_exception_orchestration",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Five clocks, five start events",
+        "By the numbers",
+        "What the entry lane needs",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "supply_chain_architect",
+      "date": "2026-11-10",
+      "public": false
     },
     {
       "slug": "2026-11-10_your-47-day-certificate-trap",

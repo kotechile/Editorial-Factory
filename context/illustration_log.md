@@ -477,3 +477,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-10 | `your-pager-caps-at-2-incidents` | enterprise_tech_leadership | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-pager-caps-at-2-incidents/featured.jpg` |
 | 2026-11-10 | `your-meter-bills-from-hourly-rows` | smart_home_telemetry | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-meter-bills-from-hourly-rows/featured.jpg` |
 | 2026-11-10 | `your-gpu-starves-at-5-9-gibs` | workstation_compute_economics | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-gpu-starves-at-5-9-gibs/featured.jpg` |
+| 2026-11-10 | `your-15-day-entry-gap` | control_tower_exception_orchestration | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-15-day-entry-gap/featured.jpg` |
