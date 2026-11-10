@@ -1,0 +1,127 @@
+{
+  "slug": "your-gpu-starves-at-5-9-gibs",
+  "revision": 4,
+  "history": [
+    {
+      "revision": 1,
+      "title": "GPU feed rate isometric cutaway",
+      "bytes": 402310,
+      "sha256": "sha256:67cea2f45be7edef3b059677d8c2270a"
+    },
+    {
+      "revision": 2,
+      "title": "Your GPU Starves At 5.9 Gib/S",
+      "bytes": 392530,
+      "sha256": "sha256:aaed1ce8439f6e7b5cfd9af8d428b69c14e79b4ed72218d99d9ba4048d48a3ab"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Isometric cutaway of a GPU workstation: two SSDs feed a processor and a finned accelerator card through a narrowing yellow data ribbon.",
+      "caption": "Your GPU starves at 5.9 GiB/s: the feed rate, not the drive's headline speed, decides whether the accelerator stays busy.",
+      "title": "Your GPU Starves At 5.9 Gib/S",
+      "bytes": 392530,
+      "sha256": "sha256:aaed1ce8439f6e7b5cfd9af8d428b69c14e79b4ed72218d99d9ba4048d48a3ab"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Server room workbench. An isometric cutaway of a GPU workstation: two M.2 consumer SSDs with copper heat spreaders sit in a drive cage at left; a central CPU socket with exposed processor cores and a small cooling tower; at right, a full-height accelerator card with dense aluminium fins and polymer shroud. A thin safety-yellow data ribbon runs from drives to CPU, then to the accelerator's PCIe slot, constricting sharply at the GPU input. Raking light from upper left across brushed steel and concrete. Palette graphite, cobalt, safety yellow. Extreme asymmetry: accelerator off-centre right, drives left. No text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements",
+  "rationale": "The article explains how a training feed actually works as a system, and an isometric cutaway can name each part \u2014 drives, cores, accelerator \u2014 while showing the constriction at the GPU. It states the mechanism physically instead of relying on a generic server rack.",
+  "cue": "Cores before drives",
+  "subject": "an isometric cutaway of a GPU workstation showing consumer SSDs, processor cores, and an accelerator with a constricting data ribbon",
+  "core_thesis": "A training accelerator consumes 5.9 GiB/s of steady read, and the measured stall survives even a fully cached dataset, so the next purchase is processor cores, not a faster drive.",
+  "core_conflict": "Storage throughput meets accelerator consumption at a fixed feed rate; capacity and feed are different purchases, and the stall upstream in the decode path decides whether the GPU is busy or starved.",
+  "composition": "extreme asymmetry; accelerator card dominates right third, drives left, data ribbon pulls eye to GPU",
+  "alt_text": "Your GPU Starves At 5.9 Gib/S. Isometric cutaway of a GPU workstation: two SSDs feed a processor and a finned accelerator card through a",
+  "caption": "Your GPU Starves At 5.9 Gib/S: One accelerator needs 5.9 GiB/s of steady read, yet the stall survives a cached dataset.",
+  "title": "Your GPU Starves At 5.9 Gib/S",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-gpu-starves-at-5-9-gibs/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 392530,
+  "sha256": "sha256:aaed1ce8439f6e7b5cfd9af8d428b69c14e79b4ed72218d99d9ba4048d48a3ab",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 392530,
+    "quality": 72,
+    "sha256": "sha256:aaed1ce8439f6e7b5cfd9af8d428b69c14e79b4ed72218d99d9ba4048d48a3ab",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:fb3b8a986d39a4779d21721c41567757f8a4962e21c2650b1fcd70cf223a8036",
+  "render_phash": "7c7879ccf1f6e3bcc3bc8b3c36a434a31da227ac036941b361f7503f683e647d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric view of a computer setup on a metal tabletop: at left a small enclosure holds two copper-topped modules, two flat yellow ribbons run from it across the table to a large finned card standing on a motherboard at right, and between them sits a motherboard with blue slots and a square copper-based processor under a finned heatsink.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "It depicts the article's own chain of storage feeding an accelerator card through a data ribbon with CPU cores in between, matching the feed-rate/starvation mechanism rather than a different industry or generic filler."
+  },
+  "source_hash": "sha256:108556f514cc3f99ed27a4061bca03e3",
+  "source_chars": 4549,
+  "task_id": "a2951a57326ea6b48180159b9cd261bb",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_25c216ddbd583c1c5e9b7cd0849e4293.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Server room workbench. An isometric cutaway of a GPU workstation: two M.2 consumer SSDs with copper heat spreaders sit in a drive cage at left; a central CPU socket with exposed processor cores and a small cooling tower; at right, a full-height accelerator card with dense aluminium fins and polymer shroud. A thin safety-yellow data ribbon runs from drives to CPU, then to the accelerator's PCIe slot, constricting sharply at the GPU input. Raking light from upper left across brushed steel and concrete. Palette graphite, cobalt, safety yellow. Extreme asymmetry: accelerator off-centre right, drives left. No text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-10T19:37:58+00:00",
+  "overlay": {
+    "kicker": "GPU STORAGE FEED // 5.9 GIB/S GAP",
+    "title": "YOUR GPU STARVES AT 5.9 GIB/S",
+    "hook": "One accelerator needs 5.9 GiB/s of steady read, yet the stall survives a cached dataset",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.94,
+    "target": 5.5,
+    "clutter": 0.442,
+    "region_rgb": [
+      104,
+      103,
+      100
+    ],
+    "binding_rgb": [
+      171,
+      170,
+      166
+    ],
+    "title_lines": [
+      "YOUR GPU",
+      "STARVES AT 5.9",
+      "GIB/S"
+    ],
+    "subject": 0.275,
+    "ink_subject": 0.138,
+    "spike": 0.375,
+    "generated_at": "2026-11-10T19:37:58+00:00"
+  }
+}

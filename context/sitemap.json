@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T19:19:33Z",
+  "updated_at": "2026-11-10T19:39:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6351,6 +6351,24 @@
       "date": "2026-11-10",
       "public": true,
       "url": "https://aichieve.net/your-5-gate-breaks-at-261/"
+    },
+    {
+      "slug": "2026-11-10_your-gpu-starves-at-5-9-gibs",
+      "title": "Your GPU Starves: The 5.9 GiB/s Gap",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The feed is a rate",
+        "By the numbers",
+        "Cores before drives",
+        "Where the number stops",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-10",
+      "public": false
     },
     {
       "slug": "2026-11-10_your-meter-bills-from-hourly-rows",

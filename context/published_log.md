@@ -347,6 +347,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-10 | nhil_infrastructure_ops | your-47-day-certificate-trap | Your 47-Day Certificate Trap | https://pressflow.aichieve.net/published/2026-11-10_your-47-day-certificate-trap.md | reader site only |
 | 2026-11-10 | enterprise_tech_leadership | your-pager-caps-at-2-incidents | Your Pager Caps at 2 Incidents a Shift | https://pressflow.aichieve.net/published/2026-11-10_your-pager-caps-at-2-incidents.md | reader site only |
 | 2026-11-10 | smart_home_telemetry | your-meter-bills-from-hourly-rows | Your Meter Bills From Hourly Rows | https://pressflow.aichieve.net/published/2026-11-10_your-meter-bills-from-hourly-rows.md | reader site only |
+| 2026-11-10 | workstation_compute_economics | your-gpu-starves-at-5-9-gibs | Your GPU Starves: The 5.9 GiB/s Gap | https://pressflow.aichieve.net/published/2026-11-10_your-gpu-starves-at-5-9-gibs.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
