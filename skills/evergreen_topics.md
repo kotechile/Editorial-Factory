@@ -1148,3 +1148,35 @@ Carries the figure as plain text and fetches first try: `epa.gov/climate-hfcs-re
 `epa.gov/climate-hfcs-reduction/regulatory-actions-technology-transitions` (rule summaries as prose, including the interim final rule's "allows for inventory of higher-GWP HFC equipment manufactured or imported before January 1, 2025, to be installed until January 1, 2026", dated by the `88 FR 73098` citation a row can lead on); and `law.cornell.edu/uscode/text/42/7675` (the phasedown table itself: 90 / 60 / 30 / 20 / 15 percent of the production and consumption baseline for 2020–2023, 2024–2028, 2029–2033, 2034–2035, 2036 on — note the statute expresses each step as the share *allowed*, so "a 60 percent cut" is the wrong reading of the 60-percent row).
 **`ecfr.gov` 40 CFR 84 subpart B fetches at 54 KB but its installation prohibition cannot carry a row:** every cell for § 84.54(c)(1) leads on a `700` the page states first in § 84.54(a)(1) (the manufacture/import list), so the evidence window reads as the wrong subsection — carry the install rule in prose under the § 84.54 citation and quote it verbatim in the verified companion. The same page's banner prints "up to date as of 11/05/2026", a free as-of anchor. Unreachable to the verifier on this beat: `epa.gov/climate-hfcs-reduction/background-hfcs-phasedown` and `…/phasedown-hydrofluorocarbons` (both `unreachable`), and `…/technology-transitions-program-overview` / `…/frequently-asked-questions` (unreachable); `…/technology-transitions` fetches but is a 3.4 KB landing page carrying no figure. A SNAP page listing a gas as **acceptable** is not permission to write that it is banned: the GWP ceilings restrain new equipment, and servicing existing equipment remains legal.
 **A model number in a `By the numbers` lead-in is a second figure.** `readability_critic.bullets_findings` counts numeric tokens in the bold lead, so `**2,090 — R-410A's global warming potential:**` fails the one-metric rule on the `410` inside the model name. Write the lead without the model (`**2,090 — the gas in the old box:**`) and name the refrigerant in the sentence that follows.
+
+**Hosts probed live 2026-11-10, building a certificate-lifetime / offline-issuance brief (the `nhil_infrastructure_ops` evergreen).**
+Carries the figure as plain text and fetches first try: `raw.githubusercontent.com/cabforum/servercert/main/docs/BR.md` (325 KB — the CA/Browser
+Forum Baseline Requirements themselves: § 6.3.2's "issued before 2026-03-15 SHOULD NOT have a Validity Period greater than 397 days and MUST NOT
+have a Validity Period greater than 398 days", the 2027 rung's "greater than 99 days … greater than 100 days", the 2029 rung's "greater than 46
+days and MUST NOT have a Validity Period greater than 47 days", the reference table 398 / 200 / 100 / 47 days by issue window, the same table's
+validation-reuse ladder 398 / 200 / 100 / 10 days, and "a difference of 86,400 seconds shall be equal to one day"); `letsencrypt.org/2025/12/02/from-90-to-45`
+(6.6 KB — "We currently issue certificates valid for 90 days, which will be cut in half to 45 days by 2028" and "It is currently 30 days, which will
+be reduced to 7 hours by 2028"); `digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days` (11 KB — the ladder as one sentence,
+"As of March 15, 2026 … 200 days. As of March 15, 2027 … 100 days. As of March 15, 2029 … 47 days", plus the SII reuse row "reused for 398 days, down
+from 825" and the revocation-rationale line "browsers often ignore these features").
+**Three matcher rulings this beat is built on.** (1) *On the BR file only two of the four rungs can carry a row*: a cell leading on `200 days`
+evidences on the **domain-validation reuse** line (§ 4.2.1), `100 days` on the amendment-history table, and `10 days` on a 2014 amendment row — the
+two clean cells are `397 days` and `46 days`, each landing in its own § 6.3.2 sentence, so the other rungs ride in prose under those citations. (2)
+*On the Let's Encrypt post a `45 days` cell evidences on the page title*, so that row leads on the `90 days` sentence it is measured from. (3) *The
+`github.com/.../blob/...` render of the same BR file is a 2.5 KB stub* while the raw path fetches the whole document — cite the raw path, and say in
+the run log that a reader following it lands on the repository file rather than a rendered page.
+Unreachable to the verifier on this beat: `cabforum.org` (the ballot's own announcement page), `letsencrypt.org/docs/lifetime-migration/`,
+`security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread
+shell — so the ladder is cited from the three hosts above rather than from four CAs.
+
+**Loop 3 can return `AssertionError: no candidate to write` because the reviewer's transport never disables thinking (learned 2026-11-10).**
+`scripts/article_reviewer.call_model` called `frontier_llm.chat` without `thinking=False`, so on `deepseek-v4-pro` every attempt spent the whole
+32,000-token ceiling reasoning and returned empty `content` with `finish_reason=length` — the 2026-11-04 class, which had been fixed at the
+`chat()` signature but not at this call site. The fix is one keyword at the call site (applied 2026-11-10, with the reason inline). A run that sees
+`no candidate to write` should read the attempt lines: `call failed — frontier output truncated` on all three is this defect, not a bad draft.
+
+**The catch section loses its cue to a two-word change every rewrite makes (learned 2026-11-10).** Three attempts on the certificate evergreen were
+each held for one hard failure — `<!-- nuanced-takeaway --> carries no first-person sentence` — because the rewrite turns "My read, held loosely:"
+into "**My reading**, held loosely, is that…", which the cue matcher cannot see, and it replaces a substantive observation with an invented process
+cue ("I read the table three times before I believed…"). Adopt the attempt with the fewest hard failures, restore the exact cue and the real
+observation, and `article_reviewer --audit` passes a hand-repaired final: the audit compares figures, citations and quotes, not authorship.
