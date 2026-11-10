@@ -1210,3 +1210,29 @@ each held for one hard failure — `<!-- nuanced-takeaway --> carries no first-p
 into "**My reading**, held loosely, is that…", which the cue matcher cannot see, and it replaces a substantive observation with an invented process
 cue ("I read the table three times before I believed…"). Adopt the attempt with the fewest hard failures, restore the exact cue and the real
 observation, and `article_reviewer --audit` passes a hand-repaired final: the audit compares figures, citations and quotes, not authorship.
+
+**Hosts probed live 2026-11-10, building a storage-feed / data-stall brief (the `workstation_compute_economics` evergreen).**
+Carries the figure as plain text and fetches first try: `mlcommons.org/benchmarks/storage/` (31 KB, and the single best
+anchor this desk has found for an I/O-sizing beat — "Keeping a single simulated B200 accelerator at 100% utilization
+requires about 5.9 GiB/s of read bandwidth", the Unet3D pattern "averaging about 140 MiB each, with a wide spread
+(standard deviation ±65 MiB) … read in batches of seven with 4 parallel reader threads", and the validity rule
+"90% for Unet3D, 85% for RetinaNet", each in its own sentence); `arxiv.org/html/2007.06775v3` (Mohan et al., VLDB 2021 —
+124 KB, carrying "DNNs spend upto 65% of the epoch time in data pre-processing", "10 –70% of their epoch time on blocking
+I/O", "3 – 24 CPU cores per GPU for data pre-processing" and the cached-stall sentence "65% and 50% of the epoch time on
+prep stall … when the dataset is entirely cached in memory", which is the load-bearing pair for any "a faster disk will not
+fix it" argument); `docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html` (the gp3 baseline as one sentence);
+`tomshardware.com/reviews/best-ssds,3891.html` (70 KB, "14.5 GB/s of sequential throughput"). Fails or cannot carry a row:
+`crucial.com` product pages (HTTP 403 "Request Rejected"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX
+system guides (`unreachable`), `semiconductor.samsung.com` (11 KB, spec table client-rendered, no MB/s token) and
+`westerndigital.com` (binary body). **Matcher traps here:** a comma-grouped `2,000 MiB/s` or `7,450 MBps` cell tokenises to
+`2`/`000` and `7`/`450`, and both landed in site navigation, so the AWS row ships on `125 MiB/s` and the Torch row on
+`14.5 GB/s` with the per-model figures in prose; and the arXiv paper's `10 –70%` cell evidences on its **table of contents**
+(`10 Conclusion`), so that band rides in prose under the row that leads on `65%`.
+**A unit mismatch is the same recompute trap as a derived percentage (learned 2026-11-10).** The draft read "two fast
+drives cover two cards" from `14,500 MB/s` against `5.9 GiB/s` as if the units matched; converting first, 5.9 GiB/s is
+6,335 MB/s, so one drive covers **2.3 cards** and a four-card box needs two drives. Convert every pair to one unit and
+recompute the ratio in the final, exactly as a percentage is recomputed from its endpoints.
+**Topic-finding heuristic worth reusing:** when a vertical has 8+ published artifacts, list their `one_big_thing:` lines and
+name the *axis of the build decision* nobody has priced (here: memory capacity, chip rungs, adapters, cables and encode
+throughput were all covered; the data feed was not). An uncovered axis is a stronger evergreen lead than another angle on
+a covered one, and it is self-documenting in the brief's de-dup line.
