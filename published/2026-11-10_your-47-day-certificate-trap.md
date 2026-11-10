@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-47-day-certificate-trap/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "Your 47-DAY Certificate Trap. Sealed enclave certificate bay with an outside public clock casting a long shadow across an empty slot"
-image_caption: "Your 47-DAY Certificate Trap: The trap is the renewal rate a 47-day certificate demands of an enclave nobody can visit."
+image_alt: "Sealed enclave certificate bay with an outside public clock casting a long shadow across an empty slot"
+image_caption: "A sealed enclave's internal certificate issuance becomes a capacity decision as the outside public clock's 47-day limit casts its shadow over the renewal bay."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
