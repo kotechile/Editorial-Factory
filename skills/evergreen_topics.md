@@ -96,6 +96,21 @@ self-graded `## Gate report` (the class `article_reviewer.py` was built to repla
 ledger, strips the gate report, and writes `_final.md` only on acceptance; a held run leaves `_held.md` and a
 report in `context/drafts/reviews/`. Run the reviewer, and treat a `humanize_path` final as a draft.
 
+**The accepted rewrite can move a section marker and no gate will notice (learned 2026-11-10).** On
+`your-15-day-entry-gap` the reviewer's accepted attempt kept every figure, both H2s and the earned inline
+link, and still hoisted `<!-- tactical-insight -->` above `## By the numbers`, leaving the tactical section
+itself unmarked — `readability_critic` returned `ok` because it only proves the five markers exist and the
+At-a-glance sits under the lede, not that each marker precedes its own section. Eyeball marker order against
+the body on every accepted rewrite (`grep -n -o '<!-- [a-z-]* -->' <final>` beside `grep -n '^## ' <final>`),
+and move a displaced marker before gating rather than trusting the reviewer.
+
+**The featured-image alt has a 40–140 character ceiling, checked by `illustration_creator.py --check`
+(learned 2026-11-10).** The art director's alt arrives with the headline glued to its front and clipped
+mid-phrase, so it is always rewritten; the first rewrite on this run was 161 characters and the artifact
+check refused it *after* the media had already been patched. Write the sentence, measure it, then patch the
+four surfaces once (`featured.json` sidecar + artifact `image_alt` + media over REST + the Supabase row's
+`metadata.illustration.alt_text` / `metadata.wordpress.media_alt`), and re-run `--check`.
+
 **Three gates read the artifact's shape, not its facts, and all three hold the push (learned 2026-11-10).**
 `check_social_voice.mjs` gates **drafts as well as published copies** (so "you have to…" or a sentence-initial
 "Start with…" in the draft reds `verify.sh`); `article_shape.py` allows a figure in at most two body sections and
