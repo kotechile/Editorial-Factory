@@ -82,6 +82,34 @@ nothing durable to say this week says nothing.
 - a re-argued version of a published article (see the de-dup rule);
 - anything whose honesty depends on a figure you could not fetch.
 
+**Run it on hosts you have already proved fetch — and refuse your own good idea twice (learned 2026-11-10).**
+The `enterprise_tech_leadership` run opened with a stack-lifecycle brief (Kubernetes three minors ≈ one year,
+PostgreSQL five years, .NET three-year LTS, Ubuntu five-year standard) whose four anchors all returned their
+figures on the first probe — and it was dropped before drafting because `published/2026-10-14_your-cluster-hidden-clock`
+(enterprise_build_vs_buy) already argues that exact mechanism, with `2026-10-28_your-runtime-has-six-months` beside it.
+`check_dedup` reads one vertical, so that brief would have PASSed cleanly. Probe the anchors (they are listed above,
+reusable), then grep the whole corpus for the *mechanism* before writing a row — fetchability is not novelty.
+
+**`scripts/humanize_path.py` is not Loop 3 any more (learned 2026-11-10).** It rewrites and then appends a
+self-graded `## Gate report` (the class `article_reviewer.py` was built to replace). The desk's reviewer is
+`python3 scripts/article_reviewer.py --draft <draft>`, which audits the rewrite against the draft's figure
+ledger, strips the gate report, and writes `_final.md` only on acceptance; a held run leaves `_held.md` and a
+report in `context/drafts/reviews/`. Run the reviewer, and treat a `humanize_path` final as a draft.
+
+**Three gates read the artifact's shape, not its facts, and all three hold the push (learned 2026-11-10).**
+`check_social_voice.mjs` gates **drafts as well as published copies** (so "you have to…" or a sentence-initial
+"Start with…" in the draft reds `verify.sh`); `article_shape.py` allows a figure in at most two body sections and
+requires one **inline** site-relative link in the body; and `check_accessibility.py` fails on any undefined ALL-CAPS
+token — `O*NET` reads as `NET`, so name it "the Labor Department's Occupational Information Network" in prose and
+keep the acronym for `## Sources`. Fix these in the draft, before the reviewer runs; they cost three reviewer
+attempts otherwise.
+
+**After the push: the delivery line's "0 internal link(s)" is a false alarm, and a 404 is build lag (learned
+2026-11-10).** `publish.py` verifies the CMS body by absolute URL, so a body carrying site-relative hrefs reports
+zero; read the REST body instead (`/wp-json/wp/v2/posts/<id>` → `content.rendered`, count `href="/…"`). The reader
+front is a periodic build: the new URL answers 404 for minutes (observed 404 → 404 → 200 over ~10 min) before it
+serves its own `<h1>`, hero and link block — poll before reporting a routing defect.
+
 ## 4. Output — the evergreen brief
 
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_evergreen_brief.md` (the name is load-bearing:
