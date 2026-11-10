@@ -1,0 +1,113 @@
+{
+  "slug": "your-pager-caps-at-2-incidents",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An industrial alphanumeric pager rests on a brushed-steel control-room console, its amber status LED the only warm light in shadow.",
+      "caption": "A single pager on a control-room console becomes the whole budget that decides how many services a team can own.",
+      "title": "Pager budget on control room console",
+      "bytes": 257315,
+      "sha256": "sha256:4ea61366997809f55fb490cf768f0872"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "In a control room, a single industrial alphanumeric pager sits on the edge of a brushed-steel console, its small amber status LED glowing, a coiled rubber antenna and worn belt clip catching a hard directional light from upper-left windows, while deep shadow falls across the empty console. 35mm anamorphic wide shot, shallow depth of field, dramatic falloff, charcoal and safety yellow with bone white highlights, extreme asymmetry with the pager on the lower right third, no people, no text, no logos, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermark, signature, logo, UI",
+  "rationale": "A cinematic still captures the decisive operational moment in a control room, using one strong practical light and a single recognizable pager to embody the incident budget. It avoids the generic datacenter trope and the sterile macro lens rule for systemic topics.",
+  "cue": "Your Pager Caps at 2 Incidents a Shift",
+  "subject": "an industrial alphanumeric pager resting on a control-room console in a dark server operations room",
+  "core_thesis": "A 24/7 on-call rotation is a fixed staffing machine where two incidents per 12-hour shift and $392 each become the hard budget constraining how many services a team can own.",
+  "core_conflict": "The fixed incident budget and six-hour cost per incident versus the pressure to onboard more paging services, forcing every new service to draw down finite engineer-hours and payroll.",
+  "composition": "extreme asymmetry with the pager on the lower right third and dark empty console stretching into negative space on the left",
+  "alt_text": "Pager Caps At 2 Incidents A Shift. An industrial alphanumeric pager rests on a brushed-steel control-room console, its amber status LED the",
+  "caption": "Pager Caps At 2 Incidents A Shift: At six hours per incident, the cap decides how many services one team can own.",
+  "title": "Pager Caps At 2 Incidents A Shift",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-pager-caps-at-2-incidents/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 311560,
+  "sha256": "sha256:84be52ebbc389f1cb9a3166797ec848612211f7b4bc03235ab7eced59838f5aa",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 311560,
+    "quality": 88,
+    "sha256": "sha256:84be52ebbc389f1cb9a3166797ec848612211f7b4bc03235ab7eced59838f5aa",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e7ba68e6e89ea7c54c7845bc7455f4aee59f0857e91ae167bf3fc320753a94e6",
+  "render_phash": "f9bbfcbb78fe397f187e6d7e2d1b0fef646b233b21f320e3206732de30bb319b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A beige handheld pager with a metal antenna and a worn leather strap rests on the near edge of a grey control-room console, with blurred instrument panels, screens, and switches behind it and empty dark console surface extending to the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The frame shows the article's own object \u2014 an on-call pager on an operations console \u2014 so a reader would recognize on-call duty, though the generic console and unreadable screen make it illustrate the pager shift rather than the staffing math."
+  },
+  "source_hash": "sha256:d0f82980bcb9484520796f41ed7b678e",
+  "source_chars": 6631,
+  "task_id": "698bc691fd9c95c11906b62a092ee8f0",
+  "credits": 5.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/698bc691fd9c95c11906b62a092ee8f0_1794336450005.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "In a control room, a single industrial alphanumeric pager sits on the edge of a brushed-steel console, its small amber status LED glowing, a coiled rubber antenna and worn belt clip catching a hard directional light from upper-left windows, while deep shadow falls across the empty console. 35mm anamorphic wide shot, shallow depth of field, dramatic falloff, charcoal and safety yellow with bone white highlights, extreme asymmetry with the pager on the lower right third, no people, no text, no logos, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-10T18:47:38+00:00",
+  "overlay": {
+    "kicker": "ENGINEERING ON-CALL // INCIDENT BUDGET",
+    "title": "PAGER CAPS AT 2 INCIDENTS A SHIFT",
+    "hook": "At six hours per incident, the cap decides how many services one team can own",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.51,
+    "target": 5.5,
+    "clutter": 0.295,
+    "region_rgb": [
+      44,
+      46,
+      45
+    ],
+    "binding_rgb": [
+      83,
+      85,
+      80
+    ],
+    "title_lines": [
+      "PAGER CAPS AT 2",
+      "INCIDENTS A",
+      "SHIFT"
+    ],
+    "subject": 0.187,
+    "ink_subject": 0.058,
+    "spike": 0.295,
+    "generated_at": "2026-11-10T18:47:38+00:00"
+  }
+}
