@@ -13,8 +13,8 @@ meta_description: "Two incidents per 12-hour shift is the published ceiling for 
 image_path: "context/assets/illustrations/your-pager-caps-at-2-incidents/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Pager Caps At 2 Incidents A Shift. An industrial alphanumeric pager rests on a brushed-steel control-room console, its amber status LED the"
-image_caption: "Pager Caps At 2 Incidents A Shift: At six hours per incident, the cap decides how many services one team can own."
+image_alt: "An industrial alphanumeric pager with a coiling antenna rests on the polished edge of a brushed-steel control-room console, lit from a window at the upper left."
+image_caption: "A single pager on a control-room console stands in for the budget that decides how many services a team can own."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

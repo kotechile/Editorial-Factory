@@ -9,11 +9,19 @@
       "title": "Pager budget on control room console",
       "bytes": 257315,
       "sha256": "sha256:4ea61366997809f55fb490cf768f0872"
+    },
+    {
+      "revision": 2,
+      "alt_text": "An industrial alphanumeric pager with a coiling antenna rests on the polished edge of a brushed-steel control-room console, lit from a window at the upper left.",
+      "caption": "A single pager on a control-room console stands in for the budget that decides how many services a team can own.",
+      "title": "Pager on a control-room console",
+      "reason": "alt rewritten: the overlay headline had been glued to its front and truncated",
+      "at": "2026-11-10T18:51:20+00:00"
     }
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,8 +35,8 @@
   "core_thesis": "A 24/7 on-call rotation is a fixed staffing machine where two incidents per 12-hour shift and $392 each become the hard budget constraining how many services a team can own.",
   "core_conflict": "The fixed incident budget and six-hour cost per incident versus the pressure to onboard more paging services, forcing every new service to draw down finite engineer-hours and payroll.",
   "composition": "extreme asymmetry with the pager on the lower right third and dark empty console stretching into negative space on the left",
-  "alt_text": "Pager Caps At 2 Incidents A Shift. An industrial alphanumeric pager rests on a brushed-steel control-room console, its amber status LED the",
-  "caption": "Pager Caps At 2 Incidents A Shift: At six hours per incident, the cap decides how many services one team can own.",
+  "alt_text": "An industrial alphanumeric pager with a coiling antenna rests on the polished edge of a brushed-steel control-room console, lit from a window at the upper left.",
+  "caption": "A single pager on a control-room console stands in for the budget that decides how many services a team can own.",
   "title": "Pager Caps At 2 Incidents A Shift",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -63,7 +71,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.72,
-    "reason": "The frame shows the article's own object \u2014 an on-call pager on an operations console \u2014 so a reader would recognize on-call duty, though the generic console and unreadable screen make it illustrate the pager shift rather than the staffing math."
+    "reason": "The frame shows the article's own object — an on-call pager on an operations console — so a reader would recognize on-call duty, though the generic console and unreadable screen make it illustrate the pager shift rather than the staffing math."
   },
   "source_hash": "sha256:d0f82980bcb9484520796f41ed7b678e",
   "source_chars": 6631,
