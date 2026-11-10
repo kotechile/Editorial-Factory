@@ -11,7 +11,7 @@ slug: your-15-day-entry-gap
 image_path: "context/assets/illustrations/your-15-day-entry-gap/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "15-DAY Entry Gap Then Custody. Weathered shipping container isolated behind chain-link customs hold fence at a container terminal under low"
+image_alt: "A weathered shipping container behind a chain-link customs fence on a container terminal, with gantry cranes and stacked boxes in low light."
 image_caption: "15-DAY Entry Gap Then Custody: Miss the 15-day entry deadline and the freight enters Customs custody, risk and expense."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
