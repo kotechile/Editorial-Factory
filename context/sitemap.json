@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T18:49:03Z",
+  "updated_at": "2026-11-10T19:16:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6347,6 +6347,24 @@
         "Related reading"
       ],
       "target_persona": "evals_infra_eng",
+      "date": "2026-11-10",
+      "public": false
+    },
+    {
+      "slug": "2026-11-10_your-meter-bills-from-hourly-rows",
+      "title": "Your Meter Bills From Hourly Rows",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "A meter built to settle bills",
+        "By the numbers",
+        "What the free file settles",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-10",
       "public": false
     },

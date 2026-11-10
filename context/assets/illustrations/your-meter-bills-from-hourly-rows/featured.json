@@ -1,0 +1,115 @@
+{
+  "slug": "your-meter-bills-from-hourly-rows",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Unmarked smart utility meter on a garage wall with a detached clamp current transformer on the concrete floor below, raking side light.",
+      "caption": "The meter's hourly rows answer seasonal cost; the clamp only adds circuit names.",
+      "title": "Meter and Clamp in Garage",
+      "bytes": 368349,
+      "sha256": "sha256:403cf0a254005fe33ea82d4efed913e7"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Matte clay 3D render of a small mechanical assembly on a weathered concrete garage floor. A wall-mounted advanced utility meter housing with a round glass dome and a blank unmarked face, below it a detached current-transformer clamp with open jaws and a short coiled wire. The meter body has a row of tiny raised dots around its rim representing hourly intervals. One directional key light from the left rakes across the matte surfaces, throwing long contact shadows. Palette: bone white, graphite, deep pine green. Asymmetrical composition with the meter off-centre left and the clamp lower right, generous negative space. No text, no numerals, no display, no labels, no markings.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI elements, numerals",
+  "rationale": "A clay render builds the two competing instruments as a small physical assembly, making the hourly-row meter and circuit-level clamp legible without any screen text that could turn to rubble. It avoids the rejected photorealism and lettering problem by using matte, unmarked surfaces. The treatment also allows a split arrangement that states the dual nature of the two tools without needing labels.",
+  "cue": "Your meter bills from hourly rows",
+  "subject": "An unmarked wall-mounted advanced utility meter with a sealed round glass dome and a detached current-transformer clamp on the garage floor beneath it.",
+  "core_thesis": "The advanced meter on the wall already logs the house hour by hour and hands that record back at least once a day, so the free file settles seasonal cost while the only things a panel clamp adds are a finer sample rate and the name of the circuit.",
+  "core_conflict": "The free utility meter file answers cost and trend questions at hourly resolution but cannot identify which circuit drew power; a panel clamp provides that circuit-level granularity, forcing owners to choose between free coarse data and purchased fine-grained monitoring.",
+  "composition": "extreme asymmetry with meter upper-left and clamp lower-right, raking light diagonal",
+  "alt_text": "Your Meter Bills From Hourly Rows. Unmarked smart utility meter on a garage wall with a detached clamp current transformer on the concrete",
+  "caption": "Your Meter Bills From Hourly Rows: Your free hourly file settles seasonal cost while a panel clamp only adds circuit names.",
+  "title": "Your Meter Bills From Hourly Rows",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-meter-bills-from-hourly-rows/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407857,
+  "sha256": "sha256:64a17dc5b22c09921cd0c4340e7490b07731d7ba7d55041cc42a7a965046e7c8",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407857,
+    "quality": 80,
+    "sha256": "sha256:64a17dc5b22c09921cd0c4340e7490b07731d7ba7d55041cc42a7a965046e7c8",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:7877d064ce16ddbe155ee32caefd93c7e0630bbdda170d831dcd82738e900e2c",
+  "render_phash": "bbc6ba167e3e7e7f6e755c316d397c736cefc9ff68d77a537671ec646df37bf3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small glass-domed device mounted on a white bracket attached to a concrete wall at upper left, with a coiled cable below it and a green plastic block with prongs lying on the cracked concrete floor at lower right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The frame shows a wall-mounted metering device with a sealed round dome and a separate clamp-like sensor on the floor, which is the article's own object pair (advanced meter vs. add-on clamp), though the clamp reads as an ambiguous green block and the meter looks more vintage than advanced."
+  },
+  "source_hash": "sha256:d884fdbfe3a0086bd811f55cecfbc7f5",
+  "source_chars": 4820,
+  "task_id": "993f44aab6c056e1efb63e896982f10d",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_37b8bcf8ec4cda60a376323e9e484e7f.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Matte clay 3D render of a small mechanical assembly on a weathered concrete garage floor. A wall-mounted advanced utility meter housing with a round glass dome and a blank unmarked face, below it a detached current-transformer clamp with open jaws and a short coiled wire. The meter body has a row of tiny raised dots around its rim representing hourly intervals. One directional key light from the left rakes across the matte surfaces, throwing long contact shadows. Palette: bone white, graphite, deep pine green. Asymmetrical composition with the meter off-centre left and the clamp lower right, generous negative space. No text, no numerals, no display, no labels, no markings.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-10T19:15:32+00:00",
+  "overlay": {
+    "kicker": "SMART METER HOURLY DATA",
+    "title": "YOUR METER BILLS FROM HOURLY ROWS",
+    "hook": "Your free hourly file settles seasonal cost while a panel clamp only adds circuit names",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.92,
+    "target": 4.5,
+    "clutter": 0.109,
+    "region_rgb": [
+      70,
+      64,
+      55
+    ],
+    "binding_rgb": [
+      84,
+      80,
+      71
+    ],
+    "title_lines": [
+      "YOUR METER",
+      "BILLS FROM",
+      "HOURLY ROWS"
+    ],
+    "subject": 0.139,
+    "ink_subject": 0.018,
+    "spike": 0.105,
+    "generated_at": "2026-11-10T19:15:32+00:00"
+  }
+}
