@@ -473,3 +473,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-09 | `your-pmi-ends-at-78-not-todays-value` | home_equity_tco | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-pmi-ends-at-78-not-todays-value/featured.jpg` |
 | 2026-11-09 | `your-condensers-repair-bill-2090-vs-700` | home_infrastructure_lifecycle_tco | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-condensers-repair-bill-2090-vs-700/featured.jpg` |
 | 2026-11-10 | `your-5-gate-breaks-at-261` | ai_observability_qa | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-5-gate-breaks-at-261/featured.jpg` |
+| 2026-11-10 | `your-47-day-certificate-trap` | nhil_infrastructure_ops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-47-day-certificate-trap/featured.jpg` |

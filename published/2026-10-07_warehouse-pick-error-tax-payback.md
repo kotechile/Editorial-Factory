@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/warehouse-pick-error-tax-payback/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Massive modern fulfillment center illuminated at dusk with glowing loading bays."
-image_caption: "At consumer-scale volumes, a single percentage point in picking errors multiplies into a massive financial leak."
+image_alt: "1% Mispick Rate Is A Seven-Figure Line Item. Massive modern fulfillment center illuminated at dusk with glowing loading bays."
+image_caption: "1% Mispick Rate Is A Seven-Figure Line Item: A single wrong pick looks like a rounding error until a team prices the annual leak."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -12,8 +12,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/vendor-replacement-ai-ceiling/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "A solitary operations desk glowing amber inside a darkened glass-walled data facility at dusk."
-image_caption: "While building internal tools with AI has become trivial, the responsibility of maintaining live systems overnight remains a high-stakes burden."
+image_alt: "The Vendor-Replacement Wave Is Real — AI Just. A solitary operations desk glowing amber inside a darkened glass-walled data facility at"
+image_caption: "The Vendor-Replacement Wave Is Real — AI Just: Developers are rushing to write software that replaces paid tools, but barely half."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

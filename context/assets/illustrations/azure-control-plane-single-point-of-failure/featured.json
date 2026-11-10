@@ -1,6 +1,6 @@
 {
   "slug": "azure-control-plane-single-point-of-failure",
-  "revision": 19,
+  "revision": 20,
   "history": [
     {
       "revision": 1,
@@ -146,6 +146,14 @@
     },
     {
       "revision": 18,
+      "alt_text": "Azure Control Plane Failure. Multiple brightly lit architectural corridors converging into a single dark, shadow-cast stone m",
+      "caption": "Azure Control Plane Failure: Multi-region setups don't fix shared control plane flaws.",
+      "title": "Azure Control Plane Failure",
+      "bytes": 380002,
+      "sha256": "sha256:102e55b602c7dff3ccaec1f6aed952333a71cfb29f74b2201b66ea18e770e470"
+    },
+    {
+      "revision": 19,
       "alt_text": "Azure Control Plane Failure. Multiple brightly lit architectural corridors converging into a single dark, shadow-cast stone m",
       "caption": "Azure Control Plane Failure: Multi-region setups don't fix shared control plane flaws.",
       "title": "Azure Control Plane Failure",

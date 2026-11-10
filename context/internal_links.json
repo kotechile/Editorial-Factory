@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T14:22:05+00:00",
+  "generated_at": "2026-11-10T14:21:28+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -3386,6 +3386,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-condensers-repair-bill-2090-vs-700",
+      "title": "2,090 vs 700: Your Condenser's Repair Bill",
+      "url": "https://wellroost.com/your-condensers-repair-bill-2090-vs-700/",
+      "path": "/your-condensers-repair-bill-2090-vs-700/",
+      "sites_live": {
+        "wellroost.com": "/your-condensers-repair-bill-2090-vs-700/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "A failed compressor puts three prices on your condenser's repair bill: the part, the labour, and the gas. The gas is the one that decides what the next\u2026",
+      "modified": "2026-11-09T19:26:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-connection-slips-six-months",
       "title": "25,000 Hookups Stuck Six Months",
       "url": "https://wellroost.com/your-connection-slips-six-months/",
@@ -3770,6 +3793,29 @@
       ],
       "excerpt": "Your pack delivers about half its rated capacity at -18\u00b0C, and the shortfall comes from the cold cells rather than the machine.",
       "modified": "2026-10-31T19:16:56",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-pmi-ends-at-78-not-todays-value",
+      "title": "Your PMI Ends at 78%: Not Your Equity",
+      "url": "https://wellroost.com/your-pmi-ends-at-78-not-todays-value/",
+      "path": "/your-pmi-ends-at-78-not-todays-value/",
+      "sites_live": {
+        "wellroost.com": "/your-pmi-ends-at-78-not-todays-value/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Private mortgage insurance ends on a calendar set by the loan you signed: 80 percent of the original price on request, 78 percent on the schedule.",
+      "modified": "2026-11-09T19:18:51",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7806,6 +7852,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-agent-recovers-8-of-crashes",
+      "title": "Your Agent Recovers 8% of Crashes",
+      "url": "https://aichieve.net/your-agent-recovers-8-of-crashes/",
+      "path": "/your-agent-recovers-8-of-crashes/",
+      "sites_live": {
+        "aichieve.net": "/your-agent-recovers-8-of-crashes/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your agent recovers 8% of crashes when the runtime rebuilds it from the chat log alone. That log holds what the model said, not what its tools changed on the\u2026",
+      "modified": "2026-11-09T17:47:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-agent-team-loses-28-points",
       "title": "Your Agent Team Loses 28 Points: The 188x Bill",
       "url": "https://aichieve.net/your-agent-team-loses-28-points/",
@@ -8443,6 +8512,29 @@
       ],
       "excerpt": "The share of purchase orders arriving on time and in full (OTIF) fell to 63.6% in the third quarter, and the loss came from missing units rather than late\u2026",
       "modified": "2026-10-31T04:48:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-index-is-the-boundary",
+      "title": "92% Trap: Your Index Is a Copy",
+      "url": "https://aichieve.net/your-index-is-the-boundary/",
+      "path": "/your-index-is-the-boundary/",
+      "sites_live": {
+        "aichieve.net": "/your-index-is-the-boundary/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "An embedding is not a fingerprint: 92% of a 32-token chunk comes back from its vector alone, so the index, not the query filter, is the access boundary.",
+      "modified": "2026-11-09T18:20:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9230,6 +9322,34 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1576,
+      "slug": "your-index-is-the-boundary",
+      "title": "92% Trap: Your Index Is a Copy",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-09T18:20:08",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1574,
+      "slug": "your-agent-recovers-8-of-crashes",
+      "title": "Your Agent Recovers 8% of Crashes",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-09T17:47:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10347,34 +10467,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:16",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1183,
-      "slug": "your-49-cut-was-actually-9",
-      "title": "Your 49% Cut Was Actually 9%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:16",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1180,
-      "slug": "agent-identity-missed-the-real-breach",
-      "title": "Agent Identity: The Wrong Layer",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:17",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

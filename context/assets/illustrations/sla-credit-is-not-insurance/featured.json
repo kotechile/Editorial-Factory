@@ -1,6 +1,6 @@
 {
   "slug": "sla-credit-is-not-insurance",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -29,6 +29,14 @@
       "title": "Data Center Outage SLA",
       "bytes": 443213,
       "sha256": "sha256:1af48e696aea5de471fdb010802ca56e"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise",
+      "caption": "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses.",
+      "title": "Cloud Uptime SLAs Are Not Insurance",
+      "bytes": 407618,
+      "sha256": "sha256:ce3a5663723436a569721fcf5ff8d1f30439edfa421a31e01246ddd7017a2529"
     }
   ],
   "style": "cinematic_still",

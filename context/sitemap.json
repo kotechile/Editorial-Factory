@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T17:56:45Z",
+  "updated_at": "2026-11-10T18:15:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6313,6 +6313,24 @@
       "date": "2026-11-09",
       "public": true,
       "url": "https://aichieve.net/your-stock-is-the-cheaper-memory/"
+    },
+    {
+      "slug": "2026-11-10_your-47-day-certificate-trap",
+      "title": "Your 47-Day Certificate Trap",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "A public clock, a sealed estate",
+        "By the numbers",
+        "What to build before 2027",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-10",
+      "public": false
     },
     {
       "slug": "2026-11-10_your-5-gate-breaks-at-261",

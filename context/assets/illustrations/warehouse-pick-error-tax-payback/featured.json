@@ -1,7 +1,16 @@
 {
   "slug": "warehouse-pick-error-tax-payback",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
+      "caption": "At consumer-scale volumes, a single percentage point in picking errors multiplies into a massive financial leak.",
+      "title": "warehouse-accuracy-capital-cost",
+      "bytes": 294745,
+      "sha256": "sha256:566cec3af93f6082cccf1356e9edcecc"
+    }
+  ],
   "style": "architectural_night",
   "style_label": "Lit architecture at dusk",
   "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
@@ -15,9 +24,9 @@
   "rationale": "This architectural night treatment emphasizes the monumental scale of modern fulfillment operations running around the clock, where consumer-scale volumes turn a tiny operational slip into a million-dollar leak.",
   "cue": "consumer-scale volumes",
   "subject": "massive modern warehouse fulfillment center with glowing loading bays",
-  "alt_text": "Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
-  "caption": "At consumer-scale volumes, a single percentage point in picking errors multiplies into a massive financial leak.",
-  "title": "warehouse-accuracy-capital-cost",
+  "alt_text": "1% Mispick Rate Is A Seven-Figure Line Item. Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
+  "caption": "1% Mispick Rate Is A Seven-Figure Line Item: A single wrong pick looks like a rounding error until a team prices the annual leak.",
+  "title": "1% Mispick Rate Is A Seven-Figure Line Item",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +36,8 @@
   "local_path": "context/assets/illustrations/warehouse-pick-error-tax-payback/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 294745,
-  "sha256": "sha256:566cec3af93f6082cccf1356e9edcecc",
+  "bytes": 359749,
+  "sha256": "sha256:6429b17a1d2d9e29a18954597aa235d61693b31f4fe01ab8123d70ee382aa609",
   "source_hash": "sha256:0caddd972cd3b4954e37f8e203ed19a2",
   "source_chars": 3884,
   "task_id": "42782ca0a1c4e61677742018fe9ac0b8",
@@ -43,5 +52,48 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-07T19:39:36+00:00"
+  "generated_at": "2026-10-07T19:39:36+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 359749,
+    "quality": 88,
+    "sha256": "sha256:6429b17a1d2d9e29a18954597aa235d61693b31f4fe01ab8123d70ee382aa609",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "WAREHOUSE AUTOMATION PICKING ERROR COST",
+    "title": "1% MISPICK RATE IS A SEVEN-FIGURE LINE ITEM",
+    "hook": "A single wrong pick looks like a rounding error until a team prices the annual leak",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.78,
+    "target": 4.5,
+    "clutter": 0.204,
+    "region_rgb": [
+      15,
+      88,
+      138
+    ],
+    "binding_rgb": [
+      20,
+      123,
+      192
+    ],
+    "title_lines": [
+      "1% MISPICK RATE",
+      "IS A SEVEN-FIGURE",
+      "LINE ITEM"
+    ],
+    "subject": 0.112,
+    "ink_subject": 0.061,
+    "spike": 0.181,
+    "generated_at": "2026-10-07T19:39:36+00:00"
+  }
 }

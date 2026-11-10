@@ -1,6 +1,6 @@
 {
   "slug": "kv-cache-is-the-concurrency-ceiling",
-  "revision": 24,
+  "revision": 25,
   "history": [
     {
       "revision": 1,
@@ -196,6 +196,14 @@
     },
     {
       "revision": 23,
+      "alt_text": "The KV Cache Bottleneck. The KV Cache Bottleneck. The KV Cache Bottleneck. A heavy machined aluminum bay divided into precise",
+      "caption": "The KV Cache Bottleneck: Why LLMs run out of memory before they run out of math.",
+      "title": "The KV Cache Bottleneck",
+      "bytes": 396293,
+      "sha256": "sha256:5c9fb0f4607229abbb946a999b4b02e7bfbeb2f9813fa55a206b352189b245e6"
+    },
+    {
+      "revision": 24,
       "alt_text": "The KV Cache Bottleneck. The KV Cache Bottleneck. The KV Cache Bottleneck. A heavy machined aluminum bay divided into precise",
       "caption": "The KV Cache Bottleneck: Why LLMs run out of memory before they run out of math.",
       "title": "The KV Cache Bottleneck",

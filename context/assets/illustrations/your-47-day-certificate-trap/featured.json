@@ -1,0 +1,115 @@
+{
+  "slug": "your-47-day-certificate-trap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Sealed enclave certificate bay with an outside public clock casting a long shadow across an empty slot",
+      "caption": "A sealed enclave's internal certificate issuance becomes a capacity decision as the outside public clock's 47-day limit casts its shadow over the renewal bay.",
+      "title": "Sealed Enclave Certificate Bay and Public Clock",
+      "bytes": 358491,
+      "sha256": "sha256:d17c6642ad4b99bc36104206f49f92b6"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist component assembly on a concrete floor in a server room: a sealed enclave's modular certificate bay, a latched inspection gate, and a heavy public clock with a blank face mounted on an outside bracket; the clock casts a long raking shadow across an empty certificate slot. One directional key light from upper left, hard clean edges, matte graphite, oxidised red and bone white palette, brushed steel and weathered concrete, asymmetric off-centre framing with long cast shadow, generous negative space, no text, no lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numerals",
+  "rationale": "The story is a structural shift with no single photographable facility; component_assembly states the external clock imposing a renewal rate on a sealed internal issuance bay through a restrained mechanical composition.",
+  "cue": "Your 47-Day Certificate Trap",
+  "subject": "a sealed enclave's modular certificate bay shadowed by an outside public clock",
+  "core_thesis": "A sealed enclave's certificate renewal rate is set by an outside calendar, so unattended issuance inside the fence is a capacity decision, not a housekeeping one.",
+  "core_conflict": "Public certificate lifetime compression to 47 days versus an air-gapped enclave that cannot reach a public CA, forcing internal unattended issuance capacity.",
+  "composition": "asymmetric off-centre framing, clock upper left, certificate bay lower right, long cast shadow dividing the frame",
+  "alt_text": "Your 47-DAY Certificate Trap. Sealed enclave certificate bay with an outside public clock casting a long shadow across an empty slot",
+  "caption": "Your 47-DAY Certificate Trap: The trap is the renewal rate a 47-day certificate demands of an enclave nobody can visit.",
+  "title": "Your 47-DAY Certificate Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-47-day-certificate-trap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 379646,
+  "sha256": "sha256:7877fcd67b08e9983e26bcacc2285951f6880c82be8993c36a7c53822bdc632d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 379646,
+    "quality": 84,
+    "sha256": "sha256:7877fcd67b08e9983e26bcacc2285951f6880c82be8993c36a7c53822bdc632d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f1dc15df7c03c39354e4d69b45fdb6b759ab620611f194f6528638130138209e",
+  "render_phash": "dd060d06258627860d860d860c960c1e040e850ec6ce40963096309600960c96",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A blank-faced clock with tick marks mounted on a wall above a row of metal cabinet modules, one of which has an open red door, with a long shadow cast across the room.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The image literalizes the article's mechanism of a sealed modular enclave whose renewal schedule is governed by an outside clock."
+  },
+  "source_hash": "sha256:c8c245e9b1ba895d91f4bc7b4560e11d",
+  "source_chars": 5014,
+  "task_id": "7f829a602f231198bc81981c88623cbd",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_0501477561023698708f288fb0d7ac95.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist component assembly on a concrete floor in a server room: a sealed enclave's modular certificate bay, a latched inspection gate, and a heavy public clock with a blank face mounted on an outside bracket; the clock casts a long raking shadow across an empty certificate slot. One directional key light from upper left, hard clean edges, matte graphite, oxidised red and bone white palette, brushed steel and weathered concrete, asymmetric off-centre framing with long cast shadow, generous negative space, no text, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-10T18:14:46+00:00",
+  "overlay": {
+    "kicker": "PUBLIC CERTIFICATE LIFECYCLE // AIR-GAPPED OPS",
+    "title": "YOUR 47-DAY CERTIFICATE TRAP",
+    "hook": "The trap is the renewal rate a 47-day certificate demands of an enclave nobody can visit",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 7.36,
+    "target": 4.5,
+    "clutter": 0.235,
+    "region_rgb": [
+      47,
+      47,
+      42
+    ],
+    "binding_rgb": [
+      76,
+      77,
+      72
+    ],
+    "title_lines": [
+      "YOUR 47-DAY",
+      "CERTIFICATE",
+      "TRAP"
+    ],
+    "subject": 0.093,
+    "ink_subject": 0.016,
+    "spike": 0.11,
+    "generated_at": "2026-11-10T18:14:46+00:00"
+  }
+}

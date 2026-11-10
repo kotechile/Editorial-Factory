@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-poisoning-write-path",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -86,6 +86,14 @@
     },
     {
       "revision": 10,
+      "alt_text": "Agent Memory Poisoning. Agent Memory Poisoning: Guard the write path \u2014 not the prompt. Monolithic vault divided by a razor-thin blade of",
+      "caption": "Agent Memory Poisoning: One text file can take over a coding agent's memory.",
+      "title": "Agent Memory Poisoning",
+      "bytes": 373929,
+      "sha256": "sha256:2eeb65ea8c5283fd40cb95c407b8fe2984c42ea3ce39b352c7a5dcc63a7a3b8c"
+    },
+    {
+      "revision": 11,
       "alt_text": "Agent Memory Poisoning. Agent Memory Poisoning: Guard the write path \u2014 not the prompt. Monolithic vault divided by a razor-thin blade of",
       "caption": "Agent Memory Poisoning: One text file can take over a coding agent's memory.",
       "title": "Agent Memory Poisoning",

@@ -74,8 +74,13 @@ SKELETON = ("## At a glance", "## The big picture:", "## By the numbers", "## Wh
 def call_model(prompt: str, *, model: str = MODEL, timeout: int = TIMEOUT,
                max_tokens: int = MAX_TOKENS, temperature: float = 0.7) -> str:
     import frontier_llm
+    # `thinking=False` is load-bearing on deepseek-v4-pro: the rewrite prompt (rules + a ~900-word
+    # draft) burns the whole 32,000-token ceiling on reasoning and returns empty content with
+    # finish_reason=length (2026-11-04, and again on 2026-11-10 — every attempt failed this way
+    # until the flag was passed). The reasoning pass is unbounded in practice; the visible answer
+    # is what this stage needs.
     return frontier_llm.chat(prompt, model=model, max_tokens=max_tokens,
-                             temperature=temperature, timeout=timeout)
+                             temperature=temperature, timeout=timeout, thinking=False)
 
 
 # -------------------------------------------------------------------------------------- the brief
