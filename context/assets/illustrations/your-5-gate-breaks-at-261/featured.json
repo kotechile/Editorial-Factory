@@ -1,0 +1,112 @@
+{
+  "slug": "your-5-gate-breaks-at-261",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A row of industrial inspection gates in a data hall, one propped ajar by a yellow stop-wedge.",
+      "caption": "A gate's false-positive rate is set by how many times you look, not by the threshold you set.",
+      "title": "One open gate among many closed",
+      "bytes": 298853,
+      "sha256": "sha256:5e73d7544b7806b88e60c66d14a8b706"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression in a data hall: a row of identical brushed-steel inspection gates recede along a concrete floor, one gate on the right third propped ajar by a yellow stop-wedge, the other gates closed. Hard directional worklight from the left rakes across the metal, graphite and safety yellow against bone white walls, deep contact shadows, asymmetric off-centre framing, fine film grain, no text, no logos, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numbers, logos, UI elements",
+  "rationale": "Compressed telephoto of repeated identical gates conveys the scale of many looks and the one false opening, without resorting to software UI or plumbing.",
+  "cue": "Your 5% Gate Breaks at 26.1%",
+  "subject": "an industrial inspection gate in a data hall, one of a row, propped ajar by a yellow stop-wedge",
+  "core_thesis": "A gate's false-positive rate is set by how many times you look, not by the threshold you set, so early stopping requires an interval valid at every look or a fixed horizon.",
+  "core_conflict": "The tension between continuous monitoring's temptation to stop on success and the fixed-sample statistical guarantee that only holds for one look.",
+  "composition": "asymmetric off-centre framing with telephoto compression, one open gate on right third, closed gates receding left",
+  "alt_text": "Your 5% Gate Breaks At 26.1%. A row of industrial inspection gates in a data hall, one propped ajar by a yellow stop-wedge.",
+  "caption": "Your 5% Gate Breaks At 26.1%: Reading after every case turns a 5% gate into a 26.1% false-positive rate.",
+  "title": "Your 5% Gate Breaks At 26.1%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-5-gate-breaks-at-261/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 354174,
+  "sha256": "sha256:46672d838ebd1c9431e0c578d9c174d66d6bf9679f8ed4c79a6b3b3708f5b951",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 354174,
+    "quality": 88,
+    "sha256": "sha256:46672d838ebd1c9431e0c578d9c174d66d6bf9679f8ed4c79a6b3b3708f5b951",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a6d0e062ba8d12543d1fd01b00c1b0d9f192371381b6b42b51578c779644099b",
+  "render_phash": "2b737b337e036d03730b731bf55bc45bf45bdc5b6e5b625b00db0169206b787b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A long row of grey metal server-rack doors recedes in telephoto compression along a polished concrete aisle, while the nearest door on the right third of the frame stands propped open against a yellow wedge-shaped stop on the floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The image literalises the article's own object \u2014 a gate \u2014 in a compute/data-hall setting and shows it propped ajar and failing to hold, which matches the headline's claim that the 5% gate breaks; the pun is legible to a reader who arrives via the word 'gate' in the headline, though the statistical mechanism itself (repeated looks, 26.1%) is not depictable and is carried only by the metaphor."
+  },
+  "source_hash": "sha256:d443dd67751b7f832c628b1654b323dc",
+  "source_chars": 5006,
+  "task_id": "46399ef4eee706b9e90095c8bdac8b0b",
+  "credits": 5.0,
+  "cost_ms": 136,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/46399ef4eee706b9e90095c8bdac8b0b_1794333343938.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression in a data hall: a row of identical brushed-steel inspection gates recede along a concrete floor, one gate on the right third propped ajar by a yellow stop-wedge, the other gates closed. Hard directional worklight from the left rakes across the metal, graphite and safety yellow against bone white walls, deep contact shadows, asymmetric off-centre framing, fine film grain, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-10T17:55:53+00:00",
+  "overlay": {
+    "kicker": "AI EVAL GATES // EARLY STOPPING",
+    "title": "YOUR 5% GATE BREAKS AT 26.1%",
+    "hook": "Reading after every case turns a 5% gate into a 26.1% false-positive rate",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.91,
+    "target": 4.5,
+    "clutter": 0.194,
+    "region_rgb": [
+      73,
+      75,
+      75
+    ],
+    "binding_rgb": [
+      107,
+      109,
+      108
+    ],
+    "title_lines": [
+      "YOUR 5% GATE",
+      "BREAKS AT 26.1%"
+    ],
+    "subject": 0.225,
+    "ink_subject": 0.115,
+    "spike": 0.285,
+    "generated_at": "2026-11-10T17:55:53+00:00"
+  }
+}

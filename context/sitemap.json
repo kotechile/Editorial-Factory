@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T19:24:06Z",
+  "updated_at": "2026-11-10T17:56:45Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6159,7 +6159,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-recovers-8-of-crashes/"
     },
     {
       "slug": "2026-11-09_your-condensers-repair-bill-2090-vs-700",
@@ -6177,7 +6178,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-condensers-repair-bill-2090-vs-700/"
     },
     {
       "slug": "2026-11-09_your-detector-misses-22-of-60",
@@ -6252,7 +6254,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-index-is-the-boundary/"
     },
     {
       "slug": "2026-11-09_your-oil-heat-619-one-day-of-relief",
@@ -6289,7 +6292,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-09",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-pmi-ends-at-78-not-todays-value/"
     },
     {
       "slug": "2026-11-09_your-stock-is-the-cheaper-memory",
@@ -6309,6 +6313,24 @@
       "date": "2026-11-09",
       "public": true,
       "url": "https://aichieve.net/your-stock-is-the-cheaper-memory/"
+    },
+    {
+      "slug": "2026-11-10_your-5-gate-breaks-at-261",
+      "title": "Your 5% Gate Breaks at 26.1%",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the fifth look differs",
+        "By the numbers",
+        "Where this lands in a harness",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-11-10",
+      "public": false
     }
   ]
 }
