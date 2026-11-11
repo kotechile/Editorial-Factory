@@ -12,6 +12,12 @@ meta_title: "Your Agent Says Done: 40 of 66 Without Proof"
 meta_title_source: "derived_from_title"
 meta_description: "A model-driven agent loop called 40 of 66 held-out task clusters finished, and in each case the trace behind the answer did not support the claim."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-agent-says-done-40-of-66/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "A typed completion receipt held flat by a steel ruler beside an empty paper checklist on a scratched control-room desk."
+image_caption: "A typed receipt ties every answer claim to trace evidence; the checklist beside it only says the run is finished."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

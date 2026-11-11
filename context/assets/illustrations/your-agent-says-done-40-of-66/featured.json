@@ -1,0 +1,115 @@
+{
+  "slug": "your-agent-says-done-40-of-66",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Typed completion receipt beside an unsupported checklist on a control-room desk, contrasting proof with unsupported done.",
+      "caption": "A typed receipt ties each answer claim to trace evidence while a cheap checklist declares completion without support.",
+      "title": "Agent Exit: Receipt Versus Checklist",
+      "bytes": 391373,
+      "sha256": "sha256:8cf1d0e78a6a3905ab8a035d8343cf08"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A typed completion receipt held flat by a steel ruler beside an empty paper checklist on a scratched control-room desk.",
+      "caption": "A typed receipt ties every answer claim to trace evidence; the checklist beside it only says the run is finished.",
+      "reason": "headline-glued, clipped alt replaced by hand (140-char ceiling)"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph of a control room desk composed as a split-screen diptych: left half holds a cheap paper checklist with empty unchecked boxes, slightly rotated; right half holds a long typed completion receipt with perforated edges, one steel ruler holding it flat. Diffused daylight from above, graphite and bone white with a safety-yellow accent, worn steel desk and paper. 50mm flat overhead, sharp across the frame, fine film grain, generous negative space, no people, no legible text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, illegible handwriting",
+  "rationale": "The story turns on two competing paper artefacts\u2014an unsupported completion checklist and a typed evidence receipt\u2014so an overhead document still life puts the proof boundary in the frame without falling into another datacenter clich\u00e9. The treatment's muted paper tones and diffused daylight carry the audit-like tension exactly.",
+  "cue": "Your Agent Says Done: 40 of 66 Without Proof",
+  "subject": "typed completion receipt beside an unsupported checklist on a control room desk",
+  "core_thesis": "An agent run's exit is a claim about evidence, not a state the model can report; a receipt that ties each answer claim to trace evidence declares none unsupported, at no cost in supported completions, so the receipt belongs at the boundary and the step cap belongs only at the fuse.",
+  "core_conflict": "unsupported done token, checklist, or critic plausibility versus a typed receipt tied to observable trace evidence at the run boundary",
+  "composition": "split-screen diptych with left-right scenario contrast, overhead 90-degree flat-lay",
+  "alt_text": "A typed completion receipt held flat by a steel ruler beside an empty paper checklist on a scratched control-room desk.",
+  "caption": "A typed receipt ties every answer claim to trace evidence; the checklist beside it only says the run is finished.",
+  "title": "40 Of 66 Agent Runs Finished Without Proof",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-agent-says-done-40-of-66/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406556,
+  "sha256": "sha256:beb2e3b7de3367dcf2fbdd04cb2f1628595ba5953df285ee228c197df5cea948",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406556,
+    "quality": 80,
+    "sha256": "sha256:beb2e3b7de3367dcf2fbdd04cb2f1628595ba5953df285ee228c197df5cea948",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:09b1d60559a130a41c76457c2e01abb20ddbc7f4599f7f78056906c004d164d9",
+  "render_phash": "419980fe80ff017f133f033b036b13270137111386fb96fd14fd20fd00ff2940",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier returned no text (finish_reason=length)) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:85ad89f5e01e167245d6df0f5b1589e2",
+  "source_chars": 6177,
+  "task_id": "d500a3f2c2186ae626f5734d0ae80f9c",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d500a3f2c2186ae626f5734d0ae80f9c_1794420842978.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph of a control room desk composed as a split-screen diptych: left half holds a cheap paper checklist with empty unchecked boxes, slightly rotated; right half holds a long typed completion receipt with perforated edges, one steel ruler holding it flat. Diffused daylight from above, graphite and bone white with a safety-yellow accent, worn steel desk and paper. 50mm flat overhead, sharp across the frame, fine film grain, generous negative space, no people, no legible text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T18:14:26+00:00",
+  "overlay": {
+    "kicker": "AGENTIC INFRASTRUCTURE // EVIDENCE TRACE",
+    "title": "40 OF 66 AGENT RUNS FINISHED WITHOUT PROOF",
+    "hook": "a run's exit is a claim about evidence, not a state the model can report",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.77,
+    "target": 5.5,
+    "clutter": 0.415,
+    "region_rgb": [
+      115,
+      111,
+      99
+    ],
+    "binding_rgb": [
+      178,
+      174,
+      163
+    ],
+    "title_lines": [
+      "40 OF 66 AGENT",
+      "RUNS FINISHED",
+      "WITHOUT PROOF"
+    ],
+    "subject": 0.282,
+    "ink_subject": 0.146,
+    "spike": 0.347,
+    "generated_at": "2026-11-11T18:14:26+00:00"
+  }
+}
