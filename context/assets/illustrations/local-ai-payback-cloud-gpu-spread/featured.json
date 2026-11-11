@@ -1,6 +1,6 @@
 {
   "slug": "local-ai-payback-cloud-gpu-spread",
-  "revision": 18,
+  "revision": 19,
   "history": [
     {
       "revision": 1,
@@ -138,6 +138,14 @@
     },
     {
       "revision": 17,
+      "alt_text": "The New Build-Vs-Rent Math. A heavy brushed-aluminum structural housing sitting unlatched beside a three-way routing manifold",
+      "caption": "The New Build-Vs-Rent Math: Local GPU costs soar as cloud rental prices split.",
+      "title": "The New Build-Vs-Rent Math",
+      "bytes": 408522,
+      "sha256": "sha256:1895f6f490de8fce3ea45412f6f60922c0d87cd9d4ddce54fa9b1a33d0dabb96"
+    },
+    {
+      "revision": 18,
       "alt_text": "The New Build-Vs-Rent Math. A heavy brushed-aluminum structural housing sitting unlatched beside a three-way routing manifold",
       "caption": "The New Build-Vs-Rent Math: Local GPU costs soar as cloud rental prices split.",
       "title": "The New Build-Vs-Rent Math",

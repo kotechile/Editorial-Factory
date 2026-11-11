@@ -1,6 +1,6 @@
 {
   "slug": "vendor-replacement-ai-ceiling",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "ai-vendor-replacement-run-costs",
       "bytes": 364469,
       "sha256": "sha256:0ac70a70ee9d389b19fc1c9fed21142a"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The Vendor-Replacement Wave Is Real \u2014 AI Just. A solitary operations desk glowing amber inside a darkened glass-walled data facility at",
+      "caption": "The Vendor-Replacement Wave Is Real \u2014 AI Just: Developers are rushing to write software that replaces paid tools, but barely half.",
+      "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just",
+      "bytes": 378704,
+      "sha256": "sha256:6f21ad7c35f8cd8997ccaf1be985a90314eb03206530e9b8c3a8cf1c6f3dbbfb"
     }
   ],
   "style": "architectural_night",
@@ -24,9 +32,9 @@
   "rationale": "The story revolves around the hidden 'run' costs of software\u2014specifically the late-night reality of keeping live servers online. Architectural night captures this solitary, after-hours burden perfectly.",
   "cue": "the emergency pager",
   "subject": "a solitary operations desk glowing amber inside a darkened glass-walled data facility",
-  "alt_text": "The Vendor-Replacement Wave Is Real \u2014 AI Just. A solitary operations desk glowing amber inside a darkened glass-walled data facility at",
-  "caption": "The Vendor-Replacement Wave Is Real \u2014 AI Just: Developers are rushing to write software that replaces paid tools, but barely half.",
-  "title": "The Vendor-Replacement Wave Is Real \u2014 AI Just",
+  "alt_text": "AI Builds Vendor Replacements It Won'T Run. The Vendor-Replacement Wave Is Real \u2014 AI Just. A solitary operations desk glowing amber inside",
+  "caption": "AI Builds Vendor Replacements It Won'T Run: Developers trust AI to write software that replaces paid tools, but not to run it live.",
+  "title": "AI Builds Vendor Replacements It Won'T Run",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -36,8 +44,8 @@
   "local_path": "context/assets/illustrations/vendor-replacement-ai-ceiling/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 378704,
-  "sha256": "sha256:6f21ad7c35f8cd8997ccaf1be985a90314eb03206530e9b8c3a8cf1c6f3dbbfb",
+  "bytes": 388817,
+  "sha256": "sha256:79291018e4b36509abff00cb92d9d1a420b3c992deacc792a8512943e38338ed",
   "source_hash": "sha256:08af7fa86259d29a55e45fe261cb00b6",
   "source_chars": 4832,
   "task_id": "9f35714c6e056229d2949b1543f07fa7",
@@ -61,25 +69,25 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 378704,
+    "bytes": 388817,
     "quality": 84,
-    "sha256": "sha256:6f21ad7c35f8cd8997ccaf1be985a90314eb03206530e9b8c3a8cf1c6f3dbbfb",
+    "sha256": "sha256:79291018e4b36509abff00cb92d9d1a420b3c992deacc792a8512943e38338ed",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
-    "kicker": "",
-    "title": "THE VENDOR-REPLACEMENT WAVE IS REAL \u2014 AI JUST",
-    "hook": "Developers are rushing to write software that replaces paid tools, but barely half",
+    "kicker": "VENDOR REPLACEMENT // AI OPERATIONS",
+    "title": "AI BUILDS VENDOR REPLACEMENTS IT WON'T RUN",
+    "hook": "Developers trust AI to write software that replaces paid tools, but not to run it live",
     "anchor": "top-right",
     "light": true,
     "scrim": 120,
     "contrast": 4.54,
     "target": 4.5,
-    "clutter": 0.158,
+    "clutter": 0.231,
     "region_rgb": [
-      13,
-      108,
-      146
+      21,
+      104,
+      138
     ],
     "binding_rgb": [
       12,
@@ -87,13 +95,13 @@
       166
     ],
     "title_lines": [
-      "THE",
-      "VENDOR-REPLACEMENT",
-      "WAVE IS REAL \u2014 AI JUST"
+      "AI BUILDS VENDOR",
+      "REPLACEMENTS IT",
+      "WON'T RUN"
     ],
-    "subject": 0.072,
-    "ink_subject": 0.028,
-    "spike": 0.15,
+    "subject": 0.228,
+    "ink_subject": 0.073,
+    "spike": 0.373,
     "generated_at": "2026-10-07T12:10:00+00:00"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T19:19:32+00:00",
+  "generated_at": "2026-11-11T14:20:51+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -1529,6 +1529,29 @@
       ],
       "excerpt": "Roughly 20% of your home's air conditioning (AC) never arrives in the room it is meant to cool. A new unit is sold on a factory rating, but the hidden air\u2026",
       "modified": "2026-10-31T04:49:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "21-of-isaias-claims-paid-nothing",
+      "title": "21% of Isaias Claims Paid Nothing",
+      "url": "https://wellroost.com/21-of-isaias-claims-paid-nothing/",
+      "path": "/21-of-isaias-claims-paid-nothing/",
+      "sites_live": {
+        "wellroost.com": "/21-of-isaias-claims-paid-nothing/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "On 12 October Colorado's insurance office told carriers what they now owe an owner who asks why a wildfire score moved the price, since a score can lift a\u2026",
+      "modified": "2026-11-11T13:29:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4000,6 +4023,29 @@
       ],
       "excerpt": "7 days' notice now rewrites which Canadian goods carry a 50 percent duty, and Friday's order moved the line both ways at once.",
       "modified": "2026-10-31T04:48:18",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "8-hi-hbm-costs-more-per-gigabit",
+      "title": "8-Hi HBM Costs More per Gigabit",
+      "url": "https://aichieve.net/8-hi-hbm-costs-more-per-gigabit/",
+      "path": "/8-hi-hbm-costs-more-per-gigabit/",
+      "sites_live": {
+        "aichieve.net": "/8-hi-hbm-costs-more-per-gigabit/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "Samsung has already sold its 2027 high bandwidth memory (HBM) at a price agreed with customers. Because the shorter 8-Hi stack carries fewer memory dies over\u2026",
+      "modified": "2026-11-11T11:59:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7346,6 +7392,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-15-day-entry-gap",
+      "title": "Your 15-Day Entry Gap: Then Custody",
+      "url": "https://aichieve.net/your-15-day-entry-gap/",
+      "path": "/your-15-day-entry-gap/",
+      "sites_live": {
+        "aichieve.net": "/your-15-day-entry-gap/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A container lands on a Tuesday and nobody files an entry, so 15 calendar days later the freight is general-order merchandise: in the port director's custody\u2026",
+      "modified": "2026-11-10T20:11:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-15-percent-raise-is-a-price-hike",
       "title": "Your 15% Raise: A Memory Price Hike",
       "url": "https://aichieve.net/your-15-percent-raise-is-a-price-hike/",
@@ -7484,6 +7553,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-44x-ticket-saving-needs-a-busy-box",
+      "title": "Your 44x Saving Breaks When Idle",
+      "url": "https://aichieve.net/your-44x-ticket-saving-needs-a-busy-box/",
+      "path": "/your-44x-ticket-saving-needs-a-busy-box/",
+      "sites_live": {
+        "aichieve.net": "/your-44x-ticket-saving-needs-a-busy-box/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Amazon's engineers cut a ticket-classification bill from $22,200 to about $500 per million, but the saving rests on a rented GPU-hour billed either way.",
+      "modified": "2026-11-11T12:19:52",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-47-day-certificate-trap",
       "title": "Your 47-Day Certificate Trap",
       "url": "https://aichieve.net/your-47-day-certificate-trap/",
@@ -7615,6 +7707,29 @@
       ],
       "excerpt": "Four live traces covering more than 121 million model calls show the median research session growing from about 10K to 68K tokens by the 30th call. A separate\u2026",
       "modified": "2026-10-31T04:48:27",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-71-margin-is-your-exit-bill",
+      "title": "71% Margin Is Your Exit Bill",
+      "url": "https://aichieve.net/your-71-margin-is-your-exit-bill/",
+      "path": "/your-71-margin-is-your-exit-bill/",
+      "sites_live": {
+        "aichieve.net": "/your-71-margin-is-your-exit-bill/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "AutoStore kept 71% of every revenue dollar as gross margin \u2014 what is left after the cost of the materials \u2014 for the third quarter, in the same release that\u2026",
+      "modified": "2026-11-11T12:44:21",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8542,6 +8657,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-gpu-starves-at-5-9-gibs",
+      "title": "Your GPU Starves: The 5.9 GiB/s Gap",
+      "url": "https://aichieve.net/your-gpu-starves-at-5-9-gibs/",
+      "path": "/your-gpu-starves-at-5-9-gibs/",
+      "sites_live": {
+        "aichieve.net": "/your-gpu-starves-at-5-9-gibs/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "One accelerator wants about 5.9 GiB/s of steady read at benchmark pressure, yet the measured stall survives even a fully cached dataset. Size the feed, not the\u2026",
+      "modified": "2026-11-10T19:39:23",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-grader-adds-22-points",
       "title": "Your Grader Adds 22 Silent Points",
       "url": "https://aichieve.net/your-grader-adds-22-points/",
@@ -8795,6 +8933,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-planner-is-not-your-model",
+      "title": "Your Planner Is Not Your Model: 6.4 Points",
+      "url": "https://aichieve.net/your-planner-is-not-your-model/",
+      "path": "/your-planner-is-not-your-model/",
+      "sites_live": {
+        "aichieve.net": "/your-planner-is-not-your-model/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A workflow outlives the model that wrote it, and on a new benchmark that is worth about 6.4 points to whichever model runs it.",
+      "modified": "2026-11-11T11:24:25",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-planning-cycle-costs-7-managers",
       "title": "Your Planning Cycle Costs 7 Managers",
       "url": "https://aichieve.net/your-planning-cycle-costs-7-managers/",
@@ -8926,6 +9087,29 @@
       ],
       "excerpt": "Cloud transcoding bills the render ladder, not the footage: a six-rung ladder bills eleven output minutes per source minute, $4.95 an hour on AWS's basic tier.",
       "modified": "2026-10-31T04:48:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-replay-isnt-the-run",
+      "title": "Your Replay Isn't the Run: 9 of 24 Differ",
+      "url": "https://aichieve.net/your-replay-isnt-the-run/",
+      "path": "/your-replay-isnt-the-run/",
+      "sites_live": {
+        "aichieve.net": "/your-replay-isnt-the-run/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your postmortem names the agent and the step. Then someone restores the checkpoint to prove it, and the replay isn't the run.",
+      "modified": "2026-11-11T10:56:55",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9440,6 +9624,104 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 1630,
+      "slug": "your-71-margin-is-your-exit-bill",
+      "title": "71% Margin Is Your Exit Bill",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-11T12:44:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1624,
+      "slug": "your-44x-ticket-saving-needs-a-busy-box",
+      "title": "Your 44x Saving Breaks When Idle",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-11T12:19:52",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1620,
+      "slug": "8-hi-hbm-costs-more-per-gigabit",
+      "title": "8-Hi HBM Costs More per Gigabit",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-11T11:59:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1617,
+      "slug": "your-planner-is-not-your-model",
+      "title": "Your Planner Is Not Your Model: 6.4 Points",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-11T11:24:25",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1612,
+      "slug": "your-replay-isnt-the-run",
+      "title": "Your Replay Isn&#8217;t the Run: 9 of 24 Differ",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-11T10:56:55",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1609,
+      "slug": "your-15-day-entry-gap",
+      "title": "Your 15-Day Entry Gap: Then Custody",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-10T20:11:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1602,
+      "slug": "your-gpu-starves-at-5-9-gibs",
+      "title": "Your GPU Starves: The 5.9 GiB/s Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-10T19:39:23",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 1592,
       "slug": "how-to-fix-case-fill-rate-8-days-before-the-order-is-cut",
       "title": "How to Fix Case Fill Rate 8 Days Before the Order Is Cut",
@@ -9447,7 +9729,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-10T19:18:07",
+      "modified": "2026-11-10T19:42:57",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -10484,104 +10766,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:13",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1223,
-      "slug": "your-green-passes-hide-31-wrong",
-      "title": "Your Green Suite Certifies 31.08% Wrong",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:13",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1219,
-      "slug": "your-miss-costs-9x-the-chargeback",
-      "title": "Your Miss Costs 9x the Chargeback",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:14",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1217,
-      "slug": "two-sparks-cost-3048-more-cable",
-      "title": "Two Sparks Cost $3,048 More: The 25 GB/s Cable",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:14",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1214,
-      "slug": "your-15-percent-raise-is-a-price-hike",
-      "title": "Your 15% Raise: A Memory Price Hike",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:14",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1210,
-      "slug": "your-60-fast-lane-is-blind",
-      "title": "Your 60% Fast Lane Is Blind",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:14",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1208,
-      "slug": "your-cache-pays-125x-for-nothing",
-      "title": "Your Cache Pays 1.25x for Nothing",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:15",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1202,
-      "slug": "your-98-fill-rate-18-dont-ship",
-      "title": "Ops leaders: Why 98% line fill ships 18% short",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:15",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

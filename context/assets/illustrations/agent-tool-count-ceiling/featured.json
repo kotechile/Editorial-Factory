@@ -1,6 +1,6 @@
 {
   "slug": "agent-tool-count-ceiling",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -54,6 +54,14 @@
     },
     {
       "revision": 7,
+      "alt_text": "The Tool-List Budget. A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight.",
+      "caption": "The Tool-List Budget: More tools crash agent accuracy to one pick in seven.",
+      "title": "The Tool-List Budget",
+      "bytes": 363326,
+      "sha256": "sha256:a0ef5e87ac4311bf264923aba81bda06b12da639460da3f475b7820f70b43e61"
+    },
+    {
+      "revision": 8,
       "alt_text": "The Tool-List Budget. A single illuminated server bay and doorway stand in the foreground of a massive, dark data hall at twilight.",
       "caption": "The Tool-List Budget: More tools crash agent accuracy to one pick in seven.",
       "title": "The Tool-List Budget",

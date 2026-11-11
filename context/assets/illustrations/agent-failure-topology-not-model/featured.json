@@ -1,7 +1,16 @@
 {
   "slug": "agent-failure-topology-not-model",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Modular mechanical routing assembly with interlocking physical channels and curved connectors on a neutral backdrop.",
+      "caption": "New research shows the coordination topology of an agent system is as critical to its success as the model itself.",
+      "title": "Agent Topology Assembly",
+      "bytes": 1255602,
+      "sha256": "sha256:5484b298a1c76badb9fad414d463a8da"
+    }
+  ],
   "style": "clay_render",
   "style_label": "Matte 3D render",
   "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
@@ -15,20 +24,20 @@
   "rationale": "The news is structural and conceptual, dealing with the 'shape' and coordination of a system. A matte clay 3D render translates this abstract topology into a concrete, recognizable mechanical assembly of routing parts.",
   "cue": "the shape of the system",
   "subject": "a modular mechanical routing assembly with interlocking physical channels",
-  "alt_text": "Modular mechanical routing assembly with interlocking physical channels and curved connectors on a neutral backdrop.",
-  "caption": "New research shows the coordination topology of an agent system is as critical to its success as the model itself.",
-  "title": "Agent Topology Assembly",
+  "alt_text": "Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking physical channels and curved connectors on a",
+  "caption": "Your Multi-Agent Failure Has A Shape: When an agent stack fails, the common reflex is to buy a bigger model. Two new papers.",
+  "title": "Your Multi-Agent Failure Has A Shape",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/agent-failure-topology-not-model/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1255602,
-  "sha256": "sha256:5484b298a1c76badb9fad414d463a8da",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-failure-topology-not-model/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 228729,
+  "sha256": "sha256:6d28b835a1c4fb7f3695223f078c643ae6f7a560ce534e50f80e5974dc7b93f6",
   "source_hash": "sha256:2fdce2af37e3f5694c8d9f63468be96a",
   "source_chars": 3475,
   "task_id": "9b6f171928ab4b1dd8c41de6af3d3972",
@@ -45,5 +54,48 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T10:36:32+00:00"
+  "generated_at": "2026-10-08T10:36:32+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 228729,
+    "quality": 88,
+    "sha256": "sha256:6d28b835a1c4fb7f3695223f078c643ae6f7a560ce534e50f80e5974dc7b93f6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR MULTI-AGENT FAILURE HAS A SHAPE",
+    "hook": "When an agent stack fails, the common reflex is to buy a bigger model. Two new papers",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.76,
+    "target": 4.5,
+    "clutter": 0.16,
+    "region_rgb": [
+      159,
+      156,
+      157
+    ],
+    "binding_rgb": [
+      149,
+      150,
+      152
+    ],
+    "title_lines": [
+      "YOUR MULTI-AGENT",
+      "FAILURE HAS A",
+      "SHAPE"
+    ],
+    "subject": 0.075,
+    "ink_subject": 0.02,
+    "spike": 0.185,
+    "generated_at": "2026-10-08T10:36:32+00:00"
+  }
 }

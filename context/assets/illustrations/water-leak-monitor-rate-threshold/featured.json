@@ -1,6 +1,6 @@
 {
   "slug": "water-leak-monitor-rate-threshold",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -52,6 +52,14 @@
     },
     {
       "revision": 7,
+      "alt_text": "Water Leak Monitor Flow Rate. An inline water flow sensor module attached to a section of copper tubing against a smooth grey gradient.",
+      "caption": "Water Leak Monitor Flow Rate: Your night-flow threshold decides if it pays.",
+      "title": "Water Leak Monitor Flow Rate",
+      "bytes": 166336,
+      "sha256": "sha256:211bded819e300c49a6e891ea111a31f7571baf0916e416853af86b7c460e476"
+    },
+    {
+      "revision": 8,
       "alt_text": "Water Leak Monitor Flow Rate. An inline water flow sensor module attached to a section of copper tubing against a smooth grey gradient.",
       "caption": "Water Leak Monitor Flow Rate: Your night-flow threshold decides if it pays.",
       "title": "Water Leak Monitor Flow Rate",

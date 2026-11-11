@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T13:20:53Z",
+  "updated_at": "2026-11-11T17:41:06Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6330,7 +6330,8 @@
       ],
       "target_persona": "supply_chain_architect",
       "date": "2026-11-10",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-15-day-entry-gap/"
     },
     {
       "slug": "2026-11-10_your-47-day-certificate-trap",
@@ -6386,7 +6387,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-10",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-gpu-starves-at-5-9-gibs/"
     },
     {
       "slug": "2026-11-10_your-meter-bills-from-hourly-rows",
@@ -6442,7 +6444,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/21-of-isaias-claims-paid-nothing/"
     },
     {
       "slug": "2026-11-11_8-hi-hbm-costs-more-per-gigabit",
@@ -6460,7 +6463,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/8-hi-hbm-costs-more-per-gigabit/"
     },
     {
       "slug": "2026-11-11_your-44x-ticket-saving-needs-a-busy-box",
@@ -6478,7 +6482,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-44x-ticket-saving-needs-a-busy-box/"
     },
     {
       "slug": "2026-11-11_your-71-margin-is-your-exit-bill",
@@ -6495,6 +6500,25 @@
         "Related reading"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-11-11",
+      "public": true,
+      "url": "https://aichieve.net/your-71-margin-is-your-exit-bill/"
+    },
+    {
+      "slug": "2026-11-11_your-agent-fix-fails-39-of-right-calls",
+      "title": "Your Agent's Fix Fails: 39.5% of the Time",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The gap opens at the operation",
+        "By the numbers",
+        "Where the gate has to sit",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-11-11",
       "public": false
     },
@@ -6514,7 +6538,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-planner-is-not-your-model/"
     },
     {
       "slug": "2026-11-11_your-replay-isnt-the-run",
@@ -6532,7 +6557,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-replay-isnt-the-run/"
     }
   ]
 }

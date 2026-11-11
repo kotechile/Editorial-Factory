@@ -1,6 +1,6 @@
 {
   "slug": "durable-execution-not-a-transaction",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -36,6 +36,14 @@
     },
     {
       "revision": 5,
+      "alt_text": "Missing State In MCP Tool Contracts. Durable Execution Is Not A Transaction. A dark logic board bypassed by a glowing amber fiber optic",
+      "caption": "Missing State In MCP Tool Contracts: An AI agent rarely knows if it can undo a mistake across 98,291 MCP tools.",
+      "title": "Missing State In MCP Tool Contracts",
+      "bytes": 384566,
+      "sha256": "sha256:ca003a56d7a1eb66a7fd96fd005ae8a322252c49340ce99ba6e8446238c59aa2"
+    },
+    {
+      "revision": 6,
       "alt_text": "Missing State In MCP Tool Contracts. Durable Execution Is Not A Transaction. A dark logic board bypassed by a glowing amber fiber optic",
       "caption": "Missing State In MCP Tool Contracts: An AI agent rarely knows if it can undo a mistake across 98,291 MCP tools.",
       "title": "Missing State In MCP Tool Contracts",

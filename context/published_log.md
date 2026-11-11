@@ -355,6 +355,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-11 | enterprise_build_vs_buy | your-44x-ticket-saving-needs-a-busy-box | Your 44x Saving Breaks When Idle | https://pressflow.aichieve.net/published/2026-11-11_your-44x-ticket-saving-needs-a-busy-box.md | reader site only |
 | 2026-11-11 | warehouse_automation_robotics_capex | your-71-margin-is-your-exit-bill | 71% Margin Is Your Exit Bill | https://pressflow.aichieve.net/published/2026-11-11_your-71-margin-is-your-exit-bill.md | reader site only |
 | 2026-11-11 | property_loss_insurance_mitigation | 21-of-isaias-claims-paid-nothing | 21% of Isaias Claims Paid Nothing | https://pressflow.aichieve.net/published/2026-11-11_21-of-isaias-claims-paid-nothing.md | reader site only |
+| 2026-11-11 | agentic_resilience_failure | your-agent-fix-fails-39-of-right-calls | Your Agent's Fix Fails: 39.5% of the Time | https://pressflow.aichieve.net/published/2026-11-11_your-agent-fix-fails-39-of-right-calls.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
