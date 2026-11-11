@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T18:41:31Z",
+  "updated_at": "2026-11-11T19:11:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6576,6 +6576,24 @@
       "date": "2026-11-11",
       "public": true,
       "url": "https://aichieve.net/your-planner-is-not-your-model/"
+    },
+    {
+      "slug": "2026-11-11_your-rate-limit-1-39-a-second",
+      "title": "Your Rate Limit's Hidden 100x",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The bucket, not the price",
+        "By the numbers",
+        "Measure the overshoot first",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-11",
+      "public": false
     },
     {
       "slug": "2026-11-11_your-replay-isnt-the-run",

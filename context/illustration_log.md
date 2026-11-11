@@ -487,3 +487,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-11 | `your-agent-fix-fails-39-of-right-calls` | agentic_resilience_failure | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-agent-fix-fails-39-of-right-calls/featured.jpg` |
 | 2026-11-11 | `your-agent-says-done-40-of-66` | multi_agent_enterprise_fabric | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-agent-says-done-40-of-66/featured.jpg` |
 | 2026-11-11 | `batch-32-kills-your-4-bit-win` | gpu_hardware | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/batch-32-kills-your-4-bit-win/featured.jpg` |
+| 2026-11-11 | `your-rate-limit-1-39-a-second` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-rate-limit-1-39-a-second/featured.jpg` |
