@@ -1,0 +1,130 @@
+{
+  "slug": "your-44x-ticket-saving-needs-a-busy-box",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A rented GPU compute node glowing amber in a dark server rack row at blue hour.",
+      "caption": "The saving breaks whenever the box sits idle.",
+      "title": "Rented GPU node idle in dark rack row",
+      "bytes": 361600,
+      "sha256": "sha256:56e060bcc31e6b7afb48659a37d76dec"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your 44X Saving Breaks When Idle. A rented GPU compute node glowing amber in a dark server rack row at blue hour.",
+      "caption": "Your 44X Saving Breaks When Idle: Two Amazon engineers moved the ticket classifier \u2014 the program that assigns each ticket.",
+      "title": "Your 44X Saving Breaks When Idle",
+      "bytes": 381856,
+      "sha256": "sha256:5fd3912f303f580e9bdfc405cf19e71a7fb083efc665aa1bb8e4a0432f57437a"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your 44X Saving Breaks When Idle. A rented GPU compute node glowing amber in a dark server rack row at blue hour.",
+      "caption": "Your 44X Saving Breaks When Idle: Two Amazon engineers moved the ticket classifier \u2014 the program that assigns each ticket.",
+      "title": "Your 44X Saving Breaks When Idle",
+      "bytes": 381856,
+      "sha256": "sha256:5fd3912f303f580e9bdfc405cf19e71a7fb083efc665aa1bb8e4a0432f57437a",
+      "note": "reconciled: director alt had the headline glued to it and the caption cut mid-phrase"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "In a dark data hall rack row at blue hour, one leased GPU compute node glows amber between dark perforated-metal server bays, cool cobalt window light from the left brushes a brushed-steel rack face. A 35mm architectural photograph, deep blue ambient, the warm rack status LEDs are the only interior light, long contact shadows, idle capacity hanging in the air. Framing rule: extreme asymmetry, hero node low-right on thirds, dark racks receding into negative space. No people, no text, no logos, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible UI text",
+  "rationale": "Architectural night suits the story's central risk: utilisation after hours. The blue-hour data hall makes idle rented capacity feel physical, while the warm rack light becomes the sole sign of work. This avoids the sterile studio object and grounds the cost in a real operating environment.",
+  "cue": "the saving breaks whenever the box sits idle",
+  "subject": "a leased GPU compute node glowing amber in a dark rack row",
+  "core_thesis": "Amazon's 44x classifier saving is a utilisation bet: the self-hosted GPU costs the same per hour whether idle or at 5,600 tickets, so the headline saving only materialises when the box is busy enough.",
+  "core_conflict": "fixed rented instance-hour cost vs variable token billing; break-even at 63 tickets/hour and half-capacity headroom",
+  "composition": "extreme asymmetry, hero node low-right on thirds with receding dark racks",
+  "alt_text": "A rented GPU compute node glowing amber between dark server racks at blue hour.",
+  "caption": "Idle capacity at blue hour: the saving breaks whenever the rented box sits unused.",
+  "title": "Your 44X Saving Breaks When Idle",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-44x-ticket-saving-needs-a-busy-box/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 379874,
+  "sha256": "sha256:4314cbc8c993f937a93c956eae0a1c8bed37e1b56ad149d3057a7a022f8da02a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 379874,
+    "quality": 84,
+    "sha256": "sha256:4314cbc8c993f937a93c956eae0a1c8bed37e1b56ad149d3057a7a022f8da02a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b1f057ba725bdd3141c635073aadd455447200ccdeedbdb55b28de901eafdc72",
+  "render_phash": "f36deb69ab7beb6deb6f6b6fcb7deb7fdb3dff32df9ef78ef81eca1ffb0fe31f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A row of dark server racks recedes toward the left while a single white, amber-lit compute unit sits at floor level at the base of the nearest rack on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.86,
+    "reason": "The image shows the article's own mechanism \u2014 a self-hosted GPU compute node in a rack \u2014 which is the object whose hourly cost and utilisation drive the story's savings claim."
+  },
+  "source_hash": "sha256:6e613c8304de03c85455e4ad86ca1d90",
+  "source_chars": 5793,
+  "task_id": "d13f0cc508f0635513f5cc2af3469da6",
+  "credits": 5.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d13f0cc508f0635513f5cc2af3469da6_1794399164830.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "In a dark data hall rack row at blue hour, one leased GPU compute node glows amber between dark perforated-metal server bays, cool cobalt window light from the left brushes a brushed-steel rack face. A 35mm architectural photograph, deep blue ambient, the warm rack status LEDs are the only interior light, long contact shadows, idle capacity hanging in the air. Framing rule: extreme asymmetry, hero node low-right on thirds, dark racks receding into negative space. No people, no text, no logos, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T12:13:06+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR 44X SAVING BREAKS WHEN IDLE",
+    "hook": "Amazon's engineers cut a ticket-classification bill from $22,200 to about $500",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 10.1,
+    "target": 4.5,
+    "clutter": 0.081,
+    "region_rgb": [
+      20,
+      46,
+      63
+    ],
+    "binding_rgb": [
+      14,
+      60,
+      84
+    ],
+    "title_lines": [
+      "YOUR 44X SAVING",
+      "BREAKS WHEN",
+      "IDLE"
+    ],
+    "subject": 0.049,
+    "ink_subject": 0.009,
+    "spike": 0.077,
+    "generated_at": "2026-11-11T12:13:06+00:00"
+  }
+}

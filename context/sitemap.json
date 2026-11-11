@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T11:46:57Z",
+  "updated_at": "2026-11-11T12:14:51Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6441,6 +6441,24 @@
         "Related reading"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-11-11",
+      "public": false
+    },
+    {
+      "slug": "2026-11-11_your-44x-ticket-saving-needs-a-busy-box",
+      "title": "Your 44x Saving Breaks When Idle",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The bill changed meters, not size",
+        "By the numbers",
+        "What the team is watching now",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
       "date": "2026-11-11",
       "public": false
     },
