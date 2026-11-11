@@ -359,6 +359,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-11 | multi_agent_enterprise_fabric | your-agent-says-done-40-of-66 | Your Agent Says Done: 40 of 66 Without Proof | https://pressflow.aichieve.net/published/2026-11-11_your-agent-says-done-40-of-66.md | reader site only |
 | 2026-11-11 | gpu_hardware | batch-32-kills-your-4-bit-win | Batch 32 Kills Your 4-Bit Win | https://pressflow.aichieve.net/published/2026-11-11_batch-32-kills-your-4-bit-win.md | reader site only |
 | 2026-11-11 | enterprise_build_vs_buy | your-rate-limit-1-39-a-second | Your Rate Limit's Hidden 100x | https://pressflow.aichieve.net/published/2026-11-11_your-rate-limit-1-39-a-second.md | reader site only |
+| 2026-11-11 | warehouse_automation_robotics_capex | your-robot-adds-a-12260-premium | Your Robot Adds a $12,260 Trap | https://pressflow.aichieve.net/published/2026-11-11_your-robot-adds-a-12260-premium.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

@@ -1,0 +1,113 @@
+{
+  "slug": "your-robot-adds-a-12260-premium",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Robotic picking station with open maintenance panel and diagnostic cart in a warehouse aisle.",
+      "caption": "A robot fleet's real cost appears when one picking station's service panel swings open and a technician's cart waits beside it.",
+      "title": "Robot Station Maintenance Burden in Warehouse Aisle",
+      "bytes": 347349,
+      "sha256": "sha256:83951fc3ee6f2fb97b744c70aa3ed45d"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression across a dim warehouse aisle. A grey robotic picking station stands off-center left, its steel service panel hinged open, a yellow diagnostic cable trailing to a maintenance cart with rubber castors on polished concrete. Rows of identical stations recede in sharp compressed layers toward a distant loading bay. Hard raking light from high skylights at the right carves deep shadows, rim-lighting brushed aluminum frames. Palette: graphite, safety yellow, bone white. Shallow depth of field isolates the open panel. Fine film grain, no people, no text, no logos. Low-angle telephoto compression with hero station off-center left and repeated stations receding to the right.",
+  "negative_prompt": "garbled text, random lettering, watermarks, unreadable signage",
+  "rationale": "Compressed telephoto layering shows the warehouse-scale robotics environment and isolates the open service panel as the constraining maintenance node. Photographic industrial realism fits the B2B warehouse automation vertical and the systemic labor-substitution tension.",
+  "cue": "one station operator at the picker's own median wage",
+  "subject": "a robotic picking station with an open service panel and a maintenance cart on a warehouse floor",
+  "core_thesis": "The labor saving from removing pickers is a headcount ratio, because each automated station retains a picker-wage operator and adds a higher-wage technician, making technician capacity the limiting factor for scaling.",
+  "core_conflict": "Headcount reduction from automation versus substituted maintenance labor at 1.33 times the picker's wage, constrained by the 1+1/N stations-per-technician ratio.",
+  "composition": "low-angle telephoto compression with hero station off-center left and repeated stations receding to the right",
+  "alt_text": "Your Robot Adds A $12,260 Trap. Robotic picking station with open maintenance panel and diagnostic cart in a warehouse aisle.",
+  "caption": "Your Robot Adds A $12,260 Trap: The business case for a robot fleet subtracts pickers from a payroll and stops there..",
+  "title": "Your Robot Adds A $12,260 Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-robot-adds-a-12260-premium/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391698,
+  "sha256": "sha256:49bf4953f2a0c2e166681781da8760df8704003f50a6368a3af7f5627e69d214",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391698,
+    "quality": 84,
+    "sha256": "sha256:49bf4953f2a0c2e166681781da8760df8704003f50a6368a3af7f5627e69d214",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f6f2d164de444cea6063bee52983ea9cf218b4bb3c8cbc48fdaabb25e16d8451",
+  "render_phash": "66030213888b6c8b680348c348c342014201020102070607210f218f039b073b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A low-angle view down a warehouse aisle showing a tall grey equipment cabinet at left with its door swung open and a yellow cable running to a wheeled yellow-topped service cart in the foreground, with similar cabinets and racking receding to the right under skylight glare.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame shows the service-and-maintenance side of an automated warehouse floor (open panel, cable, cart, repeated stations), which matches the article's point that the technician rather than the capital is the binding constraint, though no robot arm or picker is actually visible to anchor the automation claim."
+  },
+  "source_hash": "sha256:c7e0b3a931824cb9bbaf78574de1aa02",
+  "source_chars": 4724,
+  "task_id": "5d42aae0a207089cb0ef8305bf1ffcb6",
+  "credits": 5.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/5d42aae0a207089cb0ef8305bf1ffcb6_1794426170935.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression across a dim warehouse aisle. A grey robotic picking station stands off-center left, its steel service panel hinged open, a yellow diagnostic cable trailing to a maintenance cart with rubber castors on polished concrete. Rows of identical stations recede in sharp compressed layers toward a distant loading bay. Hard raking light from high skylights at the right carves deep shadows, rim-lighting brushed aluminum frames. Palette: graphite, safety yellow, bone white. Shallow depth of field isolates the open panel. Fine film grain, no people, no text, no logos. Low-angle telephoto compression with hero station off-center left and repeated stations receding to the right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T19:42:56+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR ROBOT ADDS A $12,260 TRAP",
+    "hook": "The business case for a robot fleet subtracts pickers from a payroll and stops there.",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.91,
+    "target": 4.5,
+    "clutter": 0.202,
+    "region_rgb": [
+      54,
+      57,
+      59
+    ],
+    "binding_rgb": [
+      90,
+      91,
+      86
+    ],
+    "title_lines": [
+      "YOUR ROBOT",
+      "ADDS A $12,260",
+      "TRAP"
+    ],
+    "subject": 0.075,
+    "ink_subject": 0.011,
+    "spike": 0.095,
+    "generated_at": "2026-11-11T19:42:56+00:00"
+  }
+}

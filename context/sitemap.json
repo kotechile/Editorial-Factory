@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T19:11:51Z",
+  "updated_at": "2026-11-11T19:44:03Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6613,6 +6613,24 @@
       "date": "2026-11-11",
       "public": true,
       "url": "https://aichieve.net/your-replay-isnt-the-run/"
+    },
+    {
+      "slug": "2026-11-11_your-robot-adds-a-12260-premium",
+      "title": "Your Robot Adds a $12,260 Trap",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The case subtracts; the site substitutes",
+        "By the numbers",
+        "Where the ratio bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-11",
+      "public": false
     }
   ]
 }
