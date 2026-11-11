@@ -14,8 +14,8 @@ meta_title_source: "derived_from_title"
 image_path: "context/assets/illustrations/your-rate-limit-1-39-a-second/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Your Rate Limit'S Hidden 100X. Cut-paper bucket with a hole draining request dots beside a blank hundred-item page stack on a control room"
-image_caption: "Your Rate Limit'S Hidden 100X: A page size of 100 buys 100 times what an enterprise plan tier does."
+image_alt: "Cut-paper bucket with a hole draining request dots beside a blank hundred-item page stack on a control room desk."
+image_caption: "A vendor rate limit is a leaking bucket, and page size is the stack that multiplies every draw."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
