@@ -1,0 +1,114 @@
+{
+  "slug": "your-replay-isnt-the-run",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Five identical paper snapshot cards split-screened against one torn snapshot and a skewed replay certificate on a control room table.",
+      "caption": "The replay certificate sits misaligned with the five snapshot clones, whose missing random stream tears one card apart.",
+      "title": "Five Clones Diverge from Live Run",
+      "bytes": 389415,
+      "sha256": "sha256:1cb1ebe80165740a9502cec968620e9a"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych across a brushed-steel control room table. Left half: five identical cut-paper snapshot cards, each a white-bordered rectangular photo print, aligned in a row with identical cast shadows. Right half: a sixth snapshot card with its corner torn open revealing a missing dark strip, and a cut-paper replay certificate lying askew beneath, its lower edge offset from the stack. One raking light from the left throws long shadows; graphite, bone white and safety yellow palette; hand-torn rag paper with visible fibre, halftone newsprint texture, no legible text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, embossed lettering, legible words",
+  "rationale": "The article is a purely conceptual synthesis about replay divergence and unrecorded randomness, with no physical machine or facility. Paper collage lets the five snapshot clones and the replay certificate sit as layered symbolic objects on a real surface, conveying the counterfactual gap without a literal datacenter or office clich\u00e9.",
+  "cue": "Your Replay Isn't the Run",
+  "subject": "five identical paper snapshot cards split-screened against one torn snapshot card and a skewed replay certificate",
+  "core_thesis": "A replay certificate is only valid if the restored snapshot reproduces the live run's random stream, and when that stream is unrecorded the postmortem blames the wrong actor.",
+  "core_conflict": "cloned snapshot agreement versus live-run fidelity, where missing randomness breaks counterfactual proof",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Your Replay Isn'T The Run. Five identical paper snapshot cards split-screened against one torn snapshot and a skewed replay certificate on",
+  "caption": "Your Replay Isn'T The Run: Your postmortem names the agent and the step. Then someone restores the checkpoint.",
+  "title": "Your Replay Isn'T The Run",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-replay-isnt-the-run/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401616,
+  "sha256": "sha256:b3af002ba56a646de78ffc7ed7192452182ae0a969ac940b384f939a20bddd0f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401616,
+    "quality": 64,
+    "sha256": "sha256:b3af002ba56a646de78ffc7ed7192452182ae0a969ac940b384f939a20bddd0f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:05722ba55bb2ae507180d06c155fd2af2de9b5bb2a947796909a3b8be9337463",
+  "render_phash": "0180018001900190019429a03588358c55b495960bce09a201a00184018001a0",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen collage on brush metal: on the left, five small instant-photo cards printed with a grey halftone texture lie evenly spaced in a row; on the right, two overlapping instant-photo cards, one ripped diagonally, sit beside a torn yellow card with a grey border.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.6,
+    "reason": "The frame literally stages the article's mechanism \u2014 five identical snapshot cards (the clones of one checkpoint) versus one torn card and a tattered certificate (the divergent live run and replay certificate) \u2014 though the halftone-print cards are only metaphorically the article's objects."
+  },
+  "source_hash": "sha256:e9929e830cfb4cdce3929fed4d6abec5",
+  "source_chars": 4871,
+  "task_id": "22cd6707cc1ddeae62cc075bf60faf99",
+  "credits": 18.0,
+  "cost_ms": 75,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1794394102087-4m4oh1nvxie.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen diptych across a brushed-steel control room table. Left half: five identical cut-paper snapshot cards, each a white-bordered rectangular photo print, aligned in a row with identical cast shadows. Right half: a sixth snapshot card with its corner torn open revealing a missing dark strip, and a cut-paper replay certificate lying askew beneath, its lower edge offset from the stack. One raking light from the left throws long shadows; graphite, bone white and safety yellow palette; hand-torn rag paper with visible fibre, halftone newsprint texture, no legible text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-11T10:48:31+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR REPLAY ISN'T THE RUN",
+    "hook": "Your postmortem names the agent and the step. Then someone restores the checkpoint",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.18,
+    "target": 5.5,
+    "clutter": 0.427,
+    "region_rgb": [
+      107,
+      104,
+      97
+    ],
+    "binding_rgb": [
+      165,
+      166,
+      160
+    ],
+    "title_lines": [
+      "YOUR REPLAY",
+      "ISN'T THE RUN"
+    ],
+    "subject": 0.089,
+    "ink_subject": 0.012,
+    "spike": 0.218,
+    "generated_at": "2026-11-11T10:48:31+00:00"
+  }
+}

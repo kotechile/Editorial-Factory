@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:11:16Z",
+  "updated_at": "2026-11-11T10:50:08Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6425,6 +6425,24 @@
       "date": "2026-11-10",
       "public": true,
       "url": "https://aichieve.net/your-pager-caps-at-2-incidents/"
+    },
+    {
+      "slug": "2026-11-11_your-replay-isnt-the-run",
+      "title": "Your Replay Isn't the Run: 9 of 24 Differ",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why both halves fail",
+        "By the numbers",
+        "What teams now record",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-11",
+      "public": false
     }
   ]
 }
