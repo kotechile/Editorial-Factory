@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-agent-fix-fails-39-of-right-calls/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Incident Agent Fixes Fail 39.5%. A fault-check gate in a data hall with green server diagnosis lights on the left and a dark locked"
-image_caption: "Incident Agent Fixes Fail 39.5%: Autonomy must be gated per fault class by a fault-reproducing check, not the agent's own."
+image_alt: "A steel gate with a padlock divides a lit server aisle from a dark data hall."
+image_caption: "Your Agent's Fix Fails: autonomy needs a fault-reproducing check, not the agent's own report."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -72,13 +72,9 @@ What I keep circling is the checker itself, because a check tied to a fault only
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Your Agent's Contract Gap" -> /your-agent-contract-gap-63-unmet/ [same site (aichieve.net); same category; topical overlap: agent's, rules] Link "Your Agent's Contract Gap" in the section where the article touches agent's, rules. -->
-<!-- internal-link hint: "Your Retrieval Fails at 5.7%" -> /your-retrieval-misses-57/ [same site (aichieve.net); same category; topical overlap: fails, time] Link "Your Retrieval Fails at 5.7%" in the section where the article touches fails, time. -->
-<!-- internal-link hint: "Agent Memory Poisoning" -> /agent-memory-poisoning-write-path/ [same site (aichieve.net); same category; topical overlap: agent's] Link "Agent Memory Poisoning" in the section where the article touches agent's. -->
 ## Related reading
 
 - [Your Agent's Contract Gap](/your-agent-contract-gap-63-unmet/) — more on Autonomous & Agentic Workflows
-- [Your Retrieval Fails at 5.7%](/your-retrieval-misses-57/) — more on Autonomous & Agentic Workflows
-- [Agent Memory Poisoning](/agent-memory-poisoning-write-path/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
 
 ## Sources

@@ -1,112 +1,112 @@
 {
-  "slug": "your-agent-fix-fails-39-of-right-calls",
-  "revision": 2,
-  "history": [
-    {
-      "revision": 1,
-      "alt_text": "A fault-check gate in a data hall with green server diagnosis lights on the left and a dark locked recovery bay on the right.",
-      "caption": "A split-screen data hall shows the gap between an agent's accurate diagnosis and its failed recovery gate.",
-      "title": "Fault-Check Gate Split Data Hall",
-      "bytes": 384842,
-      "sha256": "sha256:04a45098f4507aaf75f8dd5114f8f7b2"
-    }
-  ],
-  "style": "cinematic_still",
-  "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
-  "model": "flux-2/pro-text-to-image",
-  "model_key": "flux",
-  "model_note": "",
-  "aspect_ratio": "16:9",
-  "resolution": "1K",
-  "prompt": "A wide anamorphic 35mm film still in a double-height data hall, split-screen diptych divided by a vertical brushed-steel seam. Left half: a tidy server rack row glowing green status LEDs, polished concrete floor, deep shadows. Right half: an identical rack row behind a heavy steel fault-check gate, padlocked, dark except one red status light above an empty repair bay, scuffed concrete. Hard overhead fluorescent light from above-left, graphite and steel blue with safety-yellow and oxidised-red accents, fine film grain, no text, no logos, no people.",
-  "negative_prompt": "garbled text, random letters, watermarks, labels, UI, readable words",
-  "rationale": "The article describes a decisive operational environment\u2014a live cluster where a fix is either authenticated by an external check or rejected. A cinematic still can stage the data hall with industrial atmosphere and a split-screen contrast, making the verification barrier tangible without falling back to generic datacenter filler.",
-  "cue": "verified recovery, not root-cause accuracy",
-  "subject": "a heavy steel fault-check gate dividing a server row between green diagnosis and dark unverified recovery",
-  "core_thesis": "Verified recovery, not root-cause accuracy, is the gate an incident agent must pass.",
-  "core_conflict": "Detection runs 72.7% to 99.7% while a valid, executed fix lands 14.5% to 60.3%, and invalid plans miss on the operation (67.9%) rather than the service.",
-  "composition": "split-screen diptych with left-right detection-vs-recovery contrast",
-  "alt_text": "Incident Agent Fixes Fail 39.5%. A fault-check gate in a data hall with green server diagnosis lights on the left and a dark locked",
-  "caption": "Incident Agent Fixes Fail 39.5%: Autonomy must be gated per fault class by a fault-reproducing check, not the agent's own.",
-  "title": "Incident Agent Fixes Fail 39.5%",
-  "credit": "Illustration: Editorial-Factory Intelligence Unit",
-  "depicts_real_brand": false,
-  "director": "deepseek-v4-pro",
-  "director_attempts": 1,
-  "pinned": {},
-  "file": "featured.jpg",
-  "local_path": "context/assets/illustrations/your-agent-fix-fails-39-of-right-calls/featured.jpg",
-  "ext": "jpg",
-  "content_type": "image/jpeg",
-  "bytes": 402659,
-  "sha256": "sha256:7a94c343f152d7fdcd27868ad70c0f4552eab2f8ecc3cbe2116230cf383fa13a",
-  "delivery": {
-    "standard": "2026-10-24",
-    "format": "JPEG",
-    "progressive": true,
-    "color_space": "sRGB",
-    "width": 2400,
-    "height": 1350,
-    "aspect": 1.7778,
-    "bytes": 402659,
-    "quality": 80,
-    "sha256": "sha256:7a94c343f152d7fdcd27868ad70c0f4552eab2f8ecc3cbe2116230cf383fa13a",
-    "filename_rule": "<slug>-featured.jpg"
-  },
-  "render_sha256": "sha256:aad7477ee127daad6f82b6a79f12d0c8109e35b2ddb9c4d3cfc6809336cf65ef",
-  "render_phash": "0c8e8c9e849e269e82be013e017e017f017f817f017f013e013e037f037f035f",
-  "review": {
-    "ok": true,
-    "problems": [],
-    "depicts": "A server room is divided by a steel bar gate with a padlock, with a lit aisle of racks showing green lights on the left and a dimmer aisle of racks with red lights and yellow cables on the right.",
-    "legible_text": "",
-    "on_topic": true,
-    "confidence": 0.86,
-    "reason": "The frame shows the article's own mechanism\u2014a fault-check gate separating green diagnosis from dark, unverified recovery in server infrastructure."
-  },
-  "source_hash": "sha256:729f6f6270e10579ab5d8f3ed7f105bc",
-  "source_chars": 5284,
-  "task_id": "eb1cc2bb7e1c7973bfce27d64214e269",
-  "credits": 5.0,
-  "cost_ms": 22,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/eb1cc2bb7e1c7973bfce27d64214e269_1794418806481.jpg",
-  "provider_request": {
-    "model": "flux-2/pro-text-to-image",
-    "input": {
-      "prompt": "A wide anamorphic 35mm film still in a double-height data hall, split-screen diptych divided by a vertical brushed-steel seam. Left half: a tidy server rack row glowing green status LEDs, polished concrete floor, deep shadows. Right half: an identical rack row behind a heavy steel fault-check gate, padlocked, dark except one red status light above an empty repair bay, scuffed concrete. Hard overhead fluorescent light from above-left, graphite and steel blue with safety-yellow and oxidised-red accents, fine film grain, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
-      "aspect_ratio": "16:9",
-      "resolution": "1K"
-    }
-  },
-  "generated_at": "2026-11-11T17:40:17+00:00",
-  "overlay": {
-    "kicker": "AGENTIC INCIDENT RECOVERY // FIX ACCEPTANCE",
-    "title": "INCIDENT AGENT FIXES FAIL 39.5%",
-    "hook": "Autonomy must be gated per fault class by a fault-reproducing check, not the agent's own",
-    "anchor": "bottom-left",
-    "light": true,
-    "scrim": 120,
-    "contrast": 5.57,
-    "target": 5.5,
-    "clutter": 0.366,
-    "region_rgb": [
-      82,
-      92,
-      99
-    ],
-    "binding_rgb": [
-      133,
-      148,
-      155
-    ],
-    "title_lines": [
-      "INCIDENT AGENT",
-      "FIXES FAIL 39.5%"
-    ],
-    "subject": 0.199,
-    "ink_subject": 0.103,
-    "spike": 0.293,
-    "generated_at": "2026-11-11T17:40:17+00:00"
+ "slug": "your-agent-fix-fails-39-of-right-calls",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "A fault-check gate in a data hall with green server diagnosis lights on the left and a dark locked recovery bay on the right.",
+   "caption": "A split-screen data hall shows the gap between an agent's accurate diagnosis and its failed recovery gate.",
+   "title": "Fault-Check Gate Split Data Hall",
+   "bytes": 384842,
+   "sha256": "sha256:04a45098f4507aaf75f8dd5114f8f7b2"
   }
+ ],
+ "style": "cinematic_still",
+ "style_label": "Cinematic still",
+ "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "A wide anamorphic 35mm film still in a double-height data hall, split-screen diptych divided by a vertical brushed-steel seam. Left half: a tidy server rack row glowing green status LEDs, polished concrete floor, deep shadows. Right half: an identical rack row behind a heavy steel fault-check gate, padlocked, dark except one red status light above an empty repair bay, scuffed concrete. Hard overhead fluorescent light from above-left, graphite and steel blue with safety-yellow and oxidised-red accents, fine film grain, no text, no logos, no people.",
+ "negative_prompt": "garbled text, random letters, watermarks, labels, UI, readable words",
+ "rationale": "The article describes a decisive operational environment—a live cluster where a fix is either authenticated by an external check or rejected. A cinematic still can stage the data hall with industrial atmosphere and a split-screen contrast, making the verification barrier tangible without falling back to generic datacenter filler.",
+ "cue": "verified recovery, not root-cause accuracy",
+ "subject": "a heavy steel fault-check gate dividing a server row between green diagnosis and dark unverified recovery",
+ "core_thesis": "Verified recovery, not root-cause accuracy, is the gate an incident agent must pass.",
+ "core_conflict": "Detection runs 72.7% to 99.7% while a valid, executed fix lands 14.5% to 60.3%, and invalid plans miss on the operation (67.9%) rather than the service.",
+ "composition": "split-screen diptych with left-right detection-vs-recovery contrast",
+ "alt_text": "A steel gate with a padlock divides a lit server aisle from a dark data hall.",
+ "caption": "Your Agent's Fix Fails: autonomy needs a fault-reproducing check, not the agent's own report.",
+ "title": "Incident Agent Fixes Fail 39.5%",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {},
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-agent-fix-fails-39-of-right-calls/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 402659,
+ "sha256": "sha256:7a94c343f152d7fdcd27868ad70c0f4552eab2f8ecc3cbe2116230cf383fa13a",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 402659,
+  "quality": 80,
+  "sha256": "sha256:7a94c343f152d7fdcd27868ad70c0f4552eab2f8ecc3cbe2116230cf383fa13a",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:aad7477ee127daad6f82b6a79f12d0c8109e35b2ddb9c4d3cfc6809336cf65ef",
+ "render_phash": "0c8e8c9e849e269e82be013e017e017f017f817f017f013e013e037f037f035f",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A server room is divided by a steel bar gate with a padlock, with a lit aisle of racks showing green lights on the left and a dimmer aisle of racks with red lights and yellow cables on the right.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.86,
+  "reason": "The frame shows the article's own mechanism—a fault-check gate separating green diagnosis from dark, unverified recovery in server infrastructure."
+ },
+ "source_hash": "sha256:729f6f6270e10579ab5d8f3ed7f105bc",
+ "source_chars": 5284,
+ "task_id": "eb1cc2bb7e1c7973bfce27d64214e269",
+ "credits": 5.0,
+ "cost_ms": 22,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/eb1cc2bb7e1c7973bfce27d64214e269_1794418806481.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "A wide anamorphic 35mm film still in a double-height data hall, split-screen diptych divided by a vertical brushed-steel seam. Left half: a tidy server rack row glowing green status LEDs, polished concrete floor, deep shadows. Right half: an identical rack row behind a heavy steel fault-check gate, padlocked, dark except one red status light above an empty repair bay, scuffed concrete. Hard overhead fluorescent light from above-left, graphite and steel blue with safety-yellow and oxidised-red accents, fine film grain, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-11T17:40:17+00:00",
+ "overlay": {
+  "kicker": "AGENTIC INCIDENT RECOVERY // FIX ACCEPTANCE",
+  "title": "INCIDENT AGENT FIXES FAIL 39.5%",
+  "hook": "Autonomy must be gated per fault class by a fault-reproducing check, not the agent's own",
+  "anchor": "bottom-left",
+  "light": true,
+  "scrim": 120,
+  "contrast": 5.57,
+  "target": 5.5,
+  "clutter": 0.366,
+  "region_rgb": [
+   82,
+   92,
+   99
+  ],
+  "binding_rgb": [
+   133,
+   148,
+   155
+  ],
+  "title_lines": [
+   "INCIDENT AGENT",
+   "FIXES FAIL 39.5%"
+  ],
+  "subject": 0.199,
+  "ink_subject": 0.103,
+  "spike": 0.293,
+  "generated_at": "2026-11-11T17:40:17+00:00"
+ }
 }
