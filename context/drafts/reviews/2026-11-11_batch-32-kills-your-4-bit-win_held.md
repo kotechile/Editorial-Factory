@@ -1,0 +1,79 @@
+---
+title: "Batch 32 Kills Your 4-Bit Win"
+vertical: gpu_hardware
+kind: evergreen
+archetype: evergreen
+evergreen: true
+persona: infra_engineer
+one_big_thing: "A quantization recipe's speedup is the share of your step time that is memory-bound, so 4-bit weights are 1.95x faster than 16-bit at batch 1 and 1.16x at batch 32, where eight-bit arithmetic overtakes them; past that point four bits buys capacity and a small accuracy bill, never throughput."
+date: 2026-11-11
+slug: batch-32-kills-your-4-bit-win
+meta_title: "Batch 32 Kills Your 4-Bit Win"
+meta_description: "Four-bit weights beat BF16 by 1.95x at batch 1 and 1.16x at batch 32, where FP8 overtakes them. Size the recipe from your batch, not the model card."
+---
+
+<!-- lead -->
+
+A 4-bit checkpoint looks like free throughput, and at batch 1 it very nearly is. On one H100 serving an 8-billion-parameter open model, the 4-bit build decodes 255 tokens a second where the 16-bit build manages 131 [5]. Batch 32 kills that win: the same build reaches 3,241 tokens a second, the eight-bit recipe reaches 3,586, and the four-bit choice is now the slower of the two [5]. Your batch decides which of those you get, because the saving was never in arithmetic. It was in bytes moved.
+
+<!-- tldr -->
+
+## At a glance
+
+- **The shift:** four-bit weights save bandwidth, so they pay at batch 1 and fade as batches grow.
+- **The number:** 1.02x is all that is left at batch 256.
+- **The risk:** four bits buys capacity there, plus a small accuracy bill.
+
+<!-- tension -->
+
+## Where the speedup actually comes from
+
+Decode at batch 1 reads every weight for every token it emits. The step is limited by bytes moved, and 4-bit weights move a quarter of the bytes that 16-bit weights do. The measured gain lands between 1.35x and 2.12x rather than at 4x, because unpacking the weights, the attention work and the KV cache — the stored per-token state a decode step re-reads — do not shrink with them. A weight-only recipe shrinks the book you re-read on every step, not the arithmetic that reads it.
+
+Raise the batch and one read of the weights serves many sequences at once. The matrix multiplies become compute-bound, and 4-bit weights still multiply in 16 bits, so the saving disappears: Gemma 3 12B gains just 1.02x at batch 256 [1]. A long prompt reaches the same wall from the other side, and the A100 gain on Qwen2.5-14B falls from 2.12x at a one-token input to 1.64x at a 30,720-token input [2]. Capacity and speed come apart at different batch sizes, and a team can buy one while believing it bought the other.
+
+Eight-bit recipes change the arithmetic, not only the storage. FP8 runs the multiply in eight bits, and Hopper's FP8 tensor cores are rated at 3,958 teraFLOPS, twice the 1,979 of BF16 [7]. That is why an eight-bit build overtakes the four-bit one as the work turns compute-bound: on an H20 at a 30,720-token prompt, FP8 is 1.68x faster than 16-bit and the AWQ build — activation-aware weight quantization — is 1.42x [2].
+
+| Recipe | Batch 1 | Batch 32 | Batch 32, four-way split | What it changes |
+|---|---|---|---|---|
+| 16-bit compiled baseline | 131 tokens/s | 2,799 | 5,575 | nothing, it is the yardstick |
+| 4-bit weight-only | 255 | 3,241 | 6,334 | bytes moved per token |
+| Float8 dynamic | 166 | 3,586 | 6,159 | precision of the multiply |
+
+I read the table three times before I believed the crossover: the recipe that wins is the one whose saving survives the batch you actually run.
+
+Telling which regime you are in takes one measurement and no theory. Run the same prompt at batch 1 and at the batch your scheduler reaches, and record tokens a second for the 4-bit build and the 16-bit build. If the ratio holds near its batch-1 value, the step is waiting on bytes and the recipe is doing its job. If it falls toward parity, the multiply is the limit, and capacity is all you are buying. A memory-bound step also leaves the compute units idle, so an engine metric that reports queue depth will say which side of the roof you landed on.
+
+## By the numbers
+
+- **1.02x:** what Gemma 3 12B's 4-bit build still returns at batch 256 in vLLM, 13.81 s against 14.07 s [1].
+- **9.94 gigabytes:** the Qwen2.5-14B footprint in 4-bit, against 28.08 gigabytes for 16-bit [2].
+- **69.48 MMLU:** the shipped Gemma 3 12B 4-bit checkpoint, against 71.51 for the model it was built from [6].
+
+<!-- tactical-insight -->
+
+## What I'd watch in the scheduler
+
+My observation is that batch size is rarely yours to pick. Interactive traffic holds batch 1, because a queue of one request is what a user experiences, so the 4-bit recipe keeps most of its advantage there. A throughput tier that packs 32 requests into a step gives most of it back, and teams running both tiers end up serving two checkpoints of one model. That is a second copy of weights in memory, which is the cost the 4-bit build was bought to avoid. None of it is a hardware defect; it is the arithmetic of a batch.
+
+The signal I would watch next is an eight-bit timing at high batch on hardware you own. The record tests FP8 at batch 1 and with long prompts, and grades its large-batch claim low because no in-band source measured it above batch 1 [1]. Until that number exists for your card, treat the crossover as a direction rather than a position, and measure your own engine at your own batch — the way you would check why a card runs out of cache before it runs out of math.
+
+<!-- nuanced-takeaway -->
+
+## The catch
+
+Most published accuracy deltas cannot settle the choice, because the benchmark is the weaker instrument here. HumanEval holds 164 questions, so one run carries a standard error near 3.9 points. That is wider than the −3.05 to +6.10 spread of every delta in the record [3]. No recipe's code score survives that yardstick, so a code benchmark tells you little about which build to ship.
+
+The losses that do survive sit on GSM8K, a grade-school maths word-problem set. AWQ gives up 4.17 points on Qwen3-14B and GPTQ — a second-order correction method — gives up 4.02 on Mistral NeMo, both beyond three standard errors [4]. Meanwhile every eight-bit MMLU delta, on a general knowledge test, stays inside 0.77 points, and 4-bit costs 0.43 to 1.43 [4].
+
+The shipped Gemma 3 12B card is the useful counterweight: its own 4-bit checkpoint reads 2.03 points below its 16-bit parent on full MMLU, above the compiled range, and training that simulates the rounding recovers part of that gap [6]. None of the timings in that record came from a current engine release, and the other accelerator vendors publish no timing in this band at all [1]. The direction is what I trust; the constants are what I would re-measure.
+
+## Sources
+
+- [1] Smit Kadvani, Kriti Faujdar and Spurthi Tallam, "Twice as Fast, Until It Isn't: Quantized Serving of Mid-Size Open LLMs", arXiv:2611.04380v1, 3 November 2026 — https://arxiv.org/html/2611.04380v1
+- [2] Same letter, §3 Table 1 (vLLM 0.6.3, one A100 80GB, Qwen2.5-14B-Instruct) — https://arxiv.org/html/2611.04380v1
+- [3] Same letter, §4, single-run standard errors — https://arxiv.org/html/2611.04380v1
+- [4] Same letter, §4 Table 2, accuracy against BF16 — https://arxiv.org/html/2611.04380v1
+- [5] PyTorch, "Accelerating LLM Inference with GemLite, TorchAO and SGLang", decode throughput table on H100 — https://pytorch.org/blog/accelerating-llm-inference
+- [6] PyTorch, model card "pytorch/gemma-3-12b-it-QAT-INT4", latency and MMLU tables — https://huggingface.co/pytorch/gemma-3-12b-it-QAT-INT4
+- [7] NVIDIA, H100 Tensor Core GPU product page, specifications table — https://www.nvidia.com/en-us/data-center/h100/
