@@ -4,7 +4,7 @@
   "history": [
     {
       "revision": 1,
-      "alt_text": "Robotic picking station with open maintenance panel and diagnostic cart in a warehouse aisle.",
+      "alt_text": "Robotic tote carrier in a warehouse aisle with its maintenance panel open and a diagnostic cart parked beside it.",
       "caption": "A robot fleet's real cost appears when one picking station's service panel swings open and a technician's cart waits beside it.",
       "title": "Robot Station Maintenance Burden in Warehouse Aisle",
       "bytes": 347349,
@@ -27,8 +27,8 @@
   "core_thesis": "The labor saving from removing pickers is a headcount ratio, because each automated station retains a picker-wage operator and adds a higher-wage technician, making technician capacity the limiting factor for scaling.",
   "core_conflict": "Headcount reduction from automation versus substituted maintenance labor at 1.33 times the picker's wage, constrained by the 1+1/N stations-per-technician ratio.",
   "composition": "low-angle telephoto compression with hero station off-center left and repeated stations receding to the right",
-  "alt_text": "Your Robot Adds A $12,260 Trap. Robotic picking station with open maintenance panel and diagnostic cart in a warehouse aisle.",
-  "caption": "Your Robot Adds A $12,260 Trap: The business case for a robot fleet subtracts pickers from a payroll and stops there..",
+  "alt_text": "Robotic tote carrier in a warehouse aisle with its maintenance panel open and a diagnostic cart parked beside it.",
+  "caption": "A maintenance panel open on a robotic tote carrier in a warehouse aisle.",
   "title": "Your Robot Adds A $12,260 Trap",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,

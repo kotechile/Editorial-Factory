@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-robot-adds-a-12260-premium/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Your Robot Adds A $12,260 Trap. Robotic picking station with open maintenance panel and diagnostic cart in a warehouse aisle."
-image_caption: "Your Robot Adds A $12,260 Trap: The business case for a robot fleet subtracts pickers from a payroll and stops there.."
+image_alt: "Robotic tote carrier in a warehouse aisle with its maintenance panel open and a diagnostic cart parked beside it."
+image_caption: "A maintenance panel open on a robotic tote carrier in a warehouse aisle."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
