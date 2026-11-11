@@ -1,0 +1,122 @@
+{
+  "slug": "batch-32-kills-your-4-bit-win",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "H100 accelerator board cutaway contrasting a single 4-bit weight path at batch 1 with eight parallel FP8 paths at batch 32.",
+      "caption": "A split-screen cutaway of an H100 board shows how 4-bit weight savings dominate at batch 1 but yield to 8-bit compute at batch 32.",
+      "title": "Batch 32 Kills Your 4-Bit Win cutaway",
+      "bytes": 381060,
+      "sha256": "sha256:a5a49986ad47e0bb6682b99627ae15fe"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Batch 32 Kills Your 4-BIT Win. H100 accelerator board cutaway contrasting a single 4-bit weight path at batch 1 with eight parallel FP8",
+      "caption": "Batch 32 Kills Your 4-BIT Win: Size the recipe from your batch, not the model card.",
+      "title": "Batch 32 Kills Your 4-BIT Win",
+      "bytes": 390867,
+      "sha256": "sha256:3d65d7a7c859ba42615ef9619a06df45472bdf42c65a79bebf423d1010b772b3"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway of an H100 accelerator board on a brushed-steel workbench in a server room. Split-screen diptych: left half shows batch-1 decode with a single chunky 4-bit weight module and one thin token path feeding a single matrix-multiply engine; right half shows batch-32 with eight parallel FP8 arithmetic modules and dozens of token streams converging, HBM stacks visible. Axonometric projection, flat muted graphite and steel-blue palette with one safety-yellow accent, thin consistent line weight, one directional light from upper left, generous empty margin, no text, no lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, illegible labels",
+  "rationale": "The story explains how a system actually works \u2014 memory-bound versus compute-bound regimes of GPU quantization \u2014 so a technical isometric cutaway can show the internal weight and arithmetic modules rebalancing across batch sizes. It avoids a generic datacenter shot while grounding the abstract speedup tradeoff in recognizable H100 hardware.",
+  "cue": "Batch 32 Kills Your 4-Bit Win",
+  "subject": "H100 accelerator board cutaway contrasting a single 4-bit weight path at batch 1 with eight parallel FP8 paths at batch 32",
+  "core_thesis": "A quantization recipe's speedup is the share of your step time that is memory-bound, so 4-bit weights beat 16-bit at batch 1 but 8-bit arithmetic overtakes them at batch 32.",
+  "core_conflict": "memory-bound single-token decode vs compute-bound multi-sequence throughput; capacity vs speed",
+  "composition": "split-screen diptych left-right contrast: batch-1 single-token 4-bit path on left, batch-32 parallel 8-bit compute on right",
+  "alt_text": "Split-screen cutaway of two accelerator boards: one amber weight block on the left, a fan of blue cables into stacked memory on the right",
+  "caption": "Batch 32 Kills Your 4-BIT Win: Size the recipe from your batch, not the model card.",
+  "title": "Batch 32 Kills Your 4-BIT Win",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/batch-32-kills-your-4-bit-win/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 390867,
+  "sha256": "sha256:3d65d7a7c859ba42615ef9619a06df45472bdf42c65a79bebf423d1010b772b3",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 390867,
+    "quality": 76,
+    "sha256": "sha256:3d65d7a7c859ba42615ef9619a06df45472bdf42c65a79bebf423d1010b772b3",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:28fdac122c40a0a894dd04b71a25a4ebe9cbca7b52bc06243e2428550425810e",
+  "render_phash": "919061b023b345a5098c1d9e36bb746c996493e1c3d3c32347270f0f1d0e994c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen isometric cutaway showing two accelerator boards on a data-center floor with server racks behind them: the left board has one yellow module with a single thin trace running off it, and the right board has a row of eight blue compute blocks with a bundle of eight parallel traces fanning out through the bracket.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The diptych literally stages the article's mechanism \u2014 one serial path at batch 1 versus eight parallel paths at batch 32 on GPU boards \u2014 so a reader would recognize the batch-scaling comparison, though the 4-bit/8-bit labels and the FP8 crossover are not shown."
+  },
+  "source_hash": "sha256:d8e4df7cd5814cde6244b65c3055d96b",
+  "source_chars": 6057,
+  "task_id": "b0154a5c549aeaefc6290a20ac36a818",
+  "credits": 18.0,
+  "cost_ms": 26,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_fbb02edcee44c8f6f64b995c6b88c76d.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway of an H100 accelerator board on a brushed-steel workbench in a server room. Split-screen diptych: left half shows batch-1 decode with a single chunky 4-bit weight module and one thin token path feeding a single matrix-multiply engine; right half shows batch-32 with eight parallel FP8 arithmetic modules and dozens of token streams converging, HBM stacks visible. Axonometric projection, flat muted graphite and steel-blue palette with one safety-yellow accent, thin consistent line weight, one directional light from upper left, generous empty margin, no text, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-11T18:42:57+00:00",
+  "overlay": {
+    "kicker": "LLM INFERENCE // BATCH-SIZE QUANTIZATION",
+    "title": "BATCH 32 KILLS YOUR 4-BIT WIN",
+    "hook": "Size the recipe from your batch, not the model card",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.77,
+    "target": 5.5,
+    "clutter": 0.336,
+    "region_rgb": [
+      121,
+      128,
+      135
+    ],
+    "binding_rgb": [
+      171,
+      174,
+      179
+    ],
+    "title_lines": [
+      "BATCH 32 KILLS",
+      "YOUR 4-BIT WIN"
+    ],
+    "subject": 0.262,
+    "ink_subject": 0.082,
+    "spike": 0.396,
+    "generated_at": "2026-11-11T18:42:57+00:00"
+  }
+}

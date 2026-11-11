@@ -10,6 +10,12 @@ date: 2026-11-11
 slug: batch-32-kills-your-4-bit-win
 meta_title: "Batch 32 Kills Your 4-Bit Win"
 meta_description: "Four-bit weights beat BF16 by 1.95x at batch 1 and 1.16x at batch 32, where FP8 overtakes them. Size the recipe from your batch, not the model card."
+image_path: "context/assets/illustrations/batch-32-kills-your-4-bit-win/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Split-screen cutaway of two accelerator boards: one amber weight block on the left, a fan of blue cables into stacked memory on the right"
+image_caption: "Batch 32 Kills Your 4-BIT Win: Size the recipe from your batch, not the model card."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
