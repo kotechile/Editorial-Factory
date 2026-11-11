@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T17:41:06Z",
+  "updated_at": "2026-11-11T18:11:27Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6519,6 +6519,24 @@
         "Related reading"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-11-11",
+      "public": false
+    },
+    {
+      "slug": "2026-11-11_your-agent-says-done-40-of-66",
+      "title": "Your Agent Says Done: 40 of 66 Without Proof",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Four ways to say done",
+        "By the numbers",
+        "What the runtime enforces",
+        "Where the receipt stops",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-11",
       "public": false
     },
