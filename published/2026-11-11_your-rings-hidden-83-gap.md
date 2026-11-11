@@ -13,8 +13,8 @@ meta_description: "A contents line is a share of the house, and the jewelry cap 
 image_path: "context/assets/illustrations/your-rings-hidden-83-gap/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "Your Ring'S Hidden 83% Gap. Diamond ring at the edge of a dark gap between oak floorboards in a dim hallway"
-image_caption: "Your Ring'S Hidden 83% Gap: A $1,500 jewelry cap applies to theft alone, so raising contents limits never fixes."
+image_alt: "Diamond ring at the edge of a dark gap between oak floorboards in a dim hallway"
+image_caption: "A diamond ring at the edge of a gap between oak floorboards: the jewelry cap applies to theft alone."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
