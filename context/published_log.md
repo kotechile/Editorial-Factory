@@ -351,6 +351,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-10 | control_tower_exception_orchestration | your-15-day-entry-gap | Your 15-Day Entry Gap: Then Custody | https://pressflow.aichieve.net/published/2026-11-10_your-15-day-entry-gap.md | reader site only |
 | 2026-11-11 | agentic_resilience_failure | your-replay-isnt-the-run | Your Replay Isn't the Run: 9 of 24 Differ | https://pressflow.aichieve.net/published/2026-11-11_your-replay-isnt-the-run.md | reader site only |
 | 2026-11-11 | multi_agent_enterprise_fabric | your-planner-is-not-your-model | Your Planner Is Not Your Model: 6.4 Points | https://pressflow.aichieve.net/published/2026-11-11_your-planner-is-not-your-model.md | reader site only |
+| 2026-11-11 | gpu_hardware | 8-hi-hbm-costs-more-per-gigabit | 8-Hi HBM Costs More per Gigabit | https://pressflow.aichieve.net/published/2026-11-11_8-hi-hbm-costs-more-per-gigabit.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
