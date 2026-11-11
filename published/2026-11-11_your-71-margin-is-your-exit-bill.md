@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-71-margin-is-your-exit-bill/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "71% Margin Is Your Exit Bill. AutoStore warehouse grid receding to a roll-up door with a large oxidised red padlock."
-image_caption: "71% Margin Is Your Exit Bill: The seller's gross margin is the buyer's exit cost, so price the exit before signing."
+image_alt: "A long warehouse aisle of black storage bins receding to a closed roll-up door, with a large red padlock standing on the concrete floor."
+image_caption: "A red padlock on the warehouse floor, at the door the exit would have gone through."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -73,14 +73,11 @@ The margin is no cleaner. What is left after the cost of materials is not a meas
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your $15 Air Rule, $195 Break-Even" -> /your-15-air-rule-195-break-even/ [same site (aichieve.net); same category; topical overlap: bill, cost, order] Link "Your $15 Air Rule, $195 Break-Even" in the section where the article touches bill, cost, order. -->
-<!-- internal-link hint: "63.6% OTIF: Your Hidden Quantity Gap" -> /your-hidden-quantity-gap/ [same site (aichieve.net); same category; topical overlap: quarter, third] Link "63.6% OTIF: Your Hidden Quantity Gap" in the section where the article touches quarter, third. -->
-<!-- internal-link hint: "Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing…" -> /inventory-carrying-cost-rate/ [same site (aichieve.net); same category; topical overlap: cost, dollar] Link "Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing…" in the section where the article touches cost, dollar. -->
 ## Related reading
 
-- [Your $15 Air Rule, $195 Break-Even](/your-15-air-rule-195-break-even/) — more on Supply Chain & Operations
-- [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
-- [Inventory Carrying Cost Is 20–30% a Year, Not Your 7% Borrowing…](/inventory-carrying-cost-rate/) — more on Supply Chain & Operations
+- [Your 100,000 Totes Skip the Cost](/100000-totes-skip-the-cost/)
+- [$6 Billion, Same 25 Buildings](/second-layer-has-no-unit-price/)
+- [Your Robot Budget's 39-Year Gap](/your-robot-budget-39-year-gap/)
 <!-- internal-links:end -->
 
 ## Sources
