@@ -267,6 +267,17 @@ draft claimed the category's order book would be "marked twice before December" 
 (AutoStore's Q4) is not before December; the sentence was repaired by hand after the accept and the
 gates re-run. Report the rewrite delta in the run log so a no-op is visible.
 
+**A zero-diff ACCEPT is not a rewrite, and the whole-document humanizer is the fallback (same day, `21-of-isaias-claims-paid-nothing`).**
+The reviewer accepted attempt 1 and wrote a `_final` **byte-identical** to the draft (`diff` empty, rhythm
+12.1 → 12.1, health 0.562 → 0.562) — the stage graded the draft against itself. Always `diff` the draft
+against the `_final` before publishing; on an empty diff, run the humanizer directly
+(`scripts/loop3_<slug>_<date>.py` copying `loop3_annualplan_1107.py`, 900 s + `max_tokens=32000`) and then
+`python3 scripts/review_audit.py --draft A --final B --brief <verified brief>` to prove the facts survived.
+That fallback rewrote the lede into an unsupported causal claim ("closed with nothing paid *because* the
+file decided the claim"), dropped two load-bearing figures, replaced a numbers bullet, and moved the earned
+internal link into the closing paragraph — so a humanizer pass must be read against the verified brief's
+**binding rulings**, not just its figure list, and the debt is repaired by hand before the push.
+
 **The art director's alt can arrive as the overlay headline glued to a sentence, naming a real brand
 over a generic render.** Observed: "71% Margin Is Your Exit Bill. AutoStore warehouse grid receding to
 a roll-up door with a large oxidised red padlock." on a header whose shelving was generic. The glue
