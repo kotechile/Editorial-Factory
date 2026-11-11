@@ -14,6 +14,12 @@ meta_title: "8-Hi HBM Costs More per Gigabit"
 meta_title_source: "derived_from_title"
 meta_description: "Samsung has already sold its 2027 high bandwidth memory (HBM) at a price agreed with customers. Because the shorter 8-Hi stack carries fewer memory dies over…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/8-hi-hbm-costs-more-per-gigabit/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "High bandwidth memory stack with eight layers next to a taller twelve-layer stack, showing per-bit cost difference."
+image_caption: "A shorter 8-Hi memory stack sits beside a taller 12-Hi stack, making the higher per-gigabit cost physically visible."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

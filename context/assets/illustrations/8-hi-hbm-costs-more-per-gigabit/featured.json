@@ -1,0 +1,82 @@
+{
+  "slug": "8-hi-hbm-costs-more-per-gigabit",
+  "revision": 1,
+  "history": [],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Macro photograph of an unbranded high bandwidth memory stack with eight visible DRAM layers on a base die, set beside a taller twelve-layer stack on an anti-static mat inside a data hall. A single soft key light from the left rakes low across the chips, carving deep shadows and revealing matte black packaging, thin gold interconnect edges, and faint dust. Split-screen diptych: left half short stack, right half tall stack; 100mm macro lens, razor-thin focal plane on top layers, background server racks falling into dark bokeh. Graphite, slate grey, one amber highlight, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story turns on the physical architecture difference between 8-Hi and 12-Hi HBM stacks and its per-gigabit cost consequence. A 100mm macro lens makes the layer count and base die tangible, while a split-screen diptych contrasts the two heights directly. The data hall setting grounds the memory stack in the real infrastructure environment.",
+  "cue": "the shorter stack costs more per bit",
+  "subject": "high bandwidth memory stack with eight DRAM layers on a base die beside a taller twelve-layer stack",
+  "core_thesis": "Samsung's 2027 HBM supply is already sold at agreed prices, with the shorter 8-Hi stack costing 10\u201320% more per gigabit than 12-Hi because both stacks share one base die, so the only remaining budget lever is to need less memory.",
+  "core_conflict": "per-gigabit cost penalty of the shorter 8-Hi stack versus the fixed base-die overhead shared with 12-Hi, forcing buyers to reduce memory demand rather than negotiate price",
+  "composition": "split-screen diptych; left half short stack, right half tall stack",
+  "alt_text": "High bandwidth memory stack with eight layers next to a taller twelve-layer stack, showing per-bit cost difference.",
+  "caption": "A shorter 8-Hi memory stack sits beside a taller 12-Hi stack, making the higher per-gigabit cost physically visible.",
+  "title": "8-Hi vs 12-Hi HBM stack cost comparison",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {
+    "style": "editorial_macro",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/8-hi-hbm-costs-more-per-gigabit/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 385881,
+  "sha256": "sha256:028252243cc37b001ec5e69f6b07c9b9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 385881,
+    "quality": 84,
+    "source_size": [
+      1344,
+      768
+    ],
+    "scale": 1.786,
+    "sha256": "sha256:028252243cc37b001ec5e69f6b07c9b9bc7bcb845bdecd0a35a3d15c01d2bfdf",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:abe2ea4ee4e31502dd10c31e66439f7f7698a03d21a7c9f35cccdeb4884863e5",
+  "render_phash": "f29bf29bf29b369b369f37b91fbd0dbc69b9f979786cfc787a7c1f1f878301a0",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two stacks of dark square plates with gold-toned edges, a shorter one on the left and a taller one on the right, each on a metallic base on a textured grey surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.93,
+    "reason": "The split diptych directly illustrates the article's comparison between a shorter 8-Hi HBM stack and a taller 12-Hi stack."
+  },
+  "source_hash": "sha256:84e46c95b7850b655311a8b378f8c24e",
+  "source_chars": 4716,
+  "task_id": "b77438c38f3affc6f5a4c17d1f8f4004",
+  "credits": 5.0,
+  "cost_ms": 163,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b77438c38f3affc6f5a4c17d1f8f4004_1794398241507.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Macro photograph of an unbranded high bandwidth memory stack with eight visible DRAM layers on a base die, set beside a taller twelve-layer stack on an anti-static mat inside a data hall. A single soft key light from the left rakes low across the chips, carving deep shadows and revealing matte black packaging, thin gold interconnect edges, and faint dust. Split-screen diptych: left half short stack, right half tall stack; 100mm macro lens, razor-thin focal plane on top layers, background server racks falling into dark bokeh. Graphite, slate grey, one amber highlight, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T11:57:28+00:00"
+}
