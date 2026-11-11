@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T20:14:05Z",
+  "updated_at": "2026-11-11T20:23:43Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6482,7 +6482,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/batch-32-kills-your-4-bit-win/"
     },
     {
       "slug": "2026-11-11_your-44x-ticket-saving-needs-a-busy-box",
@@ -6538,7 +6539,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-fix-fails-39-of-right-calls/"
     },
     {
       "slug": "2026-11-11_your-agent-says-done-40-of-66",
@@ -6556,7 +6558,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-says-done-40-of-66/"
     },
     {
       "slug": "2026-11-11_your-planner-is-not-your-model",
@@ -6593,7 +6596,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-rate-limit-1-39-a-second/"
     },
     {
       "slug": "2026-11-11_your-replay-isnt-the-run",
@@ -6629,7 +6633,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-rings-hidden-83-gap/"
     },
     {
       "slug": "2026-11-11_your-robot-adds-a-12260-premium",
@@ -6647,7 +6652,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-11",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-robot-adds-a-12260-premium/"
     }
   ]
 }
