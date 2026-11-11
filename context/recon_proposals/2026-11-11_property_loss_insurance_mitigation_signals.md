@@ -16,6 +16,7 @@
 
 ## Dated background
 
+- Florida Office of Insurance Regulation, "Hurricane Isaias" catastrophe claims data page, table as of 6 November 2026 — https://floir.gov/home/hurricane-isaias. The primary record behind row 6: 68,071 claims, $735,515,012 of incurred losses, 25,211 closed with payment, 14,402 closed without, 20,482 open without payment, 58.2% closed, residential 55,471 of the count. The page carries no reason split and no average payment; the split in row 6 is the newsroom's reading of this table.
 - California FAIR Plan, key statistics and data file set, Fiscal Year End 2026 (as of 30 September 2026), posted October 2026 — https://www.cfpnet.com/key-statistics-data. The page also hosts the residential premium and exposure tables by policy category and wildfire risk score.
 - California FAIR Plan, "Wildfire Hardening Discounts for Dwelling Fire & Commercial Policies", last revised 11/2025 — https://www.cfpnet.com/wp-content/uploads/2025/11/Wildfire-Hardening-Discounts-for-Dwelling-Fire-Commercial-Policies-2025.11.15.pdf. The claim of record for the 12-discount schedule, the 16.4% ceiling and the all-10-criteria completion rule.
 - Colorado General Assembly, HB25-1182 "Risk Model Use in Property Insurance Policies" — https://leg.colorado.gov/bills/hb25-1182. The statute behind row 1: mitigation discounts must be posted on the insurer's website alongside the appeal process, and the annual notice must carry the wildfire risk score and any other risk classification used to underwrite, non-renew, price, create a rate differential or surcharge.

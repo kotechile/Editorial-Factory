@@ -483,3 +483,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-11 | `8-hi-hbm-costs-more-per-gigabit` | gpu_hardware | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/8-hi-hbm-costs-more-per-gigabit/featured.jpg` |
 | 2026-11-11 | `your-44x-ticket-saving-needs-a-busy-box` | enterprise_build_vs_buy | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-44x-ticket-saving-needs-a-busy-box/featured.jpg` |
 | 2026-11-11 | `your-71-margin-is-your-exit-bill` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-71-margin-is-your-exit-bill/featured.jpg` |
+| 2026-11-11 | `21-of-isaias-claims-paid-nothing` | property_loss_insurance_mitigation | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/21-of-isaias-claims-paid-nothing/featured.jpg` |

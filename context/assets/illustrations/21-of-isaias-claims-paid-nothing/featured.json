@@ -1,0 +1,124 @@
+{
+  "slug": "21-of-isaias-claims-paid-nothing",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Unmarked manila folder with blank pages and a blackened edge on a garage workbench.",
+      "caption": "A homeowner's appeal file, thick with blank pages, sits on a garage workbench with a scorched corner.",
+      "title": "Unmarked Insurance File on Garage Workbench",
+      "bytes": 368912,
+      "sha256": "sha256:a85c2d78c1d75e4dfe097611b7225785"
+    },
+    {
+      "revision": 2,
+      "alt_text": "21% Of Isaias Claims Paid Nothing. Unmarked manila folder with blank pages and a blackened edge on a garage workbench.",
+      "caption": "21% Of Isaias Claims Paid Nothing: On 12 October Colorado's insurance office told carriers what they now owe an owner.",
+      "title": "21% Of Isaias Claims Paid Nothing",
+      "bytes": 387079,
+      "sha256": "sha256:80cbefbedf8788dc4cb6c9cd3c5a486f9970f95da380fff008fe47700d82cc7d"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing — a part, a material, a component, a document — and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A 100mm macro photograph of an unmarked manila file folder, thick with blank pages, resting on a weathered garage workbench. Soft directional daylight from the left rakes across the paper texture, revealing a faint blackened edge on the folder's corner. Palette: bone white, graphite, deep pine green. The folder sits off-center on the left third, with the workbench and dark garage background falling away into shallow depth of field. Fine film grain, tactile paper surface, unmarked, blank pages.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, legible text",
+  "rationale": "Editorial macro fits a story that turns on one physical artifact—the file—and its material presence. The 100mm focal plane isolates the folder, letting paper texture and the charred edge carry the narrative without legible text.",
+  "cue": "a file the owner can produce on demand",
+  "subject": "an unmarked manila file folder on a garage workbench",
+  "core_thesis": "A wildfire credit and a claim payment are decided by the same thing—a file the owner can produce on demand—so the state's new score-appeal clock is the cheapest rehearsal for the claim that follows, and a mitigation spend nobody papered is only half-bought.",
+  "core_conflict": "The tension between documented proof and payout: the same owner-produced file that unlocks a premium discount also determines whether a hurricane claim closes with payment, yet only when it has been papered.",
+  "composition": "extreme asymmetry, folder off-center on left third, background falling into soft blur",
+  "alt_text": "An unmarked manila file folder thick with blank pages, its folded edge blackened, on a weathered garage workbench.",
+  "caption": "A homeowner's file thick with blank pages on a garage workbench, its corner scorched.",
+  "title": "Unmarked Insurance File on Garage Workbench",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "editorial_macro",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/21-of-isaias-claims-paid-nothing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 387079,
+  "sha256": "sha256:80cbefbedf8788dc4cb6c9cd3c5a486f9970f95da380fff008fe47700d82cc7d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 387079,
+    "quality": 84,
+    "sha256": "sha256:80cbefbedf8788dc4cb6c9cd3c5a486f9970f95da380fff008fe47700d82cc7d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:48e9fe3a2015f405b21db55aca29036a44fb94fbd543436ae722f31d5a36c971",
+  "render_phash": "22179fdc94c99dcb09ef1dee1de91de01ded8deb8d630de62fc90f732dff1fef",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A manila file folder stuffed with a thick stack of blank white papers stands on a scarred wooden workbench, with a dark garage interior falling out of focus behind it on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The article's mechanism is the paper file an owner must be able to produce on demand for a score appeal or claim, and an unmarked folder packed with documents on a home workbench is that object rather than generic filler."
+  },
+  "source_hash": "sha256:47ef285dd648f525e8492a20c4f25d1a",
+  "source_chars": 5827,
+  "task_id": "7b20fd4a3aadd118565d63c4df92bb5f",
+  "credits": 5.0,
+  "cost_ms": 64,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/7b20fd4a3aadd118565d63c4df92bb5f_1794403540028.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A 100mm macro photograph of an unmarked manila file folder, thick with blank pages, resting on a weathered garage workbench. Soft directional daylight from the left rakes across the paper texture, revealing a faint blackened edge on the folder's corner. Palette: bone white, graphite, deep pine green. The folder sits off-center on the left third, with the workbench and dark garage background falling away into shallow depth of field. Fine film grain, tactile paper surface, unmarked, blank pages.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T13:25:45+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "21% OF ISAIAS CLAIMS PAID NOTHING",
+    "hook": "On 12 October Colorado's insurance office told carriers what they now owe an owner",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 14.77,
+    "target": 5.5,
+    "clutter": 0.318,
+    "region_rgb": [
+      21,
+      28,
+      26
+    ],
+    "binding_rgb": [
+      19,
+      30,
+      24
+    ],
+    "title_lines": [
+      "21% OF ISAIAS",
+      "CLAIMS PAID",
+      "NOTHING"
+    ],
+    "subject": 0.136,
+    "ink_subject": 0.039,
+    "spike": 0.268,
+    "generated_at": "2026-11-11T13:25:45+00:00"
+  }
+}

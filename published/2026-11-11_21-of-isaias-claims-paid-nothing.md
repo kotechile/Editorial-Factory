@@ -14,6 +14,12 @@ meta_title: "21% of Isaias Claims Paid Nothing"
 meta_title_source: "derived_from_title"
 meta_description: "On 12 October Colorado's insurance office told carriers what they now owe an owner who asks why a wildfire score moved the price, since a score can lift a…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/21-of-isaias-claims-paid-nothing/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "An unmarked manila file folder thick with blank pages, its folded edge blackened, on a weathered garage workbench."
+image_caption: "A homeowner's file thick with blank pages on a garage workbench, its corner scorched."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
