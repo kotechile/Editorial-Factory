@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T19:44:03Z",
+  "updated_at": "2026-11-11T20:14:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6613,6 +6613,23 @@
       "date": "2026-11-11",
       "public": true,
       "url": "https://aichieve.net/your-replay-isnt-the-run/"
+    },
+    {
+      "slug": "2026-11-11_your-rings-hidden-83-gap",
+      "title": "Your Ring's Hidden 83% Gap",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The cap inside the limit",
+        "By the numbers",
+        "Where the rider decides it",
+        "What the cap cannot fix"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-11",
+      "public": false
     },
     {
       "slug": "2026-11-11_your-robot-adds-a-12260-premium",

@@ -1,0 +1,112 @@
+{
+  "slug": "your-rings-hidden-83-gap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Diamond ring at the edge of a dark gap between oak floorboards in a dim hallway",
+      "caption": "A diamond ring sits at the edge of a dark gap between oak floorboards, making the hidden insurance gap tangible.",
+      "title": "Ring at the floorboard gap",
+      "bytes": 406068,
+      "sha256": "sha256:b456108e0cae6a712b38aff2743077bb"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme close-up macro photograph, 100mm lens, of a diamond solitaire ring lying at the edge of a narrow dark gap between two wide oak floorboards in a dim hallway. Single hard shaft of daylight from the left rakes across the pale wood, casting a long thin shadow; the ring is sharply focused, its facets glint, the floorboards and gap fall away into soft bokeh. Bone white, graphite, deep pine green; raw oak grain, polished platinum band. No text, no engraving, no labels. Extreme asymmetry, shallow depth of field, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, letters, numbers, UI, watermark",
+  "rationale": "The story turns on a single physical artifact\u2014the ring\u2014and the hidden financial gap beneath it. A 100mm macro photograph isolates the ring against the floorboard crevice, turning an abstract policy number into a visible physical gap without any text.",
+  "cue": "Your Ring's Hidden 83% Gap",
+  "subject": "a diamond solitaire ring lying at the edge of a dark gap between two oak floorboards",
+  "core_thesis": "A contents limit is a stacked set of numbers where a category cap and theft-only peril sublimit leave a high-value item underinsured; only a scheduled rider lifts the cap.",
+  "core_conflict": "The homeowner's expectation of full contents coverage versus the fine-print category sublimit and theft-only peril.",
+  "composition": "extreme asymmetry with the ring at the left third, the floorboard gap running diagonally through the frame, and the right side falling into deep shadow",
+  "alt_text": "Your Ring'S Hidden 83% Gap. Diamond ring at the edge of a dark gap between oak floorboards in a dim hallway",
+  "caption": "Your Ring'S Hidden 83% Gap: A $1,500 jewelry cap applies to theft alone, so raising contents limits never fixes.",
+  "title": "Your Ring'S Hidden 83% Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-rings-hidden-83-gap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408694,
+  "sha256": "sha256:4472f9ddc8c92dce0eb66c895fdb5ab156839a141a4d9e05b59739a8ef4dc53a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408694,
+    "quality": 84,
+    "sha256": "sha256:4472f9ddc8c92dce0eb66c895fdb5ab156839a141a4d9e05b59739a8ef4dc53a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f1a390958b033916dfa4270cead4b58bbb1d730499f15ca0477d9422fd811737",
+  "render_phash": "ec1e3c3d7fd983b33e653de10fc907810721cf09be737c13fc9df81ce003d201",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A diamond solitaire ring with a silver-toned band resting on a light oak floorboard alongside a dark, diagonal gap running between two boards.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.87,
+    "reason": "The image depicts the exact object the article is about \u2014 a diamond ring sitting at the edge of a dark gap that stands in for the theft-limit coverage gap \u2014 so a reader would connect it directly to the headline's underinsured-jewelry claim."
+  },
+  "source_hash": "sha256:ff42dd3caf55ca4082b2b3220d52add0",
+  "source_chars": 4481,
+  "task_id": "3f83a99e51fa7effc8f1fe514489adaa",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3f83a99e51fa7effc8f1fe514489adaa_1794428002732.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme close-up macro photograph, 100mm lens, of a diamond solitaire ring lying at the edge of a narrow dark gap between two wide oak floorboards in a dim hallway. Single hard shaft of daylight from the left rakes across the pale wood, casting a long thin shadow; the ring is sharply focused, its facets glint, the floorboards and gap fall away into soft bokeh. Bone white, graphite, deep pine green; raw oak grain, polished platinum band. No text, no engraving, no labels. Extreme asymmetry, shallow depth of field, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T20:13:31+00:00",
+  "overlay": {
+    "kicker": "JEWELRY THEFT // INSURANCE SUBLIMIT",
+    "title": "YOUR RING'S HIDDEN 83% GAP",
+    "hook": "A $1,500 jewelry cap applies to theft alone, so raising contents limits never fixes",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.79,
+    "target": 5.5,
+    "clutter": 0.256,
+    "region_rgb": [
+      184,
+      164,
+      141
+    ],
+    "binding_rgb": [
+      177,
+      150,
+      123
+    ],
+    "title_lines": [
+      "YOUR RING'S",
+      "HIDDEN 83% GAP"
+    ],
+    "subject": 0.146,
+    "ink_subject": 0.023,
+    "spike": 0.149,
+    "generated_at": "2026-11-11T20:13:31+00:00"
+  }
+}
