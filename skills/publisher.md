@@ -135,6 +135,8 @@ would look green while nothing reached a front (verify.sh §8.5 greps for the se
    the pass derives and returns the artifact byte-identical otherwise, and `test_article_assets.py`
    fails on any artifact a pass would rewrite (14/14 currently unchanged).
 
+6. **A `--refresh-live` re-uploads the header as a NEW attachment, and the previous one is left behind (learned 2026-11-11).** The illustration digest is the body text, but the attachment slug is uniquified by WordPress — so a refresh after a body or frontmatter change can attach `…-featured-1.jpg` as a second media record, move the post's `featured_media` to the new id, and leave the old attachment live and unreferenced while an alt/caption correction made on the *old* id never reaches the post. Read `posts/<id>?context=edit&_fields=featured_media` to learn which media id the post actually uses, PATCH alt/caption on **that** id, delete the superseded attachment (`DELETE media/<old>?force=true`) only after confirming the post does not reference it, then force a front rebuild: the reader build made before the swap keeps serving the old URL, which 404s the moment the old attachment is gone. Re-read the page's `<img src>`/`alt` afterwards, and re-check the excerpt — the derived `meta_description` can come back cut mid-phrase even when its character count looks correct.
+
 ## 3. Distribution — removed
 There is none. The LinkedIn and Reddit channel — the dashboard's Distribution to-do queue, the
 app-promotion catalog/seeding, the `linkedin_posts` rows and the `LINKEDIN_AUTO_POST` switch — was
