@@ -68,7 +68,9 @@ A benchmark of 55 faults across 16 Kubernetes operator projects found agents spo
 
 What I find hardest to square is that the study calling for measured records does not meet its own bar. Its "would have reached" verdicts are judgments about a trace, not real tests, and the authors say so [2]. The sample is 96 traces out of 203, picked by annotation batch rather than at random [2]. Both corpora cover question answering and coding inside sandboxes, so no run touches a shared system. These numbers show what failures look like, not what a control would have prevented.
 
-A restore is not a universal repair either. A local checkpoint alone would have rescued 35 of the 95 runs, while in 56 the error sat in a plan or a policy that a restore would faithfully replay [2]. That is the uncomfortable part of the standard. The test only shows that history mattered if the frozen state carried the whole history, random stream included. Most snapshots do not. The record is still worth writing, because it is the only part of this anyone can test later.
+A restore is not a universal repair either. A local checkpoint alone would have rescued 35 of the 95 runs, while in 56 the error sat in a plan or a policy that a restore would faithfully replay [2]. That is the uncomfortable part of the standard. The test only shows that history mattered if the frozen state carried the whole history, random stream included. Most snapshots do not.
+
+At the higher tool-failure rate in the same experiment, the divergence reached 20 of the 24 states [1]. The record is still worth writing, because it is the only part of this anyone can test later.
 
 <!-- internal-links -->
 
