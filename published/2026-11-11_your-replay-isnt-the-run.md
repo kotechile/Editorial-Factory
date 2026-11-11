@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-replay-isnt-the-run/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Your Replay Isn'T The Run. Five identical paper snapshot cards split-screened against one torn snapshot and a skewed replay certificate on"
-image_caption: "Your Replay Isn'T The Run: Your postmortem names the agent and the step. Then someone restores the checkpoint."
+image_alt: "Five halftone photo cards in a row, and beside them a torn card lying over a yellow card, on a brushed-steel surface."
+image_caption: "Five identical cards under one raking light, and the torn one that no longer matches the run."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -78,9 +78,9 @@ A restore is not a universal repair either. A local checkpoint alone would have 
 <!-- internal-link hint: "68 Loops Your Runtime Never Stopped" -> /agent-loop-bound-not-a-budget/ [same site (aichieve.net); same category; topical overlap: agent] Link "68 Loops Your Runtime Never Stopped" in the section where the article touches agent. -->
 ## Related reading
 
-- [60.7% of Agent Deletes Ask Nobody](/your-agent-deletes-ask-nobody/) — more on Autonomous & Agentic Workflows
-- [Your Agent's Next Step](/gate-the-step-not-the-model/) — more on Autonomous & Agentic Workflows
-- [68 Loops Your Runtime Never Stopped](/agent-loop-bound-not-a-budget/) — more on Autonomous & Agentic Workflows
+- [Your 90% Restart Monitor Proves Nothing](/your-90-restart-monitor-proves-nothing/) — more on Autonomous & Agentic Workflows
+- [Your Agent's Next Step: 11-14x Likelier to Fail](/gate-the-step-not-the-model/) — more on Autonomous & Agentic Workflows
+- [Your Undo Is 14.6x Cheaper](/your-undo-is-14-6x-cheaper/) — more on Autonomous & Agentic Workflows
 <!-- internal-links:end -->
 
 ## Sources
