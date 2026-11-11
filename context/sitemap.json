@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T12:41:48Z",
+  "updated_at": "2026-11-11T13:20:53Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6425,6 +6425,24 @@
       "date": "2026-11-10",
       "public": true,
       "url": "https://aichieve.net/your-pager-caps-at-2-incidents/"
+    },
+    {
+      "slug": "2026-11-11_21-of-isaias-claims-paid-nothing",
+      "title": "21% of Isaias Claims Paid Nothing",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Colorado timed the price",
+        "By the numbers",
+        "Florida's gate has no clock",
+        "What the proof does not settle",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-11",
+      "public": false
     },
     {
       "slug": "2026-11-11_8-hi-hbm-costs-more-per-gigabit",
