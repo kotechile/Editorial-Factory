@@ -255,3 +255,29 @@ deletion, not drift. Do not rebuild it: the 📣 Distribution tab, `/api/distrib
 posts to a social platform, and no run waits for an approval before the article reaches the reader
 site. If a social channel is ever wanted again, it is a new decision with a named destination.
 
+
+## 8. Two defects the gates accept (learned 2026-11-11, `your-71-margin-is-your-exit-bill`)
+
+**A frontier ACCEPT can be a near-verbatim rewrite — read the copy yourself before calling it humanized.**
+`scripts/article_reviewer.py` accepted attempt 1 with 0 hard failures and 0 regressions, and the
+`_final` differed from the draft by one clause ("…eight days later, on 5 November"); 910 → 912 words,
+rhythm 9.8 → 9.7. That is a legitimate pass — a draft already in voice converges in one pass — but the
+frontier did not re-derive the copy, so any accuracy defect in the draft survives verbatim. Here the
+draft claimed the category's order book would be "marked twice before December" while the next print
+(AutoStore's Q4) is not before December; the sentence was repaired by hand after the accept and the
+gates re-run. Report the rewrite delta in the run log so a no-op is visible.
+
+**The art director's alt can arrive as the overlay headline glued to a sentence, naming a real brand
+over a generic render.** Observed: "71% Margin Is Your Exit Bill. AutoStore warehouse grid receding to
+a roll-up door with a large oxidised red padlock." on a header whose shelving was generic. The glue
+reads as a duplicated title to a screen reader and the vendor name asserts the image is its product.
+Fix in one write: rewrite as one complete sentence describing only what the pixels show (verify with
+vision first), then reconcile media `alt_text`/`caption` (Basic auth), the artifact's
+`image_alt`/`image_caption`, and the row's `metadata.illustration.alt_text` /
+`metadata.wordpress.media_alt`. Then force the front's rebuild — the static build embeds the old string.
+
+**Curating the generated Related-reading block must be the last write.** `internal_links.py`
+justifies its picks on single incidental tokens ("quarter, third" produced an OTIF piece for a
+warehouse-capex story); when nothing qualifies, replace the block with same-vertical pages that answer
+200 and write it to the artifact, the Supabase row and the CMS post *after* any `--refresh-live`,
+which regenerates it.
