@@ -1,0 +1,112 @@
+{
+  "slug": "your-planner-is-not-your-model",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Central planning console with fiber conduits fanning to server racks in a darkened data hall.",
+      "caption": "A backlit routing console splits one warm beam into six fiber paths, echoing how a single written plan propagates to multiple models.",
+      "title": "Plan Transfer in Data Hall",
+      "bytes": 287314,
+      "sha256": "sha256:d12e00c2f7228bc7678938be78875d58"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A wide cinematic still inside a dark data hall. On the left third stands a polished steel planning console with a blank backlit glass diffuser glowing warm white; six thin fiber conduits fan out from it to charcoal server racks on the right. Hard amber key light from the left rakes the console, while cool steel-blue ambient fills the hall. 35mm anamorphic, shallow depth of field, asymmetric composition, graphite, steel blue and amber palette, brushed steel and glass, fine film grain, no people, no text, no signage, no letters.",
+  "negative_prompt": "garbled text, random lettering, watermarks, UI, numbers, signage",
+  "rationale": "Cinematic still fits the decisive moment of plan transfer between models in a physical data hall. It allows an establishing wide shot with dramatic directional light and environmental storytelling, avoiding static product shots or macro abstractions, while meeting the site's industrial palette.",
+  "cue": "workflow is a portable artifact with its own measured quality",
+  "subject": "The central planning console and its fiber fan-out to six server racks.",
+  "core_thesis": "In an agent fabric the workflow is a portable artifact with its own measured quality: who writes the plan matters more than which model runs it.",
+  "core_conflict": "Plan authorship quality vs model execution skill: a stronger solo model may degrade others' performance when its plan is applied.",
+  "composition": "asymmetric layout with the console on the left third and fan-out conduits sweeping right",
+  "alt_text": "Your Planner Is Not Your Model. Central planning console with fiber conduits fanning to server racks in a darkened data hall.",
+  "caption": "Your Planner Is Not Your Model: Who writes the plan matters more than which model runs.",
+  "title": "Your Planner Is Not Your Model",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-planner-is-not-your-model/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 343349,
+  "sha256": "sha256:3ed0c3da627ae8764ed1fa3a7c3b7ea654dc564e2fb7ce47d44b5bb13e0cf31a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 343349,
+    "quality": 88,
+    "sha256": "sha256:3ed0c3da627ae8764ed1fa3a7c3b7ea654dc564e2fb7ce47d44b5bb13e0cf31a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b6a5e398ebf6132bf3ba0e9a4d5307a00ccbb546ae124a445a92a02b42ce9984",
+  "render_phash": "6db63ea71fb513a713af13af13bb93af9f809f83f818dce1fc07e03fe0ff7dfd",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A rectangular glowing blank white screen mounted on a dark low pedestal in the left third of the frame, with six black cables emerging from its base and sweeping in curved parallel runs across a tiled floor toward a row of dark server racks filling the right side.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The image shows a planning console physically separate from the model-hosting racks with a conduit fan-out to them, which is the article's own claim that the planner is a portable artifact distinct from the models that run it, though the blank screen and generic datacenter look make it only a loose rendering of the 6.4-point transfer mechanism."
+  },
+  "source_hash": "sha256:e7794a4f8d5a6a41f57ede254b6f4867",
+  "source_chars": 6379,
+  "task_id": "537cc1b8212cffd836075f4fe869cb52",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/537cc1b8212cffd836075f4fe869cb52_1794396015012.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A wide cinematic still inside a dark data hall. On the left third stands a polished steel planning console with a blank backlit glass diffuser glowing warm white; six thin fiber conduits fan out from it to charcoal server racks on the right. Hard amber key light from the left rakes the console, while cool steel-blue ambient fills the hall. 35mm anamorphic, shallow depth of field, asymmetric composition, graphite, steel blue and amber palette, brushed steel and glass, fine film grain, no people, no text, no signage, no letters.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T11:20:25+00:00",
+  "overlay": {
+    "kicker": "AGENT FABRIC // PLAN AUTHORSHIP",
+    "title": "YOUR PLANNER IS NOT YOUR MODEL",
+    "hook": "Who writes the plan matters more than which model runs",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 14.78,
+    "target": 4.5,
+    "clutter": 0.041,
+    "region_rgb": [
+      17,
+      22,
+      27
+    ],
+    "binding_rgb": [
+      23,
+      28,
+      34
+    ],
+    "title_lines": [
+      "YOUR PLANNER IS",
+      "NOT YOUR MODEL"
+    ],
+    "subject": 0.043,
+    "ink_subject": 0.004,
+    "spike": 0.032,
+    "generated_at": "2026-11-11T11:20:25+00:00"
+  }
+}
