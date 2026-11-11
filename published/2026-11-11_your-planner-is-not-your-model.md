@@ -13,8 +13,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-planner-is-not-your-model/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Your Planner Is Not Your Model. Central planning console with fiber conduits fanning to server racks in a darkened data hall."
-image_caption: "Your Planner Is Not Your Model: Who writes the plan matters more than which model runs."
+image_alt: "A backlit planning console on a dark data-hall floor, with black cables fanning out toward server racks."
+image_caption: "A backlit planning console in a dark data hall: who writes the plan matters more than which model runs."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -76,14 +76,17 @@ Where I've landed is narrower than the headline version. The claim is not that a
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
+
+
+
 <!-- internal-link hint: "270 Attacks: Your Green Tests Are Blind" -> /one-skill-too-many-green-test/ [same site (aichieve.net); same category; topical overlap: runs] Link "270 Attacks: Your Green Tests Are Blind" in the section where the article touches runs. -->
 <!-- internal-link hint: "Answer Field First Costs 38.15 Points" -> /answer-field-first-costs-38-points/ [same site (aichieve.net); same category; topical overlap: model] Link "Answer Field First Costs 38.15 Points" in the section where the article touches model. -->
 <!-- internal-link hint: "Durable Execution Is Not a Transaction" -> /durable-execution-not-a-transaction/ [same site (aichieve.net); same category; topical overlap: model] Link "Durable Execution Is Not a Transaction" in the section where the article touches model. -->
 ## Related reading
 
-- [270 Attacks: Your Green Tests Are Blind](/one-skill-too-many-green-test/) — more on Autonomous & Agentic Workflows
-- [Answer Field First Costs 38.15 Points](/answer-field-first-costs-38-points/) — more on Autonomous & Agentic Workflows
-- [Durable Execution Is Not a Transaction](/durable-execution-not-a-transaction/) — more on Autonomous & Agentic Workflows
+- [Durable Execution Is Not a Transaction](/durable-execution-not-a-transaction/)
+- [Your Agent Fleet's 39x Gap: One Meter Nobody Budgets](/agent-fleet-two-meters/)
+- [60.7% of Agent Deletes Ask Nobody](/your-agent-deletes-ask-nobody/)
 <!-- internal-links:end -->
 
 ## Sources
