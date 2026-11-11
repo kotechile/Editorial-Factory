@@ -1,0 +1,112 @@
+{
+  "slug": "your-71-margin-is-your-exit-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "AutoStore warehouse grid receding to a roll-up door with a large oxidised red padlock.",
+      "caption": "The AutoStore grid narrows to a padlocked roll-up door, turning the 71% gross margin into the buyer's physical exit bill.",
+      "title": "AutoStore Grid Padlocked Exit Bill",
+      "bytes": 382536,
+      "sha256": "sha256:71eff6b24e515a5fb7b08adb2ccad5cb"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression down a warehouse aisle lined with AutoStore automated storage-and-retrieval grid, black polymer bins and brushed steel top rails, terminating at a roll-up exit door secured by a large oxidised red padlock in sharp focus on the hasp. Hard raking daylight from the far end throws long shadows; graphite and bone white palette with one oxidised red accent; concrete floor; extreme asymmetry with telephoto compression; fine film grain; no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermark",
+  "rationale": "This story is about industrial scale and lock-in, not a single document or component. A compressed 200mm telephoto view down a warehouse aisle captures the vastness of the installed system while the padlocked exit door gives the abstract exit bill a tangible, physical form.",
+  "cue": "71% Margin Is Your Exit Bill",
+  "subject": "an AutoStore automated storage-and-retrieval grid and a padlocked roll-up exit door",
+  "core_thesis": "The seller's gross margin is a first estimate of the buyer's cost of leaving, so a payback model that assumes an exit or a resale value is overstating the return.",
+  "core_conflict": "AutoStore's 71.3% gross margin is seller profit that becomes the buyer's sunk integration cost, making exit prohibitively expensive and undermining any payback model that assumes resale.",
+  "composition": "extreme asymmetry with telephoto compression, exit door off-centre at the far end",
+  "alt_text": "71% Margin Is Your Exit Bill. AutoStore warehouse grid receding to a roll-up door with a large oxidised red padlock.",
+  "caption": "71% Margin Is Your Exit Bill: The seller's gross margin is the buyer's exit cost, so price the exit before signing.",
+  "title": "71% Margin Is Your Exit Bill",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-71-margin-is-your-exit-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395015,
+  "sha256": "sha256:f0f49fb60622905630d52929cc434ce56cd99048e4d5c6e583cece08edd4e94a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395015,
+    "quality": 80,
+    "sha256": "sha256:f0f49fb60622905630d52929cc434ce56cd99048e4d5c6e583cece08edd4e94a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:8a4e141bf1dd41a5fb4e3f872477edfc2954e3ebfd846f05af33e1746894d00a",
+  "render_phash": "5037287f017f40fd20f90977017d097b017b017f217b417d113721fb417d81fc",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A long, symmetric aisle between two rows of tall steel shelving racks stocked with black plastic bins, floored in pale concrete and ending at a closed grey roll-up shutter door, with a single red-orange padlock object standing upright in the middle of the aisle halfway to the door.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "It shows a storage-and-retrieval racking aisle closed off by a padlocked exit door, which is the article's own 'the exit is locked, price it before signing' mechanism, though the racks read as generic warehouse shelving rather than AutoStore's robotic cube grid."
+  },
+  "source_hash": "sha256:a9d1d8ef5ba43e0a3a4ab085d6b9d5f1",
+  "source_chars": 5151,
+  "task_id": "d6c8d4c0ba5d4c8280dc788a0bf35e24",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d6c8d4c0ba5d4c8280dc788a0bf35e24_1794400842907.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression down a warehouse aisle lined with AutoStore automated storage-and-retrieval grid, black polymer bins and brushed steel top rails, terminating at a roll-up exit door secured by a large oxidised red padlock in sharp focus on the hasp. Hard raking daylight from the far end throws long shadows; graphite and bone white palette with one oxidised red accent; concrete floor; extreme asymmetry with telephoto compression; fine film grain; no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-11T12:40:53+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE AUTOMATION // VENDOR LOCK-IN",
+    "title": "71% MARGIN IS YOUR EXIT BILL",
+    "hook": "The seller's gross margin is the buyer's exit cost, so price the exit before signing",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.79,
+    "target": 5.5,
+    "clutter": 0.39,
+    "region_rgb": [
+      62,
+      65,
+      65
+    ],
+    "binding_rgb": [
+      130,
+      131,
+      126
+    ],
+    "title_lines": [
+      "71% MARGIN IS",
+      "YOUR EXIT BILL"
+    ],
+    "subject": 0.29,
+    "ink_subject": 0.08,
+    "spike": 0.35,
+    "generated_at": "2026-11-11T12:40:53+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T12:14:51Z",
+  "updated_at": "2026-11-11T12:41:48Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6459,6 +6459,24 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-11",
+      "public": false
+    },
+    {
+      "slug": "2026-11-11_your-71-margin-is-your-exit-bill",
+      "title": "71% Margin Is Your Exit Bill",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The margin and the lock",
+        "By the numbers",
+        "Where the lock gets tested",
+        "The part neither document can settle",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-11",
       "public": false
     },
