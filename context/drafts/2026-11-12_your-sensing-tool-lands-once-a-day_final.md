@@ -11,7 +11,7 @@ slug: your-sensing-tool-lands-once-a-day
 image_path: "context/assets/illustrations/your-sensing-tool-lands-once-a-day/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Batch Runs Cap What Sensing Buys. Master-planning schedule board with a sliding metal time-fence track in a dark control room."
+image_alt: "A master-planning schedule board with a sliding metal time-fence track in a dark control room."
 image_caption: "Batch Runs Cap What Sensing Buys: Weekly over annual is worth at most 23 inventory points; the one-time reset bought 40."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

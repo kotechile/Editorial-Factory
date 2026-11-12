@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-sensing-tool-lands-once-a-day/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Batch Runs Cap What Sensing Buys. Master-planning schedule board with a sliding metal time-fence track in a dark control room."
+image_alt: "A master-planning schedule board with a sliding metal time-fence track in a dark control room."
 image_caption: "Batch Runs Cap What Sensing Buys: Weekly over annual is worth at most 23 inventory points; the one-time reset bought 40."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -71,9 +71,10 @@ Those 23 points are a ceiling from one study, and a small one: an optimizer was 
 <!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: model] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches model. -->
 ## Related reading
 
-- [Planning AI Buys Capability, Not Autonomy](/planning-ai-buys-capability-not-autonomy/) — more on Supply Chain & Operations
-- [Your Charger Gap Buys 16 Robots](/your-charger-gap-buys-16-robots/) — more on Supply Chain & Operations
-- [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
+- [Planning AI Buys Capability, Not Autonomy](/planning-ai-buys-capability-not-autonomy/) — a planning module buys capability, not autonomy
+- [Your SKUs Fail The 1.32 Cut](/skus-fail-the-1-32-cut/) — which items deserve an accuracy target at all
+- [Forecast Value Added: 52% Lose to Last Period](/forecast-value-added-lose-to-last-period/) — scoring the layers against a naive test
+
 <!-- internal-links:end -->
 
 ## Sources
