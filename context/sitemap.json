@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T11:52:32Z",
+  "updated_at": "2026-11-12T12:22:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6654,6 +6654,24 @@
       "date": "2026-11-11",
       "public": true,
       "url": "https://aichieve.net/your-robot-adds-a-12260-premium/"
+    },
+    {
+      "slug": "2026-11-12_discredited-proof-costs-1-2-million",
+      "title": "Discredited Proof Costs $1.2 Million",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The half nobody checks",
+        "By the numbers",
+        "The utility had the answer",
+        "What the orders leave open",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-12",
+      "public": false
     },
     {
       "slug": "2026-11-12_your-ai-bill-grew-165-you-cut-the-work",
