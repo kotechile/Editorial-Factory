@@ -500,3 +500,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-12 | `your-200k-prompts-hidden-rate-cliff` | enterprise_ai_finops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-200k-prompts-hidden-rate-cliff/featured.jpg` |
 | 2026-11-12 | `your-carrier-is-exempt-your-lot-records-arent` | supply_chain | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-carrier-is-exempt-your-lot-records-arent/featured.jpg` |
 | 2026-11-12 | `your-contractors-bond-dies-at-25000` | home_ops_execution | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-contractors-bond-dies-at-25000/featured.jpg` |
+| 2026-11-12 | `move-abroad-still-a-resident-546-days` | expat_cross_border_relocation | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/move-abroad-still-a-resident-546-days/featured.jpg` |

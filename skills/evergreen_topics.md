@@ -1285,3 +1285,28 @@ recompute the ratio in the final, exactly as a percentage is recomputed from its
 name the *axis of the build decision* nobody has priced (here: memory capacity, chip rungs, adapters, cables and encode
 throughput were all covered; the data feed was not). An uncovered axis is a stronger evergreen lead than another angle on
 a covered one, and it is self-documenting in the brief's de-dup line.
+
+**Hosts probed live 2026-11-12, building a state-residency-exit brief (the `expat_cross_border_relocation` evergreen).**
+Carries the figure as plain text and fetches first try: `california.public.law/codes/ca_rev_and_tax_code_section_17014` (5.1 KB —
+(a)(1)–(2) the resident definition, (c) "continues to be a resident even though temporarily absent", (d) the "uninterrupted period
+of at least 546 consecutive days under an employment-related contract", (d)(1) the 45-day returns allowance, (d)(2) the $200,000
+intangible-income disqualifier, (d)(4) the anti-avoidance clause, and its own "Verified: Nov. 11, 2026"); `oregon.public.law/statutes/ors_316.027`
+(17.9 KB — the three-part conjuctive escape for a domiciliary, "not more than 30 days", and (B)'s "more than 200 days" statutory
+resident); `law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-302/` (12 KB — "for an aggregate of more than 183 days …
+maintained his place of abode within Virginia, whether domiciled in Virginia or not", plus the "Domicile" definition, "the place to
+which he intends to return even though he may actually reside elsewhere").
+**The `www.` prefix is the whole difference on the public.law mirrors:** `https://www.california.public.law/...` answers `unreachable`
+while `https://california.public.law/...` fetches — which is how a 2026-10-29 run dropped this exact candidate at 7.5 on "both
+`california.public.law` and `ftb.ca.gov` answered unreachable". Probe both forms before inheriting a drop.
+Unreachable to the verifier on this beat: `nysenate.gov/legislation/laws/TAX/605`, `law.justia.com` NY statutes, `tax.ny.gov` (both
+an HTML page and a PDF), `ftb.ca.gov` (and its 540NR booklet, `unsupported`), `cga.ct.gov`, `mass.gov` info pages, `iga.in.gov`
+(a 24-char stub), `revisor.mn.gov` (fetches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`.
+`malegislature.gov` MGL c.62 § 1 fetches but spells its count as "one hundred eighty-three days", which the matcher cannot lead on.
+
+**An enumeration hold is cheaper to prevent in the draft than to repair after the rewrite (learned 2026-11-12).** The reviewer
+re-titled the residency section "The big picture: three states, three counts" and `readability_critic` held the piece because the
+heading promised three items and the body labelled none — a hold on the *rewrite's* heading that the draft could not see. Writing
+the three states as a numbered list (`1. **California: 546 days.** …`) in the draft gives any count-bearing heading the rewrite
+invents the labels it needs, and the next run's attempt 2 was ACCEPTED. Two boilerplate cues cost the same pass: `my read is that`
+and `the part I keep circling` are in `review_audit.BOILERPLATE_CUES` and read as regressions, so use a plain first-person verb
+("What I notice is…", "I read the guide's count as…").

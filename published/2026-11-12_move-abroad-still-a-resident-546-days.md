@@ -12,6 +12,12 @@ meta_title: "Move Abroad, Still a Resident: 546 Days"
 meta_title_source: "derived_from_title"
 meta_description: "Every guide to a move abroad quotes 183 days, as if the count came with the passport. Three states publish three different counts, and 183 is neither the…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/move-abroad-still-a-resident-546-days/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "Three machined day counters, their brass tally slats pulled out to different lengths, on a pale oak desk."
+image_caption: "Three counters, three different day counts: the state's own statute sets the number, not the flight."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

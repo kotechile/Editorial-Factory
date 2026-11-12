@@ -1,0 +1,118 @@
+{
+ "slug": "move-abroad-still-a-resident-546-days",
+ "revision": 2,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Three mechanical day counters with different tally slat extensions and latching gates rest on a desk.",
+   "caption": "Three states' residency tests become three mechanical day counters \u2014 short, medium, and fully extended \u2014 set at different latching points on a desk.",
+   "title": "Three state residency counters as mechanical tally gates",
+   "bytes": 358121,
+   "sha256": "sha256:3962e20f61fb30f1f9d7243afe6743b0"
+  }
+ ],
+ "style": "component_assembly",
+ "style_label": "Modular component assembly",
+ "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Three modular mechanical day counters sit on a matte oak home-office desk, arranged in a row at the left third; the first has a short brass tally slat barely extended, the second a mid-length graphite slat, the third a fully extended rust steel slat, each with an unmarked latching gate locked at a different notch. One directional raking light from the left throws long contact shadows across the desk; bone white, graphite, rust palette; brushed steel, brass, oak, paper; extreme asymmetry with generous negative space to the right.",
+ "negative_prompt": "garbled text, random lettering, watermarks, legible numbers",
+ "rationale": "The article is about statutory thresholds and sequential gates, not a physical facility. Component_assembly makes the three different state counts tangible as modular mechanical counters without literal stock imagery.",
+ "cue": "Three states, three counts",
+ "subject": "three mechanical day counters with different tally slat extensions and latching gates on a desk",
+ "core_thesis": "Each state publishes its own residency count \u2014 California 546 days under employment contract, Oregon 30 days after full abode surrender, Virginia 183 days with an abode \u2014 so leaving is a set of dated acts, not a flight.",
+ "core_conflict": "A state's continued domiciliary claim versus the expat's departure date and abode severance, with numerical thresholds that differ by state.",
+ "composition": "extreme asymmetry with the counters placed on the left third and a long rightward cast shadow leaving generous negative space",
+ "alt_text": "Three machined day counters, their brass tally slats pulled out to different lengths, on a pale oak desk.",
+ "caption": "Three counters, three different day counts: the state's own statute sets the number, not the flight.",
+ "title": "Move Abroad, Still A Resident After 546 Days",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 3,
+ "pinned": {
+  "style": "component_assembly",
+  "model": "nanobanana"
+ },
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/move-abroad-still-a-resident-546-days/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 397471,
+ "sha256": "sha256:8cbf8c5876fa81a701148482962918c31f5ea7e7c9fe90f1f2182a8a294e7337",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 397471,
+  "quality": 80,
+  "sha256": "sha256:8cbf8c5876fa81a701148482962918c31f5ea7e7c9fe90f1f2182a8a294e7337",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:d55158d06832b1c7a9f3788ab0e4bfd64d926534fcdc1fa7fe1ed20604741ad7",
+ "render_phash": "788fb10f449f8c5f1c3f3437763fd26f986f98d7d3d7c39bc3ab0ba71bae97dd",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "Three rectangular box-like devices \u2014 one brushed silver, one matte charcoal, one walnut-brown wood \u2014 each with a narrow slot along the top, a small sliding brass latch and a protruding slat at one end, arranged diagonally on a light oak desk lit by strong sun, with long shadows cast to the right and blank white papers plus a shallow brass tray at the lower left.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.62,
+  "reason": "The three similar-but-differently-configured tally devices standing in for the three states and their divergent day counts map onto the article's core mechanism of counting residency days, though without numerals or labels a reader might read them as generic desk objects."
+ },
+ "source_hash": "sha256:87e827d94cbd48ed3115cc12870c84fb",
+ "source_chars": 5583,
+ "task_id": "63f1ebe6122982a498fb0232b4c36cb8",
+ "credits": 18.0,
+ "cost_ms": 22,
+ "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_9f485a919b879e4b91b5ce43fbfa1cc4.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "Three modular mechanical day counters sit on a matte oak home-office desk, arranged in a row at the left third; the first has a short brass tally slat barely extended, the second a mid-length graphite slat, the third a fully extended rust steel slat, each with an unmarked latching gate locked at a different notch. One directional raking light from the left throws long contact shadows across the desk; bone white, graphite, rust palette; brushed steel, brass, oak, paper; extreme asymmetry with generous negative space to the right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-11-12T19:48:38+00:00",
+ "overlay": {
+  "kicker": "EXPAT TAX RESIDENCY // DAY COUNTS",
+  "title": "MOVE ABROAD, STILL A RESIDENT AFTER 546 DAYS",
+  "hook": "The 183-day rule is a myth: California holds residents for 546 days",
+  "anchor": "bottom-right",
+  "light": true,
+  "scrim": 120,
+  "contrast": 6.12,
+  "target": 5.5,
+  "clutter": 0.299,
+  "region_rgb": [
+   122,
+   91,
+   63
+  ],
+  "binding_rgb": [
+   143,
+   109,
+   82
+  ],
+  "title_lines": [
+   "MOVE ABROAD,",
+   "STILL A RESIDENT",
+   "AFTER 546 DAYS"
+  ],
+  "subject": 0.155,
+  "ink_subject": 0.029,
+  "spike": 0.152,
+  "generated_at": "2026-11-12T19:48:38+00:00"
+ }
+}
