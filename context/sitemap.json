@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T18:11:30Z",
+  "updated_at": "2026-11-12T18:40:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6747,6 +6747,24 @@
       "date": "2026-11-12",
       "public": true,
       "url": "https://giniloh.com/your-bequest-carries-40-tax/"
+    },
+    {
+      "slug": "2026-11-12_your-carrier-is-exempt-your-lot-records-arent",
+      "title": "Your Carrier Owes Your Lot Nothing",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The clock and the exemption",
+        "By the numbers",
+        "What the drill finds",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-12",
+      "public": false
     },
     {
       "slug": "2026-11-12_your-detour-outlasts-the-gates",
