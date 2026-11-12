@@ -1,0 +1,115 @@
+{
+  "slug": "your-carrier-is-exempt-your-lot-records-arent",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Receiving and shipment dock records joined by a highlighted line on a loading-bay desk, with a clock hand and lot-code tag nearby.",
+      "caption": "The traceability burden lives in the paper join between a receiving record and a shipment record, not on the trailer.",
+      "title": "Record join on loading bay desk",
+      "bytes": 378839,
+      "sha256": "sha256:0c10b87f2124d04b5c73f0e15f67f78e"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure — use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A cut-paper collage on a weathered steel loading-bay desk: two offset overlapping blank paper records, one receiving, one shipping, joined by a thin bone-white highlighted line across the diagonal; a small cut-paper clock hand and lot-code tag sit beside them. Light from the left rakes across the papers, casting long shadows. Muted slate grey, bone white, and deep pine green. Hand-torn rag paper with visible fibre, slight misalignment. Asymmetric split with diagonal join line and generous negative space, no text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible print, distorted type",
+  "rationale": "The story is a regulatory policy dilemma about document joins and carrier exemption, not a physical machine; paper collage can state that abstract two-record mapping without defaulting to a warehouse photograph, and it keeps the image conceptual and editorial.",
+  "cue": "the join between your receiving record and your shipment record",
+  "subject": "receiving record and shipment record joined by a highlighted line on a loading-bay desk",
+  "core_thesis": "The food traceability rule makes the carrier exempt, so the compliance burden falls entirely on the shipper's ability to join a receiving record to a shipment record within 24 hours, not on trailer telematics.",
+  "core_conflict": "record-keeping join versus carrier exemption; the 24-hour retrieval clock versus two-year retention scope.",
+  "composition": "asymmetric split with two paper documents offset and overlapping, the join line running diagonally across the frame, generous negative space",
+  "alt_text": "Two torn paper records joined by a highlighted line on a loading-bay desk, a clock hand beside them.",
+  "caption": "The compliance problem is the join between a receiving record and a shipment record, not the trailer.",
+  "title": "Your Carrier Owes Your Lot Nothing",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-carrier-is-exempt-your-lot-records-arent/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408311,
+  "sha256": "sha256:6e2d1879cc46689ab5f86d9a185f01b904cd52ca5bae263aaf5a51beb013d189",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408311,
+    "quality": 68,
+    "sha256": "sha256:6e2d1879cc46689ab5f86d9a185f01b904cd52ca5bae263aaf5a51beb013d189",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b15fe322c138a4215805783a6b0f68060992fb95f59773294c7ca3da3f28bab7",
+  "render_phash": "3f8bbfc7b7e7fff77dff1cff1cff0cff0e7f0a7f493f4907192f1827400f3017",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two torn rectangular paper sheets, one green and one gray, lie on a scratched metal surface with a thin white diagonal strip crossing between them, beside a small white arrow and a blank tag.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The two offset sheets and diagonal connector visually map to the receiving and shipment records whose join is the article's compliance problem."
+  },
+  "source_hash": "sha256:27138aa7a6f4668e9072da952e7908fb",
+  "source_chars": 5739,
+  "task_id": "6599bad8f90ff86f7352356b59c73624",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ad9276dad7fa0374a30d4989ac1ea173.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A cut-paper collage on a weathered steel loading-bay desk: two offset overlapping blank paper records, one receiving, one shipping, joined by a thin bone-white highlighted line across the diagonal; a small cut-paper clock hand and lot-code tag sit beside them. Light from the left rakes across the papers, casting long shadows. Muted slate grey, bone white, and deep pine green. Hand-torn rag paper with visible fibre, slight misalignment. Asymmetric split with diagonal join line and generous negative space, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-12T18:43:17+00:00",
+  "overlay": {
+    "kicker": "FDA FOOD TRACEABILITY // CARRIER EXEMPTION",
+    "title": "YOUR CARRIER OWES YOUR LOT NOTHING",
+    "hook": "The compliance problem is the join between your receiving and shipment records",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.55,
+    "target": 5.5,
+    "clutter": 0.257,
+    "region_rgb": [
+      77,
+      78,
+      76
+    ],
+    "binding_rgb": [
+      115,
+      125,
+      127
+    ],
+    "title_lines": [
+      "YOUR CARRIER",
+      "OWES YOUR LOT",
+      "NOTHING"
+    ],
+    "subject": 0.131,
+    "ink_subject": 0.031,
+    "spike": 0.126,
+    "generated_at": "2026-11-12T18:43:17+00:00"
+  }
+}

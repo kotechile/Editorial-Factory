@@ -16,6 +16,12 @@ sources:
 meta_title: "Your Carrier Owes Your Lot Nothing"
 meta_description: "Twenty-four hours is the whole promise. On request, you produce the records for one lot of a listed food. The trail runs from the dock that took the pallet…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-carrier-is-exempt-your-lot-records-arent/featured.jpg"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Two torn paper records joined by a highlighted line on a loading-bay desk, a clock hand beside them."
+image_caption: "The compliance problem is the join between a receiving record and a shipment record, not the trailer."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -67,20 +73,6 @@ What I keep coming back to is what the exemption implies about system design. A 
 Two limits are worth stating plainly. The date may move again, and the 24 hours has an escape valve written into it: records are due within a day, or within a longer period the agency agrees to. A file that is complete but slow is a different failure from a file that is incomplete, and only the second one is a records problem.
 
 The other limit is scope. The subpart reaches foods on a list the agency maintains and revises by notice, and a warehouse that never touches those foods is outside it entirely [1]. So the exposure is narrower than the word traceability suggests. For the distributor who does handle listed foods, the duty is a two-year file that resolves one lot in a day, with no carrier contribution to it. The part I find hard to settle is how many operations would pass that drill today, not because the data is missing but because the lot code stops at the pack line and the record of it was never joined to the shipment.
-
-<!-- internal-links -->
-
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Carbon Data Stops at 6 Minutes" -> /carbon-data-stops-at-6-minutes/ [same site (aichieve.net); same category; topical overlap: hours] Link "Carbon Data Stops at 6 Minutes" in the section where the article touches hours. -->
-<!-- internal-link hint: "Dock Overtime: Your Real 14-Hour Cost" -> /hour-14-recovery-wall/ [same site (aichieve.net); same category; topical overlap: hours] Link "Dock Overtime: Your Real 14-Hour Cost" in the section where the article touches hours. -->
-<!-- internal-link hint: "Your ETA Misses 27 Hours" -> /your-eta-misses-27-hours/ [same site (aichieve.net); same category; topical overlap: hours] Link "Your ETA Misses 27 Hours" in the section where the article touches hours. -->
-## Related reading
-
-- [Carbon Data Stops at 6 Minutes](/carbon-data-stops-at-6-minutes/) — more on Supply Chain & Operations
-- [Dock Overtime: Your Real 14-Hour Cost](/hour-14-recovery-wall/) — more on Supply Chain & Operations
-- [Your ETA Misses 27 Hours](/your-eta-misses-27-hours/) — more on Supply Chain & Operations
-<!-- internal-links:end -->
-
 ## Sources
 
 - [1] U.S. Code of Federal Regulations, "21 CFR 1.1455 — How must records required by this subpart be maintained and made available?", eCFR title 21 current as of 11/09/2026 — https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-S/section-1.1455
