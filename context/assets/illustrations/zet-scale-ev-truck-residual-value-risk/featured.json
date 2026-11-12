@@ -1,6 +1,6 @@
 {
   "slug": "zet-scale-ev-truck-residual-value-risk",
-  "revision": 32,
+  "revision": 33,
   "history": [
     {
       "revision": 1,
@@ -246,6 +246,14 @@
     },
     {
       "revision": 31,
+      "alt_text": "The 2500 Electric Truck Deal. A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a h",
+      "caption": "The 2500 Electric Truck Deal: How a new lease model unlocked a massive EV truck order.",
+      "title": "The 2500 Electric Truck Deal",
+      "bytes": 268937,
+      "sha256": "sha256:a3bb1ddc7f07bb912b2650d3082ebc223f7836f53059da420c0bacfe97339fce"
+    },
+    {
+      "revision": 32,
       "alt_text": "The 2500 Electric Truck Deal. A heavy-duty electric commercial truck cab parked beside an industrial charging pedestal in a h",
       "caption": "The 2500 Electric Truck Deal: How a new lease model unlocked a massive EV truck order.",
       "title": "The 2500 Electric Truck Deal",

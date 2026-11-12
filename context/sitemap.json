@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T13:15:20Z",
+  "updated_at": "2026-11-12T17:44:42Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6671,6 +6671,25 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-12",
+      "public": true,
+      "url": "https://wellroost.com/discredited-proof-costs-1-2-million/"
+    },
+    {
+      "slug": "2026-11-12_idle-host-starved-tools-11-trap",
+      "title": "Idle Host, Starved Tools: Your 11% Trap",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The host runs half the request",
+        "By the numbers",
+        "What the runtime engineers are changing",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-12",
       "public": false
     },
     {
@@ -6708,7 +6727,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-bequest-carries-40-tax/"
     },
     {
       "slug": "2026-11-12_your-detour-outlasts-the-gates",
@@ -6745,7 +6765,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-plan-stops-at-the-substation/"
     },
     {
       "slug": "2026-11-12_your-subagent-is-you",

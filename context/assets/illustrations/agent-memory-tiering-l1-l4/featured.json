@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-tiering-l1-l4",
-  "revision": 13,
+  "revision": 14,
   "history": [
     {
       "revision": 1,
@@ -107,6 +107,14 @@
       "title": "Tiered State For AI Agents",
       "bytes": 1438497,
       "sha256": "sha256:7017c9f91ecb984135e21cb7a972b789cc18e510da6ef17de9cde0c81a32f6c0"
+    },
+    {
+      "revision": 13,
+      "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context ",
+      "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
+      "title": "Tiered State For AI Agents",
+      "bytes": 1438497,
+      "sha256": "sha256:7017c9f91ecb984135e21cb7a972b789cc18e510da6ef17de9cde0c81a32f6c0"
     }
   ],
   "style": "component_assembly",
@@ -123,7 +131,7 @@
   "cue": "layered setup is cheaper",
   "subject": "a modular mechanical assembly with distinct stacked tiers",
   "composition": "extreme asymmetry, the hero stack off-centre on the right third",
-  "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context ",
+  "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context",
   "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
   "title": "Tiered State For AI Agents",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -131,12 +139,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/agent-memory-tiering-l1-l4/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1438497,
-  "sha256": "sha256:7017c9f91ecb984135e21cb7a972b789cc18e510da6ef17de9cde0c81a32f6c0",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-memory-tiering-l1-l4/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395977,
+  "sha256": "sha256:fff1955f31a2e3e0df61bcc25c141a345d6c69c3bd66ef2d84e2814bfb5ea78f",
   "source_hash": "sha256:730b650c93e2601af1c068b669444a87",
   "source_chars": 3727,
   "task_id": "63f7374b1327064dd42c42563cf123ef",
@@ -158,25 +166,42 @@
     "kicker": "AGENTIC AI // TIERED MEMORY",
     "title": "TIERED STATE FOR AI AGENTS",
     "hook": "Why long context fails and agents require tiered memory",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 11.42,
+    "scrim": 120,
+    "contrast": 4.83,
     "target": 4.5,
-    "clutter": 0.07,
+    "clutter": 0.225,
     "region_rgb": [
-      47,
-      52,
-      54
+      86,
+      92,
+      95
     ],
     "binding_rgb": [
-      55,
-      58,
-      63
+      119,
+      127,
+      130
     ],
     "title_lines": [
       "TIERED STATE",
       "FOR AI AGENTS"
-    ]
+    ],
+    "subject": 0.073,
+    "ink_subject": 0.009,
+    "spike": 0.098,
+    "generated_at": "2026-10-09T00:45:38+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395977,
+    "quality": 84,
+    "sha256": "sha256:fff1955f31a2e3e0df61bcc25c141a345d6c69c3bd66ef2d84e2814bfb5ea78f",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

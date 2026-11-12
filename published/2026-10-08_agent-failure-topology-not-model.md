@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/agent-failure-topology-not-model/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking physical channels and curved connectors on a"
-image_caption: "Your Multi-Agent Failure Has A Shape: When an agent stack fails, the common reflex is to buy a bigger model. Two new papers."
+image_alt: "Multi-Agent Failure Is A Topology Problem. Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking"
+image_caption: "Multi-Agent Failure Is A Topology Problem: Two new papers point to a different fix: the shape of the system."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

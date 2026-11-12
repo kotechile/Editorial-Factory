@@ -1,6 +1,6 @@
 {
   "slug": "agent-failure-topology-not-model",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Agent Topology Assembly",
       "bytes": 1255602,
       "sha256": "sha256:5484b298a1c76badb9fad414d463a8da"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking physical channels and curved connectors on a",
+      "caption": "Your Multi-Agent Failure Has A Shape: When an agent stack fails, the common reflex is to buy a bigger model. Two new papers.",
+      "title": "Your Multi-Agent Failure Has A Shape",
+      "bytes": 228729,
+      "sha256": "sha256:6d28b835a1c4fb7f3695223f078c643ae6f7a560ce534e50f80e5974dc7b93f6"
     }
   ],
   "style": "clay_render",
@@ -24,9 +32,9 @@
   "rationale": "The news is structural and conceptual, dealing with the 'shape' and coordination of a system. A matte clay 3D render translates this abstract topology into a concrete, recognizable mechanical assembly of routing parts.",
   "cue": "the shape of the system",
   "subject": "a modular mechanical routing assembly with interlocking physical channels",
-  "alt_text": "Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking physical channels and curved connectors on a",
-  "caption": "Your Multi-Agent Failure Has A Shape: When an agent stack fails, the common reflex is to buy a bigger model. Two new papers.",
-  "title": "Your Multi-Agent Failure Has A Shape",
+  "alt_text": "Multi-Agent Failure Is A Topology Problem. Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking",
+  "caption": "Multi-Agent Failure Is A Topology Problem: Two new papers point to a different fix: the shape of the system.",
+  "title": "Multi-Agent Failure Is A Topology Problem",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -36,8 +44,8 @@
   "local_path": "context/assets/illustrations/agent-failure-topology-not-model/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 228729,
-  "sha256": "sha256:6d28b835a1c4fb7f3695223f078c643ae6f7a560ce534e50f80e5974dc7b93f6",
+  "bytes": 237851,
+  "sha256": "sha256:1eff82b07cd2981dbecd7d2f05f782cfbc46cc0568a755d53b5d9ab742f12c64",
   "source_hash": "sha256:2fdce2af37e3f5694c8d9f63468be96a",
   "source_chars": 3475,
   "task_id": "9b6f171928ab4b1dd8c41de6af3d3972",
@@ -63,39 +71,39 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 228729,
+    "bytes": 237851,
     "quality": 88,
-    "sha256": "sha256:6d28b835a1c4fb7f3695223f078c643ae6f7a560ce534e50f80e5974dc7b93f6",
+    "sha256": "sha256:1eff82b07cd2981dbecd7d2f05f782cfbc46cc0568a755d53b5d9ab742f12c64",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
-    "kicker": "",
-    "title": "YOUR MULTI-AGENT FAILURE HAS A SHAPE",
-    "hook": "When an agent stack fails, the common reflex is to buy a bigger model. Two new papers",
+    "kicker": "MULTI-AGENT SYSTEMS // COORDINATION TOPOLOGY",
+    "title": "MULTI-AGENT FAILURE IS A TOPOLOGY PROBLEM",
+    "hook": "Two new papers point to a different fix: the shape of the system",
     "anchor": "top-left",
     "light": false,
     "scrim": 120,
-    "contrast": 4.76,
+    "contrast": 4.7,
     "target": 4.5,
-    "clutter": 0.16,
+    "clutter": 0.178,
     "region_rgb": [
-      159,
-      156,
-      157
+      158,
+      155,
+      156
     ],
     "binding_rgb": [
+      148,
       149,
-      150,
-      152
+      151
     ],
     "title_lines": [
-      "YOUR MULTI-AGENT",
-      "FAILURE HAS A",
-      "SHAPE"
+      "MULTI-AGENT",
+      "FAILURE IS A",
+      "TOPOLOGY PROBLEM"
     ],
-    "subject": 0.075,
-    "ink_subject": 0.02,
-    "spike": 0.185,
+    "subject": 0.098,
+    "ink_subject": 0.03,
+    "spike": 0.23,
     "generated_at": "2026-10-08T10:36:32+00:00"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "automation-payback-splits-by-sku-geometry",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -54,6 +54,14 @@
     },
     {
       "revision": 7,
+      "alt_text": "Amazon Builds Robots; Walmart Builds For Bulk. Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense",
+      "caption": "Amazon Builds Robots; Walmart Builds For Bulk: Capex payback splits by SKU geometry, not one blended automation ROI.",
+      "title": "Amazon Builds Robots; Walmart Builds For Bulk",
+      "bytes": 377917,
+      "sha256": "sha256:da678ecc976712dcc4570d88793d0155d0768825168b4d928c31bb465fcb6681"
+    },
+    {
+      "revision": 8,
       "alt_text": "Amazon Builds Robots; Walmart Builds For Bulk. Amazon Builds The Robots; Walmart Builds. Cavernous warehouse interior contrasting dense",
       "caption": "Amazon Builds Robots; Walmart Builds For Bulk: Capex payback splits by SKU geometry, not one blended automation ROI.",
       "title": "Amazon Builds Robots; Walmart Builds For Bulk",

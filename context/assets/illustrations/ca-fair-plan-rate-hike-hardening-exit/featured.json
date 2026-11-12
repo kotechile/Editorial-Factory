@@ -1,6 +1,6 @@
 {
   "slug": "ca-fair-plan-rate-hike-hardening-exit",
-  "revision": 33,
+  "revision": 34,
   "history": [
     {
       "revision": 1,
@@ -254,6 +254,14 @@
     },
     {
       "revision": 32,
+      "alt_text": "Escaping The FAIR Plan. Overhead view of heavy paper documents beneath a housing blueprint and a square of metal vent mesh on",
+      "caption": "Escaping The FAIR Plan: Hardening your home to escape the 29.1% premium increase.",
+      "title": "Escaping The FAIR Plan",
+      "bytes": 348086,
+      "sha256": "sha256:fea485996922845bce19a2f411935b82ab35b42b6794c10ed503b04997192f6e"
+    },
+    {
+      "revision": 33,
       "alt_text": "Escaping The FAIR Plan. Overhead view of heavy paper documents beneath a housing blueprint and a square of metal vent mesh on",
       "caption": "Escaping The FAIR Plan: Hardening your home to escape the 29.1% premium increase.",
       "title": "Escaping The FAIR Plan",

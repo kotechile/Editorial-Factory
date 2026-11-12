@@ -1,6 +1,6 @@
 {
   "slug": "maskills-multi-agent-skills-optimization",
-  "revision": 36,
+  "revision": 37,
   "history": [
     {
       "revision": 1,
@@ -280,6 +280,14 @@
     },
     {
       "revision": 35,
+      "alt_text": "Optimize Skills Not Memory. Brushed titanium server blade locking into a precision inspection gate bay against a charcoal bac",
+      "caption": "Optimize Skills Not Memory: Why agents need optimized skills instead of more memory.",
+      "title": "Optimize Skills Not Memory",
+      "bytes": 322803,
+      "sha256": "sha256:a7498d8b5b2d0ecee6899175c290f5688cee50fb3f515152b7b23e7dfc1217a7"
+    },
+    {
+      "revision": 36,
       "alt_text": "Optimize Skills Not Memory. Brushed titanium server blade locking into a precision inspection gate bay against a charcoal bac",
       "caption": "Optimize Skills Not Memory: Why agents need optimized skills instead of more memory.",
       "title": "Optimize Skills Not Memory",

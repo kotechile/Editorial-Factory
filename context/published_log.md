@@ -367,6 +367,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-12 | home_ops_execution | discredited-proof-costs-1-2-million | Discredited Proof Costs $1.2 Million | https://pressflow.aichieve.net/published/2026-11-12_discredited-proof-costs-1-2-million.md | reader site only |
 | 2026-11-12 | expat_cross_border_relocation | your-bequest-carries-40-tax | Your Child Inherits a 40% Bill | https://pressflow.aichieve.net/published/2026-11-12_your-bequest-carries-40-tax.md | reader site only |
 | 2026-11-12 | demand_sensing_advanced_sop | your-plan-stops-at-the-substation | Your Plan's $21,000 Power Gap | https://pressflow.aichieve.net/published/2026-11-12_your-plan-stops-at-the-substation.md | reader site only |
+| 2026-11-12 | agentic_ai | idle-host-starved-tools-11-trap | Idle Host, Starved Tools: Your 11% Trap | https://pressflow.aichieve.net/published/2026-11-12_idle-host-starved-tools-11-trap.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

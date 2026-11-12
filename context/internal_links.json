@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T11:52:28+00:00",
+  "generated_at": "2026-11-12T14:19:46+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-bequest-carries-40-tax",
+      "title": "Your Child Inherits a 40% Bill",
+      "url": "https://giniloh.com/your-bequest-carries-40-tax/",
+      "path": "/your-bequest-carries-40-tax/",
+      "sites_live": {
+        "giniloh.com": "/your-bequest-carries-40-tax/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A former American who meets an exit test \u2014 a covered expatriate \u2014 can leave a child only a small yearly allowance before the child owes the top estate-tax\u2026",
+      "modified": "2026-11-12T13:02:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2229,6 +2248,29 @@
       ],
       "excerpt": "A software patch sent through the Samsung SmartThings network broke fridges on Sept. 22.",
       "modified": "2026-10-31T04:49:16",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "discredited-proof-costs-1-2-million",
+      "title": "Discredited Proof Costs $1.2 Million",
+      "url": "https://wellroost.com/discredited-proof-costs-1-2-million/",
+      "path": "/discredited-proof-costs-1-2-million/",
+      "sites_live": {
+        "wellroost.com": "/discredited-proof-costs-1-2-million/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "Two state attorneys general have ordered money back from home contractors on proof that did not hold up. The two orders come to about $1.2 million, and that\u2026",
+      "modified": "2026-11-12T12:33:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9071,6 +9113,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-plan-stops-at-the-substation",
+      "title": "Your Plan's $21,000 Power Gap",
+      "url": "https://aichieve.net/your-plan-stops-at-the-substation/",
+      "path": "/your-plan-stops-at-the-substation/",
+      "sites_live": {
+        "aichieve.net": "/your-plan-stops-at-the-substation/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "metadescription: \"Manhattan Associates' cloud fees passed its services revenue last quarter, by $21,000. On a $306.2 million book, that gap is a rounding error, and\u2026",
+      "modified": "2026-11-12T13:17:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-planner-is-not-your-model",
       "title": "Your Planner Is Not Your Model: 6.4 Points",
       "url": "https://aichieve.net/your-planner-is-not-your-model/",
@@ -9828,6 +9893,20 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1663,
+      "slug": "your-plan-stops-at-the-substation",
+      "title": "Your Plan&#8217;s $21,000 Power Gap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T13:17:08",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10949,34 +11028,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1253,
-      "slug": "your-11-agents-3-die-none-wrong",
-      "title": "Your 11 Agents: 3 Die, None Wrong",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:11",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1248,
-      "slug": "100000-totes-skip-the-cost",
-      "title": "Your 100,000 Totes Skip the Cost",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:11",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -10987,6 +11038,20 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1660,
+      "slug": "your-bequest-carries-40-tax",
+      "title": "Your Child Inherits a 40% Bill",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T13:29:46",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
