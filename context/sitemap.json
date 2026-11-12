@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T17:44:42Z",
+  "updated_at": "2026-11-12T18:11:30Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6689,6 +6689,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-12",
+      "public": false
+    },
+    {
+      "slug": "2026-11-12_your-200k-prompts-hidden-rate-cliff",
+      "title": "Your 200K Prompt's Hidden Rate Cliff",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the Split Falls",
+        "By the numbers",
+        "What the Cap Measures",
+        "The Catch",
+        "Related reading"
+      ],
+      "target_persona": "enterprise_cai",
       "date": "2026-11-12",
       "public": false
     },
