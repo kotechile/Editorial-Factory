@@ -9,14 +9,13 @@ slug: your-plan-stops-at-the-substation
 synthesis: true
 sources:
   - https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-says-access-to-energy-is-becoming-a-major-constraint-on-supply-chain-growth
-  - https://www.manh.com/siteassets/generic-container-block/about-us/manh-earnings-release
+  - https://www.manh.com/siteassets/generic-container-block/about-us/manh-earnings-release---q3-2026.pdf
 image_path: "context/assets/illustrations/your-plan-stops-at-the-substation/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Your Plan'S $21,000 Power Gap. High-voltage substation with an empty concrete transformer pad and copper busbars under raking sunlight."
-image_caption: "Your Plan'S $21,000 Power Gap: Manhattan Associates' cloud fees passed its services revenue last quarter, by $21,000."
+image_alt: "A high-voltage substation yard with an empty concrete transformer pad and copper busbars under raking sunlight."
+image_caption: "An empty transformer pad at a high-voltage substation: the grid connection now limits what a supply chain plan can execute."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
----q3-2026.pdf
 meta_title: "Your Plan's $21,000 Power Gap"
 meta_title_source: "derived_from_title"
 meta_description: "Manhattan Associates' cloud fees passed its services revenue last quarter, by $21,000. On a $306.2 million book, that gap is a rounding error, and it is also…"
@@ -71,14 +70,11 @@ My reading, held loosely: the crossover may say less about planning than it look
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "71% Margin Is Your Exit Bill" -> /your-71-margin-is-your-exit-bill/ [same site (aichieve.net); same category; topical overlap: quarter, revenue] Link "71% Margin Is Your Exit Bill" in the section where the article touches quarter, revenue. -->
-<!-- internal-link hint: "63.6% OTIF: Your Hidden Quantity Gap" -> /your-hidden-quantity-gap/ [same site (aichieve.net); same category; topical overlap: quarter] Link "63.6% OTIF: Your Hidden Quantity Gap" in the section where the article touches quarter. -->
-<!-- internal-link hint: "Higher Rates Meet Historically Lean Inventories" -> /fed-rate-hike-inverts-working-capital-trap/ [same site (aichieve.net); same category; topical overlap: quarter] Link "Higher Rates Meet Historically Lean Inventories" in the section where the article touches quarter. -->
 ## Related reading
 
-- [71% Margin Is Your Exit Bill](/your-71-margin-is-your-exit-bill/) — more on Supply Chain & Operations
-- [63.6% OTIF: Your Hidden Quantity Gap](/your-hidden-quantity-gap/) — more on Supply Chain & Operations
-- [Higher Rates Meet Historically Lean Inventories](/fed-rate-hike-inverts-working-capital-trap/) — more on Supply Chain & Operations
+- [Your Planning Cycle Costs 7 Managers](/your-planning-cycle-costs-7-managers/) — more on Supply Chain & Operations
+- [Planning AI Buys Capability, Not Autonomy](/planning-ai-buys-capability-not-autonomy/) — more on Supply Chain & Operations
+- [Forecast Value Added: 52% Lose to Last Period](/forecast-value-added-lose-to-last-period/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
 ## Sources

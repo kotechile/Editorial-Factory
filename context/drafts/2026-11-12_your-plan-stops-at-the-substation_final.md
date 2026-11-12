@@ -9,14 +9,13 @@ slug: your-plan-stops-at-the-substation
 synthesis: true
 sources:
   - https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-says-access-to-energy-is-becoming-a-major-constraint-on-supply-chain-growth
-  - https://www.manh.com/siteassets/generic-container-block/about-us/manh-earnings-release
+  - https://www.manh.com/siteassets/generic-container-block/about-us/manh-earnings-release---q3-2026.pdf
 image_path: "context/assets/illustrations/your-plan-stops-at-the-substation/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Your Plan'S $21,000 Power Gap. High-voltage substation with an empty concrete transformer pad and copper busbars under raking sunlight."
-image_caption: "Your Plan'S $21,000 Power Gap: Manhattan Associates' cloud fees passed its services revenue last quarter, by $21,000."
+image_alt: "A high-voltage substation yard with an empty concrete transformer pad and copper busbars under raking sunlight."
+image_caption: "An empty transformer pad at a high-voltage substation: the grid connection now limits what a supply chain plan can execute."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
----q3-2026.pdf
 ---
 
 <!-- lead -->

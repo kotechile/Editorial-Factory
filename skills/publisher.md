@@ -292,3 +292,16 @@ justifies its picks on single incidental tokens ("quarter, third" produced an OT
 warehouse-capex story); when nothing qualifies, replace the block with same-vertical pages that answer
 200 and write it to the artifact, the Supabase row and the CMS post *after* any `--refresh-live`,
 which regenerates it.
+
+**A source URL containing `---` breaks the frontmatter rewrite, and the published artifact is the
+casualty (`your-plan-stops-at-the-substation`).** The push adds `image_*`, `meta_title` and
+`meta_description` by re-serialising the frontmatter, which splits the block on the first line starting
+with `---` — and a PDF path like `…manh-earnings-release---q3-2026.pdf` contains exactly that. The
+published file came out with the URL truncated mid-path (`…/manh-earnings-release`), an orphan line
+reading `---q3-2026.pdf`, the meta fields below the real closing delimiter, and
+`test_article_assets.py` red on two checks (byte-identical pass, frontmatter not re-serialised). The
+CMS body and the Supabase row were unaffected — only the repo artifact and the `_final` were mangled.
+After any push, read the artifact's first 25 lines and confirm the frontmatter closes once; repair by
+restoring the full URL and moving the `image_*`/`meta_*` lines above the closing `---`. Prefer a
+citation URL with no `---` in its path when one exists; when the only copy is the release PDF, check
+the artifact immediately after `publish.py` and fix both `published/` and the `_final`.
