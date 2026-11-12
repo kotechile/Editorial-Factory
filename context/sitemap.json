@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T19:13:33Z",
+  "updated_at": "2026-11-12T19:45:21Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6689,6 +6689,23 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-12",
+      "public": false
+    },
+    {
+      "slug": "2026-11-12_move-abroad-still-a-resident-546-days",
+      "title": "Move Abroad, Still a Resident: 546 Days",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Three states, three counts",
+        "What the statutes reward",
+        "By the numbers",
+        "The catch"
+      ],
+      "target_persona": "cross_border_expat",
       "date": "2026-11-12",
       "public": false
     },
