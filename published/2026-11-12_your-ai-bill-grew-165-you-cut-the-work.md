@@ -13,6 +13,12 @@ slug: your-ai-bill-grew-165-you-cut-the-work
 meta_description: "AI spending set a record in October and rose 1.65% while a million tokens got 21% cheaper. The flat bill was bought by cutting the size of the work."
 meta_title: "Your AI Bill Grew 1.65%: You Cut the Work"
 meta_title_source: "derived_from_title"
+image_path: "context/assets/illustrations/your-ai-bill-grew-165-you-cut-the-work/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "A paper AI usage invoice clipped to a black clipboard on a dark desk, partly folded."
+image_caption: "A paper AI usage invoice on a clipboard: the flat October bill was paid for in smaller work."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

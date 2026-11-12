@@ -1,0 +1,132 @@
+{
+ "slug": "your-ai-bill-grew-165-you-cut-the-work",
+ "revision": 4,
+ "history": [
+  {
+   "revision": 1,
+   "alt_text": "Paper AI usage invoice clipped to a black clipboard on a dark desk, partly folded, with a long shadow.",
+   "caption": "A paper AI usage invoice sits folded and clipped on a dark server-room desk under a hard studio light, its hidden line items standing in for teams that cannot see token cost as it happens.",
+   "title": "Flat AI invoice studio product shot",
+   "bytes": 265459,
+   "sha256": "sha256:c6bc28813934639805882cefc9e199ee"
+  },
+  {
+   "revision": 2,
+   "alt_text": "Your AI Bill Grew 1.65%. Paper AI usage invoice clipped to a black clipboard on a dark desk, partly folded, with a long shadow.",
+   "caption": "Your AI Bill Grew 1.65%: AI spending set a record in October and rose 1.65% while a million tokens got 21%.",
+   "title": "Your AI Bill Grew 1.65%",
+   "bytes": 311254,
+   "sha256": "sha256:59e5888cfa5df541627e9e6565e760a4c38d89aeeb81d6f3d0099d18b39ceb8a"
+  },
+  {
+   "revision": 3,
+   "alt_text": "Your AI Bill Grew 1.65% You Cut The Work. Your AI Bill Grew 1.65%. Paper AI usage invoice clipped to a black clipboard on a dark desk",
+   "caption": "Your AI Bill Grew 1.65% You Cut The Work: AI use rose 29% while token prices fell 21%, so the flat bill was paid in smaller work.",
+   "title": "Your AI Bill Grew 1.65% You Cut The Work",
+   "bytes": 333134,
+   "sha256": "sha256:beef2fee9ccf7834dd4ae41fd2e366be14e806a7b53a33b17e26a069e684de9c"
+  }
+ ],
+ "style": "studio_object",
+ "style_label": "Studio product shot",
+ "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+ "model": "flux-2/pro-text-to-image",
+ "model_key": "flux",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "Studio product photograph of a single paper AI usage invoice on a real studio desk surface in a server room, three-quarter angle, the invoice clipped to a matte black clipboard and partly folded to leave the line items unreadable, a softbox key light from upper left raking across the paper with visible falloff, long hard contact shadow to the right, graphite and bone white with a small safety yellow adhesive tab, brushed-steel desk surface, 85mm product lens, shallow depth of field, catalogue clarity, fine film grain, no people, no legible text, no logos.",
+ "negative_prompt": "garbled text, random lettering, watermarks, UI elements",
+ "rationale": "The story turns on the invoice itself\u2014the physical artefact where flat spend and falling token price confront a team. A studio product shot treats that invoice as a purchasable object of scrutiny, keeping the frame restrained and focused on the document that carries the cost.",
+ "cue": "Where the next invoice comes from",
+ "subject": "a paper AI usage invoice clipped to a black clipboard on a dark desk",
+ "core_thesis": "AI spending hit a record in October but rose only 1.65% while the price of a million tokens fell 21%, so the flat bill was bought by cutting the size of the work per task, mostly by teams that cannot see token cost as it happens.",
+ "core_conflict": "Unit price deflation versus unchanged total spend, with use growth hidden by cost-blind teams that shrink work rather than meter it.",
+ "composition": "extreme asymmetry with the invoice on the right third and long shadow to the left",
+ "alt_text": "A paper AI usage invoice clipped to a black clipboard on a dark desk, partly folded.",
+ "caption": "A paper AI usage invoice on a clipboard: the flat October bill was paid for in smaller work.",
+ "title": "Your AI Bill Grew 1.65% You Cut The Work",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 3,
+ "pinned": {
+  "style": "studio_object",
+  "model": "flux"
+ },
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/your-ai-bill-grew-165-you-cut-the-work/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 315847,
+ "sha256": "sha256:64281bfa160387a80c2d30cd1019c6c946471bb5a257d426f429e122fc404bc2",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 315847,
+  "quality": 88,
+  "sha256": "sha256:64281bfa160387a80c2d30cd1019c6c946471bb5a257d426f429e122fc404bc2",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:862f9610bd1005e6ef7754fa4dcc07a82b88bace1a5f160dddd3d89171c3e38d",
+ "render_phash": "cccc8ecc2ec8eccc8cfc1dfcf1edd2ff653f339e187c3ce49f86cd9feefff7ff",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A dark clipboard holding a single sheet of lined, sparsely printed paper with a yellow sticky tab at its lower right corner, resting on a black desk with blurred server cabinets behind it.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.72,
+  "reason": "The image shows an invoice-like bill on a clipboard in a server-room setting, which is the literal object the headline is about (an AI bill), though the document is blank so it illustrates the invoice without carrying any of the story's numbers or mechanism."
+ },
+ "source_hash": "sha256:50479c4379238ecf10d412dcfd2ac048",
+ "source_chars": 6141,
+ "task_id": "0f0560fbfcd994766f6367839b2814df",
+ "credits": 5.0,
+ "cost_ms": 47,
+ "provider_url": "https://tempfile.aiquickdraw.com/a2/0f0560fbfcd994766f6367839b2814df_1794483094959.jpg",
+ "provider_request": {
+  "model": "flux-2/pro-text-to-image",
+  "input": {
+   "prompt": "Studio product photograph of a single paper AI usage invoice on a real studio desk surface in a server room, three-quarter angle, the invoice clipped to a matte black clipboard and partly folded to leave the line items unreadable, a softbox key light from upper left raking across the paper with visible falloff, long hard contact shadow to the right, graphite and bone white with a small safety yellow adhesive tab, brushed-steel desk surface, 85mm product lens, shallow depth of field, catalogue clarity, fine film grain, no people, no legible text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K"
+  }
+ },
+ "generated_at": "2026-11-12T11:31:43+00:00",
+ "overlay": {
+  "kicker": "ENTERPRISE AI SPEND // TOKEN COST",
+  "title": "YOUR AI BILL GREW 1.65% YOU CUT THE WORK",
+  "hook": "AI use rose 29% while token prices fell 21%, so the flat bill was paid in smaller work",
+  "anchor": "top-left",
+  "light": false,
+  "scrim": 165,
+  "contrast": 5.75,
+  "target": 5.5,
+  "clutter": 0.588,
+  "region_rgb": [
+   80,
+   83,
+   85
+  ],
+  "binding_rgb": [
+   17,
+   21,
+   24
+  ],
+  "title_lines": [
+   "YOUR AI BILL",
+   "GREW 1.65% YOU",
+   "CUT THE WORK"
+  ],
+  "subject": 0.273,
+  "ink_subject": 0.191,
+  "spike": 0.6,
+  "generated_at": "2026-11-12T11:31:43+00:00"
+ }
+}

@@ -491,3 +491,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-11 | `your-robot-adds-a-12260-premium` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-robot-adds-a-12260-premium/featured.jpg` |
 | 2026-11-11 | `your-rings-hidden-83-gap` | property_loss_insurance_mitigation | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-rings-hidden-83-gap/featured.jpg` |
 | 2026-11-12 | `your-subagent-is-you` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-subagent-is-you/featured.jpg` |
+| 2026-11-12 | `your-ai-bill-grew-165-you-cut-the-work` | enterprise_ai_finops | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ai-bill-grew-165-you-cut-the-work/featured.jpg` |
