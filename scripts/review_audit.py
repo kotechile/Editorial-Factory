@@ -381,7 +381,7 @@ def restatement(text: str) -> dict:
 OBSERVER_CUE_RES = (
     # Any first-person verb — see site/social_voice.mjs: a closed verb list failed honest prose.
     re.compile(r"\bI(?:'ve|'m|'d|'ll)\b|\bI\s+[a-z']", re.I),
-    re.compile(r"\b(?:my read|my take|my sense|my view|where I(?:'ve| have) landed|"
+    re.compile(r"\b(?:my read(?:ing)?|my take|my sense|my view|where I(?:'ve| have) landed|"
                r"what I take from|I could be wrong)\b", re.I),
     re.compile(r"\b(?:what I(?:'m| am) watching|what strikes me|the bit that stuck with me|"
                r"the thing I(?:'d| would) want|curious (?:how|what|whether|if))\b", re.I),

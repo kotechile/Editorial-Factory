@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T12:22:04Z",
+  "updated_at": "2026-11-12T13:02:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6691,6 +6691,24 @@
       "date": "2026-11-12",
       "public": true,
       "url": "https://aichieve.net/your-ai-bill-grew-165-you-cut-the-work/"
+    },
+    {
+      "slug": "2026-11-12_your-bequest-carries-40-tax",
+      "title": "Your Child Inherits a 40% Bill",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Sixteen years, then a form",
+        "Who counts as a covered expatriate",
+        "By the numbers",
+        "The gap is the bill",
+        "Related reading"
+      ],
+      "target_persona": "cross_border_expat",
+      "date": "2026-11-12",
+      "public": false
     },
     {
       "slug": "2026-11-12_your-detour-outlasts-the-gates",
