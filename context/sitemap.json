@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T13:02:09Z",
+  "updated_at": "2026-11-12T13:15:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6728,6 +6728,24 @@
       "date": "2026-11-12",
       "public": true,
       "url": "https://aichieve.net/your-detour-outlasts-the-gates/"
+    },
+    {
+      "slug": "2026-11-12_your-plan-stops-at-the-substation",
+      "title": "Your Plan's $21,000 Power Gap",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The Optional Line Goes First",
+        "By the numbers",
+        "What the Next Filings Will Show",
+        "The Catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-12",
+      "public": false
     },
     {
       "slug": "2026-11-12_your-subagent-is-you",

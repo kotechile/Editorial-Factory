@@ -1,0 +1,113 @@
+{
+  "slug": "your-plan-stops-at-the-substation",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "High-voltage substation with an empty concrete transformer pad and copper busbars under raking sunlight.",
+      "caption": "The plan stops at the substation: an empty concrete pad under hard light waits for the grid connection that now gates supply chain growth.",
+      "title": "Manhattan Associates Power Gap Substation",
+      "bytes": 388478,
+      "sha256": "sha256:bfe4ca3679501bcd310fa55870b45312"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compressed view across a high-voltage substation at the edge of a distribution yard, galvanised steel gantry and copper busbars in sharp relief, an empty concrete transformer pad in the lower third under low raking sunlight from the left, graphite, safety yellow and concrete grey, compressed stacked equipment layers receding to a distant fence, extreme telephoto compression with the empty pad off-centre, deep industrial contrast, crystal-clear air, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story is systemic and operational: scale is the story, and the binding constraint is a physical substation connection. Long telephoto compression conveys the industrial scale and the empty pad as the unresolved power gap without reducing it to a sterile close-up or a document still.",
+  "cue": "your plan stops at the substation",
+  "subject": "a high-voltage substation with an empty concrete transformer pad",
+  "core_thesis": "Planning software now earns more from cloud fees than from implementation work, exactly as Gartner says a site's local power connection decides whether the plan can execute.",
+  "core_conflict": "Cloud subscription revenue compounding while site-specific implementation work that would encode local power constraints is pushed off as optional, leaving plans blind to the physical grid queue.",
+  "composition": "extreme telephoto compression with the empty pad off-centre and stacked equipment layers receding",
+  "alt_text": "Your Plan'S $21,000 Power Gap. High-voltage substation with an empty concrete transformer pad and copper busbars under raking sunlight.",
+  "caption": "Your Plan'S $21,000 Power Gap: Manhattan Associates' cloud fees passed its services revenue last quarter, by $21,000.",
+  "title": "Your Plan'S $21,000 Power Gap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-plan-stops-at-the-substation/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406795,
+  "sha256": "sha256:810d15cd34f657f84b7452b58ba7d0af86cbab4a1669f0fa4f8f2035d9010022",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406795,
+    "quality": 60,
+    "sha256": "sha256:810d15cd34f657f84b7452b58ba7d0af86cbab4a1669f0fa4f8f2035d9010022",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ac709f6b5400f1c7571da5796708bf8756a68f7cabd37776c0b463c3d1bc710a",
+  "render_phash": "d77e9776b1769966cd6ebd4c94cccedc4e9ad69ae14f67198dec397ece23ce5a",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A high-voltage substation yard seen in telephoto compression, with steel lattice gantries, banks of ceramic insulators and yellow-capped buswork receding in layers behind a large empty concrete transformer pad in the foreground.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.83,
+    "reason": "The empty pad at a substation is literally the article's stated binding constraint \u2014 the local grid connection that decides whether a plan can execute \u2014 so a reader would recognize the power-capacity mechanism, even though the software revenue figures are not depicted."
+  },
+  "source_hash": "sha256:fe4435e0d1068aec229163489055a9b6",
+  "source_chars": 4873,
+  "task_id": "615c65194820598cb4ff11468fafa84f",
+  "credits": 5.0,
+  "cost_ms": 144,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/615c65194820598cb4ff11468fafa84f_1794489262496.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compressed view across a high-voltage substation at the edge of a distribution yard, galvanised steel gantry and copper busbars in sharp relief, an empty concrete transformer pad in the lower third under low raking sunlight from the left, graphite, safety yellow and concrete grey, compressed stacked equipment layers receding to a distant fence, extreme telephoto compression with the empty pad off-centre, deep industrial contrast, crystal-clear air, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-12T13:14:32+00:00",
+  "overlay": {
+    "kicker": "SUPPLY CHAIN PLANNING // CLOUD REVENUE SHIFT",
+    "title": "YOUR PLAN'S $21,000 POWER GAP",
+    "hook": "Manhattan Associates' cloud fees passed its services revenue last quarter, by $21,000",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.11,
+    "target": 5.5,
+    "clutter": 0.373,
+    "region_rgb": [
+      111,
+      103,
+      96
+    ],
+    "binding_rgb": [
+      180,
+      164,
+      149
+    ],
+    "title_lines": [
+      "YOUR PLAN'S",
+      "$21,000 POWER",
+      "GAP"
+    ],
+    "subject": 0.237,
+    "ink_subject": 0.062,
+    "spike": 0.201,
+    "generated_at": "2026-11-12T13:14:32+00:00"
+  }
+}

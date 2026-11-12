@@ -81,12 +81,12 @@ The figure to carry away is not the rate. It is the pair — a citizen's tax-fre
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Italy Bills 26% to Leave" -> /italy-bills-26-to-leave/ [same site (giniloh.com); topical overlap: bill, leave] Link "Italy Bills 26% to Leave" in the section where the article touches bill, leave. -->
-<!-- internal-link hint: "Lease Break Calculator" -> /lease-break-calculator-save-1850-in-3-steps/ [same site (giniloh.com); topical overlap: covered, exit] Link "Lease Break Calculator" in the section where the article touches covered, exit. -->
+<!-- internal-link hint: "Your $130,000 Cap Costs the Credit" -> /your-130000-cap-costs-the-credit/ [curated by hand: same site, same vertical, both pieces are about what an American abroad owes the IRS] Link it where the article discusses the US tax bill of an expatriate. -->
 <!-- internal-link hint: "Your LLC Bill: 75% Until 2028" -> /your-llc-bill-75-until-2028/ [same site (giniloh.com); topical overlap: bill, rate] Link "Your LLC Bill: 75% Until 2028" in the section where the article touches bill, rate. -->
 ## Related reading
 
 - [Italy Bills 26% to Leave](/italy-bills-26-to-leave/)
-- [Lease Break Calculator](/lease-break-calculator-save-1850-in-3-steps/)
+- [Your $130,000 Cap Costs the Credit](/your-130000-cap-costs-the-credit/)
 - [Your LLC Bill: 75% Until 2028](/your-llc-bill-75-until-2028/)
 <!-- internal-links:end -->
 
