@@ -497,3 +497,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-12 | `your-plan-stops-at-the-substation` | demand_sensing_advanced_sop | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-plan-stops-at-the-substation/featured.jpg` |
 | 2026-11-12 | `your-bequest-carries-40-tax` | expat_cross_border_relocation | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-bequest-carries-40-tax/featured.jpg` |
 | 2026-11-12 | `idle-host-starved-tools-11-trap` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/idle-host-starved-tools-11-trap/featured.jpg` |
+| 2026-11-12 | `your-200k-prompts-hidden-rate-cliff` | enterprise_ai_finops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-200k-prompts-hidden-rate-cliff/featured.jpg` |

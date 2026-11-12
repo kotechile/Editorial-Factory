@@ -10,8 +10,14 @@ date: 2026-11-12
 slug: your-200k-prompts-hidden-rate-cliff
 meta_title: "Your 200K Prompt's Hidden Rate Cliff"
 meta_title_source: "derived_from_title"
-meta_description: "One token past a schedule's context line reprices the whole request. On Gemini 3.1 Pro Preview that line sits at 200,000 input tokens, and the input rate…"
-meta_description_source: "derived_from_lead"
+meta_description: "One token past a schedule's context line reprices the whole request, and Gemini 3.1 Pro Preview doubles the input rate once a prompt passes 200,000 tokens."
+meta_description_source: "authored"
+image_path: "context/assets/illustrations/your-200k-prompts-hidden-rate-cliff/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A machined pricing-schedule bay: graphite modules below a thin metal stop rail, copper modules above, on a steel workbench."
+image_caption: "The stop rail in a pricing-schedule bay: graphite modules below it, copper modules above, at the line where the rate changes."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

@@ -1,0 +1,118 @@
+{
+  "slug": "your-200k-prompts-hidden-rate-cliff",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Pricing-schedule bay with graphite modules below and copper modules above a safety-yellow threshold gate.",
+      "caption": "A modular assembly visualizes how a single token crossing a published context line reprices the whole request into a dearer column.",
+      "title": "Rate-schedule threshold gate",
+      "bytes": 365623,
+      "sha256": "sha256:2880a9d588ad2896e1a2c59a224803a4"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a brushed steel workbench in a data hall, a modular pricing-schedule bay sits off-center left. Two vertical aluminum rails hold rectangular plug-in pricing modules; all modules below a horizontal steel threshold beam are graphite with milled latch tabs, and all above are oxidized copper. A slim token-length rail with a sliding stop rises from below and crosses the beam just past the line. An unlatched safety-yellow inspection gate marks the threshold. One hard key light from upper left rakes across graphite, copper and safety yellow, throwing long contact shadows; 85mm macro, shallow depth of field, fine film grain; extreme asymmetry, no lettering, no people.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, legible labels, screen UI, logos",
+  "rationale": "The article is a single rule, gate, and price-shift story with no physical facility to photograph, so component_assembly lets the rate schedule itself become a legible mechanical threshold: a lower standard column flips to a higher long-context column at a physical line, with the token rail crossing just past it.",
+  "cue": "crossing a schedule's line reprices every token in the request",
+  "subject": "A modular pricing-schedule bay with two vertical rails, graphite standard-context modules below a threshold beam, copper long-context modules above, and a token-length rail crossing just past the line.",
+  "core_thesis": "Context length is a price column, not a capability: crossing a schedule's line reprices every token in the request, so the 95th-percentile prompt length sets what a workflow costs.",
+  "core_conflict": "The standard-rate column under the declared context line collides with the dearer long-context column above it; one token can move the entire request into the premium schedule, so the long tail of p95 prompts decides cost.",
+  "composition": "Extreme asymmetry with the assembly off-center left, horizontal threshold beam splitting the frame, and a long cast shadow to the right.",
+  "alt_text": "A machined pricing-schedule bay: graphite modules below a thin metal stop rail, copper modules above, on a steel workbench.",
+  "caption": "The stop rail in a pricing-schedule bay: graphite modules below it, copper modules above, at the line where the rate changes.",
+  "title": "Your 200K Prompt'S Hidden Rate Cliff",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-200k-prompts-hidden-rate-cliff/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407605,
+  "sha256": "sha256:091d5f9df3de60ab5c7a21b1088800de1fc012f7361155e616670bf50d9461cd",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407605,
+    "quality": 84,
+    "sha256": "sha256:091d5f9df3de60ab5c7a21b1088800de1fc012f7361155e616670bf50d9461cd",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:700bb9d5732e41d9854955090906b0644f376bb809197d9b508bdb65ecd8fc22",
+  "render_phash": "1e7c1f161a531e5c0dff8dbf8dbf89bf993f99d699960956393609e601ffd016",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metal workbench holding a cluster of machined metal chassis boxes on the left, a thin vertical metal rail with a small sliding clamp rising through the middle, a horizontal beam-like shelf behind it, four green-patinated copper plates standing along the top shelf, and a yellow-framed open metal box on the right, lit by a lamp against a dark rack-filled background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "It builds the ordered modular bay with a vertical rail and modules divided above and below a horizontal beam, which reads as the article's length-threshold pricing-schedule mechanism rather than a foreign scene, though the two-tier copper/standard pricing split is only loosely legible."
+  },
+  "source_hash": "sha256:62c52451b44f5ef852aef3399f9141be",
+  "source_chars": 5445,
+  "task_id": "8b97c7b3fb06e620b5c5e4d9a5401674",
+  "credits": 18.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1794507334441-zn3zxvn7bpa.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a brushed steel workbench in a data hall, a modular pricing-schedule bay sits off-center left. Two vertical aluminum rails hold rectangular plug-in pricing modules; all modules below a horizontal steel threshold beam are graphite with milled latch tabs, and all above are oxidized copper. A slim token-length rail with a sliding stop rises from below and crosses the beam just past the line. An unlatched safety-yellow inspection gate marks the threshold. One hard key light from upper left rakes across graphite, copper and safety yellow, throwing long contact shadows; 85mm macro, shallow depth of field, fine film grain; extreme asymmetry, no lettering, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-12T18:15:40+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE AI FINOPS // CONTEXT PRICING",
+    "title": "YOUR 200K PROMPT'S HIDDEN RATE CLIFF",
+    "hook": "The p95 prompt, not the average, sets what a workflow costs under these schedules",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.04,
+    "target": 5.5,
+    "clutter": 0.43,
+    "region_rgb": [
+      75,
+      65,
+      31
+    ],
+    "binding_rgb": [
+      154,
+      134,
+      110
+    ],
+    "title_lines": [
+      "YOUR 200K",
+      "PROMPT'S HIDDEN",
+      "RATE CLIFF"
+    ],
+    "subject": 0.375,
+    "ink_subject": 0.169,
+    "spike": 0.415,
+    "generated_at": "2026-11-12T18:15:40+00:00"
+  }
+}
