@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T18:56:26Z",
+  "updated_at": "2026-11-12T19:13:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6762,6 +6762,24 @@
         "The catch"
       ],
       "target_persona": "ops_leader",
+      "date": "2026-11-12",
+      "public": false
+    },
+    {
+      "slug": "2026-11-12_your-contractors-bond-dies-at-25000",
+      "title": "Your Contractor's Bond Dies at $25,000",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "What sits behind the licence",
+        "By the numbers",
+        "When the pot runs out",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-12",
       "public": false
     },

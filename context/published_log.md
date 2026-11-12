@@ -370,6 +370,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-12 | agentic_ai | idle-host-starved-tools-11-trap | Idle Host, Starved Tools: Your 11% Trap | https://pressflow.aichieve.net/published/2026-11-12_idle-host-starved-tools-11-trap.md | reader site only |
 | 2026-11-12 | enterprise_ai_finops | your-200k-prompts-hidden-rate-cliff | Your 200K Prompt's Hidden Rate Cliff | https://pressflow.aichieve.net/published/2026-11-12_your-200k-prompts-hidden-rate-cliff.md | reader site only |
 | 2026-11-12 | supply_chain | your-carrier-is-exempt-your-lot-records-arent | Your Carrier Owes Your Lot Nothing | https://pressflow.aichieve.net/published/2026-11-12_your-carrier-is-exempt-your-lot-records-arent.md | reader site only |
+| 2026-11-12 | home_ops_execution | your-contractors-bond-dies-at-25000 | Your Contractor's Bond Dies at $25,000 | https://pressflow.aichieve.net/published/2026-11-12_your-contractors-bond-dies-at-25000.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
