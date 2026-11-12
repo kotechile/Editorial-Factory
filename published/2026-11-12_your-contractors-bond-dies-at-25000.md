@@ -12,6 +12,12 @@ meta_title: "Your Contractor's Bond Dies at $25,000"
 meta_title_source: "derived_from_title"
 meta_description: "The bid says licensed, bonded and insured, and in California your contractor's bond behind that line is a flat $25,000."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-contractors-bond-dies-at-25000/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A blank aluminium licence plate slotted into a steel rack, held by a green latch arm against a fixed stop pin on a concrete workbench."
+image_caption: "A fixed stop pin sets the ceiling on a modular inspection gate, whatever the job costs."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -63,12 +69,11 @@ The bond is not worthless. It is a cheap, quick claim for a small loss with reco
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Hidden Lien Clock Behind Your Remodel Payments" -> /mechanics-lien-clock-payment-release/ [same site (wellroost.com); same category; topical overlap: behind, california] Link "Hidden Lien Clock Behind Your Remodel Payments" in the section where the article touches behind, california. -->
-<!-- internal-link hint: "Cheap Gas, $20,000 Pipe" -> /cheapest-fuel-priciest-pipe/ [same site (wellroost.com); topical overlap: california, line] Link "Cheap Gas, $20,000 Pipe" in the section where the article touches california, line. -->
 <!-- internal-link hint: "Tools & Equipment" -> /categories/tools-equipment/ [same site (wellroost.com); same category; the article's own category hub (Tools & Equipment)] Link "Tools & Equipment" in the section where the article touches this topic. -->
 ## Related reading
 
 - [Hidden Lien Clock Behind Your Remodel Payments](/mechanics-lien-clock-payment-release/) — more on Tools & Equipment
-- [Cheap Gas, $20,000 Pipe](/cheapest-fuel-priciest-pipe/) — more on Energy & Efficiency
+- [Retainage Trap: 5 Percent, Not 15](/hold-back-capped-at-5-percent/) — more on Tools & Equipment
 - [Tools & Equipment](/categories/tools-equipment/) — more on Tools & Equipment
 <!-- internal-links:end -->
 

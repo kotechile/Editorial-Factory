@@ -1,0 +1,124 @@
+{
+  "slug": "your-contractors-bond-dies-at-25000",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Contractor's licence plate in a modular inspection gate with a fixed stop pin on a garage workbench.",
+      "caption": "A fixed stop pin on a modular inspection gate sets the bond's ceiling, not the job size.",
+      "title": "Contractor Bond Ceiling Modular Gate",
+      "bytes": 389850,
+      "sha256": "sha256:7570437e0497dcae9d9e50660fce1461"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A blank aluminium licence plate slotted into a steel rack, held by a green latch arm against a fixed stop pin on a concrete workbench.",
+      "caption": "A fixed stop pin sets the ceiling on a modular inspection gate, whatever the job costs.",
+      "note": "alt rewritten to one 40-140 char sentence; headline prefix and mid-phrase clipping removed"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A modular metal inspection gate on a weathered concrete garage workbench: a blank brushed aluminium contractor licence plate slotted into a slotted steel rack, a latch arm held by a fixed stop pin at the rack\u2019s end, and a locking bay cover resting partly open. One directional key light rakes from the left across matte graphite and powder-coated pine-green surfaces, throwing one long cast shadow. Extreme asymmetry, hero assembly off-centre on the left third, generous negative space to the right. Hard clean edges, matte muted palette, no text, no logos, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, people",
+  "rationale": "This story turns on a single fixed number and a hard regulatory ceiling, so a restrained modular assembly\u2014a stop pin locking a gate at its maximum travel\u2014states that ceiling physically without a literal document shot. The component_assembly treatment fits the single-rule, single-number restraint the story demands.",
+  "cue": "Your Contractor's Bond Dies at $25,000",
+  "subject": "A blank contractor's licence plate clipped into a modular metal inspection gate with a fixed stop pin and a slotted steel rack",
+  "core_thesis": "A contractor's bond is a fixed, state-set ceiling\u2014$25,000 flat in California, as little as $5,000 in Arizona\u2014not coverage that scales with the job, and both clocks attached to it start at completion or a licence event rather than the day you find the defect.",
+  "core_conflict": "Fixed bond face value vs. a homeowner's actual repair liability, with claim clocks starting at completion or licence event rather than at the homeowner's discovery of a defect.",
+  "composition": "extreme asymmetry, hero assembly off-centre on the left third, generous negative space to the right",
+  "alt_text": "A blank aluminium licence plate slotted into a steel rack, held by a green latch arm against a fixed stop pin on a concrete workbench.",
+  "caption": "A fixed stop pin sets the ceiling on a modular inspection gate, whatever the job costs.",
+  "title": "Your Contractor'S Bond Dies At $25,000",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-contractors-bond-dies-at-25000/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404626,
+  "sha256": "sha256:0f58b40d5bb376e81694d23f85f51c6d5ab1b7324cdd4de945867c37d080bde2",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404626,
+    "quality": 68,
+    "sha256": "sha256:0f58b40d5bb376e81694d23f85f51c6d5ab1b7324cdd4de945867c37d080bde2",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e30f3e0cbee1342c96bb6c1e8659327449849d52cd80191535704e1a0cc93558",
+  "render_phash": "fffffafff9ffb4ff687fde7f9f3f3e3f7c7ff8ffb9ff73bee1bec5dfccff96ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A close-up of a grey and steel slotted mounting plate carrying a green clamp arm and a green wedge block, fastened with a small pin, lying on a light grey concrete floor with the right two-thirds of the frame left empty.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.55,
+    "reason": "The clamped stop-pin assembly on a fixed slotted rack does read as the article's mechanism of a capped, immovable limit, but without any licence-plate face, state marking or contractor cue it is close to generic hardware and only weakly signals contractor bonds."
+  },
+  "source_hash": "sha256:95663eac9a30a1e9ea0622fa2fb81bb5",
+  "source_chars": 4266,
+  "task_id": "cb1de7bc57104e346fb79dfe6a6abd05",
+  "credits": 18.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d10f7b8df746d4dbb9712e85b3280f09.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A modular metal inspection gate on a weathered concrete garage workbench: a blank brushed aluminium contractor licence plate slotted into a slotted steel rack, a latch arm held by a fixed stop pin at the rack\u2019s end, and a locking bay cover resting partly open. One directional key light rakes from the left across matte graphite and powder-coated pine-green surfaces, throwing one long cast shadow. Extreme asymmetry, hero assembly off-centre on the left third, generous negative space to the right. Hard clean edges, matte muted palette, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-12T19:14:43+00:00",
+  "overlay": {
+    "kicker": "RESIDENTIAL CONTRACTOR BOND // $25,000 CAP",
+    "title": "YOUR CONTRACTOR'S BOND DIES AT $25,000",
+    "hook": "A $40,000 bathroom and a $400,000 addition carry the same bond cap",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.7,
+    "target": 4.5,
+    "clutter": 0.245,
+    "region_rgb": [
+      165,
+      158,
+      139
+    ],
+    "binding_rgb": [
+      141,
+      134,
+      108
+    ],
+    "title_lines": [
+      "YOUR",
+      "CONTRACTOR'S",
+      "BOND DIES AT $25,000"
+    ],
+    "subject": 0.085,
+    "ink_subject": 0.009,
+    "spike": 0.046,
+    "generated_at": "2026-11-12T19:14:43+00:00"
+  }
+}
