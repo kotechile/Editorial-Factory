@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T11:14:35Z",
+  "updated_at": "2026-11-12T11:45:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6670,6 +6670,24 @@
         "Related reading"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-12",
+      "public": false
+    },
+    {
+      "slug": "2026-11-12_your-detour-outlasts-the-gates",
+      "title": "Your Detour Outlasts the Tariff Deadline",
+      "vertical": "supply_chain",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The 70 weeks and the six",
+        "By the numbers",
+        "Where the December booking lands",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-12",
       "public": false
     },

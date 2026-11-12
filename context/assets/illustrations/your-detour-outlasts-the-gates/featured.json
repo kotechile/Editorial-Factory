@@ -1,0 +1,113 @@
+{
+  "slug": "your-detour-outlasts-the-gates",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Container terminal gate lanes at dusk, extra evening gates lit, a dark closed bridge behind.",
+      "caption": "The terminal's extra evening gate hours glow at blue hour while the closed bridge sits dark, making the scheduling mismatch visible.",
+      "title": "Blue-hour terminal gates and closed bridge",
+      "bytes": 384510,
+      "sha256": "sha256:7f48613acb709d6bc9f2ee1582052984"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme asymmetric 35mm anamorphic wide at a container terminal after dusk. A row of corrugated steel gate booths and stacked containers sit on the left third, lit by warm amber gate lamps from the right; deep blue ambient dusk falls from the left, and a dark closed bridge recedes across water on the right. Concrete apron, asphalt lanes, graphite shadows. Long-exposure calm, shallow depth of field, fine film grain, no people, no text, no logos, no numbers.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story is about port capacity running after hours while the key access bridge is closed, so architectural night captures the lit gate booths against deep blue ambient light and makes the scheduling mismatch visible in one frame.",
+  "cue": "the extra gates will be shut before the boxes land",
+  "subject": "container terminal gate complex under blue-hour light with a closed bridge in the distance",
+  "core_thesis": "The bridge closure lasts 16 months, but Long Beach's extra gate hours run only six weeks and end before the January tariff deadline, so January cargo meets the detour with no added gate capacity.",
+  "core_conflict": "the extra gate hours end before the tariff-driven cargo surge arrives, leaving drayage trucks to absorb the bridge detour without mitigation",
+  "composition": "extreme asymmetry: gate complex left third, dark bridge receding right",
+  "alt_text": "Your Detour Outlasts The Tariff Deadline. Container terminal gate lanes at dusk, extra evening gates lit, a dark closed bridge behind.",
+  "caption": "Your Detour Outlasts The Tariff Deadline: The Port of Los Angeles bridge is shut for 16 months, the extra gate hours last six.",
+  "title": "Your Detour Outlasts The Tariff Deadline",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-detour-outlasts-the-gates/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406356,
+  "sha256": "sha256:b35e4157944b8df198c167a4f3db9e21cd8adfd32f05b9151a4435bb4f370cd6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406356,
+    "quality": 84,
+    "sha256": "sha256:b35e4157944b8df198c167a4f3db9e21cd8adfd32f05b9151a4435bb4f370cd6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:bdaad38e3ffc2d18091a03cd1829c1e280d99129e0511b1cb14383553b7b24c7",
+  "render_phash": "b23f997f887f847f987f987f0b790f3b13b311fc1bff0fe70fb38ea7072d1e4b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dusk view of a container yard with stacked steel boxes at left, a row of four lit glass-and-metal gate booths on a concrete apron, a wet asphalt roadway marked with white lane lines and a painted arrow, and a steel truss gantry spanning a road at right with light trails from passing vehicles.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The frame shows a container terminal gate complex with booths, boxes and a road structure in the distance \u2014 the article's own mechanism (port gate capacity coping with a bridge closure and drayage traffic), not a generic or unrelated scene."
+  },
+  "source_hash": "sha256:393459f5125b56da48f8acabb519cd92",
+  "source_chars": 5053,
+  "task_id": "a951fcf0d5606908ae617c33c933e458",
+  "credits": 5.0,
+  "cost_ms": 142,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a951fcf0d5606908ae617c33c933e458_1794483764985.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme asymmetric 35mm anamorphic wide at a container terminal after dusk. A row of corrugated steel gate booths and stacked containers sit on the left third, lit by warm amber gate lamps from the right; deep blue ambient dusk falls from the left, and a dark closed bridge recedes across water on the right. Concrete apron, asphalt lanes, graphite shadows. Long-exposure calm, shallow depth of field, fine film grain, no people, no text, no logos, no numbers.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-12T11:42:51+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR DETOUR OUTLASTS THE TARIFF DEADLINE",
+    "hook": "The Port of Los Angeles bridge is shut for 16 months, the extra gate hours last six",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.16,
+    "target": 4.5,
+    "clutter": 0.126,
+    "region_rgb": [
+      35,
+      91,
+      118
+    ],
+    "binding_rgb": [
+      46,
+      106,
+      132
+    ],
+    "title_lines": [
+      "YOUR DETOUR",
+      "OUTLASTS THE",
+      "TARIFF DEADLINE"
+    ],
+    "subject": 0.084,
+    "ink_subject": 0.027,
+    "spike": 0.093,
+    "generated_at": "2026-11-12T11:42:51+00:00"
+  }
+}

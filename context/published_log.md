@@ -363,6 +363,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-11 | property_loss_insurance_mitigation | your-rings-hidden-83-gap | Your Ring's Hidden 83% Gap | https://pressflow.aichieve.net/published/2026-11-11_your-rings-hidden-83-gap.md | reader site only |
 | 2026-11-12 | agentic_ai | your-subagent-is-you | Your Subagent Is Not a Role: 45 of 45 | https://pressflow.aichieve.net/published/2026-11-12_your-subagent-is-you.md | reader site only |
 | 2026-11-12 | enterprise_ai_finops | your-ai-bill-grew-165-you-cut-the-work | Your AI Bill Grew 1.65%: You Cut the Work | https://pressflow.aichieve.net/published/2026-11-12_your-ai-bill-grew-165-you-cut-the-work.md | reader site only |
+| 2026-11-12 | supply_chain | your-detour-outlasts-the-gates | Your Detour Outlasts the Tariff Deadline | https://pressflow.aichieve.net/published/2026-11-12_your-detour-outlasts-the-gates.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
