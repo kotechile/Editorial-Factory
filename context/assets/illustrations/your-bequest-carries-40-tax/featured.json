@@ -1,0 +1,118 @@
+{
+  "slug": "your-bequest-carries-40-tax",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A brass bequest allowance gate beside a weighted ledger block on a wooden desk",
+      "caption": "A mechanical allowance gate shows the narrow yearly threshold before a much heavier 40 percent bill takes hold.",
+      "title": "Section 2801 allowance gate and ledger block",
+      "bytes": 377131,
+      "sha256": "sha256:a7d9b297ca85acb2d7388c7b45ebc531"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A small matte clay mechanical assembly on a warm oak desk: a brass allowance gate with a narrow latched slot and one thin stack of cream paper slips passing beneath it, linked by a hinged brass arm to a heavier dark graphite ledger block with a spring-loaded pressure plate. Soft window light from the left rakes across the matte clay surfaces, casting long contact shadows on the wood. Palette warm oak, bone white, charcoal. Fine film grain. Extreme asymmetry: brass gate off-centre left, generous negative space to the right. No text, no logos, no lettering.",
+  "negative_prompt": "garbled text, random letters, watermarks, illegible print, signatures, UI",
+  "rationale": "The story is structural and abstract\u2014a threshold, a rate, and a future liability\u2014so a matte clay mechanical assembly makes that governing mechanism physical without resorting to a literal tax form or an unrecognizable prop. It keeps the reader's eye on the allowance gate and the weighted bill, not a generic document.",
+  "cue": "Your Child Inherits a 40% Bill",
+  "subject": "a brass bequest allowance gate linked to a weighted ledger block on a wooden desk",
+  "core_thesis": "A covered expatriate's gift or bequest above $20,000 a year to an American relative triggers a 40% tax bill paid by the recipient.",
+  "core_conflict": "A small yearly allowance gate versus the sudden 40% estate-tax liability that attaches to every future transfer to an American child.",
+  "composition": "extreme asymmetry with the brass gate off-centre left and generous negative space to the right",
+  "alt_text": "A clay-rendered stone press with a brass slot holding a stack of blank paper slips on a wooden table, lit from the left.",
+  "caption": "A press holding blank slips: the 40% charge falls on the American who receives, not the former citizen who gives.",
+  "title": "The 40% Tax On Expat Gifts And Estates",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {
+    "style": "clay_render",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-bequest-carries-40-tax/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406022,
+  "sha256": "sha256:f1e58d92d48e163ff0b5275c44f139bed3ef296cff695f26382dad8a06bfef5a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406022,
+    "quality": 76,
+    "sha256": "sha256:f1e58d92d48e163ff0b5275c44f139bed3ef296cff695f26382dad8a06bfef5a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:1b3e3b1a3a93baa1553ef175f6a11bc981cfbd1d41d9686459363266d0511c2d",
+  "render_phash": "37f0b7f0b3f83382777ffe7fba9f739f658f6786b71fb6fe8cfe45bfe3e6c1ee",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A matte, 3D-rendered desk device sits on a honey-toned wooden table beside a window: a grey stone block holding a brass plate with a horizontal slot and a small knob, a stack of cream paper slips protruding from that slot toward the viewer, a brass rod running to a second stone block at right, and a black rectangular weight mounted on a compressed metal spring above the paper stack.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame delivers the ordered metaphor \u2014 a gate metering a thin stack of slips to a set allowance, with a heavy counterweight bearing down \u2014 which maps to the article's mechanism of a capped yearly bequest allowance under a crushing 40% charge, though the object is abstract enough that the tax/inheritance specifics come only from the headline."
+  },
+  "source_hash": "sha256:d3faeb9063519e9ec31473531e6c7972",
+  "source_chars": 4295,
+  "task_id": "9e08c9d51d1de24e6fb7bb8b3670c500",
+  "credits": 18.0,
+  "cost_ms": 56,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1794489934365-ltrys9h7g9.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A small matte clay mechanical assembly on a warm oak desk: a brass allowance gate with a narrow latched slot and one thin stack of cream paper slips passing beneath it, linked by a hinged brass arm to a heavier dark graphite ledger block with a spring-loaded pressure plate. Soft window light from the left rakes across the matte clay surfaces, casting long contact shadows on the wood. Palette warm oak, bone white, charcoal. Fine film grain. Extreme asymmetry: brass gate off-centre left, generous negative space to the right. No text, no logos, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-12T13:25:44+00:00",
+  "overlay": {
+    "kicker": "CROSS-BORDER ESTATE TAX // SECTION 2801",
+    "title": "THE 40% TAX ON EXPAT GIFTS AND ESTATES",
+    "hook": "After you expatriate, your American heirs face a 40% tax on gifts and estates",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.84,
+    "target": 5.5,
+    "clutter": 0.264,
+    "region_rgb": [
+      82,
+      58,
+      27
+    ],
+    "binding_rgb": [
+      139,
+      94,
+      37
+    ],
+    "title_lines": [
+      "THE 40% TAX ON",
+      "EXPAT GIFTS AND",
+      "ESTATES"
+    ],
+    "subject": 0.141,
+    "ink_subject": 0.024,
+    "spike": 0.17,
+    "generated_at": "2026-11-12T13:25:44+00:00"
+  }
+}

@@ -13,6 +13,12 @@ meta_title: "Your Child Inherits a 40% Bill"
 meta_title_source: "derived_from_title"
 meta_description: "A former American who meets an exit test — a covered expatriate — can leave a child only a small yearly allowance before the child owes the top estate-tax…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-bequest-carries-40-tax/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "A clay-rendered stone press with a brass slot holding a stack of blank paper slips on a wooden table, lit from the left."
+image_caption: "A press holding blank slips: the 40% charge falls on the American who receives, not the former citizen who gives."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
