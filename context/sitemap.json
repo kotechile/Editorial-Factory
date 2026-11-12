@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T19:45:21Z",
+  "updated_at": "2026-11-12T20:14:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6837,6 +6837,24 @@
       "date": "2026-11-12",
       "public": true,
       "url": "https://aichieve.net/your-plan-stops-at-the-substation/"
+    },
+    {
+      "slug": "2026-11-12_your-sensing-tool-lands-once-a-day",
+      "title": "Batch Runs Cap What Sensing Buys",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the day goes",
+        "By the numbers",
+        "Where the fast clock belongs",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-12",
+      "public": false
     },
     {
       "slug": "2026-11-12_your-subagent-is-you",
