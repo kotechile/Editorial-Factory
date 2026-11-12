@@ -29,7 +29,7 @@ export const OBSERVER_CUES = [
   // "I" followed by a verb is the rule; the labelled-opinion and attention families below still
   // catch the forms that carry no verb ("My read:", "What I'm watching").
   { label: 'first-person observation', re: /\bI(?:'ve|'m|'d|'ll)\b|\bI\s+[a-z']/i },
-  { label: 'labelled opinion', re: /\b(?:my read|my take|my sense|my view|where I(?:'ve| have) landed|what I take from|I could be wrong)\b/i },
+  { label: 'labelled opinion', re: /\b(?:my read(?:ing)?|my take|my sense|my view|where I(?:'ve| have) landed|what I take from|I could be wrong)\b/i },
   {
     label: 'attention, not instruction',
     re: /\b(?:what I(?:'m| am) watching|what strikes me|the bit that stuck with me|the part I keep circling|the thing I(?:'d| would) want|curious (?:how|what|whether|if))\b/i,

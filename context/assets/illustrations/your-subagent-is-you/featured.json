@@ -1,6 +1,6 @@
 {
   "slug": "your-subagent-is-you",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -13,7 +13,7 @@
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,8 +27,8 @@
   "core_thesis": "A subagent's spawn boundary inherits the parent's permissions and lets the child forge its identity, so scope must be a grant checked outside the model.",
   "core_conflict": "Inherited parent permissions versus external scope enforcement",
   "composition": "extreme asymmetry: child blade off-centre low, rack row receding right, single external checker on right rail",
-  "alt_text": "Subagents Inherit Parent Permissions. A server rack's spawned child blade shares an amber tether with its parent while a separate checker",
-  "caption": "Subagents Inherit Parent Permissions: In 45 of 45 runs, a subagent wrote outside its workspace wherever its parent could.",
+  "alt_text": "A server blade drawn out of its rack, linked to the unit below by a flat amber cable, in a dark data hall.",
+  "caption": "A server blade drawn out of its rack, still linked to the unit beneath it by an amber cable.",
   "title": "Subagents Inherit Parent Permissions",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.72,
-    "reason": "The frame stages the article's own mechanism\u2014a spawned child blade physically tethered to its parent unit inside a rack, with a distinct external checker device on the right rail and blank label plates\u2014so a reader would recognise the delegation-boundary and external-check story rather than a generic data-centre scene."
+    "reason": "The frame stages the article's own mechanism—a spawned child blade physically tethered to its parent unit inside a rack, with a distinct external checker device on the right rail and blank label plates—so a reader would recognise the delegation-boundary and external-check story rather than a generic data-centre scene."
   },
   "source_hash": "sha256:9ddc5f00055a39992979fa3ffcb85859",
   "source_chars": 5726,

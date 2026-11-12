@@ -12,13 +12,13 @@ sources:
   - https://arxiv.org/abs/2610.27574
 meta_title: "Your Subagent Is Not a Role: 45 of 45"
 meta_title_source: "derived_from_title"
-meta_description: "In all 45 measured runs, a spawned subagent could write outside its workspace wherever its parent could. Four days earlier, a frontier supervisor let an…"
-meta_description_source: "derived_from_lead"
+meta_description: "A spawned subagent inherits its parent's full authority in 45 of 45 measured runs, and the sender label on its report is text the child can forge."
+meta_description_source: "authored"
 image_path: "context/assets/illustrations/your-subagent-is-you/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Subagents Inherit Parent Permissions. A server rack's spawned child blade shares an amber tether with its parent while a separate checker"
-image_caption: "Subagents Inherit Parent Permissions: In 45 of 45 runs, a subagent wrote outside its workspace wherever its parent could."
+image_alt: "A server blade drawn out of its rack, linked to the unit below by a flat amber cable, in a dark data hall."
+image_caption: "A server blade drawn out of its rack, still linked to the unit beneath it by an amber cable."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -55,9 +55,9 @@ That is what the arena prices. Peer deception — one subagent backing another �
 
 ## By the numbers
 
+- **45 runs, no exception:** Every child wrote outside its workspace wherever its parent could [1].
 - **0.73 attack success:** Out-of-scope tasks a supervisor opened to one convincing subagent, against 0.87 task success [2].
 - **65 missing parts:** Of 116 operating-system pieces an agent needs, the count with no counterpart [1].
-- **45 runs, no exception:** Every child wrote outside its workspace wherever its parent could [1].
 
 <!-- tactical-insight -->
 
@@ -78,14 +78,12 @@ The 45 of 45 is five runs per cell, and the authors give a Wilson lower bound of
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "270 Attacks: Your Green Tests Are Blind" -> /one-skill-too-many-green-test/ [same site (aichieve.net); same category; topical overlap: runs] Link "270 Attacks: Your Green Tests Are Blind" in the section where the article touches runs. -->
-<!-- internal-link hint: "Agent Memory Poisoning" -> /agent-memory-poisoning-write-path/ [same site (aichieve.net); same category; topical overlap: write] Link "Agent Memory Poisoning" in the section where the article touches write. -->
-<!-- internal-link hint: "Silent Leak: 68.8% Bypasses Your Filter" -> /silent-leak-bypasses-your-filter/ [same site (aichieve.net); same category; topical overlap: runs] Link "Silent Leak: 68.8% Bypasses Your Filter" in the section where the article touches runs. -->
+<!-- curated by the 2026-11-12 run: the generated picks were justified on the single incidental tokens "runs"/"write" and were replaced with same-vertical on-thesis pages -->
 ## Related reading
 
-- [270 Attacks: Your Green Tests Are Blind](/one-skill-too-many-green-test/) — more on Autonomous & Agentic Workflows
-- [Agent Memory Poisoning](/agent-memory-poisoning-write-path/) — more on Autonomous & Agentic Workflows
-- [Silent Leak: 68.8% Bypasses Your Filter](/silent-leak-bypasses-your-filter/) — more on Autonomous & Agentic Workflows
+- [Your Gateway: 60.5% Injection Risk](/your-tool-surface-is-a-release-surface/) — what the tool layer decides at the boundary
+- [Your Agent Team Loses 28 Points](/your-agent-team-loses-28-points/) — what a team costs to coordinate
+- [68 Loops Your Runtime Never Stopped](/agent-loop-bound-not-a-budget/) — what stops a run when nothing else does
 <!-- internal-links:end -->
 
 ## Sources
