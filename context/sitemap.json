@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T11:45:09Z",
+  "updated_at": "2026-11-12T11:52:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6671,7 +6671,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-ai-bill-grew-165-you-cut-the-work/"
     },
     {
       "slug": "2026-11-12_your-detour-outlasts-the-gates",
@@ -6689,7 +6690,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-detour-outlasts-the-gates/"
     },
     {
       "slug": "2026-11-12_your-subagent-is-you",
@@ -6707,7 +6709,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-subagent-is-you/"
     }
   ]
 }

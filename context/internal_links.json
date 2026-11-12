@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T20:23:43+00:00",
+  "generated_at": "2026-11-12T11:52:28+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -8197,6 +8197,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-ai-bill-grew-165-you-cut-the-work",
+      "title": "Your AI Bill Grew 1.65%: You Cut the Work",
+      "url": "https://aichieve.net/your-ai-bill-grew-165-you-cut-the-work/",
+      "path": "/your-ai-bill-grew-165-you-cut-the-work/",
+      "sites_live": {
+        "aichieve.net": "/your-ai-bill-grew-165-you-cut-the-work/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "AI spending set a record in October and rose 1.65% while a million tokens got 21% cheaper. The flat bill was bought by cutting the size of the work.",
+      "modified": "2026-11-12T11:45:19",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-ai-fine-is-3-percent",
       "title": "Your AI Fine: 3%, Not 35 Million",
       "url": "https://aichieve.net/your-ai-fine-is-3-percent/",
@@ -8558,6 +8581,29 @@
       ],
       "excerpt": "A detector that reads one run, however much of that run it reads, misses 22 of 60 agent runs that broke a rule your policy would name.",
       "modified": "2026-11-09T11:40:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-detour-outlasts-the-gates",
+      "title": "Your Detour Outlasts the Tariff Deadline",
+      "url": "https://aichieve.net/your-detour-outlasts-the-gates/",
+      "path": "/your-detour-outlasts-the-gates/",
+      "sites_live": {
+        "aichieve.net": "/your-detour-outlasts-the-gates/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The Port of Los Angeles bridge is shut for 16 months, the extra gate hours last six weeks, and the tariff deadline comes four weeks after they end.",
+      "modified": "2026-11-12T11:45:08",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9485,6 +9531,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-subagent-is-you",
+      "title": "Your Subagent Is Not a Role: 45 of 45",
+      "url": "https://aichieve.net/your-subagent-is-you/",
+      "path": "/your-subagent-is-you/",
+      "sites_live": {
+        "aichieve.net": "/your-subagent-is-you/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A spawned subagent inherits its parent's full authority in 45 of 45 measured runs, and the sender label on its report is text the child can forge.",
+      "modified": "2026-11-12T11:08:10",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-support-bill-an-engineer-at-190k",
       "title": "Cloud Support Costs: An Engineer at $190K",
       "url": "https://aichieve.net/your-support-bill-an-engineer-at-190k/",
@@ -9759,6 +9828,48 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1658,
+      "slug": "your-detour-outlasts-the-gates",
+      "title": "Your Detour Outlasts the Tariff Deadline",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T11:45:08",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1654,
+      "slug": "your-ai-bill-grew-165-you-cut-the-work",
+      "title": "Your AI Bill Grew 1.65%: You Cut the Work",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T11:45:19",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1650,
+      "slug": "your-subagent-is-you",
+      "title": "Your Subagent Is Not a Role: 45 of 45",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T11:08:10",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10862,48 +10973,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:11",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1246,
-      "slug": "your-runtime-has-six-months",
-      "title": "Your Runtime: The 6-Month Exit Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:11",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1244,
-      "slug": "your-480gb-card-wont-skip-the-memory-queue",
-      "title": "480GB Won&#8217;t Skip Your Memory Queue",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:12",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1242,
-      "slug": "your-60-drop-isnt-the-model",
-      "title": "Your 60% Drop Isn&#8217;t the Model",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:12",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
