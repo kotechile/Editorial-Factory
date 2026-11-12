@@ -13,7 +13,7 @@ meta_description: "An agent's tools run on the host between model calls, so CPU 
 image_path: "context/assets/illustrations/idle-host-starved-tools-11-trap/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Idle Host, Starved Tools. A host CPU rack flares amber under a tool-stage burst while adjacent racks idle in cool blue inside a data hall"
+image_alt: "A host CPU rack flares amber under a tool-stage burst while adjacent racks idle in cool blue in a data hall aisle."
 image_caption: "Idle Host, Starved Tools: A host averaging 11% CPU is idle between tool bursts, not headroom to spare."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
