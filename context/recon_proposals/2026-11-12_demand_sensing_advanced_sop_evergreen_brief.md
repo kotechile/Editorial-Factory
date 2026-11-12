@@ -40,5 +40,5 @@ Additional source carried in prose and `## Sources`, not as a gate row (its load
 ## Gate result
 
 <!-- evergreen-gate:start -->
-<!-- evergreen-gate: helper=evergreen_gate.py rows=7 fetched=7 sources=3 hosts=3 decision="sha1:a538471bee" dedup="matched a prior artifact: 2026-11-05_your-planning-cycle-cos" window_days=180 checked_at=2026-11-12T20:07:59+00:00 -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=7 fetched=7 sources=3 hosts=3 decision="sha1:a538471bee" dedup="matched a prior artifact: 2026-11-05_your-planning-cycle-cos" window_days=180 checked_at=2026-11-12T20:25:32+00:00 -->
 <!-- evergreen-gate:end -->
