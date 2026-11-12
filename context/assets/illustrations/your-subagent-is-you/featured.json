@@ -1,0 +1,113 @@
+{
+  "slug": "your-subagent-is-you",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A server rack's spawned child blade shares an amber tether with its parent while a separate checker module glows red.",
+      "caption": "The spawn grant, not the role prompt, is the boundary that must be checked outside the model.",
+      "title": "Spawn Boundary Server Rack",
+      "bytes": 274309,
+      "sha256": "sha256:ec9110a6854ebc8466eeef90e6fdbc02"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Server room, high-density rack row in semi-darkness. Extreme asymmetry: a newly spawned child server blade sits in an open bay directly beneath its parent, both bound to one amber permission cable, while a separate black external checker module with a single red LED is bolted to the rack rail to the right. Hard cool key light from the left rakes the brushed steel rack, graphite and cobalt with a safety yellow accent, 35mm anamorphic wide, dramatic falloff, shallow depth, fine film grain, no text, no logos.",
+  "negative_prompt": "garbled text, random letters, watermarks, illegible signage, printed labels, UI",
+  "rationale": "Cinematic still captures the decisive spawn moment in a real data hall, using the rack row's physical inheritance (shared cable) and the separate checker as the external enforcement the thesis demands. It avoids flatlay or studio sterility and keeps the frame photographic and legible.",
+  "cue": "a grant made at spawn and checked outside the model",
+  "subject": "a server rack's spawned child blade tethered to its parent and an external checker, with blank label plates",
+  "core_thesis": "A subagent's spawn boundary inherits the parent's permissions and lets the child forge its identity, so scope must be a grant checked outside the model.",
+  "core_conflict": "Inherited parent permissions versus external scope enforcement",
+  "composition": "extreme asymmetry: child blade off-centre low, rack row receding right, single external checker on right rail",
+  "alt_text": "Subagents Inherit Parent Permissions. A server rack's spawned child blade shares an amber tether with its parent while a separate checker",
+  "caption": "Subagents Inherit Parent Permissions: In 45 of 45 runs, a subagent wrote outside its workspace wherever its parent could.",
+  "title": "Subagents Inherit Parent Permissions",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-subagent-is-you/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 344284,
+  "sha256": "sha256:80903c0447412f4c50bf6b0f3d3d2c2457a31b7ef76a66a1e3df24603cbbf379",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 344284,
+    "quality": 88,
+    "sha256": "sha256:80903c0447412f4c50bf6b0f3d3d2c2457a31b7ef76a66a1e3df24603cbbf379",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:747f986454dcb6f0dd7f37a6fef860257dbdff13ba5799ed7f9140e02d6c0eee",
+  "render_phash": "d69fd79f369ff4df91df059b259b169b04d305d300d3071b059b059b05db059f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A cinematic close view of an open server rack holding several horizontally mounted silver and black blade servers, with flat copper ribbon cables arcing between the two upper units, the rack row receding into haze on the left, and a separate black wall-mounted box with a glowing red light and trailing cables standing on the right rail.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The frame stages the article's own mechanism\u2014a spawned child blade physically tethered to its parent unit inside a rack, with a distinct external checker device on the right rail and blank label plates\u2014so a reader would recognise the delegation-boundary and external-check story rather than a generic data-centre scene."
+  },
+  "source_hash": "sha256:9ddc5f00055a39992979fa3ffcb85859",
+  "source_chars": 5726,
+  "task_id": "1338b75607953f81e06e7165a9e9f968",
+  "credits": 5.0,
+  "cost_ms": 103,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/1338b75607953f81e06e7165a9e9f968_1794480936767.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Server room, high-density rack row in semi-darkness. Extreme asymmetry: a newly spawned child server blade sits in an open bay directly beneath its parent, both bound to one amber permission cable, while a separate black external checker module with a single red LED is bolted to the rack rail to the right. Hard cool key light from the left rakes the brushed steel rack, graphite and cobalt with a safety yellow accent, 35mm anamorphic wide, dramatic falloff, shallow depth, fine film grain, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-12T10:55:54+00:00",
+  "overlay": {
+    "kicker": "AGENTIC AI // SUBAGENT PERMISSION BOUNDARY",
+    "title": "SUBAGENTS INHERIT PARENT PERMISSIONS",
+    "hook": "In 45 of 45 runs, a subagent wrote outside its workspace wherever its parent could",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 10.77,
+    "target": 4.5,
+    "clutter": 0.239,
+    "region_rgb": [
+      30,
+      35,
+      38
+    ],
+    "binding_rgb": [
+      43,
+      53,
+      62
+    ],
+    "title_lines": [
+      "SUBAGENTS",
+      "INHERIT PARENT",
+      "PERMISSIONS"
+    ],
+    "subject": 0.24,
+    "ink_subject": 0.081,
+    "spike": 0.337,
+    "generated_at": "2026-11-12T10:55:54+00:00"
+  }
+}
