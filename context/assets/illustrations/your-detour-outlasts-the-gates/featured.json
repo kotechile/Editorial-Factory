@@ -1,6 +1,6 @@
 {
   "slug": "your-detour-outlasts-the-gates",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -13,7 +13,7 @@
   ],
   "style": "architectural_night",
   "style_label": "Lit architecture at dusk",
-  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "style_when": "the story is about change after hours — automation displacing shifts, a market open all night, capacity running while people sleep",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,8 +27,8 @@
   "core_thesis": "The bridge closure lasts 16 months, but Long Beach's extra gate hours run only six weeks and end before the January tariff deadline, so January cargo meets the detour with no added gate capacity.",
   "core_conflict": "the extra gate hours end before the tariff-driven cargo surge arrives, leaving drayage trucks to absorb the bridge detour without mitigation",
   "composition": "extreme asymmetry: gate complex left third, dark bridge receding right",
-  "alt_text": "Your Detour Outlasts The Tariff Deadline. Container terminal gate lanes at dusk, extra evening gates lit, a dark closed bridge behind.",
-  "caption": "Your Detour Outlasts The Tariff Deadline: The Port of Los Angeles bridge is shut for 16 months, the extra gate hours last six.",
+  "alt_text": "Container terminal gate lanes at dusk with extra evening gates lit and a closed bridge in the distance.",
+  "caption": "The terminal's extra evening gate hours glow at blue hour while the closed bridge sits dark.",
   "title": "Your Detour Outlasts The Tariff Deadline",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.85,
-    "reason": "The frame shows a container terminal gate complex with booths, boxes and a road structure in the distance \u2014 the article's own mechanism (port gate capacity coping with a bridge closure and drayage traffic), not a generic or unrelated scene."
+    "reason": "The frame shows a container terminal gate complex with booths, boxes and a road structure in the distance — the article's own mechanism (port gate capacity coping with a bridge closure and drayage traffic), not a generic or unrelated scene."
   },
   "source_hash": "sha256:393459f5125b56da48f8acabb519cd92",
   "source_chars": 5053,

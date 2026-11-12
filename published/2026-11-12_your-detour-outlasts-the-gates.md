@@ -15,8 +15,8 @@ meta_description: "The Port of Los Angeles bridge is shut for 16 months, the ext
 image_path: "context/assets/illustrations/your-detour-outlasts-the-gates/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Your Detour Outlasts The Tariff Deadline. Container terminal gate lanes at dusk, extra evening gates lit, a dark closed bridge behind."
-image_caption: "Your Detour Outlasts The Tariff Deadline: The Port of Los Angeles bridge is shut for 16 months, the extra gate hours last six."
+image_alt: "Container terminal gate lanes at dusk with extra evening gates lit and a closed bridge in the distance."
+image_caption: "The terminal's extra evening gate hours glow at blue hour while the closed bridge sits dark."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
