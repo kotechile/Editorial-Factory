@@ -14,6 +14,12 @@ meta_title: "Discredited Proof Costs $1.2 Million"
 meta_title_source: "derived_from_title"
 meta_description: "Two state attorneys general have ordered money back from home contractors on proof that did not hold up. The two orders come to about $1.2 million, and that…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/discredited-proof-costs-1-2-million/featured.jpg"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Cut-paper house, gas meter and telephone handset on a wooden table, standing for the one call that settles a contractor's claim."
+image_caption: "Home Contractors Ordered To Repay $1.2M: Two state attorneys general ordered $1.2M back on proof that did not hold up."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -62,14 +68,11 @@ I could be wrong about how much anyone can check at six in the evening, with wat
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Two Backyard Homes, $1,000 Risk" -> /second-backyard-home-1000-deposit/ [same site (wellroost.com); same category; topical overlap: home, state] Link "Your Two Backyard Homes, $1,000 Risk" in the section where the article touches home, state. -->
-<!-- internal-link hint: "Emporia Vue: How to Cut Energy Bills" -> /unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/ [same site (wellroost.com); topical overlap: home, money] Link "Emporia Vue: How to Cut Energy Bills" in the section where the article touches home, money. -->
-<!-- internal-link hint: "Tools & Equipment" -> /categories/tools-equipment/ [same site (wellroost.com); same category; the article's own category hub (Tools & Equipment)] Link "Tools & Equipment" in the section where the article touches this topic. -->
+<!-- internal-links:start — curated by the run: every path below is live on wellroost.com and shares this article's contractor-payment subject -->
 ## Related reading
 
-- [Your Two Backyard Homes, $1,000 Risk](/second-backyard-home-1000-deposit/) — more on Tools & Equipment
-- [Emporia Vue: How to Cut Energy Bills](/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — more on Smart Home & Security
+- [Retainage Trap: 5 Percent, Not 15](/hold-back-capped-at-5-percent/) — what an owner may withhold until the work is proven
+- [Fewer Liens, 46% More Failures: Your Bid](/fewer-liens-46-more-bankruptcies/) — what a payment record says about the contractor
 - [Tools & Equipment](/categories/tools-equipment/) — more on Tools & Equipment
 <!-- internal-links:end -->
 

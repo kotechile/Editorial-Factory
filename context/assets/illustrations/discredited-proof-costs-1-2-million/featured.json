@@ -1,0 +1,123 @@
+{
+  "slug": "discredited-proof-costs-1-2-million",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A cut-paper house silhouette with a gas meter and telephone handset, symbolizing the one call that verifies a contractor's claim.",
+      "caption": "The one call that would have settled a $1.2 million home-improvement fraud case.",
+      "title": "Cut-paper verification call",
+      "bytes": 344785,
+      "sha256": "sha256:874840bfb1cf5f3c4e6a7ef7f2b67d46"
+    },
+    {
+      "revision": 2,
+      "alt_text": "A cut-paper house silhouette, a gas meter and a telephone handset on a wooden table, standing for the one call that settles a contractor's claim.",
+      "caption": "Two state attorneys general ordered about $1.2 million back from home contractors on proof that did not hold up.",
+      "title": "Home Contractors Ordered To Repay $1.2M",
+      "bytes": 379174,
+      "sha256": "sha256:31a1cf0f5f15f11cf3df284c1f59a9172a60fb538c3fd937969da93739a1c9e9"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A minimalist editorial cut-paper collage on a kitchen table: a hand-torn rag paper house silhouette in bone white and slate grey sits off-centre left; to the right, a smaller cut-paper gas utility meter in rust and a vintage telephone handset in charcoal are layered with visible paper fibre and halftone newsprint texture. One raking light comes from the left, throwing long physical cast shadows across the table. Muted modern editorial palette of bone white, slate grey, and rust. No legible print, no text, no words. Extreme asymmetry with generous negative space.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible words, numbers",
+  "rationale": "The story is a regulatory and conceptual dilemma about unverified claims and free third-party verification. A paper collage states the idea without legible text, avoids the failed flat-lay, and its layering of house, meter, and phone embodies the core mechanism directly.",
+  "cue": "the one call that would have settled it",
+  "subject": "a cut-paper house silhouette, a gas utility meter, and a telephone handset",
+  "core_thesis": "The claim about the house \u2014 the defect, the diagnosis, the order that supposedly shipped \u2014 is the one part of a home-improvement file a third party can verify for free, and two state cases show what it costs when nobody does.",
+  "core_conflict": "Unverified contractor claims vs. free third-party verification (utility tests and supplier records) that would expose them.",
+  "composition": "extreme asymmetry, house left, meter and phone right, generous negative space",
+  "alt_text": "Cut-paper house, gas meter and telephone handset on a wooden table, standing for the one call that settles a contractor's claim.",
+  "caption": "Home Contractors Ordered To Repay $1.2M: Two state attorneys general ordered $1.2M back on proof that did not hold up.",
+  "title": "Home Contractors Ordered To Repay $1.2M",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/discredited-proof-costs-1-2-million/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 381008,
+  "sha256": "sha256:5e1c44516554073a8cb74594723152fa4e1507771568894dd38f8ed5dc1b85eb",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 381008,
+    "quality": 84,
+    "sha256": "sha256:5e1c44516554073a8cb74594723152fa4e1507771568894dd38f8ed5dc1b85eb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6ca8653415c90d5bddf1e9f3dd698ac830d69e6c78834f843488b7288b982d0f",
+  "render_phash": "c0bfc0ffc0ffc1ffcdffccffc6bed6f6c6f6c6bac6fcef9c7cfc9e1cc3d9d83c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A torn-edge paper cutout of a white house with a grey roof and chimney stands on a sunlit wooden surface at left, while a smaller brown cutout of a gas meter and a black cutout telephone handset sit together at right against a plain pale wall.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The house is the article's own subject and the meter and handset stand in for the free third-party verification (the utility's records and the call) that the piece says nobody made, so the collage shows the story's mechanism rather than a foreign industry."
+  },
+  "source_hash": "sha256:5fcdbcf3815dbc639634dd1ce99719be",
+  "source_chars": 4232,
+  "task_id": "587c9a7b7106d87f9ee144a31f4d042f",
+  "credits": 18.0,
+  "cost_ms": 101,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_676f3997fe7323d06cd38b731ea7543d.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A minimalist editorial cut-paper collage on a kitchen table: a hand-torn rag paper house silhouette in bone white and slate grey sits off-centre left; to the right, a smaller cut-paper gas utility meter in rust and a vintage telephone handset in charcoal are layered with visible paper fibre and halftone newsprint texture. One raking light comes from the left, throwing long physical cast shadows across the table. Muted modern editorial palette of bone white, slate grey, and rust. No legible print, no text, no words. Extreme asymmetry with generous negative space.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-12T12:30:02+00:00",
+  "overlay": {
+    "kicker": "HOME CONTRACTING // FALSE REPAIR PROOF",
+    "title": "HOME CONTRACTORS ORDERED TO REPAY $1.2M",
+    "hook": "Two state attorneys general ordered $1.2M back on proof that did not hold up",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 7.48,
+    "target": 4.5,
+    "clutter": 0.072,
+    "region_rgb": [
+      205,
+      205,
+      192
+    ],
+    "binding_rgb": [
+      196,
+      197,
+      183
+    ],
+    "title_lines": [
+      "HOME CONTRACTORS",
+      "ORDERED TO REPAY",
+      "$1.2M"
+    ],
+    "subject": 0.004,
+    "ink_subject": 0.0,
+    "spike": 0.0,
+    "generated_at": "2026-11-12T12:30:02+00:00"
+  }
+}

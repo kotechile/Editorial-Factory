@@ -493,3 +493,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-12 | `your-subagent-is-you` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-subagent-is-you/featured.jpg` |
 | 2026-11-12 | `your-ai-bill-grew-165-you-cut-the-work` | enterprise_ai_finops | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ai-bill-grew-165-you-cut-the-work/featured.jpg` |
 | 2026-11-12 | `your-detour-outlasts-the-gates` | supply_chain | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-detour-outlasts-the-gates/featured.jpg` |
+| 2026-11-12 | `discredited-proof-costs-1-2-million` | home_ops_execution | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/discredited-proof-costs-1-2-million/featured.jpg` |
