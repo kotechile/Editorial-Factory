@@ -11,8 +11,8 @@ slug: your-1-8-inch-screen-leaks-embers
 image_path: "context/assets/illustrations/your-1-8-inch-screen-leaks-embers/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "1/8-Inch Vent Screens Leak Embers. 1/8-inch metal mesh vent screen in an attic opening with glowing embers passing through and igniting"
-image_caption: "1/8-Inch Vent Screens Leak Embers: The state's accepted vent mesh still lets burning embers reach attic fuel."
+image_alt: "A rusted steel vent screen glows orange from fire behind it as a tuft of fine insulation catches embers."
+image_caption: "The 1/8-inch vent screen the discount list accepts, with burning embers still passing through."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
