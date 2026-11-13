@@ -507,3 +507,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-13 | `your-carrier-hike-moves-your-carbon` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-carrier-hike-moves-your-carbon/featured.jpg` |
 | 2026-11-13 | `your-75000-room-misses-the-stock` | concentrated_equity_portfolio_capital | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-75000-room-misses-the-stock/featured.jpg` |
 | 2026-11-13 | `your-console-rose-500-instead` | consumer_asset_repair_replace_tco | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-console-rose-500-instead/featured.jpg` |
+| 2026-11-13 | `your-collar-kills-the-long-term-clock` | concentrated_equity_portfolio_capital | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-collar-kills-the-long-term-clock/featured.jpg` |

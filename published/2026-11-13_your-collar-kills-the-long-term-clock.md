@@ -12,6 +12,12 @@ meta_title: "Your Collar Kills the 12-Month Clock"
 meta_title_source: "derived_from_title"
 meta_description: "A collar is what a broker proposes when a holder with one large position says: protect me without selling. It means buying a put and selling a call either…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-collar-kills-the-long-term-clock/featured.jpg"
+image_style: "component_assembly"
+image_model: "nanobanana"
+image_alt: "A steel collar ring clamped around the glass waist of an hourglass on a workbench, beside an open inspection gate."
+image_caption: "A protective put can erase eleven months of holding-period progress on employer stock."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

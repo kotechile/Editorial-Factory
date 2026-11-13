@@ -1,0 +1,134 @@
+{
+  "slug": "your-collar-kills-the-long-term-clock",
+  "revision": 4,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A steel collar ring clamped around a glass hourglass on a workbench, with an open rusted inspection gate beside it.",
+      "caption": "The put's protective collar clamps down on the holding period like a steel ring around an hourglass.",
+      "title": "Collar Clamped Hourglass",
+      "bytes": 381918,
+      "sha256": "sha256:5d81cbb7cfe470da4fea9e8cecc611bc"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your Collar Kills The 12-Month Clock. A steel collar ring clamped around a glass hourglass on a workbench, with an open rusted inspection",
+      "caption": "Your Collar Kills The 12-Month Clock: A protective put can erase eleven months of holding-period progress on employer stock.",
+      "title": "Your Collar Kills The 12-Month Clock",
+      "bytes": 400379,
+      "sha256": "sha256:bc0be526565c249abeb08e1c191f1fc7178e235d2c57947332efb1397a65535d"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Your Collar Kills The 12-Month Clock. A steel collar ring clamped around a glass hourglass on a workbench, with an open rusted inspection",
+      "caption": "Your Collar Kills The 12-Month Clock: A protective put can erase eleven months of holding-period progress on employer stock.",
+      "title": "Your Collar Kills The 12-Month Clock",
+      "bytes": 400853,
+      "sha256": "sha256:28dbbe70933543a961a408aea003a555d1e9413e3f663a05acc1dc41c9c14c92"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point — with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a weathered concrete workbench, a heavy glass hourglass stands at the far left third, its end caps warm oak and bone white; a machined graphite steel collar ring clamps tight around the narrow waist, its latch arm open in a hard clean edge. Beside it to the right, a rust-finish modular inspection gate lies unlatched, hinged open on a brushed steel base. One directional raking key light from the left throws a long cast shadow across the bench. Palette bone white, graphite, rust; extreme asymmetry with the hourglass off-centre on the left third and generous negative space on the right; no text, no lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numerals, typography",
+  "rationale": "The article is a single tax rule with no physical facility, so component_assembly turns the abstract collision into a modular mechanical restraint. The hourglass gives time without numerals, and the collar ring names the exact option instrument that resets the clock.",
+  "cue": "the put restarts the long-term holding clock",
+  "subject": "a machined steel collar ring clamped around the waist of a heavy glass hourglass on a workbench, with an unlatched modular inspection gate beside it",
+  "core_thesis": "A collar on employer stock is a short sale wrapped in a straddle: the put restarts the 12-month long-term holding clock, defers the put loss against unrealised gain, and disqualifies the dividend for the covered stretch.",
+  "core_conflict": "Protection without selling versus losing qualified long-term capital gain and dividend treatment.",
+  "composition": "extreme asymmetry with the hourglass off-centre on the left third and generous negative space on the right",
+  "alt_text": "A steel collar ring clamped around the glass waist of an hourglass on a workbench, beside an open inspection gate.",
+  "caption": "A protective put can erase eleven months of holding-period progress on employer stock.",
+  "title": "Your Collar Kills The 12-Month Clock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "component_assembly",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-collar-kills-the-long-term-clock/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406817,
+  "sha256": "sha256:b6a5ab66a90e8b8cf98639eab73d24e3fdd7a5fb88cde51e1f85e4a82744e754",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406817,
+    "quality": 68,
+    "sha256": "sha256:b6a5ab66a90e8b8cf98639eab73d24e3fdd7a5fb88cde51e1f85e4a82744e754",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:2a3484757166c6a545f9c3b2d0ff61c2abfe29504cf19434e59765f226314a68",
+  "render_phash": "67f527d8a61cea0bc3e713c533ed30e33b91eb8ccd63cc63e40fe19f62fe327d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A glass two-chambered vessel with wooden end caps lies tilted on a scarred workbench, its waist clamped by a black metal ring, with an open hinged metal gate resting to the right amid scattered tools and metal shavings.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.86,
+    "reason": "The image directly visualizes the article’s core mechanism—a metal collar clamped around an hourglass-like time object—so a reader would connect it to the headline’s collar-and-clock metaphor."
+  },
+  "source_hash": "sha256:c62dc9a9e9a23dbbb70aee3006746614",
+  "source_chars": 5788,
+  "task_id": "9f1578c47c6a837537acecd54c211e42",
+  "credits": 18.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_f3ba7c20f0df7ac6989bd4a4c8614eec.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "On a weathered concrete workbench, a heavy glass hourglass stands at the far left third, its end caps warm oak and bone white; a machined graphite steel collar ring clamps tight around the narrow waist, its latch arm open in a hard clean edge. Beside it to the right, a rust-finish modular inspection gate lies unlatched, hinged open on a brushed steel base. One directional raking key light from the left throws a long cast shadow across the bench. Palette bone white, graphite, rust; extreme asymmetry with the hourglass off-centre on the left third and generous negative space on the right; no text, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-13T17:17:41+00:00",
+  "overlay": {
+    "kicker": "EMPLOYER STOCK COLLAR TAX",
+    "title": "YOUR COLLAR KILLS THE 12-MONTH CLOCK",
+    "hook": "Protection that resets your holding clock",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.88,
+    "target": 5.5,
+    "clutter": 0.344,
+    "region_rgb": [
+      67,
+      57,
+      45
+    ],
+    "binding_rgb": [
+      107,
+      95,
+      79
+    ],
+    "title_lines": [
+      "YOUR COLLAR",
+      "KILLS THE",
+      "12-MONTH CLOCK"
+    ],
+    "subject": 0.075,
+    "ink_subject": 0.037,
+    "spike": 0.227,
+    "generated_at": "2026-11-13T17:17:41+00:00"
+  }
+}
