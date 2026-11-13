@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-75000-room-misses-the-stock/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Your $75,000 Room Doesn'T Hold Stock. Pay envelope and blank stock certificate cutouts side by side on a wooden desk, torn paper seam"
-image_caption: "Your $75,000 Room Doesn'T Hold Stock: The 2027 cap is salary-shaped, so it can never cut a share bet."
+image_alt: "A pay envelope and a blank stock certificate, cut from paper and laid side by side on a wooden desk."
+image_caption: "Two quantities the plan cannot mix: an envelope filled from a paycheck and a certificate that is not a deposit."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -74,14 +74,11 @@ I could be wrong about where the weight belongs, though the unit mismatch is the
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Expats: Evaluating the True Value of a Job-Driven Move overseas" -> /expats-evaluating-the-true-value-of-a-job-driven-move-overseas/ [same site (giniloh.com); topical overlap: answer, question] Link "Expats: Evaluating the True Value of a Job-Driven Move overseas" in the section where the article touches answer, question. -->
-<!-- internal-link hint: "Replace Laptop Screen? Let This Decision Engine Do the Math" -> /replace-laptop-screen-let-this-decision-engine-do-the-math/ [same site (giniloh.com); topical overlap: answer, doesn't] Link "Replace Laptop Screen? Let This Decision Engine Do the Math" in the section where the article touches answer, doesn't. -->
-<!-- internal-link hint: "Total Compensation & Equity Visualizer" -> /calculators/total-comp/ [same site (giniloh.com); topical overlap: stock, units] Link "Total Compensation & Equity Visualizer" in the section where the article touches stock, units. -->
 ## Related reading
 
-- [Expats: Evaluating the True Value of a Job-Driven Move overseas](/expats-evaluating-the-true-value-of-a-job-driven-move-overseas/)
-- [Replace Laptop Screen? Let This Decision Engine Do the Math](/replace-laptop-screen-let-this-decision-engine-do-the-math/)
 - [Total Compensation & Equity Visualizer](/calculators/total-comp/)
+- [Your ESPP Clock: 18 Months, Not 12](/your-espp-clock-is-18-months-not-12/)
+- [Why Your Swap Died at 25%](/why-your-swap-died-at-25/)
 <!-- internal-links:end -->
 
 ## Sources
