@@ -1,6 +1,6 @@
 {
   "slug": "vendor-replacement-ai-ceiling",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -20,6 +20,14 @@
     },
     {
       "revision": 3,
+      "alt_text": "AI Builds Vendor Replacements It Won'T Run. The Vendor-Replacement Wave Is Real \u2014 AI Just. A solitary operations desk glowing amber inside",
+      "caption": "AI Builds Vendor Replacements It Won'T Run: Developers trust AI to write software that replaces paid tools, but not to run it live.",
+      "title": "AI Builds Vendor Replacements It Won'T Run",
+      "bytes": 388817,
+      "sha256": "sha256:79291018e4b36509abff00cb92d9d1a420b3c992deacc792a8512943e38338ed"
+    },
+    {
+      "revision": 4,
       "alt_text": "AI Builds Vendor Replacements It Won'T Run. The Vendor-Replacement Wave Is Real \u2014 AI Just. A solitary operations desk glowing amber inside",
       "caption": "AI Builds Vendor Replacements It Won'T Run: Developers trust AI to write software that replaces paid tools, but not to run it live.",
       "title": "AI Builds Vendor Replacements It Won'T Run",

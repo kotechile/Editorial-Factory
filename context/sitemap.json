@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T12:48:22Z",
+  "updated_at": "2026-11-13T17:13:29Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6690,7 +6690,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/idle-host-starved-tools-11-trap/"
     },
     {
       "slug": "2026-11-12_move-abroad-still-a-resident-546-days",
@@ -6707,7 +6708,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/move-abroad-still-a-resident-546-days/"
     },
     {
       "slug": "2026-11-12_your-200k-prompts-hidden-rate-cliff",
@@ -6725,7 +6727,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-200k-prompts-hidden-rate-cliff/"
     },
     {
       "slug": "2026-11-12_your-ai-bill-grew-165-you-cut-the-work",
@@ -6780,7 +6783,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-carrier-is-exempt-your-lot-records-arent/"
     },
     {
       "slug": "2026-11-12_your-contractors-bond-dies-at-25000",
@@ -6798,7 +6802,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-contractors-bond-dies-at-25000/"
     },
     {
       "slug": "2026-11-12_your-detour-outlasts-the-gates",
@@ -6854,7 +6859,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-12",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-sensing-tool-lands-once-a-day/"
     },
     {
       "slug": "2026-11-12_your-subagent-is-you",
@@ -6891,7 +6897,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/12-structures-froze-50000-policies/"
     },
     {
       "slug": "2026-11-13_nobody-pays-your-rounds-price",
@@ -6909,7 +6916,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/nobody-pays-your-rounds-price/"
     },
     {
       "slug": "2026-11-13_your-75000-room-misses-the-stock",
@@ -6927,7 +6935,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-75000-room-misses-the-stock/"
     },
     {
       "slug": "2026-11-13_your-carrier-hike-moves-your-carbon",
@@ -6944,6 +6953,24 @@
         "Related reading"
       ],
       "target_persona": "supply_chain_architect",
+      "date": "2026-11-13",
+      "public": true,
+      "url": "https://aichieve.net/your-carrier-hike-moves-your-carbon/"
+    },
+    {
+      "slug": "2026-11-13_your-collar-kills-the-long-term-clock",
+      "title": "Your Collar Kills the 12-Month Clock",
+      "vertical": "concentrated_equity_portfolio_capital",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the code sees a sale",
+        "By the numbers",
+        "What the desks actually do",
+        "The catch"
+      ],
+      "target_persona": "financial_architect",
       "date": "2026-11-13",
       "public": false
     },
@@ -6963,7 +6990,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-console-rose-500-instead/"
     }
   ]
 }

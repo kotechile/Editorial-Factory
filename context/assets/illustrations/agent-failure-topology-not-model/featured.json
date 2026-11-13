@@ -1,6 +1,6 @@
 {
   "slug": "agent-failure-topology-not-model",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "Your Multi-Agent Failure Has A Shape",
       "bytes": 228729,
       "sha256": "sha256:6d28b835a1c4fb7f3695223f078c643ae6f7a560ce534e50f80e5974dc7b93f6"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Multi-Agent Failure Is A Topology Problem. Your Multi-Agent Failure Has A Shape. Modular mechanical routing assembly with interlocking",
+      "caption": "Multi-Agent Failure Is A Topology Problem: Two new papers point to a different fix: the shape of the system.",
+      "title": "Multi-Agent Failure Is A Topology Problem",
+      "bytes": 237851,
+      "sha256": "sha256:1eff82b07cd2981dbecd7d2f05f782cfbc46cc0568a755d53b5d9ab742f12c64"
     }
   ],
   "style": "clay_render",

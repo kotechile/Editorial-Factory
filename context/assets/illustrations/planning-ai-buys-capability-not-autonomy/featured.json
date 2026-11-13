@@ -1,6 +1,6 @@
 {
   "slug": "planning-ai-buys-capability-not-autonomy",
-  "revision": 28,
+  "revision": 29,
   "history": [
     {
       "revision": 1,
@@ -214,6 +214,14 @@
     },
     {
       "revision": 27,
+      "alt_text": "AI Won'T Run Supply Chains. An industrial control building illuminated at dusk with warm light from windows.",
+      "caption": "AI Won'T Run Supply Chains: Millions spent on tech but humans still make the calls.",
+      "title": "AI Won'T Run Supply Chains",
+      "bytes": 389374,
+      "sha256": "sha256:9bcab6a3241be40d9a2d9e9eb00322fcafea749b37d4145c154ee380217be54d"
+    },
+    {
+      "revision": 28,
       "alt_text": "AI Won'T Run Supply Chains. An industrial control building illuminated at dusk with warm light from windows.",
       "caption": "AI Won'T Run Supply Chains: Millions spent on tech but humans still make the calls.",
       "title": "AI Won'T Run Supply Chains",

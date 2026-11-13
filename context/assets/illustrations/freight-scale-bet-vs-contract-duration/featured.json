@@ -1,7 +1,16 @@
 {
   "slug": "freight-scale-bet-vs-contract-duration",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Compressed telephoto view of endless rows of truck trailers and highway overpasses receding into haze.",
+      "caption": "The sheer scale of a consolidated freight network faces a market hesitant to lock in long-term volume.",
+      "title": "Freight Network Scale",
+      "bytes": 403642,
+      "sha256": "sha256:d06440d18adf8a27406901e880bb64ad"
+    }
+  ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
   "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
@@ -15,9 +24,9 @@
   "rationale": "The story is fundamentally about the massive scale of a $25 billion freight network. The telephoto compression visually communicates this immense physical scale and structure.",
   "cue": "build the densest freight network",
   "subject": "overlapping layers of truck trailers and highway overpasses",
-  "alt_text": "Compressed telephoto view of endless rows of truck trailers and highway overpasses receding into haze.",
-  "caption": "The sheer scale of a consolidated freight network faces a market hesitant to lock in long-term volume.",
-  "title": "Freight Network Scale",
+  "alt_text": "C.H. Robinson'S $5.8B Freight Bet. Compressed telephoto view of endless rows of truck trailers and highway overpasses receding into haze.",
+  "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
+  "title": "C.H. Robinson'S $5.8B Freight Bet",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -27,8 +36,8 @@
   "local_path": "context/assets/illustrations/freight-scale-bet-vs-contract-duration/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 403642,
-  "sha256": "sha256:d06440d18adf8a27406901e880bb64ad",
+  "bytes": 407521,
+  "sha256": "sha256:94a378b0698cc98bc975ecd7b29d75401e0541a0756be8f160298de77e0d6268",
   "source_hash": "sha256:f75830d52a17a9223962eece41301cc5",
   "source_chars": 3934,
   "task_id": "34282c74badddfc139598755854ea0d6",
@@ -43,5 +52,48 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T11:37:12+00:00"
+  "generated_at": "2026-10-08T11:37:12+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407521,
+    "quality": 84,
+    "sha256": "sha256:94a378b0698cc98bc975ecd7b29d75401e0541a0756be8f160298de77e0d6268",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "FREIGHT BROKERAGE // SHORT CONTRACTS",
+    "title": "C.H. ROBINSON'S $5.8B FREIGHT BET",
+    "hook": "A $5.8B network bet meets a market that won't commit beyond 90 days",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.72,
+    "target": 4.5,
+    "clutter": 0.201,
+    "region_rgb": [
+      156,
+      166,
+      174
+    ],
+    "binding_rgb": [
+      123,
+      136,
+      145
+    ],
+    "title_lines": [
+      "C.H. ROBINSON'S",
+      "$5.8B FREIGHT",
+      "BET"
+    ],
+    "subject": 0.069,
+    "ink_subject": 0.007,
+    "spike": 0.052,
+    "generated_at": "2026-10-08T11:37:12+00:00"
+  }
 }

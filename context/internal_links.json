@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:19:46+00:00",
+  "generated_at": "2026-11-13T14:21:07+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -384,6 +384,82 @@
       "site": "giniloh.com",
       "kind": "article",
       "id": null,
+      "slug": "your-console-rose-500-instead",
+      "title": "Your Console Rose $500 Instead",
+      "url": "https://giniloh.com/your-console-rose-500-instead/",
+      "path": "/your-console-rose-500-instead/",
+      "sites_live": {
+        "giniloh.com": "/your-console-rose-500-instead/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Your console rose instead of falling after memory and storage costs climbed, and the three current machines now cost $500 more together than they did at\u2026",
+      "modified": "2026-11-13T13:04:22",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-75000-room-misses-the-stock",
+      "title": "Your $75,000 Room Doesn't Hold Stock",
+      "url": "https://giniloh.com/your-75000-room-misses-the-stock/",
+      "path": "/your-75000-room-misses-the-stock/",
+      "sites_live": {
+        "giniloh.com": "/your-75000-room-misses-the-stock/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Two documents dated Thursday, 12 November, answer the same question at two scales, and their units do not convert.",
+      "modified": "2026-11-13T12:17:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "nobody-pays-your-rounds-price",
+      "title": "Nobody Pays Your Round's Price",
+      "url": "https://giniloh.com/nobody-pays-your-rounds-price/",
+      "path": "/nobody-pays-your-rounds-price/",
+      "sites_live": {
+        "giniloh.com": "/nobody-pays-your-rounds-price/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Carta's third-quarter report says median startup valuations now sit above their 2021 peak at most fundraising stages.",
+      "modified": "2026-11-13T11:33:41",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "move-abroad-still-a-resident-546-days",
+      "title": "Move Abroad, Still a Resident: 546 Days",
+      "url": "https://giniloh.com/move-abroad-still-a-resident-546-days/",
+      "path": "/move-abroad-still-a-resident-546-days/",
+      "sites_live": {
+        "giniloh.com": "/move-abroad-still-a-resident-546-days/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Every guide to a move abroad quotes 183 days, as if the count came with the passport. Three states publish three different counts, and 183 is neither the\u2026",
+      "modified": "2026-11-12T19:50:00",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-bequest-carries-40-tax",
       "title": "Your Child Inherits a 40% Bill",
       "url": "https://giniloh.com/your-bequest-carries-40-tax/",
@@ -395,7 +471,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "A former American who meets an exit test \u2014 a covered expatriate \u2014 can leave a child only a small yearly allowance before the child owes the top estate-tax\u2026",
-      "modified": "2026-11-12T13:02:07",
+      "modified": "2026-11-12T13:29:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1525,6 +1601,29 @@
       ],
       "excerpt": "The coil was giving up just 11 degrees when a tech called the compressor dead and quoted $7,500 for a full swap.",
       "modified": "2026-10-31T04:35:06",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "12-structures-froze-50000-policies",
+      "title": "Why 12 Structures Froze 50,000 Policies",
+      "url": "https://wellroost.com/12-structures-froze-50000-policies/",
+      "path": "/12-structures-froze-50000-policies/",
+      "sites_live": {
+        "wellroost.com": "/12-structures-froze-50000-policies/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "The Dove Fire burned 226 acres near Sonora and destroyed 12 structures. In November the state insurance commissioner froze 50,000 policies across three\u2026",
+      "modified": "2026-11-13T10:49:02",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3490,6 +3589,29 @@
       ],
       "excerpt": "In October, Pacific Gas and Electric (PG&E) warned about 25,000 prospective hookups that they could be stuck as long as six months past the date they were\u2026",
       "modified": "2026-11-06T11:22:53",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-contractors-bond-dies-at-25000",
+      "title": "Your Contractor's Bond Dies at $25,000",
+      "url": "https://wellroost.com/your-contractors-bond-dies-at-25000/",
+      "path": "/your-contractors-bond-dies-at-25000/",
+      "sites_live": {
+        "wellroost.com": "/your-contractors-bond-dies-at-25000/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "The bid says licensed, bonded and insured, and in California your contractor's bond behind that line is a flat $25,000.",
+      "modified": "2026-11-12T19:20:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -5596,6 +5718,29 @@
       ],
       "excerpt": "Most Case Fill Rate (CFR) reviews operate like a coroner\u2019s office: we wait for the order to die at Post Goods Issue, stamp a generic reason code on the toe tag, and spend next month debating who killed it. What makes this ritual so expensive isn't just that the recorded reason code is usually wrong\u2014it\u2019s that your ERP and planning systems already knew the order was doomed 8 to 30 days before the truck left the dock.",
       "modified": "2026-11-10T19:42:57",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "idle-host-starved-tools-11-trap",
+      "title": "Idle Host, Starved Tools: Your 11% Trap",
+      "url": "https://aichieve.net/idle-host-starved-tools-11-trap/",
+      "path": "/idle-host-starved-tools-11-trap/",
+      "sites_live": {
+        "aichieve.net": "/idle-host-starved-tools-11-trap/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "An agent's tools run on the host between model calls, so CPU demand bursts from an 11% median toward saturation \u2014 and a quota set to the average throttles the burst.",
+      "modified": "2026-11-12T17:44:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8009,6 +8154,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-200k-prompts-hidden-rate-cliff",
+      "title": "Your 200K Prompt's Hidden Rate Cliff",
+      "url": "https://aichieve.net/your-200k-prompts-hidden-rate-cliff/",
+      "path": "/your-200k-prompts-hidden-rate-cliff/",
+      "sites_live": {
+        "aichieve.net": "/your-200k-prompts-hidden-rate-cliff/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "One token past a schedule's context line reprices the whole request, and Gemini 3.1 Pro Preview doubles the input rate once a prompt passes 200,000 tokens.",
+      "modified": "2026-11-12T18:23:39",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-413-files-cost-four-badges",
       "title": "Your 413 Files Cost Four Badges",
       "url": "https://aichieve.net/your-413-files-cost-four-badges/",
@@ -8370,6 +8538,52 @@
       ],
       "excerpt": "The first carbon report California set for 10 November 2026 counts only a firm's own fuel and power. The state's 2027 plan skips the 2 lines with your trucks.",
       "modified": "2026-10-31T04:48:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-carrier-hike-moves-your-carbon",
+      "title": "Your 5.9% Hike Moves Your Carbon",
+      "url": "https://aichieve.net/your-carrier-hike-moves-your-carbon/",
+      "path": "/your-carrier-hike-moves-your-carbon/",
+      "sites_live": {
+        "aichieve.net": "/your-carrier-hike-moves-your-carbon/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Your carrier's 5.9% hike is also a carbon decision. UPS (United Parcel Service) lifts ground, air and international rates an average of 5.9% on 21 December\u2026",
+      "modified": "2026-11-13T11:51:47",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-carrier-is-exempt-your-lot-records-arent",
+      "title": "Your Carrier Owes Your Lot Nothing",
+      "url": "https://aichieve.net/your-carrier-is-exempt-your-lot-records-arent/",
+      "path": "/your-carrier-is-exempt-your-lot-records-arent/",
+      "sites_live": {
+        "aichieve.net": "/your-carrier-is-exempt-your-lot-records-arent/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Twenty-four hours is the whole promise. On request, you produce the records for one lot of a listed food. The trail runs from the dock that took the pallet\u2026",
+      "modified": "2026-11-12T18:44:13",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9527,6 +9741,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-sensing-tool-lands-once-a-day",
+      "title": "Batch Runs Cap What Sensing Buys",
+      "url": "https://aichieve.net/your-sensing-tool-lands-once-a-day/",
+      "path": "/your-sensing-tool-lands-once-a-day/",
+      "sites_live": {
+        "aichieve.net": "/your-sensing-tool-lands-once-a-day/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "A real-time planning subscription changes the model. It does not change the scheduled job that turns the model into orders, and the job is where the cadence\u2026",
+      "modified": "2026-11-12T20:19:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-signed-tool-still-leaks-3-of-3",
       "title": "Your Signed MCP Tool Still Leaks: 3 of 3",
       "url": "https://aichieve.net/your-signed-tool-still-leaks-3-of-3/",
@@ -9893,6 +10130,76 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1693,
+      "slug": "your-carrier-hike-moves-your-carbon",
+      "title": "Your 5.9% Hike Moves Your Carbon",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-13T11:51:47",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1686,
+      "slug": "your-sensing-tool-lands-once-a-day",
+      "title": "Batch Runs Cap What Sensing Buys",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T20:19:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1677,
+      "slug": "your-carrier-is-exempt-your-lot-records-arent",
+      "title": "Your Carrier Owes Your Lot Nothing",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T18:44:13",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1672,
+      "slug": "your-200k-prompts-hidden-rate-cliff",
+      "title": "Your 200K Prompt&#8217;s Hidden Rate Cliff",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T18:23:39",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1670,
+      "slug": "idle-host-starved-tools-11-trap",
+      "title": "Idle Host, Starved Tools: Your 11% Trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T17:44:41",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -10916,118 +11223,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1281,
-      "slug": "promo-spike-is-a-loan",
-      "title": "Your 158% Spike Costs Q4",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:08",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1275,
-      "slug": "parcel-fuel-percentage-weekly-january",
-      "title": "Your 8% Charge Shifts Every Week",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1272,
-      "slug": "half-your-tokens-5-of-bill",
-      "title": "Half Your Tokens: 5% of Your Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1268,
-      "slug": "your-compaction-trap-87-forgeries-survive",
-      "title": "Your Compaction Trap: 87% of Forgeries Survive",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:09",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1265,
-      "slug": "your-charger-gap-buys-16-robots",
-      "title": "Your Charger Gap Buys 16 Robots",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:10",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1262,
-      "slug": "your-sso-bill-125-a-connection",
-      "title": "Your SSO Bill: $125 a Connection, $7.75 a Seat",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:10",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1259,
-      "slug": "your-32-cards-spend-90-percent-talking",
-      "title": "Your 32 Cards Spend 90% Talking: Why Wide Splits Stall",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:10",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1255,
-      "slug": "your-783-silent-cap-breach",
-      "title": "Your 78.3% Silent Cap Breach",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:10",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -11038,6 +11233,62 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1701,
+      "slug": "your-console-rose-500-instead",
+      "title": "Your Console Rose $500 Instead",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-13T13:04:22",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1698,
+      "slug": "your-75000-room-misses-the-stock",
+      "title": "Your $75,000 Room Doesn&#8217;t Hold Stock",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-13T12:17:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1689,
+      "slug": "nobody-pays-your-rounds-price",
+      "title": "Nobody Pays Your Round&#8217;s Price",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-13T11:33:41",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1681,
+      "slug": "move-abroad-still-a-resident-546-days",
+      "title": "Move Abroad, Still a Resident: 546 Days",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-12T19:50:00",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -11290,20 +11541,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:48:07",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1278,
-      "slug": "your-llc-bill-75-until-2028",
-      "title": "Your LLC Bill: 75% Until 2028",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:08",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

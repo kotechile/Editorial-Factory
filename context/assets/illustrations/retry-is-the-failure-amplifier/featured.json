@@ -1,6 +1,6 @@
 {
   "slug": "retry-is-the-failure-amplifier",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -38,6 +38,14 @@
     },
     {
       "revision": 5,
+      "alt_text": "The Retry Is The Bug. A modern data center building at dusk with a repeating grid of warm glowing windows.",
+      "caption": "The Retry Is The Bug: How a single retry loop cost $50,000 and duplicated payments while reporting success.",
+      "title": "The Retry Is The Bug",
+      "bytes": 379130,
+      "sha256": "sha256:65eff02463a1ec70ccf98a6b8cbe5c2fc5a9057993d8a3130310179123e8497d"
+    },
+    {
+      "revision": 6,
       "alt_text": "The Retry Is The Bug. A modern data center building at dusk with a repeating grid of warm glowing windows.",
       "caption": "The Retry Is The Bug: How a single retry loop cost $50,000 and duplicated payments while reporting success.",
       "title": "The Retry Is The Bug",

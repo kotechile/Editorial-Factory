@@ -1,6 +1,6 @@
 {
   "slug": "cache-boundary-decides-input-bill",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -57,6 +57,14 @@
       "title": "How Prompt Layout Sets AI Bills",
       "bytes": 261713,
       "sha256": "sha256:3217d4c9bbbf36f277732fd14c37763bb025eec7e363c5de5f9221bdd3739486"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Cost Of Prompt Layout. How Prompt Layout Sets AI Bills. Optical glass and brass prism assembly fracturing a solid beam of",
+      "caption": "The Cost Of Prompt Layout: How prompt layout controls the cost of agent workloads.",
+      "title": "The Cost Of Prompt Layout",
+      "bytes": 271698,
+      "sha256": "sha256:a38ca76ef0886fbeb895a05e61b838f12c51f2cb2fe1a915689bf80786174dc8"
     }
   ],
   "style": "studio_object",
@@ -85,8 +93,8 @@
   "local_path": "context/assets/illustrations/cache-boundary-decides-input-bill/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 271698,
-  "sha256": "sha256:a38ca76ef0886fbeb895a05e61b838f12c51f2cb2fe1a915689bf80786174dc8",
+  "bytes": 404515,
+  "sha256": "sha256:5c57311e272edebef7c75134ddd4c935beab8c8afd3f6653154d6c37ab129766",
   "source_hash": "sha256:4da4abcc35d10df15e89ff142bfdf093",
   "source_chars": 4303,
   "task_id": "ade80419a84d3b3019f4293911e05747",
@@ -106,7 +114,42 @@
     "kicker": "AI FINOPS // PROMPT CACHING",
     "title": "THE COST OF PROMPT LAYOUT",
     "hook": "How prompt layout controls the cost of agent workloads",
-    "anchor": "top-left",
-    "light": false
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 9.21,
+    "target": 4.5,
+    "clutter": 0.225,
+    "region_rgb": [
+      48,
+      44,
+      44
+    ],
+    "binding_rgb": [
+      73,
+      59,
+      56
+    ],
+    "title_lines": [
+      "THE COST OF",
+      "PROMPT LAYOUT"
+    ],
+    "subject": 0.078,
+    "ink_subject": 0.009,
+    "spike": 0.083,
+    "generated_at": "2026-10-09T00:29:23+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404515,
+    "quality": 88,
+    "sha256": "sha256:5c57311e272edebef7c75134ddd4c935beab8c8afd3f6653154d6c37ab129766",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

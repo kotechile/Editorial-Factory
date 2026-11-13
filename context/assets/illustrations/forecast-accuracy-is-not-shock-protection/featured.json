@@ -1,6 +1,6 @@
 {
   "slug": "forecast-accuracy-is-not-shock-protection",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,14 @@
       "sha256": "sha256:1297d127f3ff2e2b460d7f89eee439e6",
       "generated_at": "2026-10-08T22:29:43+00:00",
       "source_hash": "sha256:7a408cda1950150ddeca10547a9ae500"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
+      "caption": "Mathematical models optimize daily efficiency, but physical buffer space remains the only defense against massive supply chain shocks.",
+      "title": "Supply Chain Buffer Container Yard",
+      "bytes": 346127,
+      "sha256": "sha256:fa24aac2b934f2760153cbd6bd2b93a6"
     }
   ],
   "style": "long_lens_industry",
@@ -36,9 +44,9 @@
   "rationale": "The article contrasts mathematical forecast accuracy with the physical reality of buffer stock needed for massive storms. A long-lens compressed view of a sprawling freight yard perfectly captures the scale of physical mitigation.",
   "cue": "held space and extra goods",
   "subject": "vast intermodal shipping container yard",
-  "alt_text": "Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
-  "caption": "Mathematical models optimize daily efficiency, but physical buffer space remains the only defense against massive supply chain shocks.",
-  "title": "Supply Chain Buffer Container Yard",
+  "alt_text": "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
+  "caption": "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15.",
+  "title": "Forecast Accuracy",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -48,8 +56,8 @@
   "local_path": "context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 346127,
-  "sha256": "sha256:fa24aac2b934f2760153cbd6bd2b93a6",
+  "bytes": 409411,
+  "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7",
   "source_hash": "sha256:7a408cda1950150ddeca10547a9ae500",
   "source_chars": 3855,
   "task_id": "b807dc63596b0398c5f79660466dbe3b",
@@ -64,5 +72,47 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:37:09+00:00"
+  "generated_at": "2026-10-08T22:37:09+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 409411,
+    "quality": 88,
+    "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "",
+    "title": "FORECAST ACCURACY",
+    "hook": "A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.72,
+    "target": 5.5,
+    "clutter": 0.293,
+    "region_rgb": [
+      95,
+      105,
+      112
+    ],
+    "binding_rgb": [
+      132,
+      145,
+      153
+    ],
+    "title_lines": [
+      "FORECAST",
+      "ACCURACY"
+    ],
+    "subject": 0.19,
+    "ink_subject": 0.061,
+    "spike": 0.264,
+    "generated_at": "2026-10-08T22:37:09+00:00"
+  }
 }

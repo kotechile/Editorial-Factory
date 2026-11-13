@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze."
-image_caption: "Mathematical models optimize daily efficiency, but physical buffer space remains the only defense against massive supply chain shocks."
+image_alt: "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze."
+image_caption: "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
