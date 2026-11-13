@@ -1,0 +1,115 @@
+{
+  "slug": "your-75000-room-misses-the-stock",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Pay envelope and blank stock certificate cutouts side by side on a wooden desk, torn paper seam between them.",
+      "caption": "A salary-shaped envelope and a stock certificate sit apart, the units that do not convert.",
+      "title": "Blank pay envelope and stock certificate paper collage",
+      "bytes": 397262,
+      "sha256": "sha256:7e47c1f35fd845fc33ec9cc90d3c6af4"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage on a warm oak desk, split-screen diptych: left side a blank cream pay envelope with its flap open, right side a blank off-white stock certificate cutout with a simple descending graphite line, separated by a clean vertical torn-paper seam. Hand-torn rag paper with visible fibre, physical cast shadows under each layer, one raking light from the left, bone white, graphite, rust. No printed text, no letters, no numbers. Generous negative space.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible words, numbers",
+  "rationale": "The article is a purely conceptual policy and finance dilemma with no physical facility or machine to photograph. Paper collage can symbolically juxtapose the salary container and the stock certificate without generating readable text, and it offers a different treatment from the prior rejected render.",
+  "cue": "The 2027 retirement cap is a salary-shaped container",
+  "subject": "a blank pay envelope and a blank stock certificate cut out of paper, side by side on a desk",
+  "core_thesis": "The 2027 retirement cap is a salary-shaped container, so it can never cut a share bet; only a sale planned in advance acts on the position, and Thursday showed what happens when the event is not on the calendar.",
+  "core_conflict": "salary-shaped contribution cap versus unscheduled share price collapse; only a pre-planned sale can act on an equity position, but the calendar cannot schedule a board meeting",
+  "composition": "split-screen diptych with left-right scenario contrast, divided by a torn-paper seam",
+  "alt_text": "Your $75,000 Room Doesn'T Hold Stock. Pay envelope and blank stock certificate cutouts side by side on a wooden desk, torn paper seam",
+  "caption": "Your $75,000 Room Doesn'T Hold Stock: The 2027 cap is salary-shaped, so it can never cut a share bet.",
+  "title": "Your $75,000 Room Doesn'T Hold Stock",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-75000-room-misses-the-stock/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408889,
+  "sha256": "sha256:b6122a3569c7fcccb0c811106e1a88609f9f540286fcb10284f1c05ac0d44eed",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408889,
+    "quality": 68,
+    "sha256": "sha256:b6122a3569c7fcccb0c811106e1a88609f9f540286fcb10284f1c05ac0d44eed",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:db701e50b40aea76512d07a7c95b39ef2f99a35f44e0f4aa84323f2f43ed616a",
+  "render_phash": "008000900080008022a32ea31aa302b346ab2eab26a322b510c4008100c00880",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A top-down view of a wooden desk split by a vertical torn-paper seam, with an open-flapped blank cream paper envelope on the left and a blank cream rectangular paper card crossed by a single thin diagonal line on the right, both casting soft shadows.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.55,
+    "reason": "The envelope-versus-certificate pairing is the article's own mechanism (a salary-shaped container set against a share position), though both items are blank and the certificate is only barely indicated by a diagonal line, so the contrast reads more weakly than the headline demands."
+  },
+  "source_hash": "sha256:a2c82135782ca121bc61420b41e2c757",
+  "source_chars": 4726,
+  "task_id": "e21855421028e5dbe0a0090a9e41ed22",
+  "credits": 18.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1794571964159-bc1qn6syvev.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage on a warm oak desk, split-screen diptych: left side a blank cream pay envelope with its flap open, right side a blank off-white stock certificate cutout with a simple descending graphite line, separated by a clean vertical torn-paper seam. Hand-torn rag paper with visible fibre, physical cast shadows under each layer, one raking light from the left, bone white, graphite, rust. No printed text, no letters, no numbers. Generous negative space.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-13T12:12:54+00:00",
+  "overlay": {
+    "kicker": "RETIREMENT CAP // STOCK CONCENTRATION",
+    "title": "YOUR $75,000 ROOM DOESN'T HOLD STOCK",
+    "hook": "The 2027 cap is salary-shaped, so it can never cut a share bet",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 135,
+    "contrast": 5.7,
+    "target": 5.5,
+    "clutter": 0.47,
+    "region_rgb": [
+      171,
+      128,
+      90
+    ],
+    "binding_rgb": [
+      131,
+      63,
+      14
+    ],
+    "title_lines": [
+      "YOUR $75,000",
+      "ROOM DOESN'T",
+      "HOLD STOCK"
+    ],
+    "subject": 0.374,
+    "ink_subject": 0.165,
+    "spike": 0.612,
+    "generated_at": "2026-11-13T12:12:54+00:00"
+  }
+}

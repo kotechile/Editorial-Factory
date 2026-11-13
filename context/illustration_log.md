@@ -505,3 +505,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-13 | `12-structures-froze-50000-policies` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/12-structures-froze-50000-policies/featured.jpg` |
 | 2026-11-13 | `nobody-pays-your-rounds-price` | career_velocity_equity_engineering | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/nobody-pays-your-rounds-price/featured.jpg` |
 | 2026-11-13 | `your-carrier-hike-moves-your-carbon` | last_mile_routing_fleet_carbon | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-carrier-hike-moves-your-carbon/featured.jpg` |
+| 2026-11-13 | `your-75000-room-misses-the-stock` | concentrated_equity_portfolio_capital | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-75000-room-misses-the-stock/featured.jpg` |

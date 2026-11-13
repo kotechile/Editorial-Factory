@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T11:43:29Z",
+  "updated_at": "2026-11-13T12:14:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6908,6 +6908,24 @@
         "Related reading"
       ],
       "target_persona": "equity_career_strategist",
+      "date": "2026-11-13",
+      "public": false
+    },
+    {
+      "slug": "2026-11-13_your-75000-room-misses-the-stock",
+      "title": "Your $75,000 Room Doesn't Hold Stock",
+      "vertical": "concentrated_equity_portfolio_capital",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The Cap Is Written in Salary",
+        "By the numbers",
+        "What a Plan Can't Schedule",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "financial_architect",
       "date": "2026-11-13",
       "public": false
     },
