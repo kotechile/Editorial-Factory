@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T10:57:51Z",
+  "updated_at": "2026-11-13T11:10:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6890,6 +6890,24 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-13",
+      "public": false
+    },
+    {
+      "slug": "2026-11-13_nobody-pays-your-rounds-price",
+      "title": "Nobody Pays Your Round's Price",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "When the mark stopped clearing",
+        "By the numbers",
+        "The number to ask for",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "equity_career_strategist",
       "date": "2026-11-13",
       "public": false
     }
