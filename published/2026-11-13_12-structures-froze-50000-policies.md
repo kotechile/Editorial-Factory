@@ -17,7 +17,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/12-structures-froze-50000-policies/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Why 12 Structures Froze 50,000 Policies. A California house at blue hour, charred fire perimeter line crossing its driveway and a blank"
+image_alt: "A California ranch house at blue hour with a blank wall clock above its garage, burnt ground and a charred perimeter line stopping at the driveway."
 image_caption: "Why 12 Structures Froze 50,000 Policies: A year of wildfire cover triggered by emergency order, not damage, in a shrinking market."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -75,15 +75,11 @@ What the record does support is narrower, and more useful. A small arson fire bo
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Block's $30B Hardening Bill" -> /your-blocks-30b-hardening-bill/ [same site (wellroost.com); same category; topical overlap: fire] Link "Your Block's $30B Hardening Bill" in the section where the article touches fire. -->
-<!-- internal-link hint: "Energy & Efficiency" -> /categories/energy-efficiency/ [same site (wellroost.com); same category; the article's own category hub (Energy & Efficiency)] Link "Energy & Efficiency" in the section where the article touches this topic. -->
-<!-- internal-link hint: "2,090 vs 700: Your Condenser's Repair Bill" -> /your-condensers-repair-bill-2090-vs-700/ [same site (wellroost.com); same category] Link "2,090 vs 700: Your Condenser's Repair Bill" in the section where the article touches this topic. -->
+<!-- internal-links:start -->
 ## Related reading
 
-- [Your Block's $30B Hardening Bill](/your-blocks-30b-hardening-bill/) — more on Energy & Efficiency
+- [Your Nonrenewal Isn't Final: Count 120 Days](/your-nonrenewal-isnt-final-count-120-days/) — more on Home Cost Decisions
 - [Energy & Efficiency](/categories/energy-efficiency/) — more on Energy & Efficiency
-- [2,090 vs 700: Your Condenser's Repair Bill](/your-condensers-repair-bill-2090-vs-700/) — more on Energy & Efficiency
 <!-- internal-links:end -->
 
 ## Sources

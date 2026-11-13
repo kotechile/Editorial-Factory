@@ -13,7 +13,7 @@ sources:
 image_path: "context/assets/illustrations/12-structures-froze-50000-policies/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Why 12 Structures Froze 50,000 Policies. A California house at blue hour, charred fire perimeter line crossing its driveway and a blank"
+image_alt: "A California ranch house at blue hour with a blank wall clock above its garage, burnt ground and a charred perimeter line stopping at the driveway."
 image_caption: "Why 12 Structures Froze 50,000 Policies: A year of wildfire cover triggered by emergency order, not damage, in a shrinking market."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
