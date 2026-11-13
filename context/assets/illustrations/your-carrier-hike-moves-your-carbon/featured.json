@@ -1,0 +1,126 @@
+{
+  "slug": "your-carrier-hike-moves-your-carbon",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Parcel crossing a hinged boundary gate between carrier and shipper dock modules on a concrete loading bay floor.",
+      "caption": "A parcel rate hike becomes a physical boundary as a cardboard package shifts from a carrier-owned lane into a shipper-owned dock, changing the emissions line it reports.",
+      "title": "Parcel Boundary Dock Clay Render",
+      "bytes": 400133,
+      "sha256": "sha256:3259d673580e188539d8f418a81959d5"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your 5.9% Hike Moves Your Carbon. Parcel crossing a hinged boundary gate between carrier and shipper dock modules on a concrete loading bay",
+      "caption": "Your 5.9% Hike Moves Your Carbon: Your carrier's 5.9% hike is also a carbon decision. UPS (United Parcel Service) lifts.",
+      "title": "Your 5.9% Hike Moves Your Carbon",
+      "bytes": 401671,
+      "sha256": "sha256:99ec29352118efcf5b252aad6ef594b70e8f351c6a00d5402c87d465dc29fd93"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A split-screen clay assembly on a loading bay concrete floor. Left half: a brushed-steel track carries an unmarked brown cardboard parcel into a carrier dock slot with a safety-yellow modular housing; right half: the same parcel passes through a hinged graphite steel boundary gate into a bone-white shipper dock module with polymer side panels. One directional key light rakes from the left across matte surfaces, casting long shadows. Split-screen diptych, extreme asymmetry, muted graphite, safety yellow, bone white.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numbers",
+  "rationale": "Clay_render turns the rate card's boundary into a small mechanical assembly\u2014a parcel crossing between modular dock slots\u2014making the ownership switch legible without photographic literalism. The split-screen contrasts carrier Scope 3 with shipper Scope 1.",
+  "cue": "The rate card is a boundary",
+  "subject": "a cardboard parcel crossing a hinged boundary gate between two modular delivery docks",
+  "core_thesis": "A parcel rate card rising 5.9% pushes shippers to run the last mile themselves, and ownership\u2014not mileage\u2014decides whether a delivery's fuel is the shipper's own Scope 1 or a carrier's Scope 3, so the cheaper mile and the reported mile can move in opposite directions.",
+  "core_conflict": "Cost-driven insourcing of last-mile delivery shifts carbon emissions from a carrier's Scope 3 to a shipper's Scope 1, making the cheaper operational mile a potentially worse reported carbon line.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Your 5.9% Hike Moves Your Carbon. Parcel crossing a hinged boundary gate between carrier and shipper dock modules on a concrete loading bay",
+  "caption": "Your 5.9% Hike Moves Your Carbon: A 5.9% parcel hike can move your delivery fuel from Scope 3 to Scope 1.",
+  "title": "Your 5.9% Hike Moves Your Carbon",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "clay_render",
+    "model": "nanobanana"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-carrier-hike-moves-your-carbon/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407067,
+  "sha256": "sha256:f389597bf694815c4de23dd913b3c75ffd0c25bc651b399beee6cf64f98f30e9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407067,
+    "quality": 80,
+    "sha256": "sha256:f389597bf694815c4de23dd913b3c75ffd0c25bc651b399beee6cf64f98f30e9",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:63ef0906636189f5dfc86ec5583eaf9456fa45e623fd6179ca7b7fe60593ebad",
+  "render_phash": "b863f3c7c783c743f2cf7a6dfe397a29fa79ba593a7a7238ec188c1a178d038d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-frame matte render: on the left a brown cardboard box sits on a metal rail protruding from a mustard-yellow padded rectangular dock with a square opening, and on the right a similar box sits on a dark platform at the open hinged mesh gate of a cream-white block structure with translucent panel walls, both on a grey concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.68,
+    "reason": "The parcel crossing a hinged gate between two docks is the article's own protagonist at its own mechanism \u2014 the ownership boundary that decides Scope 1 versus Scope 3 \u2014 though nothing in the frame itself signals rates, carbon or the 5.9% hike."
+  },
+  "source_hash": "sha256:294cc7659a6642fbc6173742727dcf67",
+  "source_chars": 4552,
+  "task_id": "ace6208e354707d134f7d4268f2b00eb",
+  "credits": 18.0,
+  "cost_ms": 19,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1794570536729-e245ek2mdg.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A split-screen clay assembly on a loading bay concrete floor. Left half: a brushed-steel track carries an unmarked brown cardboard parcel into a carrier dock slot with a safety-yellow modular housing; right half: the same parcel passes through a hinged graphite steel boundary gate into a bone-white shipper dock module with polymer side panels. One directional key light rakes from the left across matte surfaces, casting long shadows. Split-screen diptych, extreme asymmetry, muted graphite, safety yellow, bone white.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-13T11:49:04+00:00",
+  "overlay": {
+    "kicker": "PARCEL RATE HIKES // CARBON LINE",
+    "title": "YOUR 5.9% HIKE MOVES YOUR CARBON",
+    "hook": "A 5.9% parcel hike can move your delivery fuel from Scope 3 to Scope 1",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.06,
+    "target": 5.5,
+    "clutter": 0.403,
+    "region_rgb": [
+      98,
+      89,
+      75
+    ],
+    "binding_rgb": [
+      159,
+      149,
+      137
+    ],
+    "title_lines": [
+      "YOUR 5.9% HIKE",
+      "MOVES YOUR",
+      "CARBON"
+    ],
+    "subject": 0.178,
+    "ink_subject": 0.031,
+    "spike": 0.167,
+    "generated_at": "2026-11-13T11:49:04+00:00"
+  }
+}

@@ -14,6 +14,12 @@ meta_title: "Your 5.9% Hike Moves Your Carbon"
 meta_title_source: "derived_from_title"
 meta_description: "Your carrier's 5.9% hike is also a carbon decision. UPS (United Parcel Service) lifts ground, air and international rates an average of 5.9% on 21 December…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-carrier-hike-moves-your-carbon/featured.jpg"
+image_style: "clay_render"
+image_model: "nanobanana"
+image_alt: "Your 5.9% Hike Moves Your Carbon: a parcel crosses a hinged gate between carrier and shipper dock bays on concrete."
+image_caption: "Your 5.9% Hike Moves Your Carbon: A 5.9% parcel hike can move your delivery fuel from Scope 3 to Scope 1."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -66,14 +72,11 @@ What the documents do support is narrower and still useful. The same delivery is
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Carbon Data Stops at 6 Minutes" -> /carbon-data-stops-at-6-minutes/ [same site (aichieve.net); same category; topical overlap: carbon, carrier's] Link "Carbon Data Stops at 6 Minutes" in the section where the article touches carbon, carrier's. -->
-<!-- internal-link hint: "Higher Rates Meet Historically Lean Inventories" -> /fed-rate-hike-inverts-working-capital-trap/ [same site (aichieve.net); same category; topical overlap: hike] Link "Higher Rates Meet Historically Lean Inventories" in the section where the article touches hike. -->
-<!-- internal-link hint: "Your Carbon Report Skips 2 Lines" -> /your-carbon-report-skips-2-lines/ [same site (aichieve.net); same category; topical overlap: carbon] Link "Your Carbon Report Skips 2 Lines" in the section where the article touches carbon. -->
 ## Related reading
 
-- [Carbon Data Stops at 6 Minutes](/carbon-data-stops-at-6-minutes/) — more on Supply Chain & Operations
-- [Higher Rates Meet Historically Lean Inventories](/fed-rate-hike-inverts-working-capital-trap/) — more on Supply Chain & Operations
-- [Your Carbon Report Skips 2 Lines](/your-carbon-report-skips-2-lines/) — more on Supply Chain & Operations
+- [Your Fuel Surcharge Hides Three Negotiated Numbers](/fuel-surcharge-peg-mpg-audit/) — the peg and band arithmetic behind the surcharge on your invoice.
+- [Your Carbon Report Skips 2 Lines](/your-carbon-report-skips-2-lines/) — which lines of a corporate carbon filing your trucks fall outside.
+- [Carbon Data Stops at 6 Minutes](/carbon-data-stops-at-6-minutes/) — why the activity record behind a fleet's carbon number cannot resolve a single stop.
 <!-- internal-links:end -->
 
 ## Sources
