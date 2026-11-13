@@ -45,5 +45,5 @@ Supporting citations carried in prose and in `## Sources` rather than as gate ro
 ## Gate result
 
 <!-- evergreen-gate:start -->
-<!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=4 hosts=3 decision="sha1:8a8f928128" dedup="matched a prior artifact: 2026-11-06_your-espp-clock-is-18-m" window_days=180 checked_at=2026-11-13T17:04:15+00:00 -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=4 hosts=3 decision="sha1:8a8f928128" dedup="matched a prior artifact: 2026-11-06_your-espp-clock-is-18-m" window_days=180 checked_at=2026-11-13T17:24:52+00:00 -->
 <!-- evergreen-gate:end -->
