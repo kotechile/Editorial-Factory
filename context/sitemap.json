@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T11:10:31Z",
+  "updated_at": "2026-11-13T11:43:29Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6908,6 +6908,24 @@
         "Related reading"
       ],
       "target_persona": "equity_career_strategist",
+      "date": "2026-11-13",
+      "public": false
+    },
+    {
+      "slug": "2026-11-13_your-carrier-hike-moves-your-carbon",
+      "title": "Your 5.9% Hike Moves Your Carbon",
+      "vertical": "last_mile_routing_fleet_carbon",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The rate card is a boundary",
+        "By the numbers",
+        "What I'm watching next",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "supply_chain_architect",
       "date": "2026-11-13",
       "public": false
     }
