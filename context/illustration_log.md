@@ -502,3 +502,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-12 | `your-contractors-bond-dies-at-25000` | home_ops_execution | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-contractors-bond-dies-at-25000/featured.jpg` |
 | 2026-11-12 | `move-abroad-still-a-resident-546-days` | expat_cross_border_relocation | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/move-abroad-still-a-resident-546-days/featured.jpg` |
 | 2026-11-12 | `your-sensing-tool-lands-once-a-day` | demand_sensing_advanced_sop | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-sensing-tool-lands-once-a-day/featured.jpg` |
+| 2026-11-13 | `12-structures-froze-50000-policies` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/12-structures-froze-50000-policies/featured.jpg` |

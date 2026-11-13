@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T20:14:24Z",
+  "updated_at": "2026-11-13T10:45:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6874,6 +6874,24 @@
       "date": "2026-11-12",
       "public": true,
       "url": "https://aichieve.net/your-subagent-is-you/"
+    },
+    {
+      "slug": "2026-11-13_12-structures-froze-50000-policies",
+      "title": "Why 12 Structures Froze 50,000 Policies",
+      "vertical": "resilient_home_assets",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The clock starts before the notice",
+        "By the numbers",
+        "The market behind the year",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-13",
+      "public": false
     }
   ]
 }

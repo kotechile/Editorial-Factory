@@ -373,6 +373,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-12 | home_ops_execution | your-contractors-bond-dies-at-25000 | Your Contractor's Bond Dies at $25,000 | https://pressflow.aichieve.net/published/2026-11-12_your-contractors-bond-dies-at-25000.md | reader site only |
 | 2026-11-12 | expat_cross_border_relocation | move-abroad-still-a-resident-546-days | Move Abroad, Still a Resident: 546 Days | https://pressflow.aichieve.net/published/2026-11-12_move-abroad-still-a-resident-546-days.md | reader site only |
 | 2026-11-12 | demand_sensing_advanced_sop | your-sensing-tool-lands-once-a-day | Batch Runs Cap What Sensing Buys | https://pressflow.aichieve.net/published/2026-11-12_your-sensing-tool-lands-once-a-day.md | reader site only |
+| 2026-11-13 | resilient_home_assets | 12-structures-froze-50000-policies | Why 12 Structures Froze 50,000 Policies | https://pressflow.aichieve.net/published/2026-11-13_12-structures-froze-50000-policies.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

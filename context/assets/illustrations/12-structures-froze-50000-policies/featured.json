@@ -1,0 +1,113 @@
+{
+  "slug": "12-structures-froze-50000-policies",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A California house at blue hour, charred fire perimeter line crossing its driveway and a blank wall clock above the garage.",
+      "caption": "The perimeter that triggered a year of wildfire insurance protection left this house untouched, while the clock above the garage marks the time that started at an administrative declaration.",
+      "title": "Fire perimeter and policy clock outside a California home",
+      "bytes": 349022,
+      "sha256": "sha256:3286608dea7faef072c33f699da23dc5"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "35mm anamorphic wide with dramatic edge falloff, a modern California stucco house at blue hour, warm window light spilling from the front windows as the only key, a large blank analog wall clock with tick marks only mounted above the garage, a thin charred fire perimeter line cutting diagonally across the concrete driveway and front yard, leaving the house just outside the burn. Extreme asymmetry with the house on the right third, deep blue ambient fill from the left, bone white stucco, graphite charred line, deep pine green shrubs, no people, no text, no logos, film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, numerals",
+  "rationale": "The article turns on the interaction between a fire perimeter and a clock that starts after the fire is out, so architectural_night at blue hour captures one protected house just outside a charred line with a clock, avoiding any legible document text. The treatment suits the residential world and the change after hours that determines the year of cover.",
+  "cue": "by fire perimeter and by a clock",
+  "subject": "a modern California house at blue hour with a blank analog wall clock above its garage and a charred fire perimeter line crossing the driveway, leaving the house untouched",
+  "core_thesis": "California now grants a year of wildfire insurance protection by fire perimeter and by a clock that starts at the governor's emergency declaration, not at the fire \u2014 and that year lands in a residual market that is writing fewer new policies each month.",
+  "core_conflict": "administrative fire perimeter and emergency-declaration clock vs actual fire damage; shrinking residual market writing fewer policies",
+  "composition": "extreme asymmetry with house on right third and charred line diagonal from lower left",
+  "alt_text": "Why 12 Structures Froze 50,000 Policies. A California house at blue hour, charred fire perimeter line crossing its driveway and a blank",
+  "caption": "Why 12 Structures Froze 50,000 Policies: A year of wildfire cover triggered by emergency order, not damage, in a shrinking market.",
+  "title": "Why 12 Structures Froze 50,000 Policies",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/12-structures-froze-50000-policies/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399736,
+  "sha256": "sha256:9fea0f5a2e4eaec310f9fe0f0f86b06d38114df5ca5fb1396b5a90748924f433",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399736,
+    "quality": 84,
+    "sha256": "sha256:9fea0f5a2e4eaec310f9fe0f0f86b06d38114df5ca5fb1396b5a90748924f433",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e0cf3ba127f324664e52e7273c44f6b4171de3cc1a0dc0481b2e1e735a478b55",
+  "render_phash": "01ff00fc010702370637063f806fb02f9a1f03872387113f045f08df03ef05cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A white single-story modern house with a lit window wall and a closed two-car garage stands at blue-hour dusk on the right, with a large blank-faced analog wall clock mounted on the white wall above and right of the garage door, while a dark charred strip of burned ground and ash cuts diagonally across the lawn and driveway from the lower left foreground, leaving the house and its shrubs intact.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.83,
+    "reason": "The frame renders the article's own mechanism literally \u2014 an untouched California house beside a fire perimeter line with a blank clock standing in for the year-long protection clock \u2014 so a reader would recognize the wildfire-insurance-clock story, though the clock reads nothing and no residual-market element appears."
+  },
+  "source_hash": "sha256:c613d5632b5d10d009b6496072b50e45",
+  "source_chars": 4920,
+  "task_id": "daf761bde92057d86d31f55466cbbdda",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/daf761bde92057d86d31f55466cbbdda_1794566653802.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "35mm anamorphic wide with dramatic edge falloff, a modern California stucco house at blue hour, warm window light spilling from the front windows as the only key, a large blank analog wall clock with tick marks only mounted above the garage, a thin charred fire perimeter line cutting diagonally across the concrete driveway and front yard, leaving the house just outside the burn. Extreme asymmetry with the house on the right third, deep blue ambient fill from the left, bone white stucco, graphite charred line, deep pine green shrubs, no people, no text, no logos, film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-13T10:44:23+00:00",
+  "overlay": {
+    "kicker": "CALIFORNIA WILDFIRE INSURANCE // FREEZE ORDER",
+    "title": "WHY 12 STRUCTURES FROZE 50,000 POLICIES",
+    "hook": "A year of wildfire cover triggered by emergency order, not damage, in a shrinking market",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.81,
+    "target": 5.5,
+    "clutter": 0.31,
+    "region_rgb": [
+      85,
+      91,
+      97
+    ],
+    "binding_rgb": [
+      116,
+      120,
+      123
+    ],
+    "title_lines": [
+      "WHY 12",
+      "STRUCTURES FROZE",
+      "50,000 POLICIES"
+    ],
+    "subject": 0.177,
+    "ink_subject": 0.04,
+    "spike": 0.254,
+    "generated_at": "2026-11-13T10:44:23+00:00"
+  }
+}
