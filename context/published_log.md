@@ -379,6 +379,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-13 | concentrated_equity_portfolio_capital | your-75000-room-misses-the-stock | Your $75,000 Room Doesn't Hold Stock | https://pressflow.aichieve.net/published/2026-11-13_your-75000-room-misses-the-stock.md | reader site only |
 | 2026-11-13 | consumer_asset_repair_replace_tco | your-console-rose-500-instead | Your Console Rose $500 Instead | https://pressflow.aichieve.net/published/2026-11-13_your-console-rose-500-instead.md | reader site only |
 | 2026-11-13 | concentrated_equity_portfolio_capital | your-collar-kills-the-long-term-clock | Your Collar Kills the 12-Month Clock | https://pressflow.aichieve.net/published/2026-11-13_your-collar-kills-the-long-term-clock.md | reader site only |
+| 2026-11-13 | resilient_home_assets | your-1-8-inch-screen-leaks-embers | Your 1/8-Inch Screen Leaks Embers | https://pressflow.aichieve.net/published/2026-11-13_your-1-8-inch-screen-leaks-embers.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
