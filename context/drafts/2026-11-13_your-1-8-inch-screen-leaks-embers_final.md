@@ -18,7 +18,7 @@ image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 
 <!-- lead -->
 
-The vent screen a California homeowner is told to install has 1/8-inch openings. That number sits on the state's insurance-discount list, which describes the measure as "1/16 to 1/8 inch noncombustible, corrosion-resistant metal mesh screens over exterior vents" [1]. The same range is what the state's fire councils read into Chapter 7A of the building code [2]. A laboratory study published in 2009, cited by the Lake County Fire Safe Council, found that embers passing through 1/8-inch screening still carried enough energy to ignite fine fuel on the far side [3]. The vent screen sold as the compliant one leaks embers — the small ones, the ones the study found still burning. The finer 1/16-inch screen closes more of that gap and takes air with it, which is the part of the trade no hardening list prices.
+The vent screen a California homeowner is told to install has 1/8-inch openings. That number sits on the state's insurance-discount list, which describes the measure as "1/16 to 1/8 inch noncombustible, corrosion-resistant metal mesh screens over exterior vents" [1]. The same range is what Fire Safe Marin's retrofit guidance reads into Chapter 7A of the building code [2]. A laboratory study published in 2009, cited by the Lake County Fire Safe Council, found that embers passing through 1/8-inch screening still carried enough energy to ignite fine fuel on the far side [3]. The vent screen sold as the compliant one leaks embers — the small ones, the ones the study found still burning. The finer 1/16-inch screen closes more of that gap and takes air with it, which is the part of the trade no hardening list prices.
 
 <!-- tldr -->
 
@@ -32,7 +32,7 @@ The vent screen a California homeowner is told to install has 1/8-inch openings.
 
 ## The screen was a rodent guard
 
-The mesh in a vent was never a fire device. It kept rodents and nesting birds out of the attic, and a quarter-inch opening did that job. The code then moved to 1/8 inch for ember resistance, and the councils that write retrofit guidance now call the quarter-inch screen ineffective [2].
+The mesh in a vent was never a fire device. It kept rodents and nesting birds out of the attic, and a quarter-inch opening did that job. The code then moved to 1/8 inch for ember resistance, and the retrofit guidance now calls the quarter-inch screen ineffective [2].
 
 That history explains why the number moved one step and stopped. A mesh size is the one thing an inspector, a contractor, and a homeowner can all check from the ground, so the prescriptive path in the code is a mesh size. The performance path measures the whole vent instead: no flaming ignition during the ember test, no flaming ignition during the flame test's integrity portion, and an unexposed face that stays under 662°F (350°C) [4]. That path needs a listed product, a test report, and a model number.
 
@@ -48,7 +48,7 @@ I read the two paths side by side and keep coming back to how differently they t
 
 ## Where the money goes
 
-Exposure is not evenly spread across a house. The gable-end vent, set in the triangular wall under the roof peak, faces the wind head-on, and the councils advise against it or want a listed assembly where it cannot be avoided [2]. Open-eave soffit inlets under the roof edge sit where burning material collects, and the guidance prefers a soffited eave for that reason [2]. Ridge and off-ridge vents, along and near the roof's top edge, take less, though the same guidance warns against the unresistant versions of both [2]. Foundation and crawlspace openings are still openings into the building's underside.
+Exposure is not evenly spread across a house. The gable-end vent, set in the triangular wall under the roof peak, faces the wind head-on, and Fire Safe Marin advises against it or wants a listed assembly where it cannot be avoided [2]. Open-eave soffit inlets under the roof edge sit where burning material collects, and the guidance prefers a soffited eave for that reason [2]. Ridge and off-ridge vents, along and near the roof's top edge, take less, though the same guidance warns against the unresistant versions of both [2]. Foundation and crawlspace openings are still openings into the building's underside.
 
 The council's own rule for spending is blunt. Where flame impingement is plausible, a listed assembly is a good investment, and where only embers are plausible, mesh alone is adequate [2]. My reading is that this ranks the job better than any "ember-resistant vents" line item does, because it puts the money on the two faces that can see fire and leaves the rest as screening.
 
