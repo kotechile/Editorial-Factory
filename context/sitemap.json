@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T18:19:54Z",
+  "updated_at": "2026-11-13T18:39:34Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6934,6 +6934,24 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-13",
+      "public": false
+    },
+    {
+      "slug": "2026-11-13_your-100-hour-is-not-208000",
+      "title": "Your $100 Hour Is Not $208,000",
+      "vertical": "career_velocity_equity_engineering",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The tax is the smaller half",
+        "By the numbers",
+        "Where the multiplier comes from",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "equity_career_strategist",
       "date": "2026-11-13",
       "public": false
     },
