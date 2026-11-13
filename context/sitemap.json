@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T12:14:09Z",
+  "updated_at": "2026-11-13T12:48:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6944,6 +6944,24 @@
         "Related reading"
       ],
       "target_persona": "supply_chain_architect",
+      "date": "2026-11-13",
+      "public": false
+    },
+    {
+      "slug": "2026-11-13_your-console-rose-500-instead",
+      "title": "Your Console Rose $500 Instead",
+      "vertical": "consumer_asset_repair_replace_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The old price curve broke",
+        "By the numbers",
+        "What fails, and what it costs",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-13",
       "public": false
     }
