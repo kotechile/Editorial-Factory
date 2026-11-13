@@ -1,0 +1,130 @@
+{
+  "slug": "your-console-rose-500-instead",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Opened game console and joystick module in a soldering clamp on a workbench under a single lamp.",
+      "caption": "Repairing an older console becomes the cheaper path when replacement prices rise and the part, not the age, decides the fix.",
+      "title": "Console repair workbench with joystick module",
+      "bytes": 326066,
+      "sha256": "sha256:ab6c111a04a7e776787a873b8a758643"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Console Prices Rose $500 After Launch. Opened game console and joystick module in a soldering clamp on a workbench under a single lamp.",
+      "caption": "Console Prices Rose $500 After Launch: Repair is now the cheap path, and the part, not age, decides whether you can fix.",
+      "title": "Console Prices Rose $500 After Launch",
+      "bytes": 392832,
+      "sha256": "sha256:173648ae2dd92065100aad4b06716844c93382c817508e1db923159afd27b2b1"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Opened game console and a joystick module in a soldering clamp on a workbench under a single lamp.",
+      "caption": "Repairing an older console becomes the cheaper path when replacement prices rise and the part, not the age, decides the fix.",
+      "title": "Console repair workbench with joystick module",
+      "bytes": 392832,
+      "sha256": "sha256:173648ae2dd92065100aad4b06716844c93382c817508e1db923159afd27b2b1",
+      "note": "alt rewritten from the overlay copy to a plain sentence"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic anamorphic 35mm photograph of a garage workbench. An opened game console shell lies on the left third, its internal heatsink exposed, while a joystick module sits in a small soldering clamp at center-right. A soldering iron rests beside it on a worn timber surface, its tip still warm. A single warm work lamp rakes from the left, casting deep shadows and rim-lighting brushed steel edges. Palette of bone white, graphite, and rust. Shallow depth of field with dramatic falloff, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "Cinematic still captures the decisive moment of repair, placing the opened console and its inexpensive but labor-intensive joystick module in a real workbench environment. It uses wide establishing composition and dramatic practical light to convey the shift from replacement to repair without literal stock imagery.",
+  "cue": "the part, not the device's age",
+  "subject": "a disassembled game console with a joystick module in a soldering clamp on a garage workbench",
+  "core_thesis": "Replacement console prices rose after launch for the first time, making repair of old consoles the cheap path and the availability of parts, not device age, the deciding factor.",
+  "core_conflict": "The old price curve of declining costs broke as memory and storage costs climbed, colliding with the unchanged cheapness of individual repair parts and the labor to fit them.",
+  "composition": "Extreme asymmetry with the opened console on the left third and tools trailing into negative space to the right",
+  "alt_text": "Opened game console and a joystick module in a soldering clamp on a workbench under a single lamp.",
+  "caption": "Repairing an older console becomes the cheaper path when replacement prices rise and the part, not the age, decides the fix.",
+  "title": "Console repair workbench with joystick module",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-console-rose-500-instead/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 392832,
+  "sha256": "sha256:173648ae2dd92065100aad4b06716844c93382c817508e1db923159afd27b2b1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 392832,
+    "quality": 88,
+    "sha256": "sha256:173648ae2dd92065100aad4b06716844c93382c817508e1db923159afd27b2b1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b846b1dac0560fdaeafad6b5cd69c1ef0bc8c2926099fbc47f27637dc803ad56",
+  "render_phash": "18c73c873c0f3f0f1d97015d27d60dff593793a4d33b523d0277807b801e0187",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An opened, empty light-gray console chassis with an exposed metal heatsink sits on a wooden workbench beside a magnifier-and-clamp stand holding a small green joystick circuit board, with a soldering iron lying in the foreground and a desk lamp lighting the scene from the upper left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.92,
+    "reason": "The frame shows exactly the article's protagonist and mechanism \u2014 an opened game console and a replaceable joystick module in a soldering clamp \u2014 matching the repair-over-replacement argument."
+  },
+  "source_hash": "sha256:57089d5cebfa0a25e315399e4d5ff1cc",
+  "source_chars": 4483,
+  "task_id": "a4aecb064b38c81f544f215af81f306e",
+  "credits": 5.0,
+  "cost_ms": 43,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a4aecb064b38c81f544f215af81f306e_1794574659012.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic anamorphic 35mm photograph of a garage workbench. An opened game console shell lies on the left third, its internal heatsink exposed, while a joystick module sits in a small soldering clamp at center-right. A soldering iron rests beside it on a worn timber surface, its tip still warm. A single warm work lamp rakes from the left, casting deep shadows and rim-lighting brushed steel edges. Palette of bone white, graphite, and rust. Shallow depth of field with dramatic falloff, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-13T12:57:47+00:00",
+  "overlay": {
+    "kicker": "CONSOLE REPLACEMENT COSTS // REPAIR PATH",
+    "title": "CONSOLE PRICES ROSE $500 AFTER LAUNCH",
+    "hook": "Repair is now the cheap path, and the part, not age, decides whether you can fix",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.93,
+    "target": 5.5,
+    "clutter": 0.387,
+    "region_rgb": [
+      54,
+      53,
+      47
+    ],
+    "binding_rgb": [
+      123,
+      89,
+      52
+    ],
+    "title_lines": [
+      "CONSOLE PRICES",
+      "ROSE $500 AFTER",
+      "LAUNCH"
+    ],
+    "subject": 0.198,
+    "ink_subject": 0.072,
+    "spike": 0.335,
+    "generated_at": "2026-11-13T12:57:47+00:00"
+  }
+}

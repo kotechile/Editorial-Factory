@@ -14,6 +14,12 @@ meta_title: "Your Console Rose $500 Instead"
 meta_title_source: "derived_from_title"
 meta_description: "Your console rose instead of falling after memory and storage costs climbed, and the three current machines now cost $500 more together than they did at…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-console-rose-500-instead/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Opened game console and a joystick module in a soldering clamp on a workbench under a single lamp."
+image_caption: "Repairing an older console becomes the cheaper path when replacement prices rise and the part, not the age, decides the fix."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
