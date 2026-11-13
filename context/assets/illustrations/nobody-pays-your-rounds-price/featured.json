@@ -1,0 +1,126 @@
+{
+ "slug": "nobody-pays-your-rounds-price",
+ "revision": 3,
+ "history": [
+  {
+   "revision": 3,
+   "alt_text": "Isometric bone-white register with a brushed-steel dial, a tray of cream cards and an empty slate-grey tray on a pale oak floor, raked light from the left.",
+   "caption": "Two prices for one share: one tray holds the round's price, the other is where a holder clears at a discount.",
+   "title": "Private Share Clearing Price Cutaway",
+   "bytes": 397745,
+   "sha256": "sha256:f5a7fb1e5be7fac67f908e038d66019e276f8782a12462d73577caf37cac6f5b"
+  },
+  {
+   "revision": 1,
+   "alt_text": "A single share certificate folio on a cutaway register moves between a raised round-price tray and a lower secondary clearing tray.",
+   "caption": "Two prices for one share, shown as a cutaway register where the same share folio drops from a round-price tray to a lower secondary clearing tray.",
+   "title": "Private Share Clearing Price Cutaway",
+   "bytes": 403386,
+   "sha256": "sha256:4011aa73ec7272f5c8dfa354e0561577"
+  }
+ ],
+ "style": "technical_isometric",
+ "style_label": "Technical isometric cutaway",
+ "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+ "model": "nano-banana-pro",
+ "model_key": "nanobanana",
+ "model_note": "",
+ "aspect_ratio": "16:9",
+ "resolution": "1K",
+ "prompt": "A desktop private-share clearing register in a clean isometric cutaway on a warm oak desk. A single coated paper stock certificate folio sits in a shallow aluminium docking tray on a short rail. Above it a raised brushed-steel round-price shelf; beside it a lower slate-grey secondary clearing tray set at a visible drop below, joined by a short modular connector. One directional key light rakes from the left, throwing long contact shadows. Matte surfaces, visible seams, no text, no lettering. Palette: bone white, graphite, ochre. Asymmetric isometric cutaway with the register off-centre left and empty desk to right.",
+ "negative_prompt": "garbled text, random lettering, watermarks",
+ "rationale": "The article explains a structural pricing mechanism with two prices for one share, which suits an axonometric cutaway showing the routing and drop between primary round price and secondary clearing price. It avoids a photographic still of a single object and keeps the systemic tension legible.",
+ "cue": "nine percent below its company's last round price",
+ "subject": "a single share certificate folio routed through two pricing trays in a private share clearing register, one raised round-price tray and one lower secondary clearing tray",
+ "core_thesis": "Your grant is quoted at a round price, but the median private share cleared nine percent below that round price on the secondary market while record valuations were set by a fifth fewer deals.",
+ "core_conflict": "Primary round price versus secondary market clearing price, with thinning deal volume amplifying the fragility of the quoted mark.",
+ "composition": "asymmetric isometric cutaway with the register off-centre left and empty desk to right",
+ "alt_text": "Isometric bone-white register with a brushed-steel dial, a tray of cream cards and an empty slate-grey tray on pale oak, lit from the left.",
+ "caption": "Two prices for one share: one tray holds the round's price, the other is where a holder clears at a discount.",
+ "title": "Nobody Pays Your Round'S Price",
+ "credit": "Illustration: Editorial-Factory Intelligence Unit",
+ "depicts_real_brand": false,
+ "director": "deepseek-v4-pro",
+ "director_attempts": 1,
+ "pinned": {
+  "style": "technical_isometric",
+  "model": "nanobanana"
+ },
+ "file": "featured.jpg",
+ "local_path": "context/assets/illustrations/nobody-pays-your-rounds-price/featured.jpg",
+ "ext": "jpg",
+ "content_type": "image/jpeg",
+ "bytes": 397745,
+ "sha256": "sha256:f5a7fb1e5be7fac67f908e038d66019e276f8782a12462d73577caf37cac6f5b",
+ "delivery": {
+  "standard": "2026-10-24",
+  "format": "JPEG",
+  "progressive": true,
+  "color_space": "sRGB",
+  "width": 2400,
+  "height": 1350,
+  "aspect": 1.7778,
+  "bytes": 397745,
+  "quality": 60,
+  "sha256": "sha256:f5a7fb1e5be7fac67f908e038d66019e276f8782a12462d73577caf37cac6f5b",
+  "filename_rule": "<slug>-featured.jpg"
+ },
+ "render_sha256": "sha256:96516344c18eed0558fd3e33fb648e571033300d37f5b63a31af22ade4aa0d3b",
+ "render_phash": "c6b40f278b2219a9185c3cecce669e549e9587488667d0c6d58d0c3356675a6e",
+ "review": {
+  "ok": true,
+  "problems": [],
+  "depicts": "A beige and grey isometric mechanical unit sits on a light wood desk, with a circular brushed-metal dial on top, a sliding carriage holding a stack of blank pale sheets banded in gold on a raised left tray, and a separate empty dark-grey shallow tray at lower right, with bare wood to the right.",
+  "legible_text": "",
+  "on_topic": true,
+  "confidence": 0.55,
+  "reason": "The raised loaded tray versus the lower empty tray routing a document folio does map to the round-price mark against the discounted secondary clearing price, but with no certificate, ticker or price cues the device reads at first glance as generic office hardware rather than private-share clearing."
+ },
+ "source_hash": "sha256:47b7a47080ce8c20e211ea95894a76ff",
+ "source_chars": 4865,
+ "task_id": "619e32b21bac911da959b117211da304",
+ "credits": 18.0,
+ "cost_ms": 75,
+ "provider_url": "https://tempfile.aiquickdraw.com/p/619e32b21bac911da959b117211da304_1_1794568840_9935.png",
+ "provider_request": {
+  "model": "nano-banana-pro",
+  "input": {
+   "prompt": "A desktop private-share clearing register in a clean isometric cutaway on a warm oak desk. A single coated paper stock certificate folio sits in a shallow aluminium docking tray on a short rail. Above it a raised brushed-steel round-price shelf; beside it a lower slate-grey secondary clearing tray set at a visible drop below, joined by a short modular connector. One directional key light rakes from the left, throwing long contact shadows. Matte surfaces, visible seams, no text, no lettering. Palette: bone white, graphite, ochre. Asymmetric isometric cutaway with the register off-centre left and empty desk to right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+   "aspect_ratio": "16:9",
+   "resolution": "1K",
+   "image_input": [],
+   "output_format": "png"
+  }
+ },
+ "generated_at": "2026-11-13T11:21:20+00:00",
+ "overlay": {
+  "kicker": "PRIVATE MARKETS // SECONDARY DISCOUNT",
+  "title": "NOBODY PAYS YOUR ROUND'S PRICE",
+  "hook": "Median private shares cleared nine percent below their last round price",
+  "anchor": "top-right",
+  "light": false,
+  "scrim": 120,
+  "contrast": 4.61,
+  "target": 4.5,
+  "clutter": 0.194,
+  "region_rgb": [
+   195,
+   152,
+   103
+  ],
+  "binding_rgb": [
+   184,
+   129,
+   75
+  ],
+  "title_lines": [
+   "NOBODY PAYS",
+   "YOUR ROUND'S",
+   "PRICE"
+  ],
+  "subject": 0.223,
+  "ink_subject": 0.044,
+  "spike": 0.305,
+  "generated_at": "2026-11-13T11:21:20+00:00"
+ }
+}

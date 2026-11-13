@@ -14,6 +14,12 @@ meta_title: "Nobody Pays Your Round's Price"
 meta_title_source: "derived_from_title"
 meta_description: "Carta's third-quarter report says median startup valuations now sit above their 2021 peak at most fundraising stages."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/nobody-pays-your-rounds-price/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Isometric bone-white register with a brushed-steel dial, a tray of cream cards and an empty slate-grey tray on pale oak, lit from the left."
+image_caption: "Two prices for one share: one tray holds the round's price, the other is where a holder clears at a discount."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
@@ -68,12 +74,11 @@ I could be wrong that any of it matters for a company that raises again at a hig
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Secondary Tender vs IPO Calculator for Startup Equity" -> /calculators/secondary-tender-calculator/ [same site (giniloh.com); topical overlap: price, startup] Link "Secondary Tender vs IPO Calculator for Startup Equity" in the section where the article touches price, startup. -->
-<!-- internal-link hint: "Spreadsheet vs. Real Software" -> /calculators/no-code-terminator/ [same site (giniloh.com); topical overlap: nobody, price] Link "Spreadsheet vs. Real Software" in the section where the article touches nobody, price. -->
 ## Related reading
 
 - [Secondary Tender vs IPO Calculator for Startup Equity](/calculators/secondary-tender-calculator/)
-- [Spreadsheet vs. Real Software](/calculators/no-code-terminator/)
+- [Your Grant Grew 25.4%: It Stops at Director](/your-grant-grew-25-4-directors-grew-3-9/)
+- [Why 70% of Startup Options Go Unexercised](/why-70-of-startup-options-go-unexercised/)
 <!-- internal-links:end -->
 
 ## Sources
