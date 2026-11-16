@@ -152,6 +152,37 @@ destination. What it does hold:
 | 👥 **Personas** | the reader archetypes the verticals point at |
 | 🛰️ **Fleet & Crons** | cron reconciliation and the operations log |
 
+## Generation switches (article fleet and software recon)
+
+The Verticals tab opens with two independent owner switches, and each vertical card carries its own
+⏸ Pause / ▶ Resume:
+
+| Switch | What it stops | Where the state lives |
+|---|---|---|
+| ✍️ **Article generation** | the whole editorial fleet — news, evergreen and review runs for every vertical | `factory_config.generation_control.articles_enabled` (+ `disabled_verticals` for per-vertical pauses) |
+| 🧱 **Software generation** | the software side's generation loop, `Weekly Market Recon` (app recon → candidate PRD) | `factory_config.generation_control.software_enabled` |
+
+The switch is **not** a cron pause: the dashboard runs in a container that cannot reach this host's
+cron store. Every pipeline prompt begins with
+
+```bash
+python3 scripts/generation_gate.py --mode <news|evergreen|review|software> --vertical <id>
+```
+
+and exits 3 when the loop is off, so the next scheduled run stops **before** it researches, drafts
+or spends. Off is enforced on the very next tick — no registry pull or cron sync required.
+`context/generation_control.json` is the fallback copy the gate reads when Supabase is unreachable.
+The gate fails **open** on infrastructure errors (only an explicit `false` stops a run).
+
+**▶ Run now** (software) records a request in the same record; the zero-token
+`PressFlow Software Run Watcher` cron on the host checks every 15 minutes and dispatches the recon
+once per request (`scripts/run_software_request.py`). A switch change can also be made from the host:
+
+```bash
+python3 scripts/run_software_request.py --set articles_enabled=false --by "jorge"
+python3 scripts/run_software_request.py --status
+```
+
 ## App Promotion To-Do Queue (Applications only) & Removed Article Distribution
 
 The PressFlow dashboard provides an **📣 App Promotion To-Do** list strictly for the software factory's live applications (catalog: `context/promoted_apps.json`). Each app card features recommended subreddits, ready-to-paste Reddit/LinkedIn copy, and a direct web-intent submit link for manual posting.

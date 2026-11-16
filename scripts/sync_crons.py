@@ -219,10 +219,26 @@ def read_live(prefix=PREFIX):
     return out
 
 
+def gate_step(vid, mode):
+    """The first instruction of every run: ask the owner switches before spending a token.
+
+    The switches live in Supabase (`factory_config.generation_control`, toggled from PressFlow) and
+    `scripts/generation_gate.py` exits 3 when this loop is off. The cron job itself only disappears
+    on the next `sync_crons.py`, which runs on the host — so without this step a paused vertical
+    would keep researching and drafting until someone remembered to sync. The gate is what makes
+    the dashboard switch bite on the very next tick.
+    """
+    return (
+        f"STEP 0 — GATE (before any research, fetch or draft): run `python3 scripts/generation_gate.py "
+        f"--mode {mode} --vertical {vid}`. If it exits 3 the owner has switched this loop off — reply "
+        f"with its one-line verdict and STOP: no radar, no brief, no draft, no publish. "
+    )
+
+
 def prompt_for(v):
     vid = v["id"]
     label = v.get("label", vid)
-    return (
+    return gate_step(vid, "news") + (
         f"Run the full editorial pipeline for vertical '{vid}' ({label}) per the "
         f"skills in {WORKDIR}/skills/ (radar_30day -> synthesize_topics --seed -> "
         f"virality_judge -> fact_check -> story_draft -> claude_humanizer). "
@@ -261,7 +277,7 @@ def evergreen_prompt_for(v):
     """
     vid = v["id"]
     label = v.get("label", vid)
-    return (
+    return gate_step(vid, "evergreen") + (
         f"Run the EVERGREEN pipeline for vertical '{vid}' ({label}) per "
         f"{WORKDIR}/skills/evergreen_topics.md (evergreen_topics -> evergreen_gate --brief -> "
         f"fact_check -> story_draft -> claude_humanizer). This is NOT a news sweep: the topic does "
@@ -312,7 +328,7 @@ def review_prompt_for(v):
     """
     vid = v["id"]
     label = v.get("label", vid)
-    return (
+    return gate_step(vid, "review") + (
         f"Run the REVIEW pipeline for vertical '{vid}' ({label}) per "
         f"{WORKDIR}/skills/review_comparison.md (review brief -> review_gate --brief -> fact_check -> "
         f"story_draft -> claude_humanizer). This is neither the news sweep nor the evergreen track: "

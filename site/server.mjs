@@ -949,6 +949,138 @@ async function writeQueue(tasks) {
   return 'file';
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Generation control — the owner switches
+//
+// Two loops actually generate things on this host: the editorial article fleet (one cron job per
+// vertical per mode) and the software side's Weekly Market Recon. Neither cron store is reachable
+// from this container, so the switch is not "pause the job": it is a shared record in Supabase
+// `factory_config.generation_control` that every run reads as STEP 0 through
+// `scripts/generation_gate.py`. PressFlow writes it here; `scripts/run_software_request.py` (a
+// zero-token 15-minute host cron) turns the Run-now button into a real dispatch of the recon.
+//
+// Failure policy: if Supabase is unreachable the write still lands in the container file, but the
+// response carries a warning — a switch the generators cannot see must never look like it worked.
+// ─────────────────────────────────────────────────────────────────────────────
+const CONTROL_CONFIG_KEY = 'generation_control';
+const LOCAL_CONTROL_FILE = join(ROOT, 'context', 'generation_control.json');
+const SOFTWARE_JOB_LABEL = 'Weekly Market Recon';
+
+function normalizeControl(raw) {
+  const c = raw && typeof raw === 'object' && !Array.isArray(raw) ? raw : {};
+  const disabled = c.disabled_verticals && typeof c.disabled_verticals === 'object' && !Array.isArray(c.disabled_verticals)
+    ? c.disabled_verticals
+    : {};
+  return {
+    articles_enabled: c.articles_enabled !== false,
+    software_enabled: c.software_enabled !== false,
+    disabled_verticals: disabled,
+    updated_at: c.updated_at || null,
+    updated_by: c.updated_by || null,
+    software_run_requested_at: c.software_run_requested_at || null,
+    software_run_handled_at: c.software_run_handled_at || null,
+    software_run_note: c.software_run_note || null,
+  };
+}
+
+async function readGenerationControl() {
+  const { isConfigured } = getSupabaseConfig();
+  let warning = null;
+  if (isConfigured) {
+    try {
+      const rows = await supabaseFetch(`factory_config?key=eq.${CONTROL_CONFIG_KEY}&select=id,value`);
+      if (Array.isArray(rows) && rows.length) {
+        return { storage: 'supabase', control: normalizeControl(JSON.parse(rows[0].value || '{}')) };
+      }
+      warning = 'no generation_control row yet — showing the file copy until the first save';
+    } catch (err) {
+      warning = `supabase read failed (${err.message}) — showing the file copy`;
+    }
+  }
+  try {
+    const parsed = JSON.parse(await readFile(LOCAL_CONTROL_FILE, 'utf8'));
+    return { storage: 'file', control: normalizeControl(parsed), warning };
+  } catch (err) {
+    if (!warning) warning = `control record unreadable (${err.message}); treating both loops as ON`;
+    return { storage: 'default', control: normalizeControl({}), warning };
+  }
+}
+
+async function writeGenerationControl(patch, by = 'pressflow') {
+  const { control: current } = await readGenerationControl();
+  const next = normalizeControl({ ...current, ...patch, updated_at: nowIso(), updated_by: by });
+  let storage = 'file';
+  let warning = null;
+  const { isConfigured } = getSupabaseConfig();
+  if (isConfigured) {
+    try {
+      const existing = await supabaseFetch(`factory_config?key=eq.${CONTROL_CONFIG_KEY}&select=id`);
+      const value = JSON.stringify(next);
+      if (Array.isArray(existing) && existing.length) {
+        await supabaseFetch(`factory_config?id=eq.${existing[0].id}`, {
+          method: 'PATCH',
+          body: JSON.stringify({ value, updated_at: nowIso() }),
+        });
+      } else {
+        await supabaseFetch('factory_config', {
+          method: 'POST',
+          body: JSON.stringify({ key: CONTROL_CONFIG_KEY, value }),
+        });
+      }
+      storage = 'supabase';
+    } catch (err) {
+      warning = `supabase write failed (${err.message}) — saved to this container only; the generators will not see it`;
+    }
+  } else {
+    warning = 'supabase is not configured in this deploy — the switch was saved to this container only and will not reach the generators';
+  }
+  try {
+    await writeFile(LOCAL_CONTROL_FILE, `${JSON.stringify(next, null, 2)}\n`, 'utf8');
+  } catch (err) {
+    warning = warning || `local file write failed (${err.message})`;
+  }
+  return { control: next, storage, warning };
+}
+
+async function generationFleetSummary(control) {
+  const verticals = await getLocalVerticals();
+  const disabled = control.disabled_verticals || {};
+  const modes = { news: 0, evergreen: 0, review: 0 };
+  let active = 0;
+  for (const v of verticals) {
+    if (Object.prototype.hasOwnProperty.call(disabled, v.id)) continue;
+    active += 1;
+    if (v.cadence && v.news_enabled !== false) modes.news += 1;
+    if (v.evergreen_cadence && v.evergreen_enabled !== false) modes.evergreen += 1;
+    if (v.review_cadence && v.review_enabled !== false) modes.review += 1;
+  }
+  let software = { label: SOFTWARE_JOB_LABEL, schedule: null, cron: null };
+  try {
+    const queue = JSON.parse(await readFile(join(ROOT, 'context', 'app_harvest_queue.json'), 'utf8'));
+    const label = queue.slot_label || '';
+    software = {
+      label: SOFTWARE_JOB_LABEL,
+      schedule: label || null,
+      // The slot label already carries the job name ("Weekly Market Recon — Monday 14:30 UTC");
+      // the sub line prints the job name itself, so strip the repeat.
+      schedule_short: label.includes('—')
+        ? label.split('—').slice(1).join('—').trim()
+        : (label || null),
+      cron: queue.slot_cron || null,
+    };
+  } catch { /* the label alone is enough; the schedule line is decoration */ }
+  return {
+    articles: {
+      verticals_total: verticals.length,
+      verticals_active: active,
+      verticals_paused: Object.keys(disabled).length,
+      modes,
+      jobs: modes.news + modes.evergreen + modes.review,
+    },
+    software,
+  };
+}
+
 async function seedQueueFromApps({ refresh = false } = {}) {
   const { tasks: existing } = await readQueue();
   const byId = new Map(existing.map((t) => [t.id, t]));
@@ -1601,6 +1733,84 @@ const server = createServer(async (req, res) => {
           return sendJson(res, 200, { status: 'ok', deleted: subpath });
         }
       }
+    }
+
+    // ----------------------------------------------------
+    // API: Generation control (owner switches)
+    // ----------------------------------------------------
+    if (url.pathname === '/api/generation-control' && req.method === 'GET') {
+      const { storage, control, warning } = await readGenerationControl();
+      const summary = await generationFleetSummary(control);
+      return sendJson(res, 200, {
+        status: 'ok',
+        storage,
+        supabase_configured: getSupabaseConfig().isConfigured,
+        warning: warning || null,
+        control,
+        summary,
+      });
+    }
+
+    if (url.pathname === '/api/generation-control' && req.method === 'POST') {
+      let body = {};
+      try { body = await parseJsonBody(req); } catch (e) { body = {}; }
+      const patch = {};
+      if (body.articles_enabled !== undefined) patch.articles_enabled = Boolean(body.articles_enabled);
+      if (body.software_enabled !== undefined) patch.software_enabled = Boolean(body.software_enabled);
+
+      const verticalId = String(body.vertical_id || '').trim();
+      if (verticalId) {
+        const { control: current } = await readGenerationControl();
+        const disabled = { ...(current.disabled_verticals || {}) };
+        if (body.vertical_enabled === false) {
+          disabled[verticalId] = { at: nowIso(), by: String(body.by || 'pressflow') };
+        } else {
+          delete disabled[verticalId];
+        }
+        patch.disabled_verticals = disabled;
+      }
+
+      if (!Object.keys(patch).length) {
+        return sendJson(res, 400, {
+          error: 'Nothing to change: send articles_enabled, software_enabled, or vertical_id + vertical_enabled.',
+        });
+      }
+
+      const result = await writeGenerationControl(patch, String(body.by || 'pressflow'));
+      const summary = await generationFleetSummary(result.control);
+      return sendJson(res, 200, {
+        status: 'ok',
+        storage: result.storage,
+        warning: result.warning || null,
+        control: result.control,
+        summary,
+      });
+    }
+
+    // The Run-now button cannot touch this host's cron store. It records a request; the zero-token
+    // `PressFlow Software Run Watcher` cron on the host dispatches the recon within 15 minutes and
+    // stamps software_run_handled_at (scripts/run_software_request.py).
+    if (url.pathname === '/api/generation-control/software-run' && req.method === 'POST') {
+      const { control: current } = await readGenerationControl();
+      if (current.software_enabled === false) {
+        return sendJson(res, 409, {
+          error: 'Software generation is switched off — turn the switch on before requesting a run.',
+        });
+      }
+      const requestedAt = nowIso();
+      const result = await writeGenerationControl({
+        software_run_requested_at: requestedAt,
+        software_run_note: 'requested from PressFlow; the host watcher dispatches the recon within 15 minutes',
+      }, 'pressflow');
+      const summary = await generationFleetSummary(result.control);
+      return sendJson(res, 200, {
+        status: 'queued',
+        requested_at: requestedAt,
+        storage: result.storage,
+        warning: result.warning || null,
+        control: result.control,
+        summary,
+      });
     }
 
     // ----------------------------------------------------

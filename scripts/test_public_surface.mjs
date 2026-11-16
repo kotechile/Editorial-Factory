@@ -104,6 +104,8 @@ try {
     '/api/distribution/tasks': 'a removed admin route',
     '/api/approvals': 'the owner decision queue',
     '/api/calendar': 'the forward calendar',
+    '/api/generation-control': 'the generation switches',
+    '/api/generation-control/software-run': 'the software run-now action',
   };
   for (const [path, what] of Object.entries(anon)) {
     const res = await probe(base, path);

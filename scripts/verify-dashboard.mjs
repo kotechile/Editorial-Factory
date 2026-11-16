@@ -70,6 +70,21 @@ try {
   const verticalsApi = (await page.request.get(`${BASE}/api/verticals`)).status();
   check(verticalsApi === 200, 'verticals API responds 200', `HTTP ${verticalsApi}`);
 
+  // The owner switches. Two independent controls, a real switch widget (role=switch, aria-checked)
+  // for each, and the per-vertical pause on every card. Asserted as a surface, not by clicking: a
+  // click here would flip live generation state on the deployment under test.
+  check(await page.getByRole('switch', { name: /Article generation/i }).count() === 1, 'article generation switch present');
+  check(await page.getByRole('switch', { name: /Software generation/i }).count() === 1, 'software generation switch present');
+  check(await page.locator('#genArticlesToggle[aria-checked]').count() === 1, 'article switch exposes its state');
+  check(await page.locator('#genSoftwareToggle[aria-checked]').count() === 1, 'software switch exposes its state');
+  check(await page.locator('#genArticlesState').innerText().then((t) => /ON|OFF/.test(t)), 'article switch shows ON/OFF');
+  check(await page.getByRole('button', { name: /Run now/i }).count() === 1, 'software run-now button present');
+  check(await page.locator('#verticalsGrid button[title*="article generation for this vertical"]').count() === verticalCards,
+    'every vertical card carries its own pause/resume');
+  const control = await (await page.request.get(`${BASE}/api/generation-control`)).json();
+  check(control.status === 'ok' && typeof control.control.articles_enabled === 'boolean',
+    'generation-control API reports both switches', `storage=${control.storage}`);
+
   // App Promotion to-do queue is present for software factory apps only.
   check(await page.locator('[data-tab="tab-distribution"]').count() === 1, 'App Promotion to-do tab present');
   const distApi = (await page.request.get(`${BASE}/api/distribution/tasks`)).status();

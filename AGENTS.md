@@ -134,6 +134,15 @@ gates, and every non-deterministic step is gated on retrievable evidence.
     (`review_cadence` / `review_enabled`), reconciled by the same `scripts/sync_crons.py` run, and
     the peak/slot gates read this cadence key like the other two.
 
+15. **The owner's generation switches are read at STEP 0 of every run, not enforced by cron
+    deletion.** PressFlow (a container with no access to this host's cron store) writes
+    `factory_config.generation_control`; `scripts/generation_gate.py` reads it as the first
+    instruction in every news/evergreen/review prompt and in the `Weekly Market Recon` prompt. Off
+    means the run stops before any research, draft or spend, on the very next tick. If you add a
+    pipeline or a generation cron, add its gate step in `scripts/sync_crons.py` (or the job prompt
+    for host-side factory jobs) or the switch will silently not cover it. Never make the gate fail
+    closed on a Supabase/network error — that would stop the whole fleet on a blip.
+
 ## Runtime model note
 The fleet's non-frontier roles run on the configured provider (currently `deepseek-v4-pro`).
 The **Claude Stylist & Critic** role (`.agents/claude_stylist.md`) is the frontier pass. Since
