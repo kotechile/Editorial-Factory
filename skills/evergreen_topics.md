@@ -50,17 +50,48 @@ single word of prose is drafted:
 - **An `as of` date** for any time-bound figure (a price, a rate, a cap, a standard). An undated
   figure is a news fact wearing an evergreen label, and it will be wrong within a year.
 
-**The de-dup check is per-vertical; the corpus is not (learned 2026-10-19).** `check_dedup` reads this
-vertical's briefs and published articles only, so a topic already published under a *different* vertical
-passes the gate cleanly and ships as a duplicate. Observed: a prompt-caching candidate (mechanics, prices,
-break-even rule) scored 9.0 and cleared every floor on paper while
-`published/2026-10-08_cache-boundary-decides-input-bill.md` (enterprise_ai_finops) already owned that
-thesis in the same corpus — the gate could not see it because the artifact carried another vertical's
-name. Before writing the brief, grep the whole corpus for the candidate's subject tokens
-(`grep -ril "prefix cach\|cache breakpoint" published/ context/recon_proposals/`) and read the nearest
-hit's `one_big_thing:`; a candidate whose mechanism is already argued anywhere in `published/` is refused
-by hand, and the brief's `De-dup:` line should name that cross-vertical artifact as checked-and-dropped
-so the audit shows the check happened.
+**Probe the host before you probe the page.** The gate's fetcher sends a fixed, non-browser
+user-agent (`EditorialFactorySourceVerifier/1.0`), and it cannot see a host that answers 403/404 or
+renders its prices in JavaScript — a `bls.gov` wage table or a client-rendered rate card fails the
+floor no matter how good the figure is. Run the pre-flight on any host you have not already proved
+on this beat:
+
+```bash
+python3 scripts/host_probe.py --check <url>
+```
+
+Then confirm the *figure*, not just the status — a `fetched` row can still be `figure_absent`
+(HTTP 200 with a navigation shell or an error stub):
+
+```bash
+python3 -c "import sys; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; \
+print(c.figure_evidence('<figure>', c.fetch_source('<url>')['text']))"
+```
+
+When a host will not fetch, move the beat to a mirror that does (Cornell LII or `ecfr.gov` for
+statutes, `onetonline.org` for wages where `bls.gov` 403s, `govinfo.gov` for U.S. Code text), or
+drop the candidate. Fetchability is not novelty: the same probe list is reusable across runs, so
+having anchors that fetch does not make the topic new.
+
+**Lead every row with the figure the page prints, once.** `figure_evidence` returns the window
+around the *first* numeric token in the cell, so a cell that opens on prose, on a word number
+outside the small word set, or on a digit that also appears in a banner, a sidebar or a phone
+number verifies on the wrong sentence — and the gate still PASSes, so the marker's audit trail
+reads as a coincidence. Open the cell with the distinctive figure, keep the headline figure inside
+that same sentence, and eye-check the printed excerpt. Row-crafting edge cases (comma-grouping,
+mixed ladders, tier rows on a rate card, §-number collisions) are in the casebook.
+
+**The de-dup check is per-vertical; the corpus is not.** `check_dedup` reads this vertical's briefs
+and published articles only, so a thesis already published under a *different* vertical passes
+cleanly and ships as a duplicate. Before writing a brief, grep the whole corpus for the candidate's
+mechanism (`grep -ril "<subject token>" published/ context/recon_proposals/`), read the nearest
+hit's `one_big_thing:`, and name that cross-vertical artifact in the `De-dup:` line as
+checked-and-dropped. A candidate whose mechanism is already argued anywhere in `published/` is
+refused by hand; so is a topic you merely want to write.
+
+**Read the casebook when a host or a row surprises you.** `skills/references/evergreen_casebook.md`
+carries the 63 per-beat host probes (which hosts fetch first try, which 403, which carry a
+figure but poison the matcher), the matcher's edge cases, and the post-publish incident stories.
 
 Beyond the floor, judge the topic yourself on the four axes and write the score into the brief:
 
@@ -82,79 +113,6 @@ nothing durable to say this week says nothing.
 - a re-argued version of a published article (see the de-dup rule);
 - anything whose honesty depends on a figure you could not fetch.
 
-**Run it on hosts you have already proved fetch — and refuse your own good idea twice (learned 2026-11-10).**
-The `enterprise_tech_leadership` run opened with a stack-lifecycle brief (Kubernetes three minors ≈ one year,
-PostgreSQL five years, .NET three-year LTS, Ubuntu five-year standard) whose four anchors all returned their
-figures on the first probe — and it was dropped before drafting because `published/2026-10-14_your-cluster-hidden-clock`
-(enterprise_build_vs_buy) already argues that exact mechanism, with `2026-10-28_your-runtime-has-six-months` beside it.
-`check_dedup` reads one vertical, so that brief would have PASSed cleanly. Probe the anchors (they are listed above,
-reusable), then grep the whole corpus for the *mechanism* before writing a row — fetchability is not novelty.
-
-**`scripts/humanize_path.py` is not Loop 3 any more (learned 2026-11-10).** It rewrites and then appends a
-self-graded `## Gate report` (the class `article_reviewer.py` was built to replace). The desk's reviewer is
-`python3 scripts/article_reviewer.py --draft <draft>`, which audits the rewrite against the draft's figure
-ledger, strips the gate report, and writes `_final.md` only on acceptance; a held run leaves `_held.md` and a
-report in `context/drafts/reviews/`. Run the reviewer, and treat a `humanize_path` final as a draft.
-
-**The accepted rewrite can move a section marker and no gate will notice (learned 2026-11-10).** On
-`your-15-day-entry-gap` the reviewer's accepted attempt kept every figure, both H2s and the earned inline
-link, and still hoisted `<!-- tactical-insight -->` above `## By the numbers`, leaving the tactical section
-itself unmarked — `readability_critic` returned `ok` because it only proves the five markers exist and the
-At-a-glance sits under the lede, not that each marker precedes its own section. Eyeball marker order against
-the body on every accepted rewrite (`grep -n -o '<!-- [a-z-]* -->' <final>` beside `grep -n '^## ' <final>`),
-and move a displaced marker before gating rather than trusting the reviewer.
-
-**The featured-image alt has a 40–140 character ceiling, checked by `illustration_creator.py --check`
-(learned 2026-11-10).** The art director's alt arrives with the headline glued to its front and clipped
-mid-phrase, so it is always rewritten; the first rewrite on this run was 161 characters and the artifact
-check refused it *after* the media had already been patched. Write the sentence, measure it, then patch the
-four surfaces once (`featured.json` sidecar + artifact `image_alt` + media over REST + the Supabase row's
-`metadata.illustration.alt_text` / `metadata.wordpress.media_alt`), and re-run `--check`.
-
-**Three gates read the artifact's shape, not its facts, and all three hold the push (learned 2026-11-10).**
-`check_social_voice.mjs` gates **drafts as well as published copies** (so "you have to…" or a sentence-initial
-"Start with…" in the draft reds `verify.sh`); `article_shape.py` allows a figure in at most two body sections and
-requires one **inline** site-relative link in the body; and `check_accessibility.py` fails on any undefined ALL-CAPS
-token — `O*NET` reads as `NET`, so name it "the Labor Department's Occupational Information Network" in prose and
-keep the acronym for `## Sources`. Fix these in the draft, before the reviewer runs; they cost three reviewer
-attempts otherwise.
-
-**After the push: the delivery line's "0 internal link(s)" is a false alarm, and a 404 is build lag (learned
-2026-11-10).** `publish.py` verifies the CMS body by absolute URL, so a body carrying site-relative hrefs reports
-zero; read the REST body instead (`/wp-json/wp/v2/posts/<id>` → `content.rendered`, count `href="/…"`). The reader
-front is a periodic build: the new URL answers 404 for minutes (observed 404 → 404 → 200 over ~10 min) before it
-serves its own `<h1>`, hero and link block — poll before reporting a routing defect.
-
-**A Loop 3 rewrite deletes acronym glosses, so make the expansion structural — and keep the earned inline link off a slug that names a specialist term (learned 2026-11-11).** Four consecutive `article_reviewer.py` attempts were held on `AWQ, GPTQ, GSM8K, KV, MMLU` undefined while the *draft* passed every gate: the rewrite paraphrases a parenthetical gloss away, and the accessibility floor is re-run on the candidate. Fix it in the draft, because a paraphrase cannot delete an expansion that precedes its acronym — `activation-aware weight quantization (AWQ)`, `GSM8K (a grade-school maths word-problem set)`, `MMLU (a general knowledge test)` — and never leave the acronym bare in a bullet lead-in. The same run's body link `/kv-cache-is-the-concurrency-ceiling/` reddened the specialist-term table on the slug alone (`\bKV[-\s]cache\b`), demanding a gloss for a word the body never uses; pick a live sibling whose slug carries no gated term (`/prefill-decode-two-pool-gap/`) and probe it with `curl -o /dev/null -w '%{http_code}'` before drafting.
-
-**The headline's verb decides the hook score, and the lead has to earn it literally (learned 2026-11-11).** `headline_score` scored "Batch 32 Narrows Your 4-Bit Win", "…Erases…", "…Caps…" and "…Dethrones…" all 84 OK — "states a fact but gives the reader no reason to open it" — while "Batch 32 Kills Your 4-Bit Win" scored 100 STRONG. Choosing the loss-aversion verb is only half of it: the first paragraph then has to make the word true on the article's own numbers (there, the 4-bit build loses at batch 32 to the eight-bit one, 3,241 tokens a second against 3,586), or the honesty rule and the pre-publish re-cut both bite.
-
-**`publish.py`'s art director can refuse 3/3 and leave a live post with no header — re-commission, re-attach, and read the alt before you trust it (learned 2026-11-11).** The push went through with `featured image FAILED` and the post live and hero-less: `illustration_creator.py <published artifact> --apply` produced the header afterwards, `wp_draft.py --slug <slug> --reimage` uploaded and attached the media, and only then did the front serve `og:image`. Two traps on that path: the director's alt arrives with the headline glued to its front and clipped mid-phrase, so rewrite it to one 40–140-character sentence and patch the sidecar, `image_alt`, the media and the row's `metadata.illustration.alt_text` / `metadata.wordpress.media_alt`; and `--reimage` prints "featured_media NOT yet switched" while the REST read-back already shows the attachment, so verify by reading the post rather than the message. A reader front built before the media attach keeps the default share image even after the attach — `giniloh_coolify_redeploy_all()` through `wp-load.php` in the giniloh WordPress container forces the rebuild, and the new `og:image` is the check that it landed.
-
-**A re-image that lands on a `-N` filename kills the live hero, and the overlay hook can arrive clipped (learned 2026-11-11).** Two defects from one persistence pass on `your-rings-hidden-83-gap`. (1) `wp_draft.py --slug X --reimage` uploads the replacement as `X-featured-1.jpg` and deletes the previous attachment, but the static front has already built against `X-featured.jpg` — so the page goes on serving four references (hero `src`/`srcset` and `og:image`) to files that no longer exist and the header is a 404 on a live page. Neither the script summary nor the CMS read-back shows it: `featured_media` is correct and the media's own `source_url` resolves. Check the *rendered front* image URLs with `curl`, and fix by deleting the newest attachment over REST (`DELETE media/<id>?force=true`) and re-uploading so WordPress takes the free base filename again — that restores every URL without waiting on a rebuild. (2) `illustration_overlay.py`'s director can return a hook clipped mid-clause ("…raising contents limits never fixes"), and `clean()` only guards the title, so the live cover carries a broken sentence. The overlay copy is stable once the sidecar holds it: set `overlay.kicker/title/hook` in `featured.json`, re-run the script (it reuses the sidecar and re-composites from `<stem>.base.jpg`), and read the pixels with vision before uploading.
-
-**`article_reviewer.py`'s cue check rejects "My reading" (learned 2026-11-11).** `OBSERVER_CUES`'s labelled-opinion pattern is `\bmy read\b`, so a rewrite that closes with "My reading is that…" reads as *no cue at all* and all three attempts are HELD on a `hard=1` voice failure while the section plainly carries an observation. Write the cue as "My read is…", "I find it telling that…" or "The part I keep circling is…" in the draft, and when a hold lands on that message alone, keep the best attempt and repair the sentence by hand rather than burning attempts — the reviewer will not converge on wording it cannot match.
-
-**The matcher looks at the first numeric token in a cell, so a comma-grouped cap needs a rarer lead (learned 2026-11-11).** On the contents-sublimit brief, a row written `1,500 — a special limit of $1,500 on jewelry…` evidenced on the *securities* sentence (the page states `$1,500` twice) while `18,310 — at the 2022 federal poverty level…`, `2,500 — the special limit for firearms…` and `200 — only $200 of coverage…` each landed on their own sentence. Lead a row on the figure the page states once and carry the headline cap inside that same sentence, and eye-check the printed excerpt rather than trusting the PASS.
-
-**Hosts probed live 2026-11-11, building a contents-limit / special-limit brief.** Carries the figure as plain text and fetches first try: `trerc.tamu.edu` (the Texas Real Estate Research Center's analysis of the ISO homeowners form — the special limits as prose: "Jewelry and Firearms. These two types of personal property have special limits that apply only in the event of theft … There is a special limit of $1,500 on jewelry, watches, furs, and precious and semiprecious stones", $2,500 firearms, $2,500 silverware, "$200 coverage … for currency, coins, stored value cards, and smart cards", and the engagement-ring comparison at the 2022 poverty level of $18,310); `tdi.texas.gov/pubs/consumer/cb025.html` (29 KB, the personal-property percentage mechanic with a 20 percent worked example and "Home policies limit what they'll pay for things like jewelry and art"); `progressive.com/answers/personal-property-coverage` (the 50 percent convention); `insuranceresourcesllc.com/11-homeowners-limitations` (the full special-limits list plus the increased-special-limits endorsement: $1,500→$5,000 jewelry, $200→$500 money); `iii.org/fact-statistic/facts-statistics-homeowners-and-renters-insurance` (2023 severity $20,062 at 5.33 per 100 house-years); `adjustersinternational.com` (qualitative only — "accidental loss is not covered under a standard homeowner's policy", and "the limits may only apply to theft losses"). Unreachable to the verifier on this beat: `iii.org/article/*` (every article path tried), `tdi.texas.gov/pubs/consumer/cb003.html`, `tdi.texas.gov/consumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path (they fetch a ~7.7 KB shell with no figures) — so an ordinance-or-law brief cannot source its 10 percent line from a regulator, which is why that candidate was dropped at 7.9.
-
-**A numbers bullet with no terminal period becomes one sentence to the critic, and three `[n]` tags in it read as a citation crime (learned 2026-11-12).** On the host-quota evergreen the three `By the numbers` bullets ended `…[1]` / `…[2]` / `…[3]` with no full stop, so `readability_critic` joined them and held the draft for "3 citation tags in one sentence". End every bullet with a period; the tabular form the house uses (`- **11% median host CPU:** … [1].`) satisfies both the one-metric rule and the citation rule. Two sibling traps from the same pre-tune: an observer cue has to be a **first-person verb** ("The part that stays with me is…" has none, and the section reads as cue-less — write "I keep coming back to…"), and a 57-word `At a glance` box fails the 50-word cap even when each line is short, because the bold labels count.
-
-**Hosts probed live 2026-11-12, building a long-context price-cliff brief.** Carries the figure as plain text and fetches first try: `cloud.google.com/vertex-ai/generative-ai/pricing` (109 KB — the Gemini 3.1 Pro Preview row as one text line, "Input (text, image, video, audio) Global $3.60 $7.20 $0.36 $0.72 Text output (response and reasoning) Global $21.60 $32.40", plus the footnote "If a query input context is longer than 200K tokens, all tokens (input and output) are charged at long context rates"); `docs.claude.com/en/docs/about-claude/pricing` (30 KB — Haiku 5.5's "$0.10 / MTok for prompts up to 100,000 tokens … $0.50 / MTok for prompts over 100,000 tokens" beside 4.6+'s "A 900k-token request is billed at the same per-token rate as a 9k-token request", and "There is no batch mode" for Managed Agents sessions); `arxiv.org/abs/2404.06654` (RULER's abstract itself carries "only half of them can maintain satisfactory performance at the length of 32K", so an abs page is enough when the claim is the abstract's own). **Matcher traps on this beat:** a `200K`-led cell evidences on "requests that return a 200 response code"; `$3.60` lands on a Gemini 4 Argon promotional row and `$0.36` on a Gemini 4 Carbon row; only the `$0.72` (the *above-the-line* cached rate) lands on the intended row — on a rate card, lead with the second-tier figure, never the headline price that repeats in every model's row. `platform.openai.com/docs/pricing` fetches (18 KB) but renders only the *Short* context column, so it cannot carry a long-context row; `finops.org/framework/capabilities/rate-optimization/` fetches at 24 KB with the commitment-vacancy rule as prose ("commitment discounts are not resources … similar to coupons") and no figure, so it frames a piece and never carries a row.
-
-**The art director refuses 3/3 on a price-mechanism article — pin a constructed treatment (learned 2026-11-12).** Two refusals were the cue (the model quoted a paraphrase, "One token past a schedule's line…", for "…context line…") and one was the prompt asking the render for legible numbers, which a photographic treatment cannot carry. `python3 scripts/illustration_creator.py <artifact> --apply --style component_assembly --model nanobanana` landed on the first attempt: a machined chassis bay with a stop rail, graphite modules below and copper above. Read the pixels anyway — the overlay arrived bottom-right with 38% of the type on artwork and was still legible at 6.04:1, so the warning is a flag, not a verdict.
-
-**A REST update that keeps `status: publish` does not fire the reader front's rebuild — toggle the status (learned 2026-11-12).** `wp-content/mu-plugins/redeploy.php` deploys the fronts from `transition_post_status`, so a `featured_media`, `excerpt` or content PATCH after the publish leaves the static front serving the build from *before* the media attach: the article page answers 200 with its own `<h1>` but carries 0 `wp-content/uploads` references and `og:image` = `default-share-image.png`. The fix is `POST posts/<id> {"status":"draft"}` and, five seconds later, `{"status":"publish"}`; the rebuilt page serves the hero, a `-1024x576` derivative and its own `og:image` within about four minutes. The one-line proof: `curl -s <front-url> | grep -c wp-content/uploads` (0 = stale, 11 = rebuilt).
-
-**Hosts probed live 2026-11-12, building a licence-bond ceiling brief (the `home_ops_execution` evergreen — the re-probe of a candidate dropped 2026-10-22 at 7.6 because "the payout mechanics are board prose").** The mechanics are statute text, and it fetches: `california.public.law/codes/ca_bus_and_prof_code_section_7071.6` (4.3 KB — the flat `$25,000` bond of (a), (b)'s `$7,500` aggregate cap for claims outside § 7071.5(a) with the excess reserved for the homeowner claims, (d)'s "twice the amount" for an unlicensed contractor whose violation caused substantial public injury, and (e)'s "operative on January 1, 2023"), `…_section_7071.5` (the homeowner named first among beneficiaries, bond "in favor of the State of California"), `app.leg.wa.gov/rcw/default.aspx?cite=18.27.040` (12.5 KB — `$30,000` general / `$15,000` specialty in (1), the bond condition covering wages, taxes, suppliers and "breach of contract including improper work", and (3)'s **two years** from substantial completion or abandonment), `oregon.public.law/statutes/ors_701.068` (the penal-sum sentence — surety liability "may not exceed the penal sum of the bond no matter how many years the bond is in force" — plus (5)'s licence suspension and the five-times replacement bond), `ors_701.081` (`$25,000` bond beside a `$500,000` liability-insurance floor), `ors_701.150` (the judgment-or-final-order gate and the **14-month** complaint cutoff), and `azleg.gov/ars/32/01152.htm` (the volume-scaled commercial ladder, the `$5,000`–`$15,000` general-residential band, the `$1,000`–`$7,500` specialty band, and (C)'s `$200,000` additional bond or recovery-fund alternative).
-**Matcher traps on this beat:** Arizona's residential bands cannot carry a row — `$5,000`, `$15,000`, `$7,500` and `$1,000` all first appear in the commercial ladder above them, so the bands ride in prose under the `$200,000` row (which evidences cleanly); a `$25,000`-led cell tokenises to `25`/`000` and lands on "(a)" only because the operative sentence prints the figure twice; and `california.public.law` / `oregon.public.law` answer the **source gate's** user agent 403 while the **evergreen gate's** fetcher reads them, so a statute row verifies at the floor and reads UNVERIFIED-at-the-push by design.
-**A live-body repair must push HTML, not markdown (learned 2026-11-12).** The CMS stores `wp_draft.md_to_html()` output; a REST `content` PATCH of the artifact's markdown renders the whole article as literal paragraphs — `## Sources` and the Related list appear as text, no links, no headings — while a `?context=edit` read-back shows exactly the string that was sent. Use `html = wp_draft.md_to_html(artifact)` for the PATCH, and toggle `status` draft→publish afterwards because a same-status POST does not fire the reader front's `transition_post_status` rebuild.
-
-**Hosts probed live 2026-11-12, building a per-host agent-capacity brief.** Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` (a Microsoft Azure fleet characterization plus four open-source frameworks: host CPU near an 11% median on one traced run rising to nearly 100% at stage boundaries, per-request tool counts reported average-versus-99th-percentile, and the role-pooling / core-harvesting / GPU-harvesting result sentences as one plain-text block); `docs.docker.com/engine/containers/resource_constraints/` (the CFS period default as `100000 microseconds (100 milliseconds)` and the quota as "microseconds per --cpu-period … before being throttled" — a clean row leading on `100000`); `sre.google/sre-book/addressing-cascading-failures/` (the retry-budget example, `60 retries per minute`, an unusually clean row because the figure appears once). `docs.kernel.org/scheduler/sched-bwc.html` fetches and states the consequence a draft wants ("Throttled threads will not be able to run again until the next period when the quota is replenished") but **cannot carry a row**: every phrasing of its default-value sentence leads on `100` or `100ms`, and the page's own utilization-bound discussion prints `p(100)` earlier, so the window lands on that. Carry the kernel sentence in prose under the Docker row and say so in the verified brief.
-
-
-
 ## 4. Output — the evergreen brief
 
 Write `context/recon_proposals/YYYY-MM-DD_<vertical>_evergreen_brief.md` (the name is load-bearing:
@@ -170,6 +128,14 @@ it never collides with the news track's `_signals.md` / `_angle_brief.md`, and
 **Durability:** <why this is still true in 12 months; state what the figures are *as of*>
 **De-dup:** <the nearest prior artifact for this vertical in the last 180 days + why this differs>
 **Thesis:** <the one sentence the article must defend>
+
+The field labels are parsed literally by `scripts/evergreen_gate.py`, and four of them are
+length-checked: `Decision the reader is facing` **≥ 40 characters**, `Durability` **≥ 60**,
+`Thesis` **≥ 30**, `De-dup` **≥ 12** — a thin field is reported as *too thin to be checkable*.
+The evidence table is one row per figure, numbered from `1`, and the gate recognises its header on
+the words `# | Source | URL | Retrieved | Figure | Measured` (it matches the substrings *source*,
+*url*, *retrieved*, *figure*, *measured*, so `Figure/claim it supports` and `Vendor claim or
+measured?` are the same header to it).
 
 **Lead:** <which of §2's evidence sources produced this topic, and the specific material>
 
@@ -195,6 +161,15 @@ Then run the gate:
 python3 scripts/evergreen_gate.py --brief context/recon_proposals/YYYY-MM-DD_<vertical>_evergreen_brief.md
 ```
 
+Daily, the artifact sweep (no network) — the same command `scripts/verify.sh` runs:
+
+```bash
+python3 scripts/evergreen_gate.py --check-artifacts --no-network
+```
+
+That sweep fails the build on a brief with a missing or stale marker, which is the tripwire for a
+row edited by hand after a PASS.
+
 **The verified brief keeps its own filename — a same-day news run usually already owns the plain one (learned 2026-10-19).** Writing the evergreen verification to `YYYY-MM-DD_<vertical>_verified_brief.md` silently overwrites the news track's file for the same vertical and date; `scripts/test_synthesize_topics.py` then fails the build with the news angle brief's `synthesis:` anchors "absent from" the overwritten file, which reads like a broken synthesis rather than a filename collision. Write `YYYY-MM-DD_<vertical>_evergreen_verified_brief.md` (the shape the 2026-10-05 and 2026-10-12 meio runs used), and if the plain file was already clobbered, restore it from git (`git show <commit>:<path> > <path>`) before committing.
 
 It fetches every row, prints the evidence it found for each figure, and writes the
@@ -215,774 +190,13 @@ matches on the word **evergreen** (every `*_evergreen_brief.md` satisfies it) an
 Open the field with the bare slug or date-slug (`` `2026-10-06_<slug>` is this vertical's nearest prior
 evergreen artifact … ``) so the marker proves the check the rule intends.
 
-**A multi-token figure can verify on the wrong number.** `citation_hub_dossier.figure_evidence`
-returns evidence as soon as *any* numeric token in the cell appears in the fetched page, so a range
-written `8% to 15%` will "verify" on a bare `8` the source never tied to the claim (observed: the
-phrase was absent from both cited pages entirely, and a lone `8` elsewhere on the page passed it).
-Lead the cell with the one distinctive figure the source actually states (e.g. `20% to 30%`), and
-eye-check that the *phrase* — not a coincidental single digit — is on the page. A figure that
-verifies this way ships a claim the source never made.
-
 **The `Durability:` field must literally contain "as of" — dating every figure is not enough (learned 2026-10-21).**
 A durability paragraph that names "the 2026 Florida Statutes edition", "the 2025 code edition", a page's own
 "Verified: Oct. 19, 2026" line and "accident year 2023" still reads `FAIL: does not say what the figures are
 true as of` — `evergreen_gate` greps for the phrase, not for dates. Write "§ 627.701 as of the 2026 edition …
 ISO loss data as of accident year 2023", and re-run the gate after the edit (the marker goes stale).
 
-**A mixed ladder is a rewrite trap: only one rung is a percentage (learned 2026-10-21).** Florida's
-"$500, 2 percent, 5 percent, and 10 percent of the policy dwelling limits" came back from Loop 3 as "of $500, 2%,
-5%, or 10% of the home's coverage limit" — four percentages, one of them flat. Read every enumerated ladder in the
-final against the brief's verbatim cell, the same way units are audited.
-
-**The gate fetches with a fixed, non-browser user-agent — check fetchability before you write a row.**
-`citation_hub_dossier.fetch_source` sends
-`Mozilla/5.0 (compatible; EditorialFactorySourceVerifier/1.0)`, and several hosts answer it with
-HTTP 403 even though the page is public in a browser. Observed: the entire Bureau of Labor
-Statistics site (`bls.gov` — OEWS/CES/JOLTS/ECEC), which is otherwise the best measured anchor for
-wage, turnover and benefit figures, returns 403 to the verifier and therefore cannot carry a gate
-row. Probe a candidate URL through the same fetch the gate uses before committing to it:
-
-```bash
-python3 -c "import sys; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; \
-print(c.fetch_source('<url>')['status'])"
-```
-
-A `verified` row needs `status == 'fetched'`; a 403/404/PDF row fails the floor no matter how good
-the figure is, so build the topic around sources that actually retrieve.
-
-**arXiv `abs` pages carry no numbers — cite the `/html/<id>vN` full text for any mined figure (learned 2026-10-13).**
-The abstract page fetches fine and its prose supports a qualitative row, but the numeric figure a row leads with
-is usually absent from it: the `abs` page for "Quantifying Variance in Evaluation Benchmarks" rendered zero `%`
-tokens, while the same paper's `/html/2406.10229v1` carries the tables. `https://arxiv.org/html/<id>vN` retrieves
-with the figure as text (45–110 KB bodies observed; an ICML position paper's "92.5% coverage at N=100", its
-"N = 20 questions" figure and an "at least 1,000 questions" recommendation were all present there and absent from
-the corresponding `abs` pages), so build every numeric row on the HTML full text and keep the `abs` URL only when
-the row cites a claim the abstract itself states. Same run: `nvlpubs.nist.gov` PDFs come back `unsupported` (no
-PDF extractor in the fetch path), but NIST's own HTML news/publication pages for a report fetch at ~12 KB carrying
-that report's findings, its benchmark names, its model count and the document number — a standards row the PDF
-cannot carry.
-
-**A `fetched` row can also be an error page wearing HTTP 200 — check the body, not just the status.**
-EIA's `epm_table_grapher.php` URLs (Electric Power Monthly figure tables) intermittently answer 200 with
-a ~260-character stub reading *"Sorry! Unexpected Error … routed to the appropriate person"* and no
-numbers at all, so the same row passes on one fetch and reads `figure_absent` on the next (observed
-2026-10-09: the July 2026 industrial price row verified on a manual probe, then failed inside the gate
-run). Prefer a stable EIA prose page for the same figure — `eia.gov/energyexplained/electricity/…`
-carries the annual average price by customer class in plain text and retrieves every time — and treat any
-`fetched` body under ~400 characters as unreachable until you eyeball it.
-
-**`flsenate.gov` statute pages belong to the same retryable class — re-run the gate before editing a row
-(learned 2026-10-28).** On the public-adjuster fee brief, three of four rows citing Fla. Stat. § 626.854
-returned `figure_absent` in the first gate run (`20 percent`, `10 days`, `60 days`), while the identical
-cells verified through `c.figure_evidence(...)` seconds later and every one of those phrases is plainly in
-the 25 KB body the fetch returns. A second run of the same command PASSed with all seven rows verified.
-So a first-run absence on a state-legislature host is a retry, not a verdict on the evidence, and the cheap
-check is to probe the cell directly (`python3 -c "import sys;sys.path.insert(0,'scripts');import
-citation_hub_dossier as c;print(c.figure_evidence('<cell>', c.fetch_source('<url>')['text']))"`) before
-touching a row that is already right.
-
-**Do not count a reader page's images through the verifier's plain-text extraction (learned 2026-10-28).**
-`citation_hub_dossier.fetch_source` returns tag-stripped text, so `wp-content/uploads` appears **zero**
-times on a page that serves its header perfectly — the `<img src>` lives in an attribute the extractor
-removes. `curl` the page and grep the raw HTML for `<slug>-featured` and the `og:image` tag (and probe the
-exact `-1024x576` derivative URL the page requests) before reporting an image-delivery defect; a
-zero-uploads reading from the verifier proves nothing about the front.
-
-**Hosts probed live 2026-10-10, building a wage-and-price audit from retrievable rows.** Works, with the
-figure as plain text: `onetonline.org` (median wage by occupation, hourly **and** annual — the measured
-wage anchor that `bls.gov`'s 403 refuses), `eia.gov` energy-explained, `synology.com` product spec pages
-(power draw in watts), and the vendor list-price pages `fastmail.com/pricing`,
-`workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047`
-and `tailscale.com/pricing` — the reliable way to cite "what the managed alternative costs" without
-leaning on a secondary writeup. Fails: `raspberrypi.com` documentation (403), `reddit.com` wikis
-(403 Blocked), `nvd.nist.gov` and `cve.org` dashboards (client-rendered, 10–42 character bodies), and
-`analytics.home-assistant.io` (HTTP 200 but ~700 characters — its install-count stub is the whole page).
-A price page is a legitimate row for a price claim as long as its table cell reads `vendor claim`, and a
-per-unit figure written `$4.00 per month` verifies on the row's own `$ 4.00` token.
-
-**`eur-lex.europa.eu` fetches but cannot carry a quoted row (observed 2026-10-12).** A full Official
-Journal regulation page (`https://eur-lex.europa.eu/eli/reg/…/oj/eng`) retrieves at HTTP 200 with a
-~300 KB body, yet the article's own text is not in the fetched document: a brief row quoting the Data
-Act's switching-charge wording (`switching charges`, `12 January 2027` in the operative sentence) read
-`figure_absent` twice in a row while the page's navigation and the date table did match. Cite the
-regulation through a page whose prose the fetcher can actually read (a national regulator's summary, a
-commission implementation page, or the consolidated-version text page), or drop the row — do not
-assume the OJ link is self-evidencing because the regulation is public. The same run re-confirmed the
-EIA `electricity/monthly/update/end-use.php` flakiness below: one `--check-artifacts` pass read a row
-`figure_absent` (18.31 cents/kWh) and a re-probe minutes later found the figure on the same page, so
-treat an EIA row that fails once as retryable-before-replaceable.
-
-**A row on `artificialintelligenceact.eu` can verify on a navigation digit — eye-check the phrase, not the gate's excerpt (observed 2026-10-12).** The site lists every article number in its sidebar above the body, and `figure_evidence` matches a single numeric token anywhere on the page: a row citing "15 days" from Article 73 "verified" against `Arts. 8–15` in the nav, and a row citing "72 hours" from GDPR Article 33 against `Art. 72 Procedure`, so the marker's evidence excerpt reads as navigation while the real quote sits further down. The rows are honest — the phrases are in the body — but the audit trail is not self-evidencing, so confirm each phrase inside its own sentence before drafting and write the check into the verified companion (`python3 -c "import sys,re; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; t=c.fetch_source('<url>')['text']; print(re.search(r'.{0,160}15 days.{0,160}', t).group(0))"`). Prefer a lead figure the page states once — a full date ("2 December 2027") or a rare phrase is safer than a two-digit number the nav already contains.
-
-**An eCFR page's own banner header poisons a row that leads on a small integer (learned 2026-10-17).** The
-eCFR prints `Displaying title 19, up to date as of 10/15/2026` above the regulations, so a cell beginning
-`10 days — …` matches the **banner date's** `10` and reports that boilerplate as the row's evidence, the same
-class as a nav-digit match. Write such a cell digit-free and let the word-number pattern do the work
-(`ten days — an oral prior disclosure must be confirmed within ten days` matches the sentence and nothing in
-the banner), lead on a rare token whose window is the operative sentence (`$100,000` for a review threshold),
-and remember that `thirty`/`forty`-class words are not in `_WORD_NUMBERS` while `ten` is — a digit-free
-`thirty days` cell generates no pattern at all and dies as `figure_absent`. `cbp.gov` stayed unreachable to
-the verifier again, so an agency figure it publishes is citable through the Federal Register full-text
-endpoint (`https://www.federalregister.gov/documents/full_text/text/YYYY/MM/DD/<doc>.txt`) instead.
-
-**A `fetched` row can still fail as `figure_absent` — the page loaded and the number did not.**
-Several vendor rate-card hosts render their tables client-side, so the verifier gets HTTP 200 with a
-body that carries no numeric tokens at all. Observed 2026-10-08 building the supply_chain evergreen
-brief: `fedex.com`, `odfl.com`, `xpo.com`, `tforcefreight.com`, `saia.com` and `ups.com` fuel-surcharge
-pages either 404 or return a `fetched` page whose text is navigation only, so a row on a carrier's own
-published surcharge table fails the floor even though the table is visible in a browser.
-`fred.stlouisfed.org` is unreachable to the verifier outright. The source types that reliably return the
-figure as text are government statistics pages (`eia.gov` works where `bls.gov` 403s), arXiv/doc sites,
-and industry explainers — so check the figure, not just `status`, before committing a row:
-`python3 -c "import sys; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; \
-print(c.figure_evidence('<figure>', c.fetch_source('<url>')['text']))"`.
-
-**Hosts probed live 2026-10-13, building a panel-ampacity / load-management brief out of a residential-electrification decision.** Carries the figure as plain text and fetches first try: `greenhomeinstitute.org` (a transcribed webinar article — the 80 % load-calculation threshold, the ~$8K-$10K installed smart-panel price against a $780 load-manager MSRP, full electrification "on services as small as 150 amps"), `afdc.energy.gov` (the DOE Alternative Fuels Data Center charger page — "7.2 kW", the dedicated 40-Amp circuit, National Electric Code Article 625), `emporiaenergy.com` (product page: 24,000 samples per second, +/-2 % accuracy, the $99.99/$149.99/$199.99 bundle prices; its blog: a worked "80 amps of your 100-amp service" example), `span.io` (48A / 11.5 kW dynamic against the "24-40A (5.7-9.6 kW)" a worst-case fixed install is limited to). Fails or cannot carry a row: `cltc.ucdavis.edu` (403 to the verifier on its project pages, and the service-upgrade-avoidance field study itself is a PDF — the best *measured* anchor for this beat is unreachable to the gate), `eaton.com` (unreachable), `ecmag.com` (403), `up.codes` (HTTP 500), `blog.se.com` (fetches at ~5.8 KB but the body carried no numeric tokens at all, so no row can lead on it), and guessed `energy.gov/energysaver/<slug>` URLs (404 — the NREL/LBNL/ACES panel-capacity material is PDF-only and therefore `unsupported`). A brief on this beat can be built from fetchable HTML primaries, but it cannot cite a code article number beyond the one the DOE page states; write the code pathway in prose ("systems inspectors accept when properly listed") rather than inventing a citation.
-
-**Hosts probed live 2026-10-14, building a warehouse-wage-and-floor brief.** Carries the figure as plain text and fetches first try: `onetonline.org` (median wage by occupation, hourly *and* annual, from the 2025 vintage — the measured anchor `bls.gov`'s 403 refuses, and it works for any SOC code: 53-7051.00, 53-7062.00, 53-7065.00 and 53-7064.00 all retrieved at 24–30 KB with "Median wages (2025) $19.35 hourly, $40,240 annual" as text, plus each page's own occupation description and sample of reported job titles, which is the licence to gloss the occupation in prose); `oregon.gov/boli/workers/pages/minimum-wage.aspx` (a state floor published as a dated forward window — the three tiers for July 1, 2026 through June 30, 2027, the annual July 1 inflation rule, and the federal $7.25 floor in the same body); `dol.ny.gov/minimum-wage-0` (rates for a *future* date — $17.00 / $16.00 from 01/01/2027 — with the statutory off-ramp that blocked the 2027 increase explained on the page, a state's floor path being the one wage input published in advance); `mmh.com` survey articles (the operator survey's own figures as text: the turnover distribution 55% at ≤15% and 29% at 16–30%, "during peak periods, 30% or more of the workforce is temporary", and the median projected capex and technology budget). Fails or cannot carry a row: `irs.gov` and `ssa.gov` (both unreachable to the verifier, so no §179 expensing, bonus-depreciation or payroll-tax row can ride on the statute — an aggregator that does fetch is not the code); `lni.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc.texas.gov` (unreachable, so a low-floor state cannot be cited from its own agency); `supplychaindive.com` article URLs and `dcvelocity.com` (unreachable); and the equipment vendors `crown.com`, `enersys.com` and `fluxpower.com` fetched with **no numeric tokens at all** while `mobile-industrial-robots.com` carried only a runtime — so a robot-hour energy claim cannot be evidenced from a vendor spec page and the industrial tariff alone prices the input, not the usage.
-
-**Hosts probed live 2026-10-15, building a cargo-claim-evidence brief (what a freight claim must be in writing, and which dates decide if the money is recoverable).** Carries the figure as plain text and fetches first try: `ecfr.gov` title-49 parts (Part 370 truck/forwarder claim procedure and Part 1005 its railroad twin — § 370.3(b)–(c) the three parts of a claim and the explicit rule that a shortage or damage notation on a delivery receipt is not one, § 370.5(a)/§ 1005.3 the 30-day acknowledgment, § 370.9(a)/§ 1005.5 the 120-day disposition with status letters every 60 days, and the amendment note "as amended at 91 FR 7859, Feb. 19, 2026" — a housekeeping change that dates the rule's currency); `govinfo.gov` U.S. Code HTML pages (`USCODE-<year>-title49/html/…-sec14706.htm` and `…-sec11706.htm` both retrieve at 6–10 KB with the statutory floors as text: "a period of less than 9 months for filing a claim … and … less than 2 years for bringing a civil action"); and `law.cornell.edu/uscode/text/46/30701` (23 KB with the Carriage of Goods by Sea Act's own limits — the carrier and ship discharged unless suit within one year, and the three-day written notice for a non-apparent loss, plus the sentence saying that missing the notice does not affect the right to sue inside the year). Fails or cannot carry a row: `federalregister.gov` **API** (`/api/v1/documents.json…`) fetches and is the cheapest way to locate a rule's citation, effective date and document number, but the guardrail is on the host: `cbp.gov` (ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable to the verifier, `uscode.house.gov/view.xhtml` renders a 1.1 KB stub with no figures, `govinfo.gov`'s title-46 path for § 30701 returns a 1.9 KB stub (the Cornell copy is the one that works), and `ups.com`'s dimensional-weight page returns 189 characters — so a claims brief rides on the CFR, the U.S. Code and Cornell LII rather than on any carrier page. **Two adjacent evergreen topics are now taken, and a third anchor is parked:** `published/2026-10-06_demurrage-invoice-30-day-clocks` owns 46 CFR Part 541 (the ocean billing clocks on a fee the shipper OWES) and this run's `published/2026-10-15_freight-claim-dies-at-9-months` owns 49 CFR Part 370/1005 (the cargo-liability clocks on money the carrier owes), so do not re-argue either; `fmc.gov/consumer-affairs/detention-and-demurrage/` fetches at 4.9 KB and carries a measured, dated market anchor nobody has used yet — the nine named carriers collected roughly **$15.4 billion** in demurrage and detention between 1 April 2020 and 31 March 2025, with Q1 2025 billings down 24% and collections 19% quarter-to-quarter — which is the natural anchor for a *pricing* piece (what the fees actually cost and who pays them) rather than another clock piece.
-
-**Hosts probed live 2026-10-15, building a retainage / owner-payment-clock brief (how much of a remodel payment an owner may withhold, and for how long).** Carries the figure as plain text and fetches first try: `oregon.public.law` (ORS 701.420 in full — "not more than five percent of the contract price of the work completed" with *home improvement* contracts named in the same subsection, the one-percent-per-month interest on a final payment that commences 30 days after the owner accepts, the 15-day accept-or-list window, the $500,000 escrow trigger, and the 15-day retainage release after a contractor pays a sub in full — one page can carry four or five rows); `revisor.mn.gov` (statutes 337.10 subd. 4(b)–(c): a five percent retainage cap, the owner's power to cut it on any monthly payment with the contractor cutting subcontractor retainage at the same rate, and release of all retainage within 60 days of substantial completion; 337.01 subd. 2 defines "building and construction contract" as covering real property, which is the licence to say a house is inside that cap); `california.public.law` (**a fetchable mirror of the California codes where `leginfo.legislature.ca.gov` answers HTTP 403 to the verifier** — § 8811 prints the 5 percent private-works retention cap for contracts entered into on or after January 1, 2026 *and* the (b)(3) carve-out for a non-mixed-use residential project of four stories or fewer, so one page carries both the cap and the exemption); `law.lis.virginia.gov` (§ 2.2-4333, the 95 percent / 5 percent public-contract retainage rule — a boundary row: the statute sits in the Public Procurement Act, so it binds public bodies, not a homeowner); `leg.state.nv.us` NRS-624.html (the private-owner prompt-payment and 5 percent retention rules are genuinely in there, but the file is a single 352 KB page and every short figure in it — `5`, `21 days`, `50 percent` — matches an unrelated earlier section, so a Nevada row's evidence window reads as a coincidence; a per-section URL or the contractors board would be needed for a clean row). Fails or cannot carry a row: `leginfo.legislature.ca.gov` and `law.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le.utah.gov` per-section guesses (404), `cga.ct.gov` (SSL certificate failure in the verifier's fetch path), `nolo.com` (403), `mass.gov` (403), `statutes.capitol.texas.gov/Docs/PR/htm/...` (a 1.3 KB navigation stub, not the chapter), `energy.gov/energysaver/<guessed-slug>` (404 — the DOE pages that resolve are worth finding by search, not by guessing), and `codes.ohio.gov` prints its payment-timing statute with the deadlines in words ("within ten calendar days") plus an `eighteen per cent per annum` interest clause that the word-number matcher cannot lead on (`_WORD_NUMBERS` stops at twelve).
-
-**Hosts probed live 2026-10-15, building an agent-runtime termination-bound brief.** Carries the figure as text and fetches first try: `arxiv.org/html/<id>vN` (the full text of a paper's *tables* — a static-analysis census's Table II rendered every count and ratio as prose, e.g. "We evaluate IAL-Scan on 6,549 LLM agent repositories … manual review confirms 68 IAL failures across 47 projects, achieving 91.9% precision", plus its framework, impact, root-cause and failure-pattern rows, so one measured paper can carry several rows whose evidence windows land on the table itself); `docs.langchain.com` (a framework's own documented default — "Starting in version 1.0.6, the default recursion limit is set to 1000 steps"); `reference.langchain.com` (a ~1.2 KB body, but it holds the docstring a reader may be quoting — "If not provided, defaults to 25" — and two official pages of one vendor stating different numbers is *itself* a citable claim, provided the row attributes each to its own page); `github.com/<org>/<repo>/issues/<n>` (a tracker issue fetches at ~60 KB with body, reproduction and closed status as text, and the title carries the figure); and `docs.crewai.com` (a field table with the documented default — "max_iter int Maximum iterations before the agent must provide its best answer. Default is 20"). Fetches but cannot carry a row: `openai.github.io` (the SDK reference shows `max_turns: int | None = DEFAULT_MAX_TURNS` and never the constant's value, so no figure to lead on — `raw.githubusercontent.com/<org>/<repo>/main/<path>` does retrieve the source file when the rendered docs omit it); `docs.claude.com/en/api/agent-sdk/python` (documents `max_turns` and `max_budget_usd`, both defaulting to `None`: "the bound is off by default" is exactly the claim, and the page states no numeric token for a row to lead on, so the row fails the *matcher*, not the desk — grep the page for a dollar figure before planning on it); and `google.github.io/adk-docs/agents/` (9.4 KB with 23 digits total). A documented default is only a row when the number is in the fetched body: "defaults to None" cannot be one, because the gate reads figures.
-
-**Hosts probed live 2026-10-15, building a per-resolved-task pricing brief (the sticker price of a model tier vs the cost of the task it resolves).** Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` again, twice over — OckBench's financial-inversion paragraph (a 7B model priced at 50% of its 14B sibling emitting 3.13× more output tokens and landing 57% dearer per query, with the pricing footnote dated "as of Jan 2026") and Terminal-Bench 2.0's per-agent resolution/token table plus its §G.2 correlation sentence, so one HTML full text can carry a measured *and* a comparative row; `docs.claude.com/en/docs/about-claude/pricing` (a 29 KB body with the whole model table as text — input, output, 5m/1h cache writes, cache hits — plus the Batch API's "50% discount on both input and output tokens"); `cloud.google.com/vertex-ai/generative-ai/pricing` (~120 KB of plain-text rate tables, including "Price per 1M output and thinking tokens", a thinking-token audit note pointing at the `thoughts` field, and *dated* promo windows — "through November 30, 2026", "Starting January 1, 2027" — which is the cheapest way to give an evergreen piece its "as of" anchor); `platform.openai.com/docs/pricing` (Standard/Batch/Flex/Fast lanes as one text table, so the same model can carry standard and batch rows) and `platform.openai.com/docs/guides/reasoning` (the sentence that reasoning tokens "are not visible via the API" while being "billed as output tokens", plus a usage example whose `reasoning_tokens: 1024` gives the row a numeric token to lead on); and `onetonline.org` (median wage, the measured labour anchor `bls.gov`'s 403 refuses). Fails or cannot carry a row: **the commitment-pricing pages fetch but print no prices.** `azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/` retrieves at ~71 KB and `aws.amazon.com/bedrock/pricing/` at ~172 KB, yet every PTU cell renders as `$-` and every Bedrock cell as a `{priceOf!bedrock/…}` template token filled by client-side JavaScript — so a committed-throughput vs pay-per-token break-even cannot be built from the vendor's own price page, and the row would die as `figure_absent` no matter how good the reservation discount is. Probe the *figure*, not the status, before planning such a brief: `python3 -c "import sys,re; sys.path.insert(0,'scripts'); import citation_hub_dossier as c; t=c.fetch_source('<url>')['text']; print(re.findall(r'\\$\\s?\\d[\\d,\\.]*', t)[:20])"` — a page with hundreds of digits and no dollar amount is a JavaScript price list. Also unreachable this run: `finops.org` and `help.openai.com` articles.
-
-**A comma-grouped dollar figure written without its comma renders no pattern that exists on the page (learned 2026-10-14).** `figure_patterns("$425,000 …")` yields `425` and `000`, and the window lands on the sentence carrying the claim; the same figure written `425000` yields one pattern that appears nowhere, so `figure_evidence` returns nothing and the row dies as `figure_absent` even though the page prints the number. Write money the way the source prints it — comma included — and check the cell with `c.figure_evidence(cell, text)` before committing the row.
-
-**A cell that leads on a word number is matched on the digits it also carries (learned 2026-10-14).**
-`figure_patterns` returns digit patterns whenever the cell contains *any* digit, so
-`three minor releases — release branches are maintained only for the most recent three minor releases (1.37, 1.36, 1.35)`
-is probed on `1.37` first and its evidence window becomes whatever text mentions 1.37, not the claim the row
-makes: the row still PASSes, so the marker's audit trail reads as a coincidence — the same class as the
-comma-grouped and stray-`24/7` cases below. When the lead figure is a word, keep the whole cell digit-free
-(`three minor releases — release branches are maintained only for the most recent three minor releases, and
-current versions receive approximately one year of patch support`), and carry whatever version numbers or dates
-the row wants in the article's prose instead, where the same page citation covers them.
-
-**The matcher splits a comma-grouped figure — lead the cell with a different number, or expect a coincidental excerpt (learned 2026-10-14).**
-`figure_patterns` tokenises with `\d+(?:\.\d+)?`, so a figure cell leading on `4,989 tokens` produces the
-patterns `4` and `989`: the first one matches the earliest bare `4` anywhere on the page (observed: the
-prefill-phase text's "spans 4 nodes"), and `figure_evidence` returns that window as the row's evidence. The
-row still verifies, but the audit trail reads as a coincidence — the same class as the stray-`24/7` case
-below. Fix it the way this brief did: move the comma-formatted claim *into* a row that already leads on a
-distinctive token (`73.7k tokens/s input … in the same window the average KV-cache length per output token
-was 4,989 tokens`), so the evidence window is the sentence about the claim and the second figure rides
-along inside a verified row.
-
-**Lead each row with the token the page states *once* — `figure_evidence` returns the window around the first occurrence of the first numeric token in the cell (learned 2026-10-13).** A row written `24,000 samples per second` evidenced on a stray `24/7` in the page's navigation, `48A` evidenced on an `MLO 48` product-family label, and a Home Assistant recorder retention row written `10` evidenced on `MariaDB ≥ 10.3` — every one of those phrases is genuinely on its page, so the gate PASSes, but the marker's audit trail reads as a coincidence. Probe each candidate figure with `c.figure_evidence(<figure>, text)` before writing the row and lead with the token whose excerpt is a sentence about the claim (`80 amps` → the worked example; `$199.99` → the price line); when the natural figure collides, pick the page's rarer one rather than shipping a row whose evidence a reader cannot check.
-
-**Vendor docs pages are the same class, keyed on the model name in their own sidebar (learned 2026-10-19).** Building a model-retirement-notice brief, the OpenAI deprecations row that led on `6 months` evidenced on the navigation label `GPT-6` before the operational paragraph, while the same page's `3 months` landed on the sentence carrying all three tiers ("At least 6 months … At least 3 months … such as 2 weeks"). Fetchable vendor lifecycle pages, with the figure as plain text, that round: `platform.openai.com/docs/deprecations`, `docs.claude.com/en/docs/about-claude/model-deprecations` (60 days, plus the sentence that partner platforms set their own schedules), `cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions` (per-model release/retirement table, "at least 12 months after release"), and `docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle.html` (two Legacy periods, 6 months and 45 days). Unreachable to the verifier: every `learn.microsoft.com` and `azure.microsoft.com` model-retirement path tried (HTTP 403), so an Azure notice row cannot carry the gate — write the Azure point in prose or leave it out.
-
-**A short abstract can verify a row on the wrong sentence when two figures share a token prefix (learned 2026-10-22).** On arXiv:2506.05357 a row led `11% — an inventory audit lifted store-wide sales 11%`, but the matcher's first token `11` landed on `sold in 11 stores` earlier in the abstract, so the marker's evidence excerpt showed the sample sentence and never the finding. The row still PASSed — the nav-digit class, where the audit trail is not self-evidencing. Either lead the cell on a figure that appears only in the claim's own sentence, or lead on the sample figure (`24,000 — the study covers ~24,000 SKUs in 11 stores, and its field quasi-experiment found an 11% store-wide sales lift`) and record in the brief's Notes that the finding rides in that row and was read by eye. Never leave a reader unable to check the number the article turns on.
-
-**Hosts probed live 2026-10-15, building a forecast-value-added / naive-benchmark audit brief (the demand_sensing beat).** Carries the figure as plain text and fetches first try: `ideas.repec.org` (a publisher's abstract record for a paywalled journal paper — 20 KB with the study's own numbers as prose: "around 147,000 forecasts from six studies", improvements "for only just over half of stock keeping units (SKUs)", "Positive adjustments were confirmed as more likely to worsen performance"). This is the workaround when the publisher blocks the gate: `sciencedirect.com` and `tandfonline.com` are both **unreachable** to the verifier, but the same paper's abstract is citable through RePEc; `research.manchester.ac.uk` (a university repository record carrying the same abstract text — "more than 60,000 forecasts and outcomes from four supply-chain companies", "the smaller adjustments often damaged accuracy" — so one paper can be reached on a second host when a row needs host diversity); `demand-planning.com` (a practitioner blog reporting Morlidge's study via Gilliland/Tashman/Sglavo — "After studying over 300,000 forecasts they found that a staggering 52% of the forecasts were worse than using a random walk" — label such a row *measured, as cited*, since the page is a secondary citation, never the study itself); `lokad.com` (a supplier reference page: the Gilliland 2010 illustration "11 out of 13 weeks (85% fail rate), averaging 13.8 percentage points of error" and "a forecast might be 40% more accurate but the associated cost means the company makes 75% less profit overall" — a vendor page is the right home for a critique leg, labelled vendor claim); `doss.com` (a vendor survey report dated 18 May 2026 — "DOSS surveyed 661 professionals", 16% did not formally measure forecast accuracy at all, 51% proceed on forecasts they know are unreliable). Fetches but cannot carry an independent row: `infomineo.com` (the demand-sensing-vs-forecasting page states the test — every layer "should have to prove it beats the layer beneath it" — but its only numeric token repeats the Morlidge 52%, so it is corroboration only). Two matcher lessons: on `doss.com` a cell leading on `16%` evidences against the earlier "Private label products: 16%" list and reads as navigation — lead that row on the survey's own `661` and let the percentages ride inside it; and a horizon phrase written `one to four weeks` carries no digit token, so it can never anchor a row (keep such a claim as prose under a verified row). Every leading figure in this brief had to be a digit token (52%, 147,000, 60,000, 13.8, 661).
-
-**Hosts probed live 2026-10-13, building a build-wait / hardware-debt payback brief.** Carries the figure
-as plain text and fetches first try: `pugetsystems.com` (the measured-benchmark anchor `bls.gov`'s 403
-denies — lab articles print compile times in prose *and* in spec tables that also carry CPU list MSRPs:
-"the 32-core 7975WX takes 5 minutes and 30 seconds, while the 64-core 7985WX completes it in 4 minutes
-flat", "AMD Ryzen Threadripper PRO 9985WX 8,000 64 … Jul 2025", and the lab's own audit line "the extra
-$3500 may be better served elsewhere"); `onetonline.org` (median wage, hourly *and* annual, by occupation);
-`eia.gov` energy-explained (retail price by customer class — the commercial rate, not residential, is the
-one a workstation payback needs); and NVIDIA's workstation product pages under
-`nvidia.com/en-us/products/workstations/professional-desktop-gpus/<part>/`. Fails: `intel.com` spec pages
-(403), guessed `amd.com` product URLs (404 — resolve the real slug first), `phoronix.com` review pages
-(client-rendered, ~2.3 KB bodies), `ccache.dev/manual` and `bazel.build` (they fetch, but their numeric
-tokens are cache/GC timers, not build times), and `dora.dev/research/…` (3 KB landing pages; the report
-itself is a PDF).
-
-**A consultancy "worked scenario" is not a citation when its own page says the figures are hypothetical (learned 2026-10-29).**
-On the demand-pattern evergreen the best-looking row for the policy leg was a consultancy's Croston case study:
-3,200 spare-part SKUs, 58% intermittent, a reorder point of 11 units from a 4-week lead time. The page's own
-preamble reads *"The company and every figure in it are hypothetical, chosen to show how the calculations fit
-together; they are not results from a real client"*, and the same item is given a **second, different** reorder
-point (16 units, from a different formula) further down the page. Both figures verify against the page, so the
-gate would have passed a row that contradicts itself. The rule: before a row is written, read the page for a
-hypothetical disclaimer and for a second mention of the same quantity — a source that supplies two answers to
-its own question is replaced with one that states a rule (`toolsgroup.com`'s service-level sentence carried that
-leg instead), and a worked example may be cited only for arithmetic the article performs visibly.
-
-**Hosts probed live 2026-11-09, building a private-mortgage-insurance end-date brief (the `home_equity_tco` evergreen).**
-Carries the figure as plain text and fetches first try: `govinfo.gov/content/pkg/USCODE-2023-title12/html/USCODE-2023-title12-chap49-sec4901.htm`
-and `…-sec4902.htm` (the Homeowners Protection Act in the U.S. Code edition — § 4901(18) "termination date … based solely on the
-initial amortization schedule … irrespective of the outstanding balance … 78 percent", § 4901(2) "cancellation date … or (ii) based
-solely on actual payments, reaches 80 percent of the original value", § 4901(4) "60 days or longer past due during the 12-month
-period beginning 24 months before … 30 days or longer … in the 12-month period preceding", § 4902(e) "more than 30 days after",
-§ 4902(f) "Not later than 45 days after … all unearned premiums", § 4902(c) the midpoint backstop, § 4902(g) the high-risk
-exception, and § 4903(a)(3) the **annual** written statement of the cancellation rights — so never write "the servicer has no duty
-to volunteer the date"); `consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/` (20 percent down / 20 percent
-equity on a refinance, and the payment mechanics); and `nerdwallet.com/article/mortgages/pmi-private-mortgage-insurance`
-(the price anchor as a **labelled secondary** row: "The average annual cost of PMI typically ranges from $30 to $70 per $100,000
-borrowed, according to Freddie Mac … between $105 and $245 a month", page updated Dec 23, 2025). `law.cornell.edu/uscode/text/12/4901`
-mirrors the same chapter and works as corroboration, but its pages carry the amendment history first, so quote govinfo.
-**Matcher traps avoided here:** both "78 percent" and "80 percent" land in their own definition sentence on the title-12 pages
-(no nav digits to dodge); "45 days" is unique in § 4902; but `consumerfinance.gov/ask-cfpb/…-en-193/`, `-368/`, `-369/` and
-`what-is-a-mortgage-insurance-premium-en-125/` all answer `unreachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com`
-and `bankrate.com` return nothing usable, so a PMI rate card cannot carry a row — the premium band has to ride on a secondary page
-or not at all. Guessed `selling-guide.fanniemae.com/sel/b4-1.2-03/…` paths are unreachable (the live slug is
-`/sel/b4-1.3-06/property-condition-and-quality-construction-improvements`), which is why the Fannie C1–C6 condition-rating angle
-(a deferred-maintenance piece worth writing) cannot carry gate rows: its only figures are the digits in "C6", so every row would
-evidence on a stray 6.
-
-**A row's `measured`/`vendor claim` cell is a claim too — check it on the page that row cites (learned
-2026-10-13).** The gate verifies the figure, never the provenance gloss: a row inherited NVIDIA's
-"preliminary product specifications, subject to change" footnote from the RTX PRO 5500 page onto the RTX
-PRO 6000 page, which does not carry it. Read the footnote on the named page before writing that cell; a
-wrong provenance line survives every gate and misstates how firm the figure is.
-
-**Hosts probed live 2026-10-15, building a cross-border disclosure-penalty brief (what a move abroad obliges a US person to report, and what a miss is charged).** Carries the figure as plain text and fetches first try: `irs.gov` (the FBAR page's $10,000 aggregate trigger, its "whether the account produced taxable income has no effect" sentence and its April 15 date with the automatic October 15 extension; `irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets` for the $200,000 last-day / $300,000 any-time lines for a taxpayer living abroad and $400,000 / $600,000 on a joint return; `irs.gov/instructions/i5471` — 320 KB, whose penalties section prints the $10,000-per-annual-accounting-period sentence a row can lead on with `90 days`); `law.cornell.edu` (three *different* statutes on one host — 26/6038D, 26/6038, 31/5321 — which is how one publisher can still carry several honest rows); `ecfr.gov` (31 CFR 1010.821's penalty table, whose header prints the edition's own currency — "up to date as of 10/13/2026" — the cheapest as-of anchor for an indexed figure). Fails or cannot carry a row: `oecd.org`, `ssa.gov` and `ato.gov.au` (all HTTP 403 to the verifier), `canada.ca` (unreachable), guessed `tax.ny.gov` telecommuter paths (404 — the convenience-rule pages have moved), and **`fincen.gov`**: the regulator's FBAR page fetches but opens with a stack of disaster-extension notices dated `10/11/2024`, so a `$10,000`-led row matches one of those dates first and its evidence window reads as navigation — cite it as corroboration in the brief, never as a gate row. A comma-grouped `$10,000` always tokenises to `10`/`000`, so lead such a row with a rarer token from the same sentence where one exists (`90 days`, `50 percent`, or the date the ceiling applies from).
-
-**Hosts probed live 2026-10-16, building a roof-settlement / two-payment brief (the `resilient_home_assets` evergreen).** Carries the figure as plain text and fetches first try: `flsenate.gov/Laws/Statutes/<year>/<section>` — the Florida Statutes pages for the *current* edition; § 627.7011 prints the 15-year roof-age rule, the inspection right at the owner's expense and the ACV-first sentence ("the insurer must initially pay at least the actual cash value of the insured loss, less any applicable deductible"), while § 627.701 (24 KB) carries the roof-deductible cap ("the lesser of 2 percent of the Coverage A limit of the policy or 50 percent of the cost to replace the roof") and its five carve-outs — **but lead the cell with the rarer token: a cell beginning "2 percent" evidences on an unrelated subsection (2), while "50 percent" lands on the operative sentence**; `california.public.law/codes/ca_ins_code_section_<n>` (a fetchable mirror of the California codes, insurance sections included — § 2051.5 carries the recovery window ("less than 12 months", "36 months", the 100-day proof-of-loss floor, the six-month good-cause extensions) and § 2051 the measure of indemnity; each page prints its own source line and a "Verified:" date, a free as-of anchor); `content.govdelivery.com/accounts/<AGENCY>/bulletins/<id>` (a state regulator's consumer bulletin — the Iowa Insurance Division's roof-coverage page carries the DOE-attributed "average roof replacement cost is $10,000" and the endorsement warning that a rider "may replace replacement cost coverage with actual cash value", though the page prints no date); `thehartford.com/aarp/homeowners-insurance/recoverable-depreciation` (a carrier's own explainer — the right home for a vendor-claim row: the $900 / $750 / $150 worked example and "we don't pay your replacement cost until you've repaired or replaced the damage"); and `iii.org/fact-statistic/facts-statistics-<topic>` (Triple-I statistics pages fetch at 8–30 KB with the tables as text — severity "$20,062" (2023) against "$13,884" (2019), the cause table's "42.5" wind-and-hail share, the wildfire page's state tables — while every `iii.org/article/...` URL tried returned `unreachable`, so a consumer page is not a citable row there). Fails or cannot carry a row: `readyforwildfire.org`, `usfa.fema.gov`, `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststreet.org/risk-factor/fire-factor/` (HTTP 200 with a 260-character body), `moen.com` and `phyn.com` product pages (unreachable), `floodsmart.gov`'s subpages (`/flood-insurance`, `/why-flood-insurance`, `/plan-ahead` unreachable while its root page fetches), and `nfpa.org` (a 35-character body). Two costs worth not repeating: probe every candidate through `citation_hub_dossier.fetch_source` **before** choosing the topic — 12 of 22 first-round candidates here were unreachable, including the whole ember-vent/defensible-space beat (`nfpa.org`, `readyforwildfire.org`, `usfa.fema.gov`, `calfire`), which is why the reserve candidate died on evidence and not on argument — and prefer a statute page to a regulator's press release, since the statute prints the figure beside the rule it governs.
-
-**Hosts probed live 2026-10-16, building a manager-hours / true-hourly-rate brief (the `career_velocity_equity_engineering` evergreen).** Carries the figure as plain text and fetches first try: `onetonline.org/link/summary/<SOC>` — **the O*NET summary page carries a measured wage *and* a measured work-week distribution on one page**, which makes it the working anchor for any hours-based pay topic now that `bls.gov` still 403s to the verifier: "Median wages (2025) $84.20 hourly, $175,140 annual" for computer and information systems managers (11-3021.00, whose work context reads 65% responded "More than 40 hours."), $65.38 / $135,980 for software developers (15-1252.00, 90% responded "40 hours.") and $50.85 / $105,770 for general and operations managers (11-1021.00, 70% more than 40 hours). The hourly figure is the annual median spread over 2,080 hours, so an "hours actually worked" claim can be built honestly by dividing a cited annual median by a stated week (the two agreed to the dollar: 84.20 × 2,080 = 175,136). Also fetching: `ecfr.gov/current/title-29/section-541.600` and `/section-541.100` (the overtime-exemption salary floor — $684 per week — and the duties test, two rows on the regulation host, ~9–10 KB each with the section text as plain text, § 541.100's authority note running to 91 FR 27835, May 15, 2026); `irs.gov/publications/p15` (306 KB, the flat 22% supplemental-wage withholding rate, 37% above $1 million, stated as a complete sentence in the 2026 edition). Fails or cannot carry a row: **`ec.europa.eu/eurostat` statistics-explained hours-of-work pages answer 404 to the verifier**, so a European hours series cannot be the counterweight to a US wage row; and — the trap specific to this host — **an O*NET page's numeric task-importance scores precede the work-context block in document order, so a row leading on a percentage evidences on an unrelated score**: a cell beginning `65% responded: More than 40 hours` matched "65 Core Evaluate data processing proposals", and `90% responded: 40 hours` matched "90 Working with Computers". Lead every O*NET row with the distinctive **dollar** figure ($84.20 / $65.38 / $50.85) and let the work-week share ride inside that row as eye-checked gloss rather than giving the share a row of its own. One instrument fact worth knowing before fighting it: `check_accessibility.body_of` strips the `## Sources` section, so the **NET token inside "O*NET OnLine" never fails the acronym gate** — it only matters if the token is spelled out in body prose (as "the Occupational Information Network"), which is why the back catalogue cites O*NET without a definition.
-
-**Hosts probed live 2026-10-16, building a depot-charging / metered-kWh brief (the `last_mile_routing_fleet_carbon` evergreen).** Carries the figure as plain text and fetches first try: `afdc.energy.gov/fuels/electricity-stations` (the DOE Alternative Fuels Data Center charger page — the Level 2 spec as one sentence, "Most residential Level 2 chargers operate at up to 30 Amps, delivering 7.2 kW of power. These units require a dedicated 40-Amp circuit to comply with the National Electric Code requirements in Article 625", plus the 2.9–19.2 kW Level 2 output band, the ~25 miles of range per hour of AC Level 2, the three-phase `SAE J3068` band at 6 kW to 130 kW on 208/120 V and 480/277 V, and the DC-fast ceiling "up to 500 kW" beside "many EVs on the roads today are not capable of charging at rates higher than 200 kW"); `afdc.energy.gov/laws/10513` (a federal credit page whose *status* is the deliverable — the summary table's own headline reads "Expired: 06/30/2026", and the body carries the window "Beginning January 1, 2023, through June 30, 2026", each charging port as "a single item", and "6% of the depreciable costs, up to $100,000 per item; or, 30% … if the installation meets U.S. Department of Labor" wage rules); `afdc.energy.gov/fuels/electricity-benefits` (battery life as text — "may last 12 to 15 years in moderate climates (8 to 12 years in extreme climates)" and the "8-year/100,000-mile battery warranties" line); `eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php` (15 KB, the annual price by customer class *and* the state spread — "13.63¢ per kilowatthour" U.S. average for 2025, "35.72¢ per kWh in Hawaii to 8.20¢ per kWh in North Dakota", the class table residential 17.30¢ / commercial 13.41¢ / industrial 8.62¢, with the tables it cites named in the footnotes); and `fueleconomy.gov/feg/evtech.shtml` (6 KB, "Battery charging efficiency can vary, but it is often 84% to 93%, based on published studies … and data from the Idaho National Laboratory" plus "EVs convert over 77% of the electrical energy from the grid to power at the wheels" against "12%–30%" for gasoline). **Guessing AFDC paths wastes a probe round:** `afdc.energy.gov/fuels/electricity_charging.html`, `…/electricity-infrastructure.html` and `…/vehicles/electric-emerging-technologies.html` all answer 404 to the verifier — resolve the real slug (`/fuels/electricity-stations`, `/laws/<n>`, `/fuels/electricity-benefits`) from a web search before probing. **Two rows on this beat want a rarer lead token:** a cell beginning `40-Amp circuit` evidences on "about 40 miles of electric range" earlier in the page (lead with `7.2 kW`, whose window is the operative sentence), and `200 kW` evidences on the DC heading "100 to 200+ miles of range per 30 minutes" — so carry the ~200 kW vehicle-acceptance caveat inside the `500 kW` row, which windows on the DC-fast sentence, and never give it a row of its own. Fails or is unneeded here: `bls.gov` is still 403 and no wage row was needed; the DOE/EPA explainer pages carry the spec, the price and the losses, but **no fetched source prices a depot's demand charge or its utility interconnection queue** — that is a stated gap in the article, not a row. One drafting fact worth carrying: the frontier re-cut a hand-set STRONG title on this run (to "Fleet Architects: 7.2 kW Sets Your Charger Gap") and restored it at audit time, so score the `_final.md`'s title against its own body before persisting, not only the draft's.
-
-**Hosts probed live 2026-10-19, building an assessment-carrying-cost brief (what a completed improvement costs
-every year after the cap).** Carries the figure as plain text and fetches first try: `flsenate.gov/Laws/Statutes/<year>/<section>`
-(Florida Statutes § 193.155 — the cap sentence "(a) Three percent of the assessed value of the property for the prior
-year", plus subsection (9)(b), which assesses changes, additions or improvements at just value as of the first January 1
-after they were substantially completed); `legislature.mi.gov/Laws/MCL?objectName=mcl-<section>` (MCL 211.27a(2)(a) —
-"multiplied by the lesser of 1.05 or the inflation rate, plus all additions" — and MCL 211.34d(1)(b)(iii), which defines
-new construction as property "not in existence on the immediately preceding tax day and not replacement construction",
-the plainest statutory statement of the renewal-versus-addition split); `oregon.public.law/statutes/ors_<section>`
-(ORS 308.146(1) — "103 percent of the property's assessed value from the prior year" — and ORS 308.153, new improvements
-at real market value); `california.public.law/codes/ca_rev_and_tax_code_section_<n>` (§ 2192's "12:01 a.m. on the first
-day of January"; § 70(a)'s definition of new construction).
-**Hosts probed live 2026-10-22, building an exclusion-versus-credit brief (the `expat_cross_border_relocation` evergreen).**
-Carries the figure as plain text and fetches first try: `govinfo.gov` U.S. Code HTML pages
-(`/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm`, and
-`…-subpartA-sec904.htm` for § 904) — **the working substitute for a `law.cornell.edu` statute row**, because Cornell's pages
-carry 40–150 KB of amendment-history notes whose stray numbers are the first occurrence of nearly every short token: a
-§ 904(c) row written `10 succeeding taxable years` evidenced on § 904(a)'s "10-percent owned foreign corporation" and a
-§ 911(e)(2) row written `6th taxable year` evidenced on the `(6)` subsection marker, while the same cells on govinfo land
-inside the operative sentence (`$80,000` → the exclusion-amount paragraph, a single-occurrence token); `irs.gov/instructions/i2555`
-(the 2025 Form 2555 instructions — "For 2025, the maximum exclusion amount has increased to $130,000" and the housing limit
-"$39,000 (30% of $130,000)" / "$106.85 per day", a rare enough token to lead on); `irs.gov/instructions/i1116` ("carry back
-1 year and then forward 10 years", and the `$300` / `$600` de minimis election whose own paragraph forfeits that year's
-carryover); `irs.gov/publications/p514` (the ten-year credit-versus-deduction window plus its 2014 amended-return example, a
-clean `2014`-led row). **`irs.gov/publications/p54` fetches but cannot carry a numeric row** — its body opens with
-disaster-extension notices dated 2023–2025, so any small token (`5 years`, `2024-1`) evidences on a notice; carry its
-no-double-benefit, coexistence, revocation and additional-child-credit sentences in prose and in `## Sources`, with the
-verbatims recorded in the `_evergreen_verified_brief.md`.
-
-**A statute's small integers collide with its own subsection numbering**: § 51's "2 percent" cap generates the token `2`
-and evidences on "Section 2 of Article XIIIA", so that claim was quoted in prose with the section cited in Sources
-instead of shipped as a row — the same class as the eCFR banner date. Lead a statute row on a figure the section states
-once and rarely (`1.05`, `103 percent`, `12:01`, a comma-grouped dollar threshold), never on a bare `2`, `3` or `10`;
-a cap written in words is matchable if the whole cell is digit-free (`Three percent — …` resolves through
-`_WORD_NUMBERS`, while `3 percent` would probe the first stray `3`). Unreachable to the verifier, so no rate row can
-carry this beat: `census.gov`, `taxfoundation.org`, `floridarevenue.com`, `boe.ca.gov`, `oregon.gov/dor` and
-`…/ca_rev_and_tax_code_section_110_1`. A carrying-cost article therefore states the statutory caps and leaves the
-county rate to the reader's own tax bill rather than inventing a national average.
-
-**Hosts probed live 2026-10-19, building a duct-leakage / HVAC-replacement-scope brief.** Carries the figure
-as plain text and fetches first try: `nachi.org/hvac.htm` — the inspection *article*, 29 KB, not the
-life-expectancy chart — which states "duct leakage increases space-conditioning energy use by 15-20% on
-average, even in new construction", the Modera and Jump 1995 Sacramento readings (12% of duct energy lost by
-conduction at the register nearest the furnace, "more than 40%" at the master bedroom), "indoor coil airflow
-must be greater than 350 cfm/ton", and the Manual S limit of 15% above the calculated sensible load;
-`eia.gov/energyexplained/use-of-energy/homes.php` and `…/electricity/prices-and-factors-affecting-prices.php`
-(52% end-use share; 17.30¢ residential, 2025); and `ecfr.gov` 10 CFR 430.32 (13.4 SEER2 split-system air
-conditioners, 14.3 SEER2 / 7.5 HSPF2 split-system heat pumps, manufactured on or after January 1, 2023).
-Unreachable to the verifier on this beat: **every** `energy.gov/energysaver/*` path tried (the DOE consumer
-pages are not fetchable — the working `energy.gov` rows are `/cmei/femp/…` only), `energystar.gov/products/`
-guesses (`heat_pumps_air_source`, `air_conditioners`, `heating_cooling` all fail; only exact slugs such as
-`products/air_source_heat_pumps` fetch), `angi.com`, `homeguide.com`, and `nachi.org/inspecting-hvac-systems.htm`.
-**A colliding reference table can still be rescued by re-phrasing the cell, and a dead chart left alive is a
-trap:** `nachi.org/life-expectancy.htm` fetches, but every integer in its HVAC block (`7 to 15`, `15 to 25`,
-`60 to 100`) first appears in an earlier row (paint, caulking, service panel), so a life-expectancy row
-evidences on the wrong line and no service-life claim can carry a gate — while on the HVAC *article* the cell
-`20% on average — duct leakage increases space-conditioning energy use by 15-20%…` lands on the right sentence
-where `15-20% — …` lands on "15 mil" tape. Probe two or three phrasings with `c.figure_evidence` before
-concluding a host is unusable, and check the whole host's article set rather than one page.
-
-**Hosts probed live 2026-10-20, building a render-ladder / local-encode brief (the `workstation_compute_economics` evergreen).** Carries the figure as plain text and fetches first try: `aws.amazon.com/mediaconvert/pricing/` — the on-demand *rate* table renders as `priceOf!` templates, but the page's own worked examples print the rates as text (Basic `$0.0075` for the first 100,000 normalized minutes then `$0.0053`/`$0.0038`; Professional `$0.0120`/`$0.0096`/`$0.0072`/`$0.0036`), together with the AVC single-pass multipliers `SD 1x 1.25x 1.5x HD 2x 2.5x 3x 4K 4x 5x 6x`, the VP9 multi-pass band `2x 3.5x 4x / 4x 7x 8x / 8x 14x 16x`, an 11.48x SD and 22.97x HD ladder in one example, and "The minimum duration for billing is 10 seconds"; `cloud.google.com/transcoder/docs/pricing` (41 KB, `$0.015 / $0.03 / $0.06` per SD/HD/UHD output minute beside its 1- and 3-year commitment columns); `docs.nvidia.com/video-technologies/video-codec-sdk/13.0/nvenc-application-note/index.html` (the fps table as prose — Blackwell 977/323/227 on 1080p H.264 P1/P5/P7 and 1134/506/181 on HEVC, with "Resolution/Input Format/Bit depth : 1920 × 1080/YUV 4:2:0/8-bit" and the licensing policy's "limited to 8 per system" on non-qualified cards); and `handbrake.fr/docs/en/latest/technical/performance.html` (an independent 1080p encoder comparison with fps *and* realtime factors, plus its own "at the expense of some loss in quality and/or larger file sizes"). Fails or cannot carry a row: the GPU *instance* pages (`aws.amazon.com/ec2/instance-types/g6/` fetches with no prices; `cloud.google.com/transcoder-api/pricing` answers a 153-character 404), `raw.githubusercontent.com`, and Puget article paths guessed without resolving the slug. **The earlier "the cloud-render side prices through JS-rendered tables" drop was about instance pricing, not the transcode rate cards** — two evergreen runs refused the video-ROI angle on that verdict; the price pages themselves verify, so re-probe before inheriting a drop.
-
-**Hosts probed live 2026-10-21, building a GPU power-cap / operating-point brief (the `gpu_hardware` evergreen).**
-Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` (the phase-decoupled control paper,
-91 KB, whose abstract and evaluation sections print every percentage a row needs) and `arxiv.org/abs/<id>` (the
-Joule Point paper — here the abstract itself carries the numbers: "43 to 46 per cent", "18 to 45 per cent",
-"1.2 times slower", so an abs page is a legitimate row when the claim is the abstract's own); NVIDIA's **data-center**
-product pages (`nvidia.com/en-us/data-center/h100/` prints "Max Thermal Design Power (TDP) Up to 700W (configurable)
-350-400W (configurable)", `…/dgx-b200/` prints "GPU 8x NVIDIA Blackwell GPUs … System Power Usage ~14.3 kW max", and
-`…/dgx-b300/` "Power Consumption ~14 kW"), which is the cheap way to price a watt; and `eia.gov/energyexplained/…`
-(the 2025 averages by customer class, "commercial 13.41¢ per kWh"). Fetches but carries no row:
-`mlcommons.org/benchmarks/inference-datacenter/` (7.9 KB, no numbers) and `uptimeinstitute.com`'s survey page
-(11.6 KB, prose only — no PUE or density figure). Unreachable to the verifier on this beat: `iea.org` (every
-`/reports/energy-and-ai` path), `supermicro.com` liquid-cooling pages, `datacenterknowledge.com`, and
-`nvidia.com/en-us/data-center/liquid-cooling/`. Note that `…/gb200-nvl72/` fetches at 18 KB but its spec table
-carries no kW figure at all — probe the figure, not the page. **A cross-vertical drop saved the topic:** the first
-candidate (a rack's kW buys N accelerators) scored 7.8 and was dropped because
-`published/2026-10-06_rack-power-density-ceiling-build-before-you-buy.md` (nhil_infrastructure_ops) already argues
-facility capacity — the working angle was the power *setting*, not the building.
-
-**A row's author and date come from the fetched page, not from the API listing that found it (learned 2026-10-21).** An arXiv API sweep returns entries whose `<published>` order does not match the ID series, so a brief built from the list carried the wrong first author (a name from an adjacent entry) and a date nine days off the paper's own header — and the gate verifies the *figure*, never the attribution, so both survived a PASS and would have shipped into `## Sources`. Read the byline block and the dateline out of the retrieved HTML (`grep` for `arXiv:<id>v1` and `Affiliation`) before writing the cell, and re-run the gate after any citation fix, because editing a row makes the marker stale.
-
-**A derived percentage is a claim no gate can check — recompute it from its two verified endpoints after Loop 3 (learned 2026-10-20).** The render-ladder rewrite carried "a single card loses 83% of its H.264 throughput" straight from the draft, where 977 → 227 fps is a **77%** loss; the neighbouring HEVC pair (1134 → 181) really is 84%, which is why the wrong ratio read plausibly. Flesch, a figure diff and the voice gate all pass a wrong ratio whose digits are each correct. Recompute every percentage, multiple and payback in the final body from the figures it divides, never from the draft's arithmetic.
-
-**The "microservices tax" was wrongly recorded as unfetchable; its anchors were mis-probed (learned 2026-10-20).** The 2026-10-13 brief dropped the vertical's own flagship pillar on the claim that "Segment's first-party post returns a Twilio marketing shell whose prose survives but whose outcome figures do not" — but `segment.com/blog/goodbye-microservices/` retrieves at ~39 KB with every outcome figure as plain text ("consolidate the now over 140 services into a single service", "3 full-time engineers spending most of their time just keeping the system alive", "deploy 140+ services for a change to one of the shared libraries", 32 shared-library fixes before the merge against 46 after). The Prime Video post is genuinely dead (redirects to an Amazon Entertainment landing page with no numeric tokens) and DORA pages are genuinely client-rendered — but that is two anchors, not the beat. The measured pairs that do carry it: `arxiv.org/html/` full texts of the technical-debt migration case study (1902.06282v3 — the debt slope 89.76% smaller after migrating, against overall development cost up "more than 20%") and of the 53-practitioner industry survey (2408.10434v1 — 50.9% incremental migration, 75.5% naming scalability), plus `onetonline.org` for the wage anchor that prices engineers spent on the distributed system. When a candidate is dropped for unreachable anchors, re-probe the *whole* anchor set the next time the pillar comes up rather than inheriting the earlier verdict.
-
-**Hosts probed live 2026-10-20, building a panel-monitor inference-limits brief (the `smart_home_telemetry` evergreen).**
-Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` again, twice over — a NILM benchmark
-paper (2608.18780v2) with both its abstract result ("an average precision of 90% and recall of 96% for two-appliance
-classification, and 77% precision and 80% recall for four appliances on the REDD dataset") *and* its Table III's
-per-appliance collapse (dish washer 0.10 precision / 0.08 recall beside fridge 0.84/0.94), plus a second
-identification paper (2301.03018v2) carrying 88.9% / 80.67% four-class accuracy and its authors' own "for carefully
-chosen values of thresholds" qualifier; `github.com/<owner>/<repo>` (a 53 KB README whose per-appliance table runs
-0.5671 for the microwave to 0.8478 for the washing machine — the cheapest *reproduction* anchor on this beat, and it
-must be labelled measured-but-not-peer-reviewed); `eia.gov/energyexplained/use-of-energy/homes.php` (52% of household
-annual energy use to space heating and air conditioning, 2020); and `standby.lbl.gov` (Berkeley Lab: standby power is
-"5-10% of residential electricity use", typical products "less than 0.5 watts") with `synology.com` product pages for
-a watts spec. **Unreachable to the verifier:** `mdpi.com` and `dl.acm.org` (the MDPI reviews and the NILM-BENCH paper
-are HTTP-blocked — cite the arXiv equivalent or drop the row), `escholarship.org` (answers `fetched` with a
-**zero-length body**, so a preprint-repository page is not a source row), `raspberrypi.com/products/...`, `sense.com`,
-and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github.io` report PDF are `unsupported`).
-**A PDF-only lab result cannot carry a row, and the fetchable summary can contradict it:** the ORNL Yarnell Station
-report measures a 10–30% refrigerant undercharge *lowering* compressor energy, while the fetchable DOE/NREL material
-states charge and airflow faults *raise* energy by 8% and 13% — so check the direction on a page the gate can fetch
-before building a thesis on the direction.
-
-**Hosts probed live 2026-10-21, building a CI build-vs-buy / utilisation brief (the `enterprise_build_vs_buy` evergreen).**
-Carries the figure as plain text and fetches first try: `docs.github.com/en/billing/concepts/product-billing/github-actions` (14 KB — the
-whole per-minute rate table as text: Linux 1-core slim `$0.002`, Linux 2-core `$0.006`, arm64 `$0.005`, Windows `$0.010`, macOS `$0.062`;
-storage `$0.25` per GB-month shared against `$0.07` for the Actions cache; and the sentence that makes the built side look costless,
-"GitHub Actions usage is free for self-hosted runners"); `www.digitalocean.com/pricing/droplets` (the full ladder as one text line —
-`2 GiB 2 vCPUs … $0.02679 $ 18.00`, `4 GiB 2 vCPUs … $ 24.00`, `8 GiB 4 vCPUs … $ 48.00`); `docs.gitlab.com/ci/pipelines/compute_minutes/`
-(the cost-factor table — Linux small 1 / medium 2 / large 3 / xlarge 6 / 2xlarge 12, macOS M1 medium 6 and M2 Pro large 12, GPU medium 7,
-Windows medium 1 — plus the page's own formula "job duration / 60 × cost factor"). Fetches, with a matcher trap: `circleci.com/pricing/`
-(~16 KB) states its compute rates only in **credits**, and a cell leading on a credit count evidences on an unrelated table — a row written
-`10 credits per min` resolved to a GPU tier list, while `$0.12 per job run — Docker layer caching uses 200 credits per job run … (equivalent
-to $0.12 per job run)` landed on the right sentence, so lead CircleCI rows on their dollar equivalent (also there: network and storage at
-`420 credits per GB ($0.252/GB)`). `buildkite.com/pricing` fetches at ~20 KB but its per-seat and included-minute figures evidence on the
-trial banner's "30 days" — not usable as a row without re-phrasing. `about.gitlab.com/pricing/ci-cd/` is unreachable; the docs page above
-is the working substitute. A price-class comparison does not need one vendor per row, but it does need each vendor's *unit* recorded, because
-"minute", "credit" and "cost factor" are three different quantities and one article may not compare them as if they were one.
-
-**Hosts probed live 2026-10-21, building a fleet-sizing / pick-station-saturation brief (the `warehouse_automation_robotics_capex` evergreen).**
-Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` again — a simulation study's **Table 10 flattens to one text run** ("1K-S-N 44 82 91 97 97 … 10K-M-R 21 41 59 73 83"), so a per-scenario throughput curve is citable row by row, and its prose carries the unit-share figure ("Replenishment operations only consume 20.29 % out of the overall time consumed by the robots"); `mmh.com` article pages (a deployment announcement with "designed to support more than 4,500 lines per hour through 24 picking stations" and a robot count at the site, and the January **2026 Automation Study** with its buyer-priority and adoption percentages as text — the survey is the cheapest measured anchor for what buyers rank); `locusrobotics.com/blog/…` (a vendor ratio page: "a single associate working alongside four Locus robots … 300-400 units per hour"). Fetches but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreachable), `nfpa.org/codes-and-standards` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog guesses (404 shell). Unreachable to the verifier on this beat: `mir-robots.com/products/…`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) — so a facility-readiness angle (sprinkler clearance, charger circuits, floor flatness) cannot get past `osha.gov`/`ecfr.gov` code rows, and was dropped at 7.4 rather than written on general-industry statute. **A robot vendor's SUMMARY block quotes the EMPTY machine — read the detail block before a duty-cycle row (learned 2026-10-28).** `mobile-industrial-robots.com` fetches (4 KB per model page) and its detail block carries what a fleet-sizing row needs: "Active operation time with maximum payload 6 h 45 m" against "9 h 50 min" empty on the MiR1350, "Charging ratio: Up to 1:12 (10 min charging gives 2 h runtime with maximum payload)", "Charging current Up to 35 A" and "Minimum 3 000 cycles"; the MiR250 page gives "with maximum payload Up to 13 h" against "17 h 30 min" empty at 1:16. But each page's SUMMARY block prints the unloaded run time ("Active operation time: Up to 10 h", "Up to 17 h 30 min"), so a row written from the summary ships a shift-length figure the loaded machine never reaches — the first gate row of that run was written on 17 h 30 and had to be re-cut to 13 h and the gate re-run, because editing a row makes the marker stale. Two habits close the class: lead a duty-cycle row on the phrase that carries "with maximum payload", and treat any vendor page whose summary and detail blocks differ as two sources, not one. Same run: `ideas.repec.org` and `pure.eur.nl` both carry the same EJOR abstract (Zou, Xu, Gong & De Koster 2018 — "ignoring the battery recovery will underestimate the number of robots required and the system cost for more than 15%", swapping beating plug-in "by as large as 4.88%" at a "generally higher" annual cost), which is how one paywalled paper can supply two honest rows on two hosts; `ecfr.gov`-style statute rows are not needed for a charger-circuit fact because `afdc.energy.gov` prints "7.2 kW" and "a dedicated 40-Amp circuit … Article 625" as prose.
-
-**A four-robot ratio and a 187.5-lines-an-hour design target are not each other's check:** keep the noun attached (per associate vs per station), and treat the vendor's manual baseline ("around 40-60 UPH according to industry data") as a second-hand claim, never as a measured one.
-
-**Hosts probed live 2026-10-22, building a remodel-deposit / cancellation-window brief (the `home_ops_execution` evergreen).**
-Carries the figure as plain text and fetches first try: `california.public.law` (**the slug keeps the decimal point —
-`/codes/ca_bus_and_prof_code_section_7159.5`; the underscore form `…_7159_5` is a hard HTTP 404**, which is how a brief's
-first gate run failed), where B&P § 7159.5 prints the downpayment cap ("the downpayment shall not exceed one thousand
-dollars ($1,000) or 10 percent of the contract amount, whichever amount is less") beside (a)(5)'s bar on paying past
-"the value of the work performed or material delivered", and Civil Code § 1689.6 prints the home-solicitation
-cancellation right — **but only in the "third business day" / "fifth business day" word forms, so no cell can lead on a
-digit-free `three business days`** and a digit cell collides with the subsection numbering (skipped, cited in prose);
-`dllr.state.md.us/license/mhic/mhicpre1978.shtml` ("one third of the total contract price at the time of signing" — the
-spelled-out "one third" makes a clean digit-free row); `labor.maryland.gov/license/mhic/mhiccontracts.shtml` (the
-Door-to-Door notice's "fifth business day … or … seventh day if the buyer is at least 65" and the financed-contract
-"within three business days after the date you sign it", plus the 1/3 deposit sentence whose only citable token is
-unusable — `1/3` tokenises to 1 and 3); `malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter142A/Section2` ("in an
-amount in excess of one thousand dollars shall be in writing", and the deposit "greater of one-third … or the actual
-cost of any materials or equipment of a special order"); `ecfr.gov` 16 CFR Part 429 ($25 at the residence / $130
-elsewhere, the fixed-retail-location carve-out, the 10-point bold cancellation notice, "within TEN BUSINESS DAYS", and a
-timeline panel reading "No changes found for this content after 1/03/2017" — a free as-of anchor). **Matcher traps on
-this beat:** the eCFR banner date `10/20/2026` catches any cell leading on `10`, so the refund row must be written
-digit-free (`ten business days — …`); a cell leading on `3` evidences on the statute's `( 3 )` subsection marker; and
-`$25`/`$130` both land on the definition sentence, so they are one row, not two. Unreachable to the verifier: `ftc.gov`
-(both the consumer Cooling-Off page and the business-guidance page), `mass.gov` info pages, and guessed CSLB consumer-guide
-paths (`/Consumers/Consumer_Guides/Home_Improvement_Contracts.aspx` answers a "Page Not Found" shell at HTTP 200).
-
-**Hosts probed live 2026-10-22, building a pick-face days-of-supply brief (the `supply_chain` evergreen).**
-Carries the figure as plain text and fetches first try: `mmh.com/article/<slug>` (trade-press article pages, 13–24 KB —
-`best_practices_slot_leadership` holds the pick-versus-replenishment trade as one sentence, "A pick location with one
-week of inventory … pickers have to travel an extra 10 miles in that time … if there is only one hour of inventory in a
-slot, pickers walk inches, but replenishment personnel are swamped", plus the days-of-inventory sizing method, the
-quarterly review cadence and the single-bin limitation that keeps 100% of an item's stock in one face;
-`inside_the_4_walls_finding_hidden_warehouse_savings` holds "walk-time can be 40%+ of the total time picking" and the
-80/20 pick-activity split), `onetonline.org/link/summary/53-7065.00` (stockers and order fillers, "Median wages (2025)
-$17.95 hourly, $37,330 annual"), and `ctl.mit.edu/publications/<slug>` — **a university capstone's publication page
-fetches at only ~2.3 KB yet carries the entire abstract**, including the cost-share premise ("order picking accounts for
-approximately 50% of total warehouse operational costs") and the study's own result ("achieving an estimated 24% reduction
-in travel distance"), which makes it the cheapest *modelled* anchor on a warehouse-labour beat when the peer-reviewed
-version is an unreachable PDF.
-**A trade-press page's date must be read out of the body before the row is written** (learned 2026-10-22): the slotting
-article above is `October 1, 2015` while its sibling 4-walls piece is `September 1, 2025`, and both render in the same
-layout — cite a decade-old practitioner illustration as a mechanic with its date in the sentence, never as a current
-benchmark, and write the year into the brief's own gate rulings. Its `30%` collides with "after 30 years" a few
-paragraphs earlier, so a consultant's 30%-travel-reduction claim rides in prose under the same citation instead of
-carrying a gate row.
-
-**Hosts probed live 2026-10-22, building an inventory-record-accuracy / count-allocation brief (the `demand_sensing_advanced_sop` evergreen).** Carries the figure as plain text and fetches first try: `cmr.berkeley.edu` (a publisher's article record — the abstract alone states the 2001 study's "sixty-five percent of their inventory records were inaccurate", "reduce profits by more than 10%", and the identical-IT sentence that puts the constraint in process rather than software); `ideas.repec.org` (publisher abstract records for paid journals — D&R's "nearly 370,000 inventory records from 37 stores, … 65% to be inaccurate" and "26.4% of the total variance … between product categories and … 2.7% … between stores"; Kök & Shang's cycle-count policy paper fetches too but its abstract carries **no digit at all**, so it can anchor prose and Sources, never a row); `arxiv.org/abs/2506.05357` (the 2026 grocery study states the sample, the associations and the 11% audit lift *in the abstract*, so the abs page is a legitimate row here); `mmh.com/article/<slug>` (trade article dated 9 May 2017 — "from 75% or 80% to more than 99% when cycle counting is well implemented", the 10%-of-active-locations method and the fast-mover/high-value focus); `strategosinc.com` (an undated consultancy page carrying "MRP and ERP systems require very high accuracies (95%-99%)" — a practitioner command, label it). Unreachable or unusable on this beat: `researchgate.net` (unreachable), `scielo.br` (unreachable, though the same paper's `prod.org.br` record fetches with abstract only and no figures), `rfid.auburn.edu` (a 2.9 KB navigation shell whose only prose is a cookie notice), `werc.org` (unreachable), and guessed `mmh.com/article/<topic>` slugs (404 — resolve the real slug first). One cross-study rule this beat needs: two studies can report the same 65% for **different** retailers a year apart, so never merge them into one statistic attributed to one paper.
-
-**Hosts probed live 2026-10-23, building a capital-loss / wash-sale brief (the `concentrated_equity_portfolio_capital` evergreen).** Carries the figure as plain text and fetches first try: `ecfr.gov/current/title-26/section-<part>` (`§ 1.1091-1` states the band itself — "a period beginning 30 days before the date of such sale or disposition and ending 30 days after such date (referred to in this section as the 61-day period)" — plus the buy/exchange/option triggers and the trade-or-business and dealer carve-outs; the page banner prints "Displaying title 26, up to date as of 10/21/2026", a free as-of anchor and a bare-integer trap for any cell that leads on `10` or `26`); `law.cornell.edu/uscode/text/26/<section>` (§ 1211's "the lower of— (1) $3,000 ($1,500 in the case of a married individual filing a separate return)" and § 1091(d)'s replacement-basis sentence, 5–8 KB each with no amendment-history noise); `irs.gov/taxtopics/tc409` (the carry-forward sentence beside the $3,000 ceiling) and `irs.gov/publications/p550` (the "Substantially identical" paragraph: "Ordinarily, stocks or securities of one corporation are not considered substantially identical to stocks or securities of another corporation" — but its first `61-day` occurrence is a *qualified-dividends holding period* example, so no p550 row can lead on that token); and `investor.gov/introduction-investing/investing-basics/glossary/wash-sales` (5 KB, the regulator's one-sentence statement of the 30-day band — the cheapest second host on this beat). **`govinfo.gov`'s title-26 USCODE HTML path returns a 1,923-character stub**, the same failure class as its title-46 path, so a statute row rides on Cornell or eCFR; guessed `irs.gov/newsroom/irs-…-for-tax-year-2026` slugs 404, so a bracket/rate figure cannot be sourced cheaply — the article carries no rate. A comma-grouped `$3,000` tokenises to `3` and `000`, and on Topic 409 the `000` match lands on the operative "lesser of $3,000" sentence rather than a coincidence, but eye-check the excerpt because `3` alone would hit an earlier figure.
-
-**Hosts probed live 2026-10-23, building a carrier-notice-clock brief (the `resilient_home_assets` evergreen).** The whole beat rides on state statutes, and three hosts carry them as plain text: `flsenate.gov/Laws/Statutes/<year>/<section>` (§ 627.4133's "at least 120 days before the effective date of the nonrenewal, cancellation, or termination" for personal-lines residential property, its ten-day nonpayment carve-out, and (2)(d)'s remedy that coverage "shall remain in effect" at the same premium when the notice is short); `california.public.law/codes/ca_ins_code_section_<n>` (§ 678's "At least 75 days before the policy expiration" plus (c)(2)'s 75-day continuation from the mailing, and § 676's "has been in effect for 60 days … no notice of cancellation shall be effective unless"); and `app.leg.wa.gov/rcw/default.aspx?cite=<section>` (RCW 48.18.290's "at least 60 days before the effective date of the cancellation", which prints below a maintenance banner that carries no figures). **A short-integer figure can fail outright rather than verify on a coincidental window:** a Florida nonpayment cell written `10 days — a cancellation for nonpayment of premium needs only 10 days written notice` returned **no evidence at all** (`figure_evidence` empty) although § 627.4133(2)(b)1 prints that sentence, so carry the rule in prose under a row that already verifies instead of giving it its own row — probe a two-digit figure with `c.figure_evidence(...)` before planning on it. The same run's rejected beats are worth keeping because their anchors were re-probed rather than inherited: the wildfire Zone 0 spec **does** fetch (`ibhs.org/wildfire/vegetationinzone0` — "17 controlled experiments", the well-watered-plants finding, "the moisture content of plants increases the time to ignition"; `wildfireprepared.org/wildfire-prepared-home-base-vs-plus` — the 0–5 foot zone, 1/8-inch metal mesh, 6-inch clearance, fencing within 5 feet; `insurance.wa.gov/about-us/current-initiatives/wildfire-risk-and-your-insurance/ibhs-wildfire-prepared-home-designations` — the 6-inch siding line, the $125 fee and the three-year designation; `www.ibhs.org/wildfire/` for a field count like "destroyed 615"), while the dual-office acoustic beat still has **no** fetchable measured anchor (`usg.com`'s Quiet Zone page fetches as navigation only, `rockwool.com` and `nationalgypsum.com` are unreachable, and `nrc-cnrc.gc.ca/eng/solutions/advisory/acoustics.html` redirects to the NRC home page), so a partition-STC article cannot clear the Evidence axis however strong its customer-truth anecdote is.
-
-**Hosts probed live 2026-10-30, building a section 1202 / 83(b) clock-and-ladder brief (the `career_velocity_equity_engineering` evergreen).** Carries the figure as plain text and fetches first try: `law.cornell.edu/uscode/text/26/1202` (41 KB — the whole statute in one page: the $15,000,000 per-issuer cap in (b)(4)(B), "10 times the aggregate adjusted bases" in (b)(1)(B), the 50/75/100 table in (a)(5), the $75,000,000 gross-assets test in (d)(1), the original-issue rule in (c)(1)(B), the excluded-trades list in (e)(3)(A), the indexing rule, and the amendment note carrying "July 4, 2025, 139 Stat. 192"); `ecfr.gov/current/title-26/section-1.83-2` and `…/section-1.83-4` (the 30-day filing window, the rule that a forfeiture after an election is a sale at a *capital* loss, and the sentence that makes the whole piece legal — the holding period begins at vesting, or at transfer if an election is made); `irs.gov/taxtopics/tc409` (the 20 percent top long-term rate **and** the sentence most writers miss: "The taxable part of a gain from selling section 1202 qualified small business stock is taxed at a maximum 28% rate") and `irs.gov/individuals/net-investment-income-tax` (3.8 percent plus the $200,000/$250,000/$125,000 thresholds). **Three traps this beat is built on.** (1) *The taxable part of a QSBS gain is not taxed at the ordinary 20 percent rate* — it is 28 percent, so the effective burden at the three-year rung is 31.8 × 50 = 15.9 percent, not 11.9; a run that multiplies by 23.8 publishes a number the agency's own page contradicts, and no gate reads it. (2) *Two of the statute's load-bearing figures cannot hold a gate row*: the (a)(5) ladder's first token always evidences on (a)(1)(A)'s pre-enactment "50 percent" sentence, and `$75,000,000` tokenises to `75`, which collides with "75 percent" in (a)(3) — carry both in prose with the section citation and quote them verbatim in the `_evergreen_verified_brief.md`. (3) *The frontier pass invents the downside of the election*: it turned § 1.83-2(a)'s "such loss shall be a capital loss" into "the IRS does not issue refunds if you later lose unvested shares", a claim no source makes, while also restoring the retired four-part "At a glance" box and dropping the headline's own figure out of the lead. Read the catch section against the regulation's own sentence, and re-score the headline against the **final** body.
-
-**Hosts probed live 2026-10-23, building a certificate-cost / payback brief (the `career_velocity_equity_engineering` evergreen — the beat two earlier runs refused).** Carries the figure as plain text and fetches first try: `cloud.google.com/learn/certification/<slug>` (the exam block as one sentence — "Standard exam information Length: 2 hours Registration fee: $125 … Validity period: 3 years … Renewal exam information Length: 1 hour Registration fee: $75", plus "Recommended experience: 6+ months hands on experience with Google Cloud"); `coursera.org/courseraplus` (the whole plan table as text: "$59 /month … or $399 /year", individual courses "$49 – $79 /month"); `coursera.org/professional-certificates/<slug>` (**the course cards carry per-course hours** — "Course 3, 28 hours" — beside a "3 months at 10 hours a week" design, a programme total in months rather than hours, the "75% of certificate graduates report a positive career outcome" survey line and its 2022 footnote, and the CompTIA A+ preparation sentence); and `onetonline.org/link/summary/<SOC>` for every wage anchor. **Two traps this beat is built on.** (1) *A vendor's own product menu can own the first occurrence of a small fee*: `125` first appears in Google's nav as "transcription across 125 languages" and `99` as "99.999% availability", so a `$125`- or `$99`-led row's evidence window reads as navigation. Lead the Google row on `$75` (the renewal block, which lands cleanly) and carry the exam fee and validity period in prose, verbatim, under that row. (2) *A per-hour figure times a count is a recompute trap for Loop 3, not just a derived percentage*: the rewrite priced "two hours in the chair" at the **systems-administrator** median while calling it the help-desk one ($95 against a true $59), and restated $75 ÷ 3 as the whole cash cost of a $125-plus-renewal credential. Recompute every hours × wage and every per-term amortisation in the final from its two cited endpoints — the digits all being correct is exactly what lets a wrong product through. Also worth knowing: the payback angle was refused on 2026-10-09 and 2026-10-16 because it would have rested on a "certified workers earn X% more" premium that no measured primary states. It clears the floor honestly when the *benefit* leg is a measured occupational gap between two O*NET medians and the only vendor claims are prices and hours — do not resurrect the premium row to make the arithmetic easy.
-
-**Hosts probed live 2026-10-23, building a fridge-efficiency-payback brief (the `consumer_asset_repair_replace_tco` evergreen).**
-Carries the figure as plain text and fetches first try: `energystar.gov/products/refrigerators` (7.6 KB — the whole
-program page as prose: "you can save about $150 over the 12-year lifetime of the product", "an older unit draws about
-20% more energy than a model that has earned the ENERGY STAR", "about 9 percent more energy efficient than models that
-meet the federal minimum", the "$95 per year to run" line for 15-year-old units, the retailer pickup sentence and the
-`Rebate Finder` "our partners sponsor rebates" line — one page can carry four or five honest rows);
-`eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php` (the 2025 class table *and* the state
-spread, "17.30¢ per kWh" residential against 13.63¢ all-customer, "35.72¢ per kWh in Hawaii to 8.20¢ per kWh in North
-Dakota"); `onetonline.org/link/summary/49-9031.00` (home appliance repairers, "Median wages (2025) $24.51 hourly,
-$50,990 annual" — the labour anchor for any repair-cost beat, and the same page's sample job titles license the phrase
-"appliance repair technician"); and `ecfr.gov` 10 CFR 430.32 (96 KB, the class-3 ceiling as text — "Refrigerator-freezers—
-automatic defrost with top-mounted freezer without an automatic icemaker 8.07AV + 233.7" — plus the sentence fixing
-current standards at "on or after September 15, 2014, and before the 2029/2030 compliance dates depending on product
-class", and a banner that prints "up to date as of 10/21/2026"). **Matcher traps on this beat:** a cell leading on
-`20%` evidences on the *coolers* sentence two paragraphs earlier ("ENERGY STAR certified coolers are up to 20% more
-efficient"), so the old-vs-certified claim must ride under a row that already verifies; and a cell leading on the
-compliance date `January 31, 2029` lands in the eCFR's own revision-history block, so date a standards row from the
-prose sentence instead. **A program page can contradict itself across sentences and the arithmetic is what settles
-it:** "$95 per year to run" read as a premium would require a 2,745 kWh refrigerator while the same page's own 20%
-and $150/12-year lines imply a ~549 kWh unit — so the total-cost reading is the coherent one and must be written as a
-FLAGGED reading rather than presented as the page's own statement. And an efficiency row whose parenthetical says the
-badge is worth "about a tenth" of running cost should be recomputed from its own two figures ($12.50 ÷ $74.63 = 16.7%,
-a sixth) — the derived-ratio class no gate reads.
-
-**Hosts probed live 2026-10-26, building a tariff-spread / battery-payback brief (the `home_equity_tco` evergreen).**
-Carries the figure as plain text and fetches first try: `sdge.com/residential/pricing-plans/about-our-pricing-plans/whenmatters`
-(the whole residential plan page at ~33 KB, and it is the single best anchor this desk has found for a *rate-design*
-claim because it prints **both customer classes side by side for the same plan and the same effective date** —
-`TOU-ELEC` at "25.6¢ 25.6¢ 25.6¢" for a CCA delivery-only customer against "34.5¢ 38.9¢ 72.6¢" bundled, `TOU-DR2` at
-"22.3¢ 23.0¢" against "31.0¢ 58.9¢", and `EV-TOU-5` at "4.7¢ 31.8¢ 31.8¢" against "13.1¢ 49.6¢ 80.2¢", every table
-footed with "Prices effective August 1, 2026" and the sentence that makes the thesis legal — "Prices shown are SDG&E
-delivery charges only. CCA customers must also pay for electric generation at prices determined by the CCA"); `coned.com/en/accounts-billing/your-bill/time-of-use`
-(~10 KB, the residential TOU block as one run — "June 1 to Sept 30 $0.2786 per KWhr $0.0522 per kWhr All other months
-$0.1711 per KWhr $0.0522 per kWhr", the "$21.00" monthly customer charge, and the page's own "these rates do not
-include various surcharges" caveat); `enphase.com/store/storage/iq-battery-5p` (product spec: "5.0 kWh" usable, "DC
-round-trip efficiency: 96% AC round-trip efficiency: 90%" — the loss term any arbitrage arithmetic must subtract, and
-a vendor claim row); `eia.gov` energy-explained electricity prices (2025 class table, 17.30¢ residential).
-**The structural finding worth reusing:** in an aggregator state the utility's TOU table is *delivery only*, so its
-peak-to-off-peak gap can collapse to 0¢ (TOU-ELEC, flat 25.6¢) or 0.7¢ (TOU-DR2) while the bundled twin of the same
-plan spreads 38.1¢ or 27.9¢ — but the EV plan keeps a 27.1¢ delivery gap because super off-peak delivery is priced at
-4.7¢, so "CCA means no arbitrage" is false and the article must print the plan, not the customer class, as the unit.
-**Unreachable to the verifier on this beat:** every `pge.com` and `sce.com` rate page tried (a tariff PDF reads
-`unsupported`, the HTML plan pages `unreachable`), `energy.gov/energysaver/*` heat-pump pages, `neep.org` (the
-cold-climate product list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` — which is why the
-heat-pump-COP candidate was dropped at 7.3 (its load-bearing figure is temperature-specific COP and no fetchable page
-states one) while the tariff-spread candidate cleared at 8.8 on four hosts.
-**A refusal on the light-direction cue can clear on a plain re-run, so retry before pinning a style** (learned 2026-10-26):
-`illustration_creator.py --apply` failed three attempts with "prompt does not say which way the light comes from" on a
-prompt whose own text reads "warm raking ochre directional light", and the second `--apply` (same style, no pin, no
-edit) generated on its first attempt — so a single refusal loop is not evidence the treatment is unusable, and pinning
-`--style` or hand-writing a prompt on the strength of it costs credits for nothing.
-
-**Hosts probed live 2026-10-24, building a snow-clearing cost-per-square-foot brief (the `outdoor_power_equipment` evergreen — the vertical's first artifact of any kind).** Carries the figure as plain text and fetches first try: `egopowerplus.com/two-stage-snow-blower-snt2400` (the product page's Tech Specs as one run — "Throws snow up to 50 feet Clears up to an 18-car driveway with 8 inches of snow on a single charge when used with the two recommended 7.5Ah ARC Lithium™ batteries 24-inch clearing width/20 inch intake height", plus the 56 V platform and the SNT2400/2405/2406/2406-4 pack configurations — but no price anywhere, the configuration table reads "Coming Soon"); `heattrak.com` (the driveway-mat page's Sizing-and-Amps block is a goldmine: 24"×10' = 5.8 A at 120 V, 24"×20' = 11.7 A, i.e. ~35 W/sq ft on both; the same page prints "Sale price $ 1,075.00 USD"; the FAQs page carries "$0.18 per hour … $1.80 for ten hours", "up to 2 inches per hour", the 13-amps-per-power-unit cap, the 5–6 year lifespan and the "lay as a track for one tire" positioning; the home page carries the walkway mat at $229.99); `warmlyyours.com/en-US/snow-melting` (87 KB with the whole FAQ: "at 50 W/sq ft, every 100 sq ft draws 5 kW, or $1.00 per energized hour at an illustrative $0.20/kWh", the 400 sq ft = 20 kW = $4.00/hour = $24.00-for-six-hours worked example, "Typical driveways: 400–800 sq. ft.", "Professional installation … between $10 and $25 per square foot, including materials and labor", and "designed to melt 1\" - 3\" of snow per hour"); `snowjoe.com/collections/snow-blowers` (the 11-inch 10-amp corded shovel at $124.99, the 24 V 4.0 Ah pack at $89.97 and the shovel bundle at $199.99, all as text in the listing); `eia.gov` energy-explained for the 2025 class table. **Matcher traps on this beat:** HeatTrak's page header prints the phone number "+1 (888) 586-4904", so *any* cell leading on a bare `1` matches the phone — the $1,075 driveway-mat price cannot carry a gate row in any phrasing and rides in prose under a row on the same page; WarmlyYours' navigation ("10+ bars", "25 people found this helpful") catches cells leading on `$10`, `$25` or `25`, so its install range is prose too; and a cell leading on `50` matches a customer review ("6 50ft snow mats"), so the design-density row must lead on the worked example's `$1.00 per energized hour` instead. Fetched but carries no row: `toro.com`, `husqvarna.com` and `greenworkstools.com` collection pages are navigation plus client-rendered product grids (15–159 numeric tokens, none of them a spec or a price); guessed `heattrak.com/pages/energy-cost-calculator` and every guessed `heattrak.com/products/<slug>` return 404 — resolve the real product slugs from the home page first. A vendor's runtime/cost claim is frequently a *per-unit* figure with no configuration named: HeatTrak's "$0.18 per hour" implies 1.04 kWh/hour, i.e. about 30 sq ft of mat, so it describes a walkway set and may never be scaled to a driveway without recomputing.
-
-**Hosts probed live 2026-10-31, building a cold-weather pack-capacity brief (the `outdoor_power_equipment` evergreen).** Carries the figure as plain text and fetches first try: `batteryuniversity.com/article/bu-502-discharging-at-high-and-low-temperatures` — the pair the whole beat turns on, "A battery that provides 100 percent capacity at 27°C (80°F) will typically deliver only 50 percent at –18°C (0°F)", beside "manufacturers prefer to specify batteries at a toasty 27°C (80°F)", "The momentary capacity-decrease differs with battery chemistry", and the cycle-life sentences (20 percent at 30°C, 40 percent at 40°C); `…/bu-410-charging-at-high-and-low-temperatures` — the permanent-damage sentence, "consumer-grade lithium-ion batteries cannot be charged below 0°C (32°F). Although the pack appears to be charging normally, plating of metallic lithium occurs on the anode during a sub-freezing charge", plus the 0.02C at –30°C / "over 50 hours", the 10°C to 30°C window and "Advanced chargers (Cadex) prevent charging Li-ion below freezing"; `afdc.energy.gov/fuels/electricity-benefits` ("12 to 15 years in moderate climates (8 to 12 years in extreme climates)"); `fueleconomy.gov/feg/coldweather.shtml` (EV "fuel economy can drop roughly 39% … and range can drop by 41%", a second DOE host for the same mechanism); `egopowerplus.com/two-stage-snow-blower-snt2400` (the recommended two-7.5Ah configuration as text, still no price). **Matcher traps on this beat, all the nav-digit class:** BU-502 opens with an inline `scrollY > 100`, so a cell leading on `100 percent` evidences on navigation and the capacity row must lead on `-18°C`; a `0°C`/`32°F` charge-floor cell lands in BU-410's own battery-type table ("NiCd, NiMH 0°C to 45°C … 32°F to 113°F"), so the plating rule rides in prose under the 0.02C row; and a `20 percent` cycle-life cell evidenced on the preceding sentence until the cell led on `40°C`. Price hosts for a platform-economics version of this beat do retrieve — `powerplusparts.com/collections/ego-batteries` prints the EGO ladder as one run (2.5Ah $159 → 12Ah $659, with the 4Ah at $279 and the 8Ah "ARC Lithium MAX" at $599) and `greenworkstools.com/products/<handle>` prints 60V pack prices beside charger prices ($49.99 3A, $79.99 6A, $179.99 dual-port) — so a "battery platform" candidate refused on evidence in 2026-10-24 now fails only on de-dup (it re-argues the 2026-10-25 spare-pack article), not on fetchability.
-
-**Hosts probed live 2026-10-27, building a zero-cloud camera-archive sizing brief (the `smart_home_telemetry` evergreen).**
-Carries the figure as plain text and fetches first try: `reolink.com/product/<model>/` — a camera product page prints
-its whole spec table as text, including the line an archive calculation turns on ("Code Rate Mainstream: 4096Kbps -
-8192Kbps (default: 6144Kbps) Substream: 64Kbps - 512Kbps (default: 256Kbps)", "Video Resolution 3840x2160 (8.0
-Megapixels) at 25 frames/sec", the frame-rate defaults, and the microSD capacity table "48.5hours 128GB 97.1hours
-256GB 194.2hours 512GB", which is a free cross-check on the bitrate arithmetic — 512 GB ÷ 194.2 h = 2.636 GB/h = 63.3
-GB/day, about 5% under the 66.36 GB/day the code rate implies, so an honest body writes a budget band and says why);
-`docs.frigate.video` (three pages, 9–41 KB, numbers in prose — camera setup's "The default frame rate of 5fps is
-correct for almost all cameras", its recording-feed advice "I recommend setting this feed in your camera's firmware to
-15 fps", and recording's "3 days … 7 days … 30 days" retention ladder); `synology.com/en-us/products/<model>` (the
-Surveillance Station block — "Default Licenses 2 (Additional cameras require purchase of licenses)", "4K: 17 channels,
-170 FPS" H.264 against "4K: 20 channels, 200 FPS" H.265, and the vendor's own test caveat "fully populated with drives …
-under a continuous recording setup").
-**Two traps this beat is built on.** (1) *A recommendation is not a disk lever:* Frigate's 15 fps advice is about
-playback and bandwidth — its own page says so — so an article that presents it as a storage tip ships a claim no
-source makes; the code rate is the disk lever and the frame rate is the recorder's decode ceiling. (2) *A recorder's
-ceiling is published as total frames at a resolution, never as a camera count:* divide it and name the divisor
-(170 ÷ 25 = 6.8 cameras at 4K H.264), and say whose software the ceiling belongs to — it is that box's own recorder app
-under the vendor's test conditions, not a benchmark of the pipeline the reader will run.
-**`source_gate` and the evergreen gate send different user-agents:** `reolink.com` answers the source gate **403**, so a
-citation the gate verified reads UNVERIFIED-at-the-push (a note by design, never a hold) — expect it and say so in the
-run log. `help.ui.com`'s UniFi VLAN articles are unreachable to the verifier, so a bare IoT-VLAN privacy piece has no
-numeric primary and dies near 6.7; the archive arithmetic is the half of that angle that can be sourced.
-
-**A frontier rewrite will lowercase a brand to a dictionary word, and no gate reads it (learned 2026-10-31).** `article_reviewer.py` returned "Ego (the outdoor power equipment brand)" where the draft and the source both say EGO — the accessibility acronym check passes any acronym carrying a gloss, `review_audit` compares figures and citations rather than names, and the voice gate reads tone, so the miss ships unless a human diffs the proper nouns. Diff every brand and product name in the rewrite against the draft's own casing. Two siblings from the same pass: it invented a filler observer cue ("I read the manufacturer ratings twice to grasp how much temperature dictates performance") that satisfied the cue matcher while deleting the section's actual argument, and its catch priced a saving ("saves the most money here") in an article that carries no price at all — read each interpreting section for whether the sentence says anything, not just whether a cue is present.
-
-**The frontier rewrite turns a comparison into an absolute and restores the retired TL;DR box — check both by hand before the push (learned 2026-10-30).** On the Class 4 hail piece the Loop 3 output rendered IBHS's "became up to ten times more susceptible to damage from later large hail … compared to new shingles" as "an aging roof breaks up to ten times faster" — a different, unsupported claim — and moved "two seasons" to "two years". The same pass discarded the 2026-10-29 three-line `At a glance` (shift / number / risk, under 50 words) and rebuilt the retired four-part box with a nested **What I'd Watch** list, the second run in three days to do so. Read every comparative ("faster", "weaker", "riskier"), every `up to`, and the box schema in the rewrite itself, because Flesch, the figure diff and the voice gate all pass a piece that overstates its own finding.
-
-**Plan which section owns each figure before drafting — `article_shape` allows a figure in at most two body
-sections, and the lead counts as one (learned 2026-10-26).** A series that appears in the lead, again in
-`By the numbers` and again in `At a glance` is HELD at the push ("figure $195 money is restated in 3
-sections"), and a run that discovers this after the frontier pass pays for two more gate cycles. The shape
-that clears it on a cost piece: put the multi-row series in a small table inside the **lead** (a table is
-one statement of each figure, and it sets the stakes where the reader arrives), keep the single derived
-break-even with its formula in `By the numbers`, and write `At a glance` **figure-free** — the four-part
-TLDR does not need a number to satisfy its schema. Run `article_shape.py --check` on the draft, not only on
-the final.
-
-**When a premium or a spread is read off two published bands, name which ends you took and say why that
-pairing is the conservative one (learned 2026-10-26).** "$4.50 a kilo by air against $0.50 by sea" is
-reproducible only if the reader knows those are the cheapest air rate and the dearest container rate on
-one table's list, i.e. the *smallest* premium the source supports — which is also the honest way to argue a
-break-even, because a bigger premium only raises it. A number assembled from two bands without naming the
-ends reads as a midpoint, and a critic can rebuild it from the other ends and get a different answer.
-
-**A "N times" claim has to say which constant it is a multiple of (learned 2026-10-26).** The same derived
-rate reads as **eleven times** the 25% midpoint and **nine times** the 30% top of the 20–30% band, and both
-sentences look right. Write the one you computed, name the constant in the same clause, and re-check it
-after every rewrite — the frontier pass's favourite way to handle an awkward multiple is to delete it and
-write "impossible", which passes Flesch, the figure diff and the voice gate while removing the only number
-that made the argument arithmetic.
-
-**The in-push art director can refuse all three briefs without failing the publish, and `--reimage` reports the switch backwards (learned 2026-10-31).** On the FTZ evergreen `publish.py` printed "published live" with no image line at all, and the post read back `featured_media: 0`; the three refusals (a brief naming no framing rule, then a render carrying legible lettering) were only visible by re-running `illustration_creator.py <artifact> --apply`, whose second round landed on `component_assembly`/nano-banana-pro. `wp_draft.py --slug <slug> --reimage` then printed "uploaded: media N — featured_media NOT yet switched" while the post **did** switch: read the post's `featured_media` back over REST rather than trusting that line, and check the media record's own `alt_text` (the sidecar edit lands there). The reader front had already built the page before any media existed, so the hero was missing (0 `wp-content/uploads`, `og:image` = the default share image) until `giniloh_coolify_redeploy_all()` inside the CMS container queued the fronts — expect the forced redeploy on every first publish of a late-illustrated article, not only when the illustration pass is skipped outright.
-
-**The art director's refusals rotate validation reasons across attempts on the same artifact, so one failure
-is not a verdict on the treatment (learned 2026-10-26).** A single article was refused in sequence for
-legible lettering in the render, then for "prompt does not say which way the light comes from", then for a
-missing framing rule — three different complaints from the same director on the same text — and the fourth
-commission landed with no style pin and no prompt edit. A persistence pass that refuses all its attempts
-publishes a post with `featured_media: 0`; re-commission `illustration_creator.py <artifact> --apply` up to
-three times, read the pixels with vision before the upload, then attach with `wp_draft.py --slug … --reimage`
-and read `featured_media` back. Expect the reader front to have built the page before the media existed:
-probe the URL for `wp-content/uploads` references, and when there are none, push the empty
-`ci: re-trigger frontend build for <slug>` commit rather than re-publishing.
-
-**Hosts probed live 2026-10-26, building an order-fill / line-fill brief (the `sales_order_service_level_otif`
-evergreen).** Carries the figure as plain text and fetches first try: `inventoros.com/blog/order-fill-rate`
-(the compounding ladder as one run — "1-line order: 0.98 = 98.0% … 5-line order: 0.98^5 = 90.4% … 10-line
-order: 0.98^10 = 81.7% … 20-line order: 0.98^20 = 66.8%", plus the line that makes the story legal,
-"Customers don't experience a '94% line fill.' They experience a box that's missing the one thing they were
-waiting on"); `fcbco.com/blog/use-initial-order-fill-rate-to-measure-customer-service` (a consultancy's client
-numbers with no date anywhere on the page — 88.5% initial order fill at a 2.25-line basket, 76.5% against an
-inferred 90% at 3.0 lines, and "10-15 full percentage points below the item fill rate", so cite it as undated
-and read the gap as the measured counterpart to the model); `benchmarkingsuccess.com/understanding-fill-rate-kpis-line-fill-rate`
-(March 2018: 96% line fill against ~82% order fill, and "7,500 perfectly filled lines" of 10,000 = 75% — an
-illustration of a mechanic, never a current benchmark); `dclcorp.com/blog/fulfillment/fill-rate` (the 92-98%
-"healthy fill rate" band, defined on an order-level formula). Fails or cannot carry a row on this beat:
-`netsuite.com` resource articles (403 to the verifier), guessed `lokad.com` and `inflowinventory.com` safety-stock
-slugs (404), and `itl.nist.gov`'s normal-distribution page (fetches at 8.5 KB but prints no z-value a service-level
-row could lead on) — so the textbook 95%→99% service-factor ladder cannot carry a gate, and that candidate was
-dropped at 7.6.
-
-**A frontier rewrite can promote a minority rate into the majority (learned 2026-10-26).** The order-fill rewrite
-opened "Ten-line orders routinely arrive short" on an 18.3% miss rate, and the same pass turned a model into a law
-in the TL;DR ("guarantees an 18.3% failure rate"). Both figures were right and every gate passed: `article_shape`
-counts figures, the accessibility floor counts syllables, `source_gate` checks that a cited page carries the number.
-After every rewrite, read each rate's *direction and size* against the brief — "routinely", "most", "always",
-"guarantees" — and re-voice to the measured share ("one in five") before the push.
-
-
-**A rewrite can strip the title's own figure out of `By the numbers` by replacing the bullet's lead with a label (learned 2026-10-27).** On the label-cardinality evergreen the numbers section opened `- **2,500 series — One metric, three labels:**`, and the frontier pass rewrote the bold lead to `- **3 labels — The math effect:**` — the bullet still multiplied 5 × 10 × 50 in its body, but the figure the title cites no longer had a row, so `headline_score` dropped to 84/100 (`a number anchors it` still passed on the body; the lead check failed). Read the first cell of every numbers bullet against the title's figure after a rewrite, not just the figures inside the bullet text. Sibling in the same run: the title itself was re-cut to a 7-word "…The 2,500-Series Trap" variant scoring 84 with `lead_ok: False`, and the hand-set 100/100 title was restored — so score the **rewrite's** title against the **final** body before accepting it either way.
-
-**The observer cue is matched literally, so "My reading, held loosely" is not one (learned 2026-10-27).** `site/social_voice.mjs` accepts `my read|my take|my sense|my view` or a first-person verb, and the `<!-- nuanced-takeaway -->` section of that run opened "My reading, held loosely:", which the gate read as *no cue* and failed `verify.sh` §9 on both the draft and the final. Write "My read, held loosely:" — one word — and fix it in the **draft** as well, because the checker walks `context/drafts/` and the draft alone can red the repo.
-
-**`humanize_path.py` leaves a self-graded `## Gate report` that `review_audit.py` hard-fails (learned 2026-10-28).**
-Every Loop 3 prompt (`humanize_path.py`, `humanize_one.py`, `humanize_loop3.py`) asks the model to append a
-`## Gate report` with per-section PASS lines. `publish.py` strips it from the reader body, but `review_audit.py`
-treats it as "the model grading itself" and returns **FAIL** on the draft-vs-final pair, so a run that audits
-before stripping it sees a hold that has nothing to do with the prose. Strip
-`re.sub(r"\n##\s*Gate report[\s\S]*$", "", text)` from the `_final.md` first, then run the audit, shape,
-accessibility, voice and source gates — and expect the audit's only remaining note to be the rhythm advisory.
-Same run, two smaller traps: `headline_score.py` takes the *title* as a positional argument (or `--slug`), so
-passing an artifact path scores the filename and reports a 73-char headline that does not exist; and the
-accessibility acronym gate reads unit tokens too (`KB`, `MB`, `TB/s`, `GB/s`), so the **draft** has to spell each
-one out at first use — the rewrite will re-expand some (`PCIe`) and leave others bare if the draft did.
-
-**`datadoghq.com/pricing` fetches with every figure as text, but its markup puts numeric junk ahead of its own FAQ prose (learned 2026-10-27).** An SVG `width="16" height="15"` and a `0%…100%` progress string sit earlier in the document than the sentences a row would quote, so a cell leading on `100 custom metrics per host` evidences on navigation while `$ 0.10 Per ingested or scanned GB` lands cleanly. Lead any Datadog row on the ingest or forwarding rate and carry the custom-metrics allotment, its "counted hourly and averaged monthly across your entire account" clause and the $15/$18 per-host prices in prose under that citation, recording in the verified brief that they were read by eye.
-
-**The reviewer rewrites the title's own noun out of the lead, and `lead_ok` is the only instrument that
-notices (learned 2026-10-29).** On the sandbox-boot evergreen a hand-set 100 STRONG headline
-("Your Sandbox Boot Tax: 110x, Then Nothing") came back with the lead opening "Your code boundary
-charges a tax" — the article's own subject noun gone from sentence 1 while `headline_score` still read
-100 standalone, and `lead_ok` flipped to False naming both `boot` and `nothing` as absent. The same pass
-dropped the headline's second clause altogether ("fades into background noise"), so the title promised a
-disappearance the body no longer described. Re-score with `hs.score(title, body=<the FINAL>)` and restore
-the title's exact nouns plus the warrant sentence from the verified brief; do not accept a re-cut title
-whose hook the lead no longer earns.
-
-**Fixing `rhythm health` by splitting sentences drops the `sd` the audit actually compares, so tune both
-at once (learned 2026-10-29).** On the same article `review_audit` first read `rhythm health 0.832 ->
-0.294` (one 43-word sentence in the tail), and the split that fixed health took `sd` to 7.7 — under the
-85% floor the flattened-rhythm advisory reads, so the two advisories swapped places across three editing
-passes. The shape that clears both: keep one connected 33–36-word sentence, add three or four genuinely
-short ones (4–7 words) at section openers, and leave the numbers bullets long; that landed
-`sd 10.2 -> 10.9` (better than the draft) with health above the draft's, Flesch 63.8 and every gate green.
-
-**A regulation can still be quoting the code as it was thirty years ago — cite the statute for what the limit is now (learned 2026-10-30).**
-Building the charitable-gift evergreen, `26 CFR § 1.170A-8(a)(1)` fetched cleanly (46 KB) and states the 20-/30-/50-percent
-ladder, but the same sentence calls `§ 170(b)(1)(C)` "the unlimited charitable contributions deduction" — a pre-1986 usage.
-The regulation is right for the ladder and for its own worked example (Example 5: $6,000 allowed against a $20,000
-contribution base, i.e. 30 percent), and wrong as a description of the current subsection, so the article cites the
-regulation only for arithmetic and the statute for the rule. Read any regulation's cross-axis references against the
-current code before quoting one as the rule.
-The hosts that carry this beat, all fetched first try: `irs.gov/publications/p526` (195 KB — "Amount of deduction—general rule
-… you can generally use the FMV", the 50%-limit election's worked example that drops a $28,000 basis-$22,000 gift to
-$22,000, the 150%-overstatement / 20% penalty block, the $500 Form 8283 threshold and "Also use Section A to report
-contributions of publicly traded securities"); `ecfr.gov/current/title-26/section-1.170A-8`; `law.cornell.edu/uscode/text/26/170`
-(199 KB); `irs.gov/individuals/net-investment-income-tax` (the 3.8 percent surtax and the $250,000 joint threshold);
-`irs.gov/taxtopics/tc409` (the 20 percent top long-term rate). **A matcher trap on that statute:** a cell leading on
-`30 percent of the taxpayer's contribution base` evidences on `§ 170(b)(1)(B)(i)` — the 30 percent cap for *other*
-contributions — not on `(C)(i)`, the capital-gain-property cap; `5 succeeding taxable years` lands one line above the
-`(C)` heading and is the cleaner row, so put the capital-gain cap in prose under the statute citation. **And the definition
-the whole article turns on is one paragraph away:** `§ 170(b)(1)(H)` defines "contribution base" as adjusted gross income
-computed without regard to **any net operating loss carryback** — a capital-loss carryback is *not* excluded, so "a loss
-carryback" is a claim the statute does not make.
-
-**Hosts probed live 2026-10-30, building an ink-plan / cost-per-page brief (the `consumer_asset_repair_replace_tco` evergreen).**
-Carries the figure as plain text and fetches first try: `hp.com/us-en/printers/instant-ink.html` (18.5 KB — the
-whole market decision on one page: five monthly tiers with caps and fees ("10 pages per month $1.99/mo … 700 pages
-per month $32.99/mo"), the yearly ladder ("8400 pages per year $355.99/y"), the no-subscription option ("20-Page
-Set $5.49 75-Page Set $19.99"), the overage sentence ("Buy extra sets of 10–15 pages for just $2 each"), the
-rollover ceiling ("3x the number of pages in your plan (Example: 150 pages if on the 50-page plan)") and the
-yearly plan's "unused pages do not roll over"); `epson.com` product pages (the ET-2800's "Our Price: $239.99 After
-21% savings: $189.99" with the promo window in the same block, "Replacement Ink Yield ISO Pages: T522 — Black:
-4,500, Color: 7,500", the extended-service-plan prices $46/$80, and footnote 4 "Based on average monthly document
-print volumes of about 125 pages") and the bottle page (`…/Ink/Ink-Bottles/…/p/T522120-S`, "Our Price: $17.99").
-Fails or cannot carry a row: `hp.com/us-en/shop/…` product and category paths (unreachable), `brother-usa.com`,
-`usa.canon.com`, `lexmark.com`, and `epson.com/For-Home/Ink/Ink-Bottles/c/h1` (fetches, but it is a filter shell
-whose only numbers are price-band facets).
-**Two traps specific to this beat.** (1) *A yield quoted as a comma-grouped page count cannot carry a gate row* —
-`4,500` tokenises to `4` and `500`, and the first `4` on an Epson page sits in its own product copy, so lead the
-yield row on the page's monthly-volume footnote (`125 pages`) and let 4,500/7,500 ride inside that row's prose.
-(2) *A model code is an acronym to the accessibility gate* — `ET-2800` hard-failed `ET` and `ISO` hard-failed
-undefined; the fix that keeps the prose readable is to drop the model code from the body (the Sources line still
-carries it) and to gloss the standard as "a standard text pattern" rather than expanding "International
-Organization for Standardization" mid-sentence.
-
-**Hosts probed live 2026-10-31, building a contract-versus-machine payback brief (the `yard_robotics` evergreen).** Carries the figure as plain text and fetches first try: `lawnlove.com/blog/lawn-mowing-cost/` — a mowing marketplace's own cost guide (bylined "Updated: October 26, 2026"), and the first fetchable primary this desk has found for *contract* pricing. It prints a regional season-length table as one run ("Region Typical Mowing Season Weekly Cost Est. Annual Total Northeast ~24 weeks $49–$77 $1,176–$1,848 Southeast ~45 weeks $46–$72 $2,070–$3,240 …"), the per-visit band ("$45 to $75 per visit, with most people paying $60"), the scope sentence ("based on Lawn Love data from September 2025 to September 2026 for a typical 1/4-acre lawn") and a DIY-versus-pro table ("Upfront cost $135 – $3,940 … Ongoing costs $100+ per season (gas, oil, blades, filters) … 1+ hour per mow"), so one page carries four honest rows. `onetonline.org/link/summary/37-3011.00` carries the labour anchor as usual ("Median wages (2025) $18.82 hourly, $39,150 annual"), and `kress.com/en-us/robotic-mowers` prints list and promotional prices in one block ("Kress RTKⁿ ¼-acre robotic lawn mower KR161 $2,799 .98 Only $1,499 .99", offer "valid through December 31, 2026") — divide by the *list* price and state the promotion and its end date, or every payback number halves without warning.
-**Two traps on this beat, both the nav-digit class.** A cell leading on `5,000 sq ft` evidences on a `4.7/5` review rating elsewhere on the pricing page, and `$30 starting price` evidences on a testimonial's "30 min" — so the quarter-acre scope rides in prose under another row rather than carrying its own. **And the per-month average is a different URL and a different basket:** `/pricing` says "The average homeowner spends $150-$200 per month on professional lawn care services", an annualised full-service figure that includes fertilization and leaf removal, so it is citable as the wrong-denominator warning and never as a mowing bill. The reusable frame this beat produced: express payback as machine price ÷ (season weeks × the quoted per-visit price) from the source's own regional table, because a monthly average spread over twelve months is a calendar error no gate reads.
-Still unreachable: every guessed `husqvarna.com` installation/EPOS/buying-guide path (404), `navimow.segway.com/pages/faq` and `mammotion.com/pages/support` (unreachable) — so an installation audit (gate width, dock clearance, power run) cannot be built from vendor HTML, and its requirement numbers sit in PDF manuals the fetch path cannot read. **A candidate dropped for missing evidence is worth re-probing when the beat returns:** this topic scored 6.7 and was dropped on 2026-10-24 for want of a fetchable contract price, and one marketplace page supplied it three days later.
-
-**Hosts probed live 2026-10-31, building a radon sampling-protocol brief (the `home_diagnostics_tech` evergreen).**
-Carries the figure as plain text and fetches first try: `epa.gov/radon/health-risk-radon` (the 21,000-deaths estimate
-with its 2,900 never-smoker share and its own "8,000 to 45,000" uncertainty range, plus the 1.3 pCi/L table row where a
-never-smoker reads a 2-in-1,000 lifetime risk against 20 in 1,000 for a smoker), `epa.gov/radon/radon-publications`
-(the 4 pCi/L fix line and the 2–4 pCi/L "consider fixing" band, with the becquerel equivalents), `health.ny.gov/environmental/radon/`
-(the $12.25 state kit, the 24-hour sealed-house instruction, the five-year / two-year-with-a-system interval, and
-"radon levels in most homes can be reduced to 2 pCi/L or below"), `health.ny.gov/environmental/radon/mitigation.htm`
-(the mechanism row — "once windows, doors and vents are closed, radon concentrations most often return to previous
-values within about 12 hours" — plus the two- to seven-day post-install measurement, the 12-hour precondition and the
-30-day / 24-hour retest clock), `health.state.mn.us/.../radon/index.html` and `…/radon/mitigation.html` (the 4 pCi/L
-action level restated, the 2–4 band, and "inexpensive mitigation rates (less than $1,000) … often too good to be true"),
-and `lung.org/clean-air/indoor-air/indoor-air-pollutants/radon` (two-to-seven-day short test, "lowest level regularly
-used", three-month long test, the retest ladder). **Three traps this beat sets.** (1) *The precondition is not one number:*
-New York's consumer page says sealed 24 hours before and during, the Lung Association's kit guidance starts closed-house
-conditions at least 12 hours prior, and New York's mitigation page uses 12 hours for a post-install test — so the article
-must say the laboratory's instruction sets the clock and that 24 hours satisfies every version, never average the two.
-(2) *A cost band can be typographically broken on the page itself:* the ALA prints "The cost can range from $1,00 -
-$2,500 or more", so no dollar range for mitigation is citable; carry the state quote floor and send the reader for three
-bids. (3) *The state pages answer the source gate's UA 403 while the evergreen gate's fetcher reads them*, so those
-citations read UNVERIFIED-at-the-push by design — say so in the run log rather than replacing a correct citation.
-Refused on evidence, not taste: the $80 borescope against a stud-bay opening (7.1 on a re-probe — Bob Vila now fetches
-for drywall pricing, but no fetchable primary states a camera's minimum hole diameter and every borescope vendor listing
-is unreachable), and outlet/circuit analyzers for a bootleg ground (7.0 — InterNACHI tester articles 404 to the fetch,
-the NEC is not on eCFR, NFPA is paywalled, so a safety claim would carry no gate row).
-
-**A generated Related-reading link justified on function words survives every gate and has to be removed twice (learned 2026-10-31).**
-The radon evergreen's block scored 1 of 337 candidates and stamped `/snow-robot-stops-at-6000-ft2-it-docks/` on the two
-tokens `line, sits` — `growth_os.generate_internal_link_map`'s `MIN_OVERLAP_TOKENS` bar is met by two incidental words,
-which rule 12 forbids. Editing the artifact and the Supabase row is **not** enough: `scripts/wp_draft.py --slug … --refresh-live`
-re-derives the body and re-stamps the same block. The working sequence is to read the block's own `why` line before the
-push, and when it names only function words: strip it from the artifact and the row, then update the live post's body over
-REST (`POST /wp-json/wp/v2/posts/<id>` with `content`, app password from `wp_draft.credentials_for` after `load_env()`),
-then force the front's redeploy — and record the re-stamp behaviour as an engine item, because the next sync restores it.
-
-**Hosts probed live 2026-11-03, building a connection-pool / `work_mem` memory-ceiling brief (the `enterprise_tech_leadership` evergreen).**
-Carries the figure as plain text and fetches first try: `postgresql.org/docs/current/runtime-config-connection.html` ("The default is
-typically 100 connections") and `…/runtime-config-resource.html` ("The default value is four megabytes ( 4MB )", beside "the total
-memory used could be many times the value of work_mem"); `cloud.google.com/sql/docs/postgres/quotas` (the backend-connection
-ceiling as one sentence — "the sum of the values for max_connections … autovacuum_max_workers … and max_worker_processes. The sum
-cannot exceed 262142"); `cloud.google.com/sql/docs/postgres/managed-connection-pooling` (the pooler ladder — one pooler per 4 vCPUs,
-"if max_pool_size is set to 50 on an instance running 2 connection poolers (8 vCPUs), then each connection pooler can open up to 50
-server connections … up to 100 server connections across the instance", plus `max_client_connections`' 5,000 default); and
-`pgbouncer.org/config.html` (`default_pool_size` "per user/database pair" = 100, and `pool_mode` session as the default).
-**Two traps on this beat.** (1) `wiki.postgresql.org/wiki/Number_Of_Database_Connections` fetches at 8.5 KB with the whole
-`(core_count * 2) + effective_spindle_count` rule and its O(N^2) scaling note, but its only numeric token is `2`, which first
-matches its own **contents list** ("1 Summary 2 The Need for an External Pool"), so the rule can ride in prose and Sources but cannot
-carry a gate row — same nav-digit class as arXiv `abs` pages. (2) A pooler's documented default evidences on the *preceding*
-parameter's `Default: 100` (PgBouncer prints `max_client_conn`'s default directly above `default_pool_size`), so quote the sentence
-the row is about and read the excerpt before trusting it.
-**A reader front whose build predates the post is the fastest explanation for a persistent 404** (learned 2026-11-03): the aichieve
-container was named `…-20261103T183041` while the CMS post was created at 18:44:56, so no rebuild was ever going to contain it —
-`docker ps | grep <front-uuid>` gives the build timestamp in the container name, and a forced Coolify deploy from inside the
-WordPress container (`POST https://coolify.giniloh.com/api/v1/deploy?uuid=<front-uuid>&force=true`, token read out of
-`wp-config.php` as `force_deploy_wr.sh` does) served the page at 200 in about three minutes. Check the timestamp before re-pushing
-the front repo.
-
-**Hosts probed live 2026-11-02, building a replenishment-frequency / cycle-stock brief (the `meio_working_capital_tco` evergreen).**
-Carries the figure as plain text and fetches first try: `blog.arkieva.com/replenishment-frequency` (the arithmetic
-that makes the topic — "New SS = (1/√2) * Original SS = 0.707 * Original SS", its 30% and 41% results, and the
-assumption printed in the same paragraph, "if the lead time is halved (which is what happens when replenishment
-frequency is doubled)"; its shelf example then defines the lead time AS the interval — "the maximum delay time
-between replenishments is 1 day; hence, the lead time is also 1 day"); `netstock.com`'s safety-stock guide (the
-review-period model SS = z·σ·√(T + L), a worked `1.65 × 25 × √(7 + 14) ≈ 165 units`, and the definition of cycle
-stock); `abcsupplychain.com` (the review period listed first among the factors that make lead time uncertain, a
-35-day-against-40-day worked case landing 427 pieces and a 1,578-unit reorder point, and the one-line rule "always
-use the same time unit for lead time and demand"); `usersolutions.com` (104 units at a fixed 10-day lead against 506
-once σ_L = 3 days enters it); and `onetonline.org/link/summary/43-5071.00` (shipping, receiving and inventory clerks,
-"Median wages (2025) $21.76 hourly, $45,260 annual"). **The trap this beat builds on:** the practitioner claim
-"doubling replenishment frequency cuts safety stock 30%" is arithmetically correct and contextually narrow — the
-page's next example sets the lead time equal to the replenishment interval, so 30% is the T + L formula at L = 0
-(1 − √0.5 = 29.3%). Read the assumption sentence inside the page that prints the formula before the figure is used
-as a general rule, and compute the honest number at the reader's own lead time: 1 − √((T/2 + L)/(T + L)), which is
-13.4% at a one-week supplier, 4.3% at 35 days and 2.0% on a 90-day clock. The gain that does scale with order
-frequency is cycle stock (half the order quantity), not the buffer.
-
-**Hosts probed live 2026-11-06, building a claim-clock / statutory-interest brief (the `resilient_home_assets`
-evergreen).** The Florida Senate's statute pages and the Washington code pages both carry their section text as
-plain text, and the figure matcher tolerates a year navigator but not a hyphenated section number:
-`flsenate.gov/Laws/Statutes/<year>/<section>` — the page's 1998–2027 session list is four-digit, so `(?<![\d.])`
-excludes it and `7 calendar days`, `30 days`, `60 days` and `55.03` all land in the operative sentence (§ 627.70131:
-the seven-day acknowledgment, the 30-day inspection with the adjuster's name and license number, and the (7)(a)
-pay-or-deny clock with interest at the § 55.03 rate accruing from notice, not waivable); § 55.03's `400 basis points`
-and § 627.70132's `18 months` supplemental bar verify cleanly too. **On `app.leg.wa.gov/WAC/default.aspx?cite=<section>`
-it is the section number in the page's own title bar that poisons short digits** — `30` in "284-30-380" matches before
-the "within 30 calendar days … accepted or denied" sentence, so that rule rides in prose and the row leads on
-`three business days` from WAC 284-30-330(15) instead. Unreachable to the verifier on this beat:
-`tdi.texas.gov/pubs/consumer/…` and `tdi.texas.gov/consumer/…`, `insurance.wa.gov/after-disaster-or-emergency`,
-`iii.org/fact-statistic/facts-statistics-water-damage` and `iii.org/article/…`, `content.naic.org`,
-`myfloridacfo.com/division/consumers/…`, `law.justia.com`, and `adjustersinternational.com` — which is why an
-ordinance-or-law candidate and a sump-runtime candidate were dropped (7.7–8.0) rather than written on carrier
-explainers. **A statute pair is a legitimate 2-host floor, but say so in the run log:** four pages of one legislature
-are one source wearing a costume, whereas Florida's and Washington's code books are different sources; a third host
-(a state regulator's consumer guide) is worth probing on the next pass.
-**`illustration_overlay.py` resets the sidecar's `alt_text`/`caption` to the composited overlay copy (and rewrites the
-artifact's `image_alt`), so an alt reconciled before an overlay re-composite is undone (learned 2026-11-06).** On this
-run the media record shipped with the headline glued to a truncated clause ("… on a kitchen"); the working order is
-re-composite first, then reconcile the sidecar, the artifact, the media record over REST and the row's
-`metadata.illustration.alt_text` / `metadata.wordpress.media_alt` in one pass, then `wp_draft.py --slug … --reimage`.
-Its own auto placement also ran the type block under an envelope, and `--anchor bottom-left` re-composited from the
-retained `featured.base.jpg` for zero credits.
-
-**Hosts probed live 2026-11-06, building a $100,000-ISO-ceiling / acceleration brief (the `career_velocity_equity_engineering` evergreen).** The whole beat rides on one statute and one regulation and both fetch first try: `law.cornell.edu/uscode/text/26/422` (19 KB — § 422(d)(1)'s "exercisable for the 1st time … during any calendar year … exceeds $100,000, such options shall be treated as options which are not incentive stock options", (d)(2)'s grant-order rule, (d)(3)'s grant-date valuation, (c)(5)'s 110-percent/five-year carve-out for a 10-percent owner, (b)(3)'s ten-year term, and the amendment note "Added Pub. L. 97–34 … Aug. 13, 1981, 95 Stat. 256, § 422A") and `ecfr.gov/current/title-26/section-1.422-4` (20.9 KB — six worked examples; the page's own banner prints "up to date as of 11/04/2026" and its last amendment is T.D. 9989, 89 FR 17606, Mar. 11, 2024). **Two matcher rulings that made the rows work:** a cell leading on `$100,000` on the Cornell page lands on the `(d)` heading (the operative sentence follows it, so the excerpt is still the claim), while the same token on the eCFR page matches the section title in the nav — so the regulation's rows must lead on an *example* figure (`2014` lands inside Example 1's holding sentence, `110,000` inside Example 3's bifurcation sentence, both self-evidencing). **And the regulation has a typo worth knowing:** Example 4(ii) prints "exceeds the $100,000 limitation for 2003" although its own facts are 2005 — never cite that sentence's year. `irs.gov/publications/p525` remains the cheapest source for the AMT adjustment and the "spread is ordinary income if the holding period fails" sentences, but neither contains a leading figure, so they ride in prose under their own source rather than a row.
-
-**Hosts probed live 2026-11-06, building a battery-cycle-life brief (the `consumer_asset_repair_replace_tco` evergreen).** Carries the figure as plain text and fetches first try: `apple.com/batteries/service-and-recycling/` (the whole spec ladder in one paragraph block — "iPhone 14 models and earlier … 500 complete charge cycles", "iPhone 15 models … 1000 complete charge cycles", Watch/iPad/MacBook 1000, iPod 400, each at "80% of their original capacity"); `support.apple.com/en-us/102888` (the *definition* of a charge cycle — "A charge cycle happens when you use all of the battery's power, but that doesn't necessarily mean in a single charge" — plus the per-model maximum-cycle table); `support.apple.com/iphone/repair` (the warranty exclusion "batteries that wear down from normal use" and AppleCare's "no extra charge if the capacity drops below 80%"); `ifixit.com/Guide/<slug>/<id>` (each guide's introduction states the rating *with a duration*: the iPhone 12 guide reads "500 charge cycles, which lasts roughly 18-24 months for most users", the iPhone 15 guide "1000 charge cycles", and the guide prints the kit price — "$49.99" — beside the parts list); `ifixit.com/Wiki/iPhone_Battery_Replacement` (a per-model table of Apple's out-of-warranty price, iFixit's kit price and the saving, plus the repair-time sentence "30 minutes to a couple of hours"); and `energy-efficient-products.ec.europa.eu/product-list/smartphones-and-tablets_en` (the ecodesign floor — "at least 800 charge and discharge cycles while retaining at least 80% of their initial capacity", applying "from 20 June 2025 onwards" — plus the 7-year parts and 5-year-update duties). **Three traps on this beat.** (1) **Apple's own service-cost module is client-rendered**: `support.apple.com/iphone/repair?services=service` fetches 6.8 KB whose price box reads "Pricing failed to load. Please try again later.", so no Apple price can be a gate row — and iFixit's table footnote dates its Apple column "Apple's shared estimates as of November 2024", so a price written from it must carry that date, not "Apple charges X". (2) **A guessed iFixit *store* URL answers HTTP 200 with a different product** (a made-up `/Store/.../IF…` path returned an Xbox case, and another returned an Apple Watch screen adhesive), so resolve the real slug from a search result before citing it; the `products/<slug>` shape prints the price ("iPhone 15 Battery $49.99") and is the cheapest price row. (3) **Matcher collisions**: `1,000` tokenises to `1` + `000` and on Apple's page landed on the footer phone number "1-800-MY-APPLE" — write `1000` with no comma, which is how both Apple's and iFixit's pages print it; and on the Commission page a `7 years` cell evidenced on "4 and 7 inch" in the product definitions, so the parts-availability duty cannot carry a row there (the 800-cycle cell does).
-
-**A hook title can score 100 and still overstate what the regulation does (learned 2026-11-06).** `headline_score` reads the title against the body's figures, never against the mechanism: "Your ISO Ceiling: $100,000, Dead After the Deal" scored **100 STRONG** while the reviewer's NOT-EARNED note was right that acceleration voids only the value *above* the ceiling, not any buyout's whole grant. The fix is a title whose precision is the mechanism ("…Dead Before Exercise", also 100) plus an `At a glance` risk line that says "everything past the cap", not "most of the grant". On any statutory-threshold piece, write the title against the *scope* of the rule and let the review's NOT-EARNED note, not the score, settle it.
-
-**An ACCEPTED rewrite can delete the frontmatter flags and the only body link, and no gate re-reads them (learned 2026-11-11).** On `your-robot-adds-a-12260-premium` the reviewer's accepted text dropped `archetype: evergreen` and `evergreen: true` from the frontmatter, unwrapped the earned inline link into a bare phrase ("the wage-floor argument on this desk"), and turned the catch's closing sentence into a line-initial imperative ("Name the technician in the staffing plan…") — the voice rule's banned construction. `review_audit` compares figures and citations and `article_shape` only counts links that exist, so all three pass until `article_shape` is re-run and the flags are read by eye. After every acceptance: `grep` the frontmatter for `kind`/`archetype`/`evergreen`, `grep -c '](/your-\|](/the-'` for the body link, and re-run `article_shape.py` + `check_accessibility.py` on the repaired final before `publish_gate --file`.
-
-**The cue that satisfies the regex can still be on the boilerplate list, and that is a *regression* rather than a hard fail (learned 2026-11-11).** `article_reviewer.py` held the same piece twice on `<!-- nuanced-takeaway -->`: first "carries no first-person sentence", then "boilerplate observer cue(s): my read is that" — `my read is that`, `the part I keep circling`, `what strikes me here is`, `what i'd watch next` all live in `review_audit.BOILERPLATE_CUES`, and attempts 1 and 3 of that run were otherwise clean (hard=0) but rejected on that one regression. Write an original first-person sentence instead ("I have been quoting national medians here", "I would name the technician in the staffing plan before the machines are ordered") — and put a first-person clause in the *draft*, because the reviewer only re-voices what it is handed.
-
 ## 5. Handoff
-
-**The persistence pass writes the generated `<!-- internal-links -->` block in two different places, and the
-artefact loses the argument with the CMS.** `publish.py` stamps the block before `<!-- tldr -->` while building
-the article's own asset copy, then re-stamps it before `## Sources` for the CMS push — so the published body a
-reader sees carries Related reading just above `Sources`, while `published/<slug>.md` carries it above
-`At a glance`, and a re-run of `publish.py` sees the slug already published and does not repair it (learned
-2026-10-28). After the push, move the block in the artefact to just before `## Sources`, then re-run
-`article_shape.py`, `check_accessibility.py` and `publish_gate.py --file` on it — a block that sits inside the
-body also lowers the artefact's Flesch by roughly five points, so re-measure rather than assume the `_final.md`
-verdict still holds. Same run: `sitemap_sync.py` reads "public" from `context/internal_links.json`, which is
-built from each front's own sitemap, so a fresh article stays `"public": false` until
-`build_internal_link_index.py` is re-run *after* the front's sitemap has picked the page up — probe
-`https://<front>/sitemap-0.xml` for the slug first, then rebuild the index and re-sync the sitemap.
-
-**`article_reviewer.py` can spend all three attempts on the same catch-section cue (third run in a week), so
-plan the hand repair rather than a re-generation (2026-10-28).** Every candidate opened `<!-- nuanced-takeaway -->`
-with "My reading, held loosely", which `site/social_voice.mjs` cannot read (`\bmy read\b`), and the attempts
-also unwrapped the authored inline link to a bare parenthetical path and flattened the tactical bullets into
-prose. The working sequence on a held run: keep the attempt with the fewest hard failures, then in ONE pass fix
-the cue to an accepted form, re-wrap the link as `[text](/path)`, restore the bullet structure and the
-figure-free TL;DR sub-bullets, cut any hedge word the audit counted (`appears`, `likely`, `may`), and close
-with `review_audit.py` — a hand-edited final passes that audit, because it compares figures, citations, quotes
-and source lines rather than authorship.
-
-**An ACCEPTED rewrite can still re-cut both H2s into the fallback labels, so read every heading before the push (learned 2026-11-10).** On the meter-archive evergreen the reviewer's accepted body was the draft in substance, yet it had replaced "A meter built to settle bills" and "What the free file settles" with "The big picture: a meter built to settle bills" and "What I'd watch: the free file settles season against season" — the two generic signposts the structure rules name as fallbacks, both now over the six-word header limit. `review_audit` compares figures and citations, and `article_shape` reads markers, so neither sees a heading; `check_accessibility` only warns. Restore the article's own heading wording after acceptance and re-run the gates.
 
 Only after `PASS`: `skills/fact_check.md` → `skills/story_draft.md` → `skills/claude_humanizer.md`
 → `scripts/publish.py`. The article keeps the house schema (section markers, `## Sources`, the
@@ -999,56 +213,26 @@ evergreen: true
 creates the `evergreen` tag on the destination if it is absent); `archetype`/`evergreen` stay as the
 internal markers the gates read. The news fleet writes `kind: news`, the review fleet `kind: review`.
 
-**The rewrite can keep a figure in the TL;DR after deleting the body sentence that established it — an unsupported claim in the summary, invisible to every gate (learned 2026-10-24).** On the snow-mat evergreen the frontier pass cut 1,181 words to 814 and, in the process, dropped the $21,500 capital calculation, the $1,075 mat price and the tire-track positioning from the body — while the `## At a glance` block it kept still said "$21,500". `article_shape` counts a figure once per section, the accessibility floor reads word lengths, `source_gate` only checks that some cited page carries the number, and the voice check reads tone, so nothing flags a summary claim whose warrant is gone. After every rewrite, read the TL;DR and check each of its figures against the rebuilt body, not against the draft. The same run's pass also invented a trend in the lead ("Homeowners are changing how they clear snow"), renamed "embedded system" to "poured system", turned a 13-amp power-unit cap into a "standard plug" limit and reported a 14.5-cent charge as "pennies" — so diff the body's nouns and its named actor against the verified brief, not only its digits.
-
-**The header overlay's hook line can overlap a wrapped title or run off the frame, and only the copy can fix it (learned 2026-10-27).** On the `your-gpu-break-even-is-37-percent-busy` evergreen the auto-commissioned copy drew a two-line title with the hook clipped mid-word at the right edge; re-compositing with `illustration_overlay.apply_to_slug(..., force_copy={...})` and a differently wrapped title put the hook *on top of* the second title line. The working shape is a short kicker, a title that fits **one** line and a hook under ~25 characters, re-composited from the retained base plate (`featured.base.jpg`) so no image credits are spent — then read the pixels with vision before `wp_draft --reimage`. Same run: a `--force` re-render was refused by the picture desk for legible lettering it had painted into the frame, so a rejected render leaves the previous good one in place and a retry on a clean render is cheaper than fighting the composite.
-
-**The sidecar keeps the whole sentence the delivery clip cut, and a `ci:` rebuild must not stage the checkout (learned 2026-11-02).** When the art director's `alt_text` arrives truncated mid-phrase, `featured.json`'s `history[0].alt_text` usually still holds the complete sentence it was clipped from — retype from there (a 110-character complete sentence in this run) rather than writing a new description, then update the sidecar, the artifact, the media record over REST and both `metadata.illustration.alt_text` / `metadata.wordpress.media_alt` on the row in one pass. And when the reader front 404s after a clean publish, the empty rebuild commit is `git commit --allow-empty` with **no** `git add` first: `git add -A` stages whatever else is pending in that checkout (this run shipped an unrelated `.env.example` edit that way).
-
-**The art director's alt text is generated under a 125-character clip while the delivery standard wants 40–140, so a truncated alt blocks `--reimage` and has to be retyped (learned 2026-10-27).** The sidecar's `alt_text` arrived as "...fast-flowing thin" (no closing clause), and `wp_draft.py --reimage` refused the upload with "alt_text is 151 chars — the desk writes 40-140": a hand edit that keeps the sentence whole *and* inside the band, applied to the sidecar **and** the artifact's `image_alt`/`image_caption` before the upload, is the only path — patching the media record afterwards leaves the sidecar and the row disagreeing.
-
-**A rewrite can delete one rung of a numbered ladder and leave the headline without a warrant (learned 2026-10-27).**
-On the `your-eta-misses-27-hours` evergreen a four-band error ladder (2.21 / 6.89 / 11.97 / 26.92 hours by voyage
-length) came back from Loop 3 as three bands: the long-leg rung was cut, and it was the only place the lead's "27
-hours" — and the title's own figure — was sourced. Flesch, the figure diff and the voice gate all passed a body that
-no longer earned its headline. Check every enumerated series item against the verified brief item by item (not just
-that the series still exists), then re-read the lead: a headline whose only warrant sat in the missing rung reads
-perfectly and is unsupported.
-
-**The art director refuses an industrial vertical's brief that names no place, and the front then builds the page
-without the image (learned 2026-10-27).** The persistence pass refused all three briefs ("prompt names no place in
-aichieve.net's world — say WHERE the photograph is taken, one of: data hall, rack row, control room, plant floor,
-container terminal…"; "alt_text opens on the medium"), so the post went live with `featured_media: 0`. A plain
-`illustration_creator.py published/<artifact> --apply` with no style pin landed on its second attempt; the sidecar
-alt arrived as the overlay copy and was retyped to a 120-character sentence in the sidecar **and** the artifact
-before `wp_draft --reimage`. The reader page then served 0 `wp-content/uploads` references because it had built
-while the media was absent — an empty `ci: re-trigger frontend build for <slug>` commit to the front repo is the
-fix, not another publish.
-
-**The frontier rewrite invents internal links — strip any link whose path is not in the corpus before the push (learned 2026-10-24).** Loop 3 closed a catch section with `to [calculate your true operating cost](/homelab-true-cost-calculator/)`, a page that has never existed. `article_shape` counts *any* markdown link under its inline-link rule, so an invented path satisfies the shape gate while 404-ing a reader, and no gate fetches body links (`source_gate` checks the `## Sources` citations only). After every rewrite, list the body's links (`grep -o '](\([^)]*\))'`) and delete every site-relative path that is absent from `context/internal_links.json` — then re-run the accessibility and voice gates, because the edit changes the body.
-
-**A `giniloh.com` evergreen can hold at the CMS draft gate with "no inline internal link" — the index, not the article, is the defect (learned 2026-10-24).** `article_shape` requires one inline internal link in the body, while `growth_os.generate_internal_link_map` qualifies a candidate only on same-vertical (+3), same-category (+3) or two shared subject tokens: `context/internal_links.json` carries no `vertical` and no `categories` for the pages each front serves, so the same-vertical axis can never fire and a homelab article scored **0 of 239** candidates even though this vertical's own prior evergreen sat in the list (best overlap one token, `homelab`). `publish.py` then creates the post as a draft (the gate working as designed) and the run logs a "published" summary that is half true. The honest unblock is one hand-placed inline link to a *live page of the same vertical* (probe it with `citation_hub_dossier.fetch_source` first — HTTP 200, never another site, never the article itself), then re-run `publish.py`: the same slug updates the existing post and flips it to publish. Record the index gap as an open engine item every time rather than treating the hand link as a fix — and never fill the gap with a page that shares one incidental token, which is exactly what the scorer's floor exists to refuse.
-
-**A new vertical's first article 404s on its reader front even after a clean publish — the front filters posts by a hand-kept vertical list (learned 2026-10-24, `outdoor_power_equipment`).** `cms.wellroost.com` read back `publish` with the right vertical term, and https://wellroost.com/<slug>/ answered 404 for thirteen minutes across a forced redeploy and an empty `ci:` commit. The cause is `src/lib/wordpress.ts`: `fetchAllPosts` sends a `vertical` REST filter built from `DEFAULT_VERTICAL_SLUGS`, a hand-kept array, so a vertical this front serves by routing but that nobody added to that array never appears in `getStaticPaths` and no page is emitted. Diagnose it by diffing the built `dist` against the CMS post list (`curl "…/wp-json/wp/v2/posts?per_page=100&_fields=slug"`, compare to `ls /usr/share/nginx/html` inside the front container) — in this run the five posts missing from the build were the new one plus four with no vertical term at all, which is the signature. Fix: add the slug to the list and push (one line, `kotechile/wellroost`), then confirm the page renders. Do not read a Coolify `finished` status as a rebuild either: two of this run's queues succeeded on a container reusing a cached build, so check that the built `dist` actually contains the new directory before believing the deploy. Report the hand-kept list as an engine item — `home_diagnostics_tech` was the last slug missing from it and was added on 2026-10-24 (`kotechile/wellroost` `ee61a67`), so all three gear verticals are now listed; the durable fix (derive the array from `public.vertical_sites`) is still open.
-
-**A failed illustration pass publishes a post with no header image that no later `publish.py` run will fix (learned 2026-10-24, `home_diagnostics_tech`).** `scripts/publish.py` treats the art director's three refusals as a warning, creates the CMS post anyway, and prints "published live" — so the post goes out with `featured_media: 0` while the artifact carries no `image_path`. Running `publish.py` again does not repair it: the slug is already a PUBLISHED post, so the push is skipped ("a refresh re-derives its body from the row and can overwrite what an editor tuned") and the image stays off. The unblock is the media-only path — `python3 scripts/wp_draft.py --reconcile-media --refresh-live` uploads the staged illustration and attaches it to the existing post (verified: media 212 on post 210), re-deriving only the same body, so check `--dry-run` once first. Two consequences worth planning for: generate the illustration *before* the first push when the draft is finished, and after attaching media expect the reader front to serve the page it already built without it — the front caches the article as soon as the route exists, so a second build (an empty `ci:` commit) is what makes the header image appear (`0 <img>` → `1 <img>`, 4 `/wp-content/uploads/` references).
-
-**A published article can 404 because the front's *build* broke, not because the deploy lagged (learned 2026-10-28).** After `publish.py` reported success on `your-11-agents-3-die-none-wrong`, https://aichieve.net/<slug>/ answered 404 across a `ci:` commit and a queued Coolify deploy. The deployment row read `failed`, and its build log named the cause: `scripts/routing.mjs` pages the CMS in a loop (`posts?per_page=100&page=<n>`) and threw on any non-2xx, so the moment `cms.giniloh.com` held **exactly 200** published posts the loop asked for page 3, WordPress answered `400 rest_post_invalid_page_number`, and every deploy of the aichieve front died at `RUN npm run build` while the CMS itself was healthy. Three habits close the class: read the deployment row's own `logs` (grep for `ERROR`) before blaming the CMS or re-pushing; treat a WordPress `400` on a page past the last one as end-of-list rather than an outage (fixed in `kotechile/achieve` `114864a`, the same bug shape exists in any front that pages a REST API); and remember that a push to a front repo does not queue a deployment — queue Coolify app 18 (aichieve) / 12 (giniloh) / 13 (wellroost) explicitly and poll the queue.
-
-**A deploy status of `finished` does not mean the front built the whole site — a timed-out WordPress fetch ships a partial `dist` that omits the newest posts (learned 2026-10-29).** On the `one-rate-overruns-your-cap-5934` evergreen the giniloh front answered 404 for ~20 minutes after the push while the CMS read back `publish`. Deployment 3137 reported `finished`, yet its `dist` held 200 entries and **three** of that day's articles were absent from it — including ones published seven hours earlier — and its build log carried `Failed to fetch WordPress data … [DOMException [TimeoutError]]` on `posts?_embed=1&per_page=100&page=1`, i.e. the static paths were generated from an incomplete post list while three fronts and PressFlow were building at once. So check the built directory rather than the status: `docker exec <front-container> sh -c 'for s in <slug> <todays-other-slugs>; do [ -d /usr/share/nginx/html/$s ] && echo present || echo MISSING; done'`, and read the deployment log for `TimeoutError`/`ERROR`. The recovery is one forced redeploy once the CMS is quiet — `POST /api/v1/deploy?uuid=<front-uuid>&force=true`, polled until the page answers 200 with its own `<h1>`. Two host details that cost time here: the Coolify API answers on the **host** at `localhost:8000` (`coolify:8000` is unroutable from inside the WordPress container, `http 000`), and the token is read out of `wp-config.php` with `sed -n "s/.*COOLIFY_API_TOKEN., .[0-9]*|\([A-Za-z0-9]*\).*/\1/p"`. Report the partial-build class as an engine item — a build that cannot see the post should fail rather than publish a `dist` missing it.
-
-**A rewrite can move a claim onto the wrong numbered source, and the gates count citations rather than reading them (learned 2026-10-30).** On the truck-mile evergreen, Loop 3's PASS cited the driver-wage claim to `[5]` — the regular-gasoline row of the EIA release — while the wage sat one line later in `[6]`, so a reader checking the 2.2-minute exchange rate would land on a fuel price. Nothing held it: `review_audit` counts citations as a ledger, `source_gate` checks that each cited page carries the figure its own Sources line names, and `publish_gate` reads markers — none maps `[n]` to the sentence it trails. After every frontier pass, walk the body's citation numbers against the Sources list one sentence at a time and repoint every claim whose number does not carry it; the same pass should re-read the TL;DR box (this rewrite also revived the retired four-part schema) and the numbers bullets against the verified brief.
-
-**The in-push `<!-- internal-links -->` insertion lands before `<!-- tldr -->` and its link titles are then measured as prose — an article that passed at Flesch 51 on the artifact is HELD as a CMS draft at 49.6 (learned 2026-11-02).** `publish.py` inserts the block itself (the artifact carries no marker), and `check_accessibility.body_of()` only strips from `## Related reading` onward — so a block placed above At a glance contributes three page titles of long nouns to the body score, while the artifact's own measurement never saw them. The summary still ends `✓ Publishing process completed successfully`; the payload line reads `status=draft` and the gate note names the reason, which is why the status is the only truth. The repair is three moves, in this order: put the block **just before `## Sources`** (matching the CMS body the skill already says is correct), tighten the prose until the artifact clears the floor with ~2 points of margin, then `PATCH` the row's `content` from `publish.parse_draft(..., links=False)` and publish with `wp_draft.py --slug … --refresh-live` (it runs the gate again and publishes through the two-call vertical-term sequence). Expect `--refresh-live` to re-stamp the generated picks over a hand-curated block and to write them back to the row; replacing the live body once over REST (`POST /wp-json/wp/v2/posts/<id>` with the `Related reading` list swapped) and re-PATCHing the row is the only durable fix until the scorer changes. Check the real body order before handing an article to persistence: a block that reaches the artifact above `<!-- tldr -->` will hold the push.
-
-**A rewrite that splits the lead into two paragraphs silently fails `lead_ok`, and it duplicates the earned link at the end of The catch (learned 2026-11-02).** On the rental-conversion evergreen the Loop 3 pass broke the lead into a one-sentence opener plus a four-sentence paragraph, so `headline_score.lead_delivery` — which reads only the FIRST paragraph — reported `lead_ok: False` with "the lead never states $500,000" on an article whose second paragraph carried that exact figure; the fix is to merge the paragraphs (five sentences in one block is inside the 3–5 standard), never to weaken the title. The same pass appended a second copy of the inline internal link with a redundant closing sentence (`… [That tenancy is what starts the clock](/your-next-bedroom-417500/).`) after The catch already carried it: `article_shape` counts *any* link, so a duplicate passes every gate while reading as a loop. After each rewrite, count the body links (`grep -c '](/your-')`) and expect exactly one, and re-run the title's body-aware score, not just the accessibility floor.
-
 Persistence to the site + Supabase is **not** approval-gated. Outbound distribution (LinkedIn /
 Ghost / Reddit) waits for the founder's `@Simon approve` gate, exactly as the news track does.
 
-**A quotation shorter than 20 characters makes `review_audit` read ordinary prose as altered source text (learned 2026-11-05).** `review_audit.quotes` pairs `"…"` through `[^"”]{20,400}`, so a short span ("including handoffs", 19 characters; "per case resolved", 17) cannot match its own closing mark: the regex anchors on that closing mark and runs to the NEXT opening quote, so an entire paragraph between two quotations enters the ledger as "quoted source text altered" on the first wording difference between draft and final — which the frontier rewrite always produces. Quote the full verbatim clause in **both** files ("Fin completes a workflow (Procedure), including handoffs"), or drop the marks; never re-word the paragraph around a short quote to satisfy the audit.
+Persistence is one command on the reviewer's accepted file — the `_final.md`, never a `_held.md`:
 
-**Hosts probed live 2026-11-05, building a billable-unit audit (the `enterprise_ai_finops` evergreen).** A price beat can ride entirely on the vendors' own pricing pages, and there the page shape matters more than the number: `intercom.com/pricing` (plan cards plus the FAQ that *defines* the unit — "An outcome is counted when: A customer confirms their issue is resolved, or They don't ask for more help after Fin responds, or Fin completes a workflow (Procedure), including handoffs … You're only charged once per conversation", the "Minimum monthly commitment applies (e.g. 50 outcomes)" floor and "No seat costs"); `zendesk.com/pricing/` ("pay only for customer requests that were successfully resolved by the AI agent, without any escalation to a human agent", $1.50 committed against $2.00 pay-as-you-go, and the 5 ARs per agent/month allowance); `salesforce.com/agentforce/pricing/` (`$ 2 USD/Per conversation`, `$ 500 USD/Per 100k Credits`, and a worked-example table that prints 40 credits = US$0.20 and 24,000 credits = US$120, so a credit-metered request is citable without any division of the desk's own). **Matcher traps on this beat:** a cell leading on `$ 2 USD/Per conversation` evidences on the page's own product menu ("B2B Marketing Platform"), and Intercom's `50 outcomes` matches "50 free Lite seats" — so both prices ride in prose under a row that already verifies. `onetonline.org/link/summary/43-4051.00` supplies the measured wage anchor ($21.53 hourly, $44,770 annual, 2025) and `finops.org/framework/capabilities/unit-economics/` (31 KB) the independent definition — it names "per case resolved" among its units but carries no numeric token, so it anchors prose and Sources, never a gate row. **Register a vendor host in `context/source_quality.json` `primary_hosts` when its pricing page IS the record of its own price** — unclassified otherwise, and the push prints "no PRIMARY host" as a note on every such piece.
+```bash
+python3 scripts/publish.py context/drafts/<slug>_final.md
+```
+
+**'No publish' is a legitimate outcome.** A vertical with nothing durable this week says nothing:
+state the axis that failed, log the scores, and stop — never pad a thin brief to fill a slot. A
+topic whose value expires inside ~90 days is a news story and belongs in the news track.
+
+**After acceptance, re-read what the rewrite can quietly change.** The reviewer compares figures,
+citations and quotes, and no gate reads headings, frontmatter flags or the warrant behind a summary
+figure — so after every accepted rewrite, check the frontmatter still carries the three flags, the
+body still carries exactly one inline internal link, the H2s are the article's own (not the
+fallback labels), every enumerated rung and acronym gloss survived, and every figure in
+`## At a glance` is still earned by the body beneath it. The full incident set is in the
+casebook (§5).
 
 ## 6. Failure handling
 
@@ -1062,256 +246,49 @@ Ghost / Reddit) waits for the founder's `@Simon approve` gate, exactly as the ne
 - **The topic is really news** (value expires in < 90 days) → hand it to the news track; do not
   smuggle it here, where the freshness gate cannot see it.
 
-**Hosts probed live 2026-11-03, building a behind-the-meter permit-ladder brief (the `nhil_infrastructure_ops` evergreen).**
-A federal-regulation beat can be built entirely on §-level pages, and the *page shape* decides whether a
-statutory figure survives the matcher. Carries the figure as plain text and fetches first try:
-`law.cornell.edu/cfr/text/40/<section>` (Cornell's e-CFR mirror of 40 CFR 98.2 — 18 KB with (a)(3)(i)-(iii)
-contiguous, so `30 mmBtu/hr` lands on the heat-input condition and `25,000 metric tons` on the emissions
-condition; **the same rows on `ecfr.gov/.../part-98/subpart-A` evidence on the amendment-timeline dates**);
-`ecfr.gov/current/title-40/chapter-I/subchapter-C/part-<n>/section-<n>` (**the per-section URL, not the part
-or subpart page** — the subpart page's own banner ("up to date as of 10/30/2026") and amendment timeline
-catch any cell leading on a small integer, while § 70.2's per-section page lands `100 tpy` inside the
-definition sentence); `ecfr.gov` subpart pages are still right for *tables* (Part 98 Table C-1's
-`53.06` kg CO2/mmBtu row, Part 60 Subpart KKKK Table 1's `42 ppm … 290 ng/J of useful output (2.3 lb/MWh)`
-and Subpart JJJJ Table 1's `82 ppmvd / 1.0 g/HP-hr` row all flatten to one text run); `eia.gov/tools/faqs/faq.php?id=74&t=11`
-(0.81 lb CO2/kWh U.S. average and 0.96 lb for gas-fired generation, 2023 data, with the whole per-fuel table
-as prose); `epa.gov/ghgreporting/what-ghgrp` (the 25,000-tonne exclusion sentence — a second host for the same
-threshold). **Two conversion traps this beat is built on.** (1) *A ppm limit is not a tonnage*: converting
-42 ppm at 15% O2 to lb/MMBtu needs the F-factor and the O2 correction, so the article cites the rule's own
-`2.3 lb/MWh` parenthetical and divides from that — never derive the rate the regulation already prints.
-(2) *Facility-level tests are conjunctions*: § 98.2(a)(3) needs the 30 mmBtu/hr heat input **and** the
-25,000 t, so the binding number for a gas plant is the tonnage (6.6 MW flat at 8,120 Btu/kWh), not the
-heat-input tripwire (3.7 MW) — an article that quotes only the smaller one overstates the obligation by
-half. Unreachable or unusable on this beat: `ferc.gov` (every news/report path tried, unreachable),
-`emp.lbl.gov` (the interconnection-queue data, unreachable — so no queue-duration figure can carry a row),
-`eia.gov/electricity/generator-costs/` (fetches 8.6 KB of navigation and no $/kW table), and `energy.gov/energysaver`
-(404s, as recorded 2026-10-19). **An illustration failure class to expect on permit topics:** the art director
-refuses a brief whose subject is "a block" or "a threshold" (bare geometry), and the working treatment is the
-physical plant itself — a row of modular generator sets with guard rails, which passed the picture desk on the
-first retry after three refusals.
+**Still-live failure rules** (each was learned on a specific run — the narrative and the date are
+in `skills/references/evergreen_casebook.md` §6):
 
-**Hosts probed live 2026-11-05, building a trailer-payload / axle-spacing brief (the `supply_chain` evergreen).**
-Carries the figure as plain text and fetches first try: `law.cornell.edu/uscode/text/23/127` (the Interstate ceilings —
-"twenty thousand pounds carried on any one axle … a tandem axle weight of thirty-four thousand pounds … a gross weight of at
-least eighty thousand pounds for vehicle combinations of five axles or more"); `law.cornell.edu/cfr/text/23/658.17` (the whole
-of 23 CFR 658.17 in 6.6 KB: (b) the 80,000-pound gross cap "except where lower gross vehicle weight is dictated by the bridge
-formula", (c) 20,000 on any one axle, (d) 34,000 on tandem axles, (e) the Bridge Gross Weight Formula and its 36-foot tandem
-exception, (f) the enforcement floor and the 500-lb-per-inch tire rule, (g) the 2–3 % portable-scale accuracy and the 5 %
-allowance cap); `ops.fhwa.dot.gov/freight/publications/brdg_frm_wghts/index.htm` (FHWA-HOP-19-028 — the formula's definitions,
-the worked check that **fails at 80,000 lb gross**, "axles 2 through 5 … 68,000 pounds … Maximum weight (W) = 65,500 pounds
-(Bridge Table for "L" of 35 feet and "N" of 4 axles)", and the note that without the exception the formula allows "only 66,000
-to 67,500 pounds on tandems spaced 36 to 38 feet apart"); and `ecfr.gov` 23 CFR Part 658 (257 KB, its only clean cell being the
-tandem definition at "96 inches"). **Two traps this beat is built on.** (1) *A statute that writes its ceilings in words cannot
-carry a digit-led row*: every digit version of 20,000/34,000/80,000 on the 23 U.S.C. 127 page sits in the 1975 amendment note, so
-a cell leading on `34,000 pounds` evidences there and reads as a coincidental hit — lead the statute row on `five axles or more`
-(which resolves through `_WORD_NUMBERS` to the operative sentence) and put the numerals on 23 CFR 658.17, which states the same
-limits in digits. (2) *The eCFR's part-level page is too noisy for a short-integer cell*: on 23 CFR Part 658 the 5-percent
-sentence matches an amendment note and the 34,000 tandem limit matches a twin-trailer definition, so the operative sentences are
-cited through the Cornell mirror of 658.17 and the part page carries one row only. Unreachable on this beat: `fhwa.dot.gov/reports/bridgefw.htm` (the older
-bridge-formula pamphlet). A photographic render of a tractor-trailer is a brand-mark risk (the tire sidewalls and the cab grille
-carry invented marques at 2,400 px) — read the pixels before `--reimage`, and prefer a treatment whose subject is the scale
-interface rather than the vehicle.
+- **A rewrite repoints a citation.** `[n]` tags are counted, never read: walk the body against
+  `## Sources` one sentence at a time and repoint any claim whose number does not carry it.
+- **A hold with `hard=0` is a flow regression, not a bad rewrite** — adopt that attempt and repair
+  by hand rather than re-generating; the reviewer only re-voices what it is handed.
+- **The observer cue is matched literally.** `\bmy read\b` fires, "my reading" does not, and
+  `my read is that` / `the part I keep circling` / `what strikes me here is` are boilerplate.
+  Write an original first-person sentence in the *draft*.
+- **A quote under 20 characters breaks the quote ledger**, so the paragraph between two of them is
+  reported as altered source text. Quote the full verbatim clause in both files, or drop the marks.
+- **Recompute every derived figure** (a percentage, a unit conversion, a ratio) from its two
+  verified ends, and check every enumerated series item by item — a rewrite can delete the rung
+  that earned the headline.
+- **An invented internal link passes every gate**: `article_shape` counts any markdown link. Delete
+  every site-relative path absent from `context/internal_links.json`, and expect exactly one.
+- **The generated `<!-- internal-links -->` block belongs just before `## Sources`** — above
+  `<!-- tldr -->` it is measured as prose and holds the push on Flesch.
+- **A REST body repair must push HTML** (`wp_draft.md_to_html`), and a same-status PATCH does not
+  fire the reader front's rebuild: toggle `status` draft → publish.
+- **A post needs its header verified on the rendered front**, not in the CMS: hero URL, the
+  `-1024x576` derivative and `og:image` — a failed illustration pass publishes hero-less and a
+  later `publish.py` will not repair it.
+- **Never let a re-image land on a `-N` filename** — the static front keeps referencing the old
+  name; delete the newest attachment and re-upload so WordPress takes the base name.
+- **A `finished` deploy is not a built page.** Check the built directory and the deployment log for
+  `TimeoutError`/`ERROR`; a new vertical also needs its slug in the front's hand-kept vertical list.
+- **A 404 in the first ~10 minutes is build lag**, and 0 `wp-content/uploads` in the verifier's
+  text extraction proves nothing — `curl` the rendered page.
+- **The alt text is 40–140 characters**, one complete sentence, patched in four places at once
+  (sidecar, artifact, media over REST, the Supabase row).
 
-**Hosts probed live 2026-11-04, building a support-plan / fee-versus-hire brief (the `enterprise_build_vs_buy` evergreen).** Every major vendor's support page fetches with the rate table as plain text, which makes a *billing-architecture* topic cheap to source on four hosts at once: `aws.amazon.com/premiumsupport/pricing/` (Business Support+ = greater of $29/month per account or `9%` of monthly charges to $10K, then 7% to $80K, 5% to $250K, 3% above; Enterprise = greater of $5k/month or 10% to $150K; Unified Operations $50k/month floor; Basic included; no long-term contracts; and, separately, Incident Detection and Response at "5-minute response times" for a minimum of $7K or 2%); `cloud.google.com/support` (Standard `$29` or `3%` flat; Enhanced `$100` floor with `10%`/7%/5%/3% and a P1 first response of 1 hour; Premium `$15,000` floor with P1 in 15 minutes); `docs.digitalocean.com/support/support-plans/` (flat `$24`/`$99`/`$999`, response <24 h to <30 min, and the sentence that makes the flat architecture citable — "We do not offer different support request response times based on the severity of an issue"); `azure.microsoft.com/en-us/support/plans/` (flat `$29`/`$100`/`$1,000`, Basic included). **Matcher traps on this beat:** a cell leading on `7%` evidences on AWS's navigation ("The 7 essential data capabilities") and one leading on `3%` on "Amazon S3", so the whole ladder must ride under a single row that leads on `9% of monthly AWS charges up to $10K` (whose window is the price block); Google's `P1 cases: 1 hour` and `P1 cases: 15 minutes` both evidence on the "1:21 Intro to the Google Cloud Customer Care portfolio" video label, so response-time figures are prose under the pricing row, never a row; and DigitalOcean's no-severity sentence contains no digit, so it cannot hold a row at all — it rides under the `$24.00 per month` row, which lands on the full plan table. A comma-grouped `$190,651` recomputes cleanly from the ladder, but every crossover in such a piece is desk arithmetic: state the formula (2,080 ÷ 12 × the median hourly wage) and recompute it in the final rather than inheriting the draft's number. **Illustration note:** a `document_flatlay` of two price cards (one staircase, one flat line) passed the picture desk, but the director's overlay hook ("At $190K monthly cloud spend, support equals an engineer") ran to the frame edge and was clipped — re-set the hook to 40 characters or fewer with `illustration_overlay.apply_to_slug(..., force_copy={...})`, which costs no credits, and re-upload with `wp_draft.py --slug … --reimage`.
+## 7. Recording a lesson
 
-**Hosts probed live 2026-11-04, building an insurance-to-value brief (the `property_loss_insurance_mitigation` evergreen).** A form-mechanics beat can be sourced entirely from a regulator plus one trade publication, and the *page shape* decides whether the clause survives the figure matcher. Fetch clean and carry the numbers as prose: `tdi.texas.gov/pubs/consumer/<guide>.html` (the consumer guides are HTML, and the 80 percent requirement plus a worked roof example — `$10,000` replacement, `$7,000` actual cash value, `$2,000` deductible, `$8,000` versus `$5,000` paid — all land in one text run); `tdi.texas.gov/orders/<order>.html` (a **form-approval order** summarises the loss-settlement condition of the forms it approves — the 80 percent threshold, the ratio settlement and the actual-cash-value floor — which is the only way to cite an ISO/AAIS provision whose own text is a licensed paywall); `iii.org/fact-statistic/...` (claim frequency and severity tables flatten to `5.33 … 20,062`, the scale an ordinary claim is priced against); `adjustersinternational.com/pubs/adjusting-today/...` (quotes the standard-form provision verbatim, works a coinsurance example, and states plainly that replacement cost "is not the same as market value"). **Two traps on this beat.** (1) *A regulator's one-line summary can invert the formula it describes*: the Texas order writes the below-threshold settlement as "the ratio that replacement value of the building bears to the insured amount", which reads as the inverse of limit ÷ 80 percent of replacement cost — quote the order for the threshold and the actual-cash-value floor, and take the arithmetic from the trade publication's verbatim provision, never restate the summary as a formula. (2) *The two penalties are not the same thing*: below the line some forms pay the **greater of** actual cash value and the proportional amount, while others settle at actual cash value outright, and one Texas alternative form pays the least of the limit, market value or actual cash value when the owner elects not to repair — so the policy in hand governs and the article must name which mechanic it prices. Unreachable or unusable here: `mass.gov` (403 to the verifier), `insurance.nh.gov` (403), `content.naic.org` article pages (403) and its consumer guide (PDF, no text extractor), `insurance.wa.gov` / `mn.gov` guide paths (404), `insurance.oregon.gov` (TLS failure).
+**Record it with `scripts/learn.py`, never by appending to a SKILL.md.** An appended paragraph is
+re-read by every future run of this skill, so each lesson that lands here is paid for again on
+every brief — that is how this file reached a quarter of a megabyte. File the lesson instead:
 
-**Hosts probed live 2026-11-05, building an owner-builder permit / exemption-conditions brief (the `home_ops_execution` evergreen).** The whole beat rides on four state licensing statutes, and all four retrieve with their conditions as plain text: `california.public.law` (§ 7044 at 4.5 KB — the four-structure cap in (a)(2)(B), "the owner's employees with wages as their sole compensation" in (a)(1)(B), the 12-month residence test in (a)(3)(B), the two-structures/three-year limit in (a)(3)(C), and the (b)(1)/(b)(2) rebuttable-then-conclusive resale presumptions); `flsenate.gov/Laws/Statutes/<year>/<section>` (§ 489.103 at 27 KB — the $75,000 commercial ceiling, "direct, onsite supervision", the personally-appear-and-sign rule, and the owner-builder **disclosure statement**, whose items 4/7/8 carry the one-year presumption, the sentence naming the frequent practice of unlicensed persons having the owner obtain the permit, and the FICA/workers'-comp and "homeowner's insurance may not provide coverage" warnings — the single best warrant this desk has found for a permitting piece); `oregon.public.law` (ORS 701.010 at 17 KB — the three-existing-structures limit in (6) **and** the clause that contradicts the usual advice: (6) "does not apply to an owner contracting for work that requires a building permit unless the work that requires a permit is performed by, or under the direction of, a residential general contractor"; (5)'s prima facie sale intent from non-occupancy); `app.leg.wa.gov/rcw/default.aspx?cite=18.27.090` (8.7 KB — the "less than five hundred dollars" casual-work floor with its "part of a larger or major operation" exclusion, the twelve-month ownership bar in (11), and (12)'s bar on contractor activity to sell, demolish or lease).
-**Three traps this beat sets.** (1) *A word-figure must be cited in the source's own form*: RCW 18.27.090(9) prints "five hundred dollars" and never `$500`, so a cell leading on `$500` dies as `figure_absent`, and a draft that writes `$500` is reported by `review_audit` as a figure "in neither the draft nor the brief" — write the words in the body too, because `source_gate` will not find `$500` on the page. (2) *`$1,000`-class thresholds cannot lead a cell on these pages*: ORS 701.010(4)'s casual-work floor evidences on the statute's own "(1)" subsection marker (the nav-digit class), so carry it in prose. (3) *`source_gate` and the evergreen gate send different user-agents on statute hosts*: `california.public.law` and `oregon.public.law` answer the push gate **HTTP 403** ("UNVERIFIED, not wrong") while the evergreen gate fetched the identical pages first try — expect those citations to read UNVERIFIED-at-the-push by design, and do not replace a correct citation over it.
+```bash
+python3 scripts/learn.py --vertical <id> --kind pitfall --text "<the lesson>"
+```
 
-
-**Hosts probed live 2026-11-05, building a foreign-fund-wrapper / PFIC brief (the `expat_cross_border_relocation` evergreen).** Carries the figure as plain text and fetches first try: `govinfo.gov` U.S. Code HTML pages for title 26 **subpart A** of part VI — `.../USCODE-2024-title26-subtitleA-chap1-subchapP-partVI-subpartA-sec1291.htm` (22.9 KB: § 1291(b)(2)(A)'s 125-percent total-excess-distribution line, § 1291(a)(1)(A)'s ratable daily allocation, § 1291(c)(2)'s highest-rate rule and § 1291(c)(3)(A)'s § 6621 interest charge — four rows from one page, each landing on its own sentence) and `.../subpartD-sec1297.htm` (16.7 KB: the 75-percent income test and the 50-percent asset test). **The subpart letter is load-bearing: `...-subpartC-sec1291.htm` answers a 1,923-character stub, the same failure class as the title-26 § 911 path recorded 2026-10-22, so resolve the real subpart before assuming govinfo is dead.** Also carrying the figure: `irs.gov/instructions/i8621` (96.7 KB — the definition, the "entire amount of gain from a disposition … is treated as an excess distribution" sentence, "A separate Form 8621 must be filed for each PFIC", the $25,000 / $50,000 Part I exception **with its condition** that no excess distribution was received and no gain recognised, and the line-16d rate table printing "2018–2025 37%"); `irs.gov/taxtopics/tc409` (the 20% capital-gain rate); and `greenbacktaxservices.com/knowledge-center/pfic/` (29 KB, a practitioner page — the only place found stating the election timing plainly: mark-to-market "can be made in any year you own the PFIC", while the QEF election "must be made in the first year"). **Two matcher traps this beat is built on.** (1) *A form number is not a figure*: a cell leading on `8621` evidences on the page banner ("Instructions for Form 8621 (12/2025)") and one leading on `1296`/`1295` on the instructions' own table of contents, so those claims ride in prose under rows that verify. (2) *The 37% rate collides with a section number*: a cell beginning `37%` resolves to `section 7701(a)(37)` several thousands of characters earlier, so the rate is quoted as "the table's 37% … for 2018 through 2025" in prose under the instructions row rather than given its own row. Unreachable to the verifier on this beat: `justetf.com`, `esma.europa.eu`, `finance.ec.europa.eu`, `centralbank.ie` and `interactivebrokers.com` all answered `unreachable`, so the EU packaged-retail-product (PRIIPs) leg that forces a European-resident reader into local funds could not be sourced and was left out rather than asserted.
-
-**The frontier rewrite can invert an election-timing rule while every gate passes (learned 2026-11-05).** Loop 3 turned "mark-to-market can be chosen in any year; the qualified-elect election must be made in the first year" into "the mark-to-market choice is made on the return for the year of purchase, so a decision left until the following spring is already late" — the practical advice of the piece, reversed. No gate reads a `must be made by` clause: `source_gate` checks that the cited page carries the *figure*, `publish_gate` reads markers and prose shape, `review_audit` compares figures and quotes. On any piece whose actionability is a deadline or an election window, check each timing sentence against the source's own verb before the push, and prefer quoting the source's sentence in the verified brief so the rewrite has a string to preserve.
-
-**A Loop 3 rewrite can fail the Flesch floor on every attempt while the hand draft clears it, so budget the repair rather than the re-run (learned 2026-11-06).** On the `carbon-data-stops-at-6-minutes` evergreen the draft passed at Flesch 52.6, and the frontier pass then returned three failures in a row — 44.9, 47.4 and 49.0, each `length=ok` — because the rewrite compressed short declarative sentences into longer nominal ones; a fourth attempt would have produced the same class. The working sequence is to keep the attempt with the fewest defects (here attempt 3), then repair by hand in one pass: cut the `## Gate report`, restore the hand-scored title, re-split the long sentences, and **rebuild the `By the numbers` block, which is where the rewrite drops the title's own figure** — attempt 3 had replaced the 0.1-hour engine grain with the 10% odometer row, so an article titled on six minutes carried no six-minute bullet. Two siblings in the same pass, neither visible to a gate: the lead's "six minutes" had been re-cited to the agency page that states only the device's purpose (the figure lives in Appendix A), and the tactical section had lost the 10,001-pound procurement item to a generic "export over dashboard" bullet. `review_audit` compares figures and citations rather than authorship, so a hand-repaired final still passes; the repair cost one editing pass, a re-run costs nine minutes and lands in the same place.
-
-**Hosts probed live 2026-11-07, building a currency-in-the-landed-cost brief (the `supplier_risk_reshoring_decision` evergreen).**
-Carries the figure as plain text and fetches first try: `federalreserve.gov/releases/h10/current/` (the weekly foreign-exchange
-release — "Release Date: November 2, 2026 … MEXICO PESO 18.5922 18.6381 18.6730 18.7911 18.7942", i.e. a **measured spot rate for
-any currency on a dated row**, which is the cheapest FX anchor the desk has, and the peso cell lands cleanly on its own row);
-`federalreserve.gov/releases/h15/` (the same page the FTZ brief uses, for the dollar leg of the differential);
-`ecfr.gov/current/title-19/section-159.34` (Customs' certified-rate conversion order; its own amendment note "T.D. 81-117, 46 FR
-24944, May 4, 1981" is a clean `1981`-led durability row). **Unreachable to the verifier:** every Banco de México path tried
-(`banxico.org.mx` home = a 1,368-character nav shell, `tipcamb/main.do` = 607 characters, `monetary-policy/index.html` and the
-policy-announcement index = `unreachable`, `tipcamb/tipCamMIAction.do` = 1,588 characters with no rate), so a peso policy rate
-rides on a data aggregator (`countryeconomy.com/key-rates/mexico`, which prints the cut in one sentence: "lowered its interest
-rates by 0.25 percentage points, from 6.5% to an annual rate of 6.25%") and the article must attribute the rate to the central
-bank, with the fetch wall recorded in the verified brief. `cbp.gov/trade/programs-administration/currency-exchange-rates` is
-unreachable too, so the published quarterly rate table itself cannot be a row.
-
-**Three traps from the same run.**
-(1) *A hand-edit that removes a figure must be applied to the draft as well*: `review_audit` compares the pair and reported
-`FAIL figure lost: 15` when an unsourced "5 to 15 percent" band was cut from the `_final.md` only — the fix is the same
-replacement in both files, then re-run the audit. (2) *The art director's render review can be silently absent*: a pass logged
-`render review skipped: render review unavailable (frontier returned no text (finish_reason=length)) — the brief gate ran, the
-picture was not checked`, and the image that landed carried legible model lettering ("CUSTOMS CERTIFICADO" on a document
-flat-lay plus an official-looking seal) — read the pixels with vision on every render whose review line says "not checked", and
-a documentary treatment (flat-lay, forms, notices) is the one that reliably paints type. (3) *On the aichieve front a finished
-deployment is not a rebuilt page*: the auto-deploy commit from `publish.py` queued nothing (the last app-18 row still sat at the
-18:43 build), an explicit `queue_application_deployment(application:$a, deployment_uuid:…, force_rebuild:false)` returned
-`finished` in under a minute with the page still serving zero `wp-content/uploads`, and the same call with `force_rebuild:true`
-(deployment `5a837a3d…`) served the hero — probe the live page for `wp-content/uploads` and escalate straight to
-`force_rebuild:true` rather than re-pushing an empty commit.
-
-**Hosts probed live 2026-11-07, building a robot-mower accuracy / RTK-correction-path brief (the `yard_robotics`
-evergreen).** Two earlier runs dropped this beat at 6.6 on the claim "vendors publish slope and area, never
-canopy performance" — the drop was mis-scoped: the *prerequisites* are published by the maker and the canopy
-degradation is measured in the survey literature. Carries the figure as plain text and fetches first try:
-`husqvarna.com/us/discover/epos` (13.6 KB — "Reference station must have clear 135-degree view of sky in all
-upper directions", the FAQ's "(135-degree cone) and access to a power outlet", and the sentence that a moved
-station forces the map to be re-created); `husqvarna.com/uk/support/install-virtual-boundaries-with-husqvarna-epos-two-installation-options-ka-70323`
-("at least 2 metres (6.5 feet) high" — lead the cell on `6.5 feet`, because a bare `2` first matches
-"two installation options" in the same paragraph — plus the coverage list whose USA entry reads "limited
-availability by region", a qualification with no numeric token that rides in prose); `husqvarna.com/id/learn-and-discover/husqvarna-epos`
-(one table carries the whole accuracy ladder — cloud "Accuracy typically 1–6 cm", RS 4G "range up to 25 km" and
-"1–2 cm (within 10 km range)", RS5 "range up to 500 m"; three rows can ride on this one page); `pmc.ncbi.nlm.nih.gov`
-(**a working full-text publisher mirror** — PMC11479190 fetches at 59 KB with the abstract's result and the body's
-sentences as text: "an RMSE of 2.03 m and MAE of 1.63 m", "In total, 84 test points", and the critical honest
-qualifier "no Fixed solutions were achieved, with almost all epochs recorded as DGPS solutions (97% of 2670
-solutions—30 per point)");
-
-**A mower vendor's product page is fetchable where its manuals are not** (same run): `kress.com/en-us/kress-rtk%E2%81%BF-%C2%BD-acre-robotic-lawn-mower-kr172`
-(7.1 KB — the feature block's own admission "Dead reckoning for mowing even undershade (weak satellite signal)",
-beside "no perimeter wire installation" and a `0.7 acre` / `0.5 acre` cutting-every-72h-versus-48h pair);
-`navimow.segway.com` (19 KB — "Network RTK access is included at no extra cost, required cellular data are
-provided free of charge", the "Check Network RTK Coverage / Enter your postcode" box and a notify-when-available
-form, which is the cheapest proof that *coverage*, not hardware, is the constraint); and a dealer listing
-(`smartyardnw.com/product/husqvarna-epos-reference-station-2-4`, 5.9 KB — "$ 899.99 Original price was: $899.99.
-$ 799.99 Current price is: $799.99"). Still PDF-only and therefore unusable: the installation manuals behind
-dock clearance and gate width, so angle #5 keeps failing on its own numbers while the *sky-and-signal* half of
-the same audit is fully citable.
-
-**`article_reviewer.py` can hold every attempt on rhythm while the draft was already the better text** (learned
-2026-11-07): three attempts on a 823-word evergreen were all rejected — attempt 1 `hard=1` / rhythm 6.6,
-attempt 2 `hard=0` but sentence spread flattened from sd 8.6 to 4.9 (health 0.736 → 0.372), attempt 3 `hard=1`
-again — because the reviewer compacts connected sentences faster than it can re-vary them. The repair that
-converged was the documented one applied to the *clean* candidate: take the `hard=0` body, delete the
-`<!-- by-the-numbers -->` marker it inserts (outside the house set, and it swallows the numbers block into
-`<!-- tension -->` when the sections are split), restore the headline's own figure to the first bullet (the
-rewrite had demoted `2.03 m` to a sample clause and led on `84 points`), and rebuild rhythm with **plain-word
-swaps rather than merges** — merging to lift sd overshoots Flesch (mean 26.2 words, Flesch 42.4), splitting
-undershoots rhythm; the workable band on this body was mean 18.5 / sd 6.3 / Flesch 55.3, reached by shortening
-words ("horizontal error" → "error", "comparatively favourable" → "fairly good", "photographs" → "shows the
-dealer") and leaving the sentence count alone.
-
-**The internal-link scorer used to justify a pick on function words, and the fix belongs in `growth_os.GENERIC`**
-(learned 2026-11-07): a mower article's generated Related-reading block stamped a door-lock piece on the shared
-tokens "because, dies" — the same incidental-token class logged as open by five earlier wellroost runs. Adding
-the conjunctions (`because, since, though, although, unless, whether`) and the verb family (`dies, die, died,
-kills, killed`) to `growth_os.GENERIC` dropped that pick and left one justified link (same front, same category
-hub, shared tokens "machine, mower's"); `test_internal_links.py` passed 90/90 afterwards. Fixing a stanza of
-stopwords is cheaper than curating three articles a week by hand, and `wp_draft.py --slug … --refresh-live`
-updates the live body after a re-link (the `publish.py` push alone skips a post that is already published).
-
-**Hosts probed live 2026-11-07, building a charge-clock / spare-pack brief (the `outdoor_power_equipment` evergreen).** Carries the figure as plain text and fetches first try: `consumerreports.org/home-garden/lawn-mowers/gas-vs-electric-lawn-mower-which-is-better-a1057954260` (**the measured anchor this beat needs** — "the average battery walk-behind mower's run time was 45 to 50 minutes per charge", "two-thirds … should be able to mow a quarter acre on one charge", "on flat, unobstructed ground, it might cut half an acre", plus the comparative lines "Gas mowers are unbeatable in this arena" and electric mowers are "largely maintenance-free"; note `source_gate` gets HTTP 403 from the same host, so the citation reads UNVERIFIED at the push by design and only the evergreen gate reads it); `egopowerplus.com/21-inch-self-propelled-mower-select-cut-lm2135sp` (run time, deck, torque and the self-propel range on one page); `egopowerplus.com/charger-rapid` (the whole charge ladder — "7.5Ah in 60 minutes, 10.0Ah in 70, 12.0Ah in 90"); `egopowerplus.com/battery-info` (**the pack table: 420Wh for the 7.5Ah and the four charger columns — 60 / 100 / 145 minutes**, which is what pairs a run time with a refill on one host); `batteryuniversity.com/article/bu-409-charging-lithium-ion` (charge efficiency ~99 percent and the 180-minute saturation table).
-**Three traps this beat is built on.** (1) *A vendor's "up to" run time and a tester's measured average are two different numbers and the piece must keep them apart* — 60 minutes on the box against 45–50 measured across brands is the whole argument, and merging them turns a duty-cycle story into a spec-sheet retread. (2) *The slow refill belongs to a named charger, not to the brand's chargers*: 145 minutes is the standard unit's column, 100 the 320-watt unit's, 60 the rapid one's, so a sentence that says "EGO's chargers take 145 minutes" is a claim the ladder contradicts. (3) *A brand written in caps is an undefined acronym to the gate* — `EGO` fails `check_accessibility` until it carries a paren gloss ("EGO (the battery mower brand)"); the frontier rewrite's habit of deleting the brand name entirely is what hides it, so check the lede still names who publishes the spec.
-
-**Renumbering `[n]` tags with chained `str.replace` collapses them — map in one pass (learned 2026-11-07).** Merging two Sources entries and shifting 6→5, 7→6, 8→7 with sequential replaces re-numbers the numbers the previous replace just created: every tag above the shift ended on the lowest value, and the article went to the shape and source gates citing `[4]` for six different documents. Nothing fails mechanically — `source_gate` counts citations, `publish_gate` reads markers — so only reading the Sources block catches it. Use one regex with a `re.sub` callback (or rewrite the body from the audited text), then re-run accessibility, shape and the headline score rather than trusting the previous verdict.
-
-**A two-object diptych leaves no free corner for the type block — re-commission a treatment with negative space instead of re-anchoring (learned 2026-11-07).** On the charge-clock header the `technical_isometric` render put a battery pack on each half of the frame, and the overlay copy was illegible at top-right, bottom-right *and* top-left: every anchor landed the headline on a machine. `illustration_overlay.py --anchor` is for a type block that landed on sparse line art, not for a frame with no empty third; the working move was `illustration_creator.py --apply --force --style editorial_macro`, whose single-subject macro under one key light leaves the dark left third legible on the first try (5 credits, one earlier prompt rejected for painting lettering into the render). Same run: the director's alt arrives as the overlay headline glued to a clipped phrase ("…amber charge indicator glowing, extreme"), so retype a complete 40–140 character sentence in `featured.json` **and** the artifact before `wp_draft --reimage`, then force the front's rebuild — without it the page serves the previous rel=related images and `og:image` stays the default share card.
-
-**A price range as a numbers-bullet lead-in reads as two metrics, so lead on one end (learned 2026-11-07).** `readability_critic`'s bullets class counts numeric tokens in the bold lead-in, so `- **$350–$650:** a published guide price for a slab diagnostic` hard-fails as "packs 2 figures into one lead-in" however honest the range is. Lead on the end the sentence is about (`- **$650 ceiling:** the top of a published guide range …`) and keep the other end, with its own host, in the tactical section — the container fee then still appears in at most two body sections, which is `article_shape`'s cap.
-
-**A Loop 3 rewrite deletes the tactical section's observer cue by turning the authored "What I'd watch is …" into a bare statement (learned 2026-11-07).** The rewrite rephrased "What I'd watch is the monitoring question" as "The monitoring question comes one step earlier", which reads better and fails `publish_gate`'s voice check ("tactical-insight has no observer cue") — the cue is matched literally in that section, and the catch's own "My read, held loosely" does not cover it. Restore a listed form in the tactical opener, then re-run `review_audit` and `publish_gate --file`.
-
-**The same pass duplicates the earned inline link**, moving it from the tactical section into a new closing paragraph of The catch (both copies kept, so `article_shape` counts one link and the piece reads as a loop). Grep the body for the path and keep exactly one occurrence, in the section whose argument the linked page serves.
-
-**A hold with `hard=0` is a flow regression, not a bad rewrite — adopt that attempt and repair it by hand (learned 2026-11-09).** On the index-boundary evergreen all three attempts were held and the only complaint on attempt 2 was "hedge density rose: 4.81 -> 5.78 per 1,000 words" — a candidate the audit itself scored `ok=true, hard=0`, where the hedges were the sources' own qualifiers ("roughly 20,000 points", "around 170,000 tenants"). Regenerating costs another full frontier pass and usually trades the hedge count for a worse rhythm; the cheaper path is to take the `_held.md`, restore what the rewrite quietly deleted (it had dropped the article's ABAC pillar and its inline internal link), replace any invented process cue ("I checked the paper twice because the number looked too clean") with a substantive one, and re-run `article_reviewer.py --audit --draft <draft> --out <final>` — note `--out`, not `--final`, which the module's own docstring misnames.
-
-**Check the built file's mtime inside the front container before blaming the CMS for a missing hero (learned 2026-11-09).** After `wp_draft.py --slug … --reimage` attached media 1578 and the post read back `featured_media: 1578`, https://aichieve.net/<slug>/ served a page with no `<img>` and `og:image` still the default share image across two `ci:` commits: both Coolify queues had reused a cached image, and the `dist` file inside the container was stamped 18:17 — before the 18:19 media upload. `docker exec <front> ls -l /usr/share/nginx/html/<slug>/index.html` gives the build time in one line; the fix is a forced deploy (`POST /api/v1/deploy?uuid=<front-uuid>&force=true`, token read out of wp-config, the API answering on `127.0.0.1:8000` from the host), after which the same page carried the hero, the `og:image` and the Related reading block. The front uuid is also the container-name prefix, so `docker ps` names it without a Coolify lookup.
-
-**Hosts probed live 2026-11-09, building a refrigerant-class / repair-vs-replace brief (the `home_infrastructure_lifecycle_tco` evergreen).**
-Carries the figure as plain text and fetches first try: `epa.gov/climate-hfcs-reduction/hfc-restrictions-sector` (the restrictions-by-sector table — "Stationary residential and light commercial air conditioning and heat pumps … 700 January 1, 2025", page last updated August 28, 2026);
-`epa.gov/snap/substitutes-residential-and-light-commercial-air-conditioning-and-heat-pumps` (one SNAP table carrying the GWP and safety group of every substitute — "R-410A AZ-20, Suva 9100, Puron N 0 2,090 A1", "R-454B Opteon™ XL41 N 0 470 A2L", "HFC-32 N 0 675 A2L" — so three honest rows ride on one page, and each cell must lead on the model name or the GWP, never on a bare `2`);
-`epa.gov/climate-hfcs-reduction/regulatory-actions-technology-transitions` (rule summaries as prose, including the interim final rule's "allows for inventory of higher-GWP HFC equipment manufactured or imported before January 1, 2025, to be installed until January 1, 2026", dated by the `88 FR 73098` citation a row can lead on); and `law.cornell.edu/uscode/text/42/7675` (the phasedown table itself: 90 / 60 / 30 / 20 / 15 percent of the production and consumption baseline for 2020–2023, 2024–2028, 2029–2033, 2034–2035, 2036 on — note the statute expresses each step as the share *allowed*, so "a 60 percent cut" is the wrong reading of the 60-percent row).
-**`ecfr.gov` 40 CFR 84 subpart B fetches at 54 KB but its installation prohibition cannot carry a row:** every cell for § 84.54(c)(1) leads on a `700` the page states first in § 84.54(a)(1) (the manufacture/import list), so the evidence window reads as the wrong subsection — carry the install rule in prose under the § 84.54 citation and quote it verbatim in the verified companion. The same page's banner prints "up to date as of 11/05/2026", a free as-of anchor. Unreachable to the verifier on this beat: `epa.gov/climate-hfcs-reduction/background-hfcs-phasedown` and `…/phasedown-hydrofluorocarbons` (both `unreachable`), and `…/technology-transitions-program-overview` / `…/frequently-asked-questions` (unreachable); `…/technology-transitions` fetches but is a 3.4 KB landing page carrying no figure. A SNAP page listing a gas as **acceptable** is not permission to write that it is banned: the GWP ceilings restrain new equipment, and servicing existing equipment remains legal.
-**A model number in a `By the numbers` lead-in is a second figure.** `readability_critic.bullets_findings` counts numeric tokens in the bold lead, so `**2,090 — R-410A's global warming potential:**` fails the one-metric rule on the `410` inside the model name. Write the lead without the model (`**2,090 — the gas in the old box:**`) and name the refrigerant in the sentence that follows.
-
-**Hosts probed live 2026-11-10, building a certificate-lifetime / offline-issuance brief (the `nhil_infrastructure_ops` evergreen).**
-Carries the figure as plain text and fetches first try: `raw.githubusercontent.com/cabforum/servercert/main/docs/BR.md` (325 KB — the CA/Browser
-Forum Baseline Requirements themselves: § 6.3.2's "issued before 2026-03-15 SHOULD NOT have a Validity Period greater than 397 days and MUST NOT
-have a Validity Period greater than 398 days", the 2027 rung's "greater than 99 days … greater than 100 days", the 2029 rung's "greater than 46
-days and MUST NOT have a Validity Period greater than 47 days", the reference table 398 / 200 / 100 / 47 days by issue window, the same table's
-validation-reuse ladder 398 / 200 / 100 / 10 days, and "a difference of 86,400 seconds shall be equal to one day"); `letsencrypt.org/2025/12/02/from-90-to-45`
-(6.6 KB — "We currently issue certificates valid for 90 days, which will be cut in half to 45 days by 2028" and "It is currently 30 days, which will
-be reduced to 7 hours by 2028"); `digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days` (11 KB — the ladder as one sentence,
-"As of March 15, 2026 … 200 days. As of March 15, 2027 … 100 days. As of March 15, 2029 … 47 days", plus the SII reuse row "reused for 398 days, down
-from 825" and the revocation-rationale line "browsers often ignore these features").
-**Three matcher rulings this beat is built on.** (1) *On the BR file only two of the four rungs can carry a row*: a cell leading on `200 days`
-evidences on the **domain-validation reuse** line (§ 4.2.1), `100 days` on the amendment-history table, and `10 days` on a 2014 amendment row — the
-two clean cells are `397 days` and `46 days`, each landing in its own § 6.3.2 sentence, so the other rungs ride in prose under those citations. (2)
-*On the Let's Encrypt post a `45 days` cell evidences on the page title*, so that row leads on the `90 days` sentence it is measured from. (3) *The
-`github.com/.../blob/...` render of the same BR file is a 2.5 KB stub* while the raw path fetches the whole document — cite the raw path, and say in
-the run log that a reader following it lands on the repository file rather than a rendered page.
-Unreachable to the verifier on this beat: `cabforum.org` (the ballot's own announcement page), `letsencrypt.org/docs/lifetime-migration/`,
-`security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread
-shell — so the ladder is cited from the three hosts above rather than from four CAs.
-
-**Loop 3 can return `AssertionError: no candidate to write` because the reviewer's transport never disables thinking (learned 2026-11-10).**
-`scripts/article_reviewer.call_model` called `frontier_llm.chat` without `thinking=False`, so on `deepseek-v4-pro` every attempt spent the whole
-32,000-token ceiling reasoning and returned empty `content` with `finish_reason=length` — the 2026-11-04 class, which had been fixed at the
-`chat()` signature but not at this call site. The fix is one keyword at the call site (applied 2026-11-10, with the reason inline). A run that sees
-`no candidate to write` should read the attempt lines: `call failed — frontier output truncated` on all three is this defect, not a bad draft.
-
-**The catch section loses its cue to a two-word change every rewrite makes (learned 2026-11-10).** Three attempts on the certificate evergreen were
-each held for one hard failure — `<!-- nuanced-takeaway --> carries no first-person sentence` — because the rewrite turns "My read, held loosely:"
-into "**My reading**, held loosely, is that…", which the cue matcher cannot see, and it replaces a substantive observation with an invented process
-cue ("I read the table three times before I believed…"). Adopt the attempt with the fewest hard failures, restore the exact cue and the real
-observation, and `article_reviewer --audit` passes a hand-repaired final: the audit compares figures, citations and quotes, not authorship.
-
-**Hosts probed live 2026-11-10, building a storage-feed / data-stall brief (the `workstation_compute_economics` evergreen).**
-Carries the figure as plain text and fetches first try: `mlcommons.org/benchmarks/storage/` (31 KB, and the single best
-anchor this desk has found for an I/O-sizing beat — "Keeping a single simulated B200 accelerator at 100% utilization
-requires about 5.9 GiB/s of read bandwidth", the Unet3D pattern "averaging about 140 MiB each, with a wide spread
-(standard deviation ±65 MiB) … read in batches of seven with 4 parallel reader threads", and the validity rule
-"90% for Unet3D, 85% for RetinaNet", each in its own sentence); `arxiv.org/html/2007.06775v3` (Mohan et al., VLDB 2021 —
-124 KB, carrying "DNNs spend upto 65% of the epoch time in data pre-processing", "10 –70% of their epoch time on blocking
-I/O", "3 – 24 CPU cores per GPU for data pre-processing" and the cached-stall sentence "65% and 50% of the epoch time on
-prep stall … when the dataset is entirely cached in memory", which is the load-bearing pair for any "a faster disk will not
-fix it" argument); `docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html` (the gp3 baseline as one sentence);
-`tomshardware.com/reviews/best-ssds,3891.html` (70 KB, "14.5 GB/s of sequential throughput"). Fails or cannot carry a row:
-`crucial.com` product pages (HTTP 403 "Request Rejected"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX
-system guides (`unreachable`), `semiconductor.samsung.com` (11 KB, spec table client-rendered, no MB/s token) and
-`westerndigital.com` (binary body). **Matcher traps here:** a comma-grouped `2,000 MiB/s` or `7,450 MBps` cell tokenises to
-`2`/`000` and `7`/`450`, and both landed in site navigation, so the AWS row ships on `125 MiB/s` and the Torch row on
-`14.5 GB/s` with the per-model figures in prose; and the arXiv paper's `10 –70%` cell evidences on its **table of contents**
-(`10 Conclusion`), so that band rides in prose under the row that leads on `65%`.
-**A unit mismatch is the same recompute trap as a derived percentage (learned 2026-11-10).** The draft read "two fast
-drives cover two cards" from `14,500 MB/s` against `5.9 GiB/s` as if the units matched; converting first, 5.9 GiB/s is
-6,335 MB/s, so one drive covers **2.3 cards** and a four-card box needs two drives. Convert every pair to one unit and
-recompute the ratio in the final, exactly as a percentage is recomputed from its endpoints.
-**Hosts probed live 2026-11-12, building a planning-cadence / batch-window brief (the `demand_sensing_advanced_sop` evergreen).** Carries the figure as plain text and fetches first try: `learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-planning-performance` (**14 KB — and the `403` recorded for this host on model-retirement paths (2026-10-19) is path-specific, not host-wide**: this page prints the run's scaling rules as prose, "(Number of threads) = (Number of planned orders ÷ 1,000)", "(Number of orders per bundle) = (Number of demand items ÷ Number of threads)", "the larger the time fence is, the longer it takes master planning to run", "don't schedule any other batch job at the same time … such as inventory close", and "this difference might be as much as 30 minutes"); `scmr.com/article/<slug>` (a university capstone republished in the trade journal, 21 KB with the whole scenario grid — 61 SKUs, 31 nodes, 18 scenarios, six update frequencies annual→weekly, three service levels, "reduced inventory value by up to 63%—about $9.3 million annually" against "a conservative annual update cut working capital by 40%", plus "Over 50% came from hub-level inventory reductions while spokes … contributed only 2%"); `demand-planning.com/<date>/<slug>` (13 KB, the practitioner case: 60 locations, 13 echelons, "a EUR 20 million saving", 200,000 item/location combinations collapsed to "roughly 300 different groups", parameters reviewed "every month or quarter"). Fetches but cannot carry a digit-led row: `odoo.com/documentation/20.0/…/replenishment/reordering_rules.html` (33 KB with "The scheduler is set to run once a day, by default" and the `Forecasted date = Current date + Vendor Lead Time + Horizon Days` arithmetic, **but the page's own title "Odoo 20.0" owns every `20`-led cell, and a `30`-led cell lands on its multiple-of-six quantity example** — so the daily-cadence fact rides in prose and Sources). Unreachable to the verifier on this beat: `otexts.com/fpp3/*` (the free Hyndman textbook, every path `unreachable`, so no MAPE/MASE definition can be a row), `docs.frappe.io`, `docs.oracle.com` (1.5 KB stub), and `mdpi.com` (fetched with a zero-length body).
-
-**Topic-finding heuristic worth reusing:** when a vertical has 8+ published artifacts, list their `one_big_thing:` lines and
-name the *axis of the build decision* nobody has priced (here: memory capacity, chip rungs, adapters, cables and encode
-throughput were all covered; the data feed was not). An uncovered axis is a stronger evergreen lead than another angle on
-a covered one, and it is self-documenting in the brief's de-dup line.
-
-**Hosts probed live 2026-11-12, building a state-residency-exit brief (the `expat_cross_border_relocation` evergreen).**
-Carries the figure as plain text and fetches first try: `california.public.law/codes/ca_rev_and_tax_code_section_17014` (5.1 KB —
-(a)(1)–(2) the resident definition, (c) "continues to be a resident even though temporarily absent", (d) the "uninterrupted period
-of at least 546 consecutive days under an employment-related contract", (d)(1) the 45-day returns allowance, (d)(2) the $200,000
-intangible-income disqualifier, (d)(4) the anti-avoidance clause, and its own "Verified: Nov. 11, 2026"); `oregon.public.law/statutes/ors_316.027`
-(17.9 KB — the three-part conjuctive escape for a domiciliary, "not more than 30 days", and (B)'s "more than 200 days" statutory
-resident); `law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-302/` (12 KB — "for an aggregate of more than 183 days …
-maintained his place of abode within Virginia, whether domiciled in Virginia or not", plus the "Domicile" definition, "the place to
-which he intends to return even though he may actually reside elsewhere").
-**The `www.` prefix is the whole difference on the public.law mirrors:** `https://www.california.public.law/...` answers `unreachable`
-while `https://california.public.law/...` fetches — which is how a 2026-10-29 run dropped this exact candidate at 7.5 on "both
-`california.public.law` and `ftb.ca.gov` answered unreachable". Probe both forms before inheriting a drop.
-Unreachable to the verifier on this beat: `nysenate.gov/legislation/laws/TAX/605`, `law.justia.com` NY statutes, `tax.ny.gov` (both
-an HTML page and a PDF), `ftb.ca.gov` (and its 540NR booklet, `unsupported`), `cga.ct.gov`, `mass.gov` info pages, `iga.in.gov`
-(a 24-char stub), `revisor.mn.gov` (fetches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`.
-`malegislature.gov` MGL c.62 § 1 fetches but spells its count as "one hundred eighty-three days", which the matcher cannot lead on.
-
-**An enumeration hold is cheaper to prevent in the draft than to repair after the rewrite (learned 2026-11-12).** The reviewer
-re-titled the residency section "The big picture: three states, three counts" and `readability_critic` held the piece because the
-heading promised three items and the body labelled none — a hold on the *rewrite's* heading that the draft could not see. Writing
-the three states as a numbered list (`1. **California: 546 days.** …`) in the draft gives any count-bearing heading the rewrite
-invents the labels it needs, and the next run's attempt 2 was ACCEPTED. Two boilerplate cues cost the same pass: `my read is that`
-and `the part I keep circling` are in `review_audit.BOILERPLATE_CUES` and read as regressions, so use a plain first-person verb
-("What I notice is…", "I read the guide's count as…").
-
-**Hosts probed live 2026-11-13, building the vent-mesh brief (the `resilient_home_assets` evergreen).** Carries the figure as plain text and fetches every time: `insurance.ca.gov/01-consumers/200-wrr/Safer-from-Wildfires.cfm` (11–12 KB — the discount list's ten measures as prose: "Installing 1/16 to 1/8 inch noncombustible, corrosion-resistant metal mesh screens over exterior vents", "5 foot ember resistant zone, including fencing", "a minimum of 6 vertical inches" at the wall base, and "Every action under Safer from Wildfires will qualify you for an insurance discount"; note the *other* CDI path `01-consumers/105-type/95-guides/03-res/Wildfire-Safety.cfm` also fetches 7.7 KB but carries **no figure at all**, so it cannot carry a row); `firesafemarin.org/harden-your-home/fire-resistant-vents` (21 KB — the whole mesh trade as text: net free areas "81%" quarter-inch, "75%" 1/8-inch, "71%" 1/16-inch, "Common 1/4″ screens are ineffective", "even at $40 per vent" where flame impingement is plausible, "mesh alone would be adequate" where only embers are, gable vents "should be avoided", soffited eaves preferred, and the chapter-7A 1/16-to-1/8 range); `firesafelake.org/vents` (6.7 KB — "embers passing through 1/8 inch screening can still have enough energy to ignite fine fuels (Quarles 2009)", plus the 1/4-inch-is-the-old-minimum history); `vulcanvents.com/codes-and-compliance` (14.7 KB — the ASTM E2886 test criteria as a vendor's compliance page: "shall not exceed 662°F (350°C)", "144 square inches" per opening, no flaming ignition in the ember and flame tests). **Unreachable or unusable on this beat:** `ucanr.edu/program/uc-anr-fire-network/vents` fetches 6.5 KB with the code sentence on one probe and answers `unreachable` on the next two, so it is not a row (the flakiest host seen on this vertical); `astm.org`, every `wildfireprepared.org` path (the technical standard is PDF-only), `readyforwildfire.org`, guessed `fire.ca.gov` and `osfm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths all fail the verifier.
-**Matcher traps on this beat:** a cell leading `1/16 to 1/8 inch …` tokenises to `1` and evidences on a nav `1)` in the CDI sidebar — lead the cell on `16` and the window lands on the vent sentence; a `1/8 inch`-led cell on the Lake County page lands on its *earlier* 1/8 sentence, so lead that row on `2009`; and a `40`-led cost cell on the Marin page evidences on the council's own "even at $40 per vent" sentence rather than the net-free-area table. A per-square-inch figure (`144 square inches`) generates no shape-gate `figure` at all, which makes it a safe third numbers bullet when the block must carry only one percentage.
+(`--kind rule|host`, `--file <md>` for a long one, `--url/--verdict/--note` for a probe result,
+`--digest` to rebuild `context/knowledge/DIGEST.md`.) The casebook and the digest are read on
+demand. Leave this manual alone unless the *procedure* changed rather than the story.

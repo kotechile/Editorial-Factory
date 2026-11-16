@@ -261,7 +261,7 @@ defects, not preferences:
   * the borrowed observer cues ("the part I keep circling", "my read is that", "what strikes me
     here"). Write the observation in your own words or leave it out.
   * a "## Gate report". A gate is code; a model grading itself is not a review.
-{retry}
+
 OUTPUT, exactly this order and nothing else:
 
 <!-- review-note -->
@@ -308,6 +308,7 @@ held instead of published, so satisfy them deliberately rather than hoping:
 THE DRAFT TO REWRITE:
 
 {draft}
+{retry}
 """
 
 
@@ -422,6 +423,15 @@ def review(draft_path: pathlib.Path, *, brief_path: pathlib.Path | None = None,
             if "flesch" in fail.lower():
                 hint = (" — the long words costing the score, each to be replaced or used once: "
                         + ", ".join(long_words(text)))
+            elif "undefined acronym" in fail.lower():
+                # The recurring one (NVIDIA, 4 runs in a row to 2026-11-13): the rewrite answers the
+                # gate with a comma appositive ("NVIDIA, the chipmaker,"), which is not an expansion.
+                # A brand or system name with no known full form cannot be glossed at all — the remedy
+                # is the plain noun, never an invented expansion.
+                hint = (" — a brand or system name with no known full form cannot be glossed: DROP the "
+                        "all-caps token and write the plain noun instead ('the chipmaker', 'the GPU "
+                        "maker', 'the agency'). Do not invent an expansion and do not answer with a "
+                        "comma appositive — the gate reads both as an undefined acronym.")
             result["hard"].append(f"accessibility gate: {fail}{hint}")
         result["ok"] = not result["hard"]
         result["score"] = ra.score(result)

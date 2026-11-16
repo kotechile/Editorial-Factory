@@ -37,3 +37,7 @@ context/assets/_review_*
 
 # local rollback snapshot of superseded editorial files
 context/_archive_not_latest/
+
+# telemetry: the in-pipeline cost ledger grows every run and is not source
+context/cost_ledger.jsonl
+context/cost_ledger.jsonl.*

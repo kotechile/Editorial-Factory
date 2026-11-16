@@ -133,7 +133,7 @@ fi
 #    `synthesis: true` + >= 2 anchors in the frontmatter `sources:` list, so a fused thesis can never
 #    ship indistinguishable from a single-signal story.
 if ! python3 "$ROOT/scripts/test_synthesize_topics.py" >/dev/null 2>&1; then
-  echo "FAIL: synthesis helper regression suite — detail:"; python3 "$ROOT/scripts/test_synthesize_topics.py" 2>&1 | tail -6; FAIL=1
+  echo "FAIL: synthesis helper regression suite — detail:"; python3 "$ROOT/scripts/test_synthesize_topics.py" 2>&1 | tail -6 || true; FAIL=1
 fi
 if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-fixtures; then
   echo "FAIL: a synthesis fixture cites a source absent from the committed signals files"; FAIL=1
@@ -145,10 +145,13 @@ if ! python3 "$ROOT/scripts/synthesize_topics.py" --check-briefs; then
   echo "FAIL: synthesis brief/draft anchoring (see messages above)"; FAIL=1
 fi
 if ! python3 "$ROOT/scripts/test_sync_crons.py" >/dev/null 2>&1; then
-  echo "FAIL: cron fleet contract tests — detail:"; python3 "$ROOT/scripts/test_sync_crons.py" 2>&1 | tail -6; FAIL=1
+  echo "FAIL: cron fleet contract tests — detail:"; python3 "$ROOT/scripts/test_sync_crons.py" 2>&1 | tail -6 || true; FAIL=1
 fi
 if ! python3 "$ROOT/scripts/test_check_offpeak_crons.py" >/dev/null 2>&1; then
-  echo "FAIL: off-peak gate contract tests — detail:"; python3 "$ROOT/scripts/test_check_offpeak_crons.py" 2>&1 | tail -6; FAIL=1
+  echo "FAIL: off-peak gate contract tests — detail:"; python3 "$ROOT/scripts/test_check_offpeak_crons.py" 2>&1 | tail -6 || true; FAIL=1
+fi
+if ! python3 "$ROOT/scripts/test_generation_gate.py" >/dev/null 2>&1; then
+  echo "FAIL: generation gate contract tests — detail:"; python3 "$ROOT/scripts/test_generation_gate.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.5 WordPress draft-push mapping (hard): the vertical -> CMS routing and the field contract that
@@ -156,7 +159,7 @@ fi
 #     REST API on localhost, so it needs no credentials and writes nothing; the read-only Supabase
 #     section skips itself when Supabase is unreachable, so a network hiccup cannot red the gate.
 if ! python3 "$ROOT/scripts/test_wp_draft.py" >/dev/null 2>&1; then
-  echo "FAIL: wp_draft mapping tests — detail:"; python3 "$ROOT/scripts/test_wp_draft.py" 2>&1 | tail -8; FAIL=1
+  echo "FAIL: wp_draft mapping tests — detail:"; python3 "$ROOT/scripts/test_wp_draft.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.55 Derived article assets (hard): every artifact that reaches a destination carries a
@@ -165,7 +168,7 @@ fi
 #      reliably, so both are derived from the artifact's own text (scripts/article_assets.py) — and
 #      the rules that stop a chart from inventing a figure are pinned by this suite.
 if ! python3 "$ROOT/scripts/test_article_assets.py" >/dev/null 2>&1; then
-  echo "FAIL: article-asset tests — detail:"; python3 "$ROOT/scripts/test_article_assets.py" 2>&1 | tail -8; FAIL=1
+  echo "FAIL: article-asset tests — detail:"; python3 "$ROOT/scripts/test_article_assets.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.55b Readability gate contract (hard): the accessibility floor measures reader prose only, and
@@ -173,7 +176,7 @@ fi
 #      body, pass a connected one, and never hold a publish. Without this the gate's own thresholds
 #      are unverified, and a future edit can quietly restore "split long sentences" as the remedy.
 if ! python3 "$ROOT/scripts/test_check_accessibility.py" >/dev/null 2>&1; then
-  echo "FAIL: readability gate tests — detail:"; python3 "$ROOT/scripts/test_check_accessibility.py" 2>&1 | tail -8; FAIL=1
+  echo "FAIL: readability gate tests — detail:"; python3 "$ROOT/scripts/test_check_accessibility.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.55c Review-audit contract (hard): Loop 3 replaces a whole article with one model call, so the
@@ -185,7 +188,7 @@ fi
 #      losses, the flattened rhythm, the self-graded gate report — and pins the negative cases, so a
 #      legitimate rounding is never called a loss and a faithful rewrite is never held.
 if ! python3 "$ROOT/scripts/test_review_audit.py" -q >/dev/null 2>&1; then
-  echo "FAIL: review-audit tests — detail:"; python3 "$ROOT/scripts/test_review_audit.py" -q 2>&1 | tail -8; FAIL=1
+  echo "FAIL: review-audit tests — detail:"; python3 "$ROOT/scripts/test_review_audit.py" -q 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.56 Featured image (hard, hermetic): the header image is art-directed per article
@@ -197,7 +200,7 @@ fi
 #      artifact HAS an image yet is reported by `illustration_creator.py`, not failed on.
 if ! python3 "$ROOT/scripts/test_illustration_creator.py" >/dev/null 2>&1; then
   echo "FAIL: illustration tests — detail:"
-  python3 "$ROOT/scripts/test_illustration_creator.py" 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/test_illustration_creator.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 # ...and the image binaries stay out of the repo. The CMS media library is their canonical home and
 # the staged file is only the upload's source; a 400 KB JPEG per article would bloat a repository
@@ -221,7 +224,7 @@ fi
 for suite in scripts/test_publish_gate.py scripts/test_vibe_lexicon.py scripts/test_illustration_overlay.py scripts/test_check_accessibility.py scripts/test_image_delivery.py scripts/test_render_review.py scripts/test_article_shape.py scripts/test_scene_brief.py; do
   if ! python3 -m pytest "$ROOT/$suite" -q >/dev/null 2>&1; then
     echo "FAIL: $suite — detail:"
-    python3 -m pytest "$ROOT/$suite" -q 2>&1 | tail -8
+    python3 -m pytest "$ROOT/$suite" -q 2>&1 | tail -8 || true
     FAIL=1
   fi
 done
@@ -243,9 +246,13 @@ if ! grep -q "import vibe_lexicon" "$ROOT/scripts/publish_gate.py" \
   echo "FAIL: scripts/publish_gate.py no longer calls vibe_lexicon (the copy contract is unenforced at the push)"
   FAIL=1
 fi
+#…and every humanizer prompt must carry it. One source, not three copies: a driver that builds its
+# RULES from `humanize_loop3` (hl.RULES) inherits the contract by construction, so the check accepts
+# either its own append or that import — an appended duplicate is how the two prompts drifted apart.
 for h in scripts/humanize_one.py scripts/humanize_loop3.py scripts/humanize_path.py; do
-  if ! grep -q "ht.VIBE_COPY_RULES" "$ROOT/$h"; then
-    echo "FAIL: $h no longer appends the copy contract (ht.VIBE_COPY_RULES)"
+  if ! grep -q "ht.VIBE_COPY_RULES" "$ROOT/$h" \
+     && ! grep -qE "import humanize_loop3|hl\.RULES|humanize_loop3\.RULES" "$ROOT/$h"; then
+    echo "FAIL: $h neither appends the copy contract (ht.VIBE_COPY_RULES) nor builds from humanize_loop3"
     FAIL=1
   fi
 done
@@ -304,7 +311,7 @@ fi
 #      gate, because a live headline is the owner's call.
 if ! python3 -m pytest "$ROOT/scripts/test_headline_score.py" -q >/dev/null 2>&1; then
   echo "FAIL: headline scoring tests — detail:"
-  python3 -m pytest "$ROOT/scripts/test_headline_score.py" -q 2>&1 | tail -8
+  python3 -m pytest "$ROOT/scripts/test_headline_score.py" -q 2>&1 | tail -8 || true
   FAIL=1
 fi
 if ! grep -q "headline_score" "$ROOT/scripts/publish_gate.py"; then
@@ -332,7 +339,7 @@ if [ ! -f "$ROOT/context/readability_critic.json" ]; then
 fi
 if ! python3 -m pytest "$ROOT/scripts/test_readability_critic.py" -q >/dev/null 2>&1; then
   echo "FAIL: reader-side critic tests — detail:"
-  python3 -m pytest "$ROOT/scripts/test_readability_critic.py" -q 2>&1 | tail -8
+  python3 -m pytest "$ROOT/scripts/test_readability_critic.py" -q 2>&1 | tail -8 || true
   FAIL=1
 fi
 CRITIC_AUDIT="$(python3 "$ROOT/scripts/readability_critic.py" --report "$ROOT"/published/*.md 2>&1 || true)"
@@ -344,7 +351,7 @@ echo "  critic: $(printf '%s\n' "$CRITIC_AUDIT" | grep -c '^\[FAIL' || true) hel
 #       python3 scripts/citation_hub_dossier.py --vertical <vertical_id>
 if ! python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network >/dev/null 2>&1; then
   echo "FAIL: citation-hub data gate tests — detail:"
-  python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/test_citation_hub_gate.py" --no-network 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.65 Evergreen track (hard). The evergreen fleet is a second pipeline whose whole point is the
@@ -359,7 +366,7 @@ fi
 #      contract the synthesis seed block uses.
 if ! python3 "$ROOT/scripts/test_evergreen_gate.py" >/dev/null 2>&1; then
   echo "FAIL: evergreen gate tests — detail:"
-  python3 "$ROOT/scripts/test_evergreen_gate.py" 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/test_evergreen_gate.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 if ! python3 "$ROOT/scripts/evergreen_gate.py" --check-artifacts --no-network; then
   echo "FAIL: an evergreen brief has no gate marker or a stale one — re-run scripts/evergreen_gate.py --brief <path>"
@@ -375,7 +382,7 @@ fi
 #       so the daily gate makes no outbound request.
 if ! python3 "$ROOT/scripts/review_gate.py" --self-test >/dev/null 2>&1; then
   echo "FAIL: review gate rules — detail:"
-  python3 "$ROOT/scripts/review_gate.py" --self-test 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/review_gate.py" --self-test 2>&1 | tail -8 || true; FAIL=1
 fi
 if ! python3 "$ROOT/scripts/review_gate.py" --check-artifacts --no-network; then
   echo "FAIL: a review brief has no gate marker or a stale one — re-run scripts/review_gate.py --brief <path>"
@@ -392,7 +399,7 @@ fi
 #      are pinned offline here — the suite stubs every fetch, so this gate never makes a request.
 if ! python3 "$ROOT/scripts/source_gate.py" --self-test >/dev/null 2>&1; then
   echo "FAIL: source gate rules — detail:"
-  python3 "$ROOT/scripts/source_gate.py" --self-test 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/source_gate.py" --self-test 2>&1 | tail -8 || true; FAIL=1
 fi
 if ! grep -q "import source_gate" "$ROOT/scripts/publish_gate.py" \
    || ! grep -q "source_report(" "$ROOT/scripts/publish_gate.py"; then
@@ -426,7 +433,7 @@ fi
 #       python3 scripts/build_internal_link_index.py
 if ! python3 "$ROOT/scripts/test_internal_links.py" >/dev/null 2>&1; then
   echo "FAIL: internal-link tests — detail:"
-  python3 "$ROOT/scripts/test_internal_links.py" 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/test_internal_links.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.7 (cont.) Shipped index (hard, hermetic, no network): every candidate's url host must be its own
@@ -465,7 +472,7 @@ fi
 #     success. Hermetic: fixtures only, no CMS, no network, no writes.
 if ! python3 "$ROOT/scripts/test_fix_cms_links.py" >/dev/null 2>&1; then
   echo "FAIL: CMS link-rewriter tests — detail:"
-  python3 "$ROOT/scripts/test_fix_cms_links.py" 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/test_fix_cms_links.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 8.75 Vertical routing (hard, hermetic part): the audit is a pure function of the registry and the
@@ -475,7 +482,7 @@ fi
 #      live: scripts/check_vertical_sites.py, wired into scripts/cron-wp-drafts.sh.
 if ! python3 "$ROOT/scripts/test_check_vertical_sites.py" >/dev/null 2>&1; then
   echo "FAIL: vertical-routing audit tests — detail:"
-  python3 "$ROOT/scripts/test_check_vertical_sites.py" 2>&1 | tail -8; FAIL=1
+  python3 "$ROOT/scripts/test_check_vertical_sites.py" 2>&1 | tail -8 || true; FAIL=1
 fi
 
 # 9. Voice gate (hard): the article body must read as one person commenting on the news — not the
@@ -489,7 +496,7 @@ fi
 if command -v node >/dev/null 2>&1; then
   if ! node "$ROOT/scripts/check_social_voice.mjs" --self-test >/dev/null 2>&1; then
     echo "FAIL: voice rule self-test — detail:"
-    node "$ROOT/scripts/check_social_voice.mjs" --self-test 2>&1 | tail -6; FAIL=1
+    node "$ROOT/scripts/check_social_voice.mjs" --self-test 2>&1 | tail -6 || true; FAIL=1
   fi
   if ! node "$ROOT/scripts/check_social_voice.mjs"; then
     echo "FAIL: article voice (see the list above; the rule is skills/claude_humanizer.md §3.9)"; FAIL=1
@@ -508,19 +515,53 @@ fi
 if command -v node >/dev/null 2>&1; then
   if ! node "$ROOT/scripts/test_public_surface.mjs" >/dev/null 2>&1; then
     echo "FAIL: public surface — detail:"
-    node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8; FAIL=1
+    node "$ROOT/scripts/test_public_surface.mjs" 2>&1 | tail -8 || true; FAIL=1
   fi
   if ! node "$ROOT/scripts/test_distribution_queue.mjs" >/dev/null 2>&1; then
     echo "FAIL: distribution queue lifecycle — detail:"
-    node "$ROOT/scripts/test_distribution_queue.mjs" 2>&1 | tail -8; FAIL=1
+    node "$ROOT/scripts/test_distribution_queue.mjs" 2>&1 | tail -8 || true; FAIL=1
   fi
   if ! node "$ROOT/scripts/test_distribution_apps.mjs" >/dev/null 2>&1; then
     echo "FAIL: app-promotion cards — detail:"
-    node "$ROOT/scripts/test_distribution_apps.mjs" 2>&1 | tail -8; FAIL=1
+    node "$ROOT/scripts/test_distribution_apps.mjs" 2>&1 | tail -8 || true; FAIL=1
   fi
 else
   echo "  skip: public-surface gate (node not on PATH)"
 fi
+
+# 11. Context ceilings (hard). Every pipeline run reads these skills into an LLM's context and then
+#     re-reads them on each of ~90 API calls, so a skill that grows silently raises the cost of every
+#     future run. Case law and incident narratives belong in skills/references/*_casebook.md (read on
+#     demand), not in a SKILL.md. Operator-only skills (self_improvement_eval) are not gated: no run
+#     reads them.
+SKILL_MAX=26000
+for s in radar_30day virality_judge fact_check story_draft claude_humanizer publisher \
+         illustration_director evergreen_topics review_comparison citation_hub; do
+  f="$ROOT/skills/$s.md"
+  if [ ! -f "$f" ]; then echo "FAIL: missing skill $s.md"; FAIL=1; continue; fi
+  n=$(wc -c < "$f")
+  if [ "$n" -gt "$SKILL_MAX" ]; then
+    echo "FAIL: skills/$s.md is $n bytes (ceiling $SKILL_MAX) — move case law to skills/references/"
+    FAIL=1
+  fi
+done
+# 11.2 The run log: a row is written as output and read back as input on the next run. Free-form
+#     prose grew context/content_calendar.md to 2.7 MB at 8.5 KB a row. Rows from RUNLOG_ROW_FROM on
+#     must be <= 900 chars; older rows are grandfathered (never bulk-rewritten).
+RUNLOG_ROW_FROM="${RUNLOG_ROW_FROM:-2026-11-17}"
+LONGROWS=$(awk -v from="$RUNLOG_ROW_FROM" '
+  /^\| 20[0-9][0-9]-/ { d=$2; gsub(/[ |]/,"",d); if (d >= from && length($0) > 900) c++ }
+  END { print c+0 }' "$ROOT/context/content_calendar.md")
+if [ "${LONGROWS:-0}" -gt 0 ]; then
+  echo "FAIL: $LONGROWS run-log row(s) dated $RUNLOG_ROW_FROM or later exceed 900 chars (write the detail to context/run_log/)"
+  FAIL=1
+fi
+# 11.3 The knowledge store parses and the host ledger answers — both are read by the fleet instead
+#     of the case-law paragraphs that used to live in the skills.
+python3 "$ROOT/scripts/host_probe.py" --selftest >/dev/null 2>&1 || {
+  echo "FAIL: host ledger — run python3 scripts/host_probe.py --rebuild"; FAIL=1; }
+python3 "$ROOT/scripts/learn.py" --selftest >/dev/null 2>&1 || {
+  echo "FAIL: knowledge store — see python3 scripts/learn.py --selftest"; FAIL=1; }
 
 if [ "$FAIL" -ne 0 ]; then
   echo "verify.sh: FAILURES FOUND"

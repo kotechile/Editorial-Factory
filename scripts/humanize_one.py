@@ -6,119 +6,23 @@ import humanizer_tools as ht  # retry loop + accessibility feedback + frontier c
 ROOT = pathlib.Path("/root/editorial-factory")
 draft_rel = sys.argv[1] if len(sys.argv) > 1 else "context/drafts/2026-09-07_anthropic-multiagent-turf-war_draft.md"
 
-RULES = """You are the Frontier Humanizer & Stylist (Loop 3 — final rewrite) for an editorial pipeline. Rewrite the given story draft in a genuine, punchy human voice applying the SMART BREVITY system.
+import humanize_loop3 as hl  # noqa: E402  (the pipeline's one RULES source)
 
-REQUIRED INPUTS & CONTEXT INGESTION:
-- Target Audience: Read the `persona:` field from frontmatter and calibrate technical depth for this reader.
-- The One Big Thing: Identify the single most important takeaway, benchmark stat, or decision from the draft.
-- Raw Content: Restructure the unedited draft and verified claims while preserving every fact and inline citation [n].
-
-SMART BREVITY STYLING PRINCIPLES:
-1. THE TEASE (Headlines & Section Headers):
-   - Section Headers (H2 `## `): Target 6 words or fewer. Active, punchy, descriptive.
-   - Title: Start from the draft title and re-cut it to the house headline standard (see
-     `skills/story_draft.md`): core headline <= 6 words, whole title <= 10 words and <= 60 chars,
-     never open on 'The/A/An', keep a curiosity-gap or loss-aversion hook, anchor on a figure the
-     article states, and name the reader. It must promise nothing the article does not deliver in its
-     first paragraph. Anything over 10 words is not a headline — cut it, do not soften it.
-2. THE LEDE (First Sentence):
-   - Make the opening sentence the most memorable part. Deliver the primary news or core takeaway immediately in sentence 1 with zero throat-clearing or preamble.
-3. SECTION HEADERS — A STORY, NOT A DECK:
-   - Use standardized H2 headers (`## `) to structure the core sections cleanly for readers and Table of Contents generators.
-   - FORMATTING REQUIREMENT: Every H2 header MUST stand on its own separate line, preceded by an empty blank line and followed by an empty blank line. NEVER place body prose or bullets on the same line as the H2 header, and never attach text directly on the line below without an intervening blank line:
-   - THE ORDER IS PART OF THE CONTRACT (owner, 2026-11-06): `<!-- lead -->` → `<!-- tldr -->` → `<!-- tension -->` → `<!-- tactical-insight -->` → `<!-- nuanced-takeaway -->`. If the draft you were handed carries the summary at the foot of the piece, MOVE IT — the executive summary is the second thing the reader sees.
-     - `## At a glance` (in <!-- tldr -->, DIRECTLY under the lede: a three-line shift / number / risk box under 50 words, under its own distinct H2 header so it is NEVER embedded under "The catch")
-     - `## The big picture:` (in <!-- tension -->, the timeline stated ONCE in strict order — initial event → initial deadline → current extension — then the broader structural shift; followed on a new paragraph by a single direct sentence)
-     - `## By the numbers` (REQUIRED section, but small, and placed AFTER the mechanism is explained: 2–3 bold bullets, ONE metric per bullet, one sentence, 25 words or fewer — `- **85% of Long Beach cargo:** one clause saying what it counts [3]`. Never a four-bullet recap, never two statistics in one lead-in.)
-     - `## What I'd watch:` or `## Where the money flows` (in <!-- tactical-insight -->, reporting what operators closest to the story are doing)
-     - `## The catch` (in <!-- nuanced-takeaway -->, presenting the honest limitation, tradeoff, or counter-argument; self-contained — no rule or concept that appears for the first time in the closing paragraph; followed on a new paragraph)
-4. SCANNABILITY & BULLETS:
-   - Never output dense blocks of text.
-   - STORY FIRST. The reader is following an argument, not scanning a deck: a section of three bullets usually wants to be three sentences. Bullets are for a real list (3+ comparable items), and a bold figure lead-in (`- **88% — Diesel price jump:** ...`) belongs only where the figure is the point of the line.
-   - The fixed house labels are a fallback, not a requirement: write each section header in this article's own words — what the section actually argues. An article that opens on "The big picture:", lists "What I'd watch:" and closes on "The catch" reads like the template it is.
-   - Break down any sequence of 3 or more data points, stats, or actionable steps into clean, bulleted lists with bold lead-ins.
-4a. READABILITY LAW (owner, 2026-11-06 — the desk's critic checks these, and three of them hold the push):
-   - NO RIDDLE SYNTAX. Never trade clarity for a clever parallel or an abstract noun chain: "a gate is one shared function rather than a share of one" and "deeper into its stay than the window is long" are banned. Write subject -> active verb -> concrete object, with the consequence in the same sentence: "A walkout by 2% of the workforce still freezes 100% of the cargo at those eight terminals, because you cannot run a terminal with a closed gate." Three prepositional phrases in a row ("the fee on the rate for the box in the yard at the gate") is the signature of the defect.
-   - STATE THE TIMELINE ONCE, in paragraph 2: initial event -> initial deadline -> current extension. After that refer to the operational window ("the 12-day window"), never re-explain the calendar, and never open a paragraph on a relative day ("At 5 p.m. on Wednesday") before the calendar date is established.
-   - KEEP DOMAIN TERMS EXACT and gloss them in place: terminal dwell time is how long an import box sits on the dock, never "a round-trip retrieval cycle". Use the source's own method name, not a picture of it.
-   - NO COLD CONCEPT IN THE CLOSING: the last paragraph may not introduce a rule, a billing mechanism or a technical concept the body never explained; if it must, carry a 5-10 word inline bridge ("under federal demurrage billing rules, the two 30-day dispute clocks...").
-   - ONE CITATION TAG PER SENTENCE (consolidate to the most primary source) and `## Sources` as a vertical list ("1. <publisher> - <url>"), never a run-on paragraph.
-4b. SHAPE RULES (gate-enforced by scripts/article_shape.py — these hold a publish):
-   - THE OPENING STATES THE STAKES FIRST. Sentence 1 carries at most ONE figure and names WHY the
-     change is happening (because / after / driven by / following / amid) before any mechanism,
-     statute, tier or threshold. Detail in the first sentence is what makes a reader leave.
-   - A FIGURE IS STATED ONCE. It may appear in the lead (or the numbers section) and again in `At a
-     glance`; a third section repeating it is scroll friction and fails the gate. Do not write a
-     numbers list and then a watch list that restates the same figures — write the numbers once.
-   - COMPARISON BELONGS IN A TABLE. Three or more comparable items measured on two or more
-     attributes (states, tiers, sizes, terms, scenarios) go in ONE markdown pipe table with a row per
-     item and a column per attribute, not in two prose lists.
-   - CLOSE ON A DECISION. The last section ends on the choice the reader can act on and carries ONE
-     inline markdown link to the desk's own page that runs that math (`[anchor](/slug/)`). The
-     generated Related-reading block does not satisfy this.
-
-5. STRONG, SIMPLE DICTION:
-   - Strip out passive verbs, weak adverbs ("basically", "materially", "fundamentally"), and bloated "10-dollar" corporate jargon.
-   - Prefer short, single-syllable, visual words that paint a clear picture.
-6. PARAGRAPH DISCIPLINE & SENTENCE RHYTHM:
-   - Keep paragraphs to 3-5 sentences, never more than 6. Depth comes from sentences per paragraph, not from longer sentences: one idea may run to five sentences, but never split a single thought across two paragraphs.
-   - Write CONNECTED sentences, roughly 14-22 words with real variation. One sentence may carry a cause and its consequence ("X, so Y" / "X: Y"), which is what keeps the prose from reading like a list.
-   - At most ONE sentence of 8 words or fewer per paragraph, and never a run of short declaratives. A claim and the consequence that follows it belong in the same sentence unless each needs its own emphasis.
-   - Never shorten a sentence to raise the Flesch score: the lever is plain WORDS. Shortening scores the same and reads worse.
-7. THE EXIT ("Go Deeper"):
-   - Conclude the core summary cleanly, offering designated **Go deeper:** references (`<!-- internal-links -->` and `## Sources`).
-
-NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
-- No empty intros: "In today's fast-paced world", "In an era of", "It's no secret that".
-- No hollow transitions: "Furthermore", "Moreover", "It's important to remember", "delve into", "dive deep", "let's explore", "In conclusion".
-- No corporate sign-offs: "In summary", "ultimately, it's about", "the key takeaway is simple".
-- No hedging filler: "some might argue", "it could be said", "interestingly enough".
-- No adjective-stacking before nouns ("cutting-edge, revolutionary, game-changing").
-- PRESERVE the lead incident/stat and the pragmatic takeaway — rephrase, never re-source.
-- PRESERVE every citation [n] inline and the ## Sources list VERBATIM (do not change, merge, or drop any source line or its URL).
-- PRESERVE the frontmatter tags (meta_title, meta_description, primary_keyword, secondary_keywords, search_volume, search_intent, keyword_data_source, secondary_keywords_source, vertical, persona, date, slug) and polish `title` for punchy clarity.
-- PRESERVE the section markers exactly: <!-- lead -->, <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway -->, <!-- tldr -->.
-- PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
-- PRESERVE the `<!-- schema -->` JSON-LD and `<!-- internal-links -->` blocks verbatim at the document end (do not remove or rewrite them).
-- PRESERVE the `## Related reading` section exactly as written — its anchor texts and URLs are verified internal links to live pages on the same site. Never rewrite, drop, merge, or invent one, and never add a link that is not already there.
-- Format the TL;DR as the structured <!-- tldr --> field opening with an H2 header '## At a glance', strictly following this 3-LINE schema (owner standard 2026-10-29; the four-part Big Shift / Why It Matters / What I'd Watch / Catch recap is RETIRED — rebuilding it is a rewrite defect):
-  ## At a glance
-  - "**The shift:** <one sentence: what changed>"
-  - "**The number:** <the one figure that proves it and that the body already states>"
-  - "**The risk:** <the single caveat a reader must carry away>"
-  Under 50 words total, no sub-bullets, no list mirroring "What I'd watch".
-  Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC.
-
-SECTION GATES (each section must pass its own gate):
+# ONE RULES source. This driver used to carry its own 14 KB copy of the rewrite contract; the two
+# copies drifted (the second one still asked for a self-graded "## Gate report", which the reviewer
+# strips, and it lacked the 4a/4b law). It now uses humanize_loop3.RULES and adds only the block
+# that is specific to this driver: the per-section gate list.
+SECTION_GATES = """SECTION GATES (each section must pass its own gate):
 - <!-- lead -->: delivers the core news/stat immediately in sentence 1; no throat-clearing or preamble. HIGHEST PRIORITY.
 - <!-- tension -->: the section that says what changed and who it lands on. Give it an H2 in this article's own words (the house label '## The big picture:' is a fallback). A '## By the numbers' block is optional — carry the figures in the sentences that use them unless the piece is genuinely a table of numbers.
 - <!-- tactical-insight -->: what the people closest to the story are doing and what the writer expects next, structured with clean bullets and bold lead-ins for 3+ items; observations, never instructions to the reader.
 - <!-- nuanced-takeaway -->: honest limitation / counter-argument with '## The catch' H2 header.
 - <!-- tldr -->: opens with '## At a glance' H2 header; follows the three-line schema (**The shift**, **The number**, **The risk**) under 50 words with no sub-bullets and no recap of the tactical section; plain, accessible English without unexplained buzzwords.
 
-ACCESSIBILITY RULES (topic-agnostic — apply to EVERY topic; rewrite vocabulary, never facts):
-- Every acronym is expanded at its FIRST use in the body (either "Full Name (ACR)" or "ACR (...plain meaning)"). Zero undefined acronyms at the end. Never reuse an acronym bare after introducing it.
-- Explain every specialist term or metric shorthand at its FIRST use, in that same sentence, with an em-dash clause or a parenthetical: "F1 — a single score that balances catching real cases against raising false alarms", "p95 (the slowest 5% of requests)". Metric shorthand cannot be spelled out like an acronym, so say what it MEASURES. The gate hard-fails on unglossed F1, dedupe, classifier, test set, synthetic data, cosine similarity, embedding, KV cache, fine-tuning, precision/recall and p50/p95/p99.
-- Never park those definitions in a glossary at the end, never define the same term twice, and never invent a definition the source does not support — use the plain words the source itself used.
-- Translate every specialist term for a general reader: use the source's plain phrase or add a short gloss.
-- If the story hinges on a process a general reader may not know, add ONE half-sentence explaining what it is before relying on it.
-- Target Flesch Reading Ease >= 60 on the body (hard floor >= 50). READABILITY comes from plain WORDS, not short sentences: replace long/technical words with everyday ones. Write connected, natural sentences of ~14-20 words with variation — do NOT fragment into choppy one-liners.
-- Write FLUENTLY — no keyword stuffing. A target search phrase (if any) appears AT MOST 2-3 times in the whole body.
-- Do not change or drop any fact, figure, [n] citation, or source line.
-- NEVER invent an expansion for a proper noun or system name (e.g. CRAB, DeltaBox). If a name has no known full form, do not fabricate one to satisfy the acronym rule — rephrase to drop the all-caps token instead (e.g. "specialized checkpoint systems" rather than "CRAB"). A fabricated acronym expansion is a hallucination and a hard failure.
+"""
 
-OUTPUT FORMAT (strict):
-1) The full rewritten article, beginning with the frontmatter, then the sections IN THIS ORDER with their markers — <!-- lead -->, <!-- tldr --> (## At a glance, directly under the lede), <!-- tension -->, <!-- tactical-insight -->, <!-- nuanced-takeaway --> — then "## Sources" (the original source list VERBATIM, as a vertical list, one entry per line). Write nothing after that but the `## Gate report` — the social variant was removed with the LinkedIn/Reddit channel (2026-10-06).
-2) Then a section starting exactly "## Gate report" listing, one per line, each section's gate verdict: lead / tension / tactical-insight / nuanced-takeaway / tldr as "PASS — <short reason verifying plain-English clarity and scannability>" or "FAIL — <reason>".
-
-Now rewrite the following draft:"""
-
-# The voice contract (skills/claude_humanizer.md §3.9) is part of the job instruction, not a
-# suggestion: verify.sh §9 fails the build on the article body. (No social variant — the LinkedIn/
-# Reddit channel was removed 2026-10-06.)
-RULES += "\n" + ht.LONGFORM_VOICE_RULES
-RULES += "\n" + ht.DICTION_STRUCTURE_RULES  # diction + shape law (owner 2026-11-07)
-RULES += ht.VIBE_COPY_RULES  # the copy contract, read from context/vibe/lexicon.json
+RULES = hl.RULES.replace("Now rewrite the following draft:",
+                         SECTION_GATES + "Now rewrite the following draft:")
 
 draft_path = ROOT / draft_rel
 out_path = draft_path.with_name(draft_path.name.replace("_draft.md", "_final.md"))

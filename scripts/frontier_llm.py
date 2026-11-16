@@ -21,6 +21,7 @@ import io
 import json
 import os
 import pathlib
+import time
 import urllib.error
 import urllib.request
 
@@ -29,6 +30,47 @@ VISION_MODEL = "deepseek-flash"
 BASE_URL = "https://api.deepseek.com/v1/chat/completions"
 MAX_TOKENS = 32000   # 20k truncated thinking-model rewrites outright (finish_reason=length)
 VISION_MAX_TOKENS = 1024
+
+# Every in-pipeline call is metered into context/cost_ledger.jsonl. Before this existed the desk
+# could not see a single one of its own pro-tier calls: Hermes records session usage, not the
+# subprocess calls a pipeline makes (article_reviewer, the art director, publish_gate's rewrite).
+# Prices mirror the fleet's own estimator (see `scripts/cost_report.py`): a cache HIT is 50x
+# cheaper than a miss, which is why the ledger records the two separately.
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+LEDGER = ROOT / "context" / "cost_ledger.jsonl"
+PRICE_IN_MISS = 0.15 / 1e6     # per token
+PRICE_IN_HIT = 0.0030 / 1e6
+PRICE_OUT = 0.60 / 1e6
+
+
+def _log_usage(payload: dict, model: str, kind: str, stage: str = "") -> None:
+    """Append one usage row to the cost ledger. Never raises: metering must not break a call."""
+    try:
+        u = payload.get("usage") or {}
+        hit = int(u.get("prompt_cache_hit_tokens") or 0)
+        miss = int(u.get("prompt_cache_miss_tokens") or 0)
+        if not miss and u.get("prompt_tokens"):
+            miss = max(0, int(u["prompt_tokens"]) - hit)
+        out = int(u.get("completion_tokens") or 0)
+        reasoning = int(((u.get("completion_tokens_details") or {}).get("reasoning_tokens")) or 0)
+        row = {
+            "ts": round(time.time(), 3),
+            "stage": stage or os.environ.get("PIPELINE_STAGE", ""),
+            "kind": kind,
+            "model": model,
+            "prompt": int(u.get("prompt_tokens") or 0),
+            "hit": hit,
+            "miss": miss,
+            "out": out,
+            "reasoning": reasoning,
+            "usd": round(miss * PRICE_IN_MISS + hit * PRICE_IN_HIT + out * PRICE_OUT, 6),
+        }
+        LEDGER.parent.mkdir(parents=True, exist_ok=True)
+        with open(LEDGER, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row) + "\n")
+    except Exception:                                        # noqa: BLE001 — metering is best-effort
+        pass
+
 
 _ENV_FILES = (
     "/root/.hermes/profiles/stylist/.env",
@@ -94,7 +136,7 @@ def _text(payload: dict) -> str:
 
 def chat(prompt: str, *, model: str = TEXT_MODEL, max_tokens: int = MAX_TOKENS,
          temperature: float = 0.7, timeout: int = 240, json_mode: bool = False,
-         thinking: bool | None = None) -> str:
+         thinking: bool | None = None, stage: str = "") -> str:
     """One frontier completion. `json_mode` asks for a bare JSON object.
 
     `thinking=False` turns the model's reasoning pass off for this call. The reasoning tokens are
@@ -115,12 +157,14 @@ def chat(prompt: str, *, model: str = TEXT_MODEL, max_tokens: int = MAX_TOKENS,
         body["thinking"] = {"type": "disabled"}
     if json_mode:
         body["response_format"] = {"type": "json_object"}
-    return _text(_post(body, timeout))
+    payload = _post(body, timeout)
+    _log_usage(payload, model, "chat", stage)
+    return _text(payload)
 
 
 def vision(image: bytes, prompt: str, *, model: str = VISION_MODEL,
            max_tokens: int = VISION_MAX_TOKENS, temperature: float = 0.1,
-           timeout: int = 120, json_mode: bool = False) -> str:
+           timeout: int = 120, json_mode: bool = False, stage: str = "") -> str:
     """One frontier completion with the picture inline (downscaled: the checker needs the subject,
     not the grain)."""
     from PIL import Image
@@ -143,4 +187,6 @@ def vision(image: bytes, prompt: str, *, model: str = VISION_MODEL,
     }
     if json_mode:
         body["response_format"] = {"type": "json_object"}
-    return _text(_post(body, timeout))
+    payload = _post(body, timeout)
+    _log_usage(payload, model, "vision", stage)
+    return _text(payload)

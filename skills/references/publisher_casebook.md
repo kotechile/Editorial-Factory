@@ -1,0 +1,321 @@
+# Publisher — Casebook
+
+Reference for `skills/publisher.md`: the alt-text truncation and derivative-orphan stories, the
+`--refresh-live` media duplication, the metadata erasure and re-serialisation incidents, the
+six-surface headline reconciliation, and the deploy/dashboard post-mortems. Every block below is
+quoted verbatim from the skill file as it stood before the compression, in its original order.
+
+**Read it** when two surfaces disagree about the same article, after any `--reimage` or
+`--refresh-live`, when a row looks complete but the CMS bookkeeping is gone, when a chart or headline
+correction has to reach a live post, or before hand-editing any generated block.
+
+---
+
+- The dashboard surfaces derive the synthesis marker from the artifact frontmatter:
+     `/api/articles.json` and the article page report `synthesis` + the `sources` anchors, and the
+     page badges a synthesis article as such (both sit behind `PRESSFLOW_AUTH_SECRET` — PressFlow is
+     internal, the articles are read on giniloh.com / wellroost.com). So an article whose brief said
+     `Angle Type: Synthesis` **must** carry `synthesis: true` and its >= 2 anchors under
+     `sources:` in `published/…md` — without the flag it publishes as an unmarked single-signal
+     story. `verify.sh` §8 fails the build when the flag is missing
+     (`python3 scripts/synthesize_topics.py --check-briefs`).
+
+---
+
+- The voice is part of what you publish, and it is gated: the body is a comment on the news
+     (`skills/claude_humanizer.md` §3.9). Do not publish a body whose tactical section is a playbook
+     — `verify.sh` §9 (`node scripts/check_social_voice.mjs`) fails the build on it.
+
+---
+
+**Check the alt text for truncation before reporting the image clean (learned 2026-10-20).** The art
+   director's alt text is generated prose and can come back cut mid-phrase ("…a door edge against a dark"),
+   which is a real accessibility defect no gate reads — the publish gate scores the article body, not the
+   media record. Read `alt_text` back off the media id after the push; if it does not end on a sentence,
+   PATCH the media's `alt_text` with a complete sentence and update **all four records that carry it** —
+   the sidecar (`featured.json`), the artifact's `image_alt`, and the Supabase row's
+   `metadata.illustration.alt_text` and `metadata.wordpress.media_alt` (learned 2026-10-22: the row kept
+   the truncated string after the media was fixed, so the CMS and the provenance record disagreed), so the
+   CMS and the provenance record agree.
+
+---
+
+**Read the `[image]` notes at the TOP of the publish log, not the tail (learned 2026-10-29).** The
+   persistence pass never blocks a publish on the image, so a failed commission reads as
+   `featured image FAILED: … — publishing without one` and the run's summary still ends green; on the
+   2026-10-29 `demand_sensing_advanced_sop` run the tail of the log showed no image line at all and the
+   article went live with `featured_media: 0`. After every publish, prove the visual from the filesystem
+   rather than the log — `python3 scripts/illustration_creator.py published/<file>.md --check` must not
+   answer "no illustration" — then recover in two steps, never by re-running `publish.py`:
+   `illustration_creator.py <artifact> --apply`, then `wp_draft.py --slug <slug> --reimage`, and read
+   `featured_media` back from `?context=edit` (the reimage line's "NOT yet switched" lags the switch).
+   Idempotent by content (an unchanged article reuses its image; `--force` regenerates), skippable
+   with `--no-illustration` or `ILLUSTRATION_ENABLED=false`, and a failure never blocks the
+   publish: `scripts/cron-wp-drafts.sh` re-runs it for artifacts still missing an image *before*
+   the CMS push, so a transient kie.ai failure costs a sweep, not a header. The CMS draft then
+   carries it — the attachment is uploaded, captioned (alt text/caption/credit) and set as the
+   post's `featured_media`, with `metadata.wordpress.media_id`/`media_url`/`media_alt` recorded so
+   the next push reuses it instead of duplicating the bytes.
+
+---
+
+**The `--reimage` recovery can leave the row's `metadata` holding four keys (learned 2026-11-05).**
+   On the trailer-payload evergreen the row came back from the recovery carrying only `seo`, `kind`,
+   `illustration` and `wordpress`, while every neighbouring live row also carried `slug`, `vertical`,
+   `status`, `headline`, `sources`, `targets`, `live_urls`, `promo_url` and `internal_links`. Read the
+   whole `metadata` object back after any `--reimage` (not just the fields the push reports), diff its
+   key set against a sibling live row, and restore the missing keys with one read-modify-write PATCH —
+   a row that disagrees with its neighbours is how a dashboard entry loses its vertical and its link
+   list while the CMS post stays perfect.
+
+---
+
+6. **A regenerated visual has to reach the ROW, not just the artifact file.** The connector pushes
+   the Supabase row's `content`, and `wp_draft.py --refresh` re-derives the body from that same row —
+   so a chart rewritten in `published/<file>.md` (a new `chart_generator.py` revision, or
+   `article_assets.py --force-chart`) reaches no reader. Verified live: the artifact carried the
+   fixed chart while CMS draft #420 still served the old layout with three ellipsized labels and a
+   generic caption. Regenerate the markup from the **row's own** numbers section, splice it in place
+   of the existing `<svg>`, assert the serialization *outside* the block is byte-identical, write the
+   row, then `python3 scripts/wp_draft.py --slug <slug>` and read the post back. Pass the headline
+   explicitly when regenerating from a row — a chart titled from a frontmatter-less body is captioned
+   "Verified figures"; `article_assets.inject_chart(..., title=…)` takes it and `publish.py` hands
+   over the artifact's `meta_title`.
+
+---
+
+7. **`scripts/article_assets.py --apply` preserves frontmatter line for line — keep it that way.**
+   Its frontmatter reader is a line-based `key: value` parser, so re-serialising the block from that
+   dict destroyed a real artifact's `sources:` list (`sources: ""` plus a broken `- https: "//…"`
+   line, on 3 artifacts) and churned the quoting of every key the pipeline had written quoted, which
+   made a no-op run report every file as rewritten. `_reemit_frontmatter()` now appends only the keys
+   the pass derives and returns the artifact byte-identical otherwise, and `test_article_assets.py`
+   fails on any artifact a pass would rewrite (14/14 currently unchanged).
+
+---
+
+6. **A `--refresh-live` re-uploads the header as a NEW attachment, and the previous one is left behind (learned 2026-11-11).** The illustration digest is the body text, but the attachment slug is uniquified by WordPress — so a refresh after a body or frontmatter change can attach `…-featured-1.jpg` as a second media record, move the post's `featured_media` to the new id, and leave the old attachment live and unreferenced while an alt/caption correction made on the *old* id never reaches the post. Read `posts/<id>?context=edit&_fields=featured_media` to learn which media id the post actually uses, PATCH alt/caption on **that** id, delete the superseded attachment (`DELETE media/<old>?force=true`) only after confirming the post does not reference it, then force a front rebuild: the reader build made before the swap keeps serving the old URL, which 404s the moment the old attachment is gone. Re-read the page's `<img src>`/`alt` afterwards, and re-check the excerpt — the derived `meta_description` can come back cut mid-phrase even when its character count looks correct.
+
+---
+
+- **`sync_articles.py` / `publish.sync_to_supabase` REPLACED the `metadata` jsonb, and the replacement erased `metadata.wordpress` (fixed 2026-10-23).** The dict this pass builds comes from the artifact alone — slug, vertical, headline, sources, seo, illustration — while `metadata.wordpress` (post id, media id, vertical term, media alt) and `metadata.internal_links` are written *later*, by the CMS and link steps. Any re-sync of a published artifact therefore left the row looking complete while the CMS bookkeeping was gone, and the next push would have created a duplicate post. The update branch now fetches `id,metadata`, merges the existing keys under the new ones, and a re-sync proves the block survives; never simplify it back to a wholesale PATCH. After any sync, read the row back and confirm `metadata.wordpress.post_id` is still the live post.
+
+---
+
+- **The generated `## Related reading` block belongs just before `## Sources`, never above `<!-- tldr -->`, and since 2026-11-06 the tldr block sits directly under the lede — so a block keyed on the old position would land between the lede and the executive summary.** `internal_links._insertion_point` now prefers `## Sources` (and `<!-- linkedin -->` for legacy artifacts); if an artifact still carries the block in the wrong place, move it to just before `## Sources`, re-sync the row and `wp_draft --slug … --refresh --refresh-live` (status is never sent, so the post stays published), then `sitemap_sync.py`.
+
+---
+
+- **A featured image whose alt text is over ~125 characters comes back cut mid-phrase, and every later illustration pass re-derives it from the director's record** — so a hand-fixed alt in the artifact is silently re-truncated by the next `sync_articles`. Write a complete sentence of 125 characters or fewer (“A premium white watch case beside a small battery module on brushed steel.”), set it in the sidecar and the artifact, PATCH the media, and reconcile the row's `metadata.illustration.alt_text` / `metadata.wordpress.media_alt` — then do not run the illustration pass again just to tidy it.
+
+---
+
+- **A derived metadata field needs a floor, not only a target (learned 2026-10-15).** `article_assets.derive_meta_description()` splits the lead paragraph into sentences and joins as many as fit inside `META_DESC_TARGET` (158) — so a lead opening on an initialism ("U.S. shoppers will spend …") yielded a first "sentence" of `U.S.` and returned it verbatim: a **4-character** CMS excerpt and `<meta name="description">`, on an otherwise green publish (the artifact, row, image, internal links and every gate were fine — nothing reads excerpt length). The splitter now keeps an initialism attached to its sentence (`_INITIALISM_END`) and a result below `META_DESC_MIN` (110) falls back to the whole lead trimmed on a word boundary. Two rules for any derived reader-facing string: enforce a floor as well as a ceiling in code, and after a push read the excerpt back from the CMS (it is the field every search result quotes).
+
+---
+
+- **A headline the gate re-cuts reaches the row's `title` but not the CMS — reconcile SIX surfaces before reporting the publish.** `publish_gate.title_gate(apply=True)` adopts a better headline for a merely weak one, writes it into the artifact and calls `sync_title()`, which PATCHes `title` **and** `metadata.headline`. But the CMS push in that same pass already went out with the pre-gate title, and `wp_draft`'s own later metadata write (recording `metadata.wordpress`) PATCHes a snapshot it took *before* the gate ran — so the row ends up with the new `title`, the old `metadata.headline`, and a CMS post carrying the old headline. `wp_draft.py --slug … --retitle` cannot repair it on its own: it reads the headline from `metadata.headline` first (`make_title`), so it reports "was X, now X" and leaves the CMS untouched. Fix: PATCH `metadata.headline` (and `title`) to the adopted headline, **then** run `--retitle`, then read the title back from the CMS REST API (`?context=edit`). The reader page catches up on its own debounced frontend rebuild, so an old `<h1>` right after the push is expected, not a defect.
+  - **`context/published_log.md` is a sixth surface and it is written BEFORE the gate runs (learned 2026-10-13).** `record_publish()` appends the log row earlier in the pass than the push, so the log keeps the *drafted* headline while the artifact, row `title` and `sitemap.json` (regenerated after the gate) carry the adopted one. Verified on `your-32gb-card-gone`: artifact + row title + sitemap read "…41% Memory Hike" while the log row and the CMS still read "…84GB, 41% Memory Bill". Reconcile all six — artifact `title`/`meta_title`, row `title`, `metadata.headline`, `context/published_log.md`, `context/sitemap.json`, and the CMS post (raw + rendered, plus the unauthenticated slug query) — before calling the publish clean.
+
+---
+
+- **`publish.py`'s auto-deploy is `git add -A`.** It commits and pushes whatever else is uncommitted in
+  the tree — including a half-finished edit — so a bundled in-flight change can turn `main` red under an
+  otherwise clean publish (an evergreen auto-deploy shipped a partially-edited `wp_draft.py` and left a
+  stale static assertion in `test_wp_draft.py`, which `verify.sh` then fails). When the tree carries
+  unrelated WIP, pass `--no-deploy` and let a human push; if a bundle did go out, run
+  `bash scripts/verify.sh` and fix or revert the stray edit before reporting the publish green.
+  - **Recovering a swept bundle (verified 2026-10-10).** A clean `git status` before `publish.py` is not
+    proof the tree is clean at push time — a concurrent job can write into it mid-run. Read the commit's
+    own file list (`git show --stat <auto-deploy commit>`); if it carries files the run never touched,
+    revert **only those paths** to the auto-deploy's parent (`git checkout <parent> -- <path> …`), commit,
+    and push — the swept WIP stays fully recoverable in the auto-deploy commit for its author to re-apply,
+    and `main` goes green again. Then prove it from a throwaway checkout rather than the working tree:
+    `git worktree add --detach /tmp/vh HEAD && (cd /tmp/vh && python3 scripts/sitemap_sync.py --check)`.
+    A concurrent editor's uncommitted edits to `published/*.md` make the *local* tree red (sitemap drift)
+    while `HEAD` is green; do not "fix" that drift by regenerating the sitemap, which would bake their
+    half-finished state into a derived surface.
+
+---
+
+- **External article & promo URLs** (`--article-url`, `--promo-url`, or the `article_url:` /
+  `promo_url:` frontmatter keys) are recorded on the Supabase row and the log row — just where else the
+  piece lives. `GHOST_ADMIN_API_KEY` + `GHOST_API_URL` (optional, never wired) would create a Ghost post
+  and record the canonical URL; it is not a reader-site path.
+
+---
+
+- `site/server.mjs` is the only public surface. It must keep **no unauthenticated** route except
+  `/healthz` and a disallow-all `/robots.txt`: everything else — the dashboard, the article pages,
+  the article manifest and the drafts — requires `PRESSFLOW_AUTH_SECRET` (see
+  `docs/VPS_WIRING.md` §4), and with the secret unset the app fails closed (503). PressFlow is an
+  **internal** dashboard; the articles are exported to the reader sites (`giniloh.com` /
+  `wellroost.com`), so a public `/published/*` or `/api/articles.json` publishes a second copy of
+  every article on a domain that is not a reader surface. `scripts/test_public_surface.mjs` is the
+  gate that keeps that true (`verify.sh` §10), and every response carries `X-Robots-Tag: noindex`.
+
+---
+
+- A deployment only contains **committed** files (Coolify clones git). A draft that was never
+  committed is invisible to the dashboard even after a redeploy, so "the site is stale" usually
+  means "the artifact was never committed", not "the deploy failed".
+
+---
+
+- `context/published_log.md` may only list files that exist in `published/`. The filesystem is the
+  source of truth; the log is a record of it. A row for a file that is still in `context/drafts/`
+  is a false "published" claim.
+
+---
+
+- **The reader sites are static builds, so a CMS change is not live until the frontend rebuilds.**
+  `aichieve.net`, `giniloh.com` / `wellroost.com` (Coolify apps `p3zkcfkzvmjq6xt3yjnsobwf` /
+  `c6sm5gz59a3jnrjg1ouahfp7` / `mln99jwbwspi62huuifloxla`,
+  repos `kotechile/*`), fetch every post from the `cms.` host at BUILD
+  time (`PUBLIC_WORDPRESS_API_BASE`, `ARG CACHEBUST=1`); the deployed container is a folder of HTML.
+  A post trashed or deleted in WordPress therefore keeps answering, keeps its sitemap entry and keeps
+  every inbound internal link alive until the next build — `scripts/build_internal_link_index.py
+  --check` is what catches that drift (it failed on the 10-05 removal until the index was rebuilt).
+  The redirect is the WordPress mu-plugin, not this repo: `wellroost-coolify-redeploy.php` /
+  `giniloh-coolify-redeploy.php` fire `POST /api/v1/deploy {"uuid":…,"force":true}` on the Coolify API
+  (`https://coolify.giniloh.com`). Since 2026-10-05 they also fire when a post LEAVES publish, is
+  permanently deleted, or has a published post edited (debounced 10 min) — before that only a
+  transition INTO publish rebuilt, so a removal was silent. Trigger one by hand whenever a CMS change
+  must reach readers immediately; `GET /api/v1/deploy` is gone, it is a POST (see `docs/VPS_WIRING.md`).
+
+---
+
+- **An image swapped after the push needs its own build, and the symptom is `og:image` (learned 2026-10-26).** `wp_draft --reimage` uploads media and switches `featured_media`, but the front's build ran at publish time, when the post had none — so the live page serves `og:image="…/default-share-image.png"` and no `<img>` at all, for as long as that build stands; the CMS post reads `featured_media: 1185` and nothing looks wrong from the desk. Check it with `curl -s <front>/<slug>/ | grep -c '<slug>-featured'` (0 = not built) rather than by eye on the CMS, then rebuild: the mu-plugin's debounced redeploy may not fire for the front in question, so push an empty `ci: re-trigger frontend build for <slug>` commit to that front's repo and confirm a new `application_deployment_queues` row plus a non-zero grep. Expect ~15–20 minutes end to end, so a publish pass that cannot wait must report the stale build rather than claim the image is live.
+
+---
+
+- **A refresh after an inline link is added can make the generated block duplicate it.** `wp_draft --refresh-live` re-runs `internal_links.py` against a body that now contains the inline link, so the same page can appear both in the sentence and under `## Related reading`; the artifact meanwhile keeps the block it was published with. Splice the row's `## Related reading` back into the artifact so the three surfaces agree, and report the duplication as shared-code behaviour rather than hand-editing the block.
+
+---
+
+- **`publish.py`'s delivery line counts ABSOLUTE hrefs, so a correctly stamped block reads "0 internal link(s)" (learned 2026-10-20).** `scripts/internal_links.py` stamps site-relative paths on purpose, and the push summary's delivery check greps for the front's own absolute URL — so a publish that carried three `## Related reading` links and wrote them back to the Supabase row still printed `0 internal link(s)` beside `3 internal link(s)` in the earlier link note. Do not re-run the push or treat it as a defect: read the rendered page (`curl -sL <front>/<slug>/ | grep -o 'href="/[a-z0-9-]*/"'`) or the CMS REST `content.rendered`, which showed all three paths and the block.
+
+---
+
+- **A generated `## Related reading` block can be token-legal and still read as nonsense, because two incidental shared words clear the two-token rule (learned 2026-10-22).** On `your-retrieval-misses-57` (agentic_ai) the linker emitted a same-category link plus two off-topic ones — `shippers-stuck-in-the-gap` and `parcelproof-stop-bleeding-28-on-carrier-invoices` — justified only by the shared tokens "missed" and "time", beside an article about vector retrieval. Nothing in the gate objects: both are live, same-site, not the article itself, and carry two shared tokens. Read the three link titles before calling a publish clean, and when one is off-subject, say so as an open item rather than hand-editing the generated block (it is rebuilt from `context/internal_links.json` on every push, so a hand edit is overwritten) — the durable fix is a scorer rule that discounts high-frequency tokens, which is shared code and the owner's call.
+
+---
+
+- **One page can appear in `context/internal_links.json` under two slugs, and only one of them serves a reader (learned 2026-11-09).** The index listed both `/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/` and `/heat-pumps-cheaper-to-run-pricier-to-buy/` as `live: true`; the front answered the first **404** and the second 200, so the generated `## Related reading` block shipped a dead internal link into a live post until it was curated out. Probe each URL the block emits, not the index flag — a duplicate slug in the sitemap+metadata join is the class the `live` flag cannot see.
+
+---
+
+- **An internal link is "live" only as of the index build, and the artifact's own slug must be excluded.**
+  `context/internal_links.json` is built from each frontend's own sitemap + page content (canonical-
+  checked; the CMS is not a candidate source) and the generated block stamps site-relative paths, so
+  the same stored body stays internal on every front that serves it. A page retired from the frontend
+  since the build leaves a `## Related reading` link that 404s in the reader.
+  Before trusting a generated block, check its URLs (an HTTP 200, not the index's `live` flag):
+  `python3 scripts/build_internal_link_index.py` rebuilds the corpus and
+  `python3 scripts/internal_links.py <artifact> --apply` regenerates the block from it. And once an
+  article is live it is *itself* a candidate, so every re-enrichment must exclude its own slug —
+  `publish.apply_internal_links` and the `internal_links.py` CLI both pass one now (observed
+  2026-10-10 on the first re-push of a live evergreen artifact: the block came back with a self-link
+  and a retired page, and both paths were fixed and pinned by `test_internal_links.py`). To correct the
+  body of a post that is already live: `python3 scripts/sync_articles.py <published file>` then
+  `python3 scripts/wp_draft.py --slug <slug> --refresh --refresh-live` — the status is never sent, so
+  the post stays published, and no image is re-commissioned (the block is outside the illustration
+  digest). The edit itself triggers the mu-plugin's debounced frontend rebuild.
+
+---
+
+## 8. Two defects the gates accept (learned 2026-11-11, `your-71-margin-is-your-exit-bill`)
+
+---
+
+**A frontier ACCEPT can be a near-verbatim rewrite — read the copy yourself before calling it humanized.**
+`scripts/article_reviewer.py` accepted attempt 1 with 0 hard failures and 0 regressions, and the
+`_final` differed from the draft by one clause ("…eight days later, on 5 November"); 910 → 912 words,
+rhythm 9.8 → 9.7. That is a legitimate pass — a draft already in voice converges in one pass — but the
+frontier did not re-derive the copy, so any accuracy defect in the draft survives verbatim. Here the
+draft claimed the category's order book would be "marked twice before December" while the next print
+(AutoStore's Q4) is not before December; the sentence was repaired by hand after the accept and the
+gates re-run. Report the rewrite delta in the run log so a no-op is visible.
+
+---
+
+**A zero-diff ACCEPT is not a rewrite, and the whole-document humanizer is the fallback (same day, `21-of-isaias-claims-paid-nothing`).**
+The reviewer accepted attempt 1 and wrote a `_final` **byte-identical** to the draft (`diff` empty, rhythm
+12.1 → 12.1, health 0.562 → 0.562) — the stage graded the draft against itself. Always `diff` the draft
+against the `_final` before publishing; on an empty diff, run the humanizer directly
+(`scripts/loop3_<slug>_<date>.py` copying `loop3_annualplan_1107.py`, 900 s + `max_tokens=32000`) and then
+`python3 scripts/review_audit.py --draft A --final B --brief <verified brief>` to prove the facts survived.
+That fallback rewrote the lede into an unsupported causal claim ("closed with nothing paid *because* the
+file decided the claim"), dropped two load-bearing figures, replaced a numbers bullet, and moved the earned
+internal link into the closing paragraph — so a humanizer pass must be read against the verified brief's
+**binding rulings**, not just its figure list, and the debt is repaired by hand before the push.
+
+---
+
+**The art director's alt can arrive as the overlay headline glued to a sentence, naming a real brand
+over a generic render.** Observed: "71% Margin Is Your Exit Bill. AutoStore warehouse grid receding to
+a roll-up door with a large oxidised red padlock." on a header whose shelving was generic. The glue
+reads as a duplicated title to a screen reader and the vendor name asserts the image is its product.
+Fix in one write: rewrite as one complete sentence describing only what the pixels show (verify with
+vision first), then reconcile media `alt_text`/`caption` (Basic auth), the artifact's
+`image_alt`/`image_caption`, and the row's `metadata.illustration.alt_text` /
+`metadata.wordpress.media_alt`. Then force the front's rebuild — the static build embeds the old string.
+
+---
+
+**Curating the generated Related-reading block must be the last write.** `internal_links.py`
+justifies its picks on single incidental tokens ("quarter, third" produced an OTIF piece for a
+warehouse-capex story); when nothing qualifies, replace the block with same-vertical pages that answer
+200 and write it to the artifact, the Supabase row and the CMS post *after* any `--refresh-live`,
+which regenerates it.
+
+---
+
+**A source URL containing `---` breaks the frontmatter rewrite, and the published artifact is the
+casualty (`your-plan-stops-at-the-substation`).** The push adds `image_*`, `meta_title` and
+`meta_description` by re-serialising the frontmatter, which splits the block on the first line starting
+with `---` — and a PDF path like `…manh-earnings-release---q3-2026.pdf` contains exactly that. The
+published file came out with the URL truncated mid-path (`…/manh-earnings-release`), an orphan line
+reading `---q3-2026.pdf`, the meta fields below the real closing delimiter, and
+`test_article_assets.py` red on two checks (byte-identical pass, frontmatter not re-serialised). The
+CMS body and the Supabase row were unaffected — only the repo artifact and the `_final` were mangled.
+After any push, read the artifact's first 25 lines and confirm the frontmatter closes once; repair by
+restoring the full URL and moving the `image_*`/`meta_*` lines above the closing `---`. Prefer a
+citation URL with no `---` in its path when one exists; when the only copy is the release PDF, check
+the artifact immediately after `publish.py` and fix both `published/` and the `_final`.
+
+---
+
+## The text as it stood — sections the skill now states in condensed form
+
+Each block below was rewritten shorter in `skills/publisher.md`. The original wording is kept here in full, so a rule's exact phrasing and every example survives the compression.**The push is gated (owner, 2026-10-10).** `scripts/wp_draft.py` re-runs the mechanical gates on the
+artifact immediately before it publishes — Sources present, no banned AI-tells, the accessibility
+floor, the social-voice gate (`scripts/publish_gate.py`) — and scores the headline against the
+house standard (`scripts/headline_score.py`; see `skills/story_draft.md`), **for articles dated
+2026-10-10 or later: earlier headlines are grandfathered** and only reported. A failing article gets
+**one rewrite attempt** (the Loop 3 humanizer, rewiring only the body between the artifact's own
+frontmatter and its own `## Sources`); a weak headline is re-cut once from the article's own figures.
+If it clears the gate it is published, and if it still fails it is created as a **DRAFT** and
+reported — a structurally broken headline (past 13 words or 75 chars) holds the article on its own.
+An article is never lost and never published un-evaluated. An already-published post is never
+rewritten or demoted by the gate — it is reported. Knobs:
+`PUBLISH_GATE=off|report|enforce` (default `enforce`), `PUBLISH_GATE_REWRITES` (default 1).
+
+---
+
+- **Execution:** run `python3 scripts/publish.py context/drafts/YYYY-MM-DD_<slug>_final.md`
+  (supports `--article-url <url>`, `--promo-url <url>`, `--interactive`, `--no-deploy`).
+- **External article & promo URLs** (`--article-url`, `--promo-url`, or the `article_url:` /
+  `promo_url:` frontmatter keys) are recorded on the Supabase row and the log row. They used to be
+  the LinkedIn CTA's links; they are now just where else the piece lives.
+- **Ghost** (optional, if you ever wire it): `GHOST_ADMIN_API_KEY` + `GHOST_API_URL` → create post,
+  record canonical URL. Not a reader-site path.
+- A failed persistence step (Supabase, CMS, image) surfaces an explicit error with the payload —
+  never a silent skip, never a fabricated URL.
+
+---
+
+## 4. Output
+- `published/YYYY-MM-DD_<slug>.md` (carrying the `image_*` frontmatter fields), updated published
+  log, Supabase rows (including `metadata.illustration`), the staged image + its brief
+  (`context/assets/illustrations/<slug>/`), and the CMS draft with its featured image.

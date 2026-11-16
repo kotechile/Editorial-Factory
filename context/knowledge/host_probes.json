@@ -1,0 +1,2922 @@
+[
+ {
+  "host": "abcsupplychain.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-02",
+  "vertical": "meio_working_capital_tco",
+  "note": "5 \u00d7 25 \u00d7 \u221a(7 + 14) \u2248 165 units`, and the definition of cycle stock); `abcsupplychain.com` (the review period listed first among the factors that make lead time uncertain, a 35-day-against-40"
+ },
+ {
+  "host": "about.gitlab.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "trial banner's \"30 days\" \u2014 not usable as a row without re-phrasing. `about.gitlab.com/pricing/ci-cd/` is unreachable; the docs page above is the working substitute. A price-class comparison"
+ },
+ {
+  "host": "adjustersinternational.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "ters-insurance` (2023 severity $20,062 at 5.33 per 100 house-years); `adjustersinternational.com` (qualitative only \u2014 \"accidental loss is not covered under a standard homeowner's policy\", an"
+ },
+ {
+  "host": "adjustersinternational.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "to `5.33 \u2026 20,062`, the scale an ordinary claim is priced against); `adjustersinternational.com/pubs/adjusting-today/...` (quotes the standard-form provision verbatim, works a coinsurance e"
+ },
+ {
+  "host": "adjustersinternational.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-06",
+  "vertical": "resilient_home_assets",
+  "note": "org`, `myfloridacfo.com/division/consumers/\u2026`, `law.justia.com`, and `adjustersinternational.com` \u2014 which is why an ordinance-or-law candidate and a sump-runtime candidate were dropped (7.7\u2013"
+ },
+ {
+  "host": "afdc.energy.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "outdoor_power_equipment",
+  "note": "\"Advanced chargers (Cadex) prevent charging Li-ion below freezing\"; `afdc.energy.gov/fuels/electricity-benefits` (\"12 to 15 years in moderate climates (8 to 12 years in extreme climates)\");"
+ },
+ {
+  "host": "afdc.energy.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "style statute rows are not needed for a charger-circuit fact because `afdc.energy.gov` prints \"7.2 kW\" and \"a dedicated 40-Amp circuit \u2026 Article 625\" as prose."
+ },
+ {
+  "host": "amd.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "-desktop-gpus/<part>/`. Fails: `intel.com` spec pages (403), guessed `amd.com` product URLs (404 \u2014 resolve the real slug first), `phoronix.com` review pages (client-rendered, ~2.3 KB bodies)"
+ },
+ {
+  "host": "analytics.home-assistant.io",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "`cve.org` dashboards (client-rendered, 10\u201342 character bodies), and `analytics.home-assistant.io` (HTTP 200 but ~700 characters \u2014 its install-count stub is the whole page). A price page is"
+ },
+ {
+  "host": "angi.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-19",
+  "vertical": "",
+  "note": "l; only exact slugs such as `products/air_source_heat_pumps` fetch), `angi.com`, `homeguide.com`, and `nachi.org/inspecting-hvac-systems.htm`. **A colliding reference table can still be resc"
+ },
+ {
+  "host": "app.leg.wa.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "home_ops_execution",
+  "note": "st among beneficiaries, bond \"in favor of the State of California\"), `app.leg.wa.gov/rcw/default.aspx?cite=18.27.040` (12.5 KB \u2014 `$30,000` general / `$15,000` specialty in (1), the bond cond"
+ },
+ {
+  "host": "app.leg.wa.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-06",
+  "vertical": "resilient_home_assets",
+  "note": "\u00a7 627.70132's `18 months` supplemental bar verify cleanly too. **On `app.leg.wa.gov/WAC/default.aspx?cite=<section>` it is the section number in the page's own title bar that poisons short"
+ },
+ {
+  "host": "apple.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-06",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `apple.com/batteries/service-and-recycling/` (the whole spec ladder in one paragraph block \u2014 \"iPhone 14 models and earlie"
+ },
+ {
+  "host": "arxiv.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": "ity brief.** Carries the figure as plain text and fetches first try: `arxiv.org/html/<id>vN` (a Microsoft Azure fleet characterization plus four open-source frameworks: host CPU near an 11%"
+ },
+ {
+  "host": "astm.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "t two, so it is not a row (the flakiest host seen on this vertical); `astm.org`, every `wildfireprepared.org` path (the technical standard is PDF-only), `readyforwildfire.org`, guessed `fire"
+ },
+ {
+  "host": "ato.gov.au",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "exed figure). Fails or cannot carry a row: `oecd.org`, `ssa.gov` and `ato.gov.au` (all HTTP 403 to the verifier), `canada.ca` (unreachable), guessed `tax.ny.gov` telecommuter paths (404 \u2014 th"
+ },
+ {
+  "host": "automate.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "om` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) \u2014 so a facility-readiness angle (sprinkler clearance, charger circuits, floor fla"
+ },
+ {
+  "host": "aws.amazon.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-20",
+  "vertical": "workstation_compute_economics",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `aws.amazon.com/mediaconvert/pricing/` \u2014 the on-demand *rate* table renders as `priceOf!` templates, but the page's own w"
+ },
+ {
+  "host": "aws.amazon.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "*billing-architecture* topic cheap to source on four hosts at once: `aws.amazon.com/premiumsupport/pricing/` (Business Support+ = greater of $29/month per account or `9%` of monthly charges"
+ },
+ {
+  "host": "aws.amazon.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "workstation_compute_economics",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `aws.amazon.com/mediaconvert/pricing/` \u2014 the on-demand *rate* table renders as `priceOf!` templates, but the page's own w"
+ },
+ {
+  "host": "azleg.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "home_ops_execution",
+  "note": "ment-or-final-order gate and the **14-month** complaint cutoff), and `azleg.gov/ars/32/01152.htm` (the volume-scaled commercial ladder, the `$5,000`\u2013`$15,000` general-residential band, the `"
+ },
+ {
+  "host": "azure.microsoft.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "support request response times based on the severity of an issue\"); `azure.microsoft.com/en-us/support/plans/` (flat `$29`/`$100`/`$1,000`, Basic included). **Matcher traps on this beat:**"
+ },
+ {
+  "host": "azure.microsoft.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "y a row: **the commitment-pricing pages fetch but print no prices.** `azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/` retrieves at ~71 KB and `aws.amazon.com/be"
+ },
+ {
+  "host": "bankrate.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "reachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com` and `bankrate.com` return nothing usable, so a PMI rate card cannot carry a row \u2014 the premium band has to ride on a secondary"
+ },
+ {
+  "host": "banxico.org.mx",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-07",
+  "vertical": "supplier_risk_reshoring_decision",
+  "note": ". **Unreachable to the verifier:** every Banco de M\u00e9xico path tried (`banxico.org.mx` home = a 1,368-character nav shell, `tipcamb/main.do` = 607 characters, `monetary-policy/index.html` and"
+ },
+ {
+  "host": "batteryuniversity.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-07",
+  "vertical": "outdoor_power_equipment",
+  "note": "inutes**, which is what pairs a run time with a refill on one host); `batteryuniversity.com/article/bu-409-charging-lithium-ion` (charge efficiency ~99 percent and the 180-minute saturation"
+ },
+ {
+  "host": "benchmarkingsuccess.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "undated and read the gap as the measured counterpart to the model); `benchmarkingsuccess.com/understanding-fill-rate-kpis-line-fill-rate` (March 2018: 96% line fill against ~82% order fill,"
+ },
+ {
+  "host": "blog.arkieva.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-02",
+  "vertical": "meio_working_capital_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `blog.arkieva.com/replenishment-frequency` (the arithmetic that makes the topic \u2014 \"New SS = (1/\u221a2) * Original SS = 0.707"
+ },
+ {
+  "host": "blog.se.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "`eaton.com` (unreachable), `ecmag.com` (403), `up.codes` (HTTP 500), `blog.se.com` (fetches at ~5.8 KB but the body carried no numeric tokens at all, so no row can lead on it), and guessed `"
+ },
+ {
+  "host": "bls.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-16",
+  "vertical": "career_velocity_equity_engineering",
+  "note": "h makes it the working anchor for any hours-based pay topic now that `bls.gov` still 403s to the verifier: \"Median wages (2025) $84.20 hourly, $175,140 annual\" for computer and information s"
+ },
+ {
+  "host": "bls.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "last_mile_routing_fleet_carbon",
+  "note": "ence, and never give it a row of its own. Fails or is unneeded here: `bls.gov` is still 403 and no wage row was needed; the DOE/EPA explainer pages carry the spec, the price and the losses,"
+ },
+ {
+  "host": "brother-usa.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "row: `hp.com/us-en/shop/\u2026` product and category paths (unreachable), `brother-usa.com`, `usa.canon.com`, `lexmark.com`, and `epson.com/For-Home/Ink/Ink-Bottles/c/h1` (fetches, but it is a fi"
+ },
+ {
+  "host": "buildkite.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "lso there: network and storage at `420 credits per GB ($0.252/GB)`). `buildkite.com/pricing` fetches at ~20 KB but its per-seat and included-minute figures evidence on the trial banner's \"30"
+ },
+ {
+  "host": "cabforum.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "ther than a rendered page. Unreachable to the verifier on this beat: `cabforum.org` (the ballot's own announcement page), `letsencrypt.org/docs/lifetime-migration/`, `security.apple.com`, `s"
+ },
+ {
+  "host": "california.public.law",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `california.public.law/codes/ca_rev_and_tax_code_section_17014` (5.1 KB \u2014 (a)(1)\u2013(2) the resident definition, (c) \"contin"
+ },
+ {
+  "host": "california.public.law",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "home_ops_execution",
+  "note": "statutes, and all four retrieve with their conditions as plain text: `california.public.law` (\u00a7 7044 at 4.5 KB \u2014 the four-structure cap in (a)(2)(B), \"the owner's employees with wages as the"
+ },
+ {
+  "host": "canada.ca",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "ecd.org`, `ssa.gov` and `ato.gov.au` (all HTTP 403 to the verifier), `canada.ca` (unreachable), guessed `tax.ny.gov` telecommuter paths (404 \u2014 the convenience-rule pages have moved), and **`"
+ },
+ {
+  "host": "cbp.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-07",
+  "vertical": "supplier_risk_reshoring_decision",
+  "note": "he central bank, with the fetch wall recorded in the verified brief. `cbp.gov/trade/programs-administration/currency-exchange-rates` is unreachable too, so the published quarterly rate table"
+ },
+ {
+  "host": "cga.ct.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "age and a PDF), `ftb.ca.gov` (and its 540NR booklet, `unsupported`), `cga.ct.gov`, `mass.gov` info pages, `iga.in.gov` (a 24-char stub), `revisor.mn.gov` (fetches, but the 290.01 body carrie"
+ },
+ {
+  "host": "circleci.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "la \"job duration / 60 \u00d7 cost factor\"). Fetches, with a matcher trap: `circleci.com/pricing/` (~16 KB) states its compute rates only in **credits**, and a cell leading on a credit count evide"
+ },
+ {
+  "host": "cloud.google.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": "iff brief.** Carries the figure as plain text and fetches first try: `cloud.google.com/vertex-ai/generative-ai/pricing` (109 KB \u2014 the Gemini 3.1 Pro Preview row as one text line, \"Input (tex"
+ },
+ {
+  "host": "cloud.google.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "d Response at \"5-minute response times\" for a minimum of $7K or 2%); `cloud.google.com/support` (Standard `$29` or `3%` flat; Enhanced `$100` floor with `10%`/7%/5%/3% and a P1 first respons"
+ },
+ {
+  "host": "cloud.google.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "workstation_compute_economics",
+  "note": "n one example, and \"The minimum duration for billing is 10 seconds\"; `cloud.google.com/transcoder/docs/pricing` (41 KB, `$0.015 / $0.03 / $0.06` per SD/HD/UHD output minute beside its 1- and"
+ },
+ {
+  "host": "cltc.ucdavis.edu",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "orst-case fixed install is limited to). Fails or cannot carry a row: `cltc.ucdavis.edu` (403 to the verifier on its project pages, and the service-upgrade-avoidance field study itself is a P"
+ },
+ {
+  "host": "cmr.berkeley.edu",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `cmr.berkeley.edu` (a publisher's article record \u2014 the abstract alone states the 2001 study's \"sixty-five percent of thei"
+ },
+ {
+  "host": "cms.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "tches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 \u00a7 1 fetches but spells its count as \"one hundred eighty-three days\", w"
+ },
+ {
+  "host": "codes.ohio.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "ages that resolve are worth finding by search, not by guessing), and `codes.ohio.gov` prints its payment-timing statute with the deadlines in words (\"within ten calendar days\") plus an `eigh"
+ },
+ {
+  "host": "community.letsencrypt.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "om`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread shell \u2014 so the ladder is cited from the three hosts above rather than fr"
+ },
+ {
+  "host": "coned.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "also pay for electric generation at prices determined by the CCA\"); `coned.com/en/accounts-billing/your-bill/time-of-use` (~10 KB, the residential TOU block as one run \u2014 \"June 1 to Sept 30"
+ },
+ {
+  "host": "consumerfinance.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "\u2014 so never write \"the servicer has no duty to volunteer the date\"); `consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/` (20 percent down / 20 percent equity on a refin"
+ },
+ {
+  "host": "consumerreports.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-07",
+  "vertical": "outdoor_power_equipment",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `consumerreports.org/home-garden/lawn-mowers/gas-vs-electric-lawn-mower-which-is-better-a1057954260` (**the measured anch"
+ },
+ {
+  "host": "content.govdelivery.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "ts its own source line and a \"Verified:\" date, a free as-of anchor); `content.govdelivery.com/accounts/<AGENCY>/bulletins/<id>` (a state regulator's consumer bulletin \u2014 the Iowa Insurance Di"
+ },
+ {
+  "host": "content.naic.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "le here: `mass.gov` (403 to the verifier), `insurance.nh.gov` (403), `content.naic.org` article pages (403) and its consumer guide (PDF, no text extractor), `insurance.wa.gov` / `mn.gov` gui"
+ },
+ {
+  "host": "content.naic.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "sumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path (they fetch a ~7.7 KB"
+ },
+ {
+  "host": "corelogic.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "orado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststreet.org/risk-factor/fire-factor/` (HTTP 200 with a 260-character body), `moen"
+ },
+ {
+  "host": "countryeconomy.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-07",
+  "vertical": "supplier_risk_reshoring_decision",
+  "note": "ers with no rate), so a peso policy rate rides on a data aggregator (`countryeconomy.com/key-rates/mexico`, which prints the cut in one sentence: \"lowered its interest rates by 0.25 percenta"
+ },
+ {
+  "host": "coursera.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-23",
+  "vertical": "career_velocity_equity_engineering",
+  "note": "ended experience: 6+ months hands on experience with Google Cloud\"); `coursera.org/courseraplus` (the whole plan table as text: \"$59 /month \u2026 or $399 /year\", individual courses \"$49 \u2013 $79 /m"
+ },
+ {
+  "host": "crown.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "e URLs and `dcvelocity.com` (unreachable); and the equipment vendors `crown.com`, `enersys.com` and `fluxpower.com` fetched with **no numeric tokens at all** while `mobile-industrial-robots."
+ },
+ {
+  "host": "crucial.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "\"14.5 GB/s of sequential throughput\"). Fails or cannot carry a row: `crucial.com` product pages (HTTP 403 \"Request Rejected\"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX s"
+ },
+ {
+  "host": "ctl.mit.edu",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "supply_chain",
+  "note": "r fillers, \"Median wages (2025) $17.95 hourly, $37,330 annual\"), and `ctl.mit.edu/publications/<slug>` \u2014 **a university capstone's publication page fetches at only ~2.3 KB yet carries the en"
+ },
+ {
+  "host": "cve.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "entation (403), `reddit.com` wikis (403 Blocked), `nvd.nist.gov` and `cve.org` dashboards (client-rendered, 10\u201342 character bodies), and `analytics.home-assistant.io` (HTTP 200 but ~700 char"
+ },
+ {
+  "host": "datacenterknowledge.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "gpu_hardware",
+  "note": "reports/energy-and-ai` path), `supermicro.com` liquid-cooling pages, `datacenterknowledge.com`, and `nvidia.com/en-us/data-center/liquid-cooling/`. Note that `\u2026/gb200-nvl72/` fetches at 18 K"
+ },
+ {
+  "host": "dclcorp.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "0 = 75% \u2014 an illustration of a mechanic, never a current benchmark); `dclcorp.com/blog/fulfillment/fill-rate` (the 92-98% \"healthy fill rate\" band, defined on an order-level formula). Fails"
+ },
+ {
+  "host": "dcvelocity.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "e cited from its own agency); `supplychaindive.com` article URLs and `dcvelocity.com` (unreachable); and the equipment vendors `crown.com`, `enersys.com` and `fluxpower.com` fetched with **n"
+ },
+ {
+  "host": "demand-planning.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "hub-level inventory reductions while spokes \u2026 contributed only 2%\"); `demand-planning.com/<date>/<slug>` (13 KB, the practitioner case: 60 locations, 13 echelons, \"a EUR 20 million saving\","
+ },
+ {
+  "host": "dfpc.colorado.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "fm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths all fail the verifier. **Matcher traps on this beat:** a cell leading `1"
+ },
+ {
+  "host": "dfs.ny.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "er/cb003.html`, `tdi.texas.gov/consumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov"
+ },
+ {
+  "host": "digicert.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "It is currently 30 days, which will be reduced to 7 hours by 2028\"); `digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days` (11 KB \u2014 the ladder as one sentence, \"As"
+ },
+ {
+  "host": "digitalocean.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "e pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale.com/pricing` \u2014 the reliable way to c"
+ },
+ {
+  "host": "dir.ca.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "tute \u2014 an aggregator that does fetch is not the code); `lni.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc."
+ },
+ {
+  "host": "dl.acm.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "es for a watts spec. **Unreachable to the verifier:** `mdpi.com` and `dl.acm.org` (the MDPI reviews and the NILM-BENCH paper are HTTP-blocked \u2014 cite the arXiv equivalent or drop the row), `e"
+ },
+ {
+  "host": "dllr.state.md.us",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "home_ops_execution",
+  "note": "ll collides with the subsection numbering (skipped, cited in prose); `dllr.state.md.us/license/mhic/mhicpre1978.shtml` (\"one third of the total contract price at the time of signing\" \u2014 the s"
+ },
+ {
+  "host": "dllr.state.md.us",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "i.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc.texas.gov` (unreachable, so a low-floor state cannot be ci"
+ },
+ {
+  "host": "docs.aws.amazon.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "load-bearing pair for any \"a faster disk will not fix it\" argument); `docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html` (the gp3 baseline as one sentence); `tomshardware.com/rev"
+ },
+ {
+  "host": "docs.claude.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": ", all tokens (input and output) are charged at long context rates\"); `docs.claude.com/en/docs/about-claude/pricing` (30 KB \u2014 Haiku 5.5's \"$0.10 / MTok for prompts up to 100,000 tokens \u2026 $0.5"
+ },
+ {
+  "host": "docs.claude.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "ath>` does retrieve the source file when the rendered docs omit it); `docs.claude.com/en/api/agent-sdk/python` (documents `max_turns` and `max_budget_usd`, both defaulting to `None`: \"the bo"
+ },
+ {
+  "host": "docs.crewai.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "on and closed status as text, and the title carries the figure); and `docs.crewai.com` (a field table with the documented default \u2014 \"max_iter int Maximum iterations before the agent must pro"
+ },
+ {
+  "host": "docs.digitalocean.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "response of 1 hour; Premium `$15,000` floor with P1 in 15 minutes); `docs.digitalocean.com/support/support-plans/` (flat `$24`/`$99`/`$999`, response <24 h to <30 min, and the sentence that"
+ },
+ {
+  "host": "docs.docker.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": "rvesting / GPU-harvesting result sentences as one plain-text block); `docs.docker.com/engine/containers/resource_constraints/` (the CFS period default as `100000 microseconds (100 millisecon"
+ },
+ {
+  "host": "docs.frappe.io",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "every path `unreachable`, so no MAPE/MASE definition can be a row), `docs.frappe.io`, `docs.oracle.com` (1.5 KB stub), and `mdpi.com` (fetched with a zero-length body)."
+ },
+ {
+  "host": "docs.github.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `docs.github.com/en/billing/concepts/product-billing/github-actions` (14 KB \u2014 the whole per-minute rate table as text: Li"
+ },
+ {
+  "host": "docs.gitlab.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "679 $ 18.00`, `4 GiB 2 vCPUs \u2026 $ 24.00`, `8 GiB 4 vCPUs \u2026 $ 48.00`); `docs.gitlab.com/ci/pipelines/compute_minutes/` (the cost-factor table \u2014 Linux small 1 / medium 2 / large 3 / xlarge 6 /"
+ },
+ {
+  "host": "docs.kernel.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": "er minute`, an unusually clean row because the figure appears once). `docs.kernel.org/scheduler/sched-bwc.html` fetches and states the consequence a draft wants (\"Throttled threads will not"
+ },
+ {
+  "host": "docs.langchain.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "carry several rows whose evidence windows land on the table itself); `docs.langchain.com` (a framework's own documented default \u2014 \"Starting in version 1.0.6, the default recursion limit is s"
+ },
+ {
+  "host": "docs.nvidia.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-20",
+  "vertical": "workstation_compute_economics",
+  "note": "D/HD/UHD output minute beside its 1- and 3-year commitment columns); `docs.nvidia.com/video-technologies/video-codec-sdk/13.0/nvenc-application-note/index.html` (the fps table as prose \u2014 Bla"
+ },
+ {
+  "host": "docs.nvidia.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "HTTP 403 \"Request Rejected\"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX system guides (`unreachable`), `semiconductor.samsung.com` (11 KB, spec table client-rendered, no M"
+ },
+ {
+  "host": "docs.oracle.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "chable`, so no MAPE/MASE definition can be a row), `docs.frappe.io`, `docs.oracle.com` (1.5 KB stub), and `mdpi.com` (fetched with a zero-length body)."
+ },
+ {
+  "host": "docs.ottomotors.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "s robots \u2026 300-400 units per hour\"). Fetches but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a"
+ },
+ {
+  "host": "doi.colorado.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": ", `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststr"
+ },
+ {
+  "host": "dol.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "egator that does fetch is not the code); `lni.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc.texas.gov` (un"
+ },
+ {
+  "host": "dol.ny.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "uly 1 inflation rule, and the federal $7.25 floor in the same body); `dol.ny.gov/minimum-wage-0` (rates for a *future* date \u2014 $17.00 / $16.00 from 01/01/2027 \u2014 with the statutory off-ramp th"
+ },
+ {
+  "host": "doss.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "r page is the right home for a critique leg, labelled vendor claim); `doss.com` (a vendor survey report dated 18 May 2026 \u2014 \"DOSS surveyed 661 professionals\", 16% did not formally measure fo"
+ },
+ {
+  "host": "doss.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "r page is the right home for a critique leg, labelled vendor claim); `doss.com` (a vendor survey report dated 18 May 2026 \u2014 \"DOSS surveyed 661 professionals\", 16% did not formally measure fo"
+ },
+ {
+  "host": "eaton.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "he best *measured* anchor for this beat is unreachable to the gate), `eaton.com` (unreachable), `ecmag.com` (403), `up.codes` (HTTP 500), `blog.se.com` (fetches at ~5.8 KB but the body carri"
+ },
+ {
+  "host": "ecfr.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": "so \"a 60 percent cut\" is the wrong reading of the 60-percent row). **`ecfr.gov` 40 CFR 84 subpart B fetches at 54 KB but its installation prohibition cannot carry a row:** every cell for \u00a7 8"
+ },
+ {
+  "host": "ecfr.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-06",
+  "vertical": "career_velocity_equity_engineering",
+  "note": "ote \"Added Pub. L. 97\u201334 \u2026 Aug. 13, 1981, 95 Stat. 256, \u00a7 422A\") and `ecfr.gov/current/title-26/section-1.422-4` (20.9 KB \u2014 six worked examples; the page's own banner prints \"up to date as o"
+ },
+ {
+  "host": "ecfr.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "arance, charger circuits, floor flatness) cannot get past `osha.gov`/`ecfr.gov` code rows, and was dropped at 7.4 rather than written on general-industry statute. **A robot vendor's SUMMARY"
+ },
+ {
+  "host": "ecmag.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "or this beat is unreachable to the gate), `eaton.com` (unreachable), `ecmag.com` (403), `up.codes` (HTTP 500), `blog.se.com` (fetches at ~5.8 KB but the body carried no numeric tokens at all"
+ },
+ {
+  "host": "efficiencymaine.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "aver/*` heat-pump pages, `neep.org` (the cold-climate product list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` \u2014 which is why the heat-pump-COP candidate was dropped"
+ },
+ {
+  "host": "egopowerplus.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-07",
+  "vertical": "outdoor_power_equipment",
+  "note": "ERIFIED at the push by design and only the evergreen gate reads it); `egopowerplus.com/21-inch-self-propelled-mower-select-cut-lm2135sp` (run time, deck, torque and the self-propel range on"
+ },
+ {
+  "host": "eia.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "Table 1's `82 ppmvd / 1.0 g/HP-hr` row all flatten to one text run); `eia.gov/tools/faqs/faq.php?id=74&t=11` (0.81 lb CO2/kWh U.S. average and 0.96 lb for gas-fired generation, 2023 data, wi"
+ },
+ {
+  "host": "emp.lbl.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "n this beat: `ferc.gov` (every news/report path tried, unreachable), `emp.lbl.gov` (the interconnection-queue data, unreachable \u2014 so no queue-duration figure can carry a row), `eia.gov/elect"
+ },
+ {
+  "host": "emporiaenergy.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": ", the dedicated 40-Amp circuit, National Electric Code Article 625), `emporiaenergy.com` (product page: 24,000 samples per second, +/-2 % accuracy, the $99.99/$149.99/$199.99 bundle prices;"
+ },
+ {
+  "host": "energy.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "erator-costs/` (fetches 8.6 KB of navigation and no $/kW table), and `energy.gov/energysaver` (404s, as recorded 2026-10-19). **An illustration failure class to expect on permit topics:** th"
+ },
+ {
+  "host": "energy.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "tariff PDF reads `unsupported`, the HTML plan pages `unreachable`), `energy.gov/energysaver/*` heat-pump pages, `neep.org` (the cold-climate product list), `efficiencymaine.com`, `energysag"
+ },
+ {
+  "host": "energysage.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": ", `neep.org` (the cold-climate product list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` \u2014 which is why the heat-pump-COP candidate was dropped at 7.3 (its load-beari"
+ },
+ {
+  "host": "energystar.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-23",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `energystar.gov/products/refrigerators` (7.6 KB \u2014 the whole program page as prose: \"you can save about $150 over the 12-y"
+ },
+ {
+  "host": "energystar.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-19",
+  "vertical": "",
+  "note": "fetchable \u2014 the working `energy.gov` rows are `/cmei/femp/\u2026` only), `energystar.gov/products/` guesses (`heat_pumps_air_source`, `air_conditioners`, `heating_cooling` all fail; only exact s"
+ },
+ {
+  "host": "enersys.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "cvelocity.com` (unreachable); and the equipment vendors `crown.com`, `enersys.com` and `fluxpower.com` fetched with **no numeric tokens at all** while `mobile-industrial-robots.com` carried"
+ },
+ {
+  "host": "enphase.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "page's own \"these rates do not include various surcharges\" caveat); `enphase.com/store/storage/iq-battery-5p` (product spec: \"5.0 kWh\" usable, \"DC round-trip efficiency: 96% AC round-trip e"
+ },
+ {
+  "host": "entrust.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "`, `security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread shell \u2014 so the ladder is cited from t"
+ },
+ {
+  "host": "epa.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `epa.gov/climate-hfcs-reduction/hfc-restrictions-sector` (the restrictions-by-sector table \u2014 \"Stationary residential and"
+ },
+ {
+  "host": "epa.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-09",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `epa.gov/climate-hfcs-reduction/hfc-restrictions-sector` (the restrictions-by-sector table \u2014 \"Stationary residential and"
+ },
+ {
+  "host": "epson.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "page plan)\") and the yearly plan's \"unused pages do not roll over\"); `epson.com` product pages (the ET-2800's \"Our Price: $239.99 After 21% savings: $189.99\" with the promo window in the sam"
+ },
+ {
+  "host": "epson.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "page plan)\") and the yearly plan's \"unused pages do not roll over\"); `epson.com` product pages (the ET-2800's \"Our Price: $239.99 After 21% savings: $189.99\" with the promo window in the sam"
+ },
+ {
+  "host": "escholarship.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "paper are HTTP-blocked \u2014 cite the arXiv equivalent or drop the row), `escholarship.org` (answers `fetched` with a **zero-length body**, so a preprint-repository page is not a source row), `r"
+ },
+ {
+  "host": "essent.us",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "remium-en-125/` all answer `unreachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com` and `bankrate.com` return nothing usable, so a PMI rate card cannot carry a row \u2014 the premium b"
+ },
+ {
+  "host": "fastmail.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "ct spec pages (power draw in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-u"
+ },
+ {
+  "host": "fcbco.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "xperience a box that's missing the one thing they were waiting on\"); `fcbco.com/blog/use-initial-order-fill-rate-to-measure-customer-service` (a consultancy's client numbers with no date any"
+ },
+ {
+  "host": "federalregister.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "fect the right to sue inside the year). Fails or cannot carry a row: `federalregister.gov` **API** (`/api/v1/documents.json\u2026`) fetches and is the cheapest way to locate a rule's citation, ef"
+ },
+ {
+  "host": "federalreserve.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-07",
+  "vertical": "supplier_risk_reshoring_decision",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `federalreserve.gov/releases/h10/current/` (the weekly foreign-exchange release \u2014 \"Release Date: November 2, 2026 \u2026 MEXIC"
+ },
+ {
+  "host": "fema.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "04 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths all fail the verifier. **Matcher traps on this beat:** a cell leading `1/16 to 1/8 inch \u2026` token"
+ },
+ {
+  "host": "fema.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "ow there). Fails or cannot carry a row: `readyforwildfire.org`, `usfa.fema.gov`, `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`, `tdi."
+ },
+ {
+  "host": "ferc.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "states the obligation by half. Unreachable or unusable on this beat: `ferc.gov` (every news/report path tried, unreachable), `emp.lbl.gov` (the interconnection-queue data, unreachable \u2014 so n"
+ },
+ {
+  "host": "fetchrobotics.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreachable), `nfpa.org/"
+ },
+ {
+  "host": "fhwa.dot.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-05",
+  "vertical": "supply_chain",
+  "note": "g) the 2\u20133 % portable-scale accuracy and the 5 % allowance cap); `ops.fhwa.dot.gov/freight/publications/brdg_frm_wghts/index.htm` (FHWA-HOP-19-028 \u2014 the formula's definitions, the worked che"
+ },
+ {
+  "host": "fincen.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "ecommuter paths (404 \u2014 the convenience-rule pages have moved), and **`fincen.gov`**: the regulator's FBAR page fetches but opens with a stack of disaster-extension notices dated `10/11/2024`"
+ },
+ {
+  "host": "finops.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": "y the *Short* context column, so it cannot carry a long-context row; `finops.org/framework/capabilities/rate-optimization/` fetches at 24 KB with the commitment-vacancy rule as prose (\"commi"
+ },
+ {
+  "host": "finops.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "enterprise_ai_finops",
+  "note": "s the measured wage anchor ($21.53 hourly, $44,770 annual, 2025) and `finops.org/framework/capabilities/unit-economics/` (31 KB) the independent definition \u2014 it names \"per case resolved\" amo"
+ },
+ {
+  "host": "finops.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "dollar amount is a JavaScript price list. Also unreachable this run: `finops.org` and `help.openai.com` articles."
+ },
+ {
+  "host": "fire.ca.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "the technical standard is PDF-only), `readyforwildfire.org`, guessed `fire.ca.gov` and `osfm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.g"
+ },
+ {
+  "host": "fire.ca.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "ot carry a row: `readyforwildfire.org`, `usfa.fema.gov`, `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.nai"
+ },
+ {
+  "host": "firesafelake.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "d\", soffited eaves preferred, and the chapter-7A 1/16-to-1/8 range); `firesafelake.org/vents` (6.7 KB \u2014 \"embers passing through 1/8 inch screening can still have enough energy to ignite fine"
+ },
+ {
+  "host": "firesafemarin.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "7.7 KB but carries **no figure at all**, so it cannot carry a row); `firesafemarin.org/harden-your-home/fire-resistant-vents` (21 KB \u2014 the whole mesh trade as text: net free areas \"81%\" qua"
+ },
+ {
+  "host": "firststreet.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "exas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststreet.org/risk-factor/fire-factor/` (HTTP 200 with a 260-character body), `moen.com` and `phyn.com` product pages"
+ },
+ {
+  "host": "floodsmart.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "racter body), `moen.com` and `phyn.com` product pages (unreachable), `floodsmart.gov`'s subpages (`/flood-insurance`, `/why-flood-insurance`, `/plan-ahead` unreachable while its root page fe"
+ },
+ {
+  "host": "floridabuilding.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "g`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path (they fetch a ~7.7 KB shell with no figur"
+ },
+ {
+  "host": "flsenate.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-19",
+  "vertical": "expat_cross_border_relocation",
+  "note": "the cap).** Carries the figure as plain text and fetches first try: `flsenate.gov/Laws/Statutes/<year>/<section>` (Florida Statutes \u00a7 193.155 \u2014 the cap sentence \"(a) Three percent of the as"
+ },
+ {
+  "host": "flsenate.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-06",
+  "vertical": "resilient_home_assets",
+  "note": "cher tolerates a year navigator but not a hyphenated section number: `flsenate.gov/Laws/Statutes/<year>/<section>` \u2014 the page's 1998\u20132027 session list is four-digit, so `(?<![\\d.])` excludes"
+ },
+ {
+  "host": "fluxpower.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "reachable); and the equipment vendors `crown.com`, `enersys.com` and `fluxpower.com` fetched with **no numeric tokens at all** while `mobile-industrial-robots.com` carried only a runtime \u2014 s"
+ },
+ {
+  "host": "fmc.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "bility clocks on money the carrier owes), so do not re-argue either; `fmc.gov/consumer-affairs/detention-and-demurrage/` fetches at 4.9 KB and carries a measured, dated market anchor nobody"
+ },
+ {
+  "host": "fmcsa.dot.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "number, but the guardrail is on the host: `cbp.gov` (ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable"
+ },
+ {
+  "host": "ftb.ca.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "ped this exact candidate at 7.5 on \"both `california.public.law` and `ftb.ca.gov` answered unreachable\". Probe both forms before inheriting a drop. Unreachable to the verifier on this beat:"
+ },
+ {
+  "host": "ftb.ca.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "ped this exact candidate at 7.5 on \"both `california.public.law` and `ftb.ca.gov` answered unreachable\". Probe both forms before inheriting a drop. Unreachable to the verifier on this beat:"
+ },
+ {
+  "host": "ftc.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-22",
+  "vertical": "home_ops_execution",
+  "note": "sentence, so they are one row, not two. Unreachable to the verifier: `ftc.gov` (both the consumer Cooling-Off page and the business-guidance page), `mass.gov` info pages, and guessed CSLB co"
+ },
+ {
+  "host": "fueleconomy.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "outdoor_power_equipment",
+  "note": "15 years in moderate climates (8 to 12 years in extreme climates)\"); `fueleconomy.gov/feg/coldweather.shtml` (EV \"fuel economy can drop roughly 39% \u2026 and range can drop by 41%\", a second DOE"
+ },
+ {
+  "host": "geekplus.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreach"
+ },
+ {
+  "host": "github.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "at row leads on the `90 days` sentence it is measured from. (3) *The `github.com/.../blob/...` render of the same BR file is a 2.5 KB stub* while the raw path fetches the whole document \u2014 ci"
+ },
+ {
+  "host": "github.io",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github.io` report PDF are `unsupported`). **A PDF-only lab result cannot carry a row, and the fetchable summary can cont"
+ },
+ {
+  "host": "globalsign.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": ".org/docs/lifetime-migration/`, `security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread shell \u2014"
+ },
+ {
+  "host": "google.github.io",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "desk \u2014 grep the page for a dollar figure before planning on it); and `google.github.io/adk-docs/agents/` (9.4 KB with 23 digits total). A documented default is only a row when the number is"
+ },
+ {
+  "host": "govinfo.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `govinfo.gov/content/pkg/USCODE-2023-title12/html/USCODE-2023-title12-chap49-sec4901.htm` and `\u2026-sec4902.htm` (the Homeow"
+ },
+ {
+  "host": "govinfo.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": ". 19, 2026\" \u2014 a housekeeping change that dates the rule's currency); `govinfo.gov` U.S. Code HTML pages (`USCODE-<year>-title49/html/\u2026-sec14706.htm` and `\u2026-sec11706.htm` both retrieve at 6\u20131"
+ },
+ {
+  "host": "greenbacktaxservices.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-05",
+  "vertical": "expat_cross_border_relocation",
+  "note": "25 37%\"); `irs.gov/taxtopics/tc409` (the 20% capital-gain rate); and `greenbacktaxservices.com/knowledge-center/pfic/` (29 KB, a practitioner page \u2014 the only place found stating the election"
+ },
+ {
+  "host": "greenhomeinstitute.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "decision.** Carries the figure as plain text and fetches first try: `greenhomeinstitute.org` (a transcribed webinar article \u2014 the 80 % load-calculation threshold, the ~$8K-$10K installed sm"
+ },
+ {
+  "host": "greenworkstools.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "outdoor_power_equipment",
+  "note": "659, with the 4Ah at $279 and the 8Ah \"ARC Lithium MAX\" at $599) and `greenworkstools.com/products/<handle>` prints 60V pack prices beside charger prices ($49.99 3A, $79.99 6A, $179.99 dual-"
+ },
+ {
+  "host": "handbrake.fr",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-20",
+  "vertical": "workstation_compute_economics",
+  "note": "sing policy's \"limited to 8 per system\" on non-qualified cards); and `handbrake.fr/docs/en/latest/technical/performance.html` (an independent 1080p encoder comparison with fps *and* realtime"
+ },
+ {
+  "host": "health.ny.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "home_diagnostics_tech",
+  "note": "e 2\u20134 pCi/L \"consider fixing\" band, with the becquerel equivalents), `health.ny.gov/environmental/radon/` (the $12.25 state kit, the 24-hour sealed-house instruction, the five-year / two-yea"
+ },
+ {
+  "host": "health.state.mn.us",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "home_diagnostics_tech",
+  "note": "nt, the 12-hour precondition and the 30-day / 24-hour retest clock), `health.state.mn.us/.../radon/index.html` and `\u2026/radon/mitigation.html` (the 4 pCi/L action level restated, the 2\u20134 band,"
+ },
+ {
+  "host": "heattrak.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-24",
+  "vertical": "outdoor_power_equipment",
+  "note": "but no price anywhere, the configuration table reads \"Coming Soon\"); `heattrak.com` (the driveway-mat page's Sizing-and-Amps block is a goldmine: 24\"\u00d710' = 5.8 A at 120 V, 24\"\u00d720' = 11.7 A,"
+ },
+ {
+  "host": "help.openai.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "a JavaScript price list. Also unreachable this run: `finops.org` and `help.openai.com` articles."
+ },
+ {
+  "host": "help.ui.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-27",
+  "vertical": "smart_home_telemetry",
+  "note": "note by design, never a hold) \u2014 expect it and say so in the run log. `help.ui.com`'s UniFi VLAN articles are unreachable to the verifier, so a bare IoT-VLAN privacy piece has no numeric prim"
+ },
+ {
+  "host": "homeguide.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-19",
+  "vertical": "",
+  "note": "t slugs such as `products/air_source_heat_pumps` fetch), `angi.com`, `homeguide.com`, and `nachi.org/inspecting-hvac-systems.htm`. **A colliding reference table can still be rescued by re-ph"
+ },
+ {
+  "host": "hp.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `hp.com/us-en/printers/instant-ink.html` (18.5 KB \u2014 the whole market decision on one page: five monthly tiers with caps a"
+ },
+ {
+  "host": "hp.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `hp.com/us-en/printers/instant-ink.html` (18.5 KB \u2014 the whole market decision on one page: five monthly tiers with caps a"
+ },
+ {
+  "host": "hsh.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "-a-mortgage-insurance-premium-en-125/` all answer `unreachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com` and `bankrate.com` return nothing usable, so a PMI rate card cannot carr"
+ },
+ {
+  "host": "husqvarna.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-07",
+  "vertical": "yard_robotics",
+  "note": "literature. Carries the figure as plain text and fetches first try: `husqvarna.com/us/discover/epos` (13.6 KB \u2014 \"Reference station must have clear 135-degree view of sky in all upper direct"
+ },
+ {
+  "host": "iata.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "t: `cbp.gov` (ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable to the verifier, `uscode.house.gov/view"
+ },
+ {
+  "host": "ibhs.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "obed rather than inherited: the wildfire Zone 0 spec **does** fetch (`ibhs.org/wildfire/vegetationinzone0` \u2014 \"17 controlled experiments\", the well-watered-plants finding, \"the moisture conte"
+ },
+ {
+  "host": "ideas.repec.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "sentence that puts the constraint in process rather than software); `ideas.repec.org` (publisher abstract records for paid journals \u2014 D&R's \"nearly 370,000 inventory records from 37 stores,"
+ },
+ {
+  "host": "ideas.repec.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "summary and detail blocks differ as two sources, not one. Same run: `ideas.repec.org` and `pure.eur.nl` both carry the same EJOR abstract (Zou, Xu, Gong & De Koster 2018 \u2014 \"ignoring the bat"
+ },
+ {
+  "host": "iea.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "gpu_hardware",
+  "note": "no PUE or density figure). Unreachable to the verifier on this beat: `iea.org` (every `/reports/energy-and-ai` path), `supermicro.com` liquid-cooling pages, `datacenterknowledge.com`, and `n"
+ },
+ {
+  "host": "ifixit.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-06",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "and AppleCare's \"no extra charge if the capacity drops below 80%\"); `ifixit.com/Guide/<slug>/<id>` (each guide's introduction states the rating *with a duration*: the iPhone 12 guide reads"
+ },
+ {
+  "host": "iga.in.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "540NR booklet, `unsupported`), `cga.ct.gov`, `mass.gov` info pages, `iga.in.gov` (a 24-char stub), `revisor.mn.gov` (fetches, but the 290.01 body carries no 183-day text), `medicare.gov`, `"
+ },
+ {
+  "host": "iii.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "g`, guessed `fire.ca.gov` and `osfm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths all fail the verifier. **Matcher traps"
+ },
+ {
+  "host": "iii.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "to cite an ISO/AAIS provision whose own text is a licensed paywall); `iii.org/fact-statistic/...` (claim frequency and severity tables flatten to `5.33 \u2026 20,062`, the scale an ordinary claim"
+ },
+ {
+  "host": "iii.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "special-limits endorsement: $1,500\u2192$5,000 jewelry, $200\u2192$500 money); `iii.org/fact-statistic/facts-statistics-homeowners-and-renters-insurance` (2023 severity $20,062 at 5.33 per 100 house-y"
+ },
+ {
+  "host": "inflowinventory.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "om` resource articles (403 to the verifier), guessed `lokad.com` and `inflowinventory.com` safety-stock slugs (404), and `itl.nist.gov`'s normal-distribution page (fetches at 8.5 KB but prin"
+ },
+ {
+  "host": "info.ornl.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "spberrypi.com/products/...`, `sense.com`, and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github.io` report PDF are `unsupported`). **A PDF-only lab result cannot carry"
+ },
+ {
+  "host": "infomineo.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "y know are unreliable). Fetches but cannot carry an independent row: `infomineo.com` (the demand-sensing-vs-forecasting page states the test \u2014 every layer \"should have to prove it beats the"
+ },
+ {
+  "host": "insurance.ca.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "ergreen).** Carries the figure as plain text and fetches every time: `insurance.ca.gov/01-consumers/200-wrr/Safer-from-Wildfires.cfm` (11\u201312 KB \u2014 the discount list's ten measures as prose: \""
+ },
+ {
+  "host": "insurance.ca.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path (they fetch a ~7.7 KB shell with no figures) \u2014 so an ordinance-or-law brief cannot source i"
+ },
+ {
+  "host": "insurance.nh.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "ces. Unreachable or unusable here: `mass.gov` (403 to the verifier), `insurance.nh.gov` (403), `content.naic.org` article pages (403) and its consumer guide (PDF, no text extractor), `insura"
+ },
+ {
+  "host": "insurance.oregon.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "no text extractor), `insurance.wa.gov` / `mn.gov` guide paths (404), `insurance.oregon.gov` (TLS failure)."
+ },
+ {
+  "host": "insurance.wa.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "article pages (403) and its consumer guide (PDF, no text extractor), `insurance.wa.gov` / `mn.gov` guide paths (404), `insurance.oregon.gov` (TLS failure)."
+ },
+ {
+  "host": "insurance.wa.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": ", `tdi.texas.gov/consumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path ("
+ },
+ {
+  "host": "insuranceresourcesllc.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "com/answers/personal-property-coverage` (the 50 percent convention); `insuranceresourcesllc.com/11-homeowners-limitations` (the full special-limits list plus the increased-special-limits end"
+ },
+ {
+  "host": "intel.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "-us/products/workstations/professional-desktop-gpus/<part>/`. Fails: `intel.com` spec pages (403), guessed `amd.com` product URLs (404 \u2014 resolve the real slug first), `phoronix.com` review p"
+ },
+ {
+  "host": "interactivebrokers.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-05",
+  "vertical": "expat_cross_border_relocation",
+  "note": "com`, `esma.europa.eu`, `finance.ec.europa.eu`, `centralbank.ie` and `interactivebrokers.com` all answered `unreachable`, so the EU packaged-retail-product (PRIIPs) leg that forces a Europea"
+ },
+ {
+  "host": "intercom.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "enterprise_ai_finops",
+  "note": "ricing pages, and there the page shape matters more than the number: `intercom.com/pricing` (plan cards plus the FAQ that *defines* the unit \u2014 \"An outcome is counted when: A customer confirm"
+ },
+ {
+  "host": "interlakemecalux.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "er on this beat: `mir-robots.com/products/\u2026`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) \u2014 so a facility-readiness a"
+ },
+ {
+  "host": "inventoros.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `inventoros.com/blog/order-fill-rate` (the compounding ladder as one run \u2014 \"1-line order: 0.98 = 98.0% \u2026 5-line order: 0."
+ },
+ {
+  "host": "investor.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-23",
+  "vertical": "concentrated_equity_portfolio_capital",
+  "note": "holding period* example, so no p550 row can lead on that token); and `investor.gov/introduction-investing/investing-basics/glossary/wash-sales` (5 KB, the regulator's one-sentence statement"
+ },
+ {
+  "host": "irs.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-05",
+  "vertical": "expat_cross_border_relocation",
+  "note": "subpart before assuming govinfo is dead.** Also carrying the figure: `irs.gov/instructions/i8621` (96.7 KB \u2014 the definition, the \"entire amount of gain from a disposition \u2026 is treated as an"
+ },
+ {
+  "host": "irs.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-06",
+  "vertical": "career_velocity_equity_engineering",
+  "note": "\" although its own facts are 2005 \u2014 never cite that sentence's year. `irs.gov/publications/p525` remains the cheapest source for the AMT adjustment and the \"spread is ordinary income if the"
+ },
+ {
+  "host": "irs.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "projected capex and technology budget). Fails or cannot carry a row: `irs.gov` and `ssa.gov` (both unreachable to the verifier, so no \u00a7179 expensing, bonus-depreciation or payroll-tax row ca"
+ },
+ {
+  "host": "itl.nist.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "`lokad.com` and `inflowinventory.com` safety-stock slugs (404), and `itl.nist.gov`'s normal-distribution page (fetches at 8.5 KB but prints no z-value a service-level row could lead on) \u2014 s"
+ },
+ {
+  "host": "justetf.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-05",
+  "vertical": "expat_cross_border_relocation",
+  "note": "er than given its own row. Unreachable to the verifier on this beat: `justetf.com`, `esma.europa.eu`, `finance.ec.europa.eu`, `centralbank.ie` and `interactivebrokers.com` all answered `unre"
+ },
+ {
+  "host": "keyfactor.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "ple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread shell \u2014 so the ladder is cited from the three hosts"
+ },
+ {
+  "host": "kingston.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "ry a row: `crucial.com` product pages (HTTP 403 \"Request Rejected\"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX system guides (`unreachable`), `semiconductor.samsung.com` ("
+ },
+ {
+  "host": "kress.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "yard_robotics",
+  "note": "as usual (\"Median wages (2025) $18.82 hourly, $39,150 annual\"), and `kress.com/en-us/robotic-mowers` prints list and promotional prices in one block (\"Kress RTK\u207f \u00bc-acre robotic lawn mower K"
+ },
+ {
+  "host": "labor.illinois.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "fetch is not the code); `lni.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc.texas.gov` (unreachable, so a l"
+ },
+ {
+  "host": "labor.maryland.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "home_ops_execution",
+  "note": "igning\" \u2014 the spelled-out \"one third\" makes a clean digit-free row); `labor.maryland.gov/license/mhic/mhiccontracts.shtml` (the Door-to-Door notice's \"fifth business day \u2026 or \u2026 seventh day i"
+ },
+ {
+  "host": "labor.vermont.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": ", `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc.texas.gov` (unreachable, so a low-floor state cannot be cited from its own agency"
+ },
+ {
+  "host": "law.cornell.edu",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": ", 2026\", dated by the `88 FR 73098` citation a row can lead on); and `law.cornell.edu/uscode/text/42/7675` (the phasedown table itself: 90 / 60 / 30 / 20 / 15 percent of the production and c"
+ },
+ {
+  "host": "law.cornell.edu",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-06",
+  "vertical": "career_velocity_equity_engineering",
+  "note": "at rides on one statute and one regulation and both fetch first try: `law.cornell.edu/uscode/text/26/422` (19 KB \u2014 \u00a7 422(d)(1)'s \"exercisable for the 1st time \u2026 during any calendar year \u2026 ex"
+ },
+ {
+  "host": "law.justia.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "the verifier on this beat: `nysenate.gov/legislation/laws/TAX/605`, `law.justia.com` NY statutes, `tax.ny.gov` (both an HTML page and a PDF), `ftb.ca.gov` (and its 540NR booklet, `unsupport"
+ },
+ {
+  "host": "law.lis.virginia.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "e than 30 days\", and (B)'s \"more than 200 days\" statutory resident); `law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-302/` (12 KB \u2014 \"for an aggregate of more than 183 days \u2026 main"
+ },
+ {
+  "host": "lawnlove.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "yard_robotics",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `lawnlove.com/blog/lawn-mowing-cost/` \u2014 a mowing marketplace's own cost guide (bylined \"Updated: October 26, 2026\"), and"
+ },
+ {
+  "host": "le.utah.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "aw.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le.utah.gov` per-section guesses (404), `cga.ct.gov` (SSL certificate failure in the verifier's fetch path), `nolo.com`"
+ },
+ {
+  "host": "learn.microsoft.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-planning-performance` (**14 KB \u2014 and the `403`"
+ },
+ {
+  "host": "leg.state.nv.us",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "Public Procurement Act, so it binds public bodies, not a homeowner); `leg.state.nv.us` NRS-624.html (the private-owner prompt-payment and 5 percent retention rules are genuinely in there, bu"
+ },
+ {
+  "host": "leginfo.legislature.ca.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "rnia.public.law` (**a fetchable mirror of the California codes where `leginfo.legislature.ca.gov` answers HTTP 403 to the verifier** \u2014 \u00a7 8811 prints the 5 percent private-works retention cap"
+ },
+ {
+  "host": "leginfo.legislature.ca.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "rnia.public.law` (**a fetchable mirror of the California codes where `leginfo.legislature.ca.gov` answers HTTP 403 to the verifier** \u2014 \u00a7 8811 prints the 5 percent private-works retention cap"
+ },
+ {
+  "host": "legislature.mi.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-19",
+  "vertical": "expat_cross_border_relocation",
+  "note": "as of the first January 1 after they were substantially completed); `legislature.mi.gov/Laws/MCL?objectName=mcl-<section>` (MCL 211.27a(2)(a) \u2014 \"multiplied by the lesser of 1.05 or the infl"
+ },
+ {
+  "host": "letsencrypt.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "ys, and \"a difference of 86,400 seconds shall be equal to one day\"); `letsencrypt.org/2025/12/02/from-90-to-45` (6.6 KB \u2014 \"We currently issue certificates valid for 90 days, which will be cu"
+ },
+ {
+  "host": "letsencrypt.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "ys, and \"a difference of 86,400 seconds shall be equal to one day\"); `letsencrypt.org/2025/12/02/from-90-to-45` (6.6 KB \u2014 \"We currently issue certificates valid for 90 days, which will be cu"
+ },
+ {
+  "host": "lexmark.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "nd category paths (unreachable), `brother-usa.com`, `usa.canon.com`, `lexmark.com`, and `epson.com/For-Home/Ink/Ink-Bottles/c/h1` (fetches, but it is a filter shell whose only numbers are pr"
+ },
+ {
+  "host": "lni.wa.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "ide on the statute \u2014 an aggregator that does fetch is not the code); `lni.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unrea"
+ },
+ {
+  "host": "locusrobotics.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "\u2014 the survey is the cheapest measured anchor for what buyers rank); `locusrobotics.com/blog/\u2026` (a vendor ratio page: \"a single associate working alongside four Locus robots \u2026 300-400 units"
+ },
+ {
+  "host": "lokad.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "d*, since the page is a secondary citation, never the study itself); `lokad.com` (a supplier reference page: the Gilliland 2010 illustration \"11 out of 13 weeks (85% fail rate), averaging 13"
+ },
+ {
+  "host": "lokad.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "eat: `netsuite.com` resource articles (403 to the verifier), guessed `lokad.com` and `inflowinventory.com` safety-stock slugs (404), and `itl.nist.gov`'s normal-distribution page (fetches at"
+ },
+ {
+  "host": "lung.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "home_diagnostics_tech",
+  "note": "tigation rates (less than $1,000) \u2026 often too good to be true\"), and `lung.org/clean-air/indoor-air/indoor-air-pollutants/radon` (two-to-seven-day short test, \"lowest level regularly used\","
+ },
+ {
+  "host": "malegislature.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "home_ops_execution",
+  "note": "whose only citable token is unusable \u2014 `1/3` tokenises to 1 and 3); `malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter142A/Section2` (\"in an amount in excess of one thousand dollars"
+ },
+ {
+  "host": "malegislature.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 \u00a7 1 fetches but spells its count as \"one hundred eighty-three days\", which the matcher canno"
+ },
+ {
+  "host": "mammotion.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "yard_robotics",
+  "note": "ion/EPOS/buying-guide path (404), `navimow.segway.com/pages/faq` and `mammotion.com/pages/support` (unreachable) \u2014 so an installation audit (gate width, dock clearance, power run) cannot be"
+ },
+ {
+  "host": "mass.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "le must name which mechanic it prices. Unreachable or unusable here: `mass.gov` (403 to the verifier), `insurance.nh.gov` (403), `content.naic.org` article pages (403) and its consumer guide"
+ },
+ {
+  "host": "mass.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": ", `ftb.ca.gov` (and its 540NR booklet, `unsupported`), `cga.ct.gov`, `mass.gov` info pages, `iga.in.gov` (a 24-char stub), `revisor.mn.gov` (fetches, but the 290.01 body carries no 183-day t"
+ },
+ {
+  "host": "mdpi.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "an be a row), `docs.frappe.io`, `docs.oracle.com` (1.5 KB stub), and `mdpi.com` (fetched with a zero-length body)."
+ },
+ {
+  "host": "mecalux.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "s.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreachable), `nfpa.org/codes-and-standards` ("
+ },
+ {
+  "host": "medicare.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "isor.mn.gov` (fetches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 \u00a7 1 fetches but spells its count as \"one hundred eight"
+ },
+ {
+  "host": "mgic.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "-insurance-premium-en-125/` all answer `unreachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com` and `bankrate.com` return nothing usable, so a PMI rate card cannot carry a row \u2014 t"
+ },
+ {
+  "host": "mhi.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "\u2026`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) \u2014 so a facility-readiness angle (sprinkler clearance, charger circuit"
+ },
+ {
+  "host": "miamidade.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path (they fetch a ~7.7 KB shell with no figures) \u2014 so an ordinance-o"
+ },
+ {
+  "host": "mir-robots.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "blog guesses (404 shell). Unreachable to the verifier on this beat: `mir-robots.com/products/\u2026`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org`"
+ },
+ {
+  "host": "mlcommons.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `mlcommons.org/benchmarks/storage/` (31 KB, and the single best anchor this desk has found for an I/O-sizing beat \u2014 \"Keep"
+ },
+ {
+  "host": "mmh.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "t lift *in the abstract*, so the abs page is a legitimate row here); `mmh.com/article/<slug>` (trade article dated 9 May 2017 \u2014 \"from 75% or 80% to more than 99% when cycle counting is well"
+ },
+ {
+  "host": "mn.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "nd its consumer guide (PDF, no text extractor), `insurance.wa.gov` / `mn.gov` guide paths (404), `insurance.oregon.gov` (TLS failure)."
+ },
+ {
+  "host": "mobile-industrial-robots.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "ead the detail block before a duty-cycle row (learned 2026-10-28).** `mobile-industrial-robots.com` fetches (4 KB per model page) and its detail block carries what a fleet-sizing row needs:"
+ },
+ {
+  "host": "moen.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": ".org/risk-factor/fire-factor/` (HTTP 200 with a 260-character body), `moen.com` and `phyn.com` product pages (unreachable), `floodsmart.gov`'s subpages (`/flood-insurance`, `/why-flood-insur"
+ },
+ {
+  "host": "myfloridacfo.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-06",
+  "vertical": "resilient_home_assets",
+  "note": "tatistics-water-damage` and `iii.org/article/\u2026`, `content.naic.org`, `myfloridacfo.com/division/consumers/\u2026`, `law.justia.com`, and `adjustersinternational.com` \u2014 which is why an ordinance-o"
+ },
+ {
+  "host": "nachi.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-19",
+  "vertical": "",
+  "note": "ope brief.** Carries the figure as plain text and fetches first try: `nachi.org/hvac.htm` \u2014 the inspection *article*, 29 KB, not the life-expectancy chart \u2014 which states \"duct leakage increa"
+ },
+ {
+  "host": "nachi.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-19",
+  "vertical": "",
+  "note": "ope brief.** Carries the figure as plain text and fetches first try: `nachi.org/hvac.htm` \u2014 the inspection *article*, 29 KB, not the life-expectancy chart \u2014 which states \"duct leakage increa"
+ },
+ {
+  "host": "nationalgypsum.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "om`'s Quiet Zone page fetches as navigation only, `rockwool.com` and `nationalgypsum.com` are unreachable, and `nrc-cnrc.gc.ca/eng/solutions/advisory/acoustics.html` redirects to the NRC hom"
+ },
+ {
+  "host": "navimow.segway.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "yard_robotics",
+  "note": "y guessed `husqvarna.com` installation/EPOS/buying-guide path (404), `navimow.segway.com/pages/faq` and `mammotion.com/pages/support` (unreachable) \u2014 so an installation audit (gate width, do"
+ },
+ {
+  "host": "neep.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "an pages `unreachable`), `energy.gov/energysaver/*` heat-pump pages, `neep.org` (the cold-climate product list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` \u2014 which is"
+ },
+ {
+  "host": "nerdwallet.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "/ 20 percent equity on a refinance, and the payment mechanics); and `nerdwallet.com/article/mortgages/pmi-private-mortgage-insurance` (the price anchor as a **labelled secondary** row: \"The"
+ },
+ {
+  "host": "netstock.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-02",
+  "vertical": "meio_working_capital_tco",
+  "note": "tween replenishments is 1 day; hence, the lead time is also 1 day\"); `netstock.com`'s safety-stock guide (the review-period model SS = z\u00b7\u03c3\u00b7\u221a(T + L), a worked `1.65 \u00d7 25 \u00d7 \u221a(7 + 14) \u2248 165 uni"
+ },
+ {
+  "host": "netsuite.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "sales_order_service_level_otif",
+  "note": "n an order-level formula). Fails or cannot carry a row on this beat: `netsuite.com` resource articles (403 to the verifier), guessed `lokad.com` and `inflowinventory.com` safety-stock slugs"
+ },
+ {
+  "host": "nfpa.org",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "ages (nav only; a guessed `mecalux.com/blog/<slug>` is unreachable), `nfpa.org/codes-and-standards` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog gue"
+ },
+ {
+  "host": "nfpa.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "urance`, `/plan-ahead` unreachable while its root page fetches), and `nfpa.org` (a 35-character body). Two costs worth not repeating: probe every candidate through `citation_hub_dossier.fetc"
+ },
+ {
+  "host": "nist.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "gov` and `osfm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths all fail the verifier. **Matcher traps on this beat:** a cel"
+ },
+ {
+  "host": "njm.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "pubs/consumer/cb003.html`, `tdi.texas.gov/consumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insur"
+ },
+ {
+  "host": "nmfta.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "(ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable to the verifier, `uscode.house.gov/view.xhtml` rend"
+ },
+ {
+  "host": "nolo.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "`cga.ct.gov` (SSL certificate failure in the verifier's fetch path), `nolo.com` (403), `mass.gov` (403), `statutes.capitol.texas.gov/Docs/PR/htm/...` (a 1.3 KB navigation stub, not the chapt"
+ },
+ {
+  "host": "nrc-cnrc.gc.ca",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "n only, `rockwool.com` and `nationalgypsum.com` are unreachable, and `nrc-cnrc.gc.ca/eng/solutions/advisory/acoustics.html` redirects to the NRC home page), so a partition-STC article cannot"
+ },
+ {
+  "host": "nrel.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "cold-climate product list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` \u2014 which is why the heat-pump-COP candidate was dropped at 7.3 (its load-bearing figure is tempe"
+ },
+ {
+  "host": "nvd.nist.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "pberrypi.com` documentation (403), `reddit.com` wikis (403 Blocked), `nvd.nist.gov` and `cve.org` dashboards (client-rendered, 10\u201342 character bodies), and `analytics.home-assistant.io` (HTT"
+ },
+ {
+  "host": "nvidia.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "gpu_hardware",
+  "note": "laim is the abstract's own); NVIDIA's **data-center** product pages (`nvidia.com/en-us/data-center/h100/` prints \"Max Thermal Design Power (TDP) Up to 700W (configurable) 350-400W (configura"
+ },
+ {
+  "host": "nvidia.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "gpu_hardware",
+  "note": "laim is the abstract's own); NVIDIA's **data-center** product pages (`nvidia.com/en-us/data-center/h100/` prints \"Max Thermal Design Power (TDP) Up to 700W (configurable) 350-400W (configura"
+ },
+ {
+  "host": "ny.dfs.ny.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststreet.org/risk-factor/"
+ },
+ {
+  "host": "nysenate.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "before inheriting a drop. Unreachable to the verifier on this beat: `nysenate.gov/legislation/laws/TAX/605`, `law.justia.com` NY statutes, `tax.ny.gov` (both an HTML page and a PDF), `ftb.c"
+ },
+ {
+  "host": "odoo.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "\"every month or quarter\"). Fetches but cannot carry a digit-led row: `odoo.com/documentation/20.0/\u2026/replenishment/reordering_rules.html` (33 KB with \"The scheduler is set to run once a day,"
+ },
+ {
+  "host": "oecd.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "st as-of anchor for an indexed figure). Fails or cannot carry a row: `oecd.org`, `ssa.gov` and `ato.gov.au` (all HTTP 403 to the verifier), `canada.ca` (unreachable), guessed `tax.ny.gov` te"
+ },
+ {
+  "host": "onetonline.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-02",
+  "vertical": "meio_working_capital_tco",
+  "note": "at a fixed 10-day lead against 506 once \u03c3_L = 3 days enters it); and `onetonline.org/link/summary/43-5071.00` (shipping, receiving and inventory clerks, \"Median wages (2025) $21.76 hourly, $"
+ },
+ {
+  "host": "onetonline.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "enterprise_ai_finops",
+  "note": "s\" \u2014 so both prices ride in prose under a row that already verifies. `onetonline.org/link/summary/43-4051.00` supplies the measured wage anchor ($21.53 hourly, $44,770 annual, 2025) and `fin"
+ },
+ {
+  "host": "openai.github.io",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "de its best answer. Default is 20\"). Fetches but cannot carry a row: `openai.github.io` (the SDK reference shows `max_turns: int | None = DEFAULT_MAX_TURNS` and never the constant's value, s"
+ },
+ {
+  "host": "ops.fhwa.dot.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-05",
+  "vertical": "supply_chain",
+  "note": "e, (g) the 2\u20133 % portable-scale accuracy and the 5 % allowance cap); `ops.fhwa.dot.gov/freight/publications/brdg_frm_wghts/index.htm` (FHWA-HOP-19-028 \u2014 the formula's definitions, the worked"
+ },
+ {
+  "host": "oregon.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "job titles, which is the licence to gloss the occupation in prose); `oregon.gov/boli/workers/pages/minimum-wage.aspx` (a state floor published as a dated forward window \u2014 the three tiers fo"
+ },
+ {
+  "host": "oregon.public.law",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": ") the anti-avoidance clause, and its own \"Verified: Nov. 11, 2026\"); `oregon.public.law/statutes/ors_316.027` (17.9 KB \u2014 the three-part conjuctive escape for a domiciliary, \"not more than 30"
+ },
+ {
+  "host": "oregon.public.law",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "home_ops_execution",
+  "note": "the single best warrant this desk has found for a permitting piece); `oregon.public.law` (ORS 701.010 at 17 KB \u2014 the three-existing-structures limit in (6) **and** the clause that contradict"
+ },
+ {
+  "host": "osfm.fire.ca.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "dard is PDF-only), `readyforwildfire.org`, guessed `fire.ca.gov` and `osfm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths"
+ },
+ {
+  "host": "osfm.fire.ca.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "`readyforwildfire.org`, `usfa.fema.gov`, `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.naic.org` and `cor"
+ },
+ {
+  "host": "osha.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "rinkler clearance, charger circuits, floor flatness) cannot get past `osha.gov`/`ecfr.gov` code rows, and was dropped at 7.4 rather than written on general-industry statute. **A robot vendor"
+ },
+ {
+  "host": "otexts.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "des in prose and Sources). Unreachable to the verifier on this beat: `otexts.com/fpp3/*` (the free Hyndman textbook, every path `unreachable`, so no MAPE/MASE definition can be a row), `docs"
+ },
+ {
+  "host": "pgbouncer.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "enterprise_tech_leadership",
+  "note": "ss the instance\", plus `max_client_connections`' 5,000 default); and `pgbouncer.org/config.html` (`default_pool_size` \"per user/database pair\" = 100, and `pool_mode` session as the default)."
+ },
+ {
+  "host": "pge.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "ss, as the unit. **Unreachable to the verifier on this beat:** every `pge.com` and `sce.com` rate page tried (a tariff PDF reads `unsupported`, the HTML plan pages `unreachable`), `energy.go"
+ },
+ {
+  "host": "phoronix.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "guessed `amd.com` product URLs (404 \u2014 resolve the real slug first), `phoronix.com` review pages (client-rendered, ~2.3 KB bodies), `ccache.dev/manual` and `bazel.build` (they fetch, but the"
+ },
+ {
+  "host": "phyn.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "r/fire-factor/` (HTTP 200 with a 260-character body), `moen.com` and `phyn.com` product pages (unreachable), `floodsmart.gov`'s subpages (`/flood-insurance`, `/why-flood-insurance`, `/plan-a"
+ },
+ {
+  "host": "platform.openai.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "",
+  "note": "figure, never the headline price that repeats in every model's row. `platform.openai.com/docs/pricing` fetches (18 KB) but renders only the *Short* context column, so it cannot carry a long"
+ },
+ {
+  "host": "pmc.ncbi.nlm.nih.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-07",
+  "vertical": "yard_robotics",
+  "note": "e)\", RS5 \"range up to 500 m\"; three rows can ride on this one page); `pmc.ncbi.nlm.nih.gov` (**a working full-text publisher mirror** \u2014 PMC11479190 fetches at 59 KB with the abstract's resul"
+ },
+ {
+  "host": "pnnl.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "oduct list), `efficiencymaine.com`, `energysage.com`, `nrel.gov` and `pnnl.gov` \u2014 which is why the heat-pump-COP candidate was dropped at 7.3 (its load-bearing figure is temperature-specific"
+ },
+ {
+  "host": "polb.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "nsportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable to the verifier, `uscode.house.gov/view.xhtml` renders a 1.1 KB stub with no figures, `gov"
+ },
+ {
+  "host": "portoflosangeles.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": ", `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable to the verifier, `uscode.house.gov/view.xhtml` renders a 1.1 KB stu"
+ },
+ {
+  "host": "postgresql.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "enterprise_tech_leadership",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `postgresql.org/docs/current/runtime-config-connection.html` (\"The default is typically 100 connections\") and `\u2026/runtime-"
+ },
+ {
+  "host": "powerplusparts.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-31",
+  "vertical": "outdoor_power_equipment",
+  "note": "ce hosts for a platform-economics version of this beat do retrieve \u2014 `powerplusparts.com/collections/ego-batteries` prints the EGO ladder as one run (2.5Ah $159 \u2192 12Ah $659, with the 4Ah at"
+ },
+ {
+  "host": "prod.org.br",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "et` (unreachable), `scielo.br` (unreachable, though the same paper's `prod.org.br` record fetches with abstract only and no figures), `rfid.auburn.edu` (a 2.9 KB navigation shell whose only"
+ },
+ {
+  "host": "progressive.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "e policies limit what they'll pay for things like jewelry and art\"); `progressive.com/answers/personal-property-coverage` (the 50 percent convention); `insuranceresourcesllc.com/11-homeowner"
+ },
+ {
+  "host": "pugetsystems.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "ack brief.** Carries the figure as plain text and fetches first try: `pugetsystems.com` (the measured-benchmark anchor `bls.gov`'s 403 denies \u2014 lab articles print compile times in prose *and"
+ },
+ {
+  "host": "radian.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "/` all answer `unreachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com` and `bankrate.com` return nothing usable, so a PMI rate card cannot carry a row \u2014 the premium band has to ri"
+ },
+ {
+  "host": "raspberrypi.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "o-length body**, so a preprint-repository page is not a source row), `raspberrypi.com/products/...`, `sense.com`, and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github"
+ },
+ {
+  "host": "raw.githubusercontent.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `raw.githubusercontent.com/cabforum/servercert/main/docs/BR.md` (325 KB \u2014 the CA/Browser Forum Baseline Requirements them"
+ },
+ {
+  "host": "raw.githubusercontent.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "MAX_TURNS` and never the constant's value, so no figure to lead on \u2014 `raw.githubusercontent.com/<org>/<repo>/main/<path>` does retrieve the source file when the rendered docs omit it); `docs"
+ },
+ {
+  "host": "raw.githubusercontent.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "workstation_compute_economics",
+  "note": "oud.google.com/transcoder-api/pricing` answers a 153-character 404), `raw.githubusercontent.com`, and Puget article paths guessed without resolving the slug. **The earlier \"the cloud-render"
+ },
+ {
+  "host": "readyforwildfire.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "ry `wildfireprepared.org` path (the technical standard is PDF-only), `readyforwildfire.org`, guessed `fire.ca.gov` and `osfm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`,"
+ },
+ {
+  "host": "readyforwildfire.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "sumer page is not a citable row there). Fails or cannot carry a row: `readyforwildfire.org`, `usfa.fema.gov`, `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado"
+ },
+ {
+  "host": "reddit.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "n a secondary writeup. Fails: `raspberrypi.com` documentation (403), `reddit.com` wikis (403 Blocked), `nvd.nist.gov` and `cve.org` dashboards (client-rendered, 10\u201342 character bodies), and"
+ },
+ {
+  "host": "reference.langchain.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "n version 1.0.6, the default recursion limit is set to 1000 steps\"); `reference.langchain.com` (a ~1.2 KB body, but it holds the docstring a reader may be quoting \u2014 \"If not provided, default"
+ },
+ {
+  "host": "reolink.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-27",
+  "vertical": "smart_home_telemetry",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `reolink.com/product/<model>/` \u2014 a camera product page prints its whole spec table as text, including the line an archive"
+ },
+ {
+  "host": "research.manchester.ac.uk",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "he verifier, but the same paper's abstract is citable through RePEc; `research.manchester.ac.uk` (a university repository record carrying the same abstract text \u2014 \"more than 60,000 forecasts"
+ },
+ {
+  "host": "researchgate.net",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "actitioner command, label it). Unreachable or unusable on this beat: `researchgate.net` (unreachable), `scielo.br` (unreachable, though the same paper's `prod.org.br` record fetches with abs"
+ },
+ {
+  "host": "revisor.mn.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "ntractor pays a sub in full \u2014 one page can carry four or five rows); `revisor.mn.gov` (statutes 337.10 subd. 4(b)\u2013(c): a five percent retainage cap, the owner's power to cut it on any monthl"
+ },
+ {
+  "host": "revisor.mn.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "`cga.ct.gov`, `mass.gov` info pages, `iga.in.gov` (a 24-char stub), `revisor.mn.gov` (fetches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegisla"
+ },
+ {
+  "host": "rfid.auburn.edu",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "r's `prod.org.br` record fetches with abstract only and no figures), `rfid.auburn.edu` (a 2.9 KB navigation shell whose only prose is a cookie notice), `werc.org` (unreachable), and guessed"
+ },
+ {
+  "host": "ridgurak.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "is unreachable), `nfpa.org/codes-and-standards` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog guesses (404 shell). Unreachable to the verifier on thi"
+ },
+ {
+  "host": "rockwool.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "ured anchor (`usg.com`'s Quiet Zone page fetches as navigation only, `rockwool.com` and `nationalgypsum.com` are unreachable, and `nrc-cnrc.gc.ca/eng/solutions/advisory/acoustics.html` redir"
+ },
+ {
+  "host": "salesforce.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "enterprise_ai_finops",
+  "note": "ainst $2.00 pay-as-you-go, and the 5 ARs per agent/month allowance); `salesforce.com/agentforce/pricing/` (`$ 2 USD/Per conversation`, `$ 500 USD/Per 100k Credits`, and a worked-example tabl"
+ },
+ {
+  "host": "sce.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "t. **Unreachable to the verifier on this beat:** every `pge.com` and `sce.com` rate page tried (a tariff PDF reads `unsupported`, the HTML plan pages `unreachable`), `energy.gov/energysaver/"
+ },
+ {
+  "host": "sciencedirect.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "rmance\"). This is the workaround when the publisher blocks the gate: `sciencedirect.com` and `tandfonline.com` are both **unreachable** to the verifier, but the same paper's abstract is cita"
+ },
+ {
+  "host": "scmr.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "ntory close\", and \"this difference might be as much as 30 minutes\"); `scmr.com/article/<slug>` (a university capstone republished in the trade journal, 21 KB with the whole scenario grid \u2014 6"
+ },
+ {
+  "host": "sdge.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-26",
+  "vertical": "home_equity_tco",
+  "note": "vergreen).** Carries the figure as plain text and fetches first try: `sdge.com/residential/pricing-plans/about-our-pricing-plans/whenmatters` (the whole residential plan page at ~33 KB, and"
+ },
+ {
+  "host": "sectigo.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "), `letsencrypt.org/docs/lifetime-migration/`, `security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived"
+ },
+ {
+  "host": "security.apple.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "own announcement page), `letsencrypt.org/docs/lifetime-migration/`, `security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencry"
+ },
+ {
+  "host": "selling-guide.fanniemae.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-09",
+  "vertical": "home_equity_tco",
+  "note": "premium band has to ride on a secondary page or not at all. Guessed `selling-guide.fanniemae.com/sel/b4-1.2-03/\u2026` paths are unreachable (the live slug is `/sel/b4-1.3-06/property-condition-"
+ },
+ {
+  "host": "semiconductor.samsung.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "oupinc.com` and `docs.nvidia.com` DGX system guides (`unreachable`), `semiconductor.samsung.com` (11 KB, spec table client-rendered, no MB/s token) and `westerndigital.com` (binary body). **"
+ },
+ {
+  "host": "sense.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "epository page is not a source row), `raspberrypi.com/products/...`, `sense.com`, and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github.io` report PDF are `unsupported"
+ },
+ {
+  "host": "snowjoe.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-24",
+  "vertical": "outdoor_power_equipment",
+  "note": "ials and labor\", and \"designed to melt 1\\\" - 3\\\" of snow per hour\"); `snowjoe.com/collections/snow-blowers` (the 11-inch 10-amp corded shovel at $124.99, the 24 V 4.0 Ah pack at $89.97 and t"
+ },
+ {
+  "host": "span.io",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-13",
+  "vertical": "",
+  "note": "ices; its blog: a worked \"80 amps of your 100-amp service\" example), `span.io` (48A / 11.5 kW dynamic against the \"24-40A (5.7-9.6 kW)\" a worst-case fixed install is limited to). Fails or ca"
+ },
+ {
+  "host": "ssa.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 \u00a7 1 fetches but spells its count as \"one hundred eighty-three days\", which the ma"
+ },
+ {
+  "host": "ssl.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "-migration/`, `security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `community.letsencrypt.org`'s short-lived thread shell \u2014 so the ladder is c"
+ },
+ {
+  "host": "standby.lbl.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-20",
+  "vertical": "smart_home_telemetry",
+  "note": "annual energy use to space heating and air conditioning, 2020); and `standby.lbl.gov` (Berkeley Lab: standby power is \"5-10% of residential electricity use\", typical products \"less than 0.5"
+ },
+ {
+  "host": "statutes.capitol.texas.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "e in the verifier's fetch path), `nolo.com` (403), `mass.gov` (403), `statutes.capitol.texas.gov/Docs/PR/htm/...` (a 1.3 KB navigation stub, not the chapter), `energy.gov/energysaver/<guesse"
+ },
+ {
+  "host": "steelking.com",
+  "url": "",
+  "verdict": "no_figures",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "s` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog guesses (404 shell). Unreachable to the verifier on this beat: `mir-robots.com/products/\u2026`, `zebra.c"
+ },
+ {
+  "host": "stonge.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "bots.com/products/\u2026`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) \u2014 so a facility-readiness angle (sprinkler clearanc"
+ },
+ {
+  "host": "strategosinc.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "10%-of-active-locations method and the fast-mover/high-value focus); `strategosinc.com` (an undated consultancy page carrying \"MRP and ERP systems require very high accuracies (95%-99%)\" \u2014 a"
+ },
+ {
+  "host": "supermicro.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "gpu_hardware",
+  "note": "ifier on this beat: `iea.org` (every `/reports/energy-and-ai` path), `supermicro.com` liquid-cooling pages, `datacenterknowledge.com`, and `nvidia.com/en-us/data-center/liquid-cooling/`. Not"
+ },
+ {
+  "host": "supplychaindive.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "eachable, so a low-floor state cannot be cited from its own agency); `supplychaindive.com` article URLs and `dcvelocity.com` (unreachable); and the equipment vendors `crown.com`, `enersys.co"
+ },
+ {
+  "host": "support.apple.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-06",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "d/MacBook 1000, iPod 400, each at \"80% of their original capacity\"); `support.apple.com/en-us/102888` (the *definition* of a charge cycle \u2014 \"A charge cycle happens when you use all of the ba"
+ },
+ {
+  "host": "synology.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-27",
+  "vertical": "smart_home_telemetry",
+  "note": "fps\", and recording's \"3 days \u2026 7 days \u2026 30 days\" retention ladder); `synology.com/en-us/products/<model>` (the Surveillance Station block \u2014 \"Default Licenses 2 (Additional cameras require p"
+ },
+ {
+  "host": "tailscale.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "talocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale.com/pricing` \u2014 the reliable way to cite \"what the managed alternative costs\" without leaning on a secondary wr"
+ },
+ {
+  "host": "tandfonline.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "rkaround when the publisher blocks the gate: `sciencedirect.com` and `tandfonline.com` are both **unreachable** to the verifier, but the same paper's abstract is citable through RePEc; `rese"
+ },
+ {
+  "host": "tax.ny.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "ysenate.gov/legislation/laws/TAX/605`, `law.justia.com` NY statutes, `tax.ny.gov` (both an HTML page and a PDF), `ftb.ca.gov` (and its 540NR booklet, `unsupported`), `cga.ct.gov`, `mass.gov`"
+ },
+ {
+  "host": "tdi.texas.gov",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "he engagement-ring comparison at the 2022 poverty level of $18,310); `tdi.texas.gov/pubs/consumer/cb025.html` (29 KB, the personal-property percentage mechanic with a 20 percent worked examp"
+ },
+ {
+  "host": "tdi.texas.gov",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-04",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "ives the figure matcher. Fetch clean and carry the numbers as prose: `tdi.texas.gov/pubs/consumer/<guide>.html` (the consumer guides are HTML, and the 80 percent requirement plus a worked ro"
+ },
+ {
+  "host": "tdi.texas.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "he engagement-ring comparison at the 2022 poverty level of $18,310); `tdi.texas.gov/pubs/consumer/cb025.html` (29 KB, the personal-property percentage mechanic with a 20 percent worked examp"
+ },
+ {
+  "host": "teamgroupinc.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "al.com` product pages (HTTP 403 \"Request Rejected\"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX system guides (`unreachable`), `semiconductor.samsung.com` (11 KB, spec tabl"
+ },
+ {
+  "host": "thehartford.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "t coverage with actual cash value\", though the page prints no date); `thehartford.com/aarp/homeowners-insurance/recoverable-depreciation` (a carrier's own explainer \u2014 the right home for a ve"
+ },
+ {
+  "host": "tomshardware.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": "/userguide/general-purpose.html` (the gp3 baseline as one sentence); `tomshardware.com/reviews/best-ssds,3891.html` (70 KB, \"14.5 GB/s of sequential throughput\"). Fails or cannot carry a row"
+ },
+ {
+  "host": "toro.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-24",
+  "vertical": "outdoor_power_equipment",
+  "note": "le's `$1.00 per energized hour` instead. Fetched but carries no row: `toro.com`, `husqvarna.com` and `greenworkstools.com` collection pages are navigation plus client-rendered product grids"
+ },
+ {
+  "host": "transportation.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "uardrail is on the host: `cbp.gov` (ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable to the verifier,"
+ },
+ {
+  "host": "trerc.tamu.edu",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "mit brief.** Carries the figure as plain text and fetches first try: `trerc.tamu.edu` (the Texas Real Estate Research Center's analysis of the ISO homeowners form \u2014 the special limits as pro"
+ },
+ {
+  "host": "twc.texas.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-14",
+  "vertical": "",
+  "note": "gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreachable), `twc.texas.gov` (unreachable, so a low-floor state cannot be cited from its own agency); `supplychaindive.com` article UR"
+ },
+ {
+  "host": "ucanr.edu",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "he ember and flame tests). **Unreachable or unusable on this beat:** `ucanr.edu/program/uc-anr-fire-network/vents` fetches 6.5 KB with the code sentence on one probe and answers `unreachable"
+ },
+ {
+  "host": "uphelp.org",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-11",
+  "vertical": "",
+  "note": "tdi.texas.gov/pubs/consumer/cb003.html`, `tdi.texas.gov/consumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, an"
+ },
+ {
+  "host": "ups.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "returns a 1.9 KB stub (the Cornell copy is the one that works), and `ups.com`'s dimensional-weight page returns 189 characters \u2014 so a claims brief rides on the CFR, the U.S. Code and Cornel"
+ },
+ {
+  "host": "uptimeinstitute.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "gpu_hardware",
+  "note": "mmons.org/benchmarks/inference-datacenter/` (7.9 KB, no numbers) and `uptimeinstitute.com`'s survey page (11.6 KB, prose only \u2014 no PUE or density figure). Unreachable to the verifier on this"
+ },
+ {
+  "host": "usa.canon.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-30",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "shop/\u2026` product and category paths (unreachable), `brother-usa.com`, `usa.canon.com`, `lexmark.com`, and `epson.com/For-Home/Ink/Ink-Bottles/c/h1` (fetches, but it is a filter shell whose on"
+ },
+ {
+  "host": "uscode.house.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "ortoflosangeles.org`/`polb.com` are all unreachable to the verifier, `uscode.house.gov/view.xhtml` renders a 1.1 KB stub with no figures, `govinfo.gov`'s title-46 path for \u00a7 30701 returns a"
+ },
+ {
+  "host": "usersolutions.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-02",
+  "vertical": "meio_working_capital_tco",
+  "note": "line rule \"always use the same time unit for lead time and demand\"); `usersolutions.com` (104 units at a fixed 10-day lead against 506 once \u03c3_L = 3 days enters it); and `onetonline.org/link/"
+ },
+ {
+  "host": "usfa.fema.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-16",
+  "vertical": "resilient_home_assets",
+  "note": "ble row there). Fails or cannot carry a row: `readyforwildfire.org`, `usfa.fema.gov`, `fema.gov`, `fire.ca.gov`, `osfm.fire.ca.gov`, `insurance.wa.gov`, `doi.colorado.gov`, `ny.dfs.ny.gov`,"
+ },
+ {
+  "host": "usg.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "ual-office acoustic beat still has **no** fetchable measured anchor (`usg.com`'s Quiet Zone page fetches as navigation only, `rockwool.com` and `nationalgypsum.com` are unreachable, and `nrc"
+ },
+ {
+  "host": "vulcanvents.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "uels (Quarles 2009)\", plus the 1/4-inch-is-the-old-minimum history); `vulcanvents.com/codes-and-compliance` (14.7 KB \u2014 the ASTM E2886 test criteria as a vendor's compliance page: \"shall not"
+ },
+ {
+  "host": "warmlyyours.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-24",
+  "vertical": "outdoor_power_equipment",
+  "note": "ire\" positioning; the home page carries the walkway mat at $229.99); `warmlyyours.com/en-US/snow-melting` (87 KB with the whole FAQ: \"at 50 W/sq ft, every 100 sq ft draws 5 kW, or $1.00 per"
+ },
+ {
+  "host": "werc.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-22",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "du` (a 2.9 KB navigation shell whose only prose is a cookie notice), `werc.org` (unreachable), and guessed `mmh.com/article/<topic>` slugs (404 \u2014 resolve the real slug first). One cross-stud"
+ },
+ {
+  "host": "westerndigital.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-11-10",
+  "vertical": "workstation_compute_economics",
+  "note": ".samsung.com` (11 KB, spec table client-rendered, no MB/s token) and `westerndigital.com` (binary body). **Matcher traps here:** a comma-grouped `2,000 MiB/s` or `7,450 MBps` cell tokenises"
+ },
+ {
+  "host": "wiki.postgresql.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-03",
+  "vertical": "enterprise_tech_leadership",
+  "note": "`pool_mode` session as the default). **Two traps on this beat.** (1) `wiki.postgresql.org/wiki/Number_Of_Database_Connections` fetches at 8.5 KB with the whole `(core_count * 2) + effective_"
+ },
+ {
+  "host": "wildfireprepared.org",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-11-13",
+  "vertical": "resilient_home_assets",
+  "note": "t a row (the flakiest host seen on this vertical); `astm.org`, every `wildfireprepared.org` path (the technical standard is PDF-only), `readyforwildfire.org`, guessed `fire.ca.gov` and `osfm"
+ },
+ {
+  "host": "wildfireprepared.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "ng, \"the moisture content of plants increases the time to ignition\"; `wildfireprepared.org/wildfire-prepared-home-base-vs-plus` \u2014 the 0\u20135 foot zone, 1/8-inch metal mesh, 6-inch clearance, fe"
+ },
+ {
+  "host": "workspace.google.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-10",
+  "vertical": "",
+  "note": "w in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale"
+ },
+ {
+  "host": "www.california.public.law",
+  "url": "https://www.california.public.law/...",
+  "verdict": "fetchable",
+  "as_of": "2026-11-12",
+  "vertical": "expat_cross_border_relocation",
+  "note": "prefix is the whole difference on the public.law mirrors:** `https://www.california.public.law/...` answers `unreachable` while `https://california.public.law/...` fetches \u2014 which is how a"
+ },
+ {
+  "host": "www.digitalocean.com",
+  "url": "",
+  "verdict": "fetchable",
+  "as_of": "2026-10-21",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "k costless, \"GitHub Actions usage is free for self-hosted runners\"); `www.digitalocean.com/pricing/droplets` (the full ladder as one text line \u2014 `2 GiB 2 vCPUs \u2026 $0.02679 $ 18.00`, `4 GiB 2"
+ },
+ {
+  "host": "www.ibhs.org",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-10-23",
+  "vertical": "resilient_home_assets",
+  "note": "the 6-inch siding line, the $125 fee and the three-year designation; `www.ibhs.org/wildfire/` for a field count like \"destroyed 615\"), while the dual-office acoustic beat still has **no** fe"
+ },
+ {
+  "host": "www.nysenate.gov",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-15",
+  "vertical": "",
+  "note": "arry a row: `leginfo.legislature.ca.gov` and `law.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le.utah.gov` per-section guesses (404), `cga.ct.gov` (SSL certificate fai"
+ },
+ {
+  "host": "zebra.com",
+  "url": "",
+  "verdict": "unreachable",
+  "as_of": "2026-10-21",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "reachable to the verifier on this beat: `mir-robots.com/products/\u2026`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundamentals paths (404) \u2014 so"
+ },
+ {
+  "host": "zendesk.com",
+  "url": "",
+  "verdict": "mentioned",
+  "as_of": "2026-11-05",
+  "vertical": "enterprise_ai_finops",
+  "note": "y commitment applies (e.g. 50 outcomes)\" floor and \"No seat costs\"); `zendesk.com/pricing/` (\"pay only for customer requests that were successfully resolved by the AI agent, without any esca"
+ }
+]

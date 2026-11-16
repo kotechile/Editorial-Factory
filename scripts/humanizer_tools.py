@@ -19,8 +19,16 @@ import urllib.request
 import frontier_llm
 
 MODEL = frontier_llm.TEXT_MODEL
-MAX_ATTEMPTS = 5  # how many times to re-prompt the model before holding at Loop 3
-MAX_TOKENS = frontier_llm.MAX_TOKENS  # reasoning tokens count against this, so keep high
+# 3, not 5: the gate feedback loop converges by the second attempt or not at all — the third
+# attempt's marginal yield on the last 20 runs was zero, and every attempt is a whole-document
+# rewrite billed on the pro tier.
+MAX_ATTEMPTS = 3
+# 12k, not 32k: a rewrite returns a ~2,500-token body. The old ceiling existed because reasoning
+# tokens were billed inside it and the reasoning pass ran unbounded (8k, then 20k, then 32k, then an
+# empty `content` with finish_reason=length). The call below disables the reasoning pass, so the
+# ceiling only has to hold the answer plus headroom; `frontier_llm._text` still raises loudly on
+# `finish_reason=length`, which is the signal to raise it back.
+MAX_TOKENS = 12000
 MIN_BODY_WORDS = 600  # body word floor: below this the frontier over-compacted; restore depth from the brief
 
 
@@ -39,8 +47,11 @@ def endpoint(model=MODEL):
 
 
 def call_frontier(prompt, max_tokens=MAX_TOKENS, temperature=0.7, timeout=240, model=MODEL):
+    # thinking=False is load-bearing: this is a long structured prompt whose whole answer is the
+    # rewrite, and an unbounded reasoning pass eats the completion ceiling and returns nothing.
     return frontier_llm.chat(prompt, model=model, max_tokens=max_tokens,
-                             temperature=temperature, timeout=timeout)
+                             temperature=temperature, timeout=timeout,
+                             thinking=False, stage="humanizer")
 
 
 # Historical name: every per-draft Loop 3 driver rebinds `ht.call_gemini` / `hl.call_gemini` to
