@@ -1176,6 +1176,15 @@
     .gen-state.off { color: var(--danger-text); }
     .gen-control-note { flex-basis: 100%; font-size: 11px; color: var(--text-dim); line-height: 1.5; }
     .gen-control-note.warn { color: var(--amber-text); }
+
+    /* Per-vertical switch on every registry card. Same widget as the master switch, one size down,
+       with the label reading ON/OFF so the state never depends on colour alone. */
+    .gen-card-switch { display: inline-flex; align-items: center; gap: 0.4rem; flex: 0 0 auto; }
+    .gen-switch-sm { width: 34px; height: 18px; }
+    .gen-switch-sm::after { top: 2px; left: 2px; width: 12px; height: 12px; }
+    .gen-switch-sm[aria-checked="true"]::after { transform: translateX(16px); }
+    .clean-white-card.gen-card-paused { background: var(--bg-subtle); border-style: dashed; }
+    .clean-white-card.gen-card-paused .key-value-list { opacity: 0.72; }
     @media (max-width: 760px) {
       .gen-control-bar { gap: 0.75rem; }
       .gen-control-divider { display: none; }
@@ -1480,11 +1489,11 @@
     <div class="gen-control-bar" id="generationControlBar">
       <div class="gen-control-unit">
         <div class="gen-control-copy">
-          <span class="gen-control-title">✍️ Article generation</span>
+          <span class="gen-control-title">✍️ All article generation</span>
           <span class="gen-control-sub" id="genArticlesSub">Loading…</span>
         </div>
         <span class="gen-switch-pair">
-          <button class="gen-switch" id="genArticlesToggle" role="switch" aria-checked="true" aria-label="Article generation"></button>
+          <button class="gen-switch" id="genArticlesToggle" role="switch" aria-checked="true" aria-label="All article generation"></button>
           <span class="gen-state" id="genArticlesState">—</span>
         </span>
       </div>
@@ -1505,6 +1514,8 @@
 
       <div class="gen-control-note" id="genControlNote"></div>
     </div>
+
+    <div id="verticalStateFilters" style="display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.75rem;"></div>
 
     <div id="verticalDomainFilters" style="display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
       <span class="section-eyebrow" style="margin: 0;">PUBLISHING TARGET</span>
@@ -1900,6 +1911,7 @@ Waiting for commands.</div>
   // Read once at boot and after every flip; `disabled_verticals` is the per-vertical pause map.
   let generationControl = { articles_enabled: true, software_enabled: true, disabled_verticals: {} };
   let generationSummary = null;
+  let verticalStateFilter = 'all';  // all | live | paused — filters the registry by generation state
   let verticalDomainsSource = '';
 
   // Theme Persistence
@@ -1977,6 +1989,7 @@ Waiting for commands.</div>
       logRegistrySummary(data);
       populatePersonaDropdown();
       renderDomainFilters();
+      renderStateFilters();
       renderVerticals(allVerticals);
       renderPersonas(allPersonas);
     } catch (err) {
@@ -2024,11 +2037,14 @@ Waiting for commands.</div>
     };
 
     const pausedCount = articles.verticals_paused || 0;
+    const liveCount = articles.verticals_active ?? '—';
     setSwitch(
       'genArticlesToggle', 'genArticlesState', control.articles_enabled !== false, 'genArticlesSub',
-      `${articles.verticals_active ?? '—'}/${articles.verticals_total ?? '—'} verticals active`
+      (control.articles_enabled === false
+        ? 'Paused for every vertical'
+        : `${liveCount}/${articles.verticals_total ?? '—'} verticals live`)
         + ` · ${articles.jobs ?? '—'} scheduled jobs`
-        + (pausedCount ? ` · ${pausedCount} paused` : ''),
+        + (pausedCount ? ` · ${pausedCount} switched off below` : ''),
     );
 
     const requested = control.software_run_requested_at;
@@ -2057,6 +2073,7 @@ Waiting for commands.</div>
       parts.push((data && data.storage) === 'supabase'
         ? 'Stored in Supabase factory_config.generation_control — every run reads it before it starts.'
         : 'Read from the file copy in this app; the generators read the same record from Supabase.');
+      parts.push('This switch is global; each vertical card has its own switch.');
       if (data && data.warning) {
         parts.push(data.warning);
         note.classList.add('warn');
@@ -2076,6 +2093,7 @@ Waiting for commands.</div>
     generationControl = data.control || generationControl;
     generationSummary = data.summary || generationSummary;
     renderGenerationControl(data);
+    renderStateFilters();
     renderVerticals(allVerticals);
     if (data.warning) showToast(data.warning, 'error');
     return data;
@@ -2179,6 +2197,33 @@ Waiting for commands.</div>
     });
   }
 
+  // Live / Paused filter: the point of per-vertical switches is running a few at a time, so the
+  // registry has to be filterable by generation state without opening anything.
+  function renderStateFilters() {
+    const wrap = document.getElementById('verticalStateFilters');
+    if (!wrap) return;
+    const disabled = (generationControl && generationControl.disabled_verticals) || {};
+    const paused = allVerticals.filter((v) => Boolean(disabled[v.id])).length;
+    const live = allVerticals.length - paused;
+    const chip = (key, label, extra = '') => (
+      `<button class="btn btn-ghost btn-sm state-filter ${verticalStateFilter === key ? 'active' : ''}"`
+      + ` data-state="${key}"${extra}>${label}</button>`
+    );
+    wrap.innerHTML = '<span class="section-eyebrow" style="margin: 0;">GENERATION</span>'
+      + chip('all', `All (${allVerticals.length})`)
+      + chip('live', `● Live (${live})`)
+      + chip('paused', `⏸ Paused (${paused})`);
+
+    wrap.querySelectorAll('.state-filter').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        verticalStateFilter = btn.getAttribute('data-state');
+        wrap.querySelectorAll('.state-filter').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderVerticals(allVerticals);
+      });
+    });
+  }
+
   function populatePersonaDropdown() {
     const select = document.getElementById('verticalPersona');
     select.innerHTML = '';
@@ -2192,11 +2237,20 @@ Waiting for commands.</div>
 
   function renderVerticals(list) {
     const grid = document.getElementById('verticalsGrid');
-    const visible = verticalDomainFilter === 'all'
-      ? list
-      : list.filter((v) => (v.target_domain || 'unmapped') === verticalDomainFilter);
+    const disabled = (generationControl && generationControl.disabled_verticals) || {};
+    const visible = list.filter((v) => {
+      const paused = Boolean(disabled[v.id]);
+      if (verticalStateFilter === 'live' && paused) return false;
+      if (verticalStateFilter === 'paused' && !paused) return false;
+      return verticalDomainFilter === 'all' || (v.target_domain || 'unmapped') === verticalDomainFilter;
+    });
     if (!visible.length) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">No verticals found for this publishing target.</div>';
+      const why = verticalStateFilter === 'paused'
+        ? 'No vertical is paused — every vertical generates today.'
+        : (verticalStateFilter === 'live'
+          ? 'No vertical is live — switch one on to start generating again.'
+          : 'No verticals found for this publishing target.');
+      grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-dim); font-size:12px;">${why}</div>`;
       return;
     }
     grid.innerHTML = visible.map((v) => {
@@ -2214,9 +2268,13 @@ Waiting for commands.</div>
         evergreenOn ? '<span class="tag-quiet tag-emerald">🌱 Evergreen</span>' : null,
         reviewOn ? '<span class="tag-quiet tag-emerald">🔍 Review</span>' : null,
       ].filter(Boolean).join(' ') || '<span class="tag-quiet">● Disabled</span>';
+      // A paused card must not still advertise "News / Evergreen" in green: that reads as "running".
+      const stateBadges = verticalPaused
+        ? '<span class="tag-quiet" style="color: var(--danger-text); background: var(--danger-soft); border-color: var(--danger-border);">⏸ Off — no runs</span>'
+        : modeBadges;
 
       return `
-        <div class="clean-white-card" data-id="${v.id}">
+        <div class="clean-white-card${verticalPaused ? ' gen-card-paused' : ''}" data-id="${v.id}">
           <div>
             <div class="card-top-row">
               <div>
@@ -2258,13 +2316,15 @@ Waiting for commands.</div>
           </div>
 
           <div class="card-bottom-row">
-            <span style="display: flex; gap: 0.35rem; flex-wrap: wrap;">${verticalPaused
-              ? '<span class="tag-quiet" style="color: var(--danger-text); background: var(--danger-soft); border-color: var(--danger-border);">⏸ Generation paused</span>'
-              : ''}${modeBadges}</span>
-            <span style="display: flex; gap: 0.35rem; align-items: center;">
-              <button class="btn btn-ghost btn-sm" onclick="toggleVerticalGeneration('${v.id}')" title="${verticalPaused ? 'Resume article generation for this vertical' : 'Pause article generation for this vertical'}">${verticalPaused ? '▶ Resume' : '⏸ Pause'}</button>
-              <button class="btn btn-ghost btn-sm" onclick="openEditVerticalModal('${v.id}')">Manage &rarr;</button>
+            <span class="gen-card-switch">
+              <button class="gen-switch gen-switch-sm" role="switch" aria-checked="${verticalPaused ? 'false' : 'true'}"
+                aria-label="Article generation for ${v.id}"
+                title="${verticalPaused ? 'Switch this vertical back on' : 'Switch this vertical off'}"
+                onclick="toggleVerticalGeneration('${v.id}')"></button>
+              <span class="gen-state ${verticalPaused ? 'off' : 'on'}">${verticalPaused ? 'OFF' : 'ON'}</span>
             </span>
+            <span style="display: flex; gap: 0.35rem; flex-wrap: wrap;">${stateBadges}</span>
+            <button class="btn btn-ghost btn-sm" onclick="openEditVerticalModal('${v.id}')">Manage &rarr;</button>
           </div>
         </div>
       `;

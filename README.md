@@ -152,15 +152,23 @@ destination. What it does hold:
 | 👥 **Personas** | the reader archetypes the verticals point at |
 | 🛰️ **Fleet & Crons** | cron reconciliation and the operations log |
 
-## Generation switches (article fleet and software recon)
+## Generation switches (per vertical, plus a global kill switch)
 
-The Verticals tab opens with two independent owner switches, and each vertical card carries its own
-⏸ Pause / ▶ Resume:
+**Per-vertical switches are the normal control.** Every card in the Verticals tab carries its own
+ON/OFF switch (bottom-left) and a `● Live (n)` / `⏸ Paused (n)` filter above the grid, so a handful of
+verticals can be live while the rest are off. Switching a card off stops every scheduled run for that
+vertical — news, evergreen and review — at the gate, before any research or spend.
+
+Above the grid there are two global controls:
 
 | Switch | What it stops | Where the state lives |
 |---|---|---|
-| ✍️ **Article generation** | the whole editorial fleet — news, evergreen and review runs for every vertical | `factory_config.generation_control.articles_enabled` (+ `disabled_verticals` for per-vertical pauses) |
+| ✍️ **All article generation** | the whole fleet at once, all 33 verticals | `factory_config.generation_control.articles_enabled` |
 | 🧱 **Software generation** | the software side's generation loop, `Weekly Market Recon` (app recon → candidate PRD) | `factory_config.generation_control.software_enabled` |
+
+Per-vertical state is `factory_config.generation_control.disabled_verticals`. The global switch is a
+kill switch: it leaves individual switches untouched, so turning it back on restores exactly the set
+of verticals that were live before.
 
 The switch is **not** a cron pause: the dashboard runs in a container that cannot reach this host's
 cron store. Every pipeline prompt begins with
@@ -169,14 +177,14 @@ cron store. Every pipeline prompt begins with
 python3 scripts/generation_gate.py --mode <news|evergreen|review|software> --vertical <id>
 ```
 
-and exits 3 when the loop is off, so the next scheduled run stops **before** it researches, drafts
-or spends. Off is enforced on the very next tick — no registry pull or cron sync required.
-`context/generation_control.json` is the fallback copy the gate reads when Supabase is unreachable.
-The gate fails **open** on infrastructure errors (only an explicit `false` stops a run).
+and exits 3 when that vertical (or the loop) is off, so the next scheduled run stops **before** it
+researches, drafts or spends. Off is enforced on the very next tick — no registry pull or cron sync
+required. `context/generation_control.json` is the fallback copy the gate reads when Supabase is
+unreachable. The gate fails **open** on infrastructure errors (only an explicit `false` stops a run).
 
 **▶ Run now** (software) records a request in the same record; the zero-token
 `PressFlow Software Run Watcher` cron on the host checks every 15 minutes and dispatches the recon
-once per request (`scripts/run_software_request.py`). A switch change can also be made from the host:
+once per request (`scripts/run_software_request.py`). Switches can also be flipped from the host:
 
 ```bash
 python3 scripts/run_software_request.py --set articles_enabled=false --by "jorge"

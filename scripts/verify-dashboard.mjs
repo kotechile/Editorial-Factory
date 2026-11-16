@@ -70,17 +70,18 @@ try {
   const verticalsApi = (await page.request.get(`${BASE}/api/verticals`)).status();
   check(verticalsApi === 200, 'verticals API responds 200', `HTTP ${verticalsApi}`);
 
-  // The owner switches. Two independent controls, a real switch widget (role=switch, aria-checked)
-  // for each, and the per-vertical pause on every card. Asserted as a surface, not by clicking: a
-  // click here would flip live generation state on the deployment under test.
-  check(await page.getByRole('switch', { name: /Article generation/i }).count() === 1, 'article generation switch present');
-  check(await page.getByRole('switch', { name: /Software generation/i }).count() === 1, 'software generation switch present');
-  check(await page.locator('#genArticlesToggle[aria-checked]').count() === 1, 'article switch exposes its state');
-  check(await page.locator('#genSoftwareToggle[aria-checked]').count() === 1, 'software switch exposes its state');
-  check(await page.locator('#genArticlesState').innerText().then((t) => /ON|OFF/.test(t)), 'article switch shows ON/OFF');
+  // The owner switches. One master switch per loop plus one switch on every vertical card, a
+  // Live/Paused filter, and the per-card state exposed through aria-checked. Asserted as a surface,
+  // not by clicking: a click here would flip live generation state on the deployment under test.
+  check(await page.locator('#genArticlesToggle[role="switch"][aria-checked]').count() === 1, 'master article switch present');
+  check(await page.locator('#genSoftwareToggle[role="switch"][aria-checked]').count() === 1, 'master software switch present');
+  check(await page.locator('#genArticlesState').innerText().then((t) => /ON|OFF/.test(t)), 'master switch shows ON/OFF');
   check(await page.getByRole('button', { name: /Run now/i }).count() === 1, 'software run-now button present');
-  check(await page.locator('#verticalsGrid button[title*="article generation for this vertical"]').count() === verticalCards,
-    'every vertical card carries its own pause/resume');
+  check(await page.locator('#verticalsGrid .clean-white-card .gen-switch[role="switch"]').count() === verticalCards,
+    'every vertical card carries its own switch', `${verticalCards} card(s)`);
+  check(await page.locator('#verticalsGrid .clean-white-card .gen-switch[aria-checked="true"]').count() >= 1,
+    'per-vertical switches expose their state');
+  check(await page.locator('#verticalStateFilters .state-filter').count() === 3, 'Live/Paused filter present');
   const control = await (await page.request.get(`${BASE}/api/generation-control`)).json();
   check(control.status === 'ok' && typeof control.control.articles_enabled === 'boolean',
     'generation-control API reports both switches', `storage=${control.storage}`);
