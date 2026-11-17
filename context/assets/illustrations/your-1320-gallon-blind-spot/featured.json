@@ -1,0 +1,115 @@
+{
+  "slug": "your-1320-gallon-blind-spot",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Steel drum containment rack holding 55-gallon fuel drums, an inspection gate ajar on a concrete pad.",
+      "caption": "A steel drum containment rack with three 55-gallon fuel drums and an open bay marks the threshold between an exempt self-certified plan and regulated aboveground storage.",
+      "title": "Drum Rack Threshold in Fuel Storage Yard",
+      "bytes": 404974,
+      "sha256": "sha256:fc44bda8a382fcbdaf03f300b2b458bb"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A steel drum containment rack on a concrete plant floor beside a substation yard, three 55-gallon fuel drums seated in bays, a fourth bay empty, an inspection gate ajar. Graphite steel frame, safety-yellow strip, concrete grey floor. One directional key light rakes from the left across brushed steel and ribbed drum bodies, throwing long hard shadows to the right. Extreme asymmetry with the rack off-centre left and empty concrete negative space right, low three-quarter angle, hard clean edges, plain surfaces without markings.",
+  "negative_prompt": "garbled text, random lettering, watermarks, moulded embossed lettering, numbers",
+  "rationale": "component_assembly's hard-edged modular construction lets the drum rack and an open bay state the container-count threshold directly, while nano-banana-pro renders clean steel and concrete with one directional shadow and no legible lettering. It avoids photographic clich\u00e9s and the previous legible-number failure.",
+  "cue": "the count runs by container",
+  "subject": "a steel drum containment rack holding 55-gallon fuel drums, an inspection gate ajar on a concrete pad",
+  "core_thesis": "Backup fuel compliance is determined by container count and tank volume, not plant size: 24 55-gallon drums reach the 1,320-gallon spill exemption ceiling.",
+  "core_conflict": "self-certified spill plan vs. crossing container-count thresholds (1,320/5,000/10,000 gallons) that force PE review or the underground-tank program",
+  "composition": "extreme asymmetry with the rack off-centre left and empty concrete negative space right",
+  "alt_text": "Backup Fuel'S 1,320-Gallon Blind Spot. Steel drum containment rack holding 55-gallon fuel drums, an inspection gate ajar on a concrete pad.",
+  "caption": "Backup Fuel'S 1,320-Gallon Blind Spot: Twenty-four 55-gallon drums \u2014 1,320 gallons \u2014 mark the SPCC threshold.",
+  "title": "Backup Fuel'S 1,320-Gallon Blind Spot",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-1320-gallon-blind-spot/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391871,
+  "sha256": "sha256:bbef7f42c46f509a1c21139dca7354a4697ec0517dc9e7c06906f8bc198a9d92",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391871,
+    "quality": 72,
+    "sha256": "sha256:bbef7f42c46f509a1c21139dca7354a4697ec0517dc9e7c06906f8bc198a9d92",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:cb953f0d53022ff8fed46c131b9957f28cee491ea0a0e8831f951ca2d6f7aa77",
+  "render_phash": "17183f1e253e153e150b1508152f1463112016760c53198f333e05f107980f3c",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A black steel containment rack holding three metal drums sits on a concrete pad to the left, with a chain-link gate and empty concrete space to the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "The image shows a steel containment rack holding 55-gallon fuel drums on a concrete pad, directly illustrating the article's focus on drum-based backup fuel storage and spill containment limits."
+  },
+  "source_hash": "sha256:cf8225faa15f564a06cc9b01fcba18b1",
+  "source_chars": 4669,
+  "task_id": "540c8b45a4b8e6c0e87eb826c8efa32b",
+  "credits": 18.0,
+  "cost_ms": 36,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_9174982ad1d70fac5c65509cdd08b9a3.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A steel drum containment rack on a concrete plant floor beside a substation yard, three 55-gallon fuel drums seated in bays, a fourth bay empty, an inspection gate ajar. Graphite steel frame, safety-yellow strip, concrete grey floor. One directional key light rakes from the left across brushed steel and ribbed drum bodies, throwing long hard shadows to the right. Extreme asymmetry with the rack off-centre left and empty concrete negative space right, low three-quarter angle, hard clean edges, plain surfaces without markings.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-17T18:15:40+00:00",
+  "overlay": {
+    "kicker": "BACKUP FUEL // SPCC DRUM EXEMPTION",
+    "title": "BACKUP FUEL'S 1,320-GALLON BLIND SPOT",
+    "hook": "Twenty-four 55-gallon drums \u2014 1,320 gallons \u2014 mark the SPCC threshold",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.59,
+    "target": 5.5,
+    "clutter": 0.452,
+    "region_rgb": [
+      122,
+      121,
+      118
+    ],
+    "binding_rgb": [
+      184,
+      177,
+      161
+    ],
+    "title_lines": [
+      "BACKUP FUEL'S",
+      "1,320-GALLON",
+      "BLIND SPOT"
+    ],
+    "subject": 0.191,
+    "ink_subject": 0.102,
+    "spike": 0.241,
+    "generated_at": "2026-11-17T18:15:40+00:00"
+  }
+}

@@ -1,0 +1,40 @@
+# Evergreen Brief: nhil_infrastructure_ops — 2026-11-17
+
+**Archetype:** evergreen
+**Vertical:** nhil_infrastructure_ops
+**Persona:** it_ops_leader
+**Decision the reader is facing:** How much backup fuel this site may hold, and in what containers — one bulk tank, a row of day tanks, a bunkered or buried tank — before the fuel itself becomes a federally regulated oil facility with a Spill Prevention plan that a licensed Professional Engineer must sign; it bites at the tank order and again at the first delivery, months before the generator is commissioned.
+**Durability:** The exemption conditions (1,320 U.S. gallons of aboveground aggregate, 42,000 U.S. gallons of completely buried capacity), the 10,000-gallon self-certification ceiling, the 5,000-gallon single-container rung and the five-year review interval are the thresholds EPA set in the 1973 rule and kept through the 2006 revisions (71 FR 77290), and the underground-tank definitions in 40 CFR 280.12 date to the 1988 program; every figure is read as of the eCFR text current on 17 November 2026, and none of these numbers moves with hardware generations, so the arithmetic still holds when the racks in the hall are replaced twice.
+**De-dup:** `2026-11-03_your-backup-66-mw-permit-trap` is this vertical's nearest prior evergreen artifact — it prices the *air-emissions* ladder (25,000-tonne GHG reporting, 100-ton Title V, 75,000-tonne PSD) that a behind-the-meter generating plant lands on; this piece is about the fuel's own storage regime, a different statute and a different regulator (Clean Water Act §311 spill rules and the RCRA underground-tank program), with a different design decision — the container count and who signs the plan, not the stack's permit rung. `2026-11-10_your-47-day-certificate-trap` and `2026-11-17_your-check-sees-0086ms-not-40` are the vertical's other recent artifacts and argue certificate issuance and probe validity. Cross-vertical corpus grep for `SPCC`, `spill prevention`, `secondary containment`, `1,320` and `diesel` found no published artifact arguing fuel-storage regulation: the diesel hits are freight fuel-surcharge and carbon pieces in the logistics verticals, a different mechanism entirely.
+**Thesis:** The federal line on backup fuel is counted in containers, not in kilowatts — 1,320 gallons of aboveground oil in containers of 55 gallons or more puts the site under the Spill Prevention rules, a single container over 5,000 gallons or an aggregate over 10,000 gallons ends self-certification and requires a licensed engineer's signature plus a five-year review, and the buried tank that dodges the count up to 42,000 gallons only moves the site into the underground-tank program, so ride-through duration is a containment-and-paperwork decision made at the tank order and not a fuel-logistics one made after commissioning.
+
+**Lead:** The vertical's own power angle (`primary_angles`: "substation interconnection queues and behind-the-meter power") plus the field friction in `context/growth_os/customer-truth.md` — a fintech that put 62 kW racks into an air-cooled colo, hit a 38-month utility queue and pivoted to behind-the-meter generation. That pivot is where readers stop asking about megawatts and start storing fuel, and `context/growth_os/founder-voice.md` §3 argues the power side is "governed by thermal and electrical physics, not software agility"; the storage side is governed by a counting rule almost nobody prices. The numbers below are the rule itself, read from the eCFR.
+
+| # | Source | URL | Retrieved | Figure/claim it supports | Vendor claim or measured? |
+|---|---|---|---|---|---|
+| 1 | 40 CFR § 112.1(d)(2)(ii), via eCFR (Cornell LII text cross-checked) | https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-112/section-112.1 | 2026-11-17 | 55 U.S. gallons or greater are counted — the container-size floor inside the 1,320 U.S. gallons or less of oil aboveground exemption | measured |
+| 2 | 40 CFR § 112.1(d)(2)(i), eCFR | https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-112/section-112.1 | 2026-11-17 | 42,000 U.S. gallons or less of oil — the completely buried capacity that must also hold for a site to stay outside Part 112 | measured |
+| 3 | 40 CFR § 112.3(g)(1), Cornell LII | https://www.law.cornell.edu/cfr/text/40/112.3 | 2026-11-17 | 5,000 U.S. gallons — the largest single aboveground container a Tier I qualified facility may hold, and the rung that falls away to Tier II above it | measured |
+| 4 | 40 CFR § 112.6, eCFR | https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-112/section-112.6 | 2026-11-17 | 10,000 U.S. gallons in aggregate aboveground storage capacity — the ceiling a facility may self-certify, above which § 112.3(d) requires a licensed Professional Engineer's certification | measured |
+| 5 | 40 CFR § 112.5(b), eCFR | https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-112/section-112.5 | 2026-11-17 | five years — the review-and-evaluation interval for an SPCC plan, measured from the date the facility became subject to the part | measured |
+| 6 | 40 CFR § 280.10(b)(4), Cornell LII | https://www.law.cornell.edu/cfr/text/40/280.10 | 2026-11-17 | 110 gallons or less — the underground-tank capacity below which a tank is excluded from the Part 280 program outright | measured |
+
+Supporting text carried in prose (not gate rows, because the figure is not in these pages' own sentences or is a legal definition rather than a number): § 112.2 defines "bunkered tank" and puts containers in vaults, bunkered tanks and partially buried tanks on the aboveground side of the count, so a tank buried in a gravel bed still counts; § 112.3(g)(2) puts the discharge history inside the qualified-facility definition — no single discharge over 1,000 gallons and no two over 42 gallons in twelve months; § 112.12 prescribes the plan's content and § 112.3(d) the engineer's certification; § 280.12 excludes from the whole underground-tank program "(2) Tank used for storing heating oil for consumptive use on the premises where stored" and defines consumptive use as "consumed on the premises", which is the definitional edge a buried generator-fuel tank sits on.
+
+## Candidate topics considered
+
+| Topic | Usefulness | Durability | Evidence | Actionability | Composite | Verdict |
+|---|---|---|---|---|---|---|
+| Backup fuel storage is a federally counted facility: 1,320 gal aboveground / 55-gal containers / 42,000 gal buried / 10,000-gal self-cert / PE stamp | 9 | 9 | 8 | 9 | 8.8 | **winner** |
+| Refrigerant step-down (AIM Act GWP limits) decides the chiller you may install | 8 | 6 | 6 | 8 | 7.0 | dropped — the 2025 technology-transitions rule is under EPA reconsideration, so the load-bearing number expires inside a year, and the 40 CFR part 84 pages did not evidence a GWP ceiling on first probe |
+| 48V DC busbar vs AC PDU: where the power chain's conversion loss actually sits (ORV3) | 9 | 9 | 6 | 8 | 8.0 | dropped — `opencompute.org` document PDFs were unreachable to the verifier on this run (`status=unreachable`), so the ORV3 spec could not carry a row without a mirror |
+| Li-ion UPS cabinet spacing and fire-code thresholds for a battery room | 8 | 8 | 5 | 9 | 7.4 | dropped — `codes.iccsafe.org` returns a captcha page to the verifier and NFPA 855 is a licensed paywall, so no threshold could be verified |
+
+## Gate result
+<!-- written by scripts/evergreen_gate.py — do not hand-edit; re-run the gate if you edit a row -->
+
+## Gate result
+
+<!-- evergreen-gate:start -->
+<!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=5 hosts=2 decision="sha1:2359be0124" dedup="matched a prior artifact: 2026-11-03_your-backup-66-mw-permi" window_days=180 checked_at=2026-11-17T18:06:54+00:00 -->
+<!-- evergreen-gate:end -->

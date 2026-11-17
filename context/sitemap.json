@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T17:42:36Z",
+  "updated_at": "2026-11-17T18:16:47Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7031,6 +7031,24 @@
       "date": "2026-11-13",
       "public": true,
       "url": "https://giniloh.com/your-console-rose-500-instead/"
+    },
+    {
+      "slug": "2026-11-17_your-1320-gallon-blind-spot",
+      "title": "Your 1,320-Gallon Blind Spot",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Old rule, new fuel estate",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-17",
+      "public": false
     },
     {
       "slug": "2026-11-17_your-approval-gate-kills-20",
