@@ -1,0 +1,112 @@
+{
+  "slug": "your-8-gib-node-sells-6-1",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Server memory module pulled from a node tray, one slot dark, long shadow across brushed steel.",
+      "caption": "An unmarked server memory module sits in a node tray with one adjacent slot dark, giving physical form to the hidden reserve that never reaches a pod.",
+      "title": "Server memory module hidden reserve",
+      "bytes": 233194,
+      "sha256": "sha256:e9239bd607f02b1350ae3331cdc6539e"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "On a brushed steel service bench inside a data hall, a single unmarked server memory module with a graphite heat spreader sits lower-right, partially pulled from a black anodized node tray whose adjacent slot is covered by a blanking plate. Hard softbox key light from the left rakes across the metal, throwing a long cobalt-tinted shadow to the left. Bone white, graphite, and cobalt palette; crisp contact shadow, 85mm tilt-shift, three-quarter angle, shallow depth of field, fine film grain, no text, no logos, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, typography, logos, UI",
+  "rationale": "Studio product shot keeps the hero hardware legible and physical without any on-screen or printed text, which the previous frame violated; the single memory module and dark empty bay make the hidden reserve visible, while the data-hall bench roots it in the site's industrial world.",
+  "cue": "a reserve worth 24% of an 8 GiB node",
+  "subject": "a server memory module pulled part-way from a node tray whose adjacent slot is covered by a blanking plate, on a brushed-steel service bench in a data hall",
+  "core_thesis": "A node pool's spec sheet is not the capacity a team can promise, because the scheduler advertises memory minus a provider-set reserve and an eviction buffer.",
+  "core_conflict": "Advertised node capacity versus allocatable memory; GKE's 24% reserve against AKS's 8% on the same 8 GiB node, plus the kernel's throttle point below the limit.",
+  "composition": "extreme asymmetry with the module lower-right, long cast shadow stretching left, three-quarter angle",
+  "alt_text": "Your 8 GiB Node Sells 6.1. Server memory module pulled from a node tray, one slot dark, long shadow across brushed steel.",
+  "caption": "Your 8 GiB Node Sells 6.1: Capacity plans break where GKE keeps 24% but AKS keeps 8% of an 8 GiB node.",
+  "title": "Your 8 GiB Node Sells 6.1",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-8-gib-node-sells-6-1/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 286438,
+  "sha256": "sha256:1998bc38c9e083130bb0061ab94f6aad4b726962b181e97a4f0efd233c79ea87",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 286438,
+    "quality": 88,
+    "sha256": "sha256:1998bc38c9e083130bb0061ab94f6aad4b726962b181e97a4f0efd233c79ea87",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:e6d83ef58181b7c00d83e9d72f273c4b85aec462db8803f64ac26cfbc1011fd5",
+  "render_phash": "18e618e61ae618e7121f7007c0f960f939311e330f0d0ccb04610031003f007f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A black rectangular server chassis sits on a brushed metal surface with a green circuit board module partially inserted into its right side, casting a shadow to the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "A partially removed server memory module from a node tray serves as a direct visual metaphor for the article's theme of memory being reserved and unavailable for scheduling."
+  },
+  "source_hash": "sha256:0de171b6a02666c0cdd4296d86aab5eb",
+  "source_chars": 5717,
+  "task_id": "2bd8816e8ffd41b3b7770f3d1394354b",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/2bd8816e8ffd41b3b7770f3d1394354b_1794941002994.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "On a brushed steel service bench inside a data hall, a single unmarked server memory module with a graphite heat spreader sits lower-right, partially pulled from a black anodized node tray whose adjacent slot is covered by a blanking plate. Hard softbox key light from the left rakes across the metal, throwing a long cobalt-tinted shadow to the left. Bone white, graphite, and cobalt palette; crisp contact shadow, 85mm tilt-shift, three-quarter angle, shallow depth of field, fine film grain, no text, no logos, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-17T18:43:36+00:00",
+  "overlay": {
+    "kicker": "KUBERNETES NODE MEMORY RESERVES",
+    "title": "YOUR 8 GIB NODE SELLS 6.1",
+    "hook": "Capacity plans break where GKE keeps 24% but AKS keeps 8% of an 8 GiB node",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.09,
+    "target": 5.5,
+    "clutter": 0.384,
+    "region_rgb": [
+      107,
+      123,
+      141
+    ],
+    "binding_rgb": [
+      159,
+      169,
+      181
+    ],
+    "title_lines": [
+      "YOUR 8 GIB NODE",
+      "SELLS 6.1"
+    ],
+    "subject": 0.1,
+    "ink_subject": 0.033,
+    "spike": 0.176,
+    "generated_at": "2026-11-17T18:43:36+00:00"
+  }
+}

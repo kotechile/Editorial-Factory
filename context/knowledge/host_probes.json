@@ -329,6 +329,14 @@
  },
  {
   "host": "cloud.google.com",
+  "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/plan-node-sizes",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "enterprise_tech_leadership",
+  "note": "node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text."
+ },
+ {
+  "host": "cloud.google.com",
   "url": "",
   "verdict": "mentioned",
   "as_of": "2026-11-04",
@@ -1624,6 +1632,14 @@
   "note": "as usual (\"Median wages (2025) $18.82 hourly, $39,150 annual\"), and `kress.com/en-us/robotic-mowers` prints list and promotional prices in one block (\"Kress RTK\u207f \u00bc-acre robotic lawn mower K"
  },
  {
+  "host": "kubernetes.io",
+  "url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "enterprise_tech_leadership",
+  "note": "node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text."
+ },
+ {
   "host": "labor.illinois.gov",
   "url": "",
   "verdict": "unreachable",
@@ -1702,6 +1718,14 @@
   "as_of": "2026-11-12",
   "vertical": "demand_sensing_advanced_sop",
   "note": "vergreen).** Carries the figure as plain text and fetches first try: `learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-planning-performance` (**14 KB \u2014 and the `403`"
+ },
+ {
+  "host": "learn.microsoft.com",
+  "url": "https://learn.microsoft.com/en-us/azure/aks/node-resource-reservations",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "enterprise_tech_leadership",
+  "note": "node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text."
  },
  {
   "host": "leg.state.nv.us",
@@ -2574,6 +2598,14 @@
   "as_of": "2026-10-13",
   "vertical": "",
   "note": "ices; its blog: a worked \"80 amps of your 100-amp service\" example), `span.io` (48A / 11.5 kW dynamic against the \"24-40A (5.7-9.6 kW)\" a worst-case fixed install is limited to). Fails or ca"
+ },
+ {
+  "host": "sre.google",
+  "url": "https://sre.google/sre-book/handling-overload/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "enterprise_tech_leadership",
+  "note": "node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text."
  },
  {
   "host": "ssa.gov",

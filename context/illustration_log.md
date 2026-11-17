@@ -519,3 +519,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-17 | `your-hidden-461-double-counts` | control_tower_exception_orchestration | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-hidden-461-double-counts/featured.jpg` |
 | 2026-11-17 | `your-judges-80-overpays-39-points` | ai_observability_qa | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-judges-80-overpays-39-points/featured.jpg` |
 | 2026-11-17 | `your-1320-gallon-blind-spot` | nhil_infrastructure_ops | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-1320-gallon-blind-spot/featured.jpg` |
+| 2026-11-17 | `your-8-gib-node-sells-6-1` | enterprise_tech_leadership | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-8-gib-node-sells-6-1/featured.jpg` |

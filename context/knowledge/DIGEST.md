@@ -72,6 +72,10 @@ A comma-grouped figure cell cannot evidence the sentence it is quoted from: cita
 
 A collage header can pass the art director and the picture desk and still ship with an unreadable type block: on 2026-11-17 the paper_collage render put the kicker, title and hook over paper modules, and the hook line was buried behind the collage on the live page. The overlay's empty-spot search cannot see busy detail, and --anchor only moves the block, it does not clear the ground. Two consequences: (1) inspect the composited featured.jpg with vision before the push, not just the render, and (2) when the copy is three lines, commission a treatment whose composition leaves an open field (a cinematic still with a dark scrim beats a dense collage), because illustration_overlay.py re-derives its copy from the article each run and ignores a hook cleared in featured.json.
 
+## 2026-11-17 · enterprise_tech_leadership · pitfall
+
+publish.py can finish GREEN with no illustration: the artifact leaves the push without image_* frontmatter and the CMS post is created with featured_media 0, so the first live render is hero-less and og:image falls back to /default-share-image.png. Check the published artifact for image_path immediately after publish; repair in-run with illustration_creator.py --apply <artifact>, then wp_draft.py --slug <slug> --refresh --refresh-live (attaches media, keeps the post live), then toggle status draft->publish via the WordPress client (credentials_for + load_env) because a same-status PATCH does not fire the front build; the build itself takes 15-20 minutes.
+
 ## 2026-11-17 · control_tower_exception_orchestration · pitfall
 
 The frontier review can ACCEPT on attempt 1 and still delete the earned inline internal link: the _final.md came back with zero [text](/path) links on the 2026-11-17 double-count run, which article_shape would have held at the push. Grep the final for '\[[^]]*\](/' and restore the link before running gate, not after.
@@ -131,6 +135,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | california.public.law | fetchable | 2026-11-12 | expat_cross_border_relocation | vergreen).** Carries the figure as plain text and fetches first try: `california.public.law/codes/ca_rev_and_tax_code_se |
 | circleci.com | fetchable | 2026-10-21 | enterprise_build_vs_buy | la "job duration / 60 × cost factor"). Fetches, with a matcher trap: `circleci.com/pricing/` (~16 KB) states its compute |
 | cloud.google.com | fetchable | 2026-11-12 |  | iff brief.** Carries the figure as plain text and fetches first try: `cloud.google.com/vertex-ai/generative-ai/pricing`  |
+| cloud.google.com | fetchable | 2026-11-17 | enterprise_tech_leadership | node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text. |
 | cmr.berkeley.edu | fetchable | 2026-10-22 | demand_sensing_advanced_sop | vergreen).** Carries the figure as plain text and fetches first try: `cmr.berkeley.edu` (a publisher's article record —  |
 | coned.com | fetchable | 2026-10-26 | home_equity_tco | also pay for electric generation at prices determined by the CCA"); `coned.com/en/accounts-billing/your-bill/time-of-use |
 | consumerfinance.gov | fetchable | 2026-11-09 | home_equity_tco | — so never write "the servicer has no duty to volunteer the date"); `consumerfinance.gov/ask-cfpb/what-is-private-mortga |
@@ -202,11 +207,13 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | irs.gov | fetchable | 2026-11-05 | expat_cross_border_relocation | subpart before assuming govinfo is dead.** Also carrying the figure: `irs.gov/instructions/i8621` (96.7 KB — the definit |
 | josie.lol | fetchable | 2026-11-17 | workstation_compute_economics | workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registe |
 | kress.com | fetchable | 2026-10-31 | yard_robotics | as usual ("Median wages (2025) $18.82 hourly, $39,150 annual"), and `kress.com/en-us/robotic-mowers` prints list and pro |
+| kubernetes.io | fetchable | 2026-11-17 | enterprise_tech_leadership | node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text. |
 | labor.maryland.gov | fetchable | 2026-10-22 | home_ops_execution | igning" — the spelled-out "one third" makes a clean digit-free row); `labor.maryland.gov/license/mhic/mhiccontracts.shtm |
 | law.cornell.edu | fetchable | 2026-11-09 | home_infrastructure_lifecycle_tco | , 2026", dated by the `88 FR 73098` citation a row can lead on); and `law.cornell.edu/uscode/text/42/7675` (the phasedow |
 | law.lis.virginia.gov | fetchable | 2026-11-12 | expat_cross_border_relocation | e than 30 days", and (B)'s "more than 200 days" statutory resident); `law.lis.virginia.gov/vacode/title58.1/chapter3/sec |
 | lawnlove.com | fetchable | 2026-10-31 | yard_robotics | vergreen).** Carries the figure as plain text and fetches first try: `lawnlove.com/blog/lawn-mowing-cost/` — a mowing ma |
 | learn.microsoft.com | fetchable | 2026-11-12 | demand_sensing_advanced_sop | vergreen).** Carries the figure as plain text and fetches first try: `learn.microsoft.com/en-us/dynamics365/supply-chain |
+| learn.microsoft.com | fetchable | 2026-11-17 | enterprise_tech_leadership | node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text. |
 | leg.state.nv.us | fetchable | 2026-10-15 |  | Public Procurement Act, so it binds public bodies, not a homeowner); `leg.state.nv.us` NRS-624.html (the private-owner p |
 | leginfo.legislature.ca.gov | fetchable | 2026-10-15 |  | rnia.public.law` (**a fetchable mirror of the California codes where `leginfo.legislature.ca.gov` answers HTTP 403 to th |
 | legislature.mi.gov | fetchable | 2026-10-19 | expat_cross_border_relocation | as of the first January 1 after they were substantially completed); `legislature.mi.gov/Laws/MCL?objectName=mcl-<section |
@@ -255,6 +262,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | shipzil.com | fetchable | 2026-11-17 | control_tower_exception_orchestration | Live cross-platform carrier-API monitor; primary for its own incident and uptime counts, and explicit about its limits ( |
 | snowjoe.com | fetchable | 2026-10-24 | outdoor_power_equipment | ials and labor", and "designed to melt 1\" - 3\" of snow per hour"); `snowjoe.com/collections/snow-blowers` (the 11-inch |
 | span.io | fetchable | 2026-10-13 |  | ices; its blog: a worked "80 amps of your 100-amp service" example), `span.io` (48A / 11.5 kW dynamic against the "24-40 |
+| sre.google | fetchable | 2026-11-17 | enterprise_tech_leadership | node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text. |
 | standby.lbl.gov | fetchable | 2026-10-20 | smart_home_telemetry | annual energy use to space heating and air conditioning, 2020); and `standby.lbl.gov` (Berkeley Lab: standby power is "5 |
 | strategosinc.com | fetchable | 2026-10-22 | demand_sensing_advanced_sop | 10%-of-active-locations method and the fast-mover/high-value focus); `strategosinc.com` (an undated consultancy page car |
 | support.apple.com | fetchable | 2026-11-06 | consumer_asset_repair_replace_tco | d/MacBook 1000, iPod 400, each at "80% of their original capacity"); `support.apple.com/en-us/102888` (the *definition*  |

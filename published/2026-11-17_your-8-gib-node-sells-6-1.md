@@ -10,6 +10,12 @@ date: 2026-11-17
 slug: your-8-gib-node-sells-6-1
 meta_title: "Your 8 GiB Node Sells 6.1: The Hidden Reserve"
 meta_description: "A node's spec sheet overstates what a team can schedule: GKE reserves a quarter of a small node's memory, AKS an eighth, and the kernel throttles the rest."
+image_path: "context/assets/illustrations/your-8-gib-node-sells-6-1/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "Your 8 GiB Node Sells 6.1. Server memory module pulled from a node tray, one slot dark, long shadow across brushed steel."
+image_caption: "Your 8 GiB Node Sells 6.1: Capacity plans break where GKE keeps 24% but AKS keeps 8% of an 8 GiB node."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
