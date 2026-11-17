@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T11:10:20Z",
+  "updated_at": "2026-11-17T11:41:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7031,6 +7031,24 @@
       "date": "2026-11-13",
       "public": true,
       "url": "https://giniloh.com/your-console-rose-500-instead/"
+    },
+    {
+      "slug": "2026-11-17_your-approval-gate-kills-20",
+      "title": "Your Approval Gate Kills 20%: The Bill Moved Into Margin",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the bill changed lines",
+        "By the numbers",
+        "Where the gate lands",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-17",
+      "public": false
     },
     {
       "slug": "2026-11-17_your-check-sees-0086ms-not-40",

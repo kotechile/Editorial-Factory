@@ -1,0 +1,114 @@
+{
+  "slug": "your-approval-gate-kills-20",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Lowered approval gate arm blocking server modules contrasted with a unit-cost meter dial.",
+      "caption": "The approval gate blocks only experimentation while a unit-cost meter governs the entire production bill.",
+      "title": "Approval Gate vs Unit-Cost Meter",
+      "bytes": 404565,
+      "sha256": "sha256:a0884c6b22c483f8cd9c324d6297ef37"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen editorial cut-paper collage on a control room desk. Left half: a lowered red-and-white barrier gate arm blocks a stack of graphite server modules cut from matte paper with halftone newsprint texture. Right half: a circular bone-white meter gauge with a safety-yellow needle points across a rust-red backing. Hand-torn rag paper with visible fiber, physical cast shadows under each layer, one raking light from the left, muted palette of graphite, safety yellow, bone white, generous negative space, no legible print.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "Paper collage suits this conceptual policy dilemma: no physical facility or machine is the subject, so cut-paper silhouettes can state the gate-versus-meter contrast with editorial clarity and material presence. The split-screen diptych enforces the two-scenario duality required by the hard rules.",
+  "cue": "the bill moved into margin",
+  "subject": "a lowered approval gate arm blocking a stack of server modules contrasted with a unit-cost meter dial",
+  "core_thesis": "AI spend moved from the pauseable fifth to the cost-of-revenue four-fifths, so the protective control is a unit-cost meter, not an approval gate.",
+  "core_conflict": "Approval gates cut 20% of initiatives while unit-cost funding loses only 7%, because gates only reach the small pauseable development budget.",
+  "composition": "split-screen diptych with left-right scenario contrast",
+  "alt_text": "Your Approval Gate Kills 20%. Lowered approval gate arm blocking server modules contrasted with a unit-cost meter dial.",
+  "caption": "Your Approval Gate Kills 20%: AI spend now sits mostly in production, which is cost of revenue, so an approval gate.",
+  "title": "Your Approval Gate Kills 20%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-approval-gate-kills-20/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399949,
+  "sha256": "sha256:747dedc374d2c701e264b5da21ec1fed3fb64085a0e5ad18b9d560288c1b4f86",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399949,
+    "quality": 56,
+    "sha256": "sha256:747dedc374d2c701e264b5da21ec1fed3fb64085a0e5ad18b9d560288c1b4f86",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:756e883d62161c155f223551bd9d8a1956c8b7db31c79da56db7e7846e11da14",
+  "render_phash": "7a7f3e7f3e7f3e7f7273cc79c8754e6d3c694d870d87098d9389098101810181",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen paper collage with gray rectangular panels bearing dotted grilles on the left, crossed diagonally by a red-and-white striped paper bar, and a circular red-and-white dial with a yellow pointer on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The diptych directly stages the article's contrast between an approval gate over server hardware and a unit-cost meter dial."
+  },
+  "source_hash": "sha256:bec8a7188617391a72254d8980f278b6",
+  "source_chars": 5074,
+  "task_id": "abf56417cf6e37a29239587a5c1c93cc",
+  "credits": 18.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_69fac61d85b563cbcf578dc4419d197a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen editorial cut-paper collage on a control room desk. Left half: a lowered red-and-white barrier gate arm blocks a stack of graphite server modules cut from matte paper with halftone newsprint texture. Right half: a circular bone-white meter gauge with a safety-yellow needle points across a rust-red backing. Hand-torn rag paper with visible fiber, physical cast shadows under each layer, one raking light from the left, muted palette of graphite, safety yellow, bone white, generous negative space, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-17T11:39:20+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR APPROVAL GATE KILLS 20%",
+    "hook": "AI spend now sits mostly in production, which is cost of revenue, so an approval gate",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 135,
+    "contrast": 6.0,
+    "target": 5.5,
+    "clutter": 0.492,
+    "region_rgb": [
+      162,
+      152,
+      140
+    ],
+    "binding_rgb": [
+      93,
+      84,
+      75
+    ],
+    "title_lines": [
+      "YOUR APPROVAL",
+      "GATE KILLS 20%"
+    ],
+    "subject": 0.32,
+    "ink_subject": 0.143,
+    "spike": 0.481,
+    "generated_at": "2026-11-17T11:39:20+00:00"
+  }
+}

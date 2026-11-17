@@ -383,6 +383,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-13 | career_velocity_equity_engineering | your-100-hour-is-not-208000 | Your $100 Hour Is Not $208,000 | https://pressflow.aichieve.net/published/2026-11-13_your-100-hour-is-not-208000.md | reader site only |
 | 2026-11-17 | ai_observability_qa | your-warning-leaves-701-wrong | Your Warning Leaves 70.1% Wrong | https://pressflow.aichieve.net/published/2026-11-17_your-warning-leaves-701-wrong.md | reader site only |
 | 2026-11-17 | nhil_infrastructure_ops | your-check-sees-0086ms-not-40 | Your Check Sees 0.086ms, Not 40 | https://pressflow.aichieve.net/published/2026-11-17_your-check-sees-0086ms-not-40.md | reader site only |
+| 2026-11-17 | enterprise_tech_leadership | your-approval-gate-kills-20 | Your Approval Gate Kills 20%: The Bill Moved Into Margin | https://pressflow.aichieve.net/published/2026-11-17_your-approval-gate-kills-20.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

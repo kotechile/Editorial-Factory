@@ -511,3 +511,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-13 | `your-1-8-inch-screen-leaks-embers` | resilient_home_assets | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-1-8-inch-screen-leaks-embers/featured.jpg` |
 | 2026-11-17 | `your-warning-leaves-701-wrong` | ai_observability_qa | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-warning-leaves-701-wrong/featured.jpg` |
 | 2026-11-17 | `your-check-sees-0086ms-not-40` | nhil_infrastructure_ops | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-check-sees-0086ms-not-40/featured.jpg` |
+| 2026-11-17 | `your-approval-gate-kills-20` | enterprise_tech_leadership | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-approval-gate-kills-20/featured.jpg` |
