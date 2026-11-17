@@ -1,6 +1,6 @@
 # Signals: nhil_infrastructure_ops — 2026-11-17
 **Window:** 2026-10-18 → 2026-11-17
-**Queries run:** 22 (web_search fan-out across the vertical's angles: agentic NetOps guardrails, closed-loop self-healing telemetry, rack power density, interconnection queues / behind-the-meter power, sovereign SLM inference; arXiv API for cs.NI in-window; publisher date checks for every candidate anchor)
+**Queries run:** 17 web fan-outs across the vertical's angles (agentic NetOps guardrails, closed-loop self-healing telemetry, rack power density, interconnection queues / behind-the-meter power, sovereign SLM inference) plus 2 arXiv API queries and 7 primary pages fetched and read (Cisco/Omdia PDF, HBR sponsored piece, BBC article, Reuters via Irish Examiner, ProtoThema, OCP Rack & Power index, FERC docket). Publisher date checks were run on every candidate anchor; three promising legs were dropped on freshness (Cisco/Omdia 2026-09-23, Mt. Diablo spec 2026-10-08, OCP Summit 2026-10-12→15).
 
 | # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
 |---|--------|-----------|------|--------------|-------|-----------|

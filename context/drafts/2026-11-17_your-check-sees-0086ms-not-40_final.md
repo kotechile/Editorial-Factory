@@ -13,8 +13,8 @@ sources:
 image_path: "context/assets/illustrations/your-check-sees-0086ms-not-40/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Your Check Sees 0.086Ms, Not 40. Network tap probe still lit on an old route port while a fresh patch cord carries the serving path on a"
-image_caption: "Your Check Sees 0.086Ms, Not 40: Microsoft spent Thursday and Friday bringing Exchange Online back, telling customers."
+image_alt: "Isometric cutaway of a server rack where a tap probe stays lit on an old route while a fresh patch cord carries the live serving path."
+image_caption: "A tap probe keeps reading the old route after the serving path moves: the check passes, the service does not."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
