@@ -1,6 +1,6 @@
 {
   "slug": "fuel-surcharge-peg-mpg-audit",
-  "revision": 8,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -65,6 +65,30 @@
       "title": "The Freight Fuel Formula",
       "bytes": 1327292,
       "sha256": "sha256:217b92a3dc6ed485e5e9058bb44b09830c80b11113c553dffe0dd7cf08c060bd"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three di",
+      "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+      "title": "The Freight Fuel Formula",
+      "bytes": 1331894,
+      "sha256": "sha256:bf65df3a44d4972e8ecdd64c102cc3a00213314c307b39e3e123615816dffd63"
+    },
+    {
+      "revision": 9,
+      "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three di",
+      "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+      "title": "The Freight Fuel Formula",
+      "bytes": 381379,
+      "sha256": "sha256:b33a489ff3930c33c479ab16346c8b070a57df5a41ab5c6a0d16fc861e178d45"
+    },
+    {
+      "revision": 10,
+      "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three di",
+      "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+      "title": "The Freight Fuel Formula",
+      "bytes": 381379,
+      "sha256": "sha256:b33a489ff3930c33c479ab16346c8b070a57df5a41ab5c6a0d16fc861e178d45"
     }
   ],
   "style": "clay_render",
@@ -89,12 +113,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1331894,
-  "sha256": "sha256:bf65df3a44d4972e8ecdd64c102cc3a00213314c307b39e3e123615816dffd63",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/fuel-surcharge-peg-mpg-audit/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 381379,
+  "sha256": "sha256:b33a489ff3930c33c479ab16346c8b070a57df5a41ab5c6a0d16fc861e178d45",
   "source_hash": "sha256:c1b8fda70db70895f31c15ee2682fcd2",
   "source_chars": 3633,
   "task_id": "446fcd81a208bd7e1f6c5d6f9238943e",
@@ -116,25 +140,42 @@
     "kicker": "FREIGHT LOGISTICS // FUEL SURCHARGES",
     "title": "THE FREIGHT FUEL FORMULA",
     "hook": "Three carrier numbers that decide your freight fuel bill",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 60,
-    "contrast": 5.9,
+    "scrim": 120,
+    "contrast": 7.29,
     "target": 5.5,
-    "clutter": 0.364,
+    "clutter": 0.259,
     "region_rgb": [
-      69,
-      61,
-      49
+      62,
+      54,
+      43
     ],
     "binding_rgb": [
-      148,
-      128,
-      103
+      88,
+      75,
+      59
     ],
     "title_lines": [
       "THE FREIGHT",
       "FUEL FORMULA"
-    ]
+    ],
+    "subject": 0.099,
+    "ink_subject": 0.015,
+    "spike": 0.27,
+    "generated_at": "2026-10-09T00:46:56+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 381379,
+    "quality": 84,
+    "sha256": "sha256:b33a489ff3930c33c479ab16346c8b070a57df5a41ab5c6a0d16fc861e178d45",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

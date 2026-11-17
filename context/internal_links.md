@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-13T14:21:07+00:00
+# Internal-link candidates — 2026-11-16T14:19:10+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 62 live article(s), 16 other target(s)
+## giniloh.com — 64 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -40,6 +40,7 @@ Category hubs this front serves: —
 - [Why One Share Outvotes 5,300 Staff](https://giniloh.com/why-one-share-outvotes-5300-staff/) — —
 - [Why Your Fridge Upgrade Pays $12.50](https://giniloh.com/why-your-fridge-upgrade-pays-12-50/) — —
 - [Why Your Swap Died at 25%](https://giniloh.com/why-your-swap-died-at-25/) — —
+- [Your $100 Hour Is Not $208,000](https://giniloh.com/your-100-hour-is-not-208000/) — —
 - [Your $125 Exam Costs 122 Hours](https://giniloh.com/your-125-exam-costs-122-hours/) — —
 - [Your $130,000 Cap Costs the Credit](https://giniloh.com/your-130000-cap-costs-the-credit/) — —
 - [Your $350,000 Passport Isn't Europe](https://giniloh.com/your-350000-passport-isnt-europe/) — —
@@ -53,6 +54,7 @@ Category hubs this front serves: —
 - [Your Cheap Board Now Costs $385](https://giniloh.com/your-cheap-board-costs-385/) — —
 - [Your Cheap Part, a $599 Bill](https://giniloh.com/your-cheap-part-a-599-bill/) — —
 - [Your Child Inherits a 40% Bill](https://giniloh.com/your-bequest-carries-40-tax/) — —
+- [Your Collar Kills the 12-Month Clock](https://giniloh.com/your-collar-kills-the-long-term-clock/) — —
 - [Your Console Rose $500 Instead](https://giniloh.com/your-console-rose-500-instead/) — —
 - [Your Disks: 35% Dead by Year Six](https://giniloh.com/your-disks-35-dead-by-year-six/) — —
 - [Your ESPP Clock: 18 Months, Not 12](https://giniloh.com/your-espp-clock-is-18-months-not-12/) — —
@@ -85,7 +87,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 95 live article(s), 22 other target(s)
+## wellroost.com — 96 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -134,6 +136,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your $6.19 Oil Heat: The Reserve Trap](https://wellroost.com/your-oil-heat-619-one-day-of-relief/) — Energy & Efficiency
 - [Your 1-Acre Mower's 0.4-Acre Trap](https://wellroost.com/your-1-acre-mowers-04-acre-trap/) — Yard Robots & Automation
 - [Your 1.5-Acre Mower's 29% Gap](https://wellroost.com/your-1-5-acre-mowers-29-gap/) — Yard Robots & Automation
+- [Your 1/8-Inch Screen Leaks Embers](https://wellroost.com/your-1-8-inch-screen-leaks-embers/) — Energy & Efficiency
 - [Your 12-Month Owner-Builder Trap](https://wellroost.com/owner-builder-permit-your-name-their-job/) — Tools & Equipment
 - [Your 3,000-PSI Washer's 1.1 GPM Trap](https://wellroost.com/your-3000-psi-washers-11-gpm-trap/) — Outdoor Power & Snow Equipment
 - [Your 4.3% Cut Hides 751,000 Hikes](https://wellroost.com/your-43-cut-hides-751000-hikes/) — Home Cost Decisions
@@ -550,9 +553,9 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1316 `your-truck-mile-costs-2-2-driver-minutes` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1297 `skus-fail-the-1-32-cut` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1291 `your-carriers-750000-doesnt-cover-cargo` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1287 `your-chargeback-misses-40-of-the-bill` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1285 `your-sandbox-boot-tax-110x-then-nothing` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1707 `your-100-hour-is-not-208000` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1704 `your-collar-kills-the-long-term-clock` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1701 `your-console-rose-500-instead` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1698 `your-75000-room-misses-the-stock` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1689 `nobody-pays-your-rounds-price` — published in the CMS but absent from the frontend sitemap

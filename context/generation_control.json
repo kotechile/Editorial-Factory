@@ -1,10 +1,9 @@
 {
-  "_note": "Master switches for the two generation loops. Supabase `factory_config` key `generation_control` is the runtime source of truth: PressFlow writes it, scripts/generation_gate.py reads it at the start of every pipeline run. This file is the fallback when Supabase is unreachable \u2014 keep it in sync by hand if you change a switch while Supabase is down.",
   "articles_enabled": true,
   "software_enabled": true,
   "disabled_verticals": {},
-  "updated_at": null,
-  "updated_by": "registry-default",
+  "updated_at": "2026-11-16T23:45:19+00:00",
+  "updated_by": "host-cli",
   "software_run_requested_at": null,
   "software_run_handled_at": null,
   "software_run_note": null

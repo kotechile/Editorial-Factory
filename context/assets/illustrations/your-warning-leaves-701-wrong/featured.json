@@ -1,0 +1,113 @@
+{
+  "slug": "your-warning-leaves-701-wrong",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A red deny gate closed across one data-center rack row while an adjacent row remains open.",
+      "caption": "A closed red deny gate across one data-center rack row and an open adjacent row visualize the difference between a warning that is ignored and a deny path that changes outcomes.",
+      "title": "Deny gate across a data-center rack row",
+      "bytes": 326300,
+      "sha256": "sha256:ffd1be7cac4a4ade5f9cd33430fb84fc"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A 200mm telephoto compression photograph down a data center hot aisle, a bright oxidised-red steel deny gate closed across the left rack row, its safety-yellow latch catching a single overhead cool-white light from the right, while a parallel open rack row on the right recedes toward a dark blue vanishing point. Charcoal rack cabinets with cobalt status LEDs, galvanised steel floor, compressed perspective, crystal-clear telephoto clarity, one-point perspective with gate off-center left. No people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story is systemic software infrastructure and enforcement at scale; a compressed telephoto industrial shot of a data hall makes the deny path physical and legible without reducing the story to a single product or document.",
+  "cue": "a release gate needs a deny path",
+  "subject": "a bright red physical deny gate closed across a data-center rack row, with an adjacent open rack row in the same hallway",
+  "core_thesis": "The intervention that changes an agent's error rate is the one that withholds the failed effect rather than merely warning about it; a release gate needs a deny path and permission to answer \"cannot be determined\" before it needs a better judge.",
+  "core_conflict": "Detection already works, but enforcement does not: models acknowledge warnings and still print the faulty value, so a denial mechanism is the only thing that changes outcomes.",
+  "composition": "compressed telephoto one-point perspective down the aisle, gate off-center left third blocking forward motion, rack rows receding to a vanishing point",
+  "alt_text": "AI Agent Warnings Leave Answers 70.1% Wrong. A red deny gate closed across one data-center rack row while an adjacent row remains open.",
+  "caption": "AI Agent Warnings Leave Answers 70.1% Wrong: A working check's warning leaves 70.1% wrong; withholding the value leaves 1.7%.",
+  "title": "AI Agent Warnings Leave Answers 70.1% Wrong",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-warning-leaves-701-wrong/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 402367,
+  "sha256": "sha256:ddc666d0bd1c0096ad080e57af518ae044bb0d1a48d2d1ef1935916211157d13",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402367,
+    "quality": 88,
+    "sha256": "sha256:ddc666d0bd1c0096ad080e57af518ae044bb0d1a48d2d1ef1935916211157d13",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ccdf08f22648b0c996c30532b64b3ee4a904f9d6a953def6ddc93d50c6b5ddae",
+  "render_phash": "24cb24cb22bb24cb232ba32a0f2b0d2b2f2b0b2ba8eb28ea20fa20fb20fb20fb",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A data-center aisle runs between two rows of server racks toward a dark vanishing point, with a red slatted gate panel and a yellow latch box at the left foreground.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.74,
+    "reason": "The red gate across the data-center rack row concretely visualizes the article's release-gate/deny-path mechanism, with the racks signaling the database and tooling context."
+  },
+  "source_hash": "sha256:780e58288c95c50d8dacdb77c15037c6",
+  "source_chars": 5917,
+  "task_id": "384b72e8fd1b2b4d9a7f950fb8e5faa2",
+  "credits": 5.0,
+  "cost_ms": 64,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/384b72e8fd1b2b4d9a7f950fb8e5faa2_1794912020686.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A 200mm telephoto compression photograph down a data center hot aisle, a bright oxidised-red steel deny gate closed across the left rack row, its safety-yellow latch catching a single overhead cool-white light from the right, while a parallel open rack row on the right recedes toward a dark blue vanishing point. Charcoal rack cabinets with cobalt status LEDs, galvanised steel floor, compressed perspective, crystal-clear telephoto clarity, one-point perspective with gate off-center left. No people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-17T10:40:33+00:00",
+  "overlay": {
+    "kicker": "AI AGENT OBSERVABILITY // TOOL FAULTS",
+    "title": "AI AGENT WARNINGS LEAVE ANSWERS 70.1% WRONG",
+    "hook": "A working check's warning leaves 70.1% wrong; withholding the value leaves 1.7%",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 12.22,
+    "target": 4.5,
+    "clutter": 0.082,
+    "region_rgb": [
+      26,
+      30,
+      38
+    ],
+    "binding_rgb": [
+      40,
+      43,
+      50
+    ],
+    "title_lines": [
+      "AI AGENT WARNINGS",
+      "LEAVE ANSWERS",
+      "70.1% WRONG"
+    ],
+    "subject": 0.067,
+    "ink_subject": 0.003,
+    "spike": 0.028,
+    "generated_at": "2026-11-17T10:40:33+00:00"
+  }
+}

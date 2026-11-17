@@ -1,6 +1,6 @@
 {
   "slug": "cache-boundary-decides-input-bill",
-  "revision": 8,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -65,6 +65,30 @@
       "title": "The Cost Of Prompt Layout",
       "bytes": 271698,
       "sha256": "sha256:a38ca76ef0886fbeb895a05e61b838f12c51f2cb2fe1a915689bf80786174dc8"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The Cost Of Prompt Layout. How Prompt Layout Sets AI Bills. Optical glass and brass prism assembly fracturing a solid beam of",
+      "caption": "The Cost Of Prompt Layout: How prompt layout controls the cost of agent workloads.",
+      "title": "The Cost Of Prompt Layout",
+      "bytes": 404515,
+      "sha256": "sha256:5c57311e272edebef7c75134ddd4c935beab8c8afd3f6653154d6c37ab129766"
+    },
+    {
+      "revision": 9,
+      "alt_text": "The Cost Of Prompt Layout. How Prompt Layout Sets AI Bills. Optical glass and brass prism assembly fracturing a solid beam of",
+      "caption": "The Cost Of Prompt Layout: How prompt layout controls the cost of agent workloads.",
+      "title": "The Cost Of Prompt Layout",
+      "bytes": 404515,
+      "sha256": "sha256:5c57311e272edebef7c75134ddd4c935beab8c8afd3f6653154d6c37ab129766"
+    },
+    {
+      "revision": 10,
+      "alt_text": "The Cost Of Prompt Layout. How Prompt Layout Sets AI Bills. Optical glass and brass prism assembly fracturing a solid beam of",
+      "caption": "The Cost Of Prompt Layout: How prompt layout controls the cost of agent workloads.",
+      "title": "The Cost Of Prompt Layout",
+      "bytes": 404515,
+      "sha256": "sha256:5c57311e272edebef7c75134ddd4c935beab8c8afd3f6653154d6c37ab129766"
     }
   ],
   "style": "studio_object",

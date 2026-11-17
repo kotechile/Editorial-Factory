@@ -1,6 +1,6 @@
 {
   "slug": "safety-stock-forecast-error-not-demand-noise",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -21,6 +21,14 @@
       "sha256": "sha256:600d4b5f45d24c2cce92c5d24a6f925b",
       "generated_at": "2026-10-08T21:43:54+00:00",
       "source_hash": "sha256:0a7822945d8ba1d14a29bec6023895cd"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Towering warehouse pallet racks stacked deep with shrink-wrapped inventory receding into atmospheric haze.",
+      "caption": "A single statistical choice in a planning formula determines the physical scale of idle inventory held across the network.",
+      "title": "Warehouse Safety Stock Buffer Scale",
+      "bytes": 332184,
+      "sha256": "sha256:d3e49828d53808b855c30ee3a79c9296"
     }
   ],
   "style": "long_lens_industry",
@@ -36,9 +44,9 @@
   "rationale": "The story is about the physical consequences of mathematical errors in supply chain planning. Long-lens industry compression captures the vast, repeating scale of warehouse racks, emphasizing the sheer volume of inventory held as a buffer.",
   "cue": "where a lot of idle inventory comes from",
   "subject": "towering warehouse high-bay pallet racks",
-  "alt_text": "Towering warehouse pallet racks stacked deep with shrink-wrapped inventory receding into atmospheric haze.",
-  "caption": "A single statistical choice in a planning formula determines the physical scale of idle inventory held across the network.",
-  "title": "Warehouse Safety Stock Buffer Scale",
+  "alt_text": "Safety Stock Sizing. Towering warehouse pallet racks stacked deep with shrink-wrapped inventory receding into atmospheric haze.",
+  "caption": "Safety Stock Sizing: Feed a safety-stock formula the standard spread of demand, and it builds a much bigger.",
+  "title": "Safety Stock Sizing",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -48,8 +56,8 @@
   "local_path": "context/assets/illustrations/safety-stock-forecast-error-not-demand-noise/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 332184,
-  "sha256": "sha256:d3e49828d53808b855c30ee3a79c9296",
+  "bytes": 394014,
+  "sha256": "sha256:908c3f1cfe4d6a846eed832e2ae2aae5115bf3a177e9acdaf3599c95bc7c80fb",
   "source_hash": "sha256:0a7822945d8ba1d14a29bec6023895cd",
   "source_chars": 5578,
   "task_id": "6e58b1e5d5a965c708b4e262e9f76de2",
@@ -64,5 +72,47 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:03:49+00:00"
+  "generated_at": "2026-10-08T22:03:49+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394014,
+    "quality": 88,
+    "sha256": "sha256:908c3f1cfe4d6a846eed832e2ae2aae5115bf3a177e9acdaf3599c95bc7c80fb",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "",
+    "title": "SAFETY STOCK SIZING",
+    "hook": "Feed a safety-stock formula the standard spread of demand, and it builds a much bigger",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.59,
+    "target": 4.5,
+    "clutter": 0.176,
+    "region_rgb": [
+      141,
+      148,
+      155
+    ],
+    "binding_rgb": [
+      114,
+      123,
+      132
+    ],
+    "title_lines": [
+      "SAFETY STOCK",
+      "SIZING"
+    ],
+    "subject": 0.121,
+    "ink_subject": 0.059,
+    "spike": 0.128,
+    "generated_at": "2026-10-08T22:03:49+00:00"
+  }
 }

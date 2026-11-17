@@ -1,6 +1,6 @@
 {
   "slug": "sla-credit-is-not-insurance",
-  "revision": 8,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -56,6 +56,30 @@
     },
     {
       "revision": 7,
+      "alt_text": "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise",
+      "caption": "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses.",
+      "title": "Cloud Uptime SLAs Are Not Insurance",
+      "bytes": 407618,
+      "sha256": "sha256:ce3a5663723436a569721fcf5ff8d1f30439edfa421a31e01246ddd7017a2529"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise",
+      "caption": "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses.",
+      "title": "Cloud Uptime SLAs Are Not Insurance",
+      "bytes": 407618,
+      "sha256": "sha256:ce3a5663723436a569721fcf5ff8d1f30439edfa421a31e01246ddd7017a2529"
+    },
+    {
+      "revision": 9,
+      "alt_text": "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise",
+      "caption": "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses.",
+      "title": "Cloud Uptime SLAs Are Not Insurance",
+      "bytes": 407618,
+      "sha256": "sha256:ce3a5663723436a569721fcf5ff8d1f30439edfa421a31e01246ddd7017a2529"
+    },
+    {
+      "revision": 10,
       "alt_text": "Cloud Uptime SLAs Are Not Insurance. Darkened, unlit server rack standing out amidst thousands of glowing servers in a cavernous enterprise",
       "caption": "Cloud Uptime SLAs Are Not Insurance: Uptime credits are capped refunds, not insurance for actual outage losses.",
       "title": "Cloud Uptime SLAs Are Not Insurance",

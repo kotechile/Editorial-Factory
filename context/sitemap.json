@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T18:39:34Z",
+  "updated_at": "2026-11-17T10:41:45Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6935,7 +6935,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-1-8-inch-screen-leaks-embers/"
     },
     {
       "slug": "2026-11-13_your-100-hour-is-not-208000",
@@ -6953,7 +6954,8 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-100-hour-is-not-208000/"
     },
     {
       "slug": "2026-11-13_your-75000-room-misses-the-stock",
@@ -7008,7 +7010,8 @@
       ],
       "target_persona": "financial_architect",
       "date": "2026-11-13",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-collar-kills-the-long-term-clock/"
     },
     {
       "slug": "2026-11-13_your-console-rose-500-instead",
@@ -7028,6 +7031,25 @@
       "date": "2026-11-13",
       "public": true,
       "url": "https://giniloh.com/your-console-rose-500-instead/"
+    },
+    {
+      "slug": "2026-11-17_your-warning-leaves-701-wrong",
+      "title": "Your Warning Leaves 70.1% Wrong",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Two fault classes, one null result",
+        "The advice channel measures at zero",
+        "By the numbers",
+        "What the deny path costs",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-11-17",
+      "public": false
     }
   ]
 }

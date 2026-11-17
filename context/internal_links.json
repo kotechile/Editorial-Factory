@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:21:07+00:00",
+  "generated_at": "2026-11-16T14:19:10+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,44 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-100-hour-is-not-208000",
+      "title": "Your $100 Hour Is Not $208,000",
+      "url": "https://giniloh.com/your-100-hour-is-not-208000/",
+      "path": "/your-100-hour-is-not-208000/",
+      "sites_live": {
+        "giniloh.com": "/your-100-hour-is-not-208000/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A hundred dollars an hour is quoted against 2,080 hours a year, and no contract bills that many because a contractor's year has unpaid days built into it.",
+      "modified": "2026-11-13T18:39:33",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-collar-kills-the-long-term-clock",
+      "title": "Your Collar Kills the 12-Month Clock",
+      "url": "https://giniloh.com/your-collar-kills-the-long-term-clock/",
+      "path": "/your-collar-kills-the-long-term-clock/",
+      "sites_live": {
+        "giniloh.com": "/your-collar-kills-the-long-term-clock/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A collar is what a broker proposes when a holder with one large position says: protect me without selling. It means buying a put and selling a call either\u2026",
+      "modified": "2026-11-13T17:20:39",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3060,6 +3098,29 @@
       ],
       "excerpt": "Your mower's acreage badge hides a 29% gap in what two same-price machines cut per charge: one is rated for 1.5 acres, the other for 0.75, and the smaller\u2026",
       "modified": "2026-11-08T14:56:27",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-1-8-inch-screen-leaks-embers",
+      "title": "Your 1/8-Inch Screen Leaks Embers",
+      "url": "https://wellroost.com/your-1-8-inch-screen-leaks-embers/",
+      "path": "/your-1-8-inch-screen-leaks-embers/",
+      "sites_live": {
+        "wellroost.com": "/your-1-8-inch-screen-leaks-embers/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "The vent screen a California homeowner is told to install has 1/8-inch openings. That number sits on the state's insurance-discount list, which describes the\u2026",
+      "modified": "2026-11-13T18:29:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -11195,34 +11256,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1287,
-      "slug": "your-chargeback-misses-40-of-the-bill",
-      "title": "Your AI Bill&#8217;s Hidden 40% Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:07",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1285,
-      "slug": "your-sandbox-boot-tax-110x-then-nothing",
-      "title": "Your Sandbox Boot Tax: 110x, Then Nothing",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:08",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -11233,6 +11266,34 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1707,
+      "slug": "your-100-hour-is-not-208000",
+      "title": "Your $100 Hour Is Not $208,000",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-13T18:39:33",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": 1704,
+      "slug": "your-collar-kills-the-long-term-clock",
+      "title": "Your Collar Kills the 12-Month Clock",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-13T17:20:39",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

@@ -1,6 +1,6 @@
 {
   "slug": "freight-scale-bet-vs-contract-duration",
-  "revision": 2,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,30 @@
       "title": "Freight Network Scale",
       "bytes": 403642,
       "sha256": "sha256:d06440d18adf8a27406901e880bb64ad"
+    },
+    {
+      "revision": 2,
+      "alt_text": "C.H. Robinson'S $5.8B Freight Bet. Compressed telephoto view of endless rows of truck trailers and highway overpasses receding into haze.",
+      "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
+      "title": "C.H. Robinson'S $5.8B Freight Bet",
+      "bytes": 407521,
+      "sha256": "sha256:94a378b0698cc98bc975ecd7b29d75401e0541a0756be8f160298de77e0d6268"
+    },
+    {
+      "revision": 3,
+      "alt_text": "C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. Compressed telephoto view of endless rows of truck trailers and",
+      "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
+      "title": "C.H. Robinson'S $5.8B Freight Bet",
+      "bytes": 407521,
+      "sha256": "sha256:94a378b0698cc98bc975ecd7b29d75401e0541a0756be8f160298de77e0d6268"
+    },
+    {
+      "revision": 4,
+      "alt_text": "C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. Compressed telephoto view of",
+      "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
+      "title": "C.H. Robinson'S $5.8B Freight Bet",
+      "bytes": 407521,
+      "sha256": "sha256:94a378b0698cc98bc975ecd7b29d75401e0541a0756be8f160298de77e0d6268"
     }
   ],
   "style": "long_lens_industry",
@@ -24,7 +48,7 @@
   "rationale": "The story is fundamentally about the massive scale of a $25 billion freight network. The telephoto compression visually communicates this immense physical scale and structure.",
   "cue": "build the densest freight network",
   "subject": "overlapping layers of truck trailers and highway overpasses",
-  "alt_text": "C.H. Robinson'S $5.8B Freight Bet. Compressed telephoto view of endless rows of truck trailers and highway overpasses receding into haze.",
+  "alt_text": "C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet",
   "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
   "title": "C.H. Robinson'S $5.8B Freight Bet",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",

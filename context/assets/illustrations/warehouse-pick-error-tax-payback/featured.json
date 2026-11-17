@@ -1,6 +1,6 @@
 {
   "slug": "warehouse-pick-error-tax-payback",
-  "revision": 5,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,30 @@
     },
     {
       "revision": 4,
+      "alt_text": "1% Mispick Rate Is A Seven-Figure Line Item. Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
+      "caption": "1% Mispick Rate Is A Seven-Figure Line Item: A single wrong pick looks like a rounding error until a team prices the annual leak.",
+      "title": "1% Mispick Rate Is A Seven-Figure Line Item",
+      "bytes": 359749,
+      "sha256": "sha256:6429b17a1d2d9e29a18954597aa235d61693b31f4fe01ab8123d70ee382aa609"
+    },
+    {
+      "revision": 5,
+      "alt_text": "1% Mispick Rate Is A Seven-Figure Line Item. Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
+      "caption": "1% Mispick Rate Is A Seven-Figure Line Item: A single wrong pick looks like a rounding error until a team prices the annual leak.",
+      "title": "1% Mispick Rate Is A Seven-Figure Line Item",
+      "bytes": 359749,
+      "sha256": "sha256:6429b17a1d2d9e29a18954597aa235d61693b31f4fe01ab8123d70ee382aa609"
+    },
+    {
+      "revision": 6,
+      "alt_text": "1% Mispick Rate Is A Seven-Figure Line Item. Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
+      "caption": "1% Mispick Rate Is A Seven-Figure Line Item: A single wrong pick looks like a rounding error until a team prices the annual leak.",
+      "title": "1% Mispick Rate Is A Seven-Figure Line Item",
+      "bytes": 359749,
+      "sha256": "sha256:6429b17a1d2d9e29a18954597aa235d61693b31f4fe01ab8123d70ee382aa609"
+    },
+    {
+      "revision": 7,
       "alt_text": "1% Mispick Rate Is A Seven-Figure Line Item. Massive modern fulfillment center illuminated at dusk with glowing loading bays.",
       "caption": "1% Mispick Rate Is A Seven-Figure Line Item: A single wrong pick looks like a rounding error until a team prices the annual leak.",
       "title": "1% Mispick Rate Is A Seven-Figure Line Item",

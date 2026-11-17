@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/mechanics-lien-clock-payment-release/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Suburban home under exterior renovation at dusk illuminated by a single amber worklight."
-image_caption: "Statutory lien clocks continue to run long after the day's work ends on a home remodel."
+image_alt: "The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk illuminated by a single amber worklight."
+image_caption: "The Hidden Lien Clock Behind Your Remodel: A California homeowner has exactly 15 days after a remodel ends to file one form."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

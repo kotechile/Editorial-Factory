@@ -1,6 +1,6 @@
 {
   "slug": "mechanics-lien-clock-payment-release",
-  "revision": 6,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -51,6 +51,22 @@
       "sha256": "sha256:37432b4cc32b763c9224ec0d249da936",
       "generated_at": "2026-10-08T22:07:24+00:00",
       "source_hash": "sha256:f0ed7ee468b6b5adce0b596a2eeab7ad"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Suburban home under exterior renovation at dusk illuminated by a single amber worklight.",
+      "caption": "Statutory lien clocks continue to run long after the day's work ends on a home remodel.",
+      "title": "remodel-lien-clock-dusk",
+      "bytes": 345679,
+      "sha256": "sha256:9cf299fbec7cc89c03c5592019f3ecd4"
+    },
+    {
+      "revision": 7,
+      "alt_text": "The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk illuminated by a single amber worklight.",
+      "caption": "The Hidden Lien Clock Behind Your Remodel: A California homeowner has exactly 15 days after a remodel ends to file one form.",
+      "title": "The Hidden Lien Clock Behind Your Remodel",
+      "bytes": 400997,
+      "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6"
     }
   ],
   "style": "architectural_night",
@@ -66,9 +82,9 @@
   "rationale": "The article discusses the hidden, ongoing statutory timelines that persist after the physical work of a remodel ends. 'architectural_night' perfectly captures this concept by showing a home remodel site after hours, emphasizing the quiet, unseen processes continuing in the background.",
   "cue": "the statutory lien clock running",
   "subject": "a suburban home undergoing exterior renovation",
-  "alt_text": "Suburban home under exterior renovation at dusk illuminated by a single amber worklight.",
-  "caption": "Statutory lien clocks continue to run long after the day's work ends on a home remodel.",
-  "title": "remodel-lien-clock-dusk",
+  "alt_text": "The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk illuminated by a single amber worklight.",
+  "caption": "The Hidden Lien Clock Behind Your Remodel: A California homeowner has exactly 15 days after a remodel ends to file one form.",
+  "title": "The Hidden Lien Clock Behind Your Remodel",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -80,8 +96,8 @@
   "local_path": "context/assets/illustrations/mechanics-lien-clock-payment-release/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 345679,
-  "sha256": "sha256:9cf299fbec7cc89c03c5592019f3ecd4",
+  "bytes": 400997,
+  "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6",
   "source_hash": "sha256:f0ed7ee468b6b5adce0b596a2eeab7ad",
   "source_chars": 5076,
   "task_id": "ba906214396e76b829778142e5e4c7fd",
@@ -96,5 +112,48 @@
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-08T22:08:31+00:00"
+  "generated_at": "2026-10-08T22:08:31+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 400997,
+    "quality": 88,
+    "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "",
+    "title": "THE HIDDEN LIEN CLOCK BEHIND YOUR REMODEL",
+    "hook": "A California homeowner has exactly 15 days after a remodel ends to file one form",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.56,
+    "target": 4.5,
+    "clutter": 0.153,
+    "region_rgb": [
+      21,
+      93,
+      141
+    ],
+    "binding_rgb": [
+      20,
+      113,
+      170
+    ],
+    "title_lines": [
+      "THE HIDDEN LIEN",
+      "CLOCK BEHIND",
+      "YOUR REMODEL"
+    ],
+    "subject": 0.157,
+    "ink_subject": 0.059,
+    "spike": 0.27,
+    "generated_at": "2026-10-08T22:08:31+00:00"
+  }
 }

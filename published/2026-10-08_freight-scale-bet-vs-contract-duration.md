@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/freight-scale-bet-vs-contract-duration/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "C.H. Robinson'S $5.8B Freight Bet. Compressed telephoto view of endless rows of truck trailers and highway overpasses receding into haze."
+image_alt: "C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet"
 image_caption: "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
