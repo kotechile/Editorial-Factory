@@ -386,6 +386,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-17 | enterprise_tech_leadership | your-approval-gate-kills-20 | Your Approval Gate Kills 20%: The Bill Moved Into Margin | https://pressflow.aichieve.net/published/2026-11-17_your-approval-gate-kills-20.md | reader site only |
 | 2026-11-17 | smart_home_telemetry | your-washer-100000-calls | Your Washer Now Costs 100,000 Calls | https://pressflow.aichieve.net/published/2026-11-17_your-washer-100000-calls.md | reader site only |
 | 2026-11-17 | workstation_compute_economics | your-boxs-hidden-79-speed-cut | Your Box's Hidden 79% Speed Cut: Rent Is the Audit | https://pressflow.aichieve.net/published/2026-11-17_your-boxs-hidden-79-speed-cut.md | reader site only |
+| 2026-11-17 | control_tower_exception_orchestration | your-hidden-461-double-counts | Your Hidden 461 Double Counts | https://pressflow.aichieve.net/published/2026-11-17_your-hidden-461-double-counts.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

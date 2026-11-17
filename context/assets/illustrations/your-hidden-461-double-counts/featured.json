@@ -1,0 +1,112 @@
+{
+  "slug": "your-hidden-461-double-counts",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Unbranded container ship reflected in dock water at a quay under low sunrise",
+      "caption": "A single vessel's reflection in the dock basin doubles the ship that the benchmark counted twice.",
+      "title": "Hidden 461 Double Counts",
+      "bytes": 388938,
+      "sha256": "sha256:f9a316a60d2b108e5a62a728d692c1ca"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression at a container terminal quay: an unbranded container ship sits at the dock, its corrugated steel hull and unmarked stacked containers reflected in the still water basin to form a doubled silhouette, as if the same vessel is counted twice. Low raking sunrise from the left casts hard golden-amber light on steel blue water and weathered orange hull, bone white crane cables above. Asymmetric off-centre composition with the vessel right of centre and open water to the left, deep stacked layers of gantry cranes and blank containers, crisp clarity, film grain, no text, no logos, no markings.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, signage, illegible labels",
+  "rationale": "The story is about physical shipping performance and scale \u2014 a port, a vessel, a counting error. Telephoto compression conveys the massive infrastructure and the visual doubling without needing legible text, while the reflection states the central double-count mechanism.",
+  "cue": "461 ship calls had been counted twice",
+  "subject": "an unbranded container ship doubled by its reflection at a quay",
+  "core_thesis": "The alliance on-time figure most ocean scorecards are cut from counted 461 ship calls on two lanes at once, and fixing it reversed which alliance ranked most reliable, so the audit that pays is on the base of the count, not the threshold you tune against it.",
+  "core_conflict": "A counting-rule error in benchmark aggregation duplicates the same physical ship call, inflating one metric and reversing the reliability ranking on a margin smaller than the error itself.",
+  "composition": "asymmetric off-centre framing with the vessel placed right of centre and open water to the left",
+  "alt_text": "The 461 Double Counts. Unbranded container ship reflected in dock water at a quay under low sunrise",
+  "caption": "The 461 Double Counts: A hidden 461-call double count reversed which alliance ranked most reliable.",
+  "title": "The 461 Double Counts",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-hidden-461-double-counts/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407313,
+  "sha256": "sha256:9166e01b6b46d94a47695eaac4f8f240a7e728860026a1dcb7659bf05d756da4",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407313,
+    "quality": 76,
+    "sha256": "sha256:9166e01b6b46d94a47695eaac4f8f240a7e728860026a1dcb7659bf05d756da4",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:fc360b795c7cb0553fd72ad9ee52813f62f9e107fee67135b86bf18dd9374b16",
+  "render_phash": "ffef9fe73737372d357c3bcbbbe7bb677f69b3e94bd89b86f8d3f6f8ff61ff67",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A loaded container ship is berthed at a quay beneath several boxy gantry cranes, with stacked containers on deck and the vessel's rust-red hull and cargo mirrored in the still water to the left of the frame.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "The frame shows the article's own subject \u2014 a container ship and its doubled reflection \u2014 which reads as the double-counted call mechanism, though the duplication is a reflection the story never explicitly claims."
+  },
+  "source_hash": "sha256:e2911f2a2ba0e9c02d76f2eb3436ce7a",
+  "source_chars": 5126,
+  "task_id": "a5bcba265d045a56e7a024b5fbdb47fe",
+  "credits": 5.0,
+  "cost_ms": 126,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a5bcba265d045a56e7a024b5fbdb47fe_1794921317984.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression at a container terminal quay: an unbranded container ship sits at the dock, its corrugated steel hull and unmarked stacked containers reflected in the still water basin to form a doubled silhouette, as if the same vessel is counted twice. Low raking sunrise from the left casts hard golden-amber light on steel blue water and weathered orange hull, bone white crane cables above. Asymmetric off-centre composition with the vessel right of centre and open water to the left, deep stacked layers of gantry cranes and blank containers, crisp clarity, film grain, no text, no logos, no markings.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-17T13:15:23+00:00",
+  "overlay": {
+    "kicker": "ALLIANCE ON-TIME DATA // DOUBLE COUNT",
+    "title": "THE 461 DOUBLE COUNTS",
+    "hook": "A hidden 461-call double count reversed which alliance ranked most reliable",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 10.52,
+    "target": 4.5,
+    "clutter": 0.138,
+    "region_rgb": [
+      31,
+      34,
+      35
+    ],
+    "binding_rgb": [
+      53,
+      54,
+      48
+    ],
+    "title_lines": [
+      "THE 461 DOUBLE",
+      "COUNTS"
+    ],
+    "subject": 0.132,
+    "ink_subject": 0.037,
+    "spike": 0.172,
+    "generated_at": "2026-11-17T13:15:23+00:00"
+  }
+}
