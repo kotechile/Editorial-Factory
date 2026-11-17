@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T10:41:45Z",
+  "updated_at": "2026-11-17T11:10:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7031,6 +7031,24 @@
       "date": "2026-11-13",
       "public": true,
       "url": "https://giniloh.com/your-console-rose-500-instead/"
+    },
+    {
+      "slug": "2026-11-17_your-check-sees-0086ms-not-40",
+      "title": "Your Check Sees 0.086ms, Not 40",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The instrument failed first",
+        "By the numbers",
+        "Where the check belongs",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-17",
+      "public": false
     },
     {
       "slug": "2026-11-17_your-warning-leaves-701-wrong",

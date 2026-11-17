@@ -1,0 +1,115 @@
+{
+  "slug": "your-check-sees-0086ms-not-40",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Network tap probe still lit on an old route port while a fresh patch cord carries the serving path on a server rack in a data hall.",
+      "caption": "A network tap probe remains locked to the old route while the serving path has moved, showing why per-stage validation passed without the fixed-rule serving-path check.",
+      "title": "Stale probe on old route vs moved serving path",
+      "bytes": 376779,
+      "sha256": "sha256:0e06276ff9e9f5d7ea49ff9878d3a90b"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Isometric technical cutaway of a server rack in a data hall. A top-of-rack switch has two patch ports: on the left, a small network tap probe with a lit green LED is clamped onto an empty old route cable; on the right, a freshly patched serving path cable routes traffic to a new port. Brushed steel rack, graphite cable sheathing, copper connectors. One directional key light from upper left raking across the rack, crisp shadows. Muted graphite, steel blue, safety yellow. Isometric cutaway, asymmetric with stale probe left and moved serving path right, generous empty margin. No text, no labels.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The article explains how a verification gate fails when its instrument remains tied to the old route; a technical isometric cutaway can diagram that mismatch with visible hardware and a tangible serving path, avoiding a generic datacenter or stale clich\u00e9.",
+  "cue": "a probe kept reading 0.086ms",
+  "subject": "a network tap probe still locked to the old route port while the serving path has moved, inside a data hall server rack",
+  "core_thesis": "A stale probe kept reading 0.086ms after the service moved to a 40.139ms path, so the control an infrastructure team needs is a fixed-rule check that every probe and rollback still sits on the serving path.",
+  "core_conflict": "per-stage stability validation vs live-traffic reality; probe persistence vs serving-path migration",
+  "composition": "isometric cutaway, asymmetric with stale probe left and moved serving path right, generous empty margin",
+  "alt_text": "Your Check Sees 0.086Ms, Not 40. Network tap probe still lit on an old route port while a fresh patch cord carries the serving path on a",
+  "caption": "Your Check Sees 0.086Ms, Not 40: Microsoft spent Thursday and Friday bringing Exchange Online back, telling customers.",
+  "title": "Your Check Sees 0.086Ms, Not 40",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-check-sees-0086ms-not-40/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 409483,
+  "sha256": "sha256:b6ccc2e1164c718e9efc6e388a6d9e4dc0fdc388ef4cc9d4dbd828fdfadf96e4",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 409483,
+    "quality": 80,
+    "sha256": "sha256:b6ccc2e1164c718e9efc6e388a6d9e4dc0fdc388ef4cc9d4dbd828fdfadf96e4",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3ebd9bc733777bbe3150a47278bbd0ae556af572ce5ab17609b9b973808cd525",
+  "render_phash": "2e9e5e59bc31799ef24db26cbad98db6ceacc7d8e1f0d0e8ccf2c6b2c2f2c1f2",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A cutaway isometric illustration of an open server rack containing a multi-port network switch, several cables, copper busbars, circuit boards, and a small green-lit block mounted near the left side.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The image shows a network probe/device inside a server rack, which matches the article's monitoring-gate mechanism, though the old-versus-moved serving path is not explicitly labeled."
+  },
+  "source_hash": "sha256:9c2fa13e3d83527448517d27ee6b4eb9",
+  "source_chars": 6009,
+  "task_id": "be62b73b267918867f3d11f8db62eaf0",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b6c0144b8c7b23fc02b10b2f0de5640f.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Isometric technical cutaway of a server rack in a data hall. A top-of-rack switch has two patch ports: on the left, a small network tap probe with a lit green LED is clamped onto an empty old route cable; on the right, a freshly patched serving path cable routes traffic to a new port. Brushed steel rack, graphite cable sheathing, copper connectors. One directional key light from upper left raking across the rack, crisp shadows. Muted graphite, steel blue, safety yellow. Isometric cutaway, asymmetric with stale probe left and moved serving path right, generous empty margin. No text, no labels.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-17T11:08:21+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR CHECK SEES 0.086MS, NOT 40",
+    "hook": "Microsoft spent Thursday and Friday bringing Exchange Online back, telling customers",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.84,
+    "target": 4.5,
+    "clutter": 0.198,
+    "region_rgb": [
+      68,
+      74,
+      77
+    ],
+    "binding_rgb": [
+      75,
+      82,
+      88
+    ],
+    "title_lines": [
+      "YOUR CHECK",
+      "SEES 0.086MS,",
+      "NOT 40"
+    ],
+    "subject": 0.17,
+    "ink_subject": 0.023,
+    "spike": 0.15,
+    "generated_at": "2026-11-17T11:08:21+00:00"
+  }
+}
