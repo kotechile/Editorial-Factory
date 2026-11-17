@@ -38,3 +38,7 @@ All quotes below were read from the papers' own HTML full text (`arxiv.org/html/
 5. **Do not re-argue the 2026-11-03 grader thesis.** The renderer/parser and instrument-error material is deliberately absent; nothing here should claim "the grading code is part of the measurement".
 6. **No number from the Datadog post in the argument.** It may appear once, as friction: an engineering team runs spec-derived monitors over 1,300+ pods at about 2% CPU — i.e. the deny path is affordable. Say the page is undated if it is cited at all.
 7. **The abstention lever is its own row.** "Warning + may abstain" (18.2%) is a different intervention from enforcement and must not be merged into the enforcement claim — it is the finding that permission beats evidence.
+
+## Prior art carried for the de-dup line (not evidence)
+
+- This vertical's 2026-10-27 news anchor, a silent mis-integration at an invocation site caught by a site-level precondition check: https://arxiv.org/abs/2610.34817 — named in the brief and the run log only, cited nowhere in the article, so the two pieces are not re-argued three weeks apart.

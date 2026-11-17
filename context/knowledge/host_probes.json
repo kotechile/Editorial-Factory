@@ -1848,6 +1848,14 @@
   "note": "isor.mn.gov` (fetches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 \u00a7 1 fetches but spells its count as \"one hundred eight"
  },
  {
+  "host": "metr.org",
+  "url": "https://metr.org/notes/2026-11-16-measuring-alignment-eval-tells/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "ai_observability_qa",
+  "note": "metr.org notes fetch clean and carry a visible DATE header; primary for a research note, but quote the note's own disclaimer (unpolished, less review, does not speak for METR)."
+ },
+ {
   "host": "mgic.com",
   "url": "",
   "verdict": "fetchable",
@@ -2878,6 +2886,14 @@
   "as_of": "2026-11-12",
   "vertical": "expat_cross_border_relocation",
   "note": "prefix is the whole difference on the public.law mirrors:** `https://www.california.public.law/...` answers `unreachable` while `https://california.public.law/...` fetches \u2014 which is how a"
+ },
+ {
+  "host": "www.datadoghq.com",
+  "url": "https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "ai_observability_qa",
+  "note": "Datadog engineering blog answers 200 to a Chrome-UA fetch; the page renders 'Published' with an empty date, so a first-party post there is dated by observation only and goes in the signals file with a dating note, never "
  },
  {
   "host": "www.digitalocean.com",

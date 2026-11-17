@@ -17,7 +17,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-warning-leaves-701-wrong/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "AI Agent Warnings Leave Answers 70.1% Wrong. A red deny gate closed across one data-center rack row while an adjacent row remains open."
+image_alt: "A red deny gate closed across one data-center rack row while an adjacent row remains open."
 image_caption: "AI Agent Warnings Leave Answers 70.1% Wrong: A working check's warning leaves 70.1% wrong; withholding the value leaves 1.7%."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

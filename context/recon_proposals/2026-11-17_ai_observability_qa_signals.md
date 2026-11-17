@@ -30,8 +30,8 @@
 
 | Pair | Signals | Shared axis | Contrasting axis | Anchor URLs | Heuristic | Flags |
 |---|---|---|---|---|---|---|
-| 1 | #1 ⨂ #11 | governance_x_runtime | A: deterministic vs probabilistic QA — enforcement vs advice | B: enforcement at runtime is production-cheap | https://arxiv.org/abs/2611.20595 https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/ | 0.73 | - |
-| 2 | #9 ⨂ #11 | governance_x_runtime | A: approval as a boundary that must be verified | B: enforcement at runtime is production-cheap | https://arxiv.org/abs/2611.19237 https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/ | 0.54 | - |
+| 1 | #1 ⨂ #11 | governance_x_runtime | A: deterministic vs probabilistic QA — enforcement vs advice | B: enforcement at runtime is production-cheap | https://arxiv.org/abs/2611.20595 https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/ | 0.73 | legA:url_already_cited; legB:url_already_cited |
+| 2 | #9 ⨂ #11 | governance_x_runtime | A: approval as a boundary that must be verified | B: enforcement at runtime is production-cheap | https://arxiv.org/abs/2611.19237 https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/ | 0.54 | legB:url_already_cited |
 
 **Heuristic terms (advisory):**
 - #1: token_coverage=0.75 intensity=0.79 angle_fit=0.5 contrast=0.83 → 0.73 (governance_x_runtime)
