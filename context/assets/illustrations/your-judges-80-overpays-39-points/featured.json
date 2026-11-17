@@ -1,0 +1,113 @@
+{
+  "slug": "your-judges-80-overpays-39-points",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Judge Agreement Overpays. A steel release gate with two tally counters in a server aisle.",
+      "caption": "A release gate that prints raw agreement alone overstates a judge’s accuracy, so the gate must show kappa beside the match.",
+      "title": "Release gate prints kappa not match: data hall counter scene",
+      "bytes": 329254,
+      "sha256": "sha256:3b869e232fdc52b0b8af122fb2111b53"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Wide 35mm anamorphic film still in a data hall. A raised brushed-steel release-gate barrier stands off-centre at the end of a server rack aisle, its unlatched inspection gate holding a two-channel mechanical tally counter stanchion, one needle high for raw match and one lower for kappa. Hard blue-grey skylight from the left casts long sharp shadows, with warm amber worklights glowing from the rack row behind. Brushed steel, graphite, slate grey, amber. Asymmetric framing with the gate on the left third and the rack aisle receding right. Fine film grain, shallow depth of field, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, digits, UI labels",
+  "rationale": "The story describes a decisive moment in an evaluation pipeline where a physical release gate separates deployment from rejection. A cinematic wide still captures the industrial data-hall environment and the tension between the two scores without resorting to a sterile datacenter cliché.",
+  "cue": "luck-adjusted score beside the raw match",
+  "subject": "a raised steel release gate with twin mechanical tally counters in a data hall aisle",
+  "core_thesis": "Raw judge-human agreement is inflated by luck, so a release gate must print a luck-adjusted kappa beside the raw match, benchmarked against human-human agreement rather than 1.0.",
+  "core_conflict": "The raw match rate overpays a judge's accuracy because chance agreement inflates it, while the deflated kappa tells the true signal; teams must compare against human-to-human agreement, not a perfect score.",
+  "composition": "asymmetric wide shot, gate on left third, rack aisle receding right with generous negative space",
+  "alt_text": "Judge Agreement Overpays. A steel release gate with two tally counters in a server aisle.",
+  "caption": "Judge-Model Agreement Overpays 39 Points: Raw match overpays luck-adjusted score by 39 points—print kappa, not match.",
+  "title": "Judge-Model Agreement Overpays 39 Points",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-judges-80-overpays-39-points/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 395439,
+  "sha256": "sha256:4f2538995c891d1645f068f767a3e86ed4f22e8966660e7021278333ab0fe429",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 395439,
+    "quality": 88,
+    "sha256": "sha256:4f2538995c891d1645f068f767a3e86ed4f22e8966660e7021278333ab0fe429",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a206d5648090839693d963f2c37f6c0131dee924d21717452e57707e277bdbcc",
+  "render_phash": "04cd04cf02df00fd80fd00fd00fd00ff007f00ff00ff00ff00ff007f0a7f00ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A narrow data-hall aisle lined with glass-fronted server racks on both sides, with a low steel bar gate on the left third and a metal post in front of it holding a small panel with two small round dials above one larger round dial.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.62,
+    "reason": "The frame puts the article's own mechanism on stage — a release gate standing in front of inference hardware with counters/gauges attached — so a reader would connect it to a judge-model release gate that has to print a measured score, though the dials are analog gauges rather than twin mechanical tally counters and carry no numbers."
+  },
+  "source_hash": "sha256:dc4134998db64153d91a0ea598a5ec0c",
+  "source_chars": 5813,
+  "task_id": "3bb2071d9b3b90ae3692c17641ec681a",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3bb2071d9b3b90ae3692c17641ec681a_1794937675785.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Wide 35mm anamorphic film still in a data hall. A raised brushed-steel release-gate barrier stands off-centre at the end of a server rack aisle, its unlatched inspection gate holding a two-channel mechanical tally counter stanchion, one needle high for raw match and one lower for kappa. Hard blue-grey skylight from the left casts long sharp shadows, with warm amber worklights glowing from the rack row behind. Brushed steel, graphite, slate grey, amber. Asymmetric framing with the gate on the left third and the rack aisle receding right. Fine film grain, shallow depth of field, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-17T17:48:08+00:00",
+  "overlay": {
+    "kicker": "AI OBSERVABILITY // JUDGE AGREEMENT GAP",
+    "title": "JUDGE-MODEL AGREEMENT OVERPAYS 39 POINTS",
+    "hook": "Raw match overpays luck-adjusted score by 39 points—print kappa, not match",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.98,
+    "target": 4.5,
+    "clutter": 0.244,
+    "region_rgb": [
+      55,
+      64,
+      70
+    ],
+    "binding_rgb": [
+      109,
+      100,
+      95
+    ],
+    "title_lines": [
+      "JUDGE-MODEL",
+      "AGREEMENT",
+      "OVERPAYS 39 POINTS"
+    ],
+    "subject": 0.137,
+    "ink_subject": 0.013,
+    "spike": 0.143,
+    "generated_at": "2026-11-17T17:48:08+00:00"
+  }
+}

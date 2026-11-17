@@ -10,6 +10,12 @@ date: 2026-11-17
 slug: your-judges-80-overpays-39-points
 meta_title: "Your Judge's 80% Overpays 39 Points"
 meta_description: "Across 21 judge models and 541,000 judgments, raw match ran about 39 points above a luck-adjusted score. Why a release gate should print kappa, not match."
+image_path: "context/assets/illustrations/your-judges-80-overpays-39-points/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Judge Agreement Overpays. A steel release gate with two tally counters in a server aisle."
+image_caption: "Judge-Model Agreement Overpays 39 Points: Raw match overpays luck-adjusted score by 39 points—print kappa, not match."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
