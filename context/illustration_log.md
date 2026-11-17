@@ -515,3 +515,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-17 | `your-approval-gate-kills-20` | enterprise_tech_leadership | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-approval-gate-kills-20/featured.jpg` |
 | 2026-11-17 | `your-washer-100000-calls` | smart_home_telemetry | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-washer-100000-calls/featured.jpg` |
 | 2026-11-17 | `your-washer-100000-calls` | smart_home_telemetry | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-washer-100000-calls/featured.jpg` |
+| 2026-11-17 | `your-boxs-hidden-79-speed-cut` | workstation_compute_economics | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-boxs-hidden-79-speed-cut/featured.jpg` |

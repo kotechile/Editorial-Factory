@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T12:11:26Z",
+  "updated_at": "2026-11-17T12:44:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7047,6 +7047,24 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-17",
+      "public": false
+    },
+    {
+      "slug": "2026-11-17_your-boxs-hidden-79-speed-cut",
+      "title": "Your Box's Hidden 79% Speed Cut: Rent Is the Audit",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The clock is a firmware decision",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-11-17",
       "public": false
     },
