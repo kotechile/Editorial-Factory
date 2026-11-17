@@ -2808,6 +2808,14 @@
   "note": "he ember and flame tests). **Unreachable or unusable on this beat:** `ucanr.edu/program/uc-anr-fire-network/vents` fetches 6.5 KB with the code sentence on one probe and answers `unreachable"
  },
  {
+  "host": "up.codes",
+  "url": "https://up.codes/s/design-of-building-waterdistribution-system",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "smart_home_telemetry",
+  "note": "2026-11-17 evergreen your-80-psi-trap: 3 of 5 rows from up.codes, 2 from epa.gov"
+ },
+ {
   "host": "uphelp.org",
   "url": "",
   "verdict": "unreachable",

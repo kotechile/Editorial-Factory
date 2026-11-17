@@ -1,0 +1,113 @@
+{
+  "slug": "your-80-psi-trap",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Water heater cutaway with pressure-reducing valve and expansion tank on a garage workbench, graphite line drawing.",
+      "caption": "A residential water heater cutaway shows the pressure-reducing valve and expansion tank that code requires once static pressure exceeds 80 psi.",
+      "title": "80 PSI Water Heater Valve and Expansion Tank Cutaway",
+      "bytes": 342464,
+      "sha256": "sha256:46ac27fd2d71d42c11d7e159ef66b4c5"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean isometric cutaway illustration of a residential water heater with a pressure-reducing valve and a steel thermal expansion tank on the cold-water copper inlet, drawn in thin graphite linework with one deep pine green accent, laid flat on a plywood workbench in a garage. Hard directional light from the left rakes across the paper, bone white and graphite and deep pine green, generous empty bench to the left, cutaway off-centre right, deep contact shadow under the paper. Matte vellum surface, drafting table texture, physical depth.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, logos",
+  "rationale": "A technical isometric cutaway can diagram the exact physical relationship between the pressure-reducing valve, water heater, and expansion tank without needing legible numbers or labels, making a regulatory and mechanical relationship instantly readable. It also places the drawing on a garage workbench, matching the site's home environment.",
+  "cue": "A Valve and a Tank",
+  "subject": "pressure-reducing valve and expansion tank on a residential water heater cold-water inlet",
+  "core_thesis": "Static pressure above 80 psi mandates a pressure-reducing valve, which closes the system and makes an expansion tank on the water heater the second half of the job.",
+  "core_conflict": "code-mandated pressure control versus closed-system thermal expansion",
+  "composition": "extreme asymmetry with cutaway off-centre right",
+  "alt_text": "Your 80 PSI Trap. Water heater cutaway with pressure-reducing valve and expansion tank on a garage workbench, graphite line drawing.",
+  "caption": "Your 80 PSI Trap: One gauge reading decides both buys: the valve and the expansion tank.",
+  "title": "Your 80 PSI Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-80-psi-trap/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407003,
+  "sha256": "sha256:f66acdab68c1a4fc32ac16925894d3bf9228bf5826e941a6869cea63d9a3374a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407003,
+    "quality": 88,
+    "sha256": "sha256:f66acdab68c1a4fc32ac16925894d3bf9228bf5826e941a6869cea63d9a3374a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:da430db38b6e3960421c6b6a182947c5b60ceba817d57d3a86abd5bb5a74a14d",
+  "render_phash": "f5d997e710f612be12be12e605e705a7036701e600e6216200da002b401e401e",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A printed sheet lying on a wooden surface bearing a technical isometric line drawing of a cylindrical water heater shown in cutaway with green water inside, connected by piping to a smaller domed expansion tank and a valve fitting on the inlet line to its left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.93,
+    "reason": "The drawing depicts precisely the article's mechanism \u2014 a water heater with an expansion tank and pressure-reducing valve on the cold-water inlet \u2014 so a reader would recognize the story's subject."
+  },
+  "source_hash": "sha256:8ff29d0734fb6f2dab0bf4d24d879deb",
+  "source_chars": 5942,
+  "task_id": "111c0d429b16484f68bd237317511b95",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_43621584a25550ae11014a6592232269.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean isometric cutaway illustration of a residential water heater with a pressure-reducing valve and a steel thermal expansion tank on the cold-water copper inlet, drawn in thin graphite linework with one deep pine green accent, laid flat on a plywood workbench in a garage. Hard directional light from the left rakes across the paper, bone white and graphite and deep pine green, generous empty bench to the left, cutaway off-centre right, deep contact shadow under the paper. Matte vellum surface, drafting table texture, physical depth.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-17T19:14:45+00:00",
+  "overlay": {
+    "kicker": "PLUMBING CODE // STATIC PRESSURE",
+    "title": "YOUR 80 PSI TRAP",
+    "hook": "One gauge reading decides both buys: the valve and the expansion tank",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 135,
+    "contrast": 5.98,
+    "target": 5.5,
+    "clutter": 0.524,
+    "region_rgb": [
+      178,
+      172,
+      161
+    ],
+    "binding_rgb": [
+      89,
+      86,
+      81
+    ],
+    "title_lines": [
+      "YOUR 80 PSI TRAP"
+    ],
+    "subject": 0.107,
+    "ink_subject": 0.058,
+    "spike": 0.138,
+    "generated_at": "2026-11-17T19:14:45+00:00"
+  }
+}

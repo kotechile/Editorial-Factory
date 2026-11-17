@@ -10,6 +10,12 @@ date: 2026-11-17
 slug: your-80-psi-trap
 meta_title: "Your 80 PSI Trap: A Valve and a Tank"
 meta_description: "Above 80 psi static, the plumbing code requires a pressure-reducing valve, and that valve closes the system, which makes an expansion tank on the water heater mandatory."
+image_path: "context/assets/illustrations/your-80-psi-trap/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Your 80 PSI Trap. Water heater cutaway with pressure-reducing valve and expansion tank on a garage workbench, graphite line drawing."
+image_caption: "Your 80 PSI Trap: One gauge reading decides both buys: the valve and the expansion tank."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

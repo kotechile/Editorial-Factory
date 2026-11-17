@@ -48,6 +48,10 @@ push it to the attachment, then mirror the same string into the published artifa
 reimage path updates the row and the CMS attachment but not the artifact's frontmatter, so those three
 surfaces drift silently and `illustration_creator.py --check` only compares frontmatter to the sidecar.
 
+## 2026-11-17 · smart_home_telemetry · pitfall
+
+publish.py can ship an article hero-less (no image_path in the artifact, no illustration dir) even when the art-director keys work; the failure note lands above the captured tail. Verify the artifact's frontmatter for image_path after every publish, then repair in three steps: illustration_creator.py <published file> --apply, wp_draft.py --slug <slug> --reimage, and a draft to publish toggle on the post — the toggle is what makes the reader front serve the hero and the -1024x576 og:image; a reimage alone leaves the front on og-share.png.
+
 ## 2026-11-17 · nhil_infrastructure_ops · pitfall
 
 A re-imaged featured image can leave the built front pointing at the deleted attachment's filename: after wp_draft --reimage uploaded media 1736, aichieve.net still served '...-featured.jpg', which 301'd off-host to giniloh.com and resolved to an unrelated robot-mower illustration. The post read 1736 and the page read 200, so neither the REST read-back nor the status code caught it. Verify the SERVED hero: fetch the page's img src, follow it, and sha256 the bytes against the staged featured.jpg; a mismatch means the front has not rebuilt — re-toggle the post draft->publish and probe again (two toggles were needed here).
@@ -275,6 +279,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | toro.com | fetchable | 2026-10-24 | outdoor_power_equipment | le's `$1.00 per energized hour` instead. Fetched but carries no row: `toro.com`, `husqvarna.com` and `greenworkstools.co |
 | trerc.tamu.edu | fetchable | 2026-11-11 |  | mit brief.** Carries the figure as plain text and fetches first try: `trerc.tamu.edu` (the Texas Real Estate Research Ce |
 | ucanr.edu | fetchable | 2026-11-13 | resilient_home_assets | he ember and flame tests). **Unreachable or unusable on this beat:** `ucanr.edu/program/uc-anr-fire-network/vents` fetch |
+| up.codes | fetchable | 2026-11-17 | smart_home_telemetry | 2026-11-17 evergreen your-80-psi-trap: 3 of 5 rows from up.codes, 2 from epa.gov |
 | uptimeinstitute.com | fetchable | 2026-10-21 | gpu_hardware | mmons.org/benchmarks/inference-datacenter/` (7.9 KB, no numbers) and `uptimeinstitute.com`'s survey page (11.6 KB, prose |
 | usersolutions.com | fetchable | 2026-11-02 | meio_working_capital_tco | line rule "always use the same time unit for lead time and demand"); `usersolutions.com` (104 units at a fixed 10-day le |
 | vulcanvents.com | fetchable | 2026-11-13 | resilient_home_assets | uels (Quarles 2009)", plus the 1/4-inch-is-the-old-minimum history); `vulcanvents.com/codes-and-compliance` (14.7 KB — t |

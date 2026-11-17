@@ -43,7 +43,7 @@ What I find hard to square is how far this sits from the dashboard. A local-firs
 
 ## What the valve drags in
 
-Start with the valve, because the code is narrow about it. Where pressure runs over the ceiling, the valve must be a listed type with a strainer ahead of it, so grit from the main does not chew the seat [1]. It must also fail open. The section asks for a design that keeps water flowing if the valve's own parts give out, which is the gap between a house with a pressure problem and a house with no water at all [1].
+The valve is the narrower half of the code. Where pressure runs over the ceiling, the valve must be a listed type with a strainer ahead of it, so grit from the main does not chew the seat [1]. It must also fail open. The section asks for a design that keeps water flowing if the valve's own parts give out, which is the gap between a house with a pressure problem and a house with no water at all [1].
 
 Then the second half shows up. A regulator blocks flow in both directions in practice, so the pipes below it become a closed system, and water heated in a tank expands with nowhere to go. The fix is written in the same family of codes. An approved expansion tank goes in the cold line below each regulator, placed to keep thermal growth from lifting the regulator's setting [2]. Where a backflow device, a check valve or anything similar sits on a system with a storage water heater, a pressure-control device is required again, on the same logic [3]. A licensed engineer can swap a relief valve for the tank, but only with the relief setting held at 100 psi or less [2], which is a narrower path that needs a signature on it.
 
