@@ -1,6 +1,6 @@
 {
   "slug": "your-washer-100000-calls",
-  "revision": 2,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -9,38 +9,67 @@
       "title": "Cloud Meter vs Serial Port Box",
       "bytes": 343818,
       "sha256": "sha256:ebe9949e5254b655d419780d0e34217e"
+    },
+    {
+      "revision": 2,
+      "style": "component_assembly",
+      "model": "nano-banana-pro",
+      "prompt": "Minimalist modular component assembly on a pale laundry-room shelf, split-screen diptych with left-right scenario contrast. Left half: a wall-mounted smart-home hub with a small mechanical call counter and a short grey ethernet cable; right half: a deck-of-cards brushed-aluminum box with two serial ports, a stubby Bluetooth antenna, a 3.5mm audio jack and a power-over-ethernet socket, resting on a small rubber mat. A washing machine is softly out of focus behind the shelf. One directional key light rakes from the left; palette bone white, graphite, deep pine green. Viewed through a 100mm macro lens, shallow depth of field, fine film grain, no text, no logos.",
+      "task_id": "2032d8084c1114e71c4edcf659e98ff3",
+      "sha256": "sha256:dff8c38db2046364b20290d1e6b28812cb6383568f7f0d598831d64a4c3e04ec",
+      "generated_at": "2026-11-17T12:10:20+00:00",
+      "source_hash": "sha256:a12344267d2f9ef93e82b1b93df2cd4f",
+      "render_sha256": "sha256:f124bccb0f99fc86935879a2a095a0104df1abcc1d4ff8b3455f6158517a7f10"
+    },
+    {
+      "revision": 3,
+      "alt_text": "A split-screen macro of a washer's network port and a small black home-automation bridge with serial ports and a cable on a garage shelf.",
+      "caption": "The local-first answer to a metered cloud API is a one-time box that reaches the serial and Bluetooth ports a washer never had.",
+      "title": "Port vs Cloud Meter Macro",
+      "bytes": 329924,
+      "sha256": "sha256:6e4c9687e052dab375882c9605f6e020"
+    },
+    {
+      "revision": 4,
+      "alt_text": "A washer's recessed network port in macro beside a small black bridge box with two RJ45 sockets.",
+      "caption": "Your Washer Now Costs 100,000 Calls: Access now costs a bill nobody can price in advance.",
+      "title": "Your Washer Now Costs 100,000 Calls",
+      "bytes": 383072,
+      "sha256": "sha256:3c7175978ca4befe91eaf888ce0a2f8fa3daf2fa0a35314d1125d0adef9e1396"
     }
   ],
-  "style": "component_assembly",
-  "style_label": "Modular component assembly",
-  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
-  "model": "nano-banana-pro",
-  "model_key": "nanobanana",
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Minimalist modular component assembly on a pale laundry-room shelf, split-screen diptych with left-right scenario contrast. Left half: a wall-mounted smart-home hub with a small mechanical call counter and a short grey ethernet cable; right half: a deck-of-cards brushed-aluminum box with two serial ports, a stubby Bluetooth antenna, a 3.5mm audio jack and a power-over-ethernet socket, resting on a small rubber mat. A washing machine is softly out of focus behind the shelf. One directional key light rakes from the left; palette bone white, graphite, deep pine green. Viewed through a 100mm macro lens, shallow depth of field, fine film grain, no text, no logos.",
-  "negative_prompt": "garbled text, random letters, watermarks, unreadable lettering, legible numbers, UI, logos",
-  "rationale": "The story turns on a single pricing gate and a physical port, so a restrained split-screen modular assembly makes the metered cloud hub and the deck-of-cards serial box directly comparable. Clean edges, matte materials, and a long cast shadow give the comparison the weight of a technical drawing while staying legible at card size.",
-  "cue": "A meter on the cloud side",
-  "subject": "wall-mounted cloud meter and deck-of-cards serial-port box on a laundry-room shelf",
-  "core_thesis": "The interface a home device answers through\u2014metered cloud calls or a one-time physical port\u2014now sets its running cost, not whether it works with the hub.",
-  "core_conflict": "cloud-metered subscription path vs one-time local hardware port",
-  "composition": "split-screen diptych with left-right scenario contrast",
-  "alt_text": "Your Washer Now Costs 100,000 Calls. Wall-mounted cloud meter and deck-of-cards serial-port box sit side by side on a laundry-room shelf.",
-  "caption": "Your Washer Now Costs 100,000 Calls: SmartThings meters your washer's cloud path; Nabu Casa sells the port you own.",
+  "prompt": "Split-screen diptych: left half, a macro of a washing machine's recessed network port set in white enamel; right half, an extreme macro of a small matte black home-automation bridge with two serial ports and an Ethernet cable plug held near the socket, both on a painted wood garage shelf. Soft daylight from the left, 100mm macro lens, shallow depth of field, film grain. Slate grey, bone white, graphite. Extreme asymmetry: right-half port sits on the thirds, background falls away.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story turns on one physical thing\u2014the port and the $69 box that reaches it\u2014so a macro close-up with shallow depth of field isolates the material reality of the local interface and its cost. The split-screen keeps the cloud-versus-physical contrast explicit without studio abstraction.",
+  "cue": "sold a key to the socket",
+  "subject": "a split-screen macro of a washing machine's recessed network port and a small matte black home-automation bridge with serial ports and an Ethernet cable on a garage shelf",
+  "core_thesis": "A home's running cost now hinges on whether the interface answers locally through a physical port or through a metered cloud account, with SmartThings charging per call and Nabu Casa selling a one-time box for the port.",
+  "core_conflict": "Cloud-metered API access versus one-time local physical port ownership.",
+  "composition": "split-screen diptych with left-right scenario contrast; extreme close-up, off-centre focus on the right-half port, flat layers with shallow depth of field",
+  "alt_text": "Your Washer Now Costs 100,000 Calls. A washer's recessed network port in macro beside a small black bridge box with two RJ45 sockets.",
+  "caption": "Your Washer Now Costs 100,000 Calls: SmartThings put its cloud API on a 100,000-call monthly plan and set a December cutoff.",
   "title": "Your Washer Now Costs 100,000 Calls",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "deepseek-v4-pro",
   "director_attempts": 1,
-  "pinned": {},
+  "pinned": {
+    "style": "editorial_macro"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/your-washer-100000-calls/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 386799,
-  "sha256": "sha256:dff8c38db2046364b20290d1e6b28812cb6383568f7f0d598831d64a4c3e04ec",
+  "bytes": 377955,
+  "sha256": "sha256:bd482b10ebde56f35d23a9f3e05df419460553c315abe084491035254223eff8",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,67 +78,71 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 386799,
+    "bytes": 377955,
     "quality": 88,
-    "sha256": "sha256:dff8c38db2046364b20290d1e6b28812cb6383568f7f0d598831d64a4c3e04ec",
+    "sha256": "sha256:bd482b10ebde56f35d23a9f3e05df419460553c315abe084491035254223eff8",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:f124bccb0f99fc86935879a2a095a0104df1abcc1d4ff8b3455f6158517a7f10",
-  "render_phash": "07c40a7c1a781e7e937e9376937293e0b3e0964696479642de40de47033f0060",
+  "render_sha256": "sha256:9e70a5045d707e9e932079653c71ee3a32efc1300b5eec81f7fa99973a6fab74",
+  "render_phash": "e1a019a001a0098001808181b19cb1ecb1fc907d818741800fa079a0cda013a0",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "A split-screen diptych in a laundry room: on the left, a small off-white wall-mounted box with a serial connector and a trailing cable hangs on the side of a light-wood cabinet, and on the right, a small metal box with an antenna, two serial ports, an audio jack and a network port sits on a dark mat on a wooden shelf, with a blurred white washing machine visible behind each half.",
+    "depicts": "A split-screen image: on the left, an extreme close-up of a white washing machine's front panel with a recessed square plate holding a single RJ45-style network jack; on the right, a small matte black box with two RJ45 ports and a black cable plugged into its side, sitting on a pale wooden garage shelf against a dark background.",
     "legible_text": "",
     "on_topic": true,
-    "confidence": 0.82,
-    "reason": "The diptych shows exactly the article's two protagonists \u2014 a cloud-side meter-like box and a one-time physical-port box beside a washer \u2014 so a reader would recognize the story's port-versus-cloud mechanism."
+    "confidence": 0.88,
+    "reason": "The diptych shows exactly the article's two protagonists \u2014 the appliance's own physical network port and the small third-party bridge box that reaches it \u2014 matching the headline's claim about a port versus a priced path."
   },
   "source_hash": "sha256:a12344267d2f9ef93e82b1b93df2cd4f",
   "source_chars": 4959,
-  "task_id": "2032d8084c1114e71c4edcf659e98ff3",
-  "credits": 18.0,
-  "cost_ms": 44,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_fce21b120645f15c5d7730ec31b0465d.png",
+  "task_id": "3a29a19033b54556340a82e035b854b8",
+  "credits": 5.0,
+  "cost_ms": 43,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3a29a19033b54556340a82e035b854b8_1794917729868.jpg",
   "provider_request": {
-    "model": "nano-banana-pro",
+    "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Minimalist modular component assembly on a pale laundry-room shelf, split-screen diptych with left-right scenario contrast. Left half: a wall-mounted smart-home hub with a small mechanical call counter and a short grey ethernet cable; right half: a deck-of-cards brushed-aluminum box with two serial ports, a stubby Bluetooth antenna, a 3.5mm audio jack and a power-over-ethernet socket, resting on a small rubber mat. A washing machine is softly out of focus behind the shelf. One directional key light rakes from the left; palette bone white, graphite, deep pine green. Viewed through a 100mm macro lens, shallow depth of field, fine film grain, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Split-screen diptych: left half, a macro of a washing machine's recessed network port set in white enamel; right half, an extreme macro of a small matte black home-automation bridge with two serial ports and an Ethernet cable plug held near the socket, both on a painted wood garage shelf. Soft daylight from the left, 100mm macro lens, shallow depth of field, film grain. Slate grey, bone white, graphite. Extreme asymmetry: right-half port sits on the thirds, background falls away.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
-      "image_input": [],
-      "output_format": "png"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-11-17T12:10:20+00:00",
+  "generated_at": "2026-11-17T12:15:38+00:00",
   "overlay": {
-    "kicker": "SMART HOME CLOUD API PRICING",
+    "kicker": "",
     "title": "YOUR WASHER NOW COSTS 100,000 CALLS",
-    "hook": "SmartThings meters your washer's cloud path; Nabu Casa sells the port you own",
-    "anchor": "top-right",
+    "hook": "SmartThings put its cloud API on a 100,000-call monthly plan and set a December cutoff",
+    "anchor": "top-left",
     "light": false,
-    "scrim": 165,
-    "contrast": 6.0,
+    "scrim": 120,
+    "contrast": 6.19,
     "target": 5.5,
-    "clutter": 0.578,
+    "clutter": 0.263,
     "region_rgb": [
-      106,
-      108,
-      103
+      186,
+      190,
+      192
     ],
     "binding_rgb": [
-      26,
-      32,
-      32
+      174,
+      179,
+      185
     ],
     "title_lines": [
       "YOUR WASHER",
       "NOW COSTS",
       "100,000 CALLS"
     ],
-    "subject": 0.319,
-    "ink_subject": 0.133,
-    "spike": 0.407,
-    "generated_at": "2026-11-17T12:10:20+00:00"
-  }
+    "subject": 0.187,
+    "ink_subject": 0.049,
+    "spike": 0.388,
+    "generated_at": "2026-11-17T12:15:38+00:00"
+  },
+  "alt_repairs": [
+    {
+      "reason": "truncated at 140 chars and glued to the headline; rewritten to one complete pixel sentence",
+      "old": "A split-screen macro of a washer's network port and a small black home-automation bridge with serial ports and a cable on a garage shelf."
+    }
+  ]
 }

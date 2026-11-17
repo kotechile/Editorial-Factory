@@ -13,10 +13,10 @@ sources:
 meta_title: "Your Washer Now Costs 100,000 Calls"
 meta_description: "SmartThings put its cloud API on a 100,000-call monthly plan and set a December cutoff, eight days before Nabu Casa sold a $69 box for the port you own."
 image_path: "context/assets/illustrations/your-washer-100000-calls/featured.jpg"
-image_style: "component_assembly"
-image_model: "nanobanana"
-image_alt: "Your Washer Now Costs 100,000 Calls. Wall-mounted cloud meter and deck-of-cards serial-port box sit side by side on a laundry-room shelf."
-image_caption: "Your Washer Now Costs 100,000 Calls: SmartThings meters your washer's cloud path; Nabu Casa sells the port you own."
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "Your Washer Now Costs 100,000 Calls. A washer's recessed network port in macro beside a small black bridge box with two RJ45 sockets."
+image_caption: "Your Washer Now Costs 100,000 Calls: SmartThings put its cloud API on a 100,000-call monthly plan and set a December cutoff."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
