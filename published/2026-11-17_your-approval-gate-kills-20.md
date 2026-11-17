@@ -13,10 +13,10 @@ slug: your-approval-gate-kills-20
 meta_title: "Your Approval Gate Kills 20%: The Bill Moved Into Margin"
 meta_description: "AI spend now sits mostly in production, which is cost of revenue, so an approval gate cuts the fifth of the bill that can pause and misses the rest."
 image_path: "context/assets/illustrations/your-approval-gate-kills-20/featured.jpg"
-image_style: "paper_collage"
-image_model: "nanobanana"
-image_alt: "Your Approval Gate Kills 20%. Lowered approval gate arm blocking server modules contrasted with a unit-cost meter dial."
-image_caption: "Your Approval Gate Kills 20%: AI spend now sits mostly in production, which is cost of revenue, so an approval gate."
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "A locked steel gate across a dark data-hall aisle, beside a wall-mounted meter whose needle sits in the red."
+image_caption: "A gate over the aisle and a meter on the wall: the control most teams add, and the one the bill rewards."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
@@ -67,13 +67,10 @@ None of these numbers says the AI work was worth doing. That question is older, 
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Agent Identity: The Wrong Layer" -> /agent-identity-missed-the-real-breach/ [same site (aichieve.net); same category; topical overlap: wrong] Link "Agent Identity: The Wrong Layer" in the section where the article touches wrong. -->
-<!-- internal-link hint: "Kill Switch Misses Half Your Agents" -> /kill-switch-misses-half-your-agents/ [same site (aichieve.net); same category; topical overlap: approval] Link "Kill Switch Misses Half Your Agents" in the section where the article touches approval. -->
-<!-- internal-link hint: "Cloud Bill Break-Even" -> /the-cloud-bill-break-even-when-renting-servers-stops-paying/ [same site (aichieve.net); same category; topical overlap: bill] Link "Cloud Bill Break-Even" in the section where the article touches bill. -->
 ## Related reading
 
-- [Agent Identity: The Wrong Layer](/agent-identity-missed-the-real-breach/) — more on Mental Models & Strategy
-- [Kill Switch Misses Half Your Agents](/kill-switch-misses-half-your-agents/) — more on Mental Models & Strategy
+- [Your AI Bill Grew 1.65%](/your-ai-bill-grew-165-you-cut-the-work/) — the same bill read from the finance side
+- [Your $200 Cap Still Buys 2.85x](/your-200-cap-still-buys-2-85x/) — a daily AI budget written in a falling unit
 - [Cloud Bill Break-Even](/the-cloud-bill-break-even-when-renting-servers-stops-paying/) — more on Mental Models & Strategy
 <!-- internal-links:end -->
 

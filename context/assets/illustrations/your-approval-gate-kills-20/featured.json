@@ -1,6 +1,6 @@
 {
   "slug": "your-approval-gate-kills-20",
-  "revision": 2,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -9,38 +9,92 @@
       "title": "Approval Gate vs Unit-Cost Meter",
       "bytes": 404565,
       "sha256": "sha256:a0884c6b22c483f8cd9c324d6297ef37"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your Approval Gate Kills 20%. Lowered approval gate arm blocking server modules contrasted with a unit-cost meter dial.",
+      "caption": "Your Approval Gate Kills 20%: AI spend now sits mostly in production, which is cost of revenue, so an approval gate.",
+      "title": "Your Approval Gate Kills 20%",
+      "bytes": 399949,
+      "sha256": "sha256:747dedc374d2c701e264b5da21ec1fed3fb64085a0e5ad18b9d560288c1b4f86"
+    },
+    {
+      "revision": 3,
+      "alt_text": "AI Bill Moved Into Margin. Your Approval Gate Kills 20%. Lowered approval gate arm blocking server modules contrasted with a unit-cost",
+      "caption": "AI Bill Moved Into Margin: the 20% of AI initiatives killed by approval gates versus 7% with unit-cost funding.",
+      "title": "AI Bill Moved Into Margin",
+      "bytes": 408762,
+      "sha256": "sha256:77fc571986904289bf0f3e62ce94811a1d76ea98615fda24bfb984282fd49df8"
+    },
+    {
+      "revision": 4,
+      "alt_text": "AI Bill Moved Into Margin. Your Approval Gate Kills 20%. Lowered approval gate arm blocking server modules contrasted with a unit-cost",
+      "caption": "AI Bill Moved Into Margin: the 20% of AI initiatives killed by approval gates versus 7% with unit-cost funding.",
+      "title": "AI Bill Moved Into Margin",
+      "bytes": 398865,
+      "sha256": "sha256:5594a84c855475a97c512329dc787cd7c3f7f10ee08f0159486925693057633f"
+    },
+    {
+      "revision": 5,
+      "alt_text": "A paper collage split in two: a red-and-white barrier arm lowered over grey paper server racks, and a red paper dial with a yellow needle.",
+      "caption": "A gate over the racks and a dial on the red: two controls, and only one of them prices the work.",
+      "title": "AI Bill Moved Into Margin",
+      "bytes": 398865,
+      "sha256": "sha256:5594a84c855475a97c512329dc787cd7c3f7f10ee08f0159486925693057633f"
+    },
+    {
+      "revision": 6,
+      "style": "paper_collage",
+      "model": "nano-banana-pro",
+      "prompt": "Split-screen editorial cut-paper collage on a control room desk. Left half: a lowered red-and-white barrier gate arm blocks a stack of graphite server modules cut from matte paper with halftone newsprint texture. Right half: a circular bone-white meter gauge with a safety-yellow needle points across a rust-red backing. Hand-torn rag paper with visible fiber, physical cast shadows under each layer, one raking light from the left, muted palette of graphite, safety yellow, bone white, generous negative space, no legible print.",
+      "task_id": "abf56417cf6e37a29239587a5c1c93cc",
+      "sha256": "sha256:7499d4c796566dece77612cd1b5aaa5fd86e72b9e2f64f2f72c5b8187c2a25b5",
+      "generated_at": "2026-11-17T11:39:20+00:00",
+      "source_hash": "sha256:bec8a7188617391a72254d8980f278b6",
+      "render_sha256": "sha256:756e883d62161c155f223551bd9d8a1956c8b7db31c79da56db7e7846e11da14"
+    },
+    {
+      "revision": 7,
+      "alt_text": "A locked steel gate across a dark data hall aisle opposite a wall-mounted meter beside an active server rack.",
+      "caption": "The control that protects an AI programme is a meter tied to a unit of work, not an approval gate that cuts the fifth of the bill a team can pause.",
+      "title": "Approval Gate vs Unit-Cost Meter",
+      "bytes": 359663,
+      "sha256": "sha256:9c43bf67b14ffb80c68ac029930e51bc"
     }
   ],
-  "style": "paper_collage",
-  "style_label": "Editorial paper collage",
-  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
-  "model": "nano-banana-pro",
-  "model_key": "nanobanana",
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Split-screen editorial cut-paper collage on a control room desk. Left half: a lowered red-and-white barrier gate arm blocks a stack of graphite server modules cut from matte paper with halftone newsprint texture. Right half: a circular bone-white meter gauge with a safety-yellow needle points across a rust-red backing. Hand-torn rag paper with visible fiber, physical cast shadows under each layer, one raking light from the left, muted palette of graphite, safety yellow, bone white, generous negative space, no legible print.",
-  "negative_prompt": "garbled text, random lettering, watermarks",
-  "rationale": "Paper collage suits this conceptual policy dilemma: no physical facility or machine is the subject, so cut-paper silhouettes can state the gate-versus-meter contrast with editorial clarity and material presence. The split-screen diptych enforces the two-scenario duality required by the hard rules.",
-  "cue": "the bill moved into margin",
-  "subject": "a lowered approval gate arm blocking a stack of server modules contrasted with a unit-cost meter dial",
-  "core_thesis": "AI spend moved from the pauseable fifth to the cost-of-revenue four-fifths, so the protective control is a unit-cost meter, not an approval gate.",
-  "core_conflict": "Approval gates cut 20% of initiatives while unit-cost funding loses only 7%, because gates only reach the small pauseable development budget.",
+  "prompt": "Cinematic film still, 35mm anamorphic wide establishing shot inside a data hall aisle. Split-screen diptych divided by a clean vertical seam: left half, a heavy graphite steel turnstile gate locked across a dark server rack row, its shadow deep; right half, a wall-mounted electro-mechanical meter with a needle swung into a red zone beside an active server rack glowing warm amber. Single cool overhead fluorescent key light from the left rakes across brushed steel and concrete floor, cobalt and bone white highlights, crisp atmospheric depth, fine film grain, no people, no text, no numbers, no logos.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, logos",
+  "rationale": "Cinematic still captures the decision point as a physical place and moment; the wide anamorphic frame holds the gate-vs-meter contrast in one industrial environment without reducing it to a product shot.",
+  "cue": "a meter tied to a unit of work",
+  "subject": "a steel approval gate locked across a dark data hall aisle opposite a wall-mounted unit-cost meter beside an active server rack",
+  "core_thesis": "AI spend has shifted from a pausable project fifth to cost-of-revenue production, so the control that protects an AI programme is a meter tied to a unit of work rather than an approval gate.",
+  "core_conflict": "approval gate on the pausable fifth vs unit-cost meter across the cost-of-revenue four-fifths",
   "composition": "split-screen diptych with left-right scenario contrast",
-  "alt_text": "Your Approval Gate Kills 20%. Lowered approval gate arm blocking server modules contrasted with a unit-cost meter dial.",
-  "caption": "Your Approval Gate Kills 20%: AI spend now sits mostly in production, which is cost of revenue, so an approval gate.",
-  "title": "Your Approval Gate Kills 20%",
+  "alt_text": "A locked steel gate across a dark data-hall aisle, beside a wall-mounted meter whose needle sits in the red.",
+  "caption": "A gate over the aisle and a meter on the wall: the control most teams add, and the one the bill rewards.",
+  "title": "Approval Gates Kill 20% Of AI Initiatives",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "deepseek-v4-pro",
   "director_attempts": 1,
-  "pinned": {},
+  "pinned": {
+    "style": "cinematic_still",
+    "model": "flux"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/your-approval-gate-kills-20/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 399949,
-  "sha256": "sha256:747dedc374d2c701e264b5da21ec1fed3fb64085a0e5ad18b9d560288c1b4f86",
+  "bytes": 396185,
+  "sha256": "sha256:a168212eeecf0dcd7428b15ed84294400778cff6035bc886e1b76df9bbbf0c3b",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,66 +103,65 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 399949,
-    "quality": 56,
-    "sha256": "sha256:747dedc374d2c701e264b5da21ec1fed3fb64085a0e5ad18b9d560288c1b4f86",
+    "bytes": 396185,
+    "quality": 76,
+    "sha256": "sha256:a168212eeecf0dcd7428b15ed84294400778cff6035bc886e1b76df9bbbf0c3b",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:756e883d62161c155f223551bd9d8a1956c8b7db31c79da56db7e7846e11da14",
-  "render_phash": "7a7f3e7f3e7f3e7f7273cc79c8754e6d3c694d870d87098d9389098101810181",
+  "render_sha256": "sha256:da4b8d8016e171c86b336f834294a95d619e1731335d6877d1552a457d2f2a51",
+  "render_phash": "0e1d8e198e1c0f530f130f300f3f0f090e49061b0e490e430f430e450e430f47",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "A split-screen paper collage with gray rectangular panels bearing dotted grilles on the left, crossed diagonally by a red-and-white striped paper bar, and a circular red-and-white dial with a yellow pointer on the right.",
+    "depicts": "A split-screen diptych: on the left a closed steel barred gate across a dark, fog-lit data hall aisle lined with server cabinets, and on the right a wall-mounted analog gauge with a red indicator lamp and needle swung toward the high end, mounted beside an open, lit server rack full of cabling and equipment.",
     "legible_text": "",
     "on_topic": true,
-    "confidence": 0.9,
-    "reason": "The diptych directly stages the article's contrast between an approval gate over server hardware and a unit-cost meter dial."
+    "confidence": 0.87,
+    "reason": "The image stages the article's exact contrast \u2014 a locked approval gate on the pausable side versus a live unit-cost meter beside running production hardware \u2014 so a reader would recognise the gate-versus-meter mechanism the headline argues about."
   },
   "source_hash": "sha256:bec8a7188617391a72254d8980f278b6",
   "source_chars": 5074,
-  "task_id": "abf56417cf6e37a29239587a5c1c93cc",
-  "credits": 18.0,
-  "cost_ms": 21,
-  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_69fac61d85b563cbcf578dc4419d197a.png",
+  "task_id": "e24b68d4427ea2c20a724eb4210a34e2",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/e24b68d4427ea2c20a724eb4210a34e2_1794916120020.jpg",
   "provider_request": {
-    "model": "nano-banana-pro",
+    "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Split-screen editorial cut-paper collage on a control room desk. Left half: a lowered red-and-white barrier gate arm blocks a stack of graphite server modules cut from matte paper with halftone newsprint texture. Right half: a circular bone-white meter gauge with a safety-yellow needle points across a rust-red backing. Hand-torn rag paper with visible fiber, physical cast shadows under each layer, one raking light from the left, muted palette of graphite, safety yellow, bone white, generous negative space, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Cinematic film still, 35mm anamorphic wide establishing shot inside a data hall aisle. Split-screen diptych divided by a clean vertical seam: left half, a heavy graphite steel turnstile gate locked across a dark server rack row, its shadow deep; right half, a wall-mounted electro-mechanical meter with a needle swung into a red zone beside an active server rack glowing warm amber. Single cool overhead fluorescent key light from the left rakes across brushed steel and concrete floor, cobalt and bone white highlights, crisp atmospheric depth, fine film grain, no people, no text, no numbers, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
-      "resolution": "1K",
-      "image_input": [],
-      "output_format": "png"
+      "resolution": "1K"
     }
   },
-  "generated_at": "2026-11-17T11:39:20+00:00",
+  "generated_at": "2026-11-17T11:48:49+00:00",
   "overlay": {
-    "kicker": "",
-    "title": "YOUR APPROVAL GATE KILLS 20%",
-    "hook": "AI spend now sits mostly in production, which is cost of revenue, so an approval gate",
-    "anchor": "top-right",
-    "light": false,
-    "scrim": 135,
-    "contrast": 6.0,
-    "target": 5.5,
-    "clutter": 0.492,
+    "kicker": "AI BUDGET CONTROLS // COST OF REVENUE",
+    "title": "APPROVAL GATES KILL 20% OF AI INITIATIVES",
+    "hook": "Most AI spend is now cost of revenue, so gates pause only the part they can reach",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 9.11,
+    "target": 4.5,
+    "clutter": 0.201,
     "region_rgb": [
-      162,
-      152,
-      140
+      37,
+      45,
+      46
     ],
     "binding_rgb": [
-      93,
-      84,
-      75
+      58,
+      64,
+      64
     ],
     "title_lines": [
-      "YOUR APPROVAL",
-      "GATE KILLS 20%"
+      "APPROVAL GATES",
+      "KILL 20% OF AI",
+      "INITIATIVES"
     ],
-    "subject": 0.32,
-    "ink_subject": 0.143,
-    "spike": 0.481,
-    "generated_at": "2026-11-17T11:39:20+00:00"
+    "subject": 0.086,
+    "ink_subject": 0.011,
+    "spike": 0.075,
+    "generated_at": "2026-11-17T11:48:49+00:00"
   }
 }

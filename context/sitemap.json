@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T11:41:20Z",
+  "updated_at": "2026-11-17T12:11:26Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7084,6 +7084,24 @@
         "Related reading"
       ],
       "target_persona": "evals_infra_eng",
+      "date": "2026-11-17",
+      "public": false
+    },
+    {
+      "slug": "2026-11-17_your-washer-100000-calls",
+      "title": "Your Washer Now Costs 100,000 Calls",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "A meter on the cloud side",
+        "By the numbers",
+        "Where the port decides",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-17",
       "public": false
     }
