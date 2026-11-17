@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T18:16:47Z",
+  "updated_at": "2026-11-17T18:40:37Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7047,6 +7047,24 @@
         "Related reading"
       ],
       "target_persona": "it_ops_leader",
+      "date": "2026-11-17",
+      "public": false
+    },
+    {
+      "slug": "2026-11-17_your-8-gib-node-sells-6-1",
+      "title": "Your 8 GiB Node Sells 6.1: The Hidden Reserve",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the memory goes first",
+        "By the numbers",
+        "What the kernel does with it",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
       "date": "2026-11-17",
       "public": false
     },
