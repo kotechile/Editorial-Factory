@@ -53,7 +53,7 @@ Once the swing is measured, the equation ranks the lanes without much argument. 
 
 The equation assumes the two swings move separately and the service target holds still. Under a port strike or a parts shortage neither holds. The delivery swing widens exactly when demand shifts, and the two terms stop adding under a square root [2]. The threshold result is the other limit: where the reversal begins depends on the shape of the lead-time spread, so it is a real warning and not a fixed number [1]. And the buffer is not the whole bill. Expedited freight, write-offs and the working capital behind the stock sit outside this math, which is why the ratio ranks levers rather than settling a budget.
 
-The honest use is narrower than the sales pitch on either side. It tells you which of three levers has room left on a lane — a shorter lead time, a tighter delivery swing, or a better forecast — and it tells you when the answer flips. It does not tell you what service level the lane deserves. That is a margin question, not a variance one.
+The honest use is narrower than the sales pitch on either side. It tells you which of three levers has room left on a lane — a shorter lead time, a tighter delivery swing, or a better forecast — and it tells you when the answer flips. It does not tell you what service level the lane deserves. That is a margin question, not a variance one. My read: the ratio ranks the levers on a lane, and what service level the lane deserves stays a margin question.
 
 ## Sources
 

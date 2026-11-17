@@ -33,7 +33,7 @@ Only the first two involve a request. To cancel at 80 percent of the price you p
 
 The automatic date needs no letter. It sits at 78 percent of the original value, is read off the original schedule, and the statute tells the servicer to ignore the outstanding balance on the day it lands [1]. Paying extra does not pull it forward, because that date never looks at what you have paid.
 
-Two limits sit behind it. The cover cannot run past the first day of the month after the midpoint of the loan's term while you are current, which is 180 months on a 30-year note [2]. And a loan the lender classed as high risk when it was written can carry the insurance past both dates, if the closing papers said so [2].
+Two limits sit behind it. The cover cannot run past the first day of the month after the midpoint of the loan's term while you are current, which is 180 months on a 30-year note [2]. And a loan the lender classed as high risk when it was written can carry the insurance past both dates, if the closing papers said so [2]. What I'd watch next: whether servicers send that schedule without being asked, since it sets all three dates.
 
 ## By the numbers
 

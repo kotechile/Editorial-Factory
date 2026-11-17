@@ -31,9 +31,6 @@ Supporting text carried in prose (not gate rows, because the figure is not in th
 | Li-ion UPS cabinet spacing and fire-code thresholds for a battery room | 8 | 8 | 5 | 9 | 7.4 | dropped — `codes.iccsafe.org` returns a captcha page to the verifier and NFPA 855 is a licensed paywall, so no threshold could be verified |
 
 ## Gate result
-<!-- written by scripts/evergreen_gate.py — do not hand-edit; re-run the gate if you edit a row -->
-
-## Gate result
 
 <!-- evergreen-gate:start -->
 <!-- evergreen-gate: helper=evergreen_gate.py rows=6 fetched=6 sources=5 hosts=2 decision="sha1:2359be0124" dedup="matched a prior artifact: 2026-11-03_your-backup-66-mw-permi" window_days=180 checked_at=2026-11-17T18:06:54+00:00 -->

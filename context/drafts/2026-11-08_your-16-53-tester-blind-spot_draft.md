@@ -32,7 +32,7 @@ A three-lamp tester is three small voltage sensors sharing one plug. Each lamp a
 
 A jumper between the grounding screw and the neutral screw collapses two of those questions into one. The hot slot now drives both the neutral and the ground slot, so the tester reads out the pattern it calls correct wiring [7]. Nothing in the device is broken. The fault sits in a wire the plug cannot reach.
 
-The reversed version is the one that hurts. With a faked ground and reversed polarity, the metal yoke of the outlet sits at line voltage, and so does the frame of anything plugged into it, while the tester still shows correct wiring [7]. Mike Twitty, a licensed electrician and code inspector who wrote the guide for home inspectors, adds that no lights do not mean the outlet is dead [7].
+The reversed version is the one that hurts. With a faked ground and reversed polarity, the metal yoke of the outlet sits at line voltage, and so does the frame of anything plugged into it, while the tester still shows correct wiring [7]. Mike Twitty, a licensed electrician and code inspector who wrote the guide for home inspectors, adds that no lights do not mean the outlet is dead [7]. My read: the chart is three questions about slot pairs, and a jumper answers two of them with the same wire.
 
 | Unit | Price | Claimed | What it measures | Fails at |
 |---|---|---|---|---|
@@ -54,7 +54,7 @@ The RT390 earns its price on a different question. It applies a load at three se
 
 What it does not do is make the fake-ground call. Klein's page for the RT390 lists wiring faults, the dual open fault, both device inspections and the voltage-drop tests, and no fake-ground row appears in that list [6]. The RT210's page is the same: five conditions, no fake ground [4]. The RT250 adds a display and a trip timer, states that arc-fault testing is not included, and adds nothing on the ground [5].
 
-The one class that advertises the call is the Ideal Electrical SureTest. Its feature list says it identifies false grounds, reads ground impedance down to a hundredth of an ohm, reads ground-to-neutral voltage, and tests a ground-fault device at a measured current [8]. A trade review of the successor model describes the same load tests and adds that the resistance of the hot, neutral and ground wires is measured and displayed [11]. That series is listed at $421.33 by a distributor [8]. The maker's own page for that model says it has been discontinued [10]. The ceiling of this comparison is an outgoing unit at twenty-five times the price of the tester, sold on a claim whose accuracy nobody here publishes.
+The one class that advertises the call is the Ideal Electrical SureTest. Its feature list says it identifies false grounds, reads ground impedance down to a hundredth of an ohm, reads ground-to-neutral voltage, and tests a ground-fault device at a measured current [8]. A trade review of the successor model describes the same load tests and adds that the resistance of the hot, neutral and ground wires is measured and displayed [11]. That series is listed at $421.33 by a distributor [8]. The maker's own page for that model says it has been discontinued [10]. The ceiling of this comparison is an outgoing unit at twenty-five times the price of the tester, sold on a claim whose accuracy nobody here publishes. What I'd watch next: whether the fake-ground call reaches a tester that costs less than the analyzer.
 
 <!-- nuanced-takeaway -->
 

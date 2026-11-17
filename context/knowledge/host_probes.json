@@ -368,6 +368,14 @@
   "note": "tches, but the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 \u00a7 1 fetches but spells its count as \"one hundred eighty-three days\", w"
  },
  {
+  "host": "codes.iccsafe.org",
+  "url": "https://codes.iccsafe.org/content/IFC2024P1/chapter-12-energy-systems",
+  "verdict": "unreachable",
+  "as_of": "2026-11-17",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "returns a captcha page (112 chars) to the verifier, so no model-code figure can carry a row from iccsafe."
+ },
+ {
   "host": "codes.ohio.gov",
   "url": "",
   "verdict": "unreachable",
@@ -2920,12 +2928,36 @@
   "note": "k costless, \"GitHub Actions usage is free for self-hosted runners\"); `www.digitalocean.com/pricing/droplets` (the full ladder as one text line \u2014 `2 GiB 2 vCPUs \u2026 $0.02679 $ 18.00`, `4 GiB 2"
  },
  {
+  "host": "www.ecfr.gov",
+  "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-112/section-112.1",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "SPCC sections fetch first try with the verifier UA: \u00a7112.1 prints the 1,320-gal and 42,000-gal exemption conditions plus the 55-gal counting rule in one run, \u00a7112.3 the Tier I/II rungs and the PE certification, \u00a7112.5 th"
+ },
+ {
+  "host": "www.epa.gov",
+  "url": "https://www.epa.gov/spcc",
+  "verdict": "unreachable",
+  "as_of": "2026-11-17",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "epa.gov SPCC paths (/spcc, /emergency-response/..., /oil-spills-prevention-and-preparedness-regulations/...) all unreachable to the verifier on 2026-11-17; a /sites/default/files PDF came back unsupported. Build an SPCC "
+ },
+ {
   "host": "www.ibhs.org",
   "url": "",
   "verdict": "mentioned",
   "as_of": "2026-10-23",
   "vertical": "resilient_home_assets",
   "note": "the 6-inch siding line, the $125 fee and the three-year designation; `www.ibhs.org/wildfire/` for a field count like \"destroyed 615\"), while the dual-office acoustic beat still has **no** fe"
+ },
+ {
+  "host": "www.law.cornell.edu",
+  "url": "https://www.law.cornell.edu/cfr/text/40/112.3",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "Cornell LII mirrors of 40 CFR 112.1/.2/.3/.5/.6 and 280.10/.12 fetch first try (4-20 KB, operative sentences as plain text); the \u00a7280.12 definition page carries the heating-oil consumptive-use exclusion."
  },
  {
   "host": "www.mindstudio.ai",
@@ -2942,6 +2974,14 @@
   "as_of": "2026-10-15",
   "vertical": "",
   "note": "arry a row: `leginfo.legislature.ca.gov` and `law.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le.utah.gov` per-section guesses (404), `cga.ct.gov` (SSL certificate fai"
+ },
+ {
+  "host": "www.opencompute.org",
+  "url": "https://www.opencompute.org/documents/ocp-advanced-cooling-solutions-liquid-cooling-loop-requirements-for-coolant-distribution-units-cdu-pdf",
+  "verdict": "unreachable",
+  "as_of": "2026-11-17",
+  "vertical": "nhil_infrastructure_ops",
+  "note": "OCP document PDFs answered unreachable to the verifier on 2026-11-17 (an OCP PDF did fetch on 2026-10-13), so probe before building an ORV3 / rack-power row on opencompute.org."
  },
  {
   "host": "www.sea-intelligence.com",

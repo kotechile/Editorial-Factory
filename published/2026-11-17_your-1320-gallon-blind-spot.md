@@ -15,8 +15,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-1320-gallon-blind-spot/featured.jpg"
 image_style: "component_assembly"
 image_model: "nanobanana"
-image_alt: "Backup Fuel'S 1,320-Gallon Blind Spot. Steel drum containment rack holding 55-gallon fuel drums, an inspection gate ajar on a concrete pad."
-image_caption: "Backup Fuel'S 1,320-Gallon Blind Spot: Twenty-four 55-gallon drums — 1,320 gallons — mark the SPCC threshold."
+image_alt: "Steel drum containment rack holding 55-gallon fuel drums beside a chain-link gate on a concrete pad."
+image_caption: "Backup fuel's 1,320-gallon blind spot: twenty-four 55-gallon drums mark the SPCC threshold."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
