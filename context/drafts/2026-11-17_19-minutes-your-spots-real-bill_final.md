@@ -32,7 +32,7 @@ Spot machines are rented cloud computers a provider can take back at short notic
 
 <!-- tension -->
 
-## The Rule That Prices The Lost Hours
+## The Rule Sets The Bill
 
 The formula that prices this has been in use for fifty years [1]. It answers a narrow question: how often should a long job save its state, when the machine can fail mid-run? Save too often and the writes eat the clock. Save too rarely and every failure throws away hours of work. The answer is the square root of twice the failure gap times the write cost [1]. It has stayed the working rule ever since, for machines that fail more often than the job ends.
 
