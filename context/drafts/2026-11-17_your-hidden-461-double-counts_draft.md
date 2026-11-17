@@ -47,7 +47,7 @@ Three questions are worth asking of any count before a threshold is tuned to it.
 <!-- nuanced-takeaway -->
 ## The catch
 
-What I find hard to square is how small the damage was. Sea-Intelligence calls the impact "minimal", with differences "barely discernible in most months", and that is fair: one ranking moved and the rest of the chart held [1]. So the lesson is not that the benchmark is broken. It is that the margin your call rested on was thinner than a flaw nobody could see. That is a different question from whether the number was high or low. The same shape sits under every exception rate your tower pages on.
+What I find hard to square is how small the damage was. Sea-Intelligence calls the impact "minimal", with differences "barely discernible in most months", and that is fair: one ranking moved and the rest of the chart held [1]. So the benchmark is not broken. The margin your call rested on was thinner than a flaw nobody could see. That is a different question from whether the number was high or low. The same shape sits under every exception rate your tower pages on.
 
 There is also a limit to what you can do from outside a vendor's pipeline. You cannot audit an average you cannot see. You can ask whether the count can be rebuilt from your own records, and whether anyone has tried. That is where a record becomes proof rather than a claim: the retention behind [your exception log](/your-exception-log-owes-5-years/) decides whether you can rebuild last quarter's count when a carrier disputes it.
 

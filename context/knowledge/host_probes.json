@@ -2544,6 +2544,14 @@
   "note": "epository page is not a source row), `raspberrypi.com/products/...`, `sense.com`, and essentially every PDF (`info.ornl.gov`, the ACEEE proceedings, a `github.io` report PDF are `unsupported"
  },
  {
+  "host": "shipzil.com",
+  "url": "https://shipzil.com/carrier/fedex",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "control_tower_exception_orchestration",
+  "note": "Live cross-platform carrier-API monitor; primary for its own incident and uptime counts, and explicit about its limits (reported vs measured, carriers inferred from titles). Figures refresh live \u2014 cite the snapshot times"
+ },
+ {
   "host": "snowjoe.com",
   "url": "",
   "verdict": "fetchable",
@@ -2934,6 +2942,14 @@
   "as_of": "2026-10-15",
   "vertical": "",
   "note": "arry a row: `leginfo.legislature.ca.gov` and `law.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le.utah.gov` per-section guesses (404), `cga.ct.gov` (SSL certificate fai"
+ },
+ {
+  "host": "www.sea-intelligence.com",
+  "url": "https://www.sea-intelligence.com/press-room",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "control_tower_exception_orchestration",
+  "note": "Independent liner research house; press-room releases are primary for schedule-reliability figures, and its corrections publish their own mechanism and affected counts."
  },
  {
   "host": "www.silicondata.com",

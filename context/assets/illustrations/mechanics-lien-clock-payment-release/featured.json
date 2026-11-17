@@ -1,6 +1,6 @@
 {
   "slug": "mechanics-lien-clock-payment-release",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -67,6 +67,14 @@
       "title": "The Hidden Lien Clock Behind Your Remodel",
       "bytes": 400997,
       "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6"
+    },
+    {
+      "revision": 8,
+      "alt_text": "The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk illuminated by a single amber worklight.",
+      "caption": "The Hidden Lien Clock Behind Your Remodel: A California homeowner has exactly 15 days after a remodel ends to file one form.",
+      "title": "The Hidden Lien Clock Behind Your Remodel",
+      "bytes": 400997,
+      "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6"
     }
   ],
   "style": "architectural_night",
@@ -82,9 +90,9 @@
   "rationale": "The article discusses the hidden, ongoing statutory timelines that persist after the physical work of a remodel ends. 'architectural_night' perfectly captures this concept by showing a home remodel site after hours, emphasizing the quiet, unseen processes continuing in the background.",
   "cue": "the statutory lien clock running",
   "subject": "a suburban home undergoing exterior renovation",
-  "alt_text": "The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk illuminated by a single amber worklight.",
-  "caption": "The Hidden Lien Clock Behind Your Remodel: A California homeowner has exactly 15 days after a remodel ends to file one form.",
-  "title": "The Hidden Lien Clock Behind Your Remodel",
+  "alt_text": "The Hidden Lien Clock Behind Remodel Payments. The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk",
+  "caption": "The Hidden Lien Clock Behind Remodel Payments: Miss the 15-day filing window and subcontractors get 90 days to lien your house.",
+  "title": "The Hidden Lien Clock Behind Remodel Payments",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -96,8 +104,8 @@
   "local_path": "context/assets/illustrations/mechanics-lien-clock-payment-release/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 400997,
-  "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6",
+  "bytes": 376300,
+  "sha256": "sha256:7ce77572da0c7814d8eaa4f24525b4917bfd6090fef32e64ee1d96054aec53a6",
   "source_hash": "sha256:f0ed7ee468b6b5adce0b596a2eeab7ad",
   "source_chars": 5076,
   "task_id": "ba906214396e76b829778142e5e4c7fd",
@@ -121,39 +129,39 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 400997,
-    "quality": 88,
-    "sha256": "sha256:3ab49ff4c50a0bda9df45871c783fca0fec8cd6e02a138d5127497c08ac835d6",
+    "bytes": 376300,
+    "quality": 84,
+    "sha256": "sha256:7ce77572da0c7814d8eaa4f24525b4917bfd6090fef32e64ee1d96054aec53a6",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
-    "kicker": "",
-    "title": "THE HIDDEN LIEN CLOCK BEHIND YOUR REMODEL",
-    "hook": "A California homeowner has exactly 15 days after a remodel ends to file one form",
+    "kicker": "CONSTRUCTION LIEN // NOTICE OF COMPLETION",
+    "title": "THE HIDDEN LIEN CLOCK BEHIND REMODEL PAYMENTS",
+    "hook": "Miss the 15-day filing window and subcontractors get 90 days to lien your house",
     "anchor": "top-right",
     "light": true,
     "scrim": 120,
-    "contrast": 4.56,
+    "contrast": 4.55,
     "target": 4.5,
-    "clutter": 0.153,
+    "clutter": 0.155,
     "region_rgb": [
-      21,
+      22,
       93,
-      141
+      140
     ],
     "binding_rgb": [
-      20,
+      22,
       113,
       170
     ],
     "title_lines": [
       "THE HIDDEN LIEN",
       "CLOCK BEHIND",
-      "YOUR REMODEL"
+      "REMODEL PAYMENTS"
     ],
-    "subject": 0.157,
-    "ink_subject": 0.059,
-    "spike": 0.27,
+    "subject": 0.154,
+    "ink_subject": 0.061,
+    "spike": 0.28,
     "generated_at": "2026-10-08T22:08:31+00:00"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "forecast-accuracy-is-not-shock-protection",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -48,6 +48,14 @@
     },
     {
       "revision": 6,
+      "alt_text": "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
+      "caption": "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15.",
+      "title": "Forecast Accuracy",
+      "bytes": 409411,
+      "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7"
+    },
+    {
+      "revision": 7,
       "alt_text": "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
       "caption": "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15.",
       "title": "Forecast Accuracy",

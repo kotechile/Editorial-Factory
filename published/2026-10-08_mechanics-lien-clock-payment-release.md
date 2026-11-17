@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/mechanics-lien-clock-payment-release/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk illuminated by a single amber worklight."
-image_caption: "The Hidden Lien Clock Behind Your Remodel: A California homeowner has exactly 15 days after a remodel ends to file one form."
+image_alt: "The Hidden Lien Clock Behind Remodel Payments. The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk"
+image_caption: "The Hidden Lien Clock Behind Remodel Payments: Miss the 15-day filing window and subcontractors get 90 days to lien your house."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

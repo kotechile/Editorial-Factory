@@ -9,8 +9,8 @@ slug: your-hidden-461-double-counts
 image_path: "context/assets/illustrations/your-hidden-461-double-counts/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "The 461 Double Counts. Unbranded container ship reflected in dock water at a quay under low sunrise"
-image_caption: "The 461 Double Counts: A hidden 461-call double count reversed which alliance ranked most reliable."
+image_alt: "A container ship at a terminal quay mirrored in still dock water, with gantry cranes and stacked containers behind."
+image_caption: "An unbranded ship doubled by its own reflection in the dock basin: the same call entered the average twice."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

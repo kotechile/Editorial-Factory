@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T14:19:10+00:00",
+  "generated_at": "2026-11-17T14:22:41+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -4232,6 +4232,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-washer-100000-calls",
+      "title": "Your Washer Now Costs 100,000 Calls",
+      "url": "https://wellroost.com/your-washer-100000-calls/",
+      "path": "/your-washer-100000-calls/",
+      "sites_live": {
+        "wellroost.com": "/your-washer-100000-calls/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "SmartThings put its cloud API on a 100,000-call monthly plan and set a December cutoff, eight days before Nabu Casa sold a $69 box for the port you own.",
+      "modified": "2026-11-17T12:17:11",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-zigbee-hub-32-device-ceiling",
       "title": "Your Zigbee Hub's Silent 32-Device Cap",
       "url": "https://wellroost.com/your-zigbee-hub-32-device-ceiling/",
@@ -6354,6 +6377,29 @@
       ],
       "excerpt": "Every week, parcel carriers quietly invoice ecommerce brands and 3PLs for phantom dimensional weight, unearned accessorial surcharges, and missed delivery guarantees. By the time accounts payable reviews the billing file, the 21-to-30-day dispute window has already slammed shut. Here is how ParcelProof puts cash back into shippers' accounts by automating carrier invoice reconciliation with deterministic, verifiable proof.",
       "modified": "2026-10-31T05:02:42",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "part-1-of-8-the-automated-cfr-protection-loop-series",
+      "title": "Part 1 of 8: The Automated CFR Protection Loop Series",
+      "url": "https://aichieve.net/part-1-of-8-the-automated-cfr-protection-loop-series/",
+      "path": "/part-1-of-8-the-automated-cfr-protection-loop-series/",
+      "sites_live": {
+        "aichieve.net": "/part-1-of-8-the-automated-cfr-protection-loop-series/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Standard Case Fill Rate hides recoverable backorders, and ERP reason codes lie. Here is a reference architecture using Advanced CFR and bitemporal snapshots.",
+      "modified": "2026-11-17T01:52:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8537,6 +8583,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-approval-gate-kills-20",
+      "title": "Your Approval Gate Kills 20%: The Bill Moved Into Margin",
+      "url": "https://aichieve.net/your-approval-gate-kills-20/",
+      "path": "/your-approval-gate-kills-20/",
+      "sites_live": {
+        "aichieve.net": "/your-approval-gate-kills-20/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "AI spend now sits mostly in production, which is cost of revenue, so an approval gate cuts the fifth of the bill that can pause and misses the rest.",
+      "modified": "2026-11-17T11:58:57",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-backup-66-mw-permit-trap",
       "title": "Your Backup's 6.6 MW Permit Trap",
       "url": "https://aichieve.net/your-backup-66-mw-permit-trap/",
@@ -8553,6 +8622,29 @@
       ],
       "excerpt": "Go behind the meter and the plant stops being backup: a gas engine crosses federal greenhouse-gas reporting at 6.6 MW, Title V at 8.5 MW and PSD at 19.9 MW.",
       "modified": "2026-11-03T18:21:33",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-boxs-hidden-79-speed-cut",
+      "title": "Your Box's Hidden 79% Speed Cut: Rent Is the Audit",
+      "url": "https://aichieve.net/your-boxs-hidden-79-speed-cut/",
+      "path": "/your-boxs-hidden-79-speed-cut/",
+      "sites_live": {
+        "aichieve.net": "/your-boxs-hidden-79-speed-cut/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "A laptop with 128 GB (gigabytes) of memory was bought to end a bill for rented cloud cards. Its models ran at 13.9 tokens a second on native Linux and 65.4\u2026",
+      "modified": "2026-11-17T12:53:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8737,6 +8829,29 @@
       ],
       "excerpt": "A bracket carrying a 12% margin and a 45-day lead time gets held to a 98% fill target, and its own arithmetic returns 0.83.",
       "modified": "2026-11-02T20:18:20",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-check-sees-0086ms-not-40",
+      "title": "Your Check Sees 0.086ms, Not 40",
+      "url": "https://aichieve.net/your-check-sees-0086ms-not-40/",
+      "path": "/your-check-sees-0086ms-not-40/",
+      "sites_live": {
+        "aichieve.net": "/your-check-sees-0086ms-not-40/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Microsoft spent Thursday and Friday bringing Exchange Online back, telling customers it was restoring service in stages while it \\\"validated stability at each\u2026",
+      "modified": "2026-11-17T11:19:01",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9174,6 +9289,29 @@
       ],
       "excerpt": "Your test suite certifies wrong code and hides it behind a green check because the tests cannot tell a real fix from a broken one.",
       "modified": "2026-10-31T04:48:13",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-hidden-461-double-counts",
+      "title": "Your Hidden 461 Double Counts",
+      "url": "https://aichieve.net/your-hidden-461-double-counts/",
+      "path": "/your-hidden-461-double-counts/",
+      "sites_live": {
+        "aichieve.net": "/your-hidden-461-double-counts/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "On 7 November, Sea-Intelligence told subscribers that 461 ship calls had been counted twice in its alliance figures, and that the double count had sat hidden\u2026",
+      "modified": "2026-11-17T13:18:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10147,6 +10285,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-warning-leaves-701-wrong",
+      "title": "Your Warning Leaves 70.1% Wrong",
+      "url": "https://aichieve.net/your-warning-leaves-701-wrong/",
+      "path": "/your-warning-leaves-701-wrong/",
+      "sites_live": {
+        "aichieve.net": "/your-warning-leaves-701-wrong/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "A public research service \u2014 the queryable endpoint a database exposes to software \u2014 ignores a filter, returns a wrong count 691 times too large, and hands\u2026",
+      "modified": "2026-11-17T10:41:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-zone-deferral-is-worth-115-percent",
       "title": "Your Zone Saves 1.15%: The Hidden Cost",
       "url": "https://aichieve.net/your-zone-deferral-is-worth-115-percent/",
@@ -10191,6 +10352,90 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1746,
+      "slug": "your-hidden-461-double-counts",
+      "title": "Your Hidden 461 Double Counts",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T13:18:29",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1743,
+      "slug": "your-boxs-hidden-79-speed-cut",
+      "title": "Your Box&#8217;s Hidden 79% Speed Cut: Rent Is the Audit",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T12:53:38",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1738,
+      "slug": "your-approval-gate-kills-20",
+      "title": "Your Approval Gate Kills 20%: The Bill Moved Into Margin",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T11:58:57",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1734,
+      "slug": "your-check-sees-0086ms-not-40",
+      "title": "Your Check Sees 0.086ms, Not 40",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T11:19:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1731,
+      "slug": "your-warning-leaves-701-wrong",
+      "title": "Your Warning Leaves 70.1% Wrong",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T10:41:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1713,
+      "slug": "part-1-of-8-the-automated-cfr-protection-loop-series",
+      "title": "Part 1 of 8: The Automated CFR Protection Loop Series",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T01:52:43",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -11228,34 +11473,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1297,
-      "slug": "skus-fail-the-1-32-cut",
-      "title": "Your SKUs Fail The 1.32 Cut",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:06",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1291,
-      "slug": "your-carriers-750000-doesnt-cover-cargo",
-      "title": "Your Carrier&#8217;s $750,000 Doesn&#8217;t Cover Cargo",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:07",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -11546,62 +11763,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T04:35:00",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1307,
-      "slug": "your-screen-gap-999-vs-99",
-      "title": "Your Screen Gap: $999 vs $99",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:05",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1304,
-      "slug": "your-buyback-gap-39-8b-to-zero",
-      "title": "Your Buyback Gap: $39.8B to $0",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:06",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1300,
-      "slug": "why-one-share-outvotes-5300-staff",
-      "title": "Why One Share Outvotes 5,300 Staff",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:06",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1294,
-      "slug": "one-rate-overruns-your-cap-5934",
-      "title": "One Rate Overruns Your Cap $5,934",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:48:07",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }

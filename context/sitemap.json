@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T13:16:39Z",
+  "updated_at": "2026-11-17T17:42:36Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7048,7 +7048,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-approval-gate-kills-20/"
     },
     {
       "slug": "2026-11-17_your-boxs-hidden-79-speed-cut",
@@ -7066,7 +7067,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-boxs-hidden-79-speed-cut/"
     },
     {
       "slug": "2026-11-17_your-check-sees-0086ms-not-40",
@@ -7084,7 +7086,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-check-sees-0086ms-not-40/"
     },
     {
       "slug": "2026-11-17_your-hidden-461-double-counts",
@@ -7101,6 +7104,25 @@
         "Related reading"
       ],
       "target_persona": "supply_chain_architect",
+      "date": "2026-11-17",
+      "public": true,
+      "url": "https://aichieve.net/your-hidden-461-double-counts/"
+    },
+    {
+      "slug": "2026-11-17_your-judges-80-overpays-39-points",
+      "title": "Your Judge's 80% Overpays 39 Points",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why a match rate overpays",
+        "Where this bites",
+        "By the numbers",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "evals_infra_eng",
       "date": "2026-11-17",
       "public": false
     },
@@ -7121,7 +7143,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-warning-leaves-701-wrong/"
     },
     {
       "slug": "2026-11-17_your-washer-100000-calls",
@@ -7139,7 +7162,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-washer-100000-calls/"
     }
   ]
 }

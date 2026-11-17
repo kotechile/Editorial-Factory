@@ -14,8 +14,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/safety-stock-forecast-error-not-demand-noise/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Safety Stock Sizing. Towering warehouse pallet racks stacked deep with shrink-wrapped inventory receding into atmospheric haze."
-image_caption: "Safety Stock Sizing: Feed a safety-stock formula the standard spread of demand, and it builds a much bigger."
+image_alt: "Safety Stock Should Use Forecast Error. Safety Stock Sizing. Towering warehouse pallet racks stacked deep with shrink-wrapped inventory"
+image_caption: "Safety Stock Should Use Forecast Error: Demand spread over-buffers, raw RMSE under-sizes: the middle term decides idle inventory."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
