@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T18:40:37Z",
+  "updated_at": "2026-11-17T19:13:10Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7065,6 +7065,24 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-17",
+      "public": false
+    },
+    {
+      "slug": "2026-11-17_your-80-psi-trap",
+      "title": "Your 80 PSI Trap: A Valve and a Tank",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the ceiling exists",
+        "By the numbers",
+        "What the valve drags in",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-17",
       "public": false
     },

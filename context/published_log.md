@@ -390,6 +390,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-17 | ai_observability_qa | your-judges-80-overpays-39-points | Your Judge's 80% Overpays 39 Points | https://pressflow.aichieve.net/published/2026-11-17_your-judges-80-overpays-39-points.md | reader site only |
 | 2026-11-17 | nhil_infrastructure_ops | your-1320-gallon-blind-spot | Your 1,320-Gallon Blind Spot | https://pressflow.aichieve.net/published/2026-11-17_your-1320-gallon-blind-spot.md | reader site only |
 | 2026-11-17 | enterprise_tech_leadership | your-8-gib-node-sells-6-1 | Your 8 GiB Node Sells 6.1: The Hidden Reserve | https://pressflow.aichieve.net/published/2026-11-17_your-8-gib-node-sells-6-1.md | reader site only |
+| 2026-11-17 | smart_home_telemetry | your-80-psi-trap | Your 80 PSI Trap: A Valve and a Tank | https://pressflow.aichieve.net/published/2026-11-17_your-80-psi-trap.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
