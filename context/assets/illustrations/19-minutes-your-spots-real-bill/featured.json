@@ -1,0 +1,115 @@
+{
+  "slug": "19-minutes-your-spots-real-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Modular storage bay with a sprung checkpoint latch and coiled write-head cable on a server-room floor.",
+      "caption": "A checkpoint-gap mechanism sizes the real bill of a spot discount against the work a machine reclaim throws away.",
+      "title": "Checkpoint Gap Assembly on Server Room Floor",
+      "bytes": 365600,
+      "sha256": "sha256:d6c9e3f00d5736251f6db7e085639c87"
+    }
+  ],
+  "style": "clay_render",
+  "style_label": "Matte 3D render",
+  "style_when": "the news is structural and abstract \u2014 a stack reordered, a layer added, a flow rerouted \u2014 and there is no literal object that carries it, so the idea is stated as a small physical assembly of recognisable parts rather than as bare shapes",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A matte clay 3D assembly in a server room, placed on a brushed-steel service floor: a modular storage bay with a sprung checkpoint latch held open, a segmented timer cam, and a coiled write-head cable resting against it, all coloured graphite, bone white, and safety yellow. A single key light rakes from the left across the matte surfaces, throwing long contact shadows to the right and leaving generous negative space on the right. Three-quarter off-centre composition, weathered concrete base, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, numbers",
+  "rationale": "The article is a structural and mathematical economics story about checkpoint intervals and lost compute time, with no literal scene to photograph. A small matte 3D assembly of recognisable engineered parts can state the checkpoint gap tradeoff with mechanical clarity, and the Nano Banana Pro build idiom supports precise part arrangement and lighting.",
+  "cue": "the checkpoint gap",
+  "subject": "a modular storage bay with a sprung checkpoint latch, segmented timer cam, and coiled write-head cable",
+  "core_thesis": "Spot discount's real cost is the checkpoint gap \u2014 the interval between state saves that determines how much work a preempted job throws away; at Meta's measured failure rate with a one-minute write, that gap is about 19 minutes.",
+  "core_conflict": "a cheap spot rate versus an unpredictable reclaim timer, where write cost and failure gap squeeze effective compute time.",
+  "composition": "asymmetric off-centre framing with three-quarter perspective and generous negative space on the right",
+  "alt_text": "Your Spot Discount'S Real Bill Is 19 Minutes. Modular storage bay with a sprung checkpoint latch and coiled write-head cable on a",
+  "caption": "Your Spot Discount'S Real Bill Is 19 Minutes: Price the hours the job loses, not the hours it rents\u2014save every 19 minutes.",
+  "title": "Your Spot Discount'S Real Bill Is 19 Minutes",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/19-minutes-your-spots-real-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 390899,
+  "sha256": "sha256:b3edfa9262f0b60012c8b8b7784b0cae5a072e9d6e9dcf7721a5e0af62399f46",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 390899,
+    "quality": 80,
+    "sha256": "sha256:b3edfa9262f0b60012c8b8b7784b0cae5a072e9d6e9dcf7721a5e0af62399f46",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b848c4b795851f59be02db1f88e32f7c5f409fbdc5afb246aedf8050cb5774b5",
+  "render_phash": "8d338db39db380fa993b993b1d1b1d37fd73bd53b5c0a76a77210fa541fd60fe",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A blocky modular cuboid unit made of grey, cream and yellow segments sits open-fronted on a pale ledge, with a hinged latch mechanism inside the opening, a segmented fan-like disc leaning at its front-right corner, and a coiled yellow-and-grey cable with a connector plug resting beside it, against a background of dark perforated server cabinets.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.65,
+    "reason": "The frame shows the ordered mechanism \u2014 storage bay, latch, segmented timer cam, coiled write-head cable \u2014 in a server-room setting, so it reads as the article's checkpoint/write mechanism rather than a different industry, though the cost-per-19-minutes claim itself is only implied."
+  },
+  "source_hash": "sha256:e0024d16d55db53918604d7fb99bf277",
+  "source_chars": 4906,
+  "task_id": "69d64c4610694e7183a8bf045f26b62f",
+  "credits": 18.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_92d8726125ae6f89508d760ec17d7444.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A matte clay 3D assembly in a server room, placed on a brushed-steel service floor: a modular storage bay with a sprung checkpoint latch held open, a segmented timer cam, and a coiled write-head cable resting against it, all coloured graphite, bone white, and safety yellow. A single key light rakes from the left across the matte surfaces, throwing long contact shadows to the right and leaving generous negative space on the right. Three-quarter off-centre composition, weathered concrete base, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-17T19:40:18+00:00",
+  "overlay": {
+    "kicker": "SPOT COMPUTE // CHECKPOINT ECONOMICS",
+    "title": "YOUR SPOT DISCOUNT'S REAL BILL IS 19 MINUTES",
+    "hook": "Price the hours the job loses, not the hours it rents\u2014save every 19 minutes",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.83,
+    "target": 5.5,
+    "clutter": 0.416,
+    "region_rgb": [
+      61,
+      61,
+      53
+    ],
+    "binding_rgb": [
+      115,
+      111,
+      100
+    ],
+    "title_lines": [
+      "YOUR SPOT",
+      "DISCOUNT'S REAL",
+      "BILL IS 19 MINUTES"
+    ],
+    "subject": 0.311,
+    "ink_subject": 0.112,
+    "spike": 0.536,
+    "generated_at": "2026-11-17T19:40:18+00:00"
+  }
+}

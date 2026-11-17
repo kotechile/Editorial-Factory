@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T19:13:10Z",
+  "updated_at": "2026-11-17T19:41:00Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7031,6 +7031,24 @@
       "date": "2026-11-13",
       "public": true,
       "url": "https://giniloh.com/your-console-rose-500-instead/"
+    },
+    {
+      "slug": "2026-11-17_19-minutes-your-spots-real-bill",
+      "title": "19 Minutes: Your Spot Discount's Real Bill",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The Rule That Prices The Lost Hours",
+        "By the numbers",
+        "What The Fleet Teams Assume",
+        "Where The Formula Bends",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-17",
+      "public": false
     },
     {
       "slug": "2026-11-17_your-1320-gallon-blind-spot",
