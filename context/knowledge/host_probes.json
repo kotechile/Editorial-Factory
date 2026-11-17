@@ -1576,6 +1576,14 @@
   "note": "`lokad.com` and `inflowinventory.com` safety-stock slugs (404), and `itl.nist.gov`'s normal-distribution page (fetches at 8.5 KB but prints no z-value a service-level row could lead on) \u2014 s"
  },
  {
+  "host": "josie.lol",
+  "url": "https://josie.lol/blog/linux-rtx-spark",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "workstation_compute_economics",
+  "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
+ },
+ {
   "host": "justetf.com",
   "url": "",
   "verdict": "unreachable",
@@ -2912,12 +2920,28 @@
   "note": "the 6-inch siding line, the $125 fee and the three-year designation; `www.ibhs.org/wildfire/` for a field count like \"destroyed 615\"), while the dual-office acoustic beat still has **no** fe"
  },
  {
+  "host": "www.mindstudio.ai",
+  "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "workstation_compute_economics",
+  "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
+ },
+ {
   "host": "www.nysenate.gov",
   "url": "",
   "verdict": "unreachable",
   "as_of": "2026-10-15",
   "vertical": "",
   "note": "arry a row: `leginfo.legislature.ca.gov` and `law.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le.utah.gov` per-section guesses (404), `cga.ct.gov` (SSL certificate fai"
+ },
+ {
+  "host": "www.silicondata.com",
+  "url": "https://www.silicondata.com/products/silicon-index/h100",
+  "verdict": "fetchable",
+  "as_of": "2026-11-17",
+  "vertical": "workstation_compute_economics",
+  "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
  },
  {
   "host": "zebra.com",

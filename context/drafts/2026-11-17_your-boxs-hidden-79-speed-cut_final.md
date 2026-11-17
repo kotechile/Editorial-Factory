@@ -13,8 +13,8 @@ sources:
 image_path: "context/assets/illustrations/your-boxs-hidden-79-speed-cut/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Your Box'S Hidden 79% Speed Cut. Laptop workstation cutaway with moveable memory partition on a machine shop workbench."
-image_caption: "Your Box'S Hidden 79% Speed Cut: The box is now the un-auditable side of build versus rent."
+image_alt: "Isometric cutaway of an open laptop on a workbench, its memory modules exposed beside scattered hand tools."
+image_caption: "A firmware-held memory partition decides how much of a local AI box's 128 GB the software can reach."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
