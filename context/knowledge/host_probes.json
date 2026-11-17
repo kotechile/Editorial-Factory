@@ -608,6 +608,14 @@
   "note": "load-bearing pair for any \"a faster disk will not fix it\" argument); `docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html` (the gp3 baseline as one sentence); `tomshardware.com/rev"
  },
  {
+  "host": "docs.aws.amazon.com",
+  "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html",
+  "verdict": "unreachable",
+  "as_of": "2026-11-17",
+  "vertical": "workstation_compute_economics",
+  "note": "fetches as a ~2.3 KB navigation shell \u2014 the 'two-minute' interruption-notice sentence is not in the text, so a row citing it reads figure_absent. Use cloud.google.com/compute/docs/instances/preemptible and learn.microsof"
+ },
+ {
   "host": "docs.claude.com",
   "url": "",
   "verdict": "fetchable",
@@ -1721,11 +1729,11 @@
  },
  {
   "host": "learn.microsoft.com",
-  "url": "https://learn.microsoft.com/en-us/azure/aks/node-resource-reservations",
+  "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms",
   "verdict": "fetchable",
   "as_of": "2026-11-17",
-  "vertical": "enterprise_tech_leadership",
-  "note": "node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text."
+  "vertical": "workstation_compute_economics",
+  "note": "10 KB of plain text carrying 'evict Azure Spot Virtual Machines with 30-seconds notice' and 'no SLA'; same run: arxiv.org/html/<id>v1 (2410.18124v1, 2407.21783v1) and cloud.google.com/compute/docs/instances/{spot,preempt"
  },
  {
   "host": "leg.state.nv.us",

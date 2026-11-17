@@ -12,6 +12,14 @@ A hands-on benchmark page often carries no publication date of its own: the only
 
 When the art director's alt text arrives as the overlay copy (headline glued to the front, title-cased, stray apostrophe capitals such as "Box'S"), the sidecar context/assets/illustrations/<slug>/featured.json usually already holds a clean alt from revision 1 in its history[] block — restore that instead of authoring a new one, then still check it against the pixels (the image is what the reader sees, not the brief).
 
+## 2026-11-17 · workstation_compute_economics · pitfall
+
+publish_gate's 'one stop' vibe rule fires on ordinary prose: the phrase 'at least one stop a day' matched the one-stop-shop pattern and held an otherwise green article. Do not use 'stop' as the plain noun for an interruption when a count precedes it ('one stop'); write 'interruption' — the cited source's own noun is also the accurate one.
+
+## 2026-11-17 · workstation_compute_economics · pitfall
+
+article_reviewer can rename an H2 past Smart Brevity's six-word cap and still score hard=0 — a held attempt adopted wholesale carried a 7-word header ('The Rule That Prices The Lost Hours') through every gate, because readability_critic reports short headers as an advisory, not a hold. After adopting a rewrite, re-run readability_critic on the final and count every H2's words, alongside the documented checks on figures, inline links and observer cues.
+
 ## 2026-11-17 · smart_home_telemetry · pitfall
 
 # The frontier rewrite drops the single inline internal link, and review_audit cannot see it
@@ -217,7 +225,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | law.lis.virginia.gov | fetchable | 2026-11-12 | expat_cross_border_relocation | e than 30 days", and (B)'s "more than 200 days" statutory resident); `law.lis.virginia.gov/vacode/title58.1/chapter3/sec |
 | lawnlove.com | fetchable | 2026-10-31 | yard_robotics | vergreen).** Carries the figure as plain text and fetches first try: `lawnlove.com/blog/lawn-mowing-cost/` — a mowing ma |
 | learn.microsoft.com | fetchable | 2026-11-12 | demand_sensing_advanced_sop | vergreen).** Carries the figure as plain text and fetches first try: `learn.microsoft.com/en-us/dynamics365/supply-chain |
-| learn.microsoft.com | fetchable | 2026-11-17 | enterprise_tech_leadership | node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text. |
+| learn.microsoft.com | fetchable | 2026-11-17 | workstation_compute_economics | 10 KB of plain text carrying 'evict Azure Spot Virtual Machines with 30-seconds notice' and 'no SLA'; same run: arxiv.or |
 | leg.state.nv.us | fetchable | 2026-10-15 |  | Public Procurement Act, so it binds public bodies, not a homeowner); `leg.state.nv.us` NRS-624.html (the private-owner p |
 | leginfo.legislature.ca.gov | fetchable | 2026-10-15 |  | rnia.public.law` (**a fetchable mirror of the California codes where `leginfo.legislature.ca.gov` answers HTTP 403 to th |
 | legislature.mi.gov | fetchable | 2026-10-19 | expat_cross_border_relocation | as of the first January 1 after they were substantially completed); `legislature.mi.gov/Laws/MCL?objectName=mcl-<section |
@@ -377,6 +385,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | dir.ca.gov | unreachable | 2026-10-14 |  | tute — an aggregator that does fetch is not the code); `lni.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` |
 | dl.acm.org | unreachable | 2026-10-20 | smart_home_telemetry | es for a watts spec. **Unreachable to the verifier:** `mdpi.com` and `dl.acm.org` (the MDPI reviews and the NILM-BENCH p |
 | dllr.state.md.us | unreachable | 2026-10-14 |  | i.wa.gov`, `dir.ca.gov`, `dol.gov` (WHD), `labor.illinois.gov` PDFs, `dllr.state.md.us` and `labor.vermont.gov` (unreach |
+| docs.aws.amazon.com | unreachable | 2026-11-17 | workstation_compute_economics | fetches as a ~2.3 KB navigation shell — the 'two-minute' interruption-notice sentence is not in the text, so a row citin |
 | docs.frappe.io | unreachable | 2026-11-12 | demand_sensing_advanced_sop | every path `unreachable`, so no MAPE/MASE definition can be a row), `docs.frappe.io`, `docs.oracle.com` (1.5 KB stub), a |
 | docs.nvidia.com | unreachable | 2026-11-10 | workstation_compute_economics | HTTP 403 "Request Rejected"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX system guides (`unreachable`) |
 | docs.oracle.com | unreachable | 2026-11-12 | demand_sensing_advanced_sop | chable`, so no MAPE/MASE definition can be a row), `docs.frappe.io`, `docs.oracle.com` (1.5 KB stub), and `mdpi.com` (fe |
