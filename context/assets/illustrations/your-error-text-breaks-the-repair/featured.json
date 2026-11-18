@@ -1,0 +1,113 @@
+{
+  "slug": "your-error-text-breaks-the-repair",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Server rack with red error indicator in a dark server room, lone terminal dark beside it.",
+      "caption": "A single red error indicator burns above a dark terminal in a server room, while the agent's own tools remain unused.",
+      "title": "Server Room Error Indicator",
+      "bytes": 246122,
+      "sha256": "sha256:70e8d2f566f867e994289c68b5863824"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic anamorphic 35mm wide shot of a server room at night. One server rack, off-left, its single red error LED burning above a dark terminal; a long corridor of identical racks recedes to the right, shallow depth of field from a low angle. Overhead cool fluorescent light from the left rakes brushed steel and glass, palette graphite, cobalt, safety yellow, restrained teal-amber shadows, crisp atmospheric depth, film grain, no text, no people. Extreme asymmetry with rack off-left, corridor receding right.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible words, UI text",
+  "rationale": "The story turns on a decisive operational moment\u2014an agent at a failure point inside the data hall\u2014so a cinematic still can hold the atmosphere of a control room without literal stock imagery. The wide establishing composition and single practical light source convey scale and the tension between the glowing fault and the dark, unused tool.",
+  "cue": "error text breaks the repair",
+  "subject": "a server rack with a red error indicator in a dark server room",
+  "core_thesis": "An agent at a failure point can only act through the tools it holds, so the repair step printed in a tool's error is a program the agent runs rather than advice it weighs.",
+  "core_conflict": "Error strings written for human developers are read literally by agents, turning uncallable terminal-command steps into destructive compliance instead of leveraging the server's own login tool.",
+  "composition": "extreme asymmetry with rack off-left, corridor receding right",
+  "alt_text": "MCP Error Text Breaks Agent Repair. Server rack with red error indicator in a dark server room, lone terminal dark beside it.",
+  "caption": "MCP Error Text Breaks Agent Repair: A next step the agent cannot run cuts credential recovery from 84% to 45%.",
+  "title": "MCP Error Text Breaks Agent Repair",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-error-text-breaks-the-repair/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 317654,
+  "sha256": "sha256:19713e01132f4ed3cc20a10f1d60971440e3a390f0883e85e6334e473ed0e405",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 317654,
+    "quality": 88,
+    "sha256": "sha256:19713e01132f4ed3cc20a10f1d60971440e3a390f0883e85e6334e473ed0e405",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:76e450a85d9848162f42e5f0d6ee2612c1a5126103a3461b97d521a14b038eda",
+  "render_phash": "28732ce33cc7386724eb266d364e184d0c6d0c640c650c010c470c0f4c3e48fe",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark data-center aisle with a tall cabinet in the left foreground carrying a small red indicator light above a blank white monitor and a shelf, alongside a long row of glass-fronted server cabinets laced with yellow cables receding toward the right under ceiling strip lights.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.55,
+    "reason": "The frame shows servers in an error state, which is the article's own domain and does not contradict it, but it is a generic hardware-error metaphor that never shows the actual mechanism \u2014 the error message text and the tool call it tells the agent to run."
+  },
+  "source_hash": "sha256:35498e906f4f7703da624bc2addc90fa",
+  "source_chars": 5098,
+  "task_id": "d2f976e2fe74de83d3f02aa961762026",
+  "credits": 5.0,
+  "cost_ms": 86,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d2f976e2fe74de83d3f02aa961762026_1795025844107.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic anamorphic 35mm wide shot of a server room at night. One server rack, off-left, its single red error LED burning above a dark terminal; a long corridor of identical racks recedes to the right, shallow depth of field from a low angle. Overhead cool fluorescent light from the left rakes brushed steel and glass, palette graphite, cobalt, safety yellow, restrained teal-amber shadows, crisp atmospheric depth, film grain, no text, no people. Extreme asymmetry with rack off-left, corridor receding right.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-18T18:17:36+00:00",
+  "overlay": {
+    "kicker": "MCP SERVER ERRORS // AGENT RECOVERY",
+    "title": "MCP ERROR TEXT BREAKS AGENT REPAIR",
+    "hook": "A next step the agent cannot run cuts credential recovery from 84% to 45%",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 14.1,
+    "target": 4.5,
+    "clutter": 0.085,
+    "region_rgb": [
+      13,
+      22,
+      28
+    ],
+    "binding_rgb": [
+      17,
+      34,
+      41
+    ],
+    "title_lines": [
+      "MCP ERROR TEXT",
+      "BREAKS AGENT",
+      "REPAIR"
+    ],
+    "subject": 0.056,
+    "ink_subject": 0.006,
+    "spike": 0.083,
+    "generated_at": "2026-11-18T18:17:36+00:00"
+  }
+}

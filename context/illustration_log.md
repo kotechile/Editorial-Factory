@@ -528,3 +528,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-18 | `your-vendor-exit-costs-373` | warehouse_automation_robotics_capex | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-vendor-exit-costs-373/featured.jpg` |
 | 2026-11-18 | `your-6-fixes-one-hidden-code` | property_loss_insurance_mitigation | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-6-fixes-one-hidden-code/featured.jpg` |
 | 2026-11-18 | `your-p99-is-a-product` | agentic_resilience_failure | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-p99-is-a-product/featured.jpg` |
+| 2026-11-18 | `your-error-text-breaks-the-repair` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-error-text-breaks-the-repair/featured.jpg` |

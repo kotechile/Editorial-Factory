@@ -398,6 +398,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-18 | warehouse_automation_robotics_capex | your-vendor-exit-costs-373 | Your Vendor Exit Costs $373 | https://pressflow.aichieve.net/published/2026-11-18_your-vendor-exit-costs-373.md | reader site only |
 | 2026-11-18 | property_loss_insurance_mitigation | your-6-fixes-one-hidden-code | Your 6 Fixes, One Hidden Code | https://pressflow.aichieve.net/published/2026-11-18_your-6-fixes-one-hidden-code.md | reader site only |
 | 2026-11-18 | agentic_resilience_failure | your-p99-is-a-product | Your Timeout Is the Wrong Knob: 1 Turn in 9 | https://pressflow.aichieve.net/published/2026-11-18_your-p99-is-a-product.md | reader site only |
+| 2026-11-18 | multi_agent_enterprise_fabric | your-error-text-breaks-the-repair | Your Error Text Breaks the Repair: 45% vs 84% | https://pressflow.aichieve.net/published/2026-11-18_your-error-text-breaks-the-repair.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

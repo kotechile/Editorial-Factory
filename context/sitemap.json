@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T17:40:45Z",
+  "updated_at": "2026-11-18T18:18:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7298,6 +7298,24 @@
       "date": "2026-11-18",
       "public": true,
       "url": "https://aichieve.net/your-agent-checks-permission-not-ownership/"
+    },
+    {
+      "slug": "2026-11-18_your-error-text-breaks-the-repair",
+      "title": "Your Error Text Breaks the Repair: 45% vs 84%",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The wrong reader",
+        "By the numbers",
+        "Where the fix is written",
+        "What the sentence cannot buy",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-18",
+      "public": false
     },
     {
       "slug": "2026-11-18_your-p99-is-a-product",
