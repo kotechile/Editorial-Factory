@@ -1,0 +1,114 @@
+{
+  "slug": "your-vendor-exit-costs-373",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two robot fleets exchange a blank ISO standard page at a warehouse aisle, opposite a rental storage meter.",
+      "caption": "A technical cutaway contrasts the open exit route of an ISO standard page with the widening rental surcharge meter.",
+      "title": "Vendor Exit ISO vs Rental Surcharge",
+      "bytes": 366934,
+      "sha256": "sha256:3e34d4723633dd1bcb47d71ac51508a5"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean technical isometric cutaway of a warehouse aisle, split-screen diptych: left half shows two different unbranded robot fleets at a crossing aisle exchanging a small printed ISO document page with blank fields, right half shows an Amazon-style modular storage rack with a meter face marked by a blank percentage wedge. Single hard key light rakes from upper left across brushed steel robot housings and concrete floor; palette graphite, safety yellow, bone white; thin consistent line weight, matte surfaces, no text, no numbers.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible numbers, UI text, blurry, low contrast",
+  "rationale": "The story turns on a published standard and a fee notice, not a photographable single scene; technical_isometric can diagram both costs as physical mechanisms inside one warehouse, with split-screen contrasting the lock-breaking exit route against the growing rental surcharge.",
+  "cue": "Your Vendor Exit Costs $373",
+  "subject": "a modular warehouse bay with two robot fleets exchanging a printed standard document at a crossing aisle and a rental surcharge meter on the opposite side",
+  "core_thesis": "The automation payback model's two assumed costs\u2014vendor exit and rented capacity\u2014became public facts with opposite implications: a $373 ISO standard breaks vendor lock, while Amazon's 3.5% surcharge widens the rental cost.",
+  "core_conflict": "Ownership lock-in versus rental exposure; exit cost turns out low via an open standard, while rental cost turns out variable and rising.",
+  "composition": "split-screen diptych with left-right scenario contrast, extreme asymmetry, technical isometric view",
+  "alt_text": "Your Vendor Exit Costs $373. Two robot fleets exchange a blank ISO standard page at a warehouse aisle, opposite a rental storage meter.",
+  "caption": "Your Vendor Exit Costs $373: leaving a vendor now has a $373 published route; renting has a widening 3.5% surcharge.",
+  "title": "Your Vendor Exit Costs $373",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-vendor-exit-costs-373/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391928,
+  "sha256": "sha256:f40bac368b4d46bc0eab56f060538e4a6fffe696c012a10ba8d92b2bdeded30d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391928,
+    "quality": 80,
+    "sha256": "sha256:f40bac368b4d46bc0eab56f060538e4a6fffe696c012a10ba8d92b2bdeded30d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a67c57283ba0917799607cd49b195079d96541db60677d398dc17731c975cf71",
+  "render_phash": "0111812743272a368839883bc93ec872e8e2e9b4d9b199b289b08df036794b58",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric split view showing, on the left, four robots on a concrete warehouse floor at a crossing aisle \u2014 two low bin-carrying mobile units and two tall arm-mounted units whose grippers hold up a blank white document sheet \u2014 and on the right, a tall steel shelving rack stacked with plastic bins and cartons, its end frame carrying a large plain metal panel bearing an unmarked shape.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.7,
+    "reason": "The left panel literally stages the article's core object \u2014 robot fleets exchanging a printed interoperability standard at a shared aisle \u2014 though the right panel shows generic racking rather than the promised rental-surcharge meter, so the second cost the headline rests on is not visible."
+  },
+  "source_hash": "sha256:ad9cf4b5033ce766eecdb8a1d7ee8943",
+  "source_chars": 4964,
+  "task_id": "1306d673e22d928e3a4bf92a1d54bd62",
+  "credits": 18.0,
+  "cost_ms": 161,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_d29eccbdd3372ab17e449b3188f19a4d.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean technical isometric cutaway of a warehouse aisle, split-screen diptych: left half shows two different unbranded robot fleets at a crossing aisle exchanging a small printed ISO document page with blank fields, right half shows an Amazon-style modular storage rack with a meter face marked by a blank percentage wedge. Single hard key light rakes from upper left across brushed steel robot housings and concrete floor; palette graphite, safety yellow, bone white; thin consistent line weight, matte surfaces, no text, no numbers.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-18T12:45:12+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE AUTOMATION // VENDOR EXIT",
+    "title": "YOUR VENDOR EXIT COSTS $373",
+    "hook": "leaving a vendor now has a $373 published route; renting has a widening 3.5% surcharge",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 7.18,
+    "target": 4.5,
+    "clutter": 0.229,
+    "region_rgb": [
+      207,
+      207,
+      201
+    ],
+    "binding_rgb": [
+      193,
+      192,
+      188
+    ],
+    "title_lines": [
+      "YOUR VENDOR",
+      "EXIT COSTS $373"
+    ],
+    "subject": 0.234,
+    "ink_subject": 0.069,
+    "spike": 0.412,
+    "generated_at": "2026-11-18T12:45:12+00:00"
+  }
+}

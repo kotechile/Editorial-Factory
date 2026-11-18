@@ -395,6 +395,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-18 | agentic_resilience_failure | your-transcript-says-done | Your Transcript Says Done: Success Fails at 28% | https://pressflow.aichieve.net/published/2026-11-18_your-transcript-says-done.md | reader site only |
 | 2026-11-18 | multi_agent_enterprise_fabric | your-agent-checks-permission-not-ownership | Your Agent Checks Permission, Not Ownership: 100% | https://pressflow.aichieve.net/published/2026-11-18_your-agent-checks-permission-not-ownership.md | reader site only |
 | 2026-11-18 | enterprise_build_vs_buy | your-100x-saving-bought-the-tail | Your 100x Saving: A Hidden Cap | https://pressflow.aichieve.net/published/2026-11-18_your-100x-saving-bought-the-tail.md | reader site only |
+| 2026-11-18 | warehouse_automation_robotics_capex | your-vendor-exit-costs-373 | Your Vendor Exit Costs $373 | https://pressflow.aichieve.net/published/2026-11-18_your-vendor-exit-costs-373.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
