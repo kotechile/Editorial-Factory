@@ -256,12 +256,28 @@
   "note": "row: `hp.com/us-en/shop/\u2026` product and category paths (unreachable), `brother-usa.com`, `usa.canon.com`, `lexmark.com`, and `epson.com/For-Home/Ink/Ink-Bottles/c/h1` (fetches, but it is a fi"
  },
  {
+  "host": "bruceroettgers.eu",
+  "url": "https://bruceroettgers.eu",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "read at source this run"
+ },
+ {
   "host": "buildkite.com",
   "url": "",
   "verdict": "fetchable",
   "as_of": "2026-10-21",
   "vertical": "enterprise_build_vs_buy",
   "note": "lso there: network and storage at `420 credits per GB ($0.252/GB)`). `buildkite.com/pricing` fetches at ~20 KB but its per-seat and included-minute figures evidence on the trial banner's \"30"
+ },
+ {
+  "host": "bunny.net",
+  "url": "https://bunny.net",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "read at source this run"
  },
  {
   "host": "cabforum.org",
@@ -3008,6 +3024,14 @@
   "note": "Cornell LII mirrors of 40 CFR 112.1/.2/.3/.5/.6 and 280.10/.12 fetch first try (4-20 KB, operative sentences as plain text); the \u00a7280.12 definition page carries the heating-oil consumptive-use exclusion."
  },
  {
+  "host": "www.mapbox.com",
+  "url": "https://www.mapbox.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "read at source this run"
+ },
+ {
   "host": "www.metabase.com",
   "url": "https://www.metabase.com/blog/mcp-tool-design-lessons",
   "verdict": "partial",
@@ -3054,6 +3078,14 @@
   "as_of": "2026-11-17",
   "vertical": "workstation_compute_economics",
   "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
+ },
+ {
+  "host": "www.theregister.com",
+  "url": "https://www.theregister.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "read at source this run"
  },
  {
   "host": "zebra.com",

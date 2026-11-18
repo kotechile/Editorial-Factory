@@ -13,7 +13,7 @@
   ],
   "style": "document_flatlay",
   "style_label": "Document still life",
-  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "style_when": "the story is regulatory or contractual — a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -27,8 +27,8 @@
   "core_thesis": "A metered unit is a bound, not a price, so the self-hosted saving is the buyer taking back the variance by writing the caps the vendor used to write.",
   "core_conflict": "map-load usage variance versus hidden vendor caps, and the buyer's need to re-establish those caps after self-hosting",
   "composition": "symmetrical top-down 90-degree view with the folded price list off-centre and the steel straightedge anchoring the lower diagonal",
-  "alt_text": "Your 100X Saving Hides A Cap. Printed price list on a control-room desk with its bottom row folded under a steel straightedge.",
-  "caption": "Your 100X Saving Hides A Cap: Self-hosting only pays when you write the caps your vendor used to absorb.",
+  "alt_text": "A printed price list on a control-room desk, one row highlighted in yellow beside a steel straightedge.",
+  "caption": "Self-hosting only pays once you write the caps your vendor used to absorb.",
   "title": "Your 100X Saving Hides A Cap",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -59,7 +59,7 @@
   "review": {
     "ok": true,
     "skipped": true,
-    "reason": "render review unavailable (render review failed: frontier output truncated (finish_reason=length); raise max_tokens) \u2014 the brief gate ran, the picture was not checked"
+    "reason": "render review unavailable (render review failed: frontier output truncated (finish_reason=length); raise max_tokens) — the brief gate ran, the picture was not checked"
   },
   "source_hash": "sha256:850d84a3b6ee76159fa6c383238fbc6f",
   "source_chars": 4936,

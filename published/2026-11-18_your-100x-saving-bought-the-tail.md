@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-100x-saving-bought-the-tail/featured.jpg"
 image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "Your 100X Saving Hides A Cap. Printed price list on a control-room desk with its bottom row folded under a steel straightedge."
-image_caption: "Your 100X Saving Hides A Cap: Self-hosting only pays when you write the caps your vendor used to absorb."
+image_alt: "A printed price list on a control-room desk, one row highlighted in yellow beside a steel straightedge."
+image_caption: "Self-hosting only pays once you write the caps your vendor used to absorb."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
