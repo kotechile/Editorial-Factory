@@ -15,7 +15,7 @@ meta_description: "An agent repeats a call it made last week, the field has been
 image_path: "context/assets/illustrations/your-agent-checks-permission-not-ownership/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Your Agent Checks Permission, Not Ownership. Server module slid out from a rack of identical modules, its exposed hardware revealing a"
+image_alt: "A server module slid out from a rack of identical modules, its exposed hardware revealing a different revision."
 image_caption: "Your Agent Checks Permission, Not Ownership: Stale interfaces and impostor tools win when the call record lacks ownership."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
@@ -68,15 +68,12 @@ Neither paper argues against permission checks. The misbinding paper says its me
 
 <!-- internal-links -->
 
-<!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your 78.3% Silent Cap Breach" -> /your-783-silent-cap-breach/ [same site (aichieve.net); same category; topical overlap: agent, checks] Link "Your 78.3% Silent Cap Breach" in the section where the article touches agent, checks. -->
-<!-- internal-link hint: "OpenAI just made the agent loop a commodity" -> /openai-just-made-the-agent-loop-a-commodity/ [same site (aichieve.net); topical overlap: agent, checks, permission] Link "OpenAI just made the agent loop a commodity" in the section where the article touches agent, checks, permission. -->
-<!-- internal-link hint: "60.7% of Agent Deletes Ask Nobody" -> /your-agent-deletes-ask-nobody/ [same site (aichieve.net); same category; topical overlap: agent] Link "60.7% of Agent Deletes Ask Nobody" in the section where the article touches agent. -->
+<!-- internal-links:start -->
 ## Related reading
 
-- [Your 78.3% Silent Cap Breach](/your-783-silent-cap-breach/) — more on Autonomous & Agentic Workflows
-- [OpenAI just made the agent loop a commodity](/openai-just-made-the-agent-loop-a-commodity/)
-- [60.7% of Agent Deletes Ask Nobody](/your-agent-deletes-ask-nobody/) — more on Autonomous & Agentic Workflows
+- [Your Gateway: 60.5% Injection Risk](/your-tool-surface-is-a-release-surface/) — the tool surface changes after a deploy, so it needs a release process
+- [Your Agent Fabric's 52.2% Blind Spot](/stale-grants-travel-the-graph/) — what a permission check cannot see once the grant travels
+- [Your Signed MCP Tool Still Leaks: 3 of 3](/your-signed-tool-still-leaks-3-of-3/) — a publisher's signature is not a statement about the call
 <!-- internal-links:end -->
 
 ## Sources

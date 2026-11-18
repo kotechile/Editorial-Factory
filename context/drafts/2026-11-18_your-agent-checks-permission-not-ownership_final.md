@@ -15,7 +15,7 @@ meta_description: "An agent repeats a call it made last week, the field has been
 image_path: "context/assets/illustrations/your-agent-checks-permission-not-ownership/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "Your Agent Checks Permission, Not Ownership. Server module slid out from a rack of identical modules, its exposed hardware revealing a"
+image_alt: "A server module slid out from a rack of identical modules, its exposed hardware revealing a different revision."
 image_caption: "Your Agent Checks Permission, Not Ownership: Stale interfaces and impostor tools win when the call record lacks ownership."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

@@ -1,6 +1,6 @@
 {
   "slug": "your-agent-checks-permission-not-ownership",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -13,7 +13,7 @@
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -21,13 +21,13 @@
   "resolution": "1K",
   "prompt": "Inside a data hall, a single rack-mounted server module lies pulled out on its rails from a long row of visually identical closed modules. Hard raking light from the left cuts across brushed steel faceplates and perforated metal, the pulled module revealing a different internal motherboard and cable loom while its empty bay sits among identical fronts. Graphite, cobalt and bone white palette, 35mm anamorphic wide with dramatic falloff, shallow depth of field, low-angle asymmetrical framing with the pulled module off-centre and the rack row receding into shadow, fine film grain, no people, no text, no logos.",
   "negative_prompt": "garbled text, random letters, random numbers, watermarks, UI, screens, readable labels",
-  "rationale": "The story turns on a decisive infrastructural moment\u2014a call being routed to a lookalike server\u2014and a cinematic wide establishing shot in a data hall captures the industrial trust boundary better than a close-up or flat-lay.",
+  "rationale": "The story turns on a decisive infrastructural moment—a call being routed to a lookalike server—and a cinematic wide establishing shot in a data hall captures the industrial trust boundary better than a close-up or flat-lay.",
   "cue": "Your Agent Checks Permission, Not Ownership: 100%",
   "subject": "a rack-mounted server module slid from its bay beside visually identical installed modules in a data hall",
   "core_thesis": "Server identity and version have to be matched at the call, outside the model, because a fabric that binds tool calls to a name and argument shape checks permission but never ownership.",
   "core_conflict": "Permission is verified at the door while ownership and live version of the server behind the tool are never matched, so copied metadata can hijack a call and stale memory can silently corrupt a run.",
   "composition": "low-angle asymmetrical framing, pulled module off-centre, rack row receding into shadow",
-  "alt_text": "Your Agent Checks Permission, Not Ownership. Server module slid out from a rack of identical modules, its exposed hardware revealing a",
+  "alt_text": "A server module slid out from a rack of identical modules, its exposed hardware revealing a different revision.",
   "caption": "Your Agent Checks Permission, Not Ownership: Stale interfaces and impostor tools win when the call record lacks ownership.",
   "title": "Your Agent Checks Permission, Not Ownership",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.72,
-    "reason": "The frame shows a server drawn out from a row of visually indistinguishable server modules, which is the article's own object and its mechanism \u2014 an impostor or altered version that cannot be told apart at a glance from the real thing."
+    "reason": "The frame shows a server drawn out from a row of visually indistinguishable server modules, which is the article's own object and its mechanism — an impostor or altered version that cannot be told apart at a glance from the real thing."
   },
   "source_hash": "sha256:90cf581b6d9f752e0e3f1926805caf9c",
   "source_chars": 5884,
