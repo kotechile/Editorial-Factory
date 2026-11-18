@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T19:15:53Z",
+  "updated_at": "2026-11-18T19:46:32Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7314,6 +7314,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-18",
+      "public": false
+    },
+    {
+      "slug": "2026-11-18_your-fleets-8-3-year-bill",
+      "title": "Your Fleet's 8.3-Year Bill: The Wave Nobody Reserves For",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The clock the case never sets",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-18",
       "public": false
     },
