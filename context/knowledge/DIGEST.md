@@ -32,6 +32,10 @@ The header overlay fades its scrim panel to zero down the block, so on a dense i
 
 The illustration sidecar can be rewritten with a headline-glued, truncated alt (observed 'Your 6 Fixes, One Hidden Code. Insurance notice and public file pages... roof type', 118 chars) and its typography overlay can be set from the lead and clipped mid-sentence ('...refused to keep a home policy. Each'). Both survive the publish summary because the render gate reads bytes, not copy. After a persistence pass, read the header pixels with vision and diff the sidecar alt against the artifact: retype the overlay free with illustration_overlay.apply_to_slug(slug, force_copy=...) from featured.base.jpg, then fix alt/caption in the sidecar, the artifact, the Supabase metadata and the attachment, and push the corrected bytes with wp_draft.py --slug <slug> --reimage (update_media alone changes meta, not pixels). The front can keep serving the old alt until the attachment meta lands.
 
+## 2026-11-18 · property_loss_insurance_mitigation · pitfall
+
+An evergreen brief whose rows are word-number rules (three claims, two refusals) passes the gate on a loose phrase match, so lead each cell with the figure and then gloss it — and put the year inside the clause, not the bullet lead-in, because readability_critic counts a year in the lead-in as a second figure.
+
 ## 2026-11-18 · multi_agent_enterprise_fabric · pitfall
 
 An ACCEPT from article_reviewer.py is not a clean final: on 2026-11-18 the accepted rewrite had silently dropped the earned inline internal link and the 0.63 comparator figure, both of which the standard battery (accessibility, critic, shape, headline, source_gate) still passed because a comparator that is merely absent is not a wrong figure. After every ACCEPT, diff the _final.md against the _draft.md for (a) '](/…)' link count and (b) every figure that carries an argument, then re-gate.
@@ -594,6 +598,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | ssa.gov | unreachable | 2026-11-12 | expat_cross_border_relocation | the 290.01 body carries no 183-day text), `medicare.gov`, `cms.gov`, `ssa.gov`. `malegislature.gov` MGL c.62 § 1 fetches |
 | ssl.com | unreachable | 2026-11-10 | nhil_infrastructure_ops | -migration/`, `security.apple.com`, `sectigo.com`, `globalsign.com`, `ssl.com`, `entrust.com`, `keyfactor.com` and `comm |
 | statutes.capitol.texas.gov | unreachable | 2026-10-15 |  | e in the verifier's fetch path), `nolo.com` (403), `mass.gov` (403), `statutes.capitol.texas.gov/Docs/PR/htm/...` (a 1.3 |
+| statutes.capitol.texas.gov | unreachable | 2026-11-18 | property_loss_insurance_mitigation | Statute pages return a 1.3 KB navigation shell to the verifier UA (no section text at all), and law.justia.com code page |
 | stonge.com | unreachable | 2026-10-21 | warehouse_automation_robotics_capex | bots.com/products/…`, `zebra.com` AMR pages, `interlakemecalux.com`, `stonge.com`, and `mhi.org` / `automate.org` fundam |
 | supermicro.com | unreachable | 2026-10-21 | gpu_hardware | ifier on this beat: `iea.org` (every `/reports/energy-and-ai` path), `supermicro.com` liquid-cooling pages, `datacenterk |
 | supplychaindive.com | unreachable | 2026-10-14 |  | eachable, so a low-floor state cannot be cited from its own agency); `supplychaindive.com` article URLs and `dcvelocity. |

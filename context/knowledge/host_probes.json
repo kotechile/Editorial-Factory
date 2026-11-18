@@ -2712,6 +2712,14 @@
   "note": "e in the verifier's fetch path), `nolo.com` (403), `mass.gov` (403), `statutes.capitol.texas.gov/Docs/PR/htm/...` (a 1.3 KB navigation stub, not the chapter), `energy.gov/energysaver/<guesse"
  },
  {
+  "host": "statutes.capitol.texas.gov",
+  "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.551.htm",
+  "verdict": "unreachable",
+  "as_of": "2026-11-18",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "Statute pages return a 1.3 KB navigation shell to the verifier UA (no section text at all), and law.justia.com code pages are unreachable; cite Texas Insurance Code Chapter 551 through tdi.texas.gov guides and iiat.org's"
+ },
+ {
   "host": "steelking.com",
   "url": "",
   "verdict": "no_figures",
