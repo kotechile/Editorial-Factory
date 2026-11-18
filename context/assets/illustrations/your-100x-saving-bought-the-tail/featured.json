@@ -1,0 +1,109 @@
+{
+  "slug": "your-100x-saving-bought-the-tail",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Printed price list on a control-room desk with its bottom row folded under a steel straightedge.",
+      "caption": "The cap is the product: a rate sheet's hidden ceiling becomes a physical fold in the frame.",
+      "title": "Hidden Map Cap Price List Flatlay",
+      "bytes": 358456,
+      "sha256": "sha256:1196bc2733f922bec7f1ef6631c584d7"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Top-down 90-degree view of a printed price list on a matte graphite control-room desk, one corner folded up and pinned under a brushed-steel straightedge so the final two rows are hidden. Even diffused daylight from the left, soft contact shadows on heavyweight off-white paper, graphite, safety yellow and bone white. 50mm lens, shallow depth of field, fine film grain, no people, no readable text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story turns on a rate card and the hidden ceiling baked into a metered price. A document still life keeps the reader on the contractual artifact, while the folded edge and straightedge make the invisible cap physical.",
+  "cue": "the cap is the product",
+  "subject": "a printed price list with its bottom row folded under a steel straightedge on a control-room desk",
+  "core_thesis": "A metered unit is a bound, not a price, so the self-hosted saving is the buyer taking back the variance by writing the caps the vendor used to write.",
+  "core_conflict": "map-load usage variance versus hidden vendor caps, and the buyer's need to re-establish those caps after self-hosting",
+  "composition": "symmetrical top-down 90-degree view with the folded price list off-centre and the steel straightedge anchoring the lower diagonal",
+  "alt_text": "Your 100X Saving Hides A Cap. Printed price list on a control-room desk with its bottom row folded under a steel straightedge.",
+  "caption": "Your 100X Saving Hides A Cap: Self-hosting only pays when you write the caps your vendor used to absorb.",
+  "title": "Your 100X Saving Hides A Cap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-100x-saving-bought-the-tail/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 390494,
+  "sha256": "sha256:0dc7d5a4ec3338a579c95f81ca7102c0104a4bc93a04bb444e1356a8de2e78ec",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 390494,
+    "quality": 88,
+    "sha256": "sha256:0dc7d5a4ec3338a579c95f81ca7102c0104a4bc93a04bb444e1356a8de2e78ec",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:56beb7ef606d47274591d26eaba55eb33339482111932f71910ed634a1778f28",
+  "render_phash": "ffffffdf737f733ff3bff2fff2fff2f7f2f7f3b773b733b333b302b31fdb17fb",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier output truncated (finish_reason=length); raise max_tokens) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:850d84a3b6ee76159fa6c383238fbc6f",
+  "source_chars": 4936,
+  "task_id": "909525e61c3decdccd4339c53fadd556",
+  "credits": 5.0,
+  "cost_ms": 109,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/909525e61c3decdccd4339c53fadd556_1795003957217.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Top-down 90-degree view of a printed price list on a matte graphite control-room desk, one corner folded up and pinned under a brushed-steel straightedge so the final two rows are hidden. Even diffused daylight from the left, soft contact shadows on heavyweight off-white paper, graphite, safety yellow and bone white. 50mm lens, shallow depth of field, fine film grain, no people, no readable text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-18T12:12:57+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE BUILD VS BUY // HIDDEN CAPS",
+    "title": "YOUR 100X SAVING HIDES A CAP",
+    "hook": "Self-hosting only pays when you write the caps your vendor used to absorb",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.61,
+    "target": 5.5,
+    "clutter": 0.334,
+    "region_rgb": [
+      139,
+      140,
+      141
+    ],
+    "binding_rgb": [
+      91,
+      94,
+      99
+    ],
+    "title_lines": [
+      "YOUR 100X",
+      "SAVING HIDES A",
+      "CAP"
+    ],
+    "subject": 0.246,
+    "ink_subject": 0.125,
+    "spike": 0.526,
+    "generated_at": "2026-11-18T12:12:57+00:00"
+  }
+}

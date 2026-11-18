@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T11:13:27Z",
+  "updated_at": "2026-11-18T12:13:55Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7236,6 +7236,24 @@
       "date": "2026-11-17",
       "public": true,
       "url": "https://wellroost.com/your-washer-100000-calls/"
+    },
+    {
+      "slug": "2026-11-18_your-100x-saving-bought-the-tail",
+      "title": "Your 100x Saving: A Hidden Cap",
+      "vertical": "enterprise_build_vs_buy",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "What the margin was buying",
+        "Who carries the tail",
+        "By the numbers",
+        "Where this bites first",
+        "The catch"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-18",
+      "public": false
     },
     {
       "slug": "2026-11-18_your-agent-checks-permission-not-ownership",
