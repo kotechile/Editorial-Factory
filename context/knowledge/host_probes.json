@@ -2960,12 +2960,28 @@
   "note": "ng, \"the moisture content of plants increases the time to ignition\"; `wildfireprepared.org/wildfire-prepared-home-base-vs-plus` \u2014 the 0\u20135 foot zone, 1/8-inch metal mesh, 6-inch clearance, fe"
  },
  {
+  "host": "witron.de",
+  "url": "https://witron.de/en/news",
+  "verdict": "unreachable",
+  "as_of": "2026-11-18",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "HTTP 403 to a plain urllib fetch with a Chrome UA. The WITRON/Solwr acquisition release is therefore quoted from Logistics Business, which reproduces the vendor text verbatim including both quotes; never cite witron.de a"
+ },
+ {
   "host": "workspace.google.com",
   "url": "",
   "verdict": "fetchable",
   "as_of": "2026-10-10",
   "vertical": "",
   "note": "w in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale"
+ },
+ {
+  "host": "www.automate.org",
+  "url": "https://www.automate.org/robotics/new-interoperability-standard-iso-21423-2026",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "curl answers 403 but a browser-UA reader (web_extract) returns the full product page, which is where 'ISO 21423:2026 is not a safety standard' is stated. source_gate reports the 403 as UNVERIFIED, not as a dead citation:"
  },
  {
   "host": "www.california.public.law",

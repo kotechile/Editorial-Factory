@@ -70,12 +70,10 @@ Nothing creates a resale market for a used fleet, and nothing forces an integrat
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "$200,000 Robots: Your Seller Won't Stay" -> /your-seller-wont-stay/ [same site (aichieve.net); same category; topical overlap: costs, robots] Link "$200,000 Robots: Your Seller Won't Stay" in the section where the article touches costs, robots. -->
 <!-- internal-link hint: "$6 Billion, Same 25 Buildings" -> /second-layer-has-no-unit-price/ [same site (aichieve.net); same category; topical overlap: automation, robots] Link "$6 Billion, Same 25 Buildings" in the section where the article touches automation, robots. -->
-<!-- internal-link hint: "51% Test Traps Your Plant" -> /51-test-traps-your-plant/ [same site (aichieve.net); same category; topical overlap: november, published] Link "51% Test Traps Your Plant" in the section where the article touches november, published. -->
 ## Related reading
 
 - [$200,000 Robots: Your Seller Won't Stay](/your-seller-wont-stay/) — more on Supply Chain & Operations
 - [$6 Billion, Same 25 Buildings](/second-layer-has-no-unit-price/) — more on Supply Chain & Operations
-- [51% Test Traps Your Plant](/51-test-traps-your-plant/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
 
 ## Sources
