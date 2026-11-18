@@ -42,7 +42,7 @@ The rewrite is smaller than the problem suggests. Name a tool instead of a comma
 
 The standard most teams reach for cannot carry this. Request for Comments (RFC) 9457, the Internet Engineering Task Force (IETF) rule for machine-readable web errors, fixes the error object at five parts: type, status, title, detail and instance [2]. None of the five is an allowed next action. The repair step has to be a part the gateway adds, which is [the same gap that leaves 63% of an agent's rules unmet at the call site](/your-agent-contract-gap-63-unmet/).
 
-The teams closest to this have stopped asking a model to read a fault. They write one answer per failure class into the tool table, so the message names a call instead of describing a condition. That keeps the choice inside the fabric, where the list of tools is known. It leaves the model one job at the failure point: make the named call. A message that only describes a condition hands that choice back to the reader, who has less to go on.
+The teams closest to this have stopped asking a model to read a fault. They write one answer per failure class into the tool table, so the message names a call instead of describing a condition. That keeps the choice inside the fabric, where the list of tools is known. It leaves the model one job at the failure point, which is to make the named call. A message that only describes a condition hands that choice back to the reader, who has less to go on. I read this as a schema change rather than a prompt fix.
 
 <!-- nuanced-takeaway -->
 ## What the sentence cannot buy
