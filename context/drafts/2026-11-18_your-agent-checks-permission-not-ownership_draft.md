@@ -56,7 +56,7 @@ What I'm watching is whether clients go the rest of the way. The misbinding pape
 <!-- nuanced-takeaway -->
 ## The catch
 
-Both studies are one controlled harness each, so read their rates as proof that the failure exists, not as field numbers. The misbinding work measures a single toy data-fetching task, in a sandbox where no real data moved. The memory study runs six models over a handful of interface changes, and it leaves the current docs one search away.
+I keep returning to how narrow the evidence is: both studies are one controlled harness each, so read their rates as proof that the failure exists, not as field numbers. The misbinding work measures a single toy data-fetching task, in a sandbox where no real data moved. The memory study runs six models over a handful of interface changes, and it leaves the current docs one search away.
 
 That last detail points to a cheaper repair than a registry. Adding the current docs to the agent's memory file lifted its stale-memory success from 0.72 to 0.89. A version tag alone lifted it to 0.77. Memory that still matches the live interface reaches 1.00. Neither closes the gap, and both need docs that spell out the answer, which is exactly what the failing cases lack.
 
