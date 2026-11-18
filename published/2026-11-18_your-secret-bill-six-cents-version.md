@@ -12,6 +12,12 @@ meta_title: "Your Secret Bill: 6 Cents a Version"
 meta_title_source: "derived_from_title"
 meta_description: "Amazon Web Services (AWS) bills 40 cents a month for every secret it stores. Google bills six cents a month for every live version of a secret, which is a…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-secret-bill-six-cents-version/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "AWS Bills Per Secret, Google Per Version. Five server cabinets lit warm behind a glass data hall wall and an outdoor billing meter at dusk."
+image_caption: "AWS Bills Per Secret, Google Per Version: the object on the meter decides the rotation habit a team can afford."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

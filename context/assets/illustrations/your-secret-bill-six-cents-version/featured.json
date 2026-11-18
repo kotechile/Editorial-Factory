@@ -1,0 +1,116 @@
+{
+  "slug": "your-secret-bill-six-cents-version",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Five server cabinets lit warm behind a glass data hall wall and an outdoor billing meter at dusk.",
+      "caption": "A data hall's five-node self-hosted floor glows through glass while a billing meter stands outside during blue hour.",
+      "title": "Five-node cluster and billing meter at dusk",
+      "bytes": 361870,
+      "sha256": "sha256:e4f9362beea62fb38bb66990b6911ea2"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Low-angle architectural photograph of a modern data hall at blue hour; through a ground-floor glass curtain wall on the left, five identical server cabinets glow warm amber in a row\u2014the five-node cluster\u2014while a single cast-iron parking-style billing meter stands in the right foreground on a concrete plinth, its needle caught by the amber spill. 24mm architectural lens, deep focus, deep blue ambient light from the sky above, warm amber from the lit cabinets to the left, graphite, bone white, steel grey; glass and brushed steel and concrete; extreme asymmetric off-centre framing with building left and meter right; long-exposure calm, no people, no text, no logos, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, captions, UI, numbers, logos",
+  "rationale": "architectural_night captures the after-hours calm of a self-hosted cluster and the metering tension through the contrast of a cold blue exterior and the warm five-node rack glow; the foreground meter makes the billing object physical rather than abstract.",
+  "cue": "the self-hosted floor is a five-node cluster",
+  "subject": "A five-node Vault cluster glowing behind glass and an outdoor billing meter at a data hall.",
+  "core_thesis": "A secrets manager bills the object kept\u2014secret vs live version\u2014so rotation and rollback policy, not security doctrine, sets the bill.",
+  "core_conflict": "Flat per-secret storage pricing collides with per-version metering, making rollback copies and self-hosted overhead hidden billing levers.",
+  "composition": "extreme asymmetric off-centre framing with building left and meter right",
+  "alt_text": "AWS Bills Per Secret, Google Per Version. Five server cabinets lit warm behind a glass data hall wall and an outdoor billing meter at dusk.",
+  "caption": "AWS Bills Per Secret, Google Per Version: the object on the meter decides the rotation habit a team can afford.",
+  "title": "AWS Bills Per Secret, Google Per Version",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "architectural_night",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-secret-bill-six-cents-version/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 385218,
+  "sha256": "sha256:b4848f29fb85f3d3cc133206bdf9221c746fc4350b8831fc60f7a71223e5f45e",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 385218,
+    "quality": 84,
+    "sha256": "sha256:b4848f29fb85f3d3cc133206bdf9221c746fc4350b8831fc60f7a71223e5f45e",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f696b43fe81783700ad32d006cf03f30caa4cbcaafe9bcd319df18247b018f3c",
+  "render_phash": "360f760f220fe11f8f1f239f23bf20fb207b207b203b243b01fb01fd00ff01fe",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A glass-walled, lit building corner at dusk containing a row of tall glowing server racks, with a black parking-meter-style device mounted on a concrete block standing on the paved forecourt to the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.82,
+    "reason": "It shows the article's own mechanism \u2014 a small self-hosted cluster of glowing server cabinets behind glass paired with a billing meter \u2014 matching the ordered frame without introducing a foreign industry or contradicting the piece's metering claim."
+  },
+  "source_hash": "sha256:cbdf92248cea3eb77ca571aa90675fa4",
+  "source_chars": 4430,
+  "task_id": "88d575bc5dcc4badaad96e912dbad865",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/88d575bc5dcc4badaad96e912dbad865_1795029698764.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Low-angle architectural photograph of a modern data hall at blue hour; through a ground-floor glass curtain wall on the left, five identical server cabinets glow warm amber in a row\u2014the five-node cluster\u2014while a single cast-iron parking-style billing meter stands in the right foreground on a concrete plinth, its needle caught by the amber spill. 24mm architectural lens, deep focus, deep blue ambient light from the sky above, warm amber from the lit cabinets to the left, graphite, bone white, steel grey; glass and brushed steel and concrete; extreme asymmetric off-centre framing with building left and meter right; long-exposure calm, no people, no text, no logos, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-18T19:21:49+00:00",
+  "overlay": {
+    "kicker": "CLOUD SECRETS BILL // VERSION METER",
+    "title": "AWS BILLS PER SECRET, GOOGLE PER VERSION",
+    "hook": "the object on the meter decides the rotation habit a team can afford",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.72,
+    "target": 4.5,
+    "clutter": 0.232,
+    "region_rgb": [
+      84,
+      107,
+      124
+    ],
+    "binding_rgb": [
+      121,
+      140,
+      155
+    ],
+    "title_lines": [
+      "AWS BILLS PER",
+      "SECRET, GOOGLE",
+      "PER VERSION"
+    ],
+    "subject": 0.213,
+    "ink_subject": 0.103,
+    "spike": 0.277,
+    "generated_at": "2026-11-18T19:21:49+00:00"
+  }
+}

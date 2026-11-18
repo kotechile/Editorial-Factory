@@ -153,6 +153,14 @@
  },
  {
   "host": "aws.amazon.com",
+  "url": "https://aws.amazon.com/secrets-manager/pricing/",
+  "verdict": "partial",
+  "as_of": "2026-11-18",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "table client-rendered; figures only in worked examples"
+ },
+ {
+  "host": "aws.amazon.com",
   "url": "",
   "verdict": "unreachable",
   "as_of": "2026-10-20",

@@ -32,6 +32,10 @@ An ACCEPT from article_reviewer.py is not a clean final: on 2026-11-18 the accep
 
 A same-day pair of arXiv papers can be the strongest collision of a 30-day window and still seed candidates=0: synthesize_topics.py needs the two legs on different source domains, so two arxiv.org anchor rows are invisible to it whatever they argue. Record the zero as input, assert the pair in the angle brief with both bodies read, and expect the seeded block to hold only a mechanical pair built from the one off-host row — score that pair and refuse it in the runner-ups rather than treating it as the story.
 
+## 2026-11-18 · multi_agent_enterprise_fabric · pitfall
+
+An evergreen evidence cell that leads with a comma-grouped figure ('3,001', '15,120') splits into stray numeric tokens in figure_patterns ('3'/'001', '15'/'120') and the PASS excerpt then quotes an unrelated citation or table-of-contents line; lead the cell with the ungrouped token (949, 88, 45) and leave the grouped form later in the sentence.
+
 ## 2026-11-18 · enterprise_build_vs_buy · pitfall
 
 A dated press release can re-enter a sweep as a fresh social repost: Gartner's 'AI coding token costs surpass average developer salary by 2028' story surfaced in an Instagram post dated 2026-11-13 and read as an in-window signal, while the Gartner newsroom release and the CIO Dive write-up are both dated 2026-06-24. The social post carries the same Peer Insights figures (23% spending $200-500/dev/month, 6% over $2,000) and no date of its own, so the whole leg was dropped at Stage 1. Any signal whose only in-window record is a repost or a quote-card must be traced to the publisher's own release date before it enters the table.
@@ -43,6 +47,14 @@ publish.py's Supabase metadata is built from an explicit key list and never writ
 ## 2026-11-18 · enterprise_build_vs_buy · pitfall
 
 check_accessibility counts a period inside an abbreviation as a sentence end, so a By-the-numbers bullet containing '5 p.m.' trips readability_critic's 'carries more than one sentence' rule on a one-sentence bullet. Write 'after-hours' or '5pm' in that block.
+
+## 2026-11-18 · enterprise_build_vs_buy · pitfall
+
+scripts/publish.py can persist an article with no illustration pass at all (no image_* fields in the artifact, no 'featured image' note in its output) and the CMS post goes live hero-less. Check published/<date>_<slug>.md for image_path before calling the run done: run scripts/illustration_creator.py --apply <artifact>, then scripts/wp_draft.py --slug <slug> --refresh --refresh-live to attach the media, then toggle the post status draft -> publish (a same-status PATCH does not fire the static front's rebuild) and re-curl the front to confirm og:image and the -1024x576 derivative.
+
+## 2026-11-18 · enterprise_build_vs_buy · pitfall
+
+The frontier rewrite deletes the draft's single inline internal link (the stitcher only counts [n] tags), so article_shape hard-fails zero inline links at the push. Restore it by hand in the _final.md and re-run the battery. Also pick a link slug with no digits in it: an inline link to /your-sso-bill-125-a-connection/ makes the review ledger read 'figure lost: 125', because the number lives in the URL, and the attempt is HELD for a figure nobody dropped.
 
 ## 2026-11-18 · agentic_resilience_failure · pitfall
 
@@ -373,6 +385,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | www.law.cornell.edu | fetchable | 2026-11-17 | nhil_infrastructure_ops | Cornell LII mirrors of 40 CFR 112.1/.2/.3/.5/.6 and 280.10/.12 fetch first try (4-20 KB, operative sentences as plain te |
 | www.mapbox.com | fetchable | 2026-11-18 | enterprise_build_vs_buy | read at source this run |
 | www.mindstudio.ai | fetchable | 2026-11-17 | workstation_compute_economics | workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registe |
+| www.rfc-editor.org | fetchable | 2026-11-18 | multi_agent_enterprise_fabric | RFC pages fetch first try under the verifier UA; the five problem-object members live under 3.1 with no numeric count in |
 | www.sea-intelligence.com | fetchable | 2026-11-17 | control_tower_exception_orchestration | Independent liner research house; press-room releases are primary for schedule-reliability figures, and its corrections  |
 | www.silicondata.com | fetchable | 2026-11-17 | workstation_compute_economics | workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registe |
 | www.theregister.com | fetchable | 2026-11-18 | enterprise_build_vs_buy | read at source this run |
@@ -422,6 +435,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | raw.githubusercontent.com | no_figures | 2026-10-15 |  | MAX_TURNS` and never the constant's value, so no figure to lead on — `raw.githubusercontent.com/<org>/<repo>/main/<path> |
 | ridgurak.com | no_figures | 2026-10-21 | warehouse_automation_robotics_capex | is unreachable), `nfpa.org/codes-and-standards` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steel |
 | steelking.com | no_figures | 2026-10-21 | warehouse_automation_robotics_capex | s` (26-character body), `ridgurak.com` (HTTP 200, zero-length body), `steelking.com` blog guesses (404 shell). Unreachab |
+| aws.amazon.com | partial | 2026-11-18 | enterprise_build_vs_buy | table client-rendered; figures only in worked examples |
 | www.metabase.com | partial | 2026-11-18 | multi_agent_enterprise_fabric | Metabase Engineering blog: fetchable, dated first-party post ('Nov 17, 2026 in Engineering'), but carries design intent  |
 | adjustersinternational.com | unreachable | 2026-11-06 | resilient_home_assets | org`, `myfloridacfo.com/division/consumers/…`, `law.justia.com`, and `adjustersinternational.com` — which is why an ordi |
 | afdc.energy.gov | unreachable | 2026-10-21 | warehouse_automation_robotics_capex | style statute rows are not needed for a charger-circuit fact because `afdc.energy.gov` prints "7.2 kW" and "a dedicated  |
