@@ -16,6 +16,10 @@ article_reviewer's rewrite reliably strips the inline internal link from the dra
 
 illustration_creator.py can refuse three art-director briefs in a row on the bare-geometry validator ('prompt names no a structural arrangement'), leaving the push hero-less (featured_media 0 — the third such ship in three runs). Re-commission with the treatment pinned via illustration_creator.py --apply --style <treatment> --model flux, which satisfies the validator's optic, light, texture and framing classes; pick a treatment absent from the last four sidecars. A hero set on featured_media still does not reach the static front until a draft→publish toggle fires the rebuild.
 
+## 2026-11-18 · agentic_resilience_failure · pitfall
+
+Supabase.record_push(row_id, metadata, record) REPLACES metadata.wordpress with its third argument — it does not merge. Passing the row (or {}) as that argument wipes the push bookkeeping (post_id, media_id, link, term ids, media_alt) and the database then disagrees with the CMS while the article stays live. To update one field, read the row's metadata.wordpress, edit that dict, and pass it back as the third argument; verify with an immediate read-back of metadata.wordpress before moving on.
+
 ## 2026-11-17 · workstation_compute_economics · pitfall
 
 A hands-on benchmark page often carries no publication date of its own: the only dated record may be the Hacker News submission (Algolia search_by_date gives created_at for the story). Date the row by that submission and write 'circulated on <date>' in the article rather than 'published on <date>' — the reviewer will otherwise assert a publication date the source never states, which is the class of defect review_audit's numeric comparison cannot see.

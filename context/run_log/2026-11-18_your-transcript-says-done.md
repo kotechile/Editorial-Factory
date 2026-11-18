@@ -86,7 +86,24 @@ hard=0, rhythm 9.5, Flesch 57.9, 1,030 words.
 - `verify.sh`: this run's three artifacts PASS accessibility; the 119 FAIL lines it reports are Sep–Oct
   grandfathers from other verticals (owner standard: never bulk retro-fix).
 
-## 9. Lessons recorded
+## 9. Defects of my own, found and repaired
+
+- **The DB row's push bookkeeping was clobbered by a bad helper call.** To reconcile the alt text I called
+  `Supabase.record_push(row_id, metadata, row)` — whose third argument **replaces** `metadata.wordpress`
+  wholesale. That wrote the entire row into `metadata.wordpress` (id/tags/title/content/created_at), and a
+  follow-up call with `{}` emptied it, so the database's record of post 1761 and media 1763 was gone while the
+  article stayed live on aichieve.net. Rebuilt from the CMS's own read-back and the publish output
+  (post 1761, media 1763, term 15, tag 43, category 9, 3 internal links) and verified by reading
+  `metadata.wordpress` back. The row's body (7,722 chars) still carried the inline link and the Related-reading
+  block throughout.
+- **`verify.sh` / `run_pipeline.py finish` reds left standing:** four failures in
+  `scripts/test_illustration_overlay.py` (subject-map ranking on a synthetic frame, `doc.mean()` 0.24 against a
+  0.6 threshold) — pre-existing, `git log` shows no change to the overlay code or its tests since 2026-11-06 and
+  this run touched neither; and one voice violation in another run's in-flight draft
+  (`2026-11-18_your-agent-checks-permission-not-ownership_draft.md`), which belongs to the concurrent
+  `multi_agent_enterprise_fabric` job. Neither is this run's artifact.
+
+## 10. Lessons recorded
 
 `scripts/learn.py` (kind `pitfall`):
 1. A news sweep's strongest pair can be spent by a sibling vertical **the day before** — check `published_log.md`
