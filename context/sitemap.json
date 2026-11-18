@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T10:45:39Z",
+  "updated_at": "2026-11-18T11:13:27Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7236,6 +7236,24 @@
       "date": "2026-11-17",
       "public": true,
       "url": "https://wellroost.com/your-washer-100000-calls/"
+    },
+    {
+      "slug": "2026-11-18_your-agent-checks-permission-not-ownership",
+      "title": "Your Agent Checks Permission, Not Ownership: 100%",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The check the fabric skips",
+        "By the numbers",
+        "What I'd watch",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-18",
+      "public": false
     },
     {
       "slug": "2026-11-18_your-transcript-says-done",

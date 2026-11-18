@@ -1,0 +1,116 @@
+{
+  "slug": "your-transcript-says-done",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A dark data hall wing with a green status lamp beside a lit rack row, claimed completion contradicted by unpowered racks.",
+      "caption": "The green completion lamp glows above an unpowered rack row while the next wing runs, showing a transcript claim the world never landed.",
+      "title": "Claimed Done, Unpowered Rack Row",
+      "bytes": 328267,
+      "sha256": "sha256:2db10ab5324d34f44b3dfe67fd85a2b0"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural nighttime photograph of a data hall at blue hour. A dark wing of unpowered server racks sits behind floor-to-ceiling glass on the left, a single green completion lamp glowing above the racks like a false success receipt; the right wing glows warm amber through glass, active racks lit. Blue-hour ambient light rakes from the right, warm spill from the lit wing on wet asphalt. 24mm tilt-shift lens, straight verticals, long-exposure calm, no moving figures, small doorway for scale. Graphite, amber, deep blue. Concrete, glass, steel. Extreme asymmetry dark wing left three-fifths, lit wing right, expansion joint split.",
+  "negative_prompt": "garbled text, random letters, watermarks, illegible signage",
+  "rationale": "Architectural night captures a change after hours in operational systems. The lit versus dark wings make the false success receipt visible as a physical discrepancy: one side runs while the recorded 'done' side is unpowered, directly showing the story's tension between claimed and actual effect.",
+  "cue": "a success receipt over a step that never landed",
+  "subject": "a green completion lamp above an unpowered server rack row next to a lit rack row behind glass, the false success receipt over a step that never landed",
+  "core_thesis": "An agent's transcript is a control input, and a false success receipt over a step that never landed can mark work done while the effect never reaches the world, collapsing whole-task success.",
+  "core_conflict": "The written record of success versus the actual landed effect in the world, and the need for a sign test rather than token-budget hygiene in compaction, handoff, and recovery layers.",
+  "composition": "extreme asymmetry with the dark wing on the left three-fifths and the lit wing on the right, a vertical expansion joint as the split axis",
+  "alt_text": "A dark, unlit data hall wing behind glass beside a warmly lit rack row at dusk.",
+  "caption": "False Success Receipt Cuts Task Success To 28%: a false success receipt cuts task success to 28%; a truthful note lifts recovery to 66%.",
+  "title": "False Success Receipt Cuts Task Success To 28%",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "architectural_night",
+    "model": "flux"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-transcript-says-done/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407407,
+  "sha256": "sha256:d0931be476bf7c804c8ed60625bc4a910c82dcaead4c6f635f22d53ab5b0cc26",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407407,
+    "quality": 88,
+    "sha256": "sha256:d0931be476bf7c804c8ed60625bc4a910c82dcaead4c6f635f22d53ab5b0cc26",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ba4147da3870b2171d1e603c7cb8dbd57f2684664e9ded07528e557030279171",
+  "render_phash": "03ff01ff00fe019a8062d256c853c253d053c853cc5782578057907780778077",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dusk exterior of a low concrete-and-glass building split by a vertical joint into a dark left wing containing shelves of unlit equipment with a few faint indicator lights and a lit right wing containing a receding row of tall server racks behind glass, with wet asphalt and a curb in front.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The paired dark/lit server racks with a single small green indicator literalize the article's claimed-completion-versus-real-failure mechanism in the infrastructure the story is about, though nothing in the frame itself encodes the 28%/66% or sign-test specifics."
+  },
+  "source_hash": "sha256:5f0c89ad5165a37963bb8b050cdcee49",
+  "source_chars": 5269,
+  "task_id": "b14051b097a986717d7db3fa1131651f",
+  "credits": 5.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b14051b097a986717d7db3fa1131651f_1794999081584.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural nighttime photograph of a data hall at blue hour. A dark wing of unpowered server racks sits behind floor-to-ceiling glass on the left, a single green completion lamp glowing above the racks like a false success receipt; the right wing glows warm amber through glass, active racks lit. Blue-hour ambient light rakes from the right, warm spill from the lit wing on wet asphalt. 24mm tilt-shift lens, straight verticals, long-exposure calm, no moving figures, small doorway for scale. Graphite, amber, deep blue. Concrete, glass, steel. Extreme asymmetry dark wing left three-fifths, lit wing right, expansion joint split.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-18T10:51:31+00:00",
+  "overlay": {
+    "kicker": "AGENT TRANSCRIPTS // FALSE SUCCESS RECEIPT",
+    "title": "FALSE SUCCESS RECEIPT CUTS TASK SUCCESS TO 28%",
+    "hook": "a false success receipt cuts task success to 28%; a truthful note lifts recovery to 66%",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 11.16,
+    "target": 4.5,
+    "clutter": 0.108,
+    "region_rgb": [
+      12,
+      32,
+      47
+    ],
+    "binding_rgb": [
+      20,
+      52,
+      75
+    ],
+    "title_lines": [
+      "FALSE SUCCESS",
+      "RECEIPT CUTS TASK",
+      "SUCCESS TO 28%"
+    ],
+    "subject": 0.192,
+    "ink_subject": 0.072,
+    "spike": 0.278,
+    "generated_at": "2026-11-18T10:51:31+00:00"
+  }
+}

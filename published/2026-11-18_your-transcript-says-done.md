@@ -12,6 +12,12 @@ slug: your-transcript-says-done
 one_big_thing: "An agent's transcript is a control input to its next decision with two independent measured levers: a success receipt over a step that never landed cuts whole-task success from 45% to 28%, a truthful note beside the same kept error raises recovery from 51% to 66%, and moving a failure out of a buried tool message is worth another 10.5 to 14.2 points — so compaction, handoff and recovery layers need a sign test, not token-budget hygiene."
 meta_title: "Your Transcript Says Done: Success Fails at 28%"
 meta_description: "A success receipt over a write that never landed drops an agent's whole-task success to 28%. A truthful note beside the same error lifts recovery to 66%."
+image_path: "context/assets/illustrations/your-transcript-says-done/featured.jpg"
+image_style: "architectural_night"
+image_model: "flux"
+image_alt: "A dark, unlit data hall wing behind glass beside a warmly lit rack row at dusk."
+image_caption: "False Success Receipt Cuts Task Success To 28%: a false success receipt cuts task success to 28%; a truthful note lifts recovery to 66%."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
