@@ -1296,6 +1296,14 @@
   "note": "659, with the 4Ah at $279 and the 8Ah \"ARC Lithium MAX\" at $599) and `greenworkstools.com/products/<handle>` prints 60V pack prices beside charger prices ($49.99 3A, $79.99 6A, $179.99 dual-"
  },
  {
+  "host": "grpc.io",
+  "url": "https://grpc.io/docs/guides/retry/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "agentic_resilience_failure",
+  "note": "fetched first try, figure in plain text (2026-11-18 hedged-duplication brief)"
+ },
+ {
   "host": "handbrake.fr",
   "url": "",
   "verdict": "fetchable",
@@ -2088,6 +2096,14 @@
   "note": "urance`, `/plan-ahead` unreachable while its root page fetches), and `nfpa.org` (a 35-character body). Two costs worth not repeating: probe every candidate through `citation_hub_dossier.fetc"
  },
  {
+  "host": "nginx.org",
+  "url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "agentic_resilience_failure",
+  "note": "fetched first try, figure in plain text (2026-11-18 hedged-duplication brief)"
+ },
+ {
   "host": "nist.gov",
   "url": "",
   "verdict": "fetchable",
@@ -2414,6 +2430,14 @@
   "as_of": "2026-11-10",
   "vertical": "nhil_infrastructure_ops",
   "note": "vergreen).** Carries the figure as plain text and fetches first try: `raw.githubusercontent.com/cabforum/servercert/main/docs/BR.md` (325 KB \u2014 the CA/Browser Forum Baseline Requirements them"
+ },
+ {
+  "host": "raw.githubusercontent.com",
+  "url": "https://raw.githubusercontent.com/grpc/proposal/master/A6-client-retries.md",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "agentic_resilience_failure",
+  "note": "fetched first try, figure in plain text (2026-11-18 hedged-duplication brief)"
  },
  {
   "host": "raw.githubusercontent.com",
@@ -2990,6 +3014,14 @@
   "as_of": "2026-11-18",
   "vertical": "warehouse_automation_robotics_capex",
   "note": "curl answers 403 but a browser-UA reader (web_extract) returns the full product page, which is where 'ISO 21423:2026 is not a safety standard' is stated. source_gate reports the 403 as UNVERIFIED, not as a dead citation:"
+ },
+ {
+  "host": "www.barroso.org",
+  "url": "https://www.barroso.org/publications/tailAtScale.pdf",
+  "verdict": "unreachable",
+  "as_of": "2026-11-18",
+  "vertical": "agentic_resilience_failure",
+  "note": "PDF returns empty text through the verifier's fetcher; same for research.google.com/pubs/archive/40801.pdf, cacm.acm.org and three .edu mirrors of The Tail at Scale"
  },
  {
   "host": "www.california.public.law",
