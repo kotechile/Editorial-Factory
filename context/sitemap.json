@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T19:41:00Z",
+  "updated_at": "2026-11-18T10:45:39Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7040,7 +7040,7 @@
       "secondary_keywords": [],
       "h2_topics": [
         "At a glance",
-        "The Rule That Prices The Lost Hours",
+        "The Rule Sets The Bill",
         "By the numbers",
         "What The Fleet Teams Assume",
         "Where The Formula Bends",
@@ -7236,6 +7236,25 @@
       "date": "2026-11-17",
       "public": true,
       "url": "https://wellroost.com/your-washer-100000-calls/"
+    },
+    {
+      "slug": "2026-11-18_your-transcript-says-done",
+      "title": "Your Transcript Says Done: Success Fails at 28%",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The sign flips on the world",
+        "Where the damage lands",
+        "By the numbers",
+        "The layer that already ships",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-18",
+      "public": false
     }
   ]
 }
