@@ -1,0 +1,115 @@
+{
+  "slug": "your-3rd-claim-counts-storm-doesnt",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three blank cut-paper claim folders staggered on a kitchen table, with a gray storm cloud set aside.",
+      "caption": "A rolling three-year claim count reprices a house, and weather losses sit outside the stack.",
+      "title": "Three Claim Folders and Storm Cloud Paper Collage",
+      "bytes": 397959,
+      "sha256": "sha256:1ec705b9933beec5b751beb2a6869833"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A minimalist cut-paper collage on a real kitchen table: three blank manila claim folders stand upright in staggered heights from left foreground to right middle, one folder pulled forward with a rust-red tab; to the far right lies a separate gray storm cloud paper silhouette, apart from the folder stack. Hand-torn rag paper with visible fibre, physical cast shadows, one raking light from the left, muted palette of bone white, slate grey and rust. Crisp clean edges, generous negative space, no legible print.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "Paper collage suits a policy rule that lives in documents and count thresholds: it can state the three-claim ladder and the weather exclusion as crisp silhouettes without needing legible text, and the hand-torn paper gives the regulatory weight of a paper file.",
+  "cue": "written warning a carrier owes after the second countable claim",
+  "subject": "three blank manila claim folders staggered on a kitchen table, with a gray storm cloud silhouette set aside",
+  "core_thesis": "A homeowners policy is repriced on the count of nonweather claims, not dollars paid, with the written warning after the second countable claim gating the third.",
+  "core_conflict": "count-based repricing vs dollar severity, weather exclusions vs appliance water forgiveness, the paper warning that turns a third claim into nonrenewal.",
+  "composition": "asymmetrical staging, folders rising left-to-right, storm cloud isolated far right, raking light throwing long shadows",
+  "alt_text": "Your 3Rd Claim Counts, Storm Doesn'T. Three blank cut-paper claim folders staggered on a kitchen table, with a gray storm cloud set aside.",
+  "caption": "Your 3Rd Claim Counts, Storm Doesn'T: The water claim, not the storm, is the one that can end the policy at renewal.",
+  "title": "Your 3Rd Claim Counts, Storm Doesn'T",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406829,
+  "sha256": "sha256:3e0641e2ea7d0de9a5f7890ae8ac1348690851f7cbad49ffee03a37c70edfcdc",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406829,
+    "quality": 84,
+    "sha256": "sha256:3e0641e2ea7d0de9a5f7890ae8ac1348690851f7cbad49ffee03a37c70edfcdc",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:93c89df92ea32d9d908fd1caf7daf001bbf7e0c05b3362af26ac539cac3e356d",
+  "render_phash": "e5ffe47be373c2f4883f8937ac6c1c6014721473146314e697e7836b04640064",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Three blank tabbed paper folders, one open to a reddish-brown interior, stand staggered and rising left to right on a wooden table, with a flat gray paper cloud cutout lying separate to the right amid long raking shadows.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "Three staggered blank claim-type folders paired with a gray storm cloud set aside literalize the article's mechanism of three counted claims with the weather loss excluded from the count."
+  },
+  "source_hash": "sha256:5ec825d3467b61c73003e340af7342f6",
+  "source_chars": 4450,
+  "task_id": "7a4d86b08cb1b352e5d530cbc3d8d632",
+  "credits": 18.0,
+  "cost_ms": 43,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_fcff504cc74b2fa6c9e29a3510eb3c40.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A minimalist cut-paper collage on a real kitchen table: three blank manila claim folders stand upright in staggered heights from left foreground to right middle, one folder pulled forward with a rust-red tab; to the far right lies a separate gray storm cloud paper silhouette, apart from the folder stack. Hand-torn rag paper with visible fibre, physical cast shadows, one raking light from the left, muted palette of bone white, slate grey and rust. Crisp clean edges, generous negative space, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-18T20:12:50+00:00",
+  "overlay": {
+    "kicker": "HOMEOWNERS INSURANCE // CLAIM COUNT",
+    "title": "YOUR 3RD CLAIM COUNTS, STORM DOESN'T",
+    "hook": "The water claim, not the storm, is the one that can end the policy at renewal",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.9,
+    "target": 5.5,
+    "clutter": 0.271,
+    "region_rgb": [
+      204,
+      182,
+      151
+    ],
+    "binding_rgb": [
+      183,
+      132,
+      75
+    ],
+    "title_lines": [
+      "YOUR 3RD CLAIM",
+      "COUNTS, STORM",
+      "DOESN'T"
+    ],
+    "subject": 0.268,
+    "ink_subject": 0.115,
+    "spike": 0.321,
+    "generated_at": "2026-11-18T20:12:50+00:00"
+  }
+}

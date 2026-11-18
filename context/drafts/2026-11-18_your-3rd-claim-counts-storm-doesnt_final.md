@@ -10,6 +10,12 @@ slug: your-3rd-claim-counts-storm-doesnt
 one_big_thing: "A homeowners policy is repriced on counted claims, not on dollars paid — a weather loss and a claim closed without payment cannot be counted at all, the first two appliance-related water claims are forgiven once the repair passes inspection, and the written warning a carrier owes after the second countable claim is what gates the third."
 meta_title: "Your 3rd Claim Counts, Storm Doesn't"
 meta_description: "A carrier counts nonweather claims, not storm losses, and warns you in writing after the second. The water claim is the one that can end the policy at renewal."
+image_path: "context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Your 3Rd Claim Counts, Storm Doesn'T. Three blank cut-paper claim folders staggered on a kitchen table, with a gray storm cloud set aside."
+image_caption: "Your 3Rd Claim Counts, Storm Doesn'T: The water claim, not the storm, is the one that can end the policy at renewal."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
