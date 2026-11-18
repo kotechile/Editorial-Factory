@@ -3120,6 +3120,14 @@
   "note": "OCP document PDFs answered unreachable to the verifier on 2026-11-17 (an OCP PDF did fetch on 2026-10-13), so probe before building an ORV3 / rack-power row on opencompute.org."
  },
  {
+  "host": "www.rfc-editor.org",
+  "url": "https://www.rfc-editor.org/rfc/rfc9457.html",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "multi_agent_enterprise_fabric",
+  "note": "RFC pages fetch first try under the verifier UA; the five problem-object members live under 3.1 with no numeric count in the text, so lead a figure cell on the RFC number itself"
+ },
+ {
   "host": "www.sea-intelligence.com",
   "url": "https://www.sea-intelligence.com/press-room",
   "verdict": "fetchable",
