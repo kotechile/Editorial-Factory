@@ -1,0 +1,115 @@
+{
+  "slug": "your-6-fixes-one-hidden-code",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Insurance notice and public file pages on a garage workbench: one line absorbs six fixable flaws, roof type sits alone.",
+      "caption": "A cut-paper still life contrasts the public file's one line for six fixable flaws with the separate roof-type line on the written notice.",
+      "title": "One Line, Six Fixes",
+      "bytes": 380650,
+      "sha256": "sha256:ae5470329aa761a689a1112866344f32"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A cut-paper diptych on a garage workbench: left, a wide public file page of hand-torn rag paper with one long ochre bar holding six tiny white cutout shapes (a rake, a paintbrush, a lit window, a roof tile, a tree branch, a key); right, a separate notice page with a single roof-shaped cutout in its own ochre bar. Layered paper with visible fibre, single raking light from the left, bone white, slate grey and ochre palette, contact shadows under each layer, split-screen diptych with left-right document contrast.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos",
+  "rationale": "The story is a purely conceptual policy and reporting design flaw with no physical facility or machine to photograph; paper collage can render the document contrast with editorial elegance while keeping the home context. It avoids the sterile stock of a plain document shot and lets the one-line-versus-separate-line split be read at a glance.",
+  "cue": "Condition of property",
+  "subject": "a cut-paper pair of insurance documents on a garage workbench: a public file page with one line aggregating six fixable flaws, and a separate notice page with a roof-shape line",
+  "core_thesis": "The Texas public file's reason list conceals six homeowner-fixable flaws behind one 'Condition of property' code while giving roof-type its own separate line, so only the written notice names a reason a homeowner can act on.",
+  "core_conflict": "The systemic tension is between aggregate public transparency and actionable individual notice: the state's coding lumps six distinct fixable maintenance issues into one line while separating a non-fixable roof-type refusal, obscuring the only lever homeowners hold at renewal.",
+  "composition": "split-screen diptych with left-right document contrast",
+  "alt_text": "Your 6 Fixes, One Hidden Code. Insurance notice and public file pages on a garage workbench: one line absorbs six fixable flaws, roof type",
+  "caption": "Your 6 Fixes, One Hidden Code: Texas now publishes, area by area, why insurers refused to keep a home policy. Each.",
+  "title": "Your 6 Fixes, One Hidden Code",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-6-fixes-one-hidden-code/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391716,
+  "sha256": "sha256:682f9b4bb859b04da0a11d17313f1ab9dea12247915765c7956558c3444f8f38",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391716,
+    "quality": 76,
+    "sha256": "sha256:682f9b4bb859b04da0a11d17313f1ab9dea12247915765c7956558c3444f8f38",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:efecbe1d1ee4aec2596863370775013aae5c3cdfbe2b8f961f231d94016e9690",
+  "render_phash": "96ad9fed2eef2fab2ddb2d3b2d1b275725572d1b6d132d13296a0d66b5b3b3a3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two deckle-edged paper sheets stand upright on a wooden workbench scattered with wood shavings and carving tools, the larger left sheet carrying a horizontal ochre band with six small white cut-paper icons (rake, paintbrush, window, shingle patch, bare branch, key) and the smaller right sheet carrying a horizontal ochre band with a single white house-shaped icon.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The diptych literally stages the article's mechanism \u2014 one document line bundling six homeowner-fixable flaws against a separate line for a single roof-shape item \u2014 so a reader would connect it to the headline about the six fixes and the hidden code, though the icons require the article to be fully legible as 'insurance filings'."
+  },
+  "source_hash": "sha256:5d0805cb2b3ddd3779806b50e4bd2128",
+  "source_chars": 4816,
+  "task_id": "70889480339dda036135c36dda445244",
+  "credits": 18.0,
+  "cost_ms": 23,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b6840ce1d9b05481b27fe529ea8660d7.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A cut-paper diptych on a garage workbench: left, a wide public file page of hand-torn rag paper with one long ochre bar holding six tiny white cutout shapes (a rake, a paintbrush, a lit window, a roof tile, a tree branch, a key); right, a separate notice page with a single roof-shaped cutout in its own ochre bar. Layered paper with visible fibre, single raking light from the left, bone white, slate grey and ochre palette, contact shadows under each layer, split-screen diptych with left-right document contrast.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-18T13:21:16+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR 6 FIXES, ONE HIDDEN CODE",
+    "hook": "Texas now publishes, area by area, why insurers refused to keep a home policy. Each",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.74,
+    "target": 5.5,
+    "clutter": 0.359,
+    "region_rgb": [
+      75,
+      66,
+      54
+    ],
+    "binding_rgb": [
+      122,
+      110,
+      98
+    ],
+    "title_lines": [
+      "YOUR 6 FIXES,",
+      "ONE HIDDEN",
+      "CODE"
+    ],
+    "subject": 0.221,
+    "ink_subject": 0.081,
+    "spike": 0.233,
+    "generated_at": "2026-11-18T13:21:16+00:00"
+  }
+}

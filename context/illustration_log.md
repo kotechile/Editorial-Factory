@@ -526,3 +526,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-18 | `your-agent-checks-permission-not-ownership` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-agent-checks-permission-not-ownership/featured.jpg` |
 | 2026-11-18 | `your-100x-saving-bought-the-tail` | enterprise_build_vs_buy | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-100x-saving-bought-the-tail/featured.jpg` |
 | 2026-11-18 | `your-vendor-exit-costs-373` | warehouse_automation_robotics_capex | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-vendor-exit-costs-373/featured.jpg` |
+| 2026-11-18 | `your-6-fixes-one-hidden-code` | property_loss_insurance_mitigation | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-6-fixes-one-hidden-code/featured.jpg` |

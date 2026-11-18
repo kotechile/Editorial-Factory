@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T12:46:24Z",
+  "updated_at": "2026-11-18T13:23:03Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7252,6 +7252,24 @@
         "The catch"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-18",
+      "public": false
+    },
+    {
+      "slug": "2026-11-18_your-6-fixes-one-hidden-code",
+      "title": "Your 6 Fixes, One Hidden Code",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "What one line absorbs",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-18",
       "public": false
     },
