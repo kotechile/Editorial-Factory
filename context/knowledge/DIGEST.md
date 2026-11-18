@@ -20,6 +20,14 @@ A reader front 404s for a few minutes after publish.py while the CMS already rep
 
 verify.sh fails on four scripts/test_illustration_overlay.py subject-map tests (subject score 0.24 where 0.5-0.6 is asserted) and it fails identically at the previous commit, so it is a pre-existing overlay defect, not a run defect. Do not re-cut thresholds blind to green the build: confirm against an older commit first (git checkout <sha> -- scripts/ && pytest), then report it as pre-existing in the run log.
 
+## 2026-11-18 · warehouse_automation_robotics_capex · pitfall
+
+publish.py's delivery line reported '0 internal link(s)' on a body that carried one earned inline link plus the generated Related-reading block, and the rendered front shows both — the push report's link count is not evidence about the body; curl the reader front and grep href="/<slug>/" before treating an internal-link defect as real. Also: article_shape's 'restated in 3 sections' rule counts the ## At a glance box, so when the frontier rewrite moves a money figure into the box the piece now carries it in lead/tension + box + By the numbers and the shape gate holds at the push — run scripts/article_shape.py straight after review ACCEPT, before the gate batch.
+
+## 2026-11-18 · warehouse_automation_robotics_capex · pitfall
+
+The header overlay fades its scrim panel to zero down the block, so on a dense isometric frame the LAST lines (the hook, and the title's second line) sit on robot bodies with almost no panel under them: the placement report still reads contrast 6.0 and every gate passes, while the served image is unreadable. Judging the header with vision is the only check that catches it. Fix in place rather than re-rendering: composite the same copy on a FLAT panel (alpha ~175, feathered on the right and bottom edges only) from featured.base.jpg, then hand the bytes back to wp_draft.reimage_by_slug — and after any media swap force the front to rebuild (status draft->publish) and compare sha256 of the served og:image against the staged file, because the newly uploaded attachment lands on a -N filename and the old static build keeps pointing at the deleted base name.
+
 ## 2026-11-18 · property_loss_insurance_mitigation · pitfall
 
 The illustration sidecar can be rewritten with a headline-glued, truncated alt (observed 'Your 6 Fixes, One Hidden Code. Insurance notice and public file pages... roof type', 118 chars) and its typography overlay can be set from the lead and clipped mid-sentence ('...refused to keep a home policy. Each'). Both survive the publish summary because the render gate reads bytes, not copy. After a persistence pass, read the header pixels with vision and diff the sidecar alt against the artifact: retype the overlay free with illustration_overlay.apply_to_slug(slug, force_copy=...) from featured.base.jpg, then fix alt/caption in the sidecar, the artifact, the Supabase metadata and the attachment, and push the corrected bytes with wp_draft.py --slug <slug> --reimage (update_media alone changes meta, not pixels). The front can keep serving the old alt until the attachment meta lands.
@@ -55,6 +63,10 @@ scripts/publish.py can persist an article with no illustration pass at all (no i
 ## 2026-11-18 · enterprise_build_vs_buy · pitfall
 
 The frontier rewrite deletes the draft's single inline internal link (the stitcher only counts [n] tags), so article_shape hard-fails zero inline links at the push. Restore it by hand in the _final.md and re-run the battery. Also pick a link slug with no digits in it: an inline link to /your-sso-bill-125-a-connection/ makes the review ledger read 'figure lost: 125', because the number lives in the URL, and the attempt is HELD for a figure nobody dropped.
+
+## 2026-11-18 · enterprise_build_vs_buy · pitfall
+
+scripts/test_illustration_overlay.py fails on checked-in code (4 tests, verify.sh red before and independent of any article): _subject_map multiplies the dominant-colour cue by weight = 0.25 + 0.75*texture, so a smooth subject on a textured ground scores ~0.24 where the test asserts >0.6 - the 2026-11-06 'detail weight' commit (4a28e00) is the likely regression. Do not blind-fix image placement mid-run: the weights exist to stop type landing on a lit wall, and the fix needs a design decision (probably weight the border-plate cue only and leave the modal-colour cue unweighted).
 
 ## 2026-11-18 · agentic_resilience_failure · pitfall
 
@@ -272,6 +284,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | firesafelake.org | fetchable | 2026-11-13 | resilient_home_assets | d", soffited eaves preferred, and the chapter-7A 1/16-to-1/8 range); `firesafelake.org/vents` (6.7 KB — "embers passing  |
 | firesafemarin.org | fetchable | 2026-11-13 | resilient_home_assets | 7.7 KB but carries **no figure at all**, so it cannot carry a row); `firesafemarin.org/harden-your-home/fire-resistant-v |
 | flsenate.gov | fetchable | 2026-10-19 | expat_cross_border_relocation | the cap).** Carries the figure as plain text and fetches first try: `flsenate.gov/Laws/Statutes/<year>/<section>` (Flori |
+| fred.stlouisfed.org | fetchable | 2026-11-18 | warehouse_automation_robotics_capex | FRED series pages fetch first try (4.4 KB) and print the latest observation plus five monthly values as plain text — 'Ob |
 | ftb.ca.gov | fetchable | 2026-11-12 | expat_cross_border_relocation | ped this exact candidate at 7.5 on "both `california.public.law` and `ftb.ca.gov` answered unreachable". Probe both form |
 | fueleconomy.gov | fetchable | 2026-10-31 | outdoor_power_equipment | 15 years in moderate climates (8 to 12 years in extreme climates)"); `fueleconomy.gov/feg/coldweather.shtml` (EV "fuel e |
 | github.com | fetchable | 2026-11-10 | nhil_infrastructure_ops | at row leads on the `90 days` sentence it is measured from. (3) *The `github.com/.../blob/...` render of the same BR fil |

@@ -1192,6 +1192,14 @@
   "note": "number, but the guardrail is on the host: `cbp.gov` (ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable"
  },
  {
+  "host": "fred.stlouisfed.org",
+  "url": "https://fred.stlouisfed.org/series/PCU333924333924",
+  "verdict": "fetchable",
+  "as_of": "2026-11-18",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "FRED series pages fetch first try (4.4 KB) and print the latest observation plus five monthly values as plain text \u2014 'Observations Oct 2026: 383.858 | Index Dec 1979=100 ... Oct 2026: 383.858 Sep 2026: 380.541 ... Jun 20"
+ },
+ {
   "host": "ftb.ca.gov",
   "url": "",
   "verdict": "fetchable",

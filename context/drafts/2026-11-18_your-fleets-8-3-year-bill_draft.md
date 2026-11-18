@@ -43,7 +43,7 @@ The replacement price is the other half of the case, and it is published. The pr
 ## Where this bites
 The people closest to the fleet already act as if the second purchase were a known date. They open trade-in talks when they order, they keep a parts bank, and 53% of buyers in the same study rank parts availability above the dealer tie [1]. That ranking is a hedge for the last years of a long stretch, when a machine still runs and its parts are out of production.
 
-Watch the December price release, which sets next year's replacement cost. Watch the capital survey as well. If square-footage plans stay near 13%, sites are picking denser buildings over new ones, and a dense building renews more capital per square foot when its fleet ages out [2]. Neither number speaks to one machine. Together they sketch a network's capital calendar in the years it is not buying.
+What I am watching is the December price release, which sets next year's replacement cost. I am also watching the capital survey. If square-footage plans stay near 13%, sites are picking denser buildings over new ones, and a dense building renews more capital per square foot when its fleet ages out [2]. Neither number speaks to one machine. Together they sketch a network's capital calendar in the years it is not buying.
 
 <!-- nuanced-takeaway -->
 ## The catch

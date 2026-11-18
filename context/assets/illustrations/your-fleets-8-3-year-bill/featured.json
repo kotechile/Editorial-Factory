@@ -1,6 +1,6 @@
 {
   "slug": "your-fleets-8-3-year-bill",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -13,7 +13,7 @@
   ],
   "style": "technical_isometric",
   "style_label": "Technical isometric cutaway",
-  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "style_when": "the article explains how a system, process or stack actually works — money flows, supply chains, pipelines, an agent assembly line",
   "model": "nano-banana-pro",
   "model_key": "nanobanana",
   "model_note": "",
@@ -21,14 +21,14 @@
   "resolution": "1K",
   "prompt": "Clean isometric cutaway illustration of an automated warehouse aisle on a polished concrete floor. A fleet of identical unbranded autonomous mobile robots is arranged in a rigid symmetrical grid, rows receding toward a far steel rack where one blank paper invoice lies. Each robot has a matte grey polymer chassis with safety-yellow trim, black drive wheels, and visible battery bay seams. One directional hard light from the upper left casts long shadows across the concrete. Graphite, bone white, and safety yellow palette. Thin consistent line weight, unlabelled, generous empty margin, one-point perspective down the aisle.",
   "negative_prompt": "garbled text, random lettering, watermarks, signatures, logos",
-  "rationale": "The story is structural and systemic\u2014how a fleet ages together and produces a single unbudgeted replacement bill. A technical isometric cutaway can show the fleet as a physical grid while keeping the blank invoice as a recognizable artifact, avoiding a sterile datacenter or office stock.",
+  "rationale": "The story is structural and systemic—how a fleet ages together and produces a single unbudgeted replacement bill. A technical isometric cutaway can show the fleet as a physical grid while keeping the blank invoice as a recognizable artifact, avoiding a sterile datacenter or office stock.",
   "cue": "the second purchase is a capital plan",
   "subject": "a fleet of identical unbranded autonomous mobile robots in a warehouse aisle with a blank paper invoice on a steel rack",
   "core_thesis": "A robot fleet bought in one year comes back as a single renewal bill about eight times the annual charge, and a reserve funded at the original invoice covers only about three quarters of the replacement price once the equipment index compounds across an 8.3-year life.",
   "core_conflict": "The governing tension is between a one-time capital outlay spread across an original schedule and the compounded replacement cost that arrives as one unscheduled wave when the entire fleet ages together.",
   "composition": "isometric cutaway with symmetrical grid and one off-centre invoice on a steel rack, one-point perspective down the aisle",
-  "alt_text": "Your Fleet'S 8.3-Year Bill. Fleet of identical autonomous mobile robots in a warehouse aisle with a blank invoice on a steel rack.",
-  "caption": "Your Fleet'S 8.3-Year Bill: A robot fleet bought in one year returns as one bill eight times the annual charge.",
+  "alt_text": "A fleet of identical autonomous mobile robots stands in a warehouse aisle beside a blank invoice held by a steel rack.",
+  "caption": "Your fleet's 8.3-year bill: a robot fleet bought in one year returns as one bill eight times the annual charge.",
   "title": "Your Fleet'S 8.3-Year Bill",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -39,8 +39,8 @@
   "local_path": "context/assets/illustrations/your-fleets-8-3-year-bill/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 407692,
-  "sha256": "sha256:876af246a3d8520c7f4caf68ef687f3fdf9cc07e4b0644e7441bec77b4e4011d",
+  "bytes": 394247,
+  "sha256": "sha256:170c92892635dde91582e4c7a1a3232d14590dc785616227ee467280606102a9",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -63,7 +63,7 @@
     "legible_text": "",
     "on_topic": true,
     "confidence": 0.82,
-    "reason": "The frame shows the article's own protagonist \u2014 a fleet of identical robots \u2014 with the invoice on the rack standing in for the renewal bill that is the story's mechanism."
+    "reason": "The frame shows the article's own protagonist — a fleet of identical robots — with the invoice on the rack standing in for the renewal bill that is the story's mechanism."
   },
   "source_hash": "sha256:581a7a29927a4276907064b7bf64c510",
   "source_chars": 5109,
@@ -85,7 +85,7 @@
   "overlay": {
     "kicker": "ROBOT FLEET CAPEX WAVE",
     "title": "YOUR FLEET'S 8.3-YEAR BILL",
-    "hook": "A robot fleet bought in one year returns as one bill eight times the annual charge",
+    "hook": "Eight times the annual charge, in one year",
     "anchor": "top-left",
     "light": false,
     "scrim": 120,

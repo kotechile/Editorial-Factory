@@ -12,8 +12,8 @@ meta_title: "Your Fleet's 8.3-Year Bill"
 image_path: "context/assets/illustrations/your-fleets-8-3-year-bill/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Your Fleet'S 8.3-Year Bill. Fleet of identical autonomous mobile robots in a warehouse aisle with a blank invoice on a steel rack."
-image_caption: "Your Fleet'S 8.3-Year Bill: A robot fleet bought in one year returns as one bill eight times the annual charge."
+image_alt: "A fleet of identical autonomous mobile robots stands in a warehouse aisle beside a blank invoice held by a steel rack."
+image_caption: "Your fleet's 8.3-year bill: a robot fleet bought in one year returns as one bill eight times the annual charge."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
