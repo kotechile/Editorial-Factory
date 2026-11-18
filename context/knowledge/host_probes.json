@@ -3008,6 +3008,14 @@
   "note": "Cornell LII mirrors of 40 CFR 112.1/.2/.3/.5/.6 and 280.10/.12 fetch first try (4-20 KB, operative sentences as plain text); the \u00a7280.12 definition page carries the heating-oil consumptive-use exclusion."
  },
  {
+  "host": "www.metabase.com",
+  "url": "https://www.metabase.com/blog/mcp-tool-design-lessons",
+  "verdict": "partial",
+  "as_of": "2026-11-18",
+  "vertical": "multi_agent_enterprise_fabric",
+  "note": "Metabase Engineering blog: fetchable, dated first-party post ('Nov 17, 2026 in Engineering'), but carries design intent and no measurement \u2014 admissible as friction only, never a dual-authority anchor."
+ },
+ {
   "host": "www.mindstudio.ai",
   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
   "verdict": "fetchable",
