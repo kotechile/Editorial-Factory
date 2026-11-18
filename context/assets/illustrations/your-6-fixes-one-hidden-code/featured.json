@@ -1,6 +1,6 @@
 {
   "slug": "your-6-fixes-one-hidden-code",
-  "revision": 2,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "One Line, Six Fixes",
       "bytes": 380650,
       "sha256": "sha256:ae5470329aa761a689a1112866344f32"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your 6 Fixes, One Hidden Code. Insurance notice and public file pages on a garage workbench: one line absorbs six fixable flaws, roof type",
+      "caption": "Your 6 Fixes, One Hidden Code: Texas now publishes, area by area, why insurers refused to keep a home policy. Each.",
+      "title": "Your 6 Fixes, One Hidden Code",
+      "bytes": 391716,
+      "sha256": "sha256:682f9b4bb859b04da0a11d17313f1ab9dea12247915765c7956558c3444f8f38"
     }
   ],
   "style": "paper_collage",
@@ -27,8 +35,8 @@
   "core_thesis": "The Texas public file's reason list conceals six homeowner-fixable flaws behind one 'Condition of property' code while giving roof-type its own separate line, so only the written notice names a reason a homeowner can act on.",
   "core_conflict": "The systemic tension is between aggregate public transparency and actionable individual notice: the state's coding lumps six distinct fixable maintenance issues into one line while separating a non-fixable roof-type refusal, obscuring the only lever homeowners hold at renewal.",
   "composition": "split-screen diptych with left-right document contrast",
-  "alt_text": "Your 6 Fixes, One Hidden Code. Insurance notice and public file pages on a garage workbench: one line absorbs six fixable flaws, roof type",
-  "caption": "Your 6 Fixes, One Hidden Code: Texas now publishes, area by area, why insurers refused to keep a home policy. Each.",
+  "alt_text": "Cut-paper diptych on a workbench: one page's ochre band holds six small cutouts, the other a single roof shape.",
+  "caption": "Six fixable flaws share one band on the public file; a roof-type refusal gets a band of its own.",
   "title": "Your 6 Fixes, One Hidden Code",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/your-6-fixes-one-hidden-code/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 391716,
-  "sha256": "sha256:682f9b4bb859b04da0a11d17313f1ab9dea12247915765c7956558c3444f8f38",
+  "bytes": 391801,
+  "sha256": "sha256:b788bcffb3f5908bac3b8b6dbed459336f14fe6f656f9bcdc2a0f91c36d2b8cc",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -49,9 +57,9 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 391716,
+    "bytes": 391801,
     "quality": 76,
-    "sha256": "sha256:682f9b4bb859b04da0a11d17313f1ab9dea12247915765c7956558c3444f8f38",
+    "sha256": "sha256:b788bcffb3f5908bac3b8b6dbed459336f14fe6f656f9bcdc2a0f91c36d2b8cc",
     "filename_rule": "<slug>-featured.jpg"
   },
   "render_sha256": "sha256:efecbe1d1ee4aec2596863370775013aae5c3cdfbe2b8f961f231d94016e9690",
@@ -83,33 +91,32 @@
   },
   "generated_at": "2026-11-18T13:21:16+00:00",
   "overlay": {
-    "kicker": "",
-    "title": "YOUR 6 FIXES, ONE HIDDEN CODE",
-    "hook": "Texas now publishes, area by area, why insurers refused to keep a home policy. Each",
+    "kicker": "TEXAS HOME INSURANCE FILE",
+    "title": "Your 6 Fixes, One Hidden Code",
+    "hook": "Six fixable flaws, one code \u2014 and a roof line of its own",
     "anchor": "top-right",
     "light": true,
     "scrim": 120,
-    "contrast": 5.74,
+    "contrast": 5.51,
     "target": 5.5,
-    "clutter": 0.359,
+    "clutter": 0.322,
     "region_rgb": [
-      75,
-      66,
+      71,
+      63,
       54
     ],
     "binding_rgb": [
-      122,
-      110,
-      98
+      115,
+      107,
+      96
     ],
     "title_lines": [
-      "YOUR 6 FIXES,",
-      "ONE HIDDEN",
-      "CODE"
+      "Your 6 Fixes, One",
+      "Hidden Code"
     ],
-    "subject": 0.221,
-    "ink_subject": 0.081,
-    "spike": 0.233,
+    "subject": 0.163,
+    "ink_subject": 0.06,
+    "spike": 0.162,
     "generated_at": "2026-11-18T13:21:16+00:00"
   }
 }

@@ -1,4 +1,4 @@
-# Internal-link candidates — 2026-11-17T14:22:41+00:00
+# Internal-link candidates — 2026-11-18T14:21:27+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
@@ -87,7 +87,7 @@ Category hubs this front serves: —
 - [W-2 vs 1099 vs S-Corp Net Yield Calculator (tool)](https://giniloh.com/calculators/w2-vs-1099-scorp-calculator/) — —
 - [Where Each Paycheck Goes: Money Flow Simulator (tool)](https://giniloh.com/calculators/money-flow/) — —
 
-## wellroost.com — 97 live article(s), 22 other target(s)
+## wellroost.com — 99 live article(s), 22 other target(s)
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
@@ -143,8 +143,10 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your 49% Discount Isn't All Roof](https://wellroost.com/your-49-discount-isnt-all-roof/) — Home Cost Decisions
 - [Your 5% Deductible Risks Your Claim](https://wellroost.com/your-5-deductible-risks-your-claim/) — Home Cost Decisions
 - [Your 512×384 Camera's 10x Illusion](https://wellroost.com/your-512x384-cameras-10x-illusion/) — Home Diagnostic Tools
+- [Your 6 Fixes, One Hidden Code](https://wellroost.com/your-6-fixes-one-hidden-code/) — Home Cost Decisions
 - [Your 70% Limit's 12.5% Gap](https://wellroost.com/your-70-limits-12-5-gap/) — Home Cost Decisions
 - [Your 75,000-Btu Tank's Venting Trap](https://wellroost.com/your-75000-btu-tank-venting-trap/) — Energy & Efficiency
+- [Your 80 PSI Trap: A Valve and a Tank](https://wellroost.com/your-80-psi-trap/) — Smart Home & Security
 - [Your Adjuster Hides a 25% Gap](https://wellroost.com/your-adjuster-hides-a-25-gap/) — Home Cost Decisions
 - [Your Basement Lease Risks $500,000](https://wellroost.com/your-basement-lease-risks-500000/) — Energy & Efficiency
 - [Your Battery Gap Is 85%](https://wellroost.com/85-percent-of-batteries-cant-save-you/) — Energy & Efficiency
@@ -211,7 +213,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 253 live article(s), 13 other target(s)
+## aichieve.net — 261 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -222,6 +224,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [$915M Illusion: Your AI Judge Moves](https://aichieve.net/buying-ai-quality-when-the-score-belongs-to-the-judge/) — AI Stack & Tool TCO
 - [1.016M Non-GPUs: Your Chip Stopped Deciding](https://aichieve.net/your-chip-stopped-deciding/) — Major Purchases & Assets
 - [18x LPDDR Isn't 18 TB/s](https://aichieve.net/18x-lpddr-isnt-18tbs/) — Major Purchases & Assets
+- [19 Minutes: Your Spot Discount's Real Bill](https://aichieve.net/19-minutes-your-spots-real-bill/) — Major Purchases & Assets
 - [2,000 Fine-Tunes Cost You 5.5% Throughput](https://aichieve.net/2000-fine-tunes-one-card-55-throughput/) — Major Purchases & Assets
 - [2-Week Notice Breaks Your Audit Trail](https://aichieve.net/model-retirement-breaks-audit-trail/) — Mental Models & Strategy
 - [270 Attacks: Your Green Tests Are Blind](https://aichieve.net/one-skill-too-many-green-test/) — Autonomous & Agentic Workflows
@@ -343,9 +346,11 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your $15 Air Rule, $195 Break-Even](https://aichieve.net/your-15-air-rule-195-break-even/) — Supply Chain & Operations
 - [Your $200 Cap Still Buys 2.85x](https://aichieve.net/your-200-cap-still-buys-2-85x/) — AI Stack & Tool TCO
 - [Your $30 Exception Bill Is Wrong](https://aichieve.net/your-30-exception-bill-is-wrong/) — Supply Chain & Operations
+- [Your 1,320-Gallon Blind Spot](https://aichieve.net/your-1320-gallon-blind-spot/) — AI Stack & Tool TCO
 - [Your 10-Minute Spike Bills an Hour](https://aichieve.net/your-10-minute-spike-bills-an-hour/) — Autonomous & Agentic Workflows
 - [Your 100,000 Totes Skip the Cost](https://aichieve.net/100000-totes-skip-the-cost/) — Supply Chain & Operations
 - [Your 100-Case Eval: 92.5% Coverage, Not 95%](https://aichieve.net/100-case-eval-925-coverage/) — AI Stack & Tool TCO
+- [Your 100x Saving: A Hidden Cap](https://aichieve.net/your-100x-saving-bought-the-tail/) — AI Stack & Tool TCO
 - [Your 11 Agents: 3 Die, None Wrong](https://aichieve.net/your-11-agents-3-die-none-wrong/) — Autonomous & Agentic Workflows
 - [Your 128GB Laptop: A $2,319 Memory Bill](https://aichieve.net/your-128gb-laptop-2319-memory-bill/) — Major Purchases & Assets
 - [Your 15% Raise: A Memory Price Hike](https://aichieve.net/your-15-percent-raise-is-a-price-hike/) — Mental Models & Strategy
@@ -370,6 +375,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your 60% Fast Lane Is Blind](https://aichieve.net/your-60-fast-lane-is-blind/) — AI Stack & Tool TCO
 - [Your 68K Tokens Cost Every Step](https://aichieve.net/your-68k-tokens-cost-every-step/) — Major Purchases & Assets
 - [Your 78.3% Silent Cap Breach](https://aichieve.net/your-783-silent-cap-breach/) — Autonomous & Agentic Workflows
+- [Your 8 GiB Node Sells 6.1: The Hidden Reserve](https://aichieve.net/your-8-gib-node-sells-6-1/) — Mental Models & Strategy
 - [Your 8% Charge Shifts Every Week](https://aichieve.net/parcel-fuel-percentage-weekly-january/) — Supply Chain & Operations
 - [Your 9% Drop: Not the Model](https://aichieve.net/rerun-diff-measures-gpu/) — AI Stack & Tool TCO
 - [Your 9-Day Notice, 9-Day Queue](https://aichieve.net/your-9-day-notice-9-day-queue/) — Supply Chain & Operations
@@ -381,6 +387,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your AI Fine: 3%, Not 35 Million](https://aichieve.net/your-ai-fine-is-3-percent/) — Mental Models & Strategy
 - [Your AI Incident Clock: 4 Hours, Not 15 Days](https://aichieve.net/ai-incident-clock-4-hours-not-15-days/) — Mental Models & Strategy
 - [Your AI ROI Trap: 28% Both Ways](https://aichieve.net/your-ai-roi-28-rising-28-stalled/) — Mental Models & Strategy
+- [Your Agent Checks Permission, Not Ownership: 100%](https://aichieve.net/your-agent-checks-permission-not-ownership/) — Autonomous & Agentic Workflows
 - [Your Agent Fabric's 52.2% Blind Spot](https://aichieve.net/stale-grants-travel-the-graph/) — Autonomous & Agentic Workflows
 - [Your Agent Fleet's 39x Gap: One Meter Nobody Budgets](https://aichieve.net/agent-fleet-two-meters/) — Autonomous & Agentic Workflows
 - [Your Agent Recovers 8% of Crashes](https://aichieve.net/your-agent-recovers-8-of-crashes/) — Autonomous & Agentic Workflows
@@ -423,6 +430,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Hidden 461 Double Counts](https://aichieve.net/your-hidden-461-double-counts/) — Supply Chain & Operations
 - [Your Inventory Bill Is 24% Prepaid](https://aichieve.net/your-inventory-bill-is-24-percent-prepaid/) — Supply Chain & Operations
 - [Your Jira Bill Rose 10%: Memory Rose Six Times](https://aichieve.net/flat-price-was-the-hedge/) — AI Stack & Tool TCO
+- [Your Judge's 80% Overpays 39 Points](https://aichieve.net/your-judges-80-overpays-39-points/) — AI Stack & Tool TCO
 - [Your Label's Bill: 2,500 Series](https://aichieve.net/your-label-bills-2500-series/) — Mental Models & Strategy
 - [Your Last-Mile Carbon Number Is a Rate Table](https://aichieve.net/last-mile-carbon-number-is-a-rate-table/) — Supply Chain & Operations
 - [Your Machine Duty: 180 Days, Still Unpriced](https://aichieve.net/your-machine-duty-180-days-still-unpriced/) — Supply Chain & Operations
@@ -464,8 +472,10 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [Your Trace Fails as an Alarm: 26.25% Profile](https://aichieve.net/your-trace-fails-as-an-alarm/) — Autonomous & Agentic Workflows
 - [Your Trace Won't Prove 92.5 Points](https://aichieve.net/your-trace-wont-prove-925-points/) — AI Stack & Tool TCO
 - [Your Trailer's Last Foot Costs 2,500](https://aichieve.net/your-trailers-last-foot-costs-2500/) — Supply Chain & Operations
+- [Your Transcript Says Done: Success Fails at 28%](https://aichieve.net/your-transcript-says-done/) — Autonomous & Agentic Workflows
 - [Your Truck Mile Costs 2.2 Driver-Minutes](https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/) — Supply Chain & Operations
 - [Your Undo Is 14.6x Cheaper](https://aichieve.net/your-undo-is-14-6x-cheaper/) — Autonomous & Agentic Workflows
+- [Your Vendor Exit Costs $373](https://aichieve.net/your-vendor-exit-costs-373/) — Supply Chain & Operations
 - [Your Warning Leaves 70.1% Wrong](https://aichieve.net/your-warning-leaves-701-wrong/) — AI Stack & Tool TCO
 - [Your Zone Saves 1.15%: The Hidden Cost](https://aichieve.net/your-zone-deferral-is-worth-115-percent/) — Supply Chain & Operations
 - [AI Stack & Tool TCO (category)](https://aichieve.net/categories/ai-stack-tool-tco/) — Ai Stack Tool Tco
@@ -484,6 +494,14 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1772 `your-vendor-exit-costs-373` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1769 `your-100x-saving-bought-the-tail` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1765 `your-agent-checks-permission-not-ownership` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1761 `your-transcript-says-done` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1758 `19-minutes-your-spots-real-bill` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1754 `your-8-gib-node-sells-6-1` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1752 `your-1320-gallon-blind-spot` — published in the CMS but absent from the frontend sitemap
+- giniloh.com #1748 `your-judges-80-overpays-39-points` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1746 `your-hidden-461-double-counts` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1743 `your-boxs-hidden-79-speed-cut` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1738 `your-approval-gate-kills-20` — published in the CMS but absent from the frontend sitemap
@@ -561,9 +579,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1376 `your-trace-fails-as-an-alarm` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1370 `stop-blaming-demand-planning-for-stockouts` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1365 `your-zone-deferral-is-worth-115-percent` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1359 `your-machine-duty-180-days-still-unpriced` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1325 `the-agentic-rag-trap` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1316 `your-truck-mile-costs-2-2-driver-minutes` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1707 `your-100-hour-is-not-208000` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1704 `your-collar-kills-the-long-term-clock` — published in the CMS but absent from the frontend sitemap
@@ -580,8 +595,3 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - aichieve.net #1527 `your-grant-grew-25-4-directors-grew-3-9` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1505 `your-brokers-fund-bills-37` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1489 `italy-bills-26-to-leave` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1363 `your-standby-bill-hides-62-watts` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1356 `two-builds-one-vault` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1319 `your-ink-plan-bills-20-cents` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1312 `your-3-year-rung-costs-15-9` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1310 `your-stock-gift-26180-never-taxed` — published in the CMS but absent from the frontend sitemap

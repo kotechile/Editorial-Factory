@@ -1,6 +1,6 @@
 {
   "slug": "split-year-two-clock-seam",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -11,6 +11,14 @@
       "sha256": "sha256:95c0ba792e6214f55118beec2a10afe5",
       "generated_at": "2026-10-08T19:37:29+00:00",
       "source_hash": "sha256:e59aa117c0c8698a431b3595e53c30de"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Two overlapping, misaligned clock face paper silhouettes on a neutral background.",
+      "caption": "The timing gap between different national residency rules is often where relocating professionals face unexpected costs.",
+      "title": "Paper collage of misaligned tax clocks",
+      "bytes": 1949613,
+      "sha256": "sha256:61c34f70c3af41428fcde4df92c03cbc"
     }
   ],
   "style": "paper_collage",
@@ -26,20 +34,20 @@
   "rationale": "This article is a conceptual synthesis regarding a policy dilemma (two conflicting tax residence schedules) where no literal physical mechanism exists. Paper collage elegantly states the idea of overlapping, mismatched schedules through crisp, stylized silhouettes without resorting to generic stock photos.",
   "cue": "two tax clocks at once",
   "subject": "two overlapping, misaligned clock face silhouettes",
-  "alt_text": "Two overlapping, misaligned clock face paper silhouettes on a neutral background.",
-  "caption": "The timing gap between different national residency rules is often where relocating professionals face unexpected costs.",
-  "title": "Paper collage of misaligned tax clocks",
+  "alt_text": "Two Tax Clocks Decide Your First Year Abroad. Two overlapping, misaligned clock face paper silhouettes on a neutral background.",
+  "caption": "Two Tax Clocks Decide Your First Year Abroad: the US 330-day test and the UK 183-day test rarely sync, so timing decides the bill.",
+  "title": "Two Tax Clocks Decide Your First Year Abroad",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/split-year-two-clock-seam/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1949613,
-  "sha256": "sha256:61c34f70c3af41428fcde4df92c03cbc",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/split-year-two-clock-seam/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 387264,
+  "sha256": "sha256:27106a1cbe04e4ba9a9f77be3ae4e54cbc2cb920dc16b129988e8fd3192c3bc0",
   "source_hash": "sha256:e59aa117c0c8698a431b3595e53c30de",
   "source_chars": 4861,
   "task_id": "3fcf677ec6e6f292d46e90520de23dfc",
@@ -56,5 +64,48 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T22:26:23+00:00"
+  "generated_at": "2026-10-08T22:26:23+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 387264,
+    "quality": 80,
+    "sha256": "sha256:27106a1cbe04e4ba9a9f77be3ae4e54cbc2cb920dc16b129988e8fd3192c3bc0",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "EXPAT TAX // RESIDENCY CLOCKS",
+    "title": "TWO TAX CLOCKS DECIDE YOUR FIRST YEAR ABROAD",
+    "hook": "the US 330-day test and the UK 183-day test rarely sync, so timing decides the bill",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 11.36,
+    "target": 5.5,
+    "clutter": 0.33,
+    "region_rgb": [
+      232,
+      231,
+      224
+    ],
+    "binding_rgb": [
+      240,
+      239,
+      235
+    ],
+    "title_lines": [
+      "TWO TAX CLOCKS",
+      "DECIDE YOUR FIRST",
+      "YEAR ABROAD"
+    ],
+    "subject": 0.084,
+    "ink_subject": 0.032,
+    "spike": 0.201,
+    "generated_at": "2026-10-08T22:26:23+00:00"
+  }
 }

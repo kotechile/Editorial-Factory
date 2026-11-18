@@ -1,6 +1,6 @@
 {
   "slug": "forecast-accuracy-is-not-shock-protection",
-  "revision": 8,
+  "revision": 9,
   "history": [
     {
       "revision": 1,
@@ -61,6 +61,14 @@
       "title": "Forecast Accuracy",
       "bytes": 409411,
       "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
+      "caption": "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15.",
+      "title": "Forecast Accuracy",
+      "bytes": 409411,
+      "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7"
     }
   ],
   "style": "long_lens_industry",
@@ -76,9 +84,9 @@
   "rationale": "The article contrasts mathematical forecast accuracy with the physical reality of buffer stock needed for massive storms. A long-lens compressed view of a sprawling freight yard perfectly captures the scale of physical mitigation.",
   "cue": "held space and extra goods",
   "subject": "vast intermodal shipping container yard",
-  "alt_text": "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze.",
-  "caption": "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15.",
-  "title": "Forecast Accuracy",
+  "alt_text": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o. Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into",
+  "caption": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o: An AI forecast beat the old plan 15 of 15 times, but it cannot model a record El Ni\u00f1o.",
+  "title": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
@@ -88,8 +96,8 @@
   "local_path": "context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 409411,
-  "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7",
+  "bytes": 389850,
+  "sha256": "sha256:a5b619d303be52bae8e5370ccd1346d37ae2f1e8cfad24565277f0b495716e7b",
   "source_hash": "sha256:7a408cda1950150ddeca10547a9ae500",
   "source_chars": 3855,
   "task_id": "b807dc63596b0398c5f79660466dbe3b",
@@ -113,38 +121,39 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 409411,
-    "quality": 88,
-    "sha256": "sha256:15f3a9738b713e19c18cb001919e5ad84b2bcf399f2d7053700309a4284746b7",
+    "bytes": 389850,
+    "quality": 84,
+    "sha256": "sha256:a5b619d303be52bae8e5370ccd1346d37ae2f1e8cfad24565277f0b495716e7b",
     "filename_rule": "<slug>-featured.jpg"
   },
   "overlay": {
-    "kicker": "",
-    "title": "FORECAST ACCURACY",
-    "hook": "A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15",
-    "anchor": "top-right",
+    "kicker": "AI DEMAND SENSING // EL NI\u00d1O RISK",
+    "title": "AI DEMAND SENSING CUTS ERROR BUT NOT EL NI\u00d1O",
+    "hook": "An AI forecast beat the old plan 15 of 15 times, but it cannot model a record El Ni\u00f1o",
+    "anchor": "bottom-right",
     "light": true,
     "scrim": 120,
-    "contrast": 5.72,
-    "target": 5.5,
-    "clutter": 0.293,
+    "contrast": 6.36,
+    "target": 4.5,
+    "clutter": 0.228,
     "region_rgb": [
-      95,
-      105,
-      112
+      53,
+      58,
+      64
     ],
     "binding_rgb": [
-      132,
-      145,
-      153
+      78,
+      87,
+      94
     ],
     "title_lines": [
-      "FORECAST",
-      "ACCURACY"
+      "AI DEMAND SENSING",
+      "CUTS ERROR BUT",
+      "NOT EL NI\u00d1O"
     ],
-    "subject": 0.19,
-    "ink_subject": 0.061,
-    "spike": 0.264,
+    "subject": 0.166,
+    "ink_subject": 0.031,
+    "spike": 0.203,
     "generated_at": "2026-10-08T22:37:09+00:00"
   }
 }

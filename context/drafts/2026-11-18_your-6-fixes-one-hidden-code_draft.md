@@ -43,7 +43,7 @@ What I find hard to square is the shape of that split. Money you spend hardening
 
 The reporting is still growing, which shows how much weight the state puts on the reason itself. TDI has proposed extending it to business property from October, with the same area summaries [3]. One field on that form already asks whether a decision rested on "aerial imagery versus other types of third-party information" [3]. That is the photograph of your roof, scored by a model you never see.
 
-Agents who handle these letters read them against the state's list. The list is the only public statement of what a lawful reason looks like. The letter itself is meant to be a plain description rather than a code, which is the line the state's rules draw [3].
+What I am watching is whether the business-property form keeps the same coding split. Agents who handle these letters read them against the state's list. The list is the only public statement of what a lawful reason looks like. The letter itself is meant to be a plain description rather than a code, which is the line the state's rules draw [3].
 
 The wider market runs the same way. In 2024 insurers ended more than two million home policies at renewal, about 61% more than the year before [5]. The West carried the highest rate at 25.1 per 1,000 policies, according to data from the National Association of Insurance Commissioners (NAIC) reported this month [5].
 
@@ -52,7 +52,7 @@ The wider market runs the same way. In 2024 insurers ended more than two million
 
 The file counts reasons, not homes. One policy can carry several reasons. The state says outright that the reasons report "isn't the total number of declinations, nonrenewals, and cancellations" [1]. So those rows measure paperwork rather than families.
 
-A second limit decides whether you can look up your own street. The public file gives reasons without the company that gave them, and its short letter codes have no published key that names them [2]. The words above come from the state's own page for homeowners, not from the data rows.
+My reading of the second limit is that it decides whether you can look up your own street. The public file gives reasons without the company that gave them, and its short letter codes have no published key that names them [2]. The words above come from the state's own page for homeowners, not from the data rows.
 
 That is why the letter matters more than the lookup page. It is the only document that names one reason for one address, and the law gives you the right to have it in writing [1]. Keep it, and keep your own note of the fixes it lists. A [refused renewal is a clock you can count](/your-nonrenewal-isnt-final-count-120-days/) as well as a decision.
 

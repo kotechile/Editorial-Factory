@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T13:23:03Z",
+  "updated_at": "2026-11-18T17:40:45Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7048,7 +7048,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/19-minutes-your-spots-real-bill/"
     },
     {
       "slug": "2026-11-17_your-1320-gallon-blind-spot",
@@ -7066,7 +7067,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-1320-gallon-blind-spot/"
     },
     {
       "slug": "2026-11-17_your-8-gib-node-sells-6-1",
@@ -7084,7 +7086,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-8-gib-node-sells-6-1/"
     },
     {
       "slug": "2026-11-17_your-80-psi-trap",
@@ -7102,7 +7105,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-80-psi-trap/"
     },
     {
       "slug": "2026-11-17_your-approval-gate-kills-20",
@@ -7196,7 +7200,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-17",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-judges-80-overpays-39-points/"
     },
     {
       "slug": "2026-11-17_your-warning-leaves-701-wrong",
@@ -7253,7 +7258,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-100x-saving-bought-the-tail/"
     },
     {
       "slug": "2026-11-18_your-6-fixes-one-hidden-code",
@@ -7271,7 +7277,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-6-fixes-one-hidden-code/"
     },
     {
       "slug": "2026-11-18_your-agent-checks-permission-not-ownership",
@@ -7288,6 +7295,25 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-18",
+      "public": true,
+      "url": "https://aichieve.net/your-agent-checks-permission-not-ownership/"
+    },
+    {
+      "slug": "2026-11-18_your-p99-is-a-product",
+      "title": "Your Timeout Is the Wrong Knob: 1 Turn in 9",
+      "vertical": "agentic_resilience_failure",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the multiplication happens",
+        "By the numbers",
+        "What the operators actually configure",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
       "date": "2026-11-18",
       "public": false
     },
@@ -7308,7 +7334,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-transcript-says-done/"
     },
     {
       "slug": "2026-11-18_your-vendor-exit-costs-373",
@@ -7326,7 +7353,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-vendor-exit-costs-373/"
     }
   ]
 }

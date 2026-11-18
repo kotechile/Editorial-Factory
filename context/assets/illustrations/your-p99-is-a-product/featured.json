@@ -1,0 +1,113 @@
+{
+  "slug": "your-p99-is-a-product",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Optical beam-splitter prism splitting one request into two duplicate paths, one dead-ending at a timeout absorber beside a rotary knob.",
+      "caption": "A single request splits at a beam-splitter prism in a data-hall routing bay, one duplicate racing ahead while the timeout path dead-ends at a rotary knob.",
+      "title": "Duplicate Request Beam Splitter in Data Hall Routing Bay",
+      "bytes": 218287,
+      "sha256": "sha256:e8a367e42d72aacdc2a71624866c1036"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression in a dark data hall, a single optical fiber enters a polished glass beam-splitter prism mounted on a brushed-steel routing tray; the prism splits the beam into two duplicate glass fibers, one continuing into stacked rack-row depth while the other dead-ends at a matte black absorber beside a rotary timeout knob. Hard cool key light from the left rakes across machined edges, palette graphite, cobalt, safety yellow, deep shadow, fine film grain, no people, no text, no logos, extreme asymmetry with the split prism off-centre left and the dead-end absorber on the right third.",
+  "negative_prompt": "garbled text, random lettering, watermarks, signatures, logos, UI elements",
+  "rationale": "The story is a systemic latency process across a data-hall fabric, not a single component. long_lens_industry compresses the optical routing bay into layered depth, letting one split path read as the duplicate-request hedge while the dead-end shows the timeout as a wall.",
+  "cue": "Your Timeout Is the Wrong Knob",
+  "subject": "an optical beam-splitter prism routing one request into duplicate paths, one path dead-ending at a timeout absorber next to a rotary knob on a brushed-steel tray in a data-hall routing bay",
+  "core_thesis": "A turn's p99 is the product of its steps' tails, not the maximum \u2014 at a 1% slow-call rate across twelve steps, one turn in nine runs slow, and only a duplicate request sent in flight can shorten it, so the latency policy is a per-tool classification decision.",
+  "core_conflict": "timeout as a fail-fast bound versus duplicate-request hedging as the only latency-shortening control, gated by per-tool safety classification.",
+  "composition": "extreme asymmetry with the split prism off-centre left, telephoto compression stacking the empty live-fiber path into distance, and the dead-end absorber on the right third",
+  "alt_text": "Your Timeout Is The Wrong Knob. Optical beam-splitter prism splitting one request into two duplicate paths, one dead-ending at a timeout",
+  "caption": "Your Timeout Is The Wrong Knob: At a 1% slow-call rate a twelve-step agent turn runs slow 1 time in 9. A timeout cannot.",
+  "title": "Your Timeout Is The Wrong Knob",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "deepseek-v4-pro",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-p99-is-a-product/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 272298,
+  "sha256": "sha256:e732f112038635f6ea8cc80c2f59c9356b7440683d51c037f1b5720e8576907b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 272298,
+    "quality": 88,
+    "sha256": "sha256:e732f112038635f6ea8cc80c2f59c9356b7440683d51c037f1b5720e8576907b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d5f58dbb1bb46260e9a9fff7362c1fb64f26e10b4e9c46173a466346453fcf2c",
+  "render_phash": "e319d319c619c219d21bd393671f26e666e42f162f9b7393f393b3936693502f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A clear wedge-shaped optical prism block clamped to a metal rail on the left throws a light beam that splits into two thin fiber strands running right into a black cylindrical housing mounted beside a rotary knob, with out-of-focus server racks behind.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.72,
+    "reason": "The split prism literally depicts one request being duplicated into two in-flight copies \u2014 the article's hedging mechanism \u2014 with the knob and dead-end housing standing in for the timeout control it says cannot shorten the turn, all set in a data-hall bay."
+  },
+  "source_hash": "sha256:035c3f3f3cba968ddd50224798791cdd",
+  "source_chars": 5281,
+  "task_id": "628eb6ffcb62e7f6cbc29c6bbc82b99a",
+  "credits": 5.0,
+  "cost_ms": 15,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/628eb6ffcb62e7f6cbc29c6bbc82b99a_1795023561537.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression in a dark data hall, a single optical fiber enters a polished glass beam-splitter prism mounted on a brushed-steel routing tray; the prism splits the beam into two duplicate glass fibers, one continuing into stacked rack-row depth while the other dead-ends at a matte black absorber beside a rotary timeout knob. Hard cool key light from the left rakes across machined edges, palette graphite, cobalt, safety yellow, deep shadow, fine film grain, no people, no text, no logos, extreme asymmetry with the split prism off-centre left and the dead-end absorber on the right third.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-18T17:39:27+00:00",
+  "overlay": {
+    "kicker": "",
+    "title": "YOUR TIMEOUT IS THE WRONG KNOB",
+    "hook": "At a 1% slow-call rate a twelve-step agent turn runs slow 1 time in 9. A timeout cannot",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 13.82,
+    "target": 4.5,
+    "clutter": 0.153,
+    "region_rgb": [
+      22,
+      24,
+      25
+    ],
+    "binding_rgb": [
+      30,
+      34,
+      37
+    ],
+    "title_lines": [
+      "YOUR TIMEOUT IS",
+      "THE WRONG",
+      "KNOB"
+    ],
+    "subject": 0.146,
+    "ink_subject": 0.023,
+    "spike": 0.142,
+    "generated_at": "2026-11-18T17:39:27+00:00"
+  }
+}

@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/forecast-accuracy-is-not-shock-protection/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into heavy atmospheric haze."
-image_caption: "Forecast Accuracy: A new test shows an Artificial Intelligence (AI) forecast beat the old sales plan in 15."
+image_alt: "AI Demand Sensing Cuts Error But Not El Niño. Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into"
+image_caption: "AI Demand Sensing Cuts Error But Not El Niño: An AI forecast beat the old plan 15 of 15 times, but it cannot model a record El Niño."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-6-fixes-one-hidden-code/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Your 6 Fixes, One Hidden Code. Insurance notice and public file pages on a garage workbench: one line absorbs six fixable flaws, roof type"
-image_caption: "Your 6 Fixes, One Hidden Code: Texas now publishes, area by area, why insurers refused to keep a home policy. Each."
+image_alt: "Cut-paper diptych on a workbench: one page's ochre band holds six small cutouts, the other a single roof shape."
+image_caption: "Six fixable flaws share one band on the public file; a roof-type refusal gets a band of its own."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

@@ -464,6 +464,14 @@
   "note": "sumer/*`, `uphelp.org`, `njm.com`, `dfs.ny.gov`, `insurance.wa.gov`, `content.naic.org`, `floridabuilding.org`, `miamidade.gov`, and every `insurance.ca.gov` guide path (they fetch a ~7.7 KB"
  },
  {
+  "host": "content.naic.org",
+  "url": "https://content.naic.org/resource-center/mcas-homeowners-insurance-report",
+  "verdict": "unreachable",
+  "as_of": "2026-11-18",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "NAIC report pages sit behind a Cloudflare interstitial for the desk's fetcher: the MCAS homeowners report PDF returned 5.9 KB of 'Just a moment...' and the resource-center page 5.6 KB, so neither the report nor its figur"
+ },
+ {
   "host": "corelogic.com",
   "url": "",
   "verdict": "unreachable",

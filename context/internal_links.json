@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T14:22:41+00:00",
+  "generated_at": "2026-11-18T14:21:27+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -3174,6 +3174,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-6-fixes-one-hidden-code",
+      "title": "Your 6 Fixes, One Hidden Code",
+      "url": "https://wellroost.com/your-6-fixes-one-hidden-code/",
+      "path": "/your-6-fixes-one-hidden-code/",
+      "sites_live": {
+        "wellroost.com": "/your-6-fixes-one-hidden-code/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "Texas now publishes, area by area, why insurers refused to keep a home policy. Each reason arrives as a code. The state's own written rules say who those\u2026",
+      "modified": "2026-11-18T13:25:38",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-16-53-tester-blind-spot",
       "title": "Your $16.53 Tester's Blind Spot",
       "url": "https://wellroost.com/your-16-53-tester-blind-spot/",
@@ -3282,6 +3305,29 @@
       ],
       "excerpt": "Your renewal notice arrives with $420,000 of Coverage A \u2014 the dwelling limit \u2014 on a house that would cost $600,000 to rebuild this year.",
       "modified": "2026-11-04T20:18:03",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-80-psi-trap",
+      "title": "Your 80 PSI Trap: A Valve and a Tank",
+      "url": "https://wellroost.com/your-80-psi-trap/",
+      "path": "/your-80-psi-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-80-psi-trap/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Above 80 psi static, the plumbing code requires a pressure-reducing valve, and that valve closes the system, which makes an expansion tank on the water heater\u2026",
+      "modified": "2026-11-17T19:16:31",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4340,6 +4386,29 @@
       ],
       "excerpt": "On 2 November, Qualcomm said its first high bandwidth compute (HBC) chip had run a full memory read and write path in the lab.",
       "modified": "2026-11-04T11:52:46",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "19-minutes-your-spots-real-bill",
+      "title": "19 Minutes: Your Spot Discount's Real Bill",
+      "url": "https://aichieve.net/19-minutes-your-spots-real-bill/",
+      "path": "/19-minutes-your-spots-real-bill/",
+      "sites_live": {
+        "aichieve.net": "/19-minutes-your-spots-real-bill/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "A spot card hour costs up to 91% less and can vanish on a 30-second warning. Price the hours the job loses, not the hours it rents: save every 19 minutes.",
+      "modified": "2026-11-17T19:52:47",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7617,6 +7686,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-8-gib-node-sells-6-1",
+      "title": "Your 8 GiB Node Sells 6.1: The Hidden Reserve",
+      "url": "https://aichieve.net/your-8-gib-node-sells-6-1/",
+      "path": "/your-8-gib-node-sells-6-1/",
+      "sites_live": {
+        "aichieve.net": "/your-8-gib-node-sells-6-1/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "A node's spec sheet overstates what a team can schedule: GKE reserves a quarter of a small node's memory, AKS an eighth, and the kernel throttles the rest.",
+      "modified": "2026-11-17T18:46:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-9-day-notice-9-day-queue",
       "title": "Your 9-Day Notice, 9-Day Queue",
       "url": "https://aichieve.net/your-9-day-notice-9-day-queue/",
@@ -8169,6 +8261,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-100x-saving-bought-the-tail",
+      "title": "Your 100x Saving: A Hidden Cap",
+      "url": "https://aichieve.net/your-100x-saving-bought-the-tail/",
+      "path": "/your-100x-saving-bought-the-tail/",
+      "sites_live": {
+        "aichieve.net": "/your-100x-saving-bought-the-tail/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Mapbox's price list says a single map load carries unlimited requests for map tiles. That is a fixed price for work nobody counted, and a self-hoster stops\u2026",
+      "modified": "2026-11-18T12:13:53",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-128gb-laptop-2319-memory-bill",
       "title": "Your 128GB Laptop: A $2,319 Memory Bill",
       "url": "https://aichieve.net/your-128gb-laptop-2319-memory-bill/",
@@ -8346,6 +8461,52 @@
       ],
       "excerpt": "Agent fabrics break their shared spend caps from inside the rules, because each agent only checks the limit it was handed: the study logged cap breaches in\u2026",
       "modified": "2026-10-31T04:48:10",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-1320-gallon-blind-spot",
+      "title": "Your 1,320-Gallon Blind Spot",
+      "url": "https://aichieve.net/your-1320-gallon-blind-spot/",
+      "path": "/your-1320-gallon-blind-spot/",
+      "sites_live": {
+        "aichieve.net": "/your-1320-gallon-blind-spot/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your backup fuel has a blind spot, and it is the drums. Twenty-four 55-gallon drums come to 1,320 gallons, the exact ceiling of the federal spill exemption\u2026",
+      "modified": "2026-11-17T18:16:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-agent-checks-permission-not-ownership",
+      "title": "Your Agent Checks Permission, Not Ownership: 100%",
+      "url": "https://aichieve.net/your-agent-checks-permission-not-ownership/",
+      "path": "/your-agent-checks-permission-not-ownership/",
+      "sites_live": {
+        "aichieve.net": "/your-agent-checks-permission-not-ownership/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "An agent repeats a call it made last week, the field has been renamed, and the tool stores an empty meeting. The same week, an impostor tool won every trial on\u2026",
+      "modified": "2026-11-18T11:15:19",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9388,6 +9549,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-judges-80-overpays-39-points",
+      "title": "Your Judge's 80% Overpays 39 Points",
+      "url": "https://aichieve.net/your-judges-80-overpays-39-points/",
+      "path": "/your-judges-80-overpays-39-points/",
+      "sites_live": {
+        "aichieve.net": "/your-judges-80-overpays-39-points/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Across 21 judge models and 541,000 judgments, raw match ran about 39 points above a luck-adjusted score. Why a release gate should print kappa, not match.",
+      "modified": "2026-11-17T17:52:19",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-label-bills-2500-series",
       "title": "Your Label's Bill: 2,500 Series",
       "url": "https://aichieve.net/your-label-bills-2500-series/",
@@ -10239,6 +10423,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-transcript-says-done",
+      "title": "Your Transcript Says Done: Success Fails at 28%",
+      "url": "https://aichieve.net/your-transcript-says-done/",
+      "path": "/your-transcript-says-done/",
+      "sites_live": {
+        "aichieve.net": "/your-transcript-says-done/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A success receipt over a write that never landed drops an agent's whole-task success to 28%. A truthful note beside the same error lifts recovery to 66%.",
+      "modified": "2026-11-18T11:02:16",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-truck-mile-costs-2-2-driver-minutes",
       "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
       "url": "https://aichieve.net/your-truck-mile-costs-2-2-driver-minutes/",
@@ -10278,6 +10485,29 @@
       ],
       "excerpt": "Replaying a failed agent task throws away 11.41 finished acts per run; unwinding to the first conflict costs 0.78, 14.6 times less at equal answers.",
       "modified": "2026-11-04T17:48:29",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-vendor-exit-costs-373",
+      "title": "Your Vendor Exit Costs $373",
+      "url": "https://aichieve.net/your-vendor-exit-costs-373/",
+      "path": "/your-vendor-exit-costs-373/",
+      "sites_live": {
+        "aichieve.net": "/your-vendor-exit-costs-373/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "On 2 November the automation trade group A3 published a $373 document on how robots from different makers share one floor.",
+      "modified": "2026-11-18T13:00:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10352,6 +10582,118 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1772,
+      "slug": "your-vendor-exit-costs-373",
+      "title": "Your Vendor Exit Costs $373",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T13:00:33",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1769,
+      "slug": "your-100x-saving-bought-the-tail",
+      "title": "Your 100x Saving: A Hidden Cap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T12:13:53",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1765,
+      "slug": "your-agent-checks-permission-not-ownership",
+      "title": "Your Agent Checks Permission, Not Ownership: 100%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T11:15:19",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1761,
+      "slug": "your-transcript-says-done",
+      "title": "Your Transcript Says Done: Success Fails at 28%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T11:02:16",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1758,
+      "slug": "19-minutes-your-spots-real-bill",
+      "title": "19 Minutes: Your Spot Discount&#8217;s Real Bill",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T19:52:47",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1754,
+      "slug": "your-8-gib-node-sells-6-1",
+      "title": "Your 8 GiB Node Sells 6.1: The Hidden Reserve",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T18:46:05",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1752,
+      "slug": "your-1320-gallon-blind-spot",
+      "title": "Your 1,320-Gallon Blind Spot",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T18:16:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1748,
+      "slug": "your-judges-80-overpays-39-points",
+      "title": "Your Judge&#8217;s 80% Overpays 39 Points",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-17T17:52:19",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -11431,48 +11773,6 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1359,
-      "slug": "your-machine-duty-180-days-still-unpriced",
-      "title": "Your Machine Duty: 180 Days, Still Unpriced",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T06:44:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1325,
-      "slug": "the-agentic-rag-trap",
-      "title": "The Agentic RAG trap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:39:25",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1316,
-      "slug": "your-truck-mile-costs-2-2-driver-minutes",
-      "title": "Your Truck Mile Costs 2.2 Driver-Minutes",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:34:59",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
       "site": "wellroost.com",
       "kind": "article",
       "id": 50,
@@ -11693,76 +11993,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-11-05T12:59:52",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1363,
-      "slug": "your-standby-bill-hides-62-watts",
-      "title": "Your Standby Bill Hides 62 Watts",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T02:32:49",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1356,
-      "slug": "two-builds-one-vault",
-      "title": "2 Builds, 1 Vault: The License Trap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T06:23:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1319,
-      "slug": "your-ink-plan-bills-20-cents",
-      "title": "Your Overage Page Costs $0.20",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:34:59",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1312,
-      "slug": "your-3-year-rung-costs-15-9",
-      "title": "Your 3-Year Rung Costs 15.9%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:35:00",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1310,
-      "slug": "your-stock-gift-26180-never-taxed",
-      "title": "Your Stock Gift: $26,180 You Never Pay",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T04:35:00",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     }
