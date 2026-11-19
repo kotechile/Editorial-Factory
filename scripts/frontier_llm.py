@@ -37,10 +37,12 @@ import time
 import urllib.error
 import urllib.request
 
-TEXT_MODEL = "z-ai/glm-5.3"
-FLASH_MODEL = "z-ai/glm-5.3-flash"
+TEXT_MODEL = os.environ.get("FRONTIER_MODEL") or "z-ai/glm-5.3"
+FLASH_MODEL = os.environ.get("FRONTIER_FLASH_MODEL") or "z-ai/glm-5.3-flash"
 VISION_MODEL = FLASH_MODEL
-BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+# One env override for the whole transport (a provider experiment must not need a code edit);
+# unset = OpenRouter's chat-completions route, which is what the pins are written against.
+BASE_URL = os.environ.get("FRONTIER_BASE_URL") or "https://openrouter.ai/api/v1/chat/completions"
 MAX_TOKENS = 32000   # GLM reasons before it answers and bills that inside max_tokens
 VISION_MAX_TOKENS = 1024
 
