@@ -9,11 +9,11 @@ archetype: evergreen
 evergreen: true
 meta_title: "Options Trap: Your 26% AMT Bill"
 meta_description: "Three months after a job ends, an incentive stock option loses its tax status — the alternative minimum tax on the exercise spread can outweigh the strike."
-image_path: "context/assets/illustrations/post-termination-option-clock-tax/featured.png"
-image_style: "paper_collage"
-image_model: "nanobanana"
-image_alt: "The 90-Day Option Tax Trap. A cut-paper hourglass silhouette spilling heavy textured weights onto a layered dossier in a mini"
-image_caption: "The 90-Day Option Tax Trap: The hidden tax penalty of exercising options post-exit."
+image_path: "context/assets/illustrations/post-termination-option-clock-tax/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "Your 26% AMT Bill On Exercised Isos. IRS Form 6251 tax worksheet and Form 3921 exercise notice on a warm oak desk."
+image_caption: "Your 26% AMT Bill On Exercised Isos: Three months after a job ends, an ISO spread can trigger a 26% AMT bill."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

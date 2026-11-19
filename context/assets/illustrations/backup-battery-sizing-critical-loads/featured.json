@@ -1,6 +1,6 @@
 {
   "slug": "backup-battery-sizing-critical-loads",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "EV-V2H-Critical-Loads-Backup",
       "bytes": 323637,
       "sha256": "sha256:c7a187e7a10e5d45003ad14a7e804834"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Sizing Your Home Battery. An electric vehicle powering specific glowing windows of a dark house via a heavy-duty charging cab",
+      "caption": "Sizing Your Home Battery: Matching backup capacity to critical outage loads.",
+      "title": "Sizing Your Home Battery",
+      "bytes": 183825,
+      "sha256": "sha256:4f3f25217bcea8ab3e9fc8a6c9f9ed23ee35176637cba75a0f90db813ebe0dae"
     }
   ],
   "style": "cinematic_still",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/backup-battery-sizing-critical-loads/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 183825,
-  "sha256": "sha256:4f3f25217bcea8ab3e9fc8a6c9f9ed23ee35176637cba75a0f90db813ebe0dae",
+  "bytes": 368516,
+  "sha256": "sha256:7ec58f11e2597ef0dae228f8f6d5e85bcb52c50ce749dfc29232a6ff9e3d2c36",
   "source_hash": "sha256:4e6cd6ccbd37bae762b86c3f168e65a2",
   "source_chars": 3912,
   "task_id": "a1f0f2a2130c02132d148b932deb5acc",
@@ -62,24 +70,40 @@
     "hook": "Matching backup capacity to critical outage loads",
     "anchor": "top-right",
     "light": true,
-    "scrim": 30,
-    "contrast": 4.77,
+    "scrim": 120,
+    "contrast": 4.83,
     "target": 4.5,
-    "clutter": 0.097,
+    "clutter": 0.117,
     "region_rgb": [
-      31,
-      110,
-      139
+      30,
+      107,
+      136
     ],
     "binding_rgb": [
-      37,
-      128,
-      157
+      36,
+      127,
+      156
     ],
     "title_lines": [
       "SIZING YOUR",
       "HOME BATTERY"
     ],
+    "subject": 0.144,
+    "ink_subject": 0.131,
+    "spike": 0.164,
     "generated_at": "2026-10-09T18:08:55+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 368516,
+    "quality": 88,
+    "sha256": "sha256:7ec58f11e2597ef0dae228f8f6d5e85bcb52c50ce749dfc29232a6ff9e3d2c36",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

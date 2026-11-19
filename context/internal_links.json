@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:21:27+00:00",
+  "generated_at": "2026-11-19T14:24:43+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -3144,6 +3144,29 @@
       ],
       "excerpt": "A robot mower's one-acre claim shrinks fast on a real lawn, because the makers build that number on a best-case pattern and a full day of running.",
       "modified": "2026-10-31T04:49:03",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-3rd-claim-counts-storm-doesnt",
+      "title": "Your 3rd Claim Counts, Storm Doesn't",
+      "url": "https://wellroost.com/your-3rd-claim-counts-storm-doesnt/",
+      "path": "/your-3rd-claim-counts-storm-doesnt/",
+      "sites_live": {
+        "wellroost.com": "/your-3rd-claim-counts-storm-doesnt/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "A carrier counts nonweather claims, not storm losses, and warns you in writing after the second. The water claim is the one that can end the policy at renewal.",
+      "modified": "2026-11-18T20:13:43",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9204,6 +9227,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-error-text-breaks-the-repair",
+      "title": "Your Error Text Breaks the Repair: 45% vs 84%",
+      "url": "https://aichieve.net/your-error-text-breaks-the-repair/",
+      "path": "/your-error-text-breaks-the-repair/",
+      "sites_live": {
+        "aichieve.net": "/your-error-text-breaks-the-repair/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your error text breaks the repair it was written to prompt. Of 3,001 error messages found in 150 widely used servers speaking the Model Context Protocol\u2026",
+      "modified": "2026-11-18T18:18:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-eta-misses-27-hours",
       "title": "Why Your ETA Misses 27 Hours",
       "url": "https://aichieve.net/your-eta-misses-27-hours/",
@@ -9266,6 +9312,29 @@
       ],
       "excerpt": "Storage space has split into two prices, and the $3.79-a-pallet gap now sets the fill rate \u2014 the share of order lines a site can ship complete.",
       "modified": "2026-11-09T13:54:59",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-fleets-8-3-year-bill",
+      "title": "Your Fleet's 8.3-Year Bill: The Wave Nobody Reserves For",
+      "url": "https://aichieve.net/your-fleets-8-3-year-bill/",
+      "path": "/your-fleets-8-3-year-bill/",
+      "sites_live": {
+        "aichieve.net": "/your-fleets-8-3-year-bill/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "The robot fleet your board approved is the cheaper half of the purchase. A site that buys its machines in one year gets them back as one renewal bill around\u2026",
+      "modified": "2026-11-18T20:03:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9657,6 +9726,29 @@
       ],
       "excerpt": "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute.",
       "modified": "2026-10-31T04:48:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-p99-is-a-product",
+      "title": "Your Timeout Is the Wrong Knob: 1 Turn in 9",
+      "url": "https://aichieve.net/your-p99-is-a-product/",
+      "path": "/your-p99-is-a-product/",
+      "sites_live": {
+        "aichieve.net": "/your-p99-is-a-product/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "At a 1% slow-call rate a twelve-step agent turn runs slow 1 time in 9. A timeout cannot shorten it; the only fix is a duplicate request, legal only for reads.",
+      "modified": "2026-11-18T17:40:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10094,6 +10186,29 @@
       ],
       "excerpt": "Your sandbox boot is a tax you pay on every run. Four kinds of sandbox \u2014 plain containers, hosted sandboxes, Kubernetes-run containers and cloud servers\u2026",
       "modified": "2026-10-31T04:48:08",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-secret-bill-six-cents-version",
+      "title": "Your Secret Bill: 6 Cents a Version",
+      "url": "https://aichieve.net/your-secret-bill-six-cents-version/",
+      "path": "/your-secret-bill-six-cents-version/",
+      "sites_live": {
+        "aichieve.net": "/your-secret-bill-six-cents-version/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Amazon Web Services (AWS) bills 40 cents a month for every secret it stores. Google bills six cents a month for every live version of a secret, which is a\u2026",
+      "modified": "2026-11-18T19:23:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10582,6 +10697,62 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1785,
+      "slug": "your-fleets-8-3-year-bill",
+      "title": "Your Fleet&#8217;s 8.3-Year Bill: The Wave Nobody Reserves For",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T20:03:33",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1781,
+      "slug": "your-secret-bill-six-cents-version",
+      "title": "Your Secret Bill: 6 Cents a Version",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T19:23:46",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1779,
+      "slug": "your-error-text-breaks-the-repair",
+      "title": "Your Error Text Breaks the Repair: 45% vs 84%",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T18:18:14",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1776,
+      "slug": "your-p99-is-a-product",
+      "title": "Your Timeout Is the Wrong Knob: 1 Turn in 9",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-18T17:40:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -11713,62 +11884,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-11-02T13:29:06",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1378,
-      "slug": "your-gateway-was-malicious-for-104-minutes",
-      "title": "Your Gateway&#8217;s 104-Minute Trap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-02T11:21:24",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1376,
-      "slug": "your-trace-fails-as-an-alarm",
-      "title": "Your Trace Fails as an Alarm: 26.25% Profile",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-02T11:09:14",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1370,
-      "slug": "stop-blaming-demand-planning-for-stockouts",
-      "title": "Stop Blaming Demand Planning for Stockouts",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-06T01:28:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1365,
-      "slug": "your-zone-deferral-is-worth-115-percent",
-      "title": "Your Zone Saves 1.15%: The Hidden Cost",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T18:17:00",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

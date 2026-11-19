@@ -1,6 +1,6 @@
 {
   "slug": "diesel-620-electric-freight-certificate-gap",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -19,6 +19,14 @@
       "title": "Electric Freight Cost Gap Depot",
       "bytes": 365734,
       "sha256": "sha256:6c3964a617701cd9750c82d446a62e2e"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The Electric Freight Gap. Unbranded heavy electric semi-truck connected to an industrial charging station at dusk.",
+      "caption": "The Electric Freight Gap: Why fuel savings alone cannot fund the electric fleet.",
+      "title": "The Electric Freight Gap",
+      "bytes": 214053,
+      "sha256": "sha256:dd34b5e75dd75bca30aad80514a4721836344f93f21f56cc534ff0e4c9958738"
     }
   ],
   "style": "long_lens_industry",
@@ -49,8 +57,8 @@
   "local_path": "context/assets/illustrations/diesel-620-electric-freight-certificate-gap/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 214053,
-  "sha256": "sha256:dd34b5e75dd75bca30aad80514a4721836344f93f21f56cc534ff0e4c9958738",
+  "bytes": 394515,
+  "sha256": "sha256:04b3f32430b1743cdd33b81e464c2b234f96cc952de7b661851ea05c636dd761",
   "source_hash": "sha256:bd739190877943d4b219e04491603a21",
   "source_chars": 3973,
   "task_id": "1e1185549a97c939a7a1c82354d66777",
@@ -72,24 +80,40 @@
     "hook": "Why fuel savings alone cannot fund the electric fleet",
     "anchor": "top-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 4.65,
+    "scrim": 120,
+    "contrast": 4.68,
     "target": 4.5,
-    "clutter": 0.094,
+    "clutter": 0.095,
     "region_rgb": [
-      27,
-      94,
-      145
+      29,
+      93,
+      143
     ],
     "binding_rgb": [
-      32,
-      111,
-      167
+      41,
+      110,
+      165
     ],
     "title_lines": [
       "THE ELECTRIC",
       "FREIGHT GAP"
     ],
+    "subject": 0.032,
+    "ink_subject": 0.005,
+    "spike": 0.034,
     "generated_at": "2026-10-09T22:08:58+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 394515,
+    "quality": 84,
+    "sha256": "sha256:04b3f32430b1743cdd33b81e464c2b234f96cc952de7b661851ea05c636dd761",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

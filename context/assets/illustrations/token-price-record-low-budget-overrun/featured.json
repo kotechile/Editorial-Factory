@@ -1,7 +1,16 @@
 {
   "slug": "token-price-record-low-budget-overrun",
-  "revision": 1,
-  "history": [],
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Mechanical limit switch and physical governor latch locking down a modular server bay cover.",
+      "caption": "As token prices fall, controlling enterprise AI bills requires a hard ceiling tied to a resolved work-unit.",
+      "title": "AI-Cost-Governor-Assembly",
+      "bytes": 1511471,
+      "sha256": "sha256:f494804017d52ee9f3e79d95eb69fd38"
+    }
+  ],
   "style": "component_assembly",
   "style_label": "Modular component assembly",
   "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
@@ -15,20 +24,20 @@
   "rationale": "The story is about a single structural shift\u2014the shift from raw token metering to a hard unit cap. A modular component assembly perfectly visualizes a fixed ceiling mechanism in an abstract, professional B2B context.",
   "cue": "The hard ceiling",
   "subject": "a mechanical limit switch and fixed governor latching over a modular data bay",
-  "alt_text": "Mechanical limit switch and physical governor latch locking down a modular server bay cover.",
-  "caption": "As token prices fall, controlling enterprise AI bills requires a hard ceiling tied to a resolved work-unit.",
-  "title": "AI-Cost-Governor-Assembly",
+  "alt_text": "Token Prices Fall, Enterprise AI Bills Rise. Mechanical limit switch and physical governor latch locking down a modular server bay cover.",
+  "caption": "Token Prices Fall, Enterprise AI Bills Rise: Vendors reprice on speed and access, so the CFO's bill keeps climbing.",
+  "title": "Token Prices Fall, Enterprise AI Bills Rise",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/token-price-record-low-budget-overrun/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1511471,
-  "sha256": "sha256:f494804017d52ee9f3e79d95eb69fd38",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/token-price-record-low-budget-overrun/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 281042,
+  "sha256": "sha256:8c40134cf0a81d6489398fdb3452b7b9a2192d138ac3c97a9ace3080a57306ff",
   "source_hash": "sha256:584ceae074e21acbc884b5507c55766a",
   "source_chars": 4666,
   "task_id": "c6256a550be62474be0f7c5159dcbefb",
@@ -45,5 +54,48 @@
       "output_format": "png"
     }
   },
-  "generated_at": "2026-10-08T11:07:14+00:00"
+  "generated_at": "2026-10-08T11:07:14+00:00",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 281042,
+    "quality": 88,
+    "sha256": "sha256:8c40134cf0a81d6489398fdb3452b7b9a2192d138ac3c97a9ace3080a57306ff",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "overlay": {
+    "kicker": "ENTERPRISE AI FINOPS // TOKEN PRICE DECOUPLING",
+    "title": "TOKEN PRICES FALL, ENTERPRISE AI BILLS RISE",
+    "hook": "Vendors reprice on speed and access, so the CFO's bill keeps climbing",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 7.5,
+    "target": 4.5,
+    "clutter": 0.038,
+    "region_rgb": [
+      200,
+      200,
+      200
+    ],
+    "binding_rgb": [
+      196,
+      196,
+      196
+    ],
+    "title_lines": [
+      "TOKEN PRICES",
+      "FALL, ENTERPRISE",
+      "AI BILLS RISE"
+    ],
+    "subject": 0.005,
+    "ink_subject": 0.001,
+    "spike": 0.0,
+    "generated_at": "2026-10-08T11:07:14+00:00"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "last-mile-carbon-number-is-a-rate-table",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "carbon-factor-rate-table-flatlay",
       "bytes": 338731,
       "sha256": "sha256:2ac46312ad1731ca5e7ba7f444d8a5e1"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Last-Mile Carbon Rates. Two official regulatory rate documents layered slightly out of alignment on a plain desk.",
+      "caption": "Last-Mile Carbon Rates: Why your fleet's carbon score is just a published rate.",
+      "title": "Last-Mile Carbon Rates",
+      "bytes": 203753,
+      "sha256": "sha256:93b33a16d1a182ac1af783d878787aa8529036a8e6630d2dc75edde335eff7c3"
     }
   ],
   "style": "document_flatlay",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/last-mile-carbon-number-is-a-rate-table/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 203753,
-  "sha256": "sha256:93b33a16d1a182ac1af783d878787aa8529036a8e6630d2dc75edde335eff7c3",
+  "bytes": 400309,
+  "sha256": "sha256:d18cd653027a17464308f481350f3ed9988be11c2244b9999552df00aef8982e",
   "source_hash": "sha256:cd11f2a6aa61bd3a64c63633964c29ef",
   "source_chars": 4635,
   "task_id": "de2d6222459b0a23b821ef16ce322b61",
@@ -60,26 +68,42 @@
     "kicker": "LAST-MILE EMISSIONS // RATE TABLES",
     "title": "LAST-MILE CARBON RATES",
     "hook": "Why your fleet's carbon score is just a published rate",
-    "anchor": "bottom-right",
+    "anchor": "top-right",
     "light": false,
-    "scrim": 60,
-    "contrast": 4.58,
+    "scrim": 120,
+    "contrast": 4.83,
     "target": 4.5,
-    "clutter": 0.054,
+    "clutter": 0.063,
     "region_rgb": [
-      128,
-      129,
-      131
+      136,
+      136,
+      139
     ],
     "binding_rgb": [
-      120,
-      121,
-      123
+      127,
+      127,
+      129
     ],
     "title_lines": [
       "LAST-MILE",
       "CARBON RATES"
     ],
+    "subject": 0.01,
+    "ink_subject": 0.0,
+    "spike": 0.0,
     "generated_at": "2026-10-09T19:13:14+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 400309,
+    "quality": 84,
+    "sha256": "sha256:d18cd653027a17464308f481350f3ed9988be11c2244b9999552df00aef8982e",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }
