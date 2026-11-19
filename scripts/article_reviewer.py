@@ -41,6 +41,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import os
 import pathlib
 import re
 import sys
@@ -52,7 +53,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import humanizer_tools as ht  # noqa: E402  (frontmatter repair, keyword, provider key)
 import review_audit as ra  # noqa: E402
 
-MODEL = ht.MODEL  # frontier_llm.TEXT_MODEL (DeepSeek / OpenRouter / GLM)
+# Per-component override: set REVIEW_MODEL (and optionally REVIEW_PIN, an OpenRouter endpoint
+# tag) in the environment or .env to run ONLY the review stage on a different model — e.g.
+# trying `anthropic/claude-haiku-4.5` while rewrite/art-direction stay on the frontier tier.
+# Unset = the fleet default (frontier_llm.TEXT_MODEL), exactly as before.
+MODEL = os.environ.get("REVIEW_MODEL") or ht.MODEL  # frontier_llm.TEXT_MODEL (OpenRouter / GLM)
 MAX_TOKENS = 32000
 TIMEOUT = 900
 ATTEMPTS = int(os.environ.get("REVIEWER_ATTEMPTS", "1"))  # 1 authoritative pass with frontier LLM
@@ -80,7 +85,8 @@ def call_model(prompt: str, *, model: str = MODEL, timeout: int = TIMEOUT,
     # until the flag was passed). The reasoning pass is unbounded in practice; the visible answer
     # is what this stage needs.
     return frontier_llm.chat(prompt, model=model, max_tokens=max_tokens,
-                             temperature=temperature, timeout=timeout, thinking=False)
+                             temperature=temperature, timeout=timeout, thinking=False,
+                             pin=os.environ.get("REVIEW_PIN") or None)
 
 
 # -------------------------------------------------------------------------------------- the brief

@@ -48,8 +48,8 @@ VISION_MAX_TOKENS = 1024
 
 # Endpoint pins (OpenRouter endpoint tags, as published by /api/v1/models/<id>/endpoints).
 PROVIDER_PINS = {
-    TEXT_MODEL: "decart/fp4",
-    FLASH_MODEL: "relace/fp4",
+    "z-ai/glm-5.3": "decart/fp4",
+    "z-ai/glm-5.3-flash": "relace/fp4",
 }
 # Relace serves the flash model for text but not for image input — OpenRouter narrows the pool to
 # vision-capable endpoints and answers 404 when the pinned one is absent (probed 2026-11-19).
@@ -198,7 +198,7 @@ def _text(payload: dict) -> str:
 
 def chat(prompt: str, *, model: str = TEXT_MODEL, max_tokens: int = MAX_TOKENS,
          temperature: float = 0.7, timeout: int = 240, json_mode: bool = False,
-         thinking: bool | None = None, stage: str = "") -> str:
+         thinking: bool | None = None, stage: str = "", pin: str | None = None) -> str:
     """One completion. `json_mode` asks for a bare JSON object.
 
     `thinking=False` asks for the cheapest reasoning pass the endpoint allows (OpenRouter
@@ -215,11 +215,17 @@ def chat(prompt: str, *, model: str = TEXT_MODEL, max_tokens: int = MAX_TOKENS,
         "temperature": temperature,
         "stream": False,
     }
-    if thinking is False:
+    if thinking is False and "glm" in model:
+        # GLM-5.3 endpoints refuse to disable reasoning entirely; low effort is the floor.
+        # Non-GLM guests (e.g. a REVIEW_MODEL experiment on Anthropic's Haiku) reject the
+        # `reasoning` field, so it is only sent to the family that mandates it.
         body["reasoning"] = {"effort": "low"}
     if json_mode:
         body["response_format"] = {"type": "json_object"}
-    routing = _provider_body(model)
+    # `pin` overrides the model's default endpoint (per-component experiments: article_reviewer
+    # passes REVIEW_PIN). Empty/unknown pins fall through to PROVIDER_PINS, then to none.
+    routing = ({"only": [pin], "allow_fallbacks": False}
+               if pin else _provider_body(model))
     if routing:
         body["provider"] = routing
     payload = _post(body, timeout)
