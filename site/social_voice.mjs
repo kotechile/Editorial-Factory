@@ -34,6 +34,10 @@ export const OBSERVER_CUES = [
     label: 'attention, not instruction',
     re: /\b(?:what I(?:'m| am) watching|what strikes me|the bit that stuck with me|the part I keep circling|the thing I(?:'d| would) want|curious (?:how|what|whether|if))\b/i,
   },
+  {
+    label: 'analytical framing',
+    re: /\b(?:the tension sits|the friction lies|the catch is|the operational reality|the trade-off is|the core question|the gap is|the pattern points|filings show|data indicates?|records reveal|operators report)\b/i,
+  },
 ];
 
 /**

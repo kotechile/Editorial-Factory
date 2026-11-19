@@ -19,10 +19,8 @@ import urllib.request
 import frontier_llm
 
 MODEL = frontier_llm.TEXT_MODEL
-# 3, not 5: the gate feedback loop converges by the second attempt or not at all — the third
-# attempt's marginal yield on the last 20 runs was zero, and every attempt is a whole-document
-# rewrite billed on the pro tier.
-MAX_ATTEMPTS = 3
+# 1 authoritative pass with a frontier LLM (GLM-5.3, Claude, DeepSeek Pro); configurable via env
+MAX_ATTEMPTS = int(os.environ.get("HUMANIZER_ATTEMPTS", "1"))
 # 12k, not 32k: a rewrite returns a ~2,500-token body. The old ceiling existed because reasoning
 # tokens were billed inside it and the reasoning pass ran unbounded (8k, then 20k, then 32k, then an
 # empty `content` with finish_reason=length). The call below disables the reasoning pass, so the

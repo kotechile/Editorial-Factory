@@ -158,7 +158,7 @@ primary_keyword: <target keyword>           # the title must contain it
 secondary_keywords: [<kw>, <kw>]
 kind: news            # news | evergreen | review — what the CMS push TAGS the post with
 persona: <id from context/personas.json>
-one_big_thing: "<single most important takeaway or decision>"
+one_big_thing: "<1-2 plain, punchy sentences under 35 words: what happened, and what it means for the reader>"
 date: YYYY-MM-DD
 slug: <slug>
 # Synthesis articles only (Angle Type: Synthesis — see §3, gated by verify.sh §8):
