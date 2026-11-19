@@ -168,12 +168,16 @@ def endpoint(provider: str | None = None) -> str:
 
 
 def default_text_model(provider: str | None = None) -> str:
-    custom = os.environ.get("FRONTIER_MODEL") or os.environ.get("TEXT_MODEL")
+    custom = (os.environ.get("REVIEW_MODEL")
+              or os.environ.get("EDITORIAL_MODEL")
+              or os.environ.get("OPENROUTER_MODEL")
+              or os.environ.get("FRONTIER_MODEL")
+              or os.environ.get("TEXT_MODEL"))
     if custom:
         return custom
     prov = provider or active_provider()
     if prov == "openrouter":
-        return os.environ.get("OPENROUTER_MODEL") or DEFAULT_OPENROUTER_TEXT
+        return DEFAULT_OPENROUTER_TEXT
     elif prov == "glm":
         return os.environ.get("GLM_MODEL") or DEFAULT_GLM_TEXT
     return DEFAULT_DEEPSEEK_TEXT
