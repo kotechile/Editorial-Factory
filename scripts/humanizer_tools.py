@@ -23,12 +23,12 @@ MODEL = frontier_llm.TEXT_MODEL
 # attempt's marginal yield on the last 20 runs was zero, and every attempt is a whole-document
 # rewrite billed on the pro tier.
 MAX_ATTEMPTS = 3
-# 12k, not 32k: a rewrite returns a ~2,500-token body. The old ceiling existed because reasoning
-# tokens were billed inside it and the reasoning pass ran unbounded (8k, then 20k, then 32k, then an
-# empty `content` with finish_reason=length). The call below disables the reasoning pass, so the
-# ceiling only has to hold the answer plus headroom; `frontier_llm._text` still raises loudly on
-# `finish_reason=length`, which is the signal to raise it back.
-MAX_TOKENS = 12000
+# 24k: a rewrite returns a ~2,500-token body, and since 2026-11-19 the GLM-5.3 endpoints cannot
+# disable their reasoning pass (400 "reasoning is mandatory"), so the ceiling must also hold the
+# thinking that precedes the answer. The call below asks for effort=low; `frontier_llm._text` still
+# raises loudly on `finish_reason=length`, which is the signal to raise this again. A ceiling costs
+# nothing when unused — only emitted tokens are billed.
+MAX_TOKENS = 24000
 MIN_BODY_WORDS = 600  # body word floor: below this the frontier over-compacted; restore depth from the brief
 
 

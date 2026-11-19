@@ -87,16 +87,16 @@ its cron job rather than leaving a half-configured pipeline behind.
 
 ## Agent workforce
 
-| Role | Bot profile | Duty | Model tier |
+| Role | Bot profile | Duty | Model |
 |---|---|---|---|
-| Editor-in-Chief | `editor` | orchestration, calendar, run-log | orchestrator |
-| SEO Scout | `seo_scout` | GSC query detection, DataForSEO enrichment, cannibalization audit | fast |
-| Radar Scout | `radar` | 30-day sweep per vertical | fast |
-| Virality Judge | `judge` | score single signals + cross-pollination pairs; drop < 8 | fast |
-| Fact Verifier | `verifier` | claim extraction + primary-source validation | mid |
-| Story Drafter | `drafter` | structural first pass & SEO schema markup | mid |
-| Claude Stylist & Critic | `stylist` | frontier human-voice rewrite | **Claude (frontier)** |
-| Publisher | `publisher` | persistence + CMS draft | light |
+| Editor-in-Chief | `editor` | orchestration, calendar, run-log | `z-ai/glm-5.3-flash` (relace/fp4) |
+| SEO Scout | `seo_scout` | GSC query detection, DataForSEO enrichment, cannibalization audit | `z-ai/glm-5.3-flash` (relace/fp4) |
+| Radar Scout | `radar` | 30-day sweep per vertical | `z-ai/glm-5.3-flash` (relace/fp4) |
+| Virality Judge | `judge` | score single signals + cross-pollination pairs; drop < 8 | `z-ai/glm-5.3-flash` (relace/fp4) |
+| Fact Verifier | `verifier` | claim extraction + primary-source validation | `z-ai/glm-5.3-flash` (relace/fp4) |
+| Story Drafter | `drafter` | structural first pass & SEO schema markup | `z-ai/glm-5.3-flash` (relace/fp4) |
+| Stylist & Critic | `stylist` | frontier human-voice rewrite | **`z-ai/glm-5.3` (decart/fp4)** |
+| Publisher | `publisher` | persistence + CMS draft | `z-ai/glm-5.3-flash` (relace/fp4) |
 
 ## Repository layout
 
@@ -205,7 +205,8 @@ In contrast, **article-level** social distribution remains removed (as of 2026-1
 ## Environment
 
 ```bash
-ANTHROPIC_API_KEY=        # REQUIRED for the Claude frontier rewrite step
+OPENROUTER_API_KEY=       # REQUIRED — frontier (z-ai/glm-5.3) + cheap tier (z-ai/glm-5.3-flash), endpoint-pinned
+KIE_API_KEY=              # REQUIRED for header-image generation (kie.ai gateway, not Anthropic)
 SUPABASE_URL=             # drafts/signals/published store
 SUPABASE_SERVICE_ROLE_KEY=
 GHOST_ADMIN_API_KEY=      # publisher (optional)
@@ -231,6 +232,8 @@ Verticals live entirely in `context/verticals.json` — each entry carries `id`,
    Keep it out of DeepSeek's peak windows (Mon–Fri 01:00–04:00 and 06:00–10:00 UTC, where tokens cost
    2x): `scripts/sync_crons.py` refuses to apply such a cadence, `--check` fails on it, and
    `scripts/check_offpeak_crons.py` audits the whole live fleet (watchdogs included) the same way.
+   (Since 2026-11-19 the editorial jobs run OpenRouter GLM 5.3 — no peak multiplier — so the rule now
+   only binds the DeepSeek-hosted watchdogs; the cadences are left where they are.)
 2. Add an `evergreen_cadence` if the vertical should also run the evergreen track — a free slot in
    the **17:30–20:00 UTC** band (the news fleet's slots and the daily watchdogs are taken), on the
    same weekday as its news run. `--check` fails on a collision between the two fleets. Leave it

@@ -489,6 +489,7 @@ def title_candidates(path: pathlib.Path, count: int = 5) -> list[dict]:
     import headline_score as hs
     sys.path.insert(0, str(SCRIPTS))
     import humanizer_tools as ht
+    import frontier_llm
     text = path.read_text()
     m = re.match(r"---\n(.*?)\n---\n(.*)", text, re.S)
     fm, body = (m.group(1), m.group(2)) if m else ("", text)
@@ -498,7 +499,11 @@ def title_candidates(path: pathlib.Path, count: int = 5) -> list[dict]:
             title = line.split(":", 1)[1].strip().strip('"').strip("'")
         elif line.startswith("one_big_thing:"):
             one_big = line.split(":", 1)[1].strip().strip('"').strip("'")
-    raw = ht.call_gemini(title_prompt(title, body, one_big, count), max_tokens=3000, temperature=0.9)
+    # HEADLINE OPTIMIZATION runs on the cheap tier (owner spec, 2026-11-19): re-cutting a
+    # title is a light prose task, and the frontier is reserved for the rewrite/review/art
+    # direction. Scoring below is mechanical, so only the candidate generation moves.
+    raw = ht.call_gemini(title_prompt(title, body, one_big, count), max_tokens=3000,
+                         temperature=0.9, model=frontier_llm.FLASH_MODEL)
     # The model's array is often truncated mid-string (a long list hits the token ceiling), so a
     # strict json.loads throws away perfectly good candidates. Take the JSON when it parses and fall
     # back to harvesting the quoted strings — every candidate is scored below regardless.

@@ -77,12 +77,14 @@ FLEET_CADENCES = (
 # Live jobs deliver to the Slack home channel (#loop-ai) — that is where the
 # @Simon approve gate is read. bot-chat:editor is not wired in this workspace.
 DELIVER = os.environ.get("EDITORIAL_CRON_DELIVER", "slack")
-# Fleet tier (owner, 2026-10-05): the editorial pipelines are high-volume content
-# generation, not the frontier decision work, so they run on the cheap tier. Only the
-# frontier agents (simon, phoebe, product-director) and the two factory watchdogs
-# (Build/Growth Watchdog) stay on deepseek-v4-pro. Override with EDITORIAL_CRON_MODEL.
-MODEL = os.environ.get("EDITORIAL_CRON_MODEL", "deepseek-flash")
-PROVIDER = os.environ.get("EDITORIAL_CRON_PROVIDER", "deepseek")
+# Fleet tier (owner, 2026-11-19): the editorial modules run the CHEAP GLM tier — RADAR,
+# VIRALITY JUDGE, FACT-CHECK, FIRST DRAFT and HEADLINE OPTIMIZATION are all decision-shaped
+# volume work, so they never touch the frontier. Only FINAL REVIEW & REWRITE and ART DIRECTION
+# (scripts/frontier_llm.TEXT_MODEL, i.e. z-ai/glm-5.3 pinned to Decart's fp4 endpoint) are
+# frontier calls, and those live inside the scripts rather than in a cron pin.
+# Override with EDITORIAL_CRON_MODEL / EDITORIAL_CRON_PROVIDER.
+MODEL = os.environ.get("EDITORIAL_CRON_MODEL", "z-ai/glm-5.3-flash")
+PROVIDER = os.environ.get("EDITORIAL_CRON_PROVIDER", "openrouter")
 JOBS_PATH = os.environ.get(
     "EDITORIAL_CRON_JOBS", os.path.expanduser("~/.hermes/cron/jobs.json")
 )

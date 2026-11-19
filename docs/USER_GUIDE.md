@@ -19,13 +19,13 @@ with a `SOUL.md` (its persona), `config.yaml` (its model), and `.env` (its keys)
 
 | Bot | Role | Model |
 |---|---|---|
-| `editor` | Editor-in-Chief — runs the pipeline, owns the calendar and the approval gate | deepseek-v4-pro |
-| `radar` | Radar Scout — 30-day signal sweep per vertical | deepseek-v4-pro |
-| `judge` | Virality Judge — scores topics 1–10, drops anything < 8 | deepseek-v4-pro |
-| `verifier` | Fact Verifier — extracts claims, validates against primary sources | deepseek-v4-pro |
-| `drafter` | Story Drafter — writes the structural first pass | deepseek-v4-pro |
-| `stylist` | Claude Stylist & Critic — the final human-voice rewrite | **Claude (`claude-sonnet-5`) via kie.ai** |
-| `publisher` | Publisher — persists output and (when approved) distributes it | deepseek-v4-pro |
+| `editor` | Editor-in-Chief — runs the pipeline, owns the calendar and the approval gate | `z-ai/glm-5.3-flash` (relace/fp4) |
+| `radar` | Radar Scout — 30-day signal sweep per vertical | `z-ai/glm-5.3-flash` (relace/fp4) |
+| `judge` | Virality Judge — scores topics 1–10, drops anything < 8 | `z-ai/glm-5.3-flash` (relace/fp4) |
+| `verifier` | Fact Verifier — extracts claims, validates against primary sources | `z-ai/glm-5.3-flash` (relace/fp4) |
+| `drafter` | Story Drafter — writes the structural first pass | `z-ai/glm-5.3-flash` (relace/fp4) |
+| `stylist` | Claude Stylist & Critic — the final human-voice rewrite | **`z-ai/glm-5.3` (decart/fp4)** |
+| `publisher` | Publisher — persists output and (when approved) distributes it | `z-ai/glm-5.3-flash` (relace/fp4) |
 
 View them in the dashboard under **Profiles**, or with `hermes profile list`.
 
@@ -76,7 +76,7 @@ The full instructions live in `skills/*.md` (the SOPs) and the personas in `.age
 
 Every article gets one 16:9 header image, and it is a **decision about that story**, not a template:
 
-- A frontier **art director** (`scripts/illustration_creator.py`, running on DeepSeek Pro — `deepseek-v4-pro`) reads the
+- A frontier **art director** (`scripts/illustration_creator.py`, running on `z-ai/glm-5.3` pinned to OpenRouter's `decart/fp4` endpoint) reads the
   article's own title, thesis, lead, section headings, numbers section and source list, and picks a
   **treatment** from a catalogue of ten: editorial macro, cinematic still, document flat-lay, matte 3D
   render, technical isometric cutaway, modular component assembly, paper collage, compressed telephoto
@@ -129,8 +129,8 @@ Cost: measured ≈5–7 kie.ai credits per Flux-2 Pro image and ≈18 per Nano B
 holds a shared credit balance; `curl -s https://api.kie.ai/api/v1/chat/credit -H "Authorization:
 Bearer $KIE_API_KEY"`). Nothing is re-generated while the article's text is unchanged. Switch the
 whole step off with `--no-illustration` / `ILLUSTRATION_ENABLED=false`. Requires `KIE_API_KEY` (the
-kie.ai gateway key — **not** an `sk-ant-…` Anthropic key) and `DEEPSEEK_API_KEY` (the Loop 3 /
-frontier key; the render reviewer uses the same key with `deepseek-flash`).
+kie.ai gateway key — **not** an `sk-ant-…` Anthropic key) and `OPENROUTER_API_KEY` (the Loop 3 /
+frontier key; the render reviewer uses the same key with `z-ai/glm-5.3-flash`).
 
 ### Article anatomy
 
