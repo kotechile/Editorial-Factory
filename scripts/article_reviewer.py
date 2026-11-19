@@ -52,10 +52,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import humanizer_tools as ht  # noqa: E402  (frontmatter repair, keyword, provider key)
 import review_audit as ra  # noqa: E402
 
-MODEL = ht.MODEL  # deepseek-v4-pro (frontier_llm.TEXT_MODEL); the Gemini path was retired 2026-11-02
+MODEL = ht.MODEL  # frontier_llm.TEXT_MODEL (DeepSeek / OpenRouter / GLM)
 MAX_TOKENS = 32000
 TIMEOUT = 900
-ATTEMPTS = 3
+ATTEMPTS = int(os.environ.get("REVIEWER_ATTEMPTS", "1"))  # 1 authoritative pass with frontier LLM
 
 MARKERS = ("<!-- lead -->", "<!-- tension -->", "<!-- tactical-insight -->",
            "<!-- nuanced-takeaway -->", "<!-- tldr -->")

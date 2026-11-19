@@ -19,7 +19,7 @@ RULES = """You are the Frontier Humanizer & Stylist (Loop 3 — final rewrite) f
 
 REQUIRED INPUTS & CONTEXT INGESTION:
 - Target Audience: Read the `persona:` field from frontmatter and calibrate technical depth for this reader.
-- The One Big Thing: Identify the single most important takeaway, benchmark stat, or decision from the draft.
+- The One Big Thing: State the single most important takeaway in 1–2 plain, punchy sentences under 35 words total. Never write a 40+ word run-on compound sentence with stacked clauses.
 - Raw Content: Restructure the unedited draft and verified claims while preserving every fact and inline citation [n].
 
 SMART BREVITY STYLING PRINCIPLES:

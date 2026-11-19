@@ -30,8 +30,9 @@ DEFAULT_REGISTRY = {
     "why": "Reader-side review, 2026-10-24: an opening that spent its first sentences on statutory "
            "detail, two sections repeating the same figures, and no tie to a decision the reader "
            "could act on. Shape rules apply to every vertical.",
-    # A figure may set up the story and be summarised in the tldr. Beyond that it is repetition.
-    "max_body_sections_per_figure": 2,
+    # A figure may set up the story, be analyzed in context, and summarized in takeaway.
+    # Beyond 3 body sections it becomes mindless repetition.
+    "max_body_sections_per_figure": 3,
     # The conclusion has to land somewhere the reader can go: one inline link inside the body
     # (the generated Related-reading block does not count — every article has one).
     "min_body_inline_links": 1,

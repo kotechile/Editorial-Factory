@@ -184,6 +184,8 @@ def cmd_review(args) -> int:
             return 2
         draft = hits[0]
     cmd = [sys.executable, str(SCRIPTS / "article_reviewer.py"), "--draft", str(draft)]
+    if getattr(args, "model", None):
+        cmd += ["--model", args.model]
     brief = None
     for cand in (ROOT / "context" / "recon_proposals").glob(f"{DATE}_*_brief.md"):
         brief = cand
@@ -298,7 +300,7 @@ def main() -> int:
     p.add_argument("--brief", default=""); p.set_defaults(fn=cmd_gate_brief)
 
     p = sub.add_parser("review"); p.add_argument("--vertical", required=True)
-    p.add_argument("--draft", default=""); p.set_defaults(fn=cmd_review)
+    p.add_argument("--draft", default=""); p.add_argument("--model", default=""); p.set_defaults(fn=cmd_review)
 
     p = sub.add_parser("gate"); p.add_argument("--file", default="")
     p.add_argument("--slug", default=""); p.set_defaults(fn=cmd_gate)
