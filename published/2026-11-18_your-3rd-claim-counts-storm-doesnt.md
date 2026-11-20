@@ -13,8 +13,8 @@ meta_description: "A carrier counts nonweather claims, not storm losses, and war
 image_path: "context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Third Claim Counts, The Storm Doesn'T. A burst washing-machine hose and a water-stained laundry wall beside a hail-streaked roof."
-image_caption: "The Third Claim Counts, The Storm Doesn'T: Storm losses don't count, but a third nonweather claim can end your policy at renewal."
+image_alt: "Water Claims, Not Storms, End Your Policy. A washer beside opened drywall and a leaking copper pipe, water on the tile."
+image_caption: "Water Claims, Not Storms, End Your Policy: Three non-weather claims in three years can end your policy at renewal."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

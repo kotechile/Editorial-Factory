@@ -1,6 +1,6 @@
 {
   "slug": "your-3rd-claim-counts-storm-doesnt",
-  "revision": 7,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -32,7 +32,7 @@
     {
       "revision": 4,
       "alt_text": "The Third Claim Counts, The Storm Doesn'T. Hail striking a shingle roof beside a laundry room where a burst washer hose spills water.",
-      "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do — and the third ends the policy.",
+      "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do \u2014 and the third ends the policy.",
       "title": "The Third Claim Counts, The Storm Doesn'T",
       "bytes": 403714,
       "sha256": "sha256:1c7bd91084b2a9502dad7ab5b42ea5c9c0cac9f83f5eb19eebd1ec780372c1eb"
@@ -51,42 +51,91 @@
     {
       "revision": 6,
       "alt_text": "A burst washing-machine supply hose and opened water-stained wall in a laundry room, with a drying fan and a claim folder nearby.",
-      "caption": "The burst hose and opened wall are the loss a carrier counts — the storm on the roof never makes the ladder.",
+      "caption": "The burst hose and opened wall are the loss a carrier counts \u2014 the storm on the roof never makes the ladder.",
       "title": "Burst hose, opened wall: the water claim that counts",
       "bytes": 346495,
       "sha256": "sha256:9a64d69bc8a34d99d036cecb647200d0"
+    },
+    {
+      "revision": 7,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, 35mm anamorphic, laundry room at blue-hour dusk. A washing machine's black rubber supply hose has burst, water sheeting across tile toward a running air mover; behind the machine a square of drywall is cut open, exposing a copper pipe and a rust-coloured water stain climbing the studs. A plain manila claim folder, blank cover, rests on the dryer. Asymmetric composition, machine and opened wall commanding the right third, air mover low left, generous negative space above. Single warm worklight raking from the left, cool window glow from the right, bone white, deep pine green and ochre palette with graphite shadows, shallow depth of field, long contact shadows, fine film grain, no people, no text.",
+      "task_id": "dd62d0db63444152e2e1797202269d3a",
+      "sha256": "sha256:3377824e86bb69349c0dbb101b14cd5ebc02f94e092c175e5367e73f5fce5409",
+      "generated_at": "2026-11-20T01:11:12+00:00",
+      "source_hash": "sha256:e53935da5d296b2720ef43590b9e5f39",
+      "render_sha256": "sha256:5f8bfa7bb01a2d2167ffa9dff87f6ef1207e83df0a63a664f7ffbb4e148114bf"
+    },
+    {
+      "revision": 8,
+      "alt_text": "Washing machine pulled from the wall, burst supply hose streaming water beside opened drywall and copper pipe, claim folder on the dryer.",
+      "caption": "The claim that climbs the ladder is the burst hose in the wall, not the storm on the roof.",
+      "title": "The Appliance Water Claim That Counts",
+      "bytes": 284436,
+      "sha256": "sha256:6e435254e56f9b653f80cec0410b9035"
+    },
+    {
+      "revision": 9,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Laundry room at night, shallow depth of field. A white washing machine pulled out at an angle, front door closed, rear to camera: a burst rubber supply hose running from the machine to the galvanised wall shutoff valve, water streaming from the split across the tile. Behind it, a square of drywall cut open, exposing a copper pipe ringed by a dried water stain. An air mover on the tile; a manila claim folder on the dryer. Warm worklight rakes from the left, cool window glow from the right; bone white, deep pine green and ochre with graphite shadows. 35mm anamorphic, machine and opened wall in the right third, negative space above, fine film grain, no people, no text.",
+      "task_id": "f5aac7c313a873cdb408933126bcea59",
+      "sha256": "sha256:81da72e69d4161e1da278b81e347d0a22d1836e3833312714888db82c46fc028",
+      "generated_at": "2026-11-20T09:42:10+00:00",
+      "source_hash": "sha256:e53935da5d296b2720ef43590b9e5f39",
+      "render_sha256": "sha256:210561ec0e11d7026f043aacb69c9a6f847fb67cbb2671a43dce15f9e7efc0a2"
+    },
+    {
+      "revision": 10,
+      "alt_text": "A washing machine beside drywall cut open to expose a leaking copper pipe, an air mover on the wet tile and a claim folder on the dryer.",
+      "caption": "The water claim from an appliance is the one a carrier counts \u2014 and the one that can end the policy at renewal.",
+      "title": "The Water Claim That Counts",
+      "bytes": 392885,
+      "sha256": "sha256:59e80d352bbc25f6b88d61bf9652598f"
+    },
+    {
+      "revision": 11,
+      "alt_text": "A washer beside opened drywall and a leaking copper pipe, water on the tile.",
+      "caption": null,
+      "title": "Water Claims, Not Storms, Can End Your Policy",
+      "bytes": 368797,
+      "sha256": "sha256:ba1cb160c9eaa46b6e2eb7883b9598f87d9964ff0f2adad3c6955cc17e83ef84"
     }
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, 35mm anamorphic, laundry room at blue-hour dusk. A washing machine's black rubber supply hose has burst, water sheeting across tile toward a running air mover; behind the machine a square of drywall is cut open, exposing a copper pipe and a rust-coloured water stain climbing the studs. A plain manila claim folder, blank cover, rests on the dryer. Asymmetric composition, machine and opened wall commanding the right third, air mover low left, generous negative space above. Single warm worklight raking from the left, cool window glow from the right, bone white, deep pine green and ochre palette with graphite shadows, shallow depth of field, long contact shadows, fine film grain, no people, no text.",
-  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks",
-  "rationale": "The previous frame was refused for rendered lettering, so this reading moves the story off paper and into the physical event the count is about: the countable appliance water loss. A cinematic still lets one decisive domestic moment — the burst hose, the opened wall, the drying fan, the blank claim folder — say 'a water claim is on file' without a single legible word. Blue-hour dusk with one warm worklight gives the scene the hushed tension of a policy quietly climbing toward nonrenewal.",
-  "cue": "Your 3rd Claim Counts, Storm Doesn't",
-  "subject": "a burst washing-machine supply hose and the water-stained wall opened for repair behind it, with drying gear and a closed claim folder",
-  "core_thesis": "A homeowners policy is repriced on how many claims are counted, not dollars paid — so the appliance water loss inside the house is the claim that can end the policy, while the storm on the roof never counts at all.",
-  "core_conflict": "The interior water claim a carrier can count against the house versus the weather loss it cannot — with the homeowner's renewal hanging on which category the damage falls into.",
-  "composition": "asymmetric 16:9 — washer and opened wall commanding the right third, air mover low left, generous negative space above",
-  "alt_text": "The Third Claim Counts, The Storm Doesn'T. A burst washing-machine hose and a water-stained laundry wall beside a hail-streaked roof.",
-  "caption": "The Third Claim Counts, The Storm Doesn'T: Storm losses don't count, but a third nonweather claim can end your policy at renewal.",
-  "title": "The Third Claim Counts, The Storm Doesn'T",
+  "prompt": "Cinematic film still, a home laundry room at dusk. A front-loading washer, door closed, nothing attached, stands beside a square of drywall cut open to expose a copper pipe fitting, a dark water stain bleeding down the studs, a thin puddle sheeting across the tile floor below. A squat air mover sits on the tile aimed at the opened wall; a manila claim folder rests on the dryer. Warm worklight rakes from the left, cool window glow from the right; bone white, deep pine green and ochre with graphite shadows. Anamorphic 35mm framing, washer and opened wall held in the right third, generous negative space above, shallow depth of field, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story turns on the one claim that counts \u2014 the appliance water loss \u2014 at the decisive moment it is opened, dried and filed; a cinematic still holds that moment with physical atmosphere rather than a generic laundry room. The cut wall makes the hidden loss visible and the claim folder carries the paper that decides renewal, exactly the article's mechanism.",
+  "cue": "appliance water claim",
+  "subject": "a front-load washer beside drywall cut open around a leaking copper pipe fitting, with an air mover on the tile and a manila claim folder on the dryer",
+  "core_thesis": "A homeowners policy is repriced on counted claims, not dollars paid \u2014 and the appliance water claim is the one that counts, with a written warning after the second gating the third at renewal.",
+  "core_conflict": "Weather losses that cannot be counted versus nonweather water losses that climb the three-in-three count; the dollars paid matter less than the paper trail \u2014 the warning letter and the passed inspection \u2014 that decides whether the policy survives.",
+  "composition": "Anamorphic 35mm wide: washer and cut-open wall held in the right third, generous negative space above",
+  "alt_text": "Water Claims, Not Storms, End Your Policy. A washer beside opened drywall and a leaking copper pipe, water on the tile.",
+  "caption": "Water Claims, Not Storms, End Your Policy: Three non-weather claims in three years can end your policy at renewal.",
+  "title": "Water Claims, Not Storms, End Your Policy",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
   "director": "z-ai/glm-5.3",
   "director_attempts": 1,
-  "pinned": {},
+  "pinned": {
+    "style": "cinematic_still",
+    "model": "flux"
+  },
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 402061,
-  "sha256": "sha256:3377824e86bb69349c0dbb101b14cd5ebc02f94e092c175e5367e73f5fce5409",
+  "bytes": 404621,
+  "sha256": "sha256:fc4c9ca988ef380afbb9a619a2dd9923a1689b80929d0ca3cc9d6b71e60fae88",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -95,65 +144,66 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 402061,
+    "bytes": 404621,
     "quality": 84,
-    "sha256": "sha256:3377824e86bb69349c0dbb101b14cd5ebc02f94e092c175e5367e73f5fce5409",
+    "sha256": "sha256:fc4c9ca988ef380afbb9a619a2dd9923a1689b80929d0ca3cc9d6b71e60fae88",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:5f8bfa7bb01a2d2167ffa9dff87f6ef1207e83df0a63a664f7ffbb4e148114bf",
-  "render_phash": "407f473f473f073f051e099e099e099611d62116131e131e31b6307f01bf01bf",
+  "render_sha256": "sha256:6b746e1726042835fdba146fb1fdfbafabcb9c163762620ddc8a249c831db3ab",
+  "render_phash": "03d915cb159715f704db14fb07b60bb209b608b61a7e385ec4fe02ff02ff073f",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "A white washing machine with a leaking hose is shown in a laundry room with an exposed wall and a floor fan.",
+    "depicts": "A laundry room features two front-load washing machines, one of which has a manila folder resting on top, while a section of the drywall next to it has been cut open to reveal a leaking copper pipe and an air mover sits on the floor.",
     "legible_text": "",
     "on_topic": true,
-    "confidence": 1.0,
-    "reason": "The image depicts a water damage claim event, which is the central subject of the article's focus on homeowners' policy claims."
+    "confidence": 0.95,
+    "reason": "The image provides a literal visual representation of a water damage claim, which is the central event and mechanism discussed in the article."
   },
   "source_hash": "sha256:e53935da5d296b2720ef43590b9e5f39",
   "source_chars": 4442,
-  "task_id": "dd62d0db63444152e2e1797202269d3a",
+  "task_id": "af6fe918ce676a5fa03c63cbfe02141c",
   "credits": 5.0,
-  "cost_ms": 77,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/dd62d0db63444152e2e1797202269d3a_1795137061836.jpg",
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/af6fe918ce676a5fa03c63cbfe02141c_1795168332439.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Cinematic film still, 35mm anamorphic, laundry room at blue-hour dusk. A washing machine's black rubber supply hose has burst, water sheeting across tile toward a running air mover; behind the machine a square of drywall is cut open, exposing a copper pipe and a rust-coloured water stain climbing the studs. A plain manila claim folder, blank cover, rests on the dryer. Asymmetric composition, machine and opened wall commanding the right third, air mover low left, generous negative space above. Single warm worklight raking from the left, cool window glow from the right, bone white, deep pine green and ochre palette with graphite shadows, shallow depth of field, long contact shadows, fine film grain, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Cinematic film still, a home laundry room at dusk. A front-loading washer, door closed, nothing attached, stands beside a square of drywall cut open to expose a copper pipe fitting, a dark water stain bleeding down the studs, a thin puddle sheeting across the tile floor below. A squat air mover sits on the tile aimed at the opened wall; a manila claim folder rests on the dryer. Warm worklight rakes from the left, cool window glow from the right; bone white, deep pine green and ochre with graphite shadows. Anamorphic 35mm framing, washer and opened wall held in the right third, generous negative space above, shallow depth of field, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-11-20T01:11:12+00:00",
+  "generated_at": "2026-11-20T09:52:22+00:00",
   "overlay": {
-    "kicker": "HOMEOWNERS INSURANCE // NONRENEWAL RULES",
-    "title": "THE THIRD CLAIM COUNTS, THE STORM DOESN'T",
-    "hook": "Storm losses don't count, but a third nonweather claim can end your policy at renewal",
-    "anchor": "top-left",
+    "kicker": "HOMEOWNERS INSURANCE | CLAIM COUNTS",
+    "title": "Water Claims, Not Storms, End Your Policy",
+    "hook": "Three non-weather claims in three years can end your policy at renewal.",
+    "anchor": "bottom-left",
     "light": true,
     "scrim": 120,
-    "contrast": 4.59,
-    "target": 4.5,
-    "clutter": 0.247,
+    "contrast": 5.62,
+    "target": 5.5,
+    "clutter": 0.315,
     "region_rgb": [
-      77,
-      70,
-      55
+      93,
+      82,
+      73
     ],
     "binding_rgb": [
-      113,
-      106,
-      100
+      156,
+      128,
+      104
     ],
     "title_lines": [
-      "THE THIRD CLAIM",
-      "COUNTS, THE",
-      "STORM DOESN'T"
+      "Water Claims, Not",
+      "Storms, End Your",
+      "Policy"
     ],
-    "subject": 0.171,
-    "ink_subject": 0.051,
-    "spike": 0.291,
-    "generated_at": "2026-11-20T01:11:12+00:00"
-  }
+    "subject": 0.262,
+    "ink_subject": 0.1,
+    "spike": 0.429,
+    "generated_at": "2026-11-20T09:52:22+00:00"
+  },
+  "hook": null
 }
