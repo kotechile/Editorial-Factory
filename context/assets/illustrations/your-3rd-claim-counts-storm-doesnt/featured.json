@@ -1,6 +1,6 @@
 {
   "slug": "your-3rd-claim-counts-storm-doesnt",
-  "revision": 5,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -32,30 +32,49 @@
     {
       "revision": 4,
       "alt_text": "The Third Claim Counts, The Storm Doesn'T. Hail striking a shingle roof beside a laundry room where a burst washer hose spills water.",
-      "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do \u2014 and the third ends the policy.",
+      "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do — and the third ends the policy.",
       "title": "The Third Claim Counts, The Storm Doesn'T",
       "bytes": 403714,
       "sha256": "sha256:1c7bd91084b2a9502dad7ab5b42ea5c9c0cac9f83f5eb19eebd1ec780372c1eb"
+    },
+    {
+      "revision": 5,
+      "style": "cinematic_still",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic film still, anamorphic 35mm look with soft edge falloff, split-screen diptych divided by a vertical exterior-wall seam. Left half: an asphalt-shingle roofline under a slate-grey hailstorm, hail streaks raking across the shingles from the upper left, deep pine green storm sky. Right half: a laundry room where a burst washing-machine supply hose sheets water across a sealed concrete floor, galvanised steel appliance cabinet, one warm bone-white work light low on the right. Restrained slate-grey and amber palette, crisp atmospheric depth, deep contact shadows, fine film grain, no people, no text, no logos.",
+      "task_id": "3a4188288b71bf41dae221a9719a7b20",
+      "sha256": "sha256:1c7bd91084b2a9502dad7ab5b42ea5c9c0cac9f83f5eb19eebd1ec780372c1eb",
+      "generated_at": "2026-11-20T00:06:21+00:00",
+      "source_hash": "sha256:817b6fa3b21e64cbe88729bb033230b2",
+      "render_sha256": "sha256:9ad6be27b8e0a1c67dbd6c121d16fde335a148bb58bcd8d2c4b9497c5e016b86"
+    },
+    {
+      "revision": 6,
+      "alt_text": "A burst washing-machine supply hose and opened water-stained wall in a laundry room, with a drying fan and a claim folder nearby.",
+      "caption": "The burst hose and opened wall are the loss a carrier counts — the storm on the roof never makes the ladder.",
+      "title": "Burst hose, opened wall: the water claim that counts",
+      "bytes": 346495,
+      "sha256": "sha256:9a64d69bc8a34d99d036cecb647200d0"
     }
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic film still, anamorphic 35mm look with soft edge falloff, split-screen diptych divided by a vertical exterior-wall seam. Left half: an asphalt-shingle roofline under a slate-grey hailstorm, hail streaks raking across the shingles from the upper left, deep pine green storm sky. Right half: a laundry room where a burst washing-machine supply hose sheets water across a sealed concrete floor, galvanised steel appliance cabinet, one warm bone-white work light low on the right. Restrained slate-grey and amber palette, crisp atmospheric depth, deep contact shadows, fine film grain, no people, no text, no logos.",
-  "negative_prompt": "garbled text, random lettering, watermarks, logos",
-  "rationale": "The headline is a built-in two-scenario contrast \u2014 the claim that counts versus the storm that doesn't \u2014 so a split-screen cinematic still states the entire thesis in one glance. Both halves stay in the home's own world (roofline versus laundry room), and the decisive, material moment on each side gives an abstract counting rule physical weight and tension.",
+  "prompt": "Cinematic film still, 35mm anamorphic, laundry room at blue-hour dusk. A washing machine's black rubber supply hose has burst, water sheeting across tile toward a running air mover; behind the machine a square of drywall is cut open, exposing a copper pipe and a rust-coloured water stain climbing the studs. A plain manila claim folder, blank cover, rests on the dryer. Asymmetric composition, machine and opened wall commanding the right third, air mover low left, generous negative space above. Single warm worklight raking from the left, cool window glow from the right, bone white, deep pine green and ochre palette with graphite shadows, shallow depth of field, long contact shadows, fine film grain, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks",
+  "rationale": "The previous frame was refused for rendered lettering, so this reading moves the story off paper and into the physical event the count is about: the countable appliance water loss. A cinematic still lets one decisive domestic moment — the burst hose, the opened wall, the drying fan, the blank claim folder — say 'a water claim is on file' without a single legible word. Blue-hour dusk with one warm worklight gives the scene the hushed tension of a policy quietly climbing toward nonrenewal.",
   "cue": "Your 3rd Claim Counts, Storm Doesn't",
-  "subject": "a hail-battered asphalt-shingle roof split against a laundry room where a burst washing-machine hose sheets water across a concrete floor",
-  "core_thesis": "A homeowners policy is repriced on counted claims, not dollars paid \u2014 weather losses can never be counted, so the hail-smashed roof leaves the count untouched while the appliance water claim is the one that can end the policy at renewal.",
-  "core_conflict": "What a house endures versus what a carrier counts: storm damage is legally uncountable, while nonweather water claims climb a three-in-three-years ladder that only a written warning letter after the second claim and a passed repair inspection can gate.",
-  "composition": "Split-screen diptych divided by a vertical exterior-wall seam: hail-struck roofline filling the left half, flooding laundry room on the right, heroes off-centre with wide negative space",
-  "alt_text": "The Third Claim Counts, The Storm Doesn'T. Hail striking a shingle roof beside a laundry room where a burst washer hose spills water.",
-  "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do \u2014 and the third ends the policy.",
+  "subject": "a burst washing-machine supply hose and the water-stained wall opened for repair behind it, with drying gear and a closed claim folder",
+  "core_thesis": "A homeowners policy is repriced on how many claims are counted, not dollars paid — so the appliance water loss inside the house is the claim that can end the policy, while the storm on the roof never counts at all.",
+  "core_conflict": "The interior water claim a carrier can count against the house versus the weather loss it cannot — with the homeowner's renewal hanging on which category the damage falls into.",
+  "composition": "asymmetric 16:9 — washer and opened wall commanding the right third, air mover low left, generous negative space above",
+  "alt_text": "The Third Claim Counts, The Storm Doesn'T. A burst washing-machine hose and a water-stained laundry wall beside a hail-streaked roof.",
+  "caption": "The Third Claim Counts, The Storm Doesn'T: Storm losses don't count, but a third nonweather claim can end your policy at renewal.",
   "title": "The Third Claim Counts, The Storm Doesn'T",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -66,8 +85,8 @@
   "local_path": "context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 403714,
-  "sha256": "sha256:1c7bd91084b2a9502dad7ab5b42ea5c9c0cac9f83f5eb19eebd1ec780372c1eb",
+  "bytes": 402061,
+  "sha256": "sha256:3377824e86bb69349c0dbb101b14cd5ebc02f94e092c175e5367e73f5fce5409",
   "delivery": {
     "standard": "2026-10-24",
     "format": "JPEG",
@@ -76,65 +95,65 @@
     "width": 2400,
     "height": 1350,
     "aspect": 1.7778,
-    "bytes": 403714,
+    "bytes": 402061,
     "quality": 84,
-    "sha256": "sha256:1c7bd91084b2a9502dad7ab5b42ea5c9c0cac9f83f5eb19eebd1ec780372c1eb",
+    "sha256": "sha256:3377824e86bb69349c0dbb101b14cd5ebc02f94e092c175e5367e73f5fce5409",
     "filename_rule": "<slug>-featured.jpg"
   },
-  "render_sha256": "sha256:9ad6be27b8e0a1c67dbd6c121d16fde335a148bb58bcd8d2c4b9497c5e016b86",
-  "render_phash": "079f279fe79fc58f5b8f3f853f857b8567850f871b8133890d8907892d890d8f",
+  "render_sha256": "sha256:5f8bfa7bb01a2d2167ffa9dff87f6ef1207e83df0a63a664f7ffbb4e148114bf",
+  "render_phash": "407f473f473f073f051e099e099e099611d62116131e131e31b6307f01bf01bf",
   "review": {
     "ok": true,
     "problems": [],
-    "depicts": "A split-screen image shows a hailstorm hitting a dark asphalt shingle roof on the left and a flooded laundry room with a washing machine on the right.",
+    "depicts": "A white washing machine with a leaking hose is shown in a laundry room with an exposed wall and a floor fan.",
     "legible_text": "",
     "on_topic": true,
     "confidence": 1.0,
-    "reason": "The image perfectly illustrates the core concept of the article: the distinction between storm-related and water-related claims."
+    "reason": "The image depicts a water damage claim event, which is the central subject of the article's focus on homeowners' policy claims."
   },
-  "source_hash": "sha256:817b6fa3b21e64cbe88729bb033230b2",
-  "source_chars": 4465,
-  "task_id": "3a4188288b71bf41dae221a9719a7b20",
+  "source_hash": "sha256:e53935da5d296b2720ef43590b9e5f39",
+  "source_chars": 4442,
+  "task_id": "dd62d0db63444152e2e1797202269d3a",
   "credits": 5.0,
-  "cost_ms": 20,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/3a4188288b71bf41dae221a9719a7b20_1795133169170.jpg",
+  "cost_ms": 77,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/dd62d0db63444152e2e1797202269d3a_1795137061836.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Cinematic film still, anamorphic 35mm look with soft edge falloff, split-screen diptych divided by a vertical exterior-wall seam. Left half: an asphalt-shingle roofline under a slate-grey hailstorm, hail streaks raking across the shingles from the upper left, deep pine green storm sky. Right half: a laundry room where a burst washing-machine supply hose sheets water across a sealed concrete floor, galvanised steel appliance cabinet, one warm bone-white work light low on the right. Restrained slate-grey and amber palette, crisp atmospheric depth, deep contact shadows, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Cinematic film still, 35mm anamorphic, laundry room at blue-hour dusk. A washing machine's black rubber supply hose has burst, water sheeting across tile toward a running air mover; behind the machine a square of drywall is cut open, exposing a copper pipe and a rust-coloured water stain climbing the studs. A plain manila claim folder, blank cover, rests on the dryer. Asymmetric composition, machine and opened wall commanding the right third, air mover low left, generous negative space above. Single warm worklight raking from the left, cool window glow from the right, bone white, deep pine green and ochre palette with graphite shadows, shallow depth of field, long contact shadows, fine film grain, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-11-20T00:06:21+00:00",
+  "generated_at": "2026-11-20T01:11:12+00:00",
   "overlay": {
-    "kicker": "HOMEOWNERS INSURANCE // CLAIM COUNT RULES",
+    "kicker": "HOMEOWNERS INSURANCE // NONRENEWAL RULES",
     "title": "THE THIRD CLAIM COUNTS, THE STORM DOESN'T",
-    "hook": "Storm damage never counts; appliance water claims do \u2014 and the third ends the policy",
-    "anchor": "top-right",
+    "hook": "Storm losses don't count, but a third nonweather claim can end your policy at renewal",
+    "anchor": "top-left",
     "light": true,
     "scrim": 120,
-    "contrast": 7.0,
+    "contrast": 4.59,
     "target": 4.5,
-    "clutter": 0.184,
+    "clutter": 0.247,
     "region_rgb": [
-      64,
-      61,
-      48
+      77,
+      70,
+      55
     ],
     "binding_rgb": [
-      86,
-      79,
-      63
+      113,
+      106,
+      100
     ],
     "title_lines": [
       "THE THIRD CLAIM",
       "COUNTS, THE",
       "STORM DOESN'T"
     ],
-    "subject": 0.137,
-    "ink_subject": 0.025,
-    "spike": 0.154,
-    "generated_at": "2026-11-20T00:06:21+00:00"
+    "subject": 0.171,
+    "ink_subject": 0.051,
+    "spike": 0.291,
+    "generated_at": "2026-11-20T01:11:12+00:00"
   }
 }

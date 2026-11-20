@@ -537,3 +537,6 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-20 | `your-3rd-claim-counts-storm-doesnt` | property_loss_insurance_mitigation | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg` |
 | 2026-11-20 | `your-error-text-breaks-the-repair` | multi_agent_enterprise_fabric | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-error-text-breaks-the-repair/featured.jpg` |
 | 2026-11-20 | `your-secret-bill-six-cents-version` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-secret-bill-six-cents-version/featured.jpg` |
+| 2026-11-20 | `your-fleets-8-3-year-bill` | warehouse_automation_robotics_capex | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-fleets-8-3-year-bill/featured.jpg` |
+| 2026-11-20 | `your-3rd-claim-counts-storm-doesnt` | property_loss_insurance_mitigation | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg` |
+| 2026-11-20 | `your-secret-bill-six-cents-version` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-secret-bill-six-cents-version/featured.jpg` |
