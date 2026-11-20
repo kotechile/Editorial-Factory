@@ -24,7 +24,7 @@ The robot fleet your board approved is the cheaper half of the purchase. A site 
 
 <!-- tldr -->
 ## At a glance
-- **The shift:** Sites keep mobile equipment 8.3 years on average, so the second purchase arrives as one bill.
+- **The shift:** A warehouse robot fleet kept an average 8.3 years comes back as one bill, not a forecast.
 - **The numbers:** A third more than the invoice, at 3.5% a year. [3]
 - **The risk:** A reserve at the original price covers three quarters of it.
 

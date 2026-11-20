@@ -25,7 +25,7 @@ Your error text breaks the repair it was written to prompt. Of 3,001 error messa
 
 <!-- tldr -->
 ## At a glance
-- **The shift:** Failure text is part of a tool's contract, not notes for a developer.
+- **The shift:** An MCP tool's failure text is part of its contract, not developer notes.
 - **The number:** 45% of credential tasks recover on a named command, 84% on a login tool.
 - **The risk:** A step the agent cannot run kills a repair its own tools could make.
 
