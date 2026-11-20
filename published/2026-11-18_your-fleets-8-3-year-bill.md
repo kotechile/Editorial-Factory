@@ -14,7 +14,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-fleets-8-3-year-bill/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "The 8.3-Year Bill Nobody Reserves. Identical autonomous warehouse robots in long charging rows down a warehouse aisle, telephoto-compressed toward the steel racking."
+image_alt: "The 8.3-Year Bill Nobody Reserves. Warehouse robots in charging rows down an aisle, telephoto-compressed toward the steel racking."
 image_caption: "The 8.3-Year Bill Nobody Reserves: A fleet bought in one year returns as a single bill eight times the annual charge."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

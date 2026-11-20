@@ -1,6 +1,6 @@
 {
   "slug": "your-3rd-claim-counts-storm-doesnt",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -28,11 +28,19 @@
       "title": "Hail Roof vs. Burst Washer Hose",
       "bytes": 344639,
       "sha256": "sha256:94533a890aaf47940e004d9f08c47797"
+    },
+    {
+      "revision": 4,
+      "alt_text": "The Third Claim Counts, The Storm Doesn'T. Hail striking a shingle roof beside a laundry room where a burst washer hose spills water.",
+      "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do \u2014 and the third ends the policy.",
+      "title": "The Third Claim Counts, The Storm Doesn'T",
+      "bytes": 403714,
+      "sha256": "sha256:1c7bd91084b2a9502dad7ab5b42ea5c9c0cac9f83f5eb19eebd1ec780372c1eb"
     }
   ],
   "style": "cinematic_still",
   "style_label": "Cinematic still",
-  "style_when": "the article describes one decisive moment or place — a yard at dawn, a control room, a shutdown line, a handover — that a film still could hold",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -40,14 +48,14 @@
   "resolution": "1K",
   "prompt": "Cinematic film still, anamorphic 35mm look with soft edge falloff, split-screen diptych divided by a vertical exterior-wall seam. Left half: an asphalt-shingle roofline under a slate-grey hailstorm, hail streaks raking across the shingles from the upper left, deep pine green storm sky. Right half: a laundry room where a burst washing-machine supply hose sheets water across a sealed concrete floor, galvanised steel appliance cabinet, one warm bone-white work light low on the right. Restrained slate-grey and amber palette, crisp atmospheric depth, deep contact shadows, fine film grain, no people, no text, no logos.",
   "negative_prompt": "garbled text, random lettering, watermarks, logos",
-  "rationale": "The headline is a built-in two-scenario contrast — the claim that counts versus the storm that doesn't — so a split-screen cinematic still states the entire thesis in one glance. Both halves stay in the home's own world (roofline versus laundry room), and the decisive, material moment on each side gives an abstract counting rule physical weight and tension.",
+  "rationale": "The headline is a built-in two-scenario contrast \u2014 the claim that counts versus the storm that doesn't \u2014 so a split-screen cinematic still states the entire thesis in one glance. Both halves stay in the home's own world (roofline versus laundry room), and the decisive, material moment on each side gives an abstract counting rule physical weight and tension.",
   "cue": "Your 3rd Claim Counts, Storm Doesn't",
   "subject": "a hail-battered asphalt-shingle roof split against a laundry room where a burst washing-machine hose sheets water across a concrete floor",
-  "core_thesis": "A homeowners policy is repriced on counted claims, not dollars paid — weather losses can never be counted, so the hail-smashed roof leaves the count untouched while the appliance water claim is the one that can end the policy at renewal.",
+  "core_thesis": "A homeowners policy is repriced on counted claims, not dollars paid \u2014 weather losses can never be counted, so the hail-smashed roof leaves the count untouched while the appliance water claim is the one that can end the policy at renewal.",
   "core_conflict": "What a house endures versus what a carrier counts: storm damage is legally uncountable, while nonweather water claims climb a three-in-three-years ladder that only a written warning letter after the second claim and a passed repair inspection can gate.",
   "composition": "Split-screen diptych divided by a vertical exterior-wall seam: hail-struck roofline filling the left half, flooding laundry room on the right, heroes off-centre with wide negative space",
-  "alt_text": "The Third Claim Counts, The Storm Doesn'T. Hail streaks striking an asphalt-shingle roof beside a laundry room where a burst washer hose spills water across the floor.",
-  "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do — and the third ends the policy.",
+  "alt_text": "The Third Claim Counts, The Storm Doesn'T. Hail striking a shingle roof beside a laundry room where a burst washer hose spills water.",
+  "caption": "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do \u2014 and the third ends the policy.",
   "title": "The Third Claim Counts, The Storm Doesn'T",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -102,7 +110,7 @@
   "overlay": {
     "kicker": "HOMEOWNERS INSURANCE // CLAIM COUNT RULES",
     "title": "THE THIRD CLAIM COUNTS, THE STORM DOESN'T",
-    "hook": "Storm damage never counts; appliance water claims do — and the third ends the policy",
+    "hook": "Storm damage never counts; appliance water claims do \u2014 and the third ends the policy",
     "anchor": "top-right",
     "light": true,
     "scrim": 120,

@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-secret-bill-six-cents-version/featured.jpg"
 image_style: "paper_collage"
 image_model: "nanobanana"
-image_alt: "Per-Secret Vs Per-Version Billing. One large paper-cut key with a single price tag faces six smaller duplicate keys, each wearing its own price tag."
+image_alt: "Per-Secret Vs Per-Version Billing. One large paper-cut key with a price tag faces six duplicate keys, each with its own tag."
 image_caption: "Per-Secret Vs Per-Version Billing: The difference is not a discount — it decides which rotation habit a team can afford."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

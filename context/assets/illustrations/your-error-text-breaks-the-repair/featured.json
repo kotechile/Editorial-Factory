@@ -1,6 +1,6 @@
 {
   "slug": "your-error-text-breaks-the-repair",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -24,15 +24,23 @@
     {
       "revision": 3,
       "alt_text": "A dark, disconnected operator terminal beside a lit server rack bay with its cable engaged, split across a blue-hour data hall.",
-      "caption": "When a call fails, the error message is the only thing the fabric adds — and the agent runs it literally, reachable tool or not.",
+      "caption": "When a call fails, the error message is the only thing the fabric adds \u2014 and the agent runs it literally, reachable tool or not.",
       "title": "Error Text as Program: Dead Terminal vs Engaged Tool Bay",
       "bytes": 350104,
       "sha256": "sha256:ea21b0846d835c54778e9e3bc0cec1c2"
+    },
+    {
+      "revision": 4,
+      "alt_text": "MCP Error Text Breaks The Agent Repair. A dark operator terminal beside a lit server rack with its cable engaged, split.",
+      "caption": "MCP Error Text Breaks The Agent Repair: Agents obey error text literally, and newer models obey harder \u2014 45% recover where 84%.",
+      "title": "MCP Error Text Breaks The Agent Repair",
+      "bytes": 404655,
+      "sha256": "sha256:c101782b5dcc5854b1444fc3ee376f662c2ac09e542e320fb5c08e83b732113d"
     }
   ],
   "style": "architectural_night",
   "style_label": "Lit architecture at dusk",
-  "style_when": "the story is about change after hours — automation displacing shifts, a market open all night, capacity running while people sleep",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
@@ -40,14 +48,14 @@
   "resolution": "1K",
   "prompt": "Split-screen diptych of a data hall at blue hour, divided by a vertical brushed-steel mullion. Left half: an operator terminal console in a server room, screen dark, a coiled cable sheathing hanging disconnected, cold steel-blue light falling from a high window on the left, concrete floor. Right half: the same hall's rack row, one server module latched open with a heavy umbilical cable seated in its tool bay, its amber status beacon the only warm light, graphite racks receding into shadow. 35mm lens, moderate depth of field, fine film grain, deep blue and amber palette with graphite, brushed steel and glass, no people, no text, no logos.",
   "negative_prompt": "garbled text, random lettering, watermarks, human faces or hands",
-  "rationale": "The failure lands when no developer is present — the reader of the error is now a machine running unattended, which is precisely the blue-hour condition of capacity running while people sleep, lit only by status beacons. The split-screen diptych carries the article's own versus structure (45% vs 84%) as a dead terminal against an engaged tool bay, inside the enterprise fabric this vertical lives in rather than a product shot or a context-stripping macro.",
+  "rationale": "The failure lands when no developer is present \u2014 the reader of the error is now a machine running unattended, which is precisely the blue-hour condition of capacity running while people sleep, lit only by status beacons. The split-screen diptych carries the article's own versus structure (45% vs 84%) as a dead terminal against an engaged tool bay, inside the enterprise fabric this vertical lives in rather than a product shot or a context-stripping macro.",
   "cue": "Name a tool instead of a command",
   "subject": "a dark disconnected operator terminal beside a lit server rack bay with its cable engaged in the data hall",
   "core_thesis": "A tool's error message is not advice an agent weighs but a program it literally runs, so whether the sentence names a terminal command the agent cannot execute or the server's own login tool decides whether the failure ever recovers.",
-  "core_conflict": "Error strings written for a developer who can open a terminal versus the machine reader that can only act through the tools it holds — and better instruction-following makes the uncallable step more destructive, not less.",
+  "core_conflict": "Error strings written for a developer who can open a terminal versus the machine reader that can only act through the tools it holds \u2014 and better instruction-following makes the uncallable step more destructive, not less.",
   "composition": "Split-screen diptych with left-right scenario contrast: dark unlit operator terminal on the left, engaged lit rack bay on the right, divided by a vertical brushed-steel mullion",
-  "alt_text": "MCP Error Text Breaks The Agent Repair. A dark, disconnected operator terminal beside a lit server rack bay with its cable engaged, split between the silent terminal and the waiting rack.",
-  "caption": "MCP Error Text Breaks The Agent Repair: Agents obey error text literally, and newer models obey harder — 45% recover where 84%.",
+  "alt_text": "MCP Error Text Breaks The Agent Repair. A dark operator terminal beside a lit server rack with its cable engaged, split.",
+  "caption": "MCP Error Text Breaks The Agent Repair: Agents obey error text literally, and newer models obey harder \u2014 45% recover where 84%.",
   "title": "MCP Error Text Breaks The Agent Repair",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
@@ -102,7 +110,7 @@
   "overlay": {
     "kicker": "AGENT INFRASTRUCTURE // ERROR MESSAGES",
     "title": "MCP ERROR TEXT BREAKS THE AGENT REPAIR",
-    "hook": "Agents obey error text literally, and newer models obey harder — 45% recover where 84%",
+    "hook": "Agents obey error text literally, and newer models obey harder \u2014 45% recover where 84%",
     "anchor": "bottom-left",
     "light": true,
     "scrim": 120,

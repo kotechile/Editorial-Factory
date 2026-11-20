@@ -15,7 +15,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-error-text-breaks-the-repair/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "MCP Error Text Breaks The Agent Repair. A dark, disconnected operator terminal beside a lit server rack bay with its cable engaged, split between the silent terminal and the waiting rack."
+image_alt: "MCP Error Text Breaks The Agent Repair. A dark operator terminal beside a lit server rack with its cable engaged, split."
 image_caption: "MCP Error Text Breaks The Agent Repair: Agents obey error text literally, and newer models obey harder — 45% recover where 84%."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

@@ -13,7 +13,7 @@ meta_description: "A carrier counts nonweather claims, not storm losses, and war
 image_path: "context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg"
 image_style: "cinematic_still"
 image_model: "flux"
-image_alt: "The Third Claim Counts, The Storm Doesn'T. Hail streaks striking an asphalt-shingle roof beside a laundry room where a burst washer hose spills water across the floor."
+image_alt: "The Third Claim Counts, The Storm Doesn'T. Hail striking a shingle roof beside a laundry room where a burst washer hose spills water."
 image_caption: "The Third Claim Counts, The Storm Doesn'T: Storm damage never counts; appliance water claims do — and the third ends the policy."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

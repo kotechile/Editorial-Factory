@@ -1,6 +1,6 @@
 {
   "slug": "your-fleets-8-3-year-bill",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -24,29 +24,37 @@
     {
       "revision": 4,
       "alt_text": "Identical autonomous warehouse robots in long charging rows down a warehouse aisle, telephoto-compressed into one dense mass.",
-      "caption": "Bought in a single year, the fleet comes back as one renewal bill — the wave nobody reserves for.",
+      "caption": "Bought in a single year, the fleet comes back as one renewal bill \u2014 the wave nobody reserves for.",
       "title": "Warehouse robot fleet stacked in long rows",
       "bytes": 380354,
       "sha256": "sha256:d9f1074b66b84aa73475c53b572a305c"
+    },
+    {
+      "revision": 5,
+      "alt_text": "The 8.3-Year Bill Nobody Reserves. Warehouse robots in charging rows down an aisle, telephoto-compressed toward the steel racking.",
+      "caption": "The 8.3-Year Bill Nobody Reserves: A fleet bought in one year returns as a single bill eight times the annual charge.",
+      "title": "The 8.3-Year Bill Nobody Reserves",
+      "bytes": 407296,
+      "sha256": "sha256:38f99a59dd0c40427a65f92a11dcc47cd8dbc77726a6f7b26f08468c06852d76"
     }
   ],
   "style": "long_lens_industry",
   "style_label": "Compressed telephoto industry",
-  "style_when": "scale is the story — a port, a refinery, a data centre hall, a rail yard, a skyline of cranes — and the reader needs to feel how big it is",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
   "model": "flux-2/pro-text-to-image",
   "model_key": "flux",
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Telephoto 200mm long-lens photograph down a warehouse aisle, deep depth of field, flat compressed perspective stacking dozens of identical unbranded autonomous warehouse robots — matte polymer shrouds, brushed steel masts, scuffed safety-yellow corners — parked in long charging rows, overlapping layer upon layer into one dense mass. Hard low sunlight rakes from the left through high clerestory windows, throwing long parallel contact shadows across the polished concrete floor; crisp crystal-clear air, no haze, no people. Palette of safety yellow, graphite and concrete grey, galvanised racking receding behind. Extreme asymmetric framing: the stacked robot rows fill the right two-thirds, empty aisle floor and steel columns holding the left. Fine film grain, deep industrial contrast.",
+  "prompt": "Telephoto 200mm long-lens photograph down a warehouse aisle, deep depth of field, flat compressed perspective stacking dozens of identical unbranded autonomous warehouse robots \u2014 matte polymer shrouds, brushed steel masts, scuffed safety-yellow corners \u2014 parked in long charging rows, overlapping layer upon layer into one dense mass. Hard low sunlight rakes from the left through high clerestory windows, throwing long parallel contact shadows across the polished concrete floor; crisp crystal-clear air, no haze, no people. Palette of safety yellow, graphite and concrete grey, galvanised racking receding behind. Extreme asymmetric framing: the stacked robot rows fill the right two-thirds, empty aisle floor and steel columns holding the left. Fine film grain, deep industrial contrast.",
   "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
   "rationale": "The protagonist is a fleet, not one machine, and the news is its scale: dozens of identical units bought together returning together as one block. Telephoto compression physically stacks the rows into a single mass, so the reader feels the wave nobody reserves for. With flatlay, collage, night and cinematic still used most recently, a compressed industrial photograph is the right register for warehouse capex.",
   "cue": "The machines arrive together, age together and fail together",
   "subject": "A fleet of identical unbranded autonomous warehouse robots parked in long rows down a warehouse aisle",
-  "core_thesis": "A robot fleet bought in a single year comes back as one renewal bill roughly eight times the annual charge, and a reserve funded at the original invoice covers only about three quarters of the compounded replacement price across an 8.3-year life — so the second purchase is a capital plan, not a forecast.",
+  "core_thesis": "A robot fleet bought in a single year comes back as one renewal bill roughly eight times the annual charge, and a reserve funded at the original invoice covers only about three quarters of the compounded replacement price across an 8.3-year life \u2014 so the second purchase is a capital plan, not a forecast.",
   "core_conflict": "Machines that arrive together, age together and fail together produce one synchronized capital wave at year 8.3, colliding with capital plans that only ever priced and reserved for the first invoice while the equipment price index compounds.",
   "composition": "Extreme asymmetry: telephoto-compressed rows of identical robots stacked in overlapping layers commanding the right two-thirds, with high negative space of empty aisle and steel columns holding the left third.",
-  "alt_text": "The 8.3-Year Bill Nobody Reserves. Identical autonomous warehouse robots in long charging rows down a warehouse aisle, telephoto-compressed toward the steel racking.",
+  "alt_text": "The 8.3-Year Bill Nobody Reserves. Warehouse robots in charging rows down an aisle, telephoto-compressed toward the steel racking.",
   "caption": "The 8.3-Year Bill Nobody Reserves: A fleet bought in one year returns as a single bill eight times the annual charge.",
   "title": "The 8.3-Year Bill Nobody Reserves",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -93,7 +101,7 @@
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Telephoto 200mm long-lens photograph down a warehouse aisle, deep depth of field, flat compressed perspective stacking dozens of identical unbranded autonomous warehouse robots — matte polymer shrouds, brushed steel masts, scuffed safety-yellow corners — parked in long charging rows, overlapping layer upon layer into one dense mass. Hard low sunlight rakes from the left through high clerestory windows, throwing long parallel contact shadows across the polished concrete floor; crisp crystal-clear air, no haze, no people. Palette of safety yellow, graphite and concrete grey, galvanised racking receding behind. Extreme asymmetric framing: the stacked robot rows fill the right two-thirds, empty aisle floor and steel columns holding the left. Fine film grain, deep industrial contrast.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "prompt": "Telephoto 200mm long-lens photograph down a warehouse aisle, deep depth of field, flat compressed perspective stacking dozens of identical unbranded autonomous warehouse robots \u2014 matte polymer shrouds, brushed steel masts, scuffed safety-yellow corners \u2014 parked in long charging rows, overlapping layer upon layer into one dense mass. Hard low sunlight rakes from the left through high clerestory windows, throwing long parallel contact shadows across the polished concrete floor; crisp crystal-clear air, no haze, no people. Palette of safety yellow, graphite and concrete grey, galvanised racking receding behind. Extreme asymmetric framing: the stacked robot rows fill the right two-thirds, empty aisle floor and steel columns holding the left. Fine film grain, deep industrial contrast.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
